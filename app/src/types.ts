@@ -25,6 +25,7 @@ export interface Apunte {
 /* ---------- Figuras ---------- */
 
 export type TipoGHS =
+  | 'explosivo'
   | 'inflamable'
   | 'comburente'
   | 'gas-presion'

@@ -74,12 +74,14 @@ Los apuntes de la parte segunda incluyen además una **tabla operativa** «pará
 El examen usa imágenes (pictogramas de peligro, material de vidrio, lecturas de bureta). No se suben fotos: las tarjetas y preguntas **declaran** qué figura quieren y la app la dibuja en SVG.
 
 ```json
-"figura": { "tipo": "ghs", "valor": "corrosivo" }
+"figura": { "tipo": "ghs", "valor": "corrosivo" }   // explosivo | inflamable | comburente | gas-presion |
+                                                  // corrosivo | toxico-agudo | irritante |
+                                                  // peligro-salud | medioambiente
 "figura": { "tipo": "bureta", "lectura": 12.5, "capacidad": 25 }
 "figura": { "tipo": "material", "valor": "matraz-aforado" }
 ```
 
-Componentes en `app/src/components/figuras/`. Los pictogramas son **representaciones esquemáticas** con fines de estudio, no reproducciones exactas de los símbolos normalizados del Reglamento (CE) 1272/2008.
+Componentes en `app/src/components/figuras/`. Los **nueve pictogramas CLP son los oficiales** del Reglamento (CE) 1272/2008, anexo V, en SVG (`app/src/assets/ghs/`): los mismos símbolos que figuran en una etiqueta real. La bureta y el material de vidrio sí son dibujos esquemáticos propios, pensados para reconocer la silueta y distinguir material aforado de graduado.
 
 ## Desarrollo
 

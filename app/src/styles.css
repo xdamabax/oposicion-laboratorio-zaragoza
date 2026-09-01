@@ -675,3 +675,22 @@ button.item {
 .flash > .etiqueta {
   align-self: center;
 }
+
+/* ---------- Pictogramas oficiales CLP ---------- */
+
+.figura-ghs {
+  max-width: 100%;
+  height: auto;
+}
+
+.galeria-ghs {
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+}
+
+.ghs-alcance {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  text-align: left;
+}

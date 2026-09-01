@@ -1,4 +1,8 @@
-import PictogramaGHS, { CODIGOS_GHS, NOMBRES_GHS } from '../components/figuras/PictogramaGHS'
+import PictogramaGHS, {
+  ALCANCE_GHS,
+  CODIGOS_GHS,
+  NOMBRES_GHS,
+} from '../components/figuras/PictogramaGHS'
 import MaterialVidrio, { NOMBRES_MATERIAL } from '../components/figuras/MaterialVidrio'
 import Bureta from '../components/figuras/Bureta'
 import type { TipoGHS, TipoMaterial } from '../types'
@@ -15,17 +19,15 @@ export default function Figuras() {
     <>
       <h1>Catálogo de figuras</h1>
       <p className="sub">
-        Dibujos que la app puede insertar en tarjetas y preguntas. No son imágenes subidas: se
-        dibujan en SVG desde el código.
+        Ilustraciones que la app puede insertar en tarjetas y preguntas.
       </p>
 
-      <h2>Pictogramas de peligro (SGA/CLP)</h2>
-      <div className="aviso">
-        Son representaciones <b>esquemáticas</b> con fines de estudio. Reproducen la forma (rombo
-        rojo sobre fondo blanco) y el símbolo reconocible de cada clase, pero no son la
-        reproducción exacta de los símbolos normalizados del Reglamento (CE) 1272/2008.
-      </div>
-      <div className="galeria">
+      <h2>Pictogramas de peligro (CLP)</h2>
+      <p className="contador" style={{ marginTop: '-0.4rem' }}>
+        Los <b>nueve</b> pictogramas oficiales del <b>Reglamento (CE) 1272/2008</b> (CLP), anexo V,
+        en su versión normalizada. Son los mismos símbolos que figuran en una etiqueta real.
+      </p>
+      <div className="galeria galeria-ghs">
         {ghs.map((t) => (
           <figure key={t} className="galeria-item">
             <PictogramaGHS tipo={t} tamano={104} />
@@ -35,12 +37,19 @@ export default function Figuras() {
               <span className="contador">
                 {CODIGOS_GHS[t]} · <code>{t}</code>
               </span>
+              <br />
+              <span className="contador ghs-alcance">{ALCANCE_GHS[t]}</span>
             </figcaption>
           </figure>
         ))}
       </div>
 
       <h2>Material de vidrio</h2>
+      <div className="aviso">
+        A diferencia de los pictogramas, el material de vidrio y la bureta son{' '}
+        <b>dibujos esquemáticos</b> propios: sirven para reconocer la silueta y para distinguir
+        material aforado de graduado, no para reproducir un modelo concreto.
+      </div>
       <div className="galeria">
         {material.map((t) => (
           <figure key={t} className="galeria-item">
