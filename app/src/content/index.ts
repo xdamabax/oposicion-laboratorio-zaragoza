@@ -24,4 +24,14 @@ export function getTema(numero: number): TemaVista | undefined {
 }
 
 export const TOTAL_TARJETAS = TEMAS.reduce((n, t) => n + (t.repaso?.flashcards.length ?? 0), 0)
-export const TOTAL_PREGUNTAS = TEMAS.reduce((n, t) => n + (t.repaso?.test.length ?? 0), 0)
+export const TOTAL_PREGUNTAS = TEMAS.reduce(
+  (n, t) =>
+    n +
+    (t.repaso?.test.length ?? 0) +
+    (t.repaso?.supuestos.reduce((m, s) => m + s.preguntas.length, 0) ?? 0),
+  0,
+)
+export const TOTAL_NUCLEO = TEMAS.reduce(
+  (n, t) => n + (t.repaso?.flashcards.filter((f) => f.nucleo).length ?? 0),
+  0,
+)

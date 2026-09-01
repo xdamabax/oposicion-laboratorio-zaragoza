@@ -4,10 +4,15 @@ import Etiqueta from '../components/Etiqueta'
 import Markdown from '../components/Markdown'
 import Flashcards from '../components/Flashcards'
 import Test from '../components/Test'
+import Supuestos from '../components/Supuestos'
 
-type Vista = 'apunte' | 'tarjetas' | 'test'
-const VISTAS: Vista[] = ['apunte', 'tarjetas', 'test']
-const ROTULO: Record<Vista, string> = { apunte: 'Apuntes', tarjetas: 'Tarjetas', test: 'Test' }
+type Vista = 'apunte' | 'tarjetas' | 'test' | 'supuestos'
+const ROTULO: Record<Vista, string> = {
+  apunte: 'Apuntes',
+  tarjetas: 'Tarjetas',
+  test: 'Test',
+  supuestos: 'Supuestos',
+}
 
 export default function Tema() {
   const { numero } = useParams()
@@ -15,9 +20,6 @@ export default function Tema() {
 
   const n = Number(numero)
   const tema = getTema(n)
-
-  const pedida = params.get('vista') as Vista | null
-  const vista: Vista = pedida && VISTAS.includes(pedida) ? pedida : 'apunte'
 
   if (!tema) {
     return (
@@ -30,40 +32,65 @@ export default function Tema() {
     )
   }
 
+  // Los supuestos son el segundo ejercicio, que solo versa sobre la parte segunda.
+  const esParteSegunda = tema.numero >= 9
+  const vistas: Vista[] = esParteSegunda
+    ? ['apunte', 'tarjetas', 'test', 'supuestos']
+    : ['apunte', 'tarjetas', 'test']
+
+  const pedida = params.get('vista') as Vista | null
+  const vista: Vista = pedida && vistas.includes(pedida) ? pedida : 'apunte'
+
   const anterior = TEMAS.find((t) => t.numero === n - 1)
   const siguiente = TEMAS.find((t) => t.numero === n + 1)
+
+  const cuenta: Record<Vista, number | null> = {
+    apunte: null,
+    tarjetas: tema.repaso?.flashcards.length ?? null,
+    test: tema.repaso?.test.length ?? null,
+    supuestos: tema.repaso?.supuestos.length ?? null,
+  }
 
   return (
     <>
       <p className="contador" style={{ marginBottom: '0.4rem' }}>
         <Link to="/temas">Temario</Link> / Tema {tema.numero}
-        {tema.bloque ? ` / ${tema.bloque}` : ''}
       </p>
 
       <h1>
         {tema.numero}. {tema.titulo}
       </h1>
       <p className="sub">
-        <Etiqueta estado={tema.estadoApunte} />
+        <Etiqueta estado={tema.estadoApunte} />{' '}
+        <span className="contador">
+          {esParteSegunda
+            ? 'Parte segunda · entra en el primer ejercicio (3 opciones) y en los supuestos (4 opciones)'
+            : 'Parte primera · entra solo en el primer ejercicio (3 opciones)'}
+        </span>
       </p>
 
       <div className="pestanas">
-        {VISTAS.map((v) => (
+        {vistas.map((v) => (
           <button
             key={v}
             className={v === vista ? 'activo' : undefined}
             onClick={() => setParams(v === 'apunte' ? {} : { vista: v }, { replace: true })}
           >
             {ROTULO[v]}
-            {v === 'tarjetas' && tema.repaso ? ` (${tema.repaso.flashcards.length})` : ''}
-            {v === 'test' && tema.repaso ? ` (${tema.repaso.test.length})` : ''}
+            {cuenta[v] !== null ? ` (${cuenta[v]})` : ''}
           </button>
         ))}
       </div>
 
       {vista === 'apunte' && <Apunte tema={tema} />}
       {vista === 'tarjetas' && <Flashcards tarjetas={tema.repaso?.flashcards ?? []} />}
-      {vista === 'test' && <Test preguntas={tema.repaso?.test ?? []} />}
+      {vista === 'test' && (
+        <Test
+          preguntas={tema.repaso?.test ?? []}
+          vacio="Todavía no hay preguntas de test para este tema. Se generan a partir del apunte una vez aprobado."
+        />
+      )}
+      {vista === 'supuestos' && <Supuestos supuestos={tema.repaso?.supuestos ?? []} />}
 
       <div className="botones" style={{ marginTop: '2.5rem', justifyContent: 'space-between' }}>
         {anterior ? (
@@ -87,9 +114,9 @@ function Apunte({ tema }: { tema: NonNullable<ReturnType<typeof getTema>> }) {
   if (!tema.apunte) {
     return (
       <div className="vacio">
-        <p>Este tema todavia no tiene apunte.</p>
+        <p>Este tema todavía no tiene apunte.</p>
         <p className="contador">
-          Se redacta buscando la norma vigente, se cita la fuente y se somete a tu revision antes de
+          Se redacta buscando la norma vigente, se cita la fuente y se somete a tu revisión antes de
           generar el repaso.
         </p>
       </div>
@@ -102,7 +129,7 @@ function Apunte({ tema }: { tema: NonNullable<ReturnType<typeof getTema>> }) {
     <article>
       {apunte.estado === 'borrador' && (
         <div className="aviso">
-          <b>Borrador pendiente de tu revision.</b> Todavia no se generan tarjetas ni preguntas a
+          <b>Borrador pendiente de tu revisión.</b> Todavía no se generan tarjetas ni preguntas a
           partir de este apunte.
         </div>
       )}
@@ -110,7 +137,7 @@ function Apunte({ tema }: { tema: NonNullable<ReturnType<typeof getTema>> }) {
       <Markdown>{apunte.cuerpo}</Markdown>
 
       <div className="tarjeta fuentes">
-        <b>Fuentes y verificacion</b>
+        <b>Fuentes y verificación</b>
         {apunte.fuentes.length > 0 ? (
           <ul>
             {apunte.fuentes.map((f) => (

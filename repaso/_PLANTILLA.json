@@ -1,26 +1,76 @@
 {
+  "_comentario": [
+    "Plantilla del fichero de repaso. Los ficheros que empiezan por _ los ignora la app.",
+    "",
+    "DOS BLOQUES, PORQUE SON DOS EJERCICIOS DISTINTOS:",
+    "  - 'test': primer ejercicio. TRES opciones (a, b, c). Lo hay en todos los temas.",
+    "  - 'supuestos': segundo ejercicio. CUATRO opciones, agrupadas por caso.",
+    "    Solo para los temas 9 a 40; en los temas 1 a 8 se deja como array vacio.",
+    "Fundamento: bases generales TRBGTL, base 7.4.C.1.",
+    "",
+    "'correcta' es el indice 0-based dentro de 'opciones'.",
+    "'nucleo': true marca lo de mayor peso real segun los examenes anteriores.",
+    "'figura' declara un dibujo que pinta la app; no se suben imagenes.",
+    "  { tipo: 'ghs', valor: 'inflamable' | 'comburente' | 'gas-presion' | 'corrosivo'",
+    "                 | 'toxico-agudo' | 'irritante' | 'peligro-salud' | 'medioambiente' }",
+    "  { tipo: 'bureta', lectura: 12.5, capacidad: 25 }",
+    "  { tipo: 'material', valor: 'matraz-aforado' | 'erlenmeyer' | 'pipeta-aforada'",
+    "                             | 'probeta' | 'vaso-precipitados' | 'embudo' }",
+    "Todas admiten ademas 'pie' con un texto al pie de la figura."
+  ],
   "tema": 0,
   "titulo": "Titulo exacto del tema",
   "generadoDe": "temas/tema-00.md",
   "apunteAprobado": true,
   "fechaGeneracion": "2026-09-01",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas."
+  },
   "flashcards": [
     {
       "id": "t00-f01",
       "anverso": "Pregunta corta o concepto.",
       "reverso": "Respuesta precisa.",
       "fuente": "art. X de la norma Y",
-      "etiquetas": ["bloque"]
+      "etiquetas": ["bloque"],
+      "nucleo": true
+    },
+    {
+      "id": "t00-f02",
+      "anverso": "¿Qué peligro indica este pictograma?",
+      "reverso": "Corrosivo (GHS05).",
+      "fuente": "Reglamento (CE) 1272/2008, anexo V",
+      "figura": { "tipo": "ghs", "valor": "corrosivo" }
     }
   ],
   "test": [
     {
       "id": "t00-q01",
       "pregunta": "Enunciado de la pregunta.",
-      "opciones": ["Opcion a", "Opcion b", "Opcion c", "Opcion d"],
+      "opciones": ["Opcion a", "Opcion b", "Opcion c"],
       "correcta": 0,
-      "explicacion": "Por que es correcta, con el precepto exacto.",
-      "fuente": "art. X de la norma Y"
+      "explicacion": "Por que es correcta, con el precepto o la referencia exacta.",
+      "fuente": "art. X de la norma Y",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t00-s01",
+      "titulo": "Supuesto 1. Analisis de una muestra de agua de consumo",
+      "enunciado": "Texto del caso, con los datos que necesiten las cinco preguntas.",
+      "preguntas": [
+        {
+          "id": "t00-s01-q1",
+          "pregunta": "Enunciado.",
+          "opciones": ["Opcion a", "Opcion b", "Opcion c", "Opcion d"],
+          "correcta": 3,
+          "explicacion": "Justificacion.",
+          "fuente": "Norma o procedimiento"
+        }
+      ]
     }
   ]
 }

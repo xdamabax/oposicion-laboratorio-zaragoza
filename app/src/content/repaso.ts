@@ -18,6 +18,7 @@ export const REPASOS: Map<number, Repaso> = (() => {
       tema: numero,
       flashcards: datos.flashcards ?? [],
       test: datos.test ?? [],
+      supuestos: datos.supuestos ?? [],
     })
   }
 

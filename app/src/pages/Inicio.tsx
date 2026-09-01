@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { TEMAS, TEMARIO_PENDIENTE, TOTAL_PREGUNTAS, TOTAL_TARJETAS } from '../content'
+import { TEMAS, TEMARIO_PENDIENTE, TOTAL_NUCLEO, TOTAL_PREGUNTAS, TOTAL_TARJETAS } from '../content'
 import { useProgreso } from '../lib/progreso'
 import { tocaHoy } from '../lib/srs'
+import AvisoPenalizacion from '../components/AvisoPenalizacion'
 
 export default function Inicio() {
   const progreso = useProgreso()
@@ -51,6 +52,9 @@ export default function Inicio() {
         </div>
       </div>
 
+      <h2>Antes de nada</h2>
+      <AvisoPenalizacion />
+
       <h2>Empezar</h2>
       <div className="botones">
         {siguienteTema ? (
@@ -74,10 +78,12 @@ export default function Inicio() {
       <div className="rejilla rejilla-2">
         <div className="tarjeta">
           <p style={{ margin: 0 }}>
-            <b>{TOTAL_TARJETAS}</b> tarjetas y <b>{TOTAL_PREGUNTAS}</b> preguntas de test en total.
+            <b>{TOTAL_TARJETAS}</b> tarjetas y <b>{TOTAL_PREGUNTAS}</b> preguntas en total, de las
+            que <b>{TOTAL_NUCLEO}</b> tarjetas están marcadas como núcleo.
           </p>
           <p className="contador" style={{ margin: '0.35rem 0 0' }}>
-            Se generan tema a tema, solo despues de que apruebes el apunte correspondiente.
+            El núcleo son las de mayor peso real según los exámenes anteriores. Se generan tema a
+            tema, solo después de que apruebes el apunte correspondiente.
           </p>
         </div>
         <div className="tarjeta">

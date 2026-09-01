@@ -1,29 +1,36 @@
 import { useEffect, useMemo, useState } from 'react'
 import Markdown from './Markdown'
+import Figura from './figuras/Figura'
 import { getProgreso, registrarTarjeta } from '../lib/progreso'
 import { tocaHoy, type Resultado } from '../lib/srs'
 import type { Flashcard } from '../types'
 
-type Modo = 'pendientes' | 'todas'
-
 export default function Flashcards({ tarjetas }: { tarjetas: Flashcard[] }) {
-  const [modo, setModo] = useState<Modo>('pendientes')
+  const [soloNucleo, setSoloNucleo] = useState(false)
+  const [soloHoy, setSoloHoy] = useState(true)
   const [cola, setCola] = useState<Flashcard[]>([])
   const [vista, setVista] = useState(false)
   const [hechas, setHechas] = useState(0)
 
+  const hayNucleo = useMemo(() => tarjetas.some((t) => t.nucleo), [tarjetas])
+
+  const ambito = useMemo(
+    () => (soloNucleo ? tarjetas.filter((t) => t.nucleo) : tarjetas),
+    [tarjetas, soloNucleo],
+  )
+
   const pendientes = useMemo(() => {
     const p = getProgreso()
-    return tarjetas.filter((t) => tocaHoy(p.tarjetas[t.id]))
-  }, [tarjetas])
+    return ambito.filter((t) => tocaHoy(p.tarjetas[t.id]))
+  }, [ambito])
 
-  // Al montar (o al cambiar de modo) se rehace la cola de la sesion.
+  // Al montar, o al cambiar de ambito/filtro, se rehace la cola de la sesion.
   useEffect(() => {
-    const base = modo === 'pendientes' && pendientes.length > 0 ? pendientes : tarjetas
+    const base = soloHoy && pendientes.length > 0 ? pendientes : ambito
     setCola(base)
     setVista(false)
     setHechas(0)
-  }, [modo, pendientes, tarjetas])
+  }, [ambito, pendientes, soloHoy])
 
   const actual = cola[0]
 
@@ -42,53 +49,86 @@ export default function Flashcards({ tarjetas }: { tarjetas: Flashcard[] }) {
   if (tarjetas.length === 0) {
     return (
       <p className="vacio">
-        Todavia no hay tarjetas para este tema. Se generan a partir del apunte una vez aprobado.
+        Todavía no hay tarjetas para este tema. Se generan a partir del apunte una vez aprobado.
       </p>
+    )
+  }
+
+  const controles = (
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: '0.75rem',
+        gap: '0.75rem',
+        flexWrap: 'wrap',
+      }}
+    >
+      <div className="botones">
+        {hayNucleo && (
+          <>
+            <button
+              className={soloNucleo ? 'btn' : 'btn btn-pri'}
+              onClick={() => setSoloNucleo(false)}
+            >
+              Todas ({tarjetas.length})
+            </button>
+            <button
+              className={soloNucleo ? 'btn btn-pri' : 'btn'}
+              onClick={() => setSoloNucleo(true)}
+            >
+              Solo núcleo ({tarjetas.filter((t) => t.nucleo).length})
+            </button>
+          </>
+        )}
+      </div>
+      <div className="botones">
+        <button className="btn" onClick={() => setSoloHoy((v) => !v)}>
+          {soloHoy ? 'Repasar todas' : 'Solo las de hoy'}
+        </button>
+      </div>
+    </div>
+  )
+
+  if (ambito.length === 0) {
+    return (
+      <>
+        {controles}
+        <p className="vacio">Este tema todavía no tiene tarjetas marcadas como núcleo.</p>
+      </>
     )
   }
 
   if (!actual) {
     return (
-      <div className="tarjeta" style={{ textAlign: 'center' }}>
-        <p>
-          <b>Sesion terminada.</b> {hechas} {hechas === 1 ? 'repaso' : 'repasos'} registrados.
-        </p>
-        <div className="botones" style={{ justifyContent: 'center' }}>
-          <button className="btn btn-pri" onClick={() => setCola(tarjetas)}>
-            Repasar las {tarjetas.length} otra vez
-          </button>
+      <>
+        {controles}
+        <div className="tarjeta" style={{ textAlign: 'center' }}>
+          <p>
+            <b>Sesión terminada.</b> {hechas} {hechas === 1 ? 'repaso' : 'repasos'} registrados.
+          </p>
+          <div className="botones" style={{ justifyContent: 'center' }}>
+            <button className="btn btn-pri" onClick={() => setCola(ambito)}>
+              Repasar las {ambito.length} otra vez
+            </button>
+          </div>
         </div>
-      </div>
+      </>
     )
   }
 
   return (
     <div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          marginBottom: '0.75rem',
-          gap: '1rem',
-          flexWrap: 'wrap',
-        }}
-      >
-        <span className="contador">
-          Quedan {cola.length} de {modo === 'pendientes' ? pendientes.length || tarjetas.length : tarjetas.length}
-        </span>
-        <div className="botones">
-          <button
-            className="btn"
-            onClick={() => setModo((m) => (m === 'pendientes' ? 'todas' : 'pendientes'))}
-          >
-            {modo === 'pendientes' ? 'Repasar todas' : 'Solo las de hoy'}
-          </button>
-        </div>
-      </div>
+      {controles}
+
+      <span className="contador">
+        Quedan {cola.length} de {soloHoy && pendientes.length > 0 ? pendientes.length : ambito.length}
+      </span>
 
       <div
         className="tarjeta flash"
+        style={{ marginTop: '0.35rem' }}
         onClick={() => setVista(true)}
         role="button"
         tabIndex={0}
@@ -99,9 +139,13 @@ export default function Flashcards({ tarjetas }: { tarjetas: Flashcard[] }) {
           }
         }}
       >
+        {actual.nucleo && <span className="etiqueta et-nucleo">Núcleo</span>}
+
         <div className="flash-a">
           <Markdown>{actual.anverso}</Markdown>
         </div>
+
+        {actual.figura && <Figura figura={actual.figura} />}
 
         {vista ? (
           <div className="flash-b">
@@ -122,7 +166,7 @@ export default function Flashcards({ tarjetas }: { tarjetas: Flashcard[] }) {
             Bien
           </button>
           <button className="btn btn-ok" onClick={() => responder('facil')}>
-            Facil
+            Fácil
           </button>
         </div>
       )}

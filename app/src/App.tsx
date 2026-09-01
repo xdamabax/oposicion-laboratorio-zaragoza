@@ -3,6 +3,7 @@ import Inicio from './pages/Inicio'
 import Temas from './pages/Temas'
 import Tema from './pages/Tema'
 import Progreso from './pages/Progreso'
+import Figuras from './pages/Figuras'
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
@@ -25,6 +26,9 @@ export default function App() {
             <NavLink to="/progreso" className={clase}>
               Progreso
             </NavLink>
+            <NavLink to="/figuras" className={clase}>
+              Figuras
+            </NavLink>
           </nav>
         </div>
       </header>
@@ -35,6 +39,7 @@ export default function App() {
           <Route path="/temas" element={<Temas />} />
           <Route path="/tema/:numero" element={<Tema />} />
           <Route path="/progreso" element={<Progreso />} />
+          <Route path="/figuras" element={<Figuras />} />
           <Route path="*" element={<NoEncontrado />} />
         </Routes>
       </main>
