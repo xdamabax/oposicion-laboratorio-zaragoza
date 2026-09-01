@@ -1,0 +1,26 @@
+{
+  "tema": 0,
+  "titulo": "Titulo exacto del tema",
+  "generadoDe": "temas/tema-00.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-01",
+  "flashcards": [
+    {
+      "id": "t00-f01",
+      "anverso": "Pregunta corta o concepto.",
+      "reverso": "Respuesta precisa.",
+      "fuente": "art. X de la norma Y",
+      "etiquetas": ["bloque"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t00-q01",
+      "pregunta": "Enunciado de la pregunta.",
+      "opciones": ["Opcion a", "Opcion b", "Opcion c", "Opcion d"],
+      "correcta": 0,
+      "explicacion": "Por que es correcta, con el precepto exacto.",
+      "fuente": "art. X de la norma Y"
+    }
+  ]
+}
