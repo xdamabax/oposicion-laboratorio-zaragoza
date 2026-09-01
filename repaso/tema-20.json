@@ -1,0 +1,772 @@
+{
+  "tema": 20,
+  "titulo": "Seguridad en el laboratorio físico-químico: Clases de riesgos de los productos químicos. Frases de riesgo. Consejos de seguridad. Equipos de Protección Individual. Almacenamiento de productos químicos. Eliminación de residuos.",
+  "generadoDe": "temas/tema-20.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-02",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t20-f01",
+      "anverso": "¿Qué es el Reglamento CLP, qué derogó y desde cuándo se aplica en su totalidad?",
+      "reverso": "Reglamento **(CE) 1272/2008**, de clasificación, etiquetado y envasado de sustancias y mezclas.\nDerogó las Directivas **67/548/CEE** (sustancias) y **1999/45/CE** (preparados).\nSe aplica en su totalidad desde el **1 de junio de 2015**.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP)",
+      "etiquetas": [
+        "clp"
+      ]
+    },
+    {
+      "id": "t20-f02",
+      "anverso": "¿Cómo organiza el anexo I del CLP las clases de peligro, y qué serie de indicaciones H corresponde a cada grupo?",
+      "reverso": "**Parte 2 — Peligros físicos** → **H2xx** (31 indicaciones)\n**Parte 3 — Peligros para la salud** → **H3xx** (56)\n**Parte 4 — Peligros para el medio ambiente** → **H4xx** (6)",
+      "fuente": "CLP, anexo I y anexo III",
+      "etiquetas": [
+        "clp"
+      ]
+    },
+    {
+      "id": "t20-f03",
+      "anverso": "¿Cuántos pictogramas de peligro hay en el CLP y qué forma tienen?",
+      "reverso": "**Nueve**, del GHS01 al GHS09. Cada uno es un **rombo rojo sobre fondo blanco con un símbolo negro**.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "clp",
+        "pictogramas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f04",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS01 — Explosivo** (bomba explotando). Peligro **físico**.\nExplosivos, sustancias y mezclas **autorreactivas** y **peróxidos orgánicos de los tipos A y B**.",
+      "fuente": "CLP, anexo V; «Pictogramas en CLP», Ministerio de Sanidad",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "explosivo"
+      }
+    },
+    {
+      "id": "t20-f05",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS02 — Inflamable** (llama). Peligro **físico**.\nGases, aerosoles, líquidos y sólidos inflamables; sustancias **pirofóricas**, **autocalentables** y las que **desprenden gases inflamables en contacto con el agua**.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "inflamable"
+      }
+    },
+    {
+      "id": "t20-f06",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS03 — Comburente** (llama sobre un círculo). Peligro **físico**.\nGases, líquidos y sólidos **comburentes**. No arden ellos: **alimentan la combustión de otros**.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "comburente"
+      }
+    },
+    {
+      "id": "t20-f07",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS04 — Gas a presión** (bombona de gas). Peligro **físico**.\nGases **comprimidos, licuados, licuados refrigerados y disueltos**.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "gas-presion"
+      }
+    },
+    {
+      "id": "t20-f08",
+      "anverso": "¿Qué peligro indica este pictograma y por qué es especial?",
+      "reverso": "**GHS05 — Corrosivo** (corrosión).\nEs **doble**: cubre un peligro **físico** (corrosivos para los metales, H290) y un peligro **para la salud** (corrosión cutánea H314 y lesiones oculares graves H318).",
+      "fuente": "CLP, anexo V; «Pictogramas en CLP», Ministerio de Sanidad",
+      "etiquetas": [
+        "pictogramas",
+        "trampa"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "corrosivo"
+      }
+    },
+    {
+      "id": "t20-f09",
+      "anverso": "¿Qué peligro indica este pictograma y a qué categorías corresponde exactamente?",
+      "reverso": "**GHS06 — Toxicidad aguda** (calavera y tibias cruzadas). Peligro **para la salud**.\nToxicidad aguda **categorías 1 a 3**, por vía oral, cutánea o inhalatoria.\n**La categoría 4 NO lleva calavera**: lleva el signo de exclamación (GHS07).",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas",
+        "trampa"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "toxico-agudo"
+      }
+    },
+    {
+      "id": "t20-f10",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS07 — Irritante / nocivo** (signo de exclamación).\nToxicidad aguda **categoría 4**, irritación cutánea u ocular, sensibilización cutánea, toxicidad específica en órganos por exposición única (cat. 3) y, dentro de «otros peligros», el **peligro para la capa de ozono**.",
+      "fuente": "CLP, anexo V; «Pictogramas en CLP», Ministerio de Sanidad",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "irritante"
+      }
+    },
+    {
+      "id": "t20-f11",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS08 — Peligro grave para la salud**.\nSensibilización **respiratoria**, **mutagenicidad**, **carcinogenicidad**, **toxicidad para la reproducción**, toxicidad específica en determinados órganos (STOT) y **peligro por aspiración**.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "peligro-salud"
+      }
+    },
+    {
+      "id": "t20-f12",
+      "anverso": "¿Qué peligro indica este pictograma y qué cubre?",
+      "reverso": "**GHS09 — Peligro para el medio ambiente**.\nPeligro para el **medio ambiente acuático**, agudo y crónico (H400, H410, H411…). Es el único del grupo de peligros para el medio ambiente.",
+      "fuente": "CLP, anexo V",
+      "etiquetas": [
+        "pictogramas"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "medioambiente"
+      }
+    },
+    {
+      "id": "t20-f13",
+      "anverso": "¿Qué dos pictogramas pertenecen a más de un grupo de peligro?",
+      "reverso": "**GHS05 (corrosivo)**: peligros físicos (corrosivo para los metales) **y** para la salud (corrosión cutánea, lesiones oculares graves).\n**GHS07 (signo de exclamación)**: peligros para la salud **y** «otros peligros» (capa de ozono).",
+      "fuente": "«Pictogramas en CLP», Ministerio de Sanidad",
+      "etiquetas": [
+        "pictogramas",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f14",
+      "anverso": "¿Qué clases de peligro añadió el Reglamento Delegado (UE) 2023/707 y cómo se comunican?",
+      "reverso": "Cuatro grupos nuevos, **sin pictograma propio**, que se comunican con indicaciones **EUH**:\n**ED HH** (alterador endocrino, salud humana): EUH380 / EUH381\n**ED ENV** (alterador endocrino, medio ambiente): EUH430 / EUH431\n**PBT / mPmB**: EUH440 / EUH441\n**PMT / mPmM**: EUH450 / EUH451",
+      "fuente": "Reglamento Delegado (UE) 2023/707; ECHA",
+      "etiquetas": [
+        "clp",
+        "actualidad"
+      ]
+    },
+    {
+      "id": "t20-f15",
+      "anverso": "Calendario de aplicación obligatoria de las nuevas clases de peligro de 2023.",
+      "reverso": "**Sustancias nuevas** (desde 01/05/2025): **1 de mayo de 2025**\n**Sustancias ya comercializadas**: **1 de noviembre de 2026**\n**Mezclas nuevas** (desde 01/05/2026): **1 de mayo de 2026**\n**Mezclas ya comercializadas**: **1 de mayo de 2028**",
+      "fuente": "Reglamento Delegado (UE) 2023/707; ECHA",
+      "etiquetas": [
+        "clp",
+        "actualidad"
+      ]
+    },
+    {
+      "id": "t20-f16",
+      "anverso": "Equivalencia entre el sistema antiguo y el CLP.",
+      "reverso": "**Frases R** («frases de riesgo») → **indicaciones de peligro H**\n**Frases S** («consejos de seguridad») → **consejos de prudencia P**\nSímbolos naranjas cuadrados con letra (T, Xn, C, F, O, E, N) → **nueve pictogramas** en rombo rojo\n«Tóxico», «Nocivo» → **palabra de advertencia**: «peligro» o «atención»\n\nLa correspondencia **no es uno a uno**: el CLP cambió criterios y umbrales, no solo nombres.",
+      "fuente": "CLP; RD 363/1995 y RD 255/2003 (derogados)",
+      "etiquetas": [
+        "clp",
+        "terminologia"
+      ]
+    },
+    {
+      "id": "t20-f17",
+      "anverso": "¿Cómo se lee el código de una indicación de peligro H?",
+      "reverso": "Tres dígitos. El **primero indica el grupo**:\n**H2xx** físico · **H3xx** salud · **H4xx** medio ambiente.\nEjemplos: H225 líquido y vapores muy inflamables; H314 provoca quemaduras graves en la piel y lesiones oculares graves; H400 muy tóxico para los organismos acuáticos.\nLas **EUH** son indicaciones suplementarias propias de la UE (p. ej. EUH014).",
+      "fuente": "CLP, anexo III",
+      "etiquetas": [
+        "clp"
+      ]
+    },
+    {
+      "id": "t20-f18",
+      "anverso": "¿En qué cinco series se organizan los consejos de prudencia P y qué significa cada una?",
+      "reverso": "**P1xx** — Carácter general\n**P2xx** — **Prevención**\n**P3xx** — **Respuesta**\n**P4xx** — **Almacenamiento**\n**P5xx** — **Eliminación**\n\nEl primer dígito te dice ya de qué tipo es el consejo.",
+      "fuente": "CLP, anexo IV",
+      "etiquetas": [
+        "clp"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f19",
+      "anverso": "Enumera los ocho elementos que debe llevar la etiqueta según el art. 17.1 del CLP.",
+      "reverso": "a) Nombre, dirección y teléfono del **proveedor**\nb) **Cantidad nominal**, si se pone a disposición del público en general y no consta en otro lugar del envase\nc) **Identificadores del producto**\nd) **Pictogramas de peligro** *(cuando proceda)*\ne) **Palabras de advertencia** *(cuando proceda)*\nf) **Indicaciones de peligro** *(cuando proceda)*\ng) **Consejos de prudencia** *(cuando proceda)*\nh) **Información suplementaria** *(cuando proceda)*",
+      "fuente": "CLP, art. 17.1",
+      "etiquetas": [
+        "clp",
+        "etiquetado"
+      ]
+    },
+    {
+      "id": "t20-f20",
+      "anverso": "¿Qué es una «palabra de advertencia» y cuáles son?",
+      "reverso": "Art. 2.4 CLP: *«un vocablo que indica el **nivel relativo de gravedad** de los peligros»*. Solo hay dos:\n**«peligro»** — categorías de peligro **más graves**\n**«atención»** — categorías de peligro **menos graves**",
+      "fuente": "CLP, art. 2.4",
+      "etiquetas": [
+        "clp",
+        "etiquetado"
+      ]
+    },
+    {
+      "id": "t20-f21",
+      "anverso": "¿Qué tres reglas establece el art. 20 del CLP sobre la palabra de advertencia?",
+      "reverso": "1. En la etiqueta figurará la que corresponda a la clasificación.\n2. **Cuál corresponde lo fijan las tablas de las partes 2 a 5 del anexo I**, no el propio art. 20.\n3. *«Cuando en la etiqueta figure la palabra de advertencia «peligro», **no aparecerá** la palabra de advertencia «atención»»*.",
+      "fuente": "CLP, art. 20",
+      "etiquetas": [
+        "clp",
+        "etiquetado",
+        "trampa"
+      ]
+    },
+    {
+      "id": "t20-f22",
+      "anverso": "¿Qué diferencia hay entre la etiqueta y la ficha de datos de seguridad (FDS)?",
+      "reverso": "La **etiqueta** la regula el **CLP**. La **FDS** la regula el **REACH** (Reglamento (CE) 1907/2006, anexo II) y consta de **16 secciones**. Son documentos distintos con normas distintas.",
+      "fuente": "CLP; REACH, anexo II",
+      "etiquetas": [
+        "clp"
+      ]
+    },
+    {
+      "id": "t20-f23",
+      "anverso": "¿Cuál es el orden de prioridad obligatorio para reducir el riesgo por agentes químicos?",
+      "reverso": "RD 374/2001, **art. 5.2**:\n1. **Eliminar el riesgo**, preferentemente **sustituyendo** el agente.\n2. Si no es posible, por este orden:\n   a) Procedimientos, **controles técnicos**, equipos y materiales que **aíslen el agente**.\n   b) **Ventilación y protección colectiva**, preferentemente **en el origen**.\n   c) **EPI**, solo cuando lo anterior sea insuficiente.\n\n**El EPI es siempre el último recurso.**",
+      "fuente": "RD 374/2001, art. 5.2",
+      "etiquetas": [
+        "prl",
+        "epi"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f24",
+      "anverso": "Definición legal de equipo de protección individual.",
+      "reverso": "RD 773/1997, art. 2.1: *«cualquier equipo destinado a ser **llevado o sujetado por el trabajador** para que le proteja de uno o varios riesgos que puedan amenazar su seguridad o su salud, así como cualquier complemento o accesorio destinado a tal fin»*.",
+      "fuente": "RD 773/1997, art. 2.1",
+      "etiquetas": [
+        "epi"
+      ]
+    },
+    {
+      "id": "t20-f25",
+      "anverso": "¿Qué queda excluido de la definición de EPI?",
+      "reverso": "RD 773/1997, art. 2.2:\na) **Ropa de trabajo corriente y uniformes** no destinados específicamente a proteger\nb) Equipos de **socorro y salvamento**\nc) EPI de **militares, policías** y mantenimiento del orden\nd) EPI de los **medios de transporte por carretera**\ne) **Material de deporte**\nf) Material de **autodefensa o disuasión**\ng) **Aparatos portátiles de detección y señalización** de riesgos",
+      "fuente": "RD 773/1997, art. 2.2",
+      "etiquetas": [
+        "epi",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f26",
+      "anverso": "¿En qué anexo del RD 773/1997 está la lista de tipos de EPI?",
+      "reverso": "En el **anexo II**, desde la modificación por el **RD 1076/2021**. Antes estaba en el anexo I, y así lo dicen todavía muchos materiales: está **desactualizado**.",
+      "fuente": "RD 773/1997, art. 2.3, redacción del RD 1076/2021",
+      "etiquetas": [
+        "epi",
+        "trampa"
+      ]
+    },
+    {
+      "id": "t20-f27",
+      "anverso": "¿Son las duchas de seguridad y los lavaojos equipos de protección individual?",
+      "reverso": "**No.** Son **protección colectiva** e instalaciones de emergencia, no EPI: no los lleva ni sujeta el trabajador.\nLa norma de referencia que cita el RD 656/2017 es la **UNE-EN 15154-1** (duchas para el cuerpo conectadas a la red de agua utilizadas en laboratorios).",
+      "fuente": "RD 773/1997, art. 2.1; RD 656/2017",
+      "etiquetas": [
+        "epi",
+        "trampa"
+      ]
+    },
+    {
+      "id": "t20-f28",
+      "anverso": "¿Se aplica el Reglamento de Almacenamiento de Productos Químicos (APQ) al almacén de un laboratorio?",
+      "reverso": "**Normalmente no.** El art. 2.1.c) del RD 656/2017 excluye los almacenamientos **por debajo de los umbrales de la columna 5 de su tabla I** (p. ej. 50 L de líquidos inflamables cat. 1 y 2, 250 L de cat. 3).\nEn las instalaciones excluidas rigen *«las medidas de seguridad propuestas por el fabricante»*, es decir la **ficha de datos de seguridad**, y la normativa de **PRL**.",
+      "fuente": "RD 656/2017, art. 2.1.c)",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f29",
+      "anverso": "¿Cuántas instrucciones técnicas complementarias tiene el APQ, y qué dos reglas numéricas conviene recordar?",
+      "reverso": "**Once ITC: MIE APQ-0 a MIE APQ-10.**\n**Regla de suma:** agrupando por tipo de peligro, la suma de los cocientes entre lo almacenado y el umbral **no puede superar 1**.\n**Líquidos tóxicos excluidos:** capacidad máxima unitaria del envase **2 L en categoría 1** y **5 L en categoría 2**.",
+      "fuente": "RD 656/2017, art. 2 y tabla I",
+      "etiquetas": [
+        "almacenamiento"
+      ]
+    },
+    {
+      "id": "t20-f30",
+      "anverso": "Parejas de productos que nunca deben almacenarse juntas en un laboratorio.",
+      "reverso": "**Ácidos y bases** · **Comburentes e inflamables** · **Ácidos con cianuros o sulfuros** (desprenden HCN y H₂S) · **Agua y sustancias que reaccionan con ella** (H260/H261) · **Peróxidos orgánicos**, aislados y refrigerados.\n\nEl RD 374/2001, art. 5.3, obliga a considerar *«la separación de los agentes químicos incompatibles»*. La lista concreta es buena práctica, no un precepto.",
+      "fuente": "RD 374/2001, art. 5.3, y buena práctica de laboratorio",
+      "etiquetas": [
+        "almacenamiento"
+      ]
+    },
+    {
+      "id": "t20-f31",
+      "anverso": "Definición de residuo peligroso, y ¿qué pasa con los envases vacíos?",
+      "reverso": "Ley 7/2022, art. 2: residuo que presenta una o varias de las **características de peligrosidad del anexo I**, o así calificado por el Gobierno.\n*«También se comprenden en esta definición los **recipientes y envases que contengan restos** de sustancias o preparados peligrosos **o estén contaminados** por ellos»*, salvo que se demuestre lo contrario.\n\n**El envase vacío contaminado ES residuo peligroso.**",
+      "fuente": "Ley 7/2022, art. 2",
+      "etiquetas": [
+        "residuos",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f32",
+      "anverso": "Jerarquía de residuos: los cinco escalones en orden.",
+      "reverso": "Ley 7/2022, art. 8.1:\n1. **Prevención**\n2. **Preparación para la reutilización**\n3. **Reciclado**\n4. **Otro tipo de valorización**, incluida la energética\n5. **Eliminación**\n\nSolo puede apartarse de este orden justificándolo con un **enfoque de ciclo de vida**.",
+      "fuente": "Ley 7/2022, art. 8.1",
+      "etiquetas": [
+        "residuos"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t20-f33",
+      "anverso": "¿Qué norma establece hoy la Lista Europea de Residuos y qué pasa con la Orden MAM/304/2002?",
+      "reverso": "El **art. 6 de la Ley 7/2022** remite a la **Decisión 2014/955/UE**, que modifica la **Decisión 2000/532/CE**. *«Cuando se indique la codificación de un residuo como peligroso, dicha codificación será vinculante»*.\n\nLa **Orden MAM/304/2002 está DEROGADA** desde el **10 de abril de 2022** por la propia Ley 7/2022, aunque siga citándose en casi todos los temarios.",
+      "fuente": "Ley 7/2022, art. 6 y disposición derogatoria primera; Decisión 2014/955/UE",
+      "etiquetas": [
+        "residuos",
+        "trampa"
+      ]
+    },
+    {
+      "id": "t20-f34",
+      "anverso": "¿Cuál es el código LER de los productos químicos de laboratorio peligrosos, y qué significa el asterisco?",
+      "reverso": "**16 05 06\\*** — *«Productos químicos de laboratorio que consisten en sustancias peligrosas, incluidas las mezclas de productos químicos de laboratorio, o las contienen»*.\nCapítulo **16**: residuos no especificados en otro capítulo. Subcapítulo **16 05**: gases en recipientes a presión y productos químicos desechados.\n\n**El asterisco (\\*) marca el residuo como peligroso.**",
+      "fuente": "Decisión 2014/955/UE (DOUE L 370, de 30/12/2014)",
+      "etiquetas": [
+        "residuos"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t20-q01",
+      "pregunta": "El Reglamento CLP se aplica en su totalidad, tras el período transitorio, desde el:",
+      "opciones": [
+        "1 de diciembre de 2010",
+        "1 de junio de 2015",
+        "20 de abril de 2023"
+      ],
+      "correcta": 1,
+      "explicacion": "El CLP derogó las Directivas 67/548/CEE y 1999/45/CE con un período transitorio que terminó el 1 de junio de 2015.",
+      "fuente": "Reglamento (CE) 1272/2008"
+    },
+    {
+      "id": "t20-q02",
+      "pregunta": "¿Cuántos pictogramas de peligro contempla el Reglamento CLP?",
+      "opciones": [
+        "Siete",
+        "Ocho",
+        "Nueve"
+      ],
+      "correcta": 2,
+      "explicacion": "Nueve, del GHS01 al GHS09.",
+      "fuente": "CLP, anexo V",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q03",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Toxicidad aguda, categorías 1 a 3",
+        "Peligro grave para la salud",
+        "Irritante o nocivo"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el GHS06, calavera y tibias cruzadas: toxicidad aguda categorías 1 a 3. La categoría 4 lleva el signo de exclamación (GHS07).",
+      "fuente": "CLP, anexo V",
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "toxico-agudo"
+      }
+    },
+    {
+      "id": "t20-q04",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Inflamable",
+        "Comburente",
+        "Explosivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el GHS03, llama sobre un círculo: comburente. No arde por sí mismo, alimenta la combustión de otros productos.",
+      "fuente": "CLP, anexo V",
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "comburente"
+      }
+    },
+    {
+      "id": "t20-q05",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Peligro grave para la salud: carcinogenicidad, mutagenicidad, toxicidad para la reproducción",
+        "Peligro para el medio ambiente acuático",
+        "Toxicidad aguda categoría 4"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el GHS08. Cubre sensibilización respiratoria, mutagenicidad, carcinogenicidad, toxicidad para la reproducción, STOT y peligro por aspiración.",
+      "fuente": "CLP, anexo V",
+      "nucleo": true,
+      "figura": {
+        "tipo": "ghs",
+        "valor": "peligro-salud"
+      }
+    },
+    {
+      "id": "t20-q06",
+      "pregunta": "El pictograma GHS05 (corrosión) es peculiar porque:",
+      "opciones": [
+        "Solo se usa en mezclas, nunca en sustancias puras",
+        "Es el único que no tiene forma de rombo",
+        "Cubre a la vez un peligro físico (corrosivo para los metales) y peligros para la salud"
+      ],
+      "correcta": 2,
+      "explicacion": "GHS05 aparece en el grupo de peligros físicos por los corrosivos para los metales (H290) y en el de peligros para la salud por la corrosión cutánea (H314) y las lesiones oculares graves (H318).",
+      "fuente": "«Pictogramas en CLP», Ministerio de Sanidad",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q07",
+      "pregunta": "Una indicación de peligro cuyo código empieza por H3 corresponde a:",
+      "opciones": [
+        "Un peligro físico",
+        "Un peligro para la salud",
+        "Un peligro para el medio ambiente"
+      ],
+      "correcta": 1,
+      "explicacion": "H2xx peligros físicos (parte 2 del anexo I), H3xx peligros para la salud (parte 3), H4xx peligros para el medio ambiente (parte 4).",
+      "fuente": "CLP, anexos I y III"
+    },
+    {
+      "id": "t20-q08",
+      "pregunta": "Los consejos de prudencia de la serie P4xx son consejos de:",
+      "opciones": [
+        "Prevención",
+        "Respuesta",
+        "Almacenamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "P1xx generales, P2xx prevención, P3xx respuesta, P4xx almacenamiento y P5xx eliminación.",
+      "fuente": "CLP, anexo IV",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q09",
+      "pregunta": "Según el artículo 2.4 del CLP, la palabra de advertencia «atención» se utiliza para indicar:",
+      "opciones": [
+        "Las categorías de peligro menos graves",
+        "Las categorías de peligro más graves",
+        "Únicamente los peligros para el medio ambiente"
+      ],
+      "correcta": 0,
+      "explicacion": "«Peligro» se reserva a las categorías más graves y «atención» a las menos graves. Son las dos únicas palabras de advertencia.",
+      "fuente": "CLP, art. 2.4"
+    },
+    {
+      "id": "t20-q10",
+      "pregunta": "Si en una etiqueta figura la palabra de advertencia «peligro»:",
+      "opciones": [
+        "Debe figurar también «atención» si el producto tiene más de un peligro",
+        "No aparecerá la palabra de advertencia «atención»",
+        "Se sustituyen ambas por la mención «producto peligroso»"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el tenor literal del art. 20.3 del CLP: las dos palabras de advertencia nunca conviven en la misma etiqueta.",
+      "fuente": "CLP, art. 20.3",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q11",
+      "pregunta": "¿Cuál de estos elementos de la etiqueta NO va precedido en el artículo 17.1 del CLP de la expresión «cuando proceda»?",
+      "opciones": [
+        "Los pictogramas de peligro",
+        "Los consejos de prudencia",
+        "Los identificadores del producto"
+      ],
+      "correcta": 2,
+      "explicacion": "Los cuatro primeros elementos (proveedor, cantidad nominal, identificadores del producto) son obligatorios sin coletilla. Pictogramas, palabra de advertencia, indicaciones, consejos e información suplementaria van «cuando proceda».",
+      "fuente": "CLP, art. 17.1"
+    },
+    {
+      "id": "t20-q12",
+      "pregunta": "Las nuevas clases de peligro introducidas por el Reglamento Delegado (UE) 2023/707 (alteradores endocrinos, PBT, PMT):",
+      "opciones": [
+        "No tienen pictograma propio y se comunican mediante indicaciones EUH",
+        "Tienen un pictograma propio de color azul",
+        "Se comunican con la palabra de advertencia «peligro extremo»"
+      ],
+      "correcta": 0,
+      "explicacion": "Se comunican con las indicaciones EUH380, EUH381, EUH430, EUH431, EUH440, EUH441, EUH450 y EUH451. No añaden pictograma.",
+      "fuente": "Reglamento Delegado (UE) 2023/707"
+    },
+    {
+      "id": "t20-q13",
+      "pregunta": "La ficha de datos de seguridad (FDS) está regulada por:",
+      "opciones": [
+        "El Reglamento REACH, y consta de 16 secciones",
+        "El Reglamento CLP, y consta de 9 secciones",
+        "El RD 374/2001, y consta de 12 apartados"
+      ],
+      "correcta": 0,
+      "explicacion": "La FDS la regula el anexo II del Reglamento REACH (CE) 1907/2006 y tiene 16 secciones. La etiqueta, en cambio, la regula el CLP.",
+      "fuente": "REACH, anexo II"
+    },
+    {
+      "id": "t20-q14",
+      "pregunta": "Según el artículo 5.2 del RD 374/2001, cuando no es posible eliminar el riesgo por sustitución, ¿qué medida tiene prioridad?",
+      "opciones": [
+        "Facilitar equipos de protección individual a los trabajadores",
+        "La vigilancia de la salud de los trabajadores expuestos",
+        "Los controles técnicos y procedimientos de trabajo que aíslen el agente"
+      ],
+      "correcta": 2,
+      "explicacion": "El orden es: sustitución, después controles técnicos y aislamiento del agente, después ventilación y protección colectiva en origen, y solo al final los EPI.",
+      "fuente": "RD 374/2001, art. 5.2",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q15",
+      "pregunta": "¿Cuál de los siguientes NO es un equipo de protección individual a efectos del RD 773/1997?",
+      "opciones": [
+        "Unas gafas de seguridad con protección lateral",
+        "Un detector portátil de gases que señaliza el riesgo",
+        "Unos guantes resistentes a productos químicos"
+      ],
+      "correcta": 1,
+      "explicacion": "El art. 2.2.g) excluye expresamente los aparatos portátiles para la detección y señalización de riesgos y factores de molestia.",
+      "fuente": "RD 773/1997, art. 2.2.g)",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q16",
+      "pregunta": "La lista de tipos de equipos de protección individual, en relación con los riesgos de los que protegen, figura actualmente en:",
+      "opciones": [
+        "El anexo I del RD 773/1997",
+        "El anexo II del RD 773/1997",
+        "El anexo III del RD 773/1997"
+      ],
+      "correcta": 1,
+      "explicacion": "Desde la modificación operada por el RD 1076/2021, el art. 2.3 remite al anexo II. Los materiales anteriores a 2021 dicen anexo I.",
+      "fuente": "RD 773/1997, art. 2.3"
+    },
+    {
+      "id": "t20-q17",
+      "pregunta": "Las duchas de seguridad y los lavaojos de un laboratorio son:",
+      "opciones": [
+        "Equipos de protección individual de uso colectivo",
+        "Medios de protección colectiva e instalaciones de emergencia",
+        "Equipos de trabajo sometidos al RD 1215/1997"
+      ],
+      "correcta": 1,
+      "explicacion": "No los lleva ni sujeta el trabajador, así que no encajan en la definición de EPI del art. 2.1 del RD 773/1997.",
+      "fuente": "RD 773/1997, art. 2.1"
+    },
+    {
+      "id": "t20-q18",
+      "pregunta": "Un laboratorio almacena 20 litros de un líquido inflamable de categoría 2 (H225). Respecto del Reglamento de Almacenamiento de Productos Químicos (RD 656/2017):",
+      "opciones": [
+        "Queda excluido de su ámbito, porque no alcanza el umbral de 50 litros de la tabla I",
+        "Le es de aplicación la ITC MIE APQ-1 desde el primer litro",
+        "Debe presentar proyecto ante la Comunidad Autónoma antes de almacenarlo"
+      ],
+      "correcta": 0,
+      "explicacion": "El art. 2.1.c) excluye los almacenamientos por debajo de los umbrales de la columna 5 de la tabla I; para los líquidos inflamables de categorías 1 y 2 el umbral es de 50 litros. En las instalaciones excluidas rigen las medidas de la ficha de datos de seguridad y la normativa de prevención de riesgos laborales.",
+      "fuente": "RD 656/2017, art. 2.1.c) y tabla I",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q19",
+      "pregunta": "El Reglamento de Almacenamiento de Productos Químicos aprobado por el RD 656/2017 consta de:",
+      "opciones": [
+        "Once instrucciones técnicas complementarias, MIE APQ-0 a MIE APQ-10",
+        "Siete instrucciones técnicas complementarias, MIE APQ-1 a MIE APQ-7",
+        "Nueve instrucciones técnicas complementarias, MIE APQ-1 a MIE APQ-9"
+      ],
+      "correcta": 0,
+      "explicacion": "MIE APQ-0 a MIE APQ-10, once en total. Las siete primeras eran las del derogado RD 379/2001.",
+      "fuente": "RD 656/2017"
+    },
+    {
+      "id": "t20-q20",
+      "pregunta": "Un envase vacío que ha contenido un reactivo peligroso y conserva restos:",
+      "opciones": [
+        "Es residuo peligroso, salvo que se demuestre que no presenta ninguna característica de peligrosidad",
+        "Es siempre residuo no peligroso una vez vaciado",
+        "Deja de ser residuo peligroso si se enjuaga con agua"
+      ],
+      "correcta": 0,
+      "explicacion": "La definición del art. 2 de la Ley 7/2022 incluye expresamente los recipientes y envases que contengan restos de sustancias peligrosas o estén contaminados por ellas.",
+      "fuente": "Ley 7/2022, art. 2"
+    },
+    {
+      "id": "t20-q21",
+      "pregunta": "Señale el orden correcto de la jerarquía de residuos del artículo 8.1 de la Ley 7/2022:",
+      "opciones": [
+        "Prevención, reciclado, preparación para la reutilización, valorización y eliminación",
+        "Prevención, preparación para la reutilización, reciclado, otro tipo de valorización y eliminación",
+        "Preparación para la reutilización, prevención, reciclado, eliminación y valorización"
+      ],
+      "correcta": 1,
+      "explicacion": "Cinco escalones. La preparación para la reutilización va antes que el reciclado.",
+      "fuente": "Ley 7/2022, art. 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t20-q22",
+      "pregunta": "La identificación y clasificación de los residuos se hace hoy conforme a:",
+      "opciones": [
+        "La Orden MAM/304/2002, de 8 de febrero",
+        "El anexo VI del Reglamento CLP",
+        "La lista establecida en la Decisión 2014/955/UE, por remisión del art. 6 de la Ley 7/2022"
+      ],
+      "correcta": 2,
+      "explicacion": "La Orden MAM/304/2002 quedó derogada el 10 de abril de 2022 por la disposición derogatoria primera de la Ley 7/2022, aunque siga apareciendo en muchos temarios.",
+      "fuente": "Ley 7/2022, art. 6"
+    },
+    {
+      "id": "t20-q23",
+      "pregunta": "En la Lista Europea de Residuos, el código 16 05 06* corresponde a:",
+      "opciones": [
+        "Gases en recipientes a presión que contienen sustancias peligrosas",
+        "Productos químicos orgánicos desechados que contienen sustancias peligrosas",
+        "Productos químicos de laboratorio que consisten en sustancias peligrosas o las contienen"
+      ],
+      "correcta": 2,
+      "explicacion": "Los gases a presión con sustancias peligrosas son 16 05 04* y los productos químicos orgánicos desechados, 16 05 08*. El asterisco marca en todos los casos que el residuo es peligroso.",
+      "fuente": "Decisión 2014/955/UE",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t20-s01",
+      "titulo": "Supuesto 1. Recepción y manejo de un reactivo en el laboratorio de fisicoquímica",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Servicio de Salud Pública del Ayuntamiento de Zaragoza se recibe un envase de 2,5 litros de un disolvente orgánico. La etiqueta lleva la palabra de advertencia «peligro», las indicaciones **H225** y **H319**, y los consejos **P210**, **P280** y **P501**. El almacén del laboratorio guarda en total 18 litros de líquidos inflamables de categoría 2.\n\nResponda a las siguientes preguntas.",
+      "figura": {
+        "tipo": "ghs",
+        "valor": "inflamable"
+      },
+      "preguntas": [
+        {
+          "id": "t20-s01-q1",
+          "pregunta": "Además del pictograma de la imagen, ¿qué otro pictograma debe llevar necesariamente la etiqueta, atendiendo a las indicaciones de peligro declaradas?",
+          "opciones": [
+            "GHS06, calavera y tibias cruzadas",
+            "GHS05, corrosión",
+            "GHS07, signo de exclamación",
+            "Ninguno más: H225 y H319 se cubren con la llama"
+          ],
+          "correcta": 2,
+          "explicacion": "H225 (líquido y vapores muy inflamables) corresponde al GHS02, ya presente. H319 (provoca irritación ocular grave) es irritación ocular categoría 2, que se señaliza con el GHS07. La lesión ocular grave (H318) sí llevaría GHS05, pero no es el caso.",
+          "fuente": "CLP, anexos I y V"
+        },
+        {
+          "id": "t20-s01-q2",
+          "pregunta": "El consejo de prudencia P501 que figura en la etiqueta es un consejo de:",
+          "opciones": [
+            "Prevención",
+            "Respuesta",
+            "Almacenamiento",
+            "Eliminación"
+          ],
+          "correcta": 3,
+          "explicacion": "La serie P5xx son los consejos de eliminación. P501 es «Eliminar el contenido/el recipiente en…».",
+          "fuente": "CLP, anexo IV"
+        },
+        {
+          "id": "t20-s01-q3",
+          "pregunta": "Para trasvasar el disolvente, ¿qué medida debe adoptarse con prioridad según el RD 374/2001?",
+          "opciones": [
+            "Realizar la operación en vitrina de gases con extracción localizada",
+            "Facilitar al técnico guantes y gafas de seguridad",
+            "Someter al técnico a vigilancia de la salud antes del trasvase",
+            "Reducir el tiempo de exposición repartiendo la tarea entre varios técnicos"
+          ],
+          "correcta": 0,
+          "explicacion": "Tras la sustitución, el art. 5.2 prioriza los controles técnicos y la protección colectiva aplicada en el origen —la vitrina— sobre el equipo de protección individual, que es el último escalón.",
+          "fuente": "RD 374/2001, art. 5.2"
+        },
+        {
+          "id": "t20-s01-q4",
+          "pregunta": "Con 18 litros de líquidos inflamables de categoría 2 en el almacén, ¿qué régimen de almacenamiento le corresponde?",
+          "opciones": [
+            "El del RD 656/2017 y su ITC MIE APQ-1, con proyecto visado",
+            "El del RD 656/2017, pero sustituyendo el proyecto por una memoria",
+            "Queda excluido del RD 656/2017: rigen la ficha de datos de seguridad y la normativa de prevención de riesgos laborales",
+            "El del RD 379/2001, todavía vigente para cantidades pequeñas"
+          ],
+          "correcta": 2,
+          "explicacion": "El umbral de la columna 5 de la tabla I para líquidos inflamables de categorías 1 y 2 es de 50 litros. Con 18 litros el almacenamiento queda excluido y se siguen las medidas del fabricante recogidas en la ficha de datos de seguridad. El RD 379/2001 está derogado.",
+          "fuente": "RD 656/2017, art. 2.1.c) y tabla I"
+        },
+        {
+          "id": "t20-s01-q5",
+          "pregunta": "Agotado el reactivo, queda el envase con restos. ¿Cómo se gestiona?",
+          "opciones": [
+            "Como residuo no peligroso, una vez escurrido",
+            "Como residuo peligroso, entregándolo a gestor autorizado",
+            "Puede enjuagarse y verterse el enjuague al desagüe con abundante agua",
+            "Como residuo asimilable a urbano si su capacidad es inferior a 5 litros"
+          ],
+          "correcta": 1,
+          "explicacion": "El art. 2 de la Ley 7/2022 incluye en la definición de residuo peligroso los envases que contengan restos de sustancias peligrosas o estén contaminados por ellas. Se segrega, se etiqueta y se entrega a gestor autorizado; nunca al desagüe.",
+          "fuente": "Ley 7/2022, art. 2; Decisión 2014/955/UE"
+        }
+      ]
+    }
+  ],
+  "nucleoCriterio": "Las preguntas de pictogramas aparecen en las tres convocatorias analizadas, asi que los nueve rombos van al nucleo enteros. El resto del nucleo son las trampas de mayor rendimiento: prioridad del EPI, exclusiones del EPI, umbral del APQ, envases contaminados, jerarquia de residuos y codigo LER."
+}

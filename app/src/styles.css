@@ -20,8 +20,9 @@
   --ancho: 62rem;
 }
 
+/* El tema oscuro se aplica por preferencia del sistema...*/
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-tema="claro"]) {
     --bg: #0f151c;
     --surface: #172029;
     --surface-2: #1e2833;
@@ -38,6 +39,25 @@
     --bad-soft: #331a1a;
     --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 25%);
   }
+}
+
+/* ...o porque el usuario lo ha elegido explicitamente. */
+:root[data-tema="oscuro"] {
+  --bg: #0f151c;
+  --surface: #172029;
+  --surface-2: #1e2833;
+  --border: #2c3846;
+  --text: #e6ecf2;
+  --muted: #9aa9b8;
+  --accent: #6cb6e6;
+  --accent-soft: #17303f;
+  --ok: #63d29a;
+  --ok-soft: #12301f;
+  --warn: #e0b464;
+  --warn-soft: #302512;
+  --bad: #ef8a8a;
+  --bad-soft: #331a1a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 25%);
 }
 
 * {
@@ -708,4 +728,312 @@ button.item {
 
 .md-tabla .figura figcaption {
   display: none;
+}
+
+/* ---------- Selector de tema ---------- */
+
+.btn-tema {
+  display: inline-grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-left: 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.btn-tema:hover {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+/* Los pictogramas del SGA son un rombo rojo sobre BLANCO por norma. Se les da
+   siempre soporte blanco para que en tema oscuro no queden flotando ni pierdan
+   contraste el simbolo negro. */
+.figura-ghs {
+  background: #fff;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+/* ---------- Vista de impresion ---------- */
+
+body[data-listo="1"] {
+  background: #fff;
+  color: #16202c;
+}
+
+.imp {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+  background: #fff;
+  color: #16202c;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.55;
+}
+
+.imp .md,
+.imp .md p,
+.imp .md li {
+  font-size: 11pt;
+}
+
+.imp h1 {
+  font-size: 17pt;
+  line-height: 1.25;
+  margin: 0 0 0.6em;
+  page-break-after: avoid;
+}
+
+.imp h2 {
+  font-size: 13pt;
+  margin: 1.6em 0 0.5em;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.15em;
+  page-break-after: avoid;
+}
+
+.imp .md h2 {
+  border-top: none;
+}
+
+.imp-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  font-family: system-ui, sans-serif;
+  font-size: 8.5pt;
+  color: #5d6b7a;
+  border-bottom: 2px solid #16202c;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.imp-fecha {
+  white-space: nowrap;
+}
+
+.imp-aviso {
+  border-left: 3px solid #96631a;
+  background: #fbf0da;
+  padding: 0.5em 0.8em;
+  font-size: 10pt;
+}
+
+.imp-fuentes {
+  margin-top: 2em;
+  padding: 0.8em 1em;
+  background: #f6f7f9;
+  border: 1px solid #ddd;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+.imp-fuentes ul {
+  padding-left: 1.2em;
+  margin: 0.4em 0 0;
+}
+
+.imp-fuentes li {
+  overflow-wrap: anywhere;
+}
+
+/* Portada e indice del temario completo */
+
+.imp-portada {
+  text-align: center;
+  padding: 5rem 0 3rem;
+  page-break-after: always;
+}
+
+.imp-portada h1 {
+  font-size: 26pt;
+  margin: 0.3em 0;
+}
+
+.imp-portada-sup {
+  font-family: system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 9pt;
+  color: #5d6b7a;
+}
+
+.imp-portada-sub {
+  font-size: 13pt;
+  color: #5d6b7a;
+}
+
+.imp-portada-pie {
+  margin-top: 4rem;
+  font-family: system-ui, sans-serif;
+  font-size: 9pt;
+  color: #5d6b7a;
+  line-height: 1.7;
+}
+
+.imp-indice {
+  page-break-after: always;
+}
+
+.imp-indice-lista {
+  padding-left: 2.2em;
+  font-size: 10pt;
+}
+
+.imp-indice-lista li {
+  margin: 0.25em 0;
+  display: flex;
+  gap: 0.8em;
+  align-items: baseline;
+}
+
+.imp-indice-txt {
+  flex: 1;
+}
+
+.imp-indice-estado {
+  font-family: system-ui, sans-serif;
+  font-size: 8pt;
+  color: #5d6b7a;
+  white-space: nowrap;
+}
+
+/* Cada tema empieza en pagina nueva, salvo el primero del documento */
+.imp-tema + .imp-tema,
+.imp-indice + .imp-tema {
+  page-break-before: always;
+}
+
+/* Cuestionario */
+
+.imp-instrucciones {
+  font-family: system-ui, sans-serif;
+  font-size: 9.5pt;
+  background: #f6f7f9;
+  border-left: 3px solid #1f5f8b;
+  padding: 0.7em 1em;
+}
+
+.imp-preguntas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imp-pregunta {
+  margin: 0 0 1.1em;
+  page-break-inside: avoid;
+  font-size: 10.5pt;
+}
+
+.imp-enunciado {
+  margin-bottom: 0.3em;
+}
+
+.imp-opciones {
+  list-style: none;
+  padding-left: 1.6em;
+  margin: 0.2em 0 0;
+}
+
+.imp-opciones li {
+  margin: 0.12em 0;
+}
+
+.imp-supuesto {
+  page-break-before: always;
+}
+
+.imp-supuesto-enunciado {
+  background: #f6f7f9;
+  border: 1px solid #ddd;
+  padding: 0.8em 1em;
+  margin-bottom: 1.2em;
+  font-size: 10pt;
+}
+
+.imp-soluciones {
+  page-break-before: always;
+}
+
+.imp-lista-soluciones {
+  padding-left: 2em;
+  font-size: 10pt;
+}
+
+.imp-lista-soluciones > li {
+  margin: 0 0 0.8em;
+  page-break-inside: avoid;
+}
+
+.imp-explica {
+  color: #333;
+  font-size: 9.5pt;
+  margin-top: 0.15em;
+}
+
+.imp-fuente {
+  font-family: system-ui, sans-serif;
+  color: #5d6b7a;
+  font-size: 8.5pt;
+  margin-top: 0.1em;
+}
+
+.imp .figura {
+  margin: 0.5em 0;
+  align-items: flex-start;
+}
+
+.imp .figura-ghs {
+  width: 78px;
+  height: auto;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 18mm 16mm;
+  }
+
+  body,
+  body[data-listo="1"] {
+    background: #fff !important;
+    color: #16202c !important;
+  }
+
+  .cabecera,
+  .pie,
+  .no-imprimir {
+    display: none !important;
+  }
+
+  .imp {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imp-portada {
+    padding-top: 6rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .md-tabla {
+    overflow: visible;
+  }
+
+  .md table {
+    min-width: 0;
+    page-break-inside: avoid;
+  }
 }

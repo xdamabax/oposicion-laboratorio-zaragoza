@@ -1,173 +1,168 @@
 #!/usr/bin/env node
 /**
- * Exporta apuntes a HTML listo para imprimir y, si hay puppeteer instalado, a PDF.
+ * Genera los PDF dirigiendo un Chrome sin ventana a las vistas de impresión de
+ * la propia app (`#/imprimir/...`). Así la maqueta del PDF y la del botón
+ * «Descargar en PDF» son exactamente la misma: no hay dos plantillas que se
+ * desincronicen.
  *
- *   node scripts/export-pdf.js            -> todos los temas con apunte
- *   node scripts/export-pdf.js 1          -> solo el tema 1
- *   node scripts/export-pdf.js 1 4 9      -> temas sueltos
- *   node scripts/export-pdf.js --todo     -> un unico PDF con el temario completo
+ *   node scripts/export-pdf.js temario          -> todo el temario, con índice
+ *   node scripts/export-pdf.js tema 20          -> apuntes de un tema
+ *   node scripts/export-pdf.js test 20          -> cuestionario + soluciones
+ *   node scripts/export-pdf.js todo             -> temario + un PDF por tema con apunte
  *
- * Puppeteer no es dependencia del proyecto para no engordar el npm ci del deploy.
- * Si no esta, el script deja el HTML y te dice como imprimirlo.
+ * Opciones:
+ *   --base <url>     De dónde leer la app. Por defecto arranca `vite preview`
+ *                    sobre dist/ y lo usa. Admite también la URL publicada.
+ *   --salida <dir>   Carpeta de destino (por defecto ./export).
+ *   --chrome <ruta>  Ejecutable de Chrome, si no está donde se espera.
+ *
+ * Requiere `npm run build` previo si no se pasa --base.
  */
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'node:fs'
+import { existsSync, mkdirSync, readdirSync } from 'node:fs'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { marked } from 'marked'
+import { spawn } from 'node:child_process'
+import puppeteer from 'puppeteer-core'
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..')
-const DIR_TEMAS = join(RAIZ, 'temas')
-const DIR_SALIDA = join(RAIZ, 'export')
+const PUERTO = 4179
 
-function parseFrontmatter(md) {
-  const m = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(md)
-  if (!m) return { datos: {}, cuerpo: md }
+const CHROMES = [
+  'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
+  `${process.env.LOCALAPPDATA ?? ''}/Google/Chrome/Application/chrome.exe`,
+  'C:/Program Files/Microsoft/Edge/Application/msedge.exe',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/usr/bin/google-chrome',
+  '/usr/bin/chromium',
+]
 
-  const datos = {}
-  let claveLista = null
+function argumento(nombre, porDefecto) {
+  const i = process.argv.indexOf(`--${nombre}`)
+  return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : porDefecto
+}
 
-  for (const linea of m[1].split(/\r?\n/)) {
-    if (!linea.trim()) continue
+function buscarChrome() {
+  const dado = argumento('chrome')
+  if (dado) return dado
+  const encontrado = CHROMES.find((p) => existsSync(p))
+  if (!encontrado) {
+    throw new Error(
+      'No se encuentra Chrome. Indícalo con --chrome "C:/ruta/a/chrome.exe".',
+    )
+  }
+  return encontrado
+}
 
-    const item = /^\s*-\s+(.*)$/.exec(linea)
-    if (item && claveLista) {
-      datos[claveLista].push(item[1].trim().replace(/^["']|["']$/g, ''))
-      continue
-    }
-
-    const par = /^([A-Za-z_][\w-]*)\s*:\s*(.*)$/.exec(linea)
-    if (!par) continue
-
-    if (par[2].trim() === '') {
-      claveLista = par[1]
-      datos[par[1]] = []
-    } else {
-      claveLista = null
-      datos[par[1]] = par[2].trim().replace(/^["']|["']$/g, '')
-    }
+/** Levanta `vite preview` sobre dist/ y espera a que responda. */
+async function servirDist() {
+  if (!existsSync(join(RAIZ, 'dist', 'index.html'))) {
+    throw new Error('No hay dist/. Ejecuta antes `npm run build`.')
   }
 
-  return { datos, cuerpo: m[2] }
-}
-
-function cargarTemas(numeros) {
-  const ficheros = readdirSync(DIR_TEMAS)
-    .filter((f) => /^tema-\d{2}\.md$/.test(f))
-    .sort()
-
-  return ficheros
-    .map((f) => {
-      const numero = Number(/^tema-(\d{2})\.md$/.exec(f)[1])
-      const { datos, cuerpo } = parseFrontmatter(readFileSync(join(DIR_TEMAS, f), 'utf8'))
-      return { numero, datos, cuerpo }
-    })
-    .filter((t) => numeros.length === 0 || numeros.includes(t.numero))
-}
-
-const CSS = `
-  @page { size: A4; margin: 18mm 16mm; }
-  * { box-sizing: border-box; }
-  body { font-family: Georgia, "Times New Roman", serif; font-size: 11pt; line-height: 1.55;
-         color: #16202c; margin: 0; }
-  h1 { font-size: 18pt; margin: 0 0 .2em; page-break-after: avoid; }
-  h2 { font-size: 13pt; margin: 1.6em 0 .4em; page-break-after: avoid;
-       border-bottom: 1px solid #ccc; padding-bottom: .15em; }
-  h3 { font-size: 11.5pt; margin: 1.1em 0 .3em; page-break-after: avoid; }
-  p, li { orphans: 3; widows: 3; }
-  table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin: .8em 0;
-          page-break-inside: avoid; }
-  th, td { border: 1px solid #bbb; padding: 4px 7px; text-align: left; vertical-align: top; }
-  th { background: #f0f2f5; }
-  code { background: #f0f2f5; padding: .05em .3em; border-radius: 3px; font-size: .9em; }
-  blockquote { margin: .8em 0; padding: .1em 1em; border-left: 3px solid #1f5f8b; color: #444; }
-  .cab { color: #5d6b7a; font-size: 9pt; text-transform: uppercase; letter-spacing: .06em;
-         margin: 0 0 .3em; }
-  .fuentes { margin-top: 2em; padding: .8em 1em; background: #f6f7f9; border: 1px solid #ddd;
-             font-size: 9.5pt; page-break-inside: avoid; }
-  .tema + .tema { page-break-before: always; }
-`
-
-function render(temas, titulo) {
-  const secciones = temas
-    .map((t) => {
-      const fuentes = Array.isArray(t.datos.fuentes) ? t.datos.fuentes : []
-      return `
-        <section class="tema">
-          <p class="cab">${escapa(t.datos.parte ?? '')}</p>
-          <h1>${t.numero}. ${escapa(t.datos.titulo ?? '')}</h1>
-          ${marked.parse(t.cuerpo)}
-          <div class="fuentes">
-            <b>Fuentes y verificacion</b>
-            <ul>${fuentes.map((f) => `<li>${escapa(f)}</li>`).join('')}</ul>
-            ${t.datos.verificado ? `<p>Verificado el ${escapa(t.datos.verificado)}.</p>` : ''}
-          </div>
-        </section>`
-    })
-    .join('\n')
-
-  return `<!doctype html>
-<html lang="es"><head><meta charset="utf-8"><title>${escapa(titulo)}</title>
-<style>${CSS}</style></head><body>${secciones}</body></html>`
-}
-
-function escapa(s) {
-  return String(s).replace(
-    /[&<>"]/g,
-    (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c],
+  const proc = spawn(
+    process.platform === 'win32' ? 'npm.cmd' : 'npm',
+    ['run', 'preview', '--', '--port', String(PUERTO), '--strictPort'],
+    { cwd: RAIZ, stdio: 'ignore', shell: process.platform === 'win32' },
   )
+
+  const base = `http://localhost:${PUERTO}/`
+  for (let i = 0; i < 60; i++) {
+    try {
+      const r = await fetch(base)
+      if (r.ok) return { base, parar: () => proc.kill() }
+    } catch {
+      // todavía no escucha
+    }
+    await new Promise((r) => setTimeout(r, 500))
+  }
+  proc.kill()
+  throw new Error('El servidor de preview no respondió a tiempo.')
+}
+
+const PIE = `
+  <div style="width:100%;font-size:8px;font-family:system-ui,sans-serif;color:#666;
+              padding:0 16mm;display:flex;justify-content:space-between;">
+    <span>Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza</span>
+    <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
+  </div>`
+
+async function generar(pagina, base, ruta, fichero) {
+  await pagina.goto(`${base}#${ruta}`, { waitUntil: 'networkidle0', timeout: 120000 })
+  // La vista marca data-listo cuando ha terminado de montarse.
+  await pagina.waitForSelector('body[data-listo="1"]', { timeout: 60000 })
+  await pagina.emulateMediaType('print')
+
+  await pagina.pdf({
+    path: fichero,
+    format: 'A4',
+    printBackground: true,
+    margin: { top: '18mm', bottom: '20mm', left: '16mm', right: '16mm' },
+    displayHeaderFooter: true,
+    headerTemplate: '<span></span>',
+    footerTemplate: PIE,
+  })
+  return fichero
+}
+
+function temasConApunte() {
+  const dir = join(RAIZ, 'temas')
+  return readdirSync(dir)
+    .filter((f) => /^tema-\d{2}\.md$/.test(f))
+    .map((f) => Number(/^tema-(\d{2})\.md$/.exec(f)[1]))
+    .sort((a, b) => a - b)
 }
 
 async function main() {
-  const args = process.argv.slice(2)
-  const unico = args.includes('--todo')
-  const numeros = args.filter((a) => /^\d+$/.test(a)).map(Number)
+  const [orden, arg] = process.argv.slice(2).filter((a) => !a.startsWith('--'))
+  const salida = join(RAIZ, argumento('salida', 'export'))
+  if (!existsSync(salida)) mkdirSync(salida, { recursive: true })
 
-  const temas = cargarTemas(numeros)
-  if (temas.length === 0) {
-    console.error('No hay apuntes que exportar en temas/. Redacta primero algun tema-NN.md.')
-    process.exit(1)
-  }
+  const baseDada = argumento('base')
+  const servidor = baseDada ? { base: baseDada, parar: () => {} } : await servirDist()
 
-  if (!existsSync(DIR_SALIDA)) mkdirSync(DIR_SALIDA, { recursive: true })
+  const navegador = await puppeteer.launch({
+    executablePath: buscarChrome(),
+    headless: 'new',
+    args: ['--no-sandbox', '--disable-dev-shm-usage'],
+  })
 
-  const lotes = unico
-    ? [{ nombre: 'temario-completo', temas, titulo: 'Temario completo' }]
-    : temas.map((t) => ({
-        nombre: `tema-${String(t.numero).padStart(2, '0')}`,
-        temas: [t],
-        titulo: `Tema ${t.numero}`,
-      }))
-
-  let navegador = null
   try {
-    const { default: puppeteer } = await import('puppeteer')
-    navegador = await puppeteer.launch()
-  } catch {
-    console.warn('[aviso] puppeteer no esta instalado: solo se genera el HTML.')
-    console.warn('        Instalalo con  npm i -D puppeteer  o abre el HTML e imprime a PDF.')
-  }
+    const pagina = await navegador.newPage()
+    const trabajos = []
 
-  for (const lote of lotes) {
-    const html = render(lote.temas, lote.titulo)
-    const rutaHtml = join(DIR_SALIDA, `${lote.nombre}.html`)
-    writeFileSync(rutaHtml, html, 'utf8')
-    console.log(`HTML  ${rutaHtml}`)
-
-    if (navegador) {
-      const pagina = await navegador.newPage()
-      await pagina.setContent(html, { waitUntil: 'load' })
-      const rutaPdf = join(DIR_SALIDA, `${lote.nombre}.pdf`)
-      await pagina.pdf({ path: rutaPdf, format: 'A4', printBackground: true })
-      await pagina.close()
-      console.log(`PDF   ${rutaPdf}`)
+    if (!orden || orden === 'temario') {
+      trabajos.push(['/imprimir/temario', 'temario-completo.pdf'])
+    } else if (orden === 'tema') {
+      if (!arg) throw new Error('Falta el número de tema: node scripts/export-pdf.js tema 20')
+      trabajos.push([`/imprimir/tema/${arg}`, `tema-${String(arg).padStart(2, '0')}-apuntes.pdf`])
+    } else if (orden === 'test') {
+      if (!arg) throw new Error('Falta el número de tema: node scripts/export-pdf.js test 20')
+      trabajos.push([`/imprimir/test/${arg}`, `tema-${String(arg).padStart(2, '0')}-test.pdf`])
+    } else if (orden === 'todo') {
+      trabajos.push(['/imprimir/temario', 'temario-completo.pdf'])
+      for (const n of temasConApunte()) {
+        const nn = String(n).padStart(2, '0')
+        trabajos.push([`/imprimir/tema/${n}`, `tema-${nn}-apuntes.pdf`])
+        trabajos.push([`/imprimir/test/${n}`, `tema-${nn}-test.pdf`])
+      }
+    } else {
+      throw new Error(`Orden desconocida: ${orden}. Usa temario, tema, test o todo.`)
     }
-  }
 
-  if (navegador) await navegador.close()
+    for (const [ruta, nombre] of trabajos) {
+      const destino = join(salida, nombre)
+      await generar(pagina, servidor.base, ruta, destino)
+      console.log('PDF  ', destino)
+    }
+  } finally {
+    await navegador.close()
+    servidor.parar()
+  }
 }
 
 main().catch((e) => {
-  console.error(e)
+  console.error(e.message ?? e)
   process.exit(1)
 })

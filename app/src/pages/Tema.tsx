@@ -5,6 +5,7 @@ import Markdown from '../components/Markdown'
 import Flashcards from '../components/Flashcards'
 import Test from '../components/Test'
 import Supuestos from '../components/Supuestos'
+import BotonPDF from '../components/BotonPDF'
 
 type Vista = 'apunte' | 'tarjetas' | 'test' | 'supuestos'
 const ROTULO: Record<Vista, string> = {
@@ -82,8 +83,22 @@ export default function Tema() {
         ))}
       </div>
 
+      {vista === 'apunte' && tema.apunte && (
+        <div className="botones" style={{ marginBottom: '1rem' }}>
+          <BotonPDF ruta={`/imprimir/tema/${tema.numero}`}>
+            Descargar este apunte en PDF
+          </BotonPDF>
+        </div>
+      )}
       {vista === 'apunte' && <Apunte tema={tema} />}
       {vista === 'tarjetas' && <Flashcards tarjetas={tema.repaso?.flashcards ?? []} />}
+      {vista === 'test' && (tema.repaso?.test.length ?? 0) > 0 && (
+        <div className="botones" style={{ marginBottom: '0.9rem' }}>
+          <BotonPDF ruta={`/imprimir/test/${tema.numero}`}>
+            Descargar el cuestionario en PDF
+          </BotonPDF>
+        </div>
+      )}
       {vista === 'test' && (
         <Test
           preguntas={tema.repaso?.test ?? []}

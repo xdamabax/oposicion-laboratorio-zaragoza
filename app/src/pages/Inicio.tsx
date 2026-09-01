@@ -3,6 +3,7 @@ import { TEMAS, TEMARIO_PENDIENTE, TOTAL_NUCLEO, TOTAL_PREGUNTAS, TOTAL_TARJETAS
 import { useProgreso } from '../lib/progreso'
 import { tocaHoy } from '../lib/srs'
 import AvisoPenalizacion from '../components/AvisoPenalizacion'
+import BotonPDF from '../components/BotonPDF'
 
 export default function Inicio() {
   const progreso = useProgreso()
@@ -72,6 +73,23 @@ export default function Inicio() {
         <Link className="btn" to="/progreso">
           Mi progreso
         </Link>
+      </div>
+
+      <h2>Descargas</h2>
+      <div className="tarjeta">
+        <div className="botones">
+          <BotonPDF ruta="/imprimir/temario" primario>
+            Temario completo en PDF
+          </BotonPDF>
+          <Link className="btn" to="/temas">
+            PDF de un tema suelto
+          </Link>
+        </div>
+        <p className="contador" style={{ margin: '0.6rem 0 0' }}>
+          Un único documento con portada, índice de los 40 temas y los apuntes redactados hasta hoy.
+          Se abre la vista de impresión y el navegador ofrece «Guardar como PDF». Para el PDF de un
+          tema concreto o su cuestionario, entra en el tema y usa el botón de descarga.
+        </p>
       </div>
 
       <h2>Estado del material</h2>

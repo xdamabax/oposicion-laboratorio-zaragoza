@@ -1,13 +1,29 @@
-import { NavLink, Route, Routes } from 'react-router-dom'
+import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import Inicio from './pages/Inicio'
 import Temas from './pages/Temas'
 import Tema from './pages/Tema'
 import Progreso from './pages/Progreso'
 import Figuras from './pages/Figuras'
+import { ImprimirTema, ImprimirTemario, ImprimirTest } from './pages/Imprimir'
+import SelectorTema from './components/SelectorTema'
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
 export default function App() {
+  const { pathname } = useLocation()
+
+  // Las vistas de impresion se sirven sin cabecera ni pie: el documento que
+  // se ve en pantalla es exactamente el que sale por la impresora o al PDF.
+  if (pathname.startsWith('/imprimir')) {
+    return (
+      <Routes>
+        <Route path="/imprimir/tema/:numero" element={<ImprimirTema />} />
+        <Route path="/imprimir/temario" element={<ImprimirTemario />} />
+        <Route path="/imprimir/test/:numero" element={<ImprimirTest />} />
+      </Routes>
+    )
+  }
+
   return (
     <>
       <header className="cabecera">
@@ -29,6 +45,7 @@ export default function App() {
             <NavLink to="/figuras" className={clase}>
               Figuras
             </NavLink>
+            <SelectorTema />
           </nav>
         </div>
       </header>
@@ -45,9 +62,9 @@ export default function App() {
       </main>
 
       <footer className="pie">
-        Proyecto de estudio personal. Convocatoria publicada en el BOPZ num. 5077, de 27 de julio de
-        2026. Los apuntes citan siempre la norma y la fecha de verificacion: comprueba la vigencia
-        antes del examen.
+        Proyecto de estudio personal. Convocatoria publicada en el BOPZ núm. 170, de 27 de julio de
+        2026, anuncio núm. 5077. Los apuntes citan siempre la norma y la fecha de verificación:
+        comprueba la vigencia antes del examen.
       </footer>
     </>
   )
@@ -56,7 +73,7 @@ export default function App() {
 function NoEncontrado() {
   return (
     <div className="vacio">
-      <p>Esa pagina no existe.</p>
+      <p>Esa página no existe.</p>
       <NavLink to="/" className="btn">
         Volver al inicio
       </NavLink>

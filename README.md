@@ -83,14 +83,43 @@ El examen usa imágenes (pictogramas de peligro, material de vidrio, lecturas de
 
 Componentes en `app/src/components/figuras/`. Los **nueve pictogramas CLP son los oficiales** del Reglamento (CE) 1272/2008, anexo V, en SVG (`app/src/assets/ghs/`): los mismos símbolos que figuran en una etiqueta real. La bureta y el material de vidrio sí son dibujos esquemáticos propios, pensados para reconocer la silueta y distinguir material aforado de graduado.
 
+### Tema claro y oscuro
+
+Botón en la barra de navegación que cicla **sistema → claro → oscuro**. La preferencia se guarda en `localStorage` (`oposicion-zgz:tema`) y el valor de partida es el del sistema operativo. En CSS, `:root` lleva la paleta clara, el bloque `prefers-color-scheme: dark` se aplica solo si el usuario no ha elegido «claro», y `:root[data-tema="oscuro"]` gana en ambos sentidos.
+
+Los pictogramas CLP son un rombo rojo **sobre blanco** por norma, así que se dibujan siempre sobre un soporte blanco: en tema oscuro no quedan flotando ni pierden contraste el símbolo negro.
+
+## Exportar a PDF
+
+Hay tres documentos, y una sola maqueta para los dos caminos de salida:
+
+| Documento | Ruta de impresión | Dónde está el botón |
+|---|---|---|
+| Apuntes de un tema | `#/imprimir/tema/:n` | Pestaña **Apuntes** del tema |
+| Apuntes de los 40 temas, con portada e índice | `#/imprimir/temario` | Sección **Descargas** del inicio |
+| Cuestionario de un tema + soluciones | `#/imprimir/test/:n` | Pestaña **Test** del tema |
+
+El cuestionario lleva primero las preguntas del **primer ejercicio** (3 opciones), después las del **supuesto práctico** (4 opciones) con numeración continua, y al final una sección de **Soluciones** con la respuesta correcta, la explicación y la fuente de cada una. Test y supuestos van en el mismo PDF: se hacen el mismo día y en papel interesa corregirlo todo de una vez.
+
+**Desde la app**, el botón abre la vista de impresión y lanza el diálogo del navegador, donde «Guardar como PDF» es el destino por defecto. Se hace así, y no generando el binario en JavaScript, porque el motor de impresión da texto vectorial seleccionable y paginación real, que es justo lo que las librerías de PDF en cliente hacen peor.
+
+**Sin intervención**, `npm run export:pdf` dirige un Chrome sin ventana a esas mismas vistas:
+
+```bash
+npm run export:pdf -- temario     # temario-completo.pdf
+npm run export:pdf -- tema 20     # tema-20-apuntes.pdf
+npm run export:pdf -- test 20     # tema-20-test.pdf
+npm run export:pdf -- todo        # temario + apuntes y test de cada tema
+```
+
+Los ficheros salen en `export/` (ignorada por git). Requiere `npm run build` previo y un Chrome instalado; con `--base <url>` puede apuntarse a la web publicada en lugar de a `dist/`, y con `--chrome <ruta>` indicarse otro ejecutable.
+
 ## Desarrollo
 
 ```bash
 npm install
-npm run dev                    # http://localhost:5173
-npm run build                  # genera dist/
-npm run export:pdf             # HTML (+ PDF si hay puppeteer) de cada tema
-npm run export:pdf -- --todo   # un único documento con todo el temario
+npm run dev      # http://localhost:5173
+npm run build    # genera dist/
 ```
 
 ## Despliegue
