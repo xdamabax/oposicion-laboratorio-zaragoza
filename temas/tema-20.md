@@ -8,7 +8,9 @@ fuentes:
   - "Reglamento (CE) n.º 1272/2008 (CLP), sobre clasificación, etiquetado y envasado de sustancias y mezclas. Versión consolidada de 01/07/2026, en vigor. ELI: http://data.europa.eu/eli/reg/2008/1272/2026-07-01"
   - "Reglamento (UE) 2024/2865, de 23 de octubre de 2024, que modifica el CLP. Aplicación escalonada: 01/07/2026 y 01/01/2027 (BOE: DOUE-L-2024-81721)."
   - "Reglamento Delegado (UE) 2023/707, que introduce las nuevas clases de peligro (alteradores endocrinos, PBT/mPmB, PMT/mPmM)."
+  - "CLP, texto publicado en el DOUE L 353, de 31/12/2008, consultado a través del BOE para el articulado literal (arts. 2, 17 y 20) — https://www.boe.es/doue/2008/353/L00001-01355.pdf"
   - "CLP, anexo III (indicaciones de peligro) y anexo IV (consejos de prudencia), edición en castellano publicada por el Ministerio de Sanidad — https://www.sanidad.gob.es/areas/sanidadAmbiental/prodQuimicos/reglamentoCLP/"
+  - "Decisión 2014/955/UE de la Comisión, de 18 de diciembre de 2014, que modifica la Decisión 2000/532/CE sobre la lista de residuos (DOUE L 370, de 30/12/2014) — https://www.boe.es/doue/2014/370/L00044-00086.pdf"
   - "Real Decreto 374/2001, de 6 de abril, sobre agentes químicos durante el trabajo (BOE-A-2001-8436), texto consolidado, última actualización de 18/12/2025."
   - "Real Decreto 773/1997, de 30 de mayo, sobre equipos de protección individual (BOE-A-1997-12735), texto consolidado, última actualización de 18/12/2025."
   - "Real Decreto 656/2017, de 23 de junio, Reglamento de Almacenamiento de Productos Químicos e ITC MIE APQ 0 a 10 (BOE-A-2017-8755), texto consolidado, última actualización de 19/12/2025."
@@ -133,18 +135,44 @@ El **anexo IV** del CLP lista los consejos de prudencia en **cinco series**, y e
 
 > Es un patrón muy rentable: si te preguntan qué consejo de prudencia corresponde a un pictograma, el **primer dígito** te dice ya si la respuesta es de prevención, de respuesta, de almacenamiento o de eliminación.
 
-### 4.1. La etiqueta CLP
+### 4.1. La etiqueta CLP: los ocho elementos del artículo 17
 
-Según el CLP, la etiqueta debe ir firmemente adherida al envase e incluir:
+El **art. 17.1** enumera literalmente lo que debe llevar la etiqueta de una sustancia o mezcla clasificada como peligrosa y contenida en un envase:
 
-1. **Nombre, dirección y número de teléfono del proveedor.**
-2. **Cantidad nominal** de la sustancia o mezcla, si se pone a disposición del público en general y no consta ya en otro lugar del envase.
-3. **Identificadores del producto.**
-4. Cuando proceda: **pictogramas de peligro**, **palabra de advertencia**, **indicaciones de peligro**, **consejos de prudencia** e **información suplementaria**.
+| | Elemento | ¿Siempre? |
+| --- | --- | --- |
+| a) | El nombre, la dirección y el número de teléfono del proveedor o proveedores | Sí |
+| b) | La cantidad nominal contenida en el envase **a disposición del público en general**, salvo que ya esté especificada en otro lugar del envase | Sí, con esa condición |
+| c) | Los **identificadores del producto** (art. 18) | Sí |
+| d) | Los **pictogramas de peligro** (art. 19) | **Cuando proceda** |
+| e) | Las **palabras de advertencia** (art. 20) | **Cuando proceda** |
+| f) | Las **indicaciones de peligro** (art. 21) | **Cuando proceda** |
+| g) | Los **consejos de prudencia** apropiados (art. 22) | **Cuando proceda** |
+| h) | Una sección de **información suplementaria** (art. 25) | **Cuando proceda** |
+
+Los cuatro primeros no llevan la coletilla; los cinco últimos van precedidos de *«cuando proceda»*. Además, el art. 17.2 exige que la etiqueta esté escrita en **la lengua o lenguas oficiales del Estado miembro** donde se comercialice.
 
 Hay **exenciones para envases pequeños** (con carácter general, inferiores a **125 ml**) o difíciles de etiquetar, que permiten omitir indicaciones, consejos o pictogramas.
 
 La **ficha de datos de seguridad (FDS)** es documento distinto de la etiqueta: la regula el **REACH** (Reglamento (CE) 1907/2006, anexo II) y tiene **16 secciones**.
+
+### 4.2. La palabra de advertencia
+
+Solo hay **dos**, y su definición literal está en el **art. 2.4** del CLP:
+
+> *«palabra de advertencia»: un vocablo que indica el **nivel relativo de gravedad** de los peligros para alertar al lector de la existencia de un peligro potencial; se distinguen los dos niveles siguientes:*
+> *a) «**peligro**»: palabra de advertencia utilizada para indicar **las categorías de peligro más graves**;*
+> *b) «**atención**»: palabra de advertencia utilizada para indicar **las categorías de peligro menos graves**.*
+
+El **art. 20** añade tres reglas:
+
+1. En la etiqueta figurará la palabra de advertencia que corresponda a la clasificación.
+2. **Cuál corresponde a cada clasificación no lo decide el art. 20**: lo fijan las tablas de las **partes 2 a 5 del anexo I**, que indican los elementos de etiqueta de cada clase de peligro.
+3. *«Cuando en la etiqueta figure la palabra de advertencia «peligro», **no aparecerá** la palabra de advertencia «atención»».*
+
+> El apartado 3 es una pregunta de examen redonda: en una misma etiqueta **nunca conviven las dos palabras**. Si un producto tiene varios peligros y alguno exige «peligro», esa es la única que se imprime.
+
+Las otras dos definiciones que conviene tener literales (art. 2.5 y 2.6): la **indicación de peligro** es *«una frase que, asignada a una clase o categoría de peligro, describe la naturaleza de los peligros»*; el **consejo de prudencia**, *«una frase que describe la medida o medidas recomendadas para minimizar o evitar los efectos adversos causados por la exposición»*.
 
 ---
 
@@ -259,8 +287,30 @@ Solo puede apartarse de este orden justificándolo con un **enfoque de ciclo de 
 - **Segregar en origen**, por grupos compatibles: disolventes halogenados / disolventes no halogenados / ácidos / bases / sales de metales pesados / sólidos contaminados / vidrio contaminado / residuos biológicos.
 - **Nunca verter al desagüe** un residuo peligroso ni mezclar grupos incompatibles en el mismo bidón.
 - **Etiquetar el envase de residuo** con su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas de peligro que correspondan.
-- El residuo se identifica con su **código LER** (Lista Europea de Residuos); los residuos de laboratorio están en el **capítulo 16 05** (productos químicos y gases en recipientes a presión) y en el **16 05 06** (productos químicos de laboratorio que consisten en, o contienen, sustancias peligrosas).
 - La entrega se hace a **gestor autorizado**, con su documento de identificación y trazabilidad.
+
+### 7.4. La Lista Europea de Residuos (LER)
+
+**Cuidado con la fuente.** La Orden MAM/304/2002, que es la que citan casi todos los temarios, está **derogada desde el 10 de abril de 2022** por la disposición derogatoria primera de la Ley 7/2022. No es la norma aplicable.
+
+Lo vigente es el **art. 6 de la Ley 7/2022, «Clasificación y Lista europea de residuos»**, que remite directamente al Derecho de la UE:
+
+> *«La identificación y clasificación de los residuos se hará de conformidad con la lista establecida en la **Decisión 2014/955/UE** de la Comisión, de 18 de diciembre de 2014, por la que se modifica la **Decisión 2000/532/CE**, sobre la lista de residuos […]. Cuando se indique la codificación de un residuo como peligroso, dicha codificación **será vinculante**.»*
+
+**Cómo se lee un código LER.** Son seis dígitos en tres parejas: capítulo (actividad que lo genera), subcapítulo y residuo concreto. **El asterisco (\*) marca el residuo como peligroso**: según la propia Decisión, *«los residuos marcados con un asterisco (*) en la lista de residuos se considerarán residuos peligrosos»*.
+
+Los residuos de un laboratorio caen en el **capítulo 16, «Residuos no especificados en otro capítulo de la lista»**, subcapítulo **16 05, «Gases en recipientes a presión y productos químicos desechados»**:
+
+| Código | Descripción | ¿Peligroso? |
+| --- | --- | --- |
+| 16 05 04\* | Gases en recipientes a presión (incluidos los halones) que contienen sustancias peligrosas | Sí |
+| 16 05 05 | Gases en recipientes a presión, distintos de los especificados en el código 16 05 04 | No |
+| **16 05 06\*** | **Productos químicos de laboratorio que consisten en sustancias peligrosas, incluidas las mezclas de productos químicos de laboratorio, o las contienen** | **Sí** |
+| 16 05 07\* | Productos químicos inorgánicos desechados que consisten en sustancias peligrosas o las contienen | Sí |
+| 16 05 08\* | Productos químicos orgánicos desechados que consisten en sustancias peligrosas o las contienen | Sí |
+| 16 05 09 | Productos químicos desechados distintos de los especificados en los códigos 16 05 06, 16 05 07 o 16 05 08 | No |
+
+**16 05 06\* es el código del reactivo caducado o sobrante de laboratorio.** Distínguelo del 16 05 07\* (inorgánicos desechados) y del 16 05 08\* (orgánicos desechados), que se refieren a productos químicos desechados en general, no específicamente de laboratorio.
 
 ---
 
@@ -290,7 +340,10 @@ Solo puede apartarse de este orden justificándolo con un **enfoque de ciclo de 
 - **La bata y el uniforme corrientes no son EPI** si no están específicamente destinados a proteger (RD 773/1997, art. 2.2.a). Tampoco lo son los detectores portátiles de riesgos (art. 2.2.g).
 - **La lista de tipos de EPI está en el anexo II** del RD 773/1997 desde la reforma de 2021, no en el anexo I.
 - **El APQ no se aplica** por debajo de los umbrales de su tabla I; en ese caso rigen la FDS y la normativa de PRL.
+- **En una etiqueta nunca aparecen las dos palabras de advertencia**: si figura «peligro», no figura «atención» (art. 20.3 CLP).
 - **Los envases vacíos contaminados son residuos peligrosos.**
+- **16 05 06\*** es el código LER de los productos químicos de laboratorio peligrosos. **El asterisco marca el residuo como peligroso.**
+- **La Orden MAM/304/2002 está derogada** desde el 10/04/2022: la lista aplicable es la de la Decisión 2014/955/UE, por remisión del art. 6 de la Ley 7/2022.
 - **Jerarquía de residuos**: prevención → preparación para la reutilización → reciclado → otra valorización → eliminación. Son **cinco** escalones, y «preparación para la reutilización» va antes que «reciclado».
 - Las **duchas de seguridad y los lavaojos son protección colectiva**, no EPI.
 
@@ -298,7 +351,10 @@ Solo puede apartarse de este orden justificándolo con un **enfoque de ciclo de 
 
 ## Fuentes y verificación
 
-- **Norma principal:** Reglamento (CE) n.º 1272/2008 (CLP). **Versión consolidada de 1 de julio de 2026**, en vigor, comprobada en EUR-Lex (ELI `http://data.europa.eu/eli/reg/2008/1272/2026-07-01`). El texto completo son 27,8 MB por el anexo VI, así que los anexos III y IV se han verificado sobre la **edición en castellano publicada por el Ministerio de Sanidad**, y el mapa pictograma → grupo de peligro sobre el documento «Pictogramas en CLP» del mismo ministerio.
+- **Norma principal:** Reglamento (CE) n.º 1272/2008 (CLP). **Versión consolidada de 1 de julio de 2026**, en vigor, comprobada en EUR-Lex (ELI `http://data.europa.eu/eli/reg/2008/1272/2026-07-01`). El consolidado son 27,8 MB por el anexo VI y EUR-Lex no permite descargarlo por partes, así que:
+  - el **articulado literal** (arts. 2.4, 2.5, 2.6, 17 y 20) se ha leído sobre el texto publicado en el **DOUE L 353, de 31/12/2008**, descargado del BOE (7,2 MB). Estos artículos no han sido modificados en su numeración; conviene contrastar el consolidado si el examen entra en el detalle de las modificaciones de 2024;
+  - los **anexos III y IV** y el mapa **pictograma → grupo de peligro**, sobre la edición en castellano publicada por el **Ministerio de Sanidad**.
+- **Lista Europea de Residuos:** **Decisión 2014/955/UE** (DOUE L 370, de 30/12/2014), descargada del BOE y consultada directamente para los códigos del subcapítulo 16 05 y para la regla del asterisco. Se comprobó además en la API del BOE que la **Orden MAM/304/2002 figura como derogada** (fecha de derogación 10/04/2022, vigencia agotada), por lo que no se cita.
 - **Modificaciones recientes verificadas:** Reglamento Delegado (UE) 2023/707 (clases nuevas y calendario de aplicación, contrastado en ECHA) y Reglamento (UE) 2024/2865 (aplicación el 01/07/2026 y el 01/01/2027).
 - **Normativa española**, textos consolidados descargados de la API de datos abiertos del BOE y comprobados como **no derogados**:
   - RD 374/2001 (BOE-A-2001-8436), actualización de 18/12/2025.
@@ -309,7 +365,10 @@ Solo puede apartarse de este orden justificándolo con un **enfoque de ciclo de 
 
 ### Dudas y ambigüedades declaradas
 
-1. **La palabra de advertencia.** El apartado 3.1 afirma que el CLP usa «Peligro» para las categorías más graves y «Atención» para las menos graves. Los dos términos están confirmados, pero **no he podido leer literalmente el artículo 20 del CLP** (el consolidado no es descargable y ECHA no lo detalla en la página consultada). El criterio es el asentado, pero conviene que lo contrastes.
-2. **Códigos LER.** El capítulo 16 05 y el código 16 05 06 proceden de la Lista Europea de Residuos (Decisión 2000/532/CE), que **no he descargado y verificado en esta sesión**. Si quieres, lo compruebo antes de generar las tarjetas.
-3. **Series P.** El recuento por series (P101-P103, P201-P284, P301-P391, P401-P422, P501-P502) sale de la edición del anexo IV publicada por Sanidad, que **puede no recoger la última actualización**; el CLP vigente incluye algún consejo más. La estructura de las cinco series sí es estable.
-4. **Incompatibilidades de almacenamiento** (apartado 6.2): son práctica consolidada de laboratorio y coherentes con el art. 5.3 del RD 374/2001, pero **la lista concreta de parejas no procede de un precepto**, sino de buena práctica. No la des como texto legal.
+1. **Series P.** El recuento por series (P101-P103, P201-P284, P301-P391, P401-P422, P501-P502) sale de la edición del anexo IV publicada por Sanidad, que **puede no recoger la última actualización**; el CLP vigente incluye algún consejo más. La estructura de las cinco series sí es estable, y es lo único que conviene memorizar.
+2. **Incompatibilidades de almacenamiento** (apartado 6.2): son práctica consolidada de laboratorio y coherentes con el art. 5.3 del RD 374/2001, que sí obliga a considerar *«la separación de los agentes químicos incompatibles»*, pero **la lista concreta de parejas no procede de un precepto**. No la des como texto legal.
+
+### Dudas resueltas en la revisión
+
+- **Palabra de advertencia:** verificada sobre el texto literal. La definición con los dos niveles de gravedad está en el **art. 2.4** del CLP, no en el art. 20. El art. 20 remite a las tablas del anexo I y añade la regla de que «peligro» excluye «atención». El apartado 4.2 recoge las dos cosas.
+- **Códigos LER:** verificados sobre la **Decisión 2014/955/UE** (texto publicado en el DOUE L 370, de 30/12/2014), a la que remite el art. 6 de la Ley 7/2022. De paso se corrigió un error de partida: la **Orden MAM/304/2002 está derogada** desde el 10/04/2022 y no puede citarse como fuente, aunque siga apareciendo en la mayoría de los temarios.
