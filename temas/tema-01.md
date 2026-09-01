@@ -2,7 +2,7 @@
 tema: 1
 titulo: "La Constitución española: estructura y título preliminar. La Administración pública en la Constitución. Organización territorial del Estado en la Constitución: principios generales y Administración local."
 parte: Parte primera
-estado: borrador
+estado: aprobado
 verificado: 2026-09-01
 fuentes:
   - "Constitución Española (BOE-A-1978-31229). Texto consolidado del BOE, última actualización de 20/05/2026. https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"
