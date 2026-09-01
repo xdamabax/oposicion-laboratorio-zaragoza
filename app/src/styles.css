@@ -694,3 +694,18 @@ button.item {
   line-height: 1.35;
   text-align: left;
 }
+
+/* Dentro de una tabla, las figuras van pequenas para no disparar la altura de fila. */
+.md-tabla .figura {
+  margin: 0;
+}
+
+.md-tabla .figura-ghs,
+.md-tabla .figura-svg {
+  width: 64px;
+  height: auto;
+}
+
+.md-tabla .figura figcaption {
+  display: none;
+}
