@@ -12,9 +12,31 @@ function hoy(): string {
 }
 
 /**
+ * Espera a que todas las imagenes del documento esten cargadas y decodificadas.
+ *
+ * Imprimir no es como mirar la pantalla: no hay viewport, y `window.print()`
+ * no espera a nada. Una imagen que todavia esta en vuelo sale en blanco en el
+ * PDF sin dar ningun error, aunque en pantalla se vea bien.
+ *
+ * Los pictogramas ya no se piden de forma diferida (ver PictogramaGHS), pero
+ * esta espera se queda: vale para cualquier imagen que se anada despues, y es
+ * lo que hace que `data-listo` signifique algo. Por si acaso, se fuerza
+ * tambien `eager` en lo que llegue marcado como `lazy`.
+ */
+function imagenesListas(): Promise<unknown> {
+  const imagenes = Array.from(document.images)
+  for (const img of imagenes) img.loading = 'eager'
+  // Una imagen rota no debe dejar el documento sin imprimir: se ignora y sigue.
+  return Promise.all(imagenes.map((img) => img.decode().catch(() => undefined)))
+}
+
+/**
  * Prepara el documento para imprimir: pone el titulo (que el navegador usa como
  * nombre del PDF), marca data-listo para que el script de exportacion sepa que
  * puede capturar, y lanza el dialogo de impresion si se pidio con ?auto=1.
+ *
+ * Tanto la marca como el dialogo esperan a las imagenes: data-listo significa
+ * «esto ya se puede capturar tal cual», no solo «React ha montado».
  */
 function usePreparar(titulo: string) {
   const [params] = useSearchParams()
@@ -23,12 +45,18 @@ function usePreparar(titulo: string) {
   useEffect(() => {
     const previo = document.title
     document.title = titulo
-    document.body.setAttribute('data-listo', '1')
 
+    let cancelado = false
     let id: number | undefined
-    if (auto) id = window.setTimeout(() => window.print(), 400)
+
+    void imagenesListas().then(() => {
+      if (cancelado) return
+      document.body.setAttribute('data-listo', '1')
+      if (auto) id = window.setTimeout(() => window.print(), 400)
+    })
 
     return () => {
+      cancelado = true
       document.title = previo
       document.body.removeAttribute('data-listo')
       if (id) window.clearTimeout(id)

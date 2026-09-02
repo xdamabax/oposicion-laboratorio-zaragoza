@@ -82,7 +82,9 @@ export default function PictogramaGHS({
       height={tamano}
       alt={`Pictograma ${CODIGOS_GHS[tipo]}: ${NOMBRES_GHS[tipo]}`}
       className="figura-ghs"
-      loading="lazy"
+      // Sin loading="lazy" a proposito. Son nueve SVG de pocos kB, cacheados,
+      // y la carga diferida no se pide nunca cuando no hay viewport: al
+      // imprimir salian en blanco. Lo que se ahorraba no compensa.
       decoding="async"
     />
   )

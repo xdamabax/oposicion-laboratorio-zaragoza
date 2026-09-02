@@ -88,11 +88,53 @@ const PIE = `
     <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
   </div>`
 
+/**
+ * Comprueba que cada imagen va a salir de verdad en el papel.
+ *
+ * No basta con que el DOM la haya montado, ni siquiera con que haya cargado:
+ * una imagen puede tener naturalWidth > 0 y pintarse con altura cero, o quedar
+ * oculta por una regla de la hoja de impresion. Una figura en blanco no da
+ * ningun error, asi que el PDF parece correcto hasta que se mira. Se mide en
+ * medio print, que es el que produce el PDF, y se exige las cuatro cosas:
+ * cargada, decodificada, con caja pintada y visible.
+ */
+async function imagenesRotas(pagina) {
+  return pagina.evaluate(() =>
+    Array.from(document.images)
+      .map((img) => {
+        const estilo = getComputedStyle(img)
+        // La caja de CONTENIDO. Ni getBoundingClientRect() ni la altura
+        // computada valen: con box-sizing border-box y el padding de
+        // .figura-ghs, una figura de contenido nulo sigue midiendo 4 px.
+        const relleno = (a, b) => (parseFloat(a) || 0) + (parseFloat(b) || 0)
+        const ancho = img.clientWidth - relleno(estilo.paddingLeft, estilo.paddingRight)
+        const alto = img.clientHeight - relleno(estilo.paddingTop, estilo.paddingBottom)
+        return {
+          nombre: img.alt || img.currentSrc || '(imagen sin alt)',
+          cargada: img.complete && img.naturalWidth > 0 && img.naturalHeight > 0,
+          pintada: ancho > 0 && alto > 0,
+          visible:
+            estilo.visibility !== 'hidden' &&
+            estilo.display !== 'none' &&
+            Number(estilo.opacity) > 0,
+        }
+      })
+      .filter((i) => !i.cargada || !i.pintada || !i.visible)
+      .map((i) => `${i.nombre} [${!i.cargada ? 'no carga' : !i.pintada ? 'caja 0' : 'oculta'}]`),
+  )
+}
+
 async function generar(pagina, base, ruta, fichero) {
   await pagina.goto(`${base}#${ruta}`, { waitUntil: 'networkidle0', timeout: 120000 })
-  // La vista marca data-listo cuando ha terminado de montarse.
+  // La vista marca data-listo cuando ha montado Y ha cargado sus imagenes.
   await pagina.waitForSelector('body[data-listo="1"]', { timeout: 60000 })
   await pagina.emulateMediaType('print')
+
+  const rotas = await imagenesRotas(pagina)
+  if (rotas.length > 0) {
+    console.warn(`AVISO  ${ruta}: ${rotas.length} imagen(es) no saldran en el PDF:`)
+    for (const r of rotas) console.warn(`         - ${r}`)
+  }
 
   await pagina.pdf({
     path: fichero,
@@ -103,7 +145,7 @@ async function generar(pagina, base, ruta, fichero) {
     headerTemplate: '<span></span>',
     footerTemplate: PIE,
   })
-  return fichero
+  return rotas.length
 }
 
 function temasConApunte() {
@@ -151,10 +193,17 @@ async function main() {
       throw new Error(`Orden desconocida: ${orden}. Usa temario, tema, test o todo.`)
     }
 
+    let rotas = 0
     for (const [ruta, nombre] of trabajos) {
       const destino = join(salida, nombre)
-      await generar(pagina, servidor.base, ruta, destino)
+      rotas += await generar(pagina, servidor.base, ruta, destino)
       console.log('PDF  ', destino)
+    }
+
+    // El PDF se genera igual, pero no se da por bueno: un fallo de figura es
+    // silencioso y hay que verlo en el codigo de salida, no solo en pantalla.
+    if (rotas > 0) {
+      throw new Error(`${rotas} imagen(es) no han salido en los PDF generados (ver AVISO arriba).`)
     }
   } finally {
     await navegador.close()
