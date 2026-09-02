@@ -174,7 +174,7 @@ function PreguntaImpresa({ q, n }: { q: PreguntaTest; n: number }) {
       <div className="imp-enunciado">
         <b>{n}.</b> {q.pregunta}
       </div>
-      {q.figura && <Figura figura={q.figura} />}
+      {q.figura && <Figura figura={q.figura} incognita />}
       <ol className="imp-opciones">
         {q.opciones.map((o, i) => (
           <li key={i}>
@@ -248,7 +248,7 @@ export function ImprimirTest() {
           <h2>Segundo ejercicio · {s.titulo}</h2>
           <div className="imp-supuesto-enunciado">
             <Markdown>{s.enunciado}</Markdown>
-            {s.figura && <Figura figura={s.figura} />}
+            {s.figura && <Figura figura={s.figura} incognita />}
           </div>
           <ol className="imp-preguntas">
             {preguntas.map(({ q, n: i }) => (

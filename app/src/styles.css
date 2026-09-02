@@ -707,6 +707,11 @@ button.item {
   grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
 }
 
+/* Los esquemas van a tamano grande: una sola columna ancha por fila. */
+.galeria-esquemas {
+  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+}
+
 .ghs-alcance {
   display: block;
   margin-top: 0.35rem;
@@ -715,9 +720,12 @@ button.item {
   text-align: left;
 }
 
-/* Dentro de una tabla, las figuras van pequenas para no disparar la altura de fila. */
+/* Dentro de una tabla, las figuras van pequenas para no disparar la altura de fila,
+   pero CONSERVAN su rotulo: en una columna de siluetas parecidas (matraz, pipeta,
+   bureta) el nombre es lo unico que las distingue de un vistazo. */
 .md-tabla .figura {
   margin: 0;
+  gap: 0.3rem;
 }
 
 .md-tabla .figura-ghs,
@@ -726,8 +734,15 @@ button.item {
   height: auto;
 }
 
+/* Los esquemas llevan rotulos dentro del dibujo: a 64 px no se leerian. */
+.md-tabla .figura-svg.figura-esquema {
+  width: 190px;
+}
+
 .md-tabla .figura figcaption {
-  display: none;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  max-width: 9rem;
 }
 
 /* ---------- Selector de tema ---------- */

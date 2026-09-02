@@ -93,20 +93,25 @@ function Dibujo({ tipo }: { tipo: TipoMaterial }) {
 export default function MaterialVidrio({
   tipo,
   tamano = 130,
+  etiqueta,
 }: {
   tipo: TipoMaterial
   tamano?: number
+  /** Nombre accesible; por defecto, el del catalogo */
+  etiqueta?: string
 }) {
+  const nombre = etiqueta ?? NOMBRES_MATERIAL[tipo]
+
   return (
     <svg
       viewBox="0 0 104 140"
       width={tamano * 0.74}
       height={tamano}
       role="img"
-      aria-label={NOMBRES_MATERIAL[tipo]}
+      aria-label={nombre}
       className="figura-svg"
     >
-      <title>{NOMBRES_MATERIAL[tipo]}</title>
+      <title>{nombre}</title>
       <Dibujo tipo={tipo} />
     </svg>
   )

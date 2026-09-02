@@ -14,6 +14,7 @@ export default function Bureta({
   capacidad = 25,
   mostrarValor = false,
   tamano = 200,
+  etiqueta,
 }: {
   /** Volumen vertido que marca el menisco, en mL */
   lectura: number
@@ -22,6 +23,8 @@ export default function Bureta({
   /** Si es false (por defecto) se marca el menisco pero no se escribe el valor */
   mostrarValor?: boolean
   tamano?: number
+  /** Nombre accesible; por defecto, capacidad y lectura */
+  etiqueta?: string
 }) {
   const escala = (Y_FONDO - Y_CERO) / capacidad
   const y = (mL: number) => Y_CERO + mL * escala
@@ -38,7 +41,7 @@ export default function Bureta({
     marcas.push({ mL, rotula: Math.abs(mL % pasoRotulo) < 1e-9 })
   }
 
-  const etiqueta = `Bureta de ${capacidad} mL con el menisco en ${lectura} mL`
+  const nombre = etiqueta ?? `Bureta de ${capacidad} mL con el menisco en ${lectura} mL`
 
   return (
     <svg
@@ -46,10 +49,10 @@ export default function Bureta({
       width={tamano * 0.49}
       height={tamano}
       role="img"
-      aria-label={etiqueta}
+      aria-label={nombre}
       className="figura-svg"
     >
-      <title>{etiqueta}</title>
+      <title>{nombre}</title>
 
       {/* liquido: del menisco hacia abajo */}
       <rect x="45" y={yMenisco} width="22" height={Y_FONDO - yMenisco} fill="#9ecbe8" />

@@ -79,9 +79,24 @@ El examen usa imágenes (pictogramas de peligro, material de vidrio, lecturas de
                                                   // peligro-salud | medioambiente
 "figura": { "tipo": "bureta", "lectura": 12.5, "capacidad": 25 }
 "figura": { "tipo": "material", "valor": "matraz-aforado" }
+"figura": { "tipo": "esquema", "valor": "electrodo-vidrio" }  // electrodo-vidrio | phmetro |
+                                                  // valorador-automatico |
+                                                  // curva-potenciometrica | derivadas-valoracion
 ```
 
-Componentes en `app/src/components/figuras/`. Los **nueve pictogramas CLP son los oficiales** del Reglamento (CE) 1272/2008, anexo V, en SVG (`app/src/assets/ghs/`): los mismos símbolos que figuran en una etiqueta real. La bureta y el material de vidrio sí son dibujos esquemáticos propios, pensados para reconocer la silueta y distinguir material aforado de graduado.
+**Cada figura lleva su nombre.** No se escribe en el dato: sale de su propia declaración, a través de `app/src/components/figuras/nombres.ts`, que es el único sitio donde vive el catálogo de nombres. Así una figura ya escrita en un apunte o en un JSON gana el rótulo sin tocar nada, y el apunte, la tarjeta y el catálogo la llaman igual. El nombre aparece en tres sitios:
+
+| Dónde | Qué se ve |
+| --- | --- |
+| `title` del `<figure>` | Al pasar el ratón, siempre |
+| `<title>` y `aria-label` del SVG (o `alt` del pictograma) | Texto alternativo, siempre |
+| `<figcaption>` | A la vista: el pie escrito a mano si lo hay y, si no, el nombre del catálogo |
+
+Con una excepción: **cuando la figura ES la pregunta** (anverso de una tarjeta sin girar, pregunta de test sin responder, enunciado de un supuesto, cuestionario impreso) el rótulo no puede cantar la respuesta. En ese caso la figura se pinta con `incognita` y el nombre pasa a ser **neutro** —«Pictograma de peligro CLP», «Bureta de 25 mL»—, tanto en el pie como en el texto alternativo. Al girar la tarjeta o responder la pregunta, aparece el nombre completo.
+
+En los apuntes, dentro de una tabla el dibujo se encoge pero **el pie se mantiene**: en una columna de siluetas parecidas (matraz, pipeta, bureta) el nombre es lo único que las distingue de un vistazo.
+
+Componentes en `app/src/components/figuras/`. Los **esquemas** (`Esquema.tsx`) son distintos del resto: no buscan que se reconozca una silueta, sino enseñar las **partes** de un instrumento o **dónde cae** el punto de equivalencia, así que llevan rótulos dentro del dibujo, se usan a tamaño grande y sus curvas se **calculan** (sigmoide y sus dos derivadas analíticas) en vez de dibujarse a ojo. Los **nueve pictogramas CLP son los oficiales** del Reglamento (CE) 1272/2008, anexo V, en SVG (`app/src/assets/ghs/`): los mismos símbolos que figuran en una etiqueta real. La bureta y el material de vidrio sí son dibujos esquemáticos propios, pensados para reconocer la silueta y distinguir material aforado de graduado.
 
 ### Tema claro y oscuro
 

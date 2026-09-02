@@ -63,7 +63,7 @@ export default function Supuestos({ supuestos }: { supuestos: Supuesto[] }) {
       <div className="tarjeta supuesto-enunciado">
         <b>{activo.titulo}</b>
         <Markdown>{activo.enunciado}</Markdown>
-        {activo.figura && <Figura figura={activo.figura} />}
+        {activo.figura && <Figura figura={activo.figura} incognita />}
       </div>
 
       <Test preguntas={activo.preguntas} />

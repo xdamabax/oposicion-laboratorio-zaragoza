@@ -35,6 +35,13 @@ export type TipoGHS =
   | 'peligro-salud'
   | 'medioambiente'
 
+export type TipoEsquema =
+  | 'electrodo-vidrio'
+  | 'phmetro'
+  | 'valorador-automatico'
+  | 'curva-potenciometrica'
+  | 'derivadas-valoracion'
+
 export type TipoMaterial =
   | 'matraz-aforado'
   | 'erlenmeyer'
@@ -51,6 +58,7 @@ export type Figura =
   | { tipo: 'ghs'; valor: TipoGHS; pie?: string }
   | { tipo: 'bureta'; lectura: number; capacidad?: number; pie?: string }
   | { tipo: 'material'; valor: TipoMaterial; pie?: string }
+  | { tipo: 'esquema'; valor: TipoEsquema; pie?: string }
 
 /* ---------- Repaso ---------- */
 

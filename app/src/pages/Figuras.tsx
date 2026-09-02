@@ -5,7 +5,8 @@ import PictogramaGHS, {
 } from '../components/figuras/PictogramaGHS'
 import MaterialVidrio, { NOMBRES_MATERIAL } from '../components/figuras/MaterialVidrio'
 import Bureta from '../components/figuras/Bureta'
-import type { TipoGHS, TipoMaterial } from '../types'
+import Esquema, { NOMBRES_ESQUEMA } from '../components/figuras/Esquema'
+import type { TipoEsquema, TipoGHS, TipoMaterial } from '../types'
 
 /**
  * Catalogo de figuras. Sirve para revisar de un vistazo que todos los dibujos
@@ -14,12 +15,15 @@ import type { TipoGHS, TipoMaterial } from '../types'
 export default function Figuras() {
   const ghs = Object.keys(NOMBRES_GHS) as TipoGHS[]
   const material = Object.keys(NOMBRES_MATERIAL) as TipoMaterial[]
+  const esquemas = Object.keys(NOMBRES_ESQUEMA) as TipoEsquema[]
 
   return (
     <>
       <h1>Catálogo de figuras</h1>
       <p className="sub">
-        Ilustraciones que la app puede insertar en tarjetas y preguntas.
+        Ilustraciones que la app puede insertar en apuntes, tarjetas y preguntas. Cada una lleva
+        su nombre: a la vista en el pie y, siempre, en el texto alternativo y en el{' '}
+        <code>title</code> de la figura.
       </p>
 
       <h2>Pictogramas de peligro (CLP)</h2>
@@ -74,8 +78,30 @@ export default function Figuras() {
           <figure key={v} className="galeria-item">
             <Bureta lectura={v} capacidad={25} tamano={230} mostrarValor />
             <figcaption>
+              <b>Bureta de 25 mL, menisco en {String(v).replace('.', ',')} mL</b>
+              <br />
               <span className="contador">
                 <code>{`{ tipo: 'bureta', lectura: ${v} }`}</code>
+              </span>
+            </figcaption>
+          </figure>
+        ))}
+      </div>
+
+      <h2>Esquemas</h2>
+      <p className="contador">
+        Instrumentos por dentro y curvas de valoración. A diferencia de las siluetas, estos
+        dibujos llevan sus rótulos dentro y se usan a tamaño grande.
+      </p>
+      <div className="galeria galeria-esquemas">
+        {esquemas.map((t) => (
+          <figure key={t} className="galeria-item" title={NOMBRES_ESQUEMA[t]}>
+            <Esquema tipo={t} tamano={300} />
+            <figcaption>
+              <b>{NOMBRES_ESQUEMA[t]}</b>
+              <br />
+              <span className="contador">
+                <code>{t}</code>
               </span>
             </figcaption>
           </figure>

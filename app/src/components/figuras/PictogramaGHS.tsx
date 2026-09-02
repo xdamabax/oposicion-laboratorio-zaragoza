@@ -71,16 +71,19 @@ export const ALCANCE_GHS: Record<TipoGHS, string> = {
 export default function PictogramaGHS({
   tipo,
   tamano = 120,
+  etiqueta,
 }: {
   tipo: TipoGHS
   tamano?: number
+  /** Nombre accesible; por defecto, el codigo y el nombre del pictograma */
+  etiqueta?: string
 }) {
   return (
     <img
       src={IMAGENES[tipo]}
       width={tamano}
       height={tamano}
-      alt={`Pictograma ${CODIGOS_GHS[tipo]}: ${NOMBRES_GHS[tipo]}`}
+      alt={etiqueta ?? `Pictograma ${CODIGOS_GHS[tipo]}: ${NOMBRES_GHS[tipo]}`}
       className="figura-ghs"
       // Sin loading="lazy" a proposito. Son nueve SVG de pocos kB, cacheados,
       // y la carga diferida no se pide nunca cuando no hay viewport: al

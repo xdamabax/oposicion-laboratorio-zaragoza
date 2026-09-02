@@ -1,7 +1,7 @@
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Figura from './figuras/Figura'
-import type { Figura as TipoFigura, TipoGHS, TipoMaterial } from '../types'
+import type { Figura as TipoFigura, TipoEsquema, TipoGHS, TipoMaterial } from '../types'
 
 /**
  * Un apunte puede insertar una figura con la sintaxis normal de imagen de
@@ -10,6 +10,7 @@ import type { Figura as TipoFigura, TipoGHS, TipoMaterial } from '../types'
  *   ![Corrosivo](ghs:corrosivo)
  *   ![Bureta](bureta:12.5)        ![Bureta de 50](bureta:12.5/50)
  *   ![Matraz aforado](material:matraz-aforado)
+ *   ![Electrodo de vidrio](esquema:electrodo-vidrio)
  *
  * Asi el markdown sigue siendo markdown (y se exporta a PDF sin romperse),
  * pero en la app lo dibuja el componente correspondiente.
@@ -22,6 +23,9 @@ function comoFigura(src: string, alt: string): TipoFigura | null {
 
   const material = /^material:(.+)$/.exec(src)
   if (material) return { tipo: 'material', valor: material[1] as TipoMaterial, pie }
+
+  const esquema = /^esquema:(.+)$/.exec(src)
+  if (esquema) return { tipo: 'esquema', valor: esquema[1] as TipoEsquema, pie }
 
   const bureta = /^bureta:([\d.]+)(?:\/([\d.]+))?$/.exec(src)
   if (bureta) {
@@ -38,7 +42,7 @@ function comoFigura(src: string, alt: string): TipoFigura | null {
 
 // react-markdown sanea las URL y se comeria nuestros esquemas propios.
 const urlTransform = (url: string) =>
-  /^(ghs|bureta|material):/.test(url) ? url : defaultUrlTransform(url)
+  /^(ghs|bureta|material|esquema):/.test(url) ? url : defaultUrlTransform(url)
 
 const componentes = {
   img: ({ src, alt }: React.ComponentProps<'img'>) => {

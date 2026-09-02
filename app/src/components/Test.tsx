@@ -123,7 +123,7 @@ export default function Test({
           <Markdown>{p.pregunta}</Markdown>
         </div>
 
-        {p.figura && <Figura figura={p.figura} />}
+        {p.figura && <Figura figura={p.figura} incognita={!respondida} />}
 
         <ul className="opciones">
           {p.opciones.map((texto, n) => {

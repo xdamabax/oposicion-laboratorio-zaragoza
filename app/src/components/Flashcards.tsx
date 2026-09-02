@@ -145,7 +145,7 @@ export default function Flashcards({ tarjetas }: { tarjetas: Flashcard[] }) {
           <Markdown>{actual.anverso}</Markdown>
         </div>
 
-        {actual.figura && <Figura figura={actual.figura} />}
+        {actual.figura && <Figura figura={actual.figura} incognita={!vista} />}
 
         {vista ? (
           <div className="flash-b">
