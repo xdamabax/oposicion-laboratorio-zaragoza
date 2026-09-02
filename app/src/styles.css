@@ -1032,8 +1032,46 @@ body[data-listo="1"] {
     overflow: visible;
   }
 
+  /* Antes esto llevaba page-break-inside: avoid, que pedia mantener la tabla
+     ENTERA en una pagina. Una tabla mas larga que la caja de impresion no
+     puede cumplirlo, asi que el navegador lo ignoraba y partia por donde le
+     venia: filas cortadas a media altura y el resto huerfano en la pagina
+     siguiente. Lo correcto es dejar que la tabla se parta y proteger la fila. */
   .md table {
     min-width: 0;
+  }
+
+  /* La unidad que no se parte es la FILA. break-inside es el nombre actual;
+     page-break-inside se mantiene porque en tablas hay motores que solo
+     entienden esa. Tambien en las celdas: si una celda se parte, la fila se
+     ve cortada aunque el tr diga lo contrario. */
+  .md tr,
+  .imp-preguntas tr {
+    break-inside: avoid;
     page-break-inside: avoid;
+  }
+
+  .md th,
+  .md td {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Al partirse la tabla, la cabecera se repite en cada pagina: si no, las
+     columnas de la segunda mitad se leen sin saber que es cada una. */
+  .md thead {
+    display: table-header-group;
+  }
+
+  .md tbody {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  /* Una fila no debe quedarse sola justo detras de la cabecera ni ser la
+     ultima colgando al final de la pagina. */
+  .md tr {
+    orphans: 2;
+    widows: 2;
   }
 }
