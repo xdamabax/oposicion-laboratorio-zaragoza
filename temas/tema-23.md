@@ -2,7 +2,7 @@
 tema: 23
 titulo: "Potenciometría: Concepto y fundamento teórico. Medida de pH. Calibración de pHímetros. Volumetrías con indicación potenciométrica: punto de equivalencia. Valoradores automáticos."
 parte: Parte segunda
-estado: borrador
+estado: aprobado
 verificado: 2026-09-03
 fuentes:
   - "UNE-EN ISO 10523:2012, Calidad del agua. Determinación del pH (ISO 10523:2008). Publicada el 19/09/2012, vigente. Versión oficial en español de la EN ISO 10523:2012. — https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0049896"
