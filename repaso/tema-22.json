@@ -1,0 +1,819 @@
+{
+  "tema": 22,
+  "titulo": "Análisis volumétrico: Concepto, material y operaciones. Manejo y calibración de material volumétrico. Clases de volumetrías.",
+  "generadoDe": "temas/tema-22.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-02",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Dos preguntas del tema son núcleo repetido comprobado en los cuestionarios anteriores: el agente valorante del cloruro (nitrato de plata; 1233 #2 y 1246 #28) y la valoración por retroceso (1233 #19, 1246 #42 y 1322 #12). Alrededor de ellas va el resto del núcleo: la pareja punto de equivalencia / punto final, el ajuste In y Ex con la clase B al doble, el criterio de lectura de la bureta con el cero arriba y el paralaje, que el vidrio se calibra pero no se ajusta. La UNE 77004 queda fuera del núcleo por estar anulada.",
+  "flashcards": [
+    {
+      "id": "t22-f01",
+      "anverso": "¿Qué es una valoración o titulación?",
+      "reverso": "Añadir poco a poco una **disolución patrón** o **valorante**, de concentración exactamente conocida, sobre un volumen medido de muestra (**alícuota**), hasta completar la reacción.\nDel volumen gastado y de la estequiometría sale la cantidad de analito.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel)",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t22-f02",
+      "anverso": "Punto de equivalencia y punto final: ¿en qué se diferencian?",
+      "reverso": "**Punto de equivalencia:** el momento **teórico** en que el valorante añadido es estequiométricamente equivalente al analito. Es un concepto, **no se observa**.\n**Punto final:** el momento **real** en que se detecta un cambio observable (viraje, salto de potencial) y se cierra la llave.\nLa diferencia es el **error de valoración**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f03",
+      "anverso": "¿Para qué sirve el ensayo en blanco en una volumetría?",
+      "reverso": "Para **corregir el error de valoración**, es decir, la diferencia entre punto final y punto de equivalencia.\nEs la misma valoración **sin muestra**, y su volumen **se resta** del volumen gastado.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto",
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t22-f04",
+      "anverso": "¿Qué cuatro condiciones debe cumplir una reacción para servir de base a una volumetría?",
+      "reverso": "1. **Estequiometría conocida y única**, sin reacciones secundarias.\n2. **Rápida**, para que el punto final no se retrase.\n3. **Cuantitativa**: muy desplazada hacia los productos.\n4. Que exista forma de **detectar el punto final**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t22-f05",
+      "anverso": "¿Qué es un patrón primario y qué requisitos cumple?",
+      "reverso": "Sustancia de pureza tan alta que su disolución se prepara **por pesada directa**, sin valorarla contra nada.\nRequisitos: **pureza elevada y conocida**, **estable** (no higroscópica ni eflorescente, no se oxida ni absorbe CO₂), **masa molar alta** (menor error relativo de pesada) y **soluble** en el medio.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f06",
+      "anverso": "¿Por qué el NaOH no es patrón primario, y qué se hace con él?",
+      "reverso": "Porque **absorbe CO₂ y humedad** del aire: su pureza no se mantiene.\nSe prepara de concentración **aproximada** y se **factoriza** (normaliza) contra un patrón primario. Igual pasa con el **HCl** y el **tiosulfato sódico**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f07",
+      "anverso": "Cita cuatro patrones primarios clásicos.",
+      "reverso": "**Ftalato ácido de potasio**, **carbonato sódico**, **dicromato potásico**, **óxido de arsénico(III)** y **EDTA disódico**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t22-f08",
+      "anverso": "«In» y «Ex»: qué significan y qué material es cada uno.",
+      "reverso": "**In** (TC, *to contain*): el volumen marcado es el que el aparato **contiene** → **matraz aforado** y **probeta**.\n**Ex** (TD, *to deliver*): el volumen marcado es el que **vierte**, ya descontada la película que moja la pared → **pipeta** y **bureta**.",
+      "fuente": "UNE-EN ISO 4787:2021 y normas de cada aparato",
+      "etiquetas": [
+        "material"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f09",
+      "anverso": "¿Qué material es éste, con qué norma y qué tipo de ajuste?",
+      "reverso": "**Matraz aforado**. **UNE-EN ISO 1042**, ajustado **por contenido («In»)**.\nSirve para **preparar** disoluciones patrón y diluciones a volumen exacto. **Nunca para verter** un volumen exacto.",
+      "fuente": "UNE-EN ISO 1042:1999",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "matraz-aforado"
+      }
+    },
+    {
+      "id": "t22-f10",
+      "anverso": "¿Qué material es éste, con qué norma, y por qué no se sopla?",
+      "reverso": "**Pipeta aforada**. **UNE-EN ISO 648**, ajustada **por vertido («Ex»)**. Sirve para **transferir una alícuota exacta**.\nNo se sopla porque el fabricante **ya descontó** la película que queda en la punta: soplarla añade volumen y falsea la medida.",
+      "fuente": "UNE-EN ISO 648",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "pipeta-aforada"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-f11",
+      "anverso": "¿Qué material es éste, con qué norma y para qué sirve?",
+      "reverso": "**Bureta**. **UNE-EN ISO 385**, ajustada **por vertido («Ex»)**.\nSirve para **añadir y medir** el valorante durante la valoración.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "etiquetas": [
+        "material",
+        "bureta",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "bureta",
+        "lectura": 12.5,
+        "capacidad": 25
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-f12",
+      "anverso": "¿Qué material es éste y por qué NO es material volumétrico?",
+      "reverso": "**Erlenmeyer** o matraz cónico de cuello estrecho, **ISO 1773**, de borosilicato 3.3.\n**Su graduación es aproximada**: no mide volumen, solo contiene la reacción. Su forma cónica permite **agitar sin salpicar**. Tratarlo como aforado es un error clásico.",
+      "fuente": "ISO 1773",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "erlenmeyer"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-f13",
+      "anverso": "Clases A, AS y B del material volumétrico.",
+      "reverso": "**A** y **AS**: exactitud alta, pueden llevar **certificado**. La **S** es de *swift*, **vertido rápido**: aparatos «Ex» con **tiempo de espera reducido** (en pipetas aforadas ISO 648 bajó de **15 a 5 segundos**).\n**B**: los límites de error son **el doble** que los de A/AS.",
+      "fuente": "Normas ISO de material volumétrico",
+      "etiquetas": [
+        "material"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f14",
+      "anverso": "¿Cuál es la temperatura de referencia de ajuste del material volumétrico y qué más va grabado?",
+      "reverso": "**20 °C**.\nGrabados en el aparato van también la **capacidad**, la **clase** (A, AS o B) y el **tipo de ajuste** (In o Ex).",
+      "fuente": "UNE-EN ISO 4787:2021",
+      "etiquetas": [
+        "material"
+      ]
+    },
+    {
+      "id": "t22-f15",
+      "anverso": "Partes de una bureta.",
+      "reverso": "**Tubo cilíndrico graduado**; **llave** de cierre inferior con macho de **PTFE** (desliza sin engrasar) o de **vidrio esmerilado**; **punta** afilada de salida; y **soporte con pinza** que la mantiene vertical.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "etiquetas": [
+        "material",
+        "bureta"
+      ]
+    },
+    {
+      "id": "t22-f16",
+      "anverso": "¿Dónde está el cero de una bureta y por qué?",
+      "reverso": "**Arriba**, y la escala **crece hacia abajo**.\nPorque lo que se lee es el **volumen vertido**, no el que queda dentro.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "etiquetas": [
+        "bureta"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f17",
+      "anverso": "¿Qué volumen se ha vertido con esta bureta?",
+      "reverso": "**8,00 mL.** El cero está arriba, así que se lee directamente la posición del menisco.\nEl error típico es leer 17 mL, que sería restar a la capacidad de la bureta: eso es leer la escala al revés.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "etiquetas": [
+        "bureta",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "bureta",
+        "lectura": 8,
+        "capacidad": 25
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-f18",
+      "anverso": "¿Qué es la franja de Schellbach y para qué sirve?",
+      "reverso": "Una **banda azul sobre fondo blanco** grabada en la pared posterior de la bureta.\nEl menisco la estrangula y forma **dos puntas enfrentadas**; el punto donde se tocan marca la lectura con mucha más nitidez que el borde del menisco a simple vista.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "etiquetas": [
+        "bureta"
+      ]
+    },
+    {
+      "id": "t22-f19",
+      "anverso": "¿Cómo se lee el menisco y qué es el error de paralaje?",
+      "reverso": "El menisco se lee **por su parte inferior** y **a la altura del ojo**.\n**Paralaje:** mirar **desde arriba** da lectura **menor** que la real; **desde abajo**, **mayor**. Se evita poniendo el ojo al nivel del menisco; la franja de Schellbach también lo reduce.",
+      "fuente": "Bibliografía de laboratorio; UNE-EN ISO 385",
+      "etiquetas": [
+        "bureta",
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f20",
+      "anverso": "Tolerancias de una bureta de clase AS.",
+      "reverso": "| Capacidad | División | Error |\n| --- | --- | --- |\n| 10 mL | 0,02 mL | ± 0,02 mL |\n| 25 mL | 0,05 mL | ± 0,03 mL |\n| 50 mL | 0,1 mL | ± 0,05 mL |\n\nEn **clase B, el doble**. Las microburetas bajan a 2 y 5 mL con 0,01 mL.",
+      "fuente": "UNE-EN ISO 385:2005 (valores de catálogo de material certificado)",
+      "etiquetas": [
+        "bureta"
+      ]
+    },
+    {
+      "id": "t22-f21",
+      "anverso": "¿Por qué se «ambienta» la bureta antes de llenarla?",
+      "reverso": "Se enjuaga con **dos o tres porciones pequeñas del propio valorante** para que el agua residual del lavado **no lo diluya**.\nLo mismo vale para la pipeta.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t22-f22",
+      "anverso": "¿Qué pasa si no se purga la burbuja de aire de la punta de la bureta?",
+      "reverso": "Si se suelta a media valoración, ese volumen **se contabiliza como vertido sin haber reaccionado**: el volumen leído sale **por exceso**.\nSe purga antes de enrasar, abriendo la llave a fondo.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f23",
+      "anverso": "¿Altera el resultado lavar las paredes del Erlenmeyer con agua destilada durante la valoración?",
+      "reverso": "**No.** Diluye, pero **no cambia el número de moles** de analito, y el punto de equivalencia depende de los moles, no de la concentración.\nEs una operación recomendable para arrastrar las salpicaduras.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t22-f24",
+      "anverso": "¿Cómo se calcula el resultado de una valoración, y qué es el factor de dilución?",
+      "reverso": "En el punto de equivalencia: **N₁·V₁ = N₂·V₂** (normalidad) o **a·M₁·V₁ = b·M₂·V₂** (molaridad, con los coeficientes de la reacción).\nSi se tomó una **alícuota** de una disolución preparada en matraz aforado, el resultado se multiplica por el **factor de dilución** = volumen del matraz / volumen de la alícuota.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "calculo"
+      ]
+    },
+    {
+      "id": "t22-f25",
+      "anverso": "Calibrar, verificar y ajustar aplicados al material volumétrico.",
+      "reverso": "**Calibrar** = medir el error frente a patrones, con su incertidumbre; **no toca** el aparato.\n**Verificar** = declarar conforme o no conforme frente a una tolerancia.\n**Ajustar** = modificar el instrumento; **en vidrio no cabe**: un matraz aforado no se ajusta, se **calibra y se acepta o se descarta**.\nDesarrollo completo en el **tema 21**, apartado 2.4.4 (VIM).",
+      "fuente": "VIM (JCGM 200:2012), 2.39, 2.44 y 3.11",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f26",
+      "anverso": "¿Con qué norma y con qué método se calibra el material volumétrico?",
+      "reverso": "**UNE-EN ISO 4787:2021**, tercera edición, que anula la ISO 4787:2010.\nEl método es **gravimétrico**: se pesa el agua que el aparato contiene o vierte y se convierte esa masa en volumen. Es decir, **calibrar una pipeta es hacer una gravimetría** (tema 21).",
+      "fuente": "UNE-EN ISO 4787:2021",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f27",
+      "anverso": "¿Qué magnitudes intervienen en el cálculo del volumen al calibrar por pesada?",
+      "reverso": "La **masa de agua** (por diferencia), la **densidad del agua** a la temperatura del ensayo, la **densidad del aire** (corrección por empuje), la **densidad de las pesas** y el **coeficiente de dilatación cúbica** del material, para llevar el resultado a **20 °C**.\nEl parámetro evaluado es el **error de capacidad**.",
+      "fuente": "UNE-EN ISO 4787:2021",
+      "etiquetas": [
+        "metrologia"
+      ]
+    },
+    {
+      "id": "t22-f28",
+      "anverso": "¿Por qué el material volumétrico no se seca en estufa?",
+      "reverso": "Porque **el calor deforma el vidrio y lo descalibra de forma permanente**.\nSe seca **al aire** o con arrastre de acetona. Tampoco se miden líquidos calientes: el aparato está ajustado a 20 °C.",
+      "fuente": "UNE-EN ISO 4787:2021; bibliografía de laboratorio",
+      "etiquetas": [
+        "metrologia",
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f29",
+      "anverso": "Las cuatro clases de volumetría según el tipo de reacción.",
+      "reverso": "1. **Ácido-base** (neutralización): transferencia de protones.\n2. **Redox**: transferencia de electrones.\n3. **De precipitación** (argentometría): formación de un sólido poco soluble.\n4. **De formación de complejos** (complexometría): formación de un complejo estable.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f30",
+      "anverso": "Indicadores típicos de cada clase de volumetría.",
+      "reverso": "**Ácido-base:** fenolftaleína, naranja de metilo, rojo de metilo.\n**Redox:** **almidón** en yodometrías, ferroína; el **KMnO₄ es autoindicador**.\n**Precipitación:** cromato potásico (Mohr), Fe(III) (Volhard), indicadores de adsorción (Fajans).\n**Complexometría:** **negro de eriocromo T**, murexida.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ]
+    },
+    {
+      "id": "t22-f31",
+      "anverso": "Los tres tipos de valoración según la forma de operar.",
+      "reverso": "**Directa:** el valorante reacciona directamente con el analito.\n**Por retroceso:** se añade un **exceso conocido** de reactivo y se valora **lo que no ha reaccionado**.\n**Indirecta o por desplazamiento:** el analito desplaza una cantidad equivalente de otra sustancia, y es ésa la que se valora (yodometrías).",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f32",
+      "anverso": "¿En qué consiste una valoración por retroceso y cuándo se usa?",
+      "reverso": "Se añade un **exceso conocido** de reactivo y se valora con un segundo valorante **el que NO ha reaccionado**.\nSe usa cuando la reacción es **lenta**, cuando **no hay buen indicador** para la valoración directa, o cuando el analito es **insoluble o volátil**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f33",
+      "anverso": "¿Cuál es el agente valorante del cloruro?",
+      "reverso": "**Nitrato de plata (AgNO₃)**: forma cloruro de plata insoluble.\nEs la base de los tres métodos argentométricos: **Mohr**, **Volhard** y **Fajans**.",
+      "fuente": "UNE-ISO 9297:2013",
+      "etiquetas": [
+        "cloruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f34",
+      "anverso": "Método de Mohr: tipo, indicador y medio.",
+      "reverso": "Valoración **directa** de cloruro con **AgNO₃**.\nIndicador: **cromato potásico (K₂CrO₄)**; al acabarse el cloruro forma **cromato de plata rojizo**.\nMedio **neutro o ligeramente alcalino**.\nEs el método normalizado para aguas: **UNE-ISO 9297:2013**, de 5 a 150 mg/L, ampliable a 400.",
+      "fuente": "UNE-ISO 9297:2013",
+      "etiquetas": [
+        "cloruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f35",
+      "anverso": "Método de Volhard: tipo, valorantes, indicador y medio.",
+      "reverso": "Valoración **por retroceso**: se añade **exceso conocido de AgNO₃** y se valora el sobrante con **tiocianato** (KSCN o NH₄SCN).\nIndicador: ion **Fe(III)**, que da complejo rojo con el SCN⁻ sobrante. Medio **ácido**.\nEs a la vez el ejemplo de **argentometría** y el de **valoración por retroceso**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "cloruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t22-f36",
+      "anverso": "Método de Fajans: tipo e indicador.",
+      "reverso": "Valoración **directa** de cloruro con **AgNO₃**, en medio próximo a neutro.\nIndicador de **adsorción** (fluoresceína, diclorofluoresceína), que **cambia de color al adsorberse** sobre el precipitado.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "cloruro"
+      ]
+    },
+    {
+      "id": "t22-f37",
+      "anverso": "Norma, valorante e indicador de la dureza total del agua.",
+      "reverso": "**UNE-ISO 6059:2014**, suma de calcio y magnesio.\nValorante **EDTA**, que forma complejo **1:1** con los iones metálicos; indicador **negro de eriocromo T**, a **pH ≈ 10** tamponado.\nCon **murexida** y pH alto se determina **solo el calcio**.",
+      "fuente": "UNE-ISO 6059:2014",
+      "etiquetas": [
+        "normas"
+      ]
+    },
+    {
+      "id": "t22-f38",
+      "anverso": "Tres parámetros de agua que se determinan por volumetría, con su norma.",
+      "reverso": "**Alcalinidad** total y compuesta: **UNE-EN ISO 9963-1:1996** (ácido-base, hasta 20 mmol/L).\n**Oxígeno disuelto**: **UNE-EN 25813:1994**, método yodométrico de **Winkler** (redox, indirecta).\n**Índice de permanganato**: **UNE-EN ISO 8467:1995** (redox, con KMnO₄ autoindicador).",
+      "fuente": "Normas UNE citadas",
+      "etiquetas": [
+        "normas"
+      ]
+    },
+    {
+      "id": "t22-f39",
+      "anverso": "¿Qué pasa con la UNE 77004, la norma clásica de DQO por dicromato?",
+      "reverso": "**Está ANULADA desde el 18 de enero de 2024**, aunque sigue apareciendo en casi todo el material de estudio.\nSu método —reflujo con **exceso de K₂Cr₂O₇** y valoración del sobrante con **sulfato de hierro(II) y amonio**, indicador **ferroína**— sigue valiendo como ejemplo de **valoración por retroceso**, pero **no como norma vigente**. La norma de DQO se fija en el tema 34.",
+      "fuente": "Catálogo UNE: UNE 77004:2002, anulada el 18/01/2024",
+      "etiquetas": [
+        "normas",
+        "vigencia"
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "t22-q01",
+      "pregunta": "En una valoración, la disolución de concentración exactamente conocida que se añade desde la bureta se denomina:",
+      "opciones": [
+        "Alícuota",
+        "Disolución patrón o valorante",
+        "Disolución problema"
+      ],
+      "correcta": 1,
+      "explicacion": "La alícuota es el volumen medido de muestra sobre el que se valora; la disolución patrón o valorante es la de concentración conocida que se añade.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t22-q02",
+      "pregunta": "La diferencia entre el punto de equivalencia y el punto final de una valoración es que:",
+      "opciones": [
+        "El punto final se alcanza siempre antes que el de equivalencia",
+        "Son sinónimos: los dos designan el viraje del indicador",
+        "El de equivalencia es teórico y no se observa; el final es el cambio observable que se detecta"
+      ],
+      "correcta": 2,
+      "explicacion": "El punto de equivalencia es el momento estequiométrico, un concepto. El punto final es lo que realmente se ve. La diferencia entre ambos es el error de valoración, que se corrige con un ensayo en blanco.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q03",
+      "pregunta": "El ensayo en blanco de una volumetría consiste en:",
+      "opciones": [
+        "Repetir la valoración sin muestra y restar el volumen obtenido",
+        "Valorar una muestra de concentración conocida para comprobar el método",
+        "Repetir la valoración con el doble de indicador"
+      ],
+      "correcta": 0,
+      "explicacion": "Corrige el error de valoración, es decir, la diferencia entre el punto final observado y el punto de equivalencia teórico.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t22-q04",
+      "pregunta": "¿Cuál de estos NO es un requisito de un patrón primario?",
+      "opciones": [
+        "Pureza elevada y conocida",
+        "Masa molar baja, para que la pesada sea pequeña",
+        "Estabilidad frente a la humedad y al CO₂"
+      ],
+      "correcta": 1,
+      "explicacion": "Se exige justo lo contrario: masa molar ALTA, para que el error relativo de la pesada sea pequeño. Los demás requisitos son pureza, estabilidad y solubilidad.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t22-q05",
+      "pregunta": "El hidróxido sódico no se emplea como patrón primario porque:",
+      "opciones": [
+        "Es insoluble en agua a temperatura ambiente",
+        "Su masa molar es demasiado alta",
+        "Absorbe CO₂ y humedad del aire, así que su pureza no se mantiene"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se prepara de concentración aproximada y se factoriza contra un patrón primario. Le ocurre lo mismo al HCl y al tiosulfato sódico.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q06",
+      "pregunta": "Un aparato volumétrico ajustado «In» (TC) indica que el volumen marcado es:",
+      "opciones": [
+        "El que el aparato contiene",
+        "El que el aparato vierte",
+        "El que queda mojando la pared tras el vertido"
+      ],
+      "correcta": 0,
+      "explicacion": "«In» (to contain) es el ajuste del matraz aforado y de la probeta. «Ex» (to deliver) es el de la pipeta y la bureta, y ya descuenta la película que moja la pared.",
+      "fuente": "UNE-EN ISO 4787:2021",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q07",
+      "pregunta": "El material de la imagen se emplea para:",
+      "opciones": [
+        "Transferir una alícuota exacta a otro recipiente",
+        "Preparar una disolución patrón enrasando a un volumen exacto",
+        "Añadir el valorante gota a gota durante la valoración"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un matraz aforado (UNE-EN ISO 1042), ajustado por contenido: sirve para preparar y enrasar, no para verter. Transferir la alícuota es de la pipeta aforada, y añadir el valorante, de la bureta.",
+      "fuente": "UNE-EN ISO 1042:1999",
+      "figura": {
+        "tipo": "material",
+        "valor": "matraz-aforado"
+      }
+    },
+    {
+      "id": "t22-q08",
+      "pregunta": "Con el material de la imagen, ¿qué NO debe hacerse nunca?",
+      "opciones": [
+        "Enjuagarlo con el propio líquido que va a medir",
+        "Apoyar la punta en la pared del recipiente al vaciarlo",
+        "Soplar para expulsar la última gota"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una pipeta aforada, ajustada «Ex»: el fabricante ya descontó la película que queda en la punta. Soplarla añade volumen y falsea la medida. Ambientarla y apoyar la punta sí son correctos.",
+      "fuente": "UNE-EN ISO 648",
+      "figura": {
+        "tipo": "material",
+        "valor": "pipeta-aforada"
+      }
+    },
+    {
+      "id": "t22-q09",
+      "pregunta": "Sobre el material de la imagen, ¿qué afirmación es correcta?",
+      "opciones": [
+        "Su graduación es aproximada: no es material volumétrico",
+        "Es material aforado de clase A, ajustado por contenido",
+        "Se usa para medir con exactitud el volumen de valorante"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un Erlenmeyer (ISO 1773). Su forma cónica permite agitar sin salpicar y por eso es el recipiente de la valoración, pero su graduación es orientativa: tratarlo como aforado es un error clásico.",
+      "fuente": "ISO 1773",
+      "figura": {
+        "tipo": "material",
+        "valor": "erlenmeyer"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-q10",
+      "pregunta": "Respecto a los límites de error, el material volumétrico de clase B:",
+      "opciones": [
+        "Tiene los mismos que la clase A, pero sin certificado",
+        "Tiene el doble que la clase A/AS",
+        "Tiene la mitad que la clase A/AS"
+      ],
+      "correcta": 1,
+      "explicacion": "La clase B admite el doble de error que la A/AS. Además, el material de clase A/AS puede llevar certificado de lote o individual; el de clase B, no.",
+      "fuente": "Normas ISO de material volumétrico",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q11",
+      "pregunta": "En la designación de una pipeta aforada de clase AS, la letra S indica:",
+      "opciones": [
+        "Que es de vidrio de seguridad",
+        "Que está certificada individualmente",
+        "Vertido rápido: tiempo de espera reducido"
+      ],
+      "correcta": 2,
+      "explicacion": "La S es de «swift». En la norma nueva de pipetas aforadas (ISO 648) el tiempo de espera de la clase AS bajó de 15 a 5 segundos.",
+      "fuente": "UNE-EN ISO 648"
+    },
+    {
+      "id": "t22-q12",
+      "pregunta": "La temperatura de referencia a la que se ajusta el material volumétrico de laboratorio es:",
+      "opciones": [
+        "20 °C",
+        "25 °C",
+        "0 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "Va grabada en el aparato junto con la capacidad, la clase y el tipo de ajuste. Por eso no deben medirse líquidos calientes.",
+      "fuente": "UNE-EN ISO 4787:2021"
+    },
+    {
+      "id": "t22-q13",
+      "pregunta": "En una bureta, el cero de la escala está:",
+      "opciones": [
+        "Abajo, junto a la llave, porque se mide el líquido que queda",
+        "Arriba, porque lo que se lee es el volumen vertido",
+        "En el centro, y se lee hacia los dos lados"
+      ],
+      "correcta": 1,
+      "explicacion": "La escala crece hacia abajo: la lectura da directamente el volumen que ha salido, no el que permanece en la bureta.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q14",
+      "pregunta": "Observe la bureta de la imagen. ¿Qué volumen se ha vertido?",
+      "opciones": [
+        "17,00 mL",
+        "4,00 mL",
+        "8,00 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "El cero está arriba, así que la lectura del menisco es directamente el volumen vertido: 8,00 mL. Los 17,00 mL saldrían de restar a la capacidad de la bureta, que es leer la escala al revés.",
+      "fuente": "UNE-EN ISO 385:2005",
+      "figura": {
+        "tipo": "bureta",
+        "lectura": 8,
+        "capacidad": 25
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t22-q15",
+      "pregunta": "Si al leer una bureta se mira el menisco desde arriba, la lectura obtenida es:",
+      "opciones": [
+        "Menor que la real",
+        "Mayor que la real",
+        "Igual, si la bureta está vertical"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el error de paralaje: desde arriba se lee de menos y desde abajo, de más. Se evita poniendo el ojo a la altura del menisco; la franja de Schellbach también lo reduce.",
+      "fuente": "Bibliografía de laboratorio",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q16",
+      "pregunta": "La franja de Schellbach de una bureta sirve para:",
+      "opciones": [
+        "Indicar la clase de exactitud del aparato",
+        "Facilitar la lectura del menisco, que forma dos puntas enfrentadas sobre ella",
+        "Señalar el nivel máximo de llenado"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una banda azul sobre fondo blanco grabada en la pared posterior. El punto donde se tocan las dos puntas marca la lectura con mucha más nitidez que el borde del menisco.",
+      "fuente": "UNE-EN ISO 385:2005"
+    },
+    {
+      "id": "t22-q17",
+      "pregunta": "Si queda una burbuja de aire en la punta de la bureta y se suelta a media valoración, el volumen leído:",
+      "opciones": [
+        "No se ve afectado, porque el aire no ocupa volumen apreciable",
+        "Sale por defecto, porque parte del valorante no ha salido",
+        "Sale por exceso, porque se contabiliza volumen que no ha reaccionado"
+      ],
+      "correcta": 2,
+      "explicacion": "El hueco de la burbuja se lee como valorante vertido sin serlo. Por eso se purga antes de enrasar, abriendo la llave a fondo.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q18",
+      "pregunta": "«Ambientar» una bureta antes de llenarla consiste en:",
+      "opciones": [
+        "Enjuagarla con dos o tres porciones pequeñas del propio valorante",
+        "Dejarla una hora en el laboratorio para que alcance los 20 °C",
+        "Llenarla de agua destilada y vaciarla por completo"
+      ],
+      "correcta": 0,
+      "explicacion": "Evita que el agua residual del lavado diluya el valorante y falsee su concentración. Lo mismo se hace con la pipeta.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t22-q19",
+      "pregunta": "Un matraz aforado no debe secarse en estufa porque:",
+      "opciones": [
+        "El vidrio borosilicato no resiste temperaturas superiores a 40 °C",
+        "El calor deforma el vidrio y descalibra el aparato de forma permanente",
+        "Se borraría la marca de enrase grabada"
+      ],
+      "correcta": 1,
+      "explicacion": "El material volumétrico se seca al aire o con arrastre de acetona. Por la misma razón no se miden líquidos calientes: está ajustado a 20 °C.",
+      "fuente": "UNE-EN ISO 4787:2021"
+    },
+    {
+      "id": "t22-q20",
+      "pregunta": "Sobre el material volumétrico de vidrio, la afirmación correcta es:",
+      "opciones": [
+        "Se ajusta periódicamente, igual que una balanza analítica",
+        "No necesita calibración si lleva marcada la clase A",
+        "Se calibra, pero no se ajusta: se acepta o se descarta"
+      ],
+      "correcta": 2,
+      "explicacion": "Ajustar es modificar el instrumento, y en vidrio no cabe. Ésa es la diferencia práctica con la balanza del tema 21, que sí se ajusta.",
+      "fuente": "VIM (JCGM 200:2012), 2.39 y 3.11",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q21",
+      "pregunta": "La norma que fija los métodos de ensayo de capacidad y de uso del material volumétrico establece que la calibración se hace:",
+      "opciones": [
+        "Por gravimetría: pesando el agua contenida o vertida",
+        "Por comparación óptica de la marca de enrase con un patrón",
+        "Por conductimetría de la disolución contenida"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la UNE-EN ISO 4787:2021. La masa de agua se convierte a volumen con la densidad del agua, la del aire, la de las pesas y la dilatación del vidrio, referido a 20 °C. Calibrar una pipeta es, por tanto, hacer una gravimetría.",
+      "fuente": "UNE-EN ISO 4787:2021"
+    },
+    {
+      "id": "t22-q22",
+      "pregunta": "El agente valorante que se emplea en la determinación de cloruros es:",
+      "opciones": [
+        "El EDTA",
+        "El nitrato de plata",
+        "El permanganato potásico"
+      ],
+      "correcta": 1,
+      "explicacion": "El AgNO₃ precipita el cloruro como cloruro de plata. Es la base de los métodos de Mohr, Volhard y Fajans. El EDTA es de complexometría y el permanganato, de redox.",
+      "fuente": "UNE-ISO 9297:2013",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q23",
+      "pregunta": "El método de Volhard para cloruros se caracteriza por:",
+      "opciones": [
+        "Ser una valoración directa con cromato potásico como indicador",
+        "Emplear un indicador de adsorción en medio neutro",
+        "Añadir un exceso conocido de AgNO₃ y valorar el sobrante con tiocianato"
+      ],
+      "correcta": 2,
+      "explicacion": "Volhard es una valoración por retroceso, en medio ácido y con Fe(III) como indicador. La opción del cromato describe el método de Mohr, y la del indicador de adsorción, el de Fajans.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t22-q24",
+      "pregunta": "En una valoración por retroceso:",
+      "opciones": [
+        "Se añade un exceso conocido de reactivo y se valora el que no ha reaccionado",
+        "Se valora la muestra dos veces y se promedian los volúmenes",
+        "Se invierte el orden: la muestra se añade desde la bureta sobre el valorante"
+      ],
+      "correcta": 0,
+      "explicacion": "Se recurre a ella cuando la reacción es lenta, cuando no hay buen indicador para la valoración directa, o cuando el analito es insoluble o volátil. El método de Volhard y la DQO por dicromato son los ejemplos clásicos.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t22-s01",
+      "titulo": "Supuesto 1. Determinación de cloruros en un agua de consumo",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza se determina el **cloruro** de un agua de consumo por el **método de Mohr**, según la **UNE-ISO 9297**.\n\nSe toma una **alícuota de 50,0 mL** de muestra y se valora con **nitrato de plata 0,0100 mol/L**. El menisco de la bureta pasa de 0,00 mL a **14,10 mL**. El **ensayo en blanco** consume **0,20 mL**.\n\nDato: masa molar del cloruro = **35,45 g/mol**.\n\nResponda a las siguientes preguntas.",
+      "figura": {
+        "tipo": "bureta",
+        "lectura": 14.1,
+        "capacidad": 25
+      },
+      "preguntas": [
+        {
+          "id": "t22-s01-q1",
+          "pregunta": "¿Cuál es la concentración de cloruro de la muestra?",
+          "opciones": [
+            "49,3 mg/L",
+            "98,6 mg/L",
+            "100,0 mg/L",
+            "197,2 mg/L"
+          ],
+          "correcta": 1,
+          "explicacion": "Volumen neto = 14,10 − 0,20 = 13,90 mL. Moles de Ag⁺ = 0,01390 L × 0,0100 mol/L = 1,390·10⁻⁴ mol, y la reacción es 1:1, así que hay los mismos moles de Cl⁻. Masa = 1,390·10⁻⁴ × 35,45 = 4,93 mg. En 0,0500 L: 4,93 / 0,0500 = 98,6 mg/L. Los 100,0 mg/L salen de olvidar restar el blanco.",
+          "fuente": "UNE-ISO 9297:2013"
+        },
+        {
+          "id": "t22-s01-q2",
+          "pregunta": "¿Con qué material debe medirse la alícuota de 50,0 mL?",
+          "opciones": [
+            "Con una probeta graduada de 50 mL",
+            "Con un matraz aforado de 50 mL",
+            "Con una pipeta aforada de 50 mL, clase A o AS",
+            "Con la propia bureta, midiendo 50,0 mL antes de enrasar"
+          ],
+          "correcta": 2,
+          "explicacion": "La alícuota hay que TRANSFERIRLA con exactitud, y eso es material aforado ajustado «Ex»: la pipeta aforada. El matraz aforado es «In» y sirve para preparar, no para verter; la probeta es para volúmenes no críticos.",
+          "fuente": "UNE-EN ISO 648; UNE-EN ISO 1042"
+        },
+        {
+          "id": "t22-s01-q3",
+          "pregunta": "En el método de Mohr, ¿cuál es el indicador y en qué medio se trabaja?",
+          "opciones": [
+            "Cromato potásico, en medio neutro o ligeramente alcalino",
+            "Ion Fe(III), en medio ácido",
+            "Fluoresceína, como indicador de adsorción",
+            "Negro de eriocromo T, a pH 10 tamponado"
+          ],
+          "correcta": 0,
+          "explicacion": "Al agotarse el cloruro, el cromato forma cromato de plata rojizo. El Fe(III) en medio ácido es el indicador de Volhard, la fluoresceína el de Fajans, y el negro de eriocromo T pertenece a la complexometría con EDTA.",
+          "fuente": "UNE-ISO 9297:2013"
+        },
+        {
+          "id": "t22-s01-q4",
+          "pregunta": "¿Por qué se hace y se resta el ensayo en blanco?",
+          "opciones": [
+            "Para comprobar que la bureta está bien calibrada",
+            "Para descontar el cloruro presente en el agua destilada del laboratorio",
+            "Para corregir la pérdida de valorante por evaporación durante la valoración",
+            "Para corregir el error de valoración, es decir, la diferencia entre el punto final observado y el punto de equivalencia"
+          ],
+          "correcta": 3,
+          "explicacion": "El indicador necesita un pequeño exceso de valorante para virar, así que el punto final llega algo después del de equivalencia. El blanco mide ese exceso y se resta del volumen gastado.",
+          "fuente": "Bibliografía de química analítica; UNE-ISO 9297:2013"
+        },
+        {
+          "id": "t22-s01-q5",
+          "pregunta": "En otra muestra el resultado sale del orden de 420 mg/L de cloruro. ¿Cómo debe procederse según la norma?",
+          "opciones": [
+            "Dar el resultado como válido: la norma no fija límite superior",
+            "Diluir la muestra o emplear una bureta de mayor capacidad, porque se supera el campo de aplicación",
+            "Cambiar al método de Fajans, único válido por encima de 400 mg/L",
+            "Repetir la valoración sin indicador y detectar el punto final por conductividad"
+          ],
+          "correcta": 1,
+          "explicacion": "La UNE-ISO 9297 se aplica a la determinación directa de 5 a 150 mg/L, y el campo puede ampliarse hasta 400 mg/L con una bureta de mayor capacidad o por dilución. Un resultado de 420 mg/L queda fuera, así que hay que diluir.",
+          "fuente": "UNE-ISO 9297:2013"
+        }
+      ]
+    }
+  ]
+}
