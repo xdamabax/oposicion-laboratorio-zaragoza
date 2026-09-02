@@ -2,7 +2,7 @@
 tema: 21
 titulo: "Análisis gravimétrico: Concepto, material y operaciones. Manejo y calibración de balanzas analíticas. Clases de determinaciones gravimétricas."
 parte: Parte segunda
-estado: borrador
+estado: aprobado
 verificado: 2026-09-02
 fuentes:
   - "VIM. Vocabulario Internacional de Metrología (JCGM 200:2012), 3.ª edición en español publicada por el Centro Español de Metrología (CEM), 2012. Definiciones de calibración (2.39), verificación (2.44), ajuste (3.11) y trazabilidad metrológica (2.41), citadas literalmente — https://www.cem.es/sites/default/files/vim-cem-2012web.pdf"
@@ -263,6 +263,8 @@ Cuando aplica, el régimen está en la **Orden ICT/155/2020** (texto consolidado
 - El instrumento debe seguir cumpliendo los requisitos que dieron origen a su comercialización y puesta en servicio, y conservar su clase de exactitud.
 - La orden **derogó** la Orden de 27 de abril de 1999, y con ella el libro-registro de verificaciones y reparaciones.
 
+> **Sin confirmación normativa.** Circula mucho la regla de que *«los errores máximos permitidos en servicio son el doble de los de la verificación primitiva»*. Es una regla habitual en metrología legal y aparece en material de estudio y en catálogos comerciales, pero **no la he podido localizar en el texto del RD 244/2016 ni en el de la Orden ICT/155/2020**. Este apunte **no la da por buena**: si aparece en un test de otra fuente, trátala como dato sin verificar, no como precepto citable.
+
 En un laboratorio municipal de análisis, la consecuencia práctica: **la balanza analítica de trabajo interno se calibra** (trazabilidad, ISO 17025), y **se verifica** además si el resultado de la pesada se usa para alguno de los fines del artículo 8.1.
 
 ### 2.5. Clases de determinaciones gravimétricas
@@ -318,10 +320,11 @@ Los dos temas comparten enunciado casi palabra por palabra («Concepto, material
 
 | Contenido | Va en el 21 | Va en el 22 |
 | --- | --- | --- |
-| Vocabulario metrológico (VIM: calibrar / verificar / ajustar) | **Se desarrolla aquí** | Se remite aquí y se aplica al material volumétrico |
+| Vocabulario metrológico (VIM: calibrar / verificar / ajustar) | **Se desarrolla aquí**, completo | **Recordatorio breve** con referencia cruzada a este tema, no repetición |
 | Trazabilidad y UNE-EN ISO/IEC 17025 | Se introduce aquí | Se reutiliza |
 | Material de vidrio **no aforado** (vaso, embudo, probeta) | **Aquí** | — |
-| Material **aforado** de clase A y B (matraz aforado, pipeta aforada, bureta) y su calibración por pesada | — | **Allí** |
+| Material **aforado** de clase A y B (matraz aforado, pipeta aforada) y su calibración por pesada | — | **Allí** |
+| **Bureta**: partes, enrase, lectura del menisco, error de paralaje, tolerancias | — | **Allí, entera.** Este tema no usa ninguna figura de bureta |
 | Erlenmeyer | — | **Allí** (matraz de valoración) |
 | Balanza analítica | **Aquí** | Se usa allí como instrumento de la calibración del material volumétrico |
 | Sólidos en suspensión como **técnica gravimétrica** | **Aquí** | — |
@@ -346,7 +349,7 @@ Este tema **no aparece en ninguno de los seis cuestionarios analizados** con pre
 
 1. **La tabla numérica de clases de exactitud no se ha podido verificar.** Sé que está en el punto 2.1 de los requisitos metrológicos del apéndice I del anexo VI del RD 244/2016 (tabla 2), y que reproduce la de la Directiva 2014/31/UE. Los PDF del BOE y del DOUE no han podido extraerse en esta sesión. **Lo que sí está verificado**: los nombres de las cuatro clases (especial, fina, media, ordinaria), la existencia de *d* y *e*, y que ambos toman valores 1, 2 o 5 × 10^k. **Lo que NO he escrito por no poder verificarlo**: los valores concretos de *e*, de Min y del número de escalones *n* por clase, y la tabla de errores máximos permitidos por tramos de carga. Si quieres ese detalle, hay que consultar el anexo VI en papel o la UNE-EN 45501.
 
-2. **He leído que los EMP en servicio son el doble de los de verificación primitiva**, regla habitual en metrología legal, pero **no la he podido confirmar** en el texto del RD 244/2016 ni de la Orden ICT/155/2020. No la he incluido en el apunte. Queda como punto abierto.
+2. **La regla «EMP en servicio = el doble que en verificación primitiva» queda marcada como *sin confirmación normativa*.** Es habitual en metrología legal y aparece en material de estudio, pero no la he localizado en el texto del RD 244/2016 ni de la Orden ICT/155/2020. **No se afirma en el desarrollo**: va señalada como tal en el apartado 2.4.7, para que se reconozca si aparece en otra fuente sin darla por buena. No se ha generado ninguna tarjeta ni pregunta sobre ella.
 
 3. **Las normas UNE citadas son de pago.** Se ha verificado en catálogo su título exacto, año de edición y vigencia, y las condiciones operativas proceden de fuentes secundarias o de documentos oficiales que las reproducen (es el caso del documento LNR 02/2015 del ISCIII para la UNE-EN 12341). No se ha leído el texto íntegro de ninguna de ellas.
 

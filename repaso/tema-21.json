@@ -1,0 +1,790 @@
+{
+  "tema": 21,
+  "titulo": "Análisis gravimétrico: Concepto, material y operaciones. Manejo y calibración de balanzas analíticas. Clases de determinaciones gravimétricas.",
+  "generadoDe": "temas/tema-21.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-02",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "El tema no aparece en los seis cuestionarios analizados, así que el núcleo se fija por rendimiento esperado, no por precedente. Va al núcleo: la tríada calibrar / verificar / ajustar del VIM (la trampa más rentable del tema), la clase I de la balanza analítica y la pareja d ≠ e, los 105 °C y la UNE-EN 872, las clases de determinación con la distinción directa / indirecta, y el bloque de errores del precipitado (sobresaturación, digestión, peptización, coprecipitación) con su sentido de desviación. La regla «EMP en servicio = el doble» queda fuera por no estar confirmada normativamente.",
+  "flashcards": [
+    {
+      "id": "t21-f01",
+      "anverso": "¿Qué determina el análisis gravimétrico y qué magnitud mide?",
+      "reverso": "Determina la cantidad de analito **midiendo la masa** de una sustancia de composición conocida que lo contiene o que deriva de él estequiométricamente.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel)",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t21-f02",
+      "anverso": "¿Por qué se dice que la gravimetría es un método absoluto o primario?",
+      "reverso": "Porque **no necesita recta de calibrado con patrones del analito**: el resultado sale de una masa y de una relación estequiométrica.\nDe ahí que se haya usado para certificar patrones y validar otras técnicas.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f03",
+      "anverso": "Ventajas e inconvenientes de la gravimetría frente a las técnicas instrumentales.",
+      "reverso": "**Ventajas:** exactitud alta, instrumentación barata, sin patrones del analito, trazable al kilogramo.\n**Inconvenientes:** lenta (horas o días), **poco sensible** (no sirve para trazas), consume mucha muestra, muy sensible a interferencias que coprecipitan.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t21-f04",
+      "anverso": "¿Qué es el factor gravimétrico y para qué sirve?",
+      "reverso": "**F = (a · masa molar del analito) / (b · masa molar del precipitado)**, donde *a* y *b* igualan los átomos del elemento buscado en una y otra fórmula.\nConvierte la masa pesada en masa de analito: **masa de analito = masa de precipitado × F**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f05",
+      "anverso": "Si el hierro se pesa como Fe₂O₃, ¿cuál es su factor gravimétrico? ¿Dónde está la trampa?",
+      "reverso": "**F = 2 · M(Fe) / M(Fe₂O₃)**.\nLa trampa es el **2**: hay dos átomos de Fe por cada fórmula de Fe₂O₃. Es el error de cálculo típico.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f06",
+      "anverso": "Las cinco clases de determinaciones gravimétricas.",
+      "reverso": "1. **Por precipitación**\n2. **Por volatilización o desecación**\n3. **Electrogravimetría** (depósito por electrólisis)\n4. **Por extracción** (se evapora el disolvente y se pesa el residuo)\n5. **Termogravimetría (TGA)** (registro continuo de masa frente a temperatura)",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f07",
+      "anverso": "Volatilización directa e indirecta: ¿en qué se diferencian y cuál es la habitual?",
+      "reverso": "**Directa:** se **recoge y se pesa** el componente volátil en un absorbente. Pesa lo que se va.\n**Indirecta:** se pesa antes y después y el analito sale **por diferencia de masa**. Pesa lo que queda.\nCasi todo en la práctica es **indirecto**: humedad, materia seca y sólidos en suspensión.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f08",
+      "anverso": "¿Por qué en gravimetría el material de vidrio es graduado y no aforado?",
+      "reverso": "Porque **el volumen no es una magnitud crítica**: lo que se mide es masa, y el volumen no entra en el cálculo.\nEs la diferencia de fondo con la volumetría (tema 22), donde el material **aforado de clase A** es el corazón del método.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f09",
+      "anverso": "¿Qué material es éste y qué papel juega en una gravimetría?",
+      "reverso": "**Vaso de precipitados.** Es el recipiente donde se **precipita y se digiere**.\nSe cubre con un vidrio de reloj, y **nunca se pesa en él el precipitado final**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "vaso-precipitados"
+      }
+    },
+    {
+      "id": "t21-f10",
+      "anverso": "¿Qué material es éste y en qué paso de la gravimetría se usa?",
+      "reverso": "**Embudo.** Filtración **por gravedad con papel de filtro**, para los precipitados que luego se **calcinan junto con el papel**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "embudo"
+      }
+    },
+    {
+      "id": "t21-f11",
+      "anverso": "¿Qué material es éste y por qué basta su exactitud en una gravimetría?",
+      "reverso": "**Probeta**, material **graduado**. Sirve para añadir reactivos y agua de lavado.\nSu exactitud basta porque **el volumen no entra en el cálculo**: el resultado sale de la masa.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "material",
+        "valor": "probeta"
+      }
+    },
+    {
+      "id": "t21-f12",
+      "anverso": "¿Qué es el papel de filtro sin cenizas y cómo se clasifica?",
+      "reverso": "Papel que deja un residuo de ceniza despreciable al calcinarlo, así que el precipitado se calcina **con el papel**.\nSe clasifica por velocidad y retención (las «bandas»): **rápida** para precipitados gelatinosos, **lenta** para finos y cristalinos.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material"
+      ]
+    },
+    {
+      "id": "t21-f13",
+      "anverso": "Crisol de Gooch y crisol de placa filtrante: qué son y qué limitación tiene el segundo.",
+      "reverso": "**Gooch:** crisol de fondo perforado sobre el que se dispone un lecho filtrante (hoy, microfibra de vidrio). Se usa con succión.\n**Placa filtrante:** lleva la placa porosa incorporada, con **porosidad numerada**. Más cómodo, pero si es de vidrio **no admite calcinación**: solo secado en estufa.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material"
+      ]
+    },
+    {
+      "id": "t21-f14",
+      "anverso": "¿Para qué sirve el desecador y qué desecantes lleva?",
+      "reverso": "Para **enfriar el crisol sin que recupere humedad** antes de pesarlo.\nDesecantes: **gel de sílice, cloruro cálcico anhidro, pentóxido de fósforo**.\nLa llave se abre despacio, para que la entrada de aire no arrastre el precipitado.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material",
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t21-f15",
+      "anverso": "¿Por qué un crisol nunca se coge con los dedos?",
+      "reverso": "Porque **la grasa y la humedad de la piel pesan**. Se manipula siempre con **pinzas de crisol** o guantes.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "material",
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t21-f16",
+      "anverso": "Secuencia completa de una gravimetría por precipitación.",
+      "reverso": "1. Disolución y toma de muestra\n2. **Precipitación**\n3. **Digestión** o envejecimiento\n4. Filtración\n5. **Lavado**\n6. Secado o calcinación\n7. Enfriamiento en desecador y **pesada hasta masa constante**\n8. Cálculo con el **factor gravimétrico**",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f17",
+      "anverso": "¿Qué es la sobresaturación relativa y qué regla la gobierna?",
+      "reverso": "**Sobresaturación relativa = (Q − S) / S**, con *Q* la concentración instantánea y *S* la solubilidad de equilibrio. Es la regla de **von Weimarn**.\n**Alta** → domina la **nucleación** → precipitado **coloidal**, difícil de filtrar.\n**Baja** → domina el **crecimiento** → precipitado **cristalino**, fácil de filtrar y lavar.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f18",
+      "anverso": "Las cuatro maniobras clásicas para bajar la sobresaturación relativa.",
+      "reverso": "1. Disolución **diluida**\n2. Adición del precipitante **lenta y con agitación**\n3. Precipitación **en caliente** (sube *S*)\n4. **Control del pH**\nSu versión refinada es la **precipitación en disolución homogénea**: el precipitante se genera *in situ* poco a poco (por ejemplo, urea que se hidroliza al calentar).",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ]
+    },
+    {
+      "id": "t21-f19",
+      "anverso": "¿Qué es la digestión de un precipitado y qué se consigue con ella?",
+      "reverso": "Dejar el precipitado en sus aguas madres, en caliente. Las partículas pequeñas, más solubles, se redisuelven y recristalizan sobre las grandes: es la **maduración de Ostwald**.\nResultado: precipitado **más grueso, más puro y más filtrable**. Reduce oclusión y adsorción.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f20",
+      "anverso": "¿Por qué el precipitado no se lava con agua destilada pura?",
+      "reverso": "Por la **peptización**: el agua pura puede redispersar el coloide ya coagulado, que se escapa por el filtro y da resultado **por defecto**.\nSe lava con un **electrolito volátil** (nitrato amónico, ácido nítrico diluido) y con **muchas porciones pequeñas**, no pocas grandes.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f21",
+      "anverso": "Los tres tipos de coprecipitación.",
+      "reverso": "1. **Adsorción superficial:** iones ajenos pegados a la superficie.\n2. **Oclusión:** impurezas **atrapadas dentro** del cristal al crecer deprisa.\n3. **Inclusión isomorfa:** un ion ajeno de tamaño y carga parecidos **sustituye** a uno propio en la red. Es la **más difícil de eliminar**.\nLas tres dan resultado **por exceso**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f22",
+      "anverso": "¿Qué errores dan resultado por exceso y cuáles por defecto?",
+      "reverso": "**Por exceso** (pesa de más): coprecipitación (adsorción, oclusión, inclusión) y **postprecipitación**.\n**Por defecto** (pesa de menos): **peptización** y **pérdidas por solubilidad** en las aguas madres o el líquido de lavado.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f23",
+      "anverso": "¿Qué es la postprecipitación y en qué se diferencia de la coprecipitación?",
+      "reverso": "Una **segunda** sustancia precipita **encima** del precipitado ya formado, al dejarlo reposar demasiado tiempo.\nLa coprecipitación ocurre **durante** la formación del precipitado; la postprecipitación, **después**. Ambas dan resultado por exceso.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "errores"
+      ]
+    },
+    {
+      "id": "t21-f24",
+      "anverso": "¿Qué significa «pesar hasta masa constante» y por qué el crisol se enfría antes?",
+      "reverso": "**Masa constante:** repetir el ciclo calentar-enfriar-pesar hasta que **dos pesadas consecutivas** difieran menos que la tolerancia del método. No basta una sola pesada.\nEl crisol caliente **pesa de menos**: el aire caliente asciende por convección y falsea la lectura.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f25",
+      "anverso": "Las cuatro clases de exactitud de los instrumentos de pesaje de funcionamiento no automático. ¿Cuál es la balanza analítica?",
+      "reverso": "**I — especial** (la **balanza analítica**)\n**II — fina**\n**III — media**\n**IIII — ordinaria**",
+      "fuente": "RD 244/2016, anexo VI; UNE-EN 45501:2016",
+      "etiquetas": [
+        "balanza",
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f26",
+      "anverso": "Diferencia entre el escalón real (d) y el escalón de verificación (e).",
+      "reverso": "**d:** lo que la balanza **muestra** (la «legibilidad» del catálogo).\n**e:** el escalón con el que se **evalúa metrológicamente** y con el que se expresan los EMP; es el de las inscripciones reglamentarias.\nEn una analítica **e es mayor que d**: muestra más cifras de las que la metrología legal le reconoce.\nAmbos valen **1, 2 o 5 × 10^k** unidades de masa.",
+      "fuente": "RD 244/2016, anexo VI; UNE-EN 45501:2016",
+      "etiquetas": [
+        "balanza",
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f27",
+      "anverso": "Definición de **calibración** según el VIM.",
+      "reverso": "*«Operación que bajo condiciones especificadas establece, en una primera etapa, una relación entre los valores y sus incertidumbres… obtenidas a partir de los patrones de medida, y las correspondientes indicaciones…»*\nEs decir: **compara con patrones y cuantifica el error y su incertidumbre**. **No toca el instrumento.** Su producto es un **certificado**.",
+      "fuente": "VIM (JCGM 200:2012), 2.39",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f28",
+      "anverso": "Definición de **verificación** según el VIM.",
+      "reverso": "*«Aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados.»*\nEs decir: comprueba si el error **cabe dentro de una tolerancia** y emite un juicio de **conforme / no conforme**.",
+      "fuente": "VIM (JCGM 200:2012), 2.44",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f29",
+      "anverso": "Definición de **ajuste** según el VIM, y sus dos notas de examen.",
+      "reverso": "*«Conjunto de operaciones realizadas sobre un sistema de medida para que proporcione indicaciones prescritas…»* Es lo que hace el botón «CAL». **Sí toca el instrumento.**\nNota 2: *«No debe confundirse el ajuste… con su propia calibración, que es un **requisito para el ajuste**»*.\nNota 3: *«Después de su ajuste, generalmente un sistema de medida debe ser **calibrado nuevamente**»*.",
+      "fuente": "VIM (JCGM 200:2012), 3.11",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f30",
+      "anverso": "¿Qué es la trazabilidad metrológica según el VIM?",
+      "reverso": "*«Propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una **cadena ininterrumpida y documentada de calibraciones**, cada una de las cuales contribuye a la incertidumbre de medida.»*",
+      "fuente": "VIM (JCGM 200:2012), 2.41",
+      "etiquetas": [
+        "metrologia"
+      ]
+    },
+    {
+      "id": "t21-f31",
+      "anverso": "¿Qué ensayos contempla la EURAMET cg-18 para calibrar una balanza?",
+      "reverso": "**Repetibilidad** (dispersión con la misma carga), **excentricidad** (carga en el centro y en cuatro posiciones), **errores de indicación o linealidad** (cargas de cero a Max frente a patrones), **magnitudes de influencia** (incluida la corrección por **empuje del aire**) y el **mínimo de pesada**.\nVersión vigente: **4.0, de noviembre de 2015**.",
+      "fuente": "EURAMET cg-18 v4.0 (2015)",
+      "etiquetas": [
+        "balanza",
+        "metrologia"
+      ]
+    },
+    {
+      "id": "t21-f32",
+      "anverso": "¿Qué norma rige las pesas patrón y qué clases define?",
+      "reverso": "**OIML R 111-1:2004** (con enmienda de 2025), para valores de **1 mg a 5 000 kg**.\nNueve clases: **E1 · E2 · F1 · F2 · M1 · M1-2 · M2 · M2-3 · M3**.\nCon balanzas analíticas de clase I se usan **E2 y F1**. Se manipulan con pinzas y **una pesa sin certificado en vigor no sirve como patrón**.",
+      "fuente": "OIML R 111-1:2004",
+      "etiquetas": [
+        "balanza",
+        "metrologia"
+      ]
+    },
+    {
+      "id": "t21-f33",
+      "anverso": "¿Cada cuánto se hace la verificación periódica de un instrumento de pesaje de funcionamiento no automático, y cuándo es obligatoria?",
+      "reverso": "**Cada dos años** (Orden ICT/155/2020, **anexo I**).\nSolo si el uso entra en el **artículo 8.1 de la Ley 32/2014**: interés público, salud, seguridad, orden público, medio ambiente, protección del consumidor, recaudación tributaria, aranceles y peritajes judiciales.\nUna balanza de trabajo interno **se calibra**; se verifica además solo si el resultado se usa para esos fines.",
+      "fuente": "Orden ICT/155/2020, anexo I; Ley 32/2014, art. 8.1",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f34",
+      "anverso": "Reglas de manejo de la balanza analítica que más se preguntan.",
+      "reverso": "Mesa **antivibratoria** y **nivelada** (burbuja centrada); **puertas cerradas** al leer; carga **centrada** (si no, error de **excentricidad**); objeto **a temperatura ambiente**; manipular con **pinzas**; muestras higroscópicas en **pesasustancias tapado**.\nLa **tara no amplía la capacidad máxima**: Max cuenta la masa total sobre el plato.",
+      "fuente": "EURAMET cg-18; bibliografía de laboratorio",
+      "etiquetas": [
+        "balanza"
+      ]
+    },
+    {
+      "id": "t21-f35",
+      "anverso": "¿Qué es el empuje del aire en una pesada y por qué importa?",
+      "reverso": "La balanza compara fuerzas **dentro del aire**, que empuja hacia arriba tanto la muestra como la pesa.\nSi la **densidad de la muestra difiere mucho** de la de las pesas hay un **error sistemático**, que en trabajo de alta exactitud se corrige por cálculo. Es el motivo de que masa convencional y masa real no coincidan.",
+      "fuente": "EURAMET cg-18 v4.0 (2015)",
+      "etiquetas": [
+        "balanza"
+      ]
+    },
+    {
+      "id": "t21-f36",
+      "anverso": "Norma, temperatura y unidades de los sólidos en suspensión en agua.",
+      "reverso": "**UNE-EN 872:2006**. Filtración por **filtro de fibra de vidrio de borosilicato sin aglomerante**, secado a **105 °C ± 2 °C** y pesada hasta masa constante.\nResultado en **mg/L**. Es una gravimetría **por volatilización indirecta**: se pesa por diferencia.",
+      "fuente": "UNE-EN 872:2006",
+      "etiquetas": [
+        "normas",
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t21-f37",
+      "anverso": "Normas gravimétricas de caracterización de lodos.",
+      "reverso": "**UNE-EN 12880:2001** — humedad y contenido en materia seca; estufa a **105 °C** hasta masa constante.\n**UNE-EN 12879:2001** — **pérdida de peso por calcinación** de la materia seca, partiendo del residuo seco obtenido según la 12880.",
+      "fuente": "UNE-EN 12880:2001 y UNE-EN 12879:2001",
+      "etiquetas": [
+        "normas"
+      ]
+    },
+    {
+      "id": "t21-f38",
+      "anverso": "Método de referencia de PM10 y PM2,5, y condiciones del cuarto de pesadas.",
+      "reverso": "Método **gravimétrico sobre filtro**: **UNE-EN 12341** (edición vigente **2024**; el **RD 102/2011** sigue remitiendo a la de **2015**). Resultado en **µg/m³**.\nCuarto de pesadas a **19-21 °C** y **45-50 % HR** (medias horarias). Filtros manipulados **con pinzas**.",
+      "fuente": "UNE-EN 12341; RD 102/2011 modificado por RD 39/2017; doc. LNR 02/2015 del ISCIII",
+      "etiquetas": [
+        "normas"
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "t21-q01",
+      "pregunta": "En el análisis gravimétrico, la magnitud que se mide para cuantificar el analito es:",
+      "opciones": [
+        "El volumen de reactivo consumido",
+        "La masa",
+        "La absorbancia de la disolución"
+      ],
+      "correcta": 1,
+      "explicacion": "La gravimetría determina la cantidad de analito midiendo la masa de una sustancia de composición conocida. El volumen de reactivo consumido es el fundamento de la volumetría, y la absorbancia el de la espectrofotometría.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q02",
+      "pregunta": "Se dice que la gravimetría es un método absoluto o primario porque:",
+      "opciones": [
+        "Es el método más rápido de los métodos clásicos",
+        "Puede aplicarse a concentraciones de trazas",
+        "No necesita recta de calibrado con patrones del analito"
+      ],
+      "correcta": 2,
+      "explicacion": "El resultado sale de una masa y de una relación estequiométrica, sin patrones del analito. Precisamente es lenta y poco sensible: no sirve para trazas.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q03",
+      "pregunta": "Si el hierro se determina pesando Fe₂O₃, el factor gravimétrico es:",
+      "opciones": [
+        "M(Fe) / M(Fe₂O₃)",
+        "2 · M(Fe) / M(Fe₂O₃)",
+        "M(Fe₂O₃) / 2 · M(Fe)"
+      ],
+      "correcta": 1,
+      "explicacion": "Hay dos átomos de hierro por cada fórmula de Fe₂O₃, así que el numerador lleva el coeficiente 2. Olvidarlo es el error de cálculo más repetido.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q04",
+      "pregunta": "Una sobresaturación relativa alta en el momento de la precipitación produce:",
+      "opciones": [
+        "Un precipitado cristalino de partícula grande",
+        "Un precipitado de composición estequiométrica garantizada",
+        "Un precipitado coloidal de partícula muy fina"
+      ],
+      "correcta": 2,
+      "explicacion": "Con sobresaturación relativa alta domina la nucleación: muchísimos núcleos y partícula muy fina, difícil de filtrar. La regla es la de von Weimarn.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q05",
+      "pregunta": "¿Cuál de estas maniobras NO reduce la sobresaturación relativa?",
+      "opciones": [
+        "Añadir el precipitante despacio y con agitación",
+        "Trabajar en disolución diluida y en caliente",
+        "Añadir el precipitante de golpe y en frío"
+      ],
+      "correcta": 2,
+      "explicacion": "Las cuatro maniobras clásicas son: disolución diluida, adición lenta con agitación, precipitación en caliente (sube la solubilidad) y control del pH. Añadirlo de golpe y en frío hace justo lo contrario.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q06",
+      "pregunta": "La digestión o envejecimiento de un precipitado, también llamada maduración de Ostwald, consigue:",
+      "opciones": [
+        "Disolver por completo las impurezas ocluidas mediante un segundo reactivo",
+        "Reducir el tamaño de partícula para aumentar la superficie de contacto",
+        "Un precipitado más grueso, más puro y más filtrable"
+      ],
+      "correcta": 2,
+      "explicacion": "Al mantenerlo caliente en sus aguas madres, las partículas pequeñas se redisuelven y recristalizan sobre las grandes. Reduce oclusión y adsorción, pero no las elimina del todo: para eso está la redisolución y reprecipitación.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q07",
+      "pregunta": "El precipitado se lava con una disolución de electrolito volátil y no con agua destilada pura para evitar:",
+      "opciones": [
+        "La oclusión",
+        "La peptización",
+        "La postprecipitación"
+      ],
+      "correcta": 1,
+      "explicacion": "La peptización es la redispersión del coloide ya coagulado al lavarlo con agua pura: atraviesa el filtro y el resultado sale por defecto. El electrolito volátil se elimina después en el secado o la calcinación.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q08",
+      "pregunta": "De estos fenómenos, el que da un resultado gravimétrico POR DEFECTO es:",
+      "opciones": [
+        "La oclusión",
+        "La inclusión isomorfa",
+        "Las pérdidas por solubilidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Oclusión e inclusión isomorfa son formas de coprecipitación: añaden materia al precipitado y dan resultado por exceso. Las pérdidas por solubilidad y la peptización restan materia, y dan por defecto.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q09",
+      "pregunta": "La forma de coprecipitación más difícil de eliminar, en la que un ion ajeno de tamaño y carga parecidos sustituye a uno propio en la red cristalina, es:",
+      "opciones": [
+        "La adsorción superficial",
+        "La inclusión isomorfa",
+        "La postprecipitación"
+      ],
+      "correcta": 1,
+      "explicacion": "En la inclusión isomorfa el ion ajeno ocupa una posición de la red, así que ni la digestión ni el lavado lo sacan. La postprecipitación, además, no es coprecipitación: ocurre después de formado el precipitado.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q10",
+      "pregunta": "«Pesar hasta masa constante» significa:",
+      "opciones": [
+        "Pesar una sola vez, con la balanza previamente ajustada",
+        "Repetir calentar, enfriar y pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia del método",
+        "Pesar siempre la misma cantidad de muestra en todas las réplicas"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un criterio de fin de operación, no de cantidad de muestra: garantiza que ya no queda humedad ni materia volátil por eliminar.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q11",
+      "pregunta": "Un crisol que se pesa todavía caliente da una lectura:",
+      "opciones": [
+        "Menor de la real, por las corrientes de convección",
+        "Mayor de la real, por dilatación del crisol",
+        "Igual, si la balanza está bien nivelada"
+      ],
+      "correcta": 0,
+      "explicacion": "El aire caliente asciende alrededor del crisol y genera un empuje hacia arriba que falsea la lectura a la baja. Por eso se enfría siempre en desecador.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q12",
+      "pregunta": "El material de vidrio que se usa en gravimetría es graduado y no aforado porque:",
+      "opciones": [
+        "El vidrio aforado no resiste la temperatura de la estufa",
+        "El volumen no entra en el cálculo del resultado, que sale de la masa",
+        "El material aforado solo existe en volúmenes grandes"
+      ],
+      "correcta": 1,
+      "explicacion": "En gravimetría se mide masa, así que la exactitud del volumen de reactivo o de agua de lavado no afecta al resultado. Es la diferencia de fondo con la volumetría del tema 22.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q13",
+      "pregunta": "¿En qué operación de una gravimetría se emplea el material de la imagen?",
+      "opciones": [
+        "En la filtración por gravedad con papel de filtro",
+        "En el enrase de la disolución patrón",
+        "En la calcinación del precipitado en la mufla"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un embudo: sirve para la filtración por gravedad con papel de filtro sin cenizas, cuando el precipitado se va a calcinar junto con el papel. El enrase es propio del material aforado, y la calcinación se hace en crisol.",
+      "fuente": "Bibliografía de química analítica",
+      "figura": {
+        "tipo": "material",
+        "valor": "embudo"
+      }
+    },
+    {
+      "id": "t21-q14",
+      "pregunta": "Observe el material de la imagen. En una gravimetría se utiliza para:",
+      "opciones": [
+        "Precipitar y digerir, cubierto con un vidrio de reloj",
+        "Pesar el precipitado ya calcinado",
+        "Contener la disolución valorante durante la titulación"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un vaso de precipitados: es donde se precipita y se digiere. El precipitado final nunca se pesa en él, sino en crisol; y la disolución valorante va en bureta, que es material del tema 22.",
+      "fuente": "Bibliografía de química analítica",
+      "figura": {
+        "tipo": "material",
+        "valor": "vaso-precipitados"
+      }
+    },
+    {
+      "id": "t21-q15",
+      "pregunta": "Una balanza analítica de laboratorio pertenece a la clase de exactitud:",
+      "opciones": [
+        "Clase I, exactitud especial",
+        "Clase II, exactitud fina",
+        "Clase III, exactitud media"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cuatro clases son I especial, II fina, III media y IIII ordinaria. La analítica es clase I; la clase III es la de una báscula comercial de mostrador.",
+      "fuente": "RD 244/2016, anexo VI; UNE-EN 45501:2016",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q16",
+      "pregunta": "En un instrumento de pesaje, el escalón de verificación (e) es:",
+      "opciones": [
+        "El intervalo entre dos indicaciones consecutivas que muestra el visor",
+        "La carga mínima por debajo de la cual el instrumento no debe utilizarse",
+        "El escalón con el que se evalúa metrológicamente el instrumento y se expresan los errores máximos permitidos"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que muestra el visor es el escalón real (d); la carga mínima es Min. El escalón de verificación (e) es el de las inscripciones reglamentarias, y en una balanza analítica es mayor que d.",
+      "fuente": "RD 244/2016, anexo VI; UNE-EN 45501:2016",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q17",
+      "pregunta": "Según el VIM, la operación que compara el instrumento con patrones y cuantifica su error y su incertidumbre, SIN modificar el instrumento, es:",
+      "opciones": [
+        "La verificación",
+        "El ajuste",
+        "La calibración"
+      ],
+      "correcta": 2,
+      "explicacion": "La calibración (VIM 2.39) mide el error y no toca el instrumento; su producto es un certificado. La verificación (2.44) declara conforme o no conforme frente a una tolerancia, y el ajuste (3.11) sí modifica el instrumento.",
+      "fuente": "VIM (JCGM 200:2012), 2.39",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q18",
+      "pregunta": "Según el VIM, después de ajustar un sistema de medida:",
+      "opciones": [
+        "Generalmente debe ser calibrado nuevamente",
+        "Queda automáticamente verificado por el propio ajuste",
+        "No debe volver a tocarse hasta la siguiente verificación periódica"
+      ],
+      "correcta": 0,
+      "explicacion": "Es literal de la nota 3 del VIM 3.11. La nota 2 añade que no debe confundirse el ajuste con la calibración, que es un requisito previo para el ajuste.",
+      "fuente": "VIM (JCGM 200:2012), 3.11, notas 2 y 3",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q19",
+      "pregunta": "El ensayo de calibración de una balanza que consiste en colocar la misma carga en el centro del plato y en cuatro posiciones distintas se denomina ensayo de:",
+      "opciones": [
+        "Repetibilidad",
+        "Excentricidad",
+        "Linealidad"
+      ],
+      "correcta": 1,
+      "explicacion": "La repetibilidad mide la dispersión de varias pesadas de la misma carga sin mover nada; la linealidad, el error de indicación con cargas repartidas de cero a Max. La excentricidad mide el efecto de dónde se posa la carga.",
+      "fuente": "EURAMET cg-18 v4.0 (2015)"
+    },
+    {
+      "id": "t21-q20",
+      "pregunta": "Las pesas patrón de clases E1, E2, F1, F2, M1 a M3 están reguladas por:",
+      "opciones": [
+        "La recomendación OIML R 111-1",
+        "La norma UNE-EN 45501",
+        "La guía EURAMET cg-18"
+      ],
+      "correcta": 0,
+      "explicacion": "La OIML R 111-1:2004 cubre las pesas de 1 mg a 5 000 kg y sus nueve clases. La UNE-EN 45501 regula el instrumento de pesaje, y la EURAMET cg-18 es la guía de cómo calibrarlo.",
+      "fuente": "OIML R 111-1:2004"
+    },
+    {
+      "id": "t21-q21",
+      "pregunta": "La verificación periódica de un instrumento de pesaje de funcionamiento no automático sujeto a control metrológico del Estado se realiza cada:",
+      "opciones": [
+        "Año",
+        "Dos años",
+        "Cinco años"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo fija el anexo I de la Orden ICT/155/2020. La fase de instrumentos en servicio comprende además la verificación después de reparación o modificación.",
+      "fuente": "Orden ICT/155/2020, anexo I",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q22",
+      "pregunta": "La determinación de los sólidos en suspensión en un agua residual, según la UNE-EN 872, exige secar el filtro a:",
+      "opciones": [
+        "105 °C ± 2 °C",
+        "180 °C ± 5 °C",
+        "550 °C ± 25 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "La UNE-EN 872:2006 filtra por filtro de fibra de vidrio de borosilicato sin aglomerante y seca a 105 °C ± 2 °C hasta masa constante, con el resultado en mg/L. Los 550 °C son propios de la calcinación, no del secado.",
+      "fuente": "UNE-EN 872:2006",
+      "nucleo": true
+    },
+    {
+      "id": "t21-q23",
+      "pregunta": "La determinación de humedad de un lodo secándolo en estufa y calculando la pérdida por diferencia de masa es una gravimetría:",
+      "opciones": [
+        "Por precipitación",
+        "Por volatilización directa",
+        "Por volatilización indirecta"
+      ],
+      "correcta": 2,
+      "explicacion": "Es indirecta porque se pesa lo que queda y el analito sale por diferencia. Sería directa si se recogiera y pesara el agua desprendida en un absorbente.",
+      "fuente": "UNE-EN 12880:2001; bibliografía de química analítica"
+    },
+    {
+      "id": "t21-q24",
+      "pregunta": "El método de referencia para determinar la concentración másica de PM10 en aire ambiente es:",
+      "opciones": [
+        "Un método gravimétrico sobre filtro, según la UNE-EN 12341",
+        "Un método turbidimétrico, según la UNE-EN 872",
+        "Un método de absorción atómica sobre el filtrado"
+      ],
+      "correcta": 0,
+      "explicacion": "La UNE-EN 12341 describe el método gravimétrico normalizado para PM10 y PM2,5, con el resultado en µg/m³. El RD 102/2011 lo recoge como método de referencia.",
+      "fuente": "UNE-EN 12341; RD 102/2011 modificado por RD 39/2017"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t21-s01",
+      "titulo": "Supuesto 1. Sólidos en suspensión de un agua residual y control de la balanza",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza se recibe una muestra de agua residual para determinar los **sólidos en suspensión** según la **UNE-EN 872**.\n\nSe filtran **250 mL** de muestra a través de un filtro de fibra de vidrio previamente acondicionado y tarado, cuya masa era **0,1358 g**. Tras la etapa de secado, el conjunto de filtro y residuo pesa **0,1611 g**.\n\nLa balanza analítica empleada tiene un escalón real **d = 0,1 mg** y su último **certificado de calibración**, emitido por un laboratorio acreditado, es de hace catorce meses. La balanza no está sujeta a control metrológico del Estado.\n\nResponda a las siguientes preguntas.",
+      "figura": {
+        "tipo": "material",
+        "valor": "probeta"
+      },
+      "preguntas": [
+        {
+          "id": "t21-s01-q1",
+          "pregunta": "¿Cuál es la concentración de sólidos en suspensión de la muestra?",
+          "opciones": [
+            "10,12 mg/L",
+            "25,3 mg/L",
+            "101,2 mg/L",
+            "253 mg/L"
+          ],
+          "correcta": 2,
+          "explicacion": "La masa de residuo es 0,1611 − 0,1358 = 0,0253 g = 25,3 mg. Sobre 250 mL, es decir 0,250 L: 25,3 mg / 0,250 L = 101,2 mg/L. El error típico es dar los 25,3 mg sin dividir por el volumen.",
+          "fuente": "UNE-EN 872:2006"
+        },
+        {
+          "id": "t21-s01-q2",
+          "pregunta": "Según la UNE-EN 872, ¿en qué condiciones debe secarse el filtro antes de la pesada final?",
+          "opciones": [
+            "En estufa a 105 °C ± 2 °C, hasta masa constante",
+            "En mufla a 550 °C durante una hora",
+            "Al aire, en el propio cuarto de pesadas, durante 48 horas",
+            "En estufa a 180 °C, durante 30 minutos exactos"
+          ],
+          "correcta": 0,
+          "explicacion": "La norma fija el secado a 105 °C ± 2 °C y la pesada hasta masa constante. Los 550 °C corresponden a la calcinación, propia de la pérdida por calcinación (UNE-EN 12879), no de los sólidos en suspensión.",
+          "fuente": "UNE-EN 872:2006"
+        },
+        {
+          "id": "t21-s01-q3",
+          "pregunta": "El técnico saca el filtro de la estufa y lo lleva directamente a la balanza. ¿Qué consecuencia tiene y qué debería haber hecho?",
+          "opciones": [
+            "Ninguna, si la balanza está nivelada y con las puertas cerradas",
+            "La lectura sale menor de la real por convección; debía enfriarlo en desecador",
+            "La lectura sale mayor de la real por dilatación; debía esperar diez minutos al aire",
+            "La lectura sale menor de la real por electrostática; debía usar un ionizador"
+          ],
+          "correcta": 1,
+          "explicacion": "El aire caliente asciende alrededor del objeto y genera un empuje hacia arriba, así que pesa de menos. El enfriamiento se hace en desecador, que además evita que el filtro recupere humedad mientras se atempera.",
+          "fuente": "Bibliografía de química analítica"
+        },
+        {
+          "id": "t21-s01-q4",
+          "pregunta": "Sobre la situación metrológica de la balanza, ¿qué afirmación es correcta?",
+          "opciones": [
+            "Al no estar sujeta a control metrológico del Estado, no necesita ninguna comprobación externa",
+            "El certificado de calibración declara la balanza conforme, por lo que equivale a una verificación",
+            "Debería haberse verificado hace dos meses, porque la verificación periódica es cada dos años",
+            "El certificado da su error y su incertidumbre; que eso sea aceptable lo decide el laboratorio con su criterio de aceptación"
+          ],
+          "correcta": 3,
+          "explicacion": "La calibración cuantifica el error y la incertidumbre, pero no emite un juicio de conformidad: eso es la verificación. La periodicidad de dos años solo obliga a los instrumentos sujetos a control metrológico del Estado, que no es el caso; la trazabilidad, en cambio, sí la exige la acreditación.",
+          "fuente": "VIM (JCGM 200:2012), 2.39 y 2.44; Orden ICT/155/2020, anexo I"
+        },
+        {
+          "id": "t21-s01-q5",
+          "pregunta": "¿A qué clase de determinación gravimétrica pertenece este ensayo?",
+          "opciones": [
+            "Gravimetría por precipitación",
+            "Gravimetría por volatilización o desecación, en su variante indirecta",
+            "Gravimetría por extracción",
+            "Electrogravimetría"
+          ],
+          "correcta": 1,
+          "explicacion": "No se precipita nada: se retiene el sólido ya presente y se elimina el agua por secado, calculando el residuo por diferencia de masa. Se pesa lo que queda, no lo que se va, así que es indirecta.",
+          "fuente": "Bibliografía de química analítica"
+        }
+      ]
+    }
+  ]
+}
