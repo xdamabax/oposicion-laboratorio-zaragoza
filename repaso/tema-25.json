@@ -1,0 +1,809 @@
+{
+  "tema": 25,
+  "titulo": "Espectrofotometría de absorción molecular: Concepto. Leyes de absorción de la luz. Instrumentación visible-ultravioleta. Fuentes comunes de error. Utilización de la espectrofotometría molecular en análisis de agua.",
+  "generadoDe": "temas/tema-25.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-03",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "A diferencia del 23 y del 24, este tema SÍ tiene núcleo repetido documentado: la ley de Lambert-Beer aparece en 1233 #8 y en 1322 #11. El núcleo se construye alrededor de ella y en dos anillos. El primero es la ley misma y todo lo que cuelga directamente: A = ε·b·c con sus unidades, la relación logarítmica entre absorbancia y transmitancia, qué es la absortividad molar, la aditividad, el intervalo de trabajo y las tres clases de desviación. El segundo son las decisiones de trabajo que un examen puede plantear en una línea: cubeta de cuarzo para el ultravioleta, fuente de deuterio para el UV y de tungsteno para el visible, qué lleva el blanco, qué hacer si la absorbancia se sale del intervalo y por qué la turbidez da absorbancia por exceso. De los métodos concretos entran en el núcleo los dos mejor verificados (fósforo por azul de molibdeno y nitrito por sulfanilamida-NED) y el hecho legal de que el RD 3/2023 no impone método. Queda fuera del núcleo todo lo que el apunte declara como no citable: las longitudes de onda no contrastadas, el valor exacto del mínimo de error fotométrico y el umbral de concentración donde falla Beer.",
+  "flashcards": [
+    {
+      "id": "t25-f01",
+      "anverso": "¿Qué mide la espectrofotometría de absorción molecular y a qué se debe esa absorción?",
+      "reverso": "Mide **cuánta luz absorbe una disolución** a una longitud de onda dada, y de ahí deduce la **concentración** del analito.\nEn la región **ultravioleta-visible** la absorción se debe a **transiciones electrónicas**: un electrón de la molécula sube a un nivel de energía superior tomando del haz un fotón de la energía justa.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris)",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f02",
+      "anverso": "¿Qué intervalos de longitud de onda cubren el ultravioleta y el visible?",
+      "reverso": "**Ultravioleta** (el «UV próximo», que es el que se usa): **190 - 380 nm**.\n**Visible**: **380 - 780 nm**.\nUn espectrofotómetro UV-visible cubre las dos regiones y cambia de lámpara en torno a los 350 nm.",
+      "fuente": "Bibliografía; documentación técnica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t25-f03",
+      "anverso": "¿Por qué la absorción molecular da bandas anchas y la atómica da líneas estrechas?",
+      "reverso": "Porque la **molécula en disolución** tiene, además de niveles electrónicos, niveles **vibracionales y rotacionales**: hay muchísimas transiciones de energía muy parecida y el resultado es una **banda ancha**.\nEl **átomo libre** (tema 26) solo tiene niveles electrónicos: da **líneas estrechas**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t25-f04",
+      "anverso": "¿Por qué se mide siempre en la longitud de onda del máximo de absorción?",
+      "reverso": "Por **dos razones**:\n1. Es donde la **absortividad es mayor**, así que la **sensibilidad** es máxima.\n2. Es donde la curva es **más plana**, así que un pequeño error en la longitud de onda **apenas cambia la lectura**.\nAdemás, medir en el máximo reduce la desviación por radiación policromática, porque ε varía poco en esa zona.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f05",
+      "anverso": "¿Qué relación hay entre el color que se ve y el que se absorbe?",
+      "reverso": "**El color que vemos es el COMPLEMENTARIO del que se absorbe.** Una disolución que absorbe en el azul (≈ 435 nm) se ve **amarilla**.\nPor eso a los métodos del visible se les llama **colorimétricos**, y por eso al analito incoloro se le añade un **reactivo cromogénico**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t25-f06",
+      "anverso": "Define transmitancia y absorbancia, y di cómo se relacionan.",
+      "reverso": "**Transmitancia: T = I / I₀**, la fracción de luz que atraviesa la muestra (0 a 1, o 0 a 100 % en %T).\n**Absorbancia: A = − log T = log (I₀ / I)**, adimensional.\nSon **inversas**, y la relación es **LOGARÍTMICA**, no lineal:\nT = 10 % → **A = 1**\nT = 1 % → **A = 2**",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey); bibliografía",
+      "etiquetas": [
+        "beer"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "ley-beer"
+      }
+    },
+    {
+      "id": "t25-f07",
+      "anverso": "Enuncia la ley de Lambert-Beer con las unidades de cada término.",
+      "reverso": "**A = ε · b · c**\n**A** — absorbancia, **adimensional**\n**ε** — **absortividad molar**, en **L · mol⁻¹ · cm⁻¹**\n**b** — **camino óptico**, en **cm** (lo normal, 1 cm)\n**c** — concentración, en **mol/L**\nSi la concentración va en **g/L**, el coeficiente se llama solo **absortividad (a)**, en L·g⁻¹·cm⁻¹.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey); bibliografía",
+      "etiquetas": [
+        "beer",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f08",
+      "anverso": "¿Qué dice la ley de Lambert y qué dice la ley de Beer?",
+      "reverso": "**Ley de Lambert** (o de Bouguer): la absorbancia es proporcional al **ESPESOR** atravesado.\n**Ley de Beer**: la absorbancia es proporcional a la **CONCENTRACIÓN**.\nCombinadas dan la **ley de Lambert-Beer**, A = ε·b·c.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "beer"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f09",
+      "anverso": "La absortividad molar, ¿de qué depende y de qué no?",
+      "reverso": "**Depende** de la **especie química** y de la **longitud de onda**.\n**NO depende** de la concentración ni del camino óptico: es una **constante característica** de esa sustancia a esa λ.\nUna absortividad alta significa un método **sensible**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "beer"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f10",
+      "anverso": "¿Qué propiedad de la absorbancia permite analizar mezclas?",
+      "reverso": "**La absorbancia es ADITIVA**: en una mezcla, la absorbancia total es la **suma** de las de cada componente, siempre que no interaccionen entre sí.\nSobre eso se apoya el análisis de mezclas midiendo a **varias longitudes de onda** y resolviendo el sistema.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "etiquetas": [
+        "beer"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f11",
+      "anverso": "¿En qué intervalo de absorbancia conviene trabajar y por qué?",
+      "reverso": "Entre **A = 0,1 y A = 1**, aproximadamente.\nEl **error fotométrico relativo** pasa por un **mínimo hacia A ≈ 0,4** (transmitancia ≈ 37 %) y crece mucho tanto para absorbancias muy bajas como muy altas.\nSi la muestra sale por encima, **se diluye**; si sale por debajo, se concentra o se usa una cubeta de mayor camino óptico.",
+      "fuente": "Bibliografía de química analítica (ver duda 4 del apunte)",
+      "etiquetas": [
+        "beer",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f12",
+      "anverso": "¿Qué son las desviaciones REALES de la ley de Beer?",
+      "reverso": "Las que vienen de la **propia ley**, no del método ni del aparato.\nA **concentraciones altas** las partículas de analito **interaccionan** entre sí y cambia el **índice de refracción** de la disolución, que altera la absortividad.\n**Se evitan trabajando en disolución diluida**, es decir, **diluyendo**.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "etiquetas": [
+        "beer",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f13",
+      "anverso": "¿Qué son las desviaciones QUÍMICAS de la ley de Beer y cómo se controlan?",
+      "reverso": "Ocurren cuando el analito **se disocia, se asocia o reacciona con el disolvente**, de modo que la especie que absorbe **deja de ser la misma**. Son típicas de **ácidos y bases débiles** y de complejos.\n**Se controlan TAMPONANDO** patrones y muestras al mismo pH, para que el equilibrio esté igual desplazado en todos.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "etiquetas": [
+        "beer",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f14",
+      "anverso": "¿Cuáles son las desviaciones INSTRUMENTALES de la ley de Beer?",
+      "reverso": "**Radiación policromática:** el haz no es perfectamente monocromático; si ε varía dentro de esa banda, la absorbancia sale **menor** de la esperada. Se reduce con **rendija estrecha** y midiendo en el **máximo** del pico, donde ε varía poco.\n**Luz parásita:** radiación que llega al detector **sin pasar por la muestra**. Provoca desviación **negativa**, sobre todo a **absorbancias altas**.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "etiquetas": [
+        "beer",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f15",
+      "anverso": "¿Qué muestra esta gráfica y en qué sentido se desvía la curva real?",
+      "reverso": "La **recta de calibrado** frente a la realidad.\nA **baja concentración** la curva real **coincide** con la recta ideal A = ε·b·c: ése es el **intervalo lineal de trabajo**.\nAl subir la concentración se **separa hacia ABAJO**: las desviaciones de Beer son casi siempre **NEGATIVAS**, la absorbancia medida es **menor** que la esperada.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "beer",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "desviacion-beer"
+      }
+    },
+    {
+      "id": "t25-f16",
+      "anverso": "Nombra las cinco etapas por las que pasa la luz en un espectrofotómetro.",
+      "reverso": "**Fuente → Selector de longitud de onda (monocromador) → Muestra (cubeta) → Detector → Lectura.**\nEs siempre el mismo camino, cambie lo que cambie el modelo.",
+      "fuente": "Bibliografía; documentación técnica",
+      "etiquetas": [
+        "instrumentacion",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "espectrofotometro"
+      }
+    },
+    {
+      "id": "t25-f17",
+      "anverso": "¿Qué lámparas lleva un espectrofotómetro UV-visible y qué región cubre cada una?",
+      "reverso": "**Lámpara de DEUTERIO (D₂)** → **ultravioleta**, ≈ **190 - 380 nm**.\n**Lámpara de TUNGSTENO** o tungsteno-halógena (W) → **visible e infrarrojo próximo**, ≈ **320 - 1 100 nm**.\nEl equipo lleva **las dos** y conmuta en torno a los 350 nm. En equipos compactos y de campo se usa también la **lámpara de xenón** pulsada.",
+      "fuente": "Documentación técnica de fabricante",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f18",
+      "anverso": "¿En qué se diferencia un fotómetro de un espectrofotómetro?",
+      "reverso": "**Fotómetro (o colorímetro):** selecciona la longitud de onda con un **FILTRO**. Banda ancha y solo unas pocas λ fijas. Barato y robusto: es el típico equipo de campo.\n**Espectrofotómetro:** la selecciona con un **MONOCROMADOR**. Cualquier λ, banda estrecha, y permite **barrer el espectro**.",
+      "fuente": "Bibliografía; documentación técnica",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f19",
+      "anverso": "¿De qué partes consta un monocromador y qué efecto tiene la anchura de la rendija?",
+      "reverso": "**Rendija de entrada + elemento dispersante + rendija de salida.** El elemento dispersante es hoy casi siempre una **red de difracción** (antes, un prisma).\nDe todo el abanico que sale del elemento dispersante, **solo pasa lo que deja pasar la rendija de salida**.\n**Rendija estrecha:** banda espectral estrecha, mejor cumplimiento de Beer, pero **menos luz y más ruido**. Rendija ancha, al revés.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f20",
+      "anverso": "¿De qué material debe ser la cubeta según la región en que se mida?",
+      "reverso": "**Plástico → solo visible.**\n**Vidrio → solo visible**, porque **el vidrio absorbe el ultravioleta**.\n**CUARZO (sílice fundida) → ultravioleta y visible.** Es **obligatorio por debajo de ≈ 340 nm**.\nSi el método mide en el UV —por ejemplo, nitrato a 220 nm— **hay que usar cuarzo**.",
+      "fuente": "Bibliografía; documentación técnica",
+      "etiquetas": [
+        "instrumentacion",
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f21",
+      "anverso": "¿Cómo se manipula una cubeta y cuál es su camino óptico habitual?",
+      "reverso": "La cubeta tiene **dos caras ópticas pulidas** —las que atraviesa el haz— y **dos esmeriladas**.\n**Se sujeta por las esmeriladas**: las ópticas no se tocan con los dedos.\nEl **camino óptico habitual es 1 cm**. Se coloca **siempre en la misma orientación** (muchas llevan una marca) y, si se comparan, deben ser **cubetas emparejadas**.",
+      "fuente": "Documentación técnica; práctica de laboratorio",
+      "etiquetas": [
+        "instrumentacion",
+        "errores"
+      ]
+    },
+    {
+      "id": "t25-f22",
+      "anverso": "¿Qué detectores se usan en UV-visible?",
+      "reverso": "**Fototubo**, **fotomultiplicador** (muy sensible, el clásico), **fotodiodo de silicio** y **agrupación o array de fotodiodos**.",
+      "fuente": "Bibliografía; documentación técnica",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f23",
+      "anverso": "Haz simple frente a doble haz: ¿qué gana el doble haz?",
+      "reverso": "**Haz simple:** un solo camino óptico; primero se mide el **blanco** y después la muestra. Es el más barato, pero es sensible a la **deriva** de la lámpara entre las dos medidas.\n**Doble haz:** el haz se divide entre **muestra y referencia** y se comparan continuamente. **Compensa la deriva** de la fuente y del detector, y permite **barrer el espectro** cómodamente.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f24",
+      "anverso": "¿Qué tiene de particular un espectrofotómetro de array de diodos?",
+      "reverso": "**Que la dispersión ocurre DESPUÉS de la muestra**, al revés que en los demás: la cubeta se ilumina con **luz policromática** y solo después se dispersa sobre la agrupación de diodos, donde **cada diodo recoge una longitud de onda**.\nAsí registra **todo el espectro a la vez**, en menos de un segundo.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f25",
+      "anverso": "¿Qué debe llevar el blanco de una determinación espectrofotométrica?",
+      "reverso": "**Todos los reactivos del método MENOS el analito**, y en la misma matriz.\nAsí se descuenta el color propio de los reactivos y del disolvente, y lo que queda es la absorbancia del analito.\nSi la muestra tiene **color o turbidez propios**, hace falta además un **blanco de la propia muestra**.",
+      "fuente": "Práctica normalizada; bibliografía",
+      "etiquetas": [
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f26",
+      "anverso": "¿Qué error introduce una muestra turbia y cómo se corrige?",
+      "reverso": "La **turbidez DISPERSA la luz**, y el detector no distingue la luz dispersada de la absorbida: la absorbancia sale **POR EXCESO** y el resultado, alto.\nSe corrige **filtrando o centrifugando** la muestra antes de medir, o midiendo frente a un blanco de la propia muestra.",
+      "fuente": "Práctica normalizada; bibliografía",
+      "etiquetas": [
+        "errores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f27",
+      "anverso": "Una muestra da una absorbancia de 1,6, fuera del intervalo lineal. ¿Qué se hace?",
+      "reverso": "**Diluir la muestra y volver a medir**, aplicando después el factor de dilución.\n**Nunca extrapolar la recta de calibrado** más allá de su último patrón: justo ahí es donde la ley de Beer se desvía, y siempre hacia abajo.",
+      "fuente": "Práctica normalizada; bibliografía",
+      "etiquetas": [
+        "errores",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f28",
+      "anverso": "Errores de cubeta más comunes.",
+      "reverso": "- **Sucia, rayada o con huellas**: dispersa y absorbe lo que no es de la muestra.\n- **Mal orientada**, o **cubetas no emparejadas**: cada una tiene su pequeño error propio.\n- **Burbujas o partículas** en el haz.\nSe evitan limpiándola, sujetándola por las **caras esmeriladas**, enjuagándola con la propia disolución y colocándola **siempre igual**.",
+      "fuente": "Práctica normalizada",
+      "etiquetas": [
+        "errores"
+      ]
+    },
+    {
+      "id": "t25-f29",
+      "anverso": "¿Con qué se verifica la escala de longitudes de onda y la escala fotométrica de un espectrofotómetro?",
+      "reverso": "**Longitud de onda:** filtro o disolución de **óxido de HOLMIO** (bandas entre ≈ 240 y 650 nm) y filtro de **DIDIMIO** (≈ 380 a 900 nm).\n**Escala fotométrica (absorbancia):** **filtros de densidad óptica neutra** certificados; clásicamente, disoluciones de **dicromato potásico**.\nSe comprueban además la **luz parásita** (con disoluciones de corte) y la **línea base y el ruido**.",
+      "fuente": "Guías de laboratorios de calibración; guía del INM de Colombia (ver duda 6)",
+      "etiquetas": [
+        "errores",
+        "calibracion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f30",
+      "anverso": "¿Por qué hay que respetar el tiempo de desarrollo del color?",
+      "reverso": "Porque muchas reacciones cromogénicas **necesitan un tiempo** para completarse y el color, después, **se degrada**.\nSi patrones y muestras no esperan **lo mismo**, la recta de calibrado y la muestra no son comparables. El método fija ese tiempo y hay que cumplirlo **en todas por igual**.",
+      "fuente": "Práctica normalizada",
+      "etiquetas": [
+        "errores"
+      ]
+    },
+    {
+      "id": "t25-f31",
+      "anverso": "¿Qué se le pide a un reactivo cromogénico?",
+      "reverso": "Que la reacción con el analito sea **selectiva**, **estequiométrica** y **rápida**, y que el producto formado:\n- Tenga una **absortividad alta** (método sensible).\n- Sea **estable** el tiempo suficiente para medirlo.\nCasi ningún ion de interés absorbe por sí mismo en el visible: de ahí que se le añada un reactivo que forme un compuesto coloreado.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "agua"
+      ]
+    },
+    {
+      "id": "t25-f32",
+      "anverso": "¿Cuál es el procedimiento tipo de un método espectrofotométrico normalizado?",
+      "reverso": "1. Alícuota y, si procede, **filtración** o **digestión** previa.\n2. **Reactivos** en el orden y al pH que fije el método.\n3. **Tiempo de desarrollo del color**, el mismo para patrones y muestras.\n4. Medida frente al **blanco de reactivos**, a la λ del método.\n5. Interpolación en la **recta de calibrado**, construida con patrones tratados **igual** que las muestras.",
+      "fuente": "Métodos normalizados de análisis de agua",
+      "etiquetas": [
+        "agua"
+      ]
+    },
+    {
+      "id": "t25-f33",
+      "anverso": "¿Cómo se determina el fósforo en agua por espectrofotometría?",
+      "reverso": "Por el método del **AZUL DE MOLIBDENO**, norma **UNE-EN ISO 6878:2005**.\nSe forma un complejo de **antimonio-fosfomolibdato** que se **reduce con ácido ascórbico** a un complejo azul, y se mide a **880 nm** (o a 700 nm, menos sensible).\nCampo: **0,005 a 0,8 mg/L de P** sin dilución. El **fósforo total** exige **digestión previa**.",
+      "fuente": "UNE-EN ISO 6878:2005",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f34",
+      "anverso": "¿Cómo se determina el nitrito en agua por espectrofotometría?",
+      "reverso": "Por formación de un **colorante AZOICO**, norma **UNE-EN 26777:1994** (ISO 6777:1984).\nEl nitrito reacciona con **sulfanilamida** y con **NED** (N-(1-naftil)-1,2-diaminoetano) en medio ácido (pH ≈ 1,9) y da un color **rosa** que se mide en torno a **540 nm**.\nAplicable a aguas potables, brutas y residuales.",
+      "fuente": "UNE-EN 26777:1994",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f35",
+      "anverso": "¿Cómo se determina el cloro libre y el cloro total, y qué norma lo recoge?",
+      "reverso": "Por el método del **DPD** (N,N-dialquil-1,4-fenilendiamina), norma **UNE-EN ISO 7393-2:2019**, que **anula y sustituye a la de 2000**.\nEl DPD da un color **rojo** que se mide en fotómetro o se compara con una escala visual.\nSe mide primero el **cloro libre**; el **total**, tras añadir yoduro.\n**Se hace in situ y de inmediato**: el cloro se pierde en el transporte.",
+      "fuente": "UNE-EN ISO 7393-2:2019",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f36",
+      "anverso": "Reactivo cromogénico de: amonio, hierro, cromo(VI) y detergentes aniónicos.",
+      "reverso": "**Amonio → azul de INDOFENOL** (fenol + hipoclorito, catalizado por nitroprusiato). Color lento, del orden de una hora.\n**Hierro → 1,10-FENANTROLINA**: se reduce a Fe(II) y da un complejo rojo-anaranjado.\n**Cromo(VI) → DIFENILCARBAZIDA**: color violeta en medio ácido.\n**Detergentes aniónicos → AZUL DE METILENO**: par iónico que se extrae con cloroformo.",
+      "fuente": "ISO 7150-1; ISO 6332; UNE-EN 903; método clásico (ver dudas 2 y 3)",
+      "etiquetas": [
+        "agua"
+      ]
+    },
+    {
+      "id": "t25-f37",
+      "anverso": "¿Qué parámetro de agua se mide sin reactivo, directamente en el ultravioleta?",
+      "reverso": "El **NITRATO**, que absorbe hacia **220 nm**.\nSe corrige la interferencia de la **materia orgánica** con una segunda lectura en torno a **275 nm**.\n**Exige cubeta de CUARZO**, porque el vidrio no deja pasar el ultravioleta.",
+      "fuente": "Método clásico de análisis de aguas",
+      "etiquetas": [
+        "agua",
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t25-f38",
+      "anverso": "¿Qué norma regula el color del agua y qué distingue el color verdadero del aparente?",
+      "reverso": "**UNE-EN ISO 7887:2012** (ISO 7887:2011), que describe **cuatro métodos, A a D**.\n**Color verdadero:** se mide **tras filtrar** la muestra; es el debido a las sustancias **disueltas**.\n**Color aparente:** se mide **sin filtrar**; incluye el efecto de la materia **en suspensión**.",
+      "fuente": "UNE-EN ISO 7887:2012",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ]
+    },
+    {
+      "id": "t25-f39",
+      "anverso": "¿Impone el RD 3/2023 un método de análisis para los parámetros físico-químicos?",
+      "reverso": "**NO.** Para los parámetros físico-químicos el Real Decreto **no impone método**: exige **criterios de rendimiento**.\nEl método utilizado debe poder medir el valor paramétrico con un **límite de cuantificación ≤ 30 %** de ese valor y con la **incertidumbre** de la **tabla 15** del anexo III.\nConsecuencia: decir «el método oficial del nitrito es la UNE-EN 26777» es **inexacto**. La norma UNE es la forma habitual de **cumplir** el criterio, no una obligación en sí.",
+      "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D, punto 1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t25-f40",
+      "anverso": "Resume en una línea las tres clases de desviación de la ley de Beer y hacia dónde tiran.",
+      "reverso": "**Reales, químicas e instrumentales**, y **las tres tiran de la curva HACIA ABAJO**: la absorbancia medida es **menor** que la esperada.\n**Reales** → diluir. **Químicas** → tamponar. **Instrumentales** (radiación policromática y luz parásita) → rendija estrecha, medir en λmáx y equipo en buen estado.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey); bibliografía",
+      "etiquetas": [
+        "beer",
+        "errores"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t25-q01",
+      "pregunta": "En la ley de Lambert-Beer, A = ε·b·c, el término ε representa:",
+      "opciones": [
+        "El camino óptico de la cubeta, en centímetros",
+        "La absortividad molar, característica de la especie y de la longitud de onda",
+        "La transmitancia de la disolución"
+      ],
+      "correcta": 1,
+      "explicacion": "La absortividad molar se expresa en L·mol⁻¹·cm⁻¹ y depende de la especie química y de la longitud de onda, no de la concentración. El camino óptico es b y la transmitancia es otra magnitud, T = I/I₀.",
+      "fuente": "Ley de Lambert-Beer",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q02",
+      "pregunta": "Una disolución cuya transmitancia es del 10 % tiene una absorbancia de:",
+      "opciones": [
+        "0,1",
+        "0,9",
+        "1"
+      ],
+      "correcta": 2,
+      "explicacion": "A = −log T = −log 0,10 = 1. La relación es logarítmica: al 1 % de transmitancia le corresponde A = 2.",
+      "fuente": "A = −log T",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q03",
+      "pregunta": "La ley de Lambert establece que la absorbancia es proporcional a:",
+      "opciones": [
+        "El espesor de disolución atravesado",
+        "La concentración del analito",
+        "La longitud de onda del haz"
+      ],
+      "correcta": 0,
+      "explicacion": "La de Lambert (o Bouguer) se refiere al espesor y la de Beer a la concentración. Combinadas dan la ley de Lambert-Beer.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t25-q04",
+      "pregunta": "Las unidades de la absortividad molar son:",
+      "opciones": [
+        "L·mol⁻¹·cm⁻¹",
+        "mol·L⁻¹·cm⁻¹",
+        "Es adimensional, como la absorbancia"
+      ],
+      "correcta": 0,
+      "explicacion": "Como A es adimensional y A = ε·b·c, las unidades de ε tienen que cancelar las de b (cm) y las de c (mol/L): resultan L·mol⁻¹·cm⁻¹.",
+      "fuente": "Ley de Lambert-Beer"
+    },
+    {
+      "id": "t25-q05",
+      "pregunta": "En una mezcla de dos especies que no interaccionan entre sí, la absorbancia total a una longitud de onda dada es:",
+      "opciones": [
+        "La de la especie más concentrada",
+        "La media de las dos absorbancias",
+        "La suma de las absorbancias de cada especie"
+      ],
+      "correcta": 2,
+      "explicacion": "La absorbancia es aditiva. Sobre esa propiedad se apoya el análisis de mezclas midiendo a varias longitudes de onda.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)"
+    },
+    {
+      "id": "t25-q06",
+      "pregunta": "Las medidas se hacen en la longitud de onda del máximo de absorción porque:",
+      "opciones": [
+        "Es la única longitud de onda en la que se cumple la ley de Beer",
+        "Allí la sensibilidad es máxima y la curva es más plana, así que un pequeño error en λ apenas afecta",
+        "Es la longitud de onda a la que emite la lámpara de deuterio"
+      ],
+      "correcta": 1,
+      "explicacion": "En el máximo la absortividad es la mayor posible y, por ser un extremo, la absorbancia varía poco con la longitud de onda. Además reduce la desviación por radiación policromática.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q07",
+      "pregunta": "La luz parásita en un espectrofotómetro es:",
+      "opciones": [
+        "Radiación que llega al detector sin pasar por la muestra, y provoca desviación negativa a absorbancias altas",
+        "La luz ambiental que entra al abrir el compartimento de muestras, sin efecto sobre la medida",
+        "La fracción de luz absorbida por la cubeta de cuarzo"
+      ],
+      "correcta": 0,
+      "explicacion": "Procede de imperfecciones del selector de longitud de onda y de la radiación difusa del instrumento. Es una de las dos desviaciones instrumentales de la ley de Beer, junto con la radiación policromática.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q08",
+      "pregunta": "Las desviaciones químicas de la ley de Beer se controlan principalmente:",
+      "opciones": [
+        "Estrechando la rendija del monocromador",
+        "Cambiando la cubeta de vidrio por una de cuarzo",
+        "Tamponando patrones y muestras al mismo pH"
+      ],
+      "correcta": 2,
+      "explicacion": "Aparecen cuando el analito se disocia, se asocia o reacciona con el disolvente y la especie que absorbe cambia. Fijando el pH, el equilibrio queda igual desplazado en patrones y muestras. La rendija corrige la desviación instrumental, no la química.",
+      "fuente": "LibreTexts, Análisis Instrumental (Harvey)",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q09",
+      "pregunta": "Una muestra da una absorbancia de 1,6, por encima del último patrón de la recta de calibrado. Lo correcto es:",
+      "opciones": [
+        "Extrapolar la recta de calibrado hasta ese valor",
+        "Diluir la muestra, volver a medir y aplicar el factor de dilución",
+        "Aumentar el camino óptico usando una cubeta de 5 cm"
+      ],
+      "correcta": 1,
+      "explicacion": "Por encima del intervalo lineal la ley de Beer se desvía, y siempre hacia abajo, así que extrapolar da un resultado bajo. Aumentar el camino óptico agravaría el problema: subiría todavía más la absorbancia.",
+      "fuente": "Práctica normalizada",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q10",
+      "pregunta": "La fuente de radiación de la región ultravioleta en un espectrofotómetro es la lámpara de:",
+      "opciones": [
+        "Tungsteno",
+        "Deuterio",
+        "Cátodo hueco"
+      ],
+      "correcta": 1,
+      "explicacion": "La de deuterio cubre aproximadamente de 190 a 380 nm; la de tungsteno es la del visible e infrarrojo próximo. La lámpara de cátodo hueco es de absorción atómica (tema 26).",
+      "fuente": "Documentación técnica",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q11",
+      "pregunta": "Para medir nitrato por absorción directa a 220 nm hay que emplear una cubeta de:",
+      "opciones": [
+        "Vidrio óptico",
+        "Plástico de un solo uso",
+        "Cuarzo"
+      ],
+      "correcta": 2,
+      "explicacion": "El vidrio y el plástico absorben el ultravioleta, así que solo sirven en el visible. Por debajo de unos 340 nm la cubeta debe ser de cuarzo.",
+      "fuente": "Documentación técnica; práctica normalizada",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q12",
+      "pregunta": "La diferencia entre un fotómetro y un espectrofotómetro está en que el fotómetro:",
+      "opciones": [
+        "Selecciona la longitud de onda con un filtro, no con un monocromador",
+        "No necesita cubeta porque mide directamente sobre la muestra",
+        "Mide transmitancia y el espectrofotómetro mide absorbancia"
+      ],
+      "correcta": 0,
+      "explicacion": "El filtro da una banda ancha y solo unas pocas longitudes de onda fijas, lo que hace al fotómetro barato y robusto: es el típico equipo de campo. El espectrofotómetro, con monocromador, permite cualquier λ y barrer el espectro. Los dos usan cubeta y los dos dan absorbancia.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q13",
+      "pregunta": "La ventaja principal de un espectrofotómetro de doble haz frente a uno de haz simple es que:",
+      "opciones": [
+        "Permite medir sin preparar blanco",
+        "Alcanza longitudes de onda menores de 190 nm",
+        "Compensa la deriva de la fuente y del detector"
+      ],
+      "correcta": 2,
+      "explicacion": "Al comparar continuamente muestra y referencia, las variaciones de la lámpara y del detector afectan por igual a ambos caminos y se cancelan. El blanco sigue haciendo falta.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t25-q14",
+      "pregunta": "En un espectrofotómetro de array de diodos, a diferencia de los demás:",
+      "opciones": [
+        "La dispersión de la luz ocurre después de la muestra",
+        "No hay detector, la señal se lee directamente de la cubeta",
+        "La muestra se ilumina con una sola longitud de onda cada vez"
+      ],
+      "correcta": 0,
+      "explicacion": "La cubeta recibe luz policromática y solo después se dispersa sobre la agrupación de diodos, donde cada diodo recoge una longitud de onda. Así se registra todo el espectro a la vez, en menos de un segundo.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t25-q15",
+      "pregunta": "El elemento dispersante de un monocromador moderno es, habitualmente:",
+      "opciones": [
+        "Un prisma de cuarzo",
+        "Un filtro de interferencia",
+        "Una red de difracción"
+      ],
+      "correcta": 2,
+      "explicacion": "El prisma fue el elemento clásico y el filtro es lo que usa un fotómetro. En un monocromador actual el elemento dispersante es una red de difracción, entre las rendijas de entrada y de salida.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t25-q16",
+      "pregunta": "El blanco de una determinación espectrofotométrica debe contener:",
+      "opciones": [
+        "Solo agua destilada",
+        "La muestra sin los reactivos cromogénicos",
+        "Todos los reactivos del método menos el analito"
+      ],
+      "correcta": 2,
+      "explicacion": "Así se descuenta el color propio de los reactivos y del disolvente. Si la muestra tiene color o turbidez propios, hace falta además un blanco de la propia muestra.",
+      "fuente": "Práctica normalizada",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q17",
+      "pregunta": "Si se mide la absorbancia de una muestra turbia sin filtrarla previamente, el resultado saldrá:",
+      "opciones": [
+        "Por exceso, porque la turbidez dispersa la luz y el detector lo lee como absorción",
+        "Por defecto, porque las partículas reflejan la luz hacia el detector",
+        "Igual, porque el instrumento descuenta la dispersión automáticamente"
+      ],
+      "correcta": 0,
+      "explicacion": "El detector solo ve que le llega menos luz, y no distingue si es porque se ha absorbido o porque se ha dispersado. Hay que filtrar o centrifugar antes de medir.",
+      "fuente": "Práctica normalizada",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q18",
+      "pregunta": "Para verificar la escala de longitudes de onda de un espectrofotómetro UV-visible se emplea habitualmente:",
+      "opciones": [
+        "Una disolución de dicromato potásico",
+        "Un filtro o disolución de óxido de holmio",
+        "Un filtro de densidad óptica neutra"
+      ],
+      "correcta": 1,
+      "explicacion": "El holmio presenta muchas bandas estrechas y bien conocidas entre unos 240 y 650 nm, y el didimio cubre la región visible-infrarroja próxima. El dicromato y los filtros de densidad neutra sirven para la escala fotométrica, es decir, la de absorbancia.",
+      "fuente": "Guías de laboratorios de calibración (ver duda 6 del apunte)"
+    },
+    {
+      "id": "t25-q19",
+      "pregunta": "El fósforo en agua se determina por espectrofotometría mediante el método del:",
+      "opciones": [
+        "Azul de molibdeno, según la UNE-EN ISO 6878",
+        "Azul de indofenol, según la UNE-EN ISO 6878",
+        "Azul de metileno, según la UNE-EN 903"
+      ],
+      "correcta": 0,
+      "explicacion": "Se forma un complejo de antimonio-fosfomolibdato que se reduce con ácido ascórbico y se mide a 880 nm. El azul de indofenol es el del amonio y el azul de metileno el de los detergentes aniónicos.",
+      "fuente": "UNE-EN ISO 6878:2005",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q20",
+      "pregunta": "El nitrito se determina espectrofotométricamente formando un colorante azoico con:",
+      "opciones": [
+        "1,10-fenantrolina y ácido ascórbico",
+        "Difenilcarbazida en medio ácido",
+        "Sulfanilamida y NED en medio ácido"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el método de la UNE-EN 26777. El color rosa se mide en torno a 540 nm. La fenantrolina es el reactivo del hierro y la difenilcarbazida el del cromo(VI).",
+      "fuente": "UNE-EN 26777:1994"
+    },
+    {
+      "id": "t25-q21",
+      "pregunta": "Respecto a la determinación de cloro libre con DPD, es cierto que:",
+      "opciones": [
+        "Debe hacerse in situ y de inmediato, porque el cloro se pierde",
+        "La muestra puede conservarse 48 horas a 4 °C antes de medirla",
+        "Requiere obligatoriamente cubeta de cuarzo"
+      ],
+      "correcta": 0,
+      "explicacion": "El cloro residual es inestable y se pierde en el transporte y el almacenamiento, así que la medida se hace en el punto de muestreo. El DPD da color rojo, que se mide en el visible: no hace falta cuarzo.",
+      "fuente": "UNE-EN ISO 7393-2:2019"
+    },
+    {
+      "id": "t25-q22",
+      "pregunta": "La determinación de nitrato por absorción directa en el ultravioleta se realiza midiendo a 220 nm y corrigiendo a 275 nm porque:",
+      "opciones": [
+        "A 275 nm absorbe el nitrito, que hay que descontar",
+        "A 275 nm absorbe la materia orgánica, que interfiere en la lectura de 220 nm",
+        "Es necesario promediar las dos lecturas para obtener el resultado"
+      ],
+      "correcta": 1,
+      "explicacion": "El nitrato absorbe a 220 nm, pero también lo hace la materia orgánica disuelta; como ésta absorbe además a 275 nm y el nitrato no, la segunda lectura permite descontar su contribución.",
+      "fuente": "Método clásico de análisis de aguas"
+    },
+    {
+      "id": "t25-q23",
+      "pregunta": "Los espectros de absorción molecular en disolución están formados por bandas anchas, y no por líneas estrechas, porque:",
+      "opciones": [
+        "El monocromador no tiene resolución suficiente para separarlas",
+        "La molécula tiene además niveles vibracionales y rotacionales, con muchas transiciones de energía parecida",
+        "La lámpara de deuterio emite un espectro continuo"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una propiedad de la molécula, no una limitación del aparato. El átomo libre, que solo tiene niveles electrónicos, da líneas estrechas: es la diferencia con la absorción atómica del tema 26.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t25-q24",
+      "pregunta": "Respecto a los métodos de análisis de los parámetros físico-químicos del agua de consumo, el Real Decreto 3/2023:",
+      "opciones": [
+        "Impone la norma UNE correspondiente a cada parámetro",
+        "No impone método: exige criterios de rendimiento, de límite de cuantificación e incertidumbre",
+        "Remite en todos los casos a los métodos de la Organización Mundial de la Salud"
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo III, parte D, exige que el método sea capaz de medir el valor paramétrico con un límite de cuantificación igual o inferior al 30 % de ese valor y con la incertidumbre de la tabla 15. La norma UNE es la forma habitual de cumplirlo, no una obligación en sí.",
+      "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t25-s01",
+      "titulo": "Supuesto 1. Determinación de fósforo en un agua por espectrofotometría",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza se determina el **fósforo** de un agua por el método normalizado del **azul de molibdeno**, según la **UNE-EN ISO 6878**.\n\nEl campo de aplicación del método llega hasta **0,8 mg/L de P**, y por el histórico se espera que la muestra esté **por encima**. Por eso se toman **10,0 mL de muestra y se llevan a 50,0 mL** con agua antes de aplicar los reactivos.\n\nCon los patrones, tratados igual que la muestra, se obtiene la recta de calibrado:\n\n> **A = 0,750 · c + 0,002**  (con **c** en mg/L de P)\n\nLa muestra diluida, medida frente al blanco de reactivos, da una absorbancia de **A = 0,452**.\n\nResponda a las siguientes preguntas.",
+      "figura": {
+        "tipo": "esquema",
+        "valor": "desviacion-beer"
+      },
+      "preguntas": [
+        {
+          "id": "t25-s01-q1",
+          "pregunta": "¿Qué concentración de fósforo tiene la disolución medida en la cubeta?",
+          "opciones": [
+            "0,339 mg/L",
+            "0,600 mg/L",
+            "0,603 mg/L",
+            "1,67 mg/L"
+          ],
+          "correcta": 1,
+          "explicacion": "Se despeja de la recta: c = (A − 0,002) / 0,750 = (0,452 − 0,002) / 0,750 = 0,450 / 0,750 = 0,600 mg/L. Los 0,603 mg/L salen de olvidar la ordenada en el origen; los 0,339 de multiplicar por la pendiente en vez de dividir.",
+          "fuente": "Ley de Lambert-Beer; recta de calibrado"
+        },
+        {
+          "id": "t25-s01-q2",
+          "pregunta": "¿Y cuál es la concentración de fósforo de la muestra original?",
+          "opciones": [
+            "0,120 mg/L",
+            "0,600 mg/L",
+            "3,00 mg/L",
+            "15,0 mg/L"
+          ],
+          "correcta": 2,
+          "explicacion": "La dilución fue de 10,0 mL a 50,0 mL, es decir, un factor de 5. La concentración de la cubeta se multiplica por ese factor: 0,600 × 5 = 3,00 mg/L. Quedarse en 0,600 es olvidar la dilución, y 0,120 sale de dividir en vez de multiplicar.",
+          "fuente": "Factor de dilución"
+        },
+        {
+          "id": "t25-s01-q3",
+          "pregunta": "¿Por qué se diluyó la muestra antes de medirla, en vez de medirla directamente y extrapolar la recta?",
+          "opciones": [
+            "Porque el reactivo de molibdato no reacciona a concentraciones altas de fósforo",
+            "Porque fuera del intervalo lineal la ley de Beer se desvía, y siempre por debajo: extrapolar daría un resultado bajo",
+            "Porque la cubeta de 1 cm no admite absorbancias mayores de 0,5",
+            "Porque la norma obliga a diluir todas las muestras al menos 1:5"
+          ],
+          "correcta": 1,
+          "explicacion": "Por encima del intervalo lineal las desviaciones de la ley de Beer son negativas: la absorbancia medida es menor que la que corresponde a esa concentración. Extrapolar la recta daría un resultado por defecto. La solución es diluir hasta entrar en el intervalo y aplicar el factor.",
+          "fuente": "Desviaciones de la ley de Beer"
+        },
+        {
+          "id": "t25-s01-q4",
+          "pregunta": "La muestra llega al laboratorio ligeramente turbia. Si se mide sin filtrar, ¿qué ocurre?",
+          "opciones": [
+            "El resultado sale por defecto, porque las partículas reflejan luz hacia el detector",
+            "No afecta, porque el blanco de reactivos ya descuenta la turbidez",
+            "No afecta, porque a 880 nm la turbidez no interfiere",
+            "El resultado sale por exceso, porque la turbidez dispersa la luz y el detector lo lee como absorción"
+          ],
+          "correcta": 3,
+          "explicacion": "El detector solo percibe que le llega menos luz, sin distinguir si se ha absorbido o dispersado. Hay que filtrar o centrifugar la muestra antes de medir, o bien medir frente a un blanco preparado con la propia muestra. El blanco de reactivos no lleva la muestra, así que no descuenta su turbidez.",
+          "fuente": "Fuentes comunes de error en espectrofotometría"
+        },
+        {
+          "id": "t25-s01-q5",
+          "pregunta": "Un inspector pregunta si el laboratorio está obligado a usar la UNE-EN ISO 6878. ¿Qué exige realmente el RD 3/2023?",
+          "opciones": [
+            "Sí: el anexo III impone la norma UNE de cada parámetro físico-químico",
+            "Sí, salvo que el laboratorio esté acreditado por ISO 17025",
+            "No impone método: exige que el que se use mida el valor paramétrico con un límite de cuantificación ≤ 30 % de ese valor y con la incertidumbre de la tabla 15",
+            "No impone nada sobre los métodos físico-químicos: solo sobre los microbiológicos"
+          ],
+          "correcta": 2,
+          "explicacion": "Para los parámetros físico-químicos el Real Decreto fija criterios de rendimiento, no métodos. La norma UNE es la forma habitual de cumplirlos, pero cualquier método que los cumpla es válido. Sí impone métodos concretos, en cambio, para los parámetros microbiológicos (anexo III, parte C).",
+          "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, partes C y D"
+        }
+      ]
+    }
+  ]
+}
