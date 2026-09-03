@@ -708,8 +708,10 @@ button.item {
 }
 
 /* Los esquemas van a tamano grande: una sola columna ancha por fila. */
+/* La columna ha de caber el lienzo mas ancho (hoy, 490 px del
+   espectrofotometro): en el catalogo los esquemas se revisan a tamano natural. */
 .galeria-esquemas {
-  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
 }
 
 .ghs-alcance {
