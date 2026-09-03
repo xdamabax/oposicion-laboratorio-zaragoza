@@ -17,6 +17,9 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'derivadas-valoracion': 'Primera y segunda derivada de la curva',
   'celda-conductividad': 'Célula de conductividad y constante de célula',
   'sonda-oxigeno': 'Sonda de oxígeno disuelto de membrana',
+  espectrofotometro: 'Espectrofotómetro UV-visible de haz simple',
+  'ley-beer': 'Ley de Lambert-Beer: absorción en la cubeta',
+  'desviacion-beer': 'Recta de calibrado y desviación de la ley de Beer',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -28,6 +31,9 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'derivadas-valoracion': { ancho: 260, alto: 250 },
   'celda-conductividad': { ancho: 430, alto: 210 },
   'sonda-oxigeno': { ancho: 400, alto: 285 },
+  espectrofotometro: { ancho: 490, alto: 205 },
+  'ley-beer': { ancho: 400, alto: 185 },
+  'desviacion-beer': { ancho: 310, alto: 215 },
 }
 
 const AZUL = '#9ecbe8'
@@ -507,6 +513,188 @@ function SondaOxigeno() {
   )
 }
 
+function Espectrofotometro() {
+  const Y = 115
+  const rendija = (x: number) => (
+    <g stroke="currentColor" strokeWidth="3" key={x}>
+      <line x1={x} y1={Y - 23} x2={x} y2={Y - 8} />
+      <line x1={x} y1={Y + 8} x2={x} y2={Y + 23} />
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* fuente */}
+      <rect x="14" y="96" width="46" height="38" rx="4" {...trazo} />
+      <path d="M26 115 h22 M30 106 v18 M42 106 v18" stroke="currentColor" strokeWidth="1.4" fill="none" />
+      <line x1="60" y1={Y} x2="96" y2={Y} stroke="currentColor" strokeWidth="2" />
+
+      {rendija(96)}
+      <line x1="96" y1={Y} x2="140" y2={Y} stroke="currentColor" strokeWidth="2" />
+
+      {/* monocromador: la red de difraccion dispersa el haz */}
+      <rect x="140" y="86" width="22" height="58" {...trazo} />
+      <g stroke="currentColor" strokeWidth="1">
+        {[92, 100, 108, 116, 124, 132, 138].map((y) => (
+          <line key={y} x1="142" y1={y} x2="160" y2={y} />
+        ))}
+      </g>
+
+      {/* de todo el abanico, solo una longitud de onda pasa la rendija de salida */}
+      <g stroke="currentColor" strokeWidth="1" opacity="0.75">
+        {[-31, -16, 16, 31].map((dy) => (
+          <line key={dy} x1="162" y1={Y} x2="207" y2={Y + dy} />
+        ))}
+      </g>
+      <line x1="162" y1={Y} x2="215" y2={Y} stroke={ROJO} strokeWidth="2.4" />
+      {rendija(215)}
+
+      {/* cubeta: el haz sale atenuado */}
+      <line x1="215" y1={Y} x2="256" y2={Y} stroke={ROJO} strokeWidth="2.4" />
+      <rect x="256" y="92" width="42" height="46" fill={AZUL} fillOpacity="0.6" />
+      <rect x="256" y="92" width="42" height="46" {...trazo} />
+      <line x1="256" y1={Y} x2="298" y2={Y} stroke={ROJO} strokeWidth="2.4" />
+      <line x1="298" y1={Y} x2="336" y2={Y} stroke={ROJO} strokeWidth="1.1" />
+
+      {/* detector y lectura */}
+      <rect x="336" y="96" width="42" height="38" rx="4" {...trazo} />
+      <path d="M348 115 a10 10 0 0 1 18 0" fill="none" stroke="currentColor" strokeWidth="1.6" />
+      <line x1="378" y1={Y} x2="396" y2={Y} stroke="currentColor" strokeWidth="1.4" />
+      <rect x="396" y="98" width="80" height="34" rx="4" {...trazo} />
+      <text x="436" y="120" textAnchor="middle" fontSize="14" fill="currentColor">
+        A = 0,435
+      </text>
+
+      <g fontSize="8.5" textAnchor="middle" fill="currentColor">
+        <text x="37" y="86">D₂ + W</text>
+        <text x="151" y="78">red de difracción</text>
+        <text x="96" y="82">rendija</text>
+        <text x="215" y="82">rendija</text>
+      </g>
+      <text x="277" y="84" textAnchor="middle" fontSize="8.5" fill={ROJO}>
+        λ seleccionada
+      </text>
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="37" y="168">Fuente</text>
+        <text x="155" y="168">Monocromador</text>
+        <text x="277" y="168">Cubeta</text>
+        <text x="357" y="168">Detector</text>
+        <text x="436" y="168">Lectura</text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x="37" y="180">deuterio (UV)</text>
+        <text x="37" y="190">tungsteno (vis)</text>
+        <text x="155" y="180">selecciona la λ</text>
+        <text x="277" y="180">la muestra</text>
+        <text x="357" y="180">fotomultiplicador</text>
+        <text x="357" y="190">o fotodiodos</text>
+        <text x="436" y="180">absorbancia</text>
+      </g>
+    </g>
+  )
+}
+
+function LeyBeer() {
+  const moleculas = [
+    [152, 56],
+    [186, 70],
+    [216, 52],
+    [164, 96],
+    [200, 108],
+    [226, 88],
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* haz incidente, grueso */}
+      <line x1="24" y1="80" x2="128" y2="80" stroke={ROJO} strokeWidth="4" />
+      <path d="M128 80 l-10 -6 v12 z" fill={ROJO} />
+      <text x="24" y="66" fontSize="13" fill={ROJO}>
+        I₀
+      </text>
+
+      {/* cubeta con el analito */}
+      <rect x="132" y="34" width="108" height="94" fill={AZUL} fillOpacity="0.55" />
+      <rect x="132" y="34" width="108" height="94" {...trazo} />
+      <g fill="currentColor" opacity="0.55">
+        {moleculas.map(([x, y]) => (
+          <circle key={String(x) + '-' + String(y)} cx={x} cy={y} r="4" />
+        ))}
+      </g>
+
+      {/* haz transmitido, mas debil */}
+      <line x1="240" y1="80" x2="330" y2="80" stroke={ROJO} strokeWidth="1.6" />
+      <path d="M330 80 l-9 -5 v10 z" fill={ROJO} />
+      <text x="298" y="66" fontSize="13" fill={ROJO}>
+        I
+      </text>
+
+      {/* cota del camino optico */}
+      <g stroke="currentColor" strokeWidth="1.2">
+        <line x1="132" y1="142" x2="240" y2="142" />
+        <path d="M132 142 l8 -4 v8 z" fill="currentColor" stroke="none" />
+        <path d="M240 142 l-8 -4 v8 z" fill="currentColor" stroke="none" />
+      </g>
+      <text x="186" y="158" textAnchor="middle" fontSize="10" fill="currentColor">
+        b (camino óptico, cm)
+      </text>
+      <text x="24" y="176" fontSize="9.5" fill="currentColor">
+        c = concentración · ε = absortividad molar
+      </text>
+
+      <text x="250" y="112" fontSize="15" fill={ROJO} fontWeight="bold">
+        A = ε · b · c
+      </text>
+      <text x="250" y="130" fontSize="10" fill="currentColor">
+        A = −log T = log (I₀ / I)
+      </text>
+      <text x="250" y="144" fontSize="10" fill="currentColor">
+        T = I / I₀
+      </text>
+    </g>
+  )
+}
+
+function DesviacionBeer() {
+  const caja: Caja = { x: 44, y: 30, ancho: 230, alto: 128 }
+  // La curva real ARRANCA PEGADA a la recta -- misma pendiente en el origen -- y
+  // se separa hacia abajo al subir la concentracion. Es la desviacion negativa.
+  const ideal = (t: number) => t
+  const real = (t: number) => t - 0.3 * t ** 3
+  const xLineal = caja.x + 0.4 * caja.ancho
+  const yEje = caja.y + caja.alto
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <Ejes caja={caja} rotuloY="Absorbancia" rotuloX="Concentración" />
+
+      <path d={camino(ideal, caja)} fill="none" stroke="currentColor" strokeWidth="1.4" strokeDasharray="5 4" />
+      <path d={camino(real, caja)} fill="none" stroke={ROJO} strokeWidth="2.4" />
+
+      {/* tramo lineal util */}
+      <g stroke="currentColor" strokeWidth="1.2">
+        <line x1={caja.x} y1={yEje + 6} x2={xLineal} y2={yEje + 6} />
+        <line x1={caja.x} y1={yEje + 2} x2={caja.x} y2={yEje + 10} />
+        <line x1={xLineal} y1={yEje + 2} x2={xLineal} y2={yEje + 10} />
+      </g>
+      <text x={(caja.x + xLineal) / 2} y={yEje + 21} textAnchor="middle" fontSize="8.5" fill="currentColor">
+        intervalo lineal
+      </text>
+
+      <text x={caja.x + 0.3 * caja.ancho} y={caja.y + 20} fontSize="8.5" fill="currentColor">
+        ideal (A = ε·b·c)
+      </text>
+      <text x={caja.x + 0.58 * caja.ancho} y={caja.y + 0.72 * caja.alto} fontSize="8.5" fill={ROJO}>
+        real: desviación negativa
+      </text>
+      <text x={caja.x + 0.58 * caja.ancho} y={caja.y + 0.72 * caja.alto + 11} fontSize="8.5" fill={ROJO}>
+        a concentración alta
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -523,6 +711,12 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CeldaConductividad />
     case 'sonda-oxigeno':
       return <SondaOxigeno />
+    case 'espectrofotometro':
+      return <Espectrofotometro />
+    case 'ley-beer':
+      return <LeyBeer />
+    case 'desviacion-beer':
+      return <DesviacionBeer />
   }
 }
 

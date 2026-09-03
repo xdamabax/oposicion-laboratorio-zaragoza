@@ -43,6 +43,9 @@ export type TipoEsquema =
   | 'derivadas-valoracion'
   | 'celda-conductividad'
   | 'sonda-oxigeno'
+  | 'espectrofotometro'
+  | 'ley-beer'
+  | 'desviacion-beer'
 
 export type TipoMaterial =
   | 'matraz-aforado'
