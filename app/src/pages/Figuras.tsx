@@ -96,7 +96,7 @@ export default function Figuras() {
       <div className="galeria galeria-esquemas">
         {esquemas.map((t) => (
           <figure key={t} className="galeria-item" title={NOMBRES_ESQUEMA[t]}>
-            <Esquema tipo={t} tamano={300} />
+            <Esquema tipo={t} />
             <figcaption>
               <b>{NOMBRES_ESQUEMA[t]}</b>
               <br />

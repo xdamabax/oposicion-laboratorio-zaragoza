@@ -41,6 +41,8 @@ export type TipoEsquema =
   | 'valorador-automatico'
   | 'curva-potenciometrica'
   | 'derivadas-valoracion'
+  | 'celda-conductividad'
+  | 'sonda-oxigeno'
 
 export type TipoMaterial =
   | 'matraz-aforado'

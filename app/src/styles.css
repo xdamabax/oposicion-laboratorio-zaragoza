@@ -709,7 +709,7 @@ button.item {
 
 /* Los esquemas van a tamano grande: una sola columna ancha por fila. */
 .galeria-esquemas {
-  grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
 }
 
 .ghs-alcance {

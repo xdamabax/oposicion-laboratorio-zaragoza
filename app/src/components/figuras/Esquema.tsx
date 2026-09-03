@@ -15,6 +15,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'valorador-automatico': 'Valorador automático',
   'curva-potenciometrica': 'Curva de valoración potenciométrica',
   'derivadas-valoracion': 'Primera y segunda derivada de la curva',
+  'celda-conductividad': 'Célula de conductividad y constante de célula',
+  'sonda-oxigeno': 'Sonda de oxígeno disuelto de membrana',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -24,6 +26,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'valorador-automatico': { ancho: 340, alto: 250 },
   'curva-potenciometrica': { ancho: 270, alto: 195 },
   'derivadas-valoracion': { ancho: 260, alto: 250 },
+  'celda-conductividad': { ancho: 430, alto: 210 },
+  'sonda-oxigeno': { ancho: 400, alto: 285 },
 }
 
 const AZUL = '#9ecbe8'
@@ -401,6 +405,108 @@ function DerivadasValoracion() {
   )
 }
 
+function CeldaConductividad() {
+  const vaso = 'M150 44 v118 a8 8 0 0 0 8 8 h104 a8 8 0 0 0 8 -8 v-118'
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* medidor */}
+      <rect x="8" y="60" width="86" height="66" rx="6" {...trazo} />
+      <rect x="18" y="70" width="66" height="26" rx="3" {...trazo} />
+      <text x="51" y="89" textAnchor="middle" fontSize="12" fill="currentColor">
+        1413 µS/cm
+      </text>
+      <circle cx="30" cy="112" r="6" {...trazo} />
+      <rect x="46" y="107" width="38" height="10" rx="2" {...trazo} />
+
+      {/* cables a los dos electrodos */}
+      <path d="M94 76 C 118 76, 128 34, 180 34 L180 62" fill="none" stroke="currentColor" strokeWidth="1.5" />
+      <path d="M94 104 C 124 104, 136 22, 242 22 L242 62" fill="none" stroke="currentColor" strokeWidth="1.5" />
+
+      {/* vaso con la disolucion */}
+      <path d={vaso} fill={AZUL} fillOpacity="0.5" />
+      <path d={vaso} {...trazo} />
+      <line x1="150" y1="58" x2="270" y2="58" stroke="currentColor" strokeWidth="1.2" />
+
+      {/* los dos electrodos planos, enfrentados */}
+      <rect x="176" y="62" width="8" height="78" fill="currentColor" />
+      <rect x="238" y="62" width="8" height="78" fill="currentColor" />
+
+      {/* cota de la separacion entre placas */}
+      <text x="211" y="146" textAnchor="middle" fontSize="12" fill={ROJO} fontStyle="italic">
+        l
+      </text>
+      <g stroke={ROJO} strokeWidth="1.3">
+        <line x1="184" y1="154" x2="238" y2="154" />
+        <path d="M184 154 l8 -4 v8 z" fill={ROJO} stroke="none" />
+        <path d="M238 154 l-8 -4 v8 z" fill={ROJO} stroke="none" />
+      </g>
+
+      <Rotulo x={280} y={80} hacia={[247, 88]} derecha lineas={['Electrodos de área A', '(platino platinado)']} />
+      <Rotulo x={146} y={188} hacia={[172, 168]} lineas={['Disolución', 'patrón o muestra']} />
+
+      <text x="280" y="140" fontSize="14" fill={ROJO} fontWeight="bold">
+        K = l / A
+      </text>
+      <text x="280" y="156" fontSize="8.5" fill="currentColor">
+        constante de célula
+      </text>
+      <text x="280" y="168" fontSize="8.5" fill="currentColor">
+        en cm⁻¹
+      </text>
+    </g>
+  )
+}
+
+function SondaOxigeno() {
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* agua de la muestra */}
+      <rect x="100" y="196" width="160" height="62" fill={AZUL} fillOpacity="0.45" />
+      <line x1="100" y1="196" x2="260" y2="196" stroke="currentColor" strokeWidth="1.2" />
+
+      {/* cuerpo de la sonda */}
+      <line x1="170" y1="6" x2="170" y2="22" stroke="currentColor" strokeWidth="2" />
+      <rect x="150" y="22" width="40" height="20" rx="4" {...trazo} />
+      <rect x="152" y="52" width="36" height="176" fill={AZUL_CLARO} />
+      <rect x="152" y="42" width="36" height="186" {...trazo} />
+
+      {/* catodo: hilo fino con disco en la punta */}
+      <line x1="170" y1="56" x2="170" y2="214" stroke="currentColor" strokeWidth="2.5" />
+      <rect x="160" y="214" width="20" height="6" fill="currentColor" />
+
+      {/* anodo: pieza mayor a un lado */}
+      <rect x="156" y="90" width="8" height="80" fill="currentColor" />
+
+      {/* membrana, sujeta con su junta */}
+      <line x1="150" y1="228" x2="190" y2="228" stroke={ROJO} strokeWidth="3" />
+      <circle cx="150" cy="228" r="4" {...trazo} />
+      <circle cx="190" cy="228" r="4" {...trazo} />
+
+      {/* el oxigeno atraviesa la membrana */}
+      <g stroke={ROJO} strokeWidth="1.5" fill="none">
+        <line x1="163" y1="250" x2="163" y2="236" />
+        <path d="M163 234 l-4 7 h8 z" fill={ROJO} stroke="none" />
+        <line x1="177" y1="252" x2="177" y2="236" />
+        <path d="M177 234 l-4 7 h8 z" fill={ROJO} stroke="none" />
+      </g>
+      <text x="188" y="252" fontSize="10" fill={ROJO}>
+        O₂
+      </text>
+
+      <Rotulo x={146} y={64} hacia={[168, 70]} lineas={['Cátodo', '(oro o platino)']} />
+      <Rotulo x={146} y={132} hacia={[155, 132]} lineas={['Ánodo', '(plata o plomo)']} />
+      <Rotulo x={198} y={100} hacia={[189, 106]} derecha lineas={['Electrolito', '(KCl)']} />
+      <Rotulo x={206} y={224} hacia={[192, 228]} derecha lineas={['Membrana permeable', 'a gases (PTFE)']} />
+      <Rotulo x={96} y={216} hacia={[124, 202]} lineas={['Muestra', 'de agua']} />
+
+      <text x="8" y="276" fontSize="8.5" fill="currentColor">
+        El O₂ difunde por la membrana y se reduce en el cátodo.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -413,28 +519,38 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CurvaPotenciometrica />
     case 'derivadas-valoracion':
       return <DerivadasValoracion />
+    case 'celda-conductividad':
+      return <CeldaConductividad />
+    case 'sonda-oxigeno':
+      return <SondaOxigeno />
   }
 }
 
 export default function Esquema({
   tipo,
-  tamano = 300,
+  tamano,
   etiqueta,
 }: {
   tipo: TipoEsquema
-  /** Ancho en px; el alto sale de la proporcion del lienzo */
+  /**
+   * Ancho en px. Por defecto, el ANCHO NATURAL del lienzo: asi una unidad del
+   * dibujo es un pixel y los rotulos miden lo mismo en todos los esquemas,
+   * midan lo que midan sus lienzos. Con un ancho fijo, el esquema mas ancho
+   * encogia su letra hasta hacerla ilegible.
+   */
   tamano?: number
   /** Nombre accesible; por defecto, el del catalogo */
   etiqueta?: string
 }) {
   const { ancho, alto } = LIENZOS[tipo]
   const nombre = etiqueta ?? NOMBRES_ESQUEMA[tipo]
+  const anchoFinal = tamano ?? ancho
 
   return (
     <svg
       viewBox={`0 0 ${ancho} ${alto}`}
-      width={tamano}
-      height={(tamano * alto) / ancho}
+      width={anchoFinal}
+      height={(anchoFinal * alto) / ancho}
       role="img"
       aria-label={nombre}
       className="figura-svg figura-esquema"
