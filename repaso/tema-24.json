@@ -1,0 +1,828 @@
+{
+  "tema": 24,
+  "titulo": "Electrodos selectivos: Clases. Fundamentos y métodos de cálculo. Medida de la conductividad eléctrica de agua. Medida electroquímica de oxígeno disuelto en agua.",
+  "generadoDe": "temas/tema-24.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-03",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Como el 23, este tema no tiene núcleo repetido documentado en el análisis de las tres convocatorias. El núcleo se fija por criterio propio, y aquí el criterio principal es OTRO que en el 23: de los tres bloques, dos tienen norma UNE vigente y verificada (conductividad y oxígeno por sonda) y uno no la tiene (los electrodos selectivos). El núcleo carga en los dos primeros, y dentro de ellos en lo que se puede preguntar con una cifra o con un par de conceptos: la constante de célula, la equivalencia de unidades, el patrón de KCl, la temperatura de referencia (25 °C del ensayo frente a 20 °C del RD 3/2023), que la sonda de oxígeno es amperometría y no potenciometría, que consume oxígeno y hay que agitar, y las tres correcciones. De los electrodos selectivos entra en el núcleo lo estable y muy repetido en cualquier manual: qué es un ISE, las clases, el fluoruro de LaF3, el coeficiente de selectividad y las tres funciones del TISAB. Queda fuera del núcleo todo lo que el apunte declara como no citable: los valores concretos de los patrones de KCl como cita de la norma, el coeficiente del 2 % por grado y los materiales de electrodo de las sondas.",
+  "flashcards": [
+    {
+      "id": "t24-f01",
+      "anverso": "¿Qué es un electrodo selectivo de iones (ISE)?",
+      "reverso": "Un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**, según la ecuación de Nernst.\nEs la generalización del **electrodo de vidrio** del tema 23: allí el ion era el H⁺; aquí puede ser fluoruro, nitrato, amonio o calcio.\nRecuerda: **los de membrana transfieren IONES; los metálicos, electrones.**\nSiempre necesita enfrente un **electrodo de referencia**, a menudo de **doble unión**.",
+      "fuente": "Material docente ULPGC; bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f02",
+      "anverso": "Clases de electrodos selectivos.",
+      "reverso": "**De vidrio** — H⁺ (el de pH), Na⁺.\n**De estado sólido o cristalina** — monocristal o pastilla prensada: **F⁻ (LaF₃)**, haluros, Ag⁺/S²⁻, Cu²⁺, Pb²⁺, Cd²⁺.\n**De membrana líquida** — ionóforo en matriz de **PVC**: Ca²⁺, **K⁺ (valinomicina)**, NO₃⁻.\n**Sensibles a gases** — NH₃, CO₂, SO₂.\n**Enzimáticos (biosensores)** — urea, glucosa.\n**ISFET** — transistor sensible a iones.",
+      "fuente": "Bibliografía de química analítica; material docente ULPGC",
+      "etiquetas": [
+        "ise",
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f03",
+      "anverso": "¿De qué es la membrana del electrodo selectivo de fluoruro?",
+      "reverso": "De un **monocristal de fluoruro de lantano (LaF₃)**, dopado con **europio**. Es un electrodo de **membrana cristalina o de estado sólido**.\nPor la red del cristal solo migra el **F⁻**, y por eso es de los electrodos más **selectivos** que existen.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "clases",
+        "fluoruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f04",
+      "anverso": "¿Qué llevan dentro los electrodos selectivos sensibles a gases?",
+      "reverso": "**Un electrodo de pH.** No son una clase nueva de membrana.\nEl gas (NH₃, CO₂, SO₂…) atraviesa una **membrana permeable a los gases**, cambia el **pH** de una fina película de electrolito, y **lo que se mide es ese cambio de pH**.\nEntenderlo así explica sus interferencias: le afecta cualquier cosa que altere ese pH.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "clases"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f05",
+      "anverso": "¿Cómo es un electrodo selectivo de membrana líquida?",
+      "reverso": "Una **matriz polimérica (normalmente PVC)** impregnada de un **ionóforo**: un intercambiador iónico o un portador neutro que se une selectivamente al ion.\nEjemplos: **Ca²⁺**, **K⁺ con valinomicina**, NO₃⁻, ClO₄⁻, tensioactivos.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "clases"
+      ]
+    },
+    {
+      "id": "t24-f06",
+      "anverso": "¿Qué es un ISFET y qué es un electrodo enzimático?",
+      "reverso": "**ISFET:** un **transistor de efecto de campo sensible a iones**. Mide pH y otros iones **sin vidrio**: robusto, muy pequeño y difícil de romper.\n**Enzimático (biosensor):** una **enzima inmovilizada** sobre un ISE. La ureasa convierte la urea en **amonio**, que sí se mide; igual con la glucosa.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "clases"
+      ]
+    },
+    {
+      "id": "t24-f07",
+      "anverso": "¿Cuánto responde un ISE por década de actividad, y con qué signo?",
+      "reverso": "**E = K ± (59,16 / n) · log a** a 25 °C.\n**Ion monovalente → 59,16 mV por década.**\n**Ion divalente → 29,58 mV**, la mitad.\nEl signo es **positivo para cationes** y **negativo para aniones**.\nY del tema 23: **1 mV de error ≈ 4 % en la actividad** de un monovalente; el doble en un divalente.",
+      "fuente": "Ecuación de Nernst; tema 23",
+      "etiquetas": [
+        "ise",
+        "fundamentos",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f08",
+      "anverso": "¿A qué responde un electrodo selectivo, a la concentración o a la actividad?",
+      "reverso": "**A la ACTIVIDAD.** Concentración y actividad solo coinciden en disolución muy diluida.\nEsa es la razón de ser del **ajustador de fuerza iónica (ISA / TISAB)**: si se fija la misma fuerza iónica en patrones y muestras, el coeficiente de actividad es el mismo en todos y el electrodo **puede leerse como si midiera concentración**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f09",
+      "anverso": "¿Qué añade la ecuación de Nikolsky-Eisenman a la de Nernst?",
+      "reverso": "**Los iones interferentes.** Es la de Nernst con un sumando por cada ion que también responde, pesado por su **coeficiente de selectividad potenciométrico**.\nRecoge el hecho de fondo: **ningún electrodo es específico, todos son selectivos**.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ]
+    },
+    {
+      "id": "t24-f10",
+      "anverso": "¿Cómo se interpreta un coeficiente de selectividad?",
+      "reverso": "**Cuanto MÁS PEQUEÑO, mejor.**\n**Menor que 1:** el electrodo prefiere el analito. **Mayor que 1:** prefiere al interferente, y no sirve para esa matriz.\nUn coeficiente de **10⁻³** significa que hace falta **mil veces más interferente** que analito para dar la misma señal.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f11",
+      "anverso": "¿Qué relación hay entre el error alcalino del electrodo de pH y el coeficiente de selectividad?",
+      "reverso": "**Son lo mismo visto de dos maneras.** El error alcalino del tema 23 —a pH alto el electrodo responde también al Na⁺ y lee de menos— no es más que un **coeficiente de selectividad frente al sodio** que deja de ser despreciable cuando el H⁺ escasea.",
+      "fuente": "Bibliografía; tema 23",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ]
+    },
+    {
+      "id": "t24-f12",
+      "anverso": "¿Qué características definen a un electrodo selectivo?",
+      "reverso": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias** con sus coeficientes de selectividad.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ]
+    },
+    {
+      "id": "t24-f13",
+      "anverso": "Ventajas y desventajas de los electrodos selectivos.",
+      "reverso": "**A favor:** respuesta **rápida** y **no destructiva**; **no importa el color ni la turbidez**; equipos **baratos y portátiles**, para campo y para medida en línea; miden **actividad**; amplísimo intervalo de concentraciones.\n**En contra:** el electrodo se **contamina** y su vida es limitada; **interferencias**; exactitud **moderada**; hay que **ajustar la fuerza iónica** y **calibrar a menudo**.",
+      "fuente": "Material docente ULPGC",
+      "etiquetas": [
+        "ise",
+        "fundamentos"
+      ]
+    },
+    {
+      "id": "t24-f14",
+      "anverso": "¿En qué consiste la calibración directa con un ISE y qué condición exige?",
+      "reverso": "Se miden patrones del ion y se representa **E frente al LOGARITMO de la concentración**: sale una recta de pendiente ≈ 59,16/n mV, y la muestra se **interpola**.\n**Condición indispensable:** patrones y muestra deben tener **la misma fuerza iónica**. Si no, el coeficiente de actividad cambia y las lecturas no son comparables.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "calculo"
+      ]
+    },
+    {
+      "id": "t24-f15",
+      "anverso": "¿Qué tres cosas hace el TISAB en la determinación de fluoruro?",
+      "reverso": "1. **Fija una fuerza iónica alta y constante** en patrones y muestras: el coeficiente de actividad es el mismo en todos y el electrodo se lee **como concentración**.\n2. **Tampona el pH** en torno a **5 - 5,5**: por debajo el fluoruro se protona a **HF y HF₂⁻**, que el electrodo **no ve**; por encima interfiere el **OH⁻**.\n3. **Acompleja los interferentes** con **CDTA**: secuestra **Al³⁺ y Fe³⁺**.\nSe añade **el mismo volumen** a patrones y a muestras.",
+      "fuente": "Documentación de fabricante; bibliografía",
+      "etiquetas": [
+        "ise",
+        "calculo",
+        "fluoruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f16",
+      "anverso": "¿Por qué el pH es crítico al medir fluoruro con electrodo selectivo?",
+      "reverso": "Por los dos extremos:\n- **pH bajo:** el fluoruro se protona y forma **HF y HF₂⁻**, que el electrodo **no detecta**. El resultado sale **bajo**.\n- **pH alto:** el **OH⁻ interfiere**, porque se parece al F⁻ en tamaño y carga.\nPor eso el TISAB lo tampona entre **5 y 5,5**.",
+      "fuente": "Documentación de fabricante; bibliografía",
+      "etiquetas": [
+        "ise",
+        "fluoruro"
+      ]
+    },
+    {
+      "id": "t24-f17",
+      "anverso": "¿Qué pasa si se mide fluoruro sin el CDTA del TISAB?",
+      "reverso": "Que el **Al³⁺ y el Fe³⁺** de la muestra forman **complejos con el fluoruro** y lo **esconden**: el electrodo no ve ese fluoruro y **el resultado sale bajo**.\nEl **CDTA** los secuestra antes, y así se mide el **fluoruro total**.",
+      "fuente": "Documentación de fabricante",
+      "etiquetas": [
+        "ise",
+        "fluoruro"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f18",
+      "anverso": "¿Cuál es la ventaja del método de adiciones patrón con un ISE?",
+      "reverso": "**Que la matriz se cancela.** Se mide la muestra, se le añade un volumen pequeño de patrón concentrado y se vuelve a medir: las dos medidas se hacen **en la misma muestra**, así que todo lo que la matriz le hace al electrodo afecta igual a las dos.\nEs el método cuando la muestra es **compleja** o cuando **no se sabe reproducir su matriz** en los patrones.\nA cambio: más lento, y hay que conocer la **pendiente real** del electrodo.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f19",
+      "anverso": "Los tres métodos de cálculo con un ISE: ¿cuándo se usa cada uno?",
+      "reverso": "**Calibración directa** — matriz sencilla y muchas muestras.\n**Adiciones patrón** — matriz complicada: se cancela el efecto de matriz.\n**Valoración potenciométrica** (tema 23) — cuando se quiere **exactitud**: es la más exacta porque no depende del valor absoluto del potencial, sino de **dónde** salta la curva.",
+      "fuente": "Bibliografía de química analítica",
+      "etiquetas": [
+        "ise",
+        "calculo"
+      ]
+    },
+    {
+      "id": "t24-f20",
+      "anverso": "¿Qué mide exactamente la conductividad de un agua?",
+      "reverso": "La **capacidad de la disolución para conducir la corriente**, que se debe a los **iones** disueltos.\nEs una medida **INESPECÍFICA**: no dice **qué** iones hay, sino **cuántos en conjunto**. La norma la describe como un **indicador práctico de la concentración de solutos ionizables**.",
+      "fuente": "UNE-EN 27888:1994 (ISO 7888:1985), campo de aplicación",
+      "etiquetas": [
+        "conductividad",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f21",
+      "anverso": "¿Qué es la constante de célula y cómo se relaciona con la conductividad?",
+      "reverso": "**K = l / A**: la **separación** entre los electrodos dividida por su **superficie**. Se expresa en **cm⁻¹**.\nY entonces:\n**Conductancia G = 1/R** (en siemens)\n**Conductividad κ = G · K**\nLa resistividad es su inversa, ρ = 1/κ, y es la que se usa en **agua ultrapura**.",
+      "fuente": "Doctrina; UNE-EN 27888",
+      "etiquetas": [
+        "conductividad",
+        "calculo",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "celda-conductividad"
+      }
+    },
+    {
+      "id": "t24-f22",
+      "anverso": "Unidades de conductividad: ¿cuál es la del SI y cuál la equivalencia práctica?",
+      "reverso": "La del SI es el **siemens por metro (S/m)**. En la práctica se usan **mS/m** (la norma) y **µS/cm** (los aparatos y el Real Decreto).\n**1 mS/m = 10 µS/cm**\nAsí, 452 µS/cm son 45,2 mS/m.",
+      "fuente": "UNE-EN 27888; conversión de unidades",
+      "etiquetas": [
+        "conductividad",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f23",
+      "anverso": "¿Qué norma regula la medida de la conductividad del agua y en qué estado está?",
+      "reverso": "**UNE-EN 27888:1994**, *Calidad del agua. Determinación de la conductividad eléctrica* (ISO 7888:1985).\nEdición de **14/06/1994**, **EN VIGOR**, **confirmada el 21/05/2008**. Anuló a la **UNE 77039**. No tiene norma sustituta.\nSirve para **todo tipo de aguas** y el resultado se da **referido a una temperatura**.",
+      "fuente": "Catálogo de AENOR, comprobado el 03/09/2026",
+      "etiquetas": [
+        "conductividad",
+        "normas"
+      ]
+    },
+    {
+      "id": "t24-f24",
+      "anverso": "¿Cómo afecta la temperatura a la conductividad, y qué trampa esconde?",
+      "reverso": "**Sube con la temperatura**, del orden de un **2 % por grado**, porque los iones se mueven más deprisa. Por eso **todo resultado va referido a una temperatura** y los aparatos compensan.\n**La trampa:** el ensayo se refiere habitualmente a **25 °C**, pero el **valor paramétrico del RD 3/2023 está dado a 20 °C**.\n**Comparar dos conductividades sin decir a qué temperatura están referidas no significa nada.**",
+      "fuente": "UNE-EN 27888; RD 3/2023, anexo I, parte C",
+      "etiquetas": [
+        "conductividad",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f25",
+      "anverso": "¿Cómo se calibra un conductivímetro?",
+      "reverso": "No se calibra contra una escala: se determina **la constante de la célula** con una **disolución patrón de KCl** de conductividad conocida.\n**K = κ(patrón) / G(medida)**\nPatrones a 25 °C: KCl **0,001 mol/L → 147 µS/cm**; **0,01 mol/L → 1 413 µS/cm**; **0,1 mol/L → 12 880 µS/cm**.\nSe elige el patrón **del orden de la muestra**, y la constante se **vuelve a comprobar** periódicamente porque el platinado se degrada.",
+      "fuente": "Catálogos de patrones de conductividad; doctrina",
+      "etiquetas": [
+        "conductividad",
+        "calibracion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f26",
+      "anverso": "Tipos de célula de conductividad y para qué sirve cada uno.",
+      "reverso": "**De dos electrodos** (platino platinado): la de laboratorio. Buena en conductividades **bajas**; en las altas sufre **polarización**.\n**De cuatro electrodos**: dos inyectan corriente y **dos miden la tensión**. **Evita la polarización** y la resistencia de los cables; intervalo mucho más amplio.\n**Inductiva o toroidal**: dos bobinas, **sin contacto eléctrico** con el líquido. Para aguas sucias, corrosivas o que incrustan, y para medida en línea.",
+      "fuente": "Documentación de fabricante; doctrina",
+      "etiquetas": [
+        "conductividad",
+        "instrumento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f27",
+      "anverso": "¿Por qué la conductividad se mide con corriente alterna y no continua?",
+      "reverso": "Para **no electrolizar la muestra** ni **polarizar los electrodos**.\nCon corriente continua se acumularían iones en las placas y la lectura derivaría; la alterna invierte el sentido continuamente y lo evita.",
+      "fuente": "Doctrina; documentación de fabricante",
+      "etiquetas": [
+        "conductividad",
+        "instrumento"
+      ]
+    },
+    {
+      "id": "t24-f28",
+      "anverso": "Cuidados al medir la conductividad con una célula.",
+      "reverso": "- **Electrodos limpios**: una película de grasa cambia la constante de célula.\n- **Sin burbujas** entre las placas.\n- Célula **sumergida hasta su marca**, sin tocar el fondo ni las paredes del vaso.\n- **Enjuagar con la propia muestra** antes de medir.\n- **Re-verificar la constante** periódicamente.",
+      "fuente": "Documentación de fabricante",
+      "etiquetas": [
+        "conductividad",
+        "manejo"
+      ]
+    },
+    {
+      "id": "t24-f29",
+      "anverso": "¿Para qué se usa la medida de conductividad en un laboratorio de aguas?",
+      "reverso": "Control de **ETAP** y de **ósmosis inversa**; vigilancia de **agua ultrapura** (que se expresa mejor como resistividad: llega a **18,2 MΩ·cm**); detección de **intrusión salina** y de **vertidos**; estimación aproximada de los **sólidos disueltos totales**; y comprobar que una serie de muestras es homogénea.",
+      "fuente": "UNE-EN 27888, campo de aplicación; doctrina",
+      "etiquetas": [
+        "conductividad"
+      ]
+    },
+    {
+      "id": "t24-f30",
+      "anverso": "¿En qué se basa la medida electroquímica del oxígeno disuelto?",
+      "reverso": "En una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**.\nEl oxígeno **difunde** por la membrana, **se reduce en el cátodo**, y la **corriente** resultante es proporcional a la **presión parcial** de oxígeno de la muestra.\nNorma: **UNE-EN ISO 5814:2013** (ISO 5814:2012).",
+      "fuente": "UNE-EN ISO 5814:2013",
+      "etiquetas": [
+        "oxigeno",
+        "concepto",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "sonda-oxigeno"
+      }
+    },
+    {
+      "id": "t24-f31",
+      "anverso": "La sonda de oxígeno disuelto, ¿es potenciometría?",
+      "reverso": "**No: es AMPEROMETRÍA.**\nAquí no se mide un potencial a intensidad nula, como en el pH o en un ISE: **se mide una CORRIENTE**, la que produce la reducción del oxígeno en el cátodo.\nEs la diferencia conceptual con todo el tema 23.",
+      "fuente": "UNE-EN ISO 5814:2013; doctrina",
+      "etiquetas": [
+        "oxigeno",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f32",
+      "anverso": "Sonda polarográfica y sonda galvánica: ¿en qué se diferencian?",
+      "reverso": "**Polarográfica (tipo Clark):** necesita una **tensión de polarización externa**. Cátodo de **oro o platino**, ánodo de **plata**. Hay que **esperar a que polarice** antes de medir.\n**Galvánica:** **no necesita tensión externa**, la pareja de metales genera su propia fem. Cátodo de **plata**, ánodo de **plomo** o cinc. Lista de inmediato, pero **el ánodo se consume** y hay que reponerlo.\nEn las dos: **electrolito interno (KCl)** y **membrana de PTFE**.",
+      "fuente": "Documentación de fabricante (ver duda 5 del apunte)",
+      "etiquetas": [
+        "oxigeno",
+        "instrumento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f33",
+      "anverso": "¿Por qué hay que agitar al medir el oxígeno disuelto con sonda de membrana?",
+      "reverso": "**Porque la sonda CONSUME el oxígeno que le llega.** Si el agua está quieta, la película pegada a la membrana se empobrece y **la lectura baja, y sigue bajando**.\nHay que **agitar la muestra o mover la sonda** (o usar una célula de flujo).\nEs justo la ventaja del sensor óptico, que **no consume oxígeno y no necesita agitación**.",
+      "fuente": "UNE-EN ISO 5814; documentación de fabricante",
+      "etiquetas": [
+        "oxigeno",
+        "manejo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f34",
+      "anverso": "¿En qué unidades se da el oxígeno disuelto y qué campo cubre el método?",
+      "reverso": "En **mg/L de O₂** y en **porcentaje de saturación**, o en las dos a la vez.\nEl método cubre de **1 % a 100 %** de saturación, y la mayoría de los equipos leen también **por encima del 100 %**: la **sobresaturación**.",
+      "fuente": "UNE-EN ISO 5814:2013",
+      "etiquetas": [
+        "oxigeno"
+      ]
+    },
+    {
+      "id": "t24-f35",
+      "anverso": "¿Cómo se calibra una sonda de oxígeno disuelto?",
+      "reverso": "El **100 %**, en **aire saturado de humedad** (o en agua saturada de aire): el aire húmedo equivale al 100 % de saturación.\nEl **cero**, con una disolución de **sulfito sódico**, que consume todo el oxígeno.",
+      "fuente": "Documentación de fabricante; UNE-EN ISO 5814",
+      "etiquetas": [
+        "oxigeno",
+        "calibracion"
+      ]
+    },
+    {
+      "id": "t24-f36",
+      "anverso": "¿Qué tres correcciones hay que aplicar a una medida de oxígeno disuelto?",
+      "reverso": "1. **Temperatura**: la solubilidad del O₂ **baja** al subir la temperatura.\n2. **Presión atmosférica o altitud**: la saturación depende de la **presión parcial** de oxígeno del aire.\n3. **Salinidad**: cuanta más sal, **menos** oxígeno se disuelve.\nLos equipos modernos las compensan, con barómetro y con sensor de conductividad.",
+      "fuente": "UNE-EN ISO 5814; documentación de fabricante",
+      "etiquetas": [
+        "oxigeno",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f37",
+      "anverso": "Los tres métodos para medir oxígeno disuelto y cuándo se usa cada uno.",
+      "reverso": "**Winkler (yodométrico)** — UNE-EN 25813, **volumetría redox** (tema 22). Método clásico de referencia, en laboratorio.\n**Sonda electroquímica de membrana** — **UNE-EN ISO 5814:2013**. Campo y medida en continuo.\n**Sensor óptico (luminiscencia)** — **ISO 17289:2014**. No consume oxígeno ni necesita agitación; el mejor en aguas **muy coloreadas o turbias** y donde el Winkler falla.",
+      "fuente": "UNE-EN 25813; UNE-EN ISO 5814:2013; ISO 17289:2014",
+      "etiquetas": [
+        "oxigeno",
+        "normas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f38",
+      "anverso": "¿En qué se basa el sensor óptico de oxígeno disuelto y qué ventaja tiene?",
+      "reverso": "En la **extinción de la fluorescencia**: el oxígeno apaga la luminiscencia de un indicador, y de cuánto la apaga sale la concentración. Norma **ISO 17289:2014**.\nVentajas: **no consume oxígeno**, así que **no necesita agitación**; y va bien en aguas **coloreadas y turbias**, y en las que el Winkler no sirve por sustancias que fijan hierro o yodo.",
+      "fuente": "ISO 17289:2014",
+      "etiquetas": [
+        "oxigeno",
+        "normas"
+      ]
+    },
+    {
+      "id": "t24-f39",
+      "anverso": "¿Qué exige el RD 3/2023 a la medida de conductividad y de fluoruro en agua de consumo?",
+      "reverso": "**Anexo III, parte D, tabla 15** (incertidumbre de medida, k = 2, en % del valor paramétrico):\n**Conductividad → 15 %**\n**Fluoruro → 20 %**\nY, del mismo anexo, **parte B.4**: los aparatos de control **en línea o in situ** deben estar **verificados y ajustados** periódicamente, con la **última calibración documentada**.",
+      "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, partes B y D",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t24-f40",
+      "anverso": "¿Cuál es el valor paramétrico de la conductividad en agua de consumo, y de qué tema es?",
+      "reverso": "**2 500 µS/cm a 20 °C**, con valor de **no aptitud en 4 000** (RD 3/2023, anexo I, parte C, tabla 3).\nPero **el parámetro es del tema 33**: aquí interesa solo por la **temperatura de referencia**, que son **20 °C** y no los 25 °C habituales del ensayo.",
+      "fuente": "RD 3/2023, anexo I, parte C, tabla 3, fila 47 y nota 10",
+      "etiquetas": [
+        "normativa",
+        "conductividad"
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "t24-q01",
+      "pregunta": "Un electrodo selectivo de iones se diferencia de un electrodo metálico en que:",
+      "opciones": [
+        "No necesita electrodo de referencia",
+        "Mide concentración en lugar de potencial",
+        "Transfiere iones a través de una membrana, en vez de electrones"
+      ],
+      "correcta": 2,
+      "explicacion": "En los electrodos de membrana el potencial nace del intercambio de iones a través de la membrana; los metálicos transfieren electrones. Todo ISE necesita un electrodo de referencia enfrente, a menudo de doble unión.",
+      "fuente": "Material docente ULPGC; bibliografía"
+    },
+    {
+      "id": "t24-q02",
+      "pregunta": "La membrana del electrodo selectivo de fluoruro es:",
+      "opciones": [
+        "Una matriz de PVC impregnada de un ionóforo",
+        "Un vidrio de composición especial",
+        "Un monocristal de fluoruro de lantano (LaF₃)"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un electrodo de membrana cristalina o de estado sólido: un monocristal de LaF₃ dopado con europio, por cuya red solo migra el F⁻. El PVC con ionóforo es la membrana líquida (Ca²⁺, K⁺, NO₃⁻) y el vidrio, la del electrodo de pH.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q03",
+      "pregunta": "Un electrodo selectivo sensible a gases, como el de amoniaco, lleva en su interior:",
+      "opciones": [
+        "Un electrodo de pH",
+        "Un monocristal de sal poco soluble",
+        "Un cátodo de oro polarizado"
+      ],
+      "correcta": 0,
+      "explicacion": "El gas atraviesa una membrana permeable a los gases y cambia el pH de una fina película de electrolito: lo que se mide es ese cambio de pH. Por eso le afecta cualquier cosa que altere ese pH.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q04",
+      "pregunta": "La respuesta de un electrodo selectivo a un ion divalente, a 25 °C, es de aproximadamente:",
+      "opciones": [
+        "29,58 mV por década de actividad",
+        "59,16 mV por década de actividad",
+        "118,3 mV por década de actividad"
+      ],
+      "correcta": 0,
+      "explicacion": "La pendiente es 59,16/n mV: con n = 2 sale la mitad, 29,58 mV. Los 59,16 mV corresponden a un ion monovalente.",
+      "fuente": "Ecuación de Nernst"
+    },
+    {
+      "id": "t24-q05",
+      "pregunta": "Los electrodos selectivos responden directamente a:",
+      "opciones": [
+        "La concentración molar del ion",
+        "La actividad del ion",
+        "La conductividad de la disolución"
+      ],
+      "correcta": 1,
+      "explicacion": "Responden a la actividad, que solo coincide con la concentración en disolución muy diluida. Por eso se añade un ajustador de fuerza iónica: si la fuerza iónica es la misma en patrones y muestras, el coeficiente de actividad también, y la lectura puede tratarse como concentración.",
+      "fuente": "Bibliografía de química analítica"
+    },
+    {
+      "id": "t24-q06",
+      "pregunta": "Respecto al coeficiente de selectividad de un electrodo selectivo, es cierto que:",
+      "opciones": [
+        "Cuanto mayor es, mejor es el electrodo para ese analito",
+        "Solo tiene sentido en los electrodos de vidrio",
+        "Cuanto menor es, mejor: por debajo de 1 el electrodo prefiere el analito"
+      ],
+      "correcta": 2,
+      "explicacion": "Un coeficiente pequeño significa que el interferente apenas contribuye. Por debajo de 1 el electrodo prefiere el analito; por encima, prefiere al interferente y no sirve para esa matriz. Un valor de 10⁻³ exige mil veces más interferente para dar la misma señal.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q07",
+      "pregunta": "El TISAB que se añade en la determinación de fluoruro con electrodo selectivo sirve para:",
+      "opciones": [
+        "Fijar la fuerza iónica, tamponar el pH y acomplejar el aluminio y el hierro",
+        "Únicamente para diluir la muestra hasta el intervalo lineal",
+        "Eliminar el oxígeno disuelto, que interferiría en la medida"
+      ],
+      "correcta": 0,
+      "explicacion": "Hace las tres cosas a la vez: fuerza iónica alta y constante (para poder leer concentración), tampón de pH entre 5 y 5,5 (fuera de ahí aparecen HF y HF₂⁻ o interfiere el OH⁻) y CDTA para secuestrar Al³⁺ y Fe³⁺.",
+      "fuente": "Documentación de fabricante; bibliografía",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q08",
+      "pregunta": "Si se mide fluoruro en un agua con aluminio y hierro y se omite el agente acomplejante del TISAB, el resultado:",
+      "opciones": [
+        "Sale más alto que el real",
+        "Sale más bajo que el real",
+        "No se ve afectado, porque el electrodo es específico del fluoruro"
+      ],
+      "correcta": 1,
+      "explicacion": "El Al³⁺ y el Fe³⁺ forman complejos con el fluoruro y lo esconden: el electrodo no ve ese fluoruro y la medida sale baja. El CDTA los secuestra antes para que se mida el fluoruro total.",
+      "fuente": "Documentación de fabricante"
+    },
+    {
+      "id": "t24-q09",
+      "pregunta": "El método de adiciones patrón con un electrodo selectivo se emplea sobre todo porque:",
+      "opciones": [
+        "Es más rápido que la calibración directa",
+        "Permite prescindir del electrodo de referencia",
+        "Las dos medidas se hacen sobre la misma muestra y se cancela el efecto de matriz"
+      ],
+      "correcta": 2,
+      "explicacion": "Se mide la muestra, se añade un patrón concentrado y se vuelve a medir: la matriz es la misma antes y después. Es el método cuando la muestra es compleja o no se sabe reproducir su matriz en los patrones. Es más lento, no más rápido.",
+      "fuente": "Bibliografía de química analítica",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q10",
+      "pregunta": "La conductividad eléctrica de un agua es una medida:",
+      "opciones": [
+        "Específica de los cloruros disueltos",
+        "Inespecífica: indica la concentración total de solutos ionizables",
+        "De la materia orgánica disuelta"
+      ],
+      "correcta": 1,
+      "explicacion": "Mide todos los iones a la vez, sin distinguirlos: es un indicador práctico de la concentración total de solutos ionizables, no de ningún ion en concreto.",
+      "fuente": "UNE-EN 27888:1994 (ISO 7888:1985)",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q11",
+      "pregunta": "La constante de célula de un conductivímetro se define como:",
+      "opciones": [
+        "El cociente entre la separación de los electrodos y su superficie (l/A)",
+        "El producto de la conductancia por la resistencia",
+        "La conductividad del patrón de KCl a 25 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "K = l/A, en cm⁻¹, y con ella la conductividad se obtiene como κ = G·K. La conductividad del patrón sirve justamente para determinar esa constante: K = κ(patrón)/G(medida).",
+      "fuente": "Doctrina; UNE-EN 27888",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q12",
+      "pregunta": "Una conductividad de 452 µS/cm equivale a:",
+      "opciones": [
+        "4,52 mS/m",
+        "45,2 mS/m",
+        "4 520 mS/m"
+      ],
+      "correcta": 1,
+      "explicacion": "1 mS/m = 10 µS/cm, así que se divide entre 10: 452/10 = 45,2 mS/m. La norma expresa el resultado en S/m y submúltiplos; los aparatos y el Real Decreto, en µS/cm.",
+      "fuente": "UNE-EN 27888; conversión de unidades",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q13",
+      "pregunta": "La disolución patrón de KCl 0,01 mol/L tiene, a 25 °C, una conductividad de:",
+      "opciones": [
+        "147 µS/cm",
+        "1 413 µS/cm",
+        "12 880 µS/cm"
+      ],
+      "correcta": 1,
+      "explicacion": "147 µS/cm corresponde al KCl 0,001 mol/L y 12 880 µS/cm al 0,1 mol/L. Se elige el patrón del mismo orden de magnitud que las muestras.",
+      "fuente": "Catálogos de patrones de conductividad",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q14",
+      "pregunta": "Al aumentar la temperatura de una muestra, su conductividad:",
+      "opciones": [
+        "Aumenta, del orden de un 2 % por grado",
+        "Disminuye, del orden de un 2 % por grado",
+        "No varía, porque depende solo de los iones presentes"
+      ],
+      "correcta": 0,
+      "explicacion": "Los iones se mueven más deprisa y la conductividad sube, aproximadamente un 2 % por grado. Por eso todo resultado va referido a una temperatura y los aparatos compensan.",
+      "fuente": "Doctrina; documentación de fabricante"
+    },
+    {
+      "id": "t24-q15",
+      "pregunta": "El valor paramétrico de conductividad del Real Decreto 3/2023 está referido a:",
+      "opciones": [
+        "25 °C",
+        "20 °C",
+        "La temperatura de la muestra en el momento de medir"
+      ],
+      "correcta": 1,
+      "explicacion": "El RD 3/2023 lo da como 2 500 µS/cm a 20 °C, mientras que el ensayo se refiere habitualmente a 25 °C. Comparar dos conductividades sin decir a qué temperatura están referidas no significa nada.",
+      "fuente": "RD 3/2023, anexo I, parte C, tabla 3",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q16",
+      "pregunta": "La ventaja de una célula de conductividad de cuatro electrodos frente a una de dos es que:",
+      "opciones": [
+        "Permite medir sin sumergir la célula en la muestra",
+        "No necesita determinar la constante de célula",
+        "Evita la polarización y amplía el intervalo de medida"
+      ],
+      "correcta": 2,
+      "explicacion": "Dos electrodos inyectan la corriente y otros dos miden la tensión, con lo que se evitan la polarización y el efecto de la resistencia de los cables. La que no toca el líquido es la inductiva o toroidal.",
+      "fuente": "Documentación de fabricante; doctrina"
+    },
+    {
+      "id": "t24-q17",
+      "pregunta": "La medida de conductividad se realiza con corriente alterna para:",
+      "opciones": [
+        "No electrolizar la muestra ni polarizar los electrodos",
+        "Poder medir a mayor distancia del aparato",
+        "Compensar automáticamente la temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "Con corriente continua se acumularían iones en las placas y la lectura derivaría. La alterna invierte el sentido continuamente y lo evita.",
+      "fuente": "Doctrina; documentación de fabricante"
+    },
+    {
+      "id": "t24-q18",
+      "pregunta": "Para medir la conductividad de un agua residual sucia, corrosiva y que forma incrustaciones, la célula más adecuada es:",
+      "opciones": [
+        "La de dos electrodos de platino platinado",
+        "La inductiva o toroidal, sin contacto eléctrico con el líquido",
+        "Cualquiera, siempre que se enjuague entre muestras"
+      ],
+      "correcta": 1,
+      "explicacion": "La inductiva mide con dos bobinas, sin electrodos en contacto con el líquido, así que ni se ensucian ni se corroen. Es la típica de medida en línea en aguas difíciles.",
+      "fuente": "Documentación de fabricante"
+    },
+    {
+      "id": "t24-q19",
+      "pregunta": "La medida del oxígeno disuelto con sonda de membrana es, en rigor:",
+      "opciones": [
+        "Una potenciometría, porque se mide una diferencia de potencial",
+        "Una conductimetría, porque se mide la conductividad del electrolito",
+        "Una amperometría, porque se mide una corriente"
+      ],
+      "correcta": 2,
+      "explicacion": "El oxígeno difunde por la membrana y se reduce en el cátodo: lo que se mide es la corriente que produce esa reducción, proporcional a la presión parcial de oxígeno. No se mide potencial a intensidad nula.",
+      "fuente": "UNE-EN ISO 5814:2013; doctrina",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q20",
+      "pregunta": "La diferencia esencial entre una sonda de oxígeno polarográfica y una galvánica es que:",
+      "opciones": [
+        "La polarográfica necesita una tensión de polarización externa y la galvánica no",
+        "La galvánica no lleva membrana permeable a los gases",
+        "La polarográfica mide en porcentaje de saturación y la galvánica en mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "En la galvánica la pareja de metales (cátodo de plata, ánodo de plomo) genera su propia fem y está lista al instante, a costa de que el ánodo se consuma. La polarográfica o de Clark, con cátodo de oro o platino y ánodo de plata, necesita polarizarse antes de medir. Las dos llevan membrana y las dos dan las dos unidades.",
+      "fuente": "Documentación de fabricante",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q21",
+      "pregunta": "Al medir oxígeno disuelto con una sonda de membrana en agua en reposo, la lectura tiende a bajar porque:",
+      "opciones": [
+        "La membrana se satura de oxígeno y deja de dejarlo pasar",
+        "La sonda consume el oxígeno y hay que renovar la muestra agitando",
+        "El electrolito interno se agota en unos segundos"
+      ],
+      "correcta": 1,
+      "explicacion": "La sonda gasta el oxígeno que difunde, así que la película pegada a la membrana se empobrece si el agua no se renueva. Hay que agitar la muestra o mover la sonda. El sensor óptico no tiene ese problema porque no consume oxígeno.",
+      "fuente": "UNE-EN ISO 5814; documentación de fabricante",
+      "nucleo": true
+    },
+    {
+      "id": "t24-q22",
+      "pregunta": "El 100 % de saturación de una sonda de oxígeno disuelto se calibra habitualmente:",
+      "opciones": [
+        "En agua destilada recién hervida",
+        "En una disolución de sulfito sódico",
+        "En aire saturado de humedad"
+      ],
+      "correcta": 2,
+      "explicacion": "El aire saturado de humedad equivale al 100 % de saturación. El sulfito sódico consume el oxígeno y sirve justamente para lo contrario: el cero.",
+      "fuente": "Documentación de fabricante; UNE-EN ISO 5814"
+    },
+    {
+      "id": "t24-q23",
+      "pregunta": "Las correcciones que hay que aplicar a una medida de oxígeno disuelto son:",
+      "opciones": [
+        "Temperatura, presión atmosférica y salinidad",
+        "Temperatura, pH y turbidez",
+        "Presión atmosférica, conductividad y color"
+      ],
+      "correcta": 0,
+      "explicacion": "La solubilidad del oxígeno baja al subir la temperatura y al aumentar la salinidad, y la saturación depende de la presión parcial de oxígeno del aire, es decir, de la presión atmosférica o la altitud.",
+      "fuente": "UNE-EN ISO 5814; documentación de fabricante"
+    },
+    {
+      "id": "t24-q24",
+      "pregunta": "Frente a la sonda electroquímica de membrana, el sensor óptico de oxígeno disuelto (ISO 17289):",
+      "opciones": [
+        "Necesita mayor agitación de la muestra",
+        "Solo puede usarse en el laboratorio, no en campo",
+        "No consume oxígeno, así que no necesita agitación"
+      ],
+      "correcta": 2,
+      "explicacion": "Se basa en la extinción de la fluorescencia por el oxígeno, sin consumirlo. Por eso no necesita renovar la muestra, y va bien en aguas coloreadas y turbias y en las que el Winkler falla.",
+      "fuente": "ISO 17289:2014"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t24-s01",
+      "titulo": "Supuesto 1. Control en campo de un agua: conductividad, oxígeno disuelto y fluoruro",
+      "enunciado": "El Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza realiza un control en campo. Se llevan un **conductivímetro**, una **sonda de oxígeno disuelto de membrana** y un **electrodo selectivo de fluoruro**.\n\n**Conductividad.** Antes de salir se determina la **constante de la célula**: con el patrón de **KCl 0,01 mol/L**, cuya conductividad es **1 413 µS/cm a 25 °C**, el equipo mide una **conductancia de 1 766 µS**. Ya en campo, y a 25 °C, la muestra da una **conductancia de 565 µS**.\n\n**Oxígeno disuelto.** La sonda se calibra correctamente. Al introducirla en un vaso con la muestra **sin agitar**, la lectura empieza en 8,1 mg/L y va **descendiendo poco a poco** sin llegar a estabilizarse.\n\n**Fluoruro.** Se mide con electrodo selectivo y **TISAB**. El agua contiene **aluminio y hierro** en cantidad apreciable.\n\nResponda a las siguientes preguntas.",
+      "figura": {
+        "tipo": "esquema",
+        "valor": "celda-conductividad"
+      },
+      "preguntas": [
+        {
+          "id": "t24-s01-q1",
+          "pregunta": "¿Cuál es la constante de la célula de conductividad?",
+          "opciones": [
+            "0,50 cm⁻¹",
+            "0,80 cm⁻¹",
+            "1,25 cm⁻¹",
+            "1,80 cm⁻¹"
+          ],
+          "correcta": 1,
+          "explicacion": "La constante se obtiene como K = κ(patrón) / G(medida) = 1 413 µS/cm ÷ 1 766 µS = 0,80 cm⁻¹. El valor 1,25 cm⁻¹ es el cociente invertido.",
+          "fuente": "Doctrina; UNE-EN 27888"
+        },
+        {
+          "id": "t24-s01-q2",
+          "pregunta": "¿Cuál es la conductividad de la muestra, expresada en µS/cm y en mS/m?",
+          "opciones": [
+            "565 µS/cm, es decir, 56,5 mS/m",
+            "452 µS/cm, es decir, 4,52 mS/m",
+            "452 µS/cm, es decir, 45,2 mS/m",
+            "706 µS/cm, es decir, 70,6 mS/m"
+          ],
+          "correcta": 2,
+          "explicacion": "κ = G · K = 565 µS × 0,80 cm⁻¹ = 452 µS/cm. Y como 1 mS/m = 10 µS/cm, son 45,2 mS/m. Los 565 µS/cm salen de olvidar multiplicar por la constante de célula, y los 706 de dividir por ella en vez de multiplicar.",
+          "fuente": "UNE-EN 27888; conversión de unidades"
+        },
+        {
+          "id": "t24-s01-q3",
+          "pregunta": "El valor paramétrico de conductividad del RD 3/2023 es de 2 500 µS/cm. ¿Puede afirmarse sin más que la muestra cumple?",
+          "opciones": [
+            "Sí: 452 es menor que 2 500, y con eso basta",
+            "No, porque el valor paramétrico solo se aplica a aguas residuales",
+            "No, porque la conductividad debe expresarse obligatoriamente en mS/m",
+            "No, porque el valor paramétrico se refiere a 20 °C y la medida se ha hecho a 25 °C: hay que referir ambas a la misma temperatura"
+          ],
+          "correcta": 3,
+          "explicacion": "El RD 3/2023 da el valor paramétrico como 2 500 µS/cm a 20 °C, y el ensayo se refiere habitualmente a 25 °C. Como la conductividad sube con la temperatura (del orden de un 2 % por grado), comparar sin referir ambas a la misma temperatura no significa nada. El margen aquí es amplio, pero el razonamiento es el que se pide.",
+          "fuente": "RD 3/2023, anexo I, parte C, tabla 3; UNE-EN 27888"
+        },
+        {
+          "id": "t24-s01-q4",
+          "pregunta": "¿Por qué la lectura de oxígeno disuelto va descendiendo sin estabilizarse?",
+          "opciones": [
+            "Porque la sonda consume el oxígeno y la muestra no se está renovando: falta agitación",
+            "Porque la membrana está rota y entra agua en el electrolito",
+            "Porque no se ha aplicado la corrección de salinidad",
+            "Porque la sonda no ha terminado de polarizarse"
+          ],
+          "correcta": 0,
+          "explicacion": "La sonda de membrana gasta el oxígeno que difunde hacia el cátodo. Si el agua está quieta, la película pegada a la membrana se empobrece y la lectura baja y sigue bajando. Hay que agitar la muestra o mover la sonda. Un sensor óptico no tendría este problema, porque no consume oxígeno.",
+          "fuente": "UNE-EN ISO 5814; documentación de fabricante"
+        },
+        {
+          "id": "t24-s01-q5",
+          "pregunta": "Con aluminio y hierro presentes, ¿qué función del TISAB resulta imprescindible y qué pasaría sin ella?",
+          "opciones": [
+            "La de tamponar el pH; sin ella se formaría HF y el resultado saldría alto",
+            "La de fijar la fuerza iónica; sin ella el electrodo mediría actividad y el resultado saldría alto",
+            "La de acomplejar los cationes con CDTA; sin ella el aluminio y el hierro esconderían el fluoruro y el resultado saldría bajo",
+            "Ninguna: el electrodo de LaF₃ es específico del fluoruro y no le afectan otros iones"
+          ],
+          "correcta": 2,
+          "explicacion": "El Al³⁺ y el Fe³⁺ forman complejos con el fluoruro y lo retiran de la disolución: el electrodo no lo ve y el resultado sale bajo. El CDTA del TISAB los secuestra para que se mida el fluoruro total. Las otras dos funciones del TISAB (fuerza iónica y tampón de pH) también son necesarias, pero la que resuelve este problema concreto es el acomplejamiento. Y ningún electrodo es específico: todos son selectivos.",
+          "fuente": "Documentación de fabricante; bibliografía"
+        }
+      ]
+    }
+  ]
+}
