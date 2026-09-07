@@ -24,6 +24,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'lampara-catodo-hueco': 'Lámpara de cátodo hueco',
   'absorcion-atomica': 'Espectrómetro de absorción atómica de llama',
   'horno-grafito': 'Programa de temperaturas del horno de grafito',
+  'antorcha-icp': 'Antorcha de plasma acoplado inductivamente',
+  'icp-ms': 'ICP-MS: del plasma al vacío, a través de los conos',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -42,6 +44,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'lampara-catodo-hueco': { ancho: 420, alto: 212 },
   'absorcion-atomica': { ancho: 530, alto: 215 },
   'horno-grafito': { ancho: 340, alto: 222 },
+  'antorcha-icp': { ancho: 460, alto: 232 },
+  'icp-ms': { ancho: 540, alto: 224 },
 }
 
 const AZUL = '#9ecbe8'
@@ -1106,6 +1110,227 @@ function HornoGrafito() {
   )
 }
 
+/* ---------- Tema 27: plasma acoplado inductivamente ---------- */
+
+/**
+ * La antorcha, que es la pieza clave y pregunta documentada dos veces.
+ *
+ * Lo que tiene que verse, y por eso se comprueba luego midiendo el dibujo: que
+ * los tres tubos son CONCENTRICOS y que la MUESTRA entra por el central,
+ * mientras los dos argones entran por las coronas de fuera.
+ */
+function AntorchaIcp() {
+  const EJE = 120
+  /** [x inicial, x final, semiancho] de cada tubo, del exterior al central */
+  const tubos: [number, number, number][] = [
+    [116, 300, 42],
+    [132, 272, 26],
+    [148, 264, 8],
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* plasma: sale por la boca de la antorcha */}
+      <path
+        d="M300 84 Q332 76 358 88 Q390 100 412 120 Q390 140 358 152 Q332 164 300 156 Z"
+        fill={AZUL_CLARO}
+        fillOpacity="0.9"
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+      {/* el canal central del plasma, por donde va la muestra */}
+      <line x1="300" y1={EJE} x2="396" y2={EJE} stroke={ROJO} strokeWidth="3" opacity="0.75" />
+
+      {/* los tres tubos concentricos, en seccion: cerrados por la izquierda,
+          que es lo que hace que se lean como tubos y no como rayas sueltas */}
+      {tubos.map(([x0, x1, semi]) => (
+        <path
+          key={x0}
+          d={`M${x1} ${EJE - semi} H${x0} V${EJE + semi} H${x1}`}
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.6"
+        />
+      ))}
+
+      {/* entradas de gas: las dos coronas y, en ROJO, la muestra por el centro */}
+      <g stroke="currentColor" strokeWidth="1.4">
+        <line x1="108" y1="86" x2="140" y2="86" />
+        <line x1="108" y1="103" x2="156" y2="103" />
+      </g>
+      <path d="M142 86 l-8 -3 v6 z" fill="currentColor" />
+      <path d="M158 103 l-8 -3 v6 z" fill="currentColor" />
+      <line x1="108" y1={EJE} x2="172" y2={EJE} stroke={ROJO} strokeWidth="2.6" />
+      <path d="M174 120 l-9 -4 v8 z" fill={ROJO} />
+
+      <g fontSize="8.5" textAnchor="end" fill="currentColor">
+        <text x="104" y="89">Ar tangencial</text>
+        <text x="104" y="106">Ar auxiliar</text>
+        <text x="104" y="123" fill={ROJO}>
+          MUESTRA nebulizada
+        </text>
+      </g>
+
+      {/* bobina de induccion, por fuera del tubo exterior */}
+      <g fill="none" stroke="currentColor" strokeWidth="1.8">
+        {[246, 264, 282].map((cx) => (
+          <ellipse key={cx} cx={cx} cy={EJE} rx="6" ry="46" />
+        ))}
+      </g>
+      <line x1="230" y1="66" x2="230" y2="74" stroke="currentColor" strokeWidth="0.8" />
+      <text x="230" y="62" textAnchor="middle" fontSize="8.5" fill="currentColor">
+        Bobina de radiofrecuencia
+      </text>
+
+      <text x="336" y="62" textAnchor="middle" fontSize="8.5" fill="currentColor">
+        base: hasta 10 000 K
+      </text>
+      <line x1="336" y1="66" x2="322" y2="92" stroke="currentColor" strokeWidth="0.8" />
+
+      {/* zona de medida: dentro del plasma y por detras de la bobina */}
+      <g stroke={ROJO} strokeWidth="1.6">
+        <line x1="356" y1="96" x2="356" y2="144" />
+        <line x1="350" y1="96" x2="362" y2="96" />
+        <line x1="350" y1="144" x2="362" y2="144" />
+      </g>
+      <text x="356" y="190" textAnchor="middle" fontSize="8.5" fill={ROJO}>
+        zona de medida: 6 000 - 8 000 K
+      </text>
+      <line x1="356" y1="144" x2="356" y2="182" stroke={ROJO} strokeWidth="0.8" strokeDasharray="3 3" />
+
+      {/* cota de la altura de observacion sobre la bobina */}
+      <g stroke="currentColor" strokeWidth="1.2">
+        <line x1="282" y1="172" x2="356" y2="172" />
+        <path d="M282 172 l8 -4 v8 z" fill="currentColor" stroke="none" />
+        <path d="M356 172 l-8 -4 v8 z" fill="currentColor" stroke="none" />
+      </g>
+      <text x="319" y="167" textAnchor="middle" fontSize="8" fill="currentColor">
+        15-20 mm
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="210">
+          Tres tubos concéntricos de cuarzo: el Ar exterior va TANGENCIAL y aísla el cuarzo.
+        </text>
+        <text x="8" y="222">
+          Se enciende con una chispa TESLA y se mantiene por INDUCCIÓN: no hay electrodos.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * El ICP-MS entero. Lo que tiene que ensenar es EL SALTO DE PRESION: el plasma
+ * trabaja a una atmosfera y el espectrometro en alto vacio, y entre los dos
+ * estan los dos conos. Por eso las presiones van rotuladas y se comprueba que
+ * caen a lo largo del camino.
+ */
+function IcpMs() {
+  const EJE = 100
+  const cono = (x: number, alto: number, hueco: number) => (
+    <g key={x} fill="none" stroke="currentColor" strokeWidth="1.6">
+      <path d={`M${x + 18} ${EJE - alto} L${x} ${EJE - hueco} L${x + 18} ${EJE - hueco} Z`} />
+      <path d={`M${x + 18} ${EJE + alto} L${x} ${EJE + hueco} L${x + 18} ${EJE + hueco} Z`} />
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* nebulizador y camara */}
+      <rect x="8" y="84" width="44" height="32" rx="4" {...trazo} />
+      <path d="M18 100 h12 M30 94 l10 6 l-10 6" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* antorcha y plasma */}
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1="62" y1="86" x2="112" y2="86" />
+        <line x1="62" y1="114" x2="112" y2="114" />
+      </g>
+      <path
+        d="M112 82 Q136 74 152 88 Q168 100 152 112 Q136 126 112 118 Z"
+        fill={AZUL_CLARO}
+        fillOpacity="0.9"
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+
+      {/* el haz de iones */}
+      <line x1="112" y1={EJE} x2="182" y2={EJE} stroke={ROJO} strokeWidth="3" />
+      <line x1="182" y1={EJE} x2="217" y2={EJE} stroke={ROJO} strokeWidth="2" />
+      <line x1="217" y1={EJE} x2="440" y2={EJE} stroke={ROJO} strokeWidth="1.3" />
+
+      {/* la interfase: cono de muestreo y cono skimmer */}
+      {cono(182, 34, 4)}
+      {cono(217, 26, 3)}
+
+      {/* lentes ionicas */}
+      <g stroke="currentColor" strokeWidth="1.6">
+        {[254, 270, 286].map((x) => (
+          <g key={x}>
+            <line x1={x} y1="78" x2={x} y2="94" />
+            <line x1={x} y1="106" x2={x} y2="122" />
+          </g>
+        ))}
+      </g>
+
+      {/* cuadrupolo: cuatro barras */}
+      <g {...trazo}>
+        <rect x="320" y="74" width="100" height="10" rx="5" />
+        <rect x="320" y="116" width="100" height="10" rx="5" />
+        <rect x="332" y="86" width="76" height="7" rx="3.5" />
+        <rect x="332" y="107" width="76" height="7" rx="3.5" />
+      </g>
+
+      {/* detector */}
+      <rect x="440" y="84" width="46" height="32" rx="4" {...trazo} />
+      <path d="M450 108 l10 -14 l10 8" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* separadores de las zonas de presion */}
+      <g stroke="currentColor" strokeWidth="0.8" strokeDasharray="3 3" opacity="0.6">
+        <line x1="178" y1="60" x2="178" y2="140" />
+        <line x1="213" y1="60" x2="213" y2="140" />
+        <line x1="245" y1="60" x2="245" y2="140" />
+      </g>
+
+      <Rotulo
+        x={150}
+        y={38}
+        hacia={[190, 70]}
+        lineas={['Cono de muestreo', '(sampler), ≈ 1 mm']}
+      />
+      <Rotulo x={272} y={44} hacia={[228, 78]} derecha lineas={['Cono skimmer']} />
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="30" y="170">Nebulizador</text>
+        <text x="132" y="170">Antorcha y plasma</text>
+        <text x="214" y="170">Interfase</text>
+        <text x="282" y="170">Lentes iónicas</text>
+        <text x="370" y="170">Cuadrupolo</text>
+        <text x="463" y="170">Detector</text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x="30" y="182">y cámara</text>
+        <text x="132" y="182">6 000 - 8 000 K</text>
+        <text x="214" y="182">los dos conos</text>
+        <text x="282" y="182">enfocan los iones</text>
+        <text x="370" y="182">separa por m/z</text>
+        <text x="463" y="182">cuenta iones</text>
+      </g>
+
+      <g fontSize="8.5" textAnchor="middle" fill={ROJO}>
+        <text x="120" y="200">1 atm</text>
+        <text x="207" y="200">≈ 1 torr</text>
+        <text x="340" y="200">≈ 10⁻⁵ torr</text>
+      </g>
+
+      <text x="8" y="216" fontSize="8.5" fill="currentColor">
+        El salto de presión es lo característico del ICP-MS: el plasma está a 1 atm y el espectrómetro,
+        en alto vacío.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -1136,6 +1361,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <AbsorcionAtomica />
     case 'horno-grafito':
       return <HornoGrafito />
+    case 'antorcha-icp':
+      return <AntorchaIcp />
+    case 'icp-ms':
+      return <IcpMs />
   }
 }
 

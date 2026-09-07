@@ -68,6 +68,13 @@ function medir(sabotaje, ROJO) {
   const curvas = (svg, minimo = 40) =>
     [...svg.querySelectorAll('path')].map((p) => ({ el: p, pts: puntos(p) })).filter((c) => c.pts.length >= minimo)
 
+  /**
+   * Color de trazo EFECTIVO. Muchos dibujos ponen el `stroke` en el <g> que
+   * agrupa, no en cada linea, asi que getAttribute('stroke') devuelve null y un
+   * selector por color se queda sin encontrar nada.
+   */
+  const trazoDe = (el) => el.getAttribute('stroke') ?? el.closest('[stroke]')?.getAttribute('stroke')
+
   const centroX = (svg, texto) => {
     const t = [...svg.querySelectorAll('text')].find(
       (e) => e.textContent.replace(/\s+/g, ' ').trim() === texto,
@@ -179,6 +186,45 @@ function medir(sabotaje, ROJO) {
     const svg = porClave('ley-beer')
     const t = svg.querySelector('text')
     t.setAttribute('x', '-60')
+  }
+
+  if (sabotaje === 13) {
+    const svg = porClave('antorcha-icp')
+    const muestra = [...svg.querySelectorAll('line')].find(
+      (l) => Number(l.getAttribute('x1')) === 108 && l.getAttribute('stroke') === ROJO,
+    )
+    // la muestra entra por la corona exterior en vez de por el tubo central
+    muestra.setAttribute('y1', '86')
+    muestra.setAttribute('y2', '86')
+  }
+  if (sabotaje === 14) {
+    const svg = porClave('antorcha-icp')
+    const marca = [...svg.querySelectorAll('line')].find(
+      (l) =>
+        trazoDe(l) === ROJO &&
+        l.getAttribute('x1') === l.getAttribute('x2') &&
+        !l.getAttribute('stroke-dasharray'),
+    )
+    // la zona de medida se pinta ANTES de la bobina, dentro de la antorcha
+    marca.setAttribute('x1', '200')
+    marca.setAttribute('x2', '200')
+  }
+  if (sabotaje === 15) {
+    const svg = porClave('icp-ms')
+    // el cuadrupolo se rotula al principio de la cadena
+    ;[...svg.querySelectorAll('text')]
+      .find((t) => t.textContent.trim() === 'Cuadrupolo')
+      .setAttribute('x', '100')
+  }
+  if (sabotaje === 16) {
+    const svg = porClave('icp-ms')
+    const texto = (t) => [...svg.querySelectorAll('text')].find((e) => e.textContent.trim() === t)
+    // las presiones, del revés: el vacío antes que la atmósfera
+    const alta = texto('1 atm')
+    const baja = texto('≈ 10⁻⁵ torr')
+    const x = alta.getAttribute('x')
+    alta.setAttribute('x', baja.getAttribute('x'))
+    baja.setAttribute('x', x)
   }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
@@ -394,6 +440,106 @@ function medir(sabotaje, ROJO) {
     return `máximo de Δ en x=${cima[0].toFixed(0)}, corte de Δ² en x=${corte.toFixed(0)}, marca en x=${xPE}`
   })
 
+  control('Antorcha · tres tubos concéntricos y la muestra por el CENTRAL', () => {
+    const svg = porClave('antorcha-icp')
+    // cada tubo es un path "M x1 y H x0 V y H x1"; el plasma y las flechas no lo son
+    const tubos = [...svg.querySelectorAll('path')]
+      .filter((p) => /^M[\d.]+ [\d.]+ H[\d.]+ V[\d.]+ H[\d.]+$/.test(p.getAttribute('d').trim()))
+      .map((p) => {
+        const n = p.getAttribute('d').match(/-?\d+(?:\.\d+)?/g).map(Number)
+        return { arriba: n[1], abajo: n[3], centro: (n[1] + n[3]) / 2, semi: (n[3] - n[1]) / 2 }
+      })
+      .sort((a, b) => b.semi - a.semi)
+    if (tubos.length !== 3) throw new Error(`se esperaban 3 tubos y hay ${tubos.length}`)
+
+    const centros = tubos.map((t) => t.centro)
+    if (Math.max(...centros) - Math.min(...centros) > 0.5) {
+      throw new Error(`los tres tubos no comparten eje: centros en ${centros.join(', ')}`)
+    }
+    for (let i = 1; i < 3; i++) {
+      if (!(tubos[i].arriba > tubos[i - 1].arriba && tubos[i].abajo < tubos[i - 1].abajo)) {
+        throw new Error('los tubos no están anidados uno dentro de otro')
+      }
+    }
+
+    const central = tubos[2]
+    const entradas = [...svg.querySelectorAll('line')].filter(
+      (l) => Number(l.getAttribute('x1')) === 108,
+    )
+    if (entradas.length !== 3) throw new Error(`se esperaban 3 entradas y hay ${entradas.length}`)
+    const muestra = entradas.find((l) => l.getAttribute('stroke') === ROJO)
+    if (!muestra) throw new Error('no encuentro la entrada de muestra')
+    const y = Number(muestra.getAttribute('y1'))
+    if (!(y > central.arriba && y < central.abajo)) {
+      throw new Error(
+        `la muestra entra a y=${y}, fuera del tubo central [${central.arriba}, ${central.abajo}]`,
+      )
+    }
+    const gasesDentro = entradas
+      .filter((l) => l !== muestra)
+      .map((l) => Number(l.getAttribute('y1')))
+      .filter((gy) => gy > central.arriba && gy < central.abajo)
+    if (gasesDentro.length) throw new Error('un argón entra también por el tubo central')
+    return `semianchos ${tubos.map((t) => t.semi).join(' > ')}, eje común en ${central.centro}, muestra a y=${y}`
+  })
+
+  control('Antorcha · la zona de medida, dentro del plasma y detrás de la bobina', () => {
+    const svg = porClave('antorcha-icp')
+    const espiras = [...svg.querySelectorAll('ellipse')].map((e) => Number(e.getAttribute('cx')))
+    if (espiras.length !== 3) throw new Error(`se esperaban 3 espiras y hay ${espiras.length}`)
+    const bobina = Math.max(...espiras)
+
+    const marca = [...svg.querySelectorAll('line')].find(
+      (l) =>
+        trazoDe(l) === ROJO &&
+        l.getAttribute('x1') === l.getAttribute('x2') &&
+        !l.getAttribute('stroke-dasharray'),
+    )
+    if (!marca) throw new Error('no encuentro la marca de la zona de medida')
+    const x = Number(marca.getAttribute('x1'))
+    if (!(x > bobina)) {
+      throw new Error(`la zona de medida (x=${x}) no queda detrás de la bobina (x=${bobina})`)
+    }
+    const plasma = [...svg.querySelectorAll('path')].find((p) => p.getAttribute('fill') === '#cfe6f4')
+    if (!plasma) throw new Error('no encuentro el plasma')
+    const caja = plasma.getBBox()
+    if (!(x > caja.x && x < caja.x + caja.width)) {
+      throw new Error(`la zona de medida (x=${x}) cae fuera del plasma`)
+    }
+    const base = centroX(svg, 'base: hasta 10 000 K')
+    const zona = centroX(svg, 'zona de medida: 6 000 - 8 000 K')
+    if (!(base < zona)) {
+      throw new Error(`la base (x=${base.toFixed(0)}) debería quedar antes de la zona de medida (x=${zona.toFixed(0)})`)
+    }
+    return `bobina hasta x=${bobina}, zona en x=${x} dentro del plasma [${caja.x.toFixed(0)}, ${(caja.x + caja.width).toFixed(0)}]`
+  })
+
+  control('ICP-MS · las etapas van en orden', () =>
+    enOrden(porClave('icp-ms'), [
+      'Nebulizador',
+      'Antorcha y plasma',
+      'Interfase',
+      'Lentes iónicas',
+      'Cuadrupolo',
+      'Detector',
+    ]),
+  )
+
+  control('ICP-MS · la presión CAE a lo largo del camino', () => {
+    const svg = porClave('icp-ms')
+    // declaradas de MAYOR a menor presión: sus rótulos han de ir de izquierda a derecha
+    const zonas = ['1 atm', '≈ 1 torr', '≈ 10⁻⁵ torr']
+    const xs = zonas.map((z) => [z, centroX(svg, z)])
+    for (let i = 1; i < xs.length; i++) {
+      if (!(xs[i][1] > xs[i - 1][1])) {
+        throw new Error(
+          `«${xs[i][0]}» (x=${xs[i][1].toFixed(0)}) debería ir después de «${xs[i - 1][0]}» (x=${xs[i - 1][1].toFixed(0)}): la presión tiene que caer`,
+        )
+      }
+    }
+    return xs.map(([z, x]) => `${z}@${x.toFixed(0)}`).join(' → ')
+  })
+
   return resultados
 }
 
@@ -412,6 +558,10 @@ const SABOTAJES = {
   10: 'las marcas del punto de equivalencia, movidas fuera de las curvas',
   11: 'un esquema del catálogo, encogido por debajo de su tamaño natural',
   12: 'un rótulo, sacado fuera del lienzo',
+  13: 'la muestra entrando por la corona exterior de la antorcha, no por el tubo central',
+  14: 'la zona de medida pintada antes de la bobina',
+  15: 'el cuadrupolo rotulado al principio de la cadena del ICP-MS',
+  16: 'las presiones del ICP-MS, del revés',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -434,6 +584,10 @@ const CONTROL_DE = {
   10: [11],
   11: [0],
   12: [1],
+  13: [12],
+  14: [13],
+  15: [14],
+  16: [15],
 }
 
 async function main() {

@@ -50,6 +50,8 @@ export type TipoEsquema =
   | 'lampara-catodo-hueco'
   | 'absorcion-atomica'
   | 'horno-grafito'
+  | 'antorcha-icp'
+  | 'icp-ms'
 
 export type TipoMaterial =
   | 'matraz-aforado'
