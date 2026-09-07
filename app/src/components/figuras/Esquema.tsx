@@ -20,6 +20,10 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   espectrofotometro: 'Espectrofotómetro UV-visible de haz simple',
   'ley-beer': 'Ley de Lambert-Beer: absorción en la cubeta',
   'desviacion-beer': 'Recta de calibrado y desviación de la ley de Beer',
+  'linea-vs-banda': 'Línea atómica frente a banda molecular',
+  'lampara-catodo-hueco': 'Lámpara de cátodo hueco',
+  'absorcion-atomica': 'Espectrómetro de absorción atómica de llama',
+  'horno-grafito': 'Programa de temperaturas del horno de grafito',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -34,6 +38,10 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   espectrofotometro: { ancho: 490, alto: 205 },
   'ley-beer': { ancho: 400, alto: 185 },
   'desviacion-beer': { ancho: 310, alto: 215 },
+  'linea-vs-banda': { ancho: 370, alto: 204 },
+  'lampara-catodo-hueco': { ancho: 420, alto: 212 },
+  'absorcion-atomica': { ancho: 530, alto: 215 },
+  'horno-grafito': { ancho: 340, alto: 222 },
 }
 
 const AZUL = '#9ecbe8'
@@ -695,6 +703,409 @@ function DesviacionBeer() {
   )
 }
 
+/* ---------- Tema 26: espectroscopia atomica ---------- */
+
+const gauss = (t: number, mu: number, sigma: number) => Math.exp(-((t - mu) ** 2) / (2 * sigma ** 2))
+
+/**
+ * La frontera con el tema 25, dibujada: la MOLECULA en disolucion da una banda
+ * ancha y el ATOMO libre una linea estrecha. Las dos curvas salen de la misma
+ * gaussiana y con la misma altura, para que lo unico que las distinga sea la
+ * anchura, que es de lo que trata la figura.
+ */
+function LineaVsBanda() {
+  const izq: Caja = { x: 30, y: 34, ancho: 130, alto: 96 }
+  const der: Caja = { x: 216, y: 34, ancho: 130, alto: 96 }
+  const banda = (t: number) => gauss(t, 0.5, 0.16)
+  const linea = (t: number) => gauss(t, 0.5, 0.012)
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text
+        x={izq.x + izq.ancho / 2}
+        y="16"
+        textAnchor="middle"
+        fontSize="9.5"
+        fontWeight="bold"
+        fill="currentColor"
+      >
+        Molécula en disolución
+      </text>
+      <text
+        x={der.x + der.ancho / 2}
+        y="16"
+        textAnchor="middle"
+        fontSize="9.5"
+        fontWeight="bold"
+        fill="currentColor"
+      >
+        Átomo libre en fase gaseosa
+      </text>
+
+      <Ejes caja={izq} rotuloY="A" rotuloX="λ" />
+      <Ejes caja={der} rotuloY="A" rotuloX="λ" />
+
+      <path d={camino(banda, izq, 600)} fill="none" stroke="currentColor" strokeWidth="2" />
+      <path d={camino(linea, der, 600)} fill="none" stroke={ROJO} strokeWidth="2" />
+
+      <g fontSize="8.5" textAnchor="middle" fill="currentColor">
+        <text x={izq.x + izq.ancho / 2} y="160">
+          banda ancha
+        </text>
+        <text x={izq.x + izq.ancho / 2} y="171">
+          (decenas de nm)
+        </text>
+        <text x={der.x + der.ancho / 2} y="160" fill={ROJO}>
+          línea estrecha
+        </text>
+        <text x={der.x + der.ancho / 2} y="171" fill={ROJO}>
+          (≈ 0,002 nm)
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="187">
+          Una fuente continua repartiría su energía por toda la banda: sobre una línea así no mediría
+        </text>
+        <text x="8" y="198">
+          casi nada. Por eso la absorción atómica usa fuente de LÍNEAS: la lámpara de cátodo hueco.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * La lampara de catodo hueco por dentro. Lo que tiene que verse: que el catodo
+ * es HUECO y esta hecho del elemento a analizar, y que la luz nace dentro de esa
+ * cavidad y sale por la ventana.
+ */
+function LamparaCatodoHueco() {
+  const gas = [
+    [186, 84],
+    [214, 132],
+    [244, 90],
+    [200, 124],
+    [268, 122],
+    [232, 74],
+    [258, 76],
+    [178, 138],
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* ampolla de vidrio */}
+      <rect x="44" y="54" width="296" height="104" rx="16" {...trazo} />
+
+      {/* ventana de cuarzo, en el extremo por el que sale el haz */}
+      <rect
+        x="330"
+        y="70"
+        width="10"
+        height="72"
+        fill={AZUL_CLARO}
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+
+      {/* catodo hueco: cilindro abierto hacia la ventana */}
+      <path
+        d="M150 72 H126 A34 34 0 0 0 126 140 H150 V128 H132 A22 22 0 0 1 132 84 H150 Z"
+        fill="currentColor"
+        fillOpacity="0.35"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+
+      {/* anodo */}
+      <line x1="286" y1="76" x2="286" y2="136" stroke="currentColor" strokeWidth="3" />
+      <circle cx="286" cy="136" r="4" fill="currentColor" />
+
+      {/* gas inerte a baja presion */}
+      <g fill="currentColor" opacity="0.4">
+        {gas.map(([x, y]) => (
+          <circle key={String(x) + '-' + String(y)} cx={x} cy={y} r="3" />
+        ))}
+      </g>
+
+      {/* pulverizacion catodica: el ion del gas arranca atomos del catodo */}
+      <line x1="182" y1="84" x2="120" y2="98" stroke="currentColor" strokeWidth="1" />
+      <path d="M117 99 l9 -1 l-4 -4 z" fill="currentColor" />
+      <text x="185" y="80" fontSize="8" fill="currentColor">
+        Ne⁺
+      </text>
+
+      {/* el haz nace DENTRO de la cavidad y sale por la ventana */}
+      <line x1="140" y1="106" x2="404" y2="106" stroke={ROJO} strokeWidth="2.6" />
+      <path d="M404 106 l-10 -5 v10 z" fill={ROJO} />
+
+      {/* patillas y polaridad */}
+      <line x1="122" y1="140" x2="122" y2="170" stroke="currentColor" strokeWidth="1.6" />
+      <line x1="286" y1="140" x2="286" y2="170" stroke="currentColor" strokeWidth="1.6" />
+      <text x="108" y="166" fontSize="12" fill="currentColor">
+        −
+      </text>
+      <text x="292" y="166" fontSize="12" fill="currentColor">
+        +
+      </text>
+
+      <Rotulo
+        x={118}
+        y={26}
+        hacia={[128, 74]}
+        lineas={['Cátodo hueco: el metal', 'del elemento a analizar']}
+      />
+      <Rotulo x={302} y={30} hacia={[286, 78]} derecha lineas={['Ánodo']} />
+      <Rotulo x={352} y={54} hacia={[336, 74]} derecha lineas={['Ventana', 'de cuarzo']} />
+
+      <text x="205" y="150" textAnchor="middle" fontSize="8" fill="currentColor">
+        gas inerte (Ne o Ar) a baja presión
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="190">
+          Emite las líneas del propio elemento del cátodo: hace falta una lámpara por elemento.
+        </text>
+        <text x="8" y="203">
+          Alternativa más intensa: lámpara de descarga sin electrodos (EDL).
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * El espectrometro de absorcion atomica. La diferencia que hay que ver respecto
+ * del de absorcion molecular del tema 25: aqui el MONOCROMADOR VA DETRAS del
+ * atomizador, porque la llama emite luz propia y hay que aislar la linea al
+ * final; y hay un modulador que separa lo que viene de la lampara de lo que
+ * emite la llama.
+ */
+function AbsorcionAtomica() {
+  const Y = 104
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* fuente: lampara de catodo hueco */}
+      <rect x="10" y="84" width="56" height="40" rx="4" {...trazo} />
+      <path
+        d="M40 92 H30 A12 12 0 0 0 30 116 H40"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+      <circle cx="54" cy={Y} r="3" fill="currentColor" />
+      <line x1="66" y1={Y} x2="82" y2={Y} stroke={ROJO} strokeWidth="2.6" />
+
+      {/* modulador (chopper): trocea el haz de la lampara */}
+      <circle cx="98" cy={Y} r="16" {...trazo} />
+      <path d="M98 104 L98 88 A16 16 0 0 1 114 104 Z" fill="currentColor" opacity="0.55" />
+      <path d="M98 104 L98 120 A16 16 0 0 1 82 104 Z" fill="currentColor" opacity="0.55" />
+      <path d="M104 82 a18 18 0 0 1 10 10" fill="none" stroke="currentColor" strokeWidth="1" />
+      <line x1="114" y1={Y} x2="176" y2={Y} stroke={ROJO} strokeWidth="2.6" />
+
+      {/* atomizador: llama sobre mechero de ranura */}
+      <path
+        d="M180 112 Q182 94 192 86 Q198 80 202 88 Q208 70 218 60 Q228 72 234 88 Q239 79 245 87 Q254 95 256 112 Z"
+        fill={AZUL_CLARO}
+        fillOpacity="0.85"
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+      <path d="M196 112 L218 88 L240 112 Z" fill={AZUL} fillOpacity="0.7" stroke="none" />
+      <rect x="176" y="112" width="84" height="14" {...trazo} />
+      <rect x="204" y="126" width="28" height="24" {...trazo} />
+      <line x1="178" y1="148" x2="200" y2="148" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M202 148 l-8 -3 v6 z" fill="currentColor" />
+      <text x="172" y="160" textAnchor="middle" fontSize="8" fill="currentColor">
+        muestra
+      </text>
+      <text x="218" y="52" textAnchor="middle" fontSize="8.5" fill="currentColor">
+        llama aire-acetileno
+      </text>
+
+      {/* el haz sale atenuado del atomizador */}
+      <line x1="176" y1={Y} x2="260" y2={Y} stroke={ROJO} strokeWidth="2.6" />
+      <line x1="260" y1={Y} x2="300" y2={Y} stroke={ROJO} strokeWidth="1.2" />
+
+      {/* monocromador, DESPUES del atomizador */}
+      <rect x="300" y="76" width="24" height="56" {...trazo} />
+      <g stroke="currentColor" strokeWidth="1">
+        {[82, 90, 98, 106, 114, 122, 128].map((y) => (
+          <line key={y} x1="302" y1={y} x2="322" y2={y} />
+        ))}
+      </g>
+      <text x="312" y="70" textAnchor="middle" fontSize="8" fill="currentColor">
+        red de difracción
+      </text>
+      <line x1="324" y1={Y} x2="366" y2={Y} stroke={ROJO} strokeWidth="1.2" />
+
+      {/* detector y lectura */}
+      <rect x="366" y="84" width="44" height="40" rx="4" {...trazo} />
+      <path d="M378 104 a10 10 0 0 1 18 0" fill="none" stroke="currentColor" strokeWidth="1.6" />
+      <line x1="410" y1={Y} x2="428" y2={Y} stroke="currentColor" strokeWidth="1.4" />
+      <rect x="428" y="86" width="88" height="36" rx="4" {...trazo} />
+      <text x="472" y="109" textAnchor="middle" fontSize="14" fill="currentColor">
+        A = 0,120
+      </text>
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="38" y="170">
+          Fuente
+        </text>
+        <text x="98" y="170">
+          Modulador
+        </text>
+        <text x="218" y="170">
+          Atomizador
+        </text>
+        <text x="312" y="170">
+          Monocromador
+        </text>
+        <text x="388" y="170">
+          Detector
+        </text>
+        <text x="472" y="170">
+          Lectura
+        </text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x="38" y="182">
+          lámpara de
+        </text>
+        <text x="38" y="192">
+          cátodo hueco
+        </text>
+        <text x="98" y="182">
+          chopper
+        </text>
+        <text x="218" y="182">
+          llama u horno
+        </text>
+        <text x="218" y="192">
+          de grafito
+        </text>
+        <text x="312" y="182">
+          aísla la línea
+        </text>
+        <text x="388" y="182">
+          fotomultiplicador
+        </text>
+        <text x="472" y="182">
+          absorbancia
+        </text>
+      </g>
+
+      <text x="8" y="208" fontSize="8.5" fill="currentColor">
+        Ojo al orden: aquí el monocromador va DESPUÉS del atomizador; en el tema 25 iba antes de la
+        cubeta.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * El programa de temperaturas del horno de grafito. Lo que tiene que ensenar es
+ * que LA SENAL ES UN PICO TRANSITORIO Y CAE DENTRO DE LA ATOMIZACION: no se lee
+ * una senal estable como en la llama, se integra un pico.
+ */
+function HornoGrafito() {
+  const caja: Caja = { x: 62, y: 26, ancho: 250, alto: 120 }
+  const yEje = caja.y + caja.alto
+  const px = (t: number) => caja.x + t * caja.ancho
+  const py = (nivel: number) => yEje - nivel * caja.alto
+
+  /** [nombre, t inicial, t final, nivel de temperatura] */
+  const etapas: [string, number, number, number][] = [
+    ['Secado', 0.02, 0.22, 0.05],
+    ['Calcinación', 0.28, 0.52, 0.32],
+    ['Atomización', 0.58, 0.74, 0.93],
+    ['Limpieza', 0.8, 0.96, 0.99],
+  ]
+
+  const escalones = etapas
+    .map(
+      ([, t0, t1, n]) =>
+        `L${px(t0).toFixed(1)} ${py(n).toFixed(1)} L${px(t1).toFixed(1)} ${py(n).toFixed(1)}`,
+    )
+    .join(' ')
+  const programa = `M${px(0)} ${yEje} ${escalones} L${px(0.99).toFixed(1)} ${yEje}`
+
+  /** el pico de absorbancia, centrado en la atomizacion */
+  const pico = (t: number) => 0.43 * gauss(t, 0.66, 0.035)
+
+  const marcas: [number, string][] = [
+    [0.05, '≈ 110 °C'],
+    [0.32, '350-1200 °C'],
+    [0.93, '2000-3000 °C'],
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <Ejes caja={caja} rotuloY="Temperatura" />
+
+      <g fontSize="8" fill="currentColor">
+        {marcas.map(([n, texto]) => (
+          <g key={texto}>
+            <line
+              x1={caja.x - 4}
+              y1={py(n)}
+              x2={caja.x}
+              y2={py(n)}
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+            <text x={caja.x - 7} y={py(n) + 3} textAnchor="end">
+              {texto}
+            </text>
+          </g>
+        ))}
+      </g>
+
+      <path d={programa} fill="none" stroke="currentColor" strokeWidth="2" />
+      <path d={camino(pico, caja, 400)} fill="none" stroke={ROJO} strokeWidth="2" />
+
+      <g fontSize="8.5" fill={ROJO}>
+        <text x="246" y="92">
+          absorbancia
+        </text>
+        <text x="246" y="102">
+          (escala aparte)
+        </text>
+      </g>
+
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        {etapas.map(([nombre, t0, t1]) => (
+          <text key={nombre} x={px((t0 + t1) / 2)} y={yEje + 14}>
+            {nombre}
+          </text>
+        ))}
+      </g>
+      <text
+        x={caja.x + caja.ancho}
+        y={yEje + 28}
+        textAnchor="end"
+        fontSize="8.5"
+        fill="currentColor"
+      >
+        tiempo
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="190">
+          5-50 µL de muestra · 45-90 s por ciclo · atmósfera de argón
+        </text>
+        <text x="8" y="202">
+          Tubo de grafito de 1-3 cm, calentado por resistencia eléctrica.
+        </text>
+        <text x="8" y="214">
+          La señal es un PICO TRANSITORIO: solo aparece durante la atomización.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -717,6 +1128,14 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <LeyBeer />
     case 'desviacion-beer':
       return <DesviacionBeer />
+    case 'linea-vs-banda':
+      return <LineaVsBanda />
+    case 'lampara-catodo-hueco':
+      return <LamparaCatodoHueco />
+    case 'absorcion-atomica':
+      return <AbsorcionAtomica />
+    case 'horno-grafito':
+      return <HornoGrafito />
   }
 }
 

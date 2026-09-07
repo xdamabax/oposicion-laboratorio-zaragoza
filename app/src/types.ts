@@ -46,6 +46,10 @@ export type TipoEsquema =
   | 'espectrofotometro'
   | 'ley-beer'
   | 'desviacion-beer'
+  | 'linea-vs-banda'
+  | 'lampara-catodo-hueco'
+  | 'absorcion-atomica'
+  | 'horno-grafito'
 
 export type TipoMaterial =
   | 'matraz-aforado'
