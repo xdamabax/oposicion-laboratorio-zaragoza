@@ -1,0 +1,869 @@
+{
+  "tema": 26,
+  "titulo": "Espectroscopía atómica: Espectroscopía de absorción atómica: fundamentos e instrumentación. Utilización de la espectroscopía atómica en análisis de agua.",
+  "generadoDe": "temas/tema-26.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-07",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t26-f01",
+      "anverso": "¿Qué mide la espectroscopía atómica y sobre qué?",
+      "reverso": "Mide la radiación que **absorben, emiten o reemiten átomos libres en estado gaseoso**.\nSu objeto es siempre **EL ELEMENTO, no el compuesto**: da igual en qué forma química esté el plomo en el agua; lo que se mide es plomo.\nEs, con el ICP del tema 27, la familia de técnicas de **los metales**.",
+      "fuente": "CEM, procedimiento QU-001, apartado 4.2.1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f02",
+      "anverso": "Define **absorción atómica** y **emisión atómica** con las palabras que usan los exámenes.",
+      "reverso": "**Absorción atómica:** «técnica de análisis basada en la **absorción de radiación electromagnética por partículas atómicas**».\n**Emisión atómica:** «técnica de análisis que se fundamenta en la **intensidad de radiación emitida por átomos excitados**».\nLas dos frases aparecen **literales** en 1246 #14 y 1322 #31, como distractores de la pregunta «la cromatografía es…».",
+      "fuente": "Cuestionarios 1246 #14 y 1322 #31",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f03",
+      "anverso": "Las tres espectroscopías atómicas: qué mide cada una y si necesita lámpara.",
+      "reverso": "**Absorción (AAS o EAA):** la radiación que **absorben** los átomos en estado fundamental. **Sí** necesita lámpara, una por elemento.\n**Emisión (AES):** la radiación que **emiten** los átomos excitados. **NO** necesita lámpara: la fuente es la propia llama o el plasma.\n**Fluorescencia (AFS):** la radiación que los átomos **reemiten** tras absorber. Sí necesita lámpara.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4 y 10.7",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f04",
+      "anverso": "¿En qué se basa la espectrofotometría de absorción atómica, según el CEM?",
+      "reverso": "En la «**absorción selectiva de radiación luminosa a una longitud de onda determinada por parte de los átomos (o iones simples) en estado gaseoso**» de cada elemento.\nY añade el CEM: «la absorción atómica **se rige teóricamente por la ley de Beer-Lambert**», que expresa la proporcionalidad entre absorbancia y concentración. Por eso se cuantifica igual que en el tema 25: **por recta de calibrado**.",
+      "fuente": "CEM, procedimiento QU-001, apartado 4.2.1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f05",
+      "anverso": "¿Por qué la molécula da banda ancha y el átomo libre da línea estrecha?",
+      "reverso": "La **molécula en disolución** tiene, además de niveles electrónicos, niveles **vibracionales y rotacionales**, y encima está rodeada de disolvente: su absorción se ensancha hasta una **banda de decenas de nm**.\nEl **átomo libre en fase gaseosa** no tiene ni vibración, ni rotación, ni disolvente: da una **línea de ≈ 0,002 nm**, ensanchada solo por efecto **Doppler** y por **presión**.",
+      "fuente": "LibreTexts, Análisis Instrumental, 9.2; Harvey 10.4",
+      "etiquetas": [
+        "fundamento",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "linea-vs-banda"
+      }
+    },
+    {
+      "id": "t26-f06",
+      "anverso": "¿Por qué la absorción atómica no puede usar una fuente continua?",
+      "reverso": "Porque el monocromador dejaría pasar una banda de **≈ 1 nm**, unas **1 000 veces más ancha que la línea de absorción** (≈ 0,002 nm).\nLos átomos solo absorberían la fracción minúscula que cae en su línea: la potencia que entra y la que sale serían casi iguales, la transmitancia saldría ≈ 100 % y **la absorbancia, ≈ 0**.\nLa solución es **iluminar con la propia línea del elemento**: una **fuente de líneas**.",
+      "fuente": "LibreTexts, Análisis Instrumental, 9.2",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f07",
+      "anverso": "Las cinco diferencias entre la absorción molecular (tema 25) y la atómica (tema 26).",
+      "reverso": "1. **La muestra:** disolución en cubeta ↔ hay que **ATOMIZAR**.\n2. **La fuente:** continua (deuterio y tungsteno) ↔ de **LÍNEAS** (cátodo hueco).\n3. **El monocromador:** **ANTES** de la cubeta ↔ **DESPUÉS** del atomizador.\n4. **La selectividad:** baja, hace falta reactivo cromogénico ↔ **muy alta**.\n5. **Qué se determina:** una **especie química** ↔ un **ELEMENTO**.",
+      "fuente": "Temas 25 y 26",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f08",
+      "anverso": "Nombra por orden las etapas de un espectrómetro de absorción atómica.",
+      "reverso": "**Fuente → Modulador (chopper) → Atomizador → Monocromador → Detector → Lectura.**\nOjo al orden: **el monocromador va DESPUÉS del atomizador**, al revés que el espectrofotómetro UV-visible del tema 25, donde iba antes de la cubeta.",
+      "fuente": "CEM, procedimiento QU-001, apartado 4.1",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f09",
+      "anverso": "¿Por qué el monocromador va DETRÁS del atomizador?",
+      "reverso": "Porque **el atomizador emite luz propia**: la llama brilla y los átomos excitados emiten en la misma línea que se está midiendo.\nSi el monocromador fuera delante, esa emisión llegaría entera al detector y se sumaría a la señal. Puesto detrás, **aísla la línea justo antes de medir**.",
+      "fuente": "Bibliografía de análisis instrumental",
+      "etiquetas": [
+        "instrumentacion",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "absorcion-atomica"
+      }
+    },
+    {
+      "id": "t26-f10",
+      "anverso": "¿Para qué sirve el modulador o *chopper*?",
+      "reverso": "Es un **disco troceador** delante de la lámpara. Bloquea el haz alternativamente, de modo que el detector mide **primero solo lo que emite la llama** y luego **la llama más la lámpara**: la **diferencia** es lo que de verdad viene de la fuente.\nSin modulación, la **emisión propia del atomizador** se leería como señal.",
+      "fuente": "LibreTexts, Análisis Instrumental, 9.2",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t26-f11",
+      "anverso": "¿Qué fuentes de radiación se usan en absorción atómica?",
+      "reverso": "**Lámparas de CÁTODO HUECO** (monoelementales) y **lámparas de DESCARGA SIN ELECTRODOS**, o EDL (multielementales, más intensas).\n**No** lámparas continuas ni de deuterio: el deuterio aquí no es la fuente, sino el **corrector de fondo**.\nEs pregunta documentada: **1233 R2**.",
+      "fuente": "CEM, QU-001, apartado 4.1.4; cuestionario 1233 R2",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f12",
+      "anverso": "En una lámpara de cátodo hueco, ¿qué proceso arranca los átomos del cátodo y hace que emitan luz?",
+      "reverso": "**Pulverización catódica** (*sputtering*): al aplicar tensión se ioniza el gas inerte y **los iones bombardean el cátodo, arrancando átomos del metal**; esos átomos se excitan por choque y **emiten el espectro de líneas de ese elemento**.\nY la luz sirve porque **el cátodo está hecho del elemento que se va a analizar**: emite exactamente las líneas que ese elemento absorbe. De ahí que **haga falta una lámpara por elemento**.",
+      "fuente": "CEM, QU-001, 4.1.4; LibreTexts 9.2",
+      "etiquetas": [
+        "instrumentacion",
+        "figura"
+      ],
+      "nucleo": true,
+      "figura": {
+        "tipo": "esquema",
+        "valor": "lampara-catodo-hueco"
+      }
+    },
+    {
+      "id": "t26-f13",
+      "anverso": "¿Por qué se dice que la absorción atómica es una técnica MONOELEMENTAL?",
+      "reverso": "Porque **cada elemento necesita su propia lámpara y su propia medida**: una línea, una lámpara, una lectura.\nPor eso, cuando hay que determinar **muchos metales en la misma muestra**, se prefiere el **ICP** (tema 27), que los mide todos de una pasada. En 1246 la respuesta a «análisis de cadmio» fue **ICP-MS** por ese motivo.",
+      "fuente": "Cuestionarios 1246 C2 #1 y 1322 C2 #40",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t26-f14",
+      "anverso": "¿Qué es atomizar y qué tres pasos exige?",
+      "reverso": "Convertir el analito en **átomos libres en estado gaseoso**. Tres pasos sucesivos:\n**1. DESOLVATAR** (evaporar el disolvente) → **2. VOLATILIZAR** → **3. DISOCIAR** en átomos libres.\nEjemplo: CuCl₂(ac) → CuCl₂(s) → Cu(g) + 2 Cl(g).",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f15",
+      "anverso": "Las cuatro maneras de atomizar en absorción atómica.",
+      "reverso": "**1. LLAMA (FAAS)** — lo normal, para mg/L.\n**2. CÁMARA DE GRAFITO** o atomización electrotérmica (GFAAS) — para trazas, µg/L.\n**3. VAPOR FRÍO (CVAAS)** — solo **mercurio**.\n**4. GENERACIÓN DE HIDRUROS (HGAAS)** — As, Se, Sb, Bi, Ge, Sn, Te, Pb.\nElegir bien entre ellas es lo que preguntan los supuestos.",
+      "fuente": "CEM, QU-001, apartados 4.1.2 y 4.1.3",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f16",
+      "anverso": "¿Cómo llega la muestra a la llama, y qué fracción llega de verdad?",
+      "reverso": "Se **aspira** por un capilar, se **nebuliza** con el gas a presión y pasa a una **cámara de premezcla**, donde solo la niebla más fina sigue adelante.\n**Hasta el 95 % de la muestra NO llega a la llama**: se va por el desagüe.\nEl **mechero de ranura** da un camino óptico largo y una llama estable.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "etiquetas": [
+        "atomizacion"
+      ]
+    },
+    {
+      "id": "t26-f17",
+      "anverso": "Los dos tipos de llama, sus temperaturas y para qué sirve cada uno.",
+      "reverso": "**AIRE-ACETILENO: 2 100 - 2 400 °C.** La normal, para casi todos los metales (Cd, Cu, Zn, Ni, Pb, Fe, Mn, Co, Ag, Ca, Mg…).\n**ÓXIDO NITROSO-ACETILENO: 2 600 - 2 800 °C.** Para elementos **refractarios**, que forman óxidos estables: **aluminio, molibdeno**, silicio, titanio, vanadio, boro.\nEl combustible es el **acetileno**; lo que cambia es el **oxidante**.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4; CEM QU-001, 4.1.1",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f18",
+      "anverso": "¿Qué es una llama oxidante y una reductora, y para qué elementos se usa cada una?",
+      "reverso": "**Oxidante (azul)**: pobre en combustible. Es la habitual: Cd, Zn, Co, Cu, Fe, Mn, Ni, Ag, Pb.\n**Reductora (amarilla o roja)**: rica en combustible. Para **cromo** (aire-acetileno reductora) y para **aluminio y molibdeno** (óxido nitroso-acetileno reductora).\nSe regula con el caudal de los gases.",
+      "fuente": "INSST, MTA/MA-025/A16, tabla 1",
+      "etiquetas": [
+        "atomizacion"
+      ]
+    },
+    {
+      "id": "t26-f19",
+      "anverso": "¿Qué es la cámara de grafito y qué volumen de muestra admite?",
+      "reverso": "Un **tubo de grafito de 1-3 cm de largo y 3-8 mm de diámetro** que se calienta **por resistencia eléctrica** en **atmósfera de argón**.\nSe inyectan **5-50 µL** y el ciclo completo dura **45-90 s**.\nTambién se llama **atomización electrotérmica** (GFAAS o ETAAS).",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4; CEM QU-001, 4.1.3",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f20",
+      "anverso": "Las etapas del programa de temperaturas del horno de grafito.",
+      "reverso": "**1. SECADO ≈ 110 °C** — evapora el disolvente.\n**2. CALCINACIÓN** (ceniza, pirólisis) **350 - 1 200 °C** — destruye la materia orgánica y elimina la matriz.\n**3. ATOMIZACIÓN 2 000 - 3 000 °C** — libera los átomos: **aquí aparece la señal**.\n**4. Limpieza**, por encima de la atomización, para eliminar el efecto memoria.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f21",
+      "anverso": "¿En qué se diferencia la SEÑAL del horno de grafito de la de la llama?",
+      "reverso": "En el **horno la señal es un PICO TRANSITORIO**, que se mide **por altura o por integración del área**: todo el analito se atomiza de golpe.\nEn **llama** se aspira de forma continua y se espera a una **lectura estable**.\nEl CEM lo recoge al pedir que se seleccione el modo de medida «por alturas o por integración de áreas».",
+      "fuente": "CEM, procedimiento QU-001, apartado 5.3.1",
+      "etiquetas": [
+        "atomizacion"
+      ]
+    },
+    {
+      "id": "t26-f22",
+      "anverso": "Ventajas e inconvenientes de la cámara de grafito frente a la llama.",
+      "reverso": "**A favor:** la concentración de átomos en fase vapor es **unas 1 000 veces mayor** que en llama, así que la **sensibilidad** es muchísimo mayor; y basta con **microlitros** de muestra.\n**En contra:** **peor precisión** (cuesta reproducir el contacto de la gota con el tubo), es **más lenta**, tiene **más absorción de fondo** —la corrección de fondo es casi obligatoria— y sufre **efecto memoria**.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "etiquetas": [
+        "atomizacion"
+      ]
+    },
+    {
+      "id": "t26-f23",
+      "anverso": "¿Qué son la plataforma L'vov, los modificadores de matriz y el efecto memoria?",
+      "reverso": "**Plataforma L'vov:** una plaquita dentro del tubo que retrasa la atomización hasta que el gas está caliente y estable.\n**Modificadores de matriz:** nitrato de **paladio**, de **magnesio** o de **lantano**, para que el analito aguante la calcinación sin perderse.\n**Efecto memoria:** restos de la inyección anterior; se combate **intercalando blancos** entre patrones y muestras.",
+      "fuente": "CEM, QU-001, apartados 4.1.3, 5.1 y 5.3.5",
+      "etiquetas": [
+        "atomizacion",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "horno-grafito"
+      }
+    },
+    {
+      "id": "t26-f24",
+      "anverso": "¿En qué consiste la técnica del VAPOR FRÍO y para qué elemento es?",
+      "reverso": "**Solo para el MERCURIO.**\nSe reduce a **Hg⁰ elemental** con **cloruro de estaño (II), SnCl₂** (o borohidruro sódico). El mercurio elemental es **volátil a temperatura ambiente**: un gas de arrastre (argón) lo lleva a una **célula de observación SIN CALENTAR** y se mide a **253,7 nm**.\n**No hay llama ni horno**: de ahí el nombre.",
+      "fuente": "LibreTexts (Harvey) 10.4; UNE-EN ISO 12846:2012; CEM QU-001, 4.1.1",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f25",
+      "anverso": "¿En qué consiste la GENERACIÓN DE HIDRUROS y para qué elementos vale?",
+      "reverso": "Con **borohidruro sódico (NaBH₄) en medio ácido**, unos pocos elementos forman **hidruros volátiles** que se arrastran a una **célula calentada** donde se descomponen.\nElementos: **As, Se, Sb, Bi, Ge, Sn, Te y Pb**.\nSepara el analito de la matriz y multiplica la sensibilidad.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4; CEM QU-001, 4.1.2",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f26",
+      "anverso": "TRAMPA DE EXAMEN: ¿se puede determinar sodio o calcio por generación de hidruros?",
+      "reverso": "**NO.** La generación de hidruros **solo vale para los elementos que forman hidruros volátiles** (As, Se, Sb, Bi, Ge, Sn, Te, Pb). **El sodio, el calcio, el magnesio y el potasio no forman hidruros volátiles.**\nSodio y calcio se hacen por **absorción atómica de LLAMA** (o por emisión de llama).\n«Absorción atómica con generación de hidruros» aparece literalmente como opción en los supuestos de **1233 y 1246**.",
+      "fuente": "Cuestionarios 1233 C2 #3 y 1246 C2 #3",
+      "etiquetas": [
+        "atomizacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f27",
+      "anverso": "¿Qué compone el sistema óptico de un equipo de absorción atómica, según el CEM?",
+      "reverso": "**Fuentes de energía radiante moduladas** (cátodo hueco, EDL), **rendija regulable en anchura**, **selector de longitud de onda**, **monocromador**, **fotomultiplicador**, **corrector de radiación de fondo** (lámpara de deuterio o efecto Zeeman) y **cámara para vapor frío**.\nY luego el **amplificador logarítmico**, que es el que **convierte la transmitancia medida en absorbancia**.",
+      "fuente": "CEM, procedimiento QU-001, apartados 4.1.4 y 4.1.5",
+      "etiquetas": [
+        "instrumentacion"
+      ]
+    },
+    {
+      "id": "t26-f28",
+      "anverso": "¿Cuáles son los dos sistemas de CORRECCIÓN DE FONDO?",
+      "reverso": "**1. Lámpara de DEUTERIO.** Mide alternativamente con la lámpara de cátodo hueco (analito + fondo) y con una lámpara continua de D₂ (prácticamente solo fondo, porque la línea del analito es despreciable frente a la banda ancha) y **resta**.\n**2. Efecto ZEEMAN.** Un campo magnético desdobla la línea; comparando las componentes se separa el fondo. Es el más fino y el habitual en cámara de grafito.",
+      "fuente": "CEM, QU-001, apartado 4.1.4; LibreTexts (Harvey) 10.4",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f29",
+      "anverso": "¿Qué es una interferencia ESPECTRAL en absorción atómica y cómo se corrige?",
+      "reverso": "Aparece cuando **un átomo distinto del que se mide absorbe parte de la radiación incidente**. Es **rara**, y se da sobre todo al usar una **lámpara multielemento** con dos líneas de emisión muy próximas de elementos distintos.\n**Se corrige** usando una **lámpara de un único elemento** o **cambiando de longitud de onda**.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.1",
+      "etiquetas": [
+        "interferencias"
+      ]
+    },
+    {
+      "id": "t26-f30",
+      "anverso": "¿Qué es la absorción INESPECÍFICA o de fondo, y a qué longitudes de onda se nota?",
+      "reverso": "No la produce el analito: la producen **partículas formadas en la llama que desvían el haz** y **especies moleculares que absorben radiación**.\nSe nota **sobre todo por debajo de 250 nm**.\nSe elimina con un **dispositivo corrector de la absorción de fondo**: deuterio o Zeeman.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.2",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f31",
+      "anverso": "¿Qué es la interferencia de IONIZACIÓN y cómo se controla?",
+      "reverso": "El elemento **se ioniza a la temperatura de la llama** y deja de absorber como átomo, así que la señal baja. Es típica de **alcalinos y alcalinotérreos**, y peor cuanto más caliente es la llama.\n**Se controla añadiendo a muestras y patrones la sal de un metal alcalino**, que se ioniza más fácilmente y actúa de tampón: **1 000 µg de CESIO por mL** suelen bastar. También se usa potasio.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.3",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f32",
+      "anverso": "¿Qué es una interferencia QUÍMICA y cómo se corrige?",
+      "reverso": "El analito **forma un compuesto estable y poco volátil** y no llega a atomizarse: baja el número de átomos libres. El caso clásico es el **fosfato (o el aluminio) sobre el calcio**.\n**Se corrige de tres maneras:**\n- **Llama más caliente** (óxido nitroso-acetileno).\n- **Agente LIBERADOR**, que se queda con el interferente: **1 000 µg de LANTANO por mL** (también estroncio).\n- **Agente PROTECTOR**, que forma con el analito un complejo volátil: **EDTA**.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.4; LibreTexts (Harvey) 10.4",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f33",
+      "anverso": "Un ejemplo numérico de interferencia química.",
+      "reverso": "Añadir **100 ppm de Al³⁺** a una disolución de **5 ppm de Ca²⁺** hace caer la absorbancia del calcio **de 0,50 a 0,14**.\nEl aluminio forma con el calcio un compuesto refractario que no se atomiza. Se corrige con **lantano** o **estroncio** como agentes liberadores.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "etiquetas": [
+        "interferencias"
+      ]
+    },
+    {
+      "id": "t26-f34",
+      "anverso": "¿Cuándo y cómo se cuantifica por ADICIÓN DE PATRÓN?",
+      "reverso": "Cuando **la matriz de la muestra no se puede reproducir en los patrones** y hay riesgo de interferencia de matriz.\nConsiste en «determinar la **diferencia de absorbancias entre la muestra y alícuotas de la misma fortificadas con concentraciones conocidas** del elemento en estudio», y de ahí sacar la relación absorbancia/concentración.\nLa regla general del CEM: patrones y muestras deben tener **la misma matriz** y recibir **el mismo tratamiento**.",
+      "fuente": "CEM, procedimiento QU-001, apartado 2 (alcance)",
+      "etiquetas": [
+        "calibracion"
+      ]
+    },
+    {
+      "id": "t26-f35",
+      "anverso": "¿Qué es la CONCENTRACIÓN CARACTERÍSTICA y qué valor de absorbancia la define?",
+      "reverso": "La **concentración (o masa) característica** es la concentración o masa de analito que da **una absorbancia determinada, fijada generalmente en 0,0044 unidades de absorbancia**.\nEs la manera de expresar la **sensibilidad** del equipo para cada elemento; los manuales la traen, y sirve para comprobar que el aparato está en forma.",
+      "fuente": "CEM, procedimiento QU-001, apartado 5.3.6",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f36",
+      "anverso": "¿Cuántos patrones exige el CEM para la recta de calibrado, y cada cuánto se calibra?",
+      "reverso": "**Como mínimo 3 patrones, y es más aconsejable de 5 a 7**, abarcando todo el rango del elemento.\n**La calibración se repite ANTES DE CADA SESIÓN de análisis**, y siempre que se haga algún ajuste suplementario o cuando lo pida el control de calidad.\nSe recomienda **lectura múltiple** de cada patrón (por ejemplo, por triplicado) y promediar.",
+      "fuente": "CEM, procedimiento QU-001, apartados 5.3.8 a 5.3.11",
+      "etiquetas": [
+        "calibracion"
+      ]
+    },
+    {
+      "id": "t26-f37",
+      "anverso": "Condiciones previas a la calibración de un equipo de absorción atómica.",
+      "reverso": "- Temperatura ambiente entre **15 °C y 30 °C**.\n- **15-30 minutos** de calentamiento tras conectar el equipo.\n- Material volumétrico **clase A**, lavado con **ácido nítrico 0,1 mol/L**.\n- Patrones trazables, que se venden típicamente a **1 000 mg/L** y hay que **diluir**; agua **doblemente desionizada exenta de metales**.\n- Comprobar lámpara, alineamiento, intensidad de corriente, caudales de gases y **ajuste fino de la longitud de onda**.",
+      "fuente": "CEM, procedimiento QU-001, apartados 5.1 y 5.2",
+      "etiquetas": [
+        "calibracion"
+      ]
+    },
+    {
+      "id": "t26-f38",
+      "anverso": "Metales TOTALES o metales DISUELTOS: ¿qué se hace en cada caso?",
+      "reverso": "**Metales DISUELTOS:** se **FILTRA** la muestra (0,45 µm) y se acidifica.\n**Metales TOTALES:** **NO se filtra**; hay que **DIGERIR** la muestra —**ácido y en caliente**— para liberar el metal ocluido en partículas y materia orgánica.\nSin digestión, un agua residual da resultados bajos. Es pregunta documentada: **1246 #25**.",
+      "fuente": "UNE-EN ISO 15587-1 y -2:2002; cuestionario 1246 #25",
+      "etiquetas": [
+        "agua"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f39",
+      "anverso": "¿Qué normas regulan la digestión previa y a qué aguas se aplican?",
+      "reverso": "**UNE-EN ISO 15587-1:2002** — digestión con **agua regia**.\n**UNE-EN ISO 15587-2:2002** — digestión con **ácido nítrico**.\nAplicables a aguas con menos de **20 g/L de sólidos en suspensión** y menos de **5 g/L de carbono orgánico total**.",
+      "fuente": "UNE-EN ISO 15587-1:2002 y -2:2002",
+      "etiquetas": [
+        "normas"
+      ]
+    },
+    {
+      "id": "t26-f40",
+      "anverso": "Las normas de absorción atómica en análisis de agua, por analito.",
+      "reverso": "**UNE-EN ISO 15586:2004** → elementos **traza** por **cámara de grafito**.\n**UNE-EN ISO 12846:2012** → **mercurio** por AAS, con y sin enriquecimiento.\n**UNE-EN ISO 7980:2000** → **calcio y magnesio** por AAS.\n**UNE-EN ISO 5961:1995** → **cadmio** por AAS.\n**UNE-EN ISO 17852:2008** → mercurio por **fluorescencia atómica**.\n⚠️ **UNE-EN ISO 11969** (arsénico por hidruros) está **ANULADA** desde el 18/09/2014.",
+      "fuente": "Catálogo de AENOR, verificado el 07/09/2026",
+      "etiquetas": [
+        "normas"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f41",
+      "anverso": "¿Qué le exige la ley al método de análisis de metales en agua de consumo?",
+      "reverso": "El **RD 3/2023 NO impone método** para los parámetros físico-químicos. Exige que el que se use pueda medir el valor paramétrico con:\n- **límite de cuantificación ≤ 30 %** del valor paramétrico, y\n- la **incertidumbre (k = 2)** de la **tabla 15**.\nAñade que **el LC y el LD deben ser siempre inferiores al valor paramétrico**, y que esa incertidumbre **no se puede usar como tolerancia adicional**.",
+      "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D, puntos 1 y 3",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t26-f42",
+      "anverso": "¿Y en aguas superficiales?",
+      "reverso": "**RD 817/2015, anexo III, apartado C.1:** los métodos deben estar **validados y documentados conforme a EN ISO/IEC 17025**, con **incertidumbre de medida ≤ 50 % (k = 2)** estimada al nivel de la norma de calidad ambiental y **límite de cuantificación ≤ 30 %** de esa NCA.\nY una regla de cálculo: los resultados **inferiores al LC se sustituyen por la mitad del LC** para calcular medias; en parámetros que son suma de un grupo, **por cero**.",
+      "fuente": "RD 817/2015 (BOE-A-2015-9806), anexo III, C.1 y C.2",
+      "etiquetas": [
+        "normativa"
+      ]
+    }
+  ],
+  "test": [
+    {
+      "id": "t26-q01",
+      "pregunta": "En espectroscopía de absorción atómica se utilizan como fuente de radiación:",
+      "opciones": [
+        "Lámparas de radiación continua",
+        "Lámparas de cátodo hueco y lámparas de descarga sin electrodos",
+        "Lámparas de deuterio"
+      ],
+      "correcta": 1,
+      "explicacion": "El CEM (QU-001, 4.1.4) enumera como fuentes las lámparas de cátodo hueco (monoelementales) y las de descarga sin electrodos (multielementales). Una fuente continua no sirve: su banda es unas 1 000 veces más ancha que la línea de absorción y la absorbancia saldría casi nula. La lámpara de deuterio sí aparece en el equipo, pero como CORRECTOR DE FONDO, no como fuente.",
+      "fuente": "CEM, QU-001, apartado 4.1.4; pregunta literal de 1233 R2",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q02",
+      "pregunta": "«Una técnica de análisis basada en la absorción de radiación electromagnética por partículas atómicas» define:",
+      "opciones": [
+        "La espectroscopía de absorción atómica",
+        "La espectroscopía de emisión atómica",
+        "La cromatografía"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la definición de la absorción atómica, y aparece con esas palabras exactas como distractor en 1246 #14 y 1322 #31. La emisión atómica se define como «la intensidad de radiación emitida por átomos excitados», y la cromatografía como la separación entre una fase móvil y una estacionaria.",
+      "fuente": "Cuestionarios 1246 #14 y 1322 #31",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q03",
+      "pregunta": "En un espectrómetro de absorción atómica, el monocromador se sitúa:",
+      "opciones": [
+        "Entre la fuente y el atomizador, igual que en el espectrofotómetro UV-visible",
+        "Después del detector, para filtrar la señal eléctrica",
+        "Después del atomizador, antes del detector"
+      ],
+      "correcta": 2,
+      "explicacion": "Va DESPUÉS del atomizador porque la llama emite luz propia y los átomos excitados emiten en la misma línea que se mide: puesto detrás, el monocromador aísla la línea justo antes del detector. Es justo al revés que en la absorción molecular del tema 25, donde el monocromador va antes de la cubeta.",
+      "fuente": "CEM, QU-001, apartado 4.1; temas 25 y 26",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q04",
+      "pregunta": "El modulador o *chopper* de un equipo de absorción atómica sirve para:",
+      "opciones": [
+        "Aumentar la intensidad de la lámpara de cátodo hueco",
+        "Seleccionar la longitud de onda de trabajo",
+        "Distinguir la radiación que viene de la lámpara de la que emite el propio atomizador"
+      ],
+      "correcta": 2,
+      "explicacion": "El disco troceador bloquea el haz alternativamente: el detector mide primero solo la emisión de la llama y luego la llama más la lámpara. La diferencia es lo que de verdad procede de la fuente. Quien selecciona la longitud de onda es el monocromador.",
+      "fuente": "LibreTexts, Análisis Instrumental, 9.2"
+    },
+    {
+      "id": "t26-q05",
+      "pregunta": "En una lámpara de cátodo hueco, el cátodo está fabricado con:",
+      "opciones": [
+        "Wolframio, igual que en las lámparas incandescentes",
+        "Grafito de alta pureza",
+        "El metal del elemento que se va a analizar"
+      ],
+      "correcta": 2,
+      "explicacion": "El cátodo es del propio elemento: los iones del gas inerte lo bombardean, arrancan átomos del metal, esos átomos se excitan y emiten el espectro de líneas de ese elemento, que es exactamente el que el analito absorbe. Por eso hace falta una lámpara por elemento y la técnica es monoelemental.",
+      "fuente": "CEM, QU-001, apartado 4.1.4",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q06",
+      "pregunta": "La atomización consiste en:",
+      "opciones": [
+        "Desolvatar, volatilizar y disociar el analito hasta obtener átomos libres en estado gaseoso",
+        "Ionizar el analito para que pueda ser acelerado en un campo eléctrico",
+        "Formar un compuesto coloreado que absorba en el visible"
+      ],
+      "correcta": 0,
+      "explicacion": "Son los tres pasos sucesivos de la atomización. La ionización no es el objetivo, sino una interferencia que hay que evitar. Formar un compuesto coloreado es la estrategia de la absorción MOLECULAR del tema 25.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q07",
+      "pregunta": "En absorción atómica de llama, la muestra que llega realmente a la llama es:",
+      "opciones": [
+        "La totalidad, porque el nebulizador es cuantitativo",
+        "En torno a la mitad",
+        "Una fracción pequeña: hasta el 95 % se pierde por el desagüe de la cámara de premezcla"
+      ],
+      "correcta": 2,
+      "explicacion": "Solo la niebla más fina supera la cámara de premezcla; el resto condensa y se drena. Es una de las limitaciones de sensibilidad de la llama frente a la cámara de grafito, donde se atomiza todo lo inyectado.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4"
+    },
+    {
+      "id": "t26-q08",
+      "pregunta": "Para determinar aluminio por absorción atómica de llama se emplea:",
+      "opciones": [
+        "Llama de aire-acetileno, oxidante",
+        "Llama de aire-propano",
+        "Llama de óxido nitroso-acetileno, reductora"
+      ],
+      "correcta": 2,
+      "explicacion": "El aluminio es refractario: forma óxidos muy estables que la llama de aire-acetileno (2 100-2 400 °C) no disocia. Hace falta la de óxido nitroso-acetileno (2 600-2 800 °C) y en régimen reductor. El MTA/MA-025 del INSST le asigna 309,3 nm con esa llama, igual que al molibdeno.",
+      "fuente": "INSST, MTA/MA-025/A16, tabla 1; Harvey 10.4",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q09",
+      "pregunta": "Las temperaturas aproximadas de las llamas de aire-acetileno y de óxido nitroso-acetileno son, respectivamente:",
+      "opciones": [
+        "2 100-2 400 °C y 2 600-2 800 °C",
+        "1 200-1 500 °C y 2 100-2 400 °C",
+        "2 600-2 800 °C y 6 000-10 000 K"
+      ],
+      "correcta": 0,
+      "explicacion": "El combustible es el acetileno en los dos casos; lo que cambia es el oxidante, y con él la temperatura. Los 6 000-10 000 K son los del plasma de acoplamiento inductivo, que es el tema 27.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4 y 10.7"
+    },
+    {
+      "id": "t26-q10",
+      "pregunta": "El orden correcto de las etapas del programa de un horno de grafito es:",
+      "opciones": [
+        "Atomización, secado, calcinación y limpieza",
+        "Secado, calcinación, atomización y limpieza",
+        "Calcinación, secado, limpieza y atomización"
+      ],
+      "correcta": 1,
+      "explicacion": "Secado (≈ 110 °C) para evaporar el disolvente, calcinación o ceniza (350-1 200 °C) para destruir la materia orgánica y eliminar la matriz, atomización (2 000-3 000 °C) donde aparece la señal, y limpieza para eliminar el efecto memoria. El ciclo completo dura 45-90 s.",
+      "fuente": "LibreTexts, Química Analítica 2.1 (Harvey), 10.4",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q11",
+      "pregunta": "En absorción atómica con cámara de grafito, la señal analítica es:",
+      "opciones": [
+        "Una lectura estable que se toma tras esperar unos segundos, como en llama",
+        "Una recta cuya pendiente es la absorbancia",
+        "Un pico transitorio que se mide por altura o por integración del área"
+      ],
+      "correcta": 2,
+      "explicacion": "Todo el analito se atomiza de golpe dentro del tubo, así que la absorbancia sube y baja: es un pico transitorio. El CEM (5.3.1) pide precisamente seleccionar si la medida se hace «por alturas o por integración de áreas». La lectura estable es la de la llama, donde se aspira de forma continua.",
+      "fuente": "CEM, procedimiento QU-001, apartado 5.3.1"
+    },
+    {
+      "id": "t26-q12",
+      "pregunta": "La determinación de mercurio en agua por absorción atómica se hace habitualmente:",
+      "opciones": [
+        "Por la técnica del vapor frío, reduciendo el mercurio a Hg⁰ y midiendo a 253,7 nm sin llama",
+        "Por llama de óxido nitroso-acetileno, por ser un elemento refractario",
+        "Por generación de hidruros, formando hidruro de mercurio con NaBH₄"
+      ],
+      "correcta": 0,
+      "explicacion": "El mercurio elemental es volátil a temperatura ambiente: se reduce con SnCl₂ (o NaBH₄), se arrastra con un gas inerte a una célula de observación SIN CALENTAR y se mide a 253,7 nm. Está normalizado en la UNE-EN ISO 12846:2012. No es refractario, y no es de los elementos que forman hidruros volátiles.",
+      "fuente": "UNE-EN ISO 12846:2012; CEM QU-001, 4.1.2",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q13",
+      "pregunta": "La generación de hidruros es aplicable a:",
+      "opciones": [
+        "Sodio, potasio, calcio y magnesio",
+        "Cualquier metal, aumentando siempre la sensibilidad",
+        "Arsénico, selenio, antimonio, bismuto, germanio, estaño, teluro y plomo"
+      ],
+      "correcta": 2,
+      "explicacion": "Solo sirve para los elementos que forman hidruros volátiles con NaBH₄ en medio ácido. Los alcalinos y alcalinotérreos NO los forman: el sodio y el calcio se determinan por absorción atómica de llama o por emisión de llama. «Absorción atómica con generación de hidruros» aparece como opción falsa en los supuestos de 1233 y 1246.",
+      "fuente": "LibreTexts (Harvey) 10.4; CEM QU-001, 4.1.2",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q14",
+      "pregunta": "Una interferencia de ionización en absorción atómica de llama se controla:",
+      "opciones": [
+        "Añadiendo a muestras y patrones la sal de un metal alcalino, por ejemplo cesio",
+        "Añadiendo lantano a muestras y patrones",
+        "Empleando una lámpara de deuterio como corrector"
+      ],
+      "correcta": 0,
+      "explicacion": "El supresor de ionización es un elemento que se ioniza más fácilmente que el analito y actúa de tampón: el método del INSST fija 1 000 µg de cesio por mL. El lantano, también a 1 000 µg/mL, es el remedio de las interferencias QUÍMICAS, y el deuterio corrige la absorción de fondo.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.3"
+    },
+    {
+      "id": "t26-q15",
+      "pregunta": "Se determina calcio en un agua y el fosfato de la muestra rebaja la señal. Esta interferencia es:",
+      "opciones": [
+        "Espectral, y se corrige cambiando de longitud de onda",
+        "De fondo, y se corrige con el efecto Zeeman",
+        "Química, y se corrige con una llama más caliente o añadiendo lantano como agente liberador"
+      ],
+      "correcta": 2,
+      "explicacion": "El calcio forma con el fosfato un compuesto estable y poco volátil que no llega a atomizarse: es una interferencia química. Se combate con una llama de mayor temperatura o añadiendo un agente liberador —1 000 µg de lantano por mL, o estroncio—, que se queda con el interferente y deja libre al calcio. También cabe un agente protector como el EDTA.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.4; Harvey 10.4"
+    },
+    {
+      "id": "t26-q16",
+      "pregunta": "La absorción inespecífica o de fondo se manifiesta de forma especialmente notable:",
+      "opciones": [
+        "A longitudes de onda inferiores a 250 nm",
+        "A longitudes de onda superiores a 600 nm",
+        "Solo cuando se usa llama de óxido nitroso-acetileno"
+      ],
+      "correcta": 0,
+      "explicacion": "La producen partículas que desvían el haz y especies moleculares que absorben, y el método del INSST señala expresamente que aparece sobre todo por debajo de 250 nm. Se elimina con un dispositivo corrector de fondo: lámpara de deuterio o efecto Zeeman.",
+      "fuente": "INSST, MTA/MA-025/A16, apartado 8.4.2"
+    },
+    {
+      "id": "t26-q17",
+      "pregunta": "La concentración característica de un elemento en absorción atómica es la que produce una absorbancia de:",
+      "opciones": [
+        "0,434",
+        "0,0044",
+        "1,000"
+      ],
+      "correcta": 1,
+      "explicacion": "El CEM la define como la concentración (o masa) de analito que proporciona una absorbancia determinada, «generalmente fijada en 0,004 4 u.a.». Es la forma de expresar la sensibilidad del equipo para cada elemento. El 0,434 es otra cosa: el mínimo del error fotométrico relativo en espectrofotometría (tema 25).",
+      "fuente": "CEM, procedimiento QU-001, apartado 5.3.6",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q18",
+      "pregunta": "Según el procedimiento QU-001 del CEM, el número de patrones para establecer la curva de calibración debe ser:",
+      "opciones": [
+        "Uno, si es un material de referencia certificado",
+        "Como mínimo 3, y más aconsejable de 5 a 7",
+        "Exactamente 10, repartidos por décadas"
+      ],
+      "correcta": 1,
+      "explicacion": "El CEM pide un mínimo de 3 patrones y recomienda de 5 a 7, abarcando todo el rango del elemento, con lectura múltiple de cada uno. Además, la calibración debe repetirse antes de cada sesión de análisis y siempre que se haga algún ajuste.",
+      "fuente": "CEM, procedimiento QU-001, apartados 5.1, 5.3.9 y 5.3.11"
+    },
+    {
+      "id": "t26-q19",
+      "pregunta": "Para analizar el contenido total de metales en un agua residual, antes de utilizar una técnica instrumental se requiere:",
+      "opciones": [
+        "Filtrar la muestra",
+        "Digestión ácida y en caliente de la muestra y posterior filtración",
+        "Digestión en medio básico de la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Los metales TOTALES incluyen los ocluidos en partículas y en la materia orgánica: filtrar de entrada los eliminaría y el resultado saldría bajo. Hay que digerir con ácido y en caliente —UNE-EN ISO 15587-1 con agua regia o -2 con ácido nítrico— y filtrar después. La filtración de entrada, a 0,45 µm, es lo que se hace para los metales DISUELTOS.",
+      "fuente": "Cuestionario 1246 #25; UNE-EN ISO 15587-1 y -2:2002",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q20",
+      "pregunta": "La determinación de calcio y magnesio en agua por absorción atómica está normalizada en:",
+      "opciones": [
+        "UNE-EN ISO 7980",
+        "UNE-EN ISO 6878",
+        "UNE-EN ISO 12846"
+      ],
+      "correcta": 0,
+      "explicacion": "La UNE-EN ISO 7980:2000 es «Calidad del agua. Determinación del calcio y del magnesio. Método por espectrometría de absorción atómica». La UNE-EN ISO 6878 es el fósforo por absorción molecular con azul de molibdeno (tema 25) y la UNE-EN ISO 12846, el mercurio por absorción atómica.",
+      "fuente": "Catálogo de AENOR, verificado el 07/09/2026",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q21",
+      "pregunta": "Un laboratorio debe determinar doce metales distintos en cada muestra de agua residual. Frente a la absorción atómica, el ICP tiene la ventaja de que:",
+      "opciones": [
+        "No necesita digestión previa de la muestra",
+        "Es multielemental: mide muchos elementos en una sola pasada",
+        "No requiere recta de calibrado"
+      ],
+      "correcta": 1,
+      "explicacion": "La absorción atómica es monoelemental: una lámpara, una línea y una medida por elemento. El ICP los determina simultáneamente, y por eso es la respuesta de 1322 C2 #40 para una lista de doce metales. La digestión previa hace falta igual, y la calibración también.",
+      "fuente": "Cuestionarios 1246 C2 #1 y 1322 C2 #40; tema 27",
+      "nucleo": true
+    },
+    {
+      "id": "t26-q22",
+      "pregunta": "Respecto de los métodos de análisis de los parámetros físico-químicos del agua de consumo, el Real Decreto 3/2023:",
+      "opciones": [
+        "Impone la norma UNE correspondiente a cada parámetro",
+        "No impone método: exige un límite de cuantificación ≤ 30 % del valor paramétrico y la incertidumbre de la tabla 15",
+        "No establece ninguna exigencia sobre los métodos físico-químicos"
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo III, parte D, fija criterios de rendimiento, no métodos: la norma UNE es la forma habitual de cumplirlos, pero vale cualquier método que los cumpla. El propio anexo añade que el límite de cuantificación y el de detección deben ser siempre inferiores al valor paramétrico y que la incertidumbre de la tabla 15 no puede usarse como tolerancia adicional.",
+      "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D, puntos 1 y 3",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t26-s01",
+      "titulo": "Supuesto 1. Elección de técnica para los metales de un agua de consumo",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza entra una muestra de **agua de consumo** en la que hay que determinar:\n\n- **Mercurio**, a nivel de **décimas de µg/L**.\n- **Calcio**, para el cálculo de la **dureza**, a nivel de **decenas de mg/L**.\n- **Cadmio**, a nivel de **µg/L**.\n- **Arsénico**, a nivel de **µg/L**.\n\nEl laboratorio dispone de un espectrómetro de absorción atómica con **llama**, **cámara de grafito**, **generador de hidruros** y **accesorio de vapor frío**.\n\nIndique en cada caso la técnica que utilizaría.",
+      "figura": {
+        "tipo": "esquema",
+        "valor": "absorcion-atomica"
+      },
+      "preguntas": [
+        {
+          "id": "t26-s01-q1",
+          "pregunta": "Análisis de mercurio:",
+          "opciones": [
+            "Absorción atómica de llama de óxido nitroso-acetileno",
+            "Absorción atómica con generación de hidruros",
+            "Absorción atómica de vapor frío, con reducción a Hg⁰ y medida a 253,7 nm",
+            "Absorción molecular UV-visible con difenilcarbazida"
+          ],
+          "correcta": 2,
+          "explicacion": "El mercurio es el único metal que se determina por vapor frío: se reduce a Hg⁰ con SnCl₂ o NaBH₄, se arrastra con gas inerte a una célula sin calentar y se mide a 253,7 nm. Está normalizado en la UNE-EN ISO 12846:2012, y para niveles de ng/L existe además la fluorescencia atómica (UNE-EN ISO 17852:2008). El mercurio no forma hidruro volátil y no es refractario. La difenilcarbazida es el reactivo del cromo (VI), tema 25.",
+          "fuente": "UNE-EN ISO 12846:2012; CEM QU-001, 4.1.2"
+        },
+        {
+          "id": "t26-s01-q2",
+          "pregunta": "Análisis de calcio:",
+          "opciones": [
+            "Absorción atómica de llama, según la UNE-EN ISO 7980",
+            "Absorción atómica con generación de hidruros",
+            "Absorción atómica de vapor frío",
+            "Absorción atómica con cámara de grafito, por ser un elemento traza"
+          ],
+          "correcta": 0,
+          "explicacion": "A decenas de mg/L la llama sobra, y es lo que normaliza la UNE-EN ISO 7980:2000 para calcio y magnesio. El calcio NO forma hidruro volátil, así que la opción de hidruros es falsa —y aparece con esas mismas palabras en los supuestos de 1233 y 1246—; el vapor frío es solo para el mercurio; y la cámara de grafito es para trazas, no para decenas de mg/L. Ojo: el calcio sufre interferencia química del fosfato y del aluminio, que se corrige con lantano.",
+          "fuente": "UNE-EN ISO 7980:2000; cuestionarios 1233 C2 #3 y 1246 C2 #3"
+        },
+        {
+          "id": "t26-s01-q3",
+          "pregunta": "Análisis de cadmio:",
+          "opciones": [
+            "Absorción atómica de llama, que alcanza sin problema el nivel de µg/L",
+            "Absorción atómica con cámara de grafito (UNE-EN ISO 15586), o bien ICP-MS",
+            "Absorción atómica de vapor frío",
+            "Volumetría complexométrica con EDTA"
+          ],
+          "correcta": 1,
+          "explicacion": "A nivel de µg/L la llama se queda corta: hace falta la cámara de grafito, normalizada para elementos traza en la UNE-EN ISO 15586:2004, o el ICP-MS. Existe además la UNE-EN ISO 5961:1995, específica de cadmio por absorción atómica. En el cuestionario 1246 la respuesta a «análisis de cadmio» fue precisamente ICP-MS. La complexometría con EDTA es la dureza, no el cadmio traza.",
+          "fuente": "UNE-EN ISO 15586:2004 y UNE-EN ISO 5961:1995; cuestionario 1246 C2 #1"
+        },
+        {
+          "id": "t26-s01-q4",
+          "pregunta": "Análisis de arsénico:",
+          "opciones": [
+            "Absorción atómica de llama de aire-acetileno oxidante",
+            "Absorción molecular UV-visible por lectura directa a 220 nm",
+            "Absorción atómica con generación de hidruros, o bien con cámara de grafito",
+            "Fotometría de emisión de llama"
+          ],
+          "correcta": 2,
+          "explicacion": "El arsénico sí forma hidruro volátil con NaBH₄ en medio ácido, así que la generación de hidruros es aplicable; la alternativa es la cámara de grafito (UNE-EN ISO 15586). Conviene saber que la UNE-EN ISO 11969, que normalizaba el arsénico por hidruros, está ANULADA desde el 18/09/2014. La lectura directa a 220 nm es la del nitrato (tema 25) y la fotometría de emisión de llama es para alcalinos.",
+          "fuente": "UNE-EN ISO 15586:2004; UNE-EN ISO 11969:1997 (anulada); CEM QU-001, 4.1.2"
+        },
+        {
+          "id": "t26-s01-q5",
+          "pregunta": "El responsable del laboratorio pregunta si está obligado a usar esas normas UNE. ¿Qué exige realmente el RD 3/2023 para estos parámetros?",
+          "opciones": [
+            "No impone método: exige un límite de cuantificación ≤ 30 % del valor paramétrico y la incertidumbre de la tabla 15",
+            "Sí: el anexo III impone la norma UNE de cada metal",
+            "No impone nada sobre los métodos físico-químicos, solo sobre los microbiológicos",
+            "Sí, salvo que el laboratorio esté acreditado conforme a la ISO 17025"
+          ],
+          "correcta": 0,
+          "explicacion": "El anexo III, parte D, fija criterios de rendimiento y no métodos. Añade que el LC y el LD han de ser siempre inferiores al valor paramétrico y que la incertidumbre de la tabla 15 no se puede usar como tolerancia adicional. Sí impone métodos concretos, en cambio, para los parámetros microbiológicos (parte C). En aguas superficiales el criterio es otro: RD 817/2015, incertidumbre ≤ 50 % (k = 2) y LC ≤ 30 % de la NCA.",
+          "fuente": "RD 3/2023, anexo III, partes C y D; RD 817/2015, anexo III, C.1"
+        }
+      ]
+    },
+    {
+      "id": "t26-s02",
+      "titulo": "Supuesto 2. Puesta a punto y calibración de un equipo de absorción atómica",
+      "enunciado": "Se va a determinar **cobre** en un agua residual con un espectrómetro de absorción atómica de **llama**, a **324,8 nm** y con llama de **aire-acetileno oxidante**.\n\nSe prepara la recta de calibrado con patrones tratados igual que la muestra y se obtiene:\n\n> **A = 0,220 · c**  (con **c** en mg/L de Cu)\n\nLa muestra, **digerida y diluida tomando 10,0 mL y llevando a 100,0 mL**, da una absorbancia de **A = 0,132**.\n\nDurante la sesión se comprueba además que un **patrón de 0,50 mg/L de Cu** da una absorbancia de **0,110**.\n\nResponda a las siguientes preguntas.",
+      "preguntas": [
+        {
+          "id": "t26-s02-q1",
+          "pregunta": "¿Qué concentración de cobre tiene la muestra ORIGINAL, antes de diluir?",
+          "opciones": [
+            "0,060 mg/L",
+            "0,600 mg/L",
+            "6,00 mg/L",
+            "60,0 mg/L"
+          ],
+          "correcta": 2,
+          "explicacion": "En la cubeta: c = A / 0,220 = 0,132 / 0,220 = 0,600 mg/L. La dilución fue de 10,0 a 100,0 mL, o sea un factor de 10, así que la muestra original tiene 0,600 × 10 = 6,00 mg/L. Quedarse en 0,600 es olvidar la dilución, y 0,060 sale de dividir en vez de multiplicar por el factor.",
+          "fuente": "Ley de Lambert-Beer; recta de calibrado"
+        },
+        {
+          "id": "t26-s02-q2",
+          "pregunta": "A partir del patrón de comprobación, ¿cuál es la concentración característica del equipo para el cobre?",
+          "opciones": [
+            "0,0044 mg/L",
+            "0,020 mg/L",
+            "0,110 mg/L",
+            "0,50 mg/L"
+          ],
+          "correcta": 1,
+          "explicacion": "La concentración característica es la que da una absorbancia de 0,0044. Con una respuesta lineal: c_caract = 0,0044 × c_patrón / A_patrón = 0,0044 × 0,50 / 0,110 = 0,020 mg/L. El 0,0044 no es una concentración, es la absorbancia de referencia que define el concepto.",
+          "fuente": "CEM, procedimiento QU-001, apartado 5.3.6"
+        },
+        {
+          "id": "t26-s02-q3",
+          "pregunta": "La muestra es un agua residual con bastante materia en suspensión y se quiere el cobre TOTAL. ¿Qué tratamiento previo procede?",
+          "opciones": [
+            "Filtrar por 0,45 µm y acidificar el filtrado",
+            "Ajustar el pH a 7 con hidróxido sódico",
+            "Centrifugar y medir el sobrenadante sin más tratamiento",
+            "Digestión ácida y en caliente de la muestra sin filtrar previamente, y filtración después"
+          ],
+          "correcta": 3,
+          "explicacion": "El cobre TOTAL incluye el ocluido en las partículas y en la materia orgánica: filtrar de entrada lo eliminaría y el resultado saldría bajo. La digestión ácida en caliente está normalizada en la UNE-EN ISO 15587-1 (agua regia) y -2 (ácido nítrico), aplicables a aguas con menos de 20 g/L de sólidos en suspensión y menos de 5 g/L de COT. Filtrar a 0,45 µm de entrada es lo que se hace para los metales DISUELTOS. Es la pregunta 1246 #25.",
+          "fuente": "UNE-EN ISO 15587-1 y -2:2002; cuestionario 1246 #25"
+        },
+        {
+          "id": "t26-s02-q4",
+          "pregunta": "Si en lugar de cobre a mg/L hubiera que determinar plomo a nivel de µg/L, se pasaría a cámara de grafito. En ese caso, la señal:",
+          "opciones": [
+            "Sigue siendo una lectura estable, pero de mayor absorbancia",
+            "Es un pico transitorio que aparece durante la etapa de atomización y se mide por altura o por área",
+            "Es un pico transitorio que aparece durante la etapa de secado",
+            "Deja de cumplir la ley de Lambert-Beer y hay que calibrar por adición de patrón obligatoriamente"
+          ],
+          "correcta": 1,
+          "explicacion": "En el horno todo el analito se atomiza de golpe en la etapa de atomización (2 000-3 000 °C), así que la absorbancia sube y baja: es un pico transitorio. El CEM pide seleccionar si se mide «por alturas o por integración de áreas». En el secado (≈ 110 °C) solo se evapora el disolvente y no hay señal. La ley de Beer se sigue cumpliendo; la adición de patrón se usa cuando la matriz no se puede reproducir, no siempre.",
+          "fuente": "CEM, procedimiento QU-001, apartado 5.3.1; Harvey 10.4"
+        },
+        {
+          "id": "t26-s02-q5",
+          "pregunta": "Antes de empezar la sesión, ¿cuál de estas comprobaciones NO corresponde al procedimiento QU-001 del CEM?",
+          "opciones": [
+            "Dejar transcurrir unos 15-30 minutos tras conectar el equipo, para el calentamiento de la electrónica",
+            "Trabajar con una temperatura ambiente entre 15 °C y 30 °C",
+            "Emplear material volumétrico de clase A, lavado con ácido nítrico 0,1 mol/L",
+            "Verificar la escala de longitudes de onda con un filtro de holmio o de didimio"
+          ],
+          "correcta": 3,
+          "explicacion": "Los filtros de holmio y didimio verifican la escala de longitudes de onda de un espectrofotómetro UV-VISIBLE (tema 25), no de un equipo de absorción atómica. En absorción atómica el CEM plantea una calibración GLOBAL del sistema por su recta de respuesta, elemento a elemento, y el ajuste fino de la longitud de onda se hace buscando la máxima energía de la propia lámpara. Las otras tres condiciones sí están en los apartados 5.1 y 5.2 del QU-001.",
+          "fuente": "CEM, procedimiento QU-001, apartados 4.2.2, 5.1 y 5.2"
+        }
+      ]
+    }
+  ]
+}

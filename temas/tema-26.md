@@ -2,7 +2,7 @@
 tema: 26
 titulo: "Espectroscopía atómica: Espectroscopía de absorción atómica: fundamentos e instrumentación. Utilización de la espectroscopía atómica en análisis de agua."
 parte: Parte segunda
-estado: borrador
+estado: aprobado
 verificado: 2026-09-07
 fuentes:
   - "CEM, «Procedimiento QU-001 para la calibración de equipos de espectrofotometría de absorción atómica», edición digital 1, Centro Español de Metrología (Ministerio de Industria, Turismo y Comercio), 48 págs. LEÍDO ÍNTEGRO. — https://www.cem.es/sites/default/files/qu-001_digital_0.pdf"
