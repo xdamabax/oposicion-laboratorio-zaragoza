@@ -179,7 +179,7 @@
     },
     {
       "id": "t23-f18",
-      "anverso": "Nombra las partes de este electrodo.",
+      "anverso": "El dibujo rotula las partes: membrana de vidrio, disolución interna tamponada, electrolito de referencia, diafragma y orificio de llenado. ¿Por qué se llama COMBINADO, para qué sirve el diafragma y qué hay que hacer con el orificio de llenado antes de medir?",
       "reverso": "**Electrodo de vidrio combinado**: reúne indicador y referencia en un solo cuerpo.\n- **Membrana de vidrio** en forma de bulbo, sensible al pH.\n- **Disolución interna tamponada** (KCl a pH 7) con el hilo de **Ag/AgCl de referencia interna**.\n- **Electrolito de referencia** (KCl 3 M o saturado) con el hilo de **Ag/AgCl de referencia externa**.\n- **Diafragma** o unión líquida, que pone en contacto el electrolito con la muestra.\n- **Orificio de llenado**, que **hay que destapar al medir**.",
       "fuente": "Documentación técnica de fabricante; bibliografía",
       "etiquetas": [
@@ -369,7 +369,7 @@
     },
     {
       "id": "t23-f36",
-      "anverso": "En esta curva, ¿dónde está el punto de equivalencia?",
+      "anverso": "El dibujo señala el punto de equivalencia en el punto de inflexión de la curva. ¿Es lo mismo el punto de equivalencia que lo que de verdad localiza el instrumento, y de qué depende que coincidan?",
       "reverso": "En el **punto de inflexión** de la sigmoide, es decir, **el de máxima pendiente**.\nOjo al matiz: el **punto de equivalencia** sigue siendo **teórico**; lo que el instrumento localiza es el **punto de inflexión de la curva experimental**, que se toma como su mejor estimación. **Cuanto más brusco es el salto, mejor coinciden.**",
       "fuente": "Bibliografía de química analítica; tema 22",
       "etiquetas": [
@@ -438,7 +438,7 @@
     },
     {
       "id": "t23-f42",
-      "anverso": "Nombra las partes de este montaje.",
+      "anverso": "El dibujo rotula las partes: bureta motorizada de pistón, frasco del valorante, electrodo indicador, agitador magnético y unidad de control. Di qué capacidades tiene el cilindro de la bureta, qué guarda el chip de datos del frasco y qué calcula la unidad de control.",
       "reverso": "**Valorador automático**:\n- **Bureta motorizada de pistón** (émbolo con motor paso a paso; cilindros de 1, 2, 5, 10, 20 y 50 mL).\n- **Frasco del valorante** con la **unidad intercambiable**, a menudo con **chip de datos** (reactivo, **título**, caducidad).\n- **Vaso de valoración** con **agitador magnético**.\n- **Electrodo indicador** (y referencia, o combinado) y sonda de temperatura.\n- **Unidad de control y software**, que registra la curva y calcula el punto de equivalencia.",
       "fuente": "Documentación de fabricante (Metrohm, catálogo Titrando)",
       "etiquetas": [

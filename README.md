@@ -166,17 +166,18 @@ Los controles que no aplican a un tema (un tema de la parte común no tiene supu
 
 Un sabotaje puede tumbar más de un control si están acoplados de verdad, y entonces se declara: aplanar el programa del horno divorcia además una etiqueta de su escalón, porque las marcas se dibujan a la altura de su meseta. Lo que no se tolera es que tumbe uno **no declarado**.
 
-### Rojos conocidos
+### Qué hacer cuando salta el control del dibujo delator
 
-Los temas **23 y 24** no pasan el control del dibujo delator, y es un hallazgo real, no ruido:
+Pasó con cuatro tarjetas de los temas 23 y 24, y la salida es siempre la misma: **reformular la pregunta, nunca recortar el dibujo**. Si el esquema rotula una parte, la pregunta la da por sabida y pide lo que el dibujo *no* dice.
 
-| Tarjeta | Qué pasa |
-| --- | --- |
-| `t23-f18`, `t23-f42` | Piden «nombra las partes» y el esquema **ya las rotula todas** |
-| `t23-f36` | Pregunta dónde está el punto de equivalencia y la curva rotula «punto de inflexión» |
-| `t24-f30` | Pregunta en qué se basa la medida y el dibujo dice «el O₂ difunde por la membrana y se reduce en el cátodo» |
+| Tarjeta | Antes | Ahora pide |
+| --- | --- | --- |
+| `t23-f18` | «Nombra las partes de este electrodo» | Por qué se llama *combinado*, para qué sirve el diafragma y qué hacer con el orificio de llenado |
+| `t23-f36` | «¿Dónde está el punto de equivalencia?» | Si el punto de equivalencia y lo que localiza el instrumento son lo mismo, y de qué depende que coincidan |
+| `t23-f42` | «Nombra las partes de este montaje» | Capacidades del cilindro, qué guarda el chip de datos y qué calcula la unidad de control |
+| `t24-f30` | «¿En qué se basa la medida?» | A qué es proporcional la corriente y qué norma recoge el método |
 
-Están sin tocar a la espera de decidir cómo se arreglan: son tarjetas ya aprobadas.
+Nombrar la parte en el enunciado no es un truco para callar el control: es la corrección de fondo. El rótulo deja de ser una filtración y pasa a ser el enunciado, y la negrita del reverso vuelve a marcar lo que hay que recordar. **Los `id` no cambian**, así que el progreso guardado se conserva.
 
 ## Desarrollo
 
