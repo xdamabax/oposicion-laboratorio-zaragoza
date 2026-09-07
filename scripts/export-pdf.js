@@ -19,67 +19,13 @@
  * Requiere `npm run build` previo si no se pasa --base.
  */
 
-import { existsSync, mkdirSync, readdirSync } from 'node:fs'
-import { join, dirname } from 'node:path'
-import { fileURLToPath } from 'node:url'
-import { spawn } from 'node:child_process'
+import { existsSync, mkdirSync } from 'node:fs'
+import { join } from 'node:path'
 import puppeteer from 'puppeteer-core'
 
-const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..')
+import { RAIZ, argumento, buscarChrome, decidirBase, temasConApunte } from './comun.js'
+
 const PUERTO = 4179
-
-const CHROMES = [
-  'C:/Program Files/Google/Chrome/Application/chrome.exe',
-  'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
-  `${process.env.LOCALAPPDATA ?? ''}/Google/Chrome/Application/chrome.exe`,
-  'C:/Program Files/Microsoft/Edge/Application/msedge.exe',
-  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-  '/usr/bin/google-chrome',
-  '/usr/bin/chromium',
-]
-
-function argumento(nombre, porDefecto) {
-  const i = process.argv.indexOf(`--${nombre}`)
-  return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : porDefecto
-}
-
-function buscarChrome() {
-  const dado = argumento('chrome')
-  if (dado) return dado
-  const encontrado = CHROMES.find((p) => existsSync(p))
-  if (!encontrado) {
-    throw new Error(
-      'No se encuentra Chrome. Indícalo con --chrome "C:/ruta/a/chrome.exe".',
-    )
-  }
-  return encontrado
-}
-
-/** Levanta `vite preview` sobre dist/ y espera a que responda. */
-async function servirDist() {
-  if (!existsSync(join(RAIZ, 'dist', 'index.html'))) {
-    throw new Error('No hay dist/. Ejecuta antes `npm run build`.')
-  }
-
-  const proc = spawn(
-    process.platform === 'win32' ? 'npm.cmd' : 'npm',
-    ['run', 'preview', '--', '--port', String(PUERTO), '--strictPort'],
-    { cwd: RAIZ, stdio: 'ignore', shell: process.platform === 'win32' },
-  )
-
-  const base = `http://localhost:${PUERTO}/`
-  for (let i = 0; i < 60; i++) {
-    try {
-      const r = await fetch(base)
-      if (r.ok) return { base, parar: () => proc.kill() }
-    } catch {
-      // todavía no escucha
-    }
-    await new Promise((r) => setTimeout(r, 500))
-  }
-  proc.kill()
-  throw new Error('El servidor de preview no respondió a tiempo.')
-}
 
 const PIE = `
   <div style="width:100%;font-size:8px;font-family:system-ui,sans-serif;color:#666;
@@ -148,21 +94,12 @@ async function generar(pagina, base, ruta, fichero) {
   return rotas.length
 }
 
-function temasConApunte() {
-  const dir = join(RAIZ, 'temas')
-  return readdirSync(dir)
-    .filter((f) => /^tema-\d{2}\.md$/.test(f))
-    .map((f) => Number(/^tema-(\d{2})\.md$/.exec(f)[1]))
-    .sort((a, b) => a - b)
-}
-
 async function main() {
   const [orden, arg] = process.argv.slice(2).filter((a) => !a.startsWith('--'))
   const salida = join(RAIZ, argumento('salida', 'export'))
   if (!existsSync(salida)) mkdirSync(salida, { recursive: true })
 
-  const baseDada = argumento('base')
-  const servidor = baseDada ? { base: baseDada, parar: () => {} } : await servirDist()
+  const servidor = await decidirBase(PUERTO)
 
   const navegador = await puppeteer.launch({
     executablePath: buscarChrome(),

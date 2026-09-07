@@ -29,7 +29,8 @@ Tema a tema, nunca en bloque:
 2. **Redactar el apunte** en `temas/tema-NN.md` con `estado: borrador`.
 3. **Revisión y aprobación** por parte del opositor.
 4. **Solo entonces** se genera `repaso/tema-NN.json` y el apunte pasa a `estado: aprobado`.
-5. Commit y push de ese tema.
+5. **Pasar la batería de verificación** (`npm run verificar -- NN`). Un tema no se cierra en rojo.
+6. Commit y push de ese tema, y **volver a verificar contra la web publicada**.
 
 Regla de fondo: **nada de contenido de memoria del modelo**. Cada apunte declara su norma, su versión y su fecha de verificación.
 
@@ -63,6 +64,8 @@ repaso/tema-NN.json     Tarjetas, test y supuestos, generados del apunte ya apro
 ExamenesAnteriores/     Cuestionarios de convocatorias previas y su análisis.
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
+scripts/verificar.js    Las dos baterías de verificación de una vez.
+scripts/comun.js        Piezas compartidas: encontrar Chrome, servir dist/, listar temas.
 ```
 
 Plantillas comentadas en `temas/_PLANTILLA.md` y `repaso/_PLANTILLA.json`. Los ficheros que empiezan por `_` los ignora la app.
@@ -128,6 +131,52 @@ npm run export:pdf -- todo        # temario + apuntes y test de cada tema
 ```
 
 Los ficheros salen en `export/` (ignorada por git). Requiere `npm run build` previo y un Chrome instalado; con `--base <url>` puede apuntarse a la web publicada en lugar de a `dist/`, y con `--chrome <ruta>` indicarse otro ejecutable.
+
+## Verificación
+
+Dos baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
+
+- Un índice `correcta` desplazado en uno da un JSON válido y un test que **enseña la respuesta equivocada**.
+- Un esquema equivocado **se pinta igual de bien** que uno correcto: la curva de desviación de Beer llegó a dibujarse arrancando *por encima* de la recta ideal, que enseña justo lo contrario de lo que hay que aprender.
+- Una figura rota **no da ningún error**: se queda en blanco y el PDF parece correcto hasta que se mira.
+
+```bash
+npm run build                     # las baterías miden dist/, no el código fuente
+npm run verificar                 # las dos, sobre todos los temas
+npm run verificar -- 26           # solo un tema
+npm run verificar -- 26 --sabotajes
+npm run verificar -- --base https://xdamabax.github.io/oposicion-laboratorio-zaragoza/
+```
+
+Con `--base` se mide **la web publicada**, que es la que usa el opositor. Un arreglo no está confirmado hasta pasar ahí.
+
+### Qué comprueba cada una
+
+`verificar-figuras.js` — **12 controles** sobre los esquemas del catálogo. Dos son genéricos y valen para cualquier figura futura: que ninguna se encoja por debajo de su tamaño natural y que **ningún rótulo se salga de su lienzo**. Los otros diez afirman algo comprobable sobre la geometría: que el monocromador va *después* del atomizador en absorción atómica y *antes* de la cubeta en UV-visible; que el programa del horno sube secado < calcinación < atomización y que **el pico de absorbancia cae dentro de la atomización**; que cada temperatura rotula su propio escalón; que la línea atómica es al menos 8 veces más estrecha que la banda molecular **y de la misma altura**, para que lo que se lea sea anchura y no intensidad; que el cátodo de la lámpara está **hueco de verdad** (`isPointInFill`: la cavidad vacía y la pared maciza) y que el haz sale por la ventana; que la curva de Beer arranca pegada a la ideal y se va **siempre por debajo**; y que el máximo de la primera derivada y el corte de la segunda caen en el mismo punto de equivalencia.
+
+`verificar-repaso.js` — **8 controles** por tema, respondiendo todas las preguntas: 3 opciones en el test y 4 en los supuestos; que **la opción que marca la app sea la del dato** y que el veredicto concuerde; que ninguna letra se lleve más del 45 % de las respuestas; que «Solo núcleo» reduzca de verdad y solo deje preguntas etiquetadas; que las figuras del apunte se pinten con caja de contenido no nula; que **el dibujo de una tarjeta no lleve escrita la respuesta de su reverso**; y que la figura que hace de pregunta lleve rótulo neutro y el nombre completo aparezca al revelar.
+
+El control del dibujo delator es automático, sin listas escritas a mano: toma los fragmentos **en negrita** del reverso —que es lo que la tarjeta pide recordar—, descarta los que ya están en el anverso y comprueba que ninguno aparezca escrito dentro del SVG.
+
+Los controles que no aplican a un tema (un tema de la parte común no tiene supuestos) salen como `·`, no como aprobados.
+
+### Las pruebas se prueban a sí mismas
+
+`--sabotajes` rompe cada cosa a propósito antes de medir y exige que salte **su** control y ninguno más. Es lo que impide que un control se quede en verde por vacío: la primera versión del detector de figuras rotas daba falso negativo, y tres de estos sabotajes estaban mal escritos —uno tocaba la curva equivocada, otro sacaba un rótulo del lienzo de rebote y otro encogía a la vez lo pedido y lo pintado, así que se anulaba solo—. Sin este modo no se habría visto.
+
+Un sabotaje puede tumbar más de un control si están acoplados de verdad, y entonces se declara: aplanar el programa del horno divorcia además una etiqueta de su escalón, porque las marcas se dibujan a la altura de su meseta. Lo que no se tolera es que tumbe uno **no declarado**.
+
+### Rojos conocidos
+
+Los temas **23 y 24** no pasan el control del dibujo delator, y es un hallazgo real, no ruido:
+
+| Tarjeta | Qué pasa |
+| --- | --- |
+| `t23-f18`, `t23-f42` | Piden «nombra las partes» y el esquema **ya las rotula todas** |
+| `t23-f36` | Pregunta dónde está el punto de equivalencia y la curva rotula «punto de inflexión» |
+| `t24-f30` | Pregunta en qué se basa la medida y el dibujo dice «el O₂ difunde por la membrana y se reduce en el cátodo» |
+
+Están sin tocar a la espera de decidir cómo se arreglan: son tarjetas ya aprobadas.
 
 ## Desarrollo
 
