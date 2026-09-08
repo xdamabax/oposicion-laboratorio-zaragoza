@@ -1,0 +1,786 @@
+{
+  "tema": 27,
+  "titulo": "Espectroscopía de Masas con Plasma Acoplado Inductivamente (ICP): fundamentos e instrumentación. Utilización en análisis de agua.",
+  "generadoDe": "temas/tema-27.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-08",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t27-f01",
+      "anverso": "¿Qué es exactamente el **ICP**, y qué decide que la técnica se llame ICP-MS o ICP-OES?",
+      "reverso": "El ICP **no es una técnica de medida: es una FUENTE DE IONES**. Un plasma de argón a varios miles de grados que **atomiza e ioniza** casi cualquier elemento.\nLo que se le acopla detrás decide la técnica:\n- Detrás, un **espectrómetro de masas** → **ICP-MS**: se mide **la masa de los iones** (m/z).\n- Se mide **la luz que emiten** los átomos excitados en el propio plasma → **ICP-OES** (o ICP-AES), emisión óptica.\nEn un laboratorio de aguas es **la técnica de los metales**, y desplaza a la absorción atómica en cuanto hay que determinar varios a la vez o bajar a nanogramos por litro.",
+      "fuente": "Tema 27, §1; LibreTexts, Análisis Instrumental 10.1 y 11.3",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f02",
+      "anverso": "Define **plasma** con las palabras del examen, y las dos colas que se han dado por buenas.",
+      "reverso": "«Un **gas caliente, generalmente ARGÓN, parcialmente ionizado**», formado por átomos neutros, iones positivos y electrones libres.\nLas dos convocatorias rematan la frase de forma distinta y **las dos son ciertas**:\n- «…y **eléctricamente neutro**» (1233 #10): en conjunto hay tantas cargas positivas como negativas.\n- «…y **conductor**» (1322 #29): precisamente porque tiene cargas libres.",
+      "fuente": "Cuestionarios 1233 #10 y 1322 #29",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f03",
+      "anverso": "Cuatro cosas que **NO** son un plasma, y que se han ofrecido como distractores.",
+      "reverso": "**No** es un producto de combustión de un gas (metano).\n**No** es un sistema de arco de corriente continua.\n**No** es la mezcla de una muestra con un gas inerte.\n**No** es un atomizador electrotérmico de tubo de grafito — eso es la **cámara de grafito del tema 26**.",
+      "fuente": "Cuestionarios 1233 #10 y 1322 #29",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f04",
+      "anverso": "¿Por qué el plasma se hace con **argón**?",
+      "reverso": "Porque es **inerte** —no forma compuestos con el analito—, tiene una **energía de ionización alta**, de modo que ioniza a casi todos los elementos, que la tienen más baja, y **no aporta líneas de emisión que estorben** demasiado.",
+      "fuente": "Tema 27, §2.1; LibreTexts, Análisis Instrumental 10.1",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f05",
+      "anverso": "¿Cuál es **la pieza clave** de un equipo de plasma, y por qué son falsos los dos distractores de siempre?",
+      "reverso": "**LA ANTORCHA.** Pregunta literal en 1246 #11 y 1322 #28, con los mismos distractores: «los electrodos» y «la fuente de radiación».\nY los dos distractores enseñan algo: **en un ICP no hay electrodos** —el plasma se calienta por inducción, sin contacto— **ni fuente de radiación externa**: el plasma **es** la fuente.",
+      "fuente": "Cuestionarios 1246 #11 y 1322 #28",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f06",
+      "anverso": "En esta antorcha el argón exterior va tangencial, la muestra va por el capilar central y el plasma se enciende con chispa Tesla. **¿Qué hace exactamente el argón del tubo intermedio, y cómo calienta la bobina si no llega a tocar el gas?**",
+      "reverso": "**El tubo intermedio lleva argón auxiliar, que separa el plasma de la punta del tubo central** y evita que el capilar se funda o se ensucie.\n**La bobina calienta por inducción:** la corriente alterna crea un **campo magnético fluctuante** que obliga a iones y electrones a **girar en trayectoria circular**; chocan entre sí, y ese rozamiento es el que calienta. Es lo mismo que una placa de cocina de inducción, y **por eso no hacen falta electrodos**.\nLa primera siembra de electrones la da una **chispa de bobina Tesla**.",
+      "fuente": "Tema 27, §2.2; LibreTexts, Análisis Instrumental 10.1",
+      "etiquetas": ["instrumentacion", "figura"],
+      "nucleo": true,
+      "figura": { "tipo": "esquema", "valor": "antorcha-icp" }
+    },
+    {
+      "id": "t27-f07",
+      "anverso": "¿De qué están hechos los tubos de la antorcha y qué lleva cada uno?",
+      "reverso": "**Tres tubos concéntricos de cuarzo**, rodeados en su extremo por una **bobina de inducción de radiofrecuencia**.\n**Exterior:** argón **tangencial**, el caudal grande; sostiene el plasma y **aísla térmicamente el tubo de cuarzo**, que si no se fundiría.\n**Intermedio:** argón auxiliar; separa el plasma de la punta del tubo central.\n**Central (capilar):** **la muestra nebulizada**, que perfora el plasma por el centro y lleva el aerosol al canal central.",
+      "fuente": "Tema 27, §2.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f08",
+      "anverso": "Temperaturas del plasma: base, zona de medida y a qué altura se mide.",
+      "reverso": "**Base del plasma: hasta 10 000 K.**\n**Zona de medida: 6 000 - 8 000 K**, a **15-20 mm por encima de la bobina**.\nComparado con la llama de aire-acetileno del tema 26 (2 100-2 400 °C), el ICP está **tres o cuatro veces más caliente**.",
+      "fuente": "Tema 27, §2.2; LibreTexts, Análisis Instrumental 10.1",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f09",
+      "anverso": "¿Qué dos ventajas de fondo saca el ICP de estar tan caliente?",
+      "reverso": "**Descompone los compuestos refractarios**: desaparecen las interferencias químicas del tipo fosfato sobre calcio, que en llama obligaban a añadir lantano.\n**Minimiza la interferencia de ionización**, porque la ionización del argón deja una **enorme concentración de electrones libres** en el plasma; en llama había que añadir cesio.",
+      "fuente": "Tema 27, §2.2",
+      "etiquetas": ["fundamento", "interferencias"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f10",
+      "anverso": "¿Cómo entra la muestra líquida en el plasma?",
+      "reverso": "Igual que en absorción atómica de llama: **bomba peristáltica → nebulizador → cámara de nebulización**, que se queda con las gotas gruesas, **→ tubo central de la antorcha**.",
+      "fuente": "Tema 27, §2.2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t27-f11",
+      "anverso": "¿Cuál es el problema de ingeniería que resuelve la interfase del ICP-MS?",
+      "reverso": "Que **el plasma trabaja a presión atmosférica y a unos 7 000 K**, y **el espectrómetro de masas necesita alto vacío y temperatura ambiente**.\nTodo el diseño de la interfase consiste en **salvar ese salto sin perder los iones**.",
+      "fuente": "Tema 27, §2.3; LibreTexts, Análisis Instrumental 11.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f12",
+      "anverso": "Los dos conos de la interfase: cómo se llaman y qué presión hay detrás de cada uno.",
+      "reverso": "**Cono de muestreo (*sampler*)**: un **orificio de alfiler de ≈ 1 mm** por el que se cuela una porción del plasma. Detrás, **≈ 1 torr**.\n**Cono *skimmer***: deja pasar una fracción todavía menor. Detrás, **≈ 10⁻⁵ torr**, ya la presión de trabajo del espectrómetro.\nEs decir: **de 1 atmósfera a 1 torr y de ahí a 10⁻⁵ torr**, en dos saltos y en pocos centímetros. Son la pieza que más sufre y la que más se limpia.",
+      "fuente": "Tema 27, §2.3; LibreTexts, Análisis Instrumental 11.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f13",
+      "anverso": "En este ICP-MS el cuadrupolo separa por m/z y el detector cuenta iones. **¿Con qué resolución y en qué intervalo trabaja el cuadrupolo, qué detector concreto es, y qué se usa cuando hace falta más resolución?**",
+      "reverso": "**Cuadrupolo:** cuatro barras con tensiones continua y de radiofrecuencia; en cada instante **solo una relación masa/carga llega al otro extremo**, y barriendo las tensiones se recorre el espectro. **Distingue masas que difieren en ± 1 m/z** y trabaja aproximadamente **de 3 a 300 m/z**, que cubre toda la tabla periódica útil.\nCuando hace falta más resolución, **analizador de doble enfoque** (sector magnético + eléctrico).\n**El detector es un multiplicador de electrones**: cada ion desencadena una cascada, así que **la medida es un recuento de iones**, y de ahí la sensibilidad de partes por billón.",
+      "fuente": "Tema 27, §2.3; LibreTexts, Análisis Instrumental 11.3",
+      "etiquetas": ["instrumentacion", "figura"],
+      "nucleo": true,
+      "figura": { "tipo": "esquema", "valor": "icp-ms" }
+    },
+    {
+      "id": "t27-f14",
+      "anverso": "¿Qué hacen las **lentes iónicas**, y qué pasaría si no estuvieran?",
+      "reverso": "Un juego de **lentes electrostáticas** que **estrecha el chorro cónico**, **separa los iones positivos de los electrones, las especies neutras y los fotones**, y **enfoca el haz** a la entrada del analizador.\n**Si los fotones del plasma llegaran al detector, lo cegarían.**",
+      "fuente": "Tema 27, §2.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t27-f15",
+      "anverso": "Enumera, en orden, las seis etapas de un ICP-MS.",
+      "reverso": "1. **Nebulizador y cámara de nebulización**, como en llama.\n2. **Antorcha y plasma**: atomiza e ioniza, y los elementos salen como **iones positivos M⁺**.\n3. **Interfase**: cono de muestreo y cono *skimmer*.\n4. **Lentes iónicas.**\n5. **Analizador de masas**, normalmente un cuadrupolo.\n6. **Detector**: multiplicador de electrones.",
+      "fuente": "Tema 27, §2.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f16",
+      "anverso": "¿Qué clase de interferencias tiene el ICP-MS, y por qué no las químicas?",
+      "reverso": "Las químicas **se las come el plasma**: a 6 000-8 000 K no queda compuesto refractario que valga.\nLas del ICP-MS son **de masa**: otra especie pesa lo mismo que el analito. Hay dos, **la isobárica y la del ion poliatómico**, más las **de matriz**.",
+      "fuente": "Tema 27, §2.4",
+      "etiquetas": ["interferencias"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f17",
+      "anverso": "¿Qué es una interferencia **isobárica** y cuál es el ejemplo de manual?",
+      "reverso": "Dos elementos distintos con **isótopos del mismo número másico**.\nEjemplo: **⁴⁰Ar y ⁴⁰Ca comparten m/z = 40** — y el argón es justo el gas del plasma, así que la interferencia viene de casa.",
+      "fuente": "Tema 27, §2.4; LibreTexts, Análisis Instrumental 11.3",
+      "etiquetas": ["interferencias"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f18",
+      "anverso": "¿Qué es una interferencia por **ion poliatómico** y cuál es el ejemplo de manual?",
+      "reverso": "Una especie formada **en el propio plasma** con argón, oxígeno, nitrógeno, cloro o el disolvente.\nEjemplo: **⁴⁰Ar¹⁶O⁺ pesa 56 y se solapa con el ⁵⁶Fe⁺**, que es el isótopo más abundante del hierro.",
+      "fuente": "Tema 27, §2.4; LibreTexts, Análisis Instrumental 11.3",
+      "etiquetas": ["interferencias"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f19",
+      "anverso": "Cinco maneras de manejar una interferencia en ICP-MS.",
+      "reverso": "**Elegir otro isótopo** del analito, libre de solapamiento.\n**Ecuaciones de corrección**, restando la contribución del interferente medida en otra masa.\n**Igualar la matriz** de patrones y muestras, o **adición de patrón**.\n**Patrón interno.**\n**Diluir**: el ICP-MS no admite mucha carga de sólidos disueltos.",
+      "fuente": "Tema 27, §2.4",
+      "etiquetas": ["interferencias"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f20",
+      "anverso": "¿Qué es el **patrón interno** en ICP-MS, dónde se añade y qué corrige?",
+      "reverso": "Un elemento **que no está en la muestra** —**el germanio** es el ejemplo del manual— que **se bombea junto con la muestra ANTES de la nebulización**, y todo se refiere a su señal.\nCorrige a la vez **la deriva del equipo y el efecto de matriz**.",
+      "fuente": "Tema 27, §2.4; Barron 1.6",
+      "etiquetas": ["interferencias", "calibracion"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f21",
+      "anverso": "¿En qué consiste la interferencia **de matriz** y cuándo aparece?",
+      "reverso": "**Mucha sal o mucho ácido cambian la eficacia de nebulización y de ionización**, así que la misma concentración acaba dando otra señal.\nAparece en **aguas salinas y en digeridos concentrados**. Se maneja **igualando la matriz, por adición de patrón, con patrón interno o diluyendo**.",
+      "fuente": "Tema 27, §2.4",
+      "etiquetas": ["interferencias"]
+    },
+    {
+      "id": "t27-f22",
+      "anverso": "ICP-OES frente a ICP-MS: qué mide cada uno, límites de detección y rango dinámico.",
+      "reverso": "**ICP-OES:** mide **la luz que emiten** los átomos e iones excitados; **no necesita interfase de vacío**; **1-10 ppb (µg/L)**; rango dinámico de ≈ **6** órdenes de magnitud.\n**ICP-MS:** mide **los iones separados por m/z**; **sí necesita los dos conos**; **1-10 ppt (ng/L)**; rango dinámico de ≈ **8** órdenes.\nY **solo el ICP-MS distingue isótopos**.",
+      "fuente": "Tema 27, §2.5; Barron 1.6",
+      "etiquetas": ["comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f23",
+      "anverso": "¿Qué norma de agua tiene cada una de las dos técnicas de plasma?",
+      "reverso": "**ICP-OES → UNE-EN ISO 11885:2010** (en vigor desde el 05/01/2010, sustituye a la de 1998, idéntica a ISO 11885:2007).\n**ICP-MS → UNE-EN ISO 17294**: la **parte 1:2024** da las **directrices generales** y la **parte 2:2024** determina elementos seleccionados **incluyendo isótopos de uranio**.",
+      "fuente": "Fichas de AENOR de las tres normas",
+      "etiquetas": ["normas"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f24",
+      "anverso": "¿Qué cambió en 2024 en las normas de ICP-MS, y qué NO debe citarse hoy?",
+      "reverso": "**Las dos partes de la 17294 se renovaron en 2024**:\n- **UNE-EN ISO 17294-2:2024** anuló a la de 2017 el **6 de noviembre de 2024** (y la de 2017 había sustituido a la de 2005).\n- **UNE-EN ISO 17294-1:2024** anuló a la de 2007 el **11 de diciembre de 2024**.\n**Citar «UNE-EN ISO 17294-2:2017» hoy es citar una norma anulada.**",
+      "fuente": "Fichas de AENOR de la UNE-EN ISO 17294-1 y -2",
+      "etiquetas": ["normas"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f25",
+      "anverso": "¿Qué **no** determina un ICP-MS?",
+      "reverso": "**Hidrógeno, helio y la mayoría de los gases nobles**, **el carbono**, y los **elementos sin isótopos naturales**.\n**Los halógenos van mal** porque su **energía de ionización es más alta que la del argón**.",
+      "fuente": "Tema 27, §2.5; Barron 1.6 y ficha del CAI de la UCM",
+      "etiquetas": ["comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f26",
+      "anverso": "ICP frente a absorción atómica del tema 26: fuente, número de elementos y temperatura.",
+      "reverso": "**Absorción atómica:** **lámpara de cátodo hueco, una por elemento**; **monoelemental**; 2 100-3 000 °C.\n**ICP:** **no hay lámpara, la fuente es el propio plasma**; **multielemental, todos los elementos a la vez**; **6 000-10 000 K**.\nÉsa es la razón de fondo de los supuestos: **varios metales → ICP-MS; uno solo y barato → absorción atómica**.",
+      "fuente": "Tema 27, §2.6; tema 26",
+      "etiquetas": ["comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f27",
+      "anverso": "¿Cuándo se elige absorción atómica y cuándo ICP?",
+      "reverso": "**Absorción atómica:** uno o dos metales, de rutina, con **presupuesto corto**.\n**ICP:** **varios metales a la vez**, o **trazas muy bajas** (ng/L).\nOjo, es **criterio operativo, no normativo**: no hay norma que lo imponga, y la UNE-EN ISO 15586 (cámara de grafito) sigue vigente para esos mismos elementos.",
+      "fuente": "Tema 27, §2.6; tema 26, duda 10",
+      "etiquetas": ["comparativa"]
+    },
+    {
+      "id": "t27-f28",
+      "anverso": "¿Qué interferencias tiene cada familia, la absorción atómica y el ICP?",
+      "reverso": "**Absorción atómica:** de fondo, de ionización y **químicas** (lantano para el fosfato, cesio para la ionización).\n**ICP:** las químicas **casi desaparecen**; las suyas propias son **isobáricas y poliatómicas**, más las de matriz.",
+      "fuente": "Tema 27, §2.6",
+      "etiquetas": ["comparativa", "interferencias"]
+    },
+    {
+      "id": "t27-f29",
+      "anverso": "Para determinar el contenido **total** de metales de un agua, ¿qué hay que hacer antes de la técnica instrumental? ¿Y para los **disueltos**?",
+      "reverso": "**Totales: digestión ácida y en caliente de la muestra, y filtración POSTERIOR** — es la respuesta literal de 1246 #25. Se normaliza en la **UNE-EN ISO 15587-1** (agua regia) o la **-2** (ácido nítrico).\n**Disueltos: filtrar a 0,45 µm y acidificar**, en ese orden: se filtra **antes** de acidificar (el detalle es del tema 36).",
+      "fuente": "Cuestionario 1246 #25; UNE-EN ISO 15587-1 y -2:2002",
+      "etiquetas": ["agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f30",
+      "anverso": "¿A qué aguas se aplica la digestión de la UNE-EN ISO 15587?",
+      "reverso": "A aguas con **menos de 20 g/L de sólidos en suspensión** y **menos de 5 g/L de carbono orgánico total**.\nDos variantes: la **parte 1, con agua regia**, y la **parte 2, con ácido nítrico**.",
+      "fuente": "UNE-EN ISO 15587-1 y -2:2002",
+      "etiquetas": ["agua", "normas"]
+    },
+    {
+      "id": "t27-f31",
+      "anverso": "¿Qué determina y en qué matrices la UNE-EN ISO 17294-2:2024?",
+      "reverso": "**Un número grande de elementos** —aluminio, antimonio, arsénico, bario, berilio, bismuto, boro, cadmio y muchos más— en **agua de consumo, superficial, subterránea, residual y eluatos**, y también en **digeridos** de agua, lodos y sedimentos preparados según la **ISO 15587-1 o la -2**.\nSu título añade **«incluyendo isótopos de uranio»**. La **parte 1** da las directrices generales.",
+      "fuente": "Ficha de AENOR de la UNE-EN ISO 17294-2:2024",
+      "etiquetas": ["normas", "agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f32",
+      "anverso": "¿Por qué el uranio tiene mención propia en el título de la norma, y dónde se estudia su valor paramétrico?",
+      "reverso": "Porque el uranio es **parámetro del RD 3/2023** (anexo I), y el ICP-MS es la técnica que lo determina — y además **distingue sus isótopos**, cosa que ninguna otra de este bloque hace.\n**Su valor paramétrico es del tema 33**; como **radionucleido**, del **tema 29**.",
+      "fuente": "RD 3/2023, anexo I; UNE-EN ISO 17294-2:2024",
+      "etiquetas": ["agua", "normativa"]
+    },
+    {
+      "id": "t27-f33",
+      "anverso": "¿Qué le exige el RD 3/2023 al método con que se analiza un metal en agua de consumo?",
+      "reverso": "**No impone método.** Exige (anexo III, parte D, puntos 1 y 3):\n- **Límite de cuantificación ≤ 30 % del valor paramétrico.**\n- **Incertidumbre (k = 2) según la tabla 15.**\n- **El LC y el LD han de ser siempre inferiores al valor paramétrico.**",
+      "fuente": "RD 3/2023, anexo III, parte D, puntos 1 y 3",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f34",
+      "anverso": "¿Qué exige el RD 817/2015 a los métodos de análisis de aguas superficiales?",
+      "reverso": "Anexo III, apartado C.1: métodos **validados conforme a la EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** al nivel de la **norma de calidad ambiental**, y **límite de cuantificación ≤ 30 % de esa NCA**.",
+      "fuente": "RD 817/2015, anexo III, apartado C.1",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f35",
+      "anverso": "En un supuesto, «indique la técnica» para una lista de metales en agua: ¿qué se contesta?",
+      "reverso": "**ICP-MS.** Y si la pregunta habla de **metales totales**, la respuesta completa es **«digestión ácida de la muestra y posterior determinación de los metales por ICP-MS»** — literal en 1322 C2 #40.\nEstá documentado en **1246 C2 #1** (cadmio) y **#9** (plomo), y en **1322 C2 #25** (Cd, Al, Sb y Cr), **#29** (Hg, Se y Pb) y **#40** (doce metales).",
+      "fuente": "Cuestionarios 1246 C2 #1 y #9; 1322 C2 #25, #29 y #40",
+      "etiquetas": ["agua", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f36",
+      "anverso": "¿Cuál es la frontera entre el tema 26 y el 27?",
+      "reverso": "**Tema 26, absorción atómica:** una lámpara por elemento, una línea, una medida — **monoelemental**.\n**Tema 27, plasma:** **sin lámpara**, mucha más temperatura y **todos los elementos a la vez**.\nY la **espectrometría de masas acoplada a cromatografía** (GC-MS, LC-MS) **no es de este tema**: es de los temas 31 y 32.",
+      "fuente": "Tema 27, encuadre y reparto con los temas vecinos",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t27-f37",
+      "anverso": "¿Hay procedimiento de calibración del CEM para el ICP?",
+      "reverso": "**No.** Recorrido el catálogo: **QU-001** es de absorción atómica, **QU-002** de analizadores de gases de escape, **QU-003** de pHímetros, **QU-004** de HPLC y **QU-005** de cromatografía de gases. **Ninguno de ICP.**\nLa teoría de este tema es, por tanto, **doctrina de libro**; lo verificado y normativo son **las normas de agua**.",
+      "fuente": "CEM, catálogo de procedimientos de calibración",
+      "etiquetas": ["normas"]
+    },
+    {
+      "id": "t27-f38",
+      "anverso": "¿Para qué sirve la **celda de colisión/reacción** de un ICP-MS moderno, y por qué aquí va con reserva?",
+      "reverso": "Para **eliminar las interferencias poliatómicas**: se introduce **helio o un gas reactivo antes del cuadrupolo**.\n**Reserva declarada:** no aparece en ninguna de las fuentes de este apunte —ni LibreTexts ni la ficha del CAI de la UCM la mencionan—, así que no se desarrolla. Si cae en el examen, **la respuesta esperable es ésa**.",
+      "fuente": "Tema 27, duda declarada nº 4",
+      "etiquetas": ["interferencias"]
+    },
+    {
+      "id": "t27-f39",
+      "anverso": "¿Qué determina la UNE-EN ISO 11885 y en qué se queda corta frente al ICP-MS?",
+      "reverso": "**Elementos seleccionados por ICP-OES**: disueltos, ligados a partículas y contenido total, en **mg/L o µg/L**.\nEs **menos sensible que el ICP-MS** —ppb frente a ppt— pero **más tolerante a la matriz**, así que aguanta mejor una muestra cargada.",
+      "fuente": "Ficha de AENOR de la UNE-EN ISO 11885:2010; tema 27, tabla operativa",
+      "etiquetas": ["normas", "comparativa"]
+    },
+    {
+      "id": "t27-f40",
+      "anverso": "En un supuesto piden **sodio, potasio, calcio y magnesio**: ¿qué técnica ofrece el examen?",
+      "reverso": "**Cromatografía iónica para cationes**, que es del **tema 30**: así se ofreció en **1322 C2 #30**, y es la única opción aplicable de las cuatro.\n**No es ICP-MS.** El ICP-MS es la respuesta de los **metales traza**; estos cuatro son **cationes mayoritarios**, de mg/L. Además, el **calcio arrastra la interferencia isobárica del ⁴⁰Ar** justo en m/z = 40.",
+      "fuente": "Cuestionario 1322 C2 #30; tema 26, duda 9",
+      "etiquetas": ["agua", "examen"]
+    },
+    {
+      "id": "t27-f41",
+      "anverso": "«¿Qué técnica utilizaría?»: resume la tabla operativa de este tema en cuatro líneas.",
+      "reverso": "**Varios metales, en trazas (µg/L o ng/L) → ICP-MS**, UNE-EN ISO 17294-2:2024.\n**Los mismos a concentración más alta → ICP-OES**, UNE-EN ISO 11885:2010.\n**Un solo metal, de rutina y barato → absorción atómica** (tema 26).\n**Metales totales → digestión ácida en caliente** previa (UNE-EN ISO 15587-1/-2); **disueltos → filtrar a 0,45 µm**.",
+      "fuente": "Tema 27, §3 (tabla operativa)",
+      "etiquetas": ["agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t27-f42",
+      "anverso": "¿Cómo se llama cada cosa: ICP, ICP-MS, ICP-OES, ICP-AES?",
+      "reverso": "**ICP** = *inductively coupled plasma*, **plasma acoplado inductivamente**: es **la fuente**, no la medida.\n**ICP-MS** = plasma acoplado inductivamente **con espectrometría de masas** — así, con todas las letras, es como lo escriben los cuestionarios.\n**ICP-OES** = **emisión óptica**; **ICP-AES** = emisión atómica. **Son la misma técnica con dos nombres.**",
+      "fuente": "Tema 27, §1; cuestionarios 1246 C2 y 1322 C2",
+      "etiquetas": ["concepto"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t27-q01",
+      "pregunta": "¿Cuál es la pieza clave de un equipo de plasma?",
+      "opciones": ["Los electrodos.", "La antorcha.", "La fuente de radiación."],
+      "correcta": 1,
+      "explicacion": "Pregunta literal, con estos mismos distractores, en 1246 #11 y 1322 #28. La antorcha es donde se forma y se sostiene el plasma. Los otros dos son falsos por definición: en un ICP no hay electrodos —el plasma se calienta por inducción, sin contacto— ni fuente de radiación externa, porque la fuente es el propio plasma.",
+      "fuente": "Cuestionarios 1246 #11 y 1322 #28",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q02",
+      "pregunta": "Un plasma, en análisis instrumentales, es:",
+      "opciones": [
+        "Un producto de combustión del gas metano.",
+        "Un gas caliente, generalmente argón, parcialmente ionizado y conductor.",
+        "La mezcla de una muestra con un gas inerte."
+      ],
+      "correcta": 1,
+      "explicacion": "Redacción literal de 1322 #29. Es conductor precisamente porque contiene cargas libres: iones positivos y electrones. En 1233 #10 la misma definición remata «y eléctricamente neutro», que también es cierta —en conjunto hay tantas cargas positivas como negativas—, así que ninguna de las dos colas debe descolocar.",
+      "fuente": "Cuestionario 1322 #29",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q03",
+      "pregunta": "Hablando de técnicas espectroscópicas, se entiende por plasma:",
+      "opciones": [
+        "Un atomizador electrotérmico formado por un tubo de grafito.",
+        "Un sistema de arco de corriente continua.",
+        "Un gas caliente, generalmente argón, parcialmente ionizado y eléctricamente neutro."
+      ],
+      "correcta": 2,
+      "explicacion": "Redacción literal de 1233 #10. Los dos distractores son de otras cosas: el tubo de grafito es la cámara de grafito de la absorción atómica (tema 26), y el arco de corriente continua es una fuente con electrodos, que es justo lo que un ICP no tiene.",
+      "fuente": "Cuestionario 1233 #10",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q04",
+      "pregunta": "El gas del plasma es argón porque:",
+      "opciones": [
+        "Es inerte, tiene una energía de ionización alta y no aporta líneas de emisión que estorben.",
+        "Arde con facilidad y aporta la energía de la combustión.",
+        "Reacciona con el analito y facilita así su atomización."
+      ],
+      "correcta": 0,
+      "explicacion": "Inerte, así que no forma compuestos con el analito; con energía de ionización alta, de modo que ioniza a casi todos los elementos, que la tienen más baja; y sin líneas propias que molesten. El plasma no es una combustión: la energía se la da la bobina de radiofrecuencia por inducción.",
+      "fuente": "Tema 27, §2.1"
+    },
+    {
+      "id": "t27-q05",
+      "pregunta": "La antorcha de un ICP está formada por:",
+      "opciones": [
+        "Dos electrodos de grafito enfrentados dentro de una cámara de cuarzo.",
+        "Un tubo de cuarzo con una lámpara de cátodo hueco en su eje.",
+        "Tres tubos concéntricos de cuarzo rodeados por una bobina de inducción de radiofrecuencia."
+      ],
+      "correcta": 2,
+      "explicacion": "Tres tubos concéntricos de cuarzo: el exterior lleva el argón tangencial que sostiene el plasma y aísla térmicamente el cuarzo, el intermedio el argón auxiliar y el central la muestra nebulizada. Ni electrodos ni lámpara: el ICP no tiene ninguna de las dos cosas.",
+      "fuente": "Tema 27, §2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q06",
+      "pregunta": "Por el tubo central o capilar de la antorcha circula:",
+      "opciones": [
+        "El argón tangencial, que sostiene el plasma y aísla el cuarzo.",
+        "La muestra nebulizada.",
+        "El argón auxiliar, que separa el plasma de la punta del capilar."
+      ],
+      "correcta": 1,
+      "explicacion": "La muestra va por el centro y perfora el plasma, llevando el aerosol al canal central. El argón tangencial es el del tubo exterior y el auxiliar el del intermedio: los dos son gases, no muestra.",
+      "fuente": "Tema 27, §2.2"
+    },
+    {
+      "id": "t27-q07",
+      "pregunta": "El plasma de un ICP se enciende y se mantiene:",
+      "opciones": [
+        "Con una chispa de bobina Tesla y, después, por inducción de radiofrecuencia, sin electrodos.",
+        "Con un arco de corriente continua entre dos electrodos.",
+        "Con la combustión de acetileno en óxido nitroso."
+      ],
+      "correcta": 0,
+      "explicacion": "La chispa Tesla siembra los primeros electrones; a partir de ahí, el campo magnético fluctuante de la bobina obliga a iones y electrones a girar en trayectoria circular y el rozamiento de esos choques es el que calienta. Es calentamiento por inducción: por eso no hacen falta electrodos. La llama de acetileno y óxido nitroso es del tema 26.",
+      "fuente": "Tema 27, §2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q08",
+      "pregunta": "La zona de medida de un plasma de ICP está:",
+      "opciones": [
+        "A 6 000-8 000 K, unos 15-20 mm por encima de la bobina.",
+        "En la base del plasma, que es donde se alcanzan hasta 10 000 K.",
+        "Dentro del tubo central, antes de que el aerosol entre en el plasma."
+      ],
+      "correcta": 0,
+      "explicacion": "La base llega hasta 10 000 K, pero no es donde se mide: la observación se hace más arriba, a 15-20 mm sobre la bobina, donde el plasma está a 6 000-8 000 K. Dentro del tubo central no hay plasma todavía, solo aerosol.",
+      "fuente": "Tema 27, §2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q09",
+      "pregunta": "Frente a una llama de aire-acetileno, el plasma de argón:",
+      "opciones": [
+        "Está a temperatura parecida, pero es más estable.",
+        "Está más frío, y por eso conserva mejor los compuestos refractarios.",
+        "Está tres o cuatro veces más caliente, y por eso descompone los compuestos refractarios."
+      ],
+      "correcta": 2,
+      "explicacion": "La llama de aire-acetileno da 2 100-2 400 °C y el plasma 6 000-8 000 K en la zona de medida. De ahí sale su ventaja de fondo: descompone los refractarios y desaparecen las interferencias químicas del tipo fosfato sobre calcio, que en llama obligaban a añadir lantano.",
+      "fuente": "Tema 27, §2.2; tema 26"
+    },
+    {
+      "id": "t27-q10",
+      "pregunta": "La interferencia de ionización, que en llama obligaba a añadir cesio:",
+      "opciones": [
+        "Se agrava en el ICP, precisamente por la temperatura.",
+        "Se minimiza en el ICP, por la enorme concentración de electrones que deja la ionización del argón.",
+        "Se corrige en el ICP añadiendo lantano."
+      ],
+      "correcta": 1,
+      "explicacion": "El argón ionizado llena el plasma de electrones libres, y ese exceso desplaza el equilibrio de ionización del analito: la interferencia se minimiza sola. El lantano es el remedio de otra interferencia distinta, la química del fosfato sobre el calcio en llama.",
+      "fuente": "Tema 27, §2.2"
+    },
+    {
+      "id": "t27-q11",
+      "pregunta": "La interfase de un ICP-MS está formada por:",
+      "opciones": [
+        "El cono de muestreo (sampler) y el cono skimmer.",
+        "Un monocromador y una rendija de salida.",
+        "Un juego de lentes electrostáticas."
+      ],
+      "correcta": 0,
+      "explicacion": "Los dos conos metálicos con un orificio en la punta son lo característico del ICP-MS: por ahí se pasa del plasma a presión atmosférica al alto vacío del espectrómetro. Las lentes electrostáticas vienen después de la interfase, y el monocromador es de las técnicas ópticas, no de las de masas.",
+      "fuente": "Tema 27, §2.3",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q12",
+      "pregunta": "El salto de presión que salva la interfase de un ICP-MS es:",
+      "opciones": [
+        "De 10⁻⁵ torr en el plasma a 1 atmósfera en el detector.",
+        "No hay tal salto: todo el equipo trabaja a presión atmosférica.",
+        "De 1 atmósfera a ≈ 1 torr tras el cono de muestreo, y a ≈ 10⁻⁵ torr tras el skimmer."
+      ],
+      "correcta": 2,
+      "explicacion": "La presión cae a lo largo del camino, no al revés: el plasma está a 1 atm, detrás del cono de muestreo hay ≈ 1 torr y detrás del skimmer ≈ 10⁻⁵ torr, que es ya la presión de trabajo del espectrómetro. Todo eso en dos saltos y en pocos centímetros.",
+      "fuente": "Tema 27, §2.3",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q13",
+      "pregunta": "Las lentes iónicas de un ICP-MS:",
+      "opciones": [
+        "Separan los iones según su relación masa/carga.",
+        "Separan los iones positivos de los electrones, las especies neutras y los fotones, y enfocan el haz.",
+        "Multiplican la señal de cada ion mediante una cascada de electrones."
+      ],
+      "correcta": 1,
+      "explicacion": "Estrechan el chorro cónico, se quedan solo con los iones positivos y los enfocan a la entrada del analizador. Es importante que aparten los fotones: si los del plasma llegaran al detector, lo cegarían. Separar por m/z es del cuadrupolo, y la cascada de electrones, del detector.",
+      "fuente": "Tema 27, §2.3"
+    },
+    {
+      "id": "t27-q14",
+      "pregunta": "El analizador de masas habitual de un ICP-MS es:",
+      "opciones": [
+        "El cuadrupolo, que distingue masas que difieren en ± 1 m/z.",
+        "El monocromador de red de difracción.",
+        "El analizador de doble enfoque con sector magnético y eléctrico."
+      ],
+      "correcta": 0,
+      "explicacion": "Cuatro barras con tensiones continua y de radiofrecuencia dejan pasar una sola relación m/z en cada instante, y barriendo las tensiones se recorre el espectro de 3 a 300 m/z aproximadamente. El de doble enfoque existe, pero se reserva para cuando hace falta más resolución. El monocromador de red separa luz, no masas: es de las técnicas ópticas de los temas 25 y 26.",
+      "fuente": "Tema 27, §2.3",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q15",
+      "pregunta": "El detector de un ICP-MS es:",
+      "opciones": [
+        "Un fotomultiplicador que mide la intensidad de la luz emitida.",
+        "Una célula fotoeléctrica de silicio.",
+        "Un multiplicador de electrones: cada ion desencadena una cascada, y lo que se hace es contar iones."
+      ],
+      "correcta": 2,
+      "explicacion": "El ICP-MS cuenta iones, no fotones, y de ahí que llegue a partes por billón. Medir luz es lo propio del ICP-OES, que es el hermano de emisión óptica.",
+      "fuente": "Tema 27, §2.3"
+    },
+    {
+      "id": "t27-q16",
+      "pregunta": "El ⁴⁰Ar y el ⁴⁰Ca comparten m/z = 40. Eso es:",
+      "opciones": [
+        "Una interferencia isobárica.",
+        "Una interferencia por ion poliatómico.",
+        "Una interferencia de matriz."
+      ],
+      "correcta": 0,
+      "explicacion": "Isobárica es la de dos elementos distintos con isótopos del mismo número másico, que es exactamente el caso. La poliatómica la produce una especie formada en el plasma, como el ⁴⁰Ar¹⁶O⁺ sobre el ⁵⁶Fe⁺; y la de matriz la causa el exceso de sal o de ácido, que cambia la eficacia de nebulización y de ionización.",
+      "fuente": "Tema 27, §2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q17",
+      "pregunta": "Al medir hierro por ICP-MS, el ⁴⁰Ar¹⁶O⁺ pesa 56 y se solapa con el ⁵⁶Fe⁺. Eso es:",
+      "opciones": [
+        "Una interferencia isobárica entre dos elementos.",
+        "Una interferencia por ion poliatómico formado en el plasma.",
+        "Una interferencia química, corregible con lantano."
+      ],
+      "correcta": 1,
+      "explicacion": "No son dos elementos con la misma masa, sino una especie poliatómica formada en el propio plasma a partir del argón y del oxígeno. Las interferencias químicas, y con ellas el lantano, son de la llama del tema 26: en el plasma prácticamente desaparecen.",
+      "fuente": "Tema 27, §2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q18",
+      "pregunta": "El patrón interno de un ICP-MS:",
+      "opciones": [
+        "Es el patrón de calibrado más concentrado de la serie.",
+        "Se añade a la disolución de medida después del cuadrupolo.",
+        "Es un elemento ausente de la muestra —el germanio, por ejemplo— que se bombea junto con ella antes de la nebulización."
+      ],
+      "correcta": 2,
+      "explicacion": "Tiene que entrar antes de la nebulización para sufrir exactamente lo mismo que el analito: solo así corrige a la vez la deriva del equipo y el efecto de matriz. Añadirlo después del cuadrupolo no tendría sentido, porque ahí ya se han separado las masas.",
+      "fuente": "Tema 27, §2.4; Barron 1.6"
+    },
+    {
+      "id": "t27-q19",
+      "pregunta": "Comparados entre sí, el ICP-OES y el ICP-MS:",
+      "opciones": [
+        "El ICP-MS baja a 1-10 ppt y distingue isótopos; el ICP-OES se queda en 1-10 ppb y no los distingue.",
+        "El ICP-OES es el más sensible de los dos, porque no pierde iones en los conos.",
+        "Los dos tienen el mismo límite de detección, y solo cambia el precio del equipo."
+      ],
+      "correcta": 0,
+      "explicacion": "Tres órdenes de magnitud separan a uno de otro: ppb el de emisión óptica, ppt el de masas. Y solo el de masas distingue isótopos, que es lo que le permite, por ejemplo, medir los del uranio. El rango dinámico también es mayor en el ICP-MS: ocho órdenes frente a seis.",
+      "fuente": "Tema 27, §2.5; Barron 1.6"
+    },
+    {
+      "id": "t27-q20",
+      "pregunta": "Las normas de agua de las dos técnicas de plasma son:",
+      "opciones": [
+        "ICP-OES, UNE-EN ISO 11885:2010; ICP-MS, UNE-EN ISO 17294, partes 1 y 2, ambas de 2024.",
+        "ICP-OES, UNE-EN ISO 17294-2; ICP-MS, UNE-EN ISO 11885.",
+        "Las dos comparten la UNE-EN ISO 15587."
+      ],
+      "correcta": 0,
+      "explicacion": "La 11885 es la de emisión óptica y la 17294 la de masas, con la parte 1 de directrices generales y la parte 2 de elementos seleccionados, incluidos los isótopos de uranio. La 15587 no es de medida: es la de la digestión previa, en dos partes, con agua regia y con ácido nítrico.",
+      "fuente": "Fichas de AENOR de la UNE-EN ISO 11885, 17294-1, 17294-2 y 15587",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q21",
+      "pregunta": "Sobre la vigencia de las normas de ICP-MS:",
+      "opciones": [
+        "La UNE-EN ISO 17294-2:2017 sigue siendo la edición en vigor.",
+        "Solo se ha renovado la parte 2; la parte 1 sigue siendo la de 2007.",
+        "Las dos partes se renovaron en 2024: la -2:2024 anuló a la de 2017 y la -1:2024, a la de 2007."
+      ],
+      "correcta": 2,
+      "explicacion": "La 17294-2:2024 anuló a la de 2017 el 6 de noviembre de 2024, y la 17294-1:2024 anuló a la de 2007 el 11 de diciembre de 2024. Citar hoy la de 2017 es citar una norma anulada.",
+      "fuente": "Fichas de AENOR de la UNE-EN ISO 17294-1 y -2",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q22",
+      "pregunta": "Para analizar el contenido total de metales en un agua residual, antes de utilizar una técnica instrumental se requiere:",
+      "opciones": [
+        "Filtrar la muestra.",
+        "Digestión ácida y en caliente de la muestra y posterior filtración.",
+        "Digestión en medio básico de la muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta literal de 1246 #25. Para el contenido TOTAL no se filtra antes, porque se perdería el metal ligado a partículas: se digiere en ácido y en caliente —agua regia en la UNE-EN ISO 15587-1, ácido nítrico en la -2— y se filtra después. Filtrar primero, a 0,45 µm, es lo del metal DISUELTO.",
+      "fuente": "Cuestionario 1246 #25; UNE-EN ISO 15587-1 y -2",
+      "nucleo": true
+    },
+    {
+      "id": "t27-q23",
+      "pregunta": "Un ICP-MS NO determina:",
+      "opciones": [
+        "El plomo, el cadmio y el mercurio.",
+        "El hidrógeno, el helio, el carbono ni los elementos sin isótopos naturales; y los halógenos, mal.",
+        "El uranio ni sus isótopos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los halógenos van mal porque su energía de ionización es más alta que la del argón, así que el plasma no los ioniza bien. Plomo, cadmio y mercurio son justamente el terreno del ICP-MS, y el uranio con sus isótopos aparece hasta en el título de la UNE-EN ISO 17294-2.",
+      "fuente": "Tema 27, §2.5; Barron 1.6 y ficha del CAI de la UCM"
+    },
+    {
+      "id": "t27-q24",
+      "pregunta": "El RD 3/2023 exige al método con el que se analiza un metal en agua de consumo:",
+      "opciones": [
+        "Un límite de cuantificación ≤ 30 % del valor paramétrico y la incertidumbre de la tabla 15, sin imponer método.",
+        "Emplear obligatoriamente la UNE-EN ISO 17294-2.",
+        "Una incertidumbre ≤ 50 % (k = 2) al nivel de la norma de calidad ambiental."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo III, parte D, no impone técnica: fija prestaciones. LC ≤ 30 % del valor paramétrico, incertidumbre (k = 2) según la tabla 15, y LC y LD siempre por debajo del valor paramétrico. La incertidumbre del 50 % referida a la norma de calidad ambiental es del RD 817/2015, que es de aguas superficiales.",
+      "fuente": "RD 3/2023, anexo III, parte D; RD 817/2015, anexo III, C.1"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t27-s01",
+      "titulo": "Supuesto 1. Elección de técnica para los metales de un agua de consumo",
+      "enunciado": "En el Laboratorio de Fisicoquímica del Ayuntamiento de Zaragoza entra una muestra de **agua de consumo** en la que hay que determinar:\n\n- **Cadmio, aluminio, antimonio y cromo**, a nivel de **µg/L**.\n- **Mercurio, selenio y plomo**, también a nivel de **µg/L**.\n- **Sodio, potasio, calcio y magnesio**, a nivel de **decenas de mg/L**.\n- **Uranio**, y además sus **isótopos**.\n\nLos metales se piden como **contenido total**. El laboratorio dispone de ICP-MS, ICP-OES, absorción atómica y cromatografía iónica.\n\nIndique en cada caso qué haría o qué técnica utilizaría.",
+      "preguntas": [
+        {
+          "id": "t27-s01-q1",
+          "pregunta": "Cadmio, aluminio, antimonio y cromo:",
+          "opciones": [
+            "Permanganimetría.",
+            "Cromatografía de gases.",
+            "Cromatografía líquida.",
+            "ICP-MS, plasma con acoplamiento inductivo con espectrometría de masas."
+          ],
+          "correcta": 3,
+          "explicacion": "Son cuatro metales a la vez y en µg/L: el terreno exacto del ICP-MS, que es multielemental y llega a ppt. Es la pregunta de 1322 C2 #25, con estas mismas opciones. Las otras tres no sirven para metales: la permanganimetría es una volumetría de oxidación-reducción, y las dos cromatografías separan compuestos orgánicos, no elementos.",
+          "fuente": "Cuestionario 1322 C2 #25; UNE-EN ISO 17294-2:2024"
+        },
+        {
+          "id": "t27-s01-q2",
+          "pregunta": "Mercurio, selenio y plomo:",
+          "opciones": [
+            "Conductímetro.",
+            "Cromatógrafo iónico para cationes.",
+            "ICP-MS, plasma con acoplamiento inductivo con espectrometría de masas.",
+            "Turbidímetro."
+          ],
+          "correcta": 2,
+          "explicacion": "Pregunta de 1322 C2 #29, con estas mismas opciones. Otra vez varios metales traza a la vez, así que ICP-MS. El conductímetro mide conductividad —una propiedad del conjunto de iones, no de un elemento— y el turbidímetro, turbidez; ninguno de los dos determina metales. La cromatografía iónica de cationes es de los cationes mayoritarios, no de estos tres.",
+          "fuente": "Cuestionario 1322 C2 #29; UNE-EN ISO 17294-2:2024"
+        },
+        {
+          "id": "t27-s01-q3",
+          "pregunta": "Sodio, potasio, calcio y magnesio:",
+          "opciones": [
+            "Cromatografía iónica para aniones.",
+            "Cromatografía iónica para cationes.",
+            "Cromatografía de gases con fluorescencia.",
+            "ICP-MS, que los determina sin interferencia alguna."
+          ],
+          "correcta": 1,
+          "explicacion": "Son los cuatro cationes mayoritarios, a decenas de mg/L, y así se ofreció en 1322 C2 #30: cromatografía iónica para cationes, que es del tema 30. Sodio, potasio, calcio y magnesio son cationes, no aniones. Y ojo con la última opción: el ICP-MS mide metales, pero el calcio arrastra la interferencia isobárica del ⁴⁰Ar del propio plasma en m/z = 40, así que «sin interferencia alguna» es falso.",
+          "fuente": "Cuestionario 1322 C2 #30; tema 30; tema 27, §2.4"
+        },
+        {
+          "id": "t27-s01-q4",
+          "pregunta": "Uranio, y además sus isótopos:",
+          "opciones": [
+            "ICP-MS, según la UNE-EN ISO 17294-2, que incluye en su título los isótopos de uranio.",
+            "ICP-OES, según la UNE-EN ISO 11885.",
+            "Absorción atómica de llama.",
+            "Cromatografía iónica para cationes."
+          ],
+          "correcta": 0,
+          "explicacion": "De las técnicas de este bloque, solo el ICP-MS distingue isótopos, y la norma lo dice hasta en el título: «Determinación de elementos seleccionados incluyendo isótopos de uranio». El ICP-OES mide luz y no separa isótopos; la absorción atómica es monoelemental y tampoco los distingue. El valor paramétrico del uranio es del tema 33 y su tratamiento como radionucleido, del 29.",
+          "fuente": "UNE-EN ISO 17294-2:2024; RD 3/2023, anexo I"
+        },
+        {
+          "id": "t27-s01-q5",
+          "pregunta": "Preparación previa de la muestra, dado que los metales se piden como contenido total:",
+          "opciones": [
+            "Filtrar a 0,45 µm y acidificar el filtrado.",
+            "Digestión ácida y en caliente de la muestra y posterior filtración.",
+            "Digestión en medio básico de la muestra.",
+            "Ninguna: la muestra se inyecta directamente en el nebulizador."
+          ],
+          "correcta": 1,
+          "explicacion": "Para el contenido TOTAL hay que llevar a disolución también el metal ligado a partículas, así que se digiere en ácido y en caliente —agua regia en la UNE-EN ISO 15587-1, ácido nítrico en la -2— y se filtra después. Es la respuesta literal de 1246 #25. Filtrar primero a 0,45 µm y acidificar es el procedimiento del metal DISUELTO, y la digestión de metales es ácida, nunca básica.",
+          "fuente": "Cuestionario 1246 #25; UNE-EN ISO 15587-1 y -2:2002"
+        }
+      ]
+    },
+    {
+      "id": "t27-s02",
+      "titulo": "Supuesto 2. Puesta en marcha de un ICP-MS y control de sus interferencias",
+      "enunciado": "Se pone en marcha un **ICP-MS de cuadrupolo** para determinar metales en aguas. Durante la validación aparecen tres problemas:\n\n- El **hierro**, medido en **m/z = 56**, sale sistemáticamente **más alto** de lo que dan los materiales de referencia.\n- El **calcio**, medido en **m/z = 40**, da una lectura **irreal**.\n- Una de las muestras es un **agua salina**, con mucha carga de sales disueltas, y sus resultados **no cuadran** con los de los patrones acuosos.\n\nAdemás hay que dejar por escrito el requisito legal que ha de cumplir el método para el **plomo en agua de consumo**.",
+      "figura": { "tipo": "esquema", "valor": "icp-ms" },
+      "preguntas": [
+        {
+          "id": "t27-s02-q1",
+          "pregunta": "El hierro sale alto en m/z = 56. La causa más probable es:",
+          "opciones": [
+            "El detector está saturado y basta con diluir.",
+            "Una interferencia química del tipo fosfato, que se corrige con lantano.",
+            "La lámpara de cátodo hueco del hierro está desalineada.",
+            "El ion poliatómico ⁴⁰Ar¹⁶O⁺, que pesa 56 y se solapa con el ⁵⁶Fe⁺."
+          ],
+          "correcta": 3,
+          "explicacion": "Es el ejemplo de manual de interferencia poliatómica: argón del plasma y oxígeno del disolvente forman ⁴⁰Ar¹⁶O⁺, que cae justo en la masa del isótopo más abundante del hierro. Se sale eligiendo otro isótopo del hierro, con ecuaciones de corrección o con celda de colisión. Las interferencias químicas y el lantano son de la llama del tema 26, y un ICP-MS no tiene lámpara de cátodo hueco: no tiene lámpara ninguna.",
+          "fuente": "Tema 27, §2.4; LibreTexts, Análisis Instrumental 11.3"
+        },
+        {
+          "id": "t27-s02-q2",
+          "pregunta": "El calcio da una lectura irreal en m/z = 40. Se trata de:",
+          "opciones": [
+            "Una interferencia isobárica: el ⁴⁰Ar del propio plasma comparte m/z = 40 con el ⁴⁰Ca.",
+            "Una interferencia química por fosfato, que se corrige añadiendo lantano.",
+            "Un exceso de temperatura en la zona de medida del plasma.",
+            "La falta de un corrector de fondo de deuterio."
+          ],
+          "correcta": 0,
+          "explicacion": "Dos elementos distintos con isótopos del mismo número másico: eso es una interferencia isobárica, y aquí el interferente es el gas del propio plasma. La salida habitual es medir otro isótopo del calcio. El corrector de deuterio es del espectrómetro de absorción atómica, y el lantano, de la interferencia química en llama; ninguno de los dos pinta nada en un ICP-MS.",
+          "fuente": "Tema 27, §2.4"
+        },
+        {
+          "id": "t27-s02-q3",
+          "pregunta": "Con el agua salina, cuya matriz no se parece a la de los patrones, procede:",
+          "opciones": [
+            "Añadir cesio como supresor de ionización, igual que en llama.",
+            "Sustituir el cuadrupolo por un monocromador de red.",
+            "Diluir la muestra, igualar la matriz de los patrones y emplear patrón interno.",
+            "Medir sin más: el ICP-MS es insensible a la matriz."
+          ],
+          "correcta": 2,
+          "explicacion": "Mucha sal cambia la eficacia de nebulización y de ionización, y el ICP-MS no admite mucha carga de sólidos disueltos: se diluye, se iguala la matriz de patrones y muestras —o se recurre a la adición de patrón— y se usa patrón interno. El cesio es el remedio de la interferencia de ionización en llama, que en el plasma ya está minimizada; y un monocromador separa luz, no masas.",
+          "fuente": "Tema 27, §2.4"
+        },
+        {
+          "id": "t27-s02-q4",
+          "pregunta": "El patrón interno que se decide emplear es:",
+          "opciones": [
+            "Un blanco de reactivos medido al final de cada serie.",
+            "La disolución de calibrado más concentrada de la recta.",
+            "Un elemento ya presente en la muestra, añadido después del cuadrupolo.",
+            "Un elemento ausente de la muestra —el germanio, por ejemplo— bombeado junto con ella antes de la nebulización."
+          ],
+          "correcta": 3,
+          "explicacion": "Tiene que ser un elemento que no esté en la muestra, para que su señal solo dependa del equipo, y tiene que entrar antes de la nebulización para sufrir exactamente lo mismo que el analito. Así corrige a la vez la deriva del instrumento y el efecto de matriz. Después del cuadrupolo ya no corregiría nada, porque las masas están separadas.",
+          "fuente": "Tema 27, §2.4; Barron 1.6"
+        },
+        {
+          "id": "t27-s02-q5",
+          "pregunta": "El requisito legal que ha de cumplir el método para el plomo en agua de consumo es:",
+          "opciones": [
+            "Emplear obligatoriamente la UNE-EN ISO 17294-2, por ser la norma de la técnica.",
+            "Un límite de cuantificación ≤ 30 % del valor paramétrico y la incertidumbre (k = 2) de la tabla 15, sin que se imponga método.",
+            "Una incertidumbre ≤ 50 % (k = 2) al nivel de la norma de calidad ambiental.",
+            "Ninguno: el Real Decreto no fija requisitos a los métodos de análisis."
+          ],
+          "correcta": 1,
+          "explicacion": "El RD 3/2023, anexo III, parte D, no impone técnica: fija prestaciones. LC ≤ 30 % del valor paramétrico, incertidumbre (k = 2) según la tabla 15, y LC y LD siempre inferiores al valor paramétrico. La incertidumbre del 50 % referida a la norma de calidad ambiental es del RD 817/2015, que regula aguas superficiales, no de consumo.",
+          "fuente": "RD 3/2023, anexo III, parte D, puntos 1 y 3; RD 817/2015, anexo III, C.1"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 tema: 27
 titulo: "Espectroscopía de Masas con Plasma Acoplado Inductivamente (ICP): fundamentos e instrumentación. Utilización en análisis de agua."
 parte: Parte segunda
-estado: borrador
+estado: aprobado
 verificado: 2026-09-07
 fuentes:
   - "UNE-EN ISO 17294-2:2024, Calidad del agua. Aplicación de la espectrometría de masas con plasma acoplado inductivamente (ICP-MS). Parte 2: Determinación de elementos seleccionados incluyendo isótopos de uranio. EN VIGOR, 06/11/2024. ANULA a la UNE-EN ISO 17294-2:2017 (que a su vez sustituyó a la de 2005). Idéntica a EN ISO 17294-2:2023. — https://tienda.aenor.com/p/norma-une-en-iso-17294-2-2024-n0073648"
@@ -275,6 +275,6 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 
 8. **No tengo la plantilla de respuestas de ningún cuestionario.** Cuando digo que «la respuesta es ICP-MS» en los supuestos, lo deduzco de que las otras tres opciones son claramente inaplicables (permanganimetría o cromatografía de gases para metales, por ejemplo). En las dos preguntas de la antorcha y del plasma la deducción es segura; en los supuestos, muy probable pero no certificada.
 
-9. **1322 C2 #30 aporta un dato que roza la duda 9 del tema 26.** Para «sodio, potasio, calcio y magnesio» la única opción sensata que se ofrece es **cromatografía iónica para cationes**. No resuelve del todo la ambigüedad del tema 26 —allí las opciones incluían potenciometría, que aquí no está—, pero **apunta a que el examinador considera la cromatografía iónica la técnica de esos cationes**. Lo dejo anotado por si conviene matizar aquella duda.
+9. **1322 C2 #30 aporta un dato que roza la duda 9 del tema 26.** Para «sodio, potasio, calcio y magnesio» la única opción sensata que se ofrece es **cromatografía iónica para cationes**. No resuelve del todo la ambigüedad del tema 26 —allí las opciones incluían potenciometría, que aquí no está—, pero **apunta a que el examinador considera la cromatografía iónica la técnica de esos cationes**. **Ya trasladado**: la duda 9 del tema 26 recoge la matización. Allí queda dicho que **la duda se estrecha pero no se cierra**, porque 1322 C2 #30 ofrece además «ninguna de las anteriores es correcta» y sigo sin plantilla de respuestas.
 
 10. **El reparto entre este tema y el 26 lo he decidido yo**, y el de dentro del tema también: el enunciado dice «espectroscopía de masas», así que el ICP-MS lleva el peso y el ICP-OES entra como hermano porque tiene norma de agua vigente y porque **las dos preguntas documentadas son del plasma y de la antorcha, que son comunes a los dos**. La **espectrometría de masas acoplada a cromatografía** (GC-MS, LC-MS) no está aquí: es de los temas 31 y 32.
