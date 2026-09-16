@@ -75,6 +75,44 @@ function medir(sabotaje, ROJO) {
    */
   const trazoDe = (el) => el.getAttribute('stroke') ?? el.closest('[stroke]')?.getAttribute('stroke')
 
+  /**
+   * Piezas marcadas con `data-pieza` en el dibujo.
+   *
+   * Los esquemas antiguos se localizan por color y por forma, que es lo mas
+   * barato cuando la pieza es unica. En los opticos no lo es: hay dos
+   * detectores identicos y dos haces del mismo rojo, y lo que se afirma es
+   * justo CUAL es cual. Antes que adivinarlo con heuristicas fragiles, el
+   * dibujo lo dice: es la misma idea que el `data-listo` de la vista de
+   * impresion.
+   */
+  const pieza = (svg, nombre) => {
+    const el = svg.querySelector(`[data-pieza="${nombre}"]`)
+    if (!el) throw new Error(`falta la pieza "${nombre}"`)
+    return el
+  }
+  const piezas = (svg, nombre) => {
+    const els = [...svg.querySelectorAll(`[data-pieza="${nombre}"]`)]
+    if (!els.length) throw new Error(`no hay ninguna pieza "${nombre}"`)
+    return els
+  }
+
+  const centroCaja = (el) => {
+    const c = el.getBBox()
+    return [c.x + c.width / 2, c.y + c.height / 2]
+  }
+
+  const num = (el, atributo) => Number(el.getAttribute(atributo))
+
+  /** Angulo de una recta respecto de la VERTICAL, en (-90, 90]. */
+  const desdeVertical = (l) => {
+    const dx = num(l, 'x2') - num(l, 'x1')
+    const dy = num(l, 'y2') - num(l, 'y1')
+    let a = (Math.atan2(dx, dy) * 180) / Math.PI
+    if (a > 90) a -= 180
+    if (a <= -90) a += 180
+    return a
+  }
+
   const centroX = (svg, texto) => {
     const t = [...svg.querySelectorAll('text')].find(
       (e) => e.textContent.replace(/\s+/g, ' ').trim() === texto,
@@ -225,6 +263,69 @@ function medir(sabotaje, ROJO) {
     const x = alta.getAttribute('x')
     alta.setAttribute('x', baja.getAttribute('x'))
     baja.setAttribute('x', x)
+  }
+
+  if (sabotaje === 17) {
+    const svg = porClave('nefelometro-turbidimetro')
+    const d90 = pieza(svg, 'detector-90')
+    // el detector de nefelometria, puesto EN LINEA con la fuente
+    d90.setAttribute('x', '420')
+    d90.setAttribute('y', '52')
+  }
+  if (sabotaje === 18) {
+    const svg = porClave('nefelometro-turbidimetro')
+    // el haz sale de la cubeta igual de grueso que entro: no se ha atenuado
+    pieza(svg, 'haz-transmitido').setAttribute(
+      'stroke-width',
+      pieza(svg, 'haz-incidente').getAttribute('stroke-width'),
+    )
+  }
+  if (sabotaje === 19) {
+    const svg = porClave('refractometro-abbe')
+    // el rayo refractado se ALEJA de la normal, como si el prisma fuera menos denso
+    const r = pieza(svg, 'rayo-refractado')
+    r.setAttribute('x2', '196')
+    r.setAttribute('y2', '118')
+  }
+  if (sabotaje === 20) {
+    const svg = porClave('refractometro-abbe')
+    // la linea claro/oscuro, descentrada respecto de la cruz del reticulo
+    const f = pieza(svg, 'frontera')
+    f.setAttribute('y1', '132')
+    f.setAttribute('y2', '132')
+  }
+  if (sabotaje === 21) {
+    const svg = porClave('polarimetro')
+    const tubo = pieza(svg, 'tubo').getBBox()
+    // el plano ya sale girado del polarizador: el giro deja de ser cosa del tubo
+    for (const l of piezas(svg, 'plano')) {
+      const cx = (num(l, 'x1') + num(l, 'x2')) / 2
+      const cy = (num(l, 'y1') + num(l, 'y2')) / 2
+      if (cx > tubo.x) continue
+      const h = Math.abs(num(l, 'y2') - cy)
+      l.setAttribute('x1', cx - h * 0.5)
+      l.setAttribute('y1', cy - h * 0.866)
+      l.setAttribute('x2', cx + h * 0.5)
+      l.setAttribute('y2', cy + h * 0.866)
+    }
+  }
+  if (sabotaje === 22) {
+    const svg = porClave('polarimetro')
+    // el analizador se queda vertical, sin seguir al plano
+    for (const l of piezas(svg, 'analizador')) {
+      const cx = (num(l, 'x1') + num(l, 'x2')) / 2
+      l.setAttribute('x1', cx)
+      l.setAttribute('x2', cx)
+    }
+  }
+  if (sabotaje === 23) {
+    const svg = porClave('polarimetro')
+    // el fallo real: la laja, girada al reves que su propia rejilla
+    const laja = pieza(svg, 'analizador-laja')
+    const n = laja.getAttribute('d').match(/-?\d+(?:\.\d+)?/g).map(Number)
+    const d = []
+    for (let i = 0; i + 1 < n.length; i += 2) d.push(`${i ? 'L' : 'M'}${856 - n[i]} ${n[i + 1]}`)
+    laja.setAttribute('d', `${d.join(' ')} Z`)
   }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
@@ -540,6 +641,149 @@ function medir(sabotaje, ROJO) {
     return xs.map(([z, x]) => `${z}@${x.toFixed(0)}`).join(' → ')
   })
 
+  control('Turbidez · nefelometría A 90° y turbidimetría EN LÍNEA', () => {
+    const svg = porClave('nefelometro-turbidimetro')
+    const [cx, cy] = centroCaja(pieza(svg, 'cubeta'))
+    // el haz incidente viaja en +x: el angulo se mide contra esa direccion
+    const angulo = (nombre) => {
+      const [dx, dy] = centroCaja(pieza(svg, nombre))
+      return (Math.atan2(dy - cy, dx - cx) * 180) / Math.PI
+    }
+    const linea = angulo('detector-180')
+    const noventa = angulo('detector-90')
+    if (Math.abs(linea) > 3) {
+      throw new Error(`el detector de turbidimetría está a ${linea.toFixed(1)}°, no en línea con el haz`)
+    }
+    if (Math.abs(Math.abs(noventa) - 90) > 3) {
+      throw new Error(
+        `el detector de nefelometría está a ${noventa.toFixed(1)}° y la norma lo pone a 90°: así mediría atenuación, no dispersión`,
+      )
+    }
+    return `turbidimetría a ${linea.toFixed(1)}° (en línea) y nefelometría a ${Math.abs(noventa).toFixed(1)}°`
+  })
+
+  control('Turbidez · el haz sale de la cubeta ATENUADO', () => {
+    const svg = porClave('nefelometro-turbidimetro')
+    const entra = Number(pieza(svg, 'haz-incidente').getAttribute('stroke-width'))
+    const sale = Number(pieza(svg, 'haz-transmitido').getAttribute('stroke-width'))
+    if (!(sale < entra * 0.8)) {
+      throw new Error(
+        `entra con ${entra} y sale con ${sale}: si no adelgaza, el dibujo no enseña que la suspensión atenúa el haz`,
+      )
+    }
+    return `${entra} px al entrar y ${sale} px al salir: atenuación visible`
+  })
+
+  control('Refractómetro · el rayo SE ACERCA a la normal al entrar en el prisma', () => {
+    const svg = porClave('refractometro-abbe')
+    const normal = pieza(svg, 'normal')
+    if (num(normal, 'x1') !== num(normal, 'x2')) throw new Error('la normal no está dibujada vertical')
+    const i = Math.abs(desdeVertical(pieza(svg, 'rayo-incidente')))
+    const r = Math.abs(desdeVertical(pieza(svg, 'rayo-refractado')))
+    if (!(r < i)) {
+      throw new Error(
+        `refracción ${r.toFixed(1)}° e incidencia ${i.toFixed(1)}°: el rayo se aleja de la normal, que es lo que pasaría si el prisma fuera MENOS denso que la muestra`,
+      )
+    }
+    if (!(i - r >= 20)) {
+      throw new Error(`solo se desvía ${(i - r).toFixed(1)}°: el ángulo límite no se distingue`)
+    }
+    return `incidencia ${i.toFixed(1)}° → refracción ${r.toFixed(1)}° (${(i - r).toFixed(0)}° más cerca de la normal)`
+  })
+
+  control('Refractómetro · la línea claro/oscuro cae en la cruz del retículo', () => {
+    const svg = porClave('refractometro-abbe')
+    const ocular = pieza(svg, 'ocular')
+    const cy = Number(ocular.getAttribute('cy'))
+    const cx = Number(ocular.getAttribute('cx'))
+    const r = Number(ocular.getAttribute('r'))
+    const f = pieza(svg, 'frontera')
+    if (num(f, 'y1') !== num(f, 'y2')) throw new Error('la línea de separación no está horizontal')
+    const desvio = Math.abs(num(f, 'y1') - cy)
+    if (desvio > 1) {
+      throw new Error(
+        `la línea va por y=${num(f, 'y1')} y la cruz está en y=${cy}: descentrada ${desvio.toFixed(1)} px, que es justo la lectura mal hecha`,
+      )
+    }
+    if (num(f, 'x1') > cx - r + 1 || num(f, 'x2') < cx + r - 1) {
+      throw new Error('la línea no cruza todo el campo del ocular')
+    }
+    return `línea en y=${num(f, 'y1')} y cruz en y=${cy}, de lado a lado del campo`
+  })
+
+  control('Polarímetro · el plano de polarización solo gira EN EL TUBO', () => {
+    const svg = porClave('polarimetro')
+    const tubo = pieza(svg, 'tubo').getBBox()
+    const marcas = piezas(svg, 'plano').map((l) => ({
+      x: (num(l, 'x1') + num(l, 'x2')) / 2,
+      a: desdeVertical(l),
+    }))
+    const antes = marcas.filter((m) => m.x < tubo.x)
+    const despues = marcas.filter((m) => m.x > tubo.x + tubo.width)
+    if (!antes.length || !despues.length) throw new Error('faltan marcas del plano a un lado del tubo')
+
+    const torcida = antes.find((m) => Math.abs(m.a) > 1)
+    if (torcida) {
+      throw new Error(
+        `una marca anterior al tubo ya va girada ${torcida.a.toFixed(1)}°: el giro dejaría de ser cosa de la muestra`,
+      )
+    }
+    const alfa = despues[0].a
+    if (Math.abs(alfa) < 10) throw new Error(`a la salida el plano solo gira ${alfa.toFixed(1)}°: no se ve`)
+    const suelta = despues.find((m) => Math.abs(m.a - alfa) > 1)
+    if (suelta) {
+      throw new Error(`las marcas de salida no coinciden: ${alfa.toFixed(1)}° y ${suelta.a.toFixed(1)}°`)
+    }
+    return `${antes.length} marcas verticales antes del tubo y ${despues.length} giradas ${alfa.toFixed(0)}° después`
+  })
+
+  control('Polarímetro · el analizador va girado el MISMO ángulo que el plano', () => {
+    const svg = porClave('polarimetro')
+    const tubo = pieza(svg, 'tubo').getBBox()
+    const salida = piezas(svg, 'plano')
+      .filter((l) => (num(l, 'x1') + num(l, 'x2')) / 2 > tubo.x + tubo.width)
+      .map(desdeVertical)
+    if (!salida.length) throw new Error('no hay marcas del plano a la salida del tubo')
+    const alfa = salida[0]
+
+    const rejilla = piezas(svg, 'analizador').map(desdeVertical)
+    const mal = rejilla.find((a) => Math.abs(a - alfa) > 1.5)
+    if (mal !== undefined) {
+      throw new Error(
+        `el analizador va a ${mal.toFixed(1)}° y el plano sale a ${alfa.toFixed(1)}°: así no dejaría pasar la luz`,
+      )
+    }
+
+    /*
+     * Y el CONTORNO de la laja, no solo su rejilla. Mirar solo la rejilla dejo
+     * pasar el fallo de verdad: la laja se dibujo girada al reves -la matriz de
+     * giro de toda la vida gira al contrario cuando la y crece hacia abajo- y
+     * salio cruzada con sus propias lineas, con los controles en verde.
+     */
+    const v = pieza(svg, 'analizador-laja')
+      .getAttribute('d')
+      .match(/-?\d+(?:\.\d+)?/g)
+      .map(Number)
+    const vertices = []
+    for (let i = 0; i + 1 < v.length; i += 2) vertices.push([v[i], v[i + 1]])
+    if (vertices.length !== 4) throw new Error(`la laja tiene ${vertices.length} vértices y no 4`)
+    // el eje de la laja es su arista mas larga
+    let eje = null
+    for (let i = 0; i < 4; i++) {
+      const [x1, y1] = vertices[i]
+      const [x2, y2] = vertices[(i + 1) % 4]
+      const largo = Math.hypot(x2 - x1, y2 - y1)
+      if (!eje || largo > eje.largo) eje = { largo, x1, y1, x2, y2 }
+    }
+    const angLaja = desdeVertical({ getAttribute: (a) => eje[a] })
+    if (Math.abs(angLaja - alfa) > 1.5) {
+      throw new Error(
+        `la laja del analizador va a ${angLaja.toFixed(1)}° y su rejilla a ${alfa.toFixed(1)}°: está cruzada consigo misma`,
+      )
+    }
+    return `plano a ${alfa.toFixed(1)}°, las ${rejilla.length} líneas del analizador y su laja (${angLaja.toFixed(1)}°), todo igual`
+  })
+
   return resultados
 }
 
@@ -562,6 +806,13 @@ const SABOTAJES = {
   14: 'la zona de medida pintada antes de la bobina',
   15: 'el cuadrupolo rotulado al principio de la cadena del ICP-MS',
   16: 'las presiones del ICP-MS, del revés',
+  17: 'el detector de nefelometría, puesto en línea con la fuente',
+  18: 'el haz saliendo de la cubeta tan grueso como entró',
+  19: 'el rayo refractado, alejándose de la normal',
+  20: 'la línea claro/oscuro del ocular, descentrada de la cruz',
+  21: 'el plano de polarización, girado ya antes del tubo',
+  22: 'el analizador, dejado vertical mientras el plano va girado',
+  23: 'la laja del analizador, girada al revés que su propia rejilla',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -588,6 +839,13 @@ const CONTROL_DE = {
   14: [13],
   15: [14],
   16: [15],
+  17: [16],
+  18: [17],
+  19: [18],
+  20: [19],
+  21: [20],
+  22: [21],
+  23: [21],
 }
 
 async function main() {

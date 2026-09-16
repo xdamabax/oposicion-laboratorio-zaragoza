@@ -52,6 +52,9 @@ export type TipoEsquema =
   | 'horno-grafito'
   | 'antorcha-icp'
   | 'icp-ms'
+  | 'nefelometro-turbidimetro'
+  | 'refractometro-abbe'
+  | 'polarimetro'
 
 export type TipoMaterial =
   | 'matraz-aforado'

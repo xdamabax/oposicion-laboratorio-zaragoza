@@ -2,7 +2,7 @@
 tema: 20
 titulo: "Seguridad en el laboratorio físico-químico: Clases de riesgos de los productos químicos. Frases de riesgo. Consejos de seguridad. Equipos de Protección Individual. Almacenamiento de productos químicos. Eliminación de residuos."
 parte: Parte segunda
-estado: borrador
+estado: aprobado
 verificado: 2026-09-01
 fuentes:
   - "Reglamento (CE) n.º 1272/2008 (CLP), sobre clasificación, etiquetado y envasado de sustancias y mezclas. Versión consolidada de 01/07/2026, en vigor. ELI: http://data.europa.eu/eli/reg/2008/1272/2026-07-01"

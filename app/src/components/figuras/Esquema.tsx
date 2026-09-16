@@ -26,6 +26,9 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'horno-grafito': 'Programa de temperaturas del horno de grafito',
   'antorcha-icp': 'Antorcha de plasma acoplado inductivamente',
   'icp-ms': 'ICP-MS: del plasma al vacío, a través de los conos',
+  'nefelometro-turbidimetro': 'Medida de la turbidez: nefelometría a 90° y turbidimetría en línea',
+  'refractometro-abbe': 'Refractómetro de Abbe: ángulo límite y campo del ocular',
+  polarimetro: 'Polarímetro: el plano de polarización gira en el tubo',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -46,6 +49,9 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'horno-grafito': { ancho: 340, alto: 222 },
   'antorcha-icp': { ancho: 460, alto: 232 },
   'icp-ms': { ancho: 540, alto: 224 },
+  'nefelometro-turbidimetro': { ancho: 500, alto: 268 },
+  'refractometro-abbe': { ancho: 470, alto: 250 },
+  polarimetro: { ancho: 520, alto: 232 },
 }
 
 const AZUL = '#9ecbe8'
@@ -1331,6 +1337,497 @@ function IcpMs() {
   )
 }
 
+/**
+ * La medida de la turbidez, con LAS DOS GEOMETRIAS EN EL MISMO DIBUJO.
+ *
+ * Es lo unico que hay que retener del asunto, y es lo que preguntan: misma
+ * fuente, misma cubeta y DOS detectores. El que mira A 90 GRADOS recoge la luz
+ * dispersada -nefelometria, unidades UNF/FNU-; el que esta EN LINEA mide cuanto
+ * se ha atenuado el haz -turbidimetria, unidades FAU-. Los `data-pieza` los lee
+ * la bateria para medir los dos angulos y comprobar que el haz sale mas fino
+ * del que entro: una figura que pusiera el detector de nefelometria en linea se
+ * pintaria igual de bien y ensenaria lo contrario.
+ */
+function NefelometroTurbidimetro() {
+  const EJE = 70
+  const CX = 200
+  const particulas: [number, number][] = [
+    [182, 54],
+    [206, 62],
+    [190, 82],
+    [216, 88],
+    [222, 50],
+  ]
+  // la luz se dispersa en TODAS direcciones: es lo que justifica las dos geometrias
+  const difusos = [-142, -108, -62, -28, 28, 62, 118, 152]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* fuente */}
+      <rect x="10" y="52" width="48" height="36" rx="4" {...trazo} />
+      <path
+        d="M24 60 l14 10 l-14 10 z M42 58 v24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.4"
+      />
+
+      {/* haz incidente, grueso */}
+      <line
+        data-pieza="haz-incidente"
+        x1="58"
+        y1={EJE}
+        x2="168"
+        y2={EJE}
+        stroke={ROJO}
+        strokeWidth="3.4"
+      />
+
+      {/* cubeta con las particulas en suspension */}
+      <rect
+        data-pieza="cubeta"
+        x="168"
+        y="40"
+        width="64"
+        height="60"
+        fill={AZUL}
+        fillOpacity="0.5"
+      />
+      <rect x="168" y="40" width="64" height="60" {...trazo} />
+      <g fill="currentColor" opacity="0.75">
+        {particulas.map(([x, y]) => (
+          <circle key={`${x}-${y}`} cx={x} cy={y} r="2.4" />
+        ))}
+      </g>
+
+      {/* luz dispersada en todas direcciones, tenue */}
+      <g stroke={ROJO} strokeWidth="0.9" opacity="0.45">
+        {difusos.map((g) => {
+          const r = (g * Math.PI) / 180
+          return (
+            <line
+              key={g}
+              x1={CX}
+              y1={EJE}
+              x2={CX + 40 * Math.cos(r)}
+              y2={EJE + 40 * Math.sin(r)}
+            />
+          )
+        })}
+      </g>
+
+      {/* haz transmitido: sale ATENUADO */}
+      <line
+        data-pieza="haz-transmitido"
+        x1="232"
+        y1={EJE}
+        x2="344"
+        y2={EJE}
+        stroke={ROJO}
+        strokeWidth="1.2"
+      />
+      <rect data-pieza="detector-180" x="344" y="52" width="58" height="36" rx="4" {...trazo} />
+      <path d="M356 80 l10 -14 l10 8" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* rama de 90 grados */}
+      <line
+        data-pieza="haz-dispersado"
+        x1={CX}
+        y1="100"
+        x2={CX}
+        y2="158"
+        stroke={ROJO}
+        strokeWidth="1.6"
+      />
+      <path d={`M${CX} 160 l-4 -9 h8 z`} fill={ROJO} />
+      <rect data-pieza="detector-90" x="171" y="160" width="58" height="36" rx="4" {...trazo} />
+      <path d="M183 188 l10 -14 l10 8" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* el angulo recto, que es el dato de la norma */}
+      <path
+        d={`M${CX + 50} ${EJE} A50 50 0 0 1 ${CX} ${EJE + 50}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="0.9"
+      />
+      <text x={CX + 54} y={EJE + 44} fontSize="8.5" fill="currentColor">
+        90°
+      </text>
+
+      <text x={CX} y="32" textAnchor="middle" fontSize="8.5" fill="currentColor">
+        Cubeta con la muestra
+      </text>
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="34" y="112">Fuente</text>
+        <text x="373" y="112">Turbidimetría</text>
+        <text x={CX} y="214">Nefelometría</text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x="34" y="124">LED 860 ± 60 nm</text>
+        <text x="373" y="124">detector EN LÍNEA</text>
+        <text x="373" y="134">mide la atenuación</text>
+        <text x="373" y="144">FAU · aguas turbias</text>
+        <text x={CX} y="226">detector A 90°</text>
+        <text x={CX} y="236">mide la luz dispersada</text>
+        <text x={CX} y="246">FNU = UNF · aguas claras</text>
+      </g>
+
+      <text x="8" y="262" fontSize="8.5" fill="currentColor">
+        Misma fuente y misma cubeta: lo que cambia es DÓNDE se pone el detector.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * El refractometro de Abbe. Ensena las dos cosas que hay que entender:
+ *
+ *  1. La luz pasa de la muestra al prisma, MAS denso, asi que el rayo SE ACERCA
+ *     a la normal. El rayo rasante marca el angulo limite, y de ahi sale n.
+ *  2. Lo que se ve por el ocular es una linea de separacion claro/oscuro, que
+ *     hay que centrar en la cruz del reticulo ANTES de leer.
+ *
+ * Las dos son afirmaciones medibles, y las dos se miden: un dibujo con el rayo
+ * alejandose de la normal, o con la linea descentrada, ensena lo contrario.
+ */
+function RefractometroAbbe() {
+  const P: [number, number] = [120, 106]
+  const CRITICO: [number, number] = [159, 182]
+  const OC = { cx: 386, cy: 110, r: 52 }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* prisma de iluminacion, con la cara inferior MATE */}
+      <rect x="40" y="34" width="160" height="64" fill={AZUL_CLARO} fillOpacity="0.45" />
+      <rect x="40" y="34" width="160" height="64" {...trazo} />
+      <path
+        d={`M40 98 ${Array.from({ length: 13 }, () => 'l6 -5 l6 5').join(' ')}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.1"
+      />
+
+      {/* pelicula de muestra entre los dos prismas */}
+      <rect x="40" y="98" width="160" height="8" fill={AZUL} fillOpacity="0.85" />
+
+      {/* prisma de refraccion, pulido */}
+      <rect x="40" y="106" width="160" height="76" fill={AZUL_CLARO} fillOpacity="0.25" />
+      <rect x="40" y="106" width="160" height="76" {...trazo} />
+
+      {/*
+        A la derecha del rayo limite no llega luz. Se marca RAYANDO la zona, no
+        oscureciendola: un relleno oscuro se ve claro sobre el tema oscuro y el
+        dibujo ensenaria lo contrario segun el tema del usuario.
+      */}
+      <g stroke="currentColor" strokeWidth="0.7" opacity="0.5">
+        {Array.from({ length: 12 }, (_, i) => {
+          const y = 112 + i * 6
+          return <line key={y} x1={P[0] + ((y - P[1]) * 39) / 76} y1={y} x2="200" y2={y} />
+        })}
+      </g>
+
+      {/* normal al plano de separacion */}
+      <line
+        data-pieza="normal"
+        x1="120"
+        y1="70"
+        x2="120"
+        y2="188"
+        stroke="currentColor"
+        strokeWidth="0.9"
+        strokeDasharray="4 3"
+      />
+
+      {/* rayo rasante dentro de la muestra y rayo limite dentro del prisma */}
+      <line
+        data-pieza="rayo-incidente"
+        x1="48"
+        y1="102"
+        x2={P[0]}
+        y2={P[1]}
+        stroke={ROJO}
+        strokeWidth="2.2"
+      />
+      <line
+        data-pieza="rayo-refractado"
+        x1={P[0]}
+        y1={P[1]}
+        x2={CRITICO[0]}
+        y2={CRITICO[1]}
+        stroke={ROJO}
+        strokeWidth="2.2"
+      />
+      {/* los demas rayos caen SIEMPRE dentro del angulo limite */}
+      <g stroke={ROJO} strokeWidth="0.9" opacity="0.5">
+        {[10, 18, 26].map((g) => {
+          const r = (g * Math.PI) / 180
+          return (
+            <line
+              key={g}
+              x1={P[0]}
+              y1={P[1]}
+              x2={P[0] + 74 * Math.sin(r)}
+              y2={P[1] + 74 * Math.cos(r)}
+            />
+          )
+        })}
+      </g>
+
+      <path d="M120 130 A24 24 0 0 0 131 150" fill="none" stroke="currentColor" strokeWidth="0.9" />
+      <line x1="116" y1="148" x2="126" y2="142" stroke="currentColor" strokeWidth="0.8" />
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="124" y="78">normal</text>
+        <text x="46" y="88">i → 90° (rasante)</text>
+        <text x="114" y="151" textAnchor="end">
+          ángulo límite
+        </text>
+        <text x="204" y="104">película de muestra</text>
+      </g>
+      <line x1="204" y1="137" x2="186" y2="141" stroke="currentColor" strokeWidth="0.8" />
+      <text x="206" y="140" fontSize="8" fill="currentColor">
+        sombra: aquí no llega ningún rayo
+      </text>
+
+      {/* campo del ocular: mitad clara, mitad rayada, y la cruz del reticulo */}
+      <path
+        d={`M${OC.cx - OC.r} ${OC.cy} A${OC.r} ${OC.r} 0 0 1 ${OC.cx + OC.r} ${OC.cy} Z`}
+        fill={AZUL_CLARO}
+        fillOpacity="0.75"
+      />
+      <g stroke="currentColor" strokeWidth="0.7" opacity="0.5">
+        {Array.from({ length: 8 }, (_, i) => {
+          const y = OC.cy + 6 + i * 6
+          const semi = Math.sqrt(OC.r * OC.r - (y - OC.cy) ** 2)
+          return <line key={y} x1={OC.cx - semi} y1={y} x2={OC.cx + semi} y2={y} />
+        })}
+      </g>
+      <circle data-pieza="ocular" cx={OC.cx} cy={OC.cy} r={OC.r} {...trazo} />
+      <g stroke="currentColor" strokeWidth="1.2">
+        <line x1={OC.cx - 36} y1={OC.cy - 36} x2={OC.cx + 36} y2={OC.cy + 36} />
+        <line x1={OC.cx + 36} y1={OC.cy - 36} x2={OC.cx - 36} y2={OC.cy + 36} />
+      </g>
+      <line
+        data-pieza="frontera"
+        x1={OC.cx - OC.r}
+        y1={OC.cy}
+        x2={OC.cx + OC.r}
+        y2={OC.cy}
+        stroke={ROJO}
+        strokeWidth="2.2"
+      />
+
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x={OC.cx} y={OC.cy - 26}>claro</text>
+        <text x={OC.cx} y={OC.cy + 34}>oscuro</text>
+      </g>
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="120" y="26">Prisma de iluminación (mate)</text>
+        <text x="120" y="200">Prisma de refracción (pulido)</text>
+        <text x={OC.cx} y="186">Campo del ocular</text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x={OC.cx} y="198">se centra la línea en la cruz</text>
+        <text x={OC.cx} y="208">y se lee el índice nD a 20 °C</text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="230">
+          La luz pasa de la muestra al prisma, más denso: el rayo SE ACERCA a la normal.
+        </text>
+        <text x="8" y="242">
+          Con luz blanca, el compensador de Amici devuelve el valor de la línea D del sodio.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * El polarimetro. Lo que tiene que quedar claro es DONDE gira el plano: la luz
+ * sale natural, el POLARIZADOR la deja vibrando en un solo plano, y el plano
+ * sigue igual hasta que atraviesa EL TUBO; alli, y solo alli, la sustancia
+ * quiral lo gira un angulo alfa, que es lo que el ANALIZADOR tiene que girar
+ * para volver a dejar pasar la luz.
+ *
+ * La bateria comprueba las dos cosas: que ninguna marca anterior al tubo este
+ * girada, y que el analizador lleve girado el mismo angulo que el plano de
+ * salida.
+ */
+function Polarimetro() {
+  const EJE = 88
+  const ALFA = 30
+  const rad = (g: number) => (g * Math.PI) / 180
+
+  /** Marca del plano de vibracion: vertical si t = 0, girada t grados si no. */
+  const plano = (x: number, t: number, h = 16) => {
+    const dx = h * Math.sin(rad(t))
+    const dy = h * Math.cos(rad(t))
+    return (
+      <line
+        key={`${x}-${t}`}
+        data-pieza="plano"
+        x1={x - dx}
+        y1={EJE - dy}
+        x2={x + dx}
+        y2={EJE + dy}
+        stroke={ROJO}
+        strokeWidth="2"
+      />
+    )
+  }
+
+  /*
+   * Analizador: la misma laja del polarizador, con sus vertices ya girados.
+   *
+   * OJO AL SIGNO. En SVG la y crece hacia ABAJO, asi que la matriz de giro
+   * "de toda la vida" gira al reves de como lo hacen las marcas del plano, y la
+   * laja sale cruzada con su propia rejilla. Paso comprobado: la primera
+   * version tenia ese fallo y los controles la daban por buena, porque miraban
+   * la rejilla y no el contorno. Ahora se mira tambien el contorno.
+   */
+  const AX = 428
+  const gira = (dx: number, dy: number): [number, number] => [
+    AX + dx * Math.cos(rad(ALFA)) + dy * Math.sin(rad(ALFA)),
+    EJE - dx * Math.sin(rad(ALFA)) + dy * Math.cos(rad(ALFA)),
+  ]
+  const laja = [gira(-8, -36), gira(8, -36), gira(8, 36), gira(-8, 36)]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* lampara de sodio */}
+      <rect x="14" y="70" width="48" height="36" rx="4" {...trazo} />
+      <path d="M26 88 h10 M36 80 q8 8 0 16" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* luz natural: vibra en todos los planos */}
+      <line x1="62" y1={EJE} x2="96" y2={EJE} stroke={ROJO} strokeWidth="1.2" />
+      <g stroke={ROJO} strokeWidth="1.5">
+        {[74, 86].map((x) =>
+          [0, 45, 90, 135].map((g) => (
+            <line
+              key={`${x}-${g}`}
+              x1={x - 9 * Math.sin(rad(g))}
+              y1={EJE - 9 * Math.cos(rad(g))}
+              x2={x + 9 * Math.sin(rad(g))}
+              y2={EJE + 9 * Math.cos(rad(g))}
+            />
+          )),
+        )}
+      </g>
+
+      {/* polarizador */}
+      <rect x="96" y="52" width="16" height="72" fill={AZUL_CLARO} fillOpacity="0.8" />
+      <rect x="96" y="52" width="16" height="72" {...trazo} />
+      <g stroke="currentColor" strokeWidth="0.9">
+        {[99, 103, 107, 111].map((x) => (
+          <line key={x} x1={x} y1="54" x2={x} y2="122" />
+        ))}
+      </g>
+
+      {/* luz polarizada en un plano: vertical hasta el tubo */}
+      <line x1="112" y1={EJE} x2="206" y2={EJE} stroke={ROJO} strokeWidth="1.2" />
+      {[132, 160, 188].map((x) => plano(x, 0))}
+
+      {/* tubo portamuestras */}
+      <rect
+        data-pieza="tubo"
+        x="206"
+        y="64"
+        width="138"
+        height="48"
+        fill={AZUL}
+        fillOpacity="0.35"
+      />
+      <rect x="206" y="64" width="138" height="48" {...trazo} />
+      <line x1="206" y1={EJE} x2="344" y2={EJE} stroke={ROJO} strokeWidth="2" />
+      <g stroke="currentColor" strokeWidth="1.2">
+        <line x1="206" y1="128" x2="344" y2="128" />
+        <path d="M206 128 l8 -4 v8 z" fill="currentColor" stroke="none" />
+        <path d="M344 128 l-8 -4 v8 z" fill="currentColor" stroke="none" />
+      </g>
+      <text x="275" y="142" textAnchor="middle" fontSize="8" fill="currentColor">
+        1 dm (100 mm)
+      </text>
+
+      {/* a la salida, el plano va girado alfa */}
+      <line x1="344" y1={EJE} x2="402" y2={EJE} stroke={ROJO} strokeWidth="1.2" />
+      {[364, 390].map((x) => plano(x, ALFA))}
+
+      {/* el angulo girado, medido sobre la marca de la izquierda */}
+      <path
+        d={`M364 ${EJE - 24} A24 24 0 0 1 376 ${EJE - 20.8}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="0.9"
+      />
+      <text x="378" y="62" fontSize="9" fill={ROJO}>
+        α
+      </text>
+
+      {/* analizador */}
+      <path
+        data-pieza="analizador-laja"
+        d={`M${laja[0][0]} ${laja[0][1]} L${laja[1][0]} ${laja[1][1]} L${laja[2][0]} ${laja[2][1]} L${laja[3][0]} ${laja[3][1]} Z`}
+        fill={AZUL_CLARO}
+        fillOpacity="0.8"
+        stroke="currentColor"
+        strokeWidth="1.6"
+      />
+      <g stroke="currentColor" strokeWidth="0.9">
+        {[-5, -1.7, 1.7, 5].map((s) => {
+          const cx = AX + s * Math.cos(rad(ALFA))
+          const cy = EJE - s * Math.sin(rad(ALFA))
+          const dx = 30 * Math.sin(rad(ALFA))
+          const dy = 30 * Math.cos(rad(ALFA))
+          return (
+            <line
+              key={s}
+              data-pieza="analizador"
+              x1={cx - dx}
+              y1={cy - dy}
+              x2={cx + dx}
+              y2={cy + dy}
+            />
+          )
+        })}
+      </g>
+
+      {/* detector y lectura */}
+      <line x1="454" y1={EJE} x2="458" y2={EJE} stroke={ROJO} strokeWidth="1.2" />
+      <rect x="458" y="70" width="56" height="36" rx="4" {...trazo} />
+      <text x="486" y="93" textAnchor="middle" fontSize="11" fill="currentColor">
+        +13,2°
+      </text>
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x="38" y="168">Fuente</text>
+        <text x="104" y="168">Polarizador</text>
+        <text x="275" y="168">Tubo de muestra</text>
+        <text x={AX} y="168">Analizador</text>
+        <text x="486" y="168">Detector</text>
+      </g>
+      <g fontSize="8" textAnchor="middle" fill="currentColor">
+        <text x="38" y="180">Na · 589,3 nm</text>
+        <text x="104" y="180">prisma de Nicol</text>
+        <text x="275" y="180">aquí gira el plano</text>
+        <text x={AX} y="180">girado α</text>
+        <text x="486" y="180">lectura de α</text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="204">
+          Solo giran el plano las sustancias QUIRALES (ópticamente activas).
+        </text>
+        <text x="8" y="216">
+          [α] = α / (l · c), con l en dm y c en g/mL, a 20 °C y en la línea D del sodio.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -1363,6 +1860,12 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <HornoGrafito />
     case 'antorcha-icp':
       return <AntorchaIcp />
+    case 'nefelometro-turbidimetro':
+      return <NefelometroTurbidimetro />
+    case 'refractometro-abbe':
+      return <RefractometroAbbe />
+    case 'polarimetro':
+      return <Polarimetro />
     case 'icp-ms':
       return <IcpMs />
   }

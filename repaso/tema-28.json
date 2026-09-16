@@ -1,0 +1,796 @@
+{
+  "tema": 28,
+  "titulo": "Otros métodos ópticos: Medida de la turbidez. Medida del índice de refracción. Polarimetría.",
+  "generadoDe": "temas/tema-28.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-16",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t28-f01",
+      "anverso": "**¿De qué son unidades las UNF, y qué significa exactamente la F?** (Pregunta literal en 1246 #13 y 1322 #30.)",
+      "reverso": "**Las UNF son unidades de TURBIDEZ.**\n**UNF = Unidades Nefelométricas de FORMACINA.** La F final es de **formacina**, que es el patrón con el que se calibran, no de otra cosa.\nLos dos distractores del examen son **los otros dos apartados de este mismo tema**: «medidas polarimétricas» y «medidas de índice de refracción». Es decir, la pregunta no se contesta sabiendo qué es la turbidez: se contesta sabiendo **cuál de las tres técnicas del tema da UNF**.\nEn inglés, **UNF = FNU** (*Formazin Nephelometric Unit*): es la misma unidad.",
+      "fuente": "1246 #13 y 1322 #30; tema 28, §2.1.5",
+      "etiquetas": ["examen", "turbidez", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f02",
+      "anverso": "**¿Qué propiedad del analito se utiliza en las determinaciones por polarimetría?** (Pregunta literal en 1246 #12.)",
+      "reverso": "**LA ROTACIÓN DE LA RADIACIÓN.**\nLos dos distractores son de otros temas, y conviene verlos así:\n- «**emisión** de la radiación» → **emisión atómica**, tema 26.\n- «**absorción** de la radiación» → **espectrofotometría**, temas 25 y 26.\nLa polarimetría **no absorbe ni emite: gira** el plano de polarización de la luz polarizada.",
+      "fuente": "1246 #12; tema 28, §2.3.1",
+      "etiquetas": ["examen", "polarimetria", "fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f03",
+      "anverso": "Las tres técnicas del tema son ópticas y **ninguna mide absorción**. ¿Qué propiedad de la luz usa cada una y en qué unidad se expresa?",
+      "reverso": "**Turbidez → DISPERSIÓN** de la luz por las partículas en suspensión. Unidades **UNF/FNU** (a 90°) o **FAU** (por atenuación).\n**Índice de refracción → REFRACCIÓN**: el rayo cambia de dirección al cambiar de medio. Se mide el **ángulo límite**, y el resultado es **adimensional** (*n*).\n**Polarimetría → ROTACIÓN** del plano de polarización. Se mide el **ángulo girado, α**, en **grados**.\nLa regla de tres palabras: **turbidez DISPERSA, refracción DESVÍA, polarimetría GIRA.**",
+      "fuente": "Tema 28, §1",
+      "etiquetas": ["concepto", "comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f04",
+      "anverso": "¿Qué es la turbidez y por qué le importa tanto a una ETAP? (Tres razones.)",
+      "reverso": "Es la **pérdida de transparencia** del agua causada por la materia en suspensión: arcillas, limos, materia orgánica, plancton, precipitados de hierro o manganeso. **No mide las partículas: mide el efecto óptico que producen**, y por eso es una propiedad óptica y no una concentración.\nLas tres razones:\n1. Es **el indicador de que el tratamiento funciona**: si sube la del agua tratada, falla la coagulación o la filtración.\n2. **Las partículas protegen a los microorganismos del desinfectante.** Por eso el RD 3/2023 liga turbidez y microbiología: con *Clostridium perfringens* positivo **y** turbidez alta, hay que buscar *Cryptosporidium*.\n3. Es **control operacional**, y por encima de cierto caudal, en continuo.",
+      "fuente": "Tema 28, §2.1.1; RD 3/2023",
+      "etiquetas": ["turbidez", "concepto", "agua"]
+    },
+    {
+      "id": "t28-f05",
+      "anverso": "¿En qué fenómeno físico se basan la turbidimetría y la nefelometría, y qué dos regímenes de dispersión hay?",
+      "reverso": "En la **DISPERSIÓN ELÁSTICA**: la partícula **absorbe la radiación y la reemite sin cambio de energía**.\n**Dispersión de Rayleigh**, con partículas **menores del 5 % de la longitud de onda**: la intensidad es **proporcional a ν⁴** —por eso el cielo es azul— y la distribución es **simétrica** en todas direcciones.\n**Dispersión por partículas grandes**: las interferencias concentran la intensidad **hacia delante**.\nConsecuencia práctica: **la señal a 90° se aprovecha sobre todo cuando las partículas son pequeñas**, y de ahí que la nefelometría sea la geometría del agua de consumo.",
+      "fuente": "Tema 28, §2.1.2; LibreTexts (Harvey) 10.8",
+      "etiquetas": ["turbidez", "fundamento"]
+    },
+    {
+      "id": "t28-f06",
+      "anverso": "En este esquema, el detector de la izquierda va a 90° y hace nefelometría, y el de la derecha va en línea y hace turbidimetría. **¿Qué ecuación gobierna cada una, a qué técnica del tema 25 se parece cada una, y con qué aparato del laboratorio podrías hacer cada medida sin comprar un turbidímetro?**",
+      "reverso": "**Turbidimetría: −log T = k · b · C**, idéntica en forma a la ley de Lambert-Beer.\n**Nefelometría: I₈ = k · I₀ · C**, idéntica en forma a la intensidad de fluorescencia.\nPor eso **la turbidimetría se parece a la absorbancia y la nefelometría a la fluorescencia**, y no es una analogía suelta: el diseño instrumental es el mismo.\nEn la práctica, **se puede hacer turbidimetría con un espectrofotómetro UV-visible y nefelometría con un espectrofluorímetro**.",
+      "fuente": "Tema 28, §2.1.3; LibreTexts (Harvey) 10.8",
+      "etiquetas": ["turbidez", "instrumentacion", "figura"],
+      "nucleo": true,
+      "figura": { "tipo": "esquema", "valor": "nefelometro-turbidimetro" }
+    },
+    {
+      "id": "t28-f07",
+      "anverso": "Nefelometría y turbidimetría: **dónde va el detector, qué mide, en qué unidad y para qué aguas**.",
+      "reverso": "**NEFELOMETRÍA** — detector **a 90°** del haz; mide **la luz dispersada**; unidades **UNF/FNU**; para aguas **poco turbias**, como el agua de consumo.\n**TURBIDIMETRÍA** — detector **en línea** con el haz; mide **la atenuación** del haz transmitido; unidades **FAU**; para aguas **muy turbias**, como las residuales.\nMisma fuente y misma cubeta: lo único que cambia es **dónde se pone el detector**.",
+      "fuente": "Tema 28, §2.1.3; UNE-EN ISO 7027-1:2016",
+      "etiquetas": ["turbidez", "comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f08",
+      "anverso": "¿Qué condiciones ópticas fija la **ISO 7027** para medir la turbidez, y qué rangos típicos da cada método?",
+      "reverso": "**Fuente: diodo emisor INFRARROJO de 860 nm con una anchura de banda de 60 nm** (es decir, **860 ± 60 nm**).\n**Detector a 90° ± 2,5°** del haz incidente.\nRangos típicos:\n- **Nefelometría: < 0,05 a 400** unidades nefelométricas.\n- **Turbidimetría: 40 a 4 000 FAU**.\nEsas condiciones ópticas son exactamente **lo que distingue la UNF de la NTU**.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (alcance público); USGS, cap. A6 §6.7, nota 2",
+      "etiquetas": ["turbidez", "normas", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f09",
+      "anverso": "¿Qué recoge la **UNE-EN ISO 7027-2:2020** y en qué se diferencia de la parte 1?",
+      "reverso": "La parte **2** recoge los **métodos SEMIcuantitativos** para evaluar la **transparencia** de las aguas. Son tres y **ninguno lleva instrumento óptico**:\n- **Tubo de transparencia**, para aguas transparentes o poco turbias.\n- **Disco de transparencia**, es decir, el **disco de Secchi**, sobre todo para **aguas superficiales y de baño**.\n- **Visibilidad de buceadores** a una profundidad determinada.\nLa parte **1** es la de los **métodos cuantitativos** con turbidímetro o nefelómetro.",
+      "fuente": "UNE-EN ISO 7027-2:2020 (idéntica a ISO 7027-2:2019)",
+      "etiquetas": ["turbidez", "normas"]
+    },
+    {
+      "id": "t28-f10",
+      "anverso": "Aviso de vigencia: ¿qué norma de turbidez está **anulada**, desde cuándo, y qué detalle de su título conviene reconocer?",
+      "reverso": "La **UNE-EN ISO 7027:2001** quedó **ANULADA el 16 de noviembre de 2016**, sustituida por la **UNE-EN ISO 7027-1:2016**.\nDetalle del título: la antigua se llamaba «Determinación de la **TURBIEDAD**»; la vigente, «Determinación de la **TURBIDEZ**».\nLa de 2001 había sustituido a su vez a la **UNE-EN 27027:1995**. **Citar hoy la UNE-EN ISO 7027:2001 es citar una norma anulada.**",
+      "fuente": "Fichas de AENOR de las dos normas",
+      "etiquetas": ["turbidez", "normas", "normativa"]
+    },
+    {
+      "id": "t28-f11",
+      "anverso": "Ordena las unidades de turbidez: **UNF/FNU, NTU, FAU, FTU y JTU**. ¿Qué geometría y qué luz lleva cada una?",
+      "reverso": "| Unidad | Geometría | Luz | De dónde |\n| --- | --- | --- | --- |\n| **UNF / FNU** | **90°** | **Infrarroja, 860 nm** | **ISO 7027** |\n| **NTU** | 90° | **Blanca**, 400-680 nm | **EPA 180.1** |\n| **FAU** | **180°**, atenuación | Infrarroja | ISO 7027 |\n| FNRU / NTRU | 90° y otros a la vez | según equipo | USGS |\n| FBU / BU | **30° ± 15°**, retrodispersión | según equipo | USGS |\n\n**FTU y JTU están en desuso**: la JTU por falta de precisión y la FTU por no decir nada sobre el instrumento.\n**Todas se calibran con el mismo patrón, la formacina**: lo que cambia entre ellas es la óptica del aparato.",
+      "fuente": "USGS, cap. A6 §6.7, tabla 6.7-4",
+      "etiquetas": ["turbidez", "comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f12",
+      "anverso": "Si UNF y NTU se miden las dos a 90°, ¿por qué **no son intercambiables**?",
+      "reverso": "Porque **la fuente de luz es distinta**: la **UNF/FNU** usa **infrarrojo** (ISO 7027) y la **NTU**, **luz blanca** (EPA 180.1).\nLa dispersión depende del **tamaño de partícula frente a la longitud de onda**, así que la misma muestra da números distintos con una fuente y con otra.\nEl **USGS lo avisa expresamente**: los datos tomados con fuente infrarroja **no son directamente comparables** con los tomados con luz blanca.",
+      "fuente": "USGS Oregon Water Science Center, ficha «FNU»",
+      "etiquetas": ["turbidez", "comparativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f13",
+      "anverso": "¿Cuál es el **patrón primario** de turbidez, de qué dos reactivos se obtiene, de cuánto es la suspensión madre y qué alternativa hay?",
+      "reverso": "El patrón primario es la **FORMACINA**, un polímero en suspensión que se sintetiza mezclando **SULFATO DE HIDRAZINA** y **HEXAMETILENTETRAMINA** (hexamina).\n**La suspensión madre es de 4 000 unidades de turbidez**; todas las demás salen por dilución de ella.\nSus dos pegas: **sedimenta** con el tiempo, y los reactivos de partida son peligrosos —el sulfato de hidrazina está clasificado como **carcinógeno sospechoso** y la hexamina como mutágeno—, aunque la suspensión ya diluida se considera segura.\nAlternativas: **formacinas estabilizadas** y patrones de **copolímero de estireno-divinilbenceno (AMCO-AEPA)**, de tamaño más uniforme y que sedimentan menos.",
+      "fuente": "USGS, cap. A6 §6.7",
+      "etiquetas": ["turbidez", "calibracion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f14",
+      "anverso": "Tres precauciones al manipular la muestra para medir turbidez.",
+      "reverso": "1. **Agitar** bien, para resuspender lo que haya sedimentado.\n2. **Eliminar las burbujas**: una burbuja dispersa la luz igual que una partícula y falsea la lectura al alza.\n3. **Medir pronto**, antes de que la muestra sedimente o cambie biológicamente.",
+      "fuente": "USGS, cap. A6 §6.7",
+      "etiquetas": ["turbidez", "instrumentacion"]
+    },
+    {
+      "id": "t28-f15",
+      "anverso": "¿Qué le exige el **RD 3/2023** al método de análisis de la turbidez? ¿Impone alguna norma?",
+      "reverso": "**NO impone método, y no cita la ISO 7027.** Lo que impone es **rendimiento**.\nAnexo III, parte D: **incertidumbre de medición ≤ 30 %**, y la **nota 9** precisa que **debe estimarse al nivel de 1 UNF**.\nLos laboratorios notifican en **SINAC** sus acreditaciones, la **incertidumbre**, el **límite de cuantificación** y el **límite de detección** de cada método.",
+      "fuente": "RD 3/2023, anexo III, parte D y nota 9",
+      "etiquetas": ["turbidez", "normativa", "agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f16",
+      "anverso": "Control operacional del RD 3/2023: **¿con qué frecuencia se mide la turbidez en ETAP**, según el volumen tratado?",
+      "reverso": "| Volumen tratado | Frecuencia mínima |\n| --- | --- |\n| **≤ 1 000 m³/día** | **Semanal** |\n| **> 1 000 y ≤ 10 000 m³/día** | **Diaria** |\n| **> 10 000 m³/día** | **EN LÍNEA** |\n\nEn el caso de la medida en línea se notifican en **SINAC el valor medio diario y el valor máximo diario**.\nSi no hay ETAP, el punto es el **depósito de cabecera**. En red, grifo del usuario y grifos de buques de pasaje, la turbidez se controla **siempre**, y el reglamento admite medirla **«con kit o en laboratorio o en línea»**.\nDe aquí sale una idea que rinde: **el turbidímetro es de los pocos instrumentos que la norma contempla trabajando en continuo dentro de la planta**.",
+      "fuente": "RD 3/2023, anexo IV",
+      "etiquetas": ["turbidez", "normativa", "agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f17",
+      "anverso": "Un uso analítico clásico de la turbidimetría que no es medir la turbidez del agua: ¿cuál, y con qué reactivo?",
+      "reverso": "La **determinación de SULFATO**: se precipita con **CLORURO DE BARIO** y se mide la turbidez del **BaSO₄** formado, que es proporcional al sulfato de partida.\nHoy la técnica de referencia para sulfato en aguas es la **cromatografía iónica** (tema 30), pero el método turbidimétrico es el que explica para qué sirve la técnica.\nEn microbiología, la turbidez de un cultivo mide el **crecimiento bacteriano** (temas 9 a 19).",
+      "fuente": "Tema 28, §2.1.8; LibreTexts (Harvey) 10.8",
+      "etiquetas": ["turbidez", "agua"]
+    },
+    {
+      "id": "t28-f18",
+      "anverso": "**Define el índice de refracción** tal como lo hace la Farmacopea Europea, y di sus dos propiedades inmediatas.",
+      "reverso": "El índice de refracción de un medio **respecto del aire** es el **cociente entre el SENO del ángulo de incidencia** de un haz de luz en el aire **y el SENO del ángulo de refracción** en ese medio:\n**n = sen i / sen r**\nDos consecuencias:\n- Es **ADIMENSIONAL**, porque es un cociente de senos.\n- Es **mayor que 1** para cualquier medio más denso que el aire, porque al entrar en él **el rayo se acerca a la normal** y *r* resulta menor que *i*.\nDepende de cuatro cosas: la sustancia, su concentración, la **temperatura** y la **longitud de onda**.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "etiquetas": ["refraccion", "fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f19",
+      "anverso": "¿Qué significa exactamente la notación **n꜀²⁰** (n sub D, super 20), y por qué no basta con dar el número?",
+      "reverso": "Que la medida se ha hecho **a 20 ± 0,5 °C** y referida a la **LÍNEA D DEL SODIO (λ = 589,3 nm)**, que son las condiciones normalizadas de la Farmacopea salvo que se prescriba otra cosa.\nNo basta con el número porque **el índice de refracción depende de la temperatura y de la longitud de onda**: sin esos dos datos, el valor no significa nada y no se puede comparar con una tabla.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "etiquetas": ["refraccion", "fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f20",
+      "anverso": "En este esquema están rotulados los dos prismas, la normal, el ángulo límite, la zona de sombra y el compensador de Amici. **¿Qué cociente exacto es el índice de refracción, por qué la cara del prisma superior tiene que ser MATE, y qué tres exigencias pone la Farmacopea al aparato?**",
+      "reverso": "**n = sen i / sen r**: el cociente entre el SENO del ángulo de incidencia en el aire y el SENO del ángulo de refracción. Es adimensional y mayor que 1 en un medio más denso.\n**La cara del prisma superior es mate para que la luz llegue a la muestra en todas las direcciones posibles**, incluida la **rasante**: sin esa cara mate no existiría el rayo que marca el ángulo límite, y no habría nada que medir.\nLa Farmacopea exige que el aparato **dé lecturas exactas al menos hasta la tercera cifra decimal**, que su **termómetro esté graduado en intervalos de 0,5 °C o menos** y que **se calibre con materiales de referencia certificados**.",
+      "fuente": "Farmacopea Europea 2.2.6; tema 28, §2.2.2",
+      "etiquetas": ["refraccion", "instrumentacion", "figura"],
+      "nucleo": true,
+      "figura": { "tipo": "esquema", "valor": "refractometro-abbe" }
+    },
+    {
+      "id": "t28-f21",
+      "anverso": "¿Qué magnitud mide realmente un refractómetro, y cuál es su pieza esencial?",
+      "reverso": "Según la Farmacopea, **los refractómetros determinan normalmente el ÁNGULO LÍMITE**.\nY su **pieza esencial es un PRISMA DE ÍNDICE DE REFRACCIÓN CONOCIDO en contacto con el líquido a examinar**.\nEs decir, el aparato no mide *n* directamente: mide el ángulo a partir del cual **ya no puede llegar ningún rayo**, y de ahí se deduce *n*.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "etiquetas": ["refraccion", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f22",
+      "anverso": "Explica el **refractómetro de Abbe** en cuatro pasos, y di qué se ve por el ocular.",
+      "reverso": "1. Unas gotas de muestra **entre dos prismas**: arriba el de **iluminación**, con la cara en contacto **MATE**; abajo el de **refracción**, con esa cara **PULIDA**.\n2. La cara mate hace que la luz llegue a la muestra **en todas las direcciones**, incluida la **rasante** (*i* → 90°).\n3. Al pasar de la muestra al prisma, **más denso**, todo rayo **se acerca a la normal**. El rayo rasante marca el **ÁNGULO LÍMITE**: más allá de él **no llega ningún rayo**.\n4. Por eso en el ocular aparece un campo **mitad claro y mitad oscuro**. Se **centra la línea de separación en la cruz del retículo** y se lee el índice.",
+      "fuente": "Tema 28, §2.2.2",
+      "etiquetas": ["refraccion", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f23",
+      "anverso": "¿Qué es el **compensador de Amici** y cuándo hace falta?",
+      "reverso": "Hace falta **cuando se trabaja con LUZ BLANCA**. La Farmacopea lo exige sin nombrarlo: *«cuando se usa luz blanca, el refractómetro va provisto de un sistema compensador»*.\nSon unos prismas que **corrigen la DISPERSIÓN CROMÁTICA** de la luz blanca y devuelven **el valor que se habría medido con luz monocromática de la línea D del sodio**.\nSin él, la línea claro/oscuro del ocular sale **irisada** y no hay manera de centrarla.",
+      "fuente": "Farmacopea Europea 2.2.6; tema 28, §2.2.2",
+      "etiquetas": ["refraccion", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f24",
+      "anverso": "¿Qué son exactamente los **°Brix**, y qué otras dos escalas puede llevar rotuladas un refractómetro?",
+      "reverso": "La definición legal la da la Orden ICT/155/2020: el **°Brix es el PORCENTAJE EN MASA DE UNA SOLUCIÓN DE SACAROSA**.\nLas tres escalas que contempla esa orden son:\n- **Índice de refracción**\n- **°Brix**\n- **Grado alcohólico probable**",
+      "fuente": "Orden ICT/155/2020, anexo XVI, apéndice I, 5.1.1",
+      "etiquetas": ["refraccion", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f25",
+      "anverso": "¿Qué refractómetros están sujetos a **control metrológico del Estado** en España, con qué norma, qué tipos hay y cada cuánto se verifican?",
+      "reverso": "Los **instrumentos destinados a medir el contenido en azúcar del mosto de uva, de los mostos concentrados y de los mostos concentrados rectificados**, que la propia orden llama «en adelante **refractómetros**».\n**Orden ICT/155/2020, ANEXO XVI**, modificada por la Orden ITU/1475/2024 (en vigor desde el 16/01/2025). Requisitos técnicos: **OIML R 124:1997**.\n**Dos tipos**, y los dos con **compensación automática de temperatura**:\n- **Tipo I**: refractómetro **automático**.\n- **Tipo II**: **manual con indicación automática**.\n**Verificación periódica: CADA AÑO.** Condiciones de funcionamiento: **5 °C a 40 °C**, entorno mecánico **M1** y electromagnético **E2**.",
+      "fuente": "Orden ICT/155/2020, anexo XVI y apéndice I",
+      "etiquetas": ["refraccion", "normativa", "calibracion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f26",
+      "anverso": "Escalón y errores máximos permitidos de los refractómetros de mosto. ¿Qué lógica siguen los EMP de un instrumento **nuevo** frente a uno **en servicio**?",
+      "reverso": "**Escalón en uso normal:** **2 × 10⁻⁴** en índice de refracción · **0,1 %** en °Brix · **0,1 %** en grado alcohólico probable.\n**EMP, nuevos o reparados:** ± **1** escalón (*n*) · ± **1,2** (°Brix) · ± **0,8** (alcohol probable).\n**EMP, en servicio:** ± **1,5** escalón (*n*) · ± **1,7** (°Brix) · ± **1,3** (alcohol probable).\nLa lógica, que se repite en toda la metrología legal: **el instrumento en servicio tiene la tolerancia más ancha que el instrumento nuevo**.",
+      "fuente": "Orden ICT/155/2020, anexo XVI, apéndice I, 4 y 5",
+      "etiquetas": ["refraccion", "normativa", "calibracion"]
+    },
+    {
+      "id": "t28-f27",
+      "anverso": "¿Cómo se determina la **humedad de la miel** según los métodos oficiales españoles, y qué corrección de temperatura lleva?",
+      "reverso": "Por **REFRACTOMETRÍA**, y es **método oficial vigente**: Orden de 12 de junio de 1986, método **9**, que sigue en vigor por la disposición adicional primera del RD 1049/2003.\nPrincipio literal: *«medida del índice de refracción de la miel y cálculo de la humedad mediante tablas»*.\nMaterial: **refractómetro con baño termostatizado**. Se mide **una vez la muestra ha alcanzado 20 °C**, y se convierte con la **TABLA DE CHATAWAY REVISADA POR WEDMORE**.\nSi no se mide exactamente a 20 °C: **sumar 0,00023 por cada °C por encima y restar 0,00023 por cada °C por debajo**.",
+      "fuente": "Orden de 12/06/1986, anexo, método 9",
+      "etiquetas": ["refraccion", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f28",
+      "anverso": "¿Es el índice de refracción un parámetro de calidad del agua?",
+      "reverso": "**NO.** No figura en el **RD 3/2023** ni hay norma UNE de aguas que lo recoja.\nSus usos reales son otros: **identificación y control de pureza de líquidos** (Farmacopea), **humedad de la miel** y **azúcar en mosto** (°Brix).\nEl enunciado del tema lo pide igualmente, pero **su encaje en un laboratorio municipal de aguas es indirecto**: conviene saberlo antes del examen y no descubrirlo allí.",
+      "fuente": "Tema 28, §2.2.5 y dudas 5",
+      "etiquetas": ["refraccion", "agua", "concepto"]
+    },
+    {
+      "id": "t28-f29",
+      "anverso": "¿Qué es la **rotación óptica** y qué sustancias la presentan?",
+      "reverso": "Definición de la Farmacopea Europea 2.2.7: **la propiedad que presentan las sustancias QUIRALES de girar el plano de polarización de la luz polarizada**.\n- La **luz natural** vibra en **todos los planos** perpendiculares a su dirección. El **polarizador** deja pasar **uno solo**: sale **luz polarizada en un plano**.\n- Solo giran ese plano las sustancias **quirales**, llamadas también **ópticamente activas**. Una sustancia **aquiral es ópticamente inactiva**.",
+      "fuente": "Farmacopea Europea 2.2.7",
+      "etiquetas": ["polarimetria", "fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f30",
+      "anverso": "**Dextrógiro y levógiro:** ¿qué signo, qué sentido, y qué trampa clásica hay con las letras?",
+      "reverso": "**DEXTRÓGIRA**, signo **(+)** o **d**: gira el plano en **sentido HORARIO**.\n**LEVÓGIRA**, signo **(−)** o **l**: en sentido **ANTIHORARIO**.\nLa Farmacopea lo dice así: la rotación es **positiva para las dextrógiras y negativa para las levógiras**.\n**La trampa:** los signos **(+)/(−)** y las letras **d/l** indican **hacia dónde gira el plano** y **NO tienen relación con la configuración R/S** de la molécula. Se determinan experimentalmente, no sobre el papel.",
+      "fuente": "Farmacopea Europea 2.2.7; LibreTexts, Química Orgánica I (Liu) 5.4",
+      "etiquetas": ["polarimetria", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f31",
+      "anverso": "¿Cuánto gira el plano de polarización una **mezcla racémica**, y por qué?",
+      "reverso": "**No lo gira nada.**\nUna mezcla racémica lleva **50 % de cada enantiómero**, y sus dos rotaciones son **iguales y de signo contrario**, así que **se anulan**.\nEs decir, una mezcla racémica es **ópticamente inactiva** aunque sus dos componentes sean quirales.",
+      "fuente": "LibreTexts, Química Orgánica I (Liu) 5.4",
+      "etiquetas": ["polarimetria", "concepto"]
+    },
+    {
+      "id": "t28-f32",
+      "anverso": "En este esquema están rotulados la lámpara de sodio, el prisma de Nicol, el tubo de 1 dm y el analizador girado α. **¿Qué es físicamente el analizador y qué se hace con él, cómo se pone el cero del aparato, y con qué se comprueban su escala y su linealidad?**",
+      "reverso": "**El analizador es un SEGUNDO POLARIZADOR, montado de forma que pueda girar.** Se **gira hasta que vuelve a pasar la luz**, y lo que ha habido que girarlo es α.\n**El cero se determina con el tubo cerrado**: para **líquidos**, **con el tubo vacío**; para **sólidos**, **lleno del disolvente prescrito**.\nEl aparato debe **dar lecturas hasta la centésima de grado**. Su escala se comprueba con **placas de cuarzo certificadas**, y su linealidad, con **disoluciones de sacarosa**.",
+      "fuente": "Farmacopea Europea 2.2.7; tema 28, §2.3.2",
+      "etiquetas": ["polarimetria", "instrumentacion", "figura"],
+      "nucleo": true,
+      "figura": { "tipo": "esquema", "valor": "polarimetro" }
+    },
+    {
+      "id": "t28-f33",
+      "anverso": "Enumera la **cadena del polarímetro** y di qué hace cada pieza.",
+      "reverso": "**Fuente → polarizador → tubo portamuestras → analizador → detector.**\n- **Fuente**: lámpara de **SODIO**, **línea D, λ = 589,3 nm**.\n- **Polarizador**: clásicamente un **PRISMA DE NICOL**. Convierte la luz natural en **luz polarizada en un plano**.\n- **Tubo portamuestras**: el de referencia es de **1 dm**; el del método del almidón, de **200 mm**. **Aquí, y solo aquí, gira el plano.**\n- **Analizador**: un **segundo polarizador giratorio**; se gira hasta recuperar la luz.\n- **Detector / escala**: lectura del ángulo, **hasta 0,01°**.",
+      "fuente": "Tema 28, §2.3.2; Farmacopea Europea 2.2.7",
+      "etiquetas": ["polarimetria", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f34",
+      "anverso": "Escribe la fórmula de la **rotación específica** y di, sobre todo, **en qué unidades va cada símbolo**.",
+      "reverso": "**[α] = α / (l · c)**\n- **α**: ángulo **observado**, en **GRADOS (°)**.\n- **l**: longitud del **tubo**, en **DECÍMETROS (dm)** — no en centímetros.\n- **c**: **concentración**, en **g/mL** — no en g/L.\nEl ángulo α que se lee **no es propiedad de la sustancia**: depende de cuánta sustancia haya y de cuánto camino recorra la luz. **Lo que sí es propiedad de la sustancia es [α].**",
+      "fuente": "Farmacopea Europea 2.2.7; tema 28, §2.3.3",
+      "etiquetas": ["polarimetria", "fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f35",
+      "anverso": "Convenio exacto de la Farmacopea para la rotación específica: ¿cómo se define para una **disolución** y para un **líquido puro**, y qué unidades se sobreentienden?",
+      "reverso": "Para una **sustancia en disolución**: es el ángulo a **589,3 nm** y **20 °C**, referido a una capa de **1 dm** que contiene **1 g/mL** de sustancia.\nPara un **líquido puro**: es el ángulo referido a una capa de **1 dm**, **dividido por la densidad** en g/cm³.\nSe escribe **sin unidades** por convenio, pero **se sobreentienden (°)·mL·dm⁻¹·g⁻¹**.\nY un detalle que se olvida: **la rotación específica de una sustancia en disolución se expresa SIEMPRE junto con su disolvente y su concentración**; sin ellos, el dato está incompleto.",
+      "fuente": "Farmacopea Europea 2.2.7",
+      "etiquetas": ["polarimetria", "fundamento"]
+    },
+    {
+      "id": "t28-f36",
+      "anverso": "¿En qué condiciones prescribe la Farmacopea medir la rotación óptica, y cuándo se puede medir a otra temperatura?",
+      "reverso": "A **20 ± 0,5 °C** y en la **línea D del sodio (λ = 589,3 nm)**, salvo que se prescriba otra cosa.\n**Solo se puede medir a otra temperatura si la monografía indica la corrección** que hay que aplicar a la rotación medida. No vale corregir por cuenta propia.",
+      "fuente": "Farmacopea Europea 2.2.7",
+      "etiquetas": ["polarimetria", "instrumentacion"]
+    },
+    {
+      "id": "t28-f37",
+      "anverso": "¿Qué es un **sacarímetro** y cuáles son las tres escalas oficiales?",
+      "reverso": "Un **polarímetro cuya escala está rotulada en GRADOS DE SACARÍMETRO** en vez de en grados de ángulo.\nDefinición operativa del Reglamento (CE) 152/2009: **N es el peso, en gramos, de sacarosa en 100 mL de agua que produce una rotación óptica de 100 grados de sacarímetro medida con un TUBO DE 200 mm**.\n| Escala | N |\n| --- | --- |\n| Sacarímetros **franceses** | **16,29 g** |\n| Sacarímetros **alemanes** | **26,00 g** |\n| Sacarímetros **mixtos** | **20,00 g** |",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L, 6.2",
+      "etiquetas": ["polarimetria", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f38",
+      "anverso": "El **método de Ewers**: qué determina, en qué norma está y en qué consiste su principio.",
+      "reverso": "Determina el **ALMIDÓN en piensos**, y es el **MÉTODO POLARIMÉTRICO** del **Reglamento (CE) 152/2009, anexo III, PARTE L**.\n**Principio: dos determinaciones.**\n1. La muestra se trata con **ácido clorhídrico diluido**; tras clarificación y filtración, **se mide la rotación óptica**.\n2. La muestra se extrae con **etanol al 40 %**; el filtrado se acidifica con clorhídrico, se clarifica y se mide igual.\n**La diferencia entre las dos medidas, multiplicada por un factor conocido, da el almidón.**\nLa clarificación se hace con **Carrez I** (acetato de cinc) y **Carrez II** (ferrocianuro de potasio). Instrumental: **polarímetro o sacarímetro** y **tubo de 200 mm**.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L, 2 a 5",
+      "etiquetas": ["polarimetria", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t28-f39",
+      "anverso": "¿Por qué el método de Ewers necesita **medir dos veces y restar**? ¿Y qué interfiere?",
+      "reverso": "Porque **la polarimetría mide la rotación TOTAL de la muestra**: cualquier otra sustancia ópticamente activa presente entra en la medida. La segunda determinación, sobre el extracto en etanol al 40 %, recoge **lo que no es almidón**, y al restar queda solo el almidón.\nInterfieren sobre todo los **productos de la remolacha azucarera** —pulpa, melazas, vinaza, azúcar—, que también son ópticamente activos.\nCon más de un **6 % de carbonatos** hay que destruirlos con sulfúrico diluido antes de medir; con mucha **lactosa** (suero o leche desnatada en polvo), hay un tratamiento aparte a **baño maría a 50 °C durante 30 minutos**.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L, 7",
+      "etiquetas": ["polarimetria", "interferencias"]
+    },
+    {
+      "id": "t28-f40",
+      "anverso": "Valores convencionales de **[α]꜀²⁰ del almidón puro** según el cereal (Reglamento 152/2009).",
+      "reverso": "| Almidón | [α]꜀²⁰ |\n| --- | --- |\n| **Arroz** | **+ 185,9°** |\n| **Fécula de patata** | **+ 185,7°** |\n| **Maíz** | **+ 184,6°** |\n| **Trigo** | **+ 182,7°** |\n| **Cebada** | **+ 181,5°** |\n| **Avena** | **+ 181,3°** |\n| **Otros y mezclas** en piensos compuestos | **+ 184,0°** |\n\nTodos **positivos**: el almidón es **dextrógiro**. Y todos muy próximos, entre **+181° y +186°**, que es el orden de magnitud que conviene retener.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L, 6.1",
+      "etiquetas": ["polarimetria", "normativa"]
+    },
+    {
+      "id": "t28-f41",
+      "anverso": "Repetibilidad del método polarimétrico del almidón: ¿qué diferencia se admite entre dos determinaciones paralelas?",
+      "reverso": "La diferencia entre dos determinaciones paralelas sobre la misma muestra no debe exceder:\n- **0,4 en valor absoluto**, si el contenido de almidón es **inferior al 40 %**.\n- **el 1 %**, si el contenido es **igual o superior al 40 %**.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L, 6.3",
+      "etiquetas": ["polarimetria", "normativa"]
+    },
+    {
+      "id": "t28-f42",
+      "anverso": "Reparto: ¿qué de la turbidez se estudia **aquí** y qué está en otros temas?",
+      "reverso": "**Aquí: la TÉCNICA y la INSTRUMENTACIÓN** —geometrías, unidades, patrón, normas ISO— **y lo que la ley le exige al método** (incertidumbre, frecuencia, medida en línea), porque eso es instrumentación y no valor.\n**En otros temas:**\n- El **valor paramétrico** de la turbidez del agua de consumo y sus valores de referencia a la salida de ETAP → **tema 33**.\n- La turbidez de **aguas residuales y reutilizadas** → **tema 35**.\n- La turbidez como medida de **crecimiento bacteriano** → temas **9 a 19**.\n- **Sólidos en suspensión** → **tema 34**.",
+      "fuente": "Tema 28, «Reparto con los temas vecinos»",
+      "etiquetas": ["concepto", "comparativa"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t28-q01",
+      "pregunta": "Las UNF (Unidades Nefelométricas de Formacina) son unidades de:",
+      "opciones": [
+        "Medidas polarimétricas.",
+        "Medidas de índice de refracción.",
+        "Medidas de turbidez."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta literal, con estos mismos distractores, en 1246 #13 y 1322 #30. Las UNF son unidades nefelométricas de FORMACINA, el patrón con el que se calibran los turbidímetros, y miden TURBIDEZ. Obsérvese que los dos distractores son los otros dos apartados de este mismo tema.",
+      "fuente": "1246 #13 y 1322 #30; UNE-EN ISO 7027-1:2016",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q02",
+      "pregunta": "¿Qué propiedad del analito se utiliza en las determinaciones por polarimetría?",
+      "opciones": [
+        "Emisión de la radiación.",
+        "Rotación de la radiación.",
+        "Absorción de la radiación."
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta literal en 1246 #12. La polarimetría mide el giro del plano de polarización que produce una sustancia quiral: ROTACIÓN. La emisión es la emisión atómica (tema 26) y la absorción, la espectrofotometría (temas 25 y 26).",
+      "fuente": "1246 #12; Farmacopea Europea 2.2.7",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q03",
+      "pregunta": "En nefelometría, el detector se sitúa:",
+      "opciones": [
+        "A 90° del haz incidente.",
+        "En línea con el haz incidente.",
+        "A 180°, recogiendo el haz transmitido."
+      ],
+      "correcta": 0,
+      "explicacion": "La nefelometría mide la LUZ DISPERSADA, y para eso el detector va a 90° del haz. Medir en línea o a 180° es turbidimetría, que mide la atenuación del haz transmitido.",
+      "fuente": "UNE-EN ISO 7027-1:2016; tema 28, §2.1.3",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q04",
+      "pregunta": "La turbidimetría mide:",
+      "opciones": [
+        "La luz dispersada a 90° por las partículas.",
+        "La fluorescencia emitida por las partículas.",
+        "La atenuación del haz transmitido."
+      ],
+      "correcta": 2,
+      "explicacion": "Turbidimetría es la medida de la atenuación de un flujo radiante, con el detector en línea; el resultado se expresa en FAU. La luz dispersada a 90° corresponde a la nefelometría.",
+      "fuente": "UNE-EN ISO 7027-1:2016; tema 28, §2.1.3",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q05",
+      "pregunta": "Según la ISO 7027, la fuente de radiación de un turbidímetro es:",
+      "opciones": [
+        "Una lámpara de tungsteno de luz blanca, con salida espectral de 400 a 680 nm.",
+        "Una lámpara de cátodo hueco del elemento a determinar.",
+        "Un diodo emisor infrarrojo de 860 nm con una anchura de banda de 60 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "La ISO 7027 define la fuente como infrarroja, de 860 nm con anchura de banda de 60 nm. La lámpara de luz blanca de 400-680 nm es la del método EPA 180.1, que da NTU. La lámpara de cátodo hueco es de absorción atómica (tema 26).",
+      "fuente": "USGS, cap. A6 §6.7, nota al pie 2",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q06",
+      "pregunta": "La ISO 7027 fija la posición del detector de nefelometría en:",
+      "opciones": [
+        "90° ± 2,5° respecto del haz incidente.",
+        "90° ± 30° respecto del haz incidente.",
+        "30° ± 15° respecto del haz incidente."
+      ],
+      "correcta": 0,
+      "explicacion": "La ISO 7027 es estricta: 90° ± 2,5°. La tolerancia de ± 30° es la del método EPA 180.1, y 30° ± 15° es la geometría de retrodispersión, que da unidades BU o FBU.",
+      "fuente": "USGS, cap. A6 §6.7, nota al pie 2 y tabla 6.7-4",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q07",
+      "pregunta": "El resultado de la medida de turbidez por atenuación del haz, según la ISO 7027-1, se expresa en:",
+      "opciones": ["FAU.", "UNF.", "NTU."],
+      "correcta": 0,
+      "explicacion": "FAU (unidades de atenuación de formacina), con un intervalo típico de 40 a 4 000 FAU. Las UNF y las NTU son unidades NEFELOMÉTRICAS, es decir, de luz dispersada a 90°.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (alcance público)",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q08",
+      "pregunta": "El patrón primario de turbidez es la formacina, que se prepara a partir de:",
+      "opciones": [
+        "Sulfato de bario y ácido clorhídrico.",
+        "Sulfato de hidrazina y hexametilentetramina.",
+        "Cloruro de bario y sulfato de sodio."
+      ],
+      "correcta": 1,
+      "explicacion": "La formacina es un polímero en suspensión que se sintetiza mezclando sulfato de hidrazina y hexametilentetramina (hexamina). El cloruro de bario con sulfato da BaSO4, que es el fundamento de la determinación turbidimétrica de sulfato, no del patrón.",
+      "fuente": "USGS, cap. A6 §6.7",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q09",
+      "pregunta": "La suspensión madre de formacina, de la que salen por dilución todos los demás patrones, tiene una turbidez de:",
+      "opciones": ["40 unidades.", "400 unidades.", "4 000 unidades."],
+      "correcta": 2,
+      "explicacion": "La suspensión madre es de 4 000 unidades de turbidez. Conviene no confundir esa cifra con los rangos de medida: 40 FAU es el límite inferior típico de la turbidimetría y 400 el superior típico de la nefelometría.",
+      "fuente": "USGS, cap. A6 §6.7",
+      "nucleo": false
+    },
+    {
+      "id": "t28-q10",
+      "pregunta": "Respecto de las unidades FTU y JTU de turbidez, es cierto que:",
+      "opciones": [
+        "Son las que prescribe la UNE-EN ISO 7027-1:2016.",
+        "Están en desuso: la JTU por falta de precisión y la FTU por no especificar el instrumento.",
+        "Son las unidades propias de la medida por retrodispersión."
+      ],
+      "correcta": 1,
+      "explicacion": "JTU (Jackson) y FTU (formacina) son históricas. La JTU cayó por falta de precisión y la FTU porque no dice nada sobre el diseño del instrumento. Las unidades de retrodispersión son BU y FBU.",
+      "fuente": "USGS, cap. A6 §6.7, nota técnica 2",
+      "nucleo": false
+    },
+    {
+      "id": "t28-q11",
+      "pregunta": "Un resultado expresado en UNF y otro expresado en NTU:",
+      "opciones": [
+        "Son directamente comparables, porque los dos se miden a 90°.",
+        "Solo son comparables por encima de 40 unidades.",
+        "No son directamente comparables, porque la fuente de luz es distinta."
+      ],
+      "correcta": 2,
+      "explicacion": "Las dos geometrías son de 90°, pero la UNF/FNU usa fuente infrarroja (ISO 7027) y la NTU luz blanca (EPA 180.1). Como la dispersión depende del tamaño de partícula frente a la longitud de onda, el USGS advierte expresamente de que los datos no son directamente comparables.",
+      "fuente": "USGS Oregon Water Science Center, ficha «FNU»",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q12",
+      "pregunta": "Respecto del método de análisis de la turbidez en agua de consumo, el Real Decreto 3/2023:",
+      "opciones": [
+        "Impone la UNE-EN ISO 7027-1:2016 como método de referencia.",
+        "No impone método, pero exige una incertidumbre de medición del 30 %, estimada al nivel de 1 UNF.",
+        "No impone método ni exige nada al rendimiento del laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "El RD 3/2023 no cita la ISO 7027 ni impone método. Lo que impone es rendimiento: anexo III, parte D, incertidumbre del 30 %, y la nota 9 precisa que debe estimarse al nivel de 1 UNF. Los laboratorios notifican en SINAC acreditación, incertidumbre, límite de cuantificación y límite de detección.",
+      "fuente": "RD 3/2023, anexo III, parte D y nota 9",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q13",
+      "pregunta": "En una ETAP que trata más de 10 000 m³/día, el control operacional de la turbidez debe hacerse, como mínimo:",
+      "opciones": ["Semanalmente.", "Diariamente.", "En línea."],
+      "correcta": 2,
+      "explicacion": "Anexo IV del RD 3/2023: hasta 1 000 m³/día, semanal; de 1 000 a 10 000, diaria; por encima de 10 000 m³/día, EN LÍNEA, notificando en SINAC el valor medio diario y el valor máximo diario.",
+      "fuente": "RD 3/2023, anexo IV",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q14",
+      "pregunta": "La UNE-EN ISO 7027-2:2020 recoge:",
+      "opciones": [
+        "Los métodos semicuantitativos de transparencia, entre ellos el disco de Secchi.",
+        "El método nefelométrico de referencia para agua de consumo.",
+        "La preparación y conservación de los patrones de formacina."
+      ],
+      "correcta": 0,
+      "explicacion": "La parte 2 son los métodos SEMIcuantitativos de evaluación de la transparencia: tubo de transparencia, disco de transparencia (Secchi) y visibilidad de buceadores. Los métodos cuantitativos con instrumento óptico son los de la parte 1.",
+      "fuente": "UNE-EN ISO 7027-2:2020",
+      "nucleo": false
+    },
+    {
+      "id": "t28-q15",
+      "pregunta": "¿Cuál de estas normas de turbidez está ANULADA?",
+      "opciones": [
+        "La UNE-EN ISO 7027-1:2016.",
+        "La UNE-EN ISO 7027:2001.",
+        "La UNE-EN ISO 7027-2:2020."
+      ],
+      "correcta": 1,
+      "explicacion": "La UNE-EN ISO 7027:2001, que además se titulaba «Determinación de la TURBIEDAD», quedó anulada el 16 de noviembre de 2016, sustituida por la UNE-EN ISO 7027-1:2016. Las partes 1 y 2 están en vigor.",
+      "fuente": "Fichas de AENOR de las tres normas",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q16",
+      "pregunta": "La determinación turbidimétrica clásica del sulfato se basa en precipitarlo con:",
+      "opciones": ["Nitrato de plata.", "Oxalato de amonio.", "Cloruro de bario."],
+      "correcta": 2,
+      "explicacion": "Se precipita el sulfato con cloruro de bario y se mide la turbidez del BaSO4 formado, proporcional al sulfato de partida. El nitrato de plata es el agente valorante del cloruro (tema 22) y el oxalato precipita calcio.",
+      "fuente": "LibreTexts (Harvey) 10.8",
+      "nucleo": false
+    },
+    {
+      "id": "t28-q17",
+      "pregunta": "El índice de refracción de un medio respecto del aire es:",
+      "opciones": [
+        "El cociente entre el seno del ángulo de incidencia y el seno del ángulo de refracción.",
+        "El cociente entre el ángulo de incidencia y el ángulo de refracción.",
+        "La diferencia de camino óptico entre los dos medios, expresada en nanómetros."
+      ],
+      "correcta": 0,
+      "explicacion": "Definición de la Farmacopea Europea 2.2.6: n = sen i / sen r. Es un cociente de SENOS, no de ángulos, y por eso resulta adimensional.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q18",
+      "pregunta": "La notación n con subíndice D y superíndice 20 indica que el índice de refracción se ha medido:",
+      "opciones": [
+        "A 20 °C y referido a la línea D del sodio, de 589,3 nm.",
+        "A 20 °C y con luz blanca compensada.",
+        "Con 20 réplicas y detector de diodos en fila."
+      ],
+      "correcta": 0,
+      "explicacion": "Son las condiciones normalizadas de la Farmacopea: 20 ± 0,5 °C y línea D del sodio (589,3 nm), salvo que se prescriba otra cosa. Sin temperatura y longitud de onda, un índice de refracción no significa nada.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q19",
+      "pregunta": "Un refractómetro determina normalmente:",
+      "opciones": [
+        "La absorbancia de la muestra a 589 nm.",
+        "El ángulo límite.",
+        "La densidad óptica de la película de muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La Farmacopea lo dice literalmente: los refractómetros determinan normalmente el ángulo límite, y su pieza esencial es un prisma de índice de refracción conocido en contacto con el líquido a examinar.",
+      "fuente": "Farmacopea Europea 2.2.6",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q20",
+      "pregunta": "El compensador de Amici de un refractómetro sirve para:",
+      "opciones": [
+        "Termostatizar la película de muestra a 20 °C.",
+        "Corregir la dispersión cromática cuando se trabaja con luz blanca.",
+        "Pulir la cara del prisma de iluminación."
+      ],
+      "correcta": 1,
+      "explicacion": "La Farmacopea lo exige sin nombrarlo: cuando se usa luz blanca, el refractómetro va provisto de un sistema compensador. Son prismas que corrigen la dispersión cromática y devuelven el valor que se habría medido con luz monocromática de la línea D.",
+      "fuente": "Farmacopea Europea 2.2.6; tema 28, §2.2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q21",
+      "pregunta": "Según la Orden ICT/155/2020, los grados Brix expresan:",
+      "opciones": [
+        "El porcentaje en masa de una solución de sacarosa.",
+        "Los gramos de azúcares reductores por litro.",
+        "El grado alcohólico probable del vino resultante."
+      ],
+      "correcta": 0,
+      "explicacion": "La orden define el escalón «0,1 % para el porcentaje en masa de una solución de sacarosa (ºBrix)». El grado alcohólico probable es otra de las tres escalas que puede llevar el mismo refractómetro, junto con la de índice de refracción.",
+      "fuente": "Orden ICT/155/2020, anexo XVI, apéndice I, 5.1.1",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q22",
+      "pregunta": "El plazo de verificación periódica de los refractómetros sujetos a control metrológico del Estado (medida del azúcar del mosto de uva) es de:",
+      "opciones": ["Un año.", "Dos años.", "Cuatro años."],
+      "correcta": 0,
+      "explicacion": "Anexo XVI, apartado 5, de la Orden ICT/155/2020: el plazo de verificación periódica es de un año. Los requisitos técnicos son los del documento OIML R 124:1997.",
+      "fuente": "Orden ICT/155/2020, anexo XVI, apartado 5",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q23",
+      "pregunta": "En la expresión de la rotación específica, la longitud del tubo se expresa en:",
+      "opciones": ["Centímetros.", "Decímetros.", "Metros."],
+      "correcta": 1,
+      "explicacion": "En [alfa] = alfa / (l · c), la longitud del tubo va en DECÍMETROS y la concentración en g/mL. El tubo de referencia de la Farmacopea es precisamente de 1 dm.",
+      "fuente": "Farmacopea Europea 2.2.7",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q24",
+      "pregunta": "El método de Ewers, recogido en el anexo III, parte L, del Reglamento (CE) 152/2009 para determinar el almidón en piensos, es un método:",
+      "opciones": ["Gravimétrico.", "Polarimétrico.", "Turbidimétrico."],
+      "correcta": 1,
+      "explicacion": "Es el método POLARIMÉTRICO: se hacen dos determinaciones, una tras tratar con ácido clorhídrico diluido y otra sobre el extracto en etanol al 40 %, se mide la rotación óptica en ambas con un tubo de 200 mm y la diferencia da el almidón.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, parte L",
+      "nucleo": true
+    },
+    {
+      "id": "t28-q25",
+      "pregunta": "Una mezcla racémica, con un 50 % de cada enantiómero:",
+      "opciones": [
+        "No gira el plano de polarización.",
+        "Gira el plano el doble que cada enantiómero por separado.",
+        "Gira siempre el plano hacia la derecha."
+      ],
+      "correcta": 0,
+      "explicacion": "Las rotaciones de los dos enantiómeros son iguales y de signo contrario, así que se anulan: la mezcla racémica es ópticamente inactiva aunque sus dos componentes sean quirales.",
+      "fuente": "LibreTexts, Química Orgánica I (Liu) 5.4",
+      "nucleo": false
+    },
+    {
+      "id": "t28-q26",
+      "pregunta": "Según los métodos oficiales de análisis de la miel, la humedad se determina por:",
+      "opciones": [
+        "Desecación en estufa a 105 °C hasta peso constante.",
+        "Valoración de Karl Fischer.",
+        "Medida del índice de refracción y conversión mediante tablas."
+      ],
+      "correcta": 2,
+      "explicacion": "Orden de 12 de junio de 1986, método 9: el principio es la medida del índice de refracción de la miel a 20 °C y el cálculo de la humedad con la tabla de Chataway revisada por Wedmore. Si no se mide a 20 °C exactos, se corrige 0,00023 por cada grado.",
+      "fuente": "Orden de 12/06/1986, anexo, método 9; vigente por el RD 1049/2003",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t28-s01",
+      "titulo": "Supuesto 1. Control de la turbidez en una ETAP municipal",
+      "enunciado": "La estación de tratamiento de agua potable de un municipio trata 18 000 m³/día de agua superficial procedente de un río. El laboratorio de físico-química tiene que organizar el control de la turbidez del agua tratada, poner a punto el equipo y decidir cómo informar los resultados.",
+      "preguntas": [
+        {
+          "id": "t28-s01-q1",
+          "pregunta": "¿Con qué técnica y en qué unidades se determina la turbidez del agua de consumo según la norma de referencia?",
+          "opciones": [
+            "Turbidimetría por atenuación del haz, en FAU.",
+            "Nefelometría, con el detector a 90° del haz, en UNF.",
+            "Espectrofotometría de absorción molecular, en unidades de absorbancia.",
+            "Gravimetría del residuo filtrable, en mg/L."
+          ],
+          "correcta": 1,
+          "explicacion": "La ISO 7027-1 reserva la nefelometría —detector a 90°— para las aguas de turbidez baja, y cita expresamente el agua de consumo. El resultado se expresa en unidades nefelométricas de formacina (UNF). La turbidimetría por atenuación, en FAU, es la geometría de las aguas muy turbias.",
+          "fuente": "UNE-EN ISO 7027-1:2016; RD 3/2023"
+        },
+        {
+          "id": "t28-s01-q2",
+          "pregunta": "Dado que la planta trata 18 000 m³/día, ¿con qué frecuencia mínima debe controlarse la turbidez en la ETAP?",
+          "opciones": [
+            "Semanal.",
+            "Mensual.",
+            "Diaria.",
+            "En línea, notificando en SINAC el valor medio diario y el valor máximo diario."
+          ],
+          "correcta": 3,
+          "explicacion": "Anexo IV del RD 3/2023: por encima de 10 000 m³/día el control operacional de la turbidez se hace EN LÍNEA, y se notifican en SINAC el valor medio diario y el valor máximo diario. La frecuencia semanal corresponde a volúmenes de hasta 1 000 m³/día y la diaria, de 1 000 a 10 000.",
+          "fuente": "RD 3/2023, anexo IV"
+        },
+        {
+          "id": "t28-s01-q3",
+          "pregunta": "¿Qué le exige el Real Decreto 3/2023 al método de análisis de la turbidez?",
+          "opciones": [
+            "No impone método, pero exige una incertidumbre de medición del 30 %, estimada al nivel de 1 UNF.",
+            "Impone la UNE-EN ISO 7027-1:2016 como método de referencia obligatorio.",
+            "Impone el método EPA 180.1 y la expresión del resultado en NTU.",
+            "No impone método ni exige nada sobre el rendimiento del método."
+          ],
+          "correcta": 0,
+          "explicacion": "El RD 3/2023 no cita ninguna norma de turbidez ni impone método: fija rendimiento. Anexo III, parte D, incertidumbre del 30 % y nota 9, que precisa que se estima al nivel de 1 UNF. El laboratorio notifica además en SINAC su acreditación, la incertidumbre, el límite de cuantificación y el límite de detección.",
+          "fuente": "RD 3/2023, anexo III, parte D y nota 9"
+        },
+        {
+          "id": "t28-s01-q4",
+          "pregunta": "Para calibrar el turbidímetro hace falta un patrón. ¿Cuál es el patrón primario de turbidez?",
+          "opciones": [
+            "Una suspensión de caolín en agua destilada.",
+            "Una disolución certificada de sacarosa en agua.",
+            "La formacina, obtenida de sulfato de hidrazina y hexametilentetramina.",
+            "Una disolución de sulfato de bario en ácido clorhídrico."
+          ],
+          "correcta": 2,
+          "explicacion": "El patrón primario es la formacina, que se sintetiza mezclando sulfato de hidrazina y hexametilentetramina; la suspensión madre es de 4 000 unidades y las demás salen por dilución. Como sedimenta, se usan también formacinas estabilizadas y patrones de estireno-divinilbenceno. Las disoluciones certificadas de sacarosa son patrones de refractometría y polarimetría, no de turbidez.",
+          "fuente": "USGS, cap. A6 §6.7"
+        },
+        {
+          "id": "t28-s01-q5",
+          "pregunta": "Una muestra de agua bruta de entrada, muy cargada tras una avenida, se sale de escala en el nefelómetro. ¿Qué procede hacer?",
+          "opciones": [
+            "Medirla por turbidimetría de atenuación, cuyo intervalo típico llega hasta 4 000 FAU.",
+            "Informar el resultado como «mayor de 400 UNF», sin más.",
+            "Medirla con el disco de Secchi, que es el método cuantitativo para aguas muy turbias.",
+            "Filtrarla a 0,45 µm y medir la turbidez del filtrado."
+          ],
+          "correcta": 0,
+          "explicacion": "La ISO 7027-1 prevé exactamente este caso: la nefelometría cubre de menos de 0,05 a 400 unidades y la turbidimetría por atenuación, de 40 a 4 000 FAU, «más aplicable a aguas muy turbias». El disco de Secchi es SEMIcuantitativo (parte 2), y filtrar la muestra eliminaría precisamente lo que se quiere medir.",
+          "fuente": "UNE-EN ISO 7027-1:2016 y -2:2020"
+        }
+      ]
+    },
+    {
+      "id": "t28-s02",
+      "titulo": "Supuesto 2. Refractometría y polarimetría en el laboratorio de salud pública",
+      "enunciado": "En el laboratorio municipal entran el mismo día cuatro muestras que no son de agua: un lote de miel envasada, un mosto de uva de una bodega de la comarca, un pienso compuesto y una disolución de un principio activo ópticamente activo del que hay que comprobar la identidad. Indique en cada caso la técnica y las condiciones.",
+      "preguntas": [
+        {
+          "id": "t28-s02-q1",
+          "pregunta": "¿Qué técnica utilizaría para la humedad de la miel, según los métodos oficiales españoles?",
+          "opciones": [
+            "Desecación en estufa a 105 °C hasta peso constante.",
+            "Medida del índice de refracción a 20 °C y conversión con la tabla de Chataway revisada por Wedmore.",
+            "Valoración de Karl Fischer.",
+            "Polarimetría, a partir de la sacarosa aparente."
+          ],
+          "correcta": 1,
+          "explicacion": "Orden de 12 de junio de 1986, método 9, vigente por la disposición adicional primera del RD 1049/2003: el principio es la medida del índice de refracción de la miel y el cálculo de la humedad mediante tablas, con refractómetro de baño termostatizado y la muestra a 20 °C. Si no se mide a 20 °C exactos, se suman o restan 0,00023 por cada grado.",
+          "fuente": "Orden de 12/06/1986, anexo, método 9"
+        },
+        {
+          "id": "t28-s02-q2",
+          "pregunta": "El refractómetro con el que se mide el contenido en azúcar del mosto de uva:",
+          "opciones": [
+            "Es un instrumento de uso libre, sin requisito metrológico específico.",
+            "Debe estar acreditado por ENAC como método de ensayo.",
+            "Está sujeto a control metrológico del Estado, con verificación periódica anual.",
+            "Basta con calibrarlo una vez, en el momento de la puesta en servicio."
+          ],
+          "correcta": 2,
+          "explicacion": "La Orden ICT/155/2020, anexo XVI, somete a control metrológico del Estado los instrumentos que miden el azúcar del mosto de uva, «denominados en adelante refractómetros», con los requisitos del documento OIML R 124:1997 y verificación periódica anual. La acreditación por ENAC es otra cosa: recae sobre el laboratorio y su método, no sobre el instrumento.",
+          "fuente": "Orden ICT/155/2020, anexo XVI, apartados 1 y 5"
+        },
+        {
+          "id": "t28-s02-q3",
+          "pregunta": "La escala del refractómetro marca 21,4 °Brix. ¿Qué expresa exactamente ese valor?",
+          "opciones": [
+            "El porcentaje en masa de una solución de sacarosa.",
+            "Los gramos de azúcares reductores por litro de mosto.",
+            "El grado alcohólico probable del vino resultante.",
+            "El índice de refracción de la muestra multiplicado por cien."
+          ],
+          "correcta": 0,
+          "explicacion": "La Orden ICT/155/2020 define el escalón de esa escala como «0,1 % para el porcentaje en masa de una solución de sacarosa (ºBrix)». El grado alcohólico probable y el índice de refracción son las otras dos escalas que puede llevar rotuladas el mismo instrumento.",
+          "fuente": "Orden ICT/155/2020, anexo XVI, apéndice I, 5.1.1"
+        },
+        {
+          "id": "t28-s02-q4",
+          "pregunta": "Para determinar el almidón del pienso compuesto conforme al método oficial europeo, utilizaría:",
+          "opciones": [
+            "Gravimetría, tras precipitar el almidón con etanol.",
+            "Turbidimetría de la suspensión de almidón.",
+            "Espectrofotometría del complejo azul de almidón con yodo.",
+            "El método polarimétrico de Ewers, con dos medidas de rotación óptica y tubo de 200 mm."
+          ],
+          "correcta": 3,
+          "explicacion": "Reglamento (CE) 152/2009, anexo III, parte L, «Determinación del almidón. Método polarimétrico». Se mide la rotación óptica dos veces —tras tratar con ácido clorhídrico diluido y sobre el extracto en etanol al 40 %, ambos clarificados con Carrez I y II— y la diferencia, por un factor, da el almidón. Instrumental: polarímetro o sacarímetro y tubo de 200 mm.",
+          "fuente": "Reglamento (CE) 152/2009, anexo III, parte L"
+        },
+        {
+          "id": "t28-s02-q5",
+          "pregunta": "Para comprobar la identidad del principio activo midiendo su rotación óptica, ¿en qué condiciones prescribe medirla el método general de la Farmacopea?",
+          "opciones": [
+            "A 25 °C y con lámpara de deuterio, leyendo hasta 0,1°.",
+            "A 20 ± 0,5 °C y en la línea D del sodio (589,3 nm), con el aparato leyendo hasta 0,01°.",
+            "A temperatura ambiente y en la línea de resonancia del elemento a determinar.",
+            "A 20 °C y a 860 nm, como en la medida de la turbidez."
+          ],
+          "correcta": 1,
+          "explicacion": "Farmacopea Europea 2.2.7: se determina el cero y el ángulo de rotación a la longitud de onda de la línea D del sodio (589,3 nm) y a 20 ± 0,5 °C, salvo que se prescriba otra cosa; el polarímetro debe dar lecturas hasta 0,01°. Solo se puede medir a otra temperatura si la monografía indica la corrección. Los 860 nm son la fuente de los turbidímetros ISO 7027.",
+          "fuente": "Farmacopea Europea 2.2.7"
+        }
+      ]
+    }
+  ]
+}
