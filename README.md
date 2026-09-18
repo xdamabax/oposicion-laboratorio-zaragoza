@@ -55,11 +55,27 @@ Las tarjetas y preguntas de mayor peso real llevan `nucleo: true`. La app ofrece
 
 Los temas **2, 4, 5, 8, 10, 19 y 29** no aparecen en ninguno de los seis cuestionarios analizados. Al presentar su apunte hay que **avisar explícitamente de cada duda o ambigüedad de fuente**, en vez de asumir el nivel de detalle habitual.
 
+### Fuentes no oficiales de apoyo (`TEMARIO EXTRA/`)
+
+`TEMARIO EXTRA/` contiene apuntes **de otra fuente, no oficial** (otra academia/repositorio). Su numeración y sus títulos son **suyos** y no se corresponden con nuestros 40 temas: hay dos series internas (`BIO_`, de microbiología, y `FASE_`, de química general) que pertenecen a temarios distintos del nuestro.
+
+**Regla fija del proyecto.** Cada vez que se redacte un tema nuevo, o se revise uno ya aprobado, **antes de darlo por bueno** hay que consultar si `TEMARIO EXTRA/` tiene contenido relacionado con ese tema. Condiciones de uso:
+
+1. **Corroborar por contenido, nunca por el número ni por el título del archivo.** Su «TEMA 5» no es nuestro tema 5. Hay que leer el archivo y decidir por lo que dice realmente. Un archivo puede cubrir varios temas nuestros y un tema nuestro puede repartirse entre varios archivos.
+2. **Sirve como pista, no como fuente.** Orienta sobre qué aspectos suele cubrir el tema y qué se explica de forma más didáctica. **Nunca se vuelca directamente ni se cita como fuente** en el apunte.
+3. **Todo lo que aporte se verifica contra la normativa o bibliografía real**, con el mismo rigor que se aplica a los exámenes anteriores y a cualquier otra fuente no oficial. Si no se puede verificar contra fuente real, no entra.
+4. **En temas ya aprobados, solo para ampliar.** Nunca para duplicar lo que ya está cubierto. Si no aporta ningún matiz, dato o ejemplo nuevo y verificable, **el apunte no se toca**.
+5. **En temas aún no redactados**, el material relacionado se archiva como apoyo en `temas/apoyo/tema-NN.md` —con cabecera de aviso y `estado: sin-verificar`— y se usa como punto de partida para ampliar la búsqueda de fuentes cuando llegue su turno, sujeto a los puntos 2 y 3. Esos ficheros **no los lee ni la app ni los scripts** (`temas/*.md` no cruza subcarpetas), comprobado con una prueba de sabotaje.
+
+El mapeo orientativo de qué archivo corresponde a qué tema está en `TEMARIO EXTRA/MAPEO.md`, junto con los archivos que no encajan en ninguno de los 40.
+
 ## Estructura
 
 ```
 temario.md              Listado oficial de los 40 temas. Fuente de verdad de los títulos.
 temas/tema-NN.md        Apuntes. Frontmatter + cuerpo markdown.
+temas/apoyo/tema-NN.md  Material de apoyo SIN VERIFICAR de TEMARIO EXTRA/. No es un apunte:
+                        la app y los scripts solo leen temas/*.md, nunca subcarpetas.
 repaso/tema-NN.json     Tarjetas, test y supuestos, generados del apunte ya aprobado.
 ExamenesAnteriores/     Cuestionarios de convocatorias previas y su análisis.
 app/                    Web app React (Vite + TypeScript).

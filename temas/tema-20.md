@@ -16,6 +16,8 @@ fuentes:
   - "Real Decreto 656/2017, de 23 de junio, Reglamento de Almacenamiento de Productos Químicos e ITC MIE APQ 0 a 10 (BOE-A-2017-8755), texto consolidado, última actualización de 19/12/2025."
   - "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular (BOE-A-2022-5809), texto consolidado, última actualización de 11/03/2026."
   - "Agencia Europea de Sustancias y Mezclas Químicas (ECHA), «Etiquetado y envasado» y «Nuevas clases de peligro en 2023»."
+  - "INSST, NTP 725, «Seguridad en el laboratorio: almacenamiento de productos químicos» (2006). Guía de buenas prácticas, no norma obligatoria. Leída íntegra para el apartado 6.2. — https://www.insst.es/documents/94886/196283/NTP+725+Seguridad+en+el+laboratorio.+almacenamiento+de+productos+qu%C3%ADmicos.pdf"
+  - "INSST, NTP 479, «Prevención del riesgo en el laboratorio químico: reactividad de los productos químicos (II)». Consultada para los éteres y la formación de peróxidos. — https://www.insst.es/documents/94886/326853/ntp_479.pdf"
 ---
 
 > **Aviso de terminología.** El enunciado oficial del tema dice «frases de riesgo» y «consejos de seguridad». Esa es la terminología del **sistema antiguo** (frases **R** y **S**), derogado. Desde el 1 de junio de 2015 rige en su totalidad el **Reglamento CLP**, que las sustituye por **indicaciones de peligro (H)** y **consejos de prudencia (P)**. En el examen puede preguntarse con cualquiera de los dos nombres, así que hay que reconocer los dos: el apartado 3 da la equivalencia.
@@ -256,7 +258,29 @@ También hay un límite fino que sí conviene recordar: para los líquidos **tó
 - **Inflamables** en armario de seguridad específico, ventilado y con retención.
 - **Recipientes cerrados**, etiquetados y en su envase original siempre que sea posible (P234).
 - **Bandejas o cubetos de retención** bajo corrosivos e inflamables.
-- No almacenar en **campanas de extracción** ni sobre el suelo del laboratorio.
+- No almacenar en **campanas de extracción** ni sobre el suelo del laboratorio. La NTP 725 añade los sitios que tampoco valen: **pasillos y lugares de paso de vehículos, huecos de escalera, vestíbulos de acceso general, salas de visitas y lugares de descanso**.
+
+#### Cómo se distribuye el almacén: islas o estanterías
+
+La NTP 725 da el criterio, y es de los que se preguntan porque tiene nombre propio:
+
+| Sistema | En qué consiste | Cuándo |
+| --- | --- | --- |
+| **De islas** | Un grupo de estanterías se dedica a **una sola familia** (por ejemplo, inflamables) y queda **rodeado de pasillos**. El almacén acaba siendo varias islas, una por familia | Almacenes grandes, stock voluminoso |
+| **De estanterías** | Se **intercalan productos inertes entre los incompatibles**, sin dedicar estanterías enteras | Si el stock **no es voluminoso**, se puede obviar el sistema de islas |
+| **De península** | ⚠️ **No recomendable.** El personal puede quedar **parcialmente encerrado** entre estanterías y, en caso de accidente, ver dificultada la salida | — |
+
+#### Colocación en el estante
+
+- **Nada mayor de medio litro en estantes elevados.** Los recipientes más grandes van **a los niveles más bajos**.
+- Los productos **más peligrosos** —inflamables y muy inflamables, y los clasificados como **CMR** (carcinógenos, mutágenos o tóxicos para la reproducción)— es recomendable que estén **en armarios**, no en estantería abierta.
+- Categorías que la NTP 725 señala como merecedoras de separación propia: **cancerígenos y sustancias de alta toxicidad**, **sustancias pestilentes** e **inflamables**.
+
+#### El almacenamiento prolongado es en sí mismo un riesgo
+
+No es solo cuestión de dónde se pone cada cosa, sino de **cuánto tiempo lleva puesta**. La NTP 725 lo recoge en su introducción: en un producto almacenado mucho tiempo pueden darse **reacciones de polimerización o de descomposición**, con **formación de peróxidos inestables** o con **acumulación de gas** por descomposición lenta, hasta **romper el recipiente**.
+
+De ahí la medida de gestión: **llevar un registro actualizado de la recepción** de los productos, que permita detectar y retirar los que envejecen. Los **éteres** son el caso de libro de producto que se peroxida al envejecer (ver «Dudas»).
 
 ---
 
@@ -361,12 +385,18 @@ Los residuos de un laboratorio caen en el **capítulo 16, «Residuos no especifi
   - RD 773/1997 (BOE-A-1997-12735), actualización de 18/12/2025.
   - RD 656/2017 (BOE-A-2017-8755), actualización de 19/12/2025.
   - Ley 7/2022 (BOE-A-2022-5809), actualización de 11/03/2026.
-- **Fecha de verificación:** 1 de septiembre de 2026.
+- **Guía técnica del INSST**, leída íntegra y directamente para el apartado 6.2: **NTP 725, «Seguridad en el laboratorio: almacenamiento de productos químicos»** (INSST, año 2006). De ella salen el sistema de islas / estanterías / península, la regla del medio litro en estantes elevados, los emplazamientos prohibidos, las categorías con separación propia y el riesgo del almacenamiento prolongado. Las NTP son **guías de buenas prácticas**, no normas obligatorias: el propio documento lo advierte en cabecera. — https://www.insst.es/documents/94886/196283/NTP+725+Seguridad+en+el+laboratorio.+almacenamiento+de+productos+qu%C3%ADmicos.pdf
+- **NTP 479**, «Prevención del riesgo en el laboratorio químico: reactividad de los productos químicos (II)» (INSST), consultada solo para el punto de los éteres y los peróxidos. — https://www.insst.es/documents/94886/326853/ntp_479.pdf
+- **Fecha de verificación:** 1 de septiembre de 2026. **Ampliación del apartado 6.2** (islas y estanterías, colocación en el estante, almacenamiento prolongado) verificada sobre la NTP 725 el **18 de septiembre de 2026**.
 
 ### Dudas y ambigüedades declaradas
 
 1. **Series P.** El recuento por series (P101-P103, P201-P284, P301-P391, P401-P422, P501-P502) sale de la edición del anexo IV publicada por Sanidad, que **puede no recoger la última actualización**; el CLP vigente incluye algún consejo más. La estructura de las cinco series sí es estable, y es lo único que conviene memorizar.
-2. **Incompatibilidades de almacenamiento** (apartado 6.2): son práctica consolidada de laboratorio y coherentes con el art. 5.3 del RD 374/2001, que sí obliga a considerar *«la separación de los agentes químicos incompatibles»*, pero **la lista concreta de parejas no procede de un precepto**. No la des como texto legal.
+2. **Incompatibilidades de almacenamiento** (apartado 6.2): la **lista concreta de parejas** sigue siendo práctica consolidada de laboratorio, coherente con el art. 5.3 del RD 374/2001 —que obliga a considerar *«la separación de los agentes químicos incompatibles»*— pero **no procede de un precepto**. No la des como texto legal. Lo que sí tiene ahora fuente técnica citable es el **resto del apartado** (islas, estanterías, península, medio litro, emplazamientos prohibidos, almacenamiento prolongado): sale de la **NTP 725 del INSST**, leída directamente. Aun así, una NTP es **guía de buenas prácticas, no norma obligatoria**, y el propio documento lo advierte en su cabecera: tampoco esto se cita como obligación legal.
+
+3. **La NTP 725 es de 2006 y sus referencias normativas están desfasadas.** Remite al **RD 379/2001** como Reglamento de Almacenamiento de Productos Químicos, que fue **sustituido por el RD 656/2017**, que es el que usa el apartado 6.1 de este apunte. De la NTP 725 se han tomado **solo sus recomendaciones técnicas y organizativas**, nunca sus citas legales ni sus umbrales. Su tabla 5 de capacidades, además, procede del **código 45 de la NFPA (1986)**, es decir, criterio estadounidense, no CLP: no se ha usado.
+
+4. **El plazo de almacenamiento de los éteres no se afirma.** Una fuente de apoyo no oficial daba «no más de un año, o más de seis meses sin inhibidor eficaz». **No lo he podido verificar**: la NTP 725 no lo recoge, y la NTP 479 confirma que los éteres figuran entre los productos que **forman peróxidos con facilidad** y que *«si han sido manipuladas (destilación, extracción) puede haberse eliminado el estabilizante»*, pero **no da ningún plazo concreto**. Por eso el apunte afirma el fenómeno y no la cifra. Si en el examen aparece un plazo numérico para los éteres, no procede de estas dos NTP.
 
 ### Dudas resueltas en la revisión
 

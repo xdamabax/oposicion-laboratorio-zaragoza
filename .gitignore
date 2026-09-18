@@ -7,3 +7,8 @@ export/
 .env.*
 !.env.example
 tsconfig.tsbuildinfo
+
+# Material de apoyo de terceros: se queda en local, no se republica.
+# Son apuntes de otra academia/repositorio, con derechos ajenos, y este repo es publico.
+# El mapeo y las fichas de apoyo (que son nuestros) si se versionan.
+TEMARIO EXTRA/*.zip

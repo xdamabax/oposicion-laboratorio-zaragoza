@@ -3,7 +3,7 @@
   "titulo": "Seguridad en el laboratorio físico-químico: Clases de riesgos de los productos químicos. Frases de riesgo. Consejos de seguridad. Equipos de Protección Individual. Almacenamiento de productos químicos. Eliminación de residuos.",
   "generadoDe": "temas/tema-20.md",
   "apunteAprobado": true,
-  "fechaGeneracion": "2026-09-02",
+  "fechaGeneracion": "2026-09-18",
   "formatoTest": {
     "ejercicio": "primero",
     "opcionesPorPregunta": 3,
@@ -386,6 +386,24 @@
         "residuos"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t20-f35",
+      "anverso": "Según la NTP 725, ¿de qué dos formas se pueden separar las familias de productos incompatibles en un almacén de laboratorio, y cuándo se usa cada una?",
+      "reverso": "**Sistema de islas** — se dedica un grupo de estanterías a **una sola familia** (p. ej. inflamables), **rodeado de pasillos**. El almacén queda formado por varias islas, una por familia. Es el de los almacenes **grandes**.\n**Sistema de estanterías** — se **intercalan productos inertes entre los incompatibles**, sin dedicar estanterías enteras. Si el stock **no es voluminoso**, se puede obviar el sistema de islas.\n\nLa elección depende del **tamaño del almacén**.",
+      "fuente": "INSST, NTP 725",
+      "etiquetas": [
+        "almacenamiento"
+      ]
+    },
+    {
+      "id": "t20-f36",
+      "anverso": "¿Por qué la NTP 725 desaconseja el sistema de almacenamiento «de península»?",
+      "reverso": "Porque el personal puede quedar **parcialmente encerrado entre estanterías** y, **en caso de accidente, ver dificultada la salida**.\n\nEs un criterio de **evacuación**, no de compatibilidad química: la península no falla por cómo separa los productos, sino por cómo atrapa a las personas.",
+      "fuente": "INSST, NTP 725",
+      "etiquetas": [
+        "almacenamiento"
+      ]
     }
   ],
   "test": [
@@ -688,6 +706,18 @@
       "explicacion": "Los gases a presión con sustancias peligrosas son 16 05 04* y los productos químicos orgánicos desechados, 16 05 08*. El asterisco marca en todos los casos que el residuo es peligroso.",
       "fuente": "Decisión 2014/955/UE",
       "nucleo": true
+    },
+    {
+      "id": "t20-q24",
+      "pregunta": "El sistema de almacenamiento «de península» no se considera recomendable porque:",
+      "opciones": [
+        "Obliga a intercalar productos inertes entre los incompatibles",
+        "Exige dedicar un grupo entero de estanterías a cada familia de productos",
+        "El personal puede quedar parcialmente encerrado entre estanterías y ver dificultada la salida en caso de accidente"
+      ],
+      "correcta": 2,
+      "explicacion": "El motivo es de evacuación, no de compatibilidad química. Las otras dos opciones describen los sistemas que la NTP 725 sí admite: intercalar inertes es el sistema de estanterias, y dedicar un grupo entero a una familia es el sistema de islas.",
+      "fuente": "INSST, NTP 725"
     }
   ],
   "supuestos": [
