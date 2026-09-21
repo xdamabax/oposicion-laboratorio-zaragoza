@@ -1,0 +1,790 @@
+{
+  "tema": 30,
+  "titulo": "Cromatografía: Fundamentos y Tipos de cromatografía. Cromatografía iónica: instrumentación. Utilización de la cromatografía iónica en análisis de agua.",
+  "generadoDe": "temas/tema-30.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-21",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t30-f01",
+      "anverso": "Define **cromatografía** con las palabras exactas del examen.",
+      "reverso": "«Una técnica de **SEPARACIÓN** de los componentes de una muestra, que **se distribuyen entre una FASE MÓVIL y una FASE ESTACIONARIA**.»\nLiteral en **1246 #14** y **1322 #31**.\nLos dos distractores son de otros temas y se reconocen de un vistazo:\n- «se fundamenta en la intensidad de radiación emitida por átomos excitados» → **emisión atómica** (tema 26).\n- «se basa en la absorción de radiación electromagnética» → **absorción** (temas 25 y 26).",
+      "fuente": "Cuestionarios 1246 #14 y 1322 #31",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f02",
+      "anverso": "La **columna cromatográfica**, tanto en gases como en líquidos, ¿qué hace exactamente?",
+      "reverso": "**SEPARA.** No cuantifica ni detecta. Literal en **1246 #15** y **1322 #32**.\nEl reparto del trabajo dentro del equipo es:\n| Pieza | Qué hace |\n| --- | --- |\n| **Columna** | **SEPARA** |\n| **Detector** | **Detecta**: convierte en señal lo que sale |\n| **Integrador o software** | **Cuantifica**, por **área o altura** del pico |",
+      "fuente": "Cuestionarios 1246 #15 y 1322 #32; CEM, QU-004, 5.3.2",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f03",
+      "anverso": "En una separación de dos compuestos, ¿cómo influye la **anchura de los picos** en la resolución?",
+      "reverso": "**A MENOR anchura de picos, MEJOR resolución.** Literal en **1246 #16** y **1322 #33**.\nLa razón está en la propia fórmula: la anchura va en el **denominador**.\nRs = 2 · [tR(B) − tR(A)] / (wA + wB)\nY por eso la tercera opción que ofrecen —«la anchura de picos no tiene influencia en la resolución»— es falsa.",
+      "fuente": "Cuestionarios 1246 #16 y 1322 #33; CEM, QU-004",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f04",
+      "anverso": "¿Qué se pone **antes de la columna analítica** para alargar su vida útil, y por qué?",
+      "reverso": "Una **PRECOLUMNA** (columna de guarda). Literal en **1246 #17** y **1322 #34**; los distractores son «microcolumna» y «termostato», que no protegen nada.\n**Resuelve dos problemas:**\n1. Los solutos que **se unen irreversiblemente** a la fase estacionaria y degradan la columna.\n2. El **material particulado** que la obstruye.\n**Cómo es:** el mismo relleno y la misma fase estacionaria que la columna analítica, pero **mucho más corta y más barata** (del orden de 7,5 mm y una décima parte del precio). **Es sacrificial: se cambia con regularidad.**",
+      "fuente": "Cuestionarios 1246 #17 y 1322 #34; LibreTexts 28.3",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f05",
+      "anverso": "¿Para qué tipo de compuestos es **el más utilizado** el detector de conductividad?",
+      "reverso": "Para **COMPUESTOS IÓNICOS**. Literal en **1246 #18** y **1322 #35**.\nLa lógica es inmediata: **un ion en disolución conduce, así que medir conductividad es medir iones**. Es el **detector universal de analitos catiónicos y aniónicos**, y por eso es el de la cromatografía iónica.\nLos dos distractores describen otros detectores:\n- «compuestos con capacidad de oxidarse o reducirse» → detector **amperométrico**.\n- «compuestos fluorescentes» → detector de **fluorescencia**.",
+      "fuente": "Cuestionarios 1246 #18 y 1322 #35; LibreTexts 28.6",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f06",
+      "anverso": "Escribe la **fórmula de la resolución** y el criterio numérico que le asocia el CEM.",
+      "reverso": "**Rs = 2 · [(tR)B − (tR)A] / (wA + wB)**\nY el criterio, literal del CEM: *«con un valor **Rs > 1,5**, se permite la **separación completa** de dos componentes»*.\nEs además uno de los cuatro puntos que el CEM obliga a comprobar en el cromatograma de calibración.",
+      "fuente": "CEM, QU-004, apartados 3 y 5.3.6",
+      "etiquetas": ["calculo", "instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f07",
+      "anverso": "Mirando este cromatograma, ¿qué es el **factor de retención**, cómo se calcula y qué otros nombres ha tenido?",
+      "reverso": "Es la medida de **cuánto se retiene un soluto**, y se saca de dos tiempos que se leen en el propio cromatograma:\n**k = (tR − tM) / tM = tR′ / tM**\nCuanto **mayor es k**, más favorece el reparto a la fase estacionaria y más tarda el soluto en salir.\n**Nombres antiguos:** factor de capacidad, relación de capacidad, relación de partición, y a veces el símbolo k′. **«Factor de retención» es el nombre aprobado por la IUPAC.**",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2",
+      "etiquetas": ["calculo"],
+      "figura": { "tipo": "esquema", "valor": "cromatograma" },
+      "nucleo": true
+    },
+    {
+      "id": "t30-f08",
+      "anverso": "¿Qué es el **tiempo muerto** de una columna y por qué hace falta conocerlo?",
+      "reverso": "Es **tM**: el tiempo que tardan en salir los solutos que **no quedan retenidos**, y que por tanto viajan a la misma velocidad que la fase móvil. Es el **primer pico** del cromatograma.\nHace falta porque **sin él no se puede calcular ni el factor de retención ni la selectividad**: los dos se apoyan en el **tiempo de retención ajustado**, tR′ = tR − tM, que es lo que el soluto ha pasado *de más* por estar retenido.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f09",
+      "anverso": "¿Qué es el **factor de selectividad** y qué valores puede tomar?",
+      "reverso": "Es la medida **relativa** de la retención de dos solutos:\n**α = kB / kA = (tR,B − tM) / (tR,A − tM)**, con A el que eluye antes.\n- Si los dos salen **a la vez**, **α = 1,00**.\n- En **cualquier otro caso**, **α > 1,00**.\nNo confundirlo con la resolución: **α dice si los centros de los picos están separados; la resolución tiene en cuenta además su anchura**.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t30-f10",
+      "anverso": "¿Qué es el **tiempo de retención** según el CEM, y para qué sirve?",
+      "reverso": "Literal del CEM: *«**tiempo que transcurre después de la inyección de la muestra hasta que el pico de concentración del analito alcanza el detector**. **Sirve para diferenciar analitos**»*.\nEs decir: **el tiempo de retención IDENTIFICA** (análisis cualitativo) y **el área o la altura del pico CUANTIFICA**.",
+      "fuente": "CEM, QU-004, apartado 3 (Definiciones)",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f11",
+      "anverso": "¿Qué mide el número de **platos teóricos** y cómo se relaciona con la columna?",
+      "reverso": "Mide la **EFICIENCIA de la columna**, es decir, cuánto se ensancha una banda al recorrerla.\n**N = L / H**, con **L** la longitud de la columna y **H** la **altura de un plato teórico**.\n**Cuantos más platos teóricos, más estrechos son los picos y mejor separa la columna.** Y como los picos estrechos dan mejor resolución, mejorar N es una de las tres vías para resolver dos picos que se solapan.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3",
+      "etiquetas": ["calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f12",
+      "anverso": "Las **cuatro causas del ensanchamiento de banda**, y cómo depende cada una de la velocidad de la fase móvil.",
+      "reverso": "| Contribución | Qué la produce | Con la velocidad **u** |\n| --- | --- | --- |\n| **Caminos múltiples** | Trayectorias de **distinta longitud** entre las partículas del relleno | **No depende** |\n| **Difusión longitudinal** | El soluto difunde **a lo largo** de la columna | **Inversamente** proporcional |\n| **Transferencia de masa en la fase estacionaria** | Tarda en volver a la fase móvil | **Directamente** proporcional |\n| **Transferencia de masa en la fase móvil** | Tarda en pasar a la estacionaria | **Directamente** proporcional |",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3",
+      "etiquetas": ["fundamento"]
+    },
+    {
+      "id": "t30-f13",
+      "anverso": "Escribe la **ecuación de van Deemter** y di qué significa cada término y qué consecuencia práctica tiene.",
+      "reverso": "**H = A + B/u + C·u**\n- **A** → contribución de los **caminos múltiples**.\n- **B/u** → **difusión longitudinal**.\n- **C·u** → **transferencia de masa** (en las dos fases).\n**La consecuencia es que existe una VELOCIDAD ÓPTIMA de fase móvil: la del MÍNIMO de la curva de H frente a u.** Por debajo de ella manda la difusión longitudinal; por encima, la transferencia de masa.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3",
+      "etiquetas": ["calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f14",
+      "anverso": "¿En qué técnica es **más grave la difusión longitudinal**, y por qué?",
+      "reverso": "En la **cromatografía de GASES**, porque **el coeficiente de difusión de un soluto es mucho mayor en fase gaseosa que en fase líquida**: el soluto tiene más facilidad para dispersarse a lo largo de la columna.\nEs una de las razones por las que en gases se trabaja con caudales relativamente altos.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3",
+      "etiquetas": ["fundamento"]
+    },
+    {
+      "id": "t30-f15",
+      "anverso": "Tres formas de **bajar la altura de plato H** sin alargar la columna.",
+      "reverso": "1. **Ajustar la velocidad de la fase móvil** al mínimo de van Deemter. Es lo más fácil y lo primero que se toca.\n2. **Usar columnas capilares** (tubulares abiertas): al no llevar relleno, **el término A desaparece** y el de transferencia de masa en fase móvil se hace menor. El número de platos se multiplica por unas **100 veces**; a cambio admiten **mucha menos muestra**. *(El detalle, en el tema 31.)*\n3. **Usar películas finas** de fase estacionaria, que reducen el término de transferencia de masa en la fase estacionaria.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f16",
+      "anverso": "De qué **tres factores** depende la resolución, y qué cuesta mejorar cada uno.",
+      "reverso": "| Factor | Cómo se mejora | Qué cuesta |\n| --- | --- | --- |\n| **Eficiencia, N** | Columna más larga, relleno más fino, velocidad óptima | La resolución crece con **√N**: para doblarla hay que **cuadruplicar** los platos |\n| **Selectividad, α** | Cambiar la fase estacionaria o la composición de la fase móvil | Es **lo más eficaz** cuando α está cerca de 1 |\n| **Factor de retención, k** | Retener más el soluto | Mejora mucho si k era pequeño, pero **por encima de k ≈ 10 casi no compensa** y alarga el análisis |",
+      "fuente": "LibreTexts, Análisis Instrumental 26.4",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t30-f17",
+      "anverso": "¿Cómo se clasifican los métodos cromatográficos según **el estado de las fases**?",
+      "reverso": "Por la **fase móvil**, que es la que da nombre:\n| Fase móvil | Técnica |\n| --- | --- |\n| **Gas** | **Cromatografía de gases (CG)** — tema 31 |\n| **Líquido** | **Cromatografía de líquidos (CL, HPLC)** — tema 32; **la iónica es una de ellas** |\n| **Fluido supercrítico** | Cromatografía de fluidos supercríticos |\n**Regla:** cuando se nombran las dos fases se cita primero la móvil (*gas-líquido*), y **si el nombre solo cita una fase, esa es la MÓVIL**.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f18",
+      "anverso": "¿Cómo se clasifica la cromatografía según **cómo se ponen en contacto las dos fases**?",
+      "reverso": "- **Cromatografía en COLUMNA:** la fase estacionaria va empaquetada en una columna estrecha y la fase móvil se empuja **por gravedad o a presión**. Es la importante y la de todos los equipos de laboratorio.\n- **Cromatografía PLANA:** la fase estacionaria se extiende sobre una superficie —vidrio, metal o plástico— y la fase móvil asciende **POR CAPILARIDAD**. Son la **cromatografía en capa fina** y la **cromatografía en papel**, en la que **el papel ES la fase estacionaria**.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t30-f19",
+      "anverso": "Los **cinco mecanismos de separación** cromatográfica.",
+      "reverso": "| Mecanismo | En qué se basa |\n| --- | --- |\n| **Adsorción** (líquido-sólido) | La capacidad del soluto de **adsorberse** a una fase estacionaria sólida |\n| **Reparto** | El **reparto de equilibrio** entre la fase móvil y una película líquida |\n| **Intercambio iónico** | La **atracción electrostática** de los solutos iónicos hacia grupos funcionales fijos |\n| **Exclusión por tamaño** (molecular, en geles) | El **tamaño**: los solutos grandes no penetran en el poro y **salen antes** |\n| **Afinidad** | Una interacción biológica específica: antígeno-anticuerpo, enzima-sustrato, receptor-ligando |",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f20",
+      "anverso": "¿Qué **cuatro tipos** de cromatografía de líquidos enumera el CEM?",
+      "reverso": "En el procedimiento **QU-004**, apartado 4.2:\n1. **Cromatografía de reparto.**\n2. **Cromatografía de adsorción.**\n3. **Cromatografía IÓNICA.**\n4. **Cromatografía de exclusión por tamaños o en geles.**\nY añade que **se elige cada tipo en función de las características químicas del analito**.\nInterés práctico: es **un documento oficial español** el que sitúa la cromatografía iónica dentro de la cromatografía de líquidos.",
+      "fuente": "CEM, QU-004, apartado 4.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f21",
+      "anverso": "En **cromatografía de exclusión por tamaño**, ¿qué sale antes, lo grande o lo pequeño?",
+      "reverso": "**Sale antes lo GRANDE.** Es lo contrario de lo que sugiere la intuición.\nMotivo: la fase estacionaria es una **partícula porosa o un gel**, y **los solutos grandes no pueden penetrar tan profundamente en el poro**, así que recorren un camino más corto y **pasan más rápido** por la columna. Los pequeños se meten en los poros, se entretienen y salen después.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1",
+      "etiquetas": ["concepto", "trampa"]
+    },
+    {
+      "id": "t30-f22",
+      "anverso": "¿Qué es exactamente la **cromatografía iónica**?",
+      "reverso": "**Cromatografía de LÍQUIDOS con mecanismo de INTERCAMBIO IÓNICO**, aplicada a **iones inorgánicos** y detectada casi siempre **por conductividad**.\n**La fase estacionaria** es una **resina polimérica reticulada** —típicamente **poliestireno reticulado con divinilbenceno**— con **grupos funcionales iónicos unidos covalentemente**. Los **contraiones** de esas cargas fijas son móviles, y **los desplazan los iones que compiten mejor** por el sitio de intercambio.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6; CEM, QU-004, 4.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f23",
+      "anverso": "¿Qué resina hace falta para separar **cationes** y cuál para separar **aniones**?",
+      "reverso": "**Carga contraria a la del ion que se quiere separar:**\n- **Para CATIONES → resina con grupos aniónicos**: el **ácido sulfónico, −SO₃⁻** (intercambiador catiónico de ácido fuerte).\n- **Para ANIONES → resina con grupos catiónicos**: la **amina cuaternaria, −N(CH₃)₃⁺** (intercambiador aniónico de base fuerte).\n**Fuerte frente a débil:** el sulfónico **mantiene la carga incluso en medio muy ácido**; el carboxílico (ácido débil) **se protona por debajo de pH 4 y pierde capacidad**. La amina cuaternaria mantiene la carga **incluso en medio muy básico**; la amina de base débil, solo a pH moderadamente básico.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f24",
+      "anverso": "¿Qué ion se **retiene más** en una resina de intercambio, y qué consecuencia tiene en el cromatograma de un agua?",
+      "reverso": "**Se retiene más el ion de MAYOR CARGA y, a igualdad de carga, el de RADIO HIDRATADO MÁS PEQUEÑO** (o el más polarizable).\n**Serie de una resina catiónica fuerte:** Al³⁺ > Ba²⁺ > Pb²⁺ > Ca²⁺ > Ni²⁺ > Cd²⁺ > Cu²⁺ > Co²⁺ > Zn²⁺ > Mg²⁺ > Ag⁺ > K⁺ > NH₄⁺ > Na⁺ > H⁺ > Li⁺.\n**Serie de una resina aniónica fuerte:** SO₄²⁻ > I⁻ > HSO₄⁻ > NO₃⁻ > Br⁻ > NO₂⁻ > Cl⁻ > HCO₃⁻ > CH₃COO⁻ > OH⁻ > F⁻.\n**Consecuencia:** en un análisis de aniones de agua, **el fluoruro sale el primero y el sulfato el último**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f25",
+      "anverso": "¿Por qué el **pH del eluyente** cambia los tiempos de retención en cromatografía iónica?",
+      "reverso": "Porque la separación es un **equilibrio de intercambio**, y el H⁺ compite por los mismos sitios:\n**−SO₃⁻H⁺ (s) + M⁺ (ac) ⇌ −SO₃⁻M⁺ (s) + H⁺ (ac)**\nDe la constante de ese equilibrio —el **coeficiente de selectividad**— se deduce que **la relación de distribución del catión disminuye cuando aumenta la concentración de H⁺**. Es decir: **más ácido el eluyente, antes salen los cationes**.\nPor eso caben **elución isocrática** (composición constante) y **elución en gradiente**, variando la fuerza iónica o el pH con el tiempo.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["fundamento"]
+    },
+    {
+      "id": "t30-f26",
+      "anverso": "Enumera los **seis componentes** de un cromatógrafo de líquidos según el CEM.",
+      "reverso": "Lista literal del **QU-004, apartado 4.2**:\n1. **Líquidos portadores y sistemas para el tratamiento de los disolventes.**\n2. **Sistemas de bombeo.**\n3. **Sistema de inyección de la muestra.**\n4. **Columnas.**\n5. **Detectores.**\n6. **Sistema de procesamiento de señal y tratamiento de datos.**\nEn un cromatógrafo **iónico** hay que añadir la pieza que no tiene ningún otro HPLC: **el supresor**, entre la columna y el detector.",
+      "fuente": "CEM, QU-004, apartado 4.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f27",
+      "anverso": "Recorre este equipo de izquierda a derecha y di **qué hace la pieza que lo distingue de cualquier otro HPLC**.",
+      "reverso": "La pieza propia es **el supresor**, y lo que hace es **resolver una contradicción**: el detector mide conductividad, pero el eluyente **es un electrolito** y su fondo taparía la señal del analito.\nEl supresor **elimina selectivamente los iones del eluyente sin tocar los del soluto**:\n| Se separan… | Eluyente | El supresor lleva… | Y lo convierte en… |\n| --- | --- | --- | --- |\n| **Cationes** | Ácido diluido (HCl) | Resina **aniónica** en forma OH⁻ | **H₂O** |\n| **Aniones** | Carbonato (Na₂CO₃) | Resina **catiónica** en forma H⁺ | **H₂CO₃**, electrolito **débil** |\nEn los dos casos: **se cambia un electrolito fuerte por agua o por uno débil**, cae el fondo y el pico se ve.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["instrumentacion"],
+      "figura": { "tipo": "esquema", "valor": "cromatografo-ionico" },
+      "nucleo": true
+    },
+    {
+      "id": "t30-f28",
+      "anverso": "¿Se puede hacer cromatografía iónica **sin supresor**?",
+      "reverso": "Sí: es la **cromatografía iónica de COLUMNA ÚNICA**.\nCondiciones: una resina de **baja capacidad de intercambio** y un eluyente **muy diluido**, de modo que **la conductividad de fondo ya sea lo bastante pequeña** para ver el cambio al pasar el analito.\n**Eluyentes típicos:**\n- Analitos **catiónicos** → **ácido metanosulfónico** muy diluido.\n- Analitos **aniónicos** → **benzoato de potasio** o **hidrogenoftalato de potasio**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f29",
+      "anverso": "¿Por qué la muestra **no se inyecta con jeringa a través de un septo** en cromatografía de líquidos, y qué se usa en su lugar?",
+      "reverso": "Porque la presión de trabajo es **de varios cientos de atmósferas**: un septo no aguanta eso. *(En cromatografía de gases sí se pincha el septo, porque basta la presión de una botella.)*\nSe usa una **válvula de bucle**, con dos posiciones:\n- **Carga:** el bucle queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa y el exceso sale por el desagüe.\n- **Inyección:** la válvula gira y **la fase móvil atraviesa el bucle** y arrastra su contenido a la columna.\nBucles **de 0,5 µL a 5 mL**. La ventaja es la reproducibilidad: **el volumen lo fija el bucle**, no el pulso de la mano.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f30",
+      "anverso": "¿Por qué hay que **desgasificar y filtrar** el eluyente?",
+      "reverso": "**Desgasificar** —con bomba de vacío o burbujeando helio, que es poco soluble— porque a la salida de la columna **la presión cae de varios cientos de atmósferas a la atmosférica**, y los gases disueltos (N₂, O₂) **se liberan como burbujas que interfieren en la respuesta del detector**.\n**Filtrar** porque el material particulado **obstruye el tubo y la columna**.\nEs el primero de los seis bloques del CEM: «líquidos portadores y **sistemas para el tratamiento de los disolventes**».",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3; CEM, QU-004, 4.2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f31",
+      "anverso": "¿Por qué las bombas de HPLC llevan **dos pistones o un amortiguador**?",
+      "reverso": "Porque una bomba de vaivén de un solo pistón crea un **flujo pulsante**, y **ese pulso mete ruido en el cromatograma**.\nDos soluciones:\n- **Dos pistones desfasados** —bomba de trabajo y bomba equilibradora—, que además, enviando a una cámara de mezcla, permiten **preparar la fase móvil binaria** variando la velocidad relativa de las dos.\n- Un **amortiguador de pulsos**: una cámara con fluido compresible y diafragma que mantiene el caudal mientras el pistón se retira para rellenar.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f32",
+      "anverso": "Además del de conductividad, ¿qué **detectores** se usan en cromatografía iónica?",
+      "reverso": "- **UV/visible directo**, si el analito absorbe. **Bromato y nitrato** se ven bien en UV.\n- **UV indirecto**: cuando quien absorbe es **el eluyente**, el paso del analito produce una **DISMINUCIÓN** de absorbancia.\n- **Reacción post-columna (PCR) + espectrofotometría**: es lo que hace la **ISO 11206** para el **bromato**, y permite bajar el límite de detección.\nY en HPLC en general: **fluorescencia** (límites de 1-10 pg), **amperometría** y **índice de refracción**, que es casi universal pero poco sensible **y no sirve en elución en gradiente**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3 y 28.6; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f33",
+      "anverso": "Dimensiones típicas de la **columna y la resina** en cromatografía iónica.",
+      "reverso": "- **Resina:** perlas de polímero poroso de **5-11 µm**, o recubriendo partículas porosas de sílice.\n- **Columna:** unos **250 mm de longitud** y **2 a 5 mm de diámetro interior**.\n*(Para comparar: las perlas de una resina de intercambio de uso general miden 0,30-0,85 mm; las de cromatografía son casi cien veces más finas, que es lo que da la eficiencia.)*",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t30-f34",
+      "anverso": "¿Cuál es el gran argumento de la cromatografía iónica frente a los métodos clásicos en análisis de aguas?",
+      "reverso": "**Una inyección, siete parámetros.**\nEl dato que da LibreTexts: un análisis de **F⁻, Cl⁻, Br⁻, NO₂⁻, NO₃⁻, PO₄³⁻ y SO₄²⁻** por cromatografía iónica **tarda unos 15 minutos**; el mismo conjunto de aniones **por potenciometría y espectrofotometría exige de UNO A DOS DÍAS**.\nY el corolario práctico: **si solo hace falta UN parámetro, la cromatografía no compensa** frente a una volumetría o un electrodo selectivo.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "etiquetas": ["aplicacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f35",
+      "anverso": "¿Qué norma cubre los **aniones** por cromatografía iónica, qué determina y en qué aguas?",
+      "reverso": "**UNE-EN ISO 10304-1:2009** (adopta la ISO 10304-1:2007).\n**Determina siete aniones disueltos: BROMURO, CLORURO, FLUORURO, NITRATO, NITRITO, FOSFATO y SULFATO.**\n**Matrices:** agua **de consumo, subterránea, superficial, residual, lixiviados y agua de mar**.\n**Límite inferior de aplicación:** **≥ 0,05 mg/L** para bromuro y nitrito; **≥ 0,1 mg/L** para los otros cinco. Puede bajarse a **≥ 0,01 mg/L** con preconcentración o con **detector UV** (bromuro, nitrato y nitrito).\n**Dato de vigencia:** anuló a la de 1995 **y también a la UNE-EN ISO 10304-2:1997**, que era la de aguas residuales: sus analitos pasaron a esta parte 1.",
+      "fuente": "UNE-EN ISO 10304-1:2009; resumen público de alcance de la ISO 10304-1:2007",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f36",
+      "anverso": "¿Qué norma cubre los **cationes** por cromatografía iónica, y qué determina?",
+      "reverso": "**UNE-EN ISO 14911:2000.**\n**Determina nueve cationes disueltos: Li⁺, Na⁺, NH₄⁺, K⁺, Mn²⁺, Ca²⁺, Mg²⁺, Sr²⁺ y Ba²⁺.**\nY el detalle que importa en los supuestos: su título dice **«método aplicable al agua Y AGUA RESIDUAL»**.\nEs la norma detrás de la respuesta documentada de **1233 C2 #3 (sodio)**, **1246 C2 #3 (calcio)** y **1322 C2 #30 (sodio, potasio, calcio y magnesio)**.",
+      "fuente": "UNE-EN ISO 14911:2000; cuestionarios 1233 C2 #3, 1246 C2 #3 y 1322 C2 #30",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f37",
+      "anverso": "¿Qué normas hay para **clorato y clorito**, para **bromato** y para los aniones menos habituales?",
+      "reverso": "- **Clorato, cloruro y clorito** → **UNE-EN ISO 10304-4:2022**, en aguas **débilmente contaminadas** (consumo, bruta, de piscina). **Anuló a la de 1999.**\n- **Bromato** → **UNE-EN ISO 15061:2002** por cromatografía iónica, y **ISO 11206:2011** con **reacción post-columna (PCR)**, que baja el límite de detección.\n- **Cromato, ioduro, sulfito, tiocianato y tiosulfato** → **UNE-EN ISO 10304-3:1997**.",
+      "fuente": "UNE-EN ISO 10304-3, 10304-4 y 15061; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t30-f38",
+      "anverso": "Valores paramétricos del RD 3/2023 de los **aniones y cationes que se miden por cromatografía iónica**.",
+      "reverso": "**Anexo I, parte B (químicos):**\n- **Nitrato 50 mg/L** · **Nitritos 0,50 mg/L** · **Fluoruro 1,5 mg/L**\n- **Bromato 10 µg/L** · **Clorato 0,25 mg/L** · **Clorito 0,25 mg/L**\n**Anexo I, parte C (indicadores):**\n- **Cloruro 250 mg/L** · **Sulfato 250 mg/L** · **Sodio 200 mg/L** · **Amonio 0,50 mg/L**",
+      "fuente": "RD 3/2023, anexo I, partes B y C",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f39",
+      "anverso": "Los **tres matices del RD 3/2023** sobre clorato, clorito, nitrato y nitrito.",
+      "reverso": "1. **Clorato y clorito valen 0,25 mg/L**, pero se aplica **0,7 mg/L** *«cuando se empleen los métodos de desinfección que generen clorato o clorito, en particular, **dióxido de cloro e hipoclorito**»*. Si se pasa de 0,25 de media anual, hay que usar **las mejores técnicas disponibles** para bajarlo **sin comprometer la desinfección**.\n2. **Nitrato y nitrito van juntos:** tras la potabilización hay que cumplir **[nitrato]/50 + [nitrito]/3 ≤ 1**, en mg/L.\n3. **El nitrito tiene DOS valores:** **0,50 mg/L** en red y depósito de distribución, y **0,10 mg/L a la salida de ETAP o de depósito de cabecera**.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2, notas 3, 6 y 7",
+      "etiquetas": ["valores", "trampa"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f40",
+      "anverso": "¿Qué le exige el RD 3/2023 a un método de análisis de estos parámetros?",
+      "reverso": "**No le impone método.** Le impone **rendimiento**:\n- **Límite de cuantificación ≤ 30 %** del valor paramétrico.\n- **LC y LD siempre INFERIORES al valor paramétrico.**\n- **Incertidumbre** de la **tabla 15**: **15 %** para cloruro, sulfato, sodio y nitrato; **20 %** para fluoruro y nitrito; **40 %** para bromato, clorato, clorito y amonio.\nY una cláusula de cierre: *«en ausencia de un método analítico que cumpla con los criterios mínimos de rendimiento […] los laboratorios garantizarán que el análisis se lleve a cabo utilizando **las mejores técnicas disponibles que no conlleven costos excesivos**»*.",
+      "fuente": "RD 3/2023, anexo III, parte D y tabla 15",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f41",
+      "anverso": "Los **cuatro criterios** que obliga a comprobar el CEM en el cromatograma de una calibración.",
+      "reverso": "**QU-004, apartado 5.3.6:**\n1. **Los picos aparecen en los tiempos de retención esperados.**\n2. **La resolución de la columna entre picos es siempre superior a 1,5.**\n3. **La forma de los picos es adecuada, «no presentando colas o artefactos»** (desviaciones de la forma gaussiana).\n4. **La ventana de integración seleccionada ha sido la adecuada** y se han respetado los criterios establecidos.\nY antes de eso: **analizar un blanco del disolvente y comprobar que no da señal**.",
+      "fuente": "CEM, QU-004, apartado 5.3",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t30-f42",
+      "anverso": "Material y condiciones que exige el CEM para calibrar un cromatógrafo de líquidos.",
+      "reverso": "- **Se calibra siempre en el laboratorio**, entre **18 °C y 28 °C**, sin condiciones ambientales especiales, salvo lo que diga el manual. *«Determinados detectores pueden requerir un control de las variaciones de temperatura más severas.»*\n- **Pipetas y matraces aforados clase A**; **micropipetas** con repetibilidad y exactitud **de al menos el 2 %**; **balanza analítica con resolución de 0,1 mg**.\n- **Disolventes de calidad cromatográfica**; si hace falta agua, **ultrapura o químicamente pura**.\n- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**.",
+      "fuente": "CEM, QU-004, apartados 5.1 y 5.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t30-f43",
+      "anverso": "¿Cómo se mide la **asimetría** de un pico y qué dice el CEM sobre ella?",
+      "reverso": "Se traza una **horizontal al 10 % de la altura máxima** del pico y se compara la distancia desde cada lado hasta una vertical trazada por el máximo: es el **factor de asimetría, T**.\nEl CEM lo convierte en criterio de aceptación: *«la forma de los picos es adecuada, **no presentando colas o artefactos** (desviaciones de la forma gaussiana del pico)»*.\nUn pico con cola suele delatar **sobrecarga de la columna, un volumen muerto excesivo o sitios activos** en la fase estacionaria.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3; CEM, QU-004, 5.3.6",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t30-f44",
+      "anverso": "¿Quién bautizó la cromatografía y quién recibió el Nobel por su teoría?",
+      "reverso": "- La bautizó el botánico ruso **Mijaíl Tswett**, que separó los pigmentos de extractos vegetales en una **columna de carbonato de calcio** con **éter de petróleo** como fase móvil. El nombre combina las palabras griegas de **«color» y «escribir»**.\n- La teoría la desarrollaron **Martin y Synge**, que recibieron el **Premio Nobel de Química de 1952** por ese trabajo.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1",
+      "etiquetas": ["contexto"]
+    },
+    {
+      "id": "t30-f45",
+      "anverso": "El reflejo de los supuestos: ¿qué técnica se responde para los **aniones y cationes mayoritarios** de un agua?",
+      "reverso": "**CROMATOGRAFÍA IÓNICA**, y desde 2024 hay que **precisar aniones o cationes**:\n- **Cloruros y sulfatos → cromatografía iónica DE ANIONES** (1322 C2 #27, #38 y #39).\n- **Sodio, potasio, calcio y magnesio → cromatografía iónica DE CATIONES** (1233 C2 #3, 1246 C2 #3 y 1322 C2 #30).\n**Seis apariciones documentadas** en los tres cuestionarios del segundo ejercicio.\nY la frontera: **los metales (Cd, Pb, Hg, As, Cr, Ni…) NO son cromatografía iónica**, son **ICP-MS** o absorción atómica (temas 27 y 26). Es la confusión que buscan los distractores.",
+      "fuente": "Cuestionarios 1233 C2, 1246 C2 y 1322 C2",
+      "etiquetas": ["aplicacion", "examen"],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t30-q01",
+      "pregunta": "La cromatografía es:",
+      "opciones": [
+        "Una técnica de separación de los componentes de una muestra, que se distribuyen entre una fase móvil y una fase estacionaria.",
+        "Una técnica de análisis que se fundamenta en la intensidad de radiación emitida por átomos excitados.",
+        "Una técnica de análisis basada en la absorción de radiación electromagnética por partículas atómicas."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la pregunta literal de 1246 #14 y 1322 #31, con los mismos distractores: la segunda opción describe la emisión atómica y la tercera la absorción, las dos del bloque de espectroscopía (temas 25 y 26). Lo que define la cromatografía es que SEPARA, repartiendo los componentes entre dos fases.",
+      "fuente": "Cuestionarios 1246 #14 y 1322 #31",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q02",
+      "pregunta": "La columna cromatográfica, tanto en cromatografía de gases como en cromatografía de líquidos:",
+      "opciones": ["Cuantifica.", "Detecta.", "Separa."],
+      "correcta": 2,
+      "explicacion": "Literal en 1246 #15 y 1322 #32. El reparto del trabajo es: la columna SEPARA, el detector detecta y el integrador o software cuantifica, por área o por altura del pico.",
+      "fuente": "Cuestionarios 1246 #15 y 1322 #32",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q03",
+      "pregunta": "En una separación cromatográfica de dos compuestos:",
+      "opciones": [
+        "A mayor anchura de picos, mejor resolución.",
+        "A menor anchura de picos, mejor resolución.",
+        "La anchura de picos no tiene influencia en la resolución."
+      ],
+      "correcta": 1,
+      "explicacion": "Literal en 1246 #16 y 1322 #33. La fórmula lo decide: Rs = 2·[tR(B) − tR(A)]/(wA + wB). Las anchuras están en el denominador, así que cuanto más estrechos son los picos, mayor es la resolución.",
+      "fuente": "Cuestionarios 1246 #16 y 1322 #33; CEM, QU-004",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q04",
+      "pregunta": "En cromatografía líquida, antes de la columna analítica y para aumentar su vida útil, conviene usar:",
+      "opciones": ["Una microcolumna.", "Una precolumna.", "Un termostato."],
+      "correcta": 1,
+      "explicacion": "Literal en 1246 #17 y 1322 #34. La precolumna o columna de guarda lleva el mismo relleno que la analítica pero es mucho más corta y barata, y retiene lo que arruinaría la columna: los solutos que se unen irreversiblemente y el material particulado. Es sacrificial y se reemplaza con regularidad.",
+      "fuente": "Cuestionarios 1246 #17 y 1322 #34; LibreTexts 28.3",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q05",
+      "pregunta": "El detector de conductividad es el más utilizado en cromatografía líquida cuando los componentes de la muestra que se desea analizar son:",
+      "opciones": ["Compuestos iónicos.", "Compuestos con capacidad de oxidarse o reducirse.", "Compuestos fluorescentes."],
+      "correcta": 0,
+      "explicacion": "Literal en 1246 #18 y 1322 #35. Un ion en disolución conduce, así que medir conductividad es medir iones: es el detector universal de la cromatografía iónica. Los compuestos que se oxidan o reducen piden un detector amperométrico, y los fluorescentes, uno de fluorescencia.",
+      "fuente": "Cuestionarios 1246 #18 y 1322 #35",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q06",
+      "pregunta": "Según el procedimiento QU-004 del Centro Español de Metrología, se considera que dos componentes están completamente separados cuando la resolución de la columna es:",
+      "opciones": ["Superior a 0,5.", "Superior a 1,0.", "Superior a 1,5."],
+      "correcta": 2,
+      "explicacion": "El CEM lo dice literalmente: «con un valor Rs > 1,5, se permite la separación completa de dos componentes». Y lo convierte en criterio de aceptación del cromatograma durante la calibración.",
+      "fuente": "CEM, QU-004, apartados 3 y 5.3.6",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q07",
+      "pregunta": "El tiempo muerto de una columna cromatográfica (tM) es:",
+      "opciones": [
+        "El tiempo que transcurre entre dos inyecciones consecutivas.",
+        "El tiempo que tardan en eluir los solutos no retenidos, que viajan a la misma velocidad que la fase móvil.",
+        "El tiempo que el analito permanece adsorbido en la fase estacionaria."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el primer pico del cromatograma, el de los solutos que no interaccionan con la fase estacionaria. Sin él no se puede calcular el tiempo de retención ajustado (tR′ = tR − tM) ni, por tanto, el factor de retención ni la selectividad.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2"
+    },
+    {
+      "id": "t30-q08",
+      "pregunta": "El factor de retención de un soluto se calcula como:",
+      "opciones": ["k = (tR − tM) / tM", "k = tR / (tR − tM)", "k = (tR + tM) / tM"],
+      "correcta": 0,
+      "explicacion": "El factor de retención, nombre aprobado por la IUPAC para lo que antes se llamaba factor de capacidad (k′), es el tiempo de retención ajustado dividido por el tiempo muerto. Cuanto mayor es k, más retenido está el soluto.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2"
+    },
+    {
+      "id": "t30-q09",
+      "pregunta": "Respecto del factor de selectividad α entre dos solutos, señale la afirmación correcta:",
+      "opciones": [
+        "Vale cero cuando los dos solutos eluyen con el mismo tiempo de retención.",
+        "Puede tomar valores menores que la unidad si el segundo soluto se retiene menos.",
+        "Vale 1,00 cuando los dos eluyen con idéntico tiempo de retención, y es mayor que 1,00 en cualquier otro caso."
+      ],
+      "correcta": 2,
+      "explicacion": "α = kB/kA, y se define tomando como A el soluto que eluye antes; por eso el cociente nunca es menor que la unidad. Si los dos coeluyen, α = 1,00.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.2"
+    },
+    {
+      "id": "t30-q10",
+      "pregunta": "El número de platos teóricos de una columna se relaciona con su longitud y con la altura de plato mediante:",
+      "opciones": ["N = L / H", "N = L · H", "N = H / L"],
+      "correcta": 0,
+      "explicacion": "A igualdad de longitud, cuanto menor es la altura de plato H más platos teóricos hay, más estrechos salen los picos y mejor separa la columna. La eficiencia es una de las tres vías para mejorar la resolución.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3"
+    },
+    {
+      "id": "t30-q11",
+      "pregunta": "En la ecuación de van Deemter, H = A + B/u + C·u, el término B/u corresponde a:",
+      "opciones": [
+        "La contribución de los caminos múltiples a través del relleno.",
+        "La contribución de la difusión longitudinal del soluto.",
+        "La contribución de la transferencia de masa entre las dos fases."
+      ],
+      "correcta": 1,
+      "explicacion": "A recoge los caminos múltiples, B/u la difusión longitudinal y C·u la transferencia de masa. Como B/u baja y C·u sube con la velocidad, existe una velocidad óptima de fase móvil: la del mínimo de la curva.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3"
+    },
+    {
+      "id": "t30-q12",
+      "pregunta": "La difusión longitudinal como causa de ensanchamiento de banda es un problema más grave en:",
+      "opciones": [
+        "La cromatografía de líquidos, por la mayor viscosidad de la fase móvil.",
+        "La cromatografía en capa fina, por el ascenso capilar.",
+        "La cromatografía de gases, porque el coeficiente de difusión del soluto es mayor en fase gaseosa."
+      ],
+      "correcta": 2,
+      "explicacion": "El soluto difunde mucho más deprisa en un gas que en un líquido, así que se dispersa más a lo largo de la columna. Por eso el término B/u pesa más en cromatografía de gases.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.3"
+    },
+    {
+      "id": "t30-q13",
+      "pregunta": "¿Cuál de los siguientes NO es un mecanismo de separación cromatográfica?",
+      "opciones": ["Exclusión por tamaño.", "Nefelometría.", "Intercambio iónico."],
+      "correcta": 1,
+      "explicacion": "La nefelometría es una medida de la luz dispersada por una suspensión, propia de la turbidez (tema 28), no un mecanismo de separación. Los mecanismos cromatográficos son adsorción, reparto, intercambio iónico, exclusión por tamaño y afinidad.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1"
+    },
+    {
+      "id": "t30-q14",
+      "pregunta": "En cromatografía de exclusión por tamaño:",
+      "opciones": [
+        "Los solutos más pequeños eluyen antes, porque se mueven más deprisa.",
+        "Todos los solutos eluyen a la vez, porque no hay interacción química.",
+        "Los solutos más grandes eluyen antes, porque no penetran tan profundamente en la fase estacionaria porosa."
+      ],
+      "correcta": 2,
+      "explicacion": "Es lo contrario de lo que sugiere la intuición: las moléculas grandes no caben en los poros del gel, recorren un camino más corto y salen primero. Las pequeñas se meten en los poros y se retrasan.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1"
+    },
+    {
+      "id": "t30-q15",
+      "pregunta": "En la cromatografía plana, la fase móvil se desplaza sobre la fase estacionaria:",
+      "opciones": [
+        "Por acción capilar.",
+        "Impulsada por una bomba de pistón a varios cientos de atmósferas.",
+        "Por la presión de un gas portador procedente de un cilindro."
+      ],
+      "correcta": 0,
+      "explicacion": "En cromatografía plana —capa fina y papel— un extremo de la placa se sumerge en el depósito de fase móvil, que asciende por capilaridad. En cromatografía en papel, el papel es la fase estacionaria. La bomba es de la cromatografía líquida en columna y el gas portador, de la de gases.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1"
+    },
+    {
+      "id": "t30-q16",
+      "pregunta": "Cuando el nombre de una técnica cromatográfica menciona una sola fase, como en «cromatografía de gases», esa fase es:",
+      "opciones": ["La estacionaria.", "La móvil.", "Indistintamente una u otra, según el fabricante del equipo."],
+      "correcta": 1,
+      "explicacion": "Las técnicas se nombran citando primero la fase móvil y después la estacionaria: en cromatografía gas-líquido la fase móvil es un gas y la estacionaria una película líquida. Si solo aparece una, es la móvil.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1"
+    },
+    {
+      "id": "t30-q17",
+      "pregunta": "Para separar ANIONES por cromatografía iónica, la fase estacionaria debe llevar grupos funcionales de tipo:",
+      "opciones": [
+        "Ácido sulfónico, −SO₃⁻.",
+        "Ácido carboxílico, −COO⁻.",
+        "Amina cuaternaria, −N(CH₃)₃⁺."
+      ],
+      "correcta": 2,
+      "explicacion": "La resina debe tener la carga CONTRARIA a la del ion que se quiere separar: para aniones, un intercambiador aniónico de base fuerte con amina cuaternaria, que mantiene la carga positiva incluso en medio muy básico. El sulfónico y el carboxílico son intercambiadores de CATIONES.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q18",
+      "pregunta": "En una resina de intercambio iónico, se retienen con más fuerza:",
+      "opciones": [
+        "Los iones de mayor carga y, a igualdad de carga, los de radio hidratado más pequeño.",
+        "Los iones de menor carga, porque se acercan más a la superficie.",
+        "Los iones de mayor masa atómica, con independencia de su carga."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la regla que explica las dos series de selectividad. En aniones da SO₄²⁻ > NO₃⁻ > Cl⁻ > F⁻, de modo que en un análisis de aguas el fluoruro sale el primero y el sulfato el último.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6"
+    },
+    {
+      "id": "t30-q19",
+      "pregunta": "En un cromatógrafo iónico, el supresor se sitúa:",
+      "opciones": [
+        "Entre el inyector y la columna separadora, para acondicionar la muestra.",
+        "Entre la columna separadora y el detector, para rebajar la conductividad de fondo del eluyente.",
+        "Después del detector, para neutralizar el residuo antes de desecharlo."
+      ],
+      "correcta": 1,
+      "explicacion": "El detector mide conductividad y el eluyente es un electrolito: sin supresor, el fondo taparía la señal. El supresor elimina selectivamente los iones del eluyente sin tocar los del soluto, y por eso tiene que actuar después de separar y antes de medir.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q20",
+      "pregunta": "En la separación de aniones con Na₂CO₃ como eluyente, la columna supresora contiene una resina de intercambio catiónico en forma H⁺. El efecto es:",
+      "opciones": [
+        "Precipitar los aniones del analito antes de llegar al detector.",
+        "Aumentar la conductividad del eluyente para amplificar la señal.",
+        "Sustituir el Na₂CO₃, electrolito fuerte, por H₂CO₃, que es un electrolito débil."
+      ],
+      "correcta": 2,
+      "explicacion": "El sodio queda retenido en la resina y el carbonato se protona: el eluyente pasa de electrolito fuerte a ácido carbónico, muy poco disociado. La conductividad de fondo cae y el pico del analito se ve. En la separación de cationes con HCl, el supresor aniónico convierte el eluyente en agua.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6"
+    },
+    {
+      "id": "t30-q21",
+      "pregunta": "La cromatografía iónica de columna única, sin supresor, es posible cuando:",
+      "opciones": [
+        "Se usa una resina de baja capacidad de intercambio y un eluyente muy diluido, de modo que la conductividad de fondo ya es pequeña.",
+        "Se sustituye el detector de conductividad por un detector de índice de refracción.",
+        "Se trabaja a una presión inferior a la atmosférica."
+      ],
+      "correcta": 0,
+      "explicacion": "Con poca capacidad de intercambio basta un eluyente muy diluido —ácido metanosulfónico para cationes; benzoato o hidrogenoftalato de potasio para aniones— y el fondo es lo bastante bajo para seguir midiendo conductividad.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.6"
+    },
+    {
+      "id": "t30-q22",
+      "pregunta": "En cromatografía de líquidos la muestra se introduce con un inyector de bucle y no con una jeringa a través de un septo porque:",
+      "opciones": [
+        "El bucle permite calentar la muestra antes de inyectarla.",
+        "La presión de trabajo, de varios cientos de atmósferas, no permite pinchar un septo.",
+        "La jeringa contaminaría la fase móvil con gases disueltos."
+      ],
+      "correcta": 1,
+      "explicacion": "En cromatografía de gases basta la presión de un cilindro y sí se pincha el septo. En líquidos hace falta mucha más presión, y además el bucle aporta reproducibilidad: el volumen inyectado lo fija el propio bucle, disponible de 0,5 µL a 5 mL.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t30-q23",
+      "pregunta": "¿Por qué se desgasifica la fase móvil antes de usarla en cromatografía de líquidos?",
+      "opciones": [
+        "Para evitar que el oxígeno oxide la fase estacionaria de la columna.",
+        "Para reducir la viscosidad y poder trabajar a menor presión.",
+        "Porque a la salida de la columna la presión cae y los gases disueltos se liberan como burbujas que interfieren en la respuesta del detector."
+      ],
+      "correcta": 2,
+      "explicacion": "La presión pasa de varios cientos de atmósferas a la entrada a la atmosférica a la salida. Se desgasifica con bomba de vacío o burbujeando helio, y además se filtra el disolvente para que las partículas no obstruyan tubo y columna.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t30-q24",
+      "pregunta": "La norma UNE-EN ISO 10304-1 determina por cromatografía iónica:",
+      "opciones": [
+        "Bromuro, cloruro, fluoruro, nitrato, nitrito, fosfato y sulfato disueltos.",
+        "Los cationes litio, sodio, amonio, potasio, manganeso, calcio, magnesio, estroncio y bario.",
+        "Los metales cadmio, plomo, mercurio, arsénico, cromo y níquel."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la norma de los siete aniones, aplicable a agua de consumo, subterránea, superficial, residual, lixiviados y agua de mar. Los cationes son la UNE-EN ISO 14911; los metales no son cromatografía iónica, sino ICP-MS o absorción atómica (temas 27 y 26).",
+      "fuente": "UNE-EN ISO 10304-1:2009",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q25",
+      "pregunta": "Para determinar sodio, potasio, calcio y magnesio en un agua por cromatografía iónica, la norma aplicable es:",
+      "opciones": ["UNE-EN ISO 10304-1.", "UNE-EN ISO 14911.", "UNE-EN ISO 15061."],
+      "correcta": 1,
+      "explicacion": "La UNE-EN ISO 14911 determina Li⁺, Na⁺, NH₄⁺, K⁺, Mn²⁺, Ca²⁺, Mg²⁺, Sr²⁺ y Ba²⁺, y su título precisa que es «método aplicable al agua y agua residual». La 10304-1 es la de aniones y la 15061, la del bromato.",
+      "fuente": "UNE-EN ISO 14911:2000",
+      "nucleo": true
+    },
+    {
+      "id": "t30-q26",
+      "pregunta": "Según el RD 3/2023, los valores paramétricos del nitrato y de los nitritos en agua de consumo son, respectivamente:",
+      "opciones": ["10 mg/L y 0,10 mg/L.", "250 mg/L y 50 mg/L.", "50 mg/L y 0,50 mg/L."],
+      "correcta": 2,
+      "explicacion": "Anexo I, parte B. Además hay que cumplir [nitrato]/50 + [nitrito]/3 ≤ 1 tras la potabilización, y el nitrito baja a 0,10 mg/L a la salida de ETAP o de depósito de cabecera. Los 250 mg/L son de cloruro y sulfato, que están en la parte C.",
+      "fuente": "RD 3/2023, anexo I, partes B y C",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t30-s01",
+      "titulo": "Supuesto 1. Aniones en un agua de consumo",
+      "enunciado": "En el laboratorio municipal se recibe una muestra de **agua de consumo** procedente de la red de distribución. Hay que determinar **cloruros, sulfatos, nitratos, fluoruros y bromato**. El agua se desinfecta con **ozono** en la ETAP.\n\nEl equipo disponible es un **cromatógrafo iónico** con bomba, inyector de bucle, precolumna, columna separadora, supresor y **detector de conductividad**.",
+      "preguntas": [
+        {
+          "id": "t30-s01-q1",
+          "pregunta": "¿Qué técnica utilizaría para los cloruros y los sulfatos?",
+          "opciones": [
+            "Cromatografía de gases con detector de captura electrónica.",
+            "Cromatografía iónica para aniones.",
+            "Cromatografía iónica para cationes.",
+            "Espectrometría de masas con plasma acoplado inductivamente."
+          ],
+          "correcta": 1,
+          "explicacion": "Cloruro y sulfato son aniones: hace falta una columna de intercambio ANIÓNICO, con grupos de amina cuaternaria. Es la respuesta documentada en 1322 C2 #27, #38 y #39. La cromatografía de gases es para compuestos volátiles y el ICP-MS, para metales.",
+          "fuente": "Cuestionario 1322 C2 #27, #38 y #39; UNE-EN ISO 10304-1:2009"
+        },
+        {
+          "id": "t30-s01-q2",
+          "pregunta": "¿Qué norma cubre la determinación de esos aniones, y qué aguas admite?",
+          "opciones": [
+            "UNE-EN ISO 14911, solo para agua de consumo.",
+            "UNE-EN ISO 10304-4, solo para aguas residuales.",
+            "UNE-EN ISO 10304-1, aplicable a agua de consumo, subterránea, superficial, residual, lixiviados y agua de mar.",
+            "UNE-EN ISO 15061, aplicable únicamente a aguas de piscina."
+          ],
+          "correcta": 2,
+          "explicacion": "La UNE-EN ISO 10304-1:2009 determina bromuro, cloruro, fluoruro, nitrato, nitrito, fosfato y sulfato, y cubre esa lista amplia de matrices. Anuló además a la UNE-EN ISO 10304-2, que era la específica de aguas residuales: sus analitos pasaron a la parte 1.",
+          "fuente": "UNE-EN ISO 10304-1:2009; catálogo ISO/TC 147/SC 2"
+        },
+        {
+          "id": "t30-s01-q3",
+          "pregunta": "La columna separadora que debe montar lleva una resina con grupos funcionales de tipo:",
+          "opciones": [
+            "Amina cuaternaria, −N(CH₃)₃⁺, que es un intercambiador aniónico de base fuerte.",
+            "Ácido sulfónico, −SO₃⁻, que es un intercambiador catiónico de ácido fuerte.",
+            "Ácido carboxílico, −COO⁻, que es un intercambiador catiónico de ácido débil.",
+            "Ninguno: en cromatografía iónica la fase estacionaria es una película líquida sin grupos funcionales."
+          ],
+          "correcta": 0,
+          "explicacion": "Para retener aniones hace falta una fase estacionaria con carga positiva fija. La amina cuaternaria la mantiene incluso en medio muy básico, que es lo que interesa con eluyentes de carbonato. Las otras dos resinas son intercambiadores de cationes.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.6"
+        },
+        {
+          "id": "t30-s01-q4",
+          "pregunta": "El eluyente es una disolución de Na₂CO₃. ¿Qué papel juega el supresor situado entre la columna y el detector?",
+          "opciones": [
+            "Retiene los aniones del analito para concentrarlos antes de la medida.",
+            "Eleva el pH del eluyente para mejorar la separación en la columna.",
+            "Genera una reacción post-columna coloreada que permite la detección espectrofotométrica.",
+            "Cambia el Na₂CO₃, electrolito fuerte, por H₂CO₃, electrolito débil, de modo que baja la conductividad de fondo y se ve la del analito."
+          ],
+          "correcta": 3,
+          "explicacion": "El supresor lleva una resina de intercambio CATIÓNICO en forma H⁺: retiene el sodio y protona el carbonato. Sin él, la conductividad del propio eluyente taparía la de los picos. La alternativa es trabajar sin supresor, con resina de baja capacidad y eluyente muy diluido (columna única).",
+          "fuente": "LibreTexts, Análisis Instrumental 28.6"
+        },
+        {
+          "id": "t30-s01-q5",
+          "pregunta": "El bromato tiene un valor paramétrico de 10 µg/L y aparece por la ozonización. ¿Qué plantea su determinación?",
+          "opciones": [
+            "Ninguna dificultad: el límite inferior de aplicación de la ISO 10304-1 ya es de 0,01 µg/L.",
+            "Que no puede determinarse por cromatografía iónica y hay que recurrir a la absorción atómica.",
+            "Que hace falta preconcentrar la muestra o usar una reacción post-columna, como hace la ISO 11206, porque 10 µg/L queda por debajo del rango habitual de la cromatografía iónica de aniones.",
+            "Que debe medirse necesariamente con un detector de índice de refracción."
+          ],
+          "correcta": 2,
+          "explicacion": "El límite inferior de aplicación de la ISO 10304-1 está en 0,05-0,1 mg/L, tres órdenes de magnitud por encima del valor paramétrico del bromato. Por eso hay norma propia, la UNE-EN ISO 15061, y la ISO 11206 con reacción post-columna, que baja el límite de detección. También ayuda retirar el exceso de cloruro de la matriz.",
+          "fuente": "UNE-EN ISO 15061:2002; ISO 11206:2011; RD 3/2023, anexo I, parte B"
+        }
+      ]
+    },
+    {
+      "id": "t30-s02",
+      "titulo": "Supuesto 2. Cationes, dureza y control del cromatógrafo",
+      "enunciado": "Se reciben dos muestras: un **agua de consumo** en la que hay que determinar **sodio, potasio, calcio y magnesio**, y un **agua residual** en la que hay que determinar **sulfatos y cloruros**.\n\nAl calibrar el cromatógrafo con dos patrones, el cromatograma muestra los picos esperados, pero **la resolución entre dos de ellos es de 1,2** y uno presenta **cola**.",
+      "preguntas": [
+        {
+          "id": "t30-s02-q1",
+          "pregunta": "Para el sodio, el potasio, el calcio y el magnesio del agua de consumo, ¿qué técnica indicaría?",
+          "opciones": [
+            "Cromatografía de gases con detector de fluorescencia.",
+            "Cromatografía iónica para aniones.",
+            "Absorción atómica con generación de hidruros.",
+            "Cromatografía iónica para cationes."
+          ],
+          "correcta": 3,
+          "explicacion": "Es la respuesta documentada de 1322 C2 #30, y coincide con «cromatografía iónica» de 1233 C2 #3 (sodio) y 1246 C2 #3 (calcio). La generación de hidruros no sirve para esos elementos —es de arsénico, selenio, antimonio y mercurio— y la cromatografía de gases con fluorescencia no existe como tal.",
+          "fuente": "Cuestionarios 1233 C2 #3, 1246 C2 #3 y 1322 C2 #30"
+        },
+        {
+          "id": "t30-s02-q2",
+          "pregunta": "¿Qué norma aplicaría, y sirve también para la muestra de agua residual?",
+          "opciones": [
+            "La UNE-EN ISO 14911, cuyo título precisa que es un método aplicable al agua y al agua residual.",
+            "La UNE-EN ISO 14911, pero solo para agua de consumo: para la residual no hay norma de cromatografía iónica.",
+            "La UNE-EN ISO 10304-3, que cubre los cationes mayoritarios.",
+            "La UNE-EN ISO 10304-2, que sigue vigente para aguas residuales."
+          ],
+          "correcta": 0,
+          "explicacion": "El título de la UNE-EN ISO 14911 dice literalmente «método aplicable al agua y agua residual». Para los aniones de la residual vale la 10304-1, que también cubre aguas residuales; la 10304-2, que era la específica, está ANULADA. La 10304-3 es de cromato, ioduro, sulfito, tiocianato y tiosulfato.",
+          "fuente": "UNE-EN ISO 14911:2000; UNE-EN ISO 10304-1:2009; catálogo ISO/TC 147/SC 2"
+        },
+        {
+          "id": "t30-s02-q3",
+          "pregunta": "En la columna de cationes, ¿cuál de estos iones espera que se retenga MÁS?",
+          "opciones": [
+            "El sodio, por ser el más abundante en el agua.",
+            "El calcio, porque a igualdad de condiciones se retiene más el ion de mayor carga.",
+            "El potasio, por tener mayor masa atómica que el sodio.",
+            "Todos por igual: en intercambio iónico la retención no depende del ion."
+          ],
+          "correcta": 1,
+          "explicacion": "La regla es: más carga, más retención; y a igualdad de carga, menor radio hidratado. La serie de una resina catiónica fuerte da Ca²⁺ > Mg²⁺ > K⁺ > Na⁺, así que el calcio, divalente, se retiene más que los alcalinos. La abundancia en la muestra no influye en la retención.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.6"
+        },
+        {
+          "id": "t30-s02-q4",
+          "pregunta": "El agua residual lleva sólidos en suspensión. Antes de inyectarla conviene filtrarla, y el equipo monta además una precolumna. ¿Para qué sirve ésta?",
+          "opciones": [
+            "Para retener el material particulado y los solutos que se unirían irreversiblemente a la fase estacionaria, alargando la vida de la columna analítica.",
+            "Para termostatar la muestra antes de la separación.",
+            "Para suprimir la conductividad del eluyente antes de la columna analítica.",
+            "Para aumentar el número de platos teóricos del sistema."
+          ],
+          "correcta": 0,
+          "explicacion": "Son los dos problemas que acortan la vida de una columna. La precolumna lleva el mismo relleno que la analítica pero es mucho más corta y barata, y es sacrificial. Suprimir la conductividad es cosa del supresor, y va DESPUÉS de la columna.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.3; cuestionarios 1246 #17 y 1322 #34"
+        },
+        {
+          "id": "t30-s02-q5",
+          "pregunta": "Con una resolución de 1,2 entre dos picos y uno de ellos con cola, ¿qué procede según el procedimiento QU-004 del CEM?",
+          "opciones": [
+            "Dar la calibración por válida: cualquier resolución superior a la unidad es aceptable.",
+            "Dar la calibración por válida si el coeficiente de correlación de la recta es aceptable.",
+            "Integrar manualmente los dos picos y continuar, porque la resolución no es criterio de aceptación.",
+            "No dar por buena la comprobación del cromatograma: el CEM exige resolución superior a 1,5 y picos sin colas ni artefactos."
+          ],
+          "correcta": 3,
+          "explicacion": "El apartado 5.3.6 del QU-004 obliga a confirmar cuatro cosas: picos en los tiempos de retención esperados, resolución de la columna siempre superior a 1,5, forma de pico adecuada sin colas ni artefactos, y ventana de integración correcta. Con Rs = 1,2 y un pico con cola hay que actuar sobre las condiciones cromatográficas antes de calibrar.",
+          "fuente": "CEM, QU-004, apartado 5.3.6"
+        }
+      ]
+    }
+  ]
+}
