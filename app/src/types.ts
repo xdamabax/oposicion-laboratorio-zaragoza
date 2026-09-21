@@ -61,6 +61,8 @@ export type TipoEsquema =
   | 'purga-y-trampa'
   | 'fase-normal-vs-inversa'
   | 'gradiente-elucion'
+  | 'cloracion-punto-ruptura'
+  | 'alcalinidad-valoracion'
 
 export type TipoMaterial =
   | 'matraz-aforado'

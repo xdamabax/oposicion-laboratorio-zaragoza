@@ -401,6 +401,46 @@ function medir(sabotaje, ROJO) {
     c.setAttribute('d', pts.map(([x, y], i) => `${i ? 'L' : 'M'}${(cx + (x - cx) * 3.6).toFixed(1)} ${y}`).join(' '))
   }
 
+  if (sabotaje === 36) {
+    const svg = porClave('cloracion-punto-ruptura')
+    // la curva ya no vuelve a subir: se queda plana desde el punto de ruptura
+    const c = pieza(svg, 'curva-cloro')
+    const pts = puntos(c)
+    let iPico = 0
+    while (iPico + 1 < pts.length && pts[iPico + 1][1] <= pts[iPico][1]) iPico++
+    let iValle = iPico
+    while (iValle + 1 < pts.length && pts[iValle + 1][1] >= pts[iValle][1]) iValle++
+    const yValle = pts[iValle][1]
+    c.setAttribute(
+      'd',
+      pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${i > iValle ? yValle : y}`).join(' '),
+    )
+  }
+  if (sabotaje === 37) {
+    const svg = porClave('cloracion-punto-ruptura')
+    // el cloro libre, rotulado ANTES del punto de ruptura
+    const t = [...svg.querySelectorAll('text')].find((e) => e.textContent.trim() === 'cloro libre')
+    if (t) t.setAttribute('x', 120)
+  }
+  if (sabotaje === 38) {
+    const svg = porClave('alcalinidad-valoracion')
+    // el punto final de la fenolftaleina, despegado de la curva
+    const m = pieza(svg, 'marca-fenolftaleina')
+    m.setAttribute('x1', num(m, 'x1') + 42)
+    m.setAttribute('x2', num(m, 'x2') + 42)
+  }
+  if (sabotaje === 39) {
+    const svg = porClave('alcalinidad-valoracion')
+    // un tramo de la curva, levantado: el pH subiria en mitad de la valoracion
+    const c = pieza(svg, 'curva-alcalinidad')
+    c.setAttribute(
+      'd',
+      puntos(c)
+        .map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${x > 200 && x < 250 ? (y - 22).toFixed(1) : y}`)
+        .join(' '),
+    )
+  }
+
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
   control('Catálogo · todos los esquemas se ven a tamaño natural', () => {
@@ -1091,6 +1131,134 @@ function medir(sabotaje, ROJO) {
     return `último pico: ${gra.toFixed(0)} px en gradiente frente a ${iso.toFixed(0)} px en isocrática`
   })
 
+  /*
+   * Cloracion al punto de ruptura. La confusion clasica del tema 33 es creer
+   * que cuanto mas cloro se echa, mas residual libre queda. La curva dice otra
+   * cosa, y aqui se comprueba sobre el trazado: SUBE (se forman cloraminas),
+   * BAJA hasta un minimo (se destruyen) y solo entonces VUELVE A SUBIR.
+   *
+   * El pico y el valle se leen de la FORMA del trazado, no de su maximo: el
+   * cloro libre acaba mas alto que las cloraminas, asi que el maximo de todo el
+   * dibujo es el ultimo punto y el "minimo posterior" no existiria.
+   */
+  const quiebre = (svg) => {
+    const pts = puntos(pieza(svg, 'curva-cloro'))
+    let iPico = 0
+    while (iPico + 1 < pts.length && pts[iPico + 1][1] <= pts[iPico][1]) iPico++
+    let iValle = iPico
+    while (iValle + 1 < pts.length && pts[iValle + 1][1] >= pts[iValle][1]) iValle++
+    return { pts, iPico, iValle }
+  }
+
+  control('Ruptura · sube, baja hasta un mínimo, y ahí cae la marca', () => {
+    const svg = porClave('cloracion-punto-ruptura')
+    const { pts, iPico, iValle } = quiebre(svg)
+    // la y crece HACIA ABAJO: que el residual suba es que la y baje
+    const subida = pts[0][1] - pts[iPico][1]
+    const bajada = pts[iValle][1] - pts[iPico][1]
+    const rebrote = pts[iValle][1] - pts[pts.length - 1][1]
+    if (!(subida > 20)) throw new Error(`la curva no sube al principio: solo ${subida.toFixed(0)} px`)
+    if (!(bajada > 20)) throw new Error(`la curva no baja tras el máximo: solo ${bajada.toFixed(0)} px`)
+    if (!(rebrote > 20)) {
+      throw new Error(
+        `la curva no vuelve a subir tras el mínimo (${rebrote.toFixed(0)} px): sin ese rebrote no hay ` +
+          `punto de ruptura, que es justo lo que el dibujo tiene que enseñar`,
+      )
+    }
+    const m = num(pieza(svg, 'marca-ruptura'), 'x1')
+    if (Math.abs(m - pts[iValle][0]) > 6) {
+      throw new Error(
+        `la marca está en x=${m.toFixed(0)} y el mínimo de la curva en x=${pts[iValle][0].toFixed(0)}: ` +
+          `el punto de ruptura ES ese mínimo, no un sitio cualquiera`,
+      )
+    }
+    return (
+      `sube ${subida.toFixed(0)}, baja ${bajada.toFixed(0)} y rebrota ${rebrote.toFixed(0)} px; ` +
+      `marca@${m.toFixed(0)} sobre el mínimo@${pts[iValle][0].toFixed(0)}`
+    )
+  })
+
+  control('Ruptura · el cloro COMBINADO se rotula antes, y el LIBRE después', () => {
+    const svg = porClave('cloracion-punto-ruptura')
+    const m = num(pieza(svg, 'marca-ruptura'), 'x1')
+    const combinado = centroX(svg, 'cloro combinado')
+    const libre = centroX(svg, 'cloro libre')
+    if (!(combinado < m && m < libre)) {
+      throw new Error(
+        `"cloro combinado"@${combinado.toFixed(0)} y "cloro libre"@${libre.toFixed(0)} con la ` +
+          `ruptura en ${m.toFixed(0)}: el cloro libre residual solo aparece PASADO el punto de ruptura`,
+      )
+    }
+    return `combinado@${combinado.toFixed(0)} < ruptura@${m.toFixed(0)} < libre@${libre.toFixed(0)}`
+  })
+
+  /*
+   * Alcalinidad. La ISO 9963-1 valora a dos puntos finales de pH FIJOS, y el
+   * dibujo lo afirma. Comprobarlo de verdad exige leer la curva: se toma la x
+   * de cada marca, se busca en el trazado la altura que le corresponde y se
+   * exige que sea la de su pH. Una marca puesta a ojo se cae aqui.
+   */
+  const alturaEn = (pts, x) => {
+    for (let i = 1; i < pts.length; i++) {
+      if (pts[i - 1][0] <= x && x <= pts[i][0]) {
+        const f = (x - pts[i - 1][0]) / (pts[i][0] - pts[i - 1][0] || 1)
+        return pts[i - 1][1] + f * (pts[i][1] - pts[i - 1][1])
+      }
+    }
+    throw new Error(`x=${x.toFixed(0)} cae fuera del trazado`)
+  }
+
+  control('Alcalinidad · las dos marcas caen SOBRE la curva, en pH 8,3 y luego 4,5', () => {
+    const svg = porClave('alcalinidad-valoracion')
+    const pts = puntos(pieza(svg, 'curva-alcalinidad'))
+    const y83 = num(pieza(svg, 'linea-83'), 'y1')
+    const y45 = num(pieza(svg, 'linea-45'), 'y1')
+    if (!(y83 < y45)) {
+      throw new Error(`la línea de pH 8,3 (y=${y83}) no está por encima de la de pH 4,5 (y=${y45})`)
+    }
+    const x1 = num(pieza(svg, 'marca-fenolftaleina'), 'x1')
+    const x2 = num(pieza(svg, 'marca-naranja'), 'x1')
+    if (!(x1 < x2)) {
+      throw new Error(
+        `la fenolftaleína vira en x=${x1.toFixed(0)} y el anaranjado en x=${x2.toFixed(0)}: ` +
+          `el punto final de pH 8,3 se alcanza ANTES que el de 4,5`,
+      )
+    }
+    const pares = [
+      ['fenolftaleína (8,3)', x1, y83],
+      ['anaranjado (4,5)', x2, y45],
+    ]
+    for (const [nombre, x, y] of pares) {
+      const real = alturaEn(pts, x)
+      if (Math.abs(real - y) > 4) {
+        throw new Error(
+          `la marca de ${nombre} está en x=${x.toFixed(0)}, donde la curva pasa por y=${real.toFixed(0)} ` +
+            `y no por y=${y.toFixed(0)}: el punto final es un pH FIJO, y la marca tiene que caer en él`,
+        )
+      }
+    }
+    return `8,3@x=${x1.toFixed(0)} antes que 4,5@x=${x2.toFixed(0)}, las dos sobre la curva`
+  })
+
+  control('Alcalinidad · el pH BAJA a lo largo de toda la valoración', () => {
+    const svg = porClave('alcalinidad-valoracion')
+    const pts = puntos(pieza(svg, 'curva-alcalinidad'))
+    for (let i = 1; i < pts.length; i++) {
+      // y crece hacia abajo: que el pH baje es que la y no deje de crecer
+      if (pts[i][1] < pts[i - 1][1] - 0.2) {
+        throw new Error(
+          `entre x=${pts[i - 1][0].toFixed(0)} y x=${pts[i][0].toFixed(0)} la curva sube de ` +
+            `y=${pts[i - 1][1].toFixed(0)} a y=${pts[i][1].toFixed(0)}: se está añadiendo ÁCIDO, ` +
+            `el pH no puede subir`,
+        )
+      }
+    }
+    return (
+      `${pts.length} puntos, el pH solo baja: ` +
+      `de y=${pts[0][1].toFixed(0)} a y=${pts[pts.length - 1][1].toFixed(0)}`
+    )
+  })
+
   return resultados
 }
 
@@ -1132,6 +1300,10 @@ const SABOTAJES = {
   33: 'el pico polar de fase inversa, retrasado detrás del apolar',
   34: 'el perfil del gradiente, aplanado como el isocrático',
   35: 'el último pico del gradiente, ensanchado hasta el de la isocrática',
+  36: 'la curva de cloración, aplanada desde el punto de ruptura',
+  37: 'el rótulo del cloro libre, movido delante del punto de ruptura',
+  38: 'el punto final de la fenolftaleína, despegado de la curva',
+  39: 'un tramo de la curva de alcalinidad, levantado',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1177,6 +1349,10 @@ const CONTROL_DE = {
   33: [31],
   34: [32],
   35: [33],
+  36: [34],
+  37: [35],
+  38: [36],
+  39: [37],
 }
 
 async function main() {

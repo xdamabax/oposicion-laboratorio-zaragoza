@@ -35,6 +35,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'purga-y-trampa': 'Purga y trampa frente a espacio de cabeza',
   'fase-normal-vs-inversa': 'Fase normal frente a fase inversa: el orden de elución se invierte',
   'gradiente-elucion': 'Elución isocrática frente a elución en gradiente',
+  'cloracion-punto-ruptura': 'Curva de cloración al punto de ruptura',
+  'alcalinidad-valoracion': 'Valoración de la alcalinidad: los dos puntos finales',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -64,6 +66,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'purga-y-trampa': { ancho: 540, alto: 236 },
   'fase-normal-vs-inversa': { ancho: 540, alto: 252 },
   'gradiente-elucion': { ancho: 540, alto: 240 },
+  'cloracion-punto-ruptura': { ancho: 500, alto: 284 },
+  'alcalinidad-valoracion': { ancho: 490, alto: 282 },
 }
 
 const AZUL = '#9ecbe8'
@@ -2524,6 +2528,246 @@ function GradienteElucion() {
   )
 }
 
+/* ---------- Tema 33: parametros del agua de consumo ---------- */
+
+/**
+ * Curva de cloracion al punto de ruptura.
+ *
+ * Lo que el dibujo AFIRMA, y la bateria comprueba, es la forma: el residual
+ * SUBE mientras se forman cloraminas, BAJA hasta un minimo -el punto de
+ * ruptura- cuando esas cloraminas se destruyen, y VUELVE A SUBIR. Y que el
+ * CLORO LIBRE residual solo aparece DESPUES del punto de ruptura, que es lo
+ * unico que hay que entender para no confundir cloro libre con cloro combinado.
+ *
+ * La curva se calcula por tramos, no se traza a ojo, y la marca del punto de
+ * ruptura se coloca en el minimo que resulta de ese calculo.
+ */
+function CloracionPuntoRuptura() {
+  const X0 = 50
+  const ANCHO = 390
+  const BASE = 180
+  const H = 70
+
+  /** Residual en unidades arbitrarias, por tramos. */
+  const residual = (u: number) => {
+    if (u <= 0.12) return 0
+    if (u <= 0.42) return (u - 0.12) / 0.3
+    if (u <= 0.62) return 1 - (0.88 * (u - 0.42)) / 0.2
+    return 0.12 + (1.35 * (u - 0.62)) / 0.38
+  }
+
+  const pts: [number, number][] = []
+  for (let i = 0; i <= 200; i++) {
+    const u = i / 200
+    pts.push([X0 + u * ANCHO, BASE - residual(u) * H])
+  }
+  const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')
+
+  /*
+   * El punto de ruptura se BUSCA sobre la curva ya muestreada, no se escribe a
+   * mano: es el valle, o sea el primer punto en el que la curva deja de bajar
+   * despues de haber dejado de subir. Ojo, que el maximo de todo el trazado es
+   * el final -el cloro libre acaba mas alto que las cloraminas-, asi que
+   * buscarlo por el maximo global pondria la marca en el sitio equivocado.
+   */
+  let iPico = 0
+  while (iPico + 1 < pts.length && pts[iPico + 1][1] <= pts[iPico][1]) iPico++
+  let iValle = iPico
+  while (iValle + 1 < pts.length && pts[iValle + 1][1] >= pts[iValle][1]) iValle++
+  const xRuptura = pts[iValle][0]
+  const yRuptura = pts[iValle][1]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* ejes */}
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1="34" x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2="452" y2={BASE} />
+      </g>
+      <text x={X0} y="26" fontSize="8" fill="currentColor">
+        cloro residual (mg/L)
+      </text>
+      <text x="452" y={BASE + 13} fontSize="8" textAnchor="end" fill="currentColor">
+        cloro añadido (mg/L)
+      </text>
+
+      <path data-pieza="curva-cloro" d={d} fill="none" stroke={ROJO} strokeWidth="1.8" />
+
+      {/* la marca del punto de ruptura, en el minimo calculado */}
+      <line
+        data-pieza="marca-ruptura"
+        x1={xRuptura}
+        y1={yRuptura}
+        x2={xRuptura}
+        y2={BASE}
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeDasharray="3 3"
+      />
+      <text x={xRuptura} y={BASE + 24} fontSize="8.5" textAnchor="middle" fontWeight="bold" fill="currentColor">
+        punto de ruptura
+      </text>
+
+      {/* separadores de zona */}
+      <g stroke="currentColor" strokeWidth="0.8" strokeDasharray="2 3" opacity="0.5">
+        <line x1={X0 + 0.12 * ANCHO} y1="40" x2={X0 + 0.12 * ANCHO} y2={BASE} />
+        <line x1={X0 + 0.42 * ANCHO} y1="40" x2={X0 + 0.42 * ANCHO} y2={BASE} />
+      </g>
+
+      <g fontSize="8.5" textAnchor="middle" fill="currentColor">
+        <text x={X0 + 0.06 * ANCHO} y="50">
+          demanda
+        </text>
+        <text x={X0 + 0.27 * ANCHO} y="50">
+          cloro combinado
+        </text>
+        <text x={X0 + 0.82 * ANCHO} y="50">
+          cloro libre
+        </text>
+      </g>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        <text x={X0 + 0.06 * ANCHO} y="60">
+          inmediata
+        </text>
+        <text x={X0 + 0.27 * ANCHO} y="60">
+          (cloraminas)
+        </text>
+        <text x={X0 + 0.82 * ANCHO} y="60">
+          residual
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="226">
+          El cloro se gasta primero en oxidar hierro, manganeso, sulfuros y materia orgánica.
+        </text>
+        <text x="8" y="239">
+          Luego reacciona con el amonio y forma CLORAMINAS: es el cloro combinado, y sube.
+        </text>
+        <text x="8" y="252">
+          Pasado el máximo el cloro destruye esas cloraminas y el residual cae al PUNTO DE RUPTURA.
+        </text>
+        <text x="8" y="265">
+          Solo después aparece CLORO LIBRE residual, que es el que de verdad desinfecta.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Valoracion de la alcalinidad, con sus dos puntos finales.
+ *
+ * La ISO 9963-1 valora con acido a puntos finales de pH FIJOS -8,3 y 4,5-,
+ * visual o potenciometricamente. El dibujo lo AFIRMA y puede demostrarlo: la
+ * curva se calcula, se busca NUMERICAMENTE donde cruza cada pH, y ahi se
+ * colocan las dos marcas. El control recalcula esos cruces sobre el trazado y
+ * exige que las marcas caigan encima.
+ */
+function AlcalinidadValoracion() {
+  const X0 = 62
+  const ANCHO = 368
+  const BASE = 180
+  /** pH 10 arriba, pH 3 abajo: 20 px por unidad de pH. */
+  const yDe = (ph: number) => BASE - (ph - 3) * 20
+
+  const sig = (t: number, c: number, w: number) => 1 / (1 + Math.exp(-(t - c) / w))
+  const phDe = (t: number) => 9.8 - 3.3 * sig(t, 0.28, 0.045) - 3.3 * sig(t, 0.62, 0.045)
+
+  const pts: [number, number][] = []
+  for (let i = 0; i <= 240; i++) {
+    const t = i / 240
+    pts.push([X0 + t * ANCHO, yDe(phDe(t))])
+  }
+  const d = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')
+
+  /** Donde la curva calculada cruza un pH dado, por interpolacion. */
+  const cruce = (ph: number) => {
+    for (let i = 1; i < pts.length; i++) {
+      const a = phDe((i - 1) / 240)
+      const b = phDe(i / 240)
+      if (a >= ph && b <= ph) {
+        const f = (a - ph) / (a - b)
+        return pts[i - 1][0] + f * (pts[i][0] - pts[i - 1][0])
+      }
+    }
+    return X0
+  }
+  const v1 = cruce(8.3)
+  const v2 = cruce(4.5)
+
+  const referencia = (pieza: string, ph: number, rotulo: string) => (
+    <g key={pieza}>
+      <line
+        data-pieza={pieza}
+        x1={X0}
+        y1={yDe(ph)}
+        x2="440"
+        y2={yDe(ph)}
+        stroke={AZUL}
+        strokeWidth="1.2"
+        strokeDasharray="4 3"
+      />
+      <text x="444" y={yDe(ph) + 3} fontSize="8" fill={AZUL}>
+        {rotulo}
+      </text>
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1="34" x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2="440" y2={BASE} />
+      </g>
+      <text x="8" y="30" fontSize="8" fill="currentColor">
+        pH
+      </text>
+      <text x="440" y={BASE + 13} fontSize="8" textAnchor="end" fill="currentColor">
+        volumen de ácido añadido
+      </text>
+
+      {referencia('linea-83', 8.3, 'pH 8,3')}
+      {referencia('linea-45', 4.5, 'pH 4,5')}
+
+      <path data-pieza="curva-alcalinidad" d={d} fill="none" stroke={ROJO} strokeWidth="1.8" />
+
+      <g stroke="currentColor" strokeWidth="1.2" strokeDasharray="3 3">
+        <line data-pieza="marca-fenolftaleina" x1={v1} y1={yDe(8.3)} x2={v1} y2={BASE} />
+        <line data-pieza="marca-naranja" x1={v2} y1={yDe(4.5)} x2={v2} y2={BASE} />
+      </g>
+      <g fontSize="8.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        <text x={v1} y={BASE + 25}>
+          V₁ · TA
+        </text>
+        <text x={v2} y={BASE + 25}>
+          V₂ · TAC
+        </text>
+      </g>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        <text x={v1} y={BASE + 35}>
+          fenolftaleína
+        </text>
+        <text x={v2} y={BASE + 35}>
+          anaranjado de metilo
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="238">
+          La UNE-EN ISO 9963-1 valora con ácido a DOS puntos finales de pH FIJO: 8,3 y 4,5.
+        </text>
+        <text x="8" y="251">
+          Hasta 8,3 se neutraliza el hidróxido y el carbonato solo pasa a BICARBONATO.
+        </text>
+        <text x="8" y="264">
+          Hasta 4,5 se neutraliza también todo el bicarbonato: es la alcalinidad TOTAL.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -2576,6 +2820,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <FaseNormalVsInversa />
     case 'gradiente-elucion':
       return <GradienteElucion />
+    case 'cloracion-punto-ruptura':
+      return <CloracionPuntoRuptura />
+    case 'alcalinidad-valoracion':
+      return <AlcalinidadValoracion />
   }
 }
 
