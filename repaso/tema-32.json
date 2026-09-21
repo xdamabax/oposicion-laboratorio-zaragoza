@@ -1,0 +1,824 @@
+{
+  "tema": 32,
+  "titulo": "Cromatografía de líquidos: instrumentación. Utilización de la cromatografía de líquidos en análisis de agua.",
+  "generadoDe": "temas/tema-32.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-21",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t32-f01",
+      "anverso": "¿Qué técnica se responde para el análisis de **benzo(a)pireno** en agua?",
+      "reverso": "**Cromatografía de LÍQUIDOS con detector de FLUORESCENCIA.** Documentado dos veces: **1233 C2 #2** («cromatografía de líquidos con detector de fluorescencia») y **1322 C2 #24** («cromatografía líquida y detección por fluorescencia»).\n**La razón:** el benzo(a)pireno es un **hidrocarburo aromático policíclico**, y **los HAP son fluorescentes**. Por eso la norma se llama, literalmente, *«HPLC con detección por fluorescencia»*.\nNorma: **UNE-EN ISO 17993:2004**, que determina **15 HAP** tras **extracción líquido-líquido**.",
+      "fuente": "Cuestionarios 1233 C2 #2 y 1322 C2 #24; UNE-EN ISO 17993:2004",
+      "etiquetas": ["aplicacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f02",
+      "anverso": "Valores del RD 3/2023 para el **benzo(a)pireno** y para la **∑4 HPA**. ¿Dónde está la trampa?",
+      "reverso": "| Parámetro | Valor | Incertidumbre |\n| --- | --- | --- |\n| **Benzo(a)pireno** | **0,010 µg/L** | **50 %** |\n| **∑4 Hidrocarburos Policíclicos Aromáticos** | **0,10 µg/L** | **40 %** |\n**LA TRAMPA: el benzo(a)pireno NO ESTÁ en la ∑4.** Tiene **valor propio**, y **diez veces más estricto** que el sumatorio.\n**La ∑4 la forman otros cuatro:** **benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno**.",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2 y nota 13; anexo III tabla 15",
+      "etiquetas": ["valores", "trampa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f03",
+      "anverso": "¿Cuándo NO es cromatografía de líquidos? Los **siete distractores** del examen.",
+      "reverso": "La cromatografía líquida es **la opción falsa favorita del examinador**: siete veces distractor y solo dos veces respuesta.\n| Qué piden | La opción falsa | Lo correcto |\n| --- | --- | --- |\n| Plomo y cadmio | «Cromatografía HPLC» | **ICP-MS** |\n| Turbidez | «CL con fluorescencia» | **Turbidimetría** |\n| DQO | «CL con fluorescencia» | **Digestión ácida y volumetría** |\n| Cd, Al, Sb, Cr | «Cromatografía líquida» | **ICP-MS** |\n| Nitrógeno total | «Cromatografía líquida» | **Combustión / quimioluminiscencia** |\n| Grasas | «Cromatografía líquida» | **Extracción con hexano y pesada** |\n| Cloruros | «CL con detector de diodos» | **Cromatografía iónica de aniones** |\n**La regla que las resuelve todas: el HPLC es para compuestos ORGÁNICOS no volátiles o termolábiles.** Ni metales, ni iones inorgánicos, ni parámetros globales.",
+      "fuente": "Cuestionarios 1233 C2, 1246 C2 y 1322 C2",
+      "etiquetas": ["trampa", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f04",
+      "anverso": "¿Qué se pone **antes de la columna analítica** en un HPLC, y qué dos problemas resuelve?",
+      "reverso": "Una **PRECOLUMNA** (columna de guarda). Literal en **1246 #17** y **1322 #34**; los distractores son «microcolumna» y «termostato», que no protegen nada.\n**Los dos problemas:**\n1. Los solutos que **se unen irreversiblemente** a la fase estacionaria y **degradan el rendimiento** de la columna.\n2. El **material particulado** inyectado con la muestra, que **obstruye** la columna.\n**Cómo es:** el mismo relleno y la misma fase estacionaria que la analítica, pero **mucho más corta y barata** —del orden de **7,5 mm** y **una décima parte del precio**—. **Es sacrificial: se reemplaza con regularidad.**",
+      "fuente": "Cuestionarios 1246 #17 y 1322 #34; LibreTexts 28.3",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f05",
+      "anverso": "¿Para qué compuestos es el más utilizado el **detector de conductividad** en HPLC?",
+      "reverso": "Para **COMPUESTOS IÓNICOS**. Literal en **1246 #18** y **1322 #35**.\n**La lógica:** un ion en disolución conduce, así que medir conductividad es medir iones. Es el detector propio de la **cromatografía iónica**, que es una cromatografía de líquidos (tema 30).\nLos dos distractores describen a sus vecinos de la misma familia:\n- «compuestos con capacidad de oxidarse o reducirse» → detector **amperométrico**.\n- «compuestos fluorescentes» → detector de **fluorescencia**.",
+      "fuente": "Cuestionarios 1246 #18 y 1322 #35",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f06",
+      "anverso": "Los **seis componentes** de un cromatógrafo de líquidos según el CEM. ¿Por qué seis y no cinco?",
+      "reverso": "**QU-004, apartado 4.2:**\n1. **Líquidos portadores y sistemas para el tratamiento de los disolventes.**\n2. **Sistemas de bombeo.**\n3. **Sistema de inyección de la muestra.**\n4. **Columnas.**\n5. **Detectores.**\n6. **Sistema de procesamiento de señal y tratamiento de datos.**\n**Son SEIS, frente a los CINCO de cromatografía de gases.** La diferencia es **el primer bloque**: aquí la fase móvil hay que **desgasificarla, filtrarla y mezclarla**, y eso es un subsistema entero. En gases la fase móvil sale de una botella y no hay nada que tratar.",
+      "fuente": "CEM, QU-004 apartado 4.2; CEM, QU-005 apartado 4.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f07",
+      "anverso": "Los **cuatro tipos** de cromatografía de líquidos que enumera el CEM.",
+      "reverso": "**QU-004, apartado 4.2:**\n1. **Cromatografía de REPARTO** — la más usada, y la de este tema.\n2. **Cromatografía de ADSORCIÓN** (líquido-sólido).\n3. **Cromatografía IÓNICA** — tema 30.\n4. **Cromatografía de EXCLUSIÓN POR TAMAÑOS** o en geles — los solutos **grandes salen antes**.\nY la regla de elección, literal: *«se elige cada tipo a utilizar en función de las **características químicas del analito** a determinar»*.",
+      "fuente": "CEM, QU-004, apartado 4.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f08",
+      "anverso": "Mirando estos dos paneles: ¿cómo se **fabrica** la fase estacionaria de una columna de reparto, y por qué hay que unirla covalentemente?",
+      "reverso": "Es una **película líquida sobre partículas de sílice porosas**. El problema es que puede ser **parcialmente soluble en la fase móvil** y **sangraría de la columna**, acortándole la vida. Por eso **se une covalentemente**:\n- Se hace reaccionar la sílice con un **organoclorosilano Si(CH₃)₂RCl**, donde **R es el grupo que decide la polaridad**: ciano, diol o amino si se quiere polar; cadena C8 o C18 si se quiere apolar.\n- Los **grupos −SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. Esas columnas se llaman **«terminalmente rematadas»** (*end-capped*).",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["instrumentacion"],
+      "figura": { "tipo": "esquema", "valor": "fase-normal-vs-inversa" },
+      "nucleo": true
+    },
+    {
+      "id": "t32-f09",
+      "anverso": "**Fase normal frente a fase inversa**: la tabla completa.",
+      "reverso": "| | **Fase NORMAL** | **FASE INVERSA** |\n| --- | --- | --- |\n| Estacionaria | **POLAR** | **NO POLAR** |\n| Móvil | **NO polar** (hexano) | **POLAR** (agua tamponada, metanol, acetonitrilo) |\n| Quién se retiene más | El **más POLAR**: sale **el último** | El **menos polar**: el polar sale **el primero** |\n| Grupo R del silano | Ciano, diol, amino | **C8** y **C18** |\n| Para alargar la retención | **BAJAR** la polaridad de la fase móvil | **SUBIR** la polaridad de la fase móvil |\n**EL ORDEN DE ELUCIÓN SE INVIERTE entre las dos**, y **la inversa es la más usada con diferencia**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f10",
+      "anverso": "¿Por qué se llama «inversa» a la modalidad **más usada** de HPLC?",
+      "reverso": "Por **precedencia histórica**, no por ninguna razón técnica.\nEl primer experimento de cromatografía —el de **Tswett**— usó una **columna POLAR de carbonato de calcio** y una **fase móvil APOLAR de éter de petróleo**. Esa combinación se quedó con el nombre de **«normal»**, y la contraria, que se desarrolló después, con el de **«inversa»**.\nHoy la inversa es, con mucha diferencia, la habitual: es la de los **HAP**, los **plaguicidas** y los **fármacos**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["contexto"]
+    },
+    {
+      "id": "t32-f11",
+      "anverso": "¿Por qué el **pH de la fase móvil** en HPLC de fase inversa debe mantenerse por debajo de 7,5?",
+      "reverso": "Porque **el sustrato de SÍLICE se HIDROLIZA en disoluciones básicas**. La fase estacionaria va unida covalentemente a partículas de sílice, y si el soporte se disuelve, se pierde la columna.\nEs un límite operativo duro y muy preguntable: **por debajo de 7,5**.\n(La fase móvil típica de fase inversa es precisamente una **disolución acuosa tamponada**, o metanol o acetonitrilo, de modo que el pH se controla.)",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f12",
+      "anverso": "¿Qué es el **índice de polaridad** y cómo se calcula el de una mezcla binaria?",
+      "reverso": "Es un índice que ayuda a **elegir la fase móvil**: **valores mayores de P′ corresponden a disolventes más polares**.\nMezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es la **media ponderada por las fracciones de volumen**:\n**P′_AB = Φ_A · P′_A + Φ_B · P′_B**\nEs justo lo que permite **ajustar la retención sin cambiar de columna**, y lo que hace posible la elución en gradiente.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t32-f13",
+      "anverso": "Explica lo que muestran estos dos paneles y **cómo se consigue instrumentalmente** lo de la derecha.",
+      "reverso": "El panel izquierdo enseña el problema y el derecho la solución, así que lo que la tarjeta pide es lo que el dibujo NO dice: **cómo se produce el gradiente dentro del equipo**.\n**Instrumentalmente se consigue de dos maneras:**\n- **Dos bombas desfasadas** —de trabajo y equilibradora— que envían a una **CÁMARA DE MEZCLA**: la **velocidad relativa de las dos decide la composición final**.\n- O una **válvula dosificadora de disolvente** delante de una sola bomba, que conecta dos o más depósitos y decide cuánto se toma de cada uno en cada ciclo.\n**En fase inversa se empieza con la fase móvil MÁS POLAR y se va haciendo MENOS polar.**",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3 y 28.4",
+      "etiquetas": ["instrumentacion"],
+      "figura": { "tipo": "esquema", "valor": "gradiente-elucion" },
+      "nucleo": true
+    },
+    {
+      "id": "t32-f14",
+      "anverso": "¿Qué problema de la cromatografía de gases resuelve el gradiente, y con qué equivale?",
+      "reverso": "**El mismo problema, y es su equivalente exacto:**\n| | Cromatografía de gases | Cromatografía de líquidos |\n| --- | --- | --- |\n| Modo simple | **Isotermo** | **Isocrático** |\n| Modo con programa | **Rampa de temperatura** | **Elución en gradiente** |\n| Qué se cambia | La **temperatura del horno** | La **composición de la fase móvil** |\nEn los dos casos el problema es el mismo: **la condición que separa bien lo que eluye pronto deja lo que eluye tarde en picos anchos y a destiempo.**",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2 y 28.4",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f15",
+      "anverso": "¿Por qué el **inyector es de bucle** y qué hay que hacer con la fase móvil antes de usarla?",
+      "reverso": "**El inyector es de BUCLE** porque la presión de trabajo es de **varios cientos de atmósferas** y no se puede pinchar un septo con jeringa, como sí se hace en gases. Dos posiciones: **carga** —el bucle aislado y abierto a la atmósfera, se llena con jeringa y el exceso sale por el desagüe— e **inyección** —la válvula gira y la fase móvil arrastra el contenido del bucle a la columna—. Bucles **de 0,5 µL a 5 mL**, y **el volumen lo fija el bucle**, no el pulso de la mano.\n**La fase móvil hay que:**\n- **DESGASIFICARLA**, con bomba de vacío o burbujeando helio: al salir de la columna **la presión cae a la atmosférica** y los gases disueltos **se liberan como burbujas que interfieren en el detector**.\n- **FILTRARLA**, porque las partículas **obstruyen tubo y columna**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f16",
+      "anverso": "¿Por qué las bombas de HPLC llevan **dos pistones o un amortiguador de pulsos**?",
+      "reverso": "Porque una bomba de vaivén crea un **flujo pulsante**, y **el pulso mete ruido en el cromatograma**.\n- **Dos pistones desfasados** —bomba de trabajo y bomba equilibradora—: cada uno con su cilindro, y el movimiento alternado mantiene el caudal. Como además envían a una **cámara de mezcla**, sirven a la vez para **preparar la fase móvil binaria**.\n- **Amortiguador de pulsos:** una cámara con **fluido fácilmente compresible y un diafragma flexible**. Durante la carrera del pistón el fluido se comprime; cuando el pistón se retira para rellenar, **la presión del fluido que se expande mantiene el caudal**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t32-f17",
+      "anverso": "Dimensiones y relleno de una **columna analítica** de HPLC, y su eficiencia.",
+      "reverso": "- **Tubo de ACERO INOXIDABLE.**\n- **Diámetro interno: 2,1 a 4,6 mm.**\n- **Longitud: 30 a 300 mm.**\n- **Relleno: partículas POROSAS DE SÍLICE de 3 a 10 µm**, irregulares o esféricas.\n- **Eficiencia: 40 000 a 60 000 platos teóricos por metro.** Una columna de 25 cm con 50 000 platos/m tiene **12 500 platos teóricos**.\n(Comparar con la capilar de gases: 15-100 **metros** y 4 300 platos/m. El HPLC gana eficiencia por metro; la cromatografía de gases, por longitud.)",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t32-f18",
+      "anverso": "¿Qué pasa si se reduce a la mitad el **tamaño de partícula** del relleno? ¿Y qué es una columna monolítica?",
+      "reverso": "**Reducir el tamaño de partícula a la MITAD:**\n- **Aumenta la eficiencia solo × 1,4.**\n- **Multiplica la CONTRAPRESIÓN × 4.**\nY como los tubos y racores tienen límite de presión, más contrapresión obliga a **bajar el caudal** y **alargar el análisis**. Es el gran compromiso del HPLC.\n**La COLUMNA MONOLÍTICA es la salida:** el soporte sólido es **una sola varilla porosa**, formada en un molde y recubierta de PTFE o resina polimérica. Ofrece **eficiencia de columna capilar empaquetada con caudales más rápidos**, porque no hay espacios intersticiales entre partículas.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f19",
+      "anverso": "¿Qué es el **ensanchamiento extracolumna** y por qué es un problema propio del HPLC?",
+      "reverso": "En cromatografía de gases hay **poca distancia** entre el inyector y la columna, y entre la columna y el detector. En un HPLC, en cambio, **hacen falta tubos de conexión**, y en ellos **no hay fase estacionaria**: el soluto viaja **más lento junto a la pared y más rápido en el centro**, y **la banda se ensancha sin que la columna tenga culpa**.\n**Se minimiza con tres medidas:**\n1. Tubos **lo más cortos posible**.\n2. Tubos de **diámetro interno más pequeño**.\n3. **Caudales más bajos**.\nEs una contribución que **se suma a las tres de van Deemter** del tema 30.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.2",
+      "etiquetas": ["fundamento"]
+    },
+    {
+      "id": "t32-f20",
+      "anverso": "Tabla de **detectores de HPLC** con su límite de detección.",
+      "reverso": "| Detector | Límite de detección | Nota |\n| --- | --- | --- |\n| **Fluorescencia** | **1 - 10 pg** | **El más sensible de los ópticos.** Solo si el analito es fluorescente |\n| **UV/Visible** | **100 pg - 1 ng** | El más popular. **La fase móvil no puede absorber** ahí |\n| **Amperométrico** | **10 pg - 1 ng** | Para lo que se oxida o se reduce |\n| **Espectrómetro de masas** | **0,1 - 1 ng** (hasta 1-10 pg) | El único que **identifica** |\n| **Índice de refracción** | **0,1 - 1 µg** | Casi universal pero **el peor**, y **no vale en gradiente** |",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f21",
+      "anverso": "¿Cuál es la **limitación** del detector UV/Vis y qué añade el **detector de diodos (DAD)**?",
+      "reverso": "**La limitación del UV/Vis:** *«la **fase móvil no puede absorber** en las longitudes de onda que deseamos monitorear»*. Eso condiciona la elección del disolvente.\nSu celda de flujo tiene **1-10 µL** de volumen y **0,2-1 cm** de camino óptico, y el cromatograma es **absorbancia frente a tiempo**.\n**El DAD (matriz de diodos)** registra **todo el espectro a la vez**, así que da un **cromatograma TRIDIMENSIONAL**: absorbancia frente a **longitud de onda** y **tiempo**. Con eso se puede **comprobar la pureza del pico**: si el espectro al principio no coincide con el del final, hay dos compuestos coeluyendo.\n(El examen lo llama «detector de diodos»: 1322 C2 #39.)",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3; cuestionario 1322 C2 #39",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t32-f22",
+      "anverso": "¿Qué detector **no sirve** cuando se trabaja con gradiente, y por qué?",
+      "reverso": "**El detector de ÍNDICE DE REFRACCIÓN.** Es casi universal —responde a casi todos los compuestos—, pero tiene dos pegas:\n1. Su **límite de detección es malo: 0,1-1 µg** de analito inyectado.\n2. **No puede usarse cuando la composición de la fase móvil cambia**, a menos que **los componentes de la fase móvil tengan índices de refracción idénticos**, que es tanto como decir nunca.\nLa razón es evidente en cuanto se enuncia: si lo que mide es el índice de refracción del líquido y el líquido va cambiando, **la línea base se va con él**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion", "trampa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f23",
+      "anverso": "¿Por qué la interfaz **LC-MS** es más difícil que la **GC-MS**?",
+      "reverso": "Por la **incompatibilidad de una fase móvil LÍQUIDA con el requerimiento de ALTO VACÍO del espectrómetro de masas**.\nUn gas portador entra en el vacío sin más; un líquido hay que **evaporarlo y retirarlo** antes de que los iones lleguen al analizador. Por eso la interfaz *«elimina la mayor parte de la fase móvil»* y es **técnicamente más difícil** que la de un GC-MS.\nA cambio, las ventajas son las mismas: **límites de detección de 0,1-1 ng** —hasta 1-10 pg en algunas muestras— e **información cualitativa y estructural** que permite identificar.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t32-f24",
+      "anverso": "¿Por qué el HPLC es «una familia» y la cromatografía de gases no?",
+      "reverso": "Porque en cromatografía de gases **la fase móvil solo transporta**: la separación la deciden el **punto de ebullición** y la fase estacionaria, y *«las propiedades de la fase móvil son menos importantes»*.\nEn cromatografía de líquidos, en cambio, **la separación depende de cómo se reparte el soluto entre las DOS fases**, y **las dos se pueden cambiar**. Además el abanico de interacciones posibles con la fase estacionaria es mayor.\nDe ahí que el HPLC agrupe **reparto (normal e inversa), adsorción, intercambio iónico y exclusión por tamaño**, mientras que en gases *«no hay mucha variedad en los tipos básicos»*.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f25",
+      "anverso": "Un cromatógrafo **iónico** y uno de **líquidos**: ¿en qué se diferencian?",
+      "reverso": "**En muy poco, porque el cromatógrafo iónico ES un cromatógrafo de líquidos.** Así lo clasifica el propio CEM, que pone la cromatografía iónica entre los cuatro tipos de cromatografía de líquidos.\n**Quítale dos cosas y tienes un HPLC cualquiera:**\n1. **El SUPRESOR**, que va entre la columna y el detector y baja la conductividad de fondo del eluyente. **Ningún otro HPLC lo lleva.**\n2. **El detector de CONDUCTIVIDAD**, que se cambia por uno de **UV/DAD** o de **fluorescencia**.\nTodo lo demás —depósito, bomba, inyector de bucle, precolumna, columna, registro— **es idéntico**.",
+      "fuente": "CEM, QU-004 apartado 4.2; tema 30",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f26",
+      "anverso": "¿Qué norma cubre los **HAP en agua** por HPLC, y qué otra alternativa hay?",
+      "reverso": "**UNE-EN ISO 17993:2004**, *«Calidad del agua. Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por fluorescencia tras extracción líquido-líquido**»*. **En vigor**, confirmada en 2008.\n**Alternativas:**\n- **ISO 7981-2:2005** — **6 HAP** por **HPLC con fluorescencia**.\n- **ISO 7981-1:2005** — los mismos 6 HAP pero por **cromatografía en CAPA FINA de alta resolución** con fluorescencia. **Ojo: la parte 1 NO es HPLC.**\n- **ISO 28540:2011** — **16 HAP** por **cromatografía de GASES con espectrometría de masas** (tema 31).",
+      "fuente": "UNE-EN ISO 17993:2004; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f27",
+      "anverso": "¿Qué norma cubre los **plaguicidas por HPLC**, y cuándo se prefiere a la cromatografía de gases?",
+      "reverso": "**UNE-EN ISO 11369:1998**, *«Determinación de ciertos **agentes para el tratamiento de las plantas**. Método por **cromatografía líquida de alta resolución (HPLC) con detección UV** tras **extracción sólido-líquido**»*. **En vigor**, confirmada en 2008.\n**Cuándo se prefiere:** para los plaguicidas que **no aguantan la cromatografía de gases** — los **polares**, los **iónicos** y los **termolábiles**, que o no son volátiles o se descomponen en el inyector caliente.\n**El caso extremo es el glifosato**, tan polar que tiene norma propia: **ISO 21458** (HPLC con detección fluorimétrica) e **ISO 16308** (HPLC-MS/MS), las dos para **glifosato y AMPA**.",
+      "fuente": "UNE-EN ISO 11369:1998; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f28",
+      "anverso": "La **microcistina-LR** en el RD 3/2023: valor, cuándo se controla y qué pasa si se supera.",
+      "reverso": "- **Valor paramétrico: 1,0 µg/L.** Incertidumbre máxima **30 %**.\n- **Cuándo se controla (nota 5):** solo *«cuando el origen del agua sea total o parcialmente de **embalse o lago o laguna**»*. Es una toxina de **cianobacterias**, y esas proliferan en aguas embalsadas.\n- **Si se supera 1 µg/L, se controlará CLOROFILA a** (anexo II), que es el indicador de la biomasa algal que la produce.\n**Normas:** **ISO 20179:2005** (extracción en fase sólida y **HPLC-UV**) e **ISO 22104:2021** (**LC-MS/MS**).",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2 nota 5 y anexo II; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["valores", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f29",
+      "anverso": "Los **PFAS** en el RD 3/2023: los dos parámetros, sus valores y su calendario.",
+      "reverso": "- **∑20 PFAS: 0,10 µg/L**, con incertidumbre del **50 %**.\n- **4 PFAS** —**PFOA, PFOS, PFNA y PFHxS**— con **valor paramétrico de 0,07 µg/L CADA UNO** y **límite de detección siempre inferior a 0,07 µg/L**.\n**El calendario, que es lo que más se puede preguntar:**\n| Qué | Controlar antes de | Cumplir antes de |\n| --- | --- | --- |\n| **4 PFAS** | **2/1/2024** | **2/1/2025** |\n| **∑20 PFAS** | **2/1/2025** | **2/1/2026** |\n**Definición del grupo:** sustancias con *«un resto perfluoroalquilo con **tres o más carbonos** […] o un resto de perfluoroalquiléter con **dos o más carbonos**»*.\n**Técnica: LC-MS/MS** (**ISO 21675:2019**; **ISO 25101:2009** para PFOS y PFOA).",
+      "fuente": "RD 3/2023, anexo I parte B notas 14 y 15, y disposición transitoria; ISO 21675:2019",
+      "etiquetas": ["valores", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f30",
+      "anverso": "La **LISTA DE OBSERVACIÓN** nacional del RD 3/2023: qué es, qué contiene y con qué frecuencia se controla.",
+      "reverso": "Es el **anexo IV**, y en la práctica es **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**.\n| N.º | Contaminante | Valor de referencia |\n| --- | --- | --- |\n| 68 | **17β-Estradiol** | **1 ng/L** |\n| 69 | **Nonilfenol** | **300 ng/L** |\n| 70 | **Azitromicina** | **100 ng/L** |\n| 71 | **Diclofenaco** | **100 ng/L** |\n**Frecuencia**, a la salida del tratamiento o depósito de cabecera: **al menos una vez al cuatrimestre** en zonas de abastecimiento **tipo 4, 5 y 6**; **una vez al año** en las de **tipo 2 y 3**.\n**Y el cierre del anexo:** *«**los microplásticos** se incluirán en la lista cuando la Comisión Europea adopte una **metodología normalizada** para medirlos»*.",
+      "fuente": "RD 3/2023, anexo IV, tabla 16",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f31",
+      "anverso": "¿Cómo se determinan un **antibiótico** y un **antiinflamatorio** a 100 ng/L en agua?",
+      "reverso": "**Por extracción en fase sólida (SPE) y LC-MS/MS.** A esos niveles no hay otra: ni el UV ni la fluorescencia llegan, y el analito es **polar y no volátil**, así que la cromatografía de gases queda descartada.\nSon la **azitromicina** y el **diclofenaco** de la lista de observación, los dos a **100 ng/L**.\n**Normas:** **ISO 21676:2018**, *«determinación de la fracción disuelta de principios activos farmacéuticos seleccionados, productos de transformación…»*, por **LC-MS/MS**; y para el **17β-estradiol**, la **ISO 13646:2025**, estrógenos por **SPE y LC-MS/MS**.",
+      "fuente": "RD 3/2023, anexo IV; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["aplicacion"]
+    },
+    {
+      "id": "t32-f32",
+      "anverso": "¿Qué es el **bisfenol A** en el RD 3/2023 y qué tiene en común con los PFAS?",
+      "reverso": "Es uno de los **parámetros NUEVOS** que introdujo el RD 3/2023, con **valor paramétrico de 2,5 µg/L** e incertidumbre máxima del **50 %**.\n**Lo que comparte con los 4 PFAS es el calendario:** los operadores debían **controlarlo antes del 2 de enero de 2024** y **cumplir su valor paramétrico antes del 2 de enero de 2025**. La misma disposición transitoria alcanza al **clorito y clorato**, a las **∑5 ácidos haloacéticos** y al **uranio**.\n**Por qué está:** la OMS recomendó en 2017 que el **bisfenol A, el nonilfenol y el β-estradiol**, con propiedades de **alteración endocrina**, sirvieran de referencia para evaluar ese tipo de compuestos. Los otros dos acabaron en la **lista de observación**.",
+      "fuente": "RD 3/2023, preámbulo, anexo I parte B y disposición transitoria",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t32-f33",
+      "anverso": "¿Qué material y condiciones exige el CEM para calibrar un cromatógrafo de líquidos?",
+      "reverso": "- **Se calibra siempre en el laboratorio**, entre **18 °C y 28 °C**, sin condiciones ambientales particulares salvo lo que diga el manual. *«Determinados detectores pueden requerir un control de las variaciones de temperatura más severas.»*\n- **Pipetas y matraces aforados clase A**; **micropipetas** con repetibilidad y exactitud **de al menos el 2 %**; **balanza analítica con resolución de 0,1 mg**.\n- **Disolventes de calidad cromatográfica**; si hace falta agua, **ultrapura o químicamente pura**.\n- **Materiales de referencia certificados** cuya concentración **incluya el rango esperado**, y con **la relación entre las dos disoluciones no mayor de 10**, dentro de su **periodo de caducidad**.",
+      "fuente": "CEM, QU-004, apartados 5.1 y 5.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t32-f34",
+      "anverso": "Los **cuatro criterios** de comprobación del cromatograma durante una calibración.",
+      "reverso": "**QU-004, apartado 5.3.6:**\n1. **Los picos aparecen en los tiempos de retención esperados.**\n2. **La resolución de la columna entre picos es siempre superior a 1,5.**\n3. **La forma de los picos es adecuada, «no presentando colas o artefactos»** (desviaciones de la forma gaussiana).\n4. **La ventana de integración seleccionada ha sido la adecuada** y se han respetado los criterios establecidos.\nY antes de eso: **acondicionar el equipo con un blanco del disolvente y comprobar la ausencia de señal**.\n*(Son los mismos cuatro que en el QU-005 de gases: la comprobación no depende de la técnica.)*",
+      "fuente": "CEM, QU-004, apartado 5.3",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f35",
+      "anverso": "¿Qué parámetros instrumentales hay que seleccionar antes de calibrar un HPLC?",
+      "reverso": "**QU-004, 5.3.1:** *«temperatura del inyector, temperatura de la columna, **parámetros del detector empleado —longitud de onda, temperatura, etc.—**, caudal bombeado, volumen de inyección, velocidad de flujo»*, además de lo que refleje el software.\n**Y 5.3.2, el procesamiento de la señal:**\n- **Tipo de respuesta: área o altura.**\n- **Modo de integración.**\n- **Umbral mínimo** para considerar que existe señal.\nObsérvese el detalle propio del HPLC: **la longitud de onda del detector** es un parámetro de calibración, cosa que en gases no aparece.",
+      "fuente": "CEM, QU-004, apartados 5.3.1 y 5.3.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t32-f36",
+      "anverso": "¿Qué le exige el RD 3/2023 a un método de análisis, y qué el RD 817/2015 en aguas superficiales?",
+      "reverso": "**RD 3/2023 (anexo III, parte D): no impone método.** Impone rendimiento:\n- **Límite de cuantificación ≤ 30 %** del valor paramétrico.\n- **LC y LD siempre INFERIORES al valor paramétrico.**\n- **Incertidumbre** de la **tabla 15**: benzo(a)pireno **50 %**, ∑4 HPA **40 %**, bisfenol A **50 %**, PFAS **50 %**, microcistina-LR **30 %**, plaguicidas **30 %**.\n**RD 817/2015 (anexo III, C.1), aguas superficiales:** métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** al nivel de la norma de calidad ambiental y **LC ≤ 30 %** de esa NCA.",
+      "fuente": "RD 3/2023, anexo III parte D y tabla 15; RD 817/2015, anexo III C.1",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t32-f37",
+      "anverso": "¿Para qué sirve acoplar una **cromatografía de líquidos** a un **ICP-MS**?",
+      "reverso": "Para hacer **ESPECIACIÓN**: separar las **formas químicas** de un elemento y cuantificar cada una por separado.\nUn ICP-MS solo dice **cuánto cromo hay**; no distingue **Cr(III)**, que es un oligoelemento, de **Cr(VI)**, que es cancerígeno. La cromatografía separa las dos especies y el ICP-MS las cuantifica.\n**Normas:** **ISO 24384:2024**, *«determinación de cromo(VI) y cromo(III) en agua. Método usando cromatografía líquida con ICP-MS»*; e **ISO/TS 19620:2018** para las especies de **arsénico(III) y arsénico(V)** por **HPLC**.\nEs el punto donde este tema se toca con el **27**.",
+      "fuente": "Catálogo público del comité ISO/TC 147/SC 2",
+      "etiquetas": ["aplicacion"]
+    },
+    {
+      "id": "t32-f38",
+      "anverso": "¿Cuándo se elige cromatografía de **gases** y cuándo de **líquidos** para un compuesto orgánico?",
+      "reverso": "**La frontera es la VOLATILIDAD y la ESTABILIDAD TÉRMICA:**\n| | **Cromatografía de GASES** (tema 31) | **Cromatografía de LÍQUIDOS** (aquí) |\n| --- | --- | --- |\n| El analito debe ser… | **Volátil y termoestable** | Puede ser **no volátil o termolábil** |\n| En aguas | **THM, COV, organoclorados, plaguicidas apolares** | **HAP, plaguicidas polares, microcistinas, PFAS, fármacos** |\n| Si no es volátil | Hay que **derivatizar** o **extraer** | No hace falta |\n**Y las dos comparten una respuesta:** para **identificar un microcontaminante orgánico desconocido**, «cromatografía de gases **o de líquidos** con detector de masas» (1233 #5, 1246 #30).",
+      "fuente": "Cuestionarios 1233 #5 y 1246 #30; LibreTexts caps. 27 y 28",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f39",
+      "anverso": "En **cromatografía de exclusión por tamaño**, ¿qué sale antes?",
+      "reverso": "**Sale antes lo GRANDE**, que es lo contrario de lo que sugiere la intuición.\nLa fase estacionaria es una **partícula porosa o un gel**, y **los solutos grandes no pueden penetrar tan profundamente en el poro**: recorren un camino más corto y **pasan más rápido** por la columna. Los pequeños se meten en los poros, se entretienen y salen después.\nEs uno de los **cuatro tipos de cromatografía líquida** que enumera el CEM, y también se la llama **cromatografía de exclusión molecular o en geles**.",
+      "fuente": "LibreTexts, Análisis Instrumental 26.1 y 28.7; CEM, QU-004 apartado 4.2",
+      "etiquetas": ["concepto", "trampa"]
+    },
+    {
+      "id": "t32-f40",
+      "anverso": "Mapa rápido: ¿qué norma para qué analito en cromatografía de líquidos de aguas?",
+      "reverso": "| Analito | Norma | Detección |\n| --- | --- | --- |\n| **15 HAP** (benzo(a)pireno) | **UNE-EN ISO 17993** | **Fluorescencia** |\n| 6 HAP | ISO 7981-2 | Fluorescencia |\n| **Plaguicidas** | **UNE-EN ISO 11369** | **UV** |\n| Glifosato y AMPA | ISO 21458 / ISO 16308 | Fluorimetría / **MS/MS** |\n| **Microcistinas** | **ISO 20179** / ISO 22104 | **UV** / LC-MS/MS |\n| **PFAS** | **ISO 21675**; ISO 25101 | **LC-MS/MS** |\n| Fármacos | ISO 21676 | LC-MS/MS |\n| Estrógenos | ISO 13646 | LC-MS/MS |\n| Explosivos | ISO 22478 | HPLC |\n| **Especiación As y Cr** | ISO/TS 19620 / **ISO 24384** | HPLC / **LC-ICP-MS** |",
+      "fuente": "Catálogo público del comité ISO/TC 147/SC 2",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t32-f41",
+      "anverso": "¿Qué tienen en común el **gradiente** del HPLC y la **rampa** del horno de gases, dicho en una frase?",
+      "reverso": "**Que los dos resuelven el mismo problema: la condición que separa bien lo que eluye pronto deja lo que eluye tarde en picos anchos, bajos y a destiempo.**\n- En **gases** se sube la **temperatura del horno**.\n- En **líquidos** se cambia la **composición de la fase móvil**.\nY en los dos casos la alternativa simple tiene nombre propio: **isotermo** en gases, **isocrático** en líquidos.\nQuien entiende uno entiende el otro: es la misma idea aplicada a la variable que manda en cada técnica.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2 y 28.4",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t32-f42",
+      "anverso": "¿Qué **columnas capilares** hay en HPLC y qué ventaja tienen?",
+      "reverso": "Son de **sílice fundida**, con **44-200 µm** de diámetro interno y **50-250 mm** de longitud, empaquetadas con partículas de **3-5 µm**. Se han preparado con eficiencias **de hasta 250 000 platos teóricos**.\n**Dos ventajas:**\n1. **Usan menos disolvente.**\n2. **Diluyen menos la muestra**, así que **producen señales mayores en el detector**.\n**Su límite** es la **contrapresión** que desarrolla el bombeo a través de los pequeños espacios intersticiales: obliga a bajar el caudal y alargar el análisis. De ahí el interés de las **columnas monolíticas**.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t32-f43",
+      "anverso": "En fase inversa, ¿cómo se **alarga** y cómo se **acorta** el tiempo de retención?",
+      "reverso": "**En FASE INVERSA** —estacionaria apolar, móvil polar—:\n- **SUBIR la polaridad de la fase móvil → tiempos de retención MÁS LARGOS.**\n- **BAJARLA → tiempos más cortos.**\n**En FASE NORMAL es al revés:** si la resolución entre dos solutos es pobre, *«el cambio a una **fase móvil menos polar** mantiene los solutos en la columna **por más tiempo**»*.\n**Truco para no equivocarse:** el soluto se queda donde se encuentra a gusto. Si la fase móvil se parece menos al soluto, éste prefiere la estacionaria y se retiene más.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f44",
+      "anverso": "¿Qué preguntas del **primer ejercicio** son de este tema y cuál es su respuesta?",
+      "reverso": "| Qué se pregunta | Dónde | Respuesta |\n| --- | --- | --- |\n| Qué va **antes de la columna analítica** para alargar su vida | **1246 #17**, **1322 #34** | Una **PRECOLUMNA** |\n| Para qué compuestos es el **detector de conductividad** | **1246 #18**, **1322 #35** | **Compuestos IÓNICOS** |\n| Cómo **identificar** un microcontaminante orgánico | **1233 #5**, **1246 #30** | **CG o CL con detector de MASAS** |\nLas dos primeras están enunciadas literalmente **«en cromatografía líquida (HPLC)»**, y se introdujeron en el tema 30 porque la cromatografía iónica es cromatografía de líquidos.",
+      "fuente": "Cuestionarios 1246, 1322 y 1233",
+      "etiquetas": ["examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t32-f45",
+      "anverso": "Resumen de valores paramétricos del RD 3/2023 que se miden por cromatografía de líquidos.",
+      "reverso": "| Parámetro | Valor | Incertidumbre |\n| --- | --- | --- |\n| **Benzo(a)pireno** | **0,010 µg/L** | 50 % |\n| **∑4 HPA** | **0,10 µg/L** | 40 % |\n| **Plaguicida individual** | **0,10 µg/L** | 30 % |\n| **∑n Plaguicidas** | **0,50 µg/L** | 30 % |\n| **∑20 PFAS** | **0,10 µg/L** | 50 % |\n| **4 PFAS** (cada uno) | **0,07 µg/L** | 50 % |\n| **Bisfenol A** | **2,5 µg/L** | 50 % |\n| **Microcistina-LR** | **1,0 µg/L** | 30 % |\n**Y la lista de observación, en ng/L:** estradiol **1**, nonilfenol **300**, azitromicina **100**, diclofenaco **100**.",
+      "fuente": "RD 3/2023, anexo I parte B, anexo III tabla 15 y anexo IV",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t32-q01",
+      "pregunta": "¿Qué técnica utilizaría para el análisis de benzo(a)pireno en un agua de consumo?",
+      "opciones": [
+        "Gravimetría.",
+        "Cromatografía de líquidos con detector de fluorescencia.",
+        "Turbidimetría."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la respuesta documentada en 1233 C2 #2 y 1322 C2 #24. El benzo(a)pireno es un hidrocarburo aromático policíclico, y los HAP son fluorescentes: de ahí que la norma se llame «HPLC con detección por fluorescencia» (UNE-EN ISO 17993).",
+      "fuente": "Cuestionarios 1233 C2 #2 y 1322 C2 #24",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q02",
+      "pregunta": "En el RD 3/2023, el valor paramétrico del benzo(a)pireno es:",
+      "opciones": [
+        "0,010 µg/L, y no se incluye en el sumatorio ∑4 de hidrocarburos policíclicos aromáticos.",
+        "0,10 µg/L, que es el mismo del sumatorio ∑4 en el que se integra.",
+        "1,0 µg/L, igual que la microcistina-LR."
+      ],
+      "correcta": 0,
+      "explicacion": "El benzo(a)pireno tiene valor propio y diez veces más estricto que el sumatorio. La ∑4 HPA, de 0,10 µg/L, la forman benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q03",
+      "pregunta": "El parámetro ∑4 Hidrocarburos Policíclicos Aromáticos del RD 3/2023 suma:",
+      "opciones": [
+        "Benzo(a)pireno, naftaleno, antraceno y fluoranteno.",
+        "Bromodiclorometano, bromoformo, cloroformo y dibromoclorometano.",
+        "Benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno."
+      ],
+      "correcta": 2,
+      "explicacion": "Los cuatro están nombrados uno a uno en la nota 13 del anexo I, parte B, y entre ellos NO está el benzo(a)pireno, que tiene valor propio. La segunda opción son los cuatro trihalometanos (tema 31).",
+      "fuente": "RD 3/2023, anexo I, parte B, nota 13"
+    },
+    {
+      "id": "t32-q04",
+      "pregunta": "En cromatografía líquida (HPLC), antes de la columna analítica y para aumentar su vida útil, conviene usar:",
+      "opciones": ["Una microcolumna.", "Una precolumna.", "Un termostato."],
+      "correcta": 1,
+      "explicacion": "Literal en 1246 #17 y 1322 #34. La precolumna o columna de guarda retiene lo que arruinaría la columna analítica: los solutos que se unen irreversiblemente a la fase estacionaria y el material particulado. Lleva el mismo relleno, es mucho más corta y barata, y es sacrificial.",
+      "fuente": "Cuestionarios 1246 #17 y 1322 #34",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q05",
+      "pregunta": "El detector de conductividad es el más utilizado en cromatografía líquida cuando los componentes de la muestra son:",
+      "opciones": ["Compuestos iónicos.", "Compuestos con capacidad de oxidarse o reducirse.", "Compuestos fluorescentes."],
+      "correcta": 0,
+      "explicacion": "Literal en 1246 #18 y 1322 #35. Un ion en disolución conduce, así que medir conductividad es medir iones: es el detector propio de la cromatografía iónica. Los otros dos distractores describen al detector amperométrico y al de fluorescencia.",
+      "fuente": "Cuestionarios 1246 #18 y 1322 #35",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q06",
+      "pregunta": "Según el procedimiento QU-004 del Centro Español de Metrología, los componentes principales de un cromatógrafo de líquidos son:",
+      "opciones": [
+        "Cinco, los mismos que los de un cromatógrafo de gases.",
+        "Cuatro: bomba, inyector, columna y detector.",
+        "Seis, entre ellos un bloque específico de líquidos portadores y tratamiento de los disolventes."
+      ],
+      "correcta": 2,
+      "explicacion": "Son seis, frente a los cinco del cromatógrafo de gases, y la diferencia es precisamente el primer bloque: aquí la fase móvil hay que desgasificarla, filtrarla y mezclarla, mientras que en gases sale de una botella.",
+      "fuente": "CEM, QU-004 apartado 4.2; QU-005 apartado 4.2",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q07",
+      "pregunta": "El CEM enumera cuatro tipos de cromatografía de líquidos. ¿Cuál de estos NO es uno de ellos?",
+      "opciones": [
+        "Cromatografía de fluidos supercríticos.",
+        "Cromatografía de exclusión por tamaños o en geles.",
+        "Cromatografía iónica."
+      ],
+      "correcta": 0,
+      "explicacion": "Los cuatro del QU-004 son reparto, adsorción, iónica y exclusión por tamaños o en geles. La cromatografía de fluidos supercríticos es otra técnica, definida por su fase móvil, no un tipo de cromatografía líquida.",
+      "fuente": "CEM, QU-004, apartado 4.2"
+    },
+    {
+      "id": "t32-q08",
+      "pregunta": "En cromatografía de reparto en fase NORMAL:",
+      "opciones": [
+        "La fase estacionaria es no polar y los solutos polares eluyen primero.",
+        "La fase estacionaria es polar y los solutos más polares tardan más en eluir.",
+        "Ambas fases son polares y el orden de elución lo fija el punto de ebullición."
+      ],
+      "correcta": 1,
+      "explicacion": "En fase normal la estacionaria es polar y la móvil no polar o de baja polaridad: el soluto más polar es el que más se retiene y sale el último. La primera opción describe la fase inversa, que es exactamente lo contrario y es la modalidad más usada.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q09",
+      "pregunta": "En cromatografía de reparto en FASE INVERSA, los solutos más polares:",
+      "opciones": [
+        "Eluyen los últimos, porque la fase estacionaria los retiene con fuerza.",
+        "No eluyen: quedan retenidos irreversiblemente en la columna.",
+        "Eluyen los primeros, porque la fase estacionaria es no polar y los retiene menos."
+      ],
+      "correcta": 2,
+      "explicacion": "El orden de elución es el opuesto al de la fase normal. La fase estacionaria no polar típica es una cadena C8 o C18, y la fase móvil es polar: disolución acuosa tamponada, metanol o acetonitrilo.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q10",
+      "pregunta": "Una columna de HPLC cuya fase estacionaria es una cadena hidrocarbonada C18 se emplea en:",
+      "opciones": [
+        "Cromatografía de reparto en fase inversa.",
+        "Cromatografía de reparto en fase normal.",
+        "Cromatografía de intercambio iónico."
+      ],
+      "correcta": 0,
+      "explicacion": "El C18 (n-octadecilo) y el C8 (n-octilo) son las fases estacionarias no polares más comunes, propias de la fase inversa. Las fases polares de fase normal llevan grupos ciano, diol o amino, y el intercambio iónico usa resinas con grupos sulfónicos o de amina cuaternaria.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4"
+    },
+    {
+      "id": "t32-q11",
+      "pregunta": "¿Por qué el pH de la fase móvil en HPLC de fase inversa debe mantenerse por debajo de 7,5?",
+      "opciones": [
+        "Porque por encima de ese pH se descomponen la mayoría de los analitos orgánicos.",
+        "Porque el sustrato de sílice de la columna se hidroliza en disoluciones básicas.",
+        "Porque el detector UV pierde sensibilidad en medio básico."
+      ],
+      "correcta": 1,
+      "explicacion": "La fase estacionaria va unida covalentemente a partículas de sílice, y si el soporte se hidroliza se pierde la columna. Es un límite operativo de la columna, no del analito ni del detector.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q12",
+      "pregunta": "Se llama columna «terminalmente rematada» (end-capped) a aquella en la que:",
+      "opciones": [
+        "Se ha sellado el extremo de salida para evitar la pérdida de relleno.",
+        "Se ha añadido una precolumna sacrificial soldada a la analítica.",
+        "Los grupos silanol que quedaron sin reaccionar se han convertido con Si(CH₃)₃Cl para que no adsorban solutos."
+      ],
+      "correcta": 2,
+      "explicacion": "La fase estacionaria se une a la sílice con un organoclorosilano Si(CH₃)₂RCl, y el remate final desactiva los −SiOH residuales, que si no adsorberían solutos por su cuenta y degradarían la separación.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4"
+    },
+    {
+      "id": "t32-q13",
+      "pregunta": "Una separación cromatográfica en la que la fase móvil mantiene una composición fija se denomina:",
+      "opciones": [
+        "Elución isocrática.",
+        "Elución en gradiente.",
+        "Elución isoterma."
+      ],
+      "correcta": 0,
+      "explicacion": "El gradiente es justo lo contrario: la composición cambia a lo largo de la separación. «Isotermo» es el término equivalente de la cromatografía de gases, donde lo que se mantiene constante es la temperatura del horno.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q14",
+      "pregunta": "En una elución en gradiente de fase inversa, la fase móvil:",
+      "opciones": [
+        "Se mantiene constante, y lo que cambia es el caudal.",
+        "Parte de una composición más polar y se va haciendo menos polar a lo largo de la separación.",
+        "Parte de una composición menos polar y se va haciendo más polar."
+      ],
+      "correcta": 1,
+      "explicacion": "Al reducir la polaridad de la fase móvil se acorta la retención de los solutos apolares, que son los que en isocrático saldrían tarde y anchos. Es el equivalente líquido de la rampa de temperatura del horno en cromatografía de gases.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4"
+    },
+    {
+      "id": "t32-q15",
+      "pregunta": "¿Qué detector de HPLC no puede utilizarse en una elución en gradiente?",
+      "opciones": [
+        "El de fluorescencia.",
+        "El de matriz de diodos.",
+        "El de índice de refracción."
+      ],
+      "correcta": 2,
+      "explicacion": "Mide el índice de refracción de la fase móvil, así que si la composición cambia durante la separación la línea base se va con ella. Solo sería utilizable si los componentes de la fase móvil tuviesen índices de refracción idénticos. Además es el detector con peor límite de detección: 0,1-1 µg.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q16",
+      "pregunta": "De los detectores ópticos de HPLC, el de menor límite de detección es:",
+      "opciones": [
+        "El de fluorescencia, con 1-10 pg de analito inyectado.",
+        "El de absorbancia UV/visible, con 1-10 pg de analito inyectado.",
+        "El de índice de refracción, con 1-10 pg de analito inyectado."
+      ],
+      "correcta": 0,
+      "explicacion": "El de absorbancia UV/visible queda en 100 pg-1 ng y el de índice de refracción, en 0,1-1 µg. La contrapartida de la fluorescencia es que solo sirve si el analito es fluorescente, como los hidrocarburos aromáticos policíclicos.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q17",
+      "pregunta": "La ventaja de un detector de matriz de diodos (DAD) frente a un detector UV de longitud de onda fija es que:",
+      "opciones": [
+        "Tiene un límite de detección tres órdenes de magnitud menor.",
+        "Registra todo el espectro en cada instante, lo que da un cromatograma tridimensional y permite comprobar la pureza del pico.",
+        "Permite trabajar con fases móviles que absorben a la longitud de onda medida."
+      ],
+      "correcta": 1,
+      "explicacion": "El límite de detección es el mismo, y la limitación de que la fase móvil no puede absorber sigue valiendo. Lo que aporta el DAD es información: absorbancia frente a longitud de onda y tiempo, con lo que se detecta si dos compuestos coeluyen.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q18",
+      "pregunta": "La principal limitación del detector de absorbancia UV/visible en HPLC es que:",
+      "opciones": [
+        "Destruye la muestra, lo que impide recuperar el analito.",
+        "Solo responde a compuestos iónicos.",
+        "La fase móvil no puede absorber en las longitudes de onda que se desea monitorizar."
+      ],
+      "correcta": 2,
+      "explicacion": "Eso condiciona la elección del disolvente. El detector que solo responde a compuestos iónicos es el de conductividad, y el UV/visible no destruye la muestra: la celda de flujo es de 1-10 µL y el eluyente sale intacto.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q19",
+      "pregunta": "En cromatografía de líquidos la muestra se introduce con un inyector de bucle porque:",
+      "opciones": [
+        "La presión de trabajo, de varios cientos de atmósferas, no permite pinchar un septo con jeringa.",
+        "El bucle permite calentar la muestra para volatilizarla antes de la columna.",
+        "La jeringa introduciría aire disuelto que dañaría la fase estacionaria."
+      ],
+      "correcta": 0,
+      "explicacion": "En cromatografía de gases basta la presión de un cilindro y sí se pincha el septo. Además el bucle aporta reproducibilidad: el volumen inyectado lo fija el propio bucle, disponible de 0,5 µL a 5 mL. Y en HPLC no hay que volatilizar nada.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q20",
+      "pregunta": "¿Por qué se desgasifica la fase móvil antes de usarla en HPLC?",
+      "opciones": [
+        "Para que la fase estacionaria no se oxide con el oxígeno disuelto.",
+        "Porque a la salida de la columna la presión cae a la atmosférica y los gases disueltos se liberan como burbujas que interfieren en la respuesta del detector.",
+        "Para reducir la viscosidad y poder trabajar con caudales mayores."
+      ],
+      "correcta": 1,
+      "explicacion": "Se desgasifica con bomba de vacío o burbujeando helio, que tiene baja solubilidad en la fase móvil. Además se filtra el disolvente, porque las partículas obstruyen el tubo y la columna.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q21",
+      "pregunta": "Una columna analítica típica de HPLC está empaquetada con:",
+      "opciones": [
+        "Tierra de diatomeas de 149-177 µm.",
+        "Perlas de resina de intercambio iónico de 0,30-0,85 mm.",
+        "Partículas porosas de sílice de 3-10 µm."
+      ],
+      "correcta": 2,
+      "explicacion": "El tubo es de acero inoxidable, de 2,1 a 4,6 mm de diámetro interno y de 30 a 300 mm de longitud, con eficiencias de 40 000 a 60 000 platos teóricos por metro. La tierra de diatomeas rellena las columnas empaquetadas de cromatografía de gases.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q22",
+      "pregunta": "Si se reduce a la mitad el tamaño de partícula del relleno de una columna de HPLC:",
+      "opciones": [
+        "La eficiencia aumenta en un factor de 1,4, pero la contrapresión se multiplica por 4.",
+        "Tanto la eficiencia como la contrapresión se duplican.",
+        "La eficiencia se duplica y la contrapresión no varía."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el gran compromiso del HPLC: partículas más pequeñas dejan espacios intersticiales más pequeños. Como los tubos y racores tienen límite de presión, más contrapresión obliga a bajar el caudal y alargar el análisis. La columna monolítica es la salida a ese callejón.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.3"
+    },
+    {
+      "id": "t32-q23",
+      "pregunta": "El ensanchamiento de banda extracolumna, característico del HPLC, se debe a:",
+      "opciones": [
+        "La difusión longitudinal del soluto dentro de la fase estacionaria.",
+        "Los tubos de conexión entre el inyector y la columna, y entre la columna y el detector, en los que no hay fase estacionaria.",
+        "El uso de detectores no destructivos."
+      ],
+      "correcta": 1,
+      "explicacion": "En esos tubos el soluto viaja más despacio junto a la pared y más deprisa en el centro, y la banda se ensancha sin que la columna intervenga. Se minimiza con tubos cortos, de diámetro interno pequeño y caudales bajos.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.2"
+    },
+    {
+      "id": "t32-q24",
+      "pregunta": "Respecto de la microcistina-LR en el RD 3/2023, señale la afirmación correcta:",
+      "opciones": [
+        "Se controla siempre, con independencia del origen del agua.",
+        "Su valor paramétrico es de 0,10 µg/L, el mismo que el de la ∑4 HPA.",
+        "Su valor paramétrico es de 1,0 µg/L y solo se controla cuando el origen del agua sea total o parcialmente de embalse, lago o laguna."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una toxina de cianobacterias, que proliferan en aguas embalsadas: de ahí la condición de la nota 5. Y si se supera 1 µg/L, el anexo II obliga además a controlar clorofila a, que es el indicador de la biomasa algal.",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2 nota 5, y anexo II",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q25",
+      "pregunta": "En cuanto a las sustancias perfluoroalquiladas y polifluoroalquiladas (PFAS) del RD 3/2023:",
+      "opciones": [
+        "El parámetro ∑20 PFAS tiene un valor de 0,10 µg/L, y los cuatro PFAS controlados antes de 2024 tenían un valor de 0,07 µg/L cada uno.",
+        "Solo existe el parámetro ∑20 PFAS, con un valor de 0,07 µg/L.",
+        "Se determinan por cromatografía iónica de aniones, por tratarse de ácidos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los cuatro son PFOA, PFOS, PFNA y PFHxS, con límite de detección siempre inferior a 0,07 µg/L. Se determinan por extracción en fase sólida y LC-MS/MS (ISO 21675), no por cromatografía iónica.",
+      "fuente": "RD 3/2023, anexo I parte B, notas 14 y 15; ISO 21675:2019",
+      "nucleo": true
+    },
+    {
+      "id": "t32-q26",
+      "pregunta": "La lista de observación nacional del anexo IV del RD 3/2023 incluye, entre otros:",
+      "opciones": [
+        "Cloroformo y bromoformo, con un valor de referencia de 100 µg/L.",
+        "17β-estradiol, nonilfenol, azitromicina y diclofenaco, con valores de referencia en nanogramos por litro.",
+        "Radón, tritio y dosis indicativa, con valores en becquerelios por litro."
+      ],
+      "correcta": 1,
+      "explicacion": "Estradiol 1 ng/L, nonilfenol 300 ng/L, azitromicina 100 ng/L y diclofenaco 100 ng/L: en la práctica, una lista de LC-MS/MS. Los trihalometanos son del anexo I parte B y los parámetros radiactivos, del anexo I parte E (tema 29).",
+      "fuente": "RD 3/2023, anexo IV, tabla 16",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t32-s01",
+      "titulo": "Supuesto 1. Orgánicos poco volátiles en un agua de consumo",
+      "enunciado": "Se recibe una muestra de **agua de consumo** en la que hay que determinar **benzo(a)pireno**, el sumatorio de **hidrocarburos policíclicos aromáticos** y un **herbicida polar** que se sabe que **se descompone en el inyector de un cromatógrafo de gases**.\n\nEl laboratorio dispone de un **HPLC** con columna **C18**, detectores **UV/DAD** y de **fluorescencia**, y capacidad para trabajar en **gradiente**.",
+      "preguntas": [
+        {
+          "id": "t32-s01-q1",
+          "pregunta": "¿Qué técnica y qué detector indicaría para el benzo(a)pireno?",
+          "opciones": [
+            "Cromatografía iónica con detector de conductividad.",
+            "Espectrometría de masas con plasma acoplado inductivamente.",
+            "Cromatografía de líquidos con detector de fluorescencia.",
+            "Turbidimetría."
+          ],
+          "correcta": 2,
+          "explicacion": "Es la respuesta documentada en 1233 C2 #2 y 1322 C2 #24. El benzo(a)pireno es un HAP y los HAP son fluorescentes, lo que da un detector muy sensible (1-10 pg) y muy selectivo frente a la matriz. El ICP-MS es de metales y la cromatografía iónica, de iones inorgánicos.",
+          "fuente": "Cuestionarios 1233 C2 #2 y 1322 C2 #24; UNE-EN ISO 17993:2004"
+        },
+        {
+          "id": "t32-s01-q2",
+          "pregunta": "¿Cómo se comparan el valor paramétrico del benzo(a)pireno y el del sumatorio de HAP?",
+          "opciones": [
+            "El benzo(a)pireno tiene valor propio, 0,010 µg/L, y no se incluye en la ∑4 HPA, que vale 0,10 µg/L.",
+            "Son el mismo parámetro: el benzo(a)pireno es uno de los cuatro del sumatorio.",
+            "El benzo(a)pireno vale 0,10 µg/L y la ∑4 HPA, 0,010 µg/L.",
+            "El RD 3/2023 no fija valor para el benzo(a)pireno, solo para el sumatorio."
+          ],
+          "correcta": 0,
+          "explicacion": "El benzo(a)pireno es el más cancerígeno del grupo y por eso lleva un valor diez veces más estricto y separado. La ∑4 la forman benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno.",
+          "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13"
+        },
+        {
+          "id": "t32-s01-q3",
+          "pregunta": "¿Qué norma cubre la determinación de los HAP por esta técnica?",
+          "opciones": [
+            "UNE-EN ISO 11369, agentes para el tratamiento de las plantas por HPLC con detección UV.",
+            "UNE-EN ISO 10301, hidrocarburos halogenados altamente volátiles por cromatografía de gases.",
+            "ISO 7981-1, seis HAP por cromatografía en capa fina de alta resolución.",
+            "UNE-EN ISO 17993, quince HAP en agua mediante HPLC con detección por fluorescencia tras extracción líquido-líquido."
+          ],
+          "correcta": 3,
+          "explicacion": "La ISO 7981-2 también determina HAP por HPLC con fluorescencia, pero solo seis; y su parte 1, que es la ofrecida aquí, no es HPLC sino cromatografía en capa fina. La 11369 es la de plaguicidas y la 10301, la de volátiles halogenados por gases.",
+          "fuente": "UNE-EN ISO 17993:2004; catálogo ISO/TC 147/SC 2"
+        },
+        {
+          "id": "t32-s01-q4",
+          "pregunta": "El herbicida polar se descompone en el inyector de un cromatógrafo de gases. ¿Qué procede?",
+          "opciones": [
+            "Determinarlo igualmente por cromatografía de gases, bajando la temperatura del inyector por debajo del punto de ebullición del disolvente.",
+            "Determinarlo por HPLC con detección UV, que es justamente la vía para los plaguicidas polares o termolábiles.",
+            "Determinarlo por cromatografía iónica de aniones, por tratarse de un compuesto polar.",
+            "Determinarlo por absorción atómica con cámara de grafito."
+          ],
+          "correcta": 1,
+          "explicacion": "Es el criterio que separa el tema 31 de éste: lo volátil y termoestable va por gases; lo no volátil o termolábil, por líquidos. La norma es la UNE-EN ISO 11369, HPLC con detección UV tras extracción sólido-líquido. La cromatografía iónica es para iones inorgánicos y la absorción atómica, para metales.",
+          "fuente": "UNE-EN ISO 11369:1998; LibreTexts caps. 27 y 28"
+        },
+        {
+          "id": "t32-s01-q5",
+          "pregunta": "Los quince HAP abarcan desde el naftaleno hasta compuestos de seis anillos, con retenciones muy distintas. ¿Qué modo de elución conviene?",
+          "opciones": [
+            "Isocrática con fase móvil muy polar, para que todo eluya deprisa.",
+            "Isocrática con fase móvil muy apolar, para retener bien los primeros picos.",
+            "Isoterma, subiendo la temperatura de la columna a lo largo de la separación.",
+            "En gradiente, partiendo de una fase móvil más polar y haciéndola menos polar a lo largo de la separación."
+          ],
+          "correcta": 3,
+          "explicacion": "Es el problema clásico: con composición fija, la fuerza que resuelve los primeros picos deja los últimos anchos, bajos y muy tardíos, y al revés. El gradiente resuelve los dos extremos. «Isoterma» es el término de la cromatografía de gases: en líquidos lo que se programa es la composición, no la temperatura.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.4"
+        }
+      ]
+    },
+    {
+      "id": "t32-s02",
+      "titulo": "Supuesto 2. Lista de observación y puesta a punto del equipo",
+      "enunciado": "Una zona de abastecimiento de **tipo 5** debe controlar los parámetros de la **lista de observación nacional**: **17β-estradiol, nonilfenol, azitromicina y diclofenaco**.\n\nEl laboratorio monta el método en un **HPLC con columna C18** y prepara la calibración con materiales de referencia certificados.",
+      "preguntas": [
+        {
+          "id": "t32-s02-q1",
+          "pregunta": "La azitromicina y el diclofenaco tienen un valor de referencia de 100 ng/L. ¿Qué técnica permite llegar ahí?",
+          "opciones": [
+            "Cromatografía de gases con detector de captura electrónica.",
+            "Extracción en fase sólida y cromatografía líquida con espectrometría de masas en tándem (LC-MS/MS).",
+            "Espectrofotometría de absorción molecular UV-visible.",
+            "Cromatografía iónica de cationes con supresor."
+          ],
+          "correcta": 1,
+          "explicacion": "A nivel de nanogramos por litro ni el UV ni la fluorescencia llegan, y los dos analitos son polares y no volátiles, lo que descarta la cromatografía de gases. La norma de fármacos es la ISO 21676, y para el estradiol, la ISO 13646, las dos por SPE y LC-MS/MS.",
+          "fuente": "RD 3/2023, anexo IV; catálogo ISO/TC 147/SC 2"
+        },
+        {
+          "id": "t32-s02-q2",
+          "pregunta": "¿Con qué frecuencia mínima debe controlar esta zona de abastecimiento los parámetros de la lista de observación?",
+          "opciones": [
+            "Al menos una vez al cuatrimestre, por tratarse de una zona de tipo 5.",
+            "Una vez al año, como todas las zonas de abastecimiento.",
+            "Una vez cada cinco años, igual que el control de radiactividad de la zona tipo 2.",
+            "No se controlan: la lista de observación es meramente informativa."
+          ],
+          "correcta": 0,
+          "explicacion": "El anexo IV fija, a la salida del tratamiento o del depósito de cabecera, al menos una vez al cuatrimestre en las zonas tipo 4, 5 y 6, y una vez al año en las de tipo 2 y 3. Y sí se controlan: es una obligación, aunque sus valores sean «de referencia» y no paramétricos.",
+          "fuente": "RD 3/2023, anexo IV, punto 3"
+        },
+        {
+          "id": "t32-s02-q3",
+          "pregunta": "La columna es de C18. De dos analitos de polaridad distinta, ¿cuál eluirá antes?",
+          "opciones": [
+            "El más apolar, porque la fase estacionaria es polar.",
+            "Eluirán a la vez: en fase inversa el orden lo fija la masa molecular.",
+            "El más polar, porque con fase estacionaria no polar es el que menos se retiene.",
+            "El más polar, pero solo si se trabaja en isocrático."
+          ],
+          "correcta": 2,
+          "explicacion": "El C18 es una cadena hidrocarbonada: fase estacionaria no polar, es decir, fase inversa. El orden de elución es el opuesto al de la fase normal, y no depende del modo de elución: el gradiente cambia los tiempos, no el orden de polaridades.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.4"
+        },
+        {
+          "id": "t32-s02-q4",
+          "pregunta": "Se plantea usar un detector de índice de refracción como respaldo. ¿Es viable en este método?",
+          "opciones": [
+            "Sí, porque es un detector casi universal y responde a todos los analitos.",
+            "Sí, siempre que se trabaje por debajo de pH 7,5.",
+            "Sí, pero solo si se acopla a una columna monolítica.",
+            "No: su límite de detección es de 0,1-1 µg y además no puede usarse en elución en gradiente, salvo que los componentes de la fase móvil tengan índices de refracción idénticos."
+          ],
+          "correcta": 3,
+          "explicacion": "Las dos razones se suman y cualquiera bastaría. A 100 ng/L el índice de refracción está tres órdenes de magnitud por debajo de lo necesario, y si la composición de la fase móvil cambia durante la separación, la línea base se va con ella.",
+          "fuente": "LibreTexts, Análisis Instrumental 28.3"
+        },
+        {
+          "id": "t32-s02-q5",
+          "pregunta": "Al calibrar, el cromatograma muestra los picos esperados pero la resolución entre dos de ellos es de 1,2 y uno presenta cola. Según el QU-004 del CEM, ¿qué procede?",
+          "opciones": [
+            "Dar la calibración por válida: por encima de 1,0 la separación ya es completa.",
+            "No dar por buena la comprobación del cromatograma: el CEM exige resolución siempre superior a 1,5 y picos sin colas ni artefactos.",
+            "Sustituir el material de referencia certificado por otro de concentración diez veces mayor.",
+            "Integrar manualmente, porque la forma del pico no es criterio de aceptación."
+          ],
+          "correcta": 1,
+          "explicacion": "El apartado 5.3.6 obliga a confirmar cuatro cosas: picos en los tiempos de retención esperados, resolución de la columna siempre superior a 1,5, forma de pico adecuada sin colas ni artefactos, y ventana de integración correcta. Son los mismos cuatro criterios que el QU-005 exige en cromatografía de gases.",
+          "fuente": "CEM, QU-004, apartado 5.3.6"
+        }
+      ]
+    }
+  ]
+}
