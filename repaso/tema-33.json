@@ -1,0 +1,981 @@
+{
+  "tema": 33,
+  "titulo": "Análisis de agua de consumo. Tipos de análisis para verificar su aptitud al consumo. Determinación de cloro, amonio, nitritos, oxidabilidad, dureza, alcalinidad.",
+  "generadoDe": "temas/tema-33.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-22",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t33-f01",
+      "anverso": "¿Qué es **la dureza del agua**? Responde con las palabras exactas del examen.",
+      "reverso": "**«Se corresponde con el contenido de SALES DE CALCIO Y MAGNESIO.»**\nEs **núcleo repetido**: idéntica en **1246 #22** y en **1322 #39**.\nLos dos distractores, también idénticos los dos años:\n- *«Es el contenido de ión hidrógeno de un agua»* → eso es el **pH**.\n- *«Es el contenido de sodio en un agua»* → el sodio tiene su propio valor paramétrico (200 mg/L) y nada que ver.",
+      "fuente": "Cuestionarios 1246 #22 y 1322 #39",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f02",
+      "anverso": "Según el RD 3/2023, **¿en qué unidades se expresa la dureza**? ¿Y cuál es su valor de referencia?",
+      "reverso": "**En mg/L de CARBONATO CÁLCICO (CaCO₃).** Pregunta de reserva **1246 R2**; los distractores eran *carbonato sódico* y *calcio*.\n**Valor de referencia: 500 mg/L CaCO₃** (anexo I, parte F, tabla 7, nº 65).\n**Y el detalle raro de su nota:** en las aguas **desalinizadas o ablandadas** hay además un **mínimo de 55 mg/L CaCO₃**. La dureza tiene techo general y, en aguas tratadas, también suelo: un agua demasiado blanda es **agresiva**.",
+      "fuente": "Cuestionario 1246 R2; RD 3/2023, anexo I parte F, tabla 7 y su nota 1",
+      "etiquetas": [
+        "examen",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f03",
+      "anverso": "¿Qué es **la alcalinidad de un agua**? Palabras exactas del examen, y cuál es el distractor peligroso.",
+      "reverso": "**«Se corresponde con el contenido en BICARBONATO, CARBONATOS E HIDRÓXIDOS.»** Pregunta de reserva **1246 R3**.\n**El distractor peligroso** es *«se corresponde con el contenido de anhídrido carbónico libre y ácidos minerales»*: eso es **la ACIDEZ**, justo lo contrario.\nEl tercero, *«presencia de alta contaminación por plaguicidas»*, se descarta solo.\n**Definición técnica:** capacidad del agua de **neutralizar ácidos**, o sea la **suma de todas las bases valorables**.",
+      "fuente": "Cuestionario 1246 R3; IDEAM SLC-I029 v5, principio del método 2320-B",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f04",
+      "anverso": "¿Qué es el **cloro libre residual** y qué es el **cloro combinado residual**?",
+      "reverso": "**Cloro libre residual = ÁCIDO HIPOCLOROSO (HOCl) + IÓN HIPOCLORITO (OCl⁻)** que queda tras clorar. Es la respuesta literal de **1246 #34**.\n**Cloro combinado residual = las CLORAMINAS**, es decir los compuestos que el cloro forma con el **amoniaco y otros compuestos nitrogenados** del agua.\n**Y aquí está la trampa del examen:** en esa misma pregunta, el distractor *«a los compuestos que forma el cloro con el amoniaco…»* no es una opción absurda, **es la definición del COMBINADO**. Hay que leer cuál de los dos piden.",
+      "fuente": "Cuestionario 1246 #34; RD 3/2023, anexo I parte C, tabla 3",
+      "etiquetas": [
+        "examen",
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f05",
+      "anverso": "¿Qué método se usa para medir **la materia orgánica en agua**? Dos preguntas del primer ejercicio y una de un supuesto.",
+      "reverso": "**El MÉTODO DEL PERMANGANATO**, es decir el **índice de permanganato** u **oxidabilidad**.\n- **1233 #3** y **1246 #29**: *«¿Qué método de los siguientes utilizaría para la medida de la materia orgánica en agua?»* Distractores: **complexometría** (que es la dureza) y **electrodo selectivo**.\n- **1322 C2 #22**, al revés: *«Oxidabilidad»* → **permanganimetría**, frente a potenciometría, CG y CL.\nEs **núcleo repetido** en dos convocatorias del primer ejercicio.",
+      "fuente": "Cuestionarios 1233 #3, 1246 #29 y 1322 C2 #22",
+      "etiquetas": [
+        "examen",
+        "aplicacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f06",
+      "anverso": "¿Qué parámetro químico se relaciona **directamente con la conductividad** de un agua de consumo?",
+      "reverso": "**LA DUREZA** (1233 #6). Los distractores eran **DQO** y **plaguicidas**.\n**La lógica que lo resuelve:** la conductividad mide **iones disueltos**. El **calcio y el magnesio** son iones **divalentes** y abundantes, así que un agua dura conduce más. La **DQO** y los **plaguicidas** son materia **orgánica**: no aportan iones y no conducen.\nY encaja con los valores: conductividad **2 500 µS/cm a 20 °C**, dureza **500 mg/L CaCO₃**.",
+      "fuente": "Cuestionario 1233 #6; RD 3/2023, anexo I partes C y F",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f07",
+      "anverso": "Artículo 6.2 del RD 3/2023: si un agua **supera el valor paramétrico de un indicador** de la parte C, ¿queda no apta?",
+      "reverso": "**NO.** El artículo 6.2 lo dice con todas las letras: *«la superación de los valores paramétricos NO presupondrá una calidad no apta, y se deberán tomar las medidas correctoras adecuadas y cumplir lo dispuesto en las notas de la tabla 3»*.\n**Lo que sí la deja no apta es rebasar el «VALOR DE NO APTITUD»**, que cada nota de la tabla 3 fija aparte.\nPor eso la tabla 3 tiene **dos números por parámetro**, y hay que aprenderse los dos.",
+      "fuente": "RD 3/2023, artículo 6",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f08",
+      "anverso": "De los seis parámetros del enunciado, **¿cuál hace el agua NO APTA si se supera**, y por qué?",
+      "reverso": "**LOS NITRITOS**, porque son el único que está en la **parte B (parámetros QUÍMICOS)**, no en la parte C.\n| Parámetro | Parte del anexo I |\n| --- | --- |\n| Cloro libre, cloro combinado, amonio, oxidabilidad | **C** (indicadores) |\n| **Nitritos** | **B** (químicos) → **no apta** |\n| Dureza | **F** (caracterización; ni siquiera es valor paramétrico) |\n| Alcalinidad | **No está en el anexo I** |\n**Cada uno vive en una parte distinta**: es la trampa más probable del tema.",
+      "fuente": "RD 3/2023, anexo I partes B, C y F",
+      "etiquetas": [
+        "trampa",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f09",
+      "anverso": "¿Cuántos **tipos de análisis** define el RD 3/2023 y cómo se llaman?",
+      "reverso": "**OCHO** (anexo II, parte A.2):\n1. **Control de rutina**\n2. **Análisis de control**\n3. **Análisis completo**\n4. **Control de radiactividad**\n5. **Control operacional**\n6. **Caracterización del agua**\n7. **Control en grifo**\n8. **Control en buque**\n**Cuéntalos antes de responder.** Es lo primero que se pregunta de este tema y lo más fácil de fallar por aproximación.",
+      "fuente": "RD 3/2023, anexo II parte A.2",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f10",
+      "anverso": "¿Qué se controla en un **control de rutina**, y cada cuánto se hace?",
+      "reverso": "**Siempre:** color, sabor y olor **al menos organolépticamente**; **turbidez** y **pH** (los dos *«con kit, o en laboratorio, o en línea»*).\n**Si se usan productos que liberen o generen cloro activo**, además: **cloro libre residual**.\n**Frecuencia: SEMANAL**, *«siempre y cuando en esa semana no se haya realizado un análisis de control o completo»* (anexo II, parte C.1.d).\n**Su objeto** es doble: valorar las **características organolépticas** y **controlar la desinfección**.",
+      "fuente": "RD 3/2023, anexo II partes A.2.a, B.1 y C.1.d",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f11",
+      "anverso": "En un **análisis de control**, ¿qué tres parámetros se añaden **si se realiza cloraminación**?",
+      "reverso": "**NITRITOS, CLORO COMBINADO RESIDUAL y AMONIO.** Los tres a la vez.\n**Y tiene toda la lógica:** al generar monocloraminas hay que vigilar **el amonio** que se añade, **el cloro combinado** que se forma y **los nitritos** que aparecen cuando esa cloramina se degrada por nitrificación en la red.\n**Esta misma terna se repite en el CONTROL EN GRIFO**, también condicionada a la cloraminación. Aparece **dos veces** en el anexo II.",
+      "fuente": "RD 3/2023, anexo II partes B.2 y B.7",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f12",
+      "anverso": "En el **análisis completo**, ¿cuándo se controla **oxidabilidad** y cuándo **carbono orgánico total**?",
+      "reverso": "| Zona de abastecimiento | Se controla |\n| --- | --- |\n| Tipo **1, 2 y 3** | **OXIDABILIDAD** |\n| Tipo **4, 5 y 6** | **CARBONO ORGÁNICO TOTAL** |\n**La regla en una línea: abastecimientos PEQUEÑOS, oxidabilidad; GRANDES, COT.** El corte está en los **1 000 m³/día**, que es la frontera entre la zona tipo 3 y la tipo 4.\n**La razón es práctica:** el índice de permanganato es una volumetría barata que hace cualquier laboratorio pequeño; el COT exige un analizador dedicado.",
+      "fuente": "RD 3/2023, anexo II parte B.3 y parte C tabla 8",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f13",
+      "anverso": "¿Qué se controla en la **caracterización del agua**, dónde y con qué frecuencia?",
+      "reverso": "**DUREZA, CALCIO, MAGNESIO y POTASIO.** Los cuatro, siempre.\n- **Dónde:** solo en **red de distribución**.\n- **Frecuencia:** *«al menos una vez por SEMESTRE»* (anexo II, parte C.1.e).\n- **Para qué:** *«facilitar al CIUDADANO las características generales del agua»*. No es un control sanitario.\n**Y se publica:** el anexo VIII obliga a la administración local o al operador a poner esos cuatro resultados **en línea**, actualizados al menos semestralmente.",
+      "fuente": "RD 3/2023, anexo II partes A.2.f, B.6 y C.1.e; anexo VIII parte B.1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f14",
+      "anverso": "Mirando esta curva: **¿por qué un agua con mucho amonio encarece y estropea la cloración?**",
+      "reverso": "Porque **el amonio consume cloro antes de que sobre nada útil**. Hay que **dosificar mucho más** para llegar al final de la curva.\n**El RD lo dice sin rodeos** en la nota 5 de la tabla 3: *«una elevada concentración de amonio reduce la eficacia de la desinfección, por lo que en ningún momento debe sobrepasar 1,00 mg/L»*.\nY por eso el amonio tiene **valor paramétrico 0,50 mg/L**, **valor de no aptitud 1,00 mg/L** y una advertencia extra: por encima de **0,7 mg/L**, medidas correctoras **de rápida aplicación**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 42 y nota 5; UPCT OCW, tema 8",
+      "etiquetas": [
+        "fundamento",
+        "valores"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "cloracion-punto-ruptura"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t33-f15",
+      "anverso": "¿Qué **cuatro tipos de cloración** hay, y en qué se distinguen?",
+      "reverso": "| Tipo | En qué consiste |\n| --- | --- |\n| **Cloración simple** | Dosis que deje **0,1-0,2 ppm de residual tras 10 min**, sin distinguir libre de combinado. Solo para aguas muy poco contaminadas |\n| **Cloro + amoniaco (cloraminación)** | Se añade amoniaco para formar cloraminas: más **estables** en el agua, pero con **menor poder desinfectante** |\n| **Hipercloración** | Dosis muy superiores a la demanda; obliga después a **declorar**. **Muy cara** |\n| **Cloración al punto de ruptura** | Dosis suficiente para oxidarlo todo y que **sobre cloro LIBRE residual** |",
+      "fuente": "UPCT OCW, «Abastecimiento de aguas», tema 8",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f16",
+      "anverso": "¿Por qué el RD exige **pH inferior a 8,0** para dar por buena la desinfección con cloro?",
+      "reverso": "Porque **el pH decide en qué forma está el cloro**, y las dos formas no desinfectan igual.\n| pH | Forma dominante |\n| --- | --- |\n| **Menor de 5** | Todo **ácido hipocloroso**, que es el bueno |\n| **Por encima de 7,5** a 20 °C (o de 7,8 a 10 °C) | Empieza a mandar el **ión hipoclorito** |\n| **En torno a 9,5** | Prácticamente solo **ión hipoclorito** |\nEl **ácido hipocloroso** es, después del dióxido de cloro, **el más germicida de todos los compuestos del cloro**. Al subir el pH se disocia y **pierde eficacia**.\n**De ahí sale la receta de la nota 8:** **30 minutos**, al menos **0,5 mg/L**, **pH menor de 8,0** y turbidez máxima de **1 UNF**.",
+      "fuente": "UPCT OCW tema 8; RD 3/2023, anexo I parte C, tabla 3 nota 8",
+      "etiquetas": [
+        "fundamento",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f17",
+      "anverso": "Valores del RD para el **cloro libre** y el **cloro combinado** residuales, con sus valores de no aptitud.",
+      "reverso": "| Parámetro | Valor paramétrico | **No aptitud** | Incertidumbre |\n| --- | --- | --- | --- |\n| **Cloro libre residual** | **1,0 mg/L** | **5,0 mg/L** | 25 % |\n| **Cloro combinado residual** | **2,0 mg/L** | **3,0 mg/L** | 20 % |\n**Fíjate en lo contraintuitivo:** el **combinado** tiene el valor paramétrico **más alto** (2,0 frente a 1,0), pero el valor de no aptitud **más bajo** (3,0 frente a 5,0). Se cruzan.\nLos dos VP son para **red de distribución, cisterna, depósito de distribución o de regulación, y grifo**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 44 y 45 con sus notas 7 y 8; anexo III tabla 15",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f18",
+      "anverso": "Si la desinfección se hace con **dióxido de cloro**, ¿qué residual se mide y con qué límite?",
+      "reverso": "**Se mide el dióxido de cloro, y el límite es 0,8 mg/L**, no el 1,0 mg/L del cloro libre.\nEs la última frase de la **nota 8**: *«En caso de utilizar dióxido de cloro, el residual a medir será este y se aplicará un límite de 0,8 mg/L»*.\n**Es un dato pequeño y muy preguntable:** cambia el analito **y** cambia el número.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 8",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f19",
+      "anverso": "¿Qué recomienda el RD sobre los niveles de **cloro libre en la red**, y qué pasa si el **combinado** pasa de 2 mg/L?",
+      "reverso": "**En la red:** se recomienda que existan **al menos 0,2 mg/L** de cloro libre residual **en todos los puntos** de la red de distribución (nota 8).\n**Si el combinado pasa de 2 mg/L** con cloraminación: medidas correctoras de rápida aplicación y, *«cuando la autoridad lo considere necesario»*, el operador deberá determinar **NDMA (CAS 62-75-9)** (nota 7).\n**Y si NO se clorama** pero el combinado a la salida del tratamiento supera **1 mg/L**: medidas rápidas y **revisión de los niveles de cloro libre**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, notas 7 y 8",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f20",
+      "anverso": "Con **monocloraminas**, ¿en qué momento se mide el amonio y por qué?",
+      "reverso": "**ANTES de añadir el amoniaco** necesario para generar la monocloramina.\nLa nota 5 lo dice así: *«se medirá el amonio, como INDICADOR DE CONTAMINACIÓN, antes de añadir el amoniaco necesario para generar la monocloramina»*.\n**La razón es evidente en cuanto se piensa:** si se mide después, no se está midiendo la contaminación del agua, **se está midiendo el reactivo que acabas de echar**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 5",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f21",
+      "anverso": "Valores paramétricos de los **nitritos**: ¿por qué son **dos** y qué condición combinada hay que cumplir?",
+      "reverso": "| Dónde | Valor paramétrico |\n| --- | --- |\n| Red de distribución y depósito de distribución o regulación | **0,50 mg/L** |\n| **Salida de ETAP o de depósito de cabecera** | **0,10 mg/L** |\n**La condición combinada con el nitrato (nota 6):**\n**[nitrato] / 50 + [nitrito] / 3 ≤ 1**, con las concentraciones en mg/L, **tras la potabilización**, y ahí el nitrito que cuenta es el de **0,10 mg/L a la salida de la ETAP**.\n**Por qué dos valores:** a la salida de planta el nitrito delata **nitrificación en el propio tratamiento** o desinfección incompleta; en la red, **nitrificación de las cloraminas** en tramos de baja velocidad.",
+      "fuente": "RD 3/2023, anexo I parte B, tabla 2 nº 27 y notas 6 y 7",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f22",
+      "anverso": "¿Qué mide la **oxidabilidad**, en qué unidades, y qué valores tiene?",
+      "reverso": "Mide **la materia orgánica oxidable del agua**, expresada en **mg/L de O₂**. Es una medida **global e indirecta**: no dice qué compuestos hay, sino cuánta **capacidad reductora** tiene el agua.\n| Valor paramétrico | **No aptitud** | Incertidumbre |\n| --- | --- | --- |\n| **5,0 mg/L** | **7,0 mg/L** | **50 %** (la más alta de sus vecinas) |\n**Nota 13, corta y contundente:** *«En cuanto se supere el VP hay que tomar medidas correctoras DE FORMA INMEDIATA»*. Es de las pocas notas del RD que no dice «de rápida aplicación» sino **«inmediata»**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 50 y nota 13; anexo III tabla 15",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f23",
+      "anverso": "¿Cuál es **el único parámetro físico-químico cuyo método nombra el RD 3/2023**?",
+      "reverso": "**LA OXIDABILIDAD.** La **nota 6 de la tabla 15** dice literalmente:\n*«Método de análisis referencia es la **UNE-EN ISO 8467**. Calidad del agua. Determinación del índice de permanganato **u otro método con resultados equivalentes**.»*\n**Sigue sin ser una imposición** —admite equivalentes—, pero es **el único guiño** que el RD hace a una norma concreta fuera de los parámetros microbiológicos.\nPara todo lo demás, el RD solo exige **criterios de rendimiento**: límite de cuantificación **≤ 30 %** del valor paramétrico y la **incertidumbre** de la tabla 15.",
+      "fuente": "RD 3/2023, anexo III parte D, tabla 15 nota 6",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f24",
+      "anverso": "Describe el **método del índice de permanganato** (ISO 8467): reactivos, tiempo y tipo de valoración.",
+      "reverso": "- Se calienta la muestra en **BAÑO DE AGUA HIRVIENDO** con una cantidad conocida de **permanganato potásico y ácido sulfúrico**, durante un tiempo fijo de **10 MINUTOS**.\n- La materia oxidable **reduce parte del permanganato**.\n- El permanganato consumido se determina **añadiendo un exceso de OXALATO** y **valorando POR RETROCESO con permanganato**.\n**Condiciones:** aplicable a aguas con **cloruro inferior a 300 mg/L**; las muestras por encima de **10 mg/L** deben **diluirse**; **límite inferior del intervalo óptimo, 0,5 mg/L**.\nEs, por tanto, **una volumetría redox POR RETROCESO** — y la valoración por retroceso es **núcleo repetido en las tres convocatorias** (tema 22).",
+      "fuente": "ISO 8467:1993, resumen de la ficha pública de iso.org",
+      "etiquetas": [
+        "concepto",
+        "aplicacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f25",
+      "anverso": "Mirando esta valoración: **¿cómo se deduce, de solo dos volúmenes, cuál de las tres especies hay en el agua?**",
+      "reverso": "Comparando **P** (el volumen gastado hasta el primer punto final) con **T** (el gastado hasta el segundo). Llamando P al primero y T al total:\n| Resultado | Hidróxidos | Carbonatos | Bicarbonatos |\n| --- | --- | --- | --- |\n| **P = 0** | 0 | 0 | **T** |\n| **P menor que ½T** | 0 | **2P** | **T − 2P** |\n| **P = ½T** | 0 | **2P** | 0 |\n| **P mayor que ½T** | **2P − T** | **2(T − P)** | 0 |\n| **P = T** | **T** | 0 | 0 |\n**Las tres reglas en palabras:** hay **carbonato** cuando P no es 0 pero es menor que T; hay **hidróxido** cuando P supera la mitad de T; hay **bicarbonato** cuando P es menor que la mitad de T.\n**Y una consecuencia que cae de la propia química: el HIDRÓXIDO y el BICARBONATO NO PUEDEN COEXISTIR.** Si estuvieran juntos, reaccionarían entre sí. Por eso, en cuanto una de esas dos columnas tiene valor, la otra vale cero.",
+      "fuente": "IDEAM SLC-I029 v5, método 2320-B, cálculo de las relaciones de alcalinidad",
+      "etiquetas": [
+        "calculo",
+        "concepto"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "alcalinidad-valoracion"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t33-f26",
+      "anverso": "¿Qué se ha neutralizado en cada uno de los **dos puntos finales** de la valoración de la alcalinidad?",
+      "reverso": "| Punto final | pH | Indicador | Qué se ha neutralizado |\n| --- | --- | --- | --- |\n| **P** (alcalinidad a la fenolftaleína, **TA**) | **8,3** | Fenolftaleína | Todo el **hidróxido** y **LA MITAD DEL CARBONATO** (CO₃²⁻ → HCO₃⁻) |\n| **T** (alcalinidad **total**, **TAC**) | **4,5** | Anaranjado de metilo | Lo anterior **más todo el bicarbonato** |\n**La clave es «la mitad del carbonato»:** en el primer punto final el carbonato **no desaparece**, solo **se convierte en bicarbonato**. Por eso en la tabla P/T el carbonato aparece siempre como **2P**.\nLa norma española lo recoge en su propio título: **UNE-EN ISO 9963-1:1996**, *«alcalinidad TOTAL y COMPUESTA»*.",
+      "fuente": "IDEAM SLC-I029 v5; UNE-EN ISO 9963-1:1996",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f27",
+      "anverso": "Si la alcalinidad **no tiene valor paramétrico** en el RD 3/2023, ¿para qué sirve medirla en un agua de consumo?",
+      "reverso": "**No está en la tabla 2, ni en la 3, ni en la 7.** Aparece **una sola vez en toda la norma**: en la **tabla 15 de incertidumbres**, con un **15 %**. Es decir, el RD exige **saber medirla bien**, pero **no pone límite que cumplir**.\n**Su papel es operativo:**\n- Es **dato de entrada del ÍNDICE DE LANGELIER**, que sí es indicador (parte C, **± 0,5 unidades de pH**). Las notas 10, 14 y 18 repiten tres veces que *«el agua en ningún momento podrá ser ni agresiva ni incrustante»*.\n- Sirve para **controlar la coagulación** y la **corrección de pH** en la ETAP: sin alcalinidad suficiente, el coagulante baja el pH y el proceso se descontrola.",
+      "fuente": "RD 3/2023, anexo I parte C nº 55 con notas 10, 14 y 18; anexo III tabla 15",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f28",
+      "anverso": "¿Qué norma rige la **alcalinidad** y cuál la **dureza**? Con su estado y qué anuló cada una.",
+      "reverso": "| Parámetro | Norma | Estado |\n| --- | --- | --- |\n| **Alcalinidad total y compuesta** | **UNE-EN ISO 9963-1:1996** (ISO 9963-1:1994) | **En vigor**, confirmada en 2008. **Anuló la UNE 77036:1983** |\n| **Alcalinidad carbonatada** | ISO 9963-**2**:1994 | Vigente |\n| **Dureza** (suma de calcio y magnesio) | **UNE-ISO 6059:2014** (ISO 6059:1984) | **En vigor**, confirmada en 2023. **Anuló la UNE 77040:2002** |\n| **Calcio solo** | ISO 6058:1984 | Vigente (90.93) |\nAmbas del comité **CTN 77/SC 1 «Agua»**.\n**Aviso:** la **ISO 9963-1 está en estado 90.60** («cerrado el plazo de revisión»), la única de este tema que no aparece como confirmada.",
+      "fuente": "Buscador de UNE, fichas N0013907 y N0053616; catálogo ISO/TC 147/SC 2",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f29",
+      "anverso": "¿Cuántos **valores de turbidez** distintos tiene el RD 3/2023, y cuál va dónde?",
+      "reverso": "**CUATRO números distintos, y es el parámetro con más de toda la tabla 3.**\n| Dónde | Valor |\n| --- | --- |\n| Red, depósitos de distribución o regulación, instalaciones interiores | **4,0 UNF** (valor paramétrico) |\n| **Salida de ETAP o depósito de cabecera** | **0,8 UNF** (valor de referencia) |\n| **Control operacional**, en el **95 %** de las muestras anuales tras la filtración | **≤ 0,3 UNF** |\n| **Valores de NO APTITUD** | **2 UNF** a salida de ETAP · **6 UNF** en red |\n**Cada número tiene su sitio, y el sitio es lo que se pregunta.** Su incertidumbre se estima al nivel de **1 UNF**, no del valor paramétrico.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 54 y nota 17; anexo III tabla 15 nota 9",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f30",
+      "anverso": "Valores del RD para **pH** y **conductividad**, con sus valores de no aptitud.",
+      "reverso": "| Parámetro | Valor paramétrico | **No aptitud** |\n| --- | --- | --- |\n| **pH** | **6,5 a 9,5** unidades | **menor de 4,5** y **mayor de 10,0** |\n| **Conductividad** | **2 500 µS/cm A 20 °C** | **4 000 µS/cm a 20 °C** |\n**Dos detalles que se preguntan:**\n- En la conductividad, **la temperatura forma parte de la unidad**: «µS/cm a 20 °C», no «µS/cm» a secas.\n- La nota del pH añade que *«los valores deberán estar siempre en concordancia con el sistema de desinfección utilizado para que sea eficaz»* — que es exactamente lo del ácido hipocloroso.\nY las dos notas repiten: **el agua no podrá ser ni agresiva ni incrustante**.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 47 y 51 con sus notas 10 y 14",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f31",
+      "anverso": "¿Tiene el agua de consumo un parámetro de **oxígeno disuelto** en el RD 3/2023?",
+      "reverso": "**NO.** Leído el anexo I entero: **no está en la parte B, ni en la C, ni en la F**. No existe como parámetro de agua de consumo.\n**El oxígeno disuelto es de AGUAS RESIDUALES: tema 34.**\nLa técnica sí está estudiada: **Winkler** (volumetría redox yodométrica, tema 22, UNE-EN 25813) y **sonda de oxígeno** (tema 24).\n**Lo mismo, con matiz, para la alcalinidad:** se determina, pero **no tiene valor paramétrico**. Son los dos hallazgos negativos de este tema y el examen puede jugar con ellos.",
+      "fuente": "RD 3/2023, anexo I completo (comprobación negativa)",
+      "etiquetas": [
+        "trampa",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f32",
+      "anverso": "¿Cómo se clasifican las **zonas de abastecimiento** y qué se hace si no se conoce el volumen distribuido?",
+      "reverso": "Por **volumen de agua distribuida al día**, calculado como **media del año natural**:\n| Tipo | m³/día |\n| --- | --- |\n| **1** | menos de **10** |\n| **2** | 10 a 100 |\n| **3** | 100 a **1 000** |\n| **4** | 1 000 a 10 000 |\n| **5** | 10 000 a 100 000 |\n| **6** | más de **100 000** |\n**Si no se conoce el volumen**, se puede usar **el número de habitantes**, calculando con **200 LITROS DIARIOS POR PERSONA**.\n**En la zona tipo 1 no hay frecuencia fija:** es *«a criterio de la autoridad sanitaria»*.",
+      "fuente": "RD 3/2023, anexo II parte C.1.a y tabla 8",
+      "etiquetas": [
+        "normativa",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f33",
+      "anverso": "Frecuencias mínimas de **análisis de control** y **completo** en las zonas tipo 2 y 3.",
+      "reverso": "| Tipo de ZA | Análisis de control | Análisis completo | Radiactividad |\n| --- | --- | --- | --- |\n| **1** (menos de 10 m³) | A criterio de la autoridad sanitaria | Íd. | Íd. |\n| **2** (10 a 100 m³) | **3** | **1** | **1 cada 5 años** |\n| **3** (100 a 1 000 m³) | **4** | **2** | **1** |\n**El salto de la radiactividad es lo más llamativo:** de **una cada cinco años** en la tipo 2 se pasa a **una al año** en la tipo 3.\nEn las zonas 5 y 6, control y completo llevan **la misma fórmula**.",
+      "fuente": "RD 3/2023, anexo II parte C, tabla 8",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f34",
+      "anverso": "¿Qué exige el RD 3/2023 a los **métodos físico-químicos**, si no impone la norma?",
+      "reverso": "**Criterios de RENDIMIENTO** (anexo III, partes B y D):\n- El método debe medir el valor paramétrico con un **límite de cuantificación igual o inferior al 30 %** de ese valor.\n- Con la **incertidumbre de medida (k = 2)** de la **tabla 15**, expresada como **porcentaje del valor paramétrico** — **salvo el pH**, que va en **unidades de pH (0,2)**.\n- Métodos **acreditados por la UNE-EN ISO/IEC 17025**. **Se exceptúan** los del **control operacional y de rutina**, si el laboratorio solo hace esos dos tipos.\n- Mientras no estén acreditados, **validados y documentados**.\n- Los controles **en línea o in situ** deben estar **verificados y ajustados periódicamente**, con la **última calibración documentada**.",
+      "fuente": "RD 3/2023, anexo III partes B y D",
+      "etiquetas": [
+        "normativa",
+        "calidad"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f35",
+      "anverso": "Incertidumbres de la tabla 15 para los parámetros de este tema. ¿Cuál es la **más estricta** y cuál la **más holgada**?",
+      "reverso": "| Parámetro | Incertidumbre |\n| --- | --- |\n| **Alcalinidad** y **conductividad** | **15 %** ← las más estrictas |\n| Cloro combinado, **nitrito** | 20 % |\n| Cloro libre | 25 % |\n| COT (al nivel de 7 mg/L), turbidez (al nivel de 1 UNF) | 30 % |\n| **Amonio**, **dureza** | 40 % |\n| **Oxidabilidad** | **50 %** ← la más holgada |\n| **pH** | **0,2 unidades de pH** |\n**La lógica:** cuanto más **global e indirecto** es el parámetro, más incertidumbre se le tolera. La oxidabilidad mide «materia orgánica oxidable», que ni siquiera es una sustancia; la conductividad es una medida física directa.",
+      "fuente": "RD 3/2023, anexo III parte D, tabla 15",
+      "etiquetas": [
+        "valores",
+        "calidad"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f36",
+      "anverso": "Artículo 5: ¿cuándo es un agua de consumo **«salubre y limpia»**?",
+      "reverso": "Debe serlo **en el punto de cumplimiento**, y lo es cuando se dan **las dos** condiciones:\n**a)** Está **libre de microorganismo, parásito o sustancia** en una cantidad o concentración que pueda suponer **un riesgo para la salud humana**;\n**b)** Se cumple, **al menos**, con los requisitos del **anexo I**.\nY el apartado 3 añade el **principio de precaución**: las medidas que se adopten **no podrán producir, ni directa ni indirectamente, un deterioro de la calidad del agua** ni aumentar la contaminación de las aguas destinadas a producirla.",
+      "fuente": "RD 3/2023, artículo 5",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f37",
+      "anverso": "Artículo 7: ¿cuál es el **punto de cumplimiento** del agua de consumo?",
+      "reverso": "**Tres supuestos:**\n- **a)** El punto en el que **surge de los grifos** que se utilizan habitualmente para el consumo, en el caso de las aguas suministradas por red dentro de edificios, locales o viviendas.\n- **b)** El punto en el que **sale de la cisterna** y se pone a disposición del usuario, para aguas de cisternas o depósitos móviles.\n- **c)** **Para el operador de la red de distribución, la ACOMETIDA.**\n**El tercero es el que se olvida** y el que decide de quién es la responsabilidad: del operador hasta la acometida, del titular de la instalación desde ahí.",
+      "fuente": "RD 3/2023, artículo 7",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f38",
+      "anverso": "¿Dónde se hace el **control en grifo** y qué se controla siempre?",
+      "reverso": "**Dónde:** en el grifo de la instalación interior **más utilizado**, o en los que designe el titular informando a la autoridad sanitaria, **«preferentemente en las VIVIENDAS Y EDIFICIOS CONSTRUIDOS ANTES DEL AÑO 1980»**.\n**Siempre:** *E. coli*; recuento de colonias a 22 °C; **color y turbidez**; **pH y conductividad**; **cloro libre residual**; y **PLOMO**.\n**Los añadidos condicionales:**\n- **Con cloraminación:** cloro combinado, nitritos y amonio.\n- **Tuberías metálicas:** cobre, cromo total, níquel, hierro.\n- **Tuberías de plástico o PVC:** cloruro de vinilo y bisfenol A.\n- **Edificios prioritarios:** *Legionella* spp.\n**El «antes de 1980» y el plomo van juntos:** es cuando se dejaron de instalar tuberías de plomo.",
+      "fuente": "RD 3/2023, anexo II parte B.7",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f39",
+      "anverso": "¿Qué se controla en el **control operacional** y para qué sirve?",
+      "reverso": "**Su objeto:** *«facilitar al operador una VISIÓN RÁPIDA de la eficacia del tratamiento y los problemas de calidad del agua, y permite una ACCIÓN CORRECTORA RÁPIDA previamente planificada»*.\n**En ETAP, depósito o red:**\n- **Siempre: TURBIDEZ.**\n- Tras **desinfección**: además **pH** y **cloro libre residual**.\n- Tras **limpieza** de decantadores, depósito o red: además ***Clostridium perfringens***.\n**En la toma de captación:**\n- **Colífagos somáticos** (salvo agua de mar o si el PSA no lo considera).\n- Si el origen es **embalse, lago o laguna**: **microcistina-LR**; si supera 1 µg/L, **clorofila a**.\n- Si la captación está en **zona agrícola**: plaguicidas individuales autorizados.",
+      "fuente": "RD 3/2023, anexo II partes A.2.e y B.5",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f40",
+      "anverso": "¿Qué **norma sí impone** el RD 3/2023, y para qué parámetros?",
+      "reverso": "**Solo para los MICROBIOLÓGICOS** (anexo III, parte C):\n| Parámetro | Norma |\n| --- | --- |\n| *E. coli* y bacterias coliformes | **UNE-EN ISO 9308-1** (filtración por membrana) **o -2** (número más probable) |\n| Enterococos intestinales | **UNE-EN ISO 7899-2** |\n| Recuento de colonias a 22 °C | **UNE-EN ISO 6222** |\n| *Clostridium perfringens* | **UNE-EN ISO 14189** |\n| *Legionella* spp. | **UNE-EN ISO 11731** |\n| Colífagos somáticos | **UNE-EN ISO 10705-2** |\n**Para los físico-químicos NO impone método**, solo criterios de rendimiento — con el único guiño de la **UNE-EN ISO 8467** para la oxidabilidad.",
+      "fuente": "RD 3/2023, anexo III partes C y D",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f41",
+      "anverso": "Estado actual de las normas ISO del **cloro** y del **amonio**: ¿cuáles están vigentes y cuáles retiradas?",
+      "reverso": "**Cloro — las tres partes de la ISO 7393 están VIGENTES (90.93):**\n| Parte | Método |\n| --- | --- |\n| **ISO 7393-1:1985** | DPD **titrimétrico** |\n| **ISO 7393-2:2017** | DPD **colorimétrico**, para control de rutina → **UNE-EN ISO 7393-2:2019** |\n| **ISO 7393-3:1990** | **Iodométrico**, para cloro **total** |\n*(Retiradas: las versiones de 1985 de la parte 2 y de 1986 de la parte 3.)*\n**Amonio:**\n- **ISO 7150-1:1984**, método **manual** espectrométrico: **vigente**.\n- **ISO 7150-2:1986**, método **automatizado**: **RETIRADA (95.99)**. Su sustituta práctica es la **UNE-EN ISO 11732:2005**, nitrógeno amoniacal por **análisis en flujo (CFA y FIA)**.",
+      "fuente": "Catálogo público ISO/TC 147/SC 2; buscador de UNE, ficha N0035122",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f42",
+      "anverso": "¿Qué valores de referencia tienen **color, olor y sabor**, y qué es un «cambio anormal»?",
+      "reverso": "Su **valor paramétrico** es cualitativo: *«aceptable para el consumidor y sin cambios anormales»*. Y los **valores de referencia** (tabla 4) son:\n| Parámetro | Valor | Unidad |\n| --- | --- | --- |\n| **Color** | **15** | **mg/L Pt/Co** |\n| **Olor** | **3** | Índice de dilución |\n| **Sabor** | **3** | Índice de dilución |\n**Y la definición de «cambio anormal», que es lo preguntable:** *«se considerarán cambios anormales a los valores SUPERIORES AL DOBLE del valor medio de al menos LOS TRES ÚLTIMOS AÑOS en red de distribución»*.\nEs decir, **no es un umbral absoluto: es relativo al histórico de esa red**.",
+      "fuente": "RD 3/2023, anexo I parte D, tabla 4 y su nota 1",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f43",
+      "anverso": "¿Qué se añade a un **análisis de control** si se usan **sales de aluminio o de hierro** en la potabilización, y dónde?",
+      "reverso": "**Aluminio o hierro**, y solo **en salida de ETAP o en depósito de cabecera**.\nTiene lógica: son **residuos del coagulante**, así que se buscan justo **a la salida del tratamiento** que los ha usado, no en el grifo.\n**Sus valores (parte C, indicadores):**\n| Parámetro | VP | **No aptitud** | Medidas rápidas a partir de |\n| --- | --- | --- | --- |\n| **Aluminio** | 200 µg/L | 600 µg/L | **300 µg/L** a salida de tratamiento |\n| **Hierro** | 200 µg/L | 600 µg/L | **300 µg/L** |\n| **Manganeso** | 50 µg/L | **80 µg/L** | — |\nSuperado el valor, los tres pueden **dar color y turbidez**, y el manganeso además **manchar ropa y sanitarios**.",
+      "fuente": "RD 3/2023, anexo II parte B.2; anexo I parte C, tabla 3 nº 41, 48 y 49 con sus notas",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t33-f44",
+      "anverso": "En el supuesto de un **agua de consumo de red municipal** (1322 C2), ¿qué equipo o técnica se responde para pH, oxidabilidad y turbidez?",
+      "reverso": "| Parámetro | Respuesta | Pregunta |\n| --- | --- | --- |\n| **pH** | **pHmetro** | 1322 C2 #21 |\n| **Oxidabilidad** | **Permanganimetría** | 1322 C2 #22 |\n| **Turbidez** | **Turbidímetro** | 1322 C2 #26 |\n**El patrón del supuesto es siempre el mismo:** para los parámetros **simples** la respuesta es **el aparato que lleva su nombre** (pHmetro, conductímetro, turbidímetro, colorímetro), y los cuatro se usan como **distractores mutuos**.\nPara los que **no** tienen aparato propio, la respuesta es **la técnica**: permanganimetría para la oxidabilidad.",
+      "fuente": "Cuestionario 1322, segundo ejercicio, supuesto 3",
+      "etiquetas": [
+        "examen",
+        "aplicacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t33-f45",
+      "anverso": "Resume en una tabla **dónde vive cada uno de los seis parámetros del enunciado** dentro del RD 3/2023.",
+      "reverso": "| Parámetro | Parte y tabla | Valor | Si se supera |\n| --- | --- | --- | --- |\n| **Cloro libre residual** | C, tabla 3, nº 45 | **1,0 mg/L** | Correctoras; no apta a **5,0** |\n| **Cloro combinado residual** | C, tabla 3, nº 44 | **2,0 mg/L** | Correctoras; no apta a **3,0** |\n| **Amonio** | C, tabla 3, nº 42 | **0,50 mg/L** | Correctoras; no apta a **1,00** |\n| **Nitritos** | **B, tabla 2, nº 27** | **0,50** red / **0,10** salida ETAP | **NO APTA** |\n| **Oxidabilidad** | C, tabla 3, nº 50 | **5,0 mg/L** | Correctoras **inmediatas**; no apta a **7,0** |\n| **Dureza** | **F, tabla 7, nº 65** | **500 mg/L CaCO₃** | Es solo **valor de referencia** |\n| **Alcalinidad** | **No está en el anexo I** | — | Solo incertidumbre del **15 %** |\n**Si te llevas una sola tabla de este tema, que sea esta.**",
+      "fuente": "RD 3/2023, anexo I partes B, C y F; anexo III tabla 15",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t33-q01",
+      "pregunta": "¿Qué es la dureza del agua?",
+      "opciones": [
+        "Se corresponde con el contenido de sales de calcio y magnesio.",
+        "Es el contenido de ión hidrógeno de un agua.",
+        "Es el contenido de sodio en un agua."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta literal y repetida: 1246 #22 y 1322 #39, con los mismos tres enunciados los dos años. El contenido de ión hidrógeno es el pH, y el sodio tiene su propio valor paramétrico de 200 mg/L.",
+      "fuente": "Cuestionarios 1246 #22 y 1322 #39",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q02",
+      "pregunta": "Según el Real Decreto 3/2023, de calidad del agua de consumo, ¿en qué unidades se expresa el parámetro dureza?",
+      "opciones": [
+        "En mg/L de carbonato sódico.",
+        "En mg/L de calcio.",
+        "En mg/L de carbonato cálcico."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta de reserva 1246 R2, con esos mismos tres distractores. La tabla 7 del anexo I, parte F, fija la dureza total en 500 mg/L de CaCO₃. El calcio va aparte, con 100 mg/L.",
+      "fuente": "Cuestionario 1246 R2; RD 3/2023, anexo I parte F, tabla 7",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q03",
+      "pregunta": "¿Qué es la alcalinidad de un agua?",
+      "opciones": [
+        "Se corresponde con el contenido en bicarbonato, carbonatos e hidróxidos.",
+        "Se corresponde con el contenido de anhídrido carbónico libre y ácidos minerales.",
+        "Se corresponde con la presencia de alta contaminación por plaguicidas."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta de reserva 1246 R3. El distractor peligroso es el segundo: anhídrido carbónico libre y ácidos minerales es la definición de la ACIDEZ, justo lo contrario de la alcalinidad.",
+      "fuente": "Cuestionario 1246 R3",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q04",
+      "pregunta": "Se llama cloro libre residual:",
+      "opciones": [
+        "A los compuestos que forma el cloro con el amoniaco y ciertos compuestos nitrogenados presentes en el agua.",
+        "Al contenido en cloruros.",
+        "Al contenido en ácido hipocloroso e ión hipoclorito que queda tras clorar."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta 1246 #34, con esos mismos tres enunciados. La primera opción no es absurda: es exactamente la definición del cloro COMBINADO residual, es decir, de las cloraminas. Hay que leer cuál de los dos piden.",
+      "fuente": "Cuestionario 1246 #34",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q05",
+      "pregunta": "¿Qué método de los siguientes utilizaría para la medida de la materia orgánica en agua?",
+      "opciones": [
+        "Complexometría.",
+        "Método del permanganato.",
+        "Método de electrodo selectivo."
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta repetida en 1233 #3 y 1246 #29, con los mismos distractores. La complexometría es la técnica de la dureza, no de la materia orgánica. El método del permanganato es el índice de permanganato, es decir, la oxidabilidad.",
+      "fuente": "Cuestionarios 1233 #3 y 1246 #29",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q06",
+      "pregunta": "¿Qué parámetro químico se puede relacionar directamente con la conductividad de una muestra de agua de consumo?",
+      "opciones": [
+        "Demanda química de oxígeno.",
+        "Plaguicidas.",
+        "Dureza."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta 1233 #6. La conductividad mide iones disueltos, y el calcio y el magnesio son iones divalentes abundantes. La DQO y los plaguicidas son materia orgánica y no aportan conductividad.",
+      "fuente": "Cuestionario 1233 #6",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q07",
+      "pregunta": "¿Cuántos tipos de análisis distingue el Real Decreto 3/2023 para el control del agua de consumo?",
+      "opciones": [
+        "Cinco.",
+        "Ocho.",
+        "Once."
+      ],
+      "correcta": 1,
+      "explicacion": "Son ocho: control de rutina, análisis de control, análisis completo, control de radiactividad, control operacional, caracterización del agua, control en grifo y control en buque (anexo II, parte A.2).",
+      "fuente": "RD 3/2023, anexo II parte A.2",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q08",
+      "pregunta": "Según el Real Decreto 3/2023, la superación del valor paramétrico de un parámetro indicador de calidad (anexo I, parte C):",
+      "opciones": [
+        "Califica automáticamente el agua como no apta para el consumo.",
+        "No presupone una calidad no apta; obliga a tomar medidas correctoras y a cumplir lo dispuesto en las notas de la tabla 3.",
+        "Obliga únicamente a notificarlo en el SINAC, sin más consecuencias."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el artículo 6.2, literalmente. Lo que sí califica el agua como no apta es rebasar el «valor de no aptitud» que fija cada nota de la tabla 3 por separado.",
+      "fuente": "RD 3/2023, artículo 6.2",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q09",
+      "pregunta": "De los siguientes parámetros, ¿cuál está incluido entre los parámetros QUÍMICOS del anexo I, parte B, de modo que su superación califica el agua como no apta?",
+      "opciones": [
+        "Amonio.",
+        "Oxidabilidad.",
+        "Nitritos."
+      ],
+      "correcta": 2,
+      "explicacion": "Los nitritos están en la tabla 2 (parámetros químicos), con 0,50 mg/L en red y 0,10 mg/L a la salida de la ETAP. El amonio y la oxidabilidad son indicadores de la parte C, y su superación solo obliga a medidas correctoras.",
+      "fuente": "RD 3/2023, anexo I partes B y C",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q10",
+      "pregunta": "En un análisis de control, ¿qué parámetros hay que añadir cuando se realiza cloraminación?",
+      "opciones": [
+        "Nitritos, cloro combinado residual y amonio.",
+        "Clorito, clorato y trihalometanos.",
+        "Aluminio, hierro y manganeso."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo II, parte B.2. Los tres a la vez, y la misma terna se repite en el control en grifo. Clorito y clorato se añaden si superaron el valor paramétrico en el último análisis completo; el aluminio o el hierro, si se usan sus sales como coagulante.",
+      "fuente": "RD 3/2023, anexo II partes B.2 y B.7",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q11",
+      "pregunta": "En el análisis completo, la oxidabilidad se controla:",
+      "opciones": [
+        "Solo en las zonas de abastecimiento tipo 1, 2 y 3.",
+        "En todas las zonas de abastecimiento, sin excepción.",
+        "Solo en las zonas de abastecimiento tipo 4, 5 y 6."
+      ],
+      "correcta": 0,
+      "explicacion": "En las zonas tipo 4, 5 y 6 —las de más de 1 000 m³ al día— la oxidabilidad se sustituye por el carbono orgánico total. Abastecimientos pequeños, oxidabilidad; grandes, COT.",
+      "fuente": "RD 3/2023, anexo II parte B.3",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q12",
+      "pregunta": "¿Qué parámetros se controlan en el análisis de «caracterización de las aguas»?",
+      "opciones": [
+        "pH, conductividad, turbidez y cloro libre residual.",
+        "Dureza, calcio, magnesio y potasio.",
+        "Alcalinidad, dureza, cloruro y sulfato."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo II, parte B.6. Se hace solo en red de distribución, al menos una vez por semestre, y su finalidad es informar al ciudadano: el anexo VIII obliga a publicar esos cuatro resultados en línea.",
+      "fuente": "RD 3/2023, anexo II partes B.6 y C.1.e",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q13",
+      "pregunta": "El valor paramétrico del cloro libre residual y su valor de no aptitud son, respectivamente:",
+      "opciones": [
+        "1,0 y 5,0 mg/L.",
+        "2,0 y 3,0 mg/L.",
+        "0,2 y 1,0 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "1,0 mg/L de valor paramétrico y 5,0 mg/L de valor de no aptitud. La segunda opción son los valores del cloro COMBINADO residual, que se cruzan con los del libre: VP más alto pero no aptitud más baja.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 44 y 45 con sus notas 7 y 8",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q14",
+      "pregunta": "Si la desinfección se realiza con dióxido de cloro, el residual que debe medirse y su límite son:",
+      "opciones": [
+        "El cloro libre residual, con un límite de 1,0 mg/L.",
+        "El dióxido de cloro, con un límite de 0,8 mg/L.",
+        "El cloro combinado residual, con un límite de 2,0 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Última frase de la nota 8 de la tabla 3. Cambia el analito y cambia el número: se mide el propio dióxido de cloro y el límite baja a 0,8 mg/L.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 8"
+    },
+    {
+      "id": "t33-q15",
+      "pregunta": "Para garantizar la eficacia de la desinfección, el Real Decreto 3/2023 recomienda mantener durante 30 minutos:",
+      "opciones": [
+        "Al menos 0,2 mg/L de cloro libre residual, con pH superior a 8,0.",
+        "Al menos 1,0 mg/L de cloro combinado residual, sin condición de pH.",
+        "Al menos 0,5 mg/L de cloro libre residual, con pH inferior a 8,0 y turbidez máxima de 1 UNF."
+      ],
+      "correcta": 2,
+      "explicacion": "Nota 8 de la tabla 3. Los 0,2 mg/L son la recomendación general para todos los puntos de la red, no la receta de desinfección. El pH importa porque por encima de 7,5-8 el ácido hipocloroso se disocia a ión hipoclorito, que desinfecta mucho peor.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 8"
+    },
+    {
+      "id": "t33-q16",
+      "pregunta": "Cuando se emplean monocloraminas como desinfectante, el amonio debe medirse:",
+      "opciones": [
+        "Antes de añadir el amoniaco necesario para generar la monocloramina.",
+        "Después de añadir el amoniaco, para comprobar la dosificación.",
+        "Solo en el grifo del usuario, nunca a la salida del tratamiento."
+      ],
+      "correcta": 0,
+      "explicacion": "Nota 5 de la tabla 3: el amonio se mide como indicador de contaminación, y si se midiera después se estaría midiendo el reactivo que se acaba de añadir, no la contaminación del agua.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 5"
+    },
+    {
+      "id": "t33-q17",
+      "pregunta": "El valor paramétrico de los nitritos a la salida de la ETAP o del depósito de cabecera es:",
+      "opciones": [
+        "0,50 mg/L.",
+        "0,10 mg/L.",
+        "3,0 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "0,10 mg/L a la salida de ETAP o depósito de cabecera; 0,50 mg/L en red de distribución y depósitos de distribución o regulación. Además hay que cumplir la condición [nitrato]/50 + [nitrito]/3 ≤ 1 tras la potabilización.",
+      "fuente": "RD 3/2023, anexo I parte B, tabla 2 nº 27, notas 6 y 7"
+    },
+    {
+      "id": "t33-q18",
+      "pregunta": "El método de referencia que el Real Decreto 3/2023 nombra expresamente para la oxidabilidad es:",
+      "opciones": [
+        "La UNE-EN ISO 8467, determinación del índice de permanganato.",
+        "La UNE-EN 1484, determinación del carbono orgánico total.",
+        "Ninguno: el real decreto no nombra norma para ningún parámetro físico-químico."
+      ],
+      "correcta": 0,
+      "explicacion": "Nota 6 de la tabla 15 del anexo III: «Método de análisis referencia es la UNE-EN ISO 8467… u otro método con resultados equivalentes». La UNE-EN 1484 se cita en la nota 2, pero solo como directriz para especificar la incertidumbre del COT.",
+      "fuente": "RD 3/2023, anexo III parte D, tabla 15, notas 2 y 6",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q19",
+      "pregunta": "En el método del índice de permanganato (ISO 8467), el exceso de permanganato que no ha reaccionado se determina:",
+      "opciones": [
+        "Por lectura directa de la absorbancia a 525 nm.",
+        "Añadiendo un exceso de oxalato y valorando por retroceso con permanganato.",
+        "Por potenciometría con electrodo selectivo de manganeso."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una volumetría redox por retroceso: se calienta la muestra 10 minutos en baño de agua hirviendo con permanganato y ácido sulfúrico, y el permanganato consumido se determina añadiendo exceso de oxalato y valorando el sobrante con permanganato.",
+      "fuente": "ISO 8467:1993, resumen de la ficha pública de iso.org"
+    },
+    {
+      "id": "t33-q20",
+      "pregunta": "En la valoración de la alcalinidad, el punto final de pH 8,3 corresponde a la neutralización de:",
+      "opciones": [
+        "Todo el hidróxido y todo el carbonato presentes.",
+        "Todo el bicarbonato presente.",
+        "Todo el hidróxido y la mitad del carbonato presentes."
+      ],
+      "correcta": 2,
+      "explicacion": "A pH 8,3 el carbonato no desaparece: solo pasa a bicarbonato, de ahí «la mitad». Todo el bicarbonato se neutraliza en el segundo punto final, a pH 4,5, que da la alcalinidad total.",
+      "fuente": "IDEAM SLC-I029 v5, método 2320-B; UNE-EN ISO 9963-1:1996"
+    },
+    {
+      "id": "t33-q21",
+      "pregunta": "En una valoración de alcalinidad, si el volumen gastado hasta pH 8,3 es cero, el agua contiene alcalinidad debida a:",
+      "opciones": [
+        "Hidróxidos.",
+        "Carbonatos.",
+        "Bicarbonatos."
+      ],
+      "correcta": 2,
+      "explicacion": "Con P = 0, toda la alcalinidad es de bicarbonatos y vale T. Para que hubiera carbonato, P tendría que ser distinto de cero; para que hubiera hidróxido, P tendría que superar la mitad de T.",
+      "fuente": "IDEAM SLC-I029 v5, tabla de relaciones P/T"
+    },
+    {
+      "id": "t33-q22",
+      "pregunta": "¿Cuál de estos parámetros NO figura en ninguna tabla del anexo I del Real Decreto 3/2023?",
+      "opciones": [
+        "La turbidez.",
+        "La alcalinidad.",
+        "El índice de Langelier."
+      ],
+      "correcta": 1,
+      "explicacion": "La alcalinidad aparece una sola vez en toda la norma, en la tabla 15 de incertidumbres, con un 15 %; no tiene valor paramétrico. La turbidez y el índice de Langelier sí son indicadores de la parte C, con 4,0 UNF y ±0,5 unidades de pH.",
+      "fuente": "RD 3/2023, anexo I completo y anexo III tabla 15",
+      "nucleo": true
+    },
+    {
+      "id": "t33-q23",
+      "pregunta": "El valor paramétrico de la conductividad en agua de consumo es:",
+      "opciones": [
+        "2 500 µS/cm a 20 °C.",
+        "4 000 µS/cm a 25 °C.",
+        "1 000 µS/cm, sin referencia de temperatura."
+      ],
+      "correcta": 0,
+      "explicacion": "2 500 µS/cm a 20 °C, y la temperatura forma parte de la unidad. Los 4 000 µS/cm a 20 °C son el valor de NO APTITUD, no el valor paramétrico.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 47 y nota 10"
+    },
+    {
+      "id": "t33-q24",
+      "pregunta": "A la salida de la ETAP o del depósito de cabecera, el valor de referencia de la turbidez es:",
+      "opciones": [
+        "4,0 UNF.",
+        "6,0 UNF.",
+        "0,8 UNF."
+      ],
+      "correcta": 2,
+      "explicacion": "Nota 17 de la tabla 3. Los 4,0 UNF son el valor paramétrico en red, depósitos de distribución e instalaciones interiores; los 6 UNF son el valor de no aptitud en red. A la salida de la ETAP el valor de no aptitud es 2 UNF.",
+      "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 54 y nota 17"
+    },
+    {
+      "id": "t33-q25",
+      "pregunta": "¿Con qué frecuencia debe realizarse el control de rutina?",
+      "opciones": [
+        "Mensualmente, en todo caso.",
+        "Semanalmente, siempre que en esa semana no se haya realizado un análisis de control o completo.",
+        "Al menos una vez por semestre."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo II, parte C.1.d. El «al menos una vez por semestre» es la frecuencia de la caracterización de las aguas, no la del control de rutina.",
+      "fuente": "RD 3/2023, anexo II parte C.1, letras d y e"
+    },
+    {
+      "id": "t33-q26",
+      "pregunta": "El control en grifo debe realizarse preferentemente en:",
+      "opciones": [
+        "Las viviendas y edificios construidos antes del año 1980.",
+        "Los edificios de uso público de más de 500 m².",
+        "Las viviendas situadas en el punto más alejado de la ETAP."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo II, parte B.7. Va unido al plomo, que es uno de los parámetros que siempre se controla en grifo: 1980 es la referencia temporal de las instalaciones con tubería de plomo.",
+      "fuente": "RD 3/2023, anexo II parte B.7"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t33-s01",
+      "titulo": "Supuesto 1. Un agua de consumo que llega con el cloro justo y el amonio alto",
+      "enunciado": "En el laboratorio de fisicoquímica se recibe una muestra de **agua de consumo tomada en la red de distribución** de una zona de abastecimiento que reparte **unos 4 000 m³ diarios**. El operador desinfecta con **hipoclorito sódico** y ha comunicado que, desde hace dos semanas, **está empleando cloraminación** en el extremo de la red.\n\nEl boletín preliminar da: **cloro libre residual 0,15 mg/L**, **cloro combinado residual 2,4 mg/L**, **amonio 0,85 mg/L**, **nitritos 0,42 mg/L**, **pH 8,4** y **turbidez 1,6 UNF**.",
+      "preguntas": [
+        {
+          "id": "t33-s01-q1",
+          "pregunta": "Al tratarse de una red en la que se realiza cloraminación, ¿qué tres parámetros obliga el anexo II a añadir al análisis de control?",
+          "opciones": [
+            "Clorito, clorato y trihalometanos.",
+            "Carbono orgánico total, oxidabilidad y color.",
+            "Aluminio, hierro y manganeso.",
+            "Nitritos, cloro combinado residual y amonio."
+          ],
+          "correcta": 3,
+          "explicacion": "Anexo II, parte B.2. La misma terna se repite en el control en grifo. Clorito y clorato se añaden si superaron el valor paramétrico en el último análisis completo; el aluminio o el hierro, si se usan sus sales en el tratamiento.",
+          "fuente": "RD 3/2023, anexo II parte B.2"
+        },
+        {
+          "id": "t33-s01-q2",
+          "pregunta": "El amonio da 0,85 mg/L. ¿Cómo debe interpretarse ese resultado?",
+          "opciones": [
+            "Supera el valor paramétrico de 0,50 mg/L, pero no el valor de no aptitud de 1,00 mg/L; procede medida correctora de rápida aplicación.",
+            "Supera el valor de no aptitud y el agua debe declararse no apta de inmediato.",
+            "Está dentro del valor paramétrico, porque el límite del amonio es 1,00 mg/L.",
+            "El amonio no tiene valor paramétrico en agua de consumo: es un parámetro de caracterización."
+          ],
+          "correcta": 0,
+          "explicacion": "El valor paramétrico es 0,50 mg/L y el de no aptitud, 1,00 mg/L. Además la nota 5 recomienda expresamente que, por encima de 0,7 mg/L, las medidas correctoras sean de rápida aplicación. Y el artículo 6.2 recuerda que superar un indicador de la parte C no presupone calidad no apta.",
+          "fuente": "RD 3/2023, artículo 6.2 y anexo I parte C, tabla 3 nº 42 con su nota 5"
+        },
+        {
+          "id": "t33-s01-q3",
+          "pregunta": "El cloro combinado residual es de 2,4 mg/L. ¿Qué previsión del real decreto se activa?",
+          "opciones": [
+            "Ninguna: el valor paramétrico del cloro combinado es 3,0 mg/L.",
+            "El agua queda automáticamente no apta, porque supera el valor paramétrico de 2,0 mg/L.",
+            "Se supera el valor paramétrico de 2,0 mg/L: medidas correctoras de rápida aplicación y, si la autoridad lo considera necesario por estar por encima de 2 mg/L, el operador deberá determinar NDMA.",
+            "Debe medirse dióxido de cloro en su lugar, con un límite de 0,8 mg/L."
+          ],
+          "correcta": 2,
+          "explicacion": "Nota 7 de la tabla 3. El valor paramétrico es 2,0 mg/L y el de no aptitud, 3,0 mg/L, así que el agua no queda no apta; pero la nota permite a la autoridad exigir la determinación de NDMA (CAS 62-75-9) ante un nivel superior a 2 mg/L.",
+          "fuente": "RD 3/2023, anexo I parte C, tabla 3 nº 44 y nota 7"
+        },
+        {
+          "id": "t33-s01-q4",
+          "pregunta": "Con pH 8,4, cloro libre 0,15 mg/L y turbidez 1,6 UNF, ¿se cumple la recomendación del real decreto para garantizar la eficacia de la desinfección?",
+          "opciones": [
+            "Sí, porque el pH está dentro del intervalo 6,5-9,5 y la turbidez por debajo de 4,0 UNF.",
+            "No: la nota 8 pide mantener 30 minutos al menos 0,5 mg/L de cloro libre, con pH inferior a 8,0 y turbidez máxima de 1 UNF, y aquí fallan las tres condiciones.",
+            "No, pero solo por el cloro libre: el pH y la turbidez cumplen.",
+            "La recomendación solo se aplica a la salida de la ETAP, no en red."
+          ],
+          "correcta": 1,
+          "explicacion": "Fallan las tres: 0,15 mg/L está por debajo de 0,5 (y también de los 0,2 mg/L que se recomiendan en todos los puntos de la red), el pH 8,4 supera el 8,0, y 1,6 UNF supera el máximo de 1 UNF. El intervalo 6,5-9,5 es el valor paramétrico general del pH, que es otra cosa.",
+          "fuente": "RD 3/2023, anexo I parte C, tabla 3, nota 8"
+        },
+        {
+          "id": "t33-s01-q5",
+          "pregunta": "Los nitritos dan 0,42 mg/L en red. ¿Qué consecuencia tiene?",
+          "opciones": [
+            "El agua es no apta, porque cualquier presencia de nitritos lo impide.",
+            "Ninguna consecuencia formal: 0,42 mg/L está por debajo del valor paramétrico de 0,50 mg/L en red, aunque conviene vigilarlo por la nitrificación de las cloraminas.",
+            "El agua es no apta, porque el valor paramétrico aplicable es 0,10 mg/L.",
+            "Los nitritos son un indicador de la parte C: solo obligan a medidas correctoras."
+          ],
+          "correcta": 1,
+          "explicacion": "En red de distribución el valor paramétrico es 0,50 mg/L; el de 0,10 mg/L se aplica a la salida de la ETAP o del depósito de cabecera. Ojo con la última opción: los nitritos NO son indicadores, están en la parte B (químicos), de modo que si se superaran el agua sí sería no apta.",
+          "fuente": "RD 3/2023, anexo I parte B, tabla 2 nº 27 con sus notas 6 y 7"
+        }
+      ]
+    },
+    {
+      "id": "t33-s02",
+      "titulo": "Supuesto 2. Caracterización y materia orgánica en un abastecimiento pequeño",
+      "enunciado": "El servicio de salud pública encarga al laboratorio **el análisis completo anual** de una **zona de abastecimiento que distribuye unos 400 m³ diarios** y, en la misma visita, **la caracterización del agua** en red.\n\nEl laboratorio dispone de **pHmetro y conductímetro**, **turbidímetro**, **bureta y material volumétrico**, **baño de agua**, **espectrofotómetro UV-visible** y **cromatógrafo iónico**. No tiene analizador de carbono orgánico total.",
+      "preguntas": [
+        {
+          "id": "t33-s02-q1",
+          "pregunta": "¿Qué tipo de zona de abastecimiento es y qué parámetro de materia orgánica debe controlarse en el análisis completo?",
+          "opciones": [
+            "Zona tipo 4: carbono orgánico total.",
+            "Zona tipo 5: oxidabilidad.",
+            "Zona tipo 2: carbono orgánico total.",
+            "Zona tipo 3: oxidabilidad."
+          ],
+          "correcta": 3,
+          "explicacion": "Con 400 m³/día está entre 100 y 1 000, es decir, zona tipo 3. En las zonas 1, 2 y 3 el análisis completo controla oxidabilidad; en las 4, 5 y 6, carbono orgánico total. Por eso la falta de analizador de COT no es un problema aquí.",
+          "fuente": "RD 3/2023, anexo II parte B.3 y parte C tabla 8"
+        },
+        {
+          "id": "t33-s02-q2",
+          "pregunta": "¿Qué técnica y qué material emplearía para determinar la oxidabilidad?",
+          "opciones": [
+            "Espectrofotometría UV-visible, midiendo la absorbancia a 254 nm.",
+            "Cromatografía iónica con detector de conductividad.",
+            "Permanganimetría: calentamiento en baño de agua hirviendo con permanganato potásico y ácido sulfúrico, y valoración por retroceso.",
+            "Potenciometría con electrodo selectivo."
+          ],
+          "correcta": 2,
+          "explicacion": "Es el método del permanganato, respuesta documentada en 1233 #3, 1246 #29 y 1322 C2 #22. La ISO 8467 fija 10 minutos en baño de agua hirviendo y la determinación del permanganato consumido añadiendo exceso de oxalato y valorando el sobrante.",
+          "fuente": "Cuestionarios 1233 #3, 1246 #29 y 1322 C2 #22; ISO 8467:1993"
+        },
+        {
+          "id": "t33-s02-q3",
+          "pregunta": "La caracterización del agua exige cuatro parámetros. ¿Cuáles, y con qué técnica determinaría la dureza?",
+          "opciones": [
+            "Dureza, calcio, magnesio y potasio; la dureza por complexometría con EDTA, indicador negro de eriocromo T y pH tamponado en torno a 10.",
+            "Dureza, alcalinidad, cloruro y sulfato; la dureza por argentometría de Mohr.",
+            "pH, conductividad, dureza y turbidez; la dureza por conductimetría.",
+            "Dureza, calcio, magnesio y sodio; la dureza por espectrofotometría con eriocromocianina R."
+          ],
+          "correcta": 0,
+          "explicacion": "Anexo II, parte B.6: dureza, calcio, magnesio y potasio, en red y al menos una vez por semestre. La técnica de la dureza es la complexometría con EDTA, UNE-ISO 6059:2014, con negro de eriocromo T a pH ≈ 10. La eriocromocianina R es el método del aluminio (1246 #23).",
+          "fuente": "RD 3/2023, anexo II parte B.6; UNE-ISO 6059:2014"
+        },
+        {
+          "id": "t33-s02-q4",
+          "pregunta": "El boletín debe expresar la dureza. ¿En qué unidades y con qué valor de referencia?",
+          "opciones": [
+            "En mg/L de calcio, con valor de referencia 100 mg/L.",
+            "En grados franceses, sin valor de referencia en el real decreto.",
+            "En mg/L de carbonato sódico, con valor de referencia 500 mg/L.",
+            "En mg/L de carbonato cálcico, con valor de referencia 500 mg/L."
+          ],
+          "correcta": 3,
+          "explicacion": "Pregunta de reserva 1246 R2 y tabla 7 del anexo I, parte F. Los 100 mg/L son el valor de referencia del calcio, que es un parámetro distinto de la dureza dentro de esa misma tabla.",
+          "fuente": "Cuestionario 1246 R2; RD 3/2023, anexo I parte F, tabla 7"
+        },
+        {
+          "id": "t33-s02-q5",
+          "pregunta": "El operador pide además la alcalinidad, para calcular el índice de Langelier. ¿Qué respuesta es correcta?",
+          "opciones": [
+            "No puede hacerse: la alcalinidad no es un parámetro del Real Decreto 3/2023 y el laboratorio no está autorizado a determinarla.",
+            "Se determina por valoración con ácido a dos puntos finales de pH fijo, 8,3 y 4,5; no tiene valor paramétrico, pero el real decreto le exige una incertidumbre del 15 %.",
+            "Se determina por complexometría con EDTA, igual que la dureza, y su valor paramétrico es 500 mg/L.",
+            "Se determina por cromatografía iónica, midiendo bicarbonato y carbonato como aniones."
+          ],
+          "correcta": 1,
+          "explicacion": "La alcalinidad no figura en ninguna tabla del anexo I, pero sí en la tabla 15, con un 15 % de incertidumbre. Se valora con ácido hasta pH 8,3 (alcalinidad a la fenolftaleína) y hasta pH 4,5 (alcalinidad total), según la UNE-EN ISO 9963-1. Su papel aquí es operativo: alimentar el índice de Langelier, que sí es un indicador con valor de ±0,5 unidades de pH.",
+          "fuente": "RD 3/2023, anexo I parte C nº 55 y anexo III tabla 15; UNE-EN ISO 9963-1:1996"
+        }
+      ]
+    }
+  ]
+}
