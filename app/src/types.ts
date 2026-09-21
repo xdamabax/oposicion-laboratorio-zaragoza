@@ -57,6 +57,8 @@ export type TipoEsquema =
   | 'polarimetro'
   | 'cromatograma'
   | 'cromatografo-ionico'
+  | 'cromatografo-gases'
+  | 'purga-y-trampa'
 
 export type TipoMaterial =
   | 'matraz-aforado'

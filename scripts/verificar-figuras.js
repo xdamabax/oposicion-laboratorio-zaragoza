@@ -352,6 +352,29 @@ function medir(sabotaje, ROJO) {
     // el supresor, detras del detector: quedaria midiendo con el fondo sin rebajar
     pieza(svg, 'supresor').setAttribute('x', 502)
   }
+  if (sabotaje === 28) {
+    const svg = porClave('purga-y-trampa')
+    // el tubo de purga, subido por encima del agua: dejaria de burbujear a traves
+    const t = pieza(svg, 'entrada-purga')
+    t.setAttribute('y2', 74)
+  }
+  if (sabotaje === 29) {
+    const svg = porClave('purga-y-trampa')
+    // la aguja del espacio de cabeza, hundida en el agua: ya no seria espacio de cabeza
+    pieza(svg, 'aguja-hs').setAttribute('y2', 140)
+  }
+  if (sabotaje === 30) {
+    const svg = porClave('cromatografo-gases')
+    // el detector, rotulado antes del inyector
+    const t = [...svg.querySelectorAll('text')].find((e) => e.textContent.trim() === 'Detector')
+    if (t) t.setAttribute('x', 95)
+  }
+  if (sabotaje === 31) {
+    const svg = porClave('cromatografo-gases')
+    // la columna, sacada fuera del horno
+    const c = pieza(svg, 'columna')
+    c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x - 170} ${y}`).join(' '))
+  }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
@@ -905,6 +928,74 @@ function medir(sabotaje, ROJO) {
     return `columna hasta ${(columna.x + columna.width).toFixed(0)}, supresor [${supresor.x.toFixed(0)}, ${(supresor.x + supresor.width).toFixed(0)}], detector desde ${detector.x.toFixed(0)}`
   })
 
+  /*
+   * Purga y trampa frente a espacio de cabeza. Las dos aislan volatiles de un
+   * agua y el examen las ofrece como opciones distintas, asi que lo unico que
+   * hay que ver de un vistazo es EN QUE SE DIFERENCIAN. La diferencia es
+   * geometrica -donde acaba el tubo respecto del nivel del agua- y por eso se
+   * puede comprobar. Ojo con el signo: en SVG la y crece HACIA ABAJO, asi que
+   * "por debajo del agua" es y MAYOR.
+   */
+  const puntaDe = (svg, p) => {
+    const l = pieza(svg, p)
+    return { x: num(l, 'x1'), arriba: Math.min(num(l, 'y1'), num(l, 'y2')), punta: Math.max(num(l, 'y1'), num(l, 'y2')) }
+  }
+  const nivelDe = (svg, p) => num(pieza(svg, p), 'y1')
+
+  control('Purga y trampa · el gas entra POR DEBAJO del nivel del agua', () => {
+    const svg = porClave('purga-y-trampa')
+    const nivel = nivelDe(svg, 'nivel-pt')
+    const tubo = puntaDe(svg, 'entrada-purga')
+    if (!(tubo.punta > nivel + 5)) {
+      throw new Error(
+        `la punta del tubo cae en y=${tubo.punta.toFixed(0)} y el nivel del agua está en y=${nivel.toFixed(0)}: ` +
+          `el gas tiene que entrar DENTRO del agua para burbujear a través de ella`,
+      )
+    }
+    if (!(tubo.arriba < nivel)) throw new Error('el tubo de purga no viene de fuera del líquido')
+    return `nivel en y=${nivel.toFixed(0)}, punta del tubo en y=${tubo.punta.toFixed(0)}: ${(tubo.punta - nivel).toFixed(0)} px sumergida`
+  })
+
+  control('Espacio de cabeza · el vapor se toma POR ENCIMA del agua', () => {
+    const svg = porClave('purga-y-trampa')
+    const nivel = nivelDe(svg, 'nivel-hs')
+    const aguja = puntaDe(svg, 'aguja-hs')
+    if (!(aguja.punta < nivel - 5)) {
+      throw new Error(
+        `la punta de la aguja cae en y=${aguja.punta.toFixed(0)} y el nivel del agua está en y=${nivel.toFixed(0)}: ` +
+          `en espacio de cabeza la aguja NO toca el agua, toma el vapor de encima`,
+      )
+    }
+    return `nivel en y=${nivel.toFixed(0)}, punta de la aguja en y=${aguja.punta.toFixed(0)}: ${(nivel - aguja.punta).toFixed(0)} px por encima`
+  })
+
+  control('CG · las etapas van en orden', () =>
+    enOrden(porClave('cromatografo-gases'), ['Gas portador', 'Inyector', 'Horno', 'Detector', 'Registro']),
+  )
+
+  control('CG · la columna va DENTRO del horno, y el inyector y el detector FUERA', () => {
+    const svg = porClave('cromatografo-gases')
+    const caja = (p) => pieza(svg, p).getBBox()
+    const horno = caja('horno')
+    const columna = caja('columna')
+    const dentro = (c) =>
+      c.x >= horno.x && c.y >= horno.y && c.x + c.width <= horno.x + horno.width && c.y + c.height <= horno.y + horno.height
+    if (!dentro(columna)) {
+      throw new Error(
+        `la columna ocupa [${columna.x.toFixed(0)}, ${(columna.x + columna.width).toFixed(0)}]×` +
+          `[${columna.y.toFixed(0)}, ${(columna.y + columna.height).toFixed(0)}] y el horno ` +
+          `[${horno.x.toFixed(0)}, ${(horno.x + horno.width).toFixed(0)}]×[${horno.y.toFixed(0)}, ${(horno.y + horno.height).toFixed(0)}]: ` +
+          `en cromatografía de gases la columna va DENTRO del horno`,
+      )
+    }
+    for (const p of ['inyector', 'detector']) {
+      const c = caja(p)
+      const solapa = c.x < horno.x + horno.width && c.x + c.width > horno.x
+      if (solapa) throw new Error(`el ${p} se mete en el horno: se calienta aparte, y a otra temperatura`)
+    }
+    return `columna dentro del horno, e inyector y detector fuera`
+  })
+
   return resultados
 }
 
@@ -938,6 +1029,10 @@ const SABOTAJES = {
   25: 'la anchura del pico B, ensanchada sin tocar la resolución escrita',
   26: 'el rótulo de la precolumna, movido detrás de la columna separadora',
   27: 'el supresor, colocado después del detector de conductividad',
+  28: 'el tubo de purga, subido por encima del nivel del agua',
+  29: 'la aguja del espacio de cabeza, hundida en el agua',
+  30: 'el rótulo del detector del CG, movido delante del inyector',
+  31: 'la columna del CG, sacada fuera del horno',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -975,6 +1070,10 @@ const CONTROL_DE = {
   25: [23],
   26: [24],
   27: [25],
+  28: [26],
+  29: [27],
+  30: [28],
+  31: [29],
 }
 
 async function main() {

@@ -31,6 +31,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   polarimetro: 'Polarímetro: el plano de polarización gira en el tubo',
   cromatograma: 'Cromatograma: tiempos de retención, anchura de pico y resolución',
   'cromatografo-ionico': 'Cromatógrafo iónico: del eluyente al detector de conductividad',
+  'cromatografo-gases': 'Cromatógrafo de gases: la columna va dentro del horno',
+  'purga-y-trampa': 'Purga y trampa frente a espacio de cabeza',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -56,6 +58,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   polarimetro: { ancho: 520, alto: 232 },
   cromatograma: { ancho: 470, alto: 250 },
   'cromatografo-ionico': { ancho: 580, alto: 228 },
+  'cromatografo-gases': { ancho: 580, alto: 250 },
+  'purga-y-trampa': { ancho: 540, alto: 236 },
 }
 
 const AZUL = '#9ecbe8'
@@ -2062,6 +2066,242 @@ function CromatografoIonico() {
   )
 }
 
+/* ---------- Tema 31: cromatografia de gases ---------- */
+
+/**
+ * Cromatografo de gases.
+ *
+ * Lo que el dibujo AFIRMA, y la bateria comprueba, es que la COLUMNA va DENTRO
+ * del HORNO y que el inyector y el detector se quedan FUERA. No es un detalle
+ * de adorno: la separacion en cromatografia de gases se gobierna con la
+ * temperatura de la columna -isoterma o con rampa- y por eso la columna vive en
+ * un horno termostatado, mientras que el inyector y el detector se calientan
+ * por su cuenta y a otra temperatura.
+ */
+function CromatografoGases() {
+  const EJE = 100
+  const HORNO = { x: 196, y: 44, w: 196, h: 112 }
+
+  /** La columna capilar, enrollada: espiral muestreada, no dibujada a ojo. */
+  const espiral = () => {
+    const pts: string[] = []
+    for (let t = 0; t <= 6 * Math.PI; t += 0.1) {
+      const r = 8 + (t / (6 * Math.PI)) * 30
+      pts.push(`${pts.length ? 'L' : 'M'}${(294 + 1.6 * r * Math.cos(t)).toFixed(1)} ${(EJE + r * Math.sin(t)).toFixed(1)}`)
+    }
+    return pts.join(' ')
+  }
+
+  const ETAPAS = [
+    { x: 48, nombre: 'Gas portador', pie: 'He, Ar o N₂' },
+    { x: 143, nombre: 'Inyector', pie: 'split / splitless' },
+    { x: 294, nombre: 'Horno', pie: 'rampa de temperatura' },
+    { x: 447, nombre: 'Detector', pie: 'FID, ECD, TCD, MS' },
+    { x: 531, nombre: 'Registro', pie: 'cromatograma' },
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* la linea de gas, por detras de todo */}
+      <g stroke={AZUL} strokeWidth="3">
+        <line x1="66" y1={EJE} x2={HORNO.x} y2={EJE} />
+        <line x1={HORNO.x + HORNO.w} y1={EJE} x2="566" y2={EJE} />
+      </g>
+
+      {/* botella de gas portador con su regulador */}
+      <rect data-pieza="gas" x="30" y="60" width="36" height="80" rx="6" {...trazo} />
+      <line x1="48" y1="60" x2="48" y2="50" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="48" cy="46" r="5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* inyector caliente, con su jeringa y su septo */}
+      <rect data-pieza="inyector" x="118" y="64" width="50" height="72" rx="5" {...trazo} />
+      <g stroke="currentColor" strokeWidth="1.4" fill="none">
+        <line x1="143" y1="34" x2="143" y2="64" />
+        <rect x="135" y="18" width="16" height="16" rx="2" />
+        <line x1="128" y1="64" x2="158" y2="64" strokeWidth="2.6" />
+      </g>
+
+      {/* horno termostatado: la columna vive aqui dentro */}
+      <rect
+        data-pieza="horno"
+        x={HORNO.x}
+        y={HORNO.y}
+        width={HORNO.w}
+        height={HORNO.h}
+        rx="6"
+        fill={AZUL_CLARO}
+        fillOpacity="0.55"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeDasharray="5 3"
+      />
+      <path data-pieza="columna" d={espiral()} fill="none" stroke={ROJO} strokeWidth="1.8" />
+
+      {/* detector caliente y registro */}
+      <rect data-pieza="detector" x="422" y="64" width="50" height="72" rx="5" {...trazo} />
+      <path d="M430 118 l10 -18 l9 12 l11 -20" fill="none" stroke={ROJO} strokeWidth="1.4" />
+      <rect data-pieza="registro" x="496" y="70" width="70" height="60" rx="5" {...trazo} />
+      <path d="M506 114 q10 -26 18 0 q7 -18 14 0 q6 -10 12 0" fill="none" stroke={ROJO} strokeWidth="1.4" />
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        {ETAPAS.map((e) => (
+          <text key={e.nombre} x={e.x} y="180">
+            {e.nombre}
+          </text>
+        ))}
+      </g>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {ETAPAS.map((e) => (
+          <text key={e.nombre} x={e.x} y="192">
+            {e.pie}
+          </text>
+        ))}
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="212">
+          La COLUMNA va dentro del HORNO, porque en cromatografía de gases la separación se gobierna
+          con la temperatura:
+        </text>
+        <text x="8" y="224">
+          isoterma, o con rampa cuando los solutos tienen puntos de ebullición muy distintos. El
+          inyector y el detector están
+        </text>
+        <text x="8" y="236">
+          fuera del horno y se calientan aparte. La fase móvil es un gas inerte y su única función es
+          transportar el analito.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Purga y trampa frente a espacio de cabeza.
+ *
+ * Las dos aislan compuestos volatiles de un agua, y el examen las ofrece como
+ * opciones distintas, asi que lo que hay que ver de un vistazo es EN QUE SE
+ * DIFERENCIAN. La diferencia es geometrica y el dibujo la afirma:
+ *
+ *   - en PURGA Y TRAMPA el gas entra POR DEBAJO del nivel del agua y burbujea
+ *     a traves de la muestra, arrastrando los volatiles;
+ *   - en ESPACIO DE CABEZA no se toca el agua: la jeringa toma vapor POR
+ *     ENCIMA, del aire que se ha equilibrado con ella.
+ *
+ * Son dos controles de la bateria, uno por panel.
+ */
+function PurgaYTrampa() {
+  const FONDO = 152
+  const NIVEL_PT = 88
+  const NIVEL_HS = 112
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* ---------- panel izquierdo: purga y trampa ---------- */}
+      <text x="14" y="18" fontSize="10" fontWeight="bold" fill="currentColor">
+        Purga y trampa
+      </text>
+
+      {/* vial con la muestra */}
+      <rect x="24" y="58" width="58" height={FONDO - 58} rx="3" {...trazo} />
+      <rect x="25" y={NIVEL_PT} width="56" height={FONDO - NIVEL_PT - 1} fill={AZUL_CLARO} fillOpacity="0.85" />
+      <line data-pieza="nivel-pt" x1="25" y1={NIVEL_PT} x2="81" y2={NIVEL_PT} stroke={AZUL} strokeWidth="2" />
+      <text x="86" y={NIVEL_PT + 4} fontSize="7.5" fill="currentColor">
+        agua
+      </text>
+
+      {/* el gas de purga BAJA hasta el fondo, por debajo del nivel */}
+      <line data-pieza="entrada-purga" x1="40" y1="44" x2="40" y2="140" stroke={ROJO} strokeWidth="1.8" />
+      <path d="M36 70 l4 6 l4 -6" fill="none" stroke={ROJO} strokeWidth="1.5" />
+      <text x="14" y="38" fontSize="7.5" fill={ROJO}>
+        gas inerte
+      </text>
+      <g fill="none" stroke="currentColor" strokeWidth="1.1">
+        {[[50, 128], [57, 116], [49, 105], [58, 96]].map(([cx, cy]) => (
+          <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r="3.2" />
+        ))}
+      </g>
+
+      {/* salida de los volatiles hacia la trampa */}
+      <path d="M66 58 L66 48 L112 48" fill="none" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M106 44 l6 4 l-6 4" fill="none" stroke="currentColor" strokeWidth="1.4" />
+
+      {/* la trampa con su adsorbente */}
+      <text x="149" y="26" fontSize="7.5" textAnchor="middle" fill="currentColor">
+        adsorbente (Tenax)
+      </text>
+      <rect data-pieza="trampa" x="118" y="34" width="62" height="28" rx="3" {...trazo} />
+      <g stroke="currentColor" strokeWidth="1">
+        {[128, 138, 148, 158, 168].map((x) => (
+          <line key={x} x1={x} y1="38" x2={x} y2="58" />
+        ))}
+      </g>
+      <text x="149" y="76" fontSize="7.5" textAnchor="middle" fill={ROJO}>
+        desorción
+      </text>
+      <text x="149" y="86" fontSize="7.5" textAnchor="middle" fill={ROJO}>
+        térmica
+      </text>
+
+      {/* salida al cromatografo */}
+      <path d="M180 48 L214 48 L214 104" fill="none" stroke={ROJO} strokeWidth="1.5" />
+      <path d="M210 98 l4 6 l4 -6" fill="none" stroke={ROJO} strokeWidth="1.5" />
+      <text x="220" y="106" fontSize="8" fill={ROJO}>
+        al CG
+      </text>
+
+      <text x="14" y="176" fontSize="8" fill="currentColor">
+        El gas inerte entra POR DEBAJO del nivel y burbujea a través
+      </text>
+      <text x="14" y="187" fontSize="8" fill="currentColor">
+        del agua. Concentra hasta 1000 veces. UNE-EN ISO 15680.
+      </text>
+
+      {/* ---------- separador ---------- */}
+      <line x1="266" y1="14" x2="266" y2="194" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+
+      {/* ---------- panel derecho: espacio de cabeza ---------- */}
+      <text x="290" y="18" fontSize="10" fontWeight="bold" fill="currentColor">
+        Espacio de cabeza
+      </text>
+
+      <rect x="330" y="58" width="58" height={FONDO - 58} rx="3" {...trazo} />
+      <rect x="331" y={NIVEL_HS} width="56" height={FONDO - NIVEL_HS - 1} fill={AZUL_CLARO} fillOpacity="0.85" />
+      <line data-pieza="nivel-hs" x1="331" y1={NIVEL_HS} x2="387" y2={NIVEL_HS} stroke={AZUL} strokeWidth="2" />
+      <text x="392" y={NIVEL_HS + 4} fontSize="7.5" fill="currentColor">
+        agua
+      </text>
+      <text x="392" y="86" fontSize="7.5" fill="currentColor">
+        vapor
+      </text>
+
+      {/* tapon con septo: el vial va CERRADO */}
+      <rect x="326" y="50" width="66" height="10" rx="2" fill={AZUL_CLARO} stroke="currentColor" strokeWidth="1.4" />
+
+      {/* la jeringa toma vapor POR ENCIMA del agua */}
+      <rect x="344" y="26" width="16" height="16" rx="2" fill="none" stroke={ROJO} strokeWidth="1.4" />
+      <line data-pieza="aguja-hs" x1="352" y1="42" x2="352" y2="96" stroke={ROJO} strokeWidth="1.8" />
+      <path d="M348 90 l4 6 l4 -6" fill="none" stroke={ROJO} strokeWidth="1.5" />
+
+      <text x="290" y="176" fontSize="8" fill="currentColor">
+        No se toca el agua: se deja equilibrar y la jeringa toma
+      </text>
+      <text x="290" y="187" fontSize="8" fill="currentColor">
+        vapor POR ENCIMA. UNE-EN ISO 11423-1 (benceno).
+      </text>
+
+      <text x="14" y="212" fontSize="8.5" fill="currentColor">
+        Las dos aíslan volátiles de un agua sin inyectarla: en cromatografía de gases todo lo que entra
+        debe ser volátil.
+      </text>
+      <text x="14" y="228" fontSize="8.5" fill="currentColor">
+        La purga y trampa concentra mucho más; el espacio de cabeza es más simple y no arrastra espuma
+        ni agua.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -2106,6 +2346,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <Cromatograma />
     case 'cromatografo-ionico':
       return <CromatografoIonico />
+    case 'cromatografo-gases':
+      return <CromatografoGases />
+    case 'purga-y-trampa':
+      return <PurgaYTrampa />
   }
 }
 
