@@ -835,6 +835,34 @@ body[data-listo="1"] {
   white-space: nowrap;
 }
 
+/*
+ * Recordatorio del dialogo de impresion. SOLO EN PANTALLA: lleva .no-imprimir,
+ * asi que la hoja de impresion lo oculta y no sale en el PDF.
+ *
+ * Por que existe: el enlace de la web publicada que aparece al pie de cada
+ * pagina del PDF NO lo escribe esta app. Lo dibuja el propio navegador cuando
+ * la casilla "Encabezados y pies de pagina" del dialogo esta marcada, que es
+ * como viene de fabrica, y ahi pone la URL abajo y el titulo y la fecha arriba.
+ * No hay forma de apagarlo desde la pagina sin dejar los margenes verticales a
+ * cero, lo que quitaria el margen de TODAS las paginas menos la primera. Asi
+ * que se pone la instruccion donde hace falta: al lado del boton.
+ */
+.imp-nota-dialogo {
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+  background: var(--surface-2);
+}
+
+.imp-nota-dialogo b {
+  color: var(--text);
+}
+
 .imp-aviso {
   border-left: 3px solid #96631a;
   background: #fbf0da;

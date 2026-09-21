@@ -64,6 +64,33 @@ function usePreparar(titulo: string) {
   }, [titulo, auto])
 }
 
+/**
+ * Recordatorio del dialogo de impresion, SOLO EN PANTALLA.
+ *
+ * El enlace de la web publicada que sale al pie de cada pagina del PDF no lo
+ * escribe esta app: lo dibuja el propio navegador cuando la casilla
+ * «Encabezados y pies de pagina» esta marcada, que es como viene de fabrica.
+ * Ahi pone la URL abajo y el titulo y la fecha arriba. Una pagina no puede
+ * apagar esa casilla; lo unico que la desactivaria es dejar los margenes
+ * verticales de @page a cero, y eso quitaria el margen de TODAS las paginas
+ * menos la primera, que es peor remedio que la enfermedad.
+ *
+ * Asi que la instruccion se pone donde hace falta y una sola vez: el navegador
+ * recuerda la eleccion para las siguientes impresiones.
+ *
+ * Lleva `no-imprimir`, de modo que la hoja de impresion la oculta: este aviso
+ * no sale en el PDF. Comprobado generando el PDF y buscando su texto.
+ */
+function NotaDialogo() {
+  return (
+    <p className="imp-nota-dialogo no-imprimir">
+      En el diálogo de impresión, abre <b>Más ajustes</b> y desmarca{' '}
+      <b>Encabezados y pies de página</b>: es lo que añade la dirección de la web y la fecha a cada
+      página. El navegador lo recuerda para las próximas veces. Este recuadro no se imprime.
+    </p>
+  )
+}
+
 function Cabecera({ subtitulo }: { subtitulo: string }) {
   return (
     <div className="imp-cabecera">
@@ -117,6 +144,7 @@ export function ImprimirTema() {
 
   return (
     <div className="imp">
+      <NotaDialogo />
       <Cabecera subtitulo="Apuntes" />
       <ApunteImpreso tema={tema} />
     </div>
@@ -132,6 +160,7 @@ export function ImprimirTemario() {
 
   return (
     <div className="imp">
+      <NotaDialogo />
       <section className="imp-portada">
         <p className="imp-portada-sup">Oposición · Ayuntamiento de Zaragoza</p>
         <h1>Técnica/o Auxiliar de Laboratorio</h1>
@@ -197,6 +226,7 @@ export function ImprimirTest() {
   if (!repaso || (repaso.test.length === 0 && repaso.supuestos.length === 0)) {
     return (
       <div className="imp">
+        <NotaDialogo />
         <Cabecera subtitulo="Test" />
         <h1>
           Tema {tema.numero}. {tema.titulo}
@@ -217,6 +247,7 @@ export function ImprimirTest() {
 
   return (
     <div className="imp">
+      <NotaDialogo />
       <Cabecera subtitulo="Cuestionario para hacer en papel" />
 
       <h1>

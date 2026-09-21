@@ -148,6 +148,19 @@ npm run export:pdf -- todo        # temario + apuntes y test de cada tema
 
 Los ficheros salen en `export/` (ignorada por git). Requiere `npm run build` previo y un Chrome instalado; con `--base <url>` puede apuntarse a la web publicada en lugar de a `dist/`, y con `--chrome <ruta>` indicarse otro ejecutable.
 
+### El enlace que aparecia en el pie del PDF
+
+**No lo escribe esta app.** Ni la portada, ni el pie, ni las fuentes llevan la direccion de la web publicada: comprobado por busqueda en el codigo y en los tres PDF generados. Lo que se veia al pie de cada pagina —y arriba el titulo y la fecha— lo dibuja **el propio navegador** cuando la casilla **«Encabezados y pies de pagina»** del dialogo de impresion esta marcada, que es como viene de fabrica. Es un ajuste del navegador, no del documento.
+
+| Camino de salida | Lleva la URL |
+| --- | --- |
+| `npm run export:pdf` | **No.** El script pone su propia plantilla de pie: `Tecnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza` y el numero de pagina |
+| Boton **Descargar en PDF** de la app | **Solo si la casilla esta marcada** |
+
+Una pagina web **no puede apagar esa casilla**. Lo unico que la desactiva desde el documento es dejar los **margenes verticales de `@page` a cero**, y eso quitaria el margen superior e inferior de **todas las paginas menos la primera** —el relleno de un bloque no se repite al saltar de pagina—, que en un temario de casi cien hojas es peor remedio que la enfermedad. Asi que la vista de impresion muestra **un aviso en pantalla**, con la clase `no-imprimir`, que dice donde esta la casilla; el navegador recuerda la eleccion para las siguientes impresiones.
+
+Comprobado generando el PDF en las dos posiciones de la casilla (`displayHeaderFooter` de `printToPDF` es ese mismo interruptor) y extrayendo el texto: **marcada, la URL sale en cada pagina; desmarcada, en ninguna**. Y el aviso no aparece en el PDF en ningun caso.
+
 ## Verificación
 
 Dos baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
