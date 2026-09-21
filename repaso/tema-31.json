@@ -1,0 +1,811 @@
+{
+  "tema": 31,
+  "titulo": "Cromatografía de gases: instrumentación. Utilización de la cromatografía de gases en análisis de agua.",
+  "generadoDe": "temas/tema-31.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-21",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t31-f01",
+      "anverso": "¿Qué detector se usa para analizar **trihalometanos** por cromatografía gaseosa, y por qué?",
+      "reverso": "El **ECD, detector de captura electrónica**. Literal en **1233 #4**.\nLa razón: los trihalometanos son **compuestos HALOGENADOS** —cloroformo, bromoformo, bromodiclorometano y dibromoclorometano—, y el ECD es **selectivo hacia los grupos funcionales electronegativos**, sobre todo halógenos y grupos nitro. Donde el FID daría poca señal, el ECD da muchísima.\nLos dos distractores ni siquiera son detectores de cromatografía de gases: **fluorescencia** y **UV-visible** son de cromatografía de líquidos.",
+      "fuente": "Cuestionario 1233 #4; LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f02",
+      "anverso": "¿Qué técnica utilizarías para **identificar** un microcontaminante orgánico en agua de consumo?",
+      "reverso": "**Cromatografía de gases o de líquidos con DETECTOR DE MASAS.** Literal en **1233 #5** y **1246 #30**.\nLa palabra que decide es **IDENTIFICAR**: solo el espectrómetro de masas —o un FT-IR— **guarda el espectro completo del eluyente en cada instante**, y eso permite **interpretarlo o buscarlo en una biblioteca de espectros** para decir **qué es** algo que no se sabía de antemano.\nUn FID o un ECD solo dicen **cuánto hay** de algo que ya se sabía que estaba.",
+      "fuente": "Cuestionarios 1233 #5 y 1246 #30",
+      "etiquetas": ["aplicacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f03",
+      "anverso": "«Un cromatógrafo de gases **por sí solo**…»: ¿qué hace?",
+      "reverso": "**SEPARA diferentes compuestos.** Literal en **1233 #9**, con «cuantifica varios compuestos» y «detecta diferentes moléculas» como distractores.\nEs la misma idea que la pregunta de la columna en el tema 30, enunciada sobre el equipo entero:\n- **La columna SEPARA.**\n- **El detector DETECTA**: convierte en señal lo que va saliendo.\n- **El integrador o software CUANTIFICA**, por área o por altura del pico.",
+      "fuente": "Cuestionario 1233 #9",
+      "etiquetas": ["concepto", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f04",
+      "anverso": "Las **columnas capilares** de cromatografía gaseosa: ¿qué se ha preguntado de ellas y qué es falso?",
+      "reverso": "Lo preguntado (**1322 #36**): **tienen un DIÁMETRO INFERIOR A 1 mm**. En concreto, **150-300 µm**.\nY los dos distractores son falsos por lo mismo:\n- «Necesitan muestras **mayores** que las empaquetadas» → **al revés**: al ser mucho más estrechas admiten **muchísima menos** muestra (menos de 10⁻² µL).\n- «**No llevan fase estacionaria**» → sí la llevan; lo que no llevan es **relleno**: la fase va **sobre la pared interna**.",
+      "fuente": "Cuestionario 1322 #36; LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f05",
+      "anverso": "Recorre este equipo y enumera sus **componentes** según el CEM. ¿Cuántos son, y por qué no son los mismos que en líquidos?",
+      "reverso": "**Son CINCO** (QU-005, apartado 4.2):\n1. **Gases portadores.**\n2. **Sistemas de inyección de la muestra.**\n3. **Columnas y hornos.**\n4. **Detectores.**\n5. **Sistema de procesamiento de la señal y tratamiento de datos.**\n**En líquidos el CEM enumera SEIS**, porque allí hay un bloque entero de **tratamiento de los disolventes** —desgasificar, filtrar, mezclar—. Aquí la fase móvil sale de una botella y no hay nada que tratar.\nObsérvese que la lista junta **«columnas y hornos»** en un solo punto.",
+      "fuente": "CEM, QU-005 apartado 4.2; CEM, QU-004 apartado 4.2",
+      "etiquetas": ["instrumentacion"],
+      "figura": { "tipo": "esquema", "valor": "cromatografo-gases" },
+      "nucleo": true
+    },
+    {
+      "id": "t31-f06",
+      "anverso": "¿Cuál es la **fase móvil** en cromatografía de gases y cuál es su función?",
+      "reverso": "Un **GAS INERTE**, y el CEM es tajante sobre su papel: *«cuya **única función es transportar el analito** a través de la columna»*. No interacciona, no disuelve, no arrastra químicamente.\n**Cuáles valen:** el CEM admite *«gases químicamente inertes como **helio, argón, nitrógeno, dióxido de carbono e hidrógeno**»*; los tres habituales son **He, Ar y N₂**.\n**Quién decide cuál:** el **detector**. **TCD → helio**, por su alta conductividad térmica; **ECD → nitrógeno**, que es el gas que se ioniza para dar la corriente de fondo.",
+      "fuente": "CEM, QU-005 apartados 4.2 y 5.1; LibreTexts 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f07",
+      "anverso": "Caudales típicos del gas portador, según el tipo de columna.",
+      "reverso": "| Columna | Caudal |\n| --- | --- |\n| **Empaquetada** | **25-150 mL/min** |\n| **Capilar** | **1-25 mL/min** |\nUn orden de magnitud de diferencia, que es la consecuencia directa del diámetro: 2-4 mm frente a 150-300 µm.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f08",
+      "anverso": "¿Qué **tres condiciones** tiene que cumplir una muestra para entrar en un cromatógrafo de gases?",
+      "reverso": "1. **Todos los componentes deben ser VOLÁTILES.** Un soluto poco volátil queda retenido y sigue eluyendo en los análisis siguientes; uno **no volátil se condensa en la cabeza de la columna y la degrada**.\n2. **Los analitos deben estar en una concentración apropiada.** Si sobra, se **sobrecarga la columna** —el pico sale con frente— y se puede salir del rango lineal del detector.\n3. **La inyección no debe degradar la separación**: hay **ensanchamiento de banda precolumna** si se inyecta en demasiado volumen de fase móvil, o si se inyecta líquido en vez de gas.\n**Corolario para aguas: el agua NO se inyecta.** Hay que aislar antes lo volátil.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f09",
+      "anverso": "Los exámenes responden **purga y trampa** para los trihalometanos. ¿En qué consiste y qué la hace tan útil?",
+      "reverso": "Tres pasos:\n1. Se **burbujea un gas inerte** —He o N₂— **a través de la muestra de agua**, lo que libera o *purga* los compuestos volátiles.\n2. El gas los arrastra hasta una **trampa con material adsorbente**, típicamente **Tenax**, donde quedan retenidos.\n3. Se **calienta la trampa** y se **lava a contracorriente con gas portador**, y eso los transfiere al cromatógrafo.\n**Lo que la hace tan útil es que CONCENTRA: hasta 1000 veces.** Por eso es el método de los parámetros cuyo valor paramétrico está en µg/L.\nNorma: **UNE-EN ISO 15680:2004**, cuyo título nombra expresamente la purga y trampa y la desorción térmica.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2; UNE-EN ISO 15680:2004",
+      "etiquetas": ["instrumentacion", "examen"],
+      "figura": { "tipo": "esquema", "valor": "purga-y-trampa" },
+      "nucleo": true
+    },
+    {
+      "id": "t31-f10",
+      "anverso": "¿Qué es el muestreo de **espacio de cabeza** y en qué se distingue de la purga y trampa?",
+      "reverso": "La muestra se pone en un **vial cerrado con un espacio de aire encima**; se deja **tiempo para que los analitos volátiles se equilibren** entre el agua y ese aire, y **con una jeringa se extrae una porción de la fase VAPOR** y se inyecta.\n**La distinción es exactamente ésa: aquí NO se toca el agua.** En la purga y trampa el gas atraviesa el líquido; aquí solo se muestrea lo que ya se ha evaporado.\n**A cambio:** es más simple y no arrastra espuma ni agua, pero **concentra mucho menos**.\nNorma de ejemplo: **ISO 11423-1**, benceno y derivados por espacio de cabeza.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f11",
+      "anverso": "¿Qué es la **microextracción en fase sólida (SPME)**?",
+      "reverso": "Una **fibra de sílice fundida** recubierta de una **película fina de adsorbente** —típicamente **polidimetilsiloxano**— que va **dentro de la aguja de una jeringa**.\nSe baja la fibra presionando un émbolo, se **expone a la muestra un tiempo predeterminado**, se retrae dentro de la aguja y se lleva al cromatógrafo, donde se desorbe.\nPuede exponerse **al agua directamente o a su espacio de cabeza** (HS-SPME). Normas: **ISO 17943** (COV por HS-SPME y GC-MS) e **ISO 27108** (plaguicidas y biocidas).",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f12",
+      "anverso": "Si el analito **no es volátil**, ¿cómo entra en un cromatógrafo de gases?",
+      "reverso": "Dos caminos:\n- **EXTRACCIÓN con disolvente**, si es extraíble: es lo que hace la **ISO 6468** con los **insecticidas organoclorados, los PCB y los clorobencenos** —extracción líquido-líquido y después GC con **ECD**—.\n- **DERIVATIZACIÓN**, si no hay manera: se hace reaccionar el analito para convertirlo en **un derivado volátil**. Es lo que exigen los **ácidos haloacéticos** (**ISO 23631**) y los **herbicidas fenoxialcanoicos** (**ISO 15913**). El ejemplo de manual son los aminoácidos, que se esterifican antes de poder inyectarse.",
+      "fuente": "LibreTexts 27.2; catálogo ISO/TC 147/SC 2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f13",
+      "anverso": "**Split frente a splitless**: ¿en qué se diferencian y cuál es el del análisis de trazas?",
+      "reverso": "Los dos usan el mismo inyector, con un **liner de vidrio** donde la muestra se vaporiza y se mezcla con el gas portador.\n- **SPLIT:** la ventilación de división está **ABIERTA**. Solo entra en la columna **entre el 0,1 % y el 10 %** de la muestra; el resto se va por el venteo. Se usa cuando **sobra analito**.\n- **SPLITLESS:** se **CIERRA** la ventilación y entra **prácticamente toda** la muestra. **Es el modo del ANÁLISIS DE TRAZAS** y, por tanto, el de las aguas.\n**El problema del splitless** es que el caudal por el inyector es bajo y la banda se ensancha. Se corrige manteniendo la columna **20-25 °C por debajo del punto de ebullición del disolvente**: éste **condensa a la entrada y forma una barrera que atrapa los solutos**; después se sube la temperatura y arranca la separación.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f14",
+      "anverso": "¿A qué temperatura se calienta el **bloque inyector** de una columna empaquetada, y qué es la inyección *on-column*?",
+      "reverso": "El bloque inyector se calienta **AL MENOS 50 °C POR ENCIMA del punto de ebullición del soluto MENOS volátil**, lo que asegura una **vaporización rápida** de todos los componentes.\nLa muestra se inyecta con **jeringa de microlitros a través de un septo de goma**, directamente en la cabeza de la columna: así se mezcla con **la menor cantidad posible de gas portador** y se minimiza el ensanchamiento.\n**Inyección EN COLUMNA (*on-column*):** la muestra se inyecta **directamente en la columna y SIN calentar**; después se sube la temperatura de la columna. Es la salida para **muestras que se descomponen** con el calor del inyector.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f15",
+      "anverso": "Compara **columna empaquetada** y **columna capilar**.",
+      "reverso": "| | **Empaquetada** | **CAPILAR** |\n| --- | --- | --- |\n| Material | Vidrio, acero inoxidable, cobre o aluminio | **Sílice fundida** |\n| Longitud | **2 a 6 m** | **15 a 100 m** |\n| Diámetro interno | **2 a 4 mm** | **150 a 300 µm** |\n| Relleno | **Tierra de diatomeas** | **Ninguno**: la fase va en la pared |\n| Eficiencia | ≈ 1 800 platos/m | ≈ **4 300 platos/m** (129 000 en 30 m) |\n| Muestra | Mucha más | Menos de **10⁻² µL** |\n| Caudal | 25-150 mL/min | 1-25 mL/min |",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f16",
+      "anverso": "Los **tres tipos** de columna capilar.",
+      "reverso": "- **WCOT** (*wall-coated open tubular*): una **película fina de fase estacionaria LÍQUIDA sobre la pared** interna del capilar.\n- **PLOT** (*porous-layer open tubular*): un **soporte sólido POROSO** unido a la pared —alúmina, gel de sílice, tamices moleculares—.\n- **SCOT** (*support-coated open tubular*): **una PLOT que además lleva fase estacionaria líquida** sobre ese soporte poroso.\nRegla para no perderse: **WCOT = solo líquido · PLOT = solo sólido poroso · SCOT = las dos cosas.**",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f17",
+      "anverso": "¿Qué es el **soporte** de una columna empaquetada y qué problema dan sus grupos silanol?",
+      "reverso": "El soporte más usado es la **TIERRA DE DIATOMEAS**: los esqueletos de sílice de las diatomeas. Son partículas **muy porosas** (0,5-7,5 m²/g), lo que da mucho contacto entre las dos fases.\nAl hidrolizarse, su superficie queda con **grupos SILANOL (−SiOH)**, que son **sitios activos**:\n- En **cromatografía gas-SÓLIDO (GSC)** eso es justo lo que se aprovecha: adsorben el soluto.\n- En **cromatografía gas-LÍQUIDO (GLC)** estorban, porque adsorben por su cuenta y **degradan la separación**. Por eso **se desactivan** haciéndolos reaccionar con **dimetildiclorosilano** antes de recubrir con la fase estacionaria.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f18",
+      "anverso": "¿De qué depende el **orden de elución** en cromatografía gas-líquido?",
+      "reverso": "De **dos cosas**:\n1. El **PUNTO DE EBULLICIÓN** de los solutos.\n2. La **interacción del soluto con la fase estacionaria**.\nSi los puntos de ebullición son muy distintos, **la elección de la fase importa poco**. Si son parecidos, **solo hay separación si la fase interacciona selectivamente con uno de los dos**.\n**La regla práctica:** los solutos **no polares** se separan mejor con fase estacionaria **no polar**, y los **polares** con fase **polar**.\nCon **polidimetilsiloxano** —no polar, la primera elección para una separación nueva— **el orden de elución sigue los puntos de ebullición**: primero el más volátil.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f19",
+      "anverso": "Fases estacionarias habituales en cromatografía de gases, por polaridad.",
+      "reverso": "| Fase | Polaridad | Comercial | Límite T | Para qué |\n| --- | --- | --- | --- | --- |\n| **Polidimetilsiloxano** | No polar | **SE-30** | 300-350 °C | Pesticidas, fármacos, fenoles, esteroides |\n| Fenilmetil polisiloxano (50 % fenilo) | Moderada | OV-17 | 375 °C | Pesticidas, **HAP**, **PCB** |\n| Trifluoropropilmetil polisiloxano | Moderada | OV-210 | 275 °C | **Compuestos halogenados**, cetonas |\n| Cianopropilfenilmetil polisiloxano | Polar | OV-225 | 275 °C | Nitrilos, pesticidas, esteroides |\n| **Polietilenglicol** | Polar | **Carbowax** | 225 °C | Aldehídos, ésteres, éteres, fenoles |\n**Cuatro criterios para elegirla:** que **no reaccione** con los solutos, que sea **térmicamente estable**, que tenga **volatilidad baja** y que su **polaridad sea la apropiada**.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f20",
+      "anverso": "¿Qué es el **sangrado** de una columna y cómo se combate? ¿Y qué espesor de película se usa?",
+      "reverso": "El **sangrado (*bleed*)** es la **tendencia de toda fase estacionaria líquida a eluir de la columna cuando se calienta**. Es lo que fija el **límite de temperatura** de cada fase.\nSe combate con:\n- **Fases UNIDAS**: químicamente enlazadas a la superficie de sílice del capilar.\n- **Fases RETICULADAS**: las cadenas poliméricas se unen entre sí una vez la fase ya está dentro de la columna.\n**Espesor de película: el más común es 0,25 µm.** **Más gruesa** para solutos **muy volátiles** (gases), porque retiene más; **más fina** para solutos **poco volátiles**, y porque mejora la eficiencia.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f21",
+      "anverso": "¿Por qué la columna va dentro de un **horno**, y qué es la programación de temperatura?",
+      "reverso": "Porque *«el control de la temperatura de la columna es **crítico** para lograr una buena separación»*: es la variable con la que se gobierna la retención. El inyector y el detector se quedan **fuera** y se calientan aparte, a otra temperatura.\n| Modo | Cómo | Cuándo |\n| --- | --- | --- |\n| **Isotermo** | Temperatura **constante**, algo por debajo de la del soluto de menor punto de ebullición | Mezclas sencillas |\n| **Programación (rampa)** | Se empieza por debajo del más volátil y **se sube la temperatura**, a velocidad uniforme o por escalones | Cuando los solutos tienen **puntos de ebullición muy distintos**: es lo normal en aguas |\n**El problema que resuelve la rampa:** la temperatura que separa bien lo volátil deja **tiempos de retención inaceptables** para lo poco volátil.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f22",
+      "anverso": "Enumera los **seis detectores** que lista el CEM, y di qué hace un detector.",
+      "reverso": "**QU-005, apartado 3:**\n**FID** (ionización de llama) · **TCD** (conductividad térmica) · **TID** (termoiónico) · **ECD** (captura de electrones) · **AED** (emisión atómica) · **NPD** (nitrógeno-fósforo).\n**Y la definición del CEM, que ya contiene los dos principales:** *«aprecia la presencia de vapor de la especie a analizar que sale por la columna y mide **o bien el cambio en alguna propiedad mayoritaria del gas** (como por ejemplo, la conductividad térmica) **o bien una propiedad única de la especie a analizar** (como por ejemplo, el contenido en carbono)»*.\nLo primero es el **TCD**; lo segundo, el **FID**.",
+      "fuente": "CEM, QU-005, apartado 3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f23",
+      "anverso": "El detector **TCD**: fundamento, ventajas y su gran defecto.",
+      "reverso": "**Fundamento:** el eluyente pasa sobre un **filamento de tungsteno-renio** cuya **resistencia depende de su temperatura**, y ésta de la **conductividad térmica** del gas. Cuando sale un soluto, la conductividad del gas **baja**, el filamento **se calienta** y sube su resistencia. Una **celda de referencia**, por la que solo pasa fase móvil, corrige las derivas de caudal, presión y tensión.\n**Ventajas:** es **UNIVERSAL** —todos los solutos cambian la conductividad—, tiene **rango lineal de 10⁴-10⁵** y **NO destruye la muestra**, así que se puede recuperar el analito con una trampa fría.\n**Su gran defecto: el límite de detección es POBRE** para la mayoría de analitos. Por eso en aguas se usa poco.\n**Gas portador de elección: HELIO**, por su alta conductividad térmica.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f24",
+      "anverso": "El detector **FID**: fundamento, qué NO detecta y por qué interesa en aguas.",
+      "reverso": "**Fundamento:** la combustión de un compuesto orgánico en una **llama de H₂/aire** produce **electrones y cationes orgánicos** —básicamente **CHO⁺**—. Aplicando unos **300 voltios** se recoge una corriente de **10⁻⁹ a 10⁻¹² amperios** que, amplificada, es la señal.\n**Qué detecta:** casi todos los átomos de carbono **salvo los de grupos carbonilo y carboxilo**, lo que lo hace **casi universal para compuestos ORGÁNICOS**.\n**Qué NO detecta:** la mayoría de **compuestos inorgánicos** y muchos gases, entre ellos **H₂O y CO₂** — y eso es precisamente lo que lo hace **útil para analitos orgánicos en muestras ambientales acuosas y atmosféricas**.\n**Prestaciones:** límite de detección **2-3 órdenes mejor que el TCD** y **rango lineal de 10⁶-10⁷**. **Destruye la muestra.**",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f25",
+      "anverso": "El detector **ECD**: fundamento, a qué es selectivo y cuál es su punto flaco.",
+      "reverso": "**Fundamento:** lleva un **emisor β** —**⁶³Ni**— cuyos electrones ionizan la fase móvil, normalmente **N₂**, generando una **corriente estacionaria** entre dos electrodos. Cuando eluye un soluto con **alta afinidad por capturar electrones**, **la corriente DISMINUYE**, y esa caída es la señal.\n**Es un detector SELECTIVO**, y esto es lo que hay que retener: **altamente selectivo hacia solutos con grupos funcionales ELECTRONEGATIVOS —halógenos y grupos nitro— y relativamente insensible a aminas, alcoholes e hidrocarburos**.\n**Su punto flaco:** aunque su límite de detección es **excelente**, su **rango lineal se extiende solo unos DOS órdenes de magnitud**.\n**Por eso es el detector de los trihalometanos y de los organoclorados.**",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f26",
+      "anverso": "El **espectrómetro de masas** como detector: ¿universal o selectivo? ¿Y por qué es el único que identifica?",
+      "reverso": "**Las dos cosas, según cómo se opere:**\n- **Barrido de iones TOTALES:** se escanea todo el espectro y se reporta la señal total. Da **detección UNIVERSAL** para todos los analitos.\n- **Monitorización de iones SELECCIONADOS (SIM):** se vigilan solo una o varias relaciones m/z concretas. Da **SELECTIVIDAD**.\n**Prestaciones:** límite de detección de **25 fg a 100 pg** y **rango lineal de 10⁵**.\n**Por qué identifica:** porque **registra el espectro completo del eluyente en cada instante**, y eso permite **interpretarlo o buscarlo en una biblioteca**. Además deja **evaluar la pureza del pico**: si el espectro al principio del pico no coincide con el del final, **hay al menos dos compuestos coeluyendo**.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2 y 27.4",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f27",
+      "anverso": "¿Cómo se identifica un pico si el detector **no** es espectroscópico?",
+      "reverso": "Dos maneras, ninguna tan buena como el espectro:\n1. **Comparar el tiempo de retención** del pico con el de un compuesto conocido, **en condiciones de operación idénticas**.\n2. **Añadir el compuesto sospechoso a la muestra** y ver si **crece la altura del pico**.\n**El problema del tiempo de retención** es que **no es comparable entre columnas**: dos columnas «idénticas» difieren en eficiencia de empaquetamiento, así que no se pueden tabular tiempos estándar.\n**La solución es el ÍNDICE DE RETENCIÓN DE KOVATS**: se define el índice de un **n-alcano** como **100 veces su número de carbonos** —butano 400, pentano 500— y se interpola logarítmicamente el del compuesto entre los dos alcanos que lo flanquean. **Ese índice sí es razonablemente constante** entre columnas e instrumentos.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.4",
+      "etiquetas": ["fundamento"]
+    },
+    {
+      "id": "t31-f28",
+      "anverso": "Los otros detectores: ¿para qué sirven el **fotométrico de llama**, el **termoiónico** y el **NPD**?",
+      "reverso": "Los tres son parientes del FID, con un añadido que los hace selectivos:\n- **Detector FOTOMÉTRICO DE LLAMA:** mide la **emisión óptica del FÓSFORO y del AZUFRE**, así que es selectivo para compuestos que los contengan.\n- **Detector TERMOIÓNICO (TID)** y **detector de NITRÓGENO-FÓSFORO (NPD):** responden a compuestos que contienen **nitrógeno o fósforo**. De ahí su interés para **plaguicidas organofosforados y organonitrogenados**.\nY además está el **AED** (emisión atómica) y el **FT-IR**, que como el MS **registra el espectro continuo del eluyente**.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2; CEM, QU-005 apartado 3",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t31-f29",
+      "anverso": "Para cuantificar, ¿**área** o **altura** de pico?",
+      "reverso": "El CEM admite las dos y se moja: *«pueden utilizarse ambos, aunque **en general es más fiable el ÁREA**. La decisión será tomada por el usuario en función de las pruebas de puesta a punto»*.\nY es también lo primero que se fija al preparar la calibración (QU-005, 5.3.2): **selección del tipo de respuesta —área o altura—, del modo de integración, de la ventana de tiempos y del umbral mínimo para considerar que hay señal**.",
+      "fuente": "CEM, QU-005, apartados 4.2 y 5.3.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t31-f30",
+      "anverso": "¿Por qué en cromatografía de gases cuantitativa se usa **patrón interno**?",
+      "reverso": "La frase del CEM lo dice entero:\n> *«En cromatografía cuantitativa **los resultados más fiables se consiguen mediante el uso de patrones internos**, debido a que con este método **se evitan las incertidumbres que se producen en la INYECCIÓN de la muestra**.»*\n**Qué es:** una sustancia **añadida a muestras y patrones** para compensar las fluctuaciones de señal debidas a **el volumen inyectado, la temperatura, el inyector**…\n**Cómo se usa:** se mide la **relación entre el área del analito y la del patrón interno**, y esa relación es la respuesta que se lleva a la calibración.",
+      "fuente": "CEM, QU-005, apartados 3 y 4.5",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f31",
+      "anverso": "Los **cinco requisitos** que el CEM exige a un patrón interno.",
+      "reverso": "1. **Debe dar señal** en las condiciones cromatográficas del ensayo.\n2. **NO debe estar presente** ni en los materiales de referencia ni en las muestras, *«para que la referencia de su señal no sea distorsionada»*.\n3. Debe tener una **concentración adecuada** para poder detectarla **sin ningún tipo de dudas**.\n4. **La cantidad añadida debe ser conocida y repetible.**\n5. **La relación entre su señal y la del analito debe seguir un modelo LINEAL.**",
+      "fuente": "CEM, QU-005, apartado 3",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t31-f32",
+      "anverso": "¿Qué **métodos de calibración** contempla el CEM para un cromatógrafo de gases?",
+      "reverso": "Enumera **cuatro** y desarrolla los dos más usados:\n- **Función de calibrado.**\n- **Método de adiciones.**\n- **Patrón interno con recta.**\n- **Patrón interno con punto único.**\n**La RECTA DE CALIBRADO** es *«la forma de calibración típica en cromatografía de gases cuantitativa»*, por **fiable, rápida y relativamente sencilla**: se inyectan los materiales de referencia **en orden creciente de concentración** y se representa **área o altura frente a concentración**. **Exige recalibrar con frecuencia.**\n**El PATRÓN INTERNO CON PUNTO ÚNICO** da los resultados más fiables, porque cancela las incertidumbres de la inyección.",
+      "fuente": "CEM, QU-005, apartados 4.3, 4.4 y 4.5",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t31-f33",
+      "anverso": "¿Qué hay que comprobar en el cromatograma durante una calibración, y qué antes de ella?",
+      "reverso": "**Antes:** analizar **un blanco del diluyente** y comprobar **la ausencia de señal del analito** —o que sea inferior a un valor de referencia preestablecido— **y que la línea base sea adecuada**. Si no, se repite el blanco.\n**Después, sobre el cromatograma de los patrones (QU-005, 5.3.6):**\n1. **Los picos aparecen en los tiempos de retención esperados.**\n2. **La resolución de la columna entre picos es siempre superior a 1,5.**\n3. **La forma de los picos es adecuada, sin colas ni artefactos** (desviaciones de la forma gaussiana).\n4. **La ventana de integración seleccionada ha sido la adecuada.**",
+      "fuente": "CEM, QU-005, apartados 5.3.3 a 5.3.6",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f34",
+      "anverso": "Un detalle operativo del CEM muy de este tema: ¿cómo se preparan los patrones si el analito es **volátil**?",
+      "reverso": "**Por PESADA, y sin esperar a atemperar.** El aviso del CEM es literal:\n> *«Si los compuestos son **volátiles** no se esperará a atemperar y **todas las preparaciones se realizarán por pesada**, para minimizar posibles errores por volatilización del compuesto de interés.»*\nEs exactamente el caso de los **trihalometanos** y de los **compuestos orgánicos volátiles**: cada minuto que el vial pasa abierto o templándose es analito que se pierde.\nEn el caso general, en cambio, el material de referencia **sí se atempera** antes de usarlo.",
+      "fuente": "CEM, QU-005, apartado 5.2.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t31-f35",
+      "anverso": "Condiciones y material que exige el CEM para calibrar un cromatógrafo de gases.",
+      "reverso": "- **Se calibra siempre en el laboratorio**, entre **18 °C y 28 °C**. *«Determinados detectores o inyectores pueden requerir un control más severo de las variaciones de temperatura.»*\n- **Gases apropiados**, químicamente inertes.\n- **Pipetas y matraces aforados clase A**; **micropipetas** con repetibilidad y exactitud **de al menos el 2 %**; **microjeringas** si no hay inyector automático; **balanza analítica con resolución de 0,1 mg**.\n- **Disolvente de pureza cromatográfica**, libre de impurezas que den señal en los tiempos de retención del analito o del patrón interno.\n- **Material de referencia** cuya concentración esté **en el rango en que se espera medir**, y **dentro de su periodo de caducidad**.",
+      "fuente": "CEM, QU-005, apartados 5.1 y 5.2",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t31-f36",
+      "anverso": "Los **trihalometanos** en el RD 3/2023: valor paramétrico, qué suma y qué exige la norma.",
+      "reverso": "**∑4 Trihalometanos (THM) = 100 µg/L**, con **incertidumbre máxima del 40 %**.\n**Suma cuatro sustancias**, nombradas una a una en la nota 18:\n- **Bromodiclorometano**\n- **Bromoformo**\n- **Cloroformo**\n- **Dibromoclorometano**\nY la nota añade una obligación de fondo: *«el operador **se esforzará en obtener un valor lo más bajo posible, sin comprometer en ningún momento la desinfección**»*. Es el mismo equilibrio que con el clorito y el clorato del tema 30.",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2 y nota 18; anexo III tabla 15",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f37",
+      "anverso": "Los **ácidos haloacéticos**: valor paramétrico, qué suman y **cuándo se controlan**.",
+      "reverso": "**∑5 Ácidos haloacéticos (HAA) = 60 µg/L**, con **incertidumbre máxima del 50 %**.\n**Suman cinco:** ácidos **monocloroacético, dicloroacético, tricloroacético, monobromoacético y dibromoacético**.\n**Y lo que más se pregunta es cuándo se controlan**, porque no es siempre: *«se controlará **cuando el método de desinfección sea con productos en los que se libere o genere CLORO ACTIVO**»*.\nLes aplica también la cláusula de esforzarse en bajar el valor **sin comprometer la desinfección**.\nSe determinan por cromatografía de gases **previa derivatización** (**ISO 23631**), porque no son volátiles tal cual.",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2 y nota 12; ISO 23631:2006",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f38",
+      "anverso": "Valores paramétricos de los **compuestos orgánicos volátiles** del RD 3/2023.",
+      "reverso": "| Parámetro | Valor | Incertidumbre |\n| --- | --- | --- |\n| **∑2 Tricloroeteno + Tetracloroeteno** | **10 µg/L** | 40 % |\n| **1,2-Dicloroetano** | **3,0 µg/L** | 40 % |\n| **Benceno** | **1,0 µg/L** | 40 % |\n| **Cloruro de vinilo** | **0,50 µg/L** | 50 % |\n| **Epiclorhidrina** | **0,10 µg/L** | 30 % |\n| **Acrilamida** | **0,10 µg/L** | 30 % |\nLa **∑2** suma exactamente dos sustancias: **tricloroeteno y tetracloroeteno**.\nEl valor del **cloruro de vinilo, la epiclorhidrina y la acrilamida** se refiere a la **concentración de monómero residual**, calculada a partir de la liberación máxima del polímero en contacto con el agua.",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2, notas 1 y 17; anexo III tabla 15",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t31-f39",
+      "anverso": "Los **plaguicidas** en el RD 3/2023: los tres valores que hay que saber.",
+      "reverso": "- **Plaguicida individual: 0,10 µg/L.** Incertidumbre máxima **30 %**.\n- **∑n Plaguicidas totales: 0,50 µg/L**, suma de los valores cuantificados de los individuales presentes.\n- **Y el matiz que decide la pregunta:** los **0,10 µg/L** se aplican a los plaguicidas **que hubieran estado autorizados el año anterior**. Si el plaguicida está **prohibido o no autorizado**, su valor paramétrico debe estar **POR DEBAJO DE 0,03 µg/L**, y **el límite de detección será siempre inferior a 0,03 µg/L**. Al detectarlo, **aviso inmediato a la autoridad sanitaria y a la Confederación Hidrográfica**.\n**Técnica documentada en los supuestos: cromatografía de gases con detector selectivo de masas (MSD).**",
+      "fuente": "RD 3/2023, anexo I parte B tabla 2, notas 8, 9 y 16; cuestionarios 1233 C2 #4, 1246 C2 #4 y 1322 C2 #28",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f40",
+      "anverso": "¿Qué norma cubre los **hidrocarburos halogenados altamente volátiles** y cuál la **purga y trampa**?",
+      "reverso": "- **UNE-EN ISO 10301:1998**, *«Calidad del agua. Determinación de hidrocarburos halogenados altamente volátiles. Métodos por cromatografía de gases»*. **En vigor**, versión confirmada en 2008. Es la de los **trihalometanos** y los **cloroetenos**.\n- **UNE-EN ISO 15680:2004**, *«Calidad del agua. Determinación de ciertos hidrocarburos aromáticos monocíclicos, naftaleno y algunos compuestos clorados utilizando **purga y trampa y desorción térmica**»*. **En vigor**, confirmada en 2010. Es la norma que **lleva la purga y trampa en el título**.",
+      "fuente": "UNE-EN ISO 10301:1998; UNE-EN ISO 15680:2004",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f41",
+      "anverso": "¿Qué norma cubre los **insecticidas organoclorados y los PCB**, y con qué preparación y detector?",
+      "reverso": "**ISO 6468:1996**, *«Determinación de ciertos insecticidas organoclorados, policlorobifenilos y clorobencenos. Método de cromatografía de gases tras extracción líquido-líquido»*. **Vigente** (estado 90.93 del ISO).\n- **Preparación: EXTRACCIÓN LÍQUIDO-LÍQUIDO.** Los organoclorados no son lo bastante volátiles para purga y trampa.\n- **Detector: ECD**, porque son **compuestos halogenados**.\n- **Matrices:** agua **de consumo, subterránea, superficial y residual**.\n- **Límite de aplicación:** muestras con hasta **0,05 g/L de sólidos en suspensión**.\n- **Excluye** los mono- y diclorobencenos.",
+      "fuente": "ISO 6468:1996, resumen público de alcance en iso.org",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t31-f42",
+      "anverso": "Mapa rápido: ¿qué norma para qué analito en cromatografía de gases de aguas?",
+      "reverso": "| Analito | Norma | Preparación |\n| --- | --- | --- |\n| **Halogenados muy volátiles** (THM, cloroetenos) | **UNE-EN ISO 10301** | — |\n| **Aromáticos, naftaleno y clorados** | **UNE-EN ISO 15680** | **Purga y trampa** |\n| **Benceno y derivados** | **ISO 11423-1 / -2** | **Espacio de cabeza** / extracción |\n| **COV en general** | **ISO 17943** / **ISO 20595** | HS-SPME / espacio de cabeza |\n| **Organoclorados, PCB, clorobencenos** | **ISO 6468** | Extracción líquido-líquido |\n| **Organonitrogenados y organofosforados** | **ISO 10695** | — |\n| **Herbicidas fenoxialcanoicos** | **ISO 15913** | **Derivatización** |\n| **Ácidos haloacéticos y dalapón** | **ISO 23631** | Derivatización |\n| **Plaguicidas y biocidas** | **ISO 27108** | **SPME** |",
+      "fuente": "Catálogo público del comité ISO/TC 147/SC 2",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t31-f43",
+      "anverso": "¿En qué envase se toma una muestra para **COV y trihalometanos**?",
+      "reverso": "**En recipiente de VIDRIO con tapones de revestimiento interno de POLITETRAFLUOROETILENO (PTFE)**, y **llenado sin cámara de aire**. Es la respuesta literal de **1246 C2 #24**.\n**Por qué no plástico:** adsorbe los compuestos orgánicos y además **deja pasar volátiles a través de la pared**.\n**Por qué sin cámara de aire:** cualquier espacio de aire se convierte en un **espacio de cabeza involuntario**, y el analito se reparte a él y se pierde al abrir.\n*(El desarrollo completo de envases y conservación es del **tema 36**.)*",
+      "fuente": "Cuestionario 1246 C2 #24",
+      "etiquetas": ["aplicacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f44",
+      "anverso": "Los dos **reflejos** de los supuestos para cromatografía de gases.",
+      "reverso": "**1) TRIHALOMETANOS → cromatografía de gases con PURGA Y TRAMPA y detector ECD.**\nDocumentado tres veces: **1233 C2 #5** («purga y trampa y detector ECD»), **1246 C2 #5** («purga y trampa») y **1322 C2 #23** («purga y trampa y detección electrónica»).\n**2) PLAGUICIDAS → cromatografía de gases con DETECTOR SELECTIVO DE MASAS (MSD).**\nDocumentado tres veces: **1233 C2 #4**, **1246 C2 #4** y **1322 C2 #28** (aldrín, dieldrín y heptacloro, «cromatografía de gases con espectrometría de masas»).",
+      "fuente": "Cuestionarios 1233 C2, 1246 C2 y 1322 C2",
+      "etiquetas": ["aplicacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t31-f45",
+      "anverso": "¿Cuándo NO es cromatografía de gases? Los distractores que ha usado el examen.",
+      "reverso": "La cromatografía de gases se ha ofrecido como **respuesta falsa** en:\n- **Oxidabilidad** (1322 C2 #22) → es **permanganimetría** (tema 33).\n- **Plomo** (1246 C2 #9, «cromatografía de gases con detector selectivo») → es **ICP-MS** (tema 27).\n- **Cadmio** (1246 C2 #1) y **sodio** (1233 C2 #1) → **ICP-MS** y **cromatografía iónica**.\n**La regla de fondo:** la cromatografía de gases es de **compuestos ORGÁNICOS VOLÁTILES y termoestables**. Si el analito es un **metal**, un **ion inorgánico** o un **parámetro global** (DQO, oxidabilidad, sólidos), **no es cromatografía de gases**.\nY si es orgánico pero **no volátil o termolábil** —HAP, benzo(a)pireno, plaguicidas polares—, es **cromatografía de LÍQUIDOS** (tema 32).",
+      "fuente": "Cuestionarios 1246 C2 y 1322 C2",
+      "etiquetas": ["trampa", "examen"],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t31-q01",
+      "pregunta": "¿Qué detector es el más adecuado para el análisis de trihalometanos por cromatografía gaseosa?",
+      "opciones": ["ECD o detector de captura electrónica.", "Detector de fluorescencia.", "Detector de UV-visible."],
+      "correcta": 0,
+      "explicacion": "Literal en 1233 #4. Los trihalometanos son compuestos halogenados y el ECD es selectivo hacia los grupos funcionales electronegativos, en especial los halógenos. Además, ni la fluorescencia ni el UV-visible son detectores de cromatografía de gases: son de cromatografía de líquidos.",
+      "fuente": "Cuestionario 1233 #4",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q02",
+      "pregunta": "Para identificar un microcontaminante orgánico en agua de consumo, ¿qué técnica es la más apropiada?",
+      "opciones": [
+        "Espectrofotometría de UV-visible.",
+        "Potenciometría.",
+        "Cromatografía de gases o de líquidos con detector de masas."
+      ],
+      "correcta": 2,
+      "explicacion": "Literal en 1233 #5 y 1246 #30. La palabra clave es IDENTIFICAR: solo el espectrómetro de masas guarda el espectro completo del eluyente y permite buscarlo en una biblioteca para decir qué es un compuesto desconocido. Los otros detectores solo dicen cuánto hay de algo que ya se sabía.",
+      "fuente": "Cuestionarios 1233 #5 y 1246 #30",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q03",
+      "pregunta": "Un cromatógrafo de gases, por sí solo:",
+      "opciones": ["Cuantifica varios compuestos.", "Separa diferentes compuestos.", "Detecta diferentes moléculas."],
+      "correcta": 1,
+      "explicacion": "Literal en 1233 #9, y es la misma idea que «la columna separa» del tema 30: la columna separa, el detector detecta y el integrador cuantifica, por área o por altura del pico.",
+      "fuente": "Cuestionario 1233 #9",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q04",
+      "pregunta": "Las columnas capilares utilizadas en cromatografía gaseosa:",
+      "opciones": [
+        "Necesitan muestras mayores que las empaquetadas.",
+        "No llevan fase estacionaria.",
+        "Tienen un diámetro inferior a 1 mm."
+      ],
+      "correcta": 2,
+      "explicacion": "Literal en 1322 #36. Su diámetro interno es de 150 a 300 µm. Las otras dos son falsas: admiten muchísima MENOS muestra que las empaquetadas (menos de 10⁻² µL), y sí llevan fase estacionaria, solo que sobre la pared interna en vez de sobre un relleno.",
+      "fuente": "Cuestionario 1322 #36; LibreTexts 27.3",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q05",
+      "pregunta": "Según el procedimiento QU-005 del Centro Español de Metrología, los componentes principales de un cromatógrafo de gases son:",
+      "opciones": [
+        "Gases portadores, sistemas de inyección, columnas y hornos, detectores, y sistema de procesamiento de señal y tratamiento de datos.",
+        "Bombas, inyector de bucle, precolumna, columna, supresor y detector de conductividad.",
+        "Nebulizador, antorcha, interfase de conos, lentes iónicas, cuadrupolo y detector."
+      ],
+      "correcta": 0,
+      "explicacion": "Son cinco, y la lista junta «columnas y hornos» en un solo punto porque la columna va dentro del horno. La segunda opción describe un cromatógrafo iónico (tema 30) y la tercera un ICP-MS (tema 27).",
+      "fuente": "CEM, QU-005, apartado 4.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q06",
+      "pregunta": "En cromatografía de gases, la fase móvil:",
+      "opciones": [
+        "Es un disolvente orgánico que arrastra y disuelve selectivamente los analitos.",
+        "Es un gas inerte cuya única función es transportar el analito a través de la columna.",
+        "Es la película líquida depositada sobre el soporte sólido."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la definición del CEM. La película líquida sobre el soporte es la fase ESTACIONARIA. Los gases admitidos son químicamente inertes: helio, argón, nitrógeno, dióxido de carbono e hidrógeno.",
+      "fuente": "CEM, QU-005, apartados 4.2 y 5.1"
+    },
+    {
+      "id": "t31-q07",
+      "pregunta": "¿Qué gas portador se prefiere cuando el detector es de conductividad térmica (TCD)?",
+      "opciones": ["Nitrógeno, por ser el más barato.", "Aire, por su disponibilidad.", "Helio, por su alta conductividad térmica."],
+      "correcta": 2,
+      "explicacion": "El TCD mide el cambio de conductividad térmica del gas al pasar el soluto: cuanto mayor es la conductividad del gas portador, mayor es el contraste y la señal. El nitrógeno es en cambio el gas típico del ECD, y el aire no es un gas portador: es el comburente de la llama del FID.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q08",
+      "pregunta": "Los caudales típicos de fase móvil en cromatografía de gases son:",
+      "opciones": [
+        "25-150 mL/min en columna empaquetada y 1-25 mL/min en columna capilar.",
+        "1-25 mL/min en columna empaquetada y 25-150 mL/min en columna capilar.",
+        "Los mismos en ambas, porque el caudal lo fija el detector."
+      ],
+      "correcta": 0,
+      "explicacion": "El orden de magnitud de diferencia es consecuencia directa del diámetro: 2-4 mm en la empaquetada frente a 150-300 µm en la capilar.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q09",
+      "pregunta": "En un muestreo de purga y trampa:",
+      "opciones": [
+        "Se deja equilibrar la muestra en un vial cerrado y se toma con jeringa una porción del vapor de encima.",
+        "Se burbujea un gas inerte a través de la muestra y los volátiles liberados quedan retenidos en una trampa de adsorbente.",
+        "Se extrae la muestra con un disolvente orgánico y se inyecta el extracto."
+      ],
+      "correcta": 1,
+      "explicacion": "La primera opción describe el muestreo de espacio de cabeza y la tercera, una extracción líquido-líquido. En la purga y trampa los volátiles se recuperan después calentando la trampa y lavándola a contracorriente con gas portador.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q10",
+      "pregunta": "¿Cuál es la principal ventaja de la purga y trampa frente al espacio de cabeza?",
+      "opciones": [
+        "Que no necesita gas inerte.",
+        "Que permite analizar compuestos no volátiles.",
+        "Que concentra los analitos, hasta unas 1000 veces."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso es el método de los parámetros cuyo valor paramétrico está en µg/L, como los trihalometanos. Sí necesita gas inerte —es justo lo que burbujea— y no sirve para compuestos no volátiles: para ésos hay que extraer o derivatizar.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q11",
+      "pregunta": "En el muestreo de espacio de cabeza, lo que se inyecta en el cromatógrafo es:",
+      "opciones": [
+        "Una porción de la fase vapor en equilibrio con la muestra, tomada del aire que hay sobre ella en un vial cerrado.",
+        "La muestra de agua completa, previamente filtrada.",
+        "El adsorbente donde han quedado retenidos los volátiles."
+      ],
+      "correcta": 0,
+      "explicacion": "La clave del espacio de cabeza es que NO se toca el agua: se deja que los volátiles se equilibren con el aire de encima y se muestrea ese aire. Es más simple que la purga y trampa y no arrastra espuma ni agua, pero concentra mucho menos.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q12",
+      "pregunta": "La microextracción en fase sólida (SPME) consiste en:",
+      "opciones": [
+        "Pasar la muestra por un cartucho relleno de resina de intercambio iónico.",
+        "Exponer a la muestra una fibra de sílice fundida recubierta de un adsorbente, alojada en la aguja de una jeringa.",
+        "Congelar la muestra para separar los volátiles por sublimación."
+      ],
+      "correcta": 1,
+      "explicacion": "El recubrimiento típico es polidimetilsiloxano. La fibra puede exponerse al agua o a su espacio de cabeza, y después se desorbe en el inyector del cromatógrafo. La resina de intercambio iónico es de la cromatografía iónica (tema 30).",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q13",
+      "pregunta": "En una inyección con división (split) en una columna capilar, la fracción de muestra que entra en la columna es típicamente:",
+      "opciones": ["Del 50 al 90 %.", "Prácticamente el 100 %.", "Del 0,1 al 10 %."],
+      "correcta": 2,
+      "explicacion": "El resto sale por la ventilación de división. El caso en que entra prácticamente toda la muestra es la inyección SIN división (splitless), que es la que se usa para el análisis de trazas y, por tanto, para las aguas.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q14",
+      "pregunta": "La inyección sin división (splitless) se emplea sobre todo:",
+      "opciones": [
+        "Para el análisis de trazas, porque permite que prácticamente toda la muestra entre en la columna.",
+        "Para muestras muy concentradas, porque evita sobrecargar la columna.",
+        "Para muestras que se descomponen con el calor del inyector."
+      ],
+      "correcta": 0,
+      "explicacion": "Con la ventilación cerrada el caudal por el inyector es bajo y la banda tiende a ensancharse: se corrige manteniendo la columna 20-25 °C por debajo del punto de ebullición del disolvente, que condensa a la entrada y atrapa los solutos. Para muestras concentradas se usa el modo split, y para las que se descomponen, la inyección en columna.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q15",
+      "pregunta": "El bloque inyector de una columna empaquetada se calienta a una temperatura de:",
+      "opciones": [
+        "Unos 20-25 °C por debajo del punto de ebullición del disolvente.",
+        "Al menos 50 °C por encima del punto de ebullición del soluto menos volátil.",
+        "La misma que el horno de la columna, para evitar condensaciones."
+      ],
+      "correcta": 1,
+      "explicacion": "Así se asegura la vaporización rápida de todos los componentes de la muestra. Los 20-25 °C por debajo del punto de ebullición del disolvente son la temperatura de la COLUMNA en una inyección splitless, que es otra cosa.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q16",
+      "pregunta": "En un cromatógrafo de gases, la columna se aloja dentro de un horno termostatado porque:",
+      "opciones": [
+        "Así se evita el sangrado de la fase estacionaria.",
+        "Es la única forma de mantener constante el caudal del gas portador.",
+        "El control de la temperatura de la columna es crítico para la separación, y permite trabajar en modo isotermo o con programación de temperatura."
+      ],
+      "correcta": 2,
+      "explicacion": "La rampa de temperatura resuelve el problema del modo isotermo: la temperatura que separa bien los solutos de bajo punto de ebullición da tiempos de retención inaceptables para los de alto punto de ebullición. El sangrado, en cambio, aumenta con la temperatura, no se evita con ella.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q17",
+      "pregunta": "Una columna capilar de tipo PLOT (tubular abierta de capa porosa) se caracteriza porque:",
+      "opciones": [
+        "Lleva un soporte sólido poroso unido a la pared interna, como alúmina, gel de sílice o tamices moleculares.",
+        "Lleva solo una película delgada de fase estacionaria líquida sobre la pared.",
+        "Está rellena de tierra de diatomeas recubierta de fase líquida."
+      ],
+      "correcta": 0,
+      "explicacion": "La que lleva solo película líquida sobre la pared es la WCOT; la que añade fase líquida sobre el soporte poroso es la SCOT. La tierra de diatomeas rellena las columnas EMPAQUETADAS, no las capilares.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3"
+    },
+    {
+      "id": "t31-q18",
+      "pregunta": "El espesor de película de fase estacionaria más común en una columna capilar es de:",
+      "opciones": ["0,25 mm.", "0,25 µm.", "0,25 nm."],
+      "correcta": 1,
+      "explicacion": "Se usan películas más gruesas para solutos muy volátiles, como los gases, porque retienen más, y más finas para solutos poco volátiles y para mejorar la eficiencia.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3"
+    },
+    {
+      "id": "t31-q19",
+      "pregunta": "Se llama «sangrado» de una columna cromatográfica a:",
+      "opciones": [
+        "La pérdida de gas portador por una fuga en el septo del inyector.",
+        "La aparición de picos fantasma procedentes de la inyección anterior.",
+        "La tendencia de la fase estacionaria líquida a eluir de la columna cuando se calienta."
+      ],
+      "correcta": 2,
+      "explicacion": "Es lo que fija el límite de temperatura de cada fase estacionaria. Se combate con fases unidas —enlazadas químicamente a la sílice— y reticuladas, que unen entre sí las cadenas poliméricas una vez la fase está dentro de la columna.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.3"
+    },
+    {
+      "id": "t31-q20",
+      "pregunta": "Señale la afirmación correcta sobre el detector de conductividad térmica (TCD):",
+      "opciones": [
+        "Es un detector universal y no destructivo, pero su límite de detección es pobre.",
+        "Es un detector selectivo hacia compuestos halogenados, con excelente límite de detección.",
+        "Destruye la muestra al quemarla en una llama de hidrógeno y aire."
+      ],
+      "correcta": 0,
+      "explicacion": "Todos los solutos cambian la conductividad térmica de la fase móvil, de ahí su universalidad, y como no altera la muestra permite recuperarla con una trampa fría. La segunda opción describe el ECD y la tercera, el FID.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2"
+    },
+    {
+      "id": "t31-q21",
+      "pregunta": "El detector de ionización de llama (FID):",
+      "opciones": [
+        "Detecta por igual compuestos orgánicos e inorgánicos, incluidos el agua y el dióxido de carbono.",
+        "Es casi universal para compuestos orgánicos, pero no detecta la mayoría de los inorgánicos ni el H₂O ni el CO₂.",
+        "No destruye la muestra, lo que permite recuperar el analito."
+      ],
+      "correcta": 1,
+      "explicacion": "Precisamente por no responder al agua ni al CO₂ resulta muy útil para analitos orgánicos en muestras ambientales acuosas y atmosféricas. Sí destruye la muestra: la quema en una llama de H₂/aire, donde se forma el catión CHO⁺ que genera la corriente.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q22",
+      "pregunta": "El detector de captura de electrones (ECD) es altamente selectivo hacia solutos con:",
+      "opciones": [
+        "Anillos aromáticos condensados.",
+        "Grupos hidroxilo y amino.",
+        "Grupos funcionales electronegativos, como halógenos y grupos nitro."
+      ],
+      "correcta": 2,
+      "explicacion": "Es relativamente insensible a aminas, alcoholes e hidrocarburos, y por eso es el detector de los trihalometanos y los organoclorados. Su límite de detección es excelente, pero su rango lineal se extiende solo unos dos órdenes de magnitud.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q23",
+      "pregunta": "¿Por qué el espectrómetro de masas es el único detector cromatográfico que permite identificar un compuesto desconocido?",
+      "opciones": [
+        "Porque registra el espectro completo del eluyente en cada instante, lo que permite interpretarlo o buscarlo en una biblioteca de espectros.",
+        "Porque su límite de detección es el más bajo de todos.",
+        "Porque su respuesta es proporcional al número de átomos de carbono del analito."
+      ],
+      "correcta": 0,
+      "explicacion": "Además, al guardar el espectro a lo largo del pico permite evaluar su pureza: si el espectro del principio difiere del del final, hay al menos dos compuestos coeluyendo. La respuesta proporcional al carbono es del FID.",
+      "fuente": "LibreTexts, Análisis Instrumental 27.2 y 27.4",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q24",
+      "pregunta": "Según el CEM, en cromatografía cuantitativa los resultados más fiables se consiguen con patrón interno porque:",
+      "opciones": [
+        "Permite prescindir de los materiales de referencia certificados.",
+        "Se evitan las incertidumbres que se producen en la inyección de la muestra.",
+        "Aumenta la resolución entre los picos del cromatograma."
+      ],
+      "correcta": 1,
+      "explicacion": "El patrón interno se añade a muestras y patrones para compensar las fluctuaciones debidas al volumen inyectado, la temperatura o el inyector, y la respuesta pasa a ser la relación de áreas. No sustituye al material de referencia ni mejora la separación.",
+      "fuente": "CEM, QU-005, apartados 3 y 4.5",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q25",
+      "pregunta": "El parámetro ∑4 Trihalometanos del RD 3/2023 tiene un valor paramétrico de 100 µg/L y suma:",
+      "opciones": [
+        "Ácidos monocloroacético, dicloroacético, tricloroacético y monobromoacético.",
+        "Tricloroeteno, tetracloroeteno, 1,2-dicloroetano y cloruro de vinilo.",
+        "Bromodiclorometano, bromoformo, cloroformo y dibromoclorometano."
+      ],
+      "correcta": 2,
+      "explicacion": "Los cuatro están nombrados uno a uno en la nota 18 del anexo I, parte B. La primera opción son ácidos haloacéticos (∑5 = 60 µg/L) y la segunda mezcla el parámetro ∑2 con dos compuestos que tienen valor propio.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 18",
+      "nucleo": true
+    },
+    {
+      "id": "t31-q26",
+      "pregunta": "Respecto de los plaguicidas en agua de consumo, señale la afirmación correcta:",
+      "opciones": [
+        "El valor de 0,10 µg/L se aplica a los que hubieran estado autorizados el año anterior; si el plaguicida está prohibido, su valor debe estar por debajo de 0,03 µg/L.",
+        "El valor paramétrico es siempre de 0,50 µg/L para cada plaguicida individual.",
+        "No existe valor para el sumatorio: solo se controlan individualmente."
+      ],
+      "correcta": 0,
+      "explicacion": "Además, para los prohibidos el límite de detección debe ser siempre inferior a 0,03 µg/L, y al detectarlos hay que avisar inmediatamente a la autoridad sanitaria y a la Confederación Hidrográfica. Los 0,50 µg/L son el valor del sumatorio ∑n de plaguicidas totales, que sí existe.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2, notas 8, 9 y 16",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t31-s01",
+      "titulo": "Supuesto 1. Orgánicos en un agua de consumo clorada",
+      "enunciado": "Llega al laboratorio una muestra de **agua de consumo** de una red que se desinfecta con **hipoclorito sódico**. Hay que determinar **trihalometanos**, **benceno** y **plaguicidas**.\n\nEl laboratorio dispone de un **cromatógrafo de gases** con **purga y trampa**, y de detectores **FID**, **ECD** y **MSD**.",
+      "preguntas": [
+        {
+          "id": "t31-s01-q1",
+          "pregunta": "¿Qué técnica indicaría para el análisis de los trihalometanos?",
+          "opciones": [
+            "Espectrofotometría de absorción molecular UV-visible.",
+            "Cromatografía de gases con purga y trampa y detector ECD.",
+            "Cromatografía iónica de aniones.",
+            "Absorción atómica con cámara de grafito."
+          ],
+          "correcta": 1,
+          "explicacion": "Es la respuesta documentada en 1233 C2 #5, 1246 C2 #5 y 1322 C2 #23. La purga y trampa aísla y concentra los volátiles del agua —hasta unas 1000 veces— y el ECD es selectivo hacia los halógenos. La cromatografía iónica es de iones inorgánicos y la absorción atómica, de metales.",
+          "fuente": "Cuestionarios 1233 C2 #5, 1246 C2 #5 y 1322 C2 #23; UNE-EN ISO 10301:1998"
+        },
+        {
+          "id": "t31-s01-q2",
+          "pregunta": "¿Por qué el ECD y no el FID para esos compuestos?",
+          "opciones": [
+            "Porque el FID no responde a compuestos orgánicos.",
+            "Porque el ECD tiene un rango lineal mucho más amplio que el FID.",
+            "Porque los trihalometanos son compuestos halogenados y el ECD es selectivo hacia los grupos electronegativos, lo que le da una sensibilidad mucho mayor para ellos.",
+            "Porque el FID destruye la muestra y el ECD no, y hay que recuperarla."
+          ],
+          "correcta": 2,
+          "explicacion": "El FID sí responde a compuestos orgánicos —es casi universal para ellos—, pero daría poca señal para los halogenados comparado con el ECD. Y el rango lineal es justo al revés: el del FID abarca 10⁶-10⁷ órdenes y el del ECD, solo unos dos. Que el ECD no destruya la muestra es cierto pero irrelevante aquí.",
+          "fuente": "LibreTexts, Análisis Instrumental 27.2"
+        },
+        {
+          "id": "t31-s01-q3",
+          "pregunta": "¿En qué envase debe haberse tomado la muestra para los trihalometanos?",
+          "opciones": [
+            "Recipiente de plástico con ácido nítrico.",
+            "Recipiente de plástico especialmente limpio.",
+            "Envase de vidrio transparente, dejando cámara de aire para permitir el equilibrio.",
+            "Recipiente de vidrio con tapones de revestimiento interno de politetrafluoroetileno (PTFE), y sin cámara de aire."
+          ],
+          "correcta": 3,
+          "explicacion": "Es la respuesta literal de 1246 C2 #24. El plástico adsorbe los orgánicos y deja pasar volátiles a través de la pared; el ácido nítrico es para metales. Y la cámara de aire es justo lo que hay que evitar: se convertiría en un espacio de cabeza involuntario y el analito se perdería al abrir.",
+          "fuente": "Cuestionario 1246 C2 #24; tema 36"
+        },
+        {
+          "id": "t31-s01-q4",
+          "pregunta": "¿Y para los plaguicidas?",
+          "opciones": [
+            "Cromatografía de gases con detector selectivo de masas (MSD).",
+            "Turbidimetría.",
+            "Gravimetría.",
+            "Absorción atómica con cámara de grafito."
+          ],
+          "correcta": 0,
+          "explicacion": "Es la respuesta documentada en 1233 C2 #4, 1246 C2 #4 y 1322 C2 #28. El detector de masas identifica y cuantifica a la vez, que es lo que se necesita cuando hay que buscar un listado largo de sustancias distintas. Para los organoclorados en concreto, la ISO 6468 emplea extracción líquido-líquido y detector ECD.",
+          "fuente": "Cuestionarios 1233 C2 #4, 1246 C2 #4 y 1322 C2 #28"
+        },
+        {
+          "id": "t31-s01-q5",
+          "pregunta": "En el cribado aparece un plaguicida que está prohibido en España. ¿Qué exige el RD 3/2023?",
+          "opciones": [
+            "Nada distinto: se le aplica el valor paramétrico general de 0,10 µg/L.",
+            "Que se aplique el valor del sumatorio, 0,50 µg/L.",
+            "Que su valor paramétrico esté por debajo de 0,03 µg/L, que el límite de detección sea siempre inferior a 0,03 µg/L, y que se avise inmediatamente a la autoridad sanitaria y a la Confederación Hidrográfica.",
+            "Que se repita el análisis por cromatografía iónica para confirmarlo."
+          ],
+          "correcta": 2,
+          "explicacion": "El valor de 0,10 µg/L solo se aplica a los plaguicidas que hubieran estado autorizados el año anterior. Para los prohibidos o no autorizados la exigencia es más estricta, tanto en el valor como en el límite de detección, y se suma la obligación de aviso inmediato.",
+          "fuente": "RD 3/2023, anexo I, parte B, tabla 2, notas 8 y 9"
+        }
+      ]
+    },
+    {
+      "id": "t31-s02",
+      "titulo": "Supuesto 2. Puesta a punto y calibración del cromatógrafo de gases",
+      "enunciado": "Se pone en marcha un **cromatógrafo de gases con columna capilar** para determinar **compuestos orgánicos volátiles en agua** a concentraciones de **microgramos por litro**.\n\nAl calibrar con materiales de referencia, el cromatograma muestra los picos esperados pero **la resolución entre dos de ellos es de 1,3** y uno presenta **cola**.",
+      "preguntas": [
+        {
+          "id": "t31-s02-q1",
+          "pregunta": "Trabajando a concentraciones de µg/L con columna capilar, ¿qué modo de inyección procede?",
+          "opciones": [
+            "Con división (split), con una relación que deje entrar en la columna un 1 % de la muestra.",
+            "Inyección en columna (on-column) sin calentar, para no degradar los analitos.",
+            "Es indiferente: el modo de inyección no afecta a la cantidad de analito que llega a la columna.",
+            "Sin división (splitless), para que entre prácticamente toda la muestra."
+          ],
+          "correcta": 3,
+          "explicacion": "El splitless es el modo del análisis de trazas. Con split solo entraría entre el 0,1 y el 10 % de la muestra, lo que sobra cuando hay analito de más pero no cuando se buscan µg/L. La inyección en columna se reserva para muestras que se descomponen con el calor del inyector.",
+          "fuente": "LibreTexts, Análisis Instrumental 27.2"
+        },
+        {
+          "id": "t31-s02-q2",
+          "pregunta": "La mezcla contiene compuestos con puntos de ebullición muy distintos. ¿Cómo conviene programar el horno?",
+          "opciones": [
+            "Con programación de temperatura: empezar por debajo del punto de ebullición del soluto más volátil e ir subiendo, a velocidad uniforme o por escalones.",
+            "En modo isotermo a la temperatura más alta posible, para que todo eluya deprisa.",
+            "Sin horno: en cromatografía de gases la columna trabaja a temperatura ambiente.",
+            "Con el horno a la misma temperatura que el inyector, para evitar condensaciones."
+          ],
+          "correcta": 0,
+          "explicacion": "Es justo el problema que resuelve la rampa: en isotermo, la temperatura que separa bien los solutos de bajo punto de ebullición deja tiempos de retención inaceptables para los de alto punto de ebullición. El inyector se calienta aparte y a otra temperatura, bastante más alta.",
+          "fuente": "LibreTexts, Análisis Instrumental 27.2"
+        },
+        {
+          "id": "t31-s02-q3",
+          "pregunta": "Para cuantificar se decide usar patrón interno. ¿Cuál de estos requisitos NO le exige el CEM?",
+          "opciones": [
+            "Que dé señal en las condiciones cromatográficas del ensayo.",
+            "Que esté presente de forma natural en la muestra, para no alterar la matriz.",
+            "Que la cantidad añadida sea conocida y repetible.",
+            "Que la relación entre su señal y la del analito siga un modelo lineal."
+          ],
+          "correcta": 1,
+          "explicacion": "Es al revés: el CEM exige que el patrón interno NO esté presente ni en los materiales de referencia ni en las muestras, «para que la referencia de su señal no sea distorsionada». Los otros tres sí son requisitos, junto con el de tener una concentración adecuada para detectarlo sin dudas.",
+          "fuente": "CEM, QU-005, apartado 3"
+        },
+        {
+          "id": "t31-s02-q4",
+          "pregunta": "Con una resolución de 1,3 entre dos picos y uno con cola, ¿qué procede según el QU-005?",
+          "opciones": [
+            "Dar la calibración por válida: por encima de 1,0 la separación ya es completa.",
+            "Integrar manualmente y continuar, porque la forma del pico no es criterio de aceptación.",
+            "Cambiar de detector, que es lo que determina la resolución.",
+            "No dar por buena la comprobación del cromatograma: el CEM exige resolución siempre superior a 1,5 y picos sin colas ni artefactos."
+          ],
+          "correcta": 3,
+          "explicacion": "El apartado 5.3.6 obliga a confirmar cuatro cosas: picos en los tiempos de retención esperados, resolución de la columna siempre superior a 1,5, forma de pico adecuada sin colas ni artefactos, y ventana de integración correcta. La resolución la da la columna y las condiciones de separación, no el detector.",
+          "fuente": "CEM, QU-005, apartado 5.3.6"
+        },
+        {
+          "id": "t31-s02-q5",
+          "pregunta": "Al preparar los patrones a partir de un material de referencia certificado de compuestos volátiles, ¿qué precaución señala el CEM?",
+          "opciones": [
+            "Atemperar el material de referencia al menos dos horas antes de usarlo.",
+            "No esperar a atemperar y realizar todas las preparaciones por pesada, para minimizar los errores por volatilización.",
+            "Preparar las diluciones con veinticuatro horas de antelación para que se homogeneicen.",
+            "Diluir siempre en agua ultrapura, nunca en disolvente orgánico."
+          ],
+          "correcta": 1,
+          "explicacion": "Es una nota expresa del apartado 5.2.2, y contrasta con la regla general, que sí manda atemperar el material de referencia. Las diluciones, además, se preparan justo antes de la calibración, no con antelación.",
+          "fuente": "CEM, QU-005, apartado 5.2.2"
+        }
+      ]
+    }
+  ]
+}
