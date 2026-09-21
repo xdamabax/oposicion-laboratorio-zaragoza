@@ -55,6 +55,8 @@ export type TipoEsquema =
   | 'nefelometro-turbidimetro'
   | 'refractometro-abbe'
   | 'polarimetro'
+  | 'cromatograma'
+  | 'cromatografo-ionico'
 
 export type TipoMaterial =
   | 'matraz-aforado'

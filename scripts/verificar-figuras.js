@@ -327,6 +327,31 @@ function medir(sabotaje, ROJO) {
     for (let i = 0; i + 1 < n.length; i += 2) d.push(`${i ? 'L' : 'M'}${856 - n[i]} ${n[i + 1]}`)
     laja.setAttribute('d', `${d.join(' ')} Z`)
   }
+  if (sabotaje === 24) {
+    const svg = porClave('cromatograma')
+    // el tiempo muerto, llevado detras del primer pico: deja de ser el primero
+    const tm = pieza(svg, 'tm')
+    tm.setAttribute('x1', 230)
+    tm.setAttribute('x2', 230)
+  }
+  if (sabotaje === 25) {
+    const svg = porClave('cromatograma')
+    // se ensancha el pico B y no se toca el numero escrito: la cuenta deja de salir
+    const w = pieza(svg, 'w-b')
+    w.setAttribute('x1', num(w, 'x1') - 16)
+    w.setAttribute('x2', num(w, 'x2') + 16)
+  }
+  if (sabotaje === 26) {
+    const svg = porClave('cromatografo-ionico')
+    // el rotulo de la precolumna, detras del de la columna: el orden se rompe
+    const t = [...svg.querySelectorAll('text')].find((e) => e.textContent.trim() === 'Precolumna')
+    if (t) t.setAttribute('x', 340)
+  }
+  if (sabotaje === 27) {
+    const svg = porClave('cromatografo-ionico')
+    // el supresor, detras del detector: quedaria midiendo con el fondo sin rebajar
+    pieza(svg, 'supresor').setAttribute('x', 502)
+  }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
@@ -784,6 +809,102 @@ function medir(sabotaje, ROJO) {
     return `plano a ${alfa.toFixed(1)}°, las ${rejilla.length} líneas del analizador y su laja (${angLaja.toFixed(1)}°), todo igual`
   })
 
+  /*
+   * Cromatograma. El dibujo escribe un numero -la resolucion- que se deduce de
+   * su propia geometria, asi que puede demostrarlo: se recalcula Rs sobre lo
+   * pintado y se exige que coincida con lo escrito. Un cromatograma con los
+   * picos bonitos y la resolucion inventada no da ningun error por si solo.
+   */
+  control('Cromatograma · el tiempo muerto va ANTES que los dos picos, y cada marca en su cima', () => {
+    const svg = porClave('cromatograma')
+    const equis = (p) => {
+      const l = pieza(svg, p)
+      return (num(l, 'x1') + num(l, 'x2')) / 2
+    }
+    const [xm, xa, xb] = ['tm', 'tr-a', 'tr-b'].map(equis)
+    if (!(xm < xa && xa < xb)) {
+      throw new Error(
+        `los tiempos van tM=${xm.toFixed(0)}, tR(A)=${xa.toFixed(0)}, tR(B)=${xb.toFixed(0)}: ` +
+          `el tiempo muerto tiene que ser el PRIMERO y tR(A) anterior a tR(B)`,
+      )
+    }
+    // y cada marca ha de caer sobre la cima de SU pico, medida en el trazado
+    const cima = (p) => {
+      const pts = puntos(pieza(svg, p))
+      return pts.reduce((mejor, q) => (q[1] < mejor[1] ? q : mejor), pts[0])[0]
+    }
+    for (const [marca, pico] of [['tm', 'pico-m'], ['tr-a', 'pico-a'], ['tr-b', 'pico-b']]) {
+      const dx = Math.abs(equis(marca) - cima(pico))
+      if (dx > 1.5) {
+        throw new Error(`la marca "${marca}" cae a ${dx.toFixed(1)} px de la cima de "${pico}"`)
+      }
+    }
+    return `tM=${xm.toFixed(0)} < tR(A)=${xa.toFixed(0)} < tR(B)=${xb.toFixed(0)}, y las tres marcas sobre su cima`
+  })
+
+  control('Cromatograma · la resolución escrita coincide con la dibujada', () => {
+    const svg = porClave('cromatograma')
+    const equis = (p) => {
+      const l = pieza(svg, p)
+      return (num(l, 'x1') + num(l, 'x2')) / 2
+    }
+    const ancho = (p) => {
+      const l = pieza(svg, p)
+      return Math.abs(num(l, 'x2') - num(l, 'x1'))
+    }
+    const wa = ancho('w-a')
+    const wb = ancho('w-b')
+    if (!(wa > 0 && wb > 0)) throw new Error('alguna anchura de base mide cero')
+    const dibujada = (2 * (equis('tr-b') - equis('tr-a'))) / (wa + wb)
+
+    const rotulo = pieza(svg, 'rs').textContent
+    const m = rotulo.match(/Rs\s*=\s*(\d+(?:[.,]\d+)?)/)
+    if (!m) throw new Error(`no encuentro el valor de Rs en «${rotulo.trim().slice(0, 40)}»`)
+    const escrita = Number(m[1].replace(',', '.'))
+
+    if (Math.abs(dibujada - escrita) > 0.05) {
+      throw new Error(
+        `el dibujo da Rs = ${dibujada.toFixed(2)} (Δt=${(equis('tr-b') - equis('tr-a')).toFixed(0)}, ` +
+          `wA=${wa.toFixed(0)}, wB=${wb.toFixed(0)}) y el rótulo dice ${escrita}`,
+      )
+    }
+    return `dibujada ${dibujada.toFixed(2)} y escrita ${escrita}: wA=${wa.toFixed(0)}, wB=${wb.toFixed(0)}`
+  })
+
+  control('Cromatógrafo iónico · las etapas van en orden', () =>
+    enOrden(porClave('cromatografo-ionico'), [
+      'Eluyente',
+      'Bomba',
+      'Inyector',
+      'Precolumna',
+      'Columna',
+      'Supresor',
+      'Detector',
+      'Registro',
+    ]),
+  )
+
+  control('Cromatógrafo iónico · el supresor va ENTRE la columna y el detector', () => {
+    const svg = porClave('cromatografo-ionico')
+    const caja = (p) => pieza(svg, p).getBBox()
+    const columna = caja('columna')
+    const supresor = caja('supresor')
+    const detector = caja('detector')
+    if (!(supresor.x >= columna.x + columna.width)) {
+      throw new Error(
+        `el supresor (x=${supresor.x.toFixed(0)}) no queda después de la columna ` +
+          `(acaba en ${(columna.x + columna.width).toFixed(0)}): así no rebajaría el fondo del eluyente ya separado`,
+      )
+    }
+    if (!(supresor.x + supresor.width <= detector.x)) {
+      throw new Error(
+        `el supresor acaba en x=${(supresor.x + supresor.width).toFixed(0)} y el detector empieza en ` +
+          `x=${detector.x.toFixed(0)}: el supresor tiene que ir ANTES del detector de conductividad`,
+      )
+    }
+    return `columna hasta ${(columna.x + columna.width).toFixed(0)}, supresor [${supresor.x.toFixed(0)}, ${(supresor.x + supresor.width).toFixed(0)}], detector desde ${detector.x.toFixed(0)}`
+  })
+
   return resultados
 }
 
@@ -813,6 +934,10 @@ const SABOTAJES = {
   21: 'el plano de polarización, girado ya antes del tubo',
   22: 'el analizador, dejado vertical mientras el plano va girado',
   23: 'la laja del analizador, girada al revés que su propia rejilla',
+  24: 'el tiempo muerto del cromatograma, llevado detrás del primer pico',
+  25: 'la anchura del pico B, ensanchada sin tocar la resolución escrita',
+  26: 'el rótulo de la precolumna, movido detrás de la columna separadora',
+  27: 'el supresor, colocado después del detector de conductividad',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -846,6 +971,10 @@ const CONTROL_DE = {
   21: [20],
   22: [21],
   23: [21],
+  24: [22],
+  25: [23],
+  26: [24],
+  27: [25],
 }
 
 async function main() {

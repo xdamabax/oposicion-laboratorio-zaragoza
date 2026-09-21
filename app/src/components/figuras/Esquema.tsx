@@ -29,6 +29,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'nefelometro-turbidimetro': 'Medida de la turbidez: nefelometría a 90° y turbidimetría en línea',
   'refractometro-abbe': 'Refractómetro de Abbe: ángulo límite y campo del ocular',
   polarimetro: 'Polarímetro: el plano de polarización gira en el tubo',
+  cromatograma: 'Cromatograma: tiempos de retención, anchura de pico y resolución',
+  'cromatografo-ionico': 'Cromatógrafo iónico: del eluyente al detector de conductividad',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -52,6 +54,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'nefelometro-turbidimetro': { ancho: 500, alto: 268 },
   'refractometro-abbe': { ancho: 470, alto: 250 },
   polarimetro: { ancho: 520, alto: 232 },
+  cromatograma: { ancho: 470, alto: 250 },
+  'cromatografo-ionico': { ancho: 580, alto: 228 },
 }
 
 const AZUL = '#9ecbe8'
@@ -1828,6 +1832,236 @@ function Polarimetro() {
   )
 }
 
+/* ---------- Tema 30: cromatografia ---------- */
+
+/**
+ * Cromatograma con lo que de verdad se mide en el: el tiempo muerto, los dos
+ * tiempos de retencion, las dos anchuras de pico y la resolucion que sale de
+ * ellos.
+ *
+ * LOS PICOS SE CALCULAN, no se dibujan a ojo: son gaussianas muestreadas, y la
+ * anchura de base w = 4σ es la que resulta de prolongar las tangentes de los
+ * puntos de inflexion hasta la linea base, que es como la define el manual. Asi
+ * el dibujo puede DEMOSTRAR su propia aritmetica: el control de la bateria
+ * recalcula Rs = 2·(tR_B − tR_A)/(w_A + w_B) sobre la geometria pintada y exige
+ * que coincida con el numero escrito al pie. Un cromatograma con los picos
+ * bonitos y la resolucion inventada es justo el fallo silencioso que el
+ * proyecto persigue.
+ */
+function datosCromatograma() {
+  const BASE = 170
+  const gauss = (c: number, sigma: number, h: number) => {
+    const pts: string[] = []
+    for (let x = c - 3.2 * sigma; x <= c + 3.2 * sigma; x += 1) {
+      const y = BASE - h * Math.exp(-((x - c) ** 2) / (2 * sigma * sigma))
+      pts.push(`${pts.length ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`)
+    }
+    return pts.join(' ')
+  }
+  // sigma en px; la anchura de base es 4σ
+  const A = { c: 190, sigma: 12, h: 104 }
+  const B = { c: 271, sigma: 15, h: 76 }
+  const M = { c: 76, sigma: 4.5, h: 26 }
+  return { BASE, gauss, A, B, M }
+}
+
+function Cromatograma() {
+  const { BASE, gauss, A, B, M } = datosCromatograma()
+  const wA = 4 * A.sigma
+  const wB = 4 * B.sigma
+  const rs = (2 * (B.c - A.c)) / (wA + wB)
+
+  /** Doble flecha horizontal que mide una anchura de base. */
+  const medida = (pieza: string, x1: number, x2: number, y: number) => (
+    <g stroke="currentColor" strokeWidth="1.1">
+      <line data-pieza={pieza} x1={x1} y1={y} x2={x2} y2={y} />
+      <path d={`M${x1 + 5} ${y - 3.5} L${x1} ${y} L${x1 + 5} ${y + 3.5}`} fill="none" />
+      <path d={`M${x2 - 5} ${y - 3.5} L${x2} ${y} L${x2 - 5} ${y + 3.5}`} fill="none" />
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* ejes */}
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1="46" y1="26" x2="46" y2={BASE} />
+        <line x1="46" y1={BASE} x2="446" y2={BASE} />
+      </g>
+      <text x="44" y="16" fontSize="8.5" fill="currentColor">
+        respuesta del detector
+      </text>
+      <text x="446" y={BASE + 13} fontSize="8.5" fill="currentColor" textAnchor="end">
+        tiempo
+      </text>
+
+      {/* los tres picos, calculados */}
+      <g fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path data-pieza="pico-m" d={gauss(M.c, M.sigma, M.h)} />
+        <path data-pieza="pico-a" d={gauss(A.c, A.sigma, A.h)} />
+        <path data-pieza="pico-b" d={gauss(B.c, B.sigma, B.h)} />
+      </g>
+
+      {/* marcas verticales de los tiempos, cada una hasta su propia cima */}
+      <g stroke={ROJO} strokeWidth="1.1" strokeDasharray="3 3">
+        <line data-pieza="tm" x1={M.c} y1={BASE - M.h} x2={M.c} y2={BASE} />
+        <line data-pieza="tr-a" x1={A.c} y1={BASE - A.h} x2={A.c} y2={BASE} />
+        <line data-pieza="tr-b" x1={B.c} y1={BASE - B.h} x2={B.c} y2={BASE} />
+      </g>
+
+      {/* anchuras de base: tangentes de los puntos de inflexion hasta la base */}
+      <g stroke="currentColor" strokeWidth="0.9" strokeDasharray="2 2" opacity="0.75">
+        <line x1={A.c - 2 * A.sigma} y1={BASE} x2={A.c - A.sigma} y2={BASE - A.h * 0.607} />
+        <line x1={A.c + 2 * A.sigma} y1={BASE} x2={A.c + A.sigma} y2={BASE - A.h * 0.607} />
+        <line x1={B.c - 2 * B.sigma} y1={BASE} x2={B.c - B.sigma} y2={BASE - B.h * 0.607} />
+        <line x1={B.c + 2 * B.sigma} y1={BASE} x2={B.c + B.sigma} y2={BASE - B.h * 0.607} />
+      </g>
+      {medida('w-a', A.c - 2 * A.sigma, A.c + 2 * A.sigma, 186)}
+      {medida('w-b', B.c - 2 * B.sigma, B.c + 2 * B.sigma, 186)}
+
+      {/* rotulos de tiempo, sobre cada cima para no chocar con las anchuras */}
+      <g fontSize="9" fill={ROJO} textAnchor="middle">
+        <text x={M.c} y={BASE - M.h - 7}>
+          tM
+        </text>
+        <text x={A.c} y={BASE - A.h - 7}>
+          tR(A)
+        </text>
+        <text x={B.c} y={BASE - B.h - 7}>
+          tR(B)
+        </text>
+      </g>
+      <text x={M.c + 10} y={BASE - M.h - 18} fontSize="8" fill="currentColor" textAnchor="middle">
+        no retenidos
+      </text>
+
+      <g fontSize="9" fill="currentColor" textAnchor="middle">
+        <text x={A.c} y="200">
+          wA
+        </text>
+        <text x={B.c} y="200">
+          wB
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="222">
+Resolución: Rs = 2 · [tR(B) − tR(A)] / (wA + wB). A MENOR anchura de pico, MAYOR resolución.
+        </text>
+        <text x="8" y="240" data-pieza="rs">
+          {`Aquí Rs = ${rs.toFixed(1).replace(".", ",")}, el valor a partir del cual la separación de dos picos se considera completa.`}
+        </text>
+      </g>
+      {/* el numero escrito sale del propio dibujo, y la bateria lo recalcula */}
+    </g>
+  )
+}
+
+/**
+ * Cromatografo ionico, de izquierda a derecha.
+ *
+ * Lo que el dibujo AFIRMA, y la bateria comprueba, es que el SUPRESOR va entre
+ * la columna separadora y el detector: ese es su sitio y su razon de ser
+ * -rebajar la conductividad del eluyente antes de medir-, y ponerlo en
+ * cualquier otro punto de la cadena lo deja sin sentido.
+ */
+function CromatografoIonico() {
+  const EJE = 88
+  const ETAPAS: { pieza: string; x: number; w: number; nombre: string; pie: string }[] = [
+    { pieza: 'eluyente', x: 8, w: 52, nombre: 'Eluyente', pie: 'depósito' },
+    { pieza: 'bomba', x: 76, w: 48, nombre: 'Bomba', pie: 'alta presión' },
+    { pieza: 'inyector', x: 140, w: 54, nombre: 'Inyector', pie: 'bucle de muestra' },
+    { pieza: 'precolumna', x: 210, w: 48, nombre: 'Precolumna', pie: 'protege' },
+    { pieza: 'columna', x: 274, w: 74, nombre: 'Columna', pie: 'intercambio iónico' },
+    { pieza: 'supresor', x: 364, w: 56, nombre: 'Supresor', pie: 'baja el fondo' },
+    { pieza: 'detector', x: 436, w: 58, nombre: 'Detector', pie: 'conductividad' },
+    { pieza: 'registro', x: 510, w: 60, nombre: 'Registro', pie: 'cromatograma' },
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* la linea de flujo, por detras de las cajas */}
+      <line x1="8" y1={EJE} x2="570" y2={EJE} stroke={AZUL} strokeWidth="3" />
+
+      {ETAPAS.map((e) => (
+        <rect
+          key={e.pieza}
+          data-pieza={e.pieza}
+          x={e.x}
+          y={EJE - 22}
+          width={e.w}
+          height="44"
+          rx="5"
+          fill={e.pieza === 'supresor' ? AZUL_CLARO : 'none'}
+          stroke="currentColor"
+          strokeWidth="1.6"
+        />
+      ))}
+
+      {/* algunos detalles que distinguen las piezas */}
+      {/* nivel de liquido en el deposito de eluyente */}
+      <path d="M14 96 h40" fill="none" stroke={AZUL} strokeWidth="2.4" />
+      <path d="M86 78 h12 M98 72 l10 6 l-10 6" fill="none" stroke="currentColor" strokeWidth="1.3" />
+      <circle cx="167" cy={EJE} r="11" fill="none" stroke="currentColor" strokeWidth="1.3" />
+      <g stroke="currentColor" strokeWidth="1.1">
+        {[286, 296, 306, 316, 326, 336].map((x) => (
+          <line key={x} x1={x} y1={EJE - 14} x2={x} y2={EJE + 14} />
+        ))}
+        {/* la precolumna es una columna corta: el mismo relleno, menos lecho */}
+        {[224, 234, 244].map((x) => (
+          <line key={x} x1={x} y1={EJE - 9} x2={x} y2={EJE + 9} />
+        ))}
+      </g>
+      {/* membrana del supresor, en rojo para que se lea sobre su propio relleno */}
+      <g stroke={ROJO} strokeWidth="1.4">
+        <line x1="378" y1={EJE - 11} x2="378" y2={EJE + 11} />
+        <line x1="406" y1={EJE - 11} x2="406" y2={EJE + 11} />
+      </g>
+      <path
+        d="M446 96 l10 -16 l8 10 l10 -18"
+        fill="none"
+        stroke={ROJO}
+        strokeWidth="1.4"
+      />
+      <path
+        d="M520 96 q8 -20 14 0 q6 -14 12 0"
+        fill="none"
+        stroke={ROJO}
+        strokeWidth="1.4"
+      />
+
+      <g fontSize="9.5" textAnchor="middle" fill="currentColor" fontWeight="bold">
+        {ETAPAS.map((e) => (
+          <text key={e.pieza} x={e.x + e.w / 2} y="142">
+            {e.nombre}
+          </text>
+        ))}
+      </g>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {ETAPAS.map((e) => (
+          <text key={e.pieza} x={e.x + e.w / 2} y="154">
+            {e.pie}
+          </text>
+        ))}
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="182">
+          El SUPRESOR va entre la columna y el detector: cambia los iones del eluyente por agua o por
+          un ácido débil,
+        </text>
+        <text x="8" y="194">
+          de modo que baja la conductividad de fondo y deja ver la del analito. Sin él haría falta
+          eluyente muy diluido
+        </text>
+        <text x="8" y="206">
+          (cromatografía iónica de columna única). Aniones: resina de amina cuaternaria. Cationes:
+          resina sulfónica.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -1868,6 +2102,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <Polarimetro />
     case 'icp-ms':
       return <IcpMs />
+    case 'cromatograma':
+      return <Cromatograma />
+    case 'cromatografo-ionico':
+      return <CromatografoIonico />
   }
 }
 
