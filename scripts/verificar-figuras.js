@@ -375,6 +375,31 @@ function medir(sabotaje, ROJO) {
     const c = pieza(svg, 'columna')
     c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x - 170} ${y}`).join(' '))
   }
+  if (sabotaje === 32) {
+    const svg = porClave('fase-normal-vs-inversa')
+    // los dos paneles iguales: el polar sale primero tambien en fase normal
+    const c = pieza(svg, 'pico-polar-normal')
+    c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x - 150} ${y}`).join(' '))
+  }
+  if (sabotaje === 33) {
+    const svg = porClave('fase-normal-vs-inversa')
+    // y al reves en el otro panel: el polar, retrasado detras del apolar
+    const c = pieza(svg, 'pico-polar-inversa')
+    c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x + 150} ${y}`).join(' '))
+  }
+  if (sabotaje === 34) {
+    const svg = porClave('gradiente-elucion')
+    // el gradiente, aplanado: dejaria de ser un gradiente
+    pieza(svg, 'perfil-gradiente').setAttribute('y2', 72)
+  }
+  if (sabotaje === 35) {
+    const svg = porClave('gradiente-elucion')
+    // el ultimo pico del gradiente, ensanchado como el de la isocratica
+    const c = pieza(svg, 'ultimo-gradiente')
+    const pts = puntos(c)
+    const cx = pts.reduce((m, q) => (q[1] < m[1] ? q : m), pts[0])[0]
+    c.setAttribute('d', pts.map(([x, y], i) => `${i ? 'L' : 'M'}${(cx + (x - cx) * 3.6).toFixed(1)} ${y}`).join(' '))
+  }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
@@ -996,6 +1021,76 @@ function medir(sabotaje, ROJO) {
     return `columna dentro del horno, e inyector y detector fuera`
   })
 
+  /*
+   * Fase normal frente a fase inversa. Lo unico que de verdad hay que entender
+   * del tema 32 es que EL ORDEN DE ELUCION SE INVIERTE, asi que el dibujo lo
+   * afirma y esto lo comprueba: se localiza la cima de cada pico sobre el
+   * trazado -no sobre su rotulo- y se compara. Un dibujo con los dos paneles
+   * iguales enseñaria justo lo contrario y no daria ningun error por si solo.
+   */
+  const cimaDe = (svg, p) => {
+    const pts = puntos(pieza(svg, p))
+    return pts.reduce((mejor, q) => (q[1] < mejor[1] ? q : mejor), pts[0])[0]
+  }
+
+  control('Fase normal · el soluto POLAR se retiene más y eluye el ÚLTIMO', () => {
+    const svg = porClave('fase-normal-vs-inversa')
+    const apolar = cimaDe(svg, 'pico-apolar-normal')
+    const polar = cimaDe(svg, 'pico-polar-normal')
+    if (!(polar > apolar)) {
+      throw new Error(
+        `en fase normal el pico polar cae en x=${polar.toFixed(0)} y el apolar en x=${apolar.toFixed(0)}: ` +
+          `con fase estacionaria POLAR, el soluto polar es el que más se retiene`,
+      )
+    }
+    return `apolar@${apolar.toFixed(0)} < polar@${polar.toFixed(0)}`
+  })
+
+  control('Fase inversa · el soluto POLAR eluye el PRIMERO', () => {
+    const svg = porClave('fase-normal-vs-inversa')
+    const polar = cimaDe(svg, 'pico-polar-inversa')
+    const apolar = cimaDe(svg, 'pico-apolar-inversa')
+    if (!(polar < apolar)) {
+      throw new Error(
+        `en fase inversa el pico polar cae en x=${polar.toFixed(0)} y el apolar en x=${apolar.toFixed(0)}: ` +
+          `con fase estacionaria APOLAR, el soluto polar es el que menos se retiene`,
+      )
+    }
+    return `polar@${polar.toFixed(0)} < apolar@${apolar.toFixed(0)}`
+  })
+
+  control('Gradiente · la composición SUBE con el tiempo y la isocrática se queda PLANA', () => {
+    const svg = porClave('gradiente-elucion')
+    const iso = pieza(svg, 'perfil-isocratico')
+    const gra = pieza(svg, 'perfil-gradiente')
+    if (Math.abs(num(iso, 'y2') - num(iso, 'y1')) > 0.5) {
+      throw new Error(`el perfil isocrático no es plano: va de y=${num(iso, 'y1')} a y=${num(iso, 'y2')}`)
+    }
+    // la y crece HACIA ABAJO: que suba el % de disolvente fuerte es que la y BAJE
+    const subida = num(gra, 'y1') - num(gra, 'y2')
+    if (!(subida > 5)) {
+      throw new Error(
+        `el perfil del gradiente va de y=${num(gra, 'y1')} a y=${num(gra, 'y2')}: ` +
+          `el porcentaje de disolvente fuerte tiene que SUBIR a lo largo de la separación`,
+      )
+    }
+    return `isocrática plana en y=${num(iso, 'y1')}, gradiente sube ${subida.toFixed(0)} px`
+  })
+
+  control('Gradiente · el último pico sale MÁS ESTRECHO que en isocrática', () => {
+    const svg = porClave('gradiente-elucion')
+    const ancho = (p) => pieza(svg, p).getBBox().width
+    const iso = ancho('ultimo-isocratico')
+    const gra = ancho('ultimo-gradiente')
+    if (!(gra < iso * 0.75)) {
+      throw new Error(
+        `el último pico mide ${gra.toFixed(0)} px en gradiente y ${iso.toFixed(0)} px en isocrática: ` +
+          `la razón de ser del gradiente es justo que los picos tardíos NO se ensanchen`,
+      )
+    }
+    return `último pico: ${gra.toFixed(0)} px en gradiente frente a ${iso.toFixed(0)} px en isocrática`
+  })
+
   return resultados
 }
 
@@ -1033,6 +1128,10 @@ const SABOTAJES = {
   29: 'la aguja del espacio de cabeza, hundida en el agua',
   30: 'el rótulo del detector del CG, movido delante del inyector',
   31: 'la columna del CG, sacada fuera del horno',
+  32: 'el pico polar de fase normal, adelantado delante del apolar',
+  33: 'el pico polar de fase inversa, retrasado detrás del apolar',
+  34: 'el perfil del gradiente, aplanado como el isocrático',
+  35: 'el último pico del gradiente, ensanchado hasta el de la isocrática',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1074,6 +1173,10 @@ const CONTROL_DE = {
   29: [27],
   30: [28],
   31: [29],
+  32: [30],
+  33: [31],
+  34: [32],
+  35: [33],
 }
 
 async function main() {

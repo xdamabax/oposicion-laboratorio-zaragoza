@@ -33,6 +33,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'cromatografo-ionico': 'Cromatógrafo iónico: del eluyente al detector de conductividad',
   'cromatografo-gases': 'Cromatógrafo de gases: la columna va dentro del horno',
   'purga-y-trampa': 'Purga y trampa frente a espacio de cabeza',
+  'fase-normal-vs-inversa': 'Fase normal frente a fase inversa: el orden de elución se invierte',
+  'gradiente-elucion': 'Elución isocrática frente a elución en gradiente',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -60,6 +62,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'cromatografo-ionico': { ancho: 580, alto: 228 },
   'cromatografo-gases': { ancho: 580, alto: 250 },
   'purga-y-trampa': { ancho: 540, alto: 236 },
+  'fase-normal-vs-inversa': { ancho: 540, alto: 252 },
+  'gradiente-elucion': { ancho: 540, alto: 240 },
 }
 
 const AZUL = '#9ecbe8'
@@ -2302,6 +2306,224 @@ function PurgaYTrampa() {
   )
 }
 
+/* ---------- Tema 32: cromatografia de liquidos ---------- */
+
+/** Gaussiana muestreada sobre una linea base. Se calcula, no se dibuja a ojo. */
+function gaussiana(base: number, c: number, sigma: number, h: number) {
+  const pts: string[] = []
+  for (let x = c - 3.2 * sigma; x <= c + 3.2 * sigma; x += 1) {
+    const y = base - h * Math.exp(-((x - c) ** 2) / (2 * sigma * sigma))
+    pts.push(`${pts.length ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`)
+  }
+  return pts.join(' ')
+}
+
+/**
+ * Fase normal frente a fase inversa.
+ *
+ * Lo que el dibujo AFIRMA, y la bateria comprueba, es que EL ORDEN DE ELUCION
+ * SE INVIERTE entre las dos: en fase normal la estacionaria es polar y el
+ * soluto POLAR sale el ULTIMO; en fase inversa la estacionaria es apolar y el
+ * soluto POLAR sale el PRIMERO. Es el concepto central del tema y lo unico que
+ * de verdad hay que entender para no confundirlas, asi que el dibujo se pinta
+ * de modo que pueda demostrarlo: dos controles, uno por panel, que localizan la
+ * cima de cada pico sobre el trazado y comparan.
+ */
+function FaseNormalVsInversa() {
+  const BASE = 152
+
+  const panel = (
+    x0: number,
+    titulo: string,
+    estacionaria: string,
+    movil: string,
+    primero: { pieza: string; c: number; sigma: number; h: number; rotulo: string },
+    segundo: { pieza: string; c: number; sigma: number; h: number; rotulo: string },
+  ) => (
+    <g key={titulo}>
+      <text x={x0} y="18" fontSize="10" fontWeight="bold" fill="currentColor">
+        {titulo}
+      </text>
+
+      {/* la columna, con su relleno */}
+      <rect x={x0 + 4} y="30" width="208" height="20" rx="4" {...trazo} />
+      <g stroke="currentColor" strokeWidth="1">
+        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+          <line key={i} x1={x0 + 22 + i * 24} y1="32" x2={x0 + 22 + i * 24} y2="48" />
+        ))}
+      </g>
+      <text x={x0 + 4} y="64" fontSize="7.5" fill="currentColor">
+        {estacionaria}
+      </text>
+      <text x={x0 + 4} y="75" fontSize="7.5" fill={AZUL}>
+        {movil}
+      </text>
+
+      {/* ejes del cromatograma */}
+      <g stroke="currentColor" strokeWidth="1.4">
+        <line x1={x0 + 4} y1="88" x2={x0 + 4} y2={BASE} />
+        <line x1={x0 + 4} y1={BASE} x2={x0 + 214} y2={BASE} />
+      </g>
+      <text x={x0 + 214} y={BASE + 12} fontSize="7.5" textAnchor="end" fill="currentColor">
+        tiempo
+      </text>
+
+      {/* los dos picos, calculados */}
+      <g fill="none" stroke="currentColor" strokeWidth="1.6">
+        <path data-pieza={primero.pieza} d={gaussiana(BASE, primero.c, primero.sigma, primero.h)} />
+        <path data-pieza={segundo.pieza} d={gaussiana(BASE, segundo.c, segundo.sigma, segundo.h)} />
+      </g>
+      <text x={primero.c} y={BASE - primero.h - 6} fontSize="8.5" textAnchor="middle" fill={ROJO}>
+        {primero.rotulo}
+      </text>
+      <text x={segundo.c} y={BASE - segundo.h - 6} fontSize="8.5" textAnchor="middle" fill={ROJO}>
+        {segundo.rotulo}
+      </text>
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {panel(
+        14,
+        'Fase NORMAL',
+        'estacionaria POLAR: sílice, ciano, diol, NH₂',
+        'móvil NO POLAR: hexano',
+        { pieza: 'pico-apolar-normal', c: 78, sigma: 9, h: 54, rotulo: 'apolar' },
+        { pieza: 'pico-polar-normal', c: 186, sigma: 11, h: 62, rotulo: 'POLAR' },
+      )}
+
+      <line x1="266" y1="10" x2="266" y2="176" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+
+      {panel(
+        284,
+        'Fase INVERSA',
+        'estacionaria NO POLAR: C8, C18',
+        'móvil POLAR: agua, metanol, acetonitrilo',
+        { pieza: 'pico-polar-inversa', c: 348, sigma: 9, h: 62, rotulo: 'POLAR' },
+        { pieza: 'pico-apolar-inversa', c: 456, sigma: 11, h: 54, rotulo: 'apolar' },
+      )}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="14" y="200">
+          EL ORDEN DE ELUCIÓN SE INVIERTE. En fase normal el soluto polar se retiene más y sale el
+          último; en fase inversa
+        </text>
+        <text x="14" y="214">
+          sale el primero. La fase inversa es, con diferencia, la más usada: es la de los HAP, los
+          plaguicidas y los fármacos.
+        </text>
+        <text x="14" y="232">
+          La sílice se hidroliza en medio básico, así que el pH de la fase móvil debe mantenerse por
+          debajo de 7,5.
+        </text>
+        <text x="14" y="246">
+          En fase inversa, subir la polaridad de la fase móvil ALARGA la retención; bajarla, la acorta.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Elucion isocratica frente a elucion en gradiente.
+ *
+ * El dibujo AFIRMA dos cosas comprobables: que en el gradiente la proporcion de
+ * disolvente fuerte SUBE con el tiempo mientras que en la isocratica se queda
+ * plana, y que por eso EL ULTIMO PICO SALE MAS ESTRECHO en el gradiente. Es el
+ * mismo problema -y la misma solucion- que la rampa de temperatura del tema 31:
+ * la composicion que separa bien lo que eluye pronto deja lo que eluye tarde en
+ * picos anchos, bajos y a destiempo.
+ */
+function GradienteElucion() {
+  const BASE = 168
+
+  const picos = (
+    lista: { c: number; sigma: number; h: number; pieza?: string }[],
+  ) => (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6">
+      {lista.map((p) => (
+        <path key={p.c} data-pieza={p.pieza} d={gaussiana(BASE, p.c, p.sigma, p.h)} />
+      ))}
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* ---------- panel izquierdo: isocratica ---------- */}
+      <text x="14" y="18" fontSize="10" fontWeight="bold" fill="currentColor">
+        Elución ISOCRÁTICA
+      </text>
+      <text x="24" y="32" fontSize="7.5" fill={AZUL}>
+        % disolvente fuerte
+      </text>
+      <g stroke="currentColor" strokeWidth="1.1">
+        <line x1="24" y1="38" x2="24" y2="78" />
+        <line x1="24" y1="78" x2="242" y2="78" />
+      </g>
+      <line data-pieza="perfil-isocratico" x1="28" y1="62" x2="238" y2="62" stroke={ROJO} strokeWidth="2" />
+
+      <g stroke="currentColor" strokeWidth="1.4">
+        <line x1="24" y1="92" x2="24" y2={BASE} />
+        <line x1="24" y1={BASE} x2="248" y2={BASE} />
+      </g>
+      {picos([
+        { c: 52, sigma: 4.5, h: 62 },
+        { c: 82, sigma: 6.5, h: 50 },
+        { c: 132, sigma: 11, h: 34 },
+        { c: 206, sigma: 19, h: 20, pieza: 'ultimo-isocratico' },
+      ])}
+      <text x="248" y={BASE + 12} fontSize="7.5" textAnchor="end" fill="currentColor">
+        tiempo
+      </text>
+
+      {/* ---------- separador ---------- */}
+      <line x1="266" y1="10" x2="266" y2="192" stroke="currentColor" strokeWidth="0.8" opacity="0.4" />
+
+      {/* ---------- panel derecho: gradiente ---------- */}
+      <text x="284" y="18" fontSize="10" fontWeight="bold" fill="currentColor">
+        Elución en GRADIENTE
+      </text>
+      <text x="294" y="32" fontSize="7.5" fill={AZUL}>
+        % disolvente fuerte
+      </text>
+      <g stroke="currentColor" strokeWidth="1.1">
+        <line x1="294" y1="38" x2="294" y2="78" />
+        <line x1="294" y1="78" x2="512" y2="78" />
+      </g>
+      <line data-pieza="perfil-gradiente" x1="298" y1="72" x2="508" y2="42" stroke={ROJO} strokeWidth="2" />
+
+      <g stroke="currentColor" strokeWidth="1.4">
+        <line x1="294" y1="92" x2="294" y2={BASE} />
+        <line x1="294" y1={BASE} x2="518" y2={BASE} />
+      </g>
+      {picos([
+        { c: 322, sigma: 4.5, h: 62 },
+        { c: 356, sigma: 4.8, h: 56 },
+        { c: 396, sigma: 5.2, h: 50 },
+        { c: 442, sigma: 5.6, h: 46, pieza: 'ultimo-gradiente' },
+      ])}
+      <text x="518" y={BASE + 12} fontSize="7.5" textAnchor="end" fill="currentColor">
+        tiempo
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="14" y="204">
+          Con composición fija, la fuerza que resuelve los primeros picos deja los últimos anchos,
+          bajos y muy tardíos.
+        </text>
+        <text x="14" y="218">
+          Subiendo el disolvente fuerte a lo largo de la separación, los picos tardíos salen ESTRECHOS
+          y repartidos.
+        </text>
+        <text x="14" y="232">
+          Es el equivalente líquido de la rampa de temperatura del horno en cromatografía de gases.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -2350,6 +2572,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CromatografoGases />
     case 'purga-y-trampa':
       return <PurgaYTrampa />
+    case 'fase-normal-vs-inversa':
+      return <FaseNormalVsInversa />
+    case 'gradiente-elucion':
+      return <GradienteElucion />
   }
 }
 

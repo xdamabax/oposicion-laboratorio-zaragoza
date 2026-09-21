@@ -59,6 +59,8 @@ export type TipoEsquema =
   | 'cromatografo-ionico'
   | 'cromatografo-gases'
   | 'purga-y-trampa'
+  | 'fase-normal-vs-inversa'
+  | 'gradiente-elucion'
 
 export type TipoMaterial =
   | 'matraz-aforado'
