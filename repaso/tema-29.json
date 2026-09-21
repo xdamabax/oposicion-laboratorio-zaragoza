@@ -1,0 +1,754 @@
+{
+  "tema": 29,
+  "titulo": "Determinación de Radiactividad en agua: instrumentación. Origen de la radiactividad en el agua.",
+  "generadoDe": "temas/tema-29.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-21",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t29-f01",
+      "anverso": "¿Por qué la radiactividad **no se trata como un parámetro químico más** en el RD 3/2023?",
+      "reverso": "Porque su origen normativo es el **Tratado Euratom**, no la directiva de aguas, y por eso tiene **bloque propio** dentro del real decreto:\n- Tabla de valores paramétricos propia: **anexo I, parte E**.\n- Tipo de análisis propio: el **«control de radiactividad»**.\n- Anexo entero de actuación: el **anexo VI**.\n- Tipo de incidencia propio: la **«incidencia tipo E»**.\nY dos consecuencias jurídicas:\n- Superar un valor de la parte E **no califica automáticamente el agua como «no apta»**: el **art. 6.3** manda seguir el anexo VI.\n- **No cabe declaración de situación de excepción**: el **art. 28.1** la reserva a los químicos del **anexo I, parte B** y a la lista de observación.",
+      "fuente": "RD 3/2023, arts. 6.3, 22 y 28.1",
+      "etiquetas": ["marco legal"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f02",
+      "anverso": "Los **cinco parámetros de radiactividad** del agua de consumo y sus valores paramétricos.",
+      "reverso": "**RD 3/2023, anexo I, parte E, tabla 5:**\n- **Actividad alfa total → 0,1 Bq/L**\n- **Actividad beta resto → 1,0 Bq/L**\n- **Radón → 500 Bq/L**\n- **Tritio → 100 Bq/L**\n- **Dosis indicativa (Σ radionucleidos), DI → 0,10 mSv**\nLos cuatro primeros son concentraciones de actividad, en **Bq/L**; la DI es una **dosis**, en **mSv**.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f03",
+      "anverso": "El parámetro legal ¿es «actividad beta total» o «actividad beta **resto**»? ¿Qué diferencia hay?",
+      "reverso": "El parámetro del RD 3/2023 es la **ACTIVIDAD BETA RESTO**, con valor paramétrico **1,0 Bq/L**.\nEl anexo VI lo define entre paréntesis: **«actividad beta total excluido potasio-40»**.\nMotivo: la actividad beta de un agua natural **se debe mayoritariamente al ⁴⁰K**, que acompaña al potasio —un nutriente— y no dice nada de la calidad radiológica del agua. Descontándolo, lo que queda **sí** puede delatar contaminación.\nEl ⁴⁰K **no se mide**: se calcula a partir del **potasio estable** determinado por una técnica analítica adecuada.",
+      "fuente": "RD 3/2023, anexo I parte E y anexo VI, B.4; CSN, Procedimiento 1.5",
+      "etiquetas": ["valores", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f04",
+      "anverso": "Define **dosis indicativa (DI)** con las palabras de la norma.",
+      "reverso": "**«La dosis efectiva COMPROMETIDA por un año de ingesta debida a TODOS los radionucleidos cuya presencia se haya detectado en agua de consumo, ya sean de origen NATURAL O ARTIFICIAL, excluidos el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta.»**\nValor paramétrico: **0,10 mSv**.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 5",
+      "etiquetas": ["concepto", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f05",
+      "anverso": "¿Qué **cuatro cosas quedan EXCLUIDAS** del cálculo de la dosis indicativa, y por qué?",
+      "reverso": "**1) El tritio. 2) El potasio-40. 3) El radón. 4) Los productos de desintegración del radón de vida corta.**\nRazones:\n- **Tritio y radón** tienen **valor paramétrico propio**: ya se controlan por separado.\n- El **K-40** acompaña al potasio natural, que es un nutriente: su actividad no depende de la calidad del agua.\nEs una de las preguntas más seguras del tema.",
+      "fuente": "RD 3/2023, anexo I parte E nota 5, y anexo VI B.4.5.º",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f06",
+      "anverso": "¿De qué **radionucleidos** es sumatorio la dosis indicativa?",
+      "reverso": "De **quince**, que la nota 6 de la tabla 5 enumera:\n**Am-241, C-14, Co-60, Cs-134, Cs-137, I-131, Pb-210, Po-210, Pu-239, Pu-240, Ra-226, Ra-228, Sr-90, U-234 y U-238.**\nSeis son naturales (U-238, U-234, Ra-226, Ra-228, Pb-210, Po-210) y nueve artificiales.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 6",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t29-f07",
+      "anverso": "¿Qué son las **concentraciones derivadas** de la tabla 6 y sobre qué hipótesis se calculan?",
+      "reverso": "Son la **traducción de la DI a Bq/L** de cada radionucleido: la concentración que, ella sola, daría la dosis límite.\nSe calculan **para una dosis de 0,1 mSv y una ingestión anual de 730 litros** —es decir, **2 L/día**— con los coeficientes de dosis que cita el RD.\nSe cumple la DI si **Σ (C_medida / C_derivada) ≤ 1**; entonces **no hace falta ninguna investigación adicional**.\nAviso de la propia tabla: **tiene en cuenta solo las propiedades RADIOLÓGICAS del uranio, no su toxicidad química** (eso es el tema 33).",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6 y punto 2",
+      "etiquetas": ["calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f08",
+      "anverso": "¿Qué radionucleidos considera el RD 3/2023 **naturales** y cuáles **artificiales**?",
+      "reverso": "La tabla 6 los separa expresamente:\n- **NATURALES: U-238 (3,0) · U-234 (2,8) · Ra-226 (0,5) · Ra-228 (0,2) · Pb-210 (0,2) · Po-210 (0,1)** Bq/L de concentración derivada.\n- **ARTIFICIALES: C-14 (240) · Sr-90 (4,9) · Pu-239 (0,6) · Pu-240 (0,6) · Am-241 (0,7) · Co-60 (40) · Cs-134 (7,2) · Cs-137 (11) · I-131 (6,2)** Bq/L.\nObsérvese el contraste: los naturales tienen concentraciones derivadas **muy bajas** —son alfa, muy radiotóxicos por ingestión— y el **C-14 llega a 240 Bq/L**, la más alta de todas.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6",
+      "etiquetas": ["origen", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f09",
+      "anverso": "¿Para qué sirven de verdad los índices de **actividad alfa total** y **beta resto**?",
+      "reverso": "**Son VALORES DE CRIBADO para el control de la dosis indicativa**, no fines en sí mismos (nota 1 de la tabla 5).\nLa lógica es económica: medir quince radionucleidos uno a uno es caro y lento; **dos índices globales y baratos** deciden si hace falta ir más lejos.\nSi los dos índices están por debajo de **0,1 y 1,0 Bq/L** y el tritio por debajo de **100 Bq/L**, **se da por cumplida la DI y no se investiga nada más**.",
+      "fuente": "RD 3/2023, anexo I parte E nota 1, y anexo VI B.4",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f10",
+      "anverso": "Recita la **cadena del cribado** del anexo VI: los cuatro casos.",
+      "reverso": "Umbrales: **alfa total 0,1 Bq/L · beta resto 1,0 Bq/L · tritio 100 Bq/L.**\n- **1.º** Alfa ≤ 0,1 **y** beta resto ≤ 1,0 **y** tritio < 100 → **se considera DI ≤ 0,1 mSv/año y NO se hacen investigaciones adicionales**.\n- **2.º** Alfa **>** 0,1 **o** beta resto **>** 1,0, con tritio ≤ 100 → analizar radionucleidos específicos: **primero los NATURALES** y, si no justifican por sí solos los índices, **después los artificiales**.\n- **3.º** Índices por debajo pero **tritio > 100** → analizar **radionucleidos específicos ARTIFICIALES**.\n- **4.º** Índices por encima **y** tritio > 100 → analizar **naturales Y artificiales**.\n- **5.º** Hechos esos análisis, **calcular la DI** excluyendo K-40, radón y descendientes de vida corta del radón.",
+      "fuente": "RD 3/2023, anexo VI, parte B, punto 4",
+      "etiquetas": ["procedimiento"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f11",
+      "anverso": "Calculada la DI, ¿qué pasa según su valor? ¿Y se pueden cambiar los niveles de cribado?",
+      "reverso": "- **DI ≤ 0,1 mSv/año → no se requieren investigaciones radiológicas adicionales.**\n- **DI > 0,1 mSv/año → se aplica la parte C del anexo VI**: medidas correctoras, notificación e información a la población.\n**Niveles de cribado alternativos:** a petición de la autoridad sanitaria, el **Ministerio de Sanidad**, con el **asesoramiento del Consejo de Seguridad Nuclear**, puede fijar para alfa total o beta resto valores distintos de 0,1 y 1 Bq/L, **siempre que se demuestre que siguen cumpliendo la DI de 0,1 mSv**.",
+      "fuente": "RD 3/2023, anexo VI, parte B, punto 4",
+      "etiquetas": ["procedimiento"]
+    },
+    {
+      "id": "t29-f12",
+      "anverso": "Las **dos cifras del radón** en agua: 500 y 1 000 Bq/L. ¿Qué significa cada una?",
+      "reverso": "- **500 Bq/L es el VALOR PARAMÉTRICO.** Por debajo, las actuaciones del operador **siguen orientadas a optimizar** la protección de la población, siempre que sea posible y sin perjuicio del suministro (nota 2).\n- **1 000 Bq/L:** por encima, **las medidas correctoras se consideran justificadas por motivos de protección radiológica, SIN OTRA CONSIDERACIÓN** (nota 3), y en todo caso hay que **adoptar medidas para evitar el suministro de agua en esas condiciones** (anexo VI, parte C, punto 5).",
+      "fuente": "RD 3/2023, anexo I parte E notas 2 y 3; anexo VI parte C.5",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f13",
+      "anverso": "**500 Bq/L y 300 Bq/m³**: ¿cuál es cuál?",
+      "reverso": "Es la trampa de unidades del tema:\n- **500 Bq/L → RADÓN EN EL AGUA de consumo. VALOR PARAMÉTRICO.** RD 3/2023, anexo I, parte E.\n- **300 Bq/m³ → RADÓN EN EL AIRE de recintos cerrados, en promedio anual. NIVEL DE REFERENCIA**, tanto para viviendas y edificios de acceso público como para lugares de trabajo. RD 1029/2022, art. 72.a).\nLitros frente a metros cúbicos, agua frente a aire, valor paramétrico frente a nivel de referencia.\n(El mismo art. 72 fija además **1 mSv/año** como nivel de referencia para la radiación gamma de los **materiales de construcción**.)",
+      "fuente": "RD 3/2023, anexo I parte E; RD 1029/2022, art. 72",
+      "etiquetas": ["valores", "trampa"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f14",
+      "anverso": "¿Por qué el valor paramétrico del radón en España es **500** Bq/L y no otro?",
+      "reverso": "Porque la **Directiva 2013/51/Euratom** no impone una cifra: permite a cada Estado miembro fijar un nivel **superior a 100 Bq/L e inferior a 1 000 Bq/L**.\nEl preámbulo del **RD 314/2016** —la norma que transpuso esa directiva— lo explica: se adoptó **500 Bq/L** *«teniendo en cuenta la información disponible sobre las características de las aguas de nuestro país»*.\nEse valor pasó tal cual al RD 3/2023.",
+      "fuente": "RD 314/2016, preámbulo; Directiva 2013/51/Euratom",
+      "etiquetas": ["marco legal"]
+    },
+    {
+      "id": "t29-f15",
+      "anverso": "¿Por qué se dice que el **tritio es un centinela**?",
+      "reverso": "Porque el tritio natural —cosmogénico— está a niveles bajísimos, así que **un tritio alto delata una fuente artificial**.\nLa nota 4 de la tabla 5 lo dice literalmente: *«unos niveles de tritio elevados pueden ser **indicio de la presencia de otros radionucleidos artificiales**»*, y si su concentración supera el valor paramétrico **«se requerirá un análisis de la presencia de otros radionucleidos artificiales»**.\nPor eso en la cadena del cribado el tritio decide **si hay que buscar artificiales**, aunque los dos índices estén por debajo (caso 3.º).",
+      "fuente": "RD 3/2023, anexo I parte E nota 4; anexo VI B.4",
+      "etiquetas": ["concepto", "origen"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f16",
+      "anverso": "¿Cuándo se controla el **radón** y cuándo el **tritio**? No confundirlos.",
+      "reverso": "**RADÓN → agua SUBTERRÁNEA.** Se controla cuando: **a)** el origen del agua es **total o parcialmente subterráneo**, **y b)** la caracterización de la masa de agua hace razonable pensar que el radón pueda superar **500 Bq/L**, **o c)** la masa de agua subterránea **no está aún caracterizada**.\n**TRITIO → agua SUPERFICIAL.** Se determina cuando: **a)** el agua es de **origen superficial**, **y b)** la captación puede estar afectada por una **fuente antropogénica** de tritio o de otros radionucleidos artificiales, **según la información que facilite el Consejo de Seguridad Nuclear**. El anexo II lo concreta: **aguas arriba de la captación existe una central nuclear**.\n**Alfa total y beta resto se controlan SIEMPRE**, sea cual sea el origen.",
+      "fuente": "RD 3/2023, anexo II parte B.4 y anexo VI parte B, puntos 2 y 3",
+      "etiquetas": ["procedimiento"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f17",
+      "anverso": "La **exención de los cinco años**: ¿qué deja de controlarse y con qué condición?",
+      "reverso": "*«No se controlará la presencia de **RADÓN o de TRITIO** en el agua de consumo ni se establecerá la **DI**»* cuando, sobre la base de estudios representativos, datos de control u otra información fiable, se tenga constancia de que **durante un período no menor a CINCO AÑOS** esos niveles **se han mantenido por debajo de sus respectivos valores paramétricos**.\nDos límites a la relajación:\n- **No se puede reducir la frecuencia** si se está aplicando **un tratamiento específico dirigido a reducir algún radionucleido**.\n- Hay que **volver a muestrear** siempre que se produzca **un cambio en el suministro** que pueda influir en las concentraciones.",
+      "fuente": "RD 3/2023, anexo VI, parte A.6 y A.7 y parte B.1",
+      "etiquetas": ["procedimiento"]
+    },
+    {
+      "id": "t29-f18",
+      "anverso": "**Actividad, dosis absorbida, dosis equivalente y dosis efectiva**: magnitud y unidad de cada una.",
+      "reverso": "Definiciones literales del **RD 1029/2022, art. 2**:\n- **Actividad (A):** la **tasa de desintegración** de un radionucleido (dN/dt). Unidad: **becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo.**\n- **Dosis absorbida (D):** **energía absorbida por unidad de masa**. Unidad: **gray (Gy)**; **1 Gy = 1 J/kg**.\n- **Dosis equivalente (H_T):** dosis absorbida en un tejido, **ponderada por el tipo de radiación** (w_R). Unidad: **sievert (Sv)**.\n- **Dosis efectiva (E):** suma de dosis equivalentes **ponderadas por tejido** (w_T). Unidad: **sievert (Sv)**.\nY una precisión del propio reglamento: cuando dice **«dosis»** sin más, se refiere a **dosis efectiva**.",
+      "fuente": "RD 1029/2022, art. 2, definiciones 2, 17, 18 y 20",
+      "etiquetas": ["fundamento"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f19",
+      "anverso": "**Límites de dosis** vigentes, y qué proporción de ellos se lleva el agua.",
+      "reverso": "**RD 1029/2022:**\n- **Trabajador expuesto: 20 mSv por año oficial** (art. 11.1). Cristalino **100 mSv en cinco años** con máximo de 50 en uno; **piel y cada extremidad, 500 mSv/año**.\n- **Miembros del público: 1 mSv por año oficial** (art. 15.1). Cristalino 15 mSv/año; piel 50 mSv/año.\n**La dosis indicativa del agua es 0,1 mSv/año: la DÉCIMA PARTE del límite anual del público.** El agua solo puede llevarse una fracción del total.",
+      "fuente": "RD 1029/2022, arts. 11 y 15; RD 3/2023, anexo I parte E",
+      "etiquetas": ["fundamento", "valores"]
+    },
+    {
+      "id": "t29-f20",
+      "anverso": "¿De dónde sale la radiactividad **natural** del agua? Las tres series.",
+      "reverso": "El agua **no fabrica** radiactividad: la **hereda del terreno** que atraviesa. Tres cadenas largas que arrancan de nucleidos primordiales:\n- **Serie del URANIO (U-238):** U-238 → U-234 → **Ra-226 → Rn-222 → Po-218 → Po-214** → … → **Pb-210 → Po-210**.\n- **Serie del TORIO (Th-232):** llega al agua sobre todo como **Ra-228** y **Ra-224** y sus descendientes de periodo muy corto.\n- **Serie del ACTINIO (U-235):** minoritaria.\nY el propio RD 3/2023 lo confirma al ordenar caracterizar las masas de agua: hay que atender a la **geología y la hidrología** de la zona, a la **radiactividad de las rocas o del suelo** y al **tipo de captaciones**.",
+      "fuente": "RD 3/2023, disposición adicional primera; CSN, informe INT-04-30",
+      "etiquetas": ["origen"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f21",
+      "anverso": "¿Qué **emisores alfa concretos** contribuyen al índice alfa total de un agua?",
+      "reverso": "Según el informe **INT-04-30 del CSN**:\n- De la **serie del U-238**: el **U-238** (cabeza de serie), el **U-234**, el **Ra-226** con sus descendientes alfa **Rn-222, Po-218 y Po-214**, y el **Po-210**.\n- De la **serie del Th-232**: el **Ra-224** y sus descendientes, de periodo muy corto.\nPartiendo de Ra-226, **en unos 20 días sus descendientes Rn-222, Po-218 y Po-214 alcanzan el equilibrio secular**: por eso el momento en que se mide la plancheta cambia el resultado.",
+      "fuente": "CSN, Colección Informes Técnicos 37.2014 (INT-04-30)",
+      "etiquetas": ["origen"]
+    },
+    {
+      "id": "t29-f22",
+      "anverso": "¿Por qué aparece **U-234 disuelto** en el agua, y por qué la relación U-234/U-238 no vale 1?",
+      "reverso": "Por un efecto **físico**, no químico: **el RETROCESO del núcleo**.\nAl desintegrarse el **U-238** por emisión alfa, el núcleo hijo de **Th-234** sale despedido por retroceso y **pasa a la fase acuosa**; de él desciende el **U-234**.\nResultado: el U-234 se moviliza mejor que el U-238 y **la relación isotópica en aguas naturales se desvía de la unidad**.\nSus concentraciones derivadas en el RD son casi iguales: **U-238 3,0 Bq/L y U-234 2,8 Bq/L**.",
+      "fuente": "CSN, INT-04-30; RD 3/2023, anexo I parte E tabla 6",
+      "etiquetas": ["origen"]
+    },
+    {
+      "id": "t29-f23",
+      "anverso": "¿Qué radionucleido **domina la actividad beta** de un agua natural, y qué consecuencia tiene?",
+      "reverso": "El **POTASIO-40**. El CSN lo dice así: *«la actividad beta de las aguas es debida mayoritariamente a la actividad beta del isótopo natural ⁴⁰K»*.\nConsecuencias:\n- El parámetro legal es la **beta RESTO**, que lo descuenta.\n- El ⁴⁰K **no se mide directamente**: se deduce del **potasio estable** de la muestra.\n- El **K-40 queda EXCLUIDO** del cálculo de la dosis indicativa.",
+      "fuente": "CSN, Procedimiento 1.5; RD 3/2023, anexo VI B.4",
+      "etiquetas": ["origen", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f24",
+      "anverso": "¿Qué son los radionucleidos **cosmogénicos** y cuáles llegan al agua?",
+      "reverso": "Los que se producen de forma continua **en la alta atmósfera** por acción de la **radiación cósmica**, y entran en el ciclo del agua con la lluvia.\nLos dos que importan aquí son el **tritio (H-3)** y el **carbono-14**.\nEl nivel natural de tritio es bajísimo: **de ahí que un tritio alto sea indicio de origen artificial**. Curiosamente, el RD 3/2023 clasifica el **C-14 entre los ARTIFICIALES** de su tabla 6, porque en el contexto del agua de consumo lo relevante es el aportado por la actividad humana.",
+      "fuente": "RD 3/2023, anexo I parte E tabla 6 (clasificación del C-14)",
+      "etiquetas": ["origen"]
+    },
+    {
+      "id": "t29-f25",
+      "anverso": "¿Por qué el **agua subterránea** carga más radiactividad natural que la superficial?",
+      "reverso": "Porque permanece **mucho tiempo en contacto con la roca**, a presión y **sin desgasificar**, mientras que el agua superficial **se airea y pierde el radón**.\nEl CSN lo constata en su informe: los problemas de determinación del índice alfa *«generalmente están asociados a las **aguas subterráneas**, que con frecuencia son las que pueden contener cantidades más considerables de isótopos radiactivos de **origen natural**, especialmente en los casos que contienen **Ra-226**»*.\nDe ahí que el radón solo se controle cuando el origen es **subterráneo**.",
+      "fuente": "CSN, INT-04-30; RD 3/2023, anexo VI parte B.2",
+      "etiquetas": ["origen"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f26",
+      "anverso": "El **radón**: qué es, de dónde viene y por qué se comporta como se comporta.",
+      "reverso": "Definición del CSN: *«el radón (**radón-222**) es un **gas radiactivo natural procedente de la cadena de desintegración del URANIO-238**»*. En esa cadena procede directamente del **Ra-226**.\nLa clave de su comportamiento es que es un **GAS NOBLE**: no se fija químicamente, **migra por el terreno, se disuelve en el agua del acuífero y se desprende en cuanto el agua sale a presión atmosférica** (ducha, grifo).\nEl CSN avisa de que se acumula *«especialmente en zonas con **suelos muy permeables o con un alto contenido de radio-226**»*, y cita como actividades de riesgo la **minería subterránea** y la **explotación de aguas termales**.",
+      "fuente": "CSN, página pública «Radón»",
+      "etiquetas": ["origen"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f27",
+      "anverso": "¿Qué dice la normativa de protección radiológica sobre los **balnearios y las aguas termales**?",
+      "reverso": "El **RD 1029/2022, art. 75.1**, obliga a estimar el promedio anual de radón en aire en tres tipos de lugar de trabajo:\n- **a)** Lugares **subterráneos**: obras, túneles, minas o cuevas.\n- **b)** Lugares donde se **procese, manipule o aproveche AGUA DE ORIGEN SUBTERRÁNEO**, *«tales como **actividades termales y balnearios**»*.\n- **c)** Plantas bajo rasante o baja de los **términos municipales de actuación prioritaria**.\nEs el puente explícito entre **radón en agua** y **radón en aire**: el gas sale del agua y se acumula en el recinto. Si se superan **300 Bq/m³** de promedio anual hay que optimizar.",
+      "fuente": "RD 1029/2022, arts. 72.a) y 75",
+      "etiquetas": ["origen", "marco legal"]
+    },
+    {
+      "id": "t29-f28",
+      "anverso": "¿De dónde procede la radiactividad **artificial** que puede aparecer en el agua?",
+      "reverso": "La ley nombra los nucleidos (**C-14, Sr-90, Pu-239, Pu-240, Am-241, Co-60, Cs-134, Cs-137, I-131**) y señala la fuente típica:\n- **Instalaciones nucleares**, por sus efluentes líquidos: el tritio solo se controla si hay **una central nuclear aguas arriba de la captación**.\n- **Poso de las pruebas nucleares atmosféricas y de accidentes** (Chernóbil): origen clásico del **Cs-137** y el **Sr-90** difusos.\n- **Usos médicos e industriales**: el **I-131** de medicina nuclear llega por la red de saneamiento.\nY el mecanismo de aviso está en la ley: cuando el **CSN** detecta por sus programas de vigilancia una superación del tritio, **lo notifica al Ministerio de Sanidad** con los otros artificiales y el cálculo de la DI, y baja por **SINAC** a autoridades y operadores.",
+      "fuente": "RD 3/2023, anexo I parte E tabla 6, anexo II parte B.4 y anexo VI parte B.3",
+      "etiquetas": ["origen"]
+    },
+    {
+      "id": "t29-f29",
+      "anverso": "El método clásico de los índices: la marcha del **método de fuente gruesa (desecación)**.",
+      "reverso": "Es el de la **UNE-EN ISO 9696** (alfa) y la **UNE-EN ISO 9697** (beta):\n1. **Estimar el volumen** de muestra por **conductividad** o por **residuo seco**. Si la muestra se aciduló, **la conductividad ya no vale**.\n2. **Evaporar suavemente**, sin llegar a sequedad en el vaso: si se seca, **los radionucleidos se adsorben en las paredes** y se pierden.\n3. Añadir **HNO₃ concentrado** para eliminar cloruros y transferir a una **plancheta de acero inoxidable** (47 o 60 mm).\n4. **Desecar hasta peso constante.**\n5. **Medir** en **contador proporcional de flujo de gas de bajo fondo** o en **detector de centelleo sólido de ZnS(Ag)**.\nLa ISO 9696 acota su alcance: aguas **no salinas**, emisores alfa **no volátiles hasta 350 °C**, aguas **brutas y potables**.",
+      "fuente": "CSN, Procedimientos 1.5 y 1.16; resumen público de la ISO 9696:2017",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f30",
+      "anverso": "**Temperaturas y criterio de peso constante** en la preparación de la plancheta.",
+      "reverso": "- Secado del residuo a **180 ± 2 °C** hasta peso constante.\n- **Peso constante = la diferencia entre dos pesadas sucesivas es igual o inferior a 0,5 mg.**\n- Variantes admitidas: **105 °C**, o **calcinación a 450 °C**. Esta última se recomienda cuando las sales se han convertido en **nitratos, muy higroscópicos**: calcinando pasan a **óxidos** y dan un peso —y por tanto un factor de autoabsorción— estable.\n- **La variante empleada se declara al dar el resultado.**\n- Entre la preparación y el recuento, la plancheta se guarda en **desecador**; si se mide mucho después, **se vuelve a secar a peso constante**.",
+      "fuente": "CSN, Procedimiento 1.5",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f31",
+      "anverso": "¿Qué es el **espesor másico** y para qué sirve la **curva de autoabsorción**?",
+      "reverso": "**Espesor másico (EM):** masa de residuo seco por unidad de superficie de la plancheta, en **mg/cm²**. Es el parámetro del que depende todo lo demás, porque las alfa y las beta **se frenan dentro del propio residuo**.\n**Curva de autoabsorción (o de eficiencia):** función que **relaciona la eficiencia de detección con el espesor másico**. Se construye con una sal inactiva y químicamente estable —carbonato, sulfato o nitrato sódico—.\nEn **beta total** el procedimiento del CSN admite espesores **de 0 a 25 mg/cm²**, un rango más amplio que otras normas, **porque en beta la autoabsorción no es tan crítica**.\nY un aviso: **un residuo mal repartido** en la plancheta empeora **la reproducibilidad y la exactitud**.",
+      "fuente": "CSN, Procedimientos 1.5 y 1.16",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t29-f32",
+      "anverso": "**Blanco** y **fondo** no son lo mismo. ¿Cuál es cuál, y cuál se usa en los cálculos?",
+      "reverso": "- **FONDO:** número de cuentas por unidad de tiempo debido a **otros factores que no son ni la muestra ni los reactivos** empleados en el procedimiento.\n- **BLANCO:** número de cuentas por unidad de tiempo de una **muestra preparada a partir de agua desionizada o destilada y siguiendo TODO el método descrito en el procedimiento**.\n**En los cálculos se usa la medida del BLANCO**, porque arrastra también lo que aportan los reactivos y la manipulación.\nEl grupo de trabajo del CSN decidió **definir explícitamente los dos conceptos** precisamente porque se confundían.",
+      "fuente": "CSN, Procedimientos 1.5 y 1.16",
+      "etiquetas": ["instrumentacion", "concepto"]
+    },
+    {
+      "id": "t29-f33",
+      "anverso": "¿Qué es el **«spill-over»** y por qué hay que corregirlo?",
+      "reverso": "Es la **fracción de partículas ALFA que se cuentan en el canal BETA**: en el voltaje óptimo de trabajo beta si la medida es **secuencial**, o en la ventana beta si es **simultánea**, frente a las cuentas de una muestra de calibrado alfa.\nEl término **no tiene equivalente acuñado en castellano**, así que el CSN optó por definirlo en el propio procedimiento.\nHay que **determinarlo y meterlo en la expresión de cálculo del índice de actividad beta total**: si no, las alfa inflan el resultado beta.",
+      "fuente": "CSN, Procedimiento 1.5",
+      "etiquetas": ["instrumentacion", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f34",
+      "anverso": "¿Qué **patrones** se usan para calibrar el índice alfa y el índice beta, y por qué ésos?",
+      "reverso": "- **Índice ALFA TOTAL → AMERICIO-241.** El índice se define literalmente como la actividad alfa de la muestra **«referida a la muestra de calibración de americio-241»**. En las curvas de calibrado el CSN usa también **Th-230**.\n- **Índice BETA → ESTRONCIO-90 EN EQUILIBRIO CON ITRIO-90.** Se eligió porque es **el emisor beta de mayor radiotoxicidad**.\n**Los dos descartados y por qué:**\n- El **Cs-137**, por **volatilidad del cesio a altas temperaturas** (unos 450 °C), justo las de la calcinación.\n- El **K-40**, pese a ser el radionucleido mayoritario en las aguas.",
+      "fuente": "CSN, Procedimientos 1.5 y 1.16",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f35",
+      "anverso": "¿Cómo se pasa de **beta total** a **beta resto**?",
+      "reverso": "Descontando la contribución del **K-40**, que se deduce del **potasio estable** medido por una técnica analítica adecuada.\nEl factor de conversión que da el CSN es **F_K = 0,02769 Bq por mg de potasio**, calculado a partir del **número de Avogadro**, la **abundancia isotópica del ⁴⁰K**, el **peso atómico del potasio estable**, el **porcentaje de emisión beta** y el **periodo de semidesintegración**.\nEl CSN advierte de que la incertidumbre que recoge el procedimiento es solo la **del recuento**: la de la determinación de potasio hay que añadirla aparte.",
+      "fuente": "CSN, Procedimiento 1.5",
+      "etiquetas": ["instrumentacion", "calculo"]
+    },
+    {
+      "id": "t29-f36",
+      "anverso": "**Centelleo líquido** para los índices alfa y beta: fundamento y los dos conceptos clave.",
+      "reverso": "**Fundamento (CSN, Proc. 1.18):** la muestra **acidulada con HCl se concentra por evaporación** —paso en el que **se eliminan el radón y sus descendientes de vida corta**—, se lleva a **pH 1,5 ± 0,5**, se mezcla con **cóctel de centelleo** en un **vial de bajo fondo de polietileno** y se cuenta en un **contador de centelleo líquido con capacidad para discriminar impulsos alfa de beta**.\n- **PDI (parámetro discriminador de impulsos):** el ajuste instrumental **que diferencia los impulsos alfa de los beta**. Se calibra. De él dependen la **interferencia alfa** (alfas contadas como beta), la **beta** (betas contadas como alfa) y la **total** (la suma).\n- **QUENCHING (extinción):** el fenómeno que hay que mantener **constante**. Para eso, **el medio (pH y ácido) y la relación cóctel/muestra deben ser los mismos en patrones, muestras y blancos**.",
+      "fuente": "CSN, Procedimiento 1.18; UNE-EN ISO 11704:2018",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f37",
+      "anverso": "Las **ventanas de recuento** del centelleo líquido: cómo se definen.",
+      "reverso": "Ventana de recuento = **la zona del espectro que se integra** para cada índice.\n- **Ventana ALFA: lo más ESTRECHA posible**, para evitar fondo e interferencias, pero conteniendo todos los emisores alfa esperables. Se define midiendo un vial con **U-236 y Ra-226**, de modo que **contenga el pico del U-236 (4,4 MeV) y el del Po-214 (7,7 MeV)**.\n- **Ventana BETA: lo más AMPLIA posible**, abarcando todos los canales **salvo los de baja energía donde aparece el tritio**. Se ajusta midiendo un vial de tritio y exigiendo que la ventana **no contenga más del 5 % de las cuentas de tritio**.\n**Ventaja propia del LSC:** como da espectro, permite **detectar Ra-226 identificando el pico de su descendiente Po-214**; un contador proporcional no puede.",
+      "fuente": "CSN, Procedimiento 1.18",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t29-f38",
+      "anverso": "Prestaciones del método de **centelleo líquido** según el CSN, y su punto débil.",
+      "reverso": "**Aguas de baja salinidad**, 100 mL y 400 minutos de recuento, contador de bajo fondo:\n- **AMD 0,03 Bq/L en alfa total** y **0,10 Bq/L en beta total**.\n- Precisión **10 % (DSR)** y exactitud **8 %** para actividades de 0,1 Bq/L.\n**Aguas de alta salinidad** (subterráneas y marinas): **0,3 y 1,10 Bq/L**; la etapa de concentración es distinta.\n**Punto débil:** mucha actividad **beta degrada la exactitud del índice ALFA**. Con emisores beta del orden de **100 veces la AMD** el error del alfa puede **superar el 100 %** si el alfa está cerca de su propia AMD.",
+      "fuente": "CSN, Procedimiento 1.18",
+      "etiquetas": ["instrumentacion"]
+    },
+    {
+      "id": "t29-f39",
+      "anverso": "¿Qué técnica e instrumento se usan para **identificar radionucleidos uno a uno**?",
+      "reverso": "Dos, según el tipo de emisión:\n- **ESPECTROMETRÍA GAMMA DE ALTA RESOLUCIÓN** (**UNE-EN ISO 10703**): es la técnica **multinucleido**, identifica y cuantifica **a la vez** todos los emisores gamma por la **energía** de sus fotopicos. El detector, según el CSN, son **detectores coaxiales de GERMANIO intrínseco de alta pureza (HPGe), tipo P**, con una **capa muerta de 0,5 a 0,7 mm** que fija el límite inferior de energía útil.\n- **ESPECTROMETRÍA ALFA**, con **detector de silicio** y **previa separación radioquímica**: **ISO 13166** (isótopos de uranio), **ISO 13161** (Po-210), **ISO 13167** (Pu, Am, Cm y Np), **ISO 13165-4** (Ra-226). Es la que permite **distinguir U-234 de U-238**.",
+      "fuente": "UNE-EN ISO 10703:2016; CSN, Procedimiento 1.4; catálogo ISO/TC 147/SC 3",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f40",
+      "anverso": "Las **familias de detectores** de radiación, y por qué para los índices se usa un **contador proporcional** y no un Geiger-Müller.",
+      "reverso": "Todos se basan en lo mismo: **medir el pulso o corriente eléctrica producido por la IONIZACIÓN que induce la radiación**, en **gases confinados** o en **detectores sólidos**.\n- **De gas:** **cámara de ionización**, **contador proporcional** y **Geiger-Müller**. El CSN señala que el **GM es el más utilizado** —barato, sensible y resistente— y que la **cámara de ionización es más sensible pero cara**, sensible a la **humedad** y con riesgo de **fugas**.\n- **Centelleo sólido:** **ZnS(Ag)** para alfa, **NaI(Tl)** para gamma. **Muy buena sensibilidad**, y algunos **pueden usarse como espectrómetros**.\n- **Centelleo líquido:** la muestra va **dentro** del centelleador.\n- **Semiconductores:** **silicio** (alfa) y **germanio** (gamma). **Alta resolución en energía.**\n**Por qué el proporcional:** en él **la altura del impulso es proporcional a la ionización inicial**, y eso permite **separar alfa de beta** —en modo secuencial cambiando el voltaje, o simultáneo con dos ventanas—. **El Geiger-Müller da el mismo impulso venga de donde venga**: dice *si hay* radiación, no *de qué tipo*.",
+      "fuente": "CSN, Curso de actuantes en emergencias, módulo 5; CSN, Procedimientos 1.5 y 1.16",
+      "etiquetas": ["instrumentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f41",
+      "anverso": "¿Qué **límites de detección** exige el RD 3/2023, con qué norma se calculan y cómo se expresa la incertidumbre?",
+      "reverso": "**Tabla 14 del anexo III, parte D.2** (el método debe ser capaz, como mínimo, de medir con ese LD):\n- **Alfa total 0,04 · beta resto 0,4 · radón 10 · tritio 10 Bq/L.**\n- Nucleidos: **Po-210 0,01** (el más exigente), **Pb-210, Ra-228, U-234 y U-238 0,02**, **Pu-239/240 y Ra-226 0,04**, **Am-241 0,06**, **Co-60, Cs-134, Cs-137 e I-131 0,5**, **Sr-90 0,4**, **C-14 20**.\n**El LD se calcula con la UNE-EN ISO 11929**, *«Determinación de los límites característicos (**umbral de decisión, límite de detección y límites del intervalo de cobertura**)»*, **partes 1 (aplicaciones elementales), 2 (avanzadas) y 3 (métodos de desplegado)**.\n**Incertidumbre:** típicas **combinadas** o **expandidas con un factor de expansión de 1,96** —ojo, **no k = 2** como en los físico-químicos—.\n**Nota del Ra-228:** su LD de 0,02 vale para la detección inicial en fuentes nuevas; si no es plausible que supere el **20 %** de su concentración derivada, **puede subirse a 0,08 Bq/L**.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, tabla 14 y notas 1, 2 y 3",
+      "etiquetas": ["valores", "calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f42",
+      "anverso": "**Dónde**, **qué** y **cada cuánto** se hace el control de radiactividad.",
+      "reverso": "**Dónde (anexo II, parte B.4):** toma de captación; salida de planta de tratamiento o depósito de cabecera; si no hay ETAP ni depósito de cabecera, salida de depósito de regulación o distribución; red de distribución si no hay depósito entre captación y red.\n**Qué:** **siempre alfa total y beta resto**; **+ radón** si el origen es **subterráneo**; **+ tritio** si es **superficial y hay una central nuclear aguas arriba**; y el **cálculo de la DI** según el anexo VI.\n**Cada cuánto (tabla 8):**\n- **Tipo 1** (< 10 m³/día): **a criterio de la autoridad sanitaria**.\n- **Tipo 2** (10-100 m³): **1 cada 5 años**.\n- **Tipo 3** (100-1 000 m³): **1 al año**.\n- **Tipo 4** (1 000-10 000 m³): **1 por los primeros 1 000 m³ + 1 por cada 3 300 m³ adicionales** o fracción.\nY todos los datos **se notifican al SINAC**.",
+      "fuente": "RD 3/2023, anexo II partes B.4 y C (tabla 8); anexo VI parte A.9",
+      "etiquetas": ["procedimiento"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f43",
+      "anverso": "Se supera un valor paramétrico de radiactividad. ¿Qué plazos y qué pasos?",
+      "reverso": "Es una **«INCIDENCIA TIPO E»**: la producida **por la superación de los valores paramétricos de las sustancias radiactivas** (art. 22).\n**El número del apartado es el 24 —horas—, y aparece cuatro veces:**\n1. **Confirmación**, obligatoria si es **la primera vez**, si hay **sospecha de origen artificial** o si **lo pide la autoridad sanitaria**: nueva muestra **antes de 24 horas**.\n2. **Notificación** a la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad, que puede pedir al **CSN la investigación inmediata** si se sospecha origen artificial.\n3. **Comunicación a la población** del riesgo, las medidas y las recomendaciones, **antes de 24 horas**.\n4. **Verificación de la normalidad** tras las medidas, e información **en 24 horas** desde los resultados.\nY siempre: **radón > 1 000 Bq/L → evitar el suministro en esas condiciones**.",
+      "fuente": "RD 3/2023, art. 22 y anexo VI, parte C",
+      "etiquetas": ["procedimiento"],
+      "nucleo": true
+    },
+    {
+      "id": "t29-f44",
+      "anverso": "¿Quién vigila la radiactividad del medio ambiente en España, y con qué redes?",
+      "reverso": "El **Consejo de Seguridad Nuclear (CSN)**, en paralelo al control que hace el operador del abastecimiento:\n- **PVRA:** vigilancia **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia.\n- **REVIRA:** vigilancia **de ámbito nacional NO asociada a instalaciones**. **Integra la REM (Red de Estaciones de MUESTREO) y la REA (Red de Estaciones AUTOMÁTICAS).**\n- **REA:** **25 estaciones automáticas** que miden en continuo tasa de dosis gamma, **concentración de radón**, radioyodos y emisores alfa y beta en aire, más variables meteorológicas. Los datos llegan a la **Sala de Emergencias (SALEM) del CSN**.\n- **RAR:** Red de Alerta a la Radiactividad de la **Dirección General de Protección Civil**, con **902 estaciones** de tasa de radiación gamma ambiental.",
+      "fuente": "CSN, «Vigilancia radiológica ambiental en España»; Curso de actuantes en emergencias, módulo 5",
+      "etiquetas": ["marco legal"]
+    },
+    {
+      "id": "t29-f45",
+      "anverso": "¿Qué le exige el RD 3/2023 al **laboratorio** que analiza radiactividad?",
+      "reverso": "Que tenga los métodos **acreditados por la UNE-EN ISO/IEC 17025**. El anexo III, parte B.2 lo dice para los parámetros del anexo I, partes **A, B, C, E o F**: la **parte E —las sustancias radiactivas— está incluida**.\nLas únicas exenciones son para los parámetros del **control operacional y de rutina**, y solo si el laboratorio hace únicamente esos dos tipos de análisis.\nMientras un método no esté acreditado, **debe estar validado y documentado** conforme al anexo III, parte E.\n(La acreditación en sí es el **tema 40**; la validación e incertidumbre, el **38**.)",
+      "fuente": "RD 3/2023, anexo III, parte B, puntos 2 y 3",
+      "etiquetas": ["calidad"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t29-q01",
+      "pregunta": "Según el RD 3/2023, el valor paramétrico de la actividad alfa total en el agua de consumo es:",
+      "opciones": ["0,04 Bq/L.", "0,1 Bq/L.", "1,0 Bq/L."],
+      "correcta": 1,
+      "explicacion": "El anexo I, parte E, tabla 5 fija 0,1 Bq/L para la actividad alfa total. 0,04 Bq/L es su LÍMITE DE DETECCIÓN (tabla 14) y 1,0 Bq/L es el valor paramétrico de la actividad beta resto.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q02",
+      "pregunta": "El parámetro de radiactividad del anexo I, parte E, referido a la emisión beta es:",
+      "opciones": [
+        "La actividad beta resto, es decir, la beta total excluido el potasio-40, con valor paramétrico de 1,0 Bq/L.",
+        "La actividad beta total, sin exclusiones, con valor paramétrico de 1,0 Bq/L.",
+        "La actividad beta total, sin exclusiones, con valor paramétrico de 0,1 Bq/L."
+      ],
+      "correcta": 0,
+      "explicacion": "El parámetro legal es la «actividad beta RESTO». El anexo VI la define como «actividad beta total excluido potasio-40», porque el K-40 domina la actividad beta de cualquier agua natural y acompaña a un nutriente.",
+      "fuente": "RD 3/2023, anexo I parte E y anexo VI, parte B.4",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q03",
+      "pregunta": "El valor paramétrico del radón en el agua de consumo en España es:",
+      "opciones": ["100 Bq/L.", "300 Bq/m³.", "500 Bq/L."],
+      "correcta": 2,
+      "explicacion": "500 Bq/L (RD 3/2023, anexo I, parte E). 100 Bq/L es el valor paramétrico del tritio y 300 Bq/m³ es el NIVEL DE REFERENCIA del radón EN AIRE de recintos cerrados (RD 1029/2022, art. 72.a).",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q04",
+      "pregunta": "Señale el valor paramétrico del tritio y el de la dosis indicativa:",
+      "opciones": ["Tritio 10 Bq/L y DI 0,01 mSv.", "Tritio 100 Bq/L y DI 0,10 mSv.", "Tritio 500 Bq/L y DI 1,0 mSv."],
+      "correcta": 1,
+      "explicacion": "Tabla 5 del anexo I, parte E: tritio 100 Bq/L y dosis indicativa 0,10 mSv. 10 Bq/L es el LÍMITE DE DETECCIÓN exigido al tritio, no su valor paramétrico.",
+      "fuente": "RD 3/2023, anexo I parte E tabla 5 y anexo III parte D.2 tabla 14",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q05",
+      "pregunta": "En el cálculo de la dosis indicativa NO se tienen en cuenta:",
+      "opciones": [
+        "El tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta.",
+        "Únicamente los radionucleidos de origen artificial.",
+        "El uranio-238 y el uranio-234, por su toxicidad química."
+      ],
+      "correcta": 0,
+      "explicacion": "La definición de DI excluye expresamente esos cuatro. La DI incluye radionucleidos de origen natural Y artificial, y el uranio entra en ella por sus propiedades radiológicas: su toxicidad química se trata aparte.",
+      "fuente": "RD 3/2023, anexo I parte E nota 5, y anexo VI parte B.4",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q06",
+      "pregunta": "Las concentraciones derivadas de la tabla 6 del anexo I están calculadas para una dosis de 0,1 mSv y una ingestión anual de agua de:",
+      "opciones": ["365 litros.", "500 litros.", "730 litros."],
+      "correcta": 2,
+      "explicacion": "730 litros al año para adultos, es decir, 2 litros diarios. Es la hipótesis de consumo con la que se traduce la dosis indicativa a Bq/L de cada radionucleido.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6 y punto 2"
+    },
+    {
+      "id": "t29-q07",
+      "pregunta": "En un agua de consumo se obtiene: actividad alfa total 0,06 Bq/L, actividad beta resto 0,7 Bq/L y tritio 15 Bq/L. Conforme al anexo VI, procede:",
+      "opciones": [
+        "Analizar los radionucleidos artificiales específicos, por si el tritio enmascara otros.",
+        "Analizar primero los radionucleidos naturales y después, si procede, los artificiales.",
+        "Considerar que la dosis indicativa es inferior o igual a 0,1 mSv/año y no realizar investigaciones radiológicas adicionales."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el caso 1.º del cribado: alfa total ≤ 0,1 Bq/L, beta resto ≤ 1,0 Bq/L y tritio < 100 Bq/L. Se da por cumplida la DI y no hacen falta investigaciones adicionales.",
+      "fuente": "RD 3/2023, anexo VI, parte B, punto 4, apartado 1.º"
+    },
+    {
+      "id": "t29-q08",
+      "pregunta": "Si la actividad alfa total o la beta resto superan sus valores de cribado y el tritio es inferior o igual a 100 Bq/L, el anexo VI obliga a analizar radionucleidos específicos:",
+      "opciones": [
+        "Considerando primero los naturales y, si éstos no justifican por sí solos los valores obtenidos, después los artificiales.",
+        "Considerando primero los artificiales, por ser los de mayor riesgo sanitario.",
+        "Únicamente los quince radionucleidos del sumatorio de la dosis indicativa, sin orden preestablecido."
+      ],
+      "correcta": 0,
+      "explicacion": "El orden lo fija la norma: primero naturales y, solo si no explican los índices, después artificiales. Es la lógica del tema: lo normal es que un exceso de alfa o beta lo explique el radio o el uranio del terreno.",
+      "fuente": "RD 3/2023, anexo VI, parte B, punto 4, apartado 2.º",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q09",
+      "pregunta": "El control del radón en el agua de consumo se realiza:",
+      "opciones": [
+        "Siempre, con independencia del origen del agua.",
+        "Cuando el origen del agua sea total o parcialmente subterráneo y concurra alguna de las condiciones del anexo VI.",
+        "Solo cuando el agua sea de origen superficial y exista una central nuclear aguas arriba."
+      ],
+      "correcta": 1,
+      "explicacion": "Radón va con agua SUBTERRÁNEA; el tritio es el que va con agua SUPERFICIAL y central nuclear aguas arriba. Lo que se controla siempre son la actividad alfa total y la beta resto.",
+      "fuente": "RD 3/2023, anexo II parte B.4 y anexo VI parte B.2",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q10",
+      "pregunta": "Según el anexo VI, no se controlará el radón ni el tritio ni se establecerá la dosis indicativa cuando conste que sus niveles se han mantenido por debajo de los valores paramétricos durante un periodo no menor a:",
+      "opciones": ["Un año.", "Tres años.", "Cinco años."],
+      "correcta": 2,
+      "explicacion": "Cinco años, sobre la base de estudios representativos, datos del control u otra información fiable. Aun así, hay que volver a muestrear si se produce un cambio en el suministro que pueda influir en las concentraciones.",
+      "fuente": "RD 3/2023, anexo VI, parte B, punto 1",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q11",
+      "pregunta": "Conforme al RD 1029/2022, un becquerelio equivale a:",
+      "opciones": [
+        "Un julio absorbido por kilogramo de tejido.",
+        "Una desintegración nuclear por segundo.",
+        "Una desintegración nuclear por minuto."
+      ],
+      "correcta": 1,
+      "explicacion": "El becquerelio (Bq) es la unidad de ACTIVIDAD: 1 Bq = 1 desintegración nuclear por segundo. El julio por kilogramo es el gray (Gy), unidad de dosis absorbida.",
+      "fuente": "RD 1029/2022, art. 2, definiciones 2 y 17",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q12",
+      "pregunta": "Los límites de dosis efectiva del RD 1029/2022 son:",
+      "opciones": [
+        "20 mSv por año oficial para los trabajadores expuestos y 1 mSv por año oficial para los miembros del público.",
+        "50 mSv por año oficial para los trabajadores expuestos y 5 mSv por año oficial para los miembros del público.",
+        "6 mSv por año oficial para los trabajadores expuestos y 0,1 mSv por año oficial para los miembros del público."
+      ],
+      "correcta": 0,
+      "explicacion": "Arts. 11.1 y 15.1. Los 50 mSv son el máximo de dosis equivalente al cristalino en un único año, y los 0,1 mSv son el valor paramétrico de la dosis indicativa del agua, que es justo la décima parte del límite del público.",
+      "fuente": "RD 1029/2022, arts. 11 y 15"
+    },
+    {
+      "id": "t29-q13",
+      "pregunta": "El radón-222 presente en las aguas subterráneas procede de la cadena de desintegración del:",
+      "opciones": ["Uranio-238, por desintegración del radio-226.", "Torio-232, por desintegración del radio-228.", "Potasio-40, por captura electrónica."],
+      "correcta": 0,
+      "explicacion": "El CSN lo define como «un gas radiactivo natural procedente de la cadena de desintegración del uranio-238»; su precursor inmediato es el Ra-226. El K-40 no encabeza ninguna serie: es un emisor beta aislado.",
+      "fuente": "CSN, página pública «Radón»; tema 29, §2.2"
+    },
+    {
+      "id": "t29-q14",
+      "pregunta": "¿Qué radionucleido es el principal responsable de la actividad beta de un agua natural?",
+      "opciones": ["El estroncio-90.", "El cesio-137.", "El potasio-40."],
+      "correcta": 2,
+      "explicacion": "La actividad beta de las aguas se debe mayoritariamente al isótopo natural K-40. Precisamente por eso el parámetro legal es la beta RESTO, que lo descuenta. El Sr-90 y el Cs-137 son artificiales.",
+      "fuente": "CSN, Procedimiento 1.5"
+    },
+    {
+      "id": "t29-q15",
+      "pregunta": "En la determinación del índice de actividad alfa total por el método de desecación, el patrón de referencia es una disolución certificada de:",
+      "opciones": ["Cesio-137.", "Americio-241.", "Estroncio-90 en equilibrio con itrio-90."],
+      "correcta": 1,
+      "explicacion": "El índice de actividad alfa total se define «referido a la muestra de calibración de americio-241». El Sr-90/Y-90 es el patrón del índice BETA, y el Cs-137 se descartó como patrón por la volatilidad del cesio hacia 450 °C.",
+      "fuente": "CSN, Procedimientos 1.16 y 1.5",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q16",
+      "pregunta": "En los procedimientos del CSN, el residuo depositado en la plancheta se seca hasta peso constante, entendiendo por tal que la diferencia entre dos pesadas sucesivas sea:",
+      "opciones": ["Igual o inferior a 5 mg.", "Igual o inferior a 2 mg.", "Igual o inferior a 0,5 mg."],
+      "correcta": 2,
+      "explicacion": "El criterio es 0,5 mg, con secado a 180 ± 2 °C. Se admiten como variantes el secado a 105 °C o la calcinación a 450 °C, y la variante empleada debe declararse al presentar el resultado.",
+      "fuente": "CSN, Procedimiento 1.5"
+    },
+    {
+      "id": "t29-q17",
+      "pregunta": "En la medida de los índices con contador proporcional, se denomina «spill-over» a:",
+      "opciones": [
+        "La fracción de partículas alfa que se cuentan en el voltaje o la ventana de trabajo beta.",
+        "La pérdida de cuentas por autoabsorción en el propio residuo de la plancheta.",
+        "La humedad absorbida por el residuo entre la preparación y el recuento."
+      ],
+      "correcta": 0,
+      "explicacion": "El spill-over son alfas contadas como betas, y hay que determinarlo para corregir el cálculo del índice de actividad beta total. La autoabsorción se corrige con la curva de autoabsorción, y la humedad se evita guardando la plancheta en desecador.",
+      "fuente": "CSN, Procedimiento 1.5"
+    },
+    {
+      "id": "t29-q18",
+      "pregunta": "En el método de centelleo líquido para los índices alfa y beta total, el parámetro discriminador de impulsos (PDI) sirve para:",
+      "opciones": [
+        "Corregir el efecto del quenching sobre la eficiencia de recuento.",
+        "Diferenciar los impulsos alfa de los impulsos beta.",
+        "Fijar el tiempo de recuento necesario para alcanzar la actividad mínima detectable."
+      ],
+      "correcta": 1,
+      "explicacion": "El PDI es el parámetro instrumental que permite diferenciar impulsos alfa de beta, y se ajusta mediante calibración. El quenching se controla manteniendo constantes el pH, el ácido y la relación cóctel/muestra en patrones, muestras y blancos.",
+      "fuente": "CSN, Procedimiento 1.18"
+    },
+    {
+      "id": "t29-q19",
+      "pregunta": "La determinación de radionucleidos emisores gamma en agua conforme a la UNE-EN ISO 10703 se realiza por espectrometría gamma de alta resolución, empleando detectores de:",
+      "opciones": ["Sulfuro de cinc activado con plata, ZnS(Ag).", "Yoduro de sodio activado con talio, NaI(Tl).", "Germanio intrínseco de alta pureza (HPGe)."],
+      "correcta": 2,
+      "explicacion": "La alta resolución en energía la dan los semiconductores de germanio hiperpuro; el CSN especifica detectores coaxiales de germanio intrínseco de alta pureza tipo P. El ZnS(Ag) se usa para alfa total en plancheta y el NaI(Tl) da mucha eficiencia pero poca resolución.",
+      "fuente": "UNE-EN ISO 10703:2016; CSN, Procedimiento 1.4",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q20",
+      "pregunta": "El RD 3/2023 establece que el límite de detección de los parámetros y radionucleidos se calculará con arreglo a la norma:",
+      "opciones": [
+        "UNE-EN ISO 11929, determinación de los límites característicos.",
+        "UNE-EN ISO/IEC 17025, requisitos generales para la competencia de los laboratorios.",
+        "UNE-EN ISO 5667-3, conservación y manipulación de las muestras de agua."
+      ],
+      "correcta": 0,
+      "explicacion": "Nota 1 de la tabla 14: la UNE-EN ISO 11929 fija el umbral de decisión, el límite de detección y los límites del intervalo de cobertura, en sus partes 1, 2 y 3. La 17025 es la de acreditación del laboratorio.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, tabla 14, nota 1"
+    },
+    {
+      "id": "t29-q21",
+      "pregunta": "Para los radionucleidos, el RD 3/2023 indica que las incertidumbres de medición se calcularán y comunicarán como incertidumbres típicas combinadas o expandidas, con un factor de expansión de:",
+      "opciones": ["1,00.", "1,96.", "3,00."],
+      "correcta": 1,
+      "explicacion": "Nota 2 de la tabla 14: factor de expansión 1,96. Es una particularidad de este bloque, porque para los parámetros físico-químicos el real decreto trabaja con k = 2.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, tabla 14, nota 2"
+    },
+    {
+      "id": "t29-q22",
+      "pregunta": "En una zona de abastecimiento de tipo 3 (más de 100 y menos de 1.000 m³/día), la frecuencia mínima del control de radiactividad es:",
+      "opciones": ["Uno cada cinco años.", "Uno al año.", "Cuatro al año."],
+      "correcta": 1,
+      "explicacion": "Tabla 8 del anexo II, parte C: un control de radiactividad al año. El «uno cada cinco años» corresponde a la zona tipo 2, y en la zona tipo 1 la frecuencia queda a criterio de la autoridad sanitaria.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8"
+    },
+    {
+      "id": "t29-q23",
+      "pregunta": "La superación de los valores paramétricos de las sustancias radiactivas se clasifica en el RD 3/2023 como:",
+      "opciones": ["Incidencia tipo AB.", "Incidencia tipo C.", "Incidencia tipo E."],
+      "correcta": 2,
+      "explicacion": "Art. 22.2.c: incidencia tipo E. La AB corresponde a los parámetros microbiológicos o químicos y la C a los indicadores de calidad. En la tipo E hay que confirmar con nueva muestra antes de 24 horas y notificar en 24 horas.",
+      "fuente": "RD 3/2023, art. 22 y anexo VI, parte C",
+      "nucleo": true
+    },
+    {
+      "id": "t29-q24",
+      "pregunta": "Respecto de la declaración de situación de excepción del artículo 28, señale la afirmación correcta:",
+      "opciones": [
+        "Solo cabe para los parámetros químicos del anexo I, parte B, y los de la lista de observación: no para las sustancias radiactivas.",
+        "Cabe para cualquier parámetro del anexo I, incluidas las sustancias radiactivas de la parte E.",
+        "Cabe únicamente para los parámetros microbiológicos del anexo I, parte A."
+      ],
+      "correcta": 0,
+      "explicacion": "El art. 28.1 la limita a los parámetros químicos del anexo I, parte B, y a los de la lista de observación del anexo IV. Ante una superación de la parte E lo que se aplica es el anexo VI, con sus medidas correctoras y sus plazos de 24 horas.",
+      "fuente": "RD 3/2023, arts. 6.3 y 28.1",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t29-s01",
+      "titulo": "Supuesto 1. Abastecimiento de origen subterráneo con exceso de actividad alfa",
+      "enunciado": "Usted trabaja en el laboratorio municipal de una zona de abastecimiento **de tipo 3** (más de 100 y menos de 1.000 m³ diarios) que se nutre **íntegramente de un sondeo en terreno granítico**. En el control de radiactividad anual, tomado a la **salida del depósito de cabecera**, se obtienen los siguientes resultados:\n\n| Parámetro | Resultado |\n| --- | --- |\n| Actividad alfa total | **0,18 Bq/L** |\n| Actividad beta resto | **0,55 Bq/L** |\n| Tritio | **No procede** |\n| Radón | **640 Bq/L** |\n\nEs la **primera vez** que se detecta una superación en esta zona de abastecimiento.",
+      "preguntas": [
+        {
+          "id": "t29-s01-q1",
+          "pregunta": "Conforme a la metodología del anexo VI para el control de la dosis indicativa, ¿qué procede hacer con estos resultados de alfa total y beta resto?",
+          "opciones": [
+            "Nada: la actividad beta resto está por debajo de 1,0 Bq/L y eso basta para dar por cumplida la dosis indicativa.",
+            "Analizar los radionucleidos específicos, considerando primero los naturales y, si no justifican por sí solos los valores, después los artificiales.",
+            "Analizar directamente los radionucleidos artificiales, porque un exceso de alfa siempre indica contaminación antropogénica.",
+            "Declarar el agua no apta para el consumo de forma automática y suspender el suministro."
+          ],
+          "correcta": 1,
+          "explicacion": "Es el caso 2.º del cribado: basta con que UNO de los dos índices supere su valor (aquí el alfa total, 0,18 > 0,1 Bq/L) y el tritio no sea superior a 100 Bq/L. El orden lo impone la norma: naturales primero, artificiales después. Y la superación de la parte E no califica automáticamente el agua como no apta: el art. 6.3 remite al anexo VI.",
+          "fuente": "RD 3/2023, anexo VI, parte B, punto 4, apartado 2.º; art. 6.3"
+        },
+        {
+          "id": "t29-s01-q2",
+          "pregunta": "En un agua subterránea de terreno granítico con exceso de actividad alfa total, ¿qué radionucleidos naturales son los primeros candidatos a explicarla?",
+          "opciones": [
+            "El potasio-40 y el estroncio-90.",
+            "El cesio-137 y el cobalto-60, procedentes del poso de las pruebas nucleares.",
+            "El uranio-238 y el uranio-234, el radio-226 con sus descendientes alfa y el polonio-210, además del radio-224 de la serie del torio.",
+            "El tritio y el carbono-14, de origen cosmogénico."
+          ],
+          "correcta": 2,
+          "explicacion": "Son los emisores alfa que el CSN identifica como contribuyentes al índice: de la serie del U-238, el U-238, el U-234, el Ra-226 con Rn-222, Po-218 y Po-214, y el Po-210; de la serie del Th-232, el Ra-224. El K-40 es emisor beta, el Sr-90 también, y el Cs-137 y el Co-60 son artificiales y emisores gamma.",
+          "fuente": "CSN, informe INT-04-30; RD 3/2023, anexo I parte E tabla 6"
+        },
+        {
+          "id": "t29-s01-q3",
+          "pregunta": "El resultado de radón es de 640 Bq/L. ¿Qué consecuencia tiene?",
+          "opciones": [
+            "Supera el valor paramétrico de 500 Bq/L, por lo que hay que actuar conforme al anexo VI, pero al no rebasar los 1.000 Bq/L las medidas correctoras no están justificadas «sin otra consideración».",
+            "No supera el valor paramétrico, que para aguas subterráneas es de 1.000 Bq/L.",
+            "Supera el nivel de referencia de 300 aplicable al radón, por lo que hay que ventilar el depósito.",
+            "Obliga en todo caso e inmediatamente a evitar el suministro de agua en esas condiciones."
+          ],
+          "correcta": 0,
+          "explicacion": "El valor paramétrico es 500 Bq/L, así que 640 lo supera y se abre el procedimiento del anexo VI, parte C. Los 1.000 Bq/L son el umbral por encima del cual las medidas correctoras se consideran justificadas por protección radiológica sin otra consideración y hay que evitar el suministro. Los 300 son Bq/m³ y se refieren al radón EN AIRE (RD 1029/2022).",
+          "fuente": "RD 3/2023, anexo I parte E notas 2 y 3, y anexo VI parte C.5"
+        },
+        {
+          "id": "t29-s01-q4",
+          "pregunta": "Al ser la primera vez que se detecta la superación, ¿en qué plazo debe tomarse la nueva muestra para el análisis de confirmación?",
+          "opciones": [
+            "En el plazo de siete días desde la obtención del resultado.",
+            "En el plazo de un mes, coincidiendo con el siguiente control programado.",
+            "No procede análisis de confirmación: basta con notificar el resultado al SINAC.",
+            "Antes de las veinticuatro horas desde la obtención del resultado analítico que implique la superación."
+          ],
+          "correcta": 3,
+          "explicacion": "La confirmación es obligatoria cuando la superación se detecta por primera vez, cuando hay sospecha de origen artificial o cuando lo considere necesario la autoridad sanitaria, y la nueva muestra se toma antes de 24 horas. En el mismo plazo de 24 horas hay que notificar a la autoridad sanitaria.",
+          "fuente": "RD 3/2023, anexo VI, parte C, punto 1"
+        },
+        {
+          "id": "t29-s01-q5",
+          "pregunta": "¿Con qué frecuencia mínima debe realizarse el control de radiactividad en esta zona de abastecimiento, y dónde puede tomarse la muestra?",
+          "opciones": [
+            "Un control al año; la muestra puede tomarse en la toma de captación, a la salida de la planta de tratamiento o del depósito de cabecera, o en los otros puntos que prevé el anexo II.",
+            "Un control cada cinco años; la muestra debe tomarse siempre en el grifo del consumidor.",
+            "Cuatro controles al año; la muestra debe tomarse siempre en la toma de captación.",
+            "A criterio de la autoridad sanitaria; la muestra debe tomarse siempre en la red de distribución."
+          ],
+          "correcta": 0,
+          "explicacion": "Zona tipo 3: un control de radiactividad al año (tabla 8). Los puntos de muestreo son los del anexo II, parte B.4: toma de captación; salida de planta de tratamiento o depósito de cabecera; si no los hay, salida de depósito de regulación o distribución; y red de distribución si no hay depósito entre captación y red. Lo de «cada cinco años» es la zona tipo 2, y lo de «a criterio de la autoridad sanitaria», la tipo 1.",
+          "fuente": "RD 3/2023, anexo II, parte B.4 y parte C, tabla 8"
+        }
+      ]
+    },
+    {
+      "id": "t29-s02",
+      "titulo": "Supuesto 2. Captación superficial aguas abajo de una central nuclear",
+      "enunciado": "Una ETAP se abastece de una **captación superficial en un río** en el que, **aguas arriba de la zona de captación, existe una central nuclear**. En el control de radiactividad se obtienen:\n\n| Parámetro | Resultado |\n| --- | --- |\n| Actividad alfa total | **0,05 Bq/L** |\n| Actividad beta resto | **0,80 Bq/L** |\n| Tritio | **140 Bq/L** |\n\nLa autoridad sanitaria encarga al laboratorio el estudio complementario.",
+      "preguntas": [
+        {
+          "id": "t29-s02-q1",
+          "pregunta": "Con estos tres resultados, ¿qué establece la metodología del anexo VI?",
+          "opciones": [
+            "Que no procede ninguna investigación adicional, porque los dos índices están por debajo de sus valores de cribado.",
+            "Que hay que analizar los radionucleidos específicos naturales y, después, los artificiales.",
+            "Que hay que realizar un análisis de los radionucleidos específicos artificiales descritos en el anexo I.",
+            "Que hay que repetir únicamente la determinación de tritio antes de decidir nada."
+          ],
+          "correcta": 2,
+          "explicacion": "Es el caso 3.º: alfa total ≤ 0,1 y beta resto ≤ 1,0, pero tritio superior a 100 Bq/L. Cuando solo se dispara el tritio, lo que se busca son los ARTIFICIALES, porque un tritio elevado es indicio de la presencia de otros radionucleidos artificiales.",
+          "fuente": "RD 3/2023, anexo VI, parte B, punto 4, apartado 3.º; anexo I parte E, nota 4"
+        },
+        {
+          "id": "t29-s02-q2",
+          "pregunta": "¿Qué técnica normalizada se emplea para determinar el tritio en agua, y qué límite de detección exige el RD 3/2023?",
+          "opciones": [
+            "Centelleo líquido, con un límite de detección de 10 Bq/L.",
+            "Espectrometría gamma de alta resolución, con un límite de detección de 0,5 Bq/L.",
+            "Espectrometría alfa previa separación radioquímica, con un límite de detección de 0,02 Bq/L.",
+            "Contador proporcional de flujo de gas sobre plancheta, con un límite de detección de 0,4 Bq/L."
+          ],
+          "correcta": 0,
+          "explicacion": "La UNE-EN ISO 9698 determina el tritio por conteo de centelleo líquido, y la tabla 14 exige un límite de detección de 10 Bq/L, el mismo que para el radón. El tritio es un emisor beta de energía muy baja: por eso en centelleo líquido la ventana beta de los índices se define excluyendo los canales donde aparece su señal.",
+          "fuente": "UNE-EN ISO 9698; RD 3/2023, anexo III, parte D.2, tabla 14"
+        },
+        {
+          "id": "t29-s02-q3",
+          "pregunta": "En el estudio complementario se detecta cesio-137. ¿Qué técnica es la adecuada y cuál es su concentración derivada?",
+          "opciones": [
+            "Emanometría; concentración derivada de 0,5 Bq/L.",
+            "Espectrometría gamma de alta resolución con detector de germanio hiperpuro; concentración derivada de 11 Bq/L.",
+            "Centelleo líquido con discriminación alfa/beta; concentración derivada de 240 Bq/L.",
+            "Contador proporcional de flujo de gas; concentración derivada de 4,9 Bq/L."
+          ],
+          "correcta": 1,
+          "explicacion": "El Cs-137 es emisor gamma: la técnica es la espectrometría gamma de alta resolución de la UNE-EN ISO 10703, con detector de germanio hiperpuro, que además identifica varios nucleidos en una sola medida. Su concentración derivada es 11 Bq/L (los 240 son del C-14 y los 4,9 del Sr-90) y su límite de detección exigido, 0,5 Bq/L.",
+          "fuente": "RD 3/2023, anexo I parte E tabla 6 y anexo III tabla 14; UNE-EN ISO 10703:2016"
+        },
+        {
+          "id": "t29-s02-q4",
+          "pregunta": "A la hora de calcular la dosis indicativa de esta agua, ¿cómo se trata el tritio medido?",
+          "opciones": [
+            "Se suma como un radionucleido más, dividiendo su concentración medida entre su concentración derivada.",
+            "Se suma con un peso doble, por ser indicio de otros radionucleidos artificiales.",
+            "Se suma solo si procede de una instalación nuclear autorizada.",
+            "No se incluye: el tritio está expresamente excluido del cálculo de la dosis indicativa."
+          ],
+          "correcta": 3,
+          "explicacion": "La dosis indicativa excluye el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta. El tritio ya tiene su propio valor paramétrico de 100 Bq/L y se controla aparte; su papel en la DI es solo el de disparador del análisis de artificiales.",
+          "fuente": "RD 3/2023, anexo I parte E nota 5, y anexo VI parte B.4.5.º"
+        },
+        {
+          "id": "t29-s02-q5",
+          "pregunta": "Si fuera el Consejo de Seguridad Nuclear quien, a través de sus programas de vigilancia, detectara la superación del valor paramétrico del tritio, ¿cómo se canaliza la información?",
+          "opciones": [
+            "El CSN lo comunica directamente a la población afectada y ordena suspender el suministro.",
+            "El CSN lo notifica al Ministerio de Sanidad junto con los resultados de otros radionucleidos artificiales y el cálculo de la dosis indicativa, y el Ministerio lo traslada por el SINAC a autoridades sanitarias y operadores.",
+            "El CSN lo notifica al operador de la red, que decide si informa a la autoridad sanitaria.",
+            "El CSN no interviene: la vigilancia del agua de consumo es competencia exclusiva de la autoridad sanitaria autonómica."
+          ],
+          "correcta": 1,
+          "explicacion": "Es el circuito literal del anexo VI, parte B.3. El CSN participa además asesorando sobre las fuentes antropogénicas de tritio, informando de la caracterización de las masas de agua por radón y pudiendo investigar de forma inmediata el origen cuando se sospeche que es artificial.",
+          "fuente": "RD 3/2023, anexo VI, parte B.3 y parte C.1.b)"
+        }
+      ]
+    }
+  ]
+}
