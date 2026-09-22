@@ -65,6 +65,8 @@ export type TipoEsquema =
   | 'alcalinidad-valoracion'
   | 'dbo-frente-a-dqo'
   | 'solidos-del-agua'
+  | 'nitrogeno-total-fracciones'
+  | 'nca-metales-dureza'
 
 export type TipoMaterial =
   | 'matraz-aforado'

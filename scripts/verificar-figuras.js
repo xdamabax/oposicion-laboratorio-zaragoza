@@ -472,6 +472,40 @@ function medir(sabotaje, ROJO) {
     t.textContent = t.textContent.replace('550', '95')
   }
 
+  if (sabotaje === 44) {
+    const svg = porClave('nitrogeno-total-fracciones')
+    // el corchete de Kjeldahl, estirado hasta tragarse el nitrito
+    const c = pieza(svg, 'corchete-kjeldahl')
+    const nit = pieza(svg, 'tramo-nitrito')
+    const hasta = num(nit, 'x') + num(nit, 'width')
+    c.setAttribute('d', c.getAttribute('d').replace(/H[\d.]+/, 'H' + hasta.toFixed(1)))
+  }
+  if (sabotaje === 45) {
+    const svg = porClave('nitrogeno-total-fracciones')
+    // el corchete del TOTAL, encogido hasta donde llega el Kjeldahl
+    const c = pieza(svg, 'corchete-total')
+    const am = pieza(svg, 'tramo-amoniacal')
+    const hasta = num(am, 'x') + num(am, 'width')
+    c.setAttribute('d', c.getAttribute('d').replace(/H[\d.]+/, 'H' + hasta.toFixed(1)))
+  }
+  if (sabotaje === 46) {
+    const svg = porClave('nca-metales-dureza')
+    // el ultimo escalon del cadmio, hundido: la NCA bajaria al endurecerse el agua
+    const c = pieza(svg, 'serie-cadmio')
+    const pts = puntos(c)
+    const corte = pts[Math.floor(pts.length * 0.85)][0]
+    c.setAttribute(
+      'd',
+      pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${x > corte ? (y + 24).toFixed(1) : y}`).join(' '),
+    )
+  }
+  if (sabotaje === 47) {
+    const svg = porClave('nca-metales-dureza')
+    // el cadmio entero, subido por encima del cobre
+    const c = pieza(svg, 'serie-cadmio')
+    c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${(y - 90).toFixed(1)}`).join(' '))
+  }
+
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
   control('Catálogo · todos los esquemas se ven a tamaño natural', () => {
@@ -1401,6 +1435,112 @@ function medir(sabotaje, ROJO) {
     return `secado ${seca} °C < calcinación ${calcina} °C`
   })
 
+
+  /*
+   * Las fracciones del nitrogeno. El examen ofrece «metodo Kjeldahl» como
+   * respuesta al fosforo TRES veces, y quien no tenga clara la diferencia cae.
+   * El dibujo afirma que Kjeldahl NO es el total, y aqui se comprueba midiendo
+   * hasta donde llega cada corchete sobre los tramos que dice abarcar.
+   */
+  const tramoDe = (svg, nombre) => {
+    const r = pieza(svg, 'tramo-' + nombre)
+    return { ini: num(r, 'x'), fin: num(r, 'x') + num(r, 'width') }
+  }
+  const abarca = (svg, nombre) => {
+    const c = pieza(svg, nombre).getBBox()
+    return { ini: c.x, fin: c.x + c.width }
+  }
+
+  control('Nitrógeno · el corchete de KJELDAHL llega al amoniacal y NO MÁS', () => {
+    const svg = porClave('nitrogeno-total-fracciones')
+    const k = abarca(svg, 'corchete-kjeldahl')
+    const org = tramoDe(svg, 'organico')
+    const am = tramoDe(svg, 'amoniacal')
+    const nit = tramoDe(svg, 'nitrito')
+    if (Math.abs(k.ini - org.ini) > 2) {
+      throw new Error(`el corchete arranca en x=${k.ini.toFixed(0)} y el N orgánico en x=${org.ini.toFixed(0)}`)
+    }
+    if (Math.abs(k.fin - am.fin) > 2) {
+      throw new Error(
+        `el corchete de Kjeldahl acaba en x=${k.fin.toFixed(0)} y el N amoniacal en ` +
+          `x=${am.fin.toFixed(0)}: Kjeldahl es orgánico MÁS amoniacal, ni más ni menos`,
+      )
+    }
+    if (k.fin >= nit.fin) {
+      throw new Error(
+        `el corchete de Kjeldahl llega a x=${k.fin.toFixed(0)} y se traga el N nitrito, que acaba ` +
+          `en x=${nit.fin.toFixed(0)}: el nitrito y el nitrato quedan FUERA del Kjeldahl`,
+      )
+    }
+    return `Kjeldahl [${k.ini.toFixed(0)}, ${k.fin.toFixed(0)}] = orgánico + amoniacal, sin tocar el nitrito`
+  })
+
+  control('Nitrógeno · el corchete del TOTAL cubre los cuatro tramos', () => {
+    const svg = porClave('nitrogeno-total-fracciones')
+    const t = abarca(svg, 'corchete-total')
+    const k = abarca(svg, 'corchete-kjeldahl')
+    const org = tramoDe(svg, 'organico')
+    const nitrato = tramoDe(svg, 'nitrato')
+    if (Math.abs(t.ini - org.ini) > 2 || Math.abs(t.fin - nitrato.fin) > 2) {
+      throw new Error(
+        `el corchete del total ocupa [${t.ini.toFixed(0)}, ${t.fin.toFixed(0)}] y los cuatro tramos ` +
+          `van de ${org.ini.toFixed(0)} a ${nitrato.fin.toFixed(0)}`,
+      )
+    }
+    if (!(t.fin - t.ini > k.fin - k.ini + 10)) {
+      throw new Error(
+        `el total mide ${(t.fin - t.ini).toFixed(0)} px y el Kjeldahl ${(k.fin - k.ini).toFixed(0)}: ` +
+          `el total tiene que ser CLARAMENTE mayor, que es justo lo que el dibujo enseña`,
+      )
+    }
+    return `total ${(t.fin - t.ini).toFixed(0)} px > Kjeldahl ${(k.fin - k.ini).toFixed(0)} px`
+  })
+
+  /*
+   * La NCA de los metales frente a la dureza. El RD 817/2015 no da un numero
+   * por metal: da un escalon por clase de dureza, y los escalones SUBEN. El
+   * dibujo lo afirma para tres metales a la vez y aqui se comprueba sobre el
+   * trazado muestreado, no sobre los rotulos.
+   */
+  const METALES = ['zinc', 'cobre', 'cadmio']
+
+  control('NCA · las tres series SUBEN con la dureza: ninguna baja', () => {
+    const svg = porClave('nca-metales-dureza')
+    const partes = []
+    for (const m of METALES) {
+      const pts = puntos(pieza(svg, 'serie-' + m))
+      for (let i = 1; i < pts.length; i++) {
+        // la y crece HACIA ABAJO: que la NCA suba es que la y no crezca
+        if (pts[i][1] > pts[i - 1][1] + 0.2) {
+          throw new Error(
+            `la serie del ${m} baja entre x=${pts[i - 1][0].toFixed(0)} y x=${pts[i][0].toFixed(0)}: ` +
+              `la NCA no puede AFLOJARSE al ablandarse el agua, es al revés`,
+          )
+        }
+      }
+      partes.push(`${m} sube ${(pts[0][1] - pts[pts.length - 1][1]).toFixed(0)} px`)
+    }
+    return partes.join(' · ')
+  })
+
+  control('NCA · a cualquier dureza, el zinc va por encima del cobre y el cobre del cadmio', () => {
+    const svg = porClave('nca-metales-dureza')
+    const series = METALES.map((m) => puntos(pieza(svg, 'serie-' + m)))
+    const n = Math.min(...series.map((p) => p.length))
+    for (let i = 0; i < n; i++) {
+      const [zn, cu, cd] = series.map((p) => p[i][1])
+      // y mas pequeña = valor mas alto
+      if (!(zn < cu && cu < cd)) {
+        throw new Error(
+          `en x=${series[0][i][0].toFixed(0)} las alturas son zinc y=${zn.toFixed(0)}, ` +
+            `cobre y=${cu.toFixed(0)} y cadmio y=${cd.toFixed(0)}: el cadmio es el metal con la NCA ` +
+            `MÁS ESTRICTA de los tres, y el zinc el más permisivo`,
+        )
+      }
+    }
+    return `${n} puntos comparados: zinc > cobre > cadmio en todos`
+  })
+
   return resultados
 }
 
@@ -1450,6 +1590,10 @@ const SABOTAJES = {
   41: 'la recta de la DQO, bajada por debajo de la DBO última',
   42: 'la caja de los sólidos disueltos, descolgada un nivel',
   43: 'la temperatura de calcinación, cambiada a 95 °C',
+  44: 'el corchete del Kjeldahl, estirado hasta tragarse el nitrito',
+  45: 'el corchete del nitrógeno total, encogido al tamaño del Kjeldahl',
+  46: 'el último escalón del cadmio, hundido',
+  47: 'la serie del cadmio, subida por encima del cobre',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1503,6 +1647,10 @@ const CONTROL_DE = {
   41: [39],
   42: [40],
   43: [41],
+  44: [42],
+  45: [43],
+  46: [44],
+  47: [45],
 }
 
 async function main() {

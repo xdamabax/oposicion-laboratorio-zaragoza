@@ -39,6 +39,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'alcalinidad-valoracion': 'Valoración de la alcalinidad: los dos puntos finales',
   'dbo-frente-a-dqo': 'Curva de la DBO frente a la DQO',
   'solidos-del-agua': 'Los sólidos de un agua, separados por filtración y por calcinación',
+  'nitrogeno-total-fracciones': 'Las fracciones del nitrógeno: Kjeldahl no es el total',
+  'nca-metales-dureza': 'La NCA de los metales sube con la dureza del agua',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -72,6 +74,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'alcalinidad-valoracion': { ancho: 490, alto: 282 },
   'dbo-frente-a-dqo': { ancho: 510, alto: 290 },
   'solidos-del-agua': { ancho: 560, alto: 300 },
+  'nitrogeno-total-fracciones': { ancho: 540, alto: 268 },
+  'nca-metales-dureza': { ancho: 530, alto: 292 },
 }
 
 const AZUL = '#9ecbe8'
@@ -2988,6 +2992,237 @@ function SolidosDelAgua() {
   )
 }
 
+
+/* ---------- Tema 35: nitrogeno, fosforo y metales ---------- */
+
+/**
+ * Las fracciones del nitrogeno.
+ *
+ * Lo que el dibujo AFIRMA, y la bateria comprueba, es lo que el examen usa
+ * como distractor tres veces: el nitrogeno KJELDAHL no es el nitrogeno TOTAL.
+ * Kjeldahl solo llega al organico y al amoniacal; el total anade ademas el
+ * nitrito y el nitrato, tal como los define el RD 509/1996 en la nota 2 de su
+ * cuadro 2.
+ *
+ * Los tramos no se colocan a mano: se declaran como proporciones y las
+ * anchuras se CALCULAN, de modo que los dos corchetes abarcan exactamente los
+ * tramos que les tocan.
+ */
+function NitrogenoTotalFracciones() {
+  const X0 = 40
+  const ANCHO = 448
+  const Y = 74
+  const ALTO = 40
+  /** Peso relativo de cada fraccion; el reparto es ilustrativo, no un dato. */
+  const TRAMOS = [
+    { clave: 'organico', titulo: 'N orgánico', peso: 0.34, tono: 0.62 },
+    { clave: 'amoniacal', titulo: 'N amoniacal', peso: 0.3, tono: 0.44 },
+    { clave: 'nitrito', titulo: 'N nitrito', peso: 0.12, tono: 0.26 },
+    { clave: 'nitrato', titulo: 'N nitrato', peso: 0.24, tono: 0.12 },
+  ]
+  let x = X0
+  const cajas = TRAMOS.map((tr) => {
+    const w = tr.peso * ANCHO
+    const caja = { ...tr, x, w }
+    x += w
+    return caja
+  })
+  /** Hasta donde llega el Kjeldahl: organico + amoniacal, calculado. */
+  const finKjeldahl = cajas[1].x + cajas[1].w
+  const finTotal = cajas[3].x + cajas[3].w
+
+  const corchete = (pieza: string, x1: number, x2: number, y: number, rotulo: string, color: string) => {
+    const d = ['M', x1, ' ', y + 8, ' V', y, ' H', x2, ' V', y + 8].join('')
+    return (
+      <g key={pieza}>
+        <path data-pieza={pieza} d={d} fill="none" stroke={color} strokeWidth="1.6" />
+        <text x={(x1 + x2) / 2} y={y - 5} fontSize="9" textAnchor="middle" fontWeight="bold" fill={color}>
+          {rotulo}
+        </text>
+      </g>
+    )
+  }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {cajas.map((c) => (
+        <g key={c.clave}>
+          <rect
+            data-pieza={'tramo-' + c.clave}
+            x={c.x}
+            y={Y}
+            width={c.w}
+            height={ALTO}
+            fill={AZUL}
+            fillOpacity={c.tono}
+            stroke="currentColor"
+            strokeWidth="1.2"
+          />
+          <text x={c.x + c.w / 2} y={Y + 24} fontSize="8.5" textAnchor="middle" fill="currentColor">
+            {c.titulo}
+          </text>
+        </g>
+      ))}
+
+      {corchete('corchete-kjeldahl', X0, finKjeldahl, Y - 16, 'NITRÓGENO KJELDAHL', ROJO)}
+      {corchete('corchete-total', X0, finTotal, Y + ALTO + 30, 'NITRÓGENO TOTAL', AZUL)}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="176">
+          El RD 509/1996 lo define en la nota 2 de su cuadro 2: «nitrógeno total equivalente a la suma de
+        </text>
+        <text x="8" y="189">
+          nitrógeno Kjeldahl total (N orgánico y amoniacal), nitrógeno en forma de nitrato y nitrógeno en
+        </text>
+        <text x="8" y="202">
+          forma de nitrito».
+        </text>
+        <text x="8" y="224">
+          Por eso KJELDAHL NO ES EL TOTAL: se deja fuera las formas ya oxidadas. Y por eso el examen puede
+        </text>
+        <text x="8" y="237">
+          ofrecer «método Kjeldahl» como respuesta al fósforo y colarla: es de nitrógeno, y ni siquiera de todo.
+        </text>
+        <text x="8" y="259">
+          Medirlo de una vez, sin trocear, es lo que hace la combustión oxidativa: todo acaba en óxidos de nitrógeno.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * La NCA de los metales sube con la dureza del agua.
+ *
+ * El RD 817/2015 no da UN numero por metal: da un escalon por CLASE DE DUREZA
+ * para el cadmio (anexo IV, cinco clases) y para el cobre y el zinc (anexo V,
+ * cuatro clases). Cuanto mas dura es el agua, MAS metal se tolera, porque el
+ * calcio compite con el metal y le baja la biodisponibilidad.
+ *
+ * El eje vertical es LOGARITMICO porque hay que meter en el mismo dibujo
+ * 0,08 y 500 µg/L. Los escalones se calculan de los valores, no se trazan.
+ */
+function NcaMetalesDureza() {
+  const X0 = 52
+  const ANCHO = 372
+  const BASE = 192
+  const CIMA = 44
+  /** Decadas representadas: de 0,01 a 1000 µg/L. */
+  const LOG_MIN = -2
+  const LOG_MAX = 3
+  const yDe = (v: number) => BASE - ((Math.log10(v) - LOG_MIN) / (LOG_MAX - LOG_MIN)) * (BASE - CIMA)
+  /** Dureza en mg/L CaCO3, en escala logaritmica de 5 a 400. */
+  const DUR_MIN = Math.log10(5)
+  const DUR_MAX = Math.log10(400)
+  const xDe = (d: number) => X0 + ((Math.log10(d) - DUR_MIN) / (DUR_MAX - DUR_MIN)) * ANCHO
+
+  /** [dureza a la que empieza el escalon, NCA-MA en µg/L] */
+  const SERIES = [
+    {
+      clave: 'zinc',
+      titulo: 'Zinc',
+      color: AZUL,
+      pasos: [[5, 30], [10, 200], [50, 300], [100, 500]],
+    },
+    {
+      clave: 'cobre',
+      titulo: 'Cobre',
+      color: 'currentColor',
+      pasos: [[5, 5], [10, 22], [50, 40], [100, 120]],
+    },
+    {
+      clave: 'cadmio',
+      titulo: 'Cadmio',
+      color: ROJO,
+      pasos: [[5, 0.08], [40, 0.08], [50, 0.09], [100, 0.15], [200, 0.25]],
+    },
+  ]
+
+  /** Escalera en puntos: se muestrea la funcion escalon, no se dibuja a mano. */
+  const trazo = (pasos: number[][]) => {
+    const pts: [number, number][] = []
+    for (let i = 0; i <= 160; i++) {
+      const d = Math.pow(10, DUR_MIN + (i / 160) * (DUR_MAX - DUR_MIN))
+      let v = pasos[0][1]
+      for (const [desde, valor] of pasos) if (d >= desde) v = valor
+      pts.push([xDe(d), yDe(v)])
+    }
+    return pts.map(([x, y], i) => (i ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1)).join(' ')
+  }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* rejilla de decadas */}
+      <g stroke="currentColor" strokeWidth="0.6" opacity="0.35" strokeDasharray="2 3">
+        {[0.01, 0.1, 1, 10, 100, 1000].map((v) => (
+          <line key={v} x1={X0} y1={yDe(v)} x2={X0 + ANCHO} y2={yDe(v)} />
+        ))}
+      </g>
+      <g fontSize="7.5" textAnchor="end" fill="currentColor">
+        {[0.01, 0.1, 1, 10, 100, 1000].map((v) => (
+          <text key={v} x={X0 - 4} y={yDe(v) + 3}>
+            {String(v).replace('.', ',')}
+          </text>
+        ))}
+      </g>
+
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1={CIMA - 6} x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2={X0 + ANCHO} y2={BASE} />
+      </g>
+      <text x="8" y="36" fontSize="8" fill="currentColor">
+        NCA-MA (µg/L)
+      </text>
+      <text x={X0 + ANCHO} y={BASE + 26} fontSize="8" textAnchor="end" fill="currentColor">
+        dureza del agua (mg/L de CaCO₃)
+      </text>
+
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {[10, 50, 100, 200].map((d) => (
+          <text key={d} x={xDe(d)} y={BASE + 12}>
+            {d}
+          </text>
+        ))}
+      </g>
+
+      {SERIES.map((s) => (
+        <g key={s.clave}>
+          <path
+            data-pieza={'serie-' + s.clave}
+            d={trazo(s.pasos)}
+            fill="none"
+            stroke={s.color}
+            strokeWidth="1.8"
+          />
+          <text
+            x={X0 + ANCHO + 4}
+            y={yDe(s.pasos[s.pasos.length - 1][1]) + 3}
+            fontSize="8"
+            fill={s.color}
+          >
+            {s.titulo}
+          </text>
+        </g>
+      ))}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="232">
+          Tres metales cuya norma de calidad ambiental NO es un número, sino un escalón por clase de dureza:
+        </text>
+        <text x="8" y="245">
+          el cadmio en el anexo IV (cinco clases) y el cobre y el zinc en el anexo V (cuatro).
+        </text>
+        <text x="8" y="262">
+          Cuanto más DURA es el agua, MÁS metal se tolera. No es indulgencia: el calcio y el magnesio compiten
+        </text>
+        <text x="8" y="275">
+          con el metal y le bajan la BIODISPONIBILIDAD, que es lo que de verdad hace daño al medio.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -3048,6 +3283,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <DboFrenteADqo />
     case 'solidos-del-agua':
       return <SolidosDelAgua />
+    case 'nitrogeno-total-fracciones':
+      return <NitrogenoTotalFracciones />
+    case 'nca-metales-dureza':
+      return <NcaMetalesDureza />
   }
 }
 
