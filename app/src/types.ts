@@ -67,6 +67,8 @@ export type TipoEsquema =
   | 'solidos-del-agua'
   | 'nitrogeno-total-fracciones'
   | 'nca-metales-dureza'
+  | 'envase-camara-de-aire'
+  | 'grifo-tres-objetivos'
 
 export type TipoMaterial =
   | 'matraz-aforado'

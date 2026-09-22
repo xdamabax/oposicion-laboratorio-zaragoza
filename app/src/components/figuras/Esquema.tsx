@@ -41,6 +41,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'solidos-del-agua': 'Los sólidos de un agua, separados por filtración y por calcinación',
   'nitrogeno-total-fracciones': 'Las fracciones del nitrógeno: Kjeldahl no es el total',
   'nca-metales-dureza': 'La NCA de los metales sube con la dureza del agua',
+  'envase-camara-de-aire': 'El envase de microbiología deja cámara de aire; el fisicoquímico, no',
+  'grifo-tres-objetivos': 'Los tres objetivos del muestreo en grifo',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -76,6 +78,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'solidos-del-agua': { ancho: 560, alto: 300 },
   'nitrogeno-total-fracciones': { ancho: 540, alto: 268 },
   'nca-metales-dureza': { ancho: 530, alto: 292 },
+  'envase-camara-de-aire': { ancho: 520, alto: 292 },
+  'grifo-tres-objetivos': { ancho: 570, alto: 300 },
 }
 
 const AZUL = '#9ecbe8'
@@ -3223,6 +3227,328 @@ function NcaMetalesDureza() {
   )
 }
 
+
+/* ---------- Tema 36: toma de muestras ---------- */
+
+/**
+ * Los dos envases, y lo unico que de verdad los separa.
+ *
+ * El examen lo pregunta por el volumen y por el llenado (1246 C2 #14): la
+ * muestra de MICROBIOLOGIA se toma en envase esteril, con neutralizante, y
+ * SIEMPRE dejando una camara de aire; la FISICOQUIMICA se llena por completo,
+ * sin camara. Lo dice el RD 487/2022 en su anexo VI, partes A.1 y B.1.
+ *
+ * El dibujo lo AFIRMA con geometria: el nivel del agua del frasco de la
+ * izquierda queda por DEBAJO de su boca, y el de la derecha la alcanza. Y el
+ * neutralizante esta DENTRO del primero y fuera del segundo.
+ */
+function EnvaseCamaraDeAire() {
+  const BOTE = { ancho: 96, alto: 116, cuello: 24 }
+  const bote = (x: number, y: number) => {
+    const { ancho, alto, cuello } = BOTE
+    const cx = x + ancho / 2
+    return [
+      'M' + (cx - cuello / 2) + ' ' + y,
+      'V' + (y + 16),
+      'L' + x + ' ' + (y + 34),
+      'V' + (y + alto),
+      'H' + (x + ancho),
+      'V' + (y + 34),
+      'L' + (cx + cuello / 2) + ' ' + (y + 16),
+      'V' + y,
+      'Z',
+    ].join(' ')
+  }
+
+  const X1 = 48
+  const X2 = 300
+  const Y = 56
+  /** La boca del frasco: hasta donde PODRIA llegar el agua. */
+  const BOCA = Y + 34
+  /** Microbiologia: el agua se queda por debajo. Fisicoquimica: la alcanza. */
+  const NIVEL_MICRO = BOCA + 26
+  const NIVEL_FQ = BOCA
+
+  const agua = (x: number, nivel: number) => (
+    <rect
+      x={x + 1}
+      y={nivel}
+      width={BOTE.ancho - 2}
+      height={Y + BOTE.alto - nivel - 1}
+      fill={AZUL}
+      fillOpacity="0.7"
+    />
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* --- microbiologia --- */}
+      <text x={X1 + BOTE.ancho / 2} y="34" fontSize="9" textAnchor="middle" fontWeight="bold" fill={ROJO}>
+        MICROBIOLOGÍA
+      </text>
+      {agua(X1, NIVEL_MICRO)}
+      <path d={bote(X1, Y)} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+      <line
+        data-pieza="nivel-micro"
+        x1={X1}
+        y1={NIVEL_MICRO}
+        x2={X1 + BOTE.ancho}
+        y2={NIVEL_MICRO}
+        stroke={AZUL}
+        strokeWidth="2"
+      />
+      <line
+        data-pieza="boca-micro"
+        x1={X1}
+        y1={BOCA}
+        x2={X1 + BOTE.ancho}
+        y2={BOCA}
+        stroke="currentColor"
+        strokeWidth="0.8"
+        strokeDasharray="3 3"
+      />
+      <g stroke={ROJO} strokeWidth="1.2">
+        <line x1={X1 + BOTE.ancho + 8} y1={BOCA} x2={X1 + BOTE.ancho + 8} y2={NIVEL_MICRO} />
+      </g>
+      <text x={X1 + BOTE.ancho + 13} y={(BOCA + NIVEL_MICRO) / 2 + 3} fontSize="8.5" fontWeight="bold" fill={ROJO}>
+        cámara de aire
+      </text>
+      <circle
+        data-pieza="neutralizante"
+        cx={X1 + BOTE.ancho / 2}
+        cy={Y + BOTE.alto - 18}
+        r="9"
+        fill={ROJO}
+        fillOpacity="0.85"
+      />
+      <text x={X1 + BOTE.ancho / 2} y="196" fontSize="8" textAnchor="middle" fill={ROJO}>
+        tiosulfato o neutralizante
+      </text>
+      <text x={X1 + BOTE.ancho / 2} y="207" fontSize="8" textAnchor="middle" fill={ROJO}>
+        del biocida
+      </text>
+      <text x={X1 + BOTE.ancho / 2} y="221" fontSize="8" textAnchor="middle" fill="currentColor">
+        envase ESTÉRIL
+      </text>
+
+      {/* --- fisicoquimica --- */}
+      <text x={X2 + BOTE.ancho / 2} y="34" fontSize="9" textAnchor="middle" fontWeight="bold" fill={AZUL}>
+        FISICOQUÍMICA y COV
+      </text>
+      {agua(X2, NIVEL_FQ)}
+      <path d={bote(X2, Y)} fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" />
+      <line
+        data-pieza="nivel-fq"
+        x1={X2}
+        y1={NIVEL_FQ}
+        x2={X2 + BOTE.ancho}
+        y2={NIVEL_FQ}
+        stroke={AZUL}
+        strokeWidth="2"
+      />
+      <line
+        data-pieza="boca-fq"
+        x1={X2}
+        y1={BOCA}
+        x2={X2 + BOTE.ancho}
+        y2={BOCA}
+        stroke="currentColor"
+        strokeWidth="0.8"
+        strokeDasharray="3 3"
+      />
+      <text x={X2 + BOTE.ancho + 10} y={BOCA + 3} fontSize="8.5" fontWeight="bold" fill={AZUL}>
+        lleno al ras
+      </text>
+      <text x={X2 + BOTE.ancho / 2} y="196" fontSize="8" textAnchor="middle" fill={AZUL}>
+        sin cámara de aire:
+      </text>
+      <text x={X2 + BOTE.ancho / 2} y="207" fontSize="8" textAnchor="middle" fill={AZUL}>
+        lo volátil se escaparía
+      </text>
+      <text x={X2 + BOTE.ancho / 2} y="221" fontSize="8" textAnchor="middle" fill="currentColor">
+        envase LIMPIO
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="248">
+          RD 487/2022, anexo VI: en microbiología «siempre debe dejarse una pequeña cámara de aire sobre el
+        </text>
+        <text x="8" y="261">
+          nivel del agua»; en los ensayos químicos «el recipiente se debe llenar completamente y cerrar de
+        </text>
+        <text x="8" y="274">
+          forma que no quede una cámara de aire por encima de la muestra».
+        </text>
+        <text x="8" y="287">
+          Una sirve para homogeneizar antes de sembrar; la otra, para que no se pierda nada por evaporación.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Los tres objetivos del muestreo en grifo (UNE-EN ISO 19458).
+ *
+ * El RD 3/2023 no dice "tomese una muestra": dice que el muestreo
+ * microbiologico en el grifo del usuario se haga "con objetivo b)". Y los tres
+ * objetivos llevan a TRES procedimientos distintos, que es lo que el dibujo
+ * afirma:
+ *
+ *   a) la RED   -> se flamea el grifo y se deja correr hasta temperatura estable
+ *   b) el GRIFO -> se quita la alcachofa, se desinfecta y se corre lo minimo
+ *   c) lo que se BEBE -> ni se desinfecta ni se quita nada
+ *
+ * Y el dibujo tiene que poder demostrar cual senala el RD y donde sigue puesta
+ * la alcachofa.
+ */
+function GrifoTresObjetivos() {
+  const PANELES = [
+    {
+      clave: 'a',
+      titulo: 'a) la RED',
+      pie: ['grifo próximo al conducto', 'principal, FLAMEADO, y correr', 'hasta temperatura constante'],
+      accesorio: false,
+    },
+    {
+      clave: 'b',
+      titulo: 'b) el GRIFO',
+      pie: ['se RETIRA la alcachofa, se', 'desinfecta y se deja correr', 'lo mínimo'],
+      accesorio: false,
+    },
+    {
+      clave: 'c',
+      titulo: 'c) lo que se BEBE',
+      pie: ['NI se desinfecta NI se retira', 'nada: se busca justo lo que', 'llega al consumidor'],
+      accesorio: true,
+    },
+  ]
+  const ANCHO = 176
+  const X0 = 6
+  const Y = 44
+  const ALTO = 128
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {PANELES.map((p, i) => {
+        const x = X0 + i * (ANCHO + 4)
+        const cx = x + ANCHO / 2
+        const esB = p.clave === 'b'
+        return (
+          <g key={p.clave}>
+            <rect
+              data-pieza={'panel-' + p.clave}
+              x={x}
+              y={Y}
+              width={ANCHO}
+              height={ALTO}
+              rx="4"
+              fill={esB ? AZUL : 'none'}
+              fillOpacity={esB ? 0.18 : 0}
+              stroke="currentColor"
+              strokeWidth="1"
+              strokeOpacity="0.5"
+            />
+            <text
+              data-pieza={'titulo-' + p.clave}
+              x={cx}
+              y={Y + 16}
+              fontSize="9"
+              textAnchor="middle"
+              fontWeight="bold"
+              fill="currentColor"
+            >
+              {p.titulo}
+            </text>
+
+            {/* el grifo */}
+            <g stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round">
+              <path d={'M' + (cx - 34) + ' ' + (Y + 40) + ' h22 v-12'} />
+              <path d={'M' + (cx - 12) + ' ' + (Y + 28) + ' h26'} />
+              <path d={'M' + (cx + 14) + ' ' + (Y + 28) + ' v22'} />
+            </g>
+            {p.accesorio ? (
+              <rect
+                data-pieza={'alcachofa-' + p.clave}
+                x={cx + 8}
+                y={Y + 50}
+                width="12"
+                height="7"
+                rx="2"
+                fill={ROJO}
+                fillOpacity="0.85"
+                stroke="currentColor"
+                strokeWidth="0.8"
+              />
+            ) : null}
+            {/* el chorro */}
+            <line
+              x1={cx + 14}
+              y1={Y + (p.accesorio ? 58 : 50)}
+              x2={cx + 14}
+              y2={Y + 78}
+              stroke={AZUL}
+              strokeWidth="3"
+            />
+
+            <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+              {p.pie.map((linea, j) => (
+                <text key={j} x={cx} y={Y + 94 + j * 11}>
+                  {linea}
+                </text>
+              ))}
+            </g>
+          </g>
+        )
+      })}
+
+      {/* la marca del real decreto, sobre el objetivo que elige */}
+      <g>
+        <line
+          data-pieza="marca-rd"
+          x1={X0 + (ANCHO + 4) + ANCHO / 2}
+          y1="38"
+          x2={X0 + (ANCHO + 4) + ANCHO / 2}
+          y2="26"
+          stroke={ROJO}
+          strokeWidth="1.6"
+        />
+        <text
+          x={X0 + (ANCHO + 4) + ANCHO / 2}
+          y="21"
+          fontSize="8.5"
+          textAnchor="middle"
+          fontWeight="bold"
+          fill={ROJO}
+        >
+          el que exige el RD 3/2023
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="196">
+          El anexo III del RD 3/2023 no dice «tómese una muestra»: dice que el muestreo microbiológico en el
+        </text>
+        <text x="8" y="209">
+          grifo del usuario se haga con arreglo a la UNE-EN ISO 19458 «con objetivo b)».
+        </text>
+        <text x="8" y="227">
+          Y esa letra decide el procedimiento entero. Con el objetivo a) se busca la red y hay que borrar el
+        </text>
+        <text x="8" y="240">
+          grifo del resultado. Con el c) se busca lo contrario: lo que de verdad sale, con su alcachofa sucia
+        </text>
+        <text x="8" y="253">
+          incluida, y por eso es el que se usa cuando se investiga un brote.
+        </text>
+        <text x="8" y="271">
+          Tres objetivos, tres procedimientos y tres resultados distintos DEL MISMO GRIFO.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -3287,6 +3613,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <NitrogenoTotalFracciones />
     case 'nca-metales-dureza':
       return <NcaMetalesDureza />
+    case 'envase-camara-de-aire':
+      return <EnvaseCamaraDeAire />
+    case 'grifo-tres-objetivos':
+      return <GrifoTresObjetivos />
   }
 }
 

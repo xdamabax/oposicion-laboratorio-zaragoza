@@ -506,6 +506,37 @@ function medir(sabotaje, ROJO) {
     c.setAttribute('d', puntos(c).map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${(y - 90).toFixed(1)}`).join(' '))
   }
 
+  if (sabotaje === 48) {
+    const svg = porClave('envase-camara-de-aire')
+    // el frasco de microbiologia, lleno hasta la boca: adios camara de aire
+    const n = pieza(svg, 'nivel-micro')
+    const boca = num(pieza(svg, 'boca-micro'), 'y1')
+    n.setAttribute('y1', boca)
+    n.setAttribute('y2', boca)
+  }
+  if (sabotaje === 49) {
+    const svg = porClave('envase-camara-de-aire')
+    // el neutralizante, echado en el envase fisicoquimico
+    const c = pieza(svg, 'neutralizante')
+    c.setAttribute('cx', num(c, 'cx') + 252)
+  }
+  if (sabotaje === 50) {
+    const svg = porClave('grifo-tres-objetivos')
+    // los dos primeros objetivos, intercambiados
+    const a = pieza(svg, 'titulo-a')
+    const b = pieza(svg, 'titulo-b')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
+  if (sabotaje === 51) {
+    const svg = porClave('grifo-tres-objetivos')
+    // la marca del real decreto, corrida al tercer objetivo
+    const m = pieza(svg, 'marca-rd')
+    m.setAttribute('x1', num(m, 'x1') + 180)
+    m.setAttribute('x2', num(m, 'x2') + 180)
+  }
+
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
   control('Catálogo · todos los esquemas se ven a tamaño natural', () => {
@@ -1541,6 +1572,97 @@ function medir(sabotaje, ROJO) {
     return `${n} puntos comparados: zinc > cobre > cadmio en todos`
   })
 
+
+  /*
+   * Los dos envases. El RD 487/2022 dice una cosa y la contraria segun el
+   * ensayo: en microbiologia "siempre debe dejarse una pequeña camara de aire
+   * sobre el nivel del agua"; en los quimicos "el recipiente se debe llenar
+   * completamente". El dibujo lo afirma con el nivel del agua, y aqui se mide.
+   */
+  control('Envases · microbiología deja CÁMARA DE AIRE y fisicoquímica se llena al ras', () => {
+    const svg = porClave('envase-camara-de-aire')
+    const y = (nombre) => num(pieza(svg, nombre), 'y1')
+    const camara = y('nivel-micro') - y('boca-micro')
+    // la y crece HACIA ABAJO: que quede camara es que el nivel esté por debajo de la boca
+    if (!(camara > 8)) {
+      throw new Error(
+        `el agua de microbiología llega a y=${y('nivel-micro').toFixed(0)} y la boca está en ` +
+          `y=${y('boca-micro').toFixed(0)}: solo ${camara.toFixed(0)} px de cámara, y el envase ` +
+          `microbiológico SIEMPRE tiene que dejarla`,
+      )
+    }
+    const raso = Math.abs(y('nivel-fq') - y('boca-fq'))
+    if (!(raso < 3)) {
+      throw new Error(
+        `el envase fisicoquímico deja ${raso.toFixed(0)} px entre el agua y la boca: tiene que ` +
+          `llenarse COMPLETAMENTE, o lo volátil se escapa a esa cámara`,
+      )
+    }
+    return `microbiología ${camara.toFixed(0)} px de cámara · fisicoquímica al ras (${raso.toFixed(0)} px)`
+  })
+
+  control('Envases · el neutralizante va DENTRO del de microbiología, y solo de ese', () => {
+    const svg = porClave('envase-camara-de-aire')
+    const n = pieza(svg, 'neutralizante').getBBox()
+    const cx = n.x + n.width / 2
+    const micro = pieza(svg, 'nivel-micro')
+    const fq = pieza(svg, 'nivel-fq')
+    const dentro = (l) => cx >= num(l, 'x1') && cx <= num(l, 'x2')
+    if (!dentro(micro)) {
+      throw new Error(
+        `el neutralizante está en x=${cx.toFixed(0)} y el envase de microbiología ocupa ` +
+          `[${num(micro, 'x1')}, ${num(micro, 'x2')}]: el tiosulfato va en ESE envase`,
+      )
+    }
+    if (dentro(fq)) {
+      throw new Error(
+        `el neutralizante ha caído dentro del envase fisicoquímico ([${num(fq, 'x1')}, ` +
+          `${num(fq, 'x2')}]): ahí no va, y falsearía el análisis`,
+      )
+    }
+    return `neutralizante@${cx.toFixed(0)} dentro del envase microbiológico y fuera del otro`
+  })
+
+  /*
+   * Los tres objetivos del muestreo en grifo. El RD 3/2023 elige uno por su
+   * letra -"con objetivo b)"- y la letra decide el procedimiento entero. El
+   * dibujo tiene que poder demostrar cual senala y donde sigue la alcachofa.
+   */
+  control('Grifo · los tres objetivos van en orden: la RED, el GRIFO, lo que se BEBE', () =>
+    enOrden(porClave('grifo-tres-objetivos'), ['a) la RED', 'b) el GRIFO', 'c) lo que se BEBE']),
+  )
+
+  control('Grifo · el RD señala el objetivo b, y solo el c conserva la alcachofa', () => {
+    const svg = porClave('grifo-tres-objetivos')
+    const caja = (nombre) => {
+      const r = pieza(svg, nombre)
+      return { ini: num(r, 'x'), fin: num(r, 'x') + num(r, 'width') }
+    }
+    const marca = num(pieza(svg, 'marca-rd'), 'x1')
+    const b = caja('panel-b')
+    if (!(marca > b.ini && marca < b.fin)) {
+      throw new Error(
+        `la marca del RD cae en x=${marca.toFixed(0)} y el panel b ocupa ` +
+          `[${b.ini.toFixed(0)}, ${b.fin.toFixed(0)}]: el real decreto exige el objetivo B`,
+      )
+    }
+    const alc = pieza(svg, 'alcachofa-c').getBBox()
+    const acx = alc.x + alc.width / 2
+    const c = caja('panel-c')
+    if (!(acx > c.ini && acx < c.fin)) {
+      throw new Error(`la alcachofa cae en x=${acx.toFixed(0)}, fuera del panel c`)
+    }
+    for (const otro of ['a', 'b']) {
+      if (svg.querySelector('[data-pieza="alcachofa-' + otro + '"]')) {
+        throw new Error(
+          `el objetivo ${otro} también conserva la alcachofa: en los objetivos a) y b) ` +
+            `el accesorio se RETIRA, y solo en el c) se deja puesto`,
+        )
+      }
+    }
+    return `marca@${marca.toFixed(0)} sobre el panel b, y la alcachofa solo en el c@${acx.toFixed(0)}`
+  })
+
   return resultados
 }
 
@@ -1594,6 +1716,10 @@ const SABOTAJES = {
   45: 'el corchete del nitrógeno total, encogido al tamaño del Kjeldahl',
   46: 'el último escalón del cadmio, hundido',
   47: 'la serie del cadmio, subida por encima del cobre',
+  48: 'el envase de microbiología, llenado hasta la boca',
+  49: 'el neutralizante, echado en el envase fisicoquímico',
+  50: 'los objetivos a) y b) del grifo, intercambiados',
+  51: 'la marca del RD 3/2023, corrida al objetivo c)',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1651,6 +1777,10 @@ const CONTROL_DE = {
   45: [43],
   46: [44],
   47: [45],
+  48: [46],
+  49: [47],
+  50: [48],
+  51: [49],
 }
 
 async function main() {
