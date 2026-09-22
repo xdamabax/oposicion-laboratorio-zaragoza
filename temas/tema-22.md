@@ -28,7 +28,7 @@ fuentes:
 > 1. **El material volumétrico sí está normalizado**, y con mucho detalle: UNE-EN ISO 4787 para el ensayo de capacidad y el uso, y una norma por tipo de aparato (385 buretas, 1042 matraces, 648 y 835 pipetas, 4788 probetas). Todo eso se cita con número y año.
 > 2. **La química de la valoración** (punto de equivalencia, patrón primario, tipos de volumetría, Mohr / Volhard / Fajans) es **doctrina de los libros de referencia**, no norma.
 
-> **Aviso de vigencia.** La **UNE 77004:2002**, la clásica de DQO por dicromato, **está anulada desde el 18 de enero de 2024**. Aparece en casi todo el material de estudio que circula. Aquí se usa **solo** como ejemplo de valoración por retroceso; como norma de DQO hay que ir al **tema 34** y fijar allí la vigente.
+> **Aviso de vigencia.** La **UNE 77004:2002**, la clásica de DQO por dicromato, **está anulada desde el 18 de enero de 2024**. Aparece en casi todo el material de estudio que circula. Aquí se usa **solo** como ejemplo de valoración por retroceso; como norma de DQO hay que ir al **tema 34**, donde ya está fijada: **no hay sustituta UNE**, porque también se retiró su ISO gemela (la **ISO 6060:1989**). Lo vigente es el **método de referencia del RD 509/1996** —que sigue diciendo «dicromato potásico»— y la **ISO 15705:2002** para el formato de tubo sellado.
 
 > **Coordinación con el tema 21.** El vocabulario metrológico (calibrar, verificar, ajustar) se desarrolló entero en el 21 y **aquí solo se recuerda**, en el apartado 2.4. La calibración del material volumétrico **se hace pesando agua**: es una gravimetría, así que el 21 es la herramienta con la que se resuelve este apartado.
 
@@ -294,7 +294,7 @@ Se mantiene el acordado al cerrar el tema 21:
 
 ### Dudas y limitaciones declaradas
 
-1. **La UNE 77004:2002 está anulada desde el 18/01/2024**, comprobado en el catálogo de UNE. Sigue apareciendo en prácticamente todo el material de estudio y en muchos procedimientos de laboratorio. **No la doy por vigente**: se cita solo como ejemplo de valoración por retroceso. **Cuál es hoy la norma de DQO hay que fijarlo al redactar el tema 34**, y no lo he hecho aquí para no adelantar contenido sin verificar.
+1. **La UNE 77004:2002 está anulada desde el 18/01/2024**, comprobado en el catálogo de UNE. Sigue apareciendo en prácticamente todo el material de estudio y en muchos procedimientos de laboratorio. **No la doy por vigente**: se cita solo como ejemplo de valoración por retroceso. **RESUELTO EN EL TEMA 34 (22/09/2026):** la ficha de UNE muestra la anulación **sin declarar norma sustituta**, y el catálogo del ISO da por **retiradas** tanto la ISO 6060:1986 como la ISO 6060:1989. **No hay norma UNE vigente de DQO por dicromato**; lo aplicable es el método de referencia del RD 509/1996 y el *Standard Methods* SM 5220.
 
 2. **Las tolerancias de bureta proceden de un catálogo técnico de fabricante** (Brand/Blaubrand, aparatos certificados conforme a DIN EN ISO 385), **no del texto de la norma**, que es de pago. Los tres valores de la tabla (10, 25 y 50 mL en clase AS) coinciden con los que declara el fabricante para material certificado. Trátalos como muy probables, no como cita normativa.
 
@@ -302,7 +302,7 @@ Se mantiene el acordado al cerrar el tema 21:
 
 4. **De la UNE-EN ISO 4787:2021 he verificado título, edición, año y que anula la de 2010.** El rango de capacidades que cubre (0,1 a 10 000 mL) y el número mínimo de repeticiones (5 para calibración, 3 para verificación) que circulan en resúmenes **corresponden a la edición de 2010** y no he podido confirmarlos para la de 2021: por eso **no aparecen en el desarrollo**. La lista de magnitudes que entran en el cálculo sí es consistente en todas las fuentes consultadas.
 
-5. **El reactivo de fijación del método de Winkler no se afirma.** Una de las fuentes consultadas lo daba como «sulfato de magnesio», lo que parece un error de transcripción por manganeso. Como no lo he podido verificar contra el texto de la UNE-EN 25813, la tabla operativa dice solo «fijación del oxígeno *in situ*». Conviene cerrarlo al redactar el tema 34 o 35.
+5. **El reactivo de fijación del método de Winkler no se afirma.** Una de las fuentes consultadas lo daba como «sulfato de magnesio», lo que parece un error de transcripción por manganeso. Como no lo he podido verificar contra el texto de la UNE-EN 25813, la tabla operativa dice solo «fijación del oxígeno *in situ*». **RESUELTO EN EL TEMA 34 (22/09/2026): es MANGANESO.** Se fija con **sulfato de manganeso(II)** seguido de **yoduro de potasio en medio alcalino**; el Mn(II) se oxida a un óxido superior, que al acidificar libera **yodo**, valorado con **tiosulfato** e indicador de **almidón**. Lo de «sulfato de magnesio» era, en efecto, un error de transcripción: **el magnesio no tiene química redox** con la que fijar oxígeno.
 
 6. **Los apartados 2.1, 2.3 y 2.5 no tienen norma detrás.** Son doctrina de química analítica (Skoog, Harris, Vogel), que **no he podido consultar directamente**. Es contenido estable, pero conviene contrastar con el libro la lista de requisitos del patrón primario y la clasificación de los indicadores, que varía algo entre autores.
 

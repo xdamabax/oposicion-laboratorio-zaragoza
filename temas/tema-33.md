@@ -440,7 +440,7 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 
 **Cuatro valores de turbidez, no uno.** Es el parámetro con más números distintos de toda la tabla 3, y por eso es el mejor candidato a pregunta con trampa: **4,0 / 0,8 / 0,3 / 2 y 6**. Cada uno tiene su sitio, y el sitio es lo que se pregunta.
 
-**El oxígeno disuelto.** El tema 24 dejó dicho que el parámetro se desarrollaba «en el 33 (agua de consumo) y en el 34 (residuales)». Leído el anexo I entero, **el resultado es que en agua de consumo no hay parámetro de oxígeno disuelto**: no está en la parte B, ni en la C, ni en la F. La técnica —**Winkler** y **sonda**— es de los temas 22 y 24, y el parámetro, con su valor, es **del tema 34**. Se deja escrito aquí para que nadie lo busque dos veces.
+**El oxígeno disuelto.** El tema 24 dejó dicho que el parámetro se desarrollaba «en el 33 (agua de consumo) y en el 34 (residuales)». Leído el anexo I entero, **el resultado es que en agua de consumo no hay parámetro de oxígeno disuelto**: no está en la parte B, ni en la C, ni en la F. La técnica —**Winkler** y **sonda**— es de los temas 22 y 24, y el parámetro se sitúa en el **tema 34**. Se deja escrito aquí para que nadie lo busque dos veces. *(Matiz añadido al redactar el 34: allí **tampoco es un valor límite de vertido**. Su papel es doble —se mide **dentro del ensayo de la DBO**, y es un **indicador del medio receptor**—, y así queda explicado en el apartado 2.10 de aquel tema.)*
 
 ---
 

@@ -1,0 +1,1011 @@
+{
+  "tema": 34,
+  "titulo": "Análisis de aguas residuales I. Determinación de: sólidos en suspensión: Demanda Química de Oxígeno y Demanda Bioquímica de Oxígeno.",
+  "generadoDe": "temas/tema-34.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-22",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t34-f01",
+      "anverso": "¿Qué se entiende por **sólidos en suspensión** de un agua? Palabras exactas del examen.",
+      "reverso": "**«Sólidos SEPARADOS por FILTRACIÓN O CENTRIFUGACIÓN bajo condiciones específicas.»** Núcleo repetido: **1246 #20** y **1322 #37**.\n**La trampa es que las otras dos opciones también son definiciones ciertas… de otra cosa:**\n| Opción del examen | Qué es en realidad |\n| --- | --- |\n| *«Sustancias que permanecen en el agua después de filtrar la muestra»* | Los sólidos **DISUELTOS** |\n| *«Sustancias que se determinan evaporando a sequedad la muestra»* | Los sólidos **TOTALES** |\n**La palabra que decide es «separados»:** los de suspensión se separan, no se quedan ni se evaporan.",
+      "fuente": "Cuestionarios 1246 #20 y 1322 #37",
+      "etiquetas": [
+        "examen",
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f02",
+      "anverso": "¿Qué es o cómo se define la **Demanda Química de Oxígeno**? Palabras exactas del examen.",
+      "reverso": "**«La concentración másica de oxígeno equivalente a la cantidad de DICROMATO consumido por la materia DISUELTA Y EN SUSPENSIÓN, cuando una muestra de agua se trata con este oxidante.»** Núcleo repetido: **1246 #21**, **1322 #38**.\n**Cuatro piezas, y las cuatro importan:**\n1. **«Oxígeno equivalente»** → se expresa en **mg/L de O₂** aunque el oxidante no sea oxígeno.\n2. **«Dicromato»** → es lo que la separa de la oxidabilidad.\n3. **«Disuelta y en suspensión»** → por eso el método dice **«sin filtrar ni decantar»**.\n4. **«Cuando se trata con este oxidante»** → es una medida **empírica**, definida por su método.",
+      "fuente": "Cuestionarios 1246 #21 y 1322 #38",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f03",
+      "anverso": "**Dicromato o permanganato:** ¿cuál es de la DQO y cuál de la oxidabilidad?",
+      "reverso": "| Oxidante | Parámetro | Agua | Tema |\n| --- | --- | --- | --- |\n| **DICROMATO** | **DQO** | Residual | **34** |\n| **PERMANGANATO** | **Oxidabilidad** (índice de permanganato) | De consumo | **33** |\n**Es el distractor que el examinador monta dos veces:** en 1246 #21 y 1322 #38 la opción falsa es, literalmente, *«cantidad de materia orgánica que reacciona y se consume al tratar el agua residual con permanganato potásico»*.\nY en 1322 C2 #33, la falsa es **«permanganimetría»** para la DQO — la misma palabra que en 1322 C2 #22 era **correcta** para la oxidabilidad.",
+      "fuente": "Cuestionarios 1246 #21, 1322 #38 y 1322 C2 #22 y #33",
+      "etiquetas": [
+        "examen",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f04",
+      "anverso": "En un agua residual doméstica, ¿es mayor la **DQO** o la **DBO**? ¿Y por qué?",
+      "reverso": "**La DQO es MAYOR.** Es la respuesta de **1322 #40**.\n**Y tiene dos razones, no una:**\n1. **La DQO oxida químicamente TODO lo oxidable**, sea biodegradable o no. La DBO solo cuenta lo que las bacterias pueden comerse. Todo lo que mide la DBO lo mide también la DQO; **al revés, no**.\n2. **Aunque todo fuera biodegradable, a los cinco días la reacción todavía no ha terminado.** Con la constante clásica **k ≈ 0,23 día⁻¹**, a los 5 días se ha consumido en torno al **68 %** de la demanda última.\n**Por eso el orden es: DQO > DBO última > DBO₅.**",
+      "fuente": "Cuestionario 1322 #40",
+      "etiquetas": [
+        "examen",
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f05",
+      "anverso": "Mirando esta curva: ¿qué **valores del cuadro 1** le corresponden a cada nivel, y para qué sirve el cociente entre los dos?",
+      "reverso": "| Parámetro | Concentración | % mínimo de reducción |\n| --- | --- | --- |\n| **DQO** | **125 mg/L de O₂** | **75 %** |\n| **DBO₅ a 20 °C sin nitrificación** | **25 mg/L de O₂** | **70-90 %** |\n**Los dos van juntos en el cuadro 1 del anexo I del RD 509/1996, y se cumple «el valor de concentración O el porcentaje de reducción»**, no los dos.\n**Para qué sirve el cociente:** decide **si un tratamiento biológico tiene sentido**. Cuanto más se acerca a 1, más fácil le resulta a las bacterias; cuanto más bajo, más **recalcitrante** es el agua y más probable que lleve **carga industrial**.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1",
+      "etiquetas": [
+        "valores",
+        "fundamento"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "dbo-frente-a-dqo"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t34-f06",
+      "anverso": "El **cuadro 1 del anexo I del RD 509/1996**: los tres parámetros con su concentración y su reducción.",
+      "reverso": "| Parámetro | Concentración | % mínimo de reducción |\n| --- | --- | --- |\n| **DBO₅ a 20 °C sin nitrificación** | **25 mg/L O₂** | **70-90** |\n| **DQO** | **125 mg/L O₂** | **75** |\n| **Total de sólidos en suspensión** | **35 mg/L** | **90** |\n**Y tres detalles del encabezado y las notas:**\n- *«Se aplicará el valor de concentración **O** el porcentaje de reducción»* — no hacen falta los dos.\n- El porcentaje de reducción **está referido a la carga del caudal de entrada**.\n- **El requisito de los sólidos en suspensión es OPTATIVO** (nota 4).",
+      "fuente": "RD 509/1996, anexo I, cuadro 1 y sus notas",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f07",
+      "anverso": "¿Cuál es el **método de medida de referencia** de la DBO₅ según el RD 509/1996? Literal.",
+      "reverso": "**«Muestra HOMOGENEIZADA, SIN FILTRAR NI DECANTAR. Determinación antes y después de CINCO DÍAS de incubación a 20 °C ± 1 °C, en COMPLETA OSCURIDAD. Aplicación de un INHIBIDOR DE LA NITRIFICACIÓN.»**\n**De aquí sale, recortada, la respuesta de 1246 C2 #8:** *«determinación de oxígeno disuelto, antes y después de cinco días de incubación a 20 °C»*.\n**Y las tres condiciones tienen su porqué:** los **cinco días** son la convención legal; los **20 °C** porque la actividad bacteriana depende mucho de la temperatura; y la **oscuridad** para que **no haya fotosíntesis** que produzca oxígeno y falsee el balance.",
+      "fuente": "RD 509/1996, anexo I cuadro 1; cuestionario 1246 C2 #8",
+      "etiquetas": [
+        "normativa",
+        "examen"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f08",
+      "anverso": "¿Cuál es el **método de medida de referencia** de la DQO y el de los **sólidos en suspensión** según el RD 509/1996?",
+      "reverso": "**DQO:** *«Muestra homogeneizada, sin filtrar ni decantar. **DICROMATO POTÁSICO**.»*\n**Sólidos en suspensión — DOS alternativas, y por eso el examen dice «filtración o centrifugación»:**\n- *«**Filtración** de una muestra representativa a través de una membrana de filtración de **0,45 micras**. Secado a **105 °C** y pesaje.»*\n- *«**Centrifugación** de una muestra representativa (durante **cinco minutos** como mínimo, con una aceleración media de **2 800 a 3 200 g**), secado a **105 °C** y pesaje.»*\n**El examinador redacta con el BOE delante:** las respuestas de los supuestos son este cuadro, recortado.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1",
+      "etiquetas": [
+        "normativa",
+        "examen"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f09",
+      "anverso": "Mirando este árbol: ¿cuáles son las **tres definiciones** que el examen ofrece juntas, y a qué rama corresponde cada una?",
+      "reverso": "| Opción del examen | A qué rama corresponde |\n| --- | --- |\n| *«Sólidos separados por filtración o centrifugación bajo condiciones específicas»* | **La rama de la izquierda** ← **es la respuesta correcta** |\n| *«Sustancias que permanecen en el agua después de filtrar la muestra»* | **La rama de la derecha** |\n| *«Sustancias que se determinan evaporando a sequedad la muestra bajo condiciones específicas»* | **La caja de arriba** |\n**Las tres son ciertas; solo una responde a lo que preguntan.** Y el verbo lo delata: **«separados»** para la izquierda, **«permanecen»** para la derecha, **«evaporando a sequedad»** para el tronco.\nPregunta repetida en **1246 #20** y **1322 #37**.",
+      "fuente": "Cuestionarios 1246 #20 y 1322 #37",
+      "etiquetas": [
+        "examen",
+        "trampa"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "solidos-del-agua"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t34-f10",
+      "anverso": "¿Qué técnica se responde para el análisis de **sólidos en suspensión** en un agua residual?",
+      "reverso": "**GRAVIMETRÍA.** Respondida **tres veces**: **1233 C2 #6**, **1246 C2 #6** y **1322 C2 #32**.\n**Y los distractores, en las tres, son técnicas de otros parámetros:**\n- **Complexometría** → es la dureza (tema 33).\n- **Volumetría** → es la DQO, pero *tras digestión*.\n- **Electrodo selectivo**, **potenciometría**, **cromatografía iónica** → nada que ver.\n**El principio:** se filtra una **muestra homogénea** por un **filtro de fibra de vidrio**, se **seca el residuo a 103-105 °C hasta peso constante**, y **el aumento de peso del filtro es el resultado**.",
+      "fuente": "Cuestionarios 1233 C2 #6, 1246 C2 #6 y 1322 C2 #32; IDEAM M-S-LC-I018 (SM 2540 D)",
+      "etiquetas": [
+        "examen",
+        "aplicacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f11",
+      "anverso": "¿Qué técnica se responde para la **DQO** y cuál para la **DBO₅**?",
+      "reverso": "| Parámetro | Respuesta | Dónde |\n| --- | --- | --- |\n| **DQO** | **«Método de digestión ácida y volumetría»** | **1233 C2 #7**, **1246 C2 #7** |\n| **DQO** | **«Se homogeneiza la muestra y se realiza el método del dicromato»** | **1322 C2 #33** |\n| **DBO₅** | **«Método de diluciones»** | **1233 C2 #8** |\n| **DBO₅** | **«Determinación de oxígeno disuelto, antes y después de cinco días de incubación a 20 °C»** | **1246 C2 #8** |\n| **DBO₅** | **«Se realiza el método de las diluciones LO ANTES POSIBLE, una vez recibida la muestra»** | **1322 C2 #34** |\n**Tres convocatorias, tres formas de decir lo mismo.** Y en 1322 la respuesta correcta incorpora además **la urgencia**: la DBO no espera.",
+      "fuente": "Cuestionarios 1233 C2 #7-8, 1246 C2 #7-8 y 1322 C2 #33-34",
+      "etiquetas": [
+        "examen",
+        "aplicacion"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f12",
+      "anverso": "¿Qué es un **habitante equivalente** y por qué importa en este tema?",
+      "reverso": "**«1 h-e: la carga orgánica biodegradable con una demanda bioquímica de oxígeno de cinco días (DBO₅) de 60 GRAMOS DE OXÍGENO POR DÍA.»** Artículo 2.f del RD-ley 11/1995.\n**Importa porque el habitante equivalente está definido EN DBO₅.** La unidad con la que se dimensiona una depuradora entera, con la que se clasifican las aglomeraciones urbanas y con la que la ley fija sus plazos **es una unidad de demanda bioquímica de oxígeno**.\nEs el mejor argumento de por qué este parámetro no es un número más.",
+      "fuente": "RD-ley 11/1995, artículo 2.f",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f13",
+      "anverso": "¿Cómo define el RD-ley 11/1995 el **tratamiento primario** y el **secundario**?",
+      "reverso": "**Tratamiento primario:** proceso **físico o físico-químico** que incluya la **sedimentación de sólidos en suspensión**, u otros, en el que:\n- la **DBO₅** de entrada se reduzca **al menos un 20 %**, y\n- el **total de sólidos en suspensión** se reduzca **al menos un 50 %**.\n**Tratamiento secundario:** proceso que incluya un **tratamiento BIOLÓGICO con sedimentación secundaria** u otro, con los requisitos que se fijen reglamentariamente — que son los del **cuadro 1**.\n**Tratamiento adecuado:** cualquiera tras el cual **las aguas receptoras cumplan los objetivos de calidad**.\n**Fíjate:** el primario se define **con números de nuestros dos parámetros**; el secundario, remitiendo al cuadro 1.",
+      "fuente": "RD-ley 11/1995, artículo 2, letras g, h e i",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f14",
+      "anverso": "Los **dos criterios de validez** del ensayo de la DBO. ¿Y para qué sirven realmente las diluciones?",
+      "reverso": "Para que el dato valga:\n- El **oxígeno consumido (agotamiento) debe ser ≥ 2 mg/L**, para que la medida sea significativa.\n- El **oxígeno disuelto residual debe ser ≥ 1 mg/L** tras los cinco días, para que las bacterias **no se hayan quedado sin oxígeno a mitad del ensayo**.\n**Y ahí está la razón de las diluciones:** no se diluye por capricho, se diluye **para caer dentro de esa ventana**. Por eso se montan **varias diluciones en paralelo** y se elige la que cumple las dos condiciones a la vez.\nSi todas agotan menos de 2 mg/L, se toma la botella con **más volumen de muestra**.",
+      "fuente": "IDEAM SLC-I025 v04 (SM 5210 B)",
+      "etiquetas": [
+        "concepto",
+        "calculo"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f15",
+      "anverso": "¿Por qué hay que añadir un **inhibidor de la nitrificación** en la DBO, y cómo se llama?",
+      "reverso": "**Porque si no, la DBO sale INFLADA.** Pasados unos días, las bacterias **nitrificantes** empiezan a oxidar el **amonio a nitrito y nitrato**, y ese consumo de oxígeno **no tiene nada que ver con la materia orgánica** que se quiere medir.\n**El inhibidor normalizado es la ALILTIOUREA (ATU).** Está en el título mismo de la norma: **UNE-EN ISO 5815-1:2020**, *«Método por dilución y siembra con adición de aliltiourea»*.\n**Y por eso el parámetro se llama, en el cuadro 1, «DBO₅ a 20 °C SIN NITRIFICACIÓN».** Ese «sin nitrificación» no es un adorno: es la instrucción.",
+      "fuente": "RD 509/1996, anexo I cuadro 1; UNE-EN ISO 5815-1:2020",
+      "etiquetas": [
+        "fundamento",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f16",
+      "anverso": "¿Cuál es hoy la **norma vigente de DQO**? (La pregunta que quedó abierta en el tema 22.)",
+      "reverso": "**No hay norma UNE vigente de DQO por dicromato.** El rastro:\n| Norma | Estado |\n| --- | --- |\n| **ISO 6060:1986** y **ISO 6060:1989** | **RETIRADAS (95.99)** |\n| **UNE 77004:2002** *(idéntica a la ISO 6060:1989)* | **ANULADA el 18/01/2024**, y su ficha **no declara sustituta** |\n| **ISO 15705:2002**, *tubo sellado a pequeña escala (ST-DQO)* | **VIGENTE** |\n**Qué se aplica entonces:** el **método de referencia del RD 509/1996**, que sigue diciendo «dicromato potásico», y el ***Standard Methods* SM 5220**, que es el que el reglamento aragonés impone por su nombre.\n**Decir hoy «el método oficial de DQO es la UNE 77004» es un error**, y muy extendido.",
+      "fuente": "Buscador de UNE, ficha N0026986; catálogo ISO/TC 147/SC 2",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f17",
+      "anverso": "En la DQO: ¿qué papel tienen el **sulfato de plata** y el **sulfato mercúrico**?",
+      "reverso": "| Reactivo | Papel |\n| --- | --- |\n| **Ag₂SO₄, sulfato de plata** | **CATALIZADOR.** Sin él, los **compuestos alifáticos de cadena lineal** se oxidan mal. Va disuelto en el ácido sulfúrico |\n| **HgSO₄, sulfato mercúrico** | **ENMASCARANTE del CLORURO.** Lo acompleja antes de la digestión — 1 g por cada 50 mL de muestra |\n**No se confunden: la plata ACELERA, el mercurio SECUESTRA.**\n**Y el cloruro es el interferente más común**, por partida doble: precipita el ion plata como AgCl e **inhibe la catálisis** (error por defecto), y además puede reaccionar él mismo con el dicromato y **dar resultados altos por error**.",
+      "fuente": "IDEAM SLC-I016 v04 (SM 5220 C)",
+      "etiquetas": [
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f18",
+      "anverso": "Condiciones de la digestión de la DQO por reflujo cerrado: temperatura, tiempo, valorante e indicador.",
+      "reverso": "| Paso | Condición |\n| --- | --- |\n| **Oxidante** | **Dicromato potásico** en exceso conocido, en medio **sulfúrico concentrado** |\n| **Digestión** | **150 °C durante DOS HORAS**, en tubo cerrado |\n| **Valoración** | **POR RETROCESO**, del dicromato sobrante |\n| **Valorante** | **Sulfato ferroso amoniacal (FAS, sal de Mohr)** |\n| **Indicador** | **Ferroína** |\n| **Alternativa** | **Lectura fotométrica a 600 nm** del Cr(III) formado |\n**La técnica —volumetría redox por retroceso— es del tema 22**, y esa forma de valorar es **núcleo repetido en las tres convocatorias**.\n**Grado de oxidación: 95-100 %** de la mayoría de orgánicos; **la piridina resiste**.",
+      "fuente": "IDEAM SLC-I016 v04 (SM 5220 C)",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f19",
+      "anverso": "Los **sólidos de un agua**: ¿qué dos operaciones generan todo el vocabulario?",
+      "reverso": "**Dos, y ninguna más:**\n| Operación | Qué separa |\n| --- | --- |\n| **FILTRACIÓN** | Los que **quedan** frente a los que **pasan** |\n| **CALCINACIÓN a 550 °C** | Los que **se van** frente a la **ceniza** |\n**El vocabulario completo:**\n- **Totales:** residuo al evaporar y secar a **103-105 °C**.\n- **En suspensión:** los retenidos en el filtro.\n- **Disueltos:** los que atraviesan el filtro.\n- **Volátiles:** la fracción que se pierde al calcinar. **Se toma como medida de la materia orgánica**.\n- **Fijos:** lo que queda tras calcinar; la fracción **mineral**.\n- **Sedimentables:** aparte de esa cadena. **Decantan por gravedad**, se miden en **cono Imhoff** y se expresan en **mL/L**.",
+      "fuente": "IDEAM M-S-LC-I018 (SM 2540 D); Decreto 38/2004 de Aragón, art. 16",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f20",
+      "anverso": "¿Cuántas muestras al año exige el RD 509/1996, según el tamaño de la instalación?",
+      "reverso": "| Tamaño | Muestras al año |\n| --- | --- |\n| **2 000 a 9 999 h-e** | **12 el primer año**; **4** los siguientes si se demuestra que el primero cumplió. **Si una de esas cuatro falla, 12 al año siguiente** |\n| **10 000 a 49 999 h-e** | **12** |\n| **50 000 h-e o más** | **24** |\n**Y cómo se toman** (anexo III, B.1): durante **VEINTICUATRO HORAS**, **proporcionalmente al caudal o a intervalos regulares**, en **el mismo punto claramente definido** de la salida de la instalación, y si hace falta también en la entrada.\nLas muestras del año se recogen **a intervalos regulares**.",
+      "fuente": "RD 509/1996, anexo III, apartado B",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f21",
+      "anverso": "¿Cuántas muestras pueden **no ser conformes**, y cuánto pueden desviarse?",
+      "reverso": "**Cuántas** (anexo III, C):\n| Series al año | Máximo no conformes |\n| --- | --- |\n| **4-7** | **1** |\n| **8-16** | **2** |\n| 17-28 | 3 |\n| 29-40 | 4 |\n| … | … |\n| 351-365 | 25 |\n**Cuánto pueden desviarse** (anexo III, A.2.2.º):\n- En general, **no más del 100 %** del valor paramétrico.\n- **Para el total de sólidos en suspensión, hasta el 150 %.**\n**Y además:** no se computan los valores extremos *«cuando sean consecuencia de situaciones inusuales, como las ocasionadas por lluvias intensas»*.",
+      "fuente": "RD 509/1996, anexo III, apartados A y C",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f22",
+      "anverso": "¿Qué límites de vertido **a la red de alcantarillado** se aplican en Zaragoza?",
+      "reverso": "**Decreto 38/2004 del Gobierno de Aragón**, texto refundido con el Decreto 176/2018, **artículo 16**:\n| Parámetro | Media diaria máxima | Instantánea máxima |\n| --- | --- | --- |\n| **pH** | **5,50-9,50** | **5,50-9,50** |\n| **Sólidos en suspensión** | **500 mg/L** | **1 000 mg/L** |\n| **Materiales sedimentables** | **15 mL/L** | **20 mL/L** |\n| **DBO₅** | **500 mg/L** | **1 000 mg/L** |\n| **DQO** | **1 000 mg/L** | **1 500 mg/L** |\n| Sólidos gruesos | **Ausentes** | **Ausentes** |\n**Y queda «expresamente prohibida la DILUCIÓN de aguas residuales realizada con la finalidad de satisfacer las limitaciones»** (art. 15.2). Es la trampa obvia, y está prohibida por escrito.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículos 15 y 16",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f23",
+      "anverso": "¿Qué **métodos de análisis** impone el reglamento aragonés de vertidos, y qué obligación material impone a la industria?",
+      "reverso": "**Artículo 23:** los análisis se harán conforme a los **«Métodos normalizados para el análisis de aguas potables y residuales»** — el ***Standard Methods*** de **APHA-AWWA-WPCF** — *«en cada momento se aplicará la versión traducida al español más actualizada»*.\n**Es decir: NO remite a UNE, remite al Standard Methods.** SM 2540 D para los sólidos, SM 5220 para la DQO y SM 5210 B para la DBO.\n**Artículo 24:** las industrias están obligadas a disponer de una **ARQUETA DE REGISTRO de libre acceso desde el exterior**, acondicionada para **extraer muestras y aforar caudales**.\n**Artículo 22.2:** si los máximos se refieren a un intervalo, se controla sobre **muestras compuestas** o sobre **muestras simples proporcionales al caudal**.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículos 22, 23 y 24",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f24",
+      "anverso": "¿Qué cambia la **Directiva (UE) 2024/3019**, y desde cuándo?",
+      "reverso": "**Los dos plazos, transcritos:**\n- **Artículo 33:** transposición **«a más tardar el 31 de julio de 2027»**.\n- **Artículo 32:** *«Queda derogada **con efecto a partir del 1 de agosto de 2027** la Directiva 91/271/CEE.»*\n**Conclusión práctica: hasta esa fecha lo aplicable en España sigue siendo el RD-ley 11/1995 y el RD 509/1996.**\n**Y con nuestros tres parámetros es continuista:** su anexo I, cuadro 1, **repite 25, 125 y 35 mg/L con los mismos métodos de referencia**. Los dos cambios:\n1. **Añade el CARBONO ORGÁNICO TOTAL: 37 mg/L, 75 % de reducción, norma EN 1484.**\n2. **Nota 2: los Estados miembros medirán «la DQO O BIEN el carbono orgánico total».**",
+      "fuente": "Directiva (UE) 2024/3019, artículos 32 y 33 y anexo I cuadro 1",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f25",
+      "anverso": "¿Tiene el agua residual un parámetro de **oxígeno disuelto**? ¿Dónde encaja entonces?",
+      "reverso": "**No es un parámetro de VERTIDO:** no está en el cuadro 1 del RD 509/1996 ni en la tabla del reglamento aragonés. (Y en agua de consumo tampoco existe: se comprobó en el tema 33.)\n**Su sitio es doble:**\n1. **Es el parámetro que se mide DENTRO del ensayo de la DBO**, dos veces, antes y después. Es el **parámetro instrumental** de todo este tema.\n2. **Es un indicador del estado del MEDIO RECEPTOR**, no del vertido. Un río con poco oxígeno es un río que ha recibido demasiada materia orgánica.\n**Las dos técnicas, ya estudiadas:** **Winkler** yodométrico, UNE-EN 25813 (tema 22), y **sonda electroquímica**, UNE-EN ISO 5814 (tema 24).",
+      "fuente": "RD 509/1996 anexo I (comprobación negativa); temas 22, 24 y 33",
+      "etiquetas": [
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f26",
+      "anverso": "En el método de **Winkler**, ¿con qué se FIJA el oxígeno? (La duda que quedó abierta en el tema 22.)",
+      "reverso": "**Con SULFATO DE MANGANESO(II)**, seguido de **yoduro de potasio en medio alcalino**. **No es magnesio:** el magnesio **no tiene química redox** con la que fijar oxígeno. La fuente que decía «sulfato de magnesio» era, como se sospechaba, un error de transcripción.\n**La secuencia completa:**\n1. El oxígeno **oxida el Mn(II)** a un óxido superior, que precipita. *(Eso es «fijar»: el oxígeno queda atrapado in situ.)*\n2. Al **acidificar**, ese óxido **oxida el yoduro a YODO**.\n3. El yodo se valora con **tiosulfato sódico**, con **almidón** como indicador.\n**La modificación con AZIDA elimina la interferencia de los NITRITOS** — que es justo la que aparece en las muestras incubadas para la DBO.",
+      "fuente": "Universitat de Barcelona, PNT del método de Winkler; cierra la duda 5 del tema 22",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f27",
+      "anverso": "¿Qué tres parámetros comparan **DQO, DBO₅ y oxidabilidad** por su oxidante y su tiempo?",
+      "reverso": "| | Qué mide | Oxidante | Tiempo |\n| --- | --- | --- | --- |\n| **DQO** | **Todo** lo oxidable | **Dicromato** | **2 horas** |\n| **DBO₅** | Solo lo **biodegradable**, y solo en parte | **Bacterias** | **5 días** |\n| **Oxidabilidad** | Lo **fácilmente** oxidable | **Permanganato** | **10 minutos** |\n**Y una consecuencia práctica muy preguntable:** la DQO se tiene **en dos horas** y la DBO **en cinco días**. Por eso, en el control diario de una depuradora, **se trabaja con la DQO**, y la DBO se reserva para lo que la ley exige y para calibrar la correlación entre las dos.",
+      "fuente": "Temas 33 y 34; ISO 8467:1993; IDEAM SLC-I016 y SLC-I025",
+      "etiquetas": [
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f28",
+      "anverso": "¿Qué son las **aguas residuales urbanas**, **domésticas** e **industriales** según el RD-ley 11/1995?",
+      "reverso": "- **Urbanas:** las **domésticas**, **o su MEZCLA** con **industriales** o con **aguas de escorrentía pluvial**.\n- **Domésticas:** las de zonas de vivienda y de servicios, generadas **principalmente por el metabolismo humano y las actividades domésticas**.\n- **Industriales:** las vertidas desde locales de cualquier actividad **comercial o industrial** que **no sean domésticas ni de escorrentía pluvial**.\n**La trampa está en «urbanas»:** no son «las de la ciudad». Son **las domésticas o su mezcla**, y por eso una industria conectada al alcantarillado acaba dentro del concepto.\n**Y dos más:** **aglomeración urbana** (foco que justifica recoger y conducir) y **sistema colector** (los conductos del alcantarillado municipal a la depuradora).",
+      "fuente": "RD-ley 11/1995, artículo 2, letras a a e",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f29",
+      "anverso": "¿Qué dice el RD 509/1996 sobre los vertidos de **LAGUNAJE**?",
+      "reverso": "**«Los análisis de vertidos procedentes de sistemas de depuración por LAGUNAJE se llevarán a cabo sobre muestras FILTRADAS; no obstante, la concentración de sólidos totales en suspensión en las muestras de aguas SIN FILTRAR no deberá superar los 150 mg/L.»**\n**Es una excepción perfecta para una pregunta con trampa**, porque contradice el método de referencia general —que analiza la muestra tal cual— y porque mete **un cuarto número** (150) junto a los 35 mg/L del cuadro.\n**La razón es biológica:** en un lagunaje, buena parte de los sólidos son **algas**, que forman parte del proceso y no son contaminación arrastrada.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1, párrafo final",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f30",
+      "anverso": "¿Qué son los **valores de referencia (Vr)** del anexo V del Reglamento del Dominio Público Hidráulico, y cuáles son los nuestros?",
+      "reverso": "| Contaminante | **Vr** |\n| --- | --- |\n| **DBO₅ a 20 °C sin nitrificación** | **6 mg/L de O₂** |\n| **DQO** | **30 mg/L** |\n| **Sólidos en suspensión** | **25 mg/L** |\n| Conductividad a 20 °C | 1 000 µS/cm |\n| pH | 5,5-9 |\n**CUIDADO, Y ESTE ES EL MATIZ QUE DISTINGUE UNA BUENA RESPUESTA: esos Vr NO son límites de vertido.** Son los valores con los que se calcula el **coeficiente de peligrosidad (K_PV)** del artículo 326 ter, es decir, **cuánto daño ha hecho un vertido, para ponerle precio**.\nLos tres están en el **Grupo C**, el de *«los parámetros globales de contaminación relacionados con los sólidos en suspensión y la materia orgánica»* — **el menos peligroso de los tres grupos**.",
+      "fuente": "RD 849/1986 (RDPH), anexo V, artículo 326 ter",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f31",
+      "anverso": "¿Por qué el método de referencia dice **«sin filtrar ni decantar»** para la DQO y la DBO?",
+      "reverso": "**Porque los dos parámetros tienen que contar también LA MATERIA EN SUSPENSIÓN**, no solo la disuelta.\nLa propia definición de la DQO lo dice: *«…consumido por la materia **disuelta Y EN SUSPENSIÓN**…»*. Si se filtrara la muestra, se estaría tirando parte de lo que se quiere medir.\n**Y «homogeneizada» va justo antes por la misma razón:** hay que repartir esa materia en suspensión **de manera uniforme** antes de tomar la alícuota, o el resultado dependerá de si se pipeteó del fondo o de la superficie.\n**Contrasta con los sólidos en suspensión**, donde **filtrar ES el método**. Mismo agua, operaciones opuestas.",
+      "fuente": "RD 509/1996, anexo I cuadro 1; cuestionarios 1246 #21 y 1322 C2 #33",
+      "etiquetas": [
+        "fundamento",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f32",
+      "anverso": "¿Qué norma rige hoy la **DBO** y qué anuló? ¿Y qué significa la «n» de su título?",
+      "reverso": "**UNE-EN ISO 5815-1:2020** (ISO 5815-1:2019), *«Determinación de la demanda bioquímica de oxígeno después de n días (DBOn). Parte 1: Método por dilución y siembra con adición de aliltiourea»*. **En vigor**, del **CTN 77/SC 1 Agua**, y **anuló a la UNE-EN 1899-1:1998**.\n**La parte 2** (ISO 5815-2:2003, vigente) es el **método para muestras NO diluidas**.\n**La «n» no es un descuido: es un parámetro.** La norma no es solo de cinco días. Los **cinco días son la convención legal**, no una limitación del método: se usan también la **DBO₇** —habitual en países nórdicos— y la **DBO última**.\n*(Retiradas: ISO 5815:1983, ISO 5815:1989 e ISO 5815-1:2003.)*",
+      "fuente": "Buscador de UNE, ficha N0064796; catálogo ISO/TC 147/SC 2",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f33",
+      "anverso": "¿Qué norma rige los **sólidos en suspensión**, y qué discrepancia hay entre ella y el RD 509/1996?",
+      "reverso": "**UNE-EN 872:2006** (EN 872:2005), *«Determinación de los sólidos en suspensión. Método de filtración por FILTRO DE FIBRA DE VIDRIO»*. **En vigor**, confirmada en **2022**, **anuló a la UNE-EN 872:1996**. Internacional: **ISO 11923:1997**.\n**Y aquí hay una discrepancia real, que conviene conocer:**\n| Fuente | Qué manda filtrar |\n| --- | --- |\n| **RD 509/1996** | **Membrana de 0,45 µm** |\n| **UNE-EN 872** y *Standard Methods* | **Filtro de fibra de vidrio** (poro nominal mayor) |\n**No son lo mismo y el resultado puede diferir.** El real decreto llama a lo suyo **«método de referencia»**, no «obligatorio», y el anexo III admite alternativas *«siempre que pueda demostrarse que se obtienen resultados equivalentes»*.",
+      "fuente": "Buscador de UNE, ficha N0035809; RD 509/1996 anexo I y anexo III",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f34",
+      "anverso": "¿Cómo se conserva y en qué se recoge una muestra para **sólidos en suspensión**?",
+      "reverso": "- **Recipiente:** **vidrio de borosilicato, plástico o PTFE (teflón)**, para evitar que **los sólidos se adhieran a la pared**.\n- **Volumen mínimo: 500 mL.** Y durante la recogida se evitan **partículas flotantes grandes** y **aglomerados sumergidos de materiales no homogéneos**.\n- **Conservación: refrigerar a menos de 6 °C, SIN CONGELAR**, para frenar la descomposición microbiológica.\n- **Plazo de análisis: 7 días.**\n**Compara con los otros dos parámetros del tema:** el **pH** y la **DBO** se miden **«lo antes posible»** (así lo responde 1322 C2 #31 y #34), porque el uno se desplaza y la otra depende de que las bacterias sigan vivas.\n*(La toma de muestra en general es del **tema 36**.)*",
+      "fuente": "IDEAM M-S-LC-I018 (SM 2540 D); cuestionario 1322 C2 #31 y #34",
+      "etiquetas": [
+        "concepto",
+        "examen"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f35",
+      "anverso": "¿Por qué la curva de la DBO **se aplana** y qué ley sigue?",
+      "reverso": "Sigue una **cinética de PRIMER ORDEN**: la velocidad es proporcional a lo que queda por degradar, así que el consumo es rápido al principio y se va frenando.\n**DBO(t) = DBO_última · (1 − e^(−k·t))**\nCon la constante clásica **k ≈ 0,23 día⁻¹**:\n- A los **5 días**: 1 − e^(−1,15) ≈ **68 %** de la demanda última.\n- Nunca llega al 100 %: **se acerca asintóticamente**.\n**Dos consecuencias que se preguntan:**\n1. **La DBO₅ es aproximadamente dos tercios de la DBO última**, no la totalidad.\n2. **La curva solo puede subir.** El oxígeno ya consumido no se devuelve: una curva de DBO que bajara sería un imposible físico.\n*(El valor de k varía con el agua; 0,23 es el valor de libro.)*",
+      "fuente": "Doctrina clásica de ingeniería sanitaria; ver duda 5 del apunte",
+      "etiquetas": [
+        "fundamento",
+        "calculo"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f36",
+      "anverso": "¿Qué parámetros del cuadro 2 se exigen en **zonas sensibles**, y con qué valores?",
+      "reverso": "| Parámetro | Concentración | % mínimo de reducción |\n| --- | --- | --- |\n| **Fósforo total** | **2 mg/L P** (de 10 000 a 100 000 h-e) · **1 mg/L P** (más de 100 000 h-e) | **80** |\n| **Nitrógeno total** | **15 mg/L N** (de 10 000 a 100 000 h-e) · **10 mg/L N** (más de 100 000 h-e) | **70-80** |\n**Según la situación local se podrá aplicar UNO O LOS DOS parámetros.**\n**Nitrógeno total** se define como la suma de **nitrógeno Kjeldahl total** (orgánico y amoniacal), **nitrato** y **nitrito**.\n**Método de referencia de los dos: espectrofotometría de absorción molecular.**\n*(Su desarrollo como parámetros es del **tema 35**; aquí interesan porque comparten cuadro y régimen con los tres de este tema.)*",
+      "fuente": "RD 509/1996, anexo I, cuadro 2 y sus notas",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f37",
+      "anverso": "¿En qué **grupo de peligrosidad** clasifica el reglamento aragonés a nuestros tres parámetros, y para qué sirve esa clasificación?",
+      "reverso": "**Los tres están en el GRUPO A, «de menor peligrosidad»**, junto con fósforo total, materiales sedimentables, sólidos gruesos, temperatura, color, nitrógeno, bario, boro, cloruros, conductividad, hierro, manganeso, pH, sulfatos y detergentes.\n**El Grupo B, «de mayor peligrosidad»**, son aceites y grasas, aluminio, arsénico, cadmio, cobre, cianuros, cromo, fluoruros, mercurio, níquel, plomo, selenio, zinc, estaño, sulfuros, sulfitos, fenoles, pesticidas, aldehídos, toxicidad e hidrocarburos.\n**¿Para qué sirve?** *«A los efectos de concretar la SANCIÓN por incumplimiento de las limitaciones de vertido»*: la sanción tiene en cuenta **el número y el grado de concentración** de los contaminantes, y pesa más un parámetro del grupo B.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), clasificación de contaminantes",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f38",
+      "anverso": "¿Cuál de los tres parámetros del cuadro 1 puede **sustituirse** por otro, y por cuál?",
+      "reverso": "**La DBO₅.** Nota 2 del cuadro 1: *«Este parámetro puede sustituirse por otro: **carbono orgánico total (COT)** o **demanda total de oxígeno (DTO)**, **si puede establecerse una correlación** entre DBO₅ y el parámetro sustituto.»*\n**La condición no es menor: hay que DEMOSTRAR la correlación.**\n**Y la Directiva (UE) 2024/3019 va más allá**, en otra dirección: convierte el **COT en parámetro de pleno derecho** del cuadro 1 —**37 mg/L, 75 % de reducción, norma EN 1484**— y su **nota 2** dice que los Estados medirán *«la DQO **o bien** el carbono orgánico total»*.\n**Es la misma tendencia que ya siguió el RD 3/2023** para el agua de consumo, donde el COT sustituye a la oxidabilidad en los abastecimientos grandes.",
+      "fuente": "RD 509/1996 anexo I cuadro 1 nota 2; Directiva (UE) 2024/3019 anexo I cuadro 1",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f39",
+      "anverso": "«Se aplicará el valor de concentración **o** el porcentaje de reducción»: ¿qué implica exactamente?",
+      "reverso": "**Que basta con cumplir UNO DE LOS DOS.** Es el encabezado literal del cuadro 1, y cambia el sentido de toda la tabla.\n**Por qué tiene lógica:** un agua de entrada muy cargada puede depurarse muy bien —un 90 % de reducción— y aun así salir por encima de 25 mg/L de DBO₅. La ley reconoce el esfuerzo de depuración, no solo el resultado absoluto.\n**Y por eso hay que muestrear también la ENTRADA:** el anexo III dice que se tomen muestras a la salida *«y de ser necesario en su entrada»*. Sin el dato de entrada no se puede calcular ningún porcentaje.\n**El porcentaje está referido a la carga del caudal de entrada** (nota 1), no a la concentración sin más.",
+      "fuente": "RD 509/1996, anexo I cuadro 1 y anexo III B.1",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f40",
+      "anverso": "¿Por qué la DBO se incuba en **oscuridad completa**?",
+      "reverso": "**Para que no haya FOTOSÍNTESIS.**\nSi entrara luz, las algas presentes en la muestra **producirían oxígeno** durante los cinco días. Ese oxígeno se sumaría al que ya había, y el balance *«inicial menos final»* saldría **falseado a la baja**: la DBO parecería menor de lo que es, o incluso negativa.\n**Es la razón de las tres condiciones del método de referencia**, todas dirigidas a que lo único que pase en la botella sea **consumo bacteriano de oxígeno**:\n- **Oscuridad** → sin producción de oxígeno.\n- **20 °C ± 1** → actividad bacteriana constante y comparable.\n- **Inhibidor** → sin consumo por nitrificación.",
+      "fuente": "RD 509/1996, anexo I cuadro 1; IDEAM SLC-I025",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f41",
+      "anverso": "¿Qué mide la fracción **volátil** de los sólidos, y a qué temperatura se obtiene?",
+      "reverso": "**Se obtiene calcinando a 550 °C**, y la pérdida de peso **se toma como medida de la MATERIA ORGÁNICA**.\n| Fracción | Cómo se obtiene | Qué representa |\n| --- | --- | --- |\n| **Volátiles** | Lo que **se pierde** al calcinar a **550 °C** | La materia **orgánica** |\n| **Fijos** | La **ceniza** que queda | La fracción **mineral** |\n**Cuidado con las dos temperaturas, que se confunden:**\n- **103-105 °C** → **secado**, para eliminar el agua y llegar a peso constante.\n- **550 °C** → **calcinación**, para quemar la materia orgánica.\n**Se aplica tanto a los sólidos en suspensión como a los disueltos**: cada mitad tiene su parte volátil y su parte fija.",
+      "fuente": "IDEAM M-S-LC-I018 y M-S-LC-I017 (SM 2540)",
+      "etiquetas": [
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f42",
+      "anverso": "¿Qué son los **sólidos sedimentables** y cómo se miden?",
+      "reverso": "**Los que decantan por gravedad**, y **no pertenecen a la cadena de filtración y calcinación**: son una medida aparte.\n- **Instrumento: el CONO IMHOFF**, un cono graduado de 1 litro.\n- **Tiempo: una hora** de decantación.\n- **Unidades: mL/L** — es un **volumen**, no una masa. Es el único de la familia que no se pesa.\n**Y sí tienen límite legal en Zaragoza:** el artículo 16 del reglamento aragonés los fija en **15 mL/L** de media diaria máxima y **20 mL/L** de instantánea máxima.\n**Su utilidad es operativa:** dicen cuánto fango va a producir un decantador primario.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16; práctica normalizada del cono Imhoff",
+      "etiquetas": [
+        "concepto",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t34-f43",
+      "anverso": "¿Qué distractor usa el examen para la **DBO** en el supuesto de 1322, y por qué es falso?",
+      "reverso": "**1322 C2 #34**, opción falsa: *«**Digestión** de la muestra con **ácido nítrico** concentrado y una vez que se haya enfriado, se aplica el **método del dicromato**»*.\n**Es falso por partida doble:**\n1. **Eso describe una DQO, no una DBO.** Y encima mal: la digestión de la DQO va con **sulfúrico**, no con nítrico.\n2. **Una digestión ácida MATA las bacterias**, que son precisamente las que hacen la medida en una DBO.\n**La otra opción falsa** —*«se filtra la muestra y se aplica el método de las diluciones en el filtrado»*— también se cae sola: el método de referencia dice **«sin filtrar ni decantar»**.\n**La correcta: «se realiza el método de las diluciones LO ANTES POSIBLE, una vez recibida la muestra».**",
+      "fuente": "Cuestionario 1322, segundo ejercicio, supuesto 4, pregunta 34",
+      "etiquetas": [
+        "examen",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f44",
+      "anverso": "¿Cómo se responde el **pH** en un supuesto de agua residual, y por qué?",
+      "reverso": "**«Se mide LO ANTES POSIBLE, una vez recibida la muestra»** — 1322 C2 #31.\n**Los tres distractores describen manipulaciones que alterarían la medida:**\n- *«Se deja sedimentar la muestra 24 horas»* → en 24 horas la **actividad biológica** cambia el pH.\n- *«Se centrifuga y se mide en el sobrenadante»* y *«se filtra y se mide en el filtrado»* → el pH se mide **en el agua tal cual**, no en una fracción de ella.\n**La regla general:** el pH es un **parámetro inestable**. Se desplaza por pérdida o ganancia de CO₂ y por actividad microbiana.\n**Es el mismo criterio que la DBO en 1322 C2 #34:** *«lo antes posible»*. La técnica del pH es del **tema 23**.",
+      "fuente": "Cuestionario 1322, segundo ejercicio, supuesto 4, pregunta 31",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t34-f45",
+      "anverso": "Resume en una tabla los **tres parámetros del enunciado**: técnica, norma española y límite en efluente.",
+      "reverso": "| Parámetro | Técnica | Norma española | Cuadro 1 |\n| --- | --- | --- | --- |\n| **Sólidos en suspensión** | **Gravimetría** | **UNE-EN 872:2006** | **35 mg/L** (90 %), **optativo** |\n| **DQO** | **Volumetría redox POR RETROCESO**, tras digestión ácida | **NINGUNA vigente** (UNE 77004 anulada en 2024) | **125 mg/L** (75 %) |\n| **DBO₅** | **Método de las diluciones** + medida de oxígeno disuelto | **UNE-EN ISO 5815-1:2020** | **25 mg/L** (70-90 %) |\n**Si te llevas una sola tabla de este tema, que sea esta.** Y recuerda las dos anomalías que esconde: **la DQO no tiene norma UNE** y **los sólidos en suspensión son un requisito optativo**.",
+      "fuente": "RD 509/1996 anexo I cuadro 1; buscador de UNE, fichas N0035809, N0026986 y N0064796",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t34-q01",
+      "pregunta": "¿Qué se entiende por sólidos en suspensión de un agua?",
+      "opciones": [
+        "Sustancias que permanecen en el agua después de filtrar la muestra.",
+        "Sólidos separados por filtración o centrifugación bajo condiciones específicas.",
+        "Sustancias que se determinan evaporando a sequedad la muestra bajo condiciones específicas."
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta literal y repetida: 1246 #20 y 1322 #37, con los mismos tres enunciados. Las otras dos opciones también son definiciones correctas, pero de los sólidos DISUELTOS la primera y de los sólidos TOTALES la tercera. El verbo que decide es «separados».",
+      "fuente": "Cuestionarios 1246 #20 y 1322 #37",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q02",
+      "pregunta": "¿Qué es o cómo se define la Demanda Química de Oxígeno (DQO)?",
+      "opciones": [
+        "Cantidad de materia orgánica que reacciona y se consume al tratar el agua residual con permanganato potásico.",
+        "El total de materia orgánica oxidada en una ozonización completa de una muestra de agua residual.",
+        "La concentración másica de oxígeno equivalente a la cantidad de dicromato consumido por la materia disuelta y en suspensión, cuando una muestra de agua se trata con este oxidante."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta literal y repetida: 1246 #21 y 1322 #38. La primera opción es la definición de la OXIDABILIDAD o índice de permanganato, que es el parámetro del agua de consumo (tema 33): dicromato es DQO, permanganato es oxidabilidad.",
+      "fuente": "Cuestionarios 1246 #21 y 1322 #38",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q03",
+      "pregunta": "En la composición típica de aguas residuales domésticas se puede decir que:",
+      "opciones": [
+        "El valor de la Demanda Química de Oxígeno es mayor al valor de la Demanda Bioquímica de Oxígeno.",
+        "El valor de la Demanda Química de Oxígeno es menor al valor de la Demanda Bioquímica de Oxígeno.",
+        "Ninguna de las dos respuestas es correcta."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta 1322 #40. Por dos razones: la DQO oxida químicamente todo lo oxidable, sea biodegradable o no, mientras que la DBO solo cuenta lo que las bacterias pueden comerse; y además a los cinco días la reacción biológica aún no ha terminado.",
+      "fuente": "Cuestionario 1322 #40",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q04",
+      "pregunta": "¿Qué técnica utilizaría para determinar los sólidos en suspensión de un agua residual?",
+      "opciones": [
+        "Complexometría.",
+        "Electrodo selectivo.",
+        "Gravimetría."
+      ],
+      "correcta": 2,
+      "explicacion": "Respuesta documentada tres veces: 1233 C2 #6, 1246 C2 #6 y 1322 C2 #32, con estos mismos distractores. La complexometría es la técnica de la dureza; el electrodo selectivo, de iones concretos.",
+      "fuente": "Cuestionarios 1233 C2 #6, 1246 C2 #6 y 1322 C2 #32",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q05",
+      "pregunta": "¿Qué técnica utilizaría para determinar la Demanda Bioquímica de Oxígeno (DBO₅)?",
+      "opciones": [
+        "Método de digestión ácida y volumetría.",
+        "Método de diluciones.",
+        "Gravimetría."
+      ],
+      "correcta": 1,
+      "explicacion": "Respuesta documentada en 1233 C2 #8. La digestión ácida y volumetría es la técnica de la DQO, y además una digestión ácida mataría las bacterias, que son precisamente las que hacen la medida en una DBO.",
+      "fuente": "Cuestionario 1233 C2 #8",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q06",
+      "pregunta": "Según el RD 509/1996, el valor de concentración exigido a la DBO₅ en el vertido de una instalación de tratamiento de aguas residuales urbanas es:",
+      "opciones": [
+        "125 mg/L de O₂.",
+        "35 mg/L.",
+        "25 mg/L de O₂."
+      ],
+      "correcta": 2,
+      "explicacion": "Cuadro 1 del anexo I: DBO₅ 25 mg/L de O₂ con un 70-90 % de reducción. Los 125 mg/L son la DQO y los 35 mg/L, el total de sólidos en suspensión.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q07",
+      "pregunta": "Según el RD 509/1996, el porcentaje mínimo de reducción exigido a la DQO es:",
+      "opciones": [
+        "75 %.",
+        "90 %.",
+        "70-90 %."
+      ],
+      "correcta": 0,
+      "explicacion": "Cuadro 1 del anexo I: DQO, 125 mg/L de O₂ o un 75 % de reducción. El 90 % corresponde al total de sólidos en suspensión y el 70-90 % a la DBO₅.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q08",
+      "pregunta": "El método de medida de referencia que el RD 509/1996 establece para la DBO₅ incluye:",
+      "opciones": [
+        "Filtrar la muestra y decantarla antes de incubar.",
+        "Muestra homogeneizada, sin filtrar ni decantar, e incubación cinco días a 20 °C ± 1 °C en completa oscuridad, con aplicación de un inhibidor de la nitrificación.",
+        "Digestión con dicromato potásico durante dos horas a 150 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el texto literal del cuadro 1 del anexo I. La tercera opción describe la DQO. Y el método prohíbe expresamente filtrar o decantar, porque el parámetro debe contar también la materia en suspensión.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q09",
+      "pregunta": "¿Por qué la incubación de la DBO debe hacerse en completa oscuridad?",
+      "opciones": [
+        "Para que la luz no degrade el inhibidor de la nitrificación.",
+        "Para evitar que las algas presentes produzcan oxígeno por fotosíntesis y falseen el balance.",
+        "Porque la luz aumenta la temperatura de la muestra por encima de los 20 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Si hubiera fotosíntesis, el oxígeno producido se sumaría al inicial y la diferencia «inicial menos final» saldría falseada a la baja. Las tres condiciones del método —oscuridad, 20 °C e inhibidor— persiguen que lo único que ocurra en la botella sea consumo bacteriano de oxígeno.",
+      "fuente": "RD 509/1996, anexo I cuadro 1; IDEAM SLC-I025",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q10",
+      "pregunta": "En el ensayo de la DBO, el inhibidor de la nitrificación normalizado es:",
+      "opciones": [
+        "La aliltiourea.",
+        "La azida sódica.",
+        "El sulfato mercúrico."
+      ],
+      "correcta": 0,
+      "explicacion": "Figura en el título mismo de la norma: UNE-EN ISO 5815-1:2020, «Método por dilución y siembra con adición de aliltiourea». La azida se usa en el método de Winkler, para eliminar la interferencia del nitrito; y el sulfato mercúrico, en la DQO, para enmascarar el cloruro.",
+      "fuente": "UNE-EN ISO 5815-1:2020",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q11",
+      "pregunta": "En la determinación de la DQO por el método del dicromato, el sulfato de plata actúa como:",
+      "opciones": [
+        "Agente enmascarante del cloruro.",
+        "Indicador del punto final.",
+        "Catalizador de la oxidación."
+      ],
+      "correcta": 2,
+      "explicacion": "El Ag₂SO₄ es el catalizador: sin él, los compuestos alifáticos de cadena lineal se oxidan mal. El que enmascara el cloruro es el sulfato mercúrico (HgSO₄), y el indicador del punto final es la ferroína.",
+      "fuente": "IDEAM SLC-I016 (SM 5220 C)",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q12",
+      "pregunta": "En la determinación de la DQO, el interferente más común y el reactivo que lo corrige son:",
+      "opciones": [
+        "El cloruro, corregido con sulfato mercúrico.",
+        "El nitrito, corregido con azida sódica.",
+        "El amonio, corregido con aliltiourea."
+      ],
+      "correcta": 0,
+      "explicacion": "El cloruro precipita el ion plata como AgCl e inhibe la catálisis, y además puede reaccionar con el propio dicromato dando resultados altos por error. Se acompleja con HgSO₄ antes de la digestión. La azida es del método de Winkler y la aliltiourea, de la DBO.",
+      "fuente": "IDEAM SLC-I016 (SM 5220 C)",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q13",
+      "pregunta": "¿Cuál es hoy la situación normativa de la UNE 77004:2002, la norma clásica de DQO por dicromato?",
+      "opciones": [
+        "Sigue plenamente vigente y es el método oficial de DQO en España.",
+        "Está anulada desde el 18 de enero de 2024 y su ficha no declara norma sustituta.",
+        "Fue sustituida en 2024 por la UNE-EN ISO 15705."
+      ],
+      "correcta": 1,
+      "explicacion": "Se anuló al retirarse su ISO gemela, la ISO 6060:1989. Lo que se aplica hoy es el método de referencia del RD 509/1996 —que sigue diciendo «dicromato potásico»— y el Standard Methods SM 5220, que es además el que impone por su nombre el reglamento aragonés de vertidos.",
+      "fuente": "Buscador de UNE, ficha N0026986; catálogo ISO/TC 147/SC 2",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q14",
+      "pregunta": "Según el RD-ley 11/1995, un habitante equivalente (h-e) es:",
+      "opciones": [
+        "La carga orgánica biodegradable con una DBO₅ de 60 gramos de oxígeno por día.",
+        "El consumo medio de 200 litros de agua por persona y día.",
+        "La carga contaminante con una DQO de 125 miligramos de oxígeno por litro."
+      ],
+      "correcta": 0,
+      "explicacion": "Artículo 2.f. Los 200 litros por persona y día son el criterio del RD 3/2023 para estimar el volumen de una zona de abastecimiento cuando no se conoce (tema 33), y los 125 mg/L son el valor de DQO del cuadro 1.",
+      "fuente": "RD-ley 11/1995, artículo 2.f",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q15",
+      "pregunta": "El RD-ley 11/1995 define el tratamiento primario como aquel en el que, al menos:",
+      "opciones": [
+        "La DBO₅ se reduce un 50 % y los sólidos en suspensión un 20 %.",
+        "La DBO₅ se reduce un 20 % y los sólidos en suspensión un 50 %.",
+        "La DQO se reduce un 75 % y los sólidos en suspensión un 90 %."
+      ],
+      "correcta": 1,
+      "explicacion": "Artículo 2.g: proceso físico o físico-químico con sedimentación de sólidos en suspensión en el que la DBO₅ de entrada se reduzca al menos un 20 % y el total de sólidos en suspensión al menos un 50 %. Los porcentajes de la tercera opción son los del cuadro 1, es decir, los del tratamiento secundario.",
+      "fuente": "RD-ley 11/1995, artículo 2.g",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q16",
+      "pregunta": "En el cuadro 1 del anexo I del RD 509/1996, el requisito relativo al total de sólidos en suspensión:",
+      "opciones": [
+        "Es optativo.",
+        "Es el único de obligado cumplimiento.",
+        "Solo se aplica en zonas sensibles."
+      ],
+      "correcta": 0,
+      "explicacion": "Lo dice la nota 4 del cuadro. Es un detalle que se olvida con facilidad, precisamente porque contrasta con la importancia que el parámetro tiene en el resto del tema.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1, nota 4"
+    },
+    {
+      "id": "t34-q17",
+      "pregunta": "El encabezado del cuadro 1 del anexo I del RD 509/1996 dice «se aplicará el valor de concentración o el porcentaje de reducción». Esto significa que:",
+      "opciones": [
+        "Hay que cumplir los dos simultáneamente.",
+        "Basta con cumplir uno de los dos.",
+        "El porcentaje solo se aplica en instalaciones de más de 10.000 h-e."
+      ],
+      "correcta": 1,
+      "explicacion": "Basta con uno. Tiene lógica: un agua de entrada muy cargada puede depurarse muy bien y aun así salir por encima del valor absoluto. Por eso el anexo III manda muestrear la salida «y de ser necesario en su entrada»: sin el dato de entrada no hay porcentaje que calcular.",
+      "fuente": "RD 509/1996, anexo I cuadro 1 y anexo III B.1"
+    },
+    {
+      "id": "t34-q18",
+      "pregunta": "¿Cómo deben tomarse las muestras para vigilar el cumplimiento de los requisitos del RD 509/1996?",
+      "opciones": [
+        "Muestras puntuales tomadas a cualquier hora del día.",
+        "Durante un período de veinticuatro horas, proporcionalmente al caudal o a intervalos regulares, en el mismo punto claramente definido.",
+        "Muestras integradas de una semana, conservadas a 4 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, apartado B.1. Y se exige aplicar «prácticas internacionales de laboratorio correctas» para que el deterioro entre la recogida y el análisis sea mínimo.",
+      "fuente": "RD 509/1996, anexo III, apartado B.1"
+    },
+    {
+      "id": "t34-q19",
+      "pregunta": "Una instalación de tratamiento de 60.000 h-e debe tomar al año, como mínimo:",
+      "opciones": [
+        "4 muestras.",
+        "12 muestras.",
+        "24 muestras."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo III, B.2: de 2.000 a 9.999 h-e, 12 el primer año y 4 los siguientes; de 10.000 a 49.999 h-e, 12; y de 50.000 h-e o más, 24. Siempre recogidas a intervalos regulares durante el año.",
+      "fuente": "RD 509/1996, anexo III, apartado B.2"
+    },
+    {
+      "id": "t34-q20",
+      "pregunta": "Respecto a las muestras no conformes del cuadro 1, el RD 509/1996 admite desviaciones de hasta:",
+      "opciones": [
+        "El 100 % en general, y hasta el 150 % para el total de sólidos en suspensión.",
+        "El 50 % para todos los parámetros por igual.",
+        "El 150 % en general, y hasta el 100 % para la DQO."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo III, A.2.2.º. Además, no se computan los valores extremos cuando sean consecuencia de situaciones inusuales, como las ocasionadas por lluvias intensas.",
+      "fuente": "RD 509/1996, anexo III, apartado A.2"
+    },
+    {
+      "id": "t34-q21",
+      "pregunta": "En el ensayo de la DBO, para que el resultado se considere válido debe cumplirse que:",
+      "opciones": [
+        "El oxígeno consumido sea ≥ 2 mg/L y el oxígeno residual ≥ 1 mg/L tras los cinco días.",
+        "El oxígeno consumido sea ≤ 2 mg/L y la muestra no se diluya en ningún caso.",
+        "El oxígeno inicial sea exactamente el de saturación a 20 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "El primer criterio asegura que la medida es significativa y el segundo, que las bacterias no se han quedado sin oxígeno a mitad del ensayo. Ahí está la razón de montar varias diluciones en paralelo: para caer dentro de esa ventana.",
+      "fuente": "IDEAM SLC-I025 v04 (SM 5210 B)",
+      "nucleo": true
+    },
+    {
+      "id": "t34-q22",
+      "pregunta": "El método de referencia del RD 509/1996 para los sólidos en suspensión admite, como alternativa a la filtración por membrana de 0,45 micras:",
+      "opciones": [
+        "La evaporación a sequedad y pesada del residuo.",
+        "La centrifugación durante cinco minutos como mínimo, con una aceleración media de 2.800 a 3.200 g, secado a 105 °C y pesaje.",
+        "La decantación en cono Imhoff durante una hora."
+      ],
+      "correcta": 1,
+      "explicacion": "Son las dos alternativas del cuadro 1, y de ahí sale la respuesta del primer ejercicio: «sólidos separados por filtración o centrifugación bajo condiciones específicas». La evaporación a sequedad da los sólidos totales y el cono Imhoff, los sedimentables.",
+      "fuente": "RD 509/1996, anexo I, cuadro 1"
+    },
+    {
+      "id": "t34-q23",
+      "pregunta": "Los sólidos volátiles de un agua se determinan:",
+      "opciones": [
+        "Secando el residuo a 103-105 °C hasta peso constante.",
+        "Calcinando el residuo a 550 °C, y se toman como medida de la materia orgánica.",
+        "Filtrando la muestra por una membrana de 0,45 micras."
+      ],
+      "correcta": 1,
+      "explicacion": "El secado a 103-105 °C da el residuo total o los sólidos en suspensión, según se haya filtrado o no; la calcinación a 550 °C separa la fracción volátil (orgánica) de la fija (mineral). Son dos temperaturas distintas para dos operaciones distintas.",
+      "fuente": "IDEAM M-S-LC-I018 y M-S-LC-I017 (SM 2540)"
+    },
+    {
+      "id": "t34-q24",
+      "pregunta": "Los sólidos sedimentables de un agua se miden:",
+      "opciones": [
+        "En un cono Imhoff, tras una hora de decantación, y se expresan en mL/L.",
+        "Por filtración en filtro de fibra de vidrio, y se expresan en mg/L.",
+        "Por centrifugación a 3.000 g, y se expresan en mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Son el único miembro de la familia de los sólidos que no se pesa: el resultado es un volumen. El reglamento aragonés los limita a 15 mL/L de media diaria máxima y 20 mL/L de instantánea máxima.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16; práctica normalizada del cono Imhoff"
+    },
+    {
+      "id": "t34-q25",
+      "pregunta": "Según el reglamento aragonés de vertidos a redes municipales de alcantarillado, la concentración media diaria máxima de DQO es:",
+      "opciones": [
+        "125 mg/L.",
+        "500 mg/L.",
+        "1.000 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Artículo 16 del Decreto 38/2004: DQO 1.000 mg/L de media diaria máxima y 1.500 mg/L de instantánea. Los 500 mg/L son el límite de la DBO₅ y de los sólidos en suspensión; los 125 mg/L son el valor del efluente de una depuradora, que es otra cosa.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículo 16"
+    },
+    {
+      "id": "t34-q26",
+      "pregunta": "El reglamento aragonés de vertidos establece que los análisis se realizarán conforme a:",
+      "opciones": [
+        "Las normas UNE-EN ISO correspondientes a cada parámetro.",
+        "Los «Métodos normalizados para el análisis de aguas potables y residuales» (Standard Methods, APHA-AWWA-WPCF).",
+        "Los métodos de referencia del anexo I del RD 509/1996."
+      ],
+      "correcta": 1,
+      "explicacion": "Artículo 23 del Decreto 38/2004, que además precisa: «en cada momento se aplicará la versión traducida al español más actualizada». No remite a UNE.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículo 23"
+    },
+    {
+      "id": "t34-q27",
+      "pregunta": "La Directiva (UE) 2024/3019 sobre tratamiento de aguas residuales urbanas deroga la Directiva 91/271/CEE:",
+      "opciones": [
+        "Con efecto a partir del 1 de agosto de 2027.",
+        "Desde su publicación en el DOUE, el 12 de diciembre de 2024.",
+        "Desde el 31 de julio de 2027, fecha límite de transposición."
+      ],
+      "correcta": 0,
+      "explicacion": "Artículo 32.1. El 31 de julio de 2027 es el plazo de transposición del artículo 33, que es un día antes; la derogación surte efecto al día siguiente. Hasta entonces, el derecho aplicable en España sigue siendo el RD-ley 11/1995 y el RD 509/1996.",
+      "fuente": "Directiva (UE) 2024/3019, artículos 32 y 33"
+    },
+    {
+      "id": "t34-q28",
+      "pregunta": "Según la nota 2 del cuadro 1 del anexo I del RD 509/1996, la DBO₅ puede sustituirse por:",
+      "opciones": [
+        "La DQO, sin ninguna condición.",
+        "El carbono orgánico total o la demanda total de oxígeno, si puede establecerse una correlación con la DBO₅.",
+        "El índice de permanganato, en instalaciones de menos de 10.000 h-e."
+      ],
+      "correcta": 1,
+      "explicacion": "La condición no es menor: hay que demostrar la correlación. La Directiva (UE) 2024/3019 va más allá y convierte el COT en parámetro propio del cuadro 1, con 37 mg/L y un 75 % de reducción, permitiendo medir «la DQO o bien el carbono orgánico total».",
+      "fuente": "RD 509/1996, anexo I cuadro 1 nota 2; Directiva (UE) 2024/3019 anexo I"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t34-s01",
+      "titulo": "Supuesto 1. El efluente de una depuradora urbana",
+      "enunciado": "El laboratorio municipal recibe una muestra compuesta de **24 horas**, tomada proporcionalmente al caudal a la **salida** de una **EDAR de 60 000 habitantes equivalentes** que aplica **tratamiento secundario**. Hay que determinar **sólidos en suspensión**, **DQO** y **DBO₅**, y dictaminar si el vertido cumple el RD 509/1996.\n\nEl boletín preliminar da: **sólidos en suspensión 38 mg/L**, **DQO 140 mg/L** y **DBO₅ 22 mg/L**. En la **entrada** de la instalación se midieron **DQO 620 mg/L** y **DBO₅ 240 mg/L**.",
+      "preguntas": [
+        {
+          "id": "t34-s01-q1",
+          "pregunta": "¿Qué técnica emplearía para los sólidos en suspensión?",
+          "opciones": [
+            "Complexometría.",
+            "Volumetría tras digestión ácida.",
+            "Gravimetría.",
+            "Electrodo selectivo."
+          ],
+          "correcta": 2,
+          "explicacion": "Respuesta documentada tres veces (1233 C2 #6, 1246 C2 #6, 1322 C2 #32). Se filtra una muestra homogénea, se seca el residuo a 103-105 °C hasta peso constante y el aumento de peso del filtro es el resultado.",
+          "fuente": "Cuestionarios 1233 C2 #6, 1246 C2 #6 y 1322 C2 #32"
+        },
+        {
+          "id": "t34-s01-q2",
+          "pregunta": "La DQO da 140 mg/L, por encima de los 125 mg/L del cuadro 1. ¿Incumple el vertido?",
+          "opciones": [
+            "Sí: superado el valor de concentración, el vertido incumple sin más.",
+            "No necesariamente: el cuadro 1 se cumple con el valor de concentración O con el porcentaje de reducción, y de 620 a 140 mg/L la reducción es del 77 %, por encima del 75 % exigido.",
+            "No, porque las desviaciones de hasta el 150 % están siempre admitidas.",
+            "Sí, y además obliga a repetir el muestreo dentro de las 24 horas siguientes."
+          ],
+          "correcta": 1,
+          "explicacion": "El encabezado del cuadro 1 dice «se aplicará el valor de concentración o el porcentaje de reducción». Por eso el anexo III manda muestrear también la entrada cuando sea necesario: sin ese dato no se puede calcular el porcentaje. El 150 % de desviación solo se aplica al total de sólidos en suspensión, y en el régimen de muestras no conformes.",
+          "fuente": "RD 509/1996, anexo I cuadro 1 y anexo III"
+        },
+        {
+          "id": "t34-s01-q3",
+          "pregunta": "Los sólidos en suspensión dan 38 mg/L frente a los 35 mg/L del cuadro 1. ¿Qué es lo más exacto que puede decirse?",
+          "opciones": [
+            "Que el vertido es automáticamente no conforme por ese parámetro.",
+            "Que el requisito de sólidos en suspensión del cuadro 1 es optativo, y que además el parámetro admite el porcentaje de reducción como alternativa.",
+            "Que hay que repetir el análisis sobre muestra filtrada.",
+            "Que el valor aplicable en ese caso son 150 mg/L."
+          ],
+          "correcta": 1,
+          "explicacion": "La nota 4 del cuadro 1 declara optativo el requisito de los sólidos en suspensión, y como todos los del cuadro admite cumplirse por concentración o por reducción (90 %). Los 150 mg/L son el tope de las muestras sin filtrar en sistemas de LAGUNAJE, que no es el caso.",
+          "fuente": "RD 509/1996, anexo I, cuadro 1, notas 1 y 4"
+        },
+        {
+          "id": "t34-s01-q4",
+          "pregunta": "¿Cuántas muestras al año exige como mínimo el RD 509/1996 a esta instalación?",
+          "opciones": [
+            "4.",
+            "12.",
+            "24.",
+            "Una por trimestre."
+          ],
+          "correcta": 2,
+          "explicacion": "Anexo III, B.2: de 50.000 h-e o más, 24 muestras al año, recogidas a intervalos regulares. Las 12 corresponden al tramo de 10.000 a 49.999 h-e, y las 4 al tramo pequeño a partir del segundo año.",
+          "fuente": "RD 509/1996, anexo III, apartado B.2"
+        },
+        {
+          "id": "t34-s01-q5",
+          "pregunta": "Al calcular la DBO₅, ¿qué comprobación hay que hacer antes de dar el dato por válido?",
+          "opciones": [
+            "Que el oxígeno consumido sea ≥ 2 mg/L y quede un oxígeno residual ≥ 1 mg/L tras los cinco días.",
+            "Que el oxígeno inicial coincida exactamente con el de saturación a 20 °C.",
+            "Que la muestra no se haya diluido en ningún caso.",
+            "Que la relación DBO₅/DQO sea superior a 1."
+          ],
+          "correcta": 0,
+          "explicacion": "Los dos criterios aseguran, respectivamente, que la medida es significativa y que las bacterias no se quedaron sin oxígeno durante el ensayo. Por eso se montan varias diluciones en paralelo. Y la relación DBO₅/DQO nunca puede ser superior a 1: la DQO es siempre mayor.",
+          "fuente": "IDEAM SLC-I025 v04 (SM 5210 B)"
+        }
+      ]
+    },
+    {
+      "id": "t34-s02",
+      "titulo": "Supuesto 2. Un vertido industrial a la red municipal",
+      "enunciado": "La inspección municipal toma muestra en la **arqueta de registro** de una industria agroalimentaria que vierte **a la red de alcantarillado** de Zaragoza. Se determinan **pH**, **sólidos en suspensión**, **DQO** y **DBO₅**.\n\nResultados: **pH 6,8**, **sólidos en suspensión 620 mg/L**, **DQO 2 400 mg/L** y **DBO₅ 1 450 mg/L**. El titular alega que, si se añadiera agua limpia al efluente antes del punto de vertido, los valores entrarían en límites.",
+      "preguntas": [
+        {
+          "id": "t34-s02-q1",
+          "pregunta": "¿Cómo debe procederse con la determinación del pH de esta muestra?",
+          "opciones": [
+            "Se deja sedimentar la muestra 24 horas a temperatura ambiente y entonces se mide.",
+            "Se filtra la muestra y se mide en el filtrado.",
+            "Se centrifuga la muestra y se mide en el sobrenadante.",
+            "Se mide lo antes posible, una vez recibida la muestra."
+          ],
+          "correcta": 3,
+          "explicacion": "Respuesta documentada en 1322 C2 #31. El pH es un parámetro inestable: se desplaza por pérdida o ganancia de CO₂ y por actividad microbiana. Y se mide en el agua tal cual, no en una fracción filtrada o centrifugada de ella.",
+          "fuente": "Cuestionario 1322 C2 #31"
+        },
+        {
+          "id": "t34-s02-q2",
+          "pregunta": "¿Cumple el vertido los límites del artículo 16 del reglamento aragonés?",
+          "opciones": [
+            "Sí: el pH está en el intervalo 5,50-9,50 y los tres parámetros están por debajo de sus instantáneas máximas.",
+            "No: los sólidos en suspensión (620 mg/L) superan los 500 mg/L de media diaria y la DQO (2.400 mg/L) supera tanto los 1.000 como los 1.500 mg/L; solo el pH y la DBO₅ estarían dentro de la media diaria.",
+            "No, pero solo por el pH.",
+            "No puede saberse sin conocer el caudal vertido."
+          ],
+          "correcta": 1,
+          "explicacion": "Artículo 16: sólidos en suspensión 500/1.000 mg/L, DBO₅ 500/1.000 mg/L, DQO 1.000/1.500 mg/L y pH 5,50-9,50. Los sólidos superan la media diaria, la DQO supera incluso la instantánea máxima, y la DBO₅ de 1.450 mg/L también rebasa las dos. Solo el pH cumple.",
+          "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículo 16"
+        },
+        {
+          "id": "t34-s02-q3",
+          "pregunta": "Sobre la propuesta del titular de añadir agua limpia antes del punto de vertido:",
+          "opciones": [
+            "Es admisible si se documenta el caudal de dilución.",
+            "Es admisible solo para los parámetros del grupo A, de menor peligrosidad.",
+            "Queda expresamente prohibida: el reglamento prohíbe la dilución de aguas residuales realizada con la finalidad de satisfacer las limitaciones.",
+            "Es admisible si el resultado final cumple las concentraciones instantáneas máximas."
+          ],
+          "correcta": 2,
+          "explicacion": "Es la prohibición expresa del artículo 15.2 del Decreto 38/2004. Es la trampa obvia del sistema de límites por concentración, y por eso el reglamento la cierra por escrito.",
+          "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículo 15.2"
+        },
+        {
+          "id": "t34-s02-q4",
+          "pregunta": "La relación DBO₅/DQO de este vertido es de aproximadamente 0,6. ¿Qué indica?",
+          "opciones": [
+            "Que el agua es marcadamente biodegradable y un tratamiento biológico sería adecuado.",
+            "Que el agua es recalcitrante y el tratamiento biológico está descartado.",
+            "Que hay un error analítico, porque la DBO₅ nunca puede superar la mitad de la DQO.",
+            "Que el vertido contiene metales pesados."
+          ],
+          "correcta": 0,
+          "explicacion": "El cociente DBO₅/DQO es la medida clásica de biodegradabilidad: cuanto más se acerca a 1, más fácil le resulta a las bacterias. Un 0,6 es alto y encaja con una industria agroalimentaria. No hay error analítico: lo único imposible sería que el cociente pasara de 1.",
+          "fuente": "Cuestionario 1322 #40; doctrina de ingeniería sanitaria"
+        },
+        {
+          "id": "t34-s02-q5",
+          "pregunta": "¿Qué métodos de análisis impone el reglamento aragonés, y qué obligación material tiene la industria respecto al punto de muestreo?",
+          "opciones": [
+            "Las normas UNE, y disponer de un caudalímetro homologado en continuo.",
+            "Los métodos de referencia del RD 509/1996, y notificar cada vertido con 24 horas de antelación.",
+            "El Standard Methods (APHA-AWWA-WPCF), y disponer de una arqueta de registro de libre acceso desde el exterior, acondicionada para extraer muestras y aforar caudales.",
+            "Los que decida el laboratorio acreditado, y permitir el acceso solo con orden judicial."
+          ],
+          "correcta": 2,
+          "explicacion": "Artículo 23 (métodos: Standard Methods, en su versión traducida al español más actualizada) y artículo 24 (arqueta de registro). El acceso lo facilita el titular al personal habilitado, sin necesidad de orden judicial.",
+          "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículos 23 y 24"
+        }
+      ]
+    }
+  ]
+}
