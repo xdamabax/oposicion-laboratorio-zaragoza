@@ -24,7 +24,7 @@ título de archivo. La numeración de la fuente es suya y no coincide con la nue
 | `BIO_01-TEMA_4_Preparaciones_diversas` | 10 | Fresco, gota pendiente, técnica de tinción, Gram, Ziehl-Neelsen, cápsulas, esporas, flagelos | **14** | Alta — encaje casi punto por punto |
 | `BIO_02-tema_8_Tecnicas_de_siembra` | 7 | Inóculos, resiembra, métodos de siembra, aislamiento | **12** (parcial) | Alta — no trae componentes/preparación de medios ni conservación de cepas |
 | `BIO_03-Tema_2.NORMAS_DE_SEGURIDAD...` | 8 | Contaminantes biológicos, grupos de riesgo 1-4, vías de entrada, niveles de contención, CSB clases I/II/III, descontaminación | **9** principal; roza **10** (cabinas) y **11** (autoclave) | Alta |
-| `BIO_04-TEMA_5_Toma_y_preparacion_de_muestras` | 7 | Muestreo, nº de muestras, aleatorio, transporte y conservación, superficies, homogeneización (Stomacher), dilución. Enfoque **alimentario** | **19** principal; **13** secundario (dilución) | Media-alta |
+| `BIO_04-TEMA_5_Toma_y_preparacion_de_muestras` | 7 | Muestreo, nº de muestras, aleatorio, transporte y conservación, superficies, homogeneización (Stomacher), dilución. Enfoque **alimentario** | **19** principal; **13** secundario (dilución). **Revisado para el 36 el 22/09/2026: NO sirve** (ver nota abajo) | Media-alta |
 | `BIO_05-TEMA__9_.Incubacion` | 2 | Factores de incubación, estufas de cultivo, normas | **10** (parcial) | Alta pero muy breve |
 | `FASE_02-T27_PRL` | 34 | Texto consolidado íntegro de la Ley 31/1995, arts. 2, 14 y 31 incluidos | **8** (segunda mitad) | Alta — pero es una copia del BOE **sin fecha de consolidación visible**; se va al BOE |
 | `FASE_09-TEMA 27` | 6 | Resumen de arts. 1-4 y **33-40** | **8** parcial | Media — arts. 33-40 (consulta, participación, delegados, comité) **no están en nuestro enunciado** |
@@ -58,6 +58,14 @@ contenido**. Prometía nuestro tema 40 y está vacío. No aporta nada.
 
 - **Tocados:** 8, 9, 10, 11, 12, 13, 14, 19, 20, 21, 22, 23, 29, 35, 39.
 - **Sin nada:** 1-7, 15, 16, 17, 18, 24, 25, 26, 27, 28, 30, 31, 32, 33, 34, 36, 37, 38, 40.
+
+> **Nota añadida el 22/09/2026, al redactar el tema 36.** Se revisó `BIO_04` por si servía para
+> «toma de muestras para análisis de **agua**». **No sirve como fuente:** es alimentario y solo tiene
+> **seis menciones de «agua»**. Tres de ellas sí son un procedimiento real de toma en grifo —desinfectar
+> con alcohol, desechar las primeras porciones, flamear la gota pendiente, dejar correr 1-2 minutos—,
+> que se usó **como pista** y se verificó contra la fuente buena: el documento del **Instituto de
+> Toxicología de la Defensa**, que desarrolla lo mismo repartido entre **los tres objetivos de la
+> UNE-EN ISO 19458**. **Ningún dato de BIO_04 se volcó en el apunte.** El tema 36 sigue siendo «sin nada».
 
 Comprobado por búsqueda directa en los 21 archivos: **cero** apariciones de
 cromatografía, espectrofotometría, absorción atómica, ICP como técnica, polarimetría,

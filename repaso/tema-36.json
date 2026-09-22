@@ -1,0 +1,1029 @@
+{
+  "tema": 36,
+  "titulo": "Toma de muestras para análisis de agua: Tipos de Envases, Conservación de las muestras, procedimientos de toma de muestras en función parámetros a determinar.",
+  "generadoDe": "temas/tema-36.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-22",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t36-f01",
+      "anverso": "¿En qué envase se toma la muestra para **hidrocarburos policíclicos aromáticos** y para **COV/trihalometanos**?",
+      "reverso": "**Recipiente de VIDRIO con tapón con revestimiento interno de PTFE** (politetrafluoroetileno). Dos preguntas del mismo supuesto: **1246 C2 #21** y **#24**.\n**Por qué vidrio:** son compuestos **orgánicos**, y el plástico los **adsorbe**. El Instituto de Toxicología de la Defensa lo dice así: *«el plástico podría absorber ciertos productos orgánicos (hidrocarburos y pesticidas)»*.\n**Por qué el tapón de PTFE:** una junta de goma o plástico blando aportaría o retendría compuestos. El politetrafluoroetileno es **inerte**.\n**Y para los COV, además:** sin burbujas al llenar y **sin hueco entre el agua y el tapón**.",
+      "fuente": "Cuestionarios 1246 C2 #21 y #24; Instituto de Toxicología de la Defensa, FTTM06",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f02",
+      "anverso": "¿En qué envase se toman los **cationes y aniones** (Ca, Mg, Na, K, sulfato, cloruro, nitrato, fluoruro) y el **carbono orgánico total**?",
+      "reverso": "| Parámetro | Envase | Dónde |\n| --- | --- | --- |\n| **Cationes y aniones** | **Recipiente de PLÁSTICO**, a secas | 1246 C2 #23 |\n| **Carbono orgánico total** | **PLÁSTICO o VIDRIO, indistintamente** | 1246 C2 #22 |\n**La del COT es la más curiosa del supuesto:** la respuesta correcta es *«las respuestas a) y b) son correctas»*, porque el COT **no sufre por ninguno de los dos materiales**.\n**Y la de los iones inorgánicos va en plástico** porque el **vidrio CEDE elementos traza** —sodio, boro, silicio— a la muestra. Nada de aditivos: el cloruro ni siquiera requiere conservación.",
+      "fuente": "Cuestionarios 1246 C2 #22 y #23; IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f03",
+      "anverso": "**Vidrio o plástico:** ¿qué problema tiene cada material y para qué sirve cada uno?",
+      "reverso": "| Material | Su defecto | Se usa para |\n| --- | --- | --- |\n| **PLÁSTICO** | **ADSORBE los compuestos orgánicos** (hidrocarburos, plaguicidas) **y el fósforo** | **Metales, iones inorgánicos, parámetros generales** |\n| **VIDRIO** (mejor borosilicatado) | **CEDE elementos traza**: sodio, boro, silicio | **Orgánicos: HAP, plaguicidas, COV, grasas** |\n| **METÁLICO** | Contamina y se corroe | **Totalmente desaconsejado** |\n**Las dos frases del Instituto de Toxicología de la Defensa, las dos transcribibles:**\n- *«El plástico podría absorber ciertos productos orgánicos… y algunos elementos minerales tales como el fósforo.»*\n- *«**Para la determinación de elementos traza NO deben utilizarse envases de vidrio.**»*",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "concepto",
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f04",
+      "anverso": "¿En qué envase se toma la muestra para **análisis microbiológico** de agua de consumo?",
+      "reverso": "**Recipiente de plástico ESTÉRIL con TIOSULFATO SÓDICO** (1246 C2 #25).\n**Las tres condiciones, y cada una tiene su razón:**\n| Condición | Para qué |\n| --- | --- |\n| **Estéril** | Autoclave a **120 °C / 30 min** o calor seco a **180 °C / 2 h**. Un envase limpio no basta |\n| **Con tiosulfato** | Para **neutralizar el cloro residual**, que si no seguiría matando bacterias dentro del frasco |\n| **Sin llenar del todo** | Para poder **agitar** y homogeneizar antes de sembrar |\n**Puede ser de plástico o de vidrio neutro**, lo que no puede es dejar de ser estéril.",
+      "fuente": "Cuestionario 1246 C2 #25; Instituto de Toxicología de la Defensa, FTTM06",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f05",
+      "anverso": "Mirando estos dos envases: ¿qué **volúmenes mínimos**, **plazos** y **temperaturas** corresponden a cada uno?",
+      "reverso": "| | Volumen mínimo | Plazo | Temperatura |\n| --- | --- | --- | --- |\n| **El de la izquierda** | **500 mL** (y **1 000 mL** si es *Legionella*) | **6 horas**, ampliable a **24** | **2-8 °C**, en oscuridad. **NUNCA CONGELAR** |\n| **El de la derecha** | **2 litros** | 24 a 72 horas | 2-8 °C, o **−20 °C** para volátiles |\n**El dato jurídico que hay que fichar:** las **6 horas** son *«el tiempo exigible ante cualquier reclamación legal»*. Las 24 son el máximo tolerable, y solo con oscuridad y refrigeración.\n**Y el tiosulfato tiene dos propiedades que lo hacen ideal:** **no afecta a la muestra** y **sirve también para aguas no cloradas**, así que se pone siempre sin tener que decidir. Sin él, **15 minutos** hasta el laboratorio.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; RD 487/2022, anexo VI tabla 4",
+      "etiquetas": [
+        "valores",
+        "concepto"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "envase-camara-de-aire"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t36-f06",
+      "anverso": "¿Por qué el envase de **microbiología** deja hueco y el **fisicoquímico** no?",
+      "reverso": "**El RD 487/2022 dice una cosa y la contraria en el mismo anexo VI, y las dos son literales:**\n| Ensayo | Texto |\n| --- | --- |\n| **Microbiológicos** (parte A.1) | *«…siempre debe dejarse una pequeña cámara de aire sobre el nivel del agua»* |\n| **Químicos** (parte B.1) | *«…el recipiente se debe llenar completamente y cerrar de forma que no quede una cámara de aire»* |\n**Y cada una tiene su motivo:**\n- **En microbiología, para PODER AGITAR.** Sin hueco no se homogeneiza. El propio anexo manda **voltear el envase varias veces** tras añadir el neutralizante.\n- **En fisicoquímica, para que NO SE ESCAPE NADA.** Si queda aire, lo volátil se reparte entre el agua y ese aire, y se mide de menos.",
+      "fuente": "RD 487/2022, anexo VI, partes A.1 y B.1",
+      "etiquetas": [
+        "normativa",
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f07",
+      "anverso": "Envase, volumen y condiciones para analizar ***Legionella***. ¿Dónde está la trampa del examen?",
+      "reverso": "**Recipiente ESTÉRIL de polietileno o similar, con cierre hermético y NEUTRALIZANTE del biocida** (1246 C2 #13).\n**Volumen mínimo: 1 000 mL**, y **SIEMPRE dejando una pequeña cámara de aire** (1246 C2 #14).\n**LAS DOS TRAMPAS, las dos de una sola palabra:**\n- En la **#13** hay una opción que dice *«plástico con neutralizante»* **pero se deja la palabra ESTÉRIL**.\n- En la **#14** hay otra que da **bien los 1 000 mL** pero manda **«llenar el envase completamente»**.\n**Tiempos y temperaturas (RD 487/2022, tabla 4):**\n| Ensayo | Tiempo | Temperatura |\n| --- | --- | --- |\n| **Aerobios totales** | < 24 h | **5 ± 3 °C** (50-100 mL) |\n| ***Legionella*** | **< 24 h** | **6-18 °C** |\n| ***Legionella*** | > 24 h y < 48 h | 5 ± 3 °C |",
+      "fuente": "Cuestionarios 1246 C2 #13 y #14; RD 487/2022, anexo VI parte A y tabla 4",
+      "etiquetas": [
+        "examen",
+        "trampa",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f08",
+      "anverso": "¿Cuáles son los **tres objetivos** del muestreo en grifo de la UNE-EN ISO 19458?",
+      "reverso": "| Objetivo | Qué se quiere saber | Procedimiento |\n| --- | --- | --- |\n| **a)** | La calidad de **LA RED** | Grifo próximo al conducto principal, **flameado**, y correr **hasta temperatura constante** |\n| **b)** | La calidad **tal y como se SUMINISTRA** en el grifo | Quitar el accesorio, **desinfectar el grifo** y correr **lo mínimo** |\n| **c)** | La calidad **tal y como se CONSUME** | **Ni desinfectar ni quitar nada**: se busca justo lo que aporta el grifo. Es el de **epidemias** |\n**En una línea cada uno:** con el **a)** el grifo estorba y hay que borrarlo del resultado; con el **b)** el grifo cuenta pero su suciedad exterior no; con el **c)** **todo cuenta**.\n**Y el RD 3/2023 elige uno por su letra:** el muestreo microbiológico en el grifo del usuario se hace **«con objetivo b)»**.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; RD 3/2023, anexo III A.1.c",
+      "etiquetas": [
+        "concepto",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f09",
+      "anverso": "Mirando estos tres paneles: ¿por qué para el **cobre, el plomo y el níquel** el RD 3/2023 manda justo lo contrario?",
+      "reverso": "**Porque esos tres metales VIENEN DE LA TUBERÍA.** Solo aparecen en el agua que ha estado en contacto con ella, así que **purgar sería lavar la evidencia**.\n**El RD 3/2023, anexo III A.1.a, lo dice así:** las muestras de *«determinados parámetros químicos (en particular cobre, plomo y níquel)»* se toman **de un solo grifo del usuario SIN DESCARGA PREVIA**, con un **muestreo ALEATORIO DIURNO** de **UN LITRO**.\n**Y si superan el valor paramétrico** y el problema es de la instalación interior, se admiten otros dos: con **descarga previa y estancamiento de 30 minutos**, o **proporcional**, con una botella conectada al grifo **durante una semana**.\n**Mismo grifo, dos parámetros, dos procedimientos opuestos.** Es el mejor ejemplo de «en función del parámetro».",
+      "fuente": "RD 3/2023, anexo III, parte A.1",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "grifo-tres-objetivos"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t36-f10",
+      "anverso": "¿Qué tres parámetros se miden **in situ** y con qué plazo?",
+      "reverso": "**pH, TEMPERATURA y OXÍGENO DISUELTO.** Plazo: **0,25 horas, es decir 15 MINUTOS**, que en la práctica significa «allí mismo».\n**Y con ellos va el CLORO LIBRE RESIDUAL**, que el tema 25 ya daba como *«medida inmediata y en campo, porque el cloro se pierde»*.\n**El porqué es el mismo en los cuatro: cambian solos, y rápido.** El pH se desplaza al perder o ganar CO₂; la temperatura se iguala con el ambiente en minutos; el oxígeno se intercambia con el aire; el cloro se consume.\n**Regla práctica:** si un parámetro no sobrevive al viaje, **el viaje se elimina**.",
+      "fuente": "IDEAM M-S-LC-I004; RD 487/2022, artículo 11; tema 25",
+      "etiquetas": [
+        "concepto",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f11",
+      "anverso": "¿Qué **cuatro palancas** hay para conservar una muestra de agua?",
+      "reverso": "1. **REFRIGERAR.** Lo universal: **2-8 °C** (o ≤ 6 °C), **en oscuridad**. **Nunca congelar lo microbiológico**; para COV sí se puede bajar a **−20 °C**.\n2. **ACIDIFICAR.** **HNO₃ a pH < 2** para metales —evita que precipiten y se peguen a la pared—; **H₂SO₄ a pH < 2** para DQO, nitrógeno y fósforo —inhibe la actividad bacteriana—.\n3. **ALCALINIZAR.** **NaOH a pH > 12** para **cianuros**, que en medio ácido se escaparían como HCN.\n4. **NEUTRALIZAR el desinfectante.** **Tiosulfato sódico**, al menos **20 mg por litro**.\n**Y una quinta que no es química: MEDIRLO IN SITU**, para lo que no aguanta ni el viaje.",
+      "fuente": "IDEAM M-S-LC-I004; Instituto de Toxicología de la Defensa, FTTM06",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f12",
+      "anverso": "¿Cuánto aguanta cada parámetro? Los plazos máximos que más se preguntan.",
+      "reverso": "| Parámetro | Plazo máximo |\n| --- | --- |\n| **pH, temperatura, oxígeno disuelto** | **15 minutos** |\n| **Microbiología de agua de consumo** | **6 h** (24 h máximo, refrigerada y a oscuras) |\n| ***Legionella*** | **< 24 h** a 6-18 °C; hasta 48 h a 5 ± 3 °C |\n| **DBO** | **48 h** |\n| **Nitrato y nitrito** | **48 h** |\n| **Fosfato** (disuelto) | 48 h |\n| **Sólidos** | 2-7 días |\n| **Alcalinidad** | 14 días |\n| **DQO, COT, conductividad, sulfato, N amoniacal, fósforo total, mercurio** | **28 días** |\n| **Metales en general, dureza** | **6 MESES** |\n**La regla que los ordena: cuanto más biológicamente activo es el analito, menos espera.** Los metales no se degradan y aguantan medio año; los nitritos, dos días.",
+      "fuente": "IDEAM M-S-LC-I004; Instituto de Toxicología de la Defensa; RD 487/2022 tabla 4",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f13",
+      "anverso": "¿Por qué la **DBO** no se acidifica, y cuánto aguanta?",
+      "reverso": "**Porque acidificar MATARÍA A LAS BACTERIAS que hacen la medida.** La DBO es el oxígeno que consumen los microorganismos (tema 34): si se les mata, no hay ensayo.\n**Es el único parámetro global que solo se REFRIGERA** (≤ 6 °C), sin conservante químico. Y por eso es también **el de plazo más corto de los de laboratorio: 48 HORAS**.\n**Contrasta con su hermana la DQO**, que sí se acidifica con **H₂SO₄ a pH < 2** y aguanta **28 días** — porque ahí el oxidante es químico y da igual lo que le pase a la flora.\n**Envase: 1 000 mL**, plástico o vidrio.",
+      "fuente": "IDEAM M-S-LC-I004; tema 34",
+      "etiquetas": [
+        "fundamento",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f14",
+      "anverso": "¿Qué conservante lleva cada grupo de parámetros?",
+      "reverso": "| Conservante | Para qué | Por qué |\n| --- | --- | --- |\n| **HNO₃ a pH < 2** | **Metales**, mercurio, dureza | Evita que **precipiten** y que se **adsorban a la pared** |\n| **H₂SO₄ a pH < 2** | **DQO, nitrógeno, fósforo total** | **Inhibe la actividad bacteriana** |\n| **NaOH a pH > 12** | **Cianuros** | En medio ácido se volatilizarían como **HCN** |\n| **Tiosulfato ≥ 20 mg/L** | **Microbiología**, cianuros si hay cloro | **Neutraliza el cloro residual** |\n| **Nada** | **Cloruro** | No le pasa nada |\n| **Solo frío** | **Conductividad, alcalinidad, sulfato, sólidos, DBO, nitrato, nitrito** | — |\n**Y dos que exigen FILTRAR DE INMEDIATO, no al llegar:** los **metales disueltos** y el **fosfato disuelto**. Si se espera, parte de lo particulado se disuelve y el reparto cambia.",
+      "fuente": "IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "valores",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f15",
+      "anverso": "¿Qué **tipos de muestra** hay, y cuál NUNCA se usa en microbiología?",
+      "reverso": "| Tipo | Qué es |\n| --- | --- |\n| **Puntual** (simple) | La tomada **en un punto y un momento** concretos |\n| **Compuesta** | Combinación de puntuales **del mismo punto**, de igual volumen o **proporcionales al caudal**, a intervalos regulares |\n| **Integrada** | Combinación de muestras **de puntos distintos** tomadas a la vez |\n**LO MICROBIOLÓGICO NUNCA SE COMPONE NI SE INTEGRA.** El Instituto de Toxicología de la Defensa lo dice sin matices: *«debe ser siempre una muestra simple… sin que se puedan obtener muestras compuestas ni integradas»*.\n**El porqué:** mezclar dos aguas es darle a las bacterias de una el alimento de la otra, y **perder la información de dónde estaba el problema**.\n**Igual con los que cambian rápido:** oxígeno disuelto, COT, temperatura y pH van siempre en muestra puntual.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "concepto",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f16",
+      "anverso": "Y en un **vertido**, ¿qué tipo de muestra se toma? (Justo lo contrario.)",
+      "reverso": "**COMPUESTA.** Las dos normas lo dicen:\n- **RD 509/1996**, anexo III B.1: muestras durante un período de **VEINTICUATRO HORAS**, **proporcionalmente al caudal o a intervalos regulares**, en **el mismo punto claramente definido** de la salida, **y de ser necesario en su entrada**.\n- **Decreto 38/2004 de Aragón**, art. 22.2: *«los controles se efectuarán sobre **muestras compuestas** obtenidas por mezcla y homogeneización de muestras simples recogidas en el mismo punto y diferentes momentos, o por **muestras simples proporcionales al volumen del caudal vertido**»*.\n**Por qué hay que muestrear también la ENTRADA:** porque el cuadro 1 admite cumplirse por **porcentaje de reducción**, y sin el dato de entrada no hay porcentaje que calcular (tema 34).",
+      "fuente": "RD 509/1996 anexo III B.1; Decreto 38/2004 de Aragón art. 22.2",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f17",
+      "anverso": "¿Qué normas impone el **RD 3/2023** para el muestreo, y cuáles son sus dos escenarios?",
+      "reverso": "**Anexo III, parte A:**\n| Escenario | Norma |\n| --- | --- |\n| **Muestreo en la RED, salida de ETAP o depósito** | **UNE-ISO 5667-5** *(agua potable de instalaciones de tratamiento y redes canalizadas)* |\n| **Parámetros MICROBIOLÓGICOS**, en grifo y en red | **UNE-EN ISO 19458**, y en grifo **«con objetivo b)»** |\n**Y lo que el RD 3/2023 NO dice, comprobado leyendo el anexo III entero: no hay en todo el real decreto ninguna tabla de envases, conservantes ni plazos por parámetro.**\n**Esa tabla vive en otra norma: la UNE-EN ISO 5667-3.** Conviene saberlo, porque el enunciado del supuesto del examen cita el real decreto, pero **lo que pregunta sale de la norma de muestreo**.",
+      "fuente": "RD 3/2023, anexo III parte A (lectura íntegra y comprobación negativa)",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f18",
+      "anverso": "La familia **UNE-EN ISO 5667**: ¿qué parte hace qué?",
+      "reverso": "| Norma | De qué va |\n| --- | --- |\n| **UNE-EN ISO 5667-1:2024** | **Diseño de programas** de muestreo y técnicas |\n| **UNE-EN ISO 5667-3:2024** | **CONSERVACIÓN Y MANIPULACIÓN** de las muestras ← la de este tema |\n| **UNE-ISO 5667-5:2021** | **Agua potable** de instalaciones de tratamiento y redes |\n| **UNE-EN ISO 5667-14:2017** | **Aseguramiento y control de la calidad** del muestreo |\n| **UNE-EN ISO 19458:2007** | **Muestreo para análisis MICROBIOLÓGICO** |\n**Dato de vigencia:** la **parte 3 se renovó el 11 de diciembre de 2024** y anuló a la de 2019 — citar «UNE-EN ISO 5667-3:2019» hoy es citar una norma anulada. Y la **parte 1** de 2024 ya tiene proyecto que la anulará.",
+      "fuente": "Buscador de UNE, fichas N0073842, N0072458, N0067529, N0057904 y N0038751",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f19",
+      "anverso": "¿En qué **orden** se toman las muestras cuando en un mismo punto hay varios ensayos?",
+      "reverso": "**RD 487/2022, anexo VI, parte E:**\n1. **Primero, la MICROBIOLÓGICA**, en envase **con neutralizante**, garantizando la cámara de aire.\n2. **Después, la BIOCAPA**, por raspado con torunda, si procede.\n3. **Y por último, la FISICOQUÍMICA**, en envases **SIN neutralizante**.\n**El orden no es caprichoso: LO ESTÉRIL VA PRIMERO.** Cada manipulación es una oportunidad de contaminar, y la muestra microbiológica es la única que no admite ninguna.\n**Y por eso también:** *«no se debe introducir ningún objeto o instrumento (termómetro, pH-metro…) dentro del recipiente que contiene la muestra para análisis microbiológico. Los posibles análisis in situ deben realizarse en una **SUB-MUESTRA en un recipiente APARTE**»*.",
+      "fuente": "RD 487/2022, anexo VI, partes D.4 y E",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f20",
+      "anverso": "Las **cinco prácticas correctas de higiene** en la toma de muestras (RD 487/2022, parte D).",
+      "reverso": "1. **Lavarse las manos** o llevar **guantes desechables**.\n2. **Nunca fumar, comer o beber** mientras se toman muestras.\n3. Limpiar el punto de toma; y **en microbiología, SIEMPRE DESINFECTARLO** —algodón con alcohol, toallita, flameado— **inmediatamente antes** de la toma.\n4. **No introducir ningún instrumento dentro del frasco microbiológico.** Los análisis in situ, en submuestra aparte.\n5. Las **neveras** de transporte, limpias; y **las de muestras microbiológicas, de USO EXCLUSIVO**.\n**La quinta es la que más se olvida**, y tiene lógica: una nevera que ha llevado muestras de vertido no puede llevar después un frasco estéril.",
+      "fuente": "RD 487/2022, anexo VI, parte D",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f21",
+      "anverso": "¿Qué parámetros hay que determinar **in situ** cuando se muestrea para ***Legionella***?",
+      "reverso": "**El RD 487/2022 nombra CUATRO:** *«deberán determinarse in situ al menos los siguientes parámetros físico-químicos: **pH** (si el efecto del desinfectante depende del pH), **TEMPERATURA**, **CONDUCTIVIDAD** y, en su caso, **DESINFECTANTE RESIDUAL**»*.\n**La pregunta 1246 C2 #15** ofrecía tres opciones y la correcta era *«pH, temperatura y desinfectante residual»* — **tres de los cuatro**. Las otras dos metían la **turbidez** o mandaban el resto al laboratorio.\n**El matiz del pH es elegante:** se mide **«si el efecto del desinfectante depende del pH»**, que es justo lo que pasa con el cloro (tema 33: por encima de pH 8 el ácido hipocloroso se disocia y desinfecta peor).",
+      "fuente": "RD 487/2022, artículo 11; cuestionario 1246 C2 #15",
+      "etiquetas": [
+        "examen",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f22",
+      "anverso": "¿Cómo se esteriliza un envase para microbiología, y qué pasa si no hay envases con tiosulfato?",
+      "reverso": "**Esterilización:** **autoclave a 120 °C durante 30 minutos**, o **calor seco a 180 °C durante 2 horas**.\n**Si no se dispone de envases con tiosulfato:** *«el agua debe llegar al laboratorio **antes de transcurridos 15 MINUTOS** desde su recogida»*. Es decir, o se neutraliza el cloro o se corre.\n**Y dos propiedades del tiosulfato que lo hacen ideal:**\n- *«**No tiene efecto sobre la muestra**»*, así que no falsea nada.\n- *«**Puede emplearse también para aguas NO cloradas**»*, así que no hay que decidir: se pone siempre.\n**Cantidad: al menos 20 mg por litro de agua.**",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "valores",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f23",
+      "anverso": "¿Qué información acompaña siempre a una muestra?",
+      "reverso": "**El envase se marca ANTES de la toma**, con **rotulador resistente al agua** y una referencia que permita identificarla sin ambigüedad.\n**Y va con un informe que recoge:**\n- Nombre o entidad y **dirección**.\n- **Origen de la muestra**: pozo, río, depósito…\n- **Fecha y HORA del muestreo.**\n- **Las determinaciones realizadas IN SITU** (cloro, pH, temperatura).\n- Si el agua es **natural o está tratada**.\n**Lo de la hora no es burocracia:** sin ella no se puede saber si se ha respetado el plazo de 6 o de 24 horas, que es *«el tiempo exigible ante cualquier reclamación legal»*.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "concepto",
+        "calidad"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f24",
+      "anverso": "¿Qué material hay que llevar a una toma de muestras, según el RD 487/2022?",
+      "reverso": "**Parte C del anexo VI:** termómetro, **medidor de biocida in situ**, **neutralizante específico del biocida**, envases estériles y no estériles, **torundas y tubos de transporte estériles**, **alcohol o toallitas desinfectantes**, **mechero o soplete portátil para flameado**, rotuladores y **etiquetas resistentes al agua**, embalajes que eviten rotura y derrame, y el **registro de toma de muestra**.\n**Y una exigencia que enlaza con el tema 39:** *«los equipos de lectura-medición empleados (termómetro, pH-metro, turbidímetro, etc.) deben encontrarse **dentro del periodo de calibración**»*.\n**Además, el art. 11.2 obliga a la instalación** a tener el neutralizante disponible tanto para quien tome la muestra como para la autoridad sanitaria.",
+      "fuente": "RD 487/2022, anexo VI parte C y artículo 11",
+      "etiquetas": [
+        "normativa",
+        "calidad"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f25",
+      "anverso": "¿Qué NO se puede mezclar en el transporte de muestras?",
+      "reverso": "**RD 487/2022, anexo VI:** *«En el proceso de toma y transporte de muestras **no se mezclarán en un mismo envase** muestras procedentes de **diferentes instalaciones** o de **distintos puntos de muestreo** ni de **temperaturas muy diferentes**.»*\n**Y ni siquiera en la misma nevera:** *«si se toman muestras de agua a temperaturas muy diferentes **no se deben transportar en la misma nevera** (por ejemplo, no mezclar muestras de agua caliente a 60 °C con muestras de agua fría a 20 °C)»*.\n**Más:** las neveras de muestras microbiológicas son de **uso exclusivo**.\n**Y el transporte de *Legionella*** se etiqueta con los **tres niveles de contención** de la instrucción **P650**, categoría **UN 3373** de la ONU.",
+      "fuente": "RD 487/2022, anexo VI, partes A.2 y D",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f26",
+      "anverso": "¿Por qué el transporte debe hacerse **en oscuridad**?",
+      "reverso": "**Para evitar la FOTODEGRADACIÓN.** El Instituto de Toxicología de la Defensa lo dice así: *«deberá evitarse la exposición a la luz para minimizar al máximo la fotodegradación de algunos compuestos»*.\n**Y para lo microbiológico hay una segunda razón:** la luz favorece la **fotosíntesis** de las algas presentes, que cambiaría la composición de la muestra. *(Es el mismo motivo por el que la DBO se incuba en oscuridad completa — tema 34.)*\n**Los que además exigen envase ÁMBAR** por ser especialmente fotosensibles: **cianuros** y **carbono orgánico total**.\n**Y el transporte, refrigerado entre 2 y 8 °C** siempre que sea posible.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f27",
+      "anverso": "¿Cómo se limpia un envase según el parámetro?",
+      "reverso": "| Parámetro | Preparación del envase |\n| --- | --- |\n| **Metales** | **LAVADO CON ÁCIDO** — la tabla del IDEAM lo marca como *P(A), V(A), FP(A)* |\n| **Microbiología** | **ESTÉRIL**: autoclave 120 °C / 30 min, o calor seco 180 °C / 2 h |\n| **Resto** | Limpio; *«los frascos se lavarán cuidadosamente antes de cada uso, a ser posible con agua de la misma fuente»* |\n**Y la recomendación general: usar envases NUEVOS.** *«La reutilización de los envases puede dar problemas de contaminación si la limpieza no es perfecta.»*\n**El caso de las grasas es curioso y se pregunta:** envase de **vidrio de BOCA ANCHA**, y **no se llena del todo** — porque la grasa se pega a la pared y hay que poder extraerla con disolvente **dentro del propio frasco**.",
+      "fuente": "IDEAM M-S-LC-I004; Instituto de Toxicología de la Defensa, FTTM06",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f28",
+      "anverso": "¿Qué exige el reglamento aragonés al **punto de toma** de un vertido industrial?",
+      "reverso": "**Artículo 24:** las industrias y explotaciones quedan obligadas a disponer en sus conductos de desagüe de una **ARQUETA DE REGISTRO de libre acceso DESDE EL EXTERIOR**, acondicionada para permitir **la extracción de muestras y el aforo de caudales**.\n**Y sobre quién toma y cómo (arts. 21 y 22):**\n- La toma la efectúa **personal al servicio de las Administraciones**; los análisis, **laboratorios homologados**.\n- El muestreo se hace **acompañado por un representante de la industria**, salvo que eso perjudique justificadamente la labor inspectora.\n- **Si el vertido no parece representativo de la actividad, se toma otra muestra** donde y cuando el personal de control lo considere oportuno.\n- **Copia del resultado al titular en un plazo máximo de diez días.**",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículos 21, 22 y 24",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f29",
+      "anverso": "En el objetivo **a)** del muestreo en grifo, ¿hasta cuándo hay que dejar correr el agua y por qué?",
+      "reverso": "**Hasta que el agua alcance una TEMPERATURA CONSTANTE.** Y la razón está en el propio procedimiento: *«para evitar el agua que se encontrara dentro del edificio»*.\n**La lógica: el objetivo a) mide LA RED, no el edificio.** El agua estancada en la instalación interior es precisamente lo que hay que expulsar, y **la temperatura es el indicador de que ya está saliendo agua de la red**.\n**El procedimiento completo del objetivo a):** grifo **próximo a los conductos principales**, limpio y **sin accesorios**; se **raspa** la suciedad (sarro, cieno, grasa); se **abre y cierra repetidamente**; se **DESINFECTA POR FLAMEADO** —*«después del flameado y apertura del grifo debería escucharse un chisporroteo»*—; y se deja correr a caudal medio.\n**Para saber el tiempo de purgado hace falta un esquema de la red.**",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f30",
+      "anverso": "En el objetivo **c)**, ¿por qué NO se desinfecta el grifo?",
+      "reverso": "**Porque lo que se investiga es exactamente lo que el consumidor se bebe**, con la contaminación del grifo incluida.\n*«Debería tenerse en consideración la contaminación del agua por bacterias procedentes del exterior del grifo y de cualquier otro accesorio o dispositivo. Por lo tanto, **dichos accesorios deberían mantenerse en su lugar y NO debería desinfectarse el grifo** antes del muestreo.»*\n**Cuándo se usa: «en situaciones especiales, por ejemplo, en caso de EPIDEMIAS».** Si hay un brote, lo que importa no es si la red está limpia, sino qué llega a la boca.\n**Y es la inversión exacta del objetivo a):** allí el grifo estorbaba y había que borrarlo; aquí **el grifo es el sospechoso**.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "concepto",
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f31",
+      "anverso": "¿Qué volúmenes mínimos hay que recordar?",
+      "reverso": "| Ensayo | Volumen mínimo | Fuente |\n| --- | --- | --- |\n| **Microbiológico general** | **500 mL** | ITOXDEF |\n| ***Legionella* spp.** | **1 000 mL** | RD 487/2022, tabla 4 |\n| **Aerobios totales** | **50-100 mL** | Íd. |\n| **Fisicoquímico completo** | **2 litros** | ITOXDEF |\n| **Cobre, plomo y níquel en grifo** | **1 litro** | **RD 3/2023** |\n| **Metales en general / DBO / cianuros** | **1 000 mL** | IDEAM |\n| **pH** | 50 mL | IDEAM |\n**El más preguntable es el del RD 3/2023:** *«deberá realizarse un muestreo aleatorio diurno de un volumen de **UN LITRO**»* para el cobre, el plomo y el níquel.",
+      "fuente": "RD 3/2023 anexo III A.1.a; RD 487/2022 tabla 4; ITOXDEF FTTM06; IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f32",
+      "anverso": "¿Qué tres métodos de muestreo en grifo admite el RD 3/2023 para el cobre, el plomo y el níquel?",
+      "reverso": "**El método normal (anexo III A.1.a):** de **un solo grifo del usuario, SIN DESCARGA PREVIA**, **muestreo ALEATORIO DIURNO** de **un litro**.\n**Y si esos parámetros superan el valor paramétrico** y se comprueba que el incumplimiento es de **la instalación interior** (art. 15.2), se admiten otros dos:\n1. **Muestreo con DESCARGA PREVIA y ESTANCAMIENTO DE 30 MINUTOS**, y después se toma la muestra.\n2. **Muestreo PROPORCIONAL:** una botella conectada al grifo que recoge un pequeño porcentaje del agua consumida **durante UNA SEMANA**. *«Este muestreo refleja mejor el consumo semanal promedio de los usuarios.»*\n**Los tres miden lo mismo con exigencias distintas**, y el segundo y el tercero solo entran en juego cuando ya hay un incumplimiento que explicar.",
+      "fuente": "RD 3/2023, anexo III, parte A.1",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f33",
+      "anverso": "¿Qué dice el RD 509/1996 sobre el deterioro de las muestras de vertido?",
+      "reverso": "**Anexo III, B.1:** *«Se aplicarán **prácticas internacionales de laboratorio correctas** con objeto de que **se reduzca al mínimo el deterioro de las muestras** en el período que media entre la recogida y el análisis.»*\n**Es una cláusula de las que valen por una tabla entera:** no fija envases ni plazos, pero **remite al estado del arte** y hace exigible todo lo que este tema desarrolla.\n**Y el resto del método de toma:** muestras durante **24 horas**, **proporcionalmente al caudal o a intervalos regulares**, en **el mismo punto claramente definido** de la salida de la instalación **y, de ser necesario, en su entrada**.\n**Además:** *«no se computarán los valores extremos… cuando sean consecuencia de situaciones inusuales, como las ocasionadas por las lluvias intensas»*.",
+      "fuente": "RD 509/1996, anexo III, apartados A.1 y B.1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f34",
+      "anverso": "¿Por qué el fosfato disuelto y los metales disueltos hay que **filtrarlos de inmediato**?",
+      "reverso": "**Porque si se espera, el reparto entre lo disuelto y lo particulado CAMBIA.** Parte de lo que iba en suspensión se disuelve —o al revés— y lo que se mide deja de ser lo que había en el momento de la toma.\n**La tabla del IDEAM lo exige literalmente:**\n- **Metales disueltos:** *«filtrar inmediatamente, adicionar HNO₃ y llevar a pH < 2, refrigerar»*.\n- **Fosfato disuelto:** *«filtrar inmediatamente después de su recolección, refrigerar»*.\n**Y enlaza con la distinción del tema 35:** las NCA del RD 817/2015 se refieren a la **concentración disuelta**, obtenida por **filtración a 0,45 µm**. Si esa filtración se hace tres días después, el dato ya no vale.\n**Para el contenido TOTAL, en cambio, no se filtra: se digiere.**",
+      "fuente": "IDEAM M-S-LC-I004; RD 817/2015 anexo IV B.3 (tema 35)",
+      "etiquetas": [
+        "fundamento",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f35",
+      "anverso": "¿Qué norma rige la **conservación y manipulación** de las muestras, y qué ha pasado con ella?",
+      "reverso": "**UNE-EN ISO 5667-3:2024** (ISO 5667-3:2024), *«Calidad del agua. Muestreo. Parte 3: Conservación y manipulación de las muestras de agua»*.\n| Edición | Estado |\n| --- | --- |\n| **UNE-EN ISO 5667-3:2019** | **ANULADA el 11/12/2024** |\n| **UNE-EN ISO 5667-3:2024** | **LA VIGENTE** |\n**Es la que lleva la tabla de envase, conservante y plazo por parámetro**, que es justo lo que pregunta el supuesto del examen.\n**Comité: CTN 77/SC 1 «Agua»**, el mismo que casi todas las normas de los temas 21 a 35.\n*(Ojo: el enunciado del supuesto cita el RD 3/2023, pero esa tabla no está en el real decreto.)*",
+      "fuente": "Buscador de UNE, fichas N0061431 y N0073842",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f36",
+      "anverso": "¿Qué siete cosas pueden estropear una muestra, y cuál es la contramedida de cada una?",
+      "reverso": "| Riesgo | Contramedida | Parámetros |\n| --- | --- | --- |\n| **Se pega a la pared** | Elegir el **material** del envase | Metales, HAP, fósforo |\n| **Se evapora** | **Llenar sin cámara de aire** | COV, THM, oxígeno |\n| **Las bacterias siguen vivas** | **Neutralizar** y **refrigerar** | Microbiología |\n| **Se oxida o precipita** | **Acidificar** | Metales, nutrientes |\n| **Se volatiliza en medio ácido** | **Alcalinizar** | Cianuros |\n| **La luz lo degrada** | **Vidrio ámbar** y oscuridad | Cianuros, COT |\n| **Cambia solo, y rápido** | **Medirlo IN SITU** | pH, T, O₂, cloro |\n**La idea que sostiene el tema entero: el error de muestreo NO SE CORRIGE en el laboratorio.** Da igual el límite de detección del ICP-MS si el metal se quedó pegado al frasco.",
+      "fuente": "Síntesis del apunte",
+      "etiquetas": [
+        "concepto",
+        "fundamento"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f37",
+      "anverso": "¿Qué pasa si se mete un termómetro en el frasco de la muestra microbiológica?",
+      "reverso": "**Que se contamina y la muestra ya no vale.** El RD 487/2022 lo prohíbe expresamente: *«**No se debe introducir ningún objeto o instrumento (termómetro, pH-metro, ...) dentro del recipiente** que contiene la muestra para la realización de análisis microbiológico.»*\n**Y da la solución en la misma frase:** *«Los posibles análisis in situ deben realizarse en una **SUB-MUESTRA en un recipiente APARTE**.»*\n**Es una regla práctica que se olvida con facilidad**, porque resulta cómodo medir la temperatura en el mismo frasco que se acaba de llenar.\n**Forma parte de las cinco «prácticas correctas de higiene» del anexo VI**, junto con lavarse las manos, no fumar ni comer, desinfectar el punto de toma y usar neveras exclusivas.",
+      "fuente": "RD 487/2022, anexo VI, parte D.4",
+      "etiquetas": [
+        "normativa",
+        "trampa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f38",
+      "anverso": "¿Qué plazo tiene la microbiología del agua de consumo, y cuál es «el exigible ante reclamación legal»?",
+      "reverso": "| Plazo | Condición |\n| --- | --- |\n| **6 horas** | *«Es conveniente realizar el análisis antes de transcurridas seis horas desde la toma de muestra; siendo este tiempo **el exigible ante cualquier reclamación legal**»* |\n| **24 horas** | Máximo, *«siempre que se mantengan las muestras **en la oscuridad y refrigeradas entre 2 °C y 8 °C**»* |\n**Y una prohibición tajante: NUNCA CONGELAR las muestras para este tipo de análisis.** Congelar rompe las células y falsea el recuento a la baja.\n**Por eso la HORA del muestreo va siempre en el informe:** sin ella no se puede demostrar que se respetó el plazo.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "etiquetas": [
+        "valores",
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t36-f39",
+      "anverso": "¿Cómo se toma la muestra en un **spa o jacuzzi** para analizar *Legionella*?",
+      "reverso": "**RD 487/2022, anexo VI, parte E.3.** Para sistemas de agua climatizada con aerosolización:\n1. **Abrir antes los difusores de agua y las soplantes de aire durante al menos UN MINUTO.**\n2. **Sumergir el envase a unos 30 cm de profundidad**, en posición **prácticamente horizontal** pero **con la boca apuntando hacia arriba**, *«de manera que **no se disperse el neutralizante** del envase»*.\n3. Tomar también muestra **en el retorno, en el punto más alejado o en la zona de recirculación**.\n4. **Determinar la temperatura y los restantes parámetros in situ.**\n5. Y por último, los envases **para los físico-químicos**.\n**El detalle de la boca hacia arriba es exquisito:** si se sumerge de lado, **el neutralizante se sale antes de que entre el agua**.",
+      "fuente": "RD 487/2022, anexo VI, parte E.3",
+      "etiquetas": [
+        "normativa",
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f40",
+      "anverso": "¿Cuándo se analiza la **biocapa** y cómo se toma?",
+      "reverso": "**Por RASPADO CON TORUNDA**, y el material es *«torundas estériles y tubos de transporte estériles de cierre antifugas con el diluyente adecuado (solución de acuerdo con el **anexo C de la norma UNE-EN ISO 11731:2017**, Calidad del agua. Recuento de *Legionella*)»*.\n**El RD 487/2022 (parte F) dice cuándo es obligatorio analizarla:**\n1. En **la investigación tras la declaración de casos o brotes** que pudieran asociarse a la instalación.\n2. Cuando se pretenda **comprobar la eficacia de los tratamientos de limpieza y desinfección de choque**.\n3. Cuando lo considere oportuno el responsable técnico: presencia **recurrente** de *Legionella*, instalaciones prioritarias, diagnóstico inicial…\n**Y va en segundo lugar en el orden de toma**, entre la microbiológica y la fisicoquímica.",
+      "fuente": "RD 487/2022, anexo VI, partes C, E y F",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f41",
+      "anverso": "¿Qué parámetro de la tabla de conservación **no requiere nada**, y cuál aguanta **seis meses**?",
+      "reverso": "**El CLORURO no requiere conservación**: envase de plástico o vidrio, 50 mL, **28 días** de plazo y ningún reactivo. No hay nada que se le pueda estropear.\n**Y aguantan SEIS MESES dos: los METALES en general y la DUREZA**, los dos acidificados a **pH < 2**.\n**La razón es la misma en ambos casos: no son biodegradables.** Un átomo de calcio o de plomo sigue siendo el mismo dentro de seis meses; lo único que podía pasarle —precipitar o pegarse a la pared— lo impide el ácido.\n**En el extremo contrario, 15 minutos:** pH, temperatura y oxígeno disuelto. **La escala completa va de un cuarto de hora a medio año.**",
+      "fuente": "IDEAM M-S-LC-I004",
+      "etiquetas": [
+        "valores",
+        "trampa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f42",
+      "anverso": "¿Qué norma de muestreo impone el RD 487/2022 para los envases microbiológicos, y en qué punto concreto?",
+      "reverso": "**La UNE-EN ISO 19458:2007**, y cita **el punto exacto**: *«Los envases utilizados en la toma de muestras para ensayos microbiológicos deberán cumplir el **punto 4.2.3 Inactivación de desinfectantes** de la norma UNE-EN ISO 19458:2007 Calidad del agua. Muestreo para el análisis microbiológico.»*\n**Es la misma norma que el RD 3/2023 usa para el agua de consumo**, allí citando **el objetivo b)** en vez de un apartado.\n**Conviene fijarse en el patrón:** los dos reales decretos **no describen el procedimiento, remiten a la norma y eligen dentro de ella**. Quien no tenga la norma delante no puede cumplirlos.",
+      "fuente": "RD 487/2022, anexo VI parte A.1.2; RD 3/2023, anexo III A.1.c",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f43",
+      "anverso": "¿Cómo se toma muestra de un **depósito** o de un **pozo**?",
+      "reverso": "**Depósitos:** *«El muestreo de tanques de almacenamiento de agua potable se hace normalmente **a partir del grifo situado en la salida**»*. Y para *Legionella*, el RD 487/2022 prefiere **la parte baja del depósito, a través de la purga**, *«ya que así se pueden recoger también muestra con posibles restos de material sedimentado»*; o el **interior**, en el punto **más alejado del aporte de agua** y de la inyección de desinfectante.\n**Pozos:** el objetivo manda, igual que en los grifos. Se distingue entre pozos **con bomba permanente** y **sin ella**, y para conocer **el agua subterránea** hace falta un **bombeo prolongado** —hasta renovar **tres veces el volumen del pozo**— y desinfección, preferiblemente por flameado.\n**La idea común: cuanto más «de la instalación» sea lo que se busca, menos se purga.**",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; RD 487/2022, anexo VI parte E.1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f44",
+      "anverso": "¿Por qué la muestra de **grasas y aceites** no se llena del todo, si es un análisis fisicoquímico?",
+      "reverso": "**Porque el disolvente de extracción se añade DENTRO del propio frasco.** La grasa se pega a la pared del envase, así que no basta con verter la muestra: hay que **extraerla con hexano en el mismo recipiente** y arrastrar lo adherido.\n**El IDEAM lo recoge así:** envase de **vidrio de BOCA ANCHA aforado**, 1 000 mL, *«**no llenar completamente el recipiente**, agregar HCl o H₂SO₄ para llevar a pH < 2, refrigerar a ≤ 6 °C»*; plazo, **28 días**.\n**Es la excepción que confirma la regla:** los fisicoquímicos se llenan al ras **salvo cuando el propio método necesita el hueco**.\n*(La técnica —filtración, extracción con hexano y pesada— es del tema 35, respuesta de 1322 C2 #37.)*",
+      "fuente": "IDEAM M-S-LC-I004; cuestionario 1322 C2 #37 (tema 35)",
+      "etiquetas": [
+        "trampa",
+        "concepto"
+      ],
+      "nucleo": false
+    },
+    {
+      "id": "t36-f45",
+      "anverso": "Resume el supuesto 5 de 1246: **cinco parámetros, cinco envases.**",
+      "reverso": "| Parámetro | Envase |\n| --- | --- |\n| **Hidrocarburos policíclicos aromáticos** | **VIDRIO con tapón de PTFE** |\n| **Carbono orgánico total** | **Plástico O vidrio**, indistintamente |\n| **Cationes y aniones** | **PLÁSTICO**, sin aditivo |\n| **COV — trihalometanos** | **VIDRIO con tapón de PTFE** |\n| **Análisis microbiológico** | **Plástico ESTÉRIL con tiosulfato sódico** |\n**Las tres reglas que generan las cinco respuestas:**\n1. **Orgánico → vidrio.** El plástico lo adsorbe.\n2. **Inorgánico → plástico.** El vidrio cede traza.\n3. **Microbiología → estéril y con neutralizante.** Siempre.\n**Si te llevas una sola tabla de este tema, que sea esta.**",
+      "fuente": "Cuestionario 1246, segundo ejercicio, supuesto 5, preguntas 21 a 25",
+      "etiquetas": [
+        "examen",
+        "valores"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t36-q01",
+      "pregunta": "¿En qué envase se debe tomar la muestra de agua para el análisis de hidrocarburos policíclicos aromáticos?",
+      "opciones": [
+        "Envase de plástico con tiosulfato.",
+        "Envase de vidrio o plástico indistintamente, siempre que estén limpios.",
+        "Recipiente de vidrio con tapón con revestimiento interno de politetrafluoroetileno (PTFE)."
+      ],
+      "correcta": 2,
+      "explicacion": "Respuesta del supuesto 1246 C2 #21, con esos mismos distractores. Los HAP son compuestos orgánicos y el plástico los adsorbe; el tapón se reviste de PTFE porque una junta de goma aportaría o retendría compuestos.",
+      "fuente": "Cuestionario 1246 C2 #21",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q02",
+      "pregunta": "¿En qué envase se debe tomar la muestra para el análisis de cationes y aniones (calcio, magnesio, sodio, potasio, sulfato, cloruro, nitrato y fluoruro)?",
+      "opciones": [
+        "Recipiente de plástico.",
+        "Recipiente de plástico con tiosulfato sódico.",
+        "Recipiente de plástico con ácido nítrico."
+      ],
+      "correcta": 0,
+      "explicacion": "Respuesta del supuesto 1246 C2 #23. Plástico sin aditivo: son iones inorgánicos, el vidrio les cedería sodio, boro y silicio, y no necesitan conservante. El tiosulfato es de microbiología y el ácido nítrico, de metales.",
+      "fuente": "Cuestionario 1246 C2 #23",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q03",
+      "pregunta": "¿En qué envase se debe tomar la muestra para el análisis microbiológico de un agua de consumo?",
+      "opciones": [
+        "Recipiente de vidrio oscuro.",
+        "Recipiente de plástico estéril con tiosulfato sódico.",
+        "Recipiente de plástico."
+      ],
+      "correcta": 1,
+      "explicacion": "Respuesta del supuesto 1246 C2 #25. Las tres condiciones cuentan: estéril, con tiosulfato para neutralizar el cloro residual, y sin llenar del todo para poder homogeneizar antes de sembrar.",
+      "fuente": "Cuestionario 1246 C2 #25",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q04",
+      "pregunta": "Las muestras para análisis microbiológico de Legionella y aerobios se toman en:",
+      "opciones": [
+        "Recipiente de plástico con neutralizante del biocida.",
+        "Recipiente de vidrio oscuro con tapón con revestimiento interno de teflón.",
+        "Recipiente estéril de plástico con neutralizante del biocida."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta 1246 C2 #13. La trampa es de una sola palabra: la primera opción es idéntica salvo que omite «estéril», y un envase limpio no basta para un ensayo microbiológico.",
+      "fuente": "Cuestionario 1246 C2 #13",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q05",
+      "pregunta": "Respecto al volumen de muestra necesario para analizar Legionella por cultivo:",
+      "opciones": [
+        "Se requiere un volumen mínimo de 1.000 ml y siempre debe dejarse una pequeña cámara de aire sobre el nivel del agua.",
+        "Se requiere un volumen mínimo de 500 ml y el envase se debe llenar completamente.",
+        "Se requiere un volumen mínimo de 1.000 ml y el envase se debe llenar completamente."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta 1246 C2 #14, y la trampa está en la tercera opción: da bien el volumen pero manda llenar del todo. El RD 487/2022, anexo VI parte A.1, exige que «siempre debe dejarse una pequeña cámara de aire sobre el nivel del agua».",
+      "fuente": "Cuestionario 1246 C2 #14; RD 487/2022, anexo VI parte A.1",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q06",
+      "pregunta": "Según el RD 487/2022, en los ensayos QUÍMICOS y físico-químicos el recipiente:",
+      "opciones": [
+        "Debe dejar siempre una pequeña cámara de aire, igual que en microbiología.",
+        "Se debe llenar completamente, de forma que no quede una cámara de aire por encima de la muestra.",
+        "Debe llenarse hasta dos tercios de su capacidad."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo VI, parte B.1. Es justo lo contrario que en microbiología, y a propósito: sin cámara de aire lo volátil no tiene adónde escaparse. La cámara de la muestra microbiológica existe para poder agitar antes de sembrar.",
+      "fuente": "RD 487/2022, anexo VI, partes A.1 y B.1",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q07",
+      "pregunta": "¿Por qué no deben usarse envases de vidrio para la determinación de elementos traza?",
+      "opciones": [
+        "Porque el vidrio adsorbe los metales en su superficie.",
+        "Porque el vidrio no resiste la acidificación con ácido nítrico.",
+        "Porque el vidrio cede a la muestra elementos como sodio, boro y silicio."
+      ],
+      "correcta": 2,
+      "explicacion": "El plástico y el vidrio tienen defectos opuestos: el plástico adsorbe compuestos orgánicos y el fósforo, y el vidrio cede elementos traza. De ahí todo el reparto de envases por parámetro.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q08",
+      "pregunta": "¿Para qué sirve el tiosulfato sódico en un envase de muestreo?",
+      "opciones": [
+        "Para neutralizar el cloro residual, que si no seguiría actuando sobre los microorganismos dentro del frasco.",
+        "Para acidificar la muestra y evitar que los metales precipiten.",
+        "Para fijar el oxígeno disuelto en el momento de la toma."
+      ],
+      "correcta": 0,
+      "explicacion": "Al menos 20 mg por litro. Tiene dos ventajas: no afecta a la muestra y sirve también para aguas no cloradas, así que se pone siempre. La acidificación de metales es con HNO₃, y quien fija el oxígeno es el sulfato de manganeso(II) del método de Winkler.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q09",
+      "pregunta": "Si no se dispone de envases con tiosulfato para una muestra microbiológica de agua clorada:",
+      "opciones": [
+        "La muestra no puede tomarse en ningún caso.",
+        "El agua debe llegar al laboratorio antes de transcurridos 15 minutos desde su recogida.",
+        "Basta con refrigerar la muestra entre 2 y 8 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "O se neutraliza el cloro o se corre: el desinfectante sigue matando microorganismos dentro del frasco y el recuento saldría falsamente bajo. La refrigeración frena el crecimiento, pero no detiene la acción del cloro.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3"
+    },
+    {
+      "id": "t36-q10",
+      "pregunta": "¿En qué plazo debe analizarse una muestra microbiológica de agua de consumo?",
+      "opciones": [
+        "Antes de seis horas, siendo ese el tiempo exigible ante cualquier reclamación legal; como máximo 24 horas si se mantiene a oscuras y entre 2 y 8 °C.",
+        "Antes de 48 horas, refrigerada o congelada indistintamente.",
+        "Antes de 24 horas, sin más condiciones."
+      ],
+      "correcta": 0,
+      "explicacion": "Y una prohibición tajante: nunca congelar las muestras para análisis microbiológico, porque la congelación rompe las células y falsea el recuento a la baja.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q11",
+      "pregunta": "¿Qué parámetros deben determinarse in situ, con un plazo máximo del orden de 15 minutos?",
+      "opciones": [
+        "Dureza, alcalinidad y sulfato.",
+        "pH, temperatura y oxígeno disuelto.",
+        "DQO, DBO y sólidos en suspensión."
+      ],
+      "correcta": 1,
+      "explicacion": "Con ellos va el cloro libre residual, por el mismo motivo: cambian solos y rápido. El pH se desplaza al perder CO₂, la temperatura se iguala con el ambiente y el oxígeno se intercambia con el aire. La dureza, en cambio, aguanta seis meses acidificada.",
+      "fuente": "IDEAM M-S-LC-I004; tema 25",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q12",
+      "pregunta": "¿Qué conservante se usa para las muestras destinadas a la determinación de metales?",
+      "opciones": [
+        "Ácido sulfúrico hasta pH < 2.",
+        "Hidróxido sódico hasta pH > 12.",
+        "Ácido nítrico hasta pH < 2."
+      ],
+      "correcta": 2,
+      "explicacion": "El HNO₃ evita que los metales precipiten y que se adsorban a la pared del envase. El H₂SO₄ es el de la DQO, el nitrógeno y el fósforo, donde lo que se busca es inhibir la actividad bacteriana; y el NaOH es el de los cianuros, que en medio ácido se volatilizarían como HCN.",
+      "fuente": "IDEAM M-S-LC-I004"
+    },
+    {
+      "id": "t36-q13",
+      "pregunta": "¿Por qué la muestra para DBO no se acidifica?",
+      "opciones": [
+        "Porque el ácido interferiría en la lectura del oxímetro.",
+        "Porque acidificar mataría a los microorganismos, que son los que hacen la medida.",
+        "Porque la DBO se determina siempre in situ."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el único parámetro global que solo se refrigera, y por eso es también el de plazo más corto de los de laboratorio: 48 horas. Su hermana la DQO sí se acidifica con H₂SO₄ y aguanta 28 días, porque allí el oxidante es químico.",
+      "fuente": "IDEAM M-S-LC-I004; tema 34",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q14",
+      "pregunta": "En el muestreo microbiológico de agua, la muestra debe ser:",
+      "opciones": [
+        "Siempre una muestra simple: no se admiten muestras compuestas ni integradas.",
+        "Siempre una muestra compuesta de 24 horas.",
+        "Una muestra integrada de al menos tres puntos del sistema."
+      ],
+      "correcta": 0,
+      "explicacion": "Mezclar dos aguas es darle a las bacterias de una el alimento de la otra, y perder la información de dónde estaba el problema. La muestra compuesta de 24 horas es, en cambio, la del vertido de una EDAR (RD 509/1996).",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3"
+    },
+    {
+      "id": "t36-q15",
+      "pregunta": "Los tres objetivos de muestreo en grifo de la UNE-EN ISO 19458 se refieren, respectivamente, a conocer la calidad:",
+      "opciones": [
+        "Del agua bruta, del agua tratada y del agua distribuida.",
+        "De la red de distribución, del agua tal y como se suministra en el grifo y del agua tal y como se consume.",
+        "Microbiológica, físico-química y radiológica."
+      ],
+      "correcta": 1,
+      "explicacion": "Y cada objetivo lleva un procedimiento distinto: con el a) hay que borrar el grifo del resultado (flameado y correr hasta temperatura constante); con el b) se retira el accesorio y se desinfecta; con el c) no se toca nada.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; UNE-EN ISO 19458:2007",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q16",
+      "pregunta": "¿Qué objetivo de muestreo exige el RD 3/2023 para los parámetros microbiológicos en el grifo del usuario?",
+      "opciones": [
+        "El objetivo a).",
+        "El objetivo b).",
+        "El objetivo c)."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, parte A.1.c: el muestreo se hará con arreglo a la UNE-EN ISO 19458 «con objetivo b)». Esa letra decide el procedimiento entero: retirar el accesorio, desinfectar el grifo y dejar correr lo mínimo.",
+      "fuente": "RD 3/2023, anexo III, parte A.1.c",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q17",
+      "pregunta": "En el objetivo c) del muestreo en grifo —conocer el agua tal y como se consume—:",
+      "opciones": [
+        "Se desinfecta el grifo por flameado y se retiran todos los accesorios.",
+        "Se deja correr el agua hasta alcanzar temperatura constante.",
+        "Ni se desinfecta el grifo ni se retiran los accesorios, porque su contaminación forma parte de lo que se investiga."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el método de las situaciones especiales, por ejemplo en caso de epidemias: lo que importa no es si la red está limpia, sino qué llega a la boca del consumidor. Las otras dos opciones describen el objetivo a).",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3"
+    },
+    {
+      "id": "t36-q18",
+      "pregunta": "Según el RD 3/2023, las muestras para cobre, plomo y níquel en el grifo del usuario se toman:",
+      "opciones": [
+        "De un solo grifo, sin descarga previa, mediante muestreo aleatorio diurno de un volumen de un litro.",
+        "Tras dejar correr el agua dos minutos, en un volumen de 500 ml.",
+        "Mediante muestreo proporcional durante una semana, en todos los casos."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo III, A.1.a. Sin descarga previa porque esos tres metales vienen de la tubería: purgar sería lavar la evidencia. El muestreo proporcional de una semana es una de las alternativas del apartado b), y solo entra en juego si ya se ha superado el valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte A.1",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q19",
+      "pregunta": "¿Qué norma regula la conservación y manipulación de las muestras de agua?",
+      "opciones": [
+        "UNE-EN ISO 5667-1, sobre diseño de programas de muestreo.",
+        "UNE-EN ISO 5667-3, en su edición de 2024.",
+        "UNE-EN ISO 19458, sobre muestreo para análisis microbiológico."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la que lleva la tabla de envase, conservante y plazo por parámetro. La edición de 2024 anuló a la de 2019 el 11 de diciembre de 2024, así que citar la de 2019 hoy es citar una norma anulada.",
+      "fuente": "Buscador de UNE, fichas N0061431 y N0073842",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q20",
+      "pregunta": "Cuando en un mismo punto se van a tomar muestras microbiológicas, de biocapa y físico-químicas, el orden correcto es:",
+      "opciones": [
+        "Físico-química, microbiológica y biocapa.",
+        "Biocapa, microbiológica y físico-química.",
+        "Microbiológica, biocapa y físico-química."
+      ],
+      "correcta": 2,
+      "explicacion": "RD 487/2022, anexo VI parte E. Lo estéril va primero: cada manipulación es una oportunidad de contaminar, y la muestra microbiológica es la única que no admite ninguna.",
+      "fuente": "RD 487/2022, anexo VI, parte E",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q21",
+      "pregunta": "Al tomar una muestra para análisis microbiológico, la medida in situ de la temperatura o del pH:",
+      "opciones": [
+        "Se realiza introduciendo el termómetro o el electrodo en el propio recipiente de la muestra.",
+        "Se realiza en una submuestra en un recipiente aparte, sin introducir ningún instrumento en el frasco de la muestra.",
+        "Se omite: esos parámetros se miden siempre en el laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la práctica correcta de higiene número 4 del anexo VI del RD 487/2022, y se olvida con facilidad porque resulta cómodo medir en el frasco que se acaba de llenar.",
+      "fuente": "RD 487/2022, anexo VI, parte D.4"
+    },
+    {
+      "id": "t36-q22",
+      "pregunta": "Al muestrear para Legionella spp., ¿qué parámetros exige el RD 487/2022 determinar in situ?",
+      "opciones": [
+        "Al menos pH, temperatura, conductividad y, en su caso, desinfectante residual.",
+        "Únicamente la temperatura.",
+        "pH, turbidez y sólidos en suspensión."
+      ],
+      "correcta": 0,
+      "explicacion": "El pH se mide «si el efecto del desinfectante depende del pH», que es justo lo que ocurre con el cloro. En el examen (1246 C2 #15) la respuesta correcta recogía tres de esos cuatro: pH, temperatura y desinfectante residual.",
+      "fuente": "RD 487/2022, artículo 11; cuestionario 1246 C2 #15",
+      "nucleo": true
+    },
+    {
+      "id": "t36-q23",
+      "pregunta": "El muestreo de un vertido de una instalación de tratamiento de aguas residuales urbanas se realiza, según el RD 509/1996:",
+      "opciones": [
+        "Mediante muestras puntuales tomadas a cualquier hora del día.",
+        "Durante un período de veinticuatro horas, proporcionalmente al caudal o a intervalos regulares.",
+        "Mediante muestras integradas de al menos tres puntos del cauce receptor."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, B.1. Y en el mismo punto claramente definido de la salida de la instalación «y de ser necesario en su entrada»: sin el dato de entrada no se puede calcular el porcentaje de reducción.",
+      "fuente": "RD 509/1996, anexo III, apartado B.1"
+    },
+    {
+      "id": "t36-q24",
+      "pregunta": "¿Qué obligación material impone el reglamento aragonés de vertidos respecto al punto de toma de muestras?",
+      "opciones": [
+        "Disponer de un caudalímetro homologado con registro en continuo.",
+        "Notificar cada vertido con 24 horas de antelación.",
+        "Disponer de una arqueta de registro de libre acceso desde el exterior, acondicionada para extraer muestras y aforar caudales."
+      ],
+      "correcta": 2,
+      "explicacion": "Artículo 24 del Decreto 38/2004. Sin un punto accesible y acondicionado, la obligación de control sería inaplicable.",
+      "fuente": "Decreto 38/2004 de Aragón (texto refundido), artículo 24"
+    },
+    {
+      "id": "t36-q25",
+      "pregunta": "¿Cuánto tiempo puede conservarse una muestra acidificada destinada a la determinación de metales?",
+      "opciones": [
+        "48 horas.",
+        "28 días.",
+        "Seis meses."
+      ],
+      "correcta": 2,
+      "explicacion": "Los metales no se degradan: lo único que podía pasarles —precipitar o adsorberse a la pared— lo impide el ácido nítrico a pH < 2. El mercurio es la excepción, con 28 días. Las 48 horas son el plazo de la DBO, el nitrato y el nitrito.",
+      "fuente": "IDEAM M-S-LC-I004"
+    },
+    {
+      "id": "t36-q26",
+      "pregunta": "¿Qué parámetro de los siguientes NO requiere conservante alguno?",
+      "opciones": [
+        "El cloruro.",
+        "El fósforo total.",
+        "El cianuro total."
+      ],
+      "correcta": 0,
+      "explicacion": "El cloruro se toma en plástico o vidrio, sin reactivo, y aguanta 28 días: no hay nada que se le pueda estropear. El fósforo total lleva H₂SO₄ a pH < 2 y el cianuro, NaOH a pH > 12 y oscuridad.",
+      "fuente": "IDEAM M-S-LC-I004"
+    },
+    {
+      "id": "t36-q27",
+      "pregunta": "¿Cómo debe esterilizarse un envase destinado a la toma de muestras para análisis microbiológico?",
+      "opciones": [
+        "Por autoclave a 120 °C durante 30 minutos, o por calor seco a 180 °C durante 2 horas.",
+        "Por lavado con ácido nítrico y enjuagado con agua destilada.",
+        "Por inmersión en hipoclorito sódico durante una hora."
+      ],
+      "correcta": 0,
+      "explicacion": "El lavado con ácido es la preparación de los envases para metales, no una esterilización. Y el hipoclorito dejaría residuos de desinfectante justo en el envase donde se quieren contar microorganismos.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06 Rev-3"
+    },
+    {
+      "id": "t36-q28",
+      "pregunta": "En el muestreo de aguas para Legionella, las muestras a temperaturas muy diferentes:",
+      "opciones": [
+        "Pueden transportarse juntas si están todas refrigeradas.",
+        "No se deben transportar en la misma nevera.",
+        "Deben mezclarse en un mismo envase para promediar."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo VI lo pone con ejemplo: no mezclar muestras de agua caliente a 60 °C con muestras de agua fría a 20 °C. Y tampoco se mezclan en un mismo envase muestras de distintas instalaciones ni de distintos puntos.",
+      "fuente": "RD 487/2022, anexo VI, parte A.2"
+    },
+    {
+      "id": "t36-q29",
+      "pregunta": "¿Por qué debe evitarse la exposición de las muestras a la luz durante el transporte?",
+      "opciones": [
+        "Para evitar el calentamiento de los envases de plástico.",
+        "Para minimizar la fotodegradación de algunos compuestos.",
+        "Porque la luz altera la calibración de los equipos de medida."
+      ],
+      "correcta": 1,
+      "explicacion": "Y en las muestras microbiológicas hay una segunda razón: la luz favorece la fotosíntesis de las algas presentes. Los parámetros especialmente fotosensibles, como los cianuros y el COT, exigen además envase ámbar.",
+      "fuente": "Instituto de Toxicología de la Defensa, FTTM06; IDEAM M-S-LC-I004"
+    },
+    {
+      "id": "t36-q30",
+      "pregunta": "En la determinación de metales DISUELTOS y de fosfato disuelto, la filtración debe hacerse:",
+      "opciones": [
+        "Inmediatamente después de la recolección, en el propio punto de muestreo.",
+        "Al llegar la muestra al laboratorio, dentro de las 48 horas siguientes.",
+        "Después de la digestión ácida, justo antes de la medida."
+      ],
+      "correcta": 0,
+      "explicacion": "Si se espera, parte de lo particulado se disuelve —o al revés— y el reparto entre disuelto y particulado deja de ser el del momento de la toma. Para el contenido TOTAL no se filtra: se digiere (tema 35).",
+      "fuente": "IDEAM M-S-LC-I004; RD 817/2015 anexo IV B.3"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t36-s01",
+      "titulo": "Supuesto 1. Una muestra recogida en varios envases",
+      "enunciado": "En el Laboratorio de Salud Pública se recibe una muestra de **agua de consumo** de la red municipal para determinar los parámetros que establece el **RD 3/2023**. La muestra se ha recogido **en varios envases**.\n\nSeñale de qué envase tomaría el agua para su análisis, **en función del parámetro o grupo de parámetros a analizar**, y cómo se ha debido tomar.",
+      "preguntas": [
+        {
+          "id": "t36-s01-q1",
+          "pregunta": "Análisis de hidrocarburos policíclicos aromáticos:",
+          "opciones": [
+            "Envase de plástico con tiosulfato.",
+            "Envase de vidrio o plástico indistintamente, siempre que estén limpios.",
+            "Envase de plástico con ácido clorhídrico.",
+            "Recipiente de vidrio con tapón con revestimiento interno de politetrafluoroetileno (PTFE)."
+          ],
+          "correcta": 3,
+          "explicacion": "Respuesta literal de 1246 C2 #21. Los HAP son orgánicos y el plástico los adsorbe; el tapón lleva revestimiento de PTFE porque una junta de goma o plástico blando aportaría o retendría compuestos.",
+          "fuente": "Cuestionario 1246 C2 #21"
+        },
+        {
+          "id": "t36-s01-q2",
+          "pregunta": "Análisis de carbono orgánico total:",
+          "opciones": [
+            "Envase de plástico o de vidrio, indistintamente.",
+            "Únicamente envase de plástico.",
+            "Únicamente envase de vidrio.",
+            "Ninguna de las anteriores."
+          ],
+          "correcta": 0,
+          "explicacion": "Es la pregunta 1246 C2 #22, donde la respuesta correcta era «las respuestas a) y b) son correctas»: el COT no sufre por ninguno de los dos materiales. La tabla del IDEAM lo recoge igual: vidrio ámbar, vidrio, plástico o fluoropolímero.",
+          "fuente": "Cuestionario 1246 C2 #22; IDEAM M-S-LC-I004"
+        },
+        {
+          "id": "t36-s01-q3",
+          "pregunta": "Análisis de COV y trihalometanos:",
+          "opciones": [
+            "Recipiente de plástico con ácido nítrico.",
+            "Recipiente de vidrio con tapón con revestimiento interno de PTFE, llenado sin burbujas y sin cámara de aire.",
+            "Recipiente de plástico especialmente limpio.",
+            "Envase de vidrio transparente especialmente limpio, dejando cámara de aire."
+          ],
+          "correcta": 1,
+          "explicacion": "Respuesta de 1246 C2 #24. Y el detalle del llenado es decisivo: si queda aire, los compuestos volátiles se reparten entre el agua y ese hueco y se mide de menos. Por eso el RD 487/2022 manda llenar completamente los envases de ensayos químicos.",
+          "fuente": "Cuestionario 1246 C2 #24; Instituto de Toxicología de la Defensa, FTTM06"
+        },
+        {
+          "id": "t36-s01-q4",
+          "pregunta": "La muestra para el análisis microbiológico llega en un envase estéril con tiosulfato, lleno hasta el borde. ¿Es correcta?",
+          "opciones": [
+            "Sí: el envase es el adecuado y el llenado completo evita la entrada de aire.",
+            "No: el envase es el adecuado, pero debía haberse dejado una pequeña cámara de aire para poder homogeneizar antes de sembrar.",
+            "No: para microbiología el envase debe ser de vidrio ámbar.",
+            "Sí, siempre que se analice antes de 48 horas."
+          ],
+          "correcta": 1,
+          "explicacion": "El envase estéril con tiosulfato es exactamente el que responde 1246 C2 #25, pero el llenado es erróneo: el RD 487/2022 exige que «siempre debe dejarse una pequeña cámara de aire sobre el nivel del agua». Y el plazo de la microbiología de agua de consumo es de 6 h, ampliable a 24, no de 48.",
+          "fuente": "Cuestionario 1246 C2 #25; RD 487/2022 anexo VI A.1; ITOXDEF FTTM06"
+        },
+        {
+          "id": "t36-s01-q5",
+          "pregunta": "En la misma vivienda hay que determinar además plomo. ¿Cómo se toma esa muestra?",
+          "opciones": [
+            "Dejando correr el agua hasta que alcance temperatura constante, para que sea representativa de la red.",
+            "Tras retirar la alcachofa y desinfectar el grifo, como en el muestreo microbiológico.",
+            "De un solo grifo del usuario, sin descarga previa, mediante muestreo aleatorio diurno de un volumen de un litro.",
+            "Mediante una muestra compuesta de 24 horas proporcional al caudal."
+          ],
+          "correcta": 2,
+          "explicacion": "RD 3/2023, anexo III A.1.a. El plomo viene de la tubería y solo aparece en el agua que ha estado en contacto con ella: purgar sería lavar la evidencia. Es el procedimiento opuesto al microbiológico, y en el mismo grifo.",
+          "fuente": "RD 3/2023, anexo III, parte A.1.a"
+        }
+      ]
+    },
+    {
+      "id": "t36-s02",
+      "titulo": "Supuesto 2. Muestreo en un spa para investigar Legionella",
+      "enunciado": "Tras la notificación de un caso de legionelosis, la autoridad sanitaria ordena el muestreo de un **spa/jacuzzi** de un establecimiento hotelero. Hay que tomar muestra para ***Legionella* spp.**, para **aerobios totales**, para **biocapa** y para varios **parámetros físico-químicos**.\n\nEl agua del vaso está **tratada con un biocida** y el punto de muestreo es el propio vaso.",
+      "preguntas": [
+        {
+          "id": "t36-s02-q1",
+          "pregunta": "¿En qué envase y con qué volumen se toma la muestra para Legionella spp.?",
+          "opciones": [
+            "Recipiente de vidrio oscuro con tapón de teflón, 500 ml, lleno al ras.",
+            "Recipiente de plástico con neutralizante del biocida, 500 ml, lleno al ras.",
+            "Recipiente estéril de polietileno con neutralizante del biocida, 1.000 ml, dejando una pequeña cámara de aire.",
+            "Recipiente estéril de vidrio sin aditivos, 2.000 ml, lleno al ras."
+          ],
+          "correcta": 2,
+          "explicacion": "RD 487/2022, anexo VI parte A.1 y tabla 4. Las dos trampas del examen están aquí: la segunda opción omite «estéril» (1246 C2 #13) y varias dan el volumen bien pero mandan llenar del todo (1246 C2 #14).",
+          "fuente": "RD 487/2022, anexo VI parte A.1 y tabla 4; cuestionarios 1246 C2 #13 y #14"
+        },
+        {
+          "id": "t36-s02-q2",
+          "pregunta": "¿En qué orden deben tomarse las muestras en este punto?",
+          "opciones": [
+            "Físico-químicas primero, para no perder los parámetros inestables; después la microbiológica y la biocapa.",
+            "Microbiológica primero, después la biocapa por raspado con torunda y por último las físico-químicas.",
+            "Biocapa primero, porque es la que exige raspado; después las demás en cualquier orden.",
+            "El orden es indiferente mientras todas se tomen en la misma visita."
+          ],
+          "correcta": 1,
+          "explicacion": "RD 487/2022, anexo VI parte E. Lo estéril va primero: cada manipulación es una oportunidad de contaminar, y la muestra microbiológica es la única que no admite ninguna. Los envases físico-químicos van sin neutralizante.",
+          "fuente": "RD 487/2022, anexo VI, parte E"
+        },
+        {
+          "id": "t36-s02-q3",
+          "pregunta": "¿Cómo se sumerge el envase en el vaso del spa?",
+          "opciones": [
+            "Boca abajo, y se gira ya sumergido para que no entre agua superficial.",
+            "A ras de superficie, para recoger la película superficial donde se acumula la contaminación.",
+            "A unos 30 cm de profundidad, en posición prácticamente horizontal pero con la boca hacia arriba, para que no se disperse el neutralizante.",
+            "Desde el fondo del vaso, mediante una pértiga lastrada."
+          ],
+          "correcta": 2,
+          "explicacion": "RD 487/2022, anexo VI parte E.3. Y antes hay que abrir los difusores de agua y las soplantes de aire durante al menos un minuto. Si el envase se sumergiera de lado o boca abajo, el neutralizante se saldría antes de que entrara el agua.",
+          "fuente": "RD 487/2022, anexo VI, parte E.3"
+        },
+        {
+          "id": "t36-s02-q4",
+          "pregunta": "¿Qué parámetros hay que determinar in situ y cómo?",
+          "opciones": [
+            "Al menos pH, temperatura, conductividad y, en su caso, desinfectante residual, midiéndolos en una submuestra en recipiente aparte.",
+            "Solo la temperatura, introduciendo el termómetro en el envase de la muestra microbiológica.",
+            "pH, turbidez y sólidos en suspensión, en el propio vaso.",
+            "Ninguno: todos los parámetros se determinan en el laboratorio."
+          ],
+          "correcta": 0,
+          "explicacion": "Son los cuatro del artículo 11 del RD 487/2022, y la forma de medirlos es la práctica de higiene número 4 del anexo VI: nunca se introduce un instrumento en el frasco de la muestra microbiológica. En el examen (1246 C2 #15) la respuesta correcta recogía tres de los cuatro.",
+          "fuente": "RD 487/2022, artículo 11 y anexo VI parte D.4; cuestionario 1246 C2 #15"
+        },
+        {
+          "id": "t36-s02-q5",
+          "pregunta": "La muestra llegará al laboratorio en unas 20 horas. ¿A qué temperatura debe transportarse?",
+          "opciones": [
+            "Entre 6 y 18 °C, porque para Legionella y menos de 24 horas ese es el intervalo de la tabla 4.",
+            "A 5 ± 3 °C, igual que los aerobios totales.",
+            "Congelada a −20 °C para frenar cualquier crecimiento.",
+            "A temperatura ambiente, sin ninguna precaución."
+          ],
+          "correcta": 0,
+          "explicacion": "Tabla 4 del anexo VI: Legionella spp. a 6-18 °C si el ensayo empieza antes de 24 horas, y a 5 ± 3 °C solo si va a tardar entre 24 y 48. Refrigerar de más una muestra de Legionella le hace daño, y congelar una muestra microbiológica nunca se hace.",
+          "fuente": "RD 487/2022, anexo VI, tabla 4"
+        }
+      ]
+    }
+  ]
+}
