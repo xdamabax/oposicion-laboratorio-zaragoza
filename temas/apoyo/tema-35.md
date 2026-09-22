@@ -59,6 +59,9 @@ instrucción técnica** y qué pasos tiene una digestión ácida asistida por mi
 - **Digestión:** **UNE-EN ISO 15587-1 y -2** (agua regia y ácido nítrico), ya citadas en el
   tema 27.
 - **Nitrógeno total:** **UNE-EN 12260** y **UNE-EN ISO 11905-1**.
+  ⚠️ **Comprobado el 22/09/2026 al redactar el tema: la UNE-EN 12260:2004 está ANULADA**
+  desde el 25/05/2022, y su sustituta de 2022 también. La vigente es la
+  **UNE-EN ISO 20236:2025**. La UNE-EN ISO 11905-1:1998 sí sigue en vigor.
 - **Fósforo total:** **UNE-EN ISO 6878**, ya citada en el tema 25.
 - **Metales:** **UNE-EN ISO 11885** (ICP-OES) y **UNE-EN ISO 17294-2** (ICP-MS), ya citadas
   en el tema 27.
