@@ -63,6 +63,8 @@ export type TipoEsquema =
   | 'gradiente-elucion'
   | 'cloracion-punto-ruptura'
   | 'alcalinidad-valoracion'
+  | 'dbo-frente-a-dqo'
+  | 'solidos-del-agua'
 
 export type TipoMaterial =
   | 'matraz-aforado'

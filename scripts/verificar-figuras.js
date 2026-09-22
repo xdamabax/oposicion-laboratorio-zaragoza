@@ -441,6 +441,37 @@ function medir(sabotaje, ROJO) {
     )
   }
 
+  if (sabotaje === 40) {
+    const svg = porClave('dbo-frente-a-dqo')
+    // un tramo tardio de la curva, hundido: la DBO se "desconsumiria"
+    const c = pieza(svg, 'curva-dbo')
+    c.setAttribute(
+      'd',
+      puntos(c)
+        .map(([x, y], i) => `${i ? 'L' : 'M'}${x} ${x > 300 && x < 360 ? (y + 26).toFixed(1) : y}`)
+        .join(' '),
+    )
+  }
+  if (sabotaje === 41) {
+    const svg = porClave('dbo-frente-a-dqo')
+    // la DQO, por debajo de la DBO ultima: justo lo contrario de lo que pregunta el examen
+    const l = pieza(svg, 'nivel-dqo')
+    const u = num(pieza(svg, 'nivel-dbou'), 'y1')
+    l.setAttribute('y1', u + 18)
+    l.setAttribute('y2', u + 18)
+  }
+  if (sabotaje === 42) {
+    const svg = porClave('solidos-del-agua')
+    // los disueltos, colgados del mismo sitio que los suspendidos
+    pieza(svg, 'caja-disueltos').setAttribute('y', num(pieza(svg, 'caja-suspension'), 'y') + 44)
+  }
+  if (sabotaje === 43) {
+    const svg = porClave('solidos-del-agua')
+    // las dos temperaturas, intercambiadas: se calcinaria mas frio que se seca
+    const t = pieza(svg, 'rotulo-calcinacion')
+    t.textContent = t.textContent.replace('550', '95')
+  }
+
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
   control('Catálogo · todos los esquemas se ven a tamaño natural', () => {
@@ -1259,6 +1290,117 @@ function medir(sabotaje, ROJO) {
     )
   })
 
+
+  /*
+   * DBO frente a DQO. Lo que el examen pregunta (1322 #40) es que en un agua
+   * residual domestica la DQO es MAYOR que la DBO, y el dibujo tiene que poder
+   * demostrarlo: la curva se calcula con la cinetica de primer orden y los tres
+   * niveles son rectas cuya altura se puede comparar.
+   */
+  control('DBO · la curva solo SUBE: el oxígeno consumido no se devuelve', () => {
+    const pts = puntos(pieza(porClave('dbo-frente-a-dqo'), 'curva-dbo'))
+    for (let i = 1; i < pts.length; i++) {
+      // la y crece HACIA ABAJO: consumir mas oxigeno es que la y baje
+      if (pts[i][1] > pts[i - 1][1] + 0.2) {
+        throw new Error(
+          `entre x=${pts[i - 1][0].toFixed(0)} y x=${pts[i][0].toFixed(0)} la curva baja de ` +
+            `y=${pts[i - 1][1].toFixed(0)} a y=${pts[i][1].toFixed(0)}: el oxígeno ya consumido ` +
+            `no puede desconsumirse`,
+        )
+      }
+    }
+    const total = pts[0][1] - pts[pts.length - 1][1]
+    if (!(total > 40)) throw new Error(`la curva apenas sube: ${total.toFixed(0)} px`)
+    return `${pts.length} puntos, siempre creciente, ${total.toFixed(0)} px de subida`
+  })
+
+  control('DBO · DQO por encima de la DBO última, y la marca de los 5 días sobre la curva', () => {
+    const svg = porClave('dbo-frente-a-dqo')
+    const alturaDe = (pieza_) => num(pieza(svg, pieza_), 'y1')
+    const dqo = alturaDe('nivel-dqo')
+    const dbou = alturaDe('nivel-dbou')
+    const dbo5 = alturaDe('nivel-dbo5')
+    // y mas pequeña = valor mas alto
+    if (!(dqo < dbou && dbou < dbo5)) {
+      throw new Error(
+        `las alturas son DQO y=${dqo.toFixed(0)}, DBO última y=${dbou.toFixed(0)} y ` +
+          `DBO₅ y=${dbo5.toFixed(0)}: en un agua residual tiene que ser DQO > DBO última > DBO₅`,
+      )
+    }
+    const m = pieza(svg, 'marca-5-dias')
+    const pts = puntos(pieza(svg, 'curva-dbo'))
+    const x = num(m, 'x1')
+    let mejor = pts[0]
+    for (const q of pts) if (Math.abs(q[0] - x) < Math.abs(mejor[0] - x)) mejor = q
+    if (Math.abs(num(m, 'y1') - mejor[1]) > 3) {
+      throw new Error(
+        `la marca de los 5 días arranca en y=${num(m, 'y1').toFixed(0)} y la curva pasa por ` +
+          `y=${mejor[1].toFixed(0)}: la DBO₅ ES el valor de la curva a los cinco días`,
+      )
+    }
+    if (Math.abs(num(m, 'y1') - dbo5) > 3) {
+      throw new Error(
+        `la marca arranca en y=${num(m, 'y1').toFixed(0)} y la recta de la DBO₅ está en ` +
+          `y=${dbo5.toFixed(0)}: tienen que coincidir`,
+      )
+    }
+    return `DQO@${dqo.toFixed(0)} < última@${dbou.toFixed(0)} < DBO₅@${dbo5.toFixed(0)}, marca sobre la curva`
+  })
+
+  /*
+   * Los solidos. El arbol afirma dos cosas comprobables: que los suspendidos y
+   * los disueltos cuelgan los DOS del total y a la misma altura -son las dos
+   * mitades de un mismo reparto, no una cadena-, y que la calcinacion va
+   * DESPUES del secado y a MAS temperatura.
+   */
+  control('Sólidos · suspendidos y disueltos cuelgan los DOS del total, a la misma altura', () => {
+    const svg = porClave('solidos-del-agua')
+    const y = (p) => num(pieza(svg, p), 'y')
+    const total = y('caja-totales')
+    const susp = y('caja-suspension')
+    const dis = y('caja-disueltos')
+    if (Math.abs(susp - dis) > 1) {
+      throw new Error(
+        `"en suspensión" está en y=${susp} y "disueltos" en y=${dis}: son las DOS mitades del ` +
+          `mismo reparto, así que van a la misma altura`,
+      )
+    }
+    if (!(susp > total)) {
+      throw new Error(`los hijos (y=${susp}) no cuelgan por debajo del total (y=${total})`)
+    }
+    const vol = y('caja-volatiles')
+    const fij = y('caja-fijos')
+    if (Math.abs(vol - fij) > 1 || !(vol > susp)) {
+      throw new Error(
+        `"volátiles" (y=${vol}) y "fijos" (y=${fij}) tienen que ir a la misma altura y por ` +
+          `debajo de "en suspensión" (y=${susp})`,
+      )
+    }
+    return `total@${total} → suspensión/disueltos@${susp} → volátiles/fijos@${vol}`
+  })
+
+  control('Sólidos · se CALCINA más caliente de lo que se seca', () => {
+    const svg = porClave('solidos-del-agua')
+    const grados = (texto) => {
+      const m = texto.match(/(\d+)\s*°C/)
+      if (!m) throw new Error(`no hay temperatura en «${texto.trim()}»`)
+      return Number(m[1])
+    }
+    const calcina = grados(pieza(svg, 'rotulo-calcinacion').textContent)
+    const seca = [...svg.querySelectorAll('text')]
+      .map((t) => t.textContent)
+      .filter((t) => /secar/i.test(t))
+      .map(grados)[0]
+    if (seca === undefined) throw new Error('no encuentro la temperatura de secado')
+    if (!(calcina > seca)) {
+      throw new Error(
+        `el dibujo calcina a ${calcina} °C y seca a ${seca} °C: la calcinación quema la materia ` +
+          `orgánica, así que va MUY por encima del secado`,
+      )
+    }
+    return `secado ${seca} °C < calcinación ${calcina} °C`
+  })
+
   return resultados
 }
 
@@ -1304,6 +1446,10 @@ const SABOTAJES = {
   37: 'el rótulo del cloro libre, movido delante del punto de ruptura',
   38: 'el punto final de la fenolftaleína, despegado de la curva',
   39: 'un tramo de la curva de alcalinidad, levantado',
+  40: 'un tramo de la curva de la DBO, hundido',
+  41: 'la recta de la DQO, bajada por debajo de la DBO última',
+  42: 'la caja de los sólidos disueltos, descolgada un nivel',
+  43: 'la temperatura de calcinación, cambiada a 95 °C',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1353,6 +1499,10 @@ const CONTROL_DE = {
   37: [35],
   38: [36],
   39: [37],
+  40: [38],
+  41: [39],
+  42: [40],
+  43: [41],
 }
 
 async function main() {

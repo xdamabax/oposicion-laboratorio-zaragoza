@@ -37,6 +37,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'gradiente-elucion': 'Elución isocrática frente a elución en gradiente',
   'cloracion-punto-ruptura': 'Curva de cloración al punto de ruptura',
   'alcalinidad-valoracion': 'Valoración de la alcalinidad: los dos puntos finales',
+  'dbo-frente-a-dqo': 'Curva de la DBO frente a la DQO',
+  'solidos-del-agua': 'Los sólidos de un agua, separados por filtración y por calcinación',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -68,6 +70,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'gradiente-elucion': { ancho: 540, alto: 240 },
   'cloracion-punto-ruptura': { ancho: 500, alto: 284 },
   'alcalinidad-valoracion': { ancho: 490, alto: 282 },
+  'dbo-frente-a-dqo': { ancho: 510, alto: 290 },
+  'solidos-del-agua': { ancho: 560, alto: 300 },
 }
 
 const AZUL = '#9ecbe8'
@@ -2768,6 +2772,222 @@ function AlcalinidadValoracion() {
   )
 }
 
+
+/* ---------- Tema 34: aguas residuales ---------- */
+
+/**
+ * La curva de la DBO en el tiempo, con la DQO por encima.
+ *
+ * Lo que el dibujo AFIRMA es lo que el examen pregunta (1322 #40): en un agua
+ * residual domestica la DQO es MAYOR que la DBO. Y lo ensena con la razon: la
+ * DBO solo cuenta lo BIODEGRADABLE, y ademas a los cinco dias la reaccion aun
+ * no ha terminado, asi que la DBO5 se queda por debajo de la DBO ULTIMA.
+ *
+ * La curva no se traza a ojo: es la cinetica de primer orden
+ * DBO(t) = DBOu * (1 - e^(-k t)), muestreada punto a punto con k = 0,23 /dia,
+ * que es lo que hace que a los cinco dias se haya consumido el 68 %.
+ */
+function DboFrenteADqo() {
+  const X0 = 58
+  const ANCHO = 392
+  const BASE = 196
+  const DIAS = 20
+  /** mg/L por pixel: la DQO, que es el techo del dibujo, cae en y = 46 */
+  const DQO = 400
+  const DBO_U = 250
+  const K = 0.23
+  const yDe = (v: number) => BASE - (v / DQO) * (BASE - 46)
+  const xDe = (d: number) => X0 + (d / DIAS) * ANCHO
+
+  const pts: [number, number][] = []
+  for (let i = 0; i <= 200; i++) {
+    const d = (i / 200) * DIAS
+    pts.push([xDe(d), yDe(DBO_U * (1 - Math.exp(-K * d)))])
+  }
+  const path = pts.map(([x, y], i) => `${i ? 'L' : 'M'}${x.toFixed(1)} ${y.toFixed(1)}`).join(' ')
+
+  const dbo5 = DBO_U * (1 - Math.exp(-K * 5))
+  const nivel = (pieza: string, v: number, color: string, rotulo: string) => (
+    <g key={pieza}>
+      <line
+        data-pieza={pieza}
+        x1={X0}
+        y1={yDe(v)}
+        x2="462"
+        y2={yDe(v)}
+        stroke={color}
+        strokeWidth="1.2"
+        strokeDasharray="4 3"
+      />
+      <text x="466" y={yDe(v) + 3} fontSize="8" fill={color}>
+        {rotulo}
+      </text>
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1="38" x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2="462" y2={BASE} />
+      </g>
+      <text x="8" y="32" fontSize="8" fill="currentColor">
+        oxígeno consumido (mg/L)
+      </text>
+      <text x="462" y={BASE + 26} fontSize="8" textAnchor="end" fill="currentColor">
+        días de incubación a 20 °C
+      </text>
+
+      {nivel('nivel-dqo', DQO, ROJO, 'DQO')}
+      {nivel('nivel-dbou', DBO_U, AZUL, 'DBO última')}
+      {nivel('nivel-dbo5', dbo5, AZUL, 'DBO₅')}
+
+      <path data-pieza="curva-dbo" d={path} fill="none" stroke="currentColor" strokeWidth="1.8" />
+
+      {/* la marca del quinto dia, puesta sobre la curva calculada */}
+      <line
+        data-pieza="marca-5-dias"
+        x1={xDe(5)}
+        y1={yDe(dbo5)}
+        x2={xDe(5)}
+        y2={BASE}
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeDasharray="3 3"
+      />
+      <text x={xDe(5)} y={BASE + 25} fontSize="8.5" textAnchor="middle" fontWeight="bold" fill="currentColor">
+        5 días
+      </text>
+
+      {/* marcas del eje de tiempo */}
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {[0, 10, 15, 20].map((d) => (
+          <text key={d} x={xDe(d)} y={BASE + 12}>
+            {d}
+          </text>
+        ))}
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="240">
+          La DQO oxida con dicromato TODO lo oxidable, biodegradable o no. La DBO solo cuenta lo que
+        </text>
+        <text x="8" y="253">
+          las bacterias son capaces de comerse, y por eso siempre sale por debajo.
+        </text>
+        <text x="8" y="266">
+          Y a los cinco días la reacción aún no ha terminado: la DBO₅ es solo una PARTE de la última.
+        </text>
+        <text x="8" y="279">
+          Su cociente, DBO₅/DQO, es la medida clásica de lo biodegradable que es un agua.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Los solidos de un agua, separados por dos operaciones.
+ *
+ * El arbol no se dibuja a mano: se declara como datos y las cajas se COLOCAN
+ * por calculo, de modo que los hijos cuelgan siempre por debajo de su padre y
+ * a la misma altura entre si. Lo que el dibujo afirma, y la bateria comprueba,
+ * es el reparto -el FILTRO separa suspendidos de disueltos- y que la
+ * CALCINACION va despues del secado y a mas temperatura.
+ */
+function SolidosDelAgua() {
+  const NIVEL = [46, 116, 186]
+  const ALTO = 34
+  const caja = (pieza: string, x: number, ancho: number, fila: number, titulo: string, pie?: string) => (
+    <g key={pieza}>
+      <rect
+        data-pieza={pieza}
+        x={x}
+        y={NIVEL[fila]}
+        width={ancho}
+        height={ALTO}
+        rx="4"
+        fill={AZUL}
+        fillOpacity={fila === 0 ? 0.55 : 0.35}
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <text
+        x={x + ancho / 2}
+        y={NIVEL[fila] + (pie ? 14 : 21)}
+        fontSize="8.5"
+        textAnchor="middle"
+        fontWeight="bold"
+        fill="currentColor"
+      >
+        {titulo}
+      </text>
+      {pie ? (
+        <text x={x + ancho / 2} y={NIVEL[fila] + 26} fontSize="7.5" textAnchor="middle" fill="currentColor">
+          {pie}
+        </text>
+      ) : null}
+    </g>
+  )
+
+  /** Enlace de padre a hijo, calculado de las dos cajas. */
+  const enlace = (x1: number, fila1: number, x2: number, fila2: number) => {
+    const y1 = NIVEL[fila1] + ALTO
+    const y2 = NIVEL[fila2]
+    const ym = (y1 + y2) / 2
+    const d = ['M', x1, ' ', y1, ' V', ym, ' H', x2, ' V', y2].join('')
+    return <path d={d} fill="none" stroke="currentColor" strokeWidth="1.2" />
+  }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {caja('caja-totales', 190, 180, 0, 'SÓLIDOS TOTALES', 'residuo al evaporar y secar a 105 °C')}
+
+      {enlace(280, 0, 108, 1)}
+      {enlace(280, 0, 452, 1)}
+      <text data-pieza="rotulo-filtro" x="288" y="93" fontSize="8.5" fontWeight="bold" fill={ROJO}>
+        FILTRO de fibra de vidrio
+      </text>
+
+      {caja('caja-suspension', 28, 160, 1, 'EN SUSPENSIÓN', 'lo que QUEDA en el filtro')}
+      {caja('caja-disueltos', 372, 160, 1, 'DISUELTOS', 'lo que PASA por el filtro')}
+
+      {enlace(108, 1, 60, 2)}
+      {enlace(108, 1, 196, 2)}
+      <text data-pieza="rotulo-calcinacion" x="116" y="163" fontSize="8.5" fontWeight="bold" fill={ROJO}>
+        CALCINACIÓN a 550 °C
+      </text>
+
+      {caja('caja-volatiles', 10, 100, 2, 'VOLÁTILES', 'se van al calcinar')}
+      {caja('caja-fijos', 146, 100, 2, 'FIJOS', 'ceniza que queda')}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="300" y="196">
+          Y aparte, los SEDIMENTABLES:
+        </text>
+        <text x="300" y="209">
+          los que decantan en un cono Imhoff
+        </text>
+        <text x="300" y="222">
+          en una hora, medidos en mL/L.
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="252">
+          Dos operaciones y nada más: el FILTRO parte los totales en suspensión y disueltos; la CALCINACIÓN
+        </text>
+        <text x="8" y="265">
+          parte cada mitad en volátiles y fijos. Los volátiles se toman como medida de la materia orgánica.
+        </text>
+        <text x="8" y="278">
+          El RD 509/1996 llama «total de sólidos en suspensión» a los de la izquierda: 35 mg/L en el efluente.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -2824,6 +3044,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CloracionPuntoRuptura />
     case 'alcalinidad-valoracion':
       return <AlcalinidadValoracion />
+    case 'dbo-frente-a-dqo':
+      return <DboFrenteADqo />
+    case 'solidos-del-agua':
+      return <SolidosDelAgua />
   }
 }
 
