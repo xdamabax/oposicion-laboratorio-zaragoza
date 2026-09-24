@@ -537,6 +537,43 @@ function medir(sabotaje, ROJO) {
     m.setAttribute('x2', num(m, 'x2') + 180)
   }
 
+  if (sabotaje === 52) {
+    const svg = porClave('captacion-pm-y-metales')
+    // la bomba, puesta delante del cabezal: aspirar antes de cortar el tamaño
+    const cab = pieza(svg, 'etapa-cabezal')
+    const bom = pieza(svg, 'etapa-bomba')
+    const x = num(cab, 'x')
+    cab.setAttribute('x', num(bom, 'x'))
+    bom.setAttribute('x', x)
+  }
+  if (sabotaje === 53) {
+    const svg = porClave('captacion-pm-y-metales')
+    // digerir primero y pesar despues, que deja el filtro disuelto
+    const a = pieza(svg, 'paso-gravimetria')
+    const b = pieza(svg, 'paso-metales')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
+  if (sabotaje === 54) {
+    const svg = porClave('corte-pm10-pm25')
+    // la curva de PM2,5, corrida a la izquierda: cortaria por debajo de 2,5 µm
+    const c = pieza(svg, 'curva-pm25')
+    let i = -1
+    c.setAttribute(
+      'd',
+      c.getAttribute('d').replace(/-?\d+(?:\.\d+)?/g, (n) => ((i += 1) % 2 === 0 ? Number(n) - 42 : n)),
+    )
+  }
+  if (sabotaje === 55) {
+    const svg = porClave('corte-pm10-pm25')
+    // un tramo de la curva de PM10 hundido: la eficiencia BAJARIA al crecer el tamaño
+    const c = pieza(svg, 'curva-pm10')
+    const pts = puntos(c)
+    const hundidos = pts.map(([x, y], j) => [x, j > pts.length - 30 ? y + 60 : y])
+    c.setAttribute('d', hundidos.map(([x, y], j) => (j ? 'L' : 'M') + x + ' ' + y).join(' '))
+  }
+
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
   control('Catálogo · todos los esquemas se ven a tamaño natural', () => {
@@ -1663,6 +1700,130 @@ function medir(sabotaje, ROJO) {
     return `marca@${marca.toFixed(0)} sobre el panel b, y la alcachofa solo en el c@${acx.toFixed(0)}`
   })
 
+
+  /*
+   * Las curvas de corte. El RD 102/2011 no define PM10 y PM2,5 por un techo
+   * de tamaño, sino por el diametro en el que el cabezal tiene "una eficiencia
+   * de corte del 50 %". El dibujo lo afirma con dos numeros escritos, 10 µm y
+   * 2,5 µm, y aqui se contrasta cada numero contra el trazado: se reconstruye
+   * la escala logaritmica a partir de las marcas del eje y se busca donde cruza
+   * cada curva la linea del 50 %.
+   */
+  control('Corte PM · cada curva cruza el 50 % justo en el diámetro que dice su rótulo', () => {
+    const svg = porClave('corte-pm10-pm25')
+    // la escala del eje, leida de sus propias marcas: dos decadas conocidas
+    const ejeX = (d) => pieza(svg, 'eje-' + d).getBBox().x + pieza(svg, 'eje-' + d).getBBox().width / 2
+    const x1 = ejeX(1)
+    const porDecada = ejeX(10) - x1
+    if (!(porDecada > 20)) throw new Error('las marcas del eje no dejan reconstruir la escala')
+    const diametroDe = (x) => Math.pow(10, (x - x1) / porDecada)
+
+    const y50 = num(pieza(svg, 'linea-50'), 'y1')
+    const leidos = []
+    for (const clave of ['pm10', 'pm25']) {
+      const escrito = Number(
+        pieza(svg, 'cifra-' + clave).textContent.replace(/[^\d,.]/g, '').replace(',', '.'),
+      )
+      const pts = puntos(pieza(svg, 'curva-' + clave))
+      let cruce = null
+      for (let i = 1; i < pts.length; i++) {
+        // la y crece hacia abajo: cruzar el 50 % es pasar de estar por debajo a estar por encima
+        if (pts[i - 1][1] > y50 && pts[i][1] <= y50) {
+          const t = (pts[i - 1][1] - y50) / (pts[i - 1][1] - pts[i][1])
+          cruce = pts[i - 1][0] + t * (pts[i][0] - pts[i - 1][0])
+          break
+        }
+      }
+      if (cruce === null) throw new Error(`la curva de ${clave} no llega a cruzar el 50 %`)
+      const medido = diametroDe(cruce)
+      const error = Math.abs(medido - escrito) / escrito
+      if (!(error < 0.06)) {
+        throw new Error(
+          `la curva de ${clave} dice "${escrito}" pero cruza el 50 % en ` +
+            `${medido.toFixed(2)} µm (${(error * 100).toFixed(0)} % de desvío): el 50 % es ` +
+            `justo lo que define el corte`,
+        )
+      }
+      leidos.push(`${clave} escribe ${escrito} y corta en ${medido.toFixed(2)} µm`)
+    }
+    return leidos.join(' · ')
+  })
+
+  control('Corte PM · las dos curvas solo SUBEN: a mayor tamaño nunca se capta menos', () => {
+    const svg = porClave('corte-pm10-pm25')
+    const informe = []
+    for (const clave of ['pm10', 'pm25']) {
+      const pts = puntos(pieza(svg, 'curva-' + clave))
+      for (let i = 1; i < pts.length; i++) {
+        if (pts[i][1] > pts[i - 1][1] + 0.4) {
+          throw new Error(
+            `la curva de ${clave} baja entre x=${pts[i - 1][0]} y x=${pts[i][0]} ` +
+              `(y pasa de ${pts[i - 1][1]} a ${pts[i][1]}): un cabezal no capta MENOS ` +
+              `cuanto más grande es la partícula`,
+          )
+        }
+      }
+      informe.push(`${clave}: ${pts.length} puntos sin un solo retroceso`)
+    }
+    return informe.join(' · ')
+  })
+
+  /*
+   * La cadena de captacion. Lo que hay que poder demostrar es el orden: el
+   * cabezal selecciona ANTES de que el aire toque el filtro, y la bomba tira
+   * DESPUES; y sobre ese unico filtro se hacen dos cosas que no se pueden
+   * invertir, porque la digestion acida lo destruye.
+   */
+  control('Captación · el cabezal va ANTES del filtro y la bomba DESPUÉS', () => {
+    const svg = porClave('captacion-pm-y-metales')
+    const x = (nombre) => {
+      const r = pieza(svg, 'etapa-' + nombre)
+      return num(r, 'x') + num(r, 'width') / 2
+    }
+    const cabezal = x('cabezal')
+    const filtro = x('filtro')
+    const bomba = x('bomba')
+    if (!(cabezal < filtro)) {
+      throw new Error(
+        `el cabezal está en x=${cabezal.toFixed(0)} y el filtro en x=${filtro.toFixed(0)}: ` +
+          `si el aire llega al filtro sin pasar el cabezal, en el filtro hay TODO el polvo ` +
+          `y no la fracción PM10 o PM2,5`,
+      )
+    }
+    if (!(bomba > filtro)) {
+      throw new Error(
+        `la bomba está en x=${bomba.toFixed(0)}, antes del filtro (x=${filtro.toFixed(0)}): ` +
+          `la bomba aspira al final de la línea`,
+      )
+    }
+    return `cabezal@${cabezal.toFixed(0)} < filtro@${filtro.toFixed(0)} < bomba@${bomba.toFixed(0)}`
+  })
+
+  control('Captación · las dos ramas cuelgan del filtro, y se PESA antes de digerir', () => {
+    const svg = porClave('captacion-pm-y-metales')
+    const filtro = pieza(svg, 'etapa-filtro')
+    const abajoDelFiltro = num(filtro, 'y') + num(filtro, 'height')
+    for (const rama of ['gravimetria', 'metales']) {
+      const r = pieza(svg, 'rama-' + rama)
+      if (!(num(r, 'y') > abajoDelFiltro)) {
+        throw new Error(
+          `la rama de ${rama} empieza en y=${num(r, 'y')}, por encima del filtro ` +
+            `(y=${abajoDelFiltro}): las dos determinaciones salen de ESE filtro`,
+        )
+      }
+    }
+    const paso = (rama) => Number(pieza(svg, 'paso-' + rama).textContent.replace(/[^\d]/g, ''))
+    const pesar = paso('gravimetria')
+    const digerir = paso('metales')
+    if (!(pesar < digerir)) {
+      throw new Error(
+        `la gravimetría lleva el paso ${pesar} y los metales el ${digerir}: la digestión ácida ` +
+          `disuelve el filtro, así que quien digiera primero se queda sin poder pesarlo`,
+      )
+    }
+    return `las dos ramas por debajo de y=${abajoDelFiltro}, y pesar (${pesar}) antes de digerir (${digerir})`
+  })
+
   return resultados
 }
 
@@ -1720,6 +1881,10 @@ const SABOTAJES = {
   49: 'el neutralizante, echado en el envase fisicoquímico',
   50: 'los objetivos a) y b) del grifo, intercambiados',
   51: 'la marca del RD 3/2023, corrida al objetivo c)',
+  52: 'la bomba, puesta delante del cabezal de corte',
+  53: 'digerir el filtro antes de pesarlo',
+  54: 'la curva de PM2,5, corrida a diámetros menores',
+  55: 'un tramo de la curva de PM10, hundido',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1781,6 +1946,10 @@ const CONTROL_DE = {
   49: [47],
   50: [48],
   51: [49],
+  52: [52],
+  53: [53],
+  54: [50],
+  55: [51],
 }
 
 async function main() {

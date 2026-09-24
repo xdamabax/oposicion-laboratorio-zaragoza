@@ -43,6 +43,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'nca-metales-dureza': 'La NCA de los metales sube con la dureza del agua',
   'envase-camara-de-aire': 'El envase de microbiología deja cámara de aire; el fisicoquímico, no',
   'grifo-tres-objetivos': 'Los tres objetivos del muestreo en grifo',
+  'corte-pm10-pm25': 'Las curvas de corte de PM10 y PM2,5: el 50 % de eficiencia',
+  'captacion-pm-y-metales': 'Del cabezal al ICP-MS: un filtro, dos determinaciones',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -80,6 +82,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'nca-metales-dureza': { ancho: 530, alto: 292 },
   'envase-camara-de-aire': { ancho: 520, alto: 292 },
   'grifo-tres-objetivos': { ancho: 570, alto: 300 },
+  'corte-pm10-pm25': { ancho: 520, alto: 312 },
+  'captacion-pm-y-metales': { ancho: 580, alto: 300 },
 }
 
 const AZUL = '#9ecbe8'
@@ -3549,6 +3553,294 @@ function GrifoTresObjetivos() {
   )
 }
 
+
+/* ---------- Tema 37: aire y contaminacion atmosferica ---------- */
+
+/**
+ * Las curvas de corte de PM10 y PM2,5.
+ *
+ * El RD 102/2011 no define las particulas por su tamaño a secas: las define
+ * por el cabezal, "para un diametro aerodinamico de 10 µm -o 2,5- con una
+ * EFICIENCIA DE CORTE DEL 50 %". Es decir, el 10 y el 2,5 no son un techo:
+ * son el punto en el que el captador deja pasar justo la mitad.
+ *
+ * Las curvas se calculan, no se trazan: E(d) = 1 / (1 + (d/d50)^-s), que vale
+ * exactamente 0,5 en d = d50 por construccion. El control lo busca despues
+ * sobre el trazado muestreado y lo compara con el numero escrito en el rotulo.
+ */
+function CortePm10Pm25() {
+  const X0 = 56
+  const ANCHO = 384
+  const BASE = 196
+  const CIMA = 52
+  /** Diametro aerodinamico, escala logaritmica de 0,4 a 40 µm. */
+  const D_MIN = Math.log10(0.4)
+  const D_MAX = Math.log10(40)
+  const xDe = (d: number) => X0 + ((Math.log10(d) - D_MIN) / (D_MAX - D_MIN)) * ANCHO
+  const yDe = (e: number) => BASE - (e / 100) * (BASE - CIMA)
+
+  /** Eficiencia de captacion, en %: sigmoide logistica en log(d). */
+  const eficiencia = (d: number, d50: number, s: number) => 100 / (1 + Math.pow(d / d50, -s))
+
+  const traza = (d50: number, s: number) => {
+    const pts: [number, number][] = []
+    for (let i = 0; i <= 220; i++) {
+      const d = Math.pow(10, D_MIN + (i / 220) * (D_MAX - D_MIN))
+      pts.push([xDe(d), yDe(eficiencia(d, d50, s))])
+    }
+    return pts.map(([x, y], i) => (i ? 'L' : 'M') + x.toFixed(1) + ' ' + y.toFixed(1)).join(' ')
+  }
+
+  const marca = (pieza: string, d50: number, color: string, rotulo: string, dy: number) => (
+    <g key={pieza}>
+      <line
+        data-pieza={'marca-' + pieza}
+        x1={xDe(d50)}
+        y1={yDe(50)}
+        x2={xDe(d50)}
+        y2={BASE}
+        stroke={color}
+        strokeWidth="1.2"
+        strokeDasharray="3 3"
+      />
+      <text
+        data-pieza={'cifra-' + pieza}
+        x={xDe(d50)}
+        y={BASE + dy}
+        fontSize="8.5"
+        textAnchor="middle"
+        fontWeight="bold"
+        fill={color}
+      >
+        {rotulo}
+      </text>
+    </g>
+  )
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* la linea del 50 %, que es la que define todo */}
+      <line
+        data-pieza="linea-50"
+        x1={X0}
+        y1={yDe(50)}
+        x2={X0 + ANCHO}
+        y2={yDe(50)}
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeDasharray="4 3"
+        opacity="0.7"
+      />
+      <text x={X0 + ANCHO + 4} y={yDe(50) + 3} fontSize="8" fontWeight="bold" fill="currentColor">
+        50 %
+      </text>
+
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1={CIMA - 8} x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2={X0 + ANCHO} y2={BASE} />
+      </g>
+      <text x="8" y="36" fontSize="8" fill="currentColor">
+        eficiencia de captación (%)
+      </text>
+      <text x={X0 + ANCHO} y={BASE + 41} fontSize="8" textAnchor="end" fill="currentColor">
+        diámetro aerodinámico (µm)
+      </text>
+
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {[0.5, 1, 5, 10, 20].map((d) => (
+          <text key={d} data-pieza={'eje-' + d} x={xDe(d)} y={BASE + 12}>
+            {String(d).replace('.', ',')}
+          </text>
+        ))}
+      </g>
+
+      <path data-pieza="curva-pm10" d={traza(10, 6)} fill="none" stroke={AZUL} strokeWidth="1.9" />
+      <path data-pieza="curva-pm25" d={traza(2.5, 6)} fill="none" stroke={ROJO} strokeWidth="1.9" />
+
+      {marca('pm25', 2.5, ROJO, '2,5 µm', 25)}
+      {marca('pm10', 10, AZUL, '10 µm', 25)}
+
+      <text data-pieza="rotulo-pm25" x={xDe(3.6)} y={CIMA - 10} fontSize="9" fontWeight="bold" fill={ROJO}>
+        PM2,5
+      </text>
+      <text data-pieza="rotulo-pm10" x={xDe(14)} y={CIMA - 10} fontSize="9" fontWeight="bold" fill={AZUL}>
+        PM10
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="259">
+          El 10 y el 2,5 NO son un techo: son el diámetro en el que el cabezal deja pasar justo la MITAD de
+        </text>
+        <text x="8" y="272">
+          las partículas. Por encima captura menos; por debajo, casi todas.
+        </text>
+        <text x="8" y="290">
+          Y de ahí sale lo que de verdad hay que entender: la PM2,5 está DENTRO de la PM10. No son dos
+        </text>
+        <text x="8" y="303">
+          contaminantes distintos, sino dos cortes del mismo polvo, y el fino siempre es una parte del grueso.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Del cabezal al ICP-MS: un solo filtro, dos determinaciones.
+ *
+ * Es lo que une las dos mitades del enunciado del tema 37. El aire entra por
+ * un CABEZAL de corte, deja las particulas en un FILTRO y sale por la BOMBA.
+ * Y ese mismo filtro sirve para dos cosas, en un orden que no se puede
+ * invertir: primero se PESA -gravimetria, que es no destructiva- y solo
+ * despues se DIGIERE con acido para medir los metales por ICP-MS.
+ *
+ * El dibujo lo afirma con el orden de las piezas y con los numeros de paso, y
+ * la bateria lo comprueba sobre la geometria.
+ */
+function CaptacionPmYMetales() {
+  const Y = 52
+  const ALTO = 46
+  const ETAPAS = [
+    { clave: 'cabezal', x: 26, ancho: 126, titulo: 'CABEZAL de corte', pie: 'PM10 o PM2,5' },
+    { clave: 'filtro', x: 176, ancho: 110, titulo: 'FILTRO', pie: 'fibra de vidrio o cuarzo' },
+    { clave: 'bomba', x: 310, ancho: 122, titulo: 'BOMBA', pie: 'caudal constante' },
+  ]
+  const RAMAS = [
+    {
+      clave: 'gravimetria',
+      x: 34,
+      ancho: 214,
+      paso: 1,
+      titulo: 'GRAVIMETRÍA',
+      color: AZUL,
+      pie: ['acondicionar y PESAR el filtro', 'antes y después: la diferencia', 'es la concentración másica'],
+    },
+    {
+      clave: 'metales',
+      x: 286,
+      ancho: 214,
+      paso: 2,
+      titulo: 'METALES',
+      color: ROJO,
+      pie: ['DIGESTIÓN ácida del filtro y', 'medida por ICP-MS de', 'Pb, Cd, As y Ni'],
+    },
+  ]
+  const Y_RAMA = 160
+  const ALTO_RAMA = 62
+  const filtro = ETAPAS[1]
+  const cxFiltro = filtro.x + filtro.ancho / 2
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* la cadena de captacion */}
+      {ETAPAS.map((e, i) => (
+        <g key={e.clave}>
+          <rect
+            data-pieza={'etapa-' + e.clave}
+            x={e.x}
+            y={Y}
+            width={e.ancho}
+            height={ALTO}
+            rx="4"
+            fill={AZUL}
+            fillOpacity={e.clave === 'filtro' ? 0.5 : 0.22}
+            stroke="currentColor"
+            strokeWidth="1.2"
+          />
+          <text x={e.x + e.ancho / 2} y={Y + 20} fontSize="8.5" textAnchor="middle" fontWeight="bold" fill="currentColor">
+            {e.titulo}
+          </text>
+          <text x={e.x + e.ancho / 2} y={Y + 33} fontSize="7.5" textAnchor="middle" fill="currentColor">
+            {e.pie}
+          </text>
+          {i < ETAPAS.length - 1 ? (
+            <g stroke="currentColor" strokeWidth="1.6" fill="none">
+              <path
+                d={'M' + (e.x + e.ancho) + ' ' + (Y + ALTO / 2) + ' h' + (ETAPAS[i + 1].x - e.x - e.ancho - 6)}
+              />
+              <path
+                d={
+                  'M' + (ETAPAS[i + 1].x - 6) + ' ' + (Y + ALTO / 2 - 4) +
+                  ' l6 4 l-6 4'
+                }
+              />
+            </g>
+          ) : null}
+        </g>
+      ))}
+      <text x="26" y="34" fontSize="8" fill="currentColor">
+        entra el aire →
+      </text>
+      <text x="432" y="34" fontSize="8" textAnchor="end" fill="currentColor">
+        → sale el aire
+      </text>
+
+      {/* las dos ramas, que cuelgan del filtro */}
+      {RAMAS.map((r) => {
+        const cx = r.x + r.ancho / 2
+        const ym = (Y + ALTO + Y_RAMA) / 2
+        return (
+          <g key={r.clave}>
+            <path
+              d={'M' + cxFiltro + ' ' + (Y + ALTO) + ' V' + ym + ' H' + cx + ' V' + Y_RAMA}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.2"
+            />
+            <rect
+              data-pieza={'rama-' + r.clave}
+              x={r.x}
+              y={Y_RAMA}
+              width={r.ancho}
+              height={ALTO_RAMA}
+              rx="4"
+              fill={r.color}
+              fillOpacity="0.16"
+              stroke={r.color}
+              strokeWidth="1.2"
+            />
+            <text
+              data-pieza={'paso-' + r.clave}
+              x={r.x + 12}
+              y={Y_RAMA + 16}
+              fontSize="10"
+              fontWeight="bold"
+              fill={r.color}
+            >
+              {r.paso + '.'}
+            </text>
+            <text x={cx + 8} y={Y_RAMA + 16} fontSize="9" textAnchor="middle" fontWeight="bold" fill={r.color}>
+              {r.titulo}
+            </text>
+            <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+              {r.pie.map((linea, j) => (
+                <text key={j} x={cx} y={Y_RAMA + 31 + j * 11}>
+                  {linea}
+                </text>
+              ))}
+            </g>
+          </g>
+        )
+      })}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="246">
+          El orden NO se puede invertir: la gravimetría es no destructiva y la digestión disuelve el filtro
+        </text>
+        <text x="8" y="259">
+          entero. Quien digiera primero se queda sin poder pesar.
+        </text>
+        <text x="8" y="277">
+          Un solo captador y un solo filtro dan, por tanto, las dos mitades del enunciado: la masa de PM10 o
+        </text>
+        <text x="8" y="290">
+          PM2,5 y el contenido de metales de esa misma fracción.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -3617,6 +3909,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <EnvaseCamaraDeAire />
     case 'grifo-tres-objetivos':
       return <GrifoTresObjetivos />
+    case 'corte-pm10-pm25':
+      return <CortePm10Pm25 />
+    case 'captacion-pm-y-metales':
+      return <CaptacionPmYMetales />
   }
 }
 

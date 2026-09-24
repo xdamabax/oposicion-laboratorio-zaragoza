@@ -69,6 +69,8 @@ export type TipoEsquema =
   | 'nca-metales-dureza'
   | 'envase-camara-de-aire'
   | 'grifo-tres-objetivos'
+  | 'corte-pm10-pm25'
+  | 'captacion-pm-y-metales'
 
 export type TipoMaterial =
   | 'matraz-aforado'
