@@ -1,0 +1,978 @@
+{
+  "tema": 37,
+  "titulo": "Análisis de aire y contaminación atmosférica: principales contaminantes. Análisis de PM 2,5, PM10 y análisis de metales.",
+  "generadoDe": "temas/tema-37.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-24",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t37-f01",
+      "anverso": "Cuando hablamos de análisis de aire y sus principales contaminantes, ¿qué significa la abreviatura **PM**?",
+      "reverso": "**Materia particulada** (del inglés *particulate matter*).\nEstá preguntado **dos veces** con el mismo enunciado: **1246, primer ejercicio, #24** y **1322-1, reserva R1**.\n**Los distractores de las dos, idénticos:** «componente mayoritario» y «componente minoritario». Ninguno tiene nada que ver: **PM no es una proporción, es una clase de contaminante**.",
+      "fuente": "Cuestionarios 1246 primer ejercicio #24 y 1322-1 R1",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f02",
+      "anverso": "¿Cuál es el **método** para determinar la concentración másica **PM10 o PM2,5** de la materia particulada en suspensión?",
+      "reverso": "**Un método gravimétrico normalizado** (1322-1, reserva **R2**).\nDistractores: *volumétrico normalizado* y *fotométrico*.\n**Por qué gravimétrico:** lo que la ley regula es una **concentración MÁSICA** —µg de masa por m³ de aire—, y la única forma directa de conocer una masa es **pesarla**.\n**Y el enunciado está copiado de un título de norma:** UNE-EN 12341, *«Aire ambiente. Método de medición gravimétrico normalizado para la determinación de la concentración másica PM10 o PM2,5 de la materia particulada en suspensión»*.",
+      "fuente": "Cuestionario 1322-1 R2; RD 102/2011, anexo VII A.4 y A.5",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f03",
+      "anverso": "¿Qué **metales** se analizan en la **fracción PM10** de la materia particulada en suspensión en el aire?",
+      "reverso": "**Pb, Cd, As y Ni**: plomo, cadmio, arsénico y níquel (1322-1, reserva **R3**).\n**Los distractores, y por qué caen:**\n| Opción falsa | De dónde viene el despiste |\n| --- | --- |\n| *Na, K, Ca y Mg* | Son los **cationes mayoritarios del AGUA**, no del aire |\n| *As, Sb, Se y Hg* | Metaloides tóxicos verosímiles, pero el antimonio y el selenio **no están regulados** y el mercurio se mide **gaseoso**, no en PM10 |\n**Y otra vez, el enunciado es un título de norma:** UNE-EN 14902, *«Método normalizado para la medida de Pb, Cd, As y Ni en la fracción PM10 de la materia particulada en suspensión»*.",
+      "fuente": "Cuestionario 1322-1 R3; RD 102/2011, anexo VII A.3 y A.9",
+      "etiquetas": [
+        "examen",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f04",
+      "anverso": "Mirando estas dos curvas: ¿qué significan exactamente el **10** de PM10 y el **2,5** de PM2,5?",
+      "reverso": "**No son un techo de tamaño: son el diámetro en el que el cabezal captura justo la mitad.**\nEl RD 102/2011 lo define literal: *«partículas que pasan a través del cabezal de tamaño selectivo […] para un diámetro aerodinámico de 10 µm con una **eficiencia de corte del 50 %**»*.\n**Tres consecuencias:**\n1. No hay frontera nítida: hay una **curva**. Por encima se captura menos; por debajo, casi todo.\n2. El diámetro es **AERODINÁMICO**, no geométrico: el de una esfera de densidad 1 g/cm³ que sedimentaría igual.\n3. Lo que define la fracción **es el cabezal de la norma**, no una idea abstracta de tamaño.\n**Y de ahí sale lo importante:** la fracción fina está **dentro** de la gruesa. Son dos cortes del mismo polvo.",
+      "fuente": "RD 102/2011, artículo 2, definiciones 28 y 29",
+      "etiquetas": [
+        "concepto",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "corte-pm10-pm25"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t37-f05",
+      "anverso": "¿Qué diferencia hay entre **emisión** e **inmisión**, y cuál de las dos regula el RD 102/2011?",
+      "reverso": "| | **EMISIÓN** | **INMISIÓN** (calidad del aire ambiente) |\n| --- | --- | --- |\n| Qué es | Lo que un foco **suelta** | Lo que **hay** en el aire que se respira |\n| Dónde se mide | Chimenea, tubo de escape | Estación de la red, en la calle |\n| Norma | RD 100/2011 (catálogo), autorizaciones | **RD 102/2011** |\n**Este tema es de INMISIÓN.** Y el real decreto acota el escenario: *«**Aire ambiente**: el aire exterior de la baja troposfera, **excluidos los lugares de trabajo**»*. El aire de dentro de una nave es prevención de riesgos laborales, no calidad del aire.",
+      "fuente": "RD 102/2011, artículo 2, definición 2",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f06",
+      "anverso": "¿En qué **fracción** se miden legalmente el arsénico, el cadmio, el níquel y el benzo(a)pireno?",
+      "reverso": "**En la fracción PM10.** No es un detalle técnico: es la **definición legal** de esos contaminantes.\nRD 102/2011, artículo 2, definición 4: *«“Arsénico”, “cadmio”, “níquel” y “benzo(a)pireno”: niveles en aire ambiente de estos elementos **en la fracción PM10**»*.\n**Consecuencia:** el análisis de metales del aire **empieza siendo un análisis de partículas**. No existe un captador de metales; existe un captador de PM10 cuyo filtro se analiza después.\n**Y el mercurio, no:** el Hg se mide como **gaseoso total**, con otra norma.",
+      "fuente": "RD 102/2011, artículo 2, definición 4",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f07",
+      "anverso": "Mirando este esquema: ¿por qué **no se puede invertir** el orden de las dos determinaciones que salen del filtro?",
+      "reverso": "**Porque la primera es no destructiva y la segunda disuelve el soporte.**\n| Orden | Qué se hace | Qué pasaría al revés |\n| --- | --- | --- |\n| **Primero** | Acondicionar y **pesar** el filtro | — |\n| **Después** | **Digerir** en ácido y medir por ICP-MS | Sin filtro que pesar: la masa se ha perdido |\n**Y el real decreto lo autoriza expresamente**, en el anexo VI: *«se autoriza la utilización de **parte de los filtros de PM10** para el análisis posterior de metales, siempre que se demuestre que estas partes son **representativas** del conjunto»*. Es decir: se puede **cortar** el filtro después de pesarlo entero.",
+      "fuente": "RD 102/2011, anexo VI, objetivos de calidad de los datos",
+      "etiquetas": [
+        "concepto",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "captacion-pm-y-metales"
+      },
+      "nucleo": true
+    },
+    {
+      "id": "t37-f08",
+      "anverso": "**Valores límite de PM10**: ¿cuáles son y cuántas superaciones se admiten?",
+      "reverso": "| | Período | Valor | Superaciones |\n| --- | --- | --- | --- |\n| **Diario** | 24 horas | **50 µg/m³** | **35 al año** |\n| **Anual** | 1 año civil | **40 µg/m³** | — |\nAmbos **en vigor desde el 1 de enero de 2005**.\n**Por qué el diario es más alto que el anual:** el diario admite picos, el anual es un promedio. Un año puede cumplir uno y suspender el otro.\n**El 35 es el número que hay que fijar.** No es 25 (ozono) ni 18 (NO₂ horario) ni 24 (SO₂ horario).",
+      "fuente": "RD 102/2011, anexo I, sección C",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f09",
+      "anverso": "**Valores de PM2,5**: ¿cuáles son, y qué tiene de raro esta tabla?",
+      "reverso": "| | Valor | Desde |\n| --- | --- | --- |\n| **Valor objetivo anual** | **25 µg/m³** | 1 de enero de **2010** |\n| **Valor límite anual, fase I** | **25 µg/m³** | 1 de enero de **2015** |\n| **Valor límite anual, fase II** | **20 µg/m³** *(indicativo)* | 1 de enero de **2020** |\n**Lo raro es que el 25 aparece dos veces, y no es errata:** primero como *valor objetivo* y cinco años después, el mismo número, como *valor límite*. Es el mecanismo de la directiva: primero se pide, luego se exige.\n**Y lo que más se pregunta:** en el RD 102/2011 **la PM2,5 NO tiene valor límite diario**. Solo anual.",
+      "fuente": "RD 102/2011, anexo I, sección D",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f10",
+      "anverso": "¿Cuáles son los **valores objetivo** de arsénico, cadmio, níquel y benzo(a)pireno, y desde cuándo?",
+      "reverso": "| Contaminante | Valor objetivo | Fecha |\n| --- | --- | --- |\n| **Arsénico (As)** | **6 ng/m³** | 1 de enero de 2013 |\n| **Cadmio (Cd)** | **5 ng/m³** | 1 de enero de 2013 |\n| **Níquel (Ni)** | **20 ng/m³** | 1 de enero de 2013 |\n| **Benzo(a)pireno** | **1 ng/m³** | 1 de enero de 2013 |\nY la nota al pie, que es la que hay que citar: *«Niveles en aire ambiente **en la fracción PM10** como promedio durante un **año natural**»*.\n**Regla para memorizarlos:** el níquel es el más permisivo (20), el B(a)P el más estricto (1), y en medio el arsénico (6) por encima del cadmio (5). Todos en **nanogramos**.",
+      "fuente": "RD 102/2011, anexo I, sección I",
+      "etiquetas": [
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f11",
+      "anverso": "¿Por qué el **plomo** se trata distinto de los otros tres metales, si se miden con la misma norma?",
+      "reverso": "| | **Plomo** | **As, Cd, Ni** |\n| --- | --- | --- |\n| Tipo de objetivo | **VALOR LÍMITE** (obligatorio) | **VALOR OBJETIVO** (en la medida de lo posible) |\n| Valor | **0,5 µg/m³** anual | 6 / 5 / 20 **ng/m³** |\n| Unidad | **microgramos** | **nanogramos** |\n| Directiva de origen | 2008/50/CE | **2004/107/CE** |\n| Incertidumbre admitida | **25 %** | **40 %** |\n**La diferencia es jurídica, no analítica:** los cuatro se miden con la **misma norma** y sobre el **mismo filtro**. Vienen de dos directivas distintas, y eso es todo.\n**Y la incertidumbre más floja tiene razón física:** el cadmio se mide tres órdenes de magnitud por debajo del plomo.",
+      "fuente": "RD 102/2011, anexo I secciones E e I; anexos V y VI",
+      "etiquetas": [
+        "concepto",
+        "valores"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f12",
+      "anverso": "¿Qué **dos normas UNE** son el método de referencia de este tema, y cuál es su título exacto?",
+      "reverso": "| Para qué | Norma | Título |\n| --- | --- | --- |\n| **PM10 y PM2,5**, y la toma de muestra de los metales | **UNE-EN 12341** | *«Aire ambiente. Método de medición gravimétrico normalizado para la determinación de la concentración másica PM10 o PM2,5 de la materia particulada en suspensión»* |\n| **Medida de los metales** | **UNE-EN 14902** | *«Calidad del aire ambiente. Método normalizado para la medida de Pb, Cd, As y Ni en la fracción PM10 de la materia particulada en suspensión»* |\n**Estos dos títulos valen dos preguntas de examen**: la R2 y la R3 están construidas borrándoles una palabra.\n**Vigencia comprobada:** la 14902 es de **2006** y está vigente (versión confirmada el 10/09/2026). La 12341 que cita el BOE es la de **2015**, y está **anulada desde el 24/04/2024**: la vigente es la de **2024**.",
+      "fuente": "RD 102/2011, anexo VII A; registros de UNE N0072835, N0054246 y N0036486",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f13",
+      "anverso": "¿Qué **norma** regula hoy la calidad del aire en España, de qué **ley** cuelga y a qué **directiva** transpone?",
+      "reverso": "| Escalón | Norma |\n| --- | --- |\n| Ley marco | **Ley 34/2007**, de calidad del aire y protección de la atmósfera (sustituyó a la Ley 38/1972) |\n| Reglamento | **RD 102/2011**, de 28 de enero, relativo a la mejora de la calidad del aire |\n| Directivas transpuestas | **2008/50/CE** y **2004/107/CE** |\n| A quién sustituyó | Los RD **1073/2002**, **1796/2003** y **812/2007**, unificados en uno |\n**Última actualización consolidada: 25/01/2023** (modificado por los RD 678/2014, 39/2017 y 34/2023).",
+      "fuente": "RD 102/2011, preámbulo y artículo 1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f14",
+      "anverso": "¿Qué contaminantes tienen **objetivos de calidad del aire** en el RD 102/2011?",
+      "reverso": "**Doce**, según el artículo 1: **dióxido de azufre, dióxido de nitrógeno y óxidos de nitrógeno, partículas, plomo, benceno, monóxido de carbono, ozono, arsénico, cadmio, níquel y benzo(a)pireno**.\n**Y tres que están dentro sin objetivos propios:**\n- **Mercurio** y **los demás HAP**: se evalúan y se informa, pero no tienen valor límite ni objetivo.\n- **Amoniaco**: solo métodos y criterios de evaluación. El preámbulo lo justifica porque *«favorece la generación de partículas secundarias»* y sus emisiones son sobre todo **agropecuarias**.",
+      "fuente": "RD 102/2011, artículo 1 y preámbulo",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f15",
+      "anverso": "¿Qué es un contaminante **secundario**, y por qué el **ozono** no tiene valor límite?",
+      "reverso": "| | **Primario** | **Secundario** |\n| --- | --- | --- |\n| | Se **emite ya como tal** | **No se emite**: se forma en la atmósfera |\n| Ejemplos | SO₂, NO, CO, plomo, benceno, metales | **Ozono troposférico**, nitratos y sulfatos de la PM2,5 |\n| Control | Actuando sobre el **foco** | **No se puede limitar en el foco** |\n**El ozono tiene VALOR OBJETIVO, no valor límite**, precisamente porque es secundario: se forma por reacción fotoquímica de los **COV** con los **óxidos de nitrógeno** en presencia de **luz solar**, y ningún Estado puede garantizar su cumplimiento actuando solo sobre sus chimeneas.\nEl RD define los precursores como *«sustancias que contribuyen a la formación de ozono en la baja atmósfera»*.",
+      "fuente": "RD 102/2011, artículo 2 definiciones 5 y 30; anexo I sección H",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f16",
+      "anverso": "¿Qué relación hay entre la **PM10** y la **PM2,5** en una misma estación?",
+      "reverso": "**La PM2,5 siempre es menor o igual que la PM10**, porque está **contenida** en ella. Son dos cortes del mismo polvo, no dos contaminantes distintos.\nLa diferencia (PM10 − PM2,5) se llama **fracción gruesa** (*coarse*).\n| | **PM10** | **PM2,5** |\n| --- | --- | --- |\n| Nombre | Fracción **torácica** | Fracción **fina** |\n| Hasta dónde llega | Vías respiratorias bajas | **Alvéolo**, y de ahí a la sangre |\n| Origen dominante | Mecánico: desgaste, resuspensión | **Combustión** y formación secundaria |\n| Composición típica | Más mineral | Más sulfato, nitrato, amonio y carbono |\n**Si un boletín da PM2,5 mayor que PM10 en la misma estación, hay un error.** Es imposible.",
+      "fuente": "RD 102/2011, artículo 2 definiciones 28 y 29; anexo VIII",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f17",
+      "anverso": "Describe la **cadena de captación** de partículas, paso a paso.",
+      "reverso": "| Paso | Qué hace | Por qué importa |\n| --- | --- | --- |\n| **1. Cabezal de corte** | Selecciona la fracción (10 o 2,5 µm) | Es lo que **define** PM10: sin él hay polvo, no PM10 |\n| **2. Filtro** | Retiene las partículas | Soporte de toda la determinación |\n| **3. Bomba** | Aspira a **caudal constante**, 24 h | El volumen es el **denominador** de la concentración |\n| **4. Acondicionamiento** | Equilibrar a humedad y temperatura controladas | El filtro **absorbe agua**: si no, se pesa humedad |\n| **5. Pesada** | Antes (tara) y después | La **diferencia de masa** es la masa de partículas |\n| **6. Cálculo** | Masa / volumen de aire | µg/m³ |\n**Tipos de captador:** de **alto** o de **bajo volumen**, y su modificación con **captador secuencial** (cambia el filtro solo, y así aguanta días sin atender).",
+      "fuente": "RD 102/2011, anexo VII A.4 y A.5; anexo XIII A.5",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f18",
+      "anverso": "¿A qué **temperatura y presión** se refiere el volumen de aire: en los gases y en las partículas?",
+      "reverso": "**No es lo mismo**, y ahí está la trampa más fina del tema. Anexo VII, sección C:\n| | Referencia del volumen |\n| --- | --- |\n| **Contaminantes gaseosos** | **293 K y 101,3 kPa** (normalizado) |\n| **Partículas** y lo que se analiza en fase particulada | ***«En condiciones ambientales de temperatura y presión atmosférica en el momento de las mediciones»*** |\n**Por eso el anexo I habla literalmente de «valores límite de las partículas PM10 en condiciones ambientales».**\n**Y la razón es deliberada:** lo que se quiere saber es cuánto polvo respira de verdad la gente, no cuánto respiraría en un laboratorio a 20 °C.",
+      "fuente": "RD 102/2011, anexo VII sección C; anexo I secciones C y D",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f19",
+      "anverso": "¿Se puede medir PM10 con un monitor automático en continuo, si el método de referencia es gravimétrico?",
+      "reverso": "**Sí, como método EQUIVALENTE, y con dos condiciones.** Anexo VII, sección B:\n1. Hay que demostrar que genera resultados equivalentes *«o, **en el caso de las partículas, que guarda una relación coherente** con el método de referencia»*.\n2. *«Los resultados obtenidos con dicho método **deberán corregirse**»* para producir los que habría dado la gravimetría.\n**Quién lo demuestra:** el **laboratorio nacional de referencia** prepara el informe de equivalencia.\n**Esa frase es la base legal de todos los monitores automáticos de las redes reales** —atenuación beta, microbalanza oscilante, óptica—: miden otra cosa y le aplican un factor validado contra la balanza.",
+      "fuente": "RD 102/2011, anexo VII sección B",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f20",
+      "anverso": "¿Qué **valores límite** tienen el SO₂ y el NO₂, y cuántas superaciones admite cada uno?",
+      "reverso": "| | Parámetro | Valor | Superaciones |\n| --- | --- | --- | --- |\n| **SO₂** | Horario | **350 µg/m³** | **24** al año |\n| **SO₂** | Diario | **125 µg/m³** | **3** al año |\n| **NO₂** | Horario | **200 µg/m³** | **18** al año |\n| **NO₂** | Anual | **40 µg/m³** | — |\n**Y los dos niveles críticos, que son para la vegetación, no para la salud:**\n- **SO₂: 20 µg/m³**, en año civil **y en invierno (1 de octubre a 31 de marzo)**.\n- **NOₓ: 30 µg/m³**, expresado como NO₂.\n**El NO₂ anual coincide con el de PM10: los dos, 40 µg/m³.**",
+      "fuente": "RD 102/2011, anexo I secciones A y B",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f21",
+      "anverso": "¿Qué valores límite tienen el **monóxido de carbono**, el **benceno** y el **plomo**?",
+      "reverso": "| Contaminante | Parámetro | Valor |\n| --- | --- | --- |\n| **Monóxido de carbono** | **Máxima diaria de las medias móviles octohorarias** | **10 mg/m³** |\n| **Benceno** | Año civil | **5 µg/m³** |\n| **Plomo** | Año civil | **0,5 µg/m³** |\n**El CO es el único que va en MILIGRAMOS por metro cúbico**, no en microgramos: está tres órdenes por encima de todo lo demás.\n**Y el plomo es el único metal con valor LÍMITE**; los otros tres solo tienen valor objetivo.",
+      "fuente": "RD 102/2011, anexo I secciones E, F y G",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f22",
+      "anverso": "¿Qué valores tiene el **ozono**, y qué es el **AOT40**?",
+      "reverso": "| Objetivo | Parámetro | Valor |\n| --- | --- | --- |\n| **Valor objetivo, salud** | Máxima diaria octohoraria | **120 µg/m³**, máx. **25 días/año** de promedio en **3 años** |\n| **Valor objetivo, vegetación** | AOT40 de mayo a julio | **18 000 µg/m³·h** de promedio en **5 años** |\n| **Objetivo a largo plazo, salud** | Máxima diaria octohoraria | **120 µg/m³**, **sin ninguna** superación |\n| **Objetivo a largo plazo, vegetación** | AOT40 | **6 000 µg/m³·h** |\n**AOT40** = *Accumulated Ozone Exposure over a threshold of 40 ppb*. Es la **suma de los excesos sobre 80 µg/m³** de los valores horarios medidos **entre las 8:00 y las 20:00** (hora de Europa Central).\n**El mismo 120 sirve para el valor objetivo y para el objetivo a largo plazo:** lo que cambia son las superaciones admitidas.",
+      "fuente": "RD 102/2011, anexo I sección H",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f23",
+      "anverso": "¿Para qué sirven el **umbral superior** y el **umbral inferior de evaluación**?",
+      "reverso": "**No son valores de contaminación: son valores de PROCEDIMIENTO.** Deciden **cómo hay que medir**, no si se cumple la ley.\n| Situación | Cómo hay que evaluar |\n| --- | --- |\n| Por **encima** del umbral superior | **Medición fija obligatoria** |\n| **Entre** los dos umbrales | Medición fija **complementada** con modelización o medición indicativa |\n| Por **debajo** del umbral inferior | Basta **modelización o estimación objetiva** |\n**Y la regla de cuándo se considera superado un umbral:** *«cuando, en el transcurso de esos **cinco años anteriores**, se haya superado el valor numérico del umbral durante **al menos tres años distintos**»*.",
+      "fuente": "RD 102/2011, anexo II",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f24",
+      "anverso": "¿Qué **porcentaje del valor límite** son los umbrales de evaluación de las partículas y de los metales?",
+      "reverso": "**No es el mismo para todos, y ahí está la trampa.**\n| | Superior | Inferior |\n| --- | --- | --- |\n| **PM10 diario** | **70 %** = 35 µg/m³ | **50 %** = 25 µg/m³ |\n| **PM10 anual** | **70 %** = 28 µg/m³ | **50 %** = 20 µg/m³ |\n| **PM2,5 anual** | **70 %** = 17 µg/m³ | **50 %** = 12 µg/m³ |\n| **Plomo** | **70 %** = 0,35 µg/m³ | **50 %** = 0,25 µg/m³ |\n| **Níquel** | **70 %** = 14 ng/m³ | **50 %** = 10 ng/m³ |\n| **Arsénico** | **60 %** = 3,6 ng/m³ | **40 %** = 2,4 ng/m³ |\n| **Cadmio** | **60 %** = 3 ng/m³ | **40 %** = 2 ng/m³ |\n| **Benzo(a)pireno** | **60 %** = 0,6 ng/m³ | **40 %** = 0,4 ng/m³ |\n**Regla:** partículas, plomo y níquel al **70/50**; arsénico, cadmio y B(a)P al **60/40**.",
+      "fuente": "RD 102/2011, anexo II sección I",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f25",
+      "anverso": "¿Cuáles son los umbrales de **activación**, **información** y **alerta** de las partículas?",
+      "reverso": "| | Activación | Información | Alerta |\n| --- | --- | --- | --- |\n| **PM10** (promedio 24 h o móvil 24 h) | **40 µg/m³** | **50 µg/m³** | **80 µg/m³** |\n| **PM2,5** (promedio 24 h o móvil 24 h) | **25 µg/m³** | **35 µg/m³** | **50 µg/m³** |\n**Qué hace cada uno:**\n- **Activación:** dispara la **preparación** del plan de acción a corto plazo.\n- **Información:** obliga a **informar a la población sensible**.\n- **Alerta:** riesgo para **toda** la población; medidas inmediatas.\n**Coincidencia que confunde:** el umbral de **información** de PM10 (50) es exactamente el **valor límite diario** de PM10. Y el de **alerta** de PM2,5 (50) coincide con el de información de PM10.",
+      "fuente": "RD 102/2011, anexo I secciones C.II y D.II",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f26",
+      "anverso": "¿Cuáles son los umbrales de **información** y **alerta** del SO₂, el NO₂ y el ozono?",
+      "reverso": "| | Activación | Información | Alerta |\n| --- | --- | --- | --- |\n| **SO₂** (horario) | 200 | **350** | **500** |\n| **NO₂** (horario) | 180 | **200** | **400** |\n| **Ozono** | 120 (8 h) | **180** (horario) | **240** (horario) |\n**En estos tres, la alerta exige TRES HORAS CONSECUTIVAS** por encima del valor, en un área de al menos **100 km²** o en la zona entera. **En partículas, no**: basta el promedio de 24 h.\n**La pareja del ozono, 180 y 240, es la más preguntable de todas.**",
+      "fuente": "RD 102/2011, anexo I secciones A.II, B.II y H.II",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f27",
+      "anverso": "¿Qué **incertidumbre** se admite en la medición fija de cada contaminante, y qué **captura de datos**?",
+      "reverso": "| | Incertidumbre (fija) | Captura mínima |\n| --- | --- | --- |\n| **PM10, PM2,5 y plomo** | **25 %** | **90 %** |\n| **Arsénico, cadmio y níquel** | **40 %** | **90 %** |\n| **Benzo(a)pireno** | **50 %** | **90 %** |\n| **Otros HAP y mercurio gaseoso** | **50 %** | **90 %** |\n| **Depósitos totales** | **60 %** | **90 %** |\n**La captura mínima es siempre el 90 %** y **no incluye las pérdidas por calibración o mantenimiento normal**.\n**En medición indicativa la incertidumbre sube al 50 %** para partículas y plomo; en **modelización**, al 50 % para partículas y al **60 %** para metales y HAP.",
+      "fuente": "RD 102/2011, anexos V y VI",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f28",
+      "anverso": "¿Cómo se coloca físicamente la toma de muestra de una estación? (**microimplantación**)",
+      "reverso": "| Criterio | Valor |\n| --- | --- |\n| **Altura de la entrada** | Entre **1,5 m** (zona de respiración) y **4 m** sobre el suelo |\n| **Flujo libre** | Arco de al menos **270°**, o **180°** en línea de edificios |\n| **Distancia al edificio** | Mínimo **0,5 m** en puntos de línea de edificios |\n| **En tráfico** | Al menos **25 m** del borde de cruces principales, y **no más de 10 m** del borde exterior de la acera |\n| **Además, As, Cd, Ni y HAP en tráfico** | Al menos **4 m del centro del carril más próximo** |\n| **Salida del sistema** | Que **no recircule** hacia la entrada |\n**El 1,5 m tiene nombre y razón:** es la **zona de respiración**. Se mide el aire que la gente respira, no el que pasa por el tejado.",
+      "fuente": "RD 102/2011, anexo III sección III",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f29",
+      "anverso": "¿De qué tiene que ser **representativa** cada tipo de estación? (**macroimplantación**)",
+      "reverso": "| Tipo de estación | Representatividad exigida |\n| --- | --- |\n| **Tráfico** | Un tramo de calle **no inferior a 100 m** |\n| **Industrial** | Al menos **250 m × 250 m** |\n| **Fondo urbano** | **Varios km²**; no dominada por una sola fuente |\n| **Fondo rural** | **No influida** por aglomeraciones ni industrias a **menos de 5 km** |\n| **Protección de la vegetación** | A **más de 20 km** de aglomeraciones o **más de 5 km** de zonas edificadas, industrias o carreteras; representativa de **1 000 km²** |\n**Y un equilibrio que se pregunta:** en cada red, las estaciones de fondo urbano **no pueden ser más del doble ni menos de la mitad** de las estaciones de tráfico.",
+      "fuente": "RD 102/2011, anexo III sección II",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f30",
+      "anverso": "¿Dónde se ponen los puntos de muestreo de **metales y HAP**, y cada cuánto se muestrea?",
+      "reverso": "**Dónde:** *«deberán situarse **prioritariamente en los mismos puntos de toma de muestra que los de partículas PM10**»*. Lógico: es el mismo captador.\n**Cada cuánto:**\n| Analito | Frecuencia |\n| --- | --- |\n| **As, Cd, Ni** | Diaria, o **como alternativa, un día a la semana** |\n| **Benzo(a)pireno y otros HAP** | Muestreo de **24 horas**; se pueden **combinar muestras de hasta un mes** y analizarlas como **muestra compuesta**, si se demuestra que son estables |\n| **Depósitos** | Tomas **mensuales o semanales** repartidas a lo largo del año |\n**Y una autorización práctica:** se puede usar **parte del filtro de PM10** para los metales, si esa parte es **representativa**.",
+      "fuente": "RD 102/2011, anexo III sección II.a; anexo VI sección I",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f31",
+      "anverso": "¿Qué es el **IME** de la PM2,5 y qué obligación impuso?",
+      "reverso": "**Indicador Medio de Exposición:** media **móvil trienal** de PM2,5 medida en **ubicaciones de fondo urbano**, **ponderada por la población** que representa cada estación.\n**La obligación en materia de concentración de la exposición:** el IME debía ser **≤ 20 µg/m³ a más tardar en 2015** (calculado con 2013, 2014 y 2015).\n**Y el objetivo nacional de reducción de la exposición a 2020**, escalonado según el punto de partida de 2011:\n| IME en 2011 | Reducción exigida |\n| --- | --- |\n| ≤ 8,5 | **0 %** |\n| > 8,5 y < 13 | **10 %** |\n| 13 a < 18 | **15 %** |\n| 18 a < 22 | **20 %** |\n| ≥ 22 | Bajar **al menos a 18 µg/m³** |\n**Es el único contaminante con un régimen de exposición propio.**",
+      "fuente": "RD 102/2011, artículo 21 y anexo XIII",
+      "etiquetas": [
+        "concepto",
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f32",
+      "anverso": "¿Cómo se muestrea en la **Red IME**?",
+      "reverso": "| Criterio | Valor |\n| --- | --- |\n| **Número de estaciones** | Mínimo **una por cada millón de habitantes**, en aglomeraciones o zonas urbanas de **más de 100 000 habitantes** |\n| **Método** | Preferentemente **gravimetría**, de **alto o bajo volumen**, o su modificación con **captador secuencial** |\n| **Frecuencia** | **Una muestra cada 3 días**, desde el 1 de enero de 2009 |\n| **Período de muestreo** | **24 h ± 1 h**, recomendado de **08:00 a 08:00** hora local |\n| **Captura mínima** | **90 %**: *«110 días de los 122 posibles»* |\n| **Validez del IME** | Se puede calcular *«siempre que no falten datos de más del **20 % de las estaciones**»* |\n**El «cada 3 días» y el «110 de 122» encajan:** 365 / 3 ≈ 122 muestras posibles al año.",
+      "fuente": "RD 102/2011, anexo XIII sección A",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f33",
+      "anverso": "Además de la masa, ¿qué hay que analizar en la **PM2,5 de fondo rural**?",
+      "reverso": "**La especiación química**, anexo VIII. Ocho iones y dos formas de carbono:\n> **SO₄²⁻ · NO₃⁻ · Na⁺ · K⁺ · NH₄⁺ · Cl⁻ · Ca²⁺ · Mg²⁺ · carbono elemental (CE) · carbono orgánico (CO)**\n**Cómo se miden:**\n- Los **ocho iones**, por **cromatografía iónica** sobre un extracto acuoso del filtro (técnica del tema 28).\n- El **carbono**, por análisis **termo-óptico**, que separa el elemental del orgánico.\n**Para qué sirve:** para saber **de dónde viene** el polvo. Sulfato y nitrato delatan formación secundaria; el sodio y el cloruro, aerosol marino; el potasio, quema de biomasa; el carbono elemental, diésel.",
+      "fuente": "RD 102/2011, anexo VIII sección B",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t37-f34",
+      "anverso": "¿Puede una ciudad superar 40 veces al año el valor límite diario de PM10 y **seguir cumpliendo la ley**?",
+      "reverso": "**Sí, si demuestra que las superaciones de más son de origen natural.** Artículo 22: *«Las superaciones atribuibles a fuentes naturales […] **no se considerarán superaciones** […] y **no originarán la obligación de ejecutar planes de actuación**»*.\n**Qué cuenta como fuente natural** (artículo 2, definición 3): *«erupciones volcánicas, actividades sísmicas o geotérmicas, **incendios forestales no intencionados**, **fuertes vientos**, **aerosoles marinos**, la **resuspensión atmosférica** y el **transporte de partículas naturales procedentes de regiones áridas**»*.\n**En España eso es, sobre todo, el polvo sahariano.** Y la demostración corre a cargo de la **comunidad autónoma**, con el procedimiento del anexo XIV. **No basta con alegarla.**",
+      "fuente": "RD 102/2011, artículos 2.3 y 22; anexo XIV",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    },
+    {
+      "id": "t37-f35",
+      "anverso": "¿Cuándo hay que transponer la **Directiva (UE) 2024/2881** y qué deroga?",
+      "reverso": "| | Fecha |\n| --- | --- |\n| **Transposición** (artículo 30) | *«a más tardar el **11 de diciembre de 2026**»* |\n| **Derogación** de las Directivas 2004/107/CE y 2008/50/CE (artículo 31) | *«con efectos a partir del **12 de diciembre de 2026**»* |\n**La directiva trae DOS cuadros de valores límite**, no uno:\n- **Cuadro 2**, a cumplir el **11/12/2026**: son, en lo esencial, **los valores actuales**.\n- **Cuadro 1**, a cumplir el **1 de enero de 2030**: los valores nuevos, mucho más estrictos.\n**España todavía no la ha transpuesto** (a 24/09/2026): hay un proyecto de real decreto que sustituirá al RD 102/2011 en tramitación. **Mientras tanto, la respuesta correcta es la del RD 102/2011.**",
+      "fuente": "Directiva (UE) 2024/2881, artículos 30 y 31, DOUE L de 20/11/2024",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f36",
+      "anverso": "¿Qué cambia para las **partículas** con los valores de 2030 de la Directiva 2024/2881?",
+      "reverso": "| | Hoy (RD 102/2011) | **1 de enero de 2030** |\n| --- | --- | --- |\n| **PM2,5 diario** | *(no existe)* | **25 µg/m³**, máx. **18** veces/año |\n| **PM2,5 anual** | 25 µg/m³ | **10 µg/m³** |\n| **PM10 diario** | 50 µg/m³, máx. **35** veces | **45 µg/m³**, máx. **18** veces |\n| **PM10 anual** | 40 µg/m³ | **20 µg/m³** |\n**Los dos cambios de fondo:**\n1. **La PM2,5 pasa a tener valor límite DIARIO**, que hoy no tiene.\n2. **El anual de PM2,5 se divide por 2,5**: de 25 a 10 µg/m³.\n**Y el número de superaciones se unifica en 18** para casi todo, frente a los 35 / 24 / 18 / 3 actuales.",
+      "fuente": "Directiva (UE) 2024/2881, anexo I sección 1, cuadro 1",
+      "etiquetas": [
+        "normativa",
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f37",
+      "anverso": "¿Qué cambia para los **metales** con la Directiva 2024/2881?",
+      "reverso": "**Los números no cambian. Cambia su naturaleza jurídica.**\n| Contaminante | Hoy | Desde el 1/1/2030 |\n| --- | --- | --- |\n| **Arsénico** | 6 ng/m³, **valor objetivo** | **6,0 ng/m³, VALOR LÍMITE** |\n| **Cadmio** | 5 ng/m³, **valor objetivo** | **5,0 ng/m³, VALOR LÍMITE** |\n| **Níquel** | 20 ng/m³, **valor objetivo** | **20 ng/m³, VALOR LÍMITE** |\n| **Benzo(a)pireno** | 1 ng/m³, **valor objetivo** | **1,0 ng/m³, VALOR LÍMITE** |\n| **Plomo** | 0,5 µg/m³, valor límite | 0,5 µg/m³, valor límite |\n**Es un salto de «hay que intentarlo en la medida de lo posible» a «hay que cumplirlo».** Los cuatro se suman al plomo en el **cuadro 1** de la directiva.\n**Y el escalón intermedio:** para el 11/12/2026 la directiva los mantiene como **valores objetivo**, en un **cuadro 3 aparte** con los mismos números. Solo en 2030 pasan a ser límite.",
+      "fuente": "Directiva (UE) 2024/2881, anexo I sección 1, cuadro 1",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f38",
+      "anverso": "¿Qué **instrumentación** se usa para medir los metales del filtro, y qué precaución específica hay?",
+      "reverso": "**La secuencia** (la técnica está en los temas 26, 27 y 35):\n1. **Pesar primero** el filtro: la gravimetría es no destructiva.\n2. **Digestión ácida**, normalmente asistida por microondas en recipiente cerrado.\n3. Medida por **ICP-MS** o **ICP-OES**; también **absorción atómica electrotérmica** (cámara de grafito) para los niveles más bajos.\n**La precaución específica: el BLANCO DE FILTRO.** El propio filtro virgen trae trazas metálicas, y cuando el valor objetivo del cadmio son **5 nanogramos por metro cúbico**, esa contribución no es despreciable. Hay que restarla, y hay que conocer su variabilidad entre lotes.\n**Por eso el material del filtro importa:** fibra de vidrio, cuarzo o PTFE, según lo que se vaya a medir después.",
+      "fuente": "RD 102/2011, anexo VII A.3 y A.9 (remisión a UNE-EN 14902); práctica de laboratorio",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t37-f39",
+      "anverso": "¿Qué exigencias de **calidad y trazabilidad** impone el RD 102/2011 a los laboratorios?",
+      "reverso": "- **Trazabilidad** de todas las mediciones *«de conformidad con los requisitos establecidos en la norma armonizada aplicable a los laboratorios de ensayo y calibración, es decir, la Norma **UNE-EN ISO/IEC 17025**»* (tema 40).\n- **Sistema de garantía y control de la calidad** con mantenimiento periódico, tanto en redes públicas como privadas.\n- El **Instituto de Salud Carlos III**, como **Laboratorio Nacional de Referencia**, revisa el sistema de calidad *«cuando sea necesario y, como mínimo, **cada cinco años**»*.\n- **Reconocimiento mutuo**: se aceptan informes de ensayo de otros Estados miembros si el laboratorio está acreditado según la 17025.\n**Y la documentación del emplazamiento** se revisa también **cada cinco años**, con fotografías, coordenadas y mapas.",
+      "fuente": "RD 102/2011, anexo V sección III; anexo VII sección E; anexo III sección IV",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f40",
+      "anverso": "¿Qué **porcentaje de datos válidos** se exige para dar por bueno un valor diario y una media anual?",
+      "reverso": "| Parámetro | Datos válidos exigidos |\n| --- | --- |\n| **Valores horarios** | **75 %**, es decir **45 minutos** |\n| **Valores octohorarios** | **75 %**, es decir **6 horas** |\n| **Valores de 24 horas** | **75 %** de las medias horarias, es decir **18 horas** |\n| **Media anual** | **90 %** de los valores horarios o de 24 h |\n| **AOT40** | **90 %** de los horarios del período |\n**La regla se recuerda en dos números: 75 % para lo de dentro del día, 90 % para el año.**\n**Y no cuentan como pérdida** los datos que faltan por **calibración periódica o mantenimiento normal**.",
+      "fuente": "RD 102/2011, anexo I sección J",
+      "etiquetas": [
+        "valores"
+      ]
+    },
+    {
+      "id": "t37-f41",
+      "anverso": "¿Qué tienen de particular las **mediciones aleatorias**, y qué es el percentil 90,4?",
+      "reverso": "**Se admiten, como excepción, solo para tres contaminantes: benceno, partículas y plomo.** Y con dos condiciones: mantener el **25 %** de incertidumbre y superar la cobertura temporal mínima de la medición indicativa. El muestreo *«debe distribuirse de manera uniforme a lo largo del año, para evitar resultados sesgados»*.\n**El percentil 90,4:** si se hacen mediciones aleatorias de PM10, *«debería evaluarse el **percentil 90,4**, que deberá ser inferior o igual a **50 µg/m³**, en lugar del número de superaciones»*.\n**De dónde sale ese 90,4:** 35 superaciones permitidas sobre 365 días son el **9,6 %**; el complementario es **90,4 %**. No es un número mágico: es el valor límite diario expresado como percentil.",
+      "fuente": "RD 102/2011, anexo V sección I, nota c",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t37-f42",
+      "anverso": "¿Cuáles son los **métodos de referencia** de los contaminantes gaseosos?",
+      "reverso": "| Contaminante | Técnica | Norma |\n| --- | --- | --- |\n| **Dióxido de azufre** | **Fluorescencia de ultravioleta** | UNE-EN 14212:2013 |\n| **NO₂ y NOₓ** | **Quimioluminiscencia** | UNE-EN 14211:2013 |\n| **Monóxido de carbono** | **Espectroscopía infrarroja no dispersiva** | UNE-EN 14626:2013 |\n| **Ozono** | **Fotometría ultravioleta** | UNE-EN 14625:2013 |\n| **Benceno** | Cromatografía de gases | UNE-EN 14662, partes 1 y 2 (2006) y parte 3 (2016) |\n**Las cuatro técnicas se emparejan sin repetirse:** el SO₂ **emite** luz UV (fluorescencia), el ozono la **absorbe** (fotometría), el NO₂ emite luz por reacción química (quimioluminiscencia) y el CO absorbe infrarrojo.\n**El benceno es el único que necesita separación cromatográfica**, porque hay que distinguirlo del resto de hidrocarburos.",
+      "fuente": "RD 102/2011, anexo VII sección A, puntos 1, 2, 6, 7 y 8",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f43",
+      "anverso": "¿Cuáles son los **métodos de referencia** del benzo(a)pireno, el mercurio y los depósitos?",
+      "reverso": "| Qué | Norma |\n| --- | --- |\n| **Benzo(a)pireno** en aire | **UNE-EN 15549:2008** (toma de muestra: la 12341) |\n| **Mercurio gaseoso total** | **UNE-EN 15852:2010** |\n| **Depósitos de As, Cd, Pb y Ni** | **UNE-EN 15841:2010** |\n| **Depósitos de mercurio** | **UNE-EN 15853:2010** |\n| **Depósitos de B(a)P y otros HAP** | **UNE-EN 15980:2011** |\n**Para los demás HAP distintos del B(a)P no hay norma CEN**, y el RD permite usar *«métodos normalizados nacionales o métodos ISO»*.\n**Los depósitos se expresan en µg/(m²·día)**, y se admiten captadores «solo húmedo» en lugar de globales **si la diferencia está dentro del 10 %**.",
+      "fuente": "RD 102/2011, anexo VII sección A, puntos 10, 11 y 12; anexo VI",
+      "etiquetas": [
+        "normativa"
+      ]
+    },
+    {
+      "id": "t37-f44",
+      "anverso": "¿Qué **origen típico** tiene cada uno de los principales contaminantes atmosféricos?",
+      "reverso": "| Contaminante | Origen |\n| --- | --- |\n| **SO₂** | Combustibles con azufre; refino; tráfico marítimo |\n| **NOₓ** | **Toda combustión a alta temperatura**: tráfico, grandes instalaciones |\n| **CO** | Combustión **incompleta**; tráfico |\n| **Benceno** | Gasolina: almacenamiento, distribución y escape |\n| **Partículas** | Tráfico (escape y **desgaste**), biomasa, obras, industria y **fuentes naturales** |\n| **Plomo** | Herencia de la gasolina con plomo; hoy, fuentes industriales concretas |\n| **As, Cd, Ni** | Metalurgia, combustión de carbón y fuel, incineración |\n| **B(a)P** | Combustión incompleta de materia orgánica: **biomasa doméstica**, diésel |\n| **Ozono** | **Ninguno directo**: es secundario |\n| **NH₃** | **Agropecuario**; alcantarillado urbano; catalizadores SCR |\n**Nota:** parte de esta tabla es doctrina de química atmosférica; lo que está en el real decreto es lo del ozono, los COV y el amoniaco.",
+      "fuente": "RD 102/2011, preámbulo y artículo 2 (ozono, COV, amoniaco); doctrina para el resto",
+      "etiquetas": [
+        "concepto"
+      ]
+    },
+    {
+      "id": "t37-f45",
+      "anverso": "Un mismo filtro de un captador de PM10, ¿cuántos resultados distintos puede dar?",
+      "reverso": "**Como mínimo dos, y son las dos mitades del enunciado de este tema:**\n1. La **concentración másica** de PM10, por diferencia de pesada.\n2. El **contenido de Pb, Cd, As y Ni** de esa misma fracción, por digestión y medida instrumental.\n**Y si es un filtro de PM2,5 de fondo rural, tres:** además la **especiación química** del anexo VIII —ocho iones más carbono elemental y orgánico—.\n**El requisito es el orden:** pesar siempre antes de digerir, porque el ácido destruye el soporte. Y si se usa solo una porción del filtro, hay que demostrar que **es representativa**.\n**Un captador, un filtro, tres analíticas.** Esa es la idea que une todo el tema.",
+      "fuente": "RD 102/2011, anexos VI, VII y VIII",
+      "etiquetas": [
+        "concepto"
+      ],
+      "nucleo": true
+    }
+  ],
+  "test": [
+    {
+      "id": "t37-q01",
+      "pregunta": "Cuando hablamos de análisis de aire y sus principales contaminantes, ¿qué significa la abreviatura PM?",
+      "opciones": [
+        "Componente mayoritario.",
+        "Componente minoritario.",
+        "Materia particulada."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta literal, con sus mismos distractores, en 1246 primer ejercicio #24 y en 1322-1 reserva R1. PM es «particulate matter», materia particulada: no es una proporción, es una clase de contaminante.",
+      "fuente": "Cuestionarios 1246 #24 y 1322-1 R1",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q02",
+      "pregunta": "El método utilizado para la determinación de la concentración másica PM10 o PM2,5 de la materia particulada en suspensión es:",
+      "opciones": [
+        "Un método gravimétrico normalizado.",
+        "Un método volumétrico normalizado.",
+        "Un método fotométrico."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta literal de 1322-1 reserva R2. El enunciado está copiado del título de la UNE-EN 12341, que el RD 102/2011 transcribe: «Método de medición gravimétrico normalizado para la determinación de la concentración másica PM10 o PM2,5…». Lo que se regula es una masa por volumen de aire, y la masa se pesa.",
+      "fuente": "Cuestionario 1322-1 R2; RD 102/2011 anexo VII A.4",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q03",
+      "pregunta": "Los metales que se analizan en la fracción PM10 de la materia particulada en suspensión en el aire son:",
+      "opciones": [
+        "Na, K, Ca y Mg.",
+        "As, Sb, Se y Hg.",
+        "Pb, Cd, As y Ni."
+      ],
+      "correcta": 2,
+      "explicacion": "Pregunta literal de 1322-1 reserva R3. Son los cuatro del título de la UNE-EN 14902. Na, K, Ca y Mg son los cationes mayoritarios del agua; y el antimonio y el selenio no están regulados, mientras que el mercurio se mide como gaseoso total, no en PM10.",
+      "fuente": "Cuestionario 1322-1 R3; RD 102/2011 anexo VII A.3 y A.9",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q04",
+      "pregunta": "Según el RD 102/2011, la PM10 se define como las partículas que pasan a través de un cabezal de tamaño selectivo para un diámetro aerodinámico de 10 µm con una eficiencia de corte del:",
+      "opciones": [
+        "50 %.",
+        "95 %.",
+        "100 %."
+      ],
+      "correcta": 0,
+      "explicacion": "Definición 28 del artículo 2, literal. El 10 no es un techo de tamaño: es el diámetro en el que el cabezal deja pasar justo la mitad de las partículas. Por eso la separación es una curva y no una frontera.",
+      "fuente": "RD 102/2011, artículo 2, definición 28",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q05",
+      "pregunta": "El valor límite diario de PM10 es de 50 µg/m³, y no podrá superarse en más de:",
+      "opciones": [
+        "18 ocasiones por año.",
+        "25 ocasiones por año.",
+        "35 ocasiones por año."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo I, sección C. En vigor desde el 1 de enero de 2005. El 18 es el del NO₂ horario y el 25 son los días de ozono; confundirlos es el fallo más habitual.",
+      "fuente": "RD 102/2011, anexo I sección C",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q06",
+      "pregunta": "El valor límite anual de PM10 en el RD 102/2011 es de:",
+      "opciones": [
+        "20 µg/m³.",
+        "40 µg/m³.",
+        "50 µg/m³."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo I, sección C. El 50 es el valor diario y el 20 será el anual a partir de 2030 con la Directiva 2024/2881.",
+      "fuente": "RD 102/2011, anexo I sección C",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q07",
+      "pregunta": "Respecto a la PM2,5, el RD 102/2011 establece:",
+      "opciones": [
+        "Un valor límite anual y un valor límite diario.",
+        "Solo valores límite anuales, sin valor límite diario.",
+        "Solo un valor objetivo, sin ningún valor límite."
+      ],
+      "correcta": 1,
+      "explicacion": "La PM2,5 tiene valor objetivo anual de 25 µg/m³ (2010), valor límite anual fase I de 25 (2015) y fase II de 20 (2020), pero NO tiene valor límite diario. Lo tendrá con la Directiva 2024/2881, a partir de 2030.",
+      "fuente": "RD 102/2011, anexo I sección D",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q08",
+      "pregunta": "Los valores objetivo de arsénico, cadmio y níquel en aire ambiente son, respectivamente:",
+      "opciones": [
+        "6, 5 y 20 ng/m³.",
+        "6, 5 y 20 µg/m³.",
+        "0,6, 0,5 y 2 ng/m³."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo I, sección I. Los tres en nanogramos por metro cúbico, como promedio anual y en la fracción PM10, con fecha de cumplimiento de 1 de enero de 2013. El benzo(a)pireno acompaña con 1 ng/m³.",
+      "fuente": "RD 102/2011, anexo I sección I",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q09",
+      "pregunta": "El plomo en aire ambiente tiene:",
+      "opciones": [
+        "Un valor objetivo de 0,5 ng/m³.",
+        "Un valor límite anual de 0,5 µg/m³.",
+        "Un valor límite anual de 5 µg/m³."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo I, sección E. El plomo es el único de los cuatro metales con valor LÍMITE, y el único que va en microgramos; los otros tres tienen valor objetivo y van en nanogramos. El 5 µg/m³ es el benceno.",
+      "fuente": "RD 102/2011, anexo I sección E",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q10",
+      "pregunta": "Según el RD 102/2011, los niveles de arsénico, cadmio, níquel y benzo(a)pireno se refieren a su concentración:",
+      "opciones": [
+        "En la fracción PM2,5.",
+        "En el aire ambiente total, sin fraccionar.",
+        "En la fracción PM10."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la definición 4 del artículo 2, y no es un detalle técnico sino la definición legal de esos contaminantes. Por eso el análisis de metales del aire empieza siendo un análisis de partículas: el captador es el de PM10.",
+      "fuente": "RD 102/2011, artículo 2, definición 4",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q11",
+      "pregunta": "En una misma estación y un mismo día, la concentración de PM2,5 respecto de la de PM10 será:",
+      "opciones": [
+        "Siempre menor o igual.",
+        "Siempre mayor, porque las partículas finas son más numerosas.",
+        "Independiente: son dos contaminantes sin relación."
+      ],
+      "correcta": 0,
+      "explicacion": "La PM2,5 está contenida en la PM10: son dos cortes del mismo polvo. Un boletín que dé PM2,5 mayor que PM10 en la misma estación contiene un error. La diferencia entre ambas es la llamada fracción gruesa.",
+      "fuente": "RD 102/2011, artículo 2, definiciones 28 y 29",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q12",
+      "pregunta": "El RD 102/2011 define «aire ambiente» como:",
+      "opciones": [
+        "Todo el aire de la atmósfera, incluidos los lugares de trabajo.",
+        "El aire exterior de la baja troposfera, excluidos los lugares de trabajo.",
+        "El aire interior de los edificios de uso público."
+      ],
+      "correcta": 1,
+      "explicacion": "Definición 2 del artículo 2, literal. El aire de un puesto de trabajo se regula por la normativa de prevención de riesgos laborales, no por la de calidad del aire.",
+      "fuente": "RD 102/2011, artículo 2, definición 2"
+    },
+    {
+      "id": "t37-q13",
+      "pregunta": "La norma UNE-EN 14902 se refiere a:",
+      "opciones": [
+        "El método gravimétrico para la determinación de la concentración másica PM10 o PM2,5.",
+        "El método normalizado para la medida de Pb, Cd, As y Ni en la fracción PM10.",
+        "El método normalizado para la medición de benzo(a)pireno."
+      ],
+      "correcta": 1,
+      "explicacion": "El título completo es «Calidad del aire ambiente. Método normalizado para la medida de Pb, Cd, As y Ni en la fracción PM10 de la materia particulada en suspensión». El método gravimétrico de PM10 y PM2,5 es la UNE-EN 12341, y el del benzo(a)pireno, la UNE-EN 15549.",
+      "fuente": "RD 102/2011, anexo VII A.3 y A.9",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q14",
+      "pregunta": "El método de referencia para la toma de muestras de arsénico, cadmio y níquel en el aire ambiente es el descrito en la norma:",
+      "opciones": [
+        "UNE-EN 14902, la misma con la que se miden.",
+        "UNE-EN 12341, la misma que la de PM10.",
+        "UNE-EN 15841, la de los depósitos atmosféricos."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo VII separa la toma de muestra de la medida: se muestrea con el captador de PM10 (UNE-EN 12341) y se mide por UNE-EN 14902. No existe un captador de metales; existe un captador de partículas cuyo filtro se analiza después.",
+      "fuente": "RD 102/2011, anexo VII sección A, punto 9"
+    },
+    {
+      "id": "t37-q15",
+      "pregunta": "Al expresar la concentración de PM10, el volumen de aire muestreado se refiere a:",
+      "opciones": [
+        "293 K y 101,3 kPa, como en los contaminantes gaseosos.",
+        "273 K y 101,3 kPa, condiciones normales.",
+        "Las condiciones ambientales de temperatura y presión del momento de la medición."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo VII, sección C. Los gases se normalizan a 293 K y 101,3 kPa; las partículas, no. Por eso el propio anexo I habla de «valores límite de las partículas PM10 en condiciones ambientales». Se quiere saber cuánto polvo se respira de verdad.",
+      "fuente": "RD 102/2011, anexo VII sección C",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q16",
+      "pregunta": "¿Puede emplearse un monitor automático en continuo para medir PM10 en una red de calidad del aire?",
+      "opciones": [
+        "No: el método gravimétrico de referencia es de uso obligatorio y exclusivo.",
+        "Sí, libremente y sin ninguna condición, por ser una medición indicativa.",
+        "Sí, demostrando que guarda una relación coherente con el método de referencia y corrigiendo los resultados."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo VII, sección B. Para las partículas basta demostrar «una relación coherente» con el método de referencia, pero los resultados deben corregirse. El informe de equivalencia lo prepara el laboratorio nacional de referencia.",
+      "fuente": "RD 102/2011, anexo VII sección B"
+    },
+    {
+      "id": "t37-q17",
+      "pregunta": "El ozono troposférico tiene valor objetivo y no valor límite porque:",
+      "opciones": [
+        "Es un contaminante secundario: no se emite, se forma en la atmósfera a partir de precursores.",
+        "Su toxicidad es menor que la de los demás contaminantes regulados.",
+        "No se dispone de método de referencia normalizado para medirlo."
+      ],
+      "correcta": 0,
+      "explicacion": "El ozono se forma por reacción fotoquímica de los COV con los óxidos de nitrógeno en presencia de luz solar. Ningún Estado puede garantizar su cumplimiento actuando solo sobre sus propios focos. Sí tiene método de referencia: fotometría ultravioleta, UNE-EN 14625.",
+      "fuente": "RD 102/2011, artículo 2 definiciones 5 y 30; anexo I sección H"
+    },
+    {
+      "id": "t37-q18",
+      "pregunta": "El umbral superior de evaluación de la PM10 anual corresponde al:",
+      "opciones": [
+        "50 % del valor límite, es decir 20 µg/m³.",
+        "60 % del valor límite, es decir 24 µg/m³.",
+        "70 % del valor límite, es decir 28 µg/m³."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo II. Para partículas, plomo y níquel los umbrales son el 70 % (superior) y el 50 % (inferior); para arsénico, cadmio y benzo(a)pireno, el 60 % y el 40 %. El 50 % de 40 son los 20 µg/m³ del umbral inferior.",
+      "fuente": "RD 102/2011, anexo II sección I.c"
+    },
+    {
+      "id": "t37-q19",
+      "pregunta": "Se considera superado un umbral de evaluación cuando, en los cinco años anteriores, se ha superado su valor numérico durante al menos:",
+      "opciones": [
+        "Un año.",
+        "Tres años distintos.",
+        "Los cinco años."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo II, apartado II. La regla evita que un episodio excepcional obligue a rediseñar la red: hacen falta tres años de los cinco últimos.",
+      "fuente": "RD 102/2011, anexo II sección II"
+    },
+    {
+      "id": "t37-q20",
+      "pregunta": "Los umbrales de información y de alerta de las partículas PM10, en promedio de 24 horas, son respectivamente:",
+      "opciones": [
+        "40 y 50 µg/m³.",
+        "50 y 80 µg/m³.",
+        "80 y 120 µg/m³."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo I, sección C.II: activación 40, información 50 y alerta 80 µg/m³. Obsérvese que el umbral de información coincide numéricamente con el valor límite diario.",
+      "fuente": "RD 102/2011, anexo I sección C.II"
+    },
+    {
+      "id": "t37-q21",
+      "pregunta": "Los umbrales de información y de alerta del ozono son:",
+      "opciones": [
+        "180 y 240 µg/m³, en promedio horario.",
+        "120 y 180 µg/m³, en promedio octohorario.",
+        "200 y 400 µg/m³, en promedio horario."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo I, sección H.II. El 120 octohorario es el umbral de activación y también el valor objetivo; el 200/400 horario es el del dióxido de nitrógeno. La alerta de ozono exige además tres horas consecutivas.",
+      "fuente": "RD 102/2011, anexo I sección H.II"
+    },
+    {
+      "id": "t37-q22",
+      "pregunta": "La incertidumbre admitida en la medición fija de PM10, PM2,5 y plomo, y la de arsénico, cadmio y níquel, son respectivamente:",
+      "opciones": [
+        "25 % y 40 %.",
+        "40 % y 25 %.",
+        "25 % y 50 %."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexos V y VI. La exigencia se afloja donde la física no da más: el cadmio se mide en nanogramos y el plomo en microgramos. El 50 % es el del benzo(a)pireno. La captura mínima de datos es del 90 % en todos los casos.",
+      "fuente": "RD 102/2011, anexos V y VI"
+    },
+    {
+      "id": "t37-q23",
+      "pregunta": "El punto de entrada de la toma de muestra de una estación debe situarse, con carácter general, a una altura sobre el suelo de entre:",
+      "opciones": [
+        "0,5 y 1,5 metros.",
+        "1,5 y 4 metros.",
+        "4 y 10 metros."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, microimplantación. El 1,5 m tiene nombre propio en el real decreto: es la «zona de respiración». Se mide el aire que la gente respira, no el del tejado. Los 0,5 m son la distancia mínima al edificio más próximo.",
+      "fuente": "RD 102/2011, anexo III sección III.b"
+    },
+    {
+      "id": "t37-q24",
+      "pregunta": "En emplazamientos de tráfico, los puntos de medición deben situarse al menos a 25 m del borde de los cruces principales y a una distancia del borde exterior de la acera:",
+      "opciones": [
+        "No superior a 10 metros.",
+        "No inferior a 10 metros.",
+        "De exactamente 4 metros."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo III, microimplantación. Lejos del cruce (donde las emisiones de parada y arranque distorsionan) pero cerca de la acera. Los 4 metros son la distancia mínima al centro del carril más próximo, y solo se exige para arsénico, cadmio, níquel y HAP.",
+      "fuente": "RD 102/2011, anexo III sección III.e"
+    },
+    {
+      "id": "t37-q25",
+      "pregunta": "Los puntos de muestreo de arsénico, cadmio, mercurio, níquel e hidrocarburos aromáticos policíclicos deben situarse:",
+      "opciones": [
+        "En estaciones exclusivas, separadas de las de partículas.",
+        "Prioritariamente en los mismos puntos de toma de muestra que los de PM10.",
+        "Exclusivamente en estaciones de fondo rural."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, macroimplantación. Es coherente con el método: el captador de metales es el captador de PM10, y del mismo filtro salen las dos determinaciones.",
+      "fuente": "RD 102/2011, anexo III sección II.a"
+    },
+    {
+      "id": "t37-q26",
+      "pregunta": "Respecto al análisis de metales, el RD 102/2011 autoriza expresamente:",
+      "opciones": [
+        "Utilizar parte de los filtros de PM10, si se demuestra que esas partes son representativas del conjunto.",
+        "Prescindir del blanco de filtro cuando se emplea ICP-MS.",
+        "Digerir el filtro antes de pesarlo, para acelerar el análisis."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo VI. La condición doble es que la porción sea representativa y que no se ponga en peligro la sensibilidad de la detección. Digerir antes de pesar es imposible: la digestión ácida destruye el filtro y con él la posibilidad de conocer la masa.",
+      "fuente": "RD 102/2011, anexo VI sección I",
+      "nucleo": true
+    },
+    {
+      "id": "t37-q27",
+      "pregunta": "Una superación del valor límite diario de PM10 atribuible a una intrusión de polvo sahariano:",
+      "opciones": [
+        "Cuenta como superación, pero con un margen de tolerancia del 50 %.",
+        "No se considera superación ni origina la obligación de ejecutar planes de actuación, si se demuestra.",
+        "Obliga a declarar automáticamente el umbral de alerta."
+      ],
+      "correcta": 1,
+      "explicacion": "Artículo 22. El transporte de partículas naturales procedentes de regiones áridas es una de las aportaciones naturales del artículo 2.3. Pero la demostración corre a cargo de la comunidad autónoma, con el procedimiento del anexo XIV: no basta con alegarla.",
+      "fuente": "RD 102/2011, artículos 2.3 y 22"
+    },
+    {
+      "id": "t37-q28",
+      "pregunta": "El indicador medio de exposición (IME) a partículas PM2,5 se calcula como:",
+      "opciones": [
+        "La media anual de todas las estaciones de tráfico del país.",
+        "El valor máximo diario registrado en estaciones industriales.",
+        "Una media móvil trienal en ubicaciones de fondo urbano, ponderada con la población."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo XIII, sección A. Se mide en fondo urbano porque lo que se persigue es la exposición de la población general, no el punto más contaminado. La obligación en materia de concentración de la exposición era de 20 µg/m³ a más tardar en 2015.",
+      "fuente": "RD 102/2011, artículo 21 y anexo XIII"
+    },
+    {
+      "id": "t37-q29",
+      "pregunta": "Además de la concentración másica, en las mediciones de PM2,5 en ubicaciones rurales de fondo debe determinarse:",
+      "opciones": [
+        "La composición química: sulfato, nitrato, sodio, potasio, amonio, cloruro, calcio, magnesio y carbono elemental y orgánico.",
+        "Únicamente el contenido en metales pesados.",
+        "Únicamente el número de partículas por centímetro cúbico."
+      ],
+      "correcta": 0,
+      "explicacion": "Anexo VIII. La especiación permite saber de dónde viene el polvo: sulfato y nitrato delatan formación secundaria, sodio y cloruro el aerosol marino, el potasio la quema de biomasa y el carbono elemental el diésel. Los iones se miden por cromatografía iónica.",
+      "fuente": "RD 102/2011, anexo VIII sección B"
+    },
+    {
+      "id": "t37-q30",
+      "pregunta": "La Directiva (UE) 2024/2881 deberá estar transpuesta a más tardar el:",
+      "opciones": [
+        "1 de enero de 2030, fecha de cumplimiento de sus nuevos valores límite.",
+        "11 de diciembre de 2026, y deroga las Directivas 2004/107/CE y 2008/50/CE desde el día siguiente.",
+        "20 de noviembre de 2024, fecha de su publicación en el DOUE."
+      ],
+      "correcta": 1,
+      "explicacion": "Artículos 30 y 31 de la directiva. El 1 de enero de 2030 es la fecha de cumplimiento de su cuadro 1, el de los valores nuevos; el cuadro 2, con los valores actuales, debe cumplirse el 11 de diciembre de 2026.",
+      "fuente": "Directiva (UE) 2024/2881, artículos 30 y 31"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t37-s01",
+      "titulo": "Un año de datos de una estación de fondo urbano",
+      "enunciado": "Usted trabaja en el laboratorio de la red de vigilancia de la calidad del aire de una ciudad de 700 000 habitantes. Al cerrar el año, la estación de fondo urbano que usted atiende presenta los siguientes resultados de partículas: **media anual de PM10 = 31 µg/m³**; **valor límite diario de PM10 superado en 41 ocasiones**, de las cuales **9 coinciden con episodios documentados de intrusión de polvo sahariano**; **media anual de PM2,5 = 18 µg/m³**. La captura de datos del año ha sido del 93 %. Responda a las siguientes cuestiones aplicando el Real Decreto 102/2011.",
+      "preguntas": [
+        {
+          "id": "t37-s01-q1",
+          "pregunta": "Respecto al valor límite ANUAL de PM10, la estación:",
+          "opciones": [
+            "Lo incumple, porque supera los 20 µg/m³.",
+            "Lo incumple, porque supera los 25 µg/m³.",
+            "Lo cumple: el valor límite anual es de 40 µg/m³ y la media es de 31.",
+            "No puede evaluarse, porque la captura de datos no llega al 95 %."
+          ],
+          "correcta": 2,
+          "explicacion": "El valor límite anual de PM10 es de 40 µg/m³ (anexo I, sección C). Los 20 µg/m³ son el valor que fijará la Directiva 2024/2881 para 2030, y los 25 son el valor de PM2,5. La captura exigida para una media anual es del 90 %, y el 93 % la cumple.",
+          "fuente": "RD 102/2011, anexo I secciones C y J"
+        },
+        {
+          "id": "t37-s01-q2",
+          "pregunta": "Respecto al valor límite DIARIO de PM10, con 41 superaciones de las que 9 son de origen sahariano:",
+          "opciones": [
+            "Incumple, porque 41 es mayor que 35 y las intrusiones no son descontables.",
+            "Cumple si se demuestra el origen natural de esas 9: restadas, quedan 32, por debajo de las 35 permitidas.",
+            "Cumple automáticamente, porque el polvo sahariano exime del cómputo sin necesidad de demostración.",
+            "Incumple, porque el máximo de superaciones admitido es de 18 al año."
+          ],
+          "correcta": 1,
+          "explicacion": "El artículo 22 permite no computar las superaciones atribuibles a fuentes naturales, entre las que está el transporte de partículas de regiones áridas, pero exige demostrarlo con el procedimiento del anexo XIV; la carga de la prueba es de la comunidad autónoma. El límite son 35 superaciones, no 18.",
+          "fuente": "RD 102/2011, anexo I sección C; artículos 2.3 y 22; anexo XIV"
+        },
+        {
+          "id": "t37-s01-q3",
+          "pregunta": "La media anual de PM2,5 de 18 µg/m³, comparada con los umbrales de evaluación del anexo II:",
+          "opciones": [
+            "Está por debajo del umbral inferior de evaluación, de 12 µg/m³.",
+            "Está entre el umbral inferior y el superior de evaluación.",
+            "Supera el umbral superior de evaluación, que es el 70 % del valor límite: 17 µg/m³.",
+            "No se le aplican umbrales de evaluación: la PM2,5 carece de ellos."
+          ],
+          "correcta": 2,
+          "explicacion": "Anexo II, sección I.c: para la media anual de PM2,5 el umbral superior es el 70 % del valor límite (17 µg/m³) y el inferior el 50 % (12 µg/m³). Con 18 se supera el superior, lo que obliga a mantener medición fija. Sí existen umbrales de evaluación para PM2,5; lo que no se les aplica es la evaluación del objetivo de reducción de la exposición.",
+          "fuente": "RD 102/2011, anexo II sección I.c"
+        },
+        {
+          "id": "t37-s01-q4",
+          "pregunta": "La media anual de PM2,5 de 18 µg/m³, comparada con los VALORES del anexo I:",
+          "opciones": [
+            "Cumple el valor límite anual fase I (25 µg/m³) y también el fase II (20 µg/m³).",
+            "Incumple el valor límite anual fase I, que es de 15 µg/m³.",
+            "Incumple los dos, porque el valor límite de PM2,5 es de 10 µg/m³.",
+            "No procede comparar: la PM2,5 solo tiene valor límite diario."
+          ],
+          "correcta": 0,
+          "explicacion": "Anexo I, sección D: valor objetivo anual 25 (2010), valor límite fase I 25 (2015) y fase II 20 (2020). Con 18 se cumplen ambos. Los 10 µg/m³ serán el valor de la Directiva 2024/2881 en 2030, cuando esos mismos 18 pasarían a ser un incumplimiento.",
+          "fuente": "RD 102/2011, anexo I sección D; Directiva (UE) 2024/2881, anexo I cuadro 1"
+        },
+        {
+          "id": "t37-s01-q5",
+          "pregunta": "Un día concreto la estación registra un promedio de 24 h de PM10 de 82 µg/m³. Eso significa que se ha superado:",
+          "opciones": [
+            "Solo el valor límite diario.",
+            "El valor límite diario y el umbral de activación, pero no los de información ni alerta.",
+            "El valor límite diario y el umbral de información, pero no el de alerta.",
+            "El valor límite diario y los umbrales de activación, información y alerta."
+          ],
+          "correcta": 3,
+          "explicacion": "Anexo I, sección C: valor límite diario 50; umbral de activación 40; de información 50; de alerta 80 µg/m³. Con 82 se pasan los cuatro. A diferencia del SO₂, el NO₂ y el ozono, en partículas la alerta no exige tres horas consecutivas.",
+          "fuente": "RD 102/2011, anexo I secciones C.I y C.II"
+        }
+      ]
+    },
+    {
+      "id": "t37-s02",
+      "titulo": "Del captador al ICP-MS: una serie de filtros de PM10",
+      "enunciado": "Su laboratorio recibe los filtros de un captador de PM10 de bajo volumen instalado en una estación de tráfico. El encargo es doble: **determinar la concentración másica de PM10** y **determinar el contenido de los metales regulados en esa fracción**. Los filtros llegan identificados, con el volumen de aire muestreado anotado en cada uno y con su tara registrada antes del muestreo. Responda aplicando el Real Decreto 102/2011 y las normas a las que remite.",
+      "preguntas": [
+        {
+          "id": "t37-s02-q1",
+          "pregunta": "El orden correcto de las operaciones sobre cada filtro es:",
+          "opciones": [
+            "Digerir en ácido, medir los metales y después pesar el residuo.",
+            "Acondicionar, pesar, y después digerir para medir los metales.",
+            "Pesar en húmedo nada más recibirlo, y digerir al día siguiente.",
+            "Dividir el filtro nada más recibirlo, pesar una mitad y digerir la otra sin acondicionar ninguna."
+          ],
+          "correcta": 1,
+          "explicacion": "La gravimetría es no destructiva y la digestión ácida disuelve el filtro: quien digiera primero se queda sin poder pesar. Y el acondicionamiento previo es imprescindible porque el filtro absorbe humedad ambiental; pesarlo «en húmedo» mide agua, no partículas.",
+          "fuente": "RD 102/2011, anexo VII A.4; anexo VI sección I"
+        },
+        {
+          "id": "t37-s02-q2",
+          "pregunta": "Para ahorrar tiempo se plantea analizar los metales solo en un cuarto de cada filtro. Según el RD 102/2011:",
+          "opciones": [
+            "Está prohibido: el análisis debe hacerse siempre sobre el filtro completo.",
+            "Está permitido sin condiciones, por ser una medición indicativa.",
+            "Está permitido si se demuestra que esa parte es representativa del conjunto y no se compromete la sensibilidad de la detección.",
+            "Está permitido solo para el plomo, no para el arsénico, el cadmio y el níquel."
+          ],
+          "correcta": 2,
+          "explicacion": "Anexo VI: «se autoriza la utilización de parte de los filtros de PM10 para el análisis posterior de metales, siempre que se demuestre que estas partes son representativas del conjunto y que no se pone en peligro la sensibilidad de la detección en relación con los objetivos de calidad de los datos pertinentes».",
+          "fuente": "RD 102/2011, anexo VI sección I"
+        },
+        {
+          "id": "t37-s02-q3",
+          "pregunta": "Los metales que hay que determinar en esa fracción, y la norma de referencia para medirlos, son:",
+          "opciones": [
+            "Pb, Cd, As y Ni, por la norma UNE-EN 14902.",
+            "Na, K, Ca y Mg, por la norma UNE-EN 12341.",
+            "As, Sb, Se y Hg, por la norma UNE-EN 15852.",
+            "Pb, Cd, As y Ni, por la norma UNE-EN 15841."
+          ],
+          "correcta": 0,
+          "explicacion": "Los cuatro son los del título de la UNE-EN 14902. La UNE-EN 12341 es la del método gravimétrico, la UNE-EN 15852 es la del mercurio gaseoso total y la UNE-EN 15841 es la de los metales en depósitos atmosféricos, no en aire.",
+          "fuente": "RD 102/2011, anexo VII sección A, puntos 3, 9, 11 y 12"
+        },
+        {
+          "id": "t37-s02-q4",
+          "pregunta": "Al calcular la concentración de PM10 en µg/m³, el volumen de aire muestreado debe expresarse:",
+          "opciones": [
+            "Corregido a 273 K y 101,3 kPa.",
+            "Corregido a 293 K y 101,3 kPa, igual que en los gases.",
+            "En las condiciones ambientales de temperatura y presión del momento de la medición.",
+            "Indistintamente, porque la diferencia es despreciable."
+          ],
+          "correcta": 2,
+          "explicacion": "Anexo VII, sección C: la normalización a 293 K y 101,3 kPa solo se aplica a los contaminantes gaseosos. Para las partículas y lo que se analiza en fase particulada el volumen va en condiciones ambientales, y por eso el anexo I habla de valores límite «en condiciones ambientales».",
+          "fuente": "RD 102/2011, anexo VII sección C"
+        },
+        {
+          "id": "t37-s02-q5",
+          "pregunta": "Sobre la frecuencia de análisis de los metales y el control de calidad del resultado:",
+          "opciones": [
+            "Hay que analizar obligatoriamente todos los días del año, sin alternativa.",
+            "Se admite muestrear un día por semana, y hay que descontar el blanco de filtro, cuya contribución no es despreciable a esos niveles.",
+            "No se exige blanco de filtro, porque el ICP-MS discrimina el origen de la señal.",
+            "La incertidumbre admitida para arsénico, cadmio y níquel es la misma que para el plomo: el 25 %."
+          ],
+          "correcta": 1,
+          "explicacion": "El anexo VI autoriza, «como alternativa a la toma de muestras diaria», muestrear un día a la semana los metales presentes en la PM10. El blanco de filtro es imprescindible: el filtro virgen trae trazas metálicas y el valor objetivo del cadmio son 5 ng/m³. Y la incertidumbre admitida es del 40 % para As, Cd y Ni, frente al 25 % del plomo.",
+          "fuente": "RD 102/2011, anexos V y VI"
+        }
+      ]
+    }
+  ]
+}

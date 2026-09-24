@@ -67,6 +67,13 @@ contenido**. Prometía nuestro tema 40 y está vacío. No aporta nada.
 > Toxicología de la Defensa**, que desarrolla lo mismo repartido entre **los tres objetivos de la
 > UNE-EN ISO 19458**. **Ningún dato de BIO_04 se volcó en el apunte.** El tema 36 sigue siendo «sin nada».
 
+> **Nota añadida el 24/09/2026, al redactar el tema 37.** Se volvió a comprobar de forma independiente,
+> extrayendo a texto **los 21 PDF** y barriéndolos con «PM10», «PM 10», «PM2,5», «materia particulada»,
+> «calidad del aire» y «contaminación atmosférica». **Una sola coincidencia**, en `BIO_03`, y dice
+> *«la zona controlada debería ventilarse adecuadamente para reducir al mínimo la contaminación
+> atmosférica»*: es ventilación de un laboratorio de radiactividad, nada que ver con la inmisión.
+> **El tema 37 sigue siendo «sin nada», y el mapeo era correcto.**
+
 Comprobado por búsqueda directa en los 21 archivos: **cero** apariciones de
 cromatografía, espectrofotometría, absorción atómica, ICP como técnica, polarimetría,
 refractometría, DQO, DBO, PM10/PM2,5, mínimos cuadrados, materiales de referencia y
