@@ -1,0 +1,793 @@
+{
+  "tema": 39,
+  "titulo": "Control de calidad en determinaciones físico-químicas: Patrones primarios y materiales de referencia. Trazabilidad. Calibración lineal: ajuste por mínimos cuadrados.",
+  "generadoDe": "temas/tema-39.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-25",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t39-f01",
+      "anverso": "En una calibración lineal por mínimos cuadrados, ¿qué valor de **R²** indica un **ajuste lineal perfecto**?",
+      "reverso": "**R² = 1,0** (1233, primer ejercicio, **#18**; los distractores eran 0,5 y 0,0).\nR² va **de 0 a 1**: 1 es que todos los puntos caen exactamente sobre la recta, y 0 que no hay ninguna relación lineal. **Nunca es negativo**, porque en una recta de calibrado es el cuadrado de r.",
+      "fuente": "Cuestionario 1233 primer ejercicio #18",
+      "etiquetas": ["examen", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f02",
+      "anverso": "¿Entre qué valores **oscila** el coeficiente de correlación **r** de una recta de regresión?",
+      "reverso": "**Entre −1 y +1** (1246, primer ejercicio, **#48**; los distractores eran −10 y 10, y 0 y 10).\n- **+1**: todos los puntos sobre una recta que **sube**.\n- **−1**: sobre una recta que **baja**.\n- **0**: ninguna relación **lineal**.\nY r **no dice la pendiente**: dos rectas muy distintas pueden tener r = 1.",
+      "fuente": "Cuestionario 1246 primer ejercicio #48; OpenStax 13.1",
+      "etiquetas": ["examen", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f03",
+      "anverso": "Con la recta de 1322 (1 → 0,05; 2 → 0,10; 5 → 0,24; 10 → 0,50), ¿cuál es su **R²**, y por qué se descartan dos opciones sin calcular?",
+      "reverso": "**R² = 0,999** (1322, segundo ejercicio, **#3**). El cálculo da 0,9994, con r = 0,99970.\nLas opciones **−0,099** y **−0,990** se descartan sin calcular: **R² no puede ser negativo**. Y **0,009** supondría que no hay relación, cuando los puntos suben casi perfectamente alineados.",
+      "fuente": "Cuestionario 1322 segundo ejercicio #3; cálculo propio",
+      "etiquetas": ["examen", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f04",
+      "anverso": "Se **añaden 5 mg/L** de analito a una muestra y da una absorbancia de 0,50, que en la recta equivale a 10 mg/L. ¿Cuánto analito tenía la muestra?",
+      "reverso": "**5 mg/L** (1322, segundo ejercicio, **#7**): **concentración total menos lo añadido**, 10 − 5.\nLa opción de 10 mg/L es el error de olvidarse de restar la adición. Con la recta exacta sale 10,06 − 5 = 5,06 mg/L.",
+      "fuente": "Cuestionario 1322 segundo ejercicio #7; cálculo propio",
+      "etiquetas": ["examen", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f05",
+      "anverso": "¿En qué se diferencian una **adición de patrón** y un **patrón interno**?",
+      "reverso": "- **Adición de patrón**: se añade a la muestra **el propio analito**, en cantidades conocidas, y se extrapola. Corrige los efectos de matriz **proporcionales**.\n- **Patrón interno**: se añade a patrones y muestras **otro compuesto**, de comportamiento parecido, y se calibra con la **relación entre las dos señales**. Corrige pérdidas y derivas; es habitual en cromatografía e ICP-MS.\nLa pregunta **1322 C2 #7** llama «patrón interno» a lo que en realidad es una **adición**.",
+      "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f06",
+      "anverso": "¿Qué **tres cosas** tiene que tener algo para ser un **patrón de medida** según el VIM?",
+      "reverso": "*«Realización de la definición de una magnitud dada, **con un valor determinado y una incertidumbre de medida asociada, tomada como referencia**»* (VIM 5.1).\n1. Un **valor**.\n2. Una **incertidumbre**.\n3. El **uso como referencia**.\nSin incertidumbre no es un patrón. Ejemplo químico del VIM: una disolución tampón de **pH 7,072 con incertidumbre típica de 0,006**.",
+      "fuente": "VIM 5.1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f07",
+      "anverso": "Ordena la jerarquía de patrones del VIM y di qué es el **patrón de trabajo**.",
+      "reverso": "**Internacional → nacional → primario → secundario → de referencia → de trabajo.**\n- **Primario** (5.4): establecido por un **procedimiento de medida primario**.\n- **Secundario** (5.5): **calibrado respecto a un primario**.\n- **De referencia** (5.6): el que calibra **otros patrones** en una organización.\n- **De trabajo** (5.7): el que se usa **habitualmente para calibrar o verificar instrumentos**; si verifica, también se llama **patrón de control**.\nLa incertidumbre **crece hacia abajo**.",
+      "fuente": "VIM 5.2 a 5.7",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f08",
+      "anverso": "«Patrón primario» tiene un sentido en el VIM y otro en química analítica. ¿Cuáles, y por qué coinciden?",
+      "reverso": "- **VIM 5.4**: patrón *«establecido mediante un procedimiento de medida primario»*. Su **ejemplo 1** es químico: una disolución preparada **disolviendo una cantidad de sustancia conocida en un volumen conocido**.\n- **Química analítica** (tema 22): una **sustancia** tan pura que su disolución se prepara **por pesada directa**, sin valorarla: ftalato ácido de potasio, carbonato sódico, dicromato potásico.\nCoinciden porque **pesar y enrasar es un procedimiento primario**.",
+      "fuente": "VIM 5.4; tema 22",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f09",
+      "anverso": "¿Qué es un **método primario**, y qué métodos de laboratorio lo son?",
+      "reverso": "Un método con *«las cualidades metrológicas más altas»*, cuyo funcionamiento se describe y entiende por completo y con una **declaración completa de incertidumbre en unidades del SI**.\nPotencialmente primarios: **gravimetría**, **valoración (titrimetría)**, **culombimetría** y **dilución isotópica con espectrometría de masas**.\nPor eso la **gravimetría y la volumetría no necesitan recta de calibrado**.",
+      "fuente": "Eurachem EEE/RM/062, definiciones",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f10",
+      "anverso": "¿Cómo define el VIM el **material de referencia (MR)**?",
+      "reverso": "*«Material **suficientemente homogéneo y estable** con respecto a propiedades especificadas, establecido como **apto para su uso previsto** en una medición o en un examen de propiedades cualitativas»* (VIM 5.13).\n**Homogéneo, estable y apto**: no hace falta que tenga un valor certificado.",
+      "fuente": "VIM 5.13",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f11",
+      "anverso": "¿Qué tiene un **MRC** que no tenga un MR?",
+      "reverso": "Un **certificado** emitido por un **organismo autorizado** con **uno o varios valores, sus incertidumbres y su trazabilidad metrológica** (VIM 5.14).\nMR = homogéneo, estable y apto. **MRC = MR + valor + incertidumbre + trazabilidad, documentados en un certificado** (Guía ISO 31).",
+      "fuente": "VIM 5.14",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f12",
+      "anverso": "Un material de referencia **sin valor asignado**, ¿para qué puede usarse?",
+      "reverso": "**Solo para controlar la precisión.** *«Los materiales de referencia con o sin valores asignados pueden servir para controlar la precisión de la medida, mientras que **únicamente los materiales con valores asignados** pueden utilizarse para la **calibración o control de la veracidad**»* (VIM 5.13, nota 2).",
+      "fuente": "VIM 5.13, nota 2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f13",
+      "anverso": "¿Puede usarse un material de referencia **para calibrar y para controlar** en la misma medición?",
+      "reverso": "**No.** *«En una medición dada, un material de referencia puede utilizarse **únicamente para calibración o para el aseguramiento de la calidad**»* (VIM 5.13, nota 6).\nSi calibra y controla a la vez, **cualquier error suyo pasa inadvertido**. Es la misma regla del tema 38: el MR de la calibración no sirve para medir el sesgo.",
+      "fuente": "VIM 5.13, nota 6",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f14",
+      "anverso": "¿Qué es la **conmutabilidad** de un material de referencia?",
+      "reverso": "Que el MR **se comporte como las muestras reales** en los procedimientos de medida: la proximidad entre los resultados obtenidos para el MR y para las muestras con dos procedimientos dados (VIM 5.15).\nUn calibrador **no conmutable** puede dar una recta perfecta y resultados falsos en las muestras.",
+      "fuente": "VIM 5.15",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f15",
+      "anverso": "¿Qué **tipos** de material de referencia distingue la guía Eurachem, y cuál se usa para **calibrar**?",
+      "reverso": "1. **Sustancias puras**.\n2. **Disoluciones patrón** y mezclas de gases, preparadas **gravimétricamente**: las de la **calibración**.\n3. **Materiales de matriz**: los de la **validación y el control de la veracidad**.\n4. **Físico-químicos** (punto de fusión, viscosidad, densidad óptica).\n5. **Objetos de referencia** (sabor, olor, dureza).",
+      "fuente": "Eurachem EEE/RM/062",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f16",
+      "anverso": "Al elegir un MR, ¿es su **incertidumbre** lo más importante?",
+      "reverso": "**No necesariamente.** *«Los efectos de la matriz y otros factores, como el rango de concentración, pueden ser **más importantes que la incertidumbre del valor certificado**»* (guía Eurachem/CITAC de trazabilidad, 7.7.2).\nFactores: **mensurando**, **rango**, **coincidencia de matriz**, cantidad de muestra, **homogeneidad y estabilidad**, incertidumbre y **cómo se certificó**.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad (2020), 7.7.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f17",
+      "anverso": "¿Qué **norma** rige a los **productores** de materiales de referencia, y qué guías ISO cubren el certificado y la certificación?",
+      "reverso": "- **UNE-EN ISO 17034:2017** (ISO 17034:2016): competencia de los productores. **Anuló a la antigua Guía ISO 34.**\n- **Guía ISO 31**: contenido del **certificado**.\n- **Guía ISO 35**: principios de la **certificación**.\n- **Guía ISO 33**: **uso** de los MR.",
+      "fuente": "Buscador de UNE (N0058602); guía Eurachem/CITAC de trazabilidad, 7.8",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t39-f18",
+      "anverso": "¿Qué parte de la incertidumbre de una medida puede ocupar, como mucho, la del **material de referencia** usado?",
+      "reverso": "**Un tercio.** *«La incertidumbre asociada a un MR no debería ser mayor que **un tercio** de la de la medida de la muestra»* (Eurachem EEE/RM/062).\nEs el mismo umbral de un tercio con el que, en el tema 38, una componente de incertidumbre podía despreciarse.",
+      "fuente": "Eurachem EEE/RM/062",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t39-f19",
+      "anverso": "¿Por qué los **MRC de matriz** no suelen usarse para **calibrar**?",
+      "reverso": "Porque *«el coste es habitualmente prohibitivo, la coincidencia de matrices en la práctica es rara, y las incertidumbres asociadas […] suelen ser demasiado grandes para los fines de la calibración»* (guía Eurachem/CITAC, 7.4.3).\nSe calibra con **sustancias puras o disoluciones patrón**; los MRC de matriz son para **validar y controlar la veracidad**.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad (2020), 7.4.3",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f20",
+      "anverso": "¿Cómo define el VIM la **trazabilidad metrológica**?",
+      "reverso": "*«Propiedad de **un resultado de medida** por la cual el resultado puede relacionarse con una referencia mediante una **cadena ininterrumpida y documentada de calibraciones**, cada una de las cuales **contribuye a la incertidumbre** de medida»* (VIM 2.41).\nEs del **resultado**, no del instrumento ni del laboratorio.",
+      "fuente": "VIM 2.41",
+      "etiquetas": ["concepto", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f21",
+      "anverso": "Mirando la cadena: ¿qué le ocurre a la **incertidumbre** al pasar de un eslabón al siguiente, y dónde lo dice el VIM?",
+      "reverso": "**Aumenta necesariamente.** Cada eslabón se calibra con el anterior y hereda su incertidumbre, más la de la propia calibración.\nVIM 2.40, nota 1: *«La incertidumbre de medida **va aumentando necesariamente** a lo largo de la secuencia de calibraciones.»*\nPor eso el resultado de la muestra es el eslabón **más incierto** de todos.",
+      "fuente": "VIM 2.40, nota 1",
+      "etiquetas": ["figura", "concepto"],
+      "figura": { "tipo": "esquema", "valor": "cadena-trazabilidad" },
+      "nucleo": true
+    },
+    {
+      "id": "t39-f22",
+      "anverso": "¿Garantiza la trazabilidad que un resultado sea bueno? ¿Qué **elementos** exige la ILAC para confirmarla?",
+      "reverso": "**No**: *«no garantiza por sí misma la adecuación de la incertidumbre de medida a un fin dado, o la ausencia de errores humanos»* (VIM 2.41, nota 5). Es **necesaria, no suficiente**.\nLa ILAC pide (nota 7): **cadena ininterrumpida** a un patrón nacional o internacional, **incertidumbre documentada**, **procedimiento documentado**, **competencia técnica**, **trazabilidad al SI** e **intervalos entre calibraciones**.",
+      "fuente": "VIM 2.41, notas 5 y 7",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f23",
+      "anverso": "¿Es lo mismo la **trazabilidad metrológica** que la trazabilidad de una muestra?",
+      "reverso": "**No.** «Trazabilidad» a secas también se usa para el **historial** de una muestra, un documento o un instrumento (la **cadena de custodia**). Por eso el VIM recomienda decir siempre **«trazabilidad metrológica»** cuando se habla de la cadena de calibraciones (2.41, nota 8).",
+      "fuente": "VIM 2.41, nota 8",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f24",
+      "anverso": "¿Qué **seis actividades** hacen falta, según la guía Eurachem/CITAC, para establecer la trazabilidad en un laboratorio químico?",
+      "reverso": "1. **Especificar el mensurando** y la incertidumbre objetivo.\n2. **Elegir un procedimiento** adecuado.\n3. **Validarlo** (tema 38).\n4. Identificar la **importancia relativa** de cada magnitud de influencia.\n5. **Elegir y aplicar los patrones** adecuados.\n6. **Estimar la incertidumbre** (tema 38).\nLa herramienta práctica es **la calibración**.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad (2020), 6.1",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f25",
+      "anverso": "Calibrar tiene **dos pasos**. ¿Cuáles, y qué métodos **no** necesitan función de calibración?",
+      "reverso": "1. Con patrones de valor conocido x se miden sus señales y, y se establece la **función de calibración y = f(x)**.\n2. Con la señal de la muestra se obtiene su concentración con la **función inversa x = f⁻¹(y)**: se **interpola**.\nLos **métodos absolutos** —**gravimetría y volumetría**— no necesitan función de calibración; los **comparativos** (instrumentales), sí.",
+      "fuente": "VIM 2.39; Guía Eurachem (3.ª ed., 2025), 5.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f26",
+      "anverso": "¿Cuáles son los **cuatro procedimientos** de calibración que describe la Guía Eurachem de 2025?",
+      "reverso": "1. **Calibración externa**: patrones puros medidos aparte.\n2. **Adición de patrón**: el analito añadido a la muestra, y extrapolación.\n3. **Patrones en matriz**: preparados sobre la matriz sin analito.\n4. **Patrón interno**: otro compuesto añadido a todo, y calibración con la relación de señales.",
+      "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f27",
+      "anverso": "¿Qué **minimiza** el método de los **mínimos cuadrados**, y qué supone sobre los errores?",
+      "reverso": "Minimiza **la suma de los cuadrados de los residuos**, Σ(y − ŷ)², siendo el residuo la distancia **vertical** de cada punto a la recta.\nSupone que **todo el error está en la señal (y)** y ninguno en la concentración de los patrones (x).\nSe elevan al cuadrado para que los residuos positivos y negativos **no se cancelen**.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4",
+      "etiquetas": ["calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f28",
+      "anverso": "¿Con qué fórmulas se calculan la **pendiente** y la **ordenada** de la recta de calibrado?",
+      "reverso": "**b = [n·Σxy − Σx·Σy] / [n·Σx² − (Σx)²]**\n**a = (Σy − b·Σx) / n = ȳ − b·x̄**\nSolo hacen falta **cuatro sumas**: Σx, Σy, Σxy y Σx². Con los datos de 1322: b = 9,78 / 196 = **0,0499** y a = **−0,0020**.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4, ecuaciones 5.4 y 5.5",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t39-f29",
+      "anverso": "¿Por qué la desviación típica de la regresión se divide entre **n − 2**?",
+      "reverso": "**s_y/x = √[Σ(y − ŷ)² / (n − 2)]**\nPorque la recta ha consumido **dos grados de libertad**: la **pendiente** y la **ordenada**. Con solo dos puntos, la recta pasa por los dos y no queda nada con qué estimar la dispersión.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4, ecuación 5.6",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t39-f30",
+      "anverso": "Mirando la recta y sus residuos: ¿por qué un R² de 0,9994 no basta por sí solo para dar la recta por buena?",
+      "reverso": "Porque un R² alto puede salir también con datos **ligeramente curvos**. Lo que demuestra la linealidad es **el gráfico de residuos**: tienen que salir **aleatorios en torno a cero**, sin tendencia.\nLa Guía Eurachem de 2025 lo dice expresamente: el R² es *«muy común»*, pero **se recomienda encarecidamente no usarlo solo**.",
+      "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.4; Harvey 5.4",
+      "etiquetas": ["figura", "calculo"],
+      "figura": { "tipo": "esquema", "valor": "recta-minimos-cuadrados" },
+      "nucleo": true
+    },
+    {
+      "id": "t39-f31",
+      "anverso": "¿Qué indica un gráfico de residuos que **crecen con la concentración**, y uno que dibuja **una curva**?",
+      "reverso": "- Residuos que **crecen** con la concentración → la varianza no es constante: hace falta una **regresión ponderada**.\n- Residuos que dibujan **una curva** (positivos en los extremos y negativos en el centro, o al revés) → **la relación no es una recta**, aunque el R² sea alto.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t39-f32",
+      "anverso": "¿Dónde es **mínima** la incertidumbre de una concentración interpolada, y se puede **extrapolar**?",
+      "reverso": "Es **mínima en el centro de la recta**, cerca de la media de los patrones, y **crece hacia los extremos** (Harvey, ecuación 5.12).\n**No se extrapola**: si una muestra da más señal que el patrón más alto, **se diluye y se vuelve a medir**.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t39-f33",
+      "anverso": "Un coeficiente de correlación **r = 0**, ¿significa que no hay relación entre x e y?",
+      "reverso": "**No: significa que no hay relación LINEAL.** Unos datos en forma de U pueden tener r = 0 y una relación muy clara.\nY al revés: **r no dice la pendiente**. Lo único que mide es cuánto se ajustan los puntos a una recta.",
+      "fuente": "OpenStax, Estadísticas de negocios, 13.1",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t39-f34",
+      "anverso": "En un **gráfico de control X**, ¿dónde van los **límites de aviso** y los **de acción**, y qué proporción de valores cae dentro?",
+      "reverso": "- **Línea central**: la media de los valores de control, o el valor de referencia.\n- **Límites de aviso: LC ± 2s** → dentro, **≈ 95 %**.\n- **Límites de acción: LC ± 3s** → dentro, **99,7 %**: solo **3 de cada 1000** fuera por azar.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 4",
+      "etiquetas": ["valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f35",
+      "anverso": "Mirando el gráfico: el punto rojo de la derecha **no pasa del límite de acción**. ¿Por qué está fuera de control?",
+      "reverso": "Por la **regla de dos de tres**: está **entre el aviso y la acción**, y uno de los dos valores anteriores **también lo estaba, en el mismo lado** de la línea central.\nEs una de las **dos reglas** del Nordtest TR 569 (ed. 6.1). La otra: **un valor fuera de ±3s**, como el punto rojo de la izquierda.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9",
+      "etiquetas": ["figura", "concepto"],
+      "figura": { "tipo": "esquema", "valor": "grafico-control-x" },
+      "nucleo": true
+    },
+    {
+      "id": "t39-f36",
+      "anverso": "Un valor de control cae **entre el aviso y la acción**. ¿Cuándo sigue el método **bajo control**?",
+      "reverso": "Cuando **los dos valores de control anteriores estaban dentro de los límites de aviso**. Entonces **se pueden informar** los resultados.\nSi alguno de esos dos también estaba entre aviso y acción **del mismo lado**, es la regla de dos de tres: **fuera de control**.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f37",
+      "anverso": "¿Qué dos situaciones de **tendencia** llevan a considerar un método **«fuera de control estadístico»**?",
+      "reverso": "Todos los valores dentro de los límites de aviso, pero:\n- **siete valores consecutivos que aumentan o disminuyen** gradualmente, o\n- **diez de once valores consecutivos del mismo lado** de la línea central.\n**Se pueden informar los resultados**, pero hay que investigar. La edición 6.1 del Nordtest (2026) las mantiene pero advierte que vienen del control de procesos (**ISO 7870-2**) y que **no son prácticas** para el control diario.",
+      "fuente": "Nordtest TR 569, ed. 4 (español) y ed. 6.1, capítulo 9",
+      "etiquetas": ["valores", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f38",
+      "anverso": "¿Qué se hace cuando un método está **fuera de control**?",
+      "reverso": "- **No se informan** resultados.\n- Lo normal es **repetir el control dos veces**: si cae dentro de los límites de aviso, se **reanalizan las muestras**; si no, **se para** y se busca la causa.\n- **Todas las muestras analizadas desde el último control correcto** se reanalizan.\n- Causas típicas: **reactivos**, **calibración** del equipo, **material y recipientes**. Todo se **documenta**.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f39",
+      "anverso": "¿Cuáles son los **cuatro tipos de muestra de control** del Nordtest TR 569?",
+      "reverso": "| Tipo | Vigila |\n| --- | --- |\n| **I. MRC de matriz** | **Sesgo** y precisión |\n| **II. Disolución patrón o material interno** | Efectos sistemáticos y aleatorios |\n| **III. Blanco** | El **LC** y la **contaminación** |\n| **IV. Muestra de ensayo por duplicado** | La **repetibilidad** real |",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 6",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f40",
+      "anverso": "¿Por qué la muestra de control **no debe prepararse** con la misma disolución madre que los patrones de calibración?",
+      "reverso": "Porque entonces **no detectaría ningún error de la calibración**: un fallo de pureza, de pesada o de preparación afectaría igual a los patrones y al control, y los dos «cuadrarían».\nEl ejemplo del Nordtest: para nitratos, **sal sódica para calibrar y sal potásica para controlar**, o productos de **proveedores distintos**.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 6",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t39-f41",
+      "anverso": "¿Para qué sirve un **gráfico de rangos (R)** y dónde van sus límites?",
+      "reverso": "Vigila la **repetibilidad**, con el rango de **duplicados**. Solo tiene **límites superiores**, porque un rango nunca es negativo.\nPara duplicados: **línea central 1,128 s**, **aviso 2,83 s**, **acción 3,69 s**.\nA concentraciones altas se usa el rango **relativo (r %)**.",
+      "fuente": "Nordtest TR 569, capítulo 7 (ed. 4 en español y ed. 6.1)",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t39-f42",
+      "anverso": "¿En qué se diferencian los **límites de control estadísticos** y los **límites objetivo**?",
+      "reverso": "- **Estadísticos**: s calculada con los valores de control de **un año**, con **al menos 60 valores** (para empezar, unos 25 y límites algo más anchos).\n- **Objetivo**: s fijada por **lo que se necesita**. El Nordtest propone partir de la **incertidumbre expandida exigida entre cuatro**: un 15 % → s de 3,75 %.\nLos límites se **fijan** y se revisan **una vez al año**.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 7",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t39-f43",
+      "anverso": "¿Cómo se calcula e interpreta la **puntuación z** de un ensayo de aptitud?",
+      "reverso": "**z = (x − x_pt) / σ_pt**: el resultado del laboratorio menos el valor asignado, dividido por la desviación típica que fija el proveedor.\n| |z| | Desempeño |\n| --- | --- |\n| **≤ 2** | **Satisfactorio** |\n| **entre 2 y 3** | **Cuestionable** (señal de aviso) |\n| **≥ 3** | **Insatisfactorio** (señal de acción) |",
+      "fuente": "Guía Eurachem de ensayos de aptitud (2021); ISO 13528:2022",
+      "etiquetas": ["valores", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t39-f44",
+      "anverso": "¿En qué se diferencia un **ensayo de aptitud** de una **intercomparación**, y qué exige ENAC?",
+      "reverso": "Solo el **ensayo de aptitud** lleva **evaluación del desempeño** de los participantes (ENAC NT-03).\nENAC (NT-03 Rev. 12, 2026) exige un **plan de participación** por **familias** de ensayos, con **al menos una participación por familia entre reevaluaciones**, y prefiere proveedores **acreditados por la ISO/IEC 17043**.",
+      "fuente": "ENAC NT-03 Rev. 12 (marzo de 2026)",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t39-f45",
+      "anverso": "¿Con qué **dos herramientas** exige el RD 817/2015 que los laboratorios de aguas superficiales demuestren su capacidad?",
+      "reverso": "*«i. **Participación en programas de ensayos de aptitud** […] a niveles de concentración que sean representativos […]; ii. **Análisis de los materiales de referencia disponibles** que sean representativos de las muestras»* (anexo III, apartado C.3.b).\nAdemás de aplicar una gestión de calidad conforme a la **ISO/IEC 17025**.",
+      "fuente": "RD 817/2015, anexo III, apartado C.3",
+      "etiquetas": ["normativa"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t39-q01",
+      "pregunta": "En una calibración lineal mediante el ajuste por mínimos cuadrados, ¿cuál de los siguientes valores de R² indica un ajuste lineal perfecto?",
+      "opciones": ["1,0.", "0,5.", "0,0."],
+      "correcta": 0,
+      "explicacion": "Pregunta 1233 #18, transcrita. R² va de 0 a 1, y R² = 1 significa que todos los puntos caen exactamente sobre la recta. R² = 0 sería la ausencia total de relación lineal.",
+      "fuente": "Cuestionario 1233 primer ejercicio #18",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q02",
+      "pregunta": "La ecuación de regresión lineal tiene forma de recta, y = ax + b, con a y b calculadas por mínimos cuadrados. El coeficiente de correlación se expresa mediante r y su valor oscila entre:",
+      "opciones": ["−1 y 1.", "−10 y 10.", "0 y 10."],
+      "correcta": 0,
+      "explicacion": "Pregunta 1246 #48. r vale +1 si los puntos están sobre una recta creciente, −1 si están sobre una decreciente y 0 si no hay relación lineal. Nunca sale de ese intervalo.",
+      "fuente": "Cuestionario 1246 primer ejercicio #48",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q03",
+      "pregunta": "Según el VIM, un patrón primario es:",
+      "opciones": [
+        "Un patrón establecido por medio de una calibración respecto a otro patrón de la misma magnitud.",
+        "Un patrón establecido mediante un procedimiento de medida primario, o creado como un objeto elegido por convenio.",
+        "El patrón utilizado habitualmente para calibrar o verificar instrumentos."
+      ],
+      "correcta": 1,
+      "explicacion": "VIM 5.4. La primera opción es el patrón secundario (5.5) y la tercera, el patrón de trabajo (5.7).",
+      "fuente": "VIM 5.4, 5.5 y 5.7"
+    },
+    {
+      "id": "t39-q04",
+      "pregunta": "Un patrón establecido por medio de una calibración respecto a un patrón primario de la misma magnitud es un patrón:",
+      "opciones": ["De trabajo.", "Internacional.", "Secundario."],
+      "correcta": 2,
+      "explicacion": "Definición literal de patrón secundario (VIM 5.5). El patrón de trabajo es el que se usa habitualmente para calibrar instrumentos, y suele calibrarse respecto a un patrón de referencia.",
+      "fuente": "VIM 5.5 y 5.7"
+    },
+    {
+      "id": "t39-q05",
+      "pregunta": "Un material de referencia certificado se diferencia de un material de referencia en que:",
+      "opciones": [
+        "Es más homogéneo y más estable.",
+        "Va acompañado de un certificado con valores, incertidumbres y trazabilidad metrológica.",
+        "Solo puede usarse para controlar la precisión."
+      ],
+      "correcta": 1,
+      "explicacion": "VIM 5.14: el MRC es un MR «acompañado por la documentación emitida por un organismo autorizado, que proporciona uno o varios valores de propiedades especificadas, con incertidumbres y trazabilidades asociadas». La homogeneidad y la estabilidad se exigen a cualquier MR.",
+      "fuente": "VIM 5.13 y 5.14",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q06",
+      "pregunta": "Un material de referencia sin valor asignado puede utilizarse para:",
+      "opciones": [
+        "Calibrar un instrumento.",
+        "Controlar la veracidad de un método.",
+        "Controlar la precisión de la medida."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 5.13, nota 2: con o sin valor asignado, un MR sirve para controlar la precisión; únicamente los que tienen valor asignado pueden usarse para calibrar o controlar la veracidad.",
+      "fuente": "VIM 5.13, nota 2",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q07",
+      "pregunta": "En una medición dada, un mismo material de referencia puede utilizarse:",
+      "opciones": [
+        "Para calibrar y, a la vez, para controlar la calidad.",
+        "Únicamente para calibrar o únicamente para el aseguramiento de la calidad.",
+        "Solo para calibrar, nunca para controlar."
+      ],
+      "correcta": 1,
+      "explicacion": "VIM 5.13, nota 6. Si el mismo material calibra y controla, cualquier error suyo afecta igual a la calibración y al control, y no se detecta.",
+      "fuente": "VIM 5.13, nota 6"
+    },
+    {
+      "id": "t39-q08",
+      "pregunta": "La norma que establece los requisitos de competencia de los productores de materiales de referencia es:",
+      "opciones": ["La UNE-EN ISO 17034.", "La UNE-EN ISO/IEC 17043.", "La ISO 13528."],
+      "correcta": 0,
+      "explicacion": "UNE-EN ISO 17034:2017 (ISO 17034:2016), que anuló a la Guía ISO 34. La ISO/IEC 17043 es la de los proveedores de ensayos de aptitud, y la ISO 13528, la de su estadística.",
+      "fuente": "Buscador de UNE: N0058602, N0072287"
+    },
+    {
+      "id": "t39-q09",
+      "pregunta": "Según el VIM, la trazabilidad metrológica es la propiedad por la que un resultado puede relacionarse con una referencia mediante:",
+      "opciones": [
+        "La cadena de custodia de la muestra desde su toma hasta el laboratorio.",
+        "La acreditación del laboratorio por la entidad nacional.",
+        "Una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 2.41. La cadena de custodia es «trazabilidad» en otro sentido, el del historial de una muestra, y por eso el VIM recomienda decir siempre «trazabilidad metrológica» (nota 8). La acreditación no es trazabilidad.",
+      "fuente": "VIM 2.41 y notas",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q10",
+      "pregunta": "A lo largo de una jerarquía de calibración, desde la referencia hasta el sistema de medida final, la incertidumbre:",
+      "opciones": [
+        "Disminuye, porque cada calibración corrige los errores de la anterior.",
+        "Se mantiene constante.",
+        "Aumenta necesariamente."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 2.40, nota 1: «La incertidumbre de medida va aumentando necesariamente a lo largo de la secuencia de calibraciones.» Cada eslabón hereda la incertidumbre del anterior y suma la suya.",
+      "fuente": "VIM 2.40, nota 1",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q11",
+      "pregunta": "La trazabilidad metrológica es una propiedad:",
+      "opciones": ["Del resultado de medida.", "Del instrumento de medida.", "Del laboratorio acreditado."],
+      "correcta": 0,
+      "explicacion": "VIM 2.41: «propiedad de un resultado de medida». Hablar de «instrumento trazable» o «laboratorio trazable» es una forma abreviada (guía Eurachem/CITAC, 4.2).",
+      "fuente": "VIM 2.41; guía Eurachem/CITAC de trazabilidad, 4.2"
+    },
+    {
+      "id": "t39-q12",
+      "pregunta": "¿Cuál de los siguientes es un método primario, que no necesita recta de calibrado?",
+      "opciones": [
+        "La gravimetría.",
+        "La espectrofotometría UV-visible.",
+        "La espectrometría de masas con plasma y calibración externa."
+      ],
+      "correcta": 0,
+      "explicacion": "La gravimetría, la volumetría, la culombimetría y la dilución isotópica son métodos potencialmente primarios: se describen por completo en unidades del SI. Los instrumentales con calibración externa son métodos comparativos.",
+      "fuente": "Eurachem EEE/RM/062, definiciones; Guía Eurachem (2025), 5.2"
+    },
+    {
+      "id": "t39-q13",
+      "pregunta": "El método de los mínimos cuadrados calcula la recta que hace mínima:",
+      "opciones": [
+        "La suma de los residuos.",
+        "La suma de los cuadrados de las distancias verticales de los puntos a la recta.",
+        "La suma de las distancias perpendiculares de los puntos a la recta."
+      ],
+      "correcta": 1,
+      "explicacion": "Se minimiza Σ(y − ŷ)², con los residuos medidos en vertical porque se supone que todo el error está en la señal. La suma simple de residuos no sirve: los positivos y los negativos se cancelan.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q14",
+      "pregunta": "En la desviación típica de la regresión, s_y/x = √[Σ(y − ŷ)² / d], el denominador d es:",
+      "opciones": ["n.", "n − 1.", "n − 2."],
+      "correcta": 2,
+      "explicacion": "n − 2, porque la recta ha consumido dos grados de libertad: la pendiente y la ordenada.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4, ecuación 5.6"
+    },
+    {
+      "id": "t39-q15",
+      "pregunta": "¿Cuál de los siguientes valores es imposible para el coeficiente de determinación R² de una recta de calibrado?",
+      "opciones": ["0,95.", "−0,99.", "0."],
+      "correcta": 1,
+      "explicacion": "R² es el cuadrado de r y va de 0 a 1: nunca es negativo. Es la clave para descartar dos de las cuatro opciones de la pregunta 1322 C2 #3.",
+      "fuente": "Cuestionario 1322 segundo ejercicio #3",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q16",
+      "pregunta": "Para confirmar que una calibración es lineal, además del R², debe comprobarse que:",
+      "opciones": [
+        "Los residuos se reparten al azar en torno a cero, sin tendencia.",
+        "La ordenada en el origen es exactamente cero.",
+        "El R² es mayor que 0,95."
+      ],
+      "correcta": 0,
+      "explicacion": "La Guía Eurachem de 2025 recomienda no usar el R² solo, sino el gráfico de residuos: si el modelo es válido, los residuos se distribuyen aleatoriamente en torno a cero (Harvey, 5.4).",
+      "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.4; Harvey 5.4",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q17",
+      "pregunta": "Si en una calibración los residuos crecen sistemáticamente con la concentración, lo adecuado es:",
+      "opciones": [
+        "Usar una regresión ponderada.",
+        "Eliminar el patrón de mayor concentración.",
+        "Forzar la recta por el origen."
+      ],
+      "correcta": 0,
+      "explicacion": "Unos residuos que crecen con la concentración indican que la varianza no es constante, y la regresión adecuada es la ponderada (Harvey 5.4; Eurachem 2025). Eliminar un punto sin verificarlo es peligroso.",
+      "fuente": "Harvey, Química Analítica 2.1, 5.4; Guía Eurachem (2025), 5.2.4"
+    },
+    {
+      "id": "t39-q18",
+      "pregunta": "Con la recta de calibrado A = 0,050·c + 0,002 (c en mg/L), una muestra da A = 0,302. Su concentración es:",
+      "opciones": ["6,08 mg/L.", "6,0 mg/L.", "15,1 mg/L."],
+      "correcta": 1,
+      "explicacion": "c = (A − a) / b = (0,302 − 0,002) / 0,050 = 6,0 mg/L. El 6,08 sale de sumar la ordenada en lugar de restarla, y el 15,1 de multiplicar en vez de dividir.",
+      "fuente": "Cálculo con la función inversa de calibración"
+    },
+    {
+      "id": "t39-q19",
+      "pregunta": "A una muestra se le añaden 4 mg/L de analito, y la señal resultante corresponde en la recta de calibrado a 9 mg/L. La concentración de analito en la muestra es:",
+      "opciones": ["13 mg/L.", "9 mg/L.", "5 mg/L."],
+      "correcta": 2,
+      "explicacion": "La recta da la concentración total tras la adición: 9 − 4 = 5 mg/L. Es el mismo razonamiento de la pregunta 1322 C2 #7.",
+      "fuente": "Cuestionario 1322 segundo ejercicio #7 (mismo razonamiento)"
+    },
+    {
+      "id": "t39-q20",
+      "pregunta": "En calibración, un patrón interno es:",
+      "opciones": [
+        "Un compuesto distinto del analito, de comportamiento similar, que se añade a patrones y muestras para calibrar con la relación de señales.",
+        "Una cantidad conocida del propio analito añadida a la muestra.",
+        "Un patrón preparado sobre la misma matriz que las muestras."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem (2025), 5.2.2. La segunda opción es la adición de patrón y la tercera, los patrones en matriz.",
+      "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.2"
+    },
+    {
+      "id": "t39-q21",
+      "pregunta": "En un gráfico de control X, los límites de aviso se sitúan a:",
+      "opciones": ["± 1s de la línea central.", "± 2s de la línea central.", "± 3s de la línea central."],
+      "correcta": 1,
+      "explicacion": "Aviso a ±2s (≈ 95 % de los valores dentro) y acción a ±3s (99,7 %).",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 4",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q22",
+      "pregunta": "Con una distribución normal, ¿qué proporción de los valores de control cae dentro de los límites de acción?",
+      "opciones": ["El 95 %.", "El 68 %.", "El 99,7 %."],
+      "correcta": 2,
+      "explicacion": "Los límites de acción están a ±3s: dentro queda el 99,7 %, y solo 3 de cada 1000 valores caen fuera por azar. El 95 % corresponde a los de aviso (±2s).",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 4"
+    },
+    {
+      "id": "t39-q23",
+      "pregunta": "Según el Nordtest TR 569, el método está fuera de control cuando:",
+      "opciones": [
+        "Un valor cae entre el aviso y la acción y los dos anteriores estaban dentro de los límites de aviso.",
+        "Todos los valores caen dentro de los límites de aviso.",
+        "Un valor cae entre el aviso y la acción y uno de los dos anteriores también, del mismo lado."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la regla de «dos de tres». La otra regla es un valor fuera de los límites de acción. La primera opción describe un método bajo control.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q24",
+      "pregunta": "¿Cuál de las siguientes situaciones se considera, según el Nordtest TR 569, una señal de «fuera de control estadístico» (tendencia)?",
+      "opciones": [
+        "Siete valores de control consecutivos que aumentan gradualmente.",
+        "Un valor fuera de los límites de acción.",
+        "Un valor entre el aviso y la acción, con los dos anteriores dentro."
+      ],
+      "correcta": 0,
+      "explicacion": "Siete valores consecutivos subiendo o bajando, o diez de once del mismo lado, son las señales de tendencia. Un valor fuera de acción es fuera de control a secas, y la tercera opción es bajo control.",
+      "fuente": "Nordtest TR 569, ed. 4 (español) y ed. 6.1, capítulo 9"
+    },
+    {
+      "id": "t39-q25",
+      "pregunta": "Cuando un gráfico de control indica que el método está fuera de control:",
+      "opciones": [
+        "Se informan los resultados con una nota de advertencia.",
+        "No se informan resultados, y se reanalizan las muestras desde el último control correcto.",
+        "Se amplían los límites de control para incluir el valor."
+      ],
+      "correcta": 1,
+      "explicacion": "Nordtest TR 569, capítulo 9: no se informan resultados y todas las muestras analizadas desde el último valor de control correcto deben reanalizarse. Los límites no se mueven para acomodar un valor.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9"
+    },
+    {
+      "id": "t39-q26",
+      "pregunta": "La muestra de control para un método de nitratos debe prepararse:",
+      "opciones": [
+        "Con la misma disolución madre que los patrones de calibración.",
+        "Con un producto distinto del de la calibración, por ejemplo otra sal u otro proveedor.",
+        "Con agua desionizada, sin analito."
+      ],
+      "correcta": 1,
+      "explicacion": "Si se usa el mismo producto o la misma disolución madre, un error en la calibración afecta igual al control y no se detecta. El ejemplo del Nordtest: sal sódica para calibrar y potásica para controlar. El agua sin analito es un blanco, no una muestra de control del nivel de trabajo.",
+      "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 6"
+    },
+    {
+      "id": "t39-q27",
+      "pregunta": "En un ensayo de aptitud, un laboratorio obtiene una puntuación z = 2,5. Su desempeño es:",
+      "opciones": ["Satisfactorio.", "Cuestionable.", "Insatisfactorio."],
+      "correcta": 1,
+      "explicacion": "|z| ≤ 2 es satisfactorio; entre 2 y 3, cuestionable (señal de aviso); ≥ 3, insatisfactorio (señal de acción).",
+      "fuente": "Guía Eurachem de ensayos de aptitud (2021); ISO 13528:2022",
+      "nucleo": true
+    },
+    {
+      "id": "t39-q28",
+      "pregunta": "En un ensayo de aptitud, un laboratorio obtiene z = −3,2. Su desempeño es:",
+      "opciones": ["Satisfactorio, porque el signo es negativo.", "Cuestionable.", "Insatisfactorio."],
+      "correcta": 2,
+      "explicacion": "Cuenta el valor absoluto: |z| = 3,2 ≥ 3, insatisfactorio. Un resultado insatisfactorio se investiga siempre y se documenta.",
+      "fuente": "Guía Eurachem de ensayos de aptitud (2021)"
+    },
+    {
+      "id": "t39-q29",
+      "pregunta": "¿Qué distingue a un ensayo de aptitud de una simple intercomparación entre laboratorios?",
+      "opciones": [
+        "Que el ensayo de aptitud lleva asociada la evaluación del desempeño de los participantes.",
+        "Que el ensayo de aptitud solo puede organizarlo ENAC.",
+        "Que la intercomparación exige más de diez participantes."
+      ],
+      "correcta": 0,
+      "explicacion": "ENAC, NT-03: de los dos términos, «solamente el primero lleva asociada la evaluación del desempeño de los participantes». ENAC no organiza ensayos de aptitud, porque acredita a sus proveedores.",
+      "fuente": "ENAC NT-03 Rev. 12 (marzo de 2026)"
+    },
+    {
+      "id": "t39-q30",
+      "pregunta": "Un gráfico de rangos (R), basado en análisis por duplicado, se utiliza para vigilar:",
+      "opciones": ["La repetibilidad.", "El sesgo.", "La contaminación de los reactivos."],
+      "correcta": 0,
+      "explicacion": "El gráfico de rangos sirve sobre todo para el control de la repetibilidad. El sesgo se vigila con un gráfico X de un MRC, y la contaminación con un gráfico de blancos.",
+      "fuente": "Nordtest TR 569, capítulo 5"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t39-s01",
+      "titulo": "La recta de calibrado de una auditoría",
+      "enunciado": "En un laboratorio se va a llevar a cabo una auditoría relacionada con la acreditación según la norma ISO 17025, y el auditor solicita varias determinaciones en una muestra de agua de consumo. En una de ellas se realiza una recta de calibrado por espectrofotometría y se obtienen estos valores:\n| mg/l | Abs |\n| --- | --- |\n| 1 | 0,05 |\n| 2 | 0,10 |\n| 5 | 0,24 |\n| 10 | 0,50 |\n(Enunciado y datos del supuesto 1 del segundo ejercicio de 1322.)",
+      "preguntas": [
+        {
+          "id": "t39-s01-q1",
+          "pregunta": "¿Cual será el valor de R2 de la recta de calibrado del enunciado?",
+          "opciones": ["0,999.", "0,009.", "−0,099.", "−0,990."],
+          "correcta": 0,
+          "explicacion": "Pregunta 1322 C2 #3, transcrita. Con Σx = 18, Σy = 0,89, Σxy = 6,45 y Σx² = 130, r = 0,99970 y R² = 0,9994. Las dos opciones negativas son imposibles para un R².",
+          "fuente": "Cuestionario 1322 segundo ejercicio #3; cálculo propio"
+        },
+        {
+          "id": "t39-s01-q2",
+          "pregunta": "La pendiente de la recta de calibrado, calculada por mínimos cuadrados, es aproximadamente:",
+          "opciones": ["20,0 mg/L.", "−0,0020.", "0,0499 L/mg.", "0,089 L/mg."],
+          "correcta": 2,
+          "explicacion": "b = (4·6,45 − 18·0,89) / (4·130 − 18²) = 9,78 / 196 = 0,0499. El 20,0 es su inversa; −0,0020 es la ordenada en el origen; 0,089 sale de dividir Σy entre 10.",
+          "fuente": "Harvey, Química Analítica 2.1, 5.4"
+        },
+        {
+          "id": "t39-s01-q3",
+          "pregunta": "Una muestra, medida directamente sin adición, da una absorbancia de 0,30. Su concentración es aproximadamente:",
+          "opciones": ["0,30 mg/L.", "15,0 mg/L.", "1,5 mg/L.", "6,1 mg/L."],
+          "correcta": 3,
+          "explicacion": "c = (A − a) / b = (0,30 + 0,0020) / 0,0499 = 6,05 ≈ 6,1 mg/L. Los 15,0 salen de multiplicar por 50 en vez de dividir por la pendiente.",
+          "fuente": "Cálculo con la función inversa de calibración"
+        },
+        {
+          "id": "t39-s01-q4",
+          "pregunta": "Otra muestra da una absorbancia de 0,62, por encima del patrón más alto. Lo correcto es:",
+          "opciones": [
+            "Extrapolar la recta: la muestra tiene unos 12,5 mg/L.",
+            "No extrapolar: diluir la muestra para que caiga dentro del intervalo de los patrones y volver a medirla.",
+            "Informar el resultado como «mayor de 10 mg/L» sin más comprobaciones, porque la recta es perfecta.",
+            "Añadir un patrón de 20 mg/L y recalcular la recta con la muestra ya medida."
+          ],
+          "correcta": 1,
+          "explicacion": "Fuera del intervalo de los patrones no se sabe si la respuesta sigue siendo lineal (el extremo superior del intervalo de trabajo es donde la sensibilidad deja de ser constante, tema 38). Se diluye y se vuelve a medir dentro del calibrado.",
+          "fuente": "Guía Eurachem (2016), 6.3; Harvey 5.4"
+        },
+        {
+          "id": "t39-s01-q5",
+          "pregunta": "En una muestra, se realiza una adición de patrón interno de 5 mg/l, obteniéndose una absorbancia total de 0,50. ¿Cuál es la concentración del analito presente en la muestra según la recta de calibrado del enunciado?",
+          "opciones": ["1 mg/l.", "5 mg/l.", "10 mg/l.", "15 mg/l."],
+          "correcta": 1,
+          "explicacion": "Pregunta 1322 C2 #7, transcrita. 0,50 de absorbancia son 10,06 mg/L en la recta: la concentración total tras la adición. Restando los 5 añadidos quedan unos 5 mg/L. Lo que describe es una adición de patrón, aunque la pregunta la llame «patrón interno».",
+          "fuente": "Cuestionario 1322 segundo ejercicio #7; Guía Eurachem (2025), 5.2.2"
+        }
+      ]
+    },
+    {
+      "id": "t39-s02",
+      "titulo": "El gráfico de control de nitratos",
+      "enunciado": "Un laboratorio controla su método de nitratos con una **muestra de control** que pasa por todo el procedimiento. Tras un año de datos, ha fijado la **línea central en 25,0 mg/L** y una **desviación típica de 0,6 mg/L** (límites estadísticos). Los tres últimos valores de control, en orden, fueron **24,6**, **25,3** y **26,5 mg/L**. El laboratorio participa además en un **ensayo de aptitud** con valor asignado de **30,0 mg/L** y **σ_pt = 1,5 mg/L**, en el que obtiene **33,6 mg/L**.",
+      "preguntas": [
+        {
+          "id": "t39-s02-q1",
+          "pregunta": "Los límites de aviso y de acción del gráfico de control son:",
+          "opciones": [
+            "Aviso 24,4 y 25,6; acción 23,8 y 26,2 mg/L.",
+            "Aviso 23,2 y 26,8; acción 22,0 y 28,0 mg/L.",
+            "Aviso 23,8 y 26,2; acción 23,2 y 26,8 mg/L.",
+            "Aviso 24,0 y 26,0; acción 23,0 y 27,0 mg/L."
+          ],
+          "correcta": 2,
+          "explicacion": "Aviso = 25,0 ± 2·0,6 = 23,8 y 26,2; acción = 25,0 ± 3·0,6 = 23,2 y 26,8 mg/L. La primera opción usa 1s y 2s; la segunda, 3s y 5s.",
+          "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulos 4 y 7"
+        },
+        {
+          "id": "t39-s02-q2",
+          "pregunta": "Con el último valor de 26,5 mg/L, el método:",
+          "opciones": [
+            "Está bajo control: el valor está entre el aviso y la acción, pero los dos anteriores estaban dentro de los límites de aviso.",
+            "Está fuera de control, porque supera el límite de aviso.",
+            "Está fuera de control, porque supera el límite de acción.",
+            "Está fuera de control estadístico por tendencia."
+          ],
+          "correcta": 0,
+          "explicacion": "26,5 está entre 26,2 (aviso) y 26,8 (acción), y los dos anteriores (25,3 y 24,6) estaban dentro de los límites de aviso: bajo control, y se pueden informar los resultados. Superar solo el aviso no basta para parar.",
+          "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9"
+        },
+        {
+          "id": "t39-s02-q3",
+          "pregunta": "En la serie siguiente, el control da 26,4 mg/L. Ahora el método:",
+          "opciones": [
+            "Sigue bajo control, porque 26,4 no supera el límite de acción.",
+            "Está fuera de control estadístico, pero se pueden informar los resultados.",
+            "Está bajo control, porque 26,4 es menor que el valor anterior.",
+            "Está fuera de control por la regla de dos de tres: no se informan resultados y se reanalizan las muestras desde el último control correcto."
+          ],
+          "correcta": 3,
+          "explicacion": "26,4 está entre el aviso y la acción, y uno de los dos anteriores (26,5) también lo estaba, del mismo lado: regla de dos de tres. Fuera de control.",
+          "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 9"
+        },
+        {
+          "id": "t39-s02-q4",
+          "pregunta": "Se descubre que la muestra de control se prepara con la misma disolución madre que los patrones de calibración. ¿Qué problema tiene?",
+          "opciones": [
+            "Ninguno, siempre que la disolución madre sea de un MRC.",
+            "Que un error en la preparación de la disolución madre no se detectaría, porque afectaría igual a la calibración y al control.",
+            "Que el gráfico de control saldría con más valores fuera de control.",
+            "Que la línea central tendría que fijarse en cero."
+          ],
+          "correcta": 1,
+          "explicacion": "Con el mismo origen, calibración y control fallan a la vez y el control no ve el error. El Nordtest recomienda usar otro producto u otro proveedor (por ejemplo, sal sódica para calibrar y potásica para controlar). Y un MR no debe usarse a la vez para calibrar y para controlar (VIM 5.13, nota 6).",
+          "fuente": "Nordtest TR 569 (ed. 6.1, 2026), capítulo 6; VIM 5.13, nota 6"
+        },
+        {
+          "id": "t39-s02-q5",
+          "pregunta": "En el ensayo de aptitud, la puntuación z del laboratorio y su valoración son:",
+          "opciones": [
+            "z = 2,4: cuestionable.",
+            "z = 3,6: insatisfactorio.",
+            "z = 1,2: satisfactorio.",
+            "z = 0,12: satisfactorio."
+          ],
+          "correcta": 0,
+          "explicacion": "z = (33,6 − 30,0) / 1,5 = 2,4. Entre 2 y 3: cuestionable, señal de aviso. El 3,6 es la diferencia sin dividir; el 0,12, la diferencia relativa.",
+          "fuente": "Guía Eurachem de ensayos de aptitud (2021); ISO 13528:2022"
+        }
+      ]
+    }
+  ]
+}

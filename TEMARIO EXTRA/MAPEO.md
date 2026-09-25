@@ -73,6 +73,12 @@ contenido**. Prometía nuestro tema 40 y está vacío. No aporta nada.
 > *«la zona controlada debería ventilarse adecuadamente para reducir al mínimo la contaminación
 > atmosférica»*: es ventilación de un laboratorio de radiactividad, nada que ver con la inmisión.
 > **El tema 37 sigue siendo «sin nada», y el mapeo era correcto.**
+>
+> **Nota añadida el 25/09/2026, al redactar el tema 39.** Se consultó la ficha `temas/apoyo/tema-39.md`
+> (`FASE_13-TEMA 6`, §4). Solo aporta los métodos **directo** (pesada de un patrón primario) e **indirecto**
+> (normalización) de preparar disoluciones patrón, que ya están en el **tema 22**. Nada sobre materiales
+> de referencia, trazabilidad, mínimos cuadrados ni gráficos de control, como ya advertía la ficha.
+> **Ningún dato se volcó en el apunte**; el tema 39 se redactó con el VIM, las guías Eurachem y el Nordtest TR 569.
 
 Comprobado por búsqueda directa en los 21 archivos: **cero** apariciones de
 cromatografía, espectrofotometría, absorción atómica, ICP como técnica, polarimetría,
