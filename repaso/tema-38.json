@@ -1,0 +1,876 @@
+{
+  "tema": 38,
+  "titulo": "Validación de procedimientos analíticos: definición, rango de validación, criterios de validación, sistemática de validación, cálculos de incertidumbres.",
+  "generadoDe": "temas/tema-38.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-25",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t38-f01",
+      "anverso": "Para el **cálculo de la incertidumbre** de un método analítico, ¿qué dos parámetros necesitamos conocer?",
+      "reverso": "**Exactitud y precisión** (1246, primer ejercicio, **#19**).\nLos distractores eran *«Límite de Detección y Límite de Cuantificación»* y *«Sensibilidad y Selectividad»*: son características de validación reales, pero **no entran en el cálculo**.\nLo que entra es el modelo de los laboratorios de aguas: **uc = √(u(Rw)² + u(sesgo)²)**. u(Rw) es la **precisión**; u(sesgo), la **veracidad**, que es lo que la pregunta llama «exactitud».",
+      "fuente": "Cuestionario 1246 primer ejercicio #19; Nordtest TR 537",
+      "etiquetas": ["examen", "calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f02",
+      "anverso": "¿Cómo define el **VIM** la **validación**?",
+      "reverso": "*«**Verificación de que los requisitos especificados son adecuados para un uso previsto**»* (VIM 2.45).\nLa clave son las tres últimas palabras: **para un uso previsto**. Verificar es comprobar que se cumple una especificación; validar es comprobar, además, que **esa especificación es la que hace falta**.",
+      "fuente": "VIM (JCGM 200:2012, ed. CEM), 2.45",
+      "etiquetas": ["concepto", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f03",
+      "anverso": "¿Qué relación hay entre **validación** y **verificación**?",
+      "reverso": "**Toda validación es una verificación, pero no toda verificación es una validación** (VIM 2.44, nota 5).\n- **Verificación** (2.44): *«aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados»*.\n- **Validación** (2.45): una verificación en la que, además, los requisitos son **adecuados para el uso previsto**.\nY ninguna de las dos es **calibrar**, que es establecer la relación entre indicación y patrón con su incertidumbre (tema 21).",
+      "fuente": "VIM 2.39, 2.44 y 2.45",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f04",
+      "anverso": "Según la ISO/IEC 17025, ¿qué **tres tipos de método** hay que **validar**?",
+      "reverso": "Cláusula **7.2.2.1**:\n1. Los **métodos no normalizados**.\n2. Los **métodos desarrollados por el laboratorio**.\n3. Los **métodos normalizados utilizados fuera de su alcance previsto o modificados de otra forma**.\nY también cuando hay que demostrar que **dos métodos son equivalentes** (Eurachem 4.1). Si un método validado **cambia**, hay que ver si el cambio afecta y, si afecta, **validar de nuevo** (7.2.2.2).",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 7.2.2.1 y 7.2.2.2, según la Guía Eurachem (3.ª ed., 2025)",
+      "etiquetas": ["normativa", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f05",
+      "anverso": "Un laboratorio empieza a usar una **norma UNE dentro de su alcance**. ¿Tiene que validarla?",
+      "reverso": "**No: tiene que VERIFICARLA.** La validación ya la hizo el organismo que publicó la norma, normalmente con un estudio colaborativo.\nCláusula **7.2.1.5**, en la traducción que transcribe ENAC: *«el laboratorio **debe verificar que puede llevar a cabo apropiadamente los métodos antes de utilizarlos**, asegurando que se pueda lograr el desempeño requerido. Se deben conservar registros de la verificación.»*\nHabitualmente basta con demostrar que alcanza **la repetibilidad publicada** y que **no tiene sesgo** (Eurachem 7).",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 7.2.1.5, en CGA-ENAC-LEC Rev. 12, anexo I; Guía Eurachem, sección 7",
+      "etiquetas": ["normativa", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f06",
+      "anverso": "¿En qué **tres clases de método** ordena ENAC la demostración de su validez, y qué exige a cada una?",
+      "reverso": "CGA-ENAC-LEC, anexo I:\n| Clase | Exigencia |\n| --- | --- |\n| **Normalizado** (UNE, EN, ISO…) | **Verificación** |\n| **Interno basado en un normalizado** | **Verificación**: su validez *«se justifica por referencia al método normalizado»* |\n| **Desarrollado por el laboratorio** | ***«Validación completa conforme a la cláusula 7.2.2»*** |\nY un aviso: un año después de revisarse una norma, ENAC deja de considerar **normalizado** el método que siga con la versión antigua.",
+      "fuente": "ENAC, CGA-ENAC-LEC Rev. 12 (abril de 2024), anexo I",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t38-f07",
+      "anverso": "Según el RD 3/2023, ¿qué **tres cosas** debe **registrar** el laboratorio al validar un método?",
+      "reverso": "*«El laboratorio debe registrar **los resultados obtenidos**, **el procedimiento utilizado para la validación** y **una declaración sobre la aptitud del método para el uso previsto**.»* (anexo III, parte E.1).\nLa ISO/IEC 17025 exige lo mismo (cláusula **7.2.2.4**). Una validación sin la **declaración de aptitud** final está incompleta.",
+      "fuente": "RD 3/2023, anexo III, parte E.1; UNE-EN ISO/IEC 17025:2017, 7.2.2.4",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f08",
+      "anverso": "Mirando las cuatro dianas: en la de **abajo a la izquierda**, ¿qué tipo de error domina y con qué número se cuantifica?",
+      "reverso": "Domina el **error sistemático**: los impactos están **juntos** —el método es preciso— pero su media está **desplazada** del centro.\nSe cuantifica con el **sesgo**: la diferencia entre la media de los resultados y el valor de referencia (VIM 2.18: *«valor estimado de un error sistemático»*).\nLa diana de al lado, abajo a la derecha, tiene **el mismo sesgo** y además es **imprecisa**.",
+      "fuente": "VIM 2.14, 2.17 y 2.18",
+      "etiquetas": ["figura", "concepto"],
+      "figura": { "tipo": "esquema", "valor": "dianas-veracidad-precision" },
+      "nucleo": true
+    },
+    {
+      "id": "t38-f09",
+      "anverso": "**Exactitud, veracidad y precisión**: ¿qué es cada una según el VIM?",
+      "reverso": "| | Proximidad entre… | Error | Se expresa con |\n| --- | --- | --- | --- |\n| **Exactitud** (2.13) | Un valor medido y el **valor verdadero** | **Total** | **No se expresa numéricamente** |\n| **Veracidad** (2.14) | La **media** de infinitas medidas y un **valor de referencia** | **Sistemático** | El **sesgo** |\n| **Precisión** (2.15) | Las medidas **entre sí**, en condiciones especificadas | **Aleatorio** | **s, varianza, CV** |\nLa exactitud **incluye las otras dos**: exacto = **veraz y preciso**.",
+      "fuente": "VIM 2.13, 2.14 y 2.15",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f10",
+      "anverso": "¿Depende la **veracidad** del error aleatorio?",
+      "reverso": "**No.** El VIM lo dice expresamente: la veracidad *«está inversamente relacionada con el error sistemático, pero **no está relacionada con el error aleatorio**»* (2.14, nota 2).\nPor eso un método puede ser **veraz e impreciso** (media centrada, impactos dispersos) o **preciso y sesgado** (impactos juntos, fuera del centro). Son **dos propiedades independientes**.",
+      "fuente": "VIM 2.14, nota 2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f11",
+      "anverso": "**Repetibilidad, precisión intermedia y reproducibilidad**: ¿qué cambia en cada una?",
+      "reverso": "| | Lo que cambia | Variación |\n| --- | --- | --- |\n| **Repetibilidad** | **Nada**: mismo analista, equipo y lugar, **periodo corto** | **Mínima** |\n| **Precisión intermedia** | **Días, analistas, equipos, calibraciones**, en **el mismo laboratorio** | Intermedia |\n| **Reproducibilidad** | **El laboratorio** | **Máxima** |\nLa precisión intermedia —la **s(Rw)** del Nordtest, «reproducibilidad dentro del laboratorio»— es **la que se usa para la incertidumbre**.",
+      "fuente": "VIM 2.20 a 2.25; Guía Eurachem 6.6.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f12",
+      "anverso": "¿En qué se diferencian el **error** y la **incertidumbre**?",
+      "reverso": "- El **error** es *«la diferencia entre un valor medido de una magnitud y un valor de referencia»* (VIM 2.16): **tiene signo** y en general es **desconocido**.\n- La **incertidumbre** es un **parámetro no negativo** que caracteriza la dispersión de los valores atribuibles al mensurando (VIM 2.26): dice **cuánto podría valer** ese error.\n**El error se corrige si se conoce; la incertidumbre se estima y se declara.**",
+      "fuente": "VIM 2.16 y 2.26; Nordtest TR 537, 2.4",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f13",
+      "anverso": "¿Cuáles son los **diez parámetros** de validación físico-química que enumera el RD 3/2023?",
+      "reverso": "Anexo III, **parte E.2.a**, literal y en este orden:\n1. **Selectividad**\n2. **Rango de trabajo**\n3. **Linealidad**\n4. **Sensibilidad**\n5. **Límite de detección**\n6. **Límite de cuantificación**\n7. **Robustez**\n8. **Precisión**\n9. **Veracidad (sesgo)**\n10. **Incertidumbre**\n*«En función del método, el laboratorio deberá evaluar todos estos parámetros o bien una parte de ellos.»*",
+      "fuente": "RD 3/2023, anexo III, parte E.2",
+      "etiquetas": ["normativa", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f14",
+      "anverso": "De esos diez parámetros, ¿cuáles considera el RD 3/2023 que **siempre** deben evaluarse?",
+      "reverso": "Los tres de la parte E.1.a: *«debiendo evaluarse parámetros como **veracidad, precisión e incertidumbre de medida**»*.\nEs la misma tríada de la Guía Eurachem para describir la calidad de un resultado: **veracidad** (sistemático), **precisión** (aleatorio) e **incertidumbre** (todo junto).",
+      "fuente": "RD 3/2023, anexo III, parte E.1.a; Guía Eurachem 6.5.1",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t38-f15",
+      "anverso": "¿Es la **incertidumbre** una característica de desempeño **del método**?",
+      "reverso": "**En sentido estricto, no.** La Guía Eurachem lo aclara en su tabla 2: *«la incertidumbre de medida no es una característica del desempeño de un procedimiento de medida particular pero sí **de los resultados** obtenidos al usar dicho procedimiento»*.\nLa 3.ª edición (2025) añade que **la función de calibración tampoco es una característica**: es un **requisito previo** para evaluar las demás.",
+      "fuente": "Guía Eurachem (2016), tabla 2; 3.ª ed. (2025), tabla 2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f16",
+      "anverso": "¿Qué es la **selectividad** de un método, y por qué no se dice «especificidad»?",
+      "reverso": "*«El grado en el que un método puede ser utilizado para **determinar analitos particulares en mezclas o matrices sin interferencias** de otros componentes de comportamiento similar»* (Eurachem 6.1.1; VIM 4.13).\nLa **IUPAC recomienda «selectividad»**; «especificidad» la usa el **sector farmacéutico**. Es el mismo criterio que ya se vio para los electrodos selectivos (tema 24).",
+      "fuente": "VIM 4.13; Guía Eurachem 6.1.1",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f17",
+      "anverso": "Una interferencia puede tener efecto **proporcional** o **traslacional**. ¿Qué cambia cada uno en la recta de calibrado, y cuál corrigen las adiciones estándar?",
+      "reverso": "| Efecto | Qué cambia |\n| --- | --- |\n| **Proporcional** («rotacional») | La **PENDIENTE** |\n| **Traslacional** («fijo», de fondo) | La **ORDENADA en el origen** |\n*«El método de adiciones estándar **solo permite corregir los efectos proporcionales**»* (Eurachem 6.1.2). Un fondo constante no lo corrige.",
+      "fuente": "Guía Eurachem 6.1.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f18",
+      "anverso": "¿Cómo define el RD 3/2023 el **límite de detección**?",
+      "reverso": "*«En una determinación analítica, **valor de concentración o señal de salida por encima del cual se puede afirmar, con un nivel declarado de confianza, que una muestra es diferente de una muestra en blanco**, entendiéndose por blanco aquella disolución que no contiene el analito de interés.»*\nY **debe ser siempre inferior al valor paramétrico**. La definición es la del artículo 3 del RD 817/2015.",
+      "fuente": "RD 3/2023, anexo III, parte D.1; RD 817/2015, art. 3.26",
+      "etiquetas": ["normativa", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f19",
+      "anverso": "¿Cómo define el RD 3/2023 el **límite de cuantificación**, y qué valor máximo le exige?",
+      "reverso": "*«**Múltiplo constante del límite de detección** que se puede determinar con un grado aceptable de exactitud y precisión. […] se puede obtener del **punto de calibración más bajo** en la curva de calibración, excluido el valor del blanco.»*\nExigencia: **LC igual o inferior al 30 % del valor paramétrico** (anexo III, parte D.1).\nEntre el LD y el LC el analito **se detecta, pero no se cuantifica** con garantías.",
+      "fuente": "RD 3/2023, anexo III, parte D.1; RD 817/2015, art. 3.25",
+      "etiquetas": ["normativa", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f20",
+      "anverso": "¿Con qué **fórmulas** se estiman el **LD** y el **LC** en una validación, y con cuántas réplicas?",
+      "reverso": "Guía Eurachem, Referencias Rápidas 2 y 3:\n- **LD = 3 · s₀′**\n- **LC = 10 · s₀′** (k_Q = 10 por defecto, que equivale a una **RSD del 10 %**; a veces se usan 5 o 6, que son **20 %** y **17 %**).\ns₀ es la desviación típica de **10 réplicas** (6 a 15) de **blancos de muestra** o de muestras de nivel bajo, **pasadas por todo el procedimiento**. Si solo pasan por el instrumento, sale el LD **del instrumento**, no el del método.",
+      "fuente": "Guía Eurachem, 6.2 y Referencias Rápidas 2 y 3",
+      "etiquetas": ["calculo", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f21",
+      "anverso": "Mirando la curva de respuesta: ¿dónde **empieza** y dónde **acaba** el intervalo de trabajo?",
+      "reverso": "- Arranca **en el límite de cuantificación**, no en el de detección ni en cero. El VIM lo advierte: el límite inferior del intervalo de medida **no debe confundirse con el límite de detección** (4.7, nota 2).\n- **Acaba donde aparecen anomalías significativas en la sensibilidad**: la pendiente deja de ser constante, como el **efecto meseta** de la absorbancia alta en UV-visible (Eurachem 6.3.1).\nPor encima del intervalo, **se diluye** la muestra.",
+      "fuente": "Guía Eurachem 6.3.1; VIM 4.7",
+      "etiquetas": ["figura", "concepto"],
+      "figura": { "tipo": "esquema", "valor": "intervalo-de-trabajo" },
+      "nucleo": true
+    },
+    {
+      "id": "t38-f22",
+      "anverso": "¿Cómo se evalúa en una validación la **linealidad** y el **intervalo de trabajo**?",
+      "reverso": "Eurachem, Referencia Rápida 5:\n1. Blanco y patrones a **6-10 concentraciones espaciadas uniformemente**, cubriendo el intervalo esperado **±10 % o incluso ±20 %** (de 1-100 mg/L → **0,8 a 120 mg/L**).\n2. En el tramo lineal, **2-3 réplicas** por nivel; regresión y **gráfico de residuales**: *«la distribución aleatoria de residuales en torno a cero confirma la linealidad»*.\n3. Muestras o MR pasados por **todo el procedimiento**.\nNo se recomiendan funciones **superiores a las cuadráticas**, y el intervalo se establece **para cada matriz**.",
+      "fuente": "Guía Eurachem 6.3.4, 6.3.5 y Referencia Rápida 5",
+      "etiquetas": ["concepto", "valores"]
+    },
+    {
+      "id": "t38-f23",
+      "anverso": "¿Qué es la **sensibilidad** de un método, y qué NO es?",
+      "reverso": "Es *«el cociente entre la variación de una indicación de un sistema de medida y la variación correspondiente del valor de la magnitud medida»* (VIM 4.12): **la pendiente de la curva de respuesta**.\n**No es el límite de detección**: *«No debe utilizarse el término «sensibilidad» en lugar de «límite de detección»»* (VIM 4.18, nota 3).\nSirve para comprobar el instrumento contra un valor teórico: **59 mV por unidad de pH** en un electrodo de vidrio, o Lambert-Beer.",
+      "fuente": "VIM 4.12 y 4.18; Guía Eurachem 6.4",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f24",
+      "anverso": "¿Cuáles son las **tres vías** para evaluar la **veracidad** (el sesgo) de un método?",
+      "reverso": "Guía Eurachem 6.5.2:\n1. **Analizar un material de referencia**, mejor **certificado** (MRC), y comparar la media con su valor: **b = x̄ − x_ref**.\n2. **Recuperación de adiciones**: añadir analito en cantidad conocida y medir lo recuperado.\n3. **Comparar con otro método**: uno de referencia, o el que se va a sustituir.\nCon **10 réplicas** en cada caso.",
+      "fuente": "Guía Eurachem 6.5.2 y Referencia Rápida 6",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f25",
+      "anverso": "¿Qué **material de referencia** hay que usar para evaluar la veracidad de un método de agua de consumo?",
+      "reverso": "*«Preferiblemente un **MRC con la misma matriz y en concentraciones del analito similares** a las muestras reales»* (Eurachem 5.4.5).\nEs la respuesta de **1322, segundo ejercicio, #10**: *«un material de referencia **de agua de consumo** con una concentración de **5 mg/l** de analito»*. Los distractores fallaban en la **matriz** (agua desionizada) o en el **nivel** (por debajo del LD).",
+      "fuente": "Guía Eurachem 5.4.5; cuestionario 1322 segundo ejercicio #10",
+      "etiquetas": ["examen", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f26",
+      "anverso": "¿Cómo se calcula la **recuperación de una adición**, y por qué su estimación del sesgo es **optimista**?",
+      "reverso": "**R′(%) = (x̄′ − x̄) / x_adición · 100**, donde x̄′ es la media de la muestra con adición, x̄ la de la muestra sin ella y x_adición lo añadido.\nEs optimista porque **el analito añadido está menos ligado a la matriz que el que la muestra trae de forma natural**: se extrae con más facilidad y da *«una falsa impresión de una alta eficiencia de extracción»* (Eurachem 6.5.2).",
+      "fuente": "Guía Eurachem 6.5.2, ecuación 3",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t38-f27",
+      "anverso": "¿Puede usarse el **mismo material de referencia** para **calibrar** y para **evaluar el sesgo**? ¿Y qué distingue un MR de un MRC?",
+      "reverso": "**No.** *«Un MR usado para la calibración **no debería utilizarse para evaluar el sesgo**»* (Eurachem 6.5.2): cada material, **para un solo fin**.\n- **MR**: cualquier material usado como valor de referencia, **estable y homogéneo**.\n- **MRC**: además, con **certificado** que declara su valor, su **incertidumbre** y su **trazabilidad metrológica** (tema 39).",
+      "fuente": "Guía Eurachem 5.4.5 y 6.5.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f28",
+      "anverso": "¿Cuántas réplicas pide la Guía Eurachem para evaluar la **precisión**, y en qué condiciones?",
+      "reverso": "**6-15 réplicas por material**, **independientes**: cada una repite **todo el procedimiento**, preparación incluida.\nCon materiales **representativos en matriz y concentración** —no hace falta que sean MRC—, **a varias concentraciones** del intervalo.\nDiseño eficiente: **duplicados en varios días con ANOVA**, que da a la vez la repetibilidad y la precisión intermedia.",
+      "fuente": "Guía Eurachem 6.6.2.1 y 6.6.4",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t38-f29",
+      "anverso": "¿Qué es el **límite de repetibilidad r** y cuánto vale?",
+      "reverso": "**r = √2 · t · s_r ≈ 2,8 · s_r**\nEs la diferencia máxima que cabe esperar, **al 95 %**, entre **dos resultados de la misma muestra** en condiciones de repetibilidad. El **√2** es porque se trata de una **diferencia entre dos medidas**, y **t ≈ 2**: √2 · 2 = 2,83.\nEl de reproducibilidad **R** se calcula igual con s_R. Las normas con estudio colaborativo **publican r y R**.",
+      "fuente": "Guía Eurachem 6.6.3, ecuaciones 5 y 6",
+      "etiquetas": ["calculo", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f30",
+      "anverso": "¿Qué es la **robustez** y cómo se estudia?",
+      "reverso": "*«Una medida de su capacidad para **permanecer no afectado por pequeñas variaciones premeditadas de los parámetros del método**»* (Eurachem 6.8.1).\nSe estudia cambiando **a propósito y poco** las condiciones críticas (temperatura, pH, tiempos…), con diseños de experimentos: **Plackett-Burman, 7 factores en 8 experimentos**. El resultado son **tolerancias** escritas en el procedimiento.\n**No hace falta** en un método normalizado usado dentro de su alcance.",
+      "fuente": "Guía Eurachem 6.8 y Referencia Rápida 8",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f31",
+      "anverso": "¿Qué **tres condiciones** pone el RD 3/2023 a la **incertidumbre** de la tabla 15?",
+      "reverso": "1. Se expresa como **incertidumbre expandida con k = 2**, en **% del valor paramétrico** (salvo el **pH**, en **0,2 unidades de pH**).\n2. **Se estima al nivel del valor paramétrico**, *«a menos que se especifique lo contrario»* (la turbidez, a **1 UNF**; el COT, a **7 mg/L**).\n3. ***«No se utilizará como tolerancia adicional a los valores paramétricos»***.",
+      "fuente": "RD 3/2023, anexo III, parte D.3 y tabla 15",
+      "etiquetas": ["normativa", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f32",
+      "anverso": "¿Qué **incertidumbre** y qué **límite de cuantificación** exige el RD 817/2015 en **aguas superficiales**?",
+      "reverso": "Un criterio **único para todo** (anexo III, apartado C.1.b):\n- **Incertidumbre ≤ 50 % (k = 2)**, estimada al nivel de la **NCA**.\n- **LC ≤ 30 % de la NCA**.\nY para promediar: los resultados **< LC** se toman como **la mitad del LC**, salvo en los parámetros que son **sumas**, donde se toman como **cero**.",
+      "fuente": "RD 817/2015, anexo III, apartado C",
+      "etiquetas": ["normativa", "valores"]
+    },
+    {
+      "id": "t38-f33",
+      "anverso": "¿Qué diferencia hay entre una evaluación de incertidumbre **tipo A** y una **tipo B**?",
+      "reverso": "La diferencia es **cómo se evalúa**, no de dónde viene el error:\n- **Tipo A** (VIM 2.28): *«mediante un **análisis estadístico** de los valores medidos»*. Ejemplo: la desviación típica de réplicas.\n- **Tipo B** (VIM 2.29): **de cualquier otra manera**. Ejemplos del VIM: **el valor de un MRC**, **un certificado de calibración**, **la clase de exactitud**, la deriva, la experiencia.\nConvertidas a desviación típica, **las dos valen lo mismo**.",
+      "fuente": "VIM 2.28 y 2.29",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f34",
+      "anverso": "¿Cómo se convierte en **incertidumbre típica** un intervalo **±a** según lo que se sepa de él?",
+      "reverso": "| Lo que se tiene | u |\n| --- | --- |\n| **±a** sin más información (**rectangular**) | **a / √3** |\n| **±a** con extremos improbables (**triangular**) | **a / √6** |\n| Un certificado con **U y k** | **U / k** |\n| Un intervalo **al 95 %** | **a / 1,96** |\n| La **resolución** de un indicador | **res / √12** |\nEjemplo de la QUAM: matraz de 10 mL **±0,2 mL** → **0,12 mL** (rectangular) o **0,08 mL** (triangular).",
+      "fuente": "GUM 4.3.4 a 4.3.9; QUAM 8.1",
+      "etiquetas": ["calculo", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f35",
+      "anverso": "Mirando el triángulo: ¿por qué **uc** es la hipotenusa y no la suma de los dos catetos?",
+      "reverso": "Porque las incertidumbres independientes se combinan **en cuadratura**: **raíz cuadrada de la suma de los cuadrados**, igual que se calcula una hipotenusa.\nSumarlas directamente supondría que **todos los errores van siempre a la vez en el peor sentido**, y no es así: unas veces se suman y otras se restan.\nPor eso **uc es siempre menor que la suma** de las componentes y **mayor que la mayor** de ellas.",
+      "fuente": "GUM 2.3.4 y 5.1.2; QUAM 8.2",
+      "etiquetas": ["figura", "calculo"],
+      "figura": { "tipo": "esquema", "valor": "incertidumbre-en-cuadratura" },
+      "nucleo": true
+    },
+    {
+      "id": "t38-f36",
+      "anverso": "¿Cómo se combinan las incertidumbres si el resultado es una **suma** y si es un **producto o cociente**?",
+      "reverso": "Las dos reglas de la QUAM (8.2.6):\n- **Suma o resta** → las incertidumbres **absolutas**, en cuadratura: u(y) = √(u(p)² + u(q)²).\n- **Producto o cociente** → las **relativas**, en cuadratura: u(y)/y = √((u(p)/p)² + (u(q)/q)²).\nY dos avisos: las componentes **menores de un tercio** de la mayor apenas pesan (QUAM 7.2.2), y **no se cuenta dos veces** lo mismo (GUM 4.3.10).",
+      "fuente": "QUAM 7.2.2 y 8.2.6; GUM 4.3.10",
+      "etiquetas": ["calculo"]
+    },
+    {
+      "id": "t38-f37",
+      "anverso": "¿Qué es la **incertidumbre expandida** y qué cobertura da cada **k**?",
+      "reverso": "**U = k · uc**: *«producto de una incertidumbre típica combinada y un factor mayor que uno»* (VIM 2.35), el **factor de cobertura**.\n- **k = 2** → **≈ 95 %** (95,45 % en una normal).\n- **k = 3** → **≈ 99 %**.\n- Pocos datos (**< 6 grados de libertad**) → k de la **t de Student** (5 pesadas → k = 2,8).\nEn España, la tabla 15 del RD 3/2023 va con **k = 2**; los **radionucleidos**, con **1,96**.",
+      "fuente": "VIM 2.35 y 2.38; GUM 6.3.3; QUAM 8.3; RD 3/2023, tabla 14, nota 2",
+      "etiquetas": ["calculo", "valores"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f38",
+      "anverso": "En un laboratorio de aguas, ¿cómo se calcula la incertidumbre **con los datos de validación y de control de calidad**?",
+      "reverso": "Con el modelo del **Nordtest TR 537**, en el que se basa la **ISO 11352:2025**:\n**uc = √( u(Rw)² + u(sesgo)² )** y **U = 2 · uc**\n- **u(Rw)**: la **precisión intermedia**, de una **muestra de control** medida mucho tiempo (preferiblemente **un año**).\n- **u(sesgo)** = √(RMS_sesgo² + u(C_ref)²), con **MRC, ensayos de aptitud o recuperaciones**.",
+      "fuente": "Nordtest TR 537 (ed. 4, 2017), secciones 3, 5 y 6; ISO 11352:2025",
+      "etiquetas": ["calculo"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f39",
+      "anverso": "¿Cuáles son los **cuatro pasos** de la estimación de la incertidumbre por modelización, según la guía QUAM?",
+      "reverso": "1. **Especificar el mensurando**, con la ecuación que lo relaciona con las magnitudes de entrada.\n2. **Identificar las fuentes** de incertidumbre, con un **diagrama de causa y efecto** (espina de pescado o **Ishikawa**).\n3. **Cuantificar** cada componente y pasarla a **incertidumbre típica**.\n4. **Calcular la combinada** y **expandirla**.\nEs el camino de los laboratorios de calibración; según el Nordtest, **tiende a subestimar** la incertidumbre porque es fácil dejarse fuentes.",
+      "fuente": "QUAM, sección 4; Nordtest TR 537, sección 3",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f40",
+      "anverso": "Ejemplo del Nordtest para el **amonio**: u(Rw) = 1,67 % y u(sesgo) = 2,73 %. ¿Cuánto valen **uc** y **U**, y qué se informa?",
+      "reverso": "- **uc** = √(1,67² + 2,73²) = **3,20 %**\n- **U** = 2 · 3,20 = **6,40 %**\n- Se informa **± 7 %**: U se da con **una o dos cifras**, y el Nordtest redondea **hacia arriba**.\nLa u(Rw) salía de unos límites de control de ±3,34 % (2s) → 3,34 / 2; la u(sesgo), de seis ensayos de aptitud.",
+      "fuente": "Nordtest TR 537, 3.2 y 3.3",
+      "etiquetas": ["calculo", "valores"]
+    },
+    {
+      "id": "t38-f41",
+      "anverso": "¿Cuándo conviene dar la incertidumbre en valor **absoluto** y cuándo en **relativo**?",
+      "reverso": "Cerca del LD la incertidumbre es casi **constante en unidades**; a concentraciones altas, casi **constante en porcentaje**. Por eso el Nordtest propone **partir el intervalo**: **absoluta en el tramo bajo, relativa en el alto**. El **pH, siempre absoluta**, como hace el RD 3/2023.\nEl RD pide calcularla a varios niveles, **incluido el LC**, y **o bien dar un valor por nivel, o bien tomar el más desfavorable** (anexo III, parte E.4).",
+      "fuente": "Nordtest TR 537, sección 4; RD 3/2023, anexo III, parte E.4",
+      "etiquetas": ["concepto", "normativa"]
+    },
+    {
+      "id": "t38-f42",
+      "anverso": "¿Cómo se **expresa** un resultado con su incertidumbre?",
+      "reverso": "**Resultado ± U, con unidades, diciendo k y la probabilidad de cobertura.** El modelo de la QUAM: *«Nitrógeno total: **(3,52 ± 0,14) g/100 g**; incertidumbre expandida con un factor de cobertura de 2, lo que da un nivel de confianza de aproximadamente el 95 %»*.\nU con **una o dos cifras significativas** (GUM 7.2.6), y el resultado **redondeado a la misma posición decimal**.",
+      "fuente": "QUAM 9.4 y 9.5; GUM 7.2.6",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f43",
+      "anverso": "¿Cuáles son los **pasos de la sistemática de validación** según la Guía Eurachem?",
+      "reverso": "1. **Necesidad del cliente** → establecer los **requisitos analíticos**.\n2. **Elegir** un método existente o **desarrollar** uno.\n3. **Documentar el procedimiento**: se valida la versión final, no un borrador.\n4. **Evaluar el desempeño** con los experimentos de cada característica.\n5. **¿Es adecuado al uso?** Sí → **informe de validación** y uso. No → seguir desarrollando o **revisar los requisitos**; si ninguna de las dos es posible, **no se usa**.",
+      "fuente": "Guía Eurachem 5.1.1 y 5.6, figura 1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t38-f44",
+      "anverso": "¿Qué **secciones** tiene el **plan e informe de validación** que propone la Guía Eurachem?",
+      "reverso": "1. **Título**: método, quién y cuándo, estado, analito, **mensurando**, unidad, tipo de muestra y **uso previsto**.\n2. **Planificación**: propósito (validación completa, verificación, ampliación) y **qué características, con qué requisitos**.\n3. **Características de desempeño**: **una sección por característica**, con experimento, evaluación, resultado y conclusión.\n4. **Resumen**, con las consecuencias para el control de calidad y la **declaración de adecuación al uso**.",
+      "fuente": "Guía Eurachem 5.3",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t38-f45",
+      "anverso": "¿Qué dice el RD 3/2023 de la validación de los **métodos microbiológicos**?",
+      "reverso": "Anexo III, parte E.3:\n- **Cualitativos** (presencia/ausencia) → **como mínimo, el límite de detección**; si hace falta, sensibilidad, especificidad, falsos positivos y negativos, eficiencia o selectividad.\n- **Cuantitativos** (recuento) → **recuperación y precisión** en todo el rango, por **incorporación en placa, extensión en placa o filtración en membrana**.\n- **Incertidumbre, solo en los de recuento**: *«No es de aplicación a métodos cualitativos **ni NMP**.»*",
+      "fuente": "RD 3/2023, anexo III, parte E.3",
+      "etiquetas": ["normativa"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t38-q01",
+      "pregunta": "Para el cálculo de la incertidumbre de un método analítico necesitamos conocer los siguientes parámetros:",
+      "opciones": [
+        "Exactitud y Precisión.",
+        "Límite de Detección y Límite de Cuantificación.",
+        "Sensibilidad y Selectividad."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta 1246 #19, transcrita. La incertidumbre de un método se calcula con su precisión (u(Rw), el error aleatorio) y su veracidad (u(sesgo), el error sistemático), que la pregunta llama «exactitud»: uc = √(u(Rw)² + u(sesgo)²). El LD, el LC, la sensibilidad y la selectividad son características de validación, pero no entran en ese cálculo.",
+      "fuente": "Cuestionario 1246 primer ejercicio #19; Nordtest TR 537",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q02",
+      "pregunta": "Según el Vocabulario Internacional de Metrología (VIM), la validación es:",
+      "opciones": [
+        "La operación que establece la relación entre las indicaciones de un instrumento y los valores de los patrones.",
+        "La verificación de que los requisitos especificados son adecuados para un uso previsto.",
+        "La aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la definición literal de VIM 2.45. La primera opción es la calibración (2.39) y la tercera, la verificación (2.44): toda validación es una verificación, pero la validación añade que los requisitos sean adecuados para el uso previsto.",
+      "fuente": "VIM 2.39, 2.44 y 2.45",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q03",
+      "pregunta": "Un laboratorio va a empezar a aplicar un método normalizado UNE, dentro del alcance para el que fue publicado. Según la UNE-EN ISO/IEC 17025, debe:",
+      "opciones": [
+        "Realizar una validación completa, con todas las características de desempeño.",
+        "Nada, porque un método normalizado ya viene validado por el organismo que lo publica.",
+        "Verificar que puede llevarlo a cabo apropiadamente antes de utilizarlo, conservando registros de la verificación."
+      ],
+      "correcta": 2,
+      "explicacion": "Cláusula 7.2.1.5, en la redacción que transcribe ENAC: «el laboratorio debe verificar que puede llevar a cabo apropiadamente los métodos antes de utilizarlos […]. Se deben conservar registros de la verificación.» La validación completa es para los métodos desarrollados por el laboratorio, los no normalizados y los normalizados usados fuera de su alcance.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 7.2.1.5; CGA-ENAC-LEC, anexo I",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q04",
+      "pregunta": "¿Cuál de los siguientes métodos debe VALIDARSE, y no solo verificarse?",
+      "opciones": [
+        "Un método desarrollado por el propio laboratorio.",
+        "Un método normalizado aplicado dentro de su alcance.",
+        "Un procedimiento interno claramente basado en un método normalizado y aplicado dentro de su alcance."
+      ],
+      "correcta": 0,
+      "explicacion": "La ISO/IEC 17025 (7.2.2.1) obliga a validar los métodos no normalizados, los desarrollados por el laboratorio y los normalizados usados fuera de su alcance o modificados. ENAC exige para los desarrollados por el laboratorio una «validación completa»; para los normalizados y los internos basados en ellos, verificación.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 7.2.2.1; CGA-ENAC-LEC, anexo I"
+    },
+    {
+      "id": "t38-q05",
+      "pregunta": "La precisión de un método se expresa numéricamente mediante:",
+      "opciones": [
+        "El sesgo.",
+        "Una medida de dispersión, como la desviación típica o el coeficiente de variación.",
+        "No se expresa numéricamente."
+      ],
+      "correcta": 1,
+      "explicacion": "VIM 2.15, nota 1: la precisión se expresa «mediante medidas de dispersión tales como la desviación típica, la varianza o el coeficiente de variación». El sesgo es la medida de la veracidad; la que no se expresa numéricamente es la exactitud.",
+      "fuente": "VIM 2.13, 2.15 y 2.18",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q06",
+      "pregunta": "La veracidad de un método está relacionada con:",
+      "opciones": [
+        "El error aleatorio.",
+        "El error aleatorio y el sistemático por igual.",
+        "El error sistemático."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 2.14, nota 2: la veracidad «está inversamente relacionada con el error sistemático, pero no está relacionada con el error aleatorio». El aleatorio es cosa de la precisión; los dos juntos, de la exactitud.",
+      "fuente": "VIM 2.14"
+    },
+    {
+      "id": "t38-q07",
+      "pregunta": "Según el VIM, la exactitud de medida:",
+      "opciones": [
+        "Es sinónimo de precisión.",
+        "No es una magnitud ni se expresa numéricamente, e incluye la veracidad y la precisión.",
+        "Se expresa mediante la desviación típica de los resultados."
+      ],
+      "correcta": 1,
+      "explicacion": "VIM 2.13, notas 1 y 2: la exactitud «no es una magnitud y no se expresa numéricamente», y el término precisión no debe usarse en su lugar, «ya que esta última incluye ambos conceptos». La desviación típica mide la precisión.",
+      "fuente": "VIM 2.13"
+    },
+    {
+      "id": "t38-q08",
+      "pregunta": "La precisión obtenida en un mismo laboratorio, con distintos analistas, equipos y días, se denomina:",
+      "opciones": [
+        "Repetibilidad.",
+        "Reproducibilidad.",
+        "Precisión intermedia."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 2.22 y 2.23: la condición de precisión intermedia mantiene el procedimiento y el lugar durante un periodo amplio, con variaciones de calibraciones, patrones, operadores y sistemas de medida. La repetibilidad no cambia nada y la reproducibilidad cambia el laboratorio.",
+      "fuente": "VIM 2.20 a 2.25",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q09",
+      "pregunta": "¿Cuál de los siguientes NO figura entre los parámetros de validación de métodos físico-químicos que enumera el anexo III, parte E, del RD 3/2023?",
+      "opciones": [
+        "El rango de trabajo.",
+        "La robustez.",
+        "La trazabilidad."
+      ],
+      "correcta": 2,
+      "explicacion": "La lista del RD es: selectividad, rango de trabajo, linealidad, sensibilidad, límite de detección, límite de cuantificación, robustez, precisión, veracidad (sesgo) e incertidumbre. La trazabilidad es una propiedad del resultado ligada a los patrones y a la calibración (tema 39), no un parámetro de esa lista.",
+      "fuente": "RD 3/2023, anexo III, parte E.2",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q10",
+      "pregunta": "Según la Guía Eurachem, en una validación el límite de detección se estima como:",
+      "opciones": [
+        "3 veces la desviación típica de réplicas de blancos pasados por todo el procedimiento.",
+        "10 veces la desviación típica de réplicas de blancos.",
+        "La concentración del patrón más bajo de la recta de calibrado."
+      ],
+      "correcta": 0,
+      "explicacion": "LD = 3 · s₀′ (Referencia Rápida 2), con unas 10 réplicas. El factor 10 es el del límite de cuantificación (k_Q = 10, que equivale a una RSD del 10 %). El punto más bajo de la calibración es una de las formas que admite el RD para el LC, no para el LD.",
+      "fuente": "Guía Eurachem, Referencias Rápidas 2 y 3; RD 3/2023, anexo III, parte D",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q11",
+      "pregunta": "Según el RD 3/2023, el método de análisis de un parámetro físico-químico debe tener un límite de cuantificación:",
+      "opciones": [
+        "Igual o inferior al 10 % del valor paramétrico.",
+        "Igual o inferior al 30 % del valor paramétrico.",
+        "Igual o inferior al 50 % del valor paramétrico."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, parte D.1: «un límite de cuantificación igual o inferior al 30 % del valor paramétrico pertinente». El 50 % es la incertidumbre máxima (k = 2) del RD 817/2015 para aguas superficiales, y el máximo de varias filas de la tabla 15.",
+      "fuente": "RD 3/2023, anexo III, parte D.1",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q12",
+      "pregunta": "El extremo inferior del intervalo de trabajo de un método está determinado por:",
+      "opciones": [
+        "El límite de detección.",
+        "La concentración cero.",
+        "El límite de cuantificación."
+      ],
+      "correcta": 2,
+      "explicacion": "Guía Eurachem 6.3.1: «El extremo inferior del intervalo de trabajo está determinado por el límite de cuantificación». Y el VIM (4.7, nota 2) advierte de que el límite inferior de un intervalo de medida no debe confundirse con el límite de detección.",
+      "fuente": "Guía Eurachem 6.3.1; VIM 4.7"
+    },
+    {
+      "id": "t38-q13",
+      "pregunta": "Según el VIM, la sensibilidad de un sistema de medida es:",
+      "opciones": [
+        "La mínima concentración que puede detectarse.",
+        "La capacidad de medir el analito sin interferencias de otros componentes.",
+        "El cociente entre la variación de la indicación y la variación del valor medido, es decir, la pendiente de la respuesta."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 4.12. La primera opción es el límite de detección, y el VIM prohíbe llamarlo sensibilidad (4.18, nota 3). La segunda es la selectividad (4.13).",
+      "fuente": "VIM 4.12, 4.13 y 4.18"
+    },
+    {
+      "id": "t38-q14",
+      "pregunta": "Una interferencia de matriz con efecto proporcional modifica, en la recta de calibrado:",
+      "opciones": [
+        "La pendiente.",
+        "La ordenada en el origen.",
+        "Ni la pendiente ni la ordenada."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem 6.1.2: el efecto proporcional («rotacional») cambia la pendiente pero no la ordenada; el traslacional («fijo» o de fondo) cambia la ordenada pero no la pendiente.",
+      "fuente": "Guía Eurachem 6.1.2"
+    },
+    {
+      "id": "t38-q15",
+      "pregunta": "El método de adiciones estándar permite corregir:",
+      "opciones": [
+        "Solo los efectos proporcionales de la matriz.",
+        "Solo los efectos de fondo o traslacionales.",
+        "Tanto los efectos proporcionales como los traslacionales."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem 6.1.2, literal: «El método de adiciones estándar solo permite corregir los efectos proporcionales.» Una señal de fondo constante no la corrige.",
+      "fuente": "Guía Eurachem 6.1.2"
+    },
+    {
+      "id": "t38-q16",
+      "pregunta": "Para evaluar la veracidad de un método de análisis de agua de consumo, el material más adecuado es:",
+      "opciones": [
+        "Un material de referencia certificado de agua de consumo, con una concentración del analito similar a la de las muestras.",
+        "El mismo patrón que se ha usado para la recta de calibrado.",
+        "Agua desionizada fortificada con el analito a una concentración inferior al límite de detección."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem 5.4.5: «preferiblemente un MRC con la misma matriz y en concentraciones del analito similares a las muestras reales». El material de la calibración no debe usarse para evaluar el sesgo (6.5.2), y por debajo del LD no se puede medir. Es la regla que resuelve 1322 C2 #10.",
+      "fuente": "Guía Eurachem 5.4.5 y 6.5.2; cuestionario 1322 segundo ejercicio #10",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q17",
+      "pregunta": "Una muestra da 10,0 mg/L. Tras añadirle 10,0 mg/L de analito, da 19,2 mg/L. La recuperación de la adición es:",
+      "opciones": [
+        "192 %.",
+        "92 %.",
+        "8 %."
+      ],
+      "correcta": 1,
+      "explicacion": "R′(%) = (x̄′ − x̄) / x_adición · 100 = (19,2 − 10,0) / 10,0 · 100 = 92 %. El 192 % sale de dividir el total entre lo añadido, y el 8 % es lo que falta por recuperar.",
+      "fuente": "Guía Eurachem 6.5.2, ecuación 3"
+    },
+    {
+      "id": "t38-q18",
+      "pregunta": "La estimación del sesgo mediante recuperación de adiciones tiende a ser:",
+      "opciones": [
+        "Pesimista, porque el analito añadido se pierde con más facilidad.",
+        "Optimista, porque el analito añadido está menos ligado a la matriz que el natural.",
+        "Exacta, porque la cantidad añadida se conoce con precisión."
+      ],
+      "correcta": 1,
+      "explicacion": "Guía Eurachem 5.4.3 y 6.5.2: el analito añadido «probablemente no estará tan fuertemente ligado como el que está naturalmente presente» y la técnica «dará una falsa impresión de una alta eficiencia de extracción». Por eso la estimación es demasiado optimista.",
+      "fuente": "Guía Eurachem 5.4.3 y 6.5.2"
+    },
+    {
+      "id": "t38-q19",
+      "pregunta": "El límite de repetibilidad (r), diferencia máxima esperable al 95 % entre dos resultados de la misma muestra en condiciones de repetibilidad, vale aproximadamente:",
+      "opciones": [
+        "2,8 veces la desviación típica de repetibilidad.",
+        "3 veces la desviación típica de repetibilidad.",
+        "La desviación típica de repetibilidad dividida por √2."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem 6.6.3: r = √2 · t · s_r, y con t ≈ 2 al 95 %, r ≈ 2,8 · s_r. El √2 aparece porque es una diferencia entre dos medidas.",
+      "fuente": "Guía Eurachem 6.6.3, ecuaciones 5 y 6",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q20",
+      "pregunta": "La robustez de un procedimiento analítico es:",
+      "opciones": [
+        "Su capacidad para no verse afectado por pequeñas variaciones deliberadas de los parámetros del método.",
+        "Su precisión cuando lo aplican laboratorios diferentes.",
+        "Su capacidad para medir el analito sin interferencias."
+      ],
+      "correcta": 0,
+      "explicacion": "Guía Eurachem 6.8.1: «una medida de su capacidad para permanecer no afectado por pequeñas variaciones premeditadas de los parámetros del método». La segunda opción es la reproducibilidad y la tercera, la selectividad.",
+      "fuente": "Guía Eurachem 6.8.1"
+    },
+    {
+      "id": "t38-q21",
+      "pregunta": "Las incertidumbres máximas de la tabla 15 del RD 3/2023 se expresan como incertidumbre expandida con un factor de cobertura:",
+      "opciones": [
+        "k = 1.",
+        "k = 2.",
+        "k = 3."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, parte D.3: «El criterio de rendimiento para la incertidumbre de medición (k = 2) es el porcentaje del valor paramétrico indicado en la tabla». Con k = 2 la cobertura es de aproximadamente el 95 %.",
+      "fuente": "RD 3/2023, anexo III, parte D.3",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q22",
+      "pregunta": "Según el RD 3/2023, la incertidumbre de medida de la tabla 15:",
+      "opciones": [
+        "Se suma al valor paramétrico para decidir si un resultado cumple.",
+        "Se resta del resultado antes de compararlo con el valor paramétrico.",
+        "No se utilizará como tolerancia adicional a los valores paramétricos."
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo III, parte D.3, literal: «La incertidumbre de medida establecida en la tabla siguiente no se utilizará como tolerancia adicional a los valores paramétricos establecidos en el anexo I.»",
+      "fuente": "RD 3/2023, anexo III, parte D.3"
+    },
+    {
+      "id": "t38-q23",
+      "pregunta": "¿Cuál es el único parámetro de la tabla 15 del RD 3/2023 cuya incertidumbre no se expresa en porcentaje del valor paramétrico?",
+      "opciones": [
+        "El pH.",
+        "La turbidez.",
+        "La conductividad."
+      ],
+      "correcta": 0,
+      "explicacion": "Nota 4 de la tabla 15: el valor de la incertidumbre del pH, 0,2, «se expresa en unidades de pH». La turbidez va en porcentaje (30 %), aunque estimada al nivel de 1 UNF, y la conductividad también (15 %).",
+      "fuente": "RD 3/2023, anexo III, tabla 15 y nota 4"
+    },
+    {
+      "id": "t38-q24",
+      "pregunta": "Según el RD 817/2015, los métodos de análisis para el seguimiento del estado de las aguas superficiales deben tener una incertidumbre expandida (k = 2), estimada al nivel de las normas de calidad ambiental, de:",
+      "opciones": [
+        "El 25 % o menos.",
+        "El 50 % o menos.",
+        "El 15 % o menos."
+      ],
+      "correcta": 1,
+      "explicacion": "Anexo III, apartado C.1.b: «una incertidumbre de medida del 50 % o menos (k=2) estimada al nivel de las NCAs y un límite de cuantificación igual o inferior a un valor del 30 % de las NCA pertinentes».",
+      "fuente": "RD 817/2015, anexo III, apartado C.1.b"
+    },
+    {
+      "id": "t38-q25",
+      "pregunta": "¿Cuál de las siguientes es una evaluación de incertidumbre de tipo B?",
+      "opciones": [
+        "La desviación típica de diez réplicas de una muestra.",
+        "El análisis de varianza de duplicados medidos en días distintos.",
+        "La tomada del certificado de calibración de un instrumento."
+      ],
+      "correcta": 2,
+      "explicacion": "VIM 2.29: tipo B es la evaluación hecha «de manera distinta a una evaluación tipo A», y entre sus ejemplos cita la información «obtenida a partir de un certificado de calibración». Las otras dos son análisis estadísticos de valores medidos: tipo A (2.28).",
+      "fuente": "VIM 2.28 y 2.29"
+    },
+    {
+      "id": "t38-q26",
+      "pregunta": "Si de una magnitud solo se conocen unos límites ±a, sin ninguna información sobre cómo se reparten los valores dentro de ellos, su incertidumbre típica es:",
+      "opciones": [
+        "a / √3.",
+        "a / √6.",
+        "a / 2."
+      ],
+      "correcta": 0,
+      "explicacion": "Sin información, se supone una distribución rectangular: u² = a²/3 (GUM 4.3.7, ecuación 7). El a/√6 corresponde a la triangular, cuando los extremos son improbables (4.3.9), y el a/2 a un intervalo con k = 2.",
+      "fuente": "GUM 4.3.7 y 4.3.9; QUAM 8.1.4",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q27",
+      "pregunta": "Si la precisión intermedia aporta una incertidumbre típica del 3 % y el sesgo otra del 4 %, la incertidumbre típica combinada es:",
+      "opciones": [
+        "7 %.",
+        "5 %.",
+        "3,5 %."
+      ],
+      "correcta": 1,
+      "explicacion": "Las incertidumbres independientes se combinan en cuadratura: uc = √(3² + 4²) = √25 = 5 %. El 7 % es la suma directa, que no se hace; el 3,5 %, la media.",
+      "fuente": "Nordtest TR 537, sección 3; GUM 5.1.2",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q28",
+      "pregunta": "Una incertidumbre expandida calculada con un factor de cobertura k = 2 corresponde a una probabilidad de cobertura de aproximadamente:",
+      "opciones": [
+        "El 68 %.",
+        "El 99 %.",
+        "El 95 %."
+      ],
+      "correcta": 2,
+      "explicacion": "GUM 6.3.3: «k = 2 representa un intervalo con un nivel de confianza de aproximadamente el 95 por ciento, y k = 3 […] de aproximadamente el 99 por ciento». El 68 % es el de una sola desviación típica.",
+      "fuente": "GUM 6.3.3",
+      "nucleo": true
+    },
+    {
+      "id": "t38-q29",
+      "pregunta": "Si el resultado de un análisis se calcula como un cociente de magnitudes medidas, sus incertidumbres se combinan:",
+      "opciones": [
+        "Sumando directamente las incertidumbres absolutas.",
+        "En cuadratura, pero con las incertidumbres relativas.",
+        "En cuadratura, con las incertidumbres absolutas."
+      ],
+      "correcta": 1,
+      "explicacion": "QUAM 8.2.6, regla 2: para productos y cocientes, la incertidumbre relativa del resultado es la raíz de la suma de los cuadrados de las relativas. Las absolutas en cuadratura son para sumas y restas (regla 1). Sumar directamente no se hace nunca.",
+      "fuente": "QUAM 8.2.6"
+    },
+    {
+      "id": "t38-q30",
+      "pregunta": "Para los radionucleidos, el RD 3/2023 establece que las incertidumbres se comuniquen como incertidumbres expandidas con un factor de expansión de:",
+      "opciones": [
+        "2.",
+        "3.",
+        "1,96."
+      ],
+      "correcta": 2,
+      "explicacion": "Nota 2 de la tabla 14: «con un factor de expansión del 1,96, según la ISO Guide for the Expression of Uncertainty in Measurement». Es la excepción: el resto del RD (tabla 15) trabaja con k = 2.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t38-s01",
+      "titulo": "Validación de un método propio de nitrato para agua de consumo",
+      "enunciado": "El laboratorio municipal ha desarrollado un **método espectrofotométrico propio** para determinar **nitrato en agua de consumo** (valor paramétrico: **50 mg/L**) y lo está validando. Obtiene estos datos:\n- **10 réplicas de un blanco de muestra**, pasadas por todo el procedimiento: desviación típica **s₀′ = 0,40 mg/L**.\n- **10 réplicas de un material de referencia certificado** de agua de consumo, de valor certificado **50,0 ± 2,0 mg/L (k = 2)**: media **51,6 mg/L**.\n- Una **muestra de control de 50 mg/L** medida durante un año: desviación típica relativa (precisión intermedia) del **2,4 %**.\nAplique las convenciones de la Guía Eurachem para el LD y el LC, y tome **u(sesgo) = √(sesgo² + u(C_ref)²)**, todo en porcentaje.",
+      "preguntas": [
+        {
+          "id": "t38-s01-q1",
+          "pregunta": "El límite de detección y el límite de cuantificación del método son:",
+          "opciones": [
+            "LD = 0,40 mg/L y LC = 1,20 mg/L.",
+            "LD = 4,0 mg/L y LC = 12 mg/L.",
+            "LD = 1,2 mg/L y LC = 2,4 mg/L.",
+            "LD = 1,2 mg/L y LC = 4,0 mg/L."
+          ],
+          "correcta": 3,
+          "explicacion": "LD = 3 · s₀′ = 3 · 0,40 = 1,2 mg/L, y LC = 10 · s₀′ = 10 · 0,40 = 4,0 mg/L (Guía Eurachem, Referencias Rápidas 2 y 3).",
+          "fuente": "Guía Eurachem, Referencias Rápidas 2 y 3"
+        },
+        {
+          "id": "t38-s01-q2",
+          "pregunta": "Respecto al límite de cuantificación que exige el RD 3/2023, el método:",
+          "opciones": [
+            "Cumple: el LC debe ser igual o inferior al 30 % del valor paramétrico, es decir, 15 mg/L, y es de 4,0.",
+            "Incumple: el LC debe ser inferior al 5 % del valor paramétrico.",
+            "Cumple solo si además el LD es inferior a 1 mg/L.",
+            "No puede evaluarse: el RD no fija ningún requisito para el LC."
+          ],
+          "correcta": 0,
+          "explicacion": "Anexo III, parte D.1: el LC debe ser igual o inferior al 30 % del valor paramétrico. El 30 % de 50 mg/L son 15 mg/L, y 4,0 mg/L está muy por debajo. El RD exige además que el LD y el LC sean inferiores al valor paramétrico, y lo son.",
+          "fuente": "RD 3/2023, anexo III, parte D.1"
+        },
+        {
+          "id": "t38-s01-q3",
+          "pregunta": "El sesgo relativo frente al MRC y la incertidumbre típica relativa de su valor certificado, u(C_ref), son:",
+          "opciones": [
+            "Sesgo = 1,6 % y u(C_ref) = 4,0 %.",
+            "Sesgo = 3,2 % y u(C_ref) = 4,0 %.",
+            "Sesgo = 3,2 % y u(C_ref) = 2,0 %.",
+            "Sesgo = 3,1 % y u(C_ref) = 1,0 %."
+          ],
+          "correcta": 2,
+          "explicacion": "Sesgo = (51,6 − 50,0) / 50,0 · 100 = 3,2 %. El certificado da U = 2,0 mg/L con k = 2, así que u = 2,0 / 2 = 1,0 mg/L, que sobre 50,0 es un 2,0 %. El 4,0 % sale de olvidar dividir por k.",
+          "fuente": "Guía Eurachem 6.5.2, ecuación 2; Nordtest TR 537, 6.1"
+        },
+        {
+          "id": "t38-s01-q4",
+          "pregunta": "La incertidumbre expandida (k = 2) del método, calculada con el modelo uc = √(u(Rw)² + u(sesgo)²), es aproximadamente:",
+          "opciones": [
+            "8,9 %.",
+            "4,5 %.",
+            "12,3 %.",
+            "17,9 %."
+          ],
+          "correcta": 0,
+          "explicacion": "u(sesgo) = √(3,2² + 2,0²) = √14,24 = 3,77 %. uc = √(2,4² + 3,77²) = √20,0 = 4,47 %. U = 2 · 4,47 = 8,9 %. El 4,5 % es la combinada sin expandir; el 12,3 % sale de sumar las componentes en vez de combinarlas en cuadratura.",
+          "fuente": "Nordtest TR 537, sección 3"
+        },
+        {
+          "id": "t38-s01-q5",
+          "pregunta": "Con esa incertidumbre, respecto al criterio de la tabla 15 del RD 3/2023 para el nitrato, el método:",
+          "opciones": [
+            "Incumple, porque la incertidumbre máxima admitida es del 5 %.",
+            "Cumple: la tabla 15 admite para el nitrato un 15 % del valor paramétrico, y se ha estimado a ese nivel.",
+            "Cumple, porque el RD admite hasta un 50 % para todos los parámetros.",
+            "No puede evaluarse sin conocer la reproducibilidad entre laboratorios."
+          ],
+          "correcta": 1,
+          "explicacion": "La tabla 15 fija para el nitrato una incertidumbre máxima del 15 % del valor paramétrico con k = 2, estimada al nivel del valor paramétrico (por eso el MRC y la muestra de control son de 50 mg/L). El 8,9 % cumple. El 50 % uniforme es el criterio del RD 817/2015 para aguas superficiales.",
+          "fuente": "RD 3/2023, anexo III, parte D.3 y tabla 15"
+        }
+      ]
+    },
+    {
+      "id": "t38-s02",
+      "titulo": "Una auditoría de acreditación y un método normalizado de aniones",
+      "enunciado": "Un laboratorio de aguas prepara la **auditoría de acreditación por la UNE-EN ISO/IEC 17025**. Va a incorporar la determinación de **cloruro y sulfato en agua de consumo** por cromatografía iónica siguiendo una **norma UNE-EN ISO**, **dentro de su alcance**. El auditor solicita realizar varias determinaciones en una muestra de agua de consumo.\nEn una de ellas el laboratorio obtiene para el **sulfato** (valor paramétrico: **250 mg/L**) un resultado de **262,37 mg/L**, con una incertidumbre expandida calculada de **19,84 mg/L (k = 2)**.",
+      "preguntas": [
+        {
+          "id": "t38-s02-q1",
+          "pregunta": "Antes de usar el método en rutina, el laboratorio debe:",
+          "opciones": [
+            "Verificar que puede llevarlo a cabo apropiadamente, alcanzando el desempeño requerido, y conservar registros de la verificación.",
+            "Validarlo por completo, incluida la robustez.",
+            "Nada: por ser una norma UNE-EN ISO no necesita ninguna comprobación.",
+            "Pedir al organismo que publicó la norma un certificado de validación para su laboratorio."
+          ],
+          "correcta": 0,
+          "explicacion": "Es un método normalizado usado dentro de su alcance: la ISO/IEC 17025 (7.2.1.5) exige verificar que el laboratorio puede llevarlo a cabo apropiadamente y conservar registros. La validación completa es para métodos propios, no normalizados o usados fuera de alcance.",
+          "fuente": "UNE-EN ISO/IEC 17025:2017, 7.2.1.5; CGA-ENAC-LEC, anexo I"
+        },
+        {
+          "id": "t38-s02-q2",
+          "pregunta": "¿Cuál de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de agua de consumo solicitada en la auditoría?",
+          "opciones": [
+            "Un material de referencia de agua desionizada con una concentración de 5 mg/l de analito.",
+            "Un material de referencia de agua de consumo con una concentración de 5 mg/l de analito.",
+            "Un material de referencia de agua de consumo con una concentración de analito inferior al límite de detección del método.",
+            "Ninguna de las anteriores es correcta."
+          ],
+          "correcta": 1,
+          "explicacion": "Pregunta 1322, segundo ejercicio, #10, transcrita. El material de referencia debe tener la misma matriz que las muestras y una concentración que se pueda medir: «preferiblemente un MRC con la misma matriz y en concentraciones del analito similares a las muestras reales» (Guía Eurachem 5.4.5). El agua desionizada falla en la matriz y el de concentración inferior al LD no se puede cuantificar.",
+          "fuente": "Cuestionario 1322 segundo ejercicio #10; Guía Eurachem 5.4.5"
+        },
+        {
+          "id": "t38-s02-q3",
+          "pregunta": "Al tratarse de un método normalizado usado dentro de su alcance, ¿qué característica NO necesita normalmente estudiar el laboratorio?",
+          "opciones": [
+            "La precisión.",
+            "La veracidad.",
+            "La robustez.",
+            "La incertidumbre de medida."
+          ],
+          "correcta": 2,
+          "explicacion": "Guía Eurachem 6.8.2: cuando se usan métodos publicados por organismos de normalización dentro de su alcance, «la robustez por lo general ha sido estudiada como parte del proceso de normalización». En cambio, el laboratorio sí debe demostrar su repetibilidad y su sesgo, y estimar la incertidumbre de sus resultados.",
+          "fuente": "Guía Eurachem 6.8.2 y sección 7; Tabla 4, nota c"
+        },
+        {
+          "id": "t38-s02-q4",
+          "pregunta": "¿Cómo se interpreta el resultado del sulfato frente al valor paramétrico según el RD 3/2023?",
+          "opciones": [
+            "Cumple, porque al restar la incertidumbre el resultado queda por debajo de 250 mg/L.",
+            "Cumple, porque la tabla 15 admite un 15 % por encima del valor paramétrico.",
+            "La incertidumbre no puede usarse como tolerancia adicional: el resultado supera el valor paramétrico.",
+            "No puede evaluarse, porque la incertidumbre debería estar calculada con k = 3."
+          ],
+          "correcta": 2,
+          "explicacion": "Anexo III, parte D.3: la incertidumbre «no se utilizará como tolerancia adicional a los valores paramétricos». El 15 % de la tabla 15 es la incertidumbre máxima que puede tener el método, no un margen sobre el valor. Y el RD trabaja con k = 2.",
+          "fuente": "RD 3/2023, anexo III, parte D.3 y tabla 15"
+        },
+        {
+          "id": "t38-s02-q5",
+          "pregunta": "¿Cómo debería expresarse el resultado en el informe?",
+          "opciones": [
+            "262,37 mg/L.",
+            "(262,37 ± 19,84) mg/L.",
+            "(262 ± 10) mg/L, k = 2.",
+            "(262 ± 20) mg/L; incertidumbre expandida con k = 2, que da una probabilidad de cobertura de aproximadamente el 95 %."
+          ],
+          "correcta": 3,
+          "explicacion": "El resultado se da con su incertidumbre expandida, diciendo k y la probabilidad de cobertura (QUAM 9.4). U se redondea a una o dos cifras significativas (GUM 7.2.6; QUAM 9.5): 19,84 → 20; y el resultado, a la misma posición decimal: 262. Sin incertidumbre el resultado está incompleto, y con cuatro cifras sobra precisión. El ± 10 sería la incertidumbre típica, no la expandida con k = 2.",
+          "fuente": "QUAM 9.4 y 9.5; GUM 7.2.6"
+        }
+      ]
+    }
+  ]
+}
