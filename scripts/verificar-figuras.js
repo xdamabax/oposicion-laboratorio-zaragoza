@@ -717,6 +717,42 @@ function medir(sabotaje, ROJO) {
     f.setAttribute('x2', num(r, 'x') + num(r, 'width') / 2)
     f.setAttribute('y2', num(r, 'y'))
   }
+  if (sabotaje === 76) {
+    const svg = porClave('instituciones-aragon')
+    // el Justicia rindiendo cuentas ante el Gobierno en vez de ante las Cortes
+    const g = pieza(svg, 'nodo-gobierno')
+    const f = pieza(svg, 'rinde-cuentas')
+    f.setAttribute('x2', num(g, 'x') + 10)
+    f.setAttribute('y2', num(g, 'y') + 10)
+  }
+  if (sabotaje === 77) {
+    const svg = porClave('instituciones-aragon')
+    // el Presidente elegido directamente por el pueblo, sin pasar por las Cortes
+    const p = pieza(svg, 'nodo-presidente')
+    const pueblo = pieza(svg, 'nodo-pueblo')
+    const f = piezas(svg, 'elige').find(
+      (l) => num(l, 'x2') >= num(p, 'x') && num(l, 'x2') <= num(p, 'x') + num(p, 'width') && Math.abs(num(l, 'y2') - num(p, 'y')) < 2,
+    )
+    f.setAttribute('x1', num(pueblo, 'x') + num(pueblo, 'width') - 10)
+    f.setAttribute('y1', num(pueblo, 'y') + num(pueblo, 'height'))
+  }
+  if (sabotaje === 78) {
+    const svg = porClave('clases-competencias')
+    // en las ejecutivas, el desarrollo normativo pintado como de Aragon
+    const ley = pieza(svg, 'leyenda-aragon')
+    const celdas = piezas(svg, 'celda').sort((a, b) => num(a, 'y') - num(b, 'y') || num(a, 'x') - num(b, 'x'))
+    const c = celdas[5]
+    c.setAttribute('fill', ley.getAttribute('fill'))
+    c.setAttribute('fill-opacity', ley.getAttribute('fill-opacity'))
+  }
+  if (sabotaje === 79) {
+    const svg = porClave('clases-competencias')
+    // los articulos de las compartidas y las ejecutivas, cambiados de columna
+    const a = piezas(svg, 'articulo').sort((p, q) => num(p, 'x') - num(q, 'x'))
+    const [t1, t2] = [a[1].textContent, a[2].textContent]
+    a[1].textContent = t2
+    a[2].textContent = t1
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -2583,6 +2619,103 @@ function medir(sabotaje, ROJO) {
     return 'informal → Comité si no hay acuerdo; Comité → Relaciones Laborales, y nadie más'
   })
 
+  /*
+   * Las instituciones de Aragon (Estatuto, arts. 32 a 60). Se lee de que caja
+   * sale y a que caja llega cada flecha, como en el esquema de acreditacion.
+   */
+  control('Instituciones · el Justicia rinde cuentas ante las Cortes, que son quienes lo eligen', () => {
+    const svg = porClave('instituciones-aragon')
+    const rinde = piezas(svg, 'rinde-cuentas').map((f) => extremos(svg, f))
+    if (!rinde.length) throw new Error('no hay ninguna flecha de «rinde cuentas»')
+    for (const [de, a] of rinde) {
+      if (de !== 'justicia' || a !== 'cortes') {
+        throw new Error(`«rinde cuentas» va de «${de}» a «${a}»: el Justicia rinde cuentas de su gestión ante las Cortes (art. 59.3)`)
+      }
+    }
+    const elige = piezas(svg, 'elige').map((f) => extremos(svg, f))
+    if (!elige.some(([de, a]) => de === 'cortes' && a === 'justicia')) {
+      throw new Error('ninguna flecha de «elige» va de las Cortes al Justicia (art. 41.b)')
+    }
+    return 'Justicia → Cortes (rinde cuentas), y Cortes → Justicia (lo eligen)'
+  })
+
+  control('Instituciones · al Presidente lo eligen las Cortes y lo nombra el Rey; a los consejeros, el Presidente', () => {
+    const svg = porClave('instituciones-aragon')
+    const elige = piezas(svg, 'elige').map((f) => extremos(svg, f))
+    const nombra = piezas(svg, 'nombra').map((f) => extremos(svg, f))
+    const alPresidente = elige.filter(([, a]) => a === 'presidente').map(([de]) => de)
+    if (!alPresidente.length) throw new Error('ninguna flecha de «elige» llega al Presidente')
+    const otro = alPresidente.find((de) => de !== 'cortes')
+    if (otro) throw new Error(`al Presidente lo elige «${otro}»: lo eligen las Cortes, de entre sus diputados (art. 46.1)`)
+    if (!elige.some(([de, a]) => de === 'pueblo' && a === 'cortes')) throw new Error('el pueblo no elige a las Cortes')
+    if (!nombra.some(([de, a]) => de === 'rey' && a === 'presidente')) throw new Error('el Rey no nombra al Presidente (art. 46.1)')
+    if (!nombra.some(([de, a]) => de === 'presidente' && a === 'gobierno')) {
+      throw new Error('el Presidente no nombra a los miembros del Gobierno (art. 53.2)')
+    }
+    return 'pueblo → Cortes → Presidente, nombrado por el Rey; Presidente → Gobierno'
+  })
+
+  /*
+   * Las tres clases de competencias (titulo V). La fila y la columna de cada
+   * celda salen de su posicion, y quien ejerce la funcion, de su color
+   * comparado con el de la leyenda.
+   */
+  control('Competencias · exclusivas, todo de Aragón; compartidas, desarrollo y ejecución; ejecutivas, solo la ejecución', () => {
+    const svg = porClave('clases-competencias')
+    const celdas = piezas(svg, 'celda')
+    const ys = [...new Set(celdas.map((c) => num(c, 'y')))].sort((a, b) => a - b)
+    const xs = [...new Set(celdas.map((c) => num(c, 'x')))].sort((a, b) => a - b)
+    if (ys.length !== 3 || xs.length !== 3 || celdas.length !== 9) {
+      throw new Error(`la tabla tiene ${celdas.length} celdas en ${ys.length} filas y ${xs.length} columnas: son 3 × 3`)
+    }
+    const pinta = (el) => `${el.getAttribute('fill')}|${el.getAttribute('fill-opacity')}`
+    const aragon = pinta(pieza(svg, 'leyenda-aragon'))
+    const estado = pinta(pieza(svg, 'leyenda-estado'))
+    const ESPERADO = [
+      [true, false, false],
+      [true, true, false],
+      [true, true, true],
+    ]
+    const FUNCION = ['la ley', 'el desarrollo', 'la ejecución']
+    const CLASE = ['exclusivas', 'compartidas', 'ejecutivas']
+    for (const c of celdas) {
+      const i = ys.indexOf(num(c, 'y'))
+      const j = xs.indexOf(num(c, 'x'))
+      const quien = pinta(c) === aragon ? true : pinta(c) === estado ? false : null
+      if (quien === null) throw new Error(`la celda de ${FUNCION[i]} en las ${CLASE[j]} no tiene el color de ninguna leyenda`)
+      if (quien !== ESPERADO[i][j]) {
+        throw new Error(`en las ${CLASE[j]}, ${FUNCION[i]} se ha pintado como de ${quien ? 'Aragón' : 'el Estado'}`)
+      }
+    }
+    return 'Aragón: 3 funciones en las exclusivas, 2 en las compartidas y 1 en las ejecutivas'
+  })
+
+  control('Competencias · las columnas van en orden: exclusivas (art. 71), compartidas (art. 75) y ejecutivas (art. 77)', () => {
+    const svg = porClave('clases-competencias')
+    const textos = [...svg.querySelectorAll('text')]
+    const x = (el) => {
+      const c = el.getBBox()
+      return c.x + c.width / 2
+    }
+    const cabeceras = ['Exclusivas', 'Compartidas', 'Ejecutivas'].map((n) => {
+      const el = textos.find((t) => t.textContent.trim() === n)
+      if (!el) throw new Error(`falta la cabecera «${n}»`)
+      return x(el)
+    })
+    if (!(cabeceras[0] < cabeceras[1] && cabeceras[1] < cabeceras[2])) throw new Error('las cabeceras no van en orden de izquierda a derecha')
+    const articulos = piezas(svg, 'articulo')
+    const ESPERADO = ['art. 71', 'art. 75', 'art. 77']
+    cabeceras.forEach((cx, j) => {
+      const debajo = articulos.filter((a) => Math.abs(x(a) - cx) < 4)
+      if (debajo.length !== 1) throw new Error(`la columna ${j + 1} tiene ${debajo.length} artículos bajo la cabecera`)
+      const texto = debajo[0].textContent.trim()
+      if (texto !== ESPERADO[j]) {
+        throw new Error(`bajo «${['Exclusivas', 'Compartidas', 'Ejecutivas'][j]}» pone «${texto}» y es el ${ESPERADO[j]}`)
+      }
+    })
+    return 'exclusivas → art. 71, compartidas → art. 75, ejecutivas → art. 77'
+  })
+
   return resultados
 }
 
@@ -2664,6 +2797,10 @@ const SABOTAJES = {
   73: 'el total del eje C del Plan de Igualdad escrito con uno de más',
   74: 'la denuncia por acoso llevada directamente al Comité, sin pasar por la Asesoría',
   75: 'el informal sin acuerdo mandado a Relaciones Laborales, sin pasar por el Comité',
+  76: 'el Justicia de Aragón rindiendo cuentas ante el Gobierno en vez de ante las Cortes',
+  77: 'el Presidente de Aragón elegido directamente por el pueblo',
+  78: 'en las competencias ejecutivas, el desarrollo normativo pintado como de Aragón',
+  79: 'los artículos de las competencias compartidas y ejecutivas, cambiados de columna',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -2749,6 +2886,10 @@ const CONTROL_DE = {
   73: [71],
   74: [72],
   75: [73],
+  76: [74],
+  77: [75],
+  78: [76],
+  79: [77],
 }
 
 async function main() {

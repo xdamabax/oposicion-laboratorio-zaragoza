@@ -55,6 +55,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'ciclo-acreditacion': 'El ciclo de acreditación: 4 años el primero, 5 los siguientes',
   'estructura-plan-igualdad': 'El II Plan de Igualdad municipal: ejes, líneas y objetivos',
   'circuito-protocolo-acoso': 'El circuito de una denuncia en el protocolo frente al acoso',
+  'instituciones-aragon': 'Las instituciones de Aragón y cómo se relacionan',
+  'clases-competencias': 'Las tres clases de competencias: quién legisla y quién ejecuta',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -104,6 +106,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'ciclo-acreditacion': { ancho: 580, alto: 262 },
   'estructura-plan-igualdad': { ancho: 580, alto: 360 },
   'circuito-protocolo-acoso': { ancho: 580, alto: 352 },
+  'instituciones-aragon': { ancho: 580, alto: 398 },
+  'clases-competencias': { ancho: 580, alto: 306 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5020,6 +5024,209 @@ function CircuitoProtocoloAcoso() {
   )
 }
 
+/**
+ * Las cuatro instituciones de la Comunidad Autonoma (Estatuto de Autonomia de
+ * Aragon, art. 32) y como se relacionan: el pueblo elige las Cortes (art. 37);
+ * las Cortes eligen al Presidente (art. 46.1) y al Justicia (art. 41.b); el Rey
+ * nombra al Presidente (art. 46.1); el Presidente nombra a los consejeros
+ * (art. 53.2); el Gobierno responde ante las Cortes (art. 53.3), y el Justicia
+ * les rinde cuentas (art. 59.3).
+ */
+function InstitucionesAragon() {
+  type Caja = { clave: string; x: number; y: number; titulo: string; pie: string; color: string }
+  const AN = 156
+  const AL = 46
+  const C: Record<string, Caja> = {
+    pueblo: { clave: 'pueblo', x: 212, y: 14, titulo: 'Pueblo aragonés', pie: 'sufragio universal', color: AZUL_CLARO },
+    cortes: { clave: 'cortes', x: 212, y: 112, titulo: 'Cortes de Aragón', pie: 'unicamerales', color: ROJO },
+    justicia: { clave: 'justicia', x: 18, y: 232, titulo: 'El Justicia de Aragón', pie: 'derechos, Estatuto y ordenamiento', color: AZUL },
+    presidente: { clave: 'presidente', x: 212, y: 232, titulo: 'Presidente', pie: 'uno de los diputados', color: AZUL },
+    gobierno: { clave: 'gobierno', x: 406, y: 232, titulo: 'Gobierno de Aragón', pie: 'o Diputación General', color: AZUL },
+    rey: { clave: 'rey', x: 212, y: 338, titulo: 'El Rey', pie: 'nombramiento', color: AZUL_CLARO },
+  }
+  const caja = (c: Caja) => (
+    <g key={c.clave}>
+      <rect
+        data-pieza={'nodo-' + c.clave}
+        x={c.x}
+        y={c.y}
+        width={AN}
+        height={AL}
+        rx="5"
+        fill={c.color}
+        fillOpacity={c.color === ROJO ? 0.22 : 0.4}
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <text x={c.x + AN / 2} y={c.y + 19} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {c.titulo}
+      </text>
+      <text x={c.x + AN / 2} y={c.y + 34} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {c.pie}
+      </text>
+    </g>
+  )
+  const flecha = (tipo: string, clave: string, [x1, y1]: number[], [x2, y2]: number[]) => {
+    const ang = Math.atan2(y2 - y1, x2 - x1)
+    const punta = (s: number) => `${(x2 - 7 * Math.cos(ang + s)).toFixed(1)} ${(y2 - 7 * Math.sin(ang + s)).toFixed(1)}`
+    const color = tipo === 'rinde-cuentas' || tipo === 'responde' ? ROJO : 'currentColor'
+    return (
+      <g key={clave} stroke={color} strokeWidth="1.6" fill="none" strokeDasharray={tipo === 'responde' ? '5 3' : undefined}>
+        <line data-pieza={tipo} x1={x1.toFixed(1)} y1={y1.toFixed(1)} x2={x2.toFixed(1)} y2={y2.toFixed(1)} />
+        <path d={`M${punta(0.45)} L${x2.toFixed(1)} ${y2.toFixed(1)} L${punta(-0.45)}`} strokeDasharray="none" />
+      </g>
+    )
+  }
+  const { pueblo, cortes, justicia, presidente, gobierno, rey } = C
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {Object.values(C).map(caja)}
+      {flecha('elige', 'pueblo-cortes', [pueblo.x + AN / 2, pueblo.y + AL], [cortes.x + AN / 2, cortes.y])}
+      {flecha('elige', 'cortes-presidente', [cortes.x + AN / 2, cortes.y + AL], [presidente.x + AN / 2, presidente.y])}
+      {flecha('elige', 'cortes-justicia', [cortes.x + 14, cortes.y + AL], [justicia.x + 132, justicia.y])}
+      {flecha('rinde-cuentas', 'justicia-cortes', [justicia.x + 42, justicia.y], [cortes.x, cortes.y + 13])}
+      {flecha('nombra', 'rey-presidente', [rey.x + AN / 2, rey.y], [presidente.x + AN / 2, presidente.y + AL])}
+      {flecha('nombra', 'presidente-gobierno', [presidente.x + AN, presidente.y + AL / 2], [gobierno.x, gobierno.y + AL / 2])}
+      {flecha('responde', 'gobierno-cortes', [gobierno.x + 70, gobierno.y], [cortes.x + AN, cortes.y + 26])}
+
+      <g fontSize="8" fill="currentColor">
+        <text x={cortes.x + AN / 2 + 6} y="92">
+          elige cada 4 años
+        </text>
+        <text x={cortes.x + AN / 2 + 6} y="204">
+          elige, de entre sus miembros
+        </text>
+        <text x="186" y="212">
+          elige
+        </text>
+        <text x={presidente.x + AN / 2 + 6} y="310">
+          nombra
+        </text>
+        <text x={(presidente.x + AN + gobierno.x) / 2} y={presidente.y + AL / 2 - 6} textAnchor="middle" fontSize="7.5">
+          nombra
+        </text>
+        <text x={gobierno.x + AN / 2} y={gobierno.y + AL + 14} textAnchor="middle" fontSize="7.5">
+          (el Presidente nombra y separa
+        </text>
+        <text x={gobierno.x + AN / 2} y={gobierno.y + AL + 24} textAnchor="middle" fontSize="7.5">
+          a los consejeros)
+        </text>
+      </g>
+      <g fontSize="8" fontWeight="bold" fill={ROJO}>
+        <text x="100" y="186" textAnchor="end">
+          rinde cuentas
+        </text>
+        <text x="452" y="170">
+          responde
+        </text>
+        <text x="452" y="180">
+          políticamente
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Las tres clases de competencias del Estatuto de Aragon (titulo V): que
+ * funciones ejerce la Comunidad Autonoma y cuales se reserva el Estado en cada
+ * una. Exclusivas (art. 71): legislativa, reglamentaria y ejecutiva, todo de
+ * Aragon. Compartidas (art. 75): el Estado dicta las bases en normas con rango
+ * de ley; Aragon, el desarrollo legislativo y la ejecucion. Ejecutivas
+ * (art. 77): la legislacion es del Estado y Aragon ejecuta, con reglamentos
+ * solo para organizar sus propios servicios.
+ */
+function ClasesCompetencias() {
+  const COLUMNAS = [
+    { nombre: 'Exclusivas', articulo: 'art. 71' },
+    { nombre: 'Compartidas', articulo: 'art. 75' },
+    { nombre: 'Ejecutivas', articulo: 'art. 77' },
+  ]
+  const FILAS = ['La ley: régimen general o bases', 'El desarrollo: leyes y reglamentos', 'La ejecución: gestión y actos']
+  // quien ejerce cada funcion (fila) en cada clase (columna)
+  const DE_ARAGON = [
+    [true, false, false],
+    [true, true, false],
+    [true, true, true],
+  ]
+  const X0 = 196
+  const ANCHO = 122
+  const HUECO = 8
+  const Y0 = 64
+  const ALTO = 50
+  const color = (aragon: boolean) => (aragon ? ROJO : AZUL)
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {COLUMNAS.map((c, j) => (
+        <g key={c.nombre}>
+          <text x={X0 + j * (ANCHO + HUECO) + ANCHO / 2} y="30" fontSize="10.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {c.nombre}
+          </text>
+          <text data-pieza="articulo" x={X0 + j * (ANCHO + HUECO) + ANCHO / 2} y="46" fontSize="8.5" textAnchor="middle" fill="currentColor">
+            {c.articulo}
+          </text>
+        </g>
+      ))}
+      {FILAS.map((f, i) => (
+        <g key={f}>
+          <text x="10" y={Y0 + i * (ALTO + HUECO) + ALTO / 2 + 3} fontSize="8.5" fill="currentColor">
+            {f}
+          </text>
+          {COLUMNAS.map((c, j) => {
+            const aragon = DE_ARAGON[i][j]
+            return (
+              <g key={c.nombre}>
+                <rect
+                  data-pieza="celda"
+                  data-fila={i}
+                  data-col={j}
+                  x={X0 + j * (ANCHO + HUECO)}
+                  y={Y0 + i * (ALTO + HUECO)}
+                  width={ANCHO}
+                  height={ALTO}
+                  rx="4"
+                  fill={color(aragon)}
+                  fillOpacity={aragon ? 0.3 : 0.45}
+                  stroke="currentColor"
+                  strokeWidth="1"
+                />
+                <text
+                  x={X0 + j * (ANCHO + HUECO) + ANCHO / 2}
+                  y={Y0 + i * (ALTO + HUECO) + ALTO / 2 + 4}
+                  fontSize="9.5"
+                  fontWeight="bold"
+                  textAnchor="middle"
+                  fill="currentColor"
+                >
+                  {aragon ? 'Aragón' : 'Estado'}
+                </text>
+              </g>
+            )
+          })}
+        </g>
+      ))}
+      <g fontSize="8.5" fill="currentColor">
+        <rect data-pieza="leyenda-aragon" x="10" y="248" width="14" height="10" fill={ROJO} fillOpacity="0.3" stroke="currentColor" strokeWidth="0.8" />
+        <text x="30" y="257">
+          la ejerce la Comunidad Autónoma
+        </text>
+        <rect data-pieza="leyenda-estado" x="210" y="248" width="14" height="10" fill={AZUL} fillOpacity="0.45" stroke="currentColor" strokeWidth="0.8" />
+        <text x="230" y="257">
+          se la reserva el Estado
+        </text>
+        <text x="10" y="280">
+          En las ejecutivas, Aragón puede dictar reglamentos, pero solo para organizar sus propios servicios.
+        </text>
+        <text x="10" y="294">
+          Y las exclusivas, siempre respetando los arts. 140 y 149.1 de la Constitución (art. 71).
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -5112,6 +5319,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <EstructuraPlanIgualdad />
     case 'circuito-protocolo-acoso':
       return <CircuitoProtocoloAcoso />
+    case 'instituciones-aragon':
+      return <InstitucionesAragon />
+    case 'clases-competencias':
+      return <ClasesCompetencias />
   }
 }
 

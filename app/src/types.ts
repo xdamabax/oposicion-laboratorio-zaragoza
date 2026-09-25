@@ -81,6 +81,8 @@ export type TipoEsquema =
   | 'ciclo-acreditacion'
   | 'estructura-plan-igualdad'
   | 'circuito-protocolo-acoso'
+  | 'instituciones-aragon'
+  | 'clases-competencias'
 
 export type TipoMaterial =
   | 'matraz-aforado'
