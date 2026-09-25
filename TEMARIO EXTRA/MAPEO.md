@@ -79,6 +79,10 @@ contenido**. Prometía nuestro tema 40 y está vacío. No aporta nada.
 > (normalización) de preparar disoluciones patrón, que ya están en el **tema 22**. Nada sobre materiales
 > de referencia, trazabilidad, mínimos cuadrados ni gráficos de control, como ya advertía la ficha.
 > **Ningún dato se volcó en el apunte**; el tema 39 se redactó con el VIM, las guías Eurachem y el Nordtest TR 569.
+>
+> **Nota añadida el 25/09/2026, al redactar el tema 40.** Confirmado: `FASE_01-T24_ISO-17025-2017` sigue
+> siendo una sola página con el título. El tema 40 se redactó con el Reglamento (CE) 765/2008, el RD 1715/2010
+> y los documentos de ENAC (PAC-ENAC y NO-11). **Nada de TEMARIO EXTRA se usó.**
 
 Comprobado por búsqueda directa en los 21 archivos: **cero** apariciones de
 cromatografía, espectrofotometría, absorción atómica, ICP como técnica, polarimetría,

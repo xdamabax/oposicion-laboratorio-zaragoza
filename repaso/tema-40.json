@@ -1,0 +1,820 @@
+{
+  "tema": 40,
+  "titulo": "Acreditación de laboratorios. ISO 17025. Procedimiento de acreditación. Auditorías. No conformidades. Entidad Nacional de Acreditación.",
+  "generadoDe": "temas/tema-40.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-25",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "flashcards": [
+    {
+      "id": "t40-f01",
+      "anverso": "¿Qué entidad evalúa **en España** el cumplimiento de los requisitos de la **norma ISO 17025**?",
+      "reverso": "**La Entidad Nacional de Acreditación, ENAC** (1246, primer ejercicio, **#27**).\nLos distractores eran *«la Asociación Española de Normalización AENOR»* y *«lo pueden hacer ambas entidades»*. Falsos los dos: ENAC es el **único organismo nacional de acreditación**, con **potestad pública** (RD 1715/2010).",
+      "fuente": "Cuestionario 1246 primer ejercicio #27; RD 1715/2010",
+      "etiquetas": ["examen", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f02",
+      "anverso": "¿Para qué sirve la **ISO 17025**, y qué normas describen los distractores de la pregunta de 1322?",
+      "reverso": "Para demostrar que el laboratorio es **técnicamente competente** y que **sus resultados son veraces** (1322, segundo ejercicio, **#6**).\nLos distractores describían otras normas de sistemas de gestión: la de **seguridad y salud en el trabajo** (ISO 45001) y la de **medio ambiente** (ISO 14001). La 17025 va de **competencia técnica**.",
+      "fuente": "Cuestionario 1322 segundo ejercicio #6; UNE-EN ISO/IEC 17025:2017, cap. 1",
+      "etiquetas": ["examen", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f03",
+      "anverso": "¿Quién **normaliza**, quién **certifica** y quién **acredita** en España?",
+      "reverso": "- **UNE** (Asociación Española de Normalización): **escribe las normas**.\n- **AENOR Internacional** y otras entidades de certificación: **certifican** empresas.\n- **ENAC**: **acredita** a quienes evalúan.\nUNE y AENOR **se separaron el 1 de enero de 2017**: el nombre «Asociación Española de Normalización AENOR» de la pregunta 1246 #27 está desfasado.",
+      "fuente": "UNE, Nuestra historia; RD 1715/2010",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f04",
+      "anverso": "¿Cómo define el **Reglamento (CE) 765/2008** la **acreditación**?",
+      "reverso": "*«Declaración por un **organismo nacional de acreditación** de que un **organismo de evaluación de la conformidad** cumple los requisitos fijados con arreglo a normas armonizadas y, cuando proceda, otros requisitos adicionales […] **para ejercer actividades específicas** de evaluación de la conformidad»* (art. 2.10).",
+      "fuente": "Reglamento (CE) 765/2008, art. 2.10",
+      "etiquetas": ["normativa", "concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f05",
+      "anverso": "¿Qué es un **organismo de evaluación de la conformidad (OEC)**, y lo es un laboratorio de aguas?",
+      "reverso": "*«Organismo que desempeña actividades de evaluación de la conformidad, que incluyen **calibración, ensayo, certificación e inspección**»* (Reglamento 765/2008, art. 2.13).\n**Sí**: un laboratorio de aguas **ensaya**, así que es un OEC, y es a él a quien se acredita.",
+      "fuente": "Reglamento (CE) 765/2008, art. 2.12 y 2.13",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f06",
+      "anverso": "¿Cómo define la acreditación la **Ley 21/1992, de Industria**?",
+      "reverso": "*«El **reconocimiento formal de la competencia técnica** de una entidad para certificar, inspeccionar o auditar la calidad, o un laboratorio de ensayo o de calibración industrial»* (art. 8.11, citado en el preámbulo del RD 1715/2010).",
+      "fuente": "Ley 21/1992, art. 8.11, en el RD 1715/2010",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f07",
+      "anverso": "¿Qué norma **designa a ENAC** como organismo nacional de acreditación, y con qué carácter?",
+      "reverso": "El **Real Decreto 1715/2010**, de 17 de diciembre: *«Se designa a la Entidad Nacional de Acreditación (ENAC) como **único organismo nacional de acreditación, dotado de potestad pública para otorgar acreditaciones**»*, en cumplimiento del artículo 4.1 del Reglamento 765/2008.",
+      "fuente": "RD 1715/2010, artículo único",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f08",
+      "anverso": "Mirando el esquema: ¿puede ENAC certificar a una empresa según la ISO 9001, y puede una entidad de certificación acreditar a un laboratorio?",
+      "reverso": "**No en los dos casos.** Son dos niveles distintos:\n- **Acreditar** es declarar la **competencia técnica** de un organismo que evalúa, y en España es una **potestad pública** exclusiva de ENAC.\n- **Certificar** es declarar que una empresa, un producto o una persona **cumplen una norma**, y lo hacen las entidades de certificación, que a su vez están **acreditadas por ENAC**.\nUna ISO 9001 **no garantiza** que los análisis de un laboratorio estén bien.",
+      "fuente": "Reglamento (CE) 765/2008, art. 2; RD 1715/2010",
+      "etiquetas": ["figura", "concepto"],
+      "figura": { "tipo": "esquema", "valor": "acreditacion-certificacion" },
+      "nucleo": true
+    },
+    {
+      "id": "t40-f09",
+      "anverso": "¿Qué **principios** impone el Reglamento 765/2008 al organismo nacional de acreditación?",
+      "reverso": "- **Uno solo** por Estado (art. 4.1).\n- **Sin fines lucrativos** (4.7).\n- **No** ofrece lo que ofrecen los OEC, **no hace consultoría** ni tiene acciones en ellos (4.8).\n- **No compite** con los OEC ni con otros organismos nacionales (art. 6).\n- **Independiente, imparcial y confidencial** (art. 8).\n- Sometido a **evaluación por pares** (art. 10).",
+      "fuente": "Reglamento (CE) 765/2008, arts. 4, 6, 8 y 10",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f10",
+      "anverso": "En una acreditación, ¿quién **evalúa** y quién **decide**? ¿Pueden ser las mismas personas?",
+      "reverso": "**No pueden.** Evalúa el **equipo auditor** y decide la **Comisión de Acreditación**.\nEl Reglamento 765/2008 lo exige: *«cada decisión relativa a la declaración de la competencia sea adoptada por **personas competentes distintas de las que realizaron la evaluación**»* (art. 8.3).",
+      "fuente": "Reglamento (CE) 765/2008, art. 8.3; PAC-ENAC, 7.5",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f11",
+      "anverso": "¿Qué es la **evaluación por pares**, y qué consecuencia tiene?",
+      "reverso": "La evaluación de un organismo nacional de acreditación **por otros organismos nacionales** (Reglamento 765/2008, art. 2.16), organizada por la **EA** (*European co-operation for Accreditation*, art. 14).\nConsecuencia: **presunción de conformidad**. Las autoridades **aceptan las acreditaciones de los organismos de otros Estados** que la hayan superado (art. 11; RD 1715/2010, disposición adicional única).",
+      "fuente": "Reglamento (CE) 765/2008, arts. 2.16, 10, 11 y 14",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f12",
+      "anverso": "¿En qué **organizaciones internacionales** participa ENAC, y qué alcance tiene su reconocimiento?",
+      "reverso": "- **EA**, la cooperación **europea** (ENAC la presidió de **2018 a 2020**).\n- **ILAC** (laboratorios) e **IAF** (certificación), cuyos acuerdos opera hoy **Global Accreditation Cooperation Incorporated**.\nENAC firma todos los acuerdos de **reconocimiento mutuo**: sus acreditados son reconocidos en **más de 120 países**.",
+      "fuente": "ENAC, «Sistema internacional de la acreditación» (consultado el 25/09/2026)",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f13",
+      "anverso": "¿**Fija ENAC** los requisitos de acreditación? ¿Y quién tiene que **demostrar** que se cumplen?",
+      "reverso": "**No los fija**: *«ENAC no establece los requisitos de acreditación, sino que se limita a evaluar su cumplimiento»* (PAC-ENAC, 2.2). Los fija la norma (la 17025).\nY la **carga de la prueba es del laboratorio**: no poder demostrar un requisito *«es, en sí misma, un incumplimiento con dicho requisito»* (2.4). **Lo que no está registrado, no se ha hecho.**",
+      "fuente": "PAC-ENAC Rev. 7, 2.2 y 2.4",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f14",
+      "anverso": "¿**Valida ENAC los resultados** de un laboratorio acreditado?",
+      "reverso": "**No.** La acreditación *«no implica en ningún caso la aceptación o validación de ENAC de los resultados […] **ni exime al OEC acreditado de su responsabilidad** en caso de resultados erróneos»* (PAC-ENAC, 2.5).\nY ENAC **no arbitra** disputas entre el laboratorio y sus clientes (2.8).",
+      "fuente": "PAC-ENAC Rev. 7, 2.5 y 2.8",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f15",
+      "anverso": "¿Se acredita **un laboratorio entero**?",
+      "reverso": "**No: se acredita un ALCANCE.** Ensayos concretos, con métodos concretos, en matrices, rangos e instalaciones concretos, recogidos en el **anexo técnico** del certificado.\nUn laboratorio acreditado para nitratos en agua **no** lo está para nitritos si no los incluyó. Y tiene que **declarar solo lo acreditado**.",
+      "fuente": "PAC-ENAC Rev. 7, 4, 7.6 y 11.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f16",
+      "anverso": "¿Qué especifica la **UNE-EN ISO/IEC 17025:2017**, según su objeto?",
+      "reverso": "*«Los requisitos generales para la **competencia, la imparcialidad y la operación coherente** de los laboratorios»*, y es aplicable a todas las organizaciones que desarrollan actividades de laboratorio, ***«independientemente de la cantidad de personal»***.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, capítulo 1",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f17",
+      "anverso": "¿Por qué la 17025 es «**ISO/IEC**», de cuándo es la edición vigente y qué anuló?",
+      "reverso": "La elaboran **juntas ISO y la IEC**, en el comité de evaluación de la conformidad de ISO (**CASCO**).\nLa vigente es la **UNE-EN ISO/IEC 17025:2017** (diciembre de 2017; versión corregida en mayo de 2018), que **anuló a la de 2005**, con transición hasta antes del 1 de enero de 2021.\nSus referencias normativas: el **VIM** y la **ISO/IEC 17000**.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, extracto; buscador de UNE",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f18",
+      "anverso": "¿Cuáles son los **cinco capítulos de requisitos** de la ISO/IEC 17025:2017?",
+      "reverso": "- **4. Requisitos generales**: imparcialidad y confidencialidad.\n- **5. Estructura**.\n- **6. Recursos**: personal, instalaciones, equipamiento, **trazabilidad**, proveedores.\n- **7. Proceso**: contratos, **métodos**, muestreo, **incertidumbre**, **aseguramiento de la validez**, **informes**, **quejas**, **trabajo no conforme**, datos.\n- **8. Sistema de gestión**: opciones A y B, **acciones correctivas**, **auditorías internas**, revisión por la dirección.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice oficial",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f19",
+      "anverso": "¿Qué dos requisitos abren la norma, en el **capítulo 4**?",
+      "reverso": "**4.1 Imparcialidad** y **4.2 Confidencialidad**.\nLa edición de 2017 refuerza las dos: la imparcialidad se salvaguarda con **gestión de riesgos**, y en confidencialidad **toda la información es propiedad del cliente**.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice; revista UNE",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f20",
+      "anverso": "¿Qué son la **opción A** y la **opción B** del sistema de gestión de la 17025?",
+      "reverso": "- **Opción A**: cumplir, como mínimo, las cláusulas **8.2 a 8.9** de la propia norma.\n- **Opción B**: tener un sistema de gestión conforme a la **ISO 9001**.\nEn **las dos**, el sistema tiene que demostrar el cumplimiento de los **capítulos 4 a 7**: **la ISO 9001 no exime de nada técnico**.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 8.1; revista UNE",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f21",
+      "anverso": "¿Qué **novedades** trajo la edición de **2017** frente a la de 2005?",
+      "reverso": "- **Pensamiento basado en riesgos** (4.1, 7.8.6, 7.10 y **8.5**).\n- Estructura en capítulos 4 a 8, **sin** los bloques de requisitos de gestión y técnicos.\n- **Laboratorio** incluye el **muestreo**.\n- Términos nuevos: **imparcialidad, verificación, validación y regla de decisión**.\n- Desaparece la mención expresa al **director técnico** y al **de calidad**.\n- **Opciones A y B** de sistema de gestión.",
+      "fuente": "Revista UNE, «Aún más fiabilidad para los laboratorios acreditados»",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f22",
+      "anverso": "¿Qué norma usa ENAC para acreditar a cada tipo de organismo?",
+      "reverso": "| Organismo | Norma |\n| --- | --- |\n| Laboratorios de ensayo y calibración | **ISO/IEC 17025** |\n| Laboratorios clínicos | **ISO 15189** |\n| Inspección | ISO/IEC 17020 |\n| Certificación de sistemas | ISO/IEC 17021-1 |\n| Ensayos de aptitud | ISO/IEC 17043 |\n| Materiales de referencia | ISO 17034 |\nY **ENAC** cumple la **ISO/IEC 17011**.",
+      "fuente": "PAC-ENAC Rev. 7, apartados 1 y 5",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f23",
+      "anverso": "¿En qué cláusulas de la 17025 están la **validación**, la **incertidumbre**, la **trazabilidad** y el **aseguramiento de la validez**?",
+      "reverso": "- **7.2**: selección, verificación y **validación** de métodos (tema 38).\n- **7.6**: **incertidumbre** (tema 38).\n- **6.5**: **trazabilidad** metrológica (tema 39).\n- **7.7**: **aseguramiento de la validez** de los resultados: control de calidad y ensayos de aptitud (tema 39).",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice oficial",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f24",
+      "anverso": "¿Cuáles son las **fases** del procedimiento de acreditación de ENAC?",
+      "reverso": "1. **Solicitud** (con el alcance).\n2. **Revisión** y **presupuesto**.\n3. Designación del **equipo auditor**.\n4. **Estudio de la documentación**.\n5. **Auditoría** y **visitas de acompañamiento**.\n6. **Informe** con las no conformidades.\n7. **Plan de acciones** del laboratorio.\n8. **Decisión** de la Comisión de Acreditación.\n9. **Certificado** y **anexo técnico**.",
+      "fuente": "PAC-ENAC Rev. 7, apartados 6 y 7",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f25",
+      "anverso": "¿Qué supone **solicitar** la acreditación, y qué se paga?",
+      "reverso": "La solicitud la firma un **representante autorizado** y **es una declaración de competencia** del solicitante para todo el alcance que pide (PAC-ENAC, 6.1).\nSe paga la **apertura de expediente**; al aceptar el presupuesto, un **anticipo del 50 %**.",
+      "fuente": "PAC-ENAC Rev. 7, 6.1 y 7.2",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f26",
+      "anverso": "¿Cómo está formado el **equipo auditor** de ENAC, y puede el laboratorio rechazar a un auditor?",
+      "reverso": "Por un **auditor jefe** y los **expertos** necesarios según el alcance.\nEl solicitante puede **recusar por escrito** a un auditor si hay **motivos fundados** que comprometan su **independencia e imparcialidad**; ENAC decide.",
+      "fuente": "PAC-ENAC Rev. 7, 7.3",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f27",
+      "anverso": "¿En qué **tres fases** se desarrolla una **auditoría de ENAC**?",
+      "reverso": "1. **Reunión inicial**: presentaciones, confirmación del plan y del alcance.\n2. **Desarrollo**: **registros**, **entrevistas** al personal y **observación** del trabajo **en condiciones normales**.\n3. **Reunión final**: resumen de los resultados.\nAntes, el **auditor jefe** envía un **plan de auditoría**.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.2.1",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f28",
+      "anverso": "¿Qué son las **visitas de acompañamiento**, y en qué plazo se hacen?",
+      "reverso": "Ver al organismo **ejecutando la actividad en condiciones reales** (por ejemplo, una toma de muestras en casa del cliente).\nEn una acreditación inicial o una ampliación, **en un plazo no superior a 3 meses** desde la auditoría. El laboratorio tiene que garantizar que sus **clientes aceptan** la presencia de ENAC.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.2.2",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t40-f29",
+      "anverso": "¿En qué plazo emite el equipo auditor su **informe**, y cuánto tiempo **vale**?",
+      "reverso": "En **15 días naturales** como máximo desde la auditoría, y tiene **validez de 6 meses**: pasado ese tiempo puede hacer falta una auditoría nueva.\nEl informe **no prejuzga** la decisión de ENAC.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.4",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t40-f30",
+      "anverso": "¿Qué puede **decidir** la Comisión de Acreditación, y qué contiene el **certificado**?",
+      "reverso": "**Conceder** (o mantener), exigir una **evaluación extraordinaria** o **denegar** (PAC-ENAC, 7.5).\nEl **certificado de acreditación** lleva el **titular**, el **número de acreditación**, la **norma**, la **fecha** y la referencia a un **anexo técnico** con el **alcance**. Se publica en la web de ENAC.",
+      "fuente": "PAC-ENAC Rev. 7, 7.5 y 7.6",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f31",
+      "anverso": "Mirando el ciclo: ¿cuánto dura cada ciclo de acreditación y cada cuánto se evalúa al laboratorio?",
+      "reverso": "- **Primer ciclo: 4 años**; los siguientes, **5 años**.\n- **Seguimientos**: el primero, como mucho a los **12 meses** de la acreditación; entre uno y otro, como mucho **18 meses** en el primer ciclo y **24 meses** en los siguientes.\n- Una **reevaluación** de la norma completa antes de que termine cada ciclo.",
+      "fuente": "PAC-ENAC Rev. 7, 8.1 a 8.3 y nota 12",
+      "etiquetas": ["figura", "valores"],
+      "figura": { "tipo": "esquema", "valor": "ciclo-acreditacion" },
+      "nucleo": true
+    },
+    {
+      "id": "t40-f32",
+      "anverso": "¿**Caduca** una acreditación? ¿Cuándo **se extingue**?",
+      "reverso": "**No caduca por sí sola**: está vigente **mientras se sigan cumpliendo** las condiciones (PAC-ENAC, 7.8).\nSe **extingue**: si el titular se **disuelve**, si el alcance se queda **vacío**, si se pierden las **habilitaciones** legales, o si **no se envía firmada la solicitud de renovación 4 meses antes** de la reevaluación.",
+      "fuente": "PAC-ENAC Rev. 7, 7.8 y 8.3",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f33",
+      "anverso": "¿Qué es una **visita de control** de ENAC?",
+      "reverso": "Una evaluación **extraordinaria**, fuera del ciclo, cuando hay **cambios importantes**, **mal uso de la marca** o una **reclamación** que ponga en duda el cumplimiento.\nPuede anunciarse solo con un **periodo** de tiempo, **sin fecha concreta**.",
+      "fuente": "PAC-ENAC Rev. 7, 8.4",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f34",
+      "anverso": "¿Puede un laboratorio **usar la marca ENAC** mientras su acreditación está en trámite?",
+      "reverso": "**No. Está explícitamente prohibido**, igual que cualquier expresión que dé a entender que está acreditado («organización ENAC», «con número de expediente ENAC…»). Hacerlo **interrumpe el proceso** (PAC-ENAC, 7.1.g).\nUna vez acreditado, la marca se usa según el documento **CEA-ENAC-01**.",
+      "fuente": "PAC-ENAC Rev. 7, 7.1.g y 7.7",
+      "etiquetas": ["normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f35",
+      "anverso": "¿Durante cuánto tiempo debe un acreditado **conservar sus registros**, y qué otras obligaciones tiene?",
+      "reverso": "**Al menos 5 años**, salvo que la norma o la ley pidan más (PAC-ENAC, 11.2).\nAdemás: **declarar solo lo acreditado**, **comunicar los cambios**, dejar a ENAC **acceder** a instalaciones y registros —incluso en casa de sus clientes— y **adaptarse** a las nuevas revisiones de los requisitos.",
+      "fuente": "PAC-ENAC Rev. 7, 11.2",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t40-f36",
+      "anverso": "¿Qué diferencia hay entre **apercibimiento**, **suspensión** y **retirada** de la acreditación?",
+      "reverso": "- **Apercibimiento**: incumplimientos **esporádicos o menores**.\n- **Suspensión**: incumplimiento **grave o reiterado**, **falsear registros**, impago… Entra en vigor a los **7 días**: **sin marca**, **sin informes acreditados** y avisando a los clientes.\n- **Retirada**: lo **muy grave**, o no resolver una suspensión. Entra en vigor a los **15 días**; se **anulan y devuelven** el certificado y el anexo técnico.",
+      "fuente": "PAC-ENAC Rev. 7, apartado 12",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f37",
+      "anverso": "¿Ante quién y en qué plazo se **recurre** una decisión de ENAC, y suspende el recurso la decisión?",
+      "reverso": "Ante el **Comité de Recursos**, en **30 días naturales** desde que entra en vigor la decisión.\nEl recurso **no tiene efecto suspensivo**: mientras se resuelve, la decisión **se aplica**.",
+      "fuente": "PAC-ENAC Rev. 7, apartado 13",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f38",
+      "anverso": "¿En qué se diferencian una **auditoría interna** y una **de acreditación**, y qué son las de primera, segunda y tercera parte?",
+      "reverso": "- **Interna**: la hace **el propio laboratorio** (ISO/IEC 17025, **8.8**) para comprobar que su sistema cumple y es eficaz. Es de **primera parte**.\n- **De acreditación**: la hace **ENAC**, un organismo **independiente**: de **tercera parte**.\n- **De segunda parte**: la de un **cliente** a su proveedor.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice (8.8); PAC-ENAC; doctrina de la ISO 19011",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f39",
+      "anverso": "¿Qué norma da las **directrices para auditar** sistemas de gestión, y qué ha pasado con ella en 2026?",
+      "reverso": "La **UNE-EN ISO 19011**. La edición de **2018** figura **anulada el 16 de junio de 2026** en el buscador de UNE, **sustituida por la UNE-EN ISO 19011:2026**.",
+      "fuente": "Buscador de UNE, N0060855 (consultado el 25/09/2026)",
+      "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t40-f40",
+      "anverso": "¿Qué es una **no conformidad** para ENAC, y qué es un **comentario**?",
+      "reverso": "**No conformidad**: *«incumplimiento de los requisitos de acreditación puesto de manifiesto por un conjunto de hechos identificados durante la auditoría»* (NO-11, 2).\n**Comentario**: lo que todavía **no es un incumplimiento** pero podría serlo, o lo que tiene un claro **potencial de mejora**. Se anota en el informe, **sin** exigir acciones.",
+      "fuente": "ENAC NO-11 Rev. 11, 2 y 3.2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f41",
+      "anverso": "¿Qué distingue una **no conformidad mayor** de una **menor**?",
+      "reverso": "- **Mayor (NCM)**: **cuestiona** la competencia del personal, la validez de los métodos o **la validez de los resultados**; o es **sistemática**, **intencionada** o supone **falsear registros**.\n- **Menor (NCm)**: **aislada o puntual**, **sin afectar** a los resultados ni a la eficacia del sistema.",
+      "fuente": "ENAC NO-11 Rev. 11, 4",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f42",
+      "anverso": "¿Qué diferencia hay entre una acción **correctiva**, una **reparadora** y una **de contención**?",
+      "reverso": "- **Correctiva**: *«encaminada a **eliminar las causas** […] con el fin de prevenir su recurrencia»*.\n- **Reparadora**: *«encaminada a **corregir de manera inmediata el efecto** provocado por una No Conformidad **en el pasado**»* (informes ya emitidos).\n- **De contención**: frena el problema **mientras** se implanta la correctiva.",
+      "fuente": "ENAC NO-11 Rev. 11, 2",
+      "etiquetas": ["concepto"],
+      "nucleo": true
+    },
+    {
+      "id": "t40-f43",
+      "anverso": "¿Qué dos **análisis** exige ENAC antes de proponer acciones, y por qué no vale «**error humano**»?",
+      "reverso": "- **Análisis de causas**: el **porqué**. *«En ningún caso es el propio requisito que se incumple.»*\n- **Análisis de extensión**: si el problema se repite en **otros equipos, personas, áreas o sedes**, y desde cuándo.\nHay que **huir de causas como «error puntual» o «error humano»** salvo que haya evidencias que lo justifiquen.",
+      "fuente": "ENAC NO-11 Rev. 11, anexo I",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f44",
+      "anverso": "¿En qué **plazo** se presenta el **plan de acciones**, y qué incluye para las NC mayores y las menores?",
+      "reverso": "- **4 meses** en una acreditación **inicial** o una **ampliación**.\n- **30 días naturales** en el **mantenimiento** (seguimiento, reevaluación).\n**Mayores**: causas, extensión, acciones **y evidencias de su implantación**. **Menores**: causas, extensión y acciones **con su plazo**, **sin necesidad de evidencias**.\nLas **alegaciones** discuten la no conformidad, **no los hechos**.",
+      "fuente": "ENAC NO-11 Rev. 11, 5 y tabla I",
+      "etiquetas": ["valores"]
+    },
+    {
+      "id": "t40-f45",
+      "anverso": "¿Es lo mismo una **no conformidad** de ENAC que un **trabajo no conforme** de la 17025?",
+      "reverso": "**No.** La **no conformidad** la detecta **ENAC** en su auditoría (NO-11).\nEl **trabajo no conforme** (17025, **7.10**) es un **ensayo** que no se ajusta a los procedimientos o a lo acordado con el cliente, y lo detecta **el propio laboratorio**. Relacionadas: las **quejas** de los clientes (**7.9**) y las **acciones correctivas** (**8.7**).",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice; ENAC NO-11",
+      "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t40-f46",
+      "anverso": "¿Qué **plazos de acreditación** fija el RD 3/2023 a los laboratorios de agua de consumo?",
+      "reverso": "Métodos acreditados por la **UNE-EN ISO/IEC 17025** (disposición adicional octava):\n- **Más de 5000 muestras al año**: antes del **2 de enero de 2024**.\n- **Entre 300 y 5000**: antes del **2 de enero de 2028**.\n- **La toma de muestras**: antes del **2 de enero de 2030**.\nMientras no estén acreditados, **validados** conforme al anexo III, parte E (tema 38).",
+      "fuente": "RD 3/2023, disposición adicional octava y anexo III, parte B",
+      "etiquetas": ["normativa", "valores"]
+    }
+  ],
+  "test": [
+    {
+      "id": "t40-q01",
+      "pregunta": "¿Qué entidad evalúa en España el cumplimiento de los requisitos establecidos en la Norma ISO 17025?",
+      "opciones": [
+        "La Asociación Española de Normalización AENOR.",
+        "La Entidad Nacional de Acreditación ENAC.",
+        "Lo pueden hacer ambas entidades."
+      ],
+      "correcta": 1,
+      "explicacion": "Pregunta 1246 #27, transcrita. El RD 1715/2010 designa a ENAC como único organismo nacional de acreditación, con potestad pública. Además, desde 2017 la Asociación Española de Normalización es UNE, y AENOR es una empresa de certificación; ninguna de las dos acredita.",
+      "fuente": "Cuestionario 1246 primer ejercicio #27; RD 1715/2010",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q02",
+      "pregunta": "Según el Reglamento (CE) 765/2008, la acreditación es:",
+      "opciones": [
+        "La declaración por un organismo nacional de acreditación de que un organismo de evaluación de la conformidad cumple los requisitos para ejercer actividades específicas de evaluación de la conformidad.",
+        "La certificación de que el sistema de gestión de una empresa cumple la norma ISO 9001.",
+        "La aprobación de una norma técnica por el organismo nacional de normalización."
+      ],
+      "correcta": 0,
+      "explicacion": "Artículo 2.10 del Reglamento. La segunda opción es una certificación, y la tercera, la normalización, que en España corresponde a UNE.",
+      "fuente": "Reglamento (CE) 765/2008, art. 2.10",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q03",
+      "pregunta": "La norma que designa a ENAC como único organismo nacional de acreditación en España es:",
+      "opciones": ["La Ley 21/1992, de Industria.", "El Real Decreto 3/2023.", "El Real Decreto 1715/2010."],
+      "correcta": 2,
+      "explicacion": "El RD 1715/2010 designa a ENAC «como único organismo nacional de acreditación, dotado de potestad pública para otorgar acreditaciones», en aplicación del artículo 4.1 del Reglamento 765/2008. La Ley de Industria define la acreditación; el RD 3/2023 la exige a los laboratorios de agua de consumo.",
+      "fuente": "RD 1715/2010, artículo único"
+    },
+    {
+      "id": "t40-q04",
+      "pregunta": "El Reglamento (CE) 765/2008 obliga a cada Estado miembro a:",
+      "opciones": [
+        "Designar un único organismo nacional de acreditación.",
+        "Designar al menos dos organismos de acreditación que compitan entre sí.",
+        "Dejar que cada comunidad autónoma tenga su propio organismo de acreditación."
+      ],
+      "correcta": 0,
+      "explicacion": "Artículo 4.1: «Cada Estado miembro designará a un único organismo nacional de acreditación». Y el artículo 6 prohíbe que los organismos nacionales compitan entre sí.",
+      "fuente": "Reglamento (CE) 765/2008, arts. 4.1 y 6"
+    },
+    {
+      "id": "t40-q05",
+      "pregunta": "Según el Reglamento (CE) 765/2008, el organismo nacional de acreditación:",
+      "opciones": [
+        "Puede prestar servicios de consultoría a los laboratorios que acredita.",
+        "No tendrá fines lucrativos.",
+        "Puede tener participaciones en entidades de certificación."
+      ],
+      "correcta": 1,
+      "explicacion": "Artículo 4.7: «no tendrá fines lucrativos». Y el 4.8 le prohíbe prestar servicios de consultoría y poseer acciones o tener intereses en los organismos de evaluación de la conformidad.",
+      "fuente": "Reglamento (CE) 765/2008, art. 4.7 y 4.8"
+    },
+    {
+      "id": "t40-q06",
+      "pregunta": "En el proceso de acreditación de ENAC, la decisión de conceder la acreditación la toma:",
+      "opciones": [
+        "El auditor jefe, al terminar la reunión final.",
+        "La Comisión de Acreditación.",
+        "El equipo auditor, por mayoría."
+      ],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 7.5: decide la Comisión de Acreditación. El Reglamento 765/2008 (art. 8.3) exige que la decisión la tomen personas distintas de las que realizaron la evaluación.",
+      "fuente": "PAC-ENAC Rev. 7, 7.5; Reglamento (CE) 765/2008, art. 8.3",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q07",
+      "pregunta": "La norma UNE-EN ISO/IEC 17025 especifica los requisitos generales para:",
+      "opciones": [
+        "La certificación de sistemas de gestión de la calidad de cualquier empresa.",
+        "La seguridad y salud de los trabajadores de los laboratorios.",
+        "La competencia, la imparcialidad y la operación coherente de los laboratorios."
+      ],
+      "correcta": 2,
+      "explicacion": "Objeto de la norma (capítulo 1), literal. Es la respuesta de la pregunta 1322 C2 #6: demostrar que los laboratorios son técnicamente competentes y sus resultados son veraces.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, capítulo 1",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q08",
+      "pregunta": "En la ISO/IEC 17025:2017, la «opción B» del sistema de gestión consiste en:",
+      "opciones": [
+        "Establecer y mantener un sistema de gestión conforme a la ISO 9001.",
+        "Cumplir solo las cláusulas del capítulo 8 y no las técnicas.",
+        "Prescindir de las auditorías internas."
+      ],
+      "correcta": 0,
+      "explicacion": "Opción A: cumplir las cláusulas 8.2 a 8.9 de la propia norma. Opción B: un sistema conforme a la ISO 9001. En las dos, el sistema tiene que demostrar el cumplimiento de los capítulos 4 a 7.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q09",
+      "pregunta": "El capítulo 4 de la ISO/IEC 17025:2017, «Requisitos generales», trata de:",
+      "opciones": [
+        "El personal, las instalaciones y el equipamiento.",
+        "La imparcialidad y la confidencialidad.",
+        "Las auditorías internas y la revisión por la dirección."
+      ],
+      "correcta": 1,
+      "explicacion": "4.1 Imparcialidad y 4.2 Confidencialidad. El personal, las instalaciones y los equipos son el capítulo 6 (recursos), y las auditorías internas y la revisión por la dirección, el 8 (sistema de gestión).",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice oficial"
+    },
+    {
+      "id": "t40-q10",
+      "pregunta": "¿Con qué norma acredita ENAC a los laboratorios clínicos?",
+      "opciones": ["UNE-EN ISO/IEC 17020.", "UNE-EN ISO/IEC 17043.", "UNE-EN ISO 15189."],
+      "correcta": 2,
+      "explicacion": "PAC-ENAC, apartado 5: los laboratorios clínicos, con la UNE-EN ISO 15189. La 17020 es la de inspección, y la 17043, la de los proveedores de ensayos de aptitud.",
+      "fuente": "PAC-ENAC Rev. 7, apartado 5"
+    },
+    {
+      "id": "t40-q11",
+      "pregunta": "La norma que establece los requisitos que debe cumplir el propio organismo de acreditación es:",
+      "opciones": ["La UNE-EN ISO/IEC 17011.", "La UNE-EN ISO/IEC 17025.", "La UNE-EN ISO 9001."],
+      "correcta": 0,
+      "explicacion": "ENAC funciona conforme a la UNE-EN ISO/IEC 17011:2017, «Requisitos para los organismos de acreditación que realizan la acreditación de organismos de evaluación de la conformidad».",
+      "fuente": "PAC-ENAC Rev. 7, apartados 1 y 3"
+    },
+    {
+      "id": "t40-q12",
+      "pregunta": "La acreditación de un laboratorio de ensayo se concede para:",
+      "opciones": [
+        "Todas las actividades que realice el laboratorio, sin distinción.",
+        "Un alcance definido de ensayos, métodos e instalaciones, que figura en el anexo técnico.",
+        "Todos los ensayos recogidos en normas UNE."
+      ],
+      "correcta": 1,
+      "explicacion": "La acreditación se refiere a un alcance que describe «de forma clara, precisa y sin ambigüedades las actividades acreditadas», recogido en el anexo técnico del certificado (PAC-ENAC, 4 y 7.6).",
+      "fuente": "PAC-ENAC Rev. 7, 4 y 7.6",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q13",
+      "pregunta": "Según el procedimiento de ENAC, el primer ciclo de acreditación dura:",
+      "opciones": ["Tres años.", "Cuatro años.", "Cinco años."],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 8.1: «un primer ciclo de cuatro años a contar desde la fecha de acreditación, y ciclos posteriores de cinco años».",
+      "fuente": "PAC-ENAC Rev. 7, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q14",
+      "pregunta": "El primer seguimiento de un laboratorio recién acreditado se realiza en un plazo no superior a:",
+      "opciones": ["12 meses desde la acreditación.", "24 meses desde la acreditación.", "36 meses desde la acreditación."],
+      "correcta": 0,
+      "explicacion": "PAC-ENAC, 8.2: el primer seguimiento, en un plazo no superior a 12 meses desde la acreditación (y sin superar 15 desde la auditoría inicial).",
+      "fuente": "PAC-ENAC Rev. 7, 8.2"
+    },
+    {
+      "id": "t40-q15",
+      "pregunta": "El equipo auditor de ENAC debe emitir su informe en un plazo no superior a:",
+      "opciones": ["30 días naturales.", "3 meses.", "15 días naturales."],
+      "correcta": 2,
+      "explicacion": "PAC-ENAC, 7.4.4: en un plazo no superior a 15 días naturales desde la auditoría. El informe tiene una validez de 6 meses.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.4"
+    },
+    {
+      "id": "t40-q16",
+      "pregunta": "En una acreditación inicial, las visitas de acompañamiento se realizan en un plazo no superior a:",
+      "opciones": ["3 meses desde la auditoría.", "1 año desde la auditoría.", "15 días desde la auditoría."],
+      "correcta": 0,
+      "explicacion": "PAC-ENAC, 7.4.2.2: en fechas próximas a la auditoría y en un plazo no superior a 3 meses desde su finalización.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.2.2"
+    },
+    {
+      "id": "t40-q17",
+      "pregunta": "Una auditoría de ENAC se desarrolla en tres fases:",
+      "opciones": [
+        "Solicitud, presupuesto y certificado.",
+        "Reunión inicial, desarrollo de la auditoría y reunión final.",
+        "Análisis de causas, análisis de extensión y acción correctiva."
+      ],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 7.4.2.1. La primera opción mezcla fases del procedimiento completo, y la tercera es la respuesta del laboratorio a una no conformidad.",
+      "fuente": "PAC-ENAC Rev. 7, 7.4.2.1",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q18",
+      "pregunta": "Según ENAC, una no conformidad técnica es MAYOR cuando:",
+      "opciones": [
+        "Se refiere a un documento con una errata.",
+        "Se produce de forma aislada y no afecta a los resultados.",
+        "Cuestiona la competencia del personal, la validez de los métodos o la validez de los resultados."
+      ],
+      "correcta": 2,
+      "explicacion": "NO-11, apartado 4. Las aisladas o puntuales que no afectan a los resultados son menores.",
+      "fuente": "ENAC NO-11 Rev. 11, 4",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q19",
+      "pregunta": "Una acción correctiva es la encaminada a:",
+      "opciones": [
+        "Eliminar las causas de una no conformidad para prevenir que se repita.",
+        "Corregir de inmediato los informes ya emitidos con el error.",
+        "Contener el problema hasta que se resuelva."
+      ],
+      "correcta": 0,
+      "explicacion": "Definición de la NO-11. La segunda opción es una acción reparadora y la tercera, una acción de contención.",
+      "fuente": "ENAC NO-11 Rev. 11, 2",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q20",
+      "pregunta": "Revisar y, si procede, corregir los informes ya emitidos con un equipo que estaba fuera de calibración es una acción:",
+      "opciones": ["Correctiva.", "Reparadora.", "Preventiva."],
+      "correcta": 1,
+      "explicacion": "Acción reparadora: la «encaminada a corregir de manera inmediata el efecto provocado por una No Conformidad en el pasado (informes/certificados emitidos, etc.)» (NO-11).",
+      "fuente": "ENAC NO-11 Rev. 11, 2"
+    },
+    {
+      "id": "t40-q21",
+      "pregunta": "Tras una auditoría de seguimiento, el laboratorio acreditado debe presentar su plan de acciones en un plazo máximo de:",
+      "opciones": ["4 meses.", "15 días naturales.", "30 días naturales."],
+      "correcta": 2,
+      "explicacion": "NO-11, tabla I: 30 días naturales en las auditorías de mantenimiento. Los 4 meses son para las auditorías iniciales y de ampliación.",
+      "fuente": "ENAC NO-11 Rev. 11, tabla I"
+    },
+    {
+      "id": "t40-q22",
+      "pregunta": "Las alegaciones de un laboratorio a una no conformidad de ENAC:",
+      "opciones": [
+        "Deben referirse a la no conformidad, sin poner en cuestión los hechos que la soportan.",
+        "Pueden discutir si los hechos detectados en la auditoría son ciertos.",
+        "No están permitidas."
+      ],
+      "correcta": 0,
+      "explicacion": "NO-11, 5.6: las alegaciones «deben estar referidas a la no conformidad y no poner en cuestión la veracidad de los hechos», que se aclaran durante la propia auditoría.",
+      "fuente": "ENAC NO-11 Rev. 11, 5.6"
+    },
+    {
+      "id": "t40-q23",
+      "pregunta": "Mientras su acreditación está suspendida, un laboratorio:",
+      "opciones": [
+        "Puede seguir emitiendo informes acreditados hasta el siguiente seguimiento.",
+        "No puede usar la marca ENAC ni emitir informes acreditados, y debe informar a sus clientes.",
+        "Solo ve afectadas las futuras ampliaciones de alcance."
+      ],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 12.2.2: la suspensión conlleva la prohibición de usar la marca, la obligación de informar a los clientes afectados y que no se emitan informes acreditados con fecha posterior.",
+      "fuente": "PAC-ENAC Rev. 7, 12.2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q24",
+      "pregunta": "Los recursos contra las decisiones de la Comisión de Acreditación de ENAC:",
+      "opciones": [
+        "Se presentan ante la propia Comisión en 7 días y suspenden la decisión.",
+        "Se presentan ante el Ministerio de Industria sin plazo.",
+        "Se presentan ante el Comité de Recursos en 30 días naturales, y no tienen efecto suspensivo."
+      ],
+      "correcta": 2,
+      "explicacion": "PAC-ENAC, apartado 13: ante el Comité de Recursos, en un plazo máximo de 30 días naturales, y «la interposición de un recurso no tendrá en ningún momento efectos suspensivos».",
+      "fuente": "PAC-ENAC Rev. 7, 13"
+    },
+    {
+      "id": "t40-q25",
+      "pregunta": "Un laboratorio que ha solicitado la acreditación pero aún no la tiene concedida:",
+      "opciones": [
+        "No puede usar la marca ENAC ni dar a entender que está acreditado.",
+        "Puede usar la marca ENAC indicando «en trámite».",
+        "Puede usar la marca ENAC si ya ha pasado la auditoría."
+      ],
+      "correcta": 0,
+      "explicacion": "PAC-ENAC, 7.1.g: está explícitamente prohibido el uso de la marca o la referencia a la condición de acreditado hasta que la acreditación se conceda. Hacerlo interrumpe el proceso.",
+      "fuente": "PAC-ENAC Rev. 7, 7.1.g"
+    },
+    {
+      "id": "t40-q26",
+      "pregunta": "Si un acreditado no envía firmada la solicitud de renovación en el plazo establecido antes de la reevaluación:",
+      "opciones": [
+        "La acreditación se prorroga automáticamente un año.",
+        "La acreditación se extingue.",
+        "ENAC realiza la reevaluación igualmente."
+      ],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 8.3: la solicitud de renovación se envía firmada cuatro meses antes de la auditoría de reevaluación; «de no recibirse esta solicitud en el plazo establecido la acreditación se extinguirá».",
+      "fuente": "PAC-ENAC Rev. 7, 7.8 y 8.3"
+    },
+    {
+      "id": "t40-q27",
+      "pregunta": "La auditoría que realiza ENAC a un laboratorio para acreditarlo es una auditoría:",
+      "opciones": [
+        "De primera parte, porque la hace el propio laboratorio.",
+        "De segunda parte, porque la hace un cliente.",
+        "De tercera parte, porque la hace un organismo independiente."
+      ],
+      "correcta": 2,
+      "explicacion": "Las auditorías internas son de primera parte (17025, 8.8); las de un cliente a su proveedor, de segunda; y las de un organismo independiente, como ENAC o una certificadora, de tercera parte.",
+      "fuente": "Doctrina de la ISO 19011; PAC-ENAC",
+      "nucleo": true
+    },
+    {
+      "id": "t40-q28",
+      "pregunta": "Las auditorías internas del laboratorio se regulan en la cláusula de la ISO/IEC 17025:2017:",
+      "opciones": ["8.8.", "7.10.", "4.1."],
+      "correcta": 0,
+      "explicacion": "8.8 Auditorías internas. La 7.10 es el trabajo no conforme y la 4.1, la imparcialidad.",
+      "fuente": "UNE-EN ISO/IEC 17025:2017, índice oficial"
+    },
+    {
+      "id": "t40-q29",
+      "pregunta": "Salvo que la norma o la ley exijan más, un organismo acreditado debe conservar sus registros durante al menos:",
+      "opciones": ["2 años.", "5 años.", "10 años."],
+      "correcta": 1,
+      "explicacion": "PAC-ENAC, 11.2: conservar las ediciones obsoletas de la documentación y los registros internos durante un plazo mínimo de 5 años.",
+      "fuente": "PAC-ENAC Rev. 7, 11.2"
+    },
+    {
+      "id": "t40-q30",
+      "pregunta": "Según el RD 3/2023, los laboratorios que gestionan más de 5000 muestras de agua de consumo al año debían tener acreditados sus métodos antes del:",
+      "opciones": ["2 de enero de 2028.", "2 de enero de 2030.", "2 de enero de 2024."],
+      "correcta": 2,
+      "explicacion": "Disposición adicional octava: más de 5000 muestras, antes del 2/1/2024; entre 300 y 5000, antes del 2/1/2028. El 2/1/2030 es el plazo para acreditar la toma de muestras.",
+      "fuente": "RD 3/2023, disposición adicional octava"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t40-s01",
+      "titulo": "El laboratorio municipal pide la acreditación",
+      "enunciado": "El laboratorio municipal de aguas quiere acreditar por la **ISO 17025** la determinación de nitratos y cloruros en agua de consumo. Prepara la solicitud y, meses después, recibe la **auditoría inicial**. Durante ella, el equipo auditor comprueba que **un espectrofotómetro lleva cuatro meses con la calibración caducada** y que **en ese tiempo se han emitido informes** con resultados obtenidos con él.",
+      "preguntas": [
+        {
+          "id": "t40-s01-q1",
+          "pregunta": "La ISO 17025 es una norma:",
+          "opciones": [
+            "Que es aplicada por los laboratorios de ensayo y calibración con el objetivo de demostrar que disponen de sistemas de gestión de seguridad y salud en el trabajo destinados a proteger a los trabajadores y visitantes de accidentes y enfermedades laborales.",
+            "Que es aplicada por los laboratorios de ensayo y calibración con el objetivo de demostrar que son técnicamente competentes y que sus resultados son veraces.",
+            "Que es aplicada por los laboratorios de ensayo y calibración con el objetivo de demostrar que están comprometidos con la protección del medio ambiente.",
+            "Ninguna respuesta es correcta."
+          ],
+          "correcta": 1,
+          "explicacion": "Pregunta 1322 C2 #6, transcrita. La 17025 especifica los requisitos de competencia, imparcialidad y operación coherente de los laboratorios. La a) describe una norma de seguridad y salud (ISO 45001) y la c), una de medio ambiente (ISO 14001).",
+          "fuente": "Cuestionario 1322 segundo ejercicio #6; UNE-EN ISO/IEC 17025:2017, cap. 1"
+        },
+        {
+          "id": "t40-s01-q2",
+          "pregunta": "¿A qué entidad debe dirigir el laboratorio su solicitud de acreditación?",
+          "opciones": [
+            "A ENAC, único organismo nacional de acreditación.",
+            "A UNE, que elabora la norma.",
+            "A una entidad de certificación, que le concederá un certificado ISO 17025.",
+            "A la consejería de sanidad de su comunidad autónoma."
+          ],
+          "correcta": 0,
+          "explicacion": "El Reglamento 765/2008 obliga a solicitar la acreditación al organismo nacional del Estado donde está establecido el organismo (art. 7.1), y en España es ENAC (RD 1715/2010). UNE hace normas; una certificadora certifica, pero no acredita.",
+          "fuente": "Reglamento (CE) 765/2008, art. 7.1; RD 1715/2010"
+        },
+        {
+          "id": "t40-s01-q3",
+          "pregunta": "El hallazgo del espectrofotómetro con la calibración caducada y los informes emitidos con él se clasificará previsiblemente como:",
+          "opciones": [
+            "Un comentario, porque el equipo funciona.",
+            "Una no conformidad menor, porque es un solo equipo.",
+            "Una observación sin consecuencias, porque aún no está acreditado.",
+            "Una no conformidad mayor, porque pone en cuestión la validez de los resultados emitidos."
+          ],
+          "correcta": 3,
+          "explicacion": "Según la NO-11, es mayor la no conformidad técnica que cuestiona la validez de los resultados. Un equipo sin calibración con el que se han emitido informes la cuestiona. Un comentario es lo que todavía no es un incumplimiento.",
+          "fuente": "ENAC NO-11 Rev. 11, 3.2 y 4"
+        },
+        {
+          "id": "t40-s01-q4",
+          "pregunta": "Para responder a esa no conformidad, el laboratorio debe presentar:",
+          "opciones": [
+            "Solo una nueva calibración del espectrofotómetro.",
+            "Una alegación negando que la calibración estuviera caducada.",
+            "Análisis de causas y de extensión, acciones correctivas con evidencias de su implantación y acciones reparadoras sobre los informes afectados.",
+            "Un escrito atribuyéndolo a un error humano puntual."
+          ],
+          "correcta": 2,
+          "explicacion": "Para una NC mayor, la NO-11 exige causas, extensión (¿hay más equipos así?), acciones correctivas con evidencias y, si procede, acciones reparadoras sobre los informes ya emitidos. Calibrar el equipo solo corrige el síntoma; las alegaciones no pueden discutir los hechos; y el «error humano» no vale sin evidencias.",
+          "fuente": "ENAC NO-11 Rev. 11, 5, tabla I y anexo I"
+        },
+        {
+          "id": "t40-s01-q5",
+          "pregunta": "Al tratarse de una auditoría inicial, el plazo máximo para presentar el plan de acciones es de:",
+          "opciones": ["4 meses.", "30 días naturales.", "15 días naturales.", "1 año."],
+          "correcta": 0,
+          "explicacion": "NO-11, tabla I: 4 meses desde el informe en las auditorías iniciales y de ampliación; 30 días naturales en las de mantenimiento. Los 15 días son el plazo del equipo auditor para emitir el informe.",
+          "fuente": "ENAC NO-11 Rev. 11, tabla I; PAC-ENAC 7.4.4"
+        }
+      ]
+    },
+    {
+      "id": "t40-s02",
+      "titulo": "El mantenimiento de la acreditación",
+      "enunciado": "El laboratorio obtuvo la acreditación de ENAC en **marzo de 2022**. Desde entonces ha tenido sus seguimientos, y ahora se acerca el final de su primer ciclo.",
+      "preguntas": [
+        {
+          "id": "t40-s02-q1",
+          "pregunta": "¿Cuándo debía realizarse, como muy tarde, su primer seguimiento?",
+          "opciones": [
+            "En marzo de 2024, a los dos años.",
+            "Al final del primer ciclo.",
+            "En marzo de 2023, a los 12 meses de la acreditación.",
+            "Solo si el laboratorio lo solicitaba."
+          ],
+          "correcta": 2,
+          "explicacion": "PAC-ENAC, 8.2: el primer seguimiento, en un plazo no superior a 12 meses desde la acreditación (y sin superar 15 desde la auditoría inicial).",
+          "fuente": "PAC-ENAC Rev. 7, 8.2"
+        },
+        {
+          "id": "t40-s02-q2",
+          "pregunta": "¿Cuándo termina su primer ciclo de acreditación?",
+          "opciones": [
+            "En marzo de 2025, a los 3 años.",
+            "En marzo de 2026, a los 4 años.",
+            "En marzo de 2027, a los 5 años.",
+            "Nunca: la acreditación no tiene ciclos."
+          ],
+          "correcta": 1,
+          "explicacion": "PAC-ENAC, 8.1: primer ciclo de cuatro años desde la acreditación; los siguientes, de cinco. La acreditación no caduca, pero se mantiene por ciclos.",
+          "fuente": "PAC-ENAC Rev. 7, 8.1"
+        },
+        {
+          "id": "t40-s02-q3",
+          "pregunta": "En un seguimiento se detecta una no conformidad mayor. ¿En qué plazo debe presentar el plan de acciones?",
+          "opciones": ["4 meses.", "6 meses.", "15 días naturales.", "30 días naturales."],
+          "correcta": 3,
+          "explicacion": "NO-11, tabla I: en las auditorías de mantenimiento (seguimiento, reevaluación), 30 días naturales. Si no lo presenta, se inicia el proceso de suspensión (NO-11, 5.8).",
+          "fuente": "ENAC NO-11 Rev. 11, tabla I y 5.8"
+        },
+        {
+          "id": "t40-s02-q4",
+          "pregunta": "Si el laboratorio no envía firmada a ENAC la solicitud de renovación en el plazo establecido antes de la reevaluación:",
+          "opciones": [
+            "La acreditación se extingue.",
+            "ENAC la renueva de oficio.",
+            "Se le impone un apercibimiento y se aplaza un año la reevaluación.",
+            "Pasa automáticamente a una suspensión voluntaria."
+          ],
+          "correcta": 0,
+          "explicacion": "PAC-ENAC, 8.3: la solicitud de renovación se envía firmada cuatro meses antes de la auditoría de reevaluación, y «de no recibirse esta solicitud en el plazo establecido la acreditación se extinguirá».",
+          "fuente": "PAC-ENAC Rev. 7, 7.8 y 8.3"
+        },
+        {
+          "id": "t40-s02-q5",
+          "pregunta": "Si la Comisión de Acreditación acordase suspender la acreditación, esa suspensión:",
+          "opciones": [
+            "Entra en vigor al día siguiente y no se hace pública.",
+            "Entra en vigor a los 7 días de su notificación; el laboratorio no puede usar la marca ni emitir informes acreditados y debe informar a sus clientes.",
+            "Solo impide ampliar el alcance.",
+            "Queda en suspenso si el laboratorio recurre."
+          ],
+          "correcta": 1,
+          "explicacion": "PAC-ENAC, 12.2.2: entra en vigor a los 7 días naturales, se publica, y conlleva la prohibición de usar la marca, de emitir informes acreditados y la obligación de informar a los clientes. Un recurso no tiene efecto suspensivo (apartado 13).",
+          "fuente": "PAC-ENAC Rev. 7, 12.2.2 y 13"
+        }
+      ]
+    }
+  ]
+}
