@@ -74,6 +74,9 @@ export type TipoEsquema =
   | 'dianas-veracidad-precision'
   | 'incertidumbre-en-cuadratura'
   | 'intervalo-de-trabajo'
+  | 'grafico-control-x'
+  | 'recta-minimos-cuadrados'
+  | 'cadena-trazabilidad'
 
 export type TipoMaterial =
   | 'matraz-aforado'

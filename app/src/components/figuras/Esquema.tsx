@@ -48,6 +48,9 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'dianas-veracidad-precision': 'Veracidad y precisión: cuatro dianas',
   'incertidumbre-en-cuadratura': 'Las incertidumbres se suman en cuadratura: uc es la hipotenusa',
   'intervalo-de-trabajo': 'Del LD al final de la recta: el intervalo de trabajo',
+  'grafico-control-x': 'Gráfico de control X: aviso a ±2s, acción a ±3s',
+  'recta-minimos-cuadrados': 'La recta de calibrado por mínimos cuadrados, con sus residuos',
+  'cadena-trazabilidad': 'La cadena de trazabilidad: la incertidumbre crece en cada eslabón',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -90,6 +93,9 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'dianas-veracidad-precision': { ancho: 540, alto: 342 },
   'incertidumbre-en-cuadratura': { ancho: 560, alto: 300 },
   'intervalo-de-trabajo': { ancho: 540, alto: 322 },
+  'grafico-control-x': { ancho: 560, alto: 322 },
+  'recta-minimos-cuadrados': { ancho: 540, alto: 372 },
+  'cadena-trazabilidad': { ancho: 580, alto: 272 },
 }
 
 const AZUL = '#9ecbe8'
@@ -4215,6 +4221,346 @@ function IntervaloDeTrabajo() {
   )
 }
 
+/* ---------- Tema 39: control de calidad, patrones y calibracion ---------- */
+
+/**
+ * Grafico de control X, con las dos reglas del Nordtest TR 569 (ed. 6.1).
+ *
+ * Los valores se dan en unidades de s respecto de la linea central. Hay dos
+ * situaciones fuera de control -un valor mas alla de 3s y un «dos de tres»
+ * entre 2s y 3s del mismo lado- y dos valores en zona de aviso que NO lo son.
+ * Cuales se marcan en rojo lo decide la propia regla, aplicada aqui; el
+ * control la vuelve a aplicar sobre los puntos dibujados y exige que coincida.
+ */
+function GraficoControlX() {
+  const X0 = 64
+  const PASO = 18
+  const LC = 150
+  const S = 22
+  const Z = [0.3, -0.8, 1.2, -0.5, -2.4, -0.9, 0.6, 1.5, -0.2, 3.4, 0.8, -1.1, 0.4, -0.6, 1.0, -1.4, 0.2, 2.3, 1.1, 2.5, -0.3, 0.9, -1.2, 0.5]
+  const xDe = (i: number) => X0 + 10 + i * PASO
+  const yDe = (z: number) => LC - z * S
+  const enAviso = (z: number) => Math.abs(z) > 2 && Math.abs(z) <= 3
+  const fuera = Z.map((z, i) => {
+    if (Math.abs(z) > 3) return true
+    if (!enAviso(z)) return false
+    return [i - 1, i - 2].some((j) => j >= 0 && enAviso(Z[j]) && Math.sign(Z[j]) === Math.sign(z))
+  })
+  const X1 = X0
+  const X2 = xDe(Z.length - 1) + 12
+  const LINEAS = [
+    { clave: 'accion-sup', z: 3, rotulo: '+3s  acción' },
+    { clave: 'aviso-sup', z: 2, rotulo: '+2s  aviso' },
+    { clave: 'linea-central', z: 0, rotulo: 'línea central' },
+    { clave: 'aviso-inf', z: -2, rotulo: '−2s  aviso' },
+    { clave: 'accion-inf', z: -3, rotulo: '−3s  acción' },
+  ]
+  const ruta = Z.map((z, i) => (i ? 'L' : 'M') + xDe(i) + ' ' + yDe(z).toFixed(1)).join(' ')
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {LINEAS.map((l) => (
+        <g key={l.clave}>
+          <line
+            data-pieza={l.clave}
+            x1={X1}
+            y1={yDe(l.z)}
+            x2={X2}
+            y2={yDe(l.z)}
+            stroke={Math.abs(l.z) === 3 ? ROJO : 'currentColor'}
+            strokeWidth={l.z === 0 ? 1.4 : 1.1}
+            strokeDasharray={Math.abs(l.z) === 2 ? '5 3' : undefined}
+            opacity={l.z === 0 ? 0.9 : 0.8}
+          />
+          <text x={X2 + 5} y={yDe(l.z) + 3} fontSize="8" fill={Math.abs(l.z) === 3 ? ROJO : 'currentColor'}>
+            {l.rotulo}
+          </text>
+        </g>
+      ))}
+      <line x1={X1} y1={yDe(3.6)} x2={X1} y2={yDe(-3.6)} stroke="currentColor" strokeWidth="1.4" />
+      <text x="8" y="26" fontSize="8" fill="currentColor">
+        valor de control
+      </text>
+      <text x={X2} y={yDe(-3.6) + 14} fontSize="8" textAnchor="end" fill="currentColor">
+        serie analítica →
+      </text>
+
+      <path d={ruta} fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.5" />
+      {Z.map((z, i) => (
+        <circle
+          key={i}
+          data-pieza={fuera[i] ? 'valor-fuera' : 'valor'}
+          cx={xDe(i)}
+          cy={yDe(z).toFixed(2)}
+          r={fuera[i] ? 4.2 : 3}
+          fill={fuera[i] ? ROJO : AZUL}
+          stroke={fuera[i] ? '#fff' : 'currentColor'}
+          strokeWidth="0.7"
+        />
+      ))}
+
+      {/* las tres situaciones que hay que saber leer */}
+      <g fontSize="7.5" fill="currentColor">
+        <text x={xDe(9) + 7} y={yDe(3.4) + 3}>
+          fuera de ±3s
+        </text>
+        <text x={xDe(19) + 7} y={yDe(2.5) - 4}>
+          dos de tres
+        </text>
+        <text x={xDe(4) + 7} y={yDe(-2.4) + 3}>
+          entre aviso y acción, pero bajo control
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="282">
+          FUERA DE CONTROL si un valor pasa de ±3s, o si está entre 2s y 3s y otro de los dos anteriores también,
+        </text>
+        <text x="8" y="295">
+          del mismo lado. Entonces no se informa y se reanaliza todo desde el último control correcto.
+        </text>
+        <text x="8" y="313">
+          Un valor suelto entre aviso y acción, con los dos anteriores dentro, sigue BAJO CONTROL.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * La recta de calibrado por minimos cuadrados, con los datos del supuesto 1
+ * de 1322 (1, 2, 5 y 10 mg/L; 0,05, 0,10, 0,24 y 0,50 de absorbancia).
+ *
+ * La pendiente, la ordenada y el R2 se CALCULAN aqui con las formulas de los
+ * minimos cuadrados, y los residuos se dibujan ampliados en un panel aparte.
+ * El control recalcula el ajuste a partir de los puntos dibujados.
+ */
+function RectaMinimosCuadrados() {
+  const DATOS: [number, number][] = [
+    [1, 0.05],
+    [2, 0.1],
+    [5, 0.24],
+    [10, 0.5],
+  ]
+  const n = DATOS.length
+  const sx = DATOS.reduce((a, [x]) => a + x, 0)
+  const sy = DATOS.reduce((a, [, y]) => a + y, 0)
+  const sxy = DATOS.reduce((a, [x, y]) => a + x * y, 0)
+  const sxx = DATOS.reduce((a, [x]) => a + x * x, 0)
+  const syy = DATOS.reduce((a, [, y]) => a + y * y, 0)
+  const b = (n * sxy - sx * sy) / (n * sxx - sx * sx)
+  const a = (sy - b * sx) / n
+  const r = (n * sxy - sx * sy) / Math.sqrt((n * sxx - sx * sx) * (n * syy - sy * sy))
+
+  const X0 = 70
+  const ANCHO = 400
+  const C_MAX = 11
+  const BASE = 214
+  const CIMA = 44
+  const A_MAX = 0.55
+  const xDe = (c: number) => X0 + (c / C_MAX) * ANCHO
+  const yDe = (v: number) => BASE - (v / A_MAX) * (BASE - CIMA)
+  const coma = (v: number, d: number) => v.toFixed(d).replace('.', ',').replace('-', '−')
+
+  /** Panel de residuos: cero en Y_RES, ampliados AMPLIA veces respecto al grafico de arriba. */
+  const Y_RES = 290
+  const AMPLIA = 8
+  const pxPorAbs = (BASE - CIMA) / A_MAX
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <g stroke="currentColor" strokeWidth="1.5">
+        <line x1={X0} y1={CIMA - 10} x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2={X0 + ANCHO} y2={BASE} />
+      </g>
+      <text x="8" y="28" fontSize="8" fill="currentColor">
+        absorbancia
+      </text>
+      <text x={X0 + ANCHO} y={BASE + 24} fontSize="8" textAnchor="end" fill="currentColor">
+        concentración del patrón (mg/L)
+      </text>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {[0, 2, 4, 6, 8, 10].map((c) => (
+          <text key={c} x={xDe(c)} y={BASE + 11}>
+            {c}
+          </text>
+        ))}
+      </g>
+      <g fontSize="7.5" textAnchor="end" fill="currentColor">
+        {[0.1, 0.2, 0.3, 0.4, 0.5].map((v) => (
+          <text key={v} x={X0 - 4} y={yDe(v) + 3}>
+            {coma(v, 1)}
+          </text>
+        ))}
+      </g>
+
+      <line
+        data-pieza="recta"
+        x1={xDe(0)}
+        y1={yDe(a).toFixed(2)}
+        x2={xDe(C_MAX)}
+        y2={yDe(a + b * C_MAX).toFixed(2)}
+        stroke={ROJO}
+        strokeWidth="1.8"
+      />
+      {DATOS.map(([x, y]) => (
+        <circle
+          key={x}
+          data-pieza="punto"
+          cx={xDe(x).toFixed(2)}
+          cy={yDe(y).toFixed(2)}
+          r="3.6"
+          fill={AZUL}
+          stroke="currentColor"
+          strokeWidth="0.8"
+        />
+      ))}
+      <g fontSize="9" fontWeight="bold" fill={ROJO}>
+        <text data-pieza="ecuacion" x={xDe(0.6)} y={CIMA + 4}>
+          {'A = ' + coma(b, 4) + ' · c ' + (a < 0 ? '− ' : '+ ') + coma(Math.abs(a), 4)}
+        </text>
+        <text data-pieza="r2" x={xDe(0.6)} y={CIMA + 18}>
+          {'R² = ' + coma(r * r, 4)}
+        </text>
+      </g>
+
+      {/* los residuos */}
+      <line x1={X0} y1={Y_RES} x2={X0 + ANCHO} y2={Y_RES} stroke="currentColor" strokeWidth="1" />
+      <text x="8" y={Y_RES - 26} fontSize="8" fill="currentColor">
+        residuos
+      </text>
+      <text x="8" y={Y_RES - 16} fontSize="8" fill="currentColor">
+        (×{AMPLIA})
+      </text>
+      {DATOS.map(([x, y]) => {
+        const residuo = y - (a + b * x)
+        return (
+          <line
+            key={x}
+            data-pieza="residuo"
+            x1={xDe(x).toFixed(2)}
+            y1={Y_RES}
+            x2={xDe(x).toFixed(2)}
+            y2={(Y_RES - residuo * pxPorAbs * AMPLIA).toFixed(2)}
+            stroke={AZUL}
+            strokeWidth="5"
+          />
+        )
+      })}
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="330">
+          La recta hace mínima la suma de los cuadrados de los residuos: la distancia VERTICAL de cada punto a la recta.
+        </text>
+        <text x="8" y="343">
+          Que el R² esté cerca de 1 no basta: lo que demuestra que es una recta es que los residuos salgan
+        </text>
+        <text x="8" y="356">
+          al azar, unos arriba y otros abajo, sin dibujar una curva. Datos: supuesto 1 del examen de 1322.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * La cadena de trazabilidad: del SI al resultado de la muestra.
+ *
+ * Cada flecha es una calibracion, y el VIM (2.40, nota 1) dice que la
+ * incertidumbre "va aumentando necesariamente a lo largo de la secuencia".
+ * Las barras son ilustrativas: lo que el dibujo afirma, y el control mide, es
+ * que crecen eslabon a eslabon y que ninguna flecha deja un hueco.
+ */
+function CadenaTrazabilidad() {
+  const X0 = 6
+  const ANCHO = 98
+  const HUECO = 20
+  const Y = 58
+  const ALTO = 64
+  const ESLABONES = [
+    { titulo: 'SI', pie: ['kilogramo, mol'], barra: 5 },
+    { titulo: 'Patrón nacional', pie: ['CEM u otro instituto', 'nacional de metrología'], barra: 14 },
+    { titulo: 'MRC', pie: ['de un productor', 'conforme a ISO 17034'], barra: 28 },
+    { titulo: 'Patrón de trabajo', pie: ['disoluciones de la', 'recta, cada día'], barra: 48 },
+    { titulo: 'Resultado', pie: ['de la muestra'], barra: 78 },
+  ]
+  const xDe = (i: number) => X0 + i * (ANCHO + HUECO)
+  const Y_BARRA = 158
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={X0} y="30" fontSize="8.5" fontWeight="bold" fill="currentColor">
+        cada flecha es una CALIBRACIÓN documentada
+      </text>
+      {ESLABONES.map((e, i) => (
+        <g key={e.titulo}>
+          <rect
+            data-pieza="eslabon"
+            x={xDe(i)}
+            y={Y}
+            width={ANCHO}
+            height={ALTO}
+            rx="5"
+            fill={i === ESLABONES.length - 1 ? ROJO : AZUL}
+            fillOpacity={i === ESLABONES.length - 1 ? 0.2 : 0.3}
+            stroke="currentColor"
+            strokeWidth="1.2"
+          />
+          <text x={xDe(i) + ANCHO / 2} y={Y + 20} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {e.titulo}
+          </text>
+          {e.pie.map((l, j) => (
+            <text key={l} x={xDe(i) + ANCHO / 2} y={Y + 36 + j * 10} fontSize="7.5" textAnchor="middle" fill="currentColor">
+              {l}
+            </text>
+          ))}
+          {i < ESLABONES.length - 1 ? (
+            <g stroke="currentColor" strokeWidth="1.6" fill="none">
+              <line
+                data-pieza="flecha"
+                x1={xDe(i) + ANCHO}
+                y1={Y + ALTO / 2}
+                x2={xDe(i + 1) - 1}
+                y2={Y + ALTO / 2}
+              />
+              <path d={`M${xDe(i + 1) - 6} ${Y + ALTO / 2 - 4} l6 4 l-6 4`} />
+            </g>
+          ) : null}
+          <rect
+            data-pieza="incertidumbre"
+            x={xDe(i) + ANCHO / 2 - e.barra / 2}
+            y={Y_BARRA}
+            width={e.barra}
+            height="14"
+            fill={ROJO}
+            fillOpacity="0.35"
+            stroke={ROJO}
+            strokeWidth="1"
+          />
+        </g>
+      ))}
+      <text x={X0} y={Y_BARRA - 10} fontSize="8" fill="currentColor">
+        incertidumbre (esquema: crece en cada eslabón; no está a escala)
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="212">
+          La trazabilidad es una propiedad del RESULTADO: poder relacionarlo con una referencia mediante una cadena
+        </text>
+        <text x="8" y="225">
+          ininterrumpida y documentada de calibraciones, cada una de las cuales suma incertidumbre (VIM 2.41).
+        </text>
+        <text x="8" y="243">
+          Si falta un eslabón documentado, no hay trazabilidad. Y aunque la cadena esté completa, la trazabilidad
+        </text>
+        <text x="8" y="256">
+          no garantiza por sí sola que el resultado sea bueno: es necesaria, no suficiente (VIM 2.41, nota 5).
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -4293,6 +4639,12 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <IncertidumbreEnCuadratura />
     case 'intervalo-de-trabajo':
       return <IntervaloDeTrabajo />
+    case 'grafico-control-x':
+      return <GraficoControlX />
+    case 'recta-minimos-cuadrados':
+      return <RectaMinimosCuadrados />
+    case 'cadena-trazabilidad':
+      return <CadenaTrazabilidad />
   }
 }
 

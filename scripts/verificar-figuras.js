@@ -618,6 +618,50 @@ function medir(sabotaje, ROJO) {
     const t = pieza(svg, 'tramo-trabajo')
     t.setAttribute('x2', num(t, 'x2') + 110)
   }
+  if (sabotaje === 62) {
+    const svg = porClave('grafico-control-x')
+    // el limite de aviso superior puesto a 2,5 s en vez de a 2 s
+    const lc = num(pieza(svg, 'linea-central'), 'y1')
+    const s = (num(pieza(svg, 'accion-inf'), 'y1') - lc) / 3
+    const l = pieza(svg, 'aviso-sup')
+    l.setAttribute('y1', lc - 2.5 * s)
+    l.setAttribute('y2', lc - 2.5 * s)
+  }
+  if (sabotaje === 63) {
+    const svg = porClave('grafico-control-x')
+    // el «dos de tres» sin marcar: se daria por bueno un valor fuera de control
+    const marcados = piezas(svg, 'valor-fuera').sort((a, b) => num(a, 'cx') - num(b, 'cx'))
+    marcados[marcados.length - 1].setAttribute('data-pieza', 'valor')
+  }
+  if (sabotaje === 64) {
+    const svg = porClave('recta-minimos-cuadrados')
+    // la recta inclinada a mano: ya no es la de minimos cuadrados
+    const l = pieza(svg, 'recta')
+    l.setAttribute('y2', num(l, 'y2') + 12)
+  }
+  if (sabotaje === 65) {
+    const svg = porClave('recta-minimos-cuadrados')
+    // un residuo dibujado con el signo cambiado
+    const r = piezas(svg, 'residuo').sort((a, b) => num(a, 'x1') - num(b, 'x1'))[2]
+    r.setAttribute('y2', 2 * num(r, 'y1') - num(r, 'y2'))
+  }
+  if (sabotaje === 66) {
+    const svg = porClave('cadena-trazabilidad')
+    // la incertidumbre del MRC mayor que la del patron de trabajo
+    const b = piezas(svg, 'incertidumbre').sort((a, c) => num(a, 'x') - num(c, 'x'))
+    const [p, q] = [b[2], b[3]]
+    const [wp, wq] = [num(p, 'width'), num(q, 'width')]
+    p.setAttribute('x', num(p, 'x') + wp / 2 - wq / 2)
+    p.setAttribute('width', wq)
+    q.setAttribute('x', num(q, 'x') + wq / 2 - wp / 2)
+    q.setAttribute('width', wp)
+  }
+  if (sabotaje === 67) {
+    const svg = porClave('cadena-trazabilidad')
+    // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
+    const f = piezas(svg, 'flecha').sort((a, b) => num(a, 'x1') - num(b, 'x1'))[1]
+    f.setAttribute('x2', num(f, 'x2') - 12)
+  }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
@@ -2087,6 +2131,180 @@ function medir(sabotaje, ROJO) {
     return `desvío máximo dentro ${peor.toFixed(1)} % (tolerancia ${tol} %); justo después, ya ${mejorFuera.toFixed(1)} %`
   })
 
+  /*
+   * El grafico de control X. Primero, que las lineas esten donde dicen: aviso
+   * a 2s y accion a 3s, simetricos. Despues, lo importante: que los puntos
+   * marcados como fuera de control sean EXACTAMENTE los que señalan las dos
+   * reglas del Nordtest TR 569 (ed. 6.1), aplicadas a los puntos dibujados.
+   */
+  control('Gráfico de control · aviso a ±2s y acción a ±3s, simétricos alrededor de la línea central', () => {
+    const svg = porClave('grafico-control-x')
+    const y = (k) => num(pieza(svg, k), 'y1')
+    const lc = y('linea-central')
+    const d = {
+      avisoSup: lc - y('aviso-sup'),
+      avisoInf: y('aviso-inf') - lc,
+      accionSup: lc - y('accion-sup'),
+      accionInf: y('accion-inf') - lc,
+    }
+    if (!(Math.abs(d.avisoSup - d.avisoInf) < 0.5 && Math.abs(d.accionSup - d.accionInf) < 0.5)) {
+      throw new Error(`los límites no son simétricos: aviso +${d.avisoSup.toFixed(1)}/−${d.avisoInf.toFixed(1)}, acción +${d.accionSup.toFixed(1)}/−${d.accionInf.toFixed(1)} px`)
+    }
+    for (const lado of ['Sup', 'Inf']) {
+      const cociente = d['accion' + lado] / d['aviso' + lado]
+      if (!(Math.abs(cociente - 1.5) < 0.015)) {
+        throw new Error(`en el lado ${lado === 'Sup' ? 'superior' : 'inferior'} la acción está a ${cociente.toFixed(2)} veces el aviso, y 3s / 2s = 1,5`)
+      }
+    }
+    return `aviso a ±${d.avisoSup.toFixed(1)} px y acción a ±${d.accionSup.toFixed(1)} px de la línea central (3s/2s = 1,5)`
+  })
+
+  control('Gráfico de control · los puntos marcados fuera de control son exactamente los que señalan las dos reglas', () => {
+    const svg = porClave('grafico-control-x')
+    const lc = num(pieza(svg, 'linea-central'), 'y1')
+    // la s se lee de los limites de accion, que no dependen de la regla de aviso
+    const s = (num(pieza(svg, 'accion-inf'), 'y1') - num(pieza(svg, 'accion-sup'), 'y1')) / 6
+    const puntos = [
+      ...piezas(svg, 'valor').map((p) => ({ p, marcado: false })),
+      ...[...svg.querySelectorAll('[data-pieza="valor-fuera"]')].map((p) => ({ p, marcado: true })),
+    ]
+      .map(({ p, marcado }) => ({ x: num(p, 'cx'), z: (lc - num(p, 'cy')) / s, marcado }))
+      .sort((a, b) => a.x - b.x)
+    const enAviso = (z) => Math.abs(z) > 2 && Math.abs(z) <= 3
+    const fallos = []
+    puntos.forEach((q, i) => {
+      const dosDeTres =
+        enAviso(q.z) && [i - 1, i - 2].some((j) => j >= 0 && enAviso(puntos[j].z) && Math.sign(puntos[j].z) === Math.sign(q.z))
+      const debe = Math.abs(q.z) > 3 || dosDeTres
+      if (debe !== q.marcado) {
+        fallos.push(
+          `la serie ${i + 1} (z = ${q.z.toFixed(2)}) ` +
+            (debe ? `está fuera de control${dosDeTres ? ' por la regla de dos de tres' : ''} y no se marca` : 'se marca fuera de control y no lo está'),
+        )
+      }
+    })
+    if (fallos.length) throw new Error(fallos.join('; '))
+    const fuera = puntos.map((q, i) => (q.marcado ? i + 1 : null)).filter(Boolean)
+    const avisoBien = puntos.map((q, i) => (enAviso(q.z) && !q.marcado ? i + 1 : null)).filter(Boolean)
+    return `${puntos.length} series; fuera de control las ${fuera.join(' y ')}; en aviso pero bajo control las ${avisoBien.join(' y ')}`
+  })
+
+  /*
+   * La recta de calibrado. La linea dibujada tiene que ser el ajuste por
+   * minimos cuadrados de los puntos dibujados, y el R2 escrito el de esos
+   * puntos (el R2 no cambia al pasar de unidades a pixeles, porque es
+   * invariante a un cambio de escala de los ejes). Y cada residuo, la
+   * distancia vertical de su punto a esa recta, con su signo.
+   */
+  const ajuste = (pts) => {
+    const n = pts.length
+    const sx = pts.reduce((a, [x]) => a + x, 0)
+    const sy = pts.reduce((a, [, y]) => a + y, 0)
+    const sxy = pts.reduce((a, [x, y]) => a + x * y, 0)
+    const sxx = pts.reduce((a, [x]) => a + x * x, 0)
+    const syy = pts.reduce((a, [, y]) => a + y * y, 0)
+    const b = (n * sxy - sx * sy) / (n * sxx - sx * sx)
+    const a = (sy - b * sx) / n
+    const r = (n * sxy - sx * sy) / Math.sqrt((n * sxx - sx * sx) * (n * syy - sy * sy))
+    return { a, b, r2: r * r }
+  }
+  const puntosRecta = (svg) =>
+    piezas(svg, 'punto')
+      .map((p) => [num(p, 'cx'), num(p, 'cy')])
+      .sort((p, q) => p[0] - q[0])
+
+  control('Recta · la línea dibujada es el ajuste por mínimos cuadrados de los puntos, y el R² escrito es el suyo', () => {
+    const svg = porClave('recta-minimos-cuadrados')
+    const pts = puntosRecta(svg)
+    const { a, b, r2 } = ajuste(pts)
+    const l = pieza(svg, 'recta')
+    for (const [kx, ky] of [['x1', 'y1'], ['x2', 'y2']]) {
+      const esperado = a + b * num(l, kx)
+      if (!(Math.abs(esperado - num(l, ky)) < 0.6)) {
+        throw new Error(
+          `en x=${num(l, kx).toFixed(0)} la recta pasa por y=${num(l, ky).toFixed(1)} y el ajuste de los puntos por ` +
+            `y=${esperado.toFixed(1)}: la recta dibujada no es la de mínimos cuadrados`,
+        )
+      }
+    }
+    const escrito = Number(pieza(svg, 'r2').textContent.match(/(\d+,\d+)/)[1].replace(',', '.'))
+    if (!(Math.abs(escrito - r2) < 0.0006)) {
+      throw new Error(`el R² escrito es ${escrito} y el de los puntos dibujados, ${r2.toFixed(4)}`)
+    }
+    return `${pts.length} puntos; la recta coincide con su ajuste en los dos extremos; R² ${r2.toFixed(4)} = escrito`
+  })
+
+  control('Recta · cada residuo mide la distancia vertical de su punto a la recta, con su signo', () => {
+    const svg = porClave('recta-minimos-cuadrados')
+    const pts = puntosRecta(svg)
+    const { a, b } = ajuste(pts)
+    const res = piezas(svg, 'residuo').sort((p, q) => num(p, 'x1') - num(q, 'x1'))
+    if (res.length !== pts.length) throw new Error(`hay ${pts.length} puntos y ${res.length} residuos`)
+    // residuo real: positivo si el punto queda por encima de la recta (la y del svg crece hacia abajo)
+    const reales = pts.map(([x, y]) => a + b * x - y)
+    const dibujados = res.map((r) => num(r, 'y1') - num(r, 'y2'))
+    res.forEach((r, i) => {
+      if (!(Math.abs(num(r, 'x1') - pts[i][0]) < 0.6)) throw new Error(`el residuo ${i + 1} no está debajo de su punto`)
+    })
+    const k = dibujados.reduce((s, d, i) => s + d * reales[i], 0) / reales.reduce((s, r) => s + r * r, 0)
+    if (!(k > 1)) throw new Error('los residuos no están ampliados respecto al gráfico, o van al revés')
+    const tope = Math.max(...dibujados.map(Math.abs))
+    dibujados.forEach((d, i) => {
+      if (Math.sign(d) !== Math.sign(reales[i]) || Math.abs(d - k * reales[i]) > 0.08 * tope) {
+        throw new Error(
+          `el residuo del punto ${i + 1} mide ${d.toFixed(1)} px y le tocan ${(k * reales[i]).toFixed(1)} ` +
+            `(el punto está ${reales[i] > 0 ? 'por encima' : 'por debajo'} de la recta)`,
+        )
+      }
+    })
+    return `${res.length} residuos proporcionales a la distancia de su punto a la recta (×${k.toFixed(1)}), con su signo`
+  })
+
+  /*
+   * La cadena de trazabilidad: la incertidumbre crece eslabon a eslabon
+   * (VIM 2.40, nota 1), y la cadena es ininterrumpida (VIM 2.41): cada flecha
+   * sale de un eslabon y llega al siguiente.
+   */
+  control('Trazabilidad · la incertidumbre crece a lo largo de la cadena, eslabón a eslabón', () => {
+    const svg = porClave('cadena-trazabilidad')
+    const barras = piezas(svg, 'incertidumbre')
+      .map((b) => ({ x: num(b, 'x') + num(b, 'width') / 2, w: num(b, 'width') }))
+      .sort((p, q) => p.x - q.x)
+    for (let i = 1; i < barras.length; i++) {
+      if (!(barras[i].w > barras[i - 1].w * 1.1)) {
+        throw new Error(
+          `la incertidumbre del eslabón ${i + 1} (${barras[i].w} px) no es mayor que la del ${i} (${barras[i - 1].w} px): ` +
+            `cada calibración suma incertidumbre`,
+        )
+      }
+    }
+    return barras.map((b) => b.w).join(' < ') + ' px'
+  })
+
+  control('Trazabilidad · la cadena es ininterrumpida: cada flecha une un eslabón con el siguiente', () => {
+    const svg = porClave('cadena-trazabilidad')
+    const cajas = piezas(svg, 'eslabon')
+      .map((c) => ({ x: num(c, 'x'), w: num(c, 'width'), y: num(c, 'y'), h: num(c, 'height') }))
+      .sort((p, q) => p.x - q.x)
+    const flechas = piezas(svg, 'flecha').sort((p, q) => num(p, 'x1') - num(q, 'x1'))
+    if (flechas.length !== cajas.length - 1) {
+      throw new Error(`hay ${cajas.length} eslabones y ${flechas.length} flechas: faltan calibraciones en la cadena`)
+    }
+    flechas.forEach((f, i) => {
+      const sale = cajas[i].x + cajas[i].w
+      const llega = cajas[i + 1].x
+      if (!(Math.abs(num(f, 'x1') - sale) < 1 && Math.abs(num(f, 'x2') - llega) < 3)) {
+        throw new Error(
+          `la flecha ${i + 1} va de x=${num(f, 'x1')} a x=${num(f, 'x2')}, y debería unir x=${sale} con x=${llega}: ` +
+            `la cadena queda interrumpida`,
+        )
+      }
+      const y = num(f, 'y1')
+      if (!(y > cajas[i].y && y < cajas[i].y + cajas[i].h)) throw new Error(`la flecha ${i + 1} no sale de la caja`)
+    })
+    return `${cajas.length} eslabones y ${flechas.length} flechas, sin huecos`
+  })
+
   return resultados
 }
 
@@ -2154,6 +2372,12 @@ const SABOTAJES = {
   59: 'la incertidumbre expandida escrita con k = 3',
   60: 'el LC puesto al doble del LD',
   61: 'el intervalo de trabajo alargado hasta la meseta',
+  62: 'el límite de aviso superior puesto a 2,5 s',
+  63: 'el «dos de tres» del gráfico de control, sin marcar',
+  64: 'la recta de calibrado inclinada a mano',
+  65: 'un residuo dibujado con el signo cambiado',
+  66: 'la incertidumbre del MRC mayor que la del patrón de trabajo',
+  67: 'una flecha de la cadena de trazabilidad que no llega al eslabón siguiente',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -2225,6 +2449,12 @@ const CONTROL_DE = {
   59: [57],
   60: [58],
   61: [59],
+  62: [60],
+  63: [61],
+  64: [62],
+  65: [63],
+  66: [64],
+  67: [65],
 }
 
 async function main() {
