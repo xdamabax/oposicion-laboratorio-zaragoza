@@ -79,6 +79,8 @@ export type TipoEsquema =
   | 'cadena-trazabilidad'
   | 'acreditacion-certificacion'
   | 'ciclo-acreditacion'
+  | 'estructura-plan-igualdad'
+  | 'circuito-protocolo-acoso'
 
 export type TipoMaterial =
   | 'matraz-aforado'

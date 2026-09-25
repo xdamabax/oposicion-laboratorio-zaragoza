@@ -53,6 +53,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'cadena-trazabilidad': 'La cadena de trazabilidad: la incertidumbre crece en cada eslabón',
   'acreditacion-certificacion': 'Quién acredita y quién certifica',
   'ciclo-acreditacion': 'El ciclo de acreditación: 4 años el primero, 5 los siguientes',
+  'estructura-plan-igualdad': 'El II Plan de Igualdad municipal: ejes, líneas y objetivos',
+  'circuito-protocolo-acoso': 'El circuito de una denuncia en el protocolo frente al acoso',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -100,6 +102,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'cadena-trazabilidad': { ancho: 580, alto: 272 },
   'acreditacion-certificacion': { ancho: 580, alto: 350 },
   'ciclo-acreditacion': { ancho: 580, alto: 262 },
+  'estructura-plan-igualdad': { ancho: 580, alto: 360 },
+  'circuito-protocolo-acoso': { ancho: 580, alto: 352 },
 }
 
 const AZUL = '#9ecbe8'
@@ -4762,6 +4766,260 @@ function CicloAcreditacion() {
   )
 }
 
+/**
+ * La estructura del II Plan de Igualdad para empleadas y empleados del
+ * Ayuntamiento de Zaragoza (apartado 8): cuatro ejes, doce lineas de actuacion
+ * y veintiun objetivos especificos, uno por cuadrado. Se dibujan los objetivos
+ * y no las acciones porque en estos coinciden el texto del Plan y sus tablas;
+ * en las acciones no (el texto dice 44 y las tablas numeran 43).
+ */
+function EstructuraPlanIgualdad() {
+  const EJES = [
+    {
+      letra: 'A',
+      nombre: ['Cultura de la', 'organización'],
+      lineas: [
+        { codigo: 'A.1', nombre: 'Comunicación y sensibilización', objetivos: 2 },
+        { codigo: 'A.2', nombre: 'Participación y negociación', objetivos: 2 },
+        { codigo: 'A.3', nombre: 'Formación', objetivos: 2 },
+        { codigo: 'A.4', nombre: 'Estructura y órganos de seguimiento', objetivos: 1 },
+      ],
+    },
+    {
+      letra: 'B',
+      nombre: ['Gestión de', 'recursos humanos'],
+      lineas: [
+        { codigo: 'B.1', nombre: 'Acceso', objetivos: 2 },
+        { codigo: 'B.2', nombre: 'Plantilla, RPT y promoción', objetivos: 3 },
+        { codigo: 'B.3', nombre: 'Retribuciones', objetivos: 2 },
+      ],
+    },
+    {
+      letra: 'C',
+      nombre: ['Conciliación y', 'corresponsabilidad'],
+      lineas: [
+        { codigo: 'C.1', nombre: 'Conciliación', objetivos: 2 },
+        { codigo: 'C.2', nombre: 'Corresponsabilidad', objetivos: 1 },
+      ],
+    },
+    {
+      letra: 'D',
+      nombre: ['Prevención, salud', 'laboral y acoso'],
+      lineas: [
+        { codigo: 'D.1', nombre: 'Prevención y salud laboral', objetivos: 2 },
+        { codigo: 'D.2', nombre: 'Clima laboral', objetivos: 1 },
+        { codigo: 'D.3', nombre: 'Protección frente al acoso', objetivos: 1 },
+      ],
+    },
+  ]
+  const FILA = 19
+  const HUECO = 8
+  const Y0 = 34
+  const X_CUADROS = 404
+  let y = Y0
+  const bandas = EJES.map((e) => {
+    const alto = e.lineas.length * FILA + 8
+    const banda = { ...e, y, alto }
+    y += alto + HUECO
+    return banda
+  })
+  const total = EJES.reduce((s, e) => s + e.lineas.reduce((t, l) => t + l.objetivos, 0), 0)
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <g fontSize="8" fontWeight="bold" fill="currentColor">
+        <text x="12" y="24">
+          EJE
+        </text>
+        <text x="154" y="24">
+          LÍNEA DE ACTUACIÓN
+        </text>
+        <text x={X_CUADROS} y="24">
+          OBJETIVOS ESPECÍFICOS
+        </text>
+        <text x="568" y="24" textAnchor="end">
+          POR EJE
+        </text>
+      </g>
+      {bandas.map((b) => {
+        const suma = b.lineas.reduce((t, l) => t + l.objetivos, 0)
+        return (
+          <g key={b.letra}>
+            <rect
+              data-pieza="eje"
+              data-eje={b.letra}
+              x="6"
+              y={b.y}
+              width="568"
+              height={b.alto}
+              rx="5"
+              fill={AZUL_CLARO}
+              fillOpacity="0.45"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+            <text x="14" y={b.y + 17} fontSize="13" fontWeight="bold" fill={ROJO}>
+              {b.letra}
+            </text>
+            <text x="32" y={b.y + 13} fontSize="8.5" fontWeight="bold" fill="currentColor">
+              {b.nombre[0]}
+            </text>
+            <text x="32" y={b.y + 24} fontSize="8.5" fontWeight="bold" fill="currentColor">
+              {b.nombre[1]}
+            </text>
+            {b.lineas.map((l, i) => {
+              const yc = b.y + 4 + i * FILA + FILA / 2
+              return (
+                <g key={l.codigo}>
+                  <text data-pieza="linea" x="154" y={yc + 3} fontSize="8.5" fill="currentColor">
+                    <tspan fontWeight="bold">{l.codigo}</tspan> {l.nombre}
+                  </text>
+                  {Array.from({ length: l.objetivos }, (_, k) => (
+                    <rect
+                      key={k}
+                      data-pieza="objetivo"
+                      x={X_CUADROS + k * 17}
+                      y={yc - 6}
+                      width="12"
+                      height="12"
+                      rx="2"
+                      fill={AZUL}
+                      stroke="currentColor"
+                      strokeWidth="0.9"
+                    />
+                  ))}
+                  <text data-pieza="cifra" x={X_CUADROS + 64} y={yc + 3} fontSize="9" fill="currentColor">
+                    {l.objetivos}
+                  </text>
+                </g>
+              )
+            })}
+            <text data-pieza="total-eje" x="562" y={b.y + b.alto / 2 + 4} fontSize="11" fontWeight="bold" textAnchor="end" fill="currentColor">
+              {suma}
+            </text>
+          </g>
+        )
+      })}
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y={y + 12}>
+          Cada eje tiene un objetivo general; cada línea, sus objetivos específicos; y de cada uno cuelgan
+        </text>
+        <text x="8" y={y + 25}>
+          acciones con plazo, responsables e indicadores.
+        </text>
+        <text x="568" y={y + 25} fontSize="10" fontWeight="bold" textAnchor="end">
+          total: <tspan data-pieza="total">{total}</tspan>
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * El circuito del Protocolo del Ayuntamiento de Zaragoza frente al acoso
+ * sexual, por razon de sexo y por orientacion sexual (Anexo II del II Plan,
+ * apartado VIII). La denuncia entra por la Asesoria Confidencial, que la
+ * inadmite, abre el procedimiento informal o pasa al formal; el formal lo
+ * lleva el Comite de Asesoramiento, y su informe de valoracion inicia el
+ * expediente que resuelve Relaciones Laborales.
+ */
+function CircuitoProtocoloAcoso() {
+  type Caja = { clave: string; x: number; y: number; titulo: string; pie: string; color: string }
+  const ANCHO_CAJA = 156
+  const ALTO_CAJA = 46
+  const C: Record<string, Caja> = {
+    denuncia: { clave: 'denuncia', x: 18, y: 24, titulo: 'Denuncia', pie: 'verbal o escrita; no anónima', color: AZUL_CLARO },
+    asesoria: { clave: 'asesoria', x: 212, y: 24, titulo: 'Asesoría Confidencial', pie: 'análisis inicial', color: ROJO },
+    inadmision: { clave: 'inadmision', x: 18, y: 134, titulo: 'No se admite a trámite', pie: 'fuera del ámbito del protocolo', color: AZUL_CLARO },
+    informal: { clave: 'informal', x: 212, y: 134, titulo: 'Procedimiento informal', pie: 'busca resolverlo sin expediente', color: AZUL },
+    comite: { clave: 'comite', x: 414, y: 134, titulo: 'Procedimiento formal', pie: 'Comité de Asesoramiento', color: AZUL },
+    acuerdo: { clave: 'acuerdo', x: 212, y: 244, titulo: 'Se resuelve', pie: 'con acuerdo de las partes', color: AZUL_CLARO },
+    relaciones: { clave: 'relaciones', x: 414, y: 244, titulo: 'Relaciones Laborales', pie: 'expediente y medidas', color: AZUL_CLARO },
+  }
+  const caja = (c: Caja) => (
+    <g key={c.clave}>
+      <rect
+        data-pieza={'nodo-' + c.clave}
+        x={c.x}
+        y={c.y}
+        width={ANCHO_CAJA}
+        height={ALTO_CAJA}
+        rx="5"
+        fill={c.color}
+        fillOpacity={c.color === ROJO ? 0.22 : 0.4}
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <text x={c.x + ANCHO_CAJA / 2} y={c.y + 19} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {c.titulo}
+      </text>
+      <text x={c.x + ANCHO_CAJA / 2} y={c.y + 34} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {c.pie}
+      </text>
+    </g>
+  )
+  const abajo = (c: Caja) => [c.x + ANCHO_CAJA / 2, c.y + ALTO_CAJA]
+  const arriba = (c: Caja) => [c.x + ANCHO_CAJA / 2, c.y]
+  const derecha = (c: Caja) => [c.x + ANCHO_CAJA, c.y + ALTO_CAJA / 2]
+  const izquierda = (c: Caja) => [c.x, c.y + ALTO_CAJA / 2]
+  const flecha = (clave: string, [x1, y1]: number[], [x2, y2]: number[]) => {
+    const ang = Math.atan2(y2 - y1, x2 - x1)
+    const punta = (s: number) => `${(x2 - 7 * Math.cos(ang + s)).toFixed(1)} ${(y2 - 7 * Math.sin(ang + s)).toFixed(1)}`
+    return (
+      <g key={clave} stroke="currentColor" strokeWidth="1.6" fill="none">
+        <line data-pieza="flecha" x1={x1.toFixed(1)} y1={y1} x2={x2.toFixed(1)} y2={y2} />
+        <path d={`M${punta(0.45)} L${x2} ${y2} L${punta(-0.45)}`} />
+      </g>
+    )
+  }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {Object.values(C).map(caja)}
+      {flecha('entra', derecha(C.denuncia), izquierda(C.asesoria))}
+      {flecha('inadmite', abajo(C.asesoria), arriba(C.inadmision))}
+      {flecha('informal', abajo(C.asesoria), arriba(C.informal))}
+      {flecha('formal', abajo(C.asesoria), arriba(C.comite))}
+      {flecha('resuelve', abajo(C.informal), arriba(C.acuerdo))}
+      {flecha('sin-acuerdo', derecha(C.informal), izquierda(C.comite))}
+      {flecha('informe', abajo(C.comite), arriba(C.relaciones))}
+
+      <g fontSize="8" fill="currentColor">
+        <text x={(derecha(C.informal)[0] + izquierda(C.comite)[0]) / 2} y={derecha(C.informal)[1] - 5} fontSize="7.5" textAnchor="middle">
+          sin acuerdo
+        </text>
+        <text x={abajo(C.comite)[0] - 6} y="214" textAnchor="end">
+          informe de valoración
+        </text>
+        <text x={abajo(C.comite)[0] - 6} y="225" textAnchor="end">
+          = expediente informativo
+        </text>
+        <text x="386" y="36">
+          también puede presentarse
+        </text>
+        <text x="386" y="47">
+          en el Servicio de Prevención
+        </text>
+        <text x="386" y="58">
+          y Salud Laboral
+        </text>
+      </g>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="316">
+          Garantías: confidencialidad (cada denuncia, con un código numérico), respeto, diligencia y celeridad,
+        </text>
+        <text x="8" y="329">
+          imparcialidad y prohibición de represalias. Contra la resolución del Comité caben alegaciones.
+        </text>
+        <text x="8" y="342">
+          Si hay riesgo, se proponen medidas cautelares a Relaciones Laborales, como separar a las personas.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -4850,6 +5108,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <AcreditacionCertificacion />
     case 'ciclo-acreditacion':
       return <CicloAcreditacion />
+    case 'estructura-plan-igualdad':
+      return <EstructuraPlanIgualdad />
+    case 'circuito-protocolo-acoso':
+      return <CircuitoProtocoloAcoso />
   }
 }
 

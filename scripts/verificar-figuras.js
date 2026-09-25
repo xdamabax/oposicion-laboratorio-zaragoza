@@ -689,6 +689,34 @@ function medir(sabotaje, ROJO) {
     const s = piezas(svg, 'seguimiento').sort((a, b) => num(a, 'cx') - num(b, 'cx'))[1]
     s.setAttribute('cx', num(s, 'cx') + 4 * porMes)
   }
+  if (sabotaje === 72) {
+    const svg = porClave('estructura-plan-igualdad')
+    // la linea B.2 dibujada con un objetivo de menos
+    piezas(svg, 'objetivo').sort((a, b) => num(b, 'x') - num(a, 'x'))[0].remove()
+  }
+  if (sabotaje === 73) {
+    const svg = porClave('estructura-plan-igualdad')
+    // el total del eje C, escrito con uno de mas
+    const t = piezas(svg, 'total-eje').sort((a, b) => a.getBBox().y - b.getBBox().y)[2]
+    t.textContent = String(Number(t.textContent) + 1)
+  }
+  if (sabotaje === 74) {
+    const svg = porClave('circuito-protocolo-acoso')
+    // la denuncia llevada directamente al Comite, saltandose la Asesoria
+    const f = piezas(svg, 'flecha').sort((a, b) => num(a, 'x1') - num(b, 'x1'))[0]
+    const c = pieza(svg, 'nodo-comite')
+    f.setAttribute('x2', num(c, 'x'))
+    f.setAttribute('y2', num(c, 'y') + num(c, 'height') / 2)
+  }
+  if (sabotaje === 75) {
+    const svg = porClave('circuito-protocolo-acoso')
+    // el informal sin acuerdo mandado a Relaciones Laborales, sin pasar por el Comite
+    const inf = pieza(svg, 'nodo-informal')
+    const f = piezas(svg, 'flecha').find((l) => Math.abs(num(l, 'x1') - (num(inf, 'x') + num(inf, 'width'))) < 1)
+    const r = pieza(svg, 'nodo-relaciones')
+    f.setAttribute('x2', num(r, 'x') + num(r, 'width') / 2)
+    f.setAttribute('y2', num(r, 'y'))
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -2451,6 +2479,110 @@ function medir(sabotaje, ROJO) {
     return `primer seguimiento en el mes ${(evaluaciones[0] - inicio).toFixed(0)}; huecos de ${huecos.join(', ')} meses`
   })
 
+  /*
+   * La estructura del II Plan de Igualdad municipal (apartado 8). Cada fila se
+   * lee por su altura: los cuadrados de objetivo y la cifra que caen a la
+   * altura de un rotulo de linea son los de esa linea.
+   */
+  const filasPlan = (svg) => {
+    const yDe = (el) => {
+      const c = el.getBBox()
+      return c.y + c.height / 2
+    }
+    const cifras = piezas(svg, 'cifra').map((c) => ({ n: Number(c.textContent.trim()), y: yDe(c) }))
+    const cuadros = piezas(svg, 'objetivo').map((q) => num(q, 'y') + num(q, 'height') / 2)
+    return piezas(svg, 'linea').map((l) => {
+      const y = yDe(l)
+      return {
+        texto: l.textContent.trim(),
+        y,
+        cifras: cifras.filter((c) => Math.abs(c.y - y) < 7).map((c) => c.n),
+        cuadros: cuadros.filter((q) => Math.abs(q - y) < 7).length,
+      }
+    })
+  }
+
+  control('Plan de igualdad · cada línea dibuja tantos objetivos como dice su cifra', () => {
+    const svg = porClave('estructura-plan-igualdad')
+    const filas = filasPlan(svg)
+    for (const f of filas) {
+      if (f.cifras.length !== 1) throw new Error(`la línea «${f.texto}» tiene ${f.cifras.length} cifras a su altura`)
+      if (f.cuadros !== f.cifras[0]) {
+        throw new Error(`la línea «${f.texto}» dice ${f.cifras[0]} objetivos y dibuja ${f.cuadros}`)
+      }
+    }
+    const cuadros = piezas(svg, 'objetivo').length
+    const enFilas = filas.reduce((s, f) => s + f.cuadros, 0)
+    if (cuadros !== enFilas) throw new Error(`${cuadros - enFilas} cuadrados de objetivo no caen a la altura de ninguna línea`)
+    return `${filas.length} líneas y ${cuadros} objetivos dibujados, cada línea con los que dice`
+  })
+
+  control('Plan de igualdad · cuatro ejes de 4, 3, 2 y 3 líneas, cuyos totales suman sus cifras, y 21 objetivos en total', () => {
+    const svg = porClave('estructura-plan-igualdad')
+    const filas = filasPlan(svg)
+    const bandas = piezas(svg, 'eje').sort((a, b) => num(a, 'y') - num(b, 'y'))
+    const dentro = (b, y) => y >= num(b, 'y') && y <= num(b, 'y') + num(b, 'height')
+    const reparto = []
+    let suma = 0
+    for (const b of bandas) {
+      const eje = b.getAttribute('data-eje')
+      const suyas = filas.filter((f) => dentro(b, f.y))
+      const totales = piezas(svg, 'total-eje').filter((t) => {
+        const c = t.getBBox()
+        return dentro(b, c.y + c.height / 2)
+      })
+      if (totales.length !== 1) throw new Error(`el eje ${eje} tiene ${totales.length} totales escritos`)
+      const cifra = suyas.reduce((s, f) => s + f.cifras[0], 0)
+      const escrito = Number(totales[0].textContent.trim())
+      if (escrito !== cifra) throw new Error(`el eje ${eje} dice ${escrito} objetivos y sus líneas suman ${cifra}`)
+      reparto.push(suyas.length)
+      suma += cifra
+    }
+    if (reparto.join(',') !== '4,3,2,3') {
+      throw new Error(`los ejes tienen ${reparto.join(', ')} líneas: el Plan reparte sus 12 líneas en 4, 3, 2 y 3`)
+    }
+    const total = Number(pieza(svg, 'total').textContent.trim())
+    if (total !== suma || total !== 21) {
+      throw new Error(`el total escrito es ${total}, las líneas suman ${suma}, y el Plan tiene 21 objetivos específicos`)
+    }
+    return `ejes de ${reparto.join(', ')} líneas; ${total} objetivos específicos`
+  })
+
+  /*
+   * El circuito del protocolo frente al acoso (Anexo II del II Plan, apartado
+   * VIII). Se lee de que caja sale y a que caja llega cada flecha.
+   */
+  control('Protocolo · la denuncia entra por la Asesoría Confidencial, y de ella salen las tres vías', () => {
+    const svg = porClave('circuito-protocolo-acoso')
+    const tramos = piezas(svg, 'flecha').map((f) => extremos(svg, f))
+    const deDenuncia = tramos.filter(([de]) => de === 'denuncia')
+    if (!deDenuncia.length) throw new Error('ninguna flecha sale de la denuncia')
+    for (const [, a] of deDenuncia) {
+      if (a !== 'asesoria') throw new Error(`la denuncia va a «${a}»: la recibe la Asesoría Confidencial`)
+    }
+    const vias = tramos
+      .filter(([de]) => de === 'asesoria')
+      .map(([, a]) => a)
+      .sort()
+    if (vias.join(',') !== 'comite,inadmision,informal') {
+      throw new Error(`de la Asesoría salen flechas a ${vias.join(', ') || 'ninguna parte'}: son la inadmisión, el informal y el formal`)
+    }
+    return 'denuncia → Asesoría Confidencial → inadmisión, informal o formal'
+  })
+
+  control('Protocolo · el informal sin acuerdo pasa al Comité, y solo el Comité llega a Relaciones Laborales', () => {
+    const svg = porClave('circuito-protocolo-acoso')
+    const tramos = piezas(svg, 'flecha').map((f) => extremos(svg, f))
+    if (!tramos.some(([de, a]) => de === 'informal' && a === 'comite')) {
+      throw new Error('el procedimiento informal sin acuerdo no pasa al Comité de Asesoramiento')
+    }
+    const aRelaciones = tramos.filter(([, a]) => a === 'relaciones').map(([de]) => de)
+    if (!aRelaciones.length) throw new Error('ninguna flecha llega a Relaciones Laborales')
+    const otro = aRelaciones.find((d) => d !== 'comite')
+    if (otro) throw new Error(`a Relaciones Laborales llega una flecha desde «${otro}»: el expediente lo inicia el informe del Comité`)
+    return 'informal → Comité si no hay acuerdo; Comité → Relaciones Laborales, y nadie más'
+  })
+
   return resultados
 }
 
@@ -2528,6 +2660,10 @@ const SABOTAJES = {
   69: 'ENAC certificando directamente a la empresa',
   70: 'el primer ciclo de acreditación dibujado de 5 años',
   71: 'el segundo seguimiento retrasado hasta dejar 21 meses sin evaluación',
+  72: 'la línea B.2 del Plan de Igualdad dibujada con un objetivo de menos',
+  73: 'el total del eje C del Plan de Igualdad escrito con uno de más',
+  74: 'la denuncia por acoso llevada directamente al Comité, sin pasar por la Asesoría',
+  75: 'el informal sin acuerdo mandado a Relaciones Laborales, sin pasar por el Comité',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -2609,6 +2745,10 @@ const CONTROL_DE = {
   69: [67],
   70: [68],
   71: [69],
+  72: [70],
+  73: [71],
+  74: [72],
+  75: [73],
 }
 
 async function main() {
