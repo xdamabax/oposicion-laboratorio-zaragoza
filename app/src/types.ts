@@ -83,6 +83,8 @@ export type TipoEsquema =
   | 'circuito-protocolo-acoso'
   | 'instituciones-aragon'
   | 'clases-competencias'
+  | 'plazos-procedimiento'
+  | 'fases-procedimiento'
 
 export type TipoMaterial =
   | 'matraz-aforado'

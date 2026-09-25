@@ -753,6 +753,41 @@ function medir(sabotaje, ROJO) {
     a[1].textContent = t2
     a[2].textContent = t1
   }
+  if (sabotaje === 80) {
+    const svg = porClave('plazos-procedimiento')
+    // la audiencia alargada a 20 dias, y su cifra con ella: dibujo y rotulo de acuerdo, pero contra la ley
+    const t0 = num(pieza(svg, 'tick-0'), 'x1')
+    const porDia = (num(pieza(svg, 'tick-35'), 'x1') - t0) / 35
+    const tramos = piezas(svg, 'tramo').sort((a, b) => num(a, 'width') - num(b, 'width'))
+    const audiencia = tramos[0]
+    audiencia.setAttribute('width', 10 * porDia)
+    const cy = num(audiencia, 'y') + num(audiencia, 'height') / 2
+    const cifra = piezas(svg, 'cifra').find((c) => {
+      const b = c.getBBox()
+      return Math.abs(b.y + b.height / 2 - cy) < 10
+    })
+    cifra.textContent = '10 a 20 días'
+  }
+  if (sabotaje === 81) {
+    const svg = porClave('plazos-procedimiento')
+    // la cifra del periodo de prueba, escrita distinta de lo que dibuja la barra
+    const cifra = piezas(svg, 'cifra').find((c) => c.textContent.trim() === '10 a 30 días')
+    cifra.textContent = '10 a 20 días'
+  }
+  if (sabotaje === 82) {
+    const svg = porClave('fases-procedimiento')
+    // de la iniciacion a la instruccion, saltandose la ordenacion
+    const f = piezas(svg, 'fase').sort((a, b) => num(a, 'x1') - num(b, 'x1'))[0]
+    f.setAttribute('x2', num(pieza(svg, 'nodo-instruccion'), 'x'))
+  }
+  if (sabotaje === 83) {
+    const svg = porClave('fases-procedimiento')
+    // la denuncia colgada de la solicitud del interesado
+    const f = piezas(svg, 'via').sort((a, b) => num(b, 'y1') - num(a, 'y1'))[0]
+    const s = pieza(svg, 'nodo-solicitud')
+    f.setAttribute('x2', num(s, 'x') + num(s, 'width'))
+    f.setAttribute('y2', num(s, 'y') + num(s, 'height') / 2)
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -2716,6 +2751,134 @@ function medir(sabotaje, ROJO) {
     return 'exclusivas → art. 71, compartidas → art. 75, ejecutivas → art. 77'
   })
 
+  /*
+   * Los plazos del titulo IV de la Ley 39/2015. La escala de dias sale de las
+   * marcas del propio eje, y cada fila se lee por la altura de su rotulo.
+   */
+  const filasPlazos = (svg) => {
+    const t0 = num(pieza(svg, 'tick-0'), 'x1')
+    const porDia = (num(pieza(svg, 'tick-35'), 'x1') - t0) / 35
+    if (!(porDia > 1)) throw new Error('las marcas del eje no dejan reconstruir la escala de días')
+    const dia = (x) => (x - t0) / porDia
+    const cy = (el) => {
+      const b = el.getBBox()
+      return b.y + b.height / 2
+    }
+    const cerca = (el, y) => Math.abs(cy(el) - y) < 12
+    return piezas(svg, 'fila').map((r) => {
+      const y = cy(r) + 4
+      const de = (clave) => piezas(svg, clave).filter((el) => cerca(el, y))
+      return {
+        rotulo: r.textContent.trim(),
+        fijos: de('fijo').map((el) => dia(num(el, 'x') + num(el, 'width') / 2)),
+        tramos: de('tramo').map((el) => [dia(num(el, 'x')), dia(num(el, 'x') + num(el, 'width'))]),
+        abiertos: de('abierto').map((el) => [dia(num(el, 'x')), dia(num(el, 'x') + num(el, 'width'))]),
+        ampliaciones: de('ampliacion').map((el) => [dia(num(el, 'x1')), dia(num(el, 'x2'))]),
+        cifras: de('cifra').map((el) => el.textContent.trim()).filter((s) => s),
+      }
+    })
+  }
+  const redondo = (v) => Math.round(v * 10) / 10
+
+  control('Plazos · cada plazo está dibujado en su intervalo legal, en días hábiles', () => {
+    const svg = porClave('plazos-procedimiento')
+    const LEY = {
+      'Subsanar la solicitud': { fijo: 10, ampliacion: [10, 15] },
+      'Cumplir un trámite': { fijo: 10 },
+      'Emitir un informe': { fijo: 10 },
+      'Alegar tras actuaciones complementarias': { fijo: 7 },
+      'Periodo de prueba': { tramo: [10, 30] },
+      'Trámite de audiencia': { tramo: [10, 15] },
+      'Información pública': { desde: 20 },
+    }
+    const filas = filasPlazos(svg)
+    const vistas = new Set()
+    for (const fl of filas) {
+      const ley = LEY[fl.rotulo]
+      if (!ley) throw new Error(`fila desconocida: «${fl.rotulo}»`)
+      vistas.add(fl.rotulo)
+      const mal = (dibujo, debe) => {
+        throw new Error(`«${fl.rotulo}» está dibujado ${dibujo}, y la ley dice ${debe}`)
+      }
+      if (ley.fijo !== undefined) {
+        if (fl.fijos.length !== 1 || Math.abs(fl.fijos[0] - ley.fijo) > 0.3) mal(`en ${fl.fijos.map(redondo).join(', ') || 'ningún día'}`, `${ley.fijo} días`)
+      }
+      if (ley.ampliacion) {
+        const a = fl.ampliaciones[0]
+        if (!a || Math.abs(a[0] - ley.ampliacion[0]) > 0.3 || Math.abs(a[1] - ley.ampliacion[1]) > 0.3) {
+          mal(`con ampliación ${a ? a.map(redondo).join('-') : 'ninguna'}`, 'ampliable hasta 5 días más (art. 68.2)')
+        }
+      }
+      if (ley.tramo) {
+        const r = fl.tramos[0]
+        if (!r || Math.abs(r[0] - ley.tramo[0]) > 0.3 || Math.abs(r[1] - ley.tramo[1]) > 0.3) {
+          mal(`de ${r ? r.map(redondo).join(' a ') : '—'} días`, `de ${ley.tramo.join(' a ')}`)
+        }
+      }
+      if (ley.desde !== undefined) {
+        const r = fl.abiertos[0]
+        if (!r || Math.abs(r[0] - ley.desde) > 0.3 || r[1] < 34.7) mal(`desde ${r ? redondo(r[0]) : '—'}`, `no menos de ${ley.desde} días y sin tope`)
+      }
+    }
+    const faltan = Object.keys(LEY).filter((k) => !vistas.has(k))
+    if (faltan.length) throw new Error(`faltan filas: ${faltan.join(', ')}`)
+    return `${filas.length} plazos, cada uno en su intervalo legal`
+  })
+
+  control('Plazos · la cifra escrita en cada fila dice lo mismo que su dibujo', () => {
+    const svg = porClave('plazos-procedimiento')
+    for (const fl of filasPlazos(svg)) {
+      if (fl.cifras.length !== 1) throw new Error(`«${fl.rotulo}» tiene ${fl.cifras.length} cifras escritas`)
+      const n = (fl.cifras[0].match(/\d+/g) || []).map(Number)
+      let dibujo
+      if (fl.fijos.length) dibujo = [fl.fijos[0], ...fl.ampliaciones.map((a) => a[1] - a[0])]
+      else if (fl.tramos.length) dibujo = fl.tramos[0]
+      else dibujo = [fl.abiertos[0][0]]
+      dibujo = dibujo.map((v) => Math.round(v))
+      if (n.join(',') !== dibujo.join(',')) {
+        throw new Error(`«${fl.rotulo}» dice «${fl.cifras[0]}» y el dibujo marca ${dibujo.join(' / ')}`)
+      }
+    }
+    return 'cada cifra escrita coincide con su barra o su rombo'
+  })
+
+  /*
+   * Las fases del titulo IV y la iniciacion de oficio. Se lee de que caja sale
+   * y a que caja llega cada flecha.
+   */
+  const ORDEN_FASES = ['iniciacion', 'ordenacion', 'instruccion', 'finalizacion', 'ejecucion']
+
+  control('Fases · las cinco fases van en el orden de los capítulos, y cada flecha une una con la siguiente', () => {
+    const svg = porClave('fases-procedimiento')
+    const cajas = ORDEN_FASES.map((c) => pieza(svg, 'nodo-' + c))
+    const porX = [...cajas].sort((a, b) => num(a, 'x') - num(b, 'x')).map((c) => c.getAttribute('data-pieza').replace('nodo-', ''))
+    if (porX.join() !== ORDEN_FASES.join()) throw new Error(`las fases van en el orden ${porX.join(' → ')}`)
+    const tramos = piezas(svg, 'fase').map((f) => extremos(svg, f))
+    if (tramos.length !== 4) throw new Error(`hay ${tramos.length} flechas entre fases y son 4`)
+    for (const [de, a] of tramos) {
+      const i = ORDEN_FASES.indexOf(de)
+      if (i < 0 || ORDEN_FASES[i + 1] !== a) throw new Error(`una flecha va de «${de}» a «${a}»: cada fase lleva a la siguiente`)
+    }
+    return ORDEN_FASES.join(' → ')
+  })
+
+  control('Iniciación · propia iniciativa, orden superior, petición razonada y denuncia inician de oficio; ninguna cuelga de la solicitud', () => {
+    const svg = porClave('fases-procedimiento')
+    const VIAS = ['propia', 'orden', 'peticion', 'denuncia']
+    const tramos = piezas(svg, 'via').map((f) => extremos(svg, f))
+    for (const [de, a] of tramos) {
+      if (!VIAS.includes(de)) throw new Error(`una vía de iniciación sale de «${de}»`)
+      if (a !== 'oficio') throw new Error(`«${de}» lleva a «${a}»: las cuatro vías del art. 58 son de iniciación DE OFICIO`)
+    }
+    const origenes = tramos.map(([de]) => de).sort()
+    if (origenes.join() !== [...VIAS].sort().join()) throw new Error(`llegan a «de oficio» ${origenes.join(', ')}; son las cuatro del art. 58`)
+    const inicia = piezas(svg, 'inicia').map((f) => extremos(svg, f))
+    for (const destino of ['oficio', 'solicitud']) {
+      if (!inicia.some(([de, a]) => de === 'iniciacion' && a === destino)) throw new Error(`la iniciación no se abre en «${destino}» (art. 54)`)
+    }
+    return 'cuatro vías → de oficio; iniciación → de oficio o a solicitud'
+  })
+
   return resultados
 }
 
@@ -2801,6 +2964,10 @@ const SABOTAJES = {
   77: 'el Presidente de Aragón elegido directamente por el pueblo',
   78: 'en las competencias ejecutivas, el desarrollo normativo pintado como de Aragón',
   79: 'los artículos de las competencias compartidas y ejecutivas, cambiados de columna',
+  80: 'el trámite de audiencia alargado a 20 días, dibujo y cifra de acuerdo entre sí pero no con la ley',
+  81: 'la cifra del periodo de prueba escrita distinta de lo que dibuja su barra',
+  82: 'de la iniciación a la instrucción, saltándose la ordenación',
+  83: 'la denuncia colgada de la solicitud del interesado en vez de la iniciación de oficio',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -2890,6 +3057,10 @@ const CONTROL_DE = {
   77: [75],
   78: [76],
   79: [77],
+  80: [78],
+  81: [79],
+  82: [80],
+  83: [81],
 }
 
 async function main() {

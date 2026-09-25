@@ -57,6 +57,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'circuito-protocolo-acoso': 'El circuito de una denuncia en el protocolo frente al acoso',
   'instituciones-aragon': 'Las instituciones de Aragón y cómo se relacionan',
   'clases-competencias': 'Las tres clases de competencias: quién legisla y quién ejecuta',
+  'plazos-procedimiento': 'Los plazos del procedimiento, en días hábiles',
+  'fases-procedimiento': 'Las fases del procedimiento y cómo se inicia',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -108,6 +110,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'circuito-protocolo-acoso': { ancho: 580, alto: 352 },
   'instituciones-aragon': { ancho: 580, alto: 398 },
   'clases-competencias': { ancho: 580, alto: 306 },
+  'plazos-procedimiento': { ancho: 580, alto: 316 },
+  'fases-procedimiento': { ancho: 580, alto: 330 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5227,6 +5231,215 @@ function ClasesCompetencias() {
   )
 }
 
+/**
+ * Los plazos del titulo IV de la Ley 39/2015 sobre una escala de dias habiles
+ * (art. 30.2). Una barra es un intervalo legal (prueba 10-30, art. 77.2;
+ * audiencia 10-15, art. 82.2); un rombo, un plazo fijo (subsanacion 10, art.
+ * 68.1; tramites 10, art. 73.1; informes 10, art. 80.2; alegaciones tras
+ * actuaciones complementarias 7, art. 87); la subsanacion puede ampliarse hasta
+ * 5 dias (art. 68.2), y la informacion publica no baja de 20 (art. 83.2).
+ */
+function PlazosProcedimiento() {
+  const X0 = 250
+  const DIAS = 35
+  const ANCHO = 310
+  const xDe = (d: number) => X0 + (d / DIAS) * ANCHO
+  const Y0 = 34
+  const FILA = 34
+  type Fila = { rotulo: string; art: string; min: number; max: number | null; ampliable?: number; cifra: string }
+  const FILAS: Fila[] = [
+    { rotulo: 'Subsanar la solicitud', art: 'art. 68', min: 10, max: 10, ampliable: 5, cifra: '10 días (+5)' },
+    { rotulo: 'Cumplir un trámite', art: 'art. 73', min: 10, max: 10, cifra: '10 días' },
+    { rotulo: 'Emitir un informe', art: 'art. 80', min: 10, max: 10, cifra: '10 días' },
+    { rotulo: 'Alegar tras actuaciones complementarias', art: 'art. 87', min: 7, max: 7, cifra: '7 días' },
+    { rotulo: 'Periodo de prueba', art: 'art. 77', min: 10, max: 30, cifra: '10 a 30 días' },
+    { rotulo: 'Trámite de audiencia', art: 'art. 82', min: 10, max: 15, cifra: '10 a 15 días' },
+    { rotulo: 'Información pública', art: 'art. 83', min: 20, max: null, cifra: '20 días o más' },
+  ]
+  const yEje = Y0 + FILAS.length * FILA + 6
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* rejilla y eje */}
+      {Array.from({ length: 8 }, (_, i) => i * 5).map((d) => (
+        <g key={d}>
+          <line x1={xDe(d)} y1={Y0 - 10} x2={xDe(d)} y2={yEje} stroke="currentColor" strokeOpacity="0.15" />
+          <line data-pieza={'tick-' + d} x1={xDe(d)} y1={yEje} x2={xDe(d)} y2={yEje + 5} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(d)} y={yEje + 16} fontSize="8" textAnchor="middle" fill="currentColor">
+            {d}
+          </text>
+        </g>
+      ))}
+      <line x1={xDe(0)} y1={yEje} x2={xDe(DIAS)} y2={yEje} stroke="currentColor" strokeWidth="1.3" />
+      <text x={xDe(DIAS)} y={yEje + 30} fontSize="8" textAnchor="end" fill="currentColor">
+        días hábiles: sin sábados, domingos ni festivos (art. 30.2)
+      </text>
+
+      {FILAS.map((f, i) => {
+        const yc = Y0 + i * FILA + FILA / 2
+        return (
+          <g key={f.art + f.rotulo}>
+            <text data-pieza="fila" x="10" y={yc - 1} fontSize="8.5" fill="currentColor">
+              {f.rotulo}
+            </text>
+            <text x="10" y={yc + 10} fontSize="7.5" fill="currentColor" fillOpacity="0.8">
+              {f.art}
+            </text>
+            {f.max === f.min ? (
+              <rect
+                data-pieza="fijo"
+                x={xDe(f.min) - 5}
+                y={yc - 5}
+                width="10"
+                height="10"
+                transform={`rotate(45 ${xDe(f.min)} ${yc})`}
+                fill={ROJO}
+                stroke="currentColor"
+                strokeWidth="0.8"
+              />
+            ) : (
+              <rect
+                data-pieza={f.max === null ? 'abierto' : 'tramo'}
+                x={xDe(f.min)}
+                y={yc - 6}
+                width={xDe(f.max ?? DIAS) - xDe(f.min)}
+                height="12"
+                rx="2"
+                fill={AZUL}
+                fillOpacity="0.7"
+                stroke="currentColor"
+                strokeWidth="0.8"
+              />
+            )}
+            {f.max === null && (
+              <path d={`M${xDe(DIAS) - 2} ${yc - 9} L${xDe(DIAS) + 8} ${yc} L${xDe(DIAS) - 2} ${yc + 9}`} fill="none" stroke="currentColor" strokeWidth="1.4" />
+            )}
+            {f.ampliable && (
+              <line
+                data-pieza="ampliacion"
+                x1={xDe(f.min)}
+                y1={yc}
+                x2={xDe(f.min + f.ampliable)}
+                y2={yc}
+                stroke={ROJO}
+                strokeWidth="2"
+                strokeDasharray="3 2"
+              />
+            )}
+            <text data-pieza="cifra" x={xDe((f.max ?? f.min) + (f.ampliable ?? 0)) + 12} y={yc + 3} fontSize="8.5" fontWeight="bold" fill="currentColor">
+              {f.max === null ? '' : f.cifra}
+            </text>
+            {f.max === null && (
+              <text data-pieza="cifra" x={xDe(f.min) - 6} y={yc + 3} fontSize="8.5" fontWeight="bold" textAnchor="end" fill="currentColor">
+                {f.cifra}
+              </text>
+            )}
+          </g>
+        )
+      })}
+    </g>
+  )
+}
+
+/**
+ * Las fases del procedimiento administrativo comun en el orden de los
+ * capitulos del titulo IV de la Ley 39/2015 (iniciacion, II; ordenacion, III;
+ * instruccion, IV; finalizacion, V; ejecucion, VII), y las cuatro formas de
+ * iniciacion de oficio del art. 58, frente a la solicitud del interesado
+ * (art. 66). La denuncia inicia DE OFICIO y no hace interesado al denunciante
+ * (art. 62.5).
+ */
+function FasesProcedimiento() {
+  type Caja = { clave: string; x: number; y: number; an: number; al: number; titulo: string; pie: string; color: string }
+  const FASES: Caja[] = [
+    { clave: 'iniciacion', titulo: 'Iniciación', pie: 'arts. 54 a 69' },
+    { clave: 'ordenacion', titulo: 'Ordenación', pie: 'arts. 70 a 74' },
+    { clave: 'instruccion', titulo: 'Instrucción', pie: 'arts. 75 a 83' },
+    { clave: 'finalizacion', titulo: 'Finalización', pie: 'arts. 84 a 95' },
+    { clave: 'ejecucion', titulo: 'Ejecución', pie: 'arts. 97 a 105' },
+  ].map((f, i) => ({ ...f, x: 11 + i * 114, y: 30, an: 102, al: 46, color: i === 0 ? ROJO : AZUL }))
+  const OFICIO: Caja = { clave: 'oficio', x: 40, y: 158, an: 150, al: 44, titulo: 'De oficio', pie: 'acuerdo del órgano (art. 58)', color: AZUL }
+  const SOLICITUD: Caja = { clave: 'solicitud', x: 11, y: 272, an: 150, al: 44, titulo: 'A solicitud', pie: 'del interesado (art. 66)', color: AZUL_CLARO }
+  const VIAS: Caja[] = [
+    { clave: 'propia', titulo: 'Propia iniciativa', pie: 'art. 59' },
+    { clave: 'orden', titulo: 'Orden superior', pie: 'art. 60' },
+    { clave: 'peticion', titulo: 'Petición razonada', pie: 'de otro órgano (art. 61)' },
+    { clave: 'denuncia', titulo: 'Denuncia', pie: 'art. 62' },
+  ].map((v, i) => ({ ...v, x: 214, y: 118 + i * 38, an: 150, al: 30, color: AZUL_CLARO }))
+  const caja = (c: Caja, grande = true) => (
+    <g key={c.clave}>
+      <rect
+        data-pieza={'nodo-' + c.clave}
+        x={c.x}
+        y={c.y}
+        width={c.an}
+        height={c.al}
+        rx="5"
+        fill={c.color}
+        fillOpacity={c.color === ROJO ? 0.22 : 0.4}
+        stroke="currentColor"
+        strokeWidth="1.1"
+      />
+      <text x={c.x + c.an / 2} y={c.y + (grande ? 19 : 13)} fontSize={grande ? 9.5 : 8.5} fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {c.titulo}
+      </text>
+      <text x={c.x + c.an / 2} y={c.y + (grande ? 34 : 24)} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {c.pie}
+      </text>
+    </g>
+  )
+  const flecha = (tipo: string, clave: string, [x1, y1]: number[], [x2, y2]: number[]) => {
+    const ang = Math.atan2(y2 - y1, x2 - x1)
+    const punta = (s: number) => `${(x2 - 6 * Math.cos(ang + s)).toFixed(1)} ${(y2 - 6 * Math.sin(ang + s)).toFixed(1)}`
+    return (
+      <g key={clave} stroke="currentColor" strokeWidth="1.4" fill="none">
+        <line data-pieza={tipo} x1={x1.toFixed(1)} y1={y1.toFixed(1)} x2={x2.toFixed(1)} y2={y2.toFixed(1)} />
+        <path d={`M${punta(0.45)} L${x2.toFixed(1)} ${y2.toFixed(1)} L${punta(-0.45)}`} />
+      </g>
+    )
+  }
+  const ini = FASES[0]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {FASES.map((f) => caja(f))}
+      {FASES.slice(1).map((f, i) =>
+        flecha('fase', 'fase-' + f.clave, [FASES[i].x + FASES[i].an, FASES[i].y + FASES[i].al / 2], [f.x, f.y + f.al / 2]),
+      )}
+      {caja(OFICIO)}
+      {caja(SOLICITUD)}
+      {VIAS.map((v) => caja(v, false))}
+      {flecha('inicia', 'ini-oficio', [ini.x + 60, ini.y + ini.al], [OFICIO.x + 31, OFICIO.y])}
+      {flecha('inicia', 'ini-solicitud', [ini.x + 12, ini.y + ini.al], [SOLICITUD.x + 12, SOLICITUD.y])}
+      {VIAS.map((v) => flecha('via', 'via-' + v.clave, [v.x, v.y + v.al / 2], [OFICIO.x + OFICIO.an, OFICIO.y + OFICIO.al / 2]))}
+
+      <g fontSize="8" fill="currentColor">
+        <text x="388" y="124">
+          Terminan el procedimiento (art. 84):
+        </text>
+        {['la resolución', 'el desistimiento', 'la renuncia al derecho', 'la caducidad', 'la imposibilidad material de', 'continuarlo, sobrevenida'].map((t, i) => (
+          <text key={t} x="394" y={140 + i * 13}>
+            {i < 5 ? '· ' : '  '}
+            {t}
+          </text>
+        ))}
+        <text x="214" y="290">
+          La denuncia no convierte por sí sola al denunciante
+        </text>
+        <text x="214" y="302">
+          en interesado (art. 62.5). Y el sancionador se inicia
+        </text>
+        <text x="214" y="314">
+          siempre de oficio (art. 63.1).
+        </text>
+      </g>
+      <text x="290" y="100" fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.8">
+        (el capítulo VI es la tramitación simplificada, art. 96)
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -5323,6 +5536,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <InstitucionesAragon />
     case 'clases-competencias':
       return <ClasesCompetencias />
+    case 'plazos-procedimiento':
+      return <PlazosProcedimiento />
+    case 'fases-procedimiento':
+      return <FasesProcedimiento />
   }
 }
 
