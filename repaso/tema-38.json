@@ -349,6 +349,21 @@
       "reverso": "Anexo III, parte E.3:\n- **Cualitativos** (presencia/ausencia) → **como mínimo, el límite de detección**; si hace falta, sensibilidad, especificidad, falsos positivos y negativos, eficiencia o selectividad.\n- **Cuantitativos** (recuento) → **recuperación y precisión** en todo el rango, por **incorporación en placa, extensión en placa o filtración en membrana**.\n- **Incertidumbre, solo en los de recuento**: *«No es de aplicación a métodos cualitativos **ni NMP**.»*",
       "fuente": "RD 3/2023, anexo III, parte E.3",
       "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t38-f46",
+      "anverso": "Mirando las cuatro dianas: ¿cuál es la que el examen de 1246 (#47) llama **«exacta pero no precisa»**?",
+      "reverso": "La de **arriba a la derecha**: impactos **dispersos**, pero con la **media en el centro**.\nEl examen usa «exacto» en el sentido antiguo de **veraz**: sin sesgo. Las otras dos opciones de aquella pregunta eran los impactos **apretados y desplazados** (preciso, con sesgo) y **apretados en el centro** (veraz y preciso).",
+      "fuente": "Cuestionario 1246 primer ejercicio #47; VIM 2.13 y 2.14",
+      "etiquetas": [
+        "examen",
+        "figura"
+      ],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "dianas-veracidad-precision"
+      },
+      "nucleo": true
     }
   ],
   "test": [
@@ -725,6 +740,19 @@
       "correcta": 2,
       "explicacion": "Nota 2 de la tabla 14: «con un factor de expansión del 1,96, según la ISO Guide for the Expression of Uncertainty in Measurement». Es la excepción: el resto del RD (tabla 15) trabaja con k = 2.",
       "fuente": "RD 3/2023, anexo III, tabla 14, nota 2"
+    },
+    {
+      "id": "t38-q31",
+      "pregunta": "Se muestran tres dianas: a) impactos muy juntos entre sí pero lejos del centro; b) impactos dispersos, repartidos alrededor del centro; c) impactos muy juntos en el centro. ¿Cuál representa resultados «exactos pero no precisos»?",
+      "opciones": [
+        "La a).",
+        "La b).",
+        "La c)."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la pregunta 1246 #47, cuyas opciones eran dibujos. «Exacto» se usa en el sentido de veraz: la media de los impactos cae en el centro, aunque estén dispersos (imprecisos). La a) es precisa pero sesgada y la c), veraz y precisa.",
+      "fuente": "Cuestionario 1246 primer ejercicio #47; VIM 2.14 y 2.15",
+      "nucleo": true
     }
   ],
   "supuestos": [

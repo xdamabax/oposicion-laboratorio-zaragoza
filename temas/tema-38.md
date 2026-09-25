@@ -16,16 +16,19 @@ fuentes:
   - "Real Decreto 817/2015, de 11 de septiembre, de seguimiento y evaluación del estado de las aguas superficiales (BOE-A-2015-9806), texto consolidado. LEÍDO: artículo 3, definiciones 23 (incertidumbre de medida), 25 (límite de cuantificación) y 26 (límite de detección), a las que remite el RD 3/2023; y el anexo III, apartado C: métodos validados conforme a la ISO/IEC 17025, incertidumbre ≤ 50 % (k = 2) y LC ≤ 30 % de la NCA, cálculo de medias con resultados < LC y demostración de capacidad con ensayos de aptitud y materiales de referencia. — https://www.boe.es/buscar/act.php?id=BOE-A-2015-9806"
   - "ENAC, CGA-ENAC-LEC Rev. 12, abril de 2024, «Criterios generales para la acreditación de laboratorios de ensayo y calibración según norma UNE-EN ISO/IEC 17025:2017». LEÍDO ENTERO (7 págs.): de su anexo I salen, en castellano y entre comillas, la cláusula 7.2.1.5 de la norma, las definiciones de método normalizado, interno basado en normalizado y desarrollado por el laboratorio, y la exigencia de validación completa para estos últimos. — https://www.enac.es/documents/7020/b7e24234-daba-4a62-9652-76eb7e96db30"
   - "UNE-EN ISO/IEC 17025:2017 (versión corregida el 09/05/2018), Requisitos generales para la competencia de los laboratorios de ensayo y calibración. VIGENTE; edición de 20/12/2017; anula a la de 2005. Comprobado en el buscador de UNE. Leído el extracto público de AENOR (índice y capítulos 1 y 2); el articulado es de pago. — https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0059467"
-  - "ExamenesAnteriores/ y los seis cuestionarios, extraídos a texto y barridos el 25/09/2026 con «validación», «incertidumbre», «exactitud», «precisión», «repetibilidad», «sesgo», «recuperación», «límite de detección», «cuantificación», «linealidad» y «robustez». De ahí sale, TRANSCRITA con sus tres opciones, la única pregunta directa del tema (1246, primer ejercicio, #19), y la pregunta del material de referencia de la auditoría ISO 17025 (1322, segundo ejercicio, supuesto 1, #10)."
+  - "ExamenesAnteriores/ y los seis cuestionarios, extraídos a texto y barridos el 25/09/2026 con «validación», «incertidumbre», «exactitud», «precisión», «repetibilidad», «sesgo», «recuperación», «límite de detección», «cuantificación», «linealidad» y «robustez». De ahí sale, TRANSCRITA con sus tres opciones, la pregunta directa del cálculo de incertidumbre (1246, primer ejercicio, #19), la de las dianas (1246, primer ejercicio, #47, con las opciones en imagen, vista renderizando la página), y la pregunta del material de referencia de la auditoría ISO 17025 (1322, segundo ejercicio, supuesto 1, #10)."
   - "TEMARIO EXTRA/MAPEO.md: el tema 38 figura como «sin nada». Comprobado de nuevo por búsqueda en el propio mapeo; no hay ficha de apoyo."
 ---
 
-> **UNA PREGUNTA DIRECTA, Y UNA SEGUNDA DENTRO DE UN SUPUESTO DE AUDITORÍA.** En los seis cuestionarios hay **poco de este tema**, pero lo que hay es muy limpio:
+> **DOS PREGUNTAS DIRECTAS, Y UNA TERCERA DENTRO DE UN SUPUESTO DE AUDITORÍA.** En los seis cuestionarios hay **poco de este tema**, pero lo que hay es muy limpio:
 >
 > | Dónde | Enunciado literal | Respuesta |
 > | --- | --- | --- |
 > | **1246, primer ejercicio, #19** | *«Para el cálculo de la incertidumbre de un método analítico necesitamos conocer los siguientes parámetros:»* | **a) Exactitud y Precisión** |
+> | **1246, primer ejercicio, #47** | *«Cuales de los siguientes resultados son "Exactos pero no precisos"?»*, con **tres dianas dibujadas** como opciones: a) impactos **apretados y desplazados** del centro; b) impactos **dispersos alrededor** del centro; c) impactos **apretados en el centro** | **b)**, la de los impactos dispersos alrededor del centro |
 > | **1322, segundo ejercicio, supuesto 1, #10** | *«¿Cuál de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de agua de consumo solicitada en la auditoría?»* | **b) Un material de referencia de agua de consumo con una concentración de 5 mg/l de analito** |
+>
+> La **#47** tiene las opciones en imagen y no sale al extraer el PDF a texto: la localicé al preparar el tema 39, renderizando la página. Es **exactamente la figura de las cuatro dianas** de este apunte, y usa «exacto» en el sentido antiguo de **veraz**: *exacto pero no preciso* = la diana **«veraz, pero impreciso»**.
 >
 > Distractores de la #19: *«Límite de Detección y Límite de Cuantificación»* y *«Sensibilidad y Selectividad»*. Los dos son características de validación **reales**, que es lo que los hace peligrosos, pero **no entran en el cálculo de la incertidumbre**. Lo que entra es la **precisión** (el error aleatorio) y la **veracidad** (el error sistemático, el sesgo): eso es exactamente el modelo de los laboratorios de aguas, **uc = √(u(Rw)² + u(sesgo)²)**, desarrollado en el apartado 2.6.
 >
@@ -604,7 +607,9 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 **4. La validación termina con una DECLARACIÓN DE APTITUD para el uso previsto** (RD 3/2023, parte E; ISO/IEC 17025, 7.2.2.4).
 
-**5. Exactitud = veracidad + precisión.** La **veracidad** va con el **error sistemático** y se mide con el **sesgo**; la **precisión** va con el **aleatorio** y se mide con la **desviación típica**. La exactitud **no se expresa numéricamente**.
+**5. «Exacto pero no preciso» (1246 #47) es la diana con los impactos DISPERSOS ALREDEDOR DEL CENTRO**: media centrada (veraz) y mucha dispersión (imprecisa). En el examen, «exacto» se usa como «veraz».
+
+**5 bis. Exactitud = veracidad + precisión.** La **veracidad** va con el **error sistemático** y se mide con el **sesgo**; la **precisión** va con el **aleatorio** y se mide con la **desviación típica**. La exactitud **no se expresa numéricamente**.
 
 **6. Repetibilidad < precisión intermedia < reproducibilidad.** Lo que cambia: **nada** / **días, analistas y equipos** / **el laboratorio**.
 
@@ -666,7 +671,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 - **ENAC, CGA-ENAC-LEC Rev. 12 (abril de 2024)**, leído entero; de su anexo I sale la cláusula 7.2.1.5 **en castellano literal**.
 - **UNE-EN ISO/IEC 17025:2017**: estado **vigente** comprobado en el buscador de UNE el 25/09/2026.
 - **ISO 11352**: comprobado en la ficha de AENOR que la edición de 2012 está **anulada desde el 01/09/2025**, y en la de ISO que la vigente es la **ISO 11352:2025**, edición 2.
-- **Exámenes anteriores:** los seis cuestionarios extraídos a texto y barridos con doce palabras clave del tema. **Dos preguntas** encajan (1246 #19 y 1322 C2 #10), transcritas con sus opciones. Las dos de **R²** (1233 #18 y 1322 C2 #3) **se dejan para el tema 39**, que es el de la calibración por mínimos cuadrados.
+- **Exámenes anteriores:** los seis cuestionarios extraídos a texto y barridos con doce palabras clave del tema. **Tres preguntas** encajan (1246 #19 y #47, y 1322 C2 #10), transcritas con sus opciones. La #47 tiene las opciones dibujadas y **no aparece al extraer a texto**: se localizó el 25/09/2026, al preparar el tema 39, renderizando la página del PDF con pdf.js. Las dos de **R²** (1233 #18 y 1322 C2 #3) **se dejan para el tema 39**, que es el de la calibración por mínimos cuadrados.
 - **`TEMARIO EXTRA/`:** el mapeo da el tema 38 como «sin nada»; no hay ficha de apoyo.
 - **Figuras:** las tres de este tema (`dianas-veracidad-precision`, `incertidumbre-en-cuadratura` e `intervalo-de-trabajo`) se han añadido al catálogo con **seis controles nuevos** en `verificar-figuras.js` y **seis sabotajes** que los prueban. Los de las dianas **miden el centroide y la dispersión de los impactos** y comprueban que cada diana es **lo que dice su rótulo**, y que **las dos de la misma fila tienen el mismo sesgo y las dos de la misma columna la misma dispersión**; los de la cuadratura, que **el ángulo es recto y la hipotenusa mide √(a² + b²)**, y que **las cifras escritas cuadran con las barras y con U = 2·uc**; los del intervalo, que **el LC está a 10/3 del LD sobre la escala del eje** y **el intervalo arranca en el LC**, y que **la curva no se aparta de la recta más de lo tolerado dentro del intervalo y sí fuera**.
 - **Fecha de verificación:** 25/09/2026.
@@ -693,6 +698,6 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 10. **La vigencia del CGA-ENAC-LEC Rev. 12 (abril de 2024)** es la del documento que sirve hoy el enlace de ENAC; no he podido consultar el listado de revisiones de la web de ENAC para confirmar que no haya una posterior.
 
-11. **No tengo la plantilla de respuestas de ningún cuestionario.** En 1246 #19 y en 1322 C2 #10 la deducción es segura y la respalda literalmente la bibliografía (el modelo del Nordtest y la regla del MRC de Eurachem), pero **son deducciones razonadas, no plantilla oficial**.
+11. **No tengo la plantilla de respuestas de ningún cuestionario.** En 1246 #19, 1246 #47 y 1322 C2 #10 la deducción es segura y la respalda literalmente la bibliografía (el modelo del Nordtest y la regla del MRC de Eurachem), pero **son deducciones razonadas, no plantilla oficial**.
 
 12. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 37.

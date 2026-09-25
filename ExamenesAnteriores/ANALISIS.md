@@ -92,7 +92,7 @@ Al revés: **la LBRL (Ley 7/1985) aparece en los tres exámenes y no tiene tema 
 
 ## Límites
 
-Tres convocatorias, y solo una es turno libre ordinario. El temario de aquellos exámenes **no es el de 2026**, así que el mapeo tema a tema es aproximado, sobre todo en la parte común. Las preguntas con imagen no se pueden extraer del PDF, así que los bloques que se apoyan en imagen están infracontados.
+Tres convocatorias, y solo una es turno libre ordinario. El temario de aquellos exámenes **no es el de 2026**, así que el mapeo tema a tema es aproximado, sobre todo en la parte común. Las preguntas con imagen no se pueden extraer del PDF a texto, así que los bloques que se apoyan en imagen están infracontados. **Actualización del 25/09/2026:** sí se pueden leer **renderizando la página** (con pdf.js en un navegador sin cabeza), y así se localizaron la **1246 #47** —tres dianas, «exactos pero no precisos», del tema 38— y el texto completo de la **1246 #48** y de la **1322 C2 #7**, que salían revueltos. Conviene repasar así las páginas con dibujos antes de redactar los temas que queden.
 
 ## Fuentes
 
