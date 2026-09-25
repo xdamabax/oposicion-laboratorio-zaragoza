@@ -80,7 +80,7 @@ No aparecen en ninguno de los seis cuestionarios:
 
 | Tema | Nota |
 |---|---|
-| **2** — Igualdad efectiva + Plan de Igualdad municipal | El Plan del Ayuntamiento no es normativa estatal; hay que localizarlo |
+| **2** — Igualdad efectiva + Plan de Igualdad municipal | El Plan del Ayuntamiento no es normativa estatal. Localizado el 25/09/2026: II Plan 2024-2027, BOPZ nº 16 de 20/01/2024, publicado en zaragoza.es |
 | **4** — LPAC | Tema denso, cero precedente |
 | **5** — Ley de régimen especial de Zaragoza | — |
 | **8** — Empleados públicos EELL + PRL | — |
