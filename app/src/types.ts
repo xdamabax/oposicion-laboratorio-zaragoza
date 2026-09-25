@@ -71,6 +71,9 @@ export type TipoEsquema =
   | 'grifo-tres-objetivos'
   | 'corte-pm10-pm25'
   | 'captacion-pm-y-metales'
+  | 'dianas-veracidad-precision'
+  | 'incertidumbre-en-cuadratura'
+  | 'intervalo-de-trabajo'
 
 export type TipoMaterial =
   | 'matraz-aforado'

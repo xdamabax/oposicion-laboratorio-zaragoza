@@ -45,6 +45,9 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'grifo-tres-objetivos': 'Los tres objetivos del muestreo en grifo',
   'corte-pm10-pm25': 'Las curvas de corte de PM10 y PM2,5: el 50 % de eficiencia',
   'captacion-pm-y-metales': 'Del cabezal al ICP-MS: un filtro, dos determinaciones',
+  'dianas-veracidad-precision': 'Veracidad y precisión: cuatro dianas',
+  'incertidumbre-en-cuadratura': 'Las incertidumbres se suman en cuadratura: uc es la hipotenusa',
+  'intervalo-de-trabajo': 'Del LD al final de la recta: el intervalo de trabajo',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -84,6 +87,9 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'grifo-tres-objetivos': { ancho: 570, alto: 300 },
   'corte-pm10-pm25': { ancho: 520, alto: 312 },
   'captacion-pm-y-metales': { ancho: 580, alto: 300 },
+  'dianas-veracidad-precision': { ancho: 540, alto: 342 },
+  'incertidumbre-en-cuadratura': { ancho: 560, alto: 300 },
+  'intervalo-de-trabajo': { ancho: 540, alto: 322 },
 }
 
 const AZUL = '#9ecbe8'
@@ -3841,6 +3847,374 @@ function CaptacionPmYMetales() {
   )
 }
 
+/* ---------- Tema 38: validacion e incertidumbre ---------- */
+
+/**
+ * Veracidad y precision: las cuatro dianas.
+ *
+ * El centro de cada diana es el valor de referencia. La VERACIDAD se lee en
+ * donde cae la media de los impactos (el sesgo); la PRECISION, en cuanto se
+ * separan entre si. Son independientes, y por eso hay cuatro combinaciones.
+ *
+ * Los impactos no se colocan a ojo: salen de dos patrones simetricos (uno
+ * apretado y uno abierto) cuya media es exactamente el centro, desplazados por
+ * un mismo sesgo en la fila de abajo. Asi las dos dianas de una fila tienen el
+ * mismo sesgo y las dos de una columna la misma dispersion, y el control lo
+ * comprueba midiendo los impactos.
+ */
+function DianasVeracidadPrecision() {
+  const R = 46
+  const COLUMNAS = [190, 380]
+  const FILAS = [100, 232]
+  /** Sesgo de la fila de abajo, en fracciones de R (x, y; la y crece hacia abajo). */
+  const SESGO: [number, number] = [0.42, -0.36]
+
+  /** Ocho impactos en pares opuestos: su media es exactamente (0, 0). */
+  const patron = (r1: number, r2: number, giro: number) =>
+    Array.from({ length: 8 }, (_, i) => {
+      const a = ((i * 45 + giro) * Math.PI) / 180
+      const r = i % 2 === 0 ? r1 : r2
+      return [r * Math.cos(a), r * Math.sin(a)] as [number, number]
+    })
+  const APRETADO = patron(0.07, 0.13, 10)
+  const ABIERTO = patron(0.42, 0.58, 25)
+
+  const DIANAS = [
+    { clave: 'vp', col: 0, fila: 0, rotulo: 'veraz y preciso = EXACTO', impactos: APRETADO, sesgo: false },
+    { clave: 'vi', col: 1, fila: 0, rotulo: 'veraz, pero impreciso', impactos: ABIERTO, sesgo: false },
+    { clave: 'sp', col: 0, fila: 1, rotulo: 'preciso, pero con sesgo', impactos: APRETADO, sesgo: true },
+    { clave: 'si', col: 1, fila: 1, rotulo: 'con sesgo e impreciso', impactos: ABIERTO, sesgo: true },
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {DIANAS.map((d) => {
+        const cx = COLUMNAS[d.col]
+        const cy = FILAS[d.fila]
+        const [bx, by] = d.sesgo ? SESGO : [0, 0]
+        return (
+          <g key={d.clave}>
+            <circle data-pieza={'anillo-' + d.clave} cx={cx} cy={cy} r={R} fill={AZUL_CLARO} fillOpacity="0.5" stroke="currentColor" strokeWidth="1.2" />
+            <circle cx={cx} cy={cy} r={(R * 2) / 3} fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.7" />
+            <circle cx={cx} cy={cy} r={R / 3} fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.7" />
+            <circle data-pieza={'centro-' + d.clave} cx={cx} cy={cy} r="2.2" fill="currentColor" />
+            {d.impactos.map(([x, y], i) => (
+              <circle
+                key={i}
+                data-pieza={'impacto-' + d.clave}
+                cx={(cx + (x + bx) * R).toFixed(2)}
+                cy={(cy + (y + by) * R).toFixed(2)}
+                r="3.2"
+                fill={ROJO}
+                stroke="#fff"
+                strokeWidth="0.6"
+              />
+            ))}
+            <text
+              data-pieza={'rotulo-' + d.clave}
+              x={cx}
+              y={cy + R + 16}
+              fontSize="9"
+              textAnchor="middle"
+              fontWeight="bold"
+              fill="currentColor"
+            >
+              {d.rotulo}
+            </text>
+          </g>
+        )
+      })}
+
+      {/* el centro, señalado en la diana de abajo, que es la que lo deja ver */}
+      <line
+        x1="78"
+        y1={FILAS[1] - 3}
+        x2={COLUMNAS[0] - 4}
+        y2={FILAS[1]}
+        stroke="currentColor"
+        strokeWidth="0.8"
+      />
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y={FILAS[1] - 14}>el centro =</text>
+        <text x="8" y={FILAS[1] - 3}>valor de</text>
+        <text x="8" y={FILAS[1] + 8}>referencia</text>
+        <text x="8" y="318">
+          VERACIDAD: dónde cae la MEDIA de los impactos respecto del centro. Se cuantifica con el sesgo.
+        </text>
+        <text x="8" y="331">
+          PRECISIÓN: cuánto se separan los impactos ENTRE SÍ, caigan donde caigan. Se cuantifica con s.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Las incertidumbres se suman en cuadratura: uc es la hipotenusa.
+ *
+ * Numeros del ejemplo resuelto del Nordtest TR 537 (amonio por EN ISO 11732):
+ * u(Rw) = 1,67 %, u(sesgo) = 2,73 %, uc = 3,20 %, U = 2 uc = 6,40 %.
+ *
+ * El triangulo se construye con los dos catetos y la hipotenusa se CALCULA
+ * como el segmento que une sus extremos; las barras usan la misma escala. El
+ * control mide el angulo recto y la longitud de la hipotenusa, y contrasta las
+ * cifras escritas con las barras.
+ */
+function IncertidumbreEnCuadratura() {
+  const ESCALA = 40 // px por punto porcentual
+  const U_RW = 1.67
+  const U_SESGO = 2.73
+  const UC = Math.sqrt(U_RW ** 2 + U_SESGO ** 2)
+  const U = 2 * UC
+  const coma = (n: number) => n.toFixed(2).replace('.', ',') + ' %'
+
+  // triangulo: angulo recto abajo a la izquierda
+  const VX = 70
+  const VY = 205
+  const hx = VX + U_RW * ESCALA
+  const vy = VY - U_SESGO * ESCALA
+
+  const X0 = 300
+  const BARRAS = [
+    { clave: 'rw', y: 52, valor: U_RW, rotulo: 'u(Rw)', color: AZUL },
+    { clave: 'sesgo', y: 82, valor: U_SESGO, rotulo: 'u(sesgo)', color: AZUL },
+    { clave: 'uc', y: 112, valor: UC, rotulo: 'uc', color: ROJO },
+    { clave: 'U', y: 182, valor: U, rotulo: 'U = 2·uc', color: ROJO },
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* el triangulo rectangulo */}
+      <line data-pieza="cateto-rw" x1={VX} y1={VY} x2={hx} y2={VY} stroke={AZUL} strokeWidth="4" strokeLinecap="round" />
+      <line data-pieza="cateto-sesgo" x1={VX} y1={VY} x2={VX} y2={vy} stroke={AZUL} strokeWidth="4" strokeLinecap="round" />
+      <line data-pieza="hipotenusa-uc" x1={hx} y1={VY} x2={VX} y2={vy} stroke={ROJO} strokeWidth="3" strokeLinecap="round" />
+      <path d={`M${VX + 9} ${VY} V${VY - 9} H${VX}`} fill="none" stroke="currentColor" strokeWidth="1" />
+      <g fontSize="9" fontWeight="bold" fill="currentColor">
+        <text x={(VX + hx) / 2} y={VY + 15} textAnchor="middle">
+          u(Rw)
+        </text>
+        <text x={VX - 6} y={(VY + vy) / 2} textAnchor="end">
+          u(sesgo)
+        </text>
+        <text x={(VX + hx) / 2 + 10} y={(VY + vy) / 2 - 4} fill={ROJO}>
+          uc
+        </text>
+      </g>
+      <text x="8" y="34" fontSize="8.5" fill="currentColor">
+        precisión y veracidad, como catetos
+      </text>
+
+      {/* las barras, a la misma escala */}
+      {BARRAS.map((b) => (
+        <g key={b.clave}>
+          <rect
+            data-pieza={'barra-' + b.clave}
+            x={X0}
+            y={b.y}
+            width={(b.valor * ESCALA).toFixed(2)}
+            height="18"
+            fill={b.color}
+            fillOpacity={b.color === ROJO ? 0.28 : 0.55}
+            stroke={b.color}
+            strokeWidth="1"
+          />
+          <text x={X0 - 6} y={b.y + 12.5} fontSize="9" textAnchor="end" fontWeight="bold" fill="currentColor">
+            {b.rotulo}
+          </text>
+          <text
+            data-pieza={'cifra-' + b.clave}
+            x={X0 + b.valor * ESCALA - 4}
+            y={b.y + 12.5}
+            fontSize="8.5"
+            textAnchor="end"
+            fill="currentColor"
+          >
+            {coma(b.valor)}
+          </text>
+        </g>
+      ))}
+      {/* la suma directa, que es lo que NO se hace */}
+      <rect
+        x={X0}
+        y="142"
+        width={((U_RW + U_SESGO) * ESCALA).toFixed(2)}
+        height="18"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeDasharray="4 3"
+        opacity="0.8"
+      />
+      <text x={X0 - 6} y="154.5" fontSize="8.5" textAnchor="end" fill="currentColor">
+        suma directa
+      </text>
+      <text x={X0 + (U_RW + U_SESGO) * ESCALA + 5} y="154.5" fontSize="8.5" fill="currentColor">
+        {coma(U_RW + U_SESGO) + ' ✗'}
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="240">
+          Las componentes se combinan como los catetos de un triángulo rectángulo:
+        </text>
+        <text x="8" y="253">
+          uc = √(u(Rw)² + u(sesgo)²) = √(1,67² + 2,73²). Nunca 1,67 + 2,73: los errores independientes se compensan en parte.
+        </text>
+        <text x="8" y="271">
+          La expandida, con k = 2 (≈ 95 %): U = 2 · 3,20 = 6,40 % → se informa ± 7 %.
+        </text>
+        <text x="8" y="289">
+          Datos: amonio en agua por EN ISO 11732, ejemplo resuelto del Nordtest TR 537.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * Del LD al final de la recta: el intervalo de trabajo.
+ *
+ * La curva de respuesta se CALCULA: S(c) = c / (1 + (c/K)^p)^(1/p), que sale
+ * de la recta S = c sin separarse al principio y se aplana hacia la meseta K.
+ * El intervalo de trabajo va del LC (10 s0') hasta el punto en que la curva se
+ * aparta de la recta la tolerancia elegida, y ese punto tambien se calcula.
+ *
+ * El control reconstruye la escala del eje con sus propias marcas, comprueba
+ * que el LC esta a 10/3 del LD y que el intervalo empieza en el, y mide la
+ * desviacion de la curva frente a la recta dentro y fuera del intervalo.
+ */
+function IntervaloDeTrabajo() {
+  const X0 = 60
+  const ANCHO = 420
+  const C_MAX = 80
+  const BASE = 214
+  const CIMA = 40
+  const S_MAX = 64
+  const xDe = (c: number) => X0 + (c / C_MAX) * ANCHO
+  const yDe = (s: number) => BASE - (s / S_MAX) * (BASE - CIMA)
+
+  const K = 60
+  const P = 6
+  const respuesta = (c: number) => c / Math.pow(1 + Math.pow(c / K, P), 1 / P)
+
+  /** s0' del blanco, y los dos limites que salen de el. */
+  const S0 = 1.2
+  const LD = 3 * S0
+  const LC = 10 * S0
+  /** Tolerancia de linealidad del ejemplo, y donde se alcanza (se despeja de la curva). */
+  const TOL = 5
+  const C_FIN = K * Math.pow(Math.pow(1 / (1 - TOL / 100), P) - 1, 1 / P)
+
+  const curva = Array.from({ length: 241 }, (_, i) => {
+    const c = (i / 240) * C_MAX
+    return (i ? 'L' : 'M') + xDe(c).toFixed(2) + ' ' + yDe(respuesta(c)).toFixed(2)
+  }).join(' ')
+
+  const Y_TRAMO = BASE + 44
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <g stroke="currentColor" strokeWidth="1.6">
+        <line x1={X0} y1={CIMA - 8} x2={X0} y2={BASE} />
+        <line x1={X0} y1={BASE} x2={X0 + ANCHO} y2={BASE} />
+      </g>
+      <text x="8" y="24" fontSize="8" fill="currentColor">
+        señal del instrumento
+      </text>
+      <text x={X0 + ANCHO} y={BASE + 25} fontSize="8" textAnchor="end" fill="currentColor">
+        concentración (µg/L)
+      </text>
+      <g fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {[0, 20, 40, 60, 80].map((c) => (
+          <text key={c} data-pieza={'eje-' + c} x={xDe(c)} y={BASE + 11}>
+            {c}
+          </text>
+        ))}
+      </g>
+
+      {/* la recta que se esperaria, y la respuesta real */}
+      <line
+        data-pieza="recta-ideal"
+        x1={xDe(0)}
+        y1={yDe(0)}
+        x2={xDe(S_MAX)}
+        y2={yDe(S_MAX)}
+        stroke="currentColor"
+        strokeWidth="1"
+        strokeDasharray="4 3"
+        opacity="0.7"
+      />
+      <path data-pieza="curva-respuesta" d={curva} fill="none" stroke={ROJO} strokeWidth="2" />
+
+      {/* LD y LC */}
+      {[
+        { clave: 'ld', c: LD, rotulo: 'LD', factor: '3 s₀′', dy: 0 },
+        { clave: 'lc', c: LC, rotulo: 'LC', factor: '10 s₀′', dy: 0 },
+      ].map((m) => (
+        <g key={m.clave}>
+          <line
+            data-pieza={'marca-' + m.clave}
+            x1={xDe(m.c)}
+            y1={BASE - 60}
+            x2={xDe(m.c)}
+            y2={BASE}
+            stroke={m.clave === 'lc' ? ROJO : 'currentColor'}
+            strokeWidth="1.2"
+            strokeDasharray="3 2"
+          />
+          <text x={xDe(m.c)} y={BASE - 74} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {m.rotulo}
+          </text>
+          <text
+            data-pieza={'factor-' + m.clave}
+            x={xDe(m.c)}
+            y={BASE - 64}
+            fontSize="7.5"
+            textAnchor="middle"
+            fill="currentColor"
+          >
+            {m.factor}
+          </text>
+        </g>
+      ))}
+
+      {/* el intervalo de trabajo */}
+      <g stroke={ROJO} strokeWidth="1.6">
+        <line data-pieza="tramo-trabajo" x1={xDe(LC)} y1={Y_TRAMO} x2={xDe(C_FIN)} y2={Y_TRAMO} />
+        <line x1={xDe(LC)} y1={Y_TRAMO - 5} x2={xDe(LC)} y2={Y_TRAMO + 5} />
+        <line x1={xDe(C_FIN)} y1={Y_TRAMO - 5} x2={xDe(C_FIN)} y2={Y_TRAMO + 5} />
+      </g>
+      <text
+        x={(xDe(LC) + xDe(C_FIN)) / 2}
+        y={Y_TRAMO - 6}
+        fontSize="9"
+        fontWeight="bold"
+        textAnchor="middle"
+        fill={ROJO}
+      >
+        INTERVALO DE TRABAJO
+      </text>
+      <text x={xDe(C_FIN) + 8} y={Y_TRAMO + 3} fontSize="8" fill="currentColor">
+        aquí la curva ya se separa de la recta
+      </text>
+      <text x={xDe(70)} y={yDe(48)} fontSize="8" textAnchor="middle" fill="currentColor">
+        meseta: la sensibilidad cae
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="286">
+          Empieza en el LC, no en el LD: entre los dos el analito se detecta, pero no se cuantifica con garantías.
+        </text>
+        <text data-pieza="tolerancia" x="8" y="299">
+          Acaba donde la respuesta deja de ser proporcional. En este ejemplo, cuando se aparta un 5 % de la recta
+        </text>
+        <text x="8" y="312">
+          (la tolerancia la fija el laboratorio). Por encima, se diluye la muestra y se vuelve a medir.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -3913,6 +4287,12 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CortePm10Pm25 />
     case 'captacion-pm-y-metales':
       return <CaptacionPmYMetales />
+    case 'dianas-veracidad-precision':
+      return <DianasVeracidadPrecision />
+    case 'incertidumbre-en-cuadratura':
+      return <IncertidumbreEnCuadratura />
+    case 'intervalo-de-trabajo':
+      return <IntervaloDeTrabajo />
   }
 }
 

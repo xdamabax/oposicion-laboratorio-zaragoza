@@ -573,6 +573,51 @@ function medir(sabotaje, ROJO) {
     const hundidos = pts.map(([x, y], j) => [x, j > pts.length - 30 ? y + 60 : y])
     c.setAttribute('d', hundidos.map(([x, y], j) => (j ? 'L' : 'M') + x + ' ' + y).join(' '))
   }
+  if (sabotaje === 56) {
+    const svg = porClave('dianas-veracidad-precision')
+    // los rotulos de la diana exacta y de la que falla en todo, intercambiados
+    const a = pieza(svg, 'rotulo-vp')
+    const b = pieza(svg, 'rotulo-si')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
+  if (sabotaje === 57) {
+    const svg = porClave('dianas-veracidad-precision')
+    // la diana imprecisa y sesgada, con MAS sesgo que su vecina de fila
+    const r = num(pieza(svg, 'anillo-si'), 'r')
+    for (const p of piezas(svg, 'impacto-si')) p.setAttribute('cx', num(p, 'cx') + 0.3 * r)
+  }
+  if (sabotaje === 58) {
+    const svg = porClave('incertidumbre-en-cuadratura')
+    // la hipotenusa estirada hasta la SUMA de los catetos: sumar en vez de combinar
+    const largo = (l) => Math.hypot(num(l, 'x2') - num(l, 'x1'), num(l, 'y2') - num(l, 'y1'))
+    const suma = largo(pieza(svg, 'cateto-rw')) + largo(pieza(svg, 'cateto-sesgo'))
+    const h = pieza(svg, 'hipotenusa-uc')
+    const f = suma / largo(h)
+    h.setAttribute('x2', num(h, 'x1') + (num(h, 'x2') - num(h, 'x1')) * f)
+    h.setAttribute('y2', num(h, 'y1') + (num(h, 'y2') - num(h, 'y1')) * f)
+  }
+  if (sabotaje === 59) {
+    const svg = porClave('incertidumbre-en-cuadratura')
+    // la expandida escrita con k = 3
+    pieza(svg, 'cifra-U').textContent = '9,60 %'
+  }
+  if (sabotaje === 60) {
+    const svg = porClave('intervalo-de-trabajo')
+    // el LC puesto al doble del LD, en vez de a 10/3
+    const x0 = num(pieza(svg, 'recta-ideal'), 'x1')
+    const xld = num(pieza(svg, 'marca-ld'), 'x1')
+    const m = pieza(svg, 'marca-lc')
+    m.setAttribute('x1', x0 + 2 * (xld - x0))
+    m.setAttribute('x2', x0 + 2 * (xld - x0))
+  }
+  if (sabotaje === 61) {
+    const svg = porClave('intervalo-de-trabajo')
+    // el intervalo de trabajo alargado hasta la meseta
+    const t = pieza(svg, 'tramo-trabajo')
+    t.setAttribute('x2', num(t, 'x2') + 110)
+  }
 
   /* ---- controles genericos, sobre TODOS los esquemas ---- */
 
@@ -1824,6 +1869,224 @@ function medir(sabotaje, ROJO) {
     return `las dos ramas por debajo de y=${abajoDelFiltro}, y pesar (${pesar}) antes de digerir (${digerir})`
   })
 
+  /*
+   * Las cuatro dianas. La veracidad y la precision se leen en los impactos:
+   * el sesgo es la distancia de su MEDIA al centro, y la precision su
+   * dispersion alrededor de esa media. Aqui se miden las dos cosas y se
+   * contrastan con lo que dice el rotulo de cada diana.
+   */
+  const diana = (svg, clave) => {
+    const anillo = pieza(svg, 'anillo-' + clave)
+    const R = num(anillo, 'r')
+    const cx = num(anillo, 'cx')
+    const cy = num(anillo, 'cy')
+    const imp = piezas(svg, 'impacto-' + clave).map((p) => [num(p, 'cx'), num(p, 'cy')])
+    const mx = imp.reduce((a, p) => a + p[0], 0) / imp.length
+    const my = imp.reduce((a, p) => a + p[1], 0) / imp.length
+    const dispersion = Math.sqrt(imp.reduce((a, p) => a + (p[0] - mx) ** 2 + (p[1] - my) ** 2, 0) / imp.length) / R
+    return {
+      sesgo: [(mx - cx) / R, (my - cy) / R],
+      modulo: Math.hypot(mx - cx, my - cy) / R,
+      dispersion,
+      rotulo: pieza(svg, 'rotulo-' + clave).textContent,
+    }
+  }
+  const DIANAS = ['vp', 'vi', 'sp', 'si']
+
+  control('Dianas · cada diana es lo que dice su rótulo: sesgo y dispersión medidos en los impactos', () => {
+    const svg = porClave('dianas-veracidad-precision')
+    const informe = []
+    for (const clave of DIANAS) {
+      const d = diana(svg, clave)
+      const diceSesgo = /sesgo/i.test(d.rotulo)
+      const diceImpreciso = /impreciso/i.test(d.rotulo)
+      if (diceSesgo ? !(d.modulo > 0.35) : !(d.modulo < 0.1)) {
+        throw new Error(
+          `la diana "${d.rotulo}" tiene la media de sus impactos a ${d.modulo.toFixed(2)} R del centro: ` +
+            (diceSesgo ? 'dice que tiene sesgo y está centrada' : 'dice que es veraz y está desplazada'),
+        )
+      }
+      if (diceImpreciso ? !(d.dispersion > 0.35) : !(d.dispersion < 0.2)) {
+        throw new Error(
+          `la diana "${d.rotulo}" tiene una dispersión de ${d.dispersion.toFixed(2)} R: ` +
+            (diceImpreciso ? 'dice que es imprecisa y los impactos están apretados' : 'dice que es precisa y los impactos están abiertos'),
+        )
+      }
+      informe.push(`${clave}: sesgo ${d.modulo.toFixed(2)} R, dispersión ${d.dispersion.toFixed(2)} R`)
+    }
+    return informe.join(' · ')
+  })
+
+  control('Dianas · en cada fila el mismo sesgo y en cada columna la misma dispersión', () => {
+    const svg = porClave('dianas-veracidad-precision')
+    const d = Object.fromEntries(DIANAS.map((k) => [k, diana(svg, k)]))
+    // filas: veraz (vp, vi) y con sesgo (sp, si). Solo cambia la precision.
+    for (const [a, b] of [['vp', 'vi'], ['sp', 'si']]) {
+      const delta = Math.hypot(d[a].sesgo[0] - d[b].sesgo[0], d[a].sesgo[1] - d[b].sesgo[1])
+      if (!(delta < 0.05)) {
+        throw new Error(
+          `"${d[a].rotulo}" y "${d[b].rotulo}" están en la misma fila y su sesgo difiere en ${delta.toFixed(2)} R: ` +
+            `la comparación deja de aislar la precisión`,
+        )
+      }
+    }
+    // columnas: precisa (vp, sp) e imprecisa (vi, si). Solo cambia el sesgo.
+    for (const [a, b] of [['vp', 'sp'], ['vi', 'si']]) {
+      const rel = Math.abs(d[a].dispersion - d[b].dispersion) / d[a].dispersion
+      if (!(rel < 0.1)) {
+        throw new Error(
+          `"${d[a].rotulo}" y "${d[b].rotulo}" están en la misma columna y su dispersión difiere un ` +
+            `${(rel * 100).toFixed(0)} %: la comparación deja de aislar el sesgo`,
+        )
+      }
+    }
+    return `filas con sesgo igual (${d.sp.modulo.toFixed(2)} R abajo) y columnas con dispersión igual (${d.vp.dispersion.toFixed(2)} y ${d.vi.dispersion.toFixed(2)} R)`
+  })
+
+  /*
+   * La combinacion en cuadratura. El triangulo afirma que uc es la
+   * hipotenusa de u(Rw) y u(sesgo); las barras, que las cifras escritas son
+   * esas y que U = 2 uc. Se comprueban por separado: la geometria del
+   * triangulo, y la coherencia de las cifras con las barras.
+   */
+  control('Cuadratura · uc es la hipotenusa: ángulo recto y √(a² + b²), no a + b', () => {
+    const svg = porClave('incertidumbre-en-cuadratura')
+    const a = pieza(svg, 'cateto-rw')
+    const b = pieza(svg, 'cateto-sesgo')
+    const h = pieza(svg, 'hipotenusa-uc')
+    const vec = (l) => [num(l, 'x2') - num(l, 'x1'), num(l, 'y2') - num(l, 'y1')]
+    const cerca = (x1, y1, x2, y2) => Math.hypot(x1 - x2, y1 - y2) < 0.6
+    if (!cerca(num(a, 'x1'), num(a, 'y1'), num(b, 'x1'), num(b, 'y1'))) {
+      throw new Error('los dos catetos no salen del mismo vértice')
+    }
+    const [ax, ay] = vec(a)
+    const [bx, by] = vec(b)
+    const la = Math.hypot(ax, ay)
+    const lb = Math.hypot(bx, by)
+    const coseno = (ax * bx + ay * by) / (la * lb)
+    if (!(Math.abs(coseno) < 0.01)) {
+      throw new Error(`el ángulo entre los catetos no es recto (coseno ${coseno.toFixed(3)})`)
+    }
+    const extremosA = [num(a, 'x2'), num(a, 'y2')]
+    const extremosB = [num(b, 'x2'), num(b, 'y2')]
+    const h1 = [num(h, 'x1'), num(h, 'y1')]
+    const h2 = [num(h, 'x2'), num(h, 'y2')]
+    const cierra =
+      (cerca(...h1, ...extremosA) && cerca(...h2, ...extremosB)) ||
+      (cerca(...h1, ...extremosB) && cerca(...h2, ...extremosA))
+    const lh = Math.hypot(...vec(h))
+    const esperado = Math.hypot(la, lb)
+    if (!cierra || !(Math.abs(lh - esperado) / esperado < 0.01)) {
+      throw new Error(
+        `la hipotenusa mide ${lh.toFixed(1)} px y √(a² + b²) = ${esperado.toFixed(1)} px ` +
+          `(a + b serían ${(la + lb).toFixed(1)}): las incertidumbres no se suman, se combinan en cuadratura`,
+      )
+    }
+    return `catetos de ${la.toFixed(1)} y ${lb.toFixed(1)} px en ángulo recto; hipotenusa ${lh.toFixed(1)} px = √(a² + b²)`
+  })
+
+  control('Cuadratura · las cifras escritas cuadran con las barras, y U = 2 · uc', () => {
+    const svg = porClave('incertidumbre-en-cuadratura')
+    const cifra = (k) => Number(pieza(svg, 'cifra-' + k).textContent.replace(/[^\d,.]/g, '').replace(',', '.'))
+    const ancho = (k) => num(pieza(svg, 'barra-' + k), 'width')
+    const escala = ancho('rw') / cifra('rw')
+    for (const k of ['sesgo', 'uc', 'U']) {
+      const leido = ancho(k) / escala
+      if (!(Math.abs(leido - cifra(k)) / cifra(k) < 0.02)) {
+        throw new Error(`la barra de ${k} mide ${leido.toFixed(2)} % a la escala de las demás, y su cifra dice ${cifra(k)} %`)
+      }
+    }
+    const uc = Math.hypot(cifra('rw'), cifra('sesgo'))
+    if (!(Math.abs(cifra('uc') - uc) < 0.015)) {
+      throw new Error(`uc escrita = ${cifra('uc')} % y √(${cifra('rw')}² + ${cifra('sesgo')}²) = ${uc.toFixed(2)} %`)
+    }
+    if (!(Math.abs(cifra('U') - 2 * cifra('uc')) < 0.015)) {
+      throw new Error(
+        `U escrita = ${cifra('U')} % y 2 · uc = ${(2 * cifra('uc')).toFixed(2)} %: con k = 2 la expandida es el doble de la combinada`,
+      )
+    }
+    return `u(Rw) ${cifra('rw')} · u(sesgo) ${cifra('sesgo')} → uc ${cifra('uc')} → U ${cifra('U')} %, y las barras a escala`
+  })
+
+  /*
+   * El intervalo de trabajo. Dos afirmaciones: el LC esta a 10/3 del LD
+   * (10 s0' frente a 3 s0') y el intervalo arranca en el; y el intervalo
+   * acaba donde la respuesta deja de ser proporcional, con la tolerancia que
+   * el propio dibujo escribe.
+   */
+  control('Intervalo · el LC está a 10/3 del LD sobre el eje, y el intervalo arranca en el LC', () => {
+    const svg = porClave('intervalo-de-trabajo')
+    const xEje = (c) => {
+      const b = pieza(svg, 'eje-' + c).getBBox()
+      return b.x + b.width / 2
+    }
+    // escala ajustada por minimos cuadrados con las cinco marcas del eje: una
+    // sola marca de un digito descentra el origen y el LD, que esta cerca, lo nota
+    const marcas = [0, 20, 40, 60, 80].map((c) => [c, xEje(c)])
+    const mc = marcas.reduce((a, [c]) => a + c, 0) / marcas.length
+    const mx = marcas.reduce((a, [, x]) => a + x, 0) / marcas.length
+    const porUnidad =
+      marcas.reduce((a, [c, x]) => a + (c - mc) * (x - mx), 0) / marcas.reduce((a, [c]) => a + (c - mc) ** 2, 0)
+    if (!(porUnidad > 1)) throw new Error('las marcas del eje no dejan reconstruir la escala')
+    // el origen, del propio dibujo: la recta sale de c = 0. Los rotulos solo
+    // confirman que es ahi (el recuadro de un texto baila unas decimas de pixel)
+    const x0 = num(pieza(svg, 'recta-ideal'), 'x1')
+    if (!(Math.abs(mx - porUnidad * mc - x0) < 1)) {
+      throw new Error(`la recta no arranca en el 0 del eje (x=${x0} frente a ${(mx - porUnidad * mc).toFixed(1)})`)
+    }
+    const conc = (x) => (x - x0) / porUnidad
+    const cLD = conc(num(pieza(svg, 'marca-ld'), 'x1'))
+    const cLC = conc(num(pieza(svg, 'marca-lc'), 'x1'))
+    const factor = (k) => Number(pieza(svg, 'factor-' + k).textContent.match(/\d+(?:,\d+)?/)[0].replace(',', '.'))
+    const esperado = factor('lc') / factor('ld')
+    const medido = cLC / cLD
+    if (!(Math.abs(medido - esperado) / esperado < 0.03)) {
+      throw new Error(
+        `el LD cae en ${cLD.toFixed(2)} y el LC en ${cLC.toFixed(2)} µg/L: cociente ${medido.toFixed(2)}, ` +
+          `y los rótulos dicen ${factor('lc')} s₀′ / ${factor('ld')} s₀′ = ${esperado.toFixed(2)}`,
+      )
+    }
+    const inicio = num(pieza(svg, 'tramo-trabajo'), 'x1')
+    const xLC = num(pieza(svg, 'marca-lc'), 'x1')
+    if (!(Math.abs(inicio - xLC) < 1)) {
+      throw new Error(`el intervalo de trabajo empieza en x=${inicio.toFixed(1)} y el LC está en x=${xLC.toFixed(1)}`)
+    }
+    return `LD ${cLD.toFixed(2)} y LC ${cLC.toFixed(2)} µg/L (×${medido.toFixed(2)}), y el intervalo arranca en el LC`
+  })
+
+  control('Intervalo · dentro, la curva no se aparta de la recta más de la tolerancia; justo después, sí', () => {
+    const svg = porClave('intervalo-de-trabajo')
+    const r = pieza(svg, 'recta-ideal')
+    const [xa, ya, xb, yb] = ['x1', 'y1', 'x2', 'y2'].map((k) => num(r, k))
+    const pts = puntos(pieza(svg, 'curva-respuesta'))
+    const tol = Number(pieza(svg, 'tolerancia').textContent.match(/(\d+(?:,\d+)?) ?%/)[1].replace(',', '.'))
+    const t = pieza(svg, 'tramo-trabajo')
+    const x1 = num(t, 'x1')
+    const x2 = num(t, 'x2')
+    // desviacion relativa de la curva frente a la recta, en %: 1 - altura real / altura ideal
+    const desvio = ([x, y]) => {
+      const yIdeal = ya + ((yb - ya) * (x - xa)) / (xb - xa)
+      return (1 - (ya - y) / (ya - yIdeal)) * 100
+    }
+    const dentro = pts.filter(([x]) => x >= x1 && x <= x2)
+    const fuera = pts.filter(([x]) => x > x2 + 10 && x < x2 + 40)
+    if (dentro.length < 20 || !fuera.length) throw new Error('no hay puntos de la curva suficientes a los dos lados del final')
+    const peor = Math.max(...dentro.map(desvio))
+    if (!(peor <= tol + 0.3)) {
+      throw new Error(
+        `dentro del intervalo la curva llega a apartarse un ${peor.toFixed(1)} % de la recta, ` +
+          `y la tolerancia escrita es del ${tol} %: el intervalo se alarga más allá de la zona lineal`,
+      )
+    }
+    const mejorFuera = Math.min(...fuera.map(desvio))
+    if (!(mejorFuera > tol)) {
+      throw new Error(
+        `justo después del intervalo la curva solo se aparta un ${mejorFuera.toFixed(1)} %: el intervalo acaba antes de tiempo`,
+      )
+    }
+    return `desvío máximo dentro ${peor.toFixed(1)} % (tolerancia ${tol} %); justo después, ya ${mejorFuera.toFixed(1)} %`
+  })
+
   return resultados
 }
 
@@ -1885,6 +2148,12 @@ const SABOTAJES = {
   53: 'digerir el filtro antes de pesarlo',
   54: 'la curva de PM2,5, corrida a diámetros menores',
   55: 'un tramo de la curva de PM10, hundido',
+  56: 'los rótulos de la diana exacta y de la que falla en todo, intercambiados',
+  57: 'la diana imprecisa y sesgada, con más sesgo que su vecina de fila',
+  58: 'la hipotenusa estirada hasta la suma de los catetos',
+  59: 'la incertidumbre expandida escrita con k = 3',
+  60: 'el LC puesto al doble del LD',
+  61: 'el intervalo de trabajo alargado hasta la meseta',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -1950,6 +2219,12 @@ const CONTROL_DE = {
   53: [53],
   54: [50],
   55: [51],
+  56: [54],
+  57: [55],
+  58: [56],
+  59: [57],
+  60: [58],
+  61: [59],
 }
 
 async function main() {
