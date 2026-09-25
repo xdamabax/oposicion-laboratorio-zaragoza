@@ -77,6 +77,8 @@ export type TipoEsquema =
   | 'grafico-control-x'
   | 'recta-minimos-cuadrados'
   | 'cadena-trazabilidad'
+  | 'acreditacion-certificacion'
+  | 'ciclo-acreditacion'
 
 export type TipoMaterial =
   | 'matraz-aforado'

@@ -656,6 +656,39 @@ function medir(sabotaje, ROJO) {
     q.setAttribute('x', num(q, 'x') + wq / 2 - wp / 2)
     q.setAttribute('width', wp)
   }
+  if (sabotaje === 68) {
+    const svg = porClave('acreditacion-certificacion')
+    // una entidad de certificacion «acreditando» a un laboratorio
+    const cert = pieza(svg, 'nodo-certificadora')
+    const f = piezas(svg, 'acredita').sort((a, b) => num(a, 'x2') - num(b, 'x2'))[0]
+    f.setAttribute('x1', num(cert, 'x') + num(cert, 'width') / 2)
+    f.setAttribute('y1', num(cert, 'y') + num(cert, 'height'))
+  }
+  if (sabotaje === 69) {
+    const svg = porClave('acreditacion-certificacion')
+    // ENAC certificando directamente a la empresa
+    const enac = pieza(svg, 'nodo-enac')
+    const f = pieza(svg, 'certifica')
+    f.setAttribute('x1', num(enac, 'x') + num(enac, 'width') / 2)
+    f.setAttribute('y1', num(enac, 'y') + num(enac, 'height'))
+  }
+  if (sabotaje === 70) {
+    const svg = porClave('ciclo-acreditacion')
+    // el primer ciclo dibujado de 5 años, como los siguientes
+    const t0 = num(pieza(svg, 'tick-0'), 'x1')
+    const porMes = (num(pieza(svg, 'tick-108'), 'x1') - t0) / 108
+    const l = pieza(svg, 'fin-ciclo-1')
+    l.setAttribute('x1', t0 + 60 * porMes)
+    l.setAttribute('x2', t0 + 60 * porMes)
+  }
+  if (sabotaje === 71) {
+    const svg = porClave('ciclo-acreditacion')
+    // el segundo seguimiento retrasado: 21 meses sin evaluacion en el primer ciclo
+    const t0 = num(pieza(svg, 'tick-0'), 'x1')
+    const porMes = (num(pieza(svg, 'tick-108'), 'x1') - t0) / 108
+    const s = piezas(svg, 'seguimiento').sort((a, b) => num(a, 'cx') - num(b, 'cx'))[1]
+    s.setAttribute('cx', num(s, 'cx') + 4 * porMes)
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -2305,6 +2338,119 @@ function medir(sabotaje, ROJO) {
     return `${cajas.length} eslabones y ${flechas.length} flechas, sin huecos`
   })
 
+  /*
+   * Quien acredita y quien certifica. Se lee de que caja sale y a que caja
+   * llega cada flecha: las de «acredita» salen de ENAC y llegan a los
+   * organismos de evaluacion de la conformidad; las de «certifica» salen de la
+   * certificadora y llegan a la empresa, y ninguna flecha une ENAC con la
+   * empresa.
+   */
+  const cajaDe = (svg, x, y) => {
+    const dentro = [...svg.querySelectorAll('[data-pieza^="nodo-"]')].filter(
+      (c) =>
+        x >= num(c, 'x') - 4 &&
+        x <= num(c, 'x') + num(c, 'width') + 4 &&
+        y >= num(c, 'y') - 4 &&
+        y <= num(c, 'y') + num(c, 'height') + 4,
+    )
+    return dentro.length === 1 ? dentro[0].getAttribute('data-pieza').replace('nodo-', '') : null
+  }
+  const extremos = (svg, f) => [cajaDe(svg, num(f, 'x1'), num(f, 'y1')), cajaDe(svg, num(f, 'x2'), num(f, 'y2'))]
+  const OEC = ['laboratorio', 'certificadora', 'inspeccion']
+
+  control('Acreditación · todas las flechas de «acredita» salen de ENAC y llegan a organismos de evaluación de la conformidad', () => {
+    const svg = porClave('acreditacion-certificacion')
+    const flechas = piezas(svg, 'acredita')
+    const destinos = []
+    for (const f of flechas) {
+      const [de, a] = extremos(svg, f)
+      if (de !== 'enac') {
+        throw new Error(`una flecha de «acredita» sale de «${de}»: en España solo acredita ENAC`)
+      }
+      if (!OEC.includes(a)) {
+        throw new Error(`una flecha de «acredita» llega a «${a}»: ENAC acredita a organismos de evaluación de la conformidad`)
+      }
+      destinos.push(a)
+    }
+    const faltan = OEC.filter((o) => !destinos.includes(o))
+    if (faltan.length) throw new Error(`ENAC no acredita en el dibujo a: ${faltan.join(', ')}`)
+    return `${flechas.length} flechas de ENAC a ${destinos.join(', ')}`
+  })
+
+  control('Certificación · la certificadora certifica a la empresa, y ninguna flecha une ENAC con la empresa', () => {
+    const svg = porClave('acreditacion-certificacion')
+    for (const f of piezas(svg, 'certifica')) {
+      const [de, a] = extremos(svg, f)
+      if (de !== 'certificadora' || a !== 'empresa') {
+        throw new Error(`una flecha de «certifica» va de «${de}» a «${a}»: certifica la entidad de certificación, a la empresa`)
+      }
+    }
+    for (const f of svg.querySelectorAll('line[data-pieza]')) {
+      const [de, a] = extremos(svg, f)
+      if ((de === 'enac' && a === 'empresa') || (de === 'empresa' && a === 'enac')) {
+        throw new Error(`una flecha de «${f.getAttribute('data-pieza')}» une ENAC con la empresa: ENAC no certifica empresas`)
+      }
+    }
+    return 'certificadora → empresa, y ENAC sin ninguna flecha hacia la empresa'
+  })
+
+  /*
+   * El ciclo de acreditacion (PAC-ENAC, 8.1 y 8.2). La escala de meses sale de
+   * las marcas del propio eje.
+   */
+  const mesesCiclo = (svg) => {
+    const t0 = num(pieza(svg, 'tick-0'), 'x1')
+    const porMes = (num(pieza(svg, 'tick-108'), 'x1') - t0) / 108
+    if (!(porMes > 1)) throw new Error('las marcas del eje no dejan reconstruir la escala de meses')
+    return (x) => (x - t0) / porMes
+  }
+
+  control('Ciclo · el primer ciclo dura 4 años y el siguiente 5, con una reevaluación dentro de cada uno', () => {
+    const svg = porClave('ciclo-acreditacion')
+    const mes = mesesCiclo(svg)
+    const fin1 = mes(num(pieza(svg, 'fin-ciclo-1'), 'x1'))
+    const fin2 = mes(num(pieza(svg, 'fin-ciclo-2'), 'x1'))
+    if (!(Math.abs(fin1 - 48) < 0.5)) {
+      throw new Error(`el primer ciclo acaba en el mes ${fin1.toFixed(1)}: tiene que durar 4 años (48 meses)`)
+    }
+    if (!(Math.abs(fin2 - fin1 - 60) < 0.5)) {
+      throw new Error(`el segundo ciclo dura ${(fin2 - fin1).toFixed(1)} meses: los siguientes ciclos son de 5 años`)
+    }
+    const reev = piezas(svg, 'reevaluacion').map((r) => mes(num(r, 'cx'))).sort((a, b) => a - b)
+    const en1 = reev.filter((m) => m > 0 && m < fin1)
+    const en2 = reev.filter((m) => m > fin1 && m < fin2)
+    if (en1.length !== 1 || en2.length !== 1) {
+      throw new Error(`reevaluaciones en los meses ${reev.map((m) => m.toFixed(0)).join(', ')}: tiene que haber una dentro de cada ciclo, antes de que acabe`)
+    }
+    return `ciclos hasta los meses ${fin1.toFixed(0)} y ${fin2.toFixed(0)}; reevaluaciones en ${reev.map((m) => m.toFixed(0)).join(' y ')}`
+  })
+
+  control('Ciclo · primer seguimiento antes de 12 meses, y ningún hueco pasa de 18 meses en el primer ciclo ni de 24 en el siguiente', () => {
+    const svg = porClave('ciclo-acreditacion')
+    const mes = mesesCiclo(svg)
+    const fin1 = mes(num(pieza(svg, 'fin-ciclo-1'), 'x1'))
+    const inicio = mes(num(pieza(svg, 'concesion'), 'cx'))
+    const evaluaciones = [...piezas(svg, 'seguimiento'), ...piezas(svg, 'reevaluacion')]
+      .map((e) => mes(num(e, 'cx')))
+      .sort((a, b) => a - b)
+    if (!(evaluaciones[0] - inicio <= 12.2)) {
+      throw new Error(`el primer seguimiento cae en el mes ${(evaluaciones[0] - inicio).toFixed(1)}: tiene que ser antes de 12 meses`)
+    }
+    const huecos = []
+    for (let i = 1; i < evaluaciones.length; i++) {
+      const hueco = evaluaciones[i] - evaluaciones[i - 1]
+      const limite = evaluaciones[i] <= fin1 ? 18 : 24
+      if (!(hueco <= limite + 0.2)) {
+        throw new Error(
+          `entre los meses ${evaluaciones[i - 1].toFixed(0)} y ${evaluaciones[i].toFixed(0)} pasan ${hueco.toFixed(1)} meses ` +
+            `sin evaluación, y el máximo en ese ciclo es de ${limite}`,
+        )
+      }
+      huecos.push(hueco.toFixed(0))
+    }
+    return `primer seguimiento en el mes ${(evaluaciones[0] - inicio).toFixed(0)}; huecos de ${huecos.join(', ')} meses`
+  })
+
   return resultados
 }
 
@@ -2378,6 +2524,10 @@ const SABOTAJES = {
   65: 'un residuo dibujado con el signo cambiado',
   66: 'la incertidumbre del MRC mayor que la del patrón de trabajo',
   67: 'una flecha de la cadena de trazabilidad que no llega al eslabón siguiente',
+  68: 'una entidad de certificación acreditando a un laboratorio',
+  69: 'ENAC certificando directamente a la empresa',
+  70: 'el primer ciclo de acreditación dibujado de 5 años',
+  71: 'el segundo seguimiento retrasado hasta dejar 21 meses sin evaluación',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -2455,6 +2605,10 @@ const CONTROL_DE = {
   65: [63],
   66: [64],
   67: [65],
+  68: [66],
+  69: [67],
+  70: [68],
+  71: [69],
 }
 
 async function main() {

@@ -51,6 +51,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'grafico-control-x': 'Gráfico de control X: aviso a ±2s, acción a ±3s',
   'recta-minimos-cuadrados': 'La recta de calibrado por mínimos cuadrados, con sus residuos',
   'cadena-trazabilidad': 'La cadena de trazabilidad: la incertidumbre crece en cada eslabón',
+  'acreditacion-certificacion': 'Quién acredita y quién certifica',
+  'ciclo-acreditacion': 'El ciclo de acreditación: 4 años el primero, 5 los siguientes',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -96,6 +98,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'grafico-control-x': { ancho: 560, alto: 322 },
   'recta-minimos-cuadrados': { ancho: 540, alto: 372 },
   'cadena-trazabilidad': { ancho: 580, alto: 272 },
+  'acreditacion-certificacion': { ancho: 580, alto: 350 },
+  'ciclo-acreditacion': { ancho: 580, alto: 262 },
 }
 
 const AZUL = '#9ecbe8'
@@ -4561,6 +4565,203 @@ function CadenaTrazabilidad() {
   )
 }
 
+/* ---------- Tema 40: acreditacion ---------- */
+
+/**
+ * Quien acredita y quien certifica.
+ *
+ * ENAC ACREDITA a los organismos de evaluacion de la conformidad
+ * (laboratorios, entidades de certificacion, entidades de inspeccion); la
+ * entidad de certificacion CERTIFICA a la empresa; el laboratorio ENSAYA e
+ * informa a su cliente. Ninguna flecha une ENAC con la empresa: es la
+ * confusion que explota la pregunta 1246 #27. El control lee de que caja sale
+ * y a que caja llega cada flecha.
+ */
+function AcreditacionCertificacion() {
+  type Caja = { clave: string; x: number; y: number; ancho: number; alto: number; titulo: string; pie: string; color: string }
+  const ENAC: Caja = { clave: 'enac', x: 215, y: 36, ancho: 150, alto: 46, titulo: 'ENAC', pie: 'único organismo nacional', color: ROJO }
+  const MEDIO: Caja[] = [
+    { clave: 'laboratorio', x: 18, y: 150, ancho: 160, alto: 46, titulo: 'Laboratorio', pie: 'UNE-EN ISO/IEC 17025', color: AZUL },
+    { clave: 'certificadora', x: 210, y: 150, ancho: 160, alto: 46, titulo: 'Entidad de certificación', pie: 'UNE-EN ISO/IEC 17021-1', color: AZUL },
+    { clave: 'inspeccion', x: 402, y: 150, ancho: 160, alto: 46, titulo: 'Entidad de inspección', pie: 'UNE-EN ISO/IEC 17020', color: AZUL },
+  ]
+  const ABAJO: Caja[] = [
+    { clave: 'cliente', x: 18, y: 250, ancho: 160, alto: 46, titulo: 'Cliente del laboratorio', pie: 'recibe el informe de ensayo', color: AZUL_CLARO },
+    { clave: 'empresa', x: 210, y: 250, ancho: 160, alto: 46, titulo: 'Empresa', pie: 'certificada ISO 9001', color: AZUL_CLARO },
+  ]
+  const centroX = (c: Caja) => c.x + c.ancho / 2
+  const caja = (c: Caja) => (
+    <g key={c.clave}>
+      <rect
+        data-pieza={'nodo-' + c.clave}
+        x={c.x}
+        y={c.y}
+        width={c.ancho}
+        height={c.alto}
+        rx="5"
+        fill={c.color}
+        fillOpacity={c.color === ROJO ? 0.22 : 0.35}
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <text x={centroX(c)} y={c.y + 19} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {c.titulo}
+      </text>
+      <text x={centroX(c)} y={c.y + 34} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {c.pie}
+      </text>
+    </g>
+  )
+  /** Flecha de una caja a otra: sale del borde inferior y llega al superior. */
+  const flecha = (tipo: string, de: Caja, a: Caja, dx = 0) => {
+    const x1 = centroX(de) + dx
+    const y1 = de.y + de.alto
+    const x2 = centroX(a)
+    const y2 = a.y
+    const ang = Math.atan2(y2 - y1, x2 - x1)
+    const punta = (s: number) => `${x2 - 7 * Math.cos(ang + s)} ${y2 - 7 * Math.sin(ang + s)}`
+    return (
+      <g key={tipo + a.clave} stroke={tipo === 'acredita' ? ROJO : 'currentColor'} strokeWidth="1.6" fill="none">
+        <line data-pieza={tipo} x1={x1.toFixed(1)} y1={y1} x2={x2.toFixed(1)} y2={y2} />
+        <path d={`M${punta(0.45)} L${x2} ${y2} L${punta(-0.45)}`} />
+      </g>
+    )
+  }
+  const lab = MEDIO[0]
+  const cert = MEDIO[1]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {[ENAC, ...MEDIO, ...ABAJO].map(caja)}
+      {MEDIO.map((m, i) => flecha('acredita', ENAC, m, (i - 1) * 40))}
+      {flecha('certifica', cert, ABAJO[1])}
+      {flecha('informa', lab, ABAJO[0])}
+
+      <g fontSize="8.5" fontWeight="bold">
+        <text x="120" y="118" fill={ROJO}>
+          ACREDITA
+        </text>
+        <text x={centroX(cert) + 6} y="228" fill="currentColor">
+          CERTIFICA
+        </text>
+        <text x={centroX(lab) + 6} y="228" fill="currentColor">
+          ENSAYA E INFORMA
+        </text>
+      </g>
+      <text x="452" y="100" fontSize="8" fill="currentColor">
+        organismos de evaluación
+      </text>
+      <text x="452" y="111" fontSize="8" fill="currentColor">
+        de la conformidad
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="322">
+          ENAC acredita a quien evalúa; no certifica empresas. La certificadora certifica; no acredita laboratorios.
+        </text>
+        <text x="8" y="336">
+          Y las normas no las hace ninguno de ellos: las hace UNE, la Asociación Española de Normalización.
+        </text>
+      </g>
+    </g>
+  )
+}
+
+/**
+ * El ciclo de acreditacion de ENAC (PAC-ENAC Rev. 7, apartado 8).
+ *
+ * Primer ciclo de 4 años desde la acreditacion y ciclos siguientes de 5.
+ * Seguimientos: el primero antes de 12 meses; despues, nunca mas de 18 meses
+ * entre evaluaciones en el primer ciclo ni de 24 en los siguientes. Y una
+ * reevaluacion antes de que acabe cada ciclo. Las fechas del ejemplo cumplen
+ * todas las reglas, y el control las comprueba sobre el dibujo.
+ */
+function CicloAcreditacion() {
+  const X0 = 40
+  const ANCHO = 500
+  const MESES = 108
+  const xDe = (m: number) => X0 + (m / MESES) * ANCHO
+  const Y = 120
+  const FIN_1 = 48
+  const EVENTOS = [
+    { m: 0, tipo: 'concesion', rotulo: 'acreditación' },
+    { m: 11, tipo: 'seguimiento', rotulo: 'S' },
+    { m: 28, tipo: 'seguimiento', rotulo: 'S' },
+    { m: 44, tipo: 'reevaluacion', rotulo: 'R' },
+    { m: 66, tipo: 'seguimiento', rotulo: 'S' },
+    { m: 88, tipo: 'seguimiento', rotulo: 'S' },
+    { m: 104, tipo: 'reevaluacion', rotulo: 'R' },
+  ]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* los dos ciclos */}
+      <rect data-pieza="ciclo-1" x={xDe(0)} y={Y - 42} width={xDe(FIN_1) - xDe(0)} height="60" fill={AZUL} fillOpacity="0.22" />
+      <rect data-pieza="ciclo-2" x={xDe(FIN_1)} y={Y - 42} width={xDe(MESES) - xDe(FIN_1)} height="60" fill={AZUL_CLARO} fillOpacity="0.3" />
+      <line data-pieza="fin-ciclo-1" x1={xDe(FIN_1)} y1={Y - 48} x2={xDe(FIN_1)} y2={Y + 24} stroke={ROJO} strokeWidth="1.4" strokeDasharray="4 3" />
+      <line data-pieza="fin-ciclo-2" x1={xDe(MESES)} y1={Y - 48} x2={xDe(MESES)} y2={Y + 24} stroke={ROJO} strokeWidth="1.4" strokeDasharray="4 3" />
+      <g fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        <text x={(xDe(0) + xDe(FIN_1)) / 2} y={Y - 50}>
+          1.er ciclo: 4 años
+        </text>
+        <text x={(xDe(FIN_1) + xDe(MESES)) / 2} y={Y - 50}>
+          2.º ciclo y siguientes: 5 años
+        </text>
+      </g>
+
+      {/* el eje de meses */}
+      <line x1={xDe(0)} y1={Y + 24} x2={xDe(MESES)} y2={Y + 24} stroke="currentColor" strokeWidth="1.4" />
+      {Array.from({ length: 10 }, (_, i) => i * 12).map((m) => (
+        <g key={m}>
+          <line data-pieza={'tick-' + m} x1={xDe(m)} y1={Y + 24} x2={xDe(m)} y2={Y + 29} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(m)} y={Y + 40} fontSize="7.5" textAnchor="middle" fill="currentColor">
+            {m}
+          </text>
+        </g>
+      ))}
+      <text x={xDe(MESES)} y={Y + 54} fontSize="8" textAnchor="end" fill="currentColor">
+        meses desde la acreditación
+      </text>
+
+      {/* las evaluaciones */}
+      {EVENTOS.map((e) => (
+        <g key={e.m}>
+          <circle
+            data-pieza={e.tipo}
+            cx={xDe(e.m)}
+            cy={Y}
+            r={e.tipo === 'seguimiento' ? 5 : 6.5}
+            fill={e.tipo === 'seguimiento' ? AZUL : ROJO}
+            stroke="currentColor"
+            strokeWidth="1"
+          />
+          <text x={xDe(e.m)} y={Y - 12} fontSize="8" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {e.tipo === 'concesion' ? '' : e.rotulo}
+          </text>
+        </g>
+      ))}
+      <text x={xDe(0) + 4} y={Y + 14} fontSize="7.5" fill="currentColor">
+        acreditación
+      </text>
+
+      <g fontSize="8.5" fill="currentColor">
+        <text x="8" y="202">
+          S = seguimiento: el primero antes de 12 meses; después, nunca más de 18 meses entre evaluaciones en el
+        </text>
+        <text x="8" y="215">
+          primer ciclo, ni de 24 en los siguientes. R = reevaluación de la norma entera, antes de que acabe el ciclo.
+        </text>
+        <text x="8" y="233">
+          La renovación se pide firmada 4 meses antes de la reevaluación; si no, la acreditación se extingue.
+        </text>
+        <text x="8" y="246">
+          Y entre medias, visitas de control si hay cambios, mal uso de la marca o una reclamación.
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -4645,6 +4846,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <RectaMinimosCuadrados />
     case 'cadena-trazabilidad':
       return <CadenaTrazabilidad />
+    case 'acreditacion-certificacion':
+      return <AcreditacionCertificacion />
+    case 'ciclo-acreditacion':
+      return <CicloAcreditacion />
   }
 }
 
