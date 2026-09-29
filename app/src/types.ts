@@ -85,6 +85,8 @@ export type TipoEsquema =
   | 'clases-competencias'
   | 'plazos-procedimiento'
   | 'fases-procedimiento'
+  | 'organos-zaragoza'
+  | 'umbrales-gran-poblacion'
 
 export type TipoMaterial =
   | 'matraz-aforado'

@@ -59,6 +59,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'clases-competencias': 'Las tres clases de competencias: quién legisla y quién ejecuta',
   'plazos-procedimiento': 'Los plazos del procedimiento, en días hábiles',
   'fases-procedimiento': 'Las fases del procedimiento y cómo se inicia',
+  'organos-zaragoza': 'Los órganos de gobierno de Zaragoza y cómo se relacionan',
+  'umbrales-gran-poblacion': 'Los cuatro supuestos de gran población y dónde cae Zaragoza',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -112,6 +114,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'clases-competencias': { ancho: 580, alto: 306 },
   'plazos-procedimiento': { ancho: 580, alto: 316 },
   'fases-procedimiento': { ancho: 580, alto: 330 },
+  'organos-zaragoza': { ancho: 580, alto: 346 },
+  'umbrales-gran-poblacion': { ancho: 580, alto: 292 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5440,6 +5444,217 @@ function FasesProcedimiento() {
   )
 }
 
+/**
+ * Los organos de gobierno del Ayuntamiento de Zaragoza (Ley 10/2017, arts. 8 a
+ * 14) y como se relacionan. El Alcalde preside el Pleno y el Gobierno de
+ * Zaragoza (art. 12.1.d), nombra y separa a los miembros del Gobierno
+ * (art. 13.2) y nombra a los Tenientes de Alcalde (art. 12.1.e). El Alcalde
+ * responde de su gestion ante el Pleno (art. 12.1) y el Gobierno tambien, de
+ * forma solidaria (art. 13.3). El Gobierno nombra y cesa a los titulares de los
+ * organos directivos (art. 14.1.j). Las Comisiones del Pleno dictaminan lo que
+ * el Pleno ha de aprobar (art. 10.4).
+ */
+function OrganosZaragoza() {
+  type Caja = { clave: string; x: number; y: number; an: number; titulo: string; pie: string; color: string }
+  const AL = 46
+  const C: Record<string, Caja> = {
+    comisiones: { clave: 'comisiones', x: 10, y: 20, an: 124, titulo: 'Comisiones del Pleno', pie: 'grupos, en proporción', color: AZUL_CLARO },
+    pleno: { clave: 'pleno', x: 190, y: 20, an: 156, titulo: 'Pleno', pie: 'Alcalde y Concejales', color: ROJO },
+    alcalde: { clave: 'alcalde', x: 190, y: 150, an: 156, titulo: 'Alcalde', pie: 'dirige la acción de gobierno', color: AZUL },
+    gobierno: { clave: 'gobierno', x: 414, y: 150, an: 156, titulo: 'Gobierno de Zaragoza', pie: '(Junta de Gobierno Local)', color: AZUL },
+    tenientes: { clave: 'tenientes', x: 190, y: 276, an: 156, titulo: 'Tenientes de Alcalde', pie: 'lo sustituyen, por su orden', color: AZUL_CLARO },
+    directivos: { clave: 'directivos', x: 414, y: 276, an: 156, titulo: 'Órganos directivos', pie: 'coordinadores, directores…', color: AZUL_CLARO },
+  }
+  const caja = (c: Caja) => (
+    <g key={c.clave}>
+      <rect
+        data-pieza={'nodo-' + c.clave}
+        x={c.x}
+        y={c.y}
+        width={c.an}
+        height={AL}
+        rx="5"
+        fill={c.color}
+        fillOpacity={c.color === ROJO ? 0.22 : 0.4}
+        stroke="currentColor"
+        strokeWidth="1.2"
+      />
+      <text x={c.x + c.an / 2} y={c.y + 19} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {c.titulo}
+      </text>
+      <text x={c.x + c.an / 2} y={c.y + 34} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        {c.pie}
+      </text>
+    </g>
+  )
+  const flecha = (tipo: string, clave: string, [x1, y1]: number[], [x2, y2]: number[]) => {
+    const ang = Math.atan2(y2 - y1, x2 - x1)
+    const punta = (s: number) => `${(x2 - 7 * Math.cos(ang + s)).toFixed(1)} ${(y2 - 7 * Math.sin(ang + s)).toFixed(1)}`
+    const roja = tipo === 'responde'
+    return (
+      <g key={clave} stroke={roja ? ROJO : 'currentColor'} strokeWidth="1.6" fill="none" strokeDasharray={roja ? '5 3' : undefined}>
+        <line data-pieza={tipo} x1={x1.toFixed(1)} y1={y1.toFixed(1)} x2={x2.toFixed(1)} y2={y2.toFixed(1)} />
+        <path d={`M${punta(0.45)} L${x2.toFixed(1)} ${y2.toFixed(1)} L${punta(-0.45)}`} strokeDasharray="none" />
+      </g>
+    )
+  }
+  const { comisiones, pleno, alcalde, gobierno, tenientes, directivos } = C
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {Object.values(C).map(caja)}
+      {flecha('dictamina', 'comisiones-pleno', [comisiones.x + comisiones.an, comisiones.y + AL / 2], [pleno.x, pleno.y + AL / 2])}
+      {flecha('preside', 'alcalde-pleno', [alcalde.x + 46, alcalde.y], [pleno.x + 46, pleno.y + AL])}
+      {flecha('responde', 'alcalde-responde', [alcalde.x + 110, alcalde.y], [pleno.x + 110, pleno.y + AL])}
+      {flecha('preside', 'alcalde-gobierno', [alcalde.x + alcalde.an, alcalde.y + 14], [gobierno.x, gobierno.y + 14])}
+      {flecha('nombra', 'alcalde-nombra-gobierno', [alcalde.x + alcalde.an, alcalde.y + 32], [gobierno.x, gobierno.y + 32])}
+      {flecha('responde', 'gobierno-responde', [gobierno.x + 40, gobierno.y], [pleno.x + pleno.an, pleno.y + 34])}
+      {flecha('nombra', 'alcalde-tenientes', [alcalde.x + alcalde.an / 2, alcalde.y + AL], [tenientes.x + tenientes.an / 2, tenientes.y])}
+      {flecha('nombra', 'gobierno-directivos', [gobierno.x + gobierno.an / 2, gobierno.y + AL], [directivos.x + directivos.an / 2, directivos.y])}
+
+      <g fontSize="8" fill="currentColor">
+        <text x={(comisiones.x + comisiones.an + pleno.x) / 2} y={pleno.y + AL / 2 - 5} textAnchor="middle" fontSize="7.5">
+          dictaminan
+        </text>
+        <text x={alcalde.x + 40} y="112" textAnchor="end">
+          preside
+        </text>
+        <text x={(alcalde.x + alcalde.an + gobierno.x) / 2} y={alcalde.y + 9} textAnchor="middle" fontSize="7.5">
+          preside
+        </text>
+        <text x={(alcalde.x + alcalde.an + gobierno.x) / 2} y={alcalde.y + 45} textAnchor="middle" fontSize="7.5">
+          nombra y
+        </text>
+        <text x={(alcalde.x + alcalde.an + gobierno.x) / 2} y={alcalde.y + 55} textAnchor="middle" fontSize="7.5">
+          separa
+        </text>
+        <text x={alcalde.x + alcalde.an / 2 + 6} y="240">
+          nombra
+        </text>
+        <text x={gobierno.x + gobierno.an / 2 + 6} y="240">
+          nombra y cesa
+        </text>
+      </g>
+      <g fontSize="8" fontWeight="bold" fill={ROJO}>
+        <text x={alcalde.x + 116} y="112">
+          responde
+        </text>
+        <text x="430" y="100">
+          responde
+        </text>
+      </g>
+      <text x="10" y="338" fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        En rojo discontinuo, ante quién responde políticamente cada órgano (arts. 12.1 y 13.3).
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Los cuatro supuestos del art. 121.1 LBRL (titulo X, municipios de gran
+ * poblacion) sobre una escala de habitantes: a) mas de 250.000; b) capitales de
+ * provincia de mas de 175.000; c) capitales de provincia, autonomicas o sedes de
+ * instituciones autonomicas, sin minimo; d) mas de 75.000 con circunstancias
+ * especiales. En c) y d) hace falta que lo decida la Asamblea Legislativa a
+ * iniciativa del ayuntamiento. Zaragoza (699.007 habitantes, censo del INE a
+ * 1-1-2025) cae por encima de a) y de b), asi que el regimen se le aplica sin
+ * mas.
+ */
+function UmbralesGranPoblacion() {
+  const X0 = 214
+  const ANCHO = 340
+  const MAX = 800000
+  const xDe = (v: number) => X0 + (v / MAX) * ANCHO
+  const Y0 = 34
+  const FILA = 40
+  const miles = (v: number) => String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')
+  type Supuesto = { letra: string; rotulo: string[]; min: number; cortes: boolean; cifra: string }
+  const SUPUESTOS: Supuesto[] = [
+    { letra: 'a', rotulo: ['a) Cualquier municipio'], min: 250000, cortes: false, cifra: 'más de 250.000' },
+    { letra: 'b', rotulo: ['b) Capital de provincia'], min: 175000, cortes: false, cifra: 'más de 175.000' },
+    { letra: 'c', rotulo: ['c) Capital de provincia o autonómica,', 'o sede de instituciones autonómicas'], min: 0, cortes: true, cifra: 'sin mínimo' },
+    { letra: 'd', rotulo: ['d) Con circunstancias especiales'], min: 75000, cortes: true, cifra: 'más de 75.000' },
+  ]
+  const yEje = Y0 + SUPUESTOS.length * FILA + 6
+  const ZARAGOZA = 699007
+  const relleno = (cortes: boolean) => (cortes ? { fill: ROJO, fillOpacity: 0.3 } : { fill: AZUL, fillOpacity: 0.7 })
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {/* rejilla y eje */}
+      {Array.from({ length: 9 }, (_, i) => i * 100000).map((v) => (
+        <g key={v}>
+          <line x1={xDe(v)} y1={Y0 - 6} x2={xDe(v)} y2={yEje} stroke="currentColor" strokeOpacity="0.15" />
+          <line data-pieza="tick" data-valor={v} x1={xDe(v)} y1={yEje} x2={xDe(v)} y2={yEje + 5} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(v)} y={yEje + 15} fontSize="7" textAnchor="middle" fill="currentColor">
+            {v === 0 ? '0' : miles(v)}
+          </text>
+        </g>
+      ))}
+      <line x1={xDe(0)} y1={yEje} x2={xDe(MAX)} y2={yEje} stroke="currentColor" strokeWidth="1.3" />
+      <text x={xDe(MAX)} y={yEje + 28} fontSize="8" textAnchor="end" fill="currentColor">
+        habitantes
+      </text>
+
+      {SUPUESTOS.map((s, i) => {
+        const yc = Y0 + i * FILA + FILA / 2
+        const r = relleno(s.cortes)
+        return (
+          <g key={s.letra}>
+            {s.rotulo.map((t, k) => (
+              <text key={t} x="10" y={yc + 3 - (s.rotulo.length - 1) * 5 + k * 10} fontSize="8.5" fill="currentColor">
+                {t}
+              </text>
+            ))}
+            <rect
+              data-pieza="supuesto"
+              data-letra={s.letra}
+              x={xDe(s.min)}
+              y={yc - 7}
+              width={xDe(MAX) - xDe(s.min)}
+              height="14"
+              rx="2"
+              fill={r.fill}
+              fillOpacity={r.fillOpacity}
+              stroke="currentColor"
+              strokeWidth="0.8"
+            />
+            <path d={`M${xDe(MAX) - 2} ${yc - 10} L${xDe(MAX) + 8} ${yc} L${xDe(MAX) - 2} ${yc + 10}`} fill="none" stroke="currentColor" strokeWidth="1.4" />
+            <text
+              data-pieza="cifra"
+              data-letra={s.letra}
+              x={s.min === 0 ? xDe(0) + 6 : xDe(s.min) - 5}
+              y={yc + 3}
+              fontSize="8.5"
+              fontWeight="bold"
+              textAnchor={s.min === 0 ? 'start' : 'end'}
+              fill="currentColor"
+            >
+              {s.cifra}
+            </text>
+          </g>
+        )
+      })}
+
+      <line data-pieza="zaragoza" x1={xDe(ZARAGOZA)} y1={Y0 - 8} x2={xDe(ZARAGOZA)} y2={yEje} stroke="currentColor" strokeWidth="1.6" strokeDasharray="4 3" />
+      <text data-pieza="cifra-zaragoza" x={xDe(ZARAGOZA)} y={Y0 - 13} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Zaragoza: {miles(ZARAGOZA)}
+      </text>
+
+      <g fontSize="8" fill="currentColor">
+        <rect data-pieza="leyenda-directo" x="10" y="250" width="14" height="10" fill={AZUL} fillOpacity="0.7" stroke="currentColor" strokeWidth="0.8" />
+        <text x="30" y="259">
+          se aplica sin más, por la población
+        </text>
+        <rect data-pieza="leyenda-cortes" x="10" y="268" width="14" height="10" fill={ROJO} fillOpacity="0.3" stroke="currentColor" strokeWidth="0.8" />
+        <text x="30" y="277">
+          además, tiene que decidirlo la Asamblea Legislativa de la Comunidad, si lo pide el ayuntamiento
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -5540,6 +5755,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <PlazosProcedimiento />
     case 'fases-procedimiento':
       return <FasesProcedimiento />
+    case 'organos-zaragoza':
+      return <OrganosZaragoza />
+    case 'umbrales-gran-poblacion':
+      return <UmbralesGranPoblacion />
   }
 }
 

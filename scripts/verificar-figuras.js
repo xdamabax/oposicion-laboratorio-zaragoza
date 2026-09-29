@@ -788,6 +788,60 @@ function medir(sabotaje, ROJO) {
     f.setAttribute('x2', num(s, 'x') + num(s, 'width'))
     f.setAttribute('y2', num(s, 'y') + num(s, 'height') / 2)
   }
+  if (sabotaje === 84) {
+    const svg = porClave('organos-zaragoza')
+    // el Gobierno de Zaragoza respondiendo ante el Alcalde en vez de ante el Pleno
+    const g = pieza(svg, 'nodo-gobierno')
+    const a = pieza(svg, 'nodo-alcalde')
+    const f = piezas(svg, 'responde').find((l) => Math.abs(num(l, 'y1') - num(g, 'y')) < 2 && num(l, 'x1') >= num(g, 'x'))
+    f.setAttribute('x2', num(a, 'x') + num(a, 'width'))
+    f.setAttribute('y2', num(a, 'y') + 6)
+  }
+  if (sabotaje === 85) {
+    const svg = porClave('organos-zaragoza')
+    // los miembros del Gobierno de Zaragoza nombrados por el Pleno
+    const g = pieza(svg, 'nodo-gobierno')
+    const p = pieza(svg, 'nodo-pleno')
+    const f = piezas(svg, 'nombra').find((l) => Math.abs(num(l, 'x2') - num(g, 'x')) < 2)
+    f.setAttribute('x1', num(p, 'x') + num(p, 'width'))
+    f.setAttribute('y1', num(p, 'y') + 10)
+  }
+  if (sabotaje === 86) {
+    const svg = porClave('umbrales-gran-poblacion')
+    // la capital de provincia rebajada a 150.000, con su cifra: dibujo y rotulo de acuerdo, pero contra la ley
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const x0 = num(ticks[0], 'x1')
+    const porHab = (num(ticks[ticks.length - 1], 'x1') - x0) / num(ticks[ticks.length - 1], 'data-valor')
+    const b = svg.querySelector('[data-pieza="supuesto"][data-letra="b"]')
+    const fin = num(b, 'x') + num(b, 'width')
+    b.setAttribute('x', x0 + 150000 * porHab)
+    b.setAttribute('width', fin - (x0 + 150000 * porHab))
+    svg.querySelector('[data-pieza="cifra"][data-letra="b"]').textContent = 'más de 150.000'
+  }
+  if (sabotaje === 87) {
+    const svg = porClave('umbrales-gran-poblacion')
+    // el supuesto d) pintado como si bastara la poblacion, sin decision de la Asamblea
+    const ley = pieza(svg, 'leyenda-directo')
+    const d = svg.querySelector('[data-pieza="supuesto"][data-letra="d"]')
+    d.setAttribute('fill', ley.getAttribute('fill'))
+    d.setAttribute('fill-opacity', ley.getAttribute('fill-opacity'))
+  }
+  if (sabotaje === 88) {
+    const svg = porClave('umbrales-gran-poblacion')
+    // la cifra del supuesto a) escrita distinta de donde arranca su barra
+    svg.querySelector('[data-pieza="cifra"][data-letra="a"]').textContent = 'más de 300.000'
+  }
+  if (sabotaje === 89) {
+    const svg = porClave('umbrales-gran-poblacion')
+    // Zaragoza llevada a 160.000 habitantes, con su cifra: por debajo de los dos umbrales automaticos
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const x0 = num(ticks[0], 'x1')
+    const porHab = (num(ticks[ticks.length - 1], 'x1') - x0) / num(ticks[ticks.length - 1], 'data-valor')
+    const z = pieza(svg, 'zaragoza')
+    z.setAttribute('x1', x0 + 160000 * porHab)
+    z.setAttribute('x2', x0 + 160000 * porHab)
+    pieza(svg, 'cifra-zaragoza').textContent = 'Zaragoza: 160.000'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -2879,6 +2933,122 @@ function medir(sabotaje, ROJO) {
     return 'cuatro vías → de oficio; iniciación → de oficio o a solicitud'
   })
 
+  /*
+   * Los organos de gobierno de Zaragoza (Ley 10/2017, arts. 8 a 14). Se lee de
+   * que caja sale y a que caja llega cada flecha, como en las instituciones de
+   * Aragon.
+   */
+  control('Zaragoza · el Alcalde y el Gobierno de Zaragoza responden ante el Pleno, y nadie responde ante otro órgano', () => {
+    const svg = porClave('organos-zaragoza')
+    const responde = piezas(svg, 'responde').map((f) => extremos(svg, f))
+    for (const [de, a] of responde) {
+      if (a !== 'pleno') throw new Error(`«${de}» responde ante «${a}»: el Alcalde y el Gobierno responden ante el Pleno (arts. 12.1 y 13.3)`)
+    }
+    const quien = responde.map(([de]) => de).sort()
+    if (quien.join() !== 'alcalde,gobierno') throw new Error(`responden ante el Pleno: ${quien.join(', ') || 'nadie'}; son el Alcalde y el Gobierno`)
+    return 'Alcalde → Pleno y Gobierno de Zaragoza → Pleno'
+  })
+
+  control('Zaragoza · el Alcalde preside el Pleno y el Gobierno, y es él quien nombra a los miembros del Gobierno', () => {
+    const svg = porClave('organos-zaragoza')
+    const preside = piezas(svg, 'preside').map((f) => extremos(svg, f))
+    for (const [de, a] of preside) {
+      if (de !== 'alcalde') throw new Error(`«${de}» preside «${a}»: los preside el Alcalde (art. 12.1.d)`)
+    }
+    for (const org of ['pleno', 'gobierno']) {
+      if (!preside.some(([, a]) => a === org)) throw new Error(`nadie preside «${org}» en el dibujo`)
+    }
+    const alGobierno = piezas(svg, 'nombra')
+      .map((f) => extremos(svg, f))
+      .filter(([, a]) => a === 'gobierno')
+    if (!alGobierno.length) throw new Error('ninguna flecha de «nombra» llega al Gobierno de Zaragoza')
+    const otro = alGobierno.find(([de]) => de !== 'alcalde')
+    if (otro) throw new Error(`a los miembros del Gobierno los nombra «${otro[0]}»: los nombra y separa libremente el Alcalde (art. 13.2)`)
+    return 'Alcalde → preside Pleno y Gobierno; Alcalde → nombra y separa al Gobierno'
+  })
+
+  /*
+   * Los supuestos del art. 121.1 LBRL. La escala sale de las marcas del eje, que
+   * llevan su valor; cada barra se lee donde empieza y cada cifra escrita se
+   * compara con la ley y con su barra. Quien decide, por el color frente a la
+   * leyenda.
+   */
+  const escalaHab = (svg) => {
+    const ticks = piezas(svg, 'tick')
+      .map((t) => [num(t, 'x1'), num(t, 'data-valor')])
+      .sort((a, b) => a[1] - b[1])
+    if (ticks.length < 2) throw new Error('el eje no tiene marcas suficientes')
+    const [xa, va] = ticks[0]
+    const [xb, vb] = ticks[ticks.length - 1]
+    for (const [x, v] of ticks) {
+      const esperado = xa + ((v - va) / (vb - va)) * (xb - xa)
+      if (Math.abs(x - esperado) > 0.5) throw new Error(`la marca de ${v} no está en su sitio: la escala no es lineal`)
+    }
+    return (x) => va + ((x - xa) / (xb - xa)) * (vb - va)
+  }
+  const cifraHab = (texto) => {
+    const t = texto.replace(/\s+/g, ' ').trim()
+    if (/sin m[ií]nimo/i.test(t)) return 0
+    const m = t.match(/\d{1,3}(?:\.\d{3})+|\d+/)
+    if (!m) throw new Error(`la cifra «${t}» no se puede leer`)
+    return Number(m[0].replace(/\./g, ''))
+  }
+
+  control('Gran población · cada supuesto arranca en su cifra legal (250.000, 175.000, sin mínimo y 75.000) y su rótulo dice lo mismo', () => {
+    const svg = porClave('umbrales-gran-poblacion')
+    const hab = escalaHab(svg)
+    const LEY = { a: 250000, b: 175000, c: 0, d: 75000 }
+    const barras = piezas(svg, 'supuesto')
+    if (barras.length !== 4) throw new Error(`hay ${barras.length} supuestos y el art. 121.1 tiene 4`)
+    const leidos = []
+    for (const barra of barras) {
+      const letra = barra.getAttribute('data-letra')
+      if (!(letra in LEY)) throw new Error(`supuesto desconocido: «${letra}»`)
+      const desde = hab(num(barra, 'x'))
+      if (Math.abs(desde - LEY[letra]) > 2000) {
+        throw new Error(`el supuesto ${letra}) arranca en ${Math.round(desde)} habitantes, y la ley dice ${LEY[letra]}`)
+      }
+      const cifra = svg.querySelector(`[data-pieza="cifra"][data-letra="${letra}"]`)
+      if (!cifra) throw new Error(`el supuesto ${letra}) no tiene cifra escrita`)
+      const escrita = cifraHab(cifra.textContent)
+      if (Math.abs(escrita - desde) > 2000) {
+        throw new Error(`el supuesto ${letra}) dice «${cifra.textContent.trim()}» y su barra arranca en ${Math.round(desde)}`)
+      }
+      leidos.push(`${letra}) ${escrita}`)
+    }
+    return leidos.sort().join(' · ')
+  })
+
+  control('Gran población · a) y b) bastan por sí solos, c) y d) exigen decisión de la Asamblea, y Zaragoza supera a) y b)', () => {
+    const svg = porClave('umbrales-gran-poblacion')
+    const pinta = (el) => `${el.getAttribute('fill')}|${el.getAttribute('fill-opacity')}`
+    const directo = pinta(pieza(svg, 'leyenda-directo'))
+    const cortes = pinta(pieza(svg, 'leyenda-cortes'))
+    const ESPERADO = { a: false, b: false, c: true, d: true }
+    const barra = {}
+    for (const b of piezas(svg, 'supuesto')) {
+      const letra = b.getAttribute('data-letra')
+      barra[letra] = b
+      const necesita = pinta(b) === cortes ? true : pinta(b) === directo ? false : null
+      if (necesita === null) throw new Error(`el supuesto ${letra}) no tiene el color de ninguna leyenda`)
+      if (necesita !== ESPERADO[letra]) {
+        throw new Error(
+          `el supuesto ${letra}) está pintado como ${necesita ? 'necesitado de la Asamblea' : 'automático'}: ` +
+            'solo c) y d) exigen que lo decida la Asamblea Legislativa a iniciativa del ayuntamiento (art. 121.1)',
+        )
+      }
+    }
+    const hab = escalaHab(svg)
+    const z = hab(num(pieza(svg, 'zaragoza'), 'x1'))
+    const escrita = cifraHab(pieza(svg, 'cifra-zaragoza').textContent)
+    if (Math.abs(escrita - z) > 2000) throw new Error(`Zaragoza dice ${escrita} y su línea está en ${Math.round(z)}`)
+    for (const letra of ['a', 'b']) {
+      const desde = hab(num(barra[letra], 'x'))
+      if (!(z > desde)) throw new Error(`Zaragoza (${Math.round(z)}) no supera el umbral del supuesto ${letra}) (${Math.round(desde)})`)
+    }
+    return `a) y b) automáticos, c) y d) con Asamblea; Zaragoza en ${Math.round(z)}, por encima de a) y de b)`
+  })
+
   return resultados
 }
 
@@ -2968,6 +3138,12 @@ const SABOTAJES = {
   81: 'la cifra del periodo de prueba escrita distinta de lo que dibuja su barra',
   82: 'de la iniciación a la instrucción, saltándose la ordenación',
   83: 'la denuncia colgada de la solicitud del interesado en vez de la iniciación de oficio',
+  84: 'el Gobierno de Zaragoza respondiendo ante el Alcalde en vez de ante el Pleno',
+  85: 'los miembros del Gobierno de Zaragoza nombrados por el Pleno',
+  86: 'la capital de provincia rebajada a 150.000 habitantes, dibujo y cifra de acuerdo entre sí pero no con la ley',
+  87: 'el supuesto d) de gran población pintado como automático, sin decisión de la Asamblea',
+  88: 'la cifra del supuesto a) de gran población escrita distinta de donde arranca su barra',
+  89: 'Zaragoza llevada a 160.000 habitantes, por debajo de los dos umbrales automáticos',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3061,6 +3237,12 @@ const CONTROL_DE = {
   81: [79],
   82: [80],
   83: [81],
+  84: [82],
+  85: [83],
+  86: [84],
+  87: [85],
+  88: [84],
+  89: [85],
 }
 
 async function main() {
