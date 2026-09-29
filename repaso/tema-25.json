@@ -9,7 +9,7 @@
     "opcionesPorPregunta": 3,
     "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
   },
-  "nucleoCriterio": "A diferencia del 23 y del 24, este tema SÍ tiene núcleo repetido documentado: la ley de Lambert-Beer aparece en 1233 #8 y en 1322 #11. El núcleo se construye alrededor de ella y en dos anillos. El primero es la ley misma y todo lo que cuelga directamente: A = ε·b·c con sus unidades, la relación logarítmica entre absorbancia y transmitancia, qué es la absortividad molar, la aditividad, el intervalo de trabajo y las tres clases de desviación. El segundo son las decisiones de trabajo que un examen puede plantear en una línea: cubeta de cuarzo para el ultravioleta, fuente de deuterio para el UV y de tungsteno para el visible, qué lleva el blanco, qué hacer si la absorbancia se sale del intervalo y por qué la turbidez da absorbancia por exceso. De los métodos concretos entran en el núcleo los dos mejor verificados (fósforo por azul de molibdeno y nitrito por sulfanilamida-NED) y el hecho legal de que el RD 3/2023 no impone método. Queda fuera del núcleo todo lo que el apunte declara como no citable: las longitudes de onda no contrastadas, el valor exacto del mínimo de error fotométrico y el umbral de concentración donde falla Beer.",
+  "nucleoCriterio": "A diferencia del 23 y del 24, este tema SÍ tiene núcleo repetido documentado: la ley de Lambert-Beer aparece en 1233 #8 y en 1322 #11. El núcleo se construye alrededor de ella y en dos anillos. El primero es la ley misma y todo lo que cuelga directamente: A = ε·b·c con sus unidades, la relación logarítmica entre absorbancia y transmitancia, qué es la absortividad molar, la aditividad, el intervalo de trabajo y las tres clases de desviación. El segundo son las decisiones de trabajo que un examen puede plantear en una línea: cubeta de cuarzo para el ultravioleta, fuente de deuterio para el UV y de tungsteno para el visible, qué lleva el blanco, qué hacer si la absorbancia se sale del intervalo y por qué la turbidez da absorbancia por exceso. De los métodos concretos entran en el núcleo los dos mejor verificados (fósforo por azul de molibdeno y nitrito por sulfanilamida-NED) y el hecho legal de que el RD 3/2023 no impone método. Queda fuera del núcleo todo lo que el apunte declara como no citable: las longitudes de onda no contrastadas, el valor exacto del mínimo de error fotométrico y el umbral de concentración donde falla Beer. Se añaden al núcleo, literales, las dos preguntas de intervalo espectral que el tribunal ha puesto con su propia cifra: 1246 #46 (UV, 195-380 nm, plantilla provisional) y 1322 #14 (UV-VIS, 180-780 nm, plantilla definitiva).",
   "flashcards": [
     {
       "id": "t25-f01",
@@ -725,6 +725,32 @@
       "correcta": 1,
       "explicacion": "El anexo III, parte D, exige que el método sea capaz de medir el valor paramétrico con un límite de cuantificación igual o inferior al 30 % de ese valor y con la incertidumbre de la tabla 15. La norma UNE es la forma habitual de cumplirlo, no una obligación en sí.",
       "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q25",
+      "pregunta": "La región ultravioleta abarca el intervalo de longitudes de onda comprendido entre:",
+      "opciones": [
+        "195 - 380 nm.",
+        "380 - 430 nm.",
+        "Ninguna de las anteriores."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta literal de 1246 #46; la plantilla oficial (provisional) da por buena la a). El apunte da 190-380 nm como cifra de manual, pero en el examen el tribunal ha usado 195-380 nm: si aparece esta pregunta, la respuesta es la a) y no «ninguna de las anteriores».",
+      "fuente": "Cuestionario 1246, primer ejercicio, #46; plantilla provisional del Ayuntamiento de Zaragoza",
+      "nucleo": true
+    },
+    {
+      "id": "t25-q26",
+      "pregunta": "En la técnica de espectrometría de absorción molecular UV-VIS, el rango de longitudes de onda utilizado para realizar la medida es:",
+      "opciones": [
+        "Entre 180 y 780 nm.",
+        "Entre 180 y 780 cm⁻¹.",
+        "Entre 180 y 780 m⁻¹."
+      ],
+      "correcta": 0,
+      "explicacion": "Pregunta literal de 1322 #14; la plantilla definitiva da por buena la a). Lo que se discrimina son las unidades: nanómetros, no números de onda. El límite inferior que usa aquí el tribunal (180 nm) no coincide con el de 1246 #46 (195 nm) ni con el del apunte (190 nm): son convenciones distintas del borde del ultravioleta, y conviene reconocer las tres.",
+      "fuente": "Cuestionario 1322, primer ejercicio, #14; plantilla definitiva del Ayuntamiento de Zaragoza",
       "nucleo": true
     }
   ],

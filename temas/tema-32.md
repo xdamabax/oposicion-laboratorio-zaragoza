@@ -400,6 +400,8 @@ Y el cierre del anexo: *«**los microplásticos** se incluirán en la lista cuan
 
 4. **No tengo la plantilla de respuestas de ningún cuestionario.** En el benzo(a)pireno la deducción es segura —las otras opciones eran gravimetría, volumetría y turbidimetría, o ICP-MS y cámara de grafito—. En la precolumna y el detector de conductividad también. Los **siete distractores** los identifico por descarte razonado, no por plantilla.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1233 y 1322 que cita este tema coinciden con sus **plantillas definitivas**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada. Del **segundo ejercicio de 1246** no se ha publicado plantilla, así que las #1, #2 y #7 siguen siendo **deducción**, no respuesta oficial.
+
 5. **El reparto con el 30 y el 31 lo decidí al redactar el 30** y aquí se respeta, con una consecuencia que dejo dicha: **la precolumna y el detector de conductividad aparecen en dos temas**. En el 30 como piezas del cromatógrafo iónico —que es donde el detector de conductividad tiene sentido— y aquí como piezas del HPLC en general, que es lo que pide este enunciado. **No es un descuido: es deliberado**, y el **ANALISIS.md** asigna las dos preguntas precisamente a este tema.
 
 6. **Los límites de detección de los detectores son de LibreTexts y son órdenes de magnitud**, no especificaciones. Sirven para ordenarlos entre sí —fluorescencia mejor que UV, y el índice de refracción el peor—, que es lo que se pregunta.

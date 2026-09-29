@@ -437,6 +437,8 @@ El **Reglamento (CE) 152/2009, anexo III, parte L**, «Determinación del almid�
 
 7. **No tengo la plantilla de respuestas de ningún cuestionario.** En las dos preguntas del primer ejercicio la deducción es **segura**: las tres opciones son excluyentes y solo una es cierta. En los supuestos de «indique la técnica» para turbidez, también: las otras opciones son pHmetro, conductímetro y colorímetro.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1322 que cita este tema coinciden con su **plantilla definitiva**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada. Del **segundo ejercicio de 1246** no se ha publicado plantilla, así que la #2 sigue siendo **deducción**, no respuesta oficial.
+
 8. **«Turbidímetro» frente a «turbidimetría».** Los dos supuestos usan palabras distintas para lo mismo, y —estrictamente— **ninguna de las dos es la geometría que la norma prescribe para agua de consumo**, que es la **nefelométrica**. Para el examen, **turbidez → turbidímetro / turbidimetría**, sin darle más vueltas; pero no hay que confundir el uso laxo del examinador con la distinción técnica del apartado 2.1.3, que es la que puede caer en una pregunta de fundamento.
 
 9. **El régimen de dispersión y el tamaño de partícula.** Digo, siguiendo a LibreTexts, que la nefelometría conviene a suspensiones diluidas y la turbidimetría a las densas. El intervalo que suele citarse —**0,1 a 1 µm como óptimo de la nefelometría**— aparece en el material que manejo pero **no lo he podido contrastar en el texto original**, así que **no lo llevo a la tabla operativa** ni a los puntos críticos.

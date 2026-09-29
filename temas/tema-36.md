@@ -479,4 +479,6 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 10. **No tengo la plantilla de respuestas de ningún cuestionario.** En las ocho preguntas de este tema la deducción es segura, y en seis de ellas la respuesta está **literalmente en el BOE** (RD 487/2022) o en el documento del Ministerio de Defensa. Aun así, **son deducciones razonadas, no plantilla oficial**.
 
+   **Revisada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): el segundo ejercicio de 1246 **no tiene plantilla publicada**, así que las ocho de este tema siguen siendo **deducción**, no respuesta oficial.
+
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 35.

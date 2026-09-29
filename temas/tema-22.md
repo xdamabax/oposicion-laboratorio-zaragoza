@@ -217,7 +217,7 @@ El parámetro que se evalúa es el **error de capacidad**: la diferencia entre e
 | **Por retroceso** (o por exceso y retorno) | Se añade un **exceso conocido** de reactivo y se valora **lo que no ha reaccionado** con un segundo valorante | Reacción lenta, sin buen indicador directo, o analito insoluble o volátil |
 | **Indirecta o por desplazamiento** | El analito desplaza una cantidad equivalente de otra sustancia, y es ésa la que se valora | Yodometrías: el analito libera I₂, que se valora con tiosulfato |
 
-> **Núcleo repetido.** *«Valoración por retroceso: se añade un exceso conocido de reactivo y se valora el que no ha reaccionado»* aparece **en las tres convocatorias analizadas** (1233 #19, 1246 #42, 1322 #12). Es de lo más rentable del tema.
+> **Núcleo repetido.** *«Valoración por retroceso: se añade un exceso conocido de reactivo y se valora el que no ha reaccionado»* aparece **en las tres convocatorias analizadas**: 1246 #42 y 1322 #12 la preguntan directamente, y en 1233 #19, que pregunta qué es la valoración **directa**, las dos definiciones de retroceso son los **distractores**. Es de lo más rentable del tema.
 
 #### El cloruro, caso aparte
 

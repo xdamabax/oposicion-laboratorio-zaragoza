@@ -26,7 +26,7 @@ fuentes:
 > | --- | --- | --- |
 > | **1246, primer ejercicio, #19** | *«Para el cálculo de la incertidumbre de un método analítico necesitamos conocer los siguientes parámetros:»* | **a) Exactitud y Precisión** |
 > | **1246, primer ejercicio, #47** | *«Cuales de los siguientes resultados son "Exactos pero no precisos"?»*, con **tres dianas dibujadas** como opciones: a) impactos **apretados y desplazados** del centro; b) impactos **dispersos alrededor** del centro; c) impactos **apretados en el centro** | **b)**, la de los impactos dispersos alrededor del centro |
-> | **1322, segundo ejercicio, supuesto 1, #10** | *«¿Cuál de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de agua de consumo solicitada en la auditoría?»* | **b) Un material de referencia de agua de consumo con una concentración de 5 mg/l de analito** |
+> | **1322, segundo ejercicio, supuesto 1, #10** | *«¿Cuál de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de agua de consumo solicitada en la auditoría?»* | **b) Un material de referencia de agua de consumo con una concentración de 5 mg/l de analito**, según la plantilla provisional. **El tribunal ANULÓ esta pregunta en la plantilla definitiva** |
 >
 > La **#47** tiene las opciones en imagen y no sale al extraer el PDF a texto: la localicé al preparar el tema 39, renderizando la página. Es **exactamente la figura de las cuatro dianas** de este apunte, y usa «exacto» en el sentido antiguo de **veraz**: *exacto pero no preciso* = la diana **«veraz, pero impreciso»**.
 >
@@ -274,7 +274,7 @@ La veracidad **no se puede medir** —haría falta un número infinito de medida
 
 Tres reglas de la Guía Eurachem que dan preguntas:
 
-- *«La evaluación del sesgo requiere de un valor de referencia fiable, **preferiblemente un MRC con la misma matriz y en concentraciones del analito similares a las muestras reales**»* (5.4.5). **Es exactamente la respuesta de 1322 C2 #10**: agua de consumo, 5 mg/L; no agua desionizada, y no por debajo del LD.
+- *«La evaluación del sesgo requiere de un valor de referencia fiable, **preferiblemente un MRC con la misma matriz y en concentraciones del analito similares a las muestras reales**»* (5.4.5). **Es lo que respondía la plantilla provisional de 1322 C2 #10**: agua de consumo, 5 mg/L; no agua desionizada, y no por debajo del LD. **Pero el tribunal anuló esa pregunta en la plantilla definitiva**: el criterio de Eurachem sigue valiendo, la pregunta no.
 - *«Un MR usado para la calibración **no debería utilizarse para evaluar el sesgo**»* (6.5.2). Cada material, **para un solo fin**.
 - **MR frente a MRC:** el MR puede ser *«cualquier material empleado como valor de referencia»*, estable y homogéneo; el **MRC** lleva además un **certificado** con su valor, su **incertidumbre** y su **trazabilidad metrológica** (cómo se producen y certifican: **tema 39**).
 
@@ -619,7 +619,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 **9. LC ≤ 30 % del valor paramétrico**, y la **incertidumbre (k = 2) de la tabla 15**, estimada **al nivel del valor paramétrico** y **nunca como tolerancia adicional** (RD 3/2023). En **aguas superficiales**: **U ≤ 50 %** y **LC ≤ 30 % de la NCA** (RD 817/2015).
 
-**10. El MRC para la veracidad: MISMA MATRIZ y CONCENTRACIÓN PARECIDA** a las muestras (1322 C2 #10). Y **el MR de la calibración no sirve para el sesgo**.
+**10. El MRC para la veracidad: MISMA MATRIZ y CONCENTRACIÓN PARECIDA** a las muestras (1322 C2 #10, **pregunta anulada por el tribunal**). Y **el MR de la calibración no sirve para el sesgo**.
 
 **11. La recuperación de adiciones da una estimación OPTIMISTA** del sesgo: lo añadido está menos ligado a la matriz que lo natural.
 
@@ -671,7 +671,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 - **ENAC, CGA-ENAC-LEC Rev. 12 (abril de 2024)**, leído entero; de su anexo I sale la cláusula 7.2.1.5 **en castellano literal**.
 - **UNE-EN ISO/IEC 17025:2017**: estado **vigente** comprobado en el buscador de UNE el 25/09/2026.
 - **ISO 11352**: comprobado en la ficha de AENOR que la edición de 2012 está **anulada desde el 01/09/2025**, y en la de ISO que la vigente es la **ISO 11352:2025**, edición 2.
-- **Exámenes anteriores:** los seis cuestionarios extraídos a texto y barridos con doce palabras clave del tema. **Tres preguntas** encajan (1246 #19 y #47, y 1322 C2 #10), transcritas con sus opciones. La #47 tiene las opciones dibujadas y **no aparece al extraer a texto**: se localizó el 25/09/2026, al preparar el tema 39, renderizando la página del PDF con pdf.js. Las dos de **R²** (1233 #18 y 1322 C2 #3) **se dejan para el tema 39**, que es el de la calibración por mínimos cuadrados.
+- **Exámenes anteriores:** los seis cuestionarios extraídos a texto y barridos con doce palabras clave del tema. **Tres preguntas** encajan (1246 #19 y #47, y 1322 C2 #10, esta última **anulada por el tribunal**), transcritas con sus opciones. La #47 tiene las opciones dibujadas y **no aparece al extraer a texto**: se localizó el 25/09/2026, al preparar el tema 39, renderizando la página del PDF con pdf.js. Las dos de **R²** (1233 #18 y 1322 C2 #3) **se dejan para el tema 39**, que es el de la calibración por mínimos cuadrados.
 - **`TEMARIO EXTRA/`:** el mapeo da el tema 38 como «sin nada»; no hay ficha de apoyo.
 - **Figuras:** las tres de este tema (`dianas-veracidad-precision`, `incertidumbre-en-cuadratura` e `intervalo-de-trabajo`) se han añadido al catálogo con **seis controles nuevos** en `verificar-figuras.js` y **seis sabotajes** que los prueban. Los de las dianas **miden el centroide y la dispersión de los impactos** y comprueban que cada diana es **lo que dice su rótulo**, y que **las dos de la misma fila tienen el mismo sesgo y las dos de la misma columna la misma dispersión**; los de la cuadratura, que **el ángulo es recto y la hipotenusa mide √(a² + b²)**, y que **las cifras escritas cuadran con las barras y con U = 2·uc**; los del intervalo, que **el LC está a 10/3 del LD sobre la escala del eje** y **el intervalo arranca en el LC**, y que **la curva no se aparta de la recta más de lo tolerado dentro del intervalo y sí fuera**.
 - **Fecha de verificación:** 25/09/2026.
@@ -698,6 +698,6 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 10. **La vigencia del CGA-ENAC-LEC Rev. 12 (abril de 2024)** es la del documento que sirve hoy el enlace de ENAC; no he podido consultar el listado de revisiones de la web de ENAC para confirmar que no haya una posterior.
 
-11. **No tengo la plantilla de respuestas de ningún cuestionario.** En 1246 #19, 1246 #47 y 1322 C2 #10 la deducción es segura y la respalda literalmente la bibliografía (el modelo del Nordtest y la regla del MRC de Eurachem), pero **son deducciones razonadas, no plantilla oficial**.
+11. **Plantillas oficiales, localizadas el 29/09/2026** (ver `ExamenesAnteriores/PLANTILLAS.md`). La plantilla provisional del 1246 **confirma** las respuestas de **1246 #19** (a, exactitud y precisión) y **1246 #47** (b, la diana de impactos dispersos alrededor del centro). La plantilla definitiva del 1322 (segundo ejercicio) **anuló la #10**, que en la provisional era la b). La regla de Eurachem que se enseña aquí (MRC de la misma matriz y concentración parecida) no cambia, pero **esa pregunta ya no tiene respuesta oficial**.
 
 12. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 37.

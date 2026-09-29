@@ -30,7 +30,7 @@ La parte común de los exámenes trae **2 o 3 preguntas del Estatuto** por convo
 | 1322 #2 | 10 | Incorporación de otros territorios o municipios: aprobación por las Cortes Generales mediante: ley / **ley orgánica** / ley por mayoría absoluta de ambas Cámaras | **Ley orgánica** |
 | 1322 #3 | 36.2 | Cada provincia estará representada, en todo caso, por un mínimo de: 16 / **14** / 12 escaños | **14** (reforma de 2022) |
 
-Las respuestas se han deducido del texto del Estatuto; no se ha dispuesto de las plantillas oficiales. Tres lecciones:
+Las respuestas se dedujeron del texto del Estatuto y el 29/09/2026 se contrastaron con las plantillas oficiales (definitiva del 1322 y provisional del 1246): **coinciden todas**. Tres lecciones:
 
 - **Preguntan exactamente las tres partes del enunciado**: título preliminar (art. 10), instituciones (arts. 36, 42, 45 y 59) y competencias (art. 71).
 - **Preguntan cifras y órganos literales**: 14 escaños, «ley orgánica», «Cortes», «BOA».
@@ -459,6 +459,8 @@ Diecisiete apartados, entre ellos:
 3. **Rúbrica del art. 55.** La LO 15/2022 lo titula «Estatuto de las personas miembros del Gobierno de Aragón». El texto consolidado del BOE mantiene la rúbrica antigua, «Estatuto personal de los miembros del Gobierno de Aragón». El contenido es el mismo en los dos; el apunte cita el contenido.
 4. **Número de materias.** Se han contado sobre el texto consolidado: **60** apartados en el art. 71, **13** en el art. 75 y **17** en el art. 77. No se ha encontrado una fuente oficial que dé esas cifras. Si una pregunta las pidiera, son estas.
 5. **Qué entra en «aspectos básicos».** El enunciado no dice hasta dónde llega la organización institucional. El apunte cubre el Título II entero, que es lo que han preguntado los exámenes (arts. 36, 42, 45 y 59). Los Títulos III (Administración) y IV (Justicia) solo se citan para no confundirlos con las instituciones.
+
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1322 que cita este tema coinciden con su **plantilla definitiva**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada.
 
 ---
 

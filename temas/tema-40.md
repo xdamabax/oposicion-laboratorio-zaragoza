@@ -479,4 +479,6 @@ Y el **RD 817/2015** (aguas superficiales): *«Aplicarán prácticas de gestión
 
 10. **No tengo la plantilla de respuestas.** Las dos preguntas tienen respuesta segura: la #27 por el RD 1715/2010 y la #6 por el objeto de la propia norma.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1322 que cita este tema coinciden con su **plantilla definitiva**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada.
+
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 39.

@@ -504,6 +504,8 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 8. **No tengo la plantilla de respuestas de ningún cuestionario.** En todas las preguntas de este tema la deducción es segura: los distractores son técnicas de otros parámetros, y en tres casos el mismo («Kjeldahl» para el fósforo). Aun así, **son deducciones razonadas, no plantilla oficial**.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1233 y 1322 que cita este tema coinciden con sus **plantillas definitivas**. Del **segundo ejercicio de 1246** no se ha publicado plantilla, así que las #9 y #10 siguen siendo **deducción**, no respuesta oficial.
+
 9. **El «≈ 880 nm» y el campo de 0,005 a 0,8 mg/L del fósforo vienen del tema 25**, donde se declararon con su fuente. Aquí se citan de memoria del propio proyecto, no de una lectura nueva de la norma.
 
 10. **La transposición de la Directiva (UE) 2024/3019 seguía sin completarse a la fecha de verificación.** Los plazos y valores están transcritos del PDF oficial. **Si España aprueba el nuevo real decreto antes del examen, hay que rehacer los apartados 2.5 y 2.6.**

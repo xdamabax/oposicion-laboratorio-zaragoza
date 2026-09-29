@@ -37,7 +37,7 @@
     {
       "id": "t39-f04",
       "anverso": "Se **añaden 5 mg/L** de analito a una muestra y da una absorbancia de 0,50, que en la recta equivale a 10 mg/L. ¿Cuánto analito tenía la muestra?",
-      "reverso": "**5 mg/L** (1322, segundo ejercicio, **#7**): **concentración total menos lo añadido**, 10 − 5.\nLa opción de 10 mg/L es el error de olvidarse de restar la adición. Con la recta exacta sale 10,06 − 5 = 5,06 mg/L.",
+      "reverso": "**5 mg/L** (1322, segundo ejercicio, **#7**): **concentración total menos lo añadido**, 10 − 5.\nLa opción de 10 mg/L es el error de olvidarse de restar la adición. Con la recta exacta sale 10,06 − 5 = 5,06 mg/L.\n**Anulada por el tribunal:** la plantilla definitiva del 1322 (segundo ejercicio) anuló la #7; en la provisional la respuesta era la b), 5 mg/L. El razonamiento sigue siendo válido, pero no es una respuesta oficial.",
       "fuente": "Cuestionario 1322 segundo ejercicio #7; cálculo propio",
       "etiquetas": ["examen", "calculo"],
       "nucleo": true
@@ -45,7 +45,7 @@
     {
       "id": "t39-f05",
       "anverso": "¿En qué se diferencian una **adición de patrón** y un **patrón interno**?",
-      "reverso": "- **Adición de patrón**: se añade a la muestra **el propio analito**, en cantidades conocidas, y se extrapola. Corrige los efectos de matriz **proporcionales**.\n- **Patrón interno**: se añade a patrones y muestras **otro compuesto**, de comportamiento parecido, y se calibra con la **relación entre las dos señales**. Corrige pérdidas y derivas; es habitual en cromatografía e ICP-MS.\nLa pregunta **1322 C2 #7** llama «patrón interno» a lo que en realidad es una **adición**.",
+      "reverso": "- **Adición de patrón**: se añade a la muestra **el propio analito**, en cantidades conocidas, y se extrapola. Corrige los efectos de matriz **proporcionales**.\n- **Patrón interno**: se añade a patrones y muestras **otro compuesto**, de comportamiento parecido, y se calibra con la **relación entre las dos señales**. Corrige pérdidas y derivas; es habitual en cromatografía e ICP-MS.\nLa pregunta **1322 C2 #7** llama «patrón interno» a lo que en realidad es una **adición**.\n**Anulada por el tribunal:** la plantilla definitiva del 1322 (segundo ejercicio) anuló la #7; en la provisional la respuesta era la b), 5 mg/L. El razonamiento sigue siendo válido, pero no es una respuesta oficial.",
       "fuente": "Guía Eurachem (3.ª ed., 2025), 5.2.2",
       "etiquetas": ["concepto"]
     },
@@ -545,7 +545,7 @@
       "pregunta": "A una muestra se le añaden 4 mg/L de analito, y la señal resultante corresponde en la recta de calibrado a 9 mg/L. La concentración de analito en la muestra es:",
       "opciones": ["13 mg/L.", "9 mg/L.", "5 mg/L."],
       "correcta": 2,
-      "explicacion": "La recta da la concentración total tras la adición: 9 − 4 = 5 mg/L. Es el mismo razonamiento de la pregunta 1322 C2 #7.",
+      "explicacion": "La recta da la concentración total tras la adición: 9 − 4 = 5 mg/L. Es el mismo razonamiento de la pregunta 1322 C2 #7. **Anulada por el tribunal:** la plantilla definitiva del 1322 (segundo ejercicio) anuló la #7; en la provisional la respuesta era la b), 5 mg/L. El razonamiento sigue siendo válido, pero no es una respuesta oficial.",
       "fuente": "Cuestionario 1322 segundo ejercicio #7 (mismo razonamiento)"
     },
     {
@@ -712,7 +712,7 @@
           "pregunta": "En una muestra, se realiza una adición de patrón interno de 5 mg/l, obteniéndose una absorbancia total de 0,50. ¿Cuál es la concentración del analito presente en la muestra según la recta de calibrado del enunciado?",
           "opciones": ["1 mg/l.", "5 mg/l.", "10 mg/l.", "15 mg/l."],
           "correcta": 1,
-          "explicacion": "Pregunta 1322 C2 #7, transcrita. 0,50 de absorbancia son 10,06 mg/L en la recta: la concentración total tras la adición. Restando los 5 añadidos quedan unos 5 mg/L. Lo que describe es una adición de patrón, aunque la pregunta la llame «patrón interno».",
+          "explicacion": "Pregunta 1322 C2 #7, transcrita. 0,50 de absorbancia son 10,06 mg/L en la recta: la concentración total tras la adición. Restando los 5 añadidos quedan unos 5 mg/L. Lo que describe es una adición de patrón, aunque la pregunta la llame «patrón interno». **Anulada por el tribunal:** la plantilla definitiva del 1322 (segundo ejercicio) anuló la #7; en la provisional la respuesta era la b), 5 mg/L. El razonamiento sigue siendo válido, pero no es una respuesta oficial.",
           "fuente": "Cuestionario 1322 segundo ejercicio #7; Guía Eurachem (2025), 5.2.2"
         }
       ]

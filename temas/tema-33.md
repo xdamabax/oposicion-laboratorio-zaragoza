@@ -340,7 +340,7 @@ con las concentraciones en mg/L. Hay que cumplirla **tras la potabilización**, 
 - Las muestras con índice **> 10 mg/L** deben **diluirse**.
 - **Límite inferior del intervalo óptimo: 0,5 mg/L.**
 
-Es, por tanto, **una volumetría redox por retroceso** — y la valoración por retroceso es **núcleo repetido en las tres convocatorias** (1233 #19, 1246 #42, 1322 #12), desarrollada en el tema 22.
+Es, por tanto, **una volumetría redox por retroceso** — y la valoración por retroceso es **núcleo repetido en las tres convocatorias** (1246 #42 y 1322 #12 la preguntan; en 1233 #19 aparece en los distractores de la valoración directa), desarrollada en el tema 22.
 
 **Y recuerda el dato del apartado 2.5:** la **nota 6 de la tabla 15** nombra la **UNE-EN ISO 8467** como **método de referencia**, cosa que el RD no hace con ningún otro físico-químico.
 
@@ -554,6 +554,8 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 6. **La afirmación de que «hidróxido y bicarbonato no pueden coexistir» la deduzco yo** de la tabla P/T (en la que, en efecto, las dos columnas nunca tienen valor a la vez) y de la química ácido-base. El IDEAM no lo dice con esas palabras.
 
 7. **No tengo la plantilla de respuestas de ningún cuestionario.** En las ocho preguntas de este tema la deducción es segura: en todas, los distractores son claramente falsos (la dureza como *«contenido de ión hidrógeno»* o *«de sodio»*; la alcalinidad como *«plaguicidas»*; la materia orgánica por *«electrodo selectivo»*). Aun así, **son deducciones razonadas, no plantilla oficial**.
+
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1233 y 1322 que cita este tema coinciden con sus **plantillas definitivas**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada.
 
 8. **Las dos preguntas de RESERVA (1246 R2 y R3) no estaban recogidas en `ANALISIS.md`.** Las he encontrado al releer el cuestionario entero para este tema. Son **de reserva**, es decir, solo puntúan si se anula alguna de las 50; pero demuestran que **el examinador tiene fichados estos dos parámetros** y las he tratado como material de primera.
 

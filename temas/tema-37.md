@@ -570,4 +570,6 @@ Y trae **dos cuadros de valores límite**, no uno —más un tercero, de valores
 
 10. **No tengo la plantilla de respuestas de ningún cuestionario.** En las cuatro preguntas de este tema la deducción es segura, y en tres de ellas la respuesta está **literalmente en el BOE**. Aun así, **son deducciones razonadas, no plantilla oficial**.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1322 que cita este tema coinciden con su **plantilla definitiva**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada.
+
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 36.

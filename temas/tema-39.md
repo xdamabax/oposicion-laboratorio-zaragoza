@@ -28,7 +28,7 @@ fuentes:
 > | **1233, primer ejercicio, #18** | *«En una calibración lineal mediante el ajuste por mínimos cuadrados, ¿cuál de los siguientes valores de R2 indica un ajuste lineal perfecto?»* — a) 1,0 · b) 0,5 · c) 0,0 | **a) 1,0** |
 > | **1246, primer ejercicio, #48** | *«La ecuación de regresión lineal tiene forma de recta con la ecuación "y = ax + b", donde "x" e "y" son variables, "b" la ordenada en el origen y "a" la pendiente de la recta, siendo "a" y "b" calculadas por la fórmula de los mínimos cuadrados. En este caso, el coeficiente de correlación se expresa mediante "r" y su valor oscila entre:»* — a) −1 y 1 · b) −10 y 10 · c) 0 y 10 | **a) −1 y 1** |
 > | **1322, segundo ejercicio, supuesto 1, #3** | Con la recta del enunciado —**1 mg/l → 0,05; 2 → 0,10; 5 → 0,24; 10 → 0,50** de absorbancia—: *«¿Cual será el valor de R2 de la recta de calibrado del enunciado?»* — a) 0,999 · b) 0,009 · c) −0,099 · d) −0,990 | **a) 0,999** |
-> | **1322, segundo ejercicio, supuesto 1, #7** | *«En una muestra, se realiza una adición de patrón interno de 5 mg/l, obteniéndose una absorbancia total de 0,50. ¿Cuál es la concentración del analito presente en la muestra según la recta de calibrado del enunciado?»* — a) 1 mg/l · b) 5 mg/l · c) 10 mg/l · d) 15 mg/l | **b) 5 mg/l** |
+> | **1322, segundo ejercicio, supuesto 1, #7** | *«En una muestra, se realiza una adición de patrón interno de 5 mg/l, obteniéndose una absorbancia total de 0,50. ¿Cuál es la concentración del analito presente en la muestra según la recta de calibrado del enunciado?»* — a) 1 mg/l · b) 5 mg/l · c) 10 mg/l · d) 15 mg/l | **b) 5 mg/l**, según la plantilla provisional. **El tribunal ANULÓ esta pregunta en la plantilla definitiva** |
 >
 > Las dos del 1322 **se resuelven con la misma recta**, y están calculadas en el apartado 2.4. La del R² es una pregunta trampa: **R² no puede ser negativo** (es un cuadrado), así que la c) y la d) se descartan sin calcular, y la b) supondría que no hay relación ninguna.
 >
@@ -378,7 +378,7 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 | **r** | Grado de ajuste a una recta | **Entre −1 y +1** | 1246 #48 |
 | **R²** | r² | **Entre 0 y 1**; **1 = ajuste perfecto**; **no basta solo** | 1233 #18; Eurachem 2025, 5.2.4 |
 | **Residuos** | y − ŷ de cada punto | **Aleatorios en torno a cero** = lineal | Harvey 5.4 |
-| **Adición de patrón** | Añadir analito a la muestra | Concentración = **total − añadido** | 1322 C2 #7 |
+| **Adición de patrón** | Añadir analito a la muestra | Concentración = **total − añadido** | 1322 C2 #7 (anulada por el tribunal) |
 | **Gráfico X** | Valores de control frente al tiempo | Aviso **±2s** (95 %); acción **±3s** (99,7 %) | Nordtest TR 569 |
 | **Gráfico R** (duplicados) | Rango de duplicados | LC **1,128 s**; aviso **2,83 s**; acción **3,69 s** | Nordtest TR 569 |
 | **Fuera de control** | Parar y reanalizar | Fuera de **±3s**, o **dos de tres** entre 2s y 3s del mismo lado | Nordtest TR 569, ed. 6.1 |
@@ -450,14 +450,14 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 - **Guía Eurachem de ensayos de aptitud (2021)**: la puntuación z y sus tres tramos, y la En.
 - **ENAC NT-03 Rev. 12 (marzo de 2026)** y **RD 817/2015, anexo III, C.3**, leídos.
 - **Estado de las normas**, comprobado el 25/09/2026: UNE-EN ISO 17034:2017, UNE-ISO 7870-2:2017 y UNE-EN ISO/IEC 17043:2023 **vigentes** en el buscador de UNE; ISO 13528:2022 e ISO 8466-1:2021 **vigentes** según AENOR.
-- **Exámenes anteriores:** los seis cuestionarios. **Cuatro preguntas** de este tema, transcritas. Dos de ellas (**1246 #48** y **1322 C2 #7**) salían revueltas al extraer el texto y **se han leído renderizando las páginas del PDF**; con el mismo método se ha encontrado la **1246 #47** (dianas), que se ha llevado al tema 38.
+- **Exámenes anteriores:** los seis cuestionarios. **Cuatro preguntas** de este tema, transcritas. Dos de ellas (**1246 #48** y **1322 C2 #7**, esta última **anulada por el tribunal**) salían revueltas al extraer el texto y **se han leído renderizando las páginas del PDF**; con el mismo método se ha encontrado la **1246 #47** (dianas), que se ha llevado al tema 38.
 - **`TEMARIO EXTRA/`:** consultada la ficha de apoyo del tema 39. No aporta nada que no esté ya en el tema 22.
 - **Figuras:** las tres de este tema (`grafico-control-x`, `recta-minimos-cuadrados` y `cadena-trazabilidad`) se han añadido al catálogo con **seis controles nuevos** en `verificar-figuras.js` y **seis sabotajes** que los prueban. Los del gráfico de control comprueban que **los límites están a ±2s y ±3s, simétricos**, y que **los puntos marcados como fuera de control son exactamente los que señalan las dos reglas** aplicadas a los puntos dibujados; los de la recta, que **la línea dibujada es el ajuste por mínimos cuadrados de los puntos dibujados** con el **R² escrito igual al calculado**, y que **cada barra de residuo mide la distancia de su punto a la recta, con su signo**; los de la trazabilidad, que **la incertidumbre crece eslabón a eslabón** y que **cada flecha une un eslabón con el siguiente**, sin saltos.
 - **Fecha de verificación:** 25/09/2026.
 
 ### Dudas y limitaciones declaradas
 
-1. **La pregunta 1322 C2 #7 llama «patrón interno» a lo que es una adición de patrón.** La respuesta (5 mg/L) no depende del nombre, pero **el término está mal usado** según la definición de la Guía Eurachem. Lo señalo porque en otro examen el tribunal podría usarlo bien.
+1. **La pregunta 1322 C2 #7 llama «patrón interno» a lo que es una adición de patrón.** La respuesta (5 mg/L) no depende del nombre, pero **el término está mal usado** según la definición de la Guía Eurachem. Lo señalo porque en otro examen el tribunal podría usarlo bien. **El tribunal anuló esta pregunta en la plantilla definitiva** (en la provisional era la b), 5 mg/L), y este mal uso del término es un motivo verosímil.
 
 2. **La #7, además, calcula con la recta externa** una muestra con adición, lo que supone que la matriz **no cambia la pendiente**. Es la lectura que da una de las opciones; una adición de patrón «de verdad» se hace a varios niveles y se **extrapola**. No he encontrado otra lectura que lleve a una opción.
 
@@ -475,6 +475,6 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 
 9. **Las incertidumbres de la figura de la cadena de trazabilidad son ilustrativas**, no valores reales de ningún patrón: la figura afirma solo que **crecen** eslabón a eslabón, que es lo que dice el VIM (2.40, nota 1).
 
-10. **No tengo la plantilla de respuestas.** En las cuatro preguntas la respuesta es segura: dos son definiciones, y las otras dos las he calculado.
+10. **Plantillas oficiales, localizadas el 29/09/2026** (ver `ExamenesAnteriores/PLANTILLAS.md`). **Confirman** tres de las cuatro respuestas: **1233 #18** (a, 1,0; plantilla definitiva), **1246 #48** (a, entre −1 y 1; plantilla provisional) y **1322 C2 #3** (a, 0,999; plantilla definitiva). La cuarta, **1322 C2 #7, fue anulada** por el tribunal en la plantilla definitiva.
 
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 38.

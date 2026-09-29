@@ -544,6 +544,8 @@ El tema 24 dejó dicho que el oxígeno disuelto **como parámetro** era del 33 o
 
 9. **No tengo la plantilla de respuestas de ningún cuestionario.** En las tres preguntas del primer ejercicio y en los tres supuestos la deducción es segura: en todos los casos la respuesta correcta es **literalmente el método de referencia del cuadro 1 del RD 509/1996**, y los distractores son técnicas de otros parámetros. Aun así, **son deducciones razonadas, no plantilla oficial**.
 
+   **Cerrada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): **todas coinciden**. En concreto, las preguntas de 1233 y 1322 que cita este tema coinciden con sus **plantillas definitivas**, y las del primer ejercicio de 1246, con su **plantilla provisional**, la única publicada. Del **segundo ejercicio de 1246** no se ha publicado plantilla, así que las #6 a #8 siguen siendo **deducción**, no respuesta oficial.
+
 10. **La pregunta 1322 #40 tiene una tercera opción, «ninguna de las dos respuestas es correcta»**, que hace la pregunta algo más delicada de lo que parece. La descarto porque la afirmación *«la DQO es mayor que la DBO»* es cierta **como regla general en aguas residuales domésticas**, que es lo que el enunciado pregunta. Pero conviene saber que **no es una ley física**: existen compuestos que las bacterias degradan y el dicromato no oxida bien —la piridina es el caso de libro— y con ellos la relación podría invertirse. En un agua doméstica típica, no.
 
 11. **La transposición de la Directiva (UE) 2024/3019 estaba sin completar a la fecha de verificación.** Los dos plazos que doy están **transcritos del PDF oficial**. Si España aprueba el nuevo real decreto antes del examen, **hay que rehacer los apartados 2.1 a 2.3 y 2.9**.
