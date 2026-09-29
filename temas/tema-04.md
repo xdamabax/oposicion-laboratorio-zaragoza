@@ -371,7 +371,7 @@ Reglas comunes:
 | --- | --- | --- |
 | **Obligación de resolver** | 21.1 | La Administración **debe dictar y notificar resolución expresa** en todos los procedimientos |
 | **Plazo máximo** | 21.2 y 21.3 | El de la norma del procedimiento, **sin pasar de seis meses** salvo ley o Derecho de la UE. **Si no se fija, tres meses.** Cuenta **desde el acuerdo de iniciación** (de oficio) o **desde la entrada en el registro** (a solicitud) |
-| **Silencio a solicitud del interesado** | 24 | Regla general **estimatorio**. **Desestimatorio**:<br>- en el **derecho de petición**;<br>- si transfiere **dominio o servicio público**;<br>- si hay actividades que **dañen el medio ambiente**;<br>- en la **responsabilidad patrimonial**;<br>- en la **impugnación de actos** y la revisión de oficio a instancia de parte.<br>El estimatorio es un **acto** a todos los efectos; el desestimatorio solo permite **recurrir** |
+| **Silencio a solicitud del interesado** | 24 | Regla general **estimatorio**. **Desestimatorio** en el **derecho de petición**, si transfiere **dominio o servicio público**, si hay actividades que **dañen el medio ambiente**, en la **responsabilidad patrimonial** y en la **impugnación de actos** y la revisión de oficio a instancia de parte. El estimatorio es un **acto** a todos los efectos; el desestimatorio solo permite **recurrir** |
 | **Falta de resolución de oficio** | 25 | Si podía reconocer derechos: **desestimación** por silencio. Si era **sancionador o de gravamen**: **caducidad** |
 | **Cómputo por días** | 30.2 | Son **hábiles**: **fuera sábados, domingos y festivos** |
 | **Desde cuándo** | 30.3 y 30.4 | **Desde el día siguiente** a la notificación. Los meses, **de fecha a fecha** |

@@ -290,7 +290,7 @@ Son las mismas siete del art. 123.1.c LBRL.
 | f) | Ser **órgano de contratación**, con las competencias de la Junta de Gobierno Local de los municipios de gran población |
 | g) | La **gestión del patrimonio** municipal |
 | h) | El **desarrollo de la gestión económica**, autorizar y disponer gastos de su competencia y la **gestión del personal** |
-| **i)** | En materia de **personal**:<br>- la **relación de puestos de trabajo**;<br>- las **retribuciones**, según el presupuesto;<br>- la **oferta de empleo público**;<br>- las **bases de las convocatorias** de selección y provisión;<br>- el número y régimen del **personal eventual**;<br>- la **separación del servicio** de los funcionarios;<br>- el **despido** del personal laboral;<br>- el **régimen disciplinario**. |
+| **i)** | En materia de **personal**: la **relación de puestos de trabajo**; las **retribuciones**, según el presupuesto; la **oferta de empleo público**; las **bases de las convocatorias** de selección y provisión; el número y régimen del **personal eventual**; la **separación del servicio** de los funcionarios; el **despido** del personal laboral, y el **régimen disciplinario** |
 | j) | **Nombrar y cesar** a los titulares de los **órganos directivos** |
 | k) y l) | Acciones judiciales de su competencia y **revisión de oficio** de sus actos |
 | **m)** | La **potestad sancionadora**, salvo que una ley estatal la atribuya a otro órgano |
@@ -364,7 +364,7 @@ La Ley 10/2017 remite a la **regulación básica de régimen local** (art. 9.1).
 | **Consejo Social de la Ciudad** | 131 | Lo integran **representantes de las organizaciones económicas, sociales, profesionales y de vecinos** más representativas. Emite informes sobre **desarrollo económico local, planificación estratégica y grandes proyectos urbanos** |
 | **Comisión especial de Sugerencias y Reclamaciones** | 132 | La crea **el Pleno**, para **defender los derechos de los vecinos**. La forman **representantes de todos los grupos del Pleno, en proporción a sus miembros**. Da cuenta al Pleno con un **informe anual**, y puede hacer **informes extraordinarios**. **Todos los órganos municipales están obligados a colaborar** con ella |
 | **Intervención general municipal** | 136 | El control y la fiscalización interna. Actúa con **plena autonomía**, y su titular es **habilitado nacional** |
-| **Órgano de reclamaciones económico-administrativas** | 137 | Resuelve las reclamaciones sobre **tributos municipales** y **dictamina los proyectos de ordenanzas fiscales**:<br>- lo forman un **número impar de miembros, mínimo tres**, designados por el Pleno por **mayoría absoluta**;<br>- su resolución **pone fin a la vía administrativa**;<br>- antes cabe un **recurso de reposición potestativo** |
+| **Órgano de reclamaciones económico-administrativas** | 137 | Resuelve las reclamaciones sobre **tributos municipales** y **dictamina los proyectos de ordenanzas fiscales**. Lo forman un **número impar de miembros, mínimo tres**, designados por el Pleno por **mayoría absoluta**. Su resolución **pone fin a la vía administrativa**, y antes cabe un **recurso de reposición potestativo** |
 
 **Consejo Social y Comisión de Sugerencias, lado a lado**, porque es la confusión del 1322 #5:
 
