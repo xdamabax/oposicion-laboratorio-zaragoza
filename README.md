@@ -78,6 +78,7 @@ temas/apoyo/tema-NN.md  Material de apoyo SIN VERIFICAR de TEMARIO EXTRA/. No es
                         la app y los scripts solo leen temas/*.md, nunca subcarpetas.
 repaso/tema-NN.json     Tarjetas, test y supuestos, generados del apunte ya aprobado.
 ExamenesAnteriores/     Cuestionarios de convocatorias previas y su análisis.
+ExamenesAnteriores/PLANTILLAS.md  Respuestas oficiales (plantillas del Ayuntamiento), leídas dos veces.
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
 scripts/verificar.js    Las dos baterías de verificación de una vez.

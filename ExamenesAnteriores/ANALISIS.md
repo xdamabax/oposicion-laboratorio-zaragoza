@@ -40,7 +40,9 @@ Dentro de la parte común el reparto sí es desigual: TREBEP 3-4 preguntas, Esta
 
 **Parte específica: cero artículos, conocimiento operativo.** Qué técnica para qué analito, qué medio de cultivo, temperaturas y tiempos, unidades, normas UNE/ISO por su número, y cálculos numéricos (ufc/mL, NMP con dilución, pH, molaridad, R²).
 
-Datos exactos que sí exigen: autoclave 121 °C / 30 min · <100 colonias en filtro de 47 mm · UV 195-380 nm · *Legionella* a 36 °C durante 44±4 h · *E. coli* en ufc/100 mL · dureza en mg/L de CaCO₃.
+Datos exactos que sí exigen: autoclave 121 °C / 30 min · **menos de 80 colonias** en el filtro de membrana de 47 mm (1246 #31; 120 y 100 son los distractores) · UV 195-380 nm (1246 #46) · placas de *Legionella* a 36 °C durante **10 días** (1322 #26; «1 día» y «44 ± 4 h» son los distractores) · *E. coli* en ufc/100 mL · dureza en mg/L de CaCO₃.
+
+> **Corregido el 29/09/2026 con las plantillas oficiales** (ver `PLANTILLAS.md`). Esta línea decía «< 100 colonias» y «*Legionella* a 36 °C durante 44 ± 4 h»: **las dos cifras eran justo las de un distractor**. La de las colonias la da la plantilla provisional del 1246 y la de *Legionella*, la definitiva del 1322. Cuidado al redactar los temas de microbiología: 44 ± 4 h es un tiempo de incubación real, pero de otros métodos, no de *Legionella*.
 
 **Preguntas con imagen:** ~20-25 % del segundo ejercicio (pictogramas de peligro, material de vidrio, lecturas de bureta, gráficos de exactitud/precisión) y alguna en el primero. De ahí los componentes SVG de `app/src/components/figuras/`.
 
@@ -65,7 +67,7 @@ Preguntas que aparecen **casi literales en más de una convocatoria**. Son el ma
 | Agente valorante del cloruro → nitrato de plata | 1233 #2, 1246 #28 | 22 |
 | Materia orgánica en agua → método del permanganato | 1233 #3, 1246 #29 | 33 |
 | Microcontaminante orgánico → GC o LC con detector de masas | 1233 #5, 1246 #30 | 30-32 |
-| Valoración por retroceso (exceso conocido y se valora lo no reaccionado) | 1233 #19, 1246 #42, 1322 #12 | 22 |
+| Valoración por retroceso (exceso conocido y se valora lo no reaccionado) | 1246 #42 y 1322 #12, que la preguntan directamente; en 1233 #19 se pregunta la valoración **directa** y el retroceso aparece en los **distractores** | 22 |
 | Ley de Lambert-Beer | 1233 #8, 1322 #11 | 25 |
 | El Justicia rinde cuentas ante las Cortes de Aragón (art. 59.3 EAAr) | 1246 #2, 1322 #4 | 3 |
 
@@ -96,7 +98,13 @@ Tres convocatorias, y solo una es turno libre ordinario. El temario de aquellos 
 
 ## Plantillas de respuestas
 
-El Ayuntamiento publica las plantillas en la misma carpeta que los cuestionarios, con el nombre `NNNN PLANTILLA PROVISIONAL PRIMER EJERCICIO.pdf` o `NNNN PLANTILLA DEFINITIVA PRIMER EJERCICIO.pdf`. Localizada el 29/09/2026 la **plantilla provisional del primer ejercicio de 1246** (https://zaragoza.es/cont/paginas/oferta/archivos/1246%20PLANTILLA%20PROVISIONAL%20PRIMER%20EJERCICIO.pdf). Es una imagen: se lee renderizando el PDF. No se han encontrado plantillas de 1233 ni de 1322 con esos nombres. **Cuidado:** el número del fichero no siempre corresponde a la misma plaza que el cuestionario (la «1610» es de otra plaza).
+El Ayuntamiento publica las plantillas en la misma carpeta que los cuestionarios. Son imágenes: se leen renderizando el PDF. Las de nuestra plaza, localizadas el 29/09/2026, están transcritas con sus respuestas en **`PLANTILLAS.md`**:
+
+- **1233**: plantillas **definitivas** de las dos pruebas (`1233 PLANTILLA DEFINITIVA 1.pdf` y `… 2.pdf`).
+- **1322**: plantillas **definitivas** de los dos ejercicios (`1322 PLANTILLA DEFINITIVA 1.pdf` y `… 2.pdf`). El tribunal **anuló** las preguntas **#7 y #10 del segundo ejercicio**.
+- **1246**: solo la plantilla **provisional** del primer ejercicio. No hay definitiva ni plantilla del segundo ejercicio con ningún nombre probado.
+
+Las provisionales del 1233 y del 1322 coinciden con sus definitivas, salvo esas dos anulaciones. En las otras plazas el nombre es `NNNN PLANTILLA PROVISIONAL|DEFINITIVA PRIMER EJERCICIO.pdf`. **Cuidado:** el número del fichero no siempre corresponde a la misma plaza que el cuestionario (la «1610» es de otra plaza).
 
 ## Fuentes
 
