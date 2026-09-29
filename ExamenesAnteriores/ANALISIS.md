@@ -82,17 +82,21 @@ No aparecen en ninguno de los seis cuestionarios:
 |---|---|
 | **2** — Igualdad efectiva + Plan de Igualdad municipal | El Plan del Ayuntamiento no es normativa estatal. Localizado el 25/09/2026: II Plan 2024-2027, BOPZ nº 16 de 20/01/2024, publicado en zaragoza.es |
 | **4** — LPAC | Tema denso, cero precedente |
-| **5** — Ley de régimen especial de Zaragoza | — |
+| **5** — Ley de régimen especial de Zaragoza | Sin preguntas en nuestra plaza. **Sí en otras plazas del Ayuntamiento con la misma parte común**: siete en el 1681 (Auxiliar Administrativo, 31/05/2026) y una en el 1694 (Enfermería, 19/03/2026). Detalle en `temas/tema-05.md` |
 | **8** — Empleados públicos EELL + PRL | — |
 | **10** — Equipo básico de microbiología I | — |
 | **19** — Análisis bacteriológico de **alimentos** | Toda la microbiología de los exámenes es de agua |
 | **29** — Radiactividad en agua | — |
 
-Al revés: **la LBRL (Ley 7/1985) aparece en los tres exámenes y no tiene tema propio en el temario de 2026**. La sustituyen el tema 5 y el tema 8, que probablemente ocuparán ese hueco.
+Al revés: **la LBRL (Ley 7/1985) aparece en los tres exámenes y no tiene tema propio en el temario de 2026**. La sustituyen el tema 5 y el tema 8, que probablemente ocuparán ese hueco. **Actualización del 29/09/2026:** las tres preguntas de la LBRL (1322 #5, art. 132; 1246 #4, art. 12.1; 1233 R1, art. 13.2) se han asignado al **tema 5**, porque son de organización y territorio municipal. La del 1233 R1 ha cambiado de respuesta: el RDL 6/2023 bajó el mínimo para crear un municipio de 5.000 a 4.000 habitantes.
 
 ## Límites
 
 Tres convocatorias, y solo una es turno libre ordinario. El temario de aquellos exámenes **no es el de 2026**, así que el mapeo tema a tema es aproximado, sobre todo en la parte común. Las preguntas con imagen no se pueden extraer del PDF a texto, así que los bloques que se apoyan en imagen están infracontados. **Actualización del 25/09/2026:** sí se pueden leer **renderizando la página** (con pdf.js en un navegador sin cabeza), y así se localizaron la **1246 #47** —tres dianas, «exactos pero no precisos», del tema 38— y el texto completo de la **1246 #48** y de la **1322 C2 #7**, que salían revueltos. Conviene repasar así las páginas con dibujos antes de redactar los temas que queden.
+
+## Plantillas de respuestas
+
+El Ayuntamiento publica las plantillas en la misma carpeta que los cuestionarios, con el nombre `NNNN PLANTILLA PROVISIONAL PRIMER EJERCICIO.pdf` o `NNNN PLANTILLA DEFINITIVA PRIMER EJERCICIO.pdf`. Localizada el 29/09/2026 la **plantilla provisional del primer ejercicio de 1246** (https://zaragoza.es/cont/paginas/oferta/archivos/1246%20PLANTILLA%20PROVISIONAL%20PRIMER%20EJERCICIO.pdf). Es una imagen: se lee renderizando el PDF. No se han encontrado plantillas de 1233 ni de 1322 con esos nombres. **Cuidado:** el número del fichero no siempre corresponde a la misma plaza que el cuestionario (la «1610» es de otra plaza).
 
 ## Fuentes
 
