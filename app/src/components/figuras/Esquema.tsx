@@ -61,6 +61,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'fases-procedimiento': 'Las fases del procedimiento y cómo se inicia',
   'organos-zaragoza': 'Los órganos de gobierno de Zaragoza y cómo se relacionan',
   'umbrales-gran-poblacion': 'Los cuatro supuestos de gran población y dónde cae Zaragoza',
+  'recursos-haciendas-locales': 'Los recursos de las entidades locales (art. 2)',
+  'impuestos-municipales': 'Los cinco impuestos municipales: obligatorios y potestativos',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -116,6 +118,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'fases-procedimiento': { ancho: 580, alto: 330 },
   'organos-zaragoza': { ancho: 580, alto: 346 },
   'umbrales-gran-poblacion': { ancho: 580, alto: 292 },
+  'recursos-haciendas-locales': { ancho: 580, alto: 330 },
+  'impuestos-municipales': { ancho: 580, alto: 250 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5655,6 +5659,183 @@ function UmbralesGranPoblacion() {
   )
 }
 
+/**
+ * Los recursos de las entidades locales en el orden del art. 2.1 del texto
+ * refundido de la Ley Reguladora de las Haciendas Locales (letras a a h), con
+ * los tributos propios de la letra b) desplegados en sus tres clases: tasas,
+ * contribuciones especiales e impuestos. Los precios publicos (letra e) son un
+ * recurso, pero no un tributo, y por eso no cuelgan de los tributos.
+ */
+function RecursosHaciendasLocales() {
+  const RECURSOS = [
+    { clave: 'patrimonio', texto: 'a) Patrimonio y demás derecho privado' },
+    { clave: 'tributos', texto: 'b) Tributos propios y recargos' },
+    { clave: 'participaciones', texto: 'c) Participaciones en tributos del Estado y CCAA' },
+    { clave: 'subvenciones', texto: 'd) Subvenciones' },
+    { clave: 'precios', texto: 'e) Precios públicos' },
+    { clave: 'credito', texto: 'f) Operaciones de crédito' },
+    { clave: 'multas', texto: 'g) Multas y sanciones' },
+    { clave: 'otras', texto: 'h) Demás prestaciones de derecho público' },
+  ]
+  const CLASES = [
+    { clave: 'tasas', texto: 'Tasas' },
+    { clave: 'contribuciones', texto: 'Contribuciones especiales' },
+    { clave: 'impuestos', texto: 'Impuestos' },
+  ]
+  const RAIZ = { x: 10, y: 128, an: 150, al: 56 }
+  const X1 = 200
+  const AN1 = 236
+  const AL1 = 26
+  const PASO = 36
+  const Y1 = 16
+  const X2 = 462
+  const AN2 = 110
+  const AL2 = 24
+  const yDe = (i: number) => Y1 + i * PASO
+  const b = { x: X1, y: yDe(1) }
+  const rama = (clave: string, [x1, y1]: number[], [x2, y2]: number[]) => (
+    <line key={clave} data-pieza="rama" x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="1.3" />
+  )
+  const tronco = RAIZ.x + RAIZ.an + 16
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <rect data-pieza="nodo-hacienda" x={RAIZ.x} y={RAIZ.y} width={RAIZ.an} height={RAIZ.al} rx="6" fill={AZUL_CLARO} fillOpacity="0.4" stroke="currentColor" strokeWidth="1.2" />
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 22} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Hacienda de las
+      </text>
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 35} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        entidades locales
+      </text>
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 49} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        art. 2.1
+      </text>
+      {rama('tronco-raiz', [RAIZ.x + RAIZ.an, RAIZ.y + RAIZ.al / 2], [tronco, RAIZ.y + RAIZ.al / 2])}
+      <line x1={tronco} y1={yDe(0) + AL1 / 2} x2={tronco} y2={yDe(RECURSOS.length - 1) + AL1 / 2} stroke="currentColor" strokeWidth="1.3" />
+      {RECURSOS.map((r, i) => (
+        <g key={r.clave}>
+          <line data-pieza="rama-recurso" data-de="hacienda" data-a={r.clave} x1={tronco} y1={yDe(i) + AL1 / 2} x2={X1} y2={yDe(i) + AL1 / 2} stroke="currentColor" strokeWidth="1.3" />
+          <rect
+            data-pieza={'nodo-' + r.clave}
+            x={X1}
+            y={yDe(i)}
+            width={AN1}
+            height={AL1}
+            rx="4"
+            fill={r.clave === 'tributos' ? ROJO : AZUL}
+            fillOpacity={r.clave === 'tributos' ? 0.22 : 0.4}
+            stroke="currentColor"
+            strokeWidth="1"
+          />
+          <text x={X1 + 8} y={yDe(i) + 17} fontSize="8.5" fill="currentColor">
+            {r.texto}
+          </text>
+        </g>
+      ))}
+      {CLASES.map((c, k) => {
+        const y = yDe(0) + k * 30 - 2
+        return (
+          <g key={c.clave}>
+            <line data-pieza="rama-clase" data-de="tributos" data-a={c.clave} x1={b.x + AN1} y1={b.y + AL1 / 2} x2={X2} y2={y + AL2 / 2} stroke={ROJO} strokeWidth="1.3" />
+            <rect data-pieza={'nodo-' + c.clave} x={X2} y={y} width={AN2} height={AL2} rx="4" fill={ROJO} fillOpacity="0.12" stroke="currentColor" strokeWidth="1" />
+            <text x={X2 + AN2 / 2} y={y + 16} fontSize="8.5" textAnchor="middle" fill="currentColor">
+              {c.texto}
+            </text>
+          </g>
+        )
+      })}
+      <text x={X2 + AN2 / 2} y={yDe(3) + 4} fontSize="7.5" textAnchor="middle" fill={ROJO} fontWeight="bold">
+        las tres clases de
+      </text>
+      <text x={X2 + AN2 / 2} y={yDe(3) + 14} fontSize="7.5" textAnchor="middle" fill={ROJO} fontWeight="bold">
+        tributos propios
+      </text>
+      <text x="10" y="318" fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        En rojo, lo que es tributo. El resto son recursos, pero no tributos.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Los cinco impuestos municipales del art. 59 del texto refundido: los que los
+ * ayuntamientos exigiran (IBI, IAE e IVTM) y los que podran establecer y exigir
+ * (ICIO e IIVTNU), con la naturaleza que les da la ley: todos directos salvo
+ * el ICIO, que es indirecto (arts. 60, 78, 92, 100 y 104).
+ */
+function ImpuestosMunicipales() {
+  const IMP = [
+    { clave: 'ibi', sigla: 'IBI', nombre: 'Bienes Inmuebles', art: 'arts. 60 a 77', obligatorio: true, naturaleza: 'directo, real' },
+    { clave: 'iae', sigla: 'IAE', nombre: 'Actividades Económicas', art: 'arts. 78 a 91', obligatorio: true, naturaleza: 'directo, real' },
+    { clave: 'ivtm', sigla: 'IVTM', nombre: 'Vehículos de Tracción Mecánica', art: 'arts. 92 a 99', obligatorio: true, naturaleza: 'directo' },
+    { clave: 'icio', sigla: 'ICIO', nombre: 'Construcciones, Instalaciones y Obras', art: 'arts. 100 a 103', obligatorio: false, naturaleza: 'indirecto' },
+    { clave: 'iivtnu', sigla: 'IIVTNU', nombre: 'Incremento de Valor de Terrenos Urbanos', art: 'arts. 104 a 110', obligatorio: false, naturaleza: 'directo' },
+  ]
+  const AN = 104
+  const HUECO = 10
+  const X0 = 13
+  const Y = 44
+  const AL = 110
+  const relleno = (ob: boolean) => (ob ? { fill: AZUL, fillOpacity: 0.55 } : { fill: ROJO, fillOpacity: 0.22 })
+  const partir = (t: string) => {
+    const pal = t.split(' ')
+    const lineas: string[] = []
+    let l = ''
+    for (const p of pal) {
+      if ((l + ' ' + p).trim().length > 17) {
+        lineas.push(l.trim())
+        l = p
+      } else l = (l + ' ' + p).trim()
+    }
+    if (l) lineas.push(l)
+    return lineas
+  }
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={X0} y="24" fontSize="10" fontWeight="bold" fill="currentColor">
+        Art. 59 del texto refundido de la Ley Reguladora de las Haciendas Locales
+      </text>
+      {IMP.map((m, i) => {
+        const x = X0 + i * (AN + HUECO)
+        const r = relleno(m.obligatorio)
+        return (
+          <g key={m.clave}>
+            <rect data-pieza="impuesto" data-clave={m.clave} x={x} y={Y} width={AN} height={AL} rx="6" fill={r.fill} fillOpacity={r.fillOpacity} stroke="currentColor" strokeWidth="1.1" />
+            <text x={x + AN / 2} y={Y + 22} fontSize="13" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {m.sigla}
+            </text>
+            {partir(m.nombre).map((t, k) => (
+              <text key={t} x={x + AN / 2} y={Y + 40 + k * 11} fontSize="7.5" textAnchor="middle" fill="currentColor">
+                {t}
+              </text>
+            ))}
+            <text x={x + AN / 2} y={Y + 86} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+              {m.art}
+            </text>
+            <text data-pieza="naturaleza" data-clave={m.clave} x={x + AN / 2} y={Y + 101} fontSize="8" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {m.naturaleza}
+            </text>
+          </g>
+        )
+      })}
+      <g fontSize="8.5" fill="currentColor">
+        <rect data-pieza="leyenda-obligatorio" x={X0} y="180" width="14" height="10" fill={AZUL} fillOpacity="0.55" stroke="currentColor" strokeWidth="0.8" />
+        <text x={X0 + 20} y="189">
+          los ayuntamientos los exigirán (art. 59.1)
+        </text>
+        <rect data-pieza="leyenda-potestativo" x={X0} y="198" width="14" height="10" fill={ROJO} fillOpacity="0.22" stroke="currentColor" strokeWidth="0.8" />
+        <text x={X0 + 20} y="207">
+          los ayuntamientos podrán establecerlos y exigirlos (art. 59.2)
+        </text>
+        <text x={X0} y="232" fillOpacity="0.85">
+          Las provincias no tienen impuestos propios: solo un recargo sobre el IAE (art. 134).
+        </text>
+      </g>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -5759,6 +5940,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <OrganosZaragoza />
     case 'umbrales-gran-poblacion':
       return <UmbralesGranPoblacion />
+    case 'recursos-haciendas-locales':
+      return <RecursosHaciendasLocales />
+    case 'impuestos-municipales':
+      return <ImpuestosMunicipales />
   }
 }
 

@@ -842,6 +842,37 @@ function medir(sabotaje, ROJO) {
     z.setAttribute('x2', x0 + 160000 * porHab)
     pieza(svg, 'cifra-zaragoza').textContent = 'Zaragoza: 160.000'
   }
+  if (sabotaje === 90) {
+    const svg = porClave('recursos-haciendas-locales')
+    // las subvenciones y los precios publicos, cambiados de sitio: el orden a) - h) se rompe
+    const t = [...svg.querySelectorAll('text')]
+    const d = t.find((x) => x.textContent.trim().startsWith('d)'))
+    const e = t.find((x) => x.textContent.trim().startsWith('e)'))
+    const yd = d.getAttribute('y')
+    d.setAttribute('y', e.getAttribute('y'))
+    e.setAttribute('y', yd)
+  }
+  if (sabotaje === 91) {
+    const svg = porClave('recursos-haciendas-locales')
+    // los precios publicos colgados de los tributos propios, en lugar de las tasas
+    const p = pieza(svg, 'nodo-precios')
+    const r = piezas(svg, 'rama-clase').find((l) => l.getAttribute('data-a') === 'tasas')
+    r.setAttribute('x2', num(p, 'x') + num(p, 'width'))
+    r.setAttribute('y2', num(p, 'y') + num(p, 'height') / 2)
+  }
+  if (sabotaje === 92) {
+    const svg = porClave('impuestos-municipales')
+    // el IVTM pintado como potestativo
+    const ley = pieza(svg, 'leyenda-potestativo')
+    const r = svg.querySelector('[data-pieza="impuesto"][data-clave="ivtm"]')
+    r.setAttribute('fill', ley.getAttribute('fill'))
+    r.setAttribute('fill-opacity', ley.getAttribute('fill-opacity'))
+  }
+  if (sabotaje === 93) {
+    const svg = porClave('impuestos-municipales')
+    // el IIVTNU rotulado como indirecto
+    svg.querySelector('[data-pieza="naturaleza"][data-clave="iivtnu"]').textContent = 'indirecto'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3049,6 +3080,94 @@ function medir(sabotaje, ROJO) {
     return `a) y b) automáticos, c) y d) con Asamblea; Zaragoza en ${Math.round(z)}, por encima de a) y de b)`
   })
 
+  /*
+   * Los recursos de las entidades locales (art. 2.1 TRLRHL). El orden se lee por
+   * la altura de las etiquetas a) a h); de que caja sale y a que caja llega cada
+   * rama, por sus extremos, como en los demas diagramas de cajas.
+   */
+  const dentroDe = (el, x, y) => {
+    const b = el.getBBox()
+    return x >= b.x - 3 && x <= b.x + b.width + 3 && y >= b.y - 3 && y <= b.y + b.height + 3
+  }
+  control('Recursos · los ocho recursos del art. 2.1 van en el orden a) a h), y cada uno recibe su rama', () => {
+    const svg = porClave('recursos-haciendas-locales')
+    const etiquetas = [...svg.querySelectorAll('text')]
+      .filter((t) => /^[a-h]\) /.test(t.textContent.trim()))
+      .map((t) => ({ t, b: t.getBBox() }))
+      .sort((p, q) => p.b.y - q.b.y)
+    const letras = etiquetas.map((e) => e.t.textContent.trim()[0]).join('')
+    if (letras !== 'abcdefgh') throw new Error(`las etiquetas van en el orden ${letras.split('').join(', ')}: el art. 2.1 las enumera de la a) a la h)`)
+    const ramas = piezas(svg, 'rama-recurso')
+    for (const { t, b } of etiquetas) {
+      const cx = b.x + 2
+      const cy = b.y + b.height / 2
+      const caja = [...svg.querySelectorAll('[data-pieza^="nodo-"]')].find((c) => dentroDe(c, cx, cy))
+      if (!caja) throw new Error(`«${t.textContent.trim()}» no está dentro de ninguna caja`)
+      const llega = ramas.some((r) => dentroDe(caja, num(r, 'x2'), num(r, 'y2')))
+      if (!llega) throw new Error(`ninguna rama llega a «${t.textContent.trim()}»`)
+    }
+    return 'a, b, c, d, e, f, g, h; ocho ramas, una por recurso'
+  })
+
+  control('Recursos · de los tributos propios cuelgan tasas, contribuciones especiales e impuestos, y no los precios públicos', () => {
+    const svg = porClave('recursos-haciendas-locales')
+    const trib = pieza(svg, 'nodo-tributos')
+    const destinos = piezas(svg, 'rama-clase').map((r) => {
+      if (!dentroDe(trib, num(r, 'x1'), num(r, 'y1'))) throw new Error('una rama de clase no sale de los tributos propios')
+      const caja = [...svg.querySelectorAll('[data-pieza^="nodo-"]')].find((c) => c !== trib && dentroDe(c, num(r, 'x2'), num(r, 'y2')))
+      return caja ? caja.getAttribute('data-pieza').replace('nodo-', '') : null
+    })
+    if (destinos.includes('precios')) throw new Error('los precios públicos cuelgan de los tributos propios, y no son tributos (art. 2.1.e)')
+    const esperado = ['contribuciones', 'impuestos', 'tasas']
+    if ([...destinos].sort().join() !== esperado.join()) throw new Error(`de los tributos propios cuelgan ${destinos.join(', ')}; son tasas, contribuciones especiales e impuestos`)
+    return 'tributos propios → tasas, contribuciones especiales, impuestos'
+  })
+
+  /*
+   * Los impuestos municipales (art. 59). Cada caja se identifica por la sigla
+   * escrita dentro; obligatorio o potestativo, por el color frente a la leyenda;
+   * directo o indirecto, por el rotulo de su naturaleza.
+   */
+  const impuestos = (svg) =>
+    piezas(svg, 'impuesto').map((r) => {
+      const sigla = [...svg.querySelectorAll('text')].find((t) => {
+        const b = t.getBBox()
+        return /^[A-Z]{3,6}$/.test(t.textContent.trim()) && dentroDe(r, b.x + b.width / 2, b.y + b.height / 2)
+      })
+      const nat = piezas(svg, 'naturaleza').find((t) => {
+        const b = t.getBBox()
+        return dentroDe(r, b.x + b.width / 2, b.y + b.height / 2)
+      })
+      return { r, sigla: sigla ? sigla.textContent.trim() : null, nat: nat ? nat.textContent.trim() : null }
+    })
+  control('Impuestos · IBI, IAE e IVTM pintados como obligatorios, e ICIO e IIVTNU como potestativos (art. 59)', () => {
+    const svg = porClave('impuestos-municipales')
+    const pinta = (el) => `${el.getAttribute('fill')}|${el.getAttribute('fill-opacity')}`
+    const ob = pinta(pieza(svg, 'leyenda-obligatorio'))
+    const po = pinta(pieza(svg, 'leyenda-potestativo'))
+    const ESPERADO = { IBI: true, IAE: true, IVTM: true, ICIO: false, IIVTNU: false }
+    const vistos = []
+    for (const { r, sigla } of impuestos(svg)) {
+      if (!(sigla in ESPERADO)) throw new Error(`una caja lleva la sigla «${sigla}»`)
+      const es = pinta(r) === ob ? true : pinta(r) === po ? false : null
+      if (es === null) throw new Error(`el ${sigla} no tiene el color de ninguna leyenda`)
+      if (es !== ESPERADO[sigla]) throw new Error(`el ${sigla} está pintado como ${es ? 'obligatorio' : 'potestativo'}, y el art. 59 dice lo contrario`)
+      vistos.push(sigla)
+    }
+    if (vistos.length !== 5) throw new Error(`hay ${vistos.length} impuestos y son cinco`)
+    return 'exigirán: IBI, IAE, IVTM · podrán establecer: ICIO, IIVTNU'
+  })
+
+  control('Impuestos · el ICIO es el único indirecto; los otros cuatro, directos', () => {
+    const svg = porClave('impuestos-municipales')
+    for (const { sigla, nat } of impuestos(svg)) {
+      if (!nat) throw new Error(`el ${sigla} no tiene rotulada su naturaleza`)
+      const indirecto = /indirecto/.test(nat)
+      if (indirecto !== (sigla === 'ICIO')) throw new Error(`el ${sigla} figura como «${nat}»: solo el ICIO es indirecto (art. 100.1)`)
+    }
+    return 'ICIO indirecto; IBI, IAE, IVTM e IIVTNU directos'
+  })
+
   return resultados
 }
 
@@ -3144,6 +3263,10 @@ const SABOTAJES = {
   87: 'el supuesto d) de gran población pintado como automático, sin decisión de la Asamblea',
   88: 'la cifra del supuesto a) de gran población escrita distinta de donde arranca su barra',
   89: 'Zaragoza llevada a 160.000 habitantes, por debajo de los dos umbrales automáticos',
+  90: 'las subvenciones y los precios públicos, cambiados de sitio en la lista del art. 2.1',
+  91: 'los precios públicos colgados de los tributos propios',
+  92: 'el IVTM pintado como impuesto potestativo',
+  93: 'el IIVTNU rotulado como impuesto indirecto',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3243,6 +3366,10 @@ const CONTROL_DE = {
   87: [85],
   88: [84],
   89: [85],
+  90: [86],
+  91: [87],
+  92: [88],
+  93: [89],
 }
 
 async function main() {

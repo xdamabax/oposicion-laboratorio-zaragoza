@@ -87,6 +87,8 @@ export type TipoEsquema =
   | 'fases-procedimiento'
   | 'organos-zaragoza'
   | 'umbrales-gran-poblacion'
+  | 'recursos-haciendas-locales'
+  | 'impuestos-municipales'
 
 export type TipoMaterial =
   | 'matraz-aforado'
