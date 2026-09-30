@@ -1,0 +1,774 @@
+{
+  "tema": 11,
+  "titulo": "Equipo básico del laboratorio de microbiología II: Hornos y autoclaves. Esterilización. Desinfección. Tratamiento de materiales contaminados. Preparación del material para cultivo.",
+  "generadoDe": "temas/tema-11.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-30",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Nuestra plaza lo ha preguntado dos veces, las dos por el autoclave: calor humedo (1322 #19) y 30 minutos a 121 °C para descontaminar (1246 #33). Otras plazas preguntan los contenedores de cortantes (1736) y la inactivacion del hipoclorito por la materia organica (1521). El nucleo recoge las definiciones, los binomios del autoclave y del horno, los indicadores de esterilizacion, los niveles de desinfeccion y los germicidas principales, el tratamiento del material contaminado y el Decreto 29/1995 de Aragon.",
+  "flashcards": [
+    {
+      "id": "t11-f01",
+      "anverso": "¿Qué diferencia hay entre **desinfección** y **esterilización**?",
+      "reverso": "La **desinfección** destruye microorganismos **pero no las esporas bacterianas**. La **esterilización** destruye **todas las formas**, **incluidas las esporas**. Un producto se considera estéril cuando la probabilidad de encontrar una unidad contaminada es **≤ 10⁻⁶**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f02",
+      "anverso": "¿Qué diferencia hay entre un **antiséptico** y un **desinfectante**?",
+      "reverso": "El **antiséptico** se aplica **sobre tejidos vivos** sin lesionarlos. El **desinfectante**, **solo sobre objetos y superficies inanimados**. **Germicida** engloba a los dos.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f03",
+      "anverso": "¿Qué es la **limpieza** y por qué va siempre antes?",
+      "reverso": "La eliminación **mecánica por arrastre** de la suciedad y la materia orgánica, con detergentes. **Es requisito previo imprescindible** de la desinfección y la esterilización: la **materia orgánica inactiva** los desinfectantes y **protege** a los microorganismos.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f04",
+      "anverso": "¿Qué es la **descontaminación**?",
+      "reverso": "Eliminar, inactivar o destruir microorganismos para que algo sea **seguro** de manipular, usar o eliminar. Se consigue **limpiando, desinfectando o esterilizando**, según el grado que se busque.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t11-f05",
+      "anverso": "¿Qué significan **-cida** y **-stático**? ¿Y el **valor D**?",
+      "reverso": "**-cida** mata (bactericida); **-stático** solo **detiene el crecimiento** (bacteriostático). El **valor D** es el tiempo que tarda un tratamiento en matar el **90 %** de la población, es decir, en reducirla **un logaritmo**.",
+      "fuente": "OpenStax Microbiology, 13.1-13.2",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t11-f06",
+      "anverso": "Objetos **críticos, semicríticos y no críticos**: ¿qué necesita cada uno?",
+      "reverso": "- **Críticos** (tejidos estériles o sangre): **esterilización**.\n- **Semicríticos** (mucosas o piel no intacta): **desinfección de nivel alto**.\n- **No críticos** (piel intacta): limpieza o desinfección de bajo nivel.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OpenStax Microbiology, 13.1-13.2",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t11-f07",
+      "anverso": "¿Cómo se ordenan los microorganismos por su resistencia a la descontaminación?",
+      "reverso": "De más a menos: **esporas bacterianas y quistes de protozoos** > **micobacterias y virus sin envoltura** > **hongos** > **bacterias vegetativas y virus con envoltura**. Los **priones**, aparte y aún más resistentes.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f08",
+      "anverso": "¿Con qué se esteriliza por **calor húmedo** y con qué por **calor seco**?",
+      "reverso": "**Calor húmedo: autoclave** (vapor saturado a presión). **Calor seco: horno** (horno Pasteur). Pregunta de nuestra plaza: **1322 #19**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["autoclave", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f09",
+      "anverso": "¿Por qué el autoclave esteriliza mejor que el horno?",
+      "reverso": "Porque el **calor húmedo penetra mejor** que el seco: esteriliza **antes y a menos temperatura**. Lo que mata las esporas es **la temperatura del vapor**, no la presión en sí; la presión solo permite pasar de 100 °C.",
+      "fuente": "OpenStax Microbiology, 13.1-13.2; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["autoclave"]
+    },
+    {
+      "id": "t11-f10",
+      "anverso": "Tiempos de contacto mínimos en autoclave según la Guía técnica del INSST.",
+      "reverso": "**115 °C 30 min**; **121 °C 15 min**; **126 °C 10 min**; **134 °C 3 min**. Es el tiempo **con toda la carga a esa temperatura**, no el ciclo completo.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["autoclave", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f11",
+      "anverso": "¿Cuánto hay que autoclavar el material contaminado para **descontaminarlo**?",
+      "reverso": "**Como mínimo 30 minutos a 121 °C** (1246 #33; los distractores eran 60 y 10 minutos). Es más que los 15 minutos de esterilizar material limpio, porque una carga grande tarda más en alcanzar la temperatura.",
+      "fuente": "Plantilla 1246 #33; 25 Pa. Code § 252.404",
+      "etiquetas": ["autoclave", "examen", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f12",
+      "anverso": "¿Qué diferencia hay entre el autoclave **de gravedad** y el **de prevacío**?",
+      "reverso": "- **Gravedad:** el vapor empuja el aire hacia abajo. **121 °C, 15 min.** Material no poroso y sin envolver, **medios** y **residuos**.\n- **Prevacío:** una bomba saca el aire antes. **134 °C, 3 min.** Cargas **porosas y envueltas**, pero **no líquidos**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["autoclave"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f13",
+      "anverso": "¿Qué fases tiene un ciclo de autoclave?",
+      "reverso": "Calentamiento, **purga del aire** con vapor libre, subida a la temperatura, **mantenimiento** a esa temperatura y **enfriamiento**. El tiempo se cuenta **desde que la carga alcanza** la temperatura.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["autoclave"]
+    },
+    {
+      "id": "t11-f14",
+      "anverso": "Autoclave: cita cinco normas de carga y uso.",
+      "reverso": "- **No sobrecargarlo**, para que circule el vapor.\n- **No mezclar medios con material contaminado.**\n- **Tapones flojos** (un cuarto de vuelta); con el tapón apretado el frasco puede **estallar**.\n- **No autoclavar soluciones con alcohol.**\n- **Abrir por debajo de 80 °C**, con **guantes y pantalla facial**: los líquidos pueden estar sobrecalentados.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017); OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["autoclave"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f15",
+      "anverso": "¿Cómo se esterilizan normalmente los medios de cultivo en autoclave?",
+      "reverso": "Muchos, a **121 °C durante 15 minutos**; otros, a **115 °C durante 10 minutos**, según el fabricante. Tolerancia típica: **± 3 °C y ± 3 minutos**. **Un medio no se autoclava dos veces**, ni siquiera para fundirlo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["autoclave", "cifras"]
+    },
+    {
+      "id": "t11-f16",
+      "anverso": "Calor seco: tiempos de contacto según la Guía técnica del INSST.",
+      "reverso": "**160-169 °C: 120 min**; **170-179 °C: 60 min**; **180-190 °C: 30 min**. No sirve para lo que **no aguante más de 160 °C**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["horno", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f17",
+      "anverso": "¿Para qué se usa el **horno** de calor seco?",
+      "reverso": "Para **vidrio y metal** limpios y secos, y para **líquidos no acuosos** que el vapor no atraviesa: **aceites, grasas, parafinas, glicerol**. El material se protege en **portapipetas** o envuelto en aluminio o papel kraft, y se deja **enfriar dentro**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["horno"]
+    },
+    {
+      "id": "t11-f18",
+      "anverso": "¿Por qué es mejor un **asa desechable** o un **microincinerador** que flamear el asa con el mechero?",
+      "reverso": "Porque **flamear el asa salpica y genera aerosoles**, y el mechero **no se puede usar en la cabina de seguridad**. El microincinerador protege con un tubo de vidrio o cerámica y se coloca **al fondo de la cabina**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017); Guía técnica INSST (2024), apéndice 8",
+      "etiquetas": ["horno"]
+    },
+    {
+      "id": "t11-f19",
+      "anverso": "Óxido de etileno y peróxido de hidrógeno en plasma: ¿para qué y con qué inconvenientes?",
+      "reverso": "Esterilizan a **baja temperatura** el material **sensible al calor**. El **óxido de etileno** es **tóxico** y **cancerígeno 1B**, y su ciclo dura **8-12 h** por la aireación. El **plasma** deja **oxígeno y agua**, **no necesita aireación** y dura unos **75 min a 37-44 °C**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["quimica"]
+    },
+    {
+      "id": "t11-f20",
+      "anverso": "Radiación ionizante y radiación UV: ¿esterilizan?",
+      "reverso": "La **ionizante** (gamma, ⁶⁰Co) **sí**: atraviesa envases y esteriliza el **plástico desechable** (placas, asas). La **UV** es **desinfección**: actúa entre **240 y 280 nm**, **penetra poco** y **no atraviesa vidrio ni plástico**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OpenStax Microbiology, 13.1-13.2",
+      "etiquetas": ["radiacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f21",
+      "anverso": "¿Cómo se esteriliza un líquido que no aguanta el calor?",
+      "reverso": "Por **filtración**, con membranas de **0,2 µm**, más pequeñas que una bacteria. Así se tratan soluciones de **antibióticos** o **vitaminas**. **No retiene los virus.**",
+      "fuente": "OpenStax Microbiology, 13.1-13.2",
+      "etiquetas": ["filtracion"]
+    },
+    {
+      "id": "t11-f22",
+      "anverso": "¿Qué tres tipos de indicador controlan la esterilización?",
+      "reverso": "- **Físicos:** termómetro, manómetro, reloj y registro. **No bastan.**\n- **Químicos:** cambian de color. La **cinta testigo** solo dice que el paquete **pasó por el proceso**.\n- **Biológicos:** esporas que deben morir. **El único que demuestra la esterilización.**",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)",
+      "etiquetas": ["control"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f23",
+      "anverso": "¿Qué indicador biológico se usa en el autoclave de vapor, y cuál en el óxido de etileno?",
+      "reverso": "**Vapor:** ***Geobacillus stearothermophilus***, incubado a **55 °C**, **semanal**. **Óxido de etileno:** ***Bacillus atrophaeus***, a **37 °C**, **en cada ciclo**. Se colocan en el **peor punto** de la carga.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)",
+      "etiquetas": ["control", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f24",
+      "anverso": "¿Qué es la prueba de **Bowie-Dick** y cuándo se hace?",
+      "reverso": "Comprueba que el autoclave **de prevacío extrae todo el aire** y el vapor penetra de forma uniforme. **A diario, antes del primer ciclo**, y tras una avería o reparación. Si falla y se confirma, **se para el equipo**.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)",
+      "etiquetas": ["control"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f25",
+      "anverso": "¿Qué destruye cada nivel de desinfección?",
+      "reverso": "- **Alto:** todas las formas vegetativas, no las esporas (tiempos de 10-30 min).\n- **Medio:** además del resto, los **bacilos de la tuberculosis** y la mayoría de los hongos.\n- **Bajo:** bacterias vegetativas **salvo el bacilo tuberculoso**, virus lipídicos y algunos hongos.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["desinfeccion"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f26",
+      "anverso": "¿De qué depende la eficacia de un desinfectante?",
+      "reverso": "De la **cantidad** de microorganismos y las **biopelículas**, de su **resistencia**, de la **materia orgánica** presente, de la **concentración**, la **temperatura** y el **tiempo de contacto**, y del **pH** y la **dureza** del agua de dilución.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["desinfeccion"]
+    },
+    {
+      "id": "t11-f27",
+      "anverso": "Hipoclorito sódico (lejía): concentraciones y tiempos según el INSST.",
+      "reverso": "**1000 ppm (0,1 %), 10 min**: nivel alto. **5000 ppm (0,5 %), 5 min**: esporicida. **500-1000 ppm, 30 min**: ambiental. Se **inactiva con la materia orgánica** (1521 #15), es **muy inestable** (renovar a diario) y **corroe** metales.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["desinfeccion", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f28",
+      "anverso": "¿Con qué no se debe mezclar nunca la lejía?",
+      "reverso": "**Con ácidos**, porque libera **cloro gas**; **con amoniaco**, porque forma **cloraminas**; y **con formaldehído**, porque forma un **cancerígeno**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["desinfeccion"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f29",
+      "anverso": "Lejía en el laboratorio según la OMS: ¿qué concentración se usa?",
+      "reverso": "**1 g/L** de cloro activo como desinfectante general y **5 g/L** para **derrames** o con mucha materia orgánica. La lejía doméstica, de 50 g/L, se diluye **1:50** o **1:10**.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["desinfeccion", "cifras"]
+    },
+    {
+      "id": "t11-f30",
+      "anverso": "Alcohol como desinfectante: concentración, tiempo y limitaciones.",
+      "reverso": "INSST: **60-95 %, 2 minutos**; OMS: óptimo hacia el **70 %**, **≥ 3 min** en superficies y **10 s** en piel. **No destruye esporas**, se inactiva con materia orgánica, es **inflamable** y endurece las gomas. **No deja residuo.**",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["desinfeccion"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f31",
+      "anverso": "Glutaraldehído: ¿cómo se usa?",
+      "reverso": "**Al 2 %**: **20 min** para nivel alto y **10 h** como **esporicida**. Hay que **activarlo** (alcalinizarlo); dura **14 días**. **Irritante y sensibilizante**: cubeta tapada y extracción. Para **instrumentos sensibles al calor**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["desinfeccion"]
+    },
+    {
+      "id": "t11-f32",
+      "anverso": "¿Qué desinfectantes son de nivel bajo?",
+      "reverso": "Los **compuestos fenólicos** (en desuso) y los de **amonio cuaternario**, que se inactivan con la materia orgánica y los **detergentes aniónicos**, y en cuyas soluciones **pueden crecer bacterias**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["desinfeccion"]
+    },
+    {
+      "id": "t11-f33",
+      "anverso": "Desinfección de locales: ¿cuándo y cómo?",
+      "reverso": "Solo suele hacer falta en **niveles 3 y 4**. Con **formaldehído** de paraformaldehído, local **sellado**, **≥ 21 °C** y **70 % de humedad**, y neutralizado con **carbonato o bicarbonato amónico**; o con **peróxido de hidrógeno vaporizado**, más seguro y sin aireación.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["desinfeccion"]
+    },
+    {
+      "id": "t11-f34",
+      "anverso": "¿Cómo se inactivan los **priones**?",
+      "reverso": "Resisten los métodos habituales. Lo que no se reutiliza se **incinera a más de 800 °C**. Lo reutilizable: **hipoclorito al 2 % 1 h**, **NaOH 2N 1 h** o **autoclave de prevacío a 134-138 °C 18 min**. **Nada de alcohol ni aldehídos**, que los fijan.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["desinfeccion"]
+    },
+    {
+      "id": "t11-f35",
+      "anverso": "¿Cuál es el principio de la OMS para el material infeccioso?",
+      "reverso": "**Todo material infeccioso se descontamina, se autoclava o se incinera dentro del laboratorio.** El **autoclave de vapor** es el método preferente.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["residuos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f36",
+      "anverso": "Material contaminado **reutilizable**: ¿se lava antes o después de autoclavarlo?",
+      "reverso": "**Después.** No se limpia antes: primero **se autoclava o se desinfecta**, y solo luego se lava o se repara.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["residuos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f37",
+      "anverso": "¿Cómo se eliminan los objetos cortantes y punzantes?",
+      "reverso": "En **contenedores rígidos, impermeables y a prueba de perforaciones** (1736 #21), **sin llenarlos del todo** (hasta el **80 %**). Las agujas **no se reencapuchan** ni se separan de la jeringa.",
+      "fuente": "Guía técnica INSST (2024), apéndice 4; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "etiquetas": ["residuos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f38",
+      "anverso": "Decreto 29/1995 de Aragón: ¿qué grupos de residuos distingue?",
+      "reverso": "**I**, asimilables a urbanos; **II**, sanitarios no específicos; **III**, **específicos o de riesgo**; **IV**, cadáveres y restos humanos; **V**, químicos; **VI**, citostáticos; **VII**, radiactivos.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "etiquetas": ["residuos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f39",
+      "anverso": "¿En qué grupo van los **cultivos** de un laboratorio de microbiología en Aragón, y cómo se envasan?",
+      "reverso": "En el **grupo III** (específicos o de riesgo), que incluye los **cultivos y reservas de agentes infecciosos**. Envases **rojos**, rígidos o semirrígidos (**≤ 60 L**) o bolsas de **galga ≥ 400** (**≤ 80 L**), con el rótulo **«Residuos de riesgo»**.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "etiquetas": ["residuos"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f40",
+      "anverso": "Residuos del grupo II en Aragón: ¿cómo se envasan?",
+      "reverso": "En **bolsas verdes** de polietileno de **galga 69**, dentro de otras verdes de galga 200. **No llevan rótulo.** Solo exigen precauciones **dentro** del centro.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "etiquetas": ["residuos"]
+    },
+    {
+      "id": "t11-f41",
+      "anverso": "Aragón: plazos de transporte interno y de almacenamiento de los residuos sanitarios.",
+      "reverso": "Al almacén **cada 12 horas como máximo**. En el almacén central, **72 horas como máximo**; **una semana** si está refrigerado **por debajo de 4 °C**; los **cortantes, un mes**.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "etiquetas": ["residuos", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f42",
+      "anverso": "¿Cómo se tratan los residuos del grupo III en Aragón?",
+      "reverso": "Con **esterilización en autoclave de vacío** (vacío, vapor saturado, vacío), rompiendo las bolsas en el primer vacío, con llenado **por debajo de dos tercios** y **registro** de vacío, temperatura y tiempo. Se esterilizan **con sus envases** antes del vertedero.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "etiquetas": ["residuos"]
+    },
+    {
+      "id": "t11-f43",
+      "anverso": "¿Qué códigos de la lista europea distinguen los residuos sanitarios infecciosos?",
+      "reverso": "**18 01 03\\***: con requisitos especiales para prevenir infecciones; es **peligroso** (el asterisco), por la característica **HP 9, infeccioso**. **18 01 04**: sin esos requisitos (vendajes, ropa, pañales).",
+      "fuente": "Guía técnica INSST (2024), apéndice 4",
+      "etiquetas": ["residuos"]
+    },
+    {
+      "id": "t11-f44",
+      "anverso": "¿Qué condiciones debe cumplir el material de vidrio para cultivo?",
+      "reverso": "Sin grietas ni desconchones, **limpio** y **libre de sustancias inhibidoras** (restos de detergente o de cloro). **El material volumétrico calibrado no se esteriliza por calor**, porque pierde la calibración.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["preparacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t11-f45",
+      "anverso": "¿Cómo se prepara el material para esterilizarlo y guardarlo?",
+      "reverso": "Las **pipetas en portapipetas**; lo demás, envuelto en **papel kraft o aluminio**, dejando pasar el vapor. Se esteriliza en autoclave (o en horno el vidrio y el metal) y se guarda **protegido del polvo**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["preparacion"]
+    },
+    {
+      "id": "t11-f46",
+      "anverso": "Placas de Petri: ¿vidrio o plástico, y de qué tamaño?",
+      "reverso": "Las **de plástico** vienen **estériles** (por radiación), **se usan una vez, se autoclavan y se desechan**. Las **de vidrio** se esterilizan, se lavan y se vuelven a esterilizar. **50-60 mm** para filtración por membrana; **90 mm** para recuentos y confirmaciones.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017); OpenStax Microbiology, 13.1-13.2",
+      "etiquetas": ["preparacion"]
+    },
+    {
+      "id": "t11-f47",
+      "anverso": "Embudos de filtración: ¿cómo se preparan entre muestras?",
+      "reverso": "Se **esterilizan antes de cada uso** en autoclave, o se **desinfectan** entre usos **hirviéndolos, con vapor o con UV**. La UV vale para coliformes, *E. coli* y enterococos, pero con las esporas de *C. perfringens* hay que verificar condiciones más exigentes. También hay unidades estériles desechables.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "etiquetas": ["preparacion"]
+    },
+    {
+      "id": "t11-f48",
+      "anverso": "Mirando el esquema: una superficie tiene restos de *Candida* y de un cultivo de *E. coli*. ¿Basta el alcohol? ¿Y si hubiera esporas de *Clostridium perfringens*?",
+      "reverso": "Para *Candida* y *E. coli*, **sí**: el alcohol es de **nivel medio** y con él caen los hongos y las bacterias vegetativas. Con **esporas**, **no basta ningún desinfectante corriente**: hay que **esterilizar** (autoclave) o usar un **esporicida**, como el hipoclorito a **5000 ppm**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["figura", "desinfeccion"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "resistencia-descontaminacion"
+      }
+    },
+    {
+      "id": "t11-f49",
+      "anverso": "Mirando el esquema: tienes que esterilizar unas pipetas de vidrio envueltas y un frasco de glicerol. ¿Qué equipo usas para cada cosa?",
+      "reverso": "Pipetas: **autoclave** a **121 °C** (o **horno**). Glicerol: **horno**, porque **el vapor no atraviesa** los líquidos no acuosos: **160 °C 2 h**, **170 °C 1 h** o **180 °C 30 min**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "etiquetas": ["figura", "horno"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "binomios-esterilizacion"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t11-q01",
+      "pregunta": "Para esterilizar por calor húmedo se utiliza:",
+      "opciones": ["Horno Pasteur.", "Autoclave.", "Baño de ultrasonidos."],
+      "correcta": 1,
+      "explicacion": "El autoclave usa vapor saturado a presión; el horno Pasteur es calor seco. Pregunta literal de 1322 #19 (plantilla definitiva: b).",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q02",
+      "pregunta": "El método para descontaminar el material del laboratorio de microbiología es el autoclavado:",
+      "opciones": ["Como mínimo 60 minutos a 121 °C.", "Como mínimo 30 minutos a 121 °C.", "Como mínimo 10 minutos a 121 °C."],
+      "correcta": 1,
+      "explicacion": "Pregunta literal de 1246 #33 (plantilla provisional: b). Esterilizar una carga limpia son 15 minutos a 121 °C; descontaminar material contaminado, 30 minutos como mínimo.",
+      "fuente": "Plantilla 1246 #33",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q03",
+      "pregunta": "Los residuos cortantes o punzantes se deben recoger en:",
+      "opciones": ["Bolsas homologadas de color gris o negro sin identificación externa.", "Bolsas homologadas de color gris o negro con identificación externa.", "Contenedores rígidos, impermeables y a prueba de perforaciones."],
+      "correcta": 2,
+      "explicacion": "Pregunta literal de 1736 #21 (plantilla definitiva: c).",
+      "fuente": "Guía técnica INSST (2024), apéndice 4",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q04",
+      "pregunta": "A la hora de elegir productos de limpieza, el uso del hipoclorito, la cloramina T y el dicloroisocianurato tiene como inconveniente que:",
+      "opciones": ["Se inactivan en presencia de materia orgánica.", "Suelen ser inflamables.", "Tienen un bajo poder desinfectante."],
+      "correcta": 0,
+      "explicacion": "Pregunta de 1521 #15 (plantilla definitiva: a). La guía del INSST: el hipoclorito «se inactiva rápidamente con materia orgánica».",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q05",
+      "pregunta": "El principal objetivo de la desinfección del agua es:",
+      "opciones": ["Destruir la totalidad de los organismos vivos presentes en el agua.", "Destruir o inactivar los microorganismos patógenos y perjudiciales.", "Mejorar las características de olor y sabor del agua tratada."],
+      "correcta": 1,
+      "explicacion": "Destruir todo sería esterilizar. Pregunta de 1486 #11 (sin plantilla publicada).",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q06",
+      "pregunta": "La esterilización se diferencia de la desinfección en que:",
+      "opciones": ["Destruye también las esporas bacterianas.", "Solo actúa sobre superficies inanimadas.", "Solo se consigue por medios químicos."],
+      "correcta": 0,
+      "explicacion": "La desinfección no destruye las esporas; la esterilización destruye todas las formas, incluidas las esporas.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q07",
+      "pregunta": "Un antiséptico es una sustancia que:",
+      "opciones": ["Se aplica solo sobre objetos inanimados.", "Destruye todas las formas microbianas, incluidas las esporas.", "Destruye o inhibe los microorganismos y puede aplicarse sobre tejidos vivos."],
+      "correcta": 2,
+      "explicacion": "El desinfectante es para objetos y superficies; el antiséptico, para tejidos vivos.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q08",
+      "pregunta": "Según la guía técnica del INSST, el tiempo de contacto mínimo en autoclave a 121 °C es de:",
+      "opciones": ["3 minutos.", "15 minutos.", "60 minutos."],
+      "correcta": 1,
+      "explicacion": "115 °C 30 min; 121 °C 15 min; 126 °C 10 min; 134 °C 3 min.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q09",
+      "pregunta": "En un autoclave a 134 °C, el tiempo de contacto mínimo es de:",
+      "opciones": ["3 minutos.", "15 minutos.", "30 minutos."],
+      "correcta": 0,
+      "explicacion": "Es el ciclo típico del autoclave de prevacío.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q10",
+      "pregunta": "Los autoclaves de prevacío:",
+      "opciones": ["Son los adecuados para esterilizar líquidos.", "Funcionan solo a 115 °C.", "Extraen el aire antes de introducir el vapor y son adecuados para cargas porosas, pero no para líquidos."],
+      "correcta": 2,
+      "explicacion": "El vacío haría hervir los líquidos. Los de gravedad sirven para medios y residuos.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q11",
+      "pregunta": "En el autoclave, lo que destruye las esporas es:",
+      "opciones": ["La presión en sí.", "La ausencia de oxígeno.", "La temperatura alcanzada por el vapor."],
+      "correcta": 2,
+      "explicacion": "La presión solo permite pasar de 100 °C.",
+      "fuente": "OpenStax Microbiology, 13.1-13.2"
+    },
+    {
+      "id": "t11-q12",
+      "pregunta": "Antes de autoclavar frascos de medio de cultivo con tapón de rosca, hay que:",
+      "opciones": ["Apretar bien los tapones para que no entre vapor.", "Aflojar los tapones, por ejemplo un cuarto de vuelta.", "Llenarlos hasta el borde."],
+      "correcta": 1,
+      "explicacion": "Con el tapón apretado el frasco puede estallar. Tampoco se llenan del todo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q13",
+      "pregunta": "Según la guía técnica del INSST, la esterilización por calor seco a 170-179 °C requiere un tiempo de contacto de:",
+      "opciones": ["60 minutos.", "15 minutos.", "120 minutos."],
+      "correcta": 0,
+      "explicacion": "160-169 °C: 120 min; 170-179 °C: 60 min; 180-190 °C: 30 min.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q14",
+      "pregunta": "El calor seco es el método adecuado para esterilizar:",
+      "opciones": ["Medios de cultivo acuosos.", "Material de goma y plásticos termolábiles.", "Material de vidrio y metal, y líquidos no acuosos como el glicerol."],
+      "correcta": 2,
+      "explicacion": "El vapor no atraviesa los líquidos no acuosos. No sirve para lo que no aguante más de 160 °C.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q15",
+      "pregunta": "Una solución de antibiótico que no soporta el calor se esteriliza:",
+      "opciones": ["Por filtración a través de una membrana de 0,2 µm.", "En horno a 160 °C.", "Con luz ultravioleta."],
+      "correcta": 0,
+      "explicacion": "La filtración separa las bacterias sin calentar. No retiene los virus.",
+      "fuente": "OpenStax Microbiology, 13.1-13.2"
+    },
+    {
+      "id": "t11-q16",
+      "pregunta": "La radiación ultravioleta:",
+      "opciones": ["Esteriliza el material a través de su envase de plástico.", "Es un método de desinfección de escasa penetración, más eficaz entre 240 y 280 nm.", "Es el método de elección para los medios de cultivo."],
+      "correcta": 1,
+      "explicacion": "No atraviesa vidrio ni plástico. La radiación gamma sí esteriliza a través del envase.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q17",
+      "pregunta": "El indicador biológico que se utiliza para controlar la esterilización por vapor es:",
+      "opciones": ["Bacillus atrophaeus.", "Geobacillus stearothermophilus.", "Escherichia coli."],
+      "correcta": 1,
+      "explicacion": "Sus esporas son muy resistentes al calor; se incuba a 55 °C. B. atrophaeus es el del óxido de etileno.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q18",
+      "pregunta": "La cinta indicadora de autoclave que cambia de color:",
+      "opciones": ["Garantiza que el contenido está estéril.", "Solo indica que el paquete ha pasado por el proceso.", "Es un indicador biológico."],
+      "correcta": 1,
+      "explicacion": "Es un indicador químico de proceso (clase I): no mide el tiempo ni demuestra la esterilidad.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011); OpenStax Microbiology, 13.1-13.2",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q19",
+      "pregunta": "La prueba de Bowie-Dick sirve para comprobar:",
+      "opciones": ["La eliminación del aire y la penetración del vapor en el autoclave de prevacío.", "La concentración de un desinfectante.", "La temperatura de un horno de calor seco."],
+      "correcta": 0,
+      "explicacion": "Se hace a diario, antes del primer ciclo, y tras una avería.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q20",
+      "pregunta": "El óxido de etileno como método de esterilización:",
+      "opciones": ["No requiere aireación del material.", "Trabaja a más de 160 °C.", "Es tóxico y cancerígeno, y su ciclo dura 8-12 horas por la aireación."],
+      "correcta": 2,
+      "explicacion": "El peróxido de hidrógeno en plasma es el que no necesita aireación.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q21",
+      "pregunta": "Un desinfectante de nivel medio destruye, a diferencia del de nivel bajo:",
+      "opciones": ["Los bacilos de la tuberculosis.", "Las esporas bacterianas.", "Los priones."],
+      "correcta": 0,
+      "explicacion": "El de nivel bajo no destruye el bacilo tuberculoso; ninguno de los dos, las esporas.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q22",
+      "pregunta": "Según la OMS, para desinfectar un derrame de material biológico se recomienda una solución de hipoclorito con:",
+      "opciones": ["0,1 g/L de cloro activo.", "1 g/L de cloro activo.", "5 g/L de cloro activo."],
+      "correcta": 2,
+      "explicacion": "1 g/L para uso general; 5 g/L para derrames y mucha materia orgánica.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q23",
+      "pregunta": "La lejía no debe mezclarse con ácidos porque:",
+      "opciones": ["Pierde su color.", "Se libera cloro gas, muy tóxico.", "Se vuelve esporicida."],
+      "correcta": 1,
+      "explicacion": "Con amoniaco forma cloraminas; con formaldehído, un cancerígeno.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q24",
+      "pregunta": "El alcohol etílico usado como desinfectante:",
+      "opciones": ["No destruye esporas y se inactiva con la materia orgánica.", "Es esporicida a cualquier concentración.", "Es más eficaz cuanto más puro."],
+      "correcta": 0,
+      "explicacion": "La OMS da como óptimo hacia el 70 %. Es inflamable y no deja residuo.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q25",
+      "pregunta": "El glutaraldehído al 2 %:",
+      "opciones": ["Es un desinfectante de nivel bajo para suelos.", "No necesita activación.", "Es un desinfectante de nivel alto que, con tiempo suficiente, es esporicida."],
+      "correcta": 2,
+      "explicacion": "20 min para nivel alto y 10 h como esporicida; hay que activarlo y dura 14 días.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q26",
+      "pregunta": "Para inactivar priones en material reutilizable se debe evitar:",
+      "opciones": ["El hipoclorito sódico al 2 %.", "El autoclave de prevacío a 134-138 °C.", "El alcohol y los aldehídos, que fijan las proteínas."],
+      "correcta": 2,
+      "explicacion": "Los fijadores estabilizan los priones. Lo que no se reutiliza se incinera a más de 800 °C.",
+      "fuente": "Guía técnica INSST (2024), apéndice 5"
+    },
+    {
+      "id": "t11-q27",
+      "pregunta": "Según la OMS, el material contaminado reutilizable:",
+      "opciones": ["Se autoclava o desinfecta primero y se lava después.", "Se lava primero y se autoclava después.", "Se desecha siempre."],
+      "correcta": 0,
+      "explicacion": "No se intenta limpiarlo antes de autoclavarlo.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q28",
+      "pregunta": "Los contenedores de objetos cortantes y punzantes deben llenarse:",
+      "opciones": ["Hasta el borde, para aprovecharlos.", "Solo hasta el 80 % aproximadamente de su capacidad.", "Hasta la mitad y vaciarlos después."],
+      "correcta": 1,
+      "explicacion": "Para que los objetos no sobresalgan. La OMS dice las tres cuartas partes.",
+      "fuente": "Guía técnica INSST (2024), apéndice 4"
+    },
+    {
+      "id": "t11-q29",
+      "pregunta": "Según el Decreto 29/1995 de Aragón, los cultivos y reservas de agentes infecciosos son residuos del:",
+      "opciones": ["Grupo II.", "Grupo III.", "Grupo V."],
+      "correcta": 1,
+      "explicacion": "Grupo III, sanitarios específicos o de riesgo. El II son los no específicos; el V, los químicos.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q30",
+      "pregunta": "Según el Decreto 29/1995 de Aragón, los envases de los residuos del grupo III llevan:",
+      "opciones": ["Color verde y ningún rótulo.", "Color negro y el rótulo «Residuos urbanos».", "Color rojo y el rótulo «Residuos de riesgo»."],
+      "correcta": 2,
+      "explicacion": "El grupo II va en bolsas verdes sin rótulo.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q31",
+      "pregunta": "Según el Decreto 29/1995 de Aragón, el almacén central puede contener los residuos sanitarios, sin refrigeración, un máximo de:",
+      "opciones": ["72 horas.", "24 horas.", "Un mes."],
+      "correcta": 0,
+      "explicacion": "Una semana si está refrigerado por debajo de 4 °C; los cortantes, un mes.",
+      "fuente": "Decreto 29/1995 de Aragón",
+      "nucleo": true
+    },
+    {
+      "id": "t11-q32",
+      "pregunta": "El material volumétrico calibrado de vidrio:",
+      "opciones": ["Se esteriliza siempre en horno a 180 °C.", "Se lava en el lavavajillas de laboratorio con los demás.", "No debe esterilizarse por calor, porque pierde la calibración."],
+      "correcta": 2,
+      "explicacion": "Tampoco es adecuado para los lavavajillas, por el estrés térmico.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
+    },
+    {
+      "id": "t11-q33",
+      "pregunta": "Las placas de Petri de plástico estériles:",
+      "opciones": ["Se usan una vez, se autoclavan y se desechan.", "Se lavan y se reesterilizan en horno.", "Se esterilizan en el laboratorio antes de usarlas."],
+      "correcta": 0,
+      "explicacion": "Vienen esterilizadas (por radiación). Las de vidrio sí se esterilizan, lavan y reesterilizan.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t11-s01",
+      "titulo": "El autoclave del laboratorio de aguas",
+      "enunciado": "El laboratorio tiene un **autoclave de desplazamiento por gravedad**. Un técnico prepara una carga de **frascos de agar** recién hechos y, en la misma mañana, debe tratar las **placas usadas de un análisis** con cultivos de *E. coli* y coliformes. El jefe de laboratorio le pide también organizar el **control del autoclave**.",
+      "preguntas": [
+        {
+          "id": "t11-s01-q1",
+          "pregunta": "¿Cómo debe organizar las dos cargas?",
+          "opciones": ["Juntas, para ahorrar un ciclo.", "Por separado: los medios en su ciclo y el material contaminado en otro, sin mezclarlos.", "Primero el material contaminado y, sin abrir, los medios en el mismo ciclo.", "Los medios en el horno y las placas en el autoclave."],
+          "correcta": 1,
+          "explicacion": "Los medios y el material contaminado no se autoclavan juntos.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
+        },
+        {
+          "id": "t11-s01-q2",
+          "pregunta": "Los frascos de agar deben entrar en el autoclave:",
+          "opciones": ["Con los tapones apretados para que no entre agua.", "Llenos hasta el borde.", "Con los tapones aflojados, por ejemplo un cuarto de vuelta, y sin llenar del todo.", "Envueltos en plástico hermético."],
+          "correcta": 2,
+          "explicacion": "Con el tapón apretado el frasco puede estallar.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
+        },
+        {
+          "id": "t11-s01-q3",
+          "pregunta": "Para descontaminar las placas usadas, el ciclo debe ser:",
+          "opciones": ["121 °C durante 5 minutos.", "100 °C durante 30 minutos.", "160 °C durante 2 horas.", "121 °C durante 30 minutos como mínimo."],
+          "correcta": 3,
+          "explicacion": "1246 #33 (plantilla provisional). 15 minutos es el tiempo para esterilizar una carga limpia.",
+          "fuente": "Plantilla 1246 #33"
+        },
+        {
+          "id": "t11-s01-q4",
+          "pregunta": "Terminado el ciclo, al abrir el autoclave:",
+          "opciones": ["Se abre en cuanto termina, porque el contenido ya está estéril.", "Se espera a que la cámara baje de 80 °C y se abre con guantes y pantalla, porque los líquidos pueden estar sobrecalentados.", "Se agitan los frascos enseguida para mezclar el agar.", "Se abre con la llave de vapor abierta para acelerar el enfriamiento."],
+          "correcta": 1,
+          "explicacion": "El contenido puede seguir por encima de la temperatura que marca la cámara.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017); OMS, Laboratory Biosafety Manual (2003), cap. 14"
+        },
+        {
+          "id": "t11-s01-q5",
+          "pregunta": "¿Cuál es el indicador que demuestra que el autoclave esteriliza?",
+          "opciones": ["La cinta testigo, en cada paquete.", "El manómetro del equipo.", "Esporas de Geobacillus stearothermophilus, incubadas a 55 °C tras el ciclo.", "Una tira de papel de pH."],
+          "correcta": 2,
+          "explicacion": "Los indicadores físicos y químicos no bastan; el biológico es el único que demuestra la esterilización.",
+          "fuente": "Ministerio de Sanidad, Unidad central de esterilización (2011)"
+        }
+      ]
+    },
+    {
+      "id": "t11-s02",
+      "titulo": "Un derrame y los residuos de la semana",
+      "enunciado": "Durante un recuento, se cae un **matraz con un cultivo de *Salmonella*** sobre la mesa y se rompe. El laboratorio, en Zaragoza, dispone de **lejía doméstica (50 g/L de cloro activo)**, alcohol al 70 % y contenedores de residuos de los distintos grupos del **Decreto 29/1995**.",
+      "preguntas": [
+        {
+          "id": "t11-s02-q1",
+          "pregunta": "¿Qué concentración de hipoclorito recomienda la OMS para este derrame?",
+          "opciones": ["5 g/L de cloro activo: lejía doméstica diluida 1:10.", "0,1 g/L de cloro activo.", "Lejía sin diluir, 50 g/L.", "1 g/L de cloro activo: lejía diluida 1:50."],
+          "correcta": 0,
+          "explicacion": "5 g/L para derrames y con mucha materia orgánica; 1 g/L para uso general.",
+          "fuente": "OMS, Laboratory Biosafety Manual (2003), cap. 14"
+        },
+        {
+          "id": "t11-s02-q2",
+          "pregunta": "¿Por qué no debe limpiarse antes el derrame con un producto ácido?",
+          "opciones": ["Porque el ácido esteriliza y no hace falta la lejía.", "Porque al mezclarse con la lejía libera cloro gas.", "Porque el ácido inactiva las esporas.", "No hay inconveniente."],
+          "correcta": 1,
+          "explicacion": "Y con amoniaco forma cloraminas.",
+          "fuente": "Guía técnica INSST (2024), apéndice 5; OMS, Laboratory Biosafety Manual (2003), cap. 14"
+        },
+        {
+          "id": "t11-s02-q3",
+          "pregunta": "Los cristales rotos del matraz van a:",
+          "opciones": ["La bolsa verde del grupo II.", "La papelera general, envueltos en papel.", "Un contenedor rígido, impermeable y resistente a la perforación.", "Un recipiente con alcohol."],
+          "correcta": 2,
+          "explicacion": "Cortantes: contenedores rígidos a prueba de perforaciones, llenos hasta el 80 % como mucho.",
+          "fuente": "Guía técnica INSST (2024), apéndice 4; Decreto 29/1995 de Aragón"
+        },
+        {
+          "id": "t11-s02-q4",
+          "pregunta": "Las placas con cultivos de la semana son, según el Decreto 29/1995, residuos del:",
+          "opciones": ["Grupo III, en envase rojo con el rótulo «Residuos de riesgo».", "Grupo I, asimilables a urbanos.", "Grupo II, en bolsa verde sin rótulo.", "Grupo VI, citostáticos."],
+          "correcta": 0,
+          "explicacion": "Los cultivos y reservas de agentes infecciosos son del grupo III.",
+          "fuente": "Decreto 29/1995 de Aragón"
+        },
+        {
+          "id": "t11-s02-q5",
+          "pregunta": "Sin refrigeración, ¿cuánto tiempo pueden estar como máximo en el almacén central del centro?",
+          "opciones": ["24 horas.", "Un mes.", "Una semana.", "72 horas."],
+          "correcta": 3,
+          "explicacion": "Una semana si se refrigera por debajo de 4 °C; los cortantes, un mes.",
+          "fuente": "Decreto 29/1995 de Aragón"
+        }
+      ]
+    }
+  ]
+}
