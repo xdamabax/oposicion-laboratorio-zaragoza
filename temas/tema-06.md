@@ -8,20 +8,22 @@ fuentes:
   - "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (BOE-A-2004-4214). Texto consolidado del BOE, última actualización publicada el 03/06/2026. https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
   - "Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local (BOE-A-1985-5392), art. 26.1, para la pregunta del alcantarillado."
   - "ExamenesAnteriores/PLANTILLAS.md: respuestas oficiales de 1246 (provisional) y 1322 (definitiva), y de otras trece plazas del Ayuntamiento (1446, 1458, 1497, 1519, 1521, 1635, 1669, 1681, 1722, 1724, 1729, 1736 y 1779)."
-  - "Cuestionarios de otras plazas del Ayuntamiento de Zaragoza en https://zaragoza.es/cont/paginas/oferta/archivos/ (2024-2026), barridos el 29/09/2026 con «Haciendas Locales» y «2/2004»."
+  - "Cuestionarios de otras plazas del Ayuntamiento de Zaragoza en https://zaragoza.es/cont/paginas/oferta/archivos/ (2023-2026), barridos el 29/09/2026 con «Haciendas Locales» y «2/2004», y de nuevo el 30/09/2026 tras un tercer sondeo (números 1250-1379, 1550-1566, 1695-1720 y 1791-1860)."
+  - "Constitución Española, art. 142, para las dos preguntas sobre la suficiencia de las haciendas locales."
 ---
 
 ## Lo que ya ha caído
 
-**Es el tema más preguntado de toda la parte común.** Hay **43 preguntas de Haciendas Locales** en **22 cuestionarios** del Ayuntamiento (2023-2026), y la mayoría tiene **plantilla oficial** (ver `ExamenesAnteriores/PLANTILLAS.md`). Por artículos:
+**Es de los temas más preguntados de la parte común**; solo el 7 (TREBEP) lo supera. Hay **81 preguntas del texto refundido** en **41 cuestionarios** del Ayuntamiento (2023-2026), más dos del art. 142 de la Constitución. La mayoría tiene **plantilla oficial** (ver `ExamenesAnteriores/PLANTILLAS.md`). Por artículos:
 
 | Artículo | Veces | Qué se pregunta |
 | --- | --- | --- |
-| **59** | **11** | Qué impuestos **exigirán** (IBI, IAE, IVTM) y cuáles **podrán establecer** (ICIO, IIVTNU) |
-| **2** | 5 | Qué son los **tributos propios** (tasas, contribuciones especiales e impuestos) y qué no (precios públicos, subvenciones…) |
+| **59** | **20** | Qué impuestos **exigirán** (IBI, IAE, IVTM) y cuáles **podrán establecer** (ICIO, IIVTNU) |
+| **128 a 130** | 11 | La **prestación personal y de transporte**: municipios de **no más de 5.000 habitantes**; **15 días** al año; exentos los **menores de 18 y mayores de 55** |
+| **3** | 10 | Los **ingresos de derecho privado**: productos del patrimonio **y** herencias, legados y donaciones; **nunca** los del dominio público |
+| **2** | 8 | Qué son los **tributos propios** (tasas, contribuciones especiales e impuestos) y qué no (precios públicos, subvenciones…) |
 | **169** | 5 | El **presupuesto**: exposición pública de **15 días** y reclamaciones **ante el Pleno**, que tiene **un mes** para resolverlas |
-| **65** | 4 | La base del IBI es el **valor catastral** |
-| **3** | 4 | Los **ingresos de derecho privado**: productos del patrimonio **y** herencias, legados y donaciones |
+| **65** | 6 | La base del IBI es el **valor catastral** |
 
 **Nuestra plaza.** Las **dos** convocatorias con parte común traen preguntas de Haciendas:
 
@@ -61,10 +63,27 @@ fuentes:
 | 1519 R4 | 169.2 | Aprobación definitiva del presupuesto | **Antes del 31 de diciembre del año anterior** |
 | 1756 #4 *(sin plantilla)* | 169.1 | Exposición del presupuesto | **15 días, reclamaciones ante el Pleno** (el distractor decía «al Alcalde») |
 
+**Tercer sondeo y segunda pasada (30/09/2026).** Treinta y ocho preguntas más del texto refundido y dos de la Constitución, casi todas repetición de lo anterior:
+
+| Examen | Artículo | Lo que pedía | Respuesta oficial |
+| --- | --- | --- | --- |
+| 1250 #15, 1315 #1, 1698 #14, 1703 #14, 1706 #6, 1710 #9 y #10, 1316 #1; 1607 #8 *(sin plantilla)* | 59 | Qué impuestos son municipales, cuáles se exigen y cuáles se pueden establecer; de quién son recurso exclusivo | Los del art. 59; **ICIO e IIVTNU, los dos potestativos**; el IVA, el ITP o el de determinados medios de transporte **no** son municipales; los impuestos son **de los municipios** |
+| 1312 #1, 1324 #1, 1328 #1; 1319 #1 y 1327 #1 *(sin plantilla)* | 3.1 | Herencia / legado / donación / todas | **Todas** |
+| 1331 #9 | 3.3 | Nunca son ingresos de derecho privado los que procedan… | **De los bienes de dominio público local** |
+| 1698 #15, 1703 #15, 1706 #5 | 2 | Tributos propios | **Las tasas** y **las contribuciones especiales** sí; **los precios públicos no** |
+| 1250 #13, 1703 #16 | 65 y 107 | Base del IBI; ¿el valor de mercado es la base de algún impuesto? | **Valor catastral**; el de mercado, **de ninguno** |
+| 1344 #5, 1345 #5 | 107.1 | Periodo máximo del IIVTNU | **Veinte años** |
+| 1333 #6, R4 y R5; 1334 #6, R4 y R5 | 128 a 130 | Las mismas tres preguntas que nuestra 1322, el mismo día | Las mismas |
+| 1344 #4, 1345 #4 | 48 bis | Prudencia financiera: todas las operaciones / todo el sector público / las dos | **Las dos** (48 bis.1 y 48 bis.4) |
+| 1344 #7, 1345 #7 | 171 | ¿Informa el Tribunal de Cuentas antes de resolverse el recurso contra el presupuesto? | **Solo cuando la impugnación afecte o se refiera a la nivelación presupuestaria** |
+| 1756 #7 *(sin plantilla)* | 165.4 | Cada presupuesto se aprobará… | **Sin déficit inicial** |
+| 1331 #3, 1681 R5 | Const. 142 | Las haciendas locales deberán disponer de los medios… | **Suficientes** para las funciones que la ley atribuye a las corporaciones |
+| 1557 #1, #2, #4, #7 y #8 | 14, 44, 49, 191 y 197 | Técnico Medio de Gestión, de **promoción interna**: recurso de reposición, precios públicos, crédito, liquidación y tesorería | Fuera de nuestro enunciado (duda 7) |
+
 Tres lecciones:
 
 - **El art. 59 es casi seguro.** Hay que saber **qué tres se exigen** y **qué dos se pueden establecer**, y leer el verbo de cada opción.
-- **Recicla preguntas.** El mismo día que nuestro 1246, el 1448 llevaba sus tres preguntas de Haciendas **palabra por palabra**.
+- **Recicla preguntas.** El mismo día que nuestro 1246, el 1448 llevaba sus tres preguntas de Haciendas **palabra por palabra**; y las de nuestra 1322 (#6, R4 y R5) se repiten igual en 1333 y 1334, examinadas el mismo 9/04/2024.
 - **Pregunta fuera del enunciado**: el presupuesto (art. 169) ha salido cinco veces, aunque el tema no lo nombra. Por eso está en el apartado 9.
 
 ---
@@ -337,7 +356,9 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
 | --- | --- | --- |
 | **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |
 | **Presupuesto** | 165.4 y 169 | Cada presupuesto se aprueba **sin déficit inicial** (165.4). Tras la **aprobación inicial**, se expone al público **15 días**, con reclamaciones **ante el Pleno**; sin reclamaciones, queda **aprobado definitivamente**, y con ellas el Pleno tiene **un mes** para resolver (169.1). La aprobación definitiva ha de hacerse **antes del 31 de diciembre del año anterior** (169.2) |
-| **Prudencia financiera** | 48 bis.1 | **Todas las operaciones financieras** de las corporaciones locales están sujetas al **principio de prudencia financiera** |
+| **Prudencia financiera** | 48 bis | **Todas las operaciones financieras** de las corporaciones locales están sujetas al **principio de prudencia financiera**: las condiciones para **minimizar su riesgo y coste** (48 bis.1). Las corporaciones **velarán por su aplicación en el conjunto de su sector público** (48 bis.4) |
+| **Recurso contra el presupuesto** | 171 | Contra la **aprobación definitiva** cabe **directamente recurso contencioso-administrativo** (171.1). El **Tribunal de Cuentas** informa antes de que se resuelva **solo si la impugnación afecta o se refiere a la nivelación presupuestaria** (171.2). **Recurrir no suspende por sí solo** la aplicación del presupuesto (171.3) |
+| **Suficiencia financiera** | Const. 142 | Las haciendas locales **deberán disponer de los medios suficientes** para las funciones que la ley atribuye a las corporaciones, y se nutrirán **fundamentalmente de tributos propios y de participación en los del Estado y de las comunidades autónomas** |
 
 ---
 
@@ -366,7 +387,7 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
 
 ## 11. Puntos críticos para el examen
 
-1. **Art. 59:** los ayuntamientos **exigirán** el **IBI, el IAE y el IVTM**, y **podrán establecer y exigir** el **ICIO y el IIVTNU**. Es la pregunta estrella: seis cuestionarios la traen.
+1. **Art. 59:** los ayuntamientos **exigirán** el **IBI, el IAE y el IVTM**, y **podrán establecer y exigir** el **ICIO y el IIVTNU**. Es la pregunta estrella: **veinte** veces en los cuestionarios.
 2. **Los impuestos son recurso de los municipios**; las provincias solo tienen un **recargo sobre el IAE** (hasta el 40 %).
 3. **Art. 3.1:** son ingresos de derecho privado **los productos del patrimonio y las herencias, legados y donaciones**: **las dos cosas**. Nunca los que vengan del **dominio público**.
 4. **Los precios públicos no son tributos.** Los tributos son **tasas, contribuciones especiales e impuestos**.
@@ -391,6 +412,7 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
    - En la **#12** (art. 96), las opciones b) y c) son ciertas: la c) añade la frase final del artículo, «en este caso el período impositivo comenzará el día en que se produzca dicha adquisición». Se da la **c)** por ser la literal completa.
    - En la **#13** (art. 128), la prestación personal y de transporte se ofrecía como recurso «de los municipios» o «de los municipios de población no superior a 5.000 habitantes». La plantilla del **1458** da «**los municipios**» en una pregunta con las mismas palabras, pero sin esa segunda opción. Con ella delante, la más exacta es la de los **5.000 habitantes**, porque solo esos ayuntamientos pueden imponerla (art. 128.1). No hay plantilla que lo confirme.
 6. **Bonificaciones del RDL 7/2025.** Ese real decreto-ley modificaba bonificaciones del IBI y del ICIO por autoconsumo energético, pero **fue derogado** por el Congreso (julio de 2025). El apunte sigue el texto vigente sin esa modificación.
+7. **El 1557 (Técnico Medio de Gestión, promoción interna).** Pregunta el recurso de reposición (art. 14), los precios públicos (art. 44), el crédito (art. 49), la liquidación del presupuesto (art. 191), la tesorería (art. 197) y el Real Decreto 500/1990. Su temario es mucho más amplio que nuestro enunciado. Esas materias **no se incorporan**: ninguna plaza de la escala de nuestra oposición las ha preguntado.
 
 ---
 
@@ -398,9 +420,13 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
 
 - **TRLRHL:**
   - texto consolidado del BOE (BOE-A-2004-4214), **última actualización publicada el 03/06/2026**, descargado el 29/09/2026;
-  - leídos **literalmente** los arts. 1 a 5, 20, 21, 48 bis, 56 a 110, 128 a 130, 134 y 169.1;
+  - leídos **literalmente** los arts. 1 a 5, 20, 21, 48 bis, 56 a 110, 128 a 130, 134, 165.4, 169 y 171;
   - revisadas las notas de modificación de los arts. 72, 74, 103, 104, 107 y 110.
-- **LBRL:** art. 26.1, del consolidado del BOE.
-- **Exámenes:** ver la tabla inicial. Las respuestas de 1246, 1322, 1446, 1458, 1497, 1519, 1521, 1635, 1669, 1681, 1722, 1724, 1729, 1736 y 1779 son las de sus **plantillas oficiales**, leídas dos veces (a la vista y por píxeles). Las de las plazas **sin plantilla** (1436, 1448, 1459, 1610, 1694 y 1756) se han **deducido del texto de la ley**; en todas la opción correcta es inequívoca, salvo las dos de la duda 5.
+- **LBRL:** art. 26.1, del consolidado del BOE. **Constitución:** art. 142.
+- **Exámenes:** ver la tabla inicial.
+  - Las respuestas de 1246, 1322, 1635, 1669 y 1681 son las de sus **plantillas oficiales**, leídas **dos veces** (a la vista y por píxeles).
+  - Las de las demás plazas con plantilla se han leído **por píxeles**, con la **cabecera comprobada** contra la plaza del cuestionario, y **todas coinciden con el texto de la ley**. La 1446 se ha revisado además a la vista.
+  - El 30/09/2026 se corrigió un error del lector de rejillas que desplazaba una fila a partir de la 20. No afectaba a ninguna pregunta de este tema.
+  - Las de las plazas **sin plantilla** (1319, 1327, 1436, 1448, 1459, 1607, 1610, 1694 y 1756) se han **deducido del texto de la ley**; en todas la opción correcta es inequívoca, salvo las dos de la duda 5.
 - **TEMARIO EXTRA:** no contiene nada de Haciendas Locales.
-- **Fecha de verificación:** 29 de septiembre de 2026.
+- **Fecha de verificación:** 29 de septiembre de 2026; ampliada el 30 de septiembre de 2026 con el tercer sondeo.

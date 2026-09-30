@@ -366,6 +366,13 @@
       "fuente": "TRLRHL, arts. 100, 102, 104, 107 y 108",
       "etiquetas": ["figura", "impuestos"],
       "figura": { "tipo": "esquema", "valor": "impuestos-municipales" }
+    },
+    {
+      "id": "t06-f50",
+      "anverso": "¿Se puede recurrir la aprobación definitiva del presupuesto? ¿Interviene el Tribunal de Cuentas? ¿Y qué dice el art. 142 de la Constitución de las haciendas locales?",
+      "reverso": "- **Art. 171:** cabe **directamente recurso contencioso-administrativo**. El **Tribunal de Cuentas** informa antes de que se resuelva **solo si la impugnación afecta o se refiere a la nivelación presupuestaria**. Recurrir **no suspende por sí solo** el presupuesto.\n- **Art. 142 CE:** las haciendas locales deberán disponer de **los medios suficientes**, y se nutrirán **fundamentalmente de tributos propios y de participación en los del Estado y de las comunidades autónomas** (1331 #3, 1681 R5).\n- **Art. 48 bis.4:** las corporaciones velan por la **prudencia financiera** en **todo su sector público**.",
+      "fuente": "TRLRHL, arts. 48 bis y 171; Constitución, art. 142",
+      "etiquetas": ["otros", "examen"]
     }
   ],
   "test": [
@@ -623,6 +630,30 @@
       "correcta": 0,
       "explicacion": "Art. 134: un recargo sobre las cuotas modificadas por el coeficiente de ponderación, no superior al 40 %. Las provincias no tienen impuestos propios.",
       "fuente": "TRLRHL, art. 134"
+    },
+    {
+      "id": "t06-q31",
+      "pregunta": "De acuerdo con el artículo 171 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido de la Ley reguladora de las Haciendas Locales, contra la aprobación definitiva del presupuesto podrá interponerse directamente recurso contencioso-administrativo. Según el mismo artículo, ¿deberá informar el Tribunal de Cuentas previamente a la resolución de ese recurso?",
+      "opciones": ["Sólo cuando la impugnación se refiera o afecte a la nivelación presupuestaria", "No", "Sí"],
+      "correcta": 0,
+      "explicacion": "Art. 171.2. Pregunta literal de 1345 #7 (Oficial Mecánico EET; plantilla definitiva: a) y 1344 #7.",
+      "fuente": "TRLRHL, art. 171"
+    },
+    {
+      "id": "t06-q32",
+      "pregunta": "De acuerdo con el artículo 48 bis del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido de la Ley reguladora de las Haciendas Locales:",
+      "opciones": ["Todas las operaciones financieras que suscriban las Corporaciones Locales están sujetas al principio de prudencia financiera", "Las Corporaciones Locales velarán por la aplicación del principio de prudencia financiera en el conjunto de su sector público", "Las respuestas a) y b) son correctas"],
+      "correcta": 2,
+      "explicacion": "La a) es el art. 48 bis.1 y la b) el 48 bis.4. Pregunta literal de 1345 #4 (plantilla definitiva: c) y 1344 #4.",
+      "fuente": "TRLRHL, art. 48 bis"
+    },
+    {
+      "id": "t06-q33",
+      "pregunta": "De acuerdo con el artículo 142 de la Constitución española, las Haciendas locales deberán disponer:",
+      "opciones": ["De los medios necesarios para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas", "De los medios suficientes para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas", "De los medios adecuados para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas"],
+      "correcta": 1,
+      "explicacion": "Art. 142 CE: medios suficientes. Pregunta literal de 1331 #3 (plantilla definitiva: b) y 1681 R5.",
+      "fuente": "Constitución, art. 142"
     }
   ],
   "formatoTest": {
