@@ -89,6 +89,8 @@ export type TipoEsquema =
   | 'umbrales-gran-poblacion'
   | 'recursos-haciendas-locales'
   | 'impuestos-municipales'
+  | 'clases-empleados-publicos'
+  | 'prescripcion-faltas-sanciones'
 
 export type TipoMaterial =
   | 'matraz-aforado'

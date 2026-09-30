@@ -63,6 +63,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'umbrales-gran-poblacion': 'Los cuatro supuestos de gran población y dónde cae Zaragoza',
   'recursos-haciendas-locales': 'Los recursos de las entidades locales (art. 2)',
   'impuestos-municipales': 'Los cinco impuestos municipales: obligatorios y potestativos',
+  'clases-empleados-publicos': 'Las clases de empleados públicos (art. 8)',
+  'prescripcion-faltas-sanciones': 'Cuándo prescriben las faltas y las sanciones (art. 97)',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -120,6 +122,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'umbrales-gran-poblacion': { ancho: 580, alto: 292 },
   'recursos-haciendas-locales': { ancho: 580, alto: 330 },
   'impuestos-municipales': { ancho: 580, alto: 250 },
+  'clases-empleados-publicos': { ancho: 580, alto: 290 },
+  'prescripcion-faltas-sanciones': { ancho: 580, alto: 256 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5836,6 +5840,162 @@ function ImpuestosMunicipales() {
   )
 }
 
+/**
+ * Las cuatro clases de empleados publicos del art. 8.2 del TREBEP, en su orden
+ * (a a d), con el vinculo que las une a la Administracion: todas por
+ * nombramiento salvo el personal laboral, que lo hace por contrato de trabajo
+ * (arts. 9 a 12). Carrera e interinos son los dos tipos de funcionario. El
+ * personal directivo profesional (art. 13) no es una quinta clase: va aparte,
+ * sin rama, porque puede ser funcionario o laboral.
+ */
+function ClasesEmpleadosPublicos() {
+  const CLASES = [
+    { letra: 'a', l1: 'a) Funcionarios', l2: 'de carrera', vinculo: 'nombramiento legal', pie: 'relación permanente', art: 'art. 9' },
+    { letra: 'b', l1: 'b) Funcionarios', l2: 'interinos', vinculo: 'nombramiento', pie: 'temporal, por urgencia', art: 'art. 10' },
+    { letra: 'c', l1: 'c) Personal', l2: 'laboral', vinculo: 'contrato de trabajo', pie: 'fijo, indefinido o temporal', art: 'art. 11' },
+    { letra: 'd', l1: 'd) Personal', l2: 'eventual', vinculo: 'nombramiento', pie: 'confianza o asesoramiento', art: 'art. 12' },
+  ]
+  const RAIZ = { x: 205, y: 12, an: 170, al: 44 }
+  const AN = 128
+  const HUECO = 12
+  const X0 = 10
+  const Y = 100
+  const AL = 82
+  const xDe = (i: number) => X0 + i * (AN + HUECO)
+  const yLlave = Y + AL + 12
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <rect data-pieza="nodo-empleados" x={RAIZ.x} y={RAIZ.y} width={RAIZ.an} height={RAIZ.al} rx="6" fill={AZUL_CLARO} fillOpacity="0.5" stroke="currentColor" strokeWidth="1.2" />
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 20} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Empleados públicos
+      </text>
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 35} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        art. 8: se clasifican en
+      </text>
+      {CLASES.map((c, i) => {
+        const x = xDe(i)
+        return (
+          <g key={c.letra}>
+            <line data-pieza="rama" x1={RAIZ.x + RAIZ.an / 2} y1={RAIZ.y + RAIZ.al} x2={x + AN / 2} y2={Y} stroke="currentColor" strokeWidth="1.3" />
+            <rect data-pieza="clase" data-letra={c.letra} x={x} y={Y} width={AN} height={AL} rx="5" fill={c.letra === 'c' ? ROJO : AZUL} fillOpacity={c.letra === 'c' ? 0.18 : 0.45} stroke="currentColor" strokeWidth="1" />
+            <text x={x + 8} y={Y + 16} fontSize="9" fontWeight="bold" fill="currentColor">
+              {c.l1}
+            </text>
+            <text x={x + 22} y={Y + 28} fontSize="9" fontWeight="bold" fill="currentColor">
+              {c.l2}
+            </text>
+            <text data-pieza="vinculo" data-letra={c.letra} x={x + 8} y={Y + 48} fontSize="8" fontWeight="bold" fill="currentColor">
+              {c.vinculo}
+            </text>
+            <text x={x + 8} y={Y + 60} fontSize="7.5" fill="currentColor">
+              {c.pie}
+            </text>
+            <text x={x + AN - 8} y={Y + AL - 7} fontSize="7" textAnchor="end" fill="currentColor" fillOpacity="0.8">
+              {c.art}
+            </text>
+          </g>
+        )
+      })}
+      <path
+        data-pieza="grupo-funcionarios"
+        d={`M${xDe(0)} ${yLlave - 6} L${xDe(0)} ${yLlave} L${xDe(1) + AN} ${yLlave} L${xDe(1) + AN} ${yLlave - 6}`}
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.3"
+      />
+      <text x={(xDe(0) + xDe(1) + AN) / 2} y={yLlave + 14} fontSize="8" textAnchor="middle" fill="currentColor">
+        funcionarios: relación estatutaria, de Derecho Administrativo
+      </text>
+      <rect data-pieza="directivo" x="140" y="230" width="300" height="46" rx="5" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 3" />
+      <text x="290" y="248" fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Personal directivo profesional (art. 13)
+      </text>
+      <text x="290" y="264" fontSize="7.5" textAnchor="middle" fill="currentColor">
+        no es una clase del art. 8.2: puede ser funcionario o laboral
+      </text>
+    </g>
+  )
+}
+
+/**
+ * La prescripcion del art. 97 del TREBEP sobre una escala de meses: cada
+ * gravedad con dos barras, la de la falta y la de la sancion impuesta por ella.
+ * Coinciden en las muy graves (3 anos) y en las graves (2 anos); en las leves,
+ * la falta prescribe a los seis meses y la sancion al ano. Las barras se leen
+ * con las marcas del eje, y cada cifra escrita tiene que decir lo mismo.
+ */
+function PrescripcionFaltasSanciones() {
+  const X0 = 140
+  const MESES = 36
+  const ANCHO = 380
+  const xDe = (m: number) => X0 + (m / MESES) * ANCHO
+  const GRADOS = [
+    { clave: 'muy-grave', rotulo: 'Muy graves', falta: 36, sancion: 36 },
+    { clave: 'grave', rotulo: 'Graves', falta: 24, sancion: 24 },
+    { clave: 'leve', rotulo: 'Leves', falta: 6, sancion: 12 },
+  ]
+  const cifra = (m: number) => (m % 12 === 0 ? `${m / 12} ${m === 12 ? 'año' : 'años'}` : `${m} meses`)
+  const Y0 = 34
+  const FILA = 50
+  const yEje = Y0 + GRADOS.length * FILA
+  const MARCAS = [0, 6, 12, 18, 24, 30, 36]
+  const TIPOS = [
+    { tipo: 'falta', fill: AZUL, op: 0.75, dy: 0 },
+    { tipo: 'sancion', fill: ROJO, op: 0.3, dy: 17 },
+  ] as const
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <rect x="10" y="8" width="12" height="9" fill={AZUL} fillOpacity="0.75" stroke="currentColor" strokeWidth="0.6" />
+      <text x="27" y="16" fontSize="8.5" fill="currentColor">
+        la falta prescribe a los…
+      </text>
+      <rect x="170" y="8" width="12" height="9" fill={ROJO} fillOpacity="0.3" stroke="currentColor" strokeWidth="0.6" />
+      <text x="187" y="16" fontSize="8.5" fill="currentColor">
+        la sanción impuesta por ella prescribe a los…
+      </text>
+      {MARCAS.map((m) => (
+        <g key={m}>
+          <line x1={xDe(m)} y1={Y0 - 8} x2={xDe(m)} y2={yEje} stroke="currentColor" strokeOpacity="0.15" />
+          <line data-pieza="tick" data-valor={m} x1={xDe(m)} y1={yEje} x2={xDe(m)} y2={yEje + 5} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(m)} y={yEje + 16} fontSize="8" textAnchor="middle" fill="currentColor">
+            {m}
+          </text>
+        </g>
+      ))}
+      <line x1={xDe(0)} y1={yEje} x2={xDe(MESES)} y2={yEje} stroke="currentColor" strokeWidth="1.3" />
+      <text x={xDe(MESES)} y={yEje + 29} fontSize="8" textAnchor="end" fill="currentColor">
+        meses
+      </text>
+      {GRADOS.map((g, i) => {
+        const y = Y0 + i * FILA
+        return (
+          <g key={g.clave}>
+            <text x="10" y={y + 19} fontSize="9.5" fontWeight="bold" fill="currentColor">
+              {g.rotulo}
+            </text>
+            {TIPOS.map((t) => {
+              const m = t.tipo === 'falta' ? g.falta : g.sancion
+              return (
+                <g key={t.tipo}>
+                  <rect data-pieza="barra" data-grado={g.clave} data-tipo={t.tipo} x={xDe(0)} y={y + t.dy} width={xDe(m) - xDe(0)} height="13" rx="2" fill={t.fill} fillOpacity={t.op} stroke="currentColor" strokeWidth="0.8" />
+                  <text data-pieza="cifra" data-grado={g.clave} data-tipo={t.tipo} x={xDe(m) + 6} y={y + t.dy + 10} fontSize="8.5" fontWeight="bold" fill="currentColor">
+                    {cifra(m)}
+                  </text>
+                </g>
+              )
+            })}
+          </g>
+        )
+      })}
+      <text x="10" y={yEje + 44} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        La falta cuenta desde que se cometió (o desde que cesó, si es continuada); la sanción, desde que la resolución es firme (art. 97.2).
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -5944,6 +6104,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <RecursosHaciendasLocales />
     case 'impuestos-municipales':
       return <ImpuestosMunicipales />
+    case 'clases-empleados-publicos':
+      return <ClasesEmpleadosPublicos />
+    case 'prescripcion-faltas-sanciones':
+      return <PrescripcionFaltasSanciones />
   }
 }
 

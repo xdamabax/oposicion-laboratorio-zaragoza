@@ -873,6 +873,38 @@ function medir(sabotaje, ROJO) {
     // el IIVTNU rotulado como indirecto
     svg.querySelector('[data-pieza="naturaleza"][data-clave="iivtnu"]').textContent = 'indirecto'
   }
+  if (sabotaje === 94) {
+    const svg = porClave('clases-empleados-publicos')
+    // el personal directivo colgado de «empleados publicos» como una quinta clase
+    const d = pieza(svg, 'directivo')
+    const r = piezas(svg, 'rama')[0].cloneNode()
+    r.setAttribute('x2', num(d, 'x') + num(d, 'width') / 2)
+    r.setAttribute('y2', num(d, 'y'))
+    svg.appendChild(r)
+  }
+  if (sabotaje === 95) {
+    const svg = porClave('clases-empleados-publicos')
+    // la llave de los funcionarios estirada hasta el personal laboral
+    const c = svg.querySelector('[data-pieza="clase"][data-letra="c"]')
+    const ll = pieza(svg, 'grupo-funcionarios')
+    const n = ll.getAttribute('d').match(/-?\d+(?:\.\d+)?/g).map(Number)
+    const x2 = num(c, 'x') + num(c, 'width')
+    ll.setAttribute('d', `M${n[0]} ${n[1]} L${n[2]} ${n[3]} L${x2} ${n[5]} L${x2} ${n[7]}`)
+  }
+  if (sabotaje === 96) {
+    const svg = porClave('prescripcion-faltas-sanciones')
+    // la sancion leve acortada a seis meses, con su cifra: dibujo y rotulo de acuerdo, pero contra la ley
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const x0 = num(ticks[0], 'x1')
+    const porMes = (num(ticks[ticks.length - 1], 'x1') - x0) / num(ticks[ticks.length - 1], 'data-valor')
+    svg.querySelector('[data-pieza="barra"][data-grado="leve"][data-tipo="sancion"]').setAttribute('width', 6 * porMes)
+    svg.querySelector('[data-pieza="cifra"][data-grado="leve"][data-tipo="sancion"]').textContent = '6 meses'
+  }
+  if (sabotaje === 97) {
+    const svg = porClave('prescripcion-faltas-sanciones')
+    // la cifra de la falta grave escrita distinta de lo que dibuja su barra
+    svg.querySelector('[data-pieza="cifra"][data-grado="grave"][data-tipo="falta"]').textContent = '3 años'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3168,6 +3200,108 @@ function medir(sabotaje, ROJO) {
     return 'ICIO indirecto; IBI, IAE, IVTM e IIVTNU directos'
   })
 
+  /*
+   * Las clases de empleados publicos (art. 8.2 TREBEP). El orden se lee por la
+   * x de las cajas y su letra por el rotulo que llevan dentro; de donde sale y
+   * adonde llega cada rama, por sus extremos.
+   */
+  control('Clases · las cuatro clases del art. 8.2 van en el orden a) a d), cada una con su rama, y el personal directivo sin ninguna', () => {
+    const svg = porClave('clases-empleados-publicos')
+    const raiz = pieza(svg, 'nodo-empleados')
+    const cajas = piezas(svg, 'clase').sort((a, b) => num(a, 'x') - num(b, 'x'))
+    const letras = cajas.map((c) => {
+      const t = [...svg.querySelectorAll('text')].find((x) => {
+        const b = x.getBBox()
+        return /^[a-d]\) /.test(x.textContent.trim()) && dentroDe(c, b.x + 2, b.y + b.height / 2)
+      })
+      if (!t) throw new Error('una caja de clase no lleva letra')
+      return t.textContent.trim()[0]
+    })
+    if (letras.join('') !== 'abcd') throw new Error(`las clases van en el orden ${letras.join(', ')}: el art. 8.2 las enumera de la a) a la d)`)
+    const ramas = piezas(svg, 'rama')
+    for (const r of ramas) {
+      if (!dentroDe(raiz, num(r, 'x1'), num(r, 'y1'))) throw new Error('una rama no sale de «empleados públicos»')
+    }
+    const directivo = pieza(svg, 'directivo')
+    if (ramas.some((r) => dentroDe(directivo, num(r, 'x2'), num(r, 'y2')))) {
+      throw new Error('el personal directivo cuelga de «empleados públicos» como una clase más, y el art. 8.2 no lo enumera')
+    }
+    cajas.forEach((c, i) => {
+      if (!ramas.some((r) => dentroDe(c, num(r, 'x2'), num(r, 'y2')))) throw new Error(`ninguna rama llega a la clase ${letras[i]})`)
+    })
+    return 'a, b, c, d con su rama; el directivo, aparte'
+  })
+
+  control('Clases · solo el personal laboral se vincula por contrato, y la llave de los funcionarios abarca carrera e interinos', () => {
+    const svg = porClave('clases-empleados-publicos')
+    for (const v of piezas(svg, 'vinculo')) {
+      const letra = v.getAttribute('data-letra')
+      const contrato = /contrato/.test(v.textContent)
+      const nombramiento = /nombramiento/.test(v.textContent)
+      if (letra === 'c' && !contrato) throw new Error(`el personal laboral figura con «${v.textContent.trim()}»: se vincula por contrato de trabajo (art. 11.1)`)
+      if (letra !== 'c' && (contrato || !nombramiento)) throw new Error(`la clase ${letra}) figura con «${v.textContent.trim()}»: carrera, interinos y eventuales entran por nombramiento`)
+    }
+    const caja = (l) => svg.querySelector(`[data-pieza="clase"][data-letra="${l}"]`)
+    const llave = pieza(svg, 'grupo-funcionarios').getBBox()
+    const cubre = (l) => {
+      const c = caja(l)
+      return llave.x <= num(c, 'x') + 2 && llave.x + llave.width >= num(c, 'x') + num(c, 'width') - 2
+    }
+    const toca = (l) => {
+      const c = caja(l)
+      return llave.x + llave.width > num(c, 'x') + 2 && llave.x < num(c, 'x') + num(c, 'width') - 2
+    }
+    if (!cubre('a') || !cubre('b')) throw new Error('la llave de los funcionarios no abarca a los de carrera y a los interinos')
+    if (toca('c') || toca('d')) throw new Error('la llave de los funcionarios se extiende sobre el personal laboral o el eventual, que no son funcionarios')
+    return 'contrato solo en c); la llave cubre a) y b)'
+  })
+
+  /*
+   * La prescripcion del art. 97 TREBEP. La escala se reconstruye con las marcas
+   * del eje (data-valor en meses); cada barra se lee por donde acaba.
+   */
+  const barrasPrescripcion = (svg) => {
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const x0 = num(ticks[0], 'x1')
+    const ult = ticks[ticks.length - 1]
+    const porMes = (num(ult, 'x1') - x0) / num(ult, 'data-valor')
+    return piezas(svg, 'barra').map((b) => ({
+      grado: b.getAttribute('data-grado'),
+      tipo: b.getAttribute('data-tipo'),
+      desde: (num(b, 'x') - x0) / porMes,
+      meses: (num(b, 'x') + num(b, 'width') - x0) / porMes,
+      cifra: svg.querySelector(`[data-pieza="cifra"][data-grado="${b.getAttribute('data-grado')}"][data-tipo="${b.getAttribute('data-tipo')}"]`),
+    }))
+  }
+  control('Prescripción · cada barra acaba en su plazo legal, leído en la escala del eje (art. 97.1)', () => {
+    const svg = porClave('prescripcion-faltas-sanciones')
+    const LEY = { 'muy-grave': { falta: 36, sancion: 36 }, grave: { falta: 24, sancion: 24 }, leve: { falta: 6, sancion: 12 } }
+    const barras = barrasPrescripcion(svg)
+    if (barras.length !== 6) throw new Error(`hay ${barras.length} barras y son seis: falta y sanción de cada gravedad`)
+    for (const b of barras) {
+      const debe = LEY[b.grado]?.[b.tipo]
+      if (debe === undefined) throw new Error(`barra desconocida: ${b.grado}/${b.tipo}`)
+      if (Math.abs(b.desde) > 0.2) throw new Error(`la barra ${b.tipo} ${b.grado} no arranca en cero`)
+      if (Math.abs(b.meses - debe) > 0.2) {
+        throw new Error(`la ${b.tipo === 'falta' ? 'falta' : 'sanción'} ${b.grado} prescribe en el dibujo a los ${Math.round(b.meses)} meses, y la ley dice ${debe}`)
+      }
+    }
+    return 'muy graves 36/36, graves 24/24, leves 6/12 meses (falta/sanción)'
+  })
+
+  control('Prescripción · la cifra escrita de cada barra dice lo mismo que su dibujo', () => {
+    const svg = porClave('prescripcion-faltas-sanciones')
+    for (const b of barrasPrescripcion(svg)) {
+      if (!b.cifra) throw new Error(`la barra ${b.tipo} ${b.grado} no lleva cifra`)
+      const t = b.cifra.textContent.trim()
+      const m = t.match(/(\d+)\s*(año|mes)/)
+      if (!m) throw new Error(`cifra ilegible: «${t}»`)
+      const meses = Number(m[1]) * (m[2] === 'año' ? 12 : 1)
+      if (Math.abs(meses - b.meses) > 0.2) throw new Error(`la ${b.tipo === 'falta' ? 'falta' : 'sanción'} ${b.grado} dice «${t}» y su barra acaba en ${Math.round(b.meses)} meses`)
+    }
+    return 'cada cifra coincide con su barra'
+  })
+
   return resultados
 }
 
@@ -3267,6 +3401,10 @@ const SABOTAJES = {
   91: 'los precios públicos colgados de los tributos propios',
   92: 'el IVTM pintado como impuesto potestativo',
   93: 'el IIVTNU rotulado como impuesto indirecto',
+  94: 'el personal directivo colgado de los empleados públicos como una quinta clase',
+  95: 'la llave de los funcionarios estirada hasta el personal laboral',
+  96: 'la sanción por falta leve acortada a seis meses, dibujo y cifra de acuerdo entre sí pero no con la ley',
+  97: 'la cifra de la falta grave escrita distinta de lo que dibuja su barra',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3370,6 +3508,10 @@ const CONTROL_DE = {
   91: [87],
   92: [88],
   93: [89],
+  94: [90],
+  95: [91],
+  96: [92],
+  97: [93],
 }
 
 async function main() {
