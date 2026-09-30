@@ -21,7 +21,7 @@ fuentes:
 | **1233 #12** | Agente que puede causar **enfermedad grave**, con **riesgo de propagarse a la colectividad** y con **profilaxis o tratamiento eficaz** | **b) Grupo 3** |
 | **1322, 2.º ejercicio, supuesto 1, #5** | Nivel de contención suficiente para que un laboratorio haga determinaciones de ***Legionella*** | **b) Laboratorio tipo 2** (*Legionella* es del **grupo 2**) |
 
-**Otras plazas del Ayuntamiento** (ninguna tiene plantilla publicada salvo la 1736):
+**Otras plazas del Ayuntamiento** (de estas, solo la 1736 tiene plantilla publicada):
 
 | Examen | Lo que pedía | Respuesta |
 | --- | --- | --- |
@@ -30,7 +30,7 @@ fuentes:
 | 1736 #44 (con plantilla) | ¿Cuál es un riesgo biológico? | **a) Salpicadura de sangre o fluido a la piel** |
 | 1484 R2 | Los priones son agente causal de riesgos… | **Biológicos**: el anexo II los clasifica en el grupo 3 |
 
-Lo demás que ha salido en esas plazas es de medicina: el calendario de vacunas del personal sanitario (1694 #28, 1669 #33) o la profilaxis tras un pinchazo con hepatitis B (1694 #29). Aquí solo interesa lo que dice el RD sobre **vacunas** (apartado 5.4).
+Lo demás que ha salido en esas plazas es de medicina: las vacunas recomendadas al personal sanitario (1694 #28) o frente a la gripe y la COVID-19 (1669 #33), y la profilaxis tras un pinchazo con hepatitis B (1694 #29). Aquí solo interesa lo que dice el RD sobre **vacunas** (apartado 5.4).
 
 Dos lecciones:
 
