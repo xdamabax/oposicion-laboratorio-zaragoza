@@ -44,7 +44,19 @@ function comoFigura(src: string, alt: string): TipoFigura | null {
 const urlTransform = (url: string) =>
   /^(ghs|bureta|material|esquema):/.test(url) ? url : defaultUrlTransform(url)
 
+/** Texto plano de un nodo del arbol que entrega react-markdown. */
+type NodoHast = { type: string; value?: string; children?: NodoHast[] }
+const textoDe = (n?: NodoHast): string =>
+  !n ? '' : n.type === 'text' ? (n.value ?? '') : (n.children ?? []).map(textoDe).join('')
+
 const componentes = {
+  // Un parrafo que acaba en «:» presenta lo que viene detras (una tabla, una
+  // lista, una formula, una cita, una figura). Se marca para que la hoja de
+  // impresion no lo deje solo al pie de una pagina: la hoja no puede leer el
+  // texto, asi que se lo dice el propio parrafo.
+  p: ({ node, ...props }: React.ComponentProps<'p'> & { node?: NodoHast }) => (
+    <p {...props} className={textoDe(node).trim().endsWith(':') ? 'md-entrada' : undefined} />
+  ),
   img: ({ src, alt }: React.ComponentProps<'img'>) => {
     const figura = typeof src === 'string' ? comoFigura(src, alt ?? '') : null
     if (figura) return <Figura figura={figura} />

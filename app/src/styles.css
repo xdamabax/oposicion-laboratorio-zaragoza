@@ -1119,4 +1119,73 @@ body[data-listo="1"] {
     orphans: 2;
     widows: 2;
   }
+
+  /* Arranques huerfanos. Distinto de las filas partidas: aqui el problema es
+     que un apartado EMPIECE al pie de una pagina con solo su titulo, o con la
+     frase que presenta una tabla, o con la cabecera de la tabla y una fila, y
+     el resto se vaya a la siguiente. Se pide al motor que no corte justo
+     despues de esas piezas, de modo que saltan enteras. Lo comprueba
+     scripts/verificar-pdf.js midiendo el PDF, no suponiendolo. */
+  .md h1,
+  .md h2,
+  .md h3,
+  .md h4 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* El parrafo que presenta una tabla o una lista va con ella, y tambien el
+     que acaba en «:» (Markdown.tsx lo marca como .md-entrada), presente lo
+     que presente: una formula, una cita, una figura. */
+  .md p:has(+ .md-tabla),
+  .md p:has(+ ul),
+  .md p:has(+ ol),
+  .md .md-entrada {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* Una tabla no arranca con la cabecera y una fila sola: las dos primeras
+     filas van pegadas a la cabecera y entre si. */
+  .md tbody tr:first-child,
+  .md tbody tr:nth-child(2) {
+    break-before: avoid-page;
+    page-break-before: avoid;
+  }
+
+  /* Un titulo con un parrafo de una linea al pie tambien es un arranque
+     huerfano: el primer parrafo tras un titulo va con lo que le sigue. Y una
+     lista cuyo ultimo punto presenta la tabla de detras («…segun el volumen
+     tratado:») no se separa de ella. */
+  .md :is(h2, h3, h4) + p,
+  .md ul:has(+ .md-tabla),
+  .md ol:has(+ .md-tabla) {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* Un elemento de lista no se parte: Chrome no aplica orphans dentro de
+     ellos, y el primero de una lista acababa dejando un solo renglon al pie
+     detras de su titulo. Los que llevan sublista si pueden partirse: son los
+     largos. */
+  .md li:not(:has(ul, ol)) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Ni una lista con su primer elemento solo al pie. */
+  .md li:first-child {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* Un elemento de lista que presenta una sublista («Órganos de selección:»)
+     va con el primer elemento de esa sublista. */
+  .md li > ul > li:first-child,
+  .md li > ol > li:first-child {
+    break-before: avoid-page;
+    page-break-before: avoid;
+  }
 }

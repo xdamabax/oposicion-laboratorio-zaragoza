@@ -82,6 +82,7 @@ ExamenesAnteriores/PLANTILLAS.md  Respuestas oficiales (plantillas del Ayuntamie
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
 scripts/verificar.js    Las dos baterías de verificación de una vez.
+scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie.
 scripts/comun.js        Piezas compartidas: encontrar Chrome, servir dist/, listar temas.
 ```
 
@@ -225,6 +226,8 @@ Los esquemas ópticos del tema 28 se apoyan además en atributos `data-pieza` de
 El control del dibujo delator es automático, sin listas escritas a mano: toma los fragmentos **en negrita** del reverso —que es lo que la tarjeta pide recordar—, descarta los que ya están en el anverso y comprueba que ninguno aparezca escrito dentro del SVG.
 
 Los controles que no aplican a un tema (un tema de la parte común no tiene supuestos) salen como `·`, no como aprobados.
+
+`verificar-pdf.js` (`npm run verificar:pdf -- 7 39`) — **saltos de página del PDF de apuntes**. Comprueba que ningún apartado arranque huérfano al pie de una página: un título solo, una entrada que acaba en «:» separada de lo que presenta, una tabla con la cabecera y una fila, o una lista o un párrafo con un solo renglón detrás de su título. El navegador no dice en qué página cae cada cosa, pero el PDF sí: Chrome lo genera **etiquetado** (H2, P, Table, TR, L…) y pdf.js lee el árbol página a página. No siembra nada en el DOM, porque cualquier marca movía los saltos que se querían medir, e imprime con las mismas opciones que la exportación (`OPCIONES_PDF` en `comun.js`). Con `--sin-reglas` apaga las reglas de la hoja de impresión y exige que aparezcan huérfanos: sobre los 28 temas escritos aparecen 135; con las reglas, ninguno.
 
 ### Las pruebas se prueban a sí mismas
 

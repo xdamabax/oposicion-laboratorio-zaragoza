@@ -23,16 +23,9 @@ import { existsSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import puppeteer from 'puppeteer-core'
 
-import { RAIZ, argumento, buscarChrome, decidirBase, temasConApunte } from './comun.js'
+import { OPCIONES_PDF, RAIZ, argumento, buscarChrome, decidirBase, temasConApunte } from './comun.js'
 
 const PUERTO = 4179
-
-const PIE = `
-  <div style="width:100%;font-size:8px;font-family:system-ui,sans-serif;color:#666;
-              padding:0 16mm;display:flex;justify-content:space-between;">
-    <span>Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza</span>
-    <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
-  </div>`
 
 /**
  * Comprueba que cada imagen va a salir de verdad en el papel.
@@ -82,15 +75,7 @@ async function generar(pagina, base, ruta, fichero) {
     for (const r of rotas) console.warn(`         - ${r}`)
   }
 
-  await pagina.pdf({
-    path: fichero,
-    format: 'A4',
-    printBackground: true,
-    margin: { top: '18mm', bottom: '20mm', left: '16mm', right: '16mm' },
-    displayHeaderFooter: true,
-    headerTemplate: '<span></span>',
-    footerTemplate: PIE,
-  })
+  await pagina.pdf({ path: fichero, ...OPCIONES_PDF })
   return rotas.length
 }
 

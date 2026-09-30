@@ -25,6 +25,27 @@ const CHROMES = [
   '/usr/bin/chromium',
 ]
 
+const PIE = `
+  <div style="width:100%;font-size:8px;font-family:system-ui,sans-serif;color:#666;
+              padding:0 16mm;display:flex;justify-content:space-between;">
+    <span>Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza</span>
+    <span><span class="pageNumber"></span> / <span class="totalPages"></span></span>
+  </div>`
+
+/**
+ * Opciones de page.pdf(). Las comparten la exportacion y la verificacion de
+ * saltos de pagina: si el verificador imprimiera con otros margenes, los saltos
+ * que mide no serian los del PDF que se reparte.
+ */
+export const OPCIONES_PDF = {
+  format: 'A4',
+  printBackground: true,
+  margin: { top: '18mm', bottom: '20mm', left: '16mm', right: '16mm' },
+  displayHeaderFooter: true,
+  headerTemplate: '<span></span>',
+  footerTemplate: PIE,
+}
+
 /** Valor de `--nombre valor` en la linea de ordenes. */
 export function argumento(nombre, porDefecto) {
   const i = process.argv.indexOf(`--${nombre}`)

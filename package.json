@@ -12,7 +12,8 @@
     "export:pdf": "node scripts/export-pdf.js",
     "verificar": "node scripts/verificar.js",
     "verificar:figuras": "node scripts/verificar-figuras.js",
-    "verificar:repaso": "node scripts/verificar-repaso.js"
+    "verificar:repaso": "node scripts/verificar-repaso.js",
+    "verificar:pdf": "node scripts/verificar-pdf.js"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -25,6 +26,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.2",
+    "pdfjs-dist": "^4.10.38",
     "puppeteer-core": "^25.9.0",
     "typescript": "^5.9.2",
     "vite": "^7.1.5"
