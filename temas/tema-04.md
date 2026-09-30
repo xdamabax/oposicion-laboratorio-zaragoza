@@ -431,6 +431,10 @@ Los **recursos** (alzada, reposición, revisión) están en el **Título V** y q
 
 1. **Sin precedente de examen.** Ninguna de las 26 preguntas de la parte común de los seis cuestionarios es de la Ley 39/2015. El peso de cada artículo es una estimación, guiada por el estilo de las preguntas de las demás normas: artículo, cifra o plazo.
 2. **Qué entra en el tema.** El enunciado copia la rúbrica del Título IV, y por eso el apunte lo trata entero y en profundidad. Del resto de la ley solo se dan los arts. 21, 24, 25, 30 y 33, porque el Título IV se remite a ellos. **Los recursos (Título V) no entran**, y no se ha preparado material sobre ellos. Si el tribunal entendiera «procedimiento común» en sentido amplio, podría preguntar recursos o notificaciones; queda avisado.
+
+   **Comprobado el 29/09/2026 en las bases de otras plazas del Ayuntamiento** (`ExamenesAnteriores/PLANTILLAS.md`). **Oficial Guardallaves** tiene un tema con el **mismo enunciado** que este (BOPZ núm. 159, de 12/07/2024), y en su examen (1635) la LPAC salió dos veces, las dos del Título IV: **art. 54** (iniciación) y **art. 82.2** (audiencia).
+
+   Las plazas a las que el tribunal sí preguntó recursos los tienen en un **tema aparte**. Auxiliar Administrativo reparte la LPAC en cinco temas, con la frase «disposiciones sobre el procedimiento administrativo común (iniciación, ordenación, instrucción, finalización y ejecución)» para el IV y **«revisión de oficio y recursos administrativos»** para el V (BOPZ núm. 170, de 27/07/2026). Medicina del Trabajo tiene un **tema 8, «Los recursos administrativos»** (BOPZ núm. 161, de 15/07/2024). Por eso este tema no se amplía.
 3. **Recuento de artículos.** Los 133 artículos se han contado sobre el texto consolidado, no en una fuente secundaria.
 4. **Ley aragonesa.** El Ayuntamiento aplica directamente la Ley 39/2015, que es básica. No se ha revisado si hay normas aragonesas o municipales que fijen plazos distintos en procedimientos concretos. Los plazos del apunte son los **generales** de la ley.
 

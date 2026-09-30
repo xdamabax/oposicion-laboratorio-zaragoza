@@ -222,7 +222,7 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 | 10 | Análisis de Fósforo total | **a)** | Método de digestión ácida y espectrofotometría de absorción molecular UV-VISIBLE | **35** |
 | 11 | El recuento de colonias a 22 °C en una muestra de agua se realiza por: | **a)** | La técnica de siembra en profundidad | 18 *(pendiente)* |
 | 12 | Para el recuento de enterococos intestinales en aguas de consumo se utiliza el medio de cultivo: | **d)** | Slanetz y Bartley | 18 *(pendiente)* |
-| 13 | Escherichia coli β-D-glucuronidasa positivo forman colonias en el medio de cultivo CCA de color: | **a)** | De azul oscuro a violeta | 18 *(pendiente)* |
+| 13 | Escherichia coli β-D-glucuronidasa-glucuronidasa positivo forman colonias en el medio de cultivo CCA de color: | **a)** | De azul oscuro a violeta | 18 *(pendiente)* |
 | 14 | Si realiza un análisis con un factor de dilución 1:100 y el resultado de su NMP es de 14,5, ¿Cual es el resultado… | **b)** | 1450 | 13 *(pendiente)* |
 | 15 | En el recuento de Clostridium perfringens en aguas, las placas se deben incubar con las siguientes condiciones: | **a)** | A 44 °C, en condiciones de anaerobiosis | 18 *(pendiente)* |
 | 16 | Pictograma: llama (GHS02) | **a)** | Inflamable | 20 *(no la cita)* |
@@ -235,7 +235,7 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 
 ## Otras plazas del Ayuntamiento: parte común
 
-Cuestionarios de otras plazas de 2025-2026 con parte común parecida a la nuestra, con plantilla publicada. **No son de nuestra convocatoria**: sirven para ver el estilo del tribunal y para contrastar los temas 1 a 8. Solo se recogen las preguntas de la parte común.
+Cuestionarios de otras plazas de 2024-2026 con parte común parecida a la nuestra, con plantilla publicada. **No son de nuestra convocatoria**: sirven para ver el estilo del tribunal y para contrastar los temas 1 a 8. Solo se recogen las preguntas de la parte común.
 
 ### 1681 · Auxiliar Administrativo (TL), 31/05/2026 · plantilla definitiva
 
@@ -262,7 +262,7 @@ Cuestionarios de otras plazas de 2025-2026 con parte común parecida a la nuestr
 | 27 | De acuerdo con el artículo 52.2 de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local, ponen fin a… | **a)** | Las resoluciones del Pleno, los Alcaldes y las Juntas de Gobierno | 5 |
 | 30 | De acuerdo con el artículo 171 del Real Decreto Legislativo 781/1986, de 18 de abril, por el que se aprueba el texto… | **a)** | Los funcionarios pertenecientes a la Subescala Técnica de Administración Especial | 8 |
 | 31 | El artículo 32 del Estatuto de Autonomía de Aragón enumera las instituciones de la Comunidad Autónoma. Entre ellas no… | **c)** | Las dos respuestas anteriores son correctas | 3 |
-| 32 | El artículo 130.1. B) de la Ley 7/1985, de abril, reguladora de las Bases del Régimen Local, enumera los órganos… | **b)** | El Presidente del órgano para la resolución de las reclamaciones económico-administrativas | 5 |
+| 32 | El artículo 130.1. B) de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local, enumera los órganos… | **b)** | El Presidente del órgano para la resolución de las reclamaciones económico-administrativas | 5 |
 | 33 | De acuerdo con el artículo 107.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido de… | **b)** | De veinte años | 6 |
 | 34 | De acuerdo con el artículo 117.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | Excepto en los casos en que una disposición establezca lo contrario | 4 (Título V) |
 | 35 | De acuerdo con el artículo 40.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **c)** | Las dos respuestas anteriores son correctas | 4 (Título III) |
@@ -285,7 +285,7 @@ Cuestionarios de otras plazas de 2025-2026 con parte común parecida a la nuestr
 
 | Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
 | --- | --- | --- | --- | --- |
-| 1 | Recurso del que carecen el resto de entidades locales (TRLRHL) | **b)** | De los municipios | 6 |
+| 1 | De acuerdo con el artículo 59 TRLRHL, los impuestos constituyen un recurso: | **b)** | De los municipios | 6 |
 | 2 | De acuerdo con el artículo 54 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **b)** | Los procedimientos podrán iniciarse de oficio o a solicitud del interesado | 4 |
 | 3 | De acuerdo con el artículo 1.2 del Estatuto de Autonomía de Aragón los poderes de la Comunidad Autónoma de Aragón emanan: | **a)** | Del pueblo aragonés y de la Constitución | 3 |
 | 4 | De acuerdo con el artículo 10 del Estatuto de Autonomía de Aragón, para que otros territorios o municipios se… | **b)** | La aprobación de las Cortes de Aragón y de las Cortes Generales del Estado | 3 |
@@ -326,7 +326,169 @@ Cuestionarios de otras plazas de 2025-2026 con parte común parecida a la nuestr
 | 12 | De acuerdo con el artículo 3.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido de la… | **c)** | Las respuestas a) y b) son correctas | 6 |
 | 14 | El artículo 121.1 de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local, establece el ámbito de… | **c)** | A los municipios que sean capitales de provincia, capitales autonómicas o sedes de las… | 5 |
 
-Sin plantilla publicada con los nombres probados: **1694** (Enfermería, 19/03/2026), **1607** (Profesor de Música, clarinete, 17/09/2025) y **1610** (Ingeniero Técnico Agrícola, 16/09/2025; el fichero «1610 PLANTILLA…» es de otra plaza). **1655** (Oficial de Policía Local, promoción interna) y **1567** (Oficial Herrero, promoción interna) no tienen parte común con nuestro temario.
+**Ampliación del 29/09/2026 (tema 6).** Un segundo sondeo de zaragoza.es (números 1380-1549 y 1721-1790) encontró 28 cuestionarios más; diez tienen plantilla oficial, leída por píxeles y con la cabecera comprobada. De ellos se recogen aquí las preguntas que citan una norma de la parte común, con el tema asignado por la norma que citan (orientativo). Las reservas no se incluyen.
+
+### 1446 · Policía Local (TL-TLRM), 04/04/2024 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 2 | De acuerdo con el artículo 22.5 de la Constitución española las asociaciones secretas y las de carácter militar: | **b)** | Se prohíben. | 1 |
+| 4 | De acuerdo con el artículo 2.i) de la Ley 5Dl1gg7, de 27 de noviembre, del Gobierno, corresponde interponer el… | **b)** | Al Presidente del Gobierno. | 1 |
+| 5 | De acuerdo con el artículo 45 del Estatuto de Autonomía de Aragón, a efectos de ta vigencia de las leyes… | **a)** | t'a fecna de publicación en el Boletín Oficialde Aragón' | 3 |
+| 6 | De acuerdo con el artículo 62.5 del Estatuto de Autonomia de Aragón, la Administración de Ia Comunidad Autónoma… | **b)** | A la Administración del Estado. | 3 |
+| 7 | De acuerdo con los artículos 58 y 61.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común… | **b)** | Es una forma de iniciación de oficio del procedimiento que no vincula al órgano… | 4 |
+| 8 | De acuerdo con el articulo 96.1 de la Ley 39/2015, de 1 de octubre, del procedimiento Administrativo Común de las… | **a)** | Cuando razones de interés público o la falta de complejidad del procedimiento así lo… | 4 |
+| 9 | De acuerdo con el artículo 13.4D de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local, el… | **a)** | Queda dispensado de prestar nuevos servicios mínimos de los previstos en el artículo… | 5 |
+| 13 | De acuerdo con el artículo 93.f g) del Real Decreto Legislativo 2/2004, de 5 de ma(zo, que aprueba el texto… | **c)** | Están exentos del Impuesto sobre Vehículos de Tracción Mecánica. | 6 |
+| 14 | De acuerdo con el artículo 169.1 del Real Decreto Legislativo2l2O04, de 5 de marzo, que aprueba el texto refundido… | **b)** | Un mes. | 6 |
+| 15 | De acuerdo con el artículo 10.1d) del Real Decreto Legislativo 512016, de 30 de octubre, que aprueba Público, el… | **c)** | Nueve meses. | 7 |
+| 16 | De acuerdo con el artículo46.1d) del Real Decreto Legislativo 5120'15, de 30 de octubre, que aprueba el texto… | **c)** | 40 por 100 del colectivo convocado. | 7 |
+| 17 | De acuerdo con el artículo 59 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **a)** | El dos por ciento de las plazas ofertadas. | 7 |
+| 19 | el artículo 89.2. párrafo primero. del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Sí establece periodo mínimo. Cinco años. | 7 |
+| 20 | De acuerdo con el artículo 97 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **ANULADA** | — | 7 |
+
+### 1458 · Técnica/o Medio Informática (TL), 2024 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 2 | De acuerdo con el artículo 12.1 de la Ley Orgánica 3/2007, de 22 de marzo, para la igualdad efectiva de mujeres y… | **b)** | Cualquier persona. | 2 |
+| 4 | El Estatuto de Autonomía de Aragón consta de un Título preliminar y | **b)** | Nueve títulos, numerados del I al IX. | 3 |
+| 5 | De acuerdo con el artículo 4.3 de la Ley 39/2015, de 30 de octubre, del Procedimiento… | **a)** | Sí, cualquiera que sea el estado del procedimiento. | 4 |
+| 7 | De acuerdo con el artículo 8l de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local, la… | **c)** | Veínticinco años | 5 |
+| 8 | De acuerdo eon el artículo 84.1a) de la Ley 7t1g85,de2de abril, reguladora de las bases del Régimen Local,… | **b)** | Ordenanzas y bandos. | 5 |
+
+### 1497 · Ingeniera/o de Caminos, Canales y Puertos (TL), 15/05/2024 · plantilla provisional
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 2 | La Constitución española consta de: | **d)** | 169 artículos. | 1 |
+| 5 | De acuerdo con el articulo 77.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **b)** | Podrá, mediante resolución motivada, rechazar las pruebas propuestas por los… | 4 |
+| 6 | De acuerdo con el artículo 79 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Locaf, los… | **a)** | Son bienes de dominio público. | 5 |
+| 7 | El artículo 85 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local, enumera las formas de… | **b)** | De la forma más eficiente y sostenible de entre las enumeradas. | 5 |
+| 8 | De acuerdo con el artículo 2 del Real Decreto Legislativo 2/2004, de 5 de ma.zo, que aprueba el texto refundido de… | **b)** | Tasas, contribuciones especiales e impuestos. | 6 |
+| 9 | De acuerdo con el artículo 124.5 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local,… | **d)** | No. | 5 |
+| 10 | El artículo 13.4 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local, ¿exige una… | **a)** | No. | 5 |
+| 16 | El Procedimiento de prevención de riesgos laborales para la realización de trabajos en espacios confinados… | **b)** | Mantener vigilancia en el exterior permanentemente con recurso preventivo, mientras… | 8 |
+| 19 | Según el Procedimiento de prevención de riesgos laborales para la realización de trabajos con materiales con… | **a)** | Los materiales con amianto friables son mucho más peligrosos que los no friables. | 8 |
+| 25 | Según la Norma 6.3-1.C. "Rehabilitación de firmes" de la lnstrucción de Garreteras las obras de renab¡l¡tac¡ón… | **c)** | lndice de Regularidad lnternacional (lRl) indicados en la norma y expresados en… | 8 |
+
+### 1519 · Oficial de Mantenimiento (TL), 23/11/2024 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 2 | De acuerdo con el artículo 69.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | Desde el dia de su presentación. | 4 |
+| 3 | De acuerdo con el artículo 76.1 de la Ley 39/20{5, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | Altrámite de audiencia. | 4 |
+| 6 | De acuerdo con el artículo 5 del Estatuto de Autonomía de Aragón, Aragón estructura su organización territorial en… | **b)** | Municipios, comarcas y provincias | 3 |
+| 7 | De acuerdo con el artículo 72.1 del Estatuto de Autonomía de Aragón, en materia de aguas que discurran… | **c)** | Exclusiva. | 3 |
+| 8 | De acuerdo con el artículo 59 del Real Decreto Legislativo 2/2004, de 5 de mar:zo, que aprueba el texto refundido… | **b)** | Los Ayuntamientos exigirán el Impuesto sobre Actividades Económicas. | 6 |
+| 9 | De acuerdo con el artículo 12.2 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local | **a)** | Principios de mérito y capacidad. | 5 |
+
+### 1521 · Oficial Polivalente de Instalaciones Deportivas (TL) · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 2 | Deacuerdo con el artículo 57 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | Cualquiera que haya sido la forma de iniciaciÓn del procedimiento. | 4 |
+| 3 | De acuerdo con el artículo 88.6 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | Servirá de motivación a la resolución cuando se incorporen altexto de la misma | 4 |
+| 4 | ¿Qué título de la Constitución española tiene como epígrafe "De la Organización Territorial del Estado"? | **b)** | El Título VIIl. | 1 |
+| 5 | El artículo 1.1 del Estatuto de Autonomía de Aragón califica a Aragón como: | **c)** | Publicidad. | 3 |
+| 7 | De acuerdo con el aÉículo 2 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido de… | **a)** | Son un recurso de las entidades locales. | 6 |
+| 8 | El artículo 11'2 de la Ley 7t1g85, de 2.de abril, reguladora de las bases del Régimen Local, no enumera entre los… | **a)** | La personalidad jurídica. | 5 |
+| 29 | ¿Cuál de las siguientes opciones define el "equipo de protección individual" según ta Ley 31t1995? | **b)** | Equipos destinados a proteger al trabajador frente a uno o más riesgos. | 8 |
+
+### 1722 · Oficial Mecánica/o (TL), 29/06/2026 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 1 | Además del Título Preliminar, ¿Cuántos títulos tiene la Constitución española? | **b)** | Diez. | 1 |
+| 2 | El artículo 1.1 del Estatuto de Autonomía de Aragón define a Aragón como | **a)** | Nacionalidad histórica. | 3 |
+| 3 | De acuerdo con el artículo 54 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **c)** | Ninguna de las respuestas anieriores es correcta. | 4 |
+| 5 | Según el artículo 2.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido… | **c)** | Las contribuciones especiales 1 | 6 |
+| 7 | De acuerdo con el artículo 8.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba… | **b)** | De carrera o interinos. | 7 |
+| 8 | De acuerdo con el artículo 39.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el… | **b)** | Los Delegados de Personal y las Juntas de Personal | 7 |
+| 9 | De acuerdo con el artículo 95.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el… | **b)** | Muy graves, graves y leves. | 7 |
+| 10 | Los artículos 6 y 7 de la Constitución dicen que "Su estructura interna y funcionamiento deberán ser democráticos"… | **b)** | A los partidos políticos, sindicatos de trabajadores y asociaciones empresariales | 1 |
+
+### 1724 · Técnica/o Superior Informática/o, 20/03/2026 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 1 | ¿Qué título de la Constitución española tiene como epígrafe "Del Poder Judicial"? | **c)** | El Título Vl. | 1 |
+| 2 | De acuerdo con el artículo 8 de la Ley Orgánica 3t2007, de 22 de marzo, para la igualdad efectiva de mujeres y… | **a)** | Constituye discriminación directa por razÓn de sexo. | 2 |
+| 3 | De acuerdo con el artículo 45 del Estatuto de Autonomía de Aragón, las leyes aragonesas serán promulgadas, en… | **c)** | Regirá la fecha de publicación en el Boletín Oficial de Aragón. | 3 |
+| 4 | De acuerdo con el artículo 70.1 del Estatuto de Autonomía de Aragón, las competencias de la Comunidad Autónoma se… | **c)** | Exclusivas, compartidas y ejecutivas | 3 |
+| 8 | De acuerdo con el artículo 76.1 de la Ley 39/2015, de 1 de de octubre, del procedimiento Administrativo Común de… | **c)** | En cualquier momento del procedimiento anterior al trámite de audiencia. | 4 |
+| 9 | El artículo 84:1 de la Ley 39/2015, de I de de octubre, del Procedimiento Administrativo común de las… | **a)** | La declaración de caducidad. | 4 |
+| 10 | De acuerdo con el artículo 84.1 de la Ley 39/2015, de I de de octubre, del procedimiento Administrativo Común de… | **b)** | Será de un mes. v^\J eo^v-Átd ur^Y uJ^u-5 i-l-t-e^-s- eli. | 4 |
+| 12 | De acuerdo con el artículo 80 de la Ley 7/1985, de 2 de abril Reguladora de las Bases del Régimen Local, son… | **b)** | Entidad pública empresarial local. | 5 |
+| 14 | Según el artículo 2 del Real Decreto Legislativo 2/2004, de 5de marzo, porel quese aprueba el iexto refundido de… | **a)** | Las tasas. | 6 |
+| 15 | Según el artículo 59 del Real Decreto Legislativo 2/2004, de 5 de maÍzo, por el que se aprueba refundido el iexto… | **b)** | El impuesto sobreVehículos de TracciÓn Mecánica | 6 |
+| 16 | De acuerdo con el artículo '12.1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local, el… | **b)** | Es el territorio en que el ayuntamiento ejerce sus competencias. | 5 |
+| 18 | De conformidad con el artícuto 14. a) del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba… | **b)** | Los funcionarios de carrera. | 7 |
+| 41 | Según la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las ROministraciones Públicas,… | **d)** | La vía electrónica. | 4 |
+| 42 | De acuerdo con ta Ley 39/2015, el registro electrónico de apoderamientos tiene por objeto principal: | **b)** | lnscribir las representaciones que otorguen los ciudadanos para actuar ante las… | 4 |
+
+### 1729 · Profesor/a de Danza (TL), 2026 · plantilla provisional
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 1 | Además de un Título Preliminar, la Constitución española consta de: | **c)** | Diez títulos. | 1 |
+| 2 | Los artículos 6 y 7 de la Constitución española dicen que deberán ser democráticos la organización y… | **d)** | Las respuestas a), b) y c) son correctas. | 1 |
+| 4 | El artículo 1.1 de su Estatuto de Autonomía define a Aragón como | **c)** | Nacionalidad histórica. | 3 |
+| 5 | En el artículo 5 de su Estatuto de Autonomía se dice que Aragón estructura su organización territorial | **a)** | En municipios, comarcas y provinctas. | 3 |
+| 6 | El artículo 33 del Estatuto de Autonomía de Aragón atribuye la representación del pueblo aragonés: | **b)** | A las Cortes de Aragón. | 3 |
+| 7 | El artículo 70 del Estatuto de Autonomía de Aragón clasifica las competencias de ta Comunidad Autónoma en: | **b)** | Exclusivas, compartidas y ejecutivas. | 3 |
+| 8 | De acuerdo con el artículo 82 de la Ley 39/2015, de 1 de octubre, del procedimiento Administrativo Común de las… | **a)** | A quince días | 4 |
+| 9 | De acuerdo con el artículo 54 de la Ley 39/2015, de 1 de octubre, del procedimiento Administrativo Común de las… | **c)** | Podrán iniciarse de oficio o a solicitud del interesado. | 4 |
+| 10 | Según el artículo 80 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Locat, son inalienables,… | **c)** | Las respuestas a) y b) son correctas | 5 |
+| 11 | Según el artículo 85 de la Ley 7t1g85, de 2 de abril, Reguladora de las Bases del Régimen Local, es una forma de… | **c)** | Las respuestas a) y b) son correctas. | 5 |
+| 12 | Según los artículos 2 y 3 del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se apruebi el texto… | **c)** | lngresos de derecho privado | 6 |
+| 13 | El artículo 14 a) del Reat Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el la texto… | **b)** | A los funcionarios de carrera. | 7 |
+| 14 | Según el artículo 65 del Real Decreto Legislativo2t2O04, de 5 de marzo, porel que se aprueba el texto refundido de… | **d)** | Ninguna de las respuestas anteriores es correcta | 6 |
+| 15 | Según el artículo 13.2 de la Ley 10/2017, de 30 de noviembre, de régimen especial del municipio de Zarágoza como… | **b)** | Danzando con los espíritus. Una aventura africana. | 5 |
+
+### 1736 · Auxiliar Casa Amparo, 24/03/2026 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 1 | El epígrafe delTítulo VII de la Constitución española es: | **c)** | Economía y Hacienda. | 1 |
+| 2 | Ségún el artículo 33 del Estatuto de Autonomía de Aragón ostenta la representación del pueblo aragonés: | **b)** |  | 3 |
+| 3 | Según el artículo 54 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **b)** | Los procedimientos podrán iniciarse de oficio o a solicitud del interesado. | 4 |
+| 4 | De acuerdo con el artículo 8.1 a) de la Ley 10/2017, de 30 de noviembre, de régimen especial del municipio de… | **b)** | El Pleno es el órgano de máxima representación política de los ciudadanos deZaragoza. | 5 |
+| 5 | Deacuerdoconel artículo5gdel Real DecretoLegislativo 2/2004,de5demaÍzo,porel quese aprueba el texto refundido de la… | **b)** | Es un impuesto que elAyuntamiento exigirá | 6 |
+| 6 | De acuerdo con el artículo 65 del Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto… | **b)** | Por el valor catastral del inmueble. | 6 |
+| 7 | De acuerdo con el artículo 8.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el… | **b)** | El personal laboral es una clase de empleados públicos | 7 |
+| 8 | De acuerdo con el artículo 39.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el… | **c)** | Las respuestas a) y b) son correctas | 7 |
+| 9 | De acuerdo con el artículo 95.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el… | **b)** | Muy graves, graves y leves. | 7 |
+| 10 | Según el artículo 7.3 de la Ley Orgánica 3t2007,de22 demarzo, para la igualdad efectiva de mujeres y hombres, se… | **a)** | El acoso sexual y el acoso por razón de sexo. | 2 |
+
+### 1779 · Técnica/o Medio de Gestión, 18/03/2026 · plantilla definitiva
+
+| Nº | Pregunta | Oficial | Respuesta | Nuestro tema |
+| --- | --- | --- | --- | --- |
+| 1 | Ef artículo 100 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones… | **c)** | Deberán obtener el consentimiento del mismo o, en su defecto, la oportuna… | 4 |
+| 2 | El articulo 103.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **a)** | La multa coercitiva es compatible con las sanciones que puedan imponerse con tal… | 4 |
+| 3 | Ef artículo 109.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **b)** | Mientras no haya transcurrido el plazo de prescripciÓn. | 4 |
+| 4 | De acuerdo con el artículo 122.1 de ta Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **c)** | De un mes. | 4 |
+| 5 | De acuerdo con el artículo 125.2 de la Ley 39/2015, de 1 de octubre, Ael proceOimiento Administrativo Común de las… | **c)** | De cuatro años o de tres meses según la causa que motiva el recurso. | 4 |
+| 6 | De acuerdo con el artículo 112.3 de la Ley 39/2015, de 1 de octubre, del procedimiento Administrativo Común de las… | **d)** | No cabrá recúrso en vía administrativa. | 4 |
+| 7 | De acuerdo con el artículo 116 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **b)** | Es causa de inadmisión del recurso. | 4 |
+| 16 | E¡ artículo 59.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido… | **a)** | Al siete por ciento de las vacantes. | 7 |
+| 18 | Ef artículo 70.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido… | **c)** | De tres años. | 7 |
+| 20 | Según los artículos 79 a 83 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local: | **b)** | Los bienes de dominio público son inembargables. | 5 |
+| 21 | Según los artículos 79 a 83 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del… | **a)** | Por más de veinticinco años. | 5 |
+| 23 | El artículo 85 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del Régimen Local, enumera las formas de… | **b)** | La concesión de servicios. | 5 |
+| 24 | De acuerdo con el artículo 59.1 del Real Decreto Legislativo 2l2OO4, de 5 de marzo, por el que se aprueba el texto… | **d)** | Ninguna de las respuestas anteriores es correcta. | 6 |
+| 37 | Conforme a lo previsto en el artículo 14 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo… | **c)** | Las personas jurídicas y las entidades sin personalidad jurídica para la realización… | 4 |
+| 38 | Respecto al cómputo del plazo máximo en el que la Administración debe notificar la resolución expresa en los… | **a)** | Desde la fecha del acuerdo de iniciación en los procedimientos iniciados de oficio. | 4 |
+| 39 | De acuerdo con el artículo 83.1 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las… | **d)** | El órgano al que corresponda la resolución del procedimiento. | 4 |
+| 41 | Tal y como señala el artículo 41 de la Ley 39/2015, de 1 de octubre, del procedimiento Administrativo Común de las… | **c)** | Se practicarán preferentemente por medios electrónicos y, en todo caso, cuando el… | 4 |
+| 42 | Las medidas provisionales, conforme dispone el artículo 56.5 de la Ley 39/2015, de 1 de octubre, del Procedimiento… | **b)** | Podrán ser alzadas o modificadas durante la tramitación del procedimiento, de oficio… | 4 |
+| 43 | En materia de recursos, el aÉículo 123.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo… | **d)** | La desestimación presunta del recurso de reposición interpuesto. | 4 |
+| 44 | Señale la respuesta incorrecta respecto a los actos firmes en vía administrativa contra los que puede interponerse… | **b)** | Cuando en la resolución hayan podido afectar en alguna medida documentos o… | 4 |
+| 46 | A tenor de lo dispuesto en el artículo 96.3 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo… | **b)** | Si el órgano competente para la tramitación aprecia que no concurren razones de… | 4 |
+| 48 | Tal y como dispone el artículo 107 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de… | **d)** | Favorables para los interesados, que sean anulables conforme a lo dispuesto en el… | 4 |
+
+Sin plantilla publicada con los nombres probados: **1436** (Ingeniera/o Industrial, 14/03/2025), **1448** (Maestra/o Mantenimiento de Instalaciones Deportivas, 28/11/2024: repite literalmente las #5-7 del 1246, examinado el mismo día), **1459** (Técnica/o Medio de Servicios Públicos, 28/11/2024), **1756** (Técnica/o Medio Analista, 18/03/2026), **1694** (Enfermería, 19/03/2026), **1607** (Profesor de Música, clarinete, 17/09/2025) y **1610** (Ingeniero Técnico Agrícola, 16/09/2025; el fichero «1610 PLANTILLA…» es de otra plaza). **1655** (Oficial de Policía Local, promoción interna) y **1567** (Oficial Herrero, promoción interna) no tienen parte común con nuestro temario.
 
 
 ---
