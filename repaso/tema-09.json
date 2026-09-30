@@ -1,0 +1,786 @@
+{
+  "tema": 9,
+  "titulo": "Seguridad en el laboratorio de microbiología. Clasificación de microorganismos según el riesgo. Vías de infección. Medidas de prevención.",
+  "generadoDe": "temas/tema-09.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-30",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Nuestra plaza lo ha preguntado dos veces, las dos por el RD 664/1997: la definicion del grupo 3 (1233 #12) y el nivel de contencion para Legionella (1322, segundo ejercicio). Otras plazas repiten la definicion del grupo 3 (1694), la norma (1484) y el concepto de riesgo biologico (1736). El nucleo recoge las cuatro definiciones del art. 3, los agentes del agua en el anexo II, la contencion del art. 15 y el anexo IV, las vias de entrada y las obligaciones con cifra: aseo, notificacion, conservacion de listas y comunicacion de accidentes.",
+  "flashcards": [
+    {
+      "id": "t09-f01",
+      "anverso": "¿Qué norma regula la protección de los trabajadores frente a los agentes biológicos, y qué documento la desarrolla?",
+      "reverso": "El **Real Decreto 664/1997, de 12 de mayo** (1484 #37), desarrollo de la **Ley 31/1995** de Prevención de Riesgos Laborales. El INSST mantiene una **Guía técnica no vinculante** (disposición final 1.ª), actualizada en **2024**.",
+      "fuente": "RD 664/1997; disp. final 1.ª",
+      "etiquetas": ["encuadre", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f02",
+      "anverso": "Art. 2.a: ¿qué son los agentes biológicos?",
+      "reverso": "**Microorganismos**, con inclusión de los **genéticamente modificados**, **cultivos celulares** y **endoparásitos humanos**, susceptibles de originar cualquier tipo de **infección, alergia o toxicidad**.",
+      "fuente": "RD 664/1997, art. 2.a",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f03",
+      "anverso": "Art. 2.b y 2.c: ¿qué es un microorganismo, y qué es un cultivo celular?",
+      "reverso": "- **Microorganismo:** toda **entidad microbiológica, celular o no**, capaz de **reproducirse o de transferir material genético**.\n- **Cultivo celular:** el resultado del crecimiento *in vitro* de **células obtenidas de organismos multicelulares**.",
+      "fuente": "RD 664/1997, art. 2.b y 2.c",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t09-f04",
+      "anverso": "¿Qué diferencia hay entre una actividad con intención deliberada y otra sin ella? ¿Dónde está un laboratorio de microbiología?",
+      "reverso": "- **Con intención deliberada:** se manipulan agentes a propósito, como en un **laboratorio de diagnóstico microbiológico**.\n- **Sin intención deliberada:** la exposición es incidental. Se aplican los **arts. 5 a 13**, salvo que la evaluación los haga innecesarios (art. 4.5).\n\nEl **anexo I** lista actividades del segundo tipo, **excluyendo expresamente los laboratorios de diagnóstico microbiológico**.",
+      "fuente": "RD 664/1997, art. 4.5 y anexo I",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t09-f05",
+      "anverso": "¿En cuántos grupos se clasifican los agentes biológicos, y con qué criterio?",
+      "reverso": "En **cuatro grupos**, **en función del riesgo de infección** (art. 3.1). El **anexo II** lista los agentes de los **grupos 2, 3 y 4**.",
+      "fuente": "RD 664/1997, art. 3",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f06",
+      "anverso": "Definición literal del **grupo 1**.",
+      "reverso": "Aquel que **resulta poco probable que cause una enfermedad en el hombre**.",
+      "fuente": "RD 664/1997, art. 3.1.a",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f07",
+      "anverso": "Definición literal del **grupo 2**.",
+      "reverso": "Aquel que **puede causar una enfermedad** en el hombre y **puede suponer un peligro para los trabajadores**, siendo **poco probable que se propague a la colectividad** y **existiendo generalmente profilaxis o tratamiento eficaz**.",
+      "fuente": "RD 664/1997, art. 3.1.b",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f08",
+      "anverso": "Definición literal del **grupo 3**. ¿Ha caído?",
+      "reverso": "Aquel que **puede causar una enfermedad grave** en el hombre y **presenta un serio peligro para los trabajadores**, **con riesgo de que se propague a la colectividad** y **existiendo generalmente una profilaxis o tratamiento eficaz**.\n\nSí: **1233 #12** en nuestra plaza (plantilla definitiva: b, grupo 3) y **1694 #33** en Enfermería.",
+      "fuente": "RD 664/1997, art. 3.1.c",
+      "etiquetas": ["clasificacion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f09",
+      "anverso": "Definición literal del **grupo 4**.",
+      "reverso": "Aquel que, **causando una enfermedad grave** en el hombre, **supone un serio peligro para los trabajadores**, **con muchas probabilidades de que se propague a la colectividad** y **sin que exista generalmente una profilaxis o un tratamiento eficaz**.",
+      "fuente": "RD 664/1997, art. 3.1.d",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f10",
+      "anverso": "¿Qué dos palabras clave separan el grupo 3 del grupo 4?",
+      "reverso": "- **Propagación:** en el 3, **con riesgo**; en el 4, **con muchas probabilidades**.\n- **Profilaxis o tratamiento eficaz:** el 3 **generalmente lo tiene**; el 4 **generalmente no**.\n\nLa enfermedad es **grave** en los dos.",
+      "fuente": "RD 664/1997, art. 3.1",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f11",
+      "anverso": "¿Y qué separa el grupo 2 del grupo 3?",
+      "reverso": "En el 2 la enfermedad es **sin más** («puede causar una enfermedad»), el peligro **«puede suponer»** y la propagación es **poco probable**. En el 3 la enfermedad es **grave**, el peligro **serio** y hay **riesgo** de propagación. **Los dos tienen, en general, profilaxis o tratamiento.**",
+      "fuente": "RD 664/1997, art. 3.1",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t09-f12",
+      "anverso": "Un agente no figura en la lista del anexo II. ¿Es del grupo 1?",
+      "reverso": "**No.** Los agentes no clasificados en los grupos 2 a 4 **no están implícitamente clasificados en el grupo 1** (nota introductoria 3). El empresario, **previa consulta a los representantes**, lo **asimila provisionalmente** a un grupo con las definiciones del art. 3, y **en caso de duda entre dos grupos, se toma el de peligrosidad superior** (art. 4.3.a).",
+      "fuente": "RD 664/1997, art. 4.3.a y anexo II, nota 3",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f13",
+      "anverso": "¿Sobre qué trabajadores se basa la clasificación del anexo II, y cómo se tiene en cuenta a los especialmente sensibles?",
+      "reverso": "Sobre el efecto en **trabajadores sanos**. El riesgo adicional de los especialmente sensibles (**patología previa, medicación, trastornos inmunitarios, embarazo o lactancia**) se considera **en la evaluación de riesgos** (nota 2 y art. 4.3.f).",
+      "fuente": "RD 664/1997, anexo II, nota 2",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t09-f14",
+      "anverso": "¿Qué significan las notas **A, D, T y V** del anexo II?",
+      "reverso": "- **A:** posibles efectos **alérgicos**.\n- **D:** la lista de expuestos se conserva **más de diez años** desde la última exposición.\n- **T:** producción de **toxinas**.\n- **V:** **vacuna eficaz disponible** y registrada en la UE.",
+      "fuente": "RD 664/1997, anexo II, nota 10",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f15",
+      "anverso": "¿Qué indican los dos asteriscos **(\\*\\*)** junto a un agente del grupo 3?",
+      "reverso": "Que puede presentar un **riesgo de infección limitado**, porque **normalmente no es infeccioso a través del aire**. Las autoridades sanitarias pueden valorar si se prescinde de algunas medidas de contención (nota 8). Ejemplos: ***E. coli* verocitotóxica**, ***Salmonella typhi***, los **virus de las hepatitis B y C**, el **VIH** y los **priones**.",
+      "fuente": "RD 664/1997, anexo II, nota 8",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f16",
+      "anverso": "¿Qué pasa con un virus aislado en humanos que aún no está en el anexo II?",
+      "reverso": "Las autoridades sanitarias velan por que se clasifique **como mínimo en el grupo 2**, salvo que puedan demostrar que es **improbable que provoque enfermedad** (nota 7).",
+      "fuente": "RD 664/1997, anexo II, nota 7",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t09-f17",
+      "anverso": "¿Qué tipo de agentes hay en el grupo 4?",
+      "reverso": "**Solo virus** (el **Ébola**, por ejemplo). En el anexo II vigente **ninguna bacteria, hongo ni parásito** llega al grupo 4.",
+      "fuente": "RD 664/1997, anexo II (Orden TES/1287/2021)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t09-f18",
+      "anverso": "¿De qué grupo son ***Legionella*** y ***E. coli***? ¿Y la *E. coli* O157:H7?",
+      "reverso": "- ***Legionella pneumophila*** y *Legionella* spp.: **grupo 2**.\n- ***E. coli*** (salvo cepas no patógenas): **grupo 2**.\n- ***E. coli* verocitotóxica** (O157:H7 u O103): **grupo 3 (\\*\\*)**, con nota **T**.",
+      "fuente": "RD 664/1997, anexo II",
+      "etiquetas": ["clasificacion", "agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f19",
+      "anverso": "¿De qué grupo son *Pseudomonas aeruginosa*, los enterococos y *Clostridium perfringens*?",
+      "reverso": "Los tres, del **grupo 2**. *Pseudomonas aeruginosa* y *Clostridium perfringens* llevan la nota **T** (toxinas).",
+      "fuente": "RD 664/1997, anexo II",
+      "etiquetas": ["clasificacion", "agua"]
+    },
+    {
+      "id": "t09-f20",
+      "anverso": "¿De qué grupo son *Salmonella typhi* y *Mycobacterium tuberculosis*? ¿Y las demás *Salmonella*?",
+      "reverso": "- ***Salmonella typhi***: **grupo 3 (\\*\\*)**, V.\n- ***Mycobacterium tuberculosis***: **grupo 3**, V.\n- ***Salmonella enteritidis***, ***typhimurium*** y otras variedades: **grupo 2**.",
+      "fuente": "RD 664/1997, anexo II",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t09-f21",
+      "anverso": "Parásitos del agua: ¿de qué grupo son *Cryptosporidium*, *Giardia* y *Naegleria fowleri*?",
+      "reverso": "***Cryptosporidium parvum*** y ***Giardia lamblia***: **grupo 2**. ***Naegleria fowleri***, la ameba de aguas templadas: **grupo 3**.",
+      "fuente": "RD 664/1997, anexo II",
+      "etiquetas": ["clasificacion", "agua"]
+    },
+    {
+      "id": "t09-f22",
+      "anverso": "¿Qué riesgo son los **priones**, y de qué grupo?",
+      "reverso": "Son **riesgo biológico** (1484 R2). El anexo II clasifica los agentes de las enfermedades por priones (**Creutzfeldt-Jakob** y su variante, entre otros) en el **grupo 3 (\\*\\*)**.",
+      "fuente": "RD 664/1997, anexo II",
+      "etiquetas": ["clasificacion", "examen"]
+    },
+    {
+      "id": "t09-f23",
+      "anverso": "¿Cuáles son los cinco eslabones de la **cadena de transmisión**?",
+      "reverso": "**Reservorio**, **salida del reservorio**, **mecanismo de transmisión**, **vía de entrada** y **huésped susceptible**. **Romper cualquiera** impide la transmisión, y la prevención es **más eficaz cuanto más al inicio** de la cadena.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f24",
+      "anverso": "¿Qué es el **reservorio**, y cuáles son los habituales?",
+      "reverso": "El **hábitat donde el agente encuentra condiciones para vivir y multiplicarse**: los **seres humanos**, los **animales** y el **medioambiente** (plantas, suelo, **agua**).",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"]
+    },
+    {
+      "id": "t09-f25",
+      "anverso": "Mecanismo de transmisión: ¿qué formas hay de transmisión **directa** y cuáles de **indirecta**?",
+      "reverso": "- **Directa:** **contacto con la piel** y **gotas** proyectadas al hablar, toser o estornudar.\n- **Indirecta:** por **vehículos o fómites** (utensilios, **instrumentos cortantes o punzantes**, agua, alimentos, sangre), por **vectores** (un insecto) o **por el aire**, en **aerosoles** con microorganismos viables que se mantienen en suspensión.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f26",
+      "anverso": "¿Cuáles son las cinco **vías de entrada**?",
+      "reverso": "**Respiratoria**, **dérmica** (piel **no intacta**), **membranas mucosas**, **parenteral** y **digestiva**.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f27",
+      "anverso": "¿Por qué vía entra el agente en cada caso: un pinchazo con una aguja, pipetear con la boca, centrifugar sin cierre, una salpicadura en el ojo?",
+      "reverso": "- **Pinchazo o corte:** vía **parenteral**.\n- **Pipetear con la boca:** vía **digestiva**.\n- **Aerosoles** al centrifugar, agitar o abrir envases: vía **respiratoria**.\n- **Salpicadura en ojo, nariz o boca:** vía de las **mucosas**.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f28",
+      "anverso": "¿Quién es el **huésped susceptible**, y de qué depende la gravedad?",
+      "reverso": "La **persona trabajadora**, **último eslabón**. La gravedad depende de sus características o estado biológico: **patologías previas, trastornos inmunitarios, medicación o embarazo**.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["vias"]
+    },
+    {
+      "id": "t09-f29",
+      "anverso": "Art. 4: ¿qué se evalúa, y cuándo hay que repetir la evaluación?",
+      "reverso": "Los riesgos que no se han podido evitar, determinando la **naturaleza, el grado y la duración** de la exposición. Se repite **periódicamente**, **cada vez que cambien las condiciones** que afecten a la exposición y **cuando se detecte en un trabajador una infección o enfermedad** que se sospeche de origen laboral.",
+      "fuente": "RD 664/1997, art. 4.1 y 4.2",
+      "etiquetas": ["prevencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f30",
+      "anverso": "Art. 5: ¿en qué consiste la **sustitución**?",
+      "reverso": "En **evitar los agentes biológicos peligrosos sustituyéndolos** por otros que **no lo sean, o lo sean en menor grado**, cuando la naturaleza de la actividad lo permita.",
+      "fuente": "RD 664/1997, art. 5",
+      "etiquetas": ["prevencion"]
+    },
+    {
+      "id": "t09-f31",
+      "anverso": "Art. 6: si la exposición no puede evitarse, ¿cómo se reduce? Cita al menos cinco medidas.",
+      "reverso": "Se reduce **al nivel más bajo posible**, en particular con:\n- procedimientos y medidas técnicas que **eviten o minimicen la liberación**;\n- **el menor número posible de trabajadores expuestos**;\n- **protección colectiva** o, en su defecto, **individual**;\n- residuos en **recipientes seguros e identificables**;\n- **señal de peligro biológico** (anexo III);\n- **planes frente a accidentes**.",
+      "fuente": "RD 664/1997, art. 6.1",
+      "etiquetas": ["prevencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f32",
+      "anverso": "Art. 7.1: ¿qué medidas higiénicas debe adoptar el empresario?",
+      "reverso": "- **Prohibir comer, beber o fumar** en las zonas con riesgo.\n- Facilitar **prendas de protección**.\n- **Retretes y cuartos de aseo** con **productos para la limpieza ocular y antisépticos para la piel**.\n- Un **lugar para guardar los EPI**, que se limpian y comprueban **después de cada uso**.\n- **Procedimientos** para manipular **muestras de origen humano o animal**.",
+      "fuente": "RD 664/1997, art. 7.1",
+      "etiquetas": ["prevencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f33",
+      "anverso": "¿Cuánto tiempo de aseo tiene el trabajador, y cuándo?",
+      "reverso": "**Diez minutos antes de la comida** y **otros diez antes de abandonar el trabajo**, **dentro de la jornada laboral**.",
+      "fuente": "RD 664/1997, art. 7.2",
+      "etiquetas": ["prevencion", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f34",
+      "anverso": "¿Qué se hace con la ropa de trabajo y los EPI contaminados?",
+      "reverso": "Al salir, el trabajador **se los quita** y los guarda **separados de otras prendas**. **El empresario se encarga de lavarlos, descontaminarlos** y, si hace falta, **destruirlos**. **Queda rigurosamente prohibido que el trabajador se los lleve a casa** para lavarlos. **El coste nunca recae en los trabajadores.**",
+      "fuente": "RD 664/1997, art. 7.3 a 7.5",
+      "etiquetas": ["prevencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f35",
+      "anverso": "Art. 15.1.b: ¿en qué nivel de contención se manipula un agente de cada grupo?",
+      "reverso": "**Por lo menos** en el **nivel 2** para el **grupo 2**, en el **nivel 3** para el **grupo 3** y en el **nivel 4** para el **grupo 4**. Por eso *Legionella* se analiza en **nivel 2** (1322, 2.º ejercicio, supuesto 1, #5).",
+      "fuente": "RD 664/1997, art. 15.1.b",
+      "etiquetas": ["contencion", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f36",
+      "anverso": "Art. 15.1.c: ¿qué nivel adopta un laboratorio cuando no sabe si la muestra lleva patógenos?",
+      "reverso": "**Al menos el nivel 2** de contención, si no pretende cultivarlos ni concentrarlos. Si se sabe o sospecha que hacen falta, **los niveles 3 y 4**.",
+      "fuente": "RD 664/1997, art. 15.1.c",
+      "etiquetas": ["contencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f37",
+      "anverso": "Anexo IV: ¿en qué niveles hay que manejar el material infectado en **cabina de seguridad biológica**?",
+      "reverso": "- **Nivel 2:** **cuando proceda**.\n- **Nivel 3:** **sí, cuando la infección se propague por el aire**.\n- **Nivel 4:** **sí**.",
+      "fuente": "RD 664/1997, anexo IV, medida 3",
+      "etiquetas": ["contencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f38",
+      "anverso": "Anexo IV: ¿qué dice de los **filtros HEPA** y de la **presión negativa**?",
+      "reverso": "- **HEPA:** **no** en el nivel 2; **a la salida** del aire en el 3; **a la entrada y a la salida** en el 4.\n- **Presión negativa:** **no** en el 2; **aconsejable** en el 3; **sí** en el 4.",
+      "fuente": "RD 664/1997, anexo IV, medidas 4 y 5",
+      "etiquetas": ["contencion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f39",
+      "anverso": "Anexo IV: ¿qué medidas son **«sí»** ya en el nivel 2?",
+      "reverso": "- **Superficies impermeables y de fácil limpieza** en la **mesa de trabajo y el suelo**.\n- **Procedimientos de desinfección especificados**.\n- **Almacenamiento de seguridad** de los agentes.\n\nEl **acceso restringido** al personal designado es **aconsejable** en el 2, **sí** en el 3 y **por esclusa** en el 4.",
+      "fuente": "RD 664/1997, anexo IV",
+      "etiquetas": ["contencion"]
+    },
+    {
+      "id": "t09-f40",
+      "anverso": "¿Es lo mismo el nivel de contención que el grupo del agente?",
+      "reverso": "**No debe equipararse sin más**, advierte la guía del INSST: influyen también el **volumen**, la **concentración**, los procedimientos y la **generación de bioaerosoles**. El **nivel de bioseguridad 3** es adecuado para agentes del grupo 3 transmisibles por vía inhalatoria **y para grandes volúmenes o concentraciones del grupo 2**. El RD fija el **mínimo**: «**por lo menos**» el nivel del grupo.",
+      "fuente": "Guía técnica INSST (2024), apéndice 8; RD 664/1997, art. 15.1.b",
+      "etiquetas": ["contencion"]
+    },
+    {
+      "id": "t09-f41",
+      "anverso": "Art. 8: ¿cuándo se ofrece la **vigilancia de la salud**, y quién la hace?",
+      "reverso": "La hace **personal sanitario competente**. Se ofrece **antes de la exposición**, **a intervalos regulares** después y **cuando se detecte una infección** en un compañero con exposición similar. Se lleva un **historial médico individual**.",
+      "fuente": "RD 664/1997, art. 8",
+      "etiquetas": ["vigilancia"]
+    },
+    {
+      "id": "t09-f42",
+      "anverso": "¿Qué dice el RD sobre las **vacunas**?",
+      "reverso": "Si hay **vacunas eficaces**, **se ponen a disposición** de los trabajadores, informándoles de las **ventajas e inconvenientes** de vacunarse **y de no hacerlo**. El **ofrecimiento y la aceptación constan por escrito**, y la vacunación **no les acarrea gasto alguno** (anexo VI). Son medidas de **prevención primaria** (art. 8.3).",
+      "fuente": "RD 664/1997, art. 8.3 y anexo VI",
+      "etiquetas": ["vigilancia"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f43",
+      "anverso": "Art. 9: ¿de quién se lleva lista, y cuánto se conserva?",
+      "reverso": "De los **trabajadores expuestos a agentes de los grupos 3 y 4**, con el tipo de trabajo, el agente y un **registro de exposiciones, accidentes e incidentes**. La lista y los historiales médicos se conservan **al menos diez años** tras el fin de la exposición, y **hasta cuarenta** si la infección puede ser **persistente o latente**, de **incubación prolongada**, con **recurrencias** o con **secuelas** a largo plazo.",
+      "fuente": "RD 664/1997, art. 9",
+      "etiquetas": ["documentacion", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f44",
+      "anverso": "Art. 10: ¿qué hay que notificar a la autoridad laboral, y con qué antelación?",
+      "reverso": "La **utilización por primera vez** de agentes de los **grupos 2, 3 o 4**, **con treinta días de antelación** al inicio de los trabajos. Los laboratorios de **diagnóstico** con agentes del grupo 4 solo hacen la **notificación inicial**.",
+      "fuente": "RD 664/1997, art. 10",
+      "etiquetas": ["documentacion", "cifras"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f45",
+      "anverso": "Art. 12.4: un trabajador sufre un accidente con un agente biológico. ¿A quién lo comunica, y cuándo?",
+      "reverso": "**Inmediatamente**, a **su superior jerárquico directo** y a **la persona o personas responsables de prevención** en la empresa. A su vez, el empresario informa **inmediatamente a las autoridades laboral y sanitaria** si el accidente ha podido liberar un agente capaz de causar una infección grave (art. 11.3).",
+      "fuente": "RD 664/1997, arts. 11.3 y 12.4",
+      "etiquetas": ["documentacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f46",
+      "anverso": "Art. 12: ¿cuándo se imparte la formación, y qué instrucciones escritas hay que dar?",
+      "reverso": "Se imparte **al incorporarse** a un trabajo con agentes biológicos, se **adapta** a los nuevos riesgos y se **repite** periódicamente si hace falta. Hay **instrucciones escritas** para **accidentes o incidentes graves** y para **manipular agentes del grupo 4**.",
+      "fuente": "RD 664/1997, art. 12.2 y 12.3",
+      "etiquetas": ["documentacion"]
+    },
+    {
+      "id": "t09-f47",
+      "anverso": "Buenas prácticas de la guía INSST en todo laboratorio (nivel de bioseguridad 1): cita cinco.",
+      "reverso": "- **Prohibido pipetear con la boca**: dispositivos mecánicos.\n- **No comer, beber, fumar, maquillarse ni llevar lentes de contacto.**\n- **Descontaminar las superficies al menos una vez al día** y tras cualquier derrame.\n- **Lavarse las manos** tras manipular material contaminado, al quitarse los guantes y antes de salir.\n- **No salir con la ropa de trabajo ni con los EPI**; doble taquilla.\n- **Cubrir las heridas**; sin joyas que rasguen los guantes; **sin auriculares**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 8",
+      "etiquetas": ["practicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t09-f48",
+      "anverso": "¿Qué añade el nivel de bioseguridad 2 de la guía INSST?",
+      "reverso": "- En la puerta, la **señal de peligro biológico**, el nivel, los agentes y los responsables.\n- **Solo personal autorizado**; **no entran las personas especialmente sensibles**.\n- Las técnicas con **bioaerosoles** (centrifugar, mezclar, abrir envases, asas calientes) **en cabina**, siempre que se pueda: de **clase I o, preferiblemente, II**.\n- **Lavaojos y duchas** alcanzables **en menos de 15 segundos**.",
+      "fuente": "Guía técnica INSST (2024), apéndice 8",
+      "etiquetas": ["practicas"]
+    },
+    {
+      "id": "t09-f49",
+      "anverso": "Mirando el esquema: ¿qué criterio cambia al pasar del grupo 3 al 4, y cuál al pasar del 2 al 3?",
+      "reverso": "- **Del 2 al 3:** la enfermedad se vuelve **grave**, el peligro **serio** y la propagación pasa de **improbable** a **posible**. **Sigue habiendo tratamiento.**\n- **Del 3 al 4:** la propagación se vuelve **muy probable** y **ya no hay, en general, profilaxis ni tratamiento**.\n\nEl nivel de contención mínimo **acompaña al grupo** (art. 15.1.b).",
+      "fuente": "RD 664/1997, arts. 3.1 y 15.1.b",
+      "etiquetas": ["figura", "clasificacion"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "grupos-riesgo-biologico"
+      }
+    },
+    {
+      "id": "t09-f50",
+      "anverso": "Mirando el esquema: ¿dónde actúa cada una de estas medidas: la cabina, los guantes, la vacuna, prohibir pipetear con la boca?",
+      "reverso": "- **Cabina de seguridad biológica:** sobre el **mecanismo**, porque retiene los **aerosoles**.\n- **Guantes y cubrir las heridas:** sobre la **vía dérmica**.\n- **Prohibir pipetear con la boca:** sobre la **vía digestiva**.\n- **Vacuna:** sobre el **huésped**, que deja de ser **susceptible**.",
+      "fuente": "Guía técnica INSST (2024)",
+      "etiquetas": ["figura", "vias"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "cadena-transmision"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t09-q01",
+      "pregunta": "Un agente biológico que puede causar una enfermedad grave en las personas, con riesgo de que se propague a la colectividad, para el que se dispone de medidas de profilaxis o tratamiento eficaces es:",
+      "opciones": ["Un agente biológico del grupo 2.", "Un agente biológico del grupo 3.", "Un agente biológico del grupo 4."],
+      "correcta": 1,
+      "explicacion": "Art. 3.1.c del RD 664/1997. Pregunta literal de nuestra plaza, 1233 #12 (plantilla definitiva: b).",
+      "fuente": "RD 664/1997, art. 3.1.c",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q02",
+      "pregunta": "Según el RD 664/1997, de protección de los trabajadores contra riesgos relacionados con la exposición a agentes biológicos, un agente patógeno que pueda causar una enfermedad grave en el hombre y presente un serio peligro para los trabajadores, con riesgo de que se propague a la colectividad, para el que existen generalmente una profilaxis o tratamiento eficaz, se clasifica como:",
+      "opciones": ["Agente biológico del grupo 1.", "Agente biológico del grupo 2.", "Agente biológico del grupo 3."],
+      "correcta": 2,
+      "explicacion": "Art. 3.1.c. Pregunta de 1694 #33 (Enfermería, 2026, sin plantilla publicada), reducida a tres opciones: se quita «grupo 4».",
+      "fuente": "RD 664/1997, art. 3.1.c",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q03",
+      "pregunta": "Indica en cuál de los siguientes Reales Decretos se establecen las disposiciones mínimas aplicables a las actividades en las que los trabajadores estén o puedan estar expuestos a agentes biológicos debido a la naturaleza de su actividad laboral:",
+      "opciones": ["RD 487/1997, de 14 de abril.", "RD 664/1997, de 12 de mayo.", "RD 286/2006, de 10 de marzo."],
+      "correcta": 1,
+      "explicacion": "El RD 664/1997 regula la exposición a agentes biológicos. El 487/1997 es el de manipulación manual de cargas, y el 286/2006, el del ruido. Pregunta de 1484 #37 (sin plantilla publicada).",
+      "fuente": "RD 664/1997, art. 1",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q04",
+      "pregunta": "De los siguientes riesgos laborales, ¿cuál es un riesgo biológico?",
+      "opciones": ["Salpicadura de sangre o fluido a la piel.", "Posturas forzadas.", "Uso de mascarilla."],
+      "correcta": 0,
+      "explicacion": "La sangre y los fluidos pueden llevar agentes biológicos. Las posturas forzadas son un riesgo ergonómico, y la mascarilla es un equipo de protección. Pregunta literal de 1736 #44 (plantilla definitiva: a).",
+      "fuente": "Guía técnica INSST (2024), cadena de transmisión"
+    },
+    {
+      "id": "t09-q05",
+      "pregunta": "Según la normativa vigente en materia de prevención de riesgos, los «priones» se consideran agente causal de:",
+      "opciones": ["Riesgos físicos.", "Riesgos químicos.", "Riesgos biológicos."],
+      "correcta": 2,
+      "explicacion": "El anexo II del RD 664/1997 incluye los agentes de las enfermedades por priones (Creutzfeldt-Jakob y su variante, entre otros) en el grupo 3 (**). Pregunta de 1484 R2 (actividad mortuoria; sin plantilla publicada).",
+      "fuente": "RD 664/1997, anexo II"
+    },
+    {
+      "id": "t09-q06",
+      "pregunta": "Un laboratorio va a realizar determinaciones de Legionella. El nivel de contención mínimo exigido por el RD 664/1997 es:",
+      "opciones": ["El nivel 2.", "El nivel 3.", "El nivel 4."],
+      "correcta": 0,
+      "explicacion": "Legionella es del grupo 2 (anexo II), y un agente del grupo 2 se manipula por lo menos en el nivel 2 (art. 15.1.b). Adaptada de 1322, segundo ejercicio, supuesto 1, #5 (plantilla definitiva: «laboratorio tipo 2»).",
+      "fuente": "RD 664/1997, art. 15.1.b y anexo II",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q07",
+      "pregunta": "Según el RD 664/1997, un agente que causa una enfermedad grave, supone un serio peligro para los trabajadores, tiene muchas probabilidades de propagarse a la colectividad y para el que no existe generalmente profilaxis ni tratamiento eficaz es del:",
+      "opciones": ["Grupo 2.", "Grupo 3.", "Grupo 4."],
+      "correcta": 2,
+      "explicacion": "Art. 3.1.d. Lo que lo separa del grupo 3 es la propagación («muchas probabilidades») y la falta de profilaxis o tratamiento.",
+      "fuente": "RD 664/1997, art. 3.1.d",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q08",
+      "pregunta": "Un agente que puede causar una enfermedad en el hombre y suponer un peligro para los trabajadores, siendo poco probable que se propague a la colectividad y existiendo generalmente profilaxis o tratamiento eficaz, es del:",
+      "opciones": ["Grupo 1.", "Grupo 2.", "Grupo 3."],
+      "correcta": 1,
+      "explicacion": "Art. 3.1.b. La clave es «poco probable que se propague a la colectividad».",
+      "fuente": "RD 664/1997, art. 3.1.b",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q09",
+      "pregunta": "El agente biológico del grupo 1 es aquel que:",
+      "opciones": ["Resulta poco probable que cause una enfermedad en el hombre.", "Puede causar una enfermedad leve, sin riesgo de propagación a la colectividad.", "No figura en la lista del anexo II del RD 664/1997."],
+      "correcta": 0,
+      "explicacion": "Art. 3.1.a. No figurar en el anexo II no convierte a un agente en grupo 1 (nota introductoria 3).",
+      "fuente": "RD 664/1997, art. 3.1.a"
+    },
+    {
+      "id": "t09-q10",
+      "pregunta": "Según el anexo II del RD 664/1997, Legionella pneumophila es un agente biológico del:",
+      "opciones": ["Grupo 1.", "Grupo 2.", "Grupo 3."],
+      "correcta": 1,
+      "explicacion": "Anexo II: Legionella pneumophila y Legionella spp., grupo 2.",
+      "fuente": "RD 664/1997, anexo II",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q11",
+      "pregunta": "Las cepas verocitotóxicas de Escherichia coli, como la O157:H7, están clasificadas en el anexo II del RD 664/1997 en el:",
+      "opciones": ["Grupo 3 (**), con nota T.", "Grupo 2, como el resto de E. coli patógenas.", "Grupo 4, sin vacuna disponible."],
+      "correcta": 0,
+      "explicacion": "Anexo II: E. coli verocitotóxicas (O157:H7 u O103), 3 (**), T. Las demás E. coli, salvo las no patógenas, son del grupo 2.",
+      "fuente": "RD 664/1997, anexo II",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q12",
+      "pregunta": "Un agente biológico que no figura en la lista del anexo II del RD 664/1997:",
+      "opciones": ["Se considera del grupo 1.", "No está por ello clasificado en el grupo 1; el empresario lo asimila provisionalmente a un grupo.", "Queda fuera del ámbito del real decreto."],
+      "correcta": 1,
+      "explicacion": "Nota introductoria 3 del anexo II y art. 4.3.a: se asimila provisionalmente con las definiciones del art. 3, previa consulta a los representantes.",
+      "fuente": "RD 664/1997, art. 4.3.a y anexo II, nota 3",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q13",
+      "pregunta": "Si al asimilar provisionalmente un agente no clasificado hay duda entre dos grupos, según el art. 4.3.a del RD 664/1997:",
+      "opciones": ["Se considera en el de peligrosidad inferior.", "Decide la autoridad sanitaria en el plazo de treinta días.", "Se considera en el de peligrosidad superior."],
+      "correcta": 2,
+      "explicacion": "Art. 4.3.a: «En caso de duda entre dos grupos deberá considerarse en el de peligrosidad superior».",
+      "fuente": "RD 664/1997, art. 4.3.a",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q14",
+      "pregunta": "En el anexo II del RD 664/1997, los dos asteriscos (**) junto a un agente del grupo 3 indican que:",
+      "opciones": ["Hay una vacuna eficaz disponible.", "Puede presentar un riesgo de infección limitado, porque normalmente no es infeccioso a través del aire.", "La lista de trabajadores expuestos se conserva más de diez años."],
+      "correcta": 1,
+      "explicacion": "Nota introductoria 8. La vacuna es la nota V, y la conservación más de diez años, la nota D.",
+      "fuente": "RD 664/1997, anexo II, nota 8"
+    },
+    {
+      "id": "t09-q15",
+      "pregunta": "En el anexo II del RD 664/1997, la nota «V» junto a un agente indica:",
+      "opciones": ["Vacuna eficaz disponible y registrada en la UE.", "Transmisión por vectores.", "Agente viral."],
+      "correcta": 0,
+      "explicacion": "Nota introductoria 10: A, alérgicos; D, lista más de diez años; T, toxinas; V, vacuna eficaz disponible.",
+      "fuente": "RD 664/1997, anexo II, nota 10"
+    },
+    {
+      "id": "t09-q16",
+      "pregunta": "Según el art. 15.1.b del RD 664/1997, las actividades que supongan la manipulación de un agente del grupo 3 se ejecutarán:",
+      "opciones": ["Únicamente en zonas de trabajo que correspondan por lo menos al nivel 3 de contención.", "En zonas de nivel 2, con cabina de seguridad biológica.", "Únicamente en zonas de nivel 4 de contención."],
+      "correcta": 0,
+      "explicacion": "Art. 15.1.b.2.º: por lo menos el nivel 3 para un agente del grupo 3.",
+      "fuente": "RD 664/1997, art. 15.1.b",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q17",
+      "pregunta": "Un laboratorio manipula muestras en las que existe incertidumbre sobre la presencia de agentes patógenos, sin intención de cultivarlos ni concentrarlos. Debería adoptar:",
+      "opciones": ["Ninguna medida de contención específica.", "Al menos el nivel 3 de contención.", "Al menos el nivel 2 de contención."],
+      "correcta": 2,
+      "explicacion": "Art. 15.1.c: «deberían adoptar, al menos, el nivel 2 de contención».",
+      "fuente": "RD 664/1997, art. 15.1.c",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q18",
+      "pregunta": "Según el RD 664/1997, los trabajadores expuestos a agentes biológicos dispondrán para su aseo personal, dentro de la jornada laboral, de:",
+      "opciones": ["Cinco minutos antes de la comida y cinco antes de abandonar el trabajo.", "Diez minutos antes de la comida y otros diez antes de abandonar el trabajo.", "Quince minutos al final de la jornada."],
+      "correcta": 1,
+      "explicacion": "Art. 7.2.",
+      "fuente": "RD 664/1997, art. 7.2",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q19",
+      "pregunta": "Respecto a la ropa de trabajo y los equipos de protección que puedan estar contaminados por agentes biológicos:",
+      "opciones": ["El trabajador puede lavarlos en su domicilio si los transporta en bolsa cerrada.", "El trabajador debe lavarlos y el empresario le abona el coste.", "El empresario se responsabiliza de su lavado y descontaminación, y está prohibido que el trabajador se los lleve a casa."],
+      "correcta": 2,
+      "explicacion": "Art. 7.4: «quedando rigurosamente prohibido que los trabajadores se lleven los mismos a su domicilio para tal fin». Y el 7.5: el coste nunca recae en los trabajadores.",
+      "fuente": "RD 664/1997, art. 7.4",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q20",
+      "pregunta": "La utilización por primera vez de agentes biológicos de los grupos 2, 3 o 4 debe notificarse a la autoridad laboral:",
+      "opciones": ["Con una antelación mínima de treinta días al inicio de los trabajos.", "En los quince días siguientes al inicio de los trabajos.", "Solo si se trata de agentes del grupo 4."],
+      "correcta": 0,
+      "explicacion": "Art. 10.1.",
+      "fuente": "RD 664/1997, art. 10.1",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q21",
+      "pregunta": "La lista de trabajadores expuestos a agentes de los grupos 3 y 4 y los historiales médicos deben conservarse:",
+      "opciones": ["Cinco años desde el alta del trabajador.", "Un mínimo de diez años tras finalizar la exposición, ampliable hasta cuarenta en determinados casos.", "Cuarenta años en todos los casos."],
+      "correcta": 1,
+      "explicacion": "Art. 9.3: diez años como mínimo; hasta cuarenta si la infección puede ser persistente o latente, de diagnóstico tardío, de incubación prolongada, con recurrencias o con secuelas a largo plazo.",
+      "fuente": "RD 664/1997, art. 9.3",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q22",
+      "pregunta": "Un trabajador sufre un accidente que implica la manipulación de un agente biológico. Según el art. 12.4 del RD 664/1997, lo comunicará inmediatamente:",
+      "opciones": ["A la autoridad sanitaria y a la mutua.", "Al Comité de Seguridad y Salud, en su siguiente reunión.", "A su superior jerárquico directo y a la persona o personas con responsabilidades en materia de prevención."],
+      "correcta": 2,
+      "explicacion": "Art. 12.4. Es el empresario quien informa a las autoridades laboral y sanitaria (art. 11.3).",
+      "fuente": "RD 664/1997, art. 12.4",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q23",
+      "pregunta": "Cuando existan vacunas eficaces frente a los agentes a los que están expuestos los trabajadores, según el RD 664/1997:",
+      "opciones": ["Deben ponerse a su disposición, informándoles de las ventajas e inconvenientes, y el ofrecimiento y la aceptación constarán por escrito.", "La vacunación es obligatoria para todos los trabajadores expuestos.", "Se ofrecen, pero su coste se reparte entre empresario y trabajador."],
+      "correcta": 0,
+      "explicacion": "Art. 8.3 y anexo VI: la vacunación no acarrea gasto alguno al trabajador.",
+      "fuente": "RD 664/1997, art. 8.3 y anexo VI",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q24",
+      "pregunta": "Un pinchazo accidental con una aguja contaminada supone la entrada del agente biológico por vía:",
+      "opciones": ["Digestiva.", "Respiratoria.", "Parenteral."],
+      "correcta": 2,
+      "explicacion": "La guía del INSST distingue cinco vías: respiratoria, dérmica (piel no intacta), mucosas, parenteral y digestiva. Los pinchazos y cortes son la vía parenteral.",
+      "fuente": "Guía técnica INSST (2024)",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q25",
+      "pregunta": "Pipetear con la boca en el laboratorio de microbiología expone sobre todo a la vía de entrada:",
+      "opciones": ["Digestiva.", "Parenteral.", "Dérmica."],
+      "correcta": 0,
+      "explicacion": "Es la ingestión de material infeccioso. Por eso está prohibido: se usan dispositivos mecánicos (guía INSST, nivel de bioseguridad 1).",
+      "fuente": "Guía técnica INSST (2024), apéndice 8",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q26",
+      "pregunta": "La centrifugación, la mezcla o la apertura de envases de material infeccioso generan aerosoles, cuya vía de entrada es:",
+      "opciones": ["La parenteral.", "La respiratoria.", "La digestiva."],
+      "correcta": 1,
+      "explicacion": "Los aerosoles se inhalan. En el nivel de bioseguridad 2, estas técnicas se hacen en cabina de seguridad biológica siempre que sea posible.",
+      "fuente": "Guía técnica INSST (2024), apéndice 8",
+      "nucleo": true
+    },
+    {
+      "id": "t09-q27",
+      "pregunta": "En la cadena de transmisión de un agente biológico, el último eslabón es:",
+      "opciones": ["El reservorio.", "La vía de entrada.", "El huésped susceptible, la persona trabajadora."],
+      "correcta": 2,
+      "explicacion": "Reservorio, salida, mecanismo de transmisión, vía de entrada y huésped susceptible.",
+      "fuente": "Guía técnica INSST (2024)"
+    },
+    {
+      "id": "t09-q28",
+      "pregunta": "La transmisión de un agente a través de objetos o materiales contaminados, como utensilios o instrumentos cortantes, es:",
+      "opciones": ["Una transmisión indirecta por vehículos o fómites.", "Una transmisión directa por contacto.", "Una transmisión por vectores."],
+      "correcta": 0,
+      "explicacion": "Guía INSST: la transmisión indirecta se produce con separación en el tiempo y el espacio, por fómites, por vectores o por el aire.",
+      "fuente": "Guía técnica INSST (2024)"
+    },
+    {
+      "id": "t09-q29",
+      "pregunta": "Según el anexo IV del RD 664/1997, el aire introducido y extraído del lugar de trabajo se filtrará con filtros HEPA:",
+      "opciones": ["En todos los niveles de contención.", "En el nivel 3, para la salida de aire, y en el nivel 4, para la entrada y la salida.", "Solo en el nivel 4, para la salida de aire."],
+      "correcta": 1,
+      "explicacion": "Anexo IV, medida 4: no en el nivel 2; salida en el 3; entrada y salida en el 4.",
+      "fuente": "RD 664/1997, anexo IV"
+    },
+    {
+      "id": "t09-q30",
+      "pregunta": "Según el anexo IV del RD 664/1997, en el nivel de contención 3 el material infectado se manejará en una cabina de seguridad biológica:",
+      "opciones": ["Cuando proceda.", "Siempre, en todo caso.", "Sí, cuando la infección se propague por el aire."],
+      "correcta": 2,
+      "explicacion": "Anexo IV, medida 3: «cuando proceda» en el nivel 2; «sí, cuando la infección se propague por el aire» en el 3; «sí» en el 4.",
+      "fuente": "RD 664/1997, anexo IV"
+    },
+    {
+      "id": "t09-q31",
+      "pregunta": "Según el RD 664/1997, se entiende por microorganismo:",
+      "opciones": ["Toda entidad microbiológica, celular o no, capaz de reproducirse o de transferir material genético.", "Todo organismo unicelular capaz de causar una infección en el hombre.", "El resultado del crecimiento in vitro de células de organismos multicelulares."],
+      "correcta": 0,
+      "explicacion": "Art. 2.b. La tercera opción es la definición de cultivo celular (art. 2.c).",
+      "fuente": "RD 664/1997, art. 2.b"
+    },
+    {
+      "id": "t09-q32",
+      "pregunta": "La evaluación de riesgos por exposición a agentes biológicos debe repetirse, además de periódicamente:",
+      "opciones": ["Solo cuando lo pida la autoridad laboral.", "Cuando se detecte en algún trabajador una infección o enfermedad que se sospeche que sea consecuencia de la exposición en el trabajo.", "Cada cinco años como máximo."],
+      "correcta": 1,
+      "explicacion": "Art. 4.2: también cada vez que cambien las condiciones que puedan afectar a la exposición.",
+      "fuente": "RD 664/1997, art. 4.2"
+    },
+    {
+      "id": "t09-q33",
+      "pregunta": "Según el art. 7.1 del RD 664/1997, los cuartos de aseo de los trabajadores expuestos a agentes biológicos incluirán:",
+      "opciones": ["Duchas de descontaminación en todo caso.", "Un botiquín con vacunas.", "Productos para la limpieza ocular y antisépticos para la piel."],
+      "correcta": 2,
+      "explicacion": "Art. 7.1.c. La ducha antes de salir es una medida del anexo IV: no en el nivel 2, aconsejable en el 3 y en el 4.",
+      "fuente": "RD 664/1997, art. 7.1.c"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t09-s01",
+      "titulo": "Puesta en marcha del análisis de Legionella",
+      "enunciado": "El laboratorio municipal va a empezar a analizar ***Legionella*** en muestras de agua de **torres de refrigeración** y de **agua caliente sanitaria**. **Nunca antes** ha trabajado con este agente. El procedimiento incluye **concentrar la muestra por centrifugación** o por filtración, **sembrar en placa** y confirmar las colonias sospechosas. La responsable de calidad le pide que prepare la documentación de prevención conforme al **RD 664/1997**.",
+      "preguntas": [
+        {
+          "id": "t09-s01-q1",
+          "pregunta": "Según el anexo II del RD 664/1997, Legionella pneumophila es un agente biológico del:",
+          "opciones": ["Grupo 1, porque no se transmite de persona a persona.", "Grupo 2.", "Grupo 3 (**).", "Grupo 4."],
+          "correcta": 1,
+          "explicacion": "Anexo II: Legionella pneumophila y Legionella spp., grupo 2. Que no se transmita entre personas no la baja al grupo 1.",
+          "fuente": "RD 664/1997, anexo II"
+        },
+        {
+          "id": "t09-s01-q2",
+          "pregunta": "El nivel de contención mínimo de la zona donde se manipulen los cultivos es:",
+          "opciones": ["Nivel 1, por tratarse de muestras ambientales.", "Nivel 3, por la gravedad de la legionelosis.", "Nivel 4, por la formación de aerosoles.", "Nivel 2."],
+          "correcta": 3,
+          "explicacion": "Art. 15.1.b: por lo menos el nivel 2 para un agente del grupo 2. Es la pregunta del 1322 (2.º ejercicio, supuesto 1, #5): «laboratorio tipo 2».",
+          "fuente": "RD 664/1997, art. 15.1.b"
+        },
+        {
+          "id": "t09-s01-q3",
+          "pregunta": "Como es la primera vez que el laboratorio va a utilizar este agente:",
+          "opciones": ["No hay que notificar nada, porque es un agente del grupo 2.", "Hay que notificarlo a la autoridad laboral con al menos treinta días de antelación al inicio de los trabajos.", "Basta con comunicarlo a la autoridad sanitaria en el mes siguiente.", "Hay que pedir autorización al Ministerio de Sanidad."],
+          "correcta": 1,
+          "explicacion": "Art. 10.1: la utilización por primera vez de agentes de los grupos 2, 3 o 4 se notifica previamente a la autoridad laboral, con treinta días de antelación como mínimo.",
+          "fuente": "RD 664/1997, art. 10.1"
+        },
+        {
+          "id": "t09-s01-q4",
+          "pregunta": "¿Cuál de estas operaciones debería hacerse en cabina de seguridad biológica, siempre que sea posible, según la guía del INSST para el nivel de bioseguridad 2?",
+          "opciones": ["La concentración de la muestra por centrifugación y la apertura de los tubos.", "El registro de los resultados en el sistema informático.", "El etiquetado de los frascos de muestra cerrados.", "La lectura de las placas sin abrirlas."],
+          "correcta": 0,
+          "explicacion": "Las técnicas que pueden producir bioaerosoles, como centrifugar, mezclar, abrir envases a distinta presión o introducir asas calientes en el cultivo, se hacen en cabina siempre que sea posible (guía INSST, apéndice 8).",
+          "fuente": "Guía técnica INSST (2024), apéndice 8"
+        },
+        {
+          "id": "t09-s01-q5",
+          "pregunta": "La principal vía de entrada de Legionella que debe tenerse en cuenta en la evaluación es:",
+          "opciones": ["La parenteral.", "La digestiva, por ingestión del agua.", "La respiratoria, por inhalación de aerosoles.", "La dérmica, por contacto con piel intacta."],
+          "correcta": 2,
+          "explicacion": "La guía del INSST cita la legionelosis entre las infecciones transmisibles por el aire. Además, la vía dérmica exige piel no intacta.",
+          "fuente": "Guía técnica INSST (2024)"
+        }
+      ]
+    },
+    {
+      "id": "t09-s02",
+      "titulo": "Pinchazo con una cepa de E. coli O157:H7",
+      "enunciado": "En el laboratorio se usa una **cepa de *Escherichia coli* O157:H7** como **control positivo**. Al retirar una aguja de un vial, un técnico **se pincha a través del guante**. Tras lavar la herida, se plantea qué hacer. El laboratorio **lleva lista** de los trabajadores expuestos a esta cepa.",
+      "preguntas": [
+        {
+          "id": "t09-s02-q1",
+          "pregunta": "Según el anexo II del RD 664/1997, esta cepa es un agente del:",
+          "opciones": ["Grupo 2, como todas las E. coli patógenas.", "Grupo 3 (**), con nota T.", "Grupo 4.", "Grupo 1, al ser una cepa de colección."],
+          "correcta": 1,
+          "explicacion": "Anexo II: E. coli, cepas verocitotóxicas (O157:H7 u O103), 3 (**), T. Los asteriscos indican que normalmente no es infecciosa a través del aire, y la T, que produce toxinas.",
+          "fuente": "RD 664/1997, anexo II"
+        },
+        {
+          "id": "t09-s02-q2",
+          "pregunta": "El agente ha entrado por la vía:",
+          "opciones": ["Respiratoria.", "Digestiva.", "De las mucosas.", "Parenteral."],
+          "correcta": 3,
+          "explicacion": "Un pinchazo o corte con material contaminado es la vía parenteral.",
+          "fuente": "Guía técnica INSST (2024)"
+        },
+        {
+          "id": "t09-s02-q3",
+          "pregunta": "El técnico debe comunicar el accidente:",
+          "opciones": ["Inmediatamente, a su superior jerárquico directo y a la persona o personas responsables de prevención.", "Al final de la jornada, al Comité de Seguridad y Salud.", "Solo si aparecen síntomas, a su médico de cabecera.", "Directamente a la autoridad laboral, en veinticuatro horas."],
+          "correcta": 0,
+          "explicacion": "Art. 12.4. El empresario informa inmediatamente a las autoridades laboral y sanitaria si el accidente ha podido liberar un agente capaz de causar una infección grave (art. 11.3).",
+          "fuente": "RD 664/1997, arts. 11.3 y 12.4"
+        },
+        {
+          "id": "t09-s02-q4",
+          "pregunta": "La lista de trabajadores expuestos, con el registro de este accidente, se conservará:",
+          "opciones": ["Cinco años.", "Hasta que el trabajador cause baja en la empresa.", "Al menos diez años tras finalizar la exposición, y hasta cuarenta en ciertos casos.", "Solo mientras dure el seguimiento médico."],
+          "correcta": 2,
+          "explicacion": "Art. 9.3. Se lleva lista de expuestos a los grupos 3 y 4 (art. 9.1.b), y esta cepa es del grupo 3.",
+          "fuente": "RD 664/1997, art. 9"
+        },
+        {
+          "id": "t09-s02-q5",
+          "pregunta": "¿En qué nivel de contención, como mínimo, debe manipularse esta cepa según el art. 15.1.b del RD 664/1997?",
+          "opciones": ["Nivel 2, porque la nota (**) lo rebaja automáticamente.", "Nivel 4, por producir toxinas.", "Nivel 1, al ser un control de calidad.", "Nivel 3, aunque la autoridad sanitaria puede valorar prescindir de algunas medidas por la nota (**)."],
+          "correcta": 3,
+          "explicacion": "Art. 15.1.b: por lo menos el nivel 3 para un agente del grupo 3. La nota 8 del anexo II permite a las autoridades sanitarias valorar si se prescinde de algunas medidas, pero no hay rebaja automática.",
+          "fuente": "RD 664/1997, art. 15.1.b y anexo II, nota 8"
+        }
+      ]
+    }
+  ]
+}
