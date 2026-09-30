@@ -99,6 +99,8 @@ export type TipoEsquema =
   | 'microscopio-optico'
   | 'resistencia-descontaminacion'
   | 'binomios-esterilizacion'
+  | 'agotamiento-cuadrantes'
+  | 'siembra-profundidad-superficie'
 
 export type TipoMaterial =
   | 'matraz-aforado'

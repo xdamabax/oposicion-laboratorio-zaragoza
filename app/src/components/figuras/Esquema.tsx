@@ -73,6 +73,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'microscopio-optico': 'El microscopio óptico: camino de la luz y cifras',
   'resistencia-descontaminacion': 'Resistencia de los microorganismos y método que basta',
   'binomios-esterilizacion': 'Temperatura y tiempo de esterilización: vapor y calor seco',
+  'agotamiento-cuadrantes': 'Siembra por agotamiento en cuatro cuadrantes',
+  'siembra-profundidad-superficie': 'Siembra en profundidad y en superficie',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -140,6 +142,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'microscopio-optico': { ancho: 580, alto: 300 },
   'resistencia-descontaminacion': { ancho: 580, alto: 272 },
   'binomios-esterilizacion': { ancho: 580, alto: 282 },
+  'agotamiento-cuadrantes': { ancho: 580, alto: 262 },
+  'siembra-profundidad-superficie': { ancho: 580, alto: 216 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6653,6 +6657,160 @@ function BinomiosEsterilizacion() {
   )
 }
 
+/**
+ * Siembra por agotamiento en cuatro cuadrantes (procedimiento de los CDC): la
+ * placa se gira un cuarto de vuelta entre cuadrantes y cada estria nueva
+ * arranca arrastrando material del cuadrante anterior. Las colonias van
+ * disminuyendo hasta quedar aisladas en el cuarto.
+ */
+function AgotamientoCuadrantes() {
+  const CX = 150
+  const CY = 130
+  const R = 104
+  // cuadrante k ocupa los angulos [-90 + 90k, 0 + 90k) en grados de pantalla (y hacia abajo)
+  const ang = (k: number, f: number) => ((-90 + 90 * k + 90 * f) * Math.PI) / 180
+  const pt = (k: number, f: number, r: number) => [CX + r * Math.cos(ang(k, f)), CY + r * Math.sin(ang(k, f))]
+  // estria en zigzag dentro del cuadrante k; la primera parte del trazo sale del cuadrante anterior
+  const estria = (k: number) => {
+    const pts: number[][] = []
+    if (k > 0) pts.push(pt(k - 1, 0.8, 62))
+    for (let i = 0; i < 6; i++) {
+      const f = 0.12 + i * 0.14
+      pts.push(pt(k, f, i % 2 === 0 ? 30 : 92))
+    }
+    return pts.map((p, i) => `${i ? 'L' : 'M'} ${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ')
+  }
+  // colonias: muchas y amontonadas en el 1, pocas y aisladas en el 4
+  const semilla = [
+    [0.1, 40], [0.18, 70], [0.25, 55], [0.3, 85], [0.38, 45], [0.45, 75], [0.5, 60], [0.55, 90], [0.62, 50], [0.68, 80], [0.72, 35], [0.8, 65], [0.86, 88], [0.9, 48], [0.35, 64], [0.6, 72], [0.22, 83], [0.76, 42],
+  ]
+  const N = [18, 10, 5, 3]
+  const colonias: { k: number; x: number; y: number }[] = []
+  N.forEach((n, k) => {
+    const paso = Math.floor(semilla.length / n)
+    for (let i = 0; i < n; i++) {
+      const [f, r] = k === 3 ? [[0.2, 45], [0.5, 80], [0.8, 50]][i] : semilla[(i * paso) % semilla.length]
+      const [x, y] = pt(k, f, r)
+      colonias.push({ k, x, y })
+    }
+  })
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <circle data-pieza="placa" cx={CX} cy={CY} r={R} fill={AZUL_CLARO} fillOpacity="0.3" stroke="currentColor" strokeWidth="1.4" />
+      <line x1={CX - R} y1={CY} x2={CX + R} y2={CY} stroke="currentColor" strokeWidth="0.6" strokeDasharray="3 3" strokeOpacity="0.6" />
+      <line x1={CX} y1={CY - R} x2={CX} y2={CY + R} stroke="currentColor" strokeWidth="0.6" strokeDasharray="3 3" strokeOpacity="0.6" />
+      {[0, 1, 2, 3].map((k) => {
+        const [x, y] = pt(k, 0.5, R + 14)
+        return (
+          <text key={k} data-pieza="numero" data-cuadrante={k + 1} x={x} y={y + 3} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {k + 1}
+          </text>
+        )
+      })}
+      {[0, 1, 2, 3].map((k) => (
+        <path key={k} data-pieza="estria" data-cuadrante={k + 1} d={estria(k)} fill="none" stroke={ROJO} strokeWidth="1.3" strokeOpacity="0.8" />
+      ))}
+      {colonias.map((c, i) => (
+        <circle key={i} data-pieza="colonia" cx={c.x} cy={c.y} r={4.2} fill="#f0e6c8" stroke="currentColor" strokeWidth="0.6" />
+      ))}
+      <text x={300} y={40} fontSize="9" fontWeight="bold" fill="currentColor">
+        Cómo se hace
+      </text>
+      {[
+        '1. Inóculo en el primer cuadrante, en estrías juntas.',
+        '2. Asa estéril (o nueva) y un cuarto de vuelta a la placa.',
+        '3. Cada estría arrastra material del cuadrante anterior',
+        '    y no vuelve a entrar en él.',
+        '4. En el último cuadrante quedan colonias aisladas:',
+        '    cada una procede, en principio, de una sola célula.',
+        '5. Una colonia aislada, resembrada, da un cultivo puro.',
+      ].map((l, i) => (
+        <text key={l} x={300} y={60 + i * 15} fontSize="8" fill="currentColor">
+          {l}
+        </text>
+      ))}
+      <text x={300} y={184} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Es el método habitual para obtener un cultivo puro (1322 #27).
+      </text>
+      <text x={300} y={198} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        La placa se incuba invertida.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Siembra en profundidad (placa vertida) y en superficie (extension), en corte.
+ * En profundidad la muestra (1 ml) va a la placa vacia y se mezcla con el agar
+ * fundido a 45 °C: las colonias crecen dentro del agar. En superficie la
+ * muestra (0,1 ml) se extiende sobre el agar ya solido y seco: las colonias
+ * crecen encima.
+ */
+function SiembraProfundidadSuperficie() {
+  const PLACAS = [
+    {
+      tecnica: 'profundidad',
+      x0: 20,
+      titulo: 'En profundidad (placa vertida)',
+      lineas: ['1 ml de muestra en la placa vacía', '+ 15-20 ml de agar fundido a 45 °C', 'se mezcla girando y se deja solidificar'],
+      volumen: '1 ml',
+      colonias: [
+        [30, 0.35], [62, 0.7], [95, 0.25], [128, 0.55], [160, 0.8], [190, 0.4], [220, 0.65],
+      ],
+    },
+    {
+      tecnica: 'superficie',
+      x0: 300,
+      titulo: 'En superficie (extensión)',
+      lineas: ['0,1 ml sobre el agar ya sólido y seco', 'se extiende con el asa de Digralsky', '(varilla acodada estéril)'],
+      volumen: '0,1 ml',
+      colonias: [
+        [34, 0], [70, 0], [104, 0], [140, 0], [176, 0], [212, 0],
+      ],
+    },
+  ]
+  const W = 250
+  const YS = 118 // superficie del agar
+  const YF = 146 // fondo del agar
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {PLACAS.map((p) => (
+        <g key={p.tecnica}>
+          <text x={p.x0 + W / 2} y={18} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {p.titulo}
+          </text>
+          {p.lineas.map((l, i) => (
+            <text key={l} data-pieza="paso" data-tecnica={p.tecnica} x={p.x0 + W / 2} y={36 + i * 13} fontSize="8" textAnchor="middle" fill="currentColor">
+              {l}
+            </text>
+          ))}
+          <text data-pieza="volumen" data-tecnica={p.tecnica} x={p.x0 + W / 2} y={90} fontSize="9" fontWeight="bold" textAnchor="middle" fill={ROJO}>
+            Volumen sembrado: {p.volumen}
+          </text>
+          <path d={`M ${p.x0} ${YS - 16} L ${p.x0} ${YF + 4} L ${p.x0 + W} ${YF + 4} L ${p.x0 + W} ${YS - 16}`} fill="none" stroke="currentColor" strokeWidth="1.4" />
+          <rect data-pieza="agar" data-tecnica={p.tecnica} x={p.x0 + 2} y={YS} width={W - 4} height={YF - YS} fill="#e8c35a" fillOpacity="0.35" stroke="currentColor" strokeWidth="0.6" />
+          {p.colonias.map(([dx, f], i) =>
+            p.tecnica === 'profundidad' ? (
+              <ellipse key={i} data-pieza="colonia" data-tecnica={p.tecnica} cx={p.x0 + dx} cy={YS + 3 + f * (YF - YS - 6)} rx={3.5} ry={2.2} fill="#f0e6c8" stroke="currentColor" strokeWidth="0.6" />
+            ) : (
+              <ellipse key={i} data-pieza="colonia" data-tecnica={p.tecnica} cx={p.x0 + dx} cy={YS - 2.5} rx={6} ry={3} fill="#f0e6c8" stroke="currentColor" strokeWidth="0.6" />
+            ),
+          )}
+          <text x={p.x0 + W / 2} y={YF + 22} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+            {p.tecnica === 'profundidad' ? 'Colonias repartidas por todo el espesor del agar' : 'Colonias sobre el agar, todas en la superficie'}
+          </text>
+        </g>
+      ))}
+      <text x={20} y={194} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Se cuentan las placas con 10 a 300 colonias. El recuento de colonias a 22 °C en agua se siembra en profundidad (1233, 2.º ejercicio, #11).
+      </text>
+      <text x={20} y={208} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Con 0,1 ml, cada colonia representa 10 ufc por mililitro de muestra.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6781,6 +6939,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <ResistenciaDescontaminacion />
     case 'binomios-esterilizacion':
       return <BinomiosEsterilizacion />
+    case 'agotamiento-cuadrantes':
+      return <AgotamientoCuadrantes />
+    case 'siembra-profundidad-superficie':
+      return <SiembraProfundidadSuperficie />
   }
 }
 

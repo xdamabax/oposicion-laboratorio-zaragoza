@@ -1019,6 +1019,41 @@ function medir(sabotaje, ROJO) {
     // el rotulo del horno a 170 °C escrito con otro tiempo del que dibuja su punto
     svg.querySelector('[data-pieza="rotulo"][data-clave="s170"]').textContent = '170 °C · 30 min'
   }
+  if (sabotaje === 114) {
+    const svg = porClave('agotamiento-cuadrantes')
+    // la estria del tercer cuadrante arrancando en el primero, saltandose el segundo
+    const p = pieza(svg, 'placa')
+    const e = svg.querySelector('[data-pieza="estria"][data-cuadrante="3"]')
+    e.setAttribute('d', e.getAttribute('d').replace(/^M [\d.-]+ [\d.-]+/, `M ${num(p, 'cx') + 50} ${num(p, 'cy') - 50}`))
+  }
+  if (sabotaje === 115) {
+    const svg = porClave('agotamiento-cuadrantes')
+    // cuatro colonias de mas en el ultimo cuadrante, que deja de tener menos que el anterior
+    const p = pieza(svg, 'placa')
+    const base = piezas(svg, 'colonia').find((c) => num(c, 'cx') < num(p, 'cx') - 40 && num(c, 'cy') < num(p, 'cy') - 40)
+    for (const [dx, dy] of [[10, 0], [-10, 0], [0, 10], [0, -10]]) {
+      const c = base.cloneNode(true)
+      c.setAttribute('cx', num(base, 'cx') + dx)
+      c.setAttribute('cy', num(base, 'cy') + dy)
+      base.parentNode.appendChild(c)
+    }
+  }
+  if (sabotaje === 116) {
+    const svg = porClave('siembra-profundidad-superficie')
+    // una colonia de la siembra en superficie hundida dentro del agar
+    const agar = svg.querySelector('[data-pieza="agar"][data-tecnica="superficie"]')
+    const c = svg.querySelector('[data-pieza="colonia"][data-tecnica="superficie"]')
+    c.setAttribute('cy', num(agar, 'y') + 14)
+  }
+  if (sabotaje === 117) {
+    const svg = porClave('siembra-profundidad-superficie')
+    // los volumenes cambiados: 0,1 ml en profundidad y 1 ml en superficie
+    const a = svg.querySelector('[data-pieza="volumen"][data-tecnica="profundidad"]')
+    const b = svg.querySelector('[data-pieza="volumen"][data-tecnica="superficie"]')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3784,6 +3819,80 @@ function medir(sabotaje, ROJO) {
     return 'los siete rótulos coinciden con sus puntos'
   })
 
+  /*
+   * Siembra por agotamiento en cuatro cuadrantes (CDC). El cuadrante de cada
+   * punto se lee por su angulo respecto del centro de la placa: el 1 arriba a
+   * la derecha y, girando en el sentido de las agujas del reloj, el 2, el 3 y
+   * el 4.
+   */
+  const sectorDe = (p, x, y) => {
+    const a = (Math.atan2(y - num(p, 'cy'), x - num(p, 'cx')) * 180) / Math.PI
+    return Math.floor((((a + 90) % 360) + 360) % 360 / 90)
+  }
+  control('Agotamiento · los cuatro cuadrantes van en orden de giro, y cada estría arranca en el cuadrante anterior y sigue en el suyo', () => {
+    const svg = porClave('agotamiento-cuadrantes')
+    const p = pieza(svg, 'placa')
+    for (const t of piezas(svg, 'numero')) {
+      const b = t.getBBox()
+      const k = Number(t.getAttribute('data-cuadrante'))
+      if (sectorDe(p, b.x + b.width / 2, b.y + b.height / 2) !== k - 1) throw new Error(`el rótulo ${k} no está en su cuadrante`)
+    }
+    const estrias = piezas(svg, 'estria').sort((a, b) => num(a, 'data-cuadrante') - num(b, 'data-cuadrante'))
+    if (estrias.length !== 4) throw new Error(`hay ${estrias.length} estrías`)
+    estrias.forEach((e, i) => {
+      const pts = puntos(e)
+      const resto = i === 0 ? pts : pts.slice(1)
+      if (i > 0 && sectorDe(p, ...pts[0]) !== i - 1) throw new Error(`la estría del cuadrante ${i + 1} no arranca en el cuadrante ${i}, sino en el ${sectorDe(p, ...pts[0]) + 1}`)
+      if (resto.some(([x, y]) => sectorDe(p, x, y) !== i)) throw new Error(`la estría del cuadrante ${i + 1} se sale de su cuadrante`)
+    })
+    return 'cuatro estrías; cada una entra desde el cuadrante anterior'
+  })
+
+  control('Agotamiento · las colonias disminuyen de un cuadrante al siguiente, y en el último quedan aisladas', () => {
+    const svg = porClave('agotamiento-cuadrantes')
+    const p = pieza(svg, 'placa')
+    const cols = piezas(svg, 'colonia').map((c) => ({ x: num(c, 'cx'), y: num(c, 'cy'), r: num(c, 'r'), k: sectorDe(p, num(c, 'cx'), num(c, 'cy')) }))
+    const n = [0, 1, 2, 3].map((k) => cols.filter((c) => c.k === k).length)
+    for (let k = 1; k < 4; k++) if (!(n[k] < n[k - 1])) throw new Error(`hay ${n.join(', ')} colonias por cuadrante: no disminuyen`)
+    const ult = cols.filter((c) => c.k === 3)
+    for (let i = 0; i < ult.length; i++)
+      for (let j = i + 1; j < ult.length; j++)
+        if (Math.hypot(ult[i].x - ult[j].x, ult[i].y - ult[j].y) < 4 * ult[i].r) throw new Error('en el último cuadrante hay colonias que no están aisladas')
+    return `${n.join(' > ')} colonias; las del cuarto, aisladas`
+  })
+
+  /*
+   * Siembra en profundidad y en superficie. Se lee donde crecen las colonias
+   * respecto de la capa de agar, y los volumenes y la temperatura escritos.
+   */
+  control('Siembra · en profundidad las colonias crecen dentro del agar, y en superficie, todas encima de él', () => {
+    const svg = porClave('siembra-profundidad-superficie')
+    const capa = (t) => {
+      const a = svg.querySelector(`[data-pieza="agar"][data-tecnica="${t}"]`)
+      return [num(a, 'y'), num(a, 'y') + num(a, 'height')]
+    }
+    const [s0, f0] = capa('profundidad')
+    const hondas = piezas(svg, 'colonia').filter((c) => c.getAttribute('data-tecnica') === 'profundidad')
+    if (hondas.some((c) => !(num(c, 'cy') > s0 + 1 && num(c, 'cy') < f0 - 1))) throw new Error('en profundidad hay colonias fuera del agar')
+    if (hondas.filter((c) => num(c, 'cy') > s0 + (f0 - s0) / 3).length < hondas.length / 2) throw new Error('en profundidad las colonias no se reparten por el espesor del agar')
+    const [s1] = capa('superficie')
+    const arriba = piezas(svg, 'colonia').filter((c) => c.getAttribute('data-tecnica') === 'superficie')
+    const mal = arriba.filter((c) => Math.abs(num(c, 'cy') + num(c, 'ry') - s1) > 1.5)
+    if (mal.length) throw new Error(`en superficie hay ${mal.length} colonia(s) que no están sobre el agar`)
+    return `${hondas.length} colonias dentro del agar; ${arriba.length} sobre él`
+  })
+
+  control('Siembra · en profundidad se siembra 1 ml y se vierte el agar fundido a 45 °C; en superficie, 0,1 ml sobre el agar ya sólido', () => {
+    const svg = porClave('siembra-profundidad-superficie')
+    const vol = (t) => svg.querySelector(`[data-pieza="volumen"][data-tecnica="${t}"]`).textContent
+    const pasos = (t) => piezas(svg, 'paso').filter((p) => p.getAttribute('data-tecnica') === t).map((p) => p.textContent).join(' | ')
+    if (!/:\s*1 ml/.test(vol('profundidad'))) throw new Error(`en profundidad el volumen dice «${vol('profundidad').trim()}»`)
+    if (!/0,1 ml/.test(vol('superficie'))) throw new Error(`en superficie el volumen dice «${vol('superficie').trim()}»`)
+    if (!/45 °C/.test(pasos('profundidad')) || !/placa vacía/.test(pasos('profundidad'))) throw new Error('en profundidad falta la muestra en la placa vacía o el agar a 45 °C')
+    if (!/sólido/.test(pasos('superficie'))) throw new Error('en superficie falta que el agar ya esté sólido')
+    return '1 ml y agar a 45 °C en profundidad; 0,1 ml sobre agar sólido en superficie'
+  })
+
   return resultados
 }
 
@@ -3903,6 +4012,10 @@ const SABOTAJES = {
   111: 'el hipoclorito rebajado a desinfectante de nivel bajo',
   112: 'el autoclave a 121 °C con 20 minutos, dibujo y rótulo de acuerdo entre sí pero no con la guía',
   113: 'el rótulo del horno a 170 °C escrito con otro tiempo del que dibuja su punto',
+  114: 'la estría del tercer cuadrante arrancando en el primero, saltándose el segundo',
+  115: 'cuatro colonias de más en el último cuadrante, que deja de tener menos que el anterior',
+  116: 'una colonia de la siembra en superficie hundida dentro del agar',
+  117: 'los volúmenes cambiados: 0,1 ml en profundidad y 1 ml en superficie',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4026,6 +4139,10 @@ const CONTROL_DE = {
   111: [107],
   112: [108],
   113: [109],
+  114: [110],
+  115: [111],
+  116: [112],
+  117: [113],
 }
 
 async function main() {
