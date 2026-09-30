@@ -348,7 +348,7 @@ El control interno ve si el laboratorio **se mantiene igual**; no ve si **todo e
 >
 > x_i es el resultado del laboratorio, x_pt el **valor asignado** y σ_pt la **desviación típica para la evaluación de la aptitud**, que fija el proveedor.
 
-| |z| | Desempeño | Señal |
+| \|z\| | Desempeño | Señal |
 | --- | --- | --- |
 | **≤ 2,0** | **Satisfactorio** | Ninguna |
 | **Entre 2,0 y 3,0** | **Cuestionable** | **De aviso** |
