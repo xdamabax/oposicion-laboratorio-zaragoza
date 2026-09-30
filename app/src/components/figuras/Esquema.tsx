@@ -69,6 +69,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'umbrales-prevencion': 'La prevención según el número de trabajadores',
   'grupos-riesgo-biologico': 'Los cuatro grupos de agentes biológicos y su contención',
   'cadena-transmision': 'La cadena de transmisión y las vías de entrada',
+  'clases-cabinas': 'Las tres clases de cabina de seguridad biológica',
+  'microscopio-optico': 'El microscopio óptico: camino de la luz y cifras',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -132,6 +134,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'umbrales-prevencion': { ancho: 580, alto: 262 },
   'grupos-riesgo-biologico': { ancho: 580, alto: 250 },
   'cadena-transmision': { ancho: 580, alto: 250 },
+  'clases-cabinas': { ancho: 580, alto: 252 },
+  'microscopio-optico': { ancho: 580, alto: 300 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6329,6 +6333,151 @@ function CadenaTransmision() {
   )
 }
 
+/**
+ * Las tres clases de cabina de seguridad biologica (UNE-EN 12469, NTP 1202 del
+ * INSST), en corte y con el frente a la izquierda. La I y la II son abiertas
+ * por delante y el aire del local entra por la abertura; solo la II baña la
+ * zona de trabajo con aire descendente filtrado (flujo laminar); la III es
+ * estanca, se trabaja con guantes y el aire entra por un HEPA y sale por dos
+ * en serie.
+ */
+function ClasesCabinas() {
+  const AN = 180
+  const px = (i: number) => 10 + i * 190
+  const CX = 30
+  const CY = 40
+  const CW = 120
+  const CH = 116
+  const hepa = (clase: string, uso: 'extraccion' | 'impulsion', x: number, y: number, w: number, h: number, k: string) => (
+    <g key={k}>
+      <rect data-pieza="hepa" data-clase={clase} data-uso={uso} x={x} y={y} width={w} height={h} fill={AZUL} fillOpacity="0.85" stroke="currentColor" strokeWidth="0.8" />
+      {w > 30 && (
+        <text x={x + w / 2} y={y + h / 2 + 2.2} fontSize="6" textAnchor="middle" fill="#1b2530">
+          HEPA
+        </text>
+      )}
+    </g>
+  )
+  const flujo = (clase: string, tipo: string, x1: number, y1: number, x2: number, y2: number, k: string) => (
+    <line key={k} data-pieza="flujo" data-clase={clase} data-tipo={tipo} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="1.3" markerEnd="url(#flecha-cabina)" />
+  )
+  const CLASES = [
+    { clase: 'I', lineas: ['Protege: persona y ambiente', 'Entrada frontal: 0,7-1 m/s', 'Expulsa todo el aire'] },
+    { clase: 'II', lineas: ['Protege: persona, ambiente y producto', 'Entrada frontal: ≥ 0,38 m/s', 'Descendente: 0,25-0,4 m/s'] },
+    { clase: 'III', lineas: ['Protege: persona, ambiente y producto', 'Estanca, con guantes; ≥ 200 Pa', '≥ 0,7 m/s con un guante quitado'] },
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <defs>
+        <marker id="flecha-cabina" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor" />
+        </marker>
+      </defs>
+      {CLASES.map((c, i) => {
+        const x = px(i)
+        const bx = x + CX
+        const abierta = c.clase !== 'III'
+        return (
+          <g key={c.clase}>
+            <text x={x + AN / 2} y={16} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              Clase {c.clase}
+            </text>
+            <rect data-pieza="cabina" data-clase={c.clase} x={bx} y={CY} width={CW} height={CH} fill={AZUL_CLARO} fillOpacity="0.25" stroke="currentColor" strokeWidth="1.4" />
+            <line x1={bx + 4} y1={CY + CH - 8} x2={bx + CW - 4} y2={CY + CH - 8} stroke="currentColor" strokeWidth="1" strokeOpacity="0.6" />
+            {abierta && <rect data-pieza="abertura" data-clase={c.clase} x={bx - 2} y={CY + 70} width={4} height={38} fill={ROJO} fillOpacity="0.35" stroke={ROJO} strokeWidth="1" />}
+            {!abierta &&
+              [CY + 74, CY + 96].map((gy) => (
+                <circle key={gy} data-pieza="guante" data-clase={c.clase} cx={bx} cy={gy} r={7} fill="none" stroke="currentColor" strokeWidth="1.3" />
+              ))}
+            {abierta && flujo(c.clase, 'entrada-frontal', x + 4, CY + 89, bx + 16, CY + 89, 'ef')}
+            {c.clase === 'I' && hepa('I', 'extraccion', bx + 30, CY + 4, 60, 11, 'h1')}
+            {c.clase === 'I' && flujo('I', 'interno', bx + 20, CY + 84, bx + 58, CY + 20, 'in')}
+            {c.clase === 'II' && hepa('II', 'extraccion', bx + 30, CY + 4, 60, 11, 'h1')}
+            {c.clase === 'II' && hepa('II', 'impulsion', bx + 14, CY + 26, 92, 9, 'h2')}
+            {c.clase === 'II' && [bx + 34, bx + 60, bx + 86].map((fx) => flujo('II', 'descendente', fx, CY + 38, fx, CY + CH - 14, `d${fx}`))}
+            {c.clase === 'III' && hepa('III', 'extraccion', bx + 30, CY + 4, 60, 10, 'h1')}
+            {c.clase === 'III' && hepa('III', 'extraccion', bx + 30, CY + 16, 60, 10, 'h2')}
+            {c.clase === 'III' && hepa('III', 'impulsion', bx + CW - 12, CY + 58, 9, 40, 'h3')}
+            {c.clase === 'III' && flujo('III', 'entrada-filtrada', bx + CW + 24, CY + 78, bx + CW - 16, CY + 78, 'ei')}
+            {flujo(c.clase, 'salida', bx + 60, CY + 2, bx + 60, CY - 20, 'sa')}
+            {c.lineas.map((l, k) => (
+              <text key={l} data-pieza="dato" data-clase={c.clase} x={x + AN / 2} y={CY + CH + 18 + k * 13} fontSize="7.5" textAnchor="middle" fill="currentColor">
+                {l}
+              </text>
+            ))}
+          </g>
+        )
+      })}
+      <text x={10} y={244} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        HEPA: filtro absoluto H14, 99,995 % para 0,3 µm. Una cabina de flujo laminar no es de seguridad biológica: solo protege el producto (NTP 1202).
+      </text>
+    </g>
+  )
+}
+
+/**
+ * El microscopio optico compuesto como camino de la luz: de la lampara al ojo
+ * pasando por el diafragma de campo, el condensador, la preparacion, el
+ * objetivo y el ocular. Las cifras de la derecha salen de los rotulos del
+ * propio dibujo: aumento total = ocular x objetivo, y resolucion de Rayleigh
+ * d = 0,61 lambda / AN.
+ */
+function MicroscopioOptico() {
+  const CXE = 120
+  const ELEM = [
+    { clave: 'ocular', x: 104, y: 34, w: 32, h: 26, rot: 'Ocular 10×', ry: 50 },
+    { clave: 'tubo', x: 110, y: 60, w: 20, h: 62, rot: 'Tubo de observación', ry: 94 },
+    { clave: 'objetivo', x: 102, y: 122, w: 36, h: 44, rot: 'Objetivo 100× · AN 1,25 · aceite', ry: 140 },
+    { clave: 'platina', x: 56, y: 176, w: 128, h: 7, rot: 'Platina con la preparación', ry: 186 },
+    { clave: 'condensador', x: 92, y: 198, w: 56, h: 16, rot: 'Condensador, con su diafragma de apertura', ry: 210 },
+    { clave: 'diafragma-campo', x: 100, y: 234, w: 40, h: 5, rot: 'Diafragma de campo', ry: 239 },
+    { clave: 'lampara', x: 96, y: 254, w: 48, h: 16, rot: 'Fuente de luz', ry: 265 },
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <line data-pieza="haz" x1={CXE} y1={254} x2={CXE} y2={22} stroke={ROJO} strokeWidth="1.6" strokeDasharray="4 3" />
+      {ELEM.map((e) => (
+        <g key={e.clave}>
+          <rect data-pieza="elemento" data-clave={e.clave} x={e.x} y={e.y} width={e.w} height={e.h} rx={e.clave === 'lampara' ? 7 : 2} fill={e.clave === 'lampara' ? '#f3d36b' : AZUL} fillOpacity="0.8" stroke="currentColor" strokeWidth="1" />
+          <line x1={e.x + e.w + 2} y1={e.y + e.h / 2} x2={196} y2={e.ry - 3} stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.6" />
+          <text data-pieza="rotulo" data-clave={e.clave} x={200} y={e.ry} fontSize="8" fill="currentColor">
+            {e.rot}
+          </text>
+        </g>
+      ))}
+      <ellipse data-pieza="aceite" cx={CXE} cy={171} rx={10} ry={4} fill="#e8c35a" fillOpacity="0.9" stroke="currentColor" strokeWidth="0.6" />
+      <line x1={131} y1={171} x2={196} y2={160} stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.6" />
+      <text x={200} y={163} fontSize="8" fill="currentColor">
+        Aceite de inmersión (n ≈ 1,515, como el vidrio)
+      </text>
+      <text x={CXE} y={16} fontSize="8" textAnchor="middle" fill="currentColor">
+        ojo
+      </text>
+      <text x={400} y={40} fontSize="9" fontWeight="bold" fill="currentColor">
+        Las cifras del esquema
+      </text>
+      <text data-pieza="cifra" data-clave="total" x={400} y={58} fontSize="8" fill="currentColor">
+        Aumento total: 10 × 100 = 1000×
+      </text>
+      <text data-pieza="cifra" data-clave="util" x={400} y={74} fontSize="8" fill="currentColor">
+        Aumento útil: 500-1000 × AN = 625-1250×
+      </text>
+      <text data-pieza="cifra" data-clave="resolucion" x={400} y={90} fontSize="8" fill="currentColor">
+        d = 0,61 · λ / AN = 0,61 · 550 / 1,25 ≈ 268 nm
+      </text>
+      <text x={400} y={106} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        En seco, la AN no pasa de 0,95.
+      </text>
+      <text x={400} y={120} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Con aceite, hasta 1,4.
+      </text>
+      <text x={10} y={292} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        La luz sube de la lámpara al ojo. El aumento solo sirve si hay resolución: por encima del aumento útil, el aumento es «vacío».
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6449,6 +6598,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <GruposRiesgoBiologico />
     case 'cadena-transmision':
       return <CadenaTransmision />
+    case 'clases-cabinas':
+      return <ClasesCabinas />
+    case 'microscopio-optico':
+      return <MicroscopioOptico />
   }
 }
 

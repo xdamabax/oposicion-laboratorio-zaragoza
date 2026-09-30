@@ -95,6 +95,8 @@ export type TipoEsquema =
   | 'umbrales-prevencion'
   | 'grupos-riesgo-biologico'
   | 'cadena-transmision'
+  | 'clases-cabinas'
+  | 'microscopio-optico'
 
 export type TipoMaterial =
   | 'matraz-aforado'

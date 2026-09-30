@@ -963,6 +963,31 @@ function medir(sabotaje, ROJO) {
     // la via parenteral, quitada de la lista
     piezas(svg, 'via-entrada').find((t) => t.textContent.trim().startsWith('parenteral')).remove()
   }
+  if (sabotaje === 106) {
+    const svg = porClave('clases-cabinas')
+    // un flujo descendente laminar metido en la clase I, como si protegiera el producto
+    const d = svg.querySelector('[data-pieza="flujo"][data-clase="II"][data-tipo="descendente"]')
+    const copia = d.cloneNode(true)
+    copia.setAttribute('data-clase', 'I')
+    copia.setAttribute('x1', num(d, 'x1') - 190)
+    copia.setAttribute('x2', num(d, 'x2') - 190)
+    d.parentNode.appendChild(copia)
+  }
+  if (sabotaje === 107) {
+    const svg = porClave('clases-cabinas')
+    // la clase III con un solo HEPA de salida, en vez de dos en serie
+    svg.querySelectorAll('[data-pieza="hepa"][data-clase="III"][data-uso="extraccion"]')[1].remove()
+  }
+  if (sabotaje === 108) {
+    const svg = porClave('microscopio-optico')
+    // el condensador subido por encima de la platina
+    svg.querySelector('[data-pieza="elemento"][data-clave="condensador"]').setAttribute('y', 150)
+  }
+  if (sabotaje === 109) {
+    const svg = porClave('microscopio-optico')
+    // el aumento total escrito como si fuera solo el del objetivo
+    svg.querySelector('[data-pieza="cifra"][data-clave="total"]').textContent = 'Aumento total: 10 × 100 = 100×'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3541,6 +3566,100 @@ function medir(sabotaje, ROJO) {
     return 'respiratoria, dérmica, mucosas, parenteral y digestiva'
   })
 
+  /*
+   * Las tres clases de cabina de seguridad biologica (NTP 1202, UNE-EN 12469).
+   * Cada flujo dice su clase y su tipo; de donde sale y adonde llega se lee por
+   * sus extremos frente a la caja de su cabina, y cada filtro, por su posicion.
+   */
+  const cabinaDe = (svg, c) => svg.querySelector(`[data-pieza="cabina"][data-clase="${c}"]`)
+  const flujosDe = (svg, c, tipo) => [...svg.querySelectorAll(`[data-pieza="flujo"][data-clase="${c}"][data-tipo="${tipo}"]`)]
+  control('Cabinas · el aire del local entra por la abertura frontal en la I y la II, la III es estanca con guantes, y solo la II baña la zona de trabajo con aire descendente', () => {
+    const svg = porClave('clases-cabinas')
+    for (const c of ['I', 'II', 'III']) {
+      const caja = cabinaDe(svg, c)
+      const abierta = c !== 'III'
+      const entra = flujosDe(svg, c, 'entrada-frontal').some((l) => !dentroDe(caja, num(l, 'x1'), num(l, 'y1')) && dentroDe(caja, num(l, 'x2'), num(l, 'y2')))
+      if (entra !== abierta) throw new Error(abierta ? `en la clase ${c} el aire del local no entra por la abertura frontal` : 'la clase III aparece con entrada frontal, y es estanca')
+      const guantes = svg.querySelectorAll(`[data-pieza="guante"][data-clase="${c}"]`).length
+      if (guantes > 0 === abierta) throw new Error(abierta ? `la clase ${c} aparece con guantes` : 'la clase III aparece sin guantes')
+      const desc = flujosDe(svg, c, 'descendente').filter((l) => num(l, 'y2') > num(l, 'y1') && dentroDe(caja, num(l, 'x1'), num(l, 'y1')) && dentroDe(caja, num(l, 'x2'), num(l, 'y2')))
+      if (desc.length > 0 !== (c === 'II')) throw new Error(c === 'II' ? 'la clase II no tiene flujo descendente sobre la zona de trabajo' : `la clase ${c} aparece con flujo descendente laminar, que en la NTP 1202 solo tiene la II`)
+    }
+    return 'entrada frontal en la I y la II; la III, estanca y con guantes; descendente solo en la II'
+  })
+
+  control('Cabinas · el aire sale por un HEPA en la I y la II y por dos en serie en la III, y el que entra solo se filtra en la II y la III', () => {
+    const svg = porClave('clases-cabinas')
+    const LEY = { I: [1, 0], II: [1, 1], III: [2, 1] }
+    const filtros = (c, uso) =>
+      [...svg.querySelectorAll(`[data-pieza="hepa"][data-clase="${c}"][data-uso="${uso}"]`)].filter((r) => {
+        const b = r.getBBox()
+        return dentroDe(cabinaDe(svg, c), b.x + b.width / 2, b.y + b.height / 2)
+      })
+    for (const [c, [sal, ent]] of Object.entries(LEY)) {
+      const e = filtros(c, 'extraccion').length
+      const i = filtros(c, 'impulsion').length
+      if (e !== sal || i !== ent) throw new Error(`la clase ${c} tiene ${e} HEPA de salida y ${i} de entrada; la NTP 1202 dice ${sal} y ${ent}`)
+    }
+    const [a, b] = filtros('III', 'extraccion').map((r) => r.getBBox()).sort((p, q) => p.y - q.y)
+    const comun = Math.min(a.x + a.width, b.x + b.width) - Math.max(a.x, b.x)
+    if (comun < 0.8 * Math.min(a.width, b.width) || b.y < a.y + a.height - 0.5) throw new Error('los dos HEPA de salida de la clase III no están en serie, uno tras otro')
+    const h = filtros('III', 'impulsion')[0].getBBox()
+    const cruza = flujosDe(svg, 'III', 'entrada-filtrada').some((l) => num(l, 'x1') > h.x + h.width && num(l, 'x2') < h.x && num(l, 'y1') >= h.y && num(l, 'y1') <= h.y + h.height)
+    if (!cruza) throw new Error('en la clase III el aire no entra a través de su HEPA')
+    return 'salida por 1, 1 y 2 HEPA en serie; entrada filtrada en la II y la III'
+  })
+
+  /*
+   * El microscopio optico. El orden se lee por la altura de cada pieza; el haz,
+   * por su x frente a la caja de cada una. Las cifras se leen de los rotulos.
+   */
+  control('Microscopio · la luz sube de la lámpara al ojo por el diafragma de campo, el condensador, la preparación, el objetivo y el ocular, en ese orden, con el aceite entre el objetivo y la preparación', () => {
+    const svg = porClave('microscopio-optico')
+    const els = piezas(svg, 'elemento')
+      .map((e) => ({ c: e.getAttribute('data-clave'), b: e.getBBox() }))
+      .filter((e) => e.c !== 'tubo')
+      .sort((p, q) => q.b.y + q.b.height / 2 - (p.b.y + p.b.height / 2))
+    const orden = els.map((e) => e.c)
+    const LUZ = ['lampara', 'diafragma-campo', 'condensador', 'platina', 'objetivo', 'ocular']
+    if (orden.join() !== LUZ.join()) throw new Error(`de abajo arriba van ${orden.join(', ')}`)
+    const haz = pieza(svg, 'haz')
+    const x = num(haz, 'x1')
+    const y0 = Math.min(num(haz, 'y1'), num(haz, 'y2'))
+    const y1 = Math.max(num(haz, 'y1'), num(haz, 'y2'))
+    for (const e of els) {
+      if (x < e.b.x || x > e.b.x + e.b.width || e.b.y + e.b.height < y0 || e.b.y > y1) throw new Error(`el haz no atraviesa ${e.c}`)
+    }
+    const ac = pieza(svg, 'aceite').getBBox()
+    const obj = els.find((e) => e.c === 'objetivo').b
+    const pl = els.find((e) => e.c === 'platina').b
+    const ya = ac.y + ac.height / 2
+    if (!(ya > obj.y + obj.height && ya < pl.y)) throw new Error('el aceite no está entre el objetivo y la preparación')
+    return 'lámpara → diafragma de campo → condensador → preparación → objetivo → ocular; el haz los atraviesa todos'
+  })
+
+  control('Microscopio · el aumento total es ocular × objetivo, el útil 500-1000 × AN, la resolución 0,61·λ/AN, y una AN mayor que 0,95 lleva aceite', () => {
+    const svg = porClave('microscopio-optico')
+    const n = (t) => Number(t.replace(',', '.'))
+    const rot = (c) => svg.querySelector(`[data-pieza="rotulo"][data-clave="${c}"]`).textContent
+    const cifra = (c) => svg.querySelector(`[data-pieza="cifra"][data-clave="${c}"]`).textContent.trim()
+    const oc = n(rot('ocular').match(/(\d+)×/)[1])
+    const objT = rot('objetivo')
+    const ob = n(objT.match(/(\d+)×/)[1])
+    const an = n(objT.match(/AN (\d+,\d+)/)[1])
+    const m = cifra('total').match(/(\d+) × (\d+) = (\d+)×/)
+    if (!m || n(m[1]) !== oc || n(m[2]) !== ob || n(m[3]) !== oc * ob) throw new Error(`el aumento total dice «${cifra('total')}», y un ocular de ${oc}× por un objetivo de ${ob}× dan ${oc * ob}×`)
+    const u = cifra('util').match(/= (\d+)-(\d+)×/)
+    if (!u || n(u[1]) !== 500 * an || n(u[2]) !== 1000 * an) throw new Error(`el aumento útil dice «${cifra('util')}», y con AN ${an} es ${500 * an}-${1000 * an}×`)
+    const r = cifra('resolucion').match(/0,61 · (\d+) \/ (\d+,\d+) ≈ (\d+) nm/)
+    if (!r) throw new Error(`no se lee la resolución en «${cifra('resolucion')}»`)
+    if (n(r[2]) !== an) throw new Error(`la resolución usa AN ${r[2]}, y el objetivo es de AN ${an}`)
+    const d = (0.61 * n(r[1])) / an
+    if (Math.abs(d - n(r[3])) > 1) throw new Error(`0,61 · ${r[1]} / ${r[2]} = ${d.toFixed(0)} nm, y el esquema escribe ${r[3]}`)
+    if (an > 0.95 && !/aceite/.test(objT)) throw new Error(`un objetivo de AN ${an} no puede trabajar en seco`)
+    return `${oc} × ${ob} = ${oc * ob}×; útil ${500 * an}-${1000 * an}×; d = ${d.toFixed(0)} nm`
+  })
+
   return resultados
 }
 
@@ -3652,6 +3771,10 @@ const SABOTAJES = {
   103: 'el grupo 3 manipulado en nivel de contención 2',
   104: 'de la salida a la vía de entrada, saltándose el mecanismo de transmisión',
   105: 'la vía parenteral, quitada de la lista de vías de entrada',
+  106: 'un flujo descendente laminar metido en la clase I',
+  107: 'la clase III con un solo HEPA de salida, en vez de dos en serie',
+  108: 'el condensador subido por encima de la platina',
+  109: 'el aumento total escrito como si fuera solo el del objetivo',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3767,6 +3890,10 @@ const CONTROL_DE = {
   103: [99],
   104: [100],
   105: [101],
+  106: [102],
+  107: [103],
+  108: [104],
+  109: [105],
 }
 
 async function main() {
