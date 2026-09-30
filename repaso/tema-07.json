@@ -1,0 +1,681 @@
+{
+  "tema": 7,
+  "titulo": "Los empleados públicos: clases. Derechos y deberes. Adquisición y pérdida de la relación de servicio, situaciones administrativas y régimen disciplinario.",
+  "generadoDe": "temas/tema-07.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-09-30",
+  "flashcards": [
+    {
+      "id": "t07-f01",
+      "anverso": "¿Qué norma regula hoy el Estatuto Básico del Empleado Público? Número, fecha, publicación y entrada en vigor.",
+      "reverso": "El **Real Decreto Legislativo 5/2015, de 30 de octubre**, por el que se aprueba el **texto refundido de la Ley del Estatuto Básico del Empleado Público** (TREBEP). **BOE de 31 de octubre de 2015**; en vigor el **1 de noviembre de 2015**.",
+      "fuente": "RDL 5/2015",
+      "etiquetas": ["estructura"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f02",
+      "anverso": "¿A quién se aplica el TREBEP (art. 2) y cómo se rigen los funcionarios locales (art. 3)?",
+      "reverso": "Al **personal funcionario** y, **en lo que proceda**, al **personal laboral** de la AGE, las comunidades autónomas, **las entidades locales**, los organismos públicos y las universidades públicas. Los funcionarios locales se rigen por la **legislación estatal** (de la que forma parte el Estatuto) y la **autonómica**, **con respeto a la autonomía local**. Para el personal no incluido, es **supletorio**.",
+      "fuente": "TREBEP, arts. 2 y 3",
+      "etiquetas": ["estructura"]
+    },
+    {
+      "id": "t07-f03",
+      "anverso": "¿En qué títulos del TREBEP está cada parte del enunciado del tema?",
+      "reverso": "- **Clases:** Título II (arts. 8 a 13).\n- **Derechos y deberes:** Título III (arts. 14 a 54), con el código de conducta.\n- **Adquisición y pérdida:** Título IV (arts. 55 a 68).\n- **Situaciones administrativas:** Título VI (arts. 85 a 92).\n- **Régimen disciplinario:** Título VII (arts. 93 a 98).\n\nEl Título V (oferta de empleo, grupos, provisión) no está en el enunciado, pero cae.",
+      "fuente": "TREBEP",
+      "etiquetas": ["estructura"]
+    },
+    {
+      "id": "t07-f04",
+      "anverso": "¿Quiénes son empleados públicos y en qué clases se dividen (art. 8)?",
+      "reverso": "Quienes **desempeñan funciones retribuidas en las Administraciones Públicas al servicio de los intereses generales**. Cuatro clases:\n- **a) Funcionarios de carrera.**\n- **b) Funcionarios interinos.**\n- **c) Personal laboral**, fijo, por tiempo indefinido o temporal.\n- **d) Personal eventual.**",
+      "fuente": "TREBEP, art. 8",
+      "etiquetas": ["clases", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f05",
+      "anverso": "¿Qué es un funcionario de carrera y qué funciones le están reservadas (art. 9)?",
+      "reverso": "Quien, **en virtud de nombramiento legal**, está vinculado a una Administración por una **relación estatutaria regulada por el Derecho Administrativo** para servicios profesionales retribuidos **de carácter permanente**. Las funciones que impliquen **participación directa o indirecta en el ejercicio de las potestades públicas** o en la **salvaguardia de los intereses generales** corresponden **exclusivamente a los funcionarios públicos**.",
+      "fuente": "TREBEP, art. 9",
+      "etiquetas": ["clases"]
+    },
+    {
+      "id": "t07-f06",
+      "anverso": "¿En qué cuatro supuestos se nombran funcionarios interinos y con qué duración máxima?",
+      "reverso": "- **a) Plazas vacantes** que no se puedan cubrir con funcionarios de carrera: **máximo tres años** (1233 #1).\n- **b) Sustitución transitoria** de los titulares: el tiempo estrictamente necesario.\n- **c) Programas de carácter temporal:** **tres años**, ampliables **doce meses** por ley de función pública.\n- **d) Exceso o acumulación de tareas:** **nueve meses dentro de un periodo de dieciocho** (1446 #15).",
+      "fuente": "TREBEP, art. 10.1",
+      "etiquetas": ["clases", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f07",
+      "anverso": "¿Cuándo termina la interinidad (art. 10.3 y 10.4)?",
+      "reverso": "Además de por las causas del art. 63: por **cobertura reglada** del puesto por un funcionario de carrera, por **supresión o amortización** del puesto, por **fin del plazo** del nombramiento o por **fin de la causa**. **Sin compensación.** En las vacantes, **a los tres años** acaba la interinidad, salvo que la convocatoria se haya publicado en ese plazo: entonces sigue hasta que se resuelva.",
+      "fuente": "TREBEP, art. 10",
+      "etiquetas": ["clases"]
+    },
+    {
+      "id": "t07-f08",
+      "anverso": "Personal eventual: definición, nombramiento y cese, y si su experiencia cuenta como mérito.",
+      "reverso": "Con **carácter no permanente**, **solo** realiza funciones **expresamente calificadas como de confianza o asesoramiento especial** (12.1). **Nombramiento y cese libres**; cesa **en todo caso** cuando cesa **la autoridad** a la que asesora (12.3). **No puede constituir mérito** para el **acceso** a la función pública **ni** para la **promoción interna** (12.4; 1669 #17).",
+      "fuente": "TREBEP, art. 12",
+      "etiquetas": ["clases", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f09",
+      "anverso": "¿Es el personal directivo profesional una clase de empleado público? ¿Qué rasgos tiene (art. 13)?",
+      "reverso": "**No** está entre las cuatro clases del art. 8.2. Desarrolla **funciones directivas profesionales**; se designa por **mérito, capacidad e idoneidad**, con **publicidad y concurrencia**; se **evalúa** por eficacia, eficiencia y resultados. Sus condiciones **no se negocian colectivamente**; si es laboral, tiene la relación especial de **alta dirección**.",
+      "fuente": "TREBEP, art. 13",
+      "etiquetas": ["clases"]
+    },
+    {
+      "id": "t07-f10",
+      "anverso": "¿Cuál es el derecho individual del art. 14 que solo tienen los funcionarios de carrera?",
+      "reverso": "**La inamovilidad en la condición de funcionario de carrera** (art. 14.a). Ni interinos, ni laborales, ni «los funcionarios» en general. Lo han preguntado 1331 #10, 1521 #10, 1703 #18, 1724 #18 y 1729 #13.",
+      "fuente": "TREBEP, art. 14.a",
+      "etiquetas": ["derechos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f11",
+      "anverso": "Cita ocho derechos individuales del art. 14.",
+      "reverso": "Inamovilidad (de carrera); **desempeño efectivo** de sus funciones; **progresión en la carrera y promoción interna**; **retribuciones e indemnizaciones**; **defensa jurídica** por la Administración; **formación continua**, preferentemente en horario laboral; **intimidad y dignidad** frente al acoso; **no discriminación**; **conciliación**; **desconexión digital**; **libertad de expresión**; **seguridad y salud**; **vacaciones y permisos**; **jubilación**; **Seguridad Social**; **libre asociación profesional**.",
+      "fuente": "TREBEP, art. 14",
+      "etiquetas": ["derechos"]
+    },
+    {
+      "id": "t07-f12",
+      "anverso": "¿Qué derechos individuales se ejercen de forma colectiva (art. 15)?",
+      "reverso": "- **a) Libertad sindical.**\n- **b) Negociación colectiva** y participación en las condiciones de trabajo.\n- **c) Huelga**, garantizando los **servicios esenciales**.\n- **d) Conflictos colectivos.**\n- **e) Reunión** (art. 46).\n\nLa libertad sindical es un **derecho individual que se ejerce de forma colectiva**, no un derecho colectivo (1246 #8, 1458 R4).",
+      "fuente": "TREBEP, art. 15",
+      "etiquetas": ["derechos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f13",
+      "anverso": "¿La libre asociación profesional es un derecho individual o de ejercicio colectivo?",
+      "reverso": "**Individual**: está en el **art. 14.p**, no en el 15 (1669 #19, plantilla: «es un derecho de carácter individual de los empleados públicos»). No confundir con la **libertad sindical**, que se ejerce de forma colectiva.",
+      "fuente": "TREBEP, arts. 14.p y 15",
+      "etiquetas": ["derechos", "examen"]
+    },
+    {
+      "id": "t07-f14",
+      "anverso": "Carrera profesional: ¿qué es y cuáles son sus cuatro modalidades (art. 16)?",
+      "reverso": "El **conjunto ordenado de oportunidades de ascenso y expectativas de progreso profesional** conforme a igualdad, mérito y capacidad. Modalidades:\n- **horizontal:** progresar **sin cambiar de puesto**;\n- **vertical:** ascender en la estructura de puestos;\n- **promoción interna vertical:** a un cuerpo de **subgrupo superior**;\n- **promoción interna horizontal:** a otro cuerpo **del mismo subgrupo**.",
+      "fuente": "TREBEP, art. 16",
+      "etiquetas": ["derechos"]
+    },
+    {
+      "id": "t07-f15",
+      "anverso": "Evaluación del desempeño: ¿es obligatoria?, ¿qué mide?, ¿qué efectos tiene? (art. 20)",
+      "reverso": "Las Administraciones **«establecerán»** sistemas de evaluación: **obligatorio** (1357 #3). **Mide y valora la conducta profesional y el rendimiento o el logro de resultados**. Criterios de **transparencia, objetividad, imparcialidad y no discriminación**, **sin menoscabo de los derechos** (20.2). Efectos en **carrera horizontal, formación, provisión de puestos y retribuciones complementarias** (20.3).",
+      "fuente": "TREBEP, art. 20",
+      "etiquetas": ["derechos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f16",
+      "anverso": "¿La continuidad en qué puestos queda vinculada a la evaluación del desempeño (art. 20.4)?",
+      "reverso": "En los **puestos obtenidos por concurso**, con **audiencia** del interesado y **resolución motivada**. No los de oposición ni los de concurso-oposición (1357, 1360 y 1361 #4).",
+      "fuente": "TREBEP, art. 20.4",
+      "etiquetas": ["derechos", "examen"]
+    },
+    {
+      "id": "t07-f17",
+      "anverso": "Retribuciones de los funcionarios: clases, básicas y pagas extraordinarias.",
+      "reverso": "**Básicas y complementarias** (22.1). Básicas: **única y exclusivamente sueldo y trienios**; el trienio, **por cada tres años de servicio**; se fijan en la **Ley de Presupuestos Generales del Estado** (art. 23). **Dos pagas extraordinarias** al año: una mensualidad de **básicas** más **todas las complementarias**, salvo las de rendimiento y servicios extraordinarios (22.4).",
+      "fuente": "TREBEP, arts. 22 y 23",
+      "etiquetas": ["derechos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f18",
+      "anverso": "¿Cuáles son los órganos de representación de los funcionarios y cuándo corresponde cada uno (art. 39)?",
+      "reverso": "Los **Delegados de Personal** y las **Juntas de Personal** (39.1).\n- **De 6 a 30** funcionarios: **un** Delegado.\n- **De 31 a 49:** **tres** Delegados, conjunta y mancomunadamente.\n- **50 o más:** **Junta de Personal** (39.3; 1344 #10, 1345 #10).",
+      "fuente": "TREBEP, art. 39",
+      "etiquetas": ["derechos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f19",
+      "anverso": "¿Cuántos miembros tiene una Junta de Personal (art. 39.5)?",
+      "reverso": "**5** (50-100 funcionarios), **9** (101-250), **13** (251-500), **17** (501-750), **21** (751-1.000); desde 1.001, **dos por cada mil o fracción**, **máximo 75**. **Quince no está en la escala** (1681 R2: «ninguna de las anteriores»).",
+      "fuente": "TREBEP, art. 39.5",
+      "etiquetas": ["derechos", "examen"]
+    },
+    {
+      "id": "t07-f20",
+      "anverso": "Representantes de personal: mandato, sistema electoral y quién puede convocar una reunión.",
+      "reverso": "- **Mandato:** **cuatro años**, **pudiendo ser reelegidos** (art. 42).\n- **Elección:** las Juntas por **listas cerradas y sistema proporcional corregido**; los Delegados por **listas abiertas y sistema mayoritario** (art. 44.d).\n- **Reunión:** sindicatos, Delegados, Juntas, Comités de Empresa y los empleados en número **no inferior al 40 %** del colectivo (art. 46.1).",
+      "fuente": "TREBEP, arts. 42, 44 y 46",
+      "etiquetas": ["derechos", "examen"]
+    },
+    {
+      "id": "t07-f21",
+      "anverso": "Vacaciones de los funcionarios (art. 50): duración y si se pueden cobrar.",
+      "reverso": "**Veintidós días hábiles** por año natural; **los sábados no cuentan** como hábiles. **No se pueden sustituir por dinero**, salvo si la relación acaba **por causas ajenas** a la voluntad del funcionario.",
+      "fuente": "TREBEP, art. 50",
+      "etiquetas": ["derechos"]
+    },
+    {
+      "id": "t07-f22",
+      "anverso": "Permisos del art. 48: enfermedad grave o fallecimiento de familiar, traslado, asuntos particulares, matrimonio y lactancia.",
+      "reverso": "- Enfermedad grave u hospitalización de cónyuge o familiar de **primer grado**: **5 días hábiles** (segundo grado: 4).\n- **Fallecimiento** de primer grado: **3 días hábiles** en la misma localidad, **5** en otra (segundo grado: 2 y 4).\n- **Traslado de domicilio:** **1 día**.\n- **Asuntos particulares:** **6 días al año**.\n- **Matrimonio** o pareja de hecho: **15 días**.\n- **Lactancia** de hijo menor de doce meses: **1 hora** diaria.",
+      "fuente": "TREBEP, art. 48",
+      "etiquetas": ["derechos"]
+    },
+    {
+      "id": "t07-f23",
+      "anverso": "Permiso por nacimiento y permiso parental (art. 49).",
+      "reverso": "**Diecinueve semanas** para la madre biológica y **diecinueve** para el otro progenitor (**treinta y dos** si hay un solo progenitor). Las **seis semanas** posteriores al parto son **obligatorias e ininterrumpidas**. El **permiso parental**, hasta que el menor cumpla **ocho años**: **hasta ocho semanas**, **no retribuido**. Redacción del **RDL 9/2025**.",
+      "fuente": "TREBEP, art. 49",
+      "etiquetas": ["derechos"]
+    },
+    {
+      "id": "t07-f24",
+      "anverso": "¿Qué dice el art. 52 sobre los deberes, y qué papel tiene el código de conducta?",
+      "reverso": "Desempeñar **con diligencia** sus tareas y velar por los **intereses generales**, con sujeción a la **Constitución y el resto del ordenamiento**, con arreglo a principios como **objetividad, integridad, neutralidad, imparcialidad, confidencialidad, transparencia, ejemplaridad, austeridad, honradez**… El código lo forman los **principios éticos** (art. 53) y **de conducta** (art. 54), que **informan el régimen disciplinario**.",
+      "fuente": "TREBEP, art. 52",
+      "etiquetas": ["deberes"]
+    },
+    {
+      "id": "t07-f25",
+      "anverso": "Art. 53.1: ¿qué respetarán los empleados públicos?",
+      "reverso": "**La Constitución y el resto de normas que integran el ordenamiento jurídico.** No «la ley», ni «la ley y el derecho», ni solo «la Constitución». Ha caído en **nueve** cuestionarios (1357 #1, 1362 #2, 1476 #2…).",
+      "fuente": "TREBEP, art. 53.1",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f26",
+      "anverso": "Art. 53.12: ¿sobre qué guardan secreto los empleados públicos y sobre qué discreción?",
+      "reverso": "**Secreto** de las **materias clasificadas** u otras cuya difusión esté prohibida legalmente; **debida discreción** sobre los asuntos que conozcan **por razón de su cargo**, sin usar la información en beneficio propio o de terceros (1377 #2, 1553 #4, 1554 #2: la respuesta es **solo las materias clasificadas**).",
+      "fuente": "TREBEP, art. 53.12",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f27",
+      "anverso": "Art. 53.7 y 53.9: tratos de favor e influencia en los trámites.",
+      "reverso": "- **53.7:** no aceptarán ningún trato de favor o situación que implique **privilegio o ventaja injustificada** de personas físicas o entidades privadas (1372 #1).\n- **53.9:** **no influirán** en la agilización o resolución de trámites **sin justa causa**, y nunca en beneficio de cargos públicos o su entorno, o en perjuicio de terceros (1377 #3, 1554 #3).",
+      "fuente": "TREBEP, art. 53",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f28",
+      "anverso": "Cita el resto de principios éticos del art. 53 (apartados 2 a 6, 8, 10 y 11).",
+      "reverso": "Perseguir **los intereses generales** con **consideraciones objetivas**; **lealtad y buena fe**; respeto a los **derechos fundamentales** sin discriminación; **abstenerse** si hay **interés personal** o riesgo de **conflicto de intereses**; no contraer **obligaciones económicas** en conflicto; **eficacia, economía y eficiencia**; **resolver en plazo**; **dedicación al servicio público** y **neutralidad**.",
+      "fuente": "TREBEP, art. 53",
+      "etiquetas": ["deberes"]
+    },
+    {
+      "id": "t07-f29",
+      "anverso": "Art. 54.3: ¿deben obedecer los empleados públicos las órdenes de sus superiores?",
+      "reverso": "**Sí, salvo que constituyan una infracción manifiesta del ordenamiento jurídico.** En ese caso las pondrán **inmediatamente en conocimiento de los órganos de inspección**. Una orden que constituya **delito** no hay deber de obedecerla (1553 #6, 1486 #1, 1567 #1).",
+      "fuente": "TREBEP, art. 54.3",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f30",
+      "anverso": "Art. 54.6: ¿qué regalos, favores o servicios deben rechazar los empleados públicos?",
+      "reverso": "Los que se hagan **en condiciones ventajosas** y **vayan más allá de los usos habituales, sociales y de cortesía**, sin perjuicio del Código Penal. No «todos», ni «todos los ventajosos» (1497 R4, 1367 #2).",
+      "fuente": "TREBEP, art. 54.6",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f31",
+      "anverso": "Cita los principios de conducta del art. 54 que más caen (apartados 1, 2, 5, 7, 8 y 11).",
+      "reverso": "- **1:** atención y respeto a **los ciudadanos, sus superiores y los restantes empleados**.\n- **2:** tareas **de forma diligente** y **cumpliendo la jornada y el horario**.\n- **5:** recursos públicos **con austeridad**.\n- **7:** **constancia y permanencia** de los documentos.\n- **8:** mantener actualizada su **formación y cualificación**.\n- **11:** atención en la lengua que pida el ciudadano **si es oficial en el territorio**.",
+      "fuente": "TREBEP, art. 54",
+      "etiquetas": ["deberes", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f32",
+      "anverso": "¿Qué principios rigen el acceso al empleo público (art. 55)?",
+      "reverso": "**Igualdad, mérito y capacidad**, y además: **publicidad** de convocatorias y bases; **transparencia**; **imparcialidad y profesionalidad** de los órganos de selección; su **independencia y discrecionalidad técnica**; **adecuación** de las pruebas a las funciones; **agilidad** sin perjuicio de la objetividad.",
+      "fuente": "TREBEP, art. 55",
+      "etiquetas": ["acceso"]
+    },
+    {
+      "id": "t07-f33",
+      "anverso": "Requisitos generales para participar en un proceso selectivo (art. 56.1).",
+      "reverso": "- **Nacionalidad española** (salvo el art. 57).\n- **Capacidad funcional.**\n- **Dieciséis años** y no exceder la **edad de jubilación forzosa** (otra edad máxima, **solo por ley**).\n- **No haber sido separado** por expediente disciplinario **ni estar inhabilitado**.\n- La **titulación** exigida.",
+      "fuente": "TREBEP, art. 56",
+      "etiquetas": ["acceso"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f34",
+      "anverso": "¿Qué cupo se reserva a personas con discapacidad en las ofertas de empleo público (art. 59)?",
+      "reverso": "**No inferior al siete por ciento de las vacantes**, hasta alcanzar el **dos por ciento de los efectivos** de cada Administración. Dentro del 7 %, **al menos el 2 % de las plazas** es para **discapacidad intelectual** (1446 #17, 1779 #16).",
+      "fuente": "TREBEP, art. 59",
+      "etiquetas": ["acceso", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f35",
+      "anverso": "Órganos de selección (art. 60): cómo son, quién no puede formar parte y a qué título se pertenece.",
+      "reverso": "**Colegiados**, con **imparcialidad y profesionalidad**, tendiendo a la **paridad** (60.1). **No pueden formar parte** el **personal de elección o de designación política**, los **funcionarios interinos** y el **personal eventual** (60.2); el laboral **sí**. La pertenencia es **siempre a título individual** (60.3).",
+      "fuente": "TREBEP, art. 60",
+      "etiquetas": ["acceso", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f36",
+      "anverso": "Sistemas selectivos (art. 61.6 y 61.7): funcionarios de carrera y personal laboral fijo.",
+      "reverso": "**Funcionarios de carrera:** **oposición y concurso-oposición**. **Solo en virtud de ley** podrá aplicarse, **con carácter excepcional**, el **concurso**, que consiste **únicamente en la valoración de méritos** (1246 #9, 1312 #8, 1779 #17). **Laboral fijo:** oposición, concurso-oposición o **concurso de valoración de méritos**.",
+      "fuente": "TREBEP, art. 61",
+      "etiquetas": ["acceso", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f37",
+      "anverso": "¿Cómo se adquiere la condición de funcionario de carrera (art. 62)?",
+      "reverso": "Por el **cumplimiento sucesivo** de cuatro requisitos:\n1. **superación del proceso selectivo**;\n2. **nombramiento**, publicado en el diario oficial;\n3. **acto de acatamiento** de la Constitución, el Estatuto de Autonomía y el resto del ordenamiento;\n4. **toma de posesión** en plazo.",
+      "fuente": "TREBEP, art. 62",
+      "etiquetas": ["acceso"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f38",
+      "anverso": "¿Cuáles son las cinco causas de pérdida de la condición de funcionario de carrera (art. 63)?",
+      "reverso": "- **a) Renuncia.**\n- **b) Pérdida de la nacionalidad.**\n- **c) Jubilación total.**\n- **d) Separación del servicio** firme.\n- **e) Pena de inhabilitación** absoluta o especial firme.",
+      "fuente": "TREBEP, art. 63",
+      "etiquetas": ["perdida"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f39",
+      "anverso": "Renuncia a la condición de funcionario (art. 64): forma, cuándo no se acepta y si impide volver.",
+      "reverso": "**Por escrito** y **aceptada expresamente** por la Administración. **No se acepta** si hay **expediente disciplinario** o **auto de procesamiento o de apertura de juicio oral** por delito. **No inhabilita para volver a ingresar**, por el procedimiento de selección (1446 #18, 1669 #20).",
+      "fuente": "TREBEP, art. 64",
+      "etiquetas": ["perdida", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f40",
+      "anverso": "Jubilación (art. 67) e inhabilitación (art. 66).",
+      "reverso": "Jubilación **voluntaria, forzosa o por incapacidad permanente**. La **forzosa**, de oficio **a los 65 años**, con **prolongación** posible **hasta los 70**; para el Régimen General manda la edad de la pensión ordinaria. La **inhabilitación absoluta** hace perder **todos** los empleos; la **especial**, **los que diga la sentencia**.",
+      "fuente": "TREBEP, arts. 66 y 67",
+      "etiquetas": ["perdida"]
+    },
+    {
+      "id": "t07-f41",
+      "anverso": "¿Cuáles son las situaciones administrativas de los funcionarios de carrera (art. 85)?",
+      "reverso": "- **a) Servicio activo.**\n- **b) Servicios especiales.**\n- **c) Servicio en otras Administraciones Públicas.**\n- **d) Excedencia.**\n- **e) Suspensión de funciones.**\n\nLas leyes de función pública pueden regular otras.",
+      "fuente": "TREBEP, art. 85",
+      "etiquetas": ["situaciones"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f42",
+      "anverso": "Servicios especiales (art. 87): tres supuestos y qué cobra el funcionario.",
+      "reverso": "Por ejemplo: **miembro del Gobierno o alto cargo**; **diputado, senador o parlamentario autonómico retribuido**; **cargo electivo local retribuido y con dedicación exclusiva**; misión de **más de seis meses** en organismos internacionales. Cobra **las retribuciones del cargo**, no las de funcionario, **salvo los trienios**; el tiempo **computa** para ascensos, trienios y Seguridad Social, y reingresa **en la misma localidad**.",
+      "fuente": "TREBEP, art. 87",
+      "etiquetas": ["situaciones"]
+    },
+    {
+      "id": "t07-f43",
+      "anverso": "Excedencia voluntaria por interés particular (art. 89.2): requisito, límites y efectos.",
+      "reverso": "**Cinco años** de servicios efectivos **inmediatamente anteriores** (1446 #19), o menos si lo dice la ley de función pública. **Subordinada a las necesidades del servicio**; **no** se concede con **expediente disciplinario** en curso. **Sin retribuciones**; el tiempo **no computa** para ascensos, trienios ni Seguridad Social.",
+      "fuente": "TREBEP, art. 89.2",
+      "etiquetas": ["situaciones", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f44",
+      "anverso": "Excedencia por cuidado de familiares y por violencia de género (art. 89.4 y 89.5).",
+      "reverso": "- **Cuidado:** hasta **tres años** por **cada hijo** o por familiar **hasta el segundo grado** que no pueda valerse. **Computa** para trienios, carrera y Seguridad Social; **reserva del puesto dos años**.\n- **Violencia de género o sexual:** **sin** tiempo previo; **reserva del puesto seis meses**, prorrogable **hasta dieciocho**; retribuciones íntegras los **dos primeros meses**.",
+      "fuente": "TREBEP, art. 89",
+      "etiquetas": ["situaciones"]
+    },
+    {
+      "id": "t07-f45",
+      "anverso": "Suspensión de funciones (art. 90): efectos, cuándo se pierde el puesto y límite de la firme.",
+      "reverso": "Priva del **ejercicio de las funciones y de todos los derechos**. **Se pierde el puesto si pasa de seis meses.** La **firme** se impone por **sentencia en causa criminal** o por **sanción disciplinaria**, y por sanción **no puede exceder de seis años** (1756 #12).",
+      "fuente": "TREBEP, art. 90",
+      "etiquetas": ["situaciones", "examen"]
+    },
+    {
+      "id": "t07-f46",
+      "anverso": "Responsabilidad disciplinaria (art. 93): quién responde y qué rige al personal laboral.",
+      "reverso": "Los **funcionarios** y el **personal laboral**. Quien **induce** a cometer una falta, **la misma responsabilidad**; quien **encubre faltas consumadas muy graves o graves** con daño grave, también. El **personal laboral** se rige, **en lo no previsto en el Estatuto, por la legislación laboral** (93.4; 1357 #5).",
+      "fuente": "TREBEP, art. 93",
+      "etiquetas": ["disciplina", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f47",
+      "anverso": "¿Cómo se clasifican las faltas disciplinarias y cuáles son muy graves (art. 95)? Cita siete.",
+      "reverso": "**Muy graves, graves y leves** (95.1; dieciséis veces en los exámenes). Muy graves, entre otras:\n- **abandono del servicio**;\n- **acoso laboral**, y el acoso moral, sexual o discriminatorio;\n- **obstaculizar las libertades públicas y derechos sindicales**;\n- no atender **los servicios esenciales en caso de huelga**;\n- **desobediencia abierta** a una orden, salvo infracción manifiesta;\n- **publicar o usar indebidamente** información del cargo;\n- incumplir las **incompatibilidades**.",
+      "fuente": "TREBEP, art. 95",
+      "etiquetas": ["disciplina", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f48",
+      "anverso": "Sanciones disciplinarias (art. 96).",
+      "reverso": "- **Separación del servicio**, solo por **muy graves** (en interinos, **revocación del nombramiento**).\n- **Despido disciplinario** del laboral, solo por **muy graves**.\n- **Suspensión firme** de funciones: **máximo seis años**.\n- **Traslado forzoso, con o sin cambio de localidad** (1497 R5).\n- **Demérito.**\n- **Apercibimiento.**\n- Otras que establezca una **ley**.",
+      "fuente": "TREBEP, art. 96",
+      "etiquetas": ["disciplina", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t07-f49",
+      "anverso": "Mirando el esquema: ¿qué distingue al personal eventual del funcionario interino, si los dos entran sin ser permanentes?",
+      "reverso": "El **interino** hace funciones **propias de funcionarios de carrera** por **razones de necesidad y urgencia**, y se selecciona por procedimiento **público** (art. 10). El **eventual** se nombra y cesa **libremente**, cesa **con la autoridad** a la que asesora y **no puede formar parte de un tribunal**, igual que el interino (arts. 12 y 60.2).",
+      "fuente": "TREBEP, arts. 10, 12 y 60.2",
+      "etiquetas": ["figura", "clases"],
+      "figura": { "tipo": "esquema", "valor": "clases-empleados-publicos" }
+    },
+    {
+      "id": "t07-f50",
+      "anverso": "Mirando el esquema: ¿cómo se tramita el expediente antes de poder sancionar, y cuánto puede durar la suspensión provisional?",
+      "reverso": "Muy graves y graves, **solo por el procedimiento establecido**; leves, por **procedimiento sumario con audiencia**. Instrucción y sanción, en **órganos distintos**. La **suspensión provisional** no pasa de **6 meses** (salvo paralización imputable al interesado), y durante ella se cobran **las retribuciones básicas** (art. 98).",
+      "fuente": "TREBEP, art. 98",
+      "etiquetas": ["figura", "disciplina"],
+      "figura": { "tipo": "esquema", "valor": "prescripcion-faltas-sanciones" }
+    }
+  ],
+  "test": [
+    {
+      "id": "t07-q01",
+      "pregunta": "De acuerdo con el artículo 95 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, las faltas disciplinarias pueden ser:",
+      "opciones": ["Graves y leves", "Muy graves, graves y leves", "Graves, menos graves y leves"],
+      "correcta": 1,
+      "explicacion": "Art. 95.1. Pregunta literal de 1322 #10, de nuestra plaza (plantilla definitiva: b). Ha caído dieciséis veces.",
+      "fuente": "TREBEP, art. 95.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q02",
+      "pregunta": "De acuerdo con el artículo 60.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, no podrá formar parte de los órganos de selección:",
+      "opciones": ["El personal con legislación específica propia", "El personal laboral", "El personal eventual"],
+      "correcta": 2,
+      "explicacion": "Art. 60.2: el personal de elección o designación política, los interinos y los eventuales. Pregunta literal de 1322 #7 (plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 60.2",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q03",
+      "pregunta": "De acuerdo con el artículo 12.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el personal que, en virtud de nombramiento y con carácter no permanente, sólo realiza funciones expresamente calificadas como de confianza o asesoramiento especial es el:",
+      "opciones": ["Personal directivo", "Personal eventual", "Personal laboral temporal"],
+      "correcta": 1,
+      "explicacion": "Art. 12.1, literal. Pregunta de 1322 #8 (plantilla definitiva: b).",
+      "fuente": "TREBEP, art. 12.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q04",
+      "pregunta": "De acuerdo con el artículo 76 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, para el acceso al grupo/subgrupo A2 la titulación exigida es:",
+      "opciones": ["Técnico Superior", "Título universitario de Grado", "Ninguna de las respuestas anteriores es correcta"],
+      "correcta": 1,
+      "explicacion": "Art. 76: grupo A (A1 y A2), Grado; B, Técnico Superior; C1, Bachiller o Técnico; C2, ESO. Pregunta literal de 1322 #9 (plantilla definitiva: b).",
+      "fuente": "TREBEP, art. 76",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q05",
+      "pregunta": "De acuerdo con el artículo 15 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los empleados públicos tienen, entre otros derechos individuales que se ejercen colectivamente:",
+      "opciones": ["El derecho a percibir las retribuciones y las indemnizaciones por razón de servicio", "El derecho a la libertad sindical", "El derecho a recibir protección eficaz en materia de seguridad y salud en el trabajo"],
+      "correcta": 1,
+      "explicacion": "Art. 15.a. Las otras dos son derechos individuales del art. 14. Pregunta de 1246 #8, de nuestra plaza (plantilla provisional: b), repetida el mismo día en 1448 #8.",
+      "fuente": "TREBEP, art. 15",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q06",
+      "pregunta": "De acuerdo con el artículo 61.6 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el concurso es un sistema selectivo:",
+      "opciones": ["Que solo podrá aplicarse en virtud de ley", "Que tiene carácter excepcional", "Las respuestas a) y b) son correctas"],
+      "correcta": 2,
+      "explicacion": "Art. 61.6: «sólo en virtud de ley podrá aplicarse, con carácter excepcional, el sistema de concurso». Pregunta de 1246 #9 (plantilla provisional: c).",
+      "fuente": "TREBEP, art. 61.6",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q07",
+      "pregunta": "De acuerdo con el artículo 70.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, la ejecución de la oferta de empleo público deberá desarrollarse dentro del plazo improrrogable de:",
+      "opciones": ["Un año", "Tres años", "Cinco años"],
+      "correcta": 1,
+      "explicacion": "Art. 70.1. Pregunta de 1246 #10 (plantilla provisional: b); también 1779 #18.",
+      "fuente": "TREBEP, art. 70.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q08",
+      "pregunta": "Son funcionarios interinos los que, por razones expresamente justificadas de necesidad y urgencia, son nombrados como tales con carácter temporal para el desempeño de funciones propias de funcionarios de carrera, cuando se dé alguna de las siguientes circunstancias:",
+      "opciones": ["La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de carrera, por un máximo de dos años, en los términos previstos en el apartado 4", "La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de carrera, por un máximo de cuatro años, en los términos previstos en el apartado 4", "La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de carrera, por un máximo de tres años, en los términos previstos en el apartado 4"],
+      "correcta": 2,
+      "explicacion": "Art. 10.1.a: tres años. Pregunta literal de 1233 #1, de nuestra plaza (plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 10.1.a",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q09",
+      "pregunta": "De acuerdo con el artículo 10.1.d) del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el nombramiento de funcionarios interinos por exceso o acumulación de tareas tiene un plazo máximo de:",
+      "opciones": ["Dieciocho meses", "Doce meses", "Nueve meses"],
+      "correcta": 2,
+      "explicacion": "Nueve meses dentro de un periodo de dieciocho: el dieciocho es el distractor. Pregunta literal de 1446 #15 (Policía Local; plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 10.1.d",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q10",
+      "pregunta": "¿Establece el artículo 89.2, párrafo primero, del Real Decreto Legislativo 5/2015, de 30 de octubre, un periodo mínimo de prestación de servicios efectivos inmediatamente anteriores para que los funcionarios de carrera puedan obtener la excedencia voluntaria por interés particular?",
+      "opciones": ["No establece periodo mínimo", "Sí establece periodo mínimo. Cinco años", "Sí establece periodo mínimo. Tres años"],
+      "correcta": 1,
+      "explicacion": "Art. 89.2: cinco años, salvo que la ley de función pública fije menos. Pregunta de 1446 #19 (plantilla definitiva: b).",
+      "fuente": "TREBEP, art. 89.2",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q11",
+      "pregunta": "De acuerdo con el artículo 46.1.d) del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, están legitimados para convocar una reunión, entre otros, los empleados públicos de las Administraciones respectivas en número no inferior al:",
+      "opciones": ["20 por 100 del colectivo convocado", "30 por 100 del colectivo convocado", "40 por 100 del colectivo convocado"],
+      "correcta": 2,
+      "explicacion": "Art. 46.1.d. Pregunta literal de 1446 #16 (plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 46.1.d"
+    },
+    {
+      "id": "t07-q12",
+      "pregunta": "De acuerdo con el artículo 59 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el cupo que debe reservarse en las ofertas de empleo público para personas que acrediten discapacidad intelectual será de, al menos:",
+      "opciones": ["El dos por ciento de las plazas ofertadas", "El uno por ciento de las plazas ofertadas", "El tres por ciento de las plazas ofertadas"],
+      "correcta": 0,
+      "explicacion": "Art. 59.1: dentro del 7 % de las vacantes, al menos el 2 % para discapacidad intelectual. Pregunta de 1446 #17 (plantilla definitiva: a).",
+      "fuente": "TREBEP, art. 59",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q13",
+      "pregunta": "De acuerdo con el artículo 97 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, las faltas disciplinarias graves y las sanciones impuestas por faltas graves prescribirán:",
+      "opciones": ["Al año", "A los dos años", "A los tres años"],
+      "correcta": 1,
+      "explicacion": "Art. 97.1: faltas y sanciones graves, a los dos años. Pregunta de 1446 #20 (plantilla definitiva: b; una lectura anterior la daba por anulada, corregida el 30/09/2026).",
+      "fuente": "TREBEP, art. 97.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q14",
+      "pregunta": "De acuerdo con el artículo 96.1.d) del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el traslado forzoso como sanción que puede imponerse a los empleados públicos:",
+      "opciones": ["Es con cambio de localidad de residencia", "Es sin cambio de localidad de residencia", "Puede ser con o sin cambio de localidad de residencia"],
+      "correcta": 2,
+      "explicacion": "Art. 96.1.d. Basada en 1497 R5 (plantilla provisional: c), reducida a tres opciones.",
+      "fuente": "TREBEP, art. 96.1.d"
+    },
+    {
+      "id": "t07-q15",
+      "pregunta": "De acuerdo con el artículo 39.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los órganos específicos de representación de los funcionarios son:",
+      "opciones": ["Las Juntas de Personal", "Los Delegados de Personal", "Las respuestas a) y b) son correctas"],
+      "correcta": 2,
+      "explicacion": "Art. 39.1: los Delegados de Personal y las Juntas de Personal. Pregunta literal de 1736 #8 (plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 39.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q16",
+      "pregunta": "De acuerdo con el artículo 12.4 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público:",
+      "opciones": ["La condición de personal eventual podrá constituir mérito para el acceso a la Función Pública", "La condición de personal eventual podrá constituir mérito para la promoción interna", "La condición de personal eventual no podrá constituir mérito para el acceso a la Función Pública"],
+      "correcta": 2,
+      "explicacion": "Art. 12.4: ni para el acceso ni para la promoción interna. Basada en 1669 #17 (plantilla provisional: la última opción), reducida a tres opciones.",
+      "fuente": "TREBEP, art. 12.4"
+    },
+    {
+      "id": "t07-q17",
+      "pregunta": "El Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, establece en su artículo 60.3 que la pertenencia a los órganos de selección:",
+      "opciones": ["Será siempre a título individual", "Podrá ser a título individual o realizarse en representación de otra institución", "Se realizará en representación de una Administración pública"],
+      "correcta": 0,
+      "explicacion": "Art. 60.3, literal. Pregunta de 1703 #20 (Policía Local; plantilla definitiva: a).",
+      "fuente": "TREBEP, art. 60.3",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q18",
+      "pregunta": "El Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, dice en su artículo 20.4 que quedará vinculada a la evaluación del desempeño la continuidad en un puesto de trabajo:",
+      "opciones": ["Obtenido por oposición", "Obtenido por concurso-oposición", "Obtenido por concurso"],
+      "correcta": 2,
+      "explicacion": "Art. 20.4. Pregunta literal de 1357, 1360 y 1361 #4 (plantilla definitiva: c).",
+      "fuente": "TREBEP, art. 20.4"
+    },
+    {
+      "id": "t07-q19",
+      "pregunta": "El artículo 93.4 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, dice que el régimen disciplinario del personal laboral se regirá:",
+      "opciones": ["Por la legislación laboral", "En lo no previsto en dicho Estatuto, por la legislación laboral", "Por dicho Estatuto"],
+      "correcta": 1,
+      "explicacion": "Art. 93.4. Pregunta literal de 1357, 1360 y 1361 #5 (plantilla definitiva: b).",
+      "fuente": "TREBEP, art. 93.4"
+    },
+    {
+      "id": "t07-q20",
+      "pregunta": "El Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, tipifica en el artículo 95.2.m) como falta muy grave:",
+      "opciones": ["El incumplimiento de la obligación de atender el servicio en caso de huelga", "El incumplimiento de la obligación de atender los servicios esenciales en caso de huelga", "Ninguna de las dos respuestas anteriores es correcta"],
+      "correcta": 1,
+      "explicacion": "Art. 95.2.m: los servicios esenciales. Pregunta literal de 1372 #9 (plantilla definitiva: b) y 1543 #9.",
+      "fuente": "TREBEP, art. 95.2.m"
+    },
+    {
+      "id": "t07-q21",
+      "pregunta": "De acuerdo con el artículo 54.3 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los empleados públicos que reciban de su superior una orden que constituya delito:",
+      "opciones": ["No tienen el deber de obedecerla", "Deben obedecerla", "Deben obedecerla o no según el delito de que se trate"],
+      "correcta": 0,
+      "explicacion": "Art. 54.3: se obedece salvo infracción manifiesta del ordenamiento; un delito lo es. Pregunta literal de 1553 #6 (plantilla provisional: a).",
+      "fuente": "TREBEP, art. 54.3",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q22",
+      "pregunta": "De acuerdo con el artículo 54.6 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los empleados públicos deben rechazar cualquier regalo, favor o servicio:",
+      "opciones": ["Solo si el regalo, favor o servicio se realiza en condiciones ventajosas", "Solo si el regalo, favor o servicio se realiza en condiciones ventajosas que vaya más allá de los usos habituales, sociales y de cortesía", "En todo caso"],
+      "correcta": 1,
+      "explicacion": "Art. 54.6. Pregunta literal de 1367 #2 (plantilla provisional: b); en la misma línea, 1497 R4.",
+      "fuente": "TREBEP, art. 54.6",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q23",
+      "pregunta": "El Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, establece en su artículo 53.12 que los empleados públicos guardarán secreto:",
+      "opciones": ["De las materias clasificadas", "Sobre aquellos asuntos que conozcan por razón de su cargo", "Las respuestas a) y b) son correctas"],
+      "correcta": 0,
+      "explicacion": "Art. 53.12: secreto de lo clasificado; sobre lo que conozcan por el cargo, discreción. Pregunta literal de 1377 #2 y 1554 #2 (plantillas: a).",
+      "fuente": "TREBEP, art. 53.12",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q24",
+      "pregunta": "De acuerdo con el artículo 95.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, el acoso laboral es una falta disciplinaria:",
+      "opciones": ["Leve", "Grave", "Muy grave"],
+      "correcta": 2,
+      "explicacion": "Art. 95.2.o. Basada en 1669 #18 (plantilla provisional: muy grave), reducida a tres opciones.",
+      "fuente": "TREBEP, art. 95.2.o"
+    },
+    {
+      "id": "t07-q25",
+      "pregunta": "De acuerdo con el artículo 39.3 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto refundido del Estatuto Básico del Empleado Público, las Juntas de Personal se constituirán en unidades electorales que cuenten con un censo mínimo de:",
+      "opciones": ["25 funcionarios", "50 funcionarios", "100 funcionarios"],
+      "correcta": 1,
+      "explicacion": "Art. 39.3. Por debajo, Delegados de Personal. Pregunta literal de 1345 #10 (plantilla definitiva: b) y 1344 #10.",
+      "fuente": "TREBEP, art. 39.3"
+    },
+    {
+      "id": "t07-q26",
+      "pregunta": "El artículo 59.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, dice que en las ofertas de empleo público se reservará un cupo de las vacantes para ser cubiertas entre personas con discapacidad y que dicho cupo no será inferior:",
+      "opciones": ["Al siete por ciento de las vacantes", "Al cinco por ciento de las vacantes", "Al tres por ciento de las vacantes"],
+      "correcta": 0,
+      "explicacion": "Art. 59.1. Basada en 1779 #16 (plantilla definitiva: a), reducida a tres opciones.",
+      "fuente": "TREBEP, art. 59.1"
+    },
+    {
+      "id": "t07-q27",
+      "pregunta": "De acuerdo con el artículo 54.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los empleados públicos tratarán con atención y respeto:",
+      "opciones": ["A los ciudadanos, a sus superiores y a los restantes empleados públicos", "A los ciudadanos y a sus superiores", "A los ciudadanos"],
+      "correcta": 0,
+      "explicacion": "Art. 54.1. Pregunta literal de 1367 #1 (plantilla provisional: a).",
+      "fuente": "TREBEP, art. 54.1"
+    },
+    {
+      "id": "t07-q28",
+      "pregunta": "De acuerdo con el artículo 54.11 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, los empleados públicos garantizarán la atención al ciudadano en la lengua que lo solicite:",
+      "opciones": ["Siempre que sea oficial en el territorio", "Siempre que sea oficial en el municipio", "Siempre que sea oficial en la Comunidad Autónoma"],
+      "correcta": 0,
+      "explicacion": "Art. 54.11. Pregunta literal de 1367 #3 (plantilla provisional: a).",
+      "fuente": "TREBEP, art. 54.11"
+    },
+    {
+      "id": "t07-q29",
+      "pregunta": "El artículo 95.2 c) del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, ¿tipifica el abandono del servicio como una falta disciplinaria?",
+      "opciones": ["Sí", "No", "Sí, cuando no constituya delito"],
+      "correcta": 0,
+      "explicacion": "Art. 95.2.c: falta muy grave, sin más condición. Pregunta literal de 1362 #10 (plantilla provisional: a), y de 1476, 1482 y 1483 #10.",
+      "fuente": "TREBEP, art. 95.2.c",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q30",
+      "pregunta": "De acuerdo con el artículo 64 del Real Decreto Legislativo 5/2015, de 30 de octubre, por el que se aprueba el texto refundido de la Ley del Estatuto Básico del Empleado Público, la renuncia a la condición de funcionario:",
+      "opciones": ["No inhabilita para ingresar de nuevo en la Administración Pública", "Inhabilita para ingresar de nuevo en la Administración Pública", "Inhabilita para empleo o cargo público"],
+      "correcta": 0,
+      "explicacion": "Art. 64.3: no inhabilita, a través del procedimiento de selección establecido. Basada en 1669 #20 (plantilla provisional: a), reducida a tres opciones; también 1446 #18.",
+      "fuente": "TREBEP, art. 64.3",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q31",
+      "pregunta": "Según el artículo 97 del TREBEP, las sanciones impuestas por faltas leves prescriben:",
+      "opciones": ["Al año", "A los seis meses", "A los dos años"],
+      "correcta": 0,
+      "explicacion": "Art. 97.1: la falta leve prescribe a los seis meses, pero la sanción impuesta por ella, al año. Es el único caso en que no coinciden.",
+      "fuente": "TREBEP, art. 97.1",
+      "nucleo": true
+    },
+    {
+      "id": "t07-q32",
+      "pregunta": "Según el artículo 85 del TREBEP, NO es una situación administrativa de los funcionarios de carrera:",
+      "opciones": ["Los servicios especiales", "La suspensión de funciones", "La comisión de servicios"],
+      "correcta": 2,
+      "explicacion": "Art. 85.1: servicio activo, servicios especiales, servicio en otras Administraciones, excedencia y suspensión de funciones. La comisión de servicios es una forma de provisión de puestos, no una situación.",
+      "fuente": "TREBEP, art. 85"
+    },
+    {
+      "id": "t07-q33",
+      "pregunta": "Según el artículo 50 del TREBEP, los funcionarios públicos tienen derecho a unas vacaciones retribuidas, por año natural, de:",
+      "opciones": ["Veintidós días hábiles", "Treinta días naturales", "Veintidós días naturales"],
+      "correcta": 0,
+      "explicacion": "Art. 50.1: veintidós días hábiles, sin contar los sábados, o los proporcionales si se trabajó menos del año.",
+      "fuente": "TREBEP, art. 50.1"
+    }
+  ],
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas."
+  },
+  "supuestos": [],
+  "nucleoCriterio": "Es el tema con mas precedente de toda la parte comun: 160 preguntas en 58 cuestionarios del Ayuntamiento (2023-2026), 105 con plantilla oficial, y ocho en nuestra plaza (1233 #1, 1246 #8-10, 1322 #7-10). El nucleo recoge lo que se repite: la clasificacion de las faltas y las muy graves (art. 95), el codigo de conducta (arts. 53 y 54), los organos de seleccion y el concurso (arts. 60 y 61), el personal eventual (art. 12), la inamovilidad y la libertad sindical (arts. 14 y 15), y las preguntas literales de nuestra plaza."
+}
