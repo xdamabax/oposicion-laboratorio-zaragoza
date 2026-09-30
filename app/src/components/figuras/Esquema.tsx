@@ -65,6 +65,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'impuestos-municipales': 'Los cinco impuestos municipales: obligatorios y potestativos',
   'clases-empleados-publicos': 'Las clases de empleados públicos (art. 8)',
   'prescripcion-faltas-sanciones': 'Cuándo prescriben las faltas y las sanciones (art. 97)',
+  'escalas-funcion-publica-local': 'Escalas y subescalas de la función pública local',
+  'umbrales-prevencion': 'La prevención según el número de trabajadores',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -124,6 +126,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'impuestos-municipales': { ancho: 580, alto: 250 },
   'clases-empleados-publicos': { ancho: 580, alto: 290 },
   'prescripcion-faltas-sanciones': { ancho: 580, alto: 256 },
+  'escalas-funcion-publica-local': { ancho: 580, alto: 356 },
+  'umbrales-prevencion': { ancho: 580, alto: 262 },
 }
 
 const AZUL = '#9ecbe8'
@@ -5996,6 +6000,196 @@ function PrescripcionFaltasSanciones() {
   )
 }
 
+/**
+ * Estructura de la funcion publica local: la escala de habilitacion nacional
+ * con sus tres subescalas (art. 92 bis.2 LBRL) y las dos escalas propias de
+ * cada corporacion (art. 167 TRRL): General, con cinco subescalas en su orden,
+ * y Especial, con la Tecnica (tecnicos superiores, medios y auxiliares, art.
+ * 171) y la de Servicios Especiales (art. 172, con los agentes forestales y
+ * medioambientales desde 2024). Se marca donde va nuestra plaza.
+ */
+function EscalasFuncionPublicaLocal() {
+  type Sub = { clave: string; texto: string; clases?: string[] }
+  const ESCALAS: { clave: string; t1: string; t2: string; subs: Sub[] }[] = [
+    {
+      clave: 'habilitacion',
+      t1: 'Habilitación de carácter nacional',
+      t2: 'art. 92 bis LBRL',
+      subs: [
+        { clave: 'secretaria', texto: 'Secretaría' },
+        { clave: 'intervencion-tesoreria', texto: 'Intervención-tesorería' },
+        { clave: 'secretaria-intervencion', texto: 'Secretaría-intervención' },
+      ],
+    },
+    {
+      clave: 'general',
+      t1: 'Administración General',
+      t2: 'arts. 167 y 169 TRRL',
+      subs: [
+        { clave: 'tecnica', texto: 'Técnica' },
+        { clave: 'gestion', texto: 'De gestión' },
+        { clave: 'administrativa', texto: 'Administrativa' },
+        { clave: 'auxiliar', texto: 'Auxiliar' },
+        { clave: 'subalterna', texto: 'Subalterna' },
+      ],
+    },
+    {
+      clave: 'especial',
+      t1: 'Administración Especial',
+      t2: 'arts. 170 a 175 bis TRRL',
+      subs: [
+        { clave: 'tecnica', texto: 'Subescala Técnica', clases: ['Técnicos superiores', 'Técnicos medios', 'Técnicos auxiliares'] },
+        {
+          clave: 'servicios-especiales',
+          texto: 'Servicios Especiales',
+          clases: ['Policía Local', 'Extinción de incendios', 'Cometidos especiales', 'Personal de oficios', 'Agentes forestales y medioambientales'],
+        },
+      ],
+    },
+  ]
+  const RAIZ = { x: 150, y: 8, an: 280, al: 32 }
+  const AN = 180
+  const xDe = (i: number) => 6 + i * 194
+  const YE = 60
+  const ALE = 44
+  const Y0 = 128
+  const LINEA = 15
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <rect data-pieza="raiz" x={RAIZ.x} y={RAIZ.y} width={RAIZ.an} height={RAIZ.al} rx="6" fill={AZUL_CLARO} fillOpacity="0.5" stroke="currentColor" strokeWidth="1.2" />
+      <text x={RAIZ.x + RAIZ.an / 2} y={RAIZ.y + 20} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Funcionarios de carrera de la Administración local
+      </text>
+      {ESCALAS.map((e, i) => {
+        const x = xDe(i)
+        let y = Y0
+        const cajas = e.subs.map((s) => {
+          const al = s.clases ? 22 + s.clases.length * LINEA : 26
+          const caja = { ...s, y, al }
+          y += al + 10
+          return caja
+        })
+        const bus = x + 6
+        return (
+          <g key={e.clave}>
+            <line x1={RAIZ.x + RAIZ.an / 2} y1={RAIZ.y + RAIZ.al} x2={x + AN / 2} y2={YE} stroke="currentColor" strokeWidth="1.2" />
+            <rect data-pieza="escala" data-clave={e.clave} x={x} y={YE} width={AN} height={ALE} rx="5" fill={e.clave === 'habilitacion' ? ROJO : AZUL} fillOpacity={e.clave === 'habilitacion' ? 0.18 : 0.45} stroke="currentColor" strokeWidth="1" />
+            <text x={x + AN / 2} y={YE + 18} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {e.t1}
+            </text>
+            <text x={x + AN / 2} y={YE + 33} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+              {e.t2}
+            </text>
+            {cajas.map((c) => (
+              <g key={c.clave}>
+                <path
+                  data-pieza="rama"
+                  data-escala={e.clave}
+                  d={`M${bus} ${YE + ALE} L${bus} ${c.y + 13} L${x + 18} ${c.y + 13}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.1"
+                />
+                <rect data-pieza="subescala" data-escala={e.clave} data-clave={c.clave} x={x + 18} y={c.y} width={AN - 18} height={c.al} rx="4" fill="none" stroke="currentColor" strokeWidth="1" />
+                <text x={x + 26} y={c.y + 17} fontSize="8.5" fontWeight={c.clases ? 'bold' : 'normal'} fill="currentColor">
+                  {c.texto}
+                </text>
+                {c.clases?.map((cl, k) => (
+                  <text key={cl} data-pieza="clase" x={x + 32} y={c.y + 33 + k * LINEA} fontSize="7.5" fill="currentColor">
+                    {cl}
+                  </text>
+                ))}
+              </g>
+            ))}
+          </g>
+        )
+      })}
+      <g data-pieza="nuestra-plaza">
+        <rect x={xDe(2) + 118} y={Y0 + 33 + 2 * LINEA - 9} width="58" height="12" rx="3" fill={ROJO} fillOpacity="0.85" />
+        <text x={xDe(2) + 147} y={Y0 + 33 + 2 * LINEA} fontSize="7" fontWeight="bold" textAnchor="middle" fill="#fff">
+          nuestra plaza
+        </text>
+      </g>
+      <text x="6" y="346" fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Las clases de la Administración Especial van agrupadas en su subescala; los grupos A1 a C2 los fija la titulación (art. 76 TREBEP).
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Umbrales de plantilla en prevencion de riesgos, sobre una escala
+ * LOGARITMICA de numero de trabajadores (las marcas del eje son las decadas):
+ * el empresario puede asumir la prevencion hasta 10 trabajadores, o hasta 25
+ * con un unico centro (art. 30.5 LPRL; art. 11 RSP); la participacion va por
+ * representantes desde 6 (art. 34.1); Comite de Seguridad y Salud desde 50
+ * (art. 38.2); servicio de prevencion propio obligatorio con mas de 500, o
+ * desde 250 si hay actividades del anexo I (art. 14 RSP).
+ */
+function UmbralesPrevencion() {
+  const X0 = 190
+  const ANCHO = 360
+  const MAX = 5000
+  const xDe = (v: number) => X0 + (Math.log10(v) / Math.log10(MAX)) * ANCHO
+  const FILAS = [
+    { clave: 'empresario', t1: 'El empresario puede asumirla', t2: 'art. 30.5 LPRL; art. 11 RSP', desde: 1, hasta: 10, hastaCond: 25, cifra: 'hasta 10 (25 con un solo centro)' },
+    { clave: 'representantes', t1: 'Participación por representantes', t2: 'art. 34.1 LPRL', desde: 6, hasta: MAX, cifra: 'desde 6' },
+    { clave: 'comite', t1: 'Comité de Seguridad y Salud', t2: 'art. 38.2 LPRL', desde: 50, hasta: MAX, cifra: 'desde 50' },
+    { clave: 'propio', t1: 'Servicio de prevención propio', t2: 'obligatorio: art. 14 RSP', desde: 500, hasta: MAX, desdeCond: 250, cifra: 'más de 500 (250 si anexo I)' },
+  ]
+  const Y0 = 22
+  const FILA = 44
+  const yEje = Y0 + FILAS.length * FILA
+  const MARCAS = [1, 10, 100, 1000]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {MARCAS.map((m) => (
+        <g key={m}>
+          <line x1={xDe(m)} y1={Y0 - 6} x2={xDe(m)} y2={yEje} stroke="currentColor" strokeOpacity="0.15" />
+          <line data-pieza="tick" data-valor={m} x1={xDe(m)} y1={yEje} x2={xDe(m)} y2={yEje + 5} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(m)} y={yEje + 16} fontSize="8" textAnchor="middle" fill="currentColor">
+            {m.toLocaleString('es-ES')}
+          </text>
+        </g>
+      ))}
+      <line x1={X0} y1={yEje} x2={X0 + ANCHO} y2={yEje} stroke="currentColor" strokeWidth="1.3" />
+      <text x={X0 + ANCHO} y={yEje + 29} fontSize="8" textAnchor="end" fill="currentColor">
+        trabajadores (escala logarítmica)
+      </text>
+      {FILAS.map((f, i) => {
+        const y = Y0 + i * FILA
+        const abierto = f.hasta === MAX
+        return (
+          <g key={f.clave}>
+            <text x="8" y={y + 12} fontSize="8.5" fontWeight="bold" fill="currentColor">
+              {f.t1}
+            </text>
+            <text x="8" y={y + 24} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+              {f.t2}
+            </text>
+            {f.desdeCond && (
+              <rect data-pieza="tramo" data-clave={f.clave} data-tipo="condicionado" x={xDe(f.desdeCond)} y={y + 4} width={xDe(f.desde) - xDe(f.desdeCond)} height="12" fill={AZUL} fillOpacity="0.25" stroke="currentColor" strokeWidth="0.7" strokeDasharray="3 2" />
+            )}
+            <rect data-pieza="tramo" data-clave={f.clave} data-tipo="principal" x={xDe(f.desde)} y={y + 4} width={xDe(f.hasta) - xDe(f.desde)} height="12" fill={AZUL} fillOpacity="0.7" stroke="currentColor" strokeWidth="0.8" />
+            {f.hastaCond && (
+              <rect data-pieza="tramo" data-clave={f.clave} data-tipo="condicionado" x={xDe(f.hasta)} y={y + 4} width={xDe(f.hastaCond) - xDe(f.hasta)} height="12" fill={AZUL} fillOpacity="0.25" stroke="currentColor" strokeWidth="0.7" strokeDasharray="3 2" />
+            )}
+            {abierto && <path d={`M${X0 + ANCHO - 2} ${y + 1} L${X0 + ANCHO + 8} ${y + 10} L${X0 + ANCHO - 2} ${y + 19}`} fill="none" stroke="currentColor" strokeWidth="1.4" />}
+            <text data-pieza="cifra" data-clave={f.clave} x={abierto ? xDe(f.desdeCond ?? f.desde) : xDe(f.hastaCond ?? f.hasta) + 6} y={y + 30} fontSize="8" fontWeight="bold" fill="currentColor">
+              {f.cifra}
+            </text>
+          </g>
+        )
+      })}
+      <text x="8" y={yEje + 44} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Trama discontinua: el tramo que depende de una condición (un único centro de trabajo; actividades peligrosas del anexo I del RSP).
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6108,6 +6302,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <ClasesEmpleadosPublicos />
     case 'prescripcion-faltas-sanciones':
       return <PrescripcionFaltasSanciones />
+    case 'escalas-funcion-publica-local':
+      return <EscalasFuncionPublicaLocal />
+    case 'umbrales-prevencion':
+      return <UmbralesPrevencion />
   }
 }
 

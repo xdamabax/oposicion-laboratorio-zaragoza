@@ -905,6 +905,40 @@ function medir(sabotaje, ROJO) {
     // la cifra de la falta grave escrita distinta de lo que dibuja su barra
     svg.querySelector('[data-pieza="cifra"][data-grado="grave"][data-tipo="falta"]').textContent = '3 años'
   }
+  if (sabotaje === 98) {
+    const svg = porClave('escalas-funcion-publica-local')
+    // la Administrativa y la Auxiliar de Administracion General, cambiadas de orden
+    const a = svg.querySelector('[data-pieza="subescala"][data-escala="general"][data-clave="administrativa"]')
+    const b = svg.querySelector('[data-pieza="subescala"][data-escala="general"][data-clave="auxiliar"]')
+    const ya = a.getAttribute('y')
+    a.setAttribute('y', b.getAttribute('y'))
+    b.setAttribute('y', ya)
+  }
+  if (sabotaje === 99) {
+    const svg = porClave('escalas-funcion-publica-local')
+    // los agentes forestales y medioambientales, metidos en la Subescala Tecnica
+    const t = piezas(svg, 'clase').find((x) => x.textContent.trim().startsWith('Agentes forestales'))
+    const tec = svg.querySelector('[data-pieza="subescala"][data-escala="especial"][data-clave="tecnica"]')
+    t.setAttribute('y', num(tec, 'y') + 20)
+  }
+  if (sabotaje === 100) {
+    const svg = porClave('umbrales-prevencion')
+    // el servicio de prevencion propio obligatorio desde 250, con su cifra: dibujo y rotulo de acuerdo, pero contra la norma
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const x0 = num(ticks[0], 'x1')
+    const porDec = (num(ticks[ticks.length - 1], 'x1') - x0) / Math.log10(num(ticks[ticks.length - 1], 'data-valor'))
+    const r = svg.querySelector('[data-pieza="tramo"][data-clave="propio"][data-tipo="principal"]')
+    const fin = num(r, 'x') + num(r, 'width')
+    r.setAttribute('x', x0 + Math.log10(250) * porDec)
+    r.setAttribute('width', fin - (x0 + Math.log10(250) * porDec))
+    svg.querySelector('[data-pieza="tramo"][data-clave="propio"][data-tipo="condicionado"]').remove()
+    svg.querySelector('[data-pieza="cifra"][data-clave="propio"]').textContent = 'más de 250'
+  }
+  if (sabotaje === 101) {
+    const svg = porClave('umbrales-prevencion')
+    // la cifra del Comite de Seguridad y Salud escrita distinta de donde arranca su tramo
+    svg.querySelector('[data-pieza="cifra"][data-clave="comite"]').textContent = 'desde 100'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3302,6 +3336,120 @@ function medir(sabotaje, ROJO) {
     return 'cada cifra coincide con su barra'
   })
 
+  /*
+   * Escalas de la funcion publica local. Cada subescala se identifica por su
+   * escala y su clave; el orden se lee por la altura de las cajas, y las ramas
+   * por el primer y el ultimo punto de su trazo.
+   */
+  const puntosDe = (el) => el.getAttribute('d').match(/-?\d+(?:\.\d+)?/g).map(Number)
+  control('Escalas · la General con sus cinco subescalas en el orden del art. 167.2, la habilitación nacional con las tres del 92 bis.2, y cada una con su rama', () => {
+    const svg = porClave('escalas-funcion-publica-local')
+    const ORDEN = {
+      habilitacion: ['secretaria', 'intervencion-tesoreria', 'secretaria-intervencion'],
+      general: ['tecnica', 'gestion', 'administrativa', 'auxiliar', 'subalterna'],
+      especial: ['tecnica', 'servicios-especiales'],
+    }
+    const ramas = piezas(svg, 'rama')
+    for (const [escala, orden] of Object.entries(ORDEN)) {
+      const caja = svg.querySelector(`[data-pieza="escala"][data-clave="${escala}"]`)
+      if (!caja) throw new Error(`falta la escala ${escala}`)
+      const subs = [...svg.querySelectorAll(`[data-pieza="subescala"][data-escala="${escala}"]`)].sort((a, b) => num(a, 'y') - num(b, 'y'))
+      const vistas = subs.map((s) => s.getAttribute('data-clave'))
+      if (vistas.join() !== orden.join()) throw new Error(`la escala ${escala} tiene las subescalas ${vistas.join(', ')}, y son ${orden.join(', ')} en ese orden`)
+      for (const s of subs) {
+        const llega = ramas.some((r) => {
+          const p = puntosDe(r)
+          return dentroDe(caja, p[0], p[1]) && dentroDe(s, p[p.length - 2], p[p.length - 1])
+        })
+        if (!llega) throw new Error(`ninguna rama une la escala ${escala} con su subescala ${s.getAttribute('data-clave')}`)
+      }
+    }
+    return 'habilitación 3, General 5 en orden, Especial 2; cada una con su rama'
+  })
+
+  control('Escalas · los agentes forestales van en Servicios Especiales, los técnicos auxiliares en la Técnica de Administración Especial, y ahí está nuestra plaza', () => {
+    const svg = porClave('escalas-funcion-publica-local')
+    const sub = (e, c) => svg.querySelector(`[data-pieza="subescala"][data-escala="${e}"][data-clave="${c}"]`)
+    const dondeEsta = (texto) => {
+      const t = piezas(svg, 'clase').find((x) => x.textContent.trim() === texto)
+      if (!t) throw new Error(`no aparece la clase «${texto}»`)
+      const b = t.getBBox()
+      const caja = [...svg.querySelectorAll('[data-pieza="subescala"]')].find((s) => dentroDe(s, b.x + 2, b.y + b.height / 2))
+      return { t, b, caja }
+    }
+    const forestales = dondeEsta('Agentes forestales y medioambientales')
+    if (forestales.caja !== sub('especial', 'servicios-especiales')) throw new Error('los agentes forestales y medioambientales no están en Servicios Especiales (art. 172.2.e TRRL)')
+    const aux = dondeEsta('Técnicos auxiliares')
+    if (aux.caja !== sub('especial', 'tecnica')) throw new Error('los técnicos auxiliares no están en la Subescala Técnica de Administración Especial (art. 171)')
+    const tag = pieza(svg, 'nuestra-plaza').getBBox()
+    const cy = tag.y + tag.height / 2
+    if (!dentroDe(aux.caja, tag.x + tag.width / 2, cy) || Math.abs(cy - (aux.b.y + aux.b.height / 2)) > 6) {
+      throw new Error('la marca de nuestra plaza no está en la línea de los técnicos auxiliares de Administración Especial')
+    }
+    return 'forestales en Servicios Especiales; técnicos auxiliares, con nuestra plaza, en la Técnica de AE'
+  })
+
+  /*
+   * Umbrales de prevencion sobre escala LOGARITMICA: la escala se reconstruye
+   * con dos marcas del eje y cada tramo se lee por sus extremos.
+   */
+  const tramosPrevencion = (svg) => {
+    const ticks = piezas(svg, 'tick').sort((a, b) => num(a, 'data-valor') - num(b, 'data-valor'))
+    const [t0, t1] = [ticks[0], ticks[ticks.length - 1]]
+    const l0 = Math.log10(num(t0, 'data-valor'))
+    const l1 = Math.log10(num(t1, 'data-valor'))
+    const valor = (x) => 10 ** (l0 + ((x - num(t0, 'x1')) / (num(t1, 'x1') - num(t0, 'x1'))) * (l1 - l0))
+    return piezas(svg, 'tramo').map((r) => ({
+      clave: r.getAttribute('data-clave'),
+      tipo: r.getAttribute('data-tipo'),
+      desde: valor(num(r, 'x')),
+      hasta: valor(num(r, 'x') + num(r, 'width')),
+    }))
+  }
+  const cerca = (a, b) => Math.abs(Math.log10(a) - Math.log10(b)) < 0.01
+  control('Prevención · cada umbral está en su cifra legal, leído en la escala logarítmica del eje', () => {
+    const svg = porClave('umbrales-prevencion')
+    const LEY = {
+      empresario: { principal: [1, 10], condicionado: [10, 25] },
+      representantes: { principal: [6, null] },
+      comite: { principal: [50, null] },
+      propio: { principal: [500, null], condicionado: [250, 500] },
+    }
+    const vistos = new Set()
+    for (const t of tramosPrevencion(svg)) {
+      const ley = LEY[t.clave]?.[t.tipo]
+      if (!ley) throw new Error(`tramo inesperado: ${t.clave}/${t.tipo}`)
+      vistos.add(t.clave + t.tipo)
+      if (!cerca(t.desde, ley[0])) throw new Error(`«${t.clave}» (${t.tipo}) arranca en ${Math.round(t.desde)} trabajadores, y la norma dice ${ley[0]}`)
+      if (ley[1] !== null && !cerca(t.hasta, ley[1])) throw new Error(`«${t.clave}» (${t.tipo}) acaba en ${Math.round(t.hasta)}, y la norma dice ${ley[1]}`)
+      if (ley[1] === null && t.hasta < 3000) throw new Error(`«${t.clave}» no llega al final del eje y no tiene tope`)
+    }
+    const faltan = Object.entries(LEY).flatMap(([c, v]) => Object.keys(v).map((k) => c + k)).filter((k) => !vistos.has(k))
+    if (faltan.length) throw new Error(`faltan tramos: ${faltan.join(', ')}`)
+    return 'empresario hasta 10 (25), representantes desde 6, Comité desde 50, servicio propio desde 500 (250)'
+  })
+
+  control('Prevención · la cifra escrita de cada fila dice lo mismo que sus tramos', () => {
+    const svg = porClave('umbrales-prevencion')
+    const tramos = tramosPrevencion(svg)
+    for (const c of piezas(svg, 'cifra')) {
+      const clave = c.getAttribute('data-clave')
+      const n = (c.textContent.match(/\d+/g) || []).map(Number)
+      const suyos = tramos.filter((t) => t.clave === clave)
+      const dibujo = new Set()
+      for (const t of suyos) {
+        dibujo.add(Math.round(t.desde))
+        if (t.hasta < 3000) dibujo.add(Math.round(t.hasta))
+      }
+      dibujo.delete(1)
+      const escritas = n.filter((v) => v !== 1)
+      if ([...dibujo].sort((a, b) => a - b).join() !== [...new Set(escritas)].sort((a, b) => a - b).join()) {
+        throw new Error(`«${clave}» dice «${c.textContent.trim()}» y sus tramos marcan ${[...dibujo].join(', ')}`)
+      }
+    }
+    return 'cada cifra coincide con sus tramos'
+  })
+
   return resultados
 }
 
@@ -3405,6 +3553,10 @@ const SABOTAJES = {
   95: 'la llave de los funcionarios estirada hasta el personal laboral',
   96: 'la sanción por falta leve acortada a seis meses, dibujo y cifra de acuerdo entre sí pero no con la ley',
   97: 'la cifra de la falta grave escrita distinta de lo que dibuja su barra',
+  98: 'la Administrativa y la Auxiliar de Administración General, cambiadas de orden',
+  99: 'los agentes forestales y medioambientales, metidos en la Subescala Técnica',
+  100: 'el servicio de prevención propio obligatorio desde 250, dibujo y cifra de acuerdo entre sí pero no con la norma',
+  101: 'la cifra del Comité de Seguridad y Salud escrita distinta de donde arranca su tramo',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3512,6 +3664,10 @@ const CONTROL_DE = {
   95: [91],
   96: [92],
   97: [93],
+  98: [94],
+  99: [95],
+  100: [96],
+  101: [97],
 }
 
 async function main() {

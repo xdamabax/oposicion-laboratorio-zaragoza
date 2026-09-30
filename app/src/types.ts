@@ -91,6 +91,8 @@ export type TipoEsquema =
   | 'impuestos-municipales'
   | 'clases-empleados-publicos'
   | 'prescripcion-faltas-sanciones'
+  | 'escalas-funcion-publica-local'
+  | 'umbrales-prevencion'
 
 export type TipoMaterial =
   | 'matraz-aforado'
