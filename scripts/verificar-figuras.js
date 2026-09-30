@@ -939,6 +939,30 @@ function medir(sabotaje, ROJO) {
     // la cifra del Comite de Seguridad y Salud escrita distinta de donde arranca su tramo
     svg.querySelector('[data-pieza="cifra"][data-clave="comite"]').textContent = 'desde 100'
   }
+  if (sabotaje === 102) {
+    const svg = porClave('grupos-riesgo-biologico')
+    // el grupo 3 pintado sin profilaxis ni tratamiento, como si fuera del 4
+    svg.querySelector('[data-pieza="celda"][data-grupo="3"][data-criterio="profilaxis"]').textContent = 'generalmente no'
+  }
+  if (sabotaje === 103) {
+    const svg = porClave('grupos-riesgo-biologico')
+    // el grupo 3 manipulado en nivel de contencion 2
+    svg.querySelector('[data-pieza="celda"][data-grupo="3"][data-criterio="contencion"]').textContent = 'nivel 2'
+  }
+  if (sabotaje === 104) {
+    const svg = porClave('cadena-transmision')
+    // de la salida a la via de entrada, saltandose el mecanismo de transmision
+    const s = svg.querySelector('[data-pieza="eslabon"][data-clave="salida"]')
+    const v = svg.querySelector('[data-pieza="eslabon"][data-clave="via"]')
+    // el enlace que sale del borde derecho de la salida
+    const l = piezas(svg, 'enlace').find((e) => Math.abs(num(e, 'x1') - (num(s, 'x') + num(s, 'width'))) < 1)
+    l.setAttribute('x2', num(v, 'x'))
+  }
+  if (sabotaje === 105) {
+    const svg = porClave('cadena-transmision')
+    // la via parenteral, quitada de la lista
+    piezas(svg, 'via-entrada').find((t) => t.textContent.trim().startsWith('parenteral')).remove()
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3450,6 +3474,73 @@ function medir(sabotaje, ROJO) {
     return 'cada cifra coincide con sus tramos'
   })
 
+  /*
+   * Grupos de agentes biologicos (art. 3 RD 664/1997). Cada celda se lee por su
+   * grupo y su criterio; el orden de las filas, por la altura de su rotulo.
+   */
+  const celdaGrupo = (svg, g, c) => {
+    const t = svg.querySelector(`[data-pieza="celda"][data-grupo="${g}"][data-criterio="${c}"]`)
+    if (!t) throw new Error(`falta la celda del grupo ${g}, ${c}`)
+    return t.textContent.trim()
+  }
+  control('Grupos · la propagación crece del grupo 2 al 4, y solo el 4 carece, en general, de profilaxis o tratamiento (art. 3.1)', () => {
+    const svg = porClave('grupos-riesgo-biologico')
+    const prop = [2, 3, 4].map((g) => celdaGrupo(svg, g, 'propagacion'))
+    const esperado = ['poco probable', 'con riesgo', 'muchas probabilidades']
+    if (prop.join('|') !== esperado.join('|')) throw new Error(`la propagación va ${prop.join(' → ')}, y el art. 3.1 dice ${esperado.join(' → ')}`)
+    for (const g of [2, 3, 4]) {
+      const p = celdaGrupo(svg, g, 'profilaxis')
+      const sin = /no$/.test(p)
+      if (sin !== (g === 4)) throw new Error(`el grupo ${g} figura con profilaxis «${p}»: solo el grupo 4 carece, en general, de profilaxis o tratamiento eficaz`)
+    }
+    return 'propagación poco probable → con riesgo → muchas probabilidades; sin profilaxis solo el 4'
+  })
+
+  control('Grupos · las filas van del 1 al 4 y cada grupo exige al menos su mismo nivel de contención (art. 15.1.b)', () => {
+    const svg = porClave('grupos-riesgo-biologico')
+    const orden = piezas(svg, 'grupo').sort((a, b) => num(a, 'y') - num(b, 'y')).map((t) => t.getAttribute('data-grupo'))
+    if (orden.join('') !== '1234') throw new Error(`las filas van en el orden ${orden.join(', ')}`)
+    for (const g of [2, 3, 4]) {
+      const c = celdaGrupo(svg, g, 'contencion')
+      const n = Number((c.match(/\d/) || [])[0])
+      if (n !== g) throw new Error(`el grupo ${g} figura con «${c}», y el art. 15.1.b exige por lo menos el nivel ${g}`)
+    }
+    if (/\d/.test(celdaGrupo(svg, 1, 'contencion'))) throw new Error('el grupo 1 figura con un nivel de contención, y el anexo IV empieza en el 2')
+    return 'grupos 1-4 en orden; contención 2, 3 y 4'
+  })
+
+  /*
+   * La cadena de transmision (Guia tecnica del INSST). El orden de los
+   * eslabones se lee por su x; cada enlace, por sus extremos.
+   */
+  control('Cadena · reservorio, salida, mecanismo, vía de entrada y huésped, en orden y cada eslabón unido al siguiente', () => {
+    const svg = porClave('cadena-transmision')
+    const esl = piezas(svg, 'eslabon').sort((a, b) => num(a, 'x') - num(b, 'x'))
+    const orden = esl.map((e) => e.getAttribute('data-clave'))
+    const LEY = ['reservorio', 'salida', 'mecanismo', 'via', 'huesped']
+    if (orden.join() !== LEY.join()) throw new Error(`los eslabones van en el orden ${orden.join(', ')}`)
+    const enlaces = piezas(svg, 'enlace')
+    for (let i = 0; i < esl.length - 1; i++) {
+      const ok = enlaces.some((l) => dentroDe(esl[i], num(l, 'x1'), num(l, 'y1')) && dentroDe(esl[i + 1], num(l, 'x2'), num(l, 'y2')))
+      if (!ok) throw new Error(`ningún enlace une «${orden[i]}» con «${orden[i + 1]}»`)
+    }
+    return 'cinco eslabones en orden, cuatro enlaces'
+  })
+
+  control('Cadena · la vía de entrada lista exactamente las cinco vías de la guía, dentro de su eslabón', () => {
+    const svg = porClave('cadena-transmision')
+    const caja = svg.querySelector('[data-pieza="eslabon"][data-clave="via"]')
+    const dentro = piezas(svg, 'via-entrada').filter((t) => {
+      const b = t.getBBox()
+      return dentroDe(caja, b.x + 2, b.y + b.height / 2)
+    })
+    const vias = dentro.map((t) => t.textContent.trim().split(' ')[0].replace(/,$/, ''))
+    const LEY = ['respiratoria', 'dérmica', 'mucosas', 'parenteral', 'digestiva']
+    const faltan = LEY.filter((v) => !vias.includes(v))
+    if (faltan.length || vias.length !== 5) throw new Error(`en la vía de entrada figuran ${vias.join(', ') || 'ninguna'}; faltan ${faltan.join(', ') || '—'}`)
+    return 'respiratoria, dérmica, mucosas, parenteral y digestiva'
+  })
+
   return resultados
 }
 
@@ -3557,6 +3648,10 @@ const SABOTAJES = {
   99: 'los agentes forestales y medioambientales, metidos en la Subescala Técnica',
   100: 'el servicio de prevención propio obligatorio desde 250, dibujo y cifra de acuerdo entre sí pero no con la norma',
   101: 'la cifra del Comité de Seguridad y Salud escrita distinta de donde arranca su tramo',
+  102: 'el grupo 3 pintado sin profilaxis ni tratamiento, como si fuera del 4',
+  103: 'el grupo 3 manipulado en nivel de contención 2',
+  104: 'de la salida a la vía de entrada, saltándose el mecanismo de transmisión',
+  105: 'la vía parenteral, quitada de la lista de vías de entrada',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3668,6 +3763,10 @@ const CONTROL_DE = {
   99: [95],
   100: [96],
   101: [97],
+  102: [98],
+  103: [99],
+  104: [100],
+  105: [101],
 }
 
 async function main() {

@@ -67,6 +67,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'prescripcion-faltas-sanciones': 'Cuándo prescriben las faltas y las sanciones (art. 97)',
   'escalas-funcion-publica-local': 'Escalas y subescalas de la función pública local',
   'umbrales-prevencion': 'La prevención según el número de trabajadores',
+  'grupos-riesgo-biologico': 'Los cuatro grupos de agentes biológicos y su contención',
+  'cadena-transmision': 'La cadena de transmisión y las vías de entrada',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -128,6 +130,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'prescripcion-faltas-sanciones': { ancho: 580, alto: 256 },
   'escalas-funcion-publica-local': { ancho: 580, alto: 356 },
   'umbrales-prevencion': { ancho: 580, alto: 262 },
+  'grupos-riesgo-biologico': { ancho: 580, alto: 250 },
+  'cadena-transmision': { ancho: 580, alto: 250 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6190,6 +6194,141 @@ function UmbralesPrevencion() {
   )
 }
 
+/**
+ * Los cuatro grupos de agentes biologicos del art. 3 del RD 664/1997, con los
+ * cuatro criterios de su definicion (enfermedad, peligro para los
+ * trabajadores, propagacion a la colectividad y profilaxis o tratamiento) y
+ * el nivel de contencion minimo con el que se manipulan en un laboratorio
+ * (art. 15.1.b). El tono de cada celda crece con el peligro.
+ */
+function GruposRiesgoBiologico() {
+  const COLS = [
+    { clave: 'enfermedad', t1: 'Enfermedad', t2: 'en el hombre' },
+    { clave: 'peligro', t1: 'Peligro para', t2: 'los trabajadores' },
+    { clave: 'propagacion', t1: 'Propagación a', t2: 'la colectividad' },
+    { clave: 'profilaxis', t1: 'Profilaxis o', t2: 'tratamiento eficaz' },
+    { clave: 'contencion', t1: 'Contención mínima', t2: 'en laboratorio' },
+  ]
+  // [texto, intensidad 0-3]
+  const FILAS: { grupo: number; celdas: [string, number][] }[] = [
+    { grupo: 1, celdas: [['poco probable', 0], ['—', 0], ['—', 0], ['—', 0], ['—', 0]] },
+    { grupo: 2, celdas: [['puede causarla', 1], ['puede suponerlo', 1], ['poco probable', 1], ['generalmente sí', 1], ['nivel 2', 1]] },
+    { grupo: 3, celdas: [['grave', 2], ['serio', 2], ['con riesgo', 2], ['generalmente sí', 1], ['nivel 3', 2]] },
+    { grupo: 4, celdas: [['grave', 2], ['serio', 2], ['muchas probabilidades', 3], ['generalmente no', 3], ['nivel 4', 3]] },
+  ]
+  const X0 = 78
+  const AN = 98
+  const Y0 = 44
+  const AL = 36
+  const tono = [0, 0.18, 0.4, 0.7]
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {COLS.map((c, j) => (
+        <g key={c.clave}>
+          <text x={X0 + j * AN + AN / 2} y="18" fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {c.t1}
+          </text>
+          <text x={X0 + j * AN + AN / 2} y="30" fontSize="8" textAnchor="middle" fill="currentColor">
+            {c.t2}
+          </text>
+        </g>
+      ))}
+      {FILAS.map((f, i) => {
+        const y = Y0 + i * AL
+        return (
+          <g key={f.grupo}>
+            <text data-pieza="grupo" data-grupo={f.grupo} x="10" y={y + AL / 2 + 4} fontSize="10" fontWeight="bold" fill="currentColor">
+              {`Grupo ${f.grupo}`}
+            </text>
+            {f.celdas.map(([t, n], j) => (
+              <g key={COLS[j].clave}>
+                <rect x={X0 + j * AN + 2} y={y + 2} width={AN - 4} height={AL - 4} rx="3" fill={ROJO} fillOpacity={tono[n]} stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.5" />
+                <text data-pieza="celda" data-grupo={f.grupo} data-criterio={COLS[j].clave} x={X0 + j * AN + AN / 2} y={y + AL / 2 + 3} fontSize="8.5" textAnchor="middle" fill="currentColor">
+                  {t}
+                </text>
+              </g>
+            ))}
+          </g>
+        )
+      })}
+      <text x="10" y={Y0 + 4 * AL + 20} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Definiciones del art. 3.1 del RD 664/1997; contención del art. 15.1.b (el grupo 1 no exige ningún nivel del anexo IV).
+      </text>
+      <text x="10" y={Y0 + 4 * AL + 34} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Un agente que no figura en la lista del anexo II no es, por eso, del grupo 1; en caso de duda entre dos grupos, se toma el superior.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * La cadena de transmision de la Guia tecnica del INSST (2024): reservorio,
+ * salida, mecanismo de transmision, via de entrada y huesped susceptible, en
+ * ese orden y cada eslabon unido al siguiente. La via de entrada lleva las
+ * cinco vias de la guia. Romper cualquier eslabon corta la cadena.
+ */
+function CadenaTransmision() {
+  const ESL = [
+    { clave: 'reservorio', t: 'Reservorio', lineas: ['personas, animales', 'y medio: agua, suelo'] },
+    { clave: 'salida', t: 'Salida', lineas: ['cómo abandona', 'el reservorio'] },
+    { clave: 'mecanismo', t: 'Mecanismo', lineas: ['directo: contacto,', 'gotas', 'indirecto: fómites,', 'vectores, aerosoles'] },
+    { clave: 'via', t: 'Vía de entrada', lineas: [] as string[] },
+    { clave: 'huesped', t: 'Huésped', lineas: ['susceptible:', 'la persona', 'trabajadora'] },
+  ]
+  const VIAS = ['respiratoria', 'dérmica (piel no intacta)', 'mucosas', 'parenteral', 'digestiva']
+  const AN = 100
+  const HUECO = 16
+  const X0 = 8
+  const Y = 26
+  const AL = 128
+  const xDe = (i: number) => X0 + i * (AN + HUECO)
+
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <defs>
+        <marker id="flecha-cadena" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor" />
+        </marker>
+      </defs>
+      {ESL.map((e, i) => {
+        const x = xDe(i)
+        return (
+          <g key={e.clave}>
+            <rect data-pieza="eslabon" data-clave={e.clave} x={x} y={Y} width={AN} height={AL} rx="6" fill={e.clave === 'via' ? ROJO : AZUL} fillOpacity={e.clave === 'via' ? 0.18 : 0.4} stroke="currentColor" strokeWidth="1.1" />
+            <text x={x + AN / 2} y={Y + 18} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {e.t}
+            </text>
+            {e.lineas.map((l, k) => (
+              <text key={l} x={x + 7} y={Y + 38 + k * 13} fontSize="7.5" fill="currentColor">
+                {l}
+              </text>
+            ))}
+            {e.clave === 'via' &&
+              VIAS.map((v, k) => (
+                <text key={v} data-pieza="via-entrada" x={x + 7} y={Y + 38 + k * 16} fontSize="7" fill="currentColor">
+                  {v}
+                </text>
+              ))}
+            {i < ESL.length - 1 && (
+              <line data-pieza="enlace" x1={x + AN} y1={Y + AL / 2} x2={xDe(i + 1)} y2={Y + AL / 2} stroke="currentColor" strokeWidth="1.4" markerEnd="url(#flecha-cadena)" />
+            )}
+          </g>
+        )
+      })}
+      <text x={X0} y={Y + AL + 28} fontSize="8.5" fontWeight="bold" fill="currentColor">
+        Romper cualquier eslabón corta la cadena, y cuanto antes se rompa, más eficaz es la prevención.
+      </text>
+      <text x={X0} y={Y + AL + 44} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Se actúa en el foco, en el mecanismo de transmisión, en la vía de entrada y, por último, sobre la persona (Guía técnica del INSST, 2024).
+      </text>
+      <text x={X0} y={Y + AL + 58} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        En el laboratorio, la exposición suele ser accidental: pinchazos y cortes, salpicaduras en mucosas, ingestión y aerosoles.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6306,6 +6445,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <EscalasFuncionPublicaLocal />
     case 'umbrales-prevencion':
       return <UmbralesPrevencion />
+    case 'grupos-riesgo-biologico':
+      return <GruposRiesgoBiologico />
+    case 'cadena-transmision':
+      return <CadenaTransmision />
   }
 }
 

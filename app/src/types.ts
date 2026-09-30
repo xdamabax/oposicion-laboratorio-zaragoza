@@ -93,6 +93,8 @@ export type TipoEsquema =
   | 'prescripcion-faltas-sanciones'
   | 'escalas-funcion-publica-local'
   | 'umbrales-prevencion'
+  | 'grupos-riesgo-biologico'
+  | 'cadena-transmision'
 
 export type TipoMaterial =
   | 'matraz-aforado'
