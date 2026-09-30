@@ -97,6 +97,8 @@ export type TipoEsquema =
   | 'cadena-transmision'
   | 'clases-cabinas'
   | 'microscopio-optico'
+  | 'resistencia-descontaminacion'
+  | 'binomios-esterilizacion'
 
 export type TipoMaterial =
   | 'matraz-aforado'

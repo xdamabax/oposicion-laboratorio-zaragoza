@@ -988,6 +988,37 @@ function medir(sabotaje, ROJO) {
     // el aumento total escrito como si fuera solo el del objetivo
     svg.querySelector('[data-pieza="cifra"][data-clave="total"]').textContent = 'Aumento total: 10 × 100 = 100×'
   }
+  if (sabotaje === 110) {
+    const svg = porClave('resistencia-descontaminacion')
+    // los hongos subidos por encima de las micobacterias
+    const h = svg.querySelector('[data-pieza="banda"][data-clave="hongos"]')
+    const m = svg.querySelector('[data-pieza="banda"][data-clave="micobacterias"]')
+    const yh = num(h, 'y')
+    h.setAttribute('y', num(m, 'y'))
+    m.setAttribute('y', yh)
+  }
+  if (sabotaje === 111) {
+    const svg = porClave('resistencia-descontaminacion')
+    // el hipoclorito rebajado a desinfectante de nivel bajo
+    const t = piezas(svg, 'agente').find((a) => a.textContent.trim() === 'hipocloritos')
+    const bajo = svg.querySelector('[data-pieza="metodo"][data-clave="bajo"]')
+    t.setAttribute('y', num(bajo, 'y') + 38)
+  }
+  if (sabotaje === 112) {
+    const svg = porClave('binomios-esterilizacion')
+    // el autoclave a 121 °C con 20 minutos, dibujo y rotulo de acuerdo entre si pero no con la guia
+    const x20 = num(svg.querySelector('[data-pieza="tick-x"][data-valor="20"]'), 'x1')
+    const p = svg.querySelector('[data-pieza="punto"][data-clave="v121"]')
+    const r = svg.querySelector('[data-pieza="rotulo"][data-clave="v121"]')
+    p.setAttribute('cx', x20)
+    r.setAttribute('x', x20 + 7)
+    r.textContent = '121 °C · 20 min'
+  }
+  if (sabotaje === 113) {
+    const svg = porClave('binomios-esterilizacion')
+    // el rotulo del horno a 170 °C escrito con otro tiempo del que dibuja su punto
+    svg.querySelector('[data-pieza="rotulo"][data-clave="s170"]').textContent = '170 °C · 30 min'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3660,6 +3691,99 @@ function medir(sabotaje, ROJO) {
     return `${oc} × ${ob} = ${oc * ob}×; útil ${500 * an}-${1000 * an}×; d = ${d.toFixed(0)} nm`
   })
 
+  /*
+   * Resistencia a la descontaminacion (Guia tecnica del INSST, apendice 5,
+   * figura 1). El orden de las franjas se lee por su altura; a que metodo
+   * pertenece cada agente, por la caja en que cae su rotulo.
+   */
+  control('Resistencia · de arriba abajo, esporas y quistes, micobacterias y virus sin envoltura, hongos, y bacterias vegetativas y virus con envoltura, cada franja frente a su método y con la resistencia creciendo hacia arriba', () => {
+    const svg = porClave('resistencia-descontaminacion')
+    const bandas = piezas(svg, 'banda').sort((a, b) => num(a, 'y') - num(b, 'y'))
+    const orden = bandas.map((b) => b.getAttribute('data-clave'))
+    const GUIA = ['esporas', 'micobacterias', 'hongos', 'bacterias']
+    if (orden.join() !== GUIA.join()) throw new Error(`de arriba abajo van ${orden.join(', ')}`)
+    const metodos = piezas(svg, 'metodo').sort((a, b) => num(a, 'y') - num(b, 'y'))
+    const NIVEL = ['esterilizacion', 'alto', 'medio', 'bajo']
+    metodos.forEach((m, i) => {
+      if (m.getAttribute('data-clave') !== NIVEL[i]) throw new Error(`el método ${i + 1}.º es «${m.getAttribute('data-clave')}»`)
+      const cy = num(m, 'y') + num(m, 'height') / 2
+      const b = bandas[i]
+      if (cy < num(b, 'y') || cy > num(b, 'y') + num(b, 'height')) throw new Error(`«${NIVEL[i]}» no está frente a la franja «${orden[i]}»`)
+    })
+    const f = pieza(svg, 'resistencia')
+    if (!(num(f, 'y2') < num(f, 'y1'))) throw new Error('la flecha de la resistencia no apunta hacia arriba')
+    return 'esporas → micobacterias → hongos → bacterias; esterilización, alto, medio y bajo'
+  })
+
+  control('Resistencia · cada método lista los agentes de la guía: vapor y óxido de etileno esterilizan, el glutaraldehído es de nivel alto, alcoholes e hipocloritos de medio, y fenólicos y amonio cuaternario de bajo', () => {
+    const svg = porClave('resistencia-descontaminacion')
+    const GUIA = {
+      esterilizacion: ['vapor de agua', 'óxido de etileno', 'peróxido de hidrógeno (plasma)', 'ácido peracético'],
+      alto: ['peróxido de hidrógeno', 'glutaraldehído', 'formaldehído', 'ácido peracético'],
+      medio: ['alcoholes', 'hipocloritos', 'yodo y yodóforos'],
+      bajo: ['compuestos fenólicos', 'amonio cuaternario'],
+    }
+    const cajas = piezas(svg, 'metodo')
+    const dentro = {}
+    for (const a of piezas(svg, 'agente')) {
+      const b = a.getBBox()
+      const caja = cajas.find((c) => dentroDe(c, b.x + 2, b.y + b.height / 2))
+      if (!caja) throw new Error(`«${a.textContent.trim()}» no está dentro de ningún método`)
+      const k = caja.getAttribute('data-clave')
+      ;(dentro[k] = dentro[k] || []).push(a.textContent.trim())
+    }
+    for (const [k, lista] of Object.entries(GUIA)) {
+      const hay = (dentro[k] || []).slice().sort().join(', ')
+      if (hay !== lista.slice().sort().join(', ')) throw new Error(`en «${k}» figuran ${hay || 'ninguno'}; la guía pone ${lista.join(', ')}`)
+    }
+    return 'cuatro métodos con los agentes de la guía'
+  })
+
+  /*
+   * Binomios de esterilizacion (Guia tecnica del INSST, apendice 5). La escala
+   * de tiempo, logaritmica, y la de temperatura se reconstruyen con las marcas
+   * de los ejes; cada punto se lee en ellas.
+   */
+  const leerBinomios = (svg) => {
+    const tx = piezas(svg, 'tick-x').map((t) => [Math.log10(num(t, 'data-valor')), num(t, 'x1')]).sort((a, b) => a[0] - b[0])
+    const ty = piezas(svg, 'tick-y').map((t) => [num(t, 'data-valor'), num(t, 'y1')]).sort((a, b) => a[0] - b[0])
+    const [lx0, x0] = tx[0]
+    const [lx1, x1] = tx[tx.length - 1]
+    const [T0, y0] = ty[0]
+    const [T1, y1] = ty[ty.length - 1]
+    return piezas(svg, 'punto').map((p) => ({
+      clave: p.getAttribute('data-clave'),
+      t: 10 ** (lx0 + ((num(p, 'cx') - x0) / (x1 - x0)) * (lx1 - lx0)),
+      T: T0 + ((num(p, 'cy') - y0) / (y1 - y0)) * (T1 - T0),
+      x: num(p, 'cx'),
+      y: num(p, 'cy'),
+    }))
+  }
+  control('Binomios · cada punto está en el binomio temperatura-tiempo de la guía del INSST, leído sobre los ejes reconstruidos con sus marcas', () => {
+    const svg = porClave('binomios-esterilizacion')
+    const GUIA = { v115: [115, 30], v121: [121, 15], v126: [126, 10], v134: [134, 3], s160: [160, 120], s170: [170, 60], s180: [180, 30] }
+    const pts = leerBinomios(svg)
+    if (pts.length !== 7) throw new Error(`hay ${pts.length} puntos, y la guía da siete binomios`)
+    for (const p of pts) {
+      const [T, t] = GUIA[p.clave]
+      if (Math.abs(p.T - T) > 0.5 || Math.abs(p.t - t) / t > 0.03) throw new Error(`«${p.clave}» está en ${p.T.toFixed(1)} °C y ${p.t.toFixed(1)} min, y la guía dice ${T} °C y ${t} min`)
+    }
+    return 'vapor 115/30, 121/15, 126/10, 134/3; calor seco 160/120, 170/60, 180/30'
+  })
+
+  control('Binomios · cada rótulo, junto a su punto, dice la temperatura y el tiempo que dibuja', () => {
+    const svg = porClave('binomios-esterilizacion')
+    for (const p of leerBinomios(svg)) {
+      const r = svg.querySelector(`[data-pieza="rotulo"][data-clave="${p.clave}"]`)
+      const m = r.textContent.match(/(\d+) °C · (\d+) min/)
+      if (!m) throw new Error(`no se lee el rótulo de «${p.clave}»`)
+      if (Math.abs(Number(m[1]) - p.T) > 0.5 || Math.abs(Number(m[2]) - p.t) / p.t > 0.03) throw new Error(`el rótulo dice «${r.textContent.trim()}» y su punto dibuja ${p.T.toFixed(0)} °C y ${p.t.toFixed(0)} min`)
+      const b = r.getBBox()
+      if (Math.hypot(b.x - p.x, b.y + b.height - p.y) > 25) throw new Error(`el rótulo de «${p.clave}» no está junto a su punto`)
+    }
+    return 'los siete rótulos coinciden con sus puntos'
+  })
+
   return resultados
 }
 
@@ -3775,6 +3899,10 @@ const SABOTAJES = {
   107: 'la clase III con un solo HEPA de salida, en vez de dos en serie',
   108: 'el condensador subido por encima de la platina',
   109: 'el aumento total escrito como si fuera solo el del objetivo',
+  110: 'los hongos subidos por encima de las micobacterias',
+  111: 'el hipoclorito rebajado a desinfectante de nivel bajo',
+  112: 'el autoclave a 121 °C con 20 minutos, dibujo y rótulo de acuerdo entre sí pero no con la guía',
+  113: 'el rótulo del horno a 170 °C escrito con otro tiempo del que dibuja su punto',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -3894,6 +4022,10 @@ const CONTROL_DE = {
   107: [103],
   108: [104],
   109: [105],
+  110: [106],
+  111: [107],
+  112: [108],
+  113: [109],
 }
 
 async function main() {

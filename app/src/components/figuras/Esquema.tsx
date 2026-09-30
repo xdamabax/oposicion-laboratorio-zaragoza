@@ -71,6 +71,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'cadena-transmision': 'La cadena de transmisión y las vías de entrada',
   'clases-cabinas': 'Las tres clases de cabina de seguridad biológica',
   'microscopio-optico': 'El microscopio óptico: camino de la luz y cifras',
+  'resistencia-descontaminacion': 'Resistencia de los microorganismos y método que basta',
+  'binomios-esterilizacion': 'Temperatura y tiempo de esterilización: vapor y calor seco',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -136,6 +138,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'cadena-transmision': { ancho: 580, alto: 250 },
   'clases-cabinas': { ancho: 580, alto: 252 },
   'microscopio-optico': { ancho: 580, alto: 300 },
+  'resistencia-descontaminacion': { ancho: 580, alto: 272 },
+  'binomios-esterilizacion': { ancho: 580, alto: 282 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6478,6 +6482,177 @@ function MicroscopioOptico() {
   )
 }
 
+/**
+ * La resistencia de los microorganismos a la descontaminacion y el metodo que
+ * basta para cada franja (Guia tecnica del INSST, 2024, apendice 5, figura 1).
+ * Arriba lo mas resistente: esporas bacterianas y quistes de protozoos, que
+ * piden esterilizar. Abajo lo menos: bacterias vegetativas y virus con
+ * envoltura, que caen con un desinfectante de nivel bajo.
+ */
+function ResistenciaDescontaminacion() {
+  const FR = [
+    { clave: 'esporas', lineas: ['Esporas bacterianas', 'Protozoos (quistes): Giardia, Cryptosporidium'], metodo: 'esterilizacion', titulo: 'Esterilización', agentes: ['vapor de agua', 'óxido de etileno', 'peróxido de hidrógeno (plasma)', 'ácido peracético'] },
+    { clave: 'micobacterias', lineas: ['Micobacterias (M. tuberculosis)', 'Virus sin envoltura (hepatitis A)'], metodo: 'alto', titulo: 'Desinfección de nivel alto', agentes: ['peróxido de hidrógeno', 'glutaraldehído', 'formaldehído', 'ácido peracético'] },
+    { clave: 'hongos', lineas: ['Hongos (Candida, Aspergillus)'], metodo: 'medio', titulo: 'Desinfección de nivel medio', agentes: ['alcoholes', 'hipocloritos', 'yodo y yodóforos'] },
+    { clave: 'bacterias', lineas: ['Bacterias vegetativas (coliformes, Pseudomonas)', 'Virus con envoltura (VIH, hepatitis B y C, gripe)'], metodo: 'bajo', titulo: 'Desinfección de nivel bajo', agentes: ['compuestos fenólicos', 'amonio cuaternario'] },
+  ]
+  const Y0 = 30
+  const AL = 52
+  const XB = 10
+  const XM = 360
+  const MW = 210
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <defs>
+        <marker id="flecha-resistencia" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+          <path d="M0 0 L10 5 L0 10 z" fill="currentColor" />
+        </marker>
+      </defs>
+      <text x={XB + 150} y={18} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Microorganismo
+      </text>
+      <text x={XM + MW / 2} y={18} fontSize="9.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Lo que basta para eliminarlo
+      </text>
+      <line data-pieza="resistencia" x1={332} y1={Y0 + 4 * AL - 6} x2={332} y2={Y0 + 6} stroke="currentColor" strokeWidth="1.6" markerEnd="url(#flecha-resistencia)" />
+      <text x={332} y={Y0 - 2} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        más resistente
+      </text>
+      <text x={332} y={Y0 + 4 * AL + 12} fontSize="7.5" textAnchor="middle" fill="currentColor">
+        menos resistente
+      </text>
+      {FR.map((f, i) => {
+        const y = Y0 + i * AL
+        const ancho = 250 + i * 18
+        return (
+          <g key={f.clave}>
+            <rect data-pieza="banda" data-clave={f.clave} x={XB + 60 - i * 18} y={y + 2} width={ancho} height={AL - 4} rx="3" fill={ROJO} fillOpacity={0.34 - i * 0.07} stroke="currentColor" strokeWidth="0.8" />
+            {f.lineas.map((l, k) => (
+              <text key={l} x={XB + 66 - i * 18} y={y + 20 + k * 14} fontSize="8" fontWeight={k === 0 ? 'bold' : 'normal'} fill="currentColor">
+                {l}
+              </text>
+            ))}
+            <rect data-pieza="metodo" data-clave={f.metodo} x={XM} y={y + 2} width={MW} height={AL - 4} rx="3" fill={AZUL} fillOpacity={0.45} stroke="currentColor" strokeWidth="0.8" />
+            <text x={XM + 6} y={y + 15} fontSize="8" fontWeight="bold" fill="currentColor">
+              {f.titulo}
+            </text>
+            {f.agentes.map((a, k) => (
+              <text key={a} data-pieza="agente" x={XM + 6 + (k % 2) * 104} y={y + 28 + Math.floor(k / 2) * 12} fontSize="7" fill="currentColor">
+                {a}
+              </text>
+            ))}
+          </g>
+        )
+      })}
+      <text x={10} y={Y0 + 4 * AL + 30} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Según la figura 1 del apéndice 5 de la Guía técnica del INSST (2024). Ninguna desinfección garantiza la esterilidad: las esporas solo caen al esterilizar.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Los binomios temperatura-tiempo de contacto minimo de la Guia tecnica del
+ * INSST (2024): vapor saturado en autoclave (115 °C 30 min, 121 °C 15 min,
+ * 126 °C 10 min, 134 °C 3 min) y calor seco en horno (160-169 °C 120 min,
+ * 170-179 °C 60 min, 180-190 °C 30 min, dibujados en el inicio de cada
+ * tramo). El tiempo va en escala logaritmica.
+ */
+function BinomiosEsterilizacion() {
+  const X0 = 60
+  const X1 = 400
+  const LMAX = Math.log10(200)
+  const px = (t: number) => X0 + (Math.log10(t) / LMAX) * (X1 - X0)
+  const YB = 226
+  const YT = 30
+  const py = (T: number) => YB - ((T - 110) / 80) * (YB - YT)
+  const TICKS_T = [1, 2, 5, 10, 20, 50, 100, 200]
+  const TICKS_TEMP = [110, 120, 130, 140, 150, 160, 170, 180, 190]
+  const PUNTOS = [
+    { clave: 'v115', serie: 'vapor', T: 115, t: 30 },
+    { clave: 'v121', serie: 'vapor', T: 121, t: 15 },
+    { clave: 'v126', serie: 'vapor', T: 126, t: 10 },
+    { clave: 'v134', serie: 'vapor', T: 134, t: 3 },
+    { clave: 's160', serie: 'seco', T: 160, t: 120 },
+    { clave: 's170', serie: 'seco', T: 170, t: 60 },
+    { clave: 's180', serie: 'seco', T: 180, t: 30 },
+  ]
+  const color = (s: string) => (s === 'vapor' ? '#3a86c8' : ROJO)
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <line x1={X0} y1={YB} x2={X1} y2={YB} stroke="currentColor" strokeWidth="1" />
+      <line x1={X0} y1={YB} x2={X0} y2={YT} stroke="currentColor" strokeWidth="1" />
+      {TICKS_T.map((t) => (
+        <g key={t}>
+          <line data-pieza="tick-x" data-valor={t} x1={px(t)} y1={YB} x2={px(t)} y2={YB + 4} stroke="currentColor" strokeWidth="1" />
+          <line x1={px(t)} y1={YB} x2={px(t)} y2={YT} stroke="currentColor" strokeWidth="0.4" strokeOpacity="0.25" />
+          <text x={px(t)} y={YB + 14} fontSize="7.5" textAnchor="middle" fill="currentColor">
+            {t}
+          </text>
+        </g>
+      ))}
+      {TICKS_TEMP.map((T) => (
+        <g key={T}>
+          <line data-pieza="tick-y" data-valor={T} x1={X0 - 4} y1={py(T)} x2={X0} y2={py(T)} stroke="currentColor" strokeWidth="1" />
+          <line x1={X0} y1={py(T)} x2={X1} y2={py(T)} stroke="currentColor" strokeWidth="0.4" strokeOpacity="0.25" />
+          <text x={X0 - 7} y={py(T) + 3} fontSize="7.5" textAnchor="end" fill="currentColor">
+            {T}
+          </text>
+        </g>
+      ))}
+      <text x={(X0 + X1) / 2} y={YB + 28} fontSize="8" textAnchor="middle" fill="currentColor">
+        Tiempo de contacto mínimo (min, escala logarítmica)
+      </text>
+      <text x={X0 - 28} y={YT - 12} fontSize="8" fill="currentColor">
+        Temperatura (°C)
+      </text>
+      {['vapor', 'seco'].map((s) => (
+        <polyline
+          key={s}
+          points={PUNTOS.filter((p) => p.serie === s)
+            .map((p) => `${px(p.t)},${py(p.T)}`)
+            .join(' ')}
+          fill="none"
+          stroke={color(s)}
+          strokeWidth="1.2"
+          strokeOpacity="0.6"
+        />
+      ))}
+      {PUNTOS.map((p) => (
+        <g key={p.clave}>
+          <circle data-pieza="punto" data-clave={p.clave} data-serie={p.serie} cx={px(p.t)} cy={py(p.T)} r={4} fill={color(p.serie)} />
+          <text data-pieza="rotulo" data-clave={p.clave} x={px(p.t) + 7} y={py(p.T) - 5} fontSize="7.5" fill="currentColor">
+            {p.T} °C · {p.t} min
+          </text>
+        </g>
+      ))}
+      <circle cx={420} cy={46} r={4} fill={color('vapor')} />
+      <text x={430} y={49} fontSize="8" fill="currentColor">
+        Vapor saturado (autoclave)
+      </text>
+      <circle cx={420} cy={64} r={4} fill={color('seco')} />
+      <text x={430} y={67} fontSize="8" fill="currentColor">
+        Calor seco (horno)
+      </text>
+      <text x={414} y={176} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        El vapor esteriliza antes
+      </text>
+      <text x={414} y={188} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        y a menos temperatura.
+      </text>
+      <text x={414} y={208} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Horno: inicio de cada tramo
+      </text>
+      <text x={414} y={220} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        (160-169, 170-179, 180-190 °C).
+      </text>
+      <text x={10} y={272} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Guía técnica del INSST (2024), apéndice 5. Es tiempo de contacto en toda la carga, no el ciclo completo.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6602,6 +6777,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <ClasesCabinas />
     case 'microscopio-optico':
       return <MicroscopioOptico />
+    case 'resistencia-descontaminacion':
+      return <ResistenciaDescontaminacion />
+    case 'binomios-esterilizacion':
+      return <BinomiosEsterilizacion />
   }
 }
 
