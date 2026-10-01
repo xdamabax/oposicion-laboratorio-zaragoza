@@ -1,0 +1,761 @@
+{
+  "tema": 16,
+  "titulo": "Técnicas de identificación de bacterias. Morfológicas. Serológicas. Bioquímicas. Genéticas.",
+  "generadoDe": "temas/tema-16.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-10-01",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Preguntado en nuestra plaza: fases de la PCR (1246 #38), Salmonella sin ureasa (1246 R1) y oxidasa para separar Pseudomonas de enterobacterias (1233 #15), mas las confirmaciones del agua (1322 #23, 1233 #13, 1246 #36). El nucleo recoge las pruebas bioquimicas clave, los perfiles de enterobacterias, Pseudomonas y Salmonella, el MALDI-TOF, la aglutinacion y el serotipado, y la PCR.",
+  "flashcards": [
+    {
+      "id": "t16-f01",
+      "anverso": "¿Cuál es el orden habitual para identificar una bacteria?",
+      "reverso": "1. **Cultivo puro.**\n2. **Aspecto de las colonias.**\n3. **Microscopía y Gram.**\n4. **MALDI-TOF**, o pruebas **bioquímicas** y **antisueros**.\n5. **Confirmación molecular** si hace falta (ARNr 16S).",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f02",
+      "anverso": "¿Por qué no basta una sola prueba para identificar?",
+      "reverso": "Porque los caracteres **varían**, incluso dentro de un género (*Klebsiella oxytoca* es **indol +** y *K. pneumoniae*, **indol −**). Se usa una **combinación** de pruebas y luego se confirma.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["conceptos"]
+    },
+    {
+      "id": "t16-f03",
+      "anverso": "¿Qué miran las técnicas morfológicas, bioquímicas, serológicas, genéticas y proteómicas?",
+      "reverso": "- **Morfológicas:** colonias y células.\n- **Bioquímicas:** **enzimas** y metabolismo.\n- **Serológicas:** **antígenos** con anticuerpos conocidos.\n- **Genéticas:** **ADN o ARN**.\n- **Proteómicas (MALDI-TOF):** **perfil de proteínas**.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f04",
+      "anverso": "¿Cómo se describe una colonia?",
+      "reverso": "**Tamaño**, **forma**, **borde**, **elevación**, **superficie**, **consistencia**, **color y pigmento** (*P. aeruginosa*, verde; *Serratia*, rojo), **opacidad** y **hemólisis**.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["morfologicas"]
+    },
+    {
+      "id": "t16-f05",
+      "anverso": "¿Qué significan la hemólisis **α**, **β** y la ausencia de hemólisis?",
+      "reverso": "- **α:** lisis **parcial**, halo **verdoso**.\n- **β:** lisis **total**, halo **claro**.\n- **Sin hemólisis** (antes, γ): el medio no cambia.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["morfologicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f06",
+      "anverso": "Clasifica las bacterias según el oxígeno que necesitan.",
+      "reverso": "**Aerobias estrictas**, **anaerobias estrictas**, **facultativas** (con o sin oxígeno), **microaerófilas** (menos oxígeno) y **capnófilas** (necesitan CO₂).",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["morfologicas"]
+    },
+    {
+      "id": "t16-f07",
+      "anverso": "Clasifica los microorganismos por su temperatura de crecimiento.",
+      "reverso": "- **Psicrófilos:** 2-5 °C (óptimo ~15 °C).\n- **Mesófilos:** **10-45 °C**, óptimo **30-40 °C**.\n- **Termófilos:** óptimo **50-60 °C**.\n- **Hipertermófilos:** **80 °C o más**.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["morfologicas"]
+    },
+    {
+      "id": "t16-f08",
+      "anverso": "¿Qué es la **prueba del tubo germinal**?",
+      "reverso": "Una prueba rápida para ***Candida albicans***: la levadura en **suero** a **35-37 °C** forma **tubos germinales** en **2-3 horas**.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["morfologicas"]
+    },
+    {
+      "id": "t16-f09",
+      "anverso": "Reglas comunes de las pruebas bioquímicas.",
+      "reverso": "**Cultivos jóvenes de 18-24 h**, **controles positivo y negativo** con cepas de referencia en cada tanda, y **reactivos frescos** y bien conservados.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025); UKHSA, UK SMI TP 26 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f10",
+      "anverso": "¿Qué detecta la **catalasa** y cómo se lee?",
+      "reverso": "La enzima que descompone el **agua oxigenada** (2 H₂O₂ → 2 H₂O + O₂): **burbujas inmediatas** con **H₂O₂ al 3-6 %**. **Positiva:** *S. aureus*. **Negativa:** **estreptococos y enterococos**.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f11",
+      "anverso": "¿Por qué no se hace la catalasa con colonias de **agar sangre**?",
+      "reverso": "Porque **los hematíes tienen catalasa** y dan **falsos positivos**. Además, las burbujas forman **aerosoles** con bacterias: mejor en **tubo tapado** y en cabina.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025)",
+      "etiquetas": ["bioquimicas"]
+    },
+    {
+      "id": "t16-f12",
+      "anverso": "¿Qué detecta la **oxidasa** y cómo se lee?",
+      "reverso": "El **citocromo oxidasa**. Con **tetrametil-p-fenilendiamina al 1 %** aparece un color **azul-púrpura** en **5-10 segundos**. **Positiva:** *Pseudomonas*, *Neisseria*. **Negativa:** **enterobacterias** (*E. coli*).",
+      "fuente": "UKHSA, UK SMI TP 26 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f13",
+      "anverso": "¿Qué prueba separa ***Pseudomonas*** de las **enterobacterias**?",
+      "reverso": "La **oxidasa** (1233 #15): *Pseudomonas*, **positiva**; enterobacterias, **negativas**. La coagulasa es de estafilococos y la catalasa no los separa.",
+      "fuente": "UKHSA, UK SMI TP 26 (2025); plantilla 1233",
+      "etiquetas": ["bioquimicas", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f14",
+      "anverso": "Errores que hay que evitar en la **oxidasa**.",
+      "reverso": "- **Asas de níquel o acero:** falsos positivos; usar **platino, plástico o palillo**.\n- **Colonias de medios con glucosa:** falsos negativos.\n- **Reactivo azul:** se ha autooxidado; no sirve.",
+      "fuente": "UKHSA, UK SMI TP 26 (2025)",
+      "etiquetas": ["bioquimicas"]
+    },
+    {
+      "id": "t16-f15",
+      "anverso": "¿Qué detecta la **coagulasa** y para qué sirve?",
+      "reverso": "La enzima que **coagula el plasma**. Identifica ***Staphylococcus aureus*** (positivo). En porta: **grumos en 10 s**, con gota **control sin plasma**. En tubo: **coágulo** a 35-37 °C hasta 4 h, y si no a las 24 h.",
+      "fuente": "UKHSA, UK SMI TP 10 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f16",
+      "anverso": "¿Qué detecta la prueba del **indol**?",
+      "reverso": "La **triptofanasa**, que convierte el **triptófano** en **indol**. Con el **reactivo de Kovács** aparece un anillo **rosa-rojo**. ***E. coli*, positiva**; *Proteus mirabilis*, negativa.",
+      "fuente": "UKHSA, UK SMI TP 19 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f17",
+      "anverso": "¿Qué detecta la **ureasa** y cómo se lee?",
+      "reverso": "La enzima que descompone la **urea** en amoniaco y sube el pH. En **agar urea de Christensen** (rojo fenol) pasa de **amarillo a rosa**. **Positiva:** ***Proteus***. **Negativas:** *E. coli*, ***Salmonella***.",
+      "fuente": "UKHSA, UK SMI TP 36 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f18",
+      "anverso": "Los gérmenes del género ***Salmonella***, ¿producen ureasa?",
+      "reverso": "**No** (1246 R1). Además son **oxidasa negativos**, **indol negativos**, **no fermentan la lactosa**, **fermentan la glucosa** y casi todos producen **sulfuro de hidrógeno**.",
+      "fuente": "UKHSA, UK SMI ID 24; plantilla 1246",
+      "etiquetas": ["bioquimicas", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f19",
+      "anverso": "¿Qué detecta la prueba del **ONPG**?",
+      "reverso": "La **β-galactosidasa**: el ONPG incoloro da **o-nitrofenol amarillo**. Detecta también a los **fermentadores tardíos de la lactosa**, que tienen β-galactosidasa pero no permeasa.",
+      "fuente": "UKHSA, UK SMI TP 24 (2025)",
+      "etiquetas": ["bioquimicas"]
+    },
+    {
+      "id": "t16-f20",
+      "anverso": "¿Cómo se interpreta la prueba de **oxidación-fermentación** (Hugh y Leifson)?",
+      "reverso": "Dos tubos, uno **sellado con parafina**. **Fermentador:** ácido (**amarillo**) en **los dos**. **Oxidativo:** ácido **solo en el abierto**. **Ni uno ni otro:** sin ácido.",
+      "fuente": "UKHSA, UK SMI TP 27 (2025)",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f21",
+      "anverso": "Perfil de las **enterobacterias**.",
+      "reverso": "**Bacilos gramnegativos**, **anaerobios facultativos**, **oxidasa negativos**, **fermentan la glucosa** y **reducen los nitratos**. La catalasa es variable. *Plesiomonas* es el único género oxidasa positivo.",
+      "fuente": "UKHSA, UK SMI ID 16",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f22",
+      "anverso": "Perfil de ***Pseudomonas***.",
+      "reverso": "**Bacilos gramnegativos**, **aerobios estrictos**, **no fermentan la glucosa**, **oxidasa y catalasa positivos**. *P. aeruginosa*: **pioverdina** fluorescente, **piocianina** y crecimiento **hasta 42 °C**.",
+      "fuente": "UKHSA, UK SMI ID 17",
+      "etiquetas": ["bioquimicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f23",
+      "anverso": "¿Para qué sirven los **sistemas comerciales** de identificación (galerías tipo API) y qué limitaciones tienen?",
+      "reverso": "Hacen muchas pruebas a la vez y dan un **perfil numérico** que se compara con una **base de datos**. **No recogen siempre los cambios de taxonomía**, **no deben usarse solos** y **cada lote** se valida con cepas de control.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["bioquimicas"]
+    },
+    {
+      "id": "t16-f24",
+      "anverso": "¿En qué se basa el **MALDI-TOF** y qué ventajas tiene?",
+      "reverso": "Ioniza las **proteínas** de la célula (sobre todo **ribosómicas**) con un **láser** y compara el **espectro** con una **base de datos**. Da el resultado en **minutos u horas**, y hoy es el **método principal** de identificación.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025); UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["maldi"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f25",
+      "anverso": "Limitaciones del **MALDI-TOF**.",
+      "reverso": "Depende de la **base de datos**; **no separa** especies muy parecidas (***Shigella* y *E. coli***, complejo *Burkholderia cepacia*); **no da la sensibilidad a antibióticos** (no separa *S. aureus* resistente y sensible a la meticilina).",
+      "fuente": "UKHSA, UK SMI TP 40 (2025); UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["maldi"]
+    },
+    {
+      "id": "t16-f26",
+      "anverso": "¿En qué se basan las técnicas **serológicas** de identificación?",
+      "reverso": "En la unión **antígeno-anticuerpo**: se enfrenta la bacteria **desconocida** a **antisueros conocidos**. Si se forman **grumos** (aglutinación) o **precipitado**, el antígeno está.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025); OpenStax Microbiology, 20.2-20.5",
+      "etiquetas": ["serologicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f27",
+      "anverso": "Pasos de la **aglutinación en porta**.",
+      "reverso": "1. Suspensión **lechosa** de la colonia en **dos gotas de suero salino**.\n2. Si se **autoaglutina**, no vale.\n3. **Antisuero en una sola gota**; la otra es el **control**.\n4. Balancear **30-60 s** y mirar sobre **fondo negro**: **grumos = positivo**.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025)",
+      "etiquetas": ["serologicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f28",
+      "anverso": "¿Qué es la **aglutinación con látex**?",
+      "reverso": "Una aglutinación **indirecta**: partículas de **látex recubiertas de anticuerpos** (o de antígeno) que se aglutinan si encuentran su pareja. Hay kits rápidos, por ejemplo para *Salmonella*.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025); OpenStax Microbiology, 20.2-20.5",
+      "etiquetas": ["serologicas"]
+    },
+    {
+      "id": "t16-f29",
+      "anverso": "¿Cómo se serotipa ***Salmonella***?",
+      "reverso": "Por el esquema de **White-Kauffmann-Le Minor**: **antígenos O** (de la membrana externa; definen el **grupo**) y **antígenos H** (flagelares; definen el **serotipo**, a menudo en **dos fases**). *S. Typhi* puede tener **antígeno Vi**. Hay **más de 2600** serotipos.",
+      "fuente": "UKHSA, UK SMI ID 24",
+      "etiquetas": ["serologicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f30",
+      "anverso": "¿Qué significa la fórmula antigénica **6,7,14:r:1,2** de *Salmonella* Virchow?",
+      "reverso": "Antígenos **O 6, 7 y 14**; antígeno **H de fase 1: r**; antígenos **H de fase 2: 1 y 2**.",
+      "fuente": "UKHSA, UK SMI ID 24",
+      "etiquetas": ["serologicas"]
+    },
+    {
+      "id": "t16-f31",
+      "anverso": "¿Qué son los **grupos de Lancefield**?",
+      "reverso": "Una clasificación de los **estreptococos** por los **polisacáridos de su pared**, mediante **aglutinación directa** con antisueros.",
+      "fuente": "OpenStax Microbiology, 20.2-20.5",
+      "etiquetas": ["serologicas"]
+    },
+    {
+      "id": "t16-f32",
+      "anverso": "¿Qué diferencia hay entre la **inmunofluorescencia directa** y la **indirecta**?",
+      "reverso": "**Directa:** un **anticuerpo marcado** se une al **antígeno** (por ejemplo, ***Legionella pneumophila*** en esputo). **Indirecta:** el **suero del paciente** se une al antígeno y un **segundo anticuerpo marcado** lo revela.",
+      "fuente": "OpenStax Microbiology, 20.2-20.5",
+      "etiquetas": ["serologicas"]
+    },
+    {
+      "id": "t16-f33",
+      "anverso": "¿Por qué precipita mejor un antisuero **policlonal** que un anticuerpo monoclonal?",
+      "reverso": "Porque reconoce **varios epítopos** y forma redes. Además, hace falta una **proporción óptima** de antígeno y anticuerpo: la **zona de equivalencia**.",
+      "fuente": "OpenStax Microbiology, 20.2-20.5",
+      "etiquetas": ["serologicas"]
+    },
+    {
+      "id": "t16-f34",
+      "anverso": "¿Qué es la **PCR** y qué componentes necesita?",
+      "reverso": "Una técnica que **amplifica una región de ADN** millones de veces. Necesita **ADN molde**, dos **cebadores** (dan la especificidad), **desoxinucleótidos** y una **ADN polimerasa termoestable**.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "etiquetas": ["geneticas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f35",
+      "anverso": "Fases de **un ciclo de PCR**, en orden y con sus temperaturas.",
+      "reverso": "1. **Desnaturalización** (~95 °C): se separan las hebras.\n2. **Hibridación** (~50 °C): se unen los cebadores.\n3. **Elongación** (72 °C): la polimerasa alarga la copia.\n\n(1246 #38.)",
+      "fuente": "OpenStax Microbiology, 12.2; plantilla 1246",
+      "etiquetas": ["geneticas", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f36",
+      "anverso": "¿Cuántos ciclos tiene una PCR y qué pasa en cada uno?",
+      "reverso": "**25-40 ciclos** en un **termociclador**. **Cada ciclo duplica** el número de copias.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "etiquetas": ["geneticas"]
+    },
+    {
+      "id": "t16-f37",
+      "anverso": "¿Qué son la **RT-PCR** y la **PCR en tiempo real** (qPCR)?",
+      "reverso": "- **RT-PCR:** la **retrotranscriptasa** pasa primero el **ARN a ADN**.\n- **qPCR:** sigue la amplificación **con fluorescencia** y permite **cuantificar** el ADN de partida.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "etiquetas": ["geneticas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f38",
+      "anverso": "¿Qué dice el RD 3/2023 de la **qPCR de *Legionella***?",
+      "reverso": "Que se puede usar **como complemento del cultivo** (UNE-ISO/TS 12869), **validada** según la **ISO/IEC 17025**. El método oficial sigue siendo el **cultivo de la UNE-EN ISO 11731**.",
+      "fuente": "RD 3/2023, anexo III, parte C",
+      "etiquetas": ["geneticas", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f39",
+      "anverso": "¿Qué es una **sonda de ADN**? ¿Y la FISH?",
+      "reverso": "Una cadena corta de ADN **marcada** (radiactiva o fluorescente) que **hibrida** con su secuencia complementaria. La **FISH** es la hibridación **in situ con fluorescencia**.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "etiquetas": ["geneticas"]
+    },
+    {
+      "id": "t16-f40",
+      "anverso": "¿Para qué sirve **secuenciar el gen del ARNr 16S**?",
+      "reverso": "Para identificar **bacterias raras** cuando fallan el MALDI-TOF y las pruebas fenotípicas. En los hongos se usa la región **ITS**. Es **costoso** y no todas las especies están secuenciadas.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)",
+      "etiquetas": ["geneticas"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f41",
+      "anverso": "¿Qué técnicas permiten **tipificar** cepas por debajo de la especie?",
+      "reverso": "**Serotipado**, **fagotipado**, perfiles de **plásmidos**, **ribotipado** y **rep-PCR**. Se usan para **seguir brotes**.",
+      "fuente": "OpenStax Microbiology, 12.2; Baron, cap. 3",
+      "etiquetas": ["geneticas"]
+    },
+    {
+      "id": "t16-f42",
+      "anverso": "¿Cómo se confirman los **coliformes** y ***E. coli*** en el agua?",
+      "reverso": "**Coliformes:** **oxidasa negativos** y **ácido de la lactosa** a 37 °C (o β-galactosidasa) (1246 #36). ***E. coli*:** además **lactosa a 44 °C** e **indol**; casi todos con **β-glucuronidasa**.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4, 5 y 6; plantilla 1246",
+      "etiquetas": ["agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f43",
+      "anverso": "¿Cómo se confirman los **enterococos** del agua?",
+      "reverso": "Por la **hidrólisis de la esculina** en agar bilis-esculina (o con kanamicina y azida) a **44 °C**: colonias con **halo marrón o negro**.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4, 5 y 6",
+      "etiquetas": ["agua"]
+    },
+    {
+      "id": "t16-f44",
+      "anverso": "¿Cómo se confirma ***Clostridium perfringens*** según la guía británica? ¿Y en TSC-MUP?",
+      "reverso": "Guía británica: **inmóvil**, **reduce los nitratos**, **fermenta la lactosa** y **licúa la gelatina**. En **TSC-MUP**: **halo fluorescente con UV de 365 nm** (1322 #23).",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4, 5 y 6; plantilla 1322; RD 3/2023, anexo III, parte C",
+      "etiquetas": ["agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f45",
+      "anverso": "¿Cómo se confirma una colonia de ***Legionella***?",
+      "reverso": "Porque **necesita L-cisteína**: **crece en BCYE y no en BCYE sin L-cisteína** (1233 #13).",
+      "fuente": "Plantilla 1233",
+      "etiquetas": ["agua"],
+      "nucleo": true
+    },
+    {
+      "id": "t16-f46",
+      "anverso": "Mirando el esquema: ¿por qué la polimerasa de la PCR tiene que ser **termoestable**, y de dónde sale la *Taq*?",
+      "reverso": "Porque **cada ciclo vuelve a subir hasta unos 95 °C** para separar las hebras. La *Taq* sale de la bacteria ***Thermus aquaticus***, de una fuente termal.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "etiquetas": ["figura", "geneticas"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "ciclo-pcr"
+      }
+    },
+    {
+      "id": "t16-f47",
+      "anverso": "Mirando el esquema: ¿por qué no serviría la **catalasa** como primer paso de este árbol?",
+      "reverso": "Porque **no separa los dos grupos**: ***Pseudomonas* es catalasa positiva** y en las **enterobacterias la catalasa es variable**.",
+      "fuente": "UKHSA, UK SMI ID 16; UKHSA, UK SMI ID 17",
+      "etiquetas": ["figura", "bioquimicas"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "arbol-gramnegativos"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t16-q01",
+      "pregunta": "En la técnica PCR, el proceso en un ciclo térmico consta de las siguientes fases:",
+      "opciones": ["Elongación, hibridación y desnaturalización.", "Coagulación, elongación e hibridación.", "Desnaturalización, hibridación y elongación."],
+      "correcta": 2,
+      "explicacion": "1246 #38.",
+      "fuente": "Plantilla 1246; OpenStax Microbiology, 12.2",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q02",
+      "pregunta": "Los gérmenes del género Salmonella:",
+      "opciones": ["Son grampositivos.", "No producen ureasa.", "No fermentan la glucosa."],
+      "correcta": 1,
+      "explicacion": "1246 R1 (pregunta de reserva).",
+      "fuente": "Plantilla 1246; UKHSA, UK SMI ID 24",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q03",
+      "pregunta": "Para diferenciar Pseudomonas de enterobacterias se utiliza la prueba bioquímica:",
+      "opciones": ["Oxidasa.", "Coagulasa.", "Catalasa."],
+      "correcta": 0,
+      "explicacion": "1233 #15: Pseudomonas, oxidasa +; enterobacterias, −.",
+      "fuente": "Plantilla 1233; UKHSA, UK SMI TP 26 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q04",
+      "pregunta": "La prueba de la catalasa detecta:",
+      "opciones": ["La coagulación del plasma.", "La producción de indol.", "La descomposición del agua oxigenada con formación de burbujas."],
+      "correcta": 2,
+      "explicacion": "2 H2O2 → 2 H2O + O2.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q05",
+      "pregunta": "Son catalasa negativos:",
+      "opciones": ["Staphylococcus aureus.", "Los estreptococos y enterococos.", "Pseudomonas aeruginosa."],
+      "correcta": 1,
+      "explicacion": "Excepciones entre los aerobios y facultativos.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q06",
+      "pregunta": "La catalasa no se hace con colonias de agar sangre porque:",
+      "opciones": ["Los hematíes tienen catalasa y dan falsos positivos.", "El agar sangre inhibe la enzima.", "Las colonias son demasiado pequeñas."],
+      "correcta": 0,
+      "explicacion": "Las de agar chocolate sí se pueden usar.",
+      "fuente": "UKHSA, UK SMI TP 8 (2025)"
+    },
+    {
+      "id": "t16-q07",
+      "pregunta": "En la prueba de la oxidasa, una reacción positiva da:",
+      "opciones": ["Burbujas.", "Un anillo rojo.", "Color azul-púrpura en 5-10 segundos."],
+      "correcta": 2,
+      "explicacion": "Reactivo de tetrametil-p-fenilendiamina.",
+      "fuente": "UKHSA, UK SMI TP 26 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q08",
+      "pregunta": "Para la prueba de la oxidasa no se debe usar:",
+      "opciones": ["Un palillo estéril.", "Un asa de níquel o de acero.", "Un asa de plástico."],
+      "correcta": 1,
+      "explicacion": "Da falsos positivos.",
+      "fuente": "UKHSA, UK SMI TP 26 (2025)"
+    },
+    {
+      "id": "t16-q09",
+      "pregunta": "La prueba de la coagulasa sirve sobre todo para identificar:",
+      "opciones": ["Staphylococcus aureus.", "Escherichia coli.", "Enterococcus."],
+      "correcta": 0,
+      "explicacion": "Coagulasa positivo.",
+      "fuente": "UKHSA, UK SMI TP 10 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q10",
+      "pregunta": "En la prueba del indol se añade:",
+      "opciones": ["Agua oxigenada.", "Plasma.", "Reactivo de Kovács."],
+      "correcta": 2,
+      "explicacion": "Aparece un anillo rosa-rojo si hay indol.",
+      "fuente": "UKHSA, UK SMI TP 19 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q11",
+      "pregunta": "Es indol positiva:",
+      "opciones": ["Proteus mirabilis.", "Escherichia coli.", "Salmonella."],
+      "correcta": 1,
+      "explicacion": "E. coli es el control positivo de la UKHSA.",
+      "fuente": "UKHSA, UK SMI TP 19 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q12",
+      "pregunta": "En el agar urea de Christensen, una reacción positiva cambia el color:",
+      "opciones": ["De amarillo a rosa.", "De rojo a amarillo.", "De azul a verde."],
+      "correcta": 0,
+      "explicacion": "El amoniaco sube el pH; indicador rojo fenol.",
+      "fuente": "UKHSA, UK SMI TP 36 (2025)"
+    },
+    {
+      "id": "t16-q13",
+      "pregunta": "Es ureasa positiva rápida:",
+      "opciones": ["Escherichia coli.", "Salmonella.", "Proteus."],
+      "correcta": 2,
+      "explicacion": "Salmonella no produce ureasa.",
+      "fuente": "UKHSA, UK SMI TP 36 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q14",
+      "pregunta": "La prueba del ONPG detecta la enzima:",
+      "opciones": ["Ureasa.", "β-galactosidasa.", "Catalasa."],
+      "correcta": 1,
+      "explicacion": "El ONPG incoloro da o-nitrofenol amarillo.",
+      "fuente": "UKHSA, UK SMI TP 24 (2025)"
+    },
+    {
+      "id": "t16-q15",
+      "pregunta": "En la prueba de oxidación-fermentación, un microorganismo fermentador produce ácido:",
+      "opciones": ["En los dos tubos, abierto y sellado.", "Solo en el tubo abierto.", "En ninguno."],
+      "correcta": 0,
+      "explicacion": "Solo en el abierto = oxidativo.",
+      "fuente": "UKHSA, UK SMI TP 27 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q16",
+      "pregunta": "Las enterobacterias son:",
+      "opciones": ["Oxidasa positivas y no fermentan la glucosa.", "Grampositivas y catalasa negativas.", "Oxidasa negativas y fermentan la glucosa."],
+      "correcta": 2,
+      "explicacion": "Además reducen los nitratos.",
+      "fuente": "UKHSA, UK SMI ID 16",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q17",
+      "pregunta": "Pseudomonas aeruginosa:",
+      "opciones": ["Fermenta la glucosa.", "No fermenta la glucosa y es oxidasa positiva.", "Es anaerobia estricta."],
+      "correcta": 1,
+      "explicacion": "Aerobia estricta; produce pioverdina y piocianina.",
+      "fuente": "UKHSA, UK SMI ID 17"
+    },
+    {
+      "id": "t16-q18",
+      "pregunta": "El MALDI-TOF identifica las bacterias por:",
+      "opciones": ["Su perfil de proteínas comparado con una base de datos.", "La secuencia completa de su genoma.", "Su reacción de Gram."],
+      "correcta": 0,
+      "explicacion": "Sobre todo proteínas ribosómicas.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q19",
+      "pregunta": "Una limitación del MALDI-TOF es que:",
+      "opciones": ["Tarda varios días.", "Solo identifica hongos.", "No da la sensibilidad a los antibióticos."],
+      "correcta": 2,
+      "explicacion": "Tampoco separa bien Shigella de E. coli.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025)"
+    },
+    {
+      "id": "t16-q20",
+      "pregunta": "En la aglutinación en porta, la segunda gota sin antisuero sirve para:",
+      "opciones": ["Diluir el antisuero.", "Comprobar que la suspensión no se autoaglutina.", "Medir la turbidez."],
+      "correcta": 1,
+      "explicacion": "Es el control.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q21",
+      "pregunta": "En el serotipado de Salmonella, los antígenos H son:",
+      "opciones": ["Flagelares.", "De la cápsula.", "De la pared grampositiva."],
+      "correcta": 0,
+      "explicacion": "Los O, de la membrana externa, definen el grupo.",
+      "fuente": "UKHSA, UK SMI ID 24",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q22",
+      "pregunta": "El esquema de serotipado de Salmonella se llama de:",
+      "opciones": ["Lancefield.", "Gram.", "White-Kauffmann-Le Minor."],
+      "correcta": 2,
+      "explicacion": "Lancefield es para los estreptococos.",
+      "fuente": "UKHSA, UK SMI ID 24"
+    },
+    {
+      "id": "t16-q23",
+      "pregunta": "En la inmunofluorescencia directa:",
+      "opciones": ["Se usa el suero del paciente y un segundo anticuerpo.", "Un anticuerpo marcado se une directamente al antígeno.", "No se usa fluorocromo."],
+      "correcta": 1,
+      "explicacion": "La indirecta usa un segundo anticuerpo marcado.",
+      "fuente": "OpenStax Microbiology, 20.2-20.5"
+    },
+    {
+      "id": "t16-q24",
+      "pregunta": "Los grupos de Lancefield clasifican a:",
+      "opciones": ["Los estreptococos.", "Las enterobacterias.", "Los hongos."],
+      "correcta": 0,
+      "explicacion": "Por los polisacáridos de la pared.",
+      "fuente": "OpenStax Microbiology, 20.2-20.5"
+    },
+    {
+      "id": "t16-q25",
+      "pregunta": "La polimerasa Taq procede de:",
+      "opciones": ["Escherichia coli.", "Bacillus subtilis.", "Thermus aquaticus."],
+      "correcta": 2,
+      "explicacion": "Una bacteria de fuentes termales: es termoestable.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q26",
+      "pregunta": "En la PCR, la fase de hibridación consiste en:",
+      "opciones": ["La separación de las dos hebras.", "La unión de los cebadores a su secuencia complementaria.", "La síntesis de la nueva hebra."],
+      "correcta": 1,
+      "explicacion": "Hacia 50 °C.",
+      "fuente": "OpenStax Microbiology, 12.2",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q27",
+      "pregunta": "La PCR en tiempo real (qPCR) permite además:",
+      "opciones": ["Cuantificar el ADN de partida.", "Ver la reacción de Gram.", "Identificar sin cebadores."],
+      "correcta": 0,
+      "explicacion": "Sigue la amplificación con fluorescencia.",
+      "fuente": "OpenStax Microbiology, 12.2"
+    },
+    {
+      "id": "t16-q28",
+      "pregunta": "Según el RD 3/2023, la qPCR de Legionella:",
+      "opciones": ["Sustituye al cultivo.", "Está prohibida.", "Puede usarse como complemento del cultivo, validada según la ISO/IEC 17025."],
+      "correcta": 2,
+      "explicacion": "El método oficial es el cultivo de la UNE-EN ISO 11731.",
+      "fuente": "RD 3/2023, anexo III, parte C",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q29",
+      "pregunta": "La secuenciación del gen del ARNr 16S se usa para:",
+      "opciones": ["Teñir las esporas.", "Identificar bacterias raras cuando fallan otros métodos.", "Contar colonias."],
+      "correcta": 1,
+      "explicacion": "En hongos, la región ITS.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025)"
+    },
+    {
+      "id": "t16-q30",
+      "pregunta": "Una bacteria coliforme se define como:",
+      "opciones": ["Lactosa positiva y oxidasa negativa.", "Lactosa positiva y oxidasa positiva.", "Lactosa negativa y oxidasa positiva."],
+      "correcta": 0,
+      "explicacion": "1246 #36.",
+      "fuente": "Plantilla 1246; SCA, Microbiology of Drinking Water, partes 4, 5 y 6",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q31",
+      "pregunta": "Los enterococos del agua se confirman por:",
+      "opciones": ["La coagulasa.", "La oxidasa positiva.", "La hidrólisis de la esculina."],
+      "correcta": 2,
+      "explicacion": "Halo marrón o negro a 44 °C.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4, 5 y 6"
+    },
+    {
+      "id": "t16-q32",
+      "pregunta": "Una colonia se confirma como Legionella cuando:",
+      "opciones": ["Crece en agar GVPC y no en agar BCYE.", "Crece en agar BCYE y no en agar BCYE sin L-cisteína.", "Crece en agar BCYE y no en BCYE con antibióticos."],
+      "correcta": 1,
+      "explicacion": "1233 #13.",
+      "fuente": "Plantilla 1233",
+      "nucleo": true
+    },
+    {
+      "id": "t16-q33",
+      "pregunta": "Las colonias de Clostridium perfringens en TSC-MUP se confirman mediante:",
+      "opciones": ["Un halo fluorescente con luz UV de 365 nm.", "La prueba de aglutinación con látex.", "La prueba de la coagulasa."],
+      "correcta": 0,
+      "explicacion": "1322 #23. El TSC-MUP es un método alternativo autorizado por el RD 3/2023.",
+      "fuente": "Plantilla 1322; RD 3/2023, anexo III, parte C",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t16-s01",
+      "titulo": "Un bacilo gramnegativo aislado del agua",
+      "enunciado": "En una muestra de agua de un depósito se aísla en cultivo puro un **bacilo gramnegativo**. Las colonias tienen **pigmento verdoso**. El técnico dispone de reactivos para oxidasa, catalasa, indol y ureasa.",
+      "preguntas": [
+        {
+          "id": "t16-s01-q1",
+          "pregunta": "La primera prueba para orientar entre Pseudomonas y enterobacterias es:",
+          "opciones": ["La coagulasa.", "La oxidasa.", "El tubo germinal.", "La catalasa."],
+          "correcta": 1,
+          "explicacion": "1233 #15.",
+          "fuente": "UKHSA, UK SMI TP 26 (2025)"
+        },
+        {
+          "id": "t16-s01-q2",
+          "pregunta": "La oxidasa da color azul-púrpura en 8 segundos. Se interpreta como:",
+          "opciones": ["Negativa: orienta a enterobacterias.", "Dudosa: hay que repetir con asa de níquel.", "No válida: el color debe ser rojo.", "Positiva: orienta a Pseudomonas."],
+          "correcta": 3,
+          "explicacion": "Positiva si vira en 5-10 s. Nunca con asa de níquel.",
+          "fuente": "UKHSA, UK SMI TP 26 (2025)"
+        },
+        {
+          "id": "t16-s01-q3",
+          "pregunta": "Para confirmar que no fermenta la glucosa se usa:",
+          "opciones": ["La coagulasa en porta.", "El ONPG.", "La prueba de oxidación-fermentación de Hugh y Leifson.", "La aglutinación con látex."],
+          "correcta": 2,
+          "explicacion": "Pseudomonas es oxidativa: ácido solo en el tubo abierto.",
+          "fuente": "UKHSA, UK SMI TP 27 (2025)"
+        },
+        {
+          "id": "t16-s01-q4",
+          "pregunta": "Si el resultado de la oxidación-fermentación fuera de un microorganismo oxidativo, se vería:",
+          "opciones": ["Ácido solo en el tubo abierto.", "Ácido en los dos tubos.", "Ácido solo en el tubo sellado.", "Gas en los dos tubos."],
+          "correcta": 0,
+          "explicacion": "El fermentador da ácido en los dos.",
+          "fuente": "UKHSA, UK SMI TP 27 (2025)"
+        },
+        {
+          "id": "t16-s01-q5",
+          "pregunta": "Para identificar la especie de forma rápida, el método principal hoy es:",
+          "opciones": ["La tinción de esporas.", "El NMP.", "La gota pendiente.", "El MALDI-TOF."],
+          "correcta": 3,
+          "explicacion": "Compara el perfil de proteínas con una base de datos.",
+          "fuente": "UKHSA, UK SMI ID 1 (2025)"
+        }
+      ]
+    },
+    {
+      "id": "t16-s02",
+      "titulo": "Sospecha de Salmonella",
+      "enunciado": "En un alimento implicado en un brote se aíslan en agar DCA colonias **incoloras** (no fermentan la lactosa) con **centro negro**. El laboratorio quiere confirmar si es ***Salmonella***.",
+      "preguntas": [
+        {
+          "id": "t16-s02-q1",
+          "pregunta": "¿Qué resultado de la ureasa es compatible con Salmonella?",
+          "opciones": ["Positiva rápida, como Proteus.", "Positiva tardía.", "Negativa.", "Variable según la temperatura."],
+          "correcta": 2,
+          "explicacion": "1246 R1.",
+          "fuente": "UKHSA, UK SMI ID 24"
+        },
+        {
+          "id": "t16-s02-q2",
+          "pregunta": "Y de la oxidasa:",
+          "opciones": ["Positiva.", "Negativa.", "Azul inmediato siempre.", "No se puede hacer en gramnegativos."],
+          "correcta": 1,
+          "explicacion": "Salmonella es oxidasa negativa.",
+          "fuente": "UKHSA, UK SMI ID 24"
+        },
+        {
+          "id": "t16-s02-q3",
+          "pregunta": "El centro negro de las colonias se debe a:",
+          "opciones": ["La fermentación de la lactosa.", "La presencia de esporas.", "La catalasa.", "La producción de sulfuro de hidrógeno."],
+          "correcta": 3,
+          "explicacion": "Casi todas las Salmonella producen H2S.",
+          "fuente": "UKHSA, UK SMI ID 24"
+        },
+        {
+          "id": "t16-s02-q4",
+          "pregunta": "Para serotiparla se enfrenta la colonia a:",
+          "opciones": ["Antisueros O y H en aglutinación en porta, con gota de control.", "Agua oxigenada.", "Reactivo de Kovács.", "Cebadores de PCR del ARNr 16S solamente."],
+          "correcta": 0,
+          "explicacion": "Esquema de White-Kauffmann-Le Minor.",
+          "fuente": "UKHSA, UK SMI TP 3 (2025); UKHSA, UK SMI ID 24"
+        },
+        {
+          "id": "t16-s02-q5",
+          "pregunta": "Si la suspensión se aglutina en la gota de control sin antisuero:",
+          "opciones": ["El resultado es positivo.", "Es Salmonella Typhi.", "La prueba no vale: hay autoaglutinación.", "Hay que añadir más antisuero."],
+          "correcta": 2,
+          "explicacion": "Solo se interpretan suspensiones lisas.",
+          "fuente": "UKHSA, UK SMI TP 3 (2025)"
+        }
+      ]
+    }
+  ]
+}
