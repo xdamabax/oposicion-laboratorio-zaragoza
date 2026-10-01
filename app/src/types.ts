@@ -103,6 +103,8 @@ export type TipoEsquema =
   | 'siembra-profundidad-superficie'
   | 'banco-diluciones'
   | 'bandeja-nmp-51'
+  | 'tincion-gram'
+  | 'gota-pendiente'
 
 export type TipoMaterial =
   | 'matraz-aforado'

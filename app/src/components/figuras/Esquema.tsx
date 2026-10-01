@@ -77,6 +77,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'siembra-profundidad-superficie': 'Siembra en profundidad y en superficie',
   'banco-diluciones': 'Banco de diluciones decimales y recuento en placa',
   'bandeja-nmp-51': 'Bandeja de NMP de 51 pocillos: coliformes y E. coli',
+  'tincion-gram': 'Tinción de Gram paso a paso',
+  'gota-pendiente': 'Gota pendiente y preparación entre porta y cubre',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -148,6 +150,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'siembra-profundidad-superficie': { ancho: 580, alto: 216 },
   'banco-diluciones': { ancho: 580, alto: 284 },
   'bandeja-nmp-51': { ancho: 580, alto: 258 },
+  'tincion-gram': { ancho: 580, alto: 250 },
+  'gota-pendiente': { ancho: 580, alto: 206 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6968,6 +6972,129 @@ function BandejaNmp51() {
   )
 }
 
+/**
+ * Tincion de Gram paso a paso: una grampositiva (pared gruesa) y una
+ * gramnegativa (pared fina) despues de cada uno de los cuatro reactivos. Las
+ * dos salen violetas del cristal violeta y del lugol; el decolorante solo
+ * vacia a la gramnegativa, que despues toma el rosa de la safranina.
+ */
+function TincionGram() {
+  const VIOLETA = '#6a3d9a'
+  const ROSA = '#e8879e'
+  const XS = [160, 270, 380, 490]
+  const PASOS = [
+    { reactivo: '1. Cristal violeta', papel: 'colorante primario', pos: VIOLETA, neg: VIOLETA },
+    { reactivo: '2. Lugol', papel: 'mordiente', pos: VIOLETA, neg: VIOLETA },
+    { reactivo: '3. Alcohol o acetona', papel: 'decolorante', pos: VIOLETA, neg: 'none' },
+    { reactivo: '4. Safranina', papel: 'contraste', pos: VIOLETA, neg: ROSA },
+  ]
+  const FILAS = [
+    { pared: 'positiva', y: 92, rotulo: ['Grampositiva', 'pared gruesa'], grosor: 4.5 },
+    { pared: 'negativa', y: 162, rotulo: ['Gramnegativa', 'pared fina'], grosor: 1.2 },
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {PASOS.map((p, i) => (
+        <g key={p.reactivo}>
+          <text data-pieza="paso" data-orden={i + 1} x={XS[i]} y={24} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {p.reactivo}
+            <tspan x={XS[i]} dy={13} fontWeight="normal" fontSize="8">
+              ({p.papel})
+            </tspan>
+          </text>
+          {i > 0 && <path d={`M ${XS[i] - 70} 127 l 26 0 m -6 -4 l 6 4 l -6 4`} fill="none" stroke="currentColor" strokeWidth="1" />}
+          {FILAS.map((f) => {
+            const relleno = f.pared === 'positiva' ? p.pos : p.neg
+            return (
+              <rect
+                key={f.pared}
+                data-pieza="celula"
+                data-paso={i + 1}
+                data-pared={f.pared}
+                x={XS[i] - 30}
+                y={f.y - 12}
+                width={60}
+                height={24}
+                rx={12}
+                fill={relleno}
+                fillOpacity={relleno === 'none' ? undefined : 0.9}
+                stroke="currentColor"
+                strokeWidth={f.grosor}
+                strokeDasharray={relleno === 'none' ? '3 2' : undefined}
+              />
+            )
+          })}
+        </g>
+      ))}
+      {FILAS.map((f) => (
+        <text key={f.pared} x={20} y={f.y - 2} fontSize="9" fontWeight="bold" fill="currentColor">
+          {f.rotulo[0]}
+          <tspan x={20} dy={12} fontWeight="normal" fontSize="8">
+            {f.rotulo[1]}
+          </tspan>
+        </text>
+      ))}
+      <text x={380} y={200} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+        la gramnegativa queda incolora
+      </text>
+      <text x={490} y={200} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+        y toma el rosa
+      </text>
+      <text x={20} y={226} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        El peptidoglicano grueso retiene el complejo cristal violeta–yodo; la pared fina, con membrana externa, lo pierde al decolorar.
+      </text>
+      <text x={20} y={240} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Lavado con agua entre paso y paso. Se examina con el objetivo de inmersión.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Observacion en fresco, en corte. A la izquierda, la gota pendiente: la gota
+ * cuelga del cubreobjetos dentro de la excavacion del porta, sin tocar el
+ * fondo, y la vaselina sella el cubre por fuera de la excavacion. A la
+ * derecha, la preparacion entre porta y cubre: la muestra queda como una
+ * pelicula fina entre los dos vidrios.
+ */
+function GotaPendiente() {
+  const VIDRIO = AZUL_CLARO
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={155} y={18} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Gota pendiente
+      </text>
+      <path data-pieza="porta" data-panel="gota" d="M 30 85 L 115 85 Q 155 121 195 85 L 280 85 L 280 121 L 30 121 Z" fill={VIDRIO} fillOpacity="0.7" stroke="currentColor" strokeWidth="1.2" />
+      <path data-pieza="excavacion" d="M 115 85 Q 155 121 195 85" fill="none" stroke="currentColor" strokeWidth="1.2" />
+      <rect data-pieza="vaselina" x={99} y={82} width={13} height={3} fill="#e8c35a" stroke="currentColor" strokeWidth="0.5" />
+      <rect data-pieza="vaselina" x={198} y={82} width={13} height={3} fill="#e8c35a" stroke="currentColor" strokeWidth="0.5" />
+      <rect data-pieza="cubre" data-panel="gota" x={94} y={79} width={122} height={3} fill={VIDRIO} stroke="currentColor" strokeWidth="0.8" />
+      <path data-pieza="gota" d="M 136 82 A 19 12 0 0 0 174 82 Z" fill="#9ecbe8" fillOpacity="0.9" stroke="currentColor" strokeWidth="0.8" />
+      {[[146, 86], [155, 89], [163, 85], [150, 91]].map(([x, y], i) => (
+        <ellipse key={i} cx={x} cy={y} rx={2.2} ry={1} fill="currentColor" />
+      ))}
+      <Rotulo x={86} y={60} hacia={[110, 79]} lineas={['cubreobjetos']} />
+      <Rotulo x={232} y={60} hacia={[205, 82]} lineas={['vaselina']} derecha />
+      <Rotulo x={196} y={146} hacia={[170, 90]} lineas={['gota colgando del cubre,', 'sin tocar el fondo']} derecha />
+      <Rotulo x={36} y={146} hacia={[95, 110]} lineas={['portaobjetos excavado']} derecha />
+      <text x={430} y={18} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Entre porta y cubre
+      </text>
+      <rect data-pieza="porta" data-panel="fresco" x={330} y={85} width={220} height={20} fill={VIDRIO} fillOpacity="0.7" stroke="currentColor" strokeWidth="1.2" />
+      <rect data-pieza="pelicula" x={398} y={82} width={84} height={3} fill="#9ecbe8" stroke="currentColor" strokeWidth="0.5" />
+      <rect data-pieza="cubre" data-panel="fresco" x={390} y={79} width={100} height={3} fill={VIDRIO} stroke="currentColor" strokeWidth="0.8" />
+      <Rotulo x={500} y={60} hacia={[470, 79]} lineas={['cubreobjetos']} derecha />
+      <Rotulo x={420} y={136} hacia={[445, 84]} lineas={['la gota se extiende', 'en una película fina']} derecha />
+      <text data-pieza="lectura" x={20} y={184} fontSize="8" fill="currentColor">
+        Las dos se examinan enseguida a ×400: la movilidad disminuye con el tiempo.
+      </text>
+      <text x={20} y={198} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Móvil: movimiento organizado, en zigzag o a volteretas. Inmóvil: sin movimiento, o solo el browniano.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7104,6 +7231,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <BancoDiluciones />
     case 'bandeja-nmp-51':
       return <BandejaNmp51 />
+    case 'tincion-gram':
+      return <TincionGram />
+    case 'gota-pendiente':
+      return <GotaPendiente />
   }
 }
 

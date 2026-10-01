@@ -1080,6 +1080,31 @@ function medir(sabotaje, ROJO) {
     const r = svg.querySelector('[data-pieza="resultado"][data-grupo="coliformes"]')
     r.textContent = r.textContent.replace('30,6', '56,0')
   }
+  if (sabotaje === 122) {
+    const svg = porClave('tincion-gram')
+    // el decolorante antes que el lugol: se intercambian los rotulos de los pasos 2 y 3
+    const a = svg.querySelector('[data-pieza="paso"][data-orden="2"]')
+    const b = svg.querySelector('[data-pieza="paso"][data-orden="3"]')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
+  if (sabotaje === 123) {
+    const svg = porClave('tincion-gram')
+    // la gramnegativa sigue violeta despues del decolorante
+    svg.querySelector('[data-pieza="celula"][data-paso="3"][data-pared="negativa"]').setAttribute('fill', '#6a3d9a')
+  }
+  if (sabotaje === 124) {
+    const svg = porClave('gota-pendiente')
+    // la gota, el doble de alta, llega al fondo de la excavacion
+    const g = svg.querySelector('[data-pieza="gota"]')
+    g.setAttribute('d', g.getAttribute('d').replace('A 19 12', 'A 19 24'))
+  }
+  if (sabotaje === 125) {
+    const svg = porClave('gota-pendiente')
+    // el cubre de la preparacion entre porta y cubre, levantado: la pelicula ya no lo toca
+    svg.querySelector('[data-pieza="cubre"][data-panel="fresco"]').setAttribute('y', 70)
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4035,6 +4060,98 @@ function medir(sabotaje, ROJO) {
     return `coliformes ${amarillos.length} → ${res('coliformes')}; E. coli ${halos.length} → ${res('ecoli')} NMP/100 ml`
   })
 
+  /*
+   * Tincion de Gram. Cada celula se asigna al paso cuyo rotulo tiene encima
+   * (el mas cercano en horizontal), y se lee su color y el grosor de su pared.
+   */
+  const GRAM_VIOLETA = '#6a3d9a'
+  const GRAM_ROSA = '#e8879e'
+  const pasosGram = (svg) => piezas(svg, 'paso').sort((a, b) => num(a, 'x') - num(b, 'x'))
+  control('Gram · los reactivos van en su orden: colorante primario, mordiente, decolorante y contraste', () => {
+    const svg = porClave('tincion-gram')
+    const pasos = pasosGram(svg).map((p) => p.textContent)
+    const esperado = [
+      [/cristal violeta/i, /primario/i],
+      [/lugol/i, /mordiente/i],
+      [/alcohol|acetona|etanol/i, /decolorante/i],
+      [/safranina/i, /contraste/i],
+    ]
+    if (pasos.length !== 4) throw new Error(`hay ${pasos.length} pasos`)
+    esperado.forEach(([reactivo, papel], i) => {
+      if (!reactivo.test(pasos[i]) || !papel.test(pasos[i])) throw new Error(`el paso ${i + 1} por la izquierda dice «${pasos[i]}»`)
+    })
+    return 'cristal violeta → lugol → decolorante → safranina'
+  })
+
+  control('Gram · la grampositiva, de pared gruesa, queda violeta en los cuatro pasos; la gramnegativa pierde el violeta al decolorar y acaba rosa', () => {
+    const svg = porClave('tincion-gram')
+    const xs = pasosGram(svg).map((p) => num(p, 'x'))
+    const paso = (c) => {
+      const cx = num(c, 'x') + num(c, 'width') / 2
+      return xs.reduce((m, x, i) => (Math.abs(x - cx) < Math.abs(xs[m] - cx) ? i : m), 0)
+    }
+    const color = (c) => {
+      const f = c.getAttribute('fill')
+      return f === GRAM_VIOLETA ? 'violeta' : f === GRAM_ROSA ? 'rosa' : f === 'none' ? 'incolora' : f
+    }
+    const fila = (pared) => {
+      const cs = piezas(svg, 'celula').filter((c) => c.getAttribute('data-pared') === pared)
+      const r = new Array(4).fill(null)
+      for (const c of cs) r[paso(c)] = color(c)
+      return { colores: r, grosor: Math.min(...cs.map((c) => num(c, 'stroke-width'))) }
+    }
+    const pos = fila('positiva')
+    const neg = fila('negativa')
+    const debePos = ['violeta', 'violeta', 'violeta', 'violeta']
+    const debeNeg = ['violeta', 'violeta', 'incolora', 'rosa']
+    debePos.forEach((d, i) => {
+      if (pos.colores[i] !== d) throw new Error(`tras el paso ${i + 1}, la grampositiva está ${pos.colores[i]}`)
+    })
+    debeNeg.forEach((d, i) => {
+      if (neg.colores[i] !== d) throw new Error(`tras el paso ${i + 1}, la gramnegativa está ${neg.colores[i]}`)
+    })
+    if (!(pos.grosor > 2 * neg.grosor)) throw new Error('la pared de la grampositiva no se dibuja más gruesa que la de la gramnegativa')
+    return `grampositiva ${pos.colores.join(' → ')}; gramnegativa ${neg.colores.join(' → ')}`
+  })
+
+  /*
+   * Gota pendiente. El fondo de la excavacion se calcula en la propia curva
+   * (punto medio de la cuadratica); la gota se mide con su caja.
+   */
+  control('Gota pendiente · la gota cuelga del cubre dentro de la excavación sin tocar el fondo, y la vaselina sella fuera de ella', () => {
+    const svg = porClave('gota-pendiente')
+    const [[x0, y0], [, yc], [x1, y1]] = puntos(pieza(svg, 'excavacion'))
+    const fondo = 0.25 * y0 + 0.5 * yc + 0.25 * y1
+    const cubre = svg.querySelector('[data-pieza="cubre"][data-panel="gota"]')
+    const bajoCubre = num(cubre, 'y') + num(cubre, 'height')
+    if (!(bajoCubre <= y0 + 0.5)) throw new Error('el cubre no está encima del porta')
+    const g = pieza(svg, 'gota').getBBox()
+    if (Math.abs(g.y - bajoCubre) > 0.6) throw new Error('la gota no cuelga de la cara inferior del cubre')
+    if (!(g.y + g.height < fondo - 2)) throw new Error(`la gota llega a ${(g.y + g.height).toFixed(1)} y el fondo de la excavación está en ${fondo.toFixed(1)}`)
+    if (!(g.x > x0 && g.x + g.width < x1)) throw new Error('la gota se sale de la excavación')
+    for (const v of piezas(svg, 'vaselina')) {
+      const vx0 = num(v, 'x')
+      const vx1 = vx0 + num(v, 'width')
+      if (Math.abs(num(v, 'y') - bajoCubre) > 0.6 || Math.abs(num(v, 'y') + num(v, 'height') - y0) > 0.6) throw new Error('la vaselina no une el cubre con el porta')
+      if (!(vx1 <= x0 || vx0 >= x1)) throw new Error('la vaselina está dentro de la excavación')
+    }
+    return `gota de ${bajoCubre.toFixed(0)} a ${(g.y + g.height).toFixed(0)}; fondo en ${fondo.toFixed(0)}; vaselina fuera`
+  })
+
+  control('Gota pendiente · entre porta y cubre la muestra es una película pegada a los dos vidrios, y las dos preparaciones se miran a ×400', () => {
+    const svg = porClave('gota-pendiente')
+    const cubre = svg.querySelector('[data-pieza="cubre"][data-panel="fresco"]')
+    const porta = svg.querySelector('[data-pieza="porta"][data-panel="fresco"]')
+    const p = pieza(svg, 'pelicula')
+    const arriba = num(p, 'y')
+    const abajo = arriba + num(p, 'height')
+    if (Math.abs(arriba - (num(cubre, 'y') + num(cubre, 'height'))) > 0.6) throw new Error('la película no toca el cubre')
+    if (Math.abs(abajo - num(porta, 'y')) > 0.6) throw new Error('la película no toca el porta')
+    if (num(p, 'height') > 4) throw new Error('la película es demasiado gruesa')
+    if (!/×400/.test(pieza(svg, 'lectura').textContent)) throw new Error('no dice a qué aumento se examina')
+    return 'película entre los dos vidrios; lectura a ×400'
+  })
+
   return resultados
 }
 
@@ -4162,6 +4279,10 @@ const SABOTAJES = {
   119: 'la placa de una sola colonia marcada como contable',
   120: 'un halo de fluorescencia movido a un pocillo que no es amarillo',
   121: 'el NMP de coliformes buscado con 23 + 11 = 34 pocillos',
+  122: 'el decolorante antes que el lugol: rótulos de los pasos 2 y 3 intercambiados',
+  123: 'la gramnegativa sigue violeta después del decolorante',
+  124: 'la gota, el doble de alta, llega al fondo de la excavación',
+  125: 'el cubre de la preparación entre porta y cubre, levantado',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4293,6 +4414,10 @@ const CONTROL_DE = {
   119: [115],
   120: [116],
   121: [117],
+  122: [118],
+  123: [119],
+  124: [120],
+  125: [121],
 }
 
 async function main() {
