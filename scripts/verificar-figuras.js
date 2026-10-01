@@ -1170,6 +1170,38 @@ function medir(sabotaje, ROJO) {
     a.textContent = b.textContent
     b.textContent = t
   }
+  if (sabotaje === 134) {
+    const svg = porClave('control-semicuantitativo')
+    // tres estrias de la placa buena se quedan sin colonias, pero la puntuacion sigue diciendo 14
+    for (const q of ['1', '2', '3']) {
+      const e = svg.querySelector(`[data-pieza="estria"][data-placa="buena"][data-cuarto="${q}"][data-orden="1"]`)
+      const [x1, y1, x2, y2] = ['x1', 'y1', 'x2', 'y2'].map((a) => num(e, a))
+      for (const c of [...svg.querySelectorAll('[data-pieza="colonia"][data-placa="buena"]')]) {
+        const [cx, cy] = [num(c, 'cx'), num(c, 'cy')]
+        const cruz = Math.abs((x2 - x1) * (cy - y1) - (y2 - y1) * (cx - x1)) / Math.hypot(x2 - x1, y2 - y1)
+        if (cruz < 2.5 && cx >= Math.min(x1, x2) - 3 && cx <= Math.max(x1, x2) + 3) c.remove()
+      }
+    }
+  }
+  if (sabotaje === 135) {
+    const svg = porClave('control-semicuantitativo')
+    // la placa mala (5 de 16) dada por buena
+    svg.querySelector('[data-pieza="veredicto"][data-placa="mala"]').textContent = 'apto: llega al mínimo'
+  }
+  if (sabotaje === 136) {
+    const svg = porClave('recuperacion-medio')
+    // la linea del 50 % subida al 60 % del no selectivo
+    const u = svg.querySelector('[data-pieza="umbral"]')
+    const b = svg.querySelector('[data-pieza="barra"][data-medio="no-selectivo"]')
+    const y = num(b, 'y') + 0.4 * num(b, 'height')
+    u.setAttribute('y1', y)
+    u.setAttribute('y2', y)
+  }
+  if (sabotaje === 137) {
+    const svg = porClave('recuperacion-medio')
+    // el lote C (39 %) dado por apto
+    svg.querySelector('[data-pieza="veredicto"][data-medio="lote-c"]').textContent = 'apto'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4412,6 +4444,122 @@ function medir(sabotaje, ROJO) {
     return 'Pseudomonas, Proteus, E. coli y Salmonella con su perfil de oxidasa, ureasa e indol'
   })
 
+  /*
+   * Tema 17. A partir de aqui, los controles de cada tema van DENTRO DE SU
+   * PROPIO BLOQUE { ... }: sus funciones auxiliares quedan en el ambito del
+   * bloque y no pueden chocar con las de otro tema (ya chocaron dentroDe en el
+   * 15 y cajaDe en el 16, con «Identifier has already been declared»).
+   */
+  {
+    /*
+     * Control semicuantitativo. La puntuacion se cuenta en el dibujo: una
+     * estria puntua si tiene encima al menos una colonia (a menos de 2,5 px del
+     * segmento). Cada estria debe caer en su cuarto: el signo de sus extremos
+     * respecto del centro de la placa es el del cuarto.
+     */
+    const SEMI_SIGNO = { 1: [1, -1], 2: [-1, -1], 3: [-1, 1], 4: [1, 1] }
+    const semiDistancia = (px, py, e) => {
+      const [x1, y1, x2, y2] = ['x1', 'y1', 'x2', 'y2'].map((a) => num(e, a))
+      const dx = x2 - x1
+      const dy = y2 - y1
+      const f = Math.max(0, Math.min(1, ((px - x1) * dx + (py - y1) * dy) / (dx * dx + dy * dy)))
+      return Math.hypot(px - (x1 + f * dx), py - (y1 + f * dy))
+    }
+    const semiPuntos = (svg, placa) => {
+      const es = piezas(svg, 'estria').filter((e) => e.getAttribute('data-placa') === placa)
+      const cs = piezas(svg, 'colonia').filter((c) => c.getAttribute('data-placa') === placa)
+      return { es, n: es.filter((e) => cs.some((c) => semiDistancia(num(c, 'cx'), num(c, 'cy'), e) < 2.5)).length }
+    }
+    control('Semicuantitativo · cada placa tiene 4 cuartos con 4 estrías dentro de su cuarto, y la puntuación escrita es el número de estrías con colonias', () => {
+      const svg = porClave('control-semicuantitativo')
+      const leidas = []
+      for (const placa of ['buena', 'mala']) {
+        const disco = svg.querySelector(`[data-pieza="placa"][data-placa="${placa}"]`)
+        const [cx, cy, r] = ['cx', 'cy', 'r'].map((a) => num(disco, a))
+        const { es, n } = semiPuntos(svg, placa)
+        if (es.length !== 16) throw new Error(`la placa ${placa} tiene ${es.length} estrías`)
+        for (const q of [1, 2, 3, 4]) {
+          const deq = es.filter((e) => e.getAttribute('data-cuarto') === String(q))
+          if (deq.length !== 4) throw new Error(`el cuarto ${q} de la placa ${placa} tiene ${deq.length} estrías`)
+          const [sx, sy] = SEMI_SIGNO[q]
+          for (const e of deq)
+            for (const [x, y] of [[num(e, 'x1'), num(e, 'y1')], [num(e, 'x2'), num(e, 'y2')]]) {
+              if (Math.sign(x - cx) !== sx || Math.sign(y - cy) !== sy) throw new Error(`una estría del cuarto ${q} (placa ${placa}) se sale de su cuarto`)
+              if (Math.hypot(x - cx, y - cy) > r) throw new Error(`una estría del cuarto ${q} (placa ${placa}) se sale de la placa`)
+            }
+        }
+        const texto = svg.querySelector(`[data-pieza="puntuacion"][data-placa="${placa}"]`).textContent
+        const escrita = Number(texto.match(/(\d+)\s*\/\s*16/)?.[1])
+        if (escrita !== n) throw new Error(`la placa ${placa} dice «${texto}», pero tiene colonias en ${n} estrías`)
+        leidas.push(`${placa} ${n}/16`)
+      }
+      return `16 estrías por placa en sus cuartos; puntuaciones contadas: ${leidas.join(', ')}`
+    })
+
+    control('Semicuantitativo · el veredicto sigue el mínimo de 8 de la guía: apto si las estrías con colonias llegan a 8, se desecha si no', () => {
+      const svg = porClave('control-semicuantitativo')
+      const minimo = num(pieza(svg, 'minimo'), 'data-valor')
+      if (minimo !== 8) throw new Error(`el mínimo dibujado es ${minimo}, no 8`)
+      const leidos = []
+      for (const placa of ['buena', 'mala']) {
+        const { n } = semiPuntos(svg, placa)
+        const v = svg.querySelector(`[data-pieza="veredicto"][data-placa="${placa}"]`).textContent
+        const esperado = n >= minimo ? /^apto/i : /desecha/i
+        if (!esperado.test(v)) throw new Error(`la placa ${placa} (${n}/16) dice «${v}»`)
+        leidos.push(`${n}/16 → ${v.split(':')[0]}`)
+      }
+      return leidos.join('; ')
+    })
+
+    /*
+     * Recuperacion de un medio selectivo. La escala sale de las marcas del eje;
+     * cada barra se lee por su altura y se compara con su recuento escrito. El
+     * porcentaje y el veredicto de cada lote se calculan con las alturas, no con
+     * los textos.
+     */
+    const recEscala = (svg) => {
+      const m = piezas(svg, 'marca').map((e) => [num(e, 'y1'), num(e, 'data-valor')]).sort((a, b) => a[0] - b[0])
+      const [[ya, va], [yb, vb]] = [m[0], m[m.length - 1]]
+      return (y) => va + ((y - ya) * (vb - va)) / (yb - ya)
+    }
+    const recValor = (svg, medio) => {
+      const aV = recEscala(svg)
+      const b = svg.querySelector(`[data-pieza="barra"][data-medio="${medio}"]`)
+      return aV(num(b, 'y')) - aV(num(b, 'y') + num(b, 'height'))
+    }
+    const REC_LOTES = ['lote-a', 'lote-b', 'lote-c']
+    control('Recuperación · cada barra mide lo que dice su recuento, y la línea del 50 % está a la mitad de la barra del no selectivo', () => {
+      const svg = porClave('recuperacion-medio')
+      const aV = recEscala(svg)
+      for (const medio of ['no-selectivo', ...REC_LOTES]) {
+        const v = recValor(svg, medio)
+        const texto = svg.querySelector(`[data-pieza="recuento"][data-medio="${medio}"]`).textContent
+        const escrito = Number(texto.match(/\d+/)[0])
+        if (Math.abs(v - escrito) > 1) throw new Error(`la barra de ${medio} mide ${v.toFixed(0)} ufc y dice «${texto}»`)
+      }
+      const ref = recValor(svg, 'no-selectivo')
+      const u = aV(num(pieza(svg, 'umbral'), 'y1'))
+      if (Math.abs(u - ref / 2) > 1) throw new Error(`la línea del 50 % está en ${u.toFixed(0)} ufc, y la mitad del no selectivo es ${(ref / 2).toFixed(0)}`)
+      return `barras a escala; la línea del 50 % en ${u.toFixed(0)} ufc, mitad de ${ref.toFixed(0)}`
+    })
+
+    control('Recuperación · cada lote lleva su porcentaje del no selectivo y su veredicto: apto desde el 50 %, se desecha por debajo', () => {
+      const svg = porClave('recuperacion-medio')
+      const ref = recValor(svg, 'no-selectivo')
+      const leidos = []
+      for (const medio of REC_LOTES) {
+        const pct = (100 * recValor(svg, medio)) / ref
+        const tp = svg.querySelector(`[data-pieza="porcentaje"][data-medio="${medio}"]`).textContent
+        if (Math.abs(Number(tp.match(/\d+/)[0]) - pct) > 1) throw new Error(`${medio} recupera un ${pct.toFixed(0)} % y dice «${tp}»`)
+        const v = svg.querySelector(`[data-pieza="veredicto"][data-medio="${medio}"]`).textContent
+        const esperado = pct >= 50 ? /^apto/i : /desecha/i
+        if (!esperado.test(v)) throw new Error(`${medio} recupera un ${pct.toFixed(0)} % y dice «${v}»`)
+        leidos.push(`${medio} ${pct.toFixed(0)} % → ${v}`)
+      }
+      return leidos.join('; ')
+    })
+  }
+
   return resultados
 }
 
@@ -4551,6 +4699,10 @@ const SABOTAJES = {
   131: 'los rótulos de hibridación y elongación intercambiados',
   132: 'la arista de Proteus sale de la raíz, saltándose las enterobacterias',
   133: 'Salmonella pintada como ureasa positiva',
+  134: 'tres estrías de la placa buena sin colonias, con la puntuación sin cambiar',
+  135: 'la placa de 5 de 16 dada por apta',
+  136: 'la línea del 50 % subida al 60 % del no selectivo',
+  137: 'el lote C, con un 39 %, dado por apto',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4694,6 +4846,10 @@ const CONTROL_DE = {
   131: [127],
   132: [128],
   133: [129],
+  134: [130],
+  135: [131],
+  136: [132],
+  137: [133],
 }
 
 async function main() {

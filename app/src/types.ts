@@ -109,6 +109,8 @@ export type TipoEsquema =
   | 'estructura-virus'
   | 'ciclo-pcr'
   | 'arbol-gramnegativos'
+  | 'control-semicuantitativo'
+  | 'recuperacion-medio'
 
 export type TipoMaterial =
   | 'matraz-aforado'

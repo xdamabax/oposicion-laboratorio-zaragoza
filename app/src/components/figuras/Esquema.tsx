@@ -83,6 +83,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'estructura-virus': 'Estructura de los virus: con y sin envoltura',
   'ciclo-pcr': 'Ciclos de PCR: temperatura de cada fase',
   'arbol-gramnegativos': 'Identificación de bacilos gramnegativos: oxidasa, ureasa e indol',
+  'control-semicuantitativo': 'Control semicuantitativo de un medio: 16 estrías y un mínimo de 8',
+  'recuperacion-medio': 'Control cuantitativo de un medio selectivo: recuperación de al menos el 50 %',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -160,6 +162,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'estructura-virus': { ancho: 580, alto: 226 },
   'ciclo-pcr': { ancho: 580, alto: 232 },
   'arbol-gramnegativos': { ancho: 580, alto: 254 },
+  'control-semicuantitativo': { ancho: 580, alto: 260 },
+  'recuperacion-medio': { ancho: 580, alto: 262 },
 }
 
 const AZUL = '#9ecbe8'
@@ -7373,6 +7377,206 @@ function ArbolGramnegativos() {
   )
 }
 
+/**
+ * Control semicuantitativo de un medio (guia britanica, 6.10.2.2): la placa se
+ * divide en cuatro cuartos y en cada uno se hacen cuatro estrias con el asa de
+ * 1 µL sin recargarla; cada estria con colonias puntua 1, y el medio vale si
+ * llega al minimo (8 de 16). Cada estria lleva su placa y su cuarto; las
+ * colonias se dibujan sobre las estrias que crecen.
+ */
+function ControlSemicuantitativo() {
+  const R = 88
+  const T = [69, 54, 39, 24]
+  const CUARTOS = [
+    { cuarto: 1, sx: 1, sy: -1 },
+    { cuarto: 2, sx: -1, sy: -1 },
+    { cuarto: 3, sx: -1, sy: 1 },
+    { cuarto: 4, sx: 1, sy: 1 },
+  ]
+  const PLACAS = [
+    { placa: 'buena', cx: 150, titulo: 'Lote que vale', crecen: [4, 4, 3, 3], veredicto: 'apto: llega al mínimo' },
+    { placa: 'mala', cx: 430, titulo: 'Lote que no vale', crecen: [2, 1, 1, 1], veredicto: 'se desecha: no llega' },
+  ]
+  const CY = 112
+  const MINIMO = 8
+  const estrias = PLACAS.flatMap((p) =>
+    CUARTOS.flatMap((q, iq) =>
+      T.map((t, k) => {
+        const u = Math.min(t - 8, Math.sqrt((R - 8) ** 2 - t * t))
+        const punto = (v: number) => [p.cx + (q.sx * (t + v)) / Math.SQRT2, CY + (q.sy * (t - v)) / Math.SQRT2]
+        const [x1, y1] = punto(-u)
+        const [x2, y2] = punto(u)
+        return { placa: p.placa, cuarto: q.cuarto, orden: k + 1, crece: k < p.crecen[iq], x1, y1, x2, y2 }
+      }),
+    ),
+  )
+  const colonias = (e: (typeof estrias)[number]) => {
+    const largo = Math.hypot(e.x2 - e.x1, e.y2 - e.y1)
+    const n = Math.max(2, Math.floor(largo / 5.5))
+    return Array.from({ length: n }, (_, i) => {
+      const f = (i + 0.5) / n
+      return [e.x1 + (e.x2 - e.x1) * f, e.y1 + (e.y2 - e.y1) * f]
+    })
+  }
+  const r1 = (v: number) => v.toFixed(1)
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {PLACAS.map((p) => {
+        const puntos = p.crecen.reduce((a, b) => a + b, 0)
+        return (
+          <g key={p.placa}>
+            <text x={p.cx} y={12} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {p.titulo}
+            </text>
+            <circle data-pieza="placa" data-placa={p.placa} cx={p.cx} cy={CY} r={R} fill={ROJO} fillOpacity="0.1" stroke="currentColor" strokeWidth="1.3" />
+            <line x1={p.cx - R} y1={CY} x2={p.cx + R} y2={CY} stroke="currentColor" strokeWidth="0.9" />
+            <line x1={p.cx} y1={CY - R} x2={p.cx} y2={CY + R} stroke="currentColor" strokeWidth="0.9" />
+            {CUARTOS.map((q) => (
+              <text key={q.cuarto} x={p.cx + q.sx * 7} y={CY + q.sy * 7 + 3} fontSize="7" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+                {q.cuarto}
+              </text>
+            ))}
+            {estrias
+              .filter((e) => e.placa === p.placa)
+              .map((e) => (
+                <g key={`${e.cuarto}-${e.orden}`}>
+                  <line
+                    data-pieza="estria"
+                    data-placa={e.placa}
+                    data-cuarto={e.cuarto}
+                    data-orden={e.orden}
+                    x1={r1(e.x1)}
+                    y1={r1(e.y1)}
+                    x2={r1(e.x2)}
+                    y2={r1(e.y2)}
+                    stroke="currentColor"
+                    strokeWidth="0.7"
+                    strokeOpacity="0.45"
+                    strokeDasharray="2 2"
+                  />
+                  {e.crece &&
+                    colonias(e).map(([x, y], i) => (
+                      <circle key={i} data-pieza="colonia" data-placa={e.placa} cx={r1(x)} cy={r1(y)} r="2" fill={ROJO} fillOpacity="0.9" />
+                    ))}
+                </g>
+              ))}
+            <text data-pieza="puntuacion" data-placa={p.placa} x={p.cx} y={CY + R + 16} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              Puntuación: {puntos} / 16
+            </text>
+            <text data-pieza="veredicto" data-placa={p.placa} x={p.cx} y={CY + R + 29} fontSize="8.5" textAnchor="middle" fill={puntos >= MINIMO ? 'currentColor' : ROJO}>
+              {p.veredicto}
+            </text>
+          </g>
+        )
+      })}
+      <text data-pieza="minimo" data-valor={MINIMO} x={290} y={CY - 8} fontSize="8" textAnchor="middle" fill="currentColor">
+        mínimo
+      </text>
+      <text x={290} y={CY + 4} fontSize="8" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {MINIMO} de 16
+      </text>
+      <text x={20} y={252} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Asa de 1 µL cargada en el caldo; 4 estrías por cuarto sin recargarla. Cada estría con colonias = 1 punto. Control de esterilidad: 0.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Control cuantitativo de un medio selectivo (guia britanica, 6.10.2.2): la
+ * misma suspension se siembra en un medio no selectivo y en cada lote del
+ * selectivo; el lote vale si recupera al menos el 50 % del recuento del no
+ * selectivo. La escala vertical sale de las marcas del eje.
+ */
+function RecuperacionMedio() {
+  const X0 = 70
+  const yDe = (v: number) => 200 - v * 1.7
+  const ANCHO = 56
+  const BARRAS = [
+    { medio: 'no-selectivo', x: 100, n: 80, l1: 'Agar nutritivo', l2: 'no selectivo' },
+    { medio: 'lote-a', x: 200, n: 64, l1: 'Lote A', l2: 'selectivo' },
+    { medio: 'lote-b', x: 300, n: 46, l1: 'Lote B', l2: 'selectivo' },
+    { medio: 'lote-c', x: 400, n: 31, l1: 'Lote C', l2: 'selectivo' },
+  ]
+  const ref = BARRAS[0].n
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={X0} y={14} fontSize="8.5" fill="currentColor">
+        La misma suspensión de <tspan fontStyle="italic">E. coli</tspan> sembrada en superficie en cada medio
+      </text>
+      <line x1={X0} y1={yDe(0)} x2={X0} y2={yDe(100)} stroke="currentColor" strokeWidth="1" />
+      <line x1={X0} y1={yDe(0)} x2={480} y2={yDe(0)} stroke="currentColor" strokeWidth="1" />
+      {[0, 20, 40, 60, 80, 100].map((v) => (
+        <g key={v}>
+          <line data-pieza="marca" data-valor={v} x1={X0 - 4} y1={yDe(v)} x2={X0} y2={yDe(v)} stroke="currentColor" strokeWidth="1" />
+          <text x={X0 - 7} y={yDe(v) + 3} fontSize="8" textAnchor="end" fill="currentColor">
+            {v}
+          </text>
+        </g>
+      ))}
+      <text x={X0 + 6} y={yDe(100) + 3} fontSize="8" fill="currentColor">
+        colonias (ufc)
+      </text>
+      {BARRAS.map((b, i) => {
+        const pct = Math.round((100 * b.n) / ref)
+        const vale = pct >= 50
+        return (
+          <g key={b.medio}>
+            <rect
+              data-pieza="barra"
+              data-medio={b.medio}
+              x={b.x}
+              y={yDe(b.n)}
+              width={ANCHO}
+              height={(yDe(0) - yDe(b.n)).toFixed(1)}
+              fill={i === 0 ? AZUL : vale ? AZUL_CLARO : ROJO}
+              fillOpacity={i === 0 || vale ? 0.8 : 0.3}
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+            <text data-pieza="recuento" data-medio={b.medio} x={b.x + ANCHO / 2} y={yDe(b.n) - 5} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {b.n} ufc
+            </text>
+            <text x={b.x + ANCHO / 2} y={yDe(0) + 12} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {b.l1}
+            </text>
+            <text x={b.x + ANCHO / 2} y={yDe(0) + 23} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+              {b.l2}
+            </text>
+            {i === 0 ? (
+              <text x={b.x + ANCHO / 2} y={yDe(0) + 37} fontSize="8" textAnchor="middle" fill="currentColor">
+                referencia: 100 %
+              </text>
+            ) : (
+              <>
+                <text data-pieza="porcentaje" data-medio={b.medio} x={b.x + ANCHO / 2} y={yDe(0) + 37} fontSize="8" textAnchor="middle" fill="currentColor">
+                  {pct} %
+                </text>
+                <text data-pieza="veredicto" data-medio={b.medio} x={b.x + ANCHO / 2} y={yDe(0) + 49} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill={vale ? 'currentColor' : ROJO}>
+                  {vale ? 'apto' : 'se desecha'}
+                </text>
+              </>
+            )}
+          </g>
+        )
+      })}
+      <line data-pieza="umbral" x1={X0} y1={yDe(ref / 2)} x2={480} y2={yDe(ref / 2)} stroke={ROJO} strokeWidth="1.3" strokeDasharray="6 3" />
+      <text x={486} y={yDe(ref / 2) - 2} fontSize="8" fontWeight="bold" fill={ROJO}>
+        50 % del
+      </text>
+      <text x={486} y={yDe(ref / 2) + 9} fontSize="8" fontWeight="bold" fill={ROJO}>
+        no selectivo
+      </text>
+      <text x={486} y={yDe(70)} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        El no diana
+      </text>
+      <text x={486} y={yDe(70) + 10} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        no debe crecer
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7521,6 +7725,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <CicloPcr />
     case 'arbol-gramnegativos':
       return <ArbolGramnegativos />
+    case 'control-semicuantitativo':
+      return <ControlSemicuantitativo />
+    case 'recuperacion-medio':
+      return <RecuperacionMedio />
   }
 }
 
