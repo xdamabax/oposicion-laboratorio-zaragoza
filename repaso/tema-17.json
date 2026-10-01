@@ -1,0 +1,856 @@
+{
+  "tema": 17,
+  "titulo": "El control de calidad en el laboratorio de microbiología. Control de medios. Control de técnicas. Utilización de materiales de referencia. Control de equipos.",
+  "generadoDe": "temas/tema-17.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-10-02",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Sin preguntas directas en nuestra plaza (las cercanas, ISO 17025 y ENAC, son del tema 40). El nucleo recoge lo previsible: controles positivo, negativo y blanco; esterilidad, productividad, selectividad y pH de los medios; controles semicuantitativo y cuantitativo; cepas y materiales de referencia (un solo subcultivo, ISO 17034); gráficos y ensayos de aptitud; calibración frente a verificación.",
+  "flashcards": [
+    {
+      "id": "t17-f01",
+      "anverso": "¿Qué incluye un programa de calidad en un laboratorio de microbiología?",
+      "reverso": "- Demostrar que **cada medio o reactivo sirve**.\n- **Materiales de referencia** como muestras simuladas.\n- **Evaluación externa** de todo el proceso.\n- **Comprobar los equipos**.\n\nY **combinar control interno y externo**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f02",
+      "anverso": "¿Qué diferencia el control **interno** del **externo**?",
+      "reverso": "- **Interno:** lo hace **el propio laboratorio**, a diario (controles, materiales de referencia, duplicados, gráficos).\n- **Externo:** un **organizador independiente** reparte muestras (**ensayos de aptitud**) y compara con otros laboratorios.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8; Eurachem, Accreditation for Microbiological Laboratories (2023), 13",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f03",
+      "anverso": "¿Por qué los límites de control en microbiología necesitan más datos que en química?",
+      "reverso": "Porque **los recuentos varían mucho por azar** (reparto de Poisson): dos submuestras del mismo agua dan cifras distintas aunque todo esté bien. Por eso la guía británica habla de **«gráficos de orientación»** y de situaciones **«probablemente» fuera de control**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2",
+      "etiquetas": ["calidad", "tecnicas"]
+    },
+    {
+      "id": "t17-f04",
+      "anverso": "¿Qué exige el RD 3/2023 a los laboratorios de agua de consumo, y en qué plazos?",
+      "reverso": "**Acreditar sus métodos por la UNE-EN ISO/IEC 17025**:\n- más de **5000 muestras/año**, antes del **2 de enero de 2024**;\n- entre **300 y 5000**, antes del **2 de enero de 2028**.\n\nLa **toma de muestras**, antes de **2030**.",
+      "fuente": "RD 3/2023, anexo III, partes B y E, y disposición adicional octava",
+      "etiquetas": ["calidad"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f05",
+      "anverso": "Según el RD 3/2023, ¿qué debe hacer un laboratorio con un método que aún no está acreditado?",
+      "reverso": "Tenerlo **validado y documentado** según el **anexo III, parte E** (veracidad, precisión e incertidumbre).",
+      "fuente": "RD 3/2023, anexo III, partes B y E, y disposición adicional octava",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t17-f06",
+      "anverso": "¿Qué propiedades se controlan en un medio de cultivo?",
+      "reverso": "- **Esterilidad.**\n- **Productividad** (crece el diana).\n- **Selectividad** (frena al no diana).\n- **Especificidad**: el diana da su **aspecto típico**.\n- **Físicas**: **pH**, volumen.\n\nNorma: **ISO 11133**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10; Eurachem, Accreditation for Microbiological Laboratories (2023), 8.2",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f07",
+      "anverso": "¿Cómo se controla la **esterilidad** de un medio?",
+      "reverso": "Se **incuba una parte del lote sin sembrar**: **no debe crecer nada**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2; US EPA, Method 1103.2 (2023), 9.9",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f08",
+      "anverso": "¿Qué tolerancia de pH tiene típicamente un medio, y qué se hace si no cumple?",
+      "reverso": "**± 0,2 unidades.** Si está fuera, **se desecha**: **el pH no se ajusta después de esterilizar**, por el riesgo de contaminarlo.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.1",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f09",
+      "anverso": "¿Qué datos lleva el registro y la etiqueta de un lote de medio preparado?",
+      "reverso": "**Número de lote** y **caducidad**; **lotes de sus componentes** (y el del fabricante); **datos de la esterilización**; **firmas** de quien lo preparó.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f10",
+      "anverso": "¿Qué es la **cuarentena** de un medio?",
+      "reverso": "El medio recién preparado **no se usa hasta demostrar que sirve** (pasa sus controles).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f11",
+      "anverso": "¿Cuándo no se debe usar un medio deshidratado?",
+      "reverso": "Si está **apelmazado**, **agrietado** o ha **cambiado de color**. El frasco debe estar **bien cerrado**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.2",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f12",
+      "anverso": "¿A qué temperatura se guardan los medios listos para usar?",
+      "reverso": "En nevera, a **5 ± 3 °C**, salvo que el método diga otra cosa.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.2",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f13",
+      "anverso": "¿Cómo funciona el control **cualitativo** de un medio?",
+      "reverso": "Se siembra el diana y se puntúa a ojo: **0 = no crece**, **1 = crece poco**, **2 = crece bien**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f14",
+      "anverso": "Describe el control **semicuantitativo** de un medio.",
+      "reverso": "Placa en **cuatro cuartos**; en cada uno, **asa de 1 µL** cargada en el caldo y **cuatro estrías sin recargar**: **16 líneas**. Cada línea con crecimiento = **1 punto**. Mínimo, por ejemplo, **8 de 16**; la **esterilidad, 0**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f15",
+      "anverso": "¿Para qué medios es ideal el control semicuantitativo?",
+      "reverso": "Para los **medios líquidos y no selectivos**. Los medios nutritivos no necesitan control cuantitativo, pero sí semicuantitativo.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f16",
+      "anverso": "¿Cuándo se acepta un medio **selectivo** en el control cuantitativo?",
+      "reverso": "Cuando su recuento llega **al menos al 50 %** del recuento en un **medio no selectivo** sembrado con la misma suspensión (u otro objetivo que fije el laboratorio). **Por debajo, se desecha.** El no diana **no debe crecer**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f17",
+      "anverso": "¿Qué es la **ratio de productividad (PR)** de la ISO 11133?",
+      "reverso": "Compara el recuento del **lote en prueba** con el de **un lote ya validado**. Para el **GVPC** (*Legionella*), la guía británica pide **0,7**. También debe fijarse un **límite superior**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f18",
+      "anverso": "¿Qué suspensión sirve para el control cuantitativo de medios?",
+      "reverso": "Una **estable**: un **material de referencia comercial** o un **cultivo en caldo** incubado siempre igual y guardado a **5 ± 3 °C**, con las células en **fase estacionaria**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["medios", "referencia"]
+    },
+    {
+      "id": "t17-f19",
+      "anverso": "¿Qué debe hacer el laboratorio con un medio comprado **listo para usar**?",
+      "reverso": "**Evaluarlo antes de usarlo.** Si el fabricante tiene un **sistema de calidad (ISO 9000)** y controla según la **ISO 11133**, basta con **revisar su certificado**, **probar cada fabricante nuevo** y seguir el control interno.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.3",
+      "etiquetas": ["medios"]
+    },
+    {
+      "id": "t17-f20",
+      "anverso": "¿Cómo se controla cada lote de un reactivo crítico?",
+      "reverso": "**Antes de usarlo y durante su vida útil**, con **organismos de control positivo y negativo** de **colecciones reconocidas**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.1",
+      "etiquetas": ["medios"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f21",
+      "anverso": "¿Qué controles usa la EPA para el reactivo de la **oxidasa**?",
+      "reverso": "Positivo: ***Pseudomonas aeruginosa***. Negativo: ***E. coli***.",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.4.3",
+      "etiquetas": ["medios", "tecnicas"]
+    },
+    {
+      "id": "t17-f22",
+      "anverso": "¿Para qué sirven los **materiales de referencia**?",
+      "reverso": "Para demostrar la **exactitud**, **calibrar**, **vigilar** el laboratorio, **validar y comparar métodos**, demostrar la **calidad de los medios** y la constancia de los **kits**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.5",
+      "etiquetas": ["referencia"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f23",
+      "anverso": "¿Qué norma acredita a los **productores** de materiales de referencia?",
+      "reverso": "La **ISO 17034**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.5",
+      "etiquetas": ["referencia"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f24",
+      "anverso": "¿De dónde salen las cepas de referencia? Pon ejemplos.",
+      "reverso": "De **colecciones nacionales o internacionales reconocidas**: **NCTC** y **NCIMB** (Reino Unido), **ATCC** (Estados Unidos).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1; US EPA, Method 1103.2 (2023), 9",
+      "etiquetas": ["referencia"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f25",
+      "anverso": "¿Cuántas veces se subcultiva una cepa de referencia para hacer las reservas?",
+      "reverso": "**Una sola vez.** Las **reservas** se guardan **congeladas o liofilizadas**, y **una reserva descongelada no se vuelve a congelar**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.6; SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1",
+      "etiquetas": ["referencia"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f26",
+      "anverso": "¿Qué son los **cultivos de trabajo** y qué reglas tienen?",
+      "reverso": "Son el **subcultivo primario** de una reserva. **No se subcultivan** salvo que el método lo pida y **nunca sustituyen a las reservas**. Los **derivados comerciales** solo pueden usarse **como cultivos de trabajo**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.6",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f27",
+      "anverso": "¿Por qué se limitan los subcultivos de las cepas de control?",
+      "reverso": "Porque cada resiembra arriesga una **contaminación** y porque **algunas propiedades bioquímicas cambian** con los cultivos repetidos.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f28",
+      "anverso": "¿Cómo se conservan las reservas de cepas de referencia?",
+      "reverso": "**Liofilizadas** en ampollas; en **perlas por debajo de −20 °C**; o en **nitrógeno líquido** / congelador a **−150 °C** con crioprotector.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f29",
+      "anverso": "Después de conservar una cepa, ¿qué se comprueba? Pon el ejemplo de *E. coli*.",
+      "reverso": "Que está **pura** y que **conserva sus caracteres**: *E. coli* debe seguir **fermentando la lactosa a 37 y 44 °C**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f30",
+      "anverso": "¿Qué son Lenticules, Vitroids o BioBalls?",
+      "reverso": "**Materiales de referencia cuantitativos comerciales**: un **número conocido** de microorganismos en formato estable. El proveedor da **media y límites**, y el laboratorio comprueba que los obtiene **«en sus manos»**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2; US EPA, Method 1103.2 (2023), 9.2",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f31",
+      "anverso": "Ventaja e inconveniente de usar **aguas naturales** como control.",
+      "reverso": "**Ventaja:** son un reto real, con **competidores**. **Inconveniente:** **no se sabe cuántos dianas hay**; el control puede fallar porque no había.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1",
+      "etiquetas": ["referencia"]
+    },
+    {
+      "id": "t17-f32",
+      "anverso": "Define control **positivo**, **negativo** y **blanco**.",
+      "reverso": "- **Positivo:** el **diana**; da **colonias típicas** o reacción positiva.\n- **Negativo:** un **no diana**; **no crece**, no reacciona o da **colonias atípicas**.\n- **Blanco:** muestra **estéril**; **no debe salir nada**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f33",
+      "anverso": "¿Con qué frecuencia se ponen los controles positivo, negativo y blanco?",
+      "reverso": "En **cada tanda** de muestras, **en cada estufa** y, si se puede, **por cada analista**. **Toda confirmación** lleva los tres.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f34",
+      "anverso": "En el método EPA de *E. coli* por filtración, ¿qué blancos se hacen cada día?",
+      "reverso": "- **Blanco de método:** **50 mL de tampón estéril** filtrados, en el medio del método.\n- **Blanco de filtración:** 50 mL de tampón **antes de las muestras**, en TSA.\n- **Esterilidad del filtro** y **de cada medio**.",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.6-9.9",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f35",
+      "anverso": "¿Cuántos datos hacen falta para construir un gráfico de control con un material de referencia?",
+      "reverso": "Al menos **20 resultados** (**2 al día durante 10 días**) y **60** para unos valores robustos; en microbiología pueden hacer falta más.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f36",
+      "anverso": "¿Por qué se transforman los recuentos antes de llevarlos a un gráfico?",
+      "reverso": "Con **raíz cuadrada** o **logaritmo** se acercan a la **distribución normal**, que es la que suponen los límites de ± 2s y ± 3s.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f37",
+      "anverso": "¿Cuáles son las cuatro reglas de investigación de la guía británica?",
+      "reverso": "1. **Un recuento fuera del límite de acción.**\n2. **Dos de tres seguidos** fuera del de aviso, **en el mismo lado o en lados distintos**.\n3. **Nueve seguidos del mismo lado** de la media.\n4. **Seis seguidos** subiendo o bajando.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f38",
+      "anverso": "¿Qué indica un gráfico de control **sin variación**?",
+      "reverso": "Posible **sesgo del operador**: cuenta «lo que espera». Por eso conviene contar **sin conocer** la media del material.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f39",
+      "anverso": "¿Cada cuánto se revisan la media y los límites de un gráfico de control?",
+      "reverso": "**Al menos una vez al año.**",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f40",
+      "anverso": "Submuestras duplicadas: si la primera da 5 colonias, ¿qué intervalo cabe esperar para la segunda?",
+      "reverso": "**De 0 a 14** (IC del 95 %). Si la segunda cae fuera **más del 5 % de las veces**, **se investiga**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.2",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f41",
+      "anverso": "¿Cómo se calcula el **índice de dispersión** de dos submuestras, y con qué se compara?",
+      "reverso": "**D² = (x₁ − x₂)² / (x₁ + x₂)**. Se compara con **3,841** (p = 0,05, ≈ aviso) y **6,635** (p = 0,01, ≈ acción).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.2",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f42",
+      "anverso": "Criterios de la EPA para el **recuento entre analistas**.",
+      "reverso": "**Dos analistas** sobre la misma placa: dentro de un **10 %**. **Un solo analista** contando dos veces: dentro de un **5 %**. **Una vez al mes.**",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.10",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f43",
+      "anverso": "¿Cuántas colonias se verifican al mes en el método EPA de *E. coli*?",
+      "reverso": "**10 típicas y 10 atípicas**, o **1 y 1 del 10 % de las muestras positivas**, lo que sea mayor.",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.5",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f44",
+      "anverso": "¿Qué son el **IPR** y el **OPR**?",
+      "reverso": "- **IPR:** recuperación y precisión **iniciales**, con **4 muestras inoculadas**, antes de usar el método.\n- **OPR:** recuperación **continua**, **una muestra cada 20** o **una por semana**.",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.2-9.3",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f45",
+      "anverso": "¿Qué diferencia **verificar** de **validar** un método?",
+      "reverso": "- **Verificar:** método **normalizado**; se demuestra que **en este laboratorio** rinde como dice la norma.\n- **Validar:** método **no normalizado** (propio, de la bibliografía, o fuera de su alcance); se demuestra que **sirve para su uso**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 10",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f46",
+      "anverso": "¿Qué normas tratan los métodos de recuento y la incertidumbre en **agua**?",
+      "reverso": "**ISO 13843** (características de los métodos) e **ISO 29201** (variabilidad e incertidumbre). En alimentos, la incertidumbre es la **ISO 19036**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 10; Eurachem, Accreditation for Microbiological Laboratories (2023), 12",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f47",
+      "anverso": "¿Son obligatorios los ensayos de aptitud?",
+      "reverso": "**Sí, si existe un esquema adecuado** (Eurachem). Si no, **intercomparaciones** con suficientes laboratorios. Proveedores acreditados por la **ISO/IEC 17043**; en microbiología, la **ISO 22117**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 13.2",
+      "etiquetas": ["tecnicas"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f48",
+      "anverso": "¿Cómo se trata la muestra de un ensayo de aptitud?",
+      "reverso": "**Exactamente como una muestra de rutina.**",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.3",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f49",
+      "anverso": "¿Con qué técnicas se vigila el ambiente del laboratorio, y cada cuánto?",
+      "reverso": "**Muestreadores de aire**, **placas de sedimentación**, **placas de contacto** e **hisopos**. Recuento total y mohos, **semanal**; patógenos, **dos veces al año** (orientativo).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 4.2; Eurachem, Accreditation for Microbiological Laboratories (2023), anexo F",
+      "etiquetas": ["tecnicas"]
+    },
+    {
+      "id": "t17-f50",
+      "anverso": "¿Qué diferencia **calibrar** de **verificar** un equipo?",
+      "reverso": "- **Calibrar:** comparar con un **patrón trazable**, en todo el intervalo, **periódicamente** (mejor un laboratorio **acreditado**).\n- **Verificar:** comprobar que **sigue cumpliendo**, **antes de usarlo** y **tras reparación, modificación o traslado**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.1",
+      "etiquetas": ["equipos"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f51",
+      "anverso": "Frecuencias de calibración de los **termómetros** (Eurachem).",
+      "reverso": "- **De referencia:** **cada 5 años**, con **comprobación anual en el punto de hielo**.\n- **Termopares de referencia:** **cada 3 años**.\n- **De trabajo:** **anual los 3 primeros años**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), anexo E",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f52",
+      "anverso": "¿Cada cuánto se calibran las balanzas, las pesas de calibración y las de comprobación?",
+      "reverso": "- **Balanzas:** **anual los 3 primeros años**.\n- **Pesas de calibración:** **cada 5 años**.\n- **Pesas de comprobación:** **cada 3 años**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), anexo E",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f53",
+      "anverso": "¿Cómo se verifican a diario el **pHmetro** y la **balanza**?",
+      "reverso": "- **pHmetro:** con un **tampón que no se usó para calibrar**.\n- **Balanza:** con una **pesa de comprobación**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), anexo F",
+      "etiquetas": ["equipos"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f54",
+      "anverso": "¿Qué exactitud pide la guía británica a las balanzas?",
+      "reverso": "**± 0,01 g** las de uso general; **± 0,001 g** (a veces **± 0,0001 g**) las **analíticas**. Pesas trazables **al menos una vez al año**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 5.2",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f55",
+      "anverso": "¿Cómo se calibra una pipeta, y qué criterios da la guía británica?",
+      "reverso": "Por **gravimetría**: **10 pesadas** de agua, corrigiendo la densidad por la temperatura. **CV < 1 %** y **sesgo < 2 %** (**< 1 %** si es crítico).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 5.20",
+      "etiquetas": ["equipos"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f56",
+      "anverso": "¿Qué recomienda la ISO 8655-1 para pipetas de pistón de 0,1 a 5 mL?",
+      "reverso": "**Sesgo máximo 0,8 %** y **desviación estándar máxima 0,3 %**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.6",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f57",
+      "anverso": "¿Qué termómetros prohíbe Eurachem 2023 y qué recomienda?",
+      "reverso": "Prohíbe los de **mercurio y tolueno** (seguridad). Recomienda los **registradores de datos**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.2",
+      "etiquetas": ["equipos"],
+      "nucleo": true
+    },
+    {
+      "id": "t17-f58",
+      "anverso": "¿Cómo se controla el agua de desionizadores y de ósmosis inversa?",
+      "reverso": "**Conductividad, semanal**; **contaminación microbiana, mensual**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), anexo F",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f59",
+      "anverso": "¿Por qué no vale una olla a presión como autoclave?",
+      "reverso": "Porque **solo tiene un manómetro**: el autoclave debe cumplir **tiempo, presión y temperatura**, con **sensores calibrados** y **temporizadores verificados**.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.4",
+      "etiquetas": ["equipos"]
+    },
+    {
+      "id": "t17-f60",
+      "anverso": "Mirando el esquema: ¿por qué no se recarga el asa entre las cuatro estrías de cada cuarto?",
+      "reverso": "Porque así cada estría **diluye el inóculo**: un medio que crece bien da colonias **hasta en las últimas estrías**, y uno pobre deja de darlas antes. La guía lo llama **siembra y dilución**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["figura", "medios"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "control-semicuantitativo"
+      }
+    },
+    {
+      "id": "t17-f61",
+      "anverso": "Mirando el esquema: ¿qué alternativa al 50 % da la ISO 11133, y cuánto pide la guía para el medio de *Legionella*?",
+      "reverso": "La **ratio de productividad (PR)**, frente a **un lote ya validado**; en el **GVPC**, **0,7**.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "etiquetas": ["figura", "medios"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "recuperacion-medio"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t17-q01",
+      "pregunta": "El control de esterilidad de un lote de medio de cultivo consiste en:",
+      "opciones": ["Sembrar el microorganismo diana y contar las colonias.", "Medir el pH después de la esterilización.", "Incubar una parte del lote sin sembrar y comprobar que no crece nada."],
+      "correcta": 2,
+      "explicacion": "Lo segundo es la productividad.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q02",
+      "pregunta": "La capacidad de un medio de inhibir a los microorganismos que no se buscan se llama:",
+      "opciones": ["Productividad.", "Selectividad.", "Esterilidad."],
+      "correcta": 1,
+      "explicacion": "La productividad es que crezca el diana.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q03",
+      "pregunta": "Un medio preparado tiene el pH fuera de la tolerancia del método. Lo correcto es:",
+      "opciones": ["Desecharlo.", "Ajustarlo con ácido o base estériles después de esterilizar.", "Usarlo solo para controles."],
+      "correcta": 0,
+      "explicacion": "No se ajusta tras esterilizar: riesgo de contaminación.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q04",
+      "pregunta": "La tolerancia típica del pH de un medio de cultivo es:",
+      "opciones": ["± 1 unidad.", "± 0,02 unidades.", "± 0,2 unidades."],
+      "correcta": 2,
+      "explicacion": "Guía británica, 6.10.1.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q05",
+      "pregunta": "Un frasco de medio deshidratado aparece apelmazado y con cambio de color:",
+      "opciones": ["Se usa aumentando el tiempo de autoclave.", "No se usa.", "Se tamiza y se usa."],
+      "correcta": 1,
+      "explicacion": "Eurachem 8.2.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q06",
+      "pregunta": "Salvo otra indicación, los medios listos para usar se conservan a:",
+      "opciones": ["5 ± 3 °C.", "−20 °C.", "22 ± 2 °C."],
+      "correcta": 0,
+      "explicacion": "Eurachem 8.2.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.2"
+    },
+    {
+      "id": "t17-q07",
+      "pregunta": "En el control semicuantitativo de un medio, la puntuación máxima posible es:",
+      "opciones": ["4.", "100.", "16."],
+      "correcta": 2,
+      "explicacion": "4 cuartos × 4 estrías.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q08",
+      "pregunta": "En el control semicuantitativo, el control de esterilidad debe dar una puntuación de:",
+      "opciones": ["16.", "0.", "8."],
+      "correcta": 1,
+      "explicacion": "Sin siembra no debe crecer nada.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2"
+    },
+    {
+      "id": "t17-q09",
+      "pregunta": "El control semicuantitativo es especialmente adecuado para:",
+      "opciones": ["Medios líquidos y no selectivos.", "Medios selectivos sólidos únicamente.", "Reactivos de tinción."],
+      "correcta": 0,
+      "explicacion": "Los selectivos se controlan de forma cuantitativa.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2"
+    },
+    {
+      "id": "t17-q10",
+      "pregunta": "En el control cuantitativo, un medio selectivo suele aceptarse si su recuento, respecto del medio no selectivo, es al menos del:",
+      "opciones": ["10 %.", "100 %.", "50 %."],
+      "correcta": 2,
+      "explicacion": "Guía británica; por debajo, se desecha.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q11",
+      "pregunta": "La ratio de productividad (PR) de la ISO 11133 compara el lote en prueba con:",
+      "opciones": ["El medio deshidratado sin preparar.", "Un lote ya validado.", "Un blanco estéril."],
+      "correcta": 1,
+      "explicacion": "En el GVPC, PR de 0,7.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2"
+    },
+    {
+      "id": "t17-q12",
+      "pregunta": "En un control positivo de un medio selectivo se siembra:",
+      "opciones": ["El microorganismo diana.", "Un microorganismo no diana.", "Agua estéril."],
+      "correcta": 0,
+      "explicacion": "Debe dar colonias típicas.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q13",
+      "pregunta": "El control negativo de un procedimiento microbiológico es correcto cuando:",
+      "opciones": ["Aparecen colonias típicas del diana.", "Crece cualquier colonia.", "El no diana no crece, no reacciona o da colonias atípicas."],
+      "correcta": 2,
+      "explicacion": "Definición de la guía británica.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q14",
+      "pregunta": "El blanco en microbiología es:",
+      "opciones": ["Una muestra con el microorganismo diana.", "Una muestra estéril que comprueba que el procedimiento no contamina.", "Una placa sin etiquetar."],
+      "correcta": 1,
+      "explicacion": "Guía británica, 8.1.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q15",
+      "pregunta": "Según la guía británica, los controles de calidad interna se incluyen:",
+      "opciones": ["En cada tanda, en cada estufa y, si es posible, por cada analista.", "Una vez al año.", "Solo cuando un resultado es positivo."],
+      "correcta": 0,
+      "explicacion": "Guía británica, 8.1.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q16",
+      "pregunta": "Una cepa de referencia recibida de una colección se subcultiva para preparar las reservas:",
+      "opciones": ["Tantas veces como haga falta.", "Cada semana.", "Una sola vez."],
+      "correcta": 2,
+      "explicacion": "Eurachem 8.6.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.6",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q17",
+      "pregunta": "Una reserva de cepa de referencia que se ha descongelado:",
+      "opciones": ["Se vuelve a congelar.", "No se vuelve a congelar.", "Se liofiliza."],
+      "correcta": 1,
+      "explicacion": "Eurachem 8.6.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.6"
+    },
+    {
+      "id": "t17-q18",
+      "pregunta": "Se recomienda que los productores de materiales de referencia estén acreditados según la norma:",
+      "opciones": ["ISO 17034.", "ISO 9308-1.", "ISO 15189."],
+      "correcta": 0,
+      "explicacion": "Eurachem 8.5.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.5",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q19",
+      "pregunta": "Es una colección de cultivos de referencia:",
+      "opciones": ["La ENAC.", "La ISO.", "La NCTC."],
+      "correcta": 2,
+      "explicacion": "National Collection of Type Cultures (Reino Unido).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1"
+    },
+    {
+      "id": "t17-q20",
+      "pregunta": "Las cepas de referencia conservadas en perlas se guardan a:",
+      "opciones": ["4 °C.", "Por debajo de −20 °C.", "Temperatura ambiente."],
+      "correcta": 1,
+      "explicacion": "Guía británica, 6.10.2.1.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.1"
+    },
+    {
+      "id": "t17-q21",
+      "pregunta": "Un gráfico de control de recuentos tiene sus límites de aviso en:",
+      "opciones": ["La media ± 2 desviaciones estándar.", "La media ± 3 desviaciones estándar.", "La media ± 1 desviación estándar."],
+      "correcta": 0,
+      "explicacion": "± 3s son los de acción.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q22",
+      "pregunta": "Según la guía británica, se investiga un gráfico de control cuando:",
+      "opciones": ["Un solo recuento cae entre la media y el aviso.", "Dos recuentos seguidos están dentro de los límites.", "Nueve recuentos seguidos caen del mismo lado de la media."],
+      "correcta": 2,
+      "explicacion": "Las otras: 1 fuera de acción, 2 de 3 fuera de aviso, 6 en tendencia.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1"
+    },
+    {
+      "id": "t17-q23",
+      "pregunta": "Un gráfico de control de recuentos sin apenas variación sugiere:",
+      "opciones": ["Que el método es perfecto.", "Un posible sesgo del operador.", "Que el medio es muy selectivo."],
+      "correcta": 1,
+      "explicacion": "Guía británica, 8.2.1.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1"
+    },
+    {
+      "id": "t17-q24",
+      "pregunta": "El índice de dispersión de dos submuestras se calcula como:",
+      "opciones": ["(x₁ − x₂)² / (x₁ + x₂).", "(x₁ + x₂) / 2.", "x₁ / x₂."],
+      "correcta": 0,
+      "explicacion": "Se compara con 3,841 y 6,635.",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.2"
+    },
+    {
+      "id": "t17-q25",
+      "pregunta": "En el método EPA, los recuentos de dos analistas sobre la misma placa deben coincidir dentro de un:",
+      "opciones": ["1 %.", "50 %.", "10 %."],
+      "correcta": 2,
+      "explicacion": "Un solo analista contando dos veces: 5 %.",
+      "fuente": "US EPA, Method 1103.2 (2023), 9.10"
+    },
+    {
+      "id": "t17-q26",
+      "pregunta": "La participación en ensayos de aptitud, según Eurachem:",
+      "opciones": ["Es voluntaria siempre.", "Es obligatoria si existe un esquema adecuado.", "Solo la piden los laboratorios de alimentos."],
+      "correcta": 1,
+      "explicacion": "Eurachem 13.2.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 13.2",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q27",
+      "pregunta": "La norma que acredita a los proveedores de ensayos de aptitud es la:",
+      "opciones": ["ISO/IEC 17043.", "ISO/IEC 17025.", "ISO 17034."],
+      "correcta": 0,
+      "explicacion": "La 17025 es la de los laboratorios; la 17034, la de los productores de MR.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 13.2"
+    },
+    {
+      "id": "t17-q28",
+      "pregunta": "Adoptar un método normalizado ISO y demostrar que el laboratorio lo ejecuta con el rendimiento de la norma es:",
+      "opciones": ["Validarlo.", "Calibrarlo.", "Verificarlo."],
+      "correcta": 2,
+      "explicacion": "La validación es para métodos no normalizados.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 10",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q29",
+      "pregunta": "Comparar un equipo con un patrón trazable en todo su intervalo es:",
+      "opciones": ["Verificarlo.", "Calibrarlo.", "Mantenerlo."],
+      "correcta": 1,
+      "explicacion": "La verificación comprueba que sigue cumpliendo.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q30",
+      "pregunta": "Tras reparar o trasladar un equipo de medida:",
+      "opciones": ["Hay que verificarlo de nuevo.", "No hace falta hacer nada hasta la próxima calibración.", "Se desecha."],
+      "correcta": 0,
+      "explicacion": "Eurachem 9.1.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.1",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q31",
+      "pregunta": "La verificación diaria de un pHmetro se hace con:",
+      "opciones": ["Los mismos tampones con los que se calibró.", "Agua destilada.", "Un tampón que no se usó para calibrar."],
+      "correcta": 2,
+      "explicacion": "Eurachem, anexo F.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), anexo F",
+      "nucleo": true
+    },
+    {
+      "id": "t17-q32",
+      "pregunta": "Según la guía británica, una pipeta automática debería tener un coeficiente de variación inferior al:",
+      "opciones": ["10 %.", "1 %.", "5 %."],
+      "correcta": 1,
+      "explicacion": "Y sesgo < 2 % (o < 1 % si es crítico).",
+      "fuente": "SCA (2017), Practices and Procedures for Laboratories, 5.20"
+    },
+    {
+      "id": "t17-q33",
+      "pregunta": "Según Eurachem 2023, los termómetros de vidrio de mercurio y de tolueno:",
+      "opciones": ["Están prohibidos.", "Son los recomendados.", "Solo se usan en autoclaves."],
+      "correcta": 0,
+      "explicacion": "Se recomiendan los registradores de datos.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.2",
+      "nucleo": true
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t17-s01",
+      "titulo": "Un lote nuevo de medio selectivo",
+      "enunciado": "El laboratorio prepara un **lote nuevo de agar selectivo** para coliformes. Tras esterilizarlo, mide el pH y obtiene un valor **0,4 unidades por debajo** del indicado en el método. Prepara otro lote, que sí cumple el pH, y lo controla con una suspensión de *E. coli*: en **agar nutritivo** salen **90 colonias** y en el **lote nuevo**, **36**.",
+      "preguntas": [
+        {
+          "id": "t17-s01-q1",
+          "pregunta": "¿Qué hace con el primer lote, el del pH bajo?",
+          "opciones": ["Lo ajusta con hidróxido sódico estéril.", "Lo usa, porque la diferencia es pequeña.", "Lo desecha.", "Lo vuelve a esterilizar."],
+          "correcta": 2,
+          "explicacion": "Tolerancia típica ± 0,2; no se ajusta tras esterilizar.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.1"
+        },
+        {
+          "id": "t17-s01-q2",
+          "pregunta": "Mientras no se demuestra que el lote nuevo sirve, debe quedar:",
+          "opciones": ["En cuarentena.", "En la estufa a 37 °C.", "En uso, con un aviso.", "Congelado."],
+          "correcta": 0,
+          "explicacion": "Guía británica, 6.10.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10"
+        },
+        {
+          "id": "t17-s01-q3",
+          "pregunta": "¿Qué recuperación tiene el lote nuevo?",
+          "opciones": ["36 %.", "50 %.", "250 %.", "40 %."],
+          "correcta": 3,
+          "explicacion": "36 / 90 = 0,40.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2"
+        },
+        {
+          "id": "t17-s01-q4",
+          "pregunta": "Con el criterio de la guía británica (al menos el 50 %), el lote:",
+          "opciones": ["Es apto.", "Se desecha.", "Es apto si se incuba más tiempo.", "Solo vale para controles."],
+          "correcta": 1,
+          "explicacion": "Por debajo del 50 % se desecha.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2.2"
+        },
+        {
+          "id": "t17-s01-q5",
+          "pregunta": "Para comprobar la selectividad del lote, además, sembraría:",
+          "opciones": ["Más E. coli.", "Agua destilada estéril.", "Un microorganismo no diana, que no debe crecer.", "Un antibiótico."],
+          "correcta": 2,
+          "explicacion": "La esterilidad se comprueba sin sembrar.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 6.10.2"
+        }
+      ]
+    },
+    {
+      "id": "t17-s02",
+      "titulo": "El control interno de los recuentos",
+      "enunciado": "Un laboratorio de aguas lleva un **gráfico de control** con los recuentos de un **material de referencia** comercial, y analiza a diario **submuestras duplicadas** de un agua de río. Un día, las dos submuestras dan **30 y 18 colonias**.",
+      "preguntas": [
+        {
+          "id": "t17-s02-q1",
+          "pregunta": "¿Cuál es el índice de dispersión D² de ese par?",
+          "opciones": ["12.", "0,6.", "48.", "3,0."],
+          "correcta": 3,
+          "explicacion": "(30 − 18)² / (30 + 18) = 144 / 48 = 3.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.2"
+        },
+        {
+          "id": "t17-s02-q2",
+          "pregunta": "Comparado con el valor de 3,841, ese par:",
+          "opciones": ["Está fuera de control.", "Obliga a repetir toda la tanda.", "Es aceptable.", "Indica sesgo del operador."],
+          "correcta": 2,
+          "explicacion": "3,0 < 3,841.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.2"
+        },
+        {
+          "id": "t17-s02-q3",
+          "pregunta": "En el gráfico del material de referencia, ¿cuál de estas situaciones obliga a investigar?",
+          "opciones": ["Seis recuentos seguidos que suben sin parar.", "Un recuento entre la media y el límite de aviso.", "Cinco recuentos alternando a los dos lados de la media.", "Un recuento igual a la media."],
+          "correcta": 0,
+          "explicacion": "Regla 4 de la guía británica.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1"
+        },
+        {
+          "id": "t17-s02-q4",
+          "pregunta": "Para construir el gráfico desde cero, la guía británica pide al menos:",
+          "opciones": ["5 resultados.", "20 resultados (2 al día durante 10 días).", "100 resultados.", "1 resultado al mes durante un año."],
+          "correcta": 1,
+          "explicacion": "Y 60 para valores robustos.",
+          "fuente": "SCA (2017), Practices and Procedures for Laboratories, 8.2.1"
+        },
+        {
+          "id": "t17-s02-q5",
+          "pregunta": "Para que el material de referencia tenga trazabilidad, conviene que su productor esté acreditado por:",
+          "opciones": ["La ISO 9001.", "La ISO/IEC 17043.", "La ISO 22117.", "La ISO 17034."],
+          "correcta": 3,
+          "explicacion": "La 17043 y la 22117 son de ensayos de aptitud.",
+          "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.5"
+        }
+      ]
+    }
+  ]
+}
