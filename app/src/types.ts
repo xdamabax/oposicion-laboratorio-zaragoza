@@ -107,6 +107,8 @@ export type TipoEsquema =
   | 'gota-pendiente'
   | 'tres-dominios'
   | 'estructura-virus'
+  | 'ciclo-pcr'
+  | 'arbol-gramnegativos'
 
 export type TipoMaterial =
   | 'matraz-aforado'

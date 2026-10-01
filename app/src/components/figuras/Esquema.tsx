@@ -81,6 +81,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'gota-pendiente': 'Gota pendiente y preparación entre porta y cubre',
   'tres-dominios': 'Los tres dominios y los acelulares',
   'estructura-virus': 'Estructura de los virus: con y sin envoltura',
+  'ciclo-pcr': 'Ciclos de PCR: temperatura de cada fase',
+  'arbol-gramnegativos': 'Identificación de bacilos gramnegativos: oxidasa, ureasa e indol',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -156,6 +158,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'gota-pendiente': { ancho: 580, alto: 206 },
   'tres-dominios': { ancho: 580, alto: 236 },
   'estructura-virus': { ancho: 580, alto: 226 },
+  'ciclo-pcr': { ancho: 580, alto: 232 },
+  'arbol-gramnegativos': { ancho: 580, alto: 254 },
 }
 
 const AZUL = '#9ecbe8'
@@ -7236,6 +7240,139 @@ function EstructuraVirus() {
   )
 }
 
+/**
+ * Perfil de temperatura de dos ciclos de PCR: desnaturalizacion (~95 °C),
+ * hibridacion (~50 °C) y elongacion (72 °C). La escala vertical sale de las
+ * marcas del eje; cada meseta lleva su fase y su ciclo.
+ */
+function CicloPcr() {
+  const X0 = 60
+  const yDe = (t: number) => 200 - (t - 40) * 2.6
+  const FASES = [
+    { fase: 'desnaturalizacion', t: 95, nombre: '1. Desnaturalización', detalle: 'se separan las hebras' },
+    { fase: 'hibridacion', t: 50, nombre: '2. Hibridación', detalle: 'se unen los cebadores' },
+    { fase: 'elongacion', t: 72, nombre: '3. Elongación', detalle: 'la Taq alarga la copia' },
+  ]
+  const ANCHO = 55
+  const HUECO = 20
+  const mesetas = [1, 2].flatMap((ciclo) =>
+    FASES.map((f, i) => {
+      const x1 = 75 + (ciclo - 1) * 3 * (ANCHO + HUECO) + i * (ANCHO + HUECO)
+      return { ...f, ciclo, x1, x2: x1 + ANCHO, y: yDe(f.t) }
+    }),
+  )
+  const perfil = [`M ${X0 + 2} ${yDe(25 + 15)}`, ...mesetas.flatMap((m) => [`L ${m.x1} ${m.y.toFixed(1)}`, `L ${m.x2} ${m.y.toFixed(1)}`])].join(' ')
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <line x1={X0} y1={yDe(40)} x2={X0} y2={yDe(100)} stroke="currentColor" strokeWidth="1" />
+      <line x1={X0} y1={yDe(40)} x2={520} y2={yDe(40)} stroke="currentColor" strokeWidth="1" />
+      {[40, 50, 60, 70, 80, 90, 100].map((t) => (
+        <g key={t}>
+          <line data-pieza="marca" data-valor={t} x1={X0 - 4} y1={yDe(t)} x2={X0} y2={yDe(t)} stroke="currentColor" strokeWidth="1" />
+          <text x={X0 - 7} y={yDe(t) + 3} fontSize="8" textAnchor="end" fill="currentColor">
+            {t} °C
+          </text>
+        </g>
+      ))}
+      <text x={290} y={yDe(40) + 16} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+        tiempo
+      </text>
+      <path d={perfil} fill="none" stroke="currentColor" strokeWidth="1" strokeOpacity="0.5" />
+      {mesetas.map((m) => (
+        <line key={`${m.ciclo}-${m.fase}`} data-pieza="meseta" data-fase={m.fase} data-ciclo={m.ciclo} x1={m.x1} y1={m.y.toFixed(1)} x2={m.x2} y2={m.y.toFixed(1)} stroke={ROJO} strokeWidth="3" />
+      ))}
+      {mesetas
+        .filter((m) => m.ciclo === 1)
+        .map((m) => (
+          <g key={m.fase}>
+            <text data-pieza="fase" data-fase={m.fase} x={(m.x1 + m.x2) / 2} y={m.y - 18} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+              {m.nombre}
+            </text>
+            <text x={(m.x1 + m.x2) / 2} y={m.y - 7} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+              {m.detalle}
+            </text>
+          </g>
+        ))}
+      {[1, 2].map((c) => (
+        <text key={c} x={75 + (c - 1) * 3 * (ANCHO + HUECO) + (3 * ANCHO + 2 * HUECO) / 2} y={yDe(40) - 4} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+          ciclo {c}
+        </text>
+      ))}
+      <text x={512} y={60} fontSize="8" fill="currentColor">
+        25-40 ciclos
+      </text>
+      <text x={512} y={74} fontSize="8" fill="currentColor">
+        en un
+      </text>
+      <text x={512} y={88} fontSize="8" fill="currentColor">
+        termociclador
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Arbol de identificacion de bacilos gramnegativos: la oxidasa separa
+ * Pseudomonas (positiva, no fermenta la glucosa) de las enterobacterias
+ * (negativas, fermentan la glucosa); la ureasa y el indol separan Proteus,
+ * E. coli y Salmonella.
+ */
+function ArbolGramnegativos() {
+  const W = 118
+  const H = 32
+  const NODOS = [
+    { id: 'raiz', x: 290, y: 8, l1: 'Bacilo gramnegativo', l2: 'prueba de la oxidasa' },
+    { id: 'pseudomonas', x: 120, y: 92, l1: 'Pseudomonas', l2: 'no fermenta la glucosa' },
+    { id: 'enterobacterias', x: 390, y: 92, l1: 'Enterobacterias', l2: 'fermentan la glucosa' },
+    { id: 'proteus', x: 215, y: 190, l1: 'Proteus', l2: '' },
+    { id: 'ecoli', x: 390, y: 190, l1: 'E. coli', l2: 'lactosa +' },
+    { id: 'salmonella', x: 520, y: 190, l1: 'Salmonella', l2: 'lactosa −, H₂S +' },
+  ]
+  const ARISTAS = [
+    { de: 'raiz', a: 'pseudomonas', rotulo: 'Oxidasa +', lado: 'izq' },
+    { de: 'raiz', a: 'enterobacterias', rotulo: 'Oxidasa −', lado: 'der' },
+    { de: 'enterobacterias', a: 'proteus', rotulo: 'Ureasa +', lado: 'izq' },
+    { de: 'enterobacterias', a: 'ecoli', rotulo: 'Ureasa −, indol +', lado: 'izq' },
+    { de: 'enterobacterias', a: 'salmonella', rotulo: 'Ureasa −, indol −', lado: 'der' },
+  ]
+  const n = (id: string) => NODOS.find((x) => x.id === id)!
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {ARISTAS.map((e) => {
+        const p = n(e.de)
+        const h = n(e.a)
+        const [x1, y1, x2, y2] = [p.x, p.y + H, h.x, h.y]
+        const mx = (x1 + x2) / 2
+        const my = (y1 + y2) / 2
+        return (
+          <g key={e.a}>
+            <line data-pieza="arista" data-arista={e.a} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="1.2" />
+            <text data-pieza="rotulo-arista" data-arista={e.a} x={mx + (e.lado === 'der' ? 6 : -6)} y={my} fontSize="8.5" fontWeight="bold" textAnchor={e.lado === 'der' ? 'start' : 'end'} fill={ROJO}>
+              {e.rotulo}
+            </text>
+          </g>
+        )
+      })}
+      {NODOS.map((d) => (
+        <g key={d.id}>
+          <rect data-pieza="nodo" data-id={d.id} x={d.x - W / 2} y={d.y} width={W} height={H} rx={5} fill={AZUL_CLARO} fillOpacity="0.45" stroke="currentColor" strokeWidth="1" />
+          <text data-pieza="nombre-nodo" data-id={d.id} x={d.x} y={d.y + 13} fontSize="9" fontWeight="bold" fontStyle={d.id === 'raiz' || d.id === 'enterobacterias' ? 'normal' : 'italic'} textAnchor="middle" fill="currentColor">
+            {d.l1}
+          </text>
+          {d.l2 && (
+            <text x={d.x} y={d.y + 25} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+              {d.l2}
+            </text>
+          )}
+        </g>
+      ))}
+      <text x={20} y={246} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Cultivo joven de 18-24 h y controles positivo y negativo en cada prueba. La identificación se confirma con más pruebas o con MALDI-TOF.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7380,6 +7517,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <TresDominios />
     case 'estructura-virus':
       return <EstructuraVirus />
+    case 'ciclo-pcr':
+      return <CicloPcr />
+    case 'arbol-gramnegativos':
+      return <ArbolGramnegativos />
   }
 }
 

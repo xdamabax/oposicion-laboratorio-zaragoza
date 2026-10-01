@@ -1136,6 +1136,40 @@ function medir(sabotaje, ROJO) {
     void cx
     void cy
   }
+  if (sabotaje === 130) {
+    const svg = porClave('ciclo-pcr')
+    // la hibridacion del primer ciclo subida a la temperatura de la elongacion
+    const h = svg.querySelector('[data-pieza="meseta"][data-ciclo="1"][data-fase="hibridacion"]')
+    const e = svg.querySelector('[data-pieza="meseta"][data-ciclo="1"][data-fase="elongacion"]')
+    h.setAttribute('y1', e.getAttribute('y1'))
+    h.setAttribute('y2', e.getAttribute('y2'))
+  }
+  if (sabotaje === 131) {
+    const svg = porClave('ciclo-pcr')
+    // los rotulos de hibridacion y elongacion intercambiados
+    const a = svg.querySelector('[data-pieza="fase"][data-fase="hibridacion"]')
+    const b = svg.querySelector('[data-pieza="fase"][data-fase="elongacion"]')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
+  if (sabotaje === 132) {
+    const svg = porClave('arbol-gramnegativos')
+    // la arista de Proteus sale directamente de la raiz, saltandose las enterobacterias
+    const raiz = svg.querySelector('[data-pieza="nodo"][data-id="raiz"]')
+    const a = svg.querySelector('[data-pieza="arista"][data-arista="proteus"]')
+    a.setAttribute('x1', num(raiz, 'x') + num(raiz, 'width') / 2)
+    a.setAttribute('y1', num(raiz, 'y') + num(raiz, 'height'))
+  }
+  if (sabotaje === 133) {
+    const svg = porClave('arbol-gramnegativos')
+    // Salmonella pintada como ureasa positiva: los rotulos de Proteus y Salmonella intercambiados
+    const a = svg.querySelector('[data-pieza="rotulo-arista"][data-arista="proteus"]')
+    const b = svg.querySelector('[data-pieza="rotulo-arista"][data-arista="salmonella"]')
+    const t = a.textContent
+    a.textContent = b.textContent
+    b.textContent = t
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4286,6 +4320,98 @@ function medir(sabotaje, ROJO) {
     return `${es.length} espículas sobre la envoltura, todas hacia fuera`
   })
 
+  /*
+   * Ciclo de PCR. La escala de temperatura se reconstruye con las marcas del
+   * eje (dos marcas bastan para la recta y -> °C); cada meseta se lee a su
+   * altura y se ordena por su posicion horizontal dentro de su ciclo.
+   */
+  const escalaPcr = (svg) => {
+    const m = piezas(svg, 'marca').map((e) => [num(e, 'y1'), num(e, 'data-valor')]).sort((a, b) => a[0] - b[0])
+    const [[ya, ta], [yb, tb]] = [m[0], m[m.length - 1]]
+    return (y) => ta + ((y - ya) * (tb - ta)) / (yb - ya)
+  }
+  const PCR_T = { desnaturalizacion: 95, hibridacion: 50, elongacion: 72 }
+  control('PCR · cada meseta está a la temperatura de su fase (95, 50 y 72 °C), leída en la escala del eje', () => {
+    const svg = porClave('ciclo-pcr')
+    const aT = escalaPcr(svg)
+    const mesetas = piezas(svg, 'meseta')
+    if (mesetas.length !== 6) throw new Error(`hay ${mesetas.length} mesetas`)
+    for (const m of mesetas) {
+      const t = aT(num(m, 'y1'))
+      const fase = m.getAttribute('data-fase')
+      if (Math.abs(t - PCR_T[fase]) > 2) throw new Error(`la ${fase} del ciclo ${m.getAttribute('data-ciclo')} está a ${t.toFixed(0)} °C`)
+    }
+    return 'desnaturalización a 95, hibridación a 50 y elongación a 72 °C en los dos ciclos'
+  })
+
+  control('PCR · en cada ciclo van en orden desnaturalización, hibridación y elongación, y cada rótulo está sobre su meseta', () => {
+    const svg = porClave('ciclo-pcr')
+    const orden = ['desnaturalizacion', 'hibridacion', 'elongacion']
+    for (const c of ['1', '2']) {
+      const ms = piezas(svg, 'meseta').filter((m) => m.getAttribute('data-ciclo') === c).sort((a, b) => num(a, 'x1') - num(b, 'x1'))
+      const leido = ms.map((m) => m.getAttribute('data-fase')).join(',')
+      if (leido !== orden.join(',')) throw new Error(`el ciclo ${c} va en orden ${leido}`)
+    }
+    for (const r of piezas(svg, 'fase')) {
+      const fase = r.getAttribute('data-fase')
+      const m = svg.querySelector(`[data-pieza="meseta"][data-ciclo="1"][data-fase="${fase}"]`)
+      const [cx] = centroCaja(r)
+      if (cx < num(m, 'x1') || cx > num(m, 'x2')) throw new Error(`el rótulo «${r.textContent}» no está sobre su meseta`)
+      const esperado = { desnaturalizacion: /desnaturaliz/i, hibridacion: /hibridaci/i, elongacion: /elongaci/i }[fase]
+      if (!esperado.test(r.textContent)) throw new Error(`la meseta de ${fase} lleva el rótulo «${r.textContent}»`)
+    }
+    return 'desnaturalización → hibridación → elongación, con cada rótulo sobre su meseta'
+  })
+
+  /*
+   * Arbol de bacilos gramnegativos. Cada arista se lee por sus extremos: sale
+   * de la caja del padre y llega a la del hijo. El camino de rotulos de la raiz
+   * a cada hoja se contrasta con el perfil que da el apunte (UKHSA).
+   */
+  const ARBOL_PADRE = { pseudomonas: 'raiz', enterobacterias: 'raiz', proteus: 'enterobacterias', ecoli: 'enterobacterias', salmonella: 'enterobacterias' }
+  const PERFIL = {
+    pseudomonas: ['oxidasa +'],
+    proteus: ['oxidasa −', 'ureasa +'],
+    ecoli: ['oxidasa −', 'ureasa −', 'indol +'],
+    salmonella: ['oxidasa −', 'ureasa −', 'indol −'],
+  }
+  const nodoEn = (svg, x, y) =>
+    piezas(svg, 'nodo').find((n) => x >= num(n, 'x') - 1 && x <= num(n, 'x') + num(n, 'width') + 1 && y >= num(n, 'y') - 1 && y <= num(n, 'y') + num(n, 'height') + 1)
+  control('Árbol · cada arista une un nodo con su padre: la oxidasa sale del bacilo gramnegativo y la ureasa y el indol, de las enterobacterias', () => {
+    const svg = porClave('arbol-gramnegativos')
+    const llegan = {}
+    for (const a of piezas(svg, 'arista')) {
+      const de = nodoEn(svg, num(a, 'x1'), num(a, 'y1'))
+      const al = nodoEn(svg, num(a, 'x2'), num(a, 'y2'))
+      if (!de || !al) throw new Error('una arista no empieza o no acaba en una caja')
+      const hijo = al.getAttribute('data-id')
+      llegan[hijo] = (llegan[hijo] ?? []).concat(de.getAttribute('data-id'))
+    }
+    for (const [hijo, padre] of Object.entries(ARBOL_PADRE)) {
+      const p = llegan[hijo] ?? []
+      if (p.length !== 1 || p[0] !== padre) throw new Error(`a ${hijo} llega(n) ${p.join(', ') || 'ninguna'} en vez de ${padre}`)
+    }
+    if (llegan.raiz) throw new Error('llega una arista a la raíz')
+    return 'cinco aristas, cada una desde su padre'
+  })
+
+  control('Árbol · el camino de pruebas hasta cada bacteria es su perfil: Pseudomonas oxidasa +, enterobacterias −; Proteus ureasa +; Salmonella ureasa e indol −', () => {
+    const svg = porClave('arbol-gramnegativos')
+    const rotulo = (hijo) => svg.querySelector(`[data-pieza="rotulo-arista"][data-arista="${hijo}"]`).textContent.toLowerCase().split(',').map((t) => t.trim().replace(/\s+/g, ' '))
+    const mal = []
+    for (const [hoja, perfil] of Object.entries(PERFIL)) {
+      const camino = []
+      let n = hoja
+      while (n !== 'raiz') {
+        camino.unshift(...rotulo(n))
+        n = ARBOL_PADRE[n]
+      }
+      if (camino.join('|') !== perfil.join('|')) mal.push(`${hoja}: ${camino.join(', ')}`)
+    }
+    if (mal.length) throw new Error(`caminos que no son el perfil: ${mal.join('; ')}`)
+    return 'Pseudomonas, Proteus, E. coli y Salmonella con su perfil de oxidasa, ureasa e indol'
+  })
+
   return resultados
 }
 
@@ -4421,6 +4547,10 @@ const SABOTAJES = {
   127: 'la llave de procariotas alargada hasta abarcar Eucarya',
   128: 'el ácido nucleico del virus desnudo sacado de su cápside',
   129: 'una espícula girada hacia el interior de la envoltura',
+  130: 'la hibridación del primer ciclo subida a la temperatura de la elongación',
+  131: 'los rótulos de hibridación y elongación intercambiados',
+  132: 'la arista de Proteus sale de la raíz, saltándose las enterobacterias',
+  133: 'Salmonella pintada como ureasa positiva',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4560,6 +4690,10 @@ const CONTROL_DE = {
   127: [123],
   128: [124],
   129: [125],
+  130: [126],
+  131: [127],
+  132: [128],
+  133: [129],
 }
 
 async function main() {
