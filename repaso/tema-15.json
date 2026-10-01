@@ -1,0 +1,794 @@
+{
+  "tema": 15,
+  "titulo": "Clasificación de microorganismos. Principales grupos de microorganismos. Características de los diferentes grupos de microorganismos: Bacterias, hongos, virus, protozoos y helminstos, algas.",
+  "generadoDe": "temas/tema-15.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-10-01",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Preguntado en nuestra plaza: caracteristicas de los protozoos (1246 #35), colifagos somaticos (1246 #32), criptosporidiosis por un protozoo (1322 #22), Legionella pneumophila (1322 #24) y enterobacterias (1322 2.º #11). El nucleo recoge las definiciones legales, los tres dominios, procariotas y eucariotas, y lo esencial de cada grupo, con los organismos del agua.",
+  "flashcards": [
+    {
+      "id": "t15-f01",
+      "anverso": "¿Cómo define el RD 664/1997 un **microorganismo**?",
+      "reverso": "«Toda entidad microbiológica, **celular o no**, capaz de **reproducirse o de transferir material genético**».",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["conceptos", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f02",
+      "anverso": "¿Qué incluye un **agente biológico** según el RD 664/1997?",
+      "reverso": "**Microorganismos** (también los modificados genéticamente), **cultivos celulares** y **endoparásitos humanos**, que puedan originar **infección, alergia o toxicidad**.",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["conceptos", "normativa"]
+    },
+    {
+      "id": "t15-f03",
+      "anverso": "Según la guía del INSST, ¿qué grupos son **microorganismos** y cuáles **endoparásitos**? ¿Y los priones?",
+      "reverso": "- **Microorganismos:** **virus, bacterias, hongos filamentosos y levaduras**.\n- **Endoparásitos:** **protozoos y helmintos**.\n- **Priones:** **no son microorganismos**, pero se tratan como agentes biológicos.",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f04",
+      "anverso": "¿Qué es la **taxonomía**?",
+      "reverso": "La ciencia de la **clasificación**, la **identificación** y la **nomenclatura** de los organismos.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t15-f05",
+      "anverso": "Ordena los rangos taxonómicos de mayor a menor.",
+      "reverso": "**Dominio, reino, filo, clase, orden, familia, género y especie.**",
+      "fuente": "LPSN (DSMZ)",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f06",
+      "anverso": "¿Cómo se forma el nombre científico de una bacteria?",
+      "reverso": "Es **binomial**: **género + epíteto específico**, por ejemplo *Escherichia coli*. Lo rige el **Código Internacional de Nomenclatura de Procariotas**.",
+      "fuente": "LPSN (DSMZ)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t15-f07",
+      "anverso": "¿Cómo se define una **especie bacteriana**? ¿Por qué no sirve el criterio de los animales?",
+      "reverso": "Por **caracteres fenotípicos y parentesco genético (ADN)**. El criterio de la reproducción sexual con descendencia fértil no sirve: **las bacterias no tienen reproducción sexual**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t15-f08",
+      "anverso": "¿Qué es una **cepa**? ¿Cómo se distinguen grupos por debajo de la especie?",
+      "reverso": "Una **cepa** es un **aislado** concreto de una especie. Por debajo de la especie se distinguen **serotipos**, toxinas, plásmidos o fagotipos; por ejemplo, ***E. coli* O157:H7**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t15-f09",
+      "anverso": "¿Cuáles son los **tres dominios** y quién los propuso?",
+      "reverso": "***Bacteria*, *Archaea* y *Eucarya***. Los propusieron **Woese, Kandler y Wheelis en 1990**, comparando moléculas, por encima del nivel de reino.",
+      "fuente": "Woese, Kandler y Wheelis (1990), PNAS",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f10",
+      "anverso": "¿Dónde quedan los virus y los priones respecto de los tres dominios?",
+      "reverso": "**Fuera de ellos**: **no son células**.",
+      "fuente": "Woese, Kandler y Wheelis (1990), PNAS; RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["clasificacion"]
+    },
+    {
+      "id": "t15-f11",
+      "anverso": "Diferencias entre **procariotas** y **eucariotas**.",
+      "reverso": "- **Procariotas** (bacterias, arqueas): **nucleoide sin membrana**, **sin orgánulos con membrana**, cromosoma normalmente **único y circular sin histonas**, **ribosomas 70S**, **fisión binaria**.\n- **Eucariotas** (hongos, protozoos, algas, helmintos): **núcleo con membrana** y **orgánulos**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["clasificacion"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f12",
+      "anverso": "¿Qué componente de la pared es **exclusivo de los procariotas**?",
+      "reverso": "El **peptidoglicano**. Las grampositivas lo tienen grueso, con **ácidos teicoicos**; las gramnegativas, fino, con **membrana externa** y **lipopolisacárido (endotoxina)**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["bacterias"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f13",
+      "anverso": "¿Qué bacterias no tienen pared? ¿Cuáles son parásitos intracelulares obligados?",
+      "reverso": "**Sin pared:** ***Mycoplasma***, los procariotas más pequeños (0,1-0,2 µm). **Intracelulares obligados:** ***Chlamydia*** y ***Rickettsia***.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["bacterias"]
+    },
+    {
+      "id": "t15-f14",
+      "anverso": "Estructuras de superficie de las bacterias y su función.",
+      "reverso": "- **Flagelos:** movimiento; sus proteínas son los **antígenos H**.\n- **Pili o fimbrias:** **adherencia**; los **pili sexuales**, la **conjugación**.\n- **Cápsula:** polisacárido que **protege de la fagocitosis**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["bacterias"]
+    },
+    {
+      "id": "t15-f15",
+      "anverso": "¿Qué bacterias forman **endosporas** y para qué?",
+      "reverso": "***Bacillus*** y ***Clostridium***. Son células en reposo **resistentes al calor**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["bacterias"]
+    },
+    {
+      "id": "t15-f16",
+      "anverso": "¿Cómo son las **enterobacterias**?",
+      "reverso": "**Gramnegativas, aerobias y anaerobias facultativas, y fermentan azúcares** (1322, 2.º ejercicio, #11). Ejemplos: *E. coli*, *Citrobacter*, *Salmonella*, *Shigella*.",
+      "fuente": "Plantilla 1322",
+      "etiquetas": ["bacterias", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f17",
+      "anverso": "¿Qué tipo de microorganismo es ***Legionella*** y dónde vive?",
+      "reverso": "Un **bacilo gramnegativo**, **sin esporas** y **móvil**. Vive en el suelo y el agua, **sobre todo dentro de amebas de vida libre en las biopelículas**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["bacterias"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f18",
+      "anverso": "¿Qué especie causa la mayoría de las **legionelosis**?",
+      "reverso": "***Legionella pneumophila***, **sobre todo el serogrupo 1** (1322 #24). *L. longbeachae*, de los sustratos de jardinería, causa un 5 %.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; plantilla 1322",
+      "etiquetas": ["bacterias", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f19",
+      "anverso": "¿Qué formas tiene la **legionelosis** y cómo se contrae?",
+      "reverso": "La **enfermedad del legionario** (**neumonía**) y la **fiebre de Pontiac** (leve, sin neumonía). Se contrae **al respirar aerosoles**; **no suele pasar de persona a persona**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; CDC",
+      "etiquetas": ["bacterias"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f20",
+      "anverso": "¿Las **cianobacterias** son algas?",
+      "reverso": "**No: son bacterias** (procariotas), aunque se llamaron «**algas verdeazuladas**». Tienen **clorofila a** y **ficocianina**, pero **no tienen núcleo ni cloroplastos**.",
+      "fuente": "OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13",
+      "etiquetas": ["algas"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f21",
+      "anverso": "Características generales de los **virus**.",
+      "reverso": "**Acelulares**, **parásitos intracelulares obligados** (fuera de la célula son **inertes** y **no generan energía**), con **ADN o ARN, nunca los dos**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["virus"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f22",
+      "anverso": "Partes de un virus: **cápside**, **nucleocápside** y **envoltura**.",
+      "reverso": "- **Cápside:** cubierta de **proteína** hecha de **capsómeros**.\n- **Nucleocápside:** **ácido nucleico + cápside**.\n- **Envoltura** (solo en algunos): **bicapa lipídica tomada de la membrana de la célula huésped**, con **glicoproteínas** víricas.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["virus"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f23",
+      "anverso": "¿Qué simetrías puede tener la cápside de un virus?",
+      "reverso": "**Helicoidal** (virus del mosaico del tabaco), **icosaédrica** (20 caras triangulares; adenovirus) o **compleja**, en los virus grandes.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f24",
+      "anverso": "¿Con qué criterios se clasifican los virus y cómo terminan los nombres de familia y de género?",
+      "reverso": "Por su **morfología**, su **composición química** (ácido nucleico) y su **modo de replicación**. Familia **-viridae**, subfamilia -virinae, género **-virus**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f25",
+      "anverso": "¿Qué es un ARN de **sentido positivo** y uno de **sentido negativo**?",
+      "reverso": "**Positivo:** sirve **directamente como ARN mensajero**. **Negativo:** hay que copiar antes su hebra complementaria.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f26",
+      "anverso": "¿En qué se basa la **clasificación de Baltimore**? ¿Cuántos grupos tiene?",
+      "reverso": "En el **tipo de genoma** y cómo se expresa: **siete grupos**, de ADN bicatenario (I) a ADN con retrotranscripción (VII).",
+      "fuente": "ViralZone (SIB)",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f27",
+      "anverso": "Cita virus que se transmiten por el agua y cómo son los adenovirus.",
+      "reverso": "**Virus entéricos:** adenovirus, norovirus, rotavirus, enterovirus, hepatitis A y E. El **adenovirus** tiene **ADN bicatenario**, **sin envoltura**, cápside **icosaédrica de 90-100 nm**, y es de los **más resistentes a la luz ultravioleta**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f28",
+      "anverso": "¿Qué son los **colífagos somáticos**?",
+      "reverso": "**Virus que usan *E. coli* para replicarse** (1246 #32), fijándose a **receptores de su pared**. Se multiplican sobre todo en el intestino, pero también en el agua.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; plantilla 1246",
+      "etiquetas": ["virus", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f29",
+      "anverso": "¿En qué se diferencian los colífagos **somáticos** de los **F-ARN**?",
+      "reverso": "**Somáticos:** se fijan a la **pared**; grupo amplio; también se multiplican en el agua. **F-ARN:** se fijan a las **fimbrias sexuales**; **ARN monocatenario**; **solo se multiplican en el intestino**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f30",
+      "anverso": "¿Para qué sirven los colífagos en el control del agua y qué limitación tienen?",
+      "reverso": "Son **modelos del comportamiento de los virus entéricos**, mejores que las bacterias fecales. Pero **no hay correlación directa** con los virus: su ausencia **no garantiza** que no los haya.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f31",
+      "anverso": "¿Qué dice el RD 3/2023 de los **colífagos somáticos**?",
+      "reverso": "Valor paramétrico **0 UFP/100 mL**. Si aparecen en agua tratada, **evaluación cuantitativa del riesgo vírico** según la OMS. En captación, **más de 50 UFP/100 mL** obliga a más controles. Método **UNE-EN ISO 10705-2**.",
+      "fuente": "RD 3/2023, anexo I",
+      "etiquetas": ["virus", "normativa"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f32",
+      "anverso": "¿Qué son los **priones**?",
+      "reverso": "**Proteínas infecciosas sin ácido nucleico** demostrable. Causan **encefalopatías espongiformes** (Creutzfeldt-Jakob, encefalopatía bovina, *scrapie*) y son **muy resistentes**.",
+      "fuente": "Baron, Medical Microbiology (1996); RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["virus"]
+    },
+    {
+      "id": "t15-f33",
+      "anverso": "Características generales de los **hongos**.",
+      "reverso": "**Eucariotas**, con **pared de quitina**, que se nutren **por absorción**: digieren el sustrato fuera con **enzimas** y absorben los productos. **Saprófitos o parásitos.**",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["hongos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f34",
+      "anverso": "¿Qué diferencia hay entre un **moho** y una **levadura**?",
+      "reverso": "**Moho:** filamentoso, con **hifas** que forman el **micelio** (septadas o cenocíticas). **Levadura:** **unicelular**, se reproduce por **gemación**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["hongos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f35",
+      "anverso": "¿Qué es un hongo **dimórfico**? Pon un ejemplo.",
+      "reverso": "El que crece como **micelio en la naturaleza** y como **levadura en el cuerpo**. Ejemplo: ***Candida***.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["hongos"]
+    },
+    {
+      "id": "t15-f36",
+      "anverso": "¿Cómo se reproducen los hongos?",
+      "reverso": "- **Sexual:** oosporas, zigosporas, **ascosporas** y **basidiosporas**.\n- **Asexual:** **gemación**, **conidios**, fragmentación de hifas y **clamidosporas**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["hongos"]
+    },
+    {
+      "id": "t15-f37",
+      "anverso": "¿Son hongos los **actinomicetos**?",
+      "reverso": "**No:** son **bacterias filamentosas**, procariotas con peptidoglicano, aunque formen filamentos y esporas parecidos.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["hongos"]
+    },
+    {
+      "id": "t15-f38",
+      "anverso": "¿Qué son las **micotoxinas**? Ejemplos.",
+      "reverso": "Metabolitos tóxicos de algunos hongos (*Aspergillus*, *Penicillium*, *Fusarium*): **aflatoxinas** y **ocratoxinas**.",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "etiquetas": ["hongos"]
+    },
+    {
+      "id": "t15-f39",
+      "anverso": "Características de los **protozoos**.",
+      "reverso": "**Eucariotas unicelulares**, **heterótrofos** (nutrición holozoica), casi todos **con movimiento** (1246 #35). **Se multiplican dentro del ser humano.** Casi todos los parásitos miden **menos de 50 µm**.",
+      "fuente": "Baron, Medical Microbiology (1996); CDC, Parasites: About; DPDx; plantilla 1246",
+      "etiquetas": ["protozoos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f40",
+      "anverso": "¿Qué es un **trofozoíto**, un **quiste** y un **ooquiste**?",
+      "reverso": "- **Trofozoíto:** forma **activa** que se alimenta y se multiplica.\n- **Quiste:** forma con **pared protectora**, que sobrevive fuera del huésped.\n- **Ooquiste:** fruto de la **reproducción sexual** de los apicomplejos.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["protozoos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f41",
+      "anverso": "Clasificación de los protozoos según cómo se mueven.",
+      "reverso": "- **Sarcodinos (amebas):** seudópodos; *Entamoeba*.\n- **Flagelados:** flagelos; *Giardia*.\n- **Ciliados:** cilios; *Balantidium*.\n- **Esporozoos:** **sin órganos de locomoción**; *Plasmodium*, *Cryptosporidium*.",
+      "fuente": "CDC, Parasites: About; DPDx",
+      "etiquetas": ["protozoos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f42",
+      "anverso": "¿Qué es ***Cryptosporidium*** y qué enfermedad causa?",
+      "reverso": "Un **protozoo coccidio** (apicomplejo). Causa la **criptosporidiosis**, una **diarrea** (1322 #22). Ooquistes de **4-6 µm** con **cuatro esporozoítos**; ***C. hominis*** y ***C. parvum***, los más frecuentes.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; CDC, Parasites: About; DPDx; plantilla 1322",
+      "etiquetas": ["protozoos", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f43",
+      "anverso": "¿Por qué la ausencia de *E. coli* no garantiza que no haya *Cryptosporidium*?",
+      "reverso": "Porque sus **ooquistes son muy resistentes al cloro** y persisten en el ambiente. **La luz ultravioleta y el ozono sí son eficaces.**",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["protozoos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f44",
+      "anverso": "¿Qué es ***Giardia duodenalis***?",
+      "reverso": "Un **protozoo flagelado** móvil (sinónimos *G. lamblia*, *G. intestinalis*). **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a trofozoítos. Causa la **giardiasis**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["protozoos"]
+    },
+    {
+      "id": "t15-f45",
+      "anverso": "¿Qué amebas de vida libre importan en el agua?",
+      "reverso": "***Naegleria fowleri***: meningoencefalitis casi siempre mortal **si el agua entra por la nariz**. ***Acanthamoeba***: **queratitis** en usuarios de **lentes de contacto**; además **puede albergar *Legionella***.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; Baron, Medical Microbiology (1996)",
+      "etiquetas": ["protozoos"]
+    },
+    {
+      "id": "t15-f46",
+      "anverso": "Características generales de los **helmintos**.",
+      "reverso": "**Gusanos pluricelulares**; los adultos se ven **a simple vista**. **En su forma adulta no se multiplican en el ser humano.** Fases: **huevo, larva y adulto**.",
+      "fuente": "CDC, Parasites: About; DPDx; Baron, Medical Microbiology (1996)",
+      "etiquetas": ["helmintos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f47",
+      "anverso": "Grupos de helmintos y cómo son.",
+      "reverso": "- **Trematodos (duelas):** planos, **foliáceos**, con **ventosas**; hermafroditas salvo los esquistosomas; ciclo con **caracol**.\n- **Cestodos (tenias):** planos, **segmentados en proglótides**, con **escólex**, **sin tubo digestivo**.\n- **Nematodos:** **cilíndricos**, sexos separados, **tubo digestivo completo**.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["helmintos"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f48",
+      "anverso": "¿Qué helmintos se transmiten por el agua?",
+      "reverso": "El agua de bebida **no suele** transmitirlos. Excepciones, por **agua superficial**: ***Dracunculus medinensis*** (con **copépodos**) y ***Fasciola***. La **esquistosomiasis**, por **contacto** con el agua.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "etiquetas": ["helmintos"]
+    },
+    {
+      "id": "t15-f49",
+      "anverso": "¿Qué tienen en común y en qué se diferencian **algas** y **cianobacterias**?",
+      "reverso": "Las dos hacen la **fotosíntesis** con **clorofila a**. Las **algas** son **eucariotas con cloroplastos**; las **cianobacterias**, **procariotas**, con la clorofila en los **tilacoides** y **ficocianina**.",
+      "fuente": "OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13",
+      "etiquetas": ["algas"],
+      "nucleo": true
+    },
+    {
+      "id": "t15-f50",
+      "anverso": "¿Por qué preocupan las cianobacterias en el agua?",
+      "reverso": "Forman **floraciones**, producen **cianotoxinas** (**microcistinas**, cilindrospermopsinas, anatoxinas, saxitoxinas) y **geosmina** (mal olor y sabor), y **dificultan la coagulación y la filtración**.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13",
+      "etiquetas": ["algas"]
+    },
+    {
+      "id": "t15-f51",
+      "anverso": "Mirando el esquema: ¿por qué las cianobacterias van con *Bacteria* y no con las algas?",
+      "reverso": "Porque son **procariotas**: **no tienen núcleo ni cloroplastos**, y la clorofila está en membranas internas, los **tilacoides**.",
+      "fuente": "OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13",
+      "etiquetas": ["figura", "algas"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "tres-dominios"
+      }
+    },
+    {
+      "id": "t15-f52",
+      "anverso": "Mirando el esquema: ¿qué es un **virión** y por qué un virus no puede multiplicarse fuera de una célula?",
+      "reverso": "El **virión** es la **partícula vírica completa e infecciosa**. El virus es un **parásito intracelular obligado**: **no genera energía** y depende de la maquinaria de la célula huésped.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "etiquetas": ["figura", "virus"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "estructura-virus"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t15-q01",
+      "pregunta": "Los protozoos tienen las siguientes características:",
+      "opciones": ["Son eucariotas, heterótrofos, pluricelulares.", "Son procariotas, heterótrofos, con capacidad de movimiento.", "Son eucariotas, heterótrofos, con capacidad de movimiento."],
+      "correcta": 2,
+      "explicacion": "1246 #35. Son unicelulares.",
+      "fuente": "Plantilla 1246; Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q02",
+      "pregunta": "Los colifagos somáticos son:",
+      "opciones": ["Bacterias indicadoras de contaminación fecal.", "Virus que utilizan Escherichia coli para replicarse.", "Protozoos patógenos que pueden transmitirse a través del agua."],
+      "correcta": 1,
+      "explicacion": "1246 #32.",
+      "fuente": "Plantilla 1246; OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q03",
+      "pregunta": "La criptosporidiosis es una enfermedad gastrointestinal causada por:",
+      "opciones": ["Un protozoo.", "Un virus.", "Una bacteria."],
+      "correcta": 0,
+      "explicacion": "1322 #22: Cryptosporidium es un protozoo coccidio.",
+      "fuente": "Plantilla 1322; OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q04",
+      "pregunta": "La especie implicada en la mayoría de los casos de legionelosis es:",
+      "opciones": ["Legionella bozemanii.", "Legionella anisa.", "Legionella pneumophila."],
+      "correcta": 2,
+      "explicacion": "1322 #24; sobre todo el serogrupo 1.",
+      "fuente": "Plantilla 1322; OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q05",
+      "pregunta": "Según el RD 664/1997, un microorganismo es toda entidad microbiológica:",
+      "opciones": ["Celular, capaz de reproducirse.", "Celular o no, capaz de reproducirse o de transferir material genético.", "Visible solo al microscopio electrónico."],
+      "correcta": 1,
+      "explicacion": "Artículo 2.b.",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q06",
+      "pregunta": "Según la guía del INSST, los priones:",
+      "opciones": ["No son microorganismos, pero se consideran agentes biológicos.", "Son bacterias sin pared.", "Son virus con envoltura."],
+      "correcta": 0,
+      "explicacion": "Proteínas infecciosas sin ácido nucleico.",
+      "fuente": "RD 664/1997, art. 2; guía técnica del INSST (2024)"
+    },
+    {
+      "id": "t15-q07",
+      "pregunta": "Los tres dominios de Woese son:",
+      "opciones": ["Monera, Protista y Fungi.", "Procariotas, eucariotas y virus.", "Bacteria, Archaea y Eucarya."],
+      "correcta": 2,
+      "explicacion": "Propuestos en 1990.",
+      "fuente": "Woese, Kandler y Wheelis (1990), PNAS",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q08",
+      "pregunta": "Las células procariotas se caracterizan por:",
+      "opciones": ["Tener núcleo con membrana y mitocondrias.", "Tener nucleoide sin membrana y carecer de orgánulos con membrana.", "Tener pared de quitina."],
+      "correcta": 1,
+      "explicacion": "Bacterias y arqueas.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q09",
+      "pregunta": "El peptidoglicano de la pared celular:",
+      "opciones": ["Es exclusivo de los procariotas.", "Es el componente de la pared de los hongos.", "Está en todos los eucariotas."],
+      "correcta": 0,
+      "explicacion": "Los hongos tienen quitina.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q10",
+      "pregunta": "Carecen de pared celular las bacterias del género:",
+      "opciones": ["Bacillus.", "Legionella.", "Mycoplasma."],
+      "correcta": 2,
+      "explicacion": "Son también los procariotas más pequeños.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q11",
+      "pregunta": "Son parásitos intracelulares obligados:",
+      "opciones": ["Escherichia y Citrobacter.", "Chlamydia y Rickettsia.", "Bacillus y Clostridium."],
+      "correcta": 1,
+      "explicacion": "La mayoría de las bacterias viven libres.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q12",
+      "pregunta": "Forman endosporas resistentes al calor los géneros:",
+      "opciones": ["Bacillus y Clostridium.", "Escherichia y Salmonella.", "Legionella y Pseudomonas."],
+      "correcta": 0,
+      "explicacion": "Ver tema 14 para su tinción.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q13",
+      "pregunta": "Las enterobacterias son:",
+      "opciones": ["Grampositivas y aerobias estrictas.", "Gramnegativas que no fermentan azúcares.", "Gramnegativas, aerobias y anaerobias facultativas, y fermentan azúcares."],
+      "correcta": 2,
+      "explicacion": "1322, 2.º ejercicio, #11.",
+      "fuente": "Plantilla 1322",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q14",
+      "pregunta": "Legionella es:",
+      "opciones": ["Un coco grampositivo.", "Un bacilo gramnegativo, sin esporas y móvil.", "Un protozoo de vida libre."],
+      "correcta": 1,
+      "explicacion": "Vive sobre todo dentro de amebas de las biopelículas.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q15",
+      "pregunta": "La legionelosis se contrae principalmente:",
+      "opciones": ["Al respirar aerosoles con la bacteria.", "Por contacto directo con un enfermo.", "Por picadura de mosquito."],
+      "correcta": 0,
+      "explicacion": "No suele transmitirse de persona a persona.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; CDC",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q16",
+      "pregunta": "Las cianobacterias son:",
+      "opciones": ["Algas eucariotas.", "Protozoos fotosintéticos.", "Bacterias fotosintéticas."],
+      "correcta": 2,
+      "explicacion": "Antes se llamaban algas verdeazuladas.",
+      "fuente": "OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q17",
+      "pregunta": "Los virus se caracterizan por:",
+      "opciones": ["Contener ADN y ARN a la vez.", "Ser parásitos intracelulares obligados con ADN o ARN.", "Generar su propia energía."],
+      "correcta": 1,
+      "explicacion": "Fuera de la célula son inertes.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q18",
+      "pregunta": "La envoltura de los virus que la tienen procede de:",
+      "opciones": ["La membrana de la célula huésped.", "La pared bacteriana.", "Una capa de quitina."],
+      "correcta": 0,
+      "explicacion": "Bicapa lipídica con glicoproteínas víricas.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q19",
+      "pregunta": "El conjunto del ácido nucleico y la cápside de un virus se llama:",
+      "opciones": ["Virión desnudo.", "Capsómero.", "Nucleocápside."],
+      "correcta": 2,
+      "explicacion": "Los capsómeros son las subunidades de la cápside.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q20",
+      "pregunta": "Las familias de virus tienen nombres terminados en:",
+      "opciones": ["-virus.", "-viridae.", "-virinae."],
+      "correcta": 1,
+      "explicacion": "El género termina en -virus.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q21",
+      "pregunta": "En el RD 3/2023, el valor paramétrico de los colífagos somáticos es:",
+      "opciones": ["0 UFP/100 mL.", "100 UFC/mL.", "50 UFP/100 mL."],
+      "correcta": 0,
+      "explicacion": "Los 50 UFP/100 mL son el umbral en captación.",
+      "fuente": "RD 3/2023, anexo I",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q22",
+      "pregunta": "Los colífagos F-ARN se diferencian de los somáticos en que:",
+      "opciones": ["Infectan a través de la pared bacteriana.", "Son bacterias.", "Se fijan a las fimbrias sexuales y solo se multiplican en el intestino."],
+      "correcta": 2,
+      "explicacion": "Los somáticos se fijan a la pared y también se multiplican en el agua.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+    },
+    {
+      "id": "t15-q23",
+      "pregunta": "Los hongos tienen:",
+      "opciones": ["Pared de peptidoglicano.", "Pared de quitina y nutrición por absorción.", "Clorofila."],
+      "correcta": 1,
+      "explicacion": "Son eucariotas saprófitos o parásitos.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q24",
+      "pregunta": "Las levaduras se reproducen asexualmente sobre todo por:",
+      "opciones": ["Gemación.", "Fisión binaria.", "Esquizogonia."],
+      "correcta": 0,
+      "explicacion": "Los mohos, por conidios, fragmentación o clamidosporas.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q25",
+      "pregunta": "Candida es un hongo dimórfico porque:",
+      "opciones": ["Tiene dos núcleos.", "Es a la vez bacteria y hongo.", "Crece como micelio en la naturaleza y como levadura en el cuerpo."],
+      "correcta": 2,
+      "explicacion": "Baron, capítulo 73.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q26",
+      "pregunta": "Los actinomicetos son:",
+      "opciones": ["Hongos filamentosos.", "Bacterias filamentosas.", "Protozoos."],
+      "correcta": 1,
+      "explicacion": "Procariotas con peptidoglicano.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q27",
+      "pregunta": "La forma activa de un protozoo, que se alimenta y se multiplica, es:",
+      "opciones": ["El trofozoíto.", "El quiste.", "El ooquiste."],
+      "correcta": 0,
+      "explicacion": "El quiste es la forma de resistencia.",
+      "fuente": "Baron, Medical Microbiology (1996)",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q28",
+      "pregunta": "Giardia es un protozoo:",
+      "opciones": ["Ciliado.", "Sin órganos de locomoción.", "Flagelado."],
+      "correcta": 2,
+      "explicacion": "Según la clasificación por movimiento de los CDC.",
+      "fuente": "CDC, Parasites: About; DPDx",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q29",
+      "pregunta": "Los ooquistes de Cryptosporidium son muy resistentes a:",
+      "opciones": ["La luz ultravioleta.", "El cloro.", "El ozono."],
+      "correcta": 1,
+      "explicacion": "La luz ultravioleta y el ozono sí son eficaces.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q30",
+      "pregunta": "A diferencia de los protozoos, los helmintos adultos:",
+      "opciones": ["Son pluricelulares y no se multiplican en el ser humano.", "Son unicelulares.", "Se multiplican dentro del ser humano."],
+      "correcta": 0,
+      "explicacion": "CDC.",
+      "fuente": "CDC, Parasites: About; DPDx",
+      "nucleo": true
+    },
+    {
+      "id": "t15-q31",
+      "pregunta": "Los cestodos (tenias) se caracterizan por:",
+      "opciones": ["Ser cilíndricos con tubo digestivo completo.", "Tener forma de hoja y dos ventosas.", "Estar segmentados en proglótides y carecer de tubo digestivo."],
+      "correcta": 2,
+      "explicacion": "La forma de hoja es de los trematodos; la cilíndrica, de los nematodos.",
+      "fuente": "Baron, Medical Microbiology (1996)"
+    },
+    {
+      "id": "t15-q32",
+      "pregunta": "Dracunculus medinensis (gusano de Guinea) es:",
+      "opciones": ["Un protozoo.", "Un nematodo.", "Un hongo."],
+      "correcta": 1,
+      "explicacion": "Se adquiere al beber agua superficial con copépodos infectados.",
+      "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+    },
+    {
+      "id": "t15-q33",
+      "pregunta": "Las algas eucariotas se diferencian de las cianobacterias en que:",
+      "opciones": ["Tienen núcleo y cloroplastos.", "No hacen la fotosíntesis.", "No tienen clorofila a."],
+      "correcta": 0,
+      "explicacion": "Las dos tienen clorofila a.",
+      "fuente": "OMS, Toxic cyanobacteria in water (2021), caps. 3 y 13"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t15-s01",
+      "titulo": "Un brote de diarrea tras unas lluvias",
+      "enunciado": "Tras unas lluvias intensas, varios vecinos de un municipio abastecido con agua de río tratada solo con **cloro** sufren **diarrea**. Los análisis rutinarios de ***E. coli*** del agua de la red han sido **negativos**. El laboratorio sospecha de ***Cryptosporidium***.",
+      "preguntas": [
+        {
+          "id": "t15-s01-q1",
+          "pregunta": "Cryptosporidium es:",
+          "opciones": ["Una bacteria esporulada.", "Un virus entérico.", "Un protozoo coccidio.", "Un helminto nematodo."],
+          "correcta": 2,
+          "explicacion": "1322 #22: la criptosporidiosis la causa un protozoo.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s01-q2",
+          "pregunta": "La forma que se encuentra en el agua y transmite la infección es:",
+          "opciones": ["El ooquiste de 4-6 µm.", "El trofozoíto móvil.", "La espora de 1 µm.", "La larva."],
+          "correcta": 0,
+          "explicacion": "Con cuatro esporozoítos en su interior.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; CDC, Parasites: About; DPDx"
+        },
+        {
+          "id": "t15-s01-q3",
+          "pregunta": "¿Por qué la ausencia de E. coli no descarta Cryptosporidium?",
+          "opciones": ["Porque Cryptosporidium es una bacteria fecal distinta.", "Porque E. coli solo indica contaminación vírica.", "Porque Cryptosporidium no vive en el intestino.", "Porque sus ooquistes resisten mucho más el cloro y persisten en el ambiente."],
+          "correcta": 3,
+          "explicacion": "OMS, ficha de Cryptosporidium.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s01-q4",
+          "pregunta": "Para inactivar los ooquistes, la OMS señala como eficaces:",
+          "opciones": ["Subir la dosis de cloro.", "La luz ultravioleta y el ozono.", "Calentar el agua de la red a 25 °C.", "Ninguno: no se pueden inactivar."],
+          "correcta": 1,
+          "explicacion": "Muy resistentes al cloro.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s01-q5",
+          "pregunta": "Otro protozoo que se transmite por el agua de forma parecida es:",
+          "opciones": ["Legionella pneumophila.", "Aspergillus.", "Giardia duodenalis.", "Norovirus."],
+          "correcta": 2,
+          "explicacion": "Flagelado con quistes de 11-14 × 7-10 µm.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        }
+      ]
+    },
+    {
+      "id": "t15-s02",
+      "titulo": "Un caso de legionelosis en un hotel",
+      "enunciado": "Un cliente de un hotel desarrolla una **neumonía** y se le diagnostica **enfermedad del legionario**. Se toman muestras del **agua caliente sanitaria** y de la **torre de refrigeración**.",
+      "preguntas": [
+        {
+          "id": "t15-s02-q1",
+          "pregunta": "Legionella es:",
+          "opciones": ["Un virus respiratorio.", "Un hongo filamentoso.", "Un protozoo de vida libre.", "Un bacilo gramnegativo, sin esporas y móvil."],
+          "correcta": 3,
+          "explicacion": "OMS, ficha de Legionella.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s02-q2",
+          "pregunta": "¿Cómo se contagió probablemente el cliente?",
+          "opciones": ["Bebiendo el agua del grifo.", "Respirando aerosoles de agua con la bacteria.", "Por contacto con otro huésped enfermo.", "Por una herida en la piel."],
+          "correcta": 1,
+          "explicacion": "No suele transmitirse de persona a persona.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11; CDC"
+        },
+        {
+          "id": "t15-s02-q3",
+          "pregunta": "La especie que con más probabilidad aparecerá es:",
+          "opciones": ["Legionella pneumophila, sobre todo del serogrupo 1.", "Legionella longbeachae.", "Legionella anisa.", "Legionella bozemanii."],
+          "correcta": 0,
+          "explicacion": "1322 #24.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s02-q4",
+          "pregunta": "En las instalaciones, Legionella vive sobre todo:",
+          "opciones": ["Dentro de los ooquistes de Cryptosporidium.", "En el aire seco.", "Solo en agua de mar.", "Dentro de amebas de vida libre en las biopelículas."],
+          "correcta": 3,
+          "explicacion": "Acanthamoeba puede albergarla.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        },
+        {
+          "id": "t15-s02-q5",
+          "pregunta": "La otra forma clínica de la legionelosis, más leve y sin neumonía, es:",
+          "opciones": ["La criptosporidiosis.", "La giardiasis.", "La fiebre de Pontiac.", "La enfermedad de Creutzfeldt-Jakob."],
+          "correcta": 2,
+          "explicacion": "Parecida a una gripe.",
+          "fuente": "OMS, Guidelines for drinking-water quality, 4.ª ed. con addenda, cap. 11"
+        }
+      ]
+    }
+  ]
+}
