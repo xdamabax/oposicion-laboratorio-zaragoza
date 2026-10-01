@@ -101,6 +101,8 @@ export type TipoEsquema =
   | 'binomios-esterilizacion'
   | 'agotamiento-cuadrantes'
   | 'siembra-profundidad-superficie'
+  | 'banco-diluciones'
+  | 'bandeja-nmp-51'
 
 export type TipoMaterial =
   | 'matraz-aforado'

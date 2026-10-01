@@ -75,6 +75,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'binomios-esterilizacion': 'Temperatura y tiempo de esterilización: vapor y calor seco',
   'agotamiento-cuadrantes': 'Siembra por agotamiento en cuatro cuadrantes',
   'siembra-profundidad-superficie': 'Siembra en profundidad y en superficie',
+  'banco-diluciones': 'Banco de diluciones decimales y recuento en placa',
+  'bandeja-nmp-51': 'Bandeja de NMP de 51 pocillos: coliformes y E. coli',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -144,6 +146,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'binomios-esterilizacion': { ancho: 580, alto: 282 },
   'agotamiento-cuadrantes': { ancho: 580, alto: 262 },
   'siembra-profundidad-superficie': { ancho: 580, alto: 216 },
+  'banco-diluciones': { ancho: 580, alto: 284 },
+  'bandeja-nmp-51': { ancho: 580, alto: 258 },
 }
 
 const AZUL = '#9ecbe8'
@@ -6811,6 +6815,159 @@ function SiembraProfundidadSuperficie() {
   )
 }
 
+/** Exponente en superindice: 2 -> '²'. */
+const SUPER = '⁰¹²³⁴⁵⁶⁷⁸⁹'
+const sup = (n: number) => String(n).split('').map((c) => SUPER[Number(c)]).join('')
+
+/**
+ * Banco de diluciones decimales y recuento en placa. Cada tubo lleva 9 ml de
+ * diluyente y recibe 1 ml del anterior; de cada tubo se siembra 1 ml en
+ * profundidad. Solo cuentan las placas con 10 a 300 colonias, y con dos
+ * diluciones consecutivas validas se calcula la media ponderada de la ISO 7218
+ * (el ejemplo de la ANMAT: 168 y 14 colonias).
+ */
+function BancoDiluciones() {
+  const XS = [160, 270, 380, 490]
+  const FRASCO = 50
+  const RECUENTOS = [
+    { texto: '> 300 colonias', n: null, dibujadas: 110, r: 1.5 },
+    { texto: '168 colonias', n: 168, dibujadas: 50, r: 1.9 },
+    { texto: '14 colonias', n: 14, dibujadas: 14, r: 2.6 },
+    { texto: '1 colonia', n: 1, dibujadas: 1, r: 2.6 },
+  ]
+  const PY = 190
+  const PR = 30
+  // reparto uniforme dentro de la placa (espiral de Vogel), sin azar
+  const colonias = (cx: number, n: number) =>
+    Array.from({ length: n }, (_, i) => {
+      const r = (PR - 6) * Math.sqrt((i + 0.5) / n)
+      const a = i * 2.39996
+      return [cx + r * Math.cos(a), PY + r * Math.sin(a)]
+    })
+  const contable = (n: number | null) => n !== null && n >= 10 && n <= 300
+  const desde = [FRASCO, ...XS]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <path data-pieza="frasco" d={`M ${FRASCO - 16} 102 L ${FRASCO - 16} 58 Q ${FRASCO - 16} 50 ${FRASCO - 8} 48 L ${FRASCO - 8} 40 L ${FRASCO + 8} 40 L ${FRASCO + 8} 48 Q ${FRASCO + 16} 50 ${FRASCO + 16} 58 L ${FRASCO + 16} 102 Z`} fill={AZUL_CLARO} fillOpacity="0.6" stroke="currentColor" strokeWidth="1.2" />
+      <text x={FRASCO} y={116} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Muestra
+      </text>
+      {XS.map((x, i) => (
+        <g key={x}>
+          <rect data-pieza="tubo" data-exponente={i + 1} x={x - 12} y={44} width={24} height={60} rx={8} fill="none" stroke="currentColor" strokeWidth="1.2" />
+          <rect x={x - 10} y={70} width={20} height={32} rx={6} fill={AZUL_CLARO} fillOpacity="0.8" />
+          <text data-pieza="diluyente" data-exponente={i + 1} x={x} y={116} fontSize="8" textAnchor="middle" fill="currentColor">
+            9 ml
+          </text>
+          <text data-pieza="dilucion" data-exponente={i + 1} x={x} y={130} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            10⁻{sup(i + 1)}
+          </text>
+          <path data-pieza="transferencia" data-hasta={i + 1} d={`M ${desde[i] + 6} 40 Q ${(desde[i] + x) / 2} 6 ${x - 4} 40`} fill="none" stroke={ROJO} strokeWidth="1.2" />
+          <path d={`M ${x - 4} 40 l -5 -5 l 7 -1 Z`} fill={ROJO} />
+          <text data-pieza="volumen-transferido" data-hasta={i + 1} x={(desde[i] + x) / 2} y={19} fontSize="8" textAnchor="middle" fill={ROJO}>
+            1 ml
+          </text>
+          <line x1={x} y1={136} x2={x} y2={PY - PR - 4} stroke="currentColor" strokeWidth="0.8" />
+          <path d={`M ${x} ${PY - PR - 2} l -3 -5 l 6 0 Z`} fill="currentColor" />
+          <circle data-pieza="placa" data-exponente={i + 1} cx={x} cy={PY} r={PR} fill="#e8c35a" fillOpacity="0.25" stroke={contable(RECUENTOS[i].n) ? ROJO : 'currentColor'} strokeWidth={contable(RECUENTOS[i].n) ? 2.2 : 1.1} />
+          {colonias(x, RECUENTOS[i].dibujadas).map(([cx, cy], j) => (
+            <circle key={j} data-pieza="colonia" data-exponente={i + 1} cx={cx} cy={cy} r={RECUENTOS[i].r} fill="#f0e6c8" stroke="currentColor" strokeWidth="0.5" />
+          ))}
+          <text data-pieza="recuento" data-exponente={i + 1} x={x} y={PY + PR + 14} fontSize="8.5" textAnchor="middle" fill="currentColor">
+            {RECUENTOS[i].texto}
+          </text>
+        </g>
+      ))}
+      {['Se siembra 1 ml', 'de cada tubo', 'en profundidad'].map((l, i) => (
+        <text key={l} x={FRASCO} y={172 + i * 11} fontSize="8" textAnchor="middle" fill="currentColor">
+          {l}
+        </text>
+      ))}
+      <text x={20} y={258} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        En rojo, las placas que se cuentan: entre 10 y 300 colonias (las de 168 y más de 300 se dibujan simplificadas).
+      </text>
+      <text data-pieza="calculo" x={20} y={274} fontSize="9" fontWeight="bold" fill="currentColor">
+        N = (168 + 14) ÷ (1 ml × 1,1 × 10⁻²) = 16 545 ≈ 1,7 × 10⁴ ufc/ml
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Bandeja de NMP de 51 pocillos con sustrato definido, leida como en el 1322,
+ * 2.º ejercicio, #16 y #17: 23 pocillos amarillos (coliformes, beta-
+ * galactosidasa) y, de ellos, 11 tambien fluorescentes con UV (E. coli, beta-
+ * glucuronidasa). Cada grupo se busca por separado en la tabla de IDEXX.
+ */
+function BandejaNmp51() {
+  const FILAS = [9, 9, 9, 8, 8, 8]
+  const AMARILLO = '#f2cf3a'
+  const pocillos: { i: number; x: number; y: number }[] = []
+  FILAS.forEach((n, f) => {
+    for (let c = 0; c < n; c++) pocillos.push({ i: pocillos.length, x: 24 + (n === 8 ? 15.5 : 0) + c * 31, y: 40 + f * 35 })
+  })
+  // orden fijo pero sin patron a la vista: cada pocillo se ordena por un hash de su indice
+  const hash = (i: number) => (Math.imul(i + 3, 2654435761) >>> 0) % 9973
+  const rango = [...Array(51).keys()].sort((x, y) => hash(x) - hash(y))
+  const orden = (i: number) => rango.indexOf(i)
+  const amarillo = (i: number) => orden(i) < 23
+  const fluor = (i: number) => orden(i) < 11
+  const TABLA: [number, string][] = [
+    [10, '11,1'], [11, '12,4'], [12, '13,7'], [22, '28,8'], [23, '30,6'], [24, '32,4'],
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={160} y={16} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        100 ml de agua con el medio, tras 18-22 h a 37 °C
+      </text>
+      <rect data-pieza="bandeja" x={12} y={26} width={296} height={224} rx={10} fill="none" stroke="currentColor" strokeWidth="1.4" />
+      {pocillos.map((p) => (
+        <rect key={p.i} data-pieza="pocillo" x={p.x} y={p.y} width={24} height={26} rx={5} fill={amarillo(p.i) ? AMARILLO : '#f4f1e6'} fillOpacity={amarillo(p.i) ? 0.95 : 0.5} stroke="currentColor" strokeWidth="0.7" />
+      ))}
+      {pocillos.filter((p) => fluor(p.i)).map((p) => (
+        <circle key={p.i} data-pieza="halo" cx={p.x + 12} cy={p.y + 13} r={8} fill="#dff0ff" fillOpacity="0.95" stroke="#3b82c4" strokeWidth="1.2" />
+      ))}
+      <text x={322} y={40} fontSize="9.5" fontWeight="bold" fill="currentColor">
+        Lectura
+      </text>
+      <text data-pieza="cuenta" data-grupo="amarillos" x={322} y={56} fontSize="8.5" fill="currentColor">
+        Pocillos amarillos: 23
+      </text>
+      <text data-pieza="cuenta" data-grupo="fluorescentes" x={322} y={70} fontSize="8.5" fill="currentColor">
+        Amarillos y fluorescentes con UV de 365 nm: 11
+      </text>
+      <rect x={322} y={82} width={12} height={10} rx={2} fill={AMARILLO} stroke="currentColor" strokeWidth="0.6" />
+      <text x={340} y={90} fontSize="8" fill="currentColor">
+        amarillo: β-galactosidasa → coliformes
+      </text>
+      <circle cx={328} cy={103} r={5} fill="#dff0ff" stroke="#3b82c4" strokeWidth="1.2" />
+      <text x={340} y={106} fontSize="8" fill="currentColor">
+        fluorescencia: β-glucuronidasa → E. coli
+      </text>
+      <text x={322} y={128} fontSize="8.5" fontWeight="bold" fill="currentColor">
+        Extracto de la tabla (NMP por 100 ml)
+      </text>
+      {TABLA.map(([n, v], k) => (
+        <text key={n} data-pieza="fila-tabla" data-pocillos={n} x={k < 3 ? 330 : 440} y={143 + (k % 3) * 12} fontSize="8" fill="currentColor">
+          {n} pocillos → {v}
+        </text>
+      ))}
+      <text data-pieza="resultado" data-grupo="coliformes" x={322} y={196} fontSize="8.5" fontWeight="bold" fill={ROJO}>
+        Coliformes (todos los amarillos): 30,6 NMP/100 ml
+      </text>
+      <text data-pieza="resultado" data-grupo="ecoli" x={322} y={211} fontSize="8.5" fontWeight="bold" fill={ROJO}>
+        E. coli (solo los fluorescentes): 12,4 NMP/100 ml
+      </text>
+      <text x={322} y={231} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Los fluorescentes ya están entre los amarillos:
+      </text>
+      <text x={322} y={243} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        no se suman (1322, 2.º ejercicio, #16 y #17).
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -6943,6 +7100,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <AgotamientoCuadrantes />
     case 'siembra-profundidad-superficie':
       return <SiembraProfundidadSuperficie />
+    case 'banco-diluciones':
+      return <BancoDiluciones />
+    case 'bandeja-nmp-51':
+      return <BandejaNmp51 />
   }
 }
 

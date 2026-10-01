@@ -1054,6 +1054,32 @@ function medir(sabotaje, ROJO) {
     a.textContent = b.textContent
     b.textContent = t
   }
+  if (sabotaje === 118) {
+    const svg = porClave('banco-diluciones')
+    // la transferencia al tercer tubo sale del primero, saltandose el segundo
+    const t1 = svg.querySelector('[data-pieza="tubo"][data-exponente="1"]')
+    const tr = svg.querySelector('[data-pieza="transferencia"][data-hasta="3"]')
+    tr.setAttribute('d', tr.getAttribute('d').replace(/^M [\d.-]+/, `M ${num(t1, 'x') + 12}`))
+  }
+  if (sabotaje === 119) {
+    const svg = porClave('banco-diluciones')
+    // la placa de una sola colonia marcada como contable
+    svg.querySelector('[data-pieza="placa"][data-exponente="4"]').setAttribute('stroke', ROJO)
+  }
+  if (sabotaje === 120) {
+    const svg = porClave('bandeja-nmp-51')
+    // un halo de fluorescencia movido a un pocillo que no es amarillo
+    const blanco = [...svg.querySelectorAll('[data-pieza="pocillo"]')].find((p) => p.getAttribute('fill') === '#f4f1e6')
+    const h = svg.querySelector('[data-pieza="halo"]')
+    h.setAttribute('cx', num(blanco, 'x') + 12)
+    h.setAttribute('cy', num(blanco, 'y') + 13)
+  }
+  if (sabotaje === 121) {
+    const svg = porClave('bandeja-nmp-51')
+    // el NMP de coliformes buscado con 23 + 11 = 34 pocillos
+    const r = svg.querySelector('[data-pieza="resultado"][data-grupo="coliformes"]')
+    r.textContent = r.textContent.replace('30,6', '56,0')
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -3893,6 +3919,122 @@ function medir(sabotaje, ROJO) {
     return '1 ml y agar a 45 °C en profundidad; 0,1 ml sobre agar sólido en superficie'
   })
 
+  /*
+   * Banco de diluciones. Se leen los tubos por su posicion: cada transferencia
+   * tiene que salir del recipiente anterior y caer en el suyo, con 1 ml sobre
+   * 9 ml, y la dilucion rotulada bajo cada tubo tiene que ser la del anterior
+   * por diez.
+   */
+  const SUPERINDICE = '⁰¹²³⁴⁵⁶⁷⁸⁹'
+  const deSuper = (t) => Number([...t].map((c) => SUPERINDICE.indexOf(c)).join(''))
+  const aSuper = (n) => [...String(n)].map((c) => SUPERINDICE[c]).join('')
+  control('Diluciones · cada tubo recibe 1 ml del anterior sobre 9 ml de diluyente, y la dilución se multiplica por diez de tubo en tubo', () => {
+    const svg = porClave('banco-diluciones')
+    const tubos = piezas(svg, 'tubo').sort((a, b) => num(a, 'x') - num(b, 'x'))
+    const frasco = pieza(svg, 'frasco').getBBox()
+    const cajas = [[frasco.x, frasco.x + frasco.width], ...tubos.map((t) => [num(t, 'x'), num(t, 'x') + num(t, 'width')])]
+    const dentro = (x, [a, b]) => x >= a - 1 && x <= b + 1
+    tubos.forEach((t, i) => {
+      const k = i + 1
+      if (num(t, 'data-exponente') !== k) throw new Error(`el tubo ${k} por la izquierda dice ser el 10⁻${num(t, 'data-exponente')}`)
+      const rot = svg.querySelector(`[data-pieza="dilucion"][data-exponente="${k}"]`)
+      const [cx] = centroCaja(rot)
+      if (!dentro(cx, cajas[k])) throw new Error(`el rótulo de la dilución ${k} no está bajo su tubo`)
+      const m = rot.textContent.match(/^10⁻([⁰¹²³⁴⁵⁶⁷⁸⁹]+)$/)
+      if (!m || deSuper(m[1]) !== k) throw new Error(`bajo el tubo ${k} pone «${rot.textContent}»`)
+      const dil = svg.querySelector(`[data-pieza="diluyente"][data-exponente="${k}"]`)
+      if (!/^9 ml$/.test(dil.textContent.trim())) throw new Error(`el tubo ${k} lleva «${dil.textContent}» de diluyente`)
+      const tr = svg.querySelector(`[data-pieza="transferencia"][data-hasta="${k}"]`)
+      const pts = puntos(tr)
+      const [x0] = pts[0]
+      const [x1] = pts[pts.length - 1]
+      if (!dentro(x0, cajas[k - 1])) throw new Error(`la transferencia al tubo ${k} no sale del recipiente anterior`)
+      if (!dentro(x1, cajas[k])) throw new Error(`la transferencia al tubo ${k} no cae en su tubo`)
+      const v = svg.querySelector(`[data-pieza="volumen-transferido"][data-hasta="${k}"]`)
+      if (!/^1 ml$/.test(v.textContent.trim())) throw new Error(`al tubo ${k} se transfiere «${v.textContent}»`)
+    })
+    return `${tubos.length} tubos de 10⁻¹ a 10⁻${aSuper(tubos.length)}; cada uno, 1 ml del anterior sobre 9 ml`
+  })
+
+  control('Diluciones · solo se marcan las placas de 10 a 300 colonias, y la media ponderada usa esas dos y la primera de ellas', () => {
+    const svg = porClave('banco-diluciones')
+    const placas = piezas(svg, 'placa').sort((a, b) => num(a, 'cx') - num(b, 'cx'))
+    const tubos = piezas(svg, 'tubo').sort((a, b) => num(a, 'x') - num(b, 'x'))
+    const datos = placas.map((p, i) => {
+      const k = num(p, 'data-exponente')
+      const t = tubos[i]
+      if (Math.abs(num(p, 'cx') - (num(t, 'x') + num(t, 'width') / 2)) > 2) throw new Error(`la placa ${k} no está bajo su tubo`)
+      const texto = svg.querySelector(`[data-pieza="recuento"][data-exponente="${k}"]`).textContent
+      const n = /^>/.test(texto.trim()) ? Infinity : Number(texto.match(/\d+/)[0])
+      const dibujadas = piezas(svg, 'colonia').filter((c) => num(c, 'data-exponente') === k).length
+      const roja = trazoDe(p) === ROJO
+      return { k, n, dibujadas, roja }
+    })
+    for (const d of datos) {
+      const debe = d.n >= 10 && d.n <= 300
+      if (d.roja !== debe) throw new Error(`la placa de la 10⁻${aSuper(d.k)} (${d.n} colonia${d.n === 1 ? "" : "s"}) ${d.roja ? 'está' : 'no está'} marcada como contable`)
+      if (d.n <= 30 && d.dibujadas !== d.n) throw new Error(`la placa de la 10⁻${aSuper(d.k)} dice ${d.n} colonias y dibuja ${d.dibujadas}`)
+    }
+    for (let i = 1; i < datos.length; i++) if (!(datos[i].dibujadas < datos[i - 1].dibujadas)) throw new Error('las colonias dibujadas no disminuyen al diluir')
+    const validas = datos.filter((d) => d.roja)
+    const calc = pieza(svg, 'calculo').textContent
+    const suma = calc.match(/\((\d+) \+ (\d+)\)/)
+    if (!suma || Number(suma[1]) !== validas[0]?.n || Number(suma[2]) !== validas[1]?.n) throw new Error(`el cálculo suma «${suma?.[0]}» y las placas contables son ${validas.map((d) => d.n).join(' y ')}`)
+    const d = calc.match(/1,1 × 10⁻([⁰¹²³⁴⁵⁶⁷⁸⁹]+)/)
+    if (!d || deSuper(d[1]) !== validas[0].k) throw new Error('el cálculo no divide por la primera dilución contable')
+    const N = (validas[0].n + validas[1].n) / (1.1 * 10 ** -validas[0].k)
+    const e = Math.floor(Math.log10(N))
+    const esperado = (Math.round(N / 10 ** (e - 1)) / 10).toFixed(1).replace('.', ',') + ' × 10' + [...String(e)].map((c) => SUPERINDICE[c]).join('')
+    if (!calc.includes('≈ ' + esperado)) throw new Error(`el resultado escrito no es ${esperado}`)
+    return `contables las de ${validas.map((v) => `10⁻${aSuper(v.k)}`).join(' y ')}; N ≈ ${esperado}`
+  })
+
+  /*
+   * Bandeja de NMP de 51 pocillos. Se cuentan los pocillos por su color, y los
+   * halos de fluorescencia por el pocillo en que caen. La tabla se contrasta con
+   * la de IDEXX (la misma que adjunto el examen 1322).
+   */
+  const IDEXX_51 = { 10: '11,1', 11: '12,4', 12: '13,7', 22: '28,8', 23: '30,6', 24: '32,4' }
+  const leerBandeja = (svg) => {
+    const pocillos = piezas(svg, 'pocillo')
+    const amarillos = pocillos.filter((p) => p.getAttribute('fill') !== '#f4f1e6')
+    const halos = piezas(svg, 'halo')
+    const deHalo = halos.map((h) =>
+      pocillos.find((p) => num(h, 'cx') > num(p, 'x') && num(h, 'cx') < num(p, 'x') + num(p, 'width') && num(h, 'cy') > num(p, 'y') && num(h, 'cy') < num(p, 'y') + num(p, 'height')),
+    )
+    return { pocillos, amarillos, halos, deHalo }
+  }
+  control('Bandeja NMP · 51 pocillos, cada fluorescente es también amarillo, y las cuentas escritas son las del dibujo', () => {
+    const svg = porClave('bandeja-nmp-51')
+    const { pocillos, amarillos, halos, deHalo } = leerBandeja(svg)
+    if (pocillos.length !== 51) throw new Error(`la bandeja tiene ${pocillos.length} pocillos`)
+    if (deHalo.some((p) => !p)) throw new Error('hay un halo de fluorescencia fuera de los pocillos')
+    const malos = deHalo.filter((p) => !amarillos.includes(p)).length
+    if (malos) throw new Error(`${malos} pocillo(s) fluorescentes no son amarillos`)
+    const cuenta = (g) => Number(svg.querySelector(`[data-pieza="cuenta"][data-grupo="${g}"]`).textContent.match(/(\d+)\s*$/)[1])
+    if (cuenta('amarillos') !== amarillos.length) throw new Error(`el rótulo dice ${cuenta('amarillos')} amarillos y hay ${amarillos.length}`)
+    if (cuenta('fluorescentes') !== halos.length) throw new Error(`el rótulo dice ${cuenta('fluorescentes')} fluorescentes y hay ${halos.length}`)
+    return `51 pocillos: ${amarillos.length} amarillos, y ${halos.length} de ellos fluorescentes`
+  })
+
+  control('Bandeja NMP · la tabla es la de IDEXX, y cada NMP se lee con los pocillos de su grupo, sin sumar los fluorescentes a los amarillos', () => {
+    const svg = porClave('bandeja-nmp-51')
+    const { amarillos, halos } = leerBandeja(svg)
+    const filas = Object.fromEntries(
+      piezas(svg, 'fila-tabla').map((f) => {
+        const n = num(f, 'data-pocillos')
+        const v = f.textContent.match(/→\s*([\d,]+)/)[1]
+        if (IDEXX_51[n] !== v) throw new Error(`la tabla dice ${n} → ${v}; la de IDEXX, ${IDEXX_51[n]}`)
+        return [n, v]
+      }),
+    )
+    const res = (g) => svg.querySelector(`[data-pieza="resultado"][data-grupo="${g}"]`).textContent.match(/([\d,]+) NMP/)[1]
+    if (!filas[amarillos.length] || !filas[halos.length]) throw new Error('la tabla no trae las filas de los pocillos contados')
+    if (res('coliformes') !== filas[amarillos.length]) throw new Error(`coliformes: escribe ${res('coliformes')} y con ${amarillos.length} amarillos la tabla da ${filas[amarillos.length]}`)
+    if (res('ecoli') !== filas[halos.length]) throw new Error(`E. coli: escribe ${res('ecoli')} y con ${halos.length} fluorescentes la tabla da ${filas[halos.length]}`)
+    return `coliformes ${amarillos.length} → ${res('coliformes')}; E. coli ${halos.length} → ${res('ecoli')} NMP/100 ml`
+  })
+
   return resultados
 }
 
@@ -4016,6 +4158,10 @@ const SABOTAJES = {
   115: 'cuatro colonias de más en el último cuadrante, que deja de tener menos que el anterior',
   116: 'una colonia de la siembra en superficie hundida dentro del agar',
   117: 'los volúmenes cambiados: 0,1 ml en profundidad y 1 ml en superficie',
+  118: 'la transferencia al tercer tubo sale del primero, saltándose el segundo',
+  119: 'la placa de una sola colonia marcada como contable',
+  120: 'un halo de fluorescencia movido a un pocillo que no es amarillo',
+  121: 'el NMP de coliformes buscado con 23 + 11 = 34 pocillos',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4143,6 +4289,10 @@ const CONTROL_DE = {
   115: [111],
   116: [112],
   117: [113],
+  118: [114],
+  119: [115],
+  120: [116],
+  121: [117],
 }
 
 async function main() {
