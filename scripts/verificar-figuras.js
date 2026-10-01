@@ -1105,6 +1105,37 @@ function medir(sabotaje, ROJO) {
     // el cubre de la preparacion entre porta y cubre, levantado: la pelicula ya no lo toca
     svg.querySelector('[data-pieza="cubre"][data-panel="fresco"]').setAttribute('y', 70)
   }
+  if (sabotaje === 126) {
+    const svg = porClave('tres-dominios')
+    // las cianobacterias colocadas bajo Eucarya, como si fueran algas
+    const euc = svg.querySelector('[data-pieza="nodo"][data-dominio="Eucarya"]')
+    const c = [...svg.querySelectorAll('[data-pieza="grupo"]')].find((g) => g.textContent.trim() === 'Cianobacterias')
+    c.setAttribute('x', num(euc, 'cx'))
+    c.setAttribute('y', 190)
+  }
+  if (sabotaje === 127) {
+    const svg = porClave('tres-dominios')
+    // la llave de procariotas alargada hasta abarcar Eucarya
+    const l = svg.querySelector('[data-pieza="llave"][data-texto="Procariotas"]')
+    l.setAttribute('d', l.getAttribute('d').replace(/L 270 214 L 270 208/, 'L 400 214 L 400 208'))
+  }
+  if (sabotaje === 128) {
+    const svg = porClave('estructura-virus')
+    // el acido nucleico del virus desnudo sacado de su capside
+    const an = svg.querySelector('[data-pieza="acido-nucleico"][data-virion="desnudo"]')
+    an.setAttribute('d', an.getAttribute('d').replace(/(-?\d+(?:\.\d+)?) (-?\d+(?:\.\d+)?)/g, (m, x, y) => `${Number(x) + 120} ${y}`))
+  }
+  if (sabotaje === 129) {
+    const svg = porClave('estructura-virus')
+    // una espicula girada hacia el interior de la envoltura
+    const env = svg.querySelector('[data-pieza="envoltura"]')
+    const e = svg.querySelector('[data-pieza="espicula"]')
+    const [cx, cy] = [num(env, 'cx'), num(env, 'cy')]
+    e.setAttribute('x2', 2 * num(e, 'x1') - num(e, 'x2'))
+    e.setAttribute('y2', 2 * num(e, 'y1') - num(e, 'y2'))
+    void cx
+    void cy
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4152,6 +4183,109 @@ function medir(sabotaje, ROJO) {
     return 'película entre los dos vidrios; lectura a ×400'
   })
 
+  /*
+   * Los tres dominios. Cada grupo se asigna a la columna en que cae su centro:
+   * la del nodo de dominio mas cercano en horizontal o, si cae dentro, la caja
+   * de los acelulares. La asignacion esperada sale del apunte (Woese, 1990).
+   */
+  const GRUPO_DOMINIO = {
+    Bacterias: 'Bacteria', Cianobacterias: 'Bacteria',
+    'Metanógenas': 'Archaea', 'Termófilas extremas': 'Archaea',
+    Hongos: 'Eucarya', Protozoos: 'Eucarya', Algas: 'Eucarya', Helmintos: 'Eucarya', Plantas: 'Eucarya', Animales: 'Eucarya',
+    Virus: 'acelular', Priones: 'acelular',
+  }
+  const leerDominios = (svg) => {
+    const nodos = piezas(svg, 'nodo').map((n) => ({ id: n.getAttribute('data-dominio'), x: num(n, 'cx'), y: num(n, 'cy') }))
+    const caja = pieza(svg, 'acelular')
+    const enCaja = (x, y) => x > num(caja, 'x') && x < num(caja, 'x') + num(caja, 'width') && y > num(caja, 'y') && y < num(caja, 'y') + num(caja, 'height')
+    return { nodos, caja, enCaja }
+  }
+  control('Dominios · tres ramas del origen común a Bacteria, Archaea y Eucarya, y cada grupo bajo su dominio', () => {
+    const svg = porClave('tres-dominios')
+    const { nodos, enCaja } = leerDominios(svg)
+    const ramas = piezas(svg, 'rama')
+    if (ramas.length !== 3 || nodos.length !== 3) throw new Error(`hay ${ramas.length} ramas y ${nodos.length} dominios`)
+    const raiz = [num(ramas[0], 'x1'), num(ramas[0], 'y1')]
+    for (const r of ramas) {
+      if (num(r, 'x1') !== raiz[0] || num(r, 'y1') !== raiz[1]) throw new Error('las ramas no salen del mismo origen')
+      if (!nodos.some((n) => Math.abs(n.x - num(r, 'x2')) < 1 && Math.abs(n.y - num(r, 'y2')) < 1)) throw new Error('una rama no llega a su dominio')
+    }
+    const ids = nodos.map((n) => n.id).sort().join(',')
+    if (ids !== 'Archaea,Bacteria,Eucarya') throw new Error(`los dominios son ${ids}`)
+    for (const n of nodos) {
+      const t = svg.querySelector(`[data-pieza="dominio"][data-dominio="${n.id}"]`)
+      if (t.textContent.trim() !== n.id || Math.abs(centroCaja(t)[0] - n.x) > 2) throw new Error(`el rótulo del dominio ${n.id} no está bajo su nodo`)
+    }
+    const mal = []
+    for (const g of piezas(svg, 'grupo')) {
+      const nombre = g.textContent.trim()
+      const [x, y] = centroCaja(g)
+      const donde = enCaja(x, y) ? 'acelular' : nodos.reduce((m, n) => (Math.abs(n.x - x) < Math.abs(m.x - x) ? n : m)).id
+      if (GRUPO_DOMINIO[nombre] !== donde) mal.push(`${nombre} en ${donde}`)
+    }
+    if (mal.length) throw new Error(`grupos fuera de su sitio: ${mal.join('; ')}`)
+    return `${piezas(svg, 'grupo').length} grupos, cada uno bajo su dominio`
+  })
+
+  control('Dominios · virus y priones quedan fuera del árbol, y la llave de procariotas abarca Bacteria y Archaea, no Eucarya', () => {
+    const svg = porClave('tres-dominios')
+    const { nodos, enCaja } = leerDominios(svg)
+    for (const r of piezas(svg, 'rama')) if (enCaja(num(r, 'x2'), num(r, 'y2'))) throw new Error('una rama del árbol llega a los acelulares')
+    const acel = piezas(svg, 'grupo').filter((g) => enCaja(...centroCaja(g))).map((g) => g.textContent.trim()).sort().join(',')
+    if (acel !== 'Priones,Virus') throw new Error(`en la caja de acelulares hay: ${acel}`)
+    const x = (id) => nodos.find((n) => n.id === id).x
+    const abarca = (texto) => {
+      const [[x1], , , [x2]] = puntos(svg.querySelector(`[data-pieza="llave"][data-texto="${texto}"]`))
+      return ['Bacteria', 'Archaea', 'Eucarya'].filter((id) => x(id) >= Math.min(x1, x2) && x(id) <= Math.max(x1, x2)).join(',')
+    }
+    if (abarca('Procariotas') !== 'Bacteria,Archaea') throw new Error(`la llave de procariotas abarca ${abarca('Procariotas')}`)
+    if (abarca('Eucariotas') !== 'Eucarya') throw new Error(`la llave de eucariotas abarca ${abarca('Eucariotas')}`)
+    return 'virus y priones fuera; procariotas = Bacteria + Archaea; eucariotas = Eucarya'
+  })
+
+  /*
+   * Estructura de los virus. Se mide sobre el dibujo: el acido nucleico dentro
+   * de su capside, la capside dentro de la envoltura y las espiculas pegadas a
+   * la envoltura y hacia fuera.
+   */
+  const enPoligono = (poligono, x, y) => {
+    const p = poligono.ownerSVGElement.createSVGPoint()
+    p.x = x
+    p.y = y
+    return poligono.isPointInFill(p)
+  }
+  control('Virus · en los dos el ácido nucleico está dentro de la cápside, y solo el envuelto tiene la cápside dentro de una envoltura', () => {
+    const svg = porClave('estructura-virus')
+    for (const id of ['desnudo', 'envuelto']) {
+      const cap = svg.querySelector(`[data-pieza="capside"][data-virion="${id}"]`)
+      const an = svg.querySelector(`[data-pieza="acido-nucleico"][data-virion="${id}"]`)
+      const fuera = puntos(an).filter(([x, y]) => !enPoligono(cap, x, y)).length
+      if (fuera) throw new Error(`en el virus ${id}, ${fuera} punto(s) del ácido nucleico quedan fuera de la cápside`)
+    }
+    const env = piezas(svg, 'envoltura')
+    if (env.length !== 1) throw new Error(`hay ${env.length} envolturas`)
+    const [cx, cy, r] = [num(env[0], 'cx'), num(env[0], 'cy'), num(env[0], 'r')]
+    const capE = svg.querySelector('[data-pieza="capside"][data-virion="envuelto"]').getBBox()
+    if (Math.hypot(capE.x + capE.width / 2 - cx, capE.y + capE.height / 2 - cy) > 2 || Math.max(capE.width, capE.height) / 2 > r - 4) throw new Error('la cápside del virus envuelto no está dentro de su envoltura')
+    const capD = svg.querySelector('[data-pieza="capside"][data-virion="desnudo"]').getBBox()
+    if (Math.hypot(capD.x + capD.width / 2 - cx, capD.y + capD.height / 2 - cy) < r + capD.width / 2) throw new Error('el virus desnudo está dentro de una envoltura')
+    return 'ácido nucleico dentro de la cápside en los dos; envoltura solo en el envuelto'
+  })
+
+  control('Virus · las espículas de glicoproteína arrancan en la envoltura y apuntan hacia fuera', () => {
+    const svg = porClave('estructura-virus')
+    const env = pieza(svg, 'envoltura')
+    const [cx, cy, r] = [num(env, 'cx'), num(env, 'cy'), num(env, 'r')]
+    const es = piezas(svg, 'espicula')
+    for (const e of es) {
+      const d1 = Math.hypot(num(e, 'x1') - cx, num(e, 'y1') - cy)
+      const d2 = Math.hypot(num(e, 'x2') - cx, num(e, 'y2') - cy)
+      if (Math.abs(d1 - r) > 1.5) throw new Error('una espícula no arranca en la envoltura')
+      if (!(d2 > d1 + 4)) throw new Error('una espícula apunta hacia dentro')
+    }
+    return `${es.length} espículas sobre la envoltura, todas hacia fuera`
+  })
+
   return resultados
 }
 
@@ -4283,6 +4417,10 @@ const SABOTAJES = {
   123: 'la gramnegativa sigue violeta después del decolorante',
   124: 'la gota, el doble de alta, llega al fondo de la excavación',
   125: 'el cubre de la preparación entre porta y cubre, levantado',
+  126: 'las cianobacterias colocadas bajo Eucarya, como si fueran algas',
+  127: 'la llave de procariotas alargada hasta abarcar Eucarya',
+  128: 'el ácido nucleico del virus desnudo sacado de su cápside',
+  129: 'una espícula girada hacia el interior de la envoltura',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4418,6 +4556,10 @@ const CONTROL_DE = {
   123: [119],
   124: [120],
   125: [121],
+  126: [122],
+  127: [123],
+  128: [124],
+  129: [125],
 }
 
 async function main() {

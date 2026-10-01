@@ -105,6 +105,8 @@ export type TipoEsquema =
   | 'bandeja-nmp-51'
   | 'tincion-gram'
   | 'gota-pendiente'
+  | 'tres-dominios'
+  | 'estructura-virus'
 
 export type TipoMaterial =
   | 'matraz-aforado'

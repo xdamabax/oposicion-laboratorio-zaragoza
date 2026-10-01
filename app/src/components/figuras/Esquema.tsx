@@ -79,6 +79,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'bandeja-nmp-51': 'Bandeja de NMP de 51 pocillos: coliformes y E. coli',
   'tincion-gram': 'Tinción de Gram paso a paso',
   'gota-pendiente': 'Gota pendiente y preparación entre porta y cubre',
+  'tres-dominios': 'Los tres dominios y los acelulares',
+  'estructura-virus': 'Estructura de los virus: con y sin envoltura',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -152,6 +154,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'bandeja-nmp-51': { ancho: 580, alto: 258 },
   'tincion-gram': { ancho: 580, alto: 250 },
   'gota-pendiente': { ancho: 580, alto: 206 },
+  'tres-dominios': { ancho: 580, alto: 236 },
+  'estructura-virus': { ancho: 580, alto: 226 },
 }
 
 const AZUL = '#9ecbe8'
@@ -7095,6 +7099,143 @@ function GotaPendiente() {
   )
 }
 
+/**
+ * Los tres dominios de Woese (1990): Bacteria, Archaea y Eucarya salen de un
+ * origen comun; bajo cada uno, sus grupos. Los acelulares (virus y priones)
+ * quedan fuera del arbol, y dos llaves marcan procariotas y eucariotas.
+ */
+function TresDominios() {
+  const RAIZ: [number, number] = [235, 26]
+  const Y = 78
+  const DOMINIOS = [
+    { id: 'Bacteria', x: 80, grupos: ['Bacterias', 'Cianobacterias'] },
+    { id: 'Archaea', x: 215, grupos: ['Metanógenas', 'Termófilas extremas'] },
+    { id: 'Eucarya', x: 360, grupos: ['Hongos', 'Protozoos', 'Algas', 'Helmintos', 'Plantas', 'Animales'] },
+  ]
+  const LLAVES = [
+    { texto: 'Procariotas', x1: 30, x2: 270 },
+    { texto: 'Eucariotas', x1: 305, x2: 415 },
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <circle cx={RAIZ[0]} cy={RAIZ[1]} r={4} fill="currentColor" />
+      <text x={RAIZ[0] + 8} y={RAIZ[1] - 6} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        origen común
+      </text>
+      {DOMINIOS.map((d) => (
+        <g key={d.id}>
+          <line data-pieza="rama" data-dominio={d.id} x1={RAIZ[0]} y1={RAIZ[1]} x2={d.x} y2={Y} stroke="currentColor" strokeWidth="1.6" />
+          <circle data-pieza="nodo" data-dominio={d.id} cx={d.x} cy={Y} r={4} fill={AZUL} stroke="currentColor" strokeWidth="1" />
+          <text data-pieza="dominio" data-dominio={d.id} x={d.x} y={Y + 18} fontSize="10" fontWeight="bold" fontStyle="italic" textAnchor="middle" fill="currentColor">
+            {d.id}
+          </text>
+          {d.grupos.map((g, i) => (
+            <text key={g} data-pieza="grupo" x={d.x} y={Y + 36 + i * 13} fontSize="8.5" textAnchor="middle" fill="currentColor">
+              {g}
+            </text>
+          ))}
+        </g>
+      ))}
+      {LLAVES.map((l) => (
+        <g key={l.texto}>
+          <path data-pieza="llave" data-texto={l.texto} d={`M ${l.x1} 208 L ${l.x1} 214 L ${l.x2} 214 L ${l.x2} 208`} fill="none" stroke={ROJO} strokeWidth="1.2" />
+          <text x={(l.x1 + l.x2) / 2} y={228} fontSize="9" fontWeight="bold" textAnchor="middle" fill={ROJO}>
+            {l.texto}
+          </text>
+        </g>
+      ))}
+      <rect data-pieza="acelular" x={450} y={70} width={115} height={78} rx={6} fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="4 3" />
+      <text x={507} y={88} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        Acelulares
+      </text>
+      <text x={507} y={100} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+        fuera de los dominios
+      </text>
+      {['Virus', 'Priones'].map((g, i) => (
+        <text key={g} data-pieza="grupo" x={507} y={118 + i * 14} fontSize="8.5" textAnchor="middle" fill="currentColor">
+          {g}
+        </text>
+      ))}
+      <text x={450} y={176} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Woese, Kandler y Wheelis, 1990.
+      </text>
+      <text x={450} y={190} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Las cianobacterias son bacterias.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * Estructura de los virus: a la izquierda, un virus desnudo (capside
+ * icosaedrica de capsomeros con el acido nucleico dentro); a la derecha, uno
+ * con envoltura lipidica tomada de la celula huesped y espiculas de
+ * glicoproteina hacia fuera, que rodea a la nucleocapside.
+ */
+function EstructuraVirus() {
+  const hexagono = (cx: number, cy: number, r: number) =>
+    Array.from({ length: 6 }, (_, i) => {
+      const a = (Math.PI / 3) * i - Math.PI / 2
+      return `${(cx + r * Math.cos(a)).toFixed(1)},${(cy + r * Math.sin(a)).toFixed(1)}`
+    }).join(' ')
+  const capsomeros = (cx: number, cy: number, r: number) =>
+    Array.from({ length: 18 }, (_, i) => {
+      const a = (Math.PI * 2 * i) / 18
+      const rr = r * (Math.cos(Math.PI / 6) / Math.cos(((a + Math.PI / 2) % (Math.PI / 3)) - Math.PI / 6))
+      return [cx + rr * Math.cos(a), cy + rr * Math.sin(a)]
+    })
+  const helice = (cx: number, cy: number, w: number) => {
+    const pts: string[] = []
+    for (let i = 0; i <= 24; i++) {
+      const t = i / 24
+      pts.push(`${i ? 'L' : 'M'} ${(cx - w / 2 + w * t).toFixed(1)} ${(cy + 9 * Math.sin(t * Math.PI * 4)).toFixed(1)}`)
+    }
+    return pts.join(' ')
+  }
+  const V = [
+    { id: 'desnudo', cx: 150, cy: 118, titulo: 'Virus sin envoltura', r: 50 },
+    { id: 'envuelto', cx: 405, cy: 118, titulo: 'Virus con envoltura', r: 42 },
+  ]
+  const RE = 66
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {V.map((v) => (
+        <g key={v.id}>
+          <text x={v.cx} y={20} fontSize="10" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {v.titulo}
+          </text>
+          {v.id === 'envuelto' && (
+            <>
+              <circle data-pieza="envoltura" cx={v.cx} cy={v.cy} r={RE} fill="#e8c35a" fillOpacity="0.25" stroke="#b8860b" strokeWidth="3" />
+              {Array.from({ length: 16 }, (_, i) => {
+                const a = (Math.PI * 2 * i) / 16
+                const [x1, y1] = [v.cx + RE * Math.cos(a), v.cy + RE * Math.sin(a)]
+                const [x2, y2] = [v.cx + (RE + 11) * Math.cos(a), v.cy + (RE + 11) * Math.sin(a)]
+                return (
+                  <g key={i}>
+                    <line data-pieza="espicula" x1={x1.toFixed(1)} y1={y1.toFixed(1)} x2={x2.toFixed(1)} y2={y2.toFixed(1)} stroke="currentColor" strokeWidth="1.4" />
+                    <circle cx={x2.toFixed(1)} cy={y2.toFixed(1)} r={2.6} fill={ROJO} />
+                  </g>
+                )
+              })}
+            </>
+          )}
+          <polygon data-pieza="capside" data-virion={v.id} points={hexagono(v.cx, v.cy, v.r)} fill={AZUL_CLARO} fillOpacity="0.5" stroke="currentColor" strokeWidth="1.4" />
+          {capsomeros(v.cx, v.cy, v.r).map(([x, y], i) => (
+            <circle key={i} cx={x.toFixed(1)} cy={y.toFixed(1)} r={3.4} fill={AZUL} stroke="currentColor" strokeWidth="0.6" />
+          ))}
+          <path data-pieza="acido-nucleico" data-virion={v.id} d={helice(v.cx, v.cy, v.r * 0.9)} fill="none" stroke={ROJO} strokeWidth="1.8" />
+        </g>
+      ))}
+      <Rotulo x={70} y={196} hacia={[140, 125]} lineas={['ácido nucleico:', 'ADN o ARN, nunca los dos']} derecha />
+      <Rotulo x={238} y={64} hacia={[188, 92]} lineas={['cápside de proteína,', 'hecha de capsómeros']} derecha />
+      <Rotulo x={492} y={196} hacia={[452, 165]} lineas={['envoltura lipídica,', 'tomada de la', 'célula huésped']} derecha />
+      <Rotulo x={500} y={40} hacia={[462, 64]} lineas={['espículas de', 'glicoproteína']} derecha />
+      <Rotulo x={300} y={208} hacia={[385, 150]} lineas={['nucleocápside']} derecha />
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7235,6 +7376,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <TincionGram />
     case 'gota-pendiente':
       return <GotaPendiente />
+    case 'tres-dominios':
+      return <TresDominios />
+    case 'estructura-virus':
+      return <EstructuraVirus />
   }
 }
 
