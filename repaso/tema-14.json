@@ -1,0 +1,764 @@
+{
+  "tema": 14,
+  "titulo": "Examen microscópico de las bacterias. Observación en fresco. Métodos de tinción. Principales tinciones bacterianas.",
+  "generadoDe": "temas/tema-14.md",
+  "apunteAprobado": true,
+  "fechaGeneracion": "2026-10-01",
+  "formatoTest": {
+    "ejercicio": "primero",
+    "opcionesPorPregunta": 3,
+    "fundamento": "Bases generales TRBGTL, base 7.4.C.1: primer ejercicio de 50 preguntas con 3 respuestas alternativas. Los supuestos son el segundo ejercicio, con 4 opciones."
+  },
+  "nucleoCriterio": "Preguntado en nuestra plaza: el lugol en el Gram (1322 #20) y el color de E. coli en el Gram (1322 2.º #20), mas la reaccion de Gram de grupos concretos (1233 #16, 1322 2.º #11). El nucleo recoge los pasos y el fundamento del Gram y sus errores, el Ziehl-Neelsen, las tinciones de capsula y esporas, el frotis y la fijacion, los colorantes y la observacion en fresco y la gota pendiente.",
+  "flashcards": [
+    {
+      "id": "t14-f01",
+      "anverso": "¿Basta el examen microscópico para identificar una especie bacteriana?",
+      "reverso": "**No:** la identificación precisa **necesita el cultivo**. Pero es una forma **rápida** de ver si hay bacterias en líquidos normalmente **estériles** y de **orientar el diagnóstico** y el tratamiento.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f02",
+      "anverso": "¿Cuáles son los dos tipos de preparación para el microscopio óptico?",
+      "reverso": "- **En fresco:** la muestra en una gota de líquido entre porta y cubre; **células vivas**.\n- **Fijada y teñida:** extendida, **seca, fijada** al porta y coloreada.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["conceptos"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f03",
+      "anverso": "Formas bacterianas: coco, bacilo, vibrio, cocobacilo, espirilo y espiroqueta. Descríbelas.",
+      "reverso": "- **Coco:** redondo.\n- **Bacilo:** bastón.\n- **Vibrio:** bastón curvo.\n- **Cocobacilo:** bastón corto.\n- **Espirilo:** espiral.\n- **Espiroqueta:** espiral larga, laxa y helicoidal.",
+      "fuente": "OpenStax Microbiology, 3.3",
+      "etiquetas": ["morfologia"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f04",
+      "anverso": "¿Qué es un **estreptococo**, un **estafilococo**, un **diplococo** y una **tétrada**? ¿De qué dependen las agrupaciones?",
+      "reverso": "**Cadenas** de cocos, **racimos**, **parejas** y **cuatro cocos en cuadrado**. Dependen del **plano en que se divide** la célula.",
+      "fuente": "OpenStax Microbiology, 3.3",
+      "etiquetas": ["morfologia"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f05",
+      "anverso": "¿Qué agrupaciones forman los bacilos?",
+      "reverso": "**Diplobacilos** (parejas), **estreptobacilos** (cadenas) y **empalizadas** (formaciones en V o en L). *Corynebacterium diphtheriae* se dispone en **letras chinas**.",
+      "fuente": "OpenStax Microbiology, 3.3; OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["morfologia"]
+    },
+    {
+      "id": "t14-f06",
+      "anverso": "¿Para qué sirve la **observación en fresco** y a qué aumento se hace?",
+      "reverso": "Para ver bacterias **vivas**, sin fijar ni teñir: sobre todo su **movilidad**, además de la forma y la agrupación. Se examina **a 400 aumentos** y **enseguida**, porque la movilidad disminuye con el tiempo.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f07",
+      "anverso": "Pasos de la preparación **entre porta y cubre**.",
+      "reverso": "1. **Una gota pequeña** de cultivo líquido en el centro del porta.\n2. Se coloca el **cubre con cuidado, sin burbujas**.\n3. Se examina **enseguida a ×400**.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"]
+    },
+    {
+      "id": "t14-f08",
+      "anverso": "Pasos de la **gota pendiente**.",
+      "reverso": "1. **Porta excavado** (o anillo de vaselina o plastilina).\n2. **Humedecer los bordes del cubre** con agua o vaselina.\n3. **Gota pequeña en el centro del cubre.**\n4. **Invertir el porta** sobre el cubre y **dar la vuelta**: la gota **cuelga del cubre** dentro de la excavación.\n5. **×400**, enseguida.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f09",
+      "anverso": "En la gota pendiente o el fresco, ¿cómo se distingue la movilidad del **movimiento browniano**?",
+      "reverso": "**Móvil:** movimiento **organizado**: rápido, en **zigzag** o en volteretas. **Inmóvil:** sin movimiento o **solo browniano**, la vibración de las partículas **sin desplazamiento propio**.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f10",
+      "anverso": "¿Qué puede dar un **falso negativo** de movilidad?",
+      "reverso": "- **La temperatura**: *Yersinia enterocolitica* es **móvil a 25 °C y no a 37 °C**.\n- **Cultivos viejos**: se repite con uno fresco.\n- **Calor o agitación**, que dañan los flagelos.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"]
+    },
+    {
+      "id": "t14-f11",
+      "anverso": "¿Cómo se estudia la movilidad **sin microscopio**?",
+      "reverso": "En **agar semisólido**: siembra **por picadura** hasta **dos tercios**, **24-48 h**. **Móvil:** crece fuera de la picadura y **enturbia** el medio. **Inmóvil:** solo a lo largo de la picadura. Controles: ***Proteus mirabilis*** (+) y ***Acinetobacter lwoffii*** (−).",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["fresco"]
+    },
+    {
+      "id": "t14-f12",
+      "anverso": "¿Cómo se hace un **frotis** con el asa?",
+      "reverso": "1. **Flamear el asa** hasta el rojo y **enfriarla** (contar hasta 20).\n2. Tomar la muestra con el asa **plana**.\n3. **Numerar el porta** y **extender en espiral** desde el centro, dejando **margen**.\n4. **Secar al aire por completo.**\n5. Flamear de nuevo el asa.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["frotis"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f13",
+      "anverso": "¿Por qué importa el **grosor** del frotis?",
+      "reverso": "Uno **grueso no se puede leer**; uno **demasiado fino** da **falsos negativos** u obliga a repetir. En el Gram, **el grado de decoloración depende del grosor**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["frotis"]
+    },
+    {
+      "id": "t14-f14",
+      "anverso": "¿Para qué se **fija** un frotis?",
+      "reverso": "Para **pegar** las células al porta, **matarlas** (detiene su movimiento y metabolismo) y **conservar** su forma y estructuras.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["frotis"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f15",
+      "anverso": "¿Cómo se fija un frotis?",
+      "reverso": "- **Calor:** **tres pasadas rápidas** del reverso del porta por la llama.\n- **Metanol al 70 %** durante **2 minutos**.\n- Las micobacterias, en **placa a 65-75 °C** dentro de la cabina de clase I.\n\n**Nunca antes de que esté seco.**",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3; UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["frotis"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f16",
+      "anverso": "¿El calor de la fijación mata a *Mycobacterium*?",
+      "reverso": "**No.** Los frotis fijados de micobacterias **se siguen manejando con cuidado**. Además, el **calor excesivo** encoge las células y puede hacer que **una grampositiva salga gramnegativa**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["frotis", "seguridad"]
+    },
+    {
+      "id": "t14-f17",
+      "anverso": "¿Por qué no se usa agua del grifo para hacer y lavar las extensiones?",
+      "reverso": "Puede llevar **micobacterias ambientales** como ***Mycobacterium gordonae***, que confunden el Ziehl-Neelsen. Se usa **agua destilada o desionizada**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["frotis"]
+    },
+    {
+      "id": "t14-f18",
+      "anverso": "¿Qué diferencia hay entre un colorante **básico** y uno **ácido**?",
+      "reverso": "- **Básico:** cromóforo **positivo**; se une a la pared, de **carga negativa**: **tiñe la célula**. Cristal violeta, safranina, azul de metileno, fucsina básica, verde de malaquita.\n- **Ácido:** cromóforo **negativo**; la pared lo repele: **tiñe el fondo**. Eosina, fucsina ácida, rosa de bengala.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["colorantes"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f19",
+      "anverso": "¿Qué es una tinción **simple** y una **diferencial**?",
+      "reverso": "**Simple:** **un solo colorante**; todas las bacterias **del mismo color**. **Diferencial:** **varios reactivos**; bacterias distintas salen de **colores distintos** (Gram, Ziehl-Neelsen).",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["colorantes"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f20",
+      "anverso": "¿Qué es un **mordiente**? Pon un ejemplo.",
+      "reverso": "Una sustancia que **fija o estabiliza** el colorante. El **lugol** en el Gram (atrapa el cristal violeta) o el **ácido tánico** en la tinción de flagelos.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["colorantes", "gram"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f21",
+      "anverso": "¿Quién creó la tinción de Gram y cuándo?",
+      "reverso": "**Hans Christian Gram**, en **1884**.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f22",
+      "anverso": "Los cuatro pasos del **Gram**, con el papel de cada reactivo.",
+      "reverso": "1. **Cristal violeta:** colorante primario.\n2. **Lugol:** **mordiente**.\n3. **Alcohol, acetona o alcohol-acetona:** **decolorante**.\n4. **Safranina** (o rojo neutro o fucsina): **contraste**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OpenStax Microbiology, 2.4",
+      "etiquetas": ["gram", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f23",
+      "anverso": "¿En qué tinción se usa el **lugol**?",
+      "reverso": "En la **tinción de Gram**, como **mordiente** (1322 #20). No en la de ácido-alcohol resistencia ni en la negativa.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); plantilla 1322",
+      "etiquetas": ["gram", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f24",
+      "anverso": "¿De qué color quedan las grampositivas y las gramnegativas? ¿Y *E. coli*?",
+      "reverso": "Grampositivas **azul oscuro a violeta**; gramnegativas **rosa a rojo**. ***E. coli*, rosa** (1322, 2.º ejercicio, #20).",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); plantilla 1322",
+      "etiquetas": ["gram", "examen"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f25",
+      "anverso": "¿Por qué unas bacterias retienen el violeta en el Gram y otras no?",
+      "reverso": "Por la **pared**: las grampositivas tienen **peptidoglicano grueso (30-100 nm)** que **retiene el complejo cristal violeta–yodo**; las gramnegativas, una capa **fina (≤ 4 nm)** y **membrana externa**, y **lo pierden** al decolorar.",
+      "fuente": "OpenStax Microbiology, 3.3; UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["gram"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f26",
+      "anverso": "¿Cómo quedan grampositivas y gramnegativas **después de cada paso** del Gram?",
+      "reverso": "- Tras el **cristal violeta** y el **lugol**: **todas violetas**.\n- Tras el **decolorante**: grampositivas violetas; **gramnegativas incoloras**.\n- Tras la **safranina**: grampositivas violetas; **gramnegativas rosas**.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["gram"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f27",
+      "anverso": "¿Qué es el **lugol** y cómo se prepara según la norma británica?",
+      "reverso": "Lo mismo que el **yodo de Gram** o el **triyoduro de potasio**: **1 g de yodo y 2 g de yoduro potásico en 300 mL** de agua destilada.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f28",
+      "anverso": "Tiempos del Gram según la norma británica (modificación de Hucker).",
+      "reverso": "Cristal violeta **0,5 %, 30 s**; lugol **1 %, 30 s**; decolorante **hasta que deja de salir color**; safranina **0,1 %, 30 s a 1 min**. Los tiempos **dependen de los reactivos**: se sigue al fabricante.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["gram", "cifras"]
+    },
+    {
+      "id": "t14-f29",
+      "anverso": "¿Cuál es el paso crítico del Gram y qué pasa si se hace mal?",
+      "reverso": "El **decolorante**. **De más:** grampositivas **rosas** (falsos gramnegativos). **De menos:** gramnegativas **violetas** (falsos grampositivos).",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["gram"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f30",
+      "anverso": "Causas de un **falso gramnegativo** (una grampositiva sale rosa).",
+      "reverso": "Decolorar **demasiado**, **lugol poco tiempo**, **calor excesivo** al fijar, cristal violeta **poco concentrado**, **lavados excesivos** y **cultivos viejos**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3; OpenStax Microbiology, 2.4",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f31",
+      "anverso": "Causas de un **falso grampositivo** (una gramnegativa sale violeta).",
+      "reverso": "Decolorar **poco**, **fijar antes de que esté seco**, **sedimento en el cristal violeta** (se filtra), **lugol mal lavado** y contraste **demasiado fuerte o largo**.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f32",
+      "anverso": "¿Qué son las bacterias **Gram variables** y las **Gram indeterminadas**?",
+      "reverso": "**Variables:** pueden salir de los dos colores. **Indeterminadas:** no responden al Gram, como las **ácido-alcohol resistentes**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f33",
+      "anverso": "¿Con qué objetivo se lee un Gram?",
+      "reverso": "Con el **objetivo de inmersión** (×100). La OMS mira antes con el **×40** para ver cómo se ha repartido el frotis.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["gram"]
+    },
+    {
+      "id": "t14-f34",
+      "anverso": "¿Por qué las micobacterias son **ácido-alcohol resistentes**?",
+      "reverso": "Por la capa **cérea de ácidos micólicos** de su pared: **cuesta teñirlas** y, ya teñidas, **resisten la decoloración** con ácido-alcohol.",
+      "fuente": "OpenStax Microbiology, 2.4; OpenStax Microbiology, 3.3",
+      "etiquetas": ["acido-alcohol"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f35",
+      "anverso": "Pasos del **Ziehl-Neelsen**.",
+      "reverso": "1. **Fucsina fenicada** y **calor** hasta que emite vapor, **sin hervir**, 3-5 min, sin dejar que se seque.\n2. Lavar.\n3. **Ácido-alcohol (3 %)** hasta rosa pálido.\n4. **Azul de metileno** (o verde de malaquita).\n\nBacilos ácido-alcohol resistentes **rojos** sobre fondo **azul**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["acido-alcohol"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f36",
+      "anverso": "¿En qué se diferencia el **Kinyoun** del Ziehl-Neelsen?",
+      "reverso": "**No usa calor** («en frío»): lleva una **fucsina más concentrada**, con más fenol. Colorante 5 min, ácido clorhídrico al 3 % en etanol y **azul de metileno** 3-4 min. El **Kinyoun modificado** decolora con **ácido sulfúrico al 1 %**, para *Nocardia*.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["acido-alcohol"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f37",
+      "anverso": "¿Qué ventaja tiene la tinción de **auramina** sobre el Ziehl-Neelsen?",
+      "reverso": "Es **más sensible**: la mejor para el **cribado**. Es **fluorescente**: bacilos **amarillo-verdes** sobre fondo oscuro, con **microscopio de fluorescencia**. El Ziehl-Neelsen da **más detalle** y sirve para confirmar en cultivos.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["acido-alcohol"]
+    },
+    {
+      "id": "t14-f38",
+      "anverso": "¿Dónde se manipulan las muestras con sospecha de *M. tuberculosis* para teñirlas?",
+      "reverso": "En **cabina de clase I** dentro de un laboratorio de **nivel de contención 3**. La **fucsina fenicada** es **cancerígena** y el **fenol**, tóxico y corrosivo: **guantes**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["acido-alcohol", "seguridad"]
+    },
+    {
+      "id": "t14-f39",
+      "anverso": "¿Cómo se pone de manifiesto la **cápsula**?",
+      "reverso": "Con una **tinción negativa con tinta china**: tiñe **el fondo** y la cápsula se ve como un **halo claro** sobre **fondo oscuro**. **No se fija al calor.** Sobre todo para ***Cryptococcus neoformans***.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OpenStax Microbiology, 2.4",
+      "etiquetas": ["estructuras"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f40",
+      "anverso": "Errores de la tinción con tinta china.",
+      "reverso": "**Tinta diluida** (la concentración es crítica) y **frotis grueso**. La película debe quedar **muy fina y pálida**, apretando el cubre a través de papel secante.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["estructuras"]
+    },
+    {
+      "id": "t14-f41",
+      "anverso": "Pasos de la tinción de **esporas** de Schaeffer-Fulton.",
+      "reverso": "1. Fijar al calor.\n2. Porta sobre **agua hirviendo**.\n3. **Verde de malaquita al 5 %**, **1 min** con vapor: el calor lo mete en la espora.\n4. **Lavar con agua fría.**\n5. **Safranina al 0,5 %**, 30 s.\n\n**Esporas verdes**, células **rosas**.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["estructuras"],
+      "nucleo": true
+    },
+    {
+      "id": "t14-f42",
+      "anverso": "¿Cómo se ven las esporas con el Gram? ¿Qué cultivo conviene para teñirlas?",
+      "reverso": "Con el Gram **no se tiñen**: se ven **huecos claros**. Conviene un cultivo **viejo, de 5 a 7 días**; los de un día o menos pueden no tener esporas.",
+      "fuente": "OpenStax Microbiology, 2.4; UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["estructuras"]
+    },
+    {
+      "id": "t14-f43",
+      "anverso": "¿Cómo se tiñen los **flagelos**?",
+      "reverso": "Primero un **mordiente**, normalmente **ácido tánico** (o alumbre potásico), que **los recubre y engruesa**. Después **pararrosanilina** o **fucsina básica**. Son **frágiles**: se manejan con cuidado.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "etiquetas": ["estructuras"]
+    },
+    {
+      "id": "t14-f44",
+      "anverso": "Disposición de los flagelos: monotrica, anfitrica, lofotrica y peritrica. Un ejemplo de cada una.",
+      "reverso": "- **Monotrica:** uno polar (*Vibrio cholerae*).\n- **Anfitrica:** en los dos extremos (*Spirillum minor*).\n- **Lofotrica:** penacho en un extremo (*Pseudomonas aeruginosa*).\n- **Peritrica:** por toda la superficie (***E. coli***).",
+      "fuente": "OpenStax Microbiology, 3.3",
+      "etiquetas": ["estructuras"]
+    },
+    {
+      "id": "t14-f45",
+      "anverso": "¿Qué pone de manifiesto la tinción de **Albert**?",
+      "reverso": "Los **gránulos metacromáticos (volutina)** de ***Corynebacterium diphtheriae***: bacilos **verdes con gránulos verde-negros**, en **letras chinas**.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["estructuras"]
+    },
+    {
+      "id": "t14-f46",
+      "anverso": "Control de calidad de las tinciones.",
+      "reverso": "**Portas de control positivo y negativo** con **cepas de referencia** cada vez que se tiñe; si fallan, **la tinción no se acepta**. En el Gram basta el **positivo**, salvo con un lote nuevo. Se registran el **lote** y la **fecha** de cada colorante.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t14-f47",
+      "anverso": "Mirando el esquema: si te saltas el paso 3, ¿de qué color acaba la gramnegativa, y cómo se llama ese error?",
+      "reverso": "Acaba **violeta**, como la grampositiva: es un **falso grampositivo**.",
+      "fuente": "OpenStax Microbiology, 2.4; OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "etiquetas": ["figura", "gram"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "tincion-gram"
+      }
+    },
+    {
+      "id": "t14-f48",
+      "anverso": "Mirando el esquema: ¿qué gana la gota pendiente con la vaselina, además de sujetar el cubre? ¿Y qué pasa si se pone de más?",
+      "reverso": "La vaselina **retrasa la desecación**, y la gota se puede observar más tiempo. Con **demasiada vaselina**, se desplaza al centro y **se mezcla con la gota**, o sale por los bordes y **mancha el objetivo**.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "etiquetas": ["figura", "fresco"],
+      "figura": {
+        "tipo": "esquema",
+        "valor": "gota-pendiente"
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "t14-q01",
+      "pregunta": "¿En qué tipo de tinción se utiliza lugol?",
+      "opciones": ["Tinción de ácido-alcohol resistencia.", "Tinción negativa.", "Tinción de Gram."],
+      "correcta": 2,
+      "explicacion": "1322 #20: el lugol es el mordiente del Gram.",
+      "fuente": "Plantilla 1322; UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q02",
+      "pregunta": "Al realizar una tinción de Gram de Escherichia coli, esta queda teñida de color:",
+      "opciones": ["Violeta.", "Rosa.", "Verde."],
+      "correcta": 1,
+      "explicacion": "1322, 2.º ejercicio, #20: E. coli es gramnegativa.",
+      "fuente": "Plantilla 1322; UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q03",
+      "pregunta": "¿Cuál de las siguientes bacterias es gramnegativa?",
+      "opciones": ["Citrobacter freundii.", "Listeria monocytogenes.", "Staphylococcus aureus."],
+      "correcta": 0,
+      "explicacion": "1233 #16. Citrobacter es una enterobacteria.",
+      "fuente": "Plantilla 1233",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q04",
+      "pregunta": "En la tinción de Gram, el lugol actúa como:",
+      "opciones": ["Colorante de contraste.", "Decolorante.", "Mordiente."],
+      "correcta": 2,
+      "explicacion": "Fija el cristal violeta en forma de complejo.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q05",
+      "pregunta": "El orden correcto de los reactivos en la tinción de Gram es:",
+      "opciones": ["Cristal violeta, alcohol-acetona, lugol, safranina.", "Cristal violeta, lugol, alcohol-acetona, safranina.", "Safranina, lugol, alcohol-acetona, cristal violeta."],
+      "correcta": 1,
+      "explicacion": "Primario, mordiente, decolorante y contraste.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q06",
+      "pregunta": "Las bacterias grampositivas retienen el cristal violeta porque:",
+      "opciones": ["Tienen una capa gruesa de peptidoglicano.", "Tienen membrana externa con lipopolisacárido.", "Carecen de pared celular."],
+      "correcta": 0,
+      "explicacion": "Peptidoglicano de 30-100 nm; las gramnegativas, fino y con membrana externa.",
+      "fuente": "OpenStax Microbiology, 3.3",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q07",
+      "pregunta": "Tras el paso del decolorante, las bacterias gramnegativas quedan:",
+      "opciones": ["Violetas.", "Rosas.", "Incoloras."],
+      "correcta": 2,
+      "explicacion": "Toman el rosa en el paso siguiente, con la safranina.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q08",
+      "pregunta": "Si en una tinción de Gram se decolora en exceso:",
+      "opciones": ["Las gramnegativas pueden salir violetas.", "Las grampositivas pueden salir rosas.", "No cambia nada."],
+      "correcta": 1,
+      "explicacion": "Falso gramnegativo. Decolorar poco da el error contrario.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q09",
+      "pregunta": "Es causa de falso grampositivo:",
+      "opciones": ["Fijar el frotis antes de que esté seco.", "Decolorar demasiado tiempo.", "Dejar el lugol poco tiempo."],
+      "correcta": 0,
+      "explicacion": "Las otras dos dan falsos gramnegativos.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3"
+    },
+    {
+      "id": "t14-q10",
+      "pregunta": "Para la tinción de Gram conviene usar:",
+      "opciones": ["Cultivos viejos, de una semana.", "Cultivos congelados sin resembrar.", "Cultivos jóvenes."],
+      "correcta": 2,
+      "explicacion": "Las células viejas pueden perder la pared y salir gramnegativas.",
+      "fuente": "OpenStax Microbiology, 2.4; UKHSA, UK SMI TP 39, Staining procedures (2025)"
+    },
+    {
+      "id": "t14-q11",
+      "pregunta": "En la tinción de Ziehl-Neelsen, el colorante primario es:",
+      "opciones": ["El cristal violeta.", "La fucsina fenicada.", "El verde de malaquita."],
+      "correcta": 1,
+      "explicacion": "Se aplica con calor; el contraste es azul de metileno o verde de malaquita.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q12",
+      "pregunta": "En el Ziehl-Neelsen, los bacilos ácido-alcohol resistentes se ven:",
+      "opciones": ["Rojos sobre fondo azul.", "Azules sobre fondo rojo.", "Verdes sobre fondo rosa."],
+      "correcta": 0,
+      "explicacion": "Retienen la fucsina; el resto toma el azul de metileno.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q13",
+      "pregunta": "La resistencia de las micobacterias a la decoloración se debe a:",
+      "opciones": ["Su cápsula polisacárida.", "Sus esporas.", "Los ácidos micólicos de su pared."],
+      "correcta": 2,
+      "explicacion": "Una capa cérea que dificulta teñirlas y decolorarlas.",
+      "fuente": "OpenStax Microbiology, 3.3",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q14",
+      "pregunta": "La tinción de Kinyoun se diferencia de la de Ziehl-Neelsen en que:",
+      "opciones": ["Usa lugol como mordiente.", "Se hace sin calor, con una fucsina más concentrada.", "Tiñe el fondo y no las bacterias."],
+      "correcta": 1,
+      "explicacion": "Es la tinción ácido-alcohol resistente «en frío».",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+    },
+    {
+      "id": "t14-q15",
+      "pregunta": "Para el cribado de micobacterias en muestras clínicas, la tinción más sensible es:",
+      "opciones": ["La de auramina, fluorescente.", "La de Gram.", "La de tinta china."],
+      "correcta": 0,
+      "explicacion": "El Ziehl-Neelsen da más detalle morfológico y sirve para confirmar.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+    },
+    {
+      "id": "t14-q16",
+      "pregunta": "En la tinción de Ziehl-Neelsen, el decolorante es:",
+      "opciones": ["Alcohol-acetona.", "Agua destilada.", "Ácido-alcohol."],
+      "correcta": 2,
+      "explicacion": "Ácido-alcohol al 3 %, hasta que el frotis queda rosa pálido.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+    },
+    {
+      "id": "t14-q17",
+      "pregunta": "La cápsula bacteriana se pone de manifiesto habitualmente con:",
+      "opciones": ["La tinción de Gram.", "Una tinción negativa con tinta china.", "La tinción de Ziehl-Neelsen."],
+      "correcta": 1,
+      "explicacion": "La cápsula se ve como un halo claro sobre fondo oscuro.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); OpenStax Microbiology, 2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q18",
+      "pregunta": "La tinción negativa:",
+      "opciones": ["Tiñe el fondo y deja las células sin teñir.", "Se fija al calor antes de teñir.", "Usa un colorante básico."],
+      "correcta": 0,
+      "explicacion": "Usa colorantes que la pared repele, y no se fija.",
+      "fuente": "OpenStax Microbiology, 2.4"
+    },
+    {
+      "id": "t14-q19",
+      "pregunta": "En la tinción de esporas de Schaeffer-Fulton, las esporas se tiñen de color:",
+      "opciones": ["Rojo.", "Violeta.", "Verde."],
+      "correcta": 2,
+      "explicacion": "Verde de malaquita con calor; las células vegetativas quedan rosas con la safranina.",
+      "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q20",
+      "pregunta": "En la tinción de esporas de Schaeffer-Fulton, el calor sirve para:",
+      "opciones": ["Decolorar las células vegetativas.", "Hacer entrar el verde de malaquita en la espora.", "Fijar el contraste."],
+      "correcta": 1,
+      "explicacion": "Después se lava con agua fría y se contrasta con safranina.",
+      "fuente": "OpenStax Microbiology, 2.4"
+    },
+    {
+      "id": "t14-q21",
+      "pregunta": "Con la tinción de Gram, las esporas bacterianas:",
+      "opciones": ["No se tiñen y se ven como huecos claros.", "Se tiñen de violeta intenso.", "Se tiñen de rosa."],
+      "correcta": 0,
+      "explicacion": "Necesitan una tinción específica.",
+      "fuente": "OpenStax Microbiology, 2.4"
+    },
+    {
+      "id": "t14-q22",
+      "pregunta": "Para teñir flagelos se usa un mordiente que los engruesa, normalmente:",
+      "opciones": ["Lugol.", "Ácido-alcohol.", "Ácido tánico."],
+      "correcta": 2,
+      "explicacion": "Después, pararrosanilina o fucsina básica.",
+      "fuente": "OpenStax Microbiology, 2.4"
+    },
+    {
+      "id": "t14-q23",
+      "pregunta": "Escherichia coli tiene flagelos:",
+      "opciones": ["Polares únicos.", "Peritricos.", "No tiene flagelos."],
+      "correcta": 1,
+      "explicacion": "Por toda la superficie.",
+      "fuente": "OpenStax Microbiology, 3.3"
+    },
+    {
+      "id": "t14-q24",
+      "pregunta": "Son colorantes básicos, que tiñen la célula bacteriana:",
+      "opciones": ["Cristal violeta y azul de metileno.", "Eosina y rosa de bengala.", "Fucsina ácida y tinta china."],
+      "correcta": 0,
+      "explicacion": "El cromóforo positivo se une a la pared, de carga negativa.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q25",
+      "pregunta": "Una tinción simple:",
+      "opciones": ["Distingue grampositivas de gramnegativas.", "Necesita mordiente y decolorante.", "Usa un solo colorante y tiñe todas las bacterias del mismo color."],
+      "correcta": 2,
+      "explicacion": "Las diferenciales, como el Gram, usan varios reactivos.",
+      "fuente": "OpenStax Microbiology, 2.4",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q26",
+      "pregunta": "Una forma de fijar un frotis es:",
+      "opciones": ["Mantener el frotis húmedo en estufa a 37 °C.", "Pasar el reverso del porta por la llama tres veces.", "Cubrirlo con lugol 10 minutos."],
+      "correcta": 1,
+      "explicacion": "O cubrirlo con metanol al 70 % durante 2 minutos.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q27",
+      "pregunta": "Antes de fijar un frotis:",
+      "opciones": ["Debe estar completamente seco al aire.", "Hay que teñirlo.", "Debe estar recién extendido y húmedo."],
+      "correcta": 0,
+      "explicacion": "Fijarlo húmedo da falsos grampositivos.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3"
+    },
+    {
+      "id": "t14-q28",
+      "pregunta": "La gota pendiente se utiliza sobre todo para estudiar:",
+      "opciones": ["La reacción de Gram.", "Las esporas.", "La movilidad bacteriana."],
+      "correcta": 2,
+      "explicacion": "Bacterias vivas, sin fijar ni teñir, a ×400.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q29",
+      "pregunta": "En la gota pendiente, la gota de cultivo:",
+      "opciones": ["Queda aplastada entre porta y cubre.", "Cuelga del cubreobjetos dentro de la excavación del porta.", "Se extiende y se fija al calor."],
+      "correcta": 1,
+      "explicacion": "Sin tocar el fondo.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q30",
+      "pregunta": "Al observar una preparación en fresco, el movimiento browniano:",
+      "opciones": ["Es una vibración sin desplazamiento propio y no indica movilidad.", "Indica movilidad por flagelos.", "Solo se ve en bacterias grampositivas."],
+      "correcta": 0,
+      "explicacion": "La movilidad es un movimiento organizado, en zigzag o a volteretas.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)",
+      "nucleo": true
+    },
+    {
+      "id": "t14-q31",
+      "pregunta": "Las preparaciones en fresco para ver la movilidad se examinan:",
+      "opciones": ["A ×1000 con aceite, tras secarlas.", "Al día siguiente, tras incubarlas.", "A ×400 y enseguida."],
+      "correcta": 2,
+      "explicacion": "La movilidad disminuye con el tiempo.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)"
+    },
+    {
+      "id": "t14-q32",
+      "pregunta": "En el agar semisólido, una bacteria móvil:",
+      "opciones": ["Crece solo a lo largo de la línea de picadura.", "Crece fuera de la picadura y enturbia el medio.", "No crece."],
+      "correcta": 1,
+      "explicacion": "Siembra por picadura e incubación 24-48 h.",
+      "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)"
+    },
+    {
+      "id": "t14-q33",
+      "pregunta": "La tinción de Albert pone de manifiesto:",
+      "opciones": ["Los gránulos de volutina de Corynebacterium diphtheriae.", "Las esporas de Bacillus.", "La cápsula de Cryptococcus."],
+      "correcta": 0,
+      "explicacion": "Bacilos verdes con gránulos verde-negros.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3"
+    }
+  ],
+  "supuestos": [
+    {
+      "id": "t14-s01",
+      "titulo": "Un Gram de una colonia del agua",
+      "enunciado": "En una placa de **agar CCA** sembrada por filtración han crecido colonias **azul oscuro a violeta**. El técnico quiere ver su morfología y su reacción de Gram antes de seguir con la identificación. Dispone de cristal violeta, lugol, alcohol-acetona y safranina.",
+      "preguntas": [
+        {
+          "id": "t14-s01-q1",
+          "pregunta": "Para preparar el frotis de la colonia:",
+          "opciones": ["Se emulsiona la colonia en una gota gruesa y se fija aún húmeda.", "Se extiende una capa fina, se deja secar al aire por completo y se fija.", "Se tiñe directamente sin extender.", "Se fija en la llama hasta que el porta se pone al rojo."],
+          "correcta": 1,
+          "explicacion": "Frotis fino, seco antes de fijar; tres pasadas rápidas por la llama o metanol.",
+          "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3"
+        },
+        {
+          "id": "t14-s01-q2",
+          "pregunta": "El reactivo que actúa como mordiente es:",
+          "opciones": ["El cristal violeta.", "El alcohol-acetona.", "La safranina.", "El lugol."],
+          "correcta": 3,
+          "explicacion": "1322 #20.",
+          "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+        },
+        {
+          "id": "t14-s01-q3",
+          "pregunta": "Las colonias azul-violeta en CCA son de E. coli. Tras el Gram, sus células se verán:",
+          "opciones": ["Bacilos rosas.", "Cocos violetas en racimo.", "Bacilos violetas.", "Sin teñir."],
+          "correcta": 0,
+          "explicacion": "E. coli es un bacilo gramnegativo (1322, 2.º ejercicio, #20).",
+          "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025); plantilla 1322"
+        },
+        {
+          "id": "t14-s01-q4",
+          "pregunta": "El técnico deja el alcohol-acetona demasiado tiempo en el control positivo de Staphylococcus. Lo esperable es que:",
+          "opciones": ["Los estafilococos salgan más violetas.", "La safranina no tiña nada.", "Los estafilococos puedan salir rosas: falso gramnegativo.", "Las células se vean más grandes."],
+          "correcta": 2,
+          "explicacion": "Decolorar de más hace que las grampositivas pierdan el violeta.",
+          "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+        },
+        {
+          "id": "t14-s01-q5",
+          "pregunta": "¿Con qué objetivo examina el Gram?",
+          "opciones": ["×4, sin aceite.", "Con el ×100 de inmersión en aceite, tras mirar la distribución con el ×40.", "×10, con el condensador bajado.", "Con el ×40 y luz ultravioleta."],
+          "correcta": 1,
+          "explicacion": "OMS: primero ×40, después ×100 de inmersión.",
+          "fuente": "OMS, Manual of basic techniques for a health laboratory (2003), 5.1-5.3"
+        }
+      ]
+    },
+    {
+      "id": "t14-s02",
+      "titulo": "Movilidad y esporas de un bacilo",
+      "enunciado": "Del agua de un depósito se ha aislado un **bacilo grampositivo** que el laboratorio quiere caracterizar: si es **móvil** y si forma **esporas**. Se dispone de portas excavados, vaselina, verde de malaquita, safranina y agar semisólido.",
+      "preguntas": [
+        {
+          "id": "t14-s02-q1",
+          "pregunta": "Para ver la movilidad al microscopio, se prepara:",
+          "opciones": ["Una gota pendiente con un cultivo líquido, examinada enseguida a ×400.", "Un frotis fijado al calor y teñido con Gram.", "Una tinción con tinta china.", "Un Ziehl-Neelsen."],
+          "correcta": 0,
+          "explicacion": "La fijación mata las bacterias y detiene el movimiento.",
+          "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)"
+        },
+        {
+          "id": "t14-s02-q2",
+          "pregunta": "Las bacterias de la gota vibran en el sitio sin desplazarse. Se interpreta como:",
+          "opciones": ["Movilidad positiva.", "Contaminación.", "Presencia de esporas.", "Movimiento browniano: sin movilidad propia."],
+          "correcta": 3,
+          "explicacion": "La movilidad es un desplazamiento organizado.",
+          "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)"
+        },
+        {
+          "id": "t14-s02-q3",
+          "pregunta": "Para confirmar la movilidad sin microscopio:",
+          "opciones": ["Se hace una tinción de esporas.", "Se observa con el objetivo de inmersión.", "Se siembra por picadura en agar semisólido y se incuba 24-48 h.", "Se siembra por agotamiento en agar nutritivo."],
+          "correcta": 2,
+          "explicacion": "Móvil: crece fuera de la picadura y enturbia el medio.",
+          "fuente": "UKHSA, UK SMI TP 21, Motility test (2025)"
+        },
+        {
+          "id": "t14-s02-q4",
+          "pregunta": "Para la tinción de esporas conviene usar un cultivo:",
+          "opciones": ["Recién sembrado, de pocas horas.", "Congelado a −70 °C.", "En medio líquido de 1 hora.", "De 5 a 7 días."],
+          "correcta": 3,
+          "explicacion": "Los cultivos jóvenes pueden tener solo células vegetativas.",
+          "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+        },
+        {
+          "id": "t14-s02-q5",
+          "pregunta": "En la tinción de Schaeffer-Fulton, el resultado esperado si forma esporas es:",
+          "opciones": ["Esporas rojas en células verdes.", "Esporas verdes en células rosas o rojas.", "Esporas violetas en células rosas.", "Todo azul."],
+          "correcta": 1,
+          "explicacion": "Verde de malaquita con calor y contraste de safranina.",
+          "fuente": "UKHSA, UK SMI TP 39, Staining procedures (2025)"
+        }
+      ]
+    }
+  ]
+}
