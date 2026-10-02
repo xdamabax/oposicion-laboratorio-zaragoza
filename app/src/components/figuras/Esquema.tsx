@@ -85,6 +85,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'arbol-gramnegativos': 'Identificación de bacilos gramnegativos: oxidasa, ureasa e indol',
   'control-semicuantitativo': 'Control semicuantitativo de un medio: 16 estrías y un mínimo de 8',
   'recuperacion-medio': 'Control cuantitativo de un medio selectivo: recuperación de al menos el 50 %',
+  'membrana-cca': 'Coliformes y E. coli en agar cromogénico (CCA)',
+  'tsc-mup': 'TSC-MUP: colonias negras y su fluorescencia con luz UV',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -164,6 +166,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'arbol-gramnegativos': { ancho: 580, alto: 254 },
   'control-semicuantitativo': { ancho: 580, alto: 260 },
   'recuperacion-medio': { ancho: 580, alto: 262 },
+  'membrana-cca': { ancho: 580, alto: 270 },
+  'tsc-mup': { ancho: 580, alto: 252 },
 }
 
 const AZUL = '#9ecbe8'
@@ -7577,6 +7581,200 @@ function RecuperacionMedio() {
   )
 }
 
+/**
+ * Membrana sobre agar cromogenico (CCA): rosa salmon a rojo = coliformes que
+ * no son E. coli; azul oscuro a violeta = E. coli; incoloras = otras. La
+ * leyenda dice cuantas hay de cada color y el resultado por 100 mL. Cada
+ * colonia se clasifica por su relleno, comparandolo con la muestra de la
+ * leyenda.
+ */
+function MembranaCca() {
+  const CX = 140
+  const CY = 124
+  const R = 96
+  const ROSA_CCA = '#e5738b'
+  const VIOLETA_CCA = '#4b2f8f'
+  const VOLUMEN = 100
+  const COLONIAS: { x: number; y: number; c: 'rosa' | 'violeta' | 'incolora' }[] = [
+    { x: -52, y: -48, c: 'rosa' },
+    { x: 8, y: -66, c: 'violeta' },
+    { x: 46, y: -40, c: 'rosa' },
+    { x: -70, y: -6, c: 'violeta' },
+    { x: -24, y: -20, c: 'rosa' },
+    { x: 22, y: -12, c: 'incolora' },
+    { x: 62, y: 6, c: 'rosa' },
+    { x: -46, y: 30, c: 'rosa' },
+    { x: 0, y: 22, c: 'violeta' },
+    { x: 40, y: 40, c: 'rosa' },
+    { x: -14, y: 62, c: 'rosa' },
+    { x: 26, y: 70, c: 'violeta' },
+    { x: -62, y: 48, c: 'incolora' },
+    { x: 70, y: -26, c: 'violeta' },
+    { x: -30, y: -70, c: 'rosa' },
+    { x: 58, y: 54, c: 'incolora' },
+  ]
+  const n = (c: string) => COLONIAS.filter((k) => k.c === c).length
+  const LEYENDA = [
+    { c: 'rosa', fill: ROSA_CCA, texto: 'rosa salmón a rojo: coliformes que no son E. coli' },
+    { c: 'violeta', fill: VIOLETA_CCA, texto: 'azul oscuro a violeta: E. coli' },
+    { c: 'incolora', fill: 'none', texto: 'incoloras: otras bacterias, no se cuentan' },
+  ]
+  const colif = ((n('rosa') + n('violeta')) * 100) / VOLUMEN
+  const ecoli = (n('violeta') * 100) / VOLUMEN
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <circle cx={CX} cy={CY} r={R + 10} fill="none" stroke="currentColor" strokeWidth="1" strokeOpacity="0.5" />
+      <circle data-pieza="membrana" cx={CX} cy={CY} r={R} fill="#f4efe6" stroke="currentColor" strokeWidth="1.2" />
+      {[-60, -30, 0, 30, 60].map((d) => (
+        <g key={d}>
+          <line x1={CX + d} y1={CY - Math.sqrt(R * R - d * d)} x2={CX + d} y2={CY + Math.sqrt(R * R - d * d)} stroke="#8a8a8a" strokeWidth="0.5" strokeOpacity="0.6" />
+          <line x1={CX - Math.sqrt(R * R - d * d)} y1={CY + d} x2={CX + Math.sqrt(R * R - d * d)} y2={CY + d} stroke="#8a8a8a" strokeWidth="0.5" strokeOpacity="0.6" />
+        </g>
+      ))}
+      {COLONIAS.map((k, i) => (
+        <circle
+          key={i}
+          data-pieza="colonia"
+          cx={CX + k.x}
+          cy={CY + k.y}
+          r={k.c === 'incolora' ? 4 : 5}
+          fill={k.c === 'rosa' ? ROSA_CCA : k.c === 'violeta' ? VIOLETA_CCA : 'none'}
+          stroke={k.c === 'incolora' ? '#6b6b6b' : 'none'}
+          strokeWidth="1"
+        />
+      ))}
+      <text data-pieza="volumen" data-valor={VOLUMEN} x={CX} y={CY + R + 26} fontSize="8.5" textAnchor="middle" fill="currentColor">
+        Membrana de 0,45 µm con {VOLUMEN} mL filtrados, sobre CCA
+      </text>
+      <text x={CX} y={CY + R + 38} fontSize="8" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+        36 ± 2 °C durante 21 ± 3 h
+      </text>
+      {LEYENDA.map((l, i) => (
+        <g key={l.c}>
+          <circle data-pieza="muestra" data-color={l.c} cx={282} cy={40 + i * 26} r={6} fill={l.fill} stroke={l.fill === 'none' ? '#6b6b6b' : 'none'} strokeWidth="1" />
+          <text data-pieza="cuenta" data-color={l.c} x={296} y={43 + i * 26} fontSize="8.5" fill="currentColor">
+            <tspan fontWeight="bold">{n(l.c)}</tspan> {l.texto}
+          </text>
+        </g>
+      ))}
+      <line x1={276} y1={128} x2={570} y2={128} stroke="currentColor" strokeWidth="0.6" strokeOpacity="0.5" />
+      <text data-pieza="resultado" data-parametro="coliformes" x={276} y={150} fontSize="9.5" fontWeight="bold" fill="currentColor">
+        Coliformes totales: {colif} ufc/100 mL
+      </text>
+      <text x={276} y={163} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        rosas + azul-violeta (E. coli también es coliforme)
+      </text>
+      <text data-pieza="resultado" data-parametro="ecoli" x={276} y={186} fontSize="9.5" fontWeight="bold" fill="currentColor">
+        E. coli: {ecoli} ufc/100 mL
+      </text>
+      <text x={276} y={199} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        solo las azul-violeta: β-galactosidasa y β-glucuronidasa
+      </text>
+      <text x={276} y={226} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Confirmación: oxidasa en las rosas; indol (Kovács) en las violeta.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * TSC-MUP: el mismo filtro con luz visible (colonias negras o grises,
+ * presuntivas) y con luz UV de 365 nm (halo azul en las que tienen fosfatasa
+ * acida). Las colonias de los dos paneles estan en las mismas posiciones
+ * respecto del centro de su membrana; cada halo rodea una colonia.
+ */
+function TscMup() {
+  const R = 84
+  const CY = 118
+  const PANELES = [
+    { panel: 'visible', cx: 108, titulo: 'Luz visible' },
+    { panel: 'uv', cx: 304, titulo: 'Luz UV de 365 nm' },
+  ]
+  const NEGRO = '#1f1f1f'
+  const GRIS = '#6d6d6d'
+  const HALO = '#bfe8ff'
+  const COLONIAS = [
+    { x: -40, y: -42, tono: NEGRO, fluo: true },
+    { x: 30, y: -50, tono: NEGRO, fluo: false },
+    { x: -52, y: 18, tono: GRIS, fluo: true },
+    { x: 4, y: -4, tono: NEGRO, fluo: true },
+    { x: 46, y: 26, tono: NEGRO, fluo: true },
+    { x: -12, y: 52, tono: GRIS, fluo: false },
+  ]
+  const VOLUMEN = 100
+  const conHalo = COLONIAS.filter((c) => c.fluo).length
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {PANELES.map((p) => (
+        <g key={p.panel}>
+          <text x={p.cx} y={18} fontSize="9" fontWeight="bold" textAnchor="middle" fill="currentColor">
+            {p.titulo}
+          </text>
+          <circle
+            data-pieza="membrana"
+            data-panel={p.panel}
+            cx={p.cx}
+            cy={CY}
+            r={R}
+            fill={p.panel === 'visible' ? '#ece6d2' : '#1c2140'}
+            stroke="currentColor"
+            strokeWidth="1.2"
+          />
+          {p.panel === 'uv' &&
+            COLONIAS.filter((c) => c.fluo).map((c, i) => (
+              <circle key={`h${i}`} data-pieza="halo" cx={p.cx + c.x} cy={CY + c.y} r={13} fill={HALO} fillOpacity="0.85" />
+            ))}
+          {COLONIAS.map((c, i) => (
+            <circle
+              key={i}
+              data-pieza={p.panel === 'visible' ? 'colonia-visible' : 'colonia-uv'}
+              cx={p.cx + c.x}
+              cy={CY + c.y}
+              r={5.5}
+              fill={p.panel === 'visible' ? c.tono : '#0b0d1a'}
+              stroke={p.panel === 'uv' ? '#4a5170' : 'none'}
+              strokeWidth="0.8"
+            />
+          ))}
+        </g>
+      ))}
+      <text data-pieza="presuntivas" x={108} y={CY + R + 18} fontSize="8.5" textAnchor="middle" fill="currentColor">
+        {COLONIAS.length} colonias negras o grises: presuntivas
+      </text>
+      <text data-pieza="recuento" data-volumen={VOLUMEN} x={304} y={CY + R + 18} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill="currentColor">
+        {conHalo} con halo: C. perfringens {conHalo} ufc/100 mL
+      </text>
+      <text x={412} y={50} fontSize="8.5" fontWeight="bold" fill="currentColor">
+        La reacción
+      </text>
+      <text x={412} y={68} fontSize="8.5" fill="currentColor">
+        MUP (4-metilumbeliferil fosfato)
+      </text>
+      <text x={430} y={84} fontSize="8" fill={ROJO}>
+        ↓ fosfatasa ácida
+      </text>
+      <text x={412} y={100} fontSize="8.5" fill="currentColor">
+        4-metilumbeliferona
+      </text>
+      <text x={412} y={114} fontSize="8.5" fill="currentColor">
+        + fosfato
+      </text>
+      <text x={412} y={136} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        La 4-metilumbeliferona
+      </text>
+      <text x={412} y={148} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        fluoresce en azul con
+      </text>
+      <text x={412} y={160} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        UV de onda larga.
+      </text>
+      <text x={20} y={240} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Mismo filtro, {VOLUMEN} mL. TSC con MUP, anaerobiosis, 24 h. Es la misma enzima que confirma la ISO 14189, sin resembrar.
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7729,6 +7927,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <ControlSemicuantitativo />
     case 'recuperacion-medio':
       return <RecuperacionMedio />
+    case 'membrana-cca':
+      return <MembranaCca />
+    case 'tsc-mup':
+      return <TscMup />
   }
 }
 

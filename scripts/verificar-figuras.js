@@ -1202,6 +1202,34 @@ function medir(sabotaje, ROJO) {
     // el lote C (39 %) dado por apto
     svg.querySelector('[data-pieza="veredicto"][data-medio="lote-c"]').textContent = 'apto'
   }
+  if (sabotaje === 138) {
+    const svg = porClave('membrana-cca')
+    // una colonia azul-violeta (E. coli) pintada de rosa: la leyenda y el resultado de E. coli no cambian
+    const rosa = svg.querySelector('[data-pieza="muestra"][data-color="rosa"]').getAttribute('fill')
+    const violeta = svg.querySelector('[data-pieza="muestra"][data-color="violeta"]').getAttribute('fill')
+    const k = [...svg.querySelectorAll('[data-pieza="colonia"]')].find((c) => c.getAttribute('fill') === violeta)
+    k.setAttribute('fill', rosa)
+  }
+  if (sabotaje === 139) {
+    const svg = porClave('membrana-cca')
+    // los coliformes totales contados solo con las rosas, olvidando que E. coli es coliforme
+    const t = svg.querySelector('[data-pieza="resultado"][data-parametro="coliformes"]')
+    t.textContent = 'Coliformes totales: 8 ufc/100 mL'
+  }
+  if (sabotaje === 140) {
+    const svg = porClave('tsc-mup')
+    // un halo fluorescente pintado en un hueco del filtro, sin colonia debajo
+    const h = svg.querySelector('[data-pieza="halo"]').cloneNode()
+    const m = svg.querySelector('[data-pieza="membrana"][data-panel="uv"]')
+    h.setAttribute('cx', num(m, 'cx') + 50)
+    h.setAttribute('cy', num(m, 'cy') - 10)
+    svg.querySelector('[data-pieza="halo"]').parentNode.appendChild(h)
+  }
+  if (sabotaje === 141) {
+    const svg = porClave('tsc-mup')
+    // todas las colonias negras contadas como C. perfringens, sin mirar la fluorescencia
+    svg.querySelector('[data-pieza="recuento"]').textContent = '6 con halo: C. perfringens 6 ufc/100 mL'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4560,6 +4588,90 @@ function medir(sabotaje, ROJO) {
     })
   }
 
+  /* Tema 18: controles en su propio bloque, como desde el tema 17. */
+  {
+    /*
+     * Membrana en CCA. Cada colonia se clasifica por su relleno, comparado con
+     * el de las muestras de la leyenda; las cuentas y los resultados por 100 mL
+     * se recalculan con el volumen filtrado escrito en el dibujo.
+     */
+    const ccaClases = (svg) => {
+      const muestras = piezas(svg, 'muestra').map((m) => [m.getAttribute('data-color'), m.getAttribute('fill')])
+      const cuenta = Object.fromEntries(muestras.map(([c]) => [c, 0]))
+      const R = num(pieza(svg, 'membrana'), 'r')
+      const [mx, my] = [num(pieza(svg, 'membrana'), 'cx'), num(pieza(svg, 'membrana'), 'cy')]
+      for (const k of piezas(svg, 'colonia')) {
+        const m = muestras.find(([, f]) => f === k.getAttribute('fill'))
+        if (!m) throw new Error(`una colonia tiene un color (${k.getAttribute('fill')}) que no está en la leyenda`)
+        if (Math.hypot(num(k, 'cx') - mx, num(k, 'cy') - my) > R) throw new Error('una colonia cae fuera de la membrana')
+        cuenta[m[0]]++
+      }
+      return cuenta
+    }
+    const ccaNumero = (svg, sel) => Number(svg.querySelector(sel).textContent.match(/(\d+(?:[.,]\d+)?)/)[1].replace(',', '.'))
+    control('CCA · cada color de colonia cuenta lo que dice la leyenda, y E. coli son solo las azul-violeta', () => {
+      const svg = porClave('membrana-cca')
+      const c = ccaClases(svg)
+      for (const color of Object.keys(c)) {
+        const escrito = ccaNumero(svg, `[data-pieza="cuenta"][data-color="${color}"]`)
+        if (escrito !== c[color]) throw new Error(`la leyenda dice ${escrito} ${color} y hay ${c[color]}`)
+      }
+      const vol = num(pieza(svg, 'volumen'), 'data-valor')
+      const ecoli = ccaNumero(svg, '[data-pieza="resultado"][data-parametro="ecoli"]')
+      if (Math.abs(ecoli - (c.violeta * 100) / vol) > 1e-6) throw new Error(`E. coli escrito ${ecoli}, y las violeta dan ${(c.violeta * 100) / vol}`)
+      return `rosas ${c.rosa}, violeta ${c.violeta}, incoloras ${c.incolora}; E. coli ${ecoli} ufc/100 mL`
+    })
+
+    control('CCA · los coliformes totales son rosas + azul-violeta por 100 mL, sin las incoloras', () => {
+      const svg = porClave('membrana-cca')
+      const c = ccaClases(svg)
+      const vol = num(pieza(svg, 'volumen'), 'data-valor')
+      const colif = ccaNumero(svg, '[data-pieza="resultado"][data-parametro="coliformes"]')
+      const debe = ((c.rosa + c.violeta) * 100) / vol
+      if (Math.abs(colif - debe) > 1e-6) throw new Error(`coliformes escritos ${colif}, y rosas + violeta dan ${debe}`)
+      return `${c.rosa} + ${c.violeta} = ${debe} ufc/100 mL`
+    })
+
+    /*
+     * TSC-MUP. Las colonias de los dos paneles se comparan por su posicion
+     * respecto del centro de su membrana; una colonia tiene halo si hay un
+     * halo centrado en ella (a menos de 1,5 px).
+     */
+    const tscRelativas = (svg, panel, nombre) => {
+      const m = svg.querySelector(`[data-pieza="membrana"][data-panel="${panel}"]`)
+      return piezas(svg, nombre).map((k) => ({ el: k, x: num(k, 'cx') - num(m, 'cx'), y: num(k, 'cy') - num(m, 'cy') }))
+    }
+    const tscConHalo = (svg) => {
+      const halos = piezas(svg, 'halo')
+      return tscRelativas(svg, 'uv', 'colonia-uv').filter((c) => halos.some((h) => Math.hypot(num(h, 'cx') - num(c.el, 'cx'), num(h, 'cy') - num(c.el, 'cy')) < 1.5))
+    }
+    control('TSC-MUP · el panel UV es el mismo filtro que el visible, y cada halo rodea una colonia', () => {
+      const svg = porClave('tsc-mup')
+      const vis = tscRelativas(svg, 'visible', 'colonia-visible')
+      const uv = tscRelativas(svg, 'uv', 'colonia-uv')
+      if (vis.length !== uv.length) throw new Error(`${vis.length} colonias con luz visible y ${uv.length} con UV`)
+      for (const c of uv) if (!vis.some((v) => Math.hypot(v.x - c.x, v.y - c.y) < 1)) throw new Error('una colonia del panel UV no está en el visible')
+      for (const h of piezas(svg, 'halo')) {
+        const sobre = uv.some((c) => Math.hypot(num(h, 'cx') - num(c.el, 'cx'), num(h, 'cy') - num(c.el, 'cy')) < 1.5)
+        if (!sobre) throw new Error('hay un halo fluorescente que no rodea ninguna colonia')
+      }
+      return `${uv.length} colonias en los mismos sitios; ${piezas(svg, 'halo').length} halos, todos sobre una colonia`
+    })
+
+    control('TSC-MUP · el recuento de C. perfringens son las colonias con halo, y las presuntivas, todas las negras o grises', () => {
+      const svg = porClave('tsc-mup')
+      const n = tscConHalo(svg).length
+      const t = pieza(svg, 'recuento').textContent
+      const escritos = (t.match(/\d+/g) ?? []).map(Number)
+      const vol = num(pieza(svg, 'recuento'), 'data-volumen')
+      if (escritos[0] !== n || escritos[1] !== (n * 100) / vol) throw new Error(`el recuento dice «${t}», y hay ${n} colonias con halo en ${vol} mL`)
+      const pres = Number(pieza(svg, 'presuntivas').textContent.match(/\d+/)[0])
+      const vis = piezas(svg, 'colonia-visible').length
+      if (pres !== vis) throw new Error(`dice ${pres} presuntivas y hay ${vis} colonias`)
+      return `${vis} presuntivas; ${n} con halo → ${(n * 100) / vol} ufc/100 mL`
+    })
+  }
+
   return resultados
 }
 
@@ -4703,6 +4815,10 @@ const SABOTAJES = {
   135: 'la placa de 5 de 16 dada por apta',
   136: 'la línea del 50 % subida al 60 % del no selectivo',
   137: 'el lote C, con un 39 %, dado por apto',
+  138: 'una colonia azul-violeta (E. coli) pintada de rosa, sin cambiar la leyenda',
+  139: 'los coliformes totales contados solo con las rosas',
+  140: 'un halo fluorescente pintado en un hueco sin colonia',
+  141: 'todas las colonias negras contadas como C. perfringens, sin mirar la fluorescencia',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4850,6 +4966,10 @@ const CONTROL_DE = {
   135: [131],
   136: [132],
   137: [133],
+  138: [134],
+  139: [135],
+  140: [136],
+  141: [137],
 }
 
 async function main() {

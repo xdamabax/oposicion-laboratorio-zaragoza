@@ -111,6 +111,8 @@ export type TipoEsquema =
   | 'arbol-gramnegativos'
   | 'control-semicuantitativo'
   | 'recuperacion-medio'
+  | 'membrana-cca'
+  | 'tsc-mup'
 
 export type TipoMaterial =
   | 'matraz-aforado'
