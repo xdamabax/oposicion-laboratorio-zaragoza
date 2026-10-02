@@ -399,7 +399,7 @@ Se ve con **microscopio de fluorescencia** (tema 10).
 
 ## Dudas declaradas
 
-1. **Por qué fluoresce el TSC-MUP (1322 #23).** La respuesta, el halo fluorescente con UV de 365 nm, sale de la **plantilla oficial**, y el **RD 3/2023** autoriza ese método alternativo. **El fundamento enzimático no se ha leído en ninguna fuente**: la ISO 14189 es de pago, y la guía británica confirma *C. perfringens* por otras pruebas. Se desarrollará en el tema 18.
+1. **Por qué fluoresce el TSC-MUP (1322 #23).** La respuesta, el halo fluorescente con UV de 365 nm, sale de la **plantilla oficial**, y el **RD 3/2023** autoriza ese método alternativo. **El fundamento enzimático no se ha leído en ninguna fuente**: la ISO 14189 es de pago, y la guía británica confirma *C. perfringens* por otras pruebas. Se desarrollará en el tema 18. **Resuelta allí (02/10/2026):** la **fosfatasa ácida** de *C. perfringens* rompe el **MUP** y libera **4-metilumbeliferona**, que fluoresce a 365 nm (Adcock y Saint, 2001); es el mismo principio que la confirmación de la ISO 14189.
 2. **Temperaturas de la PCR.** Las de OpenStax (~95, ~50 y 72 °C) son **orientativas**: la de hibridación depende de los cebadores.
 3. **Enterobacteriaceae y Enterobacterales.** La guía británica de enterobacterias es de **2015** y usa «Enterobacteriaceae»; las de 2025 hablan de «Enterobacterales». **La taxonomía cambió y no se ha estudiado el detalle.** Los perfiles del apunte (oxidasa negativa, fermentan la glucosa, reducen nitratos) son los de esas guías.
 4. **ELISA y otros inmunoensayos enzimáticos:** no se tratan; no se ha leído una fuente sobre ellos.
