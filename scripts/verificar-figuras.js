@@ -1230,6 +1230,38 @@ function medir(sabotaje, ROJO) {
     // todas las colonias negras contadas como C. perfringens, sin mirar la fluorescencia
     svg.querySelector('[data-pieza="recuento"]').textContent = '6 con halo: C. perfringens 6 ufc/100 mL'
   }
+  if (sabotaje === 142) {
+    const svg = porClave('plan-tres-clases')
+    // en el lote B (aceptable), el valor de 30 ufc/g subido a 800, por encima de M, sin cambiar el veredicto
+    const m = [...svg.querySelectorAll('[data-pieza="marca"]')].map((e) => [num(e, 'x1'), Math.log10(num(e, 'data-valor'))]).sort((a, b) => a[0] - b[0])
+    const [[xa, la], [xb, lb]] = [m[0], m[m.length - 1]]
+    const xDe = (v) => xa + ((Math.log10(v) - la) * (xb - xa)) / (lb - la)
+    const p = [...svg.querySelectorAll('[data-pieza="valor"][data-lote="B"]')].find((c) => Math.abs(num(c, 'cx') - xDe(30)) < 1)
+    p.setAttribute('cx', xDe(800))
+  }
+  if (sabotaje === 143) {
+    const svg = porClave('plan-tres-clases')
+    // la línea M desplazada a 1000 ufc/g
+    const mil = num(svg.querySelector('[data-pieza="marca"][data-valor="1000"]'), 'x1')
+    const l = svg.querySelector('[data-pieza="limite"][data-limite="M"]')
+    l.setAttribute('x1', mil)
+    l.setAttribute('x2', mil)
+  }
+  if (sabotaje === 144) {
+    const svg = porClave('nmp-moluscos')
+    // un tubo de la fila de 0,1 g con colonias crema en el TBX contado como positivo (placa pintada de azul)
+    const azul = svg.querySelector('[data-pieza="leyenda"][data-clase="azul"]').getAttribute('fill')
+    const crema = svg.querySelector('[data-pieza="leyenda"][data-clase="crema"]').getAttribute('fill')
+    const tubos = [...svg.querySelectorAll('[data-pieza="tubo"][data-dilucion="0.1"]')]
+    const placas = [...svg.querySelectorAll('[data-pieza="placa-tbx"]')].filter((q) => q.getAttribute('fill') === crema)
+    const p = placas.find((q) => tubos.some((t) => Math.abs(num(q, 'cx') - (num(t, 'x') + num(t, 'width') / 2)) < 2 && num(q, 'cy') > num(t, 'y') && num(q, 'cy') - num(t, 'y') < 80))
+    p.setAttribute('fill', azul)
+  }
+  if (sabotaje === 145) {
+    const svg = porClave('nmp-moluscos')
+    // el NMP escrito no es el del código: 330, que es el de 5-1-0
+    svg.querySelector('[data-pieza="nmp"]').textContent = 'NMP = 330 por 100 g'
+  }
   if (sabotaje === 67) {
     const svg = porClave('cadena-trazabilidad')
     // una flecha que no llega al eslabon siguiente: la cadena se interrumpe
@@ -4672,6 +4704,106 @@ function medir(sabotaje, ROJO) {
     })
   }
 
+  /* Tema 19: controles en su propio bloque, como desde el tema 17. */
+  {
+    /*
+     * Plan de tres clases. La escala logaritmica se reconstruye con dos marcas
+     * del eje; cada punto se lee como un valor en ufc/g. El veredicto se
+     * calcula con los limites del Reglamento (n = 5, c = 2, m = 50, M = 500),
+     * no con las lineas dibujadas: esas las vigila el segundo control.
+     */
+    const planEscala = (svg) => {
+      const m = piezas(svg, 'marca').map((e) => [num(e, 'x1'), Math.log10(num(e, 'data-valor'))]).sort((a, b) => a[0] - b[0])
+      const [[xa, la], [xb, lb]] = [m[0], m[m.length - 1]]
+      return (x) => 10 ** (la + ((x - xa) * (lb - la)) / (xb - xa))
+    }
+    const PLAN = { n: 5, c: 2, m: 50, M: 500 }
+    const planVeredicto = (vals) => {
+      if (vals.some((v) => v > PLAN.M)) return 'insatisfactorio'
+      const entre = vals.filter((v) => v > PLAN.m).length
+      if (entre > PLAN.c) return 'insatisfactorio'
+      return entre ? 'aceptable' : 'satisfactorio'
+    }
+    control('Plan de tres clases · cada lote lleva el veredicto que dan sus cinco valores con n = 5, c = 2, m = 50 y M = 500 ufc/g', () => {
+      const svg = porClave('plan-tres-clases')
+      const aV = planEscala(svg)
+      const leidos = []
+      for (const v of piezas(svg, 'veredicto')) {
+        const lote = v.getAttribute('data-lote')
+        const vals = piezas(svg, 'valor').filter((p) => p.getAttribute('data-lote') === lote).map((p) => aV(num(p, 'cx')))
+        if (vals.length !== PLAN.n) throw new Error(`el lote ${lote} tiene ${vals.length} valores`)
+        const debe = planVeredicto(vals)
+        if (v.textContent.trim().toLowerCase() !== debe) throw new Error(`el lote ${lote} (${vals.map((x) => x.toFixed(0)).join(', ')}) dice «${v.textContent}» y le corresponde «${debe}»`)
+        leidos.push(`${lote} ${debe}`)
+      }
+      return leidos.join('; ')
+    })
+
+    control('Plan de tres clases · las líneas m y M están en 50 y 500 ufc/g de la escala logarítmica, y las zonas cambian justo en ellas', () => {
+      const svg = porClave('plan-tres-clases')
+      const aV = planEscala(svg)
+      const lin = Object.fromEntries(piezas(svg, 'limite').map((l) => [l.getAttribute('data-limite'), num(l, 'x1')]))
+      for (const [k, debe] of [['m', PLAN.m], ['M', PLAN.M]]) {
+        const v = aV(lin[k])
+        if (Math.abs(v / debe - 1) > 0.03) throw new Error(`la línea ${k} está en ${v.toFixed(0)} ufc/g, no en ${debe}`)
+      }
+      const z = Object.fromEntries(piezas(svg, 'zona').map((r) => [r.getAttribute('data-zona'), [num(r, 'x'), num(r, 'x') + num(r, 'width')]]))
+      const cerca = (a, b) => Math.abs(a - b) < 0.6
+      if (!cerca(z.satisfactorio[1], lin.m) || !cerca(z.intermedia[0], lin.m)) throw new Error('la zona satisfactoria no acaba en m')
+      if (!cerca(z.intermedia[1], lin.M) || !cerca(z.insatisfactorio[0], lin.M)) throw new Error('la zona intermedia no acaba en M')
+      return `m en ${aV(lin.m).toFixed(0)} y M en ${aV(lin.M).toFixed(0)} ufc/g; las zonas cambian en las líneas`
+    })
+
+    /*
+     * NMP de moluscos. Cada placa de TBX se asigna al tubo que tiene justo
+     * encima (misma columna). Un tubo es positivo si es amarillo y su placa
+     * es azul; los colores se comparan con los de la leyenda del propio
+     * dibujo (piezas leyenda, por su clase).
+     */
+    const MOL_TABLA = { '5-0-0': 230, '5-1-0': 330, '5-2-0': 490, '5-2-1': 700, '5-3-0': 790, '5-3-1': 1100, '4-0-0': 130, '5-0-1': 310, '5-1-1': 460, '4-1-0': 170, '4-2-0': 220 }
+    const molColores = (svg) => {
+      const de = (clase) => svg.querySelector(`[data-pieza="leyenda"][data-clase="${clase}"]`).getAttribute('fill')
+      return { amarillo: de('amarillo'), azul: de('azul') }
+    }
+    const molCodigo = (svg) => {
+      const { amarillo, azul } = molColores(svg)
+      const placas = piezas(svg, 'placa-tbx')
+      return ['1', '0.1', '0.01']
+        .map((d) => {
+          const tubos = piezas(svg, 'tubo').filter((t) => t.getAttribute('data-dilucion') === d)
+          if (tubos.length !== 5) throw new Error(`la dilución ${d} tiene ${tubos.length} tubos`)
+          return tubos.filter((t) => {
+            if (t.getAttribute('fill') !== amarillo) return false
+            const cx = num(t, 'x') + num(t, 'width') / 2
+            const bajo = num(t, 'y') + num(t, 'height')
+            const p = placas.find((q) => Math.abs(num(q, 'cx') - cx) < 2 && num(q, 'cy') > bajo && num(q, 'cy') - bajo < 30)
+            return p && p.getAttribute('fill') === azul
+          }).length
+        })
+        .join('-')
+    }
+    control('NMP de moluscos · cada cifra del código es el número de tubos amarillos con colonias azules en el TBX de esa cantidad', () => {
+      const svg = porClave('nmp-moluscos')
+      const leido = molCodigo(svg)
+      const escrito = pieza(svg, 'codigo').textContent.match(/\d-\d-\d/)?.[0]
+      if (escrito !== leido) throw new Error(`el dibujo da ${leido} y el código escrito es ${escrito}`)
+      return `código ${leido}, contado tubo a tubo`
+    })
+
+    control('NMP de moluscos · el NMP escrito es el de la tabla 5 × 3 para su código, y su valoración frente a m = 230 y M = 700', () => {
+      const svg = porClave('nmp-moluscos')
+      const codigo = pieza(svg, 'codigo').textContent.match(/\d-\d-\d/)?.[0]
+      const debe = MOL_TABLA[codigo]
+      if (debe === undefined) throw new Error(`el código ${codigo} no está en la tabla del verificador`)
+      const nmp = Number(pieza(svg, 'nmp').textContent.match(/\d+/)[0])
+      if (nmp !== debe) throw new Error(`el código ${codigo} da ${debe} NMP/100 g y el dibujo dice ${nmp}`)
+      const val = pieza(svg, 'valoracion').textContent
+      const esperado = nmp <= 230 ? /≤ *m|hasta m/i : nmp <= 700 ? /entre m/i : /> *M|supera M/i
+      if (!esperado.test(val)) throw new Error(`${nmp} NMP/100 g se valora «${val}»`)
+      return `${codigo} → ${nmp} NMP/100 g, entre m y M`
+    })
+  }
+
   return resultados
 }
 
@@ -4819,6 +4951,10 @@ const SABOTAJES = {
   139: 'los coliformes totales contados solo con las rosas',
   140: 'un halo fluorescente pintado en un hueco sin colonia',
   141: 'todas las colonias negras contadas como C. perfringens, sin mirar la fluorescencia',
+  142: 'un valor del lote aceptable subido por encima de M sin cambiar el veredicto',
+  143: 'la línea M desplazada a 1000 ufc/g',
+  144: 'un tubo con colonias crema en el TBX contado como positivo',
+  145: 'el NMP escrito no es el de su código en la tabla 5 × 3',
 }
 /**
  * Que control(es) debe tumbar cada sabotaje, por su indice en los resultados.
@@ -4970,6 +5106,10 @@ const CONTROL_DE = {
   139: [135],
   140: [136],
   141: [137],
+  142: [138],
+  143: [139],
+  144: [140],
+  145: [141],
 }
 
 async function main() {

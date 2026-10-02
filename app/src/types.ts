@@ -113,6 +113,8 @@ export type TipoEsquema =
   | 'recuperacion-medio'
   | 'membrana-cca'
   | 'tsc-mup'
+  | 'plan-tres-clases'
+  | 'nmp-moluscos'
 
 export type TipoMaterial =
   | 'matraz-aforado'

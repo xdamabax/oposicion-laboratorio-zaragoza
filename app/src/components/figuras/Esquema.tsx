@@ -87,6 +87,8 @@ export const NOMBRES_ESQUEMA: Record<TipoEsquema, string> = {
   'recuperacion-medio': 'Control cuantitativo de un medio selectivo: recuperación de al menos el 50 %',
   'membrana-cca': 'Coliformes y E. coli en agar cromogénico (CCA)',
   'tsc-mup': 'TSC-MUP: colonias negras y su fluorescencia con luz UV',
+  'plan-tres-clases': 'Plan de tres clases: E. coli en carne picada',
+  'nmp-moluscos': 'NMP de E. coli en moluscos: 5 tubos por 3 diluciones',
 }
 
 /** Cada esquema trae su propio lienzo: no comparten proporcion. */
@@ -168,6 +170,8 @@ const LIENZOS: Record<TipoEsquema, { ancho: number; alto: number }> = {
   'recuperacion-medio': { ancho: 580, alto: 262 },
   'membrana-cca': { ancho: 580, alto: 270 },
   'tsc-mup': { ancho: 580, alto: 252 },
+  'plan-tres-clases': { ancho: 580, alto: 268 },
+  'nmp-moluscos': { ancho: 580, alto: 272 },
 }
 
 const AZUL = '#9ecbe8'
@@ -7775,6 +7779,162 @@ function TscMup() {
   )
 }
 
+/**
+ * Plan de tres clases del Reglamento (CE) 2073/2005 para E. coli en carne
+ * picada: n = 5, c = 2, m = 50 ufc/g, M = 500 ufc/g. Cada lote tiene cinco
+ * valores sobre una escala logaritmica (sus marcas dan la escala) y el
+ * veredicto que les corresponde.
+ */
+function PlanTresClases() {
+  const X0 = 140
+  const ANCHO = 360
+  const xDe = (v: number) => X0 + ((Math.log10(v) - 1) * ANCHO) / 3
+  const EJE = 214
+  const M_MIN = 50
+  const M_MAX = 500
+  const LOTES = [
+    { lote: 'A', y: 60, valores: [10, 20, 25, 30, 45], veredicto: 'Satisfactorio' },
+    { lote: 'B', y: 102, valores: [10, 20, 30, 120, 300], veredicto: 'Aceptable' },
+    { lote: 'C', y: 144, valores: [10, 20, 80, 120, 300], veredicto: 'Insatisfactorio' },
+    { lote: 'D', y: 186, valores: [10, 20, 25, 45, 800], veredicto: 'Insatisfactorio' },
+  ]
+  const ZONAS = [
+    { zona: 'satisfactorio', de: 10, a: M_MIN, color: AZUL_CLARO, rotulo: '≤ m: bien' },
+    { zona: 'intermedia', de: M_MIN, a: M_MAX, color: '#f2c94c', rotulo: 'entre m y M: como mucho c = 2' },
+    { zona: 'insatisfactorio', de: M_MAX, a: 10000, color: ROJO, rotulo: '> M: ninguno' },
+  ]
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      <text x={20} y={14} fontSize="8.5" fontWeight="bold" fill="currentColor">
+        E. coli en carne picada (Reglamento 2073/2005): n = 5, c = 2, m = 50 ufc/g, M = 500 ufc/g
+      </text>
+      {ZONAS.map((z) => (
+        <g key={z.zona}>
+          <rect data-pieza="zona" data-zona={z.zona} x={xDe(z.de)} y={38} width={xDe(z.a) - xDe(z.de)} height={EJE - 38} fill={z.color} fillOpacity="0.18" />
+          <text x={(xDe(z.de) + xDe(z.a)) / 2} y={33} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.9">
+            {z.rotulo}
+          </text>
+        </g>
+      ))}
+      {[
+        { l: 'm', v: M_MIN },
+        { l: 'M', v: M_MAX },
+      ].map((k) => (
+        <g key={k.l}>
+          <line data-pieza="limite" data-limite={k.l} x1={xDe(k.v)} y1={38} x2={xDe(k.v)} y2={EJE} stroke={k.l === 'M' ? ROJO : 'currentColor'} strokeWidth="1.3" strokeDasharray="5 3" />
+          <text x={xDe(k.v)} y={EJE + 24} fontSize="8.5" fontWeight="bold" textAnchor="middle" fill={k.l === 'M' ? ROJO : 'currentColor'}>
+            {k.l} = {k.v}
+          </text>
+        </g>
+      ))}
+      <line x1={X0} y1={EJE} x2={X0 + ANCHO} y2={EJE} stroke="currentColor" strokeWidth="1" />
+      {[10, 100, 1000, 10000].map((v) => (
+        <g key={v}>
+          <line data-pieza="marca" data-valor={v} x1={xDe(v)} y1={EJE} x2={xDe(v)} y2={EJE + 4} stroke="currentColor" strokeWidth="1" />
+          <text x={xDe(v)} y={EJE + 13} fontSize="7.5" textAnchor="middle" fill="currentColor" fillOpacity="0.85">
+            {v.toLocaleString('es-ES')}
+          </text>
+        </g>
+      ))}
+      <text x={X0 + ANCHO + 24} y={EJE + 13} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        ufc/g
+      </text>
+      {LOTES.map((l) => (
+        <g key={l.lote}>
+          <text x={20} y={l.y + 3} fontSize="8.5" fontWeight="bold" fill="currentColor">
+            Lote {l.lote}
+          </text>
+          <line x1={X0} y1={l.y} x2={X0 + ANCHO} y2={l.y} stroke="currentColor" strokeWidth="0.5" strokeOpacity="0.35" />
+          {l.valores.map((v, i) => (
+            <circle key={i} data-pieza="valor" data-lote={l.lote} cx={xDe(v).toFixed(1)} cy={l.y} r={4.5} fill="currentColor" />
+          ))}
+          <text data-pieza="veredicto" data-lote={l.lote} x={X0 + ANCHO + 8} y={l.y + 3} fontSize="8.5" fontWeight="bold" fill={l.veredicto === 'Insatisfactorio' ? ROJO : 'currentColor'}>
+            {l.veredicto}
+          </text>
+        </g>
+      ))}
+      <text x={20} y={258} fontSize="8" fill="currentColor" fillOpacity="0.85">
+        Los límites valen para cada unidad. C: tres entre m y M (más de c). D: uno por encima de M, aunque los otros cuatro sean buenos.
+      </text>
+    </g>
+  )
+}
+
+/**
+ * NMP de E. coli en moluscos bivalvos (ISO 16649-3, protocolo de Cefas):
+ * 5 tubos de MMGB por cada una de 3 cantidades (1, 0,1 y 0,01 g). Cada tubo
+ * amarillo (acido) se siembra en TBX a 44 °C; es positivo si da colonias
+ * azules. Cada placa esta justo debajo de su tubo.
+ */
+function NmpMoluscos() {
+  const AMARILLO = '#f2c94c'
+  const MORADO = '#8e6bbf'
+  const AZUL_TBX = '#2f6fb3'
+  const CREMA = '#efe3c2'
+  const FILAS = [
+    { dil: '1', y: 30, l1: '1 g por tubo', l2: '10 mL de la 10⁻¹', tubos: ['azul', 'azul', 'azul', 'azul', 'azul'] },
+    { dil: '0.1', y: 112, l1: '0,1 g por tubo', l2: '1 mL de la 10⁻¹', tubos: ['azul', 'crema', 'azul', 'no', 'no'] },
+    { dil: '0.01', y: 194, l1: '0,01 g por tubo', l2: '1 mL de la 10⁻²', tubos: ['no', 'crema', 'no', 'no', 'no'] },
+  ]
+  const ALTO = 40
+  const xTubo = (i: number) => 140 + i * 40
+  const codigo = FILAS.map((f) => f.tubos.filter((t) => t === 'azul').length).join('-')
+  const NMP = 490
+  return (
+    <g fontFamily="system-ui, sans-serif">
+      {FILAS.map((f) => (
+        <g key={f.dil}>
+          <text x={20} y={f.y + 16} fontSize="8.5" fontWeight="bold" fill="currentColor">
+            {f.l1}
+          </text>
+          <text x={20} y={f.y + 28} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+            {f.l2}
+          </text>
+          {f.tubos.map((t, i) => (
+            <g key={i}>
+              <rect data-pieza="tubo" data-dilucion={f.dil} x={xTubo(i)} y={f.y} width={16} height={ALTO} rx={6} fill={t === 'no' ? MORADO : AMARILLO} fillOpacity="0.85" stroke="currentColor" strokeWidth="0.8" />
+              {t !== 'no' && (
+                <circle data-pieza="placa-tbx" cx={xTubo(i) + 8} cy={f.y + ALTO + 16} r={9} fill={t === 'azul' ? AZUL_TBX : CREMA} stroke="currentColor" strokeWidth="0.8" />
+              )}
+            </g>
+          ))}
+        </g>
+      ))}
+      <text x={360} y={40} fontSize="8.5" fontWeight="bold" fill="currentColor">
+        Cómo se lee
+      </text>
+      <rect data-pieza="leyenda" data-clase="amarillo" x={360} y={50} width={10} height={14} rx={3} fill={AMARILLO} stroke="currentColor" strokeWidth="0.6" />
+      <text x={376} y={61} fontSize="8" fill="currentColor">
+        MMGB amarillo: ácido (37 °C, 24 h)
+      </text>
+      <rect data-pieza="leyenda" data-clase="morado" x={360} y={70} width={10} height={14} rx={3} fill={MORADO} stroke="currentColor" strokeWidth="0.6" />
+      <text x={376} y={81} fontSize="8" fill="currentColor">
+        morado: negativo, no se siembra
+      </text>
+      <circle data-pieza="leyenda" data-clase="azul" cx={365} cy={97} r={5} fill={AZUL_TBX} stroke="currentColor" strokeWidth="0.6" />
+      <text x={376} y={100} fontSize="8" fill="currentColor">
+        TBX a 44 °C, colonias azules: E. coli
+      </text>
+      <circle data-pieza="leyenda" data-clase="crema" cx={365} cy={114} r={5} fill={CREMA} stroke="currentColor" strokeWidth="0.6" />
+      <text x={376} y={117} fontSize="8" fill="currentColor">
+        colonias crema: tubo negativo
+      </text>
+      <text data-pieza="codigo" x={360} y={160} fontSize="10" fontWeight="bold" fill="currentColor">
+        Código {codigo}
+      </text>
+      <text data-pieza="nmp" x={360} y={180} fontSize="10" fontWeight="bold" fill="currentColor">
+        NMP = {NMP} por 100 g
+      </text>
+      <text data-pieza="valoracion" x={360} y={198} fontSize="8.5" fill="currentColor">
+        entre m (230) y M (700): una de las c
+      </text>
+      <text x={360} y={214} fontSize="7.5" fill="currentColor" fillOpacity="0.85">
+        Reglamento 2073/2005: n = 5, c = 1
+      </text>
+    </g>
+  )
+}
+
 function Dibujo({ tipo }: { tipo: TipoEsquema }) {
   switch (tipo) {
     case 'electrodo-vidrio':
@@ -7931,6 +8091,10 @@ function Dibujo({ tipo }: { tipo: TipoEsquema }) {
       return <MembranaCca />
     case 'tsc-mup':
       return <TscMup />
+    case 'plan-tres-clases':
+      return <PlanTresClases />
+    case 'nmp-moluscos':
+      return <NmpMoluscos />
   }
 }
 
