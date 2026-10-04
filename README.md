@@ -82,7 +82,7 @@ ExamenesAnteriores/PLANTILLAS.md  Respuestas oficiales (plantillas del Ayuntamie
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
 scripts/verificar.js    Las dos baterías de verificación de una vez.
-scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie.
+scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie ni salta sin necesidad.
 scripts/comun.js        Piezas compartidas: encontrar Chrome, servir dist/, listar temas.
 ```
 
@@ -251,7 +251,9 @@ El control del dibujo delator es automático, sin listas escritas a mano: toma l
 
 Los controles que no aplican a un tema (un tema de la parte común no tiene supuestos) salen como `·`, no como aprobados.
 
-`verificar-pdf.js` (`npm run verificar:pdf -- 7 39`) — **saltos de página del PDF de apuntes**. Comprueba que ningún apartado arranque huérfano al pie de una página: un título solo, una entrada que acaba en «:» separada de lo que presenta, una tabla con la cabecera y una fila, o una lista o un párrafo con un solo renglón detrás de su título. El navegador no dice en qué página cae cada cosa, pero el PDF sí: Chrome lo genera **etiquetado** (H2, P, Table, TR, L…) y pdf.js lee el árbol página a página. No siembra nada en el DOM, porque cualquier marca movía los saltos que se querían medir, e imprime con las mismas opciones que la exportación (`OPCIONES_PDF` en `comun.js`). Con `--sin-reglas` apaga las reglas de la hoja de impresión y exige que aparezcan huérfanos: sobre los 28 temas escritos aparecen 135; con las reglas, ninguno.
+`verificar-pdf.js` (`npm run verificar:pdf -- 7 39`) — **saltos de página del PDF de apuntes**. Comprueba que ningún apartado arranque huérfano al pie de una página: un título solo, una entrada que acaba en «:» separada de lo que presenta, una tabla con la cabecera y una fila baja (de uno o dos renglones), o una lista o un párrafo con un solo renglón detrás de su título. El navegador no dice en qué página cae cada cosa, pero el PDF sí: Chrome lo genera **etiquetado** (H2, P, Table, TR, L…) y pdf.js lee el árbol página a página. No siembra nada en el DOM, porque cualquier marca movía los saltos que se querían medir, e imprime con las mismas opciones que la exportación (`OPCIONES_PDF` en `comun.js`). Con `--sin-reglas` apaga las reglas de la hoja de impresión y exige que aparezcan huérfanos: sobre los 28 temas escritos aparecen 135; con las reglas, ninguno.
+
+El defecto contrario también se mide: un **salto innecesario**, cuando una regla empuja de más y la página acaba con un hueco en blanco donde cabía lo que abre la siguiente (todo lo que hay antes de su primer título, o el arranque mínimo de su primer bloque: dos renglones, dos elementos de lista, o la cabecera con una o dos filas). Así se encontraron, el 04/10/2026, cadenas título-párrafo-título pegadas que partían un párrafo dejando 277 pt en blanco (tema 29, «b) Capa delgada»), un recuadro de fuentes que saltaba entero y dejaba una página con 6 renglones (tema 28) y elementos de lista de varios párrafos que no se podían partir (tema 23). Con `--reglas-viejas` vuelve a las reglas de antes de ese arreglo y exige saltos innecesarios: en los 40 temas aparecen 29; con las reglas de ahora, ninguno, y `--sin-reglas` sigue sacando 166 huérfanos.
 
 ### Las pruebas se prueban a sí mismas
 

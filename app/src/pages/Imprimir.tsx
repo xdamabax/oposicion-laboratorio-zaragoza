@@ -117,7 +117,9 @@ function ApunteImpreso({ tema }: { tema: TemaVista }) {
           )}
           <Markdown>{tema.apunte.cuerpo}</Markdown>
           <div className="imp-fuentes">
-            <b>Fuentes y verificación</b>
+            <p className="imp-fuentes-titulo">
+              <b>Fuentes y verificación</b>
+            </p>
             <ul>
               {tema.apunte.fuentes.map((f) => (
                 <li key={f}>{f}</li>

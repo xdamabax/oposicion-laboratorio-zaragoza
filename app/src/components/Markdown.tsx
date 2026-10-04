@@ -49,13 +49,38 @@ type NodoHast = { type: string; value?: string; children?: NodoHast[] }
 const textoDe = (n?: NodoHast): string =>
   !n ? '' : n.type === 'text' ? (n.value ?? '') : (n.children ?? []).map(textoDe).join('')
 
+/**
+ * Hasta cuantos caracteres un parrafo cabe seguro en UN renglon del PDF (A4,
+ * 11 pt). Medido sobre los 40 temas impresos: el parrafo de dos renglones mas
+ * corto tenia 92 caracteres.
+ */
+const RENGLON_PDF = 90
+
+/**
+ * Marcas para la hoja de impresion, que no puede leer el texto:
+ *   - md-entrada: acaba en «:» y presenta lo que viene detras (una tabla, una
+ *     lista, una formula, una cita, una figura); no se queda solo al pie.
+ *   - md-breve: ocupa un solo renglon. Detras de un titulo, titulo y renglon
+ *     no bastan para empezar un apartado al pie de una pagina.
+ */
+function clasesDeParrafo(texto: string): string | undefined {
+  const clases = [texto.endsWith(':') && 'md-entrada', texto.length <= RENGLON_PDF && 'md-breve']
+  return clases.filter(Boolean).join(' ') || undefined
+}
+
+/**
+ * Por encima de esta longitud, una fila de tabla ocupa al menos tres renglones
+ * en el PDF (medido en las 3253 filas de los 40 temas impresos: ninguna de mas
+ * de 250 caracteres bajaba de tres). Una fila asi ya arranca bien la tabla sola.
+ */
+const FILA_ALTA = 250
+
 const componentes = {
-  // Un parrafo que acaba en «:» presenta lo que viene detras (una tabla, una
-  // lista, una formula, una cita, una figura). Se marca para que la hoja de
-  // impresion no lo deje solo al pie de una pagina: la hoja no puede leer el
-  // texto, asi que se lo dice el propio parrafo.
   p: ({ node, ...props }: React.ComponentProps<'p'> & { node?: NodoHast }) => (
-    <p {...props} className={textoDe(node).trim().endsWith(':') ? 'md-entrada' : undefined} />
+    <p {...props} className={clasesDeParrafo(textoDe(node).trim())} />
+  ),
+  tr: ({ node, ...props }: React.ComponentProps<'tr'> & { node?: NodoHast }) => (
+    <tr {...props} className={textoDe(node).length > FILA_ALTA ? 'md-fila-alta' : undefined} />
   ),
   img: ({ src, alt }: React.ComponentProps<'img'>) => {
     const figura = typeof src === 'string' ? comoFigura(src, alt ?? '') : null

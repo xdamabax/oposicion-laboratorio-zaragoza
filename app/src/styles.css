@@ -876,7 +876,10 @@ body[data-listo="1"] {
   background: #f6f7f9;
   border: 1px solid #ddd;
   font-size: 9.5pt;
-  page-break-inside: avoid;
+}
+
+.imp-fuentes-titulo {
+  margin: 0;
 }
 
 .imp-fuentes ul {
@@ -1148,18 +1151,28 @@ body[data-listo="1"] {
   }
 
   /* Una tabla no arranca con la cabecera y una fila sola: las dos primeras
-     filas van pegadas a la cabecera y entre si. */
+     filas van pegadas a la cabecera y entre si. Salvo que la primera sea alta
+     (.md-fila-alta, de tres renglones o mas, la marca Markdown.tsx): con ella
+     la tabla ya arranca bien. Pegarle la segunda obligaba a saltar bloques de
+     media pagina: la «Tabla operativa» del tema 23 dejaba 514 pt en blanco
+     porque sus dos primeras filas miden 263 y 229 pt. */
   .md tbody tr:first-child,
-  .md tbody tr:nth-child(2) {
+  .md tbody tr:first-child:not(.md-fila-alta) + tr {
     break-before: avoid-page;
     page-break-before: avoid;
   }
 
-  /* Un titulo con un parrafo de una linea al pie tambien es un arranque
-     huerfano: el primer parrafo tras un titulo va con lo que le sigue. Y una
-     lista cuyo ultimo punto presenta la tabla de detras («…segun el volumen
-     tratado:») no se separa de ella. */
-  .md :is(h2, h3, h4) + p,
+  /* Un titulo con un parrafo de UN renglon al pie tambien es un arranque
+     huerfano: ese parrafo (Markdown.tsx lo marca como .md-breve) va con lo que
+     le sigue. Solo ese: uno de dos o mas renglones ya arranca bien el apartado,
+     y si hay que partirlo lo reparte orphans/widows.
+     Antes la regla cogia CUALQUIER primer parrafo, y si detras venia otro
+     titulo la cadena seguia: titulo, parrafo, titulo, parrafo... todo pegado
+     hasta la primera lista o tabla. Cuando no cabia, el motor cortaba en el
+     ultimo hueco permitido, muy arriba, y dejaba media pagina en blanco (tema
+     29, «b) Capa delgada»: 277 pt vacios al pie de la p. 9). Por eso tampoco
+     se pega a un titulo: un apartado entero y corto se puede quedar al pie. */
+  .md :is(h2, h3, h4) + p.md-breve:not(:has(+ :is(h1, h2, h3, h4, h5, h6))),
   .md ul:has(+ .md-tabla),
   .md ol:has(+ .md-tabla) {
     break-after: avoid-page;
@@ -1169,14 +1182,39 @@ body[data-listo="1"] {
   /* Un elemento de lista no se parte: Chrome no aplica orphans dentro de
      ellos, y el primero de una lista acababa dejando un solo renglon al pie
      detras de su titulo. Los que llevan sublista si pueden partirse: son los
-     largos. */
-  .md li:not(:has(ul, ol)) {
+     largos. Tampoco los de varios parrafos: en un parrafo si rige orphans, y
+     sin partirse saltaban enteros (la duda 3 del tema 23, tres parrafos y 14
+     renglones, dejaba 156 pt en blanco). */
+  .md li:not(:has(ul, ol, > p + p)) {
     break-inside: avoid;
     page-break-inside: avoid;
   }
 
   /* Ni una lista con su primer elemento solo al pie. */
   .md li:first-child {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  /* El recuadro de fuentes del final se puede partir. Antes no (page-break-
+     inside: avoid), y como en muchos temas pasa de media pagina, saltaba
+     entero: en el tema 28 dejaba la p. 21 con solo los 6 renglones de la
+     ultima duda y 642 pt en blanco debajo. Ahora se protege lo mismo que en
+     cualquier lista: el titulo va con la primera fuente (y es un parrafo, no
+     un <b> suelto, para que el PDF etiquetado lo tenga como bloque y
+     scripts/verificar-pdf.js pueda medirlo), y la primera con la
+     segunda; ninguna fuente se parte. */
+  .imp-fuentes-titulo {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  .imp-fuentes li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .imp-fuentes li:first-child {
     break-after: avoid-page;
     page-break-after: avoid;
   }
