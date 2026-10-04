@@ -29,12 +29,12 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 2 | De acuerdo con el artículo 59.3 del Estatuto de Autonomía de Aragón, el Justicia rendirá cuentas de su gestión… | **b)** | Las Cortes de Aragón | **3** |
 | 3 | De acuerdo con el artículo 71.4.ª del Estatuto de Autonomía de Aragón, en materia de lenguas y modalidades… | **c)** | Exclusiva | **3** |
 | 4 | De acuerdo con el artículo 12.1 de la Ley 7/1985,de 2 de abril, reguladora de las bases del Régimen Local,… | **c)** | El ayuntamiento ejerce sus competencias | **5** |
-| 5 | De acuerdo con el artículo 59 del Real Decreto Legislativo 2/2004, de 5 de marzo que aprueba el texto refundido… | **a)** | Los ayuntamientos exigirán el Impuesto sobre Bienes Inmuebles | 6 *(pendiente)* |
-| 6 | De acuerdo con el artículo 3.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido… | **c)** | Las respuestas a) y b) son correctas | 6 *(pendiente)* |
-| 7 | Presupuesto aprobado inicialmente: plazo de exposición al público (art. 169.1 TRLRHL) | **a)** | 15 días | 6 *(pendiente)* |
-| 8 | Derechos individuales ejercidos colectivamente (art. 15 TREBEP) | **b)** | El derecho a la libertad sindical | 7 *(pendiente)* |
-| 9 | El concurso como sistema selectivo (art. 61.6 TREBEP) | **c)** | Las respuestas a) y b) son correctas | 7 *(pendiente)* |
-| 10 | Plazo de ejecución de la oferta de empleo público (art. 70.1 TREBEP) | **b)** | Tres años | 7 *(pendiente)* |
+| 5 | De acuerdo con el artículo 59 del Real Decreto Legislativo 2/2004, de 5 de marzo que aprueba el texto refundido… | **a)** | Los ayuntamientos exigirán el Impuesto sobre Bienes Inmuebles | **6** |
+| 6 | De acuerdo con el artículo 3.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido… | **c)** | Las respuestas a) y b) son correctas | **6** |
+| 7 | Presupuesto aprobado inicialmente: plazo de exposición al público (art. 169.1 TRLRHL) | **a)** | 15 días | **6** |
+| 8 | Derechos individuales ejercidos colectivamente (art. 15 TREBEP) | **b)** | El derecho a la libertad sindical | **7** |
+| 9 | El concurso como sistema selectivo (art. 61.6 TREBEP) | **c)** | Las respuestas a) y b) son correctas | **7** |
+| 10 | Plazo de ejecución de la oferta de empleo público (art. 70.1 TREBEP) | **b)** | Tres años | **7** |
 | 11 | ¿Cuál es la pieza clave de un equipo de plasma? | **b)** | La antorcha | **27** |
 | 12 | ¿Qué propiedad del analito se utiliza en las determinaciones por polarimetría? | **b)** | Rotación de la radiación | **28** |
 | 13 | Las UNF (Unidades Nefelométricas de Formacina) son unidades de: | **c)** | Medidas de turbidez | **28** |
@@ -55,16 +55,16 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 28 | En la determinación de cloruro por volumetria, el agente valorante mas utilizado es: | **c)** | Una disolución de Nitrato de plata | **21, 22** |
 | 29 | ¿Qué método de los siguientes utilizaría para la medida de la materia orgánica en una agua de consumo? | **c)** | Método del permanganato | **33** |
 | 30 | Para identificar un microcontaminante orgánico en un agua de consumo, ¿qué técnica le parece mas apropiada? | **c)** | Cromatografía de gases o liquidos con detector de masas | **31, 32** |
-| 31 | En la técnica de filtración en membrana, el volumen de muestra a filtrar debe seleccionarse de tal forma que el… | **c)** | 80 colonias | 18 *(pendiente)* |
-| 32 | Los colifagos somáticos son: | **a)** | Virus que utilizan Escherichia coli para replicarse | 15, 18 *(pendiente)* |
-| 33 | El método para descontaminar el material del laboratorio de microbiologia es el autoclavado: | **b)** | Como mínimo 30 minutos a 121 °C | 11 *(pendiente)* |
+| 31 | En la técnica de filtración en membrana, el volumen de muestra a filtrar debe seleccionarse de tal forma que el… | **c)** | 80 colonias | **12, 13, 18** |
+| 32 | Los colifagos somáticos son: | **a)** | Virus que utilizan Escherichia coli para replicarse | **15, 18** |
+| 33 | El método para descontaminar el material del laboratorio de microbiologia es el autoclavado: | **b)** | Como mínimo 30 minutos a 121 °C | **11** |
 | 34 | Se llama cloro libre residual | **a)** | Al contenido en ácido hipocloroso e ión hipoclorito que queda tras clorar | **33** |
-| 35 | Los protozoos tienen las siguientes características: | **c)** | Son eucariotas, heterótrofos, con capacidad de movimiento | 15 *(pendiente)* |
-| 36 | Indique cuál de las siguientes definiciones de bacteria coliforme resulta más adecuada: | **a)** | Bacterias lactosa-positivas y que son oxidasa-negativas | 18 *(pendiente)* |
-| 37 | En un agua de consumo humano, el recuento de colonias a 22 °C: | **a)** | Proporciona información sobre la limpieza y estado de los sistemas de distribución | 18 *(pendiente)* |
-| 38 | En la técnica PCR, el proceso en un ciclo térmico consta de las siguientes fases: | **a)** | Desnaturalización, hibridación y elongación | 16 *(pendiente)* |
-| 39 | En una placa de agar CN han crecido colonias de color verde/azul | **b)** | Son colonias de Pseudomonas aeruginosa | 18 *(pendiente)* |
-| 40 | Recuento en placa: se siembran 100 µL de muestra sin diluir y se cuentan 97 colonias. ¿Cuántas ufc/mL hay en la muestra de partida? | **c)** | 9,7 × 10² | 13 *(pendiente)* |
+| 35 | Los protozoos tienen las siguientes características: | **c)** | Son eucariotas, heterótrofos, con capacidad de movimiento | **15** |
+| 36 | Indique cuál de las siguientes definiciones de bacteria coliforme resulta más adecuada: | **a)** | Bacterias lactosa-positivas y que son oxidasa-negativas | **16, 18** |
+| 37 | En un agua de consumo humano, el recuento de colonias a 22 °C: | **a)** | Proporciona información sobre la limpieza y estado de los sistemas de distribución | **18** |
+| 38 | En la técnica PCR, el proceso en un ciclo térmico consta de las siguientes fases: | **a)** | Desnaturalización, hibridación y elongación | **16** |
+| 39 | En una placa de agar CN han crecido colonias de color verde/azul | **b)** | Son colonias de Pseudomonas aeruginosa | **12, 18** |
+| 40 | Recuento en placa: se siembran 100 µL de muestra sin diluir y se cuentan 97 colonias. ¿Cuántas ufc/mL hay en la muestra de partida? | **c)** | 9,7 × 10² | **12, 13** |
 | 41 | ¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido- base? | **c)** | 2 | 23 *(no la cita)* |
 | 42 | ¿Qué es una valoración por retroceso? | **b)** | Es un proceso en el cual el exceso de una disolución patrón empleada para consumir un… | **22, 33** |
 | 43 | Expresión de la absorbancia (P₀, potencia incidente; Pt, potencia transmitida) | **c)** | A = −log (Pt / P₀) | 25 *(no la cita)* |
@@ -75,7 +75,7 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 48 | Coeficiente de correlación r de la recta de regresión: su valor oscila entre | **a)** | -1 y 1 | **39** |
 | 49 | En las valoraciones ácido-base se utilizan sustancias denominadas indicadores. Indique cuál no es un indicador en… | **c)** | Violeta de genciana | 22 *(no la cita)* |
 | 50 | ¿Qué significa el pictograma? (calavera y tibias, GHS06) | **a)** | Mortal en caso de ingestión | 20 *(no la cita)* |
-| R1 | Los gérmenes del género Salmonella | **a)** | No producen ureasa | 16 *(pendiente)* |
+| R1 | Los gérmenes del género Salmonella | **a)** | No producen ureasa | **16** |
 | R2 | Según el Real Decreto 3/2023 de calidad de agua de consumo humano, ¿en qué unidades se expresa el parámetro Dureza? | **b)** | En mg/l de Carbonato cálcico | **33** |
 | R3 | ¿Qué es la alcalinidad de un agua? | **b)** | Se corresponde con el contenido en bicarbonato, carbonatos e hidróxidos | **33** |
 | R4 | De acuerdo con el artículo 42.2 del Estatuto de Autonomía de Aragón, la iniciativa legislativa corresponde: | **c)** | Las respuestas a) y b) son correctas | **3** |
@@ -90,11 +90,11 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 3 | De acuerdo con el artículo 36.2 del Estatuto de Autonomía de Aragón, relativo a la composición de las Cortes de… | **b)** | 14 escaños | **3** |
 | 4 | De acuerdo con el artículo 59.3 del Estatuto de Autonomía de Aragón el Justicia rendirá cuentas de su gestión ante: | **b)** | Las Cortes de Aragón | **3** |
 | 5 | De acuerdo con el artículo 132 de la Ley 7/1985, de 2 de abril, ¿Qué órgano municipal estará formado por… | **b)** | La Comisión especial de Sugerencias y Reclamaciones | **5** |
-| 6 | De acuerdo con el artículo 128.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto… | **b)** | 5.000 habitantes | 6 *(pendiente)* |
-| 7 | De acuerdo con el artículo 60.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **c)** | El personal eventual | 7 *(pendiente)* |
-| 8 | De acuerdo con el artículo 12.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Personal eventual | 7 *(pendiente)* |
-| 9 | De acuerdo con el artículo 76 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Título universitario de Grado | 7 *(pendiente)* |
-| 10 | De acuerdo con el artículo 95 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Muy graves, graves y leves | 7 *(pendiente)* |
+| 6 | De acuerdo con el artículo 128.1 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto… | **b)** | 5.000 habitantes | **6** |
+| 7 | De acuerdo con el artículo 60.2 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **c)** | El personal eventual | **7** |
+| 8 | De acuerdo con el artículo 12.1 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Personal eventual | **7** |
+| 9 | De acuerdo con el artículo 76 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Título universitario de Grado | **7** |
+| 10 | De acuerdo con el artículo 95 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | Muy graves, graves y leves | **7** |
 | 11 | Según la ley de Beer-Lambert: | **b)** | La absorbancia de una solución aumenta linealmente al elevar la concentración de la… | **25** |
 | 12 | En una volumetría por retroceso: | **b)** | Se añade un exceso conocido de un reactivo que reacciona con el analito y posteriormente… | **22, 33** |
 | 13 | Indique la respuesta correcta: | **c)** | a) y b) son correctas | 23 *(no la cita)* |
@@ -103,15 +103,15 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 16 | ¿Cuál de los siguientes cubetas de muestra se puede utilizar en la espectroscopía UV-VIS? | **a)** | Cubeta de cuarzo | 25 *(no la cita)* |
 | 17 | ¿En que ley está basada la medida de la conductividad en el agua? | **b)** | Ley de Ohm | 24 *(no la cita)* |
 | 18 | Si representamos la absorbancia a varias longitudes de onda, obtendremos: | **c)** | Un espectro de absorción | 25 *(no la cita)* |
-| 19 | Para esterilizar por calor húmedo se utiliza | **b)** | Autoclave | 11 *(pendiente)* |
-| 20 | ¿En que tipo de tinción se utiliza lugol? | **c)** | Tinción de Gram | 14 *(pendiente)* |
-| 21 | ¿Como se denominan los medios de cultivo que permiten el crecimiento de los microorganismos diana e inhiben… | **a)** | Medios selectivos | 12 *(pendiente)* |
-| 22 | La criptosporidiosis es una enfermedad gastrointestinal causada por: | **a)** | Un protozoo | 15 *(pendiente)* |
-| 23 | Las colonias sospechosas de Clostridium perfringens en el medio de cultivo TSC-MUP se confirman mediante | **c)** | Visualización de halo fluorescente alrededor de la colonia al exponerlas a la luz UV de… | 18 *(pendiente)* |
-| 24 | La especie implicada en la mayoría de los casos de legionelosis es: | **c)** | Legionella pneumophila | 15, 18 *(pendiente)* |
-| 25 | El método de referencia para el análisis de Legionella spp en muestras de agua es: | **c)** | El método de cultivo contemplado en la norma UNE EN ISO 11731:2017 | 18 *(pendiente)* |
-| 26 | Las placas sembradas para el análisis de Legionella spp en agua se incuban a 36 °C durante: | **c)** | 10 días | 18 *(pendiente)* |
-| 27 | El método mas frecuentemente utilizado para obtener un cultivo puro es: | **c)** | La siembra por agotamiento | 12 *(pendiente)* |
+| 19 | Para esterilizar por calor húmedo se utiliza | **b)** | Autoclave | **11** |
+| 20 | ¿En que tipo de tinción se utiliza lugol? | **c)** | Tinción de Gram | **14** |
+| 21 | ¿Como se denominan los medios de cultivo que permiten el crecimiento de los microorganismos diana e inhiben… | **a)** | Medios selectivos | **12** |
+| 22 | La criptosporidiosis es una enfermedad gastrointestinal causada por: | **a)** | Un protozoo | **15** |
+| 23 | Las colonias sospechosas de Clostridium perfringens en el medio de cultivo TSC-MUP se confirman mediante | **c)** | Visualización de halo fluorescente alrededor de la colonia al exponerlas a la luz UV de… | **16, 18** |
+| 24 | La especie implicada en la mayoría de los casos de legionelosis es: | **c)** | Legionella pneumophila | **15, 18** |
+| 25 | El método de referencia para el análisis de Legionella spp en muestras de agua es: | **c)** | El método de cultivo contemplado en la norma UNE EN ISO 11731:2017 | **13, 18** |
+| 26 | Las placas sembradas para el análisis de Legionella spp en agua se incuban a 36 °C durante: | **c)** | 10 días | **10, 13, 18** |
+| 27 | El método mas frecuentemente utilizado para obtener un cultivo puro es: | **c)** | La siembra por agotamiento | **12** |
 | 28 | ¿Cuál es la pieza clave de un equipo de plasma? | **b)** | La antorcha | **27** |
 | 29 | Un plasma en análisis instrumentales | **b)** | Un gas caliente, generalmente Argón, parcialmente ionizado y conductor | **27** |
 | 30 | Las UNF (Unidades Nefelométricas de Formacina) son unidades de: | **c)** | Medidas de turbidez | **28** |
@@ -128,8 +128,8 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | R1 | Cuando hablamos de análisis de aire y sus principales contaminantes, ¿que significa la abreviatura PM? | **c)** | Materia particulada | **37** |
 | R2 | El método utilizado para la determinación de la concentración másica PM10 o PM2,5 de la materia particulada en… | **a)** | Un método gravimétrico normalizado | **37** |
 | R3 | Los metales que se analizan en la fracción PM10 de la materia particulada en suspensión en el aire son: | **c)** | Pb, Cd, As y Ni | **37** |
-| R4 | De acuerdo con los artículos 129 y 130 del Real Decreto Legislativo 2/2004, de 5 de marzo, que de las Haciendas… | **a)** | A la prestación personal | 6 *(pendiente)* |
-| R5 | De acuerdo con el artículo 129 del Real Decreto Legislativo 2/2004, de 5 de marzo que aprueba el texto refundido… | **b)** | Quince días al año | 6 *(pendiente)* |
+| R4 | De acuerdo con los artículos 129 y 130 del Real Decreto Legislativo 2/2004, de 5 de marzo, que de las Haciendas… | **a)** | A la prestación personal | **6** |
+| R5 | De acuerdo con el artículo 129 del Real Decreto Legislativo 2/2004, de 5 de marzo que aprueba el texto refundido… | **b)** | Quince días al año | **6** |
 
 ## 1322 · segundo ejercicio (plantilla definitiva)
 
@@ -141,22 +141,22 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 | 2 | Pictograma GHS08 del enunciado: a qué peligro corresponde | **c)** | Peligro grave para la salud | 20 *(no la cita)* |
 | 3 | ¿Cual será el valor de R2 de la recta de calibrado del enunciado? | **a)** | 0,999 | **38, 39** |
 | 4 | Tras añadir los reactivos se ve una coloración azulada y el procedimiento indica medir a 620 nm | **a)** | El color observado es el esperado por lo que se puede seguir con el análisis | 25 *(no la cita)* |
-| 5 | Indicar que nivel de contención es suficiente para que el laboratorio objeto de la auditoría pueda realizar… | **b)** | Laboratorio tipo 2 | 9 *(pendiente)* |
+| 5 | Indicar que nivel de contención es suficiente para que el laboratorio objeto de la auditoría pueda realizar… | **b)** | Laboratorio tipo 2 | **9, 10** |
 | 6 | La ISO 17025 es una norma: | **b)** | Que es aplicada por los laboratorios de ensayo y calibración con el objetivo de demostrar… | **40** |
 | 7 | Adición de «patrón interno» de 5 mg/L; absorbancia total 0,50: concentración del analito según la recta del enunciado | **ANULADA** | — *(en la provisional era la b)* | **39** |
 | 8 | Se desea preparar una disolución de concentración de 1 M de hidróxido sódico. ¿Cuál de las siguientes preparaciones… | **a)** | 40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada | 22 *(no la cita)* |
 | 9 | Se desea preparar una disolución de un analito de una concentración de 10 mg/l a partir de una solución madre de… | **c)** | Pipetear 1 ml de la solución madre y llevarlos a matraz aforado de 100 ml con agua… | 22 *(no la cita)* |
 | 10 | ¿Cual de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de… | **ANULADA** | — *(en la provisional era la b)* | **38** |
-| 11 | Escherichia coli es miembro de la familia Enterobacteriaceae. Las enterobacterias se caracterizan por: | **b)** | Ser gramnegativos, aerobios y anaerobios facultativos y fermentar azucares | 15, 16 *(pendiente)* |
-| 12 | Los medios de cultivo para analizar Escherichia coli contienen | **a)** | Un sustrato específico para la β-galactosidasa y otro para la β-glucuronidasa | 12, 18 *(pendiente)* |
-| 13 | La concentración de Escherichia coli en aguas de consumo humano se expresa en | **c)** | ufc/100 mL | 18 *(pendiente)* |
-| 14 | El método de análisis oficial de Escherichia coli y bacterias coliformes viene recogido en la norma | **d)** | UNE EN ISO 9308-1 o UNE EN ISO 9308-2 | 18 *(pendiente)* |
-| 15 | El tiempo máximo de transporte y almacenamiento de una muestra de agua, adecuadamente conservada, para el analizar… | **b)** | 18 horas | 18 *(pendiente)* |
-| 16 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml de agua por el método del NMP con una… | **a)** | 30,6 | 13, 18 *(pendiente)* |
-| 17 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml de agua por el método del NMP con una… | **b)** | 12,4 | 13, 18 *(pendiente)* |
-| 18 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml agua por el método de filtración por… | **d)** | 35 | 18 *(pendiente)* |
-| 19 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml agua por el método de se obtienen 20… | **c)** | 15 | 18 *(pendiente)* |
-| 20 | Al realizar una tinción de Gram de Escherichia coli, esta queda teñida de color: | **b)** | Rosa | 14 *(pendiente)* |
+| 11 | Escherichia coli es miembro de la familia Enterobacteriaceae. Las enterobacterias se caracterizan por: | **b)** | Ser gramnegativos, aerobios y anaerobios facultativos y fermentar azucares | **14, 15, 16** |
+| 12 | Los medios de cultivo para analizar Escherichia coli contienen | **a)** | Un sustrato específico para la β-galactosidasa y otro para la β-glucuronidasa | **12, 18** |
+| 13 | La concentración de Escherichia coli en aguas de consumo humano se expresa en | **c)** | ufc/100 mL | **13, 18** |
+| 14 | El método de análisis oficial de Escherichia coli y bacterias coliformes viene recogido en la norma | **d)** | UNE EN ISO 9308-1 o UNE EN ISO 9308-2 | **18** |
+| 15 | El tiempo máximo de transporte y almacenamiento de una muestra de agua, adecuadamente conservada, para el analizar… | **b)** | 18 horas | **18** |
+| 16 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml de agua por el método del NMP con una… | **a)** | 30,6 | **13, 18** |
+| 17 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml de agua por el método del NMP con una… | **b)** | 12,4 | **13, 18** |
+| 18 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml agua por el método de filtración por… | **d)** | 35 | **13, 18** |
+| 19 | Se analiza Escherichia coli y bacterias coliformes en una muestra de 100 ml agua por el método de se obtienen 20… | **c)** | 15 | **13, 18** |
+| 20 | Al realizar una tinción de Gram de Escherichia coli, esta queda teñida de color: | **b)** | Rosa | **14** |
 | 21 | pH | **a)** | pHmetro | **33** |
 | 22 | Oxidabilidad | **b)** | Permanganimetría | **31, 33, 34** |
 | 23 | Trihalometanos | **c)** | Cromatografía de gases con purga y trampa y detección electrónica | **31** |
@@ -182,7 +182,7 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 
 | Nº | Pregunta | Oficial | Respuesta | Tema |
 | --- | --- | --- | --- | --- |
-| 1 | Son funcionarios interinos los que, por razones expresamente justificadas de necesidad y urgencia, son nombrados… | **c)** | La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de… | 7 *(pendiente)* |
+| 1 | Son funcionarios interinos los que, por razones expresamente justificadas de necesidad y urgencia, son nombrados… | **c)** | La existencia de plazas vacantes, cuando no sea posible su cobertura por funcionarios de… | **7** |
 | 2 | En la determinación de cloruro por volumetría, el agente valorante es: | **c)** | Nitrato de plata | **21, 22** |
 | 3 | ¿Qué método de los siguientes utilizaría para la medida de la materia orgánica en agua? | **c)** | Método del permanganato | **33** |
 | 4 | ¿Qué detector le parece mas adecuado para el análisis de Trihalometanos por cromatografía gaseosa? | **a)** | ECD ó Detector de Captura Electrónica | **31** |
@@ -193,11 +193,11 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 | 9 | Un cromatógrafo de gases por sí solo: | **b)** | Separa diferentes compuestos | **31** |
 | 10 | Hablando de técnicas espectroscópicas, se entiende por plasma: | **c)** | Un gas caliente generalmente Argón, parcialmente ionizado y eléctricamente neutro | **27** |
 | 11 | Actualmente se conoce como detector universal al: | **c)** | Detector selectivo de masas o MSD | **31** |
-| 12 | Un agente biológico que puede causar una enfermedad grave en las personas, con riesgo de que se propague a ia… | **b)** | Un agente biológico del grupo 3 | 9 *(pendiente)* |
-| 13 | Tras el crecimiento en el medio selectivo elegido, se confirma una colonia como Legionella spp cuando: | **c)** | Es capaz de crecer en agar BCYE y no en agar BCYE sin L-cisteína | 18 *(pendiente)* |
+| 12 | Un agente biológico que puede causar una enfermedad grave en las personas, con riesgo de que se propague a ia… | **b)** | Un agente biológico del grupo 3 | **9** |
+| 13 | Tras el crecimiento en el medio selectivo elegido, se confirma una colonia como Legionella spp cuando: | **c)** | Es capaz de crecer en agar BCYE y no en agar BCYE sin L-cisteína | **16, 18** |
 | 14 | Se entiende como especificidad de un medio de cultivo: | **b)** | Demostración, bajo condiciones definidas, de que los microorganismos no diana no… | **38** |
-| 15 | Para diferenciar Pseudomonas de Enterobacterias, se utiliza la prueba bioquímica | **c)** | Oxidasa | 16 *(pendiente)* |
-| 16 | Cuál de las siguientes bacterias es Gram negativo: | **c)** | Citrobacter freundii | 15, 16 *(pendiente)* |
+| 15 | Para diferenciar Pseudomonas de Enterobacterias, se utiliza la prueba bioquímica | **c)** | Oxidasa | **16** |
+| 16 | Cuál de las siguientes bacterias es Gram negativo: | **c)** | Citrobacter freundii | **14, 15, 16, 19** |
 | 17 | ¿Cuál de los siguientes equipos y materiales de laboratorio NO se utiliza en una determinación rutinaria de cloro… | **c)** | Una estufa | 25, 33 *(no la cita)* |
 | 18 | En una calibración lineal mediante el ajuste por mínimos cuadrados, ¿cuál de los siguientes valores de R2 indica… | **a)** | 1,0 | **38, 39** |
 | 19 | Entre las técnicas de trabajo asociadas a las volumetrías, la valoración directa es: | **c)** | Aquella en la cual el reactivo valorante se adiciona directamente sobre el problema | **22, 33** |
@@ -220,11 +220,11 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 | 8 | Análisis de Demanda Bioquímica de Oxígeno (DBO₅) | **b)** | Método de diluciones | **34** |
 | 9 | Análisis de Nitrógeno total: | **b)** | Combustión oxidativa con quimioluminiscencia | **35** |
 | 10 | Análisis de Fósforo total | **a)** | Método de digestión ácida y espectrofotometría de absorción molecular UV-VISIBLE | **35** |
-| 11 | El recuento de colonias a 22 °C en una muestra de agua se realiza por: | **a)** | La técnica de siembra en profundidad | 18 *(pendiente)* |
-| 12 | Para el recuento de enterococos intestinales en aguas de consumo se utiliza el medio de cultivo: | **d)** | Slanetz y Bartley | 18 *(pendiente)* |
-| 13 | Escherichia coli β-D-glucuronidasa-glucuronidasa positivo forman colonias en el medio de cultivo CCA de color: | **a)** | De azul oscuro a violeta | 18 *(pendiente)* |
-| 14 | Si realiza un análisis con un factor de dilución 1:100 y el resultado de su NMP es de 14,5, ¿Cual es el resultado… | **b)** | 1450 | 13 *(pendiente)* |
-| 15 | En el recuento de Clostridium perfringens en aguas, las placas se deben incubar con las siguientes condiciones: | **a)** | A 44 °C, en condiciones de anaerobiosis | 18 *(pendiente)* |
+| 11 | El recuento de colonias a 22 °C en una muestra de agua se realiza por: | **a)** | La técnica de siembra en profundidad | **12, 18** |
+| 12 | Para el recuento de enterococos intestinales en aguas de consumo se utiliza el medio de cultivo: | **d)** | Slanetz y Bartley | **12, 18** |
+| 13 | Escherichia coli β-D-glucuronidasa-glucuronidasa positivo forman colonias en el medio de cultivo CCA de color: | **a)** | De azul oscuro a violeta | **12, 18** |
+| 14 | Si realiza un análisis con un factor de dilución 1:100 y el resultado de su NMP es de 14,5, ¿Cual es el resultado… | **b)** | 1450 | **13, 18** |
+| 15 | En el recuento de Clostridium perfringens en aguas, las placas se deben incubar con las siguientes condiciones: | **a)** | A 44 °C, en condiciones de anaerobiosis | **10, 18** |
 | 16 | Pictograma: llama (GHS02) | **a)** | Inflamable | 20 *(no la cita)* |
 | 17 | Pictograma: signo de exclamación (GHS07) | **c)** | Peligro para la salud | 20 *(no la cita)* |
 | 18 | Pictograma: peligro grave para la salud (GHS08) | **d)** | Peligro grave para la salud | 20 *(no la cita)* |
