@@ -12,6 +12,7 @@ import {
   guardarEdicion,
   guardarOpciones,
   huella,
+  leerDescarga,
   leerEdicion,
   leerOpciones,
   type Letra,
@@ -62,6 +63,7 @@ function EditorTema({ tema, cuerpo }: { tema: TemaVista; cuerpo: string }) {
   const [estado, setEstado] = useState<{ cambios: boolean; error: string | null; hora: string } | null>(null)
   const [titulos, setTitulos] = useState<string[]>([])
   const [confirmar, setConfirmar] = useState(false)
+  const [word, setWord] = useState<'listo' | 'generando' | string>('listo')
 
   const editor = useEditor({
     extensions: EXTENSIONES,
@@ -107,6 +109,33 @@ function EditorTema({ tema, cuerpo }: { tema: TemaVista; cuerpo: string }) {
     guardar()
     const url = `${window.location.origin}${window.location.pathname}#/imprimir/tema/${n}?edicion=1&auto=1`
     window.open(url, '_blank', 'noopener')
+  }
+
+  /**
+   * El Word se genera aqui mismo, del mismo Markdown que el PDF (la descarga
+   * en curso). La libreria docx solo se descarga al pulsar el boton.
+   */
+  const descargarWord = async () => {
+    window.clearTimeout(temporizador.current)
+    guardar()
+    const d = leerDescarga()
+    if (!d || d.tema !== n) return
+    setWord('generando')
+    try {
+      const { generarWord } = await import('../editor/word')
+      const blob = await generarWord({ tema, md: d.md, opciones: d.opciones })
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `Tema ${String(n).padStart(2, '0')} - Apuntes.docx`
+      document.body.append(a)
+      a.click()
+      a.remove()
+      window.setTimeout(() => URL.revokeObjectURL(url), 60000)
+      setWord('listo')
+    } catch (e) {
+      setWord(`No se ha podido generar el Word: ${e instanceof Error ? e.message : String(e)}`)
+    }
   }
 
   const volverAlOriginal = () => {
@@ -219,6 +248,14 @@ function EditorTema({ tema, cuerpo }: { tema: TemaVista; cuerpo: string }) {
               Volver al original
             </button>
           ))}
+        {word !== 'listo' && word !== 'generando' && (
+          <span className="ed-estado-error" role="alert">
+            {word}
+          </span>
+        )}
+        <button className="btn" onClick={descargarWord} disabled={word === 'generando'}>
+          {word === 'generando' ? 'Generando el Word…' : 'Descargar Word'}
+        </button>
         <button className="btn btn-pri" onClick={descargarPDF}>
           Descargar PDF
         </button>

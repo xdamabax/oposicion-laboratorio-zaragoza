@@ -1479,3 +1479,8 @@ body:has(.imp-vista) {
   padding: 18mm 16mm;
   box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
 }
+
+.ed-estado-error {
+  color: var(--bad);
+  font-size: 0.9rem;
+}

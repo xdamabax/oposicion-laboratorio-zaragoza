@@ -14,7 +14,8 @@
     "verificar:figuras": "node scripts/verificar-figuras.js",
     "verificar:repaso": "node scripts/verificar-repaso.js",
     "verificar:pdf": "node scripts/verificar-pdf.js",
-    "verificar:editor": "node scripts/verificar-editor.js"
+    "verificar:editor": "node scripts/verificar-editor.js",
+    "verificar:word": "node scripts/verificar-word.js"
   },
   "dependencies": {
     "@tiptap/core": "^3.31.4",
@@ -23,9 +24,11 @@
     "@tiptap/pm": "^3.31.4",
     "@tiptap/react": "^3.31.4",
     "@tiptap/starter-kit": "^3.31.4",
+    "docx": "^9.8.1",
     "mdast-util-from-markdown": "^2.1.0",
     "mdast-util-gfm": "^3.1.0",
     "mdast-util-to-markdown": "^2.2.0",
+    "mdast-util-to-string": "^4.0.0",
     "micromark-extension-gfm": "^3.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -38,6 +41,7 @@
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.2",
+    "jszip": "^3.10.2",
     "pdfjs-dist": "^4.10.38",
     "puppeteer-core": "^25.9.0",
     "typescript": "^5.9.2",
