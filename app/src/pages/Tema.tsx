@@ -88,6 +88,9 @@ export default function Tema() {
           <BotonPDF ruta={`/imprimir/tema/${tema.numero}`}>
             Descargar este apunte en PDF
           </BotonPDF>
+          <Link className="btn" to={`/editar/tema/${tema.numero}`}>
+            Editar antes de descargar
+          </Link>
         </div>
       )}
       {vista === 'apunte' && <Apunte tema={tema} />}

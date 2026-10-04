@@ -83,6 +83,8 @@ app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
 scripts/verificar.js    Las dos baterías de verificación de una vez.
 scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie ni salta sin necesidad.
+scripts/verificar-editor.js  Editor de descarga: el apunte sin tocar da el mismo PDF, y sus funciones.
+app/src/editor/          Editor de descarga: Markdown <-> documento del editor, esquema y almacén local.
 scripts/comun.js        Piezas compartidas: encontrar Chrome, servir dist/, listar temas.
 ```
 
@@ -206,6 +208,16 @@ npm run export:pdf -- todo        # temario + apuntes y test de cada tema
 
 Los ficheros salen en `export/` (ignorada por git). Requiere `npm run build` previo y un Chrome instalado; con `--base <url>` puede apuntarse a la web publicada en lugar de a `dist/`, y con `--chrome <ruta>` indicarse otro ejecutable.
 
+### Editar antes de descargar
+
+En la pestaña **Apuntes**, **Editar antes de descargar** abre `#/editar/tema/:n`: un editor visual (TipTap) con el apunte dentro, unas opciones y una vista previa. Se puede reescribir, partir párrafos y meter saltos de línea (Mayús+Intro), subir o bajar bloques (Alt+↑/↓), quitarlos, añadir saltos de página (Ctrl+Intro) y tocar las tablas (filas y columnas). Las figuras son bloques cerrados: se mueven o se quitan, pero no se editan por dentro. Las opciones son la letra (10, 11 o 12 pt), los márgenes (estrechos, normales o anchos), qué secciones salen y si sale el recuadro de fuentes.
+
+**Lo editado no cambia el apunte de la app**: se guarda en este navegador (localStorage, una entrada por tema y solo si hay cambios) y solo vale para descargar. «Volver al original» lo descarta. Si después se actualiza el apunte, el editor avisa de que la edición se hizo sobre una versión anterior. Al ser localStorage, las ediciones no pasan a otro navegador ni a otro dispositivo, y se pierden si se borran los datos del sitio.
+
+**Por qué guarda Markdown y no su propio formato**: el PDF sigue saliendo de la vista de impresión de siempre (`#/imprimir/tema/:n?edicion=1`), con todas sus reglas de saltos de página. Si el apunte sin tocar vuelve del editor como un Markdown equivalente, el PDF es por fuerza el mismo; `verificar-editor.js` lo comprueba. El editor solo pesa al abrirlo: se carga aparte (unos 155 kB comprimidos).
+
+`app/src/editor/markdown.ts` hace la ida y la vuelta a través de mdast, el mismo árbol que usa react-markdown; `extensiones.tsx` define qué se puede escribir (nada que no pueda volver a Markdown: ni subrayado ni colores); `almacen.ts`, lo que se guarda.
+
 ### El enlace que aparecia en el pie del PDF
 
 **No lo escribe esta app.** Ni la portada, ni el pie, ni las fuentes llevan la direccion de la web publicada: comprobado por busqueda en el codigo y en los tres PDF generados. Lo que se veia al pie de cada pagina —y arriba el titulo y la fecha— lo dibuja **el propio navegador** cuando la casilla **«Encabezados y pies de pagina»** del dialogo de impresion esta marcada, que es como viene de fabrica. Es un ajuste del navegador, no del documento.
@@ -254,6 +266,8 @@ Los controles que no aplican a un tema (un tema de la parte común no tiene supu
 `verificar-pdf.js` (`npm run verificar:pdf -- 7 39`) — **saltos de página del PDF de apuntes**. Comprueba que ningún apartado arranque huérfano al pie de una página: un título solo, una entrada que acaba en «:» separada de lo que presenta, una tabla con la cabecera y una fila baja (de uno o dos renglones), o una lista o un párrafo con un solo renglón detrás de su título. El navegador no dice en qué página cae cada cosa, pero el PDF sí: Chrome lo genera **etiquetado** (H2, P, Table, TR, L…) y pdf.js lee el árbol página a página. No siembra nada en el DOM, porque cualquier marca movía los saltos que se querían medir, e imprime con las mismas opciones que la exportación (`OPCIONES_PDF` en `comun.js`). Con `--sin-reglas` apaga las reglas de la hoja de impresión y exige que aparezcan huérfanos: sobre los 28 temas escritos aparecen 135; con las reglas, ninguno.
 
 El defecto contrario también se mide: un **salto innecesario**, cuando una regla empuja de más y la página acaba con un hueco en blanco donde cabía lo que abre la siguiente (todo lo que hay antes de su primer título, o el arranque mínimo de su primer bloque: dos renglones, dos elementos de lista, o la cabecera con una o dos filas). Así se encontraron, el 04/10/2026, cadenas título-párrafo-título pegadas que partían un párrafo dejando 277 pt en blanco (tema 29, «b) Capa delgada»), un recuadro de fuentes que saltaba entero y dejaba una página con 6 renglones (tema 28) y elementos de lista de varios párrafos que no se podían partir (tema 23). Con `--reglas-viejas` vuelve a las reglas de antes de ese arreglo y exige saltos innecesarios: en los 40 temas aparecen 29; con las reglas de ahora, ninguno, y `--sin-reglas` sigue sacando 166 huérfanos.
+
+`verificar-editor.js` (`npm run verificar:editor`) — **el editor de descarga**. En cada tema abre el apunte en el editor sin tocar nada y exige que lo que manda a imprimir dé **el mismo HTML impreso y el mismo PDF** (renglón a renglón, con su posición) que el botón de siempre; con `--referencia <url>` el original se toma de otra web, por ejemplo la publicada antes de un cambio, para comparar con el PDF de ese día. También exige que abrir sin tocar no guarde nada. En el tema 20 prueba las funciones: editar (se guarda, sobrevive a recargar, sale en la descarga y **no** en la app), volver al original, mover un bloque, el salto de página (lo de detrás abre página con el salto y no sin él) y las cuatro opciones, medidas en la hoja impresa o en el PDF. Con `--sabotajes` estropea lo que sale del editor (una letra, una lista suelta que sale apretada, una figura perdida) y exige que la ida y vuelta lo vea; un sabotaje que al releerlo no cambia nada se señala como tal en lugar de pasar por «no detectado». Única licencia: una cursiva dentro de otra cursiva cuenta como una, porque el editor no puede anidarlas y se ven igual (tema 36); el PDF, que se compara exacto, lo confirma.
 
 ### Las pruebas se prueban a sí mismas
 

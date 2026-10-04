@@ -1,3 +1,4 @@
+import { Suspense, lazy } from 'react'
 import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import Inicio from './pages/Inicio'
 import Temas from './pages/Temas'
@@ -6,6 +7,9 @@ import Progreso from './pages/Progreso'
 import Figuras from './pages/Figuras'
 import { ImprimirTema, ImprimirTemario, ImprimirTest } from './pages/Imprimir'
 import SelectorTema from './components/SelectorTema'
+
+// El editor de descarga arrastra TipTap: se carga solo cuando se abre.
+const Editar = lazy(() => import('./pages/Editar'))
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
@@ -57,6 +61,14 @@ export default function App() {
           <Route path="/tema/:numero" element={<Tema />} />
           <Route path="/progreso" element={<Progreso />} />
           <Route path="/figuras" element={<Figuras />} />
+          <Route
+            path="/editar/tema/:numero"
+            element={
+              <Suspense fallback={<p className="sub">Cargando el editor…</p>}>
+                <Editar />
+              </Suspense>
+            }
+          />
           <Route path="*" element={<NoEncontrado />} />
         </Routes>
       </main>

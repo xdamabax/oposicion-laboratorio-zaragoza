@@ -1,9 +1,16 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams, useSearchParams } from 'react-router-dom'
 import { TEMAS, getTema } from '../content'
 import Markdown from '../components/Markdown'
 import Figura from '../components/figuras/Figura'
 import type { PreguntaTest, TemaVista } from '../types'
+import {
+  CLAVE_DE_LA_DESCARGA,
+  MARGENES_MM,
+  escalaRenglon,
+  leerDescarga,
+  type Descarga,
+} from '../editor/almacen'
 
 const LETRAS = ['a', 'b', 'c', 'd', 'e', 'f']
 
@@ -104,7 +111,13 @@ function Cabecera({ subtitulo }: { subtitulo: string }) {
   )
 }
 
-function ApunteImpreso({ tema }: { tema: TemaVista }) {
+/**
+ * Lo que cambia la descarga preparada en el editor: el Markdown (ya sin las
+ * secciones ocultas), la letra, los margenes y si sale el recuadro de fuentes.
+ * Sin ella, el apunte original con las opciones de siempre.
+ */
+function ApunteImpreso({ tema, descarga }: { tema: TemaVista; descarga?: Descarga }) {
+  const opciones = descarga?.opciones
   return (
     <section className="imp-tema">
       <h1>
@@ -115,18 +128,22 @@ function ApunteImpreso({ tema }: { tema: TemaVista }) {
           {tema.apunte.estado === 'borrador' && (
             <p className="imp-aviso">Borrador pendiente de revisión.</p>
           )}
-          <Markdown>{tema.apunte.cuerpo}</Markdown>
-          <div className="imp-fuentes">
-            <p className="imp-fuentes-titulo">
-              <b>Fuentes y verificación</b>
-            </p>
-            <ul>
-              {tema.apunte.fuentes.map((f) => (
-                <li key={f}>{f}</li>
-              ))}
-            </ul>
-            {tema.apunte.verificado && <p>Verificado el {tema.apunte.verificado}.</p>}
-          </div>
+          <Markdown escala={opciones ? escalaRenglon(opciones) : 1}>
+            {descarga ? descarga.md : tema.apunte.cuerpo}
+          </Markdown>
+          {(!opciones || opciones.fuentes) && (
+            <div className="imp-fuentes">
+              <p className="imp-fuentes-titulo">
+                <b>Fuentes y verificación</b>
+              </p>
+              <ul>
+                {tema.apunte.fuentes.map((f) => (
+                  <li key={f}>{f}</li>
+                ))}
+              </ul>
+              {tema.apunte.verificado && <p>Verificado el {tema.apunte.verificado}.</p>}
+            </div>
+          )}
         </>
       ) : (
         <p className="imp-aviso">Este tema todavía no tiene apunte redactado.</p>
@@ -137,18 +154,97 @@ function ApunteImpreso({ tema }: { tema: TemaVista }) {
 
 /* ---------- Un tema ---------- */
 
+/**
+ * La descarga que ha preparado el editor para este tema, si se pide con
+ * ?edicion=1. Se vuelve a leer cuando el editor la cambia: el evento storage
+ * llega a las demas pestañas y marcos de la web, que es como se refresca la
+ * vista previa sin recargar.
+ */
+function useDescarga(tema: number): Descarga | undefined {
+  const [params] = useSearchParams()
+  const pedida = params.get('edicion') === '1'
+  const [descarga, setDescarga] = useState(() => (pedida ? leerDescarga() : null))
+
+  useEffect(() => {
+    if (!pedida) return
+    const alCambiar = (e: StorageEvent) => {
+      if (e.key === CLAVE_DE_LA_DESCARGA) setDescarga(leerDescarga())
+    }
+    window.addEventListener('storage', alCambiar)
+    return () => window.removeEventListener('storage', alCambiar)
+  }, [pedida])
+
+  return descarga && descarga.tema === tema ? descarga : undefined
+}
+
+/**
+ * Letra y margenes de la descarga. La letra escala los tamaños en pt de la hoja
+ * de impresion (--imp-escala) y tambien los que van en rem (las tablas), por eso
+ * toca el tamaño de letra raiz del documento: esta vista es una pestaña (o un
+ * marco) aparte, no la app.
+ */
+function EstiloDescarga({ descarga, vista }: { descarga: Descarga; vista: boolean }) {
+  const { letra, margenes } = descarga.opciones
+  const m = MARGENES_MM[margenes]
+
+  useEffect(() => {
+    if (letra === 11) return
+    const raiz = document.documentElement
+    const previo = raiz.style.fontSize
+    raiz.style.fontSize = `${(16 * letra) / 11}px`
+    return () => {
+      raiz.style.fontSize = previo
+    }
+  }, [letra])
+
+  return (
+    <style>{`
+      .imp { --imp-escala: ${letra / 11}; }
+      @media print { @page { margin: ${m.vertical}mm ${m.lateral}mm; } }
+      ${vista ? `@media screen { .imp.imp-vista { padding: ${m.vertical}mm ${m.lateral}mm; } }` : ''}
+    `}</style>
+  )
+}
+
+/**
+ * En la vista previa, la hoja es un A4 de verdad (210 mm) y se encoge con zoom
+ * para que quepa entera en el marco, sea cual sea su ancho.
+ */
+function useAjustarAlMarco(activo: boolean) {
+  useEffect(() => {
+    if (!activo) return
+    const raiz = document.documentElement
+    const MM = 96 / 25.4
+    const ajustar = () => {
+      raiz.style.zoom = String(Math.min(1, window.innerWidth / (210 * MM + 32)))
+    }
+    ajustar()
+    window.addEventListener('resize', ajustar)
+    return () => {
+      window.removeEventListener('resize', ajustar)
+      raiz.style.zoom = ''
+    }
+  }, [activo])
+}
+
 export function ImprimirTema() {
   const { numero } = useParams()
+  const [params] = useSearchParams()
   const tema = getTema(Number(numero))
+  const descarga = useDescarga(Number(numero))
+  // vista=1: la vista previa del editor, dentro de su marco
+  const vista = params.get('vista') === '1'
+  useAjustarAlMarco(vista)
   usePreparar(tema ? `Tema ${tema.numero} - Apuntes` : 'Tema no encontrado')
 
   if (!tema) return <p>No existe el tema {numero}.</p>
 
   return (
-    <div className="imp">
-      <NotaDialogo />
+    <div className={vista ? 'imp imp-vista' : 'imp'}>
+      {descarga && <EstiloDescarga descarga={descarga} vista={vista} />}
+      {!vista && <NotaDialogo />}
       <Cabecera subtitulo="Apuntes" />
-      <ApunteImpreso tema={tema} />
+      <ApunteImpreso tema={tema} descarga={descarga} />
     </div>
   )
 }

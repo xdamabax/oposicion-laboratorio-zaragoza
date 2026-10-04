@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Figura from './figuras/Figura'
@@ -15,7 +16,7 @@ import type { Figura as TipoFigura, TipoEsquema, TipoGHS, TipoMaterial } from '.
  * Asi el markdown sigue siendo markdown (y se exporta a PDF sin romperse),
  * pero en la app lo dibuja el componente correspondiente.
  */
-function comoFigura(src: string, alt: string): TipoFigura | null {
+export function comoFigura(src: string, alt: string): TipoFigura | null {
   const pie = alt || undefined
 
   const ghs = /^ghs:(.+)$/.exec(src)
@@ -41,8 +42,9 @@ function comoFigura(src: string, alt: string): TipoFigura | null {
 }
 
 // react-markdown sanea las URL y se comeria nuestros esquemas propios.
+// `salto:pagina` es el salto de pagina manual que mete el editor de descarga.
 const urlTransform = (url: string) =>
-  /^(ghs|bureta|material|esquema):/.test(url) ? url : defaultUrlTransform(url)
+  /^(ghs|bureta|material|esquema|salto):/.test(url) ? url : defaultUrlTransform(url)
 
 /** Texto plano de un nodo del arbol que entrega react-markdown. */
 type NodoHast = { type: string; value?: string; children?: NodoHast[] }
@@ -63,8 +65,8 @@ const RENGLON_PDF = 90
  *   - md-breve: ocupa un solo renglon. Detras de un titulo, titulo y renglon
  *     no bastan para empezar un apartado al pie de una pagina.
  */
-function clasesDeParrafo(texto: string): string | undefined {
-  const clases = [texto.endsWith(':') && 'md-entrada', texto.length <= RENGLON_PDF && 'md-breve']
+function clasesDeParrafo(texto: string, renglon: number): string | undefined {
+  const clases = [texto.endsWith(':') && 'md-entrada', texto.length <= renglon && 'md-breve']
   return clases.filter(Boolean).join(' ') || undefined
 }
 
@@ -75,28 +77,43 @@ function clasesDeParrafo(texto: string): string | undefined {
  */
 const FILA_ALTA = 250
 
-const componentes = {
-  p: ({ node, ...props }: React.ComponentProps<'p'> & { node?: NodoHast }) => (
-    <p {...props} className={clasesDeParrafo(textoDe(node).trim())} />
-  ),
-  tr: ({ node, ...props }: React.ComponentProps<'tr'> & { node?: NodoHast }) => (
-    <tr {...props} className={textoDe(node).length > FILA_ALTA ? 'md-fila-alta' : undefined} />
-  ),
-  img: ({ src, alt }: React.ComponentProps<'img'>) => {
-    const figura = typeof src === 'string' ? comoFigura(src, alt ?? '') : null
-    if (figura) return <Figura figura={figura} />
-    return <img src={src} alt={alt ?? ''} />
-  },
-  // Las tablas de normativa suelen ser anchas: van dentro de su propio scroll.
-  table: (props: React.ComponentProps<'table'>) => (
-    <div className="md-tabla">
-      <table {...props} />
-    </div>
-  ),
-  a: (props: React.ComponentProps<'a'>) => <a {...props} target="_blank" rel="noreferrer" />,
+/**
+ * Los componentes con los umbrales de renglon escalados. `escala` es cuantas
+ * veces cabe mas texto por renglon que en el PDF de siempre (A4, 11 pt,
+ * margenes normales): la da el editor de descarga cuando se cambia la letra o
+ * los margenes. Con 1, los numeros medidos tal cual.
+ */
+function crearComponentes(escala: number) {
+  const renglon = RENGLON_PDF * escala
+  const filaAlta = FILA_ALTA * escala
+  return {
+    p: ({ node, ...props }: React.ComponentProps<'p'> & { node?: NodoHast }) => (
+      <p {...props} className={clasesDeParrafo(textoDe(node).trim(), renglon)} />
+    ),
+    tr: ({ node, ...props }: React.ComponentProps<'tr'> & { node?: NodoHast }) => (
+      <tr {...props} className={textoDe(node).length > filaAlta ? 'md-fila-alta' : undefined} />
+    ),
+    img: ({ src, alt }: React.ComponentProps<'img'>) => {
+      // el salto de pagina manual del editor de descarga
+      if (src === 'salto:pagina') return <span className="md-salto-pagina" aria-hidden="true" />
+      const figura = typeof src === 'string' ? comoFigura(src, alt ?? '') : null
+      if (figura) return <Figura figura={figura} />
+      return <img src={src} alt={alt ?? ''} />
+    },
+    // Las tablas de normativa suelen ser anchas: van dentro de su propio scroll.
+    table: (props: React.ComponentProps<'table'>) => (
+      <div className="md-tabla">
+        <table {...props} />
+      </div>
+    ),
+    a: (props: React.ComponentProps<'a'>) => <a {...props} target="_blank" rel="noreferrer" />,
+  }
 }
 
-export default function Markdown({ children }: { children: string }) {
+const COMPONENTES = crearComponentes(1)
+
+export default function Markdown({ children, escala = 1 }: { children: string; escala?: number }) {
+  const componentes = useMemo(() => (escala === 1 ? COMPONENTES : crearComponentes(escala)), [escala])
   return (
     <div className="md">
       <ReactMarkdown remarkPlugins={[remarkGfm]} components={componentes} urlTransform={urlTransform}>

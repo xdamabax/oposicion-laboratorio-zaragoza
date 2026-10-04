@@ -13,9 +13,20 @@
     "verificar": "node scripts/verificar.js",
     "verificar:figuras": "node scripts/verificar-figuras.js",
     "verificar:repaso": "node scripts/verificar-repaso.js",
-    "verificar:pdf": "node scripts/verificar-pdf.js"
+    "verificar:pdf": "node scripts/verificar-pdf.js",
+    "verificar:editor": "node scripts/verificar-editor.js"
   },
   "dependencies": {
+    "@tiptap/core": "^3.31.4",
+    "@tiptap/extension-list": "^3.31.4",
+    "@tiptap/extension-table": "^3.31.4",
+    "@tiptap/pm": "^3.31.4",
+    "@tiptap/react": "^3.31.4",
+    "@tiptap/starter-kit": "^3.31.4",
+    "mdast-util-from-markdown": "^2.1.0",
+    "mdast-util-gfm": "^3.1.0",
+    "mdast-util-to-markdown": "^2.2.0",
+    "micromark-extension-gfm": "^3.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-markdown": "^10.1.0",
@@ -23,6 +34,7 @@
     "remark-gfm": "^4.0.1"
   },
   "devDependencies": {
+    "@types/mdast": "^4.0.4",
     "@types/react": "^19.2.0",
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^5.0.2",
