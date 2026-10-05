@@ -81,6 +81,9 @@ export default function Inicio() {
           <BotonPDF ruta="/imprimir/temario" primario>
             Temario completo en PDF
           </BotonPDF>
+          <Link className="btn" to="/editar/temario">
+            Preparar el temario (PDF o Word)
+          </Link>
           <Link className="btn" to="/temas">
             PDF de un tema suelto
           </Link>

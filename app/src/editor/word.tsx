@@ -34,13 +34,13 @@ import {
   PageNumber,
   Paragraph,
   ShadingType,
+  TabStopType,
   Table,
   TableCell,
   TableRow,
   TextRun,
   WidthType,
   type ILevelsOptions,
-  type INumberingOptions,
   type IRunOptions,
 } from 'docx'
 import type { List, ListItem, PhrasingContent, Root, RootContent, Table as TablaMd } from 'mdast'
@@ -50,8 +50,10 @@ import { createRoot } from 'react-dom/client'
 
 import Figura from '../components/figuras/Figura'
 import { comoFigura } from '../components/Markdown'
-import type { TemaVista } from '../types'
-import { MARGENES_MM, escalaRenglon, type OpcionesDescarga } from './almacen'
+import type { Figura as TipoFigura, TemaVista } from '../types'
+import { MARGENES_MM, escalaRenglon, type OpcionesCuestionario, type OpcionesDescarga, type OpcionesTemario } from './almacen'
+import type { CuestionarioPreparado, PreguntaPreparada } from './cuestionario'
+import { quitarSecciones } from './secciones'
 import { SALTO_PAGINA, leerMarkdown } from './markdown'
 
 /* ---------- medidas ---------- */
@@ -149,7 +151,18 @@ async function aPNG(fuente: string, ancho: number, alto: number): Promise<Uint8A
  * escondida del ancho del papel, y las convierte en PNG. Las de las celdas de
  * tabla, a su tamaño de celda (como en el PDF).
  */
-async function rasterizarFiguras(pedidas: { src: string; alt: string; enTabla: boolean }[], anchoMm: number) {
+/** Una figura que hay que dibujar. `incognita`: es la pregunta, sin rotulo que la delate (cuestionario). */
+interface PeticionFigura {
+  clave: string
+  figura: TipoFigura
+  incognita: boolean
+  enTabla: boolean
+}
+
+/** Clave de una figura del Markdown: la misma figura en una celda sale a otro tamaño. */
+const claveMd = (src: string, alt: string, enTabla: boolean) => `md|${src}|${alt}|${enTabla}`
+
+async function rasterizarFiguras(pedidas: PeticionFigura[], anchoMm: number) {
   const hoja = document.createElement('div')
   hoja.className = 'imp'
   hoja.style.cssText = `position:fixed;left:-30000px;top:0;width:${anchoMm * PX_POR_MM}px;padding:0`
@@ -160,15 +173,13 @@ async function rasterizarFiguras(pedidas: { src: string; alt: string; enTabla: b
   const hechas = new Map<string, Imagen>()
   try {
     for (const p of pedidas) {
-      const clave = `${p.src}|${p.alt}|${p.enTabla}`
+      const { clave, figura } = p
       if (hechas.has(clave)) continue
-      const figura = comoFigura(p.src, p.alt)
-      if (!figura) continue
       const caja = document.createElement('div')
       if (p.enTabla) caja.className = 'md-tabla'
       md.append(caja)
       const raiz = createRoot(caja)
-      flushSync(() => raiz.render(<Figura figura={figura} />))
+      flushSync(() => raiz.render(<Figura figura={figura} incognita={p.incognita} />))
       await Promise.all([...caja.querySelectorAll('img')].map((i) => i.decode().catch(() => undefined)))
       const dibujo = caja.querySelector('figure svg, figure img') as SVGSVGElement | HTMLImageElement | null
       const pie = caja.querySelector('figcaption')?.textContent?.trim() ?? ''
@@ -198,6 +209,12 @@ interface Contexto {
   letra: number
   anchoMm: number
   figuras: Map<string, Imagen>
+  /**
+   * Cuantos niveles bajan los titulos del Markdown. En el apunte de un tema el
+   * `##` es «Titulo 1»; en el temario completo, «Titulo 1» es cada tema y el
+   * `##` pasa a «Titulo 2».
+   */
+  desplazamiento: number
   /** listas numeradas: una instancia por lista, para que cada una empiece de nuevo */
   numeraciones: Map<number, string>
   instancia: number
@@ -228,7 +245,7 @@ function textoRuns(nodos: PhrasingContent[], f: Formato, ctx: Contexto, enTabla:
           }),
         ]
       case 'image': {
-        const img = ctx.figuras.get(`${n.url}|${n.alt ?? ''}|${enTabla}`)
+        const img = ctx.figuras.get(claveMd(n.url, n.alt ?? '', enTabla))
         if (!img) return []
         // nunca mas ancha que la caja del papel
         const max = ctx.anchoMm * PX_POR_MM
@@ -253,7 +270,7 @@ const imagenesDe = (nodos: PhrasingContent[]) => nodos.filter((n) => n.type === 
 /** El pie de cada figura del parrafo, debajo, como en la app. */
 function pies(nodos: PhrasingContent[], ctx: Contexto, enTabla: boolean, tam: number): Paragraph[] {
   return imagenesDe(nodos).flatMap((n) => {
-    const img = n.type === 'image' ? ctx.figuras.get(`${n.url}|${n.alt ?? ''}|${enTabla}`) : undefined
+    const img = n.type === 'image' ? ctx.figuras.get(claveMd(n.url, n.alt ?? '', enTabla)) : undefined
     return img?.pie
       ? [new Paragraph({ keepLines: true, spacing: { before: 40, after: 160 }, children: [new TextRun({ text: img.pie, italics: true, color: COLOR_SUAVE, size: mp(tam) })] })]
       : []
@@ -307,10 +324,10 @@ const SANGRIA_CITA = 280
 function bloque(n: RootContent, ctx: Contexto, v: Vecinos, nivelLista: number, f: Formato, sangria: number, cita = false): (Paragraph | Table)[] {
   switch (n.type) {
     case 'heading': {
-      const niveles = [HeadingLevel.HEADING_1, HeadingLevel.HEADING_1, HeadingLevel.HEADING_2, HeadingLevel.HEADING_3, HeadingLevel.HEADING_4, HeadingLevel.HEADING_5]
+      const niveles = [HeadingLevel.HEADING_1, HeadingLevel.HEADING_2, HeadingLevel.HEADING_3, HeadingLevel.HEADING_4, HeadingLevel.HEADING_5, HeadingLevel.HEADING_6]
       return [
         new Paragraph({
-          heading: niveles[n.depth - 1],
+          heading: niveles[Math.min(5, Math.max(0, n.depth - 2) + ctx.desplazamiento)],
           keepNext: true,
           keepLines: true,
           children: textoRuns(n.children, f, ctx, false),
@@ -451,12 +468,13 @@ function hoy(): string {
   return new Date().toLocaleDateString('es-ES', { day: '2-digit', month: 'long', year: 'numeric' })
 }
 
-function figurasPedidas(arbol: Root) {
-  const out: { src: string; alt: string; enTabla: boolean }[] = []
+function figurasPedidas(arbol: Root): PeticionFigura[] {
+  const out: PeticionFigura[] = []
   const recorrer = (n: { type: string; children?: unknown[] }, enTabla: boolean) => {
     if (n.type === 'image') {
       const img = n as unknown as { url: string; alt?: string }
-      if (img.url !== SALTO_PAGINA) out.push({ src: img.url, alt: img.alt ?? '', enTabla })
+      const figura = img.url === SALTO_PAGINA ? null : comoFigura(img.url, img.alt ?? '')
+      if (figura) out.push({ clave: claveMd(img.url, img.alt ?? '', enTabla), figura, incognita: false, enTabla })
     }
     for (const c of (n.children ?? []) as { type: string }[]) recorrer(c, enTabla || n.type === 'table')
   }
@@ -464,87 +482,108 @@ function figurasPedidas(arbol: Root) {
   return out
 }
 
-export async function generarWord({ tema, md, opciones }: { tema: TemaVista; md: string; opciones: OpcionesDescarga }): Promise<Blob> {
-  const apunte = tema.apunte!
-  const m = MARGENES_MM[opciones.margenes]
-  const anchoMm = 210 - 2 * m.lateral
-  const escala = opciones.letra / 11
-  const arbol = leerMarkdown(md)
+/* ---------- lo comun a los tres documentos ---------- */
 
-  const ctx: Contexto = {
-    escala: escalaRenglon(opciones),
-    letra: escala,
+/** Tamaño (pt), negrita, cursiva y raya inferior de cada nivel de titulo, de mayor a menor. */
+const NIVELES_TITULO = [
+  { pt: 17, borde: false, cursiva: false, antes: 240, despues: 240 },
+  { pt: 13, borde: true, cursiva: false, antes: 360, despues: 120 },
+  { pt: 12, borde: false, cursiva: false, antes: 280, despues: 80 },
+  { pt: 11, borde: false, cursiva: false, antes: 240, despues: 60 },
+  { pt: 11, borde: false, cursiva: true, antes: 200, despues: 60 },
+  { pt: 11, borde: false, cursiva: true, antes: 200, despues: 60 },
+  { pt: 11, borde: false, cursiva: true, antes: 200, despues: 60 },
+]
+
+interface Pagina {
+  letra: number
+  margenes: OpcionesDescarga['margenes']
+}
+
+async function crearContexto(o: Pagina, figuras: PeticionFigura[], desplazamiento: number): Promise<Contexto> {
+  const anchoMm = 210 - 2 * MARGENES_MM[o.margenes].lateral
+  return {
+    escala: escalaRenglon({ letra: o.letra as OpcionesDescarga['letra'], margenes: o.margenes }),
+    letra: o.letra / 11,
     anchoMm,
-    figuras: await rasterizarFiguras(figurasPedidas(arbol), anchoMm),
+    figuras: await rasterizarFiguras(figuras, anchoMm),
+    desplazamiento,
     numeraciones: new Map(),
     instancia: 0,
   }
-  const t = (pt: number) => mp(pt * escala)
+}
 
-  const cuerpo = bloques(arbol.children, ctx)
-  const listaFuentes = ++ctx.instancia
-
-  const fuentes: Paragraph[] = opciones.fuentes
-    ? [
-        new Paragraph({
-          keepNext: true,
-          spacing: { before: 480, after: 80 },
-          shading: { type: ShadingType.CLEAR, fill: 'F6F7F9', color: 'auto' },
-          children: [new TextRun({ text: 'Fuentes y verificación', bold: true, size: t(9.5) })],
-        }),
-        ...apunte.fuentes.map(
-          (fuente, i) =>
-            new Paragraph({
-              numbering: { reference: 'puntos', level: 0, instance: listaFuentes },
-              keepLines: true,
-              keepNext: i === 0 && apunte.fuentes.length > 1 ? true : undefined,
-              spacing: { after: 40 },
-              shading: { type: ShadingType.CLEAR, fill: 'F6F7F9', color: 'auto' },
-              children: [new TextRun({ text: fuente, size: t(9.5) })],
-            }),
-        ),
-        ...(apunte.verificado
-          ? [
-              new Paragraph({
-                shading: { type: ShadingType.CLEAR, fill: 'F6F7F9', color: 'auto' },
-                children: [new TextRun({ text: `Verificado el ${apunte.verificado}.`, size: t(9.5) })],
-              }),
-            ]
-          : []),
-      ]
-    : []
-
-  const numbering: INumberingOptions = {
-    config: [
-      { reference: 'puntos', levels: niveles(false) },
-      ...[...ctx.numeraciones.entries()].map(([inicio, referencia]) => ({ reference: referencia, levels: niveles(true, inicio) })),
-    ],
+/**
+ * El documento: estilos (los titulos bajan un nivel si hay titulo de portada,
+ * como en el temario), numeraciones, pagina A4 con los margenes elegidos,
+ * cabecera y pie con el numero de pagina.
+ */
+function documento({
+  ctx,
+  o,
+  titulo,
+  descripcion,
+  cabecera,
+  pie,
+  portada,
+  hijos,
+}: {
+  ctx: Contexto
+  o: Pagina
+  titulo: string
+  descripcion: string
+  cabecera: string
+  pie: string
+  /** El temario: el estilo Titulo es la portada y cada tema es «Titulo 1» */
+  portada?: boolean
+  hijos: (Paragraph | Table)[]
+}): Document {
+  const m = MARGENES_MM[o.margenes]
+  const t = (pt: number) => mp((pt * o.letra) / 11)
+  const nivel = (i: number) => {
+    const n = NIVELES_TITULO[Math.min(i, NIVELES_TITULO.length - 1)]
+    return {
+      run: { font: 'Georgia', size: t(n.pt), bold: true, italics: n.cursiva || undefined, color: COLOR_TEXTO },
+      paragraph: {
+        spacing: { before: n.antes, after: n.despues },
+        keepNext: true,
+        keepLines: true,
+        ...(n.borde ? { border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: 'CCCCCC', space: 2 } } } : {}),
+      },
+    }
   }
+  // con portada, «Titulo» es la portada (mas grande) y los titulos empiezan en el nivel 0
+  const primero = portada ? 0 : 1
+  const textoPie = (x: string) => new TextRun({ text: x, size: mp(8), color: COLOR_SUAVE, font: 'Calibri' })
 
-  const pie = (texto: string) => new TextRun({ text: texto, size: mp(8), color: COLOR_SUAVE, font: 'Calibri' })
-
-  const doc = new Document({
+  return new Document({
     creator: 'Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza',
-    title: `Tema ${tema.numero}. ${tema.titulo}`,
-    description: `Apuntes del tema ${tema.numero}, generados el ${hoy()}`,
+    title: titulo,
+    description: descripcion,
     styles: {
       default: {
         document: {
           run: { font: 'Georgia', size: t(11), color: COLOR_TEXTO, language: { value: 'es-ES' } },
           paragraph: { spacing: { after: 120, line: 312 } },
         },
-        title: { run: { font: 'Georgia', size: t(17), bold: true, color: COLOR_TEXTO }, paragraph: { spacing: { after: 240 }, keepNext: true } },
-        heading1: {
-          run: { font: 'Georgia', size: t(13), bold: true, color: COLOR_TEXTO },
-          paragraph: { spacing: { before: 360, after: 120 }, keepNext: true, keepLines: true, border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: 'CCCCCC', space: 2 } } },
-        },
-        heading2: { run: { font: 'Georgia', size: t(12), bold: true, color: COLOR_TEXTO }, paragraph: { spacing: { before: 280, after: 80 }, keepNext: true, keepLines: true } },
-        heading3: { run: { font: 'Georgia', size: t(11), bold: true, color: COLOR_TEXTO }, paragraph: { spacing: { before: 240, after: 60 }, keepNext: true, keepLines: true } },
-        heading4: { run: { font: 'Georgia', size: t(11), bold: true, italics: true, color: COLOR_TEXTO }, paragraph: { spacing: { before: 200, after: 60 }, keepNext: true, keepLines: true } },
+        title: portada
+          ? { run: { font: 'Georgia', size: t(26), bold: true, color: COLOR_TEXTO }, paragraph: { alignment: AlignmentType.CENTER, spacing: { before: 120, after: 240 } } }
+          : nivel(0),
+        heading1: nivel(primero),
+        heading2: nivel(primero + 1),
+        heading3: nivel(primero + 2),
+        heading4: nivel(primero + 3),
+        heading5: nivel(primero + 4),
+        heading6: nivel(primero + 5),
         hyperlink: { run: { color: COLOR_ACENTO, underline: {} } },
       },
     },
-    numbering,
+    numbering: {
+      config: [
+        { reference: 'puntos', levels: niveles(false) },
+        ...[...ctx.numeraciones.entries()].map(([inicio, referencia]) => ({ reference: referencia, levels: niveles(true, inicio) })),
+      ],
+    },
     sections: [
       {
         properties: {
@@ -558,32 +597,314 @@ export async function generarWord({ tema, md, opciones }: { tema: TemaVista; md:
             },
           },
         },
-        headers: {
-          default: new Header({
-            children: [new Paragraph({ children: [pie(`Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza · Apuntes · Generado el ${hoy()}`)] })],
-          }),
-        },
+        headers: { default: new Header({ children: [new Paragraph({ children: [textoPie(cabecera)] })] }) },
         footers: {
           default: new Footer({
             children: [
               new Paragraph({
                 alignment: AlignmentType.CENTER,
-                children: [new TextRun({ children: [`Tema ${tema.numero} · página `, PageNumber.CURRENT, ' de ', PageNumber.TOTAL_PAGES], size: mp(8), color: COLOR_SUAVE, font: 'Calibri' })],
+                children: [new TextRun({ children: [`${pie}página `, PageNumber.CURRENT, ' de ', PageNumber.TOTAL_PAGES], size: mp(8), color: COLOR_SUAVE, font: 'Calibri' })],
               }),
             ],
           }),
         },
-        children: [
-          new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(`Tema ${tema.numero}. ${tema.titulo}`)] }),
-          ...(apunte.estado === 'borrador'
-            ? [new Paragraph({ children: [new TextRun({ text: 'Borrador pendiente de revisión.', bold: true, color: '96631A' })] })]
-            : []),
-          ...cuerpo,
-          ...fuentes,
-        ],
+        children: hijos,
       },
     ],
   })
+}
 
-  return Packer.toBlob(doc)
+/** El recuadro de fuentes del final de un apunte. */
+function fuentesDe(apunte: NonNullable<TemaVista['apunte']>, ctx: Contexto): Paragraph[] {
+  const t = (pt: number) => mp(pt * ctx.letra)
+  const lista = ++ctx.instancia
+  const fondo = { type: ShadingType.CLEAR, fill: 'F6F7F9', color: 'auto' } as const
+  return [
+    new Paragraph({
+      keepNext: true,
+      spacing: { before: 480, after: 80 },
+      shading: fondo,
+      children: [new TextRun({ text: 'Fuentes y verificación', bold: true, size: t(9.5) })],
+    }),
+    ...apunte.fuentes.map(
+      (fuente, i) =>
+        new Paragraph({
+          numbering: { reference: 'puntos', level: 0, instance: lista },
+          keepLines: true,
+          keepNext: i === 0 && apunte.fuentes.length > 1 ? true : undefined,
+          spacing: { after: 40 },
+          shading: fondo,
+          children: [new TextRun({ text: fuente, size: t(9.5) })],
+        }),
+    ),
+    ...(apunte.verificado
+      ? [new Paragraph({ shading: fondo, children: [new TextRun({ text: `Verificado el ${apunte.verificado}.`, size: t(9.5) })] })]
+      : []),
+  ]
+}
+
+const borrador = (apunte: NonNullable<TemaVista['apunte']>) =>
+  apunte.estado === 'borrador'
+    ? [new Paragraph({ children: [new TextRun({ text: 'Borrador pendiente de revisión.', bold: true, color: '96631A' })] })]
+    : []
+
+/** Una figura suelta (las del cuestionario), con su pie si lo tiene. */
+function imagenSuelta(clave: string, ctx: Contexto): Paragraph[] {
+  const img = ctx.figuras.get(clave)
+  if (!img) return []
+  const k = Math.min(1, (ctx.anchoMm * PX_POR_MM) / img.ancho)
+  return [
+    new Paragraph({
+      keepNext: true,
+      children: [
+        new ImageRun({
+          type: 'png',
+          data: img.png,
+          transformation: { width: Math.round(img.ancho * k), height: Math.round(img.alto * k) },
+          altText: { name: img.pie || 'Figura', description: img.pie || '', title: img.pie || '' },
+        }),
+      ],
+    }),
+    ...(img.pie
+      ? [new Paragraph({ keepNext: true, spacing: { after: 160 }, children: [new TextRun({ text: img.pie, italics: true, color: COLOR_SUAVE, size: mp(9 * ctx.letra) })] })]
+      : []),
+  ]
+}
+
+/* ---------- el apunte de un tema ---------- */
+
+export async function generarWord({ tema, md, opciones }: { tema: TemaVista; md: string; opciones: OpcionesDescarga }): Promise<Blob> {
+  const apunte = tema.apunte!
+  const arbol = leerMarkdown(md)
+  const ctx = await crearContexto(opciones, figurasPedidas(arbol), 0)
+  const cuerpo = bloques(arbol.children, ctx)
+  const hijos = [
+    new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(`Tema ${tema.numero}. ${tema.titulo}`)] }),
+    ...borrador(apunte),
+    ...cuerpo,
+    ...(opciones.fuentes ? fuentesDe(apunte, ctx) : []),
+  ]
+  return Packer.toBlob(
+    documento({
+      ctx,
+      o: opciones,
+      titulo: `Tema ${tema.numero}. ${tema.titulo}`,
+      descripcion: `Apuntes del tema ${tema.numero}, generados el ${hoy()}`,
+      cabecera: `Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza · Apuntes · Generado el ${hoy()}`,
+      pie: `Tema ${tema.numero} · `,
+      hijos,
+    }),
+  )
+}
+
+/* ---------- el temario completo ---------- */
+
+/**
+ * Portada, indice y los temas elegidos, cada uno en su version. Cada tema es
+ * «Titulo 1» y empieza pagina; sus apartados bajan un nivel. El indice es una
+ * lista escrita, como en el PDF: el de Word (campo TOC) obliga a actualizarlo
+ * al abrir, y el panel de navegacion ya da los temas.
+ */
+export async function generarWordTemario({
+  temas,
+  opciones,
+}: {
+  temas: { tema: TemaVista; md: string; ocultas: readonly string[] }[]
+  opciones: OpcionesTemario
+}): Promise<Blob> {
+  const arboles = temas.map((x) => quitarSecciones(leerMarkdown(x.md), x.ocultas))
+  const ctx = await crearContexto(opciones, arboles.flatMap(figurasPedidas), 1)
+  const t = (pt: number) => mp(pt * ctx.letra)
+  const hijos: (Paragraph | Table)[] = []
+  // la siguiente pieza empieza pagina si ya hay algo delante
+  const nuevaPagina = () => hijos.length > 0
+
+  if (opciones.portada) {
+    const centrado = (texto: string, extra: IRunOptions = {}, antes = 0) =>
+      new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: antes, after: 120 }, children: [new TextRun({ text: texto, ...extra })] })
+    hijos.push(
+      centrado('OPOSICIÓN · AYUNTAMIENTO DE ZARAGOZA', { size: t(9), color: COLOR_SUAVE, font: 'Calibri' }, 2400),
+      new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(opciones.titulo)] }),
+      centrado(opciones.subtitulo, { size: t(13), color: COLOR_SUAVE }),
+      centrado(temas.length < 40 ? `${temas.length} de 40 temas` : `40 temas · ${temas.length} con apunte redactado`, { size: t(9), color: COLOR_SUAVE, font: 'Calibri' }, 1200),
+      centrado('BOPZ núm. 170, de 27 de julio de 2026, anuncio núm. 5077', { size: t(9), color: COLOR_SUAVE, font: 'Calibri' }),
+      centrado(`Generado el ${hoy()}`, { size: t(9), color: COLOR_SUAVE, font: 'Calibri' }),
+    )
+  }
+
+  if (opciones.indice) {
+    const anchoTwip = Math.round(ctx.anchoMm * TWIP_POR_MM)
+    hijos.push(
+      new Paragraph({ pageBreakBefore: nuevaPagina() || undefined, spacing: { after: 200 }, children: [new TextRun({ text: 'Índice', bold: true, size: t(13) })] }),
+      ...temas.map(
+        ({ tema }) =>
+          new Paragraph({
+            tabStops: [{ type: TabStopType.RIGHT, position: anchoTwip }],
+            spacing: { after: 60 },
+            indent: { left: 440, hanging: 440 },
+            children: [
+              new TextRun({ text: `${tema.numero}.\t`, size: t(10) }),
+              new TextRun({ text: tema.titulo, size: t(10) }),
+              new TextRun({ text: `\t${tema.apunte?.estado === 'aprobado' ? 'Aprobado' : 'Borrador'}`, size: t(8), color: COLOR_SUAVE, font: 'Calibri' }),
+            ],
+          }),
+      ),
+    )
+  }
+
+  temas.forEach(({ tema }, i) => {
+    const apunte = tema.apunte!
+    hijos.push(
+      new Paragraph({
+        heading: HeadingLevel.HEADING_1,
+        pageBreakBefore: nuevaPagina() || undefined,
+        children: [new TextRun(`Tema ${tema.numero}. ${tema.titulo}`)],
+      }),
+      ...borrador(apunte),
+      ...bloques(arboles[i].children, ctx),
+      ...(opciones.fuentes ? fuentesDe(apunte, ctx) : []),
+    )
+  })
+
+  return Packer.toBlob(
+    documento({
+      ctx,
+      o: opciones,
+      titulo: opciones.titulo,
+      descripcion: `${opciones.subtitulo}: ${temas.length} temas, generado el ${hoy()}`,
+      cabecera: `Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza · Temario completo · Generado el ${hoy()}`,
+      pie: '',
+      portada: true,
+      hijos,
+    }),
+  )
+}
+
+/* ---------- el cuestionario de un tema ---------- */
+
+const LETRAS = ['a', 'b', 'c', 'd', 'e', 'f']
+
+/**
+ * El cuestionario ya preparado (prepararCuestionario: las preguntas elegidas,
+ * en su orden y con la letra correcta recalculada), el mismo que pinta el PDF.
+ * Una pregunta no se parte entre paginas: su enunciado y sus opciones van
+ * pegados («conservar con el siguiente»), igual que en el PDF.
+ */
+export async function generarWordCuestionario({
+  tema,
+  preparado,
+  opciones,
+}: {
+  tema: TemaVista
+  preparado: CuestionarioPreparado
+  opciones: OpcionesCuestionario
+}): Promise<Blob> {
+  const { test, supuestos, todas } = preparado
+  const enunciados = supuestos.map((s) => leerMarkdown(s.enunciado))
+  const peticiones: PeticionFigura[] = [
+    ...todas.filter((q) => q.figura).map((q) => ({ clave: `q|${q.id}`, figura: q.figura!, incognita: true, enTabla: false })),
+    ...supuestos.filter((s) => s.figura).map((s) => ({ clave: `s|${s.id}`, figura: s.figura!, incognita: true, enTabla: false })),
+    ...enunciados.flatMap(figurasPedidas),
+  ]
+  const ctx = await crearContexto(opciones, peticiones, 1)
+  const t = (pt: number) => mp(pt * ctx.letra)
+  const enSupuestos = supuestos.reduce((m, s) => m + s.preguntas.length, 0)
+
+  const pregunta = (q: PreguntaPreparada): Paragraph[] => [
+    new Paragraph({
+      keepNext: true,
+      keepLines: true,
+      spacing: { before: 160, after: 60 },
+      children: [new TextRun({ text: `${q.numero}. `, bold: true, size: t(10.5) }), new TextRun({ text: q.pregunta, size: t(10.5) })],
+    }),
+    ...imagenSuelta(`q|${q.id}`, ctx),
+    ...q.opciones.map(
+      (op, i) =>
+        new Paragraph({
+          keepLines: true,
+          keepNext: i < q.opciones.length - 1 || undefined,
+          indent: { left: 440, hanging: 300 },
+          spacing: { after: 20 },
+          children: [new TextRun({ text: `${LETRAS[i]}) `, bold: true, size: t(10.5) }), new TextRun({ text: op, size: t(10.5) })],
+        }),
+    ),
+  ]
+
+  const instrucciones = [
+    test.length ? `${test.length} preguntas de tres opciones (formato del primer ejercicio)` : '',
+    enSupuestos ? `${test.length ? ' y ' : ''}${enSupuestos} preguntas de supuesto práctico con cuatro opciones (formato del segundo ejercicio)` : '',
+    '. Cada respuesta errónea descuenta 1/4 del valor de un acierto; las respuestas en blanco no penalizan.',
+    opciones.soluciones ? ' Las soluciones están al final del documento.' : '',
+  ].join('')
+
+  const hijos: (Paragraph | Table)[] = [
+    new Paragraph({ heading: HeadingLevel.TITLE, children: [new TextRun(`Tema ${tema.numero}. ${tema.titulo}`)] }),
+    new Paragraph({
+      shading: { type: ShadingType.CLEAR, fill: 'F6F7F9', color: 'auto' },
+      border: { left: { style: BorderStyle.SINGLE, size: 18, color: COLOR_ACENTO, space: 8 } },
+      spacing: { after: 240 },
+      children: [new TextRun({ text: instrucciones, size: t(9.5), font: 'Calibri' })],
+    }),
+  ]
+
+  if (test.length) {
+    hijos.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun('Primer ejercicio · preguntas de tres opciones')] }), ...test.flatMap(pregunta))
+  }
+
+  supuestos.forEach((s, i) => {
+    hijos.push(
+      new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: true, children: [new TextRun(`Segundo ejercicio · ${s.titulo}`)] }),
+      ...bloques(enunciados[i].children, ctx),
+      ...imagenSuelta(`s|${s.id}`, ctx),
+      ...s.preguntas.flatMap(pregunta),
+    )
+  })
+
+  if (opciones.soluciones) {
+    hijos.push(new Paragraph({ heading: HeadingLevel.HEADING_1, pageBreakBefore: true, children: [new TextRun('Soluciones')] }))
+    for (const q of todas) {
+      const explica = opciones.explicaciones && q.explicacion
+      const fuente = opciones.fuentes && q.fuente
+      hijos.push(
+        new Paragraph({
+          keepLines: true,
+          keepNext: !!(explica || fuente) || undefined,
+          spacing: { before: 120, after: 20 },
+          children: [new TextRun({ text: `${q.numero}. ${LETRAS[q.correcta]}) `, bold: true, size: t(10) }), new TextRun({ text: q.opciones[q.correcta], size: t(10) })],
+        }),
+      )
+      if (explica) {
+        hijos.push(
+          new Paragraph({
+            keepLines: true,
+            keepNext: !!fuente || undefined,
+            indent: { left: 440 },
+            spacing: { after: 20 },
+            children: [new TextRun({ text: q.explicacion!, size: t(9.5), color: '333333' })],
+          }),
+        )
+      }
+      if (fuente) {
+        hijos.push(
+          new Paragraph({
+            keepLines: true,
+            indent: { left: 440 },
+            children: [new TextRun({ text: q.fuente!, size: t(8.5), color: COLOR_SUAVE, font: 'Calibri' })],
+          }),
+        )
+      }
+    }
+  }
+
+  return Packer.toBlob(
+    documento({
+      ctx,
+      o: opciones,
+      titulo: `Tema ${tema.numero} · Cuestionario`,
+      descripcion: `Cuestionario del tema ${tema.numero} para hacer en papel, generado el ${hoy()}`,
+      cabecera: `Técnica/o Auxiliar de Laboratorio · Ayuntamiento de Zaragoza · Cuestionario para hacer en papel · Generado el ${hoy()}`,
+      pie: `Tema ${tema.numero} · `,
+      hijos,
+    }),
+  )
 }

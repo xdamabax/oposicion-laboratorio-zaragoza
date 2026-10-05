@@ -10,6 +10,9 @@ import SelectorTema from './components/SelectorTema'
 
 // El editor de descarga arrastra TipTap: se carga solo cuando se abre.
 const Editar = lazy(() => import('./pages/Editar'))
+// Los paneles del temario completo y del cuestionario, tambien aparte
+const PrepararTemario = lazy(() => import('./pages/Preparar').then((m) => ({ default: m.PrepararTemario })))
+const PrepararTest = lazy(() => import('./pages/Preparar').then((m) => ({ default: m.PrepararTest })))
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
@@ -61,6 +64,22 @@ export default function App() {
           <Route path="/tema/:numero" element={<Tema />} />
           <Route path="/progreso" element={<Progreso />} />
           <Route path="/figuras" element={<Figuras />} />
+          <Route
+            path="/editar/temario"
+            element={
+              <Suspense fallback={<p className="sub">Cargando…</p>}>
+                <PrepararTemario />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/editar/test/:numero"
+            element={
+              <Suspense fallback={<p className="sub">Cargando…</p>}>
+                <PrepararTest />
+              </Suspense>
+            }
+          />
           <Route
             path="/editar/tema/:numero"
             element={

@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import ReactMarkdown, { defaultUrlTransform } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import Figura from './figuras/Figura'
+import { remarkQuitarSecciones } from '../editor/secciones'
 import type { Figura as TipoFigura, TipoEsquema, TipoGHS, TipoMaterial } from '../types'
 
 /**
@@ -112,11 +113,23 @@ function crearComponentes(escala: number) {
 
 const COMPONENTES = crearComponentes(1)
 
-export default function Markdown({ children, escala = 1 }: { children: string; escala?: number }) {
+const SIN_PLUGINS_EXTRA = [remarkGfm]
+
+export default function Markdown({
+  children,
+  escala = 1,
+  ocultas,
+}: {
+  children: string
+  escala?: number
+  /** Secciones (titulos de nivel 2) que no se pintan: las del temario preparado */
+  ocultas?: readonly string[]
+}) {
   const componentes = useMemo(() => (escala === 1 ? COMPONENTES : crearComponentes(escala)), [escala])
+  const plugins = useMemo(() => (ocultas?.length ? [remarkGfm, remarkQuitarSecciones(ocultas)] : SIN_PLUGINS_EXTRA), [ocultas])
   return (
     <div className="md">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} components={componentes} urlTransform={urlTransform}>
+      <ReactMarkdown remarkPlugins={plugins} components={componentes} urlTransform={urlTransform}>
         {children}
       </ReactMarkdown>
     </div>

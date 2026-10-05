@@ -100,6 +100,9 @@ export default function Tema() {
           <BotonPDF ruta={`/imprimir/test/${tema.numero}`}>
             Descargar el cuestionario en PDF
           </BotonPDF>
+          <Link className="btn" to={`/editar/test/${tema.numero}`}>
+            Preparar el cuestionario (PDF o Word)
+          </Link>
         </div>
       )}
       {vista === 'test' && (

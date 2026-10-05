@@ -880,7 +880,7 @@ body[data-listo="1"] {
   border-left: 3px solid #96631a;
   background: #fbf0da;
   padding: 0.5em 0.8em;
-  font-size: 10pt;
+  font-size: calc(10pt * var(--imp-escala, 1));
 }
 
 .imp-fuentes {
@@ -932,7 +932,7 @@ body[data-listo="1"] {
 }
 
 .imp-portada h1 {
-  font-size: 26pt;
+  font-size: calc(26pt * var(--imp-escala, 1));
   margin: 0.3em 0;
 }
 
@@ -940,19 +940,19 @@ body[data-listo="1"] {
   font-family: system-ui, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 9pt;
+  font-size: calc(9pt * var(--imp-escala, 1));
   color: #5d6b7a;
 }
 
 .imp-portada-sub {
-  font-size: 13pt;
+  font-size: calc(13pt * var(--imp-escala, 1));
   color: #5d6b7a;
 }
 
 .imp-portada-pie {
   margin-top: 4rem;
   font-family: system-ui, sans-serif;
-  font-size: 9pt;
+  font-size: calc(9pt * var(--imp-escala, 1));
   color: #5d6b7a;
   line-height: 1.7;
 }
@@ -963,7 +963,7 @@ body[data-listo="1"] {
 
 .imp-indice-lista {
   padding-left: 2.2em;
-  font-size: 10pt;
+  font-size: calc(10pt * var(--imp-escala, 1));
 }
 
 .imp-indice-lista li {
@@ -979,7 +979,7 @@ body[data-listo="1"] {
 
 .imp-indice-estado {
   font-family: system-ui, sans-serif;
-  font-size: 8pt;
+  font-size: calc(8pt * var(--imp-escala, 1));
   color: #5d6b7a;
   white-space: nowrap;
 }
@@ -994,7 +994,7 @@ body[data-listo="1"] {
 
 .imp-instrucciones {
   font-family: system-ui, sans-serif;
-  font-size: 9.5pt;
+  font-size: calc(9.5pt * var(--imp-escala, 1));
   background: #f6f7f9;
   border-left: 3px solid #1f5f8b;
   padding: 0.7em 1em;
@@ -1009,7 +1009,7 @@ body[data-listo="1"] {
 .imp-pregunta {
   margin: 0 0 1.1em;
   page-break-inside: avoid;
-  font-size: 10.5pt;
+  font-size: calc(10.5pt * var(--imp-escala, 1));
 }
 
 .imp-enunciado {
@@ -1035,7 +1035,7 @@ body[data-listo="1"] {
   border: 1px solid #ddd;
   padding: 0.8em 1em;
   margin-bottom: 1.2em;
-  font-size: 10pt;
+  font-size: calc(10pt * var(--imp-escala, 1));
 }
 
 .imp-soluciones {
@@ -1044,7 +1044,7 @@ body[data-listo="1"] {
 
 .imp-lista-soluciones {
   padding-left: 2em;
-  font-size: 10pt;
+  font-size: calc(10pt * var(--imp-escala, 1));
 }
 
 .imp-lista-soluciones > li {
@@ -1054,14 +1054,14 @@ body[data-listo="1"] {
 
 .imp-explica {
   color: #333;
-  font-size: 9.5pt;
+  font-size: calc(9.5pt * var(--imp-escala, 1));
   margin-top: 0.15em;
 }
 
 .imp-fuente {
   font-family: system-ui, sans-serif;
   color: #5d6b7a;
-  font-size: 8.5pt;
+  font-size: calc(8.5pt * var(--imp-escala, 1));
   margin-top: 0.1em;
 }
 
@@ -1226,6 +1226,20 @@ body[data-listo="1"] {
   .md li:first-child {
     break-after: avoid-page;
     page-break-after: avoid;
+  }
+
+  /* Nada mas ancho que el papel, o Chrome encoge el documento ENTERO para que
+     quepa (ver useTablasAnchas en Imprimir.tsx). Un enlace largo se parte por
+     donde haga falta; y en una tabla que no cabe (.md-tabla-ancha, la marca
+     Imprimir.tsx tras medirla), tambien las palabras de sus celdas. */
+  .imp a {
+    overflow-wrap: anywhere;
+  }
+
+  .md table.md-tabla-ancha th,
+  .md table.md-tabla-ancha td {
+    overflow-wrap: anywhere;
+    hyphens: auto;
   }
 
   /* El recuadro de fuentes del final se puede partir. Antes no (page-break-
@@ -1483,4 +1497,68 @@ body:has(.imp-vista) {
 .ed-estado-error {
   color: var(--bad);
   font-size: 0.9rem;
+}
+
+/* ---------- Paneles del temario completo y del cuestionario ---------- */
+
+.prep-portada {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+}
+
+.prep-portada input[type='text'] {
+  font: inherit;
+  min-width: 18rem;
+  max-width: 100%;
+}
+
+.prep-nota {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.prep-cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.8rem 0 0.4rem;
+}
+
+.prep-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+  max-height: 60vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.prep-lista-corta {
+  max-height: 30vh;
+}
+
+.prep-fila {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.2rem 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.92rem;
+}
+
+.prep-fila:last-child {
+  border-bottom: 0;
+}
+
+.prep-estado {
+  font-size: 0.82rem;
+  color: var(--muted);
 }

@@ -14,6 +14,10 @@
  *                                                  vuelve a las reglas de antes del
  *                                                  04/10/2026, que empujaban de mas,
  *                                                  y exige saltos innecesarios
+ *   node scripts/verificar-pdf.js 20 --sin-ajuste
+ *                                               -> prueba negativa del control de
+ *                                                  tamaño: deja otra vez que una tabla
+ *                                                  o un enlace se salgan del papel
  *   --base <url>                                -> contra la web publicada
  *
  * Como mide: el navegador no dice en que pagina cae cada cosa, pero el PDF si.
@@ -45,6 +49,11 @@
  *     primera es baja).
  * Se deja una holgura (HOLGURA) para margenes y alturas de linea que el PDF no
  * da exactas. Una figura no se juzga: su dibujo no es texto y no se mide.
+ *
+ * Y el PDF no se encoge: si algo es mas ancho que el papel, Chrome reduce la
+ * pagina ENTERA hasta que quepa, y el texto sale pequeño en todo el documento
+ * (asi salian los temas 15, 18, 19, 20, 28 y 31, a 7,5 pt). Se mide en el PDF
+ * la letra mas frecuente, que tiene que ser la del apunte (MINIMA_LETRA).
  */
 
 import puppeteer from 'puppeteer-core'
@@ -77,6 +86,19 @@ const REGLAS_VIEJAS = `@media print {
   .md li:not(:has(ul, ol)) { break-inside: avoid !important; page-break-inside: avoid !important; }
   .imp-fuentes { break-inside: avoid !important; page-break-inside: avoid !important; }
 }`
+
+/** Lo que deshace el ajuste al papel: tablas y enlaces vuelven a poder salirse. */
+const SIN_AJUSTE = `@media print {
+  .imp a, .md table.md-tabla-ancha th, .md table.md-tabla-ancha td { overflow-wrap: normal !important; hyphens: manual !important; }
+}`
+
+/**
+ * La letra de los parrafos de un apunte bien impreso es 11 pt justos. Basta
+ * que algo se salga 3 px del papel (el tema 18) para que Chrome encoja todo un
+ * 0,5 % y la letra baje a 10,94: por eso se mide con centesimas, y solo en los
+ * parrafos, porque las tablas van a 10,8 a proposito.
+ */
+const MINIMA_LETRA = 10.97
 
 /** Margen inferior de la caja de impresion, en puntos (el PDF mide en pt). */
 const SUELO = (parseFloat(OPCIONES_PDF.margin.bottom) / 25.4) * 72
@@ -140,8 +162,12 @@ function unidades(bloque, porId) {
   return out
 }
 
+/** Cuantos caracteres de parrafo hay de cada tamaño de letra, en todo el PDF. */
+const letras = new Map()
+
 async function paginas(pdf) {
   const doc = await getDocument({ data: new Uint8Array(pdf) }).promise
+  letras.clear()
   const out = []
   for (let n = 1; n <= doc.numPages; n++) {
     const pag = await doc.getPage(n)
@@ -155,7 +181,8 @@ async function paginas(pdf) {
       else if (it.type === 'endMarkedContent') actual = null
       else if (actual && it.str) {
         const y = Math.round(it.transform[5])
-        ;(porId[actual] ??= []).push({ y, str: it.str })
+        const letra = Math.round(Math.hypot(it.transform[0], it.transform[1]) * 100) / 100
+        ;(porId[actual] ??= []).push({ y, str: it.str, letra })
         suelo = Math.min(suelo, y)
         techo = Math.max(techo, y)
       }
@@ -163,6 +190,8 @@ async function paginas(pdf) {
     const bloques = secuencia(await pag.getStructTree())
       .map((b) => {
         const trozos = contenidos(b).flatMap((id) => porId[id] || [])
+        // la letra de los parrafos (las tablas van algo mas pequeñas a proposito)
+        if (b.role === 'P') for (const t of trozos) letras.set(t.letra, (letras.get(t.letra) ?? 0) + t.str.length)
         const partes = unidades(b, porId)
         const filas = partes.filter((u) => b.role === 'Table' && !u.cabecera)
         return {
@@ -258,13 +287,14 @@ function saltosInnecesarios(pags, corto) {
   return fallos
 }
 
-async function comprobar(nav, base, tema, { sinReglas, reglasViejas }) {
+async function comprobar(nav, base, tema, { sinReglas, reglasViejas, sinAjuste }) {
   const pagina = await nav.newPage()
   await pagina.goto(`${base}#/imprimir/tema/${tema}`, { waitUntil: 'networkidle0', timeout: 120000 })
   await pagina.waitForSelector('body[data-listo="1"]', { timeout: 60000 })
   await pagina.emulateMediaType('print')
   if (sinReglas) await pagina.addStyleTag({ content: SIN_REGLAS })
   if (reglasViejas) await pagina.addStyleTag({ content: REGLAS_VIEJAS })
+  if (sinAjuste) await pagina.addStyleTag({ content: SIN_AJUSTE })
   const pdf = await pagina.pdf({ ...OPCIONES_PDF, tagged: true })
   await pagina.close()
 
@@ -303,24 +333,31 @@ async function comprobar(nav, base, tema, { sinReglas, reglasViejas }) {
       fallos.push(`p. ${n}: ${corto(ult.texto)} arranca con una sola línea al pie y sigue en la p. ${n + 1}`)
     }
   }
-  return { fallos, saltos: saltosInnecesarios(conHuecos, corto), paginas: pags.length }
+  // la letra mas frecuente del documento (por caracteres)
+  const [letra] = [...letras.entries()].sort((a, b) => b[1] - a[1])[0] ?? [0]
+  return { fallos, saltos: saltosInnecesarios(conHuecos, corto), paginas: pags.length, letra }
 }
 
 async function main() {
   const temas = process.argv.slice(2).filter((a) => /^\d+$/.test(a))
   if (!temas.length) temas.push('7', '39')
-  const modo = { sinReglas: bandera('sin-reglas'), reglasViejas: bandera('reglas-viejas') }
+  const modo = { sinReglas: bandera('sin-reglas'), reglasViejas: bandera('reglas-viejas'), sinAjuste: bandera('sin-ajuste') }
   const servidor = await decidirBase(PUERTO)
   const nav = await puppeteer.launch({ executablePath: buscarChrome(), headless: 'new', args: ['--no-sandbox', '--disable-dev-shm-usage'] })
   let huerfanos = 0
   let saltos = 0
+  let encogidos = 0
   try {
     for (const t of temas) {
       const r = await comprobar(nav, servidor.base, t, modo)
       huerfanos += r.fallos.length
       saltos += r.saltos.length
-      const mal = r.fallos.length + r.saltos.length
-      console.log(`${mal ? 'FALLA' : 'OK   '} Tema ${t} · ${r.paginas} páginas · ${r.fallos.length} arranque(s) huérfano(s) · ${r.saltos.length} salto(s) innecesario(s)`)
+      const encogido = r.letra < MINIMA_LETRA
+      if (encogido) encogidos++
+      const mal = r.fallos.length + r.saltos.length + (encogido ? 1 : 0)
+      console.log(
+        `${mal ? 'FALLA' : 'OK   '} Tema ${t} · ${r.paginas} páginas · letra ${r.letra} pt${encogido ? ' (ENCOGIDO: algo se sale del papel)' : ''} · ${r.fallos.length} arranque(s) huérfano(s) · ${r.saltos.length} salto(s) innecesario(s)`,
+      )
       for (const f of r.fallos) console.log(`        huérfano: ${f}`)
       for (const f of r.saltos) console.log(`        salto: ${f}`)
     }
@@ -333,12 +370,20 @@ async function main() {
     console.log(huerfanos ? `\nSin las reglas aparecen ${huerfanos} huérfano(s): el control los detecta.` : '\nSin las reglas no aparece ninguno: con estos temas el control no demuestra nada.')
     process.exit(huerfanos ? 0 : 1)
   }
+  if (modo.sinAjuste) {
+    console.log(encogidos ? `\nSin el ajuste al papel se encogen ${encogidos} tema(s): el control lo detecta.` : '\nSin el ajuste al papel no se encoge ninguno: con estos temas el control no demuestra nada.')
+    process.exit(encogidos ? 0 : 1)
+  }
   if (modo.reglasViejas) {
     console.log(saltos ? `\nCon las reglas viejas aparecen ${saltos} salto(s) innecesario(s): el control los detecta.` : '\nCon las reglas viejas no aparece ninguno: con estos temas el control no demuestra nada.')
     process.exit(saltos ? 0 : 1)
   }
-  const total = huerfanos + saltos
-  console.log(total ? `\n${huerfanos} arranque(s) huérfano(s) y ${saltos} salto(s) innecesario(s).` : '\nNingún arranque huérfano ni salto innecesario.')
+  const total = huerfanos + saltos + encogidos
+  console.log(
+    total
+      ? `\n${huerfanos} arranque(s) huérfano(s), ${saltos} salto(s) innecesario(s) y ${encogidos} PDF encogido(s).`
+      : '\nNingún arranque huérfano ni salto innecesario, y ningún PDF encogido.',
+  )
   process.exit(total ? 1 : 0)
 }
 

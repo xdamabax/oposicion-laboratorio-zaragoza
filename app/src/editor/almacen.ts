@@ -115,3 +115,90 @@ export const guardarOpciones = (n: number, o: OpcionesDescarga) => escribir(clav
 export const leerDescarga = () => leer<Descarga>(CLAVE_DESCARGA)
 export const guardarDescarga = (d: Descarga) => escribir(CLAVE_DESCARGA, d)
 export const CLAVE_DE_LA_DESCARGA = CLAVE_DESCARGA
+
+/* ---------- temario completo ---------- */
+
+/**
+ * El temario completo no tiene editor propio: junta la version de cada tema
+ * (su edicion, si la hay, con las secciones que se quitaron en su editor) y
+ * aqui solo se guarda lo que es del documento entero.
+ */
+export interface OpcionesTemario {
+  letra: Letra
+  margenes: Margenes
+  /** Recuadro de fuentes al final de cada tema */
+  fuentes: boolean
+  portada: boolean
+  indice: boolean
+  titulo: string
+  subtitulo: string
+  /** Temas que no entran */
+  excluidos: number[]
+}
+
+export const OPCIONES_TEMARIO_POR_DEFECTO: OpcionesTemario = {
+  letra: 11,
+  margenes: 'normales',
+  fuentes: true,
+  portada: true,
+  indice: true,
+  titulo: 'Técnica/o Auxiliar de Laboratorio',
+  subtitulo: 'Apuntes del temario completo',
+  excluidos: [],
+}
+
+export const CLAVE_TEMARIO = 'descarga:temario'
+
+export function leerOpcionesTemario(): OpcionesTemario {
+  return { ...OPCIONES_TEMARIO_POR_DEFECTO, ...(leer<Partial<OpcionesTemario>>(CLAVE_TEMARIO) ?? {}) }
+}
+export const guardarOpcionesTemario = (o: OpcionesTemario) => escribir(CLAVE_TEMARIO, o)
+
+/** La version de un tema que entra en el temario completo. */
+export function versionDelTema(n: number, original: string) {
+  const edicion = leerEdicion(n)
+  const opciones = leer<Partial<OpcionesDescarga>>(claveOpciones(n))
+  return {
+    md: edicion?.md ?? original,
+    ocultas: opciones?.ocultas ?? [],
+    editado: !!edicion,
+    /** La edicion se hizo sobre un apunte que despues cambio */
+    desactualizado: !!edicion && edicion.base !== huella(original),
+  }
+}
+
+/* ---------- cuestionario ---------- */
+
+export interface OpcionesCuestionario {
+  letra: Letra
+  margenes: Margenes
+  /** Preguntas que no entran (por id). Un supuesto sin preguntas no sale. */
+  excluidas: string[]
+  /** Orden del primer ejercicio. Los supuestos conservan el suyo: sus preguntas se encadenan. */
+  orden: 'original' | 'barajado'
+  barajarOpciones: boolean
+  /** Semilla del barajado: el mismo barajado en el PDF y en el Word, y al volver */
+  semilla: number
+  soluciones: boolean
+  explicaciones: boolean
+  fuentes: boolean
+}
+
+export const OPCIONES_CUESTIONARIO_POR_DEFECTO: OpcionesCuestionario = {
+  letra: 11,
+  margenes: 'normales',
+  excluidas: [],
+  orden: 'original',
+  barajarOpciones: false,
+  semilla: 1,
+  soluciones: true,
+  explicaciones: true,
+  fuentes: true,
+}
+
+export const claveCuestionario = (n: number) => `descarga:cuestionario:${n}`
+
+export function leerOpcionesCuestionario(n: number): OpcionesCuestionario {
+  return { ...OPCIONES_CUESTIONARIO_POR_DEFECTO, ...(leer<Partial<OpcionesCuestionario>>(claveCuestionario(n)) ?? {}) }
+}
+export const guardarOpcionesCuestionario = (n: number, o: OpcionesCuestionario) => escribir(claveCuestionario(n), o)
