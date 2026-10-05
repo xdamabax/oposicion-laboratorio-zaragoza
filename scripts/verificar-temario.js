@@ -7,7 +7,7 @@
  *                        antes del cambio); por defecto, la misma
  *   --base <url>         contra la web publicada
  *   --sabotajes          estropea a proposito y exige que salte SU control
- *   --sabotaje <nombre>  solo ese (tema, letra, ajuste, 1-8, pagina)
+ *   --sabotaje <nombre>  solo ese (tema, letra, ajuste, 1-8, pagina, portada)
  *
  * IDA Y VUELTA. Sin preparar nada, la vista preparada (?edicion=1) tiene que
  * dar el mismo HTML impreso y el mismo PDF (renglon a renglon) que el temario
@@ -24,8 +24,9 @@
  * WORD. El .docx del panel, sin preparar y preparado, tiene los mismos titulos
  * (cada tema es «Titulo 1» y sus apartados bajan un nivel), tablas, figuras,
  * texto y listas que los apuntes que junta (los controles de un apunte, ver
- * verificar-word.js), cada tema empieza pagina y el indice lista los temas que
- * entran.
+ * verificar-word.js), cada tema empieza pagina, el indice lista los temas que
+ * entran y la portada trae todas sus lineas (la del BOPZ incluida), las mismas
+ * que la portada de la hoja impresa, que sale del mismo sitio.
  */
 
 import puppeteer from 'puppeteer-core'
@@ -243,8 +244,36 @@ async function preparado(nav, base, ref) {
   }
 }
 
-/** Lo propio del temario en el Word: cada tema empieza pagina y el indice lista los que entran. */
-function controlesTemario(a, numeros) {
+/**
+ * Las lineas de la portada de la hoja impresa, en orden: antetitulo, titulo,
+ * subtitulo y las del pie (cuantos temas, el BOPZ y la fecha), cada una aparte.
+ */
+const portadaDe = (p) =>
+  p.evaluate(() => {
+    const sec = document.querySelector('.imp-portada')
+    if (!sec) return []
+    const lineas = []
+    for (const el of sec.children) {
+      if (el.classList.contains('imp-portada-pie')) {
+        // el pie va en un parrafo con <br>: cada trozo es una linea
+        let actual = ''
+        for (const n of el.childNodes) {
+          if (n.nodeName === 'BR') {
+            lineas.push(actual)
+            actual = ''
+          } else actual += n.textContent
+        }
+        lineas.push(actual)
+      } else lineas.push(el.textContent)
+    }
+    return lineas.map((t) => t.replace(/\s+/g, ' ').trim()).filter(Boolean)
+  })
+
+/** Para comparar: sin mayusculas (el antetitulo va en versalitas por CSS) ni espacios de mas. */
+const normal = (t) => t.replace(/\s+/g, ' ').trim().toLowerCase()
+
+/** Lo propio del temario en el Word: cada tema empieza pagina, el indice lista los que entran y la portada esta entera. */
+function controlesTemario(a, numeros, portada) {
   const temas = a.parrafos.filter((p) => p.estilo === 'Heading1')
   const sinPagina = temas.filter((p) => !p.nuevaPagina)
   // el indice: las entradas «N. titulo» seguidas que hay tras el rotulo, hasta la
@@ -268,7 +297,31 @@ function controlesTemario(a, numeros) {
       ok: indice.join(',') === numeros.join(','),
       detalle: indice.join(',') === numeros.join(',') ? `${indice.length} entradas` : `índice ${indice.join(',').slice(0, 60)}`,
     },
+    controlPortada(a, portada),
   ]
+}
+
+/**
+ * La portada del Word: los parrafos que van antes del rotulo «Índice» (o del
+ * primer tema, si no hay indice) tienen que ser, en orden, las lineas de la
+ * portada de la hoja impresa. Asi no puede desaparecer ninguna (la del BOPZ,
+ * por ejemplo) sin que se note: el control «Texto» solo mira los apuntes.
+ */
+function controlPortada(a, portada) {
+  const fin = a.parrafos.findIndex((p) => p.texto.trim() === 'Índice' || p.estilo === 'Heading1')
+  const delWord = a.parrafos.slice(0, fin < 0 ? 0 : fin).map((p) => normal(p.texto)).filter(Boolean)
+  const esperadas = portada.map(normal)
+  const falta = esperadas.find((l, i) => delWord[i] !== l)
+  const ok = esperadas.length > 0 && !falta && delWord.length === esperadas.length
+  return {
+    nombre: 'Word: la portada, entera (con el BOPZ)',
+    ok,
+    detalle: ok
+      ? `${esperadas.length} líneas, las mismas que en el PDF`
+      : falta
+        ? `falta o cambia «${falta.slice(0, 60)}»`
+        : `el Word tiene ${delWord.length} líneas de portada y el PDF ${esperadas.length}`,
+  }
 }
 
 async function word(nav, base, mesa, claves, sabotaje) {
@@ -277,8 +330,14 @@ async function word(nav, base, mesa, claves, sabotaje) {
     // los titulos de los temas, de la hoja impresa de siempre
     const h = await abrirHoja(ctx, base, false)
     const titulos = await h.evaluate(() => [...document.querySelectorAll('.imp-tema > h1')].map((x) => x.textContent.replace(/\s+/g, ' ').trim()))
+    let portada = await portadaDe(h)
     await h.close()
-    if (claves) await guardar(ctx, base, claves)
+    if (claves) {
+      await guardar(ctx, base, claves)
+      const hp = await abrirHoja(ctx, base, true)
+      portada = await portadaDe(hp)
+      await hp.close()
+    }
     const panel = await abrirConGancho(ctx, `${base}#/editar/temario`)
     let docx = await abrirDocx(await descargarWord(panel))
     await panel.close()
@@ -289,7 +348,13 @@ async function word(nav, base, mesa, claves, sabotaje) {
       numeros.map((n) => ({ md: md(n), titulo: titulos.find((t) => t.startsWith(`Tema ${n}.`)), ocultas: claves && n === RECORTADO ? [claves._quitada] : [] })),
       1,
     )
-    if (sabotaje === 'pagina') {
+    if (sabotaje === 'portada') {
+      // se borra el parrafo de la portada que trae el BOPZ
+      const xml = docx.partes['word/document.xml']
+      const sinBopz = xml.replace(/<w:p>(?:(?!<w:p>)[\s\S])*?BOPZ núm\. 170[\s\S]*?<\/w:p>/, '')
+      if (sinBopz === xml) throw new Error('el sabotaje de la portada no encuentra la línea del BOPZ')
+      docx = { ...docx, partes: { ...docx.partes, 'word/document.xml': sinBopz } }
+    } else if (sabotaje === 'pagina') {
       docx = {
         ...docx,
         partes: {
@@ -302,7 +367,7 @@ async function word(nav, base, mesa, claves, sabotaje) {
       if (!docx) return null
     }
     const a = await mesa.evaluate(analizarEnPagina, docx)
-    const r = [...controlar(a, e, docx), ...controlesTemario(a, numeros)]
+    const r = [...controlar(a, e, docx), ...controlesTemario(a, numeros, portada)]
     if (claves) {
       const letra = a.letra
       const recuadros = a.parrafos.filter((p) => !(p.estilo in NIVEL) && !p.lista && p.texto.trim() === 'Fuentes y verificación').length
@@ -367,9 +432,9 @@ async function main() {
       }
       // el Word: los sabotajes de un apunte, y uno propio (un tema sin salto de pagina)
       // En el temario, el primer titulo es el de un tema: perderlo quita tambien su salto de pagina (acoplados de verdad)
-      const tumba = { ...SABOTAJES, 1: { ...SABOTAJES[1], tumba: [1, 7] }, pagina: { que: 'un tema no empieza página', tumba: [7] } }
+      const tumba = { ...SABOTAJES, 1: { ...SABOTAJES[1], tumba: [1, 7] }, pagina: { que: 'un tema no empieza página', tumba: [7] }, portada: { que: 'se borra la línea del BOPZ de la portada', tumba: [9] } }
       for (const [n, s] of Object.entries(tumba).filter(([n]) => !solo || solo === n)) {
-        const r = await word(nav, base, mesa, null, n === 'pagina' ? 'pagina' : Number(n))
+        const r = await word(nav, base, mesa, null, ['pagina', 'portada'].includes(n) ? n : Number(n))
         if (!r) {
           console.log(`·     Word · sabotaje ${n} (${s.que}): no aplica`)
           continue
