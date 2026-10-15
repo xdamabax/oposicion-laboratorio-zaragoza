@@ -469,6 +469,363 @@
         "tipo": "esquema",
         "valor": "recuperacion-medio"
       }
+    },
+    {
+      "id": "t17-f62",
+      "anverso": "¿Qué significa que en microbiología «el patrón está vivo»?",
+      "reverso": "Que medios, reactivos y técnicas se comprueban con **microorganismos de control**, que hay que **conservar sin que cambien**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §1",
+      "etiquetas": [
+        "calidad"
+      ],
+      "apartado": "1",
+      "evidencia": "El «patrón» está vivo. Un medio, un reactivo o una técnica se comprueban con microorganismos de control que hay que conservar sin que cambien."
+    },
+    {
+      "id": "t17-f63",
+      "anverso": "¿Por qué la guía británica habla de «gráficos de orientación» y «líneas de respuesta»?",
+      "reverso": "Porque los recuentos varían mucho por azar: **un punto fuera** indica que algo **probablemente** va mal y **obliga a investigar**, no que el resultado sea seguro erróneo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §1",
+      "etiquetas": [
+        "calidad",
+        "graficos"
+      ],
+      "apartado": "1",
+      "evidencia": "la guía británica prefiere hablar de «gráficos de orientación» y de líneas de respuesta: un punto fuera indica que algo probablemente va mal, y obliga a investigar."
+    },
+    {
+      "id": "t17-f64",
+      "anverso": "RD 3/2023: ¿qué análisis no necesitan acreditación y cuándo debe estar acreditada la toma de muestras?",
+      "reverso": "Se exceptúan los **análisis operacionales y de rutina** si el laboratorio solo hace esos. La **toma de muestras**, antes del **2 de enero de 2030**. (Plazos de la redacción inicial: no se ha comprobado si han cambiado.)",
+      "fuente": "RD 3/2023, anexo III, parte B y DA 8.ª · apunte §2 y Dudas declaradas",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2",
+      "evidencia": "| La toma de muestras (salvo análisis operacionales y de rutina) | 2 de enero de 2030 |"
+    },
+    {
+      "id": "t17-f65",
+      "anverso": "Lotes de medio: ¿qué pasa con los suplementos añadidos tras esterilizar y con un lote nuevo de otro proveedor?",
+      "reverso": "Si se añaden **suplementos después de esterilizar**, cada frasco puede tener que tratarse como **un lote distinto**. Un lote nuevo de medio deshidratado, sobre todo **de otro proveedor** y **selectivo**, se compara con **el lote en uso** antes de la rutina.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "3.1",
+      "evidencia": [
+        "Si se añaden suplementos después de esterilizar, cada frasco puede tener que tratarse como un lote distinto.",
+        "Un lote nuevo de medio deshidratado, sobre todo de otro proveedor y para un medio selectivo, conviene compararlo con el lote en uso antes de usarlo en rutina."
+      ]
+    },
+    {
+      "id": "t17-f66",
+      "anverso": "¿Cómo se fija la caducidad de un medio preparado?",
+      "reverso": "Su vida útil **en sus condiciones de conservación** se **determina y se verifica**.",
+      "fuente": "Eurachem (2023) · apunte §3.2",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "3.2",
+      "evidencia": "Caducidad: la vida útil del medio preparado, en sus condiciones de conservación, se determina y se verifica."
+    },
+    {
+      "id": "t17-f67",
+      "anverso": "¿Cómo se controla de forma semicuantitativa un caldo, como el lauril sulfato de membrana?",
+      "reverso": "Se siembra, se incuba **18 h a 37 °C** y se pasa a un **agar nutritivo** para puntuarlo con las 16 estrías.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "3.3",
+      "evidencia": "Ejemplo de la guía: el caldo lauril sulfato de membrana se siembra, se incuba 18 h a 37 °C y se pasa a un agar nutritivo para puntuarlo."
+    },
+    {
+      "id": "t17-f68",
+      "anverso": "Control cuantitativo: ¿hay límite superior de recuperación? ¿Y qué debe pasar con el no diana?",
+      "reverso": "Sí, **debe fijarse un límite superior** de recuperación o de PR, pero **la guía no da su valor**. El **no diana no debe crecer**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3 y Dudas declaradas",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "3.3",
+      "evidencia": [
+        "También debe fijarse un límite superior de recuperación o de PR. La guía no da su valor.",
+        "No diana: en el control cuantitativo, el no diana no debe crecer."
+      ]
+    },
+    {
+      "id": "t17-f69",
+      "anverso": "¿Qué información debe dar el fabricante de un medio listo para usar?",
+      "reverso": "**Composición**, **vida útil**, **conservación**, **control de esterilidad**, **crecimiento de los organismos de control** con su referencia de colección, **controles físicos** y **fecha de la especificación**; y **avisar si cambia**. Cada lote, con la **prueba de que cumple**.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "3.4",
+      "evidencia": "El fabricante debe dar al menos: composición, vida útil, conservación, control de esterilidad, crecimiento de los organismos de control con su referencia de colección, controles físicos y fecha de la especificación."
+    },
+    {
+      "id": "t17-f70",
+      "anverso": "¿Qué debe llevar la etiqueta de un reactivo?",
+      "reverso": "**Identidad**, **concentración**, **conservación**, **fecha de apertura**, fecha de **preparación** y **caducidad**. **Quién lo preparó** consta en los registros.",
+      "fuente": "Eurachem (2023), 8.1 · apunte §3.5",
+      "etiquetas": [
+        "reactivos"
+      ],
+      "apartado": "3.5",
+      "evidencia": "Etiqueta: identidad, concentración, conservación, fecha de apertura, fecha de preparación y caducidad."
+    },
+    {
+      "id": "t17-f71",
+      "anverso": "¿Qué matriz debe tener un material de referencia?",
+      "reverso": "**Si es posible, la misma** que las muestras (regla del tema 38). Mejor de productores **acreditados por la ISO 17034**.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "etiquetas": [
+        "referencia"
+      ],
+      "apartado": "4.1",
+      "evidencia": "Si es posible, con la misma matriz que las muestras (la regla del tema 38)."
+    },
+    {
+      "id": "t17-f72",
+      "anverso": "Material de referencia cuantitativo: ¿basta con los valores del proveedor?",
+      "reverso": "**No**: el laboratorio debe comprobar que da esos valores **«en sus manos»**, y contar **sin conocer** la media y la varianza, si es posible.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "etiquetas": [
+        "referencia"
+      ],
+      "apartado": "4.3",
+      "evidencia": "El laboratorio debe comprobar que el material da esos valores «en sus manos»."
+    },
+    {
+      "id": "t17-f73",
+      "anverso": "¿Para qué sirven las cepas aisladas de muestras reales?",
+      "reverso": "Para el **control** y la **formación**, a veces porque tienen **caracteres raros**. Se conservan como las de referencia.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+      "etiquetas": [
+        "referencia"
+      ],
+      "apartado": "4.4",
+      "evidencia": "Las cepas aisladas de muestras reales, a veces con caracteres raros, sirven para el control y la formación."
+    },
+    {
+      "id": "t17-f74",
+      "anverso": "¿De dónde salen los organismos de control y cómo se rehidratan?",
+      "reverso": "De **primera generación** desde una **colección nacional**, o **materiales comerciales**. Se rehidratan con **diluyente de máxima recuperación**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8.1 · apunte §5.1",
+      "etiquetas": [
+        "controles"
+      ],
+      "apartado": "5.1",
+      "evidencia": "Organismos de control: de primera generación desde una colección nacional, o materiales comerciales. Se rehidratan con diluyente de máxima recuperación."
+    },
+    {
+      "id": "t17-f75",
+      "anverso": "Método EPA de E. coli: ¿cómo se controlan la esterilidad del filtro y la de los medios? (ejemplo estadounidense)",
+      "reverso": "**Filtro**: uno sobre **TSA**, **24 ± 2 h a 35 °C**: no debe crecer nada. **Medios**: una placa o tubo **de cada lote** de cada medio, incubado.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.1 y Dudas declaradas",
+      "etiquetas": [
+        "controles"
+      ],
+      "apartado": "5.1",
+      "evidencia": [
+        "| Esterilidad del filtro | Un filtro sobre TSA, 24 ± 2 h a 35 °C: no debe crecer nada |",
+        "| Esterilidad de los medios | Incubar una placa o tubo de cada lote de cada medio |"
+      ]
+    },
+    {
+      "id": "t17-f76",
+      "anverso": "¿Qué gráfico conviene para Legionella, con tanta variabilidad?",
+      "reverso": "Los de **porcentaje de recuperación**. Las líneas de respuesta (± 2s y ± 3s) se **ajustan a la experiencia**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.2",
+      "etiquetas": [
+        "graficos"
+      ],
+      "apartado": "5.2",
+      "evidencia": "en Legionella, con mucha variabilidad, son más útiles los gráficos de porcentaje de recuperación."
+    },
+    {
+      "id": "t17-f77",
+      "anverso": "Regla de «dos de tres» fuera del aviso: ¿en qué difiere la guía británica del Nordtest?",
+      "reverso": "El Nordtest TR 569 pide que estén **en el mismo lado**; **la guía británica admite lados distintos**. Sus reglas de tendencia (9 y 6) tampoco coinciden con las del Nordtest ed. 4 (7 y 10 de 11).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.2",
+      "etiquetas": [
+        "graficos"
+      ],
+      "apartado": "5.2",
+      "evidencia": "La guía británica admite lados distintos."
+    },
+    {
+      "id": "t17-f78",
+      "anverso": "¿Cómo se analizan las submuestras duplicadas y qué informa la suma de D²?",
+      "reverso": "Como **muestras independientes**, en **posiciones al azar** en la estufa y, si se puede, **sin que el analista sepa que van juntas**. La **suma de D²** en 10-30 resultados (2-4 semanas) informa de la **reproducibilidad**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.3",
+      "etiquetas": [
+        "duplicados"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "en posiciones al azar en la estufa y, si se puede, sin que el analista sepa que van juntas.",
+        "La suma de D² en periodos largos (10-30 resultados, 2-4 semanas) informa de la reproducibilidad."
+      ]
+    },
+    {
+      "id": "t17-f79",
+      "anverso": "¿Cómo se comprueban los contadores automáticos de colonias?",
+      "reverso": "Con **materiales de referencia** de valor conocido (guía británica) y **una vez al año frente al recuento manual** (Eurachem).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017); Eurachem (2023), anexo F · apunte §5.4",
+      "etiquetas": [
+        "recuento"
+      ],
+      "apartado": "5.4",
+      "evidencia": "Los contadores automáticos de colonias se comprueban con materiales de referencia de valor conocido (guía británica) y una vez al año frente al recuento manual (Eurachem, anexo F)."
+    },
+    {
+      "id": "t17-f80",
+      "anverso": "IPR y OPR de la EPA: ¿cómo se expresa la exactitud?",
+      "reverso": "Los resultados se llevan a un **gráfico** y la **exactitud** se expresa como **R ± 2sᵣ** (recuperación media ± 2 desviaciones estándar).",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.5",
+      "etiquetas": [
+        "recuperacion"
+      ],
+      "apartado": "5.5",
+      "evidencia": "la exactitud se expresa como R ± 2sᵣ."
+    },
+    {
+      "id": "t17-f81",
+      "anverso": "¿En qué se diferencia la validación de un recuento microbiológico de la de un método químico?",
+      "reverso": "En que **también en los recuentos se calculan verdaderos y falsos positivos y negativos**: hay que **confirmar las colonias**.",
+      "fuente": "Eurachem (2023), 10 · apunte §5.6",
+      "etiquetas": [
+        "validacion"
+      ],
+      "apartado": "5.6",
+      "evidencia": "A diferencia de la química, también en los recuentos se calculan verdaderos y falsos positivos y negativos: hay que confirmar las colonias."
+    },
+    {
+      "id": "t17-f82",
+      "anverso": "Kits comerciales: ¿quién los valida?",
+      "reverso": "El laboratorio guarda sus **datos de validación**, mejor **evaluados por un tercero** (**AFNOR, NordVal, MicroVal, AOAC**), y **los verifica**. Si no hay datos aplicables, **la validación le toca al laboratorio**.",
+      "fuente": "Eurachem (2023) · apunte §5.6",
+      "etiquetas": [
+        "validacion"
+      ],
+      "apartado": "5.6",
+      "evidencia": "Si no hay datos de validación aplicables, la validación le toca al laboratorio."
+    },
+    {
+      "id": "t17-f83",
+      "anverso": "¿Qué componentes tiene la incertidumbre de un recuento y cuál suele pesar más?",
+      "reverso": "**Distribucional** (azar de Poisson), **técnica** (pipeteo, pesada, diluciones, lectura), de **confirmación** y de **matriz**. **El muestreo suele ser la mayor contribución.** Normas: **ISO 29201** (agua) e **ISO 19036** (alimentos).",
+      "fuente": "Eurachem (2023), 12 · apunte §5.7",
+      "etiquetas": [
+        "incertidumbre"
+      ],
+      "apartado": "5.7",
+      "evidencia": [
+        "Componentes: la distribucional (el azar de Poisson), la técnica (pipeteo, pesada, diluciones, lectura), la de confirmación y la de matriz.",
+        "El muestreo suele ser la mayor contribución."
+      ]
+    },
+    {
+      "id": "t17-f84",
+      "anverso": "Ensayos de aptitud: ¿qué da el proveedor y qué hace el laboratorio con ello?",
+      "reverso": "La **media**, la **mediana**, el **valor asignado** y a veces una **puntuación z**. El laboratorio lo lleva a **gráficos** para ver si se separa **siempre hacia el mismo lado** de la mediana.",
+      "fuente": "Eurachem (2023), 13.2 · apunte §5.8",
+      "etiquetas": [
+        "aptitud"
+      ],
+      "apartado": "5.8",
+      "evidencia": "El laboratorio la representa en gráficos para ver si sus resultados se separan siempre hacia el mismo lado de la mediana."
+    },
+    {
+      "id": "t17-f85",
+      "anverso": "¿Para qué se vigila el ambiente del laboratorio?",
+      "reverso": "Para que **no contamine las muestras**, **proteger al personal** y comprobar que **la limpieza y la desinfección funcionan**. **No sustituye a la técnica aséptica: la verifica.**",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 4.2 · apunte §5.9",
+      "etiquetas": [
+        "ambiente"
+      ],
+      "apartado": "5.9",
+      "evidencia": "No sustituye a la técnica aséptica: la verifica."
+    },
+    {
+      "id": "t17-f86",
+      "anverso": "Cabinas de seguridad biológica: ¿qué se verifica y cada cuánto?",
+      "reverso": "**Rendimiento**, **anual**; **control microbiológico**, **semanal**; **flujo de aire**, **en cada uso**.",
+      "fuente": "Eurachem (2023), anexo F · apunte §6.1",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.1",
+      "evidencia": "| Cabinas de seguridad | Rendimiento; control microbiológico; flujo de aire | Anual; semanal; cada uso |"
+    },
+    {
+      "id": "t17-f87",
+      "anverso": "¿Qué se verifica en un termociclador de PCR?",
+      "reverso": "**Temperatura, rampas y tiempos**, al principio y luego **a diario o cada semana**.",
+      "fuente": "Eurachem (2023), anexo F · apunte §6.1",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.1",
+      "evidencia": "| Termocicladores (PCR) | Temperatura, rampas y tiempos | Al principio y diario o semanal |"
+    },
+    {
+      "id": "t17-f88",
+      "anverso": "¿Dónde se coloca una balanza y qué se hace tras un golpe?",
+      "reverso": "En una **superficie nivelada**, sin vibraciones, corrientes ni cambios de temperatura. Tras **mantenimiento, traslado o un golpe**, se **vuelve a comprobar**; **fuera de tolerancia no se usa** hasta recalibrarla.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.2",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.2",
+      "evidencia": "Una balanza fuera de tolerancia no se usa hasta recalibrarla."
+    },
+    {
+      "id": "t17-f89",
+      "anverso": "Buenas prácticas con las pipetas automáticas.",
+      "reverso": "**Puntas con filtro**, para no contaminar el pistón; la pipeta **en su soporte, no tumbada**; nueva, **se calibra antes de usarla**, y luego **comprobaciones intermedias** a diario o semanalmente.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.3",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.3",
+      "evidencia": "Con puntas con filtro, para no contaminar el pistón; y la pipeta en su soporte, no tumbada."
+    },
+    {
+      "id": "t17-f90",
+      "anverso": "EPA: ¿cada cuánto se lee la temperatura de las estufas y de las neveras? (ejemplo estadounidense)",
+      "reverso": "Estufas, **dos veces al día**, con **al menos 4 horas** entre lecturas; **neveras, a diario**; termómetros comprobados **al menos una vez al año** contra uno certificado.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §6.4 y Dudas declaradas",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.4",
+      "evidencia": "EPA: temperatura de las estufas dos veces al día, con al menos 4 horas entre lecturas;"
+    },
+    {
+      "id": "t17-f91",
+      "anverso": "¿Cómo se calibra y se verifica un pHmetro?",
+      "reverso": "**Calibrar antes de cada uso** con **dos tampones** que abarquen el intervalo (EPA: pH 4, 7 o 10). **Verificar** con un tampón **distinto** de los de la calibración.",
+      "fuente": "EPA, método 1103.2 (2023); Eurachem (2023) · apunte §6.5",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.5",
+      "evidencia": "Calibrar antes de cada uso con dos tampones que abarquen el intervalo (EPA: pH 4, 7 o 10)."
+    },
+    {
+      "id": "t17-f92",
+      "anverso": "¿Qué se comprueba de una estufa además de su temperatura media?",
+      "reverso": "Su **estabilidad y homogeneidad**, también según **cómo se apilan las placas** (tema 10).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.6",
+      "etiquetas": [
+        "equipos"
+      ],
+      "apartado": "6.6",
+      "evidencia": "Estufas: estabilidad y homogeneidad de la temperatura, también según cómo se apilan las placas (tema 10)."
     }
   ],
   "test": [
@@ -755,6 +1112,594 @@
       "explicacion": "Se recomiendan los registradores de datos.",
       "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 9.2",
       "nucleo": true
+    },
+    {
+      "id": "t17-q34",
+      "pregunta": "En los «gráficos de orientación» de la guía británica, un punto fuera de las líneas de respuesta indica que:",
+      "opciones": [
+        "Algo probablemente va mal y hay que investigar",
+        "Todos los resultados del año son inválidos",
+        "El material de referencia está caducado"
+      ],
+      "correcta": 0,
+      "explicacion": "Los recuentos varían mucho por azar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §1",
+      "apartado": "1",
+      "evidencia": "un punto fuera indica que algo probablemente va mal, y obliga a investigar."
+    },
+    {
+      "id": "t17-q35",
+      "pregunta": "El control de calidad externo demuestra:",
+      "opciones": [
+        "Que hoy el método funciona igual que siempre",
+        "Que el laboratorio da lo mismo que los demás y que el valor asignado",
+        "Que el medio de cultivo es estéril"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es el control interno.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Qué demuestra | Que hoy el método funciona igual que siempre | Que el laboratorio da lo mismo que los demás y que el valor asignado |"
+    },
+    {
+      "id": "t17-q36",
+      "pregunta": "Según el RD 3/2023 (redacción inicial), un laboratorio de agua de consumo que analiza entre 300 y 5000 muestras al año debe estar acreditado antes del:",
+      "opciones": [
+        "2 de enero de 2024",
+        "2 de enero de 2030",
+        "2 de enero de 2028"
+      ],
+      "correcta": 2,
+      "explicacion": "2024: más de 5000; 2030: la toma de muestras.",
+      "fuente": "RD 3/2023, anexo III, DA 8.ª · apunte §2 y Dudas declaradas",
+      "apartado": "2",
+      "evidencia": "| Entre 300 y 5000 muestras al año | 2 de enero de 2028 |"
+    },
+    {
+      "id": "t17-q37",
+      "pregunta": "Mientras un método no está acreditado, el anexo III, parte E del RD 3/2023 pide evaluar:",
+      "opciones": [
+        "Veracidad, precisión e incertidumbre",
+        "Solo el coste del análisis",
+        "Únicamente la rapidez"
+      ],
+      "correcta": 0,
+      "explicacion": "Y un procedimiento escrito con criterios de aceptación y rechazo.",
+      "fuente": "RD 3/2023, anexo III, parte E · apunte §2",
+      "apartado": "2",
+      "evidencia": "Esa parte E pide evaluar veracidad, precisión e incertidumbre"
+    },
+    {
+      "id": "t17-q38",
+      "pregunta": "En el control de un medio, la especificidad comprueba que:",
+      "opciones": [
+        "El medio frena a los no diana",
+        "El diana da su aspecto típico (color, halo, fluorescencia)",
+        "El medio está libre de contaminantes"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es la selectividad; lo tercero, la esterilidad.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Especificidad (características) | ¿Da el diana su aspecto típico? | Color, halo, fluorescencia… anotados |"
+    },
+    {
+      "id": "t17-q39",
+      "pregunta": "Si a un medio se le añaden suplementos después de esterilizarlo:",
+      "opciones": [
+        "Ya no necesita número de lote",
+        "Hay que volver a esterilizarlo",
+        "Cada frasco puede tener que tratarse como un lote distinto"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada frasco puede variar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Si se añaden suplementos después de esterilizar, cada frasco puede tener que tratarse como un lote distinto."
+    },
+    {
+      "id": "t17-q40",
+      "pregunta": "Un lote nuevo de medio selectivo deshidratado, de otro proveedor, conviene:",
+      "opciones": [
+        "Compararlo con el lote en uso antes de usarlo en rutina",
+        "Usarlo directamente si tiene certificado",
+        "Mezclarlo con el lote anterior"
+      ],
+      "correcta": 0,
+      "explicacion": "Sobre todo si es selectivo y de otro proveedor.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "conviene compararlo con el lote en uso antes de usarlo en rutina."
+    },
+    {
+      "id": "t17-q41",
+      "pregunta": "La vida útil de un medio preparado:",
+      "opciones": [
+        "La fija siempre el fabricante del polvo",
+        "Se determina y se verifica en sus condiciones de conservación",
+        "Es ilimitada en la nevera"
+      ],
+      "correcta": 1,
+      "explicacion": "Depende de cómo se conserve.",
+      "fuente": "Eurachem (2023) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Caducidad: la vida útil del medio preparado, en sus condiciones de conservación, se determina y se verifica."
+    },
+    {
+      "id": "t17-q42",
+      "pregunta": "El control cualitativo de un medio (0, 1, 2) sirve, por ejemplo, para:",
+      "opciones": [
+        "Medios selectivos nuevos sin certificado",
+        "Calibrar pipetas",
+        "Medios comprados listos para usar con certificado del fabricante"
+      ],
+      "correcta": 2,
+      "explicacion": "Los selectivos se controlan de forma cuantitativa.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Sirve, por ejemplo, para medios comprados listos para usar con certificado del fabricante."
+    },
+    {
+      "id": "t17-q43",
+      "pregunta": "En el control semicuantitativo, en cada cuarto de la placa:",
+      "opciones": [
+        "Se hacen cuatro estrías con un asa de 1 µL, sin recargar ni flamear el asa",
+        "Se siembra 0,1 mL en superficie",
+        "Se recarga el asa antes de cada estría"
+      ],
+      "correcta": 0,
+      "explicacion": "Así cada estría diluye el inóculo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "se hacen cuatro estrías sin recargar ni flamear el asa."
+    },
+    {
+      "id": "t17-q44",
+      "pregunta": "En el control semicuantitativo, un ejemplo de mínimo para dar el medio por bueno es:",
+      "opciones": [
+        "16 de 16",
+        "8 de 16",
+        "2 de 16"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo fija el laboratorio; la esterilidad debe dar 0.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El laboratorio fija un mínimo, por ejemplo 8 de 16, para dar el medio por bueno."
+    },
+    {
+      "id": "t17-q45",
+      "pregunta": "La suspensión de control de un cultivo en caldo se incuba siempre igual y se guarda a 5 ± 3 °C para que:",
+      "opciones": [
+        "Las células sigan dividiéndose",
+        "Se formen esporas",
+        "Todas las células estén en fase estacionaria y el número no cambie"
+      ],
+      "correcta": 2,
+      "explicacion": "Por ejemplo, un fin de semana en la nevera.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "de modo que todas las células estén en fase estacionaria y el número no cambie."
+    },
+    {
+      "id": "t17-q46",
+      "pregunta": "Si el fabricante de un medio listo para usar tiene ISO 9000 y controla según la ISO 11133, el laboratorio:",
+      "opciones": [
+        "Revisa el certificado, hace pruebas iniciales con cada fabricante nuevo y sigue su control interno",
+        "No tiene que hacer nada",
+        "Repite todos los controles de la ISO 11133 en cada lote"
+      ],
+      "correcta": 0,
+      "explicacion": "Basta con eso.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "al laboratorio le basta con revisar su certificado, hacer pruebas iniciales con cada fabricante nuevo y seguir el control interno."
+    },
+    {
+      "id": "t17-q47",
+      "pregunta": "En el ejemplo de la EPA, el control negativo del reactivo de la oxidasa es:",
+      "opciones": [
+        "Pseudomonas aeruginosa",
+        "Escherichia coli",
+        "Staphylococcus aureus"
+      ],
+      "correcta": 1,
+      "explicacion": "El positivo es P. aeruginosa.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "Ejemplo de la EPA para la oxidasa: control positivo Pseudomonas aeruginosa, control negativo E. coli (tema 16)."
+    },
+    {
+      "id": "t17-q48",
+      "pregunta": "Un material de referencia, si es posible, debe tener:",
+      "opciones": [
+        "Una matriz distinta, para no confundirse",
+        "Solo agua destilada",
+        "La misma matriz que las muestras"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la regla del tema 38.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Si es posible, con la misma matriz que las muestras (la regla del tema 38)."
+    },
+    {
+      "id": "t17-q49",
+      "pregunta": "La EPA usa cepas de referencia de la colección:",
+      "opciones": [
+        "ATCC",
+        "ENAC",
+        "AENOR"
+      ],
+      "correcta": 0,
+      "explicacion": "Por ejemplo, E. coli ATCC 11775. ENAC acredita; AENOR normaliza.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La EPA usa cepas de la ATCC (por ejemplo, E. coli ATCC 11775)."
+    },
+    {
+      "id": "t17-q50",
+      "pregunta": "Se limitan los subcultivos de las cepas de control porque:",
+      "opciones": [
+        "Lo prohíbe el RD 3/2023",
+        "Cada resiembra arriesga una contaminación y algunas propiedades bioquímicas cambian",
+        "Las cepas mueren al segundo subcultivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la cepa se subcultiva una sola vez.",
+      "fuente": "Eurachem (2023), 8.6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "cada resiembra es un riesgo de contaminación, y algunas propiedades bioquímicas cambian con los cultivos repetidos."
+    },
+    {
+      "id": "t17-q51",
+      "pregunta": "Con un material de referencia cuantitativo comercial, el laboratorio:",
+      "opciones": [
+        "Acepta sin más los valores del proveedor",
+        "Lo usa solo como control negativo",
+        "Comprueba que da los valores del proveedor «en sus manos»"
+      ],
+      "correcta": 2,
+      "explicacion": "Y cuenta sin conocer la media, si es posible.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "El laboratorio debe comprobar que el material da esos valores «en sus manos»."
+    },
+    {
+      "id": "t17-q52",
+      "pregunta": "El inconveniente de usar un agua natural con el diana como control es que:",
+      "opciones": [
+        "No se sabe cuántos hay, y el control puede fallar porque no había",
+        "Es demasiado fácil para el medio",
+        "Está prohibido"
+      ],
+      "correcta": 0,
+      "explicacion": "Su ventaja: es un reto real, con competidores.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Pero no se sabe cuántos hay: el control puede «fallar» simplemente porque no había."
+    },
+    {
+      "id": "t17-q53",
+      "pregunta": "En el método EPA de E. coli por filtración en mTEC, el control negativo es:",
+      "opciones": [
+        "Una suspensión diluida de E. coli",
+        "Enterococcus faecalis, con su viabilidad comprobada en un medio no selectivo",
+        "50 mL de tampón estéril"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es el positivo; lo tercero, el blanco de método.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.1 y Dudas declaradas",
+      "apartado": "5.1",
+      "evidencia": "| Negativo | Filtrar Enterococcus faecalis; su viabilidad se comprueba en un medio no selectivo |"
+    },
+    {
+      "id": "t17-q54",
+      "pregunta": "Los organismos de control liofilizados se rehidratan con:",
+      "opciones": [
+        "Agua del grifo",
+        "Alcohol al 70 %",
+        "Diluyente de máxima recuperación"
+      ],
+      "correcta": 2,
+      "explicacion": "De primera generación desde una colección, o comerciales.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8.1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Se rehidratan con diluyente de máxima recuperación."
+    },
+    {
+      "id": "t17-q55",
+      "pregunta": "En el plan de la EPA, la esterilidad de los medios se comprueba:",
+      "opciones": [
+        "Incubando una placa o tubo de cada lote de cada medio",
+        "Una vez al año",
+        "Solo en los medios comerciales"
+      ],
+      "correcta": 0,
+      "explicacion": "Además, con cada lote nuevo, sus controles positivo y negativo.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "| Esterilidad de los medios | Incubar una placa o tubo de cada lote de cada medio |"
+    },
+    {
+      "id": "t17-q56",
+      "pregunta": "En un gráfico de control de recuentos, los límites de acción están en:",
+      "opciones": [
+        "La media ± 2s",
+        "La media ± 3s",
+        "La media ± 1s"
+      ],
+      "correcta": 1,
+      "explicacion": "± 2s son los de aviso.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "media ± 2s (equivalen al aviso) y media ± 3s (a la acción)"
+    },
+    {
+      "id": "t17-q57",
+      "pregunta": "Según la guía británica, se investiga cuando dos de tres recuentos seguidos caen fuera del límite de aviso:",
+      "opciones": [
+        "Solo si están en el mismo lado",
+        "Nunca: hacen falta tres de tres",
+        "Tanto en el mismo lado como en lados distintos de la media"
+      ],
+      "correcta": 2,
+      "explicacion": "El Nordtest TR 569 sí exige el mismo lado.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Dos de tres recuentos seguidos fuera de un límite de aviso, en el mismo lado o en lados distintos de la media."
+    },
+    {
+      "id": "t17-q58",
+      "pregunta": "Si más de un 5 % de los índices de dispersión D² superan 3,841, hay problemas de:",
+      "opciones": [
+        "Repetibilidad",
+        "Esterilidad",
+        "Calibración del pHmetro"
+      ],
+      "correcta": 0,
+      "explicacion": "La suma de D² a largo plazo informa de la reproducibilidad.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Más de un 5 % de valores por encima de 3,841 indica problemas de repetibilidad."
+    },
+    {
+      "id": "t17-q59",
+      "pregunta": "Si las submuestras duplicadas se parecen demasiado, se sospecha:",
+      "opciones": [
+        "Contaminación del medio",
+        "Sesgo del operador",
+        "Un medio demasiado selectivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Igual que un gráfico sin variación.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Si las submuestras se parecen demasiado, también se sospecha sesgo del operador."
+    },
+    {
+      "id": "t17-q60",
+      "pregunta": "En el criterio de la EPA, un solo analista que cuenta dos veces la misma membrana debe coincidir dentro de un:",
+      "opciones": [
+        "10 %",
+        "1 %",
+        "5 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Entre dos analistas, 10 %.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.4 y Dudas declaradas",
+      "apartado": "5.4",
+      "evidencia": "Con un solo analista, cuenta dos veces la misma membrana: dentro de un 5 %."
+    },
+    {
+      "id": "t17-q61",
+      "pregunta": "En el método EPA, la recuperación continua (OPR) se comprueba con:",
+      "opciones": [
+        "Una muestra inoculada cada 20 muestras o una por semana, lo que sea más frecuente",
+        "Una muestra al año",
+        "Cuatro muestras solo al principio"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cuatro muestras iniciales son el IPR.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "una muestra inoculada cada 20 muestras o una por semana, lo que sea más frecuente."
+    },
+    {
+      "id": "t17-q62",
+      "pregunta": "Hay que validar (y no solo verificar) un método cuando:",
+      "opciones": [
+        "Es un método ISO usado dentro de su alcance",
+        "Es un método no normalizado, o uno normalizado usado fuera de su alcance",
+        "El equipo se ha calibrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Un método normalizado adoptado se verifica.",
+      "fuente": "ISO/IEC 17025 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Método no normalizado: desarrollado por el laboratorio, sacado de la bibliografía o del fabricante, o normalizado usado fuera de su alcance"
+    },
+    {
+      "id": "t17-q63",
+      "pregunta": "En los métodos cualitativos se evalúa el límite de detección; en los cuantitativos (recuentos), el límite de:",
+      "opciones": [
+        "Aviso",
+        "Acción",
+        "Determinación"
+      ],
+      "correcta": 2,
+      "explicacion": "Aviso y acción son de los gráficos.",
+      "fuente": "Eurachem (2023), 10 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "incertidumbre del recuento y límite de determinación."
+    },
+    {
+      "id": "t17-q64",
+      "pregunta": "En la incertidumbre de un resultado microbiológico, la mayor contribución suele ser:",
+      "opciones": [
+        "El muestreo",
+        "La lectura de la placa",
+        "La pesada del medio"
+      ],
+      "correcta": 0,
+      "explicacion": "Componentes: distribucional, técnica, confirmación y matriz.",
+      "fuente": "Eurachem (2023), 12 · apunte §5.7",
+      "apartado": "5.7",
+      "evidencia": "El muestreo suele ser la mayor contribución."
+    },
+    {
+      "id": "t17-q65",
+      "pregunta": "La norma de incertidumbre de los recuentos en alimentos es la:",
+      "opciones": [
+        "ISO 29201",
+        "ISO 19036",
+        "ISO 17043"
+      ],
+      "correcta": 1,
+      "explicacion": "La 29201 es la del agua; la 17043, de proveedores de ensayos de aptitud.",
+      "fuente": "Eurachem (2023), 12 · apunte §5.7",
+      "apartado": "5.7",
+      "evidencia": "Normas: ISO 29201 para el agua e ISO 19036 para los alimentos."
+    },
+    {
+      "id": "t17-q66",
+      "pregunta": "La norma específica de los ensayos de aptitud en microbiología es la:",
+      "opciones": [
+        "ISO 11133",
+        "ISO 8655",
+        "ISO 22117"
+      ],
+      "correcta": 2,
+      "explicacion": "La 17043 acredita a los proveedores.",
+      "fuente": "Eurachem (2023), 13.2 · apunte §5.8",
+      "apartado": "5.8",
+      "evidencia": "Normas: ISO 22117 (ensayos de aptitud en microbiología) e ISO/IEC 17043"
+    },
+    {
+      "id": "t17-q67",
+      "pregunta": "La vigilancia ambiental del laboratorio:",
+      "opciones": [
+        "No sustituye a la técnica aséptica: la verifica",
+        "Sustituye a la técnica aséptica",
+        "Solo se hace si hay un brote"
+      ],
+      "correcta": 0,
+      "explicacion": "Comprueba también que la limpieza y la desinfección funcionan.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 4.2 · apunte §5.9",
+      "apartado": "5.9",
+      "evidencia": "No sustituye a la técnica aséptica: la verifica."
+    },
+    {
+      "id": "t17-q68",
+      "pregunta": "En las cabinas de seguridad biológica, el control microbiológico se hace:",
+      "opciones": [
+        "Cada cinco años",
+        "Semanalmente",
+        "Solo al instalarlas"
+      ],
+      "correcta": 1,
+      "explicacion": "Rendimiento, anual; flujo de aire, en cada uso.",
+      "fuente": "Eurachem (2023), anexo F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Cabinas de seguridad | Rendimiento; control microbiológico; flujo de aire | Anual; semanal; cada uso |"
+    },
+    {
+      "id": "t17-q69",
+      "pregunta": "Según Eurachem, los termómetros de referencia se calibran cada 5 años y se comprueban:",
+      "opciones": [
+        "Cada día con agua hirviendo",
+        "Nunca entre calibraciones",
+        "Cada año en el punto de hielo"
+      ],
+      "correcta": 2,
+      "explicacion": "Los termopares de referencia, cada 3 años.",
+      "fuente": "Eurachem (2023), anexo E · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Termómetros de referencia | Calibración cada 5 años; comprobación anual en el punto de hielo |"
+    },
+    {
+      "id": "t17-q70",
+      "pregunta": "Según la guía británica, las balanzas analíticas (menos de 1 g) deben tener una exactitud de:",
+      "opciones": [
+        "± 0,001 g, y a veces ± 0,0001 g",
+        "± 0,01 g",
+        "± 0,1 g"
+      ],
+      "correcta": 0,
+      "explicacion": "± 0,01 g es para las de uso general.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Las analíticas (menos de 1 g): ± 0,001 g, y a veces ± 0,0001 g (guía británica)."
+    },
+    {
+      "id": "t17-q71",
+      "pregunta": "Al calibrar una pipeta por gravimetría:",
+      "opciones": [
+        "Basta una pesada",
+        "Se hacen diez pesadas, corrigiendo la densidad del agua por la temperatura",
+        "Se usa un colorante y un espectrofotómetro"
+      ],
+      "correcta": 1,
+      "explicacion": "Media, desviación estándar, CV y sesgo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Diez pesadas repetidas por volumen; se calcula la media, la desviación estándar, el coeficiente de variación y la inexactitud (sesgo)."
+    },
+    {
+      "id": "t17-q72",
+      "pregunta": "En las pipetas automáticas se usan puntas con filtro para:",
+      "opciones": [
+        "Dispensar más rápido",
+        "Calibrar sin pesar",
+        "No contaminar el pistón"
+      ],
+      "correcta": 2,
+      "explicacion": "Y la pipeta, en su soporte, no tumbada.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Con puntas con filtro, para no contaminar el pistón; y la pipeta en su soporte, no tumbada."
+    },
+    {
+      "id": "t17-q73",
+      "pregunta": "En el ejemplo de la EPA, la temperatura de las estufas se registra:",
+      "opciones": [
+        "Dos veces al día, con al menos 4 horas entre lecturas",
+        "Una vez a la semana",
+        "Solo cuando se abren"
+      ],
+      "correcta": 0,
+      "explicacion": "Neveras, a diario.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §6.4 y Dudas declaradas",
+      "apartado": "6.4",
+      "evidencia": "EPA: temperatura de las estufas dos veces al día, con al menos 4 horas entre lecturas;"
+    },
+    {
+      "id": "t17-q74",
+      "pregunta": "El pHmetro se calibra:",
+      "opciones": [
+        "Una vez al año con un solo tampón",
+        "Antes de cada uso, con dos tampones que abarquen el intervalo",
+        "Con agua destilada"
+      ],
+      "correcta": 1,
+      "explicacion": "Y se verifica con un tampón distinto.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "Calibrar antes de cada uso con dos tampones que abarquen el intervalo (EPA: pH 4, 7 o 10)."
+    },
+    {
+      "id": "t17-q75",
+      "pregunta": "Un autoclave de laboratorio debe cumplir:",
+      "opciones": [
+        "Solo la presión del manómetro",
+        "Solo el tiempo del temporizador",
+        "Tiempo, presión y temperatura"
+      ],
+      "correcta": 2,
+      "explicacion": "Una olla a presión con solo un manómetro no vale.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.6",
+      "apartado": "6.6",
+      "evidencia": "Autoclave: debe cumplir tiempo, presión y temperatura."
     }
   ],
   "supuestos": [
@@ -849,6 +1794,170 @@
           "correcta": 3,
           "explicacion": "La 17043 y la 22117 son de ensayos de aptitud.",
           "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023), 8.5"
+        }
+      ]
+    },
+    {
+      "id": "t17-s03",
+      "titulo": "Los equipos después de una mudanza",
+      "enunciado": "El laboratorio de microbiología se traslada a un edificio nuevo. Se han movido estufas, neveras, una balanza analítica y las pipetas automáticas; en el traslado se han roto dos termómetros de vidrio de mercurio. Antes de volver a analizar, el responsable de calidad debe decidir qué comprobar.",
+      "preguntas": [
+        {
+          "id": "t17-s03-q1",
+          "pregunta": "¿Qué hay que comprobar en las estufas trasladadas antes de usarlas?",
+          "opciones": [
+            "La estabilidad y la homogeneidad de la temperatura",
+            "Nada hasta la próxima calibración anual",
+            "Solo que encienden",
+            "Su color interior"
+          ],
+          "correcta": 0,
+          "explicacion": "Al principio y tras reparación o traslado.",
+          "fuente": "Eurachem (2023), anexo F · apunte §6.1",
+          "apartado": "6.1",
+          "evidencia": "| Estufas, baños, neveras, congeladores | Estabilidad y homogeneidad de la temperatura | Al principio y tras reparación o traslado |"
+        },
+        {
+          "id": "t17-s03-q2",
+          "pregunta": "La balanza recibió un golpe en el traslado. ¿Qué se hace?",
+          "opciones": [
+            "Usarla, porque la calibración es anual",
+            "Volver a comprobarla y, si está fuera de tolerancia, no usarla hasta recalibrarla",
+            "Ajustar a mano el cero y seguir",
+            "Pesar el doble de muestra para compensar"
+          ],
+          "correcta": 1,
+          "explicacion": "Tras mantenimiento, traslado o golpe, se comprueba.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.2",
+          "apartado": "6.2",
+          "evidencia": "Tras mantenimiento, traslado o un golpe, se vuelve a comprobar. Una balanza fuera de tolerancia no se usa hasta recalibrarla."
+        },
+        {
+          "id": "t17-s03-q3",
+          "pregunta": "Una pipeta de 1 mL da, en 10 pesadas, un sesgo del 1,5 % y un CV del 0,6 %. Se usará para preparar un patrón. Según la guía británica:",
+          "opciones": [
+            "Cumple, porque el sesgo es menor del 2 %",
+            "Cumple, porque el CV es menor del 1 %",
+            "No cumple: para un uso crítico el sesgo debe ser menor del 1 %",
+            "No se puede saber sin la ISO 8655"
+          ],
+          "correcta": 2,
+          "explicacion": "Criterio general: CV < 1 % y sesgo < 2 %; crítico: sesgo < 1 %.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.3",
+          "apartado": "6.3",
+          "evidencia": "Criterio de la guía británica: CV < 1 % y sesgo < 2 %, o < 1 % si es crítico (por ejemplo, para preparar un patrón)."
+        },
+        {
+          "id": "t17-s03-q4",
+          "pregunta": "¿Con qué sustituye los termómetros de mercurio rotos?",
+          "opciones": [
+            "Con otros de mercurio iguales",
+            "Con termómetros de tolueno",
+            "No hace falta sustituirlos",
+            "Con registradores de datos: los de mercurio y tolueno están prohibidos por Eurachem"
+          ],
+          "correcta": 3,
+          "explicacion": "La guía británica de 2017 aún los describe; Eurachem 2023, más reciente, los prohíbe.",
+          "fuente": "Eurachem (2023), 9.2 · apunte §6.4",
+          "apartado": "6.4",
+          "evidencia": "Termómetros de mercurio y de tolueno: prohibidos por seguridad (Eurachem, 9.2). Se recomiendan los registradores de datos."
+        },
+        {
+          "id": "t17-s03-q5",
+          "pregunta": "Tras calibrar el pHmetro con los tampones 4 y 7, ¿cómo lo verifica?",
+          "opciones": [
+            "Con un tampón distinto de los usados para calibrar",
+            "Con el tampón 7 otra vez",
+            "Con agua destilada",
+            "No hace falta verificarlo"
+          ],
+          "correcta": 0,
+          "explicacion": "Así se detecta un error de la calibración.",
+          "fuente": "Eurachem (2023) · apunte §6.5",
+          "apartado": "6.5",
+          "evidencia": "Verificar con un tampón distinto de los de la calibración (Eurachem)."
+        }
+      ]
+    },
+    {
+      "id": "t17-s04",
+      "titulo": "Ensayo de aptitud y vigilancia del ambiente",
+      "enunciado": "El laboratorio participa en un ensayo de aptitud de recuento de *E. coli* en agua organizado por un proveedor acreditado. En las últimas rondas sus resultados han quedado siempre por debajo de la mediana, aunque dentro de lo aceptable. Además, quiere organizar la vigilancia ambiental de la sala de siembra.",
+      "preguntas": [
+        {
+          "id": "t17-s04-q1",
+          "pregunta": "¿Cómo trata la muestra del ensayo de aptitud?",
+          "opciones": [
+            "Con el analista más experto y por triplicado",
+            "Exactamente como una muestra de rutina",
+            "Con un medio especial más productivo",
+            "Repitiéndola hasta que salga la mediana"
+          ],
+          "correcta": 1,
+          "explicacion": "Si no, el ensayo no refleja la rutina.",
+          "fuente": "Eurachem (2023), 13.2 · apunte §5.8",
+          "apartado": "5.8",
+          "evidencia": "La muestra se trata exactamente como una de rutina."
+        },
+        {
+          "id": "t17-s04-q2",
+          "pregunta": "¿Qué datos le da el proveedor para comparar?",
+          "opciones": [
+            "Solo «apto» o «no apto»",
+            "El resultado de cada laboratorio con su nombre",
+            "Ninguno",
+            "La media, la mediana, el valor asignado y a veces una puntuación z"
+          ],
+          "correcta": 3,
+          "explicacion": "Con ellos el laboratorio hace sus gráficos.",
+          "fuente": "Eurachem (2023), 13.2 · apunte §5.8",
+          "apartado": "5.8",
+          "evidencia": "El proveedor da la media, la mediana, el valor asignado y, a veces, una puntuación z."
+        },
+        {
+          "id": "t17-s04-q3",
+          "pregunta": "Que sus resultados queden siempre por debajo de la mediana indica:",
+          "opciones": [
+            "Una desviación sistemática hacia un lado que conviene investigar",
+            "Que todo va bien, porque está dentro de lo aceptable",
+            "Que el proveedor se ha equivocado",
+            "Que debe dejar de participar"
+          ],
+          "correcta": 0,
+          "explicacion": "Para eso se representan en gráficos.",
+          "fuente": "Eurachem (2023), 13.2 · apunte §5.8",
+          "apartado": "5.8",
+          "evidencia": "El laboratorio la representa en gráficos para ver si sus resultados se separan siempre hacia el mismo lado de la mediana."
+        },
+        {
+          "id": "t17-s04-q4",
+          "pregunta": "¿Qué técnicas usa para vigilar el ambiente de la sala?",
+          "opciones": [
+            "Solo un termómetro",
+            "Muestreadores de aire, placas de sedimentación, placas de contacto e hisopos",
+            "Un pHmetro de superficie",
+            "Una balanza de precisión"
+          ],
+          "correcta": 1,
+          "explicacion": "Con medios selectivos y no selectivos, también controlados.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017), 4.2 · apunte §5.9",
+          "apartado": "5.9",
+          "evidencia": "Técnicas: muestreadores de aire, placas de sedimentación, placas de contacto e hisopos de superficie, con medios selectivos y no selectivos."
+        },
+        {
+          "id": "t17-s04-q5",
+          "pregunta": "Según Eurachem, ¿con qué frecuencia orientativa?",
+          "opciones": [
+            "Todo una vez al año",
+            "Todo a diario",
+            "Recuento total y mohos, semanal; patógenos, dos veces al año",
+            "Solo cuando hay un resultado raro"
+          ],
+          "correcta": 2,
+          "explicacion": "Es orientativa.",
+          "fuente": "Eurachem (2023), anexo F · apunte §5.9",
+          "apartado": "5.9",
+          "evidencia": "Frecuencia orientativa (Eurachem, anexo F): recuento total y mohos, semanal; patógenos, dos veces al año."
         }
       ]
     }
