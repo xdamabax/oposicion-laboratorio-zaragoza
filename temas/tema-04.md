@@ -96,8 +96,8 @@ Hay piezas **fuera del Título IV** que el Título IV da por sabidas: la obligac
 
     Son las que dispararía, por ejemplo, un resultado analítico que revele un riesgo sanitario.
   - **Límite (56.4):** no pueden causar **perjuicio de difícil o imposible reparación** ni violar derechos.
-  - **Duración (56.5):** se extinguen cuando surte efectos la resolución final.
-- **Acumulación (57):** puede acordarse cuando haya **identidad sustancial o íntima conexión** y resuelva **el mismo órgano**. **Contra el acuerdo de acumulación no cabe recurso.**
+  - **Duración (56.5):** *«podrán ser **alzadas o modificadas durante la tramitación** del procedimiento, de oficio o a instancia de parte, en virtud de **circunstancias sobrevenidas** o que no pudieron ser tenidas en cuenta en el momento de su adopción»*. En todo caso, se extinguen cuando surte efectos la resolución final.
+- **Acumulación (57):** el órgano que inicie o tramite un procedimiento, *«**cualquiera que haya sido la forma de su iniciación**»*, puede acordarla cuando haya **identidad sustancial o íntima conexión** y resuelva **el mismo órgano**. **Contra el acuerdo de acumulación no cabe recurso.**
 
 ### 3.2. Iniciación de oficio (arts. 58 a 65)
 
@@ -182,7 +182,7 @@ Reglas comunes:
   - tiene **formato electrónico** e **índice numerado**;
   - **no forman parte** de él las notas, borradores, opiniones, resúmenes, informes internos ni juicios de valor, **salvo los informes preceptivos y facultativos** pedidos antes de la resolución.
 - **Impulso (71):**
-  - el procedimiento se rige por el **principio de celeridad** y se **impulsa de oficio en todos sus trámites**, por medios electrónicos;
+  - el procedimiento se rige por el **principio de celeridad** y se **impulsa de oficio en todos sus trámites**, por medios electrónicos, *«respetando los principios de **transparencia y publicidad**»* (71.1);
   - se despachan los expedientes en **orden riguroso de incoación** en asuntos homogéneos, salvo orden motivada en contrario. Saltárselo acarrea **responsabilidad disciplinaria** y puede ser **causa de remoción del puesto**.
 - **Concentración de trámites (72):** en **un solo acto** se acuerdan los trámites que admitan impulso simultáneo.
 - **Cumplimiento de trámites por los interesados (73):**
@@ -448,3 +448,4 @@ Los **recursos** (alzada, reposición, revisión) están en el **Título V** y q
   - revisadas **todas las notas de modificación** de la ley: en el Título IV solo figura el art. 77.3 bis (Ley 15/2022, disposición final 4).
 - **Exámenes:** leídas **una a una** las preguntas de la parte común y de reserva de 1233, 1246 y 1322. Las de 1246 con texto revuelto (7 a 10) se leyeron **renderizando la página**: son Haciendas Locales (art. 169.1) y TREBEP (arts. 15, 61.6 y 70.1). Los segundos ejercicios son solo de laboratorio.
 - **Fecha de verificación:** 25 de septiembre de 2026.
+- **Ampliado el 15 de octubre de 2026** con tres literales que han caído en exámenes de otras plazas (`ExamenesAnteriores/PLANTILLAS.md`): **56.5** (1779, n.º 42), **57** (1521, n.º 2) y **71.1** (1557, n.º 37). Tomados de la API de datos abiertos del BOE (texto consolidado, bloques `a56`, `a57` y `a71`) ese mismo día.
