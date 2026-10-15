@@ -468,6 +468,296 @@
       "etiquetas": [
         "valorador"
       ]
+    },
+    {
+      "id": "t23-f45",
+      "anverso": "¿Por qué la medida de pH es la determinación más frecuente de un laboratorio de aguas?",
+      "reverso": "Porque la potenciometría **no consume la muestra**, **no la destruye** y el instrumento es **barato**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §1",
+      "etiquetas": [
+        "potenciometria"
+      ],
+      "apartado": "1",
+      "evidencia": "No consume la muestra, no la destruye y el instrumento es barato"
+    },
+    {
+      "id": "t23-f46",
+      "anverso": "¿Qué documento rige la medida del pH en agua y cuál la calibración del pHímetro?",
+      "reverso": "Medida en agua: **UNE-EN ISO 10523:2012**. Calibración: el **procedimiento QU-003 del CEM**, procedimiento oficial español. Exigencias al método en agua de consumo: **RD 3/2023**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": "| Cómo se calibra un pHímetro | CEM, procedimiento QU-003 | Procedimiento oficial español |"
+    },
+    {
+      "id": "t23-f47",
+      "anverso": "Escribe el potencial de una celda potenciométrica.",
+      "reverso": "**E(celda) = E(indicador) − E(referencia) + E(j)**, siendo E(j) el **potencial de unión líquida**, que no se puede medir por separado.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "etiquetas": [
+        "potenciometria"
+      ],
+      "apartado": "2.1",
+      "evidencia": "E(celda) = E(indicador) − E(referencia) + E(j)"
+    },
+    {
+      "id": "t23-f48",
+      "anverso": "¿Por qué no se puede cambiar el electrolito de relleno de un electrodo de referencia?",
+      "reverso": "Porque el potencial del calomelanos y del Ag/AgCl **depende de la concentración de cloruro** (E = E° − 0,0592 · log[Cl⁻]): el electrolito **es parte del instrumento**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "etiquetas": [
+        "electrodos"
+      ],
+      "apartado": "2.1",
+      "evidencia": "Por eso el electrolito de relleno es parte del instrumento y no se puede cambiar por otro."
+    },
+    {
+      "id": "t23-f49",
+      "anverso": "¿Por qué una valoración potenciométrica es exacta aunque el electrodo esté algo descalibrado?",
+      "reverso": "Porque es **inmune al valor absoluto** del potencial: busca **dónde salta**, no **cuánto vale**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "etiquetas": [
+        "potenciometria"
+      ],
+      "apartado": "2.1",
+      "evidencia": "da igual que el electrodo esté descalibrado unos milivoltios, porque lo que se busca es dónde salta, no cuánto vale."
+    },
+    {
+      "id": "t23-f50",
+      "anverso": "¿Cómo se define el pH de una muestra en la escala operativa?",
+      "reverso": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**, comparando con patrones; **k′** es la **pendiente práctica** del electrodo, obtenida con dos patrones.",
+      "fuente": "IUPAC (2002) · apunte §2.2",
+      "etiquetas": [
+        "ph"
+      ],
+      "apartado": "2.2",
+      "evidencia": "pH(X) = pH(S) − [E(X) − E(S)] / k′"
+    },
+    {
+      "id": "t23-f51",
+      "anverso": "¿Cuánto cambia con la temperatura el pH de los tampones de bórax y de ftalato?",
+      "reverso": "**Tetraborato** (bórax): de **9,464 a 0 °C** a **9,011 a 50 °C**. **Ftalato**: apenas, de **4,000 a 4,050**. El certificado trae la tabla; los pHímetros modernos la llevan grabada.",
+      "fuente": "IUPAC (2002) · apunte §2.2",
+      "etiquetas": [
+        "ph"
+      ],
+      "apartado": "2.2",
+      "evidencia": "el tetraborato pasa de 9,464 a 0 °C a 9,011 a 50 °C; el ftalato apenas se mueve (4,000 → 4,050)."
+    },
+    {
+      "id": "t23-f52",
+      "anverso": "Electrodo combinado: ¿para qué es el orificio de llenado y qué corrige el error alcalino?",
+      "reverso": "El **orificio de llenado** hay que **destaparlo al medir**, para que el electrolito **fluya hacia fuera**. El **error alcalino** se corrige en parte con **vidrios de litio y bario**, que amplían el intervalo lineal.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "etiquetas": [
+        "electrodo"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "Un orificio de llenado, que hay que destapar al medir para que el electrolito fluya hacia fuera.",
+        "El error alcalino se corrige en parte con vidrios de litio y bario, que amplían el intervalo lineal."
+      ]
+    },
+    {
+      "id": "t23-f53",
+      "anverso": "¿Qué pasa con un diafragma obstruido y con un electrodo que se ha secado?",
+      "reverso": "**Diafragma obstruido** (proteínas, grasas, precipitados): lecturas **inestables** que no llegan a estabilizarse. **Electrodo seco**: se **rehidrata un par de horas**; la respuesta plena tarda **hasta 24 h**.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "etiquetas": [
+        "electrodo"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "| Diafragma obstruido | Muestras con proteínas, grasas, precipitados | Lecturas inestables o que no llegan a estabilizarse |",
+        "Si se ha secado, se rehidrata un par de horas; la respuesta plena tarda hasta 24 h."
+      ]
+    },
+    {
+      "id": "t23-f54",
+      "anverso": "¿Cómo se seca el electrodo entre medidas y qué se hace con las burbujas internas?",
+      "reverso": "Se **enjuaga** con agua desionizada y se **seca dando toques con papel, sin frotar** (frotar carga el vidrio). Las **burbujas** del electrolito interno se **sacuden hacia arriba**, como un termómetro clínico.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "etiquetas": [
+        "electrodo"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "se seca dando toques con papel, sin frotar (frotar carga el vidrio estáticamente).",
+        "Burbujas en el electrolito interno: se sacuden hacia arriba, como un termómetro clínico."
+      ]
+    },
+    {
+      "id": "t23-f55",
+      "anverso": "¿Qué termómetro pide el QU-003 para calibrar un pHímetro?",
+      "reverso": "Un **termómetro calibrado** de resolución **0,1 °C**, en el intervalo de **15 a 30 °C**. Además, tampones certificados de pH 2, 4, 7, 9 y 12, agua desionizada y vasos de 50 a 100 mL.",
+      "fuente": "CEM, procedimiento QU-003, 5.1 · apunte §2.3",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Termómetro calibrado, con resolución de 0,1 °C, en el intervalo de 15 a 30 °C."
+    },
+    {
+      "id": "t23-f56",
+      "anverso": "¿A qué temperatura se ponen los tampones antes de calibrar?",
+      "reverso": "A la **temperatura de su certificado** (suele ser **20 o 25 °C**). Si no es posible, se **aplica la corrección del certificado**. Se mide y se anota la temperatura.",
+      "fuente": "CEM, procedimiento QU-003, 5.2 · apunte §2.3",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Acondicionar el tampón a la temperatura de su certificado (suele ser 20 o 25 °C). Si no es posible, aplicar la corrección del certificado."
+    },
+    {
+      "id": "t23-f57",
+      "anverso": "¿Qué es la «autocalibración» de un pHímetro, según el QU-003?",
+      "reverso": "Un **ajuste**, mal llamado «autocalibración». Calibrar es comparar con patrones y cuantificar el error, **sin tocar el aparato**.",
+      "fuente": "CEM, procedimiento QU-003 · apunte §2.3",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Conviene no confundir la calibración con el ajuste de un sistema de medida, «a menudo llamado incorrectamente autocalibración»."
+    },
+    {
+      "id": "t23-f58",
+      "anverso": "QU-003: ¿qué se hace si el coeficiente de la recta se sale de 0,995-1,005?",
+      "reverso": "**Nuevo ajuste con los tampones 4 y 7 y nueva calibración**, registrando las lecturas antes y después del ajuste y las temperaturas. (El criterio es el literal del CEM; en la práctica actúa sobre la pendiente.)",
+      "fuente": "CEM, procedimiento QU-003, 6.2 · apunte §2.3 y Dudas",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Si se sale de ese intervalo: nuevo ajuste con los tampones 4 y 7 y nueva calibración."
+    },
+    {
+      "id": "t23-f59",
+      "anverso": "Incertidumbre de la calibración del pHímetro: factor de cobertura y efecto de la temperatura.",
+      "reverso": "Se expande con **k = 2** (cobertura del **95,45 %**); puede tomarse **la mayor** de las obtenidas para todo el campo. **1 °C** de diferencia equivale típicamente a **0,2 mV**.",
+      "fuente": "CEM, procedimiento QU-003, 6.1 · apunte §2.3",
+      "etiquetas": [
+        "incertidumbre"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "La incertidumbre expandida se obtiene con k = 2, que corresponde a una probabilidad de cobertura del 95,45 %.",
+        "1 °C de diferencia de temperatura corresponde típicamente a una variación de 0,2 mV."
+      ]
+    },
+    {
+      "id": "t23-f60",
+      "anverso": "¿Quién fija el periodo de calibración del pHímetro?",
+      "reverso": "El **usuario**. Lo orientativo: lo que diga el manual o, si no, según el uso, **unos seis meses**.",
+      "fuente": "CEM, procedimiento QU-003 · apunte §2.3",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "el establecimiento del periodo es responsabilidad del usuario."
+    },
+    {
+      "id": "t23-f61",
+      "anverso": "¿Qué indica el desplazamiento (offset) de un electrodo de pH?",
+      "reverso": "El **potencial a pH 7**, en mV, que **idealmente sería 0 mV**. Junto con la pendiente es lo que informa el equipo; sus límites los fija el **fabricante o el laboratorio**, no una norma.",
+      "fuente": "Documentación de fabricante · apunte §2.3 y Dudas",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Desplazamiento (offset), en mV: el potencial a pH 7, que idealmente sería 0 mV."
+    },
+    {
+      "id": "t23-f62",
+      "anverso": "En el cálculo de derivadas, ¿a qué volumen se atribuye cada valor de ΔE/ΔV?",
+      "reverso": "Al **punto medio del incremento**: ΔE/ΔV entre 12,00 y 12,10 mL se representa en **12,05 mL**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "etiquetas": [
+        "valoracion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "En las derivadas, cada valor se atribuye al punto medio del incremento de volumen: ΔE/ΔV entre 12,00 y 12,10 mL se representa en 12,05."
+    },
+    {
+      "id": "t23-f63",
+      "anverso": "¿Qué referencia se usa en una argentometría potenciométrica y por qué?",
+      "reverso": "Un electrodo de **doble unión**, para que el **cloruro de la referencia no se fugue** a la muestra. El indicador es de **plata metálica** o selectivo de plata/sulfuro.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "etiquetas": [
+        "valoracion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "En argentometría hay que evitar que el cloruro de la referencia se fugue a la muestra: se usa un electrodo de doble unión."
+    },
+    {
+      "id": "t23-f64",
+      "anverso": "Alcalinidad por la UNE-EN ISO 9963-1: ¿qué campo cubre y qué se hace con aguas de alcalinidad baja?",
+      "reverso": "Con **50 mL** de muestra y valorante **0,1 eq/L**, de unos **0,4 a 20 mmol/L**. Para alcalinidades bajas, **más muestra y valorante más diluido**.",
+      "fuente": "UNE-EN ISO 9963-1:1996 · apunte §2.4",
+      "etiquetas": [
+        "alcalinidad"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Con 50 mL de muestra y valorante 0,1 eq/L el campo va aproximadamente de 0,4 a 20 mmol/L; para alcalinidades bajas se usa más muestra y valorante más diluido."
+    },
+    {
+      "id": "t23-f65",
+      "anverso": "Bureta motorizada y agitación de un valorador automático.",
+      "reverso": "Bureta de **pistón** movida por **motor paso a paso**, con cilindros de **1, 2, 5, 10, 20 y 50 mL**. Agitación **constante y reproducible**, para que el electrodo lea el **seno de la disolución**.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "etiquetas": [
+        "valorador"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "Cilindros intercambiables de 1, 2, 5, 10, 20 y 50 mL",
+        "Agitación constante y reproducible, imprescindible para que el electrodo lea el seno de la disolución y no una zona sin mezclar"
+      ]
+    },
+    {
+      "id": "t23-f66",
+      "anverso": "¿Cuánto espera el valorador entre una adición y la siguiente?",
+      "reverso": "Hasta que la señal **se equilibra**: un **tiempo fijo**, o hasta que la **deriva** (mV por minuto) baje de un **umbral**.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "etiquetas": [
+        "valorador"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Entre adición y adición, el equipo espera a que la señal se equilibre: o un tiempo fijo, o hasta que la deriva (en mV por minuto) baje de un umbral."
+    },
+    {
+      "id": "t23-f67",
+      "anverso": "Ventajas de un valorador automático.",
+      "reverso": "**Repetibilidad** muy superior al ojo; curva y resultado **registrados** (trazabilidad documental, ISO 17025); **menos reactivo**; **series desatendidas** con cambiador de muestras.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "etiquetas": [
+        "valorador"
+      ],
+      "apartado": "2.5",
+      "evidencia": "repetibilidad muy superior a la del ojo humano; la curva y el resultado quedan registrados (trazabilidad documental, que es lo que pide la ISO 17025 del tema 40)"
+    },
+    {
+      "id": "t23-f68",
+      "anverso": "¿Cómo se determina el agua por Karl Fischer?",
+      "reverso": "En valorador automático, **modo KFT**, según la **ISO 760:1978**, con detección **electrométrica** del punto final mediante un **doble electrodo de platino**.",
+      "fuente": "ISO 760:1978 · apunte §3 y Dudas",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Agua en un producto sólido o líquido | Karl Fischer en valorador automático (modo KFT) | ISO 760:1978 |"
+    },
+    {
+      "id": "t23-f69",
+      "anverso": "¿Cómo se valora el cloruro de una muestra coloreada o turbia?",
+      "reverso": "Por **argentometría con indicación potenciométrica** (electrodo de plata y referencia de **doble unión**): el método de Mohr necesita **ver el viraje** del cromato. En flujo continuo, **ISO 15682**.",
+      "fuente": "Doctrina; ISO 15682:2000 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Alternativa al método de Mohr del tema 22, que necesita ver el viraje del cromato"
     }
   ],
   "test": [
@@ -772,6 +1062,593 @@
       "explicacion": "Son puntos finales FIJADOS de antemano, no puntos de equivalencia: pH 8,3 (el viraje de la fenolftaleína) y pH 4,5 (el del naranja de metilo). El instrumento dosifica hasta la consigna, que es el modo SET de un valorador.",
       "fuente": "UNE-EN ISO 9963-1:1996",
       "nucleo": true
+    },
+    {
+      "id": "t23-q25",
+      "pregunta": "En un electrodo indicador metálico de primera especie:",
+      "opciones": [
+        "Un metal está en contacto con una disolución que contiene su propio catión",
+        "Un metal recubierto de una sal poco soluble responde al anión",
+        "Una membrana de vidrio intercambia iones H⁺"
+      ],
+      "correcta": 0,
+      "explicacion": "Ejemplos: Ag/Ag⁺, Cu/Cu²⁺. Lo segundo es de segunda especie; lo tercero, de membrana.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1246, primer ejercicio, #45 · apunte §2.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "En un electrodo indicador metálico, su potencial depende de la reacción redox que sucede en la interfase…"
+      },
+      "apartado": "2.1",
+      "evidencia": "| Metálicos de primera especie | Un metal en equilibrio con su propio catión | Ag/Ag⁺, Cu/Cu²⁺ |"
+    },
+    {
+      "id": "t23-q26",
+      "pregunta": "Son errores propios del electrodo de vidrio que afectan a la medida del pH:",
+      "opciones": [
+        "El error de paralaje y el de excentricidad",
+        "El error alcalino y el error ácido",
+        "El error de capacidad y el de linealidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Alcalino a pH > 12 (lectura más baja); ácido por debajo de pH ≈ 0,5 (lectura más alta).",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1322, primer ejercicio, #15 · apunte §2.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · primer ejercicio",
+        "texto": "¿Cuál de los siguientes errores afectan a la medida del pH?"
+      },
+      "apartado": "2.2",
+      "evidencia": [
+        "| Error alcalino (o error de sodio) | pH alto, típicamente > 12, y en general con mucho Na⁺ |",
+        "| Error ácido | Disoluciones muy ácidas, por debajo de pH ≈ 0,5 |"
+      ]
+    },
+    {
+      "id": "t23-q27",
+      "pregunta": "Una ventaja de la potenciometría es que:",
+      "opciones": [
+        "Hace pasar una corriente que oxida el analito",
+        "No necesita calibración",
+        "No consume ni destruye la muestra y el instrumento es barato"
+      ],
+      "correcta": 2,
+      "explicacion": "Mide sin que circule corriente apreciable.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §1",
+      "apartado": "1",
+      "evidencia": "No consume la muestra, no la destruye y el instrumento es barato"
+    },
+    {
+      "id": "t23-q28",
+      "pregunta": "El procedimiento oficial español para calibrar pHímetros es:",
+      "opciones": [
+        "El QU-003 del Centro Español de Metrología",
+        "La UNE-EN ISO 10523",
+        "La UNE-EN ISO 9963-1"
+      ],
+      "correcta": 0,
+      "explicacion": "La 10523 es la medida del pH en agua; la 9963-1, la alcalinidad.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Cómo se calibra un pHímetro | CEM, procedimiento QU-003 | Procedimiento oficial español |"
+    },
+    {
+      "id": "t23-q29",
+      "pregunta": "El potencial de unión líquida:",
+      "opciones": [
+        "Se mide con el electrodo de referencia",
+        "No se puede medir por separado y limita la exactitud de toda medida de pH",
+        "Solo aparece en disoluciones alcalinas"
+      ],
+      "correcta": 1,
+      "explicacion": "Se minimiza con un puente de KCl concentrado.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "No se puede medir por separado, y es uno de los límites de exactitud de toda medida de pH."
+    },
+    {
+      "id": "t23-q30",
+      "pregunta": "El electrodo de plata/cloruro de plata con KCl saturado tiene, frente al electrodo de hidrógeno, un potencial a 25 °C de unos:",
+      "opciones": [
+        "+0,244 V",
+        "0,000 V",
+        "+0,197 V"
+      ],
+      "correcta": 2,
+      "explicacion": "+0,244 V es el calomelanos saturado; 0,000 V, el de hidrógeno. Las cifras varían algo según la concentración y el convenio.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1 y Dudas",
+      "apartado": "2.1",
+      "evidencia": "| Plata / cloruro de plata | AgCl + e⁻ ⇌ Ag + Cl⁻ | +0,197 V (KCl saturado); +0,205 V con KCl 3,5 M |"
+    },
+    {
+      "id": "t23-q31",
+      "pregunta": "El electrolito de relleno de un electrodo de referencia de Ag/AgCl:",
+      "opciones": [
+        "Forma parte del instrumento y no se puede cambiar por otro, porque el potencial depende del cloruro",
+        "Puede sustituirse por agua desionizada",
+        "Solo sirve para limpiar el diafragma"
+      ],
+      "correcta": 0,
+      "explicacion": "E = E° − 0,0592 · log[Cl⁻].",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Por eso el electrolito de relleno es parte del instrumento y no se puede cambiar por otro."
+    },
+    {
+      "id": "t23-q32",
+      "pregunta": "Un electrodo de Ag/AgCl usado para medir cloruro es un electrodo indicador:",
+      "opciones": [
+        "Metálico de primera especie",
+        "Metálico de segunda especie, que responde al anión",
+        "Redox inerte"
+      ],
+      "correcta": 1,
+      "explicacion": "Metal recubierto de una sal poco soluble.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Metálicos de segunda especie | Metal recubierto de una sal poco soluble: responde al anión | Ag/AgCl para medir Cl⁻ |"
+    },
+    {
+      "id": "t23-q33",
+      "pregunta": "El electrodo de quinhidrona, hoy histórico, consiste en:",
+      "opciones": [
+        "Una burbuja de H₂ sobre platino",
+        "Una membrana de vidrio de litio",
+        "Oro o platino en disolución saturada de quinhidrona"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo segundo es el electrodo de hidrógeno.",
+      "fuente": "CEM, procedimiento QU-003 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Electrodo de quinhidrona: oro o platino en disolución saturada de quinhidrona"
+    },
+    {
+      "id": "t23-q34",
+      "pregunta": "Una valoración potenciométrica da resultados exactos aunque el electrodo esté descalibrado unos milivoltios porque:",
+      "opciones": [
+        "Lo que se busca es dónde salta el potencial, no cuánto vale",
+        "Corrige sola la descalibración",
+        "Usa siempre la pendiente teórica"
+      ],
+      "correcta": 0,
+      "explicacion": "Es inmune al valor absoluto del potencial.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "da igual que el electrodo esté descalibrado unos milivoltios, porque lo que se busca es dónde salta, no cuánto vale."
+    },
+    {
+      "id": "t23-q35",
+      "pregunta": "El patrón primario de tetraborato disódico (bórax) 0,01 mol/kg tiene a 25 °C un pH de:",
+      "opciones": [
+        "6,865",
+        "9,180",
+        "10,012"
+      ],
+      "correcta": 1,
+      "explicacion": "6,865: fosfatos 1:1; 10,012: carbonatos.",
+      "fuente": "IUPAC (2002) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Tetraborato disódico (bórax) 0,01 mol/kg | 9,180 |"
+    },
+    {
+      "id": "t23-q36",
+      "pregunta": "Una porción de tampón ya usada en la calibración:",
+      "opciones": [
+        "Se devuelve al frasco si está limpia",
+        "Se guarda para la calibración siguiente",
+        "No se devuelve al frasco"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo ideal son las monodosis.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Una vez usada, la porción de tampón no se devuelve al frasco."
+    },
+    {
+      "id": "t23-q37",
+      "pregunta": "Los tampones de calibración alcalinos son los primeros sospechosos de una calibración rara porque:",
+      "opciones": [
+        "Se estropean con el CO₂ del aire",
+        "Se evaporan más rápido",
+        "Su pH no cambia con la temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "El CO₂ acidifica el tampón.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Los alcalinos se estropean con el CO₂ del aire"
+    },
+    {
+      "id": "t23-q38",
+      "pregunta": "El orificio de llenado de un electrodo combinado de pH:",
+      "opciones": [
+        "Debe permanecer siempre tapado",
+        "Se destapa al medir, para que el electrolito fluya hacia fuera",
+        "Se llena con agua desionizada"
+      ],
+      "correcta": 1,
+      "explicacion": "El electrolito sale por el diafragma.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Un orificio de llenado, que hay que destapar al medir para que el electrolito fluya hacia fuera."
+    },
+    {
+      "id": "t23-q39",
+      "pregunta": "El error alcalino del electrodo de vidrio se corrige en parte con:",
+      "opciones": [
+        "Un puente de KCl concentrado",
+        "La compensación de temperatura",
+        "Vidrios de litio y bario"
+      ],
+      "correcta": 2,
+      "explicacion": "Amplían el intervalo lineal.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El error alcalino se corrige en parte con vidrios de litio y bario"
+    },
+    {
+      "id": "t23-q40",
+      "pregunta": "Entre disoluciones, tras enjuagarlo, el electrodo de vidrio se seca:",
+      "opciones": [
+        "Dando toques con papel, sin frotar",
+        "Frotándolo con papel hasta que quede seco",
+        "Con aire caliente"
+      ],
+      "correcta": 0,
+      "explicacion": "Frotar carga el vidrio estáticamente.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "se seca dando toques con papel, sin frotar (frotar carga el vidrio estáticamente)."
+    },
+    {
+      "id": "t23-q41",
+      "pregunta": "Un electrodo de pH que se ha quedado seco:",
+      "opciones": [
+        "Ya no sirve y se desecha",
+        "Se rehidrata un par de horas; la respuesta plena tarda hasta 24 h",
+        "Se puede usar enseguida"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras, la respuesta es lenta y errática.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Si se ha secado, se rehidrata un par de horas; la respuesta plena tarda hasta 24 h."
+    },
+    {
+      "id": "t23-q42",
+      "pregunta": "Al medir muestras con proteínas, grasas o precipitados, el riesgo es:",
+      "opciones": [
+        "El error ácido",
+        "Descalibrar la ATC",
+        "Obstruir el diafragma, con lecturas inestables"
+      ],
+      "correcta": 2,
+      "explicacion": "Hay que limpiar el diafragma.",
+      "fuente": "Documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Diafragma obstruido | Muestras con proteínas, grasas, precipitados | Lecturas inestables o que no llegan a estabilizarse |"
+    },
+    {
+      "id": "t23-q43",
+      "pregunta": "El medidor de un pHímetro debe tener altísima impedancia de entrada porque la membrana de vidrio:",
+      "opciones": [
+        "Tiene una resistencia interna de cientos de megaohmios",
+        "Genera corrientes de amperios",
+        "Conduce electrones como un metal"
+      ],
+      "correcta": 0,
+      "explicacion": "Un voltímetro corriente cargaría la celda.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "la membrana de vidrio tiene una resistencia interna del orden de cientos de megaohmios"
+    },
+    {
+      "id": "t23-q44",
+      "pregunta": "Todo resultado de pH se informa junto con:",
+      "opciones": [
+        "La marca del electrodo",
+        "La temperatura a la que se midió",
+        "La hora de la calibración"
+      ],
+      "correcta": 1,
+      "explicacion": "La ATC no corrige el cambio químico del pH con la temperatura.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "por eso todo resultado de pH se informa con la temperatura a la que se midió."
+    },
+    {
+      "id": "t23-q45",
+      "pregunta": "La UNE-EN ISO 10523 describe la medida del pH con:",
+      "opciones": [
+        "Electrodo de hidrógeno",
+        "Electrodo de quinhidrona",
+        "Solo el electrodo de vidrio"
+      ],
+      "correcta": 2,
+      "explicacion": "«Por su gran importancia práctica, universalidad y exactitud».",
+      "fuente": "UNE-EN ISO 10523:2012 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Electrodo | Sólo el electrodo de vidrio, «por su gran importancia práctica, universalidad y exactitud» |"
+    },
+    {
+      "id": "t23-q46",
+      "pregunta": "Para calibrar un pHímetro según el QU-003, el termómetro debe tener una resolución de:",
+      "opciones": [
+        "0,1 °C",
+        "1 °C",
+        "0,5 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "En el intervalo de 15 a 30 °C.",
+      "fuente": "CEM, procedimiento QU-003, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Termómetro calibrado, con resolución de 0,1 °C, en el intervalo de 15 a 30 °C."
+    },
+    {
+      "id": "t23-q47",
+      "pregunta": "Según el QU-003, lo que muchos pHímetros llaman «autocalibración» es en realidad:",
+      "opciones": [
+        "Una calibración",
+        "Un ajuste",
+        "Una verificación"
+      ],
+      "correcta": 1,
+      "explicacion": "La calibración no toca el aparato.",
+      "fuente": "CEM, procedimiento QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Conviene no confundir la calibración con el ajuste de un sistema de medida, «a menudo llamado incorrectamente autocalibración»."
+    },
+    {
+      "id": "t23-q48",
+      "pregunta": "En la secuencia del QU-003, los datos de la lectura inicial con los tampones 4 y 7:",
+      "opciones": [
+        "Se borran al ajustar",
+        "Solo se anotan si hay error",
+        "Se conservan, porque dicen cómo llegó el aparato"
+      ],
+      "correcta": 2,
+      "explicacion": "Si se ajusta sin anotar, se pierde la prueba de la deriva.",
+      "fuente": "CEM, procedimiento QU-003, 5.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La lectura inicial se hace con los tampones pH 4 y pH 7, y sus datos se conservan"
+    },
+    {
+      "id": "t23-q49",
+      "pregunta": "En el procedimiento QU-003, el ajuste del pHímetro:",
+      "opciones": [
+        "Solo se hace si el usuario lo autoriza",
+        "Se hace siempre antes de leer",
+        "Nunca se hace"
+      ],
+      "correcta": 0,
+      "explicacion": "Después se releen los tampones 4 y 7.",
+      "fuente": "CEM, procedimiento QU-003, 5.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El ajuste sólo se hace si el usuario lo autoriza."
+    },
+    {
+      "id": "t23-q50",
+      "pregunta": "En la incertidumbre de la calibración, la contribución del tampón se calcula como:",
+      "opciones": [
+        "U(certificado) / √3",
+        "U(certificado) / 2, porque el certificado se da al 95,45 %",
+        "U(certificado) × 2"
+      ],
+      "correcta": 1,
+      "explicacion": "Distribución normal.",
+      "fuente": "CEM, procedimiento QU-003, 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Incertidumbre del tampón | U(certificado) / 2, porque el certificado se da al 95,45 % | Normal |"
+    },
+    {
+      "id": "t23-q51",
+      "pregunta": "La contribución de la resolución del pHímetro a la incertidumbre es:",
+      "opciones": [
+        "Resolución / 2, normal",
+        "Resolución × √3",
+        "Resolución / √12, con distribución rectangular"
+      ],
+      "correcta": 2,
+      "explicacion": "La de la repetibilidad es la desviación típica / √3.",
+      "fuente": "CEM, procedimiento QU-003, 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Resolución del pHímetro | resolución / √12 | Rectangular |"
+    },
+    {
+      "id": "t23-q52",
+      "pregunta": "Según el QU-003, el periodo de calibración del pHímetro:",
+      "opciones": [
+        "Es responsabilidad del usuario; orientativamente, unos seis meses",
+        "Lo fija el RD 3/2023 en un año",
+        "Es siempre de un mes"
+      ],
+      "correcta": 0,
+      "explicacion": "Si el manual no lo indica, según el uso.",
+      "fuente": "CEM, procedimiento QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el establecimiento del periodo es responsabilidad del usuario."
+    },
+    {
+      "id": "t23-q53",
+      "pregunta": "En una calibración multipunto del pHímetro:",
+      "opciones": [
+        "Se necesitan al menos diez tampones",
+        "Se usan hasta cinco tampones: más de cinco no aporta nada",
+        "Basta un tampón"
+      ],
+      "correcta": 1,
+      "explicacion": "Con regresión lineal; incertidumbre de 0,01-0,03.",
+      "fuente": "IUPAC (2002) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Hasta cinco tampones y regresión lineal. Más de cinco no aporta nada"
+    },
+    {
+      "id": "t23-q54",
+      "pregunta": "Según el RD 3/2023, los aparatos para controles en línea o in situ deben estar:",
+      "opciones": [
+        "Precintados por la autoridad sanitaria",
+        "Sustituidos cada año",
+        "Verificados y ajustados periódicamente, con la última calibración documentada"
+      ],
+      "correcta": 2,
+      "explicacion": "Anexo III, parte B.4.",
+      "fuente": "RD 3/2023, anexo III, parte B.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "deben estar verificados y ajustados periódicamente, y documentada la última calibración realizada."
+    },
+    {
+      "id": "t23-q55",
+      "pregunta": "El desplazamiento (offset) de un electrodo de pH es el potencial a pH 7, que idealmente sería:",
+      "opciones": [
+        "0 mV",
+        "59,16 mV",
+        "100 mV"
+      ],
+      "correcta": 0,
+      "explicacion": "Sus límites de aceptación los fija el fabricante o el laboratorio.",
+      "fuente": "Documentación de fabricante · apunte §2.3 y Dudas",
+      "apartado": "2.3",
+      "evidencia": "Desplazamiento (offset), en mV: el potencial a pH 7, que idealmente sería 0 mV."
+    },
+    {
+      "id": "t23-q56",
+      "pregunta": "Si se representa la primera derivada ΔE/ΔV frente al volumen, el punto de equivalencia está en:",
+      "opciones": [
+        "El corte con cero",
+        "El máximo de la curva",
+        "El mínimo de la curva"
+      ],
+      "correcta": 1,
+      "explicacion": "El corte con cero es de la segunda derivada.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Primera derivada | ΔE/ΔV frente a V | En el máximo de la curva |"
+    },
+    {
+      "id": "t23-q57",
+      "pregunta": "La segunda derivada es el método más preciso de localizar el punto de equivalencia porque:",
+      "opciones": [
+        "No necesita medidas",
+        "Linealiza la curva",
+        "Un corte con cero se interpola mejor que la posición de un máximo redondeado"
+      ],
+      "correcta": 2,
+      "explicacion": "Linealizar es lo del método de Gran.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "un corte con cero se interpola mucho mejor que la posición de un máximo redondeado."
+    },
+    {
+      "id": "t23-q58",
+      "pregunta": "El valor de ΔE/ΔV calculado entre 12,00 y 12,10 mL se representa en:",
+      "opciones": [
+        "12,05 mL",
+        "12,00 mL",
+        "12,10 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Al punto medio del incremento.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "ΔE/ΔV entre 12,00 y 12,10 mL se representa en 12,05."
+    },
+    {
+      "id": "t23-q59",
+      "pregunta": "En una argentometría con indicación potenciométrica, la referencia es de doble unión para:",
+      "opciones": [
+        "Medir dos analitos a la vez",
+        "Evitar que el cloruro de la referencia se fugue a la muestra",
+        "Compensar la temperatura"
+      ],
+      "correcta": 1,
+      "explicacion": "El indicador es de plata.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En argentometría hay que evitar que el cloruro de la referencia se fugue a la muestra: se usa un electrodo de doble unión."
+    },
+    {
+      "id": "t23-q60",
+      "pregunta": "En una complexometría con indicación potenciométrica, el electrodo indicador es:",
+      "opciones": [
+        "Siempre de platino",
+        "Siempre de vidrio",
+        "Un electrodo selectivo del ion que se valora"
+      ],
+      "correcta": 2,
+      "explicacion": "Platino para redox; vidrio para ácido-base.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Complexometría | Electrodo selectivo del ion que se valora |"
+    },
+    {
+      "id": "t23-q61",
+      "pregunta": "La valoración de la alcalinidad a pH 8,3 y 4,5 es una valoración:",
+      "opciones": [
+        "A un punto final prefijado, no al punto de equivalencia",
+        "Al punto de equivalencia por la segunda derivada",
+        "Por el método de Gran"
+      ],
+      "correcta": 0,
+      "explicacion": "El instrumento dosifica hasta el pH de consigna (modo SET).",
+      "fuente": "UNE-EN ISO 9963-1:1996 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "esto no es una valoración al punto de equivalencia, sino a un punto final prefijado."
+    },
+    {
+      "id": "t23-q62",
+      "pregunta": "En el modo DET de un valorador automático:",
+      "opciones": [
+        "Los incrementos son siempre iguales",
+        "El incremento de volumen se adapta a la pendiente: grande lejos del salto, pequeño cerca",
+        "Se dosifica hasta un pH prefijado"
+      ],
+      "correcta": 1,
+      "explicacion": "MET: incrementos iguales; SET: punto final fijo.",
+      "fuente": "Documentación de fabricante · apunte §2.5 y Dudas",
+      "apartado": "2.5",
+      "evidencia": "El incremento se adapta a la pendiente: grande lejos del salto, pequeño cerca."
+    },
+    {
+      "id": "t23-q63",
+      "pregunta": "En el modo MET de un valorador automático:",
+      "opciones": [
+        "El incremento se adapta a la pendiente",
+        "Se determina agua por Karl Fischer",
+        "Se añaden incrementos de volumen iguales durante toda la valoración"
+      ],
+      "correcta": 2,
+      "explicacion": "Es sencilla y robusta.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| MET | Valoración monotónica al punto de equivalencia | Incrementos de volumen iguales durante toda la valoración. Sencilla y robusta |"
+    },
+    {
+      "id": "t23-q64",
+      "pregunta": "En la valoración Karl Fischer (modo KFT), el punto final se detecta con:",
+      "opciones": [
+        "Un doble electrodo de platino",
+        "Un electrodo de vidrio",
+        "Un indicador de color"
+      ],
+      "correcta": 0,
+      "explicacion": "Determinación de agua.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| KFT | Karl Fischer, volumétrica o culombimétrica | Determinación de agua; el punto final se detecta con un doble electrodo de platino |"
+    },
+    {
+      "id": "t23-q65",
+      "pregunta": "El cloruro de una muestra turbia o coloreada se valora mejor:",
+      "opciones": [
+        "Por el método de Mohr con cromato",
+        "Por argentometría con indicación potenciométrica",
+        "Por gravimetría sin filtrar"
+      ],
+      "correcta": 1,
+      "explicacion": "El método de Mohr necesita ver el viraje del cromato.",
+      "fuente": "Doctrina; ISO 15682:2000 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Alternativa al método de Mohr del tema 22, que necesita ver el viraje del cromato"
     }
   ],
   "supuestos": [
@@ -848,6 +1725,252 @@
           "correcta": 2,
           "explicacion": "Componentes: repetibilidad s/√3 = 0,003/1,732 = 0,00173; tampón U/2 = 0,002/2 = 0,001; resolución 0,01/√12 = 0,00289. Se combinan cuadráticamente: u = √(0,00173² + 0,001² + 0,00289²) = 0,0035. La expandida es U = k·u = 2 × 0,0035 = 0,007. Las trampas: 0,0035 es olvidar el factor k = 2; 0,004 sale de olvidar la contribución de la resolución; 0,011 de sumar las componentes linealmente en vez de en cuadratura.",
           "fuente": "CEM, procedimiento QU-003, apdo. 6.1"
+        }
+      ]
+    },
+    {
+      "id": "t23-s02",
+      "titulo": "Supuesto 2. Alcalinidad con un valorador automático",
+      "enunciado": "Se determina la alcalinidad compuesta y total de un agua según la UNE-EN ISO 9963-1 con un valorador automático, sobre 50 mL de muestra. Otra muestra, de un manantial de montaña, tiene una alcalinidad muy baja.",
+      "preguntas": [
+        {
+          "id": "t23-s02-q1",
+          "pregunta": "¿En qué modo trabaja el valorador?",
+          "opciones": [
+            "SET: a punto final fijo de pH",
+            "DET: dinámico al punto de equivalencia",
+            "MET: monotónico",
+            "KFT: Karl Fischer"
+          ],
+          "correcta": 0,
+          "explicacion": "Dosifica hasta pH 8,3 y 4,5.",
+          "fuente": "Documentación de fabricante · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| SET | Valoración a punto final fijo | Dosifica hasta alcanzar un valor prefijado de pH o mV. Es el modo de la alcalinidad a pH 8,3 y 4,5 |"
+        },
+        {
+          "id": "t23-s02-q2",
+          "pregunta": "¿Con qué valorante?",
+          "opciones": [
+            "NaOH 0,1 M",
+            "Ácido fuerte, HCl o H₂SO₄ 0,1 eq/L",
+            "EDTA 0,01 M",
+            "Nitrato de plata"
+          ],
+          "correcta": 1,
+          "explicacion": "La alcalinidad se valora con ácido.",
+          "fuente": "UNE-EN ISO 9963-1:1996 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "valorando con ácido fuerte (HCl o H₂SO₄, 0,1 eq/L) hasta dos puntos finales de pH fijados de antemano"
+        },
+        {
+          "id": "t23-s02-q3",
+          "pregunta": "¿Qué electrodo indicador lleva?",
+          "opciones": [
+            "De platino",
+            "De plata",
+            "De vidrio, porque es una curva de pH",
+            "Selectivo de calcio"
+          ],
+          "correcta": 2,
+          "explicacion": "Platino para redox; plata para argentometría.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Ácido-base | De vidrio (es una curva de pH) |"
+        },
+        {
+          "id": "t23-s02-q4",
+          "pregunta": "¿Qué hace con el agua de alcalinidad muy baja?",
+          "opciones": [
+            "Usa menos muestra y valorante más concentrado",
+            "Cambia al modo KFT",
+            "No se puede determinar",
+            "Usa más muestra y valorante más diluido"
+          ],
+          "correcta": 3,
+          "explicacion": "El campo con 50 mL y 0,1 eq/L es de unos 0,4 a 20 mmol/L.",
+          "fuente": "UNE-EN ISO 9963-1:1996 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "para alcalinidades bajas se usa más muestra y valorante más diluido."
+        },
+        {
+          "id": "t23-s02-q5",
+          "pregunta": "Entre adición y adición, ¿cuánto espera el equipo?",
+          "opciones": [
+            "Hasta que la señal se equilibra: tiempo fijo o deriva por debajo de un umbral",
+            "Nada: añade sin parar",
+            "Exactamente un minuto",
+            "Hasta que el analista pulsa"
+          ],
+          "correcta": 0,
+          "explicacion": "Es el equivalente automático de esperar a que el color no vuelva.",
+          "fuente": "Documentación de fabricante · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Entre adición y adición, el equipo espera a que la señal se equilibre: o un tiempo fijo, o hasta que la deriva (en mV por minuto) baje de un umbral."
+        }
+      ]
+    },
+    {
+      "id": "t23-s03",
+      "titulo": "Supuesto 3. Valoraciones redox y de cloruro con electrodo",
+      "enunciado": "El laboratorio valora Fe(II) con dicromato potásico registrando la curva con un electrodo y, en otro análisis, cloruro en un agua residual turbia y coloreada. En la valoración de Fe(II), el mayor ΔE/ΔV aparece entre 15,20 y 15,30 mL.",
+      "preguntas": [
+        {
+          "id": "t23-s03-q1",
+          "pregunta": "¿Qué electrodo indicador usa para la valoración redox?",
+          "opciones": [
+            "Uno de vidrio",
+            "Uno inerte de platino",
+            "Uno de plata",
+            "Uno selectivo de hierro"
+          ],
+          "correcta": 1,
+          "explicacion": "Frente a una referencia de Ag/AgCl.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Redox | Platino (u oro): electrodo inerte |"
+        },
+        {
+          "id": "t23-s03-q2",
+          "pregunta": "¿Dónde sitúa el punto de equivalencia con esos datos de primera derivada?",
+          "opciones": [
+            "En 15,20 mL",
+            "En 15,30 mL",
+            "Hacia 15,25 mL, el punto medio del incremento con mayor ΔE/ΔV",
+            "Donde ΔE/ΔV vale cero"
+          ],
+          "correcta": 2,
+          "explicacion": "El máximo de la primera derivada; cada valor va al punto medio.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "En las derivadas, cada valor se atribuye al punto medio del incremento de volumen"
+        },
+        {
+          "id": "t23-s03-q3",
+          "pregunta": "Si quiere la mayor precisión, ¿qué representación usa?",
+          "opciones": [
+            "El gráfico directo a ojo",
+            "La primera derivada a ojo",
+            "El color de la disolución",
+            "La segunda derivada, buscando el corte con cero"
+          ],
+          "correcta": 3,
+          "explicacion": "Es la que usan los valoradores automáticos.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La segunda derivada es el método más preciso de los tres primeros y el que usan los valoradores automáticos"
+        },
+        {
+          "id": "t23-s03-q4",
+          "pregunta": "Para el cloruro en el agua residual turbia, ¿por qué no usa el método de Mohr?",
+          "opciones": [
+            "Porque en una muestra turbia o coloreada no se ve el viraje; la indicación potenciométrica sirve igual",
+            "Porque el Mohr no valora cloruros",
+            "Porque el cromato reacciona con la turbidez",
+            "Porque está prohibido en aguas residuales"
+          ],
+          "correcta": 0,
+          "explicacion": "Se valora por argentometría con electrodo de plata.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Muestra coloreada o turbia | No sirve | Sirve igual |"
+        },
+        {
+          "id": "t23-s03-q5",
+          "pregunta": "¿Qué precaución toma con la referencia en la valoración de cloruro?",
+          "opciones": [
+            "Rellenar la referencia con agua desionizada",
+            "Usar un electrodo de doble unión para que el cloruro de la referencia no pase a la muestra",
+            "Prescindir del electrodo de referencia",
+            "Usar un electrodo de vidrio como referencia"
+          ],
+          "correcta": 1,
+          "explicacion": "El cloruro de la referencia falsearía el resultado.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "En argentometría hay que evitar que el cloruro de la referencia se fugue a la muestra: se usa un electrodo de doble unión."
+        }
+      ]
+    },
+    {
+      "id": "t23-s04",
+      "titulo": "Supuesto 4. pH de un agua residual industrial",
+      "enunciado": "Se mide el pH de un agua residual industrial con grasas en suspensión, a 18 °C. Tras la medida, se analiza también una salmuera de proceso con una conductividad de 5000 mS/m. El pHímetro informa, tras su calibración a 25 °C, una pendiente de 58,78 mV/pH.",
+      "preguntas": [
+        {
+          "id": "t23-s04-q1",
+          "pregunta": "¿A qué porcentaje de la pendiente teórica corresponde la del electrodo?",
+          "opciones": [
+            "97,0 %",
+            "101,3 %",
+            "58,8 %",
+            "99,3 %"
+          ],
+          "correcta": 3,
+          "explicacion": "58,78 / 59,16 = 0,993.",
+          "fuente": "Documentación de fabricante · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Un electrodo que dé 58,78 mV/pH está al 99,3 %."
+        },
+        {
+          "id": "t23-s04-q2",
+          "pregunta": "Tras medir el agua con grasas, la lectura tarda mucho en estabilizarse. ¿Qué sospecha?",
+          "opciones": [
+            "Diafragma obstruido por la grasa",
+            "Error alcalino",
+            "Error ácido",
+            "Exceso de electrolito"
+          ],
+          "correcta": 0,
+          "explicacion": "Muestras con proteínas, grasas o precipitados obstruyen el diafragma.",
+          "fuente": "Documentación de fabricante · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "| Diafragma obstruido | Muestras con proteínas, grasas, precipitados | Lecturas inestables o que no llegan a estabilizarse |"
+        },
+        {
+          "id": "t23-s04-q3",
+          "pregunta": "¿Cómo informa el resultado?",
+          "opciones": [
+            "Solo el pH, porque la ATC ya lo corrige",
+            "El pH junto con la temperatura de medida (18 °C)",
+            "Corregido a 25 °C",
+            "En mV"
+          ],
+          "correcta": 1,
+          "explicacion": "La ATC corrige el instrumento, no el pH real de la muestra.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "por eso todo resultado de pH se informa con la temperatura a la que se midió."
+        },
+        {
+          "id": "t23-s04-q4",
+          "pregunta": "¿Se aplica la UNE-EN ISO 10523 a la salmuera de 5000 mS/m?",
+          "opciones": [
+            "Sí, a cualquier agua",
+            "Sí, si el pH está entre 2 y 12",
+            "No: su campo exige fuerza iónica < 0,3 mol/kg, conductividad < 2000 mS/m",
+            "Sí, si se mide a 25 °C"
+          ],
+          "correcta": 2,
+          "explicacion": "Fuera de ese campo, la norma no la cubre.",
+          "fuente": "UNE-EN ISO 10523:2012 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "| Fuerza iónica | I < 0,3 mol/kg (equivale a conductividad < 2 000 mS/m a 25 °C) |"
+        },
+        {
+          "id": "t23-s04-q5",
+          "pregunta": "Ve burbujas en el electrolito interno del electrodo. ¿Qué hace?",
+          "opciones": [
+            "Rellenar con agua desionizada",
+            "Calentar el electrodo",
+            "Desecharlo",
+            "Sacudirlas hacia arriba, como un termómetro clínico"
+          ],
+          "correcta": 3,
+          "explicacion": "Las burbujas interrumpen el contacto eléctrico.",
+          "fuente": "Documentación de fabricante · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Burbujas en el electrolito interno: se sacuden hacia arriba, como un termómetro clínico."
         }
       ]
     }
