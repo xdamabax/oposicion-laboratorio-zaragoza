@@ -415,6 +415,235 @@
         "normas",
         "vigencia"
       ]
+    },
+    {
+      "id": "t22-f40",
+      "anverso": "¿Qué norma ISO rige cada aparato volumétrico?",
+      "reverso": "**ISO 385**: buretas. **ISO 1042**: matraces aforados. **ISO 648** y **835**: pipetas aforadas y graduadas. **ISO 4788**: probetas. Ensayo de capacidad y uso: **UNE-EN ISO 4787**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": "| Cómo debe ser cada aparato | ISO 385 (buretas), 1042 (matraces), 648 y 835 (pipetas), 4788 (probetas) | Requisitos del aparato |"
+    },
+    {
+      "id": "t22-f41",
+      "anverso": "¿Por qué la volumetría es «el reverso» de la gravimetría?",
+      "reverso": "En la gravimetría la magnitud crítica es la **masa** y el volumen da igual; en la volumetría el **volumen es el resultado**, y por eso todo el material está **normalizado al detalle**.",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "volumetria"
+      ],
+      "apartado": "1",
+      "evidencia": "Es el reverso exacto del tema 21: allí la magnitud crítica era la masa y el volumen daba igual; aquí el volumen es el resultado"
+    },
+    {
+      "id": "t22-f42",
+      "anverso": "¿Qué valorantes habituales no son patrón primario y deben factorizarse?",
+      "reverso": "El **NaOH** (absorbe CO₂ y humedad), el **HCl** y el **tiosulfato sódico**: se preparan de concentración aproximada y se **factorizan** contra un patrón primario.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "etiquetas": [
+        "patrones"
+      ],
+      "apartado": "2.1",
+      "evidencia": "es el caso del NaOH (absorbe CO₂ y humedad), del HCl y del tiosulfato sódico."
+    },
+    {
+      "id": "t22-f43",
+      "anverso": "Pipeta graduada y probeta: norma, ajuste y uso.",
+      "reverso": "**Pipeta graduada**: UNE-EN ISO **835**, «**Ex**», mide volúmenes **variables**, **menos exacta** que la aforada. **Probeta**: UNE-EN ISO **4788**, «**In**», para volúmenes **no críticos**.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "etiquetas": [
+        "material"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Completan el equipo la pipeta graduada (UNE-EN ISO 835, «Ex», mide volúmenes variables, menos exacta que la aforada), la probeta (UNE-EN ISO 4788, «In», para volúmenes no críticos)"
+    },
+    {
+      "id": "t22-f44",
+      "anverso": "¿Qué son las microburetas?",
+      "reverso": "Buretas pequeñas (tipo **Bang**), de **2 y 5 mL**, con división y error de **0,01 mL** (datos de catálogo de fabricante).",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2 y Dudas",
+      "etiquetas": [
+        "bureta"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Las microburetas (tipo Bang) bajan a 2 y 5 mL con división y error de 0,01 mL."
+    },
+    {
+      "id": "t22-f45",
+      "anverso": "¿Qué material puede llevar certificado, y qué se graba en el aparato?",
+      "reverso": "El de **clase A/AS** puede llevar **certificado de lote o individual**; el de **clase B, no**. Se graban la **capacidad**, la **clase**, el **tipo de ajuste** y la **temperatura de referencia (20 °C)**.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "etiquetas": [
+        "material"
+      ],
+      "apartado": "2.2",
+      "evidencia": "El material de clase A/AS puede llevar certificado de lote o individual; el de clase B, no."
+    },
+    {
+      "id": "t22-f46",
+      "anverso": "¿Cómo se prepara la disolución patrón?",
+      "reverso": "Si es **patrón primario**, por **pesada directa** en balanza analítica y **enrase en matraz aforado**. Si no lo es, de concentración aproximada y luego **factorización** contra un patrón primario.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Si es patrón primario, por pesada directa en balanza analítica y enrase en matraz aforado."
+    },
+    {
+      "id": "t22-f47",
+      "anverso": "¿Cómo se añade el valorante y cuántas veces se valora?",
+      "reverso": "Agitando sin parar, **deprisa al principio** y **gota a gota cerca del final**, hasta el viraje. Se **repite hasta tener réplicas concordantes**.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "operaciones"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "Se añade el valorante agitando sin parar, deprisa al principio y gota a gota cerca del final, hasta el viraje del indicador.",
+        "Y repetir la valoración hasta tener réplicas concordantes."
+      ]
+    },
+    {
+      "id": "t22-f48",
+      "anverso": "Lectura de la bureta: ¿cuántas cifras se anotan y qué indica que el líquido deje gotas?",
+      "reverso": "Se **estima una cifra más** allá de la última división; esa cifra **es significativa y se anota**. Si el líquido **deja gotas** en la pared, la bureta está **sucia o engrasada**: hay que lavarla.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "bureta"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "La cifra estimada es significativa y se anota.",
+        "El líquido debe escurrir sin dejar gotas en la pared: si las deja, la bureta está sucia o engrasada y hay que lavarla."
+      ]
+    },
+    {
+      "id": "t22-f49",
+      "anverso": "¿Qué es el factor de dilución en una volumetría?",
+      "reverso": "Si la alícuota sale de una disolución preparada en matraz aforado, el resultado de la alícuota **se multiplica por Vmatraz / Valícuota**.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "2.3",
+      "evidencia": "el resultado de la alícuota se multiplica por el cociente entre el volumen del matraz y el de la alícuota."
+    },
+    {
+      "id": "t22-f50",
+      "anverso": "¿Se ajusta el material volumétrico de vidrio como una balanza?",
+      "reverso": "**No.** Una balanza **sí se ajusta**; una pipeta **no**: el material de vidrio **se calibra y se acepta o se descarta**.",
+      "fuente": "VIM; tema 21 · apunte §2.4",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Ésa es la diferencia práctica con la balanza del tema 21: una balanza sí se ajusta; una pipeta, no."
+    },
+    {
+      "id": "t22-f51",
+      "anverso": "¿Qué parámetro se evalúa al calibrar un aparato volumétrico?",
+      "reverso": "El **error de capacidad**: la diferencia entre el **volumen real a la temperatura de referencia** y el **volumen nominal grabado**.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "El parámetro que se evalúa es el error de capacidad: la diferencia entre el volumen real a la temperatura de referencia y el volumen nominal grabado."
+    },
+    {
+      "id": "t22-f52",
+      "anverso": "Normas de uso del material volumétrico: temperatura de los líquidos y limpieza.",
+      "reverso": "**No medir líquidos calientes**: el volumen se ajustó a **20 °C**. Un vidrio **limpio se moja de forma uniforme**; si deja gotas o el menisco sale irregular, hay grasa y la medida no vale.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "etiquetas": [
+        "manejo"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "No medir líquidos calientes: el volumen se ajustó a 20 °C.",
+        "Limpieza: un vidrio limpio se moja de forma uniforme."
+      ]
+    },
+    {
+      "id": "t22-f53",
+      "anverso": "Valorantes típicos de cada clase de volumetría.",
+      "reverso": "**Ácido-base**: HCl, H₂SO₄; NaOH. **Redox**: KMnO₄, K₂Cr₂O₇, I₂, Na₂S₂O₃. **Precipitación**: AgNO₃. **Complejos**: EDTA.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "etiquetas": [
+        "volumetrias"
+      ],
+      "apartado": "2.5",
+      "evidencia": "| Redox | Transferencia de electrones | KMnO₄, K₂Cr₂O₇, I₂, Na₂S₂O₃ |"
+    },
+    {
+      "id": "t22-f54",
+      "anverso": "¿Qué norma regula el método de Mohr en aguas y qué intervalo cubre?",
+      "reverso": "**UNE-ISO 9297:2013**: de **5 a 150 mg/L** de cloruro, ampliable hasta **400 mg/L** con una bureta mayor o por **dilución**.",
+      "fuente": "UNE-ISO 9297:2013 · apunte §2.5",
+      "etiquetas": [
+        "cloruro"
+      ],
+      "apartado": "2.5",
+      "evidencia": "El método de Mohr es el normalizado para aguas: UNE-ISO 9297:2013, de 5 a 150 mg/L de cloruro, ampliable hasta 400 mg/L con una bureta mayor o por dilución."
+    },
+    {
+      "id": "t22-f55",
+      "anverso": "¿Cómo se valora el calcio solo, sin el magnesio?",
+      "reverso": "Con **EDTA**, indicador **murexida**, a **pH alto**, con el **magnesio precipitado como hidróxido**.",
+      "fuente": "Método clásico · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Indicador murexida, a pH alto, con el magnesio precipitado como hidróxido"
+    },
+    {
+      "id": "t22-f56",
+      "anverso": "Método de Winkler para el oxígeno disuelto: ¿qué tipo de volumetría es?",
+      "reverso": "**Redox**, **indirecta o por desplazamiento**: el oxígeno se **fija in situ** y se valora el **yodo liberado** (UNE-EN 25813).",
+      "fuente": "UNE-EN 25813:1994 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Fijación del oxígeno in situ y valoración del yodo liberado; es una volumetría indirecta o por desplazamiento"
+    },
+    {
+      "id": "t22-f57",
+      "anverso": "DQO por dicromato: ¿cómo es la valoración?",
+      "reverso": "**Por retroceso**: reflujo con **exceso de K₂Cr₂O₇** en medio sulfúrico y valoración del **sobrante** con **sulfato de hierro(II) y amonio**, indicador **ferroína**. (La UNE 77004 está anulada desde 2024: ver tema 34.)",
+      "fuente": "UNE 77004 (anulada); tema 34 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Reflujo con exceso de K₂Cr₂O₇ en medio sulfúrico y valoración del sobrante con sulfato de hierro(II) y amonio, indicador ferroína"
+    },
+    {
+      "id": "t22-f58",
+      "anverso": "¿Cómo se determina el índice de permanganato y qué indicador lleva?",
+      "reverso": "Por volumetría **redox** con **KMnO₄** (UNE-EN ISO 8467), que es **autoindicador**. Mide la **materia orgánica oxidable**, en mg/L de O₂.",
+      "fuente": "UNE-EN ISO 8467:1995 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Índice de permanganato (materia orgánica oxidable) | Volumetría redox | UNE-EN ISO 8467:1995 | mg/L de O₂ | Oxidación con KMnO₄; el permanganato es autoindicador |"
+    },
+    {
+      "id": "t22-f59",
+      "anverso": "¿Cómo se determina la alcalinidad del agua?",
+      "reverso": "Por volumetría **ácido-base** (UNE-EN ISO 9963-1): valoración **con ácido hasta pH definidos**, aplicable directamente **hasta 20 mmol/L**.",
+      "fuente": "UNE-EN ISO 9963-1:1996 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Valoración con ácido hasta pH definidos; aplicable directamente hasta 20 mmol/L"
     }
   ],
   "test": [
@@ -735,6 +964,565 @@
       "explicacion": "Se recurre a ella cuando la reacción es lenta, cuando no hay buen indicador para la valoración directa, o cuando el analito es insoluble o volátil. El método de Volhard y la DQO por dicromato son los ejemplos clásicos.",
       "fuente": "Bibliografía de química analítica",
       "nucleo": true
+    },
+    {
+      "id": "t22-q25",
+      "pregunta": "En las valoraciones ácido-base se utilizan como indicadores:",
+      "opciones": [
+        "La fenolftaleína, el naranja de metilo y el rojo de metilo",
+        "El almidón y la ferroína",
+        "El negro de eriocromo T y la murexida"
+      ],
+      "correcta": 0,
+      "explicacion": "Almidón y ferroína son de redox; negro de eriocromo T y murexida, de complexometría.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · 1246, primer ejercicio, #49 · apunte §2.5",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "En las valoraciones ácido-base se utilizan sustancias denominadas indicadores. Indique cuál no es un indicador en…"
+      },
+      "apartado": "2.5",
+      "evidencia": "| Ácido-base (neutralización) | Transferencia de protones | HCl, H₂SO₄; NaOH | Fenolftaleína, naranja de metilo, rojo de metilo |"
+    },
+    {
+      "id": "t22-q26",
+      "pregunta": "Se quiere preparar 100 mL de una disolución de 10 mg/L a partir de una solución madre de 1000 mg/L. Lo correcto es:",
+      "opciones": [
+        "Medir 10 mL con probeta y añadir 90 mL de agua",
+        "Pipetear 1 mL con pipeta aforada y enrasar a 100 mL en un matraz aforado",
+        "Pipetear 1 mL y añadir 100 mL de agua en un Erlenmeyer"
+      ],
+      "correcta": 1,
+      "explicacion": "Factor 100: 1 mL llevado a 100 mL. La pipeta aforada transfiere y el matraz aforado prepara la dilución a volumen exacto; ni la probeta ni el Erlenmeyer sirven.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · 1322, segundo ejercicio, #9 · apunte §2.2 y §2.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Se desea preparar una disolución de un analito de una concentración de 10 mg/l a partir de una solución madre de…"
+      },
+      "apartado": "2.2",
+      "evidencia": [
+        "| UNE-EN ISO 1042 | In | Preparar disoluciones patrón y diluciones a volumen exacto |",
+        "| UNE-EN ISO 648 | Ex | Transferir una alícuota exacta |"
+      ]
+    },
+    {
+      "id": "t22-q27",
+      "pregunta": "La norma ISO que fija los requisitos de las buretas es la:",
+      "opciones": [
+        "ISO 1042",
+        "ISO 648",
+        "ISO 385"
+      ],
+      "correcta": 2,
+      "explicacion": "1042: matraces aforados; 648: pipetas aforadas.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Cómo debe ser cada aparato | ISO 385 (buretas), 1042 (matraces), 648 y 835 (pipetas), 4788 (probetas) | Requisitos del aparato |"
+    },
+    {
+      "id": "t22-q28",
+      "pregunta": "La UNE-EN ISO 4787:2021 regula:",
+      "opciones": [
+        "El ensayo de capacidad y el uso del material volumétrico",
+        "Los requisitos de las buretas",
+        "El vocabulario metrológico"
+      ],
+      "correcta": 0,
+      "explicacion": "Las buretas son la ISO 385; el vocabulario, el VIM.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Cómo se ensaya la capacidad y cómo se usa el material | UNE-EN ISO 4787:2021 | Ensayo y uso |"
+    },
+    {
+      "id": "t22-q29",
+      "pregunta": "Para servir de base a una volumetría, una reacción debe ser:",
+      "opciones": [
+        "Lenta, para controlar mejor el punto final",
+        "De estequiometría conocida y única, rápida, cuantitativa y con forma de detectar el punto final",
+        "Reversible y poco desplazada hacia los productos"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuatro requisitos.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Estequiometría conocida y única, sin reacciones secundarias."
+    },
+    {
+      "id": "t22-q30",
+      "pregunta": "Es un patrón primario clásico:",
+      "opciones": [
+        "El hidróxido sódico",
+        "El ácido clorhídrico",
+        "El ftalato ácido de potasio"
+      ],
+      "correcta": 2,
+      "explicacion": "NaOH y HCl se factorizan.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Ejemplos clásicos: ftalato ácido de potasio, carbonato sódico, dicromato potásico, óxido de arsénico(III), EDTA disódico."
+    },
+    {
+      "id": "t22-q31",
+      "pregunta": "El tiosulfato sódico como valorante:",
+      "opciones": [
+        "Se prepara de concentración aproximada y se factoriza contra un patrón primario",
+        "Es patrón primario y se prepara por pesada directa",
+        "No se usa en volumetría"
+      ],
+      "correcta": 0,
+      "explicacion": "Como el NaOH y el HCl.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "es el caso del NaOH (absorbe CO₂ y humedad), del HCl y del tiosulfato sódico."
+    },
+    {
+      "id": "t22-q32",
+      "pregunta": "Un aparato volumétrico ajustado «Ex» (TD) indica que el volumen marcado es el que:",
+      "opciones": [
+        "Contiene hasta el enrase",
+        "Vierte, descontando la película que queda mojando la pared",
+        "Queda dentro tras vaciarlo"
+      ],
+      "correcta": 1,
+      "explicacion": "Pipetas y buretas son «Ex».",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Ex (TD, to deliver, «vierte») | El volumen marcado es el que el aparato vierte, descontando la película que queda mojando la pared | Pipeta, bureta |"
+    },
+    {
+      "id": "t22-q33",
+      "pregunta": "Un matraz aforado:",
+      "opciones": [
+        "Sirve para verter alícuotas exactas",
+        "Es material «Ex»",
+        "Nunca se usa para verter un volumen exacto"
+      ],
+      "correcta": 2,
+      "explicacion": "Es «In»: contiene.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Por eso un matraz aforado nunca se usa para verter un volumen exacto, y una pipeta no se sopla"
+    },
+    {
+      "id": "t22-q34",
+      "pregunta": "Frente a la pipeta aforada, la pipeta graduada (UNE-EN ISO 835):",
+      "opciones": [
+        "Mide volúmenes variables y es menos exacta",
+        "Es más exacta",
+        "Es material «In»"
+      ],
+      "correcta": 0,
+      "explicacion": "Las dos son «Ex».",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "la pipeta graduada (UNE-EN ISO 835, «Ex», mide volúmenes variables, menos exacta que la aforada)"
+    },
+    {
+      "id": "t22-q35",
+      "pregunta": "La probeta (UNE-EN ISO 4788) se usa para:",
+      "opciones": [
+        "Transferir alícuotas exactas",
+        "Volúmenes no críticos; es material «In»",
+        "Valorar con exactitud"
+      ],
+      "correcta": 1,
+      "explicacion": "Para alícuotas, pipeta aforada.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "la probeta (UNE-EN ISO 4788, «In», para volúmenes no críticos)"
+    },
+    {
+      "id": "t22-q36",
+      "pregunta": "Las microburetas tipo Bang tienen capacidades de:",
+      "opciones": [
+        "50 y 100 mL",
+        "25 mL, con división de 0,5 mL",
+        "2 y 5 mL, con división y error de 0,01 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "Datos de catálogo de fabricante.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Las microburetas (tipo Bang) bajan a 2 y 5 mL con división y error de 0,01 mL."
+    },
+    {
+      "id": "t22-q37",
+      "pregunta": "Según el catálogo de fabricante conforme a la ISO 385, una bureta de 50 mL de clase AS tiene un límite de error de:",
+      "opciones": [
+        "± 0,05 mL",
+        "± 0,5 mL",
+        "± 0,005 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Con división de 0,1 mL. En clase B, el doble.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2 y Dudas",
+      "apartado": "2.2",
+      "evidencia": "| 50 mL | 0,1 mL | ± 0,05 mL |"
+    },
+    {
+      "id": "t22-q38",
+      "pregunta": "Pueden llevar certificado de lote o individual:",
+      "opciones": [
+        "Solo los de clase B",
+        "Los aparatos de clase A y AS",
+        "Los de cualquier clase"
+      ],
+      "correcta": 1,
+      "explicacion": "El de clase B, no.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El material de clase A/AS puede llevar certificado de lote o individual; el de clase B, no."
+    },
+    {
+      "id": "t22-q39",
+      "pregunta": "La llave de una bureta con macho de PTFE:",
+      "opciones": [
+        "Debe engrasarse a diario",
+        "Solo sirve para disolventes orgánicos",
+        "Desliza sin necesidad de engrasar"
+      ],
+      "correcta": 2,
+      "explicacion": "La alternativa es el vidrio esmerilado.",
+      "fuente": "Normas ISO de material volumétrico (catálogo de fabricante) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "con macho de PTFE (desliza sin engrasar) o de vidrio esmerilado"
+    },
+    {
+      "id": "t22-q40",
+      "pregunta": "La forma cónica del Erlenmeyer permite:",
+      "opciones": [
+        "Agitar la valoración sin salpicar",
+        "Medir el volumen con exactitud",
+        "Enrasar a un volumen fijo"
+      ],
+      "correcta": 0,
+      "explicacion": "No es material volumétrico: su graduación es aproximada.",
+      "fuente": "ISO 1773 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Recipiente de la valoración: su forma cónica permite agitar sin salpicar"
+    },
+    {
+      "id": "t22-q41",
+      "pregunta": "La alícuota de muestra se toma con:",
+      "opciones": [
+        "Una probeta, y se pasa a la bureta",
+        "Una pipeta aforada, y se pasa al Erlenmeyer",
+        "El matraz aforado, y se vierte en el vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "La bureta es para el valorante.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Tomar la alícuota con pipeta aforada y pasarla al Erlenmeyer."
+    },
+    {
+      "id": "t22-q42",
+      "pregunta": "Cerca del punto final, el valorante se añade:",
+      "opciones": [
+        "De golpe, para no pasarse",
+        "Sin agitar, para ver bien el viraje",
+        "Gota a gota, agitando sin parar"
+      ],
+      "correcta": 2,
+      "explicacion": "Deprisa al principio y gota a gota al final.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "deprisa al principio y gota a gota cerca del final, hasta el viraje del indicador."
+    },
+    {
+      "id": "t22-q43",
+      "pregunta": "Al leer una bureta, la cifra que se estima más allá de la última división:",
+      "opciones": [
+        "Es significativa y se anota",
+        "Se desprecia",
+        "Se redondea siempre a la división más próxima"
+      ],
+      "correcta": 0,
+      "explicacion": "Se estima una cifra más allá de la última división.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La cifra estimada es significativa y se anota."
+    },
+    {
+      "id": "t22-q44",
+      "pregunta": "Si el valorante deja gotas en la pared de la bureta al escurrir:",
+      "opciones": [
+        "Es normal en material de clase A",
+        "La bureta está sucia o engrasada y hay que lavarla",
+        "La lectura es más exacta"
+      ],
+      "correcta": 1,
+      "explicacion": "Un vidrio limpio se moja de forma uniforme.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "si las deja, la bureta está sucia o engrasada y hay que lavarla."
+    },
+    {
+      "id": "t22-q45",
+      "pregunta": "Si la alícuota procede de una disolución preparada en matraz aforado, el resultado se multiplica por:",
+      "opciones": [
+        "El volumen de la bureta",
+        "El cociente entre la alícuota y el matraz",
+        "El cociente entre el volumen del matraz y el de la alícuota"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el factor de dilución.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el resultado de la alícuota se multiplica por el cociente entre el volumen del matraz y el de la alícuota."
+    },
+    {
+      "id": "t22-q46",
+      "pregunta": "Se valoran 25,0 mL de un ácido con NaOH 0,100 N y se gastan 20,0 mL. La normalidad del ácido es:",
+      "opciones": [
+        "0,080 N",
+        "0,125 N",
+        "0,800 N"
+      ],
+      "correcta": 0,
+      "explicacion": "N₁·V₁ = N₂·V₂ → N = 0,100 × 20,0 / 25,0 = 0,080 N. 0,125 es invertir los volúmenes.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "N₁ · V₁ = N₂ · V₂ (en normalidad)"
+    },
+    {
+      "id": "t22-q47",
+      "pregunta": "Al calibrar un aparato volumétrico, el error de capacidad es:",
+      "opciones": [
+        "La incertidumbre de la balanza",
+        "La diferencia entre el volumen real a la temperatura de referencia y el nominal grabado",
+        "La diferencia entre dos lecturas del menisco"
+      ],
+      "correcta": 1,
+      "explicacion": "El método es gravimétrico.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El parámetro que se evalúa es el error de capacidad: la diferencia entre el volumen real a la temperatura de referencia y el volumen nominal grabado."
+    },
+    {
+      "id": "t22-q48",
+      "pregunta": "En la calibración por pesada, el coeficiente de dilatación cúbica del material sirve para:",
+      "opciones": [
+        "Corregir el empuje del aire",
+        "Calcular la masa de agua",
+        "Llevar el resultado a 20 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "El empuje se corrige con la densidad del aire y de las pesas.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El coeficiente de dilatación cúbica del material, para llevar el resultado a 20 °C."
+    },
+    {
+      "id": "t22-q49",
+      "pregunta": "El material volumétrico, después de lavarlo, se seca:",
+      "opciones": [
+        "Al aire o con arrastre de acetona",
+        "En estufa a 105 °C",
+        "A la llama"
+      ],
+      "correcta": 0,
+      "explicacion": "El calor lo descalibra.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El material volumétrico se seca al aire o con arrastre de acetona, nunca en estufa."
+    },
+    {
+      "id": "t22-q50",
+      "pregunta": "Con material volumétrico no deben medirse líquidos calientes porque:",
+      "opciones": [
+        "Se rompe siempre el vidrio",
+        "El volumen se ajustó a 20 °C",
+        "Se pierde la graduación grabada"
+      ],
+      "correcta": 1,
+      "explicacion": "La temperatura de referencia es 20 °C.",
+      "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "No medir líquidos calientes: el volumen se ajustó a 20 °C."
+    },
+    {
+      "id": "t22-q51",
+      "pregunta": "En las volumetrías redox, el valorante que actúa como autoindicador es:",
+      "opciones": [
+        "El tiosulfato sódico",
+        "El dicromato potásico",
+        "El permanganato potásico"
+      ],
+      "correcta": 2,
+      "explicacion": "En yodometrías, el indicador es el almidón.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Almidón (yodometrías), ferroína; el KMnO₄ es autoindicador"
+    },
+    {
+      "id": "t22-q52",
+      "pregunta": "En las complexometrías, el valorante habitual y sus indicadores son:",
+      "opciones": [
+        "EDTA, con negro de eriocromo T o murexida",
+        "AgNO₃, con cromato potásico",
+        "KMnO₄, sin indicador"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo segundo es argentometría; lo tercero, redox.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| De formación de complejos (complexometría) | Formación de un complejo estable | EDTA | Negro de eriocromo T, murexida |"
+    },
+    {
+      "id": "t22-q53",
+      "pregunta": "En una valoración indirecta o por desplazamiento:",
+      "opciones": [
+        "Se añade un exceso de reactivo y se valora el sobrante",
+        "El analito desplaza una cantidad equivalente de otra sustancia, que es la que se valora",
+        "El valorante reacciona directamente con el analito"
+      ],
+      "correcta": 1,
+      "explicacion": "Ejemplo: yodometrías, en las que el analito libera I₂.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Indirecta o por desplazamiento | El analito desplaza una cantidad equivalente de otra sustancia, y es ésa la que se valora |"
+    },
+    {
+      "id": "t22-q54",
+      "pregunta": "La valoración por retroceso se usa sobre todo cuando:",
+      "opciones": [
+        "La reacción es muy rápida",
+        "Se quiere ahorrar valorante",
+        "La reacción es lenta, no hay buen indicador directo o el analito es insoluble o volátil"
+      ],
+      "correcta": 2,
+      "explicacion": "Se añade un exceso conocido y se valora lo que no reaccionó.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Reacción lenta, sin buen indicador directo, o analito insoluble o volátil |"
+    },
+    {
+      "id": "t22-q55",
+      "pregunta": "En el método de Fajans para cloruros, el indicador es:",
+      "opciones": [
+        "Un indicador de adsorción, como la fluoresceína",
+        "El cromato potásico",
+        "El ion Fe(III)"
+      ],
+      "correcta": 0,
+      "explicacion": "Cromato: Mohr; Fe(III): Volhard.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Indicador de adsorción (fluoresceína, diclorofluoresceína), que cambia de color al adsorberse en el precipitado"
+    },
+    {
+      "id": "t22-q56",
+      "pregunta": "En el método de Mohr, el punto final se detecta por:",
+      "opciones": [
+        "El complejo rojo del Fe(III) con el tiocianato",
+        "La formación de cromato de plata rojizo al acabarse el cloruro",
+        "El viraje del almidón a azul"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es Volhard.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "al acabarse el cloruro, forma cromato de plata rojizo"
+    },
+    {
+      "id": "t22-q57",
+      "pregunta": "El método de Mohr de la UNE-ISO 9297 se aplica, sin ampliar, a cloruros entre:",
+      "opciones": [
+        "0,1 y 1 mg/L",
+        "1000 y 5000 mg/L",
+        "5 y 150 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "Ampliable a 400 mg/L con bureta mayor o dilución.",
+      "fuente": "UNE-ISO 9297:2013 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "UNE-ISO 9297:2013, de 5 a 150 mg/L de cloruro"
+    },
+    {
+      "id": "t22-q58",
+      "pregunta": "La dureza total del agua (UNE-ISO 6059) se valora con EDTA, negro de eriocromo T y a un pH de:",
+      "opciones": [
+        "Aproximadamente 10, tamponado",
+        "Aproximadamente 2",
+        "7, sin tamponar"
+      ],
+      "correcta": 0,
+      "explicacion": "El EDTA forma complejo 1:1.",
+      "fuente": "UNE-ISO 6059:2014 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Valorante EDTA, que forma complejo 1:1; indicador negro de eriocromo T; pH ≈ 10 tamponado"
+    },
+    {
+      "id": "t22-q59",
+      "pregunta": "La alcalinidad total y compuesta del agua (UNE-EN ISO 9963-1) se determina por:",
+      "opciones": [
+        "Complexometría con EDTA",
+        "Volumetría ácido-base, valorando con ácido hasta pH definidos",
+        "Argentometría"
+      ],
+      "correcta": 1,
+      "explicacion": "Aplicable directamente hasta 20 mmol/L.",
+      "fuente": "UNE-EN ISO 9963-1:1996 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Valoración con ácido hasta pH definidos; aplicable directamente hasta 20 mmol/L"
+    },
+    {
+      "id": "t22-q60",
+      "pregunta": "La determinación del oxígeno disuelto por el método yodométrico de Winkler es una volumetría:",
+      "opciones": [
+        "De precipitación directa",
+        "Complexométrica",
+        "Redox indirecta o por desplazamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "Se valora el yodo liberado.",
+      "fuente": "UNE-EN 25813:1994 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Fijación del oxígeno in situ y valoración del yodo liberado; es una volumetría indirecta o por desplazamiento"
+    },
+    {
+      "id": "t22-q61",
+      "pregunta": "El índice de permanganato del agua se determina según la norma:",
+      "opciones": [
+        "UNE-EN ISO 8467",
+        "UNE-ISO 9297",
+        "UNE-ISO 6059"
+      ],
+      "correcta": 0,
+      "explicacion": "9297: cloruros; 6059: dureza.",
+      "fuente": "UNE-EN ISO 8467:1995 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Índice de permanganato (materia orgánica oxidable) | Volumetría redox | UNE-EN ISO 8467:1995 |"
+    },
+    {
+      "id": "t22-q62",
+      "pregunta": "En la DQO por dicromato, el dicromato sobrante se valora con:",
+      "opciones": [
+        "Nitrato de plata, con cromato",
+        "Sulfato de hierro(II) y amonio, con ferroína",
+        "EDTA, con murexida"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una valoración por retroceso.",
+      "fuente": "UNE 77004 (anulada); tema 34 · apunte §3",
+      "apartado": "3",
+      "evidencia": "valoración del sobrante con sulfato de hierro(II) y amonio, indicador ferroína"
+    },
+    {
+      "id": "t22-q63",
+      "pregunta": "Para valorar solo el calcio con EDTA se usa:",
+      "opciones": [
+        "Negro de eriocromo T a pH 10",
+        "Fenolftaleína a pH 8",
+        "Murexida, a pH alto, con el magnesio precipitado como hidróxido"
+      ],
+      "correcta": 2,
+      "explicacion": "El negro de eriocromo T es para la dureza total.",
+      "fuente": "Método clásico · apunte §3",
+      "apartado": "3",
+      "evidencia": "Indicador murexida, a pH alto, con el magnesio precipitado como hidróxido"
     }
   ],
   "supuestos": [
@@ -812,6 +1600,252 @@
           "correcta": 1,
           "explicacion": "La UNE-ISO 9297 se aplica a la determinación directa de 5 a 150 mg/L, y el campo puede ampliarse hasta 400 mg/L con una bureta de mayor capacidad o por dilución. Un resultado de 420 mg/L queda fuera, así que hay que diluir.",
           "fuente": "UNE-ISO 9297:2013"
+        }
+      ]
+    },
+    {
+      "id": "t22-s02",
+      "titulo": "Supuesto 2. Dureza total de un agua con EDTA",
+      "enunciado": "Se determina la dureza total de un agua de consumo según la UNE-ISO 6059. Se toman 50,0 mL de muestra, se tampona y se valora con EDTA 0,0100 M; se gastan 8,00 mL.",
+      "preguntas": [
+        {
+          "id": "t22-s02-q1",
+          "pregunta": "¿Qué indicador y qué pH se usan?",
+          "opciones": [
+            "Negro de eriocromo T, a pH ≈ 10 tamponado",
+            "Murexida, a pH 2",
+            "Fenolftaleína, a pH 8",
+            "Cromato potásico, en medio neutro"
+          ],
+          "correcta": 0,
+          "explicacion": "La murexida, a pH alto, es para el calcio solo.",
+          "fuente": "UNE-ISO 6059:2014 · apunte §3",
+          "apartado": "3",
+          "evidencia": "Valorante EDTA, que forma complejo 1:1; indicador negro de eriocromo T; pH ≈ 10 tamponado"
+        },
+        {
+          "id": "t22-s02-q2",
+          "pregunta": "¿Qué clase de volumetría es?",
+          "opciones": [
+            "Ácido-base",
+            "Redox",
+            "De formación de complejos (complexometría)",
+            "De precipitación"
+          ],
+          "correcta": 2,
+          "explicacion": "El EDTA forma un complejo estable con el Ca y el Mg.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| De formación de complejos (complexometría) | Formación de un complejo estable | EDTA | Negro de eriocromo T, murexida |"
+        },
+        {
+          "id": "t22-s02-q3",
+          "pregunta": "¿Cuál es la dureza en mmol/L de Ca + Mg?",
+          "opciones": [
+            "0,80 mmol/L",
+            "16,0 mmol/L",
+            "3,20 mmol/L",
+            "1,60 mmol/L"
+          ],
+          "correcta": 3,
+          "explicacion": "Complejo 1:1: 0,0100 × 8,00 = 0,0800 mmol en 50,0 mL → 1,60 mmol/L.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "a · M₁ · V₁ = b · M₂ · V₂ (en molaridad, con los coeficientes de la reacción)"
+        },
+        {
+          "id": "t22-s02-q4",
+          "pregunta": "El EDTA disódico es patrón primario. ¿Cómo prepara la disolución de 0,0100 M?",
+          "opciones": [
+            "Por pesada directa en balanza analítica y enrase en matraz aforado",
+            "Pesando aproximadamente y factorizando",
+            "Midiendo el agua con probeta",
+            "Disolviéndolo en el Erlenmeyer"
+          ],
+          "correcta": 0,
+          "explicacion": "Solo lo que no es patrón primario se factoriza.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Si es patrón primario, por pesada directa en balanza analítica y enrase en matraz aforado."
+        },
+        {
+          "id": "t22-s02-q5",
+          "pregunta": "Si además quisiera el calcio solo, ¿qué cambiaría?",
+          "opciones": [
+            "Nada: el negro de eriocromo T ya da el calcio solo",
+            "Murexida a pH alto, con el magnesio precipitado como hidróxido",
+            "Valorar con nitrato de plata",
+            "Valorar por retroceso con tiocianato"
+          ],
+          "correcta": 1,
+          "explicacion": "El magnesio sale como hidróxido y no se valora.",
+          "fuente": "Método clásico · apunte §3",
+          "apartado": "3",
+          "evidencia": "Indicador murexida, a pH alto, con el magnesio precipitado como hidróxido"
+        }
+      ]
+    },
+    {
+      "id": "t22-s03",
+      "titulo": "Supuesto 3. Factorizar una disolución de NaOH",
+      "enunciado": "El laboratorio prepara una disolución de NaOH de aproximadamente 0,1 M para valoraciones ácido-base. Antes de usarla, el técnico debe conocer su concentración exacta.",
+      "preguntas": [
+        {
+          "id": "t22-s03-q1",
+          "pregunta": "¿Por qué no puede prepararla exacta pesando el NaOH?",
+          "opciones": [
+            "Porque el NaOH es insoluble",
+            "Porque su masa molar es demasiado alta",
+            "Porque el NaOH absorbe CO₂ y humedad: no es patrón primario y hay que factorizarlo",
+            "Porque es tóxico"
+          ],
+          "correcta": 2,
+          "explicacion": "Se prepara aproximada y se factoriza contra un patrón primario.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "es el caso del NaOH (absorbe CO₂ y humedad), del HCl y del tiosulfato sódico."
+        },
+        {
+          "id": "t22-s03-q2",
+          "pregunta": "¿Contra qué la factoriza?",
+          "opciones": [
+            "Contra otra disolución de NaOH",
+            "Contra agua destilada",
+            "Contra HCl de concentración aproximada",
+            "Contra un patrón primario, como el ftalato ácido de potasio"
+          ],
+          "correcta": 3,
+          "explicacion": "El HCl tampoco es patrón primario.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "Ejemplos clásicos: ftalato ácido de potasio, carbonato sódico, dicromato potásico, óxido de arsénico(III), EDTA disódico."
+        },
+        {
+          "id": "t22-s03-q3",
+          "pregunta": "Antes de llenar la bureta con el NaOH, ¿qué hace?",
+          "opciones": [
+            "La ambienta con el NaOH, la llena por encima del cero y purga la burbuja de la punta",
+            "La seca en estufa",
+            "La llena con agua y añade NaOH concentrado",
+            "La enrasa sin purgar, para no perder reactivo"
+          ],
+          "correcta": 0,
+          "explicacion": "Una burbuja que se suelta después da un volumen por exceso.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "se llena por encima del cero y se purga la burbuja de aire de la punta abriendo la llave a fondo."
+        },
+        {
+          "id": "t22-s03-q4",
+          "pregunta": "¿Qué indicador es adecuado para esta valoración ácido-base?",
+          "opciones": [
+            "Almidón",
+            "Fenolftaleína",
+            "Negro de eriocromo T",
+            "Cromato potásico"
+          ],
+          "correcta": 1,
+          "explicacion": "Almidón: yodometrías; negro de eriocromo T: complexometría; cromato: Mohr.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Ácido-base (neutralización) | Transferencia de protones | HCl, H₂SO₄; NaOH | Fenolftaleína, naranja de metilo, rojo de metilo |"
+        },
+        {
+          "id": "t22-s03-q5",
+          "pregunta": "Tras la primera valoración, ¿qué hace?",
+          "opciones": [
+            "Dar el resultado de una sola valoración",
+            "Promediar con una valoración de otro día",
+            "Repetirla hasta tener réplicas concordantes",
+            "Rellenar la bureta sin enrasar"
+          ],
+          "correcta": 2,
+          "explicacion": "Las réplicas concordantes dan confianza en el resultado.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Y repetir la valoración hasta tener réplicas concordantes."
+        }
+      ]
+    },
+    {
+      "id": "t22-s04",
+      "titulo": "Supuesto 4. Calibrar una pipeta aforada por pesada",
+      "enunciado": "Un laboratorio acreditado calibra sus pipetas aforadas de 10 mL de clase AS. Pesa el agua vertida en la balanza analítica a 22 °C y anota la temperatura del agua y las condiciones del aire.",
+      "preguntas": [
+        {
+          "id": "t22-s04-q1",
+          "pregunta": "¿Qué norma sigue?",
+          "opciones": [
+            "La UNE-EN ISO 385",
+            "La UNE-ISO 9297",
+            "La Orden ICT/155/2020",
+            "La UNE-EN ISO 4787:2021"
+          ],
+          "correcta": 3,
+          "explicacion": "La 385 son buretas; la Orden, verificación de balanzas.",
+          "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La norma de referencia es la UNE-EN ISO 4787:2021"
+        },
+        {
+          "id": "t22-s04-q2",
+          "pregunta": "Para convertir la masa de agua en volumen, ¿qué datos necesita además de la masa?",
+          "opciones": [
+            "La densidad del agua a la temperatura del ensayo, la del aire, la de las pesas y la dilatación del vidrio",
+            "Solo la densidad del agua a 4 °C",
+            "El color del agua",
+            "La resolución de la bureta"
+          ],
+          "correcta": 0,
+          "explicacion": "El resultado se lleva a 20 °C.",
+          "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La densidad del agua a la temperatura del ensayo."
+        },
+        {
+          "id": "t22-s04-q3",
+          "pregunta": "¿Qué resultado le da la calibración?",
+          "opciones": [
+            "Una nueva marca de enrase",
+            "El ajuste de la pipeta",
+            "El error de capacidad: volumen real a 20 °C frente al nominal grabado",
+            "La clase B"
+          ],
+          "correcta": 2,
+          "explicacion": "La calibración no toca el aparato.",
+          "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "El parámetro que se evalúa es el error de capacidad"
+        },
+        {
+          "id": "t22-s04-q4",
+          "pregunta": "Una pipeta da un error fuera de la tolerancia. ¿Qué hace?",
+          "opciones": [
+            "Ajustarla limando la punta",
+            "Grabar una nueva marca",
+            "Usarla soplando al final",
+            "Descartarla: el material de vidrio no se ajusta"
+          ],
+          "correcta": 3,
+          "explicacion": "Se calibra y se acepta o se descarta.",
+          "fuente": "VIM; tema 21 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "un matraz aforado no se ajusta, se calibra y se acepta o se descarta."
+        },
+        {
+          "id": "t22-s04-q5",
+          "pregunta": "Después de lavarlas, ¿cómo seca las pipetas?",
+          "opciones": [
+            "En estufa a 105 °C para ahorrar tiempo",
+            "Al aire o con arrastre de acetona, nunca en estufa",
+            "A la llama del mechero",
+            "En el autoclave"
+          ],
+          "correcta": 1,
+          "explicacion": "El calor deforma el vidrio y lo descalibra.",
+          "fuente": "UNE-EN ISO 4787:2021 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "El material volumétrico se seca al aire o con arrastre de acetona, nunca en estufa."
         }
       ]
     }
