@@ -434,6 +434,243 @@
       "etiquetas": [
         "normativa"
       ]
+    },
+    {
+      "id": "t26-f43",
+      "anverso": "¿Qué determina la espectroscopía atómica: el elemento o el compuesto?",
+      "reverso": "**El elemento**, no el compuesto: da igual en qué forma química esté el plomo en el agua; **lo que se mide es plomo**.",
+      "fuente": "CEM, procedimiento QU-001 · apunte §1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "apartado": "1",
+      "evidencia": "Su objeto es siempre el elemento, no el compuesto: da igual en qué forma química esté el plomo en el agua; lo que se mide es plomo."
+    },
+    {
+      "id": "t26-f44",
+      "anverso": "¿Qué intervalo de concentraciones cubre la espectroscopía atómica en un laboratorio de aguas?",
+      "reverso": "Desde la **dureza** (calcio y magnesio, en **mg/L**) hasta los **metales pesados en traza** (cadmio o mercurio, en **µg/L o ng/L**).",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "apartado": "1",
+      "evidencia": "En un laboratorio de aguas cubre desde la dureza (calcio y magnesio, en mg/L) hasta los metales pesados en traza (cadmio o mercurio, en µg/L o ng/L)."
+    },
+    {
+      "id": "t26-f45",
+      "anverso": "¿Para qué elementos es clásica la fotometría de llama (emisión)?",
+      "reverso": "**Sodio, potasio y litio**: se excitan con **poca energía** y **emiten con fuerza**. El ICP es lo mismo llevado a 6000-10 000 K (tema 27).",
+      "fuente": "Harvey / LibreTexts · apunte §2.1",
+      "etiquetas": [
+        "tecnicas"
+      ],
+      "apartado": "2.1",
+      "evidencia": "La fotometría de llama (emisión) es lo barato y clásico para sodio, potasio y litio, que se excitan con poca energía y emiten con fuerza."
+    },
+    {
+      "id": "t26-f46",
+      "anverso": "¿Cuánto mide la línea de absorción de un átomo libre y qué la ensancha?",
+      "reverso": "Unos **0,002 nm** (entre 0,001 y 0,005 según fuentes), ensanchada solo por el **efecto Doppler** y la **presión**.",
+      "fuente": "Harvey / LibreTexts · apunte §2.2 y Dudas",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "2.2",
+      "evidencia": "su absorción es una línea de ≈ 0,002 nm, ensanchada solo por efecto Doppler y por presión."
+    },
+    {
+      "id": "t26-f47",
+      "anverso": "¿Qué fue la «solución de Walsh»?",
+      "reverso": "**Iluminar con la propia línea del elemento**: una lámpara cuyo cátodo es de ese metal emite exactamente las líneas que ese metal absorbe.",
+      "fuente": "Harvey / LibreTexts · apunte §2.2",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "2.2",
+      "evidencia": "La solución de Walsh fue iluminar con la propia línea del elemento"
+    },
+    {
+      "id": "t26-f48",
+      "anverso": "Sistema neumático de un equipo de absorción atómica: ¿qué gases usa?",
+      "reverso": "**Combustible**: acetileno (menos, hidrógeno, propano, butano). **Oxidante**: **aire u óxido nitroso**. **Argón** como gas de purga y enfriamiento en electrotérmica y de arrastre en vapor frío.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.1 · apunte §2.3",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Gas combustible (acetileno; menos, hidrógeno, propano, butano), gas oxidante (aire u óxido nitroso)"
+    },
+    {
+      "id": "t26-f49",
+      "anverso": "¿Qué hace el amplificador logarítmico de un equipo de absorción atómica?",
+      "reverso": "**Convierte la transmitancia en absorbancia.** Le siguen el convertidor analógico/digital y la amortiguación del ruido.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.5 · apunte §2.3",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Amplificador logarítmico (convierte la transmitancia en absorbancia)"
+    },
+    {
+      "id": "t26-f50",
+      "anverso": "Lámpara de cátodo hueco: ¿qué gas lleva dentro y qué alternativa hay para elementos volátiles?",
+      "reverso": "Gas inerte (**neón o argón**) a **baja presión**, con **ventana de cuarzo**. La alternativa más intensa, sobre todo para elementos **volátiles**, es la **lámpara de descarga sin electrodos (EDL)**.",
+      "fuente": "CEM, procedimiento QU-001; INSST, MTA/MA-025/A16 · apunte §2.3",
+      "etiquetas": [
+        "fuente"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "dentro de una ampolla con gas inerte (neón o argón) a baja presión y una ventana de cuarzo.",
+        "La alternativa más intensa es la lámpara de descarga sin electrodos (EDL), sobre todo para elementos volátiles."
+      ]
+    },
+    {
+      "id": "t26-f51",
+      "anverso": "¿Por qué el mechero de la absorción atómica es de ranura?",
+      "reverso": "Porque da un **camino óptico largo** y una **llama estable**.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "etiquetas": [
+        "atomizador"
+      ],
+      "apartado": "2.3",
+      "evidencia": "El mechero de ranura da un camino óptico largo y una llama estable."
+    },
+    {
+      "id": "t26-f52",
+      "anverso": "¿Cómo se elige la rendija del monocromador en absorción atómica?",
+      "reverso": "Según el elemento: **estrecha aísla mejor la línea**; **ancha deja pasar más luz**.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "etiquetas": [
+        "optica"
+      ],
+      "apartado": "2.3",
+      "evidencia": "La rendija se elige según el elemento: estrecha aísla mejor la línea, ancha deja pasar más luz."
+    },
+    {
+      "id": "t26-f53",
+      "anverso": "¿Qué son las interferencias de matriz o físicas y cómo se corrigen?",
+      "reverso": "Muestra y patrones con distinta **viscosidad, tensión superficial o carga salina**, que **no se nebulizan igual**. Se **igualan las matrices**; si no se puede, **adición de patrón**.",
+      "fuente": "INSST, MTA/MA-025/A16, 8.4 · apunte §2.4",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "apartado": "2.4",
+      "evidencia": "| De matriz o físicas | La muestra y los patrones tienen distinta viscosidad, tensión superficial o carga salina, y no se nebulizan igual | Igualar las matrices de patrones y muestras; si no se puede, adición de patrón |"
+    },
+    {
+      "id": "t26-f54",
+      "anverso": "Según el CEM, ¿qué se calibra en un equipo de absorción atómica?",
+      "reverso": "No los componentes por separado, sino el **sistema completo**, mediante su **función de respuesta** (la recta de calibrado), **para cada elemento** y en **condiciones experimentales fijadas**.",
+      "fuente": "CEM, procedimiento QU-001, 4.2.2 · apunte §2.5",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "sino el sistema completo, mediante su función de respuesta (la recta de calibrado), para cada elemento y en unas condiciones experimentales fijadas (QU-001, 4.2.2)."
+    },
+    {
+      "id": "t26-f55",
+      "anverso": "Patrones y comprobación de la recta en absorción atómica (QU-001).",
+      "reverso": "Materiales de referencia **trazables**, típicamente a **1000 mg/L**, que se diluyen con agua **doblemente desionizada exenta de metales**. La recta se **verifica con un patrón intermedio** de absorbancia conocida; si no sale, se reajustan mechero, energía y ganancia.",
+      "fuente": "CEM, procedimiento QU-001, 5.1 y 5.3 · apunte §2.5",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "materiales de referencia trazables, que se venden típicamente a 1 000 mg/L y hay que diluir.",
+        "Se verifica con un patrón intermedio de absorbancia conocida; si no sale, se reajusta el mechero, la energía y la ganancia."
+      ]
+    },
+    {
+      "id": "t26-f56",
+      "anverso": "¿Qué variante de absorción atómica se usa para los metales mayoritarios del agua?",
+      "reverso": "La **llama (FAAS)**: rápida, barata y robusta, para Ca, Mg, Na, K, Fe, Mn, Zn, Cu a **mg/L**. Los traza (µg/L), por **cámara de grafito**.",
+      "fuente": "Criterio práctico · apunte §2.6",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.6",
+      "evidencia": "| Metales mayoritarios, mg/L (Ca, Mg, Na, K, Fe, Mn, Zn, Cu) | Llama (FAAS): rápida, barata, robusta |"
+    },
+    {
+      "id": "t26-f57",
+      "anverso": "RD 3/2023: dos matices sobre el LC, el LD y la incertidumbre.",
+      "reverso": "El **LC y el LD deben ser siempre inferiores al valor paramétrico**, y la incertidumbre de la tabla 15 **no se puede usar como tolerancia adicional** sobre el valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte D · apunte §2.6",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.6",
+      "evidencia": "el LC y el LD deben ser siempre inferiores al valor paramétrico, y que la incertidumbre de la tabla no se puede usar como tolerancia adicional sobre el valor paramétrico."
+    },
+    {
+      "id": "t26-f58",
+      "anverso": "RD 817/2015: ¿cómo se tratan los resultados inferiores al límite de cuantificación al calcular medias?",
+      "reverso": "Se sustituyen por **la mitad del LC**; en los parámetros que son **suma de un grupo**, se fijan en **cero**.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.6",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.6",
+      "evidencia": "los resultados inferiores al límite de cuantificación se sustituyen por la mitad del LC para calcular medias"
+    },
+    {
+      "id": "t26-f59",
+      "anverso": "Longitudes de onda del cadmio y del plomo por absorción atómica.",
+      "reverso": "**Cadmio: 228,8 nm**; **plomo: 283,3 nm**, con llama aire-acetileno oxidante. (Proceden de un método de aire; la línea es propiedad del elemento.)",
+      "fuente": "INSST, MTA/MA-025/A16 (tabla 1) · apunte §3 y Dudas",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "228,8 nm, llama aire-acetileno oxidante (azul)"
+    },
+    {
+      "id": "t26-f60",
+      "anverso": "Cromo por absorción atómica: llama y qué cromo mide.",
+      "reverso": "**357,9 nm**, llama aire-acetileno **reductora (amarilla)**. Mide **cromo total**: el **Cr(VI)** se distingue por colorimetría con difenilcarbazida (tema 25).",
+      "fuente": "INSST, MTA/MA-025/A16; tema 25 · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "357,9 nm, llama aire-acetileno reductora (amarilla). Mide cromo total"
+    },
+    {
+      "id": "t26-f61",
+      "anverso": "¿Qué técnica da el mercurio a nivel de ng/L?",
+      "reverso": "La **espectrometría de fluorescencia atómica (AFS)**, **UNE-EN ISO 17852:2008**: aguas de consumo, superficiales, subterráneas y de lluvia; residuales tras digestión.",
+      "fuente": "UNE-EN ISO 17852:2008 (catálogo) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Mercurio (alternativa más sensible) | Espectrometría de fluorescencia atómica (AFS) | UNE-EN ISO 17852:2008 | ng/L |"
+    },
+    {
+      "id": "t26-f62",
+      "anverso": "¿Qué pasa con la norma de arsénico por generación de hidruros?",
+      "reverso": "La **UNE-EN ISO 11969:1997 está anulada** (18/09/2014) y su ficha **no indica sustituta**. El hueco lo cubrirían la 15586 (grafito) o el ICP-MS, pero es deducción.",
+      "fuente": "Catálogo UNE · apunte §3 y Dudas",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "UNE-EN ISO 11969:1997 está ANULADA (18/09/2014)"
+    },
+    {
+      "id": "t26-f63",
+      "anverso": "Metales disueltos: ¿se filtra antes o después de acidificar?",
+      "reverso": "**Antes**: filtración a **0,45 µm** y luego acidificación. (El detalle es del tema 36.)",
+      "fuente": "UNE-EN ISO 5667-3 (tema 36) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Filtración 0,45 µm y acidificación | UNE-EN ISO 5667-3 (tema 36) | — | Se filtra antes de acidificar |"
     }
   ],
   "test": [
@@ -714,6 +951,594 @@
       "explicacion": "El anexo III, parte D, fija criterios de rendimiento, no métodos: la norma UNE es la forma habitual de cumplirlos, pero vale cualquier método que los cumpla. El propio anexo añade que el límite de cuantificación y el de detección deben ser siempre inferiores al valor paramétrico y que la incertidumbre de la tabla 15 no puede usarse como tolerancia adicional.",
       "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, parte D, puntos 1 y 3",
       "nucleo": true
+    },
+    {
+      "id": "t26-q23",
+      "pregunta": "La espectroscopía atómica determina:",
+      "opciones": [
+        "El elemento, sea cual sea su forma química",
+        "El compuesto concreto en que está el metal",
+        "Solo los iones libres"
+      ],
+      "correcta": 0,
+      "explicacion": "Da igual cómo esté el plomo: se mide plomo.",
+      "fuente": "CEM, procedimiento QU-001 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Su objeto es siempre el elemento, no el compuesto"
+    },
+    {
+      "id": "t26-q24",
+      "pregunta": "La emisión atómica, a diferencia de la absorción atómica:",
+      "opciones": [
+        "Necesita una lámpara por elemento",
+        "No necesita lámpara: la fuente es la propia llama o plasma",
+        "Mide la radiación que reemiten los átomos tras absorber"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo tercero es la fluorescencia atómica.",
+      "fuente": "Harvey / LibreTexts · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Emisión atómica (AES) | La radiación que emiten los átomos previamente excitados | No: la fuente es la propia llama o plasma |"
+    },
+    {
+      "id": "t26-q25",
+      "pregunta": "La fotometría de llama (emisión) es la técnica clásica y barata para:",
+      "opciones": [
+        "Mercurio",
+        "Arsénico y selenio",
+        "Sodio, potasio y litio"
+      ],
+      "correcta": 2,
+      "explicacion": "Se excitan con poca energía.",
+      "fuente": "Harvey / LibreTexts · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La fotometría de llama (emisión) es lo barato y clásico para sodio, potasio y litio"
+    },
+    {
+      "id": "t26-q26",
+      "pregunta": "La fluorescencia atómica mide:",
+      "opciones": [
+        "La radiación que los átomos reemiten tras absorber",
+        "La radiación que absorben los átomos en estado fundamental",
+        "La radiación que emiten átomos excitados por una llama, sin lámpara"
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa sobre todo para el mercurio.",
+      "fuente": "Harvey / LibreTexts · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Fluorescencia atómica (AFS) | La radiación que los átomos reemiten tras absorber | Sí |"
+    },
+    {
+      "id": "t26-q27",
+      "pregunta": "La línea de absorción de un átomo libre tiene una anchura del orden de:",
+      "opciones": [
+        "10 nm",
+        "0,002 nm",
+        "1 µm"
+      ],
+      "correcta": 1,
+      "explicacion": "Una molécula en disolución da bandas de decenas de nm.",
+      "fuente": "Harvey / LibreTexts · apunte §2.2 y Dudas",
+      "apartado": "2.2",
+      "evidencia": "su absorción es una línea de ≈ 0,002 nm, ensanchada solo por efecto Doppler y por presión."
+    },
+    {
+      "id": "t26-q28",
+      "pregunta": "Si en absorción atómica se iluminara con una lámpara continua, la absorbancia medida sería:",
+      "opciones": [
+        "Igual que con cátodo hueco",
+        "Mayor, por la mayor potencia",
+        "Prácticamente cero"
+      ],
+      "correcta": 2,
+      "explicacion": "La banda que deja pasar el monocromador es 1000 veces más ancha que la línea.",
+      "fuente": "Harvey / LibreTexts · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "la transmitancia sale ≈ 100 % y la absorbancia, ≈ 0."
+    },
+    {
+      "id": "t26-q29",
+      "pregunta": "Frente a la absorción molecular, la selectividad de la absorción atómica es:",
+      "opciones": [
+        "Muy alta, porque las líneas casi no se solapan",
+        "Baja, porque las bandas se solapan",
+        "Nula sin reactivo cromogénico"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo segundo es la absorción molecular.",
+      "fuente": "Harvey / LibreTexts · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| 4. La selectividad | Baja: las bandas se solapan, hace falta un reactivo cromogénico | Muy alta: las líneas casi no se solapan |"
+    },
+    {
+      "id": "t26-q30",
+      "pregunta": "El gas oxidante de la llama en absorción atómica es:",
+      "opciones": [
+        "Acetileno",
+        "Aire u óxido nitroso",
+        "Argón"
+      ],
+      "correcta": 1,
+      "explicacion": "El acetileno es el combustible; el argón, purga en electrotérmica.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "gas oxidante (aire u óxido nitroso)"
+    },
+    {
+      "id": "t26-q31",
+      "pregunta": "En la atomización electrotérmica, el gas de purga y enfriamiento es:",
+      "opciones": [
+        "Acetileno",
+        "Aire",
+        "Argón"
+      ],
+      "correcta": 2,
+      "explicacion": "También es el gas de arrastre del vapor frío.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "gas de purga y enfriamiento en electrotérmica (argón)"
+    },
+    {
+      "id": "t26-q32",
+      "pregunta": "En un equipo de absorción atómica, el amplificador logarítmico:",
+      "opciones": [
+        "Convierte la transmitancia en absorbancia",
+        "Aumenta la intensidad de la lámpara",
+        "Calienta el tubo de grafito"
+      ],
+      "correcta": 0,
+      "explicacion": "Parte de la gestión de la señal.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Amplificador logarítmico (convierte la transmitancia en absorbancia)"
+    },
+    {
+      "id": "t26-q33",
+      "pregunta": "La lámpara de descarga sin electrodos (EDL) se usa sobre todo:",
+      "opciones": [
+        "Para corregir el fondo",
+        "Para elementos volátiles, por ser más intensa",
+        "Para atomizar el mercurio"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la alternativa al cátodo hueco.",
+      "fuente": "INSST, MTA/MA-025/A16, 8.4.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La alternativa más intensa es la lámpara de descarga sin electrodos (EDL), sobre todo para elementos volátiles."
+    },
+    {
+      "id": "t26-q34",
+      "pregunta": "La ampolla de una lámpara de cátodo hueco contiene:",
+      "opciones": [
+        "Vapor de mercurio a alta presión",
+        "Deuterio",
+        "Gas inerte (neón o argón) a baja presión, con ventana de cuarzo"
+      ],
+      "correcta": 2,
+      "explicacion": "Los iones del gas bombardean el cátodo.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "dentro de una ampolla con gas inerte (neón o argón) a baja presión y una ventana de cuarzo."
+    },
+    {
+      "id": "t26-q35",
+      "pregunta": "La llama reductora (amarilla o roja) se usa para:",
+      "opciones": [
+        "Cromo, aluminio y molibdeno",
+        "Cadmio y cinc",
+        "Sodio y potasio"
+      ],
+      "correcta": 0,
+      "explicacion": "La oxidante (azul) es la habitual.",
+      "fuente": "INSST, MTA/MA-025/A16, tabla 1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "reductora (amarilla o roja) para cromo, aluminio y molibdeno (MTA/MA-025, tabla 1)."
+    },
+    {
+      "id": "t26-q36",
+      "pregunta": "En la cámara de grafito se inyectan volúmenes de muestra de:",
+      "opciones": [
+        "5-50 mL",
+        "5-50 µL",
+        "1 L"
+      ],
+      "correcta": 1,
+      "explicacion": "En llama se aspira de forma continua.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se inyectan 5-50 µL y se ejecuta un programa de temperaturas"
+    },
+    {
+      "id": "t26-q37",
+      "pregunta": "En el programa del horno de grafito, la etapa de calcinación (350-1200 °C) sirve para:",
+      "opciones": [
+        "Evaporar el disolvente",
+        "Liberar los átomos y dar la señal",
+        "Destruir la materia orgánica y eliminar la matriz"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo segundo es el secado; lo tercero, la atomización.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Calcinación (ceniza, pirólisis) | 350 - 1 200 °C | Destruye la materia orgánica y elimina la matriz |"
+    },
+    {
+      "id": "t26-q38",
+      "pregunta": "En el horno de grafito, la señal aparece en la etapa de:",
+      "opciones": [
+        "Atomización, a 2000-3000 °C",
+        "Secado, a 110 °C",
+        "Calcinación"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un pico transitorio.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Atomización | 2 000 - 3 000 °C | Libera los átomos: aquí aparece la señal |"
+    },
+    {
+      "id": "t26-q39",
+      "pregunta": "Los modificadores de matriz del horno de grafito (nitrato de paladio, de magnesio, de lantano) sirven para:",
+      "opciones": [
+        "Corregir el fondo",
+        "Que el analito aguante la calcinación sin perderse",
+        "Ionizar el analito"
+      ],
+      "correcta": 1,
+      "explicacion": "Retienen el analito en el tubo.",
+      "fuente": "CEM, procedimiento QU-001, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se usan modificadores de matriz —nitrato de paladio, de magnesio, de lantano— para que el analito aguante la calcinación sin perderse (QU-001, 5.1)."
+    },
+    {
+      "id": "t26-q40",
+      "pregunta": "La plataforma L'vov dentro del tubo de grafito:",
+      "opciones": [
+        "Sustituye a la lámpara de cátodo hueco",
+        "Recoge el mercurio",
+        "Retrasa la atomización hasta que el gas está caliente y estable"
+      ],
+      "correcta": 2,
+      "explicacion": "Mejora la reproducibilidad.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La plataforma L'vov dentro del tubo retrasa la atomización hasta que el gas está caliente y estable."
+    },
+    {
+      "id": "t26-q41",
+      "pregunta": "Para eliminar el efecto memoria en el horno de grafito:",
+      "opciones": [
+        "Se intercalan blancos entre patrones",
+        "Se usa llama reductora",
+        "Se aumenta el volumen inyectado"
+      ],
+      "correcta": 0,
+      "explicacion": "También hay una etapa de limpieza.",
+      "fuente": "CEM, procedimiento QU-001, 5.3.5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Hay que intercalar blancos entre patrones para eliminar el efecto memoria (QU-001, 5.3.5)."
+    },
+    {
+      "id": "t26-q42",
+      "pregunta": "En la técnica del vapor frío, el mercurio se mide a:",
+      "opciones": [
+        "228,8 nm, en llama",
+        "253,7 nm, sin llama ni horno",
+        "283,3 nm, en horno"
+      ],
+      "correcta": 1,
+      "explicacion": "228,8 nm es el cadmio; 283,3 nm, el plomo.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3 y Dudas",
+      "apartado": "2.3",
+      "evidencia": "y se mide a 253,7 nm. No hay llama ni horno, de ahí el nombre."
+    },
+    {
+      "id": "t26-q43",
+      "pregunta": "En la generación de hidruros, el reactivo que forma el hidruro volátil es:",
+      "opciones": [
+        "El cloruro de estaño(II) en medio básico",
+        "El lantano",
+        "El borohidruro sódico (NaBH₄) en medio ácido"
+      ],
+      "correcta": 2,
+      "explicacion": "El hidruro se descompone en una célula calentada.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con borohidruro sódico (NaBH₄) en medio ácido, unos pocos elementos forman hidruros volátiles que se arrastran a una célula calentada donde se descomponen"
+    },
+    {
+      "id": "t26-q44",
+      "pregunta": "En el monocromador de absorción atómica, una rendija estrecha:",
+      "opciones": [
+        "Aísla mejor la línea, aunque deja pasar menos luz",
+        "Deja pasar más luz y aísla peor",
+        "No influye en la medida"
+      ],
+      "correcta": 0,
+      "explicacion": "La rendija se elige según el elemento.",
+      "fuente": "Harvey / LibreTexts · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La rendija se elige según el elemento: estrecha aísla mejor la línea, ancha deja pasar más luz."
+    },
+    {
+      "id": "t26-q45",
+      "pregunta": "En la corrección de fondo con lámpara de deuterio:",
+      "opciones": [
+        "Se aplica un campo magnético que desdobla la línea",
+        "Se mide alternativamente con cátodo hueco (analito + fondo) y con D₂ (solo fondo), y se resta",
+        "Se cambia de longitud de onda"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es el efecto Zeeman.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "mide alternativamente con la lámpara de cátodo hueco (analito + fondo) y con una lámpara continua de D₂ (solo fondo"
+    },
+    {
+      "id": "t26-q46",
+      "pregunta": "El sistema de corrección de fondo habitual en cámara de grafito es:",
+      "opciones": [
+        "La lámpara de tungsteno",
+        "El modulador",
+        "El efecto Zeeman"
+      ],
+      "correcta": 2,
+      "explicacion": "Un campo magnético desdobla la línea.",
+      "fuente": "CEM, procedimiento QU-001, 4.1.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Efecto Zeeman: un campo magnético desdobla la línea; comparando las componentes se separa el fondo. Es el más fino, y el habitual en cámara de grafito."
+    },
+    {
+      "id": "t26-q47",
+      "pregunta": "Las interferencias espectrales en absorción atómica:",
+      "opciones": [
+        "Son raras, y se dan sobre todo con lámparas multielemento",
+        "Son las más frecuentes",
+        "Se corrigen con lantano"
+      ],
+      "correcta": 0,
+      "explicacion": "Se corrigen con lámpara monoelemento o cambiando de λ.",
+      "fuente": "INSST, MTA/MA-025/A16, 8.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Espectrales | Un átomo distinto del que se mide absorbe parte de la radiación. Es raro"
+    },
+    {
+      "id": "t26-q48",
+      "pregunta": "Frente a una interferencia química, el EDTA actúa como:",
+      "opciones": [
+        "Agente liberador",
+        "Agente protector, que forma un complejo volátil con el analito",
+        "Supresor de ionización"
+      ],
+      "correcta": 1,
+      "explicacion": "El lantano es el agente liberador.",
+      "fuente": "INSST, MTA/MA-025/A16; Harvey / LibreTexts · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "agente protector que forma un complejo volátil con el analito (EDTA)"
+    },
+    {
+      "id": "t26-q49",
+      "pregunta": "Para la interferencia del fosfato sobre el calcio se añade como agente liberador:",
+      "opciones": [
+        "Cesio, 1000 µg/mL",
+        "EDTA",
+        "Lantano, 1000 µg/mL"
+      ],
+      "correcta": 2,
+      "explicacion": "El cesio es supresor de ionización.",
+      "fuente": "INSST, MTA/MA-025/A16; Harvey / LibreTexts · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "agente liberador que se queda con el interferente (1 000 µg de lantano por mL; también estroncio)"
+    },
+    {
+      "id": "t26-q50",
+      "pregunta": "Si la muestra y los patrones tienen distinta viscosidad y carga salina y no se pueden igualar:",
+      "opciones": [
+        "Se cuantifica por adición de patrón",
+        "Se aumenta la temperatura de la llama",
+        "Se usa corrección Zeeman"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una interferencia de matriz o física.",
+      "fuente": "INSST, MTA/MA-025/A16, 8.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Igualar las matrices de patrones y muestras; si no se puede, adición de patrón"
+    },
+    {
+      "id": "t26-q51",
+      "pregunta": "Según el CEM, en absorción atómica se calibra:",
+      "opciones": [
+        "Cada componente por separado",
+        "El sistema completo, mediante la recta de calibrado, para cada elemento",
+        "Solo la lámpara"
+      ],
+      "correcta": 1,
+      "explicacion": "Calibrar los componentes es impracticable para el usuario.",
+      "fuente": "CEM, procedimiento QU-001, 4.2.2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "sino el sistema completo, mediante su función de respuesta (la recta de calibrado), para cada elemento"
+    },
+    {
+      "id": "t26-q52",
+      "pregunta": "Según el QU-001, la temperatura ambiente para calibrar debe estar entre:",
+      "opciones": [
+        "0 °C y 10 °C",
+        "35 °C y 45 °C",
+        "15 °C y 30 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "Y 15-30 min de calentamiento del equipo.",
+      "fuente": "CEM, procedimiento QU-001, 5.2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Temperatura ambiente entre 15 °C y 30 °C."
+    },
+    {
+      "id": "t26-q53",
+      "pregunta": "El material volumétrico para la calibración se lava previamente con:",
+      "opciones": [
+        "Ácido nítrico 0,1 mol/L",
+        "Agua del grifo",
+        "Lejía"
+      ],
+      "correcta": 0,
+      "explicacion": "Y debe ser de clase A.",
+      "fuente": "CEM, procedimiento QU-001, 5.2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Material volumétrico clase A, lavado previamente con ácido nítrico 0,1 mol/L."
+    },
+    {
+      "id": "t26-q54",
+      "pregunta": "Los patrones comerciales de absorción atómica suelen venderse a:",
+      "opciones": [
+        "1 µg/L, listos para usar",
+        "1000 mg/L, trazables, para diluir",
+        "0,0044 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "0,0044 es la absorbancia de la concentración característica.",
+      "fuente": "CEM, procedimiento QU-001, 5.1 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "materiales de referencia trazables, que se venden típicamente a 1 000 mg/L y hay que diluir."
+    },
+    {
+      "id": "t26-q55",
+      "pregunta": "La recta de calibrado de absorción atómica se verifica con:",
+      "opciones": [
+        "El blanco",
+        "Una lámpara de deuterio",
+        "Un patrón intermedio de absorbancia conocida"
+      ],
+      "correcta": 2,
+      "explicacion": "Si no sale, se reajustan mechero, energía y ganancia.",
+      "fuente": "CEM, procedimiento QU-001, 5.3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Se verifica con un patrón intermedio de absorbancia conocida"
+    },
+    {
+      "id": "t26-q56",
+      "pregunta": "Para metales mayoritarios a nivel de mg/L (Ca, Mg, Fe, Zn, Cu), la variante adecuada es:",
+      "opciones": [
+        "La llama (FAAS)",
+        "La cámara de grafito",
+        "El vapor frío"
+      ],
+      "correcta": 0,
+      "explicacion": "Rápida, barata y robusta.",
+      "fuente": "Criterio práctico · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Metales mayoritarios, mg/L (Ca, Mg, Na, K, Fe, Mn, Zn, Cu) | Llama (FAAS): rápida, barata, robusta |"
+    },
+    {
+      "id": "t26-q57",
+      "pregunta": "Para arsénico, selenio y antimonio se usa:",
+      "opciones": [
+        "La llama de aire-acetileno",
+        "La generación de hidruros o la cámara de grafito",
+        "El vapor frío"
+      ],
+      "correcta": 1,
+      "explicacion": "El vapor frío es solo para mercurio.",
+      "fuente": "Criterio práctico · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| As, Se, Sb | Generación de hidruros, o cámara de grafito |"
+    },
+    {
+      "id": "t26-q58",
+      "pregunta": "Las normas de digestión UNE-EN ISO 15587-1 y -2 se aplican a aguas con:",
+      "opciones": [
+        "Cualquier contenido de sólidos",
+        "Solo agua de consumo",
+        "Menos de 20 g/L de sólidos en suspensión y menos de 5 g/L de COT"
+      ],
+      "correcta": 2,
+      "explicacion": "La -1 con agua regia; la -2 con ácido nítrico.",
+      "fuente": "UNE-EN ISO 15587 (catálogo) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "aplicables a aguas con menos de 20 g/L de sólidos en suspensión y menos de 5 g/L de carbono orgánico total."
+    },
+    {
+      "id": "t26-q59",
+      "pregunta": "En aguas superficiales (RD 817/2015), la incertidumbre de medida exigida al método es:",
+      "opciones": [
+        "≤ 50 % (k = 2) al nivel de la NCA",
+        "≤ 10 %",
+        "No se exige"
+      ],
+      "correcta": 0,
+      "explicacion": "Y LC ≤ 30 % de la NCA.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "con incertidumbre de medida ≤ 50 % (k = 2) estimada al nivel de la norma de calidad ambiental"
+    },
+    {
+      "id": "t26-q60",
+      "pregunta": "Según el RD 817/2015, para calcular medias, los resultados inferiores al límite de cuantificación:",
+      "opciones": [
+        "Se sustituyen por el LC",
+        "Se sustituyen por la mitad del LC",
+        "Se eliminan"
+      ],
+      "correcta": 1,
+      "explicacion": "Salvo en sumas de un grupo, donde se fijan en cero.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "los resultados inferiores al límite de cuantificación se sustituyen por la mitad del LC para calcular medias"
+    },
+    {
+      "id": "t26-q61",
+      "pregunta": "Según el RD 3/2023, la incertidumbre de medida de la tabla 15:",
+      "opciones": [
+        "Se suma al valor paramétrico",
+        "Sustituye al límite de cuantificación",
+        "No se puede usar como tolerancia adicional sobre el valor paramétrico"
+      ],
+      "correcta": 2,
+      "explicacion": "Y el LC y el LD deben ser inferiores al valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte D · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "la incertidumbre de la tabla no se puede usar como tolerancia adicional sobre el valor paramétrico."
+    },
+    {
+      "id": "t26-q62",
+      "pregunta": "La línea analítica del cadmio en absorción atómica es:",
+      "opciones": [
+        "228,8 nm",
+        "253,7 nm",
+        "324,8 nm"
+      ],
+      "correcta": 0,
+      "explicacion": "253,7 nm: mercurio; 324,8 nm: cobre.",
+      "fuente": "INSST, MTA/MA-025/A16 (tabla 1) · apunte §3 y Dudas",
+      "apartado": "3",
+      "evidencia": "228,8 nm, llama aire-acetileno oxidante (azul)"
+    },
+    {
+      "id": "t26-q63",
+      "pregunta": "La determinación de mercurio por fluorescencia atómica, que llega a ng/L, se recoge en la norma:",
+      "opciones": [
+        "UNE-EN ISO 7980:2000",
+        "UNE-EN ISO 17852:2008",
+        "UNE-EN ISO 15587-2"
+      ],
+      "correcta": 1,
+      "explicacion": "7980: calcio y magnesio; 15587: digestión.",
+      "fuente": "UNE-EN ISO 17852:2008 (catálogo) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Mercurio (alternativa más sensible) | Espectrometría de fluorescencia atómica (AFS) | UNE-EN ISO 17852:2008 | ng/L |"
+    },
+    {
+      "id": "t26-q64",
+      "pregunta": "La UNE-EN ISO 11969, de arsénico por generación de hidruros:",
+      "opciones": [
+        "Es la vigente para arsénico",
+        "Es la de mercurio",
+        "Está anulada desde 2014, sin sustituta indicada"
+      ],
+      "correcta": 2,
+      "explicacion": "Su hueco lo cubrirían otras normas, por deducción.",
+      "fuente": "Catálogo UNE · apunte §3 y Dudas",
+      "apartado": "3",
+      "evidencia": "UNE-EN ISO 11969:1997 está ANULADA (18/09/2014)"
     }
   ],
   "supuestos": [
@@ -862,6 +1687,170 @@
           "correcta": 3,
           "explicacion": "Los filtros de holmio y didimio verifican la escala de longitudes de onda de un espectrofotómetro UV-VISIBLE (tema 25), no de un equipo de absorción atómica. En absorción atómica el CEM plantea una calibración GLOBAL del sistema por su recta de respuesta, elemento a elemento, y el ajuste fino de la longitud de onda se hace buscando la máxima energía de la propia lámpara. Las otras tres condiciones sí están en los apartados 5.1 y 5.2 del QU-001.",
           "fuente": "CEM, procedimiento QU-001, apartados 4.2.2, 5.1 y 5.2"
+        }
+      ]
+    },
+    {
+      "id": "t26-s03",
+      "titulo": "Supuesto 3. Plomo total en un agua residual por cámara de grafito",
+      "enunciado": "Una industria pide el plomo total de su agua residual, con bastantes sólidos en suspensión y materia orgánica, y se espera a nivel de µg/L. El laboratorio usa absorción atómica con cámara de grafito.",
+      "preguntas": [
+        {
+          "id": "t26-s03-q1",
+          "pregunta": "¿Qué hace antes de medir?",
+          "opciones": [
+            "Digerir la muestra sin filtrar (UNE-EN ISO 15587)",
+            "Filtrar a 0,45 µm y medir el filtrado",
+            "Medir directamente la muestra bruta",
+            "Diluir 1:1000 con agua del grifo"
+          ],
+          "correcta": 0,
+          "explicacion": "Filtrar daría el plomo disuelto, no el total.",
+          "fuente": "UNE-EN ISO 15587 (catálogo) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Metales totales: no se filtra; hay que DIGERIR la muestra"
+        },
+        {
+          "id": "t26-s03-q2",
+          "pregunta": "¿Cuál es el orden del programa del horno?",
+          "opciones": [
+            "Atomización, secado y calcinación",
+            "Calcinación, secado y atomización",
+            "Secado y atomización, sin calcinar",
+            "Secado, calcinación, atomización y limpieza"
+          ],
+          "correcta": 3,
+          "explicacion": "La señal sale en la atomización.",
+          "fuente": "Harvey / LibreTexts · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Secado | ≈ 110 °C | Evapora el disolvente |"
+        },
+        {
+          "id": "t26-s03-q3",
+          "pregunta": "Para que el plomo no se pierda en la calcinación, añade:",
+          "opciones": [
+            "Cesio como supresor de ionización",
+            "Un modificador de matriz, como nitrato de paladio o de magnesio",
+            "Lantano como liberador",
+            "EDTA como protector"
+          ],
+          "correcta": 1,
+          "explicacion": "El modificador retiene el analito hasta la atomización.",
+          "fuente": "CEM, procedimiento QU-001, 5.1 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Se usan modificadores de matriz —nitrato de paladio, de magnesio, de lantano— para que el analito aguante la calcinación sin perderse (QU-001, 5.1)."
+        },
+        {
+          "id": "t26-s03-q4",
+          "pregunta": "Con tanta matriz, ¿qué corrección de fondo es la habitual en grafito?",
+          "opciones": [
+            "Ninguna: el grafito no tiene fondo",
+            "La lámpara de tungsteno",
+            "El efecto Zeeman",
+            "El modulador"
+          ],
+          "correcta": 2,
+          "explicacion": "En grafito la corrección de fondo es prácticamente obligatoria.",
+          "fuente": "CEM, procedimiento QU-001, 4.1.4 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Efecto Zeeman: un campo magnético desdobla la línea; comparando las componentes se separa el fondo. Es el más fino, y el habitual en cámara de grafito."
+        },
+        {
+          "id": "t26-s03-q5",
+          "pregunta": "La matriz de la muestra no se puede reproducir en los patrones. ¿Cómo cuantifica?",
+          "opciones": [
+            "Por adición de patrón sobre la propia muestra",
+            "Con una recta en agua desionizada",
+            "Por extrapolación",
+            "Con un solo patrón"
+          ],
+          "correcta": 0,
+          "explicacion": "Así la matriz afecta igual a todo.",
+          "fuente": "INSST, MTA/MA-025/A16, 8.4 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Cuando eso no es posible, se cuantifica por adición de patrón"
+        }
+      ]
+    },
+    {
+      "id": "t26-s04",
+      "titulo": "Supuesto 4. Calcio por llama en un agua dura con fosfatos",
+      "enunciado": "Se determina el calcio de un agua subterránea dura, con fosfatos y algo de aluminio, por absorción atómica de llama aire-acetileno según la UNE-EN ISO 7980. Se prepara la recta y se analiza la serie del día.",
+      "preguntas": [
+        {
+          "id": "t26-s04-q1",
+          "pregunta": "El fosfato y el aluminio bajan la señal del calcio. ¿Qué tipo de interferencia es y qué añade?",
+          "opciones": [
+            "Espectral: cambiar de lámpara",
+            "De ionización: cesio",
+            "De fondo: corrector de deuterio",
+            "Química: lantano 1000 µg/mL como agente liberador"
+          ],
+          "correcta": 3,
+          "explicacion": "El calcio forma compuestos poco volátiles con el fosfato.",
+          "fuente": "INSST, MTA/MA-025/A16; Harvey / LibreTexts · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "agente liberador que se queda con el interferente (1 000 µg de lantano por mL; también estroncio)"
+        },
+        {
+          "id": "t26-s04-q2",
+          "pregunta": "El calcio se ioniza algo en la llama. ¿Qué se añade a muestras y patrones?",
+          "opciones": [
+            "La sal de un metal alcalino: 1000 µg de cesio por mL",
+            "Más acetileno",
+            "Nitrato de paladio",
+            "EDTA"
+          ],
+          "correcta": 0,
+          "explicacion": "Supresor de ionización.",
+          "fuente": "INSST, MTA/MA-025/A16, 8.4 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Añadir a muestras y patrones la sal de un metal alcalino: 1 000 µg de cesio por mL (también se usa potasio)"
+        },
+        {
+          "id": "t26-s04-q3",
+          "pregunta": "¿Cuántos patrones prepara para la recta?",
+          "opciones": [
+            "Uno, si es certificado",
+            "Como mínimo 3, y mejor de 5 a 7",
+            "Dos",
+            "Veinte"
+          ],
+          "correcta": 1,
+          "explicacion": "Abarcando todo el rango del elemento.",
+          "fuente": "CEM, procedimiento QU-001, 5.3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Como mínimo 3 patrones, y es más aconsejable de 5 a 7"
+        },
+        {
+          "id": "t26-s04-q4",
+          "pregunta": "Antes de los patrones, ¿qué mide?",
+          "opciones": [
+            "El patrón más concentrado",
+            "Una muestra cualquiera",
+            "Un blanco con los mismos reactivos, y ajusta el cero",
+            "Nada"
+          ],
+          "correcta": 2,
+          "explicacion": "El blanco lleva el mismo disolvente y reactivos que las muestras.",
+          "fuente": "CEM, procedimiento QU-001, 5.3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Se analiza un blanco —el mismo disolvente y los mismos reactivos que las muestras— y se ajusta el cero."
+        },
+        {
+          "id": "t26-s04-q5",
+          "pregunta": "Al día siguiente, ¿sirve la misma recta?",
+          "opciones": [
+            "Sí, durante una semana",
+            "Sí, si la lámpara es la misma",
+            "Solo si el blanco da cero",
+            "No: la calibración se repite antes de cada sesión y siempre que se toque un ajuste"
+          ],
+          "correcta": 3,
+          "explicacion": "Las condiciones cambian de un día a otro.",
+          "fuente": "CEM, procedimiento QU-001, 5.3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "La calibración se repite antes de cada sesión de análisis, y siempre que se toque un ajuste."
         }
       ]
     }
