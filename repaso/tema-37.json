@@ -451,6 +451,177 @@
         "concepto"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t37-f46",
+      "anverso": "¿Qué reales decretos sustituyó el RD 102/2011, y cuántas veces se ha modificado?",
+      "reverso": "Unificó en uno el **RD 1073/2002**, el **RD 1796/2003** y el **RD 812/2007**. Se ha modificado por el **RD 678/2014**, el **RD 39/2017** y el **RD 34/2023**; consolidado a 25/01/2023.",
+      "fuente": "RD 102/2011 · apunte §2.1",
+      "etiquetas": [
+        "marco"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "| Lo que sustituyó | RD 1073/2002, RD 1796/2003 y RD 812/2007 | Los tres reales decretos anteriores, unificados en uno |",
+        "RD 678/2014, RD 39/2017, RD 34/2023"
+      ]
+    },
+    {
+      "id": "t37-f47",
+      "anverso": "¿Qué se vigila sin objetivos de calidad, y por qué interesa el amoniaco?",
+      "reverso": "El **mercurio**, los **demás HAP** y el **amoniaco**. El amoniaco es «un gas altamente reactivo que, además, **favorece la generación de partículas secundarias**», y sus emisiones son sobre todo **agropecuarias**.",
+      "fuente": "RD 102/2011, preámbulo · apunte §2.2",
+      "etiquetas": [
+        "contaminantes"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "Se añaden, sin objetivos de calidad propios, el mercurio, los demás HAP y el amoniaco.",
+        "es un gas altamente reactivo que, además, favorece la generación de partículas secundarias"
+      ]
+    },
+    {
+      "id": "t37-f48",
+      "anverso": "¿Qué es el diámetro aerodinámico de una partícula?",
+      "reverso": "El de una **esfera de densidad 1 g/cm³** que **sedimentaría a la misma velocidad**. No es geométrico: una partícula alargada y densa de 3 µm puede comportarse como una de 10.",
+      "fuente": "RD 102/2011 · apunte §2.3",
+      "etiquetas": [
+        "particulas"
+      ],
+      "apartado": "2.3",
+      "evidencia": "El diámetro es AERODINÁMICO, no geométrico: es el diámetro de una esfera de densidad 1 g/cm³ que sedimentaría a la misma velocidad."
+    },
+    {
+      "id": "t37-f49",
+      "anverso": "PM10 frente a PM2,5: nombre, hasta dónde llegan y origen dominante.",
+      "reverso": "**PM10**: fracción **torácica**, vías respiratorias bajas, origen **mecánico** (desgaste, resuspensión, polvo). **PM2,5**: fracción **fina o respirable**, llega al **alvéolo** y a la sangre, origen **combustión y formación secundaria**.",
+      "fuente": "Apunte §2.3",
+      "etiquetas": [
+        "particulas"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| Nombre común | Fracción torácica | Fracción fina o respirable |",
+        "| Hasta dónde llega | Vías respiratorias bajas | Alvéolo, y de ahí al torrente sanguíneo |"
+      ]
+    },
+    {
+      "id": "t37-f50",
+      "anverso": "Niveles críticos para la protección de la vegetación: SO₂ y NOₓ.",
+      "reverso": "**SO₂: 20 µg/m³**, en el **año civil y en invierno** (1 oct – 31 mar). **NOₓ: 30 µg/m³**, expresado como NO₂.",
+      "fuente": "RD 102/2011, anexo I · apunte §2.5",
+      "etiquetas": [
+        "valores"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "| SO₂ | Nivel crítico (vegetación) | 20 µg/m³ | Año civil e invierno (1 oct – 31 mar) |",
+        "| NOₓ | Nivel crítico (vegetación) | 30 µg/m³ expresado como NO₂ | — |"
+      ]
+    },
+    {
+      "id": "t37-f51",
+      "anverso": "Captadores y período de muestreo para la gravimetría de partículas.",
+      "reverso": "Captadores de **alto o bajo volumen**, o **secuenciales** (cambian el filtro solos). Muestreo de **24 h ± 1 h**, recomendado **de 08:00 a 08:00**.",
+      "fuente": "RD 102/2011, anexo XIII · apunte §2.7",
+      "etiquetas": [
+        "gravimetria"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "bien de alto o de bajo volumen, o su modificación con un captador secuencial",
+        "El período de muestreo es de 24 h (± 1 h), y el propio anexo recomienda que vaya de las 08:00 a las 08:00"
+      ]
+    },
+    {
+      "id": "t37-f52",
+      "anverso": "¿Qué simplificaciones de muestreo admite el RD para metales y benzo(a)pireno?",
+      "reverso": "Metales en PM10: **un día a la semana** en lugar de diario. B(a)P: **combinar muestras de hasta un mes** y analizarlas como **muestra compuesta**, si se demuestra que son estables.",
+      "fuente": "RD 102/2011, anexo VI · apunte §2.8",
+      "etiquetas": [
+        "metales"
+      ],
+      "apartado": "2.8",
+      "evidencia": [
+        "se autoriza la toma de muestra un día a la semana de los metales presentes en las PM10",
+        "permite combinar muestras individuales de hasta un mes y analizarlas como muestra compuesta, si se demuestra que son estables"
+      ]
+    },
+    {
+      "id": "t37-f53",
+      "anverso": "¿Qué documentación lleva un emplazamiento de medida y cada cuánto se revisa?",
+      "reverso": "**Fotografías, coordenadas y mapas**, y se **revisa al menos cada cinco años**.",
+      "fuente": "RD 102/2011, anexo III · apunte §2.9",
+      "etiquetas": [
+        "implantacion"
+      ],
+      "apartado": "2.9",
+      "evidencia": "la documentación del emplazamiento incluye fotografías, coordenadas y mapas, y se revisa al menos cada cinco años."
+    },
+    {
+      "id": "t37-f54",
+      "anverso": "Incertidumbres admitidas para partículas según el tipo de evaluación, y quién revisa el sistema de calidad.",
+      "reverso": "**25 %** en medición fija; **50 %** en medición indicativa y en modelización. El **Instituto de Salud Carlos III**, Laboratorio Nacional de Referencia, revisa el sistema **al menos cada cinco años**.",
+      "fuente": "RD 102/2011 · apunte §2.10",
+      "etiquetas": [
+        "calidad"
+      ],
+      "apartado": "2.10",
+      "evidencia": [
+        "Incertidumbre: 25 % en medición fija, 50 % en medición indicativa, 50 % en modelización.",
+        "El Instituto de Salud Carlos III, como Laboratorio Nacional de Referencia, revisa el sistema de calidad al menos cada cinco años."
+      ]
+    },
+    {
+      "id": "t37-f55",
+      "anverso": "La escala de reducción de la exposición a PM2,5 para 2020, según el IME de 2011.",
+      "reverso": "**≤ 8,5 µg/m³: 0 %**; >8,5 y <13: **10 %**; 13 a <18: **15 %**; 18 a <22: **20 %**; **≥ 22**: bajar al menos hasta **18 µg/m³**.",
+      "fuente": "RD 102/2011, anexo XIII · apunte §2.11",
+      "etiquetas": [
+        "ime"
+      ],
+      "apartado": "2.11",
+      "evidencia": "| > 8,5 y < 13 | 10 % | | 13 a < 18 | 15 % | | 18 a < 22 | 20 % |"
+    },
+    {
+      "id": "t37-f56",
+      "anverso": "¿Con qué técnicas se hace la especiación química de la PM2,5 rural de fondo?",
+      "reverso": "Los **ocho iones**, por **cromatografía iónica** sobre un **extracto acuoso** del filtro; el **carbono elemental y orgánico**, por **análisis termo-óptico**.",
+      "fuente": "RD 102/2011, anexo VIII · apunte §2.11",
+      "etiquetas": [
+        "ime"
+      ],
+      "apartado": "2.11",
+      "evidencia": "Los iones se miden por cromatografía iónica sobre un extracto acuoso del filtro; el carbono, por análisis termo-óptico."
+    },
+    {
+      "id": "t37-f57",
+      "anverso": "¿Qué cuenta como fuente natural, y quién demuestra el origen?",
+      "reverso": "Erupciones volcánicas, actividad sísmica o geotérmica, **incendios forestales no intencionados**, **fuertes vientos**, **aerosoles marinos**, **resuspensión** y **transporte de partículas de regiones áridas** (polvo sahariano). Lo demuestra **la comunidad autónoma, con datos**.",
+      "fuente": "RD 102/2011, arts. 2 y 22 · apunte §2.12",
+      "etiquetas": [
+        "natural"
+      ],
+      "apartado": "2.12",
+      "evidencia": [
+        "erupciones volcánicas, actividades sísmicas o geotérmicas, incendios forestales no intencionados, fuertes vientos, aerosoles marinos, la resuspensión atmosférica y el transporte de partículas naturales procedentes de regiones áridas",
+        "La demostración corre a cargo de la comunidad autónoma, con datos, y no basta con alegarla."
+      ]
+    },
+    {
+      "id": "t37-f58",
+      "anverso": "NO₂, SO₂ y benceno: ¿qué cambia en 2030 con la Directiva (UE) 2024/2881?",
+      "reverso": "**NO₂**: horario 200 con **máx. 3** superaciones; **nuevo diario 50** (18 veces); anual **20**. **SO₂**: diario **50** (18 veces); **nuevo anual 20**. **Benceno**: **3,4 µg/m³**.",
+      "fuente": "Directiva (UE) 2024/2881 · apunte §2.13",
+      "etiquetas": [
+        "directiva"
+      ],
+      "apartado": "2.13",
+      "evidencia": [
+        "| NO₂ hora | 200, máx. 18 veces | 200, máx. 3 veces |",
+        "| SO₂ año | (no hay) | 20 µg/m³ (NUEVO) |",
+        "| Benceno | 5 µg/m³ | 3,4 µg/m³ |"
+      ]
     }
   ],
   "test": [
@@ -827,6 +998,552 @@
       "correcta": 1,
       "explicacion": "Artículos 30 y 31 de la directiva. El 1 de enero de 2030 es la fecha de cumplimiento de su cuadro 1, el de los valores nuevos; el cuadro 2, con los valores actuales, debe cumplirse el 11 de diciembre de 2026.",
       "fuente": "Directiva (UE) 2024/2881, artículos 30 y 31"
+    },
+    {
+      "id": "t37-q31",
+      "pregunta": "La emisión, frente a la inmisión, es:",
+      "opciones": [
+        "Lo que hay en el aire que respira la población",
+        "Lo que se deposita en el suelo",
+        "Lo que un foco suelta a la atmósfera"
+      ],
+      "correcta": 2,
+      "explicacion": "El RD 102/2011 regula la inmisión.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "| EMISIÓN | Lo que un foco suelta a la atmósfera | En el foco: chimenea, tubo de escape |"
+    },
+    {
+      "id": "t37-q32",
+      "pregunta": "El análisis de metales en el aire ambiente empieza siendo:",
+      "opciones": [
+        "Un análisis de partículas",
+        "Un análisis de gases",
+        "Un análisis del agua de lluvia"
+      ],
+      "correcta": 0,
+      "explicacion": "Se capta PM10, se pesa y el mismo filtro se digiere.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "el análisis de metales empieza siendo un análisis de partículas"
+    },
+    {
+      "id": "t37-q33",
+      "pregunta": "La ley marco española de calidad del aire es:",
+      "opciones": [
+        "La Ley 38/1972",
+        "La Ley 34/2007",
+        "El RD 102/2011"
+      ],
+      "correcta": 1,
+      "explicacion": "Sustituyó a la Ley 38/1972.",
+      "fuente": "Marco legal · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Ley marco española | Ley 34/2007, de 15 de noviembre, de calidad del aire y protección de la atmósfera |"
+    },
+    {
+      "id": "t37-q34",
+      "pregunta": "El RD 102/2011 transpone las Directivas:",
+      "opciones": [
+        "2024/2881 y 2008/50/CE",
+        "91/271/CEE y 2004/107/CE",
+        "2008/50/CE y 2004/107/CE"
+      ],
+      "correcta": 2,
+      "explicacion": "La 2024/2881 está pendiente de transponer.",
+      "fuente": "Marco legal · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Transpone la Directiva 2008/50/CE y la 2004/107/CE"
+    },
+    {
+      "id": "t37-q35",
+      "pregunta": "El RD 102/2011 sustituyó, unificándolos, a:",
+      "opciones": [
+        "Los RD 1073/2002, 1796/2003 y 812/2007",
+        "La Ley 34/2007",
+        "El RD 100/2011"
+      ],
+      "correcta": 0,
+      "explicacion": "El RD 100/2011 es el catálogo de actividades contaminadoras.",
+      "fuente": "Marco legal · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Lo que sustituyó | RD 1073/2002, RD 1796/2003 y RD 812/2007 | Los tres reales decretos anteriores, unificados en uno |"
+    },
+    {
+      "id": "t37-q36",
+      "pregunta": "El ozono troposférico se forma por reacción fotoquímica de:",
+      "opciones": [
+        "El SO₂ con el vapor de agua",
+        "Los COV con los óxidos de nitrógeno, en presencia de luz solar",
+        "El CO con el oxígeno"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso es secundario.",
+      "fuente": "RD 102/2011 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "se forma por reacción fotoquímica de los COV con los óxidos de nitrógeno en presencia de luz solar"
+    },
+    {
+      "id": "t37-q37",
+      "pregunta": "El RD 102/2011 vigila el amoniaco, aunque sin objetivos, porque:",
+      "opciones": [
+        "Es el principal contaminante del tráfico",
+        "Es un metal de la fracción PM10",
+        "Favorece la generación de partículas secundarias"
+      ],
+      "correcta": 2,
+      "explicacion": "Sus emisiones son sobre todo agropecuarias.",
+      "fuente": "RD 102/2011, preámbulo · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "es un gas altamente reactivo que, además, favorece la generación de partículas secundarias"
+    },
+    {
+      "id": "t37-q38",
+      "pregunta": "El origen típico del benceno en el aire es:",
+      "opciones": [
+        "La gasolina: almacenamiento, distribución y escape",
+        "La combustión de carbón",
+        "Los aerosoles marinos"
+      ],
+      "correcta": 0,
+      "explicacion": "Origen de doctrina, no del texto legal.",
+      "fuente": "Apunte §2.2 (duda 5)",
+      "apartado": "2.2",
+      "evidencia": "| Benceno | Gasolina: almacenamiento, distribución y escape |"
+    },
+    {
+      "id": "t37-q39",
+      "pregunta": "El diámetro al que se refiere la definición de PM10 es:",
+      "opciones": [
+        "Geométrico",
+        "Aerodinámico",
+        "Óptico"
+      ],
+      "correcta": 1,
+      "explicacion": "Esfera de densidad 1 g/cm³ que sedimenta igual.",
+      "fuente": "RD 102/2011 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El diámetro es AERODINÁMICO, no geométrico"
+    },
+    {
+      "id": "t37-q40",
+      "pregunta": "La PM2,5 se denomina fracción:",
+      "opciones": [
+        "Torácica",
+        "Gruesa",
+        "Fina o respirable, y llega al alvéolo"
+      ],
+      "correcta": 2,
+      "explicacion": "La PM10 es la torácica.",
+      "fuente": "Apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Nombre común | Fracción torácica | Fracción fina o respirable |"
+    },
+    {
+      "id": "t37-q41",
+      "pregunta": "Frente a la PM10, la composición típica de la PM2,5 es más rica en:",
+      "opciones": [
+        "Sulfato, nitrato, amonio y carbono",
+        "Calcio, silicio y aluminio",
+        "Cloruro sódico marino"
+      ],
+      "correcta": 0,
+      "explicacion": "La PM10 es más mineral.",
+      "fuente": "Apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Composición típica | Más mineral (Ca, Si, Al) | Más sulfato, nitrato, amonio, carbono |"
+    },
+    {
+      "id": "t37-q42",
+      "pregunta": "El valor límite anual de PM2,5 en su fase II (indicativo) es:",
+      "opciones": [
+        "25 µg/m³, desde 2015",
+        "20 µg/m³, desde 2020",
+        "10 µg/m³, desde 2030"
+      ],
+      "correcta": 1,
+      "explicacion": "25 µg/m³ es la fase I.",
+      "fuente": "RD 102/2011, anexo I, D · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Valor límite anual (FASE II) | 1 año civil | 20 µg/m³ (indicativo) | 1 de enero de 2020 |"
+    },
+    {
+      "id": "t37-q43",
+      "pregunta": "El valor límite horario de NO₂ (200 µg/m³) no puede superarse más de:",
+      "opciones": [
+        "24 veces al año",
+        "35 veces al año",
+        "18 veces al año"
+      ],
+      "correcta": 2,
+      "explicacion": "24 es el SO₂ horario; 35, la PM10 diaria.",
+      "fuente": "RD 102/2011, anexo I · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| NO₂ | Horario | 200 µg/m³ | 18 al año |"
+    },
+    {
+      "id": "t37-q44",
+      "pregunta": "El valor límite anual del benceno es:",
+      "opciones": [
+        "5 µg/m³",
+        "0,5 µg/m³",
+        "40 µg/m³"
+      ],
+      "correcta": 0,
+      "explicacion": "0,5 µg/m³ es el plomo.",
+      "fuente": "RD 102/2011, anexo I · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Benceno | Anual | 5 µg/m³ | — |"
+    },
+    {
+      "id": "t37-q45",
+      "pregunta": "El nivel crítico de SO₂ para la protección de la vegetación es:",
+      "opciones": [
+        "125 µg/m³ diario",
+        "20 µg/m³, en el año civil y en invierno",
+        "350 µg/m³ horario"
+      ],
+      "correcta": 1,
+      "explicacion": "Invierno: 1 oct – 31 mar.",
+      "fuente": "RD 102/2011, anexo I · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| SO₂ | Nivel crítico (vegetación) | 20 µg/m³ | Año civil e invierno (1 oct – 31 mar) |"
+    },
+    {
+      "id": "t37-q46",
+      "pregunta": "El valor objetivo del benzo(a)pireno es:",
+      "opciones": [
+        "5 ng/m³",
+        "20 ng/m³",
+        "1 ng/m³"
+      ],
+      "correcta": 2,
+      "explicacion": "5 cadmio; 20 níquel.",
+      "fuente": "RD 102/2011, anexo I, I · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Benzo(a)pireno (B(a)P) | 1 ng/m³ | 1 de enero de 2013 |"
+    },
+    {
+      "id": "t37-q47",
+      "pregunta": "Los umbrales superior e inferior de evaluación del arsénico, el cadmio y el B(a)P son:",
+      "opciones": [
+        "60 % y 40 % del valor",
+        "70 % y 50 % del valor",
+        "70 % y 40 % del valor"
+      ],
+      "correcta": 0,
+      "explicacion": "Partículas, plomo y níquel, 70/50.",
+      "fuente": "RD 102/2011, anexo II · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "arsénico, cadmio y benzo(a)pireno, al 60/40"
+    },
+    {
+      "id": "t37-q48",
+      "pregunta": "El umbral de información de la PM2,5 (promedio de 24 h) es:",
+      "opciones": [
+        "25 µg/m³",
+        "35 µg/m³",
+        "50 µg/m³"
+      ],
+      "correcta": 1,
+      "explicacion": "Activación 25; alerta 50.",
+      "fuente": "RD 102/2011 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| PM2,5 (promedio 24 h o móvil 24 h) | 25 µg/m³ | 35 µg/m³ | 50 µg/m³ |"
+    },
+    {
+      "id": "t37-q49",
+      "pregunta": "Para que salte el umbral de alerta del SO₂ o del NO₂ hace falta superarlo:",
+      "opciones": [
+        "Un día completo",
+        "Una sola hora",
+        "Tres horas consecutivas"
+      ],
+      "correcta": 2,
+      "explicacion": "En partículas, no.",
+      "fuente": "RD 102/2011 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "en SO₂, NO₂ y ozono la alerta exige tres horas consecutivas; en partículas, no."
+    },
+    {
+      "id": "t37-q50",
+      "pregunta": "Por debajo del umbral inferior de evaluación basta con:",
+      "opciones": [
+        "Modelización o estimación objetiva",
+        "Medición fija",
+        "Informar a la población"
+      ],
+      "correcta": 0,
+      "explicacion": "Por encima del superior, medición fija obligatoria.",
+      "fuente": "RD 102/2011, anexo II · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Umbral INFERIOR de evaluación | Por debajo, basta modelización o estimación objetiva |"
+    },
+    {
+      "id": "t37-q51",
+      "pregunta": "La PM10 se determina por gravimetría porque:",
+      "opciones": [
+        "Es la técnica más rápida",
+        "El valor límite regula una concentración másica",
+        "No existe ninguna otra técnica"
+      ],
+      "correcta": 1,
+      "explicacion": "Las demás miden otra cosa y la convierten a masa.",
+      "fuente": "Apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Porque lo que el valor límite regula es una concentración másica"
+    },
+    {
+      "id": "t37-q52",
+      "pregunta": "El filtro se acondiciona antes y después de pesarlo porque:",
+      "opciones": [
+        "Se carga de electricidad estática",
+        "Pierde fibras al calentarse",
+        "Absorbe agua, y sin acondicionar se pesaría humedad"
+      ],
+      "correcta": 2,
+      "explicacion": "A humedad y temperatura controladas.",
+      "fuente": "Apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El filtro absorbe agua: sin acondicionar, se pesa humedad"
+    },
+    {
+      "id": "t37-q53",
+      "pregunta": "El período de muestreo de partículas recomendado es:",
+      "opciones": [
+        "24 h, de 08:00 a 08:00",
+        "8 h laborables",
+        "1 h"
+      ],
+      "correcta": 0,
+      "explicacion": "24 h ± 1 h.",
+      "fuente": "RD 102/2011, anexo XIII · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El período de muestreo es de 24 h (± 1 h), y el propio anexo recomienda que vaya de las 08:00 a las 08:00"
+    },
+    {
+      "id": "t37-q54",
+      "pregunta": "Los depósitos de As, Cd, Pb y Ni se muestrean según la norma:",
+      "opciones": [
+        "UNE-EN 15853",
+        "UNE-EN 15841",
+        "UNE-EN 15980"
+      ],
+      "correcta": 1,
+      "explicacion": "15853 mercurio; 15980 B(a)P.",
+      "fuente": "RD 102/2011, anexo VII · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Depósitos de As, Cd, Pb y Ni | UNE-EN 15841:2010 | |"
+    },
+    {
+      "id": "t37-q55",
+      "pregunta": "El benzo(a)pireno en aire se mide con la norma:",
+      "opciones": [
+        "UNE-EN 14902",
+        "UNE-EN 15852",
+        "UNE-EN 15549"
+      ],
+      "correcta": 2,
+      "explicacion": "La toma, con la 12341.",
+      "fuente": "RD 102/2011, anexo VII · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Benzo(a)pireno | UNE-EN 12341:2015 | UNE-EN 15549:2008 |"
+    },
+    {
+      "id": "t37-q56",
+      "pregunta": "La incertidumbre admitida en la medición fija del benzo(a)pireno es:",
+      "opciones": [
+        "50 %",
+        "25 %",
+        "40 %"
+      ],
+      "correcta": 0,
+      "explicacion": "25 % PM y plomo; 40 % As, Cd y Ni.",
+      "fuente": "RD 102/2011, anexo I · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| B(a)P | 50 % | 90 % | 33 % |"
+    },
+    {
+      "id": "t37-q57",
+      "pregunta": "Una estación industrial debe ser representativa de al menos:",
+      "opciones": [
+        "100 m de calle",
+        "250 m × 250 m",
+        "1 000 km²"
+      ],
+      "correcta": 1,
+      "explicacion": "100 m de calle es la de tráfico.",
+      "fuente": "RD 102/2011, anexo III · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| Industrial | Al menos 250 m × 250 m |"
+    },
+    {
+      "id": "t37-q58",
+      "pregunta": "Una estación de fondo rural no debe estar influida por aglomeraciones ni industrias a menos de:",
+      "opciones": [
+        "20 km",
+        "500 m",
+        "5 km"
+      ],
+      "correcta": 2,
+      "explicacion": "20 km es la de protección de la vegetación.",
+      "fuente": "RD 102/2011, anexo III · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| Fondo rural | No influida por aglomeraciones ni industrias a menos de 5 km |"
+    },
+    {
+      "id": "t37-q59",
+      "pregunta": "En emplazamientos de tráfico, la toma para As, Cd, Ni y HAP debe estar al menos a:",
+      "opciones": [
+        "4 m del centro del carril más próximo",
+        "25 m del carril más próximo",
+        "0,5 m del borde de la acera"
+      ],
+      "correcta": 0,
+      "explicacion": "25 m es la distancia a los cruces.",
+      "fuente": "RD 102/2011, anexo III · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| Además, para As, Cd, Ni y HAP en tráfico | Al menos 4 m del centro del carril más próximo |"
+    },
+    {
+      "id": "t37-q60",
+      "pregunta": "Un valor de 24 horas exige al menos:",
+      "opciones": [
+        "El 50 % de las medias horarias",
+        "El 75 % de las medias horarias (18 horas)",
+        "El 100 % de las medias horarias"
+      ],
+      "correcta": 1,
+      "explicacion": "Una media anual, el 90 %.",
+      "fuente": "RD 102/2011, anexo I, J · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "un valor de 24 horas exige al menos el 75 % de las medias horarias (18 horas)"
+    },
+    {
+      "id": "t37-q61",
+      "pregunta": "El Laboratorio Nacional de Referencia de la calidad del aire es:",
+      "opciones": [
+        "El Centro Español de Metrología",
+        "La Entidad Nacional de Acreditación",
+        "El Instituto de Salud Carlos III"
+      ],
+      "correcta": 2,
+      "explicacion": "Revisa el sistema cada cinco años.",
+      "fuente": "RD 102/2011 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "El Instituto de Salud Carlos III, como Laboratorio Nacional de Referencia"
+    },
+    {
+      "id": "t37-q62",
+      "pregunta": "En las mediciones aleatorias de PM10, el percentil 90,4 sale de que:",
+      "opciones": [
+        "35 superaciones en 365 días son el 9,6 %",
+        "La captura mínima es del 90 %",
+        "El IME se calcula con el 90,4 % de estaciones"
+      ],
+      "correcta": 0,
+      "explicacion": "Razonamiento del apunte, comprobable.",
+      "fuente": "Apunte §2.10 (duda 7)",
+      "apartado": "2.10",
+      "evidencia": "35 superaciones en 365 días son el 9,6 %, así que el percentil complementario es 90,4."
+    },
+    {
+      "id": "t37-q63",
+      "pregunta": "Con un IME de 2011 entre 13 y 18 µg/m³, la reducción de la exposición exigida en 2020 era del:",
+      "opciones": [
+        "10 %",
+        "15 %",
+        "20 %"
+      ],
+      "correcta": 1,
+      "explicacion": "Escalonada según el IME de partida.",
+      "fuente": "RD 102/2011, anexo XIII · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "| > 8,5 y < 13 | 10 % | | 13 a < 18 | 15 % |"
+    },
+    {
+      "id": "t37-q64",
+      "pregunta": "En la especiación de la PM2,5 rural de fondo, los iones se miden por:",
+      "opciones": [
+        "ICP-MS tras digestión",
+        "Gravimetría",
+        "Cromatografía iónica sobre un extracto acuoso del filtro"
+      ],
+      "correcta": 2,
+      "explicacion": "El carbono, por análisis termo-óptico.",
+      "fuente": "RD 102/2011, anexo VIII · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "Los iones se miden por cromatografía iónica sobre un extracto acuoso del filtro"
+    },
+    {
+      "id": "t37-q65",
+      "pregunta": "Según el RD 102/2011, cuenta como fuente natural:",
+      "opciones": [
+        "El tráfico diésel",
+        "La calefacción doméstica de biomasa",
+        "Un incendio forestal no intencionado"
+      ],
+      "correcta": 2,
+      "explicacion": "También el polvo de regiones áridas.",
+      "fuente": "RD 102/2011, art. 2 · apunte §2.12",
+      "apartado": "2.12",
+      "evidencia": "incendios forestales no intencionados, fuertes vientos, aerosoles marinos"
+    },
+    {
+      "id": "t37-q66",
+      "pregunta": "La demostración de que una superación de PM10 es de origen natural corresponde a:",
+      "opciones": [
+        "El ayuntamiento, con una simple alegación",
+        "La Comisión Europea",
+        "La comunidad autónoma, con datos"
+      ],
+      "correcta": 2,
+      "explicacion": "No basta con alegarla.",
+      "fuente": "RD 102/2011, art. 22 · apunte §2.12",
+      "apartado": "2.12",
+      "evidencia": "La demostración corre a cargo de la comunidad autónoma, con datos, y no basta con alegarla."
+    },
+    {
+      "id": "t37-q67",
+      "pregunta": "Con la Directiva (UE) 2024/2881, el valor límite anual de PM10 a cumplir en 2030 será:",
+      "opciones": [
+        "40 µg/m³",
+        "45 µg/m³",
+        "20 µg/m³"
+      ],
+      "correcta": 2,
+      "explicacion": "45 µg/m³ será el diario.",
+      "fuente": "Directiva (UE) 2024/2881 · apunte §2.13",
+      "apartado": "2.13",
+      "evidencia": "| PM10 año | 40 µg/m³ | 20 µg/m³ |"
+    },
+    {
+      "id": "t37-q68",
+      "pregunta": "Las Directivas 2004/107/CE y 2008/50/CE quedan derogadas con efectos desde:",
+      "opciones": [
+        "El 12 de diciembre de 2026",
+        "El 11 de diciembre de 2026",
+        "El 1 de enero de 2030"
+      ],
+      "correcta": 0,
+      "explicacion": "El 11 es el límite de transposición.",
+      "fuente": "Directiva (UE) 2024/2881, art. 31 · apunte §2.13",
+      "apartado": "2.13",
+      "evidencia": "Quedan derogadas con efectos a partir del 12 de diciembre de 2026 las Directivas 2004/107/CE y 2008/50/CE."
+    },
+    {
+      "id": "t37-q69",
+      "pregunta": "La captura mínima de datos exigida en la medición fija es del:",
+      "opciones": [
+        "90 %",
+        "75 %",
+        "50 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Igual para partículas y metales.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Incertidumbre B(a)P | 50 % | | Captura mínima de datos | 90 % |"
     }
   ],
   "supuestos": [
@@ -971,6 +1688,173 @@
           "correcta": 1,
           "explicacion": "El anexo VI autoriza, «como alternativa a la toma de muestras diaria», muestrear un día a la semana los metales presentes en la PM10. El blanco de filtro es imprescindible: el filtro virgen trae trazas metálicas y el valor objetivo del cadmio son 5 ng/m³. Y la incertidumbre admitida es del 40 % para As, Cd y Ni, frente al 25 % del plomo.",
           "fuente": "RD 102/2011, anexos V y VI"
+        }
+      ]
+    },
+    {
+      "id": "t37-s03",
+      "titulo": "Supuesto 3. Metales en una estación de tráfico",
+      "enunciado": "Las medias anuales en la fracción PM10 de una estación de tráfico, iguales en los cinco últimos años, son: arsénico 4 ng/m³, cadmio 2,5 ng/m³, níquel 12 ng/m³ y plomo 0,2 µg/m³.",
+      "preguntas": [
+        {
+          "id": "t37-s03-q1",
+          "pregunta": "¿Se cumplen los valores del RD 102/2011?",
+          "opciones": [
+            "No: el arsénico supera su valor",
+            "No: el plomo supera su valor límite",
+            "No: el níquel supera su valor",
+            "Sí: los cuatro están por debajo de 6, 5, 20 ng/m³ y 0,5 µg/m³"
+          ],
+          "correcta": 3,
+          "explicacion": "As, Cd y Ni tienen valor objetivo; Pb, valor límite.",
+          "fuente": "RD 102/2011, anexo I · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": [
+            "| Arsénico (As) | 6 ng/m³ | 1 de enero de 2013 |",
+            "| Níquel (Ni) | 20 ng/m³ | 1 de enero de 2013 |"
+          ]
+        },
+        {
+          "id": "t37-s03-q2",
+          "pregunta": "¿Dónde queda el arsénico respecto a sus umbrales de evaluación?",
+          "opciones": [
+            "Por encima del superior (3,6 ng/m³): la medición fija es obligatoria",
+            "Entre el inferior y el superior",
+            "Por debajo del inferior (2,4 ng/m³)",
+            "No tiene umbrales de evaluación"
+          ],
+          "correcta": 0,
+          "explicacion": "Superado al menos tres de cinco años.",
+          "fuente": "RD 102/2011, anexo II · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Arsénico | 60 % = 3,6 ng/m³ | 40 % = 2,4 ng/m³ |"
+        },
+        {
+          "id": "t37-s03-q3",
+          "pregunta": "¿Y el níquel?",
+          "opciones": [
+            "Por encima del superior",
+            "Entre el umbral inferior (10 ng/m³) y el superior (14 ng/m³)",
+            "Por debajo del inferior",
+            "Igual que el arsénico, al 60/40"
+          ],
+          "correcta": 1,
+          "explicacion": "El níquel va al 70/50.",
+          "fuente": "RD 102/2011, anexo II · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Níquel | 70 % = 14 ng/m³ | 50 % = 10 ng/m³ |"
+        },
+        {
+          "id": "t37-s03-q4",
+          "pregunta": "¿Con qué frecuencia mínima pueden muestrearse estos metales?",
+          "opciones": [
+            "Todos los días, sin excepción",
+            "Una vez al mes",
+            "Una vez al año",
+            "Un día a la semana, como alternativa a la toma diaria"
+          ],
+          "correcta": 3,
+          "explicacion": "Lo autoriza el anexo VI.",
+          "fuente": "RD 102/2011, anexo VI · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "se autoriza la toma de muestra un día a la semana de los metales presentes en las PM10"
+        },
+        {
+          "id": "t37-s03-q5",
+          "pregunta": "¿A qué distancia mínima del centro del carril más próximo debe estar su toma de muestra?",
+          "opciones": [
+            "25 m",
+            "10 m",
+            "4 m",
+            "0,5 m"
+          ],
+          "correcta": 2,
+          "explicacion": "25 m es la distancia a los cruces principales.",
+          "fuente": "RD 102/2011, anexo III · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "| Además, para As, Cd, Ni y HAP en tráfico | Al menos 4 m del centro del carril más próximo |"
+        }
+      ]
+    },
+    {
+      "id": "t37-s04",
+      "titulo": "Supuesto 4. Una estación de fondo urbano ante la nueva directiva",
+      "enunciado": "Una estación de fondo urbano registra una media anual de PM10 de 30 µg/m³ y de PM2,5 de 15 µg/m³. Estamos en octubre de 2026 y España aún no ha transpuesto la Directiva (UE) 2024/2881.",
+      "preguntas": [
+        {
+          "id": "t37-s04-q1",
+          "pregunta": "¿Cumple hoy el valor límite anual de PM10?",
+          "opciones": [
+            "Sí: 30 µg/m³ no supera 40 µg/m³",
+            "No: supera 20 µg/m³",
+            "No: supera 25 µg/m³",
+            "No se puede evaluar"
+          ],
+          "correcta": 0,
+          "explicacion": "El de 20 µg/m³ es de 2030.",
+          "fuente": "RD 102/2011, anexo I · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Valor límite anual | 1 año civil | 40 µg/m³ | 1 de enero de 2005 |"
+        },
+        {
+          "id": "t37-s04-q2",
+          "pregunta": "¿Y con el valor anual de PM10 que habrá que cumplir en 2030?",
+          "opciones": [
+            "Sí: sigue siendo 40 µg/m³",
+            "Sí: pasa a 45 µg/m³",
+            "No hay valor anual en 2030",
+            "No: el valor pasa a 20 µg/m³"
+          ],
+          "correcta": 3,
+          "explicacion": "45 µg/m³ es el nuevo diario.",
+          "fuente": "Directiva (UE) 2024/2881 · apunte §2.13",
+          "apartado": "2.13",
+          "evidencia": "| PM10 año | 40 µg/m³ | 20 µg/m³ |"
+        },
+        {
+          "id": "t37-s04-q3",
+          "pregunta": "¿Y la PM2,5 de 15 µg/m³?",
+          "opciones": [
+            "Incumple hoy y en 2030",
+            "Cumple hoy (25 µg/m³) pero no el valor de 2030 (10 µg/m³)",
+            "Cumple hoy y en 2030",
+            "Solo tiene valor diario"
+          ],
+          "correcta": 1,
+          "explicacion": "El anual se divide por 2,5.",
+          "fuente": "Directiva (UE) 2024/2881 · apunte §2.13",
+          "apartado": "2.13",
+          "evidencia": "| PM2,5 año | 25 µg/m³ | 10 µg/m³ |"
+        },
+        {
+          "id": "t37-s04-q4",
+          "pregunta": "¿Qué cambia para el arsénico, el cadmio y el níquel desde 2030?",
+          "opciones": [
+            "Pasan de valores objetivo a valores límite, con los mismos números",
+            "Se suprimen",
+            "Bajan a la mitad",
+            "Se miden en la PM2,5"
+          ],
+          "correcta": 0,
+          "explicacion": "El salto es jurídico, no numérico.",
+          "fuente": "Directiva (UE) 2024/2881 · apunte §2.13",
+          "apartado": "2.13",
+          "evidencia": "El arsénico, el cadmio, el níquel y el benzo(a)pireno dejan de ser VALORES OBJETIVO y pasan a ser VALORES LÍMITE."
+        },
+        {
+          "id": "t37-s04-q5",
+          "pregunta": "En un examen de octubre de 2026, ¿qué norma hay que contestar?",
+          "opciones": [
+            "La Directiva 2024/2881, directamente",
+            "La Ley 38/1972",
+            "El RD 1073/2002",
+            "El RD 102/2011, que sigue siendo la norma aplicable"
+          ],
+          "correcta": 3,
+          "explicacion": "Mientras no se transponga.",
+          "fuente": "Marco legal · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "El RD 102/2011 sigue siendo la norma aplicable, y es la que hay que contestar en un examen."
         }
       ]
     }
