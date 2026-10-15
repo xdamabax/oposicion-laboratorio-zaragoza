@@ -354,6 +354,206 @@
       "fuente": "LPRL, art. 38",
       "etiquetas": ["figura", "prevencion"],
       "figura": { "tipo": "esquema", "valor": "umbrales-prevencion" }
+    },
+    {
+      "id": "t08-f47",
+      "anverso": "TREBEP, art. 3: ¿cómo se rigen los funcionarios locales y las Policías Locales?",
+      "reverso": "**Funcionarios locales** (3.1): por la **legislación estatal** (de la que forma parte el Estatuto) y la **autonómica**, **con respeto a la autonomía local**.\n**Policías Locales** (3.2): también por el TREBEP y la ley autonómica, salvo lo que diga para ellas la **LO 2/1986** de Fuerzas y Cuerpos de Seguridad.",
+      "fuente": "TREBEP, art. 3 · apunte §2.1",
+      "etiquetas": [
+        "funcion-local"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "TREBEP, art. 3.1: los funcionarios locales se rigen por la legislación estatal (de la que forma parte el Estatuto) y por la autonómica, con respeto a la autonomía local.",
+        "salvo lo que diga para ellas la LO 2/1986 de Fuerzas y Cuerpos de Seguridad (3.2)."
+      ]
+    },
+    {
+      "id": "t08-f48",
+      "anverso": "Oferta de empleo local y registro de personal: plazo y efectos.",
+      "reverso": "**Oferta** (91.1 LBRL; 128 TRRL): se aprueba y publica **dentro del mes siguiente a la aprobación del Presupuesto**; no se nombran **interinos** para plazas que no estén en ella, salvo vacantes posteriores.\n**Registro de personal** (90.3): **sus datos determinan las nóminas**.",
+      "fuente": "LBRL, arts. 90.3 y 91.1; TRRL, art. 128 · apunte §2.3",
+      "etiquetas": [
+        "funcion-local"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "se aprueba y publica dentro del mes siguiente a la aprobación del Presupuesto. No se nombran interinos para plazas que no estén en la oferta, salvo vacantes posteriores",
+        "Coordinado con los de las demás Administraciones; sus datos determinan las nóminas"
+      ]
+    },
+    {
+      "id": "t08-f49",
+      "anverso": "RD 896/1991, art. 4: ¿qué fijan las bases y qué prueba es obligatoria?",
+      "reverso": "La escala, subescala y clase, el sistema, las pruebas —**una, al menos, práctica**— y los programas. En el concurso-oposición la **fase de concurso va primero** y **no es eliminatoria**.",
+      "fuente": "RD 896/1991, art. 4 · apunte §2.4",
+      "etiquetas": [
+        "seleccion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "las bases (art. 4) fijan la escala, subescala y clase, el sistema, las pruebas (una, al menos, práctica) y los programas. En el concurso-oposición la fase de concurso va primero y no es eliminatoria;"
+    },
+    {
+      "id": "t08-f50",
+      "anverso": "Complemento de destino y jornada de los funcionarios locales.",
+      "reverso": "**Destino** (RD 861/1986, art. 3): retribuye el **nivel** del puesto dentro del intervalo de su grupo; el **Pleno** asigna nivel a cada puesto.\n**Jornada** (art. 94 LBRL): en cómputo anual, **la misma que los funcionarios de la Administración Civil del Estado**.",
+      "fuente": "RD 861/1986, art. 3, y LBRL, art. 94 · apunte §2.5",
+      "etiquetas": [
+        "retribuciones"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "Complemento de destino (art. 3) | El nivel del puesto, dentro del intervalo de su grupo | El Pleno asigna nivel a cada puesto",
+        "Jornada (art. 94 LBRL): en cómputo anual, la misma que los funcionarios de la Administración Civil del Estado."
+      ]
+    },
+    {
+      "id": "t08-f51",
+      "anverso": "Provisión de puestos de los funcionarios locales (art. 101 LBRL).",
+      "reverso": "Por **concurso de méritos** o **libre designación**, con **convocatoria pública**. Pueden participar funcionarios de otras Administraciones si la **RPT** lo permite.",
+      "fuente": "LBRL, art. 101 · apunte §2.6",
+      "etiquetas": [
+        "funcion-local"
+      ],
+      "apartado": "2.6",
+      "evidencia": "Provisión (art. 101): por concurso de méritos o libre designación, con convocatoria pública. Pueden participar funcionarios de otras Administraciones si la RPT lo permite."
+    },
+    {
+      "id": "t08-f52",
+      "anverso": "Habilitados nacionales: ¿cuántos concursos hay al año, y qué son en Zaragoza el Secretario general del Pleno y el interventor?",
+      "reverso": "**Dos concursos** al año, el **ordinario** y el **unitario**; excepcionalmente, **libre designación** en las grandes entidades.\nEn un municipio de gran población, el **Secretario general del Pleno** y el **interventor general** son **órganos directivos** (art. 130.1.B LBRL).",
+      "fuente": "LBRL, arts. 92 bis.6 y 130.1.B · apunte §3.1",
+      "etiquetas": [
+        "habilitados"
+      ],
+      "apartado": "3.1",
+      "evidencia": [
+        "Hay dos concursos al año, el ordinario y el unitario;",
+        "En un municipio de gran población como Zaragoza, el Secretario general del Pleno y el interventor general municipal son órganos directivos (art. 130.1.B LBRL)."
+      ]
+    },
+    {
+      "id": "t08-f53",
+      "anverso": "¿Qué forma la «normativa sobre prevención de riesgos laborales» (art. 1 LPRL)?",
+      "reverso": "La **Ley**, **sus disposiciones de desarrollo** y **cuantas otras normas, legales o convencionales**, contengan medidas preventivas en el ámbito laboral.",
+      "fuente": "LPRL, art. 1 · apunte §4",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "4",
+      "evidencia": "La Ley, sus disposiciones de desarrollo y cuantas otras normas, legales o convencionales, contengan medidas preventivas en el ámbito laboral"
+    },
+    {
+      "id": "t08-f54",
+      "anverso": "¿Qué derechos forman parte del derecho a la protección (art. 14.1) y qué garantiza el empresario (14.2)?",
+      "reverso": "**Información, consulta y participación**; **formación**; **paralización** ante riesgo grave e inminente; **vigilancia de la salud**.\nEl empresario **garantiza la seguridad y la salud en todos los aspectos relacionados con el trabajo**, **integrando** la prevención y con **seguimiento permanente**.",
+      "fuente": "LPRL, art. 14.1 y 14.2 · apunte §5.1",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "5.1",
+      "evidencia": [
+        "la paralización de la actividad en caso de riesgo grave e inminente;",
+        "el empresario garantiza la seguridad y la salud en todos los aspectos relacionados con el trabajo, integrando la actividad preventiva en la empresa, y lleva un seguimiento permanente."
+      ]
+    },
+    {
+      "id": "t08-f55",
+      "anverso": "¿Deben las medidas preventivas tener en cuenta los errores del trabajador (art. 15.4)?",
+      "reverso": "Sí: deben prever **las distracciones o imprudencias no temerarias** del trabajador.",
+      "fuente": "LPRL, art. 15.4 · apunte §5.2",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "5.2",
+      "evidencia": "Las medidas deben prever las distracciones o imprudencias no temerarias del trabajador (15.4)."
+    },
+    {
+      "id": "t08-f56",
+      "anverso": "Información (art. 18) y emergencias (art. 20): ¿qué debe hacer el empresario?",
+      "reverso": "**Informar** de los riesgos **de la empresa en su conjunto y de cada puesto o función**, de las medidas y de las emergencias; **consultar** y dejar participar.\n**Emergencias**: **primeros auxilios, lucha contra incendios y evacuación**, con personal designado y formado.",
+      "fuente": "LPRL, arts. 18 y 20 · apunte §5.3",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "Informar de los riesgos de la empresa en su conjunto y de cada puesto o función, de las medidas y de las emergencias.",
+        "Primeros auxilios, lucha contra incendios y evacuación, con personal designado y formado"
+      ]
+    },
+    {
+      "id": "t08-f57",
+      "anverso": "Documentación y protección especial (arts. 23 a 28 LPRL).",
+      "reverso": "**Documentación** (23): plan, evaluación, planificación, controles de salud y **accidentes con baja de más de un día**.\n**Protección especial** (25-27): trabajadores **especialmente sensibles**, **maternidad** y **menores de 18**.\n**Temporales y ETT** (28): **el mismo nivel de protección**.",
+      "fuente": "LPRL, arts. 23 a 28 · apunte §5.3",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "Plan, evaluación, planificación, controles de salud y accidentes con baja de más de un día, a disposición de la autoridad laboral",
+        "Trabajadores especialmente sensibles; maternidad, con adaptación del puesto, cambio de puesto o suspensión por riesgo durante el embarazo o la lactancia; y menores de 18 años"
+      ]
+    },
+    {
+      "id": "t08-f58",
+      "anverso": "¿Qué consecuencia tiene que un trabajador incumpla sus obligaciones preventivas (art. 29.3)?",
+      "reverso": "Es un **incumplimiento laboral**, o una **falta** en el caso de los **funcionarios**.",
+      "fuente": "LPRL, art. 29.3 · apunte §5.4",
+      "etiquetas": [
+        "prevencion"
+      ],
+      "apartado": "5.4",
+      "evidencia": "Incumplirlas es un incumplimiento laboral, o una falta en el caso de los funcionarios (29.3)."
+    },
+    {
+      "id": "t08-f59",
+      "anverso": "Servicios de prevención en las Administraciones públicas: organización y auditoría.",
+      "reverso": "Se organizan **según su estructura y sus ámbitos** (art. 31.1); **a falta de normativa específica, se aplica el Reglamento**. La **auditoría** del art. 30.6 **no se aplica a las Administraciones públicas**.",
+      "fuente": "LPRL, arts. 30.6 y 31.1; RSP, DA 4.ª · apunte §6.1",
+      "etiquetas": [
+        "servicios-prevencion"
+      ],
+      "apartado": "6.1",
+      "evidencia": [
+        "Auditoría (art. 30.6): la pasa quien no concierta con un servicio ajeno. No se aplica a las Administraciones públicas (disposición adicional 4.ª RSP).",
+        "A falta de normativa específica, se aplica el Reglamento (disposición adicional 4.ª RSP)."
+      ]
+    },
+    {
+      "id": "t08-f60",
+      "anverso": "Consulta y participación de los trabajadores (arts. 33 y 34 LPRL).",
+      "reverso": "**Consulta** (33): con antelación, en todo lo que afecte a la seguridad y la salud, **incluida la elección de la modalidad** preventiva.\n**Participación** (34): en empresas o centros **de 6 o más trabajadores**, a través de los **representantes**.",
+      "fuente": "LPRL, arts. 33 y 34 · apunte §6.2",
+      "etiquetas": [
+        "participacion"
+      ],
+      "apartado": "6.2",
+      "evidencia": [
+        "Consulta (art. 33): con la debida antelación, en todo lo que afecte a la seguridad y la salud, incluida la elección de la modalidad preventiva.",
+        "Participación (art. 34): en empresas o centros de 6 o más trabajadores, a través de los representantes."
+      ]
+    },
+    {
+      "id": "t08-f61",
+      "anverso": "Prevención en el Ayuntamiento de Zaragoza: modalidad, servicio y Comité.",
+      "reverso": "**Servicio de prevención propio**: el **Servicio de Prevención y Salud Laboral**, creado por **acuerdo plenario de 30 de julio de 1998**. **Comité de Seguridad y Salud** de **24 miembros** (**12 + 12**), **mensual**. El **Manual Básico** es de **2015**.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "etiquetas": [
+        "zaragoza"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1362",
+        "texto": "¿En qué año se aprobó el vigente Manual Básico de Prevención de Riesgos Laborales"
+      },
+      "apartado": "6.3",
+      "evidencia": [
+        "el Ayuntamiento tiene servicio de prevención propio (1694 #32): el Servicio de Prevención y Salud Laboral, creado por acuerdo plenario de 30 de julio de 1998",
+        "su Comité de Seguridad y Salud tiene 24 miembros, 12 de la corporación y 12 Delegados de Prevención, y se reúne cada mes;"
+      ]
     }
   ],
   "test": [
@@ -637,6 +837,596 @@
       "correcta": 1,
       "explicacion": "Art. 35.2 LPRL. De 31 a 49, uno elegido por y entre los Delegados de Personal; desde 50, según la escala.",
       "fuente": "LPRL, art. 35"
+    },
+    {
+      "id": "t08-q34",
+      "pregunta": "El Reglamento de los Servicios de Prevención se aprobó por:",
+      "opciones": [
+        "La Ley 31/1995, de 8 de noviembre",
+        "El Real Decreto 39/1997, de 17 de enero",
+        "El Real Decreto 896/1991, de 7 de junio"
+      ],
+      "correcta": 1,
+      "explicacion": "RD 39/1997. La Ley 31/1995 es la LPRL, y el RD 896/1991, el de selección de los funcionarios locales.",
+      "fuente": "Ley 31/1995 y RD 39/1997 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Ley 31/1995, capítulos I, III y IV; RD 39/1997, Reglamento de los Servicios de Prevención (RSP)"
+    },
+    {
+      "id": "t08-q35",
+      "pregunta": "Según el art. 3.1 del TREBEP, los funcionarios de las entidades locales se rigen:",
+      "opciones": [
+        "Solo por la legislación autonómica",
+        "Solo por los reglamentos orgánicos municipales",
+        "Por la legislación estatal y la autonómica, con respeto a la autonomía local"
+      ],
+      "correcta": 2,
+      "explicacion": "Legislación estatal (incluido el Estatuto) y autonómica, con respeto a la autonomía local.",
+      "fuente": "TREBEP, art. 3.1 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "TREBEP, art. 3.1: los funcionarios locales se rigen por la legislación estatal (de la que forma parte el Estatuto) y por la autonómica, con respeto a la autonomía local."
+    },
+    {
+      "id": "t08-q36",
+      "pregunta": "Según el art. 89 LBRL, el personal al servicio de las entidades locales está integrado por:",
+      "opciones": [
+        "Funcionarios de carrera, contratados en régimen de derecho laboral y personal eventual",
+        "Funcionarios de carrera e interinos",
+        "Funcionarios de carrera, personal directivo y personal eventual"
+      ],
+      "correcta": 0,
+      "explicacion": "Tres clases: funcionarios de carrera, laborales y eventuales de confianza o asesoramiento especial.",
+      "fuente": "LBRL, art. 89 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Tres clases (art. 89 LBRL): funcionarios de carrera, contratados en régimen de derecho laboral y personal eventual que desempeña puestos de confianza o asesoramiento especial."
+    },
+    {
+      "id": "t08-q37",
+      "pregunta": "La plantilla de una entidad local la aprueba:",
+      "opciones": [
+        "El Alcalde, por decreto, cada cuatro años",
+        "Cada año la Corporación, a través del Presupuesto",
+        "La comunidad autónoma, a propuesta del Pleno"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada año, con el Presupuesto; se remite al Estado y a la comunidad autónoma en 30 días.",
+      "fuente": "LBRL, art. 90.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La aprueba cada año la Corporación, a través del Presupuesto."
+    },
+    {
+      "id": "t08-q38",
+      "pregunta": "La oferta de empleo de una entidad local se aprueba y publica:",
+      "opciones": [
+        "Antes del 31 de diciembre de cada año",
+        "Cada cuatro años, al comienzo del mandato",
+        "Dentro del mes siguiente a la aprobación del Presupuesto"
+      ],
+      "correcta": 2,
+      "explicacion": "En el mes siguiente a la aprobación del Presupuesto.",
+      "fuente": "LBRL, art. 91.1; TRRL, art. 128 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "se aprueba y publica dentro del mes siguiente a la aprobación del Presupuesto."
+    },
+    {
+      "id": "t08-q39",
+      "pregunta": "Según el art. 100 LBRL, la selección de los funcionarios locales corresponde:",
+      "opciones": [
+        "A cada corporación, salvo la de los funcionarios con habilitación de carácter nacional",
+        "Siempre al Estado",
+        "A la comunidad autónoma"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada corporación, salvo los habilitados nacionales, que selecciona el Estado. Al Estado le toca fijar las reglas básicas y programas mínimos.",
+      "fuente": "LBRL, art. 100 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Competencia (art. 100): cada corporación selecciona a sus funcionarios, salvo los de habilitación nacional."
+    },
+    {
+      "id": "t08-q40",
+      "pregunta": "El anuncio de las convocatorias de pruebas de acceso a la función pública local se publica:",
+      "opciones": [
+        "Solo en el Boletín Oficial de la Provincia",
+        "En el Boletín Oficial del Estado",
+        "Solo en el tablón de anuncios de la corporación"
+      ],
+      "correcta": 1,
+      "explicacion": "Las bases, en el BOP y en el de la comunidad autónoma; el anuncio, en el BOE.",
+      "fuente": "RD 896/1991, art. 6, y LBRL, art. 97 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "las bases se publican en el BOP y en el de la comunidad autónoma, y el anuncio, en el BOE (art. 6; igual en el art. 97 LBRL);"
+    },
+    {
+      "id": "t08-q41",
+      "pregunta": "Según el art. 8 del RD 896/1991, los programas de las pruebas de acceso a la función pública local incluirán materias comunes en una proporción de, al menos:",
+      "opciones": [
+        "La mitad",
+        "Un tercio",
+        "Una quinta parte"
+      ],
+      "correcta": 2,
+      "explicacion": "Al menos una quinta parte de materias comunes; en Administración Especial, cuatro quintas partes de materias específicas.",
+      "fuente": "RD 896/1991, art. 8 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "programas (art. 8): al menos una quinta parte de materias comunes"
+    },
+    {
+      "id": "t08-q42",
+      "pregunta": "El complemento específico de los funcionarios locales retribuye:",
+      "opciones": [
+        "Las condiciones particulares del puesto, y solo puede haber uno por puesto",
+        "El especial rendimiento y el interés e iniciativa",
+        "Los servicios extraordinarios fuera de la jornada"
+      ],
+      "correcta": 0,
+      "explicacion": "Dificultad técnica, dedicación, incompatibilidad, responsabilidad, peligrosidad o penosidad; uno solo por puesto, previa valoración.",
+      "fuente": "RD 861/1986, art. 4 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Las condiciones particulares del puesto: especial dificultad técnica, dedicación, incompatibilidad, responsabilidad, peligrosidad o penosidad. Uno solo por puesto, previa valoración"
+    },
+    {
+      "id": "t08-q43",
+      "pregunta": "Las gratificaciones por servicios extraordinarios de los funcionarios locales:",
+      "opciones": [
+        "Se perciben mensualmente en cuantía fija",
+        "Nunca pueden ser fijas en su cuantía ni periódicas en su devengo",
+        "Las asigna individualmente el Pleno"
+      ],
+      "correcta": 1,
+      "explicacion": "Nunca fijas ni periódicas. El Pleno fija la cantidad global y el Alcalde la individual.",
+      "fuente": "RD 861/1986, art. 6 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Servicios extraordinarios fuera de la jornada normal. Nunca fijas ni periódicas"
+    },
+    {
+      "id": "t08-q44",
+      "pregunta": "Del fondo que queda tras las retribuciones básicas y el complemento de destino, al complemento de productividad puede destinarse hasta:",
+      "opciones": [
+        "El 75 %",
+        "El 10 %",
+        "El 30 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Específico hasta el 75 %, productividad hasta el 30 % y gratificaciones hasta el 10 %.",
+      "fuente": "RD 861/1986, art. 7.2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Límites (art. 7.2): de lo que queda tras las básicas y el de destino, hasta el 75 % para el específico, hasta el 30 % para la productividad y hasta el 10 % para las gratificaciones."
+    },
+    {
+      "id": "t08-q45",
+      "pregunta": "En los municipios de más de 500.000 habitantes, como Zaragoza, el número de puestos de personal eventual no puede exceder:",
+      "opciones": [
+        "Del 0,7 % de los puestos de trabajo de la plantilla",
+        "Del 1 % de los puestos de la plantilla",
+        "De veinte puestos"
+      ],
+      "correcta": 0,
+      "explicacion": "No más del 0,7 % de la plantilla (art. 104 bis LBRL).",
+      "fuente": "LBRL, art. 104 bis.1.g · apunte §2.6",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1681",
+        "texto": "De acuerdo con el artículo 104 bis.1 g), párrafo primero"
+      },
+      "apartado": "2.6",
+      "evidencia": "En los municipios de más de 500.000 habitantes, como Zaragoza, no más del 0,7 % de los puestos de la plantilla;"
+    },
+    {
+      "id": "t08-q46",
+      "pregunta": "El TRRL fija en 18 años la edad mínima para acceder a la función pública local. ¿Qué edad se aplica hoy?",
+      "opciones": [
+        "18 años, porque el TRRL es la norma local específica",
+        "16 años, porque el TREBEP es ley básica posterior",
+        "21 años"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica el TREBEP (16 años), ley básica posterior. Ante una pregunta que cite literalmente el TRRL, su respuesta sería la del TRRL.",
+      "fuente": "TREBEP, art. 56.1.c, y TRRL, art. 135 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Edad mínima de acceso | 18 años (art. 135) | 16 años (art. 56.1.c)"
+    },
+    {
+      "id": "t08-q47",
+      "pregunta": "Según el art. 134.1 del TRRL, que sigue vigente, puede reservarse a promoción interna hasta:",
+      "opciones": [
+        "El 25 % de las plazas convocadas",
+        "El 10 % de las plazas convocadas",
+        "El 50 % de las plazas convocadas"
+      ],
+      "correcta": 2,
+      "explicacion": "Hasta el 50 %.",
+      "fuente": "TRRL, art. 134.1 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Del TRRL sí sigue vivo, y se pregunta, el art. 134.1: se puede reservar a promoción interna hasta el 50 % de las plazas convocadas."
+    },
+    {
+      "id": "t08-q48",
+      "pregunta": "Los funcionarios de administración local con habilitación de carácter nacional los selecciona y habilita:",
+      "opciones": [
+        "El Estado",
+        "Cada corporación",
+        "La comunidad autónoma, en todo caso"
+      ],
+      "correcta": 0,
+      "explicacion": "El Estado (art. 92 bis.5).",
+      "fuente": "LBRL, art. 92 bis.5 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Selección y habilitación (92 bis.5): las hace el Estado (Ministerio de Hacienda y Administraciones Públicas)."
+    },
+    {
+      "id": "t08-q49",
+      "pregunta": "La subescala de Administración General que realiza tareas de gestión, estudio y propuesta de carácter administrativo de nivel superior es la:",
+      "opciones": [
+        "Subescala de Gestión",
+        "Subescala Técnica",
+        "Subescala Administrativa"
+      ],
+      "correcta": 1,
+      "explicacion": "Técnica. La de Gestión apoya esas funciones, y la Administrativa hace tareas de trámite y colaboración.",
+      "fuente": "TRRL, art. 169.1 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Técnica | Gestión, estudio y propuesta de carácter administrativo de nivel superior"
+    },
+    {
+      "id": "t08-q50",
+      "pregunta": "Según el art. 175 del TRRL, el Personal de Oficios comprende las categorías de:",
+      "opciones": [
+        "Técnico, Administrativo y Auxiliar",
+        "Superior, Medio y Auxiliar",
+        "Encargado, Maestro, Oficial, Ayudante y Operario"
+      ],
+      "correcta": 2,
+      "explicacion": "Cinco categorías: Encargado, Maestro, Oficial, Ayudante y Operario.",
+      "fuente": "TRRL, art. 175 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "d) Personal de Oficios, en las categorías Encargado, Maestro, Oficial, Ayudante y Operario (art. 175);"
+    },
+    {
+      "id": "t08-q51",
+      "pregunta": "La Policía Local y sus auxiliares pertenecen, según el TRRL, a la:",
+      "opciones": [
+        "Escala de Administración Especial, Subescala de Servicios Especiales",
+        "Escala de Administración Especial, Subescala Técnica",
+        "Escala de Administración General, Subescala Subalterna"
+      ],
+      "correcta": 0,
+      "explicacion": "Servicios Especiales, clase a), como Extinción de Incendios, Cometidos Especiales, Oficios y agentes forestales.",
+      "fuente": "TRRL, art. 172 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "a) Policía Local y sus auxiliares;"
+    },
+    {
+      "id": "t08-q52",
+      "pregunta": "La Ley de Prevención de Riesgos Laborales se aplica:",
+      "opciones": [
+        "Solo a las relaciones laborales del sector privado",
+        "A las relaciones laborales y también a las administrativas o estatutarias del personal de las Administraciones públicas",
+        "Solo al personal laboral de las Administraciones"
+      ],
+      "correcta": 1,
+      "explicacion": "También a los funcionarios: «empresario» incluye a la Administración.",
+      "fuente": "LPRL, art. 3 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Las relaciones laborales y también las administrativas o estatutarias del personal de las Administraciones públicas."
+    },
+    {
+      "id": "t08-q53",
+      "pregunta": "Según el art. 4 de la LPRL, se entiende por «condición de trabajo»:",
+      "opciones": [
+        "El contrato y el convenio colectivo aplicables",
+        "Solo los agentes químicos y biológicos presentes",
+        "Cualquier característica del trabajo que pueda tener una influencia significativa en la generación de riesgos"
+      ],
+      "correcta": 2,
+      "explicacion": "Cualquier característica del trabajo que influya significativamente en los riesgos: locales, equipos, agentes, procedimientos y organización.",
+      "fuente": "LPRL, art. 4.7.º · apunte §4",
+      "apartado": "4",
+      "evidencia": "Condición de trabajo: cualquier característica del trabajo que pueda influir significativamente en la generación de riesgos."
+    },
+    {
+      "id": "t08-q54",
+      "pregunta": "Según el art. 4 de la LPRL, es riesgo laboral grave e inminente aquel que:",
+      "opciones": [
+        "Resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave",
+        "Ya ha causado un accidente con baja",
+        "Afecta a más de diez trabajadores a la vez"
+      ],
+      "correcta": 0,
+      "explicacion": "Probable en un futuro inmediato y con daño grave; con agentes peligrosos, aunque el daño no se manifieste de inmediato.",
+      "fuente": "LPRL, art. 4.4.º · apunte §4",
+      "apartado": "4",
+      "evidencia": "Riesgo grave e inminente: el que resulte probable racionalmente que se materialice en un futuro inmediato y pueda suponer un daño grave."
+    },
+    {
+      "id": "t08-q55",
+      "pregunta": "El coste de las medidas relativas a la seguridad y la salud en el trabajo:",
+      "opciones": [
+        "Se reparte entre el empresario y los trabajadores",
+        "No deberá recaer en modo alguno sobre los trabajadores",
+        "Lo asume la mutua de accidentes"
+      ],
+      "correcta": 1,
+      "explicacion": "Art. 14.5: nunca recae sobre los trabajadores.",
+      "fuente": "LPRL, art. 14.5 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "14.5: el coste de las medidas de seguridad y salud no recae en ningún caso sobre los trabajadores."
+    },
+    {
+      "id": "t08-q56",
+      "pregunta": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, el derecho a una protección eficaz en materia de seguridad y salud es:",
+      "opciones": [
+        "Del empresario",
+        "De los Delegados de Prevención",
+        "De los trabajadores"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un derecho de los trabajadores, con el deber correlativo del empresario (art. 14.1 LPRL).",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1553",
+        "texto": "Según el Manuat Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza el derecho a una una"
+      },
+      "apartado": "6.3",
+      "evidencia": "derechos de los trabajadores municipales, casi literales de la ley: - una protección eficaz;"
+    },
+    {
+      "id": "t08-q57",
+      "pregunta": "Entre los principios de la acción preventiva del art. 15 LPRL figura:",
+      "opciones": [
+        "Anteponer la protección colectiva a la individual",
+        "Anteponer la protección individual a la colectiva",
+        "Sustituir lo peligroso solo si no supone coste"
+      ],
+      "correcta": 0,
+      "explicacion": "Protección colectiva antes que la individual.",
+      "fuente": "LPRL, art. 15 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Anteponer la protección colectiva a la individual."
+    },
+    {
+      "id": "t08-q58",
+      "pregunta": "La formación en materia preventiva que debe dar el empresario se impartirá:",
+      "opciones": [
+        "Siempre fuera de la jornada y a cargo del trabajador",
+        "Dentro de la jornada si es posible, o descontando el tiempo, y nunca a costa del trabajador",
+        "Solo al contratar"
+      ],
+      "correcta": 1,
+      "explicacion": "Teórica y práctica, en jornada o descontándola, y gratuita; al contratar, al cambiar de funciones o con nuevas tecnologías.",
+      "fuente": "LPRL, art. 19 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Dentro de la jornada si es posible, o descontándola. Nunca a costa del trabajador"
+    },
+    {
+      "id": "t08-q59",
+      "pregunta": "Si los representantes de los trabajadores acuerdan la paralización de la actividad por riesgo grave e inminente, la autoridad laboral la anula o ratifica en:",
+      "opciones": [
+        "48 horas",
+        "5 días hábiles",
+        "24 horas"
+      ],
+      "correcta": 2,
+      "explicacion": "En 24 horas.",
+      "fuente": "LPRL, art. 21.3 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Los representantes pueden acordar la paralización, y la autoridad laboral la anula o ratifica en 24 horas."
+    },
+    {
+      "id": "t08-q60",
+      "pregunta": "De los reconocimientos de vigilancia de la salud, el empresario recibe:",
+      "opciones": [
+        "Solo las conclusiones sobre la aptitud del trabajador para el puesto",
+        "El historial clínico completo",
+        "Los resultados analíticos de cada prueba"
+      ],
+      "correcta": 0,
+      "explicacion": "Solo las conclusiones sobre la aptitud, por respeto a la intimidad y la confidencialidad.",
+      "fuente": "LPRL, art. 22 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Al empresario solo le llegan las conclusiones sobre la aptitud."
+    },
+    {
+      "id": "t08-q61",
+      "pregunta": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, los trabajadores deben:",
+      "opciones": [
+        "Desactivar los dispositivos de seguridad cuando dificulten el trabajo",
+        "Utilizar correctamente los dispositivos de seguridad existentes",
+        "Revisar los dispositivos de seguridad solo una vez al año"
+      ],
+      "correcta": 1,
+      "explicacion": "Utilizar correctamente los EPI y los dispositivos de seguridad, sin ponerlos fuera de funcionamiento.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1357",
+        "texto": "Ef Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza dice que los trabajadores deben:"
+      },
+      "apartado": "6.3",
+      "evidencia": "utilizar correctamente los EPI y los dispositivos de seguridad;"
+    },
+    {
+      "id": "t08-q62",
+      "pregunta": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, en relación con los equipos de protección individual:",
+      "opciones": [
+        "Los trabajadores pueden decidir si los usan",
+        "Los paga el trabajador si los pierde",
+        "Los trabajadores deben utilizarlos correctamente"
+      ],
+      "correcta": 2,
+      "explicacion": "Deber del trabajador: utilizarlos correctamente; derecho: recibirlos gratuitamente.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1553",
+        "texto": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, en relación a los"
+      },
+      "apartado": "6.3",
+      "evidencia": "utilizar correctamente los EPI y los dispositivos de seguridad;"
+    },
+    {
+      "id": "t08-q63",
+      "pregunta": "Si un funcionario incumple sus obligaciones en materia de prevención de riesgos, según el art. 29.3 LPRL:",
+      "opciones": [
+        "Comete una falta",
+        "No tiene consecuencia, porque la LPRL solo obliga al empresario",
+        "Responde siempre penalmente"
+      ],
+      "correcta": 0,
+      "explicacion": "En los funcionarios es falta; en los trabajadores, incumplimiento laboral.",
+      "fuente": "LPRL, art. 29.3 · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Incumplirlas es un incumplimiento laboral, o una falta en el caso de los funcionarios (29.3)."
+    },
+    {
+      "id": "t08-q64",
+      "pregunta": "Un servicio de prevención ajeno es una entidad especializada que actúa:",
+      "opciones": [
+        "Sin necesidad de acreditación, por acuerdo verbal",
+        "Acreditada por la autoridad laboral, mediante un concierto por escrito",
+        "Como unidad interna de la empresa"
+      ],
+      "correcta": 1,
+      "explicacion": "Acreditada por la autoridad laboral y con concierto escrito.",
+      "fuente": "RSP, arts. 17 y 20 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Una entidad acreditada por la autoridad laboral, que actúa mediante un concierto por escrito (arts. 16, 17 y 20 RSP)"
+    },
+    {
+      "id": "t08-q65",
+      "pregunta": "¿Cuál de estas NO es una de las cuatro especialidades preventivas del art. 34 del Reglamento de los Servicios de Prevención?",
+      "opciones": [
+        "Medicina del trabajo",
+        "Higiene industrial",
+        "Psicología clínica"
+      ],
+      "correcta": 2,
+      "explicacion": "Medicina del trabajo, seguridad en el trabajo, higiene industrial y ergonomía y psicosociología aplicada.",
+      "fuente": "RSP, art. 34 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Las cuatro especialidades (art. 34 RSP): medicina del trabajo, seguridad en el trabajo, higiene industrial y ergonomía y psicosociología aplicada."
+    },
+    {
+      "id": "t08-q66",
+      "pregunta": "La auditoría del sistema de prevención (art. 30.6 LPRL):",
+      "opciones": [
+        "No se aplica a las Administraciones públicas",
+        "Es obligatoria cada año para los ayuntamientos",
+        "La pasa solo quien concierta con un servicio ajeno"
+      ],
+      "correcta": 0,
+      "explicacion": "La pasa quien no concierta con un servicio ajeno, y no se aplica a las Administraciones públicas.",
+      "fuente": "RSP, DA 4.ª · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "No se aplica a las Administraciones públicas (disposición adicional 4.ª RSP)."
+    },
+    {
+      "id": "t08-q67",
+      "pregunta": "Según el art. 34 LPRL, los trabajadores participan en la prevención a través de sus representantes en las empresas o centros de trabajo que cuenten con:",
+      "opciones": [
+        "50 o más trabajadores",
+        "6 o más trabajadores",
+        "11 o más trabajadores"
+      ],
+      "correcta": 1,
+      "explicacion": "Desde 6 trabajadores. El Comité de Seguridad y Salud, desde 50.",
+      "fuente": "LPRL, art. 34 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Participación (art. 34): en empresas o centros de 6 o más trabajadores, a través de los representantes."
+    },
+    {
+      "id": "t08-q68",
+      "pregunta": "En una empresa de entre 50 y 100 trabajadores, el número de Delegados de Prevención es:",
+      "opciones": [
+        "Uno",
+        "Tres",
+        "Dos"
+      ],
+      "correcta": 2,
+      "explicacion": "2 de 50 a 100; 3 de 101 a 500; hasta 8 desde 4.001.",
+      "fuente": "LPRL, art. 35 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "2 de 50 a 100 trabajadores; 3 de 101 a 500;"
+    },
+    {
+      "id": "t08-q69",
+      "pregunta": "El Comité de Seguridad y Salud se reúne:",
+      "opciones": [
+        "Trimestralmente y siempre que lo pida alguna de las representaciones",
+        "Una vez al año",
+        "Solo cuando hay un accidente"
+      ],
+      "correcta": 0,
+      "explicacion": "Trimestral, por la ley. El del Ayuntamiento de Zaragoza, según su Manual, cada mes.",
+      "fuente": "LPRL, art. 38 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "se reúne trimestralmente y siempre que lo pida una de las partes."
+    },
+    {
+      "id": "t08-q70",
+      "pregunta": "El vigente Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza es de:",
+      "opciones": [
+        "1998",
+        "2015",
+        "2023"
+      ],
+      "correcta": 1,
+      "explicacion": "De junio de 2015. 1998 es el año del acuerdo plenario que creó el Servicio de Prevención y Salud Laboral.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1362",
+        "texto": "¿En qué año se aprobó el vigente Manual Básico de Prevención de Riesgos Laborales"
+      },
+      "apartado": "6.3",
+      "evidencia": "Según el Manual Básico de Prevención de Riesgos Laborales municipal (junio de 2015):"
+    },
+    {
+      "id": "t08-q71",
+      "pregunta": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, disponer de equipos de trabajo adecuados:",
+      "opciones": [
+        "Es un deber de los trabajadores",
+        "Es una facultad del empresario",
+        "Es un derecho de los trabajadores"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un derecho; el deber del trabajador es usarlos adecuadamente.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1362",
+        "texto": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza, disponer de equipos de"
+      },
+      "apartado": "6.3",
+      "evidencia": "equipos de trabajo adecuados; - recibir gratuitamente los EPI;"
+    },
+    {
+      "id": "t08-q72",
+      "pregunta": "Según su Manual Básico, el Ayuntamiento de Zaragoza organiza la prevención mediante:",
+      "opciones": [
+        "Un servicio de prevención propio, el Servicio de Prevención y Salud Laboral",
+        "Un servicio de prevención ajeno concertado",
+        "La asunción personal por el Alcalde"
+      ],
+      "correcta": 0,
+      "explicacion": "Servicio propio, creado por acuerdo plenario de 30/07/1998. Con más de 500 trabajadores es obligatorio.",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "el Ayuntamiento tiene servicio de prevención propio (1694 #32): el Servicio de Prevención y Salud Laboral, creado por acuerdo plenario de 30 de julio de 1998"
+    },
+    {
+      "id": "t08-q73",
+      "pregunta": "Según el Manual Básico municipal, el Comité de Seguridad y Salud del Ayuntamiento de Zaragoza:",
+      "opciones": [
+        "Tiene 10 miembros y se reúne cada trimestre",
+        "Tiene 24 miembros (12 de la corporación y 12 Delegados de Prevención) y se reúne cada mes",
+        "Lo forman solo Delegados de Prevención"
+      ],
+      "correcta": 1,
+      "explicacion": "24 miembros paritarios, con reunión mensual (datos de 2015).",
+      "fuente": "Manual Básico de PRL del Ayuntamiento de Zaragoza (2015) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "su Comité de Seguridad y Salud tiene 24 miembros, 12 de la corporación y 12 Delegados de Prevención, y se reúne cada mes;"
     }
   ],
   "formatoTest": {
