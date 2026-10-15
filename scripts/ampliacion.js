@@ -233,13 +233,17 @@ export function cita(d, base, md, plantillas) {
     }
     if (x.nucleo) {
       const p = x.precedente
-      const i = p?.texto ? lineas.findIndex((l) => l.includes(p.texto)) : -1
-      if (i < 0) {
+      const filas = p?.texto ? lineas.map((l, i) => (l.includes(p.texto) ? i : -1)).filter((i) => i >= 0) : []
+      if (!filas.length) {
         malos.push(`${x.id}: es núcleo y su precedente no está en PLANTILLAS.md`)
         continue
       }
-      const cabecera = lineas.slice(0, i).reverse().find((l) => l.startsWith('#')) ?? ''
-      if (!p.plantilla || !(cabecera.includes(p.plantilla) || lineas[i].includes(`| ${p.plantilla} |`))) {
+      // el mismo enunciado puede estar en varias plantillas: vale la fila que sea de la citada
+      const deLaPlantilla = (i) => {
+        const cabecera = lineas.slice(0, i).reverse().find((l) => l.startsWith('#')) ?? ''
+        return cabecera.includes(p.plantilla) || lineas[i].includes(`| ${p.plantilla} |`)
+      }
+      if (!p.plantilla || !filas.some(deLaPlantilla)) {
         malos.push(`${x.id}: el precedente no es de la plantilla «${p.plantilla}»`)
       }
     } else if (x.precedente) {
