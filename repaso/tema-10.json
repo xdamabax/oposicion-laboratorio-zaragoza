@@ -411,6 +411,245 @@
         "tipo": "esquema",
         "valor": "microscopio-optico"
       }
+    },
+    {
+      "id": "t10-f53",
+      "anverso": "¿Qué apertura numérica debe tener el condensador respecto de la del objetivo?",
+      "reverso": "Debe **igualarla, sin superarla**: la AN del sistema depende también del condensador.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.3",
+      "etiquetas": [
+        "microscopio"
+      ],
+      "apartado": "2.3",
+      "evidencia": "La AN del sistema depende también del condensador: su AN debe igualar, sin superar, la del objetivo."
+    },
+    {
+      "id": "t10-f54",
+      "anverso": "Una vez ajustada la iluminación de Köhler, ¿cómo se regulan el contraste y la intensidad?",
+      "reverso": "El **contraste**, con el **diafragma de apertura**; la **intensidad**, con el **reóstato**. **No** subiendo o bajando el condensador.",
+      "fuente": "SCA (2017) · apunte §2.4",
+      "etiquetas": [
+        "microscopio"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Una vez ajustado, el contraste se regula con el diafragma de apertura y la intensidad con el reóstato, no subiendo o bajando el condensador."
+    },
+    {
+      "id": "t10-f55",
+      "anverso": "Microscopio confocal y estereoscópico (lupa): cómo funcionan y para qué sirven.",
+      "reverso": "**Confocal**: un **láser** barre planos a distintas profundidades y el ordenador reconstruye la imagen en **3D**; sirve para muestras gruesas como las **biopelículas**.\n**Estereoscópico**: poco aumento y visión en relieve; para examinar **colonias** en placa.",
+      "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+      "etiquetas": [
+        "microscopio"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "Un láser barre planos a distintas profundidades y el ordenador reconstruye la imagen en 3D | Muestras gruesas, como las biopelículas",
+        "Poco aumento y visión en relieve | Examinar colonias en placa"
+      ]
+    },
+    {
+      "id": "t10-f56",
+      "anverso": "¿Hasta cuántos aumentos llega el microscopio electrónico, y por qué no sirve para material vivo?",
+      "reverso": "Imágenes nítidas de hasta **100 000×**, y algunos llegan a **2 000 000×**. **No sirve para material vivo** por la preparación que exige: **vacío y deshidratación**.",
+      "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+      "etiquetas": [
+        "microscopio",
+        "trampa"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "El microscopio electrónico da imágenes nítidas de hasta 100 000×, y algunos llegan a 2 000 000×.",
+        "No sirve para material vivo, por la preparación que exige: vacío y deshidratación."
+      ]
+    },
+    {
+      "id": "t10-f57",
+      "anverso": "Microscopio de fluorescencia: ¿qué precauciones tienen sus lámparas UV?",
+      "reverso": "Se **registran sus horas de uso**, y al cambiarlas se usan **guantes y gafas**, porque pueden **estallar**.",
+      "fuente": "Eurachem (2023) · apunte §2.6",
+      "etiquetas": [
+        "microscopio",
+        "mantenimiento"
+      ],
+      "apartado": "2.6",
+      "evidencia": "Lámparas de UV del microscopio de fluorescencia: se registran sus horas de uso, y al cambiarlas se usan guantes y gafas, porque pueden estallar."
+    },
+    {
+      "id": "t10-f58",
+      "anverso": "Construcción de la estufa: ventilador, interior, puerta y emplazamiento.",
+      "reverso": "**Con ventilador** reparte la temperatura de forma **más uniforme** que por convección natural. Interior de **acero inoxidable**; **puerta interior de vidrio** o metacrilato para ver sin perder calor. **No** en corrientes de aire, **al sol** ni donde fluctúe la temperatura.",
+      "fuente": "SCA (2017) · apunte §3.2",
+      "etiquetas": [
+        "estufa"
+      ],
+      "apartado": "3.2",
+      "evidencia": [
+        "Puede calentar sin ventilador, por convección natural, o con ventilador, que reparte la temperatura de forma más uniforme.",
+        "No debe colocarse en corrientes de aire, al sol ni donde la temperatura ambiente fluctúe."
+      ]
+    },
+    {
+      "id": "t10-f59",
+      "anverso": "¿Cómo y cada cuánto se limpia una estufa de incubación?",
+      "reverso": "Con agua templada y **desinfectante**, por ejemplo **hipoclorito diluido**, que **no deje residuo**; conviene **alternar dos desinfectantes**. Eurachem sugiere **una vez al mes**, y siempre **tras un derrame**.",
+      "fuente": "SCA (2017) y Eurachem (2023) · apunte §3.2",
+      "etiquetas": [
+        "estufa",
+        "mantenimiento"
+      ],
+      "apartado": "3.2",
+      "evidencia": "Limpieza: agua templada y desinfectante, por ejemplo hipoclorito diluido, que no debe dejar residuo. Conviene alternar dos desinfectantes."
+    },
+    {
+      "id": "t10-f60",
+      "anverso": "¿Cómo se comprueba que la atmósfera de una jarra o estufa de anaerobiosis o microaerofilia es la correcta?",
+      "reverso": "Con el **indicador**, **en cada uso**. También con dos **cultivos control**: uno **aerobio** y otro **anaerobio o microaerófilo**.",
+      "fuente": "SCA (2017) · apunte §3.3",
+      "etiquetas": [
+        "incubacion"
+      ],
+      "apartado": "3.3",
+      "evidencia": "La atmósfera se comprueba con el indicador, en cada uso. También puede comprobarse con dos cultivos control: uno aerobio y otro anaerobio o microaerófilo."
+    },
+    {
+      "id": "t10-f61",
+      "anverso": "Baño termostático: ¿cómo está hecho y para qué se usa?",
+      "reverso": "Una cubeta de agua con **resistencia, termostato** y **agitador o bomba de circulación**, con **tapa inclinada** para reducir la evaporación. Sirve para **incubar ciertos cultivos** y para **mantener fundido el agar** hasta verterlo.",
+      "fuente": "SCA (2017) · apunte §3.4",
+      "etiquetas": [
+        "bano"
+      ],
+      "apartado": "3.4",
+      "evidencia": [
+        "Una cubeta de agua con resistencia, termostato y un agitador o bomba de circulación.",
+        "Para qué se usan: para incubar ciertos cultivos y para mantener fundido el agar hasta verterlo."
+      ]
+    },
+    {
+      "id": "t10-f62",
+      "anverso": "Temperaturas de control del frigorífico, el congelador y el ultracongelador.",
+      "reverso": "**Frigorífico**: **5 ± 3 °C**. **Congelador**: **−20 ± 5 °C**. **Ultracongelador**: **−70 ± 10 °C** o menos.",
+      "fuente": "Eurachem (2023) · apunte §3.5",
+      "etiquetas": [
+        "frio"
+      ],
+      "apartado": "3.5",
+      "evidencia": "frigorífico: 5 ± 3 °C; - congelador: −20 ± 5 °C; - ultracongelador: −70 ± 10 °C o menos."
+    },
+    {
+      "id": "t10-f63",
+      "anverso": "Tipos de centrífuga y de rotor.",
+      "reverso": "**Microcentrífuga**: tubos **Eppendorf** (análisis de *Cryptosporidium* y *Giardia*). **Ultracentrífuga**: muy alta velocidad, con **vacío** y un **HEPA entre la centrífuga y la bomba de vacío**.\nRotores **basculantes** (las cubetas se inclinan al girar) y **de ángulo fijo** (no llenar de más: **gotean**).",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.1",
+      "etiquetas": [
+        "centrifuga"
+      ],
+      "apartado": "4.1",
+      "evidencia": [
+        "Velocidades muy altas, con vacío en la cámara. Lleva un filtro HEPA entre la centrífuga y la bomba de vacío",
+        "De ángulo fijo: los tubos van inclinados en el propio rotor. Con ellos hay que no llenar de más los tubos, porque pueden gotear."
+      ]
+    },
+    {
+      "id": "t10-f64",
+      "anverso": "¿Cómo deben ser los tubos que se centrifugan?",
+      "reverso": "**De plástico** o de vidrio **de pared gruesa**, revisados antes; **siempre tapados**, a ser posible **con rosca**; **llenos al mismo nivel** y sin pasar del que indique el fabricante.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
+      "etiquetas": [
+        "centrifuga",
+        "seguridad"
+      ],
+      "apartado": "4.3",
+      "evidencia": [
+        "De plástico o de vidrio de pared gruesa, revisados antes de usarlos.",
+        "Siempre tapados, a ser posible con rosca."
+      ]
+    },
+    {
+      "id": "t10-f65",
+      "anverso": "Centrífuga: ¿qué se revisa a diario y qué se hace tras cada uso?",
+      "reverso": "**A diario**: el interior de la cámara (manchas a la altura del rotor), y rotores y cubetas (**corrosión y grietas finas**).\n**Tras cada uso**: **descontaminar** cubetas, rotor y cámara; las cubetas se guardan **boca abajo**.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
+      "etiquetas": [
+        "centrifuga",
+        "mantenimiento"
+      ],
+      "apartado": "4.3",
+      "evidencia": [
+        "A diario: el interior de la cámara (manchas a la altura del rotor), y rotores y cubetas (corrosión y grietas finas).",
+        "Tras cada uso: descontaminar cubetas, rotor y cámara. Las cubetas se guardan boca abajo para que escurran."
+      ]
+    },
+    {
+      "id": "t10-f66",
+      "anverso": "¿Por qué deben tener las cabinas de seguridad biológica indicadores de flujo y alarmas?",
+      "reverso": "Porque si **falla la corriente o el ventilador**, las **diferencias de presión** que dirigen el aire **se pierden enseguida**.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.1",
+      "etiquetas": [
+        "cabina"
+      ],
+      "apartado": "5.1",
+      "evidencia": "Deben tener indicadores del flujo de aire y alarmas: si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida."
+    },
+    {
+      "id": "t10-f67",
+      "anverso": "¿Qué son los aisladores?",
+      "reverso": "Recintos cerrados con una contención **parecida a la de la clase III**, diseñados **a medida** para tareas concretas; **no se ajustan a ninguna norma internacional** de ensayo.",
+      "fuente": "NTP 1203 · apunte §5.2",
+      "etiquetas": [
+        "cabina"
+      ],
+      "apartado": "5.2",
+      "evidencia": "Aisladores (NTP 1203): recintos cerrados con una contención parecida a la de la clase III. Se diseñan a medida para tareas concretas y no se ajustan a ninguna norma internacional de ensayo."
+    },
+    {
+      "id": "t10-f68",
+      "anverso": "Con cabina, ¿hacen falta EPI? ¿Qué cabina pide la guía del INSST en el nivel 2 para técnicas con aerosoles?",
+      "reverso": "**Sí**: se siguen llevando los **EPI** que diga la evaluación. En el nivel 2, cabina de **clase I o, preferiblemente, II**.",
+      "fuente": "NTP 1202 (INSST, 2024) y guía del INSST · apunte §5.3",
+      "etiquetas": [
+        "cabina"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "La guía del INSST pide, en el nivel 2, cabina de clase I o, preferiblemente, II para las técnicas que generan aerosoles.",
+        "Con la cabina se siguen llevando los EPI que diga la evaluación de riesgos."
+      ]
+    },
+    {
+      "id": "t10-f69",
+      "anverso": "¿Dónde y con qué espacio libre se instala una cabina?",
+      "reverso": "**Lejos de corrientes** (puertas, ventanas, zonas de paso, rejillas del aire acondicionado, otras cabinas). Dejar **30 cm detrás y a los lados** y **45 cm por encima**.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.4",
+      "etiquetas": [
+        "cabina"
+      ],
+      "apartado": "5.4",
+      "evidencia": "Dejar 30 cm detrás y a los lados y 45 cm por encima, para el mantenimiento."
+    },
+    {
+      "id": "t10-f70",
+      "anverso": "¿Qué controles añade la guía Eurachem a la certificación de la cabina?",
+      "reverso": "**Control microbiológico semanal**, **comprobación del flujo de aire en cada uso** y **revisión completa anual**.",
+      "fuente": "Eurachem (2023) · apunte §5.4",
+      "etiquetas": [
+        "cabina",
+        "mantenimiento"
+      ],
+      "apartado": "5.4",
+      "evidencia": "control microbiológico semanal; - comprobación del flujo de aire en cada uso; - revisión completa anual."
+    },
+    {
+      "id": "t10-f71",
+      "anverso": "¿Cómo se controla una cabina de flujo laminar, según la guía Eurachem?",
+      "reverso": "Rendimiento al principio y tras cambios, y **placas de esterilidad semanales**; **revisión anual**.",
+      "fuente": "Eurachem (2023), anexos F y G · apunte §6",
+      "etiquetas": [
+        "mantenimiento"
+      ],
+      "apartado": "6",
+      "evidencia": "Cabinas de flujo laminar | Rendimiento al principio y tras cambios; placas de esterilidad semanales | Revisión anual"
     }
   ],
   "test": [
@@ -702,6 +941,590 @@
       "explicacion": "También tras un traslado o una operación de mantenimiento.",
       "fuente": "NTP 1202 (INSST, 2024)",
       "nucleo": true
+    },
+    {
+      "id": "t10-q34",
+      "pregunta": "Según el reparto del temario, el autoclave y la esterilización no se estudian con los equipos del tema 10, sino en el tema:",
+      "opciones": [
+        "9",
+        "11",
+        "14"
+      ],
+      "correcta": 1,
+      "explicacion": "Hornos, autoclaves, esterilización y desinfección son del tema 11; el riesgo biológico, del 9; las tinciones, del 14.",
+      "fuente": "Temario y reparto · apunte §1",
+      "apartado": "1",
+      "evidencia": "Hornos, autoclaves, esterilización y desinfección | 11"
+    },
+    {
+      "id": "t10-q35",
+      "pregunta": "La pieza del microscopio que sostiene los objetivos y los lleva al eje óptico al girar es:",
+      "opciones": [
+        "La platina",
+        "El condensador",
+        "El revólver"
+      ],
+      "correcta": 2,
+      "explicacion": "El revólver. La platina sostiene la preparación y el condensador concentra la luz.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Revólver | Sostiene los objetivos y los lleva al eje óptico al girar"
+    },
+    {
+      "id": "t10-q36",
+      "pregunta": "El grosor de cubreobjetos para el que suelen estar corregidos los objetivos del microscopio es de:",
+      "opciones": [
+        "0,17 mm",
+        "1,0 mm",
+        "0,5 mm"
+      ],
+      "correcta": 0,
+      "explicacion": "Normalmente 0,17 mm, y va grabado en el objetivo.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "el grosor de cubreobjetos para el que está corregido, normalmente 0,17 mm;"
+    },
+    {
+      "id": "t10-q37",
+      "pregunta": "Un objetivo de microscopio que no indica ninguna corrección es, por defecto:",
+      "opciones": [
+        "Apocromático",
+        "Acromático",
+        "De fluorita"
+      ],
+      "correcta": 1,
+      "explicacion": "Acromático, el más sencillo; el apocromático es el mejor corregido.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "la corrección: acromático (el más sencillo; si no pone nada, lo es), fluorita o apocromático (la mejor), y plan si da el campo plano;"
+    },
+    {
+      "id": "t10-q38",
+      "pregunta": "Con un microscopio óptico no pueden verse los virus porque:",
+      "opciones": [
+        "No se tiñen con ningún colorante",
+        "Necesitan un objetivo de 200×",
+        "Están por debajo del límite de resolución del microscopio óptico"
+      ],
+      "correcta": 2,
+      "explicacion": "Las bacterias se ven hacia los 400×; los virus están por debajo del límite de resolución.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Las bacterias se ven hacia los 400×. Los virus, no: están por debajo del límite de resolución del microscopio óptico."
+    },
+    {
+      "id": "t10-q39",
+      "pregunta": "Según la fórmula de Rayleigh (d = 0,61·λ/AN), con luz verde de 550 nm y un objetivo de AN 1,25, la resolución es de aproximadamente:",
+      "opciones": [
+        "268 nm",
+        "440 nm",
+        "687 nm"
+      ],
+      "correcta": 0,
+      "explicacion": "0,61 × 550 / 1,25 ≈ 268 nm.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con λ = 550 nm (luz verde) y AN = 1,25: d ≈ 268 nm"
+    },
+    {
+      "id": "t10-q40",
+      "pregunta": "Para un objetivo de AN 1,25, el aumento útil está entre:",
+      "opciones": [
+        "125× y 250×",
+        "625× y 1250×",
+        "1250× y 2500×"
+      ],
+      "correcta": 1,
+      "explicacion": "Aumento útil = 500-1000 × AN: 625× a 1250×.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El aumento útil va de 500 a 1000 veces la AN del objetivo. Con AN 1,25, de 625× a 1250×."
+    },
+    {
+      "id": "t10-q41",
+      "pregunta": "A igualdad de apertura numérica, resuelve mejor la luz:",
+      "opciones": [
+        "Roja, por ser más intensa",
+        "Infrarroja",
+        "Azul, de menor longitud de onda"
+      ],
+      "correcta": 2,
+      "explicacion": "Menor longitud de onda, mejor resolución: el azul resuelve más que el rojo.",
+      "fuente": "Abramowitz (Olympus, 2003) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Menor longitud de onda, mejor resolución: el azul resuelve más que el rojo."
+    },
+    {
+      "id": "t10-q42",
+      "pregunta": "Ajustada la iluminación de Köhler, la intensidad de la luz se regula:",
+      "opciones": [
+        "Con el reóstato",
+        "Subiendo o bajando el condensador",
+        "Cerrando el diafragma de campo"
+      ],
+      "correcta": 0,
+      "explicacion": "La intensidad, con el reóstato; el contraste, con el diafragma de apertura.",
+      "fuente": "SCA (2017) · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "el contraste se regula con el diafragma de apertura y la intensidad con el reóstato, no subiendo o bajando el condensador."
+    },
+    {
+      "id": "t10-q43",
+      "pregunta": "Para identificar ooquistes de Cryptosporidium en aguas con anticuerpos marcados con un fluorocromo se usa el microscopio:",
+      "opciones": [
+        "De campo oscuro",
+        "De fluorescencia (inmunofluorescencia)",
+        "Electrónico de transmisión"
+      ],
+      "correcta": 1,
+      "explicacion": "Inmunofluorescencia en microscopio de fluorescencia; el DIC sirve después para examinarlos con el objetivo de 100×.",
+      "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Identificar patógenos. Inmunofluorescencia: anticuerpos marcados que tiñen, por ejemplo, Cryptosporidium en aguas"
+    },
+    {
+      "id": "t10-q44",
+      "pregunta": "Para observar en 3D muestras gruesas como las biopelículas se usa el microscopio:",
+      "opciones": [
+        "Estereoscópico",
+        "De contraste de fases",
+        "Confocal"
+      ],
+      "correcta": 2,
+      "explicacion": "El confocal barre planos con un láser y reconstruye la imagen en 3D. La lupa estereoscópica es para colonias.",
+      "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un láser barre planos a distintas profundidades y el ordenador reconstruye la imagen en 3D | Muestras gruesas, como las biopelículas"
+    },
+    {
+      "id": "t10-q45",
+      "pregunta": "El microscopio electrónico no sirve para observar material vivo porque:",
+      "opciones": [
+        "Exige vacío y deshidratación de la muestra",
+        "No tiene suficiente aumento",
+        "Solo funciona con muestras teñidas con Gram"
+      ],
+      "correcta": 0,
+      "explicacion": "La preparación exige vacío y deshidratación.",
+      "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "No sirve para material vivo, por la preparación que exige: vacío y deshidratación."
+    },
+    {
+      "id": "t10-q46",
+      "pregunta": "El micrómetro objetivo con el que se calibra el retículo del ocular tiene:",
+      "opciones": [
+        "1 cm dividido en 10 partes de 1 mm",
+        "1 mm dividido en 100 partes de 10 µm",
+        "1 mm dividido en 1000 partes de 1 µm"
+      ],
+      "correcta": 1,
+      "explicacion": "1 mm en 100 divisiones de 10 µm; se calibra para cada objetivo.",
+      "fuente": "SCA (2017) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Se usa un retículo en el ocular, calibrado con un micrómetro objetivo: 1 mm dividido en 100 partes de 10 µm cada una."
+    },
+    {
+      "id": "t10-q47",
+      "pregunta": "Al cambiar la lámpara UV de un microscopio de fluorescencia hay que:",
+      "opciones": [
+        "Tocarla con los dedos para comprobar que se ha enfriado",
+        "Hacerlo con la lámpara encendida",
+        "Usar guantes y gafas, porque puede estallar, y registrar sus horas de uso"
+      ],
+      "correcta": 2,
+      "explicacion": "Guantes y gafas, y registro de horas de uso.",
+      "fuente": "Eurachem (2023) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Lámparas de UV del microscopio de fluorescencia: se registran sus horas de uso, y al cambiarlas se usan guantes y gafas, porque pueden estallar."
+    },
+    {
+      "id": "t10-q48",
+      "pregunta": "En el recuento de Clostridium perfringens en aguas, las placas se incuban:",
+      "opciones": [
+        "A 44 °C, en condiciones de anaerobiosis",
+        "A 37 °C, en aerobiosis",
+        "A 22 °C, en microaerofilia"
+      ],
+      "correcta": 0,
+      "explicacion": "A 44 °C y en anaerobiosis: una estufa por encima de 40 °C (± 0,5 °C) y una atmósfera sin oxígeno.",
+      "fuente": "SCA (2017); plantilla 1233 · apunte §3.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233",
+        "texto": "En el recuento de Clostridium perfringens en aguas, las placas se deben incubar con las siguientes condiciones:"
+      },
+      "apartado": "3.1",
+      "evidencia": "44 °C, en el límite superior. Es la de C. perfringens, en anaerobiosis (1233, 2.º ejercicio, #15)."
+    },
+    {
+      "id": "t10-q49",
+      "pregunta": "Las placas sembradas para el análisis de Legionella spp. en agua se incuban a 36 °C durante:",
+      "opciones": [
+        "44 ± 4 horas",
+        "10 días",
+        "24 horas"
+      ],
+      "correcta": 1,
+      "explicacion": "10 días; 44 ± 4 h es el distractor. Las incubaciones largas exigen vigilar que las placas no se sequen.",
+      "fuente": "Método de Legionella; plantilla 1322 · apunte §3.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322",
+        "texto": "Las placas sembradas para el análisis de Legionella spp en agua se incuban a 36 °C durante:"
+      },
+      "apartado": "3.1",
+      "evidencia": "las placas de Legionella van a 36 °C durante 10 días (1322 #26)."
+    },
+    {
+      "id": "t10-q50",
+      "pregunta": "En una estufa de incubación, el ventilador sirve para:",
+      "opciones": [
+        "Secar las placas",
+        "Enfriar el interior por debajo del ambiente",
+        "Repartir la temperatura de forma más uniforme"
+      ],
+      "correcta": 2,
+      "explicacion": "Con ventilador la temperatura es más uniforme que por convección natural.",
+      "fuente": "SCA (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Puede calentar sin ventilador, por convección natural, o con ventilador, que reparte la temperatura de forma más uniforme."
+    },
+    {
+      "id": "t10-q51",
+      "pregunta": "Según la guía Eurachem, para controlar la temperatura de las estufas están prohibidos los termómetros de:",
+      "opciones": [
+        "Mercurio y tolueno",
+        "Resistencia de platino",
+        "Termopar con registrador"
+      ],
+      "correcta": 0,
+      "explicacion": "Mercurio y tolueno, por seguridad. Se recomiendan registradores de datos o monitorización continua con alarma.",
+      "fuente": "Eurachem (2023) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Los termómetros de mercurio y de tolueno están prohibidos por seguridad, según la guía Eurachem."
+    },
+    {
+      "id": "t10-q52",
+      "pregunta": "En una estufa de ciclo que pasa de 30 °C a 44 °C, la subida de temperatura:",
+      "opciones": [
+        "Puede durar lo necesario, y no cuenta como incubación",
+        "Debe completarse en 30 minutos, y ese tiempo cuenta como incubación a la temperatura alta",
+        "Debe completarse en 5 minutos"
+      ],
+      "correcta": 1,
+      "explicacion": "En 30 minutos, contados como incubación a la temperatura alta.",
+      "fuente": "SCA (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "La subida debe completarse en 30 minutos, y ese tiempo cuenta como parte de la incubación a la temperatura alta."
+    },
+    {
+      "id": "t10-q53",
+      "pregunta": "Para limpiar una estufa de incubación se recomienda:",
+      "opciones": [
+        "Solo un paño seco",
+        "Un desinfectante que deje una película protectora",
+        "Agua templada y un desinfectante, como hipoclorito diluido, que no deje residuo"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin residuo, alternando dos desinfectantes; una vez al mes y tras un derrame.",
+      "fuente": "SCA (2017) y Eurachem (2023) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Limpieza: agua templada y desinfectante, por ejemplo hipoclorito diluido, que no debe dejar residuo."
+    },
+    {
+      "id": "t10-q54",
+      "pregunta": "El sobre generador de anaerobiosis debe:",
+      "opciones": [
+        "Corresponder al volumen de la jarra",
+        "Ser siempre el más grande disponible",
+        "Abrirse antes de meter las placas"
+      ],
+      "correcta": 0,
+      "explicacion": "El sobre tiene que corresponder al volumen de la jarra; se abre después de meter el material y el indicador.",
+      "fuente": "SCA (2017) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El sobre tiene que corresponder al volumen de la jarra."
+    },
+    {
+      "id": "t10-q55",
+      "pregunta": "Además de para incubar ciertos cultivos, el baño termostático sirve en el laboratorio de microbiología para:",
+      "opciones": [
+        "Esterilizar los medios de cultivo",
+        "Mantener fundido el agar hasta verterlo",
+        "Secar el material de vidrio"
+      ],
+      "correcta": 1,
+      "explicacion": "Para mantener fundido el agar. La esterilización es del autoclave (tema 11).",
+      "fuente": "SCA (2017) · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Para qué se usan: para incubar ciertos cultivos y para mantener fundido el agar hasta verterlo."
+    },
+    {
+      "id": "t10-q56",
+      "pregunta": "Según la guía Eurachem, un baño termostático se vacía, limpia, desinfecta y rellena:",
+      "opciones": [
+        "Cada semana",
+        "Cada año",
+        "Cada mes, o cada 6 meses si el agua lleva biocida"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada mes, o cada 6 meses con biocida; si no se usa, se guarda vacío y limpio.",
+      "fuente": "Eurachem (2023) · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "La guía Eurachem sugiere hacerlo cada mes, o cada 6 meses si el agua lleva biocida."
+    },
+    {
+      "id": "t10-q57",
+      "pregunta": "La temperatura de control de un frigorífico de laboratorio es de:",
+      "opciones": [
+        "5 ± 3 °C",
+        "−20 ± 5 °C",
+        "0 ± 1 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "Frigorífico 5 ± 3 °C; congelador −20 ± 5 °C; ultracongelador −70 ± 10 °C.",
+      "fuente": "Eurachem (2023) · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "frigorífico: 5 ± 3 °C; - congelador: −20 ± 5 °C;"
+    },
+    {
+      "id": "t10-q58",
+      "pregunta": "La centrífuga diseñada para tubos Eppendorf, usada por ejemplo en los análisis de Cryptosporidium y Giardia, es la:",
+      "opciones": [
+        "Ultracentrífuga",
+        "Microcentrífuga",
+        "Centrífuga refrigerada de gran volumen"
+      ],
+      "correcta": 1,
+      "explicacion": "La microcentrífuga.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Para tubos Eppendorf. Se usa, por ejemplo, en los análisis de Cryptosporidium y Giardia"
+    },
+    {
+      "id": "t10-q59",
+      "pregunta": "Con un rotor de ángulo fijo hay que tener especial cuidado en:",
+      "opciones": [
+        "Usar siempre tubos de vidrio fino",
+        "Dejar los tubos destapados",
+        "No llenar de más los tubos, porque pueden gotear"
+      ],
+      "correcta": 2,
+      "explicacion": "Los tubos van inclinados en el rotor y pueden gotear si se llenan de más.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Con ellos hay que no llenar de más los tubos, porque pueden gotear."
+    },
+    {
+      "id": "t10-q60",
+      "pregunta": "Si se duplica el radio de giro manteniendo las rpm, la fuerza centrífuga relativa:",
+      "opciones": [
+        "Se duplica",
+        "Se cuadruplica",
+        "No cambia"
+      ],
+      "correcta": 0,
+      "explicacion": "La FCR es proporcional al radio (× 2) y al cuadrado de las rpm.",
+      "fuente": "Deducción de la FCR · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "(depende del cuadrado de la velocidad) | | Doblar el radio | × 2"
+    },
+    {
+      "id": "t10-q61",
+      "pregunta": "Tras la rotura de un tubo en la centrífuga, los tubos rotos, las cubetas y el rotor se sumergen en desinfectante no corrosivo durante:",
+      "opciones": [
+        "10 minutos",
+        "24 horas",
+        "7 días"
+      ],
+      "correcta": 1,
+      "explicacion": "24 h o autoclave; los tubos intactos, en otro recipiente, 60 minutos.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Tubos rotos, vidrios, cubetas, portacubetas y rotor, en desinfectante no corrosivo durante 24 h, o al autoclave."
+    },
+    {
+      "id": "t10-q62",
+      "pregunta": "Colocar una centrífuga dentro de una cabina de seguridad biológica de clase I o II:",
+      "opciones": [
+        "Protege completamente frente a los aerosoles",
+        "Es obligatorio con agentes del grupo 2",
+        "No protege: las partículas salen demasiado rápidas para que las retenga el flujo de aire"
+      ],
+      "correcta": 2,
+      "explicacion": "No protege; protegen la buena técnica, los tubos bien tapados y las cubetas de seguridad abiertas en cabina.",
+      "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Poner la centrífuga dentro de una cabina de clase I o II no protege: las partículas salen demasiado rápidas para que las retenga el flujo de aire."
+    },
+    {
+      "id": "t10-q63",
+      "pregunta": "Las cabinas de seguridad biológica deben tener indicadores de flujo de aire y alarmas porque:",
+      "opciones": [
+        "Si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida",
+        "Lo exige el marcado CE de cualquier aparato eléctrico",
+        "Así se sabe cuándo cambiar la lámpara UV"
+      ],
+      "correcta": 0,
+      "explicacion": "La contención depende del flujo de aire, que se pierde en cuanto falla el ventilador.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Deben tener indicadores del flujo de aire y alarmas: si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida."
+    },
+    {
+      "id": "t10-q64",
+      "pregunta": "En una cabina de clase I, una velocidad de entrada del aire superior a 1 m/s:",
+      "opciones": [
+        "Mejora la protección del operador",
+        "Es peor, porque crea turbulencias y retornos",
+        "Es la exigida por la UNE-EN 12469"
+      ],
+      "correcta": 1,
+      "explicacion": "La entrada debe estar entre 0,7 y 1 m/s; por encima crea turbulencias.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Más de 1 m/s de entrada es peor, porque crea turbulencias y retornos."
+    },
+    {
+      "id": "t10-q65",
+      "pregunta": "La velocidad del flujo laminar descendente en una cabina de clase II es de:",
+      "opciones": [
+        "0,7-1 m/s",
+        "2-3 m/s",
+        "0,25-0,4 m/s"
+      ],
+      "correcta": 2,
+      "explicacion": "Descendente 0,25-0,4 m/s; entrada frontal ≥ 0,38 m/s.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Flujo laminar descendente | No | Sí, 0,25-0,4 m/s | No: el aire es turbulento"
+    },
+    {
+      "id": "t10-q66",
+      "pregunta": "La cabina de clase III trabaja con una presión negativa de al menos:",
+      "opciones": [
+        "200 Pa",
+        "20 Pa",
+        "2000 Pa"
+      ],
+      "correcta": 0,
+      "explicacion": "Al menos 200 Pa.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Presión negativa de al menos 200 Pa."
+    },
+    {
+      "id": "t10-q67",
+      "pregunta": "El tipo de cabina de clase II que expulsa al exterior el 100 % del aire, según la NSF/ANSI 49, es el:",
+      "opciones": [
+        "A2",
+        "B2",
+        "A1"
+      ],
+      "correcta": 1,
+      "explicacion": "El B2. El A2, el más vendido, recircula el 70 %.",
+      "fuente": "NTP 1202 (INSST, 2024) (NSF/ANSI 49) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "B2 | 0,51 m/s | Expulsa el 100 % al exterior"
+    },
+    {
+      "id": "t10-q68",
+      "pregunta": "Para trabajar con agentes del grupo 3 se elige una cabina de:",
+      "opciones": [
+        "Flujo laminar horizontal",
+        "Clase I, en todo caso",
+        "Clase II o III"
+      ],
+      "correcta": 2,
+      "explicacion": "Grupo 3: clase II o III. Grupo 4: clase III.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Agentes del grupo 3 | Clase II o III"
+    },
+    {
+      "id": "t10-q69",
+      "pregunta": "Si en la cabina se manipulan productos químicos volátiles, hay que tener en cuenta que:",
+      "opciones": [
+        "El HEPA no retiene gases ni vapores: hacen falta otros filtros y expulsar al exterior",
+        "El HEPA los retiene igual que a las partículas",
+        "Basta con encender la lámpara UV"
+      ],
+      "correcta": 0,
+      "explicacion": "El HEPA solo retiene partículas.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "El HEPA no retiene gases ni vapores: hay que añadir otros filtros y expulsar al exterior"
+    },
+    {
+      "id": "t10-q70",
+      "pregunta": "Al instalar una cabina de seguridad biológica hay que dejar libres, para el mantenimiento:",
+      "opciones": [
+        "5 cm por detrás",
+        "30 cm detrás y a los lados y 45 cm por encima",
+        "1 m en todas las direcciones"
+      ],
+      "correcta": 1,
+      "explicacion": "30 cm detrás y a los lados, 45 cm encima, y lejos de corrientes.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Dejar 30 cm detrás y a los lados y 45 cm por encima, para el mantenimiento."
+    },
+    {
+      "id": "t10-q71",
+      "pregunta": "Los ensayos de instalación y de mantenimiento de rutina de una cabina incluyen los del examen de tipo, salvo:",
+      "opciones": [
+        "La retención en la abertura frontal",
+        "El ensayo de los filtros",
+        "La estanqueidad de la carcasa"
+      ],
+      "correcta": 2,
+      "explicacion": "La estanqueidad de la carcasa solo la ensaya el fabricante en el examen de tipo.",
+      "fuente": "UNE-EN 12469 (según NTP 1202) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Tras la puesta en servicio, o si cambia la instalación o su entorno | Los mismos, salvo la estanqueidad de la carcasa"
+    },
+    {
+      "id": "t10-q72",
+      "pregunta": "Tras meter material nuevo en la cabina, antes de seguir trabajando, hay que esperar:",
+      "opciones": [
+        "2-3 minutos",
+        "30 segundos",
+        "15 minutos"
+      ],
+      "correcta": 0,
+      "explicacion": "2-3 minutos; cuanto más material dentro, más turbulencias.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Tras meter material nuevo, esperar 2-3 minutos."
+    },
+    {
+      "id": "t10-q73",
+      "pregunta": "La descontaminación de una cabina con peróxido de hidrógeno vaporizado se hace, entre otros casos:",
+      "opciones": [
+        "Al final de cada jornada, por el propio usuario",
+        "Antes de moverla de sitio y antes de ensayar o cambiar los filtros",
+        "Solo cuando lo pide la autoridad sanitaria"
+      ],
+      "correcta": 1,
+      "explicacion": "Antes de moverla, al cambiar de agente, tras derrames inaccesibles y antes de ensayar o cambiar filtros; la hace personal competente.",
+      "fuente": "NTP 1202 (INSST, 2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "normalmente con peróxido de hidrógeno vaporizado, que hace personal competente: - antes de moverla de sitio;"
+    },
+    {
+      "id": "t10-q74",
+      "pregunta": "Según la guía Eurachem, una cabina de flujo laminar se controla, además de al principio y tras cambios, con:",
+      "opciones": [
+        "Un control microbiológico anual",
+        "Un tacómetro calibrado",
+        "Placas de esterilidad semanales"
+      ],
+      "correcta": 2,
+      "explicacion": "Placas de esterilidad semanales y revisión anual.",
+      "fuente": "Eurachem (2023), anexos F y G · apunte §6",
+      "apartado": "6",
+      "evidencia": "Cabinas de flujo laminar | Rendimiento al principio y tras cambios; placas de esterilidad semanales | Revisión anual"
     }
   ],
   "supuestos": [
@@ -796,6 +1619,170 @@
           "correcta": 0,
           "explicacion": "Los 30 minutos dejan depositarse los aerosoles. Después: guantes gruesos, pinzas, desinfectante 24 h o autoclave; tubos intactos, 60 minutos.",
           "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)"
+        }
+      ]
+    },
+    {
+      "id": "t10-s03",
+      "titulo": "Observación de ooquistes de Cryptosporidium",
+      "enunciado": "En el análisis de *Cryptosporidium* en agua de consumo, tras concentrar la muestra, el técnico tiñe los ooquistes con anticuerpos marcados con un fluorocromo. Después los examina con el objetivo de inmersión de 100× y oculares de 10×, y mide su tamaño con un retículo en el ocular. La lámpara del equipo está a punto de agotarse.",
+      "preguntas": [
+        {
+          "id": "t10-s03-q1",
+          "pregunta": "Para ver los ooquistes teñidos con anticuerpos marcados con un fluorocromo, el técnico usa el microscopio:",
+          "opciones": [
+            "De fluorescencia",
+            "De campo oscuro",
+            "Electrónico de barrido",
+            "Estereoscópico"
+          ],
+          "correcta": 0,
+          "explicacion": "Inmunofluorescencia: microscopio de fluorescencia.",
+          "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Identificar patógenos. Inmunofluorescencia: anticuerpos marcados que tiñen, por ejemplo, Cryptosporidium en aguas"
+        },
+        {
+          "id": "t10-s03-q2",
+          "pregunta": "Para examinar después la estructura de los ooquistes con el objetivo de 100× y aspecto tridimensional, sin teñir, se usa el microscopio:",
+          "opciones": [
+            "De campo claro con tinción de Gram",
+            "Electrónico de transmisión",
+            "Confocal",
+            "De contraste interferencial diferencial (DIC, Nomarski)"
+          ],
+          "correcta": 3,
+          "explicacion": "El DIC da imagen de aspecto tridimensional de muestras sin teñir; en aguas se usa para los ooquistes con el objetivo de 100×.",
+          "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "En aguas, examinar ooquistes de Cryptosporidium con el objetivo de 100×"
+        },
+        {
+          "id": "t10-s03-q3",
+          "pregunta": "¿Qué aumento total obtiene?",
+          "opciones": [
+            "110×",
+            "100×",
+            "1000×",
+            "10 000×"
+          ],
+          "correcta": 2,
+          "explicacion": "Ocular × objetivo: 10 × 100 = 1000×.",
+          "fuente": "Abramowitz (Olympus, 2003) · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Con el objetivo de inmersión de 100×, 1000×."
+        },
+        {
+          "id": "t10-s03-q4",
+          "pregunta": "Al calibrar el retículo con el micrómetro objetivo usando el objetivo de 100×, lo habitual es que:",
+          "opciones": [
+            "1 división valga 10 µm, como con el de 10×",
+            "1 división valga 1 µm",
+            "1 división valga 0,1 mm",
+            "No haga falta calibrar con este objetivo"
+          ],
+          "correcta": 1,
+          "explicacion": "Con el de 10× suele salir 10 µm por división; con el de 100×, 1 µm. Se calibra para cada objetivo y se recalibra, por ejemplo, una vez al año.",
+          "fuente": "SCA (2017) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Con el de 10× suele salir 1 división = 10 µm; con el de 100×, 1 µm."
+        },
+        {
+          "id": "t10-s03-q5",
+          "pregunta": "Para cambiar la lámpara UV agotada, el técnico debe:",
+          "opciones": [
+            "Cambiarla con el equipo encendido para no perder el enfoque",
+            "Sujetarla con un trapo cualquiera",
+            "Desecharla sin anotar nada",
+            "Usar guantes y gafas, porque puede estallar, y registrar las horas de uso"
+          ],
+          "correcta": 3,
+          "explicacion": "Guantes y gafas, y registro de horas de uso de las lámparas.",
+          "fuente": "Eurachem (2023) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Lámparas de UV del microscopio de fluorescencia: se registran sus horas de uso, y al cambiarlas se usan guantes y gafas, porque pueden estallar."
+        }
+      ]
+    },
+    {
+      "id": "t10-s04",
+      "titulo": "Agar fundido y anaerobiosis para Clostridium perfringens",
+      "enunciado": "Para el recuento de *Clostridium perfringens* en agua, el técnico mantiene el agar fundido en un baño termostático hasta verterlo y, tras la siembra, incuba las placas en una jarra de anaerobiosis con sobre generador. Al sacar un frasco del baño, se le rompe y el medio se derrama en el agua.",
+      "preguntas": [
+        {
+          "id": "t10-s04-q1",
+          "pregunta": "El agua del baño termostático debe ser:",
+          "opciones": [
+            "Destilada o desionizada, siempre agitada o en circulación",
+            "Del grifo, sin agitar",
+            "Desionizada, pero sin circulación para no salpicar",
+            "Cualquiera, porque solo transmite el calor"
+          ],
+          "correcta": 0,
+          "explicacion": "Agua destilada o desionizada, agitada o en circulación, y el baño encendido solo con el agua a su nivel.",
+          "fuente": "SCA (2017) · apunte §3.4",
+          "apartado": "3.4",
+          "evidencia": "Con agua destilada o desionizada, siempre agitada o en circulación."
+        },
+        {
+          "id": "t10-s04-q2",
+          "pregunta": "Los frascos de agar en el baño deben colocarse:",
+          "opciones": [
+            "Totalmente sumergidos, tapón incluido",
+            "Con el contenido por debajo del nivel del agua, en gradillas",
+            "Apoyados en la resistencia",
+            "Flotando libres"
+          ],
+          "correcta": 1,
+          "explicacion": "Contenido por debajo del nivel del agua, con gradillas que eviten que entre agua o que se vuelquen.",
+          "fuente": "SCA (2017) · apunte §3.4",
+          "apartado": "3.4",
+          "evidencia": "El contenido de tubos y frascos debe quedar por debajo del nivel del agua, con gradillas que eviten que entre agua o que se vuelquen."
+        },
+        {
+          "id": "t10-s04-q3",
+          "pregunta": "Al cerrar la jarra de anaerobiosis, el orden correcto es:",
+          "opciones": [
+            "Abrir el sobre, esperar a que actúe y meter después las placas",
+            "Meter las placas y no usar indicador",
+            "Meter las placas y el indicador, y después abrir el sobre",
+            "Abrir el sobre fuera y dejarlo en la mesa"
+          ],
+          "correcta": 2,
+          "explicacion": "Primero el material y el indicador; después se abre el sobre, que debe corresponder al volumen de la jarra.",
+          "fuente": "SCA (2017) · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "Se mete primero el material y el indicador de anaerobiosis, y después se abre el sobre."
+        },
+        {
+          "id": "t10-s04-q4",
+          "pregunta": "Para comprobar que la atmósfera de la jarra es anaerobia:",
+          "opciones": [
+            "Basta con que el sobre sea nuevo",
+            "Se comprueba una vez al año",
+            "Se mide el oxígeno con un oxímetro de pulso",
+            "Se mira el indicador en cada uso, o se incuban dos cultivos control, uno aerobio y otro anaerobio"
+          ],
+          "correcta": 3,
+          "explicacion": "Indicador en cada uso, o cultivos control.",
+          "fuente": "SCA (2017) · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "La atmósfera se comprueba con el indicador, en cada uso. También puede comprobarse con dos cultivos control: uno aerobio y otro anaerobio o microaerófilo."
+        },
+        {
+          "id": "t10-s04-q5",
+          "pregunta": "Ante el derrame del medio en el baño, lo correcto es:",
+          "opciones": [
+            "Esperar a la limpieza mensual",
+            "Añadir agua para diluir el medio",
+            "Atenderlo inmediatamente: vaciar, limpiar, desinfectar (por ejemplo, con etanol al 70 %) y rellenar",
+            "Subir la temperatura para esterilizar el agua"
+          ],
+          "correcta": 2,
+          "explicacion": "Un derrame contamina el agua y se atiende inmediatamente.",
+          "fuente": "SCA (2017) · apunte §3.4",
+          "apartado": "3.4",
+          "evidencia": "Un derrame contamina el agua: se atiende inmediatamente."
         }
       ]
     }
