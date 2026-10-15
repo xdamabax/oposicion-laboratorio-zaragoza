@@ -442,6 +442,172 @@
         "normativa",
         "conductividad"
       ]
+    },
+    {
+      "id": "t24-f41",
+      "anverso": "¿Qué tres medidas junta el tema 24 y qué tienen en común?",
+      "reverso": "**Electrodos selectivos de iones** (generalización del de vidrio), **conductividad** (medida inespecífica) y **oxígeno disuelto por sonda** (amperometría). En los tres, **el sensor va en la muestra y da el resultado en el sitio**: son medidas de campo.",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "el sensor va metido en la muestra y da el resultado en el sitio"
+    },
+    {
+      "id": "t24-f42",
+      "anverso": "Normas de la conductividad y del oxígeno disuelto (electroquímico y óptico).",
+      "reverso": "Conductividad: **UNE-EN 27888:1994** (ISO 7888). Oxígeno disuelto electroquímico: **UNE-EN ISO 5814:2013**. Óptico: **ISO 17289:2014**. Winkler: UNE-EN 25813 (tema 22).",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": [
+        "| Conductividad eléctrica del agua | UNE-EN 27888:1994 (ISO 7888:1985) | Ensayo normalizado |",
+        "| Oxígeno disuelto, método electroquímico | UNE-EN ISO 5814:2013 (ISO 5814:2012) | Ensayo normalizado |"
+      ]
+    },
+    {
+      "id": "t24-f43",
+      "anverso": "¿Qué electrodo de referencia acompaña a un ISE?",
+      "reverso": "Normalmente **Ag/AgCl**, muchas veces **de doble unión**, para que su electrolito **no contamine la muestra**.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "etiquetas": [
+        "ise"
+      ],
+      "apartado": "2.1",
+      "evidencia": "Todo ISE necesita, enfrente, un electrodo de referencia (normalmente Ag/AgCl, muchas veces de doble unión para que su electrolito no contamine la muestra)."
+    },
+    {
+      "id": "t24-f44",
+      "anverso": "Electrodos de estado sólido: además del fluoruro, ¿qué iones miden y con qué membrana?",
+      "reverso": "**Cl⁻, Br⁻, I⁻** (haluro de plata + Ag₂S); **Ag⁺ y S²⁻** (Ag₂S); **CN⁻**; **Cu²⁺, Pb²⁺, Cd²⁺**.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "etiquetas": [
+        "ise"
+      ],
+      "apartado": "2.1",
+      "evidencia": "Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺"
+    },
+    {
+      "id": "t24-f45",
+      "anverso": "¿Qué consecuencia tiene que la respuesta de un ISE sea logarítmica?",
+      "reverso": "Que el **error relativo es el mismo en todo el intervalo**. Y 1 mV de error ≈ **4 %** en la actividad de un monovalente (el doble en un divalente).",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "etiquetas": [
+        "ise"
+      ],
+      "apartado": "2.2",
+      "evidencia": "La respuesta es logarítmica, así que el error relativo es el mismo en todo el intervalo."
+    },
+    {
+      "id": "t24-f46",
+      "anverso": "Adiciones patrón con un ISE: ¿qué inconvenientes tiene?",
+      "reverso": "Es **más lento** y hace falta conocer la **pendiente real** del electrodo, que se comprueba con **dos patrones separados una década**.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "2.3",
+      "evidencia": "es más lento y hace falta conocer la pendiente real del electrodo, que se comprueba con dos patrones separados una década."
+    },
+    {
+      "id": "t24-f47",
+      "anverso": "¿Por qué la valoración con un ISE es el más exacto de los tres métodos?",
+      "reverso": "Porque **no depende del valor absoluto del potencial**, sino de **dónde salta**.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Es el más exacto de los tres, porque no depende del valor absoluto del potencial sino de dónde salta."
+    },
+    {
+      "id": "t24-f48",
+      "anverso": "Conductancia y resistividad: definición y unidades.",
+      "reverso": "**Conductancia**: **G = 1/R**, en **siemens (S)**. **Resistividad**: **ρ = 1/κ**, en **Ω·cm**. La conductividad es **κ = G · K**.",
+      "fuente": "UNE-EN 27888:1994; doctrina · apunte §2.4",
+      "etiquetas": [
+        "conductividad"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "| Conductancia | G | G = 1 / R | S (siemens) |",
+        "| Resistividad | ρ | ρ = 1 / κ | Ω·cm |"
+      ]
+    },
+    {
+      "id": "t24-f49",
+      "anverso": "¿Qué patrón de KCl se elige y por qué se recomprueba la constante de célula?",
+      "reverso": "Un patrón **del mismo orden de magnitud** que las muestras. La constante se **recomprueba periódicamente** porque el **platinado** de los electrodos **se degrada** con el uso y la suciedad.",
+      "fuente": "Catálogos de patrones de KCl · apunte §2.4 y Dudas",
+      "etiquetas": [
+        "conductividad"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "Se elige el patrón del mismo orden de magnitud que las muestras.",
+        "porque el platinado de los electrodos se degrada con el uso y con la suciedad."
+      ]
+    },
+    {
+      "id": "t24-f50",
+      "anverso": "¿Cómo se expresa mejor la calidad del agua ultrapura y qué valor alcanza?",
+      "reverso": "Como **resistividad**: el agua ultrapura llega a **18,2 MΩ·cm**.",
+      "fuente": "Doctrina · apunte §2.4",
+      "etiquetas": [
+        "conductividad"
+      ],
+      "apartado": "2.4",
+      "evidencia": "el agua ultrapura llega a 18,2 MΩ·cm"
+    },
+    {
+      "id": "t24-f51",
+      "anverso": "¿Qué electrolito y qué membrana llevan las sondas de oxígeno?",
+      "reverso": "**Electrolito interno** típicamente **KCl** y **membrana de PTFE** o polietileno, sujeta con una **junta**. (Detalle de fabricante, no de la norma.)",
+      "fuente": "Documentación de fabricante · apunte §2.5 y Dudas",
+      "etiquetas": [
+        "oxigeno"
+      ],
+      "apartado": "2.5",
+      "evidencia": "En las dos: electrolito interno (típicamente KCl) y membrana de PTFE o polietileno, sujeta con una junta."
+    },
+    {
+      "id": "t24-f52",
+      "anverso": "Cuidados de la sonda de oxígeno y lecturas por encima del 100 %.",
+      "reverso": "**Membrana íntegra** y **sin burbujas debajo**, **electrolito** en buen estado, y atención a **otros gases** que atraviesan la membrana. La mayoría de los equipos leen **por encima del 100 %**: la **sobresaturación**.",
+      "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+      "etiquetas": [
+        "oxigeno"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir.",
+        "la mayoría de los equipos leen también por encima de 100 %: la sobresaturación."
+      ]
+    },
+    {
+      "id": "t24-f53",
+      "anverso": "Calcio, potasio y nitrato por ISE: ¿qué electrodo y qué precauciones?",
+      "reverso": "Electrodo de **membrana líquida** (ionóforo en PVC), con **ajustador de fuerza iónica** y atención al **coeficiente de selectividad** frente a los iones de la matriz.",
+      "fuente": "Doctrina · apunte §3",
+      "etiquetas": [
+        "ise"
+      ],
+      "apartado": "3",
+      "evidencia": "Ajustador de fuerza iónica; ojo al coeficiente de selectividad frente a los iones de la matriz"
+    },
+    {
+      "id": "t24-f54",
+      "anverso": "¿Cuándo es preferible el sensor óptico de oxígeno?",
+      "reverso": "Cuando no conviene agitar o consumir oxígeno, y en aguas **muy coloreadas o turbias** donde el **Winkler falla**. Norma: **ISO 17289:2014**.",
+      "fuente": "Doctrina · apunte §3",
+      "etiquetas": [
+        "oxigeno"
+      ],
+      "apartado": "3",
+      "evidencia": "No consume oxígeno: no necesita agitación. Alternativa cuando el Winkler no sirve"
     }
   ],
   "test": [
@@ -745,6 +911,566 @@
       "correcta": 2,
       "explicacion": "Se basa en la extinción de la fluorescencia por el oxígeno, sin consumirlo. Por eso no necesita renovar la muestra, y va bien en aguas coloreadas y turbias y en las que el Winkler falla.",
       "fuente": "ISO 17289:2014"
+    },
+    {
+      "id": "t24-q25",
+      "pregunta": "Los electrodos selectivos, la conductividad y la sonda de oxígeno tienen en común que:",
+      "opciones": [
+        "El sensor va en la muestra y da el resultado en el sitio",
+        "Todos miden un potencial a intensidad nula",
+        "Todos necesitan destruir la muestra"
+      ],
+      "correcta": 0,
+      "explicacion": "La sonda de oxígeno mide una corriente (amperometría).",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "el sensor va metido en la muestra y da el resultado en el sitio"
+    },
+    {
+      "id": "t24-q26",
+      "pregunta": "La norma de la medida de la conductividad eléctrica del agua es la:",
+      "opciones": [
+        "UNE-EN ISO 5814:2013",
+        "UNE-EN 27888:1994",
+        "UNE-EN ISO 10523:2012"
+      ],
+      "correcta": 1,
+      "explicacion": "5814: oxígeno disuelto; 10523: pH.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Conductividad eléctrica del agua | UNE-EN 27888:1994 (ISO 7888:1985) | Ensayo normalizado |"
+    },
+    {
+      "id": "t24-q27",
+      "pregunta": "El método electroquímico de oxígeno disuelto está normalizado en la:",
+      "opciones": [
+        "UNE-EN 25813",
+        "ISO 17289:2014",
+        "UNE-EN ISO 5814:2013"
+      ],
+      "correcta": 2,
+      "explicacion": "25813: Winkler; 17289: óptico.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Oxígeno disuelto, método electroquímico | UNE-EN ISO 5814:2013 (ISO 5814:2012) | Ensayo normalizado |"
+    },
+    {
+      "id": "t24-q28",
+      "pregunta": "El método óptico de oxígeno disuelto está normalizado en la:",
+      "opciones": [
+        "ISO 17289:2014",
+        "UNE-EN ISO 5814:2013",
+        "UNE-EN 27888:1994"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la alternativa moderna.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Oxígeno disuelto, método óptico | ISO 17289:2014 | Alternativa moderna |"
+    },
+    {
+      "id": "t24-q29",
+      "pregunta": "El electrodo de referencia de un ISE suele ser de doble unión para:",
+      "opciones": [
+        "Medir dos iones a la vez",
+        "Que su electrolito no contamine la muestra",
+        "Compensar la temperatura"
+      ],
+      "correcta": 1,
+      "explicacion": "Normalmente es de Ag/AgCl.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "muchas veces de doble unión para que su electrolito no contamine la muestra"
+    },
+    {
+      "id": "t24-q30",
+      "pregunta": "El electrodo selectivo de potasio con valinomicina es de:",
+      "opciones": [
+        "Estado sólido cristalino",
+        "Vidrio",
+        "Membrana líquida (ionóforo en PVC)"
+      ],
+      "correcta": 2,
+      "explicacion": "Como los de Ca²⁺ y NO₃⁻.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| De membrana líquida (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente PVC, impregnada con un ionóforo | Ca²⁺; K⁺ (valinomicina); NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q31",
+      "pregunta": "Los electrodos selectivos de cloruro, bromuro y yoduro son de membrana:",
+      "opciones": [
+        "De estado sólido, de haluro de plata con Ag₂S",
+        "Líquida con valinomicina",
+        "De vidrio"
+      ],
+      "correcta": 0,
+      "explicacion": "Como el de fluoruro (LaF₃).",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S)"
+    },
+    {
+      "id": "t24-q32",
+      "pregunta": "Un electrodo enzimático de urea funciona porque:",
+      "opciones": [
+        "La urea atraviesa una membrana de vidrio",
+        "La ureasa convierte la urea en amonio, que sí se mide",
+        "La urea se reduce en el cátodo"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un biosensor sobre un ISE.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Urea (la ureasa la convierte en amonio, que sí se mide); glucosa"
+    },
+    {
+      "id": "t24-q33",
+      "pregunta": "Un ISFET es:",
+      "opciones": [
+        "Un electrodo de vidrio de litio",
+        "Una sonda de oxígeno galvánica",
+        "Un transistor de efecto de campo sensible a iones, sin vidrio, robusto y muy pequeño"
+      ],
+      "correcta": 2,
+      "explicacion": "Algunos autores no lo cuentan entre los ISE.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1 y Dudas",
+      "apartado": "2.1",
+      "evidencia": "| ISFET | Un transistor de efecto de campo sensible a iones | pH y otros; sin vidrio, robusto, muy pequeño |"
+    },
+    {
+      "id": "t24-q34",
+      "pregunta": "En la respuesta de Nernst de un ISE, el signo del término logarítmico es:",
+      "opciones": [
+        "Positivo para cationes y negativo para aniones",
+        "Siempre positivo",
+        "Siempre negativo"
+      ],
+      "correcta": 0,
+      "explicacion": "Y la pendiente depende de la carga.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El signo es positivo para cationes y negativo para aniones."
+    },
+    {
+      "id": "t24-q35",
+      "pregunta": "Un coeficiente de selectividad de 10⁻³ significa que:",
+      "opciones": [
+        "El interferente da mil veces más señal",
+        "Hace falta mil veces más interferente que analito para dar la misma señal",
+        "El electrodo es específico"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuanto más pequeño, mejor.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Un coeficiente de 10⁻³ significa que hace falta mil veces más interferente que analito para producir la misma señal."
+    },
+    {
+      "id": "t24-q36",
+      "pregunta": "Como la respuesta de un ISE es logarítmica:",
+      "opciones": [
+        "El error absoluto es constante",
+        "No hay error a concentraciones altas",
+        "El error relativo es el mismo en todo el intervalo"
+      ],
+      "correcta": 2,
+      "explicacion": "1 mV ≈ 4 % en un monovalente.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La respuesta es logarítmica, así que el error relativo es el mismo en todo el intervalo."
+    },
+    {
+      "id": "t24-q37",
+      "pregunta": "El límite de detección de un electrodo selectivo es:",
+      "opciones": [
+        "Donde la recta de calibrado se dobla",
+        "Donde la pendiente es 59,16 mV",
+        "El punto de máxima selectividad"
+      ],
+      "correcta": 0,
+      "explicacion": "Por encima, intervalo lineal.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "límite de detección (donde la recta se dobla)"
+    },
+    {
+      "id": "t24-q38",
+      "pregunta": "Una desventaja de los electrodos selectivos es que:",
+      "opciones": [
+        "No sirven con muestras coloreadas",
+        "Necesitan calibrarse a menudo",
+        "Destruyen la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "No importa el color ni la turbidez y no destruyen la muestra.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Amplísimo intervalo de concentraciones | Necesita calibrar a menudo |"
+    },
+    {
+      "id": "t24-q39",
+      "pregunta": "En la calibración directa con un ISE se representa:",
+      "opciones": [
+        "E frente a la concentración",
+        "La concentración frente al tiempo",
+        "E frente al logaritmo de la concentración"
+      ],
+      "correcta": 2,
+      "explicacion": "Sale una recta de pendiente ≈ 59,16/n mV.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "se representa E frente al logaritmo de la concentración"
+    },
+    {
+      "id": "t24-q40",
+      "pregunta": "Al medir fluoruro con ISE, por encima de pH 5,5 interfiere:",
+      "opciones": [
+        "El OH⁻, por su parecido de tamaño y carga con el F⁻",
+        "El HF, que el electrodo no ve",
+        "El Na⁺"
+      ],
+      "correcta": 0,
+      "explicacion": "Por debajo de pH 5, el fluoruro se protona a HF.",
+      "fuente": "Documentación de fabricante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "por encima, el OH⁻ interfiere por su parecido de tamaño y carga con el F⁻."
+    },
+    {
+      "id": "t24-q41",
+      "pregunta": "Para usar el método de adiciones patrón hay que conocer la pendiente real del electrodo, que se comprueba con:",
+      "opciones": [
+        "Un único patrón",
+        "Dos patrones separados una década",
+        "El agua destilada"
+      ],
+      "correcta": 1,
+      "explicacion": "Es más lento que la calibración directa.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "que se comprueba con dos patrones separados una década."
+    },
+    {
+      "id": "t24-q42",
+      "pregunta": "De los tres métodos con un ISE, el más exacto es:",
+      "opciones": [
+        "La calibración directa",
+        "Las adiciones patrón",
+        "La valoración potenciométrica con el ISE como detector"
+      ],
+      "correcta": 2,
+      "explicacion": "No depende del valor absoluto del potencial.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Es el más exacto de los tres, porque no depende del valor absoluto del potencial sino de dónde salta."
+    },
+    {
+      "id": "t24-q43",
+      "pregunta": "Con un ISE y muchas muestras de matriz sencilla, conviene:",
+      "opciones": [
+        "La calibración directa",
+        "Las adiciones patrón",
+        "La valoración"
+      ],
+      "correcta": 0,
+      "explicacion": "Adiciones si la matriz es complicada; valoración si se quiere exactitud.",
+      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "directa si la matriz es sencilla y hay muchas muestras; adiciones patrón si la matriz es complicada; valoración si se quiere exactitud."
+    },
+    {
+      "id": "t24-q44",
+      "pregunta": "La conductancia, inversa de la resistencia, se mide en:",
+      "opciones": [
+        "Ohmios (Ω)",
+        "Siemens (S)",
+        "Siemens por metro"
+      ],
+      "correcta": 1,
+      "explicacion": "La conductividad es S/m.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Conductancia | G | G = 1 / R | S (siemens) |"
+    },
+    {
+      "id": "t24-q45",
+      "pregunta": "La resistividad de un agua es:",
+      "opciones": [
+        "La inversa de la constante de célula",
+        "La conductancia por la temperatura",
+        "La inversa de la conductividad, en Ω·cm"
+      ],
+      "correcta": 2,
+      "explicacion": "ρ = 1/κ.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Resistividad | ρ | ρ = 1 / κ | Ω·cm |"
+    },
+    {
+      "id": "t24-q46",
+      "pregunta": "El agua ultrapura se caracteriza mejor por su resistividad, que llega a:",
+      "opciones": [
+        "18,2 MΩ·cm",
+        "18,2 Ω·cm",
+        "1 413 µS/cm"
+      ],
+      "correcta": 0,
+      "explicacion": "Su conductividad es bajísima.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "el agua ultrapura llega a 18,2 MΩ·cm"
+    },
+    {
+      "id": "t24-q47",
+      "pregunta": "La constante de célula se determina con un patrón de KCl como:",
+      "opciones": [
+        "K = G(medida) / κ(patrón)",
+        "K = κ(patrón) / G(medida)",
+        "K = κ(patrón) × G(medida)"
+      ],
+      "correcta": 1,
+      "explicacion": "No se calibra el aparato contra una escala.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "se determina la constante de la célula con una disolución patrón de KCl de conductividad conocida:"
+    },
+    {
+      "id": "t24-q48",
+      "pregunta": "Para determinar la constante de célula, el patrón de KCl se elige:",
+      "opciones": [
+        "Siempre el más concentrado",
+        "Siempre el de 147 µS/cm",
+        "Del mismo orden de magnitud que las muestras"
+      ],
+      "correcta": 2,
+      "explicacion": "Así la calibración es representativa.",
+      "fuente": "Catálogos de patrones de KCl · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Se elige el patrón del mismo orden de magnitud que las muestras."
+    },
+    {
+      "id": "t24-q49",
+      "pregunta": "El patrón de KCl 0,1 mol/L tiene a 25 °C una conductividad de:",
+      "opciones": [
+        "12 880 µS/cm",
+        "1 413 µS/cm",
+        "147 µS/cm"
+      ],
+      "correcta": 0,
+      "explicacion": "Datos de catálogo de proveedor.",
+      "fuente": "Catálogos de patrones de KCl · apunte §2.4 y Dudas",
+      "apartado": "2.4",
+      "evidencia": "| KCl 0,1 mol/L | 12 880 µS/cm |"
+    },
+    {
+      "id": "t24-q50",
+      "pregunta": "La constante de célula debe volver a comprobarse periódicamente porque:",
+      "opciones": [
+        "El KCl caduca cada día",
+        "El platinado de los electrodos se degrada con el uso y la suciedad",
+        "La norma lo exige cada hora"
+      ],
+      "correcta": 1,
+      "explicacion": "Una película de grasa también la cambia.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "porque el platinado de los electrodos se degrada con el uso y con la suciedad."
+    },
+    {
+      "id": "t24-q51",
+      "pregunta": "La célula de conductividad de dos electrodos de platino platinado:",
+      "opciones": [
+        "No tiene contacto con el líquido",
+        "Es la mejor para aguas muy sucias",
+        "Es buena en conductividades bajas y sufre polarización en las altas"
+      ],
+      "correcta": 2,
+      "explicacion": "Para aguas sucias, la inductiva.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| De dos electrodos | Dos placas de platino platinado enfrentadas | Lo habitual en laboratorio. Buena en conductividades bajas; en las altas sufre polarización |"
+    },
+    {
+      "id": "t24-q52",
+      "pregunta": "Antes de medir la conductividad, la célula se enjuaga con:",
+      "opciones": [
+        "La propia muestra",
+        "Ácido nítrico",
+        "Alcohol"
+      ],
+      "correcta": 0,
+      "explicacion": "Y sin burbujas entre las placas.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q53",
+      "pregunta": "Con una constante de célula de 1,0 cm⁻¹, se mide una conductancia de 0,50 mS. La conductividad es:",
+      "opciones": [
+        "50 µS/cm",
+        "500 µS/cm",
+        "0,50 µS/cm"
+      ],
+      "correcta": 1,
+      "explicacion": "κ = G · K = 0,50 mS × 1,0 cm⁻¹ = 0,50 mS/cm = 500 µS/cm.",
+      "fuente": "Doctrina · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Conductividad | κ | κ = G · K |"
+    },
+    {
+      "id": "t24-q54",
+      "pregunta": "Las sondas de oxígeno disuelto llevan típicamente:",
+      "opciones": [
+        "Electrolito de sulfito y membrana de vidrio",
+        "Membrana de LaF₃",
+        "Electrolito de KCl y membrana de PTFE o polietileno"
+      ],
+      "correcta": 2,
+      "explicacion": "Detalle de fabricante.",
+      "fuente": "Documentación de fabricante · apunte §2.5 y Dudas",
+      "apartado": "2.5",
+      "evidencia": "En las dos: electrolito interno (típicamente KCl) y membrana de PTFE o polietileno, sujeta con una junta."
+    },
+    {
+      "id": "t24-q55",
+      "pregunta": "En una sonda de oxígeno galvánica, el ánodo es de:",
+      "opciones": [
+        "Plomo o cinc",
+        "Plata",
+        "Oro"
+      ],
+      "correcta": 0,
+      "explicacion": "En la polarográfica, el ánodo es de plata.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Ánodo | Plata | Plomo o cinc |"
+    },
+    {
+      "id": "t24-q56",
+      "pregunta": "Al ponerla en marcha, la sonda polarográfica (tipo Clark):",
+      "opciones": [
+        "Está lista de inmediato",
+        "Necesita esperar a que se polarice",
+        "Consume su ánodo enseguida"
+      ],
+      "correcta": 1,
+      "explicacion": "La galvánica está lista de inmediato.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Puesta en marcha | Hay que esperar a que polarice | Lista de inmediato |"
+    },
+    {
+      "id": "t24-q57",
+      "pregunta": "El cero de una sonda de oxígeno disuelto se ajusta con:",
+      "opciones": [
+        "Aire saturado de humedad",
+        "Agua del grifo",
+        "Una disolución de sulfito sódico"
+      ],
+      "correcta": 2,
+      "explicacion": "El 100 %, en aire saturado de humedad.",
+      "fuente": "Documentación de fabricante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "el cero, con una disolución de sulfito sódico."
+    },
+    {
+      "id": "t24-q58",
+      "pregunta": "Al subir la temperatura del agua, la solubilidad del oxígeno:",
+      "opciones": [
+        "Baja",
+        "Sube",
+        "No cambia"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso hay que corregir la temperatura.",
+      "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Temperatura: la solubilidad del oxígeno baja al subir la temperatura."
+    },
+    {
+      "id": "t24-q59",
+      "pregunta": "En un agua salina, la cantidad de oxígeno disuelto a saturación es:",
+      "opciones": [
+        "Mayor que en agua dulce",
+        "Menor que en agua dulce",
+        "Igual"
+      ],
+      "correcta": 1,
+      "explicacion": "Cuanta más sal, menos oxígeno.",
+      "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Salinidad: cuanta más sal, menos oxígeno se disuelve."
+    },
+    {
+      "id": "t24-q60",
+      "pregunta": "Una lectura de oxígeno disuelto del 115 % de saturación indica:",
+      "opciones": [
+        "Un error seguro del equipo",
+        "Que la membrana está rota",
+        "Sobresaturación, que la mayoría de los equipos pueden leer"
+      ],
+      "correcta": 2,
+      "explicacion": "El método cubre del 1 % al 100 %, y muchos equipos leen por encima.",
+      "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "la mayoría de los equipos leen también por encima de 100 %: la sobresaturación."
+    },
+    {
+      "id": "t24-q61",
+      "pregunta": "El sensor óptico de oxígeno es preferible:",
+      "opciones": [
+        "En aguas muy coloreadas o turbias, donde el Winkler falla",
+        "Solo en agua destilada",
+        "Cuando se puede agitar mucho"
+      ],
+      "correcta": 0,
+      "explicacion": "No consume oxígeno ni necesita agitación.",
+      "fuente": "ISO 17289:2014 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "preferible en aguas muy coloreadas o turbias y donde el Winkler falla"
+    },
+    {
+      "id": "t24-q62",
+      "pregunta": "Según el RD 3/2023, la incertidumbre de medida (k = 2) exigida para el fluoruro es del:",
+      "opciones": [
+        "15 %",
+        "20 %",
+        "0,2 unidades"
+      ],
+      "correcta": 1,
+      "explicacion": "15 % es la de la conductividad; 0,2 unidades, la del pH.",
+      "fuente": "RD 3/2023, anexo III, parte D · apunte §3",
+      "apartado": "3",
+      "evidencia": "Incertidumbre de medida (k = 2): conductividad 15 %, fluoruro 20 %."
+    },
+    {
+      "id": "t24-q63",
+      "pregunta": "Según el RD 3/2023, la incertidumbre de medida (k = 2) exigida para la conductividad es del:",
+      "opciones": [
+        "20 %",
+        "50 %",
+        "15 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Expresada como porcentaje del valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte D · apunte §3",
+      "apartado": "3",
+      "evidencia": "Incertidumbre de medida (k = 2): conductividad 15 %, fluoruro 20 %."
+    },
+    {
+      "id": "t24-q64",
+      "pregunta": "Calcio, potasio y nitrato se miden con electrodos selectivos de:",
+      "opciones": [
+        "Membrana líquida, con ajustador de fuerza iónica",
+        "Membrana cristalina de LaF₃",
+        "Vidrio sensible al H⁺"
+      ],
+      "correcta": 0,
+      "explicacion": "Ojo al coeficiente de selectividad frente a la matriz.",
+      "fuente": "Doctrina · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Calcio, potasio, nitrato | Electrodo selectivo de membrana líquida (ionóforo en PVC) |"
     }
   ],
   "supuestos": [
@@ -821,6 +1547,252 @@
           "correcta": 2,
           "explicacion": "El Al³⁺ y el Fe³⁺ forman complejos con el fluoruro y lo retiran de la disolución: el electrodo no lo ve y el resultado sale bajo. El CDTA del TISAB los secuestra para que se mida el fluoruro total. Las otras dos funciones del TISAB (fuerza iónica y tampón de pH) también son necesarias, pero la que resuelve este problema concreto es el acomplejamiento. Y ningún electrodo es específico: todos son selectivos.",
           "fuente": "Documentación de fabricante; bibliografía"
+        }
+      ]
+    },
+    {
+      "id": "t24-s02",
+      "titulo": "Supuesto 2. Fluoruro en un agua de consumo",
+      "enunciado": "Se determina el fluoruro de varias aguas de consumo con un electrodo selectivo y calibración directa. Además llega un agua residual industrial de matriz complicada, con aluminio y hierro, en la que también hay que medir fluoruro.",
+      "preguntas": [
+        {
+          "id": "t24-s02-q1",
+          "pregunta": "¿De qué es la membrana del electrodo?",
+          "opciones": [
+            "Un monocristal de fluoruro de lantano dopado con europio",
+            "PVC con un ionóforo",
+            "Vidrio de litio",
+            "Plata recubierta de AgCl"
+          ],
+          "correcta": 0,
+          "explicacion": "Membrana cristalina, de las más selectivas.",
+          "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "| De estado sólido o cristalina | Un monocristal o una pastilla prensada de sal poco soluble | F⁻ (monocristal de LaF₃ dopado con europio)"
+        },
+        {
+          "id": "t24-s02-q2",
+          "pregunta": "¿A qué disoluciones añade TISAB?",
+          "opciones": [
+            "Solo a las muestras",
+            "A patrones y muestras, el mismo volumen",
+            "Solo a los patrones",
+            "A ninguna, en agua de consumo"
+          ],
+          "correcta": 1,
+          "explicacion": "Para que la fuerza iónica sea la misma en todos.",
+          "fuente": "Documentación de fabricante · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Se añade el mismo volumen de una disolución concentrada a los patrones y a las muestras."
+        },
+        {
+          "id": "t24-s02-q3",
+          "pregunta": "¿Por qué el TISAB tampona a pH 5-5,5 y no más ácido?",
+          "opciones": [
+            "Porque el electrodo se disuelve en ácido",
+            "Porque el CDTA no funciona en ácido",
+            "Porque por debajo el fluoruro se protona a HF y HF₂⁻, que el electrodo no ve",
+            "Porque el OH⁻ interfiere en medio ácido"
+          ],
+          "correcta": 2,
+          "explicacion": "Por encima de 5,5 interfiere el OH⁻.",
+          "fuente": "Documentación de fabricante · apunte §2.3 y Dudas",
+          "apartado": "2.3",
+          "evidencia": "por debajo, el fluoruro se protona a HF y HF₂⁻, que el electrodo no ve"
+        },
+        {
+          "id": "t24-s02-q4",
+          "pregunta": "Para el agua residual de matriz complicada, ¿qué método conviene?",
+          "opciones": [
+            "Calibración directa con patrones en agua destilada",
+            "Dilución hasta que no se vea el aluminio",
+            "No se puede medir con ISE",
+            "Adiciones patrón, porque la matriz es la misma antes y después y se cancela"
+          ],
+          "correcta": 3,
+          "explicacion": "Es el método cuando no se sabe reproducir la matriz.",
+          "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "la medida de antes y la de después se hacen en la misma muestra, así que todo lo que la matriz hace al electrodo afecta igual a las dos y se cancela."
+        },
+        {
+          "id": "t24-s02-q5",
+          "pregunta": "¿Qué incertidumbre exige el RD 3/2023 al método de fluoruro?",
+          "opciones": [
+            "20 % (k = 2)",
+            "15 % (k = 2)",
+            "0,2 unidades",
+            "No exige ninguna"
+          ],
+          "correcta": 0,
+          "explicacion": "Como porcentaje del valor paramétrico.",
+          "fuente": "RD 3/2023, anexo III, parte D · apunte §3",
+          "apartado": "3",
+          "evidencia": "Incertidumbre de medida (k = 2): conductividad 15 %, fluoruro 20 %."
+        }
+      ]
+    },
+    {
+      "id": "t24-s03",
+      "titulo": "Supuesto 3. Calibrar y usar un conductivímetro",
+      "enunciado": "Se va a medir la conductividad de aguas de montaña, de unos 100-200 µS/cm. Para comprobar la célula se usa un patrón de KCl de 1 413 µS/cm, con el que la célula da una conductancia de 942 µS. Las muestras se miden a 18 °C.",
+      "preguntas": [
+        {
+          "id": "t24-s03-q1",
+          "pregunta": "¿Cuál es la constante de la célula?",
+          "opciones": [
+            "0,67 cm⁻¹",
+            "1,50 cm⁻¹",
+            "1,00 cm⁻¹",
+            "2,00 cm⁻¹"
+          ],
+          "correcta": 1,
+          "explicacion": "K = κ(patrón) / G = 1 413 / 942 = 1,50 cm⁻¹. 0,67 es invertir el cociente.",
+          "fuente": "Doctrina · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "se determina la constante de la célula con una disolución patrón de KCl de conductividad conocida:"
+        },
+        {
+          "id": "t24-s03-q2",
+          "pregunta": "Para aguas de 100-200 µS/cm, ¿qué patrón sería el más adecuado?",
+          "opciones": [
+            "KCl 0,1 mol/L, de 12 880 µS/cm",
+            "KCl 0,01 mol/L, de 1 413 µS/cm, siempre",
+            "KCl 0,001 mol/L, de 147 µS/cm",
+            "Agua destilada"
+          ],
+          "correcta": 2,
+          "explicacion": "El patrón se elige del mismo orden de magnitud que las muestras.",
+          "fuente": "Catálogos de patrones de KCl · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| KCl 0,001 mol/L | 147 µS/cm |"
+        },
+        {
+          "id": "t24-s03-q3",
+          "pregunta": "Las muestras se miden a 18 °C. ¿Qué hay que tener en cuenta?",
+          "opciones": [
+            "Nada: la conductividad no depende de la temperatura",
+            "Restar un 2 % fijo",
+            "Calentarlas a 25 °C antes de medir",
+            "Referir el resultado a una temperatura (25 °C habitual; el RD usa 20 °C) y decirlo"
+          ],
+          "correcta": 3,
+          "explicacion": "La conductividad sube del orden de un 2 % por grado.",
+          "fuente": "Doctrina · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Comparar dos conductividades sin decir a qué temperatura están referidas no significa nada"
+        },
+        {
+          "id": "t24-s03-q4",
+          "pregunta": "El agua del equipo de purificación del laboratorio, ¿cómo se controla mejor?",
+          "opciones": [
+            "Por su resistividad, que en agua ultrapura llega a 18,2 MΩ·cm",
+            "Por su conductividad en mS/m",
+            "Por su pH",
+            "Por su oxígeno disuelto"
+          ],
+          "correcta": 0,
+          "explicacion": "Con conductividades tan bajas, la resistividad es más cómoda.",
+          "fuente": "Doctrina · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "agua ultrapura (que se expresa mejor como resistividad: el agua ultrapura llega a 18,2 MΩ·cm)"
+        },
+        {
+          "id": "t24-s03-q5",
+          "pregunta": "Una lectura salta sin sentido. ¿Qué revisa en la célula?",
+          "opciones": [
+            "Que esté conectada a corriente continua",
+            "Que no haya burbujas entre las placas y que esté sumergida hasta su marca sin tocar fondo ni paredes",
+            "Que tenga electrolito de KCl dentro",
+            "Que la membrana sea de PTFE"
+          ],
+          "correcta": 1,
+          "explicacion": "La célula de conductividad no lleva membrana ni electrolito.",
+          "fuente": "Doctrina · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "sin burbujas entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes"
+        }
+      ]
+    },
+    {
+      "id": "t24-s04",
+      "titulo": "Supuesto 4. Oxígeno disuelto en un embalse de montaña",
+      "enunciado": "En un embalse a 1500 m de altitud se mide el oxígeno disuelto con una sonda galvánica que lleva meses en uso. El agua está fría y, en una zona con floración de algas, la sonda da un 118 % de saturación.",
+      "preguntas": [
+        {
+          "id": "t24-s04-q1",
+          "pregunta": "Al encender la sonda galvánica:",
+          "opciones": [
+            "Hay que esperar a que polarice",
+            "Hay que aplicarle una tensión externa",
+            "Hay que cambiar el ánodo",
+            "Está lista de inmediato, porque genera su propia fem"
+          ],
+          "correcta": 3,
+          "explicacion": "La polarográfica es la que necesita polarizar.",
+          "fuente": "Documentación de fabricante · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Puesta en marcha | Hay que esperar a que polarice | Lista de inmediato |"
+        },
+        {
+          "id": "t24-s04-q2",
+          "pregunta": "Por la altitud, ¿qué corrección es imprescindible?",
+          "opciones": [
+            "La de presión atmosférica",
+            "Ninguna: la altitud no influye",
+            "La de conductividad",
+            "La de pH"
+          ],
+          "correcta": 0,
+          "explicacion": "La saturación depende de la presión parcial del oxígeno del aire.",
+          "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Presión atmosférica o altitud: la saturación depende de la presión parcial de oxígeno del aire."
+        },
+        {
+          "id": "t24-s04-q3",
+          "pregunta": "Al estar el agua fría, la solubilidad del oxígeno es:",
+          "opciones": [
+            "Menor que en agua templada",
+            "Mayor que en agua templada",
+            "Igual",
+            "Nula"
+          ],
+          "correcta": 1,
+          "explicacion": "La solubilidad baja al subir la temperatura.",
+          "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Temperatura: la solubilidad del oxígeno baja al subir la temperatura."
+        },
+        {
+          "id": "t24-s04-q4",
+          "pregunta": "Tras meses de uso, la sonda responde cada vez peor. ¿Qué sospecha?",
+          "opciones": [
+            "Que el cátodo de oro se ha oxidado",
+            "Que necesita tensión de polarización",
+            "Que el ánodo se ha consumido y hay que reponerlo",
+            "Que el agua del embalse es demasiado pura"
+          ],
+          "correcta": 2,
+          "explicacion": "En las galvánicas, el ánodo se consume.",
+          "fuente": "Documentación de fabricante · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Desgaste | Más estable | El ánodo se consume y hay que reponerlo |"
+        },
+        {
+          "id": "t24-s04-q5",
+          "pregunta": "¿Cómo interpreta el 118 % de saturación junto a la floración?",
+          "opciones": [
+            "Un error seguro: el máximo es 100 %",
+            "Que la sonda consume oxígeno",
+            "Que falta corregir la salinidad",
+            "Sobresaturación, que la mayoría de los equipos pueden leer"
+          ],
+          "correcta": 3,
+          "explicacion": "La fotosíntesis puede sobresaturar el agua de oxígeno.",
+          "fuente": "UNE-EN ISO 5814:2013 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "la mayoría de los equipos leen también por encima de 100 %: la sobresaturación."
         }
       ]
     }
