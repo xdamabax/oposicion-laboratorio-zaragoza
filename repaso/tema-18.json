@@ -431,6 +431,286 @@
         "tipo": "esquema",
         "valor": "tsc-mup"
       }
+    },
+    {
+      "id": "t18-f56",
+      "anverso": "¿Por qué se analizan varios indicadores y no uno solo?",
+      "reverso": "Porque **ningún organismo cumple todas las condiciones** de un indicador fecal ideal. Por eso se usan **varios, cada uno para lo suyo**.",
+      "fuente": "OMS, guía del agua de consumo · apunte §1",
+      "etiquetas": [
+        "indicadores"
+      ],
+      "apartado": "1",
+      "evidencia": "Ningún organismo cumple todo. Por eso se usan varios, cada uno para lo suyo (apartado 2.2)."
+    },
+    {
+      "id": "t18-f57",
+      "anverso": "¿Qué parte de los análisis del agua se estudia en los temas 13, 16 y 36?",
+      "reverso": "**13**: técnicas y cálculos (filtración, NMP, bandeja, diluciones, concentración de *Legionella*). **16**: pruebas de identificación (oxidasa, indol, catalasa). **36**: **toma de muestras** (envases, tiosulfato, cámara de aire, muestreo de *Legionella*).",
+      "fuente": "Temario y reparto · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "| 36 | Toma de muestras: envases, tiosulfato, cámara de aire, muestreo de Legionella |"
+    },
+    {
+      "id": "t18-f58",
+      "anverso": "¿Por qué los colífagos se expresan en UFP y qué indica superar el valor de coliformes?",
+      "reverso": "Los colífagos, en **UFP** (unidades formadoras de **placas**), **porque son virus**. Superar los coliformes indica **mala desinfección o recontaminación**.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "los colífagos, en UFP (unidades formadoras de placas), porque son virus.",
+        "Si se supera: mala desinfección o recontaminación."
+      ]
+    },
+    {
+      "id": "t18-f59",
+      "anverso": "¿Qué indican los colífagos somáticos en el agua de consumo?",
+      "reverso": "La **eficacia del tratamiento frente a virus** (tema 15).",
+      "fuente": "OMS, guía del agua de consumo · apunte §2.2",
+      "etiquetas": [
+        "indicadores"
+      ],
+      "apartado": "2.2",
+      "evidencia": "| Colífagos somáticos | Eficacia del tratamiento frente a virus (tema 15) |"
+    },
+    {
+      "id": "t18-f60",
+      "anverso": "Según la ISO 19458, ¿cómo se transportan las muestras microbiológicas y cuándo se registra la temperatura?",
+      "reverso": "Analizar **el mismo día**; transporte **refrigerado a 5 ± 3 °C**, **sin congelar**; y **registrar la temperatura** si el transporte pasa de **8 horas**.",
+      "fuente": "UNE-EN ISO 19458 (resumen) · apunte §3",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3",
+      "evidencia": "registrar la temperatura si el transporte pasa de 8 horas"
+    },
+    {
+      "id": "t18-f61",
+      "anverso": "¿Por qué el examen dio 18 h como máximo para E. coli y coliformes, si el tema 36 habla de 6 y 24 h?",
+      "reverso": "Porque **las 18 h son el plazo de su norma de análisis** (ISO 9308, según el resumen de la entidad de acreditación noruega). Las 6 h «convenientes» y 24 h «máximas» del tema 36 son de **otro documento** (Ministerio de Defensa, 2016) y para otra pregunta.",
+      "fuente": "Norsk Akkreditering (2023) · apunte §3 y Dudas declaradas",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3",
+      "evidencia": "El examen preguntó por el máximo de E. coli y coliformes, y la respuesta oficial es 18 horas, la de su norma de análisis."
+    },
+    {
+      "id": "t18-f62",
+      "anverso": "¿Qué método de coliformes era el de referencia antes de la Orden SCO/778/2009 y qué autorizó esta?",
+      "reverso": "Con el RD 140/2003, el **agar lactosa TTC Tergitol**. La orden, tras un estudio de equivalencia, autorizó el **ACC** (agar cromogénico) y el **DST** (sustrato definido), hoy autorizados por el RD 3/2023.",
+      "fuente": "Orden SCO/778/2009 · apunte §4",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "4",
+      "evidencia": "Con el decreto anterior (RD 140/2003), el método de referencia de coliformes era el agar lactosa TTC Tergitol."
+    },
+    {
+      "id": "t18-f63",
+      "anverso": "¿Qué lleva el agar cromogénico de coliformes, además de los dos sustratos cromógenos?",
+      "reverso": "**Tergitol 7** y, en la fórmula de la orden, **vancomicina y cefsulodina**, que lo hacen **selectivo**; y **triptófano**, para poder hacer el **indol**.",
+      "fuente": "Orden SCO/778/2009 · apunte §5.1",
+      "etiquetas": [
+        "cca"
+      ],
+      "apartado": "5.1",
+      "evidencia": "El medio lleva además Tergitol 7 y, en la fórmula de la orden, vancomicina y cefsulodina, que lo hacen selectivo; y triptófano, para poder hacer el indol."
+    },
+    {
+      "id": "t18-f64",
+      "anverso": "En CCA salen colonias azul claro o turquesa. ¿Son E. coli?",
+      "reverso": "**No.** Son bacterias con algo de **β-glucuronidasa** pero **sin β-galactosidasa**. *E. coli* es **azul oscuro a violeta**.",
+      "fuente": "Ficha de PanReac · apunte §5.1",
+      "etiquetas": [
+        "cca"
+      ],
+      "apartado": "5.1",
+      "evidencia": "Algunas con algo de β-glucuronidasa pero sin β-galactosidasa salen azul claro o turquesa (ficha de PanReac): no son E. coli."
+    },
+    {
+      "id": "t18-f65",
+      "anverso": "Enterococos en Slanetz y Bartley: aspecto de las colonias y qué hacer con agua bruta.",
+      "reverso": "Colonias **rojas, granates o rosas**, **lisas y convexas**; algunas cepas, **muy pálidas**. Agua bruta: **4 h a 37 °C y después 40 h a 44 °C**. A 44 °C el medio es más selectivo, pero algunos enterococos crecen mal.",
+      "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+      "etiquetas": [
+        "enterococos"
+      ],
+      "apartado": "5.2",
+      "evidencia": [
+        "Colonias típicas: rojas, granates o rosas, lisas y convexas. Algunas cepas dan colonias muy pálidas.",
+        "Para agua bruta: 4 h a 37 °C y después 40 h a 44 °C."
+      ]
+    },
+    {
+      "id": "t18-f66",
+      "anverso": "¿Qué define a un enterococo según la guía británica?",
+      "reverso": "**Grampositivo** en parejas o cadenas, **antígeno D de Lancefield**, **catalasa negativo**, crece con **bilis y azida** y **a 44 °C**, hidroliza la **esculina** y tiene **β-glucosidasa**.",
+      "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+      "etiquetas": [
+        "enterococos"
+      ],
+      "apartado": "5.2",
+      "evidencia": "grampositivo en parejas o cadenas, antígeno D de Lancefield, catalasa negativo, crece con bilis y azida y a 44 °C, hidroliza la esculina y tiene β-glucosidasa."
+    },
+    {
+      "id": "t18-f67",
+      "anverso": "¿A qué temperatura se cuentan los clostridios sulfitorreductores y C. perfringens?",
+      "reverso": "La guía británica cuenta los **clostridios sulfitorreductores** en general **a 37 °C**, y ***C. perfringens* a 44 °C**. La temperatura marca la diferencia.",
+      "fuente": "Guía británica del agua de consumo, parte 6 · apunte §5.3",
+      "etiquetas": [
+        "clostridios"
+      ],
+      "apartado": "5.3",
+      "evidencia": "la guía británica cuenta los clostridios sulfitorreductores en general a 37 °C, y C. perfringens a 44 °C."
+    },
+    {
+      "id": "t18-f68",
+      "anverso": "TSC: ¿cómo se prepara la placa, qué colonias son presuntivas y cuántas se confirman?",
+      "reverso": "La membrana se cubre con **una capa fina de TSC fundido**. Presuntivas: **negras**, también **grises o gris-amarillentas** (a veces incoloras). Se confirman **todas** las típicas o **al menos 10**; el método completo dura **al menos 48 h**.",
+      "fuente": "Ficha de Thermo (ISO 14189); SZÚ · apunte §5.3",
+      "etiquetas": [
+        "clostridios"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "Colonias presuntivas: negras; también grises o gris-amarillentas.",
+        "Se prueban todas las colonias típicas o al menos 10, y se recalcula el recuento (SZÚ)."
+      ]
+    },
+    {
+      "id": "t18-f69",
+      "anverso": "Agar CN: ¿para qué sirven el ácido nalidíxico y las sales que lleva?",
+      "reverso": "**Cetrimida**: selectiva. **Ácido nalidíxico**: contra ***Klebsiella*, *Proteus* y *Providencia***. **Sulfato potásico y cloruro magnésico**: estimulan la **piocianina**.",
+      "fuente": "Fichas de Condalab y PanReac · apunte §5.4",
+      "etiquetas": [
+        "pseudomonas"
+      ],
+      "apartado": "5.4",
+      "evidencia": [
+        "ácido nalidíxico (N), contra Klebsiella, Proteus y Providencia;",
+        "sulfato potásico y cloruro magnésico, que estimulan el pigmento piocianina."
+      ]
+    },
+    {
+      "id": "t18-f70",
+      "anverso": "¿Dónde es parámetro P. aeruginosa y con qué norma se analiza?",
+      "reverso": "**Solo en los grifos asistenciales de las unidades de cuidados aumentados** (< 1 UFC/100 mL). Norma: **ISO 16266**.",
+      "fuente": "RD 3/2023 · apunte §5.4",
+      "etiquetas": [
+        "pseudomonas",
+        "normativa"
+      ],
+      "apartado": "5.4",
+      "evidencia": "Solo es parámetro en los grifos asistenciales de las unidades de cuidados aumentados (< 1 UFC/100 mL). Su norma es la ISO 16266."
+    },
+    {
+      "id": "t18-f71",
+      "anverso": "Confirmación de Legionella: ¿cuántas colonias y en qué placas?",
+      "reverso": "Al menos **tres colonias de cada tipo**, en **dos placas**: **BCYE** y **BCYE sin L-cisteína** (o agar sangre). Tras **2-3 días a 36 °C**: crece solo en BCYE → *Legionella*.",
+      "fuente": "Guía británica de Legionella (2020) · apunte §5.5",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "5.5",
+      "evidencia": "se resiembran al menos tres colonias de cada tipo en dos placas: BCYE y BCYE sin L-cisteína (o agar sangre)."
+    },
+    {
+      "id": "t18-f72",
+      "anverso": "¿Hay Legionella que crezcan sin cisteína?",
+      "reverso": "***L. oakridgensis*** y ***L. spiritensis*** pueden crecer **débilmente** sin cisteína **después del primer aislamiento**.",
+      "fuente": "Guía británica de Legionella (2020) · apunte §5.5",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "5.5",
+      "evidencia": "L. oakridgensis y L. spiritensis pueden crecer débilmente sin cisteína después del primer aislamiento."
+    },
+    {
+      "id": "t18-f73",
+      "anverso": "Confirmada Legionella, ¿qué se hace después?",
+      "reverso": "**Aglutinación con látex** para separar ***L. pneumophila* serogrupo 1** de los **serogrupos 2-15**. El RD pide identificar *L. pneumophila* y su serogrupo **si se superan 100 UFC/L**.",
+      "fuente": "Guía británica de Legionella (2020); RD 3/2023 · apunte §5.5",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "5.5",
+      "evidencia": "aglutinación con látex para separar L. pneumophila serogrupo 1 de los serogrupos 2-15 (tema 16)."
+    },
+    {
+      "id": "t18-f74",
+      "anverso": "¿Qué E. coli no detecta la ISO 9308-2?",
+      "reverso": "Las **que no tienen β-glucuronidasa**, como **muchas enterohemorrágicas**.",
+      "fuente": "Resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "6.1",
+      "evidencia": "no detecta las E. coli sin β-glucuronidasa, como muchas enterohemorrágicas."
+    },
+    {
+      "id": "t18-f75",
+      "anverso": "¿Con qué norma se corresponde el Enterolert-DW y qué enzima detecta?",
+      "reverso": "Publicado como **ISO 7899-3** (NMP), según el fabricante. Detecta la **β-glucosidasa**, que rompe el orto-nitrofenil-β-D-glucósido.",
+      "fuente": "IDEXX · apunte §6.2",
+      "etiquetas": [
+        "enterococos"
+      ],
+      "apartado": "6.2",
+      "evidencia": "Es el método alternativo autorizado para enterococos, publicado como ISO 7899-3 (NMP), según el fabricante."
+    },
+    {
+      "id": "t18-f76",
+      "anverso": "¿Qué es Legiolert y por qué no sustituye al cultivo?",
+      "reverso": "Un **NMP de *L. pneumophila*** en bandeja de **96 pocillos**, **39 °C durante 7 días**. **No es el método de referencia** (1322 #25): lo es el **cultivo de la ISO 11731**.",
+      "fuente": "Tema 13 · apunte §6.3",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "6.3",
+      "evidencia": "NMP de L. pneumophila en bandeja de 96 pocillos, 39 °C durante 7 días (tema 13)."
+    },
+    {
+      "id": "t18-f77",
+      "anverso": "Recuento a 22 °C: ¿se cuentan mohos y levaduras? ¿Para qué sirve el de 37 °C?",
+      "reverso": "**Los mohos no se cuentan**; **algunas levaduras sí**, porque parecen bacterias. El **recuento a 37 °C** avisa pronto de contaminación en **aguas subterráneas** poco contaminadas.",
+      "fuente": "Guía británica del agua de consumo, parte 7 · apunte §7",
+      "etiquetas": [
+        "heterotrofos"
+      ],
+      "apartado": "7",
+      "evidencia": [
+        "Los mohos no se cuentan; algunas levaduras, sí, porque parecen bacterias.",
+        "El recuento a 37 °C avisa pronto de contaminación en aguas subterráneas poco contaminadas."
+      ]
+    },
+    {
+      "id": "t18-f78",
+      "anverso": "¿Por qué el recuento a 22 °C se hace en profundidad y no por filtración?",
+      "reverso": "Porque se buscan **todas las bacterias cultivables**, **sin medio selectivo**, y el valor del RD se da **por mL**, no por 100 mL.",
+      "fuente": "Guía británica del agua de consumo, parte 7 · apunte §7",
+      "etiquetas": [
+        "heterotrofos"
+      ],
+      "apartado": "7",
+      "evidencia": "se buscan todas las bacterias cultivables, sin medio selectivo, y el valor del RD se da por mL, no por 100 mL."
+    },
+    {
+      "id": "t18-f79",
+      "anverso": "¿Cómo se cuentan los colífagos somáticos?",
+      "reverso": "Como **placas de lisis** sobre un **césped de la bacteria hospedadora**, en **UFP/100 mL**, según la **UNE-EN ISO 10705-2** (no se ha leído su procedimiento).",
+      "fuente": "UNE-EN ISO 10705-2 (idea general) · apunte §8",
+      "etiquetas": [
+        "colifagos"
+      ],
+      "apartado": "8",
+      "evidencia": "Se cuentan como placas de lisis sobre un césped de la bacteria hospedadora (UFP/100 mL), según la UNE-EN ISO 10705-2."
     }
   ],
   "test": [
@@ -718,6 +998,552 @@
       "correcta": 0,
       "explicacion": "Guía británica de Legionella.",
       "fuente": "SCA, Legionella (2020), parte 2"
+    },
+    {
+      "id": "t18-q34",
+      "pregunta": "Según la OMS, un buen indicador fecal debe:",
+      "opciones": [
+        "Sobrevivir en el agua como los patógenos fecales y responder al tratamiento como ellos",
+        "Multiplicarse en el agua para detectarlo mejor",
+        "Necesitar cultivos complejos y caros"
+      ],
+      "correcta": 0,
+      "explicacion": "Además, estar siempre en las heces en gran número y no multiplicarse en el agua.",
+      "fuente": "OMS, guía del agua de consumo · apunte §1",
+      "apartado": "1",
+      "evidencia": "sobreviva en el agua como los patógenos fecales, y responda al tratamiento como ellos;"
+    },
+    {
+      "id": "t18-q35",
+      "pregunta": "Según el reparto del temario, la toma de muestras (envases, tiosulfato, cámara de aire) se desarrolla en el tema:",
+      "opciones": [
+        "13",
+        "36",
+        "16"
+      ],
+      "correcta": 1,
+      "explicacion": "El 18 trata qué se analiza, con qué norma y cómo se confirma.",
+      "fuente": "Temario y reparto · apunte §1",
+      "apartado": "1",
+      "evidencia": "| 36 | Toma de muestras: envases, tiosulfato, cámara de aire, muestreo de Legionella |"
+    },
+    {
+      "id": "t18-q36",
+      "pregunta": "Según el RD 3/2023, el valor de no aptitud de las bacterias coliformes es:",
+      "opciones": [
+        "0 UFC/100 mL",
+        "1000 UFC/mL",
+        "100 UFC/100 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor paramétrico es 0; la no aptitud, 100.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Si se supera: mala desinfección o recontaminación. No aptitud: 100 UFC/100 mL"
+    },
+    {
+      "id": "t18-q37",
+      "pregunta": "A la salida del tratamiento, el valor de no aptitud del recuento de colonias a 22 °C es:",
+      "opciones": [
+        "1000 UFC/mL",
+        "100 UFC/mL",
+        "100 UFC/100 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "El valor paramétrico general es 100 UFC/mL.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "A la salida del tratamiento, no aptitud: 1000 UFC/1 mL"
+    },
+    {
+      "id": "t18-q38",
+      "pregunta": "El parámetro Clostridium perfringens del RD 3/2023:",
+      "opciones": [
+        "Excluye las esporas",
+        "Incluye las esporas, con valor 0 UFC en 100 mL",
+        "Tiene un valor de 100 UFC/L"
+      ],
+      "correcta": 1,
+      "explicacion": "100 UFC/L es Legionella.",
+      "fuente": "RD 3/2023, anexo I, parte A · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Clostridium perfringens (incluidas las esporas) | 0 | UFC en 100 mL |"
+    },
+    {
+      "id": "t18-q39",
+      "pregunta": "En los grifos asistenciales de las unidades de cuidados aumentados, el RD 3/2023 pide:",
+      "opciones": [
+        "Legionella < 100 UFC/L solamente",
+        "Solo E. coli 0/100 mL",
+        "Legionella «no detectable/L» y Pseudomonas aeruginosa < 1 UFC/100 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "Es donde aparece P. aeruginosa como parámetro.",
+      "fuente": "RD 3/2023, anexo I, parte A · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "En los grifos asistenciales de unidades de cuidados aumentados, «no detectable/L», y además Pseudomonas aeruginosa < 1 UFC/100 mL"
+    },
+    {
+      "id": "t18-q40",
+      "pregunta": "Frente a los virus y los protozoos, E. coli es:",
+      "opciones": [
+        "Mucho más sensible a la desinfección",
+        "Mucho más resistente a la desinfección",
+        "Igual de sensible"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso su ausencia no garantiza que no haya virus ni protozoos.",
+      "fuente": "OMS, guía del agua de consumo · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Es mucho más sensible a la desinfección que los virus y los protozoos"
+    },
+    {
+      "id": "t18-q41",
+      "pregunta": "Los enterococos intestinales son especialmente útiles:",
+      "opciones": [
+        "Para medir la eficacia frente a virus",
+        "Para valorar coliformes sin E. coli y tras reparar la red o poner tuberías nuevas",
+        "Para valorar las biopelículas en lugar del recuento a 22 °C"
+      ],
+      "correcta": 1,
+      "explicacion": "Sobreviven más que E. coli y resisten más el cloro.",
+      "fuente": "OMS, guía del agua de consumo · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Sirven para valorar los coliformes cuando no hay E. coli, y tras reparar la red o poner tuberías nuevas"
+    },
+    {
+      "id": "t18-q42",
+      "pregunta": "Según la ISO 19458, la temperatura de transporte de las muestras se registra si el transporte dura más de:",
+      "opciones": [
+        "1 hora",
+        "72 horas",
+        "8 horas"
+      ],
+      "correcta": 2,
+      "explicacion": "Transporte a 5 ± 3 °C, sin congelar.",
+      "fuente": "UNE-EN ISO 19458 (resumen) · apunte §3",
+      "apartado": "3",
+      "evidencia": "registrar la temperatura si el transporte pasa de 8 horas"
+    },
+    {
+      "id": "t18-q43",
+      "pregunta": "El tiempo máximo hasta el análisis de enterococos (ISO 7899-2) en una muestra a 5 ± 3 °C es:",
+      "opciones": [
+        "24 horas",
+        "12 horas",
+        "72 horas"
+      ],
+      "correcta": 0,
+      "explicacion": "6 h si se guarda a temperatura ambiente.",
+      "fuente": "Norsk Akkreditering (2023) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| ISO 7899-2 | Enterococos | 24 h (6 h si se guarda a temperatura ambiente) |"
+    },
+    {
+      "id": "t18-q44",
+      "pregunta": "El tiempo máximo hasta el análisis para el recuento de colonias a 22 °C (ISO 6222) es:",
+      "opciones": [
+        "18 horas",
+        "12 horas",
+        "48 horas"
+      ],
+      "correcta": 1,
+      "explicacion": "El más corto de la tabla.",
+      "fuente": "Norsk Akkreditering (2023) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| ISO 6222 | Recuento a 22 °C | 12 h |"
+    },
+    {
+      "id": "t18-q45",
+      "pregunta": "Para analizar solo las esporas de C. perfringens (ISO 14189), la muestra a 5 ± 3 °C puede esperar hasta:",
+      "opciones": [
+        "18 horas",
+        "6 horas",
+        "72 horas"
+      ],
+      "correcta": 2,
+      "explicacion": "18 h para las células vegetativas.",
+      "fuente": "Norsk Akkreditering (2023) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| ISO 14189 | C. perfringens | 18 h para las células vegetativas; 72 h para las esporas |"
+    },
+    {
+      "id": "t18-q46",
+      "pregunta": "Una muestra para Legionella que llegará en menos de 24 horas se transporta a:",
+      "opciones": [
+        "6-18 °C",
+        "5 ± 3 °C obligatoriamente",
+        "−20 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "De 24 a 48 h, a 5 ± 3 °C.",
+      "fuente": "RD 487/2022 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| RD 487/2022 | Legionella | < 24 h a 6-18 °C; de 24 a 48 h, a 5 ± 3 °C (tema 36) |"
+    },
+    {
+      "id": "t18-q47",
+      "pregunta": "La norma oficial del recuento de colonias a 22 °C es la:",
+      "opciones": [
+        "UNE-EN ISO 7899-2",
+        "UNE-EN ISO 6222",
+        "UNE-EN ISO 10705-2"
+      ],
+      "correcta": 1,
+      "explicacion": "7899-2: enterococos; 10705-2: colífagos.",
+      "fuente": "RD 3/2023, anexo III · apunte §4",
+      "apartado": "4",
+      "evidencia": "| Recuento a 22 °C | UNE-EN ISO 6222 | Siembra en agar nutritivo (extracto de levadura) |"
+    },
+    {
+      "id": "t18-q48",
+      "pregunta": "Un método alternativo nuevo para el agua de consumo necesita:",
+      "opciones": [
+        "Solo el certificado del fabricante",
+        "La acreditación del laboratorio, sin más",
+        "Un ejercicio de equivalencia (ISO 17994 o 16140) aprobado y publicado por el Ministerio de Sanidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Los cuatro ya autorizados: ACC, DST, TSC-MUP y Enterolert-DW.",
+      "fuente": "RD 3/2023, anexo III, parte C.3 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Cualquier otro método alternativo necesita un ejercicio de equivalencia (UNE-EN ISO 17994 o UNE-EN ISO 16140) aprobado y publicado por el Ministerio de Sanidad."
+    },
+    {
+      "id": "t18-q49",
+      "pregunta": "Con el RD 140/2003, el método de referencia de coliformes era:",
+      "opciones": [
+        "El agar lactosa TTC Tergitol",
+        "El agar cromogénico (ACC)",
+        "El NMP con sustrato definido"
+      ],
+      "correcta": 0,
+      "explicacion": "La Orden SCO/778/2009 autorizó ACC y DST.",
+      "fuente": "Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Con el decreto anterior (RD 140/2003), el método de referencia de coliformes era el agar lactosa TTC Tergitol."
+    },
+    {
+      "id": "t18-q50",
+      "pregunta": "En el agar cromogénico, el componente azul del color de E. coli lo da:",
+      "opciones": [
+        "El Salmon-GAL, roto por la β-galactosidasa",
+        "El X-glucurónido, roto por la β-glucuronidasa",
+        "El TTC reducido a formazán"
+      ],
+      "correcta": 1,
+      "explicacion": "Rojo (Salmon-GAL) + azul (X-glucurónido) = azul oscuro a violeta.",
+      "fuente": "Orden SCO/778/2009 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "| X-glucurónido | β-glucuronidasa (E. coli) | Azul |"
+    },
+    {
+      "id": "t18-q51",
+      "pregunta": "Las colonias azul-violeta del CCA se confirman como E. coli con:",
+      "opciones": [
+        "La oxidasa negativa",
+        "La esculina",
+        "El indol: el reactivo de Kovács da un rojo cereza en segundos"
+      ],
+      "correcta": 2,
+      "explicacion": "La oxidasa es para las rosas.",
+      "fuente": "Ficha de PanReac · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Con reactivo de Kovács sobre la colonia, un rojo cereza en segundos confirma E. coli (ficha de PanReac)."
+    },
+    {
+      "id": "t18-q52",
+      "pregunta": "En CCA aparecen colonias azul claro o turquesa. Son:",
+      "opciones": [
+        "Bacterias con algo de β-glucuronidasa pero sin β-galactosidasa: no son E. coli",
+        "E. coli típicas",
+        "Coliformes que no son E. coli"
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli es azul oscuro a violeta; los coliformes, rosa a rojo.",
+      "fuente": "Ficha de PanReac · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Algunas con algo de β-glucuronidasa pero sin β-galactosidasa salen azul claro o turquesa (ficha de PanReac): no son E. coli."
+    },
+    {
+      "id": "t18-q53",
+      "pregunta": "En agar CCA, una E. coli O157, sin β-glucuronidasa, sale:",
+      "opciones": [
+        "Azul oscuro a violeta",
+        "Rosa, como un coliforme",
+        "Negra"
+      ],
+      "correcta": 1,
+      "explicacion": "No se cuenta como E. coli.",
+      "fuente": "Resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "las E. coli sin β-glucuronidasa, como O157, salen rosas, como coliformes."
+    },
+    {
+      "id": "t18-q54",
+      "pregunta": "En la fórmula de la Orden SCO/778/2009, el agar cromogénico se hace selectivo con:",
+      "opciones": [
+        "Azida sódica y TTC",
+        "Cetrimida y ácido nalidíxico",
+        "Vancomicina y cefsulodina, además de Tergitol 7"
+      ],
+      "correcta": 2,
+      "explicacion": "Azida y TTC: enterococos; cetrimida y nalidíxico: Pseudomonas.",
+      "fuente": "Orden SCO/778/2009 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "El medio lleva además Tergitol 7 y, en la fórmula de la orden, vancomicina y cefsulodina, que lo hacen selectivo"
+    },
+    {
+      "id": "t18-q55",
+      "pregunta": "En agar de Slanetz y Bartley, las colonias de enterococos son rojas porque:",
+      "opciones": [
+        "Reducen el TTC a formazán, rojo e insoluble",
+        "Producen piocianina",
+        "Hidrolizan la esculina"
+      ],
+      "correcta": 0,
+      "explicacion": "La esculina es la confirmación.",
+      "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "los enterococos lo reducen a formazán, rojo e insoluble."
+    },
+    {
+      "id": "t18-q56",
+      "pregunta": "Según la guía británica, un enterococo es:",
+      "opciones": [
+        "Gramnegativo y oxidasa positivo",
+        "Grampositivo, catalasa negativo y con antígeno D de Lancefield",
+        "Grampositivo, catalasa y coagulasa positivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Crece con bilis y azida y a 44 °C.",
+      "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "grampositivo en parejas o cadenas, antígeno D de Lancefield, catalasa negativo"
+    },
+    {
+      "id": "t18-q57",
+      "pregunta": "Según la guía británica, para enterococos en agua bruta se incuba:",
+      "opciones": [
+        "44 h a 37 °C",
+        "24 h a 22 °C",
+        "4 h a 37 °C y después 40 h a 44 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "Para agua de consumo, 37 °C durante 44 ± 4 h. No se ha comprobado si la ISO 7899-2 da lo mismo.",
+      "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2 y Dudas declaradas",
+      "apartado": "5.2",
+      "evidencia": "Para agua bruta: 4 h a 37 °C y después 40 h a 44 °C."
+    },
+    {
+      "id": "t18-q58",
+      "pregunta": "Según la guía británica, los clostridios sulfitorreductores en general se cuentan a:",
+      "opciones": [
+        "37 °C",
+        "44 °C",
+        "22 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "C. perfringens, a 44 °C.",
+      "fuente": "Guía británica del agua de consumo, parte 6 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "la guía británica cuenta los clostridios sulfitorreductores en general a 37 °C, y C. perfringens a 44 °C."
+    },
+    {
+      "id": "t18-q59",
+      "pregunta": "En la confirmación de la ISO 14189, la prueba de la fosfatasa ácida es positiva cuando aparece:",
+      "opciones": [
+        "Un halo negro en 4 horas",
+        "Un color púrpura en 3-4 minutos",
+        "Fluorescencia verde inmediata"
+      ],
+      "correcta": 1,
+      "explicacion": "Se extiende la colonia sobre papel de filtro con 2-3 gotas de reactivo.",
+      "fuente": "Ficha de Thermo (ISO 14189) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Color púrpura en 3-4 minutos = positivo (ficha de Thermo)."
+    },
+    {
+      "id": "t18-q60",
+      "pregunta": "Para confirmar C. perfringens según la ISO 14189, las colonias negras se resiembran en:",
+      "opciones": [
+        "BCYE sin L-cisteína",
+        "Agar bilis esculina a 44 °C",
+        "Agar sangre, en anaerobiosis, a 36 ± 2 °C durante 21 ± 3 horas"
+      ],
+      "correcta": 2,
+      "explicacion": "Después, la fosfatasa ácida.",
+      "fuente": "Ficha de Thermo (ISO 14189) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Resembrar las colonias negras en agar sangre, 36 ± 2 °C, en anaerobiosis, 21 ± 3 horas."
+    },
+    {
+      "id": "t18-q61",
+      "pregunta": "En el agar CN, el ácido nalidíxico sirve para frenar a:",
+      "opciones": [
+        "Klebsiella, Proteus y Providencia",
+        "Pseudomonas aeruginosa",
+        "Los enterococos"
+      ],
+      "correcta": 0,
+      "explicacion": "La cetrimida es la otra selectiva.",
+      "fuente": "Ficha de Condalab · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "ácido nalidíxico (N), contra Klebsiella, Proteus y Providencia;"
+    },
+    {
+      "id": "t18-q62",
+      "pregunta": "En agar CN, una colonia fluorescente con UV pero sin piocianina se confirma con:",
+      "opciones": [
+        "La esculina",
+        "La producción de amoníaco desde acetamida (reactivo de Nessler)",
+        "La fosfatasa ácida"
+      ],
+      "correcta": 1,
+      "explicacion": "Las pardo-rojizas: oxidasa, King B y acetamida.",
+      "fuente": "Ficha de Condalab (ISO 16266) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "| Fluorescente con UV, sin piocianina | Confirmar con la producción de amoníaco desde acetamida (reactivo de Nessler) |"
+    },
+    {
+      "id": "t18-q63",
+      "pregunta": "Las colonias de Legionella en BCYE o GVPC:",
+      "opciones": [
+        "Aparecen a las 18 horas, negras",
+        "Fluorescen a 365 nm",
+        "No crecen los dos primeros días y tienen aspecto de vidrio esmerilado"
+      ],
+      "correcta": 2,
+      "explicacion": "Lisas, a menudo blancas, grises, azuladas o moradas.",
+      "fuente": "Guía británica de Legionella (2020) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Colonias: no crecen los dos primeros días."
+    },
+    {
+      "id": "t18-q64",
+      "pregunta": "Para confirmar Legionella, de cada tipo de colonia se resiembran al menos:",
+      "opciones": [
+        "Tres colonias, en BCYE y en BCYE sin L-cisteína",
+        "Una colonia, solo en GVPC",
+        "Diez colonias, en agar sangre"
+      ],
+      "correcta": 0,
+      "explicacion": "Crece solo en BCYE → Legionella.",
+      "fuente": "Guía británica de Legionella (2020) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "se resiembran al menos tres colonias de cada tipo en dos placas: BCYE y BCYE sin L-cisteína (o agar sangre)."
+    },
+    {
+      "id": "t18-q65",
+      "pregunta": "Pueden crecer débilmente sin cisteína tras el primer aislamiento:",
+      "opciones": [
+        "L. pneumophila serogrupo 1",
+        "Legionella oakridgensis y L. spiritensis",
+        "Todas las Legionella"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la excepción a la regla de la cisteína.",
+      "fuente": "Guía británica de Legionella (2020) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "L. oakridgensis y L. spiritensis pueden crecer débilmente sin cisteína después del primer aislamiento."
+    },
+    {
+      "id": "t18-q66",
+      "pregunta": "Según su resumen oficial, la ISO 9308-2 (NMP con sustrato definido) no sirve para:",
+      "opciones": [
+        "Aguas turbias",
+        "Aguas con mucha flora acompañante",
+        "Coliformes en agua de mar"
+      ],
+      "correcta": 2,
+      "explicacion": "Sirve para todo tipo de aguas y da un resultado confirmado.",
+      "fuente": "Resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "no sirve para coliformes en agua de mar;"
+    },
+    {
+      "id": "t18-q67",
+      "pregunta": "La ISO 9308-2 no detecta:",
+      "opciones": [
+        "Las E. coli sin β-glucuronidasa, como muchas enterohemorrágicas",
+        "Los coliformes en agua de consumo",
+        "Las E. coli con β-glucuronidasa"
+      ],
+      "correcta": 0,
+      "explicacion": "Se les escapan como E. coli.",
+      "fuente": "Resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "no detecta las E. coli sin β-glucuronidasa, como muchas enterohemorrágicas."
+    },
+    {
+      "id": "t18-q68",
+      "pregunta": "El Enterolert-DW se incuba a:",
+      "opciones": [
+        "36 ± 2 °C durante 18-22 horas",
+        "41 ± 0,5 °C durante 24 horas",
+        "44 °C en anaerobiosis"
+      ],
+      "correcta": 1,
+      "explicacion": "Positivo: de azul a verde, sin luz UV.",
+      "fuente": "IDEXX · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Incubación: 41 ± 0,5 °C durante 24 horas."
+    },
+    {
+      "id": "t18-q69",
+      "pregunta": "El Legiolert es:",
+      "opciones": [
+        "El método de referencia de Legionella",
+        "Un agar selectivo para Legionella",
+        "Un NMP de L. pneumophila en bandeja de 96 pocillos, 39 °C durante 7 días"
+      ],
+      "correcta": 2,
+      "explicacion": "El de referencia es el cultivo de la ISO 11731.",
+      "fuente": "Tema 13 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "NMP de L. pneumophila en bandeja de 96 pocillos, 39 °C durante 7 días (tema 13)."
+    },
+    {
+      "id": "t18-q70",
+      "pregunta": "En el recuento de colonias a 22 °C:",
+      "opciones": [
+        "Los mohos no se cuentan, y algunas levaduras sí",
+        "Se cuentan solo las colonias rojas",
+        "Se cuentan también los mohos"
+      ],
+      "correcta": 0,
+      "explicacion": "Las levaduras parecen bacterias.",
+      "fuente": "Guía británica del agua de consumo, parte 7 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Los mohos no se cuentan; algunas levaduras, sí, porque parecen bacterias."
+    },
+    {
+      "id": "t18-q71",
+      "pregunta": "El recuento de colonias a 37 °C es especialmente útil para:",
+      "opciones": [
+        "Contar Legionella",
+        "Avisar pronto de contaminación en aguas subterráneas poco contaminadas",
+        "Sustituir a E. coli como indicador fecal"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo que se valora es la tendencia.",
+      "fuente": "Guía británica del agua de consumo, parte 7 · apunte §7",
+      "apartado": "7",
+      "evidencia": "El recuento a 37 °C avisa pronto de contaminación en aguas subterráneas poco contaminadas."
+    },
+    {
+      "id": "t18-q72",
+      "pregunta": "Los colífagos somáticos se cuentan como:",
+      "opciones": [
+        "Colonias negras en TSC",
+        "Pocillos fluorescentes",
+        "Placas de lisis sobre un césped de la bacteria hospedadora"
+      ],
+      "correcta": 2,
+      "explicacion": "En UFP/100 mL.",
+      "fuente": "UNE-EN ISO 10705-2 (idea general) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Se cuentan como placas de lisis sobre un césped de la bacteria hospedadora (UFP/100 mL)"
     }
   ],
   "supuestos": [
@@ -812,6 +1638,170 @@
           "correcta": 0,
           "explicacion": "Guía británica, parte 5.",
           "fuente": "SCA, Microbiology of Drinking Water, parte 5"
+        }
+      ]
+    },
+    {
+      "id": "t18-s03",
+      "titulo": "Enterococos tras una reparación de la red",
+      "enunciado": "Tras sustituir un tramo de tubería en un barrio, se toma una muestra de grifo para comprobar la calidad. Se analizan enterococos intestinales por filtración de 100 mL en agar de Slanetz y Bartley. Tras la incubación aparecen 3 colonias rojas y 2 muy pálidas.",
+      "preguntas": [
+        {
+          "id": "t18-s03-q1",
+          "pregunta": "¿Por qué se eligen los enterococos tras reparar la red?",
+          "opciones": [
+            "Porque sobreviven más que E. coli y sirven para valorar la red tras reparaciones o tuberías nuevas",
+            "Porque indican biopelículas como el recuento a 22 °C",
+            "Porque miden la eficacia frente a virus",
+            "Porque son los únicos que crecen en tuberías nuevas"
+          ],
+          "correcta": 0,
+          "explicacion": "Resisten más el cloro.",
+          "fuente": "OMS, guía del agua de consumo · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Sirven para valorar los coliformes cuando no hay E. coli, y tras reparar la red o poner tuberías nuevas"
+        },
+        {
+          "id": "t18-s03-q2",
+          "pregunta": "Según la guía británica, ¿cómo se incuban las placas de un agua de consumo?",
+          "opciones": [
+            "A 44 °C en anaerobiosis, 21 h",
+            "A 36 ± 2 °C, 21 ± 3 h",
+            "A 22 °C, 68 h",
+            "A 37 °C durante 44 ± 4 horas"
+          ],
+          "correcta": 3,
+          "explicacion": "No se ha comprobado si la ISO 7899-2 da exactamente lo mismo.",
+          "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2 y Dudas declaradas",
+          "apartado": "5.2",
+          "evidencia": "Incubación (guía británica): agua de consumo, 37 °C durante 44 ± 4 horas."
+        },
+        {
+          "id": "t18-s03-q3",
+          "pregunta": "¿Qué hace con las 2 colonias muy pálidas?",
+          "opciones": [
+            "Las descarta, porque no son rojas",
+            "Las considera también, porque algunas cepas dan colonias muy pálidas, y las confirma",
+            "Las cuenta como E. coli",
+            "Las cuenta como coliformes"
+          ],
+          "correcta": 1,
+          "explicacion": "La confirmación con esculina decide.",
+          "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "Colonias típicas: rojas, granates o rosas, lisas y convexas. Algunas cepas dan colonias muy pálidas."
+        },
+        {
+          "id": "t18-s03-q4",
+          "pregunta": "¿Cómo confirma las colonias?",
+          "opciones": [
+            "Hace la oxidasa a cada colonia",
+            "Resiembra en BCYE sin cisteína",
+            "Pasa la membrana entera a agar bilis esculina y la incuba a 44 °C durante 4 horas: halo marrón o negro",
+            "Añade reactivo de Kovács"
+          ],
+          "correcta": 2,
+          "explicacion": "El halo es la esculina hidrolizada; a menudo se ve a las 2 h.",
+          "fuente": "Guía británica del agua de consumo, parte 5 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "Se pasa la membrana entera a agar bilis esculina (o kanamicina esculina azida), a temperatura ambiente, y se incuba a 44 °C durante 4 horas."
+        },
+        {
+          "id": "t18-s03-q5",
+          "pregunta": "Se confirman 5 enterococos en 100 mL. Según el RD 3/2023:",
+          "opciones": [
+            "Incumple: el valor paramétrico es 0 en 100 mL",
+            "Cumple: el límite es 100 UFC/100 mL",
+            "Cumple si E. coli es 0",
+            "No se valora en agua de grifo"
+          ],
+          "correcta": 0,
+          "explicacion": "100 UFC/100 mL es la no aptitud de los coliformes.",
+          "fuente": "RD 3/2023, anexo I, parte A · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "| Enterococo intestinal | 0 | UFC o NMP en 100 mL | — |"
+        }
+      ]
+    },
+    {
+      "id": "t18-s04",
+      "titulo": "Agua de un hospital: Pseudomonas y Legionella",
+      "enunciado": "Un hospital pide analizar el agua de los grifos asistenciales de su unidad de cuidados intensivos (unidad de cuidados aumentados) y el agua caliente sanitaria general. Para *P. aeruginosa* se filtran 100 mL sobre agar CN; para *Legionella* se sigue la ISO 11731. En el agua caliente general salen 300 UFC/L de *Legionella* confirmada.",
+      "preguntas": [
+        {
+          "id": "t18-s04-q1",
+          "pregunta": "¿Qué valores exige el RD 3/2023 en los grifos asistenciales de la unidad?",
+          "opciones": [
+            "Legionella < 100 UFC/L y P. aeruginosa < 100 UFC/100 mL",
+            "Solo E. coli y enterococos",
+            "P. aeruginosa < 1000 UFC/mL",
+            "Legionella «no detectable/L» y P. aeruginosa < 1 UFC/100 mL"
+          ],
+          "correcta": 3,
+          "explicacion": "Es el único sitio donde P. aeruginosa es parámetro.",
+          "fuente": "RD 3/2023, anexo I, parte A · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "En los grifos asistenciales de unidades de cuidados aumentados, «no detectable/L», y además Pseudomonas aeruginosa < 1 UFC/100 mL"
+        },
+        {
+          "id": "t18-s04-q2",
+          "pregunta": "¿Cómo se incuban las placas de CN?",
+          "opciones": [
+            "A 36 ± 2 °C durante 44 ± 4 horas",
+            "A 44 °C en anaerobiosis",
+            "A 36 ± 1 °C durante 10 días",
+            "A 41 °C durante 24 horas"
+          ],
+          "correcta": 0,
+          "explicacion": "10 días es Legionella; 41 °C, Enterolert.",
+          "fuente": "Ficha de Condalab · apunte §5.4",
+          "apartado": "5.4",
+          "evidencia": "Incubación: 36 ± 2 °C, 44 ± 4 horas."
+        },
+        {
+          "id": "t18-s04-q3",
+          "pregunta": "Según el esquema de la ISO 16266 que transcribe Condalab, las colonias azul-verdosas (piocianina):",
+          "opciones": [
+            "Se descartan",
+            "Se dan por confirmadas como P. aeruginosa",
+            "Necesitan la prueba de la esculina",
+            "Son E. coli"
+          ],
+          "correcta": 1,
+          "explicacion": "La ficha de PanReac las da como presuntivas; el apunte sigue a Condalab (1246 #39).",
+          "fuente": "Ficha de Condalab (ISO 16266) · apunte §5.4 y Dudas declaradas",
+          "apartado": "5.4",
+          "evidencia": "| Azul-verdosa (piocianina) | Confirmada como P. aeruginosa (1246 #39) |"
+        },
+        {
+          "id": "t18-s04-q4",
+          "pregunta": "¿Y las colonias pardo-rojizas?",
+          "opciones": [
+            "Son P. aeruginosa sin más pruebas",
+            "Se confirman con la fosfatasa ácida",
+            "Se confirman con oxidasa positiva, fluorescencia en King B y amoníaco desde acetamida",
+            "No se tienen en cuenta"
+          ],
+          "correcta": 2,
+          "explicacion": "Las fluorescentes sin piocianina, solo con acetamida.",
+          "fuente": "Ficha de Condalab (ISO 16266) · apunte §5.4",
+          "apartado": "5.4",
+          "evidencia": "| Pardo-rojiza | Oxidasa +, fluorescencia en agar King B y amoníaco desde acetamida |"
+        },
+        {
+          "id": "t18-s04-q5",
+          "pregunta": "En el agua caliente general hay 300 UFC/L de Legionella. ¿Qué pide el RD?",
+          "opciones": [
+            "Nada: el límite es 1000 UFC/L",
+            "Analizar Cryptosporidium",
+            "Repetir solo el recuento a 22 °C",
+            "Identificar si es L. pneumophila y su serogrupo"
+          ],
+          "correcta": 3,
+          "explicacion": "El valor es 100 UFC/L; por látex se separa el serogrupo 1 de los 2-15.",
+          "fuente": "RD 3/2023; RD 487/2022 · apunte §2.1 y §5.5",
+          "apartado": "2.1",
+          "evidencia": "Si se supera, se identifica si es L. pneumophila y su serogrupo (RD 487/2022)."
         }
       ]
     }
