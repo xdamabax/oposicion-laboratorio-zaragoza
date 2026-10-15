@@ -343,6 +343,298 @@
         "tipo": "esquema",
         "valor": "siembra-profundidad-superficie"
       }
+    },
+    {
+      "id": "t12-f44",
+      "anverso": "¿En qué temas se estudian la esterilización de los medios, el recuento, el control de calidad de los medios y los métodos concretos del agua?",
+      "reverso": "Esterilización en autoclave: **tema 11**. Recuento (diluciones, filtración, NMP): **tema 13**. Control de calidad de los medios (ISO 11133): **tema 17**; aquí solo lo básico. Métodos del agua: **tema 18**.",
+      "fuente": "Temario y reparto · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "Control de calidad de los medios (norma UNE-EN ISO 11133) | 17. Aquí solo lo básico"
+    },
+    {
+      "id": "t12-f45",
+      "anverso": "¿En qué formatos se compran los medios de cultivo?",
+      "reverso": "**Completo** (deshidratado en polvo); **incompleto**, al que se añade un **suplemento** como un antibiótico; **ingredientes sueltos**; **suplementos**; y **listo para usar** en tubos, frascos o placas.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "2",
+      "evidencia": [
+        "incompleto, al que se añade un suplemento, como un antibiótico;",
+        "listo para usar, en tubos, frascos o placas."
+      ]
+    },
+    {
+      "id": "t12-f46",
+      "anverso": "¿Para qué sirven los suplementos de un medio? Pon un ejemplo de cada uso.",
+      "reverso": "**Mejorar el crecimiento** (sangre de caballo), **diagnóstico** (urea) o **hacer selectivo** el medio (kanamicina).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "2",
+      "evidencia": "suplementos, que mejoran el crecimiento (sangre de caballo), sirven para diagnóstico (urea) o hacen selectivo el medio (kanamicina);"
+    },
+    {
+      "id": "t12-f47",
+      "anverso": "¿Para qué se usa cada consistencia de medio: líquido, sólido y semisólido?",
+      "reverso": "**Líquido (caldo)**: crecimiento general, enriquecimiento, **tubos del NMP**.\n**Sólido**: placas, para **contar, distinguir y aislar** colonias.\n**Semisólido**: por ejemplo, ensayos con **bacteriófagos**.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.1",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "| Líquido (caldo) | Sin agar | Crecimiento general, enriquecimiento, tubos del NMP |",
+        "| Semisólido | 0,7-0,8 % | Por ejemplo, ensayos con bacteriófagos |"
+      ]
+    },
+    {
+      "id": "t12-f48",
+      "anverso": "¿Qué es un medio general (no selectivo)? Pon ejemplos.",
+      "reverso": "El que **deja crecer a la mayoría de las bacterias**: **agar o caldo nutritivo**, TSB, y el **agar de extracto de levadura** para heterótrofos.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.3",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "2.3",
+      "evidencia": "| General (no selectivo) | Deja crecer a la mayoría de las bacterias |"
+    },
+    {
+      "id": "t12-f49",
+      "anverso": "¿Puede un medio ser selectivo y diferencial a la vez? Ejemplos.",
+      "reverso": "**Sí**: el **agar XLD** para *Salmonella* o el **MacConkey**. Así son **casi todos los medios del laboratorio de aguas**.",
+      "fuente": "OpenStax Microbiology, 9.6 y SCA, Practices and Procedures for Laboratories (2017) · apunte §2.3",
+      "etiquetas": [
+        "medios"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Un medio puede ser selectivo y diferencial a la vez, como el agar XLD para Salmonella o el MacConkey. Así son casi todos los medios del laboratorio de aguas."
+    },
+    {
+      "id": "t12-f50",
+      "anverso": "¿Por qué es tan importante el control de calidad de los medios del agua?",
+      "reverso": "Porque se diseñan para **recuperar microorganismos estresados** (por el cloro, el frío, la falta de nutrientes del agua…), y un medio que falle no los recupera.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2.4",
+      "etiquetas": [
+        "medios",
+        "agua"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Los medios del agua se diseñan para recuperar microorganismos estresados"
+    },
+    {
+      "id": "t12-f51",
+      "anverso": "¿Para qué llevan algunos medios lactosa con rojo neutro o rojo de fenol?",
+      "reverso": "Para **delatar la fermentación**: el **ácido** que se forma al fermentar la lactosa **cambia el color** del indicador.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3",
+      "etiquetas": [
+        "componentes"
+      ],
+      "apartado": "3",
+      "evidencia": "La lactosa con un indicador (rojo neutro, rojo de fenol) delata la fermentación, porque el ácido cambia el color"
+    },
+    {
+      "id": "t12-f52",
+      "anverso": "¿Qué lleva el agar de extracto de levadura del recuento de heterótrofos?",
+      "reverso": "Por litro: **extracto de levadura 3 g**, **peptona 5 g**, **agar 12 g**; **pH 7,2 ± 0,2**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §3",
+      "etiquetas": [
+        "componentes"
+      ],
+      "apartado": "3",
+      "evidencia": "extracto de levadura 3 g, peptona 5 g, agar 12 g, agua 1 L; pH 7,2 ± 0,2."
+    },
+    {
+      "id": "t12-f53",
+      "anverso": "¿Qué pasa si el agar no se disuelve o no se mezcla bien?",
+      "reverso": "El gel queda **blando**: puede **caerse al invertir la placa** o quedar con **grumos**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "etiquetas": [
+        "agar"
+      ],
+      "apartado": "3.1",
+      "evidencia": "Si no se disuelve o no se mezcla bien, el gel queda blando: puede caerse al invertir la placa o quedar con grumos."
+    },
+    {
+      "id": "t12-f54",
+      "anverso": "¿Qué fechas lleva un envase de medio deshidratado?",
+      "reverso": "La de **recepción** y la de **apertura** en la etiqueta. Al abrirlo, el laboratorio le asigna **su propia fecha de caducidad**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.1",
+      "etiquetas": [
+        "preparacion"
+      ],
+      "apartado": "4.1",
+      "evidencia": "Al abrirlo, el laboratorio le asigna su propia fecha de caducidad."
+    },
+    {
+      "id": "t12-f55",
+      "anverso": "¿Cómo se esteriliza un medio recién preparado?",
+      "reverso": "En las **2 horas** siguientes; **121 °C 15 min o 115 °C 10 min**, según el medio; con los **tapones aflojados**; **sin reautoclavar**. Algunos medios **muy selectivos** solo se llevan a **ebullición**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "etiquetas": [
+        "preparacion"
+      ],
+      "apartado": "4.2",
+      "evidencia": [
+        "121 °C 15 min, o 115 °C 10 min, según el medio;",
+        "Algunos medios muy selectivos solo se llevan a ebullición."
+      ]
+    },
+    {
+      "id": "t12-f56",
+      "anverso": "¿Con qué precaución se pesan los polvos de medios con agentes selectivos?",
+      "reverso": "Con **protección respiratoria**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "etiquetas": [
+        "preparacion",
+        "seguridad"
+      ],
+      "apartado": "4.2",
+      "evidencia": "Los polvos con agentes selectivos se manejan con protección respiratoria."
+    },
+    {
+      "id": "t12-f57",
+      "anverso": "¿Qué placas preparadas se desechan?",
+      "reverso": "Las que se han **adelgazado, oscurecido o despegado**, o tienen **signos de contaminación**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "etiquetas": [
+        "placas"
+      ],
+      "apartado": "4.3",
+      "evidencia": "Desechar las placas que se hayan adelgazado, oscurecido o despegado, o que tengan signos de contaminación."
+    },
+    {
+      "id": "t12-f58",
+      "anverso": "¿En qué consiste la técnica aséptica al sembrar?",
+      "reverso": "**Tapón en la mano**, sin tocar el interior del tapón ni la boca del frasco, y **una pipeta estéril nueva en cada paso**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+      "etiquetas": [
+        "siembra"
+      ],
+      "apartado": "5",
+      "evidencia": "Con el tapón en la mano, sin tocar el interior del tapón ni la boca del frasco, y una pipeta estéril nueva en cada paso."
+    },
+    {
+      "id": "t12-f59",
+      "anverso": "Siembra en profundidad: ¿cuánto tiempo puede estar el agar fundido y en qué plazo se vierte?",
+      "reverso": "El agar a 45 ± 1 °C se mantiene **4 horas como máximo**. Se vierte en los **120 minutos** siguientes a pipetear la muestra, plazo **validado solo para el agar de extracto de levadura**; para los demás, **20 minutos**. Las placas, por duplicado y **empezando por la dilución más diluida**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "etiquetas": [
+        "siembra"
+      ],
+      "apartado": "5.1",
+      "evidencia": [
+        "el agar se mantiene a esa temperatura 4 horas como máximo;",
+        "se vierte en los 120 minutos siguientes a pipetear la muestra, un plazo validado solo para el agar de extracto de levadura. Para los demás son 20 minutos."
+      ]
+    },
+    {
+      "id": "t12-f60",
+      "anverso": "Siembra por agotamiento: ¿cómo se empieza?",
+      "reverso": "Se **rotula la base** de la placa y, con asa estéril, se toma **una colonia**, **sin tocar otras zonas** de la placa de origen. Luego, el primer cuadrante con estrías juntas.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "etiquetas": [
+        "siembra"
+      ],
+      "apartado": "5.3",
+      "evidencia": "Con asa estéril, tomar una colonia, sin tocar otras zonas de la placa de origen."
+    },
+    {
+      "id": "t12-f61",
+      "anverso": "¿Cómo se siembra en medio líquido y para qué sirve?",
+      "reverso": "Se inocula el caldo con **asa** o con **pipeta**. Es la base de los **tubos del número más probable** y de los **caldos de enriquecimiento** (tema 13).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.4",
+      "etiquetas": [
+        "siembra"
+      ],
+      "apartado": "5.4",
+      "evidencia": "Se inocula el caldo con asa o con pipeta. Es la base de los tubos del número más probable y de los caldos de enriquecimiento (tema 13)."
+    },
+    {
+      "id": "t12-f62",
+      "anverso": "Filtración por membrana: ¿dónde se pone la membrana tras filtrar y en qué se expresa el resultado?",
+      "reverso": "**Cara arriba sobre un medio selectivo y diferencial**, en agar o en una **almohadilla empapada de caldo**. Resultado en **ufc por 100 mL**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.5",
+      "etiquetas": [
+        "filtracion"
+      ],
+      "apartado": "5.5",
+      "evidencia": "La membrana se coloca cara arriba sobre un medio selectivo y diferencial, en agar o en una almohadilla empapada de caldo."
+    },
+    {
+      "id": "t12-f63",
+      "anverso": "¿Qué es la resiembra (subcultivo) y para qué sirve?",
+      "reverso": "Pasar **una colonia aislada a otra placa o a un caldo** para **purificarla** o para las **pruebas de confirmación**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6",
+      "etiquetas": [
+        "aislamiento"
+      ],
+      "apartado": "6",
+      "evidencia": "Resiembra (subcultivo): una colonia aislada se pasa a otra placa o a un caldo para purificarla o para las pruebas de confirmación."
+    },
+    {
+      "id": "t12-f64",
+      "anverso": "¿Qué pasa al intentar aislar en placas mal secadas?",
+      "reverso": "El **crecimiento invasor tapa la placa**, **no se aíslan colonias** y hay que **volver a resembrar**, lo que **retrasa el resultado**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6",
+      "etiquetas": [
+        "aislamiento"
+      ],
+      "apartado": "6",
+      "evidencia": "Placas mal secadas: el crecimiento invasor tapa la placa, no se aíslan colonias y hay que volver a resembrar, lo que retrasa el resultado."
+    },
+    {
+      "id": "t12-f65",
+      "anverso": "¿Para qué guarda cepas un laboratorio de aguas?",
+      "reverso": "Sobre todo para el **control de calidad**: **comprobar los medios**, **validar métodos** y **vigilar el funcionamiento** del laboratorio.",
+      "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
+      "etiquetas": [
+        "cepas"
+      ],
+      "apartado": "7",
+      "evidencia": "comprobar los medios, validar métodos y vigilar el funcionamiento del laboratorio."
+    },
+    {
+      "id": "t12-f66",
+      "anverso": "¿De dónde procede una cepa de referencia?",
+      "reverso": "**Directamente de una colección reconocida**, miembro de la **WFCC** o de la **ECCO**; por ejemplo, las británicas **NCTC** o **NCIMB**.",
+      "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
+      "etiquetas": [
+        "cepas"
+      ],
+      "apartado": "7",
+      "evidencia": "La que viene directamente de una colección reconocida, miembro de la WFCC o de la ECCO; por ejemplo, las colecciones británicas NCTC o NCIMB"
+    },
+    {
+      "id": "t12-f67",
+      "anverso": "Conservar cepas en la nevera: ¿a qué temperatura, para cuánto tiempo y por qué?",
+      "reverso": "Cultivo en caldo o en placa a **5 ± 3 °C** (una nevera está entre **0 y 7 °C**). Es de **corto plazo**: el frío **frena** el metabolismo, **no lo detiene**.",
+      "fuente": "OpenStax Microbiology, 13.2 · apunte §7",
+      "etiquetas": [
+        "cepas"
+      ],
+      "apartado": "7",
+      "evidencia": [
+        "Cultivo en caldo o en placa a 5 ± 3 °C (una nevera está entre 0 y 7 °C)",
+        "Corto plazo. El frío frena el metabolismo, no lo detiene"
+      ]
+    },
+    {
+      "id": "t12-f68",
+      "anverso": "¿Cómo se reactiva una cepa liofilizada?",
+      "reverso": "Se añade un poco de **caldo estéril**, se **resuspende** y se **siembra en agar nutritivo**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §7",
+      "etiquetas": [
+        "cepas"
+      ],
+      "apartado": "7",
+      "evidencia": "Para reactivar un liofilizado se añade un poco de caldo estéril, se resuspende y se siembra en agar nutritivo."
     }
   ],
   "test": [
@@ -632,6 +924,650 @@
       "correcta": 1,
       "explicacion": "Por ejemplo, que E. coli sigue fermentando la lactosa a 37 y 44 °C.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017), ap. 6"
+    },
+    {
+      "id": "t12-q34",
+      "pregunta": "Según el reparto del temario, el control de calidad de los medios de cultivo (norma ISO 11133) se desarrolla en el tema:",
+      "opciones": [
+        "17",
+        "13",
+        "18"
+      ],
+      "correcta": 0,
+      "explicacion": "Tema 17; en el 12 solo lo básico. El 13 es el recuento y el 18, los métodos del agua.",
+      "fuente": "Temario y reparto · apunte §1",
+      "apartado": "1",
+      "evidencia": "Control de calidad de los medios (norma UNE-EN ISO 11133) | 17. Aquí solo lo básico"
+    },
+    {
+      "id": "t12-q35",
+      "pregunta": "Un medio de cultivo comercial «incompleto» es aquel:",
+      "opciones": [
+        "Que viene listo para usar en placas",
+        "Al que hay que añadir un suplemento, como un antibiótico",
+        "Que ha perdido parte de su humedad"
+      ],
+      "correcta": 1,
+      "explicacion": "Incompleto: necesita un suplemento.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "apartado": "2",
+      "evidencia": "incompleto, al que se añade un suplemento, como un antibiótico;"
+    },
+    {
+      "id": "t12-q36",
+      "pregunta": "Según la guía británica, la kanamicina añadida como suplemento a un medio sirve para:",
+      "opciones": [
+        "Mejorar el crecimiento de los exigentes",
+        "Una prueba de diagnóstico",
+        "Hacerlo selectivo"
+      ],
+      "correcta": 2,
+      "explicacion": "Sangre de caballo: crecimiento; urea: diagnóstico; kanamicina: selectivo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "apartado": "2",
+      "evidencia": "sirven para diagnóstico (urea) o hacen selectivo el medio (kanamicina);"
+    },
+    {
+      "id": "t12-q37",
+      "pregunta": "Un medio semisólido, usado por ejemplo en ensayos con bacteriófagos, lleva agar al:",
+      "opciones": [
+        "0,7-0,8 %",
+        "1,2-1,5 %",
+        "3-5 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Sólido 1,2-1,5 %; semisólido 0,7-0,8 %; líquido sin agar.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Semisólido | 0,7-0,8 % | Por ejemplo, ensayos con bacteriófagos |"
+    },
+    {
+      "id": "t12-q38",
+      "pregunta": "El caldo de triptona y soja (TSB) y el de infusión de cerebro y corazón son medios:",
+      "opciones": [
+        "Químicamente definidos",
+        "Complejos",
+        "De transporte"
+      ],
+      "correcta": 1,
+      "explicacion": "Llevan extractos y digeridos, así que su composición exacta no se conoce.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Ejemplos: el caldo nutritivo, el caldo de triptona y soja (TSB) y el de infusión de cerebro y corazón."
+    },
+    {
+      "id": "t12-q39",
+      "pregunta": "Un medio enriquecido, por ejemplo con sangre, se caracteriza porque:",
+      "opciones": [
+        "Deja al diana en mayoría frente a sus competidores",
+        "Inhibe a las bacterias grampositivas",
+        "Añade factores de crecimiento, vitaminas y nutrientes para los microorganismos exigentes"
+      ],
+      "correcta": 2,
+      "explicacion": "Enriquecido ≠ de enriquecimiento: este último favorece al diana frente a los competidores.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Añade factores de crecimiento, vitaminas y nutrientes para los microorganismos exigentes"
+    },
+    {
+      "id": "t12-q40",
+      "pregunta": "En el agar MacConkey, las bacterias que fermentan la lactosa dan colonias rosas por el indicador:",
+      "opciones": [
+        "Rojo neutro",
+        "Azul de bromotimol",
+        "Cristal violeta"
+      ],
+      "correcta": 0,
+      "explicacion": "El cristal violeta y las sales biliares son los agentes selectivos; el rojo neutro, el indicador.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "MacConkey: las que fermentan la lactosa dan colonias rosas, por el indicador rojo neutro"
+    },
+    {
+      "id": "t12-q41",
+      "pregunta": "El caldo Rappaport es un medio de enriquecimiento para:",
+      "opciones": [
+        "Enterococos",
+        "Salmonella",
+        "Clostridios sulfitorreductores"
+      ],
+      "correcta": 1,
+      "explicacion": "Líquido que deja a Salmonella en mayoría al final de la incubación.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el diana supera en número a los demás | Caldo Rappaport para Salmonella |"
+    },
+    {
+      "id": "t12-q42",
+      "pregunta": "El agar XLD para Salmonella es un medio:",
+      "opciones": [
+        "Solo diferencial",
+        "General no selectivo",
+        "Selectivo y diferencial a la vez"
+      ],
+      "correcta": 2,
+      "explicacion": "Como el MacConkey y casi todos los medios del agua.",
+      "fuente": "OpenStax Microbiology, 9.6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Un medio puede ser selectivo y diferencial a la vez, como el agar XLD para Salmonella o el MacConkey."
+    },
+    {
+      "id": "t12-q43",
+      "pregunta": "En el agar TSC, las colonias negras de los clostridios sulfitorreductores se deben a:",
+      "opciones": [
+        "La reducción del sulfito (metabisulfito sódico)",
+        "La reducción del TTC a formazán",
+        "La D-cicloserina"
+      ],
+      "correcta": 0,
+      "explicacion": "La D-cicloserina es el agente selectivo; el sulfito reducido da el negro.",
+      "fuente": "SCA, Microbiology of Drinking Water, parte 6 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Metabisulfito sódico: la reducción del sulfito da colonias negras"
+    },
+    {
+      "id": "t12-q44",
+      "pregunta": "En el agar de enterococos tipo Slanetz y Bartley, la azida sódica:",
+      "opciones": [
+        "Da el color rojo de las colonias",
+        "Inhibe a los coliformes y a la mayoría de los gramnegativos",
+        "Es un sustrato cromogénico de la β-glucuronidasa"
+      ],
+      "correcta": 1,
+      "explicacion": "El color rojo lo da el TTC al reducirse a formazán.",
+      "fuente": "SCA, Microbiology of Drinking Water, parte 5 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Azida sódica, que inhibe a los coliformes y a la mayoría de los gramnegativos"
+    },
+    {
+      "id": "t12-q45",
+      "pregunta": "Los medios del laboratorio de aguas se diseñan para:",
+      "opciones": [
+        "Cultivar solo anaerobios estrictos",
+        "Inhibir a todos los coliformes",
+        "Recuperar microorganismos estresados"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso su control de calidad es tan importante.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Los medios del agua se diseñan para recuperar microorganismos estresados"
+    },
+    {
+      "id": "t12-q46",
+      "pregunta": "La triptona se obtiene por:",
+      "opciones": [
+        "Digestión enzimática de la caseína",
+        "Hidrólisis ácida de levadura",
+        "Extracción a partir de algas"
+      ],
+      "correcta": 0,
+      "explicacion": "Levadura: extracto de levadura; algas: agar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Digestión enzimática de la caseína. Es rica en triptófano, precursor del indol"
+    },
+    {
+      "id": "t12-q47",
+      "pregunta": "El extracto de levadura aporta al medio, sobre todo:",
+      "opciones": [
+        "Su consistencia sólida",
+        "Vitaminas y factores de crecimiento",
+        "La inhibición de las grampositivas"
+      ],
+      "correcta": 1,
+      "explicacion": "La consistencia la da el agar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Hidrólisis ácida de levadura. Aporta vitaminas y factores de crecimiento"
+    },
+    {
+      "id": "t12-q48",
+      "pregunta": "La lactosa con un indicador de pH, como el rojo de fenol, se añade a un medio para:",
+      "opciones": [
+        "Solidificarlo",
+        "Mantener el equilibrio osmótico",
+        "Delatar la fermentación, porque el ácido cambia el color"
+      ],
+      "correcta": 2,
+      "explicacion": "El equilibrio osmótico lo da el cloruro sódico.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3",
+      "apartado": "3",
+      "evidencia": "La lactosa con un indicador (rojo neutro, rojo de fenol) delata la fermentación, porque el ácido cambia el color"
+    },
+    {
+      "id": "t12-q49",
+      "pregunta": "Si se usa un agar más puro:",
+      "opciones": [
+        "Basta el 1 %, y las placas salen más claras",
+        "Hace falta el 3 %",
+        "Ya no gelifica"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo normal es el 1,2-1,5 %.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Con un agar más puro basta el 1 %, y las placas salen más claras."
+    },
+    {
+      "id": "t12-q50",
+      "pregunta": "Si el agar no se disuelve o no se mezcla bien:",
+      "opciones": [
+        "Gelifica por encima de 80 °C",
+        "El gel queda blando y puede caerse al invertir la placa o quedar con grumos",
+        "El medio se vuelve selectivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Solo se disuelve del todo al llevarlo a ebullición.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Si no se disuelve o no se mezcla bien, el gel queda blando: puede caerse al invertir la placa o quedar con grumos."
+    },
+    {
+      "id": "t12-q51",
+      "pregunta": "El agua para preparar medios debe tener una conductividad idealmente:",
+      "opciones": [
+        "Entre 50 y 100 µS/cm",
+        "Mayor de 500 µS/cm",
+        "Menor de 10 µS/cm"
+      ],
+      "correcta": 2,
+      "explicacion": "Baja conductividad, sin metales tóxicos ni cloro y pocos microorganismos.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "conductividad baja, idealmente menos de 10 µS/cm;"
+    },
+    {
+      "id": "t12-q52",
+      "pregunta": "El recuento a 22 °C del agua para preparar medios no debe pasar nunca de:",
+      "opciones": [
+        "10 000 ufc/mL",
+        "100 ufc/mL",
+        "10 ufc/mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Idealmente < 1000 ufc/mL y nunca > 10 000.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "pocos microorganismos: recuento a 22 °C idealmente por debajo de 1000 ufc/mL, y nunca por encima de 10 000."
+    },
+    {
+      "id": "t12-q53",
+      "pregunta": "El agua del grifo enturbia o precipita los medios por sus iones de:",
+      "opciones": [
+        "Sodio o potasio",
+        "Calcio o fosfato",
+        "Nitrato"
+      ],
+      "correcta": 1,
+      "explicacion": "Además puede llevar cloro o metales, como el cobre, que inhiben el crecimiento.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "sus iones de calcio o fosfato enturbian o precipitan el medio;"
+    },
+    {
+      "id": "t12-q54",
+      "pregunta": "Al abrir un envase de medio deshidratado, el laboratorio:",
+      "opciones": [
+        "Debe gastarlo entero ese mismo día",
+        "Lo guarda congelado a −20 °C",
+        "Le asigna su propia fecha de caducidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Lleva la fecha de recepción, la de apertura y la caducidad que fija el laboratorio.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Al abrirlo, el laboratorio le asigna su propia fecha de caducidad."
+    },
+    {
+      "id": "t12-q55",
+      "pregunta": "Los polvos de medios que contienen agentes selectivos se manejan:",
+      "opciones": [
+        "Con protección respiratoria",
+        "Sin precauciones especiales",
+        "Solo en una cabina a 4 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "Al pesarlos, con protección respiratoria.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Los polvos con agentes selectivos se manejan con protección respiratoria."
+    },
+    {
+      "id": "t12-q56",
+      "pregunta": "Como el autoclave puede bajar el pH del medio, a veces antes de esterilizar se:",
+      "opciones": [
+        "Baja 1 unidad",
+        "Sube 0,2-0,4 unidades",
+        "Añade lactosa"
+      ],
+      "correcta": 1,
+      "explicacion": "Para que el pH final quede en su valor; después de esterilizar no se ajusta.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Por eso a veces se sube 0,2-0,4 unidades antes, para que el pH final quede en su valor."
+    },
+    {
+      "id": "t12-q57",
+      "pregunta": "Algunos medios muy selectivos:",
+      "opciones": [
+        "Se autoclavan dos veces",
+        "Se esterilizan en horno a 160 °C",
+        "Solo se llevan a ebullición"
+      ],
+      "correcta": 2,
+      "explicacion": "Un medio nunca se reautoclava.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Algunos medios muy selectivos solo se llevan a ebullición."
+    },
+    {
+      "id": "t12-q58",
+      "pregunta": "Las placas preparadas no se dejan al sol ni más de 2 horas en la mesa porque:",
+      "opciones": [
+        "La luz forma peróxidos que inhiben el crecimiento",
+        "Se calientan por encima de 42 °C y se funden",
+        "El agar se vuelve selectivo"
+      ],
+      "correcta": 0,
+      "explicacion": "Se guardan a oscuras.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "la luz forma peróxidos que inhiben el crecimiento."
+    },
+    {
+      "id": "t12-q59",
+      "pregunta": "El espesor del medio en las placas debe ser de:",
+      "opciones": [
+        "1 mm",
+        "3 a 7 mm",
+        "10 a 15 mm"
+      ],
+      "correcta": 1,
+      "explicacion": "Con menos, el medio se seca.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "espesor de 3 a 7 mm. Con menos, el medio se seca."
+    },
+    {
+      "id": "t12-q60",
+      "pregunta": "Se desecha una placa preparada que:",
+      "opciones": [
+        "Lleva dos días en la nevera a 5 °C",
+        "Está guardada invertida",
+        "Se ha adelgazado, oscurecido o despegado"
+      ],
+      "correcta": 2,
+      "explicacion": "También si tiene signos de contaminación.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Desechar las placas que se hayan adelgazado, oscurecido o despegado, o que tengan signos de contaminación."
+    },
+    {
+      "id": "t12-q61",
+      "pregunta": "En el control cuantitativo de un medio, la recuperación en el medio selectivo debe ser al menos:",
+      "opciones": [
+        "El 50 % de la obtenida en uno no selectivo",
+        "El 10 %",
+        "El 100 %"
+      ],
+      "correcta": 0,
+      "explicacion": "O se usa la ratio de productividad de la ISO 11133.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "la recuperación en el medio selectivo debe ser al menos el 50 % de la obtenida en uno no selectivo;"
+    },
+    {
+      "id": "t12-q62",
+      "pregunta": "Un lote de medio cuyo pH queda fuera de la tolerancia del método:",
+      "opciones": [
+        "Se corrige después de esterilizarlo",
+        "Se desecha",
+        "Se usa igualmente"
+      ],
+      "correcta": 1,
+      "explicacion": "Tolerancia normal ± 0,2; el pH no se ajusta después de esterilizar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "pH de cada lote: dentro de la tolerancia del método, normalmente ± 0,2. Si no, se desecha."
+    },
+    {
+      "id": "t12-q63",
+      "pregunta": "La ratio de productividad que se exige al medio GVPC de Legionella, según la ISO 11133, es:",
+      "opciones": [
+        "0,5",
+        "0,1",
+        "0,7"
+      ],
+      "correcta": 2,
+      "explicacion": "Productividad ≥ 0,7.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "o se usa la ratio de productividad de la ISO 11133: para el GVPC de Legionella, 0,7."
+    },
+    {
+      "id": "t12-q64",
+      "pregunta": "En la ISO 11133, ¿cómo se define la selectividad de un medio?",
+      "opciones": [
+        "El grado de inhibición de un microorganismo no diana en un medio selectivo",
+        "La tasa de recuperación de un microorganismo diana",
+        "Que los no diana no presentan las mismas características visuales que los diana"
+      ],
+      "correcta": 0,
+      "explicacion": "La tasa de recuperación es la productividad; lo visual, la especificidad (1233 #14).",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017); opciones del 1233 #14 · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "El grado de inhibición de un microorganismo no diana en un medio selectivo"
+    },
+    {
+      "id": "t12-q65",
+      "pregunta": "En la técnica aséptica de siembra, al pasar de un paso de pipeteo al siguiente:",
+      "opciones": [
+        "Se reutiliza la misma pipeta, aclarada con diluyente",
+        "Se usa una pipeta estéril nueva en cada paso",
+        "Se deja el tapón boca abajo sobre la mesa"
+      ],
+      "correcta": 1,
+      "explicacion": "El tapón se mantiene en la mano, sin tocar su interior.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Con el tapón en la mano, sin tocar el interior del tapón ni la boca del frasco, y una pipeta estéril nueva en cada paso."
+    },
+    {
+      "id": "t12-q66",
+      "pregunta": "En la siembra en profundidad, el agar fundido a 45 ± 1 °C se mantiene a esa temperatura como máximo:",
+      "opciones": [
+        "24 horas",
+        "30 minutos",
+        "4 horas"
+      ],
+      "correcta": 2,
+      "explicacion": "4 h como máximo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "el agar se mantiene a esa temperatura 4 horas como máximo;"
+    },
+    {
+      "id": "t12-q67",
+      "pregunta": "El plazo de 120 minutos entre pipetear la muestra y verter el agar en la siembra en profundidad:",
+      "opciones": [
+        "Está validado solo para el agar de extracto de levadura; para los demás son 20 minutos",
+        "Vale para todos los medios",
+        "Es de 12 horas para los medios selectivos"
+      ],
+      "correcta": 0,
+      "explicacion": "Duda declarada 6 del apunte: 120 min solo para el agar de extracto de levadura.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1 y Dudas declaradas",
+      "apartado": "5.1",
+      "evidencia": "se vierte en los 120 minutos siguientes a pipetear la muestra, un plazo validado solo para el agar de extracto de levadura. Para los demás son 20 minutos."
+    },
+    {
+      "id": "t12-q68",
+      "pregunta": "En la siembra en profundidad de una serie de diluciones, las placas se siembran:",
+      "opciones": [
+        "Una por dilución, empezando por la muestra sin diluir",
+        "Por duplicado, empezando por la más diluida",
+        "Solo con la dilución más concentrada"
+      ],
+      "correcta": 1,
+      "explicacion": "De la más diluida a la menos, por duplicado.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril, por duplicado y empezando por la más diluida."
+    },
+    {
+      "id": "t12-q69",
+      "pregunta": "En la siembra en superficie de 0,1 mL de muestra sin diluir, cada colonia equivale a:",
+      "opciones": [
+        "1 ufc/mL",
+        "100 ufc/mL",
+        "10 ufc/mL"
+      ],
+      "correcta": 2,
+      "explicacion": "0,1 mL: se multiplica por 10.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Con 0,1 mL, cada colonia equivale a 10 ufc por mililitro"
+    },
+    {
+      "id": "t12-q70",
+      "pregunta": "En la siembra por agotamiento, el segundo cuadrante se siembra entrando en el borde del primero:",
+      "opciones": [
+        "Unas cuatro veces, y sin volver a él",
+        "Una sola vez, volviendo al final",
+        "En todas las estrías del primero"
+      ],
+      "correcta": 0,
+      "explicacion": "En el tercero, dos o tres veces en el segundo.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Sembrar el segundo cuadrante entrando unas cuatro veces en el borde del primero, y sin volver a él."
+    },
+    {
+      "id": "t12-q71",
+      "pregunta": "La siembra en medio líquido, con asa o con pipeta, es la base de:",
+      "opciones": [
+        "El recuento de heterótrofos a 22 °C",
+        "Los tubos del número más probable y los caldos de enriquecimiento",
+        "El aislamiento de colonias puras"
+      ],
+      "correcta": 1,
+      "explicacion": "El recuento a 22 °C es en profundidad; el aislamiento, por agotamiento.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Es la base de los tubos del número más probable y de los caldos de enriquecimiento (tema 13)."
+    },
+    {
+      "id": "t12-q72",
+      "pregunta": "Tras filtrar la muestra, la membrana se coloca:",
+      "opciones": [
+        "Cara abajo sobre un agar nutritivo",
+        "Dentro de un tubo de caldo de enriquecimiento",
+        "Cara arriba sobre un medio selectivo y diferencial, en agar o en una almohadilla empapada de caldo"
+      ],
+      "correcta": 2,
+      "explicacion": "Cara arriba; el resultado se da en ufc por 100 mL.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "La membrana se coloca cara arriba sobre un medio selectivo y diferencial, en agar o en una almohadilla empapada de caldo."
+    },
+    {
+      "id": "t12-q73",
+      "pregunta": "La resiembra (subcultivo) de una colonia aislada sirve para:",
+      "opciones": [
+        "Purificarla o hacer las pruebas de confirmación",
+        "Contar las ufc de la muestra",
+        "Esterilizar la placa de origen"
+      ],
+      "correcta": 0,
+      "explicacion": "Se pasa a otra placa o a un caldo.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6",
+      "apartado": "6",
+      "evidencia": "Resiembra (subcultivo): una colonia aislada se pasa a otra placa o a un caldo para purificarla o para las pruebas de confirmación."
+    },
+    {
+      "id": "t12-q74",
+      "pregunta": "Si se intenta aislar en placas mal secadas:",
+      "opciones": [
+        "Las colonias salen más separadas",
+        "El crecimiento invasor tapa la placa y hay que volver a resembrar",
+        "No crece ningún microorganismo"
+      ],
+      "correcta": 1,
+      "explicacion": "Retrasa el resultado; las placas se secan antes de sembrar.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6",
+      "apartado": "6",
+      "evidencia": "Placas mal secadas: el crecimiento invasor tapa la placa, no se aíslan colonias y hay que volver a resembrar, lo que retrasa el resultado."
+    },
+    {
+      "id": "t12-q75",
+      "pregunta": "Los derivados comerciales de las cepas de referencia:",
+      "opciones": [
+        "Sustituyen a las reservas de referencia",
+        "Son cepas de referencia a todos los efectos",
+        "Solo sirven como cultivos de trabajo"
+      ],
+      "correcta": 2,
+      "explicacion": "Regla de la cadena de cultivos de referencia.",
+      "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Los derivados comerciales de las cepas de referencia solo sirven como cultivos de trabajo."
+    },
+    {
+      "id": "t12-q76",
+      "pregunta": "Una cepa de referencia es la que procede:",
+      "opciones": [
+        "Directamente de una colección reconocida, miembro de la WFCC o de la ECCO",
+        "De un aislado propio de una muestra de agua",
+        "De un subcultivo de un cultivo de trabajo"
+      ],
+      "correcta": 0,
+      "explicacion": "Por ejemplo, NCTC o NCIMB.",
+      "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
+      "apartado": "7",
+      "evidencia": "La que viene directamente de una colección reconocida, miembro de la WFCC o de la ECCO"
+    },
+    {
+      "id": "t12-q77",
+      "pregunta": "La conservación de cepas por resiembra y refrigeración a 5 ± 3 °C:",
+      "opciones": [
+        "Sirve para años, porque el frío detiene el metabolismo",
+        "Es de corto plazo: el frío frena el metabolismo, no lo detiene",
+        "Mata las bacterias poco a poco y no sirve"
+      ],
+      "correcta": 1,
+      "explicacion": "Para largo plazo: nitrógeno líquido o liofilización.",
+      "fuente": "OpenStax Microbiology, 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Corto plazo. El frío frena el metabolismo, no lo detiene"
+    },
+    {
+      "id": "t12-q78",
+      "pregunta": "Para reactivar una cepa liofilizada:",
+      "opciones": [
+        "Se calienta la ampolla a 60 °C",
+        "Se congela a −70 °C antes de abrirla",
+        "Se añade un poco de caldo estéril, se resuspende y se siembra en agar nutritivo"
+      ],
+      "correcta": 2,
+      "explicacion": "Después, comprobar pureza y características.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §7",
+      "apartado": "7",
+      "evidencia": "Para reactivar un liofilizado se añade un poco de caldo estéril, se resuspende y se siembra en agar nutritivo."
+    },
+    {
+      "id": "t12-q79",
+      "pregunta": "Los cultivos de trabajo:",
+      "opciones": [
+        "No se subcultivan, salvo que lo pida el método o se demuestre que no cambian",
+        "Se subcultivan cada semana para mantenerlos",
+        "Sustituyen a las reservas cuando estas se gastan"
+      ],
+      "correcta": 0,
+      "explicacion": "Nunca sustituyen a las reservas.",
+      "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Los cultivos de trabajo no se subcultivan, salvo que lo pida el método o se demuestre que no cambian."
     }
   ],
   "supuestos": [
@@ -726,6 +1662,170 @@
           "correcta": 0,
           "explicacion": "Tras cualquier almacenamiento se comprueban la pureza y las características fenotípicas.",
           "fuente": "SCA, Practices and Procedures for Laboratories (2017), ap. 6"
+        }
+      ]
+    },
+    {
+      "id": "t12-s03",
+      "titulo": "Placas de TSC con suplemento para clostridios",
+      "enunciado": "El laboratorio va a preparar 1 litro de agar TSC para buscar clostridios sulfitorreductores y *C. perfringens* en aguas de consumo. La base se compra deshidratada; la D-cicloserina viene aparte como suplemento termolábil. Se verterán placas de 90 mm para usarlas a lo largo de la semana.",
+      "preguntas": [
+        {
+          "id": "t12-s03-q1",
+          "pregunta": "¿Cómo se incorpora el suplemento de D-cicloserina?",
+          "opciones": [
+            "Autoclavado junto con la base a 121 °C",
+            "Añadido a la base hirviendo para que se disuelva",
+            "Extendido sobre las placas ya solidificadas, sin esterilizar",
+            "Esterilizado por filtración a 0,2 µm y añadido a la base ya enfriada a unos 50 °C"
+          ],
+          "correcta": 3,
+          "explicacion": "Los suplementos termolábiles se filtran y se añaden al medio enfriado.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+          "apartado": "4.2",
+          "evidencia": "se esterilizan por filtración a 0,2 µm, con filtro de jeringa hasta unos 100 mL, y se añaden al medio ya enfriado a unos 50 °C."
+        },
+        {
+          "id": "t12-s03-q2",
+          "pregunta": "Ya esterilizada la base, el técnico mide el pH y lo encuentra algo bajo. ¿Puede corregirlo ahora con NaOH?",
+          "opciones": [
+            "Sí, con NaOH 1 M, porque el autoclave baja siempre el pH",
+            "Sí, si lo hace con el medio aún caliente",
+            "No: el pH se ajusta antes de esterilizar; después no, por el riesgo de contaminar el medio",
+            "Sí, siempre que vuelva a autoclavarlo después"
+          ],
+          "correcta": 2,
+          "explicacion": "Nunca se ajusta después ni se reautoclava; si el lote queda fuera de tolerancia, se desecha.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+          "apartado": "4.2",
+          "evidencia": "Después de esterilizar no se ajusta, por el riesgo de contaminarlo."
+        },
+        {
+          "id": "t12-s03-q3",
+          "pregunta": "¿Cuánto medio vierte en cada placa de 90 mm?",
+          "opciones": [
+            "20-25 mL",
+            "Unos 10 mL",
+            "5 mL",
+            "50 mL"
+          ],
+          "correcta": 0,
+          "explicacion": "Unos 10 mL son para las de 50-60 mm; espesor de 3 a 7 mm.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+          "apartado": "4.3",
+          "evidencia": "20-25 mL en las placas de 90 mm;"
+        },
+        {
+          "id": "t12-s03-q4",
+          "pregunta": "En las placas incubadas, ¿qué aspecto tendrán los clostridios sulfitorreductores?",
+          "opciones": [
+            "Colonias rojas, por el TTC",
+            "Colonias negras, por la reducción del sulfito",
+            "Colonias verdes o azules",
+            "Colonias de azul oscuro a violeta"
+          ],
+          "correcta": 1,
+          "explicacion": "Rojas: enterococos en Slanetz y Bartley; verdes o azules: Pseudomonas en CN; azul-violeta: E. coli en CCA.",
+          "fuente": "SCA, Microbiology of Drinking Water, parte 6 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Metabisulfito sódico: la reducción del sulfito da colonias negras"
+        },
+        {
+          "id": "t12-s03-q5",
+          "pregunta": "Antes de empezar a usar el lote de placas:",
+          "opciones": [
+            "Se usa enseguida si el medio ha gelificado bien",
+            "Basta con mirar que no haya burbujas",
+            "Queda en cuarentena hasta comprobar pH, esterilidad, crecimiento del diana con su aspecto típico y selectividad",
+            "Se reautoclavan dos placas para comprobar que no se funden"
+          ],
+          "correcta": 2,
+          "explicacion": "Cada lote tiene número, registro y cuarentena.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.4",
+          "apartado": "4.4",
+          "evidencia": "Cada lote tiene número de lote, registro de su preparación y de su esterilización, y queda en cuarentena hasta que se demuestra que sirve."
+        }
+      ]
+    },
+    {
+      "id": "t12-s04",
+      "titulo": "Recuento en superficie de un agua con mucha carga",
+      "enunciado": "Llega una muestra de agua de un depósito que se sospecha muy contaminada. El técnico decide hacer diluciones decimales y sembrar 0,1 mL de cada una en superficie, por duplicado, en placas de agar preparadas el día anterior y guardadas en la nevera. Tras la incubación, en la dilución 10⁻¹ cuenta 35 y 41 colonias, y en la 10⁻², 3 y 5; algunas colonias son diminutas.",
+      "preguntas": [
+        {
+          "id": "t12-s04-q1",
+          "pregunta": "Antes de sembrar, las placas que salen de la nevera deben:",
+          "opciones": [
+            "Usarse húmedas, para que el inóculo se extienda mejor",
+            "Calentarse a 45 °C para fundir la superficie",
+            "Lavarse con agua estéril",
+            "Secarse 2 horas a temperatura ambiente (no más de 25 °C) o 30 minutos a 37 °C"
+          ],
+          "correcta": 3,
+          "explicacion": "La película de agua hace crecer las bacterias en velo.",
+          "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.3",
+          "apartado": "4.3",
+          "evidencia": "Secarlas antes de usarlas: 2 horas a temperatura ambiente, no más de 25 °C, o 30 minutos a 37 °C."
+        },
+        {
+          "id": "t12-s04-q2",
+          "pregunta": "Las diluciones decimales se preparan:",
+          "opciones": [
+            "1 volumen de muestra en 9 de solución de Ringer a un cuarto o de diluyente de máxima recuperación",
+            "1 volumen de muestra en 10 de agua del grifo estéril",
+            "1 volumen de muestra en 9 de alcohol al 70 %",
+            "1 volumen de muestra en 99 de agar fundido"
+          ],
+          "correcta": 0,
+          "explicacion": "Con una pipeta estéril nueva en cada paso.",
+          "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+          "apartado": "5",
+          "evidencia": "Las diluciones decimales, 1 volumen de muestra en 9 de diluyente, se hacen con solución de Ringer a un cuarto o con diluyente de máxima recuperación."
+        },
+        {
+          "id": "t12-s04-q3",
+          "pregunta": "¿Con qué extiende los 0,1 mL sobre el agar?",
+          "opciones": [
+            "Con el asa de siembra en cuatro cuadrantes",
+            "Mezclándolos con agar fundido a 45 °C",
+            "Con una varilla acodada estéril (asa de Digralsky), o girando la placa con la varilla quieta",
+            "No se extiende: se deja la gota en el centro"
+          ],
+          "correcta": 2,
+          "explicacion": "Se deja absorber y se incuba invertida.",
+          "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "Extender con una varilla acodada estéril de vidrio o plástico (el asa de Digralsky), o girando la placa con la varilla quieta."
+        },
+        {
+          "id": "t12-s04-q4",
+          "pregunta": "¿Qué placas sirven para el recuento?",
+          "opciones": [
+            "Las de la 10⁻², por ser la dilución más alta",
+            "Las cuatro, promediadas",
+            "Ninguna: hay que repetir en profundidad",
+            "Las de la dilución 10⁻¹, porque están entre 10 y 300 colonias"
+          ],
+          "correcta": 3,
+          "explicacion": "Se cuentan las placas con 10-300 colonias; 3 y 5 quedan por debajo.",
+          "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "Se cuentan las placas con entre 10 y 300 colonias."
+        },
+        {
+          "id": "t12-s04-q5",
+          "pregunta": "Para no perder las colonias diminutas al contar:",
+          "opciones": [
+            "Se incuban las placas boca arriba",
+            "Se usa lupa o contador",
+            "Se cuentan solo las grandes y se multiplica por dos",
+            "Se tiñen con cristal violeta"
+          ],
+          "correcta": 1,
+          "explicacion": "Lupa o contador de colonias.",
+          "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "Se usa lupa o contador para no perder las colonias muy pequeñas."
         }
       ]
     }
