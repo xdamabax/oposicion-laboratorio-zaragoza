@@ -499,6 +499,189 @@
         "valores"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t36-f46",
+      "anverso": "¿Por qué el muestreo es el tema del que dependen todos los demás?",
+      "reverso": "Porque un dato **no puede ser mejor que la muestra** de la que sale: **el error de muestreo no se corrige en el laboratorio; se arrastra hasta el boletín**.",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "muestreo"
+      ],
+      "apartado": "1",
+      "evidencia": "El error de muestreo no se corrige en el laboratorio: se arrastra hasta el boletín."
+    },
+    {
+      "id": "t36-f47",
+      "anverso": "¿Qué norma de la serie 5667 trata la calidad del propio muestreo, y qué ha pasado con la parte 1?",
+      "reverso": "**UNE-EN ISO 5667-14:2017**: aseguramiento y control de la calidad en el muestreo. La **parte 1** de **2024** anuló a la de 2022, y ya hay un proyecto que la anulará.",
+      "fuente": "Buscador de UNE · apunte §2.1",
+      "etiquetas": [
+        "normas"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "| UNE-EN ISO 5667-14:2017 | Aseguramiento y control de la calidad en el muestreo |",
+        "la de 2024 anuló a la de 2022 y ya tiene un proyecto que la anulará"
+      ]
+    },
+    {
+      "id": "t36-f48",
+      "anverso": "¿Para qué parámetros es obligatoria la muestra puntual?",
+      "reverso": "Para los que **cambian rápido**: **oxígeno disuelto, COT, temperatura, pH y microbiológicos**.",
+      "fuente": "Apunte §2.2",
+      "etiquetas": [
+        "tipos"
+      ],
+      "apartado": "2.2",
+      "evidencia": "| Puntual (o simple) | La tomada en un punto y un momento concretos | Obligatoria cuando el parámetro cambia rápido: oxígeno disuelto, COT, temperatura, pH y MICROBIOLÓGICOS |"
+    },
+    {
+      "id": "t36-f49",
+      "anverso": "Vidrio ámbar y envase metálico: ¿cuándo se usan? ¿Y se reutilizan los envases?",
+      "reverso": "**Vidrio ámbar**: orgánicos **fotosensibles**. **Metálico**: **totalmente desaconsejado** (contamina y se corroe). Se aconseja usar **envases nuevos**: reutilizarlos da problemas si la limpieza no es perfecta.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.3",
+      "etiquetas": [
+        "envases"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| METÁLICO | Contamina y se corroe | Totalmente desaconsejado |",
+        "Y en general se aconseja usar envases nuevos"
+      ]
+    },
+    {
+      "id": "t36-f50",
+      "anverso": "Tiosulfato sódico: dosis y por qué se pone siempre.",
+      "reverso": "**Al menos 20 mg por litro**. «**No tiene efecto sobre la muestra** y puede emplearse **también para aguas no cloradas**»: se pone siempre y no estorba.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.5",
+      "etiquetas": [
+        "conservacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "Tiosulfato sódico, al menos 20 mg por litro",
+        "El tiosulfato de sodio no tiene efecto sobre la muestra y puede emplearse también para aguas NO cloradas"
+      ]
+    },
+    {
+      "id": "t36-f51",
+      "anverso": "Tabla 4 del RD 487/2022: ¿a qué se refiere la temperatura de refrigeración?",
+      "reverso": "A la **temperatura del entorno de la muestra**, no a la muestra en sí.",
+      "fuente": "RD 487/2022, anexo VI, tabla 4 · apunte §2.5",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "2.5",
+      "evidencia": "esta se debe referir a la temperatura del entorno de la muestra, no a la muestra en sí"
+    },
+    {
+      "id": "t36-f52",
+      "anverso": "Oxígeno disuelto: envase, volumen y plazos.",
+      "reverso": "**Vidrio, botella de DBO**, 300 mL. Analizar **inmediatamente** (15 min); una vez **fijado y acidificado**, la titulación puede esperar **8 horas**.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "etiquetas": [
+        "conservacion"
+      ],
+      "apartado": "2.6",
+      "evidencia": "| Oxígeno disuelto | V, botella de DBO | 300 mL | Analizar inmediatamente; tras acidificar, la titulación puede esperar | 15 min (8 h tras fijar) |"
+    },
+    {
+      "id": "t36-f53",
+      "anverso": "Nitrato y nitrito: conservación y plazo.",
+      "reverso": "Los dos, **refrigerar ≤ 6 °C** y **48 horas**. El **nitrato** de un agua **clorada** aguanta **14 días**.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "etiquetas": [
+        "conservacion"
+      ],
+      "apartado": "2.6",
+      "evidencia": [
+        "| Nitrato | P, V, FP | 100 mL | Refrigerar ≤ 6 °C | 48 h (14 d si está clorada) |",
+        "| Nitrito | P, V, FP | 100 mL | Refrigerar ≤ 6 °C | 48 h |"
+      ]
+    },
+    {
+      "id": "t36-f54",
+      "anverso": "Cianuro total: envase y conservación.",
+      "reverso": "Plástico, **vidrio ámbar** o fluoropolímero, 1 000 mL. Analizar en **15 min**; si no, **NaOH a pH > 12**, ≤ 6 °C, **en oscuridad**, y **tiosulfato si hay cloro**. Plazo, **14 días**.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "etiquetas": [
+        "conservacion"
+      ],
+      "apartado": "2.6",
+      "evidencia": "| Cianuro total | P, V ámbar, FP | 1 000 mL | 15 min; si no, NaOH a pH > 12, ≤ 6 °C en oscuridad; tiosulfato si hay cloro | 14 d |"
+    },
+    {
+      "id": "t36-f55",
+      "anverso": "Metales en general y mercurio: ¿aguantan lo mismo?",
+      "reverso": "**No.** Metales en general: **6 meses** con HNO₃ a pH < 2. **Mercurio**: **28 días**, con la misma acidificación.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "etiquetas": [
+        "conservacion"
+      ],
+      "apartado": "2.6",
+      "evidencia": "| Mercurio | P(A), V(A), FP(A) | 500 mL | HNO₃ a pH < 2, ≤ 6 °C | 28 d |"
+    },
+    {
+      "id": "t36-f56",
+      "anverso": "Objetivos b) y c): ¿qué grifos no se muestrean y para qué situaciones es el c)?",
+      "reverso": "En el **b)** **no se muestrean grifos con fugas en los mandos**. El **c)**, sin desinfectar ni quitar accesorios, es el método para **situaciones especiales, por ejemplo epidemias**.",
+      "fuente": "UNE-EN ISO 19458 · apunte §2.7",
+      "etiquetas": [
+        "grifo"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "No se muestrean grifos con fugas en los mandos",
+        "Es el método para situaciones especiales, por ejemplo epidemias"
+      ]
+    },
+    {
+      "id": "t36-f57",
+      "anverso": "¿Trae el RD 3/2023 una tabla de envases, conservantes y plazos por parámetro?",
+      "reverso": "**No.** «Envase» y «recipiente» solo aparecen a propósito del agua envasada. La tabla está en la **UNE-EN ISO 5667-3**, a la que el RD llega por la UNE-ISO 5667-5.",
+      "fuente": "RD 3/2023 · apunte §2.8",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.8",
+      "evidencia": "no hay en todo el real decreto ninguna tabla de envases, conservantes ni plazos por parámetro."
+    },
+    {
+      "id": "t36-f58",
+      "anverso": "Vertidos a red en Aragón: ¿quién toma la muestra, quién la analiza y en qué plazo se informa al titular?",
+      "reverso": "La toma, **personal al servicio de las Administraciones**, acompañado de **un representante de la industria**; los análisis, **laboratorios homologados**. Copia del resultado al titular **en diez días** como máximo.",
+      "fuente": "Decreto 38/2004 de Aragón, arts. 21 y 22 · apunte §2.9",
+      "etiquetas": [
+        "vertidos"
+      ],
+      "apartado": "2.9",
+      "evidencia": [
+        "la toma la efectúa personal al servicio de las Administraciones, y los análisis, laboratorios homologados.",
+        "copia del resultado al titular en un plazo máximo de diez días"
+      ]
+    },
+    {
+      "id": "t36-f59",
+      "anverso": "¿Cómo se etiqueta el transporte de una muestra para Legionella?",
+      "reverso": "Con los **tres niveles de contención** de la instrucción **P650**, categoría **UN 3373** de la ONU.",
+      "fuente": "RD 487/2022, anexo VI · apunte §2.10",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "2.10",
+      "evidencia": "se etiqueta con los tres niveles de contención de la instrucción P650, categoría UN 3373 de la ONU"
+    },
+    {
+      "id": "t36-f60",
+      "anverso": "¿Qué exige el RD 487/2022 a los equipos de medida que se llevan a la toma?",
+      "reverso": "Que estén **dentro del periodo de calibración** (termómetro, pH-metro, turbidímetro…). Enlaza con el tema 39.",
+      "fuente": "RD 487/2022, anexo VI, parte C · apunte §2.11",
+      "etiquetas": [
+        "registro"
+      ],
+      "apartado": "2.11",
+      "evidencia": "deben encontrarse dentro del periodo de calibración"
     }
   ],
   "test": [
@@ -878,6 +1061,552 @@
       "correcta": 0,
       "explicacion": "Si se espera, parte de lo particulado se disuelve —o al revés— y el reparto entre disuelto y particulado deja de ser el del momento de la toma. Para el contenido TOTAL no se filtra: se digiere (tema 35).",
       "fuente": "IDEAM M-S-LC-I004; RD 817/2015 anexo IV B.3"
+    },
+    {
+      "id": "t36-q31",
+      "pregunta": "Un error de muestreo:",
+      "opciones": [
+        "Se corrige con la calibración del equipo",
+        "Se compensa con el blanco",
+        "No se corrige en el laboratorio: se arrastra hasta el boletín"
+      ],
+      "correcta": 2,
+      "explicacion": "Un dato no es mejor que su muestra.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "El error de muestreo no se corrige en el laboratorio: se arrastra hasta el boletín."
+    },
+    {
+      "id": "t36-q32",
+      "pregunta": "Para un analito que puede evaporarse, la contramedida es:",
+      "opciones": [
+        "Llenar el envase sin cámara de aire",
+        "Acidificar a pH < 2",
+        "Usar envase de plástico"
+      ],
+      "correcta": 0,
+      "explicacion": "COV, THM, oxígeno disuelto.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Que el analito se evapore | Llenar sin cámara de aire | COV, THM, oxígeno disuelto |"
+    },
+    {
+      "id": "t36-q33",
+      "pregunta": "La norma del aseguramiento y control de la calidad en el muestreo es:",
+      "opciones": [
+        "UNE-EN ISO 5667-1",
+        "UNE-EN ISO 5667-14",
+        "UNE-EN ISO 19458"
+      ],
+      "correcta": 1,
+      "explicacion": "La 5667-1 es el diseño de programas.",
+      "fuente": "Buscador de UNE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| UNE-EN ISO 5667-14:2017 | Aseguramiento y control de la calidad en el muestreo |"
+    },
+    {
+      "id": "t36-q34",
+      "pregunta": "Respecto de la UNE-EN ISO 5667-3, es correcto que:",
+      "opciones": [
+        "La de 2019 sigue en vigor",
+        "Fue anulada sin sustituta",
+        "La edición de 2024 anuló a la de 2019"
+      ],
+      "correcta": 2,
+      "explicacion": "Citar la de 2019 es citar una norma anulada.",
+      "fuente": "Buscador de UNE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "la UNE-EN ISO 5667-3 se renovó el 11 de diciembre de 2024. La edición 2024 anuló a la de 2019."
+    },
+    {
+      "id": "t36-q35",
+      "pregunta": "Para el muestreo de agua potable en instalaciones de tratamiento y redes, el RD 3/2023 remite a:",
+      "opciones": [
+        "La UNE-ISO 5667-5",
+        "La UNE-EN ISO 5667-14",
+        "El RD 487/2022"
+      ],
+      "correcta": 0,
+      "explicacion": "Y a la 19458 para la microbiología.",
+      "fuente": "Buscador de UNE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| UNE-ISO 5667-5:2021 | Agua potable de instalaciones de tratamiento y redes canalizadas |"
+    },
+    {
+      "id": "t36-q36",
+      "pregunta": "Una muestra integrada es:",
+      "opciones": [
+        "La tomada en un punto y un momento",
+        "La combinación de muestras de puntos distintos tomadas a la vez",
+        "La combinación de muestras del mismo punto a lo largo del tiempo"
+      ],
+      "correcta": 1,
+      "explicacion": "Esta última es la compuesta.",
+      "fuente": "Apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Integrada | Combinación de muestras de puntos distintos tomadas a la vez | Para conocer la media en el espacio |"
+    },
+    {
+      "id": "t36-q37",
+      "pregunta": "La muestra puntual es obligatoria para:",
+      "opciones": [
+        "DQO y sólidos en suspensión",
+        "Los metales",
+        "Oxígeno disuelto, COT, temperatura, pH y microbiológicos"
+      ],
+      "correcta": 2,
+      "explicacion": "Parámetros que cambian rápido.",
+      "fuente": "Apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Obligatoria cuando el parámetro cambia rápido: oxígeno disuelto, COT, temperatura, pH y MICROBIOLÓGICOS"
+    },
+    {
+      "id": "t36-q38",
+      "pregunta": "El vidrio, mejor borosilicatado, se usa para:",
+      "opciones": [
+        "Orgánicos: HAP, plaguicidas, COV, THM, aceites y grasas",
+        "Elementos traza",
+        "Cationes y aniones inorgánicos"
+      ],
+      "correcta": 0,
+      "explicacion": "Cede sodio, boro y silicio.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| VIDRIO (mejor borosilicatado) | CEDE elementos traza —sodio, boro, silicio— a la muestra | Orgánicos: HAP, plaguicidas, COV, THM, aceites y grasas |"
+    },
+    {
+      "id": "t36-q39",
+      "pregunta": "Los envases metálicos para muestras de agua:",
+      "opciones": [
+        "Son los preferidos para metales",
+        "Están totalmente desaconsejados",
+        "Solo se usan para COV"
+      ],
+      "correcta": 1,
+      "explicacion": "Contaminan y se corroen.",
+      "fuente": "Apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| METÁLICO | Contamina y se corroe | Totalmente desaconsejado |"
+    },
+    {
+      "id": "t36-q40",
+      "pregunta": "El carbono orgánico total puede tomarse en:",
+      "opciones": [
+        "Solo vidrio",
+        "Solo plástico",
+        "Plástico o vidrio, indistintamente"
+      ],
+      "correcta": 2,
+      "explicacion": "No sufre por ninguno de los dos.",
+      "fuente": "Apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "COT (#22) → plástico O vidrio, indistintamente."
+    },
+    {
+      "id": "t36-q41",
+      "pregunta": "La cámara de aire del envase microbiológico sirve para:",
+      "opciones": [
+        "Poder agitar la muestra antes de sembrar",
+        "Que entre oxígeno para las bacterias",
+        "Evitar la rotura al congelar"
+      ],
+      "correcta": 0,
+      "explicacion": "Y para mezclar el neutralizante.",
+      "fuente": "RD 487/2022, anexo VI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La cámara de aire de microbiología es para PODER AGITAR."
+    },
+    {
+      "id": "t36-q42",
+      "pregunta": "El volumen mínimo para un análisis fisicoquímico completo es de:",
+      "opciones": [
+        "500 mL",
+        "2 litros",
+        "50 mL"
+      ],
+      "correcta": 1,
+      "explicacion": "500 mL es el microbiológico general.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Fisicoquímico completo | 2 litros | ITOXDEF |"
+    },
+    {
+      "id": "t36-q43",
+      "pregunta": "Los cianuros se conservan:",
+      "opciones": [
+        "Acidificando con HNO₃ a pH < 2",
+        "Sin conservante",
+        "Alcalinizando con NaOH a pH > 12"
+      ],
+      "correcta": 2,
+      "explicacion": "En medio ácido se volatilizarían como HCN.",
+      "fuente": "Apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "NaOH a pH > 12 para cianuros, que en medio ácido se volatilizarían como HCN."
+    },
+    {
+      "id": "t36-q44",
+      "pregunta": "La dosis mínima de tiosulfato sódico en el envase es de:",
+      "opciones": [
+        "20 mg por litro",
+        "2 mg por litro",
+        "200 mg por litro"
+      ],
+      "correcta": 0,
+      "explicacion": "Neutraliza el cloro residual.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Tiosulfato sódico, al menos 20 mg por litro"
+    },
+    {
+      "id": "t36-q45",
+      "pregunta": "En un agua no clorada, el tiosulfato:",
+      "opciones": [
+        "Está prohibido",
+        "Puede emplearse también, porque no tiene efecto sobre la muestra",
+        "Mata las bacterias"
+      ],
+      "correcta": 1,
+      "explicacion": "Se pone siempre.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El tiosulfato de sodio no tiene efecto sobre la muestra y puede emplearse también para aguas NO cloradas"
+    },
+    {
+      "id": "t36-q46",
+      "pregunta": "Una muestra de Legionella que va a tardar entre 24 y 48 horas se transporta a:",
+      "opciones": [
+        "6-18 °C",
+        "−20 °C",
+        "5 ± 3 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "Hasta 24 h, más caliente: 6-18 °C.",
+      "fuente": "RD 487/2022, anexo VI, tabla 4 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Legionella spp. | > 24 h y < 48 h | 5 ± 3 °C | Íd. |"
+    },
+    {
+      "id": "t36-q47",
+      "pregunta": "Las temperaturas de refrigeración de la tabla 4 del RD 487/2022 se refieren a:",
+      "opciones": [
+        "La temperatura del entorno de la muestra",
+        "La temperatura de la propia muestra",
+        "La temperatura del agua en origen"
+      ],
+      "correcta": 0,
+      "explicacion": "Nota al pie de la tabla.",
+      "fuente": "RD 487/2022, anexo VI, tabla 4 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "esta se debe referir a la temperatura del entorno de la muestra, no a la muestra en sí"
+    },
+    {
+      "id": "t36-q48",
+      "pregunta": "Una vez fijado el oxígeno disuelto, la titulación puede esperar hasta:",
+      "opciones": [
+        "15 minutos",
+        "8 horas",
+        "28 días"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin fijar, 15 minutos.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "tras acidificar, la titulación puede esperar | 15 min (8 h tras fijar) |"
+    },
+    {
+      "id": "t36-q49",
+      "pregunta": "El nitrato de un agua clorada, refrigerado, aguanta:",
+      "opciones": [
+        "48 horas",
+        "6 meses",
+        "14 días"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin cloro, 48 horas.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Nitrato | P, V, FP | 100 mL | Refrigerar ≤ 6 °C | 48 h (14 d si está clorada) |"
+    },
+    {
+      "id": "t36-q50",
+      "pregunta": "El mercurio, acidificado con HNO₃, aguanta:",
+      "opciones": [
+        "28 días",
+        "6 meses",
+        "48 horas"
+      ],
+      "correcta": 0,
+      "explicacion": "Los demás metales, 6 meses.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Mercurio | P(A), V(A), FP(A) | 500 mL | HNO₃ a pH < 2, ≤ 6 °C | 28 d |"
+    },
+    {
+      "id": "t36-q51",
+      "pregunta": "El cianuro total se toma en:",
+      "opciones": [
+        "Vidrio transparente lleno a medias",
+        "Plástico, vidrio ámbar o fluoropolímero, y se conserva en oscuridad",
+        "Envase metálico"
+      ],
+      "correcta": 1,
+      "explicacion": "Con NaOH a pH > 12.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Cianuro total | P, V ámbar, FP | 1 000 mL |"
+    },
+    {
+      "id": "t36-q52",
+      "pregunta": "La muestra para DQO se conserva:",
+      "opciones": [
+        "Con HNO₃ a pH < 2, hasta 6 meses",
+        "Sin conservante, 48 horas",
+        "Con H₂SO₄ a pH < 2 y refrigerada, hasta 28 días"
+      ],
+      "correcta": 2,
+      "explicacion": "Igual que nitrógeno y fósforo.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| DQO | P, V, FP | 100 mL | H₂SO₄ a pH < 2, ≤ 6 °C | 28 d |"
+    },
+    {
+      "id": "t36-q53",
+      "pregunta": "La muestra de grasas y aceites se toma en:",
+      "opciones": [
+        "Vidrio de boca ancha, sin llenar del todo",
+        "Plástico, lleno hasta el borde",
+        "Plástico estéril con tiosulfato"
+      ],
+      "correcta": 0,
+      "explicacion": "El disolvente se añade en el propio frasco.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Grasas y aceites | V de boca ancha | 1 000 mL | NO llenar del todo; HCl o H₂SO₄ a pH < 2, ≤ 6 °C | 28 d |"
+    },
+    {
+      "id": "t36-q54",
+      "pregunta": "La muestra para alcalinidad, refrigerada, aguanta:",
+      "opciones": [
+        "28 días",
+        "14 días",
+        "6 meses"
+      ],
+      "correcta": 1,
+      "explicacion": "200 mL, en plástico, vidrio o fluoropolímero.",
+      "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Alcalinidad | P, V, FP | 200 mL | Refrigerar ≤ 6 °C | 14 d |"
+    },
+    {
+      "id": "t36-q55",
+      "pregunta": "En el objetivo a) del muestreo en grifo se elige un grifo:",
+      "opciones": [
+        "Con la alcachofa puesta",
+        "El más alejado de la red",
+        "Próximo a los conductos principales, limpio y sin accesorios"
+      ],
+      "correcta": 2,
+      "explicacion": "Se quiere saber la calidad de la red.",
+      "fuente": "UNE-EN ISO 19458 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Grifo próximo a los conductos principales, limpio y sin accesorios."
+    },
+    {
+      "id": "t36-q56",
+      "pregunta": "En el objetivo b), los grifos con fugas en los mandos:",
+      "opciones": [
+        "No se muestrean",
+        "Se muestrean tras flamearlos",
+        "Son los preferidos"
+      ],
+      "correcta": 0,
+      "explicacion": "Se retira la alcachofa y se desinfecta.",
+      "fuente": "UNE-EN ISO 19458 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "No se muestrean grifos con fugas en los mandos"
+    },
+    {
+      "id": "t36-q57",
+      "pregunta": "El objetivo c), sin desinfectar ni quitar accesorios, es el método para:",
+      "opciones": [
+        "El control rutinario de la red",
+        "Situaciones especiales, por ejemplo epidemias",
+        "El cobre y el plomo"
+      ],
+      "correcta": 1,
+      "explicacion": "Se busca lo que realmente se bebe.",
+      "fuente": "UNE-EN ISO 19458 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Es el método para situaciones especiales, por ejemplo epidemias"
+    },
+    {
+      "id": "t36-q58",
+      "pregunta": "Si el cobre, el plomo o el níquel superan el valor paramétrico por la instalación interior, puede usarse:",
+      "opciones": [
+        "Muestreo tras purgar 10 minutos",
+        "Una muestra compuesta de 24 horas",
+        "Muestreo con descarga previa y estancamiento de 30 minutos, o proporcional durante una semana"
+      ],
+      "correcta": 2,
+      "explicacion": "El método normal es sin descarga previa.",
+      "fuente": "RD 3/2023, anexo III, A.1.b · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "muestreo con descarga previa y ESTANCAMIENTO DE 30 MINUTOS, o muestreo proporcional"
+    },
+    {
+      "id": "t36-q59",
+      "pregunta": "La tabla de envases, conservantes y plazos por parámetro está en:",
+      "opciones": [
+        "La UNE-EN ISO 5667-3",
+        "El RD 3/2023",
+        "El RD 487/2022"
+      ],
+      "correcta": 0,
+      "explicacion": "El RD 3/2023 no la trae.",
+      "fuente": "Apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "Dónde está esa tabla, entonces: en la UNE-EN ISO 5667-3."
+    },
+    {
+      "id": "t36-q60",
+      "pregunta": "Para los microbiológicos en la red o la salida de la ETAP, el RD 3/2023 remite a:",
+      "opciones": [
+        "La UNE-ISO 5667-5, sin más",
+        "La UNE-EN ISO 19458",
+        "El RD 487/2022"
+      ],
+      "correcta": 1,
+      "explicacion": "Los demás parámetros, a la 5667-5.",
+      "fuente": "RD 3/2023, anexo III, A.2 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "b) Los microbiológicos, según la UNE-EN ISO 19458."
+    },
+    {
+      "id": "t36-q61",
+      "pregunta": "En una EDAR se muestrea, si es necesario, también la entrada porque:",
+      "opciones": [
+        "Lo exige el reglamento aragonés",
+        "Para medir el pH",
+        "Sin el dato de entrada no hay porcentaje de reducción que calcular"
+      ],
+      "correcta": 2,
+      "explicacion": "El cuadro 1 admite concentración o reducción.",
+      "fuente": "RD 509/1996, anexo III B.1 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "sin el dato de entrada no hay porcentaje de reducción que calcular"
+    },
+    {
+      "id": "t36-q62",
+      "pregunta": "Según el reglamento aragonés, la toma de muestras de los vertidos la efectúa:",
+      "opciones": [
+        "Personal al servicio de las Administraciones",
+        "El propio titular del vertido",
+        "Cualquier laboratorio privado"
+      ],
+      "correcta": 0,
+      "explicacion": "Y los análisis, laboratorios homologados.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 21 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "la toma la efectúa personal al servicio de las Administraciones, y los análisis, laboratorios homologados."
+    },
+    {
+      "id": "t36-q63",
+      "pregunta": "La copia del resultado de un control de vertido se entrega al titular en un plazo máximo de:",
+      "opciones": [
+        "Un mes",
+        "Diez días",
+        "24 horas"
+      ],
+      "correcta": 1,
+      "explicacion": "Art. 22.3.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 22.3 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "copia del resultado al titular en un plazo máximo de diez días"
+    },
+    {
+      "id": "t36-q64",
+      "pregunta": "Las neveras de transporte de muestras microbiológicas deben ser:",
+      "opciones": [
+        "Compartidas con las fisicoquímicas",
+        "Congeladores a −20 °C",
+        "De uso exclusivo"
+      ],
+      "correcta": 2,
+      "explicacion": "Quinta práctica correcta de higiene.",
+      "fuente": "RD 487/2022, anexo VI · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "las de muestras microbiológicas, de USO EXCLUSIVO"
+    },
+    {
+      "id": "t36-q65",
+      "pregunta": "El transporte de una muestra de Legionella se etiqueta según:",
+      "opciones": [
+        "La UNE-EN ISO 5667-14",
+        "La categoría de mercancía explosiva",
+        "La instrucción P650, categoría UN 3373"
+      ],
+      "correcta": 2,
+      "explicacion": "Tres niveles de contención.",
+      "fuente": "RD 487/2022, anexo VI · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "se etiqueta con los tres niveles de contención de la instrucción P650, categoría UN 3373 de la ONU"
+    },
+    {
+      "id": "t36-q66",
+      "pregunta": "Tras añadir el neutralizante al envase de Legionella, hay que:",
+      "opciones": [
+        "Abrirlo para que respire",
+        "Congelarlo de inmediato",
+        "Voltear el envase varias veces"
+      ],
+      "correcta": 2,
+      "explicacion": "Para que se mezcle bien.",
+      "fuente": "RD 487/2022, anexo VI, parte A.1 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "hay que voltear el envase varias veces"
+    },
+    {
+      "id": "t36-q67",
+      "pregunta": "El envase de la muestra se marca:",
+      "opciones": [
+        "Al llegar al laboratorio",
+        "Después de refrigerarlo",
+        "Antes de la toma, con rotulador resistente al agua"
+      ],
+      "correcta": 2,
+      "explicacion": "Con una referencia sin ambigüedad.",
+      "fuente": "Instituto de Toxicología de la Defensa · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "El envase, marcado ANTES de la toma con rotulador resistente al agua"
+    },
+    {
+      "id": "t36-q68",
+      "pregunta": "Los equipos de medida in situ (termómetro, pH-metro, turbidímetro) deben estar:",
+      "opciones": [
+        "Dentro del periodo de calibración",
+        "Recién estrenados",
+        "Exentos de calibración si son portátiles"
+      ],
+      "correcta": 0,
+      "explicacion": "Enlaza con el tema 39.",
+      "fuente": "RD 487/2022, anexo VI, parte C · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "deben encontrarse dentro del periodo de calibración"
+    },
+    {
+      "id": "t36-q69",
+      "pregunta": "Los metales se toman en:",
+      "opciones": [
+        "Plástico lavado con ácido, con HNO₃ a pH < 2",
+        "Vidrio con tapón de PTFE",
+        "Envase estéril con tiosulfato"
+      ],
+      "correcta": 0,
+      "explicacion": "Nunca vidrio para traza.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Metales | — | Plástico lavado con ácido | HNO₃ a pH < 2; nunca vidrio para traza |"
     }
   ],
   "supuestos": [
@@ -1022,6 +1751,170 @@
           "correcta": 0,
           "explicacion": "Tabla 4 del anexo VI: Legionella spp. a 6-18 °C si el ensayo empieza antes de 24 horas, y a 5 ± 3 °C solo si va a tardar entre 24 y 48. Refrigerar de más una muestra de Legionella le hace daño, y congelar una muestra microbiológica nunca se hace.",
           "fuente": "RD 487/2022, anexo VI, tabla 4"
+        }
+      ]
+    },
+    {
+      "id": "t36-s03",
+      "titulo": "Supuesto 3. Control en grifo en una vivienda anterior a 1980",
+      "enunciado": "Se hace el control en grifo en una vivienda construida en 1975. Hay que tomar muestra microbiológica, plomo y nitritos, y medir pH y cloro in situ.",
+      "preguntas": [
+        {
+          "id": "t36-s03-q1",
+          "pregunta": "El plomo supera el valor paramétrico y se comprueba que la causa es la instalación interior. ¿Qué otros métodos admite el RD 3/2023?",
+          "opciones": [
+            "Ninguno: solo vale el muestreo aleatorio diurno",
+            "Purgar hasta temperatura constante",
+            "Una muestra compuesta de 24 horas",
+            "Descarga previa y estancamiento de 30 minutos, o muestreo proporcional durante una semana"
+          ],
+          "correcta": 3,
+          "explicacion": "Anexo III, A.1.b.",
+          "fuente": "RD 3/2023, anexo III, A.1.b · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "muestreo con descarga previa y ESTANCAMIENTO DE 30 MINUTOS, o muestreo proporcional con una botella conectada al grifo"
+        },
+        {
+          "id": "t36-s03-q2",
+          "pregunta": "Para la muestra microbiológica, ¿cómo se prepara el grifo?",
+          "opciones": [
+            "Se retira la alcachofa, se desinfecta el grifo y se deja correr lo mínimo",
+            "Se deja correr hasta temperatura constante sin desinfectar",
+            "No se toca el grifo",
+            "Se flamea y se deja correr 30 minutos"
+          ],
+          "correcta": 0,
+          "explicacion": "Es el objetivo b) que exige el RD 3/2023.",
+          "fuente": "UNE-EN ISO 19458 · apunte §2.7",
+          "apartado": "2.7",
+          "evidencia": "se RETIRA la alcachofa y cualquier accesorio, se desinfecta el grifo (flameado, hipoclorito, etanol o isopropanol) y se deja correr lo mínimo"
+        },
+        {
+          "id": "t36-s03-q3",
+          "pregunta": "¿Qué debe recoger el informe que acompaña a las muestras?",
+          "opciones": [
+            "Solo el número de muestra",
+            "Entidad, dirección, origen, fecha y hora, determinaciones in situ y si el agua es natural o tratada",
+            "Solo el resultado esperado",
+            "El nombre del analista que hará el ensayo"
+          ],
+          "correcta": 1,
+          "explicacion": "Y el envase, marcado antes de la toma.",
+          "fuente": "Instituto de Toxicología de la Defensa · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "fecha y hora del muestreo, determinaciones realizadas in situ (cloro, pH, temperatura) y si el agua es natural o está tratada"
+        },
+        {
+          "id": "t36-s03-q4",
+          "pregunta": "La muestra microbiológica llega a las 10 horas, refrigerada a 4 °C y a oscuras. ¿Es válida?",
+          "opciones": [
+            "No: el límite absoluto es 6 h",
+            "No: debía congelarse",
+            "Sí, hasta 72 h",
+            "Sí: puede demorarse hasta 24 h en esas condiciones, aunque el plazo exigible ante reclamación legal es de 6 h"
+          ],
+          "correcta": 3,
+          "explicacion": "Convendría analizar antes de 6 h.",
+          "fuente": "Instituto de Toxicología de la Defensa · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "podrá demorarse un máximo de 24 horas, siempre que se mantengan las muestras en la oscuridad y refrigeradas entre 2 °C y 8 °C"
+        },
+        {
+          "id": "t36-s03-q5",
+          "pregunta": "¿En qué plazo debe analizarse el nitrito, refrigerado?",
+          "opciones": [
+            "28 días",
+            "6 meses",
+            "48 horas",
+            "15 minutos"
+          ],
+          "correcta": 2,
+          "explicacion": "Cuanto más activo biológicamente, menos espera.",
+          "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Nitrito | P, V, FP | 100 mL | Refrigerar ≤ 6 °C | 48 h |"
+        }
+      ]
+    },
+    {
+      "id": "t36-s04",
+      "titulo": "Supuesto 4. Inspección de un vertido de galvanotecnia",
+      "enunciado": "La inspección municipal controla el vertido a la red de una industria de galvanotecnia. Se determinarán cianuros, metales y DQO.",
+      "preguntas": [
+        {
+          "id": "t36-s04-q1",
+          "pregunta": "¿Quién toma la muestra?",
+          "opciones": [
+            "El titular, que la entrega al laboratorio",
+            "Cualquier persona de la empresa",
+            "Un laboratorio privado elegido por la industria",
+            "Personal al servicio de la Administración, acompañado de un representante de la industria"
+          ],
+          "correcta": 3,
+          "explicacion": "Salvo que eso perjudique la labor inspectora.",
+          "fuente": "Decreto 38/2004 de Aragón, arts. 21 y 22 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "acompañado por un representante de la industria salvo que eso perjudique la labor inspectora"
+        },
+        {
+          "id": "t36-s04-q2",
+          "pregunta": "Si el cianuro no se analiza en 15 minutos, ¿cómo se conserva?",
+          "opciones": [
+            "Con NaOH a pH > 12, refrigerado y en oscuridad",
+            "Con HNO₃ a pH < 2",
+            "Con H₂SO₄ a pH < 2",
+            "Sin conservante"
+          ],
+          "correcta": 0,
+          "explicacion": "En medio ácido se escaparía como HCN.",
+          "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Cianuro total | P, V ámbar, FP | 1 000 mL | 15 min; si no, NaOH a pH > 12, ≤ 6 °C en oscuridad; tiosulfato si hay cloro | 14 d |"
+        },
+        {
+          "id": "t36-s04-q3",
+          "pregunta": "¿Cómo se conserva la muestra de DQO?",
+          "opciones": [
+            "Con NaOH a pH > 12",
+            "Con H₂SO₄ a pH < 2, refrigerada; hasta 28 días",
+            "Congelada",
+            "Sin conservante, 15 minutos"
+          ],
+          "correcta": 1,
+          "explicacion": "Inhibe la actividad bacteriana.",
+          "fuente": "IDEAM e ITOXDEF (duda 2) · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| DQO | P, V, FP | 100 mL | H₂SO₄ a pH < 2, ≤ 6 °C | 28 d |"
+        },
+        {
+          "id": "t36-s04-q4",
+          "pregunta": "¿En qué plazo debe recibir el titular la copia del resultado?",
+          "opciones": [
+            "En 24 horas",
+            "En un mes",
+            "En diez días como máximo",
+            "No tiene derecho a copia"
+          ],
+          "correcta": 2,
+          "explicacion": "Art. 22.3.",
+          "fuente": "Decreto 38/2004 de Aragón, art. 22.3 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "copia del resultado al titular en un plazo máximo de diez días"
+        },
+        {
+          "id": "t36-s04-q5",
+          "pregunta": "Si los límites se refieren a un intervalo de tiempo, ¿qué muestra se toma?",
+          "opciones": [
+            "Siempre una puntual",
+            "Integrada de varios puntos",
+            "La que elija el titular",
+            "Compuesta, o simple proporcional al caudal vertido"
+          ],
+          "correcta": 3,
+          "explicacion": "Lo contrario que en microbiología.",
+          "fuente": "Decreto 38/2004 de Aragón, art. 22.2 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "los controles se efectuarán sobre muestras compuestas… o por muestras simples proporcionales al volumen del caudal vertido"
         }
       ]
     }
