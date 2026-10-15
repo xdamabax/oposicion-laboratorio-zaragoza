@@ -47,6 +47,20 @@ Proporciones derivadas del peso real observado en los exámenes anteriores (ver 
 
 Dentro de la parte común el peso tampoco es uniforme: en los dos exámenes completos, el TREBEP dio 3-4 preguntas de 10 y la Constitución solo 1.
 
+### Ampliación del repaso (octubre de 2026)
+
+Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya había**: mismos IDs, mismo texto y mismo `nucleo`, para que nadie pierda su progreso. Solo se añade, al final y con IDs nuevos.
+
+- **Cobertura.** `repaso/cobertura/tema-NN.json` dice qué apartado del apunte cubre cada tarjeta y pregunta anterior. Las nuevas lo declaran en su campo `apartado`. Cada apartado numerado (`##` y `###`) tiene al menos una tarjeta y una pregunta.
+- **Evidencia.** Cada tarjeta y pregunta nueva lleva en `evidencia` uno o dos fragmentos **literales** del apunte que respaldan la respuesta correcta, y la batería exige encontrarlos tal cual en ese apartado (sin contar las marcas de negrita). Su `fuente` cita el apartado (`· apunte §5.3`).
+- **Núcleo.** Una nueva solo es `nucleo: true` si ha caído en un examen: lo dice su campo `precedente` (plantilla y texto de la fila en `ExamenesAnteriores/PLANTILLAS.md`), y la batería comprueba que esa fila exista.
+- **Reparto.** Las respuestas correctas, a partes iguales sobre el total del tema: como mucho 1 de diferencia entre letras.
+- **Integridad.** La base es **`2fec5d6`**, lo último publicado antes de empezar (15/10/2026). Si hubiera que corregir algo anterior, se aprueba primero, se anota en `scripts/excepciones-integridad.json` y en esta lista. **Excepciones aprobadas: ninguna.**
+
+| Tema | Tarjetas | Test (3 op.) | Supuestos (4 op.) | Huecos de cobertura que había |
+|---|---|---|---|---|
+| 1 | 47 → 74 | 30 → 88 | — | Sin pregunta: §1 (encuadre), art. 2, art. 5, §4 (Título IV); y datos sueltos sin pregunta (arts. 3.2, 4.2, 8.1 misión, 8.2, 9.1, 9.2, 103.2, 104, 105.b y c, 106.1, 138.1, 139.2, 141.2 y 3, 142, 133.2) o sin tarjeta (rúbricas de los Títulos I, II, III, V, VI, VII y IX, 103.2, 104) |
+
 ### Núcleo
 
 Las tarjetas y preguntas de mayor peso real llevan `nucleo: true`. La app ofrece un modo **«Solo núcleo»** en tarjetas y en test. No se borra nada: el material completo sigue disponible como consulta, y así no se pierde el progreso guardado.
@@ -228,7 +242,7 @@ En la pestaña **Apuntes**, **Editar antes de descargar** abre `#/editar/tema/:n
 
 **El temario completo no tiene editor propio**: un solo editor con los 40 apuntes (1,7 MB) sería lentísimo. Su panel, **Preparar el temario** en la sección Descargas del inicio (`#/editar/temario`), **junta la versión de cada tema**: si se ha editado, con los cambios y sin las secciones quitadas en su editor; si no, el original. En el panel se elige qué temas entran (el índice lista solo esos), si hay portada (con título y subtítulo a elegir) e índice, y la letra, los márgenes y los recuadros de fuentes del documento entero. Cada tema enseña si va original o con cambios, y enlaza a su editor. En Word, cada tema es «Título 1» y empieza página, y sus apartados bajan un nivel: el panel de navegación de Word da los 40 temas como capítulos.
 
-**El cuestionario no se edita como texto**: cada pregunta lleva el índice de su respuesta correcta, y reescribir o borrar una opción dejaría la plantilla apuntando a otra sin dar ningún error. Su panel, **Preparar el cuestionario** en la pestaña Test (`#/editar/test/:n`), elige preguntas y supuestos, el orden (el del tema o barajado: los supuestos conservan el suyo, porque sus preguntas se encadenan), si se barajan las opciones —**la letra de la solución se recalcula con ellas**—, si salen las soluciones con su explicación y su fuente, la letra y los márgenes. 61 de las 1.457 preguntas conservan el orden de sus opciones aunque se pida barajar: alguna opción se refiere a otras («Las dos respuestas anteriores…») o la explicación cita una letra. El barajado usa una semilla guardada, así que el PDF y el Word salen iguales; «Barajar de nuevo» la cambia. Toda la lógica está en `app/src/editor/cuestionario.ts`, que usan el PDF y el Word.
+**El cuestionario no se edita como texto**: cada pregunta lleva el índice de su respuesta correcta, y reescribir o borrar una opción dejaría la plantilla apuntando a otra sin dar ningún error. Su panel, **Preparar el cuestionario** en la pestaña Test (`#/editar/test/:n`), elige preguntas y supuestos, el orden (el del tema o barajado: los supuestos conservan el suyo, porque sus preguntas se encadenan), si se barajan las opciones —**la letra de la solución se recalcula con ellas**—, si salen las soluciones con su explicación y su fuente, la letra y los márgenes. 174 de las 1.515 preguntas (recuento del 15/10/2026) conservan el orden de sus opciones aunque se pida barajar: alguna opción se refiere a otras («Las dos respuestas anteriores…») o la explicación cita una letra. El barajado usa una semilla guardada, así que el PDF y el Word salen iguales; «Barajar de nuevo» la cambia. Toda la lógica está en `app/src/editor/cuestionario.ts`, que usan el PDF y el Word.
 
 Las dos opciones se guardan en este navegador, como las ediciones de los temas.
 
@@ -271,9 +285,11 @@ El control del cromatograma merece una línea aparte, porque es de otra clase: e
 
 Los esquemas ópticos del tema 28 se apoyan además en atributos `data-pieza` dentro del SVG. Los dibujos antiguos se localizan por color y por forma, que basta cuando la pieza es única; en éstos no lo es —hay dos detectores idénticos y dos haces del mismo rojo— y **lo que el control afirma es justo cuál es cuál**, así que el dibujo lo declara en vez de dejarlo a una heurística. Es la misma idea que el `data-listo` de la vista de impresión.
 
-`verificar-repaso.js` — **8 controles** por tema, respondiendo todas las preguntas: 3 opciones en el test y 4 en los supuestos; que **la opción que marca la app sea la del dato** y que el veredicto concuerde; que ninguna letra se lleve más del 45 % de las respuestas; que «Solo núcleo» reduzca de verdad y solo deje preguntas etiquetadas; que las figuras del apunte se pinten con caja de contenido no nula; que **el dibujo de una tarjeta no lleve escrita la respuesta de su reverso**; y que la figura que hace de pregunta lleve rótulo neutro y el nombre completo aparezca al revelar.
+`verificar-repaso.js` — **14 controles** por tema. Los 8 primeros conducen la app, respondiendo todas las preguntas: 3 opciones en el test y 4 en los supuestos; que **la opción que marca la app sea la del dato** y que el veredicto concuerde; que ninguna letra se lleve más del 45 % de las respuestas; que «Solo núcleo» reduzca de verdad y solo deje preguntas etiquetadas; que las figuras del apunte se pinten con caja de contenido no nula; que **el dibujo de una tarjeta no lleve escrita la respuesta de su reverso**; y que la figura que hace de pregunta lleve rótulo neutro y el nombre completo aparezca al revelar.
 
 El control del dibujo delator es automático, sin listas escritas a mano: toma los fragmentos **en negrita** del reverso —que es lo que la tarjeta pide recordar—, descarta los que ya están en el anverso y comprueba que ninguno aparezca escrito dentro del SVG.
+
+Los 6 últimos miran el dato, el apunte y git (`scripts/ampliacion.js`), y son los de la [ampliación del repaso](#ampliación-del-repaso-octubre-de-2026): **integridad** de lo que ya había, ID a ID, contra el commit base; **cita** (apartado y fuente en todo lo nuevo, y el examen de procedencia si es núcleo); **evidencia** literal dentro de su apartado del apunte; **reparto estricto** (como mucho 1 de diferencia entre letras); **duplicados** (misma respuesta y enunciado parecido); y **cobertura** (cada apartado numerado con al menos una tarjeta y una pregunta). La integridad se exige en los 40 temas; reparto, duplicados y cobertura, en los ya ampliados. Sus sabotajes (9 a 14) estropean una copia del dato, así que no abren la app.
 
 Los controles que no aplican a un tema (un tema de la parte común no tiene supuestos) salen como `·`, no como aprobados.
 

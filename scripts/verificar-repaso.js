@@ -25,6 +25,7 @@ import { join } from 'node:path'
 import puppeteer from 'puppeteer-core'
 
 import { RAIZ, argumento, bandera, buscarChrome, decidirBase, temasConRepaso } from './comun.js'
+import * as amp from './ampliacion.js'
 
 const PUERTO = 4191
 
@@ -150,6 +151,90 @@ async function verificarTema(nav, base, tema, sab) {
   const b = new Bateria(nav, base, sab)
   const NEUTROS = nombresNeutros()
   const conFigura = (xs) => xs.filter((x) => x.figura)
+
+  // Los sabotajes del dato (9 a 14) no tocan la app: no hace falta abrirla.
+  if (sab >= 9) {
+    for (const nombre of NOMBRES_APP) b.resultados.push({ nombre, estado: 'n/a', detalle: 'sabotaje del dato: la app no se abre' })
+  } else {
+    await controlesApp(b, datos, tema, sab, NEUTROS, conFigura)
+  }
+  controlesDato(b, datos, tema, sab)
+  return b.resultados
+}
+
+const NOMBRES_APP = [
+  'Test · 3 opciones por pregunta',
+  'Test · la opción que marca la app es la del dato',
+  'Reparto · ninguna letra concentra las respuestas',
+  'Supuestos · 4 opciones y respuesta coincidente',
+  'Núcleo · el filtro reduce y solo deja preguntas marcadas',
+  'Figuras · caja de contenido no nula en el apunte',
+  'Tarjetas · el dibujo no delata el reverso',
+  'Figura-pregunta · rótulo neutro, y nombre completo al revelar',
+]
+
+/* ------------------------------------------------------------------ */
+/* Los seis controles del dato (ampliacion del repaso, scripts/ampliacion.js) */
+
+function controlesDato(b, datos, tema, sab) {
+  const anota = (nombre, fn) => {
+    try {
+      const detalle = fn()
+      b.resultados.push(detalle === null ? { nombre, estado: 'n/a', detalle: 'no aplica a este tema' } : { nombre, estado: 'ok', detalle })
+    } catch (e) {
+      b.resultados.push({ nombre, estado: 'falla', detalle: e.message })
+    }
+  }
+  // Se sabotea una copia: los controles de la app leen el dato limpio.
+  const d = structuredClone(datos)
+  let md = amp.leerApunte(tema)
+  const base = amp.leerBase(tema)
+  const mapa = amp.leerCobertura(tema)
+  const plantillas = readFileSync(join(RAIZ, 'ExamenesAnteriores/PLANTILLAS.md'), 'utf8')
+  const nuevasTest = () => amp.nuevos(d, base).filter((e) => e.clase === 'test').map((e) => e.x)
+  const primeraNueva = () => amp.nuevos(d, base)[0]?.x
+
+  if (sab === 9 && d.test[0]) d.test[0].pregunta = d.test[0].pregunta.replace(/\S+$/, 'retocada')
+  if (sab === 10 && primeraNueva()) primeraNueva().fuente = primeraNueva().fuente.replace(/§[\w./ ]+/g, '')
+  if (sab === 11 && primeraNueva()) {
+    const x = primeraNueva()
+    const t = [x.evidencia].flat()[0]
+    const palabra = t.match(/[A-Za-zÁÉÍÓÚáéíóúñÑ]{5,}/)[0]
+    x.evidencia = t.replace(palabra, palabra === 'palabra' ? 'vocablo' : 'palabra')
+  }
+  if (sab === 12 && nuevasTest().length) {
+    // de una letra con menos correctas a una con mas: la diferencia pasa de 1
+    const c = [0, 0, 0]
+    d.test.forEach((q) => c[q.correcta]++)
+    const min = c.indexOf(Math.min(...c))
+    const max = Math.max(...c) === Math.min(...c) ? (min + 1) % 3 : c.indexOf(Math.max(...c))
+    const q = nuevasTest().find((x) => x.correcta === min)
+    if (q) q.correcta = max
+  }
+  if (sab === 13 && nuevasTest().length) {
+    // la misma pregunta, con otra palabra delante y una menos al final; de
+    // molde, la mas larga de la letra con menos correctas (el reparto no se mueve)
+    const c = [0, 0, 0]
+    d.test.forEach((q) => c[q.correcta]++)
+    const largo = (x) => x.pregunta.split(/\s+/).length
+    const candidatas = nuevasTest().filter((x) => x.correcta === c.indexOf(Math.min(...c)))
+    const molde = (candidatas.length ? candidatas : nuevasTest()).reduce((m, x) => (largo(x) > largo(m) ? x : m))
+    const copia = structuredClone(molde)
+    copia.id = `t${String(tema).padStart(2, '0')}-qSABOTAJE`
+    copia.pregunta = `Indique: ${molde.pregunta.replace(/\s*\S+$/, '')}`
+    d.test.push(copia)
+  }
+  if (sab === 14) md += '\n\n## 99. Apartado sin cubrir\n\nNada lo pregunta.\n'
+
+  anota('Integridad · lo anterior sigue igual, ID a ID', () => amp.integridad(tema, d, base))
+  anota('Cita · apartado y fuente en todo lo nuevo', () => amp.cita(d, base, md, plantillas))
+  anota('Evidencia · fragmento literal del apunte', () => amp.evidencia(d, base, md))
+  anota('Reparto estricto · correctas a partes iguales', () => (mapa ? amp.reparto(d) : null))
+  anota('Duplicados · nada repite lo que ya había', () => (mapa ? amp.duplicados(d, base) : null))
+  anota('Cobertura · cada apartado con tarjeta y pregunta', () => (mapa ? amp.cobertura(d, base, md, mapa) : null))
+}
+
+async function controlesApp(b, datos, tema, sab, NEUTROS, conFigura) {
 
   /* 1. El formato del primer ejercicio: tres opciones */
   await b.control('Test · 3 opciones por pregunta', async () => {
@@ -419,8 +504,6 @@ async function verificarTema(nav, base, tema, sab) {
     }
     return `${conF[0].id}: «${antesLeido.title}» sin girar → «${despues.title}» al girar`
   })
-
-  return b.resultados
 }
 
 /* ------------------------------------------------------------------ */
@@ -434,13 +517,22 @@ const SABOTAJES = {
   6: 'una figura del apunte pintada con altura cero',
   7: 'un rótulo con la respuesta de la tarjeta, metido en su dibujo',
   8: 'el rótulo de la figura-pregunta cantando el nombre completo',
+  9: 'una palabra cambiada en una pregunta que ya existía',
+  10: 'una pregunta nueva sin el apartado del apunte en la fuente',
+  11: 'una palabra cambiada en la evidencia literal de una nueva',
+  12: 'una correcta nueva movida de la letra con menos a la de más',
+  13: 'una pregunta nueva copiada con otras palabras',
+  14: 'un apartado numerado del apunte que nada pregunta',
 }
 /**
  * Qué control(es) debe tumbar cada sabotaje, por su índice en los resultados.
  * Va como lista porque un sabotaje puede romper dos cosas acopladas de verdad;
  * lo que no se tolera es que tumbe una que no está declarada.
  */
-const CONTROL_DE = { 1: [0], 2: [1], 3: [2], 4: [3], 5: [4], 6: [5], 7: [6], 8: [7] }
+const CONTROL_DE = {
+  1: [0], 2: [1], 3: [2], 4: [3], 5: [4], 6: [5], 7: [6], 8: [7],
+  9: [8], 10: [9], 11: [10], 12: [11], 13: [12], 14: [13],
+}
 
 function pinta(titulo, resultados) {
   console.log(`\n${titulo}`)
@@ -452,9 +544,10 @@ function pinta(titulo, resultados) {
 }
 
 async function main() {
+  // los numeros sueltos son temas; el que va detras de --sabotaje o --base, no
   const temas = process.argv
     .slice(2)
-    .filter((a) => /^\d+$/.test(a))
+    .filter((a, i, xs) => /^\d+$/.test(a) && !/^--(sabotaje|base|chrome)$/.test(xs[i - 1] ?? ''))
     .map(Number)
   const objetivo = temas.length ? temas : temasConRepaso()
   if (!objetivo.length) throw new Error('No hay ningún repaso/tema-NN.json que verificar.')

@@ -136,7 +136,20 @@ export type Figura =
 
 /* ---------- Repaso ---------- */
 
-export interface Flashcard {
+/**
+ * Lo que lleva cada tarjeta o pregunta anadida en la ampliacion de octubre de
+ * 2026. La app no lo pinta: lo comprueba scripts/ampliacion.js.
+ */
+interface Respaldo {
+  /** Apartado del apunte que la respalda: «5.3», o «3/Artículo 8» para un ### sin numero */
+  apartado?: string
+  /** Fragmento(s) literal(es) de ese apartado que respaldan la respuesta correcta */
+  evidencia?: string | string[]
+  /** Si es nucleo: en que examen cayo (fila de ExamenesAnteriores/PLANTILLAS.md) */
+  precedente?: { plantilla: string; texto: string }
+}
+
+export interface Flashcard extends Respaldo {
   id: string
   anverso: string
   reverso: string
@@ -147,7 +160,7 @@ export interface Flashcard {
   figura?: Figura
 }
 
-export interface PreguntaTest {
+export interface PreguntaTest extends Respaldo {
   id: string
   pregunta: string
   /** 3 opciones en el primer ejercicio; 4 en los supuestos del segundo */
