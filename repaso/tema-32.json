@@ -354,6 +354,90 @@
       "fuente": "RD 3/2023, anexo I parte B, anexo III tabla 15 y anexo IV",
       "etiquetas": ["valores"],
       "nucleo": true
+    },
+    {
+      "id": "t32-f46",
+      "anverso": "Normas de microcistinas y de PFAS, y la técnica de cada una.",
+      "reverso": "Microcistinas: **ISO 20179:2005** (HPLC-UV) e **ISO 22104:2021** (LC-MS/MS). PFAS: **ISO 21675:2019** (LC-MS/MS) e **ISO 25101:2009** (PFOS y PFOA).",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normas"
+      ],
+      "apartado": "1",
+      "evidencia": [
+        "| Microcistinas | ISO 20179:2005 (HPLC-UV) y ISO 22104:2021 (LC-MS/MS) | Ensayo normalizado |",
+        "| PFAS | ISO 21675:2019 (LC-MS/MS) e ISO 25101:2009 (PFOS y PFOA) | Ensayo normalizado |"
+      ]
+    },
+    {
+      "id": "t32-f47",
+      "anverso": "En HPLC, ¿qué identifica y qué cuantifica, y qué resolución exige el CEM?",
+      "reverso": "El **tiempo de retención identifica**; el **área del pico cuantifica**. La resolución, **Rs > 1,5**.",
+      "fuente": "Tema 30 · apunte §2.1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "2.1",
+      "evidencia": "El tiempo de retención identifica y el área del pico cuantifica."
+    },
+    {
+      "id": "t32-f48",
+      "anverso": "Según el CEM, ¿con qué criterio se elige el tipo de cromatografía de líquidos?",
+      "reverso": "En función de las **características químicas del analito** a determinar. La de **reparto** es, con diferencia, la más usada.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.2",
+      "etiquetas": [
+        "tipos"
+      ],
+      "apartado": "2.2",
+      "evidencia": "se elige cada tipo a utilizar en función de las características químicas del analito a determinar"
+    },
+    {
+      "id": "t32-f49",
+      "anverso": "ISO 7981: ¿qué hacen sus partes 1 y 2?",
+      "reverso": "La **parte 2** determina **seis HAP por HPLC con fluorescencia**. La **parte 1** es **cromatografía en capa fina de alta resolución**, no HPLC: es la trampa.",
+      "fuente": "ISO 7981 · apunte §2.10",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ],
+      "apartado": "2.10",
+      "evidencia": [
+        "Alternativa para seis HAP: ISO 7981-2:2005 (HPLC con fluorescencia).",
+        "Ojo, que la parte 1 de esa misma norma es cromatografía en capa fina de alta resolución, no HPLC."
+      ]
+    },
+    {
+      "id": "t32-f50",
+      "anverso": "¿Cómo define el RD 3/2023 las PFAS?",
+      "reverso": "Sustancias con **un resto perfluoroalquilo de tres o más carbonos** o **un resto de perfluoroalquiléter de dos o más carbonos**.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.10",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.10",
+      "evidencia": "un resto perfluoroalquilo con tres o más carbonos […] o un resto de perfluoroalquiléter con dos o más carbonos"
+    },
+    {
+      "id": "t32-f51",
+      "anverso": "¿Cuándo entrarán los microplásticos en la lista de observación?",
+      "reverso": "Cuando la **Comisión Europea adopte una metodología normalizada** para medirlos en agua de consumo.",
+      "fuente": "RD 3/2023, anexo IV · apunte §2.10",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.10",
+      "evidencia": "los microplásticos se incluirán en la lista cuando la Comisión Europea adopte una metodología normalizada para medirlos en agua de consumo"
+    },
+    {
+      "id": "t32-f52",
+      "anverso": "Especiación de arsénico y de cromo: técnica y normas.",
+      "reverso": "**HPLC acoplada** (a **ICP-MS** en el caso del cromo): la cromatografía separa las especies y el ICP-MS cuantifica el elemento. Normas: **ISO/TS 19620:2018** e **ISO 24384:2024**.",
+      "fuente": "Tabla operativa · apunte §3",
+      "etiquetas": [
+        "especiacion"
+      ],
+      "apartado": "3",
+      "evidencia": "| Especiación: As(III)/As(V), Cr(VI)/Cr(III) | HPLC acoplada (a ICP-MS en el caso del cromo) | ISO/TS 19620:2018; ISO 24384:2024 | µg/L |"
     }
   ],
   "test": [
@@ -673,6 +757,576 @@
       "explicacion": "Estradiol 1 ng/L, nonilfenol 300 ng/L, azitromicina 100 ng/L y diclofenaco 100 ng/L: en la práctica, una lista de LC-MS/MS. Los trihalometanos son del anexo I parte B y los parámetros radiactivos, del anexo I parte E (tema 29).",
       "fuente": "RD 3/2023, anexo IV, tabla 16",
       "nucleo": true
+    },
+    {
+      "id": "t32-q27",
+      "pregunta": "La cromatografía de líquidos es la técnica de los compuestos orgánicos:",
+      "opciones": [
+        "No volátiles, termolábiles o de masa molecular alta",
+        "Volátiles y termoestables",
+        "Inorgánicos e iónicos"
+      ],
+      "correcta": 0,
+      "explicacion": "Los volátiles y termoestables van por gases.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "los no volátiles, los termolábiles y los de masa molecular alta"
+    },
+    {
+      "id": "t32-q28",
+      "pregunta": "A diferencia de la cromatografía de gases, en la de líquidos la separación depende de:",
+      "opciones": [
+        "Solo del punto de ebullición del soluto",
+        "Cómo se reparte el soluto entre las dos fases, y las dos se pueden cambiar",
+        "Solo de la temperatura del horno"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso el HPLC es una familia.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §1",
+      "apartado": "1",
+      "evidencia": "la separación depende de cómo se reparte el soluto entre las DOS fases, y las dos se pueden cambiar"
+    },
+    {
+      "id": "t32-q29",
+      "pregunta": "La ISO 22104:2021 determina las microcistinas por:",
+      "opciones": [
+        "HPLC-UV",
+        "Cromatografía de gases",
+        "LC-MS/MS"
+      ],
+      "correcta": 2,
+      "explicacion": "La ISO 20179 es HPLC-UV.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Microcistinas | ISO 20179:2005 (HPLC-UV) y ISO 22104:2021 (LC-MS/MS) |"
+    },
+    {
+      "id": "t32-q30",
+      "pregunta": "El CEM exige que la resolución entre picos sea superior a:",
+      "opciones": [
+        "1,5",
+        "1,0",
+        "0,5"
+      ],
+      "correcta": 0,
+      "explicacion": "Con Rs > 1,5 la separación es completa.",
+      "fuente": "CEM, QU-004 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Rs = 2·[tR(B) − tR(A)] / (wA + wB), que el CEM exige superior a 1,5"
+    },
+    {
+      "id": "t32-q31",
+      "pregunta": "De los cuatro tipos de cromatografía de líquidos del CEM, el más usado con diferencia es la de:",
+      "opciones": [
+        "Adsorción",
+        "Reparto",
+        "Exclusión por tamaños"
+      ],
+      "correcta": 1,
+      "explicacion": "La iónica es del tema 30.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Es, con diferencia, la más usada"
+    },
+    {
+      "id": "t32-q32",
+      "pregunta": "Según el CEM, el tipo de cromatografía de líquidos se elige en función de:",
+      "opciones": [
+        "El precio de la columna",
+        "El caudal máximo de la bomba",
+        "Las características químicas del analito"
+      ],
+      "correcta": 2,
+      "explicacion": "QU-004, 4.2.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "se elige cada tipo a utilizar en función de las características químicas del analito a determinar"
+    },
+    {
+      "id": "t32-q33",
+      "pregunta": "Un cromatógrafo iónico pasa a ser un HPLC de reparto si se le:",
+      "opciones": [
+        "Quita el supresor y se cambia el detector de conductividad por uno UV o de fluorescencia",
+        "Añade un horno y un gas portador",
+        "Quita la bomba"
+      ],
+      "correcta": 0,
+      "explicacion": "El resto de la cadena es idéntico.",
+      "fuente": "Temas 30 y 32 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Quítale el supresor y cámbiale el detector de conductividad por uno de UV o de fluorescencia, y tienes el equipo de este tema."
+    },
+    {
+      "id": "t32-q34",
+      "pregunta": "Para desgasificar la fase móvil se usa una bomba de vacío o se:",
+      "opciones": [
+        "Calienta hasta ebullición",
+        "Burbujea helio, que tiene baja solubilidad",
+        "Añade nitrógeno a presión"
+      ],
+      "correcta": 1,
+      "explicacion": "Los gases disueltos darían burbujas en el detector.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "burbujeando helio, que tiene baja solubilidad"
+    },
+    {
+      "id": "t32-q35",
+      "pregunta": "Dos pistones desfasados que envían a una cámara de mezcla permiten además:",
+      "opciones": [
+        "Suprimir la conductividad del eluyente",
+        "Termostatar la columna",
+        "Preparar la fase móvil binaria y hacer el gradiente"
+      ],
+      "correcta": 2,
+      "explicacion": "Cambiando la velocidad relativa de las dos bombas.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "permiten preparar la fase móvil binaria cambiando la velocidad relativa de las dos. Ése es el mecanismo del gradiente."
+    },
+    {
+      "id": "t32-q36",
+      "pregunta": "Un amortiguador de pulsos es:",
+      "opciones": [
+        "Una cámara con fluido compresible y diafragma que mantiene el caudal mientras el pistón se retira",
+        "Una precolumna sacrificial",
+        "Un filtro de partículas a la entrada de la columna"
+      ],
+      "correcta": 0,
+      "explicacion": "Alternativa a los dos pistones desfasados.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "una cámara con fluido compresible y diafragma que mantiene el caudal mientras el pistón se retira"
+    },
+    {
+      "id": "t32-q37",
+      "pregunta": "Para cargar el bucle del inyector se usa una jeringa de capacidad:",
+      "opciones": [
+        "Igual a la del bucle",
+        "Varias veces mayor que la del bucle",
+        "Menor que la del bucle"
+      ],
+      "correcta": 1,
+      "explicacion": "El exceso sale por el desagüe.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q38",
+      "pregunta": "El tubo de una columna analítica habitual de HPLC es de:",
+      "opciones": [
+        "Sílice fundida",
+        "Vidrio borosilicatado",
+        "Acero inoxidable"
+      ],
+      "correcta": 2,
+      "explicacion": "Las capilares de HPLC sí son de sílice fundida.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Analítica (la habitual) | Tubo de acero inoxidable, 2,1-4,6 mm de diámetro interno y 30-300 mm de longitud"
+    },
+    {
+      "id": "t32-q39",
+      "pregunta": "El soporte de una columna monolítica es:",
+      "opciones": [
+        "Una sola varilla porosa formada en un molde",
+        "Partículas porosas de sílice de 3-10 µm",
+        "Tierra de diatomeas"
+      ],
+      "correcta": 0,
+      "explicacion": "Da eficiencia con caudales más rápidos.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Monolítica | El soporte sólido es una sola varilla porosa formada en un molde"
+    },
+    {
+      "id": "t32-q40",
+      "pregunta": "Una columna de 25 cm con una eficiencia de 50 000 platos/m tiene:",
+      "opciones": [
+        "50 000 platos",
+        "12 500 platos",
+        "200 000 platos"
+      ],
+      "correcta": 1,
+      "explicacion": "0,25 m × 50 000 platos/m.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Una de 25 cm con 50 000 platos/m tiene 12 500 platos"
+    },
+    {
+      "id": "t32-q41",
+      "pregunta": "Las columnas capilares de HPLC dan señales mayores porque:",
+      "opciones": [
+        "Trabajan a más presión",
+        "Llevan más relleno",
+        "Diluyen menos la muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "Y usan menos disolvente.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Usa menos disolvente y diluye menos la muestra, así que da señales mayores"
+    },
+    {
+      "id": "t32-q42",
+      "pregunta": "Una fase estacionaria con grupos ciano, diol o amino es de:",
+      "opciones": [
+        "Fase normal",
+        "Fase inversa",
+        "Intercambio iónico"
+      ],
+      "correcta": 0,
+      "explicacion": "C8 y C18 son de fase inversa.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Ejemplos de R en el silano | Ciano (−C₂H₄CN), diol, amino (−C₃H₆NH₂) | C8 (n-octilo) y C18 (n-octadecilo) |"
+    },
+    {
+      "id": "t32-q43",
+      "pregunta": "En fase NORMAL, la retención se alarga:",
+      "opciones": [
+        "Subiendo la polaridad de la fase móvil",
+        "Bajando la polaridad de la fase móvil",
+        "Subiendo el pH por encima de 7,5"
+      ],
+      "correcta": 1,
+      "explicacion": "En fase inversa, al revés.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Cómo se alarga la retención | BAJANDO la polaridad de la fase móvil | SUBIENDO la polaridad de la fase móvil |"
+    },
+    {
+      "id": "t32-q44",
+      "pregunta": "Para unir covalentemente la fase estacionaria a la sílice, se hace reaccionar ésta con:",
+      "opciones": [
+        "Ácido sulfúrico concentrado",
+        "Divinilbenceno",
+        "Un organoclorosilano Si(CH₃)₂RCl"
+      ],
+      "correcta": 2,
+      "explicacion": "R es el grupo que decide la polaridad.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Se hace reaccionar la sílice con un organoclorosilano Si(CH₃)₂RCl, donde R es el grupo que decide la polaridad."
+    },
+    {
+      "id": "t32-q45",
+      "pregunta": "El índice de polaridad de una mezcla de dos disolventes miscibles es:",
+      "opciones": [
+        "La media ponderada por las fracciones de volumen",
+        "La suma de los dos índices",
+        "El mayor de los dos"
+      ],
+      "correcta": 0,
+      "explicacion": "P′_AB = Φ_A · P′_A + Φ_B · P′_B.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "es exactamente la media ponderada por las fracciones de volumen"
+    },
+    {
+      "id": "t32-q46",
+      "pregunta": "En elución isocrática, una fuerza de fase móvil apropiada para los solutos que eluyen pronto:",
+      "opciones": [
+        "Separa bien todos los solutos",
+        "Da tiempos de retención inaceptablemente largos para los que eluyen tarde",
+        "Hace que los tardíos salgan los primeros"
+      ],
+      "correcta": 1,
+      "explicacion": "La solución es el gradiente.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "conduce a tiempos de retención inaceptablemente largos para los que eluyen tarde"
+    },
+    {
+      "id": "t32-q47",
+      "pregunta": "La elución en gradiente del HPLC equivale, en cromatografía de gases, a:",
+      "opciones": [
+        "El modo isotermo",
+        "La inyección splitless",
+        "La rampa de temperatura del horno"
+      ],
+      "correcta": 2,
+      "explicacion": "Allí se cambia la temperatura; aquí, la composición de la fase móvil.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Modo con programa | Rampa de temperatura | Elución en gradiente |"
+    },
+    {
+      "id": "t32-q48",
+      "pregunta": "La celda de flujo de un detector UV/visible de HPLC tiene un volumen de:",
+      "opciones": [
+        "1-10 µL",
+        "1-10 mL",
+        "100 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Con 0,2-1 cm de camino óptico.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Absorbancia del eluyente en una celda de flujo de 1-10 µL y camino óptico 0,2-1 cm"
+    },
+    {
+      "id": "t32-q49",
+      "pregunta": "El detector amperométrico de HPLC sirve para compuestos que:",
+      "opciones": [
+        "Son fluorescentes",
+        "Se oxidan o se reducen",
+        "Son iónicos"
+      ],
+      "correcta": 1,
+      "explicacion": "La conductividad es la de los iónicos.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "La amperometría, para lo que se oxida o se reduce"
+    },
+    {
+      "id": "t32-q50",
+      "pregunta": "El límite de detección del detector de índice de refracción es del orden de:",
+      "opciones": [
+        "1-10 pg",
+        "100 pg-1 ng",
+        "0,1-1 µg"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el peor; 1-10 pg es la fluorescencia.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Índice de refracción | El cambio de índice de refracción de la fase móvil | 0,1 - 1 µg (malo) |"
+    },
+    {
+      "id": "t32-q51",
+      "pregunta": "La interfaz LC-MS es técnicamente más difícil que la GC-MS por:",
+      "opciones": [
+        "La incompatibilidad de una fase móvil líquida con el alto vacío del espectrómetro",
+        "La temperatura del horno",
+        "El tamaño de las columnas"
+      ],
+      "correcta": 0,
+      "explicacion": "El líquido hay que evaporarlo y retirarlo.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "debido a la incompatibilidad de una fase móvil LÍQUIDA con el requerimiento de alto vacío del espectrómetro"
+    },
+    {
+      "id": "t32-q52",
+      "pregunta": "El benzo(a)pireno se mide con detector de fluorescencia porque:",
+      "opciones": [
+        "Es un compuesto iónico",
+        "Los HAP son fluorescentes",
+        "Es muy volátil"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la ISO 17993 es «HPLC con detección por fluorescencia».",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Es un hidrocarburo aromático policíclico, y los HAP son fluorescentes"
+    },
+    {
+      "id": "t32-q53",
+      "pregunta": "En los tubos de conexión de un HPLC, el soluto viaja:",
+      "opciones": [
+        "A la misma velocidad en toda la sección",
+        "Más rápido junto a la pared",
+        "Más lento junto a la pared y más rápido en el centro"
+      ],
+      "correcta": 2,
+      "explicacion": "Y la banda se ensancha fuera de la columna.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "el soluto viaja más lento junto a la pared y más rápido en el centro"
+    },
+    {
+      "id": "t32-q54",
+      "pregunta": "El ensanchamiento extracolumna se minimiza con:",
+      "opciones": [
+        "Tubos cortos, de diámetro interno pequeño, y caudales bajos",
+        "Tubos largos y anchos",
+        "Caudales altos"
+      ],
+      "correcta": 0,
+      "explicacion": "Se suma a las contribuciones de van Deemter.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "Se minimiza con tres medidas: tubos lo más cortos posible, de diámetro interno más pequeño, y caudales más bajos."
+    },
+    {
+      "id": "t32-q55",
+      "pregunta": "Además de cubrir el rango, los materiales de referencia para calibrar el HPLC deben estar:",
+      "opciones": [
+        "Preparados en agua del grifo",
+        "Dentro de su periodo de caducidad",
+        "Sin certificar"
+      ],
+      "correcta": 1,
+      "explicacion": "Con relación entre las dos disoluciones ≤ 10.",
+      "fuente": "CEM, QU-004, 5.1 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "con la relación entre las dos disoluciones no mayor de 10, y dentro del periodo de caducidad"
+    },
+    {
+      "id": "t32-q56",
+      "pregunta": "Entre los parámetros instrumentales que se fijan antes de calibrar un HPLC está:",
+      "opciones": [
+        "El voltaje del supresor",
+        "La rampa del horno",
+        "La longitud de onda del detector"
+      ],
+      "correcta": 2,
+      "explicacion": "También caudal y volumen de inyección.",
+      "fuente": "CEM, QU-004, 5.3 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "temperatura del inyector y de la columna, longitud de onda del detector, caudal bombeado, volumen de inyección"
+    },
+    {
+      "id": "t32-q57",
+      "pregunta": "La parte 1 de la ISO 7981 (HAP) es:",
+      "opciones": [
+        "Cromatografía en capa fina de alta resolución",
+        "HPLC con fluorescencia",
+        "LC-MS/MS"
+      ],
+      "correcta": 0,
+      "explicacion": "La parte 2 sí es HPLC con fluorescencia.",
+      "fuente": "ISO 7981 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "la parte 1 de esa misma norma es cromatografía en capa fina de alta resolución, no HPLC"
+    },
+    {
+      "id": "t32-q58",
+      "pregunta": "El glifosato y el AMPA se determinan por:",
+      "opciones": [
+        "Cromatografía de gases sin derivatizar",
+        "HPLC con detección fluorimétrica o HPLC-MS/MS",
+        "Espacio de cabeza y GC"
+      ],
+      "correcta": 1,
+      "explicacion": "Son el caso extremo de plaguicida polar.",
+      "fuente": "ISO 21458 e ISO 16308 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "ISO 21458 (HPLC con detección fluorimétrica) e ISO 16308 (HPLC-MS/MS)"
+    },
+    {
+      "id": "t32-q59",
+      "pregunta": "Si la microcistina-LR supera 1 µg/L, el anexo II manda controlar:",
+      "opciones": [
+        "Turbidez",
+        "Bisfenol A",
+        "Clorofila a"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una toxina de cianobacterias.",
+      "fuente": "RD 3/2023, anexo II · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "si la microcistina-LR supera 1 µg/L, se controlará clorofila a."
+    },
+    {
+      "id": "t32-q60",
+      "pregunta": "El valor paramétrico del bisfenol A es:",
+      "opciones": [
+        "2,5 µg/L",
+        "0,10 µg/L",
+        "1,0 µg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "Con incertidumbre del 50 %.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Bisfenol A: 2,5 µg/L, con incertidumbre del 50 %."
+    },
+    {
+      "id": "t32-q61",
+      "pregunta": "El valor de referencia del 17β-estradiol en la lista de observación es:",
+      "opciones": [
+        "100 ng/L",
+        "1 ng/L",
+        "300 ng/L"
+      ],
+      "correcta": 1,
+      "explicacion": "100 ng/L azitromicina y diclofenaco; 300 ng/L nonilfenol.",
+      "fuente": "RD 3/2023, anexo IV · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| 68 | 17β-Estradiol | 1 ng/L | < 1 ng/L |"
+    },
+    {
+      "id": "t32-q62",
+      "pregunta": "Los microplásticos se incluirán en la lista de observación:",
+      "opciones": [
+        "Desde el 2 de enero de 2024",
+        "Solo en zonas de abastecimiento de tipo 6",
+        "Cuando la Comisión Europea adopte una metodología normalizada para medirlos"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo dice el cierre del anexo IV.",
+      "fuente": "RD 3/2023, anexo IV · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "los microplásticos se incluirán en la lista cuando la Comisión Europea adopte una metodología normalizada para medirlos en agua de consumo"
+    },
+    {
+      "id": "t32-q63",
+      "pregunta": "Según el RD 3/2023, una PFAS contiene un resto perfluoroalquilo de:",
+      "opciones": [
+        "Tres o más carbonos",
+        "Un solo carbono",
+        "Diez o más carbonos"
+      ],
+      "correcta": 0,
+      "explicacion": "O un resto de perfluoroalquiléter de dos o más carbonos.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "un resto perfluoroalquilo con tres o más carbonos"
+    },
+    {
+      "id": "t32-q64",
+      "pregunta": "Para el análisis de cloruros en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía líquida con detector de diodos",
+        "Cromatografía iónica de aniones",
+        "Cromatografía de gases con purga y trampa"
+      ],
+      "correcta": 1,
+      "explicacion": "El HPLC con diodos fue el distractor.",
+      "fuente": "1322 · segundo ejercicio #39 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Análisis de Cloruros"
+      },
+      "apartado": "3",
+      "evidencia": "| Aniones y cationes inorgánicos | NO es HPLC de reparto: cromatografía iónica | Tema 30 | — | Distractor en 1322 C2 #39 («con detector de diodos») |"
+    },
+    {
+      "id": "t32-q65",
+      "pregunta": "Para determinar cadmio, aluminio, antimonio y cromo en un agua, la técnica indicada es:",
+      "opciones": [
+        "HPLC con detector UV",
+        "Cromatografía iónica de aniones",
+        "ICP-MS, plasma acoplado inductivamente con espectrometría de masas"
+      ],
+      "correcta": 2,
+      "explicacion": "Los metales no son HPLC.",
+      "fuente": "1322 · segundo ejercicio #25 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Cadmio, Aluminio, Antimonio y Cromo"
+      },
+      "apartado": "3",
+      "evidencia": "| Metales | NO es HPLC: ICP-MS o absorción atómica | Temas 26 y 27 | — | Distractor en 1233 C2 #1, 1246 C2 #1, 1322 C2 #25 y #40 |"
+    },
+    {
+      "id": "t32-q66",
+      "pregunta": "La especiación de cromo, Cr(VI) frente a Cr(III), se hace con:",
+      "opciones": [
+        "ICP-MS solo",
+        "Cromatografía de gases con ECD",
+        "HPLC acoplada a ICP-MS"
+      ],
+      "correcta": 2,
+      "explicacion": "El ICP-MS solo da el cromo total.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Especiación: As(III)/As(V), Cr(VI)/Cr(III) | HPLC acoplada (a ICP-MS en el caso del cromo) |"
     }
   ],
   "supuestos": [
@@ -817,6 +1471,170 @@
           "correcta": 1,
           "explicacion": "El apartado 5.3.6 obliga a confirmar cuatro cosas: picos en los tiempos de retención esperados, resolución de la columna siempre superior a 1,5, forma de pico adecuada sin colas ni artefactos, y ventana de integración correcta. Son los mismos cuatro criterios que el QU-005 exige en cromatografía de gases.",
           "fuente": "CEM, QU-004, apartado 5.3.6"
+        }
+      ]
+    },
+    {
+      "id": "t32-s03",
+      "titulo": "Supuesto 3. Microcistina en un agua de embalse",
+      "enunciado": "Una zona de abastecimiento toma el agua de un embalse en el que este verano ha habido una proliferación de cianobacterias. El laboratorio debe decidir si controla la microcistina-LR y cómo.",
+      "preguntas": [
+        {
+          "id": "t32-s03-q1",
+          "pregunta": "¿Debe controlarse la microcistina-LR en esta agua?",
+          "opciones": [
+            "Sí: se controla cuando el origen es total o parcialmente de embalse, lago o laguna",
+            "No: solo en aguas subterráneas",
+            "Solo si las cianobacterias son visibles a simple vista",
+            "No: no es un parámetro del RD 3/2023"
+          ],
+          "correcta": 0,
+          "explicacion": "Nota 5 de la parte B.",
+          "fuente": "RD 3/2023, anexo I, nota 5 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "solo se controla «cuando el origen del agua sea total o parcialmente de embalse o lago o laguna»"
+        },
+        {
+          "id": "t32-s03-q2",
+          "pregunta": "El laboratorio tiene HPLC con detector UV. ¿Qué norma puede aplicar?",
+          "opciones": [
+            "ISO 21675:2019",
+            "UNE-EN ISO 17993:2004",
+            "ISO 20179:2005, extracción en fase sólida y HPLC-UV",
+            "UNE-EN ISO 11369:1998"
+          ],
+          "correcta": 2,
+          "explicacion": "La alternativa por LC-MS/MS es la ISO 22104.",
+          "fuente": "ISO 20179 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "Normas: ISO 20179:2005 (extracción en fase sólida y HPLC-UV) e ISO 22104:2021 (LC-MS/MS)."
+        },
+        {
+          "id": "t32-s03-q3",
+          "pregunta": "El resultado es 1,4 µg/L. ¿Qué consecuencia tiene?",
+          "opciones": [
+            "No supera ningún valor",
+            "Supera el valor de 1,0 µg/L y, según el anexo II, hay que controlar clorofila a",
+            "Supera el valor de 0,10 µg/L de la ∑4 HPA",
+            "Obliga a medir PFAS"
+          ],
+          "correcta": 1,
+          "explicacion": "Valor paramétrico 1,0 µg/L.",
+          "fuente": "RD 3/2023, anexos I y II · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "si la microcistina-LR supera 1 µg/L, se controlará clorofila a."
+        },
+        {
+          "id": "t32-s03-q4",
+          "pregunta": "¿Qué incertidumbre máxima admite el RD 3/2023 para la microcistina-LR?",
+          "opciones": [
+            "50 %",
+            "40 %",
+            "15 %",
+            "30 %"
+          ],
+          "correcta": 3,
+          "explicacion": "50 % es la del benzo(a)pireno y los PFAS.",
+          "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "Microcistina-LR: 1,0 µg/L, con incertidumbre del 30 %"
+        },
+        {
+          "id": "t32-s03-q5",
+          "pregunta": "¿Qué límite de cuantificación máximo exige el RD 3/2023 para la microcistina-LR?",
+          "opciones": [
+            "0,30 µg/L",
+            "1,0 µg/L",
+            "0,10 µg/L",
+            "0,03 µg/L"
+          ],
+          "correcta": 0,
+          "explicacion": "LC ≤ 30 % del valor paramétrico.",
+          "fuente": "RD 3/2023, anexo III, parte D · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "No impone técnica: LC ≤ 30 % del valor paramétrico"
+        }
+      ]
+    },
+    {
+      "id": "t32-s04",
+      "titulo": "Supuesto 4. Puesta a punto de un método en fase inversa",
+      "enunciado": "Se pone a punto un método en una columna C18 con fase móvil metanol-agua. Dato: el índice de polaridad del metanol es 5,1 y el del agua, 10,2. En las primeras pruebas los analitos salen demasiado pronto y los picos son anchos.",
+      "preguntas": [
+        {
+          "id": "t32-s04-q1",
+          "pregunta": "¿Cómo alarga la retención en esta columna?",
+          "opciones": [
+            "Bajando la polaridad, con más metanol",
+            "Subiendo el pH a 9",
+            "Subiendo la polaridad de la fase móvil, con más agua",
+            "Cambiando a fase normal sin tocar la fase móvil"
+          ],
+          "correcta": 2,
+          "explicacion": "En fase inversa, más polaridad de la fase móvil, más retención.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Cómo se alarga la retención | BAJANDO la polaridad de la fase móvil | SUBIENDO la polaridad de la fase móvil |"
+        },
+        {
+          "id": "t32-s04-q2",
+          "pregunta": "¿Cuál es el índice de polaridad de una mezcla con 60 % de metanol y 40 % de agua?",
+          "opciones": [
+            "7,1",
+            "7,7",
+            "15,3",
+            "5,1"
+          ],
+          "correcta": 0,
+          "explicacion": "0,60 × 5,1 + 0,40 × 10,2 = 3,06 + 4,08 = 7,14.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "P′_AB = Φ_A · P′_A + Φ_B · P′_B"
+        },
+        {
+          "id": "t32-s04-q3",
+          "pregunta": "Se plantea ganar eficiencia sin disparar la contrapresión. ¿Qué columna es la salida?",
+          "opciones": [
+            "Una de partículas de la mitad de tamaño",
+            "Una columna monolítica",
+            "Una columna empaquetada más larga",
+            "Una de tierra de diatomeas"
+          ],
+          "correcta": 1,
+          "explicacion": "Partículas de la mitad: eficiencia × 1,4 y contrapresión × 4.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La columna monolítica es precisamente la salida a ese callejón."
+        },
+        {
+          "id": "t32-s04-q4",
+          "pregunta": "Quiere medir con UV a una longitud de onda a la que la fase móvil también absorbe. ¿Qué ocurre?",
+          "opciones": [
+            "Mejora la sensibilidad",
+            "No influye",
+            "No es posible: la fase móvil no puede absorber a la longitud de onda que se mide",
+            "Solo afecta al detector de fluorescencia"
+          ],
+          "correcta": 2,
+          "explicacion": "Condiciona la elección del disolvente.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.7",
+          "apartado": "2.7",
+          "evidencia": "El más popular. La fase móvil NO puede absorber a la longitud de onda que se quiere medir"
+        },
+        {
+          "id": "t32-s04-q5",
+          "pregunta": "Los picos siguen anchos con una columna nueva, y los tubos de conexión son largos y anchos. ¿Qué hace?",
+          "opciones": [
+            "Alargar los tubos",
+            "Subir el caudal",
+            "Cambiar a un detector de índice de refracción",
+            "Acortar los tubos y usar diámetro interno menor, y bajar el caudal"
+          ],
+          "correcta": 3,
+          "explicacion": "Es ensanchamiento extracolumna.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 28 · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "Se minimiza con tres medidas: tubos lo más cortos posible, de diámetro interno más pequeño, y caudales más bajos."
         }
       ]
     }
