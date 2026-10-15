@@ -334,6 +334,139 @@
       "reverso": "**ICP** = *inductively coupled plasma*, **plasma acoplado inductivamente**: es **la fuente**, no la medida.\n**ICP-MS** = plasma acoplado inductivamente **con espectrometría de masas** — así, con todas las letras, es como lo escriben los cuestionarios.\n**ICP-OES** = **emisión óptica**; **ICP-AES** = emisión atómica. **Son la misma técnica con dos nombres.**",
       "fuente": "Tema 27, §1; cuestionarios 1246 C2 y 1322 C2",
       "etiquetas": ["concepto"]
+    },
+    {
+      "id": "t27-f43",
+      "anverso": "¿Cuándo desplaza el ICP a la absorción atómica en un laboratorio de aguas?",
+      "reverso": "En cuanto hay que **determinar varios metales a la vez** o **bajar a nanogramos por litro**.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "desplaza a la absorción atómica en cuanto hay que determinar varios a la vez o bajar a nanogramos por litro."
+    },
+    {
+      "id": "t27-f44",
+      "anverso": "¿Por qué un ICP no necesita electrodos?",
+      "reverso": "Porque se calienta **por inducción**: la radiofrecuencia crea un **campo magnético fluctuante** que hace girar iones y electrones, que chocan y calientan el gas. **Igual que una placa de cocina de inducción.**",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2",
+      "etiquetas": [
+        "antorcha"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Es calentamiento por inducción, igual que una placa de cocina de inducción, y por eso no hacen falta electrodos."
+    },
+    {
+      "id": "t27-f45",
+      "anverso": "¿En qué forma salen los elementos del plasma hacia el espectrómetro?",
+      "reverso": "Como **iones positivos M⁺**: el plasma **atomiza e ioniza**.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "etiquetas": [
+        "icp-ms"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Atomiza e ioniza: los elementos salen como iones positivos M⁺."
+    },
+    {
+      "id": "t27-f46",
+      "anverso": "¿Qué pieza del ICP-MS sufre más y se limpia más a menudo?",
+      "reverso": "**Los conos** de la interfase (muestreo y skimmer).",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "etiquetas": [
+        "icp-ms"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Los conos son la pieza que más sufre y la que más se limpia."
+    },
+    {
+      "id": "t27-f47",
+      "anverso": "¿Cómo selecciona las masas el cuadrupolo y qué se usa si hace falta más resolución?",
+      "reverso": "Con tensiones continua y de radiofrecuencia en cuatro barras: **solo una m/z llega al otro extremo en cada instante**; barriendo se recorre el espectro. Para más resolución, un analizador de **doble enfoque** (sector magnético + eléctrico).",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "etiquetas": [
+        "icp-ms"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "de modo que solo una relación masa/carga (m/z) llega al otro extremo en cada instante.",
+        "Cuando hace falta más resolución se usa un analizador de doble enfoque (sector magnético + eléctrico)."
+      ]
+    },
+    {
+      "id": "t27-f48",
+      "anverso": "¿Por qué el ICP-MS llega a sensibilidades de partes por billón?",
+      "reverso": "Porque el **multiplicador de electrones cuenta iones**: cada ion desencadena una cascada de electrones.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "etiquetas": [
+        "icp-ms"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Cada ion que llega desencadena una cascada de electrones. Se cuentan iones, y por eso la sensibilidad llega a partes por billón."
+    },
+    {
+      "id": "t27-f49",
+      "anverso": "ICP-MS: ¿por qué no tiene interferencias químicas y qué se hace con una muestra muy cargada?",
+      "reverso": "Porque **el plasma se las come**: sus interferencias son **de masa**. Con mucha carga de sólidos disueltos, **se diluye**: el ICP-MS no la admite.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "etiquetas": [
+        "interferencias"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "Aquí las interferencias no son químicas —el plasma se las come—, sino de masa: otra especie pesa lo mismo que el analito.",
+        "Diluir: el ICP-MS no admite mucha carga de sólidos disueltos."
+      ]
+    },
+    {
+      "id": "t27-f50",
+      "anverso": "¿Necesita el ICP-OES interfase de vacío? ¿Por qué van mal los halógenos en ICP-MS?",
+      "reverso": "El ICP-OES **no** necesita interfase de vacío (mide luz); el ICP-MS **sí** (los dos conos). Los **halógenos** van mal porque su **energía de ionización es mayor que la del argón** (explicación propia del apunte).",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.5 y Dudas",
+      "etiquetas": [
+        "icp-oes"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "| Hace falta interfase de vacío | No | Sí: los dos conos |",
+        "Los halógenos van mal porque su energía de ionización es más alta que la del argón."
+      ]
+    },
+    {
+      "id": "t27-f51",
+      "anverso": "ICP-OES frente a ICP-MS en la tabla operativa: ¿qué ventaja tiene el primero?",
+      "reverso": "Es **menos sensible**, pero **más tolerante a la matriz**; sirve para elementos disueltos, ligados a partículas y contenido total, a mg/L o µg/L.",
+      "fuente": "UNE-EN ISO 11885:2010 (catálogo) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Menos sensible que el ICP-MS, pero más tolerante a la matriz"
+    },
+    {
+      "id": "t27-f52",
+      "anverso": "¿Qué técnica conviene para un solo metal, de rutina y con presupuesto corto?",
+      "reverso": "La **absorción atómica** (llama o cámara de grafito, tema 26): es **monoelemental**, una lámpara por elemento.",
+      "fuente": "Criterio práctico · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Un solo metal, de rutina y barato | Absorción atómica (llama o cámara de grafito) | Tema 26 |"
+    },
+    {
+      "id": "t27-f53",
+      "anverso": "¿Qué partes tiene la norma UNE-EN ISO 17294 y qué cubre la 2?",
+      "reverso": "La **parte 1** da las **directrices generales**. La **parte 2** determina muchos elementos en agua de **consumo, superficial, subterránea, residual y eluatos**, y en **digeridos** de agua, lodos y sedimentos.",
+      "fuente": "UNE-EN ISO 17294-2:2024 (catálogo) · apunte §2.7",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "La parte 1 da las directrices generales de la técnica.",
+        "en agua de consumo, superficial, subterránea, residual y eluatos, y también en digeridos de agua, lodos y sedimentos"
+      ]
     }
   ],
   "test": [
@@ -634,6 +767,524 @@
       "correcta": 0,
       "explicacion": "El anexo III, parte D, no impone técnica: fija prestaciones. LC ≤ 30 % del valor paramétrico, incertidumbre (k = 2) según la tabla 15, y LC y LD siempre por debajo del valor paramétrico. La incertidumbre del 50 % referida a la norma de calidad ambiental es del RD 817/2015, que es de aguas superficiales.",
       "fuente": "RD 3/2023, anexo III, parte D; RD 817/2015, anexo III, C.1"
+    },
+    {
+      "id": "t27-q25",
+      "pregunta": "El ICP, en sentido estricto, es:",
+      "opciones": [
+        "Una fuente de iones: lo que se acopla detrás decide la técnica",
+        "Una técnica de medida completa por sí misma",
+        "Un tipo de lámpara de cátodo hueco"
+      ],
+      "correcta": 0,
+      "explicacion": "ICP-MS si detrás va un espectrómetro de masas; ICP-OES si se mide la luz.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §1",
+      "apartado": "1",
+      "evidencia": "El ICP no es una técnica de medida: es una fuente de iones."
+    },
+    {
+      "id": "t27-q26",
+      "pregunta": "En el ICP-OES se mide:",
+      "opciones": [
+        "La masa de los iones",
+        "La luz que emiten los átomos excitados en el propio plasma",
+        "La luz que absorben los átomos de una lámpara"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es ICP-MS; lo tercero, absorción atómica.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §1",
+      "apartado": "1",
+      "evidencia": "Si lo que se mide es la luz que emiten los átomos excitados en el propio plasma: ICP-OES (u ICP-AES), emisión óptica."
+    },
+    {
+      "id": "t27-q27",
+      "pregunta": "El ICP desplaza a la absorción atómica sobre todo cuando:",
+      "opciones": [
+        "Solo hay que medir un metal a mg/L",
+        "La muestra es un gas",
+        "Hay que determinar varios metales a la vez o bajar a ng/L"
+      ],
+      "correcta": 2,
+      "explicacion": "La absorción atómica es monoelemental.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §1",
+      "apartado": "1",
+      "evidencia": "desplaza a la absorción atómica en cuanto hay que determinar varios a la vez o bajar a nanogramos por litro."
+    },
+    {
+      "id": "t27-q28",
+      "pregunta": "Se dice que un plasma es eléctricamente neutro porque:",
+      "opciones": [
+        "En conjunto tiene tantas cargas positivas como negativas",
+        "No contiene iones",
+        "No conduce la electricidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Y es conductor porque tiene cargas libres.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Es eléctricamente neutro en conjunto: hay tantas cargas positivas como negativas (1233 #10)."
+    },
+    {
+      "id": "t27-q29",
+      "pregunta": "Un plasma es conductor de la electricidad porque:",
+      "opciones": [
+        "Contiene metales fundidos",
+        "Tiene cargas libres (iones y electrones)",
+        "Está a baja presión"
+      ],
+      "correcta": 1,
+      "explicacion": "A la vez es neutro en conjunto.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Y es conductor, precisamente porque tiene cargas libres (1322 #29)."
+    },
+    {
+      "id": "t27-q30",
+      "pregunta": "En un ICP no hay electrodos ni fuente de radiación externa porque:",
+      "opciones": [
+        "Se usa una lámpara de deuterio",
+        "El argón arde con el oxígeno",
+        "El plasma se calienta por inducción, sin contacto, y él mismo es la fuente"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso son falsos los distractores de la pregunta de la antorcha.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "en un ICP no hay electrodos —el plasma se calienta por inducción, sin contacto— ni fuente de radiación externa —el plasma es la fuente—."
+    },
+    {
+      "id": "t27-q31",
+      "pregunta": "El argón tangencial del tubo exterior de la antorcha sirve para:",
+      "opciones": [
+        "Sostener el plasma y aislar térmicamente el tubo de cuarzo",
+        "Llevar la muestra nebulizada",
+        "Separar los iones por su masa"
+      ],
+      "correcta": 0,
+      "explicacion": "Si no, el cuarzo se fundiría.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Exterior | Argón tangencial, el caudal grande | Sostiene el plasma y aísla térmicamente el tubo de cuarzo, que si no se fundiría |"
+    },
+    {
+      "id": "t27-q32",
+      "pregunta": "El argón auxiliar del tubo intermedio de la antorcha:",
+      "opciones": [
+        "Lleva la muestra",
+        "Separa el plasma de la punta del tubo central",
+        "Enfría el detector"
+      ],
+      "correcta": 1,
+      "explicacion": "La denominación «auxiliar» es la habitual; la fuente no la nombra.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2 y Dudas",
+      "apartado": "2.2",
+      "evidencia": "| Intermedio | Argón auxiliar | Separa el plasma de la punta del tubo central |"
+    },
+    {
+      "id": "t27-q33",
+      "pregunta": "La base del plasma de un ICP alcanza:",
+      "opciones": [
+        "Unos 2 300 °C",
+        "Unos 500 K",
+        "Hasta 10 000 K"
+      ],
+      "correcta": 2,
+      "explicacion": "La zona de medida está a 6000-8000 K.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2 y Dudas",
+      "apartado": "2.2",
+      "evidencia": "Base del plasma: hasta 10 000 K."
+    },
+    {
+      "id": "t27-q34",
+      "pregunta": "En el plasma, el calentamiento se produce porque:",
+      "opciones": [
+        "Un campo magnético fluctuante hace girar a iones y electrones, que chocan",
+        "Arde el argón",
+        "Una resistencia eléctrica calienta el cuarzo"
+      ],
+      "correcta": 0,
+      "explicacion": "Es inducción, como una placa de cocina.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La corriente alterna crea un campo magnético fluctuante que obliga a iones y electrones a girar en trayectoria circular"
+    },
+    {
+      "id": "t27-q35",
+      "pregunta": "Del plasma de un ICP-MS, los elementos salen hacia el espectrómetro como:",
+      "opciones": [
+        "Átomos neutros",
+        "Iones positivos M⁺",
+        "Moléculas de óxido"
+      ],
+      "correcta": 1,
+      "explicacion": "El espectrómetro separa iones.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Atomiza e ioniza: los elementos salen como iones positivos M⁺."
+    },
+    {
+      "id": "t27-q36",
+      "pregunta": "Detrás del cono de muestreo de un ICP-MS, con su orificio de ≈ 1 mm, la presión es de unos:",
+      "opciones": [
+        "10⁻⁵ torr",
+        "1 atmósfera",
+        "1 torr"
+      ],
+      "correcta": 2,
+      "explicacion": "10⁻⁵ torr es detrás del skimmer.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Cono de muestreo (sampler) | Un orificio de alfiler de ≈ 1 mm por el que se cuela una porción del plasma | ≈ 1 torr |"
+    },
+    {
+      "id": "t27-q37",
+      "pregunta": "La pieza del ICP-MS que más sufre y más se limpia es:",
+      "opciones": [
+        "Los conos de la interfase",
+        "La bobina de radiofrecuencia",
+        "El cuadrupolo"
+      ],
+      "correcta": 0,
+      "explicacion": "Reciben directamente el plasma.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Los conos son la pieza que más sufre y la que más se limpia."
+    },
+    {
+      "id": "t27-q38",
+      "pregunta": "El cuadrupolo de un ICP-MS trabaja aproximadamente en el intervalo de:",
+      "opciones": [
+        "300 a 3000 m/z",
+        "3 a 300 m/z",
+        "0,1 a 1 m/z"
+      ],
+      "correcta": 1,
+      "explicacion": "Cubre toda la tabla periódica útil.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "y trabaja aproximadamente de 3 a 300 m/z, que cubre toda la tabla periódica útil."
+    },
+    {
+      "id": "t27-q39",
+      "pregunta": "Cuando el cuadrupolo no da resolución suficiente se usa:",
+      "opciones": [
+        "Una lámpara de cátodo hueco",
+        "Un monocromador de red",
+        "Un analizador de doble enfoque (sector magnético y eléctrico)"
+      ],
+      "correcta": 2,
+      "explicacion": "El cuadrupolo distingue ± 1 m/z.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Cuando hace falta más resolución se usa un analizador de doble enfoque (sector magnético + eléctrico)."
+    },
+    {
+      "id": "t27-q40",
+      "pregunta": "En un cuadrupolo, en cada instante:",
+      "opciones": [
+        "Solo llega al otro extremo una relación masa/carga",
+        "Llegan todas las masas a la vez",
+        "Llegan solo los fotones"
+      ],
+      "correcta": 0,
+      "explicacion": "Barriendo las tensiones se recorre el espectro.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "de modo que solo una relación masa/carga (m/z) llega al otro extremo en cada instante."
+    },
+    {
+      "id": "t27-q41",
+      "pregunta": "Mucha sal o mucho ácido que cambian la eficacia de nebulización y de ionización producen en ICP-MS una interferencia:",
+      "opciones": [
+        "Isobárica",
+        "De matriz",
+        "Por ion poliatómico"
+      ],
+      "correcta": 1,
+      "explicacion": "Típica de aguas salinas y digeridos concentrados.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| De matriz | Mucha sal o mucho ácido cambian la eficacia de nebulización y de ionización | Aguas salinas, digeridos concentrados |"
+    },
+    {
+      "id": "t27-q42",
+      "pregunta": "Una forma de evitar una interferencia de masa en ICP-MS es:",
+      "opciones": [
+        "Añadir lantano",
+        "Usar llama reductora",
+        "Elegir otro isótopo del analito, libre de solapamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "El lantano y la llama son de absorción atómica.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Elegir otro isótopo del analito, libre de solapamiento."
+    },
+    {
+      "id": "t27-q43",
+      "pregunta": "Las ecuaciones de corrección en ICP-MS consisten en:",
+      "opciones": [
+        "Restar la contribución del interferente medida en otra masa",
+        "Multiplicar por el factor de dilución",
+        "Promediar varios isótopos sin más"
+      ],
+      "correcta": 0,
+      "explicacion": "Otra forma de manejar las interferencias de masa.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Ecuaciones de corrección, restando la contribución del interferente medida en otra masa."
+    },
+    {
+      "id": "t27-q44",
+      "pregunta": "Una muestra con mucha carga de sólidos disueltos en ICP-MS:",
+      "opciones": [
+        "Se mide directamente sin problema",
+        "Se diluye, porque el ICP-MS no admite mucha carga",
+        "Se concentra"
+      ],
+      "correcta": 1,
+      "explicacion": "Si no, se obstruyen los conos y hay efecto de matriz.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Diluir: el ICP-MS no admite mucha carga de sólidos disueltos."
+    },
+    {
+      "id": "t27-q45",
+      "pregunta": "Las interferencias propias del ICP-MS son:",
+      "opciones": [
+        "Químicas, como el fosfato sobre el calcio",
+        "De ionización, que obligan a añadir cesio",
+        "De masa: otra especie pesa lo mismo que el analito"
+      ],
+      "correcta": 2,
+      "explicacion": "Las químicas y de ionización las elimina el plasma.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Aquí las interferencias no son químicas —el plasma se las come—, sino de masa: otra especie pesa lo mismo que el analito."
+    },
+    {
+      "id": "t27-q46",
+      "pregunta": "A diferencia del ICP-MS, el ICP-OES:",
+      "opciones": [
+        "No necesita interfase de vacío",
+        "Necesita dos conos y alto vacío",
+        "Distingue isótopos"
+      ],
+      "correcta": 0,
+      "explicacion": "Mide luz, no iones.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Hace falta interfase de vacío | No | Sí: los dos conos |"
+    },
+    {
+      "id": "t27-q47",
+      "pregunta": "El rango dinámico del ICP-MS es de unos:",
+      "opciones": [
+        "6 órdenes de magnitud",
+        "8 órdenes de magnitud",
+        "2 órdenes de magnitud"
+      ],
+      "correcta": 1,
+      "explicacion": "El del ICP-OES, unos 6.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Rango dinámico | ≈ 6 órdenes de magnitud | ≈ 8 órdenes de magnitud |"
+    },
+    {
+      "id": "t27-q48",
+      "pregunta": "De las dos técnicas de plasma, la única que distingue isótopos es:",
+      "opciones": [
+        "El ICP-OES",
+        "Ninguna",
+        "El ICP-MS"
+      ],
+      "correcta": 2,
+      "explicacion": "Separa por m/z.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Isótopos | No los distingue | Sí: es la única que los distingue |"
+    },
+    {
+      "id": "t27-q49",
+      "pregunta": "Los halógenos se determinan mal por ICP-MS porque:",
+      "opciones": [
+        "Su energía de ionización es más alta que la del argón",
+        "No tienen isótopos",
+        "Forman óxidos refractarios"
+      ],
+      "correcta": 0,
+      "explicacion": "La explicación es del apunte; la fuente dice solo que se exceptúan.",
+      "fuente": "CAI de la UCM · apunte §2.5 y Dudas",
+      "apartado": "2.5",
+      "evidencia": "Los halógenos van mal porque su energía de ionización es más alta que la del argón."
+    },
+    {
+      "id": "t27-q50",
+      "pregunta": "En el ICP, la fuente de radiación o de iones es:",
+      "opciones": [
+        "Una lámpara de cátodo hueco por elemento",
+        "El propio plasma: no hay lámpara",
+        "Una lámpara de deuterio"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es la absorción atómica.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Fuente | Lámpara de cátodo hueco, una por elemento | El propio plasma: no hay lámpara |"
+    },
+    {
+      "id": "t27-q51",
+      "pregunta": "Frente a la absorción atómica, el ICP mide en cada análisis:",
+      "opciones": [
+        "Un solo elemento",
+        "Solo los alcalinos",
+        "Muchos elementos a la vez"
+      ],
+      "correcta": 2,
+      "explicacion": "La absorción atómica es monoelemental.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Elementos por medida | Uno (monoelemental) | Muchos a la vez (multielemental) |"
+    },
+    {
+      "id": "t27-q52",
+      "pregunta": "Las interferencias propias del ICP, frente a las de la absorción atómica, son:",
+      "opciones": [
+        "Isobáricas y poliatómicas",
+        "De fondo, ionización y químicas",
+        "Solo espectrales"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo segundo es la absorción atómica.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Interferencias propias | De fondo, ionización, químicas | Isobáricas y poliatómicas |"
+    },
+    {
+      "id": "t27-q53",
+      "pregunta": "Se elige la absorción atómica frente al ICP cuando hay que medir:",
+      "opciones": [
+        "Doce metales por muestra",
+        "Uno o dos metales, con presupuesto corto",
+        "Isótopos de uranio"
+      ],
+      "correcta": 1,
+      "explicacion": "El ICP, para varios metales o trazas muy bajas.",
+      "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Cuándo se elige | Uno o dos metales, presupuesto corto | Varios metales, o trazas muy bajas |"
+    },
+    {
+      "id": "t27-q54",
+      "pregunta": "Para una lista de doce metales en un agua, la respuesta de examen fue:",
+      "opciones": [
+        "Filtración y absorción atómica de llama",
+        "Cromatografía iónica de cationes",
+        "Digestión ácida de la muestra y posterior determinación por ICP-MS"
+      ],
+      "correcta": 2,
+      "explicacion": "Es lo que da la plantilla del 1322, segundo ejercicio.",
+      "fuente": "1322 C2 #40; plantilla · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "«digestión ácida de la muestra y posterior determinación de los metales por ICP-MS»"
+    },
+    {
+      "id": "t27-q55",
+      "pregunta": "La UNE-EN ISO 17294-2 se aplica a:",
+      "opciones": [
+        "Aguas de consumo, superficiales, subterráneas, residuales, eluatos y digeridos de lodos y sedimentos",
+        "Solo agua de consumo",
+        "Solo aire"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la norma de elementos por ICP-MS.",
+      "fuente": "UNE-EN ISO 17294-2:2024 (catálogo) · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "en agua de consumo, superficial, subterránea, residual y eluatos, y también en digeridos de agua, lodos y sedimentos"
+    },
+    {
+      "id": "t27-q56",
+      "pregunta": "El uranio tiene mención propia en el título de la UNE-EN ISO 17294-2 porque:",
+      "opciones": [
+        "No se puede medir por ICP-MS",
+        "Es parámetro del RD 3/2023",
+        "Es un halógeno"
+      ],
+      "correcta": 1,
+      "explicacion": "Su valor paramétrico es del tema 33; como radionucleido, del 29.",
+      "fuente": "UNE-EN ISO 17294-2:2024 (catálogo) · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "el uranio es parámetro del RD 3/2023."
+    },
+    {
+      "id": "t27-q57",
+      "pregunta": "El RD 817/2015 exige a los métodos de metales en aguas superficiales una incertidumbre de:",
+      "opciones": [
+        "≤ 5 %",
+        "≤ 0,2 unidades",
+        "≤ 50 % (k = 2) al nivel de la NCA"
+      ],
+      "correcta": 2,
+      "explicacion": "Y LC ≤ 30 % de la NCA, con validación ISO/IEC 17025.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "incertidumbre ≤ 50 % (k = 2) al nivel de la norma de calidad ambiental"
+    },
+    {
+      "id": "t27-q58",
+      "pregunta": "La parte 1 de la UNE-EN ISO 17294 da:",
+      "opciones": [
+        "Las directrices generales de la técnica ICP-MS",
+        "La lista de elementos y matrices",
+        "El método de ICP-OES"
+      ],
+      "correcta": 0,
+      "explicacion": "La parte 2 da los elementos.",
+      "fuente": "UNE-EN ISO 17294-1:2024 (catálogo) · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "La parte 1 da las directrices generales de la técnica."
+    },
+    {
+      "id": "t27-q59",
+      "pregunta": "Frente al ICP-MS, el ICP-OES es:",
+      "opciones": [
+        "Más sensible y menos tolerante",
+        "Menos sensible, pero más tolerante a la matriz",
+        "Igual en todo"
+      ],
+      "correcta": 1,
+      "explicacion": "Para concentraciones más altas.",
+      "fuente": "UNE-EN ISO 11885:2010 (catálogo) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Menos sensible que el ICP-MS, pero más tolerante a la matriz"
+    },
+    {
+      "id": "t27-q60",
+      "pregunta": "La UNE-EN ISO 17294-1:2024:",
+      "opciones": [
+        "Está anulada",
+        "Es la norma de ICP-OES",
+        "Anuló a la de 2007 el 11/12/2024"
+      ],
+      "correcta": 2,
+      "explicacion": "Dato tomado de la ficha de la edición de 2007.",
+      "fuente": "Catálogo AENOR · apunte §3 y Dudas",
+      "apartado": "3",
+      "evidencia": "| Directrices generales de la técnica | ICP-MS | UNE-EN ISO 17294-1:2024 | — | Anuló a la de 2007 el 11/12/2024 |"
+    },
+    {
+      "id": "t27-q61",
+      "pregunta": "Para un solo metal, de rutina y con poco presupuesto, la técnica recomendada es:",
+      "opciones": [
+        "El ICP-MS",
+        "El ICP-OES",
+        "La absorción atómica"
+      ],
+      "correcta": 2,
+      "explicacion": "Es monoelemental, una lámpara por elemento.",
+      "fuente": "Criterio práctico · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Un solo metal, de rutina y barato | Absorción atómica (llama o cámara de grafito) | Tema 26 |"
     }
   ],
   "supuestos": [
@@ -779,6 +1430,170 @@
           "correcta": 1,
           "explicacion": "El RD 3/2023, anexo III, parte D, no impone técnica: fija prestaciones. LC ≤ 30 % del valor paramétrico, incertidumbre (k = 2) según la tabla 15, y LC y LD siempre inferiores al valor paramétrico. La incertidumbre del 50 % referida a la norma de calidad ambiental es del RD 817/2015, que regula aguas superficiales, no de consumo.",
           "fuente": "RD 3/2023, anexo III, parte D, puntos 1 y 3; RD 817/2015, anexo III, C.1"
+        }
+      ]
+    },
+    {
+      "id": "t27-s03",
+      "titulo": "Supuesto 3. ICP-OES o ICP-MS para un vertido industrial",
+      "enunciado": "Una industria de galvanizado pide los metales de su vertido: hierro, cinc, cobre y níquel a nivel de mg/L, con mucha carga salina. Además, una investigación pide la composición isotópica del plomo de una muestra.",
+      "preguntas": [
+        {
+          "id": "t27-s03-q1",
+          "pregunta": "Para los metales del vertido, a mg/L y con mucha sal, ¿qué técnica conviene?",
+          "opciones": [
+            "ICP-OES: menos sensible, pero más tolerante a la matriz",
+            "ICP-MS sin diluir",
+            "Absorción atómica con vapor frío",
+            "Cromatografía iónica de aniones"
+          ],
+          "correcta": 0,
+          "explicacion": "El ICP-MS no admite mucha carga de sólidos.",
+          "fuente": "UNE-EN ISO 11885:2010 (catálogo) · apunte §3",
+          "apartado": "3",
+          "evidencia": "Menos sensible que el ICP-MS, pero más tolerante a la matriz"
+        },
+        {
+          "id": "t27-s03-q2",
+          "pregunta": "¿Qué norma sigue para el ICP-OES?",
+          "opciones": [
+            "UNE-EN ISO 17294-2:2024",
+            "UNE-EN ISO 11885:2010",
+            "UNE-EN ISO 15586",
+            "UNE-EN ISO 7980"
+          ],
+          "correcta": 1,
+          "explicacion": "La 17294-2 es la del ICP-MS.",
+          "fuente": "UNE-EN ISO 11885:2010 (catálogo) · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Norma de agua | UNE-EN ISO 11885:2010 | UNE-EN ISO 17294-2:2024 |"
+        },
+        {
+          "id": "t27-s03-q3",
+          "pregunta": "Si quisiera medir esos metales por ICP-MS, ¿qué haría con la muestra?",
+          "opciones": [
+            "Concentrarla",
+            "Añadirle lantano",
+            "Diluirla, porque el ICP-MS no admite mucha carga de sólidos disueltos",
+            "Medirla tal cual"
+          ],
+          "correcta": 2,
+          "explicacion": "Y usar patrón interno.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Diluir: el ICP-MS no admite mucha carga de sólidos disueltos."
+        },
+        {
+          "id": "t27-s03-q4",
+          "pregunta": "¿Con qué técnica estudia la composición isotópica del plomo?",
+          "opciones": [
+            "ICP-OES",
+            "Absorción atómica de llama",
+            "Fotometría de llama",
+            "ICP-MS, la única que distingue isótopos"
+          ],
+          "correcta": 3,
+          "explicacion": "Separa por m/z.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Isótopos | No los distingue | Sí: es la única que los distingue |"
+        },
+        {
+          "id": "t27-s03-q5",
+          "pregunta": "Si solo tuviera que medir cobre en pocas muestras y con presupuesto corto, ¿qué elegiría?",
+          "opciones": [
+            "Absorción atómica",
+            "ICP-MS de doble enfoque",
+            "ICP-OES con cambiador",
+            "Ninguna: el cobre no se puede medir"
+          ],
+          "correcta": 0,
+          "explicacion": "Uno o dos metales, presupuesto corto: absorción atómica.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Cuándo se elige | Uno o dos metales, presupuesto corto | Varios metales, o trazas muy bajas |"
+        }
+      ]
+    },
+    {
+      "id": "t27-s04",
+      "titulo": "Supuesto 4. Funcionamiento y mantenimiento de un ICP-MS",
+      "enunciado": "Un ICP-MS de cuadrupolo trabaja a diario con aguas de consumo y, de vez en cuando, con digeridos salinos. Tras una serie de digeridos, la sensibilidad cae. El técnico revisa el equipo.",
+      "preguntas": [
+        {
+          "id": "t27-s04-q1",
+          "pregunta": "¿Cómo se enciende el plasma?",
+          "opciones": [
+            "Con una cerilla y acetileno",
+            "Con una resistencia que calienta el cuarzo",
+            "Fluye argón, se aplica radiofrecuencia a la bobina y una chispa de bobina Tesla siembra los primeros electrones",
+            "Con una lámpara de deuterio"
+          ],
+          "correcta": 2,
+          "explicacion": "Después se mantiene por inducción.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Una chispa de una bobina Tesla siembra los primeros electrones."
+        },
+        {
+          "id": "t27-s04-q2",
+          "pregunta": "Tras los digeridos salinos, ¿qué pieza revisa y limpia primero?",
+          "opciones": [
+            "Los conos de la interfase",
+            "El cuadrupolo",
+            "La bobina",
+            "El detector"
+          ],
+          "correcta": 0,
+          "explicacion": "Son la pieza que más sufre.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Los conos son la pieza que más sufre y la que más se limpia."
+        },
+        {
+          "id": "t27-s04-q3",
+          "pregunta": "¿Qué pasaría si las lentes iónicas dejaran llegar los fotones del plasma al detector?",
+          "opciones": [
+            "Mejorarían la sensibilidad",
+            "Lo cegarían",
+            "Nada",
+            "Se separarían por masa"
+          ],
+          "correcta": 1,
+          "explicacion": "Las lentes separan los iones de electrones, neutros y fotones.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Si los fotones del plasma llegaran al detector, lo cegarían."
+        },
+        {
+          "id": "t27-s04-q4",
+          "pregunta": "El cuadrupolo distingue masas que difieren en:",
+          "opciones": [
+            "± 0,001 m/z",
+            "± 100 m/z",
+            "± 1 m/z",
+            "No distingue masas"
+          ],
+          "correcta": 2,
+          "explicacion": "Para más resolución, doble enfoque.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Resolución del cuadrupolo: distingue masas que difieren en ± 1 m/z"
+        },
+        {
+          "id": "t27-s04-q5",
+          "pregunta": "Para corregir la deriva y el efecto de matriz, usa germanio como patrón interno. ¿Cómo lo añade?",
+          "opciones": [
+            "Solo en el blanco final",
+            "Solo en el patrón más concentrado",
+            "En el detector",
+            "Bombeado junto con la muestra antes de la nebulización, refiriendo todo a su señal"
+          ],
+          "correcta": 3,
+          "explicacion": "Debe ser un elemento que no esté en la muestra.",
+          "fuente": "LibreTexts (Harvey, Barron); CAI de la UCM · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "se bombea junto con la muestra antes de la nebulización, y todo se refiere a su señal."
         }
       ]
     }
