@@ -396,6 +396,266 @@
       "etiquetas": [
         "normas"
       ]
+    },
+    {
+      "id": "t21-f39",
+      "anverso": "¿Una balanza de laboratorio está siempre sujeta a control metrológico del Estado?",
+      "reverso": "**No por ser balanza**, sino **por el uso** que se le da (art. 8.1 de la Ley 32/2014). Lo que sí necesita siempre, si el laboratorio está acreditado, es **calibración trazable** (ISO/IEC 17025).",
+      "fuente": "Ley 32/2014; UNE-EN ISO/IEC 17025 · apunte §1",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "1",
+      "evidencia": "una balanza de laboratorio no está sujeta a control metrológico del Estado por el hecho de ser una balanza, sino por el uso que se le da (apartado 2.4.7)."
+    },
+    {
+      "id": "t21-f40",
+      "anverso": "¿Qué documento rige cada aspecto: vocabulario, requisitos de la balanza, verificación oficial, calibración y pesas?",
+      "reverso": "Vocabulario: **VIM**. Requisitos: **UNE-EN 45501** y RD 244/2016. Verificación oficial: **Orden ICT/155/2020**. Calibración: **EURAMET cg-18**. Pesas: **OIML R 111-1**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "1",
+      "evidencia": "| Cómo se calibra una balanza | EURAMET cg-18 v4.0 (2015) | Guía técnica de calibración |"
+    },
+    {
+      "id": "t21-f41",
+      "anverso": "¿Cómo se calcula el porcentaje de analito en una gravimetría?",
+      "reverso": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**, con F el factor gravimétrico.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "etiquetas": [
+        "gravimetria"
+      ],
+      "apartado": "2.1",
+      "evidencia": "% de analito = (masa de precipitado × F / masa de muestra) × 100"
+    },
+    {
+      "id": "t21-f42",
+      "anverso": "Factores gravimétricos del sulfato, el cloruro y el calcio.",
+      "reverso": "SO₄²⁻ como **BaSO₄**: M(SO₄²⁻)/M(BaSO₄). Cl⁻ como **AgCl**: M(Cl⁻)/M(AgCl). Ca como **CaO**: M(Ca)/M(CaO).",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "etiquetas": [
+        "gravimetria"
+      ],
+      "apartado": "2.1",
+      "evidencia": "| SO₄²⁻ | BaSO₄ | M(SO₄²⁻) / M(BaSO₄) |"
+    },
+    {
+      "id": "t21-f43",
+      "anverso": "¿A qué temperaturas trabajan la estufa y la mufla en gravimetría?",
+      "reverso": "**Estufa**: secado a temperatura moderada, típicamente **105 °C**. **Mufla**: calcinación a **500-1000 °C** según el método.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "etiquetas": [
+        "material"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Mufla (horno de calcinación). Calcinación a alta temperatura, típicamente 500-1000 °C según el método."
+    },
+    {
+      "id": "t21-f44",
+      "anverso": "¿Cómo se abre el desecador y para qué sirve la «policía de goma»?",
+      "reverso": "La llave del desecador se abre **despacio**, para **no arrastrar el precipitado** con la entrada de aire. La **policía de goma** (varilla con goma) arrastra los restos de precipitado **adheridos a las paredes**.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "etiquetas": [
+        "material"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "La llave se abre despacio para no arrastrar el precipitado con la entrada de aire.",
+        "Varilla de vidrio con goma (policía de goma). Para arrastrar los restos de precipitado adheridos a las paredes."
+      ]
+    },
+    {
+      "id": "t21-f45",
+      "anverso": "¿Qué es la precipitación en disolución homogénea?",
+      "reverso": "El precipitante **se genera in situ poco a poco** por una reacción química; por ejemplo, **urea que se hidroliza al calentar y libera amoniaco**. Mantiene baja la sobresaturación.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "precipitacion"
+      ],
+      "apartado": "2.3",
+      "evidencia": "la precipitación en disolución homogénea, en la que el precipitante se genera in situ poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-f46",
+      "anverso": "¿Cómo se lava mejor un precipitado y en qué forma se pesa el hierro(III)?",
+      "reverso": "Mejor **muchas porciones pequeñas** que pocas grandes, con electrolito volátil. El **hidróxido de hierro(III)** hidratado se precipita como tal y **se pesa como Fe₂O₃**, tras calcinar a una especie de composición conocida.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "precipitacion"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "Es más eficaz lavar con muchas porciones pequeñas que con pocas grandes.",
+        "el hidróxido de hierro(III) hidratado se precipita como tal y se pesa como Fe₂O₃."
+      ]
+    },
+    {
+      "id": "t21-f47",
+      "anverso": "Remedios contra los errores de la gravimetría.",
+      "reverso": "**Digestión** (reduce oclusión y adsorción); **redisolución y reprecipitación**, la más eficaz contra la coprecipitación; **lavado con electrolito volátil** (evita la peptización); y **control del exceso de reactivo**: moderado baja la solubilidad (ion común); grande puede redisolver por complejos.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "etiquetas": [
+        "errores"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "redisolución y reprecipitación (la más eficaz contra la coprecipitación)",
+        "un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos"
+      ]
+    },
+    {
+      "id": "t21-f48",
+      "anverso": "Tipos de balanza por resolución (valores comerciales habituales).",
+      "reverso": "Granatario o de precisión: 0,1 g a 1 mg. **Analítica: 0,1 mg**. Semimicro: 0,01 mg. **Microbalanza: 1 µg**, para filtros de material particulado. (La norma clasifica por clase de exactitud, no por legibilidad.)",
+      "fuente": "Valores comerciales · apunte §2.4 y Dudas",
+      "etiquetas": [
+        "balanza"
+      ],
+      "apartado": "2.4",
+      "evidencia": "| Balanza analítica | 0,1 mg | Pesada de muestra y de precipitados |"
+    },
+    {
+      "id": "t21-f49",
+      "anverso": "¿Qué es el número de escalones de verificación n?",
+      "reverso": "**n = Max / e**. Mide la «finura» del instrumento y, junto con **e** y la carga mínima **Min**, fija la clase de exactitud.",
+      "fuente": "RD 244/2016 y UNE-EN 45501 · apunte §2.4",
+      "etiquetas": [
+        "balanza"
+      ],
+      "apartado": "2.4",
+      "evidencia": "El número de escalones de verificación, n = Max / e, mide la «finura» del instrumento y es lo que fija la clase junto con e y la carga mínima Min."
+    },
+    {
+      "id": "t21-f50",
+      "anverso": "¿Qué hay que hacer antes de pesar con la balanza analítica?",
+      "reverso": "Tenerla **conectada permanentemente** y estabilizada (si se desenchufó, tiempo de calentamiento); **ajuste** y comprobación con **pesa de control**; **cero** con las puertas del paravientos **cerradas**.",
+      "fuente": "EURAMET cg-18 v4.0; manejo · apunte §2.4",
+      "etiquetas": [
+        "balanza"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Balanza conectada permanentemente y estabilizada térmicamente; si se ha desenchufado, hay que darle tiempo de calentamiento."
+    },
+    {
+      "id": "t21-f51",
+      "anverso": "Electrostática y magnetismo al pesar: ¿qué pasa y cómo se corrige?",
+      "reverso": "**Electrostática**: plásticos y vidrio muy seco se cargan y la lectura **deriva**; se corrige con **ionizador**, recipientes **metálicos** o **subiendo la humedad**. **Magnetismo**: las muestras ferromagnéticas se aíslan con un **soporte no magnético**.",
+      "fuente": "EURAMET cg-18 v4.0; manejo · apunte §2.4",
+      "etiquetas": [
+        "balanza"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Electrostática: los plásticos y el vidrio muy seco se cargan y la lectura deriva sin estabilizarse. Se corrige con ionizador, con recipientes metálicos o subiendo la humedad ambiente."
+    },
+    {
+      "id": "t21-f52",
+      "anverso": "¿Amplía la tara la capacidad de la balanza?",
+      "reverso": "**No.** Descuenta el recipiente, pero **Max sigue contando la masa total** sobre el plato.",
+      "fuente": "RD 244/2016 y UNE-EN 45501 · apunte §2.4",
+      "etiquetas": [
+        "balanza"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Tara: la balanza descuenta el recipiente, pero no amplía su capacidad máxima; Max sigue contando la masa total sobre el plato."
+    },
+    {
+      "id": "t21-f53",
+      "anverso": "¿Quién exige la calibración, la verificación y el ajuste?",
+      "reverso": "**Calibración**: la **UNE-EN ISO/IEC 17025** (laboratorio acreditado). **Verificación**: el **control metrológico del Estado**. **Ajuste**: el **procedimiento interno**.",
+      "fuente": "VIM (JCGM 200:2012); ISO/IEC 17025 · apunte §2.4",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "2.4",
+      "evidencia": "| Quién la exige | UNE-EN ISO/IEC 17025 (laboratorio acreditado) | Control metrológico del Estado | Procedimiento interno |"
+    },
+    {
+      "id": "t21-f54",
+      "anverso": "¿Qué es el «mínimo de pesada» de la EURAMET cg-18?",
+      "reverso": "La carga por debajo de la cual la **incertidumbre relativa se dispara** y la balanza **deja de ser apta** para el uso previsto. Es un concepto de **calibración**, distinto de la carga mínima **Min** de la metrología legal.",
+      "fuente": "EURAMET cg-18 v4.0 · apunte §2.4",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "2.4",
+      "evidencia": "Es un concepto de calibración, distinto de la carga mínima Min de la metrología legal."
+    },
+    {
+      "id": "t21-f55",
+      "anverso": "¿Qué pesas se usan con la balanza analítica y cuándo no sirven como patrón?",
+      "reverso": "Clases **E2 y F1**. Se manipulan con **pinzas o guantes** y tienen su **certificado de calibración** con vigencia limitada: **una pesa sin certificado en vigor no sirve como patrón**.",
+      "fuente": "OIML R 111-1:2004 · apunte §2.4",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "las E2 y F1 son las que se usan con balanzas analíticas de clase I.",
+        "una pesa sin certificado en vigor no sirve como patrón."
+      ]
+    },
+    {
+      "id": "t21-f56",
+      "anverso": "¿Para qué fines está sometida una balanza al control metrológico del Estado?",
+      "reverso": "**Interés público, salud, seguridad, orden público, medio ambiente, protección de los consumidores, recaudación tributaria, cálculo de aranceles y peritajes judiciales.**",
+      "fuente": "Ley 32/2014, art. 8.1 · apunte §2.4",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "2.4",
+      "evidencia": "interés público, salud, seguridad, orden público, medio ambiente, protección de los consumidores, recaudación tributaria, cálculo de aranceles y peritajes judiciales."
+    },
+    {
+      "id": "t21-f57",
+      "anverso": "¿Qué derogó la Orden ICT/155/2020?",
+      "reverso": "La **Orden de 27 de abril de 1999**, y con ella el **libro-registro** de verificaciones y reparaciones.",
+      "fuente": "Orden ICT/155/2020 · apunte §2.4",
+      "etiquetas": [
+        "metrologia"
+      ],
+      "apartado": "2.4",
+      "evidencia": "La orden derogó la Orden de 27 de abril de 1999, y con ella el libro-registro de verificaciones y reparaciones."
+    },
+    {
+      "id": "t21-f58",
+      "anverso": "Electrogravimetría y termogravimetría: ¿en qué consisten?",
+      "reverso": "**Electrogravimetría**: el analito se **deposita por electrólisis** sobre un electrodo pesado (cobre sobre **cátodo de platino**). **Termogravimetría (TGA)**: **registro continuo** de la masa frente a la temperatura o el tiempo.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "etiquetas": [
+        "gravimetria"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "| Electrogravimetría | El analito se deposita por electrólisis sobre un electrodo previamente pesado | Cobre depositado sobre cátodo de platino |",
+        "| Termogravimetría (TGA) | Registro continuo de la masa frente a la temperatura o el tiempo |"
+      ]
+    },
+    {
+      "id": "t21-f59",
+      "anverso": "Sulfato y cloruro por gravimetría: condiciones clave.",
+      "reverso": "**Sulfato**: BaCl₂ en **medio ácido y en caliente**, digestión, se pesa como **BaSO₄**. **Cloruro**: AgNO₃, se pesa como **AgCl**, **protegido de la luz** (el AgCl fotodescompone).",
+      "fuente": "Vogel; Standard Methods · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "Precipitación con BaCl₂ en medio ácido y en caliente; digestión; se pesa como BaSO₄",
+        "se pesa como AgCl; protegido de la luz (el AgCl fotodescompone)"
+      ]
+    },
+    {
+      "id": "t21-f60",
+      "anverso": "¿Cómo se determinan gravimétricamente las grasas y aceites?",
+      "reverso": "Por **extracción** con disolvente, **evaporación** y **pesada del residuo** (Standard Methods 5520 B), en mg/L.",
+      "fuente": "Standard Methods 5520 B · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "| Grasas y aceites | Gravimetría por extracción | Standard Methods 5520 B | mg/L |"
     }
   ],
   "test": [
@@ -707,6 +967,571 @@
       "correcta": 0,
       "explicacion": "La UNE-EN 12341 describe el método gravimétrico normalizado para PM10 y PM2,5, con el resultado en µg/m³. El RD 102/2011 lo recoge como método de referencia.",
       "fuente": "UNE-EN 12341; RD 102/2011 modificado por RD 39/2017"
+    },
+    {
+      "id": "t21-q25",
+      "pregunta": "En una determinación gravimétrica, el tamaño de partícula de un precipitado recién formado depende de que:",
+      "opciones": [
+        "Predomine la nucleación (muchas partículas pequeñas) o el crecimiento de partícula (partículas grandes)",
+        "La mufla alcance los 1000 °C",
+        "El precipitado se pese en caliente"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo gobierna la sobresaturación relativa (von Weimarn): alta → nucleación → coloide; baja → crecimiento → cristales.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · 1246, primer ejercicio, #44 · apunte §2.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "En una determinación gravimétrica, el tamaño de partícula de un precipitado recién formado viene determinado por…"
+      },
+      "apartado": "2.3",
+      "evidencia": "Sobresaturación relativa alta → predomina la nucleación → muchísimos núcleos → precipitado coloidal, de partícula muy fina, difícil de filtrar."
+    },
+    {
+      "id": "t21-q26",
+      "pregunta": "Una balanza de laboratorio queda sujeta al control metrológico del Estado:",
+      "opciones": [
+        "Siempre, por ser un instrumento de pesaje",
+        "Por el uso que se le da, no por el hecho de ser una balanza",
+        "Nunca, si es de laboratorio"
+      ],
+      "correcta": 1,
+      "explicacion": "Los fines del art. 8.1 de la Ley 32/2014.",
+      "fuente": "Ley 32/2014 · apunte §1",
+      "apartado": "1",
+      "evidencia": "una balanza de laboratorio no está sujeta a control metrológico del Estado por el hecho de ser una balanza, sino por el uso que se le da"
+    },
+    {
+      "id": "t21-q27",
+      "pregunta": "La guía técnica europea de referencia para calibrar balanzas es:",
+      "opciones": [
+        "La OIML R 111-1",
+        "La Orden ICT/155/2020",
+        "La EURAMET cg-18"
+      ],
+      "correcta": 2,
+      "explicacion": "La OIML R 111 rige las pesas; la Orden, la verificación oficial.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Cómo se calibra una balanza | EURAMET cg-18 v4.0 (2015) | Guía técnica de calibración |"
+    },
+    {
+      "id": "t21-q28",
+      "pregunta": "El porcentaje de analito en una gravimetría se calcula como:",
+      "opciones": [
+        "(masa de precipitado × F / masa de muestra) × 100",
+        "(masa de muestra × F / masa de precipitado) × 100",
+        "masa de precipitado / F"
+      ],
+      "correcta": 0,
+      "explicacion": "F convierte la masa de precipitado en masa de analito.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "% de analito = (masa de precipitado × F / masa de muestra) × 100"
+    },
+    {
+      "id": "t21-q29",
+      "pregunta": "Si el cloruro se determina pesándolo como AgCl, el factor gravimétrico es:",
+      "opciones": [
+        "M(AgCl) / M(Cl⁻)",
+        "M(Cl⁻) / M(AgCl)",
+        "2 · M(Cl⁻) / M(AgCl)"
+      ],
+      "correcta": 1,
+      "explicacion": "Un Cl por fórmula de AgCl: no hay coeficiente.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Cl⁻ | AgCl | M(Cl⁻) / M(AgCl) |"
+    },
+    {
+      "id": "t21-q30",
+      "pregunta": "Un inconveniente de la gravimetría es que:",
+      "opciones": [
+        "Necesita una recta de calibrado",
+        "Su exactitud es baja",
+        "Es lenta y poco sensible: no sirve para trazas"
+      ],
+      "correcta": 2,
+      "explicacion": "Su exactitud es alta y no necesita patrones del analito.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Inconvenientes: lenta (horas o días), poco sensible (no sirve para trazas), consume muestra abundante, muy sensible a interferencias que coprecipitan."
+    },
+    {
+      "id": "t21-q31",
+      "pregunta": "Un crisol filtrante de placa porosa de vidrio:",
+      "opciones": [
+        "No admite calcinación a alta temperatura: solo secado en estufa",
+        "Se calcina en mufla a 1000 °C",
+        "Se usa sin succión"
+      ],
+      "correcta": 0,
+      "explicacion": "Para calcinar, crisoles de porcelana, sílice o platino.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "no admite calcinación a alta temperatura si es de vidrio: sólo secado en estufa."
+    },
+    {
+      "id": "t21-q32",
+      "pregunta": "El papel de filtro sin cenizas se usa porque:",
+      "opciones": [
+        "Filtra más rápido que cualquier otro",
+        "Deja un residuo despreciable al calcinarlo, y el precipitado se calcina con el papel",
+        "No necesita embudo"
+      ],
+      "correcta": 1,
+      "explicacion": "Bandas: negra (rápida) y azul (lenta).",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Deja un residuo de ceniza despreciable al calcinarlo, así que el precipitado se calcina con el papel."
+    },
+    {
+      "id": "t21-q33",
+      "pregunta": "La llave del desecador se abre despacio para:",
+      "opciones": [
+        "Que el desecante no se moje",
+        "No romper el vidrio",
+        "No arrastrar el precipitado con la entrada de aire"
+      ],
+      "correcta": 2,
+      "explicacion": "El desecador enfría sin que recupere humedad.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La llave se abre despacio para no arrastrar el precipitado con la entrada de aire."
+    },
+    {
+      "id": "t21-q34",
+      "pregunta": "Una muestra higroscópica se pesa:",
+      "opciones": [
+        "En un pesasustancias con tapa, lo más rápido posible",
+        "En un vidrio de reloj abierto",
+        "Directamente sobre el plato"
+      ],
+      "correcta": 0,
+      "explicacion": "Para que no gane humedad durante la pesada.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "el pesasustancias con tapa, si la muestra es higroscópica."
+    },
+    {
+      "id": "t21-q35",
+      "pregunta": "En la precipitación en disolución homogénea:",
+      "opciones": [
+        "Se añade todo el precipitante de golpe",
+        "El precipitante se genera in situ poco a poco, por ejemplo por hidrólisis de urea",
+        "Se precipita en frío y sin agitar"
+      ],
+      "correcta": 1,
+      "explicacion": "Mantiene baja la sobresaturación relativa.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el precipitante se genera in situ poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-q36",
+      "pregunta": "Para lavar un precipitado es más eficaz usar:",
+      "opciones": [
+        "Pocas porciones grandes",
+        "Una sola porción muy grande",
+        "Muchas porciones pequeñas de líquido de lavado"
+      ],
+      "correcta": 2,
+      "explicacion": "Con electrolito volátil, no con agua pura.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Es más eficaz lavar con muchas porciones pequeñas que con pocas grandes."
+    },
+    {
+      "id": "t21-q37",
+      "pregunta": "El hidróxido de hierro(III) hidratado precipitado se pesa como:",
+      "opciones": [
+        "Fe₂O₃, tras calcinarlo",
+        "Fe(OH)₃ hidratado, tal cual",
+        "Fe metálico"
+      ],
+      "correcta": 0,
+      "explicacion": "Se pesa una especie de composición conocida y estequiométrica.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el hidróxido de hierro(III) hidratado se precipita como tal y se pesa como Fe₂O₃."
+    },
+    {
+      "id": "t21-q38",
+      "pregunta": "El remedio más eficaz contra la coprecipitación es:",
+      "opciones": [
+        "Lavar con agua destilada pura",
+        "La redisolución y reprecipitación",
+        "Pesar el precipitado caliente"
+      ],
+      "correcta": 1,
+      "explicacion": "La digestión también ayuda contra oclusión y adsorción.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "redisolución y reprecipitación (la más eficaz contra la coprecipitación)"
+    },
+    {
+      "id": "t21-q39",
+      "pregunta": "Un exceso grande de reactivo precipitante puede:",
+      "opciones": [
+        "Disminuir siempre la solubilidad",
+        "Evitar la peptización",
+        "Redisolver el precipitado por formación de complejos"
+      ],
+      "correcta": 2,
+      "explicacion": "Un exceso moderado baja la solubilidad por efecto de ion común.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "un exceso grande puede redisolver el precipitado por formación de complejos"
+    },
+    {
+      "id": "t21-q40",
+      "pregunta": "Cuando una segunda sustancia precipita encima del precipitado ya formado por dejarlo reposar demasiado, se habla de:",
+      "opciones": [
+        "Postprecipitación, con error por exceso",
+        "Peptización, con error por defecto",
+        "Inclusión isomorfa"
+      ],
+      "correcta": 0,
+      "explicacion": "La peptización es la redispersión del coloide.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Postprecipitación | Una segunda sustancia precipita encima del precipitado ya formado, al dejarlo reposar demasiado | Por exceso |"
+    },
+    {
+      "id": "t21-q41",
+      "pregunta": "En la coprecipitación por oclusión:",
+      "opciones": [
+        "Los iones ajenos se pegan a la superficie",
+        "Las impurezas quedan atrapadas dentro del cristal al crecer deprisa",
+        "Un ion ajeno sustituye a uno propio en la red"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es adsorción; lo tercero, inclusión isomorfa.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Coprecipitación por oclusión | Impurezas quedan atrapadas dentro del cristal al crecer deprisa | Por exceso |"
+    },
+    {
+      "id": "t21-q42",
+      "pregunta": "La resolución habitual de una balanza analítica (valor comercial, no normativo) es de:",
+      "opciones": [
+        "1 g",
+        "1 µg",
+        "0,1 mg"
+      ],
+      "correcta": 2,
+      "explicacion": "1 µg es la microbalanza.",
+      "fuente": "Valores comerciales · apunte §2.4 y Dudas",
+      "apartado": "2.4",
+      "evidencia": "| Balanza analítica | 0,1 mg | Pesada de muestra y de precipitados |"
+    },
+    {
+      "id": "t21-q43",
+      "pregunta": "La microbalanza (1 µg) se usa típicamente para pesar:",
+      "opciones": [
+        "Filtros de material particulado y trazas",
+        "Reactivos a granel",
+        "Bidones de residuos"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo segundo, el granatario.",
+      "fuente": "Valores comerciales · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Microbalanza | 0,001 mg (1 µg) | Filtros de material particulado, trazas |"
+    },
+    {
+      "id": "t21-q44",
+      "pregunta": "El número de escalones de verificación de un instrumento de pesaje es:",
+      "opciones": [
+        "n = e / d",
+        "n = Max / e",
+        "n = Min / Max"
+      ],
+      "correcta": 1,
+      "explicacion": "Mide la «finura» del instrumento.",
+      "fuente": "RD 244/2016 y UNE-EN 45501 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El número de escalones de verificación, n = Max / e"
+    },
+    {
+      "id": "t21-q45",
+      "pregunta": "La balanza analítica debe instalarse:",
+      "opciones": [
+        "En el centro de la mesa de trabajo, junto a la vitrina",
+        "Junto a la ventana, para tener buena luz",
+        "En una mesa antivibratoria, en un rincón y no en el centro de una mesa larga"
+      ],
+      "correcta": 2,
+      "explicacion": "Lejos de puertas, corrientes y focos de calor.",
+      "fuente": "Manejo de la balanza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Mesa antivibratoria, pesada y estable, en un rincón del laboratorio y no en el centro de una mesa larga."
+    },
+    {
+      "id": "t21-q46",
+      "pregunta": "La causa número uno de lecturas inestables en la balanza analítica es:",
+      "opciones": [
+        "Leer con las puertas del paravientos abiertas",
+        "Usar pinzas",
+        "Que la balanza esté conectada permanentemente"
+      ],
+      "correcta": 0,
+      "explicacion": "Puertas cerradas en el momento de la lectura.",
+      "fuente": "Manejo de la balanza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Puertas cerradas en el momento de la lectura. Es la causa número uno de lecturas inestables."
+    },
+    {
+      "id": "t21-q47",
+      "pregunta": "Si la carga se coloca descentrada en el plato, se introduce un error de:",
+      "opciones": [
+        "Linealidad",
+        "Excentricidad",
+        "Empuje del aire"
+      ],
+      "correcta": 1,
+      "explicacion": "Es uno de los ensayos de la EURAMET cg-18.",
+      "fuente": "Manejo de la balanza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Carga centrada en el plato: descentrarla introduce error de excentricidad."
+    },
+    {
+      "id": "t21-q48",
+      "pregunta": "Un recipiente de plástico muy seco hace que la lectura derive sin estabilizarse. Se corrige con:",
+      "opciones": [
+        "Un soporte no magnético",
+        "Pesando con las puertas abiertas",
+        "Un ionizador, un recipiente metálico o subiendo la humedad"
+      ],
+      "correcta": 2,
+      "explicacion": "Es electrostática; el soporte no magnético es para el magnetismo.",
+      "fuente": "Manejo de la balanza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Se corrige con ionizador, con recipientes metálicos o subiendo la humedad ambiente."
+    },
+    {
+      "id": "t21-q49",
+      "pregunta": "La función de tara de una balanza:",
+      "opciones": [
+        "Descuenta el recipiente, pero no amplía la capacidad máxima",
+        "Amplía la capacidad máxima en el peso del recipiente",
+        "Ajusta la balanza"
+      ],
+      "correcta": 0,
+      "explicacion": "Max sigue contando la masa total sobre el plato.",
+      "fuente": "Manejo de la balanza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Tara: la balanza descuenta el recipiente, pero no amplía su capacidad máxima"
+    },
+    {
+      "id": "t21-q50",
+      "pregunta": "Según el VIM, la «aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados» es:",
+      "opciones": [
+        "La calibración",
+        "La verificación",
+        "El ajuste"
+      ],
+      "correcta": 1,
+      "explicacion": "Da un juicio de conforme o no conforme.",
+      "fuente": "VIM (JCGM 200:2012), 2.44 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados"
+    },
+    {
+      "id": "t21-q51",
+      "pregunta": "Pulsar el botón «CAL» de una balanza con pesa interna es, según el VIM:",
+      "opciones": [
+        "Una calibración",
+        "Una verificación",
+        "Un ajuste"
+      ],
+      "correcta": 2,
+      "explicacion": "Se toca el instrumento para corregirlo.",
+      "fuente": "VIM (JCGM 200:2012), 3.11 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Es lo que hace el botón «CAL» de una balanza con pesa interna."
+    },
+    {
+      "id": "t21-q52",
+      "pregunta": "Según la nota 2 del VIM 3.11, la calibración respecto del ajuste:",
+      "opciones": [
+        "Es un requisito para el ajuste, y no deben confundirse",
+        "Es lo mismo que el ajuste",
+        "Solo se hace si el ajuste falla"
+      ],
+      "correcta": 0,
+      "explicacion": "Y tras ajustar, se vuelve a calibrar.",
+      "fuente": "VIM (JCGM 200:2012), 3.11 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "No debe confundirse el ajuste de un sistema de medida con su propia calibración, que es un requisito para el ajuste"
+    },
+    {
+      "id": "t21-q53",
+      "pregunta": "El ensayo de repetibilidad de la calibración de una balanza mide:",
+      "opciones": [
+        "El error de indicación en todo el alcance",
+        "La dispersión (precisión), no el error",
+        "La influencia de la posición de la carga"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es la linealidad; lo tercero, la excentricidad.",
+      "fuente": "EURAMET cg-18 v4.0 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Repetibilidad. Varias pesadas de la misma carga en las mismas condiciones, sin mover nada. Mide la dispersión (precisión), no el error."
+    },
+    {
+      "id": "t21-q54",
+      "pregunta": "El «mínimo de pesada» de la EURAMET cg-18 es:",
+      "opciones": [
+        "La carga mínima Min de la metrología legal",
+        "El escalón real d",
+        "La carga por debajo de la cual la incertidumbre relativa se dispara y la balanza deja de ser apta"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un concepto de calibración, distinto de Min.",
+      "fuente": "EURAMET cg-18 v4.0 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La carga por debajo de la cual la incertidumbre relativa se dispara y la balanza deja de ser apta para el uso previsto."
+    },
+    {
+      "id": "t21-q55",
+      "pregunta": "Las pesas que se usan habitualmente con las balanzas analíticas de clase I son de las clases:",
+      "opciones": [
+        "E2 y F1",
+        "M2 y M3",
+        "M1-2 y M2-3"
+      ],
+      "correcta": 0,
+      "explicacion": "De la más exacta a la menos: E1, E2, F1, F2, M1, M1-2, M2, M2-3, M3.",
+      "fuente": "OIML R 111-1:2004 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "las E2 y F1 son las que se usan con balanzas analíticas de clase I."
+    },
+    {
+      "id": "t21-q56",
+      "pregunta": "La OIML R 111-1 cubre pesas de valores nominales:",
+      "opciones": [
+        "De 1 g a 1 kg",
+        "De 1 mg a 5000 kg",
+        "De 1 µg a 1 g"
+      ],
+      "correcta": 1,
+      "explicacion": "Con nueve clases de exactitud.",
+      "fuente": "OIML R 111-1:2004 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "que cubre valores nominales de 1 mg a 5 000 kg y define nueve clases de exactitud"
+    },
+    {
+      "id": "t21-q57",
+      "pregunta": "La Orden ICT/155/2020 derogó, entre otras cosas:",
+      "opciones": [
+        "La verificación periódica",
+        "La Ley 32/2014",
+        "El libro-registro de verificaciones y reparaciones de la Orden de 1999"
+      ],
+      "correcta": 2,
+      "explicacion": "La verificación periódica de los IPFNA sigue siendo cada dos años.",
+      "fuente": "Orden ICT/155/2020 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La orden derogó la Orden de 27 de abril de 1999, y con ella el libro-registro de verificaciones y reparaciones."
+    },
+    {
+      "id": "t21-q58",
+      "pregunta": "Entre los fines del art. 8.1 de la Ley 32/2014, que someten un instrumento a control metrológico, están:",
+      "opciones": [
+        "La salud, el medio ambiente y los peritajes judiciales",
+        "Solo el comercio de alimentos",
+        "Cualquier uso en laboratorio"
+      ],
+      "correcta": 0,
+      "explicacion": "También interés público, seguridad, consumidores, tributos y aranceles.",
+      "fuente": "Ley 32/2014, art. 8.1 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "interés público, salud, seguridad, orden público, medio ambiente, protección de los consumidores, recaudación tributaria, cálculo de aranceles y peritajes judiciales."
+    },
+    {
+      "id": "t21-q59",
+      "pregunta": "Depositar cobre por electrólisis sobre un cátodo de platino previamente pesado es un ejemplo de:",
+      "opciones": [
+        "Gravimetría por extracción",
+        "Electrogravimetría",
+        "Termogravimetría"
+      ],
+      "correcta": 1,
+      "explicacion": "La TGA registra la masa frente a la temperatura.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Electrogravimetría | El analito se deposita por electrólisis sobre un electrodo previamente pesado | Cobre depositado sobre cátodo de platino |"
+    },
+    {
+      "id": "t21-q60",
+      "pregunta": "En la gravimetría por volatilización directa:",
+      "opciones": [
+        "Se pesa la muestra antes y después y se calcula por diferencia",
+        "Se registra la masa en continuo",
+        "Se recoge y se pesa el componente volátil en un absorbente"
+      ],
+      "correcta": 2,
+      "explicacion": "La indirecta, por diferencia, es la habitual.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Método directo: se recoge y se pesa el componente volátil, atrapándolo en un absorbente. Pesa lo que se va."
+    },
+    {
+      "id": "t21-q61",
+      "pregunta": "La termogravimetría (TGA) consiste en:",
+      "opciones": [
+        "Registrar en continuo la masa frente a la temperatura o el tiempo",
+        "Depositar el analito por electrólisis",
+        "Extraer con disolvente y pesar el residuo"
+      ],
+      "correcta": 0,
+      "explicacion": "Sirve para curvas de descomposición e hidratos.",
+      "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Termogravimetría (TGA) | Registro continuo de la masa frente a la temperatura o el tiempo |"
+    },
+    {
+      "id": "t21-q62",
+      "pregunta": "En la gravimetría de cloruro como AgCl, el precipitado se protege de la luz porque:",
+      "opciones": [
+        "La luz lo redisuelve",
+        "El AgCl fotodescompone",
+        "La luz acelera la digestión"
+      ],
+      "correcta": 1,
+      "explicacion": "Se precipita con AgNO₃.",
+      "fuente": "Vogel · apunte §3",
+      "apartado": "3",
+      "evidencia": "se pesa como AgCl; protegido de la luz (el AgCl fotodescompone)"
+    },
+    {
+      "id": "t21-q63",
+      "pregunta": "Las grasas y aceites de un agua se determinan por:",
+      "opciones": [
+        "Gravimetría por precipitación",
+        "Electrogravimetría",
+        "Gravimetría por extracción con disolvente"
+      ],
+      "correcta": 2,
+      "explicacion": "Se evapora el disolvente y se pesa el residuo.",
+      "fuente": "Standard Methods 5520 B · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Grasas y aceites | Gravimetría por extracción | Standard Methods 5520 B | mg/L |"
+    },
+    {
+      "id": "t21-q64",
+      "pregunta": "En la gravimetría de sulfato, la precipitación con BaCl₂ se hace:",
+      "opciones": [
+        "En medio ácido y en caliente, con digestión",
+        "En medio básico y en frío",
+        "Sin digestión, filtrando enseguida"
+      ],
+      "correcta": 0,
+      "explicacion": "Se pesa como BaSO₄.",
+      "fuente": "Vogel; Standard Methods 4500-SO₄²⁻ C · apunte §3",
+      "apartado": "3",
+      "evidencia": "Precipitación con BaCl₂ en medio ácido y en caliente; digestión; se pesa como BaSO₄"
     }
   ],
   "supuestos": [
@@ -783,6 +1608,252 @@
           "correcta": 1,
           "explicacion": "No se precipita nada: se retiene el sólido ya presente y se elimina el agua por secado, calculando el residuo por diferencia de masa. Se pesa lo que queda, no lo que se va, así que es indirecta.",
           "fuente": "Bibliografía de química analítica"
+        }
+      ]
+    },
+    {
+      "id": "t21-s02",
+      "titulo": "Supuesto 2. Sulfato por gravimetría en un agua",
+      "enunciado": "Se quiere determinar el sulfato de un agua con mucho contenido salino por el método gravimétrico clásico. El técnico dispone de cloruro de bario, ácido clorhídrico, papel de filtro sin cenizas, crisoles de porcelana, mufla, desecador y balanza analítica.",
+      "preguntas": [
+        {
+          "id": "t21-s02-q1",
+          "pregunta": "¿Cómo precipita el sulfato?",
+          "opciones": [
+            "Con BaCl₂ en medio ácido y en caliente, y con digestión",
+            "Con AgNO₃ en frío",
+            "Con urea a temperatura ambiente",
+            "Con dimetilglioxima"
+          ],
+          "correcta": 0,
+          "explicacion": "Se pesa como BaSO₄.",
+          "fuente": "Vogel; Standard Methods · apunte §3",
+          "apartado": "3",
+          "evidencia": "Precipitación con BaCl₂ en medio ácido y en caliente; digestión; se pesa como BaSO₄"
+        },
+        {
+          "id": "t21-s02-q2",
+          "pregunta": "Para que el precipitado salga cristalino y fácil de filtrar, debe:",
+          "opciones": [
+            "Añadir todo el BaCl₂ de golpe para acabar antes",
+            "Precipitar en frío y sin agitar",
+            "Trabajar en disolución diluida, añadir el precipitante despacio y con agitación, en caliente",
+            "Concentrar antes la muestra al máximo"
+          ],
+          "correcta": 2,
+          "explicacion": "Baja la sobresaturación relativa.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "disolución diluida, adición del precipitante lenta y con agitación, precipitación en caliente (sube S) y control del pH para no precipitar de golpe."
+        },
+        {
+          "id": "t21-s02-q3",
+          "pregunta": "Por descuido, el precipitado queda varios días en reposo con las aguas madres, y otra sal precipita encima. ¿Qué error se produce?",
+          "opciones": [
+            "Peptización: resultado por defecto",
+            "Pérdidas por solubilidad: resultado por defecto",
+            "Ninguno, porque se calcina después",
+            "Postprecipitación: resultado por exceso"
+          ],
+          "correcta": 3,
+          "explicacion": "La digestión es útil, pero el reposo excesivo da postprecipitación.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Postprecipitación | Una segunda sustancia precipita encima del precipitado ya formado, al dejarlo reposar demasiado | Por exceso |"
+        },
+        {
+          "id": "t21-s02-q4",
+          "pregunta": "Tras calcinar el crisol, ¿cómo lo pesa?",
+          "opciones": [
+            "Lo enfría en el desecador y repite calentar-enfriar-pesar hasta masa constante",
+            "Lo pesa caliente, recién salido de la mufla",
+            "Lo enfría al aire en la mesa y lo pesa una vez",
+            "Lo coge con los dedos para notar si está frío"
+          ],
+          "correcta": 0,
+          "explicacion": "Caliente pesa de menos por convección.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Masa constante significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+        },
+        {
+          "id": "t21-s02-q5",
+          "pregunta": "¿Qué factor gravimétrico usa para pasar de BaSO₄ a sulfato?",
+          "opciones": [
+            "M(BaSO₄) / M(SO₄²⁻)",
+            "M(SO₄²⁻) / M(BaSO₄)",
+            "2 · M(SO₄²⁻) / M(BaSO₄)",
+            "M(Ba) / M(BaSO₄)"
+          ],
+          "correcta": 1,
+          "explicacion": "Un sulfato por fórmula de BaSO₄.",
+          "fuente": "Bibliografía de química analítica (Skoog, Harris, Vogel) · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "| SO₄²⁻ | BaSO₄ | M(SO₄²⁻) / M(BaSO₄) |"
+        }
+      ]
+    },
+    {
+      "id": "t21-s03",
+      "titulo": "Supuesto 3. Pesada de filtros de PM10",
+      "enunciado": "El laboratorio pesa los filtros de una campaña de PM10 de calidad del aire. Usa una microbalanza en un cuarto de pesadas acondicionado. Algunos filtros son de un material plástico que tarda en dar una lectura estable.",
+      "preguntas": [
+        {
+          "id": "t21-s03-q1",
+          "pregunta": "¿Qué balanza es la adecuada?",
+          "opciones": [
+            "Un granatario de 0,1 g",
+            "Una báscula de clase III",
+            "Una microbalanza, de 1 µg",
+            "Una balanza de precisión de 1 mg"
+          ],
+          "correcta": 2,
+          "explicacion": "Las microbalanzas se usan para filtros de material particulado.",
+          "fuente": "Valores comerciales · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Microbalanza | 0,001 mg (1 µg) | Filtros de material particulado, trazas |"
+        },
+        {
+          "id": "t21-s03-q2",
+          "pregunta": "Según lo verificado para la edición 2015 de la UNE-EN 12341, ¿en qué condiciones está el cuarto de pesadas?",
+          "opciones": [
+            "25-30 °C y 20 % de humedad",
+            "105 °C",
+            "Sin control ambiental",
+            "19-21 °C y 45-50 % de humedad relativa"
+          ],
+          "correcta": 3,
+          "explicacion": "No se ha comprobado si la edición 2024 las mantiene.",
+          "fuente": "LNR 02/2015 (ISCIII) · apunte §3 y Dudas",
+          "apartado": "3",
+          "evidencia": "Cuarto de pesadas a 19-21 °C y 45-50 % HR (medias horarias)"
+        },
+        {
+          "id": "t21-s03-q3",
+          "pregunta": "Los filtros de plástico dan una lectura que deriva. ¿Qué ocurre y cómo se corrige?",
+          "opciones": [
+            "Electrostática: ionizador, recipiente metálico o más humedad",
+            "Magnetismo: soporte no magnético",
+            "Empuje del aire: nada que hacer",
+            "Falta de nivelación: girar el filtro"
+          ],
+          "correcta": 0,
+          "explicacion": "Los plásticos y el vidrio seco se cargan.",
+          "fuente": "Manejo de la balanza · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Electrostática: los plásticos y el vidrio muy seco se cargan y la lectura deriva sin estabilizarse."
+        },
+        {
+          "id": "t21-s03-q4",
+          "pregunta": "¿Qué criterio de estabilidad de masa se aplica a los filtros sin muestrear (edición 2015)?",
+          "opciones": [
+            "60 µg",
+            "40 µg",
+            "0,1 mg",
+            "1 mg"
+          ],
+          "correcta": 1,
+          "explicacion": "60 µg es para los filtros muestreados.",
+          "fuente": "LNR 02/2015 (ISCIII) · apunte §3",
+          "apartado": "3",
+          "evidencia": "criterio de estabilidad de 40 µg (filtros sin muestrear) y 60 µg (muestreados)"
+        },
+        {
+          "id": "t21-s03-q5",
+          "pregunta": "En el examen, ¿qué norma de referencia de PM10 es la respuesta segura?",
+          "opciones": [
+            "La UNE-EN 872",
+            "La UNE-EN 12880",
+            "La UNE-EN 12341 en la edición que cita el RD 102/2011 (2015)",
+            "La Orden ICT/155/2020"
+          ],
+          "correcta": 2,
+          "explicacion": "La vigente en AENOR es la de 2024, pero el real decreto sigue remitiendo a la de 2015.",
+          "fuente": "RD 102/2011; catálogo AENOR · apunte §3 y Dudas",
+          "apartado": "3",
+          "evidencia": "UNE-EN 12341:2024; el RD 102/2011 remite todavía a la ed. 2015"
+        }
+      ]
+    },
+    {
+      "id": "t21-s04",
+      "titulo": "Supuesto 4. La balanza analítica: calibrar, ajustar y verificar",
+      "enunciado": "Un laboratorio acreditado por la ISO/IEC 17025 revisa su balanza analítica. Ha recibido el certificado de calibración de un laboratorio acreditado; un técnico ha pulsado el botón «CAL» de la pesa interna; y alguna pesada se usará en un peritaje judicial.",
+      "preguntas": [
+        {
+          "id": "t21-s04-q1",
+          "pregunta": "Como laboratorio acreditado, ¿qué necesita siempre la balanza?",
+          "opciones": [
+            "Verificación oficial cada año",
+            "Un ajuste diario obligatorio",
+            "Nada, si funciona bien",
+            "Calibración trazable"
+          ],
+          "correcta": 3,
+          "explicacion": "La verificación oficial depende del uso.",
+          "fuente": "UNE-EN ISO/IEC 17025 · apunte §1",
+          "apartado": "1",
+          "evidencia": "Lo que sí necesita siempre, si el laboratorio está acreditado, es calibración trazable (UNE-EN ISO/IEC 17025)."
+        },
+        {
+          "id": "t21-s04-q2",
+          "pregunta": "El certificado da el error y la incertidumbre. ¿Quién decide si son aceptables?",
+          "opciones": [
+            "El laboratorio, con su propio criterio de aceptación según lo que necesita el método",
+            "El laboratorio de calibración, que declara «apto»",
+            "El fabricante de la balanza",
+            "Nadie: la calibración ya lo garantiza"
+          ],
+          "correcta": 0,
+          "explicacion": "La calibración no emite juicio de conformidad.",
+          "fuente": "EURAMET cg-18 v4.0 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "que eso sea aceptable o no lo decide el laboratorio comparándolo con su propio criterio de aceptación"
+        },
+        {
+          "id": "t21-s04-q3",
+          "pregunta": "Tras pulsar «CAL», ¿qué ha hecho el técnico y qué conviene después?",
+          "opciones": [
+            "Una calibración completa; no hace falta nada más",
+            "Una verificación oficial",
+            "Un ajuste; después, generalmente, volver a calibrar",
+            "Un ensayo de excentricidad"
+          ],
+          "correcta": 2,
+          "explicacion": "Nota 3 del VIM 3.11.",
+          "fuente": "VIM (JCGM 200:2012), 3.11 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Después de su ajuste, generalmente un sistema de medida debe ser calibrado nuevamente"
+        },
+        {
+          "id": "t21-s04-q4",
+          "pregunta": "La pesa de control que usa a diario tiene el certificado caducado. ¿Sirve como patrón?",
+          "opciones": [
+            "Sí, si es de clase E2",
+            "Sí, si se limpia con alcohol",
+            "Sí, durante un año más",
+            "No: una pesa sin certificado en vigor no sirve como patrón"
+          ],
+          "correcta": 3,
+          "explicacion": "Las pesas E2 y F1 se manipulan con pinzas.",
+          "fuente": "OIML R 111-1:2004 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "una pesa sin certificado en vigor no sirve como patrón."
+        },
+        {
+          "id": "t21-s04-q5",
+          "pregunta": "Como alguna pesada se usa en un peritaje judicial, ¿qué más necesita la balanza?",
+          "opciones": [
+            "Nada más: basta la calibración",
+            "Verificación periódica cada dos años (Orden ICT/155/2020)",
+            "Verificación cada cinco años",
+            "Un libro-registro de reparaciones"
+          ],
+          "correcta": 1,
+          "explicacion": "El peritaje judicial es uno de los fines del art. 8.1 de la Ley 32/2014; el libro-registro fue derogado.",
+          "fuente": "Orden ICT/155/2020 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La verificación periódica de los IPFNA es cada dos años."
         }
       ]
     }
