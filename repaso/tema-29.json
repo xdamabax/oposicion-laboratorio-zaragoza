@@ -352,6 +352,322 @@
       "reverso": "Que tenga los métodos **acreditados por la UNE-EN ISO/IEC 17025**. El anexo III, parte B.2 lo dice para los parámetros del anexo I, partes **A, B, C, E o F**: la **parte E —las sustancias radiactivas— está incluida**.\nLas únicas exenciones son para los parámetros del **control operacional y de rutina**, y solo si el laboratorio hace únicamente esos dos tipos de análisis.\nMientras un método no esté acreditado, **debe estar validado y documentado** conforme al anexo III, parte E.\n(La acreditación en sí es el **tema 40**; la validación e incertidumbre, el **38**.)",
       "fuente": "RD 3/2023, anexo III, parte B, puntos 2 y 3",
       "etiquetas": ["calidad"]
+    },
+    {
+      "id": "t29-f46",
+      "anverso": "Se supera un valor paramétrico de la parte E. ¿Pasa el agua a «no apta» automáticamente?",
+      "reverso": "**No.** El art. 6.3 remite al **anexo VI**: «en el caso de las sustancias radiactivas contempladas en el anexo I, parte E, se deberá seguir lo dispuesto en el anexo VI». La calificación del art. 6.1 se apoya en las partes **A y B**.",
+      "fuente": "RD 3/2023, art. 6.3 · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": "Superar un valor paramétrico de la parte E no convierte automáticamente el agua en «no apta»: el art. 6.3 dice que «en el caso de las sustancias radiactivas contempladas en el anexo I, parte E, se deberá seguir lo dispuesto en el anexo VI»"
+    },
+    {
+      "id": "t29-f47",
+      "anverso": "¿Qué normas dan los métodos de ensayo de radiactividad en agua y cuál el cálculo del límite de detección?",
+      "reverso": "Métodos: la **serie UNE-EN ISO** del comité **ISO/TC 147/SC 3**. Límite de detección: **UNE-EN ISO 11929**, partes 1, 2 y 3, que **impone el propio RD 3/2023** (anexo III, tabla 14, nota 1).",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": [
+        "| Métodos de ensayo (alfa total, beta total, radón, tritio, gamma, alfa) | Serie UNE-EN ISO del comité ISO/TC 147/SC 3 | Ensayo normalizado |",
+        "| Cálculo del límite de detección | UNE-EN ISO 11929, partes 1, 2 y 3 | Lo impone el propio RD 3/2023, anexo III, tabla 14, nota 1 |"
+      ]
+    },
+    {
+      "id": "t29-f48",
+      "anverso": "En el RD 1029/2022, ¿qué significa «dosis» cuando no se precisa más?",
+      "reverso": "**Dosis efectiva.** Lo dice el propio reglamento.",
+      "fuente": "RD 1029/2022, art. 2 · apunte §2.1",
+      "etiquetas": [
+        "magnitudes"
+      ],
+      "apartado": "2.1",
+      "evidencia": "cuando a lo largo de este reglamento se mencione el término \"dosis\", sin mayor precisión, se entenderá que se refiere a dosis efectiva"
+    },
+    {
+      "id": "t29-f49",
+      "anverso": "¿En qué unidad se expresan los parámetros de radiactividad del agua? ¿Hay excepción?",
+      "reverso": "La concentración de actividad, **siempre en Bq/L**. La única excepción es la **dosis indicativa**, que es una dosis y va en **mSv**.",
+      "fuente": "RD 3/2023, anexo I, parte E · apunte §2.1",
+      "etiquetas": [
+        "magnitudes"
+      ],
+      "apartado": "2.1",
+      "evidencia": "En el agua la concentración de actividad se expresa siempre en Bq/L. La única excepción de la tabla de parámetros es la dosis indicativa, que al ser una dosis va en mSv."
+    },
+    {
+      "id": "t29-f50",
+      "anverso": "Los dos niveles de referencia del art. 72 del RD 1029/2022.",
+      "reverso": "**Radón en recintos cerrados: 300 Bq/m³** de promedio anual. **Radiación gamma de los materiales de construcción: 1 mSv/año** adicional.",
+      "fuente": "RD 1029/2022, art. 72 · apunte §2.1",
+      "etiquetas": [
+        "magnitudes",
+        "normativa"
+      ],
+      "apartado": "2.1",
+      "evidencia": "radón en recintos cerrados 300 Bq/m³ de promedio anual; radiación gamma de los materiales de construcción 1 mSv/año adicional."
+    },
+    {
+      "id": "t29-f51",
+      "anverso": "¿Qué factores manda considerar el RD 3/2023 al caracterizar las masas de agua por radón?",
+      "reverso": "Las exposiciones originadas por la **geología y la hidrología** de la zona, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**. El agua no fabrica radiactividad: la **hereda** del terreno.",
+      "fuente": "RD 3/2023, disposición adicional primera · apunte §2.2",
+      "etiquetas": [
+        "origen"
+      ],
+      "apartado": "2.2",
+      "evidencia": "originadas por la geología y la hidrología de la zona afectada, la radiactividad de las rocas o del suelo y el tipo de captaciones"
+    },
+    {
+      "id": "t29-f52",
+      "anverso": "Serie del torio-232: ¿qué eslabones llegan al agua?",
+      "reverso": "El **Ra-228** y el **Ra-224**, con sus descendientes de periodo muy corto. Al índice alfa contribuye el **Ra-224** y sus descendientes.",
+      "fuente": "CSN, INT-04-30 · apunte §2.2",
+      "etiquetas": [
+        "origen"
+      ],
+      "apartado": "2.2",
+      "evidencia": "| Serie del torio | Th-232 | Ra-228 y Ra-224 y sus descendientes, de periodo muy corto |"
+    },
+    {
+      "id": "t29-f53",
+      "anverso": "Concentraciones derivadas: ¿cuál es la más alta y cuál la más baja?",
+      "reverso": "La más alta, el **C-14: 240 Bq/L**. La más baja, el **Po-210: 0,1 Bq/L**.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6 · apunte §2.3",
+      "etiquetas": [
+        "parametros"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| U-238 | 3,0 | | C-14 | 240 |",
+        "| Po-210 | 0,1 | | Co-60 | 40 |"
+      ]
+    },
+    {
+      "id": "t29-f54",
+      "anverso": "¿Cuándo se cumple la DI sin investigar más? ¿Qué propiedad del uranio tiene en cuenta la tabla 6?",
+      "reverso": "Cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química** (el uranio como metal, tema 33).",
+      "fuente": "RD 3/2023, anexo I, parte E · apunte §2.3",
+      "etiquetas": [
+        "parametros"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "Se cumple la DI —y no hace falta investigar más— cuando Σ (C_medida / C_derivada) ≤ 1.",
+        "tiene en cuenta solo las propiedades radiológicas del uranio, no su toxicidad química"
+      ]
+    },
+    {
+      "id": "t29-f55",
+      "anverso": "¿Por qué los títulos de las normas ISO de radiactividad nombran la preparación y no el aparato?",
+      "reverso": "Porque **la preparación manda tanto como el detector**: las partículas **alfa se frenan en unos pocos micrómetros** del propio residuo. De ahí *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo"
+    },
+    {
+      "id": "t29-f56",
+      "anverso": "Alcance de la ISO 9696 (alfa total, fuente concentrada).",
+      "reverso": "Aguas **no salinas**, emisores alfa **no volátiles hasta 350 °C**, **aguas brutas y potables**. El rango depende de las **sales solubles totales** y de las prestaciones del contador (**fondo y eficiencia**).",
+      "fuente": "ISO 9696 (resumen público) · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "determina la actividad alfa total en aguas no salinas, para radionucleidos emisores alfa que no sean volátiles hasta 350 °C, y es aplicable a aguas brutas y potables."
+    },
+    {
+      "id": "t29-f57",
+      "anverso": "Método de capa delgada: norma, ventaja e inconveniente.",
+      "reverso": "**UNE-EN ISO 10704**. Depósito muy fino: **casi no hay autoabsorción**, y a cambio **se concentra menos muestra**. Heredera de la **UNE 73311-4:2002**, anulada el 24/02/2016.",
+      "fuente": "UNE-EN ISO 10704 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Depósito muy fino: casi no hay autoabsorción, y a cambio se concentra menos muestra."
+    },
+    {
+      "id": "t29-f58",
+      "anverso": "¿Cuándo no recomienda el CSN la desecación, y qué se usa entonces?",
+      "reverso": "Con **conductividad ≥ 1 mS/cm** o **residuo seco ≥ 1 g/L**. Entonces, **coprecipitación** (Proc. 1.17) o **centelleo líquido**.",
+      "fuente": "CSN, Procedimiento 1.17 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "la desecación no se recomienda con conductividad ≥ 1 mS/cm o residuo seco ≥ 1 g/L; ahí van la coprecipitación o el centelleo líquido."
+    },
+    {
+      "id": "t29-f59",
+      "anverso": "Emanometría: qué mide y cómo.",
+      "reverso": "Lo que es **gas**: **radón-222** (ISO 13164-3) y **Ra-226** (ISO 13165-2). Se **desgasifica** la muestra y se cuenta el gas en una **célula de centelleo**: el analito **se separa solo**.",
+      "fuente": "ISO 13164-3 e ISO 13165-2 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Se desgasifica la muestra y se cuenta el gas en una célula de centelleo. Es la técnica natural del radón porque el analito se separa solo."
+    },
+    {
+      "id": "t29-f60",
+      "anverso": "Espectrometría alfa: ¿cuándo se usa y qué normas la aplican?",
+      "reverso": "Para nucleidos concretos, **tras separación radioquímica**: **ISO 13166** (uranio), **ISO 13161** (Po-210), **ISO 13167** (Pu, Am, Cm, Np) e **ISO 13165-4** (Ra-226). Su **resolución en energía** distingue U-234 de U-238.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "ISO 13166 (isótopos de uranio), ISO 13161 (Po-210), ISO 13167 (plutonio, americio, curio y neptunio) e ISO 13165-4 (Ra-226)"
+    },
+    {
+      "id": "t29-f61",
+      "anverso": "Centelleo líquido: ¿cómo se neutraliza el quenching y qué ventaja propia tiene frente al contador proporcional?",
+      "reverso": "Quenching: el **medio (pH y ácido)** y la **relación cóctel/muestra**, **iguales** en patrones, muestras y blancos. Ventaja: da **espectro**, y permite **detectar el Ra-226 por el pico de su descendiente Po-214**.",
+      "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "el medio (pH y ácido) y la relación cóctel/muestra deben ser los mismos en patrones, muestras y blancos",
+        "permite detectar la presencia de Ra-226 identificando el pico de su descendiente Po-214, cosa que un contador proporcional no puede."
+      ]
+    },
+    {
+      "id": "t29-f62",
+      "anverso": "Humedad y uniformidad del residuo de la plancheta: qué problema dan y qué se hace.",
+      "reverso": "El residuo **higroscópico** cambia la autoabsorción: se guarda en **desecador** y, si se mide mucho después, **se vuelve a secar a peso constante**. Un residuo mal repartido **empeora la reproducibilidad y la exactitud**.",
+      "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Se guarda la plancheta en desecador y, si se mide mucho después, se vuelve a secar a peso constante."
+    },
+    {
+      "id": "t29-f63",
+      "anverso": "¿Qué detector precisa el CSN para la espectrometría gamma y qué fija su capa muerta?",
+      "reverso": "**Detectores coaxiales de germanio intrínseco de alta pureza (HPGe), tipo P**. La **capa muerta, de 0,5 a 0,7 mm**, fija el **límite inferior de energía útil**.",
+      "fuente": "CSN, Procedimiento 1.4 · apunte §2.5",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.5",
+      "evidencia": "detectores coaxiales de germanio intrínseco de alta pureza (HPGe), tipo P, con una capa muerta de 0,5 a 0,7 mm que fija el límite inferior de energía útil."
+    },
+    {
+      "id": "t29-f64",
+      "anverso": "Detectores de gas según el CSN: ¿cuál es el más utilizado y qué pega tiene la cámara de ionización?",
+      "reverso": "El **Geiger-Müller** es el más utilizado: **barato, sensible y resistente**. La **cámara de ionización** es **más sensible**, pero **cara**, sensible a la **humedad** y con riesgo de **fugas**.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+      "etiquetas": [
+        "detectores"
+      ],
+      "apartado": "2.6",
+      "evidencia": "El GM es el más utilizado: barato, sensible y resistente. La cámara de ionización es más sensible, pero cara, sensible a la humedad y con riesgo de fugas"
+    },
+    {
+      "id": "t29-f65",
+      "anverso": "¿Por qué todos los equipos de estas medidas son «de bajo fondo»?",
+      "reverso": "Porque se trabaja con **centésimas de Bq/L**: el **fondo del propio detector** es el competidor a batir.",
+      "fuente": "Procedimientos del CSN · apunte §2.6",
+      "etiquetas": [
+        "detectores"
+      ],
+      "apartado": "2.6",
+      "evidencia": "Todos los equipos de estas medidas se especifican «de bajo fondo»: se trabaja con actividades del orden de centésimas de Bq/L, así que el fondo del propio detector es el competidor a batir."
+    },
+    {
+      "id": "t29-f66",
+      "anverso": "¿Impone el RD 3/2023 un método de medida de la radiactividad?",
+      "reverso": "**No**: impone **capacidad de detección**. El método debe medir, como mínimo, con el **límite de detección de la tabla 14**.",
+      "fuente": "RD 3/2023, anexo III, parte D.2 · apunte §2.7",
+      "etiquetas": [
+        "calidad"
+      ],
+      "apartado": "2.7",
+      "evidencia": "El RD no impone método: impone capacidad de detección."
+    },
+    {
+      "id": "t29-f67",
+      "anverso": "El límite de detección del Ra-228: ¿cuál es y cuándo puede relajarse?",
+      "reverso": "**0,02 Bq/L** para la detección inicial de la DI en fuentes nuevas. Puede **elevarse a 0,08 Bq/L** si no es plausible que el Ra-228 supere el **20 % de su concentración derivada**.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 3 · apunte §2.7",
+      "etiquetas": [
+        "calidad"
+      ],
+      "apartado": "2.7",
+      "evidencia": "si esa comprobación inicial muestra que no es plausible que el Ra-228 supere el 20 % de su concentración derivada, el límite puede elevarse a 0,08 Bq/L."
+    },
+    {
+      "id": "t29-f68",
+      "anverso": "¿Qué es el «control de radiactividad» del RD 3/2023?",
+      "reverso": "El análisis que informa al operador y a la autoridad sanitaria de la presencia de **sustancias radiactivas naturales o artificiales**. Es **uno de los ocho tipos de análisis** del real decreto.",
+      "fuente": "RD 3/2023, anexo II, parte A.2.d · apunte §2.8",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.8",
+      "evidencia": "Es uno de los ocho tipos de análisis del real decreto, junto al control de rutina, el análisis de control, el análisis completo, el control operacional, la caracterización del agua, el control en grifo y el control en buque."
+    },
+    {
+      "id": "t29-f69",
+      "anverso": "Frecuencia del control de radiactividad: ¿quién puede reducirla, cuándo no cabe y cuándo hay que volver a muestrear?",
+      "reverso": "El **operador propone**, la **autoridad sanitaria aprueba**. **No cabe** si se aplica un **tratamiento específico para reducir algún radionucleido**. Hay que **volver a muestrear** ante **un cambio en el suministro** que pueda influir.",
+      "fuente": "RD 3/2023, anexo VI · apunte §2.8",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.8",
+      "evidencia": [
+        "El operador puede proponer reducir la frecuencia, pero lo aprueba la autoridad sanitaria",
+        "Hay que volver a muestrear siempre que se produzca un cambio en el suministro que pueda influir en las concentraciones."
+      ]
+    },
+    {
+      "id": "t29-f70",
+      "anverso": "REA y RAR: ¿adónde llegan sus datos?",
+      "reverso": "A la **Sala de Emergencias (SALEM) del CSN**. La REA (25 estaciones automáticas) es del CSN; la RAR (902 estaciones), de **Protección Civil**.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.10",
+      "etiquetas": [
+        "vigilancia"
+      ],
+      "apartado": "2.10",
+      "evidencia": "Los datos llegan a la Sala de Emergencias (SALEM) del CSN"
+    },
+    {
+      "id": "t29-f71",
+      "anverso": "Estroncio-90 y carbono-14: técnica y norma.",
+      "reverso": "**Sr-90**: centelleo líquido o contador proporcional, **ISO 13160:2021**. **C-14**: centelleo líquido, **ISO 13162:2021**, e **ISO 13168** para H-3 y C-14 a la vez.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §3",
+      "etiquetas": [
+        "normas"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "| Estroncio-90 | Centelleo líquido o contador proporcional | ISO 13160:2021 | Bq/L |",
+        "ISO 13162:2021 (y ISO 13168 para H-3 y C-14 simultáneos)"
+      ]
+    },
+    {
+      "id": "t29-f72",
+      "anverso": "Las cuatro partes de la UNE-EN ISO 13164 (radón-222).",
+      "reverso": "**-1** principios generales; **-2** espectrometría gamma; **-3** emanometría; **-4** centelleo líquido bifásico.",
+      "fuente": "UNE-EN ISO 13164 · apunte §3",
+      "etiquetas": [
+        "normas"
+      ],
+      "apartado": "3",
+      "evidencia": "UNE-EN ISO 13164-1:2020 (principios generales), -2 (gamma), -3 (emanometría), -4 (centelleo líquido bifásico)"
     }
   ],
   "test": [
@@ -603,6 +919,636 @@
       "explicacion": "El art. 28.1 la limita a los parámetros químicos del anexo I, parte B, y a los de la lista de observación del anexo IV. Ante una superación de la parte E lo que se aplica es el anexo VI, con sus medidas correctoras y sus plazos de 24 horas.",
       "fuente": "RD 3/2023, arts. 6.3 y 28.1",
       "nucleo": true
+    },
+    {
+      "id": "t29-q25",
+      "pregunta": "Si en un agua de consumo se supera un valor paramétrico de las sustancias radiactivas del anexo I, parte E:",
+      "opciones": [
+        "Se sigue lo dispuesto en el anexo VI, sin calificarla automáticamente de no apta",
+        "Se califica automáticamente como no apta para el consumo",
+        "Se solicita una declaración de situación de excepción"
+      ],
+      "correcta": 0,
+      "explicacion": "Art. 6.3; la excepción no cabe para la radiactividad (art. 28.1).",
+      "fuente": "RD 3/2023, art. 6.3 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Superar un valor paramétrico de la parte E no convierte automáticamente el agua en «no apta»"
+    },
+    {
+      "id": "t29-q26",
+      "pregunta": "El Real Decreto 1029/2022, de protección frente a las radiaciones ionizantes, deroga:",
+      "opciones": [
+        "El RD 314/2016",
+        "El RD 783/2001",
+        "El RD 3/2023"
+      ],
+      "correcta": 1,
+      "explicacion": "El RD 314/2016 transpuso la Directiva 2013/51/Euratom.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Protección radiológica: magnitudes, unidades, límites de dosis y niveles de referencia | RD 1029/2022 | Norma con rango de ley. Deroga el RD 783/2001 |"
+    },
+    {
+      "id": "t29-q27",
+      "pregunta": "La unidad de la dosis absorbida es:",
+      "opciones": [
+        "El sievert",
+        "El becquerelio",
+        "El gray: 1 Gy = 1 J/kg"
+      ],
+      "correcta": 2,
+      "explicacion": "El sievert es de la dosis equivalente y la efectiva.",
+      "fuente": "RD 1029/2022, art. 2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Dosis absorbida (D) | Energía absorbida por unidad de masa | Gray (Gy). 1 Gy = 1 J/kg |"
+    },
+    {
+      "id": "t29-q28",
+      "pregunta": "Cuando el RD 1029/2022 menciona el término «dosis» sin mayor precisión, se refiere a:",
+      "opciones": [
+        "La dosis efectiva",
+        "La dosis absorbida",
+        "La dosis equivalente"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo dice el propio art. 2.",
+      "fuente": "RD 1029/2022, art. 2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "cuando a lo largo de este reglamento se mencione el término \"dosis\", sin mayor precisión, se entenderá que se refiere a dosis efectiva"
+    },
+    {
+      "id": "t29-q29",
+      "pregunta": "De los parámetros de radiactividad del agua de consumo, el único que no se expresa en Bq/L es:",
+      "opciones": [
+        "El radón, en Bq/m³",
+        "La dosis indicativa, en mSv",
+        "El tritio, en Gy"
+      ],
+      "correcta": 1,
+      "explicacion": "Bq/m³ es el radón en aire.",
+      "fuente": "RD 3/2023, anexo I, parte E · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La única excepción de la tabla de parámetros es la dosis indicativa, que al ser una dosis va en mSv."
+    },
+    {
+      "id": "t29-q30",
+      "pregunta": "El valor paramétrico de la dosis indicativa (0,1 mSv/año), frente al límite de dosis anual del público, es:",
+      "opciones": [
+        "El mismo valor",
+        "El doble",
+        "La décima parte"
+      ],
+      "correcta": 2,
+      "explicacion": "El límite del público es 1 mSv por año oficial.",
+      "fuente": "RD 3/2023 y RD 1029/2022, art. 15 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "es decir, la décima parte del límite anual para el público."
+    },
+    {
+      "id": "t29-q31",
+      "pregunta": "Para caracterizar las masas de agua por radón, el RD 3/2023 manda tener en cuenta:",
+      "opciones": [
+        "La geología y la hidrología, la radiactividad de rocas o suelo y el tipo de captaciones",
+        "El caudal suministrado y la población abastecida",
+        "Solo la distancia a la central nuclear más próxima"
+      ],
+      "correcta": 0,
+      "explicacion": "La radiactividad del agua la hereda del terreno.",
+      "fuente": "RD 3/2023, disposición adicional primera · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "originadas por la geología y la hidrología de la zona afectada, la radiactividad de las rocas o del suelo y el tipo de captaciones"
+    },
+    {
+      "id": "t29-q32",
+      "pregunta": "De la serie del torio-232 llegan al agua, sobre todo:",
+      "opciones": [
+        "El Rn-222 y el Po-210",
+        "El Ra-228 y el Ra-224, con sus descendientes",
+        "El U-234 y el U-238"
+      ],
+      "correcta": 1,
+      "explicacion": "Rn-222, Po-210 y los uranios son de la serie del U-238.",
+      "fuente": "CSN, INT-04-30 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Serie del torio | Th-232 | Ra-228 y Ra-224 y sus descendientes, de periodo muy corto |"
+    },
+    {
+      "id": "t29-q33",
+      "pregunta": "Según la nota 4 de la tabla 5 del RD 3/2023, unos niveles de tritio elevados pueden ser:",
+      "opciones": [
+        "Indicio de un agua subterránea muy antigua",
+        "Consecuencia normal del potasio-40 del agua",
+        "Indicio de la presencia de otros radionucleidos artificiales"
+      ],
+      "correcta": 2,
+      "explicacion": "Si supera su valor paramétrico, se analizan otros artificiales.",
+      "fuente": "RD 3/2023, anexo I, parte E, nota 4 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "unos niveles de tritio elevados pueden ser indicio de la presencia de otros radionucleidos artificiales"
+    },
+    {
+      "id": "t29-q34",
+      "pregunta": "El RD 1029/2022 obliga a estimar el radón en el aire, entre otros lugares de trabajo, en:",
+      "opciones": [
+        "Actividades termales y balnearios, que aprovechan agua subterránea",
+        "Piscinas cubiertas abastecidas de la red",
+        "Plantas desaladoras de agua de mar"
+      ],
+      "correcta": 0,
+      "explicacion": "El radón se desprende cuando el agua sale a presión atmosférica.",
+      "fuente": "RD 1029/2022, art. 75.1.b · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "lugares donde se procese, manipule o aproveche agua de origen subterráneo, tales como actividades termales y balnearios"
+    },
+    {
+      "id": "t29-q35",
+      "pregunta": "La dosis indicativa es un sumatorio de:",
+      "opciones": [
+        "Cinco radionucleidos",
+        "Quince radionucleidos",
+        "Todos los emisores gamma detectados, sin lista cerrada"
+      ],
+      "correcta": 1,
+      "explicacion": "La nota 6 los enumera.",
+      "fuente": "RD 3/2023, anexo I, parte E, nota 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La DI es un sumatorio de quince radionucleidos"
+    },
+    {
+      "id": "t29-q36",
+      "pregunta": "El radionucleido con la concentración derivada más alta de la tabla 6 es:",
+      "opciones": [
+        "El cobalto-60, con 40 Bq/L",
+        "El cesio-137, con 11 Bq/L",
+        "El carbono-14, con 240 Bq/L"
+      ],
+      "correcta": 2,
+      "explicacion": "La más baja, el Po-210 con 0,1 Bq/L.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| U-238 | 3,0 | | C-14 | 240 |"
+    },
+    {
+      "id": "t29-q37",
+      "pregunta": "Se cumple la dosis indicativa, sin necesidad de investigar más, cuando:",
+      "opciones": [
+        "Σ (C_medida / C_derivada) ≤ 1",
+        "La suma de las concentraciones medidas es ≤ 0,1 Bq/L",
+        "Cada concentración medida es inferior a su límite de detección"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada cociente es la fracción de la DI que aporta cada nucleido.",
+      "fuente": "RD 3/2023, anexo I, parte E · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando Σ (C_medida / C_derivada) ≤ 1."
+    },
+    {
+      "id": "t29-q38",
+      "pregunta": "Las concentraciones derivadas del uranio de la tabla 6 tienen en cuenta:",
+      "opciones": [
+        "Su toxicidad química y radiológica",
+        "Solo sus propiedades radiológicas, no su toxicidad química",
+        "Solo su toxicidad química"
+      ],
+      "correcta": 1,
+      "explicacion": "El uranio como metal es parámetro aparte (tema 33).",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "tiene en cuenta solo las propiedades radiológicas del uranio, no su toxicidad química"
+    },
+    {
+      "id": "t29-q39",
+      "pregunta": "Alfa total ≤ 0,1 Bq/L y beta resto ≤ 1,0 Bq/L, pero tritio > 100 Bq/L. El anexo VI manda analizar:",
+      "opciones": [
+        "Primero los naturales y después los artificiales",
+        "Nada más: la DI se considera ≤ 0,1 mSv/año",
+        "Radionucleidos específicos artificiales"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el caso 3.º.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| 3.º | ≤ 0,1 | ≤ 1,0 | > 100 | Analizar radionucleidos específicos ARTIFICIALES |"
+    },
+    {
+      "id": "t29-q40",
+      "pregunta": "Si se superan el índice alfa o el beta resto y además el tritio supera 100 Bq/L, hay que analizar:",
+      "opciones": [
+        "Radionucleidos específicos naturales y artificiales",
+        "Solo los artificiales",
+        "Solo los naturales"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el caso 4.º.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| 4.º | > 0,1 o | > 1,0 | > 100 | Analizar radionucleidos específicos NATURALES Y ARTIFICIALES |"
+    },
+    {
+      "id": "t29-q41",
+      "pregunta": "Si la dosis indicativa calculada supera 0,1 mSv/año:",
+      "opciones": [
+        "Se declara una situación de excepción",
+        "Se aplica la parte C del anexo VI, con medidas correctoras",
+        "No se requieren investigaciones adicionales"
+      ],
+      "correcta": 1,
+      "explicacion": "La excepción no cabe para la radiactividad.",
+      "fuente": "RD 3/2023, anexo VI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "DI > 0,1 mSv/año → se aplica la parte C del anexo VI (medidas correctoras)."
+    },
+    {
+      "id": "t29-q42",
+      "pregunta": "Pueden fijarse niveles de cribado alternativos a 0,1 y 1 Bq/L. ¿Quién los fija?",
+      "opciones": [
+        "El operador del abastecimiento",
+        "El laboratorio acreditado",
+        "El Ministerio de Sanidad, con asesoramiento del CSN"
+      ],
+      "correcta": 2,
+      "explicacion": "A petición de la autoridad sanitaria, y si siguen cumpliendo la DI.",
+      "fuente": "RD 3/2023, anexo VI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "el Ministerio de Sanidad, con asesoramiento del CSN, puede fijar valores distintos de 0,1 y 1 Bq/L"
+    },
+    {
+      "id": "t29-q43",
+      "pregunta": "En el método de fuente concentrada, el residuo se transfiere a una plancheta de:",
+      "opciones": [
+        "Acero inoxidable",
+        "Vidrio borosilicatado",
+        "Polietileno de bajo fondo"
+      ],
+      "correcta": 0,
+      "explicacion": "De 47 o 60 mm. El polietileno es el vial del centelleo líquido.",
+      "fuente": "CSN, Procedimiento 1.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "transferir a una plancheta de acero inoxidable (47 o 60 mm)"
+    },
+    {
+      "id": "t29-q44",
+      "pregunta": "Al evaporar la muestra en el método de desecación, no debe llegarse a sequedad en el vaso porque:",
+      "opciones": [
+        "Se forma radón",
+        "Los radionucleidos se adsorben en las paredes y se pierden",
+        "El vaso se fisura y contamina la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Se evapora suavemente y se transfiere con HNO₃.",
+      "fuente": "CSN, Procedimiento 1.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "si se seca, los radionucleidos se adsorben en las paredes y se pierden."
+    },
+    {
+      "id": "t29-q45",
+      "pregunta": "La calcinación del residuo a 450 °C es recomendable cuando:",
+      "opciones": [
+        "El agua es de origen superficial",
+        "Se mide tritio",
+        "Las sales son nitratos higroscópicos, para pasarlas a óxidos"
+      ],
+      "correcta": 2,
+      "explicacion": "La variante usada se declara en el resultado.",
+      "fuente": "CSN, Procedimiento 1.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "recomendable cuando las sales son nitratos higroscópicos, para pasarlas a óxidos"
+    },
+    {
+      "id": "t29-q46",
+      "pregunta": "La ISO 9696 se aplica a emisores alfa que no sean volátiles hasta:",
+      "opciones": [
+        "350 °C",
+        "180 °C",
+        "105 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "En aguas no salinas, brutas y potables.",
+      "fuente": "ISO 9696 (resumen público) · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "para radionucleidos emisores alfa que no sean volátiles hasta 350 °C"
+    },
+    {
+      "id": "t29-q47",
+      "pregunta": "Como patrón del índice beta se descartó el cesio-137 porque:",
+      "opciones": [
+        "Es un emisor alfa",
+        "Es volátil hacia 450 °C",
+        "Es el radionucleido mayoritario en las aguas"
+      ],
+      "correcta": 1,
+      "explicacion": "El patrón es Sr-90 en equilibrio con Y-90.",
+      "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Se descartó el Cs-137 por volátil hacia 450 °C"
+    },
+    {
+      "id": "t29-q48",
+      "pregunta": "El método de deposición de una capa delgada para alfa y beta total es el de la norma:",
+      "opciones": [
+        "UNE-EN ISO 9696",
+        "UNE-EN ISO 10703",
+        "UNE-EN ISO 10704"
+      ],
+      "correcta": 2,
+      "explicacion": "La 10703 es la espectrometría gamma.",
+      "fuente": "UNE-EN ISO 10704 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "UNE-EN ISO 10704, «medición de la actividad alfa y beta total en agua no salina. Método de deposición de una capa delgada»"
+    },
+    {
+      "id": "t29-q49",
+      "pregunta": "En centelleo líquido, la ventana beta no debe contener más de:",
+      "opciones": [
+        "El 5 % de las cuentas de tritio",
+        "El 50 % de las cuentas de tritio",
+        "El 5 % de las cuentas alfa"
+      ],
+      "correcta": 0,
+      "explicacion": "La ventana beta, lo más amplia posible.",
+      "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "no debe contener más del 5 % de las cuentas de tritio"
+    },
+    {
+      "id": "t29-q50",
+      "pregunta": "La emanometría, que desgasifica la muestra y cuenta el gas en una célula de centelleo, es la técnica natural para:",
+      "opciones": [
+        "El estroncio-90",
+        "El radón",
+        "El cesio-137"
+      ],
+      "correcta": 1,
+      "explicacion": "El analito se separa solo.",
+      "fuente": "ISO 13164-3 e ISO 13165-2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Se desgasifica la muestra y se cuenta el gas en una célula de centelleo. Es la técnica natural del radón"
+    },
+    {
+      "id": "t29-q51",
+      "pregunta": "En los detectores HPGe tipo P, la capa muerta de 0,5 a 0,7 mm fija:",
+      "opciones": [
+        "La resolución máxima en energía",
+        "El tiempo mínimo de recuento",
+        "El límite inferior de energía útil"
+      ],
+      "correcta": 2,
+      "explicacion": "Procedimiento 1.4 del CSN.",
+      "fuente": "CSN, Procedimiento 1.4 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "con una capa muerta de 0,5 a 0,7 mm que fija el límite inferior de energía útil."
+    },
+    {
+      "id": "t29-q52",
+      "pregunta": "La determinación del polonio-210 por espectrometría alfa es objeto de la norma:",
+      "opciones": [
+        "ISO 13161",
+        "ISO 13166",
+        "ISO 13167"
+      ],
+      "correcta": 0,
+      "explicacion": "13166 isótopos de uranio; 13167 Pu, Am, Cm y Np.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "ISO 13166 (isótopos de uranio), ISO 13161 (Po-210), ISO 13167 (plutonio, americio, curio y neptunio)"
+    },
+    {
+      "id": "t29-q53",
+      "pregunta": "Según el CSN, los detectores de radiación miden el pulso o la corriente producidos por:",
+      "opciones": [
+        "El calor que desprende la muestra",
+        "La ionización inducida por la radiación, en gases o en sólidos",
+        "La luz que absorbe la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "De ahí las familias de gas, centelleo y semiconductor.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "producido como consecuencia de la ionización inducida por la radiación en gases confinados o en detectores sólidos"
+    },
+    {
+      "id": "t29-q54",
+      "pregunta": "Según el CSN, el detector de gas más utilizado, por barato, sensible y resistente, es:",
+      "opciones": [
+        "La cámara de ionización",
+        "El contador proporcional",
+        "El contador Geiger-Müller"
+      ],
+      "correcta": 2,
+      "explicacion": "La cámara es más sensible, pero cara.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "El GM es el más utilizado: barato, sensible y resistente."
+    },
+    {
+      "id": "t29-q55",
+      "pregunta": "El centelleador sólido propio de las partículas alfa, con el que se miden planchetas de alfa total, es:",
+      "opciones": [
+        "ZnS(Ag)",
+        "NaI(Tl)",
+        "Germanio hiperpuro"
+      ],
+      "correcta": 0,
+      "explicacion": "NaI(Tl) es para gamma.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Centelleo sólido | ZnS(Ag) para alfa; NaI(Tl) para gamma | ZnS(Ag) mide planchetas de alfa total |"
+    },
+    {
+      "id": "t29-q56",
+      "pregunta": "El centelleo líquido tiene una eficiencia altísima porque:",
+      "opciones": [
+        "Trabaja a alta tensión",
+        "La muestra va dentro del centelleador, con geometría 4π",
+        "Usa un detector de germanio enfriado"
+      ],
+      "correcta": 1,
+      "explicacion": "Se mezcla con el cóctel en el vial.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "La muestra va dentro del centelleador: geometría 4π y eficiencia altísima"
+    },
+    {
+      "id": "t29-q57",
+      "pregunta": "El límite de detección que exige el RD 3/2023 para el radón es:",
+      "opciones": [
+        "500 Bq/L",
+        "0,04 Bq/L",
+        "10 Bq/L"
+      ],
+      "correcta": 2,
+      "explicacion": "500 es el valor paramétrico; 0,04, el LD de alfa total.",
+      "fuente": "RD 3/2023, anexo III, tabla 14 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Radón | 10 | | Co-60 / Cs-134 / Cs-137 / I-131 | 0,5 |"
+    },
+    {
+      "id": "t29-q58",
+      "pregunta": "El límite de detección más exigente de la tabla 14 es el de:",
+      "opciones": [
+        "El polonio-210, 0,01 Bq/L",
+        "El carbono-14, 20 Bq/L",
+        "La actividad alfa total, 0,04 Bq/L"
+      ],
+      "correcta": 0,
+      "explicacion": "El C-14 es el menos exigente.",
+      "fuente": "RD 3/2023, anexo III, tabla 14 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Po-210 | 0,01 (el más exigente) |"
+    },
+    {
+      "id": "t29-q59",
+      "pregunta": "La parte 3 de la UNE-EN ISO 11929 que cita el RD 3/2023 trata de:",
+      "opciones": [
+        "Aplicaciones elementales",
+        "Aplicaciones a métodos de desplegado",
+        "Aplicaciones avanzadas"
+      ],
+      "correcta": 1,
+      "explicacion": "Parte 1, elementales; parte 2, avanzadas.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 1 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "parte 1 (aplicaciones elementales), parte 2 (aplicaciones avanzadas) y parte 3 (aplicaciones a métodos de desplegado)"
+    },
+    {
+      "id": "t29-q60",
+      "pregunta": "Respecto de la acreditación UNE-EN ISO/IEC 17025 de los métodos de radiactividad:",
+      "opciones": [
+        "Están exceptuados, como el control operacional",
+        "Solo es obligatoria para el tritio",
+        "Es obligatoria: la parte E no está exceptuada"
+      ],
+      "correcta": 2,
+      "explicacion": "Las exenciones son para el control operacional y el de rutina.",
+      "fuente": "RD 3/2023, anexo III, parte B.2 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "La radiactividad no está exceptuada: las exenciones son para el control operacional y el de rutina."
+    },
+    {
+      "id": "t29-q61",
+      "pregunta": "En una zona de abastecimiento de tipo 2 (más de 10 y menos de 100 m³/día), el control de radiactividad se hace:",
+      "opciones": [
+        "Una vez cada cinco años",
+        "Una vez al año",
+        "A criterio de la autoridad sanitaria"
+      ],
+      "correcta": 0,
+      "explicacion": "Tipo 1, a criterio; tipo 3, una al año.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Tipo 2 (> 10 y < 100 m³) | 1 cada 5 años |"
+    },
+    {
+      "id": "t29-q62",
+      "pregunta": "No cabe reducir la frecuencia del control de radiactividad cuando:",
+      "opciones": [
+        "El agua es de origen superficial",
+        "Se aplica un tratamiento específico para reducir algún radionucleido",
+        "La zona de abastecimiento es de tipo 2"
+      ],
+      "correcta": 1,
+      "explicacion": "En los demás casos, el operador propone y la autoridad aprueba.",
+      "fuente": "RD 3/2023, anexo VI · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "un tratamiento específico que tenga como finalidad reducir el nivel de algún radionucleido"
+    },
+    {
+      "id": "t29-q63",
+      "pregunta": "Para decidir si la captación superficial puede estar afectada por una fuente antropogénica de tritio, el RD 3/2023 remite a la información de:",
+      "opciones": [
+        "El operador del abastecimiento",
+        "El laboratorio de control",
+        "El Consejo de Seguridad Nuclear"
+      ],
+      "correcta": 2,
+      "explicacion": "Tritio: origen superficial y fuente antropogénica.",
+      "fuente": "RD 3/2023, anexo VI · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "la captación puede estar afectada por una fuente antropogénica de tritio u otros artificiales según la información del CSN"
+    },
+    {
+      "id": "t29-q64",
+      "pregunta": "Si hay sospecha de origen artificial en una superación, el Ministerio de Sanidad puede pedir la investigación inmediata a:",
+      "opciones": [
+        "El Consejo de Seguridad Nuclear",
+        "La Dirección General de Protección Civil",
+        "El operador del abastecimiento"
+      ],
+      "correcta": 0,
+      "explicacion": "Tras la notificación en 24 horas.",
+      "fuente": "RD 3/2023, anexo VI, parte C · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Si hay sospecha de origen artificial, el Ministerio puede pedir al CSN la investigación inmediata"
+    },
+    {
+      "id": "t29-q65",
+      "pregunta": "Con más de 1000 Bq/L de radón, el anexo VI, parte C, obliga a:",
+      "opciones": [
+        "Solo informar a la población",
+        "Adoptar siempre medidas correctoras para evitar el suministro en esas condiciones",
+        "Repetir el análisis en el control del año siguiente"
+      ],
+      "correcta": 1,
+      "explicacion": "Entre 500 y 1000, se optimiza la protección.",
+      "fuente": "RD 3/2023, anexo VI, parte C · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Siempre se adoptan medidas correctoras para evitar el suministro de agua en esas condiciones"
+    },
+    {
+      "id": "t29-q66",
+      "pregunta": "La REVIRA del CSN, de ámbito nacional y no asociada a instalaciones, integra:",
+      "opciones": [
+        "El PVRA y la RAR",
+        "La REA y la RAR",
+        "La REM y la REA"
+      ],
+      "correcta": 2,
+      "explicacion": "REM de muestreo; REA automática.",
+      "fuente": "CSN, vigilancia radiológica ambiental · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Integra la REM (Red de Estaciones de Muestreo) y la REA (Red de Estaciones Automáticas)"
+    },
+    {
+      "id": "t29-q67",
+      "pregunta": "La Red de Alerta a la Radiactividad (RAR) depende de:",
+      "opciones": [
+        "La Dirección General de Protección Civil, con 902 estaciones",
+        "El CSN, con 25 estaciones",
+        "El Ministerio de Sanidad, a través del SINAC"
+      ],
+      "correcta": 0,
+      "explicacion": "Las 25 automáticas son la REA del CSN.",
+      "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Red de Alerta a la Radiactividad de la Dirección General de Protección Civil: 902 estaciones"
+    },
+    {
+      "id": "t29-q68",
+      "pregunta": "La ISO 13168 permite determinar simultáneamente:",
+      "opciones": [
+        "El radón y el radio-226",
+        "El tritio y el carbono-14",
+        "El plutonio y el americio"
+      ],
+      "correcta": 1,
+      "explicacion": "Por centelleo líquido.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §3",
+      "apartado": "3",
+      "evidencia": "ISO 13162:2021 (y ISO 13168 para H-3 y C-14 simultáneos)"
+    },
+    {
+      "id": "t29-q69",
+      "pregunta": "La norma del estroncio-90 en agua, por centelleo líquido o contador proporcional, es la:",
+      "opciones": [
+        "ISO 13161",
+        "ISO 13162",
+        "ISO 13160"
+      ],
+      "correcta": 2,
+      "explicacion": "13161 Po-210; 13162 C-14.",
+      "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Estroncio-90 | Centelleo líquido o contador proporcional | ISO 13160:2021 | Bq/L |"
     }
   ],
   "supuestos": [
@@ -747,6 +1693,170 @@
           "correcta": 1,
           "explicacion": "Es el circuito literal del anexo VI, parte B.3. El CSN participa además asesorando sobre las fuentes antropogénicas de tritio, informando de la caracterización de las masas de agua por radón y pudiendo investigar de forma inmediata el origen cuando se sospeche que es artificial.",
           "fuente": "RD 3/2023, anexo VI, parte B.3 y parte C.1.b)"
+        }
+      ]
+    },
+    {
+      "id": "t29-s03",
+      "titulo": "Supuesto 3. Índices alfa y beta de un agua de pozo muy mineralizada",
+      "enunciado": "Llega al laboratorio el agua de un pozo con una conductividad de 1,8 mS/cm para determinar los índices de actividad alfa total y beta total. El laboratorio dispone de un contador proporcional y de un contador de centelleo líquido con discriminación alfa/beta.",
+      "preguntas": [
+        {
+          "id": "t29-s03-q1",
+          "pregunta": "¿Es adecuado el método de desecación sobre plancheta?",
+          "opciones": [
+            "Sí: la desecación vale para cualquier agua",
+            "Sí, secando a 105 °C en lugar de a 180 °C",
+            "No: con conductividad ≥ 1 mS/cm el CSN no lo recomienda y remite a coprecipitación o centelleo líquido",
+            "No: solo vale la espectrometría gamma"
+          ],
+          "correcta": 2,
+          "explicacion": "El otro criterio es un residuo seco ≥ 1 g/L.",
+          "fuente": "CSN, Procedimiento 1.17 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "la desecación no se recomienda con conductividad ≥ 1 mS/cm o residuo seco ≥ 1 g/L"
+        },
+        {
+          "id": "t29-s03-q2",
+          "pregunta": "Opta por el centelleo líquido. Tras concentrar la muestra acidulada con HCl, ¿a qué pH la lleva?",
+          "opciones": [
+            "7,0 ± 0,5",
+            "4,5 ± 0,5",
+            "10,0 ± 0,5",
+            "1,5 ± 0,5"
+          ],
+          "correcta": 3,
+          "explicacion": "Y la mezcla con cóctel en un vial de polietileno de bajo fondo.",
+          "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "se lleva a pH 1,5 ± 0,5, se mezcla con cóctel de centelleo en un vial de bajo fondo de polietileno"
+        },
+        {
+          "id": "t29-s03-q3",
+          "pregunta": "¿Qué se pierde durante la concentración por evaporación?",
+          "opciones": [
+            "El radón y sus descendientes de vida corta",
+            "El potasio-40",
+            "El radio-226",
+            "El uranio"
+          ],
+          "correcta": 0,
+          "explicacion": "Por eso el índice no recoge el radón, que se mide aparte.",
+          "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "paso en el que se eliminan el radón y sus descendientes de vida corta"
+        },
+        {
+          "id": "t29-s03-q4",
+          "pregunta": "Para que el quenching no falsee el resultado, ¿qué debe igualar?",
+          "opciones": [
+            "Solo el tiempo de recuento",
+            "El medio (pH y ácido) y la relación cóctel/muestra en patrones, muestras y blancos",
+            "La temperatura del laboratorio",
+            "Nada: el PDI corrige el quenching"
+          ],
+          "correcta": 1,
+          "explicacion": "El PDI separa alfa de beta; no corrige el quenching.",
+          "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "el medio (pH y ácido) y la relación cóctel/muestra deben ser los mismos en patrones, muestras y blancos"
+        },
+        {
+          "id": "t29-s03-q5",
+          "pregunta": "En el espectro aparece el pico del Po-214. ¿Qué indica?",
+          "opciones": [
+            "Contaminación por tritio",
+            "Un fallo del PDI",
+            "La presencia de Ra-226, del que desciende el Po-214",
+            "La presencia de cesio-137"
+          ],
+          "correcta": 2,
+          "explicacion": "Un contador proporcional no podría verlo.",
+          "fuente": "CSN, Procedimiento 1.18 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "permite detectar la presencia de Ra-226 identificando el pico de su descendiente Po-214"
+        }
+      ]
+    },
+    {
+      "id": "t29-s04",
+      "titulo": "Supuesto 4. Beta resto con contador proporcional",
+      "enunciado": "Un laboratorio determina el índice beta total de un agua de consumo por desecación sobre plancheta y recuento en contador proporcional de flujo de gas. Obtiene 1,30 Bq/L de beta total, y el potasio del agua es de 12 mg/L.",
+      "preguntas": [
+        {
+          "id": "t29-s04-q1",
+          "pregunta": "¿Con qué patrón se calibra el índice beta?",
+          "opciones": [
+            "Americio-241",
+            "Cesio-137",
+            "Potasio-40",
+            "Estroncio-90 en equilibrio con itrio-90"
+          ],
+          "correcta": 3,
+          "explicacion": "El Am-241 es el del alfa total; el Cs-137 se descartó por volátil.",
+          "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Beta total / beta resto | Estroncio-90 en equilibrio con itrio-90 | Es el emisor beta de mayor radiotoxicidad."
+        },
+        {
+          "id": "t29-s04-q2",
+          "pregunta": "Con F_K = 0,02769 Bq por mg de K, ¿cuál es la actividad beta resto y supera el valor paramétrico?",
+          "opciones": [
+            "0,97 Bq/L: no supera 1,0 Bq/L",
+            "1,30 Bq/L: supera 1,0 Bq/L",
+            "0,33 Bq/L: no supera 1,0 Bq/L",
+            "1,63 Bq/L: supera 1,0 Bq/L"
+          ],
+          "correcta": 0,
+          "explicacion": "K-40 = 12 × 0,02769 = 0,33 Bq/L; 1,30 − 0,33 = 0,97 Bq/L.",
+          "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "se descuenta el K-40 con el factor de conversión F_K = 0,02769 Bq por mg de K"
+        },
+        {
+          "id": "t29-s04-q3",
+          "pregunta": "Antes de dar el beta total, ¿qué corrección propia del contador proporcional debe aplicar?",
+          "opciones": [
+            "La corrección por quenching",
+            "El spill-over: la fracción de alfas contadas en la ventana o el voltaje beta",
+            "La corrección por la capa muerta del detector",
+            "Ninguna"
+          ],
+          "correcta": 1,
+          "explicacion": "El quenching es del centelleo líquido.",
+          "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "la fracción de partículas alfa que se cuentan en la ventana o el voltaje de trabajo beta"
+        },
+        {
+          "id": "t29-s04-q4",
+          "pregunta": "¿Qué cuentas resta en los cálculos?",
+          "opciones": [
+            "Las del fondo del detector sin muestra",
+            "Ninguna",
+            "Las del blanco: agua desionizada o destilada por todo el procedimiento",
+            "Las de la muestra de calibrado"
+          ],
+          "correcta": 2,
+          "explicacion": "Blanco y fondo no son lo mismo.",
+          "fuente": "CSN, Procedimiento 1.5 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Blanco: cuentas de una muestra preparada con agua desionizada o destilada siguiendo el mismo procedimiento. En los cálculos se usa el blanco."
+        },
+        {
+          "id": "t29-s04-q5",
+          "pregunta": "¿Por qué los índices se cuentan en contador proporcional y no en un Geiger-Müller?",
+          "opciones": [
+            "Porque el GM no detecta partículas beta",
+            "Porque el GM es más caro",
+            "Porque el proporcional no necesita gas",
+            "Porque la altura del impulso es proporcional a la ionización y permite separar alfa de beta"
+          ],
+          "correcta": 3,
+          "explicacion": "El GM da el mismo impulso venga de donde venga.",
+          "fuente": "CSN, curso de actuantes, módulo 5 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "la altura del impulso es proporcional a la ionización inicial, y eso permite separar alfa de beta en el mismo recuento"
         }
       ]
     }
