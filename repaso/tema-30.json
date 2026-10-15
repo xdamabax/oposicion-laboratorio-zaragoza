@@ -354,6 +354,246 @@
       "fuente": "Cuestionarios 1233 C2, 1246 C2 y 1322 C2",
       "etiquetas": ["aplicacion", "examen"],
       "nucleo": true
+    },
+    {
+      "id": "t30-f46",
+      "anverso": "¿Qué problema resuelve la cromatografía y cuál es su lógica de trabajo?",
+      "reverso": "La cromatografía **no mide: separa**. Resuelve las **muestras complejas**, donde una técnica espectroscópica o electroquímica se atasca con los interferentes: **se separa primero y se mide después**, con el detector que convenga.",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "1",
+      "evidencia": "La cromatografía no mide: separa. Es la respuesta al problema de las muestras complejas, donde una técnica espectroscópica o electroquímica se atasca en cuanto hay interferentes."
+    },
+    {
+      "id": "t30-f47",
+      "anverso": "El mecanismo de la separación, en palabras del CEM.",
+      "reverso": "La fase móvil, «cuya **única función es transportar el analito** a través de la columna», pasa sobre una **fase estacionaria inmiscible** y fija. Lo muy retenido avanza **lento**; lo poco retenido, **rápido**. No hay reacción: es un **reparto de equilibrio repetido miles de veces**.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "cuya única función es transportar el analito a través de la columna",
+        "la separación no la produce ninguna reacción, sino un reparto de equilibrio repetido miles de veces"
+      ]
+    },
+    {
+      "id": "t30-f48",
+      "anverso": "¿Qué ventajas reconoce el CEM a la cromatografía?",
+      "reverso": "Su **sensibilidad**, su fácil adaptación a las **determinaciones cuantitativas exactas**, su idoneidad para separar especies **no volátiles o termolábiles** y su **gran aplicabilidad**.",
+      "fuente": "CEM, QU-004 · apunte §2.1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "2.1",
+      "evidencia": "su sensibilidad, su fácil adaptación a las determinaciones cuantitativas exactas, su idoneidad para la separación de especies no volátiles o termolábiles y su gran aplicabilidad"
+    },
+    {
+      "id": "t30-f49",
+      "anverso": "Tiempo de retención ajustado y anchura de base: qué son y cómo se obtienen.",
+      "reverso": "**t_R′ = t_R − t_M**: el tiempo que el soluto ha pasado **retenido**. La **anchura de base, w**, se mide **prolongando las tangentes de los puntos de inflexión** hasta la línea base.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+      "etiquetas": [
+        "cromatograma"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "| Tiempo de retención ajustado, t_R′ | t_R − t_M: lo que el soluto ha pasado de más, o sea, retenido |",
+        "Se mide prolongando las tangentes de los puntos de inflexión de cada lado del pico hasta la línea base"
+      ]
+    },
+    {
+      "id": "t30-f50",
+      "anverso": "Resinas débiles: ¿qué les pasa con el pH?",
+      "reverso": "**Catiónica de ácido débil** (−COO⁻): **por debajo de pH 4 se protona** y pierde capacidad. **Aniónica de base débil** (amina): solo está protonada a pH **moderadamente** básico. Las fuertes mantienen la carga en medio muy ácido o muy básico.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "etiquetas": [
+        "ionica"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "| Catiónica de ácido débil | Ácido carboxílico, −COO⁻ | −CH₂COO⁻ | Por debajo de pH 4 se protona y pierde capacidad |",
+        "| Aniónica de base débil | Amina | −CH₂CH₂NH(C₂H₅)₃⁺ | Solo protonada a pH moderadamente básico |"
+      ]
+    },
+    {
+      "id": "t30-f51",
+      "anverso": "Elución isocrática y en gradiente en cromatografía iónica.",
+      "reverso": "**Isocrática**: composición del eluyente **constante**. **En gradiente**: se varía la **fuerza iónica o el pH** con el tiempo. El pH y la composición iónica del eluyente **deciden los tiempos de retención**.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "etiquetas": [
+        "ionica"
+      ],
+      "apartado": "2.7",
+      "evidencia": "Cabe elución isocrática —composición constante— o en gradiente, variando la fuerza iónica o el pH con el tiempo."
+    },
+    {
+      "id": "t30-f52",
+      "anverso": "Las dos posiciones de la válvula de bucle, y su ventaja.",
+      "reverso": "**Carga**: el bucle queda aislado de la fase móvil, se llena con jeringa y el exceso va al desagüe. **Inyección**: la válvula gira y la fase móvil arrastra el contenido del bucle a la columna. El **volumen lo fija el bucle** (0,5 µL a 5 mL): es **reproducible**.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.3 · apunte §2.8",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.8",
+      "evidencia": [
+        "Carga: el bucle de muestra queda aislado de la fase móvil y abierto a la atmósfera; se llena con jeringa, y el exceso sale por el desagüe.",
+        "el volumen inyectado lo fija el bucle, no el pulso de la mano: por eso es reproducible."
+      ]
+    },
+    {
+      "id": "t30-f53",
+      "anverso": "¿Cómo es la precolumna respecto a la columna analítica?",
+      "reverso": "Lleva **el mismo relleno y la misma fase estacionaria**, pero es **mucho más corta y más barata** (del orden de 7,5 mm y una décima parte del precio). Es **sacrificial**: se cambia con regularidad.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.3 · apunte §2.8",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.8",
+      "evidencia": "lleva el mismo relleno y la misma fase estacionaria que la columna analítica, pero es mucho más corta y más barata"
+    },
+    {
+      "id": "t30-f54",
+      "anverso": "El supresor cuando se separan cationes.",
+      "reverso": "Eluyente: un **ácido diluido** (p. ej. **HCl**). Supresor: resina de **intercambio aniónico en forma OH⁻**. El eluyente sale convertido en **agua**: baja la conductividad de fondo.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.8",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.8",
+      "evidencia": "| Cationes | Un ácido diluido (p. ej. HCl) | Resina de intercambio aniónico en forma OH⁻ | H₂O |"
+    },
+    {
+      "id": "t30-f55",
+      "anverso": "Cromatografía iónica de columna única: ¿qué eluyentes usa?",
+      "reverso": "**Ácido metanosulfónico** para cationes; **benzoato** o **hidrogenoftalato de potasio** para aniones. Muy diluidos, con resina de **baja capacidad**, para que el fondo ya sea bajo sin supresor.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.8",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.8",
+      "evidencia": "ácido metanosulfónico para cationes; benzoato o hidrogenoftalato de potasio para aniones"
+    },
+    {
+      "id": "t30-f56",
+      "anverso": "Los distractores del detector de conductividad: ¿a qué detectores corresponden?",
+      "reverso": "«Compuestos con capacidad de **oxidarse o reducirse**» → detector **amperométrico**. «Compuestos **fluorescentes**» → detector de **fluorescencia**. El de conductividad es el de los **compuestos iónicos**.",
+      "fuente": "1246 #18 y 1322 #35 · apunte §2.8",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.8",
+      "evidencia": "«compuestos con capacidad de oxidarse o reducirse» es el amperométrico; «compuestos fluorescentes», el de fluorescencia."
+    },
+    {
+      "id": "t30-f57",
+      "anverso": "¿Cómo calibra el CEM un cromatógrafo y qué hace antes de inyectar los patrones?",
+      "reverso": "Por **interpolación entre dos puntos**. Antes: fija parámetros instrumentales y de procesamiento (**área o altura**, integración, **umbral mínimo**), **acondiciona con un blanco del disolvente** y **comprueba que no da señal**.",
+      "fuente": "CEM, QU-004, 5.3 · apunte §2.9",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.9",
+      "evidencia": [
+        "El CEM calibra el cromatógrafo por interpolación entre dos puntos",
+        "Acondicionar el equipo analizando un blanco del disolvente."
+      ]
+    },
+    {
+      "id": "t30-f58",
+      "anverso": "Material para calibrar según el CEM: volumétrico, balanza y materiales de referencia.",
+      "reverso": "Pipetas y matraces **clase A**; micropipetas con repetibilidad y exactitud **de al menos el 2 %**; balanza de **0,1 mg**. **MRC** que incluyan el rango esperado, con una **relación entre los dos no mayor de 10**.",
+      "fuente": "CEM, QU-004, 5.1 · apunte §2.9",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.9",
+      "evidencia": [
+        "pipetas y matraces aforados clase A; micropipetas con repetibilidad y exactitud de al menos el 2 %; balanza analítica con resolución de 0,1 mg.",
+        "con una separación tal que la relación entre las dos no sea mayor de 10."
+      ]
+    },
+    {
+      "id": "t30-f59",
+      "anverso": "¿Qué se fija en el procesamiento de la señal antes de calibrar?",
+      "reverso": "La respuesta por **área o altura**, el **modo de integración** y el **umbral mínimo** para considerar que hay señal.",
+      "fuente": "CEM, QU-004, 5.3.2 · apunte §2.9",
+      "etiquetas": [
+        "calibracion"
+      ],
+      "apartado": "2.9",
+      "evidencia": "Fijar el procesamiento de la señal: respuesta por área o altura, modo de integración y umbral mínimo para considerar que hay señal."
+    },
+    {
+      "id": "t30-f60",
+      "anverso": "Límite inferior de aplicación de la UNE-EN ISO 10304-1, y cómo bajarlo.",
+      "reverso": "**≥ 0,05 mg/L** para **bromuro y nitrito**; **≥ 0,1 mg/L** para cloruro, fluoruro, nitrato, ortofosfato y sulfato. Se baja a **≥ 0,01 mg/L** con **pretratamiento o preconcentración**, o con **detector UV** para bromuro, nitrato y nitrito.",
+      "fuente": "ISO 10304-1 (resumen público) · apunte §2.10",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.10",
+      "evidencia": [
+        "el límite inferior de aplicación es ≥ 0,05 mg/L para bromuro y nitrito y ≥ 0,1 mg/L para cloruro, fluoruro, nitrato, ortofosfato y sulfato",
+        "Puede bajarse a ≥ 0,01 mg/L con pretratamiento o preconcentración, o usando detector UV para bromuro, nitrato y nitrito."
+      ]
+    },
+    {
+      "id": "t30-f61",
+      "anverso": "¿Qué exige el RD 817/2015 a los métodos en aguas superficiales?",
+      "reverso": "Métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** al nivel de la norma de calidad ambiental y **LC ≤ 30 %** de esa NCA.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.10",
+      "etiquetas": [
+        "agua",
+        "normativa"
+      ],
+      "apartado": "2.10",
+      "evidencia": "métodos validados conforme a EN ISO/IEC 17025, incertidumbre ≤ 50 % (k = 2) al nivel de la norma de calidad ambiental y LC ≤ 30 % de esa NCA."
+    },
+    {
+      "id": "t30-f62",
+      "anverso": "Clorato o clorito por encima de 0,25 mg/L de media anual: ¿qué debe hacer el operador?",
+      "reverso": "Usar **las mejores técnicas disponibles** para bajarlo **sin comprometer la desinfección**. El valor de **0,7 mg/L** solo se aplica con desinfección que los genere (**dióxido de cloro e hipoclorito**).",
+      "fuente": "RD 3/2023, anexo I, parte B, nota · apunte §2.10",
+      "etiquetas": [
+        "agua",
+        "normativa"
+      ],
+      "apartado": "2.10",
+      "evidencia": "Si se pasa de 0,25 mg/L de media anual, el operador debe usar las mejores técnicas disponibles para bajarlo sin comprometer la desinfección."
+    },
+    {
+      "id": "t30-f63",
+      "anverso": "¿Cuándo no compensa la cromatografía iónica, y qué no se mide con ella?",
+      "reverso": "Si solo hace falta **un anión de rutina**: volumetría, electrodo selectivo o espectrofotometría (temas 22, 24 y 25). Y los **metales** (Cd, Pb, Hg, As…) **no** son cromatografía iónica: **ICP-MS o absorción atómica**.",
+      "fuente": "Tabla operativa · apunte §3",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "Si solo hace falta un parámetro, la cromatografía no compensa",
+        "| Metales (Cd, Pb, Hg, As, Cr, Ni…) | ICP-MS o absorción atómica | Temas 27 y 26 | µg/L | No es cromatografía iónica"
+      ]
+    },
+    {
+      "id": "t30-f64",
+      "anverso": "Cloruros y sulfatos; sodio, potasio, calcio y magnesio: ¿qué técnica y qué norma?",
+      "reverso": "Aniones → **cromatografía iónica de aniones**, **UNE-EN ISO 10304-1:2009**. Cationes → **cromatografía iónica de cationes**, **UNE-EN ISO 14911:2000**.",
+      "fuente": "1322 · segundo ejercicio #27 y #30 · apunte §3",
+      "etiquetas": [
+        "agua"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Sodio, Potasio, Calcio y Magnesio"
+      },
+      "apartado": "3",
+      "evidencia": "| Sodio, potasio, calcio, magnesio, amonio, litio, manganeso, estroncio y bario | Cromatografía iónica de CATIONES | UNE-EN ISO 14911:2000 | mg/L |"
     }
   ],
   "test": [
@@ -639,6 +879,618 @@
       "explicacion": "Anexo I, parte B. Además hay que cumplir [nitrato]/50 + [nitrito]/3 ≤ 1 tras la potabilización, y el nitrito baja a 0,10 mg/L a la salida de ETAP o de depósito de cabecera. Los 250 mg/L son de cloruro y sulfato, que están en la parte C.",
       "fuente": "RD 3/2023, anexo I, partes B y C",
       "nucleo": true
+    },
+    {
+      "id": "t30-q27",
+      "pregunta": "La lógica de trabajo de la cromatografía frente a una muestra compleja es:",
+      "opciones": [
+        "Separar primero y medir después, con el detector que convenga",
+        "Medir directamente sin separar",
+        "Medir primero y separar después"
+      ],
+      "correcta": 0,
+      "explicacion": "La cromatografía no mide: separa.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "Se separa primero y se mide después, con el detector que convenga."
+    },
+    {
+      "id": "t30-q28",
+      "pregunta": "El documento oficial español del que salen la definición de resolución y la calibración de los cromatógrafos de líquidos es:",
+      "opciones": [
+        "La UNE-EN ISO 10304-1",
+        "El procedimiento QU-004 del CEM",
+        "El RD 3/2023"
+      ],
+      "correcta": 1,
+      "explicacion": "No es norma de obligado cumplimiento.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Fundamento, partes del equipo, resolución y calibración | CEM, procedimiento QU-004 | Documento oficial español, no norma de obligado cumplimiento |"
+    },
+    {
+      "id": "t30-q29",
+      "pregunta": "Según el CEM, la única función de la fase móvil es:",
+      "opciones": [
+        "Retener el analito",
+        "Detectar el analito",
+        "Transportar el analito a través de la columna"
+      ],
+      "correcta": 2,
+      "explicacion": "La retención es cosa de la fase estacionaria.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "cuya única función es transportar el analito a través de la columna"
+    },
+    {
+      "id": "t30-q30",
+      "pregunta": "La separación cromatográfica se produce por:",
+      "opciones": [
+        "Un reparto de equilibrio entre dos fases, repetido miles de veces",
+        "Una reacción química entre el analito y la fase móvil",
+        "La absorción de radiación por el analito"
+      ],
+      "correcta": 0,
+      "explicacion": "No interviene ninguna reacción.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "la separación no la produce ninguna reacción, sino un reparto de equilibrio repetido miles de veces"
+    },
+    {
+      "id": "t30-q31",
+      "pregunta": "Según el CEM, los componentes retenidos con fuerza por la fase estacionaria:",
+      "opciones": [
+        "Se mueven con rapidez",
+        "Se mueven lentamente a través de la columna",
+        "Avanzan a la misma velocidad que la fase móvil"
+      ],
+      "correcta": 1,
+      "explicacion": "Los poco retenidos se mueven con rapidez.",
+      "fuente": "CEM, QU-004, 4.2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Aquellos componentes que son retenidos con fuerza por la fase estacionaria se mueven lentamente a través de la columna"
+    },
+    {
+      "id": "t30-q32",
+      "pregunta": "Entre las ventajas de la cromatografía, el CEM cita:",
+      "opciones": [
+        "Que no necesita calibración",
+        "Que no necesita fase móvil",
+        "Su idoneidad para separar especies no volátiles o termolábiles"
+      ],
+      "correcta": 2,
+      "explicacion": "También su sensibilidad y su aplicabilidad.",
+      "fuente": "CEM, QU-004 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "su idoneidad para la separación de especies no volátiles o termolábiles"
+    },
+    {
+      "id": "t30-q33",
+      "pregunta": "La diferencia t_R − t_M es:",
+      "opciones": [
+        "El tiempo de retención ajustado",
+        "El factor de retención",
+        "La resolución"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el tiempo que el soluto pasa retenido.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Tiempo de retención ajustado, t_R′ | t_R − t_M: lo que el soluto ha pasado de más, o sea, retenido |"
+    },
+    {
+      "id": "t30-q34",
+      "pregunta": "La anchura de base de un pico se mide:",
+      "opciones": [
+        "A la mitad de la altura del pico",
+        "Prolongando las tangentes de los puntos de inflexión hasta la línea base",
+        "Al 10 % de la altura del pico"
+      ],
+      "correcta": 1,
+      "explicacion": "El 10 % de la altura es para la asimetría.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Se mide prolongando las tangentes de los puntos de inflexión de cada lado del pico hasta la línea base"
+    },
+    {
+      "id": "t30-q35",
+      "pregunta": "El factor de retención (nombre IUPAC) se llamaba antes:",
+      "opciones": [
+        "Factor de selectividad",
+        "Factor de asimetría",
+        "Factor de capacidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Y a veces se escribe k′.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "antes llamado factor de capacidad y a veces escrito k′"
+    },
+    {
+      "id": "t30-q36",
+      "pregunta": "La contribución de la transferencia de masa al ensanchamiento de banda es, respecto de la velocidad de la fase móvil:",
+      "opciones": [
+        "Directamente proporcional",
+        "Inversamente proporcional",
+        "Independiente"
+      ],
+      "correcta": 0,
+      "explicacion": "La difusión longitudinal es la inversamente proporcional.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Transferencia de masa en la fase estacionaria | El soluto tarda en volver a la fase móvil | Directamente proporcional a u |"
+    },
+    {
+      "id": "t30-q37",
+      "pregunta": "La contribución de los caminos múltiples (difusión de remolino):",
+      "opciones": [
+        "Es inversamente proporcional a la velocidad",
+        "No depende de la velocidad de la fase móvil",
+        "Crece con el cuadrado de la velocidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Se debe a trayectorias de distinta longitud en el relleno.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Caminos múltiples (difusión de remolino) | Las moléculas recorren trayectorias de distinta longitud entre las partículas del relleno | No depende de u |"
+    },
+    {
+      "id": "t30-q38",
+      "pregunta": "Al usar columnas capilares (tubulares abiertas), el término A de van Deemter:",
+      "opciones": [
+        "Se duplica",
+        "No cambia",
+        "Desaparece, porque no hay relleno"
+      ],
+      "correcta": 2,
+      "explicacion": "Los platos se multiplican por unas 100 veces, a cambio de admitir menos muestra.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "sin relleno, el término A desaparece y el de transferencia de masa en fase móvil se hace menor"
+    },
+    {
+      "id": "t30-q39",
+      "pregunta": "El factor de asimetría de un pico se mide trazando una horizontal a:",
+      "opciones": [
+        "El 10 % de la altura del pico",
+        "La línea base",
+        "El máximo del pico"
+      ],
+      "correcta": 0,
+      "explicacion": "El CEM exige picos sin colas ni artefactos.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La asimetría del pico se mide trazando una horizontal al 10 % de la altura y comparando las dos mitades"
+    },
+    {
+      "id": "t30-q40",
+      "pregunta": "Cuando el factor de selectividad α está cerca de 1, lo más eficaz para mejorar la resolución es:",
+      "opciones": [
+        "Alargar la columna",
+        "Cambiar la fase estacionaria o la composición de la fase móvil",
+        "Aumentar el volumen inyectado"
+      ],
+      "correcta": 1,
+      "explicacion": "Alargar la columna mejora solo con √N.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Selectividad (α) | Cambiar la fase estacionaria o la composición de la fase móvil | Es lo más eficaz cuando α está cerca de 1 |"
+    },
+    {
+      "id": "t30-q41",
+      "pregunta": "Aumentar el factor de retención mejora la resolución, pero casi deja de compensar a partir de:",
+      "opciones": [
+        "k ≈ 1",
+        "k ≈ 0,1",
+        "k ≈ 10"
+      ],
+      "correcta": 2,
+      "explicacion": "Y alarga el análisis.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "por encima de k ≈ 10 casi no compensa, y alarga el análisis"
+    },
+    {
+      "id": "t30-q42",
+      "pregunta": "La cromatografía basada en interacciones antígeno-anticuerpo, enzima-sustrato o receptor-ligando es la de:",
+      "opciones": [
+        "Afinidad",
+        "Exclusión por tamaño",
+        "Reparto"
+      ],
+      "correcta": 0,
+      "explicacion": "La fase estacionaria es el ligando inmovilizado.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.1 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Afinidad | En una interacción biológica específica: antígeno-anticuerpo, enzima-sustrato, receptor-ligando | El ligando inmovilizado |"
+    },
+    {
+      "id": "t30-q43",
+      "pregunta": "En la cromatografía de reparto, la fase estacionaria es:",
+      "opciones": [
+        "Un gel poroso",
+        "Una película líquida sobre un soporte sólido",
+        "Una resina con grupos sulfónicos"
+      ],
+      "correcta": 1,
+      "explicacion": "El gel es de exclusión; la resina, de intercambio iónico.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.1 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Reparto | En el reparto de equilibrio entre dos líquidos | Película líquida sobre un soporte sólido |"
+    },
+    {
+      "id": "t30-q44",
+      "pregunta": "En la cromatografía en papel, la fase estacionaria es:",
+      "opciones": [
+        "El disolvente que asciende",
+        "Una placa de vidrio",
+        "El propio papel"
+      ],
+      "correcta": 2,
+      "explicacion": "La fase móvil sube por capilaridad.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.1 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Son la cromatografía en capa fina y la cromatografía en papel, donde el papel es la fase estacionaria."
+    },
+    {
+      "id": "t30-q45",
+      "pregunta": "Además de un gas o un líquido, la fase móvil puede ser:",
+      "opciones": [
+        "Un fluido supercrítico",
+        "Un sólido pulverizado",
+        "Un plasma de argón"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la cromatografía de fluidos supercríticos.",
+      "fuente": "LibreTexts, Análisis Instrumental, §26.1 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Fluido supercrítico | Cromatografía de fluidos supercríticos |"
+    },
+    {
+      "id": "t30-q46",
+      "pregunta": "En un cromatógrafo, la cuantificación por el área o la altura del pico la hace:",
+      "opciones": [
+        "La columna",
+        "El integrador o el software",
+        "El detector"
+      ],
+      "correcta": 1,
+      "explicacion": "La columna separa; el detector detecta.",
+      "fuente": "CEM, QU-004, 5.3.2 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Integrador o software | Cuantifica: mide el área o la altura del pico |"
+    },
+    {
+      "id": "t30-q47",
+      "pregunta": "Una resina catiónica de ácido débil (−COO⁻) pierde capacidad:",
+      "opciones": [
+        "Por encima de pH 10",
+        "A cualquier pH",
+        "Por debajo de pH 4, al protonarse"
+      ],
+      "correcta": 2,
+      "explicacion": "La de ácido fuerte mantiene la carga incluso en medio muy ácido.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Catiónica de ácido débil | Ácido carboxílico, −COO⁻ | −CH₂COO⁻ | Por debajo de pH 4 se protona y pierde capacidad |"
+    },
+    {
+      "id": "t30-q48",
+      "pregunta": "En una resina catiónica, subir la concentración de H⁺ del eluyente:",
+      "opciones": [
+        "Acelera la elución de los cationes",
+        "Retrasa la elución de los cationes",
+        "No influye en la retención"
+      ],
+      "correcta": 0,
+      "explicacion": "El H⁺ compite mejor por los sitios de intercambio.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Subir la concentración de H⁺ acelera la elución de los cationes, porque el H⁺ compite mejor por los sitios."
+    },
+    {
+      "id": "t30-q49",
+      "pregunta": "En el cromatograma de aniones de un agua:",
+      "opciones": [
+        "El sulfato sale el primero y el fluoruro el último",
+        "El fluoruro sale el primero y el sulfato el último",
+        "Cloruro y sulfato salen a la vez"
+      ],
+      "correcta": 1,
+      "explicacion": "Más carga y menor radio hidratado, más retención.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "el fluoruro sale el primero y el sulfato el último."
+    },
+    {
+      "id": "t30-q50",
+      "pregunta": "La elución en gradiente consiste en:",
+      "opciones": [
+        "Mantener constante la composición del eluyente",
+        "Variar la temperatura del detector",
+        "Variar con el tiempo la fuerza iónica o el pH del eluyente"
+      ],
+      "correcta": 2,
+      "explicacion": "La de composición constante es la isocrática.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Cabe elución isocrática —composición constante— o en gradiente, variando la fuerza iónica o el pH con el tiempo."
+    },
+    {
+      "id": "t30-q51",
+      "pregunta": "En un inyector de bucle, el volumen inyectado:",
+      "opciones": [
+        "Lo fija el bucle, y por eso es reproducible",
+        "Depende del pulso de la mano",
+        "Lo fija la bomba"
+      ],
+      "correcta": 0,
+      "explicacion": "Bucles de 0,5 µL a 5 mL.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.3 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "el volumen inyectado lo fija el bucle, no el pulso de la mano: por eso es reproducible."
+    },
+    {
+      "id": "t30-q52",
+      "pregunta": "La precolumna, frente a la columna analítica:",
+      "opciones": [
+        "Lleva un relleno distinto y es permanente",
+        "Lleva el mismo relleno, es mucho más corta y barata, y se cambia con regularidad",
+        "Es más larga, para aumentar los platos teóricos"
+      ],
+      "correcta": 1,
+      "explicacion": "Es sacrificial.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.3 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "lleva el mismo relleno y la misma fase estacionaria que la columna analítica, pero es mucho más corta y más barata"
+    },
+    {
+      "id": "t30-q53",
+      "pregunta": "Al separar cationes con HCl como eluyente, el supresor convierte el eluyente en:",
+      "opciones": [
+        "H₂CO₃",
+        "NaCl",
+        "Agua"
+      ],
+      "correcta": 2,
+      "explicacion": "Con resina de intercambio aniónico en forma OH⁻.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Cationes | Un ácido diluido (p. ej. HCl) | Resina de intercambio aniónico en forma OH⁻ | H₂O |"
+    },
+    {
+      "id": "t30-q54",
+      "pregunta": "En la cromatografía iónica de columna única, el eluyente típico para cationes es:",
+      "opciones": [
+        "Ácido metanosulfónico muy diluido",
+        "Carbonato de sodio concentrado",
+        "Hidróxido de sodio concentrado"
+      ],
+      "correcta": 0,
+      "explicacion": "Para aniones, benzoato o hidrogenoftalato de potasio.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "ácido metanosulfónico para cationes; benzoato o hidrogenoftalato de potasio para aniones"
+    },
+    {
+      "id": "t30-q55",
+      "pregunta": "Para compuestos con capacidad de oxidarse o reducirse, el detector adecuado es:",
+      "opciones": [
+        "El de conductividad",
+        "El amperométrico",
+        "El de fluorescencia"
+      ],
+      "correcta": 1,
+      "explicacion": "El de conductividad es el de los iónicos.",
+      "fuente": "1246 #18 y 1322 #35 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "«compuestos con capacidad de oxidarse o reducirse» es el amperométrico"
+    },
+    {
+      "id": "t30-q56",
+      "pregunta": "En la detección UV indirecta, cuando es el eluyente el que absorbe, el paso del analito produce:",
+      "opciones": [
+        "Un aumento de conductividad",
+        "Una emisión de fluorescencia",
+        "Una disminución de absorbancia"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una alternativa al detector de conductividad.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.6 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "si es el eluyente el que absorbe, el paso del analito produce una disminución de absorbancia."
+    },
+    {
+      "id": "t30-q57",
+      "pregunta": "El flujo pulsante de una bomba de pistón se corrige con:",
+      "opciones": [
+        "Dos pistones desfasados o un amortiguador de pulsos",
+        "Un supresor",
+        "Una precolumna"
+      ],
+      "correcta": 0,
+      "explicacion": "El pulso mete ruido en el cromatograma.",
+      "fuente": "LibreTexts, Análisis Instrumental, §28.3 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "se corrige con dos pistones desfasados o con un amortiguador de pulsos."
+    },
+    {
+      "id": "t30-q58",
+      "pregunta": "Según el CEM, la calibración de un cromatógrafo se hace en el laboratorio a una temperatura de:",
+      "opciones": [
+        "Exactamente 20 °C",
+        "Entre 18 °C y 28 °C",
+        "Entre 30 °C y 40 °C"
+      ],
+      "correcta": 1,
+      "explicacion": "Salvo lo que diga el manual del equipo.",
+      "fuente": "CEM, QU-004, 5.2 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "entre 18 °C y 28 °C, sin condiciones ambientales especiales"
+    },
+    {
+      "id": "t30-q59",
+      "pregunta": "Para calibrar un cromatógrafo, el CEM pide una balanza analítica con resolución de:",
+      "opciones": [
+        "1 mg",
+        "10 mg",
+        "0,1 mg"
+      ],
+      "correcta": 2,
+      "explicacion": "Y material volumétrico de clase A.",
+      "fuente": "CEM, QU-004, 5.1 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "balanza analítica con resolución de 0,1 mg"
+    },
+    {
+      "id": "t30-q60",
+      "pregunta": "Los dos materiales de referencia de la calibración deben cubrir el rango esperado, con una relación entre sus concentraciones no mayor de:",
+      "opciones": [
+        "10",
+        "2",
+        "100"
+      ],
+      "correcta": 0,
+      "explicacion": "Calibración por interpolación entre dos puntos.",
+      "fuente": "CEM, QU-004, 5.1 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "con una separación tal que la relación entre las dos no sea mayor de 10."
+    },
+    {
+      "id": "t30-q61",
+      "pregunta": "Antes de analizar los patrones, el CEM manda acondicionar el equipo analizando:",
+      "opciones": [
+        "El patrón más concentrado",
+        "Un blanco del disolvente",
+        "Una muestra real"
+      ],
+      "correcta": 1,
+      "explicacion": "Y comprobar que no da señal.",
+      "fuente": "CEM, QU-004, 5.3 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Acondicionar el equipo analizando un blanco del disolvente."
+    },
+    {
+      "id": "t30-q62",
+      "pregunta": "El límite inferior de aplicación de la UNE-EN ISO 10304-1 para bromuro y nitrito es:",
+      "opciones": [
+        "0,5 mg/L",
+        "5 mg/L",
+        "0,05 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "Para el resto de aniones, 0,1 mg/L.",
+      "fuente": "ISO 10304-1 (resumen público) · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "el límite inferior de aplicación es ≥ 0,05 mg/L para bromuro y nitrito"
+    },
+    {
+      "id": "t30-q63",
+      "pregunta": "Tras la potabilización, nitrato y nitrito deben cumplir:",
+      "opciones": [
+        "[nitrato]/50 + [nitrito]/3 ≤ 1",
+        "[nitrato]/50 + [nitrito]/0,5 ≤ 1",
+        "[nitrato] + [nitrito] ≤ 50"
+      ],
+      "correcta": 0,
+      "explicacion": "Con las concentraciones en mg/L.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Tras la potabilización hay que cumplir [nitrato]/50 + [nitrito]/3 ≤ 1, con las concentraciones en mg/L."
+    },
+    {
+      "id": "t30-q64",
+      "pregunta": "Si se desinfecta con dióxido de cloro o hipoclorito, el valor paramétrico aplicable al clorato y al clorito es:",
+      "opciones": [
+        "0,25 mg/L",
+        "0,7 mg/L",
+        "10 µg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "En otro caso, 0,25 mg/L.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Clorato y clorito valen 0,25 mg/L, pero se aplica 0,7 mg/L"
+    },
+    {
+      "id": "t30-q65",
+      "pregunta": "La incertidumbre máxima que exige el RD 3/2023 para el nitrato es:",
+      "opciones": [
+        "40 %",
+        "50 %",
+        "15 %"
+      ],
+      "correcta": 2,
+      "explicacion": "40 % es la de bromato, clorato, clorito y amonio.",
+      "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| Nitrato | B | 50 mg/L | 15 % |"
+    },
+    {
+      "id": "t30-q66",
+      "pregunta": "En aguas superficiales, el RD 817/2015 exige a los métodos una incertidumbre, al nivel de la norma de calidad ambiental, de:",
+      "opciones": [
+        "≤ 50 % (k = 2)",
+        "≤ 15 % (k = 2)",
+        "≤ 30 % (k = 1)"
+      ],
+      "correcta": 0,
+      "explicacion": "Y un LC ≤ 30 % de la NCA.",
+      "fuente": "RD 817/2015, anexo III, C.1 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "incertidumbre ≤ 50 % (k = 2) al nivel de la norma de calidad ambiental"
+    },
+    {
+      "id": "t30-q67",
+      "pregunta": "Para determinar cloruros y sulfatos en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía iónica para cationes",
+        "Cromatografía iónica para aniones",
+        "Espectrometría de masas con plasma acoplado inductivamente"
+      ],
+      "correcta": 1,
+      "explicacion": "Norma UNE-EN ISO 10304-1.",
+      "fuente": "1322 · segundo ejercicio #27 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Cloruros y sulfatos"
+      },
+      "apartado": "3",
+      "evidencia": "| Cloruro, sulfato, nitrato, nitrito, fluoruro, bromuro y fosfato | Cromatografía iónica de ANIONES, con supresión y detector de conductividad | UNE-EN ISO 10304-1:2009 | mg/L |"
+    },
+    {
+      "id": "t30-q68",
+      "pregunta": "Para determinar sodio, potasio, calcio y magnesio en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía iónica para aniones",
+        "Cromatografía de gases",
+        "Cromatografía iónica para cationes"
+      ],
+      "correcta": 2,
+      "explicacion": "Norma UNE-EN ISO 14911.",
+      "fuente": "1322 · segundo ejercicio #30 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Sodio, Potasio, Calcio y Magnesio"
+      },
+      "apartado": "3",
+      "evidencia": "| Sodio, potasio, calcio, magnesio, amonio, litio, manganeso, estroncio y bario | Cromatografía iónica de CATIONES | UNE-EN ISO 14911:2000 | mg/L |"
+    },
+    {
+      "id": "t30-q69",
+      "pregunta": "Si solo hace falta determinar un anión de rutina, la cromatografía iónica:",
+      "opciones": [
+        "No compensa: basta una volumetría, un electrodo selectivo o la espectrofotometría",
+        "Es la única técnica admitida",
+        "No puede determinar un solo anión"
+      ],
+      "correcta": 0,
+      "explicacion": "Su ventaja es una inyección, siete parámetros.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "Si solo hace falta un parámetro, la cromatografía no compensa"
     }
   ],
   "supuestos": [
@@ -783,6 +1635,170 @@
           "correcta": 3,
           "explicacion": "El apartado 5.3.6 del QU-004 obliga a confirmar cuatro cosas: picos en los tiempos de retención esperados, resolución de la columna siempre superior a 1,5, forma de pico adecuada sin colas ni artefactos, y ventana de integración correcta. Con Rs = 1,2 y un pico con cola hay que actuar sobre las condiciones cromatográficas antes de calibrar.",
           "fuente": "CEM, QU-004, apartado 5.3.6"
+        }
+      ]
+    },
+    {
+      "id": "t30-s03",
+      "titulo": "Supuesto 3. Clorato y clorito en un agua desinfectada con dióxido de cloro",
+      "enunciado": "Una ETAP desinfecta con dióxido de cloro. El laboratorio debe controlar clorato y clorito en el agua tratada mediante cromatografía iónica de aniones.",
+      "preguntas": [
+        {
+          "id": "t30-s03-q1",
+          "pregunta": "¿Qué norma aplica?",
+          "opciones": [
+            "UNE-EN ISO 10304-1:2009",
+            "UNE-EN ISO 10304-4:2022",
+            "UNE-EN ISO 15061:2002",
+            "UNE-EN ISO 14911:2000"
+          ],
+          "correcta": 1,
+          "explicacion": "Clorato, cloruro y clorito, en aguas débilmente contaminadas.",
+          "fuente": "UNE-EN ISO 10304-4:2022 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "| UNE-EN ISO 10304-4:2022 | Clorato, cloruro y clorito | Aguas débilmente contaminadas: consumo, bruta, de piscina |"
+        },
+        {
+          "id": "t30-s03-q2",
+          "pregunta": "¿Qué valor paramétrico aplica al clorato en esta agua?",
+          "opciones": [
+            "0,25 mg/L",
+            "10 µg/L",
+            "0,7 mg/L",
+            "0,50 mg/L"
+          ],
+          "correcta": 2,
+          "explicacion": "Porque se desinfecta con dióxido de cloro.",
+          "fuente": "RD 3/2023, anexo I, parte B · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "Clorato y clorito valen 0,25 mg/L, pero se aplica 0,7 mg/L"
+        },
+        {
+          "id": "t30-s03-q3",
+          "pregunta": "La media anual de clorato sale en 0,4 mg/L. ¿Qué debe hacer el operador?",
+          "opciones": [
+            "Usar las mejores técnicas disponibles para bajarlo sin comprometer la desinfección",
+            "Suspender la desinfección",
+            "Nada, mientras no supere 0,7 mg/L",
+            "Declarar el agua no apta"
+          ],
+          "correcta": 0,
+          "explicacion": "Supera 0,25 mg/L de media anual.",
+          "fuente": "RD 3/2023, anexo I, parte B · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "Si se pasa de 0,25 mg/L de media anual, el operador debe usar las mejores técnicas disponibles para bajarlo sin comprometer la desinfección."
+        },
+        {
+          "id": "t30-s03-q4",
+          "pregunta": "En otra agua sin dióxido de cloro ni hipoclorito, el valor del clorito es 0,25 mg/L. ¿Qué límite de cuantificación máximo exige el RD 3/2023?",
+          "opciones": [
+            "0,25 mg/L",
+            "0,025 mg/L",
+            "0,7 mg/L",
+            "0,075 mg/L"
+          ],
+          "correcta": 3,
+          "explicacion": "30 % de 0,25 = 0,075 mg/L.",
+          "fuente": "RD 3/2023, anexo III, parte D · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "Solo exige límite de cuantificación ≤ 30 % del valor paramétrico"
+        },
+        {
+          "id": "t30-s03-q5",
+          "pregunta": "¿Qué incertidumbre máxima admite el RD 3/2023 para el clorato?",
+          "opciones": [
+            "15 %",
+            "40 %",
+            "20 %",
+            "50 %"
+          ],
+          "correcta": 1,
+          "explicacion": "La misma que el bromato y el clorito.",
+          "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": "| Clorato | B | 0,25 mg/L | 40 % |"
+        }
+      ]
+    },
+    {
+      "id": "t30-s04",
+      "titulo": "Supuesto 4. Lectura de un cromatograma de calibración",
+      "enunciado": "En un cromatograma, el pico no retenido sale a 1,0 min. El analito A sale a 4,0 min y el B a 5,0 min; las dos anchuras de base son de 0,8 min.",
+      "preguntas": [
+        {
+          "id": "t30-s04-q1",
+          "pregunta": "¿Cuál es el factor de retención de A?",
+          "opciones": [
+            "4,0",
+            "0,25",
+            "3,0",
+            "5,0"
+          ],
+          "correcta": 2,
+          "explicacion": "k = (4,0 − 1,0) / 1,0 = 3,0.",
+          "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "k = (t_R − t_M) / t_M = t_R′ / t_M"
+        },
+        {
+          "id": "t30-s04-q2",
+          "pregunta": "¿Cuál es el factor de selectividad entre A y B?",
+          "opciones": [
+            "1,33",
+            "1,25",
+            "0,75",
+            "1,00"
+          ],
+          "correcta": 0,
+          "explicacion": "α = (5,0 − 1,0) / (4,0 − 1,0) = 4/3.",
+          "fuente": "LibreTexts, Análisis Instrumental, §26.2 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "α = k_B / k_A = (t_R,B − t_M) / (t_R,A − t_M), con A el que sale antes."
+        },
+        {
+          "id": "t30-s04-q3",
+          "pregunta": "¿Cuál es la resolución y hay separación completa?",
+          "opciones": [
+            "1,25: sí, porque supera 1",
+            "1,25: no, porque no supera 1,5",
+            "2,5: sí, porque supera 1,5",
+            "0,63: no"
+          ],
+          "correcta": 1,
+          "explicacion": "Rs = 2 × (5,0 − 4,0) / (0,8 + 0,8) = 1,25.",
+          "fuente": "CEM, QU-004 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "Rs = 2 · [(t_R)_B − (t_R)_A] / (w_A + w_B)"
+        },
+        {
+          "id": "t30-s04-q4",
+          "pregunta": "Si quisiera doblar la resolución solo con eficiencia, ¿cuántos platos teóricos necesitaría?",
+          "opciones": [
+            "El doble",
+            "La mitad",
+            "Cuatro veces más",
+            "Ocho veces más"
+          ],
+          "correcta": 2,
+          "explicacion": "La resolución crece con √N.",
+          "fuente": "LibreTexts, Análisis Instrumental, §26.4 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "La resolución crece con √N: para doblarla hay que cuadruplicar los platos"
+        },
+        {
+          "id": "t30-s04-q5",
+          "pregunta": "¿Cómo calibra el CEM el cromatógrafo con los patrones?",
+          "opciones": [
+            "Con un único patrón",
+            "Por adición estándar en cada muestra",
+            "Con diez patrones equiespaciados",
+            "Por interpolación entre dos puntos, con materiales de referencia certificados"
+          ],
+          "correcta": 3,
+          "explicacion": "Con una relación de concentraciones no mayor de 10.",
+          "fuente": "CEM, QU-004, 5.3 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "El CEM calibra el cromatógrafo por interpolación entre dos puntos"
         }
       ]
     }
