@@ -333,6 +333,162 @@
       "reverso": "**Aquí: la TÉCNICA y la INSTRUMENTACIÓN** —geometrías, unidades, patrón, normas ISO— **y lo que la ley le exige al método** (incertidumbre, frecuencia, medida en línea), porque eso es instrumentación y no valor.\n**En otros temas:**\n- El **valor paramétrico** de la turbidez del agua de consumo y sus valores de referencia a la salida de ETAP → **tema 33**.\n- La turbidez de **aguas residuales y reutilizadas** → **tema 35**.\n- La turbidez como medida de **crecimiento bacteriano** → temas **9 a 19**.\n- **Sólidos en suspensión** → **tema 34**.",
       "fuente": "Tema 28, «Reparto con los temas vecinos»",
       "etiquetas": ["concepto", "comparativa"]
+    },
+    {
+      "id": "t28-f43",
+      "anverso": "¿Qué documentos son la referencia del índice de refracción y del poder rotatorio, y dónde hay métodos oficiales que los usen?",
+      "reverso": "Índice de refracción: **Farmacopea Europea 2.2.6**. Poder rotatorio: **2.2.7**. Métodos oficiales: **almidón en piensos por polarimetría** (Reglamento 152/2009, anexo III, L) y **humedad de la miel** por refractometría (Orden de 12/06/1986).",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": [
+        "| Índice de refracción, método general | Farmacopea Europea 2.2.6 | Método oficial de referencia |",
+        "| Poder rotatorio óptico, método general | Farmacopea Europea 2.2.7 | Método oficial de referencia |"
+      ]
+    },
+    {
+      "id": "t28-f44",
+      "anverso": "¿Mide la turbidez la cantidad de partículas?",
+      "reverso": "**No**: mide el **efecto óptico** que producen. Es una **propiedad óptica**, no una concentración.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+      "etiquetas": [
+        "turbidez"
+      ],
+      "apartado": "2.1",
+      "evidencia": "No mide las partículas: mide el efecto óptico que producen, y por eso es una propiedad óptica y no una concentración."
+    },
+    {
+      "id": "t28-f45",
+      "anverso": "¿Qué instrumentos de laboratorio permiten hacer turbidimetría y nefelometría?",
+      "reverso": "**Turbidimetría**: un **espectrofotómetro UV-visible** (mide atenuación, como la absorbancia). **Nefelometría**: un **espectrofluorímetro** (detector a 90°, como la fluorescencia).",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "etiquetas": [
+        "turbidez"
+      ],
+      "apartado": "2.1",
+      "evidencia": "se puede hacer turbidimetría con un espectrofotómetro UV-visible y nefelometría con un espectrofluorímetro"
+    },
+    {
+      "id": "t28-f46",
+      "anverso": "Unidades de turbidez de relación y de retrodispersión.",
+      "reverso": "**FNRU / NTRU**: unidades **de relación**, a 90° y otros ángulos a la vez. **FBU / BU**: de **retrodispersión**, a **30° ± 15°**. Las dos, del USGS.",
+      "fuente": "USGS · apunte §2.1",
+      "etiquetas": [
+        "unidades"
+      ],
+      "apartado": "2.1",
+      "evidencia": "| FBU / BU | Unidades de retrodispersión | 30° ± 15° | Según el equipo | USGS |"
+    },
+    {
+      "id": "t28-f47",
+      "anverso": "¿Qué alternativas hay a la formacina como patrón de turbidez?",
+      "reverso": "**Formacinas estabilizadas**, de vida más larga, y patrones de **copolímero de estireno-divinilbenceno (AMCO-AEPA)**, de **tamaño más uniforme** y que **sedimentan menos**.",
+      "fuente": "Fabricantes de patrones · apunte §2.1",
+      "etiquetas": [
+        "patrones"
+      ],
+      "apartado": "2.1",
+      "evidencia": "patrones de copolímero de estireno-divinilbenceno (AMCO-AEPA), de tamaño más uniforme y que sedimentan menos."
+    },
+    {
+      "id": "t28-f48",
+      "anverso": "Turbidez: ¿cómo puede medirse en red y grifo, y qué notifican los laboratorios en SINAC?",
+      "reverso": "En **red, grifo y buques** se controla **siempre**, «**con kit o en laboratorio o en línea**». Los laboratorios notifican en **SINAC** sus **acreditaciones**, la **incertidumbre**, el **LC** y el **LD** de cada método.",
+      "fuente": "RD 3/2023, anexos III y IV · apunte §2.1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "la turbidez se controla siempre, y el propio reglamento admite que se mida «con kit o en laboratorio o en línea».",
+        "Los laboratorios notifican en SINAC sus acreditaciones, la incertidumbre, el límite de cuantificación y el límite de detección de cada método."
+      ]
+    },
+    {
+      "id": "t28-f49",
+      "anverso": "¿Qué precisión y qué calibración exige la Farmacopea a un refractómetro?",
+      "reverso": "Lecturas exactas **al menos hasta la tercera cifra decimal**, y **calibración con materiales de referencia certificados**. Termómetro graduado en **0,5 °C o menos**.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2 y Dudas",
+      "etiquetas": [
+        "refraccion"
+      ],
+      "apartado": "2.2",
+      "evidencia": "el aparato da lecturas exactas al menos hasta la tercera cifra decimal, y se calibra con materiales de referencia certificados."
+    },
+    {
+      "id": "t28-f50",
+      "anverso": "¿Qué modificó el anexo XVI de la Orden ICT/155/2020 (refractómetros de mosto) y desde cuándo?",
+      "reverso": "La **Orden ITU/1475/2024**, en vigor desde el **16 de enero de 2025**.",
+      "fuente": "Orden ICT/155/2020 · apunte §2.2",
+      "etiquetas": [
+        "refraccion",
+        "metrologia"
+      ],
+      "apartado": "2.2",
+      "evidencia": "modificado por la Orden ITU/1475/2024, en vigor desde el 16 de enero de 2025"
+    },
+    {
+      "id": "t28-f51",
+      "anverso": "¿Qué hace el polarizador con la luz natural?",
+      "reverso": "La luz natural vibra en **todos los planos** perpendiculares a su dirección; el polarizador **deja pasar uno solo**: sale **luz polarizada en un plano**.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "etiquetas": [
+        "polarimetria"
+      ],
+      "apartado": "2.3",
+      "evidencia": "La luz natural vibra en todos los planos perpendiculares a su dirección. El polarizador deja pasar uno solo: sale luz polarizada en un plano."
+    },
+    {
+      "id": "t28-f52",
+      "anverso": "Polarímetro: ¿cómo se determina el cero y cómo se comprueba la escala?",
+      "reverso": "**Cero** con el tubo **cerrado**: **vacío** para líquidos; **lleno del disolvente** prescrito para sólidos. **Escala** con **placas de cuarzo certificadas**; **linealidad** con **disoluciones de sacarosa**.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "etiquetas": [
+        "polarimetria"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "El cero se determina con el tubo cerrado: para líquidos, con el tubo vacío; para sólidos, lleno del disolvente prescrito.",
+        "La escala se comprueba con placas de cuarzo certificadas, y su linealidad, con disoluciones de sacarosa."
+      ]
+    },
+    {
+      "id": "t28-f53",
+      "anverso": "¿Qué dato acompaña siempre a una rotación específica en disolución?",
+      "reverso": "**Su disolvente y su concentración**: sin ellos el dato no está completo. Las unidades se sobreentienden: (°)·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "etiquetas": [
+        "polarimetria"
+      ],
+      "apartado": "2.3",
+      "evidencia": "La rotación específica de una sustancia en disolución se expresa SIEMPRE con su disolvente y su concentración"
+    },
+    {
+      "id": "t28-f54",
+      "anverso": "Método de Ewers: ¿cómo se clarifica y qué se hace con muchos carbonatos?",
+      "reverso": "Clarificación con **Carrez I** (acetato de cinc) y **Carrez II** (ferrocianuro de potasio). Con más de un **6 % de carbonatos**, se destruyen con **sulfúrico diluido** antes de medir.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, L · apunte §2.3",
+      "etiquetas": [
+        "polarimetria"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "La clarificación se hace con las soluciones de Carrez I (acetato de cinc) y Carrez II (ferrocianuro de potasio).",
+        "Con más de un 6 % de carbonatos hay que destruirlos con sulfúrico diluido antes de medir"
+      ]
+    },
+    {
+      "id": "t28-f55",
+      "anverso": "¿En qué unidad se expresa la transparencia del disco de Secchi?",
+      "reverso": "En **alcance visual (m)**: es un método **semicuantitativo**, sin instrumento óptico.",
+      "fuente": "UNE-EN ISO 7027-2:2020 (catálogo) · apunte §3",
+      "etiquetas": [
+        "turbidez"
+      ],
+      "apartado": "3",
+      "evidencia": "| UNE-EN ISO 7027-2:2020 | Alcance visual (m) |"
     }
   ],
   "test": [
@@ -645,6 +801,538 @@
       "explicacion": "Orden de 12 de junio de 1986, método 9: el principio es la medida del índice de refracción de la miel a 20 °C y el cálculo de la humedad con la tabla de Chataway revisada por Wedmore. Si no se mide a 20 °C exactos, se corrige 0,00023 por cada grado.",
       "fuente": "Orden de 12/06/1986, anexo, método 9; vigente por el RD 1049/2003",
       "nucleo": true
+    },
+    {
+      "id": "t28-q27",
+      "pregunta": "La turbidez, el índice de refracción y la polarimetría tienen en común que ninguna mide:",
+      "opciones": [
+        "La absorción de la luz",
+        "Una propiedad óptica",
+        "La interacción de la luz con la muestra"
+      ],
+      "correcta": 0,
+      "explicacion": "Las tres son ópticas: dispersión, refracción y rotación.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "las tres son ópticas y ninguna de las tres mide absorción."
+    },
+    {
+      "id": "t28-q28",
+      "pregunta": "Según la regla del tema, la polarimetría:",
+      "opciones": [
+        "Dispersa la luz",
+        "Gira el plano de la luz",
+        "Desvía el rayo"
+      ],
+      "correcta": 1,
+      "explicacion": "Turbidez dispersa, refracción desvía, polarimetría gira.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "La regla de tres palabras: turbidez DISPERSA, refracción DESVÍA, polarimetría GIRA."
+    },
+    {
+      "id": "t28-q29",
+      "pregunta": "El método general de referencia del poder rotatorio óptico está en:",
+      "opciones": [
+        "La UNE-EN ISO 7027-1",
+        "La Orden ICT/155/2020",
+        "La Farmacopea Europea 2.2.7"
+      ],
+      "correcta": 2,
+      "explicacion": "La 2.2.6 es el índice de refracción.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Poder rotatorio óptico, método general | Farmacopea Europea 2.2.7 | Método oficial de referencia |"
+    },
+    {
+      "id": "t28-q30",
+      "pregunta": "La turbidez es:",
+      "opciones": [
+        "Una propiedad óptica: mide el efecto de las partículas, no las partículas",
+        "La concentración de sólidos en suspensión",
+        "La masa de las partículas por litro"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso no se expresa en mg/L.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "No mide las partículas: mide el efecto óptico que producen, y por eso es una propiedad óptica y no una concentración."
+    },
+    {
+      "id": "t28-q31",
+      "pregunta": "El RD 3/2023 liga turbidez y microbiología porque:",
+      "opciones": [
+        "La turbidez es un microorganismo",
+        "Las partículas protegen a los microorganismos del desinfectante",
+        "Los microorganismos producen formacina"
+      ],
+      "correcta": 1,
+      "explicacion": "Con C. perfringens positivo y turbidez alta, se busca Cryptosporidium.",
+      "fuente": "RD 3/2023 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Las partículas protegen a los microorganismos del desinfectante."
+    },
+    {
+      "id": "t28-q32",
+      "pregunta": "En la dispersión elástica en que se basan la turbidimetría y la nefelometría, la partícula:",
+      "opciones": [
+        "Absorbe la radiación y la convierte en calor",
+        "Emite fluorescencia a otra longitud de onda",
+        "Absorbe la radiación y la reemite sin cambio de energía"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso no es absorción.",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "la partícula absorbe la radiación y la reemite sin cambio de energía."
+    },
+    {
+      "id": "t28-q33",
+      "pregunta": "La dispersión de Rayleigh, con partículas de menos del 5 % de la longitud de onda:",
+      "opciones": [
+        "Es proporcional a ν⁴ y simétrica en todas direcciones",
+        "Concentra la intensidad hacia delante",
+        "No depende de la longitud de onda"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso la luz azul se dispersa más que la roja.",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Dispersión de Rayleigh, con partículas muy pequeñas —menos del 5 % de la longitud de onda—: la intensidad es proporcional a ν⁴"
+    },
+    {
+      "id": "t28-q34",
+      "pregunta": "Con partículas grandes, la luz dispersada se concentra:",
+      "opciones": [
+        "A 90°",
+        "Hacia delante",
+        "Hacia atrás"
+      ],
+      "correcta": 1,
+      "explicacion": "Por interferencias constructivas y destructivas.",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Dispersión por partículas grandes: las interferencias constructivas y destructivas concentran la intensidad hacia delante."
+    },
+    {
+      "id": "t28-q35",
+      "pregunta": "La ecuación de la turbidimetría, −log T = k · b · C, se parece a:",
+      "opciones": [
+        "La de la fluorescencia",
+        "La de Nernst",
+        "La de la absorbancia"
+      ],
+      "correcta": 2,
+      "explicacion": "La nefelometría se parece a la fluorescencia.",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Ecuación | I₈ = k · I₀ · C | −log T = k · b · C |"
+    },
+    {
+      "id": "t28-q36",
+      "pregunta": "Una nefelometría puede hacerse con:",
+      "opciones": [
+        "Un espectrofluorímetro",
+        "Un polarímetro",
+        "Un refractómetro de Abbe"
+      ],
+      "correcta": 0,
+      "explicacion": "Y una turbidimetría, con un espectrofotómetro UV-visible.",
+      "fuente": "LibreTexts (Harvey), 10.8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "se puede hacer turbidimetría con un espectrofotómetro UV-visible y nefelometría con un espectrofluorímetro"
+    },
+    {
+      "id": "t28-q37",
+      "pregunta": "El rango típico de la nefelometría según la ISO 7027-1 es:",
+      "opciones": [
+        "De 40 a 4000 FAU",
+        "De menos de 0,05 a 400 unidades nefelométricas",
+        "De 0 a 14"
+      ],
+      "correcta": 1,
+      "explicacion": "40-4000 FAU es la turbidimetría.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Rango típico: < 0,05 a 400 unidades nefelométricas."
+    },
+    {
+      "id": "t28-q38",
+      "pregunta": "El rango típico de la turbidimetría (atenuación) según la ISO 7027-1 es:",
+      "opciones": [
+        "0,05 a 400 UNF",
+        "1 a 10 NTU",
+        "40 a 4000 FAU"
+      ],
+      "correcta": 2,
+      "explicacion": "Para aguas muy turbias.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Resultado en FAU, rango típico 40 a 4 000 FAU."
+    },
+    {
+      "id": "t28-q39",
+      "pregunta": "El disco de Secchi se usa sobre todo para:",
+      "opciones": [
+        "Aguas superficiales y de baño",
+        "Agua de consumo en ETAP",
+        "Aguas residuales industriales"
+      ],
+      "correcta": 0,
+      "explicacion": "Es un método semicuantitativo de transparencia.",
+      "fuente": "UNE-EN ISO 7027-2:2020 (catálogo) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Disco de transparencia —el disco de Secchi—, sobre todo para aguas superficiales y de baño."
+    },
+    {
+      "id": "t28-q40",
+      "pregunta": "La NTU se mide a 90° con:",
+      "opciones": [
+        "Infrarrojo de 860 nm (ISO 7027)",
+        "Luz blanca de 400-680 nm (EPA 180.1)",
+        "Luz polarizada de sodio"
+      ],
+      "correcta": 1,
+      "explicacion": "La UNF usa infrarrojo de 860 nm.",
+      "fuente": "USGS; EPA 180.1 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| NTU | Nephelometric Turbidity Unit | 90° | Luz blanca, 400-680 nm | EPA 180.1 |"
+    },
+    {
+      "id": "t28-q41",
+      "pregunta": "Las unidades FBU de turbidez se miden por:",
+      "opciones": [
+        "Atenuación, a 180°",
+        "Dispersión a 90° con luz blanca",
+        "Retrodispersión, a 30° ± 15°"
+      ],
+      "correcta": 2,
+      "explicacion": "Son del USGS.",
+      "fuente": "USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| FBU / BU | Unidades de retrodispersión | 30° ± 15° | Según el equipo | USGS |"
+    },
+    {
+      "id": "t28-q42",
+      "pregunta": "Entre la UNF y la FNU:",
+      "opciones": [
+        "Son la misma unidad, en castellano y en inglés",
+        "La FNU es diez veces la UNF",
+        "La FNU se mide con luz blanca"
+      ],
+      "correcta": 0,
+      "explicacion": "La F es de formacina.",
+      "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "UNF = FNU. Es la misma unidad en castellano y en inglés."
+    },
+    {
+      "id": "t28-q43",
+      "pregunta": "Los patrones de turbidez de estireno-divinilbenceno (AMCO-AEPA), frente a la formacina:",
+      "opciones": [
+        "Sedimentan más deprisa",
+        "Tienen tamaño más uniforme y sedimentan menos",
+        "Son el patrón primario"
+      ],
+      "correcta": 1,
+      "explicacion": "El patrón primario sigue siendo la formacina.",
+      "fuente": "Fabricantes de patrones · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "patrones de copolímero de estireno-divinilbenceno (AMCO-AEPA), de tamaño más uniforme y que sedimentan menos."
+    },
+    {
+      "id": "t28-q44",
+      "pregunta": "De los reactivos de la formacina, el sulfato de hidrazina está clasificado como:",
+      "opciones": [
+        "Inocuo",
+        "Explosivo",
+        "Carcinógeno sospechoso"
+      ],
+      "correcta": 2,
+      "explicacion": "La hexamina, como mutágeno; la suspensión diluida se considera segura con precauciones.",
+      "fuente": "Fichas de seguridad · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "el sulfato de hidrazina está clasificado como carcinógeno sospechoso y la hexamina como mutágeno"
+    },
+    {
+      "id": "t28-q45",
+      "pregunta": "Antes de medir la turbidez hay que eliminar las burbujas porque:",
+      "opciones": [
+        "Una burbuja dispersa la luz como una partícula",
+        "Las burbujas absorben el infrarrojo",
+        "Las burbujas disuelven la formacina"
+      ],
+      "correcta": 0,
+      "explicacion": "También agitar y medir pronto.",
+      "fuente": "USGS · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "eliminar las burbujas —una burbuja dispersa como una partícula—"
+    },
+    {
+      "id": "t28-q46",
+      "pregunta": "La incertidumbre del método de turbidez exigida por el RD 3/2023 (≤ 30 %) se estima al nivel de:",
+      "opciones": [
+        "4 UNF",
+        "1 UNF",
+        "0,1 UNF"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo dice la nota 9.",
+      "fuente": "RD 3/2023, anexo III, D · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "la nota 9 precisa que debe estimarse al nivel de 1 UNF."
+    },
+    {
+      "id": "t28-q47",
+      "pregunta": "En una ETAP que trata entre 1000 y 10 000 m³/día, la turbidez se controla como mínimo:",
+      "opciones": [
+        "Cada semana",
+        "En línea",
+        "A diario"
+      ],
+      "correcta": 2,
+      "explicacion": "≤ 1000: semanal; > 10 000: en línea.",
+      "fuente": "RD 3/2023, anexo IV · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| ≤ 1 000 m³/día | Semanal | | > 1 000 y ≤ 10 000 m³/día | Diaria |"
+    },
+    {
+      "id": "t28-q48",
+      "pregunta": "En red de distribución y grifo, el RD 3/2023 admite medir la turbidez:",
+      "opciones": [
+        "Con kit, en laboratorio o en línea",
+        "Solo en laboratorio acreditado",
+        "Solo en línea"
+      ],
+      "correcta": 0,
+      "explicacion": "Se controla siempre.",
+      "fuente": "RD 3/2023 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "el propio reglamento admite que se mida «con kit o en laboratorio o en línea»."
+    },
+    {
+      "id": "t28-q49",
+      "pregunta": "El índice de refracción de cualquier medio más denso que el aire es mayor que 1 porque:",
+      "opciones": [
+        "Absorbe parte de la luz",
+        "Al entrar en él, el rayo se acerca a la normal",
+        "La luz se acelera en el medio denso"
+      ],
+      "correcta": 1,
+      "explicacion": "n = sen i / sen r, con r < i.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Es > 1 para cualquier medio más denso que el aire, porque al entrar en el medio denso el rayo se acerca a la normal y r es menor que i."
+    },
+    {
+      "id": "t28-q50",
+      "pregunta": "El índice de refracción depende de:",
+      "opciones": [
+        "Solo de la sustancia",
+        "Solo de la temperatura",
+        "La sustancia, su concentración, la temperatura y la longitud de onda"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se fijan 20 °C y la línea D.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Depende de cuatro cosas: la sustancia, su concentración, la temperatura y la longitud de onda."
+    },
+    {
+      "id": "t28-q51",
+      "pregunta": "En el refractómetro de Abbe, la cara mate del prisma de iluminación hace que:",
+      "opciones": [
+        "La luz llegue a la muestra en todas las direcciones, incluida la rasante",
+        "La luz se polarice",
+        "La muestra no se caliente"
+      ],
+      "correcta": 0,
+      "explicacion": "El rayo rasante marca el ángulo límite.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La cara mate hace que la luz llegue a la muestra en todas las direcciones posibles, incluida la rasante (incidencia i → 90°)."
+    },
+    {
+      "id": "t28-q52",
+      "pregunta": "Por el ocular de un refractómetro de Abbe se ve:",
+      "opciones": [
+        "Un espectro de colores",
+        "Un campo mitad claro y mitad oscuro, cuya línea se centra en el retículo",
+        "Una escala de absorbancias"
+      ],
+      "correcta": 1,
+      "explicacion": "Más allá del ángulo límite no llega ningún rayo.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Por eso en el ocular se ve un campo mitad claro y mitad oscuro."
+    },
+    {
+      "id": "t28-q53",
+      "pregunta": "El termómetro de un refractómetro, según la Farmacopea, va graduado en intervalos de:",
+      "opciones": [
+        "5 °C",
+        "2 °C",
+        "0,5 °C o menos"
+      ],
+      "correcta": 2,
+      "explicacion": "Se mide a 20 ± 0,5 °C.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "su termómetro va graduado en intervalos de 0,5 °C o menos."
+    },
+    {
+      "id": "t28-q54",
+      "pregunta": "Según la Farmacopea, un refractómetro debe dar lecturas exactas al menos hasta:",
+      "opciones": [
+        "La tercera cifra decimal",
+        "La primera cifra decimal",
+        "Las unidades"
+      ],
+      "correcta": 0,
+      "explicacion": "Y se calibra con materiales de referencia certificados.",
+      "fuente": "Farmacopea Europea 2.2.6 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "el aparato da lecturas exactas al menos hasta la tercera cifra decimal"
+    },
+    {
+      "id": "t28-q55",
+      "pregunta": "En los refractómetros de mosto, los errores máximos permitidos en servicio, frente a los de un instrumento nuevo, son:",
+      "opciones": [
+        "Más estrechos",
+        "Más anchos",
+        "Iguales"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la lógica de toda la metrología legal.",
+      "fuente": "Orden ICT/155/2020, anexo XVI · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "el instrumento en servicio tiene la tolerancia más ancha que el instrumento nuevo."
+    },
+    {
+      "id": "t28-q56",
+      "pregunta": "El polarizador de un polarímetro:",
+      "opciones": [
+        "Gira el plano de la luz",
+        "Mide el ángulo",
+        "Deja pasar un solo plano de vibración de la luz"
+      ],
+      "correcta": 2,
+      "explicacion": "El plano gira en el tubo; el analizador mide.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El polarizador deja pasar uno solo: sale luz polarizada en un plano."
+    },
+    {
+      "id": "t28-q57",
+      "pregunta": "Los signos (+)/(−) y las letras d/l de una sustancia ópticamente activa:",
+      "opciones": [
+        "Indican hacia dónde gira el plano y no tienen relación con la configuración R/S",
+        "Coinciden siempre con R y S",
+        "Indican la concentración"
+      ],
+      "correcta": 0,
+      "explicacion": "Se determinan experimentalmente.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "los signos (+)/(−) y las letras d/l indican hacia dónde gira el plano, y no tienen relación con la configuración R/S de la molécula."
+    },
+    {
+      "id": "t28-q58",
+      "pregunta": "El cero de un polarímetro, para una muestra líquida, se determina:",
+      "opciones": [
+        "Con el tubo lleno de agua del grifo",
+        "Con el tubo cerrado y vacío",
+        "Sin tubo"
+      ],
+      "correcta": 1,
+      "explicacion": "Para sólidos, con el tubo lleno del disolvente prescrito.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "para líquidos, con el tubo vacío; para sólidos, lleno del disolvente prescrito."
+    },
+    {
+      "id": "t28-q59",
+      "pregunta": "Según la Farmacopea, un polarímetro debe leer hasta:",
+      "opciones": [
+        "1°",
+        "0,5°",
+        "0,01°"
+      ],
+      "correcta": 2,
+      "explicacion": "Su escala se comprueba con placas de cuarzo.",
+      "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El polarímetro debe leer hasta 0,01°"
+    },
+    {
+      "id": "t28-q60",
+      "pregunta": "En los sacarímetros alemanes, el peso normal N de sacarosa es de:",
+      "opciones": [
+        "26,00 g",
+        "16,29 g",
+        "20,00 g"
+      ],
+      "correcta": 0,
+      "explicacion": "Franceses 16,29 g; mixtos 20,00 g.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, L · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Sacarímetros alemanes | 26,00 g |"
+    },
+    {
+      "id": "t28-q61",
+      "pregunta": "La rotación específica convencional del almidón de arroz según el Reglamento 152/2009 es:",
+      "opciones": [
+        "+ 181,3°",
+        "+ 185,9°",
+        "− 185,9°"
+      ],
+      "correcta": 1,
+      "explicacion": "+181,3° es la avena. Todos los almidones son dextrógiros.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, L · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Arroz | + 185,9° | | Fécula de patata | + 185,7° |"
+    },
+    {
+      "id": "t28-q62",
+      "pregunta": "En el método de Ewers, la clarificación se hace con:",
+      "opciones": [
+        "Formacina",
+        "Cloruro de bario",
+        "Las soluciones de Carrez I (acetato de cinc) y Carrez II (ferrocianuro de potasio)"
+      ],
+      "correcta": 2,
+      "explicacion": "Después se filtra y se mide.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, L · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La clarificación se hace con las soluciones de Carrez I (acetato de cinc) y Carrez II (ferrocianuro de potasio)."
+    },
+    {
+      "id": "t28-q63",
+      "pregunta": "En el método de Ewers, si el pienso tiene más de un 6 % de carbonatos:",
+      "opciones": [
+        "Se ignoran",
+        "Se mide a 40 °C",
+        "Se destruyen con sulfúrico diluido antes de medir"
+      ],
+      "correcta": 2,
+      "explicacion": "Con mucha lactosa hay otro tratamiento a 50 °C.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, L · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con más de un 6 % de carbonatos hay que destruirlos con sulfúrico diluido antes de medir"
+    },
+    {
+      "id": "t28-q64",
+      "pregunta": "La transparencia medida con el disco de Secchi se expresa en:",
+      "opciones": [
+        "UNF",
+        "FAU",
+        "Alcance visual (m)"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un método semicuantitativo.",
+      "fuente": "UNE-EN ISO 7027-2:2020 (catálogo) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| UNE-EN ISO 7027-2:2020 | Alcance visual (m) |"
     }
   ],
   "supuestos": [
@@ -789,6 +1477,173 @@
           "correcta": 1,
           "explicacion": "Farmacopea Europea 2.2.7: se determina el cero y el ángulo de rotación a la longitud de onda de la línea D del sodio (589,3 nm) y a 20 ± 0,5 °C, salvo que se prescriba otra cosa; el polarímetro debe dar lecturas hasta 0,01°. Solo se puede medir a otra temperatura si la monografía indica la corrección. Los 860 nm son la fuente de los turbidímetros ISO 7027.",
           "fuente": "Farmacopea Europea 2.2.7"
+        }
+      ]
+    },
+    {
+      "id": "t28-s03",
+      "titulo": "Supuesto 3. Turbidez en la red con un turbidímetro portátil",
+      "enunciado": "Un técnico controla la turbidez en varios grifos de la red con un turbidímetro portátil nefelométrico conforme a la ISO 7027. Los datos históricos del municipio están en NTU, tomados hace años con otro equipo de luz blanca.",
+      "preguntas": [
+        {
+          "id": "t28-s03-q1",
+          "pregunta": "¿Admite el RD 3/2023 medir la turbidez de la red con un equipo portátil?",
+          "opciones": [
+            "No: solo en laboratorio acreditado",
+            "Solo en la ETAP",
+            "Sí: admite medirla «con kit o en laboratorio o en línea»",
+            "Solo si es en línea"
+          ],
+          "correcta": 2,
+          "explicacion": "En red y grifo se controla siempre.",
+          "fuente": "RD 3/2023 · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "el propio reglamento admite que se mida «con kit o en laboratorio o en línea»."
+        },
+        {
+          "id": "t28-s03-q2",
+          "pregunta": "¿Qué hace con la muestra antes de leer?",
+          "opciones": [
+            "Dejarla reposar una hora",
+            "Filtrarla a 0,45 µm",
+            "Acidificarla",
+            "Agitarla, eliminar las burbujas y medir pronto"
+          ],
+          "correcta": 3,
+          "explicacion": "Filtrar eliminaría lo que se quiere medir.",
+          "fuente": "USGS · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "eliminar las burbujas —una burbuja dispersa como una partícula—"
+        },
+        {
+          "id": "t28-s03-q3",
+          "pregunta": "¿En qué unidad da el resultado su equipo y con qué luz trabaja?",
+          "opciones": [
+            "En UNF (FNU), con LED infrarrojo de 860 nm",
+            "En NTU, con luz blanca",
+            "En FAU, con luz de sodio",
+            "En grados, con luz polarizada"
+          ],
+          "correcta": 0,
+          "explicacion": "Detector a 90° ± 2,5°.",
+          "fuente": "UNE-EN ISO 7027-1:2016 (resumen) y USGS · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "Fuente: diodo emisor infrarrojo de 860 nm, con una anchura de banda de 60 nm (es decir, 860 ± 60 nm)."
+        },
+        {
+          "id": "t28-s03-q4",
+          "pregunta": "¿Puede comparar directamente sus UNF con los datos históricos en NTU?",
+          "opciones": [
+            "Sí: las dos se miden a 90°",
+            "No: la fuente de luz es distinta y la dispersión depende de la longitud de onda",
+            "Sí, multiplicando por 10",
+            "Sí, porque las dos usan formacina"
+          ],
+          "correcta": 1,
+          "explicacion": "El USGS lo avisa expresamente.",
+          "fuente": "USGS · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "los datos tomados con fuente infrarroja no son directamente comparables con los tomados con luz blanca."
+        },
+        {
+          "id": "t28-s03-q5",
+          "pregunta": "Para verificar el equipo en campo prefiere un patrón que no sedimente. ¿Cuál?",
+          "opciones": [
+            "Formacina recién preparada sin estabilizar",
+            "Agua del grifo",
+            "Formacina estabilizada o un patrón de estireno-divinilbenceno (AMCO-AEPA)",
+            "Leche diluida"
+          ],
+          "correcta": 2,
+          "explicacion": "La formacina sin estabilizar sedimenta con el tiempo.",
+          "fuente": "Fabricantes de patrones · apunte §2.1",
+          "apartado": "2.1",
+          "evidencia": "patrones de copolímero de estireno-divinilbenceno (AMCO-AEPA), de tamaño más uniforme y que sedimentan menos."
+        }
+      ]
+    },
+    {
+      "id": "t28-s04",
+      "titulo": "Supuesto 4. Rotación específica de una disolución de sacarosa",
+      "enunciado": "Se prepara una disolución de sacarosa de 0,10 g/mL en agua y se mide en un polarímetro con un tubo de 2 dm. El ángulo observado es de +13,3°.",
+      "preguntas": [
+        {
+          "id": "t28-s04-q1",
+          "pregunta": "¿En qué condiciones se mide, según la Farmacopea?",
+          "opciones": [
+            "A 25 °C con luz blanca",
+            "A 37 °C con un láser rojo",
+            "A cualquier temperatura sin corrección",
+            "A 20 ± 0,5 °C y con la línea D del sodio (589,3 nm)"
+          ],
+          "correcta": 3,
+          "explicacion": "Otra temperatura solo si la monografía da la corrección.",
+          "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Se mide a 20 ± 0,5 °C y a la línea D del sodio, salvo que se prescriba otra cosa."
+        },
+        {
+          "id": "t28-s04-q2",
+          "pregunta": "¿Cuál es la rotación específica?",
+          "opciones": [
+            "+66,5",
+            "+6,65",
+            "+665",
+            "+133"
+          ],
+          "correcta": 0,
+          "explicacion": "[α] = α / (l · c) = 13,3 / (2 × 0,10) = 66,5, con l en dm y c en g/mL.",
+          "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": [
+            "| l | Longitud del tubo | DECÍMETROS (dm), no centímetros |",
+            "| c | Concentración | g/mL, no g/L |"
+          ]
+        },
+        {
+          "id": "t28-s04-q3",
+          "pregunta": "El signo + indica que la sacarosa es:",
+          "opciones": [
+            "Levógira: gira en sentido antihorario",
+            "Dextrógira: gira el plano en sentido horario",
+            "Racémica",
+            "De configuración R"
+          ],
+          "correcta": 1,
+          "explicacion": "El signo no dice nada de R/S.",
+          "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Dextrógira, signo (+) o d: gira el plano en sentido horario."
+        },
+        {
+          "id": "t28-s04-q4",
+          "pregunta": "¿Con qué se comprueba la linealidad de la escala del polarímetro?",
+          "opciones": [
+            "Con formacina",
+            "Con placas de cuarzo, que comprueban la linealidad",
+            "Con disoluciones de sacarosa",
+            "Con agua destilada"
+          ],
+          "correcta": 2,
+          "explicacion": "Las placas de cuarzo comprueban la escala; la sacarosa, su linealidad.",
+          "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "La escala se comprueba con placas de cuarzo certificadas, y su linealidad, con disoluciones de sacarosa."
+        },
+        {
+          "id": "t28-s04-q5",
+          "pregunta": "¿Cómo debe expresar el resultado?",
+          "opciones": [
+            "Solo el ángulo observado",
+            "Solo la rotación específica, sin más",
+            "En UNF",
+            "La rotación específica junto con el disolvente (agua) y la concentración"
+          ],
+          "correcta": 3,
+          "explicacion": "Sin disolvente y concentración el dato no está completo.",
+          "fuente": "Farmacopea Europea 2.2.7 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "La rotación específica de una sustancia en disolución se expresa SIEMPRE con su disolvente y su concentración"
         }
       ]
     }
