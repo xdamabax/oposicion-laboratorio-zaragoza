@@ -344,6 +344,183 @@
       "reverso": "*«i. **Participación en programas de ensayos de aptitud** […] a niveles de concentración que sean representativos […]; ii. **Análisis de los materiales de referencia disponibles** que sean representativos de las muestras»* (anexo III, apartado C.3.b).\nAdemás de aplicar una gestión de calidad conforme a la **ISO/IEC 17025**.",
       "fuente": "RD 817/2015, anexo III, apartado C.3",
       "etiquetas": ["normativa"]
+    },
+    {
+      "id": "t39-f46",
+      "anverso": "¿Cómo llama la ISO/IEC 17025 al conjunto de patrones, trazabilidad, calibración y control de calidad?",
+      "reverso": "**«Aseguramiento de la validez de los resultados»** (cláusula **7.7**). El RD 817/2015 lo exige con esas palabras a los laboratorios de aguas superficiales.",
+      "fuente": "ISO/IEC 17025, 7.7 · apunte §1",
+      "etiquetas": [
+        "marco"
+      ],
+      "apartado": "1",
+      "evidencia": "La ISO/IEC 17025:2017 llama a esto «aseguramiento de la validez de los resultados» (cláusula 7.7)"
+    },
+    {
+      "id": "t39-f47",
+      "anverso": "Un ejemplo químico de patrón según el VIM, y la trampa de la palabra inglesa standard.",
+      "reverso": "Una **solución tampón de referencia de pH 7,072** con incertidumbre típica **0,006**. En inglés, ***standard*** es a la vez **patrón** y **norma escrita**: en español son dos palabras.",
+      "fuente": "VIM 5.1 · apunte §2.1",
+      "etiquetas": [
+        "patrones"
+      ],
+      "apartado": "2.1",
+      "evidencia": [
+        "solución tampón de referencia con un pH de 7,072 y una incertidumbre típica asociada de 0,006",
+        "en inglés, standard significa a la vez patrón y norma escrita"
+      ]
+    },
+    {
+      "id": "t39-f48",
+      "anverso": "¿Por dónde llega al SI la trazabilidad de un resultado químico?",
+      "reverso": "Por la **masa (kg)** y la **cantidad de sustancia (mol)**: un patrón preparado **pesando una sustancia pura** y usando su **masa molar** es una aproximación a las unidades de concentración.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 7.5.1 · apunte §2.3",
+      "etiquetas": [
+        "trazabilidad"
+      ],
+      "apartado": "2.3",
+      "evidencia": "En química, la cadena llega al SI a través de la masa (kg) y la cantidad de sustancia (mol)"
+    },
+    {
+      "id": "t39-f49",
+      "anverso": "¿Por qué una balanza se calibra pocas veces y un ICP en cada tanda?",
+      "reverso": "Porque **balanzas y termómetros son estables**, y un cromatógrafo o un ICP no. **Una calibración solo vale mientras el instrumento se mantenga estable**, y eso lo vigila el **control de calidad**.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 3.3 · apunte §2.3",
+      "etiquetas": [
+        "trazabilidad"
+      ],
+      "apartado": "2.3",
+      "evidencia": "Balanzas y termómetros se calibran pocas veces, porque son estables; un cromatógrafo o un ICP, en cada tanda."
+    },
+    {
+      "id": "t39-f50",
+      "anverso": "¿Dice r algo de la pendiente de la recta?",
+      "reverso": "**No.** Dos rectas muy distintas pueden tener el mismo **r = 1**. r solo mide cuánto se ajustan los puntos a **una** recta.",
+      "fuente": "Apunte §2.4",
+      "etiquetas": [
+        "recta"
+      ],
+      "apartado": "2.4",
+      "evidencia": "r no dice la pendiente. Dos rectas muy distintas pueden tener el mismo r = 1."
+    },
+    {
+      "id": "t39-f51",
+      "anverso": "Con los datos de 1322 (Σx = 18; Σy = 0,89; Σxy = 6,45; Σx² = 130; n = 4), ¿cuánto valen la pendiente y la ordenada?",
+      "reverso": "**b** = (4·6,45 − 18·0,89) / (4·130 − 18²) = 9,78 / 196 = **0,0499 L/mg**. **a** = (0,89 − 0,0499·18) / 4 = **−0,0020**.",
+      "fuente": "Apunte §2.4",
+      "etiquetas": [
+        "recta"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "(25,80 − 16,02) / (520 − 324) = 9,78 / 196 = 0,0499 L/mg",
+        "a = (0,89 − 0,0499 · 18) / 4 = −0,0020"
+      ]
+    },
+    {
+      "id": "t39-f52",
+      "anverso": "¿Cómo se anotan los valores de control según el TR 569?",
+      "reverso": "Con **una cifra significativa más** que los resultados, y anotando **también los valores por debajo del límite de informe y los negativos**: si se redondean a cero, el gráfico de blancos deja de servir.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": "una cifra significativa más que los resultados, y anotar también los valores por debajo del límite de informe y los negativos"
+    },
+    {
+      "id": "t39-f53",
+      "anverso": "Límites objetivo: ¿cómo se fija la s de partida? Ejemplo con el nitrato.",
+      "reverso": "Con la **incertidumbre expandida exigida dividida entre cuatro**: para el nitrato (15 %), **s ≈ 3,75 %**; aviso **±7,5 %** y acción **±11,25 %**.",
+      "fuente": "Nordtest TR 569, cap. 7 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": "la s objetivo de partida sería 15 / 4 ≈ 3,75 %, y los límites de aviso y de acción, ±7,5 % y ±11,25 %."
+    },
+    {
+      "id": "t39-f54",
+      "anverso": "¿Cada cuánto se revisan la línea central y los límites de un gráfico de control?",
+      "reverso": "**Una vez al año**, o cuando haya **20 valores nuevos** si el análisis es poco frecuente. No se tocan a menudo: si se mueven a cada rato, el gráfico deja de ver los cambios lentos.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Se revisan una vez al año, o cuando haya 20 valores nuevos si el análisis es poco frecuente."
+    },
+    {
+      "id": "t39-f55",
+      "anverso": "¿Qué tasa de falsas alarmas dan las dos reglas del TR 569 con un método que funciona bien?",
+      "reverso": "El **0,54 %** de las series: **0,27 %** por cada regla.",
+      "fuente": "Nordtest TR 569, cap. 9 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Con estas dos reglas, un método que funciona bien da una falsa alarma en el 0,54 % de las series (0,27 % por cada regla)."
+    },
+    {
+      "id": "t39-f56",
+      "anverso": "Las reglas de tendencia (7 subiendo, 10 de 11 del mismo lado): ¿qué dice de ellas la edición 6.1 del TR 569?",
+      "reverso": "Las **mantiene**, pero proceden del **control de procesos** (ISO 7870-2) y **normalmente no son prácticas** para el control diario: las tendencias se buscan en la **revisión anual**. Con ellas **se informan** los resultados; lo que piden es **investigar**.",
+      "fuente": "Nordtest TR 569 6.1 e ISO 7870-2 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": "normalmente no son prácticas para el control diario de un método analítico"
+    },
+    {
+      "id": "t39-f57",
+      "anverso": "¿Para qué sirve un gráfico con solo límites de acción? ¿Y cuántos controles lleva cada serie?",
+      "reverso": "Para **comprobar un equipo** antes de seguir (balanza de cuatro decimales: **± 0,5 mg**). Para un método se recomiendan **los dos límites**. Y **como mínimo, una muestra de control por serie**, en principio **al principio y al final**.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "etiquetas": [
+        "control"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "para una balanza analítica de cuatro decimales, límites de ± 5 dígitos del último decimal, ± 0,5 mg",
+        "Como mínimo, una muestra de control en cada serie analítica"
+      ]
+    },
+    {
+      "id": "t39-f58",
+      "anverso": "¿Qué es la puntuación En y cuándo es satisfactoria?",
+      "reverso": "Una puntuación que usa **las incertidumbres expandidas** del laboratorio y del valor asignado. Es satisfactoria si **|En| ≤ 1**.",
+      "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+      "etiquetas": [
+        "externo"
+      ],
+      "apartado": "2.6",
+      "evidencia": "Existe también la puntuación En, que usa las incertidumbres expandidas del laboratorio y del valor asignado: |En| ≤ 1 es satisfactorio."
+    },
+    {
+      "id": "t39-f59",
+      "anverso": "Orden de preferencia de ENAC para elegir el proveedor de ensayos de aptitud.",
+      "reverso": "1) **Acreditados por la ISO/IEC 17043** con **acuerdo de reconocimiento** con ENAC; 2) acreditados sin acuerdo; 3) no acreditados; 4) **intercomparaciones** organizadas por los participantes.",
+      "fuente": "ENAC NT-03 · apunte §2.6",
+      "etiquetas": [
+        "externo"
+      ],
+      "apartado": "2.6",
+      "evidencia": "primero, proveedores acreditados por la ISO/IEC 17043 con acuerdo de reconocimiento con ENAC; después, acreditados sin ese acuerdo; después, no acreditados; y por último, intercomparaciones organizadas por los propios participantes"
+    },
+    {
+      "id": "t39-f60",
+      "anverso": "¿Qué se hace con un resultado insatisfactorio, y qué dice de él la guía?",
+      "reverso": "Se **investiga siempre y se documenta**, aunque se decida no actuar. «Un resultado insatisfactorio en una ronda **no hace malo a un laboratorio**, ni un 100 % de satisfactorios lo hace necesariamente bueno». El ensayo de aptitud es para **aprender**.",
+      "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+      "etiquetas": [
+        "externo"
+      ],
+      "apartado": "2.6",
+      "evidencia": [
+        "Un resultado insatisfactorio se investiga siempre y se documenta, aunque se decida no actuar.",
+        "un resultado insatisfactorio en una ronda no hace malo a un laboratorio, ni un 100 % de resultados satisfactorios lo hace necesariamente bueno"
+      ]
     }
   ],
   "test": [
@@ -662,6 +839,552 @@
       "correcta": 0,
       "explicacion": "El gráfico de rangos sirve sobre todo para el control de la repetibilidad. El sesgo se vigila con un gráfico X de un MRC, y la contaminación con un gráfico de blancos.",
       "fuente": "Nordtest TR 569, capítulo 5"
+    },
+    {
+      "id": "t39-q31",
+      "pregunta": "La ISO/IEC 17025 llama al conjunto de patrones, trazabilidad, calibración y control de calidad:",
+      "opciones": [
+        "Aseguramiento de la validez de los resultados",
+        "Validación de métodos",
+        "Control de los registros"
+      ],
+      "correcta": 0,
+      "explicacion": "Cláusula 7.7.",
+      "fuente": "ISO/IEC 17025, 7.7 · apunte §1",
+      "apartado": "1",
+      "evidencia": "La ISO/IEC 17025:2017 llama a esto «aseguramiento de la validez de los resultados» (cláusula 7.7)"
+    },
+    {
+      "id": "t39-q32",
+      "pregunta": "El RD 817/2015 exige a los laboratorios de aguas superficiales demostrar su capacidad mediante:",
+      "opciones": [
+        "Solo la acreditación",
+        "Ensayos de aptitud y análisis de materiales de referencia representativos",
+        "Solo auditorías internas"
+      ],
+      "correcta": 1,
+      "explicacion": "Además de gestión de calidad conforme a la 17025.",
+      "fuente": "RD 817/2015, anexo III, C.3 · apunte §1",
+      "apartado": "1",
+      "evidencia": "ii. Análisis de los materiales de referencia disponibles que sean representativos de las muestras recogidas"
+    },
+    {
+      "id": "t39-q33",
+      "pregunta": "En inglés, la palabra standard significa:",
+      "opciones": [
+        "Solo patrón",
+        "Solo norma escrita",
+        "A la vez patrón y norma escrita"
+      ],
+      "correcta": 2,
+      "explicacion": "En español son dos palabras distintas.",
+      "fuente": "VIM 5.1, nota 8 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "en inglés, standard significa a la vez patrón y norma escrita"
+    },
+    {
+      "id": "t39-q34",
+      "pregunta": "El patrón usado habitualmente para calibrar o verificar instrumentos es el patrón:",
+      "opciones": [
+        "De trabajo",
+        "De referencia",
+        "Nacional"
+      ],
+      "correcta": 0,
+      "explicacion": "Si sirve para verificar, también patrón de control.",
+      "fuente": "VIM 5.7 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| De trabajo (5.7) | El usado habitualmente para calibrar o verificar instrumentos |"
+    },
+    {
+      "id": "t39-q35",
+      "pregunta": "En España, los patrones nacionales los mantiene:",
+      "opciones": [
+        "La Entidad Nacional de Acreditación",
+        "El Centro Español de Metrología",
+        "AENOR"
+      ],
+      "correcta": 1,
+      "explicacion": "ENAC acredita; AENOR normaliza.",
+      "fuente": "VIM 5.3 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Nacional (5.3) | Reconocido por una autoridad nacional como base para asignar valor a otros | Los que mantiene el CEM |"
+    },
+    {
+      "id": "t39-q36",
+      "pregunta": "Es un método potencialmente primario:",
+      "opciones": [
+        "La espectrofotometría UV-visible",
+        "La turbidimetría",
+        "La culombimetría"
+      ],
+      "correcta": 2,
+      "explicacion": "Con la gravimetría, la valoración y la dilución isotópica.",
+      "fuente": "Eurachem EEE/RM/062 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "están la gravimetría, la valoración (titrimetría), la culombimetría y la espectrometría de masas por dilución isotópica"
+    },
+    {
+      "id": "t39-q37",
+      "pregunta": "Un material de referencia de matriz se usa sobre todo para:",
+      "opciones": [
+        "Validar y controlar la veracidad",
+        "Calibrar en rutina",
+        "Limpiar el sistema"
+      ],
+      "correcta": 0,
+      "explicacion": "Para calibrar se usan sustancias puras o disoluciones patrón.",
+      "fuente": "Eurachem EEE/RM/062 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son los de la validación y el control de la veracidad."
+    },
+    {
+      "id": "t39-q38",
+      "pregunta": "Los filtros de absorbancia (densidad óptica) son materiales de referencia de tipo:",
+      "opciones": [
+        "De matriz",
+        "Físico-químico",
+        "Objeto de referencia"
+      ],
+      "correcta": 1,
+      "explicacion": "Como el punto de fusión o la viscosidad.",
+      "fuente": "Eurachem EEE/RM/062 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "4. Materiales físico-químicos: punto de fusión, viscosidad, densidad óptica (los filtros de absorbancia del tema 25)."
+    },
+    {
+      "id": "t39-q39",
+      "pregunta": "El certificado de un MRC se emite conforme a:",
+      "opciones": [
+        "La Guía ISO 35",
+        "La ISO 13528",
+        "La Guía ISO 31"
+      ],
+      "correcta": 2,
+      "explicacion": "La certificación, conforme a la Guía ISO 35.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 7.8 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "un certificado conforme a la Guía ISO 31; y la certificación conforme a la Guía ISO 35"
+    },
+    {
+      "id": "t39-q40",
+      "pregunta": "La UNE-EN ISO 17034:2017, de productores de materiales de referencia, anuló a:",
+      "opciones": [
+        "La antigua Guía ISO 34",
+        "La Guía ISO 31",
+        "La UNE-EN ISO/IEC 17043"
+      ],
+      "correcta": 0,
+      "explicacion": "Producción demostrable por auditoría de tercera parte.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 7.8 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "UNE-EN ISO 17034:2017, que anuló a la antigua Guía ISO 34"
+    },
+    {
+      "id": "t39-q41",
+      "pregunta": "Como «trazabilidad» a secas es ambiguo, el VIM prefiere decir:",
+      "opciones": [
+        "Cadena de custodia",
+        "Trazabilidad metrológica",
+        "Trazabilidad documental"
+      ],
+      "correcta": 1,
+      "explicacion": "La cadena de custodia de una muestra no es trazabilidad metrológica.",
+      "fuente": "VIM 2.41, nota 8 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Es preferible utilizar el término completo \"trazabilidad metrológica\""
+    },
+    {
+      "id": "t39-q42",
+      "pregunta": "En química, la trazabilidad llega al SI a través de:",
+      "opciones": [
+        "El metro y el segundo",
+        "El amperio y el kelvin",
+        "La masa (kg) y la cantidad de sustancia (mol)"
+      ],
+      "correcta": 2,
+      "explicacion": "Pesando sustancias puras.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 7.5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "En química, la cadena llega al SI a través de la masa (kg) y la cantidad de sustancia (mol)"
+    },
+    {
+      "id": "t39-q43",
+      "pregunta": "Según la guía Eurachem/CITAC, la trazabilidad a patrones apropiados se alcanza:",
+      "opciones": [
+        "A través de la calibración",
+        "Con la acreditación",
+        "Con los ensayos de aptitud"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada calibración es un eslabón.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 3.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "la trazabilidad a estándares de medición apropiados es alcanzada a través de la calibración"
+    },
+    {
+      "id": "t39-q44",
+      "pregunta": "Una balanza se calibra pocas veces y un ICP en cada tanda porque:",
+      "opciones": [
+        "El ICP no necesita trazabilidad",
+        "La balanza es estable y el ICP no",
+        "La balanza es más cara"
+      ],
+      "correcta": 1,
+      "explicacion": "Una calibración vale mientras el instrumento sea estable.",
+      "fuente": "Guía Eurachem/CITAC de trazabilidad 3.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Balanzas y termómetros se calibran pocas veces, porque son estables; un cromatógrafo o un ICP, en cada tanda."
+    },
+    {
+      "id": "t39-q45",
+      "pregunta": "La calibración con patrones en matriz se usa cuando:",
+      "opciones": [
+        "La matriz no interfiere",
+        "Se trabaja con un patrón interno",
+        "La matriz es conocida y está disponible sin analito"
+      ],
+      "correcta": 2,
+      "explicacion": "Los patrones se preparan sobre esa matriz.",
+      "fuente": "Eurachem 2025, 5.2.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Patrones en matriz | Patrones preparados sobre la matriz sin analito | Matriz conocida y disponible sin analito |"
+    },
+    {
+      "id": "t39-q46",
+      "pregunta": "La adición de patrón se usa cuando la matriz:",
+      "opciones": [
+        "Cambia la pendiente (efecto proporcional)",
+        "No interfiere en absoluto",
+        "Solo aporta un fondo constante"
+      ],
+      "correcta": 0,
+      "explicacion": "Se añade analito a la propia muestra y se extrapola.",
+      "fuente": "Eurachem 2025, 5.2.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Matriz que cambia la pendiente (efecto proporcional, tema 38)"
+    },
+    {
+      "id": "t39-q47",
+      "pregunta": "En una recta de calibrado, la pendiente representa:",
+      "opciones": [
+        "El blanco",
+        "La sensibilidad",
+        "El límite de detección"
+      ],
+      "correcta": 1,
+      "explicacion": "La ordenada es la señal a concentración cero.",
+      "fuente": "Apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Pendiente: la sensibilidad (tema 38): cuánto sube la señal por unidad de concentración."
+    },
+    {
+      "id": "t39-q48",
+      "pregunta": "En los mínimos cuadrados, los residuos se elevan al cuadrado:",
+      "opciones": [
+        "Para aumentar el R²",
+        "Para forzar la recta por el origen",
+        "Para que un residuo positivo no cancele uno negativo"
+      ],
+      "correcta": 2,
+      "explicacion": "De ahí el nombre.",
+      "fuente": "Harvey 5.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "para evitar que un error residual positivo cancele un error residual negativo"
+    },
+    {
+      "id": "t39-q49",
+      "pregunta": "Si los residuos dibujan una curva (positivos en los extremos y negativos en el centro):",
+      "opciones": [
+        "La relación no es una recta, aunque el R² sea 0,99",
+        "Hace falta una regresión ponderada",
+        "La recta es correcta"
+      ],
+      "correcta": 0,
+      "explicacion": "La ponderada es para residuos que crecen.",
+      "fuente": "Harvey 5.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "la relación no es una recta, aunque el R² sea 0,99"
+    },
+    {
+      "id": "t39-q50",
+      "pregunta": "Dos rectas de calibrado con pendientes muy distintas:",
+      "opciones": [
+        "Tienen siempre distinto r",
+        "Pueden tener el mismo r = 1",
+        "Tienen un r proporcional a su pendiente"
+      ],
+      "correcta": 1,
+      "explicacion": "r no dice la pendiente.",
+      "fuente": "Apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "r no dice la pendiente. Dos rectas muy distintas pueden tener el mismo r = 1."
+    },
+    {
+      "id": "t39-q51",
+      "pregunta": "Con los datos de 1322 (Σx = 18, Σy = 0,89, n = 4, b = 0,0499), la ordenada en el origen es:",
+      "opciones": [
+        "0,0020",
+        "0,0499",
+        "−0,0020"
+      ],
+      "correcta": 2,
+      "explicacion": "a = (Σy − b·Σx) / n.",
+      "fuente": "Apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "a = (0,89 − 0,0499 · 18) / 4 = −0,0020"
+    },
+    {
+      "id": "t39-q52",
+      "pregunta": "Según el TR 569, los valores de control se anotan con:",
+      "opciones": [
+        "Una cifra significativa más que los resultados",
+        "Las mismas cifras que los resultados",
+        "Redondeados a enteros"
+      ],
+      "correcta": 0,
+      "explicacion": "Y anotando también los negativos.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "una cifra significativa más que los resultados"
+    },
+    {
+      "id": "t39-q53",
+      "pregunta": "Los valores de control negativos o por debajo del límite de informe:",
+      "opciones": [
+        "Se redondean a cero",
+        "Se anotan tal cual",
+        "Se descartan"
+      ],
+      "correcta": 1,
+      "explicacion": "Si no, el gráfico de blancos deja de servir.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "si se redondean a cero, el gráfico de blancos deja de servir"
+    },
+    {
+      "id": "t39-q54",
+      "pregunta": "Una muestra de control de tipo III (blanco) vigila:",
+      "opciones": [
+        "El sesgo",
+        "La repetibilidad",
+        "El LC y la contaminación"
+      ],
+      "correcta": 2,
+      "explicacion": "El tipo I, MRC de matriz, vigila el sesgo.",
+      "fuente": "Nordtest TR 569, cap. 6 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| III. Blanco | Blanco de reactivos, de procedimiento o de muestra | El LC y la contaminación | X (y R) |"
+    },
+    {
+      "id": "t39-q55",
+      "pregunta": "Para arrancar un método nuevo, los límites estadísticos provisionales se calculan con unos:",
+      "opciones": [
+        "25 valores",
+        "60 valores",
+        "5 valores"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo normal: al menos 60 en un año.",
+      "fuente": "Nordtest TR 569, cap. 7 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Para arrancar un método nuevo bastan unos 25, con límites provisionales algo más anchos."
+    },
+    {
+      "id": "t39-q56",
+      "pregunta": "Con límites objetivo y una incertidumbre exigida del 15 %, la s objetivo de partida es:",
+      "opciones": [
+        "7,5 %",
+        "3,75 %",
+        "15 %"
+      ],
+      "correcta": 1,
+      "explicacion": "U / 4.",
+      "fuente": "Nordtest TR 569, cap. 7 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "la s objetivo de partida sería 15 / 4 ≈ 3,75 %"
+    },
+    {
+      "id": "t39-q57",
+      "pregunta": "La línea central y los límites de un gráfico de control se revisan:",
+      "opciones": [
+        "En cada serie",
+        "Nunca",
+        "Una vez al año, o con 20 valores nuevos si el análisis es poco frecuente"
+      ],
+      "correcta": 2,
+      "explicacion": "Si se mueven a cada rato, el gráfico no ve los cambios lentos.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Se revisan una vez al año, o cuando haya 20 valores nuevos si el análisis es poco frecuente."
+    },
+    {
+      "id": "t39-q58",
+      "pregunta": "Con las dos reglas del TR 569, un método que funciona bien da falsas alarmas en el:",
+      "opciones": [
+        "0,54 % de las series",
+        "5 % de las series",
+        "0,27 % de las series"
+      ],
+      "correcta": 0,
+      "explicacion": "0,27 % por cada regla.",
+      "fuente": "Nordtest TR 569, cap. 9 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "da una falsa alarma en el 0,54 % de las series (0,27 % por cada regla)"
+    },
+    {
+      "id": "t39-q59",
+      "pregunta": "En el gráfico de rangos (R) de duplicados, el límite de acción está en:",
+      "opciones": [
+        "2,83 s",
+        "3,69 s",
+        "1,128 s"
+      ],
+      "correcta": 1,
+      "explicacion": "Línea central 1,128 s; aviso 2,83 s.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "con la línea central en 1,128 s, el aviso en 2,83 s y la acción en 3,69 s"
+    },
+    {
+      "id": "t39-q60",
+      "pregunta": "Como mínimo, cada serie analítica lleva:",
+      "opciones": [
+        "Diez muestras de control",
+        "Ninguna, si el equipo está calibrado",
+        "Una muestra de control, en principio al principio y al final"
+      ],
+      "correcta": 2,
+      "explicacion": "Para ver derivas.",
+      "fuente": "Nordtest TR 569, cap. 8 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Como mínimo, una muestra de control en cada serie analítica"
+    },
+    {
+      "id": "t39-q61",
+      "pregunta": "Un gráfico con solo límites de acción sirve, sobre todo, para:",
+      "opciones": [
+        "Comprobar un equipo antes de seguir, como una balanza",
+        "El control normal de un método",
+        "Estimar la incertidumbre"
+      ],
+      "correcta": 0,
+      "explicacion": "Para un método se recomiendan los dos límites.",
+      "fuente": "Nordtest TR 569 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Sirven para comprobar un equipo antes de seguir"
+    },
+    {
+      "id": "t39-q62",
+      "pregunta": "Diez de cada once valores de control consecutivos del mismo lado de la línea central indican:",
+      "opciones": [
+        "Fuera de control: no se informa",
+        "Fuera de control estadístico: se investiga, pero se informan los resultados",
+        "Que todo va bien"
+      ],
+      "correcta": 1,
+      "explicacion": "Regla de tendencia.",
+      "fuente": "Nordtest TR 569 ed. 4 e ISO 7870-2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "diez de cada once valores consecutivos caen del mismo lado de la línea central"
+    },
+    {
+      "id": "t39-q63",
+      "pregunta": "La estadística de los ensayos de aptitud se rige por:",
+      "opciones": [
+        "La UNE-EN ISO 17034",
+        "La ISO 7870-2",
+        "La ISO 13528:2022"
+      ],
+      "correcta": 2,
+      "explicacion": "Los proveedores, por la ISO/IEC 17043.",
+      "fuente": "ISO 13528 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "y la estadística, por la ISO 13528:2022"
+    },
+    {
+      "id": "t39-q64",
+      "pregunta": "Los proveedores de ensayos de aptitud se rigen por:",
+      "opciones": [
+        "La UNE-EN ISO/IEC 17043:2023",
+        "La UNE-EN ISO/IEC 17025:2017",
+        "La UNE-EN ISO 17034:2017"
+      ],
+      "correcta": 0,
+      "explicacion": "La 17034 es de productores de MR.",
+      "fuente": "ISO/IEC 17043 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Los proveedores se rigen por la UNE-EN ISO/IEC 17043:2023"
+    },
+    {
+      "id": "t39-q65",
+      "pregunta": "La puntuación En es satisfactoria si:",
+      "opciones": [
+        "|En| ≤ 2",
+        "|En| ≤ 1",
+        "|En| ≤ 3"
+      ],
+      "correcta": 1,
+      "explicacion": "Usa las incertidumbres expandidas.",
+      "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "que usa las incertidumbres expandidas del laboratorio y del valor asignado: |En| ≤ 1 es satisfactorio"
+    },
+    {
+      "id": "t39-q66",
+      "pregunta": "Según ENAC, entre reevaluaciones, un laboratorio debe participar en ensayos de aptitud al menos:",
+      "opciones": [
+        "Una vez por ensayo y año",
+        "Una vez cada diez años",
+        "Una vez por familia de ensayos"
+      ],
+      "correcta": 2,
+      "explicacion": "Con un plan de participación.",
+      "fuente": "ENAC NT-03 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "con al menos una participación por familia entre reevaluaciones"
+    },
+    {
+      "id": "t39-q67",
+      "pregunta": "El proveedor de ensayos de aptitud preferido por ENAC es:",
+      "opciones": [
+        "Una intercomparación entre los participantes",
+        "Uno acreditado por la ISO/IEC 17043 con acuerdo de reconocimiento con ENAC",
+        "Uno no acreditado"
+      ],
+      "correcta": 1,
+      "explicacion": "La intercomparación va la última.",
+      "fuente": "ENAC NT-03 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "primero, proveedores acreditados por la ISO/IEC 17043 con acuerdo de reconocimiento con ENAC"
+    },
+    {
+      "id": "t39-q68",
+      "pregunta": "Un resultado insatisfactorio en un ensayo de aptitud:",
+      "opciones": [
+        "Se ignora si es el primero",
+        "Supone perder la acreditación",
+        "Se investiga siempre y se documenta"
+      ],
+      "correcta": 2,
+      "explicacion": "Aunque se decida no actuar.",
+      "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Un resultado insatisfactorio se investiga siempre y se documenta, aunque se decida no actuar."
+    },
+    {
+      "id": "t39-q69",
+      "pregunta": "La incertidumbre de un material de referencia no debe superar:",
+      "opciones": [
+        "La mitad de la de la medida",
+        "El doble de la de la medida",
+        "Un tercio de la de la medida"
+      ],
+      "correcta": 2,
+      "explicacion": "Regla de la guía EEE/RM/062.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "Nunca las dos en la misma medición; su incertidumbre ≤ 1/3 de la de la medida"
     }
   ],
   "supuestos": [
@@ -786,6 +1509,170 @@
           "correcta": 0,
           "explicacion": "z = (33,6 − 30,0) / 1,5 = 2,4. Entre 2 y 3: cuestionable, señal de aviso. El 3,6 es la diferencia sin dividir; el 0,12, la diferencia relativa.",
           "fuente": "Guía Eurachem de ensayos de aptitud (2021); ISO 13528:2022"
+        }
+      ]
+    },
+    {
+      "id": "t39-s03",
+      "titulo": "Supuesto 3. Elegir el material adecuado para cada uso",
+      "enunciado": "Para un método de plomo en agua de consumo por ICP-MS, el laboratorio dispone de una disolución patrón certificada de 1000 mg/L, un MRC de agua de consumo con plomo y un material interno de agua sin valor asignado. La incertidumbre expandida de la medida es del 6 %.",
+      "preguntas": [
+        {
+          "id": "t39-s03-q1",
+          "pregunta": "¿Qué material usa para calibrar?",
+          "opciones": [
+            "El MRC de agua de consumo",
+            "El material interno",
+            "La disolución patrón",
+            "Cualquiera de los tres"
+          ],
+          "correcta": 2,
+          "explicacion": "Los MRC de matriz no suelen usarse para calibrar.",
+          "fuente": "Guía Eurachem/CITAC de trazabilidad 7.4.3 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Para calibrar se usan sustancias puras o disoluciones patrón."
+        },
+        {
+          "id": "t39-s03-q2",
+          "pregunta": "¿Y para controlar la veracidad?",
+          "opciones": [
+            "La disolución patrón de la calibración",
+            "El material interno sin valor asignado",
+            "Agua ultrapura",
+            "El MRC de agua de consumo"
+          ],
+          "correcta": 3,
+          "explicacion": "El de la calibración no sirve para controlar.",
+          "fuente": "Eurachem EEE/RM/062 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Son los de la validación y el control de la veracidad."
+        },
+        {
+          "id": "t39-s03-q3",
+          "pregunta": "¿Para qué sirve el material interno sin valor asignado?",
+          "opciones": [
+            "Solo para controlar la precisión",
+            "Para calibrar",
+            "Para controlar la veracidad",
+            "Para nada"
+          ],
+          "correcta": 0,
+          "explicacion": "Sin valor asignado no hay referencia de veracidad.",
+          "fuente": "VIM 5.13, nota 2 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "Los materiales de referencia con o sin valores asignados pueden servir para controlar la precisión de la medida"
+        },
+        {
+          "id": "t39-s03-q4",
+          "pregunta": "¿Qué incertidumbre máxima debería tener el material de referencia?",
+          "opciones": [
+            "6 %",
+            "2 %, un tercio del 6 %",
+            "3 %",
+            "12 %"
+          ],
+          "correcta": 1,
+          "explicacion": "No mayor que un tercio de la de la medida.",
+          "fuente": "Eurachem EEE/RM/062 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "la incertidumbre asociada a un MR no debería ser mayor que un tercio de la de la medida de la muestra"
+        },
+        {
+          "id": "t39-s03-q5",
+          "pregunta": "Que la disolución patrón sea trazable, ¿garantiza que el resultado sea bueno?",
+          "opciones": [
+            "Sí, siempre",
+            "Sí, si el equipo está acreditado",
+            "No: la trazabilidad es necesaria, pero no suficiente",
+            "Sí, si el MRC es de la misma matriz"
+          ],
+          "correcta": 2,
+          "explicacion": "No garantiza la incertidumbre adecuada ni la ausencia de errores humanos.",
+          "fuente": "VIM 2.41, nota 5 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "o la ausencia de errores humanos» (VIM 2.41, nota 5). Es necesaria, no suficiente."
+        }
+      ]
+    },
+    {
+      "id": "t39-s04",
+      "titulo": "Supuesto 4. Una ronda de ensayo de aptitud",
+      "enunciado": "En un ensayo de aptitud, el valor asignado es 50,0 mg/L y la desviación típica para la evaluación de la aptitud, 2,5 mg/L. El laboratorio obtiene 55,5 mg/L.",
+      "preguntas": [
+        {
+          "id": "t39-s04-q1",
+          "pregunta": "¿Cuál es su puntuación z?",
+          "opciones": [
+            "5,5",
+            "1,1",
+            "−2,2",
+            "2,2"
+          ],
+          "correcta": 3,
+          "explicacion": "(55,5 − 50,0) / 2,5.",
+          "fuente": "ISO 13528 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "x_i es el resultado del laboratorio, x_pt el valor asignado y σ_pt la desviación típica para la evaluación de la aptitud"
+        },
+        {
+          "id": "t39-s04-q2",
+          "pregunta": "¿Cómo se valora?",
+          "opciones": [
+            "Cuestionable: señal de aviso",
+            "Satisfactoria",
+            "Insatisfactoria: señal de acción",
+            "No se puede valorar"
+          ],
+          "correcta": 0,
+          "explicacion": "Entre 2,0 y 3,0.",
+          "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Entre 2,0 y 3,0 | Cuestionable | De aviso |"
+        },
+        {
+          "id": "t39-s04-q3",
+          "pregunta": "Si quisiera tener en cuenta las incertidumbres expandidas, ¿qué puntuación usaría?",
+          "opciones": [
+            "La z, con σ_pt doble",
+            "La En, satisfactoria si |En| ≤ 1",
+            "El R²",
+            "El límite de repetibilidad"
+          ],
+          "correcta": 1,
+          "explicacion": "Usa la U del laboratorio y la del valor asignado.",
+          "fuente": "Guía Eurachem de ensayos de aptitud · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Existe también la puntuación En, que usa las incertidumbres expandidas del laboratorio y del valor asignado"
+        },
+        {
+          "id": "t39-s04-q4",
+          "pregunta": "¿Qué exige ENAC antes de conceder la acreditación, cuando hay ensayos de aptitud adecuados?",
+          "opciones": [
+            "Nada",
+            "Diez participaciones",
+            "Una participación satisfactoria",
+            "Una intercomparación interna"
+          ],
+          "correcta": 2,
+          "explicacion": "Y un plan de participación por familias.",
+          "fuente": "ENAC NT-03 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "una participación satisfactoria antes de conceder la acreditación cuando existan ensayos de aptitud adecuados"
+        },
+        {
+          "id": "t39-s04-q5",
+          "pregunta": "Una comparación entre laboratorios sin evaluación del desempeño, ¿es un ensayo de aptitud?",
+          "opciones": [
+            "Sí, siempre",
+            "Sí, si la organiza ENAC",
+            "Sí, si participan más de diez laboratorios",
+            "No: es una intercomparación; solo el ensayo de aptitud evalúa el desempeño"
+          ],
+          "correcta": 3,
+          "explicacion": "ENAC NT-03.",
+          "fuente": "ENAC NT-03 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Solamente el primero [el ensayo de aptitud] lleva asociada la evaluación del desempeño de los participantes"
         }
       ]
     }
