@@ -413,6 +413,347 @@
         "tipo": "esquema",
         "valor": "nmp-moluscos"
       }
+    },
+    {
+      "id": "t19-f54",
+      "anverso": "Agua frente a alimentos: ¿qué técnica de recuento se usa más en cada caso?",
+      "reverso": "En el **agua**, la **filtración**. En los **alimentos**, el **recuento en placa** de la suspensión y sus diluciones, y el **NMP** para números bajos.",
+      "fuente": "Reglamento (CE) 2073/2005; FDA, manual bacteriológico · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "| Técnica más usada | Filtración | Recuento en placa de la suspensión y sus diluciones; NMP para números bajos |"
+    },
+    {
+      "id": "t19-f55",
+      "anverso": "¿Qué indicadores se usan en los alimentos, frente a los del agua?",
+      "reverso": "Alimentos: **aerobios mesófilos**, **enterobacterias**, ***E. coli*** y **estafilococos coagulasa positivos**. Agua: *E. coli*, coliformes, enterococos y *C. perfringens*.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "| Indicadores | E. coli, coliformes, enterococos, C. perfringens | Aerobios mesófilos, enterobacterias, E. coli, estafilococos coagulasa positivos |"
+    },
+    {
+      "id": "t19-f56",
+      "anverso": "¿Qué es un criterio microbiológico según el Reglamento 2073/2005?",
+      "reverso": "El que define la **aceptabilidad** de un **producto, un lote o un proceso** según la **ausencia, presencia o número** de microorganismos, o sus **toxinas**, por unidad de **masa, volumen, superficie o lote**.",
+      "fuente": "Reglamento (CE) 2073/2005, art. 2 · apunte §2.1",
+      "etiquetas": [
+        "reglamento"
+      ],
+      "apartado": "2.1",
+      "evidencia": "Define la aceptabilidad de un producto, un lote o un proceso según la ausencia, presencia o número de microorganismos, o sus toxinas, por unidad de masa, volumen, superficie o lote"
+    },
+    {
+      "id": "t19-f57",
+      "anverso": "¿Qué es un alimento listo para el consumo?",
+      "reverso": "El que se come **sin cocinado** ni otro tratamiento que **elimine los microorganismos peligrosos**.",
+      "fuente": "Reglamento (CE) 2073/2005, art. 2 · apunte §2.1",
+      "etiquetas": [
+        "reglamento"
+      ],
+      "apartado": "2.1",
+      "evidencia": "| Alimento listo para el consumo | El que se come sin cocinado ni otro tratamiento que elimine los microorganismos peligrosos |"
+    },
+    {
+      "id": "t19-f58",
+      "anverso": "¿A qué se refieren los límites m y M de un criterio?",
+      "reverso": "A **cada unidad analizada**, no a la media del lote.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.2",
+      "etiquetas": [
+        "planes"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Los límites se refieren a cada unidad analizada."
+    },
+    {
+      "id": "t19-f59",
+      "anverso": "Criterios de higiene del proceso en carne picada: colonias aerobias y E. coli.",
+      "reverso": "**Aerobias**: n = 5, c = 2, **m = 5 × 10⁵**, **M = 5 × 10⁶ ufc/g** (ISO 4833-1). ***E. coli***: 5 / 2 / **50 / 500 ufc/g** (ISO 16649-1 o -2).",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "etiquetas": [
+        "criterios"
+      ],
+      "apartado": "2.3",
+      "evidencia": "| Carne picada | Colonias aerobias | 5 | 2 | 5 × 10⁵ ufc/g | 5 × 10⁶ ufc/g | ISO 4833-1 |"
+    },
+    {
+      "id": "t19-f60",
+      "anverso": "Criterios de E. coli en preparados cárnicos y en frutas y hortalizas troceadas.",
+      "reverso": "**Preparados cárnicos**: 5 / 2 / **500 / 5000** ufc/g o cm². **Frutas y hortalizas troceadas** y **zumos no pasteurizados**: 5 / 2 / **100 / 1000** ufc/g. Método: ISO 16649-1 o -2.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "etiquetas": [
+        "criterios"
+      ],
+      "apartado": "2.3",
+      "evidencia": "| Frutas y hortalizas troceadas; zumos no pasteurizados | E. coli | 5 | 2 | 100 ufc/g | 1000 | ISO 16649-1 o -2 |"
+    },
+    {
+      "id": "t19-f61",
+      "anverso": "¿Qué criterio tienen los preparados deshidratados para lactantes?",
+      "reverso": "**Presunto *Bacillus cereus***: n = 5, c = 1, **m = 50 ufc/g**, **M = 500**, por la **ISO 7932**.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "etiquetas": [
+        "criterios"
+      ],
+      "apartado": "2.3",
+      "evidencia": "| Preparados para lactantes deshidratados | Presunto Bacillus cereus | 5 | 1 | 50 ufc/g | 500 | ISO 7932 |"
+    },
+    {
+      "id": "t19-f62",
+      "anverso": "Enterobacteriáceas en leche y suero en polvo y en ovoproductos.",
+      "reverso": "**Leche y suero en polvo**: 5 / 0 / **10 ufc/g**. **Ovoproductos**: 5 / 2 / **10 / 100 ufc/g**. Método: **ISO 21528-2**.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "etiquetas": [
+        "criterios"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| Leche y suero en polvo | Enterobacteriáceas | 5 | 0 | 10 ufc/g | — | ISO 21528-2 |",
+        "| Ovoproductos | Enterobacteriáceas | 5 | 2 | 10 ufc/g | 100 | ISO 21528-2 |"
+      ]
+    },
+    {
+      "id": "t19-f63",
+      "anverso": "¿Qué hace el explotador si un criterio de higiene del proceso sale insatisfactorio? ¿Y con las tendencias?",
+      "reverso": "Aplica las **medidas del anexo I**: por ejemplo, **mejorar la higiene del sacrificio** o **la selección de las materias primas**. Además **analiza la tendencia** de sus resultados y **actúa antes** de que lleguen a insatisfactorios.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.4",
+      "etiquetas": [
+        "reglamento"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "en uno de higiene del proceso: las medidas del anexo I, por ejemplo, mejorar la higiene del sacrificio o la selección de las materias primas.",
+        "Tendencias: el explotador analiza la tendencia de sus resultados y actúa antes de que lleguen a insatisfactorios."
+      ]
+    },
+    {
+      "id": "t19-f64",
+      "anverso": "Envases para muestras de alimentos: ¿cuándo valen las bolsas y cómo se rotulan?",
+      "reverso": "Envases limpios, secos, estancos, de **boca ancha** y estériles; **mejor sin vidrio**. **Bolsas de plástico estériles**, solo para productos **secos y no congelados**. **No escribir con rotulador sobre plástico**: la tinta puede atravesarlo.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.1",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3.1",
+      "evidencia": [
+        "Bolsas de plástico estériles, solo para productos secos y no congelados.",
+        "No escribir con rotulador sobre plástico: la tinta puede atravesarlo."
+      ]
+    },
+    {
+      "id": "t19-f65",
+      "anverso": "¿Para qué se envía un envase estéril de control junto a las muestras?",
+      "reverso": "Se **abre y se cierra como los de las muestras**: demuestra que **el envase y la manipulación no contaminaron**.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.1",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3.1",
+      "evidencia": "Se envía también un envase estéril de control, abierto y cerrado como los de las muestras."
+    },
+    {
+      "id": "t19-f66",
+      "anverso": "¿Cómo se controla la temperatura de las muestras líquidas en el transporte?",
+      "reverso": "Se toma una **muestra de control de temperatura**, que se mide **al tomarla y al llegar**. Se anotan también la **fecha y hora de toma y de llegada**.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.2",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3.2",
+      "evidencia": "En las muestras líquidas se toma una muestra de control de temperatura, que se mide al tomarla y al llegar."
+    },
+    {
+      "id": "t19-f67",
+      "anverso": "Piel del cuello de aves para Campylobacter: transporte y plazo.",
+      "reverso": "**Entre 1 y 8 °C**, y análisis **antes de 48 horas**. **Una muestra que ha llegado a 0 °C no vale.**",
+      "fuente": "Reglamento (CE) 2073/2005, 3.2 · apunte §3.2",
+      "etiquetas": [
+        "muestras"
+      ],
+      "apartado": "3.2",
+      "evidencia": [
+        "entre 1 y 8 °C y se analizan para Campylobacter antes de 48 horas.",
+        "Una muestra que ha llegado a 0 °C no vale."
+      ]
+    },
+    {
+      "id": "t19-f68",
+      "anverso": "RD 562/2025: ¿qué es el segundo dictamen pericial y en qué plazo se pide?",
+      "reverso": "Si el resultado es **desfavorable**, el operador lo pide en **10 días hábiles**. Puede ser una **revisión documental** (acta, muestreo, conservación, acreditación, informe), un **segundo análisis** en un laboratorio oficial elegido por él, o **las dos cosas**.",
+      "fuente": "RD 562/2025 · apunte §3.3 y Dudas declaradas",
+      "etiquetas": [
+        "control oficial"
+      ],
+      "apartado": "3.3",
+      "evidencia": "Si el resultado es desfavorable, el operador tiene derecho a un segundo dictamen pericial, que pide en 10 días hábiles."
+    },
+    {
+      "id": "t19-f69",
+      "anverso": "¿Sigue vigente algo del RD 1945/1983?",
+      "reverso": "Sus **artículos 13 a 16** siguen vigentes **en defensa del consumidor**, pero **no en el control oficial de productos alimenticios**, que desde el 3 de julio de 2025 rige el RD 562/2025.",
+      "fuente": "RD 562/2025 · apunte §3.3",
+      "etiquetas": [
+        "control oficial"
+      ],
+      "apartado": "3.3",
+      "evidencia": "salvo los artículos 13 a 16, que siguen vigentes en defensa del consumidor, pero no en el control oficial de productos alimenticios"
+    },
+    {
+      "id": "t19-f70",
+      "anverso": "¿Por qué en microbiología no hace falta guardar muestra para un segundo análisis?",
+      "reverso": "Porque **los microorganismos cambian con el tiempo**: un segundo análisis días después **no mediría lo mismo**. Al operador le queda la **revisión documental**.",
+      "fuente": "RD 562/2025 · apunte §3.3",
+      "etiquetas": [
+        "control oficial"
+      ],
+      "apartado": "3.3",
+      "evidencia": "Los microorganismos cambian con el tiempo: un segundo análisis días después no mediría lo mismo."
+    },
+    {
+      "id": "t19-f71",
+      "anverso": "Muestras de aves: ¿cómo se prepara la piel del cuello?",
+      "reverso": "Piel del cuello de **al menos 3 canales**, mezclada en **26 g**, con **234 mL de agua de peptona tamponada** (9 volúmenes) a temperatura ambiente; **Stomacher o Pulsifier un minuto**.",
+      "fuente": "ISO 17604; Reglamento (CE) 2073/2005 · apunte §3.4",
+      "etiquetas": [
+        "canales"
+      ],
+      "apartado": "3.4",
+      "evidencia": "piel del cuello de al menos 3 canales mezclada en 26 g, en 234 mL de agua de peptona tamponada (9 volúmenes)"
+    },
+    {
+      "id": "t19-f72",
+      "anverso": "Canales: superficie del muestreo no destructivo y número de canales por sesión.",
+      "reverso": "Hisopo sobre **al menos 100 cm²** por punto (**50 cm²** en pequeños rumiantes). En cada sesión, **5 canales al azar**.",
+      "fuente": "ISO 17604 · apunte §3.4",
+      "etiquetas": [
+        "canales"
+      ],
+      "apartado": "3.4",
+      "evidencia": [
+        "no destructivo (hisopo): al menos 100 cm² por punto (50 cm² en pequeños rumiantes);",
+        "en cada sesión, 5 canales al azar."
+      ]
+    },
+    {
+      "id": "t19-f73",
+      "anverso": "¿Qué papel tiene la ISO 7218 desde 2024?",
+      "reverso": "Da los **requisitos generales** de cualquier análisis microbiológico de la cadena alimentaria y, **desde 2024, prevalece** sobre lo que digan las normas específicas.",
+      "fuente": "ISO 7218 (resumen) · apunte §4",
+      "etiquetas": [
+        "preparacion"
+      ],
+      "apartado": "4",
+      "evidencia": "Desde 2024, la ISO 7218 prevalece sobre lo que digan las normas específicas."
+    },
+    {
+      "id": "t19-f74",
+      "anverso": "FDA: ¿cuánta muestra se pesa y cómo se agitan las diluciones?",
+      "reverso": "Unidad analítica pesada **± 0,1 g**: **50 g** para aerobios y NMP de coliformes; **25 g** para *Salmonella*. Diluciones: **25 veces en un arco de 30 cm en 7 segundos**. (Procedimiento estadounidense; ante la ISO, mandan los suyos.)",
+      "fuente": "FDA, manual bacteriológico · apunte §4 y Dudas declaradas",
+      "etiquetas": [
+        "preparacion"
+      ],
+      "apartado": "4",
+      "evidencia": [
+        "Pesar la unidad analítica, ± 0,1 g: 50 g para recuento de aerobios y NMP de coliformes; 25 g para Salmonella.",
+        "Agitar 25 veces en un arco de 30 cm en 7 segundos."
+      ]
+    },
+    {
+      "id": "t19-f75",
+      "anverso": "¿Batidora o Stomacher para almejas y berberechos?",
+      "reverso": "**Batidora.** El centro de referencia de moluscos la recomienda: con el **Stomacher** salen recuentos **más bajos o más variables**.",
+      "fuente": "Cefas (2023) · apunte §4",
+      "etiquetas": [
+        "preparacion",
+        "moluscos"
+      ],
+      "apartado": "4",
+      "evidencia": "Para almejas y berberechos, el centro de referencia de moluscos recomienda la batidora y no el Stomacher"
+    },
+    {
+      "id": "t19-f76",
+      "anverso": "¿Qué indican las enterobacteriáceas en un alimento?",
+      "reverso": "La **higiene**, la **eficacia del tratamiento térmico** y la **recontaminación**. Se cuentan en **VRBG** en profundidad (colonias rojo-púrpura con halo).",
+      "fuente": "Reglamento (CE) 2073/2005; resúmenes ISO · apunte §5",
+      "etiquetas": [
+        "indicadores"
+      ],
+      "apartado": "5",
+      "evidencia": "| Enterobacteriáceas (ISO 21528-2) | Higiene, eficacia del tratamiento térmico, recontaminación |"
+    },
+    {
+      "id": "t19-f77",
+      "anverso": "TBX: ¿qué E. coli se escapan?",
+      "reverso": "Las que **no tienen β-glucuronidasa**: entre **3 y 4 de cada 100** *E. coli* (ficha de PanReac).",
+      "fuente": "Ficha de PanReac · apunte §5",
+      "etiquetas": [
+        "indicadores"
+      ],
+      "apartado": "5",
+      "evidencia": "Entre 3 y 4 de cada 100 E. coli no tienen β-glucuronidasa (ficha de PanReac)."
+    },
+    {
+      "id": "t19-f78",
+      "anverso": "Baird-Parker: ¿qué placas se cuentan y cuántas colonias se confirman?",
+      "reverso": "Placas con **hasta 300 colonias en total y 150 típicas o atípicas**. Se confirman **5 típicas y 5 atípicas** por placa con la **coagulasa**. Las **atípicas** (negras sin halo, grises) también pueden ser coagulasa positivas, sobre todo en **lácteos**.",
+      "fuente": "ANMAT (ISO 6888-1:1999) · apunte §5",
+      "etiquetas": [
+        "indicadores"
+      ],
+      "apartado": "5",
+      "evidencia": "se confirman 5 típicas y 5 atípicas por placa con la coagulasa (ANMAT, ISO 6888-1:1999)."
+    },
+    {
+      "id": "t19-f79",
+      "anverso": "Agua envasada (FDA): ¿qué alternativa hay a la filtración?",
+      "reverso": "El **NMP de 10 tubos**: diez porciones de **10 mL** en **LST de doble concentración**. El agua envasada **no puede contener *E. coli***.",
+      "fuente": "FDA, manual bacteriológico, cap. 4 · apunte §6",
+      "etiquetas": [
+        "filtracion"
+      ],
+      "apartado": "6",
+      "evidencia": "La alternativa en la misma agua es el NMP de 10 tubos: diez porciones de 10 mL en LST de doble concentración."
+    },
+    {
+      "id": "t19-f80",
+      "anverso": "¿Cómo se identifican las colonias de L-EMB y qué perfil IMViC tiene E. coli?",
+      "reverso": "Con **Gram** e **IMViC** (indol, rojo de metilo, Voges-Proskauer, citrato). ***E. coli* es ++−− o −+−−.**",
+      "fuente": "FDA, manual bacteriológico · apunte §7.1",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.1",
+      "evidencia": "Las colonias de L-EMB se identifican con Gram e IMViC (indol, rojo de metilo, Voges-Proskauer, citrato). E. coli es ++−− o −+−−."
+    },
+    {
+      "id": "t19-f81",
+      "anverso": "NMP de la FDA: ¿cuánto alimento lleva cada tubo de 1 mL de 10⁻¹, 10⁻² y 10⁻³?",
+      "reverso": "**0,1, 0,01 y 0,001 g** de alimento por tubo.",
+      "fuente": "FDA, manual bacteriológico · apunte §7.1",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.1",
+      "evidencia": "1 mL de 10⁻¹, 10⁻² y 10⁻³ equivalen a 0,1, 0,01 y 0,001 g de alimento por tubo."
+    },
+    {
+      "id": "t19-f82",
+      "anverso": "¿Para qué sirve el NMP de E. coli en moluscos y qué no detecta?",
+      "reverso": "Lo exige el **Reglamento 2073/2005** (criterio 1.25) y sirve para **clasificar las zonas de producción**. No detecta las *E. coli* **sin β-glucuronidasa** (O157) ni las que **no crecen a 44 °C**.",
+      "fuente": "Cefas (2023) · apunte §7.2",
+      "etiquetas": [
+        "moluscos"
+      ],
+      "apartado": "7.2",
+      "evidencia": [
+        "Es el NMP que exige el Reglamento 2073/2005 (criterio 1.25) y el que sirve para clasificar las zonas de producción de moluscos.",
+        "Lo que no detecta: las E. coli sin β-glucuronidasa (como O157) y las que no crecen a 44 °C."
+      ]
     }
   ],
   "test": [
@@ -701,6 +1042,552 @@
       "correcta": 0,
       "explicacion": "Daría falsos positivos.",
       "fuente": "FDA, BAM capítulo 4 (2020)"
+    },
+    {
+      "id": "t19-q34",
+      "pregunta": "En los moluscos bivalvos, los recuentos de E. coli se expresan por:",
+      "opciones": [
+        "100 g",
+        "100 mL",
+        "Unidad de molusco"
+      ],
+      "correcta": 0,
+      "explicacion": "En los demás alimentos, por g, mL o cm².",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Unidad | ufc o NMP por 100 mL | ufc o NMP por g (o mL, o cm²); en moluscos, por 100 g |"
+    },
+    {
+      "id": "t19-q35",
+      "pregunta": "La técnica de recuento más usada en los alimentos es:",
+      "opciones": [
+        "La filtración por membrana",
+        "El recuento en placa de la suspensión y sus diluciones",
+        "La concentración por centrifugación"
+      ],
+      "correcta": 1,
+      "explicacion": "La filtración es la del agua.",
+      "fuente": "FDA, manual bacteriológico · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Técnica más usada | Filtración | Recuento en placa de la suspensión y sus diluciones; NMP para números bajos |"
+    },
+    {
+      "id": "t19-q36",
+      "pregunta": "Según el Reglamento 2073/2005, un alimento listo para el consumo es el que:",
+      "opciones": [
+        "Está envasado al vacío",
+        "Ha pasado un tratamiento térmico",
+        "Se come sin cocinado ni otro tratamiento que elimine los microorganismos peligrosos"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el que más preocupa por Listeria.",
+      "fuente": "Reglamento (CE) 2073/2005, art. 2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Alimento listo para el consumo | El que se come sin cocinado ni otro tratamiento que elimine los microorganismos peligrosos |"
+    },
+    {
+      "id": "t19-q37",
+      "pregunta": "Un criterio de seguridad alimentaria se aplica a:",
+      "opciones": [
+        "Los productos comercializados",
+        "Solo al proceso de producción",
+        "Solo a las superficies"
+      ],
+      "correcta": 0,
+      "explicacion": "Los de higiene del proceso no se aplican a productos comercializados.",
+      "fuente": "Reglamento (CE) 2073/2005, art. 2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Define la aceptabilidad de un producto o lote y se aplica a los productos comercializados"
+    },
+    {
+      "id": "t19-q38",
+      "pregunta": "Un plan de muestreo de dos clases es aquel en que:",
+      "opciones": [
+        "c es siempre igual a 2",
+        "m = M: cada unidad es buena o mala",
+        "No hay límite M"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el de los patógenos.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Plan de dos clases (m = M): cada unidad es buena o mala."
+    },
+    {
+      "id": "t19-q39",
+      "pregunta": "E. coli en carne picada (n = 5, c = 2, m = 50, M = 500 ufc/g): 20, 120, 10, 300 y 30 ufc/g. El lote es:",
+      "opciones": [
+        "Satisfactorio",
+        "Insatisfactorio",
+        "Aceptable"
+      ],
+      "correcta": 2,
+      "explicacion": "Dos entre m y M, y c = 2.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "20, 120, 10, 300 y 30 → dos entre 50 y 500 (c = 2): aceptable."
+    },
+    {
+      "id": "t19-q40",
+      "pregunta": "En un plan de tres clases, M es:",
+      "opciones": [
+        "El límite que no puede superar ninguna unidad",
+        "El número de unidades de la muestra",
+        "El límite «bueno»"
+      ],
+      "correcta": 0,
+      "explicacion": "El «bueno» es m; las unidades, n.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "M: el límite que no puede superar ninguna unidad."
+    },
+    {
+      "id": "t19-q41",
+      "pregunta": "En los preparados deshidratados para lactantes, el Reglamento 2073/2005 fija un criterio de higiene del proceso para:",
+      "opciones": [
+        "Estafilococos coagulasa positivos",
+        "Presunto Bacillus cereus",
+        "Colonias aerobias"
+      ],
+      "correcta": 1,
+      "explicacion": "n = 5, c = 1, 50/500 ufc/g, ISO 7932.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Preparados para lactantes deshidratados | Presunto Bacillus cereus | 5 | 1 | 50 ufc/g | 500 | ISO 7932 |"
+    },
+    {
+      "id": "t19-q42",
+      "pregunta": "El criterio de E. coli en frutas y hortalizas troceadas y zumos no pasteurizados es:",
+      "opciones": [
+        "n = 5, c = 2, m = 50, M = 500 ufc/g",
+        "n = 5, c = 1, m = 230, M = 700 NMP/100 g",
+        "n = 5, c = 2, m = 100, M = 1000 ufc/g"
+      ],
+      "correcta": 2,
+      "explicacion": "50/500 es la carne picada; 230/700, los moluscos vivos.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Frutas y hortalizas troceadas; zumos no pasteurizados | E. coli | 5 | 2 | 100 ufc/g | 1000 | ISO 16649-1 o -2 |"
+    },
+    {
+      "id": "t19-q43",
+      "pregunta": "En carne picada, el criterio de colonias aerobias tiene una m de:",
+      "opciones": [
+        "5 × 10⁵ ufc/g",
+        "50 ufc/g",
+        "10⁴ ufc/g"
+      ],
+      "correcta": 0,
+      "explicacion": "M = 5 × 10⁶ ufc/g; 50 ufc/g es la m de E. coli.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Carne picada | Colonias aerobias | 5 | 2 | 5 × 10⁵ ufc/g | 5 × 10⁶ ufc/g | ISO 4833-1 |"
+    },
+    {
+      "id": "t19-q44",
+      "pregunta": "En crustáceos y moluscos cocinados sin cáscara, el criterio de estafilococos coagulasa positivos es:",
+      "opciones": [
+        "n = 5, c = 2, m = 10⁴, M = 10⁵ ufc/g",
+        "n = 5, c = 2, m = 100, M = 1000 ufc/g",
+        "Ausencia en 25 g"
+      ],
+      "correcta": 1,
+      "explicacion": "10⁴/10⁵ es el de quesos de leche cruda.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| | Estafilococos coagulasa positivos | 5 | 2 | 100 ufc/g | 1000 | ISO 6888-1 o -2 |"
+    },
+    {
+      "id": "t19-q45",
+      "pregunta": "Según el Reglamento 2073/2005, los métodos alternativos a los de referencia deben validarse con la norma:",
+      "opciones": [
+        "ISO 17025",
+        "ISO 18593",
+        "EN ISO 16140-2"
+      ],
+      "correcta": 2,
+      "explicacion": "La 18593 es la de superficies.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Valen métodos alternativos validados con la EN ISO 16140-2."
+    },
+    {
+      "id": "t19-q46",
+      "pregunta": "Si un criterio de seguridad alimentaria sale insatisfactorio:",
+      "opciones": [
+        "El lote se retira o se recupera",
+        "Basta con mejorar la higiene del sacrificio",
+        "Se repite el análisis hasta que salga bien"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo segundo es la medida de un criterio de higiene del proceso.",
+      "fuente": "Reglamento (CE) 2073/2005 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "en un criterio de seguridad: el lote se retira o se recupera;"
+    },
+    {
+      "id": "t19-q47",
+      "pregunta": "Según la FDA, cada unidad de muestra de un alimento debe ser de al menos:",
+      "opciones": [
+        "10 g",
+        "100 g",
+        "1 kg"
+      ],
+      "correcta": 1,
+      "explicacion": "Si se puede, en su envase original.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Al menos 100 g por unidad de muestra."
+    },
+    {
+      "id": "t19-q48",
+      "pregunta": "Las bolsas de plástico estériles para muestras de alimentos solo se usan con productos:",
+      "opciones": [
+        "Líquidos",
+        "Congelados",
+        "Secos y no congelados"
+      ],
+      "correcta": 2,
+      "explicacion": "Para lo demás, envases de boca ancha, mejor sin vidrio.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Bolsas de plástico estériles, solo para productos secos y no congelados."
+    },
+    {
+      "id": "t19-q49",
+      "pregunta": "No se debe escribir con rotulador sobre un envase de plástico porque:",
+      "opciones": [
+        "La tinta puede atravesarlo",
+        "Se borra con el frío",
+        "Está prohibido por el reglamento"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada unidad debe ir identificada.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "No escribir con rotulador sobre plástico: la tinta puede atravesarlo."
+    },
+    {
+      "id": "t19-q50",
+      "pregunta": "Una muestra de piel del cuello de aves para Campylobacter llega al laboratorio a 0 °C:",
+      "opciones": [
+        "Vale, porque está fría",
+        "No vale",
+        "Vale si se analiza antes de 48 h"
+      ],
+      "correcta": 1,
+      "explicacion": "Se transporta entre 1 y 8 °C.",
+      "fuente": "Reglamento (CE) 2073/2005, 3.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Una muestra que ha llegado a 0 °C no vale."
+    },
+    {
+      "id": "t19-q51",
+      "pregunta": "Según la FDA, los moluscos con concha se transportan:",
+      "opciones": [
+        "Congelados",
+        "A temperatura ambiente",
+        "Por encima de 0 °C y por debajo de 10 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "Analizar antes de 6 h; nunca más de 24.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Moluscos con concha | Por encima de 0 °C y por debajo de 10 °C | Íd. |"
+    },
+    {
+      "id": "t19-q52",
+      "pregunta": "Según la FDA, un alimento congelado se transporta:",
+      "opciones": [
+        "Siempre congelado, en envases preenfriados",
+        "Descongelado a 0-4 °C",
+        "A temperatura ambiente"
+      ],
+      "correcta": 0,
+      "explicacion": "Los refrigerados, a 0-4 °C sin congelar.",
+      "fuente": "FDA, manual bacteriológico, cap. 1 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Congelado | Siempre congelado, en envases preenfriados | — |"
+    },
+    {
+      "id": "t19-q53",
+      "pregunta": "Según el RD 562/2025, el operador pide el segundo dictamen pericial en un plazo de:",
+      "opciones": [
+        "3 días naturales",
+        "10 días hábiles",
+        "1 mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Tras un resultado desfavorable.",
+      "fuente": "RD 562/2025 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "el operador tiene derecho a un segundo dictamen pericial, que pide en 10 días hábiles."
+    },
+    {
+      "id": "t19-q54",
+      "pregunta": "El segundo dictamen pericial del RD 562/2025 puede consistir en:",
+      "opciones": [
+        "Solo un análisis dirimente en un tercer laboratorio",
+        "Solo una inspección del establecimiento",
+        "Una revisión documental, un segundo análisis o las dos cosas"
+      ],
+      "correcta": 2,
+      "explicacion": "El dirimente era del RD 1945/1983.",
+      "fuente": "RD 562/2025 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "una revisión documental por un experto (acta, método de muestreo, conservación, acreditación, informe de ensayo…);"
+    },
+    {
+      "id": "t19-q55",
+      "pregunta": "En el muestreo destructivo de canales se cortan:",
+      "opciones": [
+        "4 trozos de tejido que suman 20 cm²",
+        "1 trozo de 100 cm²",
+        "10 trozos de 400 cm²"
+      ],
+      "correcta": 0,
+      "explicacion": "El hisopo, al menos 100 cm² por punto.",
+      "fuente": "ISO 17604 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "destructivo: se cortan 4 trozos de tejido que suman 20 cm²;"
+    },
+    {
+      "id": "t19-q56",
+      "pregunta": "Para buscar Salmonella en canales se usa:",
+      "opciones": [
+        "Un hisopo sobre 10 cm²",
+        "Una esponja abrasiva sobre 400 cm² como mínimo",
+        "Una placa de contacto"
+      ],
+      "correcta": 1,
+      "explicacion": "Para recuentos, destructivo (20 cm²) o hisopo (100 cm²).",
+      "fuente": "ISO 17604 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "para Salmonella: esponja abrasiva sobre 400 cm² como mínimo;"
+    },
+    {
+      "id": "t19-q57",
+      "pregunta": "La muestra de piel del cuello de aves se prepara con:",
+      "opciones": [
+        "10 g de piel en 10 mL de agua",
+        "100 g de carne en 900 mL de Butterfield",
+        "26 g de piel de al menos 3 canales en 234 mL de agua de peptona tamponada"
+      ],
+      "correcta": 2,
+      "explicacion": "9 volúmenes: dilución 1/10.",
+      "fuente": "ISO 17604; Reglamento (CE) 2073/2005 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "piel del cuello de al menos 3 canales mezclada en 26 g, en 234 mL de agua de peptona tamponada (9 volúmenes)"
+    },
+    {
+      "id": "t19-q58",
+      "pregunta": "Desde 2024, la ISO 7218:",
+      "opciones": [
+        "Prevalece sobre lo que digan las normas específicas",
+        "Ha sido derogada",
+        "Solo se aplica al agua"
+      ],
+      "correcta": 0,
+      "explicacion": "Da los requisitos generales del análisis microbiológico de la cadena alimentaria.",
+      "fuente": "ISO 7218 (resumen) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Desde 2024, la ISO 7218 prevalece sobre lo que digan las normas específicas."
+    },
+    {
+      "id": "t19-q59",
+      "pregunta": "Según la FDA, la unidad analítica para buscar Salmonella es de:",
+      "opciones": [
+        "50 g",
+        "25 g",
+        "100 g"
+      ],
+      "correcta": 1,
+      "explicacion": "50 g para aerobios y NMP de coliformes.",
+      "fuente": "FDA, manual bacteriológico · apunte §4",
+      "apartado": "4",
+      "evidencia": "50 g para recuento de aerobios y NMP de coliformes; 25 g para Salmonella."
+    },
+    {
+      "id": "t19-q60",
+      "pregunta": "Para homogeneizar almejas y berberechos, el centro de referencia de moluscos recomienda:",
+      "opciones": [
+        "El Stomacher, porque es más suave",
+        "Agitar a mano",
+        "La batidora, porque con el Stomacher salen recuentos más bajos o más variables"
+      ],
+      "correcta": 2,
+      "explicacion": "La batidora de alta velocidad.",
+      "fuente": "Cefas (2023) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Para almejas y berberechos, el centro de referencia de moluscos recomienda la batidora y no el Stomacher"
+    },
+    {
+      "id": "t19-q61",
+      "pregunta": "Para los moluscos, carne y líquido intravalvar se homogeneizan con 2 mL de diluyente por gramo, lo que da:",
+      "opciones": [
+        "Un homogeneizado 1:3",
+        "La dilución 10⁻¹ directamente",
+        "Un homogeneizado 1:2"
+      ],
+      "correcta": 0,
+      "explicacion": "Luego 30 mL + 70 mL = 10⁻¹.",
+      "fuente": "ISO 6887-3; Cefas (2023) · apunte §4",
+      "apartado": "4",
+      "evidencia": "carne y líquido intravalvar con 2 mL de diluyente por gramo: homogeneizado 1:3;"
+    },
+    {
+      "id": "t19-q62",
+      "pregunta": "En el recuento de aerobios mesófilos (ISO 4833-1), el PCA se añade:",
+      "opciones": [
+        "En superficie, 0,1 mL",
+        "A 44-47 °C, en profundidad, sobre 1 mL",
+        "Por filtración de 100 mL"
+      ],
+      "correcta": 1,
+      "explicacion": "Se incuba a 30 °C, 72 h.",
+      "fuente": "ANMAT (ISO 4833-1) · apunte §5",
+      "apartado": "5",
+      "evidencia": "PCA a 44-47 °C, en profundidad, 1 mL"
+    },
+    {
+      "id": "t19-q63",
+      "pregunta": "Las colonias de coliformes en VRBA se confirman por:",
+      "opciones": [
+        "La coagulasa",
+        "El color azul-verde",
+        "La producción de gas en caldo BGLB"
+      ],
+      "correcta": 2,
+      "explicacion": "Se prueban 10 colonias.",
+      "fuente": "FDA, manual bacteriológico · apunte §5",
+      "apartado": "5",
+      "evidencia": "con halo de sales biliares precipitadas | Gas en caldo BGLB (10 colonias) |"
+    },
+    {
+      "id": "t19-q64",
+      "pregunta": "En el TBX, si se sospechan células de E. coli dañadas:",
+      "opciones": [
+        "Se incuba primero 4 h a 37 °C y luego a 44 °C, sin pasar de 24 h ni de 45 °C",
+        "Se incuba directamente a 50 °C",
+        "Se incuba 72 h a 30 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "Son cifras de la ficha de PanReac.",
+      "fuente": "Ficha de PanReac · apunte §5 y Dudas declaradas",
+      "apartado": "5",
+      "evidencia": "Si hay células dañadas, se incuba primero 4 h a 37 °C y luego a 44 °C, sin pasar de 24 h en total ni de 45 °C."
+    },
+    {
+      "id": "t19-q65",
+      "pregunta": "En el recuento de estafilococos en Baird-Parker se confirman por placa con la coagulasa:",
+      "opciones": [
+        "Solo 1 colonia típica",
+        "5 colonias típicas y 5 atípicas",
+        "Todas las colonias"
+      ],
+      "correcta": 1,
+      "explicacion": "Las atípicas también pueden ser coagulasa positivas.",
+      "fuente": "ANMAT (ISO 6888-1:1999) · apunte §5",
+      "apartado": "5",
+      "evidencia": "se confirman 5 típicas y 5 atípicas por placa con la coagulasa (ANMAT, ISO 6888-1:1999)."
+    },
+    {
+      "id": "t19-q66",
+      "pregunta": "Según el resumen de la edición de 2021 de la ISO 6888-1, el agar Baird-Parker se incuba a:",
+      "opciones": [
+        "44 °C, 18-24 h",
+        "30 °C, 72 h",
+        "34-38 °C, 24 + 24 h"
+      ],
+      "correcta": 2,
+      "explicacion": "La edición de 1999 daba 35 o 37 °C.",
+      "fuente": "Resumen de la ISO 6888-1:2021 · apunte §5 y Dudas declaradas",
+      "apartado": "5",
+      "evidencia": "34-38 °C (edición 2021), 24 + 24 h"
+    },
+    {
+      "id": "t19-q67",
+      "pregunta": "La técnica de «membrana» de la ISO 16649-1 sirve para:",
+      "opciones": [
+        "Resucitar células dañadas: 4 h a 37 °C sobre MMGA antes de pasar al TBX",
+        "Filtrar 100 mL del alimento",
+        "Concentrar Legionella"
+      ],
+      "correcta": 0,
+      "explicacion": "Para E. coli estresado (congelado, desecado, salado).",
+      "fuente": "FDA, manual bacteriológico · apunte §6",
+      "apartado": "6",
+      "evidencia": "4 ± 1 h a 37 °C, para que las células dañadas se recuperen."
+    },
+    {
+      "id": "t19-q68",
+      "pregunta": "En la filtración de agua envasada con medio m-Endo (FDA), los coliformes dan colonias:",
+      "opciones": [
+        "Azul-verdes",
+        "Rosas a rojo oscuro con brillo metálico verde",
+        "Negras con halo claro"
+      ],
+      "correcta": 1,
+      "explicacion": "Se confirman en LST y después en BGLB.",
+      "fuente": "FDA, manual bacteriológico, cap. 4 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Contar las colonias rosas a rojo oscuro con brillo metálico verde."
+    },
+    {
+      "id": "t19-q69",
+      "pregunta": "En la prueba IMViC, E. coli da el perfil:",
+      "opciones": [
+        "−−++",
+        "++++",
+        "++−− o −+−−"
+      ],
+      "correcta": 2,
+      "explicacion": "Indol, rojo de metilo, Voges-Proskauer, citrato.",
+      "fuente": "FDA, manual bacteriológico · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Las colonias de L-EMB se identifican con Gram e IMViC (indol, rojo de metilo, Voges-Proskauer, citrato). E. coli es ++−− o −+−−."
+    },
+    {
+      "id": "t19-q70",
+      "pregunta": "En agar L-EMB, las colonias de E. coli son:",
+      "opciones": [
+        "De centro oscuro, planas, con o sin brillo metálico",
+        "Negras con halo claro",
+        "Rosas con halo de bilis"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la fase completa del NMP de la FDA.",
+      "fuente": "FDA, manual bacteriológico · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Colonias de centro oscuro, planas, con o sin brillo metálico"
+    },
+    {
+      "id": "t19-q71",
+      "pregunta": "En la tabla 5 × 3 de Cefas, el código 5-2-0 corresponde a:",
+      "opciones": [
+        "700 NMP/100 g",
+        "490 NMP/100 g",
+        "230 NMP/100 g"
+      ],
+      "correcta": 1,
+      "explicacion": "5-0-0 → 230 (m); 5-2-1 → 700 (M).",
+      "fuente": "Cefas (2023) · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "| 5-1-0 | 330 | | 5-2-0 | 490 |"
+    },
+    {
+      "id": "t19-q72",
+      "pregunta": "El NMP de E. coli en moluscos (ISO 16649-3) no detecta:",
+      "opciones": [
+        "Las E. coli fermentadoras de lactosa",
+        "Ninguna E. coli",
+        "Las E. coli sin β-glucuronidasa, como O157, ni las que no crecen a 44 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "El positivo exige colonias azules en TBX a 44 °C.",
+      "fuente": "Cefas (2023) · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Lo que no detecta: las E. coli sin β-glucuronidasa (como O157) y las que no crecen a 44 °C."
     }
   ],
   "supuestos": [
@@ -795,6 +1682,170 @@
           "correcta": 1,
           "explicacion": "Con c = 1, dos o más por encima de 230 es insatisfactorio.",
           "fuente": "Reglamento (CE) 2073/2005, anexo I, capítulo 1"
+        }
+      ]
+    },
+    {
+      "id": "t19-s03",
+      "titulo": "Control oficial en una quesería",
+      "enunciado": "Un inspector toma en una quesería cinco unidades de un queso de leche cruda para estafilococos coagulasa positivos (ISO 6888-2). Los resultados son 2 × 10³, 3 × 10⁴, 5 × 10⁴, 8 × 10³ y 1 × 10⁴ ufc/g. El operador pregunta si puede pedir un segundo análisis.",
+      "preguntas": [
+        {
+          "id": "t19-s03-q1",
+          "pregunta": "¿Qué criterio se aplica?",
+          "opciones": [
+            "n = 5, c = 2, m = 10⁴, M = 10⁵ ufc/g",
+            "n = 5, c = 0, ausencia en 25 g",
+            "n = 5, c = 2, m = 100, M = 1000 ufc/g",
+            "n = 5, c = 1, m = 230, M = 700"
+          ],
+          "correcta": 0,
+          "explicacion": "100/1000 es de crustáceos y moluscos cocinados.",
+          "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Quesos de leche cruda | Estafilococos coagulasa positivos | 5 | 2 | 10⁴ ufc/g | 10⁵ ufc/g | ISO 6888-2 |"
+        },
+        {
+          "id": "t19-s03-q2",
+          "pregunta": "¿Cuál es el resultado del lote?",
+          "opciones": [
+            "Satisfactorio",
+            "Insatisfactorio",
+            "No se puede valorar",
+            "Aceptable: dos valores entre m y M, con c = 2"
+          ],
+          "correcta": 3,
+          "explicacion": "1 × 10⁴ es igual a m (≤ m); 3 × 10⁴ y 5 × 10⁴ están entre m y M.",
+          "fuente": "Reglamento (CE) 2073/2005 · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "| Aceptable | Como máximo c valores entre m y M, y el resto ≤ m |"
+        },
+        {
+          "id": "t19-s03-q3",
+          "pregunta": "En el Baird-Parker hay colonias negras con halo y otras negras sin halo. ¿Qué se hace?",
+          "opciones": [
+            "Contar solo las típicas",
+            "Confirmar 5 típicas y 5 atípicas por placa con la coagulasa: las atípicas también pueden ser positivas, sobre todo en lácteos",
+            "Descartar la placa",
+            "Confirmar con la oxidasa"
+          ],
+          "correcta": 1,
+          "explicacion": "La coagulasa es la prueba de confirmación.",
+          "fuente": "ANMAT (ISO 6888-1:1999) · apunte §5",
+          "apartado": "5",
+          "evidencia": "Hay colonias atípicas (negras sin halo, grises) que también pueden ser coagulasa positivas, sobre todo en lácteos."
+        },
+        {
+          "id": "t19-s03-q4",
+          "pregunta": "¿Hacía falta recoger muestra para un segundo análisis?",
+          "opciones": [
+            "Sí: siempre tres ejemplares precintados",
+            "Sí, si el operador lo pide, aunque sea microbiológico",
+            "No: el RD 562/2025 pone como ejemplo de excepción las muestras para análisis microbiológico",
+            "Solo si el resultado es insatisfactorio"
+          ],
+          "correcta": 2,
+          "explicacion": "Los microorganismos cambian con el tiempo.",
+          "fuente": "RD 562/2025 · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "el primer ejemplo que da el real decreto son las «muestras destinadas a ser sometidas a análisis microbiológicos»."
+        },
+        {
+          "id": "t19-s03-q5",
+          "pregunta": "Si el resultado hubiera sido desfavorable, ¿qué le quedaría al operador?",
+          "opciones": [
+            "La revisión documental, dentro del segundo dictamen pericial",
+            "El análisis dirimente en un tercer laboratorio",
+            "Nada",
+            "Repetir el muestreo a su elección"
+          ],
+          "correcta": 0,
+          "explicacion": "El dirimente era del RD 1945/1983.",
+          "fuente": "RD 562/2025 · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "Al operador le queda la revisión documental."
+        }
+      ]
+    },
+    {
+      "id": "t19-s04",
+      "titulo": "Control de canales en un matadero de vacuno",
+      "enunciado": "Un matadero de vacuno organiza el control de higiene del proceso de sus canales para colonias aerobias y enterobacteriáceas. Tomará muestras con hisopo en cada sesión y valorará los resultados con el Reglamento (CE) 2073/2005.",
+      "preguntas": [
+        {
+          "id": "t19-s04-q1",
+          "pregunta": "¿Qué superficie se muestrea con hisopo en cada punto?",
+          "opciones": [
+            "20 cm²",
+            "400 cm²",
+            "1 cm²",
+            "Al menos 100 cm²"
+          ],
+          "correcta": 3,
+          "explicacion": "20 cm² es el destructivo; 400 cm², la esponja para Salmonella.",
+          "fuente": "ISO 17604 · apunte §3.4",
+          "apartado": "3.4",
+          "evidencia": "no destructivo (hisopo): al menos 100 cm² por punto (50 cm² en pequeños rumiantes);"
+        },
+        {
+          "id": "t19-s04-q2",
+          "pregunta": "¿Cuántas canales se muestrean por sesión?",
+          "opciones": [
+            "5, al azar",
+            "1, la más sucia",
+            "Todas",
+            "10, las primeras del día"
+          ],
+          "correcta": 0,
+          "explicacion": "Al azar, para que sea representativo.",
+          "fuente": "ISO 17604 · apunte §3.4",
+          "apartado": "3.4",
+          "evidencia": "en cada sesión, 5 canales al azar."
+        },
+        {
+          "id": "t19-s04-q3",
+          "pregunta": "¿Cuáles son los límites de enterobacteriáceas en canales de vacuno?",
+          "opciones": [
+            "m = 3,5 y M = 5,0 log ufc/cm²",
+            "m = 1,5 y M = 2,5 log ufc/cm²",
+            "m = 10 y M = 100 ufc/g",
+            "Ausencia en 25 g"
+          ],
+          "correcta": 1,
+          "explicacion": "3,5/5,0 es el de colonias aerobias.",
+          "fuente": "Reglamento (CE) 2073/2005, anexo I, cap. 2 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| | Enterobacteriáceas | — | — | 1,5 log ufc/cm² | 2,5 log ufc/cm² | ISO 21528-2 |"
+        },
+        {
+          "id": "t19-s04-q4",
+          "pregunta": "¿Cómo se valoran los resultados de las canales?",
+          "opciones": [
+            "Por el valor más alto del día",
+            "Por la mediana semanal",
+            "Por la media logarítmica diaria",
+            "Unidad a unidad con n = 5 y c = 2"
+          ],
+          "correcta": 2,
+          "explicacion": "Se toma el logaritmo de cada resultado y se promedian.",
+          "fuente": "Reglamento (CE) 2073/2005 · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Las canales se valoran por la media logarítmica diaria: se toma el logaritmo de cada resultado y se promedian."
+        },
+        {
+          "id": "t19-s04-q5",
+          "pregunta": "Si el resultado es insatisfactorio, ¿qué prevé el reglamento?",
+          "opciones": [
+            "Retirar del mercado todas las canales",
+            "Cerrar el matadero",
+            "Nada, porque es un criterio orientativo",
+            "Medidas del anexo I, como mejorar la higiene del sacrificio"
+          ],
+          "correcta": 3,
+          "explicacion": "Es un criterio de higiene del proceso.",
+          "fuente": "Reglamento (CE) 2073/2005 · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "en uno de higiene del proceso: las medidas del anexo I, por ejemplo, mejorar la higiene del sacrificio o la selección de las materias primas."
         }
       ]
     }
