@@ -398,6 +398,119 @@
         "tipo": "esquema",
         "valor": "cadena-transmision"
       }
+    },
+    {
+      "id": "t09-f51",
+      "anverso": "¿De qué grupo son *Staphylococcus aureus* y *Listeria monocytogenes*?",
+      "reverso": "Los dos, del **grupo 2**. El estafilococo lleva además la nota **T** (toxinas).",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "etiquetas": [
+        "clasificacion"
+      ],
+      "apartado": "3",
+      "evidencia": "Staphylococcus aureus; Listeria monocytogenes | 2 (el estafilococo, T)"
+    },
+    {
+      "id": "t09-f52",
+      "anverso": "Según la guía, ¿a qué se deben sobre todo las exposiciones en un laboratorio de nivel 2? ¿Y qué se suma en el nivel 3?",
+      "reverso": "En el **nivel 2**, sobre todo a **accidentes**: vía **percutánea o mucosa** e **ingestión**. En el **nivel 3** se suma la **inhalación de aerosoles**.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §4",
+      "etiquetas": [
+        "vias"
+      ],
+      "apartado": "4",
+      "evidencia": "en un laboratorio de nivel 2 las exposiciones se deben sobre todo a accidentes: vía percutánea o mucosa e ingestión. En el nivel 3 se suma la inhalación de aerosoles."
+    },
+    {
+      "id": "t09-f53",
+      "anverso": "Si la evaluación muestra exposición solo a un agente del grupo 1 sin riesgo conocido, ¿qué artículos no se aplican?",
+      "reverso": "Los **arts. 5 a 15** del RD 664/1997.",
+      "fuente": "RD 664/1997, art. 4 · apunte §5.1",
+      "etiquetas": [
+        "evaluacion"
+      ],
+      "apartado": "5.1",
+      "evidencia": "si la exposición es solo a un agente del grupo 1 sin riesgo conocido, no se aplican los arts. 5 a 15."
+    },
+    {
+      "id": "t09-f54",
+      "anverso": "Anexo IV: ¿qué medidas son exclusivas del nivel 4?",
+      "reverso": "Lugar **separado** de otras actividades; poder **precintarse**; **presión negativa**; **HEPA a la entrada y a la salida**; superficies impermeables en **mesa, paredes, suelo y techo**; acceso **por esclusa**; laboratorio **con equipo propio**.",
+      "fuente": "RD 664/1997, anexo IV · apunte §5.3",
+      "etiquetas": [
+        "contencion"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "Acceso solo al personal designado | Aconsejable | Sí | Sí, por esclusa",
+        "Superficies impermeables y fáciles de limpiar | Mesa y suelo | Mesa, suelo y las que diga la evaluación | Mesa, paredes, suelo y techo"
+      ]
+    },
+    {
+      "id": "t09-f55",
+      "anverso": "¿Qué es una esclusa?",
+      "reverso": "Una **cámara aislada** que separa el **lado limpio** del **restringido**, con vestuarios o duchas y puertas preferiblemente **enclavadas**.",
+      "fuente": "RD 664/1997, anexo IV · apunte §5.3",
+      "etiquetas": [
+        "contencion"
+      ],
+      "apartado": "5.3",
+      "evidencia": "La esclusa es una cámara aislada que separa el lado limpio del restringido, con vestuarios o duchas y puertas preferiblemente enclavadas."
+    },
+    {
+      "id": "t09-f56",
+      "anverso": "Art. 11: ¿a quién informa el empresario de un accidente que haya podido liberar un agente peligroso, y cuándo?",
+      "reverso": "**Inmediatamente**, a las **autoridades laboral y sanitaria**. Si lo piden, les informa también, entre otras cosas, del **plan de emergencia** frente a un fallo de la contención con agentes de los grupos 3 o 4.",
+      "fuente": "RD 664/1997, art. 11 · apunte §5.5",
+      "etiquetas": [
+        "notificacion"
+      ],
+      "apartado": "5.5",
+      "evidencia": "el empresario informa inmediatamente a las autoridades laboral y sanitaria de cualquier accidente o incidente que haya podido liberar un agente capaz de causar una infección o enfermedad grave."
+    },
+    {
+      "id": "t09-f57",
+      "anverso": "Nivel 2 de la guía: ¿qué equipos de emergencia hay y a qué distancia?",
+      "reverso": "**Lavamanos junto a la salida**, **duchas de emergencia** y **lavaojos**, que se alcancen **en menos de 15 segundos** desde cualquier puesto.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "etiquetas": [
+        "buenas-practicas"
+      ],
+      "apartado": "5.6",
+      "evidencia": "También en el nivel 2: lavamanos junto a la salida, duchas de emergencia y lavaojos, que se alcancen en menos de 15 segundos desde cualquier puesto."
+    },
+    {
+      "id": "t09-f58",
+      "anverso": "Material cortante y punzante: tres buenas prácticas de la guía.",
+      "reverso": "**Evitar agujas** y material cortante innecesario; **sustituir el vidrio por plástico**; los objetos cortantes y punzantes, a **contenedores rígidos**.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "etiquetas": [
+        "buenas-practicas"
+      ],
+      "apartado": "5.6",
+      "evidencia": "Evitar agujas y material cortante innecesario; sustituir el vidrio por plástico; los objetos cortantes y punzantes, a contenedores rígidos."
+    },
+    {
+      "id": "t09-f59",
+      "anverso": "Buenas prácticas personales: heridas, joyas, pelo y auriculares.",
+      "reverso": "**Cubrir las heridas** con apósitos impermeables; quitarse las **joyas** que puedan romper los guantes; **pelo recogido**; **sin auriculares**.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "etiquetas": [
+        "buenas-practicas"
+      ],
+      "apartado": "5.6",
+      "evidencia": "Cubrir las heridas con apósitos impermeables; quitarse las joyas que puedan romper los guantes; pelo recogido; sin auriculares."
+    },
+    {
+      "id": "t09-f60",
+      "anverso": "Nivel 2: ¿pueden salir del laboratorio los materiales infecciosos?",
+      "reverso": "**No sin descontaminar**. Si hay que transportarlos fuera, van en **contenedores específicos**.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "etiquetas": [
+        "buenas-practicas"
+      ],
+      "apartado": "5.6",
+      "evidencia": "En el nivel 2, los materiales infecciosos no salen del laboratorio sin descontaminar, y si hay que transportarlos fuera, van en contenedores específicos."
     }
   ],
   "test": [
@@ -685,6 +798,454 @@
       "correcta": 2,
       "explicacion": "Art. 7.1.c. La ducha antes de salir es una medida del anexo IV: no en el nivel 2, aconsejable en el 3 y en el 4.",
       "fuente": "RD 664/1997, art. 7.1.c"
+    },
+    {
+      "id": "t09-q34",
+      "pregunta": "Según el art. 2.a del RD 664/1997, son agentes biológicos:",
+      "opciones": [
+        "Los microorganismos, incluidos los genéticamente modificados, los cultivos celulares y los endoparásitos humanos, susceptibles de originar infección, alergia o toxicidad",
+        "Solo las bacterias y los virus patógenos para el hombre",
+        "Los microorganismos patógenos, excluidos los genéticamente modificados"
+      ],
+      "correcta": 0,
+      "explicacion": "La definición incluye los modificados genéticamente, los cultivos celulares y los endoparásitos, y cualquier infección, alergia o toxicidad.",
+      "fuente": "RD 664/1997, art. 2.a · apunte §2",
+      "apartado": "2",
+      "evidencia": "Agentes biológicos (art. 2.a): microorganismos, con inclusión de los genéticamente modificados, cultivos celulares y endoparásitos humanos, susceptibles de originar cualquier tipo de infección, alergia o toxicidad."
+    },
+    {
+      "id": "t09-q35",
+      "pregunta": "El resultado del crecimiento in vitro de células obtenidas de organismos multicelulares es, según el RD 664/1997:",
+      "opciones": [
+        "Un microorganismo",
+        "Un cultivo celular",
+        "Un endoparásito"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la definición de cultivo celular (art. 2.c).",
+      "fuente": "RD 664/1997, art. 2.c · apunte §2",
+      "apartado": "2",
+      "evidencia": "Cultivo celular (art. 2.c): el resultado del crecimiento in vitro de células obtenidas de organismos multicelulares."
+    },
+    {
+      "id": "t09-q36",
+      "pregunta": "Un laboratorio de diagnóstico microbiológico realiza, a efectos del RD 664/1997, una actividad:",
+      "opciones": [
+        "Sin intención deliberada de manipular agentes biológicos, como las del anexo I",
+        "Excluida del ámbito del real decreto",
+        "Con intención deliberada de manipular agentes biológicos"
+      ],
+      "correcta": 2,
+      "explicacion": "El anexo I incluye los laboratorios clínicos, pero excluye los de diagnóstico microbiológico, porque en estos la manipulación es deliberada.",
+      "fuente": "RD 664/1997, anexo I · apunte §2",
+      "apartado": "2",
+      "evidencia": "Incluye los laboratorios clínicos, veterinarios, de diagnóstico y de investigación, con exclusión de los laboratorios de diagnóstico microbiológico, porque en estos la manipulación es deliberada."
+    },
+    {
+      "id": "t09-q37",
+      "pregunta": "En el anexo II vigente del RD 664/1997, el grupo 4 incluye:",
+      "opciones": [
+        "Solo virus",
+        "Virus y bacterias",
+        "Virus, hongos y parásitos"
+      ],
+      "correcta": 0,
+      "explicacion": "Solo virus (el Ébola, por ejemplo): ninguna bacteria, hongo ni parásito llega al grupo 4.",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "apartado": "3",
+      "evidencia": "En el grupo 4 solo hay virus (el Ébola, por ejemplo). Ninguna bacteria, hongo ni parásito llega al grupo 4."
+    },
+    {
+      "id": "t09-q38",
+      "pregunta": "En el anexo II del RD 664/1997, la nota «A» junto a un agente indica:",
+      "opciones": [
+        "Que es un agente aerotransmisible",
+        "Posibles efectos alérgicos",
+        "Que requiere autorización previa"
+      ],
+      "correcta": 1,
+      "explicacion": "A: alérgicos; D: lista más de diez años; T: toxinas; V: vacuna.",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "apartado": "3",
+      "evidencia": "A: posibles efectos alérgicos;"
+    },
+    {
+      "id": "t09-q39",
+      "pregunta": "La clasificación de los agentes en el anexo II del RD 664/1997 se basa en su efecto sobre:",
+      "opciones": [
+        "Los trabajadores especialmente sensibles",
+        "La población general, incluidos niños y ancianos",
+        "Trabajadores sanos; el riesgo de los especialmente sensibles se valora en la evaluación"
+      ],
+      "correcta": 2,
+      "explicacion": "En trabajadores sanos. Embarazo, lactancia, inmunodepresión o medicación se tienen en cuenta en la evaluación.",
+      "fuente": "RD 664/1997, anexo II, nota 2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "La clasificación se basa en el efecto sobre trabajadores sanos. El riesgo adicional de los especialmente sensibles (embarazo, lactancia, inmunodepresión, medicación…) se valora en la evaluación (nota 2)."
+    },
+    {
+      "id": "t09-q40",
+      "pregunta": "Según el anexo II del RD 664/1997, Pseudomonas aeruginosa es un agente del:",
+      "opciones": [
+        "Grupo 2, con nota T",
+        "Grupo 3 (**)",
+        "Grupo 1"
+      ],
+      "correcta": 0,
+      "explicacion": "Grupo 2, con producción de toxinas (T).",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "apartado": "3",
+      "evidencia": "Pseudomonas aeruginosa | 2, T | | Enterococcus spp. | 2"
+    },
+    {
+      "id": "t09-q41",
+      "pregunta": "Según el anexo II del RD 664/1997, Mycobacterium tuberculosis es un agente del:",
+      "opciones": [
+        "Grupo 2",
+        "Grupo 3, con vacuna eficaz disponible (V)",
+        "Grupo 4"
+      ],
+      "correcta": 1,
+      "explicacion": "Grupo 3, con nota V.",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "apartado": "3",
+      "evidencia": "Mycobacterium tuberculosis | 3, V"
+    },
+    {
+      "id": "t09-q42",
+      "pregunta": "De estos parásitos que pueden encontrarse en el agua, ¿cuál es del grupo 3 según el anexo II del RD 664/1997?",
+      "opciones": [
+        "Cryptosporidium parvum",
+        "Giardia lamblia",
+        "Naegleria fowleri"
+      ],
+      "correcta": 2,
+      "explicacion": "Naegleria fowleri, la ameba de aguas templadas, es del grupo 3; Cryptosporidium y Giardia, del 2.",
+      "fuente": "RD 664/1997, anexo II · apunte §3",
+      "apartado": "3",
+      "evidencia": "Naegleria fowleri (ameba de aguas templadas) | 3"
+    },
+    {
+      "id": "t09-q43",
+      "pregunta": "Según el anexo II del RD 664/1997, Salmonella typhi es un agente del:",
+      "opciones": [
+        "Grupo 3",
+        "Grupo 2, como las demás Salmonella",
+        "Grupo 4"
+      ],
+      "correcta": 0,
+      "explicacion": "S. typhi es del grupo 3 (**), con vacuna (V); S. enteritidis, typhimurium y otras, del grupo 2.",
+      "fuente": "RD 664/1997, anexo II · apunte §7",
+      "apartado": "7",
+      "evidencia": "E. coli O157:H7, Salmonella typhi y M. tuberculosis: grupo 3."
+    },
+    {
+      "id": "t09-q44",
+      "pregunta": "Los virus aislados en humanos que aún no figuran en el anexo II del RD 664/1997 se clasifican:",
+      "opciones": [
+        "En el grupo 1, hasta que se demuestre su peligrosidad",
+        "Como mínimo, en el grupo 2",
+        "Directamente en el grupo 4"
+      ],
+      "correcta": 1,
+      "explicacion": "Como mínimo en el grupo 2 (nota 7).",
+      "fuente": "RD 664/1997, anexo II, nota 7 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Los virus aislados en humanos y aún no clasificados van, como mínimo, al grupo 2 (nota 7)."
+    },
+    {
+      "id": "t09-q45",
+      "pregunta": "En la cadena de transmisión, el reservorio es:",
+      "opciones": [
+        "La vía por la que el agente entra en el trabajador",
+        "El objeto contaminado que transporta el agente",
+        "El hábitat donde el agente vive y se multiplica: seres humanos, animales y medio"
+      ],
+      "correcta": 2,
+      "explicacion": "Reservorio: personas, animales y medio (plantas, suelo, agua). El objeto contaminado es un fómite.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §4",
+      "apartado": "4",
+      "evidencia": "El hábitat donde el agente vive y se multiplica: seres humanos, animales y medio (plantas, suelo, agua)"
+    },
+    {
+      "id": "t09-q46",
+      "pregunta": "Una salpicadura de material contaminado en los ojos supone la entrada del agente por la vía:",
+      "opciones": [
+        "De las membranas mucosas",
+        "Parenteral",
+        "Dérmica, a través de piel intacta"
+      ],
+      "correcta": 0,
+      "explicacion": "Salpicaduras en ojos, nariz o boca: vía de las mucosas.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Salpicaduras en ojos, nariz o boca; llevarse las manos a los ojos"
+    },
+    {
+      "id": "t09-q47",
+      "pregunta": "La vía de entrada dérmica de un agente biológico requiere:",
+      "opciones": [
+        "Solo el contacto con la piel, esté o no intacta",
+        "El contacto con piel no intacta: heridas, cortes o dermatitis",
+        "Un pinchazo con material contaminado"
+      ],
+      "correcta": 1,
+      "explicacion": "La vía dérmica es por piel no intacta; el pinchazo es vía parenteral.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Contacto con piel no intacta: heridas, cortes o dermatitis"
+    },
+    {
+      "id": "t09-q48",
+      "pregunta": "Según la guía del INSST, ¿qué vía de exposición se suma en el laboratorio de nivel 3 a las propias de los accidentes del nivel 2?",
+      "opciones": [
+        "La parenteral",
+        "La digestiva",
+        "La inhalación de aerosoles"
+      ],
+      "correcta": 2,
+      "explicacion": "En el nivel 2 predominan los accidentes (percutánea, mucosa e ingestión); en el 3 se suma la inhalación de aerosoles.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §4",
+      "apartado": "4",
+      "evidencia": "En el nivel 3 se suma la inhalación de aerosoles."
+    },
+    {
+      "id": "t09-q49",
+      "pregunta": "Según el art. 5 del RD 664/1997, cuando la actividad lo permita, el empresario debe:",
+      "opciones": [
+        "Evitar los agentes peligrosos sustituyéndolos por otros que no lo sean, o lo sean menos",
+        "Usar siempre agentes del grupo 4 en cabina",
+        "Limitar la exposición a cuatro horas diarias"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la sustitución, el primer paso antes de reducir la exposición.",
+      "fuente": "RD 664/1997, art. 5 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Sustitución (art. 5): si la actividad lo permite, evitar los agentes peligrosos sustituyéndolos por otros que no lo sean, o lo sean menos."
+    },
+    {
+      "id": "t09-q50",
+      "pregunta": "Según el art. 6 del RD 664/1997, entre las medidas para reducir la exposición figura:",
+      "opciones": [
+        "Aumentar el número de trabajadores para repartir la carga",
+        "Reducir al mínimo el número de trabajadores expuestos",
+        "Sustituir la protección colectiva por la individual"
+      ],
+      "correcta": 1,
+      "explicacion": "Reducir al mínimo los expuestos, y protección colectiva antes que individual.",
+      "fuente": "RD 664/1997, art. 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "b) reducir al mínimo el número de trabajadores expuestos;"
+    },
+    {
+      "id": "t09-q51",
+      "pregunta": "Si la evaluación demuestra que la exposición es solo a un agente del grupo 1 sin riesgo conocido para la salud:",
+      "opciones": [
+        "Se aplican todas las medidas del RD 664/1997",
+        "Se aplican solo las medidas de contención del nivel 2",
+        "No se aplican los arts. 5 a 15 del RD 664/1997"
+      ],
+      "correcta": 2,
+      "explicacion": "Los arts. 5 a 15 no se aplican en ese caso.",
+      "fuente": "RD 664/1997, art. 4 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "si la exposición es solo a un agente del grupo 1 sin riesgo conocido, no se aplican los arts. 5 a 15."
+    },
+    {
+      "id": "t09-q52",
+      "pregunta": "Según el art. 15.1.a del RD 664/1997, adoptan medidas de contención los laboratorios que manipulan agentes de los grupos 2, 3 o 4 con fines de:",
+      "opciones": [
+        "Investigación, desarrollo, enseñanza o diagnóstico",
+        "Solo investigación",
+        "Solo producción industrial"
+      ],
+      "correcta": 0,
+      "explicacion": "Investigación, desarrollo, enseñanza o diagnóstico.",
+      "fuente": "RD 664/1997, art. 15.1.a · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Los laboratorios que manipulan agentes de los grupos 2, 3 o 4, con fines de investigación, desarrollo, enseñanza o diagnóstico, adoptan medidas de contención del anexo IV (art. 15.1.a)."
+    },
+    {
+      "id": "t09-q53",
+      "pregunta": "Según el anexo IV del RD 664/1997, en el nivel de contención 2 deben ser impermeables y fáciles de limpiar:",
+      "opciones": [
+        "La mesa, las paredes, el suelo y el techo",
+        "La mesa de trabajo y el suelo",
+        "Solo la mesa de trabajo"
+      ],
+      "correcta": 1,
+      "explicacion": "Nivel 2: mesa y suelo. Nivel 4: mesa, paredes, suelo y techo.",
+      "fuente": "RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Superficies impermeables y fáciles de limpiar | Mesa y suelo | Mesa, suelo y las que diga la evaluación | Mesa, paredes, suelo y techo"
+    },
+    {
+      "id": "t09-q54",
+      "pregunta": "Según el anexo IV del RD 664/1997, la presión negativa del lugar de trabajo es:",
+      "opciones": [
+        "Obligatoria desde el nivel 2",
+        "Aconsejable en el nivel 4",
+        "Aconsejable en el nivel 3 y obligatoria en el nivel 4"
+      ],
+      "correcta": 2,
+      "explicacion": "No en el 2, aconsejable en el 3, sí en el 4.",
+      "fuente": "RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Presión negativa | No | Aconsejable | Sí"
+    },
+    {
+      "id": "t09-q55",
+      "pregunta": "Según la guía del INSST, el nivel de bioseguridad 3 es adecuado para agentes del grupo 3 que se transmiten por el aire y también:",
+      "opciones": [
+        "Para grandes volúmenes o concentraciones de agentes del grupo 2",
+        "Para cualquier agente del grupo 4",
+        "Solo para priones"
+      ],
+      "correcta": 0,
+      "explicacion": "El nivel no se equipara sin más al grupo: cuentan el volumen, la concentración y los aerosoles.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "el nivel 3 es el adecuado para agentes del grupo 3 que se transmiten por el aire, pero también para grandes volúmenes o concentraciones de agentes del grupo 2."
+    },
+    {
+      "id": "t09-q56",
+      "pregunta": "Según el art. 8 del RD 664/1997, la vigilancia de la salud se ofrece a los trabajadores:",
+      "opciones": [
+        "Solo cuando presentan síntomas",
+        "Antes de la exposición, a intervalos regulares después y cuando se detecte una infección en un compañero con exposición similar",
+        "Una única vez, al contratarlos"
+      ],
+      "correcta": 1,
+      "explicacion": "Antes, periódicamente y cuando se detecta una infección en un compañero; la hace personal sanitario competente.",
+      "fuente": "RD 664/1997, art. 8 · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "antes de la exposición; - a intervalos regulares después; - cuando se detecte una infección en un compañero con una exposición similar."
+    },
+    {
+      "id": "t09-q57",
+      "pregunta": "Cuando se ofrece una vacuna eficaz a los trabajadores expuestos, según el RD 664/1997:",
+      "opciones": [
+        "El ofrecimiento puede hacerse de palabra",
+        "El trabajador paga la mitad del coste",
+        "El ofrecimiento y la aceptación constan por escrito, y la vacunación no le acarrea gasto alguno"
+      ],
+      "correcta": 2,
+      "explicacion": "Por escrito y gratis; puede expedirse un certificado de vacunación.",
+      "fuente": "RD 664/1997, art. 8 y anexo VI · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "el ofrecimiento y la aceptación constan por escrito;"
+    },
+    {
+      "id": "t09-q58",
+      "pregunta": "Si un accidente ha podido liberar un agente biológico capaz de causar una infección grave, el empresario debe informar:",
+      "opciones": [
+        "Inmediatamente, a las autoridades laboral y sanitaria",
+        "En el plazo de un mes, a la mutua",
+        "Solo si hay trabajadores infectados"
+      ],
+      "correcta": 0,
+      "explicacion": "De inmediato a las autoridades laboral y sanitaria (art. 11).",
+      "fuente": "RD 664/1997, art. 11 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "el empresario informa inmediatamente a las autoridades laboral y sanitaria de cualquier accidente o incidente que haya podido liberar un agente capaz de causar una infección o enfermedad grave."
+    },
+    {
+      "id": "t09-q59",
+      "pregunta": "Los laboratorios de diagnóstico que utilicen agentes del grupo 4, según el art. 10 del RD 664/1997:",
+      "opciones": [
+        "Deben notificar cada nueva utilización",
+        "Solo hacen la notificación inicial",
+        "No tienen que notificar nada"
+      ],
+      "correcta": 1,
+      "explicacion": "Solo la notificación inicial.",
+      "fuente": "RD 664/1997, art. 10 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "los laboratorios de diagnóstico con agentes del grupo 4 solo hacen la notificación inicial."
+    },
+    {
+      "id": "t09-q60",
+      "pregunta": "Según las buenas prácticas de la guía del INSST, las superficies de trabajo se descontaminan:",
+      "opciones": [
+        "Una vez por semana",
+        "Solo cuando están visiblemente sucias",
+        "Al menos una vez al día, al final de la jornada, y tras cualquier derrame"
+      ],
+      "correcta": 2,
+      "explicacion": "Al menos una vez al día y tras cualquier derrame.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Descontaminar las superficies de trabajo al menos una vez al día, al final de la jornada, y tras cualquier derrame."
+    },
+    {
+      "id": "t09-q61",
+      "pregunta": "En un laboratorio de nivel 2, según la guía del INSST, los lavaojos y las duchas de emergencia deben alcanzarse desde cualquier puesto en menos de:",
+      "opciones": [
+        "15 segundos",
+        "1 minuto",
+        "5 minutos"
+      ],
+      "correcta": 0,
+      "explicacion": "Menos de 15 segundos.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "que se alcancen en menos de 15 segundos desde cualquier puesto."
+    },
+    {
+      "id": "t09-q62",
+      "pregunta": "Para reducir el riesgo de pinchazos y cortes, la guía del INSST recomienda:",
+      "opciones": [
+        "Reencapuchar siempre las agujas antes de tirarlas",
+        "Sustituir el vidrio por plástico y tirar los objetos cortantes y punzantes a contenedores rígidos",
+        "Usar doble guante y seguir trabajando con vidrio"
+      ],
+      "correcta": 1,
+      "explicacion": "Evitar agujas innecesarias, plástico en vez de vidrio y contenedores rígidos para lo cortante.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Evitar agujas y material cortante innecesario; sustituir el vidrio por plástico; los objetos cortantes y punzantes, a contenedores rígidos."
+    },
+    {
+      "id": "t09-q63",
+      "pregunta": "En un laboratorio de nivel 2, según la guía del INSST, las personas especialmente sensibles:",
+      "opciones": [
+        "Pueden entrar si llevan doble EPI",
+        "Pueden entrar acompañadas",
+        "No deben entrar"
+      ],
+      "correcta": 2,
+      "explicacion": "Solo entra el personal autorizado, y no entran las personas especialmente sensibles.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Solo entra el personal autorizado, y no entran las personas especialmente sensibles."
+    },
+    {
+      "id": "t09-q64",
+      "pregunta": "En un laboratorio de nivel 2, los materiales infecciosos que deban salir del laboratorio:",
+      "opciones": [
+        "Se descontaminan antes, y si hay que transportarlos fuera van en contenedores específicos",
+        "Pueden salir en bolsas de basura normales",
+        "Se llevan en la mano en el propio tubo de cultivo"
+      ],
+      "correcta": 0,
+      "explicacion": "No salen sin descontaminar; para el transporte, contenedores específicos.",
+      "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "En el nivel 2, los materiales infecciosos no salen del laboratorio sin descontaminar, y si hay que transportarlos fuera, van en contenedores específicos."
+    },
+    {
+      "id": "t09-q65",
+      "pregunta": "Según el art. 7.1 del RD 664/1997, los equipos de protección se limpian y comprueban:",
+      "opciones": [
+        "Una vez al mes",
+        "Antes y, en todo caso, después de cada uso",
+        "Solo cuando el trabajador lo solicite"
+      ],
+      "correcta": 1,
+      "explicacion": "Antes y, en todo caso, después de cada uso, y se guardan en un lugar determinado.",
+      "fuente": "RD 664/1997, art. 7.1 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "tener un lugar para guardar los equipos de protección, que se limpian y comprueban antes y, en todo caso, después de cada uso;"
     }
   ],
   "supuestos": [
@@ -779,6 +1340,170 @@
           "correcta": 3,
           "explicacion": "Art. 15.1.b: por lo menos el nivel 3 para un agente del grupo 3. La nota 8 del anexo II permite a las autoridades sanitarias valorar si se prescinde de algunas medidas, pero no hay rebaja automática.",
           "fuente": "RD 664/1997, art. 15.1.b y anexo II, nota 8"
+        }
+      ]
+    },
+    {
+      "id": "t09-s03",
+      "titulo": "Salpicadura de un cultivo de Pseudomonas aeruginosa",
+      "enunciado": "Mientras repica colonias de *Pseudomonas aeruginosa* aisladas de una muestra de agua de piscina, una técnica vuelca un tubo de caldo de cultivo sobre la mesa. Parte del líquido le salpica en un ojo y en la manga de la bata. El laboratorio trabaja en nivel 2 de contención y tiene lavaojos y ducha de emergencia en la sala.",
+      "preguntas": [
+        {
+          "id": "t09-s03-q1",
+          "pregunta": "Según el anexo II del RD 664/1997, Pseudomonas aeruginosa es un agente del:",
+          "opciones": [
+            "Grupo 2, con nota T",
+            "Grupo 1, por ser una bacteria ambiental",
+            "Grupo 3 (**)",
+            "Grupo 4"
+          ],
+          "correcta": 0,
+          "explicacion": "Grupo 2, con producción de toxinas (T).",
+          "fuente": "RD 664/1997, anexo II · apunte §3",
+          "apartado": "3",
+          "evidencia": "Pseudomonas aeruginosa | 2, T | | Enterococcus spp. | 2"
+        },
+        {
+          "id": "t09-s03-q2",
+          "pregunta": "La salpicadura en el ojo es una posible entrada del agente por la vía:",
+          "opciones": [
+            "Parenteral",
+            "Dérmica, a través de piel intacta",
+            "De las membranas mucosas",
+            "Digestiva"
+          ],
+          "correcta": 2,
+          "explicacion": "Las salpicaduras en ojos, nariz o boca son vía de las mucosas.",
+          "fuente": "Guía técnica del INSST (2024) · apunte §4",
+          "apartado": "4",
+          "evidencia": "Salpicaduras en ojos, nariz o boca; llevarse las manos a los ojos"
+        },
+        {
+          "id": "t09-s03-q3",
+          "pregunta": "Según la guía del INSST, el lavaojos de un laboratorio de nivel 2 debe poder alcanzarse desde cualquier puesto en menos de:",
+          "opciones": [
+            "Cinco minutos",
+            "Quince segundos",
+            "Un minuto",
+            "Treinta segundos"
+          ],
+          "correcta": 1,
+          "explicacion": "Menos de 15 segundos.",
+          "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+          "apartado": "5.6",
+          "evidencia": "que se alcancen en menos de 15 segundos desde cualquier puesto."
+        },
+        {
+          "id": "t09-s03-q4",
+          "pregunta": "¿Qué debe hacerse con la bata salpicada?",
+          "opciones": [
+            "La técnica la lava en casa a 60 °C, en una bolsa cerrada",
+            "Se tira a la basura doméstica",
+            "Se aclara en el fregadero del laboratorio y se sigue usando",
+            "Se la quita al salir de la zona, se guarda aparte y el empresario se encarga de lavarla, descontaminarla o destruirla"
+          ],
+          "correcta": 3,
+          "explicacion": "Está rigurosamente prohibido que los trabajadores se la lleven a casa; la lava y descontamina el empresario, sin coste para la trabajadora.",
+          "fuente": "RD 664/1997, art. 7.4 · apunte §5.2",
+          "apartado": "5.2",
+          "evidencia": "El empresario se encarga de lavarlos, descontaminarlos y, si es necesario, destruirlos. Queda rigurosamente prohibido que los trabajadores se los lleven a casa para lavarlos (7.4)."
+        },
+        {
+          "id": "t09-s03-q5",
+          "pregunta": "La mesa donde se ha producido el derrame:",
+          "opciones": [
+            "Se limpia el viernes, con la limpieza semanal",
+            "Solo se limpia si el derrame es visible al secarse",
+            "Se descontamina tras el derrame, además de la descontaminación diaria al final de la jornada",
+            "No necesita tratamiento, porque es un agente del grupo 2"
+          ],
+          "correcta": 2,
+          "explicacion": "Las superficies se descontaminan al menos una vez al día y tras cualquier derrame.",
+          "fuente": "Guía técnica del INSST (2024) · apunte §5.6",
+          "apartado": "5.6",
+          "evidencia": "Descontaminar las superficies de trabajo al menos una vez al día, al final de la jornada, y tras cualquier derrame."
+        }
+      ]
+    },
+    {
+      "id": "t09-s04",
+      "titulo": "Incorporación del análisis de aguas residuales",
+      "enunciado": "El laboratorio municipal va a recibir muestras de agua residual de la depuradora para contar *Escherichia coli* y buscar *Salmonella* (sin incluir *S. typhi*). Los operarios de la depuradora tomarán las muestras. Se incorpora un técnico nuevo, y una técnica del equipo comunica que está embarazada. La jefa de sección revisa la evaluación de riesgos y las instalaciones.",
+      "preguntas": [
+        {
+          "id": "t09-s04-q1",
+          "pregunta": "Para cultivar E. coli y Salmonella enteritidis, el laboratorio necesita como mínimo:",
+          "opciones": [
+            "El nivel 2 de contención, porque los dos agentes son del grupo 2",
+            "El nivel 1, porque son muestras ambientales",
+            "El nivel 3, porque la muestra es agua residual",
+            "El nivel 4, porque se cultivan"
+          ],
+          "correcta": 0,
+          "explicacion": "Nivel por lo menos igual al grupo: los dos son del grupo 2.",
+          "fuente": "RD 664/1997, art. 15.1.b · apunte §5.3",
+          "apartado": "5.3",
+          "evidencia": "en el nivel 2 de contención, para un agente del grupo 2;"
+        },
+        {
+          "id": "t09-s04-q2",
+          "pregunta": "En la revisión de las instalaciones, ¿cuál de estas medidas exige ya el anexo IV para el nivel 2?",
+          "opciones": [
+            "Presión negativa",
+            "Filtros HEPA a la salida del aire",
+            "Acceso por esclusa",
+            "Superficies impermeables y fáciles de limpiar en la mesa y el suelo"
+          ],
+          "correcta": 3,
+          "explicacion": "En el nivel 2 son obligatorias las superficies de mesa y suelo, los procedimientos de desinfección y el almacenamiento de seguridad. Presión negativa, HEPA y esclusa son de los niveles 3 y 4.",
+          "fuente": "RD 664/1997, anexo IV · apunte §5.3",
+          "apartado": "5.3",
+          "evidencia": "Superficies impermeables y fáciles de limpiar | Mesa y suelo | Mesa, suelo y las que diga la evaluación | Mesa, paredes, suelo y techo"
+        },
+        {
+          "id": "t09-s04-q3",
+          "pregunta": "¿Cómo se tiene en cuenta el embarazo de la técnica?",
+          "opciones": [
+            "Cambiando el grupo de los agentes en el anexo II",
+            "No se tiene en cuenta, porque los agentes son del grupo 2",
+            "En la evaluación de riesgos, como trabajadora especialmente sensible, porque el anexo II se basa en trabajadores sanos",
+            "Pasando el laboratorio a nivel 4"
+          ],
+          "correcta": 2,
+          "explicacion": "La clasificación es para trabajadores sanos; el riesgo adicional se valora en la evaluación.",
+          "fuente": "RD 664/1997, anexo II, nota 2 · apunte §3",
+          "apartado": "3",
+          "evidencia": "La clasificación se basa en el efecto sobre trabajadores sanos. El riesgo adicional de los especialmente sensibles (embarazo, lactancia, inmunodepresión, medicación…) se valora en la evaluación (nota 2)."
+        },
+        {
+          "id": "t09-s04-q4",
+          "pregunta": "La formación del técnico que se incorpora debe impartirse:",
+          "opciones": [
+            "Al incorporarse al trabajo con agentes biológicos, adaptarse a los nuevos riesgos y repetirse periódicamente",
+            "Al cabo de un año, cuando conozca el laboratorio",
+            "Solo si lo solicita por escrito",
+            "Una sola vez, fuera de la jornada"
+          ],
+          "correcta": 0,
+          "explicacion": "Al incorporarse, adaptada y repetida; con instrucciones escritas para accidentes graves.",
+          "fuente": "RD 664/1997, art. 12 · apunte §5.5",
+          "apartado": "5.5",
+          "evidencia": "se imparte al incorporarse, se adapta a los nuevos riesgos y se repite periódicamente;"
+        },
+        {
+          "id": "t09-s04-q5",
+          "pregunta": "Los operarios de la depuradora que toman las muestras de agua residual realizan, según el RD 664/1997, una actividad:",
+          "opciones": [
+            "Con intención deliberada de manipular agentes biológicos",
+            "Sin intención deliberada, de las que lista el anexo I",
+            "Excluida del real decreto, por ser una instalación municipal",
+            "Del grupo 1, sin riesgo"
+          ],
+          "correcta": 1,
+          "explicacion": "Las depuradoras de aguas residuales están en la lista indicativa del anexo I: exposición incidental.",
+          "fuente": "RD 664/1997, anexo I · apunte §2",
+          "apartado": "2",
+          "evidencia": "El anexo I da una lista indicativa de actividades, como los trabajos agrarios, la asistencia sanitaria o las depuradoras de aguas residuales."
         }
       ]
     }
