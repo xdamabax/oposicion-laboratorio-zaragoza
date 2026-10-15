@@ -404,6 +404,316 @@
       "etiquetas": [
         "almacenamiento"
       ]
+    },
+    {
+      "id": "t20-f37",
+      "anverso": "¿Qué norma regula cada bloque de la seguridad química: clasificación, protección del trabajador, almacenamiento y residuos?",
+      "reverso": "**Clasificación y etiquetado**: **CLP** (1272/2008). **Protección del trabajador**: **Ley 31/1995 y RD 374/2001**; EPI, **RD 773/1997**. **Almacenamiento**: **RD 656/2017 (APQ)**, con matices. **Residuos**: **Ley 7/2022**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": "| Cómo se clasifica y se etiqueta un producto | Reglamento CLP (CE) 1272/2008 | Derecho de la UE, directamente aplicable |"
+    },
+    {
+      "id": "t20-f38",
+      "anverso": "¿Dice el CLP cómo debe protegerse el técnico que usa un producto?",
+      "reverso": "**No.** El CLP dice **qué peligro** tiene el producto; **cómo protegerse** lo dice la **normativa de prevención de riesgos laborales**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": "el CLP dice qué peligro tiene el producto, pero no dice cómo debe protegerse el técnico; eso lo dice la normativa de PRL."
+    },
+    {
+      "id": "t20-f39",
+      "anverso": "¿Qué reglamento revisó el CLP en 2024 y cuándo se aplica?",
+      "reverso": "El **Reglamento (UE) 2024/2865**, con aplicación escalonada el **1 de julio de 2026** y el **1 de enero de 2027**.",
+      "fuente": "Reglamento (UE) 2024/2865 · apunte §2.4",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "2.4",
+      "evidencia": "el Reglamento (UE) 2024/2865 revisó el CLP con aplicación escalonada el 1 de julio de 2026 y el 1 de enero de 2027."
+    },
+    {
+      "id": "t20-f40",
+      "anverso": "¿Es la equivalencia entre frases R y frases H «uno a uno»?",
+      "reverso": "**No.** El CLP **cambió criterios y umbrales**: una sustancia puede **cambiar de categoría** al reclasificarse. El anexo de traducción es **solo orientativo**.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §3.1",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "3.1",
+      "evidencia": "La correspondencia no es uno a uno. El CLP no se limitó a renombrar: cambió los criterios y los umbrales, así que una sustancia puede cambiar de categoría al reclasificarse."
+    },
+    {
+      "id": "t20-f41",
+      "anverso": "¿Cómo eran los símbolos del sistema antiguo y qué normas lo regulaban?",
+      "reverso": "**Cuadrados naranjas con letra** (T, Xn, C, F, O, E, N), con indicación escrita («Tóxico», «Nocivo»). Normas: **RD 363/1995 y RD 255/2003**. Hoy, **nueve rombos rojos** y palabra de advertencia.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §3.1",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "3.1",
+      "evidencia": "| Símbolos naranjas cuadrados con letra (T, Xn, C, F, O, E, N) | Nueve pictogramas en rombo rojo |"
+    },
+    {
+      "id": "t20-f42",
+      "anverso": "¿Qué son las indicaciones EUH? Pon un ejemplo.",
+      "reverso": "Indicaciones **suplementarias propias de la UE**, sin equivalente en el sistema mundial. Ejemplo: **EUH014**, «Reacciona violentamente con el agua».",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo III · apunte §3.2",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "3.2",
+      "evidencia": "Las EUH son indicaciones suplementarias propias de la UE, sin equivalente en el sistema mundial (p. ej. EUH014 «Reacciona violentamente con el agua»)."
+    },
+    {
+      "id": "t20-f43",
+      "anverso": "¿Qué significan H314 y H400?",
+      "reverso": "**H314**: provoca **quemaduras graves en la piel y lesiones oculares graves** (salud). **H400**: **muy tóxico para los organismos acuáticos** (medio ambiente).",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo III · apunte §3.2",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "3.2",
+      "evidencia": [
+        "H314 — Provoca quemaduras graves en la piel y lesiones oculares graves (salud)",
+        "H400 — Muy tóxico para los organismos acuáticos (medio ambiente)"
+      ]
+    },
+    {
+      "id": "t20-f44",
+      "anverso": "Pon un ejemplo de consejo de prudencia de prevención, de respuesta y de almacenamiento.",
+      "reverso": "**Prevención**: P280, llevar guantes/prendas/gafas/máscara. **Respuesta**: P301, en caso de ingestión. **Almacenamiento**: P405, guardar bajo llave. El **primer dígito** dice la serie.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo IV · apunte §4",
+      "etiquetas": [
+        "clp"
+      ],
+      "apartado": "4",
+      "evidencia": [
+        "P280 Llevar guantes/prendas/gafas/máscara de protección",
+        "P403 Almacenar en un lugar bien ventilado · P405 Guardar bajo llave"
+      ]
+    },
+    {
+      "id": "t20-f45",
+      "anverso": "¿En qué lengua va la etiqueta CLP y qué exenciones hay para envases pequeños?",
+      "reverso": "En **la lengua o lenguas oficiales del Estado miembro** donde se comercialice (art. 17.2). Los envases **inferiores a 125 ml** (con carácter general) o difíciles de etiquetar pueden **omitir** indicaciones, consejos o pictogramas.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 17 · apunte §4.1",
+      "etiquetas": [
+        "etiqueta"
+      ],
+      "apartado": "4.1",
+      "evidencia": [
+        "el art. 17.2 exige que la etiqueta esté escrita en la lengua o lenguas oficiales del Estado miembro donde se comercialice.",
+        "Hay exenciones para envases pequeños (con carácter general, inferiores a 125 ml) o difíciles de etiquetar"
+      ]
+    },
+    {
+      "id": "t20-f46",
+      "anverso": "Define indicación de peligro y consejo de prudencia (art. 2.5 y 2.6 del CLP).",
+      "reverso": "**Indicación de peligro**: «frase que, asignada a una clase o categoría de peligro, **describe la naturaleza de los peligros**». **Consejo de prudencia**: «frase que **describe la medida o medidas recomendadas** para minimizar o evitar los efectos adversos causados por la exposición».",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 2 · apunte §4.2",
+      "etiquetas": [
+        "etiqueta"
+      ],
+      "apartado": "4.2",
+      "evidencia": [
+        "la indicación de peligro es «una frase que, asignada a una clase o categoría de peligro, describe la naturaleza de los peligros»",
+        "el consejo de prudencia, «una frase que describe la medida o medidas recomendadas para minimizar o evitar los efectos adversos causados por la exposición»"
+      ]
+    },
+    {
+      "id": "t20-f47",
+      "anverso": "Traduce al laboratorio el orden de prioridad del art. 5.2 del RD 374/2001.",
+      "reverso": "Primero **se sustituye el reactivo**, luego se trabaja en **vitrina de gases**, y **solo después** se recurre a **guantes y gafas**. Una opción que ponga el EPI por delante de la vitrina es falsa.",
+      "fuente": "RD 374/2001, art. 5.2 · apunte §5.1",
+      "etiquetas": [
+        "epi"
+      ],
+      "apartado": "5.1",
+      "evidencia": "primero se sustituye el reactivo, luego se trabaja en vitrina de gases, y solo después se recurre a guantes y gafas."
+    },
+    {
+      "id": "t20-f48",
+      "anverso": "Guantes y protección respiratoria en el laboratorio: ¿cómo se eligen y cuándo se usan?",
+      "reverso": "**Guantes**: el material **según su resistencia química al producto concreto**; **ningún guante vale para todo**. **Mascarilla o protección respiratoria**: **solo si la vitrina de gases no basta o falla**.",
+      "fuente": "RD 773/1997 · apunte §5.3",
+      "etiquetas": [
+        "epi"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "El material debe elegirse por su resistencia química al producto concreto; ningún guante vale para todo",
+        "Solo si la vitrina de gases no basta o falla"
+      ]
+    },
+    {
+      "id": "t20-f49",
+      "anverso": "¿Qué norma de referencia cita el RD 656/2017 para las duchas de seguridad de laboratorio?",
+      "reverso": "La **UNE-EN 15154-1**: duchas para el cuerpo conectadas a la red de agua utilizadas en laboratorios. Las duchas y lavaojos **no son EPI**: son protección colectiva.",
+      "fuente": "RD 656/2017 (APQ) · apunte §5.3",
+      "etiquetas": [
+        "epi"
+      ],
+      "apartado": "5.3",
+      "evidencia": "La norma de referencia que cita el propio RD 656/2017 es la UNE-EN 15154-1 (duchas para el cuerpo conectadas a la red de agua utilizadas en laboratorios)."
+    },
+    {
+      "id": "t20-f50",
+      "anverso": "Umbrales del APQ para líquidos inflamables y para corrosivos.",
+      "reverso": "Líquidos inflamables **cat. 1 y 2: 50 L**; **cat. 3: 250 L**. Corrosión cutánea **1A / 1B / 1C: 200 / 400 / 1000**. Por debajo, **no se aplica el APQ**.",
+      "fuente": "RD 656/2017 (APQ), tabla I · apunte §6.1",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "6.1",
+      "evidencia": [
+        "| Líquidos inflamables cat. 3 | H226 | 250 L |",
+        "| Corrosión cutánea 1A / 1B / 1C | H314 | 200 / 400 / 1.000 |"
+      ]
+    },
+    {
+      "id": "t20-f51",
+      "anverso": "¿Qué tamaño máximo pueden tener los envases de líquidos tóxicos en un almacén excluido del APQ?",
+      "reverso": "**2 litros** en **categoría 1** y **5 litros** en **categoría 2**.",
+      "fuente": "RD 656/2017 (APQ) · apunte §6.1",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "6.1",
+      "evidencia": "para los líquidos tóxicos excluidos, la capacidad máxima unitaria de los envases no puede superar 2 litros en categoría 1 y 5 litros en categoría 2."
+    },
+    {
+      "id": "t20-f52",
+      "anverso": "¿Dónde no se deben guardar productos químicos en un laboratorio? (NTP 725, guía de buenas prácticas)",
+      "reverso": "**Ni en campanas de extracción ni en el suelo**. Tampoco en **pasillos y lugares de paso de vehículos**, **huecos de escalera**, **vestíbulos de acceso general**, **salas de visitas** ni **lugares de descanso**.",
+      "fuente": "INSST, NTP 725 · apunte §6.2 y Dudas",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "6.2",
+      "evidencia": [
+        "No almacenar en campanas de extracción ni sobre el suelo del laboratorio.",
+        "pasillos y lugares de paso de vehículos, huecos de escalera, vestíbulos de acceso general, salas de visitas y lugares de descanso."
+      ]
+    },
+    {
+      "id": "t20-f53",
+      "anverso": "¿Cómo se colocan los envases en las estanterías según la NTP 725?",
+      "reverso": "**Nada mayor de medio litro en estantes elevados**; los recipientes grandes, **abajo**. Los más peligrosos (inflamables y **CMR**), mejor **en armarios**, no en estantería abierta.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "6.2",
+      "evidencia": "Nada mayor de medio litro en estantes elevados. Los recipientes más grandes van a los niveles más bajos."
+    },
+    {
+      "id": "t20-f54",
+      "anverso": "¿Por qué el almacenamiento prolongado es un riesgo y cómo se gestiona?",
+      "reverso": "Pueden darse **polimerizaciones o descomposiciones**, con **peróxidos inestables** o **acumulación de gas**, hasta **romper el recipiente**. Se lleva un **registro de recepción** para retirar lo que envejece. Los **éteres** se peroxidan (las NTP no dan plazo).",
+      "fuente": "INSST, NTP 725; NTP 479 · apunte §6.2 y Dudas",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "6.2",
+      "evidencia": "llevar un registro actualizado de la recepción de los productos, que permita detectar y retirar los que envejecen."
+    },
+    {
+      "id": "t20-f55",
+      "anverso": "¿Se puede alterar el orden de la jerarquía de residuos?",
+      "reverso": "Solo **justificándolo con un enfoque de ciclo de vida**.",
+      "fuente": "Ley 7/2022, art. 8.1 · apunte §7.2",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "7.2",
+      "evidencia": "Solo puede apartarse de este orden justificándolo con un enfoque de ciclo de vida."
+    },
+    {
+      "id": "t20-f56",
+      "anverso": "¿En qué grupos se segregan en origen los residuos del laboratorio?",
+      "reverso": "**Disolventes halogenados** / **no halogenados** / **ácidos** / **bases** / **sales de metales pesados** / **sólidos contaminados** / **vidrio contaminado** / **residuos biológicos**. Nunca al desagüe ni grupos incompatibles en el mismo bidón.",
+      "fuente": "Gestión práctica · apunte §7.3",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "7.3",
+      "evidencia": "disolventes halogenados / disolventes no halogenados / ácidos / bases / sales de metales pesados / sólidos contaminados / vidrio contaminado / residuos biológicos."
+    },
+    {
+      "id": "t20-f57",
+      "anverso": "¿Cómo se etiqueta y entrega un envase de residuo?",
+      "reverso": "Con su **contenido**, el **grupo**, la **fecha de inicio de acumulación** y los **pictogramas** que correspondan. Se entrega a **gestor autorizado**, con su **documento de identificación y trazabilidad**.",
+      "fuente": "Gestión práctica · apunte §7.3",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "7.3",
+      "evidencia": "Etiquetar el envase de residuo con su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas de peligro que correspondan."
+    },
+    {
+      "id": "t20-f58",
+      "anverso": "¿Cómo se lee un código LER?",
+      "reverso": "**Seis dígitos en tres parejas**: **capítulo** (actividad que lo genera), **subcapítulo** y **residuo concreto**. El **asterisco** lo marca como **peligroso**.",
+      "fuente": "Decisión 2014/955/UE · apunte §7.4",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "7.4",
+      "evidencia": "Son seis dígitos en tres parejas: capítulo (actividad que lo genera), subcapítulo y residuo concreto."
+    },
+    {
+      "id": "t20-f59",
+      "anverso": "LER: ¿en qué se diferencian 16 05 06*, 16 05 07* y 16 05 08*?",
+      "reverso": "**16 05 06***: productos químicos **de laboratorio** peligrosos (el reactivo caducado o sobrante). **16 05 07*** e **16 05 08***: productos químicos **inorgánicos** y **orgánicos** desechados **en general**, no específicamente de laboratorio.",
+      "fuente": "Decisión 2014/955/UE · apunte §7.4",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "7.4",
+      "evidencia": "que se refieren a productos químicos desechados en general, no específicamente de laboratorio."
+    },
+    {
+      "id": "t20-f60",
+      "anverso": "¿Cómo se almacenan las botellas de gas a presión (GHS04)?",
+      "reverso": "**Verticales, sujetas**, en **local ventilado**, con la **caperuza puesta**. Consejo típico: **P410+P403**.",
+      "fuente": "Tabla operativa · apunte §8",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "8",
+      "evidencia": "| GHS04 Gas a presión | Gases comprimidos, licuados, refrigerados y disueltos | H280, H281 | P410+P403 | Botellas verticales, sujetas, en local ventilado; caperuza puesta |"
+    },
+    {
+      "id": "t20-f61",
+      "anverso": "¿Cómo se almacenan los comburentes (GHS03) y los productos con GHS08?",
+      "reverso": "**Comburentes**: **separados físicamente de inflamables y de materia orgánica**. **GHS08** (carcinógenos, mutágenos…): **bajo llave, con registro de uso**; manipulación en **vitrina**.",
+      "fuente": "Tabla operativa · apunte §8",
+      "etiquetas": [
+        "almacenamiento"
+      ],
+      "apartado": "8",
+      "evidencia": [
+        "Separado físicamente de inflamables y de materia orgánica",
+        "Bajo llave, con registro de uso; manipulación en vitrina"
+      ]
+    },
+    {
+      "id": "t20-f62",
+      "anverso": "Productos con GHS09: indicaciones, consejos y destino.",
+      "reverso": "H400, H410-H413; consejos **P273, P391, P501**. Con **retención**; **jamás al desagüe**; a **gestor autorizado**.",
+      "fuente": "Tabla operativa · apunte §8",
+      "etiquetas": [
+        "residuos"
+      ],
+      "apartado": "8",
+      "evidencia": "| GHS09 Medio ambiente | Peligro para el medio ambiente acuático | H400, H410, H411, H412, H413 | P273, P391, P501 | Con retención; jamás al desagüe; a gestor autorizado |"
     }
   ],
   "test": [
@@ -718,6 +1028,602 @@
       "correcta": 2,
       "explicacion": "El motivo es de evacuación, no de compatibilidad química. Las otras dos opciones describen los sistemas que la NTP 725 sí admite: intercalar inertes es el sistema de estanterias, y dedicar un grupo entero a una familia es el sistema de islas.",
       "fuente": "INSST, NTP 725"
+    },
+    {
+      "id": "t20-q25",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Inflamable: gases, aerosoles, líquidos y sólidos inflamables",
+        "Sustancia comburente",
+        "Gas comprimido o licuado"
+      ],
+      "correcta": 0,
+      "explicacion": "GHS02, la llama. La llama sobre un círculo es el comburente (GHS03).",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo V · 1233, 2.ª prueba, #16 · apunte §2.3",
+      "figura": {
+        "tipo": "ghs",
+        "valor": "inflamable"
+      },
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · segunda prueba",
+        "texto": "Pictograma: llama (GHS02)"
+      },
+      "apartado": "2.3",
+      "evidencia": "| GHS02 | Llama | Físicos | Gases, aerosoles, líquidos y sólidos inflamables; pirofóricos; que desprenden gases inflamables con el agua |"
+    },
+    {
+      "id": "t20-q26",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Toxicidad aguda grave, de categorías 1 a 3",
+        "Irritante o nocivo: toxicidad aguda cat. 4, irritación, sensibilización cutánea",
+        "Carcinógeno o mutágeno"
+      ],
+      "correcta": 1,
+      "explicacion": "GHS07, signo de exclamación: peligro para la salud menos grave. La calavera es cat. 1-3; GHS08, el peligro grave.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo V · 1233, 2.ª prueba, #17 · apunte §2.3",
+      "figura": {
+        "tipo": "ghs",
+        "valor": "irritante"
+      },
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · segunda prueba",
+        "texto": "Pictograma: signo de exclamación (GHS07)"
+      },
+      "apartado": "2.3",
+      "evidencia": "| GHS07 | Signo de exclamación | Salud y otros | Toxicidad aguda cat. 4, irritación, sensibilización cutánea, STOT única cat. 3; y peligro para la capa de ozono |"
+    },
+    {
+      "id": "t20-q27",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Tóxico agudo",
+        "Peligroso para el medio ambiente acuático",
+        "Corrosivo: para los metales y para la piel y los ojos"
+      ],
+      "correcta": 2,
+      "explicacion": "GHS05: peligro físico (H290) y para la salud (H314, H318).",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo V · 1233, 2.ª prueba, #19 · apunte §2.3",
+      "figura": {
+        "tipo": "ghs",
+        "valor": "corrosivo"
+      },
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · segunda prueba",
+        "texto": "Pictograma: corrosión (GHS05)"
+      },
+      "apartado": "2.3",
+      "evidencia": "| GHS05 | Corrosión | Físicos y salud | Corrosivos para los metales (físico) y corrosión cutánea / lesiones oculares graves (salud) |"
+    },
+    {
+      "id": "t20-q28",
+      "pregunta": "¿Qué peligro indica este pictograma?",
+      "opciones": [
+        "Gas a presión: comprimidos, licuados, licuados refrigerados y disueltos",
+        "Sustancia explosiva",
+        "Sustancia comburente"
+      ],
+      "correcta": 0,
+      "explicacion": "GHS04, la bombona de gas.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo V · 1233, 2.ª prueba, #20 · apunte §2.3",
+      "figura": {
+        "tipo": "ghs",
+        "valor": "gas-presion"
+      },
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · segunda prueba",
+        "texto": "Pictograma: bombona de gas (GHS04)"
+      },
+      "apartado": "2.3",
+      "evidencia": "| GHS04 | Bombona de gas | Físicos | Gases comprimidos, licuados, licuados refrigerados y disueltos |"
+    },
+    {
+      "id": "t20-q29",
+      "pregunta": "La norma que dice cómo debe protegerse el técnico que manipula un producto químico es:",
+      "opciones": [
+        "El Reglamento CLP",
+        "La de prevención de riesgos laborales (Ley 31/1995 y RD 374/2001)",
+        "La Ley 7/2022 de residuos"
+      ],
+      "correcta": 1,
+      "explicacion": "El CLP dice qué peligro tiene; la Ley 7/2022, qué hacer con el residuo.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "el CLP dice qué peligro tiene el producto, pero no dice cómo debe protegerse el técnico; eso lo dice la normativa de PRL."
+    },
+    {
+      "id": "t20-q30",
+      "pregunta": "El Reglamento CLP derogó:",
+      "opciones": [
+        "El Reglamento REACH",
+        "La Ley 31/1995",
+        "Las Directivas 67/548/CEE (sustancias) y 1999/45/CE (preparados)"
+      ],
+      "correcta": 2,
+      "explicacion": "Con un período transitorio que terminó el 1 de junio de 2015.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Derogó las Directivas 67/548/CEE (sustancias) y 1999/45/CE (preparados)"
+    },
+    {
+      "id": "t20-q31",
+      "pregunta": "Los peligros para el medio ambiente (parte 4 del anexo I) tienen:",
+      "opciones": [
+        "6 indicaciones H4xx",
+        "31 indicaciones",
+        "56 indicaciones"
+      ],
+      "correcta": 0,
+      "explicacion": "31 son las físicas; 56, las de salud.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo I · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Parte 4 | Peligros para el medio ambiente | H4xx | 6 |"
+    },
+    {
+      "id": "t20-q32",
+      "pregunta": "Las nuevas clases de peligro de 2023 son obligatorias para las sustancias ya comercializadas antes del 1 de mayo de 2025 desde el:",
+      "opciones": [
+        "1 de mayo de 2025",
+        "1 de noviembre de 2026",
+        "1 de mayo de 2028"
+      ],
+      "correcta": 1,
+      "explicacion": "1 de mayo de 2025: sustancias nuevas; 1 de mayo de 2028: mezclas ya comercializadas.",
+      "fuente": "Reglamento Delegado (UE) 2023/707 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Sustancias ya comercializadas antes del 01/05/2025 | 1 de noviembre de 2026 |"
+    },
+    {
+      "id": "t20-q33",
+      "pregunta": "Las indicaciones EUH440 y EUH441 corresponden a las sustancias:",
+      "opciones": [
+        "Alteradoras endocrinas para la salud humana",
+        "PMT / mPmM (persistentes, móviles y tóxicas)",
+        "PBT / mPmB (persistentes, bioacumulables y tóxicas)"
+      ],
+      "correcta": 2,
+      "explicacion": "EUH380/381: alteradores endocrinos (salud); EUH450/451: PMT.",
+      "fuente": "Reglamento Delegado (UE) 2023/707 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| PBT (persistente, bioacumulable y tóxico) / mPmB | EUH440 / EUH441 |"
+    },
+    {
+      "id": "t20-q34",
+      "pregunta": "Las antiguas frases S («consejos de seguridad») equivalen en el CLP a:",
+      "opciones": [
+        "Los consejos de prudencia P",
+        "Las indicaciones de peligro H",
+        "Las palabras de advertencia"
+      ],
+      "correcta": 0,
+      "explicacion": "Las frases R equivalen a las indicaciones H.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "| Frases S («consejos de seguridad»): S24 Evítese el contacto con la piel | Consejos de prudencia P: P262 Evitar el contacto con los ojos, la piel o la ropa |"
+    },
+    {
+      "id": "t20-q35",
+      "pregunta": "La correspondencia entre el sistema antiguo de frases R y las indicaciones H del CLP:",
+      "opciones": [
+        "Es exacta, frase por frase",
+        "No es uno a uno: cambiaron criterios y umbrales",
+        "Solo cambia el nombre de las frases"
+      ],
+      "correcta": 1,
+      "explicacion": "Una sustancia puede cambiar de categoría al reclasificarse.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "La correspondencia no es uno a uno. El CLP no se limitó a renombrar: cambió los criterios y los umbrales"
+    },
+    {
+      "id": "t20-q36",
+      "pregunta": "Las indicaciones EUH son:",
+      "opciones": [
+        "Consejos de prudencia de eliminación",
+        "Las indicaciones de peligro físico",
+        "Indicaciones suplementarias propias de la UE, sin equivalente en el sistema mundial"
+      ],
+      "correcta": 2,
+      "explicacion": "Ejemplo: EUH014, reacciona violentamente con el agua.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo III · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Las EUH son indicaciones suplementarias propias de la UE, sin equivalente en el sistema mundial"
+    },
+    {
+      "id": "t20-q37",
+      "pregunta": "La indicación H400 significa:",
+      "opciones": [
+        "Muy tóxico para los organismos acuáticos",
+        "Líquido y vapores muy inflamables",
+        "Provoca quemaduras graves en la piel"
+      ],
+      "correcta": 0,
+      "explicacion": "Empieza por 4: medio ambiente. H225 es inflamable; H314, corrosión.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo III · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "H400 — Muy tóxico para los organismos acuáticos (medio ambiente)"
+    },
+    {
+      "id": "t20-q38",
+      "pregunta": "El consejo de prudencia «P280 Llevar guantes/prendas/gafas/máscara de protección» es de:",
+      "opciones": [
+        "Respuesta",
+        "Prevención",
+        "Eliminación"
+      ],
+      "correcta": 1,
+      "explicacion": "P2xx: prevención.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo IV · apunte §4",
+      "apartado": "4",
+      "evidencia": "P280 Llevar guantes/prendas/gafas/máscara de protección"
+    },
+    {
+      "id": "t20-q39",
+      "pregunta": "El consejo de prudencia P301 «En caso de ingestión» pertenece a la serie de:",
+      "opciones": [
+        "Prevención",
+        "Almacenamiento",
+        "Respuesta"
+      ],
+      "correcta": 2,
+      "explicacion": "P3xx: respuesta.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), anexo IV · apunte §4",
+      "apartado": "4",
+      "evidencia": "| P3xx | Respuesta | P301 En caso de ingestión"
+    },
+    {
+      "id": "t20-q40",
+      "pregunta": "Las exenciones de etiquetado del CLP para envases pequeños se aplican, con carácter general, a envases inferiores a:",
+      "opciones": [
+        "125 ml",
+        "1 litro",
+        "10 ml"
+      ],
+      "correcta": 0,
+      "explicacion": "Permiten omitir indicaciones, consejos o pictogramas.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 17 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Hay exenciones para envases pequeños (con carácter general, inferiores a 125 ml)"
+    },
+    {
+      "id": "t20-q41",
+      "pregunta": "Según el art. 17.2 del CLP, la etiqueta debe estar escrita en:",
+      "opciones": [
+        "Inglés, en toda la UE",
+        "La lengua o lenguas oficiales del Estado miembro donde se comercialice",
+        "La lengua del fabricante"
+      ],
+      "correcta": 1,
+      "explicacion": "En España, en castellano (y, en su caso, otras oficiales).",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 17.2 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "el art. 17.2 exige que la etiqueta esté escrita en la lengua o lenguas oficiales del Estado miembro donde se comercialice."
+    },
+    {
+      "id": "t20-q42",
+      "pregunta": "Según el art. 2.6 del CLP, un consejo de prudencia es una frase que:",
+      "opciones": [
+        "Describe la naturaleza de los peligros",
+        "Indica el nivel relativo de gravedad del peligro",
+        "Describe las medidas recomendadas para minimizar o evitar los efectos adversos de la exposición"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo segundo es la indicación de peligro; lo tercero, la palabra de advertencia.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 2.6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "el consejo de prudencia, «una frase que describe la medida o medidas recomendadas para minimizar o evitar los efectos adversos causados por la exposición»"
+    },
+    {
+      "id": "t20-q43",
+      "pregunta": "Qué palabra de advertencia corresponde a cada clasificación lo fijan:",
+      "opciones": [
+        "Las tablas de las partes 2 a 5 del anexo I del CLP",
+        "El propio art. 20",
+        "El fabricante a su criterio"
+      ],
+      "correcta": 0,
+      "explicacion": "El art. 20 remite a esas tablas.",
+      "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 20 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Cuál corresponde a cada clasificación no lo decide el art. 20: lo fijan las tablas de las partes 2 a 5 del anexo I"
+    },
+    {
+      "id": "t20-q44",
+      "pregunta": "Según el art. 5.2 del RD 374/2001, la ventilación y las demás medidas de protección colectiva se aplican:",
+      "opciones": [
+        "Solo cuando los EPI fallan",
+        "Preferentemente en el origen del riesgo",
+        "Antes de intentar sustituir el agente"
+      ],
+      "correcta": 1,
+      "explicacion": "Van después de los controles técnicos y antes de los EPI.",
+      "fuente": "RD 374/2001, art. 5.2 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Ventilación y otras medidas de protección colectiva, aplicadas preferentemente en el origen del riesgo"
+    },
+    {
+      "id": "t20-q45",
+      "pregunta": "Según el art. 2.2 del RD 773/1997, no son EPI:",
+      "opciones": [
+        "Unos guantes de nitrilo para productos químicos",
+        "Una pantalla facial",
+        "Los equipos de los servicios de socorro y salvamento"
+      ],
+      "correcta": 2,
+      "explicacion": "Tampoco la ropa corriente, el material de deporte ni los detectores portátiles.",
+      "fuente": "RD 773/1997, art. 2.2 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "b) Los equipos de los servicios de socorro y salvamento."
+    },
+    {
+      "id": "t20-q46",
+      "pregunta": "Sobre los guantes de protección química:",
+      "opciones": [
+        "El material se elige por su resistencia al producto concreto: ningún guante vale para todo",
+        "Los de látex valen para cualquier producto",
+        "Con bata no hacen falta"
+      ],
+      "correcta": 0,
+      "explicacion": "Además, el EPI va después de la vitrina.",
+      "fuente": "RD 773/1997 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "El material debe elegirse por su resistencia química al producto concreto; ningún guante vale para todo"
+    },
+    {
+      "id": "t20-q47",
+      "pregunta": "En el laboratorio, la mascarilla o el equipo de protección respiratoria se usa:",
+      "opciones": [
+        "Siempre, en lugar de la vitrina",
+        "Solo si la vitrina de gases no basta o falla",
+        "Nunca: está prohibida"
+      ],
+      "correcta": 1,
+      "explicacion": "Primero, la protección colectiva.",
+      "fuente": "RD 773/1997 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Solo si la vitrina de gases no basta o falla"
+    },
+    {
+      "id": "t20-q48",
+      "pregunta": "La norma de referencia de las duchas de seguridad de laboratorio que cita el RD 656/2017 es la:",
+      "opciones": [
+        "UNE-EN ISO 17025",
+        "UNE-EN 374",
+        "UNE-EN 15154-1"
+      ],
+      "correcta": 2,
+      "explicacion": "Duchas para el cuerpo conectadas a la red de agua.",
+      "fuente": "RD 656/2017 (APQ) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "La norma de referencia que cita el propio RD 656/2017 es la UNE-EN 15154-1"
+    },
+    {
+      "id": "t20-q49",
+      "pregunta": "El umbral a partir del cual se aplica el APQ a los líquidos inflamables de categoría 3 (H226) es:",
+      "opciones": [
+        "250 L",
+        "50 L",
+        "1000 L"
+      ],
+      "correcta": 0,
+      "explicacion": "Cat. 1 y 2: 50 L.",
+      "fuente": "RD 656/2017 (APQ), tabla I · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Líquidos inflamables cat. 3 | H226 | 250 L |"
+    },
+    {
+      "id": "t20-q50",
+      "pregunta": "Según la regla de suma del APQ, agrupando por tipo de peligro, la suma de los cocientes entre las cantidades almacenadas y las de la tabla:",
+      "opciones": [
+        "No puede superar 10",
+        "No puede superar 1",
+        "Debe ser exactamente 0,5"
+      ],
+      "correcta": 1,
+      "explicacion": "Si la supera, se aplica el APQ.",
+      "fuente": "RD 656/2017 (APQ), art. 2.1.c · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "la suma de los cocientes entre las cantidades almacenadas y las de la columna no puede superar 1."
+    },
+    {
+      "id": "t20-q51",
+      "pregunta": "En un almacén excluido del APQ, los envases de líquidos tóxicos de categoría 1 no pueden superar:",
+      "opciones": [
+        "5 litros",
+        "25 litros",
+        "2 litros"
+      ],
+      "correcta": 2,
+      "explicacion": "5 litros es el máximo en categoría 2.",
+      "fuente": "RD 656/2017 (APQ) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "la capacidad máxima unitaria de los envases no puede superar 2 litros en categoría 1 y 5 litros en categoría 2."
+    },
+    {
+      "id": "t20-q52",
+      "pregunta": "Según la NTP 725, en los estantes elevados:",
+      "opciones": [
+        "No se pone nada mayor de medio litro",
+        "Se ponen los recipientes más grandes",
+        "Se guardan los inflamables"
+      ],
+      "correcta": 0,
+      "explicacion": "Los grandes, a los niveles más bajos.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Nada mayor de medio litro en estantes elevados. Los recipientes más grandes van a los niveles más bajos."
+    },
+    {
+      "id": "t20-q53",
+      "pregunta": "Según la NTP 725, los productos CMR (carcinógenos, mutágenos o tóxicos para la reproducción):",
+      "opciones": [
+        "Se guardan en la vitrina de gases",
+        "Es recomendable guardarlos en armarios, no en estantería abierta",
+        "Se guardan con los inflamables"
+      ],
+      "correcta": 1,
+      "explicacion": "Igual que los inflamables y muy inflamables.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "es recomendable que estén en armarios, no en estantería abierta."
+    },
+    {
+      "id": "t20-q54",
+      "pregunta": "El sistema «de estanterías» de la NTP 725 consiste en:",
+      "opciones": [
+        "Dedicar un grupo de estanterías rodeado de pasillos a cada familia",
+        "Cerrar las estanterías formando un pasillo sin salida",
+        "Intercalar productos inertes entre los incompatibles, si el stock no es voluminoso"
+      ],
+      "correcta": 2,
+      "explicacion": "Lo segundo son las islas; lo tercero, la península, desaconsejada.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| De estanterías | Se intercalan productos inertes entre los incompatibles, sin dedicar estanterías enteras | Si el stock no es voluminoso, se puede obviar el sistema de islas |"
+    },
+    {
+      "id": "t20-q55",
+      "pregunta": "Según la NTP 725, no se deben almacenar productos químicos en:",
+      "opciones": [
+        "Huecos de escalera y vestíbulos de acceso general",
+        "Armarios de seguridad ventilados",
+        "Estanterías con cubeto de retención"
+      ],
+      "correcta": 0,
+      "explicacion": "Tampoco en pasillos, salas de visitas ni lugares de descanso.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "pasillos y lugares de paso de vehículos, huecos de escalera, vestíbulos de acceso general, salas de visitas y lugares de descanso."
+    },
+    {
+      "id": "t20-q56",
+      "pregunta": "Según la NTP 725, en un producto almacenado mucho tiempo puede ocurrir:",
+      "opciones": [
+        "Que pierda su toxicidad",
+        "La formación de peróxidos inestables o la acumulación de gas, hasta romper el recipiente",
+        "Nada, si el envase está cerrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso se lleva un registro de recepción.",
+      "fuente": "INSST, NTP 725 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "pueden darse reacciones de polimerización o de descomposición, con formación de peróxidos inestables o con acumulación de gas por descomposición lenta, hasta romper el recipiente."
+    },
+    {
+      "id": "t20-q57",
+      "pregunta": "La Ley 7/2022, de residuos y suelos contaminados para una economía circular, derogó:",
+      "opciones": [
+        "El RD 374/2001",
+        "El Reglamento CLP",
+        "La Ley 22/2011"
+      ],
+      "correcta": 2,
+      "explicacion": "Es la norma vigente de residuos.",
+      "fuente": "Ley 7/2022 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular, que derogó la Ley 22/2011."
+    },
+    {
+      "id": "t20-q58",
+      "pregunta": "Solo puede alterarse el orden de la jerarquía de residuos:",
+      "opciones": [
+        "Justificándolo con un enfoque de ciclo de vida",
+        "Si lo pide el laboratorio",
+        "Nunca, en ningún caso"
+      ],
+      "correcta": 0,
+      "explicacion": "Art. 8.1 de la Ley 7/2022.",
+      "fuente": "Ley 7/2022, art. 8.1 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Solo puede apartarse de este orden justificándolo con un enfoque de ciclo de vida."
+    },
+    {
+      "id": "t20-q59",
+      "pregunta": "El envase de un residuo de laboratorio se etiqueta con:",
+      "opciones": [
+        "Solo el nombre del técnico",
+        "Su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas",
+        "Solo el código postal del gestor"
+      ],
+      "correcta": 1,
+      "explicacion": "Y se entrega a gestor autorizado.",
+      "fuente": "Gestión práctica · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "Etiquetar el envase de residuo con su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas de peligro que correspondan."
+    },
+    {
+      "id": "t20-q60",
+      "pregunta": "Los residuos peligrosos del laboratorio se entregan:",
+      "opciones": [
+        "Al servicio municipal de basura",
+        "Por el desagüe, muy diluidos",
+        "A gestor autorizado, con su documento de identificación y trazabilidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Nunca al desagüe.",
+      "fuente": "Gestión práctica · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "La entrega se hace a gestor autorizado, con su documento de identificación y trazabilidad."
+    },
+    {
+      "id": "t20-q61",
+      "pregunta": "Los residuos de un laboratorio caen en el capítulo 16 de la LER, que es el de:",
+      "opciones": [
+        "Residuos no especificados en otro capítulo de la lista",
+        "Residuos municipales",
+        "Residuos de servicios médicos"
+      ],
+      "correcta": 0,
+      "explicacion": "Subcapítulo 16 05: gases a presión y productos químicos desechados.",
+      "fuente": "Decisión 2014/955/UE · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "capítulo 16, «Residuos no especificados en otro capítulo de la lista»"
+    },
+    {
+      "id": "t20-q62",
+      "pregunta": "Según el art. 6 de la Ley 7/2022, cuando la lista codifica un residuo como peligroso:",
+      "opciones": [
+        "Es solo orientativa",
+        "Esa codificación es vinculante",
+        "Puede cambiarla el productor"
+      ],
+      "correcta": 1,
+      "explicacion": "Remite a la Decisión 2014/955/UE.",
+      "fuente": "Ley 7/2022, art. 6 · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Cuando se indique la codificación de un residuo como peligroso, dicha codificación será vinculante."
+    },
+    {
+      "id": "t20-q63",
+      "pregunta": "Las botellas de gas a presión (GHS04) se almacenan:",
+      "opciones": [
+        "Tumbadas en el suelo",
+        "Dentro de la vitrina de gases",
+        "Verticales, sujetas, en local ventilado y con la caperuza puesta"
+      ],
+      "correcta": 2,
+      "explicacion": "Consejo P410+P403.",
+      "fuente": "Tabla operativa · apunte §8",
+      "apartado": "8",
+      "evidencia": "Botellas verticales, sujetas, en local ventilado; caperuza puesta"
+    },
+    {
+      "id": "t20-q64",
+      "pregunta": "Los productos comburentes (GHS03) se almacenan:",
+      "opciones": [
+        "Separados físicamente de los inflamables y de la materia orgánica",
+        "Junto a los disolventes, en el armario de inflamables",
+        "En el estante más alto"
+      ],
+      "correcta": 0,
+      "explicacion": "Un comburente aviva el fuego.",
+      "fuente": "Tabla operativa · apunte §8",
+      "apartado": "8",
+      "evidencia": "Separado físicamente de inflamables y de materia orgánica"
     }
   ],
   "supuestos": [
@@ -794,6 +1700,252 @@
           "correcta": 1,
           "explicacion": "El art. 2 de la Ley 7/2022 incluye en la definición de residuo peligroso los envases que contengan restos de sustancias peligrosas o estén contaminados por ellas. Se segrega, se etiqueta y se entrega a gestor autorizado; nunca al desagüe.",
           "fuente": "Ley 7/2022, art. 2; Decisión 2014/955/UE"
+        }
+      ]
+    },
+    {
+      "id": "t20-s02",
+      "titulo": "Supuesto 2. Ordenar el almacén de reactivos",
+      "enunciado": "El laboratorio de fisicoquímica reorganiza su pequeño almacén. Tiene 30 L de etanol y 10 L de acetona (los dos líquidos inflamables de categoría 2, H225), varias botellas de 2,5 L de ácidos y bases, ácido nítrico concentrado (comburente), y un frasco de éter dietílico abierto hace años. El volumen total de reactivos es pequeño.",
+      "preguntas": [
+        {
+          "id": "t20-s02-q1",
+          "pregunta": "¿Se aplica el Reglamento de Almacenamiento de Productos Químicos a los inflamables?",
+          "opciones": [
+            "No: 40 L de H225 dan un cociente de 0,8 frente a 50 L, por debajo de 1; rigen la FDS y la PRL",
+            "Sí: cualquier cantidad de inflamables obliga al APQ",
+            "Sí, con proyecto visado y la ITC MIE APQ-1",
+            "Solo si el laboratorio es privado"
+          ],
+          "correcta": 0,
+          "explicacion": "Umbral de 50 L para cat. 2 y regla de suma.",
+          "fuente": "RD 656/2017 (APQ) · apunte §6.1",
+          "apartado": "6.1",
+          "evidencia": "la suma de los cocientes entre las cantidades almacenadas y las de la columna no puede superar 1."
+        },
+        {
+          "id": "t20-s02-q2",
+          "pregunta": "Con un stock tan pequeño, ¿qué distribución recomienda la NTP 725?",
+          "opciones": [
+            "El sistema de península",
+            "El sistema de estanterías, intercalando productos inertes entre los incompatibles",
+            "Todo junto por orden alfabético",
+            "Una isla por cada reactivo"
+          ],
+          "correcta": 1,
+          "explicacion": "Las islas son para almacenes grandes; la península no se recomienda.",
+          "fuente": "INSST, NTP 725 · apunte §6.2",
+          "apartado": "6.2",
+          "evidencia": "| De estanterías | Se intercalan productos inertes entre los incompatibles, sin dedicar estanterías enteras | Si el stock no es voluminoso, se puede obviar el sistema de islas |"
+        },
+        {
+          "id": "t20-s02-q3",
+          "pregunta": "¿Dónde coloca las botellas de 2,5 L de ácidos y bases?",
+          "opciones": [
+            "En el estante más alto, fuera del alcance",
+            "Encima de la vitrina de gases",
+            "En los niveles más bajos: en estantes elevados no va nada mayor de medio litro",
+            "En el suelo, junto a la puerta"
+          ],
+          "correcta": 2,
+          "explicacion": "Y separadas ácidos de bases, sobre cubeto.",
+          "fuente": "INSST, NTP 725 · apunte §6.2",
+          "apartado": "6.2",
+          "evidencia": "Nada mayor de medio litro en estantes elevados. Los recipientes más grandes van a los niveles más bajos."
+        },
+        {
+          "id": "t20-s02-q4",
+          "pregunta": "¿Puede guardar el ácido nítrico junto a los disolventes inflamables?",
+          "opciones": [
+            "Sí, si están en envases cerrados",
+            "Sí, porque el ácido nítrico no arde",
+            "Solo en la vitrina de gases",
+            "No: comburentes e inflamables no se almacenan juntos"
+          ],
+          "correcta": 3,
+          "explicacion": "El art. 5.3 del RD 374/2001 obliga a separar incompatibles; la lista de parejas es práctica de laboratorio, no texto legal.",
+          "fuente": "RD 374/2001, art. 5.3; práctica de laboratorio · apunte §6.2 y Dudas",
+          "apartado": "6.2",
+          "evidencia": "Parejas que nunca se almacenan juntas: ácidos y bases; comburentes e inflamables;"
+        },
+        {
+          "id": "t20-s02-q5",
+          "pregunta": "¿Qué riesgo tiene el éter dietílico abierto hace años?",
+          "opciones": [
+            "Puede haber formado peróxidos inestables; por eso se lleva un registro de recepción para retirar lo que envejece",
+            "Ninguno, si sigue cerrado",
+            "Que pierda pureza, sin riesgo de seguridad",
+            "Que se congele"
+          ],
+          "correcta": 0,
+          "explicacion": "Las NTP no dan un plazo concreto para los éteres.",
+          "fuente": "INSST, NTP 725; NTP 479 · apunte §6.2 y Dudas",
+          "apartado": "6.2",
+          "evidencia": "Los éteres son el caso de libro de producto que se peroxida al envejecer"
+        }
+      ]
+    },
+    {
+      "id": "t20-s03",
+      "titulo": "Supuesto 3. Los residuos del laboratorio",
+      "enunciado": "Al terminar una serie de análisis quedan restos de cloroformo, de metanol, disoluciones ácidas y varios reactivos caducados en sus frascos originales. El técnico debe recogerlos, etiquetarlos y prepararlos para su retirada.",
+      "preguntas": [
+        {
+          "id": "t20-s03-q1",
+          "pregunta": "¿Cómo recoge el cloroformo y el metanol?",
+          "opciones": [
+            "Juntos en un bidón de disolventes",
+            "En bidones distintos: disolventes halogenados y no halogenados por separado",
+            "Por el desagüe con abundante agua",
+            "Mezclados con los ácidos para neutralizarlos"
+          ],
+          "correcta": 1,
+          "explicacion": "Segregación en origen por grupos compatibles.",
+          "fuente": "Gestión práctica · apunte §7.3",
+          "apartado": "7.3",
+          "evidencia": "disolventes halogenados / disolventes no halogenados / ácidos / bases"
+        },
+        {
+          "id": "t20-s03-q2",
+          "pregunta": "¿Puede verter las disoluciones ácidas al desagüe muy diluidas?",
+          "opciones": [
+            "Sí, si se diluyen diez veces",
+            "Sí, si el pH es menor de 2",
+            "No: un residuo peligroso nunca se vierte al desagüe",
+            "Sí, con el grifo abierto"
+          ],
+          "correcta": 2,
+          "explicacion": "Van a su bidón de ácidos.",
+          "fuente": "Gestión práctica · apunte §7.3",
+          "apartado": "7.3",
+          "evidencia": "Nunca verter al desagüe un residuo peligroso ni mezclar grupos incompatibles en el mismo bidón."
+        },
+        {
+          "id": "t20-s03-q3",
+          "pregunta": "¿Qué pone en la etiqueta del bidón?",
+          "opciones": [
+            "Solo «residuos»",
+            "El nombre del técnico y la fecha de entrega",
+            "Nada: lo etiqueta el gestor",
+            "Contenido, grupo, fecha de inicio de acumulación y pictogramas"
+          ],
+          "correcta": 3,
+          "explicacion": "Y lo entrega a gestor autorizado.",
+          "fuente": "Gestión práctica · apunte §7.3",
+          "apartado": "7.3",
+          "evidencia": "Etiquetar el envase de residuo con su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas de peligro que correspondan."
+        },
+        {
+          "id": "t20-s03-q4",
+          "pregunta": "¿Qué código LER corresponde a los reactivos caducados?",
+          "opciones": [
+            "16 05 06*: productos químicos de laboratorio peligrosos",
+            "16 05 09: productos químicos no peligrosos",
+            "16 05 04*: gases en recipientes a presión",
+            "20 03 01: residuos municipales"
+          ],
+          "correcta": 0,
+          "explicacion": "El 16 05 07* y el 16 05 08* son productos químicos desechados en general.",
+          "fuente": "Decisión 2014/955/UE · apunte §7.4",
+          "apartado": "7.4",
+          "evidencia": "Productos químicos de laboratorio que consisten en sustancias peligrosas, incluidas las mezclas de productos químicos de laboratorio, o las contienen"
+        },
+        {
+          "id": "t20-s03-q5",
+          "pregunta": "¿Qué indica el asterisco del código?",
+          "opciones": [
+            "Que es reciclable",
+            "Que el residuo se considera peligroso",
+            "Que es de origen biológico",
+            "Que puede ir al contenedor municipal"
+          ],
+          "correcta": 1,
+          "explicacion": "Lo dice la propia Decisión 2014/955/UE.",
+          "fuente": "Decisión 2014/955/UE · apunte §7.4",
+          "apartado": "7.4",
+          "evidencia": "en la lista de residuos se considerarán residuos peligrosos"
+        }
+      ]
+    },
+    {
+      "id": "t20-s04",
+      "titulo": "Supuesto 4. La etiqueta de un ácido corrosivo",
+      "enunciado": "Llega un ácido concentrado. Su etiqueta lleva el pictograma GHS05, la palabra de advertencia «Peligro», las indicaciones H290 y H314, y los consejos P280 y P305+P351+P338. Hay que trasvasarlo a frascos más pequeños.",
+      "preguntas": [
+        {
+          "id": "t20-s04-q1",
+          "pregunta": "¿Por qué un solo pictograma (GHS05) cubre H290 y H314?",
+          "opciones": [
+            "Porque H290 no necesita pictograma",
+            "Porque es un error de la etiqueta",
+            "Porque H314 es un peligro físico",
+            "Porque el GHS05 cubre a la vez un peligro físico (corrosivo para los metales) y uno para la salud"
+          ],
+          "correcta": 3,
+          "explicacion": "Es uno de los dos pictogramas de dos grupos (el otro es GHS07).",
+          "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| GHS05 | Corrosión | Físicos y salud | Corrosivos para los metales (físico) y corrosión cutánea / lesiones oculares graves (salud) |"
+        },
+        {
+          "id": "t20-s04-q2",
+          "pregunta": "Por su primer dígito, H290 es un peligro:",
+          "opciones": [
+            "Físico",
+            "Para la salud",
+            "Para el medio ambiente",
+            "Suplementario de la UE"
+          ],
+          "correcta": 0,
+          "explicacion": "2 físico, 3 salud, 4 medio ambiente.",
+          "fuente": "Reglamento (CE) 1272/2008 (CLP) · apunte §3.2",
+          "apartado": "3.2",
+          "evidencia": "Tres dígitos tras la H: el primero indica el grupo (2 físico, 3 salud, 4 medio ambiente)"
+        },
+        {
+          "id": "t20-s04-q3",
+          "pregunta": "La etiqueta lleva «Peligro». ¿Puede llevar también «Atención»?",
+          "opciones": [
+            "Sí, si hay varios peligros",
+            "No: si figura «peligro», no aparece «atención»",
+            "Sí, si uno es de categoría menos grave",
+            "Solo en envases pequeños"
+          ],
+          "correcta": 1,
+          "explicacion": "Nunca conviven las dos palabras.",
+          "fuente": "Reglamento (CE) 1272/2008 (CLP), art. 20.3 · apunte §4.2",
+          "apartado": "4.2",
+          "evidencia": "Cuando en la etiqueta figure la palabra de advertencia «peligro», no aparecerá la palabra de advertencia «atención»"
+        },
+        {
+          "id": "t20-s04-q4",
+          "pregunta": "Trasvasando en vitrina, ¿qué protección ocular lleva?",
+          "opciones": [
+            "Ninguna, porque la vitrina protege",
+            "Gafas de sol",
+            "Gafas de seguridad con protección lateral, y pantalla facial si hay riesgo de proyección importante",
+            "Solo una mascarilla"
+          ],
+          "correcta": 2,
+          "explicacion": "Obligatorias con líquidos corrosivos.",
+          "fuente": "RD 773/1997 · apunte §5.3",
+          "apartado": "5.3",
+          "evidencia": "| Salpicadura a los ojos | Gafas de seguridad con protección lateral; pantalla facial si hay riesgo de proyección importante |"
+        },
+        {
+          "id": "t20-s04-q5",
+          "pregunta": "¿Dónde guarda los frascos del ácido?",
+          "opciones": [
+            "En el estante más alto",
+            "Junto a las bases, para neutralizar derrames",
+            "En la vitrina de gases",
+            "En la parte baja del armario, sobre cubeto, separado de las bases"
+          ],
+          "correcta": 3,
+          "explicacion": "Ácidos y bases, separados.",
+          "fuente": "Tabla operativa · apunte §8",
+          "apartado": "8",
+          "evidencia": "Parte baja del armario, sobre cubeto; ácidos y bases separados"
         }
       ]
     }
