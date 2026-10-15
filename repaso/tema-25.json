@@ -423,6 +423,236 @@
         "errores"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t25-f41",
+      "anverso": "¿Por qué la espectrofotometría UV-visible es la técnica instrumental más usada en un laboratorio de aguas?",
+      "reverso": "Porque **el equipo es barato**, la **medida es rápida** y **casi cualquier ion** se puede convertir en un **compuesto coloreado** que absorba.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "el equipo es barato, la medida es rápida y casi cualquier ion se puede convertir en un compuesto coloreado que absorba."
+    },
+    {
+      "id": "t25-f42",
+      "anverso": "Normas de fósforo, nitrito, cloro y color en agua.",
+      "reverso": "Fósforo: **UNE-EN ISO 6878:2005**. Nitrito: **UNE-EN 26777:1994**. Cloro libre y total: **UNE-EN ISO 7393-2:2019**. Color: **UNE-EN ISO 7887:2012**.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "1",
+      "evidencia": [
+        "| Fósforo / fosfato | UNE-EN ISO 6878:2005 | Ensayo normalizado |",
+        "| Cloro libre y total | UNE-EN ISO 7393-2:2019 | Ensayo normalizado |"
+      ]
+    },
+    {
+      "id": "t25-f43",
+      "anverso": "¿Qué es un espectro de absorción y qué se obtiene de él?",
+      "reverso": "La **representación de la absorbancia frente a la longitud de onda**. De él se saca la **λmáx**, donde se mide.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "apartado": "2.1",
+      "evidencia": "El espectro de absorción es la representación de la absorbancia frente a la longitud de onda."
+    },
+    {
+      "id": "t25-f44",
+      "anverso": "¿Por qué los métodos del visible se llaman colorimétricos?",
+      "reverso": "Porque miden un **color**: al analito incoloro se le añade un **reactivo cromogénico**. El color que se ve es el **complementario** del absorbido.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "etiquetas": [
+        "concepto"
+      ],
+      "apartado": "2.1",
+      "evidencia": "Por eso a los métodos del visible se les llama colorimétricos, y de ahí que se les añada un reactivo cromogénico al analito incoloro."
+    },
+    {
+      "id": "t25-f45",
+      "anverso": "Relación entre transmitancia y absorbancia: ejemplos numéricos.",
+      "reverso": "Es **logarítmica**: **T = 10 % → A = 1**; **T = 1 % → A = 2**. A más absorbancia, menos transmitancia.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "etiquetas": [
+        "leyes"
+      ],
+      "apartado": "2.2",
+      "evidencia": "T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-f46",
+      "anverso": "¿Qué es la absortividad (a) y en qué se diferencia de la absortividad molar?",
+      "reverso": "Es el coeficiente cuando la concentración va en **g/L**: unidades **L·g⁻¹·cm⁻¹**. La **molar** (ε) va con mol/L: L·mol⁻¹·cm⁻¹.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "etiquetas": [
+        "leyes"
+      ],
+      "apartado": "2.2",
+      "evidencia": "Si la concentración se expresa en g/L, el coeficiente se llama simplemente absortividad (a) y sus unidades son L·g⁻¹·cm⁻¹."
+    },
+    {
+      "id": "t25-f47",
+      "anverso": "¿Qué se hace si la absorbancia de la muestra sale muy baja?",
+      "reverso": "Se **concentra** la muestra o se usa una **cubeta de mayor camino óptico**. (Si sale muy alta, se diluye.)",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "etiquetas": [
+        "leyes"
+      ],
+      "apartado": "2.2",
+      "evidencia": "si sale por debajo, se concentra o se usa una cubeta de mayor camino óptico."
+    },
+    {
+      "id": "t25-f48",
+      "anverso": "¿En qué longitud de onda cambia un espectrofotómetro UV-visible de lámpara? ¿Qué fuente usan los equipos compactos?",
+      "reverso": "Conmuta de deuterio a tungsteno **en torno a los 350 nm**. Los equipos **compactos y de campo** suelen llevar **lámpara de xenón pulsada**, para todo el UV-visible.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "Un espectrofotómetro UV-visible lleva las dos primeras, y conmuta de una a otra en torno a los 350 nm.",
+        "| Lámpara de xenón (pulsada) | Todo el UV-visible | En equipos compactos y de campo |"
+      ]
+    },
+    {
+      "id": "t25-f49",
+      "anverso": "Burbujas en la cubeta y deriva de la lámpara: efecto y remedio.",
+      "reverso": "**Burbujas o partículas**: dispersan la luz, absorbancia **por exceso**; llenar con cuidado, golpear, reposar. **Deriva** (lámpara fría): **dejar estabilizar** el equipo; usar **doble haz**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "etiquetas": [
+        "errores"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "| Burbujas o partículas en el haz | Dispersan la luz: absorbancia falsa por exceso | Llenar con cuidado, golpear suavemente, dejar reposar |",
+        "| Deriva de la lámpara | La fuente no es estable en frío | Dejar estabilizar el equipo; usar doble haz |"
+      ]
+    },
+    {
+      "id": "t25-f50",
+      "anverso": "¿Cómo se tratan las interferencias químicas en espectrofotometría?",
+      "reverso": "Otras especies reaccionan con el cromógeno o absorben a esa λ: se **enmascaran**, se **separan** o se **cambia de λ**.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "etiquetas": [
+        "errores"
+      ],
+      "apartado": "2.4",
+      "evidencia": "| Interferencias químicas | Otras especies reaccionan con el cromógeno o absorben a esa λ | Enmascarar, separar o cambiar de λ |"
+    },
+    {
+      "id": "t25-f51",
+      "anverso": "¿Cómo se verifican la luz parásita y la línea base de un espectrofotómetro?",
+      "reverso": "**Luz parásita**: con **disoluciones de corte**, que deben dar absorbancia muy alta. **Línea base y ruido**: **barrido** con la cubeta vacía o con el blanco.",
+      "fuente": "Guías de laboratorios de calibración · apunte §2.4 y Dudas",
+      "etiquetas": [
+        "verificacion"
+      ],
+      "apartado": "2.4",
+      "evidencia": [
+        "| Luz parásita | Disoluciones de corte, que deben dar absorbancia muy alta |",
+        "| Línea base y ruido | Barrido con la cubeta vacía o con el blanco |"
+      ]
+    },
+    {
+      "id": "t25-f52",
+      "anverso": "¿Qué tienen en común los métodos normalizados, los kits de cubeta precintada y los fotómetros de campo?",
+      "reverso": "El **mismo fundamento**: reactivo cromogénico, tiempo de desarrollo, medida frente al blanco y recta de calibrado. **Cambia el formato, no el fundamento.**",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Todo esto está también detrás de los kits de cubeta precintada y de los fotómetros de campo: cambia el formato, no el fundamento."
+    },
+    {
+      "id": "t25-f53",
+      "anverso": "¿Qué exige el RD 3/2023 a un método espectrofotométrico de agua de consumo?",
+      "reverso": "No impone método: exige que mida el valor paramétrico con un **límite de cuantificación ≤ 30 %** de ese valor y con la **incertidumbre** de su tabla 15.",
+      "fuente": "RD 3/2023, anexo III · apunte §2.5",
+      "etiquetas": [
+        "normativa"
+      ],
+      "apartado": "2.5",
+      "evidencia": "exige que el que se use sea capaz de medir el valor paramétrico con un límite de cuantificación ≤ 30 % de ese valor"
+    },
+    {
+      "id": "t25-f54",
+      "anverso": "Fósforo por azul de molibdeno: longitud de onda, campo y fósforo total.",
+      "reverso": "Se mide a **880 nm** (o 700 nm); campo de **0,005 a 0,8 mg/L** sin dilución. El **fósforo total** exige **digestión previa**.",
+      "fuente": "UNE-EN ISO 6878:2005 (resumen) · apunte §3 y Dudas",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "medida a 880 nm (o 700 nm); campo de 0,005 a 0,8 mg/L sin dilución.",
+        "El fósforo total exige digestión previa"
+      ]
+    },
+    {
+      "id": "t25-f55",
+      "anverso": "Nitrito: reactivos, pH y longitud de onda.",
+      "reverso": "**Sulfanilamida + NED** en medio ácido (**pH ≈ 1,9**); color **rosa** medido hacia **540 nm**.",
+      "fuente": "UNE-EN 26777:1994 (resumen) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "Sulfanilamida + NED en medio ácido (pH ≈ 1,9); color rosa medido en torno a 540 nm."
+    },
+    {
+      "id": "t25-f56",
+      "anverso": "Cloro por DPD: color y orden de las medidas.",
+      "reverso": "El DPD da color **rojo**. Se mide **primero el cloro libre**, y el **total tras añadir yoduro**, de inmediato y en campo.",
+      "fuente": "UNE-EN ISO 7393-2:2019 (resumen) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "El DPD da color rojo; se mide en fotómetro o por comparación visual con escala.",
+        "Cloro libre primero, y el total tras añadir yoduro."
+      ]
+    },
+    {
+      "id": "t25-f57",
+      "anverso": "Amonio por azul de indofenol: ¿qué tiene de particular?",
+      "reverso": "Reacción con **fenol e hipoclorito**, catalizada por **nitroprusiato**; el color se desarrolla **lento** (del orden de **una hora**) y solo sirve en disoluciones **claras**.",
+      "fuente": "ISO 7150-1 (ver Dudas) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "desarrollo de color lento (del orden de una hora). Solo en disoluciones claras"
+    },
+    {
+      "id": "t25-f58",
+      "anverso": "Hierro con 1,10-fenantrolina: ¿cómo se hace?",
+      "reverso": "El hierro se **reduce a Fe(II)** con **hidroxilamina** y forma un complejo **rojo-anaranjado** a **pH ≈ 3**; se mide hacia **510 nm**.",
+      "fuente": "ISO 6332 (ver Dudas) · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": "El hierro se reduce a Fe(II) (hidroxilamina) y forma un complejo rojo-anaranjado a pH ≈ 3; medida en torno a 510 nm"
+    },
+    {
+      "id": "t25-f59",
+      "anverso": "Detergentes aniónicos y cromo(VI): ¿cómo se determinan?",
+      "reverso": "**Detergentes**: azul de metileno, par iónico **extraído con cloroformo**. **Cr(VI)**: **difenilcarbazida**, color **violeta** en medio ácido; distingue el Cr(VI) del cromo total.",
+      "fuente": "UNE-EN 903; método clásico · apunte §3",
+      "etiquetas": [
+        "metodos"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "Formación de un par iónico que se extrae con cloroformo y se mide el color azul",
+        "Color violeta en medio ácido. Distingue Cr(VI) del cromo total"
+      ]
     }
   ],
   "test": [
@@ -752,6 +982,586 @@
       "explicacion": "Pregunta literal de 1322 #14; la plantilla definitiva da por buena la a). Lo que se discrimina son las unidades: nanómetros, no números de onda. El límite inferior que usa aquí el tribunal (180 nm) no coincide con el de 1246 #46 (195 nm) ni con el del apunte (190 nm): son convenciones distintas del borde del ultravioleta, y conviene reconocer las tres.",
       "fuente": "Cuestionario 1322, primer ejercicio, #14; plantilla definitiva del Ayuntamiento de Zaragoza",
       "nucleo": true
+    },
+    {
+      "id": "t25-q27",
+      "pregunta": "Siendo P₀ la potencia incidente y Pt la transmitida, la absorbancia es:",
+      "opciones": [
+        "A = −log (Pt / P₀)",
+        "A = Pt / P₀",
+        "A = log (Pt / P₀)"
+      ],
+      "correcta": 0,
+      "explicacion": "A = −log T = log (P₀ / Pt). Pt/P₀ es la transmitancia.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1246, primer ejercicio, #43 · apunte §2.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "Expresión de la absorbancia (P₀, potencia incidente; Pt, potencia transmitida)"
+      },
+      "apartado": "2.2",
+      "evidencia": "| Absorbancia (A) | A = − log T = log (I₀ / I) | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q28",
+      "pregunta": "Para medir en todo el intervalo UV-visible, la cubeta debe ser de:",
+      "opciones": [
+        "Vidrio",
+        "Cuarzo (sílice fundida)",
+        "Plástico"
+      ],
+      "correcta": 1,
+      "explicacion": "El vidrio y el plástico absorben el ultravioleta: solo valen en el visible.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1322, primer ejercicio, #16 · apunte §2.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · primer ejercicio",
+        "texto": "¿Cuál de los siguientes cubetas de muestra se puede utilizar en la espectroscopía UV-VIS?"
+      },
+      "apartado": "2.3",
+      "evidencia": "| Cuarzo (sílice fundida) | Ultravioleta y visible: es obligatorio por debajo de ≈ 340 nm |"
+    },
+    {
+      "id": "t25-q29",
+      "pregunta": "Al representar la absorbancia de una disolución a varias longitudes de onda se obtiene:",
+      "opciones": [
+        "Una recta de calibrado",
+        "Una curva de valoración",
+        "Un espectro de absorción"
+      ],
+      "correcta": 2,
+      "explicacion": "La recta de calibrado es absorbancia frente a concentración.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1322, primer ejercicio, #18 · apunte §2.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · primer ejercicio",
+        "texto": "Si representamos la absorbancia a varias longitudes de onda, obtendremos:"
+      },
+      "apartado": "2.1",
+      "evidencia": "El espectro de absorción es la representación de la absorbancia frente a la longitud de onda."
+    },
+    {
+      "id": "t25-q30",
+      "pregunta": "Según la ley de Lambert-Beer, para una radiación monocromática, la absorbancia es:",
+      "opciones": [
+        "Directamente proporcional a la concentración y al espesor atravesado",
+        "Inversamente proporcional a la concentración",
+        "Independiente del espesor de la cubeta"
+      ],
+      "correcta": 0,
+      "explicacion": "A = ε · b · c.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · 1233, primera prueba, #8 · apunte §2.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · primera prueba",
+        "texto": "La Ley de Lambert Beer establece que en el caso de que se considere una radiación monocromática que atraviesa una…"
+      },
+      "apartado": "2.2",
+      "evidencia": "Ley de Beer: la absorbancia es proporcional a la concentración."
+    },
+    {
+      "id": "t25-q31",
+      "pregunta": "La técnica instrumental más usada en un laboratorio de aguas es:",
+      "opciones": [
+        "La absorción atómica",
+        "La espectrofotometría de absorción molecular UV-visible",
+        "La cromatografía de gases"
+      ],
+      "correcta": 1,
+      "explicacion": "Equipo barato, medida rápida y casi cualquier ion se vuelve coloreado.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §1",
+      "apartado": "1",
+      "evidencia": "Es, con diferencia, la técnica instrumental más usada en un laboratorio de aguas"
+    },
+    {
+      "id": "t25-q32",
+      "pregunta": "La norma del nitrito en agua por espectrofotometría es la:",
+      "opciones": [
+        "UNE-EN ISO 6878:2005",
+        "UNE-EN ISO 7887:2012",
+        "UNE-EN 26777:1994"
+      ],
+      "correcta": 2,
+      "explicacion": "6878: fósforo; 7887: color.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Nitrito | UNE-EN 26777:1994 | Ensayo normalizado |"
+    },
+    {
+      "id": "t25-q33",
+      "pregunta": "El cloro libre y total por DPD se recoge en la norma:",
+      "opciones": [
+        "UNE-EN ISO 7393-2:2019",
+        "UNE-EN 26777:1994",
+        "UNE-EN 903"
+      ],
+      "correcta": 0,
+      "explicacion": "La 903 es de detergentes aniónicos.",
+      "fuente": "Encuadre normativo · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Cloro libre y total | UNE-EN ISO 7393-2:2019 | Ensayo normalizado |"
+    },
+    {
+      "id": "t25-q34",
+      "pregunta": "En la región UV-visible, la absorción de la radiación por las moléculas se debe a:",
+      "opciones": [
+        "Vibraciones nucleares",
+        "Transiciones electrónicas",
+        "Ionización de los átomos"
+      ],
+      "correcta": 1,
+      "explicacion": "Un electrón pasa a un nivel superior tomando un fotón.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "En la región ultravioleta-visible esa absorción se debe a transiciones electrónicas"
+    },
+    {
+      "id": "t25-q35",
+      "pregunta": "Una disolución que absorbe en el azul (≈ 435 nm) se ve de color:",
+      "opciones": [
+        "Azul",
+        "Violeta",
+        "Amarillo"
+      ],
+      "correcta": 2,
+      "explicacion": "El color que vemos es el complementario del absorbido.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "una disolución que absorbe en el azul (≈ 435 nm) se ve amarilla."
+    },
+    {
+      "id": "t25-q36",
+      "pregunta": "Además de la sensibilidad, medir en la λ del máximo de absorción tiene la ventaja de que:",
+      "opciones": [
+        "La curva es más plana y un pequeño error de λ apenas cambia la lectura",
+        "Allí no hay que hacer blanco",
+        "Allí la ley de Beer no tiene desviaciones químicas"
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso se mide siempre en λmáx.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Es donde la curva es más plana, así que un pequeño error en la longitud de onda apenas cambia la lectura."
+    },
+    {
+      "id": "t25-q37",
+      "pregunta": "Si la concentración se expresa en g/L, el coeficiente de la ley de Beer (absortividad) tiene unidades de:",
+      "opciones": [
+        "L·mol⁻¹·cm⁻¹",
+        "L·g⁻¹·cm⁻¹",
+        "g·L⁻¹·cm"
+      ],
+      "correcta": 1,
+      "explicacion": "L·mol⁻¹·cm⁻¹ es la absortividad molar.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Si la concentración se expresa en g/L, el coeficiente se llama simplemente absortividad (a) y sus unidades son L·g⁻¹·cm⁻¹."
+    },
+    {
+      "id": "t25-q38",
+      "pregunta": "Si la absorbancia de la muestra queda por debajo del intervalo de trabajo:",
+      "opciones": [
+        "Se diluye",
+        "Se extrapola la recta",
+        "Se concentra o se usa una cubeta de mayor camino óptico"
+      ],
+      "correcta": 2,
+      "explicacion": "Si queda por encima, se diluye.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "si sale por debajo, se concentra o se usa una cubeta de mayor camino óptico."
+    },
+    {
+      "id": "t25-q39",
+      "pregunta": "El error fotométrico relativo es mínimo en torno a una absorbancia de:",
+      "opciones": [
+        "0,4 (transmitancia ≈ 37 %)",
+        "2 (transmitancia 1 %)",
+        "0,01"
+      ],
+      "correcta": 0,
+      "explicacion": "El valor teórico citado es 0,434; se trabaja entre 0,1 y 1.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2 y Dudas",
+      "apartado": "2.2",
+      "evidencia": "El error fotométrico relativo pasa por un mínimo en torno a A ≈ 0,4 (una transmitancia de ≈ 37 %)"
+    },
+    {
+      "id": "t25-q40",
+      "pregunta": "Las desviaciones reales de la ley de Beer se deben a:",
+      "opciones": [
+        "La radiación policromática",
+        "Las interacciones entre partículas y el cambio del índice de refracción a concentraciones altas",
+        "La disociación del analito"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo segundo es instrumental; lo tercero, químico.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "A concentraciones altas las partículas de analito interaccionan y cambia el índice de refracción, que altera ε."
+    },
+    {
+      "id": "t25-q41",
+      "pregunta": "La radiación policromática es una desviación de la ley de Beer de tipo:",
+      "opciones": [
+        "Real",
+        "Química",
+        "Instrumental"
+      ],
+      "correcta": 2,
+      "explicacion": "Si ε varía en la banda, la absorbancia sale menor.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Radiación policromática: el haz no es perfectamente monocromático, y si ε varía en esa banda la absorbancia sale menor."
+    },
+    {
+      "id": "t25-q42",
+      "pregunta": "Un espectrofotómetro UV-visible pasa de la lámpara de deuterio a la de tungsteno en torno a:",
+      "opciones": [
+        "350 nm",
+        "800 nm",
+        "200 nm"
+      ],
+      "correcta": 0,
+      "explicacion": "Deuterio para el UV; tungsteno para visible e IR próximo.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Un espectrofotómetro UV-visible lleva las dos primeras, y conmuta de una a otra en torno a los 350 nm."
+    },
+    {
+      "id": "t25-q43",
+      "pregunta": "La lámpara de xenón pulsada se usa sobre todo en:",
+      "opciones": [
+        "Absorción atómica",
+        "Equipos compactos y de campo, para todo el UV-visible",
+        "Solo para el infrarrojo"
+      ],
+      "correcta": 1,
+      "explicacion": "Cubre todo el UV-visible.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Lámpara de xenón (pulsada) | Todo el UV-visible | En equipos compactos y de campo |"
+    },
+    {
+      "id": "t25-q44",
+      "pregunta": "De todas las longitudes de onda que salen del elemento dispersante de un monocromador:",
+      "opciones": [
+        "Pasan todas a la muestra",
+        "Pasa solo la de la lámpara de deuterio",
+        "Solo pasa la que deja pasar la rendija de salida"
+      ],
+      "correcta": 2,
+      "explicacion": "Rendija de entrada, elemento dispersante y rendija de salida.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "De todo el abanico de longitudes de onda que sale del elemento dispersante, solo pasa la que la rendija de salida deja pasar."
+    },
+    {
+      "id": "t25-q45",
+      "pregunta": "Las cubetas de espectrofotometría se sujetan:",
+      "opciones": [
+        "Por las caras esmeriladas, sin tocar las ópticas",
+        "Por las caras ópticas pulidas",
+        "Por cualquier cara"
+      ],
+      "correcta": 0,
+      "explicacion": "Las huellas dispersan y absorben.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "se sujetan por las esmeriladas, y las ópticas no se tocan con los dedos."
+    },
+    {
+      "id": "t25-q46",
+      "pregunta": "El detector clásico y muy sensible de los espectrofotómetros es:",
+      "opciones": [
+        "El termopar",
+        "El fotomultiplicador",
+        "El electrodo de vidrio"
+      ],
+      "correcta": 1,
+      "explicacion": "También fototubos, fotodiodos y arrays.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "fotomultiplicador (muy sensible, el clásico)"
+    },
+    {
+      "id": "t25-q47",
+      "pregunta": "El camino óptico habitual de una cubeta es de:",
+      "opciones": [
+        "1 mm",
+        "10 cm",
+        "1 cm"
+      ],
+      "correcta": 2,
+      "explicacion": "Para absorbancias bajas, cubetas de mayor camino.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El camino óptico habitual es de 1 cm."
+    },
+    {
+      "id": "t25-q48",
+      "pregunta": "Una burbuja de aire en el haz de la cubeta produce:",
+      "opciones": [
+        "Una absorbancia falsa por exceso",
+        "Una absorbancia por defecto",
+        "Ningún efecto"
+      ],
+      "correcta": 0,
+      "explicacion": "Dispersa la luz.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Burbujas o partículas en el haz | Dispersan la luz: absorbancia falsa por exceso |"
+    },
+    {
+      "id": "t25-q49",
+      "pregunta": "Para evitar la deriva de la lámpara en un espectrofotómetro:",
+      "opciones": [
+        "Se mide con la tapa abierta",
+        "Se deja estabilizar el equipo y se prefiere el doble haz",
+        "Se cambia la lámpara cada día"
+      ],
+      "correcta": 1,
+      "explicacion": "La fuente no es estable en frío.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Deriva de la lámpara | La fuente no es estable en frío | Dejar estabilizar el equipo; usar doble haz |"
+    },
+    {
+      "id": "t25-q50",
+      "pregunta": "Frente a una interferencia química en un método colorimétrico, se puede:",
+      "opciones": [
+        "Aumentar el tiempo de desarrollo indefinidamente",
+        "Prescindir del blanco",
+        "Enmascarar, separar o cambiar de longitud de onda"
+      ],
+      "correcta": 2,
+      "explicacion": "Otra especie reacciona con el cromógeno o absorbe a esa λ.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Interferencias químicas | Otras especies reaccionan con el cromógeno o absorben a esa λ | Enmascarar, separar o cambiar de λ |"
+    },
+    {
+      "id": "t25-q51",
+      "pregunta": "La escala fotométrica (de absorbancia) de un espectrofotómetro se verifica con:",
+      "opciones": [
+        "Filtros de densidad óptica neutra certificados o disoluciones de dicromato potásico",
+        "Filtros de holmio",
+        "Agua destilada"
+      ],
+      "correcta": 0,
+      "explicacion": "El holmio es para la escala de longitudes de onda.",
+      "fuente": "Guías de laboratorios de calibración · apunte §2.4 y Dudas",
+      "apartado": "2.4",
+      "evidencia": "| Escala fotométrica (absorbancia) | Filtros de densidad óptica neutra certificados; clásicamente, disoluciones de dicromato potásico |"
+    },
+    {
+      "id": "t25-q52",
+      "pregunta": "La luz parásita de un espectrofotómetro se verifica con:",
+      "opciones": [
+        "Filtros de didimio",
+        "Disoluciones de corte, que deben dar absorbancia muy alta",
+        "El blanco de reactivos"
+      ],
+      "correcta": 1,
+      "explicacion": "La luz parásita da desviación negativa a A altas.",
+      "fuente": "Guías de laboratorios de calibración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Luz parásita | Disoluciones de corte, que deben dar absorbancia muy alta |"
+    },
+    {
+      "id": "t25-q53",
+      "pregunta": "Si la muestra viene coloreada o turbia de origen:",
+      "opciones": [
+        "Se mide igual y se resta un 10 %",
+        "Se añade más reactivo",
+        "Se filtra o centrifuga, o se usa un blanco de la propia muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "La turbidez dispersa la luz y se lee como absorbancia.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Filtrar o centrifugar; usar un blanco de la propia muestra"
+    },
+    {
+      "id": "t25-q54",
+      "pregunta": "Un buen reactivo cromogénico debe dar una reacción:",
+      "opciones": [
+        "Selectiva, estequiométrica y rápida, con un producto de absortividad alta y estable",
+        "Lenta y reversible",
+        "Que no forme color"
+      ],
+      "correcta": 0,
+      "explicacion": "Así el color es proporcional al analito.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Lo que se le pide al reactivo: que la reacción sea selectiva, estequiométrica y rápida"
+    },
+    {
+      "id": "t25-q55",
+      "pregunta": "En el procedimiento tipo de un método espectrofotométrico, la medida se hace frente a:",
+      "opciones": [
+        "Agua del grifo",
+        "El blanco de reactivos, a la λ del método",
+        "El patrón más concentrado"
+      ],
+      "correcta": 1,
+      "explicacion": "Con patrones tratados igual que las muestras.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Medida frente al blanco de reactivos a la λ del método."
+    },
+    {
+      "id": "t25-q56",
+      "pregunta": "Los kits de cubeta precintada y los fotómetros de campo, respecto a los métodos normalizados:",
+      "opciones": [
+        "Usan un fundamento distinto, sin reactivos",
+        "No necesitan blanco ni calibración",
+        "Cambian el formato, no el fundamento"
+      ],
+      "correcta": 2,
+      "explicacion": "Siguen siendo colorimetría.",
+      "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Todo esto está también detrás de los kits de cubeta precintada y de los fotómetros de campo: cambia el formato, no el fundamento."
+    },
+    {
+      "id": "t25-q57",
+      "pregunta": "El RD 3/2023 exige a los métodos de los parámetros físico-químicos un límite de cuantificación:",
+      "opciones": [
+        "Igual o inferior al 30 % del valor paramétrico",
+        "Igual al valor paramétrico",
+        "Inferior al 1 % del valor paramétrico"
+      ],
+      "correcta": 0,
+      "explicacion": "Y la incertidumbre de su tabla 15.",
+      "fuente": "RD 3/2023, anexo III · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "exige que el que se use sea capaz de medir el valor paramétrico con un límite de cuantificación ≤ 30 % de ese valor"
+    },
+    {
+      "id": "t25-q58",
+      "pregunta": "El azul de molibdeno del fósforo se mide habitualmente a:",
+      "opciones": [
+        "540 nm",
+        "880 nm",
+        "220 nm"
+      ],
+      "correcta": 1,
+      "explicacion": "O a 700 nm. 540 nm es el nitrito; 220 nm, el nitrato.",
+      "fuente": "UNE-EN ISO 6878:2005 (resumen) · apunte §3 y Dudas",
+      "apartado": "3",
+      "evidencia": "medida a 880 nm (o 700 nm); campo de 0,005 a 0,8 mg/L sin dilución"
+    },
+    {
+      "id": "t25-q59",
+      "pregunta": "Para determinar el fósforo total, además del método del azul de molibdeno hace falta:",
+      "opciones": [
+        "Una extracción con cloroformo",
+        "Medir a 220 nm",
+        "Una digestión previa"
+      ],
+      "correcta": 2,
+      "explicacion": "El ortofosfato se mide directamente.",
+      "fuente": "UNE-EN ISO 6878:2005 (resumen) · apunte §3",
+      "apartado": "3",
+      "evidencia": "El fósforo total exige digestión previa"
+    },
+    {
+      "id": "t25-q60",
+      "pregunta": "El colorante azoico del nitrito (sulfanilamida + NED) se mide hacia:",
+      "opciones": [
+        "540 nm",
+        "880 nm",
+        "510 nm"
+      ],
+      "correcta": 0,
+      "explicacion": "Color rosa, a pH ≈ 1,9.",
+      "fuente": "UNE-EN 26777:1994 (resumen) · apunte §3",
+      "apartado": "3",
+      "evidencia": "color rosa medido en torno a 540 nm."
+    },
+    {
+      "id": "t25-q61",
+      "pregunta": "En el método DPD, el cloro total se mide:",
+      "opciones": [
+        "Antes que el cloro libre",
+        "Tras añadir yoduro, después de leer el cloro libre",
+        "Sin reactivos"
+      ],
+      "correcta": 1,
+      "explicacion": "Medida inmediata y en campo.",
+      "fuente": "UNE-EN ISO 7393-2:2019 (resumen) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Cloro libre primero, y el total tras añadir yoduro."
+    },
+    {
+      "id": "t25-q62",
+      "pregunta": "En el método del azul de indofenol para amonio, el color se desarrolla:",
+      "opciones": [
+        "En segundos",
+        "Solo al calentar a 100 °C",
+        "Lentamente, del orden de una hora"
+      ],
+      "correcta": 2,
+      "explicacion": "Solo en disoluciones claras.",
+      "fuente": "ISO 7150-1 (ver Dudas) · apunte §3",
+      "apartado": "3",
+      "evidencia": "desarrollo de color lento (del orden de una hora). Solo en disoluciones claras"
+    },
+    {
+      "id": "t25-q63",
+      "pregunta": "En la determinación de hierro con 1,10-fenantrolina, el hierro se reduce previamente a Fe(II) con:",
+      "opciones": [
+        "Yoduro",
+        "Hidroxilamina",
+        "Ácido ascórbico y antimonio"
+      ],
+      "correcta": 1,
+      "explicacion": "Complejo rojo-anaranjado a pH ≈ 3.",
+      "fuente": "ISO 6332 (ver Dudas) · apunte §3",
+      "apartado": "3",
+      "evidencia": "El hierro se reduce a Fe(II) (hidroxilamina) y forma un complejo rojo-anaranjado a pH ≈ 3"
+    },
+    {
+      "id": "t25-q64",
+      "pregunta": "En el método del azul de metileno para detergentes aniónicos, el par iónico se:",
+      "opciones": [
+        "Precipita y se pesa",
+        "Valora con nitrato de plata",
+        "Extrae con cloroformo y se mide el color azul"
+      ],
+      "correcta": 2,
+      "explicacion": "Se expresa en mg/L de LAS.",
+      "fuente": "UNE-EN 903 (ver Dudas) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Formación de un par iónico que se extrae con cloroformo y se mide el color azul"
+    },
+    {
+      "id": "t25-q65",
+      "pregunta": "El cromo(VI) se determina espectrofotométricamente con difenilcarbazida, que da un color:",
+      "opciones": [
+        "Azul en medio básico",
+        "Violeta en medio ácido",
+        "Amarillo en medio neutro"
+      ],
+      "correcta": 1,
+      "explicacion": "Distingue el Cr(VI) del cromo total.",
+      "fuente": "Método clásico · apunte §3",
+      "apartado": "3",
+      "evidencia": "Color violeta en medio ácido. Distingue Cr(VI) del cromo total"
+    },
+    {
+      "id": "t25-q66",
+      "pregunta": "El color verdadero de un agua (UNE-EN ISO 7887) se mide:",
+      "opciones": [
+        "Sin filtrar",
+        "Tras añadir DPD",
+        "Tras filtrar la muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "Sin filtrar es el color aparente.",
+      "fuente": "UNE-EN ISO 7887:2012 (resumen) · apunte §3",
+      "apartado": "3",
+      "evidencia": "El color verdadero se mide tras filtrar; el aparente, sin filtrar"
     }
   ],
   "supuestos": [
@@ -828,6 +1638,252 @@
           "correcta": 2,
           "explicacion": "Para los parámetros físico-químicos el Real Decreto fija criterios de rendimiento, no métodos. La norma UNE es la forma habitual de cumplirlos, pero cualquier método que los cumpla es válido. Sí impone métodos concretos, en cambio, para los parámetros microbiológicos (anexo III, parte C).",
           "fuente": "RD 3/2023 (BOE-A-2023-628), anexo III, partes C y D"
+        }
+      ]
+    },
+    {
+      "id": "t25-s02",
+      "titulo": "Supuesto 2. Nitrito en un agua de consumo",
+      "enunciado": "Se determina el nitrito de un agua de consumo según la UNE-EN 26777, con recta de calibrado y cubetas de 1 cm. La muestra da una absorbancia de 0,04, por debajo del primer patrón. El responsable pregunta qué norma está obligado a seguir.",
+      "preguntas": [
+        {
+          "id": "t25-s02-q1",
+          "pregunta": "¿Qué reactivos forman el color?",
+          "opciones": [
+            "Sulfanilamida y NED, en medio ácido, que dan un colorante azoico rosa",
+            "Molibdato y ácido ascórbico",
+            "DPD y yoduro",
+            "Fenol e hipoclorito"
+          ],
+          "correcta": 0,
+          "explicacion": "Molibdato: fósforo; DPD: cloro; fenol-hipoclorito: amonio.",
+          "fuente": "UNE-EN 26777:1994 (resumen) · apunte §3",
+          "apartado": "3",
+          "evidencia": "Sulfanilamida + NED en medio ácido (pH ≈ 1,9); color rosa medido en torno a 540 nm."
+        },
+        {
+          "id": "t25-s02-q2",
+          "pregunta": "¿A qué longitud de onda mide?",
+          "opciones": [
+            "A 880 nm",
+            "Hacia 540 nm",
+            "A 220 nm",
+            "A 620 nm"
+          ],
+          "correcta": 1,
+          "explicacion": "880 nm es el fósforo; 220 nm, el nitrato.",
+          "fuente": "UNE-EN 26777:1994 (resumen) · apunte §3",
+          "apartado": "3",
+          "evidencia": "color rosa medido en torno a 540 nm."
+        },
+        {
+          "id": "t25-s02-q3",
+          "pregunta": "¿Qué condición de tiempo debe cumplir?",
+          "opciones": [
+            "Medir enseguida, sin esperar",
+            "Esperar el doble en las muestras",
+            "Esperar el tiempo de desarrollo del color, el mismo en patrones y muestras",
+            "Medir al día siguiente"
+          ],
+          "correcta": 2,
+          "explicacion": "El color necesita completarse y luego se degrada.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Espera del tiempo de desarrollo del color, el mismo para patrones y muestras."
+        },
+        {
+          "id": "t25-s02-q4",
+          "pregunta": "Con una absorbancia de 0,04, ¿qué puede hacer?",
+          "opciones": [
+            "Diluir la muestra",
+            "Extrapolar la recta hacia cero",
+            "Dar el resultado tal cual",
+            "Concentrar la muestra o usar una cubeta de mayor camino óptico"
+          ],
+          "correcta": 3,
+          "explicacion": "Por debajo de 0,1 el error crece mucho.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.2",
+          "apartado": "2.2",
+          "evidencia": "si sale por debajo, se concentra o se usa una cubeta de mayor camino óptico."
+        },
+        {
+          "id": "t25-s02-q5",
+          "pregunta": "¿Está obligado a usar la UNE-EN 26777?",
+          "opciones": [
+            "No: el RD 3/2023 exige un LC ≤ 30 % del valor paramétrico y una incertidumbre, no una norma concreta",
+            "Sí: es el método oficial del RD 3/2023",
+            "Sí, salvo que use un kit comercial",
+            "No, porque el nitrito no es parámetro"
+          ],
+          "correcta": 0,
+          "explicacion": "La norma UNE es la forma habitual de cumplirlo.",
+          "fuente": "RD 3/2023, anexo III · apunte §2.5 y Dudas",
+          "apartado": "2.5",
+          "evidencia": "exige que el que se use sea capaz de medir el valor paramétrico con un límite de cuantificación ≤ 30 % de ese valor"
+        }
+      ]
+    },
+    {
+      "id": "t25-s03",
+      "titulo": "Supuesto 3. Cloro en la red con fotómetro de campo",
+      "enunciado": "Un técnico controla el cloro de la red de distribución en varios grifos con un fotómetro portátil y reactivos DPD en sobres. Mide en el momento, en cada punto de muestreo.",
+      "preguntas": [
+        {
+          "id": "t25-s03-q1",
+          "pregunta": "¿Por qué mide en el sitio y no lleva las muestras al laboratorio?",
+          "opciones": [
+            "Porque el DPD caduca al llegar al laboratorio",
+            "Porque el fotómetro no funciona en el laboratorio",
+            "Por comodidad, sin otra razón",
+            "Porque el cloro se pierde: la medida debe ser inmediata y en campo"
+          ],
+          "correcta": 3,
+          "explicacion": "El cloro residual desaparece con el tiempo.",
+          "fuente": "UNE-EN ISO 7393-2:2019 (resumen) · apunte §3",
+          "apartado": "3",
+          "evidencia": "Medida inmediata y en campo: el cloro se pierde"
+        },
+        {
+          "id": "t25-s03-q2",
+          "pregunta": "¿En qué orden mide el cloro libre y el total?",
+          "opciones": [
+            "Primero el libre, y el total tras añadir yoduro",
+            "Primero el total y después el libre",
+            "Los dos a la vez, sin yoduro",
+            "Solo el total"
+          ],
+          "correcta": 0,
+          "explicacion": "El yoduro hace reaccionar el cloro combinado.",
+          "fuente": "UNE-EN ISO 7393-2:2019 (resumen) · apunte §3",
+          "apartado": "3",
+          "evidencia": "Cloro libre primero, y el total tras añadir yoduro."
+        },
+        {
+          "id": "t25-s03-q3",
+          "pregunta": "Su fotómetro portátil, ¿cómo selecciona la longitud de onda?",
+          "opciones": [
+            "Con un monocromador que barre el espectro",
+            "Con un filtro: banda ancha y pocas longitudes de onda fijas",
+            "Con un array de diodos",
+            "No selecciona longitud de onda"
+          ],
+          "correcta": 1,
+          "explicacion": "El espectrofotómetro usa monocromador.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Fotómetro o colorímetro | Con un filtro | Banda ancha, solo unas pocas λ fijas. Barato y robusto: es lo típico del equipo de campo |"
+        },
+        {
+          "id": "t25-s03-q4",
+          "pregunta": "¿Qué color da el DPD con el cloro?",
+          "opciones": [
+            "Azul",
+            "Violeta",
+            "Rojo",
+            "Amarillo"
+          ],
+          "correcta": 2,
+          "explicacion": "Se mide en fotómetro o por comparación visual con escala.",
+          "fuente": "UNE-EN ISO 7393-2:2019 (resumen) · apunte §3",
+          "apartado": "3",
+          "evidencia": "El DPD da color rojo; se mide en fotómetro o por comparación visual con escala."
+        },
+        {
+          "id": "t25-s03-q5",
+          "pregunta": "Respecto al método normalizado, su fotómetro con sobres:",
+          "opciones": [
+            "Usa un fundamento distinto sin reactivo",
+            "No necesita blanco",
+            "No mide cloro libre",
+            "Cambia el formato, no el fundamento"
+          ],
+          "correcta": 3,
+          "explicacion": "Sigue siendo colorimetría con DPD.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Todo esto está también detrás de los kits de cubeta precintada y de los fotómetros de campo: cambia el formato, no el fundamento."
+        }
+      ]
+    },
+    {
+      "id": "t25-s04",
+      "titulo": "Supuesto 4. Verificar el espectrofotómetro y medir nitrato en UV",
+      "enunciado": "Antes de una serie de nitratos por absorción directa en el ultravioleta, el laboratorio verifica su espectrofotómetro de doble haz, recién encendido. Algunas muestras tienen materia orgánica.",
+      "preguntas": [
+        {
+          "id": "t25-s04-q1",
+          "pregunta": "¿Con qué verifica la escala de longitudes de onda?",
+          "opciones": [
+            "Con filtro u óxido de holmio, o filtro de didimio",
+            "Con dicromato potásico",
+            "Con agua destilada",
+            "Con un patrón de nitrato"
+          ],
+          "correcta": 0,
+          "explicacion": "El dicromato es para la escala fotométrica.",
+          "fuente": "Guías de laboratorios de calibración · apunte §2.4 y Dudas",
+          "apartado": "2.4",
+          "evidencia": "| Escala de longitudes de onda | Filtro u óxido de holmio (bandas entre ≈ 240 y 650 nm) y filtro de didimio (≈ 380 a 900 nm) |"
+        },
+        {
+          "id": "t25-s04-q2",
+          "pregunta": "El equipo acaba de encenderse y la línea base deriva. ¿Qué hace?",
+          "opciones": [
+            "Medir enseguida y restar la deriva",
+            "Cambiar la lámpara",
+            "Dejarlo estabilizar antes de medir",
+            "Pasar a haz simple"
+          ],
+          "correcta": 2,
+          "explicacion": "La fuente no es estable en frío.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| Deriva de la lámpara | La fuente no es estable en frío | Dejar estabilizar el equipo; usar doble haz |"
+        },
+        {
+          "id": "t25-s04-q3",
+          "pregunta": "¿Qué lámpara trabaja a 220 nm?",
+          "opciones": [
+            "La de tungsteno",
+            "La de deuterio",
+            "La de cátodo hueco",
+            "La de sodio"
+          ],
+          "correcta": 1,
+          "explicacion": "El tungsteno cubre el visible y el infrarrojo próximo.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Lámpara de deuterio (D₂) | Ultravioleta, ≈ 190 - 380 nm |"
+        },
+        {
+          "id": "t25-s04-q4",
+          "pregunta": "¿Qué cubeta usa para el nitrato?",
+          "opciones": [
+            "De plástico desechable",
+            "De vidrio óptico",
+            "Cualquiera de 1 cm",
+            "De cuarzo, porque el vidrio y el plástico absorben el ultravioleta"
+          ],
+          "correcta": 3,
+          "explicacion": "Por debajo de ≈ 340 nm, cuarzo obligatorio.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Vidrio | Solo visible: el vidrio absorbe el ultravioleta |"
+        },
+        {
+          "id": "t25-s04-q5",
+          "pregunta": "¿Cómo corrige la interferencia de la materia orgánica?",
+          "opciones": [
+            "Con una segunda lectura en torno a 275 nm",
+            "Filtrando a 0,45 µm",
+            "Midiendo a 880 nm",
+            "Añadiendo DPD"
+          ],
+          "correcta": 0,
+          "explicacion": "El nitrato absorbe hacia 220 nm.",
+          "fuente": "Bibliografía (Skoog, Harris) y material docente · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "se corrige la interferencia de la materia orgánica con una segunda lectura en torno a 275 nm."
         }
       ]
     }
