@@ -501,6 +501,235 @@
         "normativa"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t33-f46",
+      "anverso": "Según el art. 6, ¿cuándo es no apta una muestra, además de por incumplir las partes A y B?",
+      "reverso": "También cuando **se detectan o superan los valores de referencia de la lista de observación**. Y si supera los **valores de no aptitud** de las notas de la tabla 3.",
+      "fuente": "RD 3/2023, art. 6 · apunte §2.1",
+      "etiquetas": [
+        "aptitud"
+      ],
+      "apartado": "2.1",
+      "evidencia": "o cuando se detectan o superan los valores de referencia de la lista de observación"
+    },
+    {
+      "id": "t33-f47",
+      "anverso": "Partes D y F del anexo I: ¿qué contienen y qué tipo de valor fijan?",
+      "reverso": "**D (tabla 4)**: organolépticas —color, olor, sabor—, con **valores de referencia**. **F (tabla 7)**: caracterización —calcio, **dureza**, magnesio, potasio—, con **valores de referencia** para **informar al ciudadano**.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.2",
+      "etiquetas": [
+        "anexo-I"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "| D | 4 | Organolépticas (color, olor, sabor) | Valores de referencia |",
+        "| F | 7 | Caracterización (calcio, DUREZA, magnesio, potasio) | Valores de referencia, para informar al ciudadano |"
+      ]
+    },
+    {
+      "id": "t33-f48",
+      "anverso": "Análisis de control: ¿qué se añade en salida de ETAP y qué si el último completo superó el VP de subproductos?",
+      "reverso": "En **salida de ETAP o depósito de cabecera**: ***Clostridium perfringens*** (incluidas las esporas). Si el último completo superó el VP: **clorito y clorato, THM o ácidos haloacéticos**, **hasta que alcancen su VP**.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "etiquetas": [
+        "analisis"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| Es salida de ETAP o de depósito de cabecera | Clostridium perfringens (incluidas las esporas) |",
+        "| Los parámetros superaron el VP en el último análisis completo | Clorito y clorato, o THM, o ácidos haloacéticos, hasta que alcancen su VP |"
+      ]
+    },
+    {
+      "id": "t33-f49",
+      "anverso": "Análisis completo: los dos añadidos que no son oxidabilidad ni COT.",
+      "reverso": "**Microcistina-LR** si el origen es total o parcialmente **embalse, lago o laguna**. Y en **red de distribución** se **podrá** controlar **fluoranteno**, con valor de referencia **0,01 µg/L**.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "etiquetas": [
+        "analisis"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "| El origen es total o parcialmente embalse, lago o laguna | Microcistina-LR |",
+        "| El punto de muestreo es red de distribución | Se podrá controlar fluoranteno, con valor de referencia de 0,01 µg/L |"
+      ]
+    },
+    {
+      "id": "t33-f50",
+      "anverso": "Acreditación de los métodos: ¿quién está exceptuado y qué se exige mientras tanto?",
+      "reverso": "Acreditación **UNE-EN ISO/IEC 17025**, salvo los métodos del **control operacional y de rutina** si el laboratorio **solo hace esos dos**. Mientras no estén acreditados: **validados y documentados**. Los equipos en línea, **verificados y ajustados**, con la última calibración documentada.",
+      "fuente": "RD 3/2023, anexo III · apunte §2.5",
+      "etiquetas": [
+        "metodo"
+      ],
+      "apartado": "2.5",
+      "evidencia": [
+        "(se exceptúan los del control operacional y de rutina, si el laboratorio solo hace esos dos tipos)",
+        "Mientras no estén acreditados, deben estar validados y documentados."
+      ]
+    },
+    {
+      "id": "t33-f51",
+      "anverso": "¿Cuál es el compuesto del cloro más germicida, y cómo se forma?",
+      "reverso": "Después del **dióxido de cloro**, el **ácido hipocloroso (HOCl)**. Se forma al hidrolizarse el cloro gas o el hipoclorito: Cl₂ + H₂O → HOCl + H⁺ + Cl⁻; NaOCl + H₂O → HOCl + Na⁺ + OH⁻.",
+      "fuente": "Apunte §2.6",
+      "etiquetas": [
+        "cloro"
+      ],
+      "apartado": "2.6",
+      "evidencia": "El HOCl es, después del dióxido de cloro, el más germicida de todos los compuestos del cloro."
+    },
+    {
+      "id": "t33-f52",
+      "anverso": "Las cuatro fases de la curva de demanda de cloro.",
+      "reverso": "1) **Demanda inmediata**: Fe²⁺, Mn²⁺, H₂S, materia orgánica; **no queda residual**. 2) **Cloraminas**: el residual sube, pero **combinado**. 3) **Destrucción de cloraminas**: el residual **baja** hasta el **punto de ruptura**. 4) **Cloro libre**: el residual sube proporcionalmente; **solo entonces** está asegurada la desinfección.",
+      "fuente": "Apunte §2.6",
+      "etiquetas": [
+        "cloro"
+      ],
+      "apartado": "2.6",
+      "evidencia": [
+        "Demanda inmediata. El cloro reacciona con lo fácilmente oxidable —Fe²⁺, Mn²⁺, H₂S, materia orgánica— y se reduce a cloruro. No queda residual.",
+        "Solo entonces está asegurada la desinfección."
+      ]
+    },
+    {
+      "id": "t33-f53",
+      "anverso": "Sin cloraminación, el cloro combinado a la salida del tratamiento pasa de 1 mg/L. ¿Qué procede?",
+      "reverso": "**Medidas correctoras rápidas** y **revisión de los niveles de cloro libre**. Con cloraminación, por encima de **2 mg/L** en red la autoridad puede exigir determinar **NDMA**.",
+      "fuente": "RD 3/2023, anexo I, nota 7 · apunte §2.6",
+      "etiquetas": [
+        "cloro"
+      ],
+      "apartado": "2.6",
+      "evidencia": "Si sin cloraminar el cloro combinado a la salida del tratamiento pasa de 1 mg/L, medidas correctoras rápidas y revisión de los niveles de cloro libre."
+    },
+    {
+      "id": "t33-f54",
+      "anverso": "Amonio: ¿a partir de qué valor se recomiendan medidas de rápida aplicación, y qué límite no debe pasarse nunca con cloro activo?",
+      "reverso": "Medidas rápidas por encima de **0,7 mg/L**. Con productos que generen cloro activo libre, **en ningún momento debe sobrepasar 1,00 mg/L**, porque reduce la eficacia de la desinfección.",
+      "fuente": "RD 3/2023, anexo I, nota 5 · apunte §2.7",
+      "etiquetas": [
+        "amonio"
+      ],
+      "apartado": "2.7",
+      "evidencia": "Por encima de 0,7 mg/L, se recomienda que las medidas correctoras sean de rápida aplicación."
+    },
+    {
+      "id": "t33-f55",
+      "anverso": "¿Por qué tiene el nitrito dos valores, uno a la salida de la ETAP y otro en red?",
+      "reverso": "A la **salida de planta** (0,10 mg/L) indica **nitrificación en el tratamiento o desinfección incompleta**. En **red** (0,50 mg/L) puede aparecer por **nitrificación de las cloraminas** en tramos de baja velocidad.",
+      "fuente": "Apunte §2.8",
+      "etiquetas": [
+        "nitritos"
+      ],
+      "apartado": "2.8",
+      "evidencia": "El nitrito a la salida de la planta indica nitrificación en el propio tratamiento o desinfección incompleta; en la red, puede aparecer por nitrificación de las cloraminas en tramos de baja velocidad."
+    },
+    {
+      "id": "t33-f56",
+      "anverso": "Límites de aplicación de la ISO 8467 (índice de permanganato).",
+      "reverso": "Aguas con **cloruro < 300 mg/L**; índice **> 10 mg/L → diluir**; **límite inferior del intervalo óptimo, 0,5 mg/L**.",
+      "fuente": "ISO 8467 (ficha pública) · apunte §2.9",
+      "etiquetas": [
+        "oxidabilidad"
+      ],
+      "apartado": "2.9",
+      "evidencia": [
+        "Aplicable a aguas con cloruro < 300 mg/L.",
+        "Las muestras con índice > 10 mg/L deben diluirse.",
+        "Límite inferior del intervalo óptimo: 0,5 mg/L."
+      ]
+    },
+    {
+      "id": "t33-f57",
+      "anverso": "¿Qué dice la nota 13 de la oxidabilidad y qué tiene de especial?",
+      "reverso": "«En cuanto se supere el VP hay que tomar medidas correctoras **de forma inmediata**». Es de las pocas notas que dice **«inmediata»** y no «de rápida aplicación».",
+      "fuente": "RD 3/2023, anexo I, nota 13 · apunte §2.9",
+      "etiquetas": [
+        "oxidabilidad"
+      ],
+      "apartado": "2.9",
+      "evidencia": "En cuanto se supere el VP hay que tomar medidas correctoras de forma inmediata."
+    },
+    {
+      "id": "t33-f58",
+      "anverso": "Los cuatro valores de referencia de la tabla 7 (caracterización).",
+      "reverso": "**Calcio 100 mg/L**; **dureza total 500 mg/L CaCO₃**; **magnesio 30 mg/L**; **potasio 10 mg/L**.",
+      "fuente": "RD 3/2023, anexo I, parte F, tabla 7 · apunte §2.10",
+      "etiquetas": [
+        "dureza"
+      ],
+      "apartado": "2.10",
+      "evidencia": "| Calcio | 100 | mg/L | | Dureza total | 500 | mg/L CaCO₃ | | Magnesio | 30 | mg/L | | Potasio | 10 | mg/L |"
+    },
+    {
+      "id": "t33-f59",
+      "anverso": "Definición técnica de alcalinidad, y por qué hay que decir hasta qué pH se valoró.",
+      "reverso": "Es **la capacidad del agua de neutralizar ácidos**, la **suma de todas las bases valorables** (carbonato, bicarbonato, hidróxido; también boratos, fosfatos, silicatos). No es una sustancia: es **el resultado de una valoración**, y **varía con el pH de punto final**.",
+      "fuente": "IDEAM, método 2320-B · apunte §2.11",
+      "etiquetas": [
+        "alcalinidad"
+      ],
+      "apartado": "2.11",
+      "evidencia": [
+        "la alcalinidad es la capacidad del agua de neutralizar ácidos, la suma de todas las bases valorables",
+        "el valor medido puede variar significativamente con el pH de punto final empleado"
+      ]
+    },
+    {
+      "id": "t33-f60",
+      "anverso": "Condiciones prácticas de la valoración de la alcalinidad (ISO 9963-1).",
+      "reverso": "A **temperatura ambiente**, con **pH-metro o titulador automático** calibrados, o con **indicadores coloreados** —valorando entonces **un blanco del indicador**—. Aplicable hasta **20 mmol/L**; límite inferior recomendado **0,4 mmol/L**.",
+      "fuente": "UNE-EN ISO 9963-1 · apunte §2.11",
+      "etiquetas": [
+        "alcalinidad"
+      ],
+      "apartado": "2.11",
+      "evidencia": [
+        "y en ese caso hay que valorar también un blanco del indicador",
+        "Aplicable directamente hasta 20 mmol/L; límite inferior recomendado, 0,4 mmol/L."
+      ]
+    },
+    {
+      "id": "t33-f61",
+      "anverso": "¿Pueden coexistir hidróxido y bicarbonato en un agua?",
+      "reverso": "**No**: reaccionarían entre sí. Por eso en la tabla P/T, cuando una de las dos columnas tiene valor, la otra es 0.",
+      "fuente": "Apunte §2.11",
+      "etiquetas": [
+        "alcalinidad"
+      ],
+      "apartado": "2.11",
+      "evidencia": "Y una consecuencia que cae de la propia química: hidróxido y bicarbonato NO pueden coexistir."
+    },
+    {
+      "id": "t33-f62",
+      "anverso": "Índice de Langelier y uranio: dónde están y qué valen.",
+      "reverso": "**Langelier**: indicador, **± 0,5 unidades de pH**, «en relación al pH, cloruros, sulfatos y conductividad»; se sugiere también el **índice de Ryznar**. **Uranio**: **parte B**, químico, no radiactivo; no va en el control de radiactividad.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.12",
+      "etiquetas": [
+        "parametros"
+      ],
+      "apartado": "2.12",
+      "evidencia": [
+        "| Índice de Langelier | ± 0,5 unidades de pH | — |",
+        "| Uranio | Parte B, junto a los químicos | — | Es químico, no radiactivo: no va en el control de radiactividad (tema 29) |"
+      ]
+    },
+    {
+      "id": "t33-f63",
+      "anverso": "Normas de pH, conductividad y calcio, y su técnica.",
+      "reverso": "**pH**: potenciometría, **ISO 10523:2008**. **Conductividad**: conductimetría, **ISO 7888:1985**. **Calcio**: complexometría con **murexida**, **ISO 6058:1984**.",
+      "fuente": "Tabla operativa · apunte §3",
+      "etiquetas": [
+        "normas"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "| pH | Parte C, nº 51 | 6,5-9,5 | < 4,5 / > 10,0 | Potenciometría (23) | ISO 10523:2008 |",
+        "| Conductividad | Parte C, nº 47 | 2 500 µS/cm a 20 °C | 4 000 | Conductimetría (24) | ISO 7888:1985 |"
+      ]
     }
   ],
   "test": [
@@ -830,6 +1059,609 @@
       "correcta": 0,
       "explicacion": "Anexo II, parte B.7. Va unido al plomo, que es uno de los parámetros que siempre se controla en grifo: 1980 es la referencia temporal de las instalaciones con tubería de plomo.",
       "fuente": "RD 3/2023, anexo II parte B.7"
+    },
+    {
+      "id": "t33-q27",
+      "pregunta": "La idea que une las dos mitades del tema (tipos de análisis y parámetros) es que:",
+      "opciones": [
+        "No todo incumplimiento hace el agua no apta",
+        "Todos los parámetros tienen valor de no aptitud",
+        "Todos los parámetros se miden en el grifo"
+      ],
+      "correcta": 0,
+      "explicacion": "Art. 6.2.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "no todo incumplimiento hace el agua no apta"
+    },
+    {
+      "id": "t33-q28",
+      "pregunta": "Según el art. 6, una muestra también es no apta cuando:",
+      "opciones": [
+        "Supera el valor paramétrico de un indicador de la parte C",
+        "Se detectan o superan los valores de referencia de la lista de observación",
+        "Supera el valor de referencia de la dureza"
+      ],
+      "correcta": 1,
+      "explicacion": "Superar un indicador de la parte C no la hace no apta.",
+      "fuente": "RD 3/2023, art. 6 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "o cuando se detectan o superan los valores de referencia de la lista de observación"
+    },
+    {
+      "id": "t33-q29",
+      "pregunta": "Para el operador de la red, el punto de cumplimiento es:",
+      "opciones": [
+        "El grifo del consumidor",
+        "La salida de la ETAP",
+        "La acometida"
+      ],
+      "correcta": 2,
+      "explicacion": "Para el agua por red en edificios, el grifo.",
+      "fuente": "RD 3/2023, art. 7 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "y para el operador de la red, la acometida"
+    },
+    {
+      "id": "t33-q30",
+      "pregunta": "La tabla 3 da dos números por parámetro porque:",
+      "opciones": [
+        "El valor paramétrico obliga a corregir y el de no aptitud declara el agua no apta",
+        "Uno vale en verano y otro en invierno",
+        "Uno es el límite de detección y otro el de cuantificación"
+      ],
+      "correcta": 0,
+      "explicacion": "Hay que aprenderse los dos.",
+      "fuente": "RD 3/2023, art. 6.2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Lo que sí la declara no apta es rebasar el «valor de no aptitud» que cada nota fija aparte."
+    },
+    {
+      "id": "t33-q31",
+      "pregunta": "Color, olor y sabor están en la parte del anexo I:",
+      "opciones": [
+        "C, con valores paramétricos",
+        "D, con valores de referencia",
+        "B, como parámetros químicos"
+      ],
+      "correcta": 1,
+      "explicacion": "Tabla 4.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| D | 4 | Organolépticas (color, olor, sabor) | Valores de referencia |"
+    },
+    {
+      "id": "t33-q32",
+      "pregunta": "La dureza figura en el anexo I:",
+      "opciones": [
+        "En la parte B, químicos",
+        "En la parte C, indicadores",
+        "En la parte F, caracterización, con un valor de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "Su función es informativa.",
+      "fuente": "RD 3/2023, anexo I · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Dureza → parte F, caracterización. Ni siquiera es un valor paramétrico"
+    },
+    {
+      "id": "t33-q33",
+      "pregunta": "En salida de ETAP o depósito de cabecera, el análisis de control añade:",
+      "opciones": [
+        "Clostridium perfringens, incluidas las esporas",
+        "Microcistina-LR",
+        "Fluoranteno"
+      ],
+      "correcta": 0,
+      "explicacion": "La microcistina es del análisis completo.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Es salida de ETAP o de depósito de cabecera | Clostridium perfringens (incluidas las esporas) |"
+    },
+    {
+      "id": "t33-q34",
+      "pregunta": "Si en el último análisis completo los THM superaron su valor paramétrico, el análisis de control:",
+      "opciones": [
+        "No los incluye nunca",
+        "Los incluye hasta que alcancen su valor paramétrico",
+        "Los incluye solo durante un mes"
+      ],
+      "correcta": 1,
+      "explicacion": "Igual con clorito, clorato y ácidos haloacéticos.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| Los parámetros superaron el VP en el último análisis completo | Clorito y clorato, o THM, o ácidos haloacéticos, hasta que alcancen su VP |"
+    },
+    {
+      "id": "t33-q35",
+      "pregunta": "En el análisis completo en red de distribución se podrá controlar fluoranteno, con un valor de referencia de:",
+      "opciones": [
+        "0,10 µg/L",
+        "1,0 µg/L",
+        "0,01 µg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una opción, no una obligación.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| El punto de muestreo es red de distribución | Se podrá controlar fluoranteno, con valor de referencia de 0,01 µg/L |"
+    },
+    {
+      "id": "t33-q36",
+      "pregunta": "La caracterización del agua se hace con una frecuencia de al menos:",
+      "opciones": [
+        "Una vez por semestre",
+        "Una vez por semana",
+        "Una vez cada cinco años"
+      ],
+      "correcta": 0,
+      "explicacion": "Solo en red de distribución.",
+      "fuente": "RD 3/2023, anexo II, parte C.1.e · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con una frecuencia de al menos una vez por semestre (anexo II, parte C.1.e)."
+    },
+    {
+      "id": "t33-q37",
+      "pregunta": "En el control operacional, en la captación se controlan:",
+      "opciones": [
+        "Plomo y níquel",
+        "Colífagos somáticos y, si el origen es embalse o lago, microcistina-LR",
+        "Dureza y potasio"
+      ],
+      "correcta": 1,
+      "explicacion": "Siempre, además, turbidez.",
+      "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "En la captación: colífagos somáticos y, si el origen es embalse o lago, microcistina-LR."
+    },
+    {
+      "id": "t33-q38",
+      "pregunta": "Si no se conoce el volumen distribuido en una zona de abastecimiento, se calcula con:",
+      "opciones": [
+        "100 L por persona y día",
+        "2 L por persona y día",
+        "200 L por persona y día"
+      ],
+      "correcta": 2,
+      "explicacion": "La ZA se clasifica por m³/día.",
+      "fuente": "RD 3/2023, anexo II · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Si no se conoce el volumen, se calcula con 200 L por persona y día."
+    },
+    {
+      "id": "t33-q39",
+      "pregunta": "En una zona de abastecimiento de tipo 3 (100 a 1000 m³/día), el número mínimo anual de análisis de control es:",
+      "opciones": [
+        "4",
+        "3",
+        "12"
+      ],
+      "correcta": 0,
+      "explicacion": "Y 2 análisis completos.",
+      "fuente": "RD 3/2023, anexo II, parte C · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| 2 | 10 a 100 | 3 | 1 | | 3 | 100 a 1 000 | 4 | 2 |"
+    },
+    {
+      "id": "t33-q40",
+      "pregunta": "Están exceptuados de la acreditación UNE-EN ISO/IEC 17025 los métodos:",
+      "opciones": [
+        "Físico-químicos",
+        "Del control operacional y de rutina, si el laboratorio solo hace esos dos",
+        "De radiactividad"
+      ],
+      "correcta": 1,
+      "explicacion": "Mientras no se acrediten, validados y documentados.",
+      "fuente": "RD 3/2023, anexo III · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "(se exceptúan los del control operacional y de rutina, si el laboratorio solo hace esos dos tipos)"
+    },
+    {
+      "id": "t33-q41",
+      "pregunta": "La incertidumbre máxima del pH en la tabla 15 se expresa como:",
+      "opciones": [
+        "15 % del valor paramétrico",
+        "0,5 unidades de pH",
+        "0,2 unidades de pH"
+      ],
+      "correcta": 2,
+      "explicacion": "Es el único que no va en %.",
+      "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Oxidabilidad | 50 % | | pH | 0,2 unidades de pH |"
+    },
+    {
+      "id": "t33-q42",
+      "pregunta": "Después del dióxido de cloro, el compuesto del cloro más germicida es:",
+      "opciones": [
+        "El ácido hipocloroso",
+        "El ion hipoclorito",
+        "La monocloramina"
+      ],
+      "correcta": 0,
+      "explicacion": "Domina a pH bajo.",
+      "fuente": "Apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "El HOCl es, después del dióxido de cloro, el más germicida de todos los compuestos del cloro."
+    },
+    {
+      "id": "t33-q43",
+      "pregunta": "A pH próximo a 9,5, el cloro libre está prácticamente todo como:",
+      "opciones": [
+        "Ácido hipocloroso",
+        "Ion hipoclorito",
+        "Cloro molecular"
+      ],
+      "correcta": 1,
+      "explicacion": "Por debajo de 5, todo HOCl.",
+      "fuente": "Apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| ≈ 9,5 | Prácticamente solo OCl⁻ |"
+    },
+    {
+      "id": "t33-q44",
+      "pregunta": "La hipercloración:",
+      "opciones": [
+        "Deja 0,1-0,2 ppm de residual tras 10 minutos",
+        "Forma cloraminas más estables",
+        "Usa dosis muy superiores a la demanda y obliga después a declorar"
+      ],
+      "correcta": 2,
+      "explicacion": "Es muy cara.",
+      "fuente": "Apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Hipercloración | Dosis muy superiores a la demanda; obliga después a declorar. Muy caro |"
+    },
+    {
+      "id": "t33-q45",
+      "pregunta": "En la primera fase de la curva de demanda de cloro:",
+      "opciones": [
+        "El cloro se gasta en lo fácilmente oxidable y no queda residual",
+        "Se forman cloraminas y el residual sube",
+        "Aparece cloro libre proporcional a la dosis"
+      ],
+      "correcta": 0,
+      "explicacion": "Fe²⁺, Mn²⁺, H₂S y materia orgánica.",
+      "fuente": "Apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Demanda inmediata. El cloro reacciona con lo fácilmente oxidable —Fe²⁺, Mn²⁺, H₂S, materia orgánica— y se reduce a cloruro. No queda residual."
+    },
+    {
+      "id": "t33-q46",
+      "pregunta": "Con cloraminación, si el cloro combinado supera 2 mg/L, la autoridad puede exigir al operador que determine:",
+      "opciones": [
+        "Bromato",
+        "NDMA",
+        "Clorito"
+      ],
+      "correcta": 1,
+      "explicacion": "CAS 62-75-9.",
+      "fuente": "RD 3/2023, anexo I, nota 7 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "la autoridad puede exigir que el operador determine NDMA (CAS 62-75-9)"
+    },
+    {
+      "id": "t33-q47",
+      "pregunta": "Sin cloraminar, el cloro combinado a la salida del tratamiento pasa de 1 mg/L. Procede:",
+      "opciones": [
+        "Declarar el agua no apta",
+        "Nada, porque el VP es 2,0 mg/L",
+        "Tomar medidas correctoras rápidas y revisar los niveles de cloro libre"
+      ],
+      "correcta": 2,
+      "explicacion": "Nota 7.",
+      "fuente": "RD 3/2023, anexo I, nota 7 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Si sin cloraminar el cloro combinado a la salida del tratamiento pasa de 1 mg/L, medidas correctoras rápidas y revisión de los niveles de cloro libre."
+    },
+    {
+      "id": "t33-q48",
+      "pregunta": "El valor de no aptitud del amonio es:",
+      "opciones": [
+        "1,00 mg/L",
+        "0,50 mg/L",
+        "0,7 mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "0,50 es el VP.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Amonio | 0,50 mg/L | 1,00 mg/L | 40 % |"
+    },
+    {
+      "id": "t33-q49",
+      "pregunta": "Se recomienda que las medidas correctoras del amonio sean de rápida aplicación por encima de:",
+      "opciones": [
+        "0,50 mg/L",
+        "0,7 mg/L",
+        "1,00 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "Nota 5.",
+      "fuente": "RD 3/2023, anexo I, nota 5 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Por encima de 0,7 mg/L, se recomienda que las medidas correctoras sean de rápida aplicación."
+    },
+    {
+      "id": "t33-q50",
+      "pregunta": "La ISO 7150-2, método automatizado del amonio:",
+      "opciones": [
+        "Está vigente",
+        "Usa electrodo selectivo",
+        "Está retirada; su sustituta práctica es la UNE-EN ISO 11732, por análisis en flujo"
+      ],
+      "correcta": 2,
+      "explicacion": "La ISO 7150-1, azul de indofenol, sigue vigente.",
+      "fuente": "Catálogo ISO · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "ISO 7150-2:1986, el método automatizado, está RETIRADA (95.99); su sustituta práctica es la UNE-EN ISO 11732:2005"
+    },
+    {
+      "id": "t33-q51",
+      "pregunta": "Un nitrito a la salida de la planta indica:",
+      "opciones": [
+        "Nitrificación en el propio tratamiento o desinfección incompleta",
+        "Contaminación por plaguicidas",
+        "Exceso de dureza"
+      ],
+      "correcta": 0,
+      "explicacion": "En red, nitrificación de las cloraminas.",
+      "fuente": "Apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "El nitrito a la salida de la planta indica nitrificación en el propio tratamiento o desinfección incompleta"
+    },
+    {
+      "id": "t33-q52",
+      "pregunta": "La incertidumbre máxima de los nitritos es:",
+      "opciones": [
+        "40 %",
+        "20 %",
+        "50 %"
+      ],
+      "correcta": 1,
+      "explicacion": "40 % es la del amonio.",
+      "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "Incertidumbre: 20 %. La técnica es del tema 25"
+    },
+    {
+      "id": "t33-q53",
+      "pregunta": "La ISO 8467 se aplica a aguas con un contenido de cloruro:",
+      "opciones": [
+        "Inferior a 3000 mg/L",
+        "Sin límite",
+        "Inferior a 300 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "El cloruro también consume permanganato.",
+      "fuente": "ISO 8467 (ficha pública) · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Aplicable a aguas con cloruro < 300 mg/L."
+    },
+    {
+      "id": "t33-q54",
+      "pregunta": "Una muestra con índice de permanganato superior a 10 mg/L:",
+      "opciones": [
+        "Debe diluirse",
+        "Se mide directamente",
+        "Se mide por COT"
+      ],
+      "correcta": 0,
+      "explicacion": "Límite inferior del intervalo óptimo: 0,5 mg/L.",
+      "fuente": "ISO 8467 (ficha pública) · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Las muestras con índice > 10 mg/L deben diluirse."
+    },
+    {
+      "id": "t33-q55",
+      "pregunta": "Al superar el VP de la oxidabilidad, la nota 13 exige medidas correctoras:",
+      "opciones": [
+        "En el plazo de un mes",
+        "De forma inmediata",
+        "Solo si se supera 7,0 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "No dice «de rápida aplicación», sino «inmediata».",
+      "fuente": "RD 3/2023, anexo I, nota 13 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "En cuanto se supere el VP hay que tomar medidas correctoras de forma inmediata."
+    },
+    {
+      "id": "t33-q56",
+      "pregunta": "En las zonas tipo 4, 5 y 6, el COT sustituye a la oxidabilidad. ¿A partir de qué valor de COT se piden medidas rápidas?",
+      "opciones": [
+        "5 mg/L",
+        "7 mg/L",
+        "6 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "VP 5,0; no aptitud 7,0.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "En las tipo 4, 5 y 6 se sustituye por el COT (5,0 mg/L; no aptitud 7,0; medidas rápidas a partir de 6 mg/L)."
+    },
+    {
+      "id": "t33-q57",
+      "pregunta": "Para el análisis de la oxidabilidad, la técnica indicada es:",
+      "opciones": [
+        "Permanganimetría",
+        "Potenciometría",
+        "Cromatografía de líquidos"
+      ],
+      "correcta": 0,
+      "explicacion": "Volumetría redox por retroceso.",
+      "fuente": "1322 · segundo ejercicio #22 · apunte §2.9",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Oxidabilidad"
+      },
+      "apartado": "2.9",
+      "evidencia": "Y 1322 C2 #22 lo pregunta al revés: «Oxidabilidad» → permanganimetría, frente a potenciometría, CG y CL."
+    },
+    {
+      "id": "t33-q58",
+      "pregunta": "En aguas desalinizadas o ablandadas, la dureza mínima es:",
+      "opciones": [
+        "500 mg/L CaCO₃",
+        "55 mg/L CaCO₃",
+        "100 mg/L CaCO₃"
+      ],
+      "correcta": 1,
+      "explicacion": "Un agua demasiado blanda es agresiva.",
+      "fuente": "RD 3/2023, anexo I, tabla 7, nota 1 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Para las aguas desalinizadas o ablandadas el valor paramétrico mínimo será al menos 55 mg/L CaCO₃."
+    },
+    {
+      "id": "t33-q59",
+      "pregunta": "El valor de referencia del magnesio en la tabla 7 es:",
+      "opciones": [
+        "100 mg/L",
+        "10 mg/L",
+        "30 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "100 calcio; 10 potasio.",
+      "fuente": "RD 3/2023, anexo I, tabla 7 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| Dureza total | 500 | mg/L CaCO₃ | | Magnesio | 30 | mg/L |"
+    },
+    {
+      "id": "t33-q60",
+      "pregunta": "El calcio solo se determina con EDTA usando como indicador:",
+      "opciones": [
+        "Murexida",
+        "Negro de eriocromo T",
+        "Fenolftaleína"
+      ],
+      "correcta": 0,
+      "explicacion": "A pH alto, con el magnesio precipitado.",
+      "fuente": "ISO 6058 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "ISO 6058:1984 (también EDTA, indicador murexida, a pH alto con el magnesio precipitado)"
+    },
+    {
+      "id": "t33-q61",
+      "pregunta": "Técnicamente, la alcalinidad es:",
+      "opciones": [
+        "La capacidad del agua de neutralizar bases",
+        "La capacidad del agua de neutralizar ácidos",
+        "El contenido de calcio y magnesio"
+      ],
+      "correcta": 1,
+      "explicacion": "La suma de todas las bases valorables.",
+      "fuente": "IDEAM, método 2320-B · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "la alcalinidad es la capacidad del agua de neutralizar ácidos, la suma de todas las bases valorables"
+    },
+    {
+      "id": "t33-q62",
+      "pregunta": "El punto final de la alcalinidad total (T) está a pH:",
+      "opciones": [
+        "8,3, con fenolftaleína",
+        "7,0, con azul de bromotimol",
+        "4,5, con anaranjado de metilo"
+      ],
+      "correcta": 2,
+      "explicacion": "P, a 8,3 con fenolftaleína.",
+      "fuente": "UNE-EN ISO 9963-1 · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "| T (alcalinidad total, o TAC) | 4,5 | Anaranjado de metilo |"
+    },
+    {
+      "id": "t33-q63",
+      "pregunta": "Si en la valoración de la alcalinidad P es mayor que la mitad de T, el agua contiene:",
+      "opciones": [
+        "Hidróxidos y carbonatos",
+        "Carbonatos y bicarbonatos",
+        "Solo bicarbonatos"
+      ],
+      "correcta": 0,
+      "explicacion": "Hidróxidos 2P − T; carbonatos 2(T − P).",
+      "fuente": "Apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "| P > ½T | 2P − T | 2(T − P) | 0 |"
+    },
+    {
+      "id": "t33-q64",
+      "pregunta": "Hidróxido y bicarbonato en un mismo agua:",
+      "opciones": [
+        "Coexisten siempre",
+        "No pueden coexistir",
+        "Coexisten solo si P = T"
+      ],
+      "correcta": 1,
+      "explicacion": "Reaccionarían entre sí.",
+      "fuente": "Apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "hidróxido y bicarbonato NO pueden coexistir"
+    },
+    {
+      "id": "t33-q65",
+      "pregunta": "El valor paramétrico del índice de Langelier es:",
+      "opciones": [
+        "6,5 a 9,5",
+        "± 2 unidades de pH",
+        "± 0,5 unidades de pH"
+      ],
+      "correcta": 2,
+      "explicacion": "El agua no debe ser ni agresiva ni incrustante.",
+      "fuente": "RD 3/2023, anexo I, parte C · apunte §2.12",
+      "apartado": "2.12",
+      "evidencia": "| Índice de Langelier | ± 0,5 unidades de pH | — |"
+    },
+    {
+      "id": "t33-q66",
+      "pregunta": "El uranio, en el RD 3/2023, es:",
+      "opciones": [
+        "Un parámetro químico de la parte B, fuera del control de radiactividad",
+        "Un parámetro radiactivo de la parte E",
+        "Un indicador de la parte C"
+      ],
+      "correcta": 0,
+      "explicacion": "Tema 29 para la radiactividad.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.12",
+      "apartado": "2.12",
+      "evidencia": "| Uranio | Parte B, junto a los químicos | — | Es químico, no radiactivo: no va en el control de radiactividad (tema 29) |"
+    },
+    {
+      "id": "t33-q67",
+      "pregunta": "Para determinar el pH de un agua de consumo se utiliza:",
+      "opciones": [
+        "Un turbidímetro",
+        "Un pHmetro",
+        "Un conductímetro"
+      ],
+      "correcta": 1,
+      "explicacion": "Potenciometría, ISO 10523.",
+      "fuente": "1322 · segundo ejercicio #21 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "pH"
+      },
+      "apartado": "3",
+      "evidencia": "| pH | Parte C, nº 51 | 6,5-9,5 | < 4,5 / > 10,0 | Potenciometría (23) | ISO 10523:2008 |"
+    },
+    {
+      "id": "t33-q68",
+      "pregunta": "Para determinar la turbidez de un agua de consumo se utiliza:",
+      "opciones": [
+        "Un pHmetro",
+        "Un espectrofotómetro de absorción atómica",
+        "Un turbidímetro"
+      ],
+      "correcta": 2,
+      "explicacion": "Nefelometría (tema 28).",
+      "fuente": "1322 · segundo ejercicio #26 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Turbidez"
+      },
+      "apartado": "3",
+      "evidencia": "| Turbidez | Parte C, nº 54 | 4,0 UNF (0,8 salida ETAP) | 2 / 6 UNF | Nefelometría (28) | — |"
     }
   ],
   "supuestos": [
@@ -974,6 +1806,170 @@
           "correcta": 1,
           "explicacion": "La alcalinidad no figura en ninguna tabla del anexo I, pero sí en la tabla 15, con un 15 % de incertidumbre. Se valora con ácido hasta pH 8,3 (alcalinidad a la fenolftaleína) y hasta pH 4,5 (alcalinidad total), según la UNE-EN ISO 9963-1. Su papel aquí es operativo: alimentar el índice de Langelier, que sí es un indicador con valor de ±0,5 unidades de pH.",
           "fuente": "RD 3/2023, anexo I parte C nº 55 y anexo III tabla 15; UNE-EN ISO 9963-1:1996"
+        }
+      ]
+    },
+    {
+      "id": "t33-s03",
+      "titulo": "Supuesto 3. Las tres especies de la alcalinidad",
+      "enunciado": "Se valora la alcalinidad de un agua con ácido. Hasta pH 8,3 se gastan 2,0 mL (P) y hasta pH 4,5, un total de 10,0 mL (T).",
+      "preguntas": [
+        {
+          "id": "t33-s03-q1",
+          "pregunta": "¿Qué especies hay en el agua?",
+          "opciones": [
+            "Carbonatos y bicarbonatos",
+            "Hidróxidos y carbonatos",
+            "Solo hidróxidos",
+            "Hidróxidos y bicarbonatos"
+          ],
+          "correcta": 0,
+          "explicacion": "P = 2,0 < ½T = 5,0.",
+          "fuente": "Apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| P = 0 | 0 | 0 | T | | P < ½T | 0 | 2P | T − 2P |"
+        },
+        {
+          "id": "t33-s03-q2",
+          "pregunta": "¿Qué volumen corresponde a la alcalinidad de carbonatos?",
+          "opciones": [
+            "2,0 mL",
+            "6,0 mL",
+            "4,0 mL",
+            "8,0 mL"
+          ],
+          "correcta": 2,
+          "explicacion": "2P = 4,0 mL.",
+          "fuente": "Apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| P = 0 | 0 | 0 | T | | P < ½T | 0 | 2P | T − 2P |"
+        },
+        {
+          "id": "t33-s03-q3",
+          "pregunta": "¿Y a la de bicarbonatos?",
+          "opciones": [
+            "8,0 mL",
+            "6,0 mL",
+            "10,0 mL",
+            "4,0 mL"
+          ],
+          "correcta": 1,
+          "explicacion": "T − 2P = 10,0 − 4,0 = 6,0 mL.",
+          "fuente": "Apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| P = 0 | 0 | 0 | T | | P < ½T | 0 | 2P | T − 2P |"
+        },
+        {
+          "id": "t33-s03-q4",
+          "pregunta": "¿Con qué indicador se marca el primer punto final?",
+          "opciones": [
+            "Anaranjado de metilo",
+            "Negro de eriocromo T",
+            "Murexida",
+            "Fenolftaleína"
+          ],
+          "correcta": 3,
+          "explicacion": "A pH 8,3.",
+          "fuente": "UNE-EN ISO 9963-1 · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| P (alcalinidad a la fenolftaleína, o TA) | 8,3 | Fenolftaleína |"
+        },
+        {
+          "id": "t33-s03-q5",
+          "pregunta": "¿Qué exige el RD 3/2023 sobre la alcalinidad?",
+          "opciones": [
+            "Solo una incertidumbre máxima del 15 %: no tiene valor paramétrico",
+            "Un valor paramétrico de 500 mg/L CaCO₃",
+            "Un valor de no aptitud de 250 mg/L",
+            "Nada: no aparece en el real decreto"
+          ],
+          "correcta": 0,
+          "explicacion": "Aparece una sola vez, en la tabla 15.",
+          "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "Aparece una sola vez en toda la norma, en la tabla 15 de incertidumbres, con un 15 %."
+        }
+      ]
+    },
+    {
+      "id": "t33-s04",
+      "titulo": "Supuesto 4. Cloración en una zona de abastecimiento de tipo 4",
+      "enunciado": "Una zona de abastecimiento distribuye 5000 m³/día y desinfecta con hipoclorito sódico, sin cloraminación. En un punto alejado de la red se mide un cloro libre residual de 0,1 mg/L con pH 8,6.",
+      "preguntas": [
+        {
+          "id": "t33-s04-q1",
+          "pregunta": "¿Qué parámetro de materia orgánica se controla en el análisis completo de esta zona?",
+          "opciones": [
+            "La oxidabilidad",
+            "Los dos",
+            "El carbono orgánico total",
+            "Ninguno"
+          ],
+          "correcta": 2,
+          "explicacion": "Tipo 4: COT; tipos 1 a 3: oxidabilidad.",
+          "fuente": "RD 3/2023, anexo II, parte B · apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "| Zona de abastecimiento tipo 4, 5 o 6 | CARBONO ORGÁNICO TOTAL |"
+        },
+        {
+          "id": "t33-s04-q2",
+          "pregunta": "¿Cuántos análisis de control anuales, como mínimo?",
+          "opciones": [
+            "16",
+            "4",
+            "12",
+            "7"
+          ],
+          "correcta": 0,
+          "explicacion": "4 por los primeros 1000 m³ + 3 × 4 por los 4000 adicionales.",
+          "fuente": "RD 3/2023, anexo II, parte C · apunte §2.4",
+          "apartado": "2.4",
+          "evidencia": "| 4 | 1 000 a 10 000 | 4 por los primeros 1 000 + 3 por cada 1 000 adicionales |"
+        },
+        {
+          "id": "t33-s04-q3",
+          "pregunta": "¿Cumple la recomendación del RD para la red el cloro libre de 0,1 mg/L?",
+          "opciones": [
+            "Sí: el VP es 1,0 mg/L y no se supera",
+            "No: se recomienda al menos 0,2 mg/L en todos los puntos de la red",
+            "Sí: basta con que haya algo de cloro libre",
+            "No: el mínimo es 0,5 mg/L en todos los puntos"
+          ],
+          "correcta": 1,
+          "explicacion": "0,5 mg/L es la condición de 30 minutos para garantizar la desinfección.",
+          "fuente": "RD 3/2023, anexo I, nota 8 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Se recomienda que existan al menos 0,2 mg/L de cloro libre en TODOS los puntos de la red."
+        },
+        {
+          "id": "t33-s04-q4",
+          "pregunta": "¿Qué consecuencia tiene el pH de 8,6 para la desinfección?",
+          "opciones": [
+            "Ninguna: el pH está entre 6,5 y 9,5",
+            "Mejora la desinfección",
+            "Predomina el ion hipoclorito, menos eficaz, y la nota 8 pide pH inferior a 8,0",
+            "Convierte el cloro en cloraminas"
+          ],
+          "correcta": 2,
+          "explicacion": "Por encima de 7,5 a 20 °C empieza a predominar OCl⁻.",
+          "fuente": "Apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| > 7,5 a 20 °C (o > 7,8 a 10 °C) | Empieza a predominar OCl⁻ |"
+        },
+        {
+          "id": "t33-s04-q5",
+          "pregunta": "El laboratorio municipal solo hace el control de rutina y el operacional. ¿Necesita acreditar sus métodos por la ISO/IEC 17025?",
+          "opciones": [
+            "Sí, siempre",
+            "Solo el pH",
+            "Solo si mide plomo",
+            "No: están exceptuados si solo hace esos dos tipos"
+          ],
+          "correcta": 3,
+          "explicacion": "Aun así, los equipos en línea deben estar verificados y ajustados.",
+          "fuente": "RD 3/2023, anexo III · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "(se exceptúan los del control operacional y de rutina, si el laboratorio solo hace esos dos tipos)"
         }
       ]
     }
