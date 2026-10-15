@@ -25,7 +25,7 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 
 | Nº | Pregunta | Oficial | Respuesta | Tema |
 | --- | --- | --- | --- | --- |
-| 1 | «De la reforma constitucional» es el epígrafe: | **b)** | Del Título X de la Constitución | 1 *(no la cita)* |
+| 1 | «De la reforma constitucional» es el epígrafe: | **b)** | Del Título X de la Constitución | **1** |
 | 2 | De acuerdo con el artículo 59.3 del Estatuto de Autonomía de Aragón, el Justicia rendirá cuentas de su gestión… | **b)** | Las Cortes de Aragón | **3** |
 | 3 | De acuerdo con el artículo 71.4.ª del Estatuto de Autonomía de Aragón, en materia de lenguas y modalidades… | **c)** | Exclusiva | **3** |
 | 4 | De acuerdo con el artículo 12.1 de la Ley 7/1985,de 2 de abril, reguladora de las bases del Régimen Local,… | **c)** | El ayuntamiento ejerce sus competencias | **5** |
@@ -85,7 +85,7 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 
 | Nº | Pregunta | Oficial | Respuesta | Tema |
 | --- | --- | --- | --- | --- |
-| 1 | De acuerdo con el artículo 8 de la Constitución española las Fuerzas Armadas tienen como misión garantizar la… | **b)** | El ordenamiento constitucional | 1 *(no la cita)* |
+| 1 | De acuerdo con el artículo 8 de la Constitución española las Fuerzas Armadas tienen como misión garantizar la… | **b)** | El ordenamiento constitucional | **1** |
 | 2 | De acuerdo con el artículo 10 del Estatuto de Autonomía de Aragón podrán incorporarse a la Comunidad Autónoma de… | **b)** | Ley orgánica | **3** |
 | 3 | De acuerdo con el artículo 36.2 del Estatuto de Autonomía de Aragón, relativo a la composición de las Cortes de… | **b)** | 14 escaños | **3** |
 | 4 | De acuerdo con el artículo 59.3 del Estatuto de Autonomía de Aragón el Justicia rendirá cuentas de su gestión ante: | **b)** | Las Cortes de Aragón | **3** |

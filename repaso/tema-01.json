@@ -825,6 +825,26 @@
         "Principios garantizados | Art. 9.3 | Siete (legalidad, jerarquía, publicidad, irretroactividad, seguridad jurídica",
         "Unidad, autonomía, solidaridad | Art. 2 | Indisoluble unidad de la Nación española"
       ]
+    },
+    {
+      "id": "t01-f75",
+      "anverso": "Artículo 14 CE: ¿qué dice y dónde está?",
+      "reverso": "«Los españoles son **iguales ante la ley**, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.»\nEs la **igualdad formal**. Está en el **Título I, capítulo segundo**, antes de la sección 1.ª (que empieza en el art. 15): **no** es del título preliminar.",
+      "fuente": "Art. 14 CE (BOE-A-1978-31229) · apunte §3, art. 9",
+      "etiquetas": [
+        "titulo-preliminar",
+        "trampa"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1637",
+        "texto": "¿Qué artículo de la Constitución reconoce el derecho a la igualdad ante la ley y dice que no puede prevalecer"
+      },
+      "apartado": "3/Artículo 9",
+      "evidencia": [
+        "«Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.»",
+        "Está en el Título I, capítulo segundo («Derechos y libertades»), antes de la sección 1.ª, que empieza en el art. 15."
+      ]
     }
   ],
   "test": [
@@ -925,7 +945,12 @@
       ],
       "correcta": 2,
       "explicacion": "Los arts. 6 y 7 CE contienen la misma cláusula: partidos políticos, sindicatos de trabajadores y asociaciones empresariales.",
-      "fuente": "Arts. 6 y 7 CE"
+      "fuente": "Arts. 6 y 7 CE",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1722",
+        "texto": "Los artículos 6 y 7 de la Constitución dicen que \"Su estructura interna y funcionamiento deberán ser democráticos\""
+      }
     },
     {
       "id": "t01-q09",
@@ -1099,7 +1124,12 @@
       ],
       "correcta": 1,
       "explicacion": "La Constitución deja abiertas las dos vías. Es la ley electoral la que ha optado, con carácter general, por la elección por los concejales.",
-      "fuente": "Art. 140 CE"
+      "fuente": "Art. 140 CE",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1521",
+        "texto": "De acuerdo con el artículo 140 de la Constitución española los Atcaldes serán elegidos:"
+      }
     },
     {
       "id": "t01-q23",
@@ -1123,7 +1153,12 @@
       ],
       "correcta": 2,
       "explicacion": "Cabildos (Canarias) o Consejos Insulares (Baleares).",
-      "fuente": "Art. 141.4 CE"
+      "fuente": "Art. 141.4 CE",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1637",
+        "texto": "De acuerdo con el artículo 141.4 de la Constitución en los archipiélagos, las islas tendrán además su administración"
+      }
     },
     {
       "id": "t01-q25",
@@ -1337,7 +1372,7 @@
     },
     {
       "id": "t01-q39",
-      "pregunta": "¿Qué título de la Constitución tiene como epígrafe «Del Poder Judicial»?",
+      "pregunta": "¿Qué título lleva la rúbrica «Del Poder Judicial»?",
       "opciones": [
         "El Título VI",
         "El Título V",
@@ -2030,7 +2065,7 @@
       ],
       "correcta": 2,
       "explicacion": "Es entidad local con personalidad jurídica propia, determinada por la agrupación de municipios, y además división territorial para las actividades del Estado.",
-      "fuente": "Art. 141.1 CE · apunte §5.3",
+      "fuente": "Art. 141.1 CE · apunte §5.3 · tema del examen 1710, enunciado reconstruido, no literal",
       "nucleo": true,
       "precedente": {
         "plantilla": "1710",
@@ -2113,6 +2148,28 @@
       "fuente": "Arts. 140 y 69.2 CE · apunte §5.3",
       "apartado": "5.3",
       "evidencia": "El orden de los adjetivos del sufragio en el art. 140 es universal, igual, libre, directo y secreto."
+    },
+    {
+      "id": "t01-q89",
+      "pregunta": "¿Qué artículo de la Constitución dice que los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social?",
+      "opciones": [
+        "El artículo 9.2",
+        "El artículo 1.1",
+        "El artículo 14"
+      ],
+      "correcta": 2,
+      "explicacion": "El art. 14 (igualdad formal, ante la ley), en el Título I. El 9.2 recoge la igualdad material y el 1.1, la igualdad como valor superior.",
+      "fuente": "Art. 14 CE (BOE-A-1978-31229) · apunte §3, art. 9",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1698",
+        "texto": "¿Qué artículo de la Constitución española dice que \"Los españoles son iguales ante la ley sin que pueda prevalecer"
+      },
+      "apartado": "3/Artículo 9",
+      "evidencia": [
+        "«Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.»",
+        "Es la igualdad formal, la igualdad ante la ley, que el art. 9.2 completa con la material."
+      ]
     }
   ],
   "formatoTest": {

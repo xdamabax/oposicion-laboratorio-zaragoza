@@ -157,6 +157,8 @@ Contribuyen a la defensa y promoción de los intereses económicos y sociales qu
 
    La irretroactividad no es absoluta: solo alcanza a las disposiciones *sancionadoras no favorables* o *restrictivas de derechos individuales*. Es un error de test frecuente.
 
+> **Fuera del título preliminar, pero preguntado: el artículo 14.** «Los españoles son iguales ante la ley, sin que pueda prevalecer discriminación alguna por razón de nacimiento, raza, sexo, religión, opinión o cualquier otra condición o circunstancia personal o social.» Es la **igualdad formal**, la igualdad *ante la ley*, que el art. 9.2 completa con la material. Está en el **Título I, capítulo segundo** («Derechos y libertades»), antes de la sección 1.ª, que empieza en el art. 15. Ha caído en dos cuestionarios de otras plazas del Ayuntamiento con la misma parte común (1637 y 1698): qué artículo reconoce la igualdad ante la ley. Respuesta: **el 14**.
+
 ---
 
 ## 4. La Administración pública en la Constitución
@@ -299,3 +301,4 @@ Es el **principio de suficiencia financiera**, base del tema 6. Debe leerse junt
 - **Fechas de aprobación, referéndum y sanción:** contrastadas en las páginas institucionales del Senado de España y del Congreso de los Diputados; no constan en el texto consolidado, que sí acredita la sanción de 27/12/1978, la publicación de 29/12/1978 y la entrada en vigor en esa misma fecha (disposición final).
 - **Método:** la estructura (número de artículos, rangos por título y capítulo, número de disposiciones) no se ha tomado de ninguna fuente secundaria: se ha calculado directamente sobre el XML del texto consolidado descargado de la API de datos abiertos del BOE.
 - **Fecha de verificación:** 1 de septiembre de 2026.
+- **Artículo 14:** añadido el 15 de octubre de 2026 por los precedentes de examen (1637, n.º 6, y 1698, n.º 4, en `ExamenesAnteriores/PLANTILLAS.md`). Literal tomado de la API de datos abiertos del BOE (texto consolidado, bloque `a14`) ese mismo día.

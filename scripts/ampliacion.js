@@ -163,10 +163,14 @@ const canon = (v) =>
 /* ------------------------------------------------------------------ */
 /* Los seis controles. Devuelven el detalle, null si no aplican, o lanzan. */
 
-/** (e) Lo de BASE sigue igual: mismo ID, mismo texto, mismo nucleo, todo. */
+/**
+ * (e) Lo de BASE sigue igual: mismo ID, mismo texto, mismo nucleo, todo. Una
+ * excepcion aprobada solo deja cambiar los `campos` que declara.
+ */
 export function integridad(tema, d, base) {
   if (!base) return null
-  const permitidos = new Set(EXCEPCIONES.filter((e) => e.tema === tema).map((e) => e.id))
+  const excepciones = new Map(EXCEPCIONES.filter((e) => e.tema === tema).map((e) => [e.id, e.campos]))
+  const sin = (o, campos) => Object.fromEntries(Object.entries(o).filter(([k]) => !campos.includes(k)))
   const ahora = new Map([...elementos(d).map((e) => [e.x.id, e.x]), ...d.supuestos.map((s) => [s.id, s])])
   const problemas = []
   const viejos = [
@@ -174,9 +178,11 @@ export function integridad(tema, d, base) {
     // del supuesto se compara todo menos las preguntas, que van una a una arriba
     ...base.supuestos.map(({ preguntas, ...resto }) => ({ ...resto, preguntas: preguntas.length })),
   ]
-  for (const v of viejos) {
-    if (permitidos.has(v.id)) continue
-    const n = ahora.get(v.id)
+  for (const viejo of viejos) {
+    const campos = excepciones.get(viejo.id) ?? []
+    const v = sin(viejo, campos)
+    const nuevo = ahora.get(v.id)
+    const n = nuevo && sin(nuevo, campos)
     if (!n) {
       problemas.push(`${v.id} ha desaparecido`)
       continue
@@ -200,8 +206,7 @@ export function integridad(tema, d, base) {
   const ajenos = todos.filter((id) => !id.startsWith(`t${dos(tema)}-`))
   if (ajenos.length) problemas.push(`ID de otro tema: ${ajenos.slice(0, 3).join(', ')}`)
   if (problemas.length) throw new Error(problemas.slice(0, 4).join('; '))
-  const n = viejos.length - permitidos.size
-  return `${n} elementos de ${BASE} intactos${permitidos.size ? ` (${permitidos.size} excepción(es) aprobada(s))` : ''}, sin IDs repetidos`
+  return `${viejos.length} elementos de ${BASE} intactos${excepciones.size ? ` (${excepciones.size} con excepción aprobada, solo en sus campos)` : ''}, sin IDs repetidos`
 }
 
 /** Lo que no estaba en BASE. */
