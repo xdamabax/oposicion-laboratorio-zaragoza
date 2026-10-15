@@ -507,6 +507,131 @@
         "fundamento"
       ],
       "nucleo": true
+    },
+    {
+      "id": "t35-f46",
+      "anverso": "¿Cómo se mide el nitrato al trocear el nitrógeno total, y por qué la cromatografía iónica sola no da el total?",
+      "reverso": "Nitrato: **absorción directa en UV a ≈ 220 nm**, o **cromatografía iónica** (UNE-EN ISO 10304-1). La iónica da **nitrato y nitrito**, pero **no el nitrógeno orgánico**: no sirve para el total.",
+      "fuente": "Temas 25 y 30 · apunte §2.2",
+      "etiquetas": [
+        "nitrogeno"
+      ],
+      "apartado": "2.2",
+      "evidencia": [
+        "| Nitrato | Absorción directa en UV a ≈ 220 nm, o cromatografía iónica | UNE-EN ISO 10304-1:2009 (iónica) | 25 y 30 |",
+        "La cromatografía iónica daría el nitrato y el nitrito, pero no el orgánico, así que tampoco sirve para el total."
+      ]
+    },
+    {
+      "id": "t35-f47",
+      "anverso": "Química del método del molibdato para el fósforo, y su campo de medida.",
+      "reverso": "Ortofosfato + **molibdato de amonio** y **antimonio** → complejo de antimonio-fosfomolibdato, **reducido con ácido ascórbico** a **azul de molibdeno**, medido a **880 nm** (o 700). Campo: **0,005 a 0,8 mg/L de P** sin dilución.",
+      "fuente": "UNE-EN ISO 6878 · apunte §2.3",
+      "etiquetas": [
+        "fosforo"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "que se reduce con ácido ascórbico a un intenso azul de molibdeno, medido a 880 nm (o a 700 nm).",
+        "Campo de 0,005 a 0,8 mg/L de P sin dilución."
+      ]
+    },
+    {
+      "id": "t35-f48",
+      "anverso": "¿Qué alternativa normalizada hay para el fósforo por análisis en flujo?",
+      "reverso": "**UNE-EN ISO 15681-1 y -2**: ortofosfato y fósforo total por **FIA y CFA**. Las dos vigentes.",
+      "fuente": "Catálogo ISO · apunte §2.3",
+      "etiquetas": [
+        "fosforo",
+        "normas"
+      ],
+      "apartado": "2.3",
+      "evidencia": "UNE-EN ISO 15681-1 y -2, ortofosfato y fósforo total por análisis en flujo (FIA y CFA)."
+    },
+    {
+      "id": "t35-f49",
+      "anverso": "¿Qué tiene en común la filtración de los metales disueltos con los sólidos en suspensión?",
+      "reverso": "La **membrana de 0,45 µm**: la misma que el RD 509/1996 usa para los sólidos en suspensión. El mismo corte físico separa dos parámetros distintos.",
+      "fuente": "RD 817/2015 y RD 509/1996 · apunte §2.4",
+      "etiquetas": [
+        "metales"
+      ],
+      "apartado": "2.4",
+      "evidencia": "esa membrana de 0,45 µm es la misma que el RD 509/1996 usa para los sólidos en suspensión"
+    },
+    {
+      "id": "t35-f50",
+      "anverso": "Cuadro 2 del RD 509/1996: ¿hay que aplicar siempre los dos parámetros?",
+      "reverso": "**No**: según la situación local, **uno o los dos**. Y se aplica el valor de concentración **o** el porcentaje de reducción.",
+      "fuente": "RD 509/1996, cuadro 2 · apunte §2.5",
+      "etiquetas": [
+        "cuadro2"
+      ],
+      "apartado": "2.5",
+      "evidencia": "Según la situación local, se podrá aplicar uno o los dos parámetros."
+    },
+    {
+      "id": "t35-f51",
+      "anverso": "Tratamiento terciario en la Directiva (UE) 2024/3019: ¿a quién obliga?",
+      "reverso": "De forma escalonada, a las aglomeraciones **a partir de 150 000 h-e** y, en **zonas sensibles a la eutrofización**, **desde 10 000 h-e**.",
+      "fuente": "Directiva (UE) 2024/3019, art. 7 · apunte §2.6",
+      "etiquetas": [
+        "directiva"
+      ],
+      "apartado": "2.6",
+      "evidencia": "obligatorio de forma escalonada para aglomeraciones a partir de 150 000 h-e y, en zonas sensibles a la eutrofización, desde 10 000 h-e."
+    },
+    {
+      "id": "t35-f52",
+      "anverso": "Límites aragoneses de vertido a red para plomo, cobre, níquel y zinc (media diaria / instantánea).",
+      "reverso": "**Plomo 1,00 / 1,00**; **cobre 2,00 / 3,00**; **níquel 2,00 / 5,00**; **zinc 5,00 / 10,00** mg/L. Siempre como concentración **total**.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.7",
+      "etiquetas": [
+        "zaragoza",
+        "metales"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "| Plomo | 1,00 | 1,00 | | Cobre | 2,00 | 3,00 |",
+        "| Níquel | 2,00 | 5,00 | | Zinc | 5,00 | 10,00 |"
+      ]
+    },
+    {
+      "id": "t35-f53",
+      "anverso": "¿Qué significa que la NCA-CMA de un metal sea «no aplicable»?",
+      "reverso": "Que se considera que la **NCA-MA ya protege contra los picos** a corto plazo, por ser muy inferior a la toxicidad aguda. Es el caso del **plomo** y del **níquel**.",
+      "fuente": "RD 817/2015 · apunte §2.8",
+      "etiquetas": [
+        "nca"
+      ],
+      "apartado": "2.8",
+      "evidencia": "Cuando la columna NCA-CMA dice «no aplicable», se considera que la NCA-MA ya protege contra los picos a corto plazo, por ser muy inferior a la toxicidad aguda."
+    },
+    {
+      "id": "t35-f54",
+      "anverso": "Aceites y grasas: límites aragoneses de vertido, grupo de peligrosidad y Vr del RDPH.",
+      "reverso": "**100 mg/L** de media diaria y **150 mg/L** instantánea, en el **Grupo B**, de mayor peligrosidad. **Vr = 1 mg/L** en el RDPH.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 y RDPH · apunte §2.10",
+      "etiquetas": [
+        "grasas"
+      ],
+      "apartado": "2.10",
+      "evidencia": "Sus límites: en el reglamento aragonés, aceites y grasas 100 mg/L de media diaria y 150 mg/L de instantánea, en el Grupo B de mayor peligrosidad; y Vr = 1 mg/L en el RDPH."
+    },
+    {
+      "id": "t35-f55",
+      "anverso": "ICP-MS e ICP-OES para metales en agua residual: ¿cuándo cada uno y qué norma?",
+      "reverso": "**ICP-MS**, doce metales a la vez: **UNE-EN ISO 17294-2:2024**. **ICP-OES**, concentraciones altas: **UNE-EN ISO 11885:2010**. Con **digestión ácida** si se pide metal total.",
+      "fuente": "Tabla operativa · apunte §3",
+      "etiquetas": [
+        "metales",
+        "normas"
+      ],
+      "apartado": "3",
+      "evidencia": [
+        "| Metales, doce a la vez | ICP-MS (27) | UNE-EN ISO 17294-2:2024 | DIGESTIÓN ÁCIDA si es total |",
+        "| Metales, concentración alta | ICP-OES (27) | UNE-EN ISO 11885:2010 | Íd. |"
+      ]
     }
   ],
   "test": [
@@ -886,6 +1011,557 @@
       "correcta": 0,
       "explicacion": "Oxida todo a nitrato y mide el nitrato. La mineralización con selenio es el Kjeldahl, que deja fuera el nitrito y el nitrato; y la cromatografía iónica daría el nitrato y el nitrito, pero no el orgánico.",
       "fuente": "UNE-EN ISO 11905-1:1998; PRTR-España, ficha «Nitrógeno (N)»"
+    },
+    {
+      "id": "t35-q31",
+      "pregunta": "Un tratamiento secundario convencional:",
+      "opciones": [
+        "Elimina todos los nutrientes",
+        "Elimina los metales destruyéndolos",
+        "Reduce la DBO y los sólidos, pero deja casi enteros el nitrógeno y el fósforo"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso hay un cuadro 2 aparte.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "un tratamiento secundario reduce la DBO y los sólidos, pero el nitrógeno y el fósforo salen casi enteros si no se hace algo más."
+    },
+    {
+      "id": "t35-q32",
+      "pregunta": "Normalmente, el factor limitante de la eutrofización es:",
+      "opciones": [
+        "El nitrógeno",
+        "El fósforo",
+        "El carbono orgánico"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso suele ser el más eficaz de limitar.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Fósforo total | Nutriente. Normalmente el factor limitante de la eutrofización |"
+    },
+    {
+      "id": "t35-q33",
+      "pregunta": "El nitrógeno Kjeldahl comprende:",
+      "opciones": [
+        "El nitrógeno orgánico y el amoniacal",
+        "El nitrito y el nitrato",
+        "Solo el nitrato"
+      ],
+      "correcta": 0,
+      "explicacion": "Son las formas reducidas.",
+      "fuente": "RD 509/1996, cuadro 2, nota 2 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| N orgánico | Proteínas, urea, aminoácidos | Reducido | | N amoniacal | NH₄⁺ y NH₃ | Reducido |"
+    },
+    {
+      "id": "t35-q34",
+      "pregunta": "En un agua tratada con un proceso biológico nitrificante, el método Kjeldahl:",
+      "opciones": [
+        "Coincidiría con el nitrógeno total",
+        "Daría un valor superior al nitrógeno total",
+        "Daría un valor muy bajo aunque el nitrógeno total siga alto"
+      ],
+      "correcta": 2,
+      "explicacion": "Casi todo el amonio pasó a nitrato.",
+      "fuente": "Apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "el Kjeldahl daría un valor ridículo mientras el nitrógeno total sigue siendo alto"
+    },
+    {
+      "id": "t35-q35",
+      "pregunta": "La UNE-EN 25663 determina el nitrógeno Kjeldahl por mineralización con:",
+      "opciones": [
+        "Peroxodisulfato",
+        "Selenio",
+        "Combustión catalítica"
+      ],
+      "correcta": 1,
+      "explicacion": "Anuló la UNE 77055:1983.",
+      "fuente": "UNE-EN 25663:1994 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Determinación del nitrógeno Kjeldahl. Método de mineralización con SELENIO"
+    },
+    {
+      "id": "t35-q36",
+      "pregunta": "La mineralización oxidante con peroxodisulfato convierte todo el nitrógeno en:",
+      "opciones": [
+        "Nitrato",
+        "Amonio",
+        "Nitrógeno gas"
+      ],
+      "correcta": 0,
+      "explicacion": "Y se mide el nitrato.",
+      "fuente": "UNE-EN ISO 11905-1 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Se oxida todo a nitrato y se mide el nitrato."
+    },
+    {
+      "id": "t35-q37",
+      "pregunta": "En la combustión oxidativa, el NO formado se detecta por quimioluminiscencia al reaccionar con:",
+      "opciones": [
+        "Oxígeno",
+        "Hidrógeno",
+        "Ozono"
+      ],
+      "correcta": 2,
+      "explicacion": "El mismo aparato mide el CO₂ por infrarrojo.",
+      "fuente": "Apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "el NO se detecta por quimioluminiscencia al reaccionar con ozono"
+    },
+    {
+      "id": "t35-q38",
+      "pregunta": "La cromatografía iónica no sirve para el nitrógeno total porque:",
+      "opciones": [
+        "No detecta aniones",
+        "Da el nitrato y el nitrito, pero no el nitrógeno orgánico",
+        "Destruye la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Fue distractor en 1233 C2 #9 y 1322 C2 #35.",
+      "fuente": "Apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La cromatografía iónica daría el nitrato y el nitrito, pero no el orgánico, así que tampoco sirve para el total."
+    },
+    {
+      "id": "t35-q39",
+      "pregunta": "El nitrato puede medirse por absorción directa en el ultravioleta a unos:",
+      "opciones": [
+        "220 nm",
+        "540 nm",
+        "880 nm"
+      ],
+      "correcta": 0,
+      "explicacion": "540 nm es el nitrito; 880 nm, el fósforo.",
+      "fuente": "Tema 25 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Nitrato | Absorción directa en UV a ≈ 220 nm, o cromatografía iónica |"
+    },
+    {
+      "id": "t35-q40",
+      "pregunta": "El fósforo típico de los detergentes es:",
+      "opciones": [
+        "Ortofosfato",
+        "Fósforo orgánico",
+        "Fósforo condensado (poli y metafosfatos)"
+      ],
+      "correcta": 2,
+      "explicacion": "El color solo ve el ortofosfato.",
+      "fuente": "Apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "fósforo condensado (poli y metafosfatos, típicos de detergentes)"
+    },
+    {
+      "id": "t35-q41",
+      "pregunta": "En el método del molibdato, el complejo de antimonio-fosfomolibdato se reduce con:",
+      "opciones": [
+        "Cloruro estannoso, a un complejo amarillo",
+        "Ácido ascórbico, a azul de molibdeno",
+        "Hidracina, a un complejo rojo"
+      ],
+      "correcta": 1,
+      "explicacion": "Se mide a 880 nm.",
+      "fuente": "UNE-EN ISO 6878 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "que se reduce con ácido ascórbico a un intenso azul de molibdeno, medido a 880 nm (o a 700 nm)."
+    },
+    {
+      "id": "t35-q42",
+      "pregunta": "El campo de medida del método del molibdato, sin dilución, es de:",
+      "opciones": [
+        "0,005 a 0,8 mg/L de P",
+        "0,5 a 80 mg/L de P",
+        "5 a 800 mg/L de P"
+      ],
+      "correcta": 0,
+      "explicacion": "Dato del tema 25 (duda 9).",
+      "fuente": "UNE-EN ISO 6878 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Campo de 0,005 a 0,8 mg/L de P sin dilución."
+    },
+    {
+      "id": "t35-q43",
+      "pregunta": "El fósforo por análisis en flujo (FIA y CFA) se normaliza en:",
+      "opciones": [
+        "UNE-EN ISO 6878",
+        "UNE-EN 25663",
+        "UNE-EN ISO 15681-1 y -2"
+      ],
+      "correcta": 2,
+      "explicacion": "La 25663 es el Kjeldahl.",
+      "fuente": "Catálogo ISO · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "UNE-EN ISO 15681-1 y -2, ortofosfato y fósforo total por análisis en flujo (FIA y CFA)."
+    },
+    {
+      "id": "t35-q44",
+      "pregunta": "Según el reglamento aragonés, los límites de metales se refieren a la concentración:",
+      "opciones": [
+        "Disuelta",
+        "Total",
+        "Biodisponible"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso se digiere la muestra.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Los límites de esta tabla referentes a metales se consideran como concentración TOTAL de los mismos."
+    },
+    {
+      "id": "t35-q45",
+      "pregunta": "La digestión con agua regia para metales totales se normaliza en:",
+      "opciones": [
+        "UNE-EN ISO 15587-1",
+        "UNE-EN ISO 15587-2",
+        "UNE-EN ISO 17294-2"
+      ],
+      "correcta": 0,
+      "explicacion": "La parte 2 usa ácido nítrico.",
+      "fuente": "UNE-EN ISO 15587 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "(UNE-EN ISO 15587-1 con agua regia o -2 con ácido nítrico)"
+    },
+    {
+      "id": "t35-q46",
+      "pregunta": "En el anexo V del RD 817/2015, las NCA se refieren a la concentración disuelta para:",
+      "opciones": [
+        "Cadmio, plomo, mercurio y níquel",
+        "Hierro y manganeso",
+        "Arsénico, cobre, cromo, selenio y zinc"
+      ],
+      "correcta": 2,
+      "explicacion": "Cd, Pb, Hg y Ni son la excepción del anexo IV.",
+      "fuente": "RD 817/2015, anexo V · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "(La misma excepción, en el anexo V, para arsénico, cobre, cromo, selenio y zinc.)"
+    },
+    {
+      "id": "t35-q47",
+      "pregunta": "Para doce metales a la vez, el ICP-MS es la respuesta porque:",
+      "opciones": [
+        "Es la técnica más barata",
+        "Es multielemental",
+        "No necesita preparar la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Los distractores no son técnicas de metales.",
+      "fuente": "1322 · segundo ejercicio #40 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Son doce metales de una sola vez, y ahí está la razón de la respuesta: el ICP-MS es multielemental."
+    },
+    {
+      "id": "t35-q48",
+      "pregunta": "El cuadro 2 del RD 509/1996 se aplica en zonas sensibles a partir de:",
+      "opciones": [
+        "10 000 h-e",
+        "2 000 h-e",
+        "100 000 h-e"
+      ],
+      "correcta": 0,
+      "explicacion": "El cuadro 1, a todo tratamiento secundario.",
+      "fuente": "RD 509/1996, cuadro 2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "el cuadro 2, solo en zonas sensibles y a partir de 10 000 h-e."
+    },
+    {
+      "id": "t35-q49",
+      "pregunta": "El porcentaje mínimo de reducción del nitrógeno total en el cuadro 2 es:",
+      "opciones": [
+        "80 %",
+        "90 %",
+        "70-80 %"
+      ],
+      "correcta": 2,
+      "explicacion": "El del fósforo, 80 %.",
+      "fuente": "RD 509/1996, cuadro 2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Nitrógeno total | 15 mg/L N (de 10 000 a 100 000 h-e) · 10 mg/L N (más de 100 000 h-e) | 70-80 |"
+    },
+    {
+      "id": "t35-q50",
+      "pregunta": "Una instalación puede quedar exenta del cuadro 2 si el conjunto de las instalaciones de la zona sensible reduce al menos:",
+      "opciones": [
+        "El 50 %",
+        "El 75 % del fósforo total y del nitrógeno total",
+        "El 90 %"
+      ],
+      "correcta": 1,
+      "explicacion": "Art. 5.2.",
+      "fuente": "RD 509/1996, art. 5.2 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "reduce al menos el 75 % del fósforo total y del nitrógeno total"
+    },
+    {
+      "id": "t35-q51",
+      "pregunta": "La nota 3 exige una temperatura del reactor de al menos 12 °C para comprobar el nitrógeno por medias diarias porque:",
+      "opciones": [
+        "Por debajo, las bacterias nitrificantes y desnitrificantes van muy lentas",
+        "Por debajo, el nitrógeno se evapora",
+        "Por debajo falla la quimioluminiscencia"
+      ],
+      "correcta": 0,
+      "explicacion": "Eliminar nitrógeno en invierno es más difícil.",
+      "fuente": "RD 509/1996, cuadro 2, nota 3 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "por debajo de esa temperatura las bacterias nitrificantes y desnitrificantes van muy lentas"
+    },
+    {
+      "id": "t35-q52",
+      "pregunta": "La Directiva (UE) 2024/3019 exige al fósforo total, a partir de 150 000 h-e:",
+      "opciones": [
+        "1 mg/L y un 80 %",
+        "0,7 mg/L y un 87,5 %",
+        "0,5 mg/L y un 90 % de reducción"
+      ],
+      "correcta": 2,
+      "explicacion": "0,7 y 87,5 % entre 10 000 y 150 000 h-e.",
+      "fuente": "Directiva (UE) 2024/3019, cuadro 2 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Fósforo total | 0,7 mg/L (≥ 10 000 h-e pero < 150 000 h-e) · 0,5 mg/L (≥ 150 000 h-e) | 87,5 (≥ 10 000 y < 150 000) · 90 (≥ 150 000) |"
+    },
+    {
+      "id": "t35-q53",
+      "pregunta": "La nueva directiva llama a la eliminación de nitrógeno y fósforo:",
+      "opciones": [
+        "Tratamiento cuaternario",
+        "Tratamiento terciario",
+        "Tratamiento más riguroso"
+      ],
+      "correcta": 1,
+      "explicacion": "El cuaternario es el de microcontaminantes.",
+      "fuente": "Directiva (UE) 2024/3019, art. 7 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "ya no es «tratamiento más riguroso en zonas sensibles», sino TRATAMIENTO TERCIARIO (art. 7)"
+    },
+    {
+      "id": "t35-q54",
+      "pregunta": "En el DOUE español, la reducción del fósforo para 150 000 h-e o más figura como «90 mg/l». Lo correcto es:",
+      "opciones": [
+        "90 %",
+        "90 mg/L",
+        "0,90 mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "La versión inglesa escribe «90», sin unidades (duda 2).",
+      "fuente": "Directiva (UE) 2024/3019 (DOUE español e inglés) · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Lo correcto es 90 %. Lo dejo anotado como se han anotado las erratas"
+    },
+    {
+      "id": "t35-q55",
+      "pregunta": "La nueva directiva mueve el escalón de población de los valores más estrictos:",
+      "opciones": [
+        "De 10 000 a 100 000 h-e",
+        "De 150 000 a 100 000 h-e",
+        "De 100 000 a 150 000 h-e"
+      ],
+      "correcta": 2,
+      "explicacion": "Y baja las concentraciones.",
+      "fuente": "Directiva (UE) 2024/3019 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Se mueve el escalón de población, de 100 000 a 150 000 h-e."
+    },
+    {
+      "id": "t35-q56",
+      "pregunta": "El límite aragonés de fósforo total (media diaria) para verter a la red es:",
+      "opciones": [
+        "2 mg/L",
+        "15 mg/L",
+        "50 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "30 mg/L instantánea.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Fósforo total | 15 mg/L | 30 mg/L |"
+    },
+    {
+      "id": "t35-q57",
+      "pregunta": "El límite aragonés de nitrógeno amoniacal (media diaria) para verter a la red es:",
+      "opciones": [
+        "35 mg/L",
+        "50 mg/L",
+        "20 mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "50 es el total; 20, el nítrico.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Nitrógeno amoniacal | 35 mg/L | 85 mg/L |"
+    },
+    {
+      "id": "t35-q58",
+      "pregunta": "El límite aragonés de cadmio (media diaria) para verter a la red es:",
+      "opciones": [
+        "0,05 mg/L",
+        "1,00 mg/L",
+        "0,2 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "0,05 es el mercurio.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Cadmio | 0,2 | 0,40 | | Cromo VI | 1,00 | 1,00 |"
+    },
+    {
+      "id": "t35-q59",
+      "pregunta": "A efectos de sanción, el nitrógeno y el fósforo total van en el reglamento aragonés al:",
+      "opciones": [
+        "Grupo B, de mayor peligrosidad",
+        "Grupo A, de menor peligrosidad",
+        "Grupo C"
+      ],
+      "correcta": 1,
+      "explicacion": "Los metales, al B.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "el fósforo total y el nitrógeno van al Grupo A, «de menor peligrosidad»"
+    },
+    {
+      "id": "t35-q60",
+      "pregunta": "La NCA-CMA se cumple cuando:",
+      "opciones": [
+        "La concentración medida en cualquier punto de control no la supera",
+        "La media anual no la supera",
+        "Se cumple el límite de vertido"
+      ],
+      "correcta": 0,
+      "explicacion": "La NCA-MA es la media anual.",
+      "fuente": "RD 817/2015 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| NCA-CMA | Concentración máxima admisible | Cuando la concentración medida en cualquier punto de control no supera la norma |"
+    },
+    {
+      "id": "t35-q61",
+      "pregunta": "Cuando la NCA-CMA de un metal es «no aplicable»:",
+      "opciones": [
+        "No hay ningún límite",
+        "Se aplica el límite de vertido aragonés",
+        "Se considera que la NCA-MA ya protege contra los picos a corto plazo"
+      ],
+      "correcta": 2,
+      "explicacion": "Caso del plomo y el níquel.",
+      "fuente": "RD 817/2015 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "Cuando la columna NCA-CMA dice «no aplicable», se considera que la NCA-MA ya protege contra los picos a corto plazo"
+    },
+    {
+      "id": "t35-q62",
+      "pregunta": "La NCA-MA del plomo en aguas superficiales continentales es:",
+      "opciones": [
+        "0,07 µg/L",
+        "7,2 µg/L",
+        "20 µg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "0,07 mercurio; 20 níquel.",
+      "fuente": "RD 817/2015, anexo IV · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Plomo | Prioritaria | 7,2 | No aplicable |"
+    },
+    {
+      "id": "t35-q63",
+      "pregunta": "Con una dureza de 80 mg CaCO₃/L, la NCA-MA del cobre es:",
+      "opciones": [
+        "40 µg/L",
+        "22 µg/L",
+        "120 µg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "Clase de 50 a 100 mg CaCO₃/L.",
+      "fuente": "RD 817/2015, anexo V · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| 10 a 50 | 22 | 200 | | 50 a 100 | 40 | 300 |"
+    },
+    {
+      "id": "t35-q64",
+      "pregunta": "La NCA-MA del selenio es:",
+      "opciones": [
+        "5 µg/L",
+        "50 µg/L",
+        "1 µg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "5 cromo VI; 50 arsénico y cromo total.",
+      "fuente": "RD 817/2015, anexo V · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| Selenio | 1 | | Cromo VI | 5 |"
+    },
+    {
+      "id": "t35-q65",
+      "pregunta": "El valor de referencia (Vr) del RDPH para los nitritos es:",
+      "opciones": [
+        "0,50 mg/L",
+        "50 mg/L",
+        "0,03 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "50 mg/L es el de los nitratos.",
+      "fuente": "RDPH, anexo V · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| Nitratos | 50 | | Nitritos | 0,03 |"
+    },
+    {
+      "id": "t35-q66",
+      "pregunta": "El grupo A del anexo V del RDPH toma como valor de referencia:",
+      "opciones": [
+        "Los límites del reglamento aragonés",
+        "Los valores del cuadro 1 del RD 509/1996",
+        "La NCA-MA de los anexos IV y V del RD 817/2015"
+      ],
+      "correcta": 2,
+      "explicacion": "Ahí están los metales pesados.",
+      "fuente": "RDPH, anexo V · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "remite a «las sustancias recogidas en los anexos IV y V del RD 817/2015», con la NCA-MA como valor de referencia"
+    },
+    {
+      "id": "t35-q67",
+      "pregunta": "Para el análisis de sulfatos en un agua residual, la técnica indicada es:",
+      "opciones": [
+        "Por cromatografía iónica de cationes",
+        "Por absorción atómica",
+        "Por cromatografía iónica de aniones"
+      ],
+      "correcta": 2,
+      "explicacion": "La de cationes fue el distractor.",
+      "fuente": "1322 · segundo ejercicio #38 · apunte §2.10",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Análisis de Sulfatos"
+      },
+      "apartado": "2.10",
+      "evidencia": "(Y del mismo supuesto: sulfatos y cloruros → cromatografía iónica de ANIONES, que es del tema 30.)"
+    },
+    {
+      "id": "t35-q68",
+      "pregunta": "Los límites aragoneses de aceites y grasas para verter a la red son:",
+      "opciones": [
+        "15 y 30 mg/L",
+        "100 mg/L de media diaria y 150 mg/L instantánea",
+        "1 y 2 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "Vr del RDPH: 1 mg/L.",
+      "fuente": "Decreto 38/2004 de Aragón, art. 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "aceites y grasas 100 mg/L de media diaria y 150 mg/L de instantánea"
+    },
+    {
+      "id": "t35-q69",
+      "pregunta": "Para metales en concentración alta, la técnica y la norma son:",
+      "opciones": [
+        "ICP-MS, UNE-EN ISO 17294-2",
+        "ICP-OES, UNE-EN ISO 11885:2010",
+        "Absorción molecular, UNE-EN ISO 6878"
+      ],
+      "correcta": 1,
+      "explicacion": "El ICP-MS, para trazas y muchos metales a la vez.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Metales, concentración alta | ICP-OES (27) | UNE-EN ISO 11885:2010 |"
     }
   ],
   "supuestos": [
@@ -1030,6 +1706,170 @@
           "correcta": 0,
           "explicacion": "Los límites de vertido van en mg/L y las NCA en µg/L, y no por casualidad. Y el cromo VI sí tiene NCA propia, de 5 µg/L, diez veces más estricta que la del cromo total (50 µg/L), porque es el tóxico y cancerígeno.",
           "fuente": "Decreto 38/2004 de Aragón art. 16; RD 817/2015 anexo V"
+        }
+      ]
+    },
+    {
+      "id": "t35-s03",
+      "titulo": "Supuesto 3. Una EDAR grande en zona sensible, hoy y con la nueva directiva",
+      "enunciado": "Una EDAR de 180 000 h-e vierte a una zona sensible. Las medias anuales del efluente son: fósforo total 0,8 mg/L y nitrógeno total 9 mg/L.",
+      "preguntas": [
+        {
+          "id": "t35-s03-q1",
+          "pregunta": "¿Cumple hoy el cuadro 2 del RD 509/1996?",
+          "opciones": [
+            "Sí: no supera 1 mg/L de P ni 10 mg/L de N, valores para más de 100 000 h-e",
+            "No: supera 0,5 mg/L de P",
+            "No: supera 8 mg/L de N",
+            "No se le aplica el cuadro 2"
+          ],
+          "correcta": 0,
+          "explicacion": "Basta además con cumplir el valor de concentración.",
+          "fuente": "RD 509/1996, cuadro 2 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "| Fósforo total | 2 mg/L P (de 10 000 a 100 000 h-e) · 1 mg/L P (más de 100 000 h-e) | 80 |"
+        },
+        {
+          "id": "t35-s03-q2",
+          "pregunta": "¿Y con los valores de la Directiva (UE) 2024/3019?",
+          "opciones": [
+            "Sí: los valores no cambian",
+            "Solo incumple el nitrógeno",
+            "Solo incumple el fósforo",
+            "No: a partir de 150 000 h-e exige 0,5 mg/L de P y 8 mg/L de N"
+          ],
+          "correcta": 3,
+          "explicacion": "0,8 > 0,5 y 9 > 8.",
+          "fuente": "Directiva (UE) 2024/3019 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "| Nitrógeno total | 10 mg/L (≥ 10 000 h-e pero < 150 000 h-e) · 8 mg/L (≥ 150 000 h-e) | 80 |"
+        },
+        {
+          "id": "t35-s03-q3",
+          "pregunta": "¿Qué valores le son exigibles hoy en España?",
+          "opciones": [
+            "Los de la directiva, desde su publicación",
+            "Los del RD 509/1996, hasta el 1 de agosto de 2027",
+            "Ninguno hasta la transposición",
+            "Los del reglamento aragonés"
+          ],
+          "correcta": 1,
+          "explicacion": "Transposición, a más tardar el 31 de julio de 2027.",
+          "fuente": "Directiva (UE) 2024/3019, arts. 32 y 33 · apunte §2.6",
+          "apartado": "2.6",
+          "evidencia": "Hasta entonces, lo aplicable en España es el cuadro 2 del RD 509/1996."
+        },
+        {
+          "id": "t35-s03-q4",
+          "pregunta": "Un técnico midió el fósforo sin digestión previa. ¿Qué midió?",
+          "opciones": [
+            "El fósforo total",
+            "El fósforo orgánico",
+            "El ortofosfato, no el fósforo total",
+            "El nitrógeno total"
+          ],
+          "correcta": 2,
+          "explicacion": "El color solo ve el ortofosfato.",
+          "fuente": "Apunte §2.3",
+          "apartado": "2.3",
+          "evidencia": "Sin digestión no se mide fósforo total: se mide ortofosfato, que es otro parámetro."
+        },
+        {
+          "id": "t35-s03-q5",
+          "pregunta": "El operador quiere comprobar el nitrógeno por medias diarias. ¿Con qué condición?",
+          "opciones": [
+            "Que la media diaria no supere 20 mg/L, con el efluente del reactor biológico a 12 °C o más",
+            "Que la media diaria no supere 10 mg/L",
+            "Que el efluente esté por debajo de 12 °C",
+            "No está permitido"
+          ],
+          "correcta": 0,
+          "explicacion": "Si se demuestra el mismo nivel de protección.",
+          "fuente": "RD 509/1996, cuadro 2, nota 3 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "en ese caso la media diaria no deberá superar los 20 mg/L de nitrógeno total para todas las muestras, cuando la temperatura del efluente del reactor biológico sea ≥ 12 °C."
+        }
+      ]
+    },
+    {
+      "id": "t35-s04",
+      "titulo": "Supuesto 4. Metales en un río de agua blanda",
+      "enunciado": "En un río de agua blanda (dureza 30 mg CaCO₃/L) la media anual de las concentraciones disueltas es: cobre 15 µg/L y cadmio 0,10 µg/L.",
+      "preguntas": [
+        {
+          "id": "t35-s04-q1",
+          "pregunta": "¿Qué NCA-MA corresponde al cobre en este río?",
+          "opciones": [
+            "5 µg/L",
+            "40 µg/L",
+            "120 µg/L",
+            "22 µg/L"
+          ],
+          "correcta": 3,
+          "explicacion": "Clase de 10 a 50 mg CaCO₃/L.",
+          "fuente": "RD 817/2015, anexo V · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "| ≤ 10 mg CaCO₃/L | 5 | 30 | | 10 a 50 | 22 | 200 |"
+        },
+        {
+          "id": "t35-s04-q2",
+          "pregunta": "¿Cumple el cadmio su NCA-MA?",
+          "opciones": [
+            "No: en la clase 1 (< 40 mg CaCO₃/L) la NCA-MA es ≤ 0,08 µg/L",
+            "Sí: la NCA-MA es 0,25 µg/L",
+            "Sí: el cadmio no tiene NCA",
+            "Sí: la NCA-MA es 0,15 µg/L"
+          ],
+          "correcta": 0,
+          "explicacion": "0,10 > 0,08.",
+          "fuente": "RD 817/2015, anexo IV · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "| Clase 1: < 40 mg CaCO₃/L | ≤ 0,08 |"
+        },
+        {
+          "id": "t35-s04-q3",
+          "pregunta": "¿Cómo se comprueba el cumplimiento de una NCA-MA?",
+          "opciones": [
+            "Con el valor máximo del año",
+            "Con la media aritmética de las concentraciones del año en cada punto de control",
+            "Con una única muestra",
+            "Con la mediana"
+          ],
+          "correcta": 1,
+          "explicacion": "El máximo es para la NCA-CMA.",
+          "fuente": "RD 817/2015 · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "Cuando la media aritmética de las concentraciones medidas durante el año en cada punto no excede la norma"
+        },
+        {
+          "id": "t35-s04-q4",
+          "pregunta": "¿Por qué el RD 817/2015 permite tener en cuenta la dureza al cotejar los resultados de metales?",
+          "opciones": [
+            "Porque la dureza interfiere en el ICP-MS",
+            "Porque el agua dura arrastra más metal",
+            "Porque la dureza, el pH y el carbono orgánico disuelto inciden en la biodisponibilidad de los metales",
+            "No lo permite"
+          ],
+          "correcta": 2,
+          "explicacion": "Duda 4: la explicación química es doctrina; la cita es literal.",
+          "fuente": "RD 817/2015 · apunte §2.8",
+          "apartado": "2.8",
+          "evidencia": "u otros parámetros de calidad del agua que inciden en la BIODISPONIBILIDAD de los metales"
+        },
+        {
+          "id": "t35-s04-q5",
+          "pregunta": "Para valorar el daño de un vertido de cadmio al río, ¿qué valor de referencia usa el RDPH?",
+          "opciones": [
+            "Un Vr propio de 1 mg/L",
+            "El límite aragonés de 0,2 mg/L",
+            "El valor del cuadro 2",
+            "La NCA-MA del RD 817/2015, porque el cadmio está en el grupo A"
+          ],
+          "correcta": 3,
+          "explicacion": "El grupo A no lleva números propios.",
+          "fuente": "RDPH, anexo V · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "Ahí es donde están el cadmio, el plomo, el mercurio y el níquel."
         }
       ]
     }
