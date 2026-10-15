@@ -406,6 +406,327 @@
         "tipo": "esquema",
         "valor": "bandeja-nmp-51"
       }
+    },
+    {
+      "id": "t13-f53",
+      "anverso": "Recuento, medios, validación, métodos del agua y alimentos: ¿qué tema es cada uno?",
+      "reverso": "Medios y técnicas de siembra: **12**. **Recuento** (diluciones, cálculo, filtración, concentración, NMP): **13**. Validación, incertidumbre y control de calidad de los recuentos: **17**. Métodos concretos del agua: **18**. Muestras de alimentos: **19**.",
+      "fuente": "Temario y reparto · apunte §1",
+      "etiquetas": [
+        "encuadre"
+      ],
+      "apartado": "1",
+      "evidencia": "Validación, incertidumbre y control de calidad de los recuentos | 17"
+    },
+    {
+      "id": "t13-f54",
+      "anverso": "¿Para qué se diluye una muestra antes de sembrarla?",
+      "reverso": "Para que **el número de colonias quede dentro del intervalo que se puede contar con fiabilidad**: una muestra muy contaminada da placas incontables; diluida, una placa con **10-300** colonias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "etiquetas": [
+        "dilucion"
+      ],
+      "apartado": "3.1",
+      "evidencia": "Para que el número de colonias quede dentro del intervalo que se puede contar con fiabilidad."
+    },
+    {
+      "id": "t13-f55",
+      "anverso": "¿Cómo se agita la muestra antes de diluirla y qué necesita el frasco para ello?",
+      "reverso": "**Invirtiendo el frasco rápidamente varias veces.** Por eso el frasco debe tener una **cámara de aire**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "etiquetas": [
+        "dilucion"
+      ],
+      "apartado": "3.2",
+      "evidencia": "Agitar la muestra, invirtiendo el frasco rápidamente varias veces. Por eso el frasco debe tener una cámara de aire."
+    },
+    {
+      "id": "t13-f56",
+      "anverso": "¿Qué diluyente se usa en la filtración según la EPA, y cuál no sirve en la bandeja del NMP?",
+      "reverso": "Filtración (EPA): **agua de dilución tamponada con fosfato**. En la bandeja del NMP con sustrato definido, **agua destilada o desionizada estéril**: las **soluciones tamponadas no sirven**, alteran el ensayo.",
+      "fuente": "EPA, método 1103.2 (2023) y SCA, Microbiology of Drinking Water (2016), parte 4 · apunte §3.2",
+      "etiquetas": [
+        "dilucion"
+      ],
+      "apartado": "3.2",
+      "evidencia": [
+        "| Filtración (EPA) | Agua de dilución tamponada con fosfato |",
+        "No sirven las soluciones tamponadas, que alteran el ensayo"
+      ]
+    },
+    {
+      "id": "t13-f57",
+      "anverso": "Alimentos: ¿cómo se prepara la dilución 10⁻² a partir de la suspensión inicial?",
+      "reverso": "1 mL de la suspensión inicial a **9 mL** de diluyente. Se mezcla **5-10 segundos** con agitador. **La pipeta no se mete más de 1 cm** en la suspensión.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+      "etiquetas": [
+        "dilucion",
+        "alimentos"
+      ],
+      "apartado": "3.3",
+      "evidencia": "Se mezcla 5-10 segundos con agitador. La pipeta no se mete más de 1 cm en la suspensión."
+    },
+    {
+      "id": "t13-f58",
+      "anverso": "¿Qué homogeneizadores se usan con alimentos y lodos?",
+      "reverso": "La **batidora**, con cuchillas en la base del vaso, y el **homogeneizador peristáltico (Stomacher)**: la muestra se **masajea en una bolsa de plástico**, típicamente **1-3 minutos**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) y ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+      "etiquetas": [
+        "alimentos"
+      ],
+      "apartado": "3.3",
+      "evidencia": "la muestra se masajea en una bolsa de plástico, típicamente 1-3 minutos."
+    },
+    {
+      "id": "t13-f59",
+      "anverso": "32 colonias en 1 mL de la dilución 10⁻³. ¿ufc/mL?",
+      "reverso": "32 × 1000 = **32 000 ufc/mL = 3,2 × 10⁴**. Se multiplica por el inverso de la dilución.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.4",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "3.4",
+      "evidencia": "32 colonias en 1 mL de la dilución 10⁻³ → 32 × 1000 = 32 000 ufc/mL, es decir, 3,2 × 10⁴."
+    },
+    {
+      "id": "t13-f60",
+      "anverso": "¿Cuánta variabilidad introduce una dilución y se escriben los intervalos de confianza en el informe?",
+      "reverso": "Con 1:10, encontrar 10 da **100 por 100 mL**, con un IC 95 % de **50 a 180**; pesa poco frente a la variación del agua. **Los intervalos de confianza no se escriben en el informe**: se tomarían por una afirmación sobre el agua.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.4",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "3.4",
+      "evidencia": "Los intervalos de confianza no se escriben en el informe: se tomarían por una afirmación sobre el agua."
+    },
+    {
+      "id": "t13-f61",
+      "anverso": "¿Qué volumen se siembra en el recuento en placa de un agua tratada? ¿Y de una contaminada?",
+      "reverso": "**Agua tratada**: **1 mL** sin diluir, en profundidad (en superficie, **0,1 mL**). **Agua contaminada**: una **serie de diluciones**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.1",
+      "etiquetas": [
+        "placa"
+      ],
+      "apartado": "4.1",
+      "evidencia": "Agua tratada: se siembra 1 mL de la muestra sin diluir, en profundidad."
+    },
+    {
+      "id": "t13-f62",
+      "anverso": "Contadores de colonias: tipos y cómo se controlan.",
+      "reverso": "**Manuales**: superficie iluminada, cuadrícula, lupa y marcador; se comprueban **al menos una vez al año** con una **placa de puntos conocidos** (p. ej., 25 a 75).\n**Automáticos**: análisis de imagen; se ajustan para **no contar burbujas ni defectos del agar**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "etiquetas": [
+        "placa"
+      ],
+      "apartado": "4.2",
+      "evidencia": [
+        "se comprueban al menos una vez al año con una placa de puntos conocidos (por ejemplo, de 25 a 75);",
+        "automáticos, por análisis de imagen; se ajustan para no contar burbujas ni defectos del agar."
+      ]
+    },
+    {
+      "id": "t13-f63",
+      "anverso": "28 colonias sembrando 0,1 mL de la 10⁻³. ¿ufc/mL?",
+      "reverso": "28 ÷ 0,1 × 1000 = **280 000 = 2,8 × 10⁵ ufc/mL**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.3",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "4.3",
+      "evidencia": "| 0,1 mL de la 10⁻³ | 28 | 28 ÷ 0,1 × 1000 | 280 000 = 2,8 × 10⁵ ufc/mL |"
+    },
+    {
+      "id": "t13-f64",
+      "anverso": "ISO 7218: ¿cómo se expresa una placa con 4 a 9 colonias? ¿Y si todas pasan de 300?",
+      "reverso": "**4 a 9** colonias: **número estimado**. **Todas > 300**: **más de 300/d** con la **dilución más alta**; con la 10⁻³, **> 3 × 10⁵**.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.4",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "4.4",
+      "evidencia": [
+        "| Placa con 4 a 9 colonias | Número estimado | — |",
+        "| Todas con más de 300 | Más de 300/d, con la dilución más alta | Con la 10⁻³: > 3 × 10⁵ |"
+      ]
+    },
+    {
+      "id": "t13-f65",
+      "anverso": "Membranas de filtración: tamaños especiales, cuadrícula y requisitos.",
+      "reverso": "**90 o 142 mm** para volúmenes grandes (500 mL de agua de río). **Con cuadrícula**, que facilita el recuento, sin inhibir ni favorecer el crecimiento en las líneas. **Estériles, de un solo uso** y en caducidad.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.1",
+      "etiquetas": [
+        "filtracion"
+      ],
+      "apartado": "5.1",
+      "evidencia": [
+        "de 90 o 142 mm para volúmenes grandes, como 500 mL de agua de río;",
+        "con cuadrícula, que facilita el recuento; no deben inhibir ni favorecer el crecimiento a lo largo de las líneas;"
+      ]
+    },
+    {
+      "id": "t13-f66",
+      "anverso": "Equipo de filtración y colocación de la membrana.",
+      "reverso": "**Base porosa, embudo** (a veces graduado) y **vacío**. La membrana se coloca **cara arriba** sobre el medio selectivo y diferencial, **sin burbujas debajo**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.1",
+      "etiquetas": [
+        "filtracion"
+      ],
+      "apartado": "5.1",
+      "evidencia": "La membrana se coloca cara arriba sobre el medio selectivo y diferencial, sin burbujas debajo."
+    },
+    {
+      "id": "t13-f67",
+      "anverso": "Filtración: réplicas de 24 y 36 colonias en 100 mL. ¿Resultado? ¿Y si todas las membranas quedan por debajo de 20 (17, 1 y 0 en 100, 10 y 1 mL)?",
+      "reverso": "Réplicas: **media, 30 ufc/100 mL**. Todas por debajo: la **más cercana** al intervalo, **17 ufc/100 mL**.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.3",
+      "etiquetas": [
+        "calculo"
+      ],
+      "apartado": "5.3",
+      "evidencia": [
+        "| Réplicas | 24 y 36 colonias en 100 mL cada una | Media: 30 ufc/100 mL |",
+        "| Todas por debajo | 17, 1 y 0 en 100, 10 y 1 mL | La más cercana: 17 ufc/100 mL |"
+      ]
+    },
+    {
+      "id": "t13-f68",
+      "anverso": "¿Cómo define la guía británica los coliformes? ¿Incluye a E. coli?",
+      "reverso": "Enterobacterias que **crecen a 37 °C** y tienen **β-galactosidasa**; **incluye el género *Escherichia***. Por eso, en el agua, *E. coli* **es un coliforme**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.4",
+      "etiquetas": [
+        "coliformes"
+      ],
+      "apartado": "5.4",
+      "evidencia": "La guía británica define los coliformes como enterobacterias que crecen a 37 °C y tienen β-galactosidasa, e incluye el género Escherichia."
+    },
+    {
+      "id": "t13-f69",
+      "anverso": "Con pocos microorganismos diana entre muchos no diana, ¿filtración o NMP?",
+      "reverso": "El **NMP**: la filtración da **mal resultado con pocas dianas entre muchas no diana**, y el NMP es **más sensible para números muy bajos**.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.6",
+      "etiquetas": [
+        "filtracion",
+        "nmp"
+      ],
+      "apartado": "5.6",
+      "evidencia": "| Mal resultado con pocas dianas entre muchas no diana | Más sensible para números muy bajos |"
+    },
+    {
+      "id": "t13-f70",
+      "anverso": "¿Cómo se eluye una membrana y de qué material es?",
+      "reverso": "**Ultrasonidos** (la más habitual), **agitación** ≥ 2 min, **frotado** en bolsa de Stomacher, **raspado** o **vórtex**. Membranas de **policarbonato o polietersulfona, de 0,2 µm**.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "etiquetas": [
+        "concentracion"
+      ],
+      "apartado": "6.1",
+      "evidencia": [
+        "ultrasonidos, con la membrana cubierta de diluyente en baño ultrasónico; es la más habitual;",
+        "Membranas para eluir: de policarbonato o polietersulfona, de 0,2 µm."
+      ]
+    },
+    {
+      "id": "t13-f71",
+      "anverso": "¿Qué es la separación inmunomagnética y para qué se usa?",
+      "reverso": "**Perlas paramagnéticas recubiertas de un anticuerpo** que capturan al diana; **un imán** las separa. Por ejemplo, ***E. coli* O157:H7** tras enriquecimiento.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "etiquetas": [
+        "concentracion"
+      ],
+      "apartado": "6.1",
+      "evidencia": "Perlas paramagnéticas recubiertas de un anticuerpo que capturan al diana; un imán las separa"
+    },
+    {
+      "id": "t13-f72",
+      "anverso": "¿Qué se detecta si no se concentra la muestra de Legionella?",
+      "reverso": "Sembrando directamente un volumen pequeño (**no más de 0,5 mL**), **solo concentraciones altas**. La concentración debe permitir detectar **al menos 100 ufc/L**, el nivel de alerta británico.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "etiquetas": [
+        "concentracion"
+      ],
+      "apartado": "6.2",
+      "evidencia": "Sin concentrar, sembrando directamente un volumen pequeño (no más de 0,5 mL), solo se detectan concentraciones altas."
+    },
+    {
+      "id": "t13-f73",
+      "anverso": "Legionella: ¿qué tratamientos se dan al concentrado y qué recuento se informa?",
+      "reverso": "Una parte con **ácido** y otra con **calor**, para frenar la flora acompañante; se siembran **tres**: **sin tratar, ácida y calentada**. Se da el recuento de la placa con **más colonias confirmadas**.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.3",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "6.3",
+      "evidencia": "Una parte del concentrado se trata con ácido y otra con calor, para frenar a la flora acompañante, y se siembran las tres: sin tratar, ácida y calentada."
+    },
+    {
+      "id": "t13-f74",
+      "anverso": "ISO 11731: ¿qué variantes tiene y recupera todas las Legionella?",
+      "reverso": "**Siembra directa**, **filtración y membrana directa** sobre el agar, y **filtración y elución**. **No**: no todas las especies son cultivables.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.3",
+      "etiquetas": [
+        "legionella"
+      ],
+      "apartado": "6.3",
+      "evidencia": "No todas las especies de Legionella son cultivables. El método no las recupera todas."
+    },
+    {
+      "id": "t13-f75",
+      "anverso": "¿Por qué las tablas del NMP no tienen todas las combinaciones de tubos?",
+      "reverso": "Porque **omiten las combinaciones improbables**, que hacen **sospechar un error o una contaminación**.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.1",
+      "evidencia": "Las tablas omiten las combinaciones improbables, que hacen sospechar un error o una contaminación."
+    },
+    {
+      "id": "t13-f76",
+      "anverso": "NMP en tubos: ¿con qué concentración de medio va cada volumen y cómo se confirman los positivos?",
+      "reverso": "50 y 10 mL: con **un volumen igual de medio de doble concentración**; 1 mL o menos: **5 mL de medio simple**. Confirmación: **coliformes**, lactosa a 37 °C y **oxidasa negativa**; ***E. coli***, además, lactosa a **44 °C** e **indol**.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4 · apunte §7.2",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.2",
+      "evidencia": [
+        "Los volúmenes de 50 y 10 mL se añaden a un volumen igual de medio de doble concentración.",
+        "Coliformes: lactosa a 37 °C y oxidasa negativa. E. coli: además, lactosa a 44 °C e indol."
+      ]
+    },
+    {
+      "id": "t13-f77",
+      "anverso": "Serie de 15 tubos con 3, 2 y 0 positivos. ¿Qué da la tabla?",
+      "reverso": "**13 por 100 mL**. No se suman los tubos: se busca la combinación en la tabla.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4 · apunte §7.2",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.2",
+      "evidencia": "en la serie de 15 tubos, 3, 2 y 0 positivos → la tabla da 13 por 100 mL."
+    },
+    {
+      "id": "t13-f78",
+      "anverso": "¿Qué series de tubos tabula el manual de la FDA?",
+      "reverso": "Series de **3, 5, 8 o 10 tubos** por dilución, con **tres diluciones decimales** de **0,1, 0,01 y 0,001 g** por tubo.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "etiquetas": [
+        "nmp",
+        "alimentos"
+      ],
+      "apartado": "7.3",
+      "evidencia": "El manual de la FDA tabula series de 3, 5, 8 o 10 tubos por dilución, con tres diluciones decimales de 0,1, 0,01 y 0,001 g de muestra por tubo."
+    },
+    {
+      "id": "t13-f79",
+      "anverso": "Bandeja de 51 pocillos: ¿qué se informa con 0 pocillos positivos? ¿Y con los 51?",
+      "reverso": "0 → **< 1 NMP/100 mL**. 51 → **> 200,5 NMP/100 mL**.",
+      "fuente": "IDEXX, tabla de 51 pocillos · apunte §7.4",
+      "etiquetas": [
+        "nmp"
+      ],
+      "apartado": "7.4",
+      "evidencia": "| NMP/100 mL | < 1 | 1,0 | 5,3 | 11,1 | 12,4 | 25,4 | 30,6 | 45,3 | 78,2 | 200,5 | > 200,5 |"
     }
   ],
   "test": [
@@ -690,6 +1011,622 @@
       "correcta": 0,
       "explicacion": "45 × (1000 ÷ 1000) × (10 ÷ 0,5).",
       "fuente": "SCA, Legionella (2020), Part 2, método A"
+    },
+    {
+      "id": "t13-q34",
+      "pregunta": "La norma UNE-EN ISO 8199, general para las técnicas de cultivo en el agua, excluye:",
+      "opciones": [
+        "Las técnicas que no cultivan, como la PCR",
+        "La filtración por membrana",
+        "El número más probable"
+      ],
+      "correcta": 0,
+      "explicacion": "Describe las técnicas de detección y recuento por cultivo y cómo elegirlas.",
+      "fuente": "Resúmenes oficiales de las ISO (SNV) · apunte §1",
+      "apartado": "1",
+      "evidencia": "Excluye las técnicas que no cultivan, como la PCR."
+    },
+    {
+      "id": "t13-q35",
+      "pregunta": "En los alimentos, la norma general equivalente a la ISO 8199 del agua es la:",
+      "opciones": [
+        "ISO 11731",
+        "ISO 7218",
+        "ISO 9308-2"
+      ],
+      "correcta": 1,
+      "explicacion": "La 11731 es de Legionella; la 9308-2, NMP de coliformes y E. coli.",
+      "fuente": "Resúmenes oficiales de las ISO (SNV) · apunte §1",
+      "apartado": "1",
+      "evidencia": "En los alimentos, el equivalente es la ISO 7218 (2024)."
+    },
+    {
+      "id": "t13-q36",
+      "pregunta": "Una unidad formadora de colonias (ufc) puede ser:",
+      "opciones": [
+        "Siempre una única bacteria",
+        "Solo una espora",
+        "Una célula o un grupo de células que no se separaron al mezclar"
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se habla de ufc y no de bacterias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Puede ser una célula o un grupo de células que no se separaron al mezclar."
+    },
+    {
+      "id": "t13-q37",
+      "pregunta": "El recuento de Legionella se expresa en:",
+      "opciones": [
+        "ufc/L",
+        "ufc/100 mL",
+        "ufc/mL"
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli y coliformes, ufc/100 mL; heterótrofos, ufc/mL.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| NMP en el agua | NMP/100 mL | | Legionella | ufc/L |"
+    },
+    {
+      "id": "t13-q38",
+      "pregunta": "Se diluye una muestra antes de sembrarla para:",
+      "opciones": [
+        "Eliminar los inhibidores del agua",
+        "Que el número de colonias quede dentro del intervalo contable con fiabilidad",
+        "Ahorrar medio de cultivo"
+      ],
+      "correcta": 1,
+      "explicacion": "Diluida, da una placa con 10-300 colonias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Para que el número de colonias quede dentro del intervalo que se puede contar con fiabilidad."
+    },
+    {
+      "id": "t13-q39",
+      "pregunta": "Para poder agitar la muestra invirtiendo el frasco, este debe tener:",
+      "opciones": [
+        "Un tapón de algodón",
+        "Un volumen de 1 litro como mínimo",
+        "Una cámara de aire"
+      ],
+      "correcta": 2,
+      "explicacion": "Se invierte rápidamente varias veces.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Por eso el frasco debe tener una cámara de aire."
+    },
+    {
+      "id": "t13-q40",
+      "pregunta": "Unos tubos de diluyente que vienen esterilizados y llenos no tienen el volumen correcto. Se deben:",
+      "opciones": [
+        "Desechar",
+        "Completar con agua del grifo",
+        "Usar corrigiendo el cálculo de la dilución"
+      ],
+      "correcta": 0,
+      "explicacion": "Pueden perder diluyente al esterilizarlos o guardarlos.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "los que no tengan el volumen correcto se desechan."
+    },
+    {
+      "id": "t13-q41",
+      "pregunta": "Según la EPA, en la filtración por membrana se diluye con:",
+      "opciones": [
+        "Agua destilada sin tamponar, como en la bandeja del NMP",
+        "Agua de dilución tamponada con fosfato",
+        "Alcohol al 70 %"
+      ],
+      "correcta": 1,
+      "explicacion": "En la bandeja del NMP con sustrato definido, en cambio, nunca tampón.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Filtración (EPA) | Agua de dilución tamponada con fosfato |"
+    },
+    {
+      "id": "t13-q42",
+      "pregunta": "Según la ISO 6887-1, para la suspensión inicial de un alimento se pesan como mínimo:",
+      "opciones": [
+        "1 g",
+        "100 g",
+        "10 g"
+      ],
+      "correcta": 2,
+      "explicacion": "x g con 9x mL de diluyente: dilución 1/10.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "se pesan x g de muestra (como mínimo 10 g) y se añaden 9x mL de diluyente: dilución 1/10."
+    },
+    {
+      "id": "t13-q43",
+      "pregunta": "Al tomar 1 mL de la suspensión inicial de un alimento, la pipeta no se introduce en ella más de:",
+      "opciones": [
+        "1 cm",
+        "5 cm",
+        "Hasta el fondo del frasco"
+      ],
+      "correcta": 0,
+      "explicacion": "Se mezcla 5-10 s con agitador.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La pipeta no se mete más de 1 cm en la suspensión."
+    },
+    {
+      "id": "t13-q44",
+      "pregunta": "El diluyente para la suspensión inicial de un alimento se usa:",
+      "opciones": [
+        "Frío, a 4 °C, para frenar su crecimiento",
+        "A temperatura ambiente, para no dañar a los microorganismos con un cambio brusco",
+        "A 45 °C, como el agar"
+      ],
+      "correcta": 1,
+      "explicacion": "A temperatura ambiente.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El diluyente, a temperatura ambiente, para no dañar a los microorganismos con un cambio brusco."
+    },
+    {
+      "id": "t13-q45",
+      "pregunta": "Se cuentan 32 colonias sembrando 1 mL de la dilución 10⁻³. El recuento es:",
+      "opciones": [
+        "3,2 × 10³ ufc/mL",
+        "3,2 × 10⁵ ufc/mL",
+        "3,2 × 10⁴ ufc/mL"
+      ],
+      "correcta": 2,
+      "explicacion": "32 × 1000 = 32 000.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "32 colonias en 1 mL de la dilución 10⁻³ → 32 × 1000 = 32 000 ufc/mL, es decir, 3,2 × 10⁴."
+    },
+    {
+      "id": "t13-q46",
+      "pregunta": "Según la guía británica, los intervalos de confianza de un recuento:",
+      "opciones": [
+        "No se escriben en el informe, porque se tomarían por una afirmación sobre el agua",
+        "Se escriben siempre junto al resultado",
+        "Sustituyen al resultado cuando hay diluciones"
+      ],
+      "correcta": 0,
+      "explicacion": "La variación de la dilución pesa poco frente a la del agua de origen.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Los intervalos de confianza no se escriben en el informe: se tomarían por una afirmación sobre el agua."
+    },
+    {
+      "id": "t13-q47",
+      "pregunta": "En el recuento en placa de un agua tratada, en profundidad, se siembra:",
+      "opciones": [
+        "Una serie de diluciones hasta la 10⁻⁶",
+        "1 mL de la muestra sin diluir",
+        "10 mL de la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Las diluciones son para el agua contaminada.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Agua tratada: se siembra 1 mL de la muestra sin diluir, en profundidad."
+    },
+    {
+      "id": "t13-q48",
+      "pregunta": "Según la ISO 4833-1, una placa con crecimiento invasor que cubre más de un cuarto de su superficie:",
+      "opciones": [
+        "Se cuenta extrapolando a la placa entera",
+        "Se informa como 300 colonias",
+        "Se rechaza"
+      ],
+      "correcta": 2,
+      "explicacion": "Si cubre menos de un cuarto, se cuenta el resto y se extrapola.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "si cubre más de un cuarto, la placa se rechaza."
+    },
+    {
+      "id": "t13-q49",
+      "pregunta": "Para estimar una placa con más de 300 colonias bien separadas con la cuadrícula de Quebec, se cuentan:",
+      "opciones": [
+        "Al menos 5 cuadros grandes elegidos al azar",
+        "Un solo cuadro del centro",
+        "Solo los cuadros con más colonias"
+      ],
+      "correcta": 0,
+      "explicacion": "El resultado es solo una estimación y se dice así.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se cuentan al menos 5 cuadros grandes elegidos al azar;"
+    },
+    {
+      "id": "t13-q50",
+      "pregunta": "Si las placas no se pueden leer al sacarlas de la estufa, se guardan:",
+      "opciones": [
+        "A −20 °C hasta una semana",
+        "A 5 ± 3 °C un máximo de 24 horas, y se atemperan antes de leerlas",
+        "A temperatura ambiente 48 horas"
+      ],
+      "correcta": 1,
+      "explicacion": "La condensación estorba la lectura.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Si no se pueden contar enseguida, las placas se guardan a 5 ± 3 °C un máximo de 24 horas"
+    },
+    {
+      "id": "t13-q51",
+      "pregunta": "Un contador de colonias manual se comprueba:",
+      "opciones": [
+        "Cada día, con una placa estéril",
+        "Solo cuando se compra",
+        "Al menos una vez al año, con una placa de puntos conocidos"
+      ],
+      "correcta": 2,
+      "explicacion": "Por ejemplo, de 25 a 75 puntos.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se comprueban al menos una vez al año con una placa de puntos conocidos (por ejemplo, de 25 a 75);"
+    },
+    {
+      "id": "t13-q52",
+      "pregunta": "Se cuentan 28 colonias sembrando 0,1 mL de la dilución 10⁻³. El recuento es:",
+      "opciones": [
+        "2,8 × 10⁵ ufc/mL",
+        "2,8 × 10⁴ ufc/mL",
+        "2,8 × 10³ ufc/mL"
+      ],
+      "correcta": 0,
+      "explicacion": "28 ÷ 0,1 × 1000 = 280 000. 2,8 × 10⁴ es olvidar el 0,1.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "| 0,1 mL de la 10⁻³ | 28 | 28 ÷ 0,1 × 1000 | 280 000 = 2,8 × 10⁵ ufc/mL |"
+    },
+    {
+      "id": "t13-q53",
+      "pregunta": "En la fórmula N = ΣC ÷ (V × 1,1 × d) de la ISO 7218, «d» es:",
+      "opciones": [
+        "La dilución más alta",
+        "La primera dilución elegida, la menos diluida",
+        "El número de placas contadas"
+      ],
+      "correcta": 1,
+      "explicacion": "ΣC es la suma de colonias de las dos placas; V, el volumen sembrado.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "d: la primera dilución elegida, la menos diluida;"
+    },
+    {
+      "id": "t13-q54",
+      "pregunta": "En un alimento, la placa de la suspensión 10⁻¹ tiene 2 colonias. Según la ISO 7218 se informa:",
+      "opciones": [
+        "20 ufc/g",
+        "< 10 ufc/g",
+        "< 40 ufc/g"
+      ],
+      "correcta": 2,
+      "explicacion": "Con 1 a 3 colonias: menos de 4/d. < 10 sería sin colonias.",
+      "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "| Placa con 1 a 3 colonias | Hay microorganismos, pero menos de 4/d | < 40 ufc/g |"
+    },
+    {
+      "id": "t13-q55",
+      "pregunta": "En la siembra en espiral, el aparato deposita la muestra:",
+      "opciones": [
+        "Con un volumen que disminuye de forma logarítmica del centro al borde",
+        "Mezclada con agar fundido a 45 °C",
+        "En cuatro cuadrantes con un asa"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada sector tiene su volumen calibrado: ahorra diluciones intermedias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §4.5",
+      "apartado": "4.5",
+      "evidencia": "con un volumen que disminuye de forma logarítmica del centro al borde."
+    },
+    {
+      "id": "t13-q56",
+      "pregunta": "Las membranas de 0,2 µm se usan para:",
+      "opciones": [
+        "E. coli y coliformes en agua de consumo",
+        "Legionella, Campylobacter y Vibrio",
+        "Enterococos intestinales"
+      ],
+      "correcta": 1,
+      "explicacion": "Lo habitual es 0,45 µm.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "de 0,2 µm para Legionella, Campylobacter y Vibrio;"
+    },
+    {
+      "id": "t13-q57",
+      "pregunta": "Para filtrar volúmenes grandes, como 500 mL de agua de río, se usan membranas de:",
+      "opciones": [
+        "47 mm de 0,2 µm",
+        "13 mm",
+        "90 o 142 mm"
+      ],
+      "correcta": 2,
+      "explicacion": "La de 47 mm es la habitual para 100 mL.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "de 90 o 142 mm para volúmenes grandes, como 500 mL de agua de río;"
+    },
+    {
+      "id": "t13-q58",
+      "pregunta": "Al filtrar varias muestras y diluciones con el mismo equipo:",
+      "opciones": [
+        "Las contaminadas van aparte o después de las limpias, y de la dilución más alta a la más baja",
+        "Primero las contaminadas, para aprovechar el embudo limpio",
+        "Se empieza por la dilución más baja"
+      ],
+      "correcta": 0,
+      "explicacion": "Para no arrastrar bacterias a las muestras limpias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Las muestras contaminadas se filtran aparte o después de las limpias, y de la dilución más alta a la más baja."
+    },
+    {
+      "id": "t13-q59",
+      "pregunta": "Según su resumen oficial, el método de la ISO 9308-1 es especialmente adecuado para aguas que den:",
+      "opciones": [
+        "Más de 300 colonias",
+        "Menos de 100 colonias en total en el medio",
+        "Más de 80 colonias del diana"
+      ],
+      "correcta": 1,
+      "explicacion": "Las 100 son del total; las 80, del microorganismo diana.",
+      "fuente": "Resúmenes oficiales de las ISO (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "especialmente adecuado para aguas que den menos de 100 colonias en total en el medio"
+    },
+    {
+      "id": "t13-q60",
+      "pregunta": "Dos membranas réplica de 100 mL dan 24 y 36 colonias. El resultado es:",
+      "opciones": [
+        "60 ufc/100 mL",
+        "24 ufc/100 mL",
+        "30 ufc/100 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "Media de las réplicas.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Réplicas | 24 y 36 colonias en 100 mL cada una | Media: 30 ufc/100 mL |"
+    },
+    {
+      "id": "t13-q61",
+      "pregunta": "Todas las membranas quedan por debajo de 20 colonias, y se calcula con una de 18 colonias en 10 mL. Según la EPA:",
+      "opciones": [
+        "Estimado: 180 ufc/100 mL",
+        "18 ufc/100 mL",
+        "< 20 ufc/100 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Se calcula y se da como estimado.",
+      "fuente": "EPA, método 1103.2 (2023) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Todas por debajo, con cálculo | 18 en 10 mL | Estimado: 180 ufc/100 mL |"
+    },
+    {
+      "id": "t13-q62",
+      "pregunta": "Según la guía británica, los coliformes son enterobacterias que crecen a 37 °C y tienen:",
+      "opciones": [
+        "Solo β-glucuronidasa",
+        "β-galactosidasa",
+        "Oxidasa positiva"
+      ],
+      "correcta": 1,
+      "explicacion": "Incluye el género Escherichia; la β-glucuronidasa distingue a E. coli.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "La guía británica define los coliformes como enterobacterias que crecen a 37 °C y tienen β-galactosidasa"
+    },
+    {
+      "id": "t13-q63",
+      "pregunta": "Si hay menos de 10 colonias sospechosas en una membrana:",
+      "opciones": [
+        "No se confirma ninguna",
+        "Se confirma la mitad",
+        "Se suelen confirmar todas"
+      ],
+      "correcta": 2,
+      "explicacion": "En aguas tratadas, tantas como sea posible.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Con menos de 10 colonias sospechosas se suelen confirmar todas."
+    },
+    {
+      "id": "t13-q64",
+      "pregunta": "La filtración por membrana da mal resultado cuando hay:",
+      "opciones": [
+        "Pocas dianas entre muchas no diana",
+        "Agua de consumo tratada",
+        "Un volumen de 100 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "Ahí el NMP es más sensible para números muy bajos.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "| Mal resultado con pocas dianas entre muchas no diana | Más sensible para números muy bajos |"
+    },
+    {
+      "id": "t13-q65",
+      "pregunta": "La forma más habitual de eluir una membrana para concentrar Legionella es:",
+      "opciones": [
+        "El raspado con bisturí",
+        "Los ultrasonidos, con la membrana cubierta de diluyente",
+        "La incineración de la membrana"
+      ],
+      "correcta": 1,
+      "explicacion": "También agitación, frotado en Stomacher, raspado o vórtex.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "ultrasonidos, con la membrana cubierta de diluyente en baño ultrasónico; es la más habitual;"
+    },
+    {
+      "id": "t13-q66",
+      "pregunta": "La separación inmunomagnética concentra el microorganismo diana mediante:",
+      "opciones": [
+        "Centrifugación a 6000 g",
+        "Filtración por membrana de 0,2 µm",
+        "Perlas paramagnéticas recubiertas de un anticuerpo, separadas con un imán"
+      ],
+      "correcta": 2,
+      "explicacion": "Por ejemplo, E. coli O157:H7 tras enriquecimiento.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Perlas paramagnéticas recubiertas de un anticuerpo que capturan al diana; un imán las separa"
+    },
+    {
+      "id": "t13-q67",
+      "pregunta": "Para concentrar por centrifugación un agua que no se puede filtrar se usa:",
+      "opciones": [
+        "6000 g 10 min o 3000 g 30 min, a 15-25 °C",
+        "500 g 1 min a 37 °C",
+        "20 000 g 2 h a 4 °C"
+      ],
+      "correcta": 0,
+      "explicacion": "Se retira el sobrenadante y se resuspende el sedimento.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Centrifugación | 6000 g, 10 min o 3000 g, 30 min, a 15-25 °C."
+    },
+    {
+      "id": "t13-q68",
+      "pregunta": "La concentración para Legionella debe permitir detectar al menos:",
+      "opciones": [
+        "1 ufc por litro",
+        "100 ufc por litro, el nivel de alerta británico",
+        "10 000 ufc por litro"
+      ],
+      "correcta": 1,
+      "explicacion": "Concentrado de 100 a 1000 veces.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "La concentración debe permitir detectar al menos 100 ufc por litro: es el nivel de alerta británico."
+    },
+    {
+      "id": "t13-q69",
+      "pregunta": "Se concentran 500 mL a 10 mL, se siembran 0,1 mL y salen 21 colonias de Legionella. El resultado es:",
+      "opciones": [
+        "2100 ufc/L",
+        "420 ufc/L",
+        "4200 ufc/L"
+      ],
+      "correcta": 2,
+      "explicacion": "21 × (1000 ÷ 500) × (10 ÷ 0,1) = 21 × 2 × 100.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 21 | 500 mL | 10 mL | 0,1 mL | 21 × 2 × 100 | 4200 ufc/L |"
+    },
+    {
+      "id": "t13-q70",
+      "pregunta": "En la ISO 11731 se siembran el concentrado sin tratar, el tratado con ácido y el calentado. Se informa:",
+      "opciones": [
+        "El recuento de la placa con más colonias confirmadas",
+        "La media de las tres placas",
+        "Solo la placa sin tratar"
+      ],
+      "correcta": 0,
+      "explicacion": "Los tratamientos frenan a la flora acompañante.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Se da el recuento de la placa con más colonias confirmadas."
+    },
+    {
+      "id": "t13-q71",
+      "pregunta": "El número más probable cuenta:",
+      "opciones": [
+        "Células vivas y muertas",
+        "Solo microorganismos viables",
+        "Copias de ADN"
+      ],
+      "correcta": 1,
+      "explicacion": "Todo tubo con al menos uno vivo da crecimiento.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Solo cuenta microorganismos viables."
+    },
+    {
+      "id": "t13-q72",
+      "pregunta": "En el NMP en tubos, en la serie de 15 tubos salen 3, 2 y 0 positivos. La tabla da:",
+      "opciones": [
+        "5 por 100 mL",
+        "320 por 100 mL",
+        "13 por 100 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "No se suman los tubos ni se leen como cifras.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "en la serie de 15 tubos, 3, 2 y 0 positivos → la tabla da 13 por 100 mL."
+    },
+    {
+      "id": "t13-q73",
+      "pregunta": "En el NMP en tubos, los volúmenes de 50 y 10 mL de muestra se añaden a:",
+      "opciones": [
+        "Un volumen igual de medio de doble concentración",
+        "5 mL de medio de concentración simple",
+        "Agua destilada estéril"
+      ],
+      "correcta": 0,
+      "explicacion": "Los de 1 mL o menos, a 5 mL de medio simple.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Los volúmenes de 50 y 10 mL se añaden a un volumen igual de medio de doble concentración."
+    },
+    {
+      "id": "t13-q74",
+      "pregunta": "Con 3 tubos por dilución, el resultado 3-1-0 da 43 NMP/g en la tabla de la FDA (inóculos de 0,1, 0,01 y 0,001 g). Si los inóculos fueron de 0,01, 0,001 y 0,0001 g, el resultado es:",
+      "opciones": [
+        "43 NMP/g",
+        "430 NMP/g",
+        "4,3 NMP/g"
+      ],
+      "correcta": 1,
+      "explicacion": "Inóculos 10 veces menores: el NMP de la tabla se multiplica por 10.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "Si los inóculos son 10 veces menores (0,01, 0,001 y 0,0001 g), el NMP de la tabla se multiplica por 10: 430 NMP/g."
+    },
+    {
+      "id": "t13-q75",
+      "pregunta": "En la bandeja de 51 pocillos no hay ningún pocillo positivo. Se informa:",
+      "opciones": [
+        "0 NMP/100 mL",
+        "1,0 NMP/100 mL",
+        "< 1 NMP/100 mL"
+      ],
+      "correcta": 2,
+      "explicacion": "1,0 es con un pocillo positivo; con los 51, > 200,5.",
+      "fuente": "IDEXX, tabla de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "| NMP/100 mL | < 1 | 1,0 | 5,3 | 11,1 | 12,4 | 25,4 | 30,6 | 45,3 | 78,2 | 200,5 | > 200,5 |"
+    },
+    {
+      "id": "t13-q76",
+      "pregunta": "Según su resumen oficial, el NMP de la ISO 9308-2 no sirve para:",
+      "opciones": [
+        "Coliformes en agua de mar",
+        "Aguas con mucha materia en suspensión",
+        "Aguas con mucha flora heterótrofa"
+      ],
+      "correcta": 0,
+      "explicacion": "Sirve para todo tipo de aguas y da un resultado confirmado.",
+      "fuente": "Resúmenes oficiales de las ISO (SNV) · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "no sirve para coliformes en agua de mar;"
+    },
+    {
+      "id": "t13-q77",
+      "pregunta": "El sistema Legiolert para L. pneumophila es:",
+      "opciones": [
+        "El método de referencia de la ISO 11731",
+        "Un NMP en bandeja de 96 pocillos, a 39 °C durante 7 días, que no es el método de referencia",
+        "Una bandeja de 51 pocillos a 37 °C 18-22 h"
+      ],
+      "correcta": 1,
+      "explicacion": "Positivos por color marrón o turbidez; la referencia es el cultivo de la ISO 11731.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §7.5",
+      "apartado": "7.5",
+      "evidencia": "Existe un sistema comercial de NMP para L. pneumophila (Legiolert):"
     }
   ],
   "supuestos": [
@@ -784,6 +1721,170 @@
           "correcta": 2,
           "explicacion": "12 × (1000 ÷ 1000) × (10 ÷ 0,1) = 1200. Las placas, a 36 °C durante 10 días.",
           "fuente": "SCA, Legionella (2020), Part 2, método A"
+        }
+      ]
+    },
+    {
+      "id": "t13-s03",
+      "titulo": "Aerobios mesófilos en una muestra de carne picada",
+      "enunciado": "El laboratorio recibe carne picada para el recuento de aerobios mesófilos (ISO 4833-1, cálculo según la ISO 7218). Se hace la suspensión inicial, diluciones decimales hasta la 10⁻⁴ y se siembra 1 mL de cada una en profundidad. Tras la incubación: la 10⁻³ tiene 210 colonias y la 10⁻⁴, 25; las placas de la 10⁻² son incontables.",
+      "preguntas": [
+        {
+          "id": "t13-s03-q1",
+          "pregunta": "¿Cómo se prepara la suspensión inicial?",
+          "opciones": [
+            "10 g de carne con 90 mL de diluyente, homogeneizados 1-3 minutos",
+            "1 g de carne con 9 mL de diluyente, sin homogeneizar",
+            "10 g de carne con 10 mL de diluyente",
+            "25 g en 1 L de agua del grifo"
+          ],
+          "correcta": 0,
+          "explicacion": "x g con 9x mL: dilución 1/10; por ejemplo, en Stomacher.",
+          "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "se pesan x g de muestra (como mínimo 10 g) y se añaden 9x mL de diluyente: dilución 1/10. Se homogeneiza de 1 a 3 minutos, según el alimento."
+        },
+        {
+          "id": "t13-s03-q2",
+          "pregunta": "Desde que se prepara la suspensión inicial, ¿qué plazos hay?",
+          "opciones": [
+            "2 horas para todo el proceso",
+            "30 minutos como máximo para empezar las diluciones y 45 hasta que el inóculo toca el medio",
+            "24 horas en la nevera antes de diluir",
+            "No hay plazo"
+          ],
+          "correcta": 1,
+          "explicacion": "Plazos de la ISO 6887-1.",
+          "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §3.3",
+          "apartado": "3.3",
+          "evidencia": "desde la suspensión inicial, 30 minutos como máximo para empezar las diluciones y 45 minutos hasta que el inóculo toca el medio."
+        },
+        {
+          "id": "t13-s03-q3",
+          "pregunta": "Con la media ponderada de la ISO 7218, el recuento es:",
+          "opciones": [
+            "2,4 × 10⁵ ufc/g",
+            "2,1 × 10⁴ ufc/g",
+            "2,5 × 10⁵ ufc/g",
+            "2,1 × 10⁵ ufc/g"
+          ],
+          "correcta": 3,
+          "explicacion": "(210 + 25) ÷ (1 × 1,1 × 10⁻³) = 235 ÷ 0,0011 = 213 636 → 2,1 × 10⁵. 2,4 × 10⁵ es olvidar el 1,1.",
+          "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.4",
+          "apartado": "4.4",
+          "evidencia": "ΣC: suma de las colonias de las dos placas, al menos una con 10 colonias o más;"
+        },
+        {
+          "id": "t13-s03-q4",
+          "pregunta": "¿Cómo se redondea y expresa el resultado?",
+          "opciones": [
+            "Con todas las cifras de la calculadora",
+            "A la decena más próxima",
+            "Como «incontable», porque la 10⁻² lo era",
+            "A dos cifras significativas, como un número entre 1,0 y 9,9 por una potencia de 10"
+          ],
+          "correcta": 3,
+          "explicacion": "Si la tercera cifra es 5 o más, la segunda sube.",
+          "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.4",
+          "apartado": "4.4",
+          "evidencia": "Se expresa como un número entre 1,0 y 9,9 por la potencia de 10."
+        },
+        {
+          "id": "t13-s03-q5",
+          "pregunta": "Una de las placas de la 10⁻⁴ tiene un crecimiento invasor que cubre una quinta parte. ¿Qué se hace?",
+          "opciones": [
+            "Contar las colonias del resto y extrapolar a la placa entera",
+            "Rechazarla",
+            "Contarla como 300",
+            "Repetir todo el análisis"
+          ],
+          "correcta": 0,
+          "explicacion": "Menos de un cuarto: se extrapola; más de un cuarto: se rechaza.",
+          "fuente": "ANMAT, vol. III (ISO 4833-1 e ISO 7218) · apunte §4.2",
+          "apartado": "4.2",
+          "evidencia": "si cubre menos de un cuarto de la placa, se cuentan las colonias del resto y se extrapola a la placa entera;"
+        }
+      ]
+    },
+    {
+      "id": "t13-s04",
+      "titulo": "Legionella en el agua de una torre de refrigeración",
+      "enunciado": "Se toma agua de una torre de refrigeración para *Legionella*. Una muestra es clara; otra, tomada después, viene turbia y con restos de aceite. Para la primera se concentran 500 mL hasta 5 mL; del concentrado se siembran 0,2 mL sin tratar, 0,2 mL tratados con ácido y 0,2 mL calentados. Se confirman 12, 20 y 8 colonias, respectivamente.",
+      "preguntas": [
+        {
+          "id": "t13-s04-q1",
+          "pregunta": "¿Qué volumen de muestra es el ideal para concentrar?",
+          "opciones": [
+            "10 mL",
+            "1000 mL",
+            "100 mL",
+            "10 L"
+          ],
+          "correcta": 1,
+          "explicacion": "Y el concentrado final, de 100 a 1000 veces el volumen original.",
+          "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+          "apartado": "6.2",
+          "evidencia": "Volumen ideal de muestra: 1000 mL."
+        },
+        {
+          "id": "t13-s04-q2",
+          "pregunta": "La muestra turbia y con aceite no se puede filtrar. ¿Cómo se concentra?",
+          "opciones": [
+            "Filtrando el doble de volumen",
+            "No se concentra: se siembra 1 L directamente",
+            "Por centrifugación, sabiendo que recupera bastante menos que la filtración",
+            "Por separación inmunomagnética, el método de referencia"
+          ],
+          "correcta": 2,
+          "explicacion": "6000 g 10 min o 3000 g 30 min, a 15-25 °C.",
+          "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+          "apartado": "6.1",
+          "evidencia": "Aguas que no se pueden filtrar: turbias, coloidales, con aceites. Recupera bastante menos que la filtración"
+        },
+        {
+          "id": "t13-s04-q3",
+          "pregunta": "¿Para qué se trata parte del concentrado con ácido y otra con calor?",
+          "opciones": [
+            "Para matar a la Legionella y contar solo las esporas",
+            "Para esterilizar las placas",
+            "Para concentrar más la muestra",
+            "Para frenar a la flora acompañante"
+          ],
+          "correcta": 3,
+          "explicacion": "Se siembran las tres: sin tratar, ácida y calentada.",
+          "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.3",
+          "apartado": "6.3",
+          "evidencia": "Una parte del concentrado se trata con ácido y otra con calor, para frenar a la flora acompañante"
+        },
+        {
+          "id": "t13-s04-q4",
+          "pregunta": "Con la placa que se informa, ¿cuál es el resultado?",
+          "opciones": [
+            "1000 ufc/L",
+            "2000 ufc/L",
+            "600 ufc/L",
+            "40 ufc/L"
+          ],
+          "correcta": 0,
+          "explicacion": "Se informa la placa con más colonias confirmadas (20): 20 × (1000 ÷ 500) × (5 ÷ 0,2) = 20 × 2 × 25 = 1000 ufc/L. 2000 sería sumar las tres placas; 600, usar la sin tratar.",
+          "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2 y §6.3",
+          "apartado": "6.2",
+          "evidencia": "ufc/L = colonias × (1000 ÷ A) × (B ÷ V)"
+        },
+        {
+          "id": "t13-s04-q5",
+          "pregunta": "¿Cómo se incuban y revisan las placas?",
+          "opciones": [
+            "A 37 °C entre 18 y 22 horas",
+            "A 36 ± 1 °C durante 10 días, en atmósfera húmeda, revisándolas cada 2-3 días",
+            "A 39 °C durante 7 días",
+            "A 22 °C durante 68 horas"
+          ],
+          "correcta": 1,
+          "explicacion": "Por ejemplo, los días 3, 7 y 10 (1322 #26).",
+          "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.3",
+          "apartado": "6.3",
+          "evidencia": "revisando las placas cada 2-3 días; por ejemplo, los días 3, 7 y 10."
         }
       ]
     }
