@@ -352,6 +352,143 @@
       "fuente": "Cuestionarios 1246 C2 y 1322 C2",
       "etiquetas": ["trampa", "examen"],
       "nucleo": true
+    },
+    {
+      "id": "t31-f46",
+      "anverso": "Cromatografía de gases: ¿para qué compuestos sirve y qué condición impone a la muestra?",
+      "reverso": "Es **la técnica de los compuestos orgánicos volátiles**: todo lo que entre en la columna tiene que ser **volátil y térmicamente estable**. Un agua no se inyecta: se aísla lo volátil, se extrae con disolvente o se deriva.",
+      "fuente": "Encuadre · apunte §1",
+      "etiquetas": [
+        "fundamento"
+      ],
+      "apartado": "1",
+      "evidencia": "todo lo que entre en la columna tiene que ser volátil y térmicamente estable"
+    },
+    {
+      "id": "t31-f47",
+      "anverso": "¿Por qué el CEM agrupa «columnas y hornos», y dónde quedan el inyector y el detector?",
+      "reverso": "Porque **la columna vive dentro del horno**, que es la pieza que define el aparato. El **inyector y el detector están fuera** y se calientan por su cuenta, a temperaturas distintas.",
+      "fuente": "CEM, QU-005, 4.2 · apunte §2.2",
+      "etiquetas": [
+        "instrumentacion"
+      ],
+      "apartado": "2.2",
+      "evidencia": "la columna vive dentro del horno. El inyector y el detector están fuera y se calientan por su cuenta, a temperaturas distintas."
+    },
+    {
+      "id": "t31-f48",
+      "anverso": "¿Qué decide el gas portador? Dos ejemplos.",
+      "reverso": "A menudo, **las necesidades del detector**. **TCD → helio**, por su alta conductividad térmica. **ECD → nitrógeno**, que es el gas que se ioniza para crear la corriente de fondo.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.3",
+      "etiquetas": [
+        "gas-portador"
+      ],
+      "apartado": "2.3",
+      "evidencia": [
+        "La elección del gas portador a menudo está determinada por las necesidades del detector.",
+        "ECD → nitrógeno, que es el gas que se ioniza para crear la corriente de fondo."
+      ]
+    },
+    {
+      "id": "t31-f49",
+      "anverso": "Inyección splitless: ¿qué riesgo tiene y cómo se contrarresta?",
+      "reverso": "El caudal por el inyector es bajo y hay riesgo de **ensanchamiento**. Se mantiene la columna **20-25 °C por debajo del punto de ebullición del disolvente**: éste **condensa a la entrada** y forma una barrera que **atrapa los solutos**; luego se sube la temperatura.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.4",
+      "etiquetas": [
+        "inyeccion"
+      ],
+      "apartado": "2.4",
+      "evidencia": "manteniendo la columna 20-25 °C por debajo del punto de ebullición del disolvente, de modo que éste condensa a la entrada y forma una barrera que atrapa los solutos"
+    },
+    {
+      "id": "t31-f50",
+      "anverso": "Desorción térmica y enfoque criogénico: ¿qué hacen?",
+      "reverso": "Sirven para sólidos y como refuerzo: se concentran los analitos **enfriando la entrada de la columna por debajo de la temperatura ambiente** y después se libera todo de golpe **calentando**.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.5",
+      "etiquetas": [
+        "muestra"
+      ],
+      "apartado": "2.5",
+      "evidencia": "los analitos se concentran enfriando la entrada de la columna por debajo de la temperatura ambiente y después se libera todo de golpe calentando."
+    },
+    {
+      "id": "t31-f51",
+      "anverso": "Los cuatro criterios para elegir una fase estacionaria, y la regla de polaridad.",
+      "reverso": "Que **no reaccione** con los solutos, que sea **térmicamente estable**, de **volatilidad baja** y con la **polaridad apropiada**. Regla: **no polares con fase no polar; polares con fase polar**.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.7",
+      "etiquetas": [
+        "fases"
+      ],
+      "apartado": "2.7",
+      "evidencia": [
+        "que no reaccione con los solutos, que sea térmicamente estable, que tenga volatilidad baja y que su polaridad sea la apropiada.",
+        "los solutos no polares se separan mejor con fase estacionaria NO polar; los polares, con fase POLAR."
+      ]
+    },
+    {
+      "id": "t31-f52",
+      "anverso": "Polidimetilsiloxano: ¿por qué es la primera elección y cómo se gana polaridad?",
+      "reverso": "Es la **primera elección** para una separación nueva, y con él **el orden de elución sigue los puntos de ebullición** (primero el más volátil). Sustituyendo metilos por **fenilo, trifluoropropilo o cianopropilo** se sube la polaridad y se gana selectividad.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.7",
+      "etiquetas": [
+        "fases"
+      ],
+      "apartado": "2.7",
+      "evidencia": "El polidimetilsiloxano es la primera elección para una separación nueva, y con él el orden de elución sigue los puntos de ebullición: primero el más volátil."
+    },
+    {
+      "id": "t31-f53",
+      "anverso": "¿Cómo detecta el espectrómetro de masas que un pico esconde dos compuestos?",
+      "reverso": "Evaluando la **pureza del pico**: si el espectro **al principio** del pico no es igual que el del **final**, hay **dos compuestos coeluyendo**.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "etiquetas": [
+        "detectores"
+      ],
+      "apartado": "2.9",
+      "evidencia": "si el espectro al principio del pico no es igual que el del final, hay dos compuestos coeluyendo."
+    },
+    {
+      "id": "t31-f54",
+      "anverso": "El índice de retención de Kovats: qué es y por qué sirve.",
+      "reverso": "Se define el índice de un **n-alcano** como **100 veces su número de carbonos** (butano 400, pentano 500) y se **interpola logarítmicamente** el del compuesto entre los dos alcanos que lo flanquean. A diferencia del tiempo de retención, es **razonablemente constante entre columnas e instrumentos**.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.10",
+      "etiquetas": [
+        "identificacion"
+      ],
+      "apartado": "2.10",
+      "evidencia": [
+        "se define el índice de un n-alcano como 100 veces su número de carbonos —butano 400, pentano 500—",
+        "El índice sí es razonablemente constante entre columnas e instrumentos."
+      ]
+    },
+    {
+      "id": "t31-f55",
+      "anverso": "Epiclorhidrina y acrilamida en el RD 3/2023.",
+      "reverso": "Las dos, **0,10 µg/L**, con incertidumbre máxima del **30 %**.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.11",
+      "etiquetas": [
+        "agua"
+      ],
+      "apartado": "2.11",
+      "evidencia": [
+        "| Epiclorhidrina | 0,10 µg/L | 30 % |",
+        "| Acrilamida | 0,10 µg/L | 30 % |"
+      ]
+    },
+    {
+      "id": "t31-f56",
+      "anverso": "Normas de cromatografía de gases para plaguicidas organonitrogenados y organofosforados, para plaguicidas por SPME y para HAP.",
+      "reverso": "**ISO 10695:2000** (organonitrogenados y organofosforados); **ISO 27108:2010** (plaguicidas y biocidas, por **SPME**); **ISO 28540:2011** (16 HAP por GC-MS; en consumo suele preferirse HPLC-fluorescencia, tema 32).",
+      "fuente": "Catálogo ISO · apunte §2.11",
+      "etiquetas": [
+        "agua",
+        "normas"
+      ],
+      "apartado": "2.11",
+      "evidencia": [
+        "| Organonitrogenados y organofosforados | ISO 10695:2000 | — |",
+        "| Plaguicidas y biocidas | ISO 27108:2010 | SPME |"
+      ]
     }
   ],
   "test": [
@@ -660,6 +797,619 @@
       "explicacion": "Además, para los prohibidos el límite de detección debe ser siempre inferior a 0,03 µg/L, y al detectarlos hay que avisar inmediatamente a la autoridad sanitaria y a la Confederación Hidrográfica. Los 0,50 µg/L son el valor del sumatorio ∑n de plaguicidas totales, que sí existe.",
       "fuente": "RD 3/2023, anexo I, parte B, tabla 2, notas 8, 9 y 16",
       "nucleo": true
+    },
+    {
+      "id": "t31-q27",
+      "pregunta": "Para que una muestra pueda analizarse por cromatografía de gases, todo lo que entre en la columna debe ser:",
+      "opciones": [
+        "Volátil y térmicamente estable",
+        "Iónico y soluble en agua",
+        "Fluorescente"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo no volátil se extrae o se deriva.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "todo lo que entre en la columna tiene que ser volátil y térmicamente estable"
+    },
+    {
+      "id": "t31-q28",
+      "pregunta": "En un laboratorio de aguas, la cromatografía de gases es la técnica de:",
+      "opciones": [
+        "Los aniones y cationes mayoritarios",
+        "Los trihalometanos, los compuestos orgánicos volátiles y los plaguicidas organoclorados y organofosforados",
+        "Los metales pesados"
+      ],
+      "correcta": 1,
+      "explicacion": "Aniones y cationes: cromatografía iónica; metales: ICP-MS o absorción atómica.",
+      "fuente": "Encuadre · apunte §1",
+      "apartado": "1",
+      "evidencia": "En un laboratorio de aguas es la técnica de los trihalometanos y demás subproductos de la desinfección, de los compuestos orgánicos volátiles y de los plaguicidas organoclorados y organofosforados."
+    },
+    {
+      "id": "t31-q29",
+      "pregunta": "En un cromatograma, el tiempo de retención y el área del pico sirven, respectivamente, para:",
+      "opciones": [
+        "Cuantificar e identificar",
+        "Separar y detectar",
+        "Identificar y cuantificar"
+      ],
+      "correcta": 2,
+      "explicacion": "La separación la hace la columna.",
+      "fuente": "Tema 30 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El tiempo de retención identifica y el área del pico cuantifica."
+    },
+    {
+      "id": "t31-q30",
+      "pregunta": "¿Cuántos componentes principales enumera el CEM para un cromatógrafo de gases?",
+      "opciones": [
+        "Cinco",
+        "Seis",
+        "Cuatro"
+      ],
+      "correcta": 0,
+      "explicacion": "En líquidos son seis, por el tratamiento de disolventes.",
+      "fuente": "CEM, QU-005, 4.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son CINCO, no seis. En el cromatógrafo de líquidos el CEM enumera seis porque allí hay un bloque entero de tratamiento de disolventes"
+    },
+    {
+      "id": "t31-q31",
+      "pregunta": "En un cromatógrafo de gases, el inyector y el detector:",
+      "opciones": [
+        "Están dentro del horno, con la columna",
+        "Están fuera del horno y se calientan por su cuenta",
+        "Trabajan a temperatura ambiente"
+      ],
+      "correcta": 1,
+      "explicacion": "La columna es la que vive dentro del horno.",
+      "fuente": "CEM, QU-005, 4.2 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El inyector y el detector están fuera y se calientan por su cuenta, a temperaturas distintas."
+    },
+    {
+      "id": "t31-q32",
+      "pregunta": "Según el CEM, ¿cuál de estos gases es admisible como gas portador?",
+      "opciones": [
+        "El oxígeno",
+        "El aire comprimido",
+        "El dióxido de carbono"
+      ],
+      "correcta": 2,
+      "explicacion": "Admite helio, argón, nitrógeno, dióxido de carbono e hidrógeno.",
+      "fuente": "CEM, QU-005 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "gases químicamente inertes como helio, argón, nitrógeno, dióxido de carbono e hidrógeno"
+    },
+    {
+      "id": "t31-q33",
+      "pregunta": "La elección del gas portador la determinan a menudo:",
+      "opciones": [
+        "Las necesidades del detector",
+        "El tipo de agua analizada",
+        "El caudal de la bomba"
+      ],
+      "correcta": 0,
+      "explicacion": "TCD con helio; ECD con nitrógeno.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La elección del gas portador a menudo está determinada por las necesidades del detector."
+    },
+    {
+      "id": "t31-q34",
+      "pregunta": "Con un detector de captura de electrones, el gas portador típico es:",
+      "opciones": [
+        "Helio",
+        "Nitrógeno",
+        "Hidrógeno"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el gas que se ioniza para crear la corriente de fondo.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "ECD → nitrógeno, que es el gas que se ioniza para crear la corriente de fondo."
+    },
+    {
+      "id": "t31-q35",
+      "pregunta": "Un soluto no volátil inyectado en un cromatógrafo de gases:",
+      "opciones": [
+        "Sale con el pico del disolvente",
+        "Sale el primero del cromatograma",
+        "Se condensa en la cabeza de la columna y la degrada"
+      ],
+      "correcta": 2,
+      "explicacion": "Los poco volátiles siguen eluyendo en análisis siguientes.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "uno no volátil se condensa en la cabeza de la columna y la degrada."
+    },
+    {
+      "id": "t31-q36",
+      "pregunta": "En la inyección splitless, la columna se mantiene al principio:",
+      "opciones": [
+        "20-25 °C por debajo del punto de ebullición del disolvente",
+        "50 °C por encima del punto de ebullición del soluto menos volátil",
+        "A la temperatura máxima de la fase estacionaria"
+      ],
+      "correcta": 0,
+      "explicacion": "El disolvente condensa y atrapa los solutos.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "20-25 °C por debajo del punto de ebullición del disolvente"
+    },
+    {
+      "id": "t31-q37",
+      "pregunta": "La inyección en columna (on-column), sin calentar, se reserva para:",
+      "opciones": [
+        "Muestras muy concentradas",
+        "Muestras que se descomponen con el calor del inyector",
+        "Columnas empaquetadas de 6 m"
+      ],
+      "correcta": 1,
+      "explicacion": "Después se sube la temperatura.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Directamente en la columna, sin calentar; después se sube la temperatura | Muestras que se descomponen con el calor del inyector |"
+    },
+    {
+      "id": "t31-q38",
+      "pregunta": "En la purga y trampa, los volátiles quedan retenidos en una trampa con un adsorbente, típicamente:",
+      "opciones": [
+        "Tierra de diatomeas",
+        "Resina de intercambio iónico",
+        "Tenax"
+      ],
+      "correcta": 2,
+      "explicacion": "Luego se calienta y se lava a contracorriente.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "hasta una trampa con un material adsorbente, típicamente Tenax, donde quedan retenidos."
+    },
+    {
+      "id": "t31-q39",
+      "pregunta": "La norma cuyo título nombra expresamente la «purga y trampa y desorción térmica» es:",
+      "opciones": [
+        "UNE-EN ISO 15680",
+        "UNE-EN ISO 10301",
+        "ISO 6468"
+      ],
+      "correcta": 0,
+      "explicacion": "Aromáticos monocíclicos, naftaleno y clorados.",
+      "fuente": "UNE-EN ISO 15680:2004 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Norma: UNE-EN ISO 15680:2004, cuyo título nombra expresamente «purga y trampa y desorción térmica»."
+    },
+    {
+      "id": "t31-q40",
+      "pregunta": "Los ácidos haloacéticos, que no son volátiles, se determinan por cromatografía de gases tras:",
+      "opciones": [
+        "Purga y trampa",
+        "Derivatización",
+        "Espacio de cabeza"
+      ],
+      "correcta": 1,
+      "explicacion": "Igual que los herbicidas fenoxialcanoicos.",
+      "fuente": "ISO 23631 e ISO 15913 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Es lo que exigen los ácidos haloacéticos (ISO 23631) y los herbicidas fenoxialcanoicos (ISO 15913)."
+    },
+    {
+      "id": "t31-q41",
+      "pregunta": "Los insecticidas organoclorados, los PCB y los clorobencenos se preparan, según la ISO 6468, por:",
+      "opciones": [
+        "Purga y trampa",
+        "Derivatización",
+        "Extracción líquido-líquido"
+      ],
+      "correcta": 2,
+      "explicacion": "Y se miden con detector ECD.",
+      "fuente": "ISO 6468 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "es lo que hace la ISO 6468 con los insecticidas organoclorados, los PCB y los clorobencenos"
+    },
+    {
+      "id": "t31-q42",
+      "pregunta": "El enfoque criogénico concentra los analitos:",
+      "opciones": [
+        "Enfriando la entrada de la columna por debajo de la temperatura ambiente",
+        "Congelando la muestra de agua",
+        "Calentando la trampa a contracorriente"
+      ],
+      "correcta": 0,
+      "explicacion": "Después se libera todo de golpe calentando.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "los analitos se concentran enfriando la entrada de la columna por debajo de la temperatura ambiente"
+    },
+    {
+      "id": "t31-q43",
+      "pregunta": "El espacio de cabeza, frente a la purga y trampa:",
+      "opciones": [
+        "Concentra mucho más",
+        "No arrastra espuma ni agua, pero concentra mucho menos",
+        "Burbujea el gas a través del agua"
+      ],
+      "correcta": 1,
+      "explicacion": "Aquí no se toca el agua.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Es más simple y no arrastra espuma ni agua, pero concentra mucho menos."
+    },
+    {
+      "id": "t31-q44",
+      "pregunta": "La longitud típica de una columna capilar es de:",
+      "opciones": [
+        "2 a 6 m",
+        "0,5 a 1 m",
+        "15 a 100 m"
+      ],
+      "correcta": 2,
+      "explicacion": "2 a 6 m es la empaquetada.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Longitud | 2 a 6 m | 15 a 100 m |"
+    },
+    {
+      "id": "t31-q45",
+      "pregunta": "Las columnas capilares se fabrican de:",
+      "opciones": [
+        "Sílice fundida con recubrimiento polimérico protector",
+        "Cobre",
+        "Acero inoxidable relleno de diatomeas"
+      ],
+      "correcta": 0,
+      "explicacion": "Vidrio, acero, cobre o aluminio son las empaquetadas.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Material | Vidrio, acero inoxidable, cobre o aluminio | Sílice fundida con recubrimiento polimérico protector |"
+    },
+    {
+      "id": "t31-q46",
+      "pregunta": "Una columna capilar SCOT es:",
+      "opciones": [
+        "Una columna rellena de tierra de diatomeas",
+        "Una PLOT que además lleva fase estacionaria líquida sobre el soporte poroso",
+        "Una columna sin fase estacionaria"
+      ],
+      "correcta": 1,
+      "explicacion": "WCOT: solo película líquida en la pared.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| SCOT (support-coated open tubular) | Una PLOT que además lleva fase estacionaria líquida sobre el soporte poroso |"
+    },
+    {
+      "id": "t31-q47",
+      "pregunta": "En cromatografía gas-líquido, los grupos silanol del soporte de diatomeas se desactivan con:",
+      "opciones": [
+        "Ácido nítrico",
+        "Helio caliente",
+        "Dimetildiclorosilano"
+      ],
+      "correcta": 2,
+      "explicacion": "En gas-sólido, en cambio, sirven para adsorber.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "se desactivan haciéndolos reaccionar con dimetildiclorosilano antes de recubrir con la fase estacionaria."
+    },
+    {
+      "id": "t31-q48",
+      "pregunta": "Para separar solutos polares conviene una fase estacionaria:",
+      "opciones": [
+        "Polar",
+        "No polar",
+        "Siempre polidimetilsiloxano"
+      ],
+      "correcta": 0,
+      "explicacion": "Los no polares, con fase no polar.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "los solutos no polares se separan mejor con fase estacionaria NO polar; los polares, con fase POLAR."
+    },
+    {
+      "id": "t31-q49",
+      "pregunta": "Con una fase de polidimetilsiloxano, el orden de elución sigue:",
+      "opciones": [
+        "La polaridad: primero el más polar",
+        "Los puntos de ebullición: primero el más volátil",
+        "La masa: primero el más pesado"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la primera elección para una separación nueva.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "con él el orden de elución sigue los puntos de ebullición: primero el más volátil."
+    },
+    {
+      "id": "t31-q50",
+      "pregunta": "La fase estacionaria polar de nombre comercial Carbowax es:",
+      "opciones": [
+        "Polidimetilsiloxano",
+        "Fenilmetil polisiloxano",
+        "Polietilenglicol"
+      ],
+      "correcta": 2,
+      "explicacion": "SE-30 es el polidimetilsiloxano; OV-17, el fenilmetil.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Polietilenglicol | Polar | Carbowax | 225 °C |"
+    },
+    {
+      "id": "t31-q51",
+      "pregunta": "En modo isotermo, el problema es que la temperatura que separa bien los compuestos volátiles:",
+      "opciones": [
+        "Deja tiempos de retención inaceptables para los poco volátiles",
+        "Destruye la columna",
+        "Impide detectar los volátiles"
+      ],
+      "correcta": 0,
+      "explicacion": "La solución es la programación de temperatura.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "La temperatura que separa bien lo volátil deja tiempos de retención inaceptables para lo poco volátil"
+    },
+    {
+      "id": "t31-q52",
+      "pregunta": "Actualmente se conoce como detector universal al:",
+      "opciones": [
+        "ECD o detector de captura electrónica",
+        "Detector selectivo de masas o MSD",
+        "Detector de conductividad"
+      ],
+      "correcta": 1,
+      "explicacion": "En barrido de iones totales da detección universal (duda 3, resuelta por la plantilla).",
+      "fuente": "1233 · primera prueba #11 · LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · primera prueba",
+        "texto": "Actualmente se conoce como detector universal al:"
+      },
+      "apartado": "2.9",
+      "evidencia": "Universal en barrido de iones totales; selectivo en monitorización de iones seleccionados (SIM)"
+    },
+    {
+      "id": "t31-q53",
+      "pregunta": "El detector de captura de electrones es insensible a:",
+      "opciones": [
+        "Compuestos halogenados",
+        "Grupos nitro",
+        "Aminas, alcoholes e hidrocarburos"
+      ],
+      "correcta": 2,
+      "explicacion": "Es selectivo hacia grupos electronegativos.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "Insensible a aminas, alcoholes e hidrocarburos"
+    },
+    {
+      "id": "t31-q54",
+      "pregunta": "Con un espectrómetro de masas, se sabe que dos compuestos coeluyen en un pico cuando:",
+      "opciones": [
+        "El espectro al principio del pico no es igual que el del final",
+        "El pico es más alto de lo esperado",
+        "El tiempo de retención coincide con el de un patrón"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la evaluación de la pureza del pico.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "si el espectro al principio del pico no es igual que el del final, hay dos compuestos coeluyendo."
+    },
+    {
+      "id": "t31-q55",
+      "pregunta": "El detector fotométrico de llama es selectivo para compuestos con:",
+      "opciones": [
+        "Halógenos",
+        "Fósforo y azufre",
+        "Grupos nitro"
+      ],
+      "correcta": 1,
+      "explicacion": "Los halógenos son del ECD.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "el fotométrico de llama es selectivo para fósforo y azufre"
+    },
+    {
+      "id": "t31-q56",
+      "pregunta": "Los detectores termoiónico (TID) y de nitrógeno-fósforo (NPD) interesan en aguas para:",
+      "opciones": [
+        "Los trihalometanos",
+        "Los metales",
+        "Los plaguicidas organofosforados"
+      ],
+      "correcta": 2,
+      "explicacion": "Responden a compuestos con nitrógeno o fósforo.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "responden a compuestos con nitrógeno o fósforo —de ahí su interés para plaguicidas organofosforados—"
+    },
+    {
+      "id": "t31-q57",
+      "pregunta": "El rango lineal del detector FID, frente al del ECD, es:",
+      "opciones": [
+        "Mucho más amplio: 10⁶-10⁷ frente a unos 2 órdenes",
+        "Más estrecho",
+        "Igual"
+      ],
+      "correcta": 0,
+      "explicacion": "Órdenes de magnitud de LibreTexts.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| Rango lineal | 10⁴-10⁵ | 10⁶-10⁷ | Solo ~2 órdenes | 10⁵ |"
+    },
+    {
+      "id": "t31-q58",
+      "pregunta": "Según el CEM, para cuantificar en cromatografía de gases:",
+      "opciones": [
+        "Solo puede usarse la altura",
+        "Pueden usarse el área o la altura, aunque en general es más fiable el área",
+        "Es siempre más fiable la altura"
+      ],
+      "correcta": 1,
+      "explicacion": "La decisión la toma el usuario en la puesta a punto.",
+      "fuente": "CEM, QU-005 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "pueden utilizarse ambos, aunque en general es más fiable el área"
+    },
+    {
+      "id": "t31-q59",
+      "pregunta": "En el índice de retención de Kovats, el n-pentano tiene un índice de:",
+      "opciones": [
+        "5",
+        "50",
+        "500"
+      ],
+      "correcta": 2,
+      "explicacion": "100 veces su número de carbonos.",
+      "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "se define el índice de un n-alcano como 100 veces su número de carbonos —butano 400, pentano 500—"
+    },
+    {
+      "id": "t31-q60",
+      "pregunta": "El patrón interno compensa las fluctuaciones de señal debidas a:",
+      "opciones": [
+        "El volumen inyectado, la temperatura o el inyector",
+        "La pureza del material de referencia",
+        "La toma de muestra"
+      ],
+      "correcta": 0,
+      "explicacion": "Se añade a muestras y patrones.",
+      "fuente": "CEM, QU-005 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "para compensar las fluctuaciones de señal debidas a el volumen inyectado, la temperatura, el inyector"
+    },
+    {
+      "id": "t31-q61",
+      "pregunta": "El valor paramétrico del benceno en el agua de consumo es:",
+      "opciones": [
+        "10 µg/L",
+        "1,0 µg/L",
+        "0,10 µg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "10 µg/L es el ∑2 tricloro + tetracloroeteno.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "| 1,2-Dicloroetano | 3,0 µg/L | 40 % | | Benceno | 1,0 µg/L | 40 % |"
+    },
+    {
+      "id": "t31-q62",
+      "pregunta": "El valor paramétrico de los ∑5 ácidos haloacéticos es:",
+      "opciones": [
+        "100 µg/L",
+        "10 µg/L",
+        "60 µg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "100 µg/L es el de los ∑4 THM.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "| ∑5 Ácidos haloacéticos (HAA) | 60 µg/L | 50 % |"
+    },
+    {
+      "id": "t31-q63",
+      "pregunta": "Si se detecta un plaguicida prohibido o no autorizado, hay que avisar inmediatamente a:",
+      "opciones": [
+        "La autoridad sanitaria y la Confederación Hidrográfica",
+        "Solo al operador",
+        "Solo a la entidad de acreditación"
+      ],
+      "correcta": 0,
+      "explicacion": "Su valor debe estar por debajo de 0,03 µg/L.",
+      "fuente": "RD 3/2023, anexo I, parte B · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "al detectarlo hay que avisar inmediatamente a la autoridad sanitaria y a la Confederación Hidrográfica"
+    },
+    {
+      "id": "t31-q64",
+      "pregunta": "Para el análisis de trihalometanos en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía iónica de aniones",
+        "Cromatografía de gases con purga y trampa y detección electrónica",
+        "Cromatografía de líquidos con detector de fluorescencia"
+      ],
+      "correcta": 1,
+      "explicacion": "Documentada en 1233 C2 #5 y 1322 C2 #23.",
+      "fuente": "1322 · segundo ejercicio #23 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Trihalometanos"
+      },
+      "apartado": "3",
+      "evidencia": "| ∑4 Trihalometanos (cloroformo, bromoformo, bromodiclorometano, dibromoclorometano) | Cromatografía de gases con PURGA Y TRAMPA y detector ECD |"
+    },
+    {
+      "id": "t31-q65",
+      "pregunta": "Para el análisis de aldrín, dieldrín y heptacloro en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía iónica de aniones",
+        "Espectrofotometría UV-visible",
+        "Cromatografía de gases con espectrometría de masas"
+      ],
+      "correcta": 2,
+      "explicacion": "Son organoclorados: también valdría ECD.",
+      "fuente": "1322 · segundo ejercicio #28 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Aldrin, Dieldrin y Heptacloro"
+      },
+      "apartado": "3",
+      "evidencia": "| Aldrín, dieldrín y heptacloro | CG con espectrometría de masas | ISO 6468 | µg/L |"
+    },
+    {
+      "id": "t31-q66",
+      "pregunta": "Para el análisis de la oxidabilidad de un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía de gases",
+        "Permanganimetría",
+        "Cromatografía iónica"
+      ],
+      "correcta": 1,
+      "explicacion": "La cromatografía de gases se ofreció como distractor (tema 33).",
+      "fuente": "1322 · segundo ejercicio #22 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Oxidabilidad"
+      },
+      "apartado": "3",
+      "evidencia": "| Oxidabilidad, DQO, sólidos en suspensión | NO es cromatografía: permanganimetría, dicromato, gravimetría |"
+    },
+    {
+      "id": "t31-q67",
+      "pregunta": "Para el análisis de plomo en un agua, la técnica indicada es:",
+      "opciones": [
+        "Cromatografía de gases con detector selectivo",
+        "Plasma con espectrometría de masas (ICP-MS)",
+        "Cromatografía iónica de cationes"
+      ],
+      "correcta": 1,
+      "explicacion": "Los metales no son cromatografía de gases.",
+      "fuente": "1233 · segunda prueba #1 · apunte §3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1233 · segunda prueba",
+        "texto": "Análisis de Plomo"
+      },
+      "apartado": "3",
+      "evidencia": "| Metales | NO es cromatografía de gases: ICP-MS o absorción atómica | Temas 26 y 27 |"
+    },
+    {
+      "id": "t31-q68",
+      "pregunta": "Los compuestos no volátiles o termolábiles, como los HAP o los plaguicidas polares, se determinan por:",
+      "opciones": [
+        "HPLC",
+        "Cromatografía de gases",
+        "Cromatografía iónica"
+      ],
+      "correcta": 0,
+      "explicacion": "Tema 32.",
+      "fuente": "Tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Compuestos NO volátiles o termolábiles | NO es cromatografía de gases: HPLC | Tema 32 |"
     }
   ],
   "supuestos": [
@@ -804,6 +1554,176 @@
           "correcta": 1,
           "explicacion": "Es una nota expresa del apartado 5.2.2, y contrasta con la regla general, que sí manda atemperar el material de referencia. Las diluciones, además, se preparan justo antes de la calibración, no con antelación.",
           "fuente": "CEM, QU-005, apartado 5.2.2"
+        }
+      ]
+    },
+    {
+      "id": "t31-s03",
+      "titulo": "Supuesto 3. Plaguicidas en un agua subterránea agrícola",
+      "enunciado": "En un pozo de una zona agrícola hay que controlar plaguicidas organoclorados y organofosforados. Todos los plaguicidas buscados han estado autorizados el año anterior.",
+      "preguntas": [
+        {
+          "id": "t31-s03-q1",
+          "pregunta": "¿Cómo prepara la muestra para los organoclorados según la ISO 6468?",
+          "opciones": [
+            "Extracción líquido-líquido",
+            "Purga y trampa",
+            "Espacio de cabeza",
+            "Derivatización"
+          ],
+          "correcta": 0,
+          "explicacion": "No son volátiles, pero sí extraíbles.",
+          "fuente": "ISO 6468 · apunte §2.5",
+          "apartado": "2.5",
+          "evidencia": "Para lo que no es volátil pero sí extraíble: es lo que hace la ISO 6468"
+        },
+        {
+          "id": "t31-s03-q2",
+          "pregunta": "Para los organofosforados, ¿qué detector selectivo puede usar además del MSD?",
+          "opciones": [
+            "TCD",
+            "Detector de conductividad",
+            "NPD (nitrógeno-fósforo) o TID",
+            "Detector de índice de refracción"
+          ],
+          "correcta": 2,
+          "explicacion": "Responden a compuestos con nitrógeno o fósforo.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "responden a compuestos con nitrógeno o fósforo —de ahí su interés para plaguicidas organofosforados—"
+        },
+        {
+          "id": "t31-s03-q3",
+          "pregunta": "Detecta tres plaguicidas: 0,08, 0,15 y 0,12 µg/L. ¿Qué valores se superan?",
+          "opciones": [
+            "Ninguno: solo cuenta la suma",
+            "Dos superan el valor individual de 0,10 µg/L; la suma, 0,35 µg/L, no supera 0,50 µg/L",
+            "Los tres superan el valor individual",
+            "La suma supera 0,50 µg/L"
+          ],
+          "correcta": 1,
+          "explicacion": "0,15 y 0,12 > 0,10; 0,08 + 0,15 + 0,12 = 0,35.",
+          "fuente": "RD 3/2023, anexo I, parte B · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": [
+            "| Plaguicida individual | 0,10 µg/L | 30 % |",
+            "| ∑n Plaguicidas totales | 0,50 µg/L | 30 % |"
+          ]
+        },
+        {
+          "id": "t31-s03-q4",
+          "pregunta": "¿Qué incertidumbre máxima admite el RD 3/2023 para un plaguicida individual?",
+          "opciones": [
+            "40 %",
+            "50 %",
+            "15 %",
+            "30 %"
+          ],
+          "correcta": 3,
+          "explicacion": "La misma para el sumatorio.",
+          "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| Plaguicida individual | 0,10 µg/L | 30 % |"
+        },
+        {
+          "id": "t31-s03-q5",
+          "pregunta": "Aparece un pico que no estaba previsto. ¿Cómo lo identifica?",
+          "opciones": [
+            "Con su espectro de masas, interpretándolo o buscándolo en una biblioteca de espectros",
+            "Con su área",
+            "Con su altura",
+            "No es posible identificarlo"
+          ],
+          "correcta": 0,
+          "explicacion": "Solo el espectro dice qué es algo desconocido.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "así que se puede interpretar o buscar contra una biblioteca de espectros"
+        }
+      ]
+    },
+    {
+      "id": "t31-s04",
+      "titulo": "Supuesto 4. Benceno en agua de consumo con detector FID",
+      "enunciado": "Hay que determinar benceno en un agua de consumo. El laboratorio dispone de un cromatógrafo de gases con detector FID y muestreador de espacio de cabeza.",
+      "preguntas": [
+        {
+          "id": "t31-s04-q1",
+          "pregunta": "¿Qué norma cubre el benceno por espacio de cabeza?",
+          "opciones": [
+            "ISO 6468",
+            "UNE-EN ISO 10304-1",
+            "ISO 11423-1",
+            "ISO 23631"
+          ],
+          "correcta": 2,
+          "explicacion": "La parte 2 es por extracción.",
+          "fuente": "ISO 11423-1 · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| Benceno y derivados | ISO 11423-1 / -2 | Espacio de cabeza / extracción |"
+        },
+        {
+          "id": "t31-s04-q2",
+          "pregunta": "¿Qué incertidumbre máxima admite el RD 3/2023 para el benceno?",
+          "opciones": [
+            "40 %",
+            "30 %",
+            "15 %",
+            "50 %"
+          ],
+          "correcta": 0,
+          "explicacion": "Con valor paramétrico de 1,0 µg/L.",
+          "fuente": "RD 3/2023, anexo III, tabla 15 · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "| 1,2-Dicloroetano | 3,0 µg/L | 40 % | | Benceno | 1,0 µg/L | 40 % |"
+        },
+        {
+          "id": "t31-s04-q3",
+          "pregunta": "Con un valor paramétrico de 1,0 µg/L, ¿qué límite de cuantificación máximo exige el RD 3/2023?",
+          "opciones": [
+            "1,0 µg/L",
+            "0,30 µg/L",
+            "0,10 µg/L",
+            "0,03 µg/L"
+          ],
+          "correcta": 1,
+          "explicacion": "LC ≤ 30 % del valor paramétrico.",
+          "fuente": "RD 3/2023, anexo III, parte D · apunte §2.11",
+          "apartado": "2.11",
+          "evidencia": "Y el RD no impone método: exige LC ≤ 30 % del valor paramétrico"
+        },
+        {
+          "id": "t31-s04-q4",
+          "pregunta": "Quiere usar patrón interno. ¿Qué sustancia es adecuada?",
+          "opciones": [
+            "El propio benceno",
+            "Cualquier compuesto presente en el agua",
+            "Una que dé señal en el ensayo y no esté presente ni en las muestras ni en los materiales de referencia",
+            "Agua ultrapura"
+          ],
+          "correcta": 2,
+          "explicacion": "Además, en cantidad conocida y repetible.",
+          "fuente": "CEM, QU-005 · apunte §2.10",
+          "apartado": "2.10",
+          "evidencia": [
+            "Debe dar señal en las condiciones cromatográficas del ensayo.",
+            "No debe estar presente ni en los materiales de referencia ni en las muestras."
+          ]
+        },
+        {
+          "id": "t31-s04-q5",
+          "pregunta": "Como el FID no da espectro, ¿cómo confirma que el pico es benceno?",
+          "opciones": [
+            "Por la altura del pico",
+            "Por el color de la llama",
+            "No se puede confirmar con FID",
+            "Comparando su tiempo de retención con un patrón, o añadiendo benceno a la muestra y viendo si crece el pico"
+          ],
+          "correcta": 3,
+          "explicacion": "Con un detector no espectroscópico hay que recurrir a eso.",
+          "fuente": "LibreTexts, Análisis Instrumental, cap. 27 · apunte §2.9",
+          "apartado": "2.9",
+          "evidencia": "para identificar hay que comparar tiempos de retención con un patrón o añadir el compuesto sospechoso a la muestra y ver si crece el pico."
         }
       ]
     }
