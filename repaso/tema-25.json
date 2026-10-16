@@ -653,6 +653,26 @@
         "Formación de un par iónico que se extrae con cloroformo y se mide el color azul",
         "Color violeta en medio ácido. Distingue Cr(VI) del cromo total"
       ]
+    },
+    {
+      "id": "t25-f60",
+      "anverso": "Tras añadir los reactivos la muestra se pone **azul**, y el método manda medir a **620 nm**. ¿Cuadra?",
+      "reverso": "**Sí: el color es el esperado y se sigue con el análisis** (respuesta oficial del **1322, segundo ejercicio, n.º 4**).\nLos **620 nm** caen en la franja del **naranja** (≈ 635-590 nm), y lo que absorbe el naranja **se ve azul**: el color que vemos es el **complementario** del absorbido.",
+      "fuente": "Cuestionario 1322 C2 #4; LibreTexts, Inorganic Chemistry, 11.1, tabla 1 · apunte §2.1",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Tras añadir los reactivos se ve una coloración azulada y el procedimiento indica medir a 620 nm"
+      },
+      "apartado": "2.1",
+      "evidencia": [
+        "| ≈ 635-590 nm | Naranja | Azul |",
+        "Los 620 nm caen en la franja del naranja (≈ 635-590 nm), y una disolución que absorbe el naranja se ve azul."
+      ]
     }
   ],
   "test": [
@@ -1562,6 +1582,25 @@
       "fuente": "UNE-EN ISO 7887:2012 (resumen) · apunte §3",
       "apartado": "3",
       "evidencia": "El color verdadero se mide tras filtrar; el aparente, sin filtrar"
+    },
+    {
+      "id": "t25-q67",
+      "pregunta": "Tras añadir los reactivos aparece una coloración azulada, y el procedimiento indica medir a 620 nm. ¿Qué se hace?",
+      "opciones": [
+        "El color observado no es el esperado, por lo que no se debe seguir con el análisis.",
+        "El color observado no es el esperado, pero se debe seguir con el análisis.",
+        "El color observado es el esperado, por lo que se puede seguir con el análisis."
+      ],
+      "correcta": 2,
+      "explicacion": "A 620 nm se absorbe el naranja (≈ 635-590 nm), y una disolución que absorbe el naranja se ve azul, su complementario.",
+      "fuente": "Cuestionario 1322 C2 #4 · apunte §2.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Tras añadir los reactivos se ve una coloración azulada y el procedimiento indica medir a 620 nm"
+      },
+      "apartado": "2.1",
+      "evidencia": "Los 620 nm caen en la franja del naranja (≈ 635-590 nm), y una disolución que absorbe el naranja se ve azul."
     }
   ],
   "supuestos": [

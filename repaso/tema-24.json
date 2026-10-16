@@ -608,6 +608,26 @@
       ],
       "apartado": "3",
       "evidencia": "No consume oxígeno: no necesita agitación. Alternativa cuando el Winkler no sirve"
+    },
+    {
+      "id": "t24-f55",
+      "anverso": "¿En qué **ley** se basa la medida de la **conductividad** del agua, y cómo se llega de ella a la conductividad?",
+      "reverso": "En la **ley de Ohm** (respuesta oficial del **1322, n.º 17**): **V = R · I**.\nEl aparato aplica una tensión conocida, mide la corriente y saca la **resistencia, R = V / I**; su inversa es la **conductancia, G = 1 / R**, y con la **constante de célula** se llega a la conductividad.\nSe mide con **corriente alterna**, para que la electrólisis no altere la muestra.\nDistractores del examen: **Beer-Lambert** (espectrofotometría) y **Gay-Lussac** (gases).",
+      "fuente": "Cuestionario 1322 #17; guía de conductividad de Mettler Toledo, 2.2 y 2.4 · apunte §2.4",
+      "etiquetas": [
+        "examen",
+        "concepto"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · primer ejercicio",
+        "texto": "¿En que ley está basada la medida de la conductividad en el agua?"
+      },
+      "apartado": "2.4",
+      "evidencia": [
+        "Respuesta oficial: la ley de Ohm. Los distractores eran la ley de Beer-Lambert",
+        "mide la corriente y obtiene la resistencia, R = V / I; su inversa es la conductancia, G = 1 / R"
+      ]
     }
   ],
   "test": [
@@ -1471,6 +1491,25 @@
       "fuente": "Doctrina · apunte §3",
       "apartado": "3",
       "evidencia": "| Calcio, potasio, nitrato | Electrodo selectivo de membrana líquida (ionóforo en PVC) |"
+    },
+    {
+      "id": "t24-q65",
+      "pregunta": "¿En qué ley está basada la medida de la conductividad en el agua?",
+      "opciones": [
+        "La ley de Beer-Lambert",
+        "La ley de Ohm",
+        "La ley de Gay-Lussac"
+      ],
+      "correcta": 1,
+      "explicacion": "El conductivímetro aplica una tensión, mide la corriente y obtiene la resistencia (R = V / I); su inversa es la conductancia. Beer-Lambert es la ley de la espectrofotometría, y Gay-Lussac, la de los gases.",
+      "fuente": "Cuestionario 1322 #17 · apunte §2.4",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · primer ejercicio",
+        "texto": "¿En que ley está basada la medida de la conductividad en el agua?"
+      },
+      "apartado": "2.4",
+      "evidencia": "Respuesta oficial: la ley de Ohm. Los distractores eran la ley de Beer-Lambert"
     }
   ],
   "supuestos": [

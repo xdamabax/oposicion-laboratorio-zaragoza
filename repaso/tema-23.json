@@ -758,6 +758,26 @@
       ],
       "apartado": "3",
       "evidencia": "Alternativa al método de Mohr del tema 22, que necesita ver el viraje del cromato"
+    },
+    {
+      "id": "t23-f70",
+      "anverso": "¿Qué pH tiene una disolución **0,01 M de HCl**, y por qué?",
+      "reverso": "**pH = 2**, respuesta oficial del **1246, n.º 41**.\n1. El **HCl es un ácido fuerte**: se ioniza **por completo**, así que [H⁺] = **0,01 = 10⁻² mol/L**.\n2. **pH = −log [H⁺] = −log 10⁻² = 2.**\nEl distractor **0,01** es la concentración sin el logaritmo. Y es el cálculo con la concentración: la definición rigurosa del pH es por **actividad**.",
+      "fuente": "Cuestionario 1246 #41; OpenStax, Chemistry 2e, 14.3; CEM QU-003 · apunte §2.2",
+      "etiquetas": [
+        "examen",
+        "calculo"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico"
+      },
+      "apartado": "2.2",
+      "evidencia": [
+        "Respuesta oficial: 2. Las otras opciones eran 0,01 (la concentración, no su logaritmo) y 0,2.",
+        "la que usa el procedimiento QU-003 del CEM (duda 2), sale pH = −log 10⁻² = 2."
+      ]
     }
   ],
   "test": [
@@ -1649,6 +1669,25 @@
       "fuente": "Doctrina; ISO 15682:2000 · apunte §3",
       "apartado": "3",
       "evidencia": "Alternativa al método de Mohr del tema 22, que necesita ver el viraje del cromato"
+    },
+    {
+      "id": "t23-q66",
+      "pregunta": "¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido-base?",
+      "opciones": [
+        "0,01",
+        "0,2",
+        "2"
+      ],
+      "correcta": 2,
+      "explicacion": "El HCl es un ácido fuerte y se ioniza por completo: [H⁺] = 10⁻² mol/L, y pH = −log 10⁻² = 2. El 0,01 es la concentración sin tomar el logaritmo.",
+      "fuente": "Cuestionario 1246 #41 · apunte §2.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico"
+      },
+      "apartado": "2.2",
+      "evidencia": "Respuesta oficial: 2. Las otras opciones eran 0,01 (la concentración, no su logaritmo) y 0,2."
     }
   ],
   "supuestos": [

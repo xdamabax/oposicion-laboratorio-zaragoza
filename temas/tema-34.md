@@ -428,6 +428,19 @@ El tema 24 dejó dicho que el oxígeno disuelto **como parámetro** era del 33 o
 
 **Y el detalle que el tema 22 dejó sin afirmar, ya cerrado:** en el método de Winkler el oxígeno **se fija in situ** añadiendo **sulfato de MANGANESO(II)** y, a continuación, **yoduro de potasio en medio alcalino**. El oxígeno oxida el Mn(II) a un óxido superior; al acidificar, ese óxido oxida el yoduro a **yodo**, que se valora con **tiosulfato sódico** usando **almidón** como indicador. **La modificación con AZIDA elimina la interferencia de los nitritos** — que es justamente la interferencia que aparece en las muestras incubadas para la DBO.
 
+### 2.11. pH y DBO₅: se analizan lo antes posible, una vez recibida la muestra
+
+El supuesto 4 del **1322, segundo ejercicio**, empieza así: *«Se recibe una muestra de agua residual para determinar: pH, sólidos en suspensión, DQO, DBO₅…»*, y pregunta qué se haría en cada caso. Para dos de los parámetros, la respuesta oficial **no es una técnica, sino un momento**:
+
+| Pregunta | Respuesta oficial | Distractores |
+| --- | --- | --- |
+| **n.º 31, determinación de pH** | **b) «Se mide lo antes posible, una vez recibida la muestra»** | Dejar **sedimentar 24 horas** a temperatura ambiente y medir; **centrifugar** y medir el sobrenadante; **filtrar** y medir el filtrado |
+| **n.º 34, análisis de DBO₅** | **b) «Se realiza el método de las diluciones lo antes posible, una vez recibida la muestra»** | **Digerir con ácido nítrico** y aplicar el método del dicromato; **filtrar** y aplicar las diluciones al filtrado; **gravimetría** |
+
+**Por qué el pH, lo antes posible.** Es de los parámetros que **cambian solos y deprisa** dentro del envase, y por eso se miden in situ (tema 36, apartado 1). La tabla de conservación del tema 36 (apartado 2.6) le da **«analizar inmediatamente», con un plazo máximo de 15 minutos**. Los tres distractores describen esperas o manipulaciones que **alterarían la medida**: 24 horas a temperatura ambiente es justo lo contrario de «inmediatamente».
+
+**Por qué la DBO₅, lo antes posible.** Lo que mide la DBO es el oxígeno que consumen los microorganismos al degradar la materia orgánica (apartado 2.6), y esos microorganismos **siguen trabajando dentro del envase** mientras la muestra espera. La tabla del tema 36 la conserva **refrigerada a ≤ 6 °C, sin acidificar** —acidificar inhibe la actividad bacteriana (tema 36, apartado 2.5), que es justo lo que la DBO mide—, con un plazo máximo de **48 horas**. Los distractores fallan por otros motivos: la **digestión ácida con dicromato** es la DQO, no la DBO; **filtrar** va contra el método de referencia del RD 509/1996, que pide **muestra homogeneizada, sin filtrar ni decantar** (apartado 2.2); y la **gravimetría** es la de los sólidos en suspensión.
+
 ---
 
 ## 3. Tabla operativa
@@ -522,6 +535,7 @@ El tema 24 dejó dicho que el oxígeno disuelto **como parámetro** era del 33 o
 - **Exámenes anteriores:** los **seis** cuestionarios extraídos a texto y releídos. Las **tres preguntas del primer ejercicio** y los **tres supuestos de agua residual** están **transcritos literalmente**, con su numeración.
 - **`TEMARIO EXTRA/`:** consultado antes de redactar, según la regla fija del proyecto. `MAPEO.md` da el tema 34 como **«sin nada»**. No aporta nada y no se ha usado.
 - **Figuras:** las dos de este tema (`dbo-frente-a-dqo` y `solidos-del-agua`) se han añadido al catálogo con **cuatro controles nuevos** en `verificar-figuras.js` y **cuatro sabotajes** que los prueban. Los de la primera comprueban, sobre el trazado calculado, que **la curva solo sube** —el oxígeno consumido no se devuelve— y que **la DQO queda por encima de la DBO última y esta por encima de la DBO₅**, con la marca de los cinco días **cayendo sobre la curva**; los de la segunda, que **suspendidos y disueltos cuelgan los dos del total y a la misma altura** y que **se calcina más caliente de lo que se seca**, leyendo las dos temperaturas del propio dibujo.
+- **Apartado 2.11 (añadido el 16/10/2026):** desarrolla en un apartado numerado las preguntas 1322, segundo ejercicio, n.º 31 y 34, que hasta entonces solo estaban en el recuadro inicial. El enunciado y las cuatro opciones de cada una están transcritos del cuestionario (`ExamenesAnteriores/1322-CUESTIONARIO-2.pdf`, extraído a texto), y la respuesta, de la plantilla definitiva. Los plazos y la forma de conservar salen de la tabla del **tema 36, apartado 2.6** (instructivo del IDEAM y documento del Instituto de Toxicología de la Defensa, con sus mismas reservas), y el «sin filtrar ni decantar», del cuadro 1 del RD 509/1996 (apartado 2.2).
 - **Fecha de verificación:** 22/09/2026.
 
 ### Dudas y limitaciones declaradas

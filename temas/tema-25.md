@@ -61,6 +61,20 @@ Como las moléculas en disolución tienen además niveles vibracionales y rotaci
 
 **El color que vemos es el complementario del que se absorbe:** una disolución que absorbe en el azul (≈ 435 nm) se ve amarilla. Por eso a los métodos del visible se les llama **colorimétricos**, y de ahí que se les añada un **reactivo cromogénico** al analito incoloro.
 
+**Qué color se ve según dónde absorbe** (tabla aproximada de LibreTexts, válida cuando hay **una sola banda** de absorción en el visible):
+
+| Se absorbe (λ) | Color absorbido | Color que se ve |
+| --- | --- | --- |
+| ≈ 700-635 nm | Rojo | Verde |
+| **≈ 635-590 nm** | **Naranja** | **Azul** |
+| ≈ 590-560 nm | Amarillo | Violeta |
+| ≈ 560-520 nm | Verde | Rojo |
+| ≈ 520-490 nm | Cian | Rojo anaranjado |
+| ≈ 490-450 nm | Azul | Naranja |
+| 400-450 nm | Violeta | Amarillo |
+
+> **Lo que ha caído: 1322, segundo ejercicio, n.º 4.** Tras añadir los reactivos aparece una **coloración azulada**, y el procedimiento indica medir a **620 nm**. Respuesta oficial: **«El color observado es el esperado, por lo que se puede seguir con el análisis»**. Los 620 nm caen en la franja del **naranja** (≈ 635-590 nm), y una disolución que absorbe el naranja **se ve azul**. Las otras opciones decían que el color no era el esperado (con o sin seguir el análisis) o que ninguna era correcta.
+
 ### 2.2. Leyes de absorción de la luz
 
 Es el apartado con **núcleo repetido comprobado**.
@@ -284,6 +298,7 @@ Todo esto está también detrás de los **kits de cubeta precintada** y de los *
 - **Normas verificadas** en el catálogo de UNE y en la tienda de AENOR: UNE-EN ISO 6878:2005; UNE-EN 26777:1994; **UNE-EN ISO 7393-2:2019**, que **anula y sustituye a la de 2000**; UNE-EN ISO 7887:2012.
 - **Norma legal:** RD 3/2023 (BOE-A-2023-628), texto consolidado, comprobado directamente en el BOE: anexo III, parte D, punto 1.
 - **Teoría:** LibreTexts en español (traducción de Harvey, *Analytical Chemistry 2.1*) para transmitancia, absorbancia, aditividad y las tres clases de desviación.
+- **Color absorbido y color observado (precedente 1322, segundo ejercicio, n.º 4, añadido el 16/10/2026):** LibreTexts, *Inorganic Chemistry (LibreTexts)*, 11.1 «Absorption of Light», tabla 1, «Approximate wavelengths of absorption and their complementary colors observed», leída en línea ese día. La propia tabla advierte que la predicción vale solo para los casos sencillos, con una única banda de absorción en el visible. Los límites de cada franja son aproximados y varían algo entre manuales. — https://chem.libretexts.org/Bookshelves/Inorganic_Chemistry/Inorganic_Chemistry_(LibreTexts)/11%3A_Coordination_Chemistry_III_-_Electronic_Spectra/11.01%3A_Absorption_of_Light
 - **Fecha de verificación:** 03/09/2026.
 
 ### Dudas y limitaciones declaradas

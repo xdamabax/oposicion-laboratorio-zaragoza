@@ -136,6 +136,8 @@ En clase B, el doble. Las **microburetas** (tipo Bang) bajan a 2 y 5 mL con divi
 
 **1. Preparar la disolución patrón.** Si es patrón primario, por pesada directa en balanza analítica y enrase en **matraz aforado**. Si no lo es, de concentración aproximada y después **factorización** contra un patrón primario.
 
+> **Lo que ha caído: 1322, segundo ejercicio, n.º 8.** «Se desea preparar una disolución de concentración 1 M de hidróxido sódico. ¿Cuál de las siguientes preparaciones es correcta?», con los pesos atómicos en el enunciado (**Na 23, O 16, H 1 g/mol**). La masa molar del NaOH es **23 + 16 + 1 = 40 g/mol**, y **1 M es un mol por litro**: respuesta oficial, **«40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada»**. Las otras opciones eran **1, 4 y 10 gramos**. Dos matices que no cambian la respuesta: la molaridad se refiere al litro **de disolución**, así que en la práctica los 40 g se disuelven y se **enrasan a 1 L en matraz aforado**; y el NaOH **no es patrón primario**, de modo que esa disolución sale de concentración **aproximada** y hay que **factorizarla**.
+
 **2. Tomar la alícuota** con **pipeta aforada** y pasarla al **Erlenmeyer**.
 
 **3. Preparar la bureta.** Se lava, se **ambienta** con dos o tres porciones pequeñas del propio valorante (para que el agua residual no lo diluya), se llena por encima del cero y se **purga la burbuja de aire de la punta** abriendo la llave a fondo. Una burbuja que se suelta a media valoración se contabiliza como volumen vertido que no ha reaccionado: es un error **por exceso** del volumen leído.
@@ -152,7 +154,7 @@ En clase B, el doble. Las **microburetas** (tipo Bang) bajan a 2 y 5 mL con divi
 
 - **El menisco se lee por su parte inferior** (en líquidos transparentes que mojan el vidrio, como el agua), a la **altura del ojo**.
 - **Error de paralaje:** si se mira desde arriba, la lectura sale **menor** de la real; desde abajo, **mayor**. Se evita poniendo el ojo al nivel del menisco. La franja de Schellbach también lo reduce.
-- **Se estima una cifra más allá de la última división.** En una bureta de 25 mL, con divisiones de 0,5 mL, se aprecia hasta la **centésima**; en una de 50 mL, con divisiones de 0,1 mL, hasta **0,05 mL** aproximadamente. La cifra estimada es significativa y se anota.
+- **Se estima una cifra más allá de la última división.** En una bureta de 25 mL, con divisiones de 0,05 mL, se aprecia hasta la **centésima**; en una de 50 mL, con divisiones de 0,1 mL, hasta **0,05 mL** aproximadamente. La cifra estimada es significativa y se anota.
 - El líquido debe escurrir **sin dejar gotas** en la pared: si las deja, la bureta está sucia o engrasada y hay que lavarla.
 
 #### El cálculo
@@ -296,7 +298,7 @@ Se mantiene el acordado al cerrar el tema 21:
 
 1. **La UNE 77004:2002 está anulada desde el 18/01/2024**, comprobado en el catálogo de UNE. Sigue apareciendo en prácticamente todo el material de estudio y en muchos procedimientos de laboratorio. **No la doy por vigente**: se cita solo como ejemplo de valoración por retroceso. **RESUELTO EN EL TEMA 34 (22/09/2026):** la ficha de UNE muestra la anulación **sin declarar norma sustituta**, y el catálogo del ISO da por **retiradas** tanto la ISO 6060:1986 como la ISO 6060:1989. **No hay norma UNE vigente de DQO por dicromato**; lo aplicable es el método de referencia del RD 509/1996 y el *Standard Methods* SM 5220.
 
-2. **Las tolerancias de bureta proceden de un catálogo técnico de fabricante** (Brand/Blaubrand, aparatos certificados conforme a DIN EN ISO 385), **no del texto de la norma**, que es de pago. Los tres valores de la tabla (10, 25 y 50 mL en clase AS) coinciden con los que declara el fabricante para material certificado. Trátalos como muy probables, no como cita normativa.
+2. **Las tolerancias de bureta proceden de un catálogo técnico de fabricante** (Brand/Blaubrand, aparatos certificados conforme a DIN EN ISO 385), **no del texto de la norma**, que es de pago. Los tres valores de la tabla (10, 25 y 50 mL en clase AS) coinciden con los que declara el fabricante para material certificado. Trátalos como muy probables, no como cita normativa. **Errata corregida el 16/10/2026:** el apartado 2.3 decía «bureta de 25 mL, con divisiones de **0,5** mL», en contra de la tabla del 2.2, que da **0,05 mL**. La tabla era la buena: la división de 0,05 mL y el límite de ± 0,03 mL de la bureta de 25 mL de clase AS los confirman la ficha de Sigma-Aldrich (Z323950, *volume accuracy* ± 0,030 mL, *subdivision* 0,05 mL) y la de Blaubrand que publica el distribuidor Faust. Con divisiones de 0,05 mL es, además, como se puede estimar «hasta la centésima».
 
 3. **No he podido confirmar el año de la UNE-EN ISO 648** (pipetas aforadas de un trazo) en el catálogo. Sí está confirmado el dato de fondo —el tiempo de espera de la clase AS bajó de 15 a 5 s en la edición nueva—, pero procede también del catálogo del fabricante. Los años de la 385, 835, 1042, 4787 y 4788 sí están comprobados.
 
@@ -307,3 +309,5 @@ Se mantiene el acordado al cerrar el tema 21:
 6. **Los apartados 2.1, 2.3 y 2.5 no tienen norma detrás.** Son doctrina de química analítica (Skoog, Harris, Vogel), que **no he podido consultar directamente**. Es contenido estable, pero conviene contrastar con el libro la lista de requisitos del patrón primario y la clasificación de los indicadores, que varía algo entre autores.
 
 7. **La ISO 1773 (Erlenmeyer) y la ISO 1769 (código de colores de pipetas) se citan sin año.** He confirmado que existen y a qué se refieren, a través de catálogos de fabricante y distribuidores, pero no su edición vigente ni si hay adopción UNE. El dato que importa para el examen —que el Erlenmeyer **no es material volumétrico**— es independiente de la edición.
+
+8. **La preparación del NaOH 1 M (1322, segundo ejercicio, n.º 8) se razona con los pesos atómicos del propio enunciado** (Na 23, O 16, H 1), que son valores redondeados: no se ha contrastado aquí la masa molar con una tabla de pesos atómicos, porque el examen da los suyos. La redacción oficial, «disueltos en 1 litro de agua», no es rigurosa: la molaridad se refiere al volumen de disolución. Se respeta porque es la respuesta del tribunal, y el apartado 2.3 añade el matiz.

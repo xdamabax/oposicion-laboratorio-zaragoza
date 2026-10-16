@@ -1120,7 +1120,12 @@
       ],
       "correcta": 2,
       "explicacion": "Art. 77.3. Si implican gastos, lo que puede hacer es exigir su anticipo (art. 78.3).",
-      "fuente": "Ley 39/2015, art. 77.3"
+      "fuente": "Ley 39/2015, art. 77.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1497",
+        "texto": "De acuerdo con el articulo 77.3 de la Ley 39/2015"
+      }
     },
     {
       "id": "t04-q14",
@@ -1245,7 +1250,12 @@
       ],
       "correcta": 0,
       "explicacion": "Art. 88.2 (y 88.1 sobre las cuestiones derivadas y conexas).",
-      "fuente": "Ley 39/2015, art. 88.2"
+      "fuente": "Ley 39/2015, art. 88.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1345",
+        "texto": "De acuerdo con el artículo 88.2 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común"
+      }
     },
     {
       "id": "t04-q24",
@@ -1319,7 +1329,12 @@
       ],
       "correcta": 0,
       "explicacion": "Art. 100.2.",
-      "fuente": "Ley 39/2015, art. 100.2"
+      "fuente": "Ley 39/2015, art. 100.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1312",
+        "texto": "El artículo 100 de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones"
+      }
     },
     {
       "id": "t04-q30",

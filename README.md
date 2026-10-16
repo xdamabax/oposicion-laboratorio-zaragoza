@@ -60,6 +60,11 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
   - `t01-q22` (elección del Alcalde, art. 140): pasa a núcleo; cuestionario 1521.
   - `t01-q24` (Cabildos o Consejos, art. 141.4): pasa a núcleo; 4 cuestionarios.
 
+  Excepciones aprobadas el 16/10/2026 (el detalle de cada una, con su cuestionario, en `scripts/excepciones-integridad.json`):
+  - **Pasan a núcleo** (campos `nucleo` y `precedente`), 36 preguntas que ya habían caído en exámenes: tema 3, `q08`, `q11` y `q12`; tema 4, `q13`, `q23` y `q29`; tema 5, `q13`; tema 6, `q14`, `q15`, `q16`, `q18`, `q20`, `q31`, `q32` y `q33`; tema 7, `q11`, `q14`, `q18`, `q19`, `q20`, `q25`, `q26`, `q27` y `q28`; tema 8, `q10`, `q12`, `q13`, `q15`, `q17` y de `q20` a `q25`; tema 35, `q25`.
+  - **Dejan de ser núcleo** (campos `nucleo` y `reverso`): `t38-f25` y `t39-f04`, que se apoyaban en 1322, segundo ejercicio, n.º 10 y n.º 7, **anuladas por el tribunal**. Su reverso dice ahora que la pregunta fue anulada, en lugar de presentarla como respuesta del examen.
+  - **Corregida** (campo `reverso`): `t33-f33`, que repetía un error de lectura de la tabla de frecuencias del RD 3/2023 (ver tema 33, apartado 2.4).
+
 | Tema | Tarjetas | Test (3 op.) | Supuestos (4 op.) | Huecos de cobertura que había |
 |---|---|---|---|---|
 | 1 | 47 → 75 | 30 → 89 | — | Sin pregunta: §1 (encuadre), art. 2, art. 5, §4 (Título IV); y datos sueltos sin pregunta (arts. 3.2, 4.2, 8.1 misión, 8.2, 9.1, 9.2, 103.2, 104, 105.b y c, 106.1, 138.1, 139.2, 141.2 y 3, 142, 133.2) o sin tarjeta (rúbricas de los Títulos I, II, III, V, VI, VII y IX, 103.2, 104). El apunte se amplió con el art. 14 (2 cuestionarios) |
@@ -81,12 +86,12 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
 | 17 | 61 → 92 | 33 → 75 | 2 → 4 | §1, §2, §3.4, §3.5, §4.3, §4.4, §5.5, §5.9, §6.2, §6.5, §6.6 sin pregunta; §5.7 sin tarjeta ni pregunta |
 | 18 | 55 → 79 | 33 → 72 | 2 → 4 | §1, §6.3, §8 sin pregunta (§6.3 y §8 tampoco tenían tarjeta); pocos datos de §3, §5.2-5.5 y §7 |
 | 19 | 53 → 82 | 33 → 72 | 2 → 4 | §1 sin tarjeta ni pregunta; §3.1 sin pregunta; pocos datos de §2.3, §3.3, §3.4, §4 y §5 |
-| 20 | 36 → 62 | 24 → 64 | 1 → 4 | §1, §3.1, §5.3 (resto), §7.3 sin pregunta; §7.3 sin tarjeta; 4 núcleo nuevas con precedente (pictogramas del 1233 2.ª #16, #17, #19, #20) |
+| 20 | 36 → 64 | 24 → 66 | 1 → 4 | §1, §3.1, §5.3 (resto), §7.3 sin pregunta; §7.3 sin tarjeta; 4 núcleo nuevas con precedente (pictogramas del 1233 2.ª #16, #17, #19, #20). 16/10/2026: apunte ampliado con 1246 #50 (H300) y 1322 C2 #1 (P301 + P310 y P331), con su tarjeta y su pregunta núcleo |
 | 21 | 38 → 60 | 24 → 64 | 1 → 4 | §1 sin tarjeta ni pregunta; §2.5 y §3 con pocas preguntas; 1 núcleo nueva con precedente (1246 #44) |
-| 22 | 39 → 59 | 24 → 63 | 1 → 4 | §1 sin tarjeta ni pregunta; §3 sin pregunta; 2 núcleo nuevas con precedente (1246 #49, 1322 C2 #9) |
-| 23 | 44 → 69 | 24 → 65 | 1 → 4 | §2.5 sin pregunta; §3 sin pregunta; 2 núcleo nuevas con precedente (1246 #45, 1322 #15) |
-| 24 | 40 → 54 | 24 → 64 | 1 → 4 | §1 sin tarjeta ni pregunta; §3 sin pregunta; el 1322 #17 (ley de Ohm) no tiene respaldo en el apunte |
-| 25 | 40 → 59 | 26 → 66 | 1 → 4 | §1 sin pregunta; §3 sin pregunta; reparto de origen 10/8/8 compensado; 4 núcleo nuevas con precedente (1246 #43; 1322 #16, #18; 1233 #8) |
+| 22 | 39 → 60 | 24 → 64 | 1 → 4 | §1 sin tarjeta ni pregunta; §3 sin pregunta; 2 núcleo nuevas con precedente (1246 #49, 1322 C2 #9). 16/10/2026: apunte ampliado con 1322 C2 #8 (NaOH 1 M), con su tarjeta y su pregunta núcleo; errata de §2.3 corregida (bureta de 25 mL: divisiones de 0,05 mL, no de 0,5) |
+| 23 | 44 → 70 | 24 → 66 | 1 → 4 | §2.5 sin pregunta; §3 sin pregunta; 2 núcleo nuevas con precedente (1246 #45, 1322 #15). 16/10/2026: apunte ampliado con 1246 #41 (pH del HCl 0,01 M), con su tarjeta y su pregunta núcleo |
+| 24 | 40 → 55 | 24 → 65 | 1 → 4 | §1 sin tarjeta ni pregunta; §3 sin pregunta; el 1322 #17 (ley de Ohm) no tiene respaldo en el apunte. 16/10/2026: apunte ampliado con 1322 #17 (ley de Ohm), con su tarjeta y su pregunta núcleo |
+| 25 | 40 → 60 | 26 → 67 | 1 → 4 | §1 sin pregunta; §3 sin pregunta; reparto de origen 10/8/8 compensado; 4 núcleo nuevas con precedente (1246 #43; 1322 #16, #18; 1233 #8). 16/10/2026: apunte ampliado con 1322 C2 #4 (color observado y 620 nm), con su tarjeta y su pregunta núcleo |
 | 26 | 42 → 63 | 22 → 64 | 2 → 4 | §1 y §3 sin pregunta; reparto de origen 7/7/8 compensado |
 | 27 | 42 → 53 | 24 → 61 | 2 → 4 | §1 y §2.6 sin pregunta; reparto de origen 9/8/7 compensado; el apunte es corto y las 42 tarjetas previas ya lo cubrían casi entero |
 | 28 | 42 → 55 | 26 → 64 | 2 → 4 | ninguno |
@@ -94,17 +99,23 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
 | 30 | 45 → 64 | 26 → 69 | 2 → 4 | 3 núcleo nuevas con precedente (1322 C2 #27, #30); 1322 #36 (capilares) se deja al tema 31 |
 | 31 | 45 → 56 | 26 → 68 | 2 → 4 | 5 núcleo nuevas con precedente (1233 #11; 1233 2.ª #1; 1322 C2 #22, #23, #28); pocas tarjetas nuevas: las 45 existentes cubren casi todo el apunte |
 | 32 | 45 → 52 | 26 → 66 | 2 → 4 | 2 núcleo nuevas con precedente (1322 C2 #25, #39); pocas tarjetas nuevas: las 45 existentes cubren casi todo el apunte; los distractores DQO, N total y grasas se dejan a los temas 34 y 35 |
-| 33 | 45 → 63 | 26 → 68 | 2 → 4 | 3 núcleo nuevas con precedente (1322 C2 #21, #22, #26); 1246 #23 (eriocromocianina R) asignada al 33 sin desarrollo en ningún apunte |
-| 34 | 45 → 59 | 28 → 69 | 2 → 4 | reparto de origen 10/12/6 compensado; 2 núcleo nuevas con precedente (1322 C2 #33; 1233 2.ª #7); 1322 C2 #31 y #34 sin texto en un apartado numerado |
+| 33 | 45 → 64 | 26 → 69 | 2 → 4 | 3 núcleo nuevas con precedente (1322 C2 #21, #22, #26); 1246 #23 (eriocromocianina R) asignada al 33 sin desarrollo en ningún apunte. 16/10/2026: apunte ampliado con 1246 #23 (aluminio por eriocromocianina R), con su tarjeta y su pregunta núcleo; tabla de frecuencias de §2.4 corregida contra el BOE |
+| 34 | 45 → 59 | 28 → 71 | 2 → 4 | reparto de origen 10/12/6 compensado; 2 núcleo nuevas con precedente (1322 C2 #33; 1233 2.ª #7); 1322 C2 #31 y #34 sin texto en un apartado numerado. 16/10/2026: §2.11 nuevo con 1322 C2 #31 y #34, dos preguntas núcleo |
 | 35 | 45 → 55 | 30 → 69 | 2 → 4 | reparto de origen 12/10/8 compensado; 1 núcleo nueva con precedente (1322 C2 #38); t35-q25 (grasas) tiene precedente 1322 C2 #37 y no lleva núcleo |
 | 36 | 45 → 60 | 30 → 69 | 2 → 4 | reparto de origen 10/12/8 y 3/3/3/1 compensado; ninguna núcleo nueva (los precedentes del tema son de 1246 C2, sin plantilla) |
 | 37 | 45 → 58 | 30 → 69 | 2 → 4 | reparto de origen 10/12/8 y 2/3/4/1 compensado; ninguna núcleo nueva (los tres precedentes ya lo eran) |
 | 38 | 46 → 65 | 31 → 69 | 2 → 4 | ninguna núcleo nueva (R² y medios de cultivo se remiten al 39 y a microbiología); 1233 2.ª #14 asignada al 38 en PLANTILLAS, el apunte la deja a microbiología |
 | 39 | 45 → 60 | 30 → 69 | 2 → 4 | ninguna núcleo nueva (los tres precedentes ya lo eran); t39-f04 y t38-f25 son núcleo con preguntas anuladas por el tribunal (1322 C2 #7 y #10) |
 | 40 | 46 → 59 | 30 → 69 | 2 → 4 | 1 núcleo nueva con precedente (1322 C2 #6) |
-| **Total** | **1.863 → 2.661** | **1.167 → 2.839** | **58 → 128** (290 → 640 preguntas) | Núcleo: 1.612 → 1.758 elementos, todas las nuevas con su precedente. Reparto global de las correctas: test 951/946/942; supuestos 160/160/160/160 |
+| **Total** | **1.863 → 2.668** | **1.167 → 2.848** | **58 → 128** (290 → 640 preguntas) | Núcleo: 1.612 → 1.808 elementos, cada uno nuevo con su precedente. Reparto global de las correctas: test 953/949/946; supuestos 160/160/160/160 |
 
-**Cierre de la ampliación (15/10/2026).** Los 40 temas están ampliados y publicados, cada uno con su batería completa (14 controles y 14 sabotajes, PDF, cuestionario y figuras) y comprobado después contra la web publicada. Las erratas y dudas encontradas en el material anterior **no se han corregido**: quedan como propuestas, pendientes de aprobar, en el informe final de la ampliación.
+**Cierre de la ampliación (15/10/2026).** Los 40 temas están ampliados y publicados, cada uno con su batería completa (14 controles y 14 sabotajes, PDF, cuestionario y figuras) y comprobado después contra la web publicada.
+
+**Revisión del 16/10/2026.** Aprobadas y aplicadas las propuestas del informe final de la ampliación:
+- **Núcleo:** las 36 preguntas con precedente pasan a núcleo, y `t38-f25` y `t39-f04` dejan de serlo (excepciones de arriba).
+- **Apuntes ampliados con su fuente**, cada precedente con su tarjeta y su pregunta núcleo: tema 20 (1246 #50 y 1322 C2 #1), 22 (1322 C2 #8), 23 (1246 #41), 24 (1322 #17), 25 (1322 C2 #4) y 33 (1246 #23). En el tema 34, apartado 2.11 nuevo con 1322 C2 #31 y #34. El 1322 #13 no se ha añadido: su plantilla no tiene contenido.
+- **Erratas comprobadas contra la fuente:** en el tema 22 (§2.3) era errónea la «bureta de 25 mL con divisiones de 0,5 mL»; la tabla, con 0,05 mL, estaba bien. En el tema 33 (§2.4) estaban mal la tabla y la frase: el análisis de control de las zonas 5 y 6 es el de la tipo 4. En el tema 13, el supuesto t13-s02 estaba bien; al apunte le faltaban esas filas de la tabla de 51 pocillos.
+- **Precedentes y asignaciones:** el tema 2 ya cuenta sus cuatro precedentes de otras plazas, y el 21 su 1246 #44; en `PLANTILLAS.md`, la R4 de 1344 y 1345 pasa al tema 3, 1233 #14 al 12 y 1322 #36 solo al 31.
 
 ### Núcleo
 
@@ -287,7 +298,7 @@ En la pestaña **Apuntes**, **Editar antes de descargar** abre `#/editar/tema/:n
 
 **El temario completo no tiene editor propio**: un solo editor con los 40 apuntes (1,7 MB) sería lentísimo. Su panel, **Preparar el temario** en la sección Descargas del inicio (`#/editar/temario`), **junta la versión de cada tema**: si se ha editado, con los cambios y sin las secciones quitadas en su editor; si no, el original. En el panel se elige qué temas entran (el índice lista solo esos), si hay portada (con título y subtítulo a elegir) e índice, y la letra, los márgenes y los recuadros de fuentes del documento entero. Cada tema enseña si va original o con cambios, y enlaza a su editor. En Word, cada tema es «Título 1» y empieza página, y sus apartados bajan un nivel: el panel de navegación de Word da los 40 temas como capítulos.
 
-**El cuestionario no se edita como texto**: cada pregunta lleva el índice de su respuesta correcta, y reescribir o borrar una opción dejaría la plantilla apuntando a otra sin dar ningún error. Su panel, **Preparar el cuestionario** en la pestaña Test (`#/editar/test/:n`), elige preguntas y supuestos, el orden (el del tema o barajado: los supuestos conservan el suyo, porque sus preguntas se encadenan), si se barajan las opciones —**la letra de la solución se recalcula con ellas**—, si salen las soluciones con su explicación y su fuente, la letra y los márgenes. 209 de las 3.479 preguntas (recuento del 15/10/2026) conservan el orden de sus opciones aunque se pida barajar: alguna opción se refiere a otras («Las dos respuestas anteriores…») o la explicación cita una letra. El barajado usa una semilla guardada, así que el PDF y el Word salen iguales; «Barajar de nuevo» la cambia. Toda la lógica está en `app/src/editor/cuestionario.ts`, que usan el PDF y el Word.
+**El cuestionario no se edita como texto**: cada pregunta lleva el índice de su respuesta correcta, y reescribir o borrar una opción dejaría la plantilla apuntando a otra sin dar ningún error. Su panel, **Preparar el cuestionario** en la pestaña Test (`#/editar/test/:n`), elige preguntas y supuestos, el orden (el del tema o barajado: los supuestos conservan el suyo, porque sus preguntas se encadenan), si se barajan las opciones —**la letra de la solución se recalcula con ellas**—, si salen las soluciones con su explicación y su fuente, la letra y los márgenes. 209 de las 3.488 preguntas (recuento del 16/10/2026) conservan el orden de sus opciones aunque se pida barajar: alguna opción se refiere a otras («Las dos respuestas anteriores…») o la explicación cita una letra. El barajado usa una semilla guardada, así que el PDF y el Word salen iguales; «Barajar de nuevo» la cambia. Toda la lógica está en `app/src/editor/cuestionario.ts`, que usan el PDF y el Word.
 
 Las dos opciones se guardan en este navegador, como las ediciones de los temas.
 

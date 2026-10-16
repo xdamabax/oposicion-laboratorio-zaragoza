@@ -714,6 +714,46 @@
       ],
       "apartado": "8",
       "evidencia": "| GHS09 Medio ambiente | Peligro para el medio ambiente acuático | H400, H410, H411, H412, H413 | P273, P391, P501 | Con retención; jamás al desagüe; a gestor autorizado |"
+    },
+    {
+      "id": "t20-f63",
+      "anverso": "La **calavera (GHS06)** en toxicidad aguda **oral de categorías 1 y 2**: ¿qué indicación de peligro lleva y qué dice?",
+      "reverso": "**H300: «Mortal en caso de ingestión».** Es la respuesta oficial del **1246, n.º 50**.\nLa categoría 3 oral lleva **H301**, «Tóxico en caso de ingestión», también con calavera.\nLos distractores del examen eran de otros pictogramas: **H350** «Puede provocar cáncer» (**GHS08**) y **H335** «Puede irritar las vías respiratorias» (**GHS07**).",
+      "fuente": "CLP, anexo I, tabla 3.1.3 · cuestionario 1246 #50 · apunte §2.3",
+      "etiquetas": [
+        "examen",
+        "normativa"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "¿Qué significa el pictograma? (calavera y tibias, GHS06)"
+      },
+      "apartado": "2.3",
+      "evidencia": [
+        "Respuesta oficial: «Mortal en caso de ingestión», que es el texto de la indicación de peligro H300.",
+        "la categoría 3 lleva H301, «Tóxico en caso de ingestión»."
+      ]
+    },
+    {
+      "id": "t20-f64",
+      "anverso": "Con el pictograma **GHS08**, ¿qué consejo de prudencia de **ingestión** corresponde, y por qué es falso «provocar el vómito»?",
+      "reverso": "**P301 + P310**: *«EN CASO DE INGESTIÓN: Llamar inmediatamente a un CENTRO DE INFORMACIÓN TOXICOLÓGICA o a un médico»*. Es la respuesta oficial del **1322, segundo ejercicio, n.º 1**.\nEl GHS08 lo lleva por el **peligro por aspiración**: **H304**, «Puede ser mortal en caso de ingestión y penetración en las vías respiratorias».\nSu otro consejo de respuesta es **P331, «NO provocar el vómito»**. Por eso «provocar el vómito» es falso: el CLP dice lo contrario.",
+      "fuente": "CLP, anexo I, tabla 3.10.2, y anexo IV · cuestionario 1322 C2 #1 · apunte §4",
+      "etiquetas": [
+        "examen",
+        "normativa"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Pictograma GHS08 del enunciado: consejo de prudencia relacionado"
+      },
+      "apartado": "4",
+      "evidencia": [
+        "Respuesta oficial: «En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a un médico», que es el P301 + P310",
+        "Por eso es falsa la opción «En caso de ingestión, provocar el vómito»: el CLP dice justo lo contrario."
+      ]
     }
   ],
   "test": [
@@ -1624,6 +1664,44 @@
       "fuente": "Tabla operativa · apunte §8",
       "apartado": "8",
       "evidencia": "Separado físicamente de inflamables y de materia orgánica"
+    },
+    {
+      "id": "t20-q65",
+      "pregunta": "¿Qué significa el pictograma de la calavera y las tibias cruzadas (GHS06)?",
+      "opciones": [
+        "Puede provocar cáncer",
+        "Mortal en caso de ingestión",
+        "Puede irritar las vías respiratorias"
+      ],
+      "correcta": 1,
+      "explicacion": "Es la H300, que el CLP asigna a la toxicidad aguda oral de categorías 1 y 2. «Puede provocar cáncer» es la H350 (GHS08) y «Puede irritar las vías respiratorias», la H335 (GHS07).",
+      "fuente": "Cuestionario 1246 #50; CLP, anexo I, tabla 3.1.3 · apunte §2.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "¿Qué significa el pictograma? (calavera y tibias, GHS06)"
+      },
+      "apartado": "2.3",
+      "evidencia": "Respuesta oficial: «Mortal en caso de ingestión», que es el texto de la indicación de peligro H300."
+    },
+    {
+      "id": "t20-q66",
+      "pregunta": "Un reactivo lleva el pictograma GHS08. ¿Qué consejo de prudencia está relacionado con él?",
+      "opciones": [
+        "En caso de ingestión, provocar el vómito.",
+        "Ninguno: el GHS08 no lleva consejos de prudencia de respuesta.",
+        "En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a un médico."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el P301 + P310. El GHS08 lo lleva por el peligro por aspiración (H304), cuyo otro consejo de respuesta es el P331, «NO provocar el vómito»: por eso la segunda opción es justo lo contrario.",
+      "fuente": "Cuestionario 1322 C2 #1; CLP, anexo IV · apunte §4",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Pictograma GHS08 del enunciado: consejo de prudencia relacionado"
+      },
+      "apartado": "4",
+      "evidencia": "Respuesta oficial: «En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a un médico», que es el P301 + P310"
     }
   ],
   "supuestos": [

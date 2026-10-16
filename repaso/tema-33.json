@@ -366,7 +366,7 @@
     {
       "id": "t33-f33",
       "anverso": "Frecuencias mínimas de **análisis de control** y **completo** en las zonas tipo 2 y 3.",
-      "reverso": "| Tipo de ZA | Análisis de control | Análisis completo | Radiactividad |\n| --- | --- | --- | --- |\n| **1** (menos de 10 m³) | A criterio de la autoridad sanitaria | Íd. | Íd. |\n| **2** (10 a 100 m³) | **3** | **1** | **1 cada 5 años** |\n| **3** (100 a 1 000 m³) | **4** | **2** | **1** |\n**El salto de la radiactividad es lo más llamativo:** de **una cada cinco años** en la tipo 2 se pasa a **una al año** en la tipo 3.\nEn las zonas 5 y 6, control y completo llevan **la misma fórmula**.",
+      "reverso": "| Tipo de ZA | Análisis de control | Análisis completo | Radiactividad |\n| --- | --- | --- | --- |\n| **1** (menos de 10 m³) | A criterio de la autoridad sanitaria | Íd. | Íd. |\n| **2** (10 a 100 m³) | **3** | **1** | **1 cada 5 años** |\n| **3** (100 a 1 000 m³) | **4** | **2** | **1** |\n**El salto de la radiactividad es lo más llamativo:** de **una cada cinco años** en la tipo 2 se pasa a **una al año** en la tipo 3.\nEn las zonas **4, 5 y 6** el **análisis de control** se calcula igual: **4 por los primeros 1 000 m³ + 3 por cada 1 000 adicionales**. En las **5 y 6**, lo que lleva la misma fórmula es el **completo** y la **radiactividad**.",
       "fuente": "RD 3/2023, anexo II parte C, tabla 8",
       "etiquetas": [
         "normativa",
@@ -729,6 +729,26 @@
       "evidencia": [
         "| pH | Parte C, nº 51 | 6,5-9,5 | < 4,5 / > 10,0 | Potenciometría (23) | ISO 10523:2008 |",
         "| Conductividad | Parte C, nº 47 | 2 500 µS/cm a 20 °C | 4 000 | Conductimetría (24) | ISO 7888:1985 |"
+      ]
+    },
+    {
+      "id": "t33-f64",
+      "anverso": "**Aluminio por eriocromocianina R**: ¿en qué técnica se basa, qué color da y cuál es su valor paramétrico?",
+      "reverso": "En la **absorción molecular UV-visible** (respuesta oficial del **1246, n.º 23**; los distractores eran **potenciometría** y **fluorescencia atómica**).\nLa eriocromocianina R da con el aluminio un **color rojo anaranjado**, proporcional a la concentración, que se mide a **535 nm** (Hach, método 8326).\nComo parámetro: **indicador de calidad**, VP **200 µg/L**, incertidumbre exigida del **25 %**. En el control solo se añade **si se usan sales de aluminio** en la potabilización.",
+      "fuente": "Cuestionario 1246 #23; Hach, método 8326; RD 3/2023, anexo I parte C y anexo III tabla 15 · apunte §2.12",
+      "etiquetas": [
+        "examen",
+        "tecnica"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "En la determinación de Aluminio por el método de la eriocromocianina R"
+      },
+      "apartado": "2.12",
+      "evidencia": [
+        "Respuesta oficial: absorción molecular UV-visible. Las otras opciones eran potenciometría y fluorescencia atómica.",
+        "valor paramétrico 200 µg/L, con una incertidumbre de medida exigida del 25 %"
       ]
     }
   ],
@@ -1662,6 +1682,25 @@
       },
       "apartado": "3",
       "evidencia": "| Turbidez | Parte C, nº 54 | 4,0 UNF (0,8 salida ETAP) | 2 / 6 UNF | Nefelometría (28) | — |"
+    },
+    {
+      "id": "t33-q69",
+      "pregunta": "En la determinación de aluminio por el método de la eriocromocianina R, la técnica instrumental utilizada se basa en:",
+      "opciones": [
+        "Potenciometría",
+        "Fluorescencia atómica",
+        "Absorción molecular UV-visible"
+      ],
+      "correcta": 2,
+      "explicacion": "La eriocromocianina R forma con el aluminio un color rojo anaranjado, proporcional a la concentración, que se mide a 535 nm: es una colorimetría con reactivo cromogénico.",
+      "fuente": "Cuestionario 1246 #23; Hach, método 8326 · apunte §2.12",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1246 · primer ejercicio",
+        "texto": "En la determinación de Aluminio por el método de la eriocromocianina R"
+      },
+      "apartado": "2.12",
+      "evidencia": "Respuesta oficial: absorción molecular UV-visible. Las otras opciones eran potenciometría y fluorescencia atómica."
     }
   ],
   "supuestos": [

@@ -150,6 +150,8 @@ La **capacidad de una disolución para conducir la corriente eléctrica**, que s
 
 **Equivalencia de unidades: 1 mS/m = 10 µS/cm.** La norma expresa el resultado en **S/m o submúltiplos**; los aparatos y el Real Decreto usan **µS/cm**.
 
+> **Lo que ha caído: 1322, n.º 17.** «¿En qué ley está basada la medida de la conductividad en el agua?» Respuesta oficial: **la ley de Ohm**. Los distractores eran la **ley de Beer-Lambert** (la de la espectrofotometría, tema 25) y la **ley de Gay-Lussac** (la de los gases). La guía de Mettler Toledo lo explica así: según la ley de Ohm, la tensión aplicada a la disolución es proporcional a la corriente que pasa, **V = R · I**. El conductivímetro aplica una tensión conocida, mide la corriente y obtiene la **resistencia, R = V / I**; su inversa es la **conductancia, G = 1 / R**, y con la constante de célula se llega a la conductividad, como en la tabla de arriba. La misma guía añade que se mide con **corriente alterna**: con corriente continua los iones emigran a los electrodos y la electrólisis altera la muestra.
+
 #### La temperatura, que aquí no es un detalle
 
 La conductividad **crece con la temperatura**, del orden de un **2 % por cada grado**, porque los iones se mueven más deprisa. Consecuencias:
@@ -300,6 +302,7 @@ Es justo la diferencia con el sensor óptico, que no consume oxígeno y **no nec
 - **Conductividad:** UNE-EN 27888:1994 (ISO 7888:1985). Estado comprobado en la tienda de AENOR: **En Vigor**, edición de **14/06/1994**, **confirmada el 21/05/2008**; anuló a UNE 77039:1983 y a UNE 77039:1988 ERRATUM. **No hay norma sustituta.**
 - **Oxígeno disuelto:** UNE-EN ISO 5814:2013 (ISO 5814:2012), aprobada en marzo de 2013. Método óptico alternativo: ISO 17289:2014.
 - **Norma legal:** RD 3/2023 (BOE-A-2023-628), texto consolidado, comprobado directamente en el BOE: conductividad con valor paramétrico **2 500 µS/cm a 20 °C** y valor de no aptitud **4 000** (anexo I, parte C, tabla 3, fila 47 y su nota 10); incertidumbres de medida de conductividad (15 %) y fluoruro (20 %) en el anexo III, parte D, tabla 15.
+- **Ley de Ohm (precedente 1322 n.º 17, añadido el 16/10/2026):** Mettler Toledo, *A Guide to Conductivity Measurement. Theory and Practice of Conductivity Applications*, apartados 2.2 («Definition of Conductivity»: V = R · I, R = V / I, G = 1 / R) y 2.4 («Measuring Principle»: corriente alterna para evitar la electrólisis). Documentación de fabricante, no norma; leída en la copia en PDF que publica la Universidad de Tel Aviv (https://www.tau.ac.il/~chemlaba/Files/conductivity_guide_EN%20(2).pdf). La guía se ofrece en mt.com, «Conductivity Measurement Theory Guide».
 - **Fecha de verificación:** 03/09/2026.
 
 ### Dudas y limitaciones declaradas

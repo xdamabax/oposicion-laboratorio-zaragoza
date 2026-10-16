@@ -950,7 +950,12 @@
       ],
       "correcta": 0,
       "explicacion": "Respuesta de 1322 C2 #37. Es una gravimetría con un paso de extracción: se separa lo insoluble, se extrae con un disolvente apolar y se pesa lo que queda al evaporarlo.",
-      "fuente": "Cuestionario 1322 C2 #37"
+      "fuente": "Cuestionario 1322 C2 #37",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Análisis de Grasas"
+      }
     },
     {
       "id": "t35-q26",

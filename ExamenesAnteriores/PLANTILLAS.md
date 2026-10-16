@@ -65,16 +65,16 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 38 | En la técnica PCR, el proceso en un ciclo térmico consta de las siguientes fases: | **a)** | Desnaturalización, hibridación y elongación | **16** |
 | 39 | En una placa de agar CN han crecido colonias de color verde/azul | **b)** | Son colonias de Pseudomonas aeruginosa | **12, 18** |
 | 40 | Recuento en placa: se siembran 100 µL de muestra sin diluir y se cuentan 97 colonias. ¿Cuántas ufc/mL hay en la muestra de partida? | **c)** | 9,7 × 10² | **12, 13** |
-| 41 | ¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido- base? | **c)** | 2 | 23 *(no la cita)* |
+| 41 | ¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido- base? | **c)** | 2 | **23** |
 | 42 | ¿Qué es una valoración por retroceso? | **b)** | Es un proceso en el cual el exceso de una disolución patrón empleada para consumir un… | **22, 33** |
 | 43 | Expresión de la absorbancia (P₀, potencia incidente; Pt, potencia transmitida) | **c)** | A = −log (Pt / P₀) | 25 *(no la cita)* |
-| 44 | En una determinación gravimétrica, el tamaño de partícula de un precipitado recién formado viene determinado por… | **a)** | Si predomina la nucleación, el resultado es un precipitado que contiene muchas partículas… | 21 *(no la cita)* |
+| 44 | En una determinación gravimétrica, el tamaño de partícula de un precipitado recién formado viene determinado por… | **a)** | Si predomina la nucleación, el resultado es un precipitado que contiene muchas partículas… | **21** |
 | 45 | En un electrodo indicador metálico, su potencial depende de la reacción redox que sucede en la interfase… | **a)** | Se utiliza un metal que está en contacto con una disolución que contiene su ión | 23 *(no la cita)* |
 | 46 | La región ultravioleta abarca el intervalo de longitudes de onda comprendido entre: | **a)** | 195 - 380 nm | **25** |
 | 47 | ¿Qué diana corresponde a resultados «exactos pero no precisos»? (opciones dibujadas) | **b)** | La diana b): impactos dispersos alrededor del centro | **38, 39** |
 | 48 | Coeficiente de correlación r de la recta de regresión: su valor oscila entre | **a)** | -1 y 1 | **39** |
 | 49 | En las valoraciones ácido-base se utilizan sustancias denominadas indicadores. Indique cuál no es un indicador en… | **c)** | Violeta de genciana | 22 *(no la cita)* |
-| 50 | ¿Qué significa el pictograma? (calavera y tibias, GHS06) | **a)** | Mortal en caso de ingestión | 20 *(no la cita)* |
+| 50 | ¿Qué significa el pictograma? (calavera y tibias, GHS06) | **a)** | Mortal en caso de ingestión | **20** |
 | R1 | Los gérmenes del género Salmonella | **a)** | No producen ureasa | **16** |
 | R2 | Según el Real Decreto 3/2023 de calidad de agua de consumo humano, ¿en qué unidades se expresa el parámetro Dureza? | **b)** | En mg/l de Carbonato cálcico | **33** |
 | R3 | ¿Qué es la alcalinidad de un agua? | **b)** | Se corresponde con el contenido en bicarbonato, carbonatos e hidróxidos | **33** |
@@ -101,7 +101,7 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 14 | En la técnica de espectrometría de absorción molecular UV-VIS, el rango de longitudes de onda utilizado para… | **a)** | Entre 180 y 780 nm | **25** |
 | 15 | ¿Cuál de los siguientes errores afectan a la medida del pH? | **a)** | Error alcalino y error ácido | 23 *(no la cita)* |
 | 16 | ¿Cuál de los siguientes cubetas de muestra se puede utilizar en la espectroscopía UV-VIS? | **a)** | Cubeta de cuarzo | 25 *(no la cita)* |
-| 17 | ¿En que ley está basada la medida de la conductividad en el agua? | **b)** | Ley de Ohm | 24 *(no la cita)* |
+| 17 | ¿En que ley está basada la medida de la conductividad en el agua? | **b)** | Ley de Ohm | **24** |
 | 18 | Si representamos la absorbancia a varias longitudes de onda, obtendremos: | **c)** | Un espectro de absorción | 25 *(no la cita)* |
 | 19 | Para esterilizar por calor húmedo se utiliza | **b)** | Autoclave | **11** |
 | 20 | ¿En que tipo de tinción se utiliza lugol? | **c)** | Tinción de Gram | **14** |
@@ -120,7 +120,7 @@ Las provisionales del 1233 y del 1322 coinciden con sus definitivas; el único c
 | 33 | En una separación cromatográfica de dos compuestos: | **b)** | A menor anchura de picos, mejor resolución | **30** |
 | 34 | En cromatografía líquida (HPLC) antes de la columna analítica y para aumentar la vida útil, conviene usar: | **b)** | Una precolumna | **30, 32** |
 | 35 | El detector de conductividad es el más utilizado en cromatografía líquida (HPLC) cuando los componentes de la… | **a)** | Compuestos iónicos | **30, 31, 32** |
-| 36 | Las columnas capilares utilizadas en cromatografía gaseosa | **c)** | Tienen un diámetro inferior a 1 mm | **30, 31** |
+| 36 | Las columnas capilares utilizadas en cromatografía gaseosa | **c)** | Tienen un diámetro inferior a 1 mm | **31** |
 | 37 | ¿Qué se entiende por sólidos en suspensión de un agua? | **c)** | Sólidos separados por filtración o centrifugación bajo condiciones específicas | **34** |
 | 38 | ¿Qué es o como se define la Demanda Química de Oxígeno o DQO? | **b)** | La concentración másica de oxígeno equivalente a la cantidad de dicromato consumido por… | **34** |
 | 39 | La dureza del agua | **a)** | Se corresponde con el contenido de sales de calcio y magnesio | **33** |
@@ -137,14 +137,14 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 
 | Nº | Pregunta | Oficial | Respuesta | Tema |
 | --- | --- | --- | --- | --- |
-| 1 | Pictograma GHS08 del enunciado: consejo de prudencia relacionado | **a)** | En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a… | 20 *(no la cita)* |
+| 1 | Pictograma GHS08 del enunciado: consejo de prudencia relacionado | **a)** | En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a… | **20** |
 | 2 | Pictograma GHS08 del enunciado: a qué peligro corresponde | **c)** | Peligro grave para la salud | 20 *(no la cita)* |
 | 3 | ¿Cual será el valor de R2 de la recta de calibrado del enunciado? | **a)** | 0,999 | **38, 39** |
-| 4 | Tras añadir los reactivos se ve una coloración azulada y el procedimiento indica medir a 620 nm | **a)** | El color observado es el esperado por lo que se puede seguir con el análisis | 25 *(no la cita)* |
+| 4 | Tras añadir los reactivos se ve una coloración azulada y el procedimiento indica medir a 620 nm | **a)** | El color observado es el esperado por lo que se puede seguir con el análisis | **25** |
 | 5 | Indicar que nivel de contención es suficiente para que el laboratorio objeto de la auditoría pueda realizar… | **b)** | Laboratorio tipo 2 | **9, 10** |
 | 6 | La ISO 17025 es una norma: | **b)** | Que es aplicada por los laboratorios de ensayo y calibración con el objetivo de demostrar… | **40** |
 | 7 | Adición de «patrón interno» de 5 mg/L; absorbancia total 0,50: concentración del analito según la recta del enunciado | **ANULADA** | — *(en la provisional era la b)* | **39** |
-| 8 | Se desea preparar una disolución de concentración de 1 M de hidróxido sódico. ¿Cuál de las siguientes preparaciones… | **a)** | 40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada | 22 *(no la cita)* |
+| 8 | Se desea preparar una disolución de concentración de 1 M de hidróxido sódico. ¿Cuál de las siguientes preparaciones… | **a)** | 40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada | **22** |
 | 9 | Se desea preparar una disolución de un analito de una concentración de 10 mg/l a partir de una solución madre de… | **c)** | Pipetear 1 ml de la solución madre y llevarlos a matraz aforado de 100 ml con agua… | 22 *(no la cita)* |
 | 10 | ¿Cual de los siguientes es un material de referencia válido para utilizarlo en una determinación solicitada de… | **ANULADA** | — *(en la provisional era la b)* | **38** |
 | 11 | Escherichia coli es miembro de la familia Enterobacteriaceae. Las enterobacterias se caracterizan por: | **b)** | Ser gramnegativos, aerobios y anaerobios facultativos y fermentar azucares | **14, 15, 16** |
@@ -195,7 +195,7 @@ Cuatro opciones por pregunta. **La #7 y la #10 están anuladas**: en la provisio
 | 11 | Actualmente se conoce como detector universal al: | **c)** | Detector selectivo de masas o MSD | **31** |
 | 12 | Un agente biológico que puede causar una enfermedad grave en las personas, con riesgo de que se propague a ia… | **b)** | Un agente biológico del grupo 3 | **9** |
 | 13 | Tras el crecimiento en el medio selectivo elegido, se confirma una colonia como Legionella spp cuando: | **c)** | Es capaz de crecer en agar BCYE y no en agar BCYE sin L-cisteína | **16, 18** |
-| 14 | Se entiende como especificidad de un medio de cultivo: | **b)** | Demostración, bajo condiciones definidas, de que los microorganismos no diana no… | **38** |
+| 14 | Se entiende como especificidad de un medio de cultivo: | **b)** | Demostración, bajo condiciones definidas, de que los microorganismos no diana no… | **12** |
 | 15 | Para diferenciar Pseudomonas de Enterobacterias, se utiliza la prueba bioquímica | **c)** | Oxidasa | **16** |
 | 16 | Cuál de las siguientes bacterias es Gram negativo: | **c)** | Citrobacter freundii | **14, 15, 16, 19** |
 | 17 | ¿Cuál de los siguientes equipos y materiales de laboratorio NO se utiliza en una determinación rutinaria de cloro… | **c)** | Una estufa | 25, 33 *(no la cita)* |
@@ -693,7 +693,7 @@ Sin plantilla publicada con los nombres probados: **1436** (Ingeniera/o Industri
 | 6 | De acuerdo con el artículo 17.1 de la Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local *(resto ilegible en el PDF)* | **b)** | Al Ayuntamiento, de acuerdo con lo que establezca la legislación del Estado. | 5 |
 | 7 | De acuerdo con el artículo 171 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido… | **a)** | Sólo cuando la impugnación se refiera o afecte a la nivelación presupuestaria | 6 |
 | 10 | De acuerdo con el artículo 39.3 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | 50 funcionarios. | 7 |
-| R4 | De acuerdo con el artículo 1.3 del estatuto de Autonomía de Aragón, la Gomunidad Autónoma de Aragón, dentro del… | **c)** | Su cultura. | 1 |
+| R4 | De acuerdo con el artículo 1.3 del estatuto de Autonomía de Aragón, la Gomunidad Autónoma de Aragón, dentro del… | **c)** | Su cultura. | 3 |
 | R5 | El Título lV de la Constitución española tiene como epigrafe | **b)** | Del Gobierno y de la Administración | 1 |
 
 ### 1345 · Oficial Mecánica/o (EET) · plantilla definitiva
@@ -708,7 +708,7 @@ Sin plantilla publicada con los nombres probados: **1436** (Ingeniera/o Industri
 | 6 | De acuerdo con el artículo 17.1 de la Ley 7/1985, de 2 de abril, reguladora de las bases del Régimen Local, la… | **b)** | Al Ayuntamiento, de acuerdo con lo que establezca la legislación del Estado | 5 |
 | 7 | De acuerdo con el artículo 171 del Real Decreto Legislativo 2/2004, de 5 de marzo, que aprueba el texto refundido… | **a)** | Sólo cuando la impugnación se refiera o afecte a la nivelación presupuestaria. | 6 |
 | 10 | De acuerdo con el artículo 39.3 del Real Decreto Legislativo 5/2015, de 30 de octubre, que aprueba el texto… | **b)** | 50 funcionarios. | 7 |
-| R4 | De acuerdo con el artículo 1.3 del estatuto de Autonomía de Aragón, Ia Gomunidad Autónoma de Aragón, dentro del… | **c)** | Su cultura. | 1 |
+| R4 | De acuerdo con el artículo 1.3 del estatuto de Autonomía de Aragón, Ia Gomunidad Autónoma de Aragón, dentro del… | **c)** | Su cultura. | 3 |
 
 ### 1357 · Técnica/o Auxiliar Delineante (PI), 6/10/2025 · plantilla definitiva
 
@@ -938,3 +938,4 @@ Sin plantilla en el tercer sondeo: **1319** y **1327** (Profesor de Danza Españ
 - **1322 C2 #7 y #10**: **anuladas**. Los temas 39 y 38 las mantienen como ejercicio, marcadas como anuladas.
 - **`ANALISIS.md`** tenía dos cifras que eran justo un distractor: «< 100 colonias» (oficial: **80**, 1246 #31) y «*Legionella* 44 ± 4 h» (oficial: **10 días**, 1322 #26). Corregidas.
 - **Dudas cerradas**: sodio → cromatografía iónica (1233 C2 #3; tema 26); «detector universal» → MSD (1233 #11; tema 31); confirmadas 1246 #19, #47 y #48 y 1322 C2 #3 (temas 38 y 39).
+- **Revisión del 16/10/2026 (columna «Tema»):** pasan a negrita, porque su apunte ya las desarrolla, 1246 #41 (tema 23), #44 (21) y #50 (20); 1322 #17 (24); y 1322 C2 #1 (20), #4 (25) y #8 (22). 1322 #36 (columnas capilares) queda solo en el **31**, que es donde se desarrolla; el 30 solo la anota. 1233 #14 (especificidad de un medio de cultivo) pasa del 38 al **12**, que es el que la desarrolla; el 38 la remite a microbiología. Y la R4 de 1344 y 1345 (art. 1.3 del Estatuto de Autonomía de Aragón) pasa del tema 1 al **3**: es del Estatuto, no de la Constitución.

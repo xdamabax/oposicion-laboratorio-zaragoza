@@ -644,7 +644,12 @@
       "opciones": ["La protección de la seguridad y la salud", "La información, la consulta, la participación equilibrada y la formación de los trabajadores en materia preventiva", "Todas las respuestas son correctas"],
       "correcta": 2,
       "explicacion": "Art. 2.1, párrafo segundo: también la eliminación o disminución de los riesgos. Basada en 1315 #11 (plantilla provisional: todas), reducida a tres opciones.",
-      "fuente": "LPRL, art. 2.1"
+      "fuente": "LPRL, art. 2.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1315",
+        "texto": "La Ley de Prevención de Riesgos Laborales establece los principios generales relativos a la prevención de los"
+      }
     },
     {
       "id": "t08-q11",
@@ -661,7 +666,12 @@
       "opciones": ["Herramientas que utiliza el empresario para inspecciones de seguridad", "Equipos destinados a proteger al trabajador frente a uno o más riesgos", "Dispositivos utilizados para gestionar los equipos de prevención"],
       "correcta": 1,
       "explicacion": "Art. 4.8.º: equipo destinado a ser llevado o sujetado por el trabajador. Pregunta literal de 1521 #29 (plantilla definitiva: b).",
-      "fuente": "LPRL, art. 4.8.º"
+      "fuente": "LPRL, art. 4.8.º",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1521",
+        "texto": "define el \"equipo de protección individual\" según ta Ley 31t1995"
+      }
     },
     {
       "id": "t08-q13",
@@ -669,7 +679,12 @@
       "opciones": ["Como un proceso opcional que puede realizar el empresario bajo ciertas condiciones", "Como un análisis exhaustivo de todos los aspectos laborales, realizado por el empresario", "Como el proceso de identificar y analizar riesgos laborales para adoptar medidas preventivas"],
       "correcta": 2,
       "explicacion": "Art. 16.2: la evaluación es obligatoria e instrumento esencial del plan. Pregunta literal de 1521 R2 (plantilla definitiva: c).",
-      "fuente": "LPRL, art. 16"
+      "fuente": "LPRL, art. 16",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1521",
+        "texto": "¿Cómo define la Ley 31/1995 la \"evaluación de riesgos\"?"
+      }
     },
     {
       "id": "t08-q14",
@@ -686,7 +701,12 @@
       "opciones": ["Los trabajadores tienen derecho a una protección eficaz en materia de seguridad y salud en el trabajo", "Existe un deber del empresario de protección de los trabajadores frente a los riesgos laborales", "Las respuestas a) y b) son correctas"],
       "correcta": 2,
       "explicacion": "Art. 14.1: el derecho y su deber correlativo. Pregunta literal de 1637 #8 (plantilla definitiva: c).",
-      "fuente": "LPRL, art. 14.1"
+      "fuente": "LPRL, art. 14.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1637",
+        "texto": "De acuerdo con el artículo 14.1 de la Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales"
+      }
     },
     {
       "id": "t08-q16",
@@ -703,7 +723,12 @@
       "opciones": ["El 22", "El 23", "El 24"],
       "correcta": 0,
       "explicacion": "Art. 22. El 23 es la documentación y el 24, la coordinación de actividades empresariales. Basada en 1315 #15 (plantilla provisional: 22), reducida a tres opciones.",
-      "fuente": "LPRL, art. 22"
+      "fuente": "LPRL, art. 22",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1315",
+        "texto": "de Prevención de Riesgos Laborales esta dedicado a la Vigilancia de la Salud"
+      }
     },
     {
       "id": "t08-q18",
@@ -729,7 +754,12 @@
       "opciones": ["A los superiores y a los trabajadores designados o, en su caso, al servicio de prevención", "A los superiores", "A los trabajadores designados o, en su caso, al servicio de prevención"],
       "correcta": 0,
       "explicacion": "Es el art. 29.2.4.º LPRL: a los dos. Pregunta literal de 1377 #10 y 1554 #10 (plantillas: a).",
-      "fuente": "LPRL, art. 29; Manual municipal"
+      "fuente": "LPRL, art. 29; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1377",
+        "texto": "Según el Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza los trabajadores deben"
+      }
     },
     {
       "id": "t08-q21",
@@ -737,7 +767,12 @@
       "opciones": ["A recibir gratuitamente los equipos de protección individual necesarios para el desempeño de sus funciones", "A recibir los equipos de protección individual necesarios para el desempeño de sus funciones", "Ninguna de las respuestas anteriores es correcta"],
       "correcta": 0,
       "explicacion": "La palabra que decide es «gratuitamente» (art. 14.5 LPRL: el coste nunca recae en el trabajador). Pregunta literal de 1554 R4 y 1377 R4 (plantillas: a).",
-      "fuente": "LPRL, arts. 14.5 y 17.2; Manual municipal"
+      "fuente": "LPRL, arts. 14.5 y 17.2; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1377",
+        "texto": "A recibir gratuitamente los equipos de protección individua"
+      }
     },
     {
       "id": "t08-q22",
@@ -745,7 +780,12 @@
       "opciones": ["A una información sobre los riesgos existentes que afecten a la empresa en su conjunto", "A una información sobre los riesgos existentes que afectan a cada tipo de trabajo o función", "Las respuestas a) y b) son correctas"],
       "correcta": 2,
       "explicacion": "Es el art. 18.1.a LPRL: los dos. Pregunta literal de 1357, 1360 y 1361 #7 (plantilla definitiva: c).",
-      "fuente": "LPRL, art. 18.1; Manual municipal"
+      "fuente": "LPRL, art. 18.1; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1357",
+        "texto": "El Manual Básico de Prevención de Riesgos Laborales del Ayuntamiento de Zaragoza reconoce a los trabajadores el"
+      }
     },
     {
       "id": "t08-q23",
@@ -753,7 +793,12 @@
       "opciones": ["No reconoce a los trabajadores el derecho a recibir formación", "Reconoce a los trabajadores el derecho a recibir formación", "Reconoce a los trabajadores el derecho a recibir formación teórica y práctica"],
       "correcta": 2,
       "explicacion": "Es el art. 19.1 LPRL: teórica y práctica, suficiente y adecuada. Pregunta literal de 1553 #9 (plantilla provisional: c).",
-      "fuente": "LPRL, art. 19; Manual municipal"
+      "fuente": "LPRL, art. 19; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1553",
+        "texto": "Reconoce a los trabajadores el derecho a recibir formación teórica y práctica"
+      }
     },
     {
       "id": "t08-q24",
@@ -761,7 +806,12 @@
       "opciones": ["Velar por la seguridad del resto de trabajadores", "Velar por la seguridad de aquellos trabajadores que puedan verse afectados por su trabajo", "Las respuestas a) y b) son correctas"],
       "correcta": 1,
       "explicacion": "Es el art. 29.1 LPRL: la de las personas a las que pueda afectar su actividad. Pregunta literal de 1367 #10 (plantilla provisional: b).",
-      "fuente": "LPRL, art. 29.1; Manual municipal"
+      "fuente": "LPRL, art. 29.1; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1367",
+        "texto": "Velar por la seguridad de aquellos trabajadores que puedan"
+      }
     },
     {
       "id": "t08-q25",
@@ -769,7 +819,12 @@
       "opciones": ["Es una facultad de los trabajadores", "Es un deber de los trabajadores", "Es un derecho de los trabajadores"],
       "correcta": 1,
       "explicacion": "Es el art. 29.2.6.º LPRL: una obligación. Pregunta literal de 1372 #10 (plantilla definitiva: b).",
-      "fuente": "LPRL, art. 29; Manual municipal"
+      "fuente": "LPRL, art. 29; Manual municipal",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1372",
+        "texto": "cooperar con el empresario"
+      }
     },
     {
       "id": "t08-q26",

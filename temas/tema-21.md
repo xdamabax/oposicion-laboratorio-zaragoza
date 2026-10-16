@@ -119,6 +119,8 @@ La secuencia clásica de una gravimetría por precipitación:
 
 De ahí las cuatro maniobras clásicas para bajar la sobresaturación: disolución **diluida**, adición del precipitante **lenta y con agitación**, precipitación **en caliente** (sube *S*) y control del **pH** para no precipitar de golpe. La versión refinada es la **precipitación en disolución homogénea**, en la que el precipitante se genera *in situ* poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco).
 
+> **Lo que ha caído: 1246, n.º 44.** «En una determinación gravimétrica, el tamaño de partícula de un precipitado recién formado viene determinado por el mecanismo predominante del proceso de formación del precipitado. Indique la afirmación correcta». Respuesta oficial: **a) «Si predomina la nucleación, el resultado es un precipitado que contiene muchas partículas pequeñas»**. Es la regla de arriba: nucleación, muchos núcleos pequeños; crecimiento de partícula, pocas partículas grandes.
+
 **3. Digestión o envejecimiento.** El precipitado se deja en su aguas madres, en caliente. Las partículas pequeñas, más solubles, se redisuelven y recristalizan sobre las grandes (**maduración de Ostwald**): el precipitado se hace más grueso, más puro y más filtrable.
 
 **4. Filtración.** Con papel sin cenizas y embudo si va a calcinarse, o con crisol filtrante si sólo va a secarse.
@@ -345,7 +347,7 @@ Los dos temas comparten enunciado casi palabra por palabra («Concepto, material
 
 ### Dudas y limitaciones declaradas
 
-Este tema **no aparece en ninguno de los seis cuestionarios analizados** con pregunta identificable de gravimetría o de balanzas, así que el nivel de detalle es una estimación, no una calibración sobre precedentes. Además:
+Este tema **tiene un precedente de examen**: el **1246, n.º 44**, sobre el tamaño de partícula de un precipitado recién formado (respuesta oficial: **si predomina la nucleación, muchas partículas pequeñas**), desarrollado en el apartado 2.3. Es la única pregunta de gravimetría o de balanzas en los seis cuestionarios de nuestra plaza, así que el nivel de detalle sigue siendo, en lo demás, una estimación y no una calibración sobre precedentes. *(Corregido el 16/10/2026: antes decía que el tema no aparecía en ningún cuestionario.)* Además:
 
 1. **La tabla numérica de clases de exactitud no se ha podido verificar.** Sé que está en el punto 2.1 de los requisitos metrológicos del apéndice I del anexo VI del RD 244/2016 (tabla 2), y que reproduce la de la Directiva 2014/31/UE. Los PDF del BOE y del DOUE no han podido extraerse en esta sesión. **Lo que sí está verificado**: los nombres de las cuatro clases (especial, fina, media, ordinaria), la existencia de *d* y *e*, y que ambos toman valores 1, 2 o 5 × 10^k. **Lo que NO he escrito por no poder verificarlo**: los valores concretos de *e*, de Min y del número de escalones *n* por clase, y la tabla de errores máximos permitidos por tramos de carga. Si quieres ese detalle, hay que consultar el anexo VI en papel o la UNE-EN 45501.
 

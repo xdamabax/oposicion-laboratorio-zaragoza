@@ -140,6 +140,8 @@ donde *k′* es la **pendiente práctica** del electrodo, obtenida con dos patro
 
 La consecuencia práctica es la que hay que llevarse: **calibrar no es un trámite previo a la medida, es parte de la definición de la medida**. Un pHímetro sin calibrar no da un pH «poco exacto»: no da un pH.
 
+> **Lo que ha caído: 1246, n.º 41.** «¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido-base?» Respuesta oficial: **2**. Las otras opciones eran **0,01** (la concentración, no su logaritmo) y **0,2**. El razonamiento tiene dos pasos. El **HCl es un ácido fuerte**, y los ácidos fuertes **se ionizan por completo** en agua (OpenStax, *Chemistry 2e*, 14.3), así que la concentración de iones hidronio es la del ácido, **0,01 mol/L = 10⁻² mol/L**. Y con la forma simplificada del pH, **pH = −log [H⁺]**, la que usa el procedimiento QU-003 del CEM (duda 2), sale **pH = −log 10⁻² = 2**. Es el cálculo con la concentración: la definición rigurosa, por actividad, es la del párrafo anterior.
+
 #### Los patrones de pH
 
 Los **patrones primarios** de IUPAC, con su valor a 25 °C:
@@ -513,6 +515,7 @@ Entre adición y adición, el equipo espera a que la señal **se equilibre**: o 
 - **Norma legal:** Real Decreto 3/2023 (BOE-A-2023-628), **texto consolidado**, comprobado directamente en el BOE: anexo I parte C (tabla 3, fila «pH»), anexo III parte B puntos 2 y 4, y anexo III parte D con la tabla 15 y su nota 4.
 - **Escala y patrones de pH:** recomendaciones de IUPAC de 2002 (ver duda 4).
 - **Pendientes de Nernst:** calculadas con R = 8,314 462 618 J·mol⁻¹·K⁻¹ y F = 96 485,332 12 C·mol⁻¹, y **contrastadas** con la tabla de un fabricante (coinciden a la centésima de milivoltio en 20, 25 y 30 °C).
+- **Ácidos fuertes (precedente 1246 n.º 41, añadido el 16/10/2026):** OpenStax, *Chemistry 2e*, apartado 14.3 «Relative Strengths of Acids and Bases» (Rice University, licencia CC BY), leído en línea ese día: *«An acid is classified as "strong" when it undergoes complete ionization»*, con el HCl en su lista de ácidos fuertes. — https://openstax.org/books/chemistry-2e/pages/14-3-relative-strengths-of-acids-and-bases
 - **Fecha de verificación:** 03/09/2026.
 
 ### Dudas y limitaciones declaradas

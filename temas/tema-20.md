@@ -73,6 +73,8 @@ Cada pictograma es un **rombo rojo sobre fondo blanco con un símbolo negro**. S
 
 > **Dos trampas clásicas.** La **calavera (GHS06)** es toxicidad aguda **categorías 1 a 3**; la categoría 4, menos grave, lleva el **signo de exclamación (GHS07)**, no la calavera. Y **GHS05 no es solo un peligro para la salud**: también marca los corrosivos para los metales, que es un peligro físico.
 
+> **Lo que ha caído de la calavera: 1246, n.º 50.** «¿Qué significa el siguiente pictograma?», con la calavera y las tibias. Respuesta oficial: **«Mortal en caso de ingestión»**, que es el texto de la indicación de peligro **H300**. En la tabla 3.1.3 del anexo I del CLP, la toxicidad aguda por vía oral de **categorías 1 y 2** lleva la calavera, la palabra «Peligro» y **H300: Mortal en caso de ingestión**; la categoría 3 lleva H301, «Tóxico en caso de ingestión». Los otros dos textos del examen son de otros pictogramas: **«Puede provocar cáncer»** es la H350 (carcinogenicidad, **GHS08**) y **«Puede irritar las vías respiratorias»** es la H335 (STOT única categoría 3, **GHS07**).
+
 ### 2.4. Novedades que todavía están entrando en vigor
 
 El **Reglamento Delegado (UE) 2023/707** añadió cuatro grupos de clases de peligro nuevas, con sus propias indicaciones EUH:
@@ -136,6 +138,8 @@ El **anexo IV** del CLP lista los consejos de prudencia en **cinco series**, y e
 | **P5xx** | **Eliminación** | P501 Eliminar el contenido/el recipiente en… |
 
 > Es un patrón muy rentable: si te preguntan qué consejo de prudencia corresponde a un pictograma, el **primer dígito** te dice ya si la respuesta es de prevención, de respuesta, de almacenamiento o de eliminación.
+
+> **Lo que ha caído: 1322, segundo ejercicio, n.º 1.** El enunciado muestra el pictograma **GHS08** (la pregunta siguiente, la n.º 2, pide su peligro: «peligro grave para la salud») y pregunta qué consejo de prudencia está relacionado con él. Respuesta oficial: **«En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a un médico»**, que es el **P301 + P310** en la redacción original del CLP (DOUE L 353, de 31/12/2008): *«EN CASO DE INGESTIÓN: Llamar inmediatamente a un CENTRO DE INFORMACIÓN TOXICOLÓGICA o a un médico»*. El GHS08 lo lleva por el **peligro por aspiración, categoría 1**: su tabla 3.10.2 del anexo I da **H304, «Puede ser mortal en caso de ingestión y penetración en las vías respiratorias»**, y como consejos de respuesta **P301 + P310** y **P331, «NO provocar el vómito»**. Por eso es falsa la opción **«En caso de ingestión, provocar el vómito»**: el CLP dice justo lo contrario. (El mismo P301 + P310 lo llevan también la toxicidad aguda oral de categorías 1 a 3, con la calavera.)
 
 ### 4.1. La etiqueta CLP: los ocho elementos del artículo 17
 
@@ -387,6 +391,7 @@ Los residuos de un laboratorio caen en el **capítulo 16, «Residuos no especifi
   - Ley 7/2022 (BOE-A-2022-5809), actualización de 11/03/2026.
 - **Guía técnica del INSST**, leída íntegra y directamente para el apartado 6.2: **NTP 725, «Seguridad en el laboratorio: almacenamiento de productos químicos»** (INSST, año 2006). De ella salen el sistema de islas / estanterías / península, la regla del medio litro en estantes elevados, los emplazamientos prohibidos, las categorías con separación propia y el riesgo del almacenamiento prolongado. Las NTP son **guías de buenas prácticas**, no normas obligatorias: el propio documento lo advierte en cabecera. — https://www.insst.es/documents/94886/196283/NTP+725+Seguridad+en+el+laboratorio.+almacenamiento+de+productos+qu%C3%ADmicos.pdf
 - **NTP 479**, «Prevención del riesgo en el laboratorio químico: reactividad de los productos químicos (II)» (INSST), consultada solo para el punto de los éteres y los peróxidos. — https://www.insst.es/documents/94886/326853/ntp_479.pdf
+- **Ampliación del 16 de octubre de 2026 (precedentes de examen 1246 n.º 50 y 1322, segundo ejercicio, n.º 1):** la H300, la H304, la H335, la H350, el P301 + P310 y el P331, y las tablas 3.1.3 y 3.10.2 del anexo I, leídos literalmente en el texto del **DOUE L 353, de 31/12/2008**, descargado del BOE (https://www.boe.es/doue/2008/353/L00001-01355.pdf). El examen copia esa redacción original («centro de información toxicológica»); la del apartado 4 sale de la edición de Sanidad.
 - **Fecha de verificación:** 1 de septiembre de 2026. **Ampliación del apartado 6.2** (islas y estanterías, colocación en el estante, almacenamiento prolongado) verificada sobre la NTP 725 el **18 de septiembre de 2026**.
 
 ### Dudas y ambigüedades declaradas

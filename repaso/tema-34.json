@@ -1616,6 +1616,44 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| DQO | Volumetría redox POR RETROCESO, tras digestión ácida |"
+    },
+    {
+      "id": "t34-q70",
+      "pregunta": "Se recibe en el laboratorio una muestra de agua residual. ¿Cómo se procede con la determinación del pH?",
+      "opciones": [
+        "Se mide lo antes posible, una vez recibida la muestra.",
+        "Se deja sedimentar la muestra 24 horas a temperatura ambiente y entonces se mide.",
+        "Se filtra la muestra y se mide en el filtrado."
+      ],
+      "correcta": 0,
+      "explicacion": "El pH cambia solo y deprisa dentro del envase: la tabla de conservación le da «analizar inmediatamente», con un plazo máximo de 15 minutos. Sedimentar 24 horas o filtrar alterarían la medida.",
+      "fuente": "Cuestionario 1322 C2 #31; tema 36, §2.6 · apunte §2.11",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Determinación de pH"
+      },
+      "apartado": "2.11",
+      "evidencia": "| n.º 31, determinación de pH | b) «Se mide lo antes posible, una vez recibida la muestra» |"
+    },
+    {
+      "id": "t34-q71",
+      "pregunta": "Se recibe en el laboratorio una muestra de agua residual. ¿Cómo se realiza el análisis de la DBO₅?",
+      "opciones": [
+        "Se filtra la muestra y se aplica el método de las diluciones en el filtrado.",
+        "Se realiza el método de las diluciones lo antes posible, una vez recibida la muestra.",
+        "Se digiere la muestra con ácido nítrico concentrado y, una vez fría, se aplica el método del dicromato."
+      ],
+      "correcta": 1,
+      "explicacion": "Los microorganismos siguen consumiendo la materia orgánica mientras la muestra espera. Filtrar va contra el método de referencia («muestra homogeneizada, sin filtrar ni decantar»), y la digestión con dicromato es la DQO.",
+      "fuente": "Cuestionario 1322 C2 #34; RD 509/1996, anexo I, cuadro 1 · apunte §2.11",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Análisis de Demanda Bioquímica de Oxígeno (DBO₅)"
+      },
+      "apartado": "2.11",
+      "evidencia": "| n.º 34, análisis de DBO₅ | b) «Se realiza el método de las diluciones lo antes posible, una vez recibida la muestra» |"
     }
   ],
   "supuestos": [

@@ -178,10 +178,12 @@ La **zona de abastecimiento (ZA)** se clasifica por **volumen de agua distribuid
 | **2** | 10 a 100 | **3** | **1** |
 | **3** | 100 a 1 000 | **4** | **2** |
 | **4** | 1 000 a 10 000 | 4 por los primeros 1 000 + 3 por cada 1 000 adicionales | 1 por los primeros 1 000 + 1 por cada 4 500 adicionales |
-| **5** | 10 000 a 100 000 | 3 por los primeros 10 000 + 1 por cada 10 000 adicionales | Igual |
-| **6** | **> 100 000** | 12 por los primeros 100 000 + 1 por cada 25 000 adicionales | Igual |
+| **5** | 10 000 a 100 000 | Igual que la tipo 4: 4 por los primeros 1 000 + 3 por cada 1 000 adicionales | 3 por los primeros 10 000 + 1 por cada 10 000 adicionales |
+| **6** | **> 100 000** | Igual que la tipo 4: 4 por los primeros 1 000 + 3 por cada 1 000 adicionales | 12 por los primeros 100 000 + 1 por cada 25 000 adicionales |
 
-**Zaragoza es zona tipo 6**, y conviene tenerlo presente: es la única en la que control y completo llevan **la misma fórmula**, y la que fija el corte del COT frente a la oxidabilidad.
+**Ojo a cómo está hecha la tabla del RD** (anexo II, parte C): en el BOE, la casilla del **análisis de control** de la zona tipo 4 es **una sola celda que ocupa también las filas de las zonas 5 y 6**. Así que en las tres el control se calcula igual: **4 por los primeros 1 000 m³ + 3 por cada 1 000 m³ adicionales**. Lo que cambia en las zonas 5 y 6 es el **análisis completo**. La tabla tiene además una cuarta columna, el **control de radiactividad**: 1 cada 5 años en la tipo 2; 1 en la tipo 3; 1 por los primeros 1 000 m³ + 1 por cada 3 300 adicionales en la tipo 4; y en las tipos 5 y 6, **la misma fórmula que el análisis completo**.
+
+**Zaragoza es zona tipo 6**, y conviene tenerlo presente: es de las que controlan el COT en lugar de la oxidabilidad.
 
 ### 2.5. Lo que el RD exige al MÉTODO (anexo III), y la única excepción
 
@@ -442,6 +444,8 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 
 **El oxígeno disuelto.** El tema 24 dejó dicho que el parámetro se desarrollaba «en el 33 (agua de consumo) y en el 34 (residuales)». Leído el anexo I entero, **el resultado es que en agua de consumo no hay parámetro de oxígeno disuelto**: no está en la parte B, ni en la C, ni en la F. La técnica —**Winkler** y **sonda**— es de los temas 22 y 24, y el parámetro se sitúa en el **tema 34**. Se deja escrito aquí para que nadie lo busque dos veces. *(Matiz añadido al redactar el 34: allí **tampoco es un valor límite de vertido**. Su papel es doble —se mide **dentro del ensayo de la DBO**, y es un **indicador del medio receptor**—, y así queda explicado en el apartado 2.10 de aquel tema.)*
 
+**El aluminio, y la técnica que ha caído (1246, n.º 23).** «En la determinación de aluminio por el método de la **eriocromocianina R**, la técnica instrumental utilizada se basa en…» Respuesta oficial: **absorción molecular UV-visible**. Las otras opciones eran **potenciometría** y **fluorescencia atómica**. El método 8326 de Hach, adaptado de *Standard Methods*, lo resume así: la eriocromocianina R reacciona con el aluminio y da un **color rojo anaranjado**, cuya intensidad es **proporcional a la concentración de aluminio**, y se mide a **535 nm**. Es, por tanto, una colorimetría con reactivo cromogénico, como las del tema 25. Como parámetro, el aluminio es un **indicador de calidad** del RD 3/2023 (anexo I, parte C, tabla 3): valor paramétrico **200 µg/L**, con una incertidumbre de medida exigida del **25 %** (anexo III, tabla 15). En el análisis de control solo se añade **si se usan sales de aluminio en la potabilización** (apartado 2.3).
+
 ---
 
 ## 3. Tabla operativa
@@ -537,6 +541,8 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 - **Exámenes anteriores:** los **seis** cuestionarios extraídos a texto y releídos. Las **ocho** preguntas del recuadro inicial están **transcritas literalmente** de ellos, con su numeración, incluidas las **dos de reserva** de la convocatoria 1246, que no aparecían recogidas en `ANALISIS.md` y que son **de este tema las dos**.
 - **`TEMARIO EXTRA/`:** consultado antes de redactar, según la regla fija del proyecto. `MAPEO.md` da el tema 33 como **«sin nada»**. No aporta nada y no se ha usado.
 - **Figuras:** las dos de este tema (`cloracion-punto-ruptura` y `alcalinidad-valoracion`) se han añadido al catálogo con **cuatro controles nuevos** en `verificar-figuras.js` y **cuatro sabotajes** que los prueban. Los de la primera comprueban, **sobre el trazado**, que la curva **sube, baja hasta un mínimo y vuelve a subir**, que **la marca cae en ese mínimo** calculado y que el **cloro libre se rotula después** de él; los de la segunda, que **las dos marcas caen encima de la curva** a las alturas de pH 8,3 y 4,5 y en ese orden, y que **el pH solo baja** a lo largo de la valoración.
+- **Corrección del 16/10/2026, frecuencias del apartado 2.4:** releída la tabla de frecuencias del anexo II, parte C, en el HTML del texto consolidado del BOE (https://www.boe.es/buscar/act.php?id=BOE-A-2023-628). La casilla del **análisis de control** de la zona tipo 4 lleva rowspan="3": es una sola celda que abarca las zonas 4, 5 y 6. La versión anterior del apunte la había leído fila a fila y ponía en la columna de control de las zonas 5 y 6 la fórmula que en realidad es la del **completo**, y en la del completo, «Igual». De ahí salía también la frase de que la zona 6 era «la única» con la misma fórmula en control y completo, que era falsa. Corregidas la tabla y la frase; la tarjeta t33-f33 repetía el error y se ha corregido como excepción aprobada.
+- **Aluminio (precedente 1246 n.º 23, añadido el 16/10/2026):** Hach, método 8326, «Aluminum. Eriochrome Cyanine R Method» (DOC316.53.01003, 11.ª ed., adaptado de *Standard Methods*), apartado «Summary of Method», leído en PDF ese día (https://cdn.hach.com/7FYZVWYB/at/cz4t3tktpkvr3c3njrwwkbc/DOC3165301003_11ed.pdf). Documentación de fabricante, no norma. El valor paramétrico (tabla 3, parámetro 41) y la incertidumbre (tabla 15), en el texto consolidado del RD 3/2023.
 - **Fecha de verificación:** 22/09/2026.
 
 ### Dudas y limitaciones declaradas

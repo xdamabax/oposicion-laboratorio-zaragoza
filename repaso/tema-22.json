@@ -644,6 +644,26 @@
       ],
       "apartado": "3",
       "evidencia": "Valoración con ácido hasta pH definidos; aplicable directamente hasta 20 mmol/L"
+    },
+    {
+      "id": "t22-f60",
+      "anverso": "¿Cómo se prepara una disolución **1 M de NaOH**, con Na = 23, O = 16 y H = 1 g/mol? ¿Qué dos matices tiene?",
+      "reverso": "**40 g de NaOH por litro**, respuesta oficial del **1322, segundo ejercicio, n.º 8**: la masa molar es 23 + 16 + 1 = **40 g/mol**, y 1 M es **un mol por litro**.\nMatices: la molaridad es por litro **de disolución**, así que se **enrasa a 1 L en matraz aforado**; y el NaOH **no es patrón primario**, de modo que sale de concentración aproximada y hay que **factorizarla**.",
+      "fuente": "Cuestionario 1322 C2 #8 · apunte §2.3",
+      "etiquetas": [
+        "examen",
+        "calculo"
+      ],
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Se desea preparar una disolución de concentración de 1 M de hidróxido sódico"
+      },
+      "apartado": "2.3",
+      "evidencia": [
+        "La masa molar del NaOH es 23 + 16 + 1 = 40 g/mol, y 1 M es un mol por litro: respuesta oficial, «40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada».",
+        "el NaOH no es patrón primario, de modo que esa disolución sale de concentración aproximada y hay que factorizarla."
+      ]
     }
   ],
   "test": [
@@ -1523,6 +1543,25 @@
       "fuente": "Método clásico · apunte §3",
       "apartado": "3",
       "evidencia": "Indicador murexida, a pH alto, con el magnesio precipitado como hidróxido"
+    },
+    {
+      "id": "t22-q64",
+      "pregunta": "Con los pesos atómicos Na = 23, O = 16 y H = 1 g/mol, ¿qué preparación da una disolución 1 M de hidróxido sódico?",
+      "opciones": [
+        "40 g de hidróxido sódico disueltos en 1 litro de agua destilada",
+        "4 g de hidróxido sódico disueltos en 1 litro de agua destilada",
+        "10 g de hidróxido sódico disueltos en 1 litro de agua destilada"
+      ],
+      "correcta": 0,
+      "explicacion": "40 g/mol × 1 mol/L = 40 g por litro. En rigor, los 40 g se enrasan a 1 L de disolución en matraz aforado; y como el NaOH no es patrón primario, la disolución hay que factorizarla.",
+      "fuente": "Cuestionario 1322 C2 #8 · apunte §2.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1322 · segundo ejercicio",
+        "texto": "Se desea preparar una disolución de concentración de 1 M de hidróxido sódico"
+      },
+      "apartado": "2.3",
+      "evidencia": "La masa molar del NaOH es 23 + 16 + 1 = 40 g/mol, y 1 M es un mol por litro: respuesta oficial, «40 gramos de hidróxido sódico disueltos en 1 litro de agua destilada»."
     }
   ],
   "supuestos": [

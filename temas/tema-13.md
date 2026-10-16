@@ -450,6 +450,12 @@ Es el método de la **UNE-EN ISO 9308-2** (coliformes y *E. coli* por NMP). Seg�
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **NMP/100 mL** | **< 1** | 1,0 | 5,3 | 11,1 | **12,4** | 25,4 | **30,6** | 45,3 | 78,2 | 200,5 | **> 200,5** |
 
+Otros valores de la misma tabla, los que usa el supuesto de agua fría del repaso:
+
+| Pocillos positivos | 12 | 19 | 31 | 43 |
+| --- | --- | --- | --- | --- |
+| **NMP/100 mL** | 13,7 | 23,8 | 47,8 | 94,5 |
+
 **Cómo se resuelve el 1322, 2.º ejercicio, #16 y #17:**
 
 | Paso | Coliformes | *E. coli* |
@@ -534,6 +540,7 @@ Existe un sistema comercial de NMP para ***L. pneumophila*** (**Legiolert**):
 5. **Tabla de 51 pocillos:**
    - **Los valores con decimales son los de IDEXX**, comprobados a la vista en su tabla y en la que adjuntó el examen: son idénticas.
    - **La guía británica redondea a enteros**: 31 pocillos dan 48 en su tabla y 47,8 en la del fabricante.
+   - **Valores de 12, 19, 31 y 43 pocillos, añadidos el 16/10/2026.** El supuesto t13-s02 del repaso los usaba (12 → 13,7; 19 → 23,8; 31 → 47,8; 43 → 94,5) y no estaban en la tabla del apunte. Comprobados contra la tabla de NMP para Quanti-Tray de 51 celdas que adjunta el propio cuestionario del 1322, segundo ejercicio (hoja 5 de 9), extraída a texto: los cuatro coinciden. El supuesto estaba bien; lo que faltaba era el dato en el apunte.
    - En el examen manda la tabla adjunta.
 6. **Tablas de tubos:** solo se han usado los **ejemplos que el propio texto de la fuente resuelve**: 3-2-0 → 13/100 mL y 3-1-0 → 43/g. Las tablas completas no se transcriben: al extraer el texto, sus columnas salían desalineadas.
 7. **Lo que no se trata:**

@@ -761,7 +761,12 @@
       "opciones": ["20 por 100 del colectivo convocado", "30 por 100 del colectivo convocado", "40 por 100 del colectivo convocado"],
       "correcta": 2,
       "explicacion": "Art. 46.1.d. Pregunta literal de 1446 #16 (plantilla definitiva: c).",
-      "fuente": "TREBEP, art. 46.1.d"
+      "fuente": "TREBEP, art. 46.1.d",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1446",
+        "texto": "De acuerdo con el artículo46.1d) del Real Decreto Legislativo"
+      }
     },
     {
       "id": "t07-q12",
@@ -787,7 +792,12 @@
       "opciones": ["Es con cambio de localidad de residencia", "Es sin cambio de localidad de residencia", "Puede ser con o sin cambio de localidad de residencia"],
       "correcta": 2,
       "explicacion": "Art. 96.1.d. Basada en 1497 R5 (plantilla provisional: c), reducida a tres opciones.",
-      "fuente": "TREBEP, art. 96.1.d"
+      "fuente": "TREBEP, art. 96.1.d",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1497",
+        "texto": "De acuerdo con el artículo 96.f.d) del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q15",
@@ -821,7 +831,12 @@
       "opciones": ["Obtenido por oposición", "Obtenido por concurso-oposición", "Obtenido por concurso"],
       "correcta": 2,
       "explicacion": "Art. 20.4. Pregunta literal de 1357, 1360 y 1361 #4 (plantilla definitiva: c).",
-      "fuente": "TREBEP, art. 20.4"
+      "fuente": "TREBEP, art. 20.4",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1357",
+        "texto": "Obtenido por concurso."
+      }
     },
     {
       "id": "t07-q19",
@@ -829,7 +844,12 @@
       "opciones": ["Por la legislación laboral", "En lo no previsto en dicho Estatuto, por la legislación laboral", "Por dicho Estatuto"],
       "correcta": 1,
       "explicacion": "Art. 93.4. Pregunta literal de 1357, 1360 y 1361 #5 (plantilla definitiva: b).",
-      "fuente": "TREBEP, art. 93.4"
+      "fuente": "TREBEP, art. 93.4",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1360",
+        "texto": "El artículo 93.4 del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q20",
@@ -837,7 +857,12 @@
       "opciones": ["El incumplimiento de la obligación de atender el servicio en caso de huelga", "El incumplimiento de la obligación de atender los servicios esenciales en caso de huelga", "Ninguna de las dos respuestas anteriores es correcta"],
       "correcta": 1,
       "explicacion": "Art. 95.2.m: los servicios esenciales. Pregunta literal de 1372 #9 (plantilla definitiva: b) y 1543 #9.",
-      "fuente": "TREBEP, art. 95.2.m"
+      "fuente": "TREBEP, art. 95.2.m",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1372",
+        "texto": "El incumplimiento de la obligación de atender los servicios esenciales"
+      }
     },
     {
       "id": "t07-q21",
@@ -880,7 +905,12 @@
       "opciones": ["25 funcionarios", "50 funcionarios", "100 funcionarios"],
       "correcta": 1,
       "explicacion": "Art. 39.3. Por debajo, Delegados de Personal. Pregunta literal de 1345 #10 (plantilla definitiva: b) y 1344 #10.",
-      "fuente": "TREBEP, art. 39.3"
+      "fuente": "TREBEP, art. 39.3",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1345",
+        "texto": "De acuerdo con el artículo 39.3 del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q26",
@@ -888,7 +918,12 @@
       "opciones": ["Al siete por ciento de las vacantes", "Al cinco por ciento de las vacantes", "Al tres por ciento de las vacantes"],
       "correcta": 0,
       "explicacion": "Art. 59.1. Basada en 1779 #16 (plantilla definitiva: a), reducida a tres opciones.",
-      "fuente": "TREBEP, art. 59.1"
+      "fuente": "TREBEP, art. 59.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1779",
+        "texto": "artículo 59.1 del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q27",
@@ -896,7 +931,12 @@
       "opciones": ["A los ciudadanos, a sus superiores y a los restantes empleados públicos", "A los ciudadanos y a sus superiores", "A los ciudadanos"],
       "correcta": 0,
       "explicacion": "Art. 54.1. Pregunta literal de 1367 #1 (plantilla provisional: a).",
-      "fuente": "TREBEP, art. 54.1"
+      "fuente": "TREBEP, art. 54.1",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1367",
+        "texto": "De acuerdo con el artículo 54.1 del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q28",
@@ -904,7 +944,12 @@
       "opciones": ["Siempre que sea oficial en el territorio", "Siempre que sea oficial en el municipio", "Siempre que sea oficial en la Comunidad Autónoma"],
       "correcta": 0,
       "explicacion": "Art. 54.11. Pregunta literal de 1367 #3 (plantilla provisional: a).",
-      "fuente": "TREBEP, art. 54.11"
+      "fuente": "TREBEP, art. 54.11",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1367",
+        "texto": "De acuerdo con el artículo 54.11 del Real Decreto Legislativo 5/2015"
+      }
     },
     {
       "id": "t07-q29",

@@ -653,7 +653,12 @@
       "opciones": ["Están sujetos al Impuesto sobre Vehículos de Tracción Mecánica", "No están sujetos al Impuesto sobre Vehículos de Tracción Mecánica", "Están exentos del Impuesto sobre Vehículos de Tracción Mecánica"],
       "correcta": 2,
       "explicacion": "Están exentos (93.1.g), previa solicitud (93.2). No sujetos son otros: los dados de baja por antigüedad y los remolques de hasta 750 kg. Pregunta literal de 1446 #13 (Policía Local, 2024; plantilla definitiva: c).",
-      "fuente": "TRLRHL, art. 93"
+      "fuente": "TRLRHL, art. 93",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1446",
+        "texto": "De acuerdo con el artículo 93.f g) del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q15",
@@ -661,7 +666,12 @@
       "opciones": ["De hasta el 90 por ciento en función de la clase de carburante que consuma el vehículo, en razón a la incidencia de la combustión de dicho carburante en el medio ambiente", "De hasta el 75 por ciento en función de las características de los motores de los vehículos y su incidencia en el medio ambiente", "Ninguna de las respuestas anteriores es correcta"],
       "correcta": 1,
       "explicacion": "Art. 95.6.b. La del carburante también existe, pero es de hasta el 75 %, no el 90 %. Pregunta literal de 1681 R1 (plantilla definitiva: b).",
-      "fuente": "TRLRHL, art. 95.6"
+      "fuente": "TRLRHL, art. 95.6",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1681",
+        "texto": "De acuerdo con el artículo 95.6 del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q16",
@@ -669,7 +679,12 @@
       "opciones": ["Los Ayuntamientos podrán establecer un precio público para la celebración de matrimonios civiles", "Los Ayuntamientos podrán establecer una tasa para la celebración de los matrimonios civiles", "Los Ayuntamientos no podrán exigir tasa por la celebración de matrimonios civiles"],
       "correcta": 1,
       "explicacion": "Art. 20.5, literal. Pregunta de 1681 #44 (plantilla definitiva: b).",
-      "fuente": "TRLRHL, art. 20.5"
+      "fuente": "TRLRHL, art. 20.5",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1681",
+        "texto": "De acuerdo con el artículo 20.5 del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q17",
@@ -686,7 +701,12 @@
       "opciones": ["Antes del día 31 de diciembre del año anterior al del ejercicio en que deba aplicarse", "Antes del ejercicio en que deba aplicarse", "Antes del 1 de enero del ejercicio en que deba aplicarse"],
       "correcta": 0,
       "explicacion": "Art. 169.2, literal. Pregunta de 1519 R4 (Oficial de Mantenimiento, 2024; plantilla definitiva: a).",
-      "fuente": "TRLRHL, art. 169.2"
+      "fuente": "TRLRHL, art. 169.2",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1519",
+        "texto": "De acuerdo con el artículo'169.2 del Real Decreto Legistativo"
+      }
     },
     {
       "id": "t06-q19",
@@ -702,7 +722,12 @@
       "opciones": ["Al principio de sostenibilidad financiera", "Al principio de prudencia financiera", "Al principio de estabilidad presupuestaria"],
       "correcta": 1,
       "explicacion": "Art. 48 bis.1, literal. Pregunta de 1681 #14 (plantilla definitiva: b).",
-      "fuente": "TRLRHL, art. 48 bis"
+      "fuente": "TRLRHL, art. 48 bis",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1681",
+        "texto": "De acuerdo con el artículo 48 bis. 1. del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q21",
@@ -792,7 +817,12 @@
       "opciones": ["Sólo cuando la impugnación se refiera o afecte a la nivelación presupuestaria", "No", "Sí"],
       "correcta": 0,
       "explicacion": "Art. 171.2. Pregunta literal de 1345 #7 (Oficial Mecánico EET; plantilla definitiva: a) y 1344 #7.",
-      "fuente": "TRLRHL, art. 171"
+      "fuente": "TRLRHL, art. 171",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1345",
+        "texto": "De acuerdo con el artículo 171 del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q32",
@@ -800,7 +830,12 @@
       "opciones": ["Todas las operaciones financieras que suscriban las Corporaciones Locales están sujetas al principio de prudencia financiera", "Las Corporaciones Locales velarán por la aplicación del principio de prudencia financiera en el conjunto de su sector público", "Las respuestas a) y b) son correctas"],
       "correcta": 2,
       "explicacion": "La a) es el art. 48 bis.1 y la b) el 48 bis.4. Pregunta literal de 1345 #4 (plantilla definitiva: c) y 1344 #4.",
-      "fuente": "TRLRHL, art. 48 bis"
+      "fuente": "TRLRHL, art. 48 bis",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1345",
+        "texto": "De acuerdo con el artículo 48 bis del Real Decreto Legislativo 2/2004"
+      }
     },
     {
       "id": "t06-q33",
@@ -808,7 +843,12 @@
       "opciones": ["De los medios necesarios para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas", "De los medios suficientes para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas", "De los medios adecuados para el desempeño de las funciones que la ley atribuye a las Corporaciones respectivas"],
       "correcta": 1,
       "explicacion": "Art. 142 CE: medios suficientes. Pregunta literal de 1331 #3 (plantilla definitiva: b) y 1681 R5.",
-      "fuente": "Constitución, art. 142"
+      "fuente": "Constitución, art. 142",
+      "nucleo": true,
+      "precedente": {
+        "plantilla": "1331",
+        "texto": "De acuerdo con el artículo 142 de la Constitución española, las Haciendas locales deberán disponer:"
+      }
     },
     {
       "id": "t06-q34",
