@@ -63,6 +63,7 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
   Excepciones aprobadas el 16/10/2026 (el detalle de cada una, con su cuestionario, en `scripts/excepciones-integridad.json`):
   - **Pasan a núcleo** (campos `nucleo` y `precedente`), 36 preguntas que ya habían caído en exámenes: tema 3, `q08`, `q11` y `q12`; tema 4, `q13`, `q23` y `q29`; tema 5, `q13`; tema 6, `q14`, `q15`, `q16`, `q18`, `q20`, `q31`, `q32` y `q33`; tema 7, `q11`, `q14`, `q18`, `q19`, `q20`, `q25`, `q26`, `q27` y `q28`; tema 8, `q10`, `q12`, `q13`, `q15`, `q17` y de `q20` a `q25`; tema 35, `q25`.
   - **Dejan de ser núcleo** (campos `nucleo` y `reverso`): `t38-f25` y `t39-f04`, que se apoyaban en 1322, segundo ejercicio, n.º 10 y n.º 7, **anuladas por el tribunal**. Su reverso dice ahora que la pregunta fue anulada, en lugar de presentarla como respuesta del examen.
+  - **Deja de ser núcleo** (campos `nucleo` y `explicacion`): `t38-q16`, la pregunta de test que se apoyaba en la misma 1322, segundo ejercicio, n.º 10 (anulada). Su explicación dice ahora que fue anulada.
   - **Corregida** (campo `reverso`): `t33-f33`, que repetía un error de lectura de la tabla de frecuencias del RD 3/2023 (ver tema 33, apartado 2.4).
 
 | Tema | Tarjetas | Test (3 op.) | Supuestos (4 op.) | Huecos de cobertura que había |
@@ -105,14 +106,14 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
 | 36 | 45 → 60 | 30 → 69 | 2 → 4 | reparto de origen 10/12/8 y 3/3/3/1 compensado; ninguna núcleo nueva (los precedentes del tema son de 1246 C2, sin plantilla) |
 | 37 | 45 → 58 | 30 → 69 | 2 → 4 | reparto de origen 10/12/8 y 2/3/4/1 compensado; ninguna núcleo nueva (los tres precedentes ya lo eran) |
 | 38 | 46 → 65 | 31 → 69 | 2 → 4 | ninguna núcleo nueva (R² y medios de cultivo se remiten al 39 y a microbiología); 1233 2.ª #14 asignada al 38 en PLANTILLAS, el apunte la deja a microbiología |
-| 39 | 45 → 60 | 30 → 69 | 2 → 4 | ninguna núcleo nueva (los tres precedentes ya lo eran); t39-f04 y t38-f25 son núcleo con preguntas anuladas por el tribunal (1322 C2 #7 y #10) |
+| 39 | 45 → 60 | 30 → 69 | 2 → 4 | ninguna núcleo nueva (los tres precedentes ya lo eran); t39-f04 y t38-f25 eran núcleo con preguntas anuladas por el tribunal (1322 C2 #7 y #10); el 16/10/2026 dejan de serlo, con t38-q16 |
 | 40 | 46 → 59 | 30 → 69 | 2 → 4 | 1 núcleo nueva con precedente (1322 C2 #6) |
-| **Total** | **1.863 → 2.668** | **1.167 → 2.848** | **58 → 128** (290 → 640 preguntas) | Núcleo: 1.612 → 1.808 elementos, cada uno nuevo con su precedente. Reparto global de las correctas: test 953/949/946; supuestos 160/160/160/160 |
+| **Total** | **1.863 → 2.668** | **1.167 → 2.848** | **58 → 128** (290 → 640 preguntas) | Núcleo: 1.612 → 1.807 elementos, cada uno nuevo con su precedente. Reparto global de las correctas: test 953/949/946; supuestos 160/160/160/160 |
 
 **Cierre de la ampliación (15/10/2026).** Los 40 temas están ampliados y publicados, cada uno con su batería completa (14 controles y 14 sabotajes, PDF, cuestionario y figuras) y comprobado después contra la web publicada.
 
 **Revisión del 16/10/2026.** Aprobadas y aplicadas las propuestas del informe final de la ampliación:
-- **Núcleo:** las 36 preguntas con precedente pasan a núcleo, y `t38-f25` y `t39-f04` dejan de serlo (excepciones de arriba).
+- **Núcleo:** las 36 preguntas con precedente pasan a núcleo, y `t38-f25`, `t38-q16` y `t39-f04` dejan de serlo (excepciones de arriba).
 - **Apuntes ampliados con su fuente**, cada precedente con su tarjeta y su pregunta núcleo: tema 20 (1246 #50 y 1322 C2 #1), 22 (1322 C2 #8), 23 (1246 #41), 24 (1322 #17), 25 (1322 C2 #4) y 33 (1246 #23). En el tema 34, apartado 2.11 nuevo con 1322 C2 #31 y #34. El 1322 #13 no se ha añadido: su plantilla no tiene contenido.
 - **Erratas comprobadas contra la fuente:** en el tema 22 (§2.3) era errónea la «bureta de 25 mL con divisiones de 0,5 mL»; la tabla, con 0,05 mL, estaba bien. En el tema 33 (§2.4) estaban mal la tabla y la frase: el análisis de control de las zonas 5 y 6 es el de la tipo 4. En el tema 13, el supuesto t13-s02 estaba bien; al apunte le faltaban esas filas de la tabla de 51 pocillos.
 - **Precedentes y asignaciones:** el tema 2 ya cuenta sus cuatro precedentes de otras plazas, y el 21 su 1246 #44; en `PLANTILLAS.md`, la R4 de 1344 y 1345 pasa al tema 3, 1233 #14 al 12 y 1322 #36 solo al 31.
