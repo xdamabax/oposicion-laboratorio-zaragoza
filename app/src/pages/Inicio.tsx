@@ -70,6 +70,9 @@ export default function Inicio() {
         <Link className="btn" to="/temas">
           Los 40 temas
         </Link>
+        <Link className="btn" to="/mixto">
+          Test mixto
+        </Link>
         <Link className="btn" to="/progreso">
           Mi progreso
         </Link>

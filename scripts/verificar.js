@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Las dos baterias de una vez. Es lo que hay que pasar antes de dar por cerrado
+ * Las tres baterias de una vez: esquemas, repaso y test mixto. Es lo que hay que pasar antes de dar por cerrado
  * un tema.
  *
  *   npm run verificar                  -> esquemas + repaso de todos los temas
@@ -31,7 +31,7 @@ function ejecutar(guion) {
 }
 
 const codigos = []
-for (const guion of ['verificar-figuras.js', 'verificar-repaso.js']) {
+for (const guion of ['verificar-figuras.js', 'verificar-repaso.js', 'verificar-mixto.js']) {
   console.log(`\n\n──────── ${guion} ────────`)
   codigos.push(await ejecutar(guion))
 }
@@ -39,7 +39,7 @@ for (const guion of ['verificar-figuras.js', 'verificar-repaso.js']) {
 const fallidos = codigos.filter((c) => c !== 0).length
 console.log(
   fallidos
-    ? `\n${fallidos} de 2 baterías con controles sin pasar.`
-    : '\nLas dos baterías pasan.',
+    ? `\n${fallidos} de ${codigos.length} baterías con controles sin pasar.`
+    : '\nLas tres baterías pasan.',
 )
 process.exit(fallidos ? 1 : 0)

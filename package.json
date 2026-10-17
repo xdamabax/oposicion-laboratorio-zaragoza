@@ -17,7 +17,8 @@
     "verificar:editor": "node scripts/verificar-editor.js",
     "verificar:word": "node scripts/verificar-word.js",
     "verificar:temario": "node scripts/verificar-temario.js",
-    "verificar:cuestionario": "node scripts/verificar-cuestionario.js"
+    "verificar:cuestionario": "node scripts/verificar-cuestionario.js",
+    "verificar:mixto": "node scripts/verificar-mixto.js"
   },
   "dependencies": {
     "@tiptap/core": "^3.31.4",

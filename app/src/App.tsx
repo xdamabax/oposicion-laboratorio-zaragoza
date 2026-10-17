@@ -13,6 +13,8 @@ const Editar = lazy(() => import('./pages/Editar'))
 // Los paneles del temario completo y del cuestionario, tambien aparte
 const PrepararTemario = lazy(() => import('./pages/Preparar').then((m) => ({ default: m.PrepararTemario })))
 const PrepararTest = lazy(() => import('./pages/Preparar').then((m) => ({ default: m.PrepararTest })))
+// El test mixto trae el mapa de apartados de todos los temas: tambien aparte
+const Mixto = lazy(() => import('./pages/Mixto'))
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
@@ -46,6 +48,9 @@ export default function App() {
             <NavLink to="/temas" className={clase}>
               Temario
             </NavLink>
+            <NavLink to="/mixto" className={clase}>
+              Test mixto
+            </NavLink>
             <NavLink to="/progreso" className={clase}>
               Progreso
             </NavLink>
@@ -62,6 +67,14 @@ export default function App() {
           <Route path="/" element={<Inicio />} />
           <Route path="/temas" element={<Temas />} />
           <Route path="/tema/:numero" element={<Tema />} />
+          <Route
+            path="/mixto"
+            element={
+              <Suspense fallback={<p className="sub">Cargando…</p>}>
+                <Mixto />
+              </Suspense>
+            }
+          />
           <Route path="/progreso" element={<Progreso />} />
           <Route path="/figuras" element={<Figuras />} />
           <Route

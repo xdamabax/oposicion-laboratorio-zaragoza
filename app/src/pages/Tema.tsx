@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import { getTema, TEMAS } from '../content'
 import Etiqueta from '../components/Etiqueta'
@@ -6,6 +7,7 @@ import Flashcards from '../components/Flashcards'
 import Test from '../components/Test'
 import Supuestos from '../components/Supuestos'
 import BotonPDF from '../components/BotonPDF'
+import { buscarApartado } from '../lib/apartado'
 
 type Vista = 'apunte' | 'tarjetas' | 'test' | 'supuestos'
 const ROTULO: Record<Vista, string> = {
@@ -93,7 +95,7 @@ export default function Tema() {
           </Link>
         </div>
       )}
-      {vista === 'apunte' && <Apunte tema={tema} />}
+      {vista === 'apunte' && <Apunte tema={tema} apartado={params.get('ap')} />}
       {vista === 'tarjetas' && <Flashcards tarjetas={tema.repaso?.flashcards ?? []} />}
       {vista === 'test' && (tema.repaso?.test.length ?? 0) > 0 && (
         <div className="botones" style={{ marginBottom: '0.9rem' }}>
@@ -131,7 +133,27 @@ export default function Tema() {
   )
 }
 
-function Apunte({ tema }: { tema: NonNullable<ReturnType<typeof getTema>> }) {
+function Apunte({
+  tema,
+  apartado,
+}: {
+  tema: NonNullable<ReturnType<typeof getTema>>
+  /** `?ap=2.1`: el apartado al que se llega desde la corrección del test mixto */
+  apartado: string | null
+}) {
+  const articulo = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    if (!articulo.current) return
+    // Solo uno señalado: al cambiar de apartado sin recargar, el anterior se apaga
+    articulo.current.querySelectorAll('.md-apartado-destino').forEach((h) => h.classList.remove('md-apartado-destino'))
+    if (!apartado) return
+    const titulo = buscarApartado(articulo.current, apartado)
+    if (!titulo) return
+    titulo.classList.add('md-apartado-destino')
+    titulo.scrollIntoView({ block: 'start' })
+  }, [apartado, tema.numero])
+
   if (!tema.apunte) {
     return (
       <div className="vacio">
@@ -147,7 +169,7 @@ function Apunte({ tema }: { tema: NonNullable<ReturnType<typeof getTema>> }) {
   const { apunte } = tema
 
   return (
-    <article>
+    <article ref={articulo}>
       {apunte.estado === 'borrador' && (
         <div className="aviso">
           <b>Borrador pendiente de tu revisión.</b> Todavía no se generan tarjetas ni preguntas a

@@ -152,7 +152,8 @@ ExamenesAnteriores/     Cuestionarios de convocatorias previas y su análisis.
 ExamenesAnteriores/PLANTILLAS.md  Respuestas oficiales (plantillas del Ayuntamiento), leídas por píxeles; las de nuestra plaza, también a la vista.
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
-scripts/verificar.js    Las dos baterías de verificación de una vez.
+scripts/verificar.js    Las tres baterías de verificación de una vez.
+scripts/verificar-mixto.js  Test mixto: solo los temas elegidos, sin repetidas, el tema oculto hasta corregir, y el recuento.
 scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie ni salta sin necesidad.
 scripts/verificar-editor.js  Editor de descarga: el apunte sin tocar da el mismo PDF, y sus funciones.
 scripts/verificar-word.js  Exportación a Word: el .docx tiene los mismos títulos, tablas, figuras y texto que el apunte.
@@ -318,7 +319,7 @@ Comprobado generando el PDF en las dos posiciones de la casilla (`displayHeaderF
 
 ## Verificación
 
-Dos baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
+Tres baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
 
 - Un índice `correcta` desplazado en uno da un JSON válido y un test que **enseña la respuesta equivocada**.
 - Un esquema equivocado **se pinta igual de bien** que uno correcto: la curva de desviación de Beer llegó a dibujarse arrancando *por encima* de la recta ideal, que enseña justo lo contrario de lo que hay que aprender.
@@ -326,7 +327,7 @@ Dos baterías que **conducen la app ya construida** y miden lo que de verdad se 
 
 ```bash
 npm run build                     # las baterías miden dist/, no el código fuente
-npm run verificar                 # las dos, sobre todos los temas
+npm run verificar                 # las tres, sobre todos los temas
 npm run verificar -- 26           # solo un tema
 npm run verificar -- 26 --sabotajes
 npm run verificar -- --base https://xdamabax.github.io/oposicion-laboratorio-zaragoza/
@@ -364,6 +365,8 @@ Y el **PDF no se encoge**. Si algo es más ancho que el papel, Chrome no lo cort
 
 `verificar-word.js` (`npm run verificar:word`) — **la exportación a Word**. En cada tema pulsa «Descargar Word» en el editor sin tocar nada, abre el `.docx` (un ZIP con XML) y lo compara con `temas/tema-NN.md` leído con el mismo parser que la app: que esté bien hecho (piezas obligatorias, XML legible, cada imagen con su fichero); los mismos títulos, en orden y con su nivel; las mismas tablas, con sus filas, columnas y cabecera, la cabecera repetida y ninguna fila partible; una imagen por figura y todas con dibujo (se mide la tinta: una imagen en blanco no da ningún error); todo el texto entero y en orden; «conservar con el siguiente» en títulos, entradas y cabeceras; y cada elemento de lista con su viñeta o número, siguiendo el camino párrafo → `w:num` → `w:abstractNum` → nivel. En el tema 20 comprueba además que una edición, un salto de página y las cuatro opciones llegan al Word. Con `--sabotajes` estropea el `.docx` de ocho maneras (un título, la cabecera repetida, una figura en blanco, un párrafo, el «conservar» de una entrada, el fichero de una imagen, la viñeta de un elemento, una numeración que no existe) y exige que salte su control y ninguno más. No hay Word en el equipo: la comprobación es de estructura. Para mirarlo se pintó con `docx-preview`, que no sigue el camino de la numeración y no dibuja las viñetas; Word sí lo sigue, y el control 7 comprueba que el camino está entero.
 
+`verificar-mixto.js` (`npm run verificar:mixto`) — **el test mixto**, en 9 controles. El sorteo es al azar, así que cada pasada mide una sesión distinta; y como la app no dice de qué tema es una pregunta hasta corregirla, la batería tampoco se lo pregunta: identifica cada pregunta por su texto contra `repaso/tema-NN.json`. Cada control conduce su propia sesión en una página limpia, a ancho de móvil (390 px): que **solo salgan preguntas de los temas elegidos** (y en supuestos, solo de los temas 9-40, con su enunciado; el 5 elegido no aporta ninguna); que **ninguna se repita**, ni siquiera la que el dato tiene en dos temas (t26-q19 y t27-q22); que **el tema no asome antes de contestar** —ni «Tema N» ni el título— y sí al corregir; que **el desglose por tema cuadre** con el total, la nota y lo contestado; que **las opciones salgan en el orden del dato** y la marcada sea la correcta; que **«repetir solo las falladas» traiga esas y ninguna más**; que **cada respuesta quede en el progreso con su id**, igual que en el test del tema; que **la selección se recuerde al recargar**; y que **el enlace de la corrección lleve al apartado del apunte** que respalda la pregunta, señalado y a la vista (además de los del sorteo, comprueba los 588 apartados a los que puede llevar cualquier pregunta). Nueve sabotajes, cada uno a su control: una pregunta de otro tema, una repetida, el tema a la vista, una fila del desglose de más, dos opciones cruzadas, una acertada entre las falladas, un fallo que no llega al progreso, la selección sin un tema y un enlace a otro apartado.
+
 ### Las pruebas se prueban a sí mismas
 
 `--sabotajes` rompe cada cosa a propósito antes de medir y exige que salte **su** control y ninguno más. Es lo que impide que un control se quede en verde por vacío: la primera versión del detector de figuras rotas daba falso negativo, y tres de estos sabotajes estaban mal escritos —uno tocaba la curva equivocada, otro sacaba un rótulo del lienzo de rebote y otro encogía a la vez lo pedido y lo pintado, así que se anulaba solo—. Sin este modo no se habría visto.
@@ -396,6 +399,10 @@ npm run build    # genera dist/
 ## Despliegue
 
 GitHub Actions (`.github/workflows/deploy.yml`) construye y publica en **GitHub Pages** en cada push a `main`: https://xdamabax.github.io/oposicion-laboratorio-zaragoza/
+
+## Test mixto
+
+Menú **Test mixto**: preguntas al azar de varios temas a la vez. Se eligen los temas (casillas, «todos», «ninguno», cada parte o un rango), el tipo (test de 3 opciones, o supuestos de 4, solo temas 9-40), «solo núcleo» y cuántas (10, 20, 30, 50 o todas). Las preguntas salen en orden aleatorio, **las opciones nunca se barajan** (hay opciones que se refieren a otras, y el reparto de letras correctas de cada tema está compensado), y el tema no se ve hasta corregir: entonces salen el tema, la explicación, la fuente y un enlace al apartado del apunte, que se abre en otra pestaña (`#/tema/N?ap=2.1`). Las preguntas de un supuesto salen sueltas, cada una con el enunciado de su supuesto. Al terminar, la nota con la penalización de 1/4, el desglose por tema, las falladas y «repetir solo las falladas». Cada respuesta se registra con el id de la pregunta, igual que en el test del tema. La última selección se guarda en `localStorage` (`oposicion-zgz:mixto:v1`). Una misma pregunta que está en dos temas (t26-q19 y t27-q22) sale una sola vez.
 
 ## Progreso de estudio
 
