@@ -23,6 +23,10 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import puppeteer from 'puppeteer-core'
+import { fromMarkdown } from 'mdast-util-from-markdown'
+import { gfmFromMarkdown } from 'mdast-util-gfm'
+import { toString } from 'mdast-util-to-string'
+import { gfm } from 'micromark-extension-gfm'
 
 import { RAIZ, argumento, bandera, buscarChrome, decidirBase, temasConRepaso } from './comun.js'
 import * as amp from './ampliacion.js'
@@ -58,9 +62,13 @@ function nombresNeutros() {
 /* Lo que se ejecuta dentro de la pagina                                */
 /* ------------------------------------------------------------------ */
 
-/** Responde todas las preguntas visibles pulsando siempre la a). */
-const recorrer = (pag, opcionDeMas = false) =>
-  pag.evaluate(async (deMas) => {
+/**
+ * Responde todas las preguntas visibles pulsando siempre la a). Con
+ * `asteriscos`, cada negrita de la explicacion vuelve a su `**texto**`, como
+ * se veia cuando la explicacion se pintaba en texto plano.
+ */
+const recorrer = (pag, opcionDeMas = false, asteriscos = false) =>
+  pag.evaluate(async (deMas, conAsteriscos) => {
     const dormir = (ms) => new Promise((r) => setTimeout(r, ms))
     const leidas = []
     for (let vuelta = 0; vuelta < 200; vuelta++) {
@@ -77,11 +85,28 @@ const recorrer = (pag, opcionDeMas = false) =>
       const marcada = [...document.querySelectorAll('.opciones button.opcion')].findIndex((b) =>
         b.classList.contains('opcion-ok'),
       )
+      const explica = document.querySelector('.explica')
+      if (conAsteriscos && explica?.querySelector('.md')) {
+        // las dos maneras de pintarla mal: las negritas con sus marcas a la
+        // vista, o los asteriscos que son contenido comidos como marcas
+        const fuertes = explica.querySelectorAll('strong')
+        for (const s of fuertes) s.replaceWith(`**${s.textContent}**`)
+        if (!fuertes.length) {
+          const recorrido = document.createTreeWalker(explica.querySelector('.md'), NodeFilter.SHOW_TEXT)
+          for (let n = recorrido.nextNode(); n; n = recorrido.nextNode()) n.nodeValue = n.nodeValue.replace(/\*/g, '')
+        }
+      }
+      // la explicacion sola: sin el veredicto ni la fuente
+      const solo = explica?.cloneNode(true)
+      solo?.querySelector('b')?.remove()
+      solo?.querySelectorAll('.flash-pista').forEach((x) => x.remove())
       leidas.push({
         nOpciones,
         marcada,
-        veredicto: document.querySelector('.explica b')?.textContent?.trim(),
+        veredicto: explica?.querySelector('b')?.textContent?.trim(),
         nucleo: !!document.querySelector('.et-nucleo'),
+        explicacion: solo?.textContent ?? '',
+        negritas: explica?.querySelectorAll('strong').length ?? 0,
       })
       const siguiente = [...document.querySelectorAll('.botones button')].find((b) =>
         /Siguiente|Ver resultado/.test(b.textContent),
@@ -93,7 +118,7 @@ const recorrer = (pag, opcionDeMas = false) =>
       if (ultima) break
     }
     return leidas
-  }, opcionDeMas)
+  }, opcionDeMas, asteriscos)
 
 /* ------------------------------------------------------------------ */
 
@@ -159,7 +184,83 @@ async function verificarTema(nav, base, tema, sab) {
     await controlesApp(b, datos, tema, sab, NEUTROS, conFigura)
   }
   controlesDato(b, datos, tema, sab)
+  if (sab >= 9 && sab <= 14) {
+    b.resultados.push({ nombre: NOMBRE_EXPLICACIONES, estado: 'n/a', detalle: 'sabotaje del dato: la app no se abre' })
+  } else {
+    await controlExplicaciones(b, datos, tema, sab)
+  }
   return b.resultados
+}
+
+/* ------------------------------------------------------------------ */
+/* 15. Las explicaciones, con formato: sin asteriscos sueltos           */
+
+const NOMBRE_EXPLICACIONES = 'Explicaciones · con formato, sin asteriscos sueltos'
+
+/** La explicacion leida con el mismo parser que la app (react-markdown + GFM). */
+const arbolMd = (md) => fromMarkdown(md, { extensions: [gfm()], mdastExtensions: [gfmFromMarkdown()] })
+const cuentaNodos = (n, tipo) => (n.type === tipo ? 1 : 0) + (n.children ?? []).reduce((a, c) => a + cuentaNodos(c, tipo), 0)
+const enLinea = (s) => s.replace(/\s+/g, ' ').trim()
+
+/**
+ * Las explicaciones cuyo aspecto depende del Markdown: las que llevan algun
+ * asterisco (negritas en 38 y 39; asteriscos que son contenido, como el
+ * «grupo 3 (**)» del 9 o el «16 05 04*» del 20) o cambian al leerlas.
+ */
+const dependeDelMd = (q) => {
+  const e = q.explicacion ?? ''
+  return e.includes('*') || enLinea(toString(arbolMd(e))) !== enLinea(e)
+}
+
+/**
+ * Solo recorre el test o los supuestos que tienen alguna (hoy, temas 9, 20,
+ * 38 y 39): el test del tema y los supuestos son el mismo componente, y
+ * recorrerlo todo en los 40 temas costaria minutos sin mirar nada mas.
+ * Lo que se ve tiene que ser exactamente lo que pinta el Markdown: sin las
+ * marcas de las negritas, con los asteriscos que son contenido y con tantas
+ * negritas como el dato.
+ */
+async function controlExplicaciones(b, datos, tema, sab) {
+  await b.control(NOMBRE_EXPLICACIONES, async () => {
+    const tandas = []
+    if (datos.test.some(dependeDelMd)) tandas.push({ vista: 'test', preguntas: datos.test })
+    datos.supuestos.forEach((s, n) => {
+      if (s.preguntas.some(dependeDelMd)) tandas.push({ vista: 'supuestos', n, preguntas: s.preguntas })
+    })
+    if (!tandas.length) return null
+    const vistas = []
+    for (const t of tandas) {
+      const pag = await b.abrir(tema, t.vista)
+      if (t.vista === 'supuestos') {
+        await pag.evaluate((i) => document.querySelectorAll('button.item')[i].click(), t.n)
+        await new Promise((r) => setTimeout(r, 350))
+      }
+      const leidas = await recorrer(pag, false, sab === 15)
+      await pag.close()
+      if (leidas.length !== t.preguntas.length) {
+        throw new Error(`la app muestra ${leidas.length} preguntas y el dato tiene ${t.preguntas.length}`)
+      }
+      t.preguntas.forEach((q, i) => {
+        if (!dependeDelMd(q)) return
+        const arbol = arbolMd(q.explicacion)
+        const esperado = enLinea(toString(arbol))
+        const visto = enLinea(leidas[i].explicacion)
+        if (visto !== esperado) {
+          let k = 0
+          while (k < visto.length && visto[k] === esperado[k]) k++
+          const trozo = (s) => s.slice(Math.max(0, k - 30), k + 30)
+          throw new Error(`${q.id}: se ve «…${trozo(visto)}…» y el Markdown pinta «…${trozo(esperado)}…»`)
+        }
+        const negritas = cuentaNodos(arbol, 'strong')
+        if (leidas[i].negritas !== negritas) {
+          throw new Error(`${q.id}: se pintan ${leidas[i].negritas} negritas y el dato tiene ${negritas}`)
+        }
+        const asteriscos = (esperado.match(/\*/g) ?? []).length
+        vistas.push(`${q.id} (${negritas ? `${negritas} negrita${negritas === 1 ? '' : 's'}` : `${asteriscos} asteriscos de contenido`})`)
+      })
+    }
+    return `${vistas.length} se ven como pinta el Markdown: ${vistas.join(', ')}`
+  })
 }
 
 const NOMBRES_APP = [
@@ -523,6 +624,7 @@ const SABOTAJES = {
   12: 'una correcta nueva movida de la letra con menos a la de más',
   13: 'una pregunta nueva copiada con otras palabras',
   14: 'un apartado numerado del apunte que nada pregunta',
+  15: 'una explicación mal pintada: negritas con sus asteriscos, o asteriscos de contenido comidos',
 }
 /**
  * Qué control(es) debe tumbar cada sabotaje, por su índice en los resultados.
@@ -531,7 +633,7 @@ const SABOTAJES = {
  */
 const CONTROL_DE = {
   1: [0], 2: [1], 3: [2], 4: [3], 5: [4], 6: [5], 7: [6], 8: [7],
-  9: [8], 10: [9], 11: [10], 12: [11], 13: [12], 14: [13],
+  9: [8], 10: [9], 11: [10], 12: [11], 13: [12], 14: [13], 15: [14],
 }
 
 function pinta(titulo, resultados) {

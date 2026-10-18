@@ -144,8 +144,9 @@ export default function Test({
 
         {respondida && (
           <div className="explica">
-            <b>{elegida === p.correcta ? 'Correcto.' : 'Incorrecto.'}</b>{' '}
-            {p.explicacion && <span>{p.explicacion}</span>}
+            <b>{elegida === p.correcta ? 'Correcto.' : 'Incorrecto.'}</b>
+            {/* con formato, como en el test mixto: hay explicaciones con negritas */}
+            {p.explicacion && <Markdown>{p.explicacion}</Markdown>}
             {p.fuente && (
               <p className="flash-pista" style={{ margin: '0.5rem 0 0' }}>
                 Fuente: {p.fuente}
