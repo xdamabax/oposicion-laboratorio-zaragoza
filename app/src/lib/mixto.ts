@@ -1,4 +1,5 @@
 import { TEMAS } from '../content'
+import { huella } from './indice'
 import type { PreguntaTest, Supuesto } from '../types'
 
 /**
@@ -56,7 +57,7 @@ const APARTADO_DE: Map<string, string> = (() => {
   return mapa
 })()
 
-function apartadoDe(p: PreguntaTest, s?: Supuesto): string | null {
+export function apartadoDe(p: { id: string; apartado?: string }, s?: Supuesto): string | null {
   // Las preguntas de un supuesto anterior a la ampliacion las cubre el supuesto entero.
   return p.apartado ?? APARTADO_DE.get(p.id) ?? (s ? APARTADO_DE.get(s.id) : undefined) ?? null
 }
@@ -70,19 +71,6 @@ export function temasConTipo(tipo: TipoMixto): number[] {
       : t.numero >= PRIMER_TEMA_SUPUESTOS && (t.repaso?.supuestos.length ?? 0) > 0,
   ).map((t) => t.numero)
 }
-
-/** Enunciado y opciones sin mayusculas, tildes, puntuacion ni marcas de negrita. */
-const huella = (p: PreguntaTest) =>
-  [p.pregunta, ...p.opciones]
-    .map((x) =>
-      x
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]+/g, ' ')
-        .trim(),
-    )
-    .join('|')
 
 /**
  * Todas las preguntas de los temas elegidos, en el orden del dato. Una misma

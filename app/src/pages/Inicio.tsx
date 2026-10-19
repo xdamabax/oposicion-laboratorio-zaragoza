@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { TEMAS, TEMARIO_PENDIENTE, TOTAL_NUCLEO, TOTAL_PREGUNTAS, TOTAL_TARJETAS } from '../content'
 import { useProgreso } from '../lib/progreso'
 import { tocaHoy } from '../lib/srs'
+import { contarPendientes } from '../lib/indice'
 import AvisoPenalizacion from '../components/AvisoPenalizacion'
 import BotonPDF from '../components/BotonPDF'
 
@@ -15,6 +16,8 @@ export default function Inicio() {
     (n, t) => n + (t.repaso?.flashcards.filter((f) => tocaHoy(progreso.tarjetas[f.id])).length ?? 0),
     0,
   )
+
+  const falladas = contarPendientes(progreso.falladas)
 
   const siguienteTema = conRepaso.find((t) =>
     t.repaso?.flashcards.some((f) => tocaHoy(progreso.tarjetas[f.id])),
@@ -73,10 +76,27 @@ export default function Inicio() {
         <Link className="btn" to="/mixto">
           Test mixto
         </Link>
+        <Link className="btn" to="/falladas">
+          Test de falladas ({falladas.total})
+        </Link>
         <Link className="btn" to="/progreso">
           Mi progreso
         </Link>
       </div>
+      <p className="contador inicio-falladas" data-total={falladas.total} style={{ margin: '0.6rem 0 0' }}>
+        {falladas.total === 0 ? (
+          'Ninguna fallada pendiente: lo que falles en cualquier test irá al test de falladas.'
+        ) : (
+          <>
+            Falladas pendientes: {falladas.porClase.test} de test, {falladas.porClase.supuestos} de
+            supuestos y {falladas.porClase.tarjetas} tarjetas. Por tema:{' '}
+            {[...falladas.porTema.entries()]
+              .map(([tema, f]) => `${tema} (${f.test + f.supuestos + f.tarjetas})`)
+              .join(', ')}
+            .
+          </>
+        )}
+      </p>
 
       <h2>Descargas</h2>
       <div className="tarjeta">

@@ -7,6 +7,8 @@ import Progreso from './pages/Progreso'
 import Figuras from './pages/Figuras'
 import { ImprimirTema, ImprimirTemario, ImprimirTest } from './pages/Imprimir'
 import SelectorTema from './components/SelectorTema'
+import { useProgreso } from './lib/progreso'
+import { contarPendientes } from './lib/indice'
 
 // El editor de descarga arrastra TipTap: se carga solo cuando se abre.
 const Editar = lazy(() => import('./pages/Editar'))
@@ -15,11 +17,15 @@ const PrepararTemario = lazy(() => import('./pages/Preparar').then((m) => ({ def
 const PrepararTest = lazy(() => import('./pages/Preparar').then((m) => ({ default: m.PrepararTest })))
 // El test mixto trae el mapa de apartados de todos los temas: tambien aparte
 const Mixto = lazy(() => import('./pages/Mixto'))
+// El de falladas comparte con el mixto la sesion y el mapa de apartados
+const Falladas = lazy(() => import('./pages/Falladas'))
 
 const clase = ({ isActive }: { isActive: boolean }) => (isActive ? 'activo' : undefined)
 
 export default function App() {
   const { pathname } = useLocation()
+  const { falladas } = useProgreso()
+  const pendientes = contarPendientes(falladas).total
 
   // Las vistas de impresion se sirven sin cabecera ni pie: el documento que
   // se ve en pantalla es exactamente el que sale por la impresora o al PDF.
@@ -49,7 +55,12 @@ export default function App() {
               Temario
             </NavLink>
             <NavLink to="/mixto" className={clase}>
-              Test mixto
+              <span className="nav-largo">Test mixto</span>
+              <span className="nav-corto">Mixto</span>
+            </NavLink>
+            <NavLink to="/falladas" className={clase}>
+              Falladas
+              {pendientes > 0 && <span className="nav-n">{pendientes}</span>}
             </NavLink>
             <NavLink to="/progreso" className={clase}>
               Progreso
@@ -72,6 +83,14 @@ export default function App() {
             element={
               <Suspense fallback={<p className="sub">Cargando…</p>}>
                 <Mixto />
+              </Suspense>
+            }
+          />
+          <Route
+            path="/falladas"
+            element={
+              <Suspense fallback={<p className="sub">Cargando…</p>}>
+                <Falladas />
               </Suspense>
             }
           />

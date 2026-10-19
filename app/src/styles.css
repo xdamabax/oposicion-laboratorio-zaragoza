@@ -141,15 +141,25 @@ a {
   color: var(--accent);
 }
 
-/* En un movil, los cinco enlaces y el boton del tema caben en una fila */
+/* En un movil, los seis enlaces y el boton del tema caben en una fila: «Test
+   mixto» se queda en «Mixto» */
 @media (max-width: 30rem) {
   .nav {
     gap: 0;
     margin-left: -0.5rem;
   }
   .nav a {
-    padding: 0.35rem 0.4rem;
-    font-size: 0.84rem;
+    padding: 0.35rem 0.22rem;
+    font-size: 0.8rem;
+  }
+  .nav-largo {
+    display: none;
+  }
+}
+
+@media (min-width: 30.01rem) {
+  .nav-corto {
+    display: none;
   }
 }
 
@@ -792,6 +802,55 @@ h2 {
 
 .mixto-buena {
   color: var(--ok);
+}
+
+/* ---------- Test de falladas ---------- */
+
+/* Cuantas falladas tiene el tema, en la esquina de su casilla */
+.falladas-n {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.falladas-resumen {
+  margin: 0 0 1rem;
+}
+
+.falladas-pendientes td.num,
+.falladas-pendientes th:not(:first-child) {
+  text-align: right;
+}
+
+.falladas-vaciar {
+  margin-top: 1.5rem;
+}
+
+.nav-n {
+  display: inline-block;
+  min-width: 1.2em;
+  margin-left: 0.25rem;
+  padding: 0 0.3em;
+  border-radius: 999px;
+  background: var(--bad);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* En el movil no cabe en el menu: el numero ya se ve en Inicio y en la pagina */
+@media (max-width: 30rem) {
+  .nav-n {
+    display: none;
+  }
 }
 
 /* Al llegar a un apartado desde la correccion: que no quede bajo la cabecera fija */
