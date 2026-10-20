@@ -1,10 +1,9 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { TEMAS } from '../content'
-import Markdown from '../components/Markdown'
-import Figura from '../components/figuras/Figura'
+import FiltroNucleo from '../components/FiltroNucleo'
+import TarjetaGiro from '../components/TarjetaGiro'
 import SesionTest, {
-  EnlaceApunte,
   TITULO,
   TablaDesglose,
   desglose,
@@ -13,7 +12,7 @@ import SesionTest, {
 } from '../components/SesionTest'
 import { registrarTarjeta, useProgreso, vaciarFalladas, type Falladas } from '../lib/progreso'
 import { canonico, contarPendientes, type Pendientes } from '../lib/indice'
-import { CUANTAS, type Cuantas, type ItemMixto } from '../lib/mixto'
+import { CUANTAS, type Cuantas, type FiltroNucleo as FiltroNucleoValor, type ItemMixto } from '../lib/mixto'
 import {
   guardarSeleccion,
   leerSeleccion,
@@ -164,13 +163,16 @@ function Seleccion({
 
   const deTema = (n: number) => pendientes.porTema.get(n)?.[sel.tipo] ?? 0
   const elegidos = sel.temas.filter((n) => deTema(n) > 0)
-  const pool = useMemo(
-    () =>
+  // Lo disponible con cada filtro de nucleo; los supuestos no tienen nucleo
+  const supuestos = sel.tipo === 'supuestos'
+  const pools = useMemo(() => {
+    const de = (f: FiltroNucleoValor) =>
       sel.tipo === 'tarjetas'
-        ? tarjetasFalladas(lista, sel.temas)
-        : preguntasFalladas(lista, sel.temas, sel.tipo),
-    [lista, sel.temas, sel.tipo],
-  )
+        ? tarjetasFalladas(lista, sel.temas, f)
+        : preguntasFalladas(lista, sel.temas, sel.tipo, f)
+    return { todas: de('todas'), solo: de('solo'), sin: de('sin') }
+  }, [lista, sel.temas, sel.tipo])
+  const pool = pools[supuestos ? 'todas' : sel.nucleo]
   const saldran = sel.cuantas === 0 ? pool.length : Math.min(sel.cuantas, pool.length)
 
   const marcar = (ns: number[]) => cambiar({ temas: [...new Set(ns)].sort((a, b) => a - b) })
@@ -319,7 +321,14 @@ function Seleccion({
         </p>
 
         <h2>{sel.tipo === 'tarjetas' ? 'Tarjetas' : 'Preguntas'}</h2>
-        <div className="botones">
+        <FiltroNucleo
+          valor={sel.nucleo}
+          cambiar={(nucleo) => cambiar({ nucleo })}
+          cuentas={{ todas: pools.todas.length, solo: pools.solo.length, sin: pools.sin.length }}
+          desactivado={supuestos}
+          nota="Los supuestos no tienen preguntas núcleo: salen todas."
+        />
+        <div className="botones" style={{ marginTop: '0.6rem' }}>
           {([...CUANTAS, 0] as Cuantas[]).map((c) => (
             <button
               key={c}
@@ -548,52 +557,13 @@ function SesionTarjetas({
         </div>
       </div>
 
-      <div
+      <TarjetaGiro
         key={`t-${i}-${t.id}`}
-        className="tarjeta flash"
-        onClick={() => setVista(true)}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === 'Enter' || e.key === ' ') {
-            e.preventDefault()
-            setVista(true)
-          }
-        }}
-      >
-        <div className="flash-a">
-          <Markdown>{t.anverso}</Markdown>
-        </div>
-
-        {t.figura && <Figura figura={t.figura} incognita={!vista} />}
-
-        {vista ? (
-          <div className="flash-b">
-            <Markdown>{t.reverso}</Markdown>
-            <p className="mixto-tema">
-              Tema {item.tema}. {TITULO.get(item.tema)}
-            </p>
-            {t.fuente && <p className="flash-pista mixto-fuente">Fuente: {t.fuente}</p>}
-            <EnlaceApunte tema={item.tema} apartado={item.apartado} />
-          </div>
-        ) : (
-          <p className="flash-pista">Pulsa para ver la respuesta</p>
-        )}
-      </div>
-
-      {vista && (
-        <div className="botones" style={{ marginTop: '0.75rem', justifyContent: 'center' }}>
-          <button className="btn btn-bad" onClick={() => responder('fallo')}>
-            Fallo
-          </button>
-          <button className="btn" onClick={() => responder('bien')}>
-            Bien
-          </button>
-          <button className="btn btn-ok" onClick={() => responder('facil')}>
-            Fácil
-          </button>
-        </div>
-      )}
+        item={item}
+        vista={vista}
+        girar={() => setVista(true)}
+        valorar={responder}
+      />
     </div>
   )
 }

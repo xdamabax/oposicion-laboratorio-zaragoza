@@ -1,6 +1,6 @@
 import { TEMAS } from '../content'
 import { huella } from './indice'
-import type { PreguntaTest, Supuesto } from '../types'
+import type { Flashcard, PreguntaTest, Supuesto } from '../types'
 
 /**
  * Test mixto: preguntas de varios temas a la vez, al azar y sin decir de cual
@@ -11,7 +11,14 @@ import type { PreguntaTest, Supuesto } from '../types'
  * letras correctas de cada tema esta compensado a mano.
  */
 
-export type TipoMixto = 'test' | 'supuestos'
+/** «mixta»: preguntas de test y tarjetas de repaso en la misma sesion */
+export type TipoMixto = 'test' | 'supuestos' | 'mixta'
+
+/** Que hacer con lo marcado como nucleo: todo, solo eso, o todo menos eso. */
+export type FiltroNucleo = 'todas' | 'solo' | 'sin'
+
+export const pasaNucleo = (filtro: FiltroNucleo, nucleo: boolean | undefined): boolean =>
+  filtro === 'todas' || (filtro === 'solo') === !!nucleo
 
 export interface ItemMixto {
   tema: number
@@ -21,6 +28,17 @@ export interface ItemMixto {
   /** Apartado del apunte que la respalda («2.1», «3/Artículo 8»), si se sabe */
   apartado: string | null
 }
+
+/** Una tarjeta de repaso dentro de una sesion: se gira y se valora como en el repaso. */
+export interface ItemTarjeta {
+  tema: number
+  tarjeta: Flashcard
+  apartado: string | null
+}
+
+export type ItemSesion = ItemMixto | ItemTarjeta
+
+export const esTarjeta = (item: ItemSesion): item is ItemTarjeta => 'tarjeta' in item
 
 /** Primer tema con supuestos: el segundo ejercicio solo versa sobre la parte segunda. */
 export const PRIMER_TEMA_SUPUESTOS = 9
@@ -68,20 +86,26 @@ export function temasConTipo(tipo: TipoMixto): number[] {
   return TEMAS.filter((t) =>
     tipo === 'test'
       ? (t.repaso?.test.length ?? 0) > 0
-      : t.numero >= PRIMER_TEMA_SUPUESTOS && (t.repaso?.supuestos.length ?? 0) > 0,
+      : tipo === 'mixta'
+        ? (t.repaso?.test.length ?? 0) + (t.repaso?.flashcards.length ?? 0) > 0
+        : t.numero >= PRIMER_TEMA_SUPUESTOS && (t.repaso?.supuestos.length ?? 0) > 0,
   ).map((t) => t.numero)
 }
 
 /**
- * Todas las preguntas de los temas elegidos, en el orden del dato. Una misma
- * pregunta de examen puede estar en dos temas (t26-q19 y t27-q22, que solo
- * difieren en los puntos finales): en una sesion sale una vez, la del primero.
+ * Todo lo de los temas elegidos que pasa el filtro de nucleo, en el orden del
+ * dato. Una misma pregunta de examen puede estar en dos temas (t26-q19 y
+ * t27-q22, que solo difieren en los puntos finales): en una sesion sale una
+ * vez, la del primero. En la sesion mixta, las tarjetas de cada tema van tras
+ * sus preguntas: el sorteo ya las mezcla. Los supuestos no tienen nucleo:
+ * la pagina los sortea siempre con «todas».
  */
-export function disponibles(temas: number[], tipo: TipoMixto, soloNucleo: boolean): ItemMixto[] {
+export function disponibles(temas: number[], tipo: TipoMixto, filtro: FiltroNucleo): ItemSesion[] {
   const elegidos = new Set(temas)
   const vistas = new Set<string>()
-  const items: ItemMixto[] = []
+  const items: ItemSesion[] = []
   const anadir = (item: ItemMixto) => {
+    if (!pasaNucleo(filtro, item.pregunta.nucleo)) return
     const h = huella(item.pregunta)
     if (vistas.has(h)) return
     vistas.add(h)
@@ -89,15 +113,17 @@ export function disponibles(temas: number[], tipo: TipoMixto, soloNucleo: boolea
   }
   for (const t of TEMAS) {
     if (!elegidos.has(t.numero) || !t.repaso) continue
-    if (tipo === 'test') {
-      for (const p of t.repaso.test) {
-        if (soloNucleo && !p.nucleo) continue
-        anadir({ tema: t.numero, pregunta: p, apartado: apartadoDe(p) })
+    if (tipo !== 'supuestos') {
+      for (const p of t.repaso.test) anadir({ tema: t.numero, pregunta: p, apartado: apartadoDe(p) })
+    }
+    if (tipo === 'mixta') {
+      for (const f of t.repaso.flashcards) {
+        if (pasaNucleo(filtro, f.nucleo)) items.push({ tema: t.numero, tarjeta: f, apartado: apartadoDe(f) })
       }
-    } else if (t.numero >= PRIMER_TEMA_SUPUESTOS) {
+    }
+    if (tipo === 'supuestos' && t.numero >= PRIMER_TEMA_SUPUESTOS) {
       for (const s of t.repaso.supuestos) {
         for (const p of s.preguntas) {
-          if (soloNucleo && !p.nucleo) continue
           anadir({ tema: t.numero, pregunta: p, supuesto: s, apartado: apartadoDe(p, s) })
         }
       }
@@ -117,7 +143,7 @@ export function barajar<T>(lista: readonly T[]): T[] {
 }
 
 /** Las `cuantas` (0 = todas) sacadas al azar, ya en orden aleatorio. */
-export function sortear(items: readonly ItemMixto[], cuantas: Cuantas): ItemMixto[] {
+export function sortear<T>(items: readonly T[], cuantas: Cuantas): T[] {
   const barajadas = barajar(items)
   return cuantas === 0 ? barajadas : barajadas.slice(0, cuantas)
 }
@@ -127,8 +153,16 @@ export function sortear(items: readonly ItemMixto[], cuantas: Cuantas): ItemMixt
 export interface SeleccionMixto {
   temas: number[]
   tipo: TipoMixto
-  soloNucleo: boolean
+  nucleo: FiltroNucleo
   cuantas: Cuantas
+}
+
+const FILTROS: FiltroNucleo[] = ['todas', 'solo', 'sin']
+
+/** El filtro guardado; una seleccion de antes del selector traia `soloNucleo`. */
+export function leerFiltro(s: { nucleo?: unknown; soloNucleo?: unknown }): FiltroNucleo {
+  if (FILTROS.includes(s.nucleo as FiltroNucleo)) return s.nucleo as FiltroNucleo
+  return s.soloNucleo === true ? 'solo' : 'todas'
 }
 
 const CLAVE = 'oposicion-zgz:mixto:v1'
@@ -136,7 +170,7 @@ const CLAVE = 'oposicion-zgz:mixto:v1'
 export const SELECCION_INICIAL: SeleccionMixto = {
   temas: TEMAS.map((t) => t.numero),
   tipo: 'test',
-  soloNucleo: false,
+  nucleo: 'todas',
   cuantas: 20,
 }
 
@@ -145,12 +179,12 @@ export function leerSeleccion(): SeleccionMixto {
   try {
     const bruto = localStorage.getItem(CLAVE)
     if (!bruto) return SELECCION_INICIAL
-    const s = JSON.parse(bruto) as Partial<SeleccionMixto>
+    const s = JSON.parse(bruto) as Partial<SeleccionMixto> & { soloNucleo?: unknown }
     const validos = new Set(TEMAS.map((t) => t.numero))
     return {
       temas: Array.isArray(s.temas) ? s.temas.filter((n) => validos.has(n)) : SELECCION_INICIAL.temas,
-      tipo: s.tipo === 'supuestos' ? 'supuestos' : 'test',
-      soloNucleo: s.soloNucleo === true,
+      tipo: s.tipo === 'supuestos' || s.tipo === 'mixta' ? s.tipo : 'test',
+      nucleo: leerFiltro(s),
       cuantas: ([0, ...CUANTAS] as number[]).includes(s.cuantas as number)
         ? (s.cuantas as Cuantas)
         : SELECCION_INICIAL.cuantas,

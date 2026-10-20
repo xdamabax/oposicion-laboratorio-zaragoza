@@ -701,17 +701,27 @@ h2 {
   color: var(--text);
 }
 
-.mixto-check {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  cursor: pointer;
+/* Todas / Solo núcleo / Sin núcleo: tres iguales, con su cuenta debajo; caben en un movil */
+.filtro-nucleo-botones {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+  max-width: 30rem;
 }
 
-.mixto-check input {
-  width: 1.15rem;
-  height: 1.15rem;
+.filtro-nucleo-botones .btn {
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  line-height: 1.25;
+  text-align: center;
+  padding-inline: 0.4rem;
+}
+
+.filtro-nucleo-n {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  font-variant-numeric: tabular-nums;
 }
 
 .mixto-cabeza {
@@ -746,6 +756,23 @@ h2 {
   font-weight: 700;
   margin: 0 0 0.2rem;
   font-variant-numeric: tabular-nums;
+}
+
+/* Resultado de «Test + tarjetas»: los aciertos de test y las tarjetas sabidas, lado a lado */
+.mixto-partes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.mixto-partes > div + div {
+  border-left: 1px solid var(--border);
+  padding-left: 0.75rem;
+}
+
+.mixto-desglose-doble th:not(:first-child) {
+  text-align: right;
 }
 
 .mixto-desglose {

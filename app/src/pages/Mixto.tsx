@@ -1,16 +1,18 @@
 import { useMemo, useState } from 'react'
 import { TEMAS } from '../content'
 import SesionTest, { TITULO, rangos } from '../components/SesionTest'
+import FiltroNucleo from '../components/FiltroNucleo'
 import {
   CUANTAS,
   PRIMER_TEMA_SUPUESTOS,
   disponibles,
+  esTarjeta,
   guardarSeleccion,
   leerSeleccion,
   sortear,
   temasConTipo,
   type Cuantas,
-  type ItemMixto,
+  type ItemSesion,
   type SeleccionMixto,
   type TipoMixto,
 } from '../lib/mixto'
@@ -19,7 +21,7 @@ const TODOS = TEMAS.map((t) => t.numero)
 
 export default function Mixto() {
   const [sel, setSel] = useState<SeleccionMixto>(leerSeleccion)
-  const [sesion, setSesion] = useState<ItemMixto[] | null>(null)
+  const [sesion, setSesion] = useState<ItemSesion[] | null>(null)
   // Cada sesion nueva monta la suya desde cero
   const [vuelta, setVuelta] = useState(0)
 
@@ -29,7 +31,7 @@ export default function Mixto() {
     guardarSeleccion(nueva)
   }
 
-  function empezar(items: ItemMixto[]) {
+  function empezar(items: ItemSesion[]) {
     setSesion(items)
     setVuelta((n) => n + 1)
     window.scrollTo(0, 0)
@@ -62,22 +64,29 @@ function Seleccion({
 }: {
   sel: SeleccionMixto
   cambiar: (p: Partial<SeleccionMixto>) => void
-  empezar: (items: ItemMixto[]) => void
+  empezar: (items: ItemSesion[]) => void
 }) {
   const [desde, setDesde] = useState(9)
   const [hasta, setHasta] = useState(20)
 
   const conTipo = useMemo(() => new Set(temasConTipo(sel.tipo)), [sel.tipo])
   const elegidos = sel.temas.filter((n) => conTipo.has(n))
-  const pool = useMemo(
-    () => disponibles(sel.temas, sel.tipo, sel.soloNucleo),
-    [sel.temas, sel.tipo, sel.soloNucleo],
-  )
-  const hayNucleo = useMemo(
-    () => disponibles(sel.temas, sel.tipo, true).length > 0,
+  // Lo disponible con cada filtro de nucleo: el elegido es el que se sortea
+  const pools = useMemo(
+    () => ({
+      todas: disponibles(sel.temas, sel.tipo, 'todas'),
+      solo: disponibles(sel.temas, sel.tipo, 'solo'),
+      sin: disponibles(sel.temas, sel.tipo, 'sin'),
+    }),
     [sel.temas, sel.tipo],
   )
+  const supuestos = sel.tipo === 'supuestos'
+  const mixta = sel.tipo === 'mixta'
+  const pool = pools[supuestos ? 'todas' : sel.nucleo]
+  const tarjetas = pool.filter(esTarjeta).length
   const saldran = sel.cuantas === 0 ? pool.length : Math.min(sel.cuantas, pool.length)
+  const cosas = (n: number) =>
+    mixta ? `${n} entre preguntas y tarjetas` : `${n} ${n === 1 ? 'pregunta' : 'preguntas'}`
 
   const marcar = (ns: number[]) => cambiar({ temas: [...new Set(ns)].sort((a, b) => a - b) })
   const alternar = (n: number) =>
@@ -122,7 +131,7 @@ function Seleccion({
       <h1>Test mixto</h1>
       <p className="sub">
         Preguntas al azar de los temas que elijas, en orden aleatorio. El tema de cada pregunta no
-        se ve hasta que la contestas.
+        se ve hasta que la contestas (ni el de cada tarjeta hasta que le das la vuelta).
       </p>
 
       <div className="tarjeta mixto-panel">
@@ -130,7 +139,15 @@ function Seleccion({
         <div className="botones">
           {tipoBoton('test', 'Test · 3 opciones')}
           {tipoBoton('supuestos', 'Supuestos · 4 opciones')}
+          {tipoBoton('mixta', 'Test + tarjetas')}
         </div>
+        {mixta && (
+          <p className="contador" style={{ margin: '0.5rem 0 0' }}>
+            Preguntas de test de 3 opciones y tarjetas de repaso, mezcladas al azar. Las tarjetas se
+            valoran como en el repaso del tema: cuentan para su repaso espaciado, y las que marques
+            «Fallo» van a tus falladas.
+          </p>
+        )}
         {sel.tipo === 'supuestos' && (
           <p className="contador" style={{ margin: '0.5rem 0 0' }}>
             Solo los temas {PRIMER_TEMA_SUPUESTOS} a 40: los de la parte primera no tienen supuestos.
@@ -198,23 +215,14 @@ function Seleccion({
             : `${elegidos.length} ${elegidos.length === 1 ? 'tema' : 'temas'}: ${rangos(elegidos)}`}
         </p>
 
-        <h2>Preguntas</h2>
-        <label className="mixto-check">
-          <input
-            type="checkbox"
-            checked={sel.soloNucleo && hayNucleo}
-            disabled={!hayNucleo}
-            onChange={(e) => cambiar({ soloNucleo: e.target.checked })}
-          />{' '}
-          Solo núcleo
-          {!hayNucleo && elegidos.length > 0 && (
-            <span className="contador">
-              {' '}
-              · {sel.tipo === 'supuestos' ? 'los supuestos no tienen' : 'estos temas no tienen'}{' '}
-              preguntas núcleo
-            </span>
-          )}
-        </label>
+        <h2>{mixta ? 'Preguntas y tarjetas' : 'Preguntas'}</h2>
+        <FiltroNucleo
+          valor={sel.nucleo}
+          cambiar={(nucleo) => cambiar({ nucleo })}
+          cuentas={{ todas: pools.todas.length, solo: pools.solo.length, sin: pools.sin.length }}
+          desactivado={supuestos}
+          nota="Los supuestos no tienen preguntas núcleo: salen todas."
+        />
         <div className="botones" style={{ marginTop: '0.6rem' }}>
           {([...CUANTAS, 0] as Cuantas[]).map((c) => (
             <button
@@ -229,7 +237,9 @@ function Seleccion({
           ))}
         </div>
         <p className="contador mixto-disponibles" style={{ margin: '0.5rem 0 0' }}>
-          {pool.length} preguntas disponibles
+          {mixta
+            ? `${pool.length} disponibles: ${pool.length - tarjetas} preguntas de test y ${tarjetas} tarjetas`
+            : `${pool.length} preguntas disponibles`}
           {sel.cuantas !== 0 && pool.length > 0 && pool.length < sel.cuantas
             ? `: solo hay ${pool.length}, saldrán todas`
             : ''}
@@ -242,7 +252,7 @@ function Seleccion({
             disabled={saldran === 0}
             onClick={() => empezar(sortear(pool, sel.cuantas))}
           >
-            Empezar ({saldran} {saldran === 1 ? 'pregunta' : 'preguntas'})
+            Empezar ({cosas(saldran)})
           </button>
         </div>
       </div>
