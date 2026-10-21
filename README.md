@@ -152,7 +152,7 @@ ExamenesAnteriores/     Cuestionarios de convocatorias previas y su análisis.
 ExamenesAnteriores/PLANTILLAS.md  Respuestas oficiales (plantillas del Ayuntamiento), leídas por píxeles; las de nuestra plaza, también a la vista.
 app/                    Web app React (Vite + TypeScript).
 scripts/export-pdf.js   Exportación a HTML/PDF de un tema o del temario completo.
-scripts/verificar.js    Las tres baterías de verificación de una vez.
+scripts/verificar.js    Las seis baterías de verificación de una vez.
 scripts/verificar-mixto.js  Test mixto: solo los temas elegidos, sin repetidas, el tema oculto hasta corregir, y el recuento.
 scripts/verificar-pdf.js  Saltos de página del PDF: ningún apartado arranca huérfano al pie ni salta sin necesidad.
 scripts/verificar-editor.js  Editor de descarga: el apunte sin tocar da el mismo PDF, y sus funciones.
@@ -319,7 +319,7 @@ Comprobado generando el PDF en las dos posiciones de la casilla (`displayHeaderF
 
 ## Verificación
 
-Tres baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
+Seis baterías que **conducen la app ya construida** y miden lo que de verdad se pinta. No validan los ficheros contra sí mismos, porque los fallos que importan aquí producen datos perfectamente válidos:
 
 - Un índice `correcta` desplazado en uno da un JSON válido y un test que **enseña la respuesta equivocada**.
 - Un esquema equivocado **se pinta igual de bien** que uno correcto: la curva de desviación de Beer llegó a dibujarse arrancando *por encima* de la recta ideal, que enseña justo lo contrario de lo que hay que aprender.
@@ -327,7 +327,7 @@ Tres baterías que **conducen la app ya construida** y miden lo que de verdad se
 
 ```bash
 npm run build                     # las baterías miden dist/, no el código fuente
-npm run verificar                 # las tres, sobre todos los temas
+npm run verificar                 # las seis, sobre todos los temas
 npm run verificar -- 26           # solo un tema
 npm run verificar -- 26 --sabotajes
 npm run verificar -- --base https://xdamabax.github.io/oposicion-laboratorio-zaragoza/
@@ -405,6 +405,25 @@ GitHub Actions (`.github/workflows/deploy.yml`) construye y publica en **GitHub 
 ## Test mixto
 
 Menú **Test mixto**: preguntas al azar de varios temas a la vez. Se eligen los temas (casillas, «todos», «ninguno», cada parte o un rango), el tipo (test de 3 opciones, o supuestos de 4, solo temas 9-40), «solo núcleo» y cuántas (10, 20, 30, 50 o todas). Las preguntas salen en orden aleatorio, **las opciones nunca se barajan** (hay opciones que se refieren a otras, y el reparto de letras correctas de cada tema está compensado), y el tema no se ve hasta corregir: entonces salen el tema, la explicación, la fuente y un enlace al apartado del apunte, que se abre en otra pestaña (`#/tema/N?ap=2.1`). Las preguntas de un supuesto salen sueltas, cada una con el enunciado de su supuesto. Al terminar, la nota con la penalización de 1/4, el desglose por tema, las falladas y «repetir solo las falladas». Cada respuesta se registra con el id de la pregunta, igual que en el test del tema. La última selección se guarda en `localStorage` (`oposicion-zgz:mixto:v1`). Una misma pregunta que está en dos temas (t26-q19 y t27-q22) sale una sola vez.
+
+También están **Test + tarjetas** (preguntas de test y tarjetas mezcladas) y **Solo tarjetas**. Ambos reutilizan los mismos temas, rangos, selector **Todas / Solo núcleo / Sin núcleo**, cantidades y selección guardada. En Solo tarjetas, el contador y «Empezar» cuentan únicamente las tarjetas que pasan el filtro; salen al azar, sin repetirse en esa sesión. No se limita a las pendientes hoy: es una sesión de práctica de las tarjetas elegidas.
+
+La tarjeta oculta el tema y el enlace al apunte hasta girarla. **Fallo / Bien / Fácil** llama a la misma función `registrarTarjeta` que el repaso normal y Test + tarjetas, sin modificar SM-2. Fallo entra en **Test de falladas → Tarjetas**. En Solo tarjetas, el resultado muestra sabidas y no sabidas, su desglose por tema y **Repetir solo las no sabidas**; no presenta nota ni penalización de preguntas. La repetición es una nueva ronda y solo incluye los Fallo de la ronda anterior; valorar esa ronda vuelve a actualizar el repaso como siempre.
+
+### Verificación de Solo tarjetas
+
+`scripts/verificar-solo-tarjetas.js` añade nueve controles a `npm run verificar`: temas elegidos y ausencia de preguntas; ambos filtros de núcleo; contadores/cantidades/vacío; sorteo sin duplicados; SM-2 campo a campo frente al repaso normal; entrada en falladas; tema oculto y apartado tras girar; resultado/repetición; selección persistida. Cada control tiene un sabotaje que debe fallar por su código específico (no basta con un timeout). Se prueba a **375 px** la selección, ambos lados, el resultado y la repetición, en perfiles temporales sin tocar el navegador personal.
+
+```bash
+npm run build
+npm run verificar:solo-tarjetas
+npm run verificar:solo-tarjetas -- --control 1,2,3 --sabotajes
+npm run verificar:solo-tarjetas -- --control 4,5,6 --sabotajes
+npm run verificar:solo-tarjetas -- --control 7,8,9 --sabotajes
+npm run verificar:solo-tarjetas -- --base https://xdamabax.github.io/oposicion-laboratorio-zaragoza/
+```
+
+Para ejecutar la batería completa en tandas pequeñas, reconstruir primero y ejecutar `npm run verificar -- 1 2 3 4 5`, después `npm run verificar:repaso -- 6 7 8 9 10` y continuar de cinco en cinco hasta el 40. Así se cubren todos los temas y las baterías globales sin repetir estas últimas en cada tanda. Cada batería cierra su navegador y su servidor propio al terminar; el servidor de prueba se ejecuta directamente con Node, sin procesos npm/cmd intermedios en Windows.
 
 ## Progreso de estudio
 

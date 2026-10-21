@@ -817,6 +817,11 @@ h2 {
   gap: 0.75rem;
 }
 
+/* Las tablas del reverso tienen su propio scroll: no ensanchan el resultado. */
+.mixto-solo-tarjetas .mixto-falladas {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .mixto-mala,
 .mixto-buena {
   margin: 0.3rem 0 0;

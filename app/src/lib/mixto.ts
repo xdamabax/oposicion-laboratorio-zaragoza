@@ -12,7 +12,7 @@ import type { Flashcard, PreguntaTest, Supuesto } from '../types'
  */
 
 /** «mixta»: preguntas de test y tarjetas de repaso en la misma sesion */
-export type TipoMixto = 'test' | 'supuestos' | 'mixta'
+export type TipoMixto = 'test' | 'supuestos' | 'mixta' | 'tarjetas'
 
 /** Que hacer con lo marcado como nucleo: todo, solo eso, o todo menos eso. */
 export type FiltroNucleo = 'todas' | 'solo' | 'sin'
@@ -88,7 +88,9 @@ export function temasConTipo(tipo: TipoMixto): number[] {
       ? (t.repaso?.test.length ?? 0) > 0
       : tipo === 'mixta'
         ? (t.repaso?.test.length ?? 0) + (t.repaso?.flashcards.length ?? 0) > 0
-        : t.numero >= PRIMER_TEMA_SUPUESTOS && (t.repaso?.supuestos.length ?? 0) > 0,
+        : tipo === 'tarjetas'
+          ? (t.repaso?.flashcards.length ?? 0) > 0
+          : t.numero >= PRIMER_TEMA_SUPUESTOS && (t.repaso?.supuestos.length ?? 0) > 0,
   ).map((t) => t.numero)
 }
 
@@ -113,10 +115,10 @@ export function disponibles(temas: number[], tipo: TipoMixto, filtro: FiltroNucl
   }
   for (const t of TEMAS) {
     if (!elegidos.has(t.numero) || !t.repaso) continue
-    if (tipo !== 'supuestos') {
+    if (tipo === 'test' || tipo === 'mixta') {
       for (const p of t.repaso.test) anadir({ tema: t.numero, pregunta: p, apartado: apartadoDe(p) })
     }
-    if (tipo === 'mixta') {
+    if (tipo === 'mixta' || tipo === 'tarjetas') {
       for (const f of t.repaso.flashcards) {
         if (pasaNucleo(filtro, f.nucleo)) items.push({ tema: t.numero, tarjeta: f, apartado: apartadoDe(f) })
       }
@@ -183,7 +185,7 @@ export function leerSeleccion(): SeleccionMixto {
     const validos = new Set(TEMAS.map((t) => t.numero))
     return {
       temas: Array.isArray(s.temas) ? s.temas.filter((n) => validos.has(n)) : SELECCION_INICIAL.temas,
-      tipo: s.tipo === 'supuestos' || s.tipo === 'mixta' ? s.tipo : 'test',
+      tipo: s.tipo === 'supuestos' || s.tipo === 'mixta' || s.tipo === 'tarjetas' ? s.tipo : 'test',
       nucleo: leerFiltro(s),
       cuantas: ([0, ...CUANTAS] as number[]).includes(s.cuantas as number)
         ? (s.cuantas as Cuantas)

@@ -20,7 +20,8 @@
     "verificar:cuestionario": "node scripts/verificar-cuestionario.js",
     "verificar:mixto": "node scripts/verificar-mixto.js",
     "verificar:falladas": "node scripts/verificar-falladas.js",
-    "verificar:tarjetas-mixto": "node scripts/verificar-tarjetas-mixto.js"
+    "verificar:tarjetas-mixto": "node scripts/verificar-tarjetas-mixto.js",
+    "verificar:solo-tarjetas": "node scripts/verificar-solo-tarjetas.js"
   },
   "dependencies": {
     "@tiptap/core": "^3.31.4",

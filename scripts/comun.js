@@ -78,11 +78,12 @@ export async function servirDist(puerto) {
     throw new Error('No hay dist/. Ejecuta antes `npm run build`.')
   }
 
-  const proc = spawn(
-    process.platform === 'win32' ? 'npm.cmd' : 'npm',
-    ['run', 'preview', '--', '--port', String(puerto), '--strictPort'],
-    { cwd: RAIZ, stdio: 'ignore', shell: process.platform === 'win32' },
-  )
+  // Proceso directo: parar() cierra solo nuestro servidor, sin dejar hijos
+  // de npm/cmd escuchando en Windows ni buscar procesos ajenos.
+  const proc = spawn(process.execPath, [
+    join(RAIZ, 'node_modules', 'vite', 'bin', 'vite.js'),
+    'preview', '--port', String(puerto), '--strictPort',
+  ], { cwd: RAIZ, stdio: 'ignore' })
 
   const base = `http://localhost:${puerto}/`
   for (let i = 0; i < 60; i++) {

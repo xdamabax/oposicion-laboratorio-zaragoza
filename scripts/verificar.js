@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Las cinco baterias de una vez: esquemas, repaso, test mixto, test de falladas
- * y filtro de nucleo con «Test + tarjetas». Es lo que hay que pasar antes de dar por cerrado
+ * Las seis baterias de una vez: esquemas, repaso, test mixto, test de falladas,
+ * filtro de nucleo con «Test + tarjetas» y «Solo tarjetas». Antes de dar por cerrado
  * un tema.
  *
  *   npm run verificar                  -> esquemas + repaso de todos los temas
@@ -32,7 +32,7 @@ function ejecutar(guion) {
 }
 
 const codigos = []
-for (const guion of ['verificar-figuras.js', 'verificar-repaso.js', 'verificar-mixto.js', 'verificar-falladas.js', 'verificar-tarjetas-mixto.js']) {
+for (const guion of ['verificar-figuras.js', 'verificar-repaso.js', 'verificar-mixto.js', 'verificar-falladas.js', 'verificar-tarjetas-mixto.js', 'verificar-solo-tarjetas.js']) {
   console.log(`\n\n──────── ${guion} ────────`)
   codigos.push(await ejecutar(guion))
 }
@@ -41,6 +41,6 @@ const fallidos = codigos.filter((c) => c !== 0).length
 console.log(
   fallidos
     ? `\n${fallidos} de ${codigos.length} baterías con controles sin pasar.`
-    : '\nLas cinco baterías pasan.',
+    : '\nLas seis baterías pasan.',
 )
 process.exit(fallidos ? 1 : 0)

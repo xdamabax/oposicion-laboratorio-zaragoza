@@ -49,6 +49,7 @@ export default function Mixto() {
       key={vuelta}
       titulo="Test mixto"
       items={sesion}
+      soloTarjetas={sel.tipo === 'tarjetas'}
       volver={volver}
       rotuloNuevo="Nuevo test mixto"
     />
@@ -82,11 +83,16 @@ function Seleccion({
   )
   const supuestos = sel.tipo === 'supuestos'
   const mixta = sel.tipo === 'mixta'
+  const soloTarjetas = sel.tipo === 'tarjetas'
   const pool = pools[supuestos ? 'todas' : sel.nucleo]
   const tarjetas = pool.filter(esTarjeta).length
   const saldran = sel.cuantas === 0 ? pool.length : Math.min(sel.cuantas, pool.length)
   const cosas = (n: number) =>
-    mixta ? `${n} entre preguntas y tarjetas` : `${n} ${n === 1 ? 'pregunta' : 'preguntas'}`
+    mixta
+      ? `${n} entre preguntas y tarjetas`
+      : soloTarjetas
+        ? `${n} ${n === 1 ? 'tarjeta' : 'tarjetas'}`
+        : `${n} ${n === 1 ? 'pregunta' : 'preguntas'}`
 
   const marcar = (ns: number[]) => cambiar({ temas: [...new Set(ns)].sort((a, b) => a - b) })
   const alternar = (n: number) =>
@@ -140,10 +146,14 @@ function Seleccion({
           {tipoBoton('test', 'Test · 3 opciones')}
           {tipoBoton('supuestos', 'Supuestos · 4 opciones')}
           {tipoBoton('mixta', 'Test + tarjetas')}
+          {tipoBoton('tarjetas', 'Solo tarjetas')}
         </div>
-        {mixta && (
+        {(mixta || soloTarjetas) && (
           <p className="contador" style={{ margin: '0.5rem 0 0' }}>
-            Preguntas de test de 3 opciones y tarjetas de repaso, mezcladas al azar. Las tarjetas se
+            {soloTarjetas
+              ? 'Solo tarjetas de repaso, al azar y sin repetirse en la sesión. '
+              : 'Preguntas de test de 3 opciones y tarjetas de repaso, mezcladas al azar. '}
+            Las tarjetas se
             valoran como en el repaso del tema: cuentan para su repaso espaciado, y las que marques
             «Fallo» van a tus falladas.
           </p>
@@ -215,7 +225,7 @@ function Seleccion({
             : `${elegidos.length} ${elegidos.length === 1 ? 'tema' : 'temas'}: ${rangos(elegidos)}`}
         </p>
 
-        <h2>{mixta ? 'Preguntas y tarjetas' : 'Preguntas'}</h2>
+        <h2>{mixta ? 'Preguntas y tarjetas' : soloTarjetas ? 'Tarjetas' : 'Preguntas'}</h2>
         <FiltroNucleo
           valor={sel.nucleo}
           cambiar={(nucleo) => cambiar({ nucleo })}
@@ -239,7 +249,7 @@ function Seleccion({
         <p className="contador mixto-disponibles" style={{ margin: '0.5rem 0 0' }}>
           {mixta
             ? `${pool.length} disponibles: ${pool.length - tarjetas} preguntas de test y ${tarjetas} tarjetas`
-            : `${pool.length} preguntas disponibles`}
+            : `${pool.length} ${soloTarjetas ? 'tarjetas' : 'preguntas'} disponibles`}
           {sel.cuantas !== 0 && pool.length > 0 && pool.length < sel.cuantas
             ? `: solo hay ${pool.length}, saldrán todas`
             : ''}

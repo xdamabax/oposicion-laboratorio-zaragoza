@@ -56,6 +56,7 @@ export default function SesionTest({
   volver,
   rotuloNuevo,
   extraResultado,
+  soloTarjetas = false,
 }: {
   titulo: string
   items: ItemSesion[]
@@ -64,6 +65,8 @@ export default function SesionTest({
   rotuloNuevo: string
   /** Lo que se pinta bajo la nota, con las respuestas de la sesion */
   extraResultado?: (respuestas: Respuesta[]) => ReactNode
+  /** Presentacion de Solo tarjetas; no cambia la correccion ni el repaso. */
+  soloTarjetas?: boolean
 }) {
   const [sesion, setSesion] = useState<ItemSesion[]>(items)
   // Una sesion con tarjetas tiene su propio resultado, tambien al repetirla
@@ -93,7 +96,7 @@ export default function SesionTest({
       rotuloNuevo,
     }
     return mixta ? (
-      <ResultadoMixto {...comun} contestadas={contestadas} />
+      <ResultadoMixto {...comun} contestadas={contestadas} soloTarjetas={soloTarjetas} />
     ) : (
       <Resultado
         {...comun}
@@ -468,7 +471,8 @@ function ResultadoMixto({
   repetir,
   volver,
   rotuloNuevo,
-}: PropsResultado & { contestadas: Contestada[] }) {
+  soloTarjetas,
+}: PropsResultado & { contestadas: Contestada[]; soloTarjetas: boolean }) {
   const preguntas = contestadas.filter(esRespuesta)
   const tarjetas = contestadas.filter(esValoracion)
   const aciertos = preguntas.filter(acierta).length
@@ -487,26 +491,28 @@ function ResultadoMixto({
   )
 
   return (
-    <div className="mixto">
+    <div className={soloTarjetas ? 'mixto mixto-solo-tarjetas' : 'mixto'}>
       <h1>{titulo}: resultado</h1>
 
       <div className="tarjeta" style={{ textAlign: 'center' }}>
-        <div className="mixto-partes">
-          <div data-parte="test">
-            <p className="mixto-nota" data-bien={aciertos} data-total={preguntas.length}>
-              {aciertos} / {preguntas.length}
-            </p>
-            <p className="contador" style={{ margin: 0 }}>
-              aciertos de test
-              {preguntas.length > 0 && (
-                <>
-                  {' '}
-                  · {Math.round((aciertos / preguntas.length) * 100)}% · nota con penalización de
-                  1/4: <b>{notaDe(aciertos, preguntas.length).toFixed(2)}</b> sobre 10
-                </>
-              )}
-            </p>
-          </div>
+        <div className="mixto-partes" style={soloTarjetas ? { gridTemplateColumns: '1fr' } : undefined}>
+          {!soloTarjetas && (
+            <div data-parte="test">
+              <p className="mixto-nota" data-bien={aciertos} data-total={preguntas.length}>
+                {aciertos} / {preguntas.length}
+              </p>
+              <p className="contador" style={{ margin: 0 }}>
+                aciertos de test
+                {preguntas.length > 0 && (
+                  <>
+                    {' '}
+                    · {Math.round((aciertos / preguntas.length) * 100)}% · nota con penalización de
+                    1/4: <b>{notaDe(aciertos, preguntas.length).toFixed(2)}</b> sobre 10
+                  </>
+                )}
+              </p>
+            </div>
+          )}
           <div data-parte="tarjetas">
             <p className="mixto-nota" data-bien={sabidas} data-total={tarjetas.length}>
               {sabidas} / {tarjetas.length}
@@ -528,10 +534,10 @@ function ResultadoMixto({
             disabled={aRepetir === 0}
             onClick={() => repetir([...falladas.map((r) => r.item), ...noSabidas.map((v) => v.item)])}
           >
-            Repetir solo las falladas ({aRepetir})
+            {soloTarjetas ? 'Repetir solo las no sabidas' : 'Repetir solo las falladas'} ({aRepetir})
           </button>
           <button className="btn" onClick={() => repetir(contestadas.map((c) => c.item))}>
-            Repetir el mismo test
+            {soloTarjetas ? 'Repetir las mismas tarjetas' : 'Repetir el mismo test'}
           </button>
           <button className="btn" onClick={volver}>
             {rotuloNuevo}
@@ -545,8 +551,9 @@ function ResultadoMixto({
           <thead>
             <tr>
               <th>Tema</th>
-              <th>Test</th>
-              <th>Tarjetas</th>
+              {!soloTarjetas && <th>Test</th>}
+              <th>{soloTarjetas ? 'Sabidas / valoradas' : 'Tarjetas'}</th>
+              {soloTarjetas && <th>No sabidas</th>}
             </tr>
           </thead>
           <tbody>
@@ -556,25 +563,34 @@ function ResultadoMixto({
                   <b>Tema {tema}</b>
                   <span className="item-meta mixto-titulo">{TITULO.get(tema)}</span>
                 </td>
-                {celda('test', test.get(tema))}
+                {!soloTarjetas && celda('test', test.get(tema))}
                 {celda('tarjetas', tarj.get(tema))}
+                {soloTarjetas && (
+                  <td className="num" data-no-sabidas={(tarj.get(tema)?.total ?? 0) - (tarj.get(tema)?.aciertos ?? 0)}>
+                    {(tarj.get(tema)?.total ?? 0) - (tarj.get(tema)?.aciertos ?? 0)}
+                  </td>
+                )}
               </tr>
             ))}
           </tbody>
           <tfoot>
             <tr>
               <td>Total</td>
-              {celda('test', { aciertos, total: preguntas.length })}
+              {!soloTarjetas && celda('test', { aciertos, total: preguntas.length })}
               {celda('tarjetas', { aciertos: sabidas, total: tarjetas.length })}
+              {soloTarjetas && (
+                <td className="num" data-no-sabidas={noSabidas.length}>{noSabidas.length}</td>
+              )}
             </tr>
           </tfoot>
         </table>
       </div>
       <p className="contador" style={{ margin: '0.4rem 0 0' }}>
-        Test: aciertos de las contestadas. Tarjetas: «Bien» o «Fácil» de las valoradas.
+        {!soloTarjetas && 'Test: aciertos de las contestadas. '}
+        Tarjetas: «Bien» o «Fácil» de las valoradas.
       </p>
 
-      <h2>Falladas y no sabidas ({aRepetir})</h2>
+      <h2>{soloTarjetas ? 'No sabidas' : 'Falladas y no sabidas'} ({aRepetir})</h2>
       {aRepetir === 0 ? (
         <p className="vacio">Ninguna. Todo bien.</p>
       ) : (
