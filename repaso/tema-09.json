@@ -1246,6 +1246,76 @@
       "fuente": "RD 664/1997, art. 7.1 · apunte §5.2",
       "apartado": "5.2",
       "evidencia": "tener un lugar para guardar los equipos de protección, que se limpian y comprueban antes y, en todo caso, después de cada uso;"
+    },
+    {
+      "id": "t09-q66",
+      "pregunta": "Un laboratorio de diagnóstico presta servicios relacionados con agentes biológicos del grupo 4. ¿Qué particularidad contempla el artículo 10.2 en materia de notificación?",
+      "opciones": [
+        "Queda exento incluso de notificar inicialmente el propósito.",
+        "Debe presentar una nueva notificación por cada muestra recibida con independencia de las circunstancias.",
+        "Se le exige únicamente la notificación inicial del propósito de operar con esos agentes."
+      ],
+      "correcta": 2,
+      "explicacion": "La particularidad del artículo 10.2 se refiere a los laboratorios de diagnóstico que prestan servicios relacionados con agentes del grupo 4.",
+      "fuente": "Real Decreto 664/1997, art. 10.2 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- los laboratorios de **diagnóstico** con agentes del grupo 4 solo hacen la **notificación inicial**."
+    },
+    {
+      "id": "t09-q67",
+      "pregunta": "Un incidente provoca una punción con una aguja contaminada. ¿Cuál es la vía de entrada inicial que describe el caso?",
+      "opciones": [
+        "Inhalatoria, por aerosol respirable.",
+        "Percutánea, por inoculación accidental.",
+        "Digestiva, por deglución."
+      ],
+      "correcta": 1,
+      "explicacion": "La aguja atraviesa la barrera cutánea e inocula el agente en el tejido.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, exposición laboral · apunte §4",
+      "apartado": "4",
+      "evidencia": "| **Parenteral** (percutánea) | **Pinchazos y cortes** con agujas, bisturís o vidrio roto contaminados |"
+    },
+    {
+      "id": "t09-q68",
+      "pregunta": "Al abrir un recipiente se generan gotas suspendidas que una persona respira. ¿Qué mecanismo de exposición debe analizarse?",
+      "opciones": [
+        "Inoculación por un objeto punzante.",
+        "Ingestión de alimentos contaminados.",
+        "Inhalación de aerosoles."
+      ],
+      "correcta": 2,
+      "explicacion": "La exposición descrita se produce al respirar partículas suspendidas en el aire.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, vías de entrada · apunte §4",
+      "apartado": "4",
+      "evidencia": "**Según la guía**, en un laboratorio de **nivel 2** las exposiciones se deben sobre todo a **accidentes**: vía **percutánea o mucosa** e **ingestión**. En el **nivel 3** se suma la **inhalación de aerosoles**."
+    },
+    {
+      "id": "t09-q69",
+      "pregunta": "Según la clasificación del RD 664/1997, ¿qué grupo corresponde a un agente poco probable que cause una enfermedad en el ser humano?",
+      "opciones": [
+        "Grupo 1.",
+        "Grupo 3.",
+        "Grupo 2."
+      ],
+      "correcta": 0,
+      "explicacion": "La baja probabilidad de causar enfermedad humana define el grupo 1.",
+      "fuente": "Real Decreto 664/1997, art. 3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "2. **Grupo 4 = muchas probabilidades de propagación y sin profilaxis ni tratamiento.** **Grupo 2 = propagación poco probable**, con tratamiento. **Grupo 1 = poco probable que cause enfermedad.**"
+    },
+    {
+      "id": "t09-q70",
+      "pregunta": "En la clasificación de agentes biológicos, ¿qué distingue al grupo 4 frente al grupo 3 en relación con profilaxis o tratamiento eficaz?",
+      "opciones": [
+        "En el grupo 4 generalmente están disponibles.",
+        "En el grupo 4 generalmente no existen.",
+        "En el grupo 4 su disponibilidad existe por definición para todo el personal."
+      ],
+      "correcta": 1,
+      "explicacion": "La clasificación distingue al grupo 4 por la habitual ausencia de profilaxis o tratamiento eficaz, además del riesgo elevado de propagación.",
+      "fuente": "Real Decreto 664/1997, art. 3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "2. **Grupo 4 = muchas probabilidades de propagación y sin profilaxis ni tratamiento.** **Grupo 2 = propagación poco probable**, con tratamiento. **Grupo 1 = poco probable que cause enfermedad.**"
     }
   ],
   "supuestos": [

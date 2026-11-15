@@ -1511,6 +1511,76 @@
       "fuente": "OMS, Guías de calidad del agua de bebida · apunte §9",
       "apartado": "9",
       "evidencia": "| Dinoflagelados | Algunos producen saxitoxinas: son algas tóxicas |"
+    },
+    {
+      "id": "t15-q73",
+      "pregunta": "¿Cómo se denomina la cubierta de proteínas que rodea el genoma viral?",
+      "opciones": [
+        "Envoltura de quitina.",
+        "Cápside.",
+        "Pared de peptidoglucano."
+      ],
+      "correcta": 1,
+      "explicacion": "La cápside es la cubierta proteica del virus. Algunos virus presentan además una envoltura de otra naturaleza.",
+      "fuente": "OpenStax Microbiology, cap. 6, estructura viral · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- **El adenovirus humano** tiene **ADN bicatenario**, **sin envoltura**, en una cápside **icosaédrica de 90-100 nm**. Está entre los patógenos del agua **más resistentes a la luz ultravioleta**."
+    },
+    {
+      "id": "t15-q74",
+      "pregunta": "Un agente infeccioso carece de ribosomas y necesita la maquinaria celular para multiplicarse. ¿Qué grupo se ajusta al ejemplo?",
+      "opciones": [
+        "Hongos levaduriformes.",
+        "Bacterias ácido-alcohol resistentes.",
+        "Virus."
+      ],
+      "correcta": 2,
+      "explicacion": "Los virus dependen de la célula hospedadora para su propagación y carecen de ribosomas propios.",
+      "fuente": "OpenStax Microbiology, virus y replicación, cap. 6 · apunte §12",
+      "apartado": "12",
+      "evidencia": "8. **Virus:** acelulares, **parásitos intracelulares obligados**, **ADN o ARN, nunca los dos**; **cápside** de proteína y, a veces, **envoltura** lipídica de la célula huésped."
+    },
+    {
+      "id": "t15-q75",
+      "pregunta": "En una colonia se observan filamentos que forman un micelio. ¿Qué tipo de microorganismo describe mejor ese dato?",
+      "opciones": [
+        "Un hongo filamentoso.",
+        "Un helminto adulto.",
+        "Un virus envuelto."
+      ],
+      "correcta": 0,
+      "explicacion": "Los hongos filamentosos forman hifas y la red de hifas constituye el micelio.",
+      "fuente": "OpenStax Microbiology, hongos, cap. 5 · apunte §12",
+      "apartado": "12",
+      "evidencia": "9. **Hongos:** eucariotas, **pared de quitina**, nutrición por **absorción**; **mohos** (hifas, micelio) y **levaduras** (gemación); ***Candida*, dimórfico**."
+    },
+    {
+      "id": "t15-q76",
+      "pregunta": "¿Qué componente distingue la pared de muchos hongos de la pared bacteriana típica de peptidoglucano?",
+      "opciones": [
+        "Lipopolisacárido.",
+        "Quitina.",
+        "Ácidos teicoicos."
+      ],
+      "correcta": 1,
+      "explicacion": "La quitina es un componente estructural característico de la pared de muchos hongos.",
+      "fuente": "OpenStax Microbiology, hongos, cap. 5 · apunte §12",
+      "apartado": "12",
+      "evidencia": "9. **Hongos:** eucariotas, **pared de quitina**, nutrición por **absorción**; **mohos** (hifas, micelio) y **levaduras** (gemación); ***Candida*, dimórfico**."
+    },
+    {
+      "id": "t15-q77",
+      "pregunta": "Un agente patógeno se propaga al inducir el mal plegamiento de una proteína del hospedador. ¿Cuál es?",
+      "opciones": [
+        "Un prion.",
+        "Un protozoo.",
+        "Un viroide."
+      ],
+      "correcta": 0,
+      "explicacion": "Los priones son formas proteicas infecciosas que pueden inducir cambios de conformación en otras proteínas.",
+      "fuente": "OpenStax Microbiology, agentes acelulares, cap. 6 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- **Proteínas infecciosas sin ácido nucleico** demostrable."
     }
   ],
   "supuestos": [

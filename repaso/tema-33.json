@@ -1701,6 +1701,76 @@
       },
       "apartado": "2.12",
       "evidencia": "Respuesta oficial: absorción molecular UV-visible. Las otras opciones eran potenciometría y fluorescencia atómica."
+    },
+    {
+      "id": "t33-q70",
+      "pregunta": "El procedimiento DPD permite determinar cloro libre y, tras añadir yoduro según el método, cloro total. ¿Qué obtiene si resta el primero al segundo?",
+      "opciones": [
+        "Dureza cálcica.",
+        "Cloro combinado.",
+        "Alcalinidad carbonatada."
+      ],
+      "correcta": 1,
+      "explicacion": "El cloro combinado es la diferencia entre el cloro total y el libre en las condiciones del método.",
+      "fuente": "UNE-EN ISO 7393-2:2019, determinación de cloro por DPD · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**La técnica es del tema 25:** **colorimetría con DPD**, **UNE-EN ISO 7393-2:2019**, color **rojo**, **cloro libre primero** y **cloro total tras añadir yoduro**; medida **inmediata y en campo**, porque el cloro se pierde. Y el catálogo del ISO/TC 147/SC 2 confirma que esa familia tiene **tres partes vigentes**: **ISO 7393-1:1985** (DPD **titrimétrico**), **ISO 7393-2:2017** (DPD **colorimétrico**, para control de rutina) e **ISO 7393-3:1990** (**iodométrico**, para cloro total)."
+    },
+    {
+      "id": "t33-q71",
+      "pregunta": "Para determinar cloro residual en una muestra, el procedimiento desarrolla color con DPD. ¿Qué propiedad de la disolución se registra en lectura instrumental?",
+      "opciones": [
+        "La absorbancia asociada al producto coloreado.",
+        "El radio de las partículas por filtración gravimétrica.",
+        "El aumento del peso de la cubeta al calentar."
+      ],
+      "correcta": 0,
+      "explicacion": "El DPD da una respuesta coloreada que puede cuantificarse por fotometría.",
+      "fuente": "UNE-EN ISO 7393-2:2019, método colorimétrico DPD para cloro en agua · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**La técnica es del tema 25:** **colorimetría con DPD**, **UNE-EN ISO 7393-2:2019**, color **rojo**, **cloro libre primero** y **cloro total tras añadir yoduro**; medida **inmediata y en campo**, porque el cloro se pierde. Y el catálogo del ISO/TC 147/SC 2 confirma que esa familia tiene **tres partes vigentes**: **ISO 7393-1:1985** (DPD **titrimétrico**), **ISO 7393-2:2017** (DPD **colorimétrico**, para control de rutina) e **ISO 7393-3:1990** (**iodométrico**, para cloro total)."
+    },
+    {
+      "id": "t33-q72",
+      "pregunta": "Un agua contiene principalmente calcio, magnesio y cloruro como sales disueltas. ¿Qué cationes originan normalmente la dureza medida?",
+      "opciones": [
+        "Sodio y potasio.",
+        "Cloruro y nitrito.",
+        "Calcio y magnesio."
+      ],
+      "correcta": 2,
+      "explicacion": "La dureza se asocia sobre todo a calcio y magnesio, y suele expresarse en equivalentes de carbonato cálcico.",
+      "fuente": "OMS, Hardness in drinking-water, anexo técnico sobre dureza · apunte §4",
+      "apartado": "4",
+      "evidencia": "1. **«Dureza = sales de calcio y magnesio», en mg/L de CARBONATO CÁLCICO.** Tres preguntas documentadas. Es lo más rentable del tema."
+    },
+    {
+      "id": "t33-q73",
+      "pregunta": "Dos muestras tienen el mismo pH inicial. Una necesita bastante más ácido para alcanzar el mismo punto final de alcalinidad en alícuotas iguales. ¿Cuál tiene mayor alcalinidad según esa valoración?",
+      "opciones": [
+        "Las dos, porque partían del mismo pH.",
+        "La que consumió más ácido.",
+        "La que consumió menos ácido."
+      ],
+      "correcta": 1,
+      "explicacion": "La alcalinidad mide la capacidad de neutralizar ácido hasta el punto final del método, que puede ser distinta a igual pH inicial.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, alcalinidad por valoración ácido-base · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "**Definición técnica** (IDEAM, método 2320-B): la alcalinidad es **la capacidad del agua de neutralizar ácidos**, la **suma de todas las bases valorables**. En la mayoría de las aguas naturales es función del contenido de **carbonato, bicarbonato e hidróxido**, aunque pueden contribuir **boratos, fosfatos, silicatos** u otras bases."
+    },
+    {
+      "id": "t33-q74",
+      "pregunta": "¿Qué reactivo da nombre al índice empleado para estimar oxidabilidad en agua de consumo?",
+      "opciones": [
+        "Nitrato de plata.",
+        "EDTA.",
+        "Permanganato."
+      ],
+      "correcta": 2,
+      "explicacion": "El índice refleja consumo de permanganato bajo las condiciones del procedimiento.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte C; índice de permanganato · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "*«Método de análisis referencia es la **UNE-EN ISO 8467**. Calidad del agua. Determinación del índice de permanganato **u otro método con resultados equivalentes**.»*"
     }
   ],
   "supuestos": [

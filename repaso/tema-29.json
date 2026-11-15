@@ -1549,6 +1549,188 @@
       "fuente": "Normas ISO del ISO/TC 147/SC 3 · apunte §3",
       "apartado": "3",
       "evidencia": "| Estroncio-90 | Centelleo líquido o contador proporcional | ISO 13160:2021 | Bq/L |"
+    },
+    {
+      "id": "t29-q70",
+      "pregunta": "Se analiza agua de referencia sin actividad añadida que ha pasado por todos los reactivos y etapas del ensayo. ¿Qué control se está midiendo?",
+      "opciones": [
+        "El fondo del equipo sin muestra ni reactivos.",
+        "La calibración de eficiencia con un patrón de actividad conocida.",
+        "El blanco del procedimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Un blanco de procedimiento incorpora la preparación completa. El fondo instrumental se mide sin muestra ni reactivos.",
+      "fuente": "CSN, medida de índices de actividad en agua, blancos y fondo instrumental · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q71",
+      "pregunta": "Durante 120 s se registran 150 cuentas brutas y un fondo de 30 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "1 cuentas/s.",
+        "1,5 cuentas/s.",
+        "1,25 cuentas/s."
+      ],
+      "correcta": 0,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (150 − 30)/120 ≈ 1 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q72",
+      "pregunta": "Durante 140 s se registran 285 cuentas brutas y un fondo de 75 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "2,036 cuentas/s.",
+        "1,5 cuentas/s.",
+        "2,571 cuentas/s."
+      ],
+      "correcta": 1,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (285 − 75)/140 ≈ 1,5 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q73",
+      "pregunta": "Durante 100 s se registran 240 cuentas brutas y un fondo de 40 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "2,8 cuentas/s.",
+        "2,4 cuentas/s.",
+        "2 cuentas/s."
+      ],
+      "correcta": 2,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (240 − 40)/100 ≈ 2 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q74",
+      "pregunta": "Durante 180 s se registran 480 cuentas brutas y un fondo de 95 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "2,667 cuentas/s.",
+        "2,139 cuentas/s.",
+        "3,194 cuentas/s."
+      ],
+      "correcta": 1,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (480 − 95)/180 ≈ 2,139 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q75",
+      "pregunta": "Durante 200 s se registran 235 cuentas brutas y un fondo de 65 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "0,85 cuentas/s.",
+        "1,5 cuentas/s.",
+        "1,175 cuentas/s."
+      ],
+      "correcta": 0,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (235 − 65)/200 ≈ 0,85 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q76",
+      "pregunta": "Durante 80 s se registran 76 cuentas brutas y un fondo de 20 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "0,95 cuentas/s.",
+        "1,2 cuentas/s.",
+        "0,7 cuentas/s."
+      ],
+      "correcta": 2,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (76 − 20)/80 ≈ 0,7 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q77",
+      "pregunta": "Durante 112 s se registran 236 cuentas brutas y un fondo de 40 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "1,75 cuentas/s.",
+        "2,464 cuentas/s.",
+        "2,107 cuentas/s."
+      ],
+      "correcta": 0,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (236 − 40)/112 ≈ 1,75 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q78",
+      "pregunta": "Durante 200 s se registran 290 cuentas brutas y un fondo de 45 cuentas en un tiempo igual. ¿Cuál es la tasa neta simple antes de las demás correcciones? Redondea a tres decimales.",
+      "opciones": [
+        "1,45 cuentas/s.",
+        "1,225 cuentas/s.",
+        "1,675 cuentas/s."
+      ],
+      "correcta": 1,
+      "explicacion": "Se resta el fondo del recuento bruto y se divide entre el tiempo: (290 − 45)/200 ≈ 1,225 cuentas/s.",
+      "fuente": "CSN, actividad alfa y beta total en aguas; distinción entre cuentas de fondo y blanco · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q79",
+      "pregunta": "¿En qué unidad se expresa la concentración de actividad alfa total del agua de consumo?",
+      "opciones": [
+        "mg/L de sólidos disueltos.",
+        "mSv por muestra.",
+        "Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "El becquerel mide actividad y se refiere aquí al volumen de agua analizado.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte E · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| 59 | **Actividad alfa total** | **0,1** | **Bq/L** |"
+    },
+    {
+      "id": "t29-q80",
+      "pregunta": "En recuento alfa de un residuo seco, un depósito más grueso atenúa la señal a igual actividad. ¿Cuál es la causa física?",
+      "opciones": [
+        "Mayor penetración de las partículas alfa al aumentar la masa.",
+        "Mayor autoabsorción de las partículas alfa.",
+        "Conversión del emisor alfa en un patrón de conductividad."
+      ],
+      "correcta": 1,
+      "explicacion": "Las partículas alfa tienen alcance corto y parte del depósito puede frenarlas antes de que alcancen el detector.",
+      "fuente": "CSN, procedimiento 1.16, medida de índices de actividad en agua · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q81",
+      "pregunta": "Un agua subterránea presenta radón asociado al terreno por el que circula. ¿Qué tipo de origen explica este caso?",
+      "opciones": [
+        "Origen natural asociado a las series de desintegración presentes en el terreno.",
+        "Origen artificial debido a un vertido identificado de un radionucleido de reactor.",
+        "Origen biológico por fermentación de microorganismos."
+      ],
+      "correcta": 0,
+      "explicacion": "El radón se genera en cadenas radiactivas naturales y puede incorporarse al agua en contacto con materiales geológicos.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte E; origen geogénico descrito por el CSN · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**4. Por qué el agua subterránea es la sospechosa.** El CSN lo dice sin rodeos: los problemas de determinación *«generalmente están asociados a las **aguas subterráneas**, que con frecuencia son las que pueden contener cantidades más considerables de isótopos radiactivos de origen natural, especialmente en los casos que contienen **Ra-226**»*. El agua subterránea permanece en contacto largo tiempo con la roca, a presión y sin desgasificar; **el agua superficial se airea y pierde el radón**."
+    },
+    {
+      "id": "t29-q82",
+      "pregunta": "¿Qué técnica permite convertir la energía del beta de baja energía del tritio en pulsos de luz detectables?",
+      "opciones": [
+        "Fotometría UV de cloro con DPD.",
+        "Gravimetría de sólidos en suspensión.",
+        "Centelleo líquido."
+      ],
+      "correcta": 2,
+      "explicacion": "En un cóctel de centelleo, la energía depositada produce pulsos ópticos que se registran.",
+      "fuente": "UNE-EN ISO 9698, medición de la actividad de tritio por centelleo líquido · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **Tritio (H-3)** | **Centelleo líquido** | **UNE-EN ISO 9698** (adopta ISO 9698:2019) | **Bq/L** | VP **100**; **LD ≤ 10**. Solo si el origen es **superficial** y hay fuente antropogénica aguas arriba |"
     }
   ],
   "supuestos": [

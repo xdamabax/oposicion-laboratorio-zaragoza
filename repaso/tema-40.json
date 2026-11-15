@@ -1388,6 +1388,76 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Norma de ENAC | UNE-EN ISO/IEC 17011:2017 | PAC-ENAC, 1 |"
+    },
+    {
+      "id": "t40-q70",
+      "pregunta": "Un laboratorio presenta un certificado de su sistema de gestión. ¿Qué documento responde específicamente a si se ha reconocido su competencia para un ensayo del alcance?",
+      "opciones": [
+        "La acreditación y el alcance que incluye ese ensayo.",
+        "La factura de adquisición del instrumento del ensayo.",
+        "Solo el certificado de gestión, aunque el ensayo no aparezca en él."
+      ],
+      "correcta": 0,
+      "explicacion": "La acreditación se refiere a la competencia para actividades específicas de evaluación de la conformidad y debe leerse junto a su alcance.",
+      "fuente": "Reglamento (CE) 765/2008, art. 2.10; ENAC, acreditación y certificación · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Qué declara** | **Competencia técnica** para una actividad concreta | **Conformidad** con una norma (por ejemplo, que un sistema de gestión cumple la ISO 9001) |"
+    },
+    {
+      "id": "t40-q71",
+      "pregunta": "Una auditoría detecta una oportunidad de mejora y no identifica un requisito incumplido. Según el procedimiento citado, ¿cómo puede registrarse?",
+      "opciones": [
+        "Como no conformidad por el mero hecho de poder mejorar.",
+        "Como suspensión automática de toda la acreditación.",
+        "Como comentario."
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación como no conformidad exige identificar un incumplimiento. El comentario permite recoger el margen de mejora.",
+      "fuente": "ENAC, NO-11, tratamiento de no conformidades, 3.2 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "Un matiz: lo que todavía no es un incumplimiento pero podría serlo, o lo que tiene un claro margen de mejora, **no es una no conformidad**: se anota como **comentario** en el informe (NO-11, 3.2)."
+    },
+    {
+      "id": "t40-q72",
+      "pregunta": "¿Qué tríada resume el objeto de los requisitos generales de ISO/IEC 17025?",
+      "opciones": [
+        "Codificación, transporte y venta de reactivos.",
+        "Competencia, imparcialidad y operación coherente.",
+        "Rentabilidad, crecimiento y posición comercial."
+      ],
+      "correcta": 1,
+      "explicacion": "El capítulo 1 fija esos tres aspectos para las actividades de laboratorio.",
+      "fuente": "ISO/IEC 17025:2017, capítulo 1, objeto y campo de aplicación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Su objeto, literal (capítulo 1): *«Este documento especifica los requisitos generales para la **competencia, la imparcialidad y la operación coherente** de los laboratorios. Este documento es aplicable a todas las organizaciones que desarrollan actividades de laboratorio, **independientemente de la cantidad de personal**.»*"
+    },
+    {
+      "id": "t40-q73",
+      "pregunta": "¿En qué se debe basar un hallazgo de auditoría?",
+      "opciones": [
+        "En evidencias contrastadas frente a criterios de auditoría.",
+        "En la impresión inicial sin registros.",
+        "En un voto de popularidad del equipo auditado."
+      ],
+      "correcta": 0,
+      "explicacion": "La auditoría evalúa evidencias objetivamente comparándolas con requisitos o criterios aplicables.",
+      "fuente": "ISO 19011:2018, 3.1; ENAC, procedimiento de acreditación · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Una auditoría es una **evaluación sistemática, independiente y documentada** de si se cumplen unos requisitos, basada en **evidencias**. En un laboratorio acreditado hay **dos tipos**:"
+    },
+    {
+      "id": "t40-q74",
+      "pregunta": "Un laboratorio de agua de consumo quiere comprobar si su alcance cubre una determinación concreta. ¿Qué debe cotejar?",
+      "opciones": [
+        "Solo que el nombre comercial del equipo aparezca en el inventario.",
+        "Que el método aplicable a esa determinación esté cubierto por el alcance.",
+        "Solo que exista una acreditación en cualquier actividad de la empresa."
+      ],
+      "correcta": 1,
+      "explicacion": "El requisito se aplica a los métodos pertinentes. La existencia de una acreditación se interpreta junto con su alcance.",
+      "fuente": "Real Decreto 3/2023, anexo III, parte B · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- **Métodos acreditados por la UNE-EN ISO/IEC 17025** para los parámetros del anexo I que analice el laboratorio (anexo III, B.2), **salvo** si solo hace control operacional y de rutina."
     }
   ],
   "supuestos": [

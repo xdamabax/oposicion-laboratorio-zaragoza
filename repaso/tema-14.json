@@ -1503,6 +1503,76 @@
       "fuente": "UKHSA, SMI TP 39 (2025) · apunte §9",
       "apartado": "9",
       "evidencia": "Si los controles no salen bien, la tinción no se acepta."
+    },
+    {
+      "id": "t14-q73",
+      "pregunta": "Se prepara el protocolo de Gram y se separan el colorante primario y el de contraste. ¿Cuál de ellos es primario en la secuencia habitual?",
+      "opciones": [
+        "Safranina.",
+        "Fucsina de contraste.",
+        "Cristal violeta."
+      ],
+      "correcta": 2,
+      "explicacion": "El cristal violeta se aplica primero y luego se forma el complejo con el mordiente yodado.",
+      "fuente": "FDA, BAM, tinción de Gram, secuencia de colorantes · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Cristal violeta | 0,5 %, **30 s** | **60 s** |"
+    },
+    {
+      "id": "t14-q74",
+      "pregunta": "Se quiere observar el desplazamiento de bacterias vivas en líquido sin fijarlas ni teñirlas. ¿Qué preparación se adapta al objetivo?",
+      "opciones": [
+        "Gota pendiente.",
+        "Preparación con tinción de endosporas tras calentar.",
+        "Frotis fijado por calor y teñido con Gram."
+      ],
+      "correcta": 0,
+      "explicacion": "La gota pendiente es una preparación en fresco que permite observar la movilidad.",
+      "fuente": "FDA, BAM, cap. 2, examen microscópico de alimentos · apunte §11",
+      "apartado": "11",
+      "evidencia": "10. **Fresco y gota pendiente:** bacterias **vivas**, **movilidad** a **×400**, enseguida. **Movimiento browniano no es movilidad.**"
+    },
+    {
+      "id": "t14-q75",
+      "pregunta": "Se ven partículas vibrar alrededor del mismo punto sin trayectoria sostenida. ¿Qué observación adicional demostraría mejor movilidad bacteriana propia?",
+      "opciones": [
+        "Vibración aleatoria en el mismo sitio.",
+        "Desplazamiento dirigido con cambio de posición neto.",
+        "Oscilación simultánea de todo el campo al tocar la mesa."
+      ],
+      "correcta": 1,
+      "explicacion": "El movimiento browniano produce oscilaciones. La movilidad propia se reconoce mejor por desplazamiento neto y dirigido.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, microscopía · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- **Inmóvil:** sin movimiento, o **solo movimiento browniano**: la vibración de las partículas en el líquido, **sin desplazamiento propio**."
+    },
+    {
+      "id": "t14-q76",
+      "pregunta": "En una tinción de Gram correctamente realizada con safranina, ¿en qué células hace visible principalmente el contraste después de decolorar?",
+      "opciones": [
+        "Solo en los portaobjetos en los que no hay bacterias.",
+        "En las grampositivas que aún conservan el complejo violeta-yodo.",
+        "En las gramnegativas que han perdido el complejo violeta-yodo."
+      ],
+      "correcta": 2,
+      "explicacion": "La safranina da el tono rosa a las células que se decoloraron.",
+      "fuente": "FDA, BAM, tinción de Gram, cristal violeta y contraste · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 4 | **Safranina** (o rojo neutro o fucsina) | **Contraste** | **Grampositivas violetas; gramnegativas rosas** |"
+    },
+    {
+      "id": "t14-q77",
+      "pregunta": "Una tinción conserva el colorante primario en determinadas bacterias tras aplicar un decolorante ácido-alcohol. ¿Qué propiedad se ha puesto de manifiesto?",
+      "opciones": [
+        "Motilidad por flagelos.",
+        "Ácido-alcohol resistencia.",
+        "Fermentación anaerobia de la glucosa."
+      ],
+      "correcta": 1,
+      "explicacion": "La resistencia a la decoloración ácido-alcohólica es el rasgo que identifica esta clase de tinción.",
+      "fuente": "CDC, microscopía de bacilos ácido-alcohol resistentes, principio de tinción · apunte §7",
+      "apartado": "7",
+      "evidencia": "- Un colorante fuerte, la **fucsina fenicada**, entra en ellas. Después **resisten la decoloración con ácido-alcohol** y quedan **rojas**."
     }
   ],
   "supuestos": [

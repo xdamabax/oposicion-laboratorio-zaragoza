@@ -1702,6 +1702,76 @@
       },
       "apartado": "4",
       "evidencia": "Respuesta oficial: «En caso de ingestión, llamar inmediatamente a un centro de información toxicológica o a un médico», que es el P301 + P310"
+    },
+    {
+      "id": "t20-q67",
+      "pregunta": "Al comparar dos pictogramas, uno muestra una llama simple y el otro una llama sobre un círculo. ¿Qué tipo de peligro señala el de la llama sobre el círculo?",
+      "opciones": [
+        "Inflamabilidad señalizada por la llama simple.",
+        "Gas a presión señalado por una botella.",
+        "Comburente."
+      ],
+      "correcta": 2,
+      "explicacion": "El pictograma GHS03 de llama sobre un círculo identifica los peligros de sustancias o mezclas comburentes que lo requieren.",
+      "fuente": "Reglamento (CE) 1272/2008, anexo V, pictograma GHS03 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| ![Comburente](ghs:comburente) | GHS03 | Llama sobre un círculo | Físicos | Gases, líquidos y sólidos comburentes |"
+    },
+    {
+      "id": "t20-q68",
+      "pregunta": "¿Qué clasificación describe un peligro físico del CLP?",
+      "opciones": [
+        "Inflamabilidad.",
+        "Peligro crónico para el medio acuático.",
+        "Mutagenicidad en células germinales."
+      ],
+      "correcta": 0,
+      "explicacion": "La inflamabilidad se incluye entre los peligros físicos. Los otros ejemplos corresponden a salud y medio ambiente respectivamente.",
+      "fuente": "Reglamento (CE) 1272/2008, anexo I, clasificación de peligros · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| ![Inflamable](ghs:inflamable) | GHS02 | Llama | Físicos | Gases, aerosoles, líquidos y sólidos inflamables; pirofóricos; que desprenden gases inflamables con el agua |"
+    },
+    {
+      "id": "t20-q69",
+      "pregunta": "Al verificar una etiqueta CLP impresa, ¿qué aspecto general debe tener un pictograma de peligro?",
+      "opciones": [
+        "Un triángulo negro sobre fondo amarillo.",
+        "Un símbolo negro sobre fondo blanco con marco rojo en forma de rombo.",
+        "Un círculo blanco con borde azul."
+      ],
+      "correcta": 1,
+      "explicacion": "El CLP prescribe el diseño de cuadrado apoyado en un vértice, con símbolo negro, fondo blanco y marco rojo.",
+      "fuente": "Reglamento (CE) 1272/2008, art. 19 y anexo V · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Cada pictograma es un **rombo rojo sobre fondo blanco con un símbolo negro**. Son nueve, y dos de ellos aparecen en más de un grupo de peligro:"
+    },
+    {
+      "id": "t20-q70",
+      "pregunta": "En una ficha aparece un texto que describe cómo reducir un perjuicio durante el uso. ¿En qué grupo de la etiqueta se encuadra?",
+      "opciones": [
+        "Identificadores del producto.",
+        "Indicaciones de peligro H.",
+        "Consejos de prudencia P."
+      ],
+      "correcta": 2,
+      "explicacion": "Los consejos P describen medidas de prevención, respuesta, almacenamiento o eliminación, según corresponda.",
+      "fuente": "Reglamento (CE) 1272/2008, arts. 21 y 22 y anexo IV · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| g) | Los **consejos de prudencia** apropiados (art. 22) | **Cuando proceda** |"
+    },
+    {
+      "id": "t20-q71",
+      "pregunta": "Para preparar un armario de reactivos se necesita comprobar condiciones de almacenamiento e incompatibilidades. ¿Qué sección de la ficha es el punto de partida?",
+      "opciones": [
+        "Sección 1, identificación del proveedor.",
+        "Sección 7, manipulación y almacenamiento.",
+        "Sección 15, información reglamentaria."
+      ],
+      "correcta": 1,
+      "explicacion": "La sección 7 recoge las condiciones de almacenamiento seguro, incluidas las incompatibilidades.",
+      "fuente": "Reglamento (CE) 1907/2006, anexo II, sección 7 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "La **ficha de datos de seguridad (FDS)** es documento distinto de la etiqueta: la regula el **REACH** (Reglamento (CE) 1907/2006, anexo II) y tiene **16 secciones**."
     }
   ],
   "supuestos": [

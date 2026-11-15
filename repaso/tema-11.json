@@ -1447,6 +1447,76 @@
       "fuente": "SCA (2017) · apunte §6",
       "apartado": "6",
       "evidencia": "Tamaños: 50-60 mm para la filtración por membrana; 90 mm para recuentos, resiembras y confirmaciones."
+    },
+    {
+      "id": "t11-q73",
+      "pregunta": "La cámara ya ha llegado a la consigna de esterilización, pero el sensor del punto más frío de la carga aún está por debajo. ¿Puede empezar a contarse el tiempo de contacto de la carga?",
+      "opciones": [
+        "Solo si el ciclo nunca llega a la fase de enfriamiento.",
+        "Sí, la consigna de la cámara basta aunque la carga esté fría.",
+        "Todavía no, debe alcanzarse la temperatura de tratamiento en la carga."
+      ],
+      "correcta": 2,
+      "explicacion": "El tiempo de contacto se cuenta cuando la carga está a la temperatura requerida, no solo cuando la cámara la alcanza.",
+      "fuente": "INSST, Guía técnica de agentes biológicos; fase de contacto del ciclo en autoclave · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Tiempo de contacto no es lo mismo que el ciclo entero.** El tiempo empieza **cuando toda la carga está a la temperatura**, no cuando la alcanza la cámara. El ciclo tiene cinco fases:"
+    },
+    {
+      "id": "t11-q74",
+      "pregunta": "Para un mismo tratamiento en horno, ¿a partir de qué momento cuenta el tiempo de contacto del ciclo de esterilización?",
+      "opciones": [
+        "Desde que se cierra en frío la puerta del horno.",
+        "Desde que la carga alcanza la temperatura de tratamiento.",
+        "Desde que se inicia el enfriamiento."
+      ],
+      "correcta": 1,
+      "explicacion": "El tiempo de contacto exige que la carga esté expuesta a la temperatura establecida.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, calor seco · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aire caliente, a temperaturas altas y durante más tiempo** que el vapor. **Tiempos de contacto** según la Guía técnica del INSST:"
+    },
+    {
+      "id": "t11-q75",
+      "pregunta": "Un material que debe esterilizarse no tolera ni temperaturas altas ni exposición al vapor. ¿Qué familia debe evaluarse conforme a su compatibilidad?",
+      "opciones": [
+        "Esterilización química a baja temperatura.",
+        "Autoclavado habitual con vapor saturado.",
+        "Calor seco a temperatura más elevada."
+      ],
+      "correcta": 0,
+      "explicacion": "Los métodos químicos a baja temperatura se destinan al material incompatible con calor y vapor.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, esterilización a baja temperatura · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Para el material **sensible al calor y al vapor**."
+    },
+    {
+      "id": "t11-q76",
+      "pregunta": "Se estudia esterilizar industrialmente material termosensible ya envasado. ¿Qué propiedad hace pertinente evaluar radiación gamma?",
+      "opciones": [
+        "Requiere que el envase se disuelva en agua.",
+        "Esteriliza solo la superficie expuesta a luz visible.",
+        "Puede atravesar el envase."
+      ],
+      "correcta": 2,
+      "explicacion": "La penetración de los rayos gamma permite tratar materiales envasados en aplicaciones compatibles.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, radiación ionizante · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Esteriliza** material sensible al calor y **atraviesa envases**."
+    },
+    {
+      "id": "t11-q77",
+      "pregunta": "Un indicador externo cambia de color, pero el indicador biológico colocado en la carga muestra crecimiento. ¿Qué evidencia pesa al evaluar ese ciclo?",
+      "opciones": [
+        "El crecimiento biológico impide dar por demostrada la eficacia del ciclo.",
+        "Ambos resultados son equivalentes y puede liberarse el material.",
+        "El cambio de color externo demuestra esterilidad de toda la carga."
+      ],
+      "correcta": 0,
+      "explicacion": "El indicador externo refleja exposición al proceso. El crecimiento del control biológico demuestra supervivencia en las condiciones evaluadas.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, controles de esterilización · apunte §7",
+      "apartado": "7",
+      "evidencia": "| *G. stearothermophilus*: vapor, **55 °C**, **semanal**; *B. atrophaeus*: óxido de etileno, **37 °C**, **cada ciclo** | Indicadores biológicos |"
     }
   ],
   "supuestos": [

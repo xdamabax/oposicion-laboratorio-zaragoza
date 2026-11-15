@@ -1544,6 +1544,202 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Incertidumbre B(a)P | 50 % | | Captura mínima de datos | 90 % |"
+    },
+    {
+      "id": "t37-q70",
+      "pregunta": "Una toma válida de PM aporta 1,62 mg de masa neta al filtro con 54 m³ de aire. ¿Qué concentración másica se obtiene en µg/m³?",
+      "opciones": [
+        "30 µg/m³.",
+        "0 µg/m³.",
+        "3 µg/m³."
+      ],
+      "correcta": 0,
+      "explicacion": "Se convierte mg a µg y se divide entre el volumen: (1,62 × 1.000)/54 = 30 µg/m³.",
+      "fuente": "Real Decreto 102/2011, anexo VI; método gravimétrico de materia particulada · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q71",
+      "pregunta": "Una toma válida de PM aporta 0,84 mg de masa neta al filtro con 42 m³ de aire. ¿Qué concentración másica se obtiene en µg/m³?",
+      "opciones": [
+        "2 µg/m³.",
+        "20 µg/m³.",
+        "0 µg/m³."
+      ],
+      "correcta": 1,
+      "explicacion": "Se convierte mg a µg y se divide entre el volumen: (0,84 × 1.000)/42 = 20 µg/m³.",
+      "fuente": "Real Decreto 102/2011, anexo VI; método gravimétrico de materia particulada · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q72",
+      "pregunta": "Una toma válida de PM aporta 0,68 mg de masa neta al filtro con 40 m³ de aire. ¿Qué concentración másica se obtiene en µg/m³?",
+      "opciones": [
+        "0 µg/m³.",
+        "1,7 µg/m³.",
+        "17 µg/m³."
+      ],
+      "correcta": 2,
+      "explicacion": "Se convierte mg a µg y se divide entre el volumen: (0,68 × 1.000)/40 = 17 µg/m³.",
+      "fuente": "Real Decreto 102/2011, anexo VI; método gravimétrico de materia particulada · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q73",
+      "pregunta": "Una toma válida de PM aporta 1,92 mg de masa neta al filtro con 48 m³ de aire. ¿Qué concentración másica se obtiene en µg/m³?",
+      "opciones": [
+        "40 µg/m³.",
+        "4 µg/m³.",
+        "0 µg/m³."
+      ],
+      "correcta": 0,
+      "explicacion": "Se convierte mg a µg y se divide entre el volumen: (1,92 × 1.000)/48 = 40 µg/m³.",
+      "fuente": "Real Decreto 102/2011, anexo VI; método gravimétrico de materia particulada · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q74",
+      "pregunta": "Una toma válida de PM aporta 2,43 mg de masa neta al filtro con 54 m³ de aire. ¿Qué concentración másica se obtiene en µg/m³?",
+      "opciones": [
+        "0 µg/m³.",
+        "4,5 µg/m³.",
+        "45 µg/m³."
+      ],
+      "correcta": 2,
+      "explicacion": "Se convierte mg a µg y se divide entre el volumen: (2,43 × 1.000)/54 = 45 µg/m³.",
+      "fuente": "Real Decreto 102/2011, anexo VI; método gravimétrico de materia particulada · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q75",
+      "pregunta": "La concentración gravimétrica de PM es 18 µg/m³ durante una toma válida de 56 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "0,321 mg.",
+        "1,008 mg.",
+        "1008 mg."
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (18 × 56)/1.000 = 1,008 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q76",
+      "pregunta": "La concentración gravimétrica de PM es 30 µg/m³ durante una toma válida de 75 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "2,25 mg.",
+        "2250 mg.",
+        "0,4 mg."
+      ],
+      "correcta": 0,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (30 × 75)/1.000 = 2,25 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q77",
+      "pregunta": "La concentración gravimétrica de PM es 24 µg/m³ durante una toma válida de 54 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "0,444 mg.",
+        "1,296 mg.",
+        "1296 mg."
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (24 × 54)/1.000 = 1,296 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q78",
+      "pregunta": "La concentración gravimétrica de PM es 35 µg/m³ durante una toma válida de 49 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "1715 mg.",
+        "0,714 mg.",
+        "1,715 mg."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (35 × 49)/1.000 = 1,715 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q79",
+      "pregunta": "La concentración gravimétrica de PM es 41 µg/m³ durante una toma válida de 60 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "2,46 mg.",
+        "0,683 mg.",
+        "2460 mg."
+      ],
+      "correcta": 0,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (41 × 60)/1.000 = 2,46 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q80",
+      "pregunta": "La concentración gravimétrica de PM es 22 µg/m³ durante una toma válida de 40 m³. Despreciando correcciones, ¿qué masa neta de partículas acumuló el filtro, en mg?",
+      "opciones": [
+        "880 mg.",
+        "0,55 mg.",
+        "0,88 mg."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración multiplicada por el volumen da µg. Al convertir a mg: (22 × 40)/1.000 = 0,88 mg.",
+      "fuente": "Real Decreto 102/2011, anexo VI; relación entre masa de partículas y volumen de aire del apunte · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia."
+    },
+    {
+      "id": "t37-q81",
+      "pregunta": "¿Qué significa que la eficiencia de corte del cabezal PM10 se defina al 50 % para 10 µm de diámetro aerodinámico?",
+      "opciones": [
+        "Que el cabezal mide la masa con una incertidumbre fija del 50 %.",
+        "Que su curva de selección tiene un punto del 50 % para partículas de ese diámetro.",
+        "Que solo atraviesan partículas de exactamente 10 µm."
+      ],
+      "correcta": 1,
+      "explicacion": "El tamaño de referencia corresponde al punto del 50 % de una curva aerodinámica, no a un corte ideal abrupto.",
+      "fuente": "Real Decreto 102/2011, art. 2, definición de PM10 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "***«PM10: partículas que pasan a través del cabezal de tamaño selectivo, definido en el método de referencia para el muestreo y la medición de PM10 de la norma UNE-EN 12341 […], para un diámetro aerodinámico de 10 µm con una eficiencia de corte del 50 %.»***"
+    },
+    {
+      "id": "t37-q82",
+      "pregunta": "En un episodio de polvo natural se acredita la contribución de esa fuente a una superación. ¿Qué tratamiento contempla el artículo 22, dentro de sus condiciones?",
+      "opciones": [
+        "La superación atribuible a esa fuente no se contabiliza como tal a efectos del real decreto.",
+        "Se debe borrar automáticamente toda la serie de mediciones del año.",
+        "Siempre se considera una emisión industrial local."
+      ],
+      "correcta": 0,
+      "explicacion": "El artículo prevé un tratamiento específico para las superaciones atribuibles a fuentes naturales cuando se demuestra su origen.",
+      "fuente": "Real Decreto 102/2011, art. 22 · apunte §2.12",
+      "apartado": "2.12",
+      "evidencia": "*«Las superaciones atribuibles a fuentes naturales […] **no se considerarán superaciones** a los efectos de lo dispuesto en el presente real decreto y **no originarán la obligación de ejecutar planes de actuación**.»*"
+    },
+    {
+      "id": "t37-q83",
+      "pregunta": "¿Qué contaminante se forma en el aire por reacciones fotoquímicas de precursores?",
+      "opciones": [
+        "Radón procedente del suelo como producto de combustión urbana.",
+        "Ozono troposférico.",
+        "Plomo elemental del filtro como producto directo de la luz."
+      ],
+      "correcta": 1,
+      "explicacion": "La formación de ozono a nivel del suelo depende de reacciones entre precursores, favorecidas por la radiación solar.",
+      "fuente": "Real Decreto 102/2011; Agencia Europea de Medio Ambiente, formación de ozono troposférico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Por eso **el ozono no tiene valor límite sino VALOR OBJETIVO**: es secundario, se forma por reacción fotoquímica de los **COV** con los **óxidos de nitrógeno** en presencia de luz solar, y un Estado no puede garantizar su cumplimiento actuando solo sobre sus propias chimeneas. El propio RD lo define: *«Sustancias precursoras del ozono: sustancias que contribuyen a la formación de ozono en la baja atmósfera.»*"
     }
   ],
   "supuestos": [

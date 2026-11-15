@@ -1333,6 +1333,230 @@
       "fuente": "UNE-EN ISO 7027-2:2020 (catálogo) · apunte §3",
       "apartado": "3",
       "evidencia": "| UNE-EN ISO 7027-2:2020 | Alcance visual (m) |"
+    },
+    {
+      "id": "t28-q65",
+      "pregunta": "¿Qué unidad acompaña al índice de refracción obtenido como cociente de dos senos?",
+      "opciones": [
+        "Grados sexagesimales.",
+        "Ninguna, es adimensional.",
+        "Micrómetros por segundo."
+      ],
+      "correcta": 1,
+      "explicacion": "Cada seno y su cociente son adimensionales, aunque los ángulos puedan expresarse en grados.",
+      "fuente": "Farmacopea Europea, 2.2.6, índice de refracción · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Es **adimensional**: es un cociente de senos."
+    },
+    {
+      "id": "t28-q66",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 45° y el de refracción es 28°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "1,506.",
+        "0,664.",
+        "1,607."
+      ],
+      "correcta": 0,
+      "explicacion": "n ≈ sen(45°)/sen(28°) ≈ 1,506.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q67",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 50° y el de refracción es 30°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "1,532.",
+        "1,667.",
+        "0,653."
+      ],
+      "correcta": 0,
+      "explicacion": "n ≈ sen(50°)/sen(30°) ≈ 1,532.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q68",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 55° y el de refracción es 32°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "0,647.",
+        "1,546.",
+        "1,719."
+      ],
+      "correcta": 1,
+      "explicacion": "n ≈ sen(55°)/sen(32°) ≈ 1,546.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q69",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 60° y el de refracción es 35°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "1,714.",
+        "0,662.",
+        "1,51."
+      ],
+      "correcta": 2,
+      "explicacion": "n ≈ sen(60°)/sen(35°) ≈ 1,51.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q70",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 47° y el de refracción es 29°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "1,509.",
+        "0,663.",
+        "1,621."
+      ],
+      "correcta": 0,
+      "explicacion": "n ≈ sen(47°)/sen(29°) ≈ 1,509.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q71",
+      "pregunta": "Un rayo pasa de aire (n ≈ 1) a una muestra. El ángulo de incidencia es 62° y el de refracción es 34°, ambos respecto a la normal. ¿Qué índice da Snell? Redondea a tres decimales.",
+      "opciones": [
+        "1,824.",
+        "0,633.",
+        "1,579."
+      ],
+      "correcta": 2,
+      "explicacion": "n ≈ sen(62°)/sen(34°) ≈ 1,579.",
+      "fuente": "Óptica geométrica, ley de Snell, aplicada a la refractometría del apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **n = sen i / sen r**\n\nTres consecuencias que hay que tener claras:"
+    },
+    {
+      "id": "t28-q72",
+      "pregunta": "La rotación observada es +12°, la celda tiene 2 dm y la concentración es 0,1 g/mL. ¿Qué rotación específica se obtiene para esas condiciones?",
+      "opciones": [
+        "6 °·mL·dm⁻¹·g⁻¹.",
+        "60 °·mL·dm⁻¹·g⁻¹.",
+        "2,4 °·mL·dm⁻¹·g⁻¹."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa [α] = α/(l·c) = 12/(2 × 0,1) = 60 °·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; relación de rotación y longitud óptica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Rotación específica [α]_D²⁰ del almidón puro**, valores convencionales del reglamento:"
+    },
+    {
+      "id": "t28-q73",
+      "pregunta": "La rotación observada es +8°, la celda tiene 1 dm y la concentración es 0,2 g/mL. ¿Qué rotación específica se obtiene para esas condiciones?",
+      "opciones": [
+        "40 °·mL·dm⁻¹·g⁻¹.",
+        "1,6 °·mL·dm⁻¹·g⁻¹.",
+        "8 °·mL·dm⁻¹·g⁻¹."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa [α] = α/(l·c) = 8/(1 × 0,2) = 40 °·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; relación de rotación y longitud óptica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Rotación específica [α]_D²⁰ del almidón puro**, valores convencionales del reglamento:"
+    },
+    {
+      "id": "t28-q74",
+      "pregunta": "La rotación observada es +15°, la celda tiene 2 dm y la concentración es 0,15 g/mL. ¿Qué rotación específica se obtiene para esas condiciones?",
+      "opciones": [
+        "7,5 °·mL·dm⁻¹·g⁻¹.",
+        "50 °·mL·dm⁻¹·g⁻¹.",
+        "4,5 °·mL·dm⁻¹·g⁻¹."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa [α] = α/(l·c) = 15/(2 × 0,15) = 50 °·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; relación de rotación y longitud óptica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Rotación específica [α]_D²⁰ del almidón puro**, valores convencionales del reglamento:"
+    },
+    {
+      "id": "t28-q75",
+      "pregunta": "La rotación observada es +9°, la celda tiene 1,5 dm y la concentración es 0,2 g/mL. ¿Qué rotación específica se obtiene para esas condiciones?",
+      "opciones": [
+        "2,7 °·mL·dm⁻¹·g⁻¹.",
+        "6 °·mL·dm⁻¹·g⁻¹.",
+        "30 °·mL·dm⁻¹·g⁻¹."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usa [α] = α/(l·c) = 9/(1,5 × 0,2) = 30 °·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; relación de rotación y longitud óptica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Rotación específica [α]_D²⁰ del almidón puro**, valores convencionales del reglamento:"
+    },
+    {
+      "id": "t28-q76",
+      "pregunta": "La rotación observada es +16°, la celda tiene 2 dm y la concentración es 0,08 g/mL. ¿Qué rotación específica se obtiene para esas condiciones?",
+      "opciones": [
+        "100 °·mL·dm⁻¹·g⁻¹.",
+        "8 °·mL·dm⁻¹·g⁻¹.",
+        "2,56 °·mL·dm⁻¹·g⁻¹."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa [α] = α/(l·c) = 16/(2 × 0,08) = 100 °·mL·dm⁻¹·g⁻¹.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; relación de rotación y longitud óptica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Rotación específica [α]_D²⁰ del almidón puro**, valores convencionales del reglamento:"
+    },
+    {
+      "id": "t28-q77",
+      "pregunta": "En una configuración nefelométrica habitual, ¿dónde se coloca el detector respecto al haz incidente para recoger luz dispersada lateralmente?",
+      "opciones": [
+        "En prolongación directa del haz a 0°.",
+        "En el mismo lado que la fuente para medir solo luz reflejada a 180°.",
+        "A 90°."
+      ],
+      "correcta": 2,
+      "explicacion": "La medición nefelométrica de referencia usa un detector alrededor del ángulo recto respecto al haz.",
+      "fuente": "US EPA, Method 180.1, turbidimetría nefelométrica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Detector a 90° ± 2,5°** del haz incidente."
+    },
+    {
+      "id": "t28-q78",
+      "pregunta": "¿Qué cambia una disolución ópticamente activa en un polarímetro?",
+      "opciones": [
+        "La polaridad de los electrodos de referencia.",
+        "La orientación del plano de polarización de la luz.",
+        "La masa de las partículas filtradas."
+      ],
+      "correcta": 1,
+      "explicacion": "Se mide la rotación del plano de polarización producida por la muestra.",
+      "fuente": "Reglamento (CE) 152/2009, anexo III, método polarimétrico; principio óptico · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La definición de la **Farmacopea Europea 2.2.7**: la rotación óptica es **la propiedad que presentan las sustancias quirales de girar el plano de polarización de la luz polarizada**."
+    },
+    {
+      "id": "t28-q79",
+      "pregunta": "¿Qué magnitud angular utiliza el refractómetro de Abbe para relacionar la propagación entre muestra y prisma con el índice de refracción?",
+      "opciones": [
+        "El ángulo crítico en la interfaz.",
+        "El ángulo de rotación de la polarización de un azúcar como única variable.",
+        "El ángulo de dispersión fijo de una célula nefelométrica."
+      ],
+      "correcta": 0,
+      "explicacion": "La frontera de iluminación del instrumento está ligada al ángulo crítico.",
+      "fuente": "LibreTexts, óptica geométrica y refractometría de Abbe · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "3. Al pasar de la muestra al prisma, **más denso**, todo rayo **se acerca a la normal**. El rayo rasante es el que más se desvía y marca el **ÁNGULO LÍMITE**: **más allá de él no puede llegar ningún rayo**."
+    },
+    {
+      "id": "t28-q80",
+      "pregunta": "Dos lecturas de índice de refracción de la misma disolución se tomaron a temperaturas distintas. ¿Qué variable conviene igualar o corregir antes de compararlas?",
+      "opciones": [
+        "La masa del recipiente antes de lavar.",
+        "La temperatura de medida.",
+        "El número de réplicas sin modificar la temperatura."
+      ],
+      "correcta": 1,
+      "explicacion": "El índice de refracción depende de la temperatura, además de la longitud de onda y la composición.",
+      "fuente": "Refractometría de Abbe, condiciones de medida indicadas en el apunte · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Identificación y control de pureza de líquidos**: es el uso que le da la Farmacopea. El índice de refracción es una **constante física** de cada sustancia a temperatura y longitud de onda fijas."
     }
   ],
   "supuestos": [

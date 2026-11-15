@@ -1504,6 +1504,496 @@
       "fuente": "Guía Eurachem, RR3 · apunte §3",
       "apartado": "3",
       "evidencia": "Las mismas 10 réplicas | LC = 10 · s₀′ (RSD del 10 %)."
+    },
+    {
+      "id": "t38-q70",
+      "pregunta": "La incertidumbre estándar combinada se mantiene constante y aumenta el factor de cobertura. ¿Cómo cambia la incertidumbre expandida?",
+      "opciones": [
+        "Permanece constante porque las contribuciones de entrada no cambiaron.",
+        "Disminuye en la misma proporción.",
+        "Aumenta en la misma proporción que el factor."
+      ],
+      "correcta": 2,
+      "explicacion": "La incertidumbre expandida es proporcional al factor de cobertura, pues U = k·u_c.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre expandida (VIM 2.35):** *«producto de una incertidumbre típica combinada y un factor mayor que uno»*. Ese factor es el **factor de cobertura, k** (VIM 2.38)."
+    },
+    {
+      "id": "t38-q71",
+      "pregunta": "La incertidumbre estándar combinada es 0,7 mg/L y el factor de cobertura es 2. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "0,35 mg/L.",
+        "1,4 mg/L.",
+        "2,7 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 0,7 × 2 = 1,4 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q72",
+      "pregunta": "La incertidumbre estándar combinada es 1,2 mg/L y el factor de cobertura es 2,1. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "2,52 mg/L.",
+        "3,3 mg/L.",
+        "0,571 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 1,2 × 2,1 = 2,52 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q73",
+      "pregunta": "La incertidumbre estándar combinada es 0,23 mg/L y el factor de cobertura es 2. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "0,115 mg/L.",
+        "2,23 mg/L.",
+        "0,46 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 0,23 × 2 = 0,46 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q74",
+      "pregunta": "La incertidumbre estándar combinada es 0,48 mg/L y el factor de cobertura es 2,3. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "1,104 mg/L.",
+        "2,78 mg/L.",
+        "0,209 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 0,48 × 2,3 = 1,104 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q75",
+      "pregunta": "La incertidumbre estándar combinada es 3,4 mg/L y el factor de cobertura es 1,96. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "1,735 mg/L.",
+        "6,664 mg/L.",
+        "5,36 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 3,4 × 1,96 = 6,664 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q76",
+      "pregunta": "La incertidumbre estándar combinada es 0,35 mg/L y el factor de cobertura es 2,6. ¿Qué incertidumbre expandida resulta?",
+      "opciones": [
+        "2,95 mg/L.",
+        "0,135 mg/L.",
+        "0,91 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica la incertidumbre estándar combinada por el factor de cobertura: 0,35 × 2,6 = 0,91 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §6, incertidumbre expandida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "> **U = k · uc**\n>\n> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal)."
+    },
+    {
+      "id": "t38-q77",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 5 y 12. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "17 mg/L.",
+        "13 mg/L.",
+        "169 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(5² + 12²) = 13 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q78",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 8 y 15. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "17 mg/L.",
+        "289 mg/L.",
+        "23 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(8² + 15²) = 17 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q79",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 9 y 12. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "21 mg/L.",
+        "225 mg/L.",
+        "15 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(9² + 12²) = 15 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q80",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 2,4 y 3,2. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "4 mg/L.",
+        "16 mg/L.",
+        "5,6 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(2,4² + 3,2²) = 4 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q81",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 1,2 y 3,5. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "4,7 mg/L.",
+        "3,7 mg/L.",
+        "13,69 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(1,2² + 3,5²) = 3,7 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q82",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 2,8 y 4,5. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "28,09 mg/L.",
+        "7,3 mg/L.",
+        "5,3 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(2,8² + 4,5²) = 5,3 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q83",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 3,6 y 4,8. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "8,4 mg/L.",
+        "6 mg/L.",
+        "36 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(3,6² + 4,8²) = 6 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q84",
+      "pregunta": "Dos componentes de incertidumbre estándar independientes, ya expresados en mg/L de resultado, son 1,6 y 6,3. ¿Qué incertidumbre estándar combinada tienen?",
+      "opciones": [
+        "6,5 mg/L.",
+        "42,25 mg/L.",
+        "7,9 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman los cuadrados y se toma la raíz: √(1,6² + 6,3²) = 6,5 mg/L.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, §5, combinación de componentes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
+    },
+    {
+      "id": "t38-q85",
+      "pregunta": "La desviación típica de repetibilidad es 0,1 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "0,2 mg/L.",
+        "0,141 mg/L.",
+        "0,28 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,1 ≈ 0,28 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q86",
+      "pregunta": "La desviación típica de repetibilidad es 0,25 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "0,7 mg/L.",
+        "0,354 mg/L.",
+        "0,5 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,25 ≈ 0,7 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q87",
+      "pregunta": "La desviación típica de repetibilidad es 0,4 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "0,8 mg/L.",
+        "1,12 mg/L.",
+        "0,566 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,4 ≈ 1,12 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q88",
+      "pregunta": "La desviación típica de repetibilidad es 0,12 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "0,17 mg/L.",
+        "0,24 mg/L.",
+        "0,336 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,12 ≈ 0,336 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q89",
+      "pregunta": "La desviación típica de repetibilidad es 0,62 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "1,24 mg/L.",
+        "1,736 mg/L.",
+        "0,877 mg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,62 ≈ 1,736 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q90",
+      "pregunta": "La desviación típica de repetibilidad es 0,5 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "1,4 mg/L.",
+        "0,707 mg/L.",
+        "1 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,5 ≈ 1,4 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q91",
+      "pregunta": "La desviación típica de repetibilidad es 1,3 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "2,6 mg/L.",
+        "1,838 mg/L.",
+        "3,64 mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 1,3 ≈ 3,64 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q92",
+      "pregunta": "La desviación típica de repetibilidad es 0,32 mg/L. Con el factor convencional 2,8, ¿cuánto vale el límite de repetibilidad?",
+      "opciones": [
+        "0,896 mg/L.",
+        "0,453 mg/L.",
+        "0,64 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se utiliza r ≈ 2,8sᵣ: 2,8 × 0,32 ≈ 0,896 mg/L.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, límite de repetibilidad · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra."
+    },
+    {
+      "id": "t38-q93",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 3 % y 4 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "7 %.",
+        "5 %.",
+        "12 %."
+      ],
+      "correcta": 1,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(3² + 4²) ≈ 5 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q94",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 5 % y 7 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "35 %.",
+        "12 %.",
+        "8,6 %."
+      ],
+      "correcta": 2,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(5² + 7²) ≈ 8,6 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q95",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 2 % y 3 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "5 %.",
+        "3,61 %.",
+        "6 %."
+      ],
+      "correcta": 1,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(2² + 3²) ≈ 3,61 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q96",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 3 % y 6 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "6,71 %.",
+        "18 %.",
+        "9 %."
+      ],
+      "correcta": 0,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(3² + 6²) ≈ 6,71 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q97",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 1 % y 5 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "6 %.",
+        "5 %.",
+        "5,1 %."
+      ],
+      "correcta": 2,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(1² + 5²) ≈ 5,1 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q98",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 1,5 % y 2 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "2,5 %.",
+        "3 %.",
+        "3,5 %."
+      ],
+      "correcta": 0,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(1,5² + 2²) ≈ 2,5 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q99",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 2,5 % y 3,5 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "6 %.",
+        "4,3 %.",
+        "8,75 %."
+      ],
+      "correcta": 1,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(2,5² + 3,5²) ≈ 4,3 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q100",
+      "pregunta": "El resultado es el producto de dos magnitudes independientes. Sus incertidumbres estándar relativas son 1,8 % y 2,4 %. Aplicando la propagación de primer orden, ¿cuál es la incertidumbre estándar relativa combinada?",
+      "opciones": [
+        "4,32 %.",
+        "4,2 %.",
+        "3 %."
+      ],
+      "correcta": 2,
+      "explicacion": "En el producto se combinan las contribuciones relativas en cuadratura: √(1,8² + 2,4²) ≈ 3 %.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, incertidumbre relativa en productos de magnitudes independientes · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Si el resultado es… | Se combinan… | Fórmula |"
+    },
+    {
+      "id": "t38-q101",
+      "pregunta": "Un laboratorio quiere fijar después de ver los resultados el umbral que decidirá si un método es apto. ¿En qué momento conviene establecer el criterio de aceptación?",
+      "opciones": [
+        "Después de retirar del conjunto los resultados que incumplen.",
+        "Antes de ejecutar la validación, según el uso previsto.",
+        "Solo cuando se hayan emitido informes para clientes."
+      ],
+      "correcta": 1,
+      "explicacion": "Los requisitos de desempeño se fijan de antemano de forma que la evaluación sea coherente con el uso previsto.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, planificación y criterios de aceptación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Evaluar una característica no basta: hay que **compararla con un requisito**. Ese requisito se fija **antes** de validar, a partir del **uso previsto**. El VIM tiene nombre para el de la incertidumbre: **incertidumbre objetivo** (2.34), *«especificada como un límite superior y elegida en base al uso previsto de los resultados de medida»*."
+    },
+    {
+      "id": "t38-q102",
+      "pregunta": "Se implanta un método normalizado sin modificaciones y se demuestra que el laboratorio logra las prestaciones exigidas dentro del alcance previsto. ¿Qué actuación describe ese trabajo?",
+      "opciones": [
+        "Verificar su implantación en el laboratorio.",
+        "Ajustar físicamente todos los equipos sin comprobar el método.",
+        "Redefinir obligatoriamente la norma internacional."
+      ],
+      "correcta": 0,
+      "explicacion": "La verificación documenta que el laboratorio cumple los requisitos especificados al aplicar el método.",
+      "fuente": "BIPM, VIM, 2.44 y 2.45; Eurachem, validación y verificación · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Se VERIFICA** (cláusula **7.2.1.5**), que ENAC transcribe literalmente en castellano: ***«el laboratorio debe verificar que puede llevar a cabo apropiadamente los métodos antes de utilizarlos, asegurando que se pueda lograr el desempeño requerido. Se deben conservar registros de la verificación. Si el método es modificado por el organismo que lo publicó, la verificación se debe repetir en la extensión necesaria»***. Es el caso de un **método normalizado** (una norma UNE, ISO, EN) **usado dentro de su alcance**: la validación ya la hizo el organismo que lo publicó, normalmente con un **estudio colaborativo** entre muchos laboratorios; lo que el laboratorio tiene que demostrar es que **él** sabe aplicarlo."
+    },
+    {
+      "id": "t38-q103",
+      "pregunta": "Los resultados repetidos se agrupan estrechamente pero su promedio está lejos del valor de referencia. ¿Cómo se describe el comportamiento?",
+      "opciones": [
+        "Mala precisión y sesgo necesariamente nulo.",
+        "Buena veracidad demostrada por la baja dispersión.",
+        "Buena precisión y sesgo apreciable."
+      ],
+      "correcta": 2,
+      "explicacion": "La precisión indica proximidad entre resultados repetidos. La diferencia respecto al valor de referencia señala sesgo.",
+      "fuente": "BIPM, VIM, 2.15 y 2.13 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Precisión** (2.15) | *«proximidad entre las indicaciones o los valores medidos obtenidos en mediciones repetidas de un mismo objeto, o de objetos similares, bajo condiciones especificadas»* | **El error aleatorio** | Con una **desviación típica, varianza o coeficiente de variación** |"
+    },
+    {
+      "id": "t38-q104",
+      "pregunta": "Para dos contribuciones estándar independientes ya expresadas en la unidad del resultado, de 3 y 4 mg/L, ¿cuál es la incertidumbre estándar combinada?",
+      "opciones": [
+        "5 mg/L.",
+        "25 mg/L.",
+        "7 mg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se toma la raíz cuadrada de la suma de cuadrados: √(3² + 4²) = 5.",
+      "fuente": "BIPM, JCGM 100:2008, GUM, propagación de incertidumbres · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*."
     }
   ],
   "supuestos": [

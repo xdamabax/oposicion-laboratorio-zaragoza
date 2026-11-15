@@ -1327,6 +1327,244 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Especiación: As(III)/As(V), Cr(VI)/Cr(III) | HPLC acoplada (a ICP-MS en el caso del cromo) |"
+    },
+    {
+      "id": "t32-q67",
+      "pregunta": "La proporción de agua y disolvente orgánico se mantiene fija durante toda la separación líquida. ¿Cómo se denomina la elución?",
+      "opciones": [
+        "En gradiente de composición.",
+        "En gradiente de temperatura del horno de GC.",
+        "Isocrática."
+      ],
+      "correcta": 2,
+      "explicacion": "En el modo isocrático la composición de fase móvil se mantiene constante durante la separación.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, elución isocrática · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q68",
+      "pregunta": "Una columna de HPLC ofrece 58.000 platos/m y mide 10 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "5800 platos.",
+        "580.000 platos.",
+        "58 platos."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 58.000 × 0,1 = 5800 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q69",
+      "pregunta": "Una columna de HPLC ofrece 42.000 platos/m y mide 15 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "63 platos.",
+        "6300 platos.",
+        "280.000 platos."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 42.000 × 0,15 = 6300 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q70",
+      "pregunta": "Una columna de HPLC ofrece 55.000 platos/m y mide 16 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "343.750 platos.",
+        "88 platos.",
+        "8800 platos."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 55.000 × 0,16 = 8800 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q71",
+      "pregunta": "Una columna de HPLC ofrece 47.000 platos/m y mide 20 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "94 platos.",
+        "9400 platos.",
+        "235.000 platos."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 47.000 × 0,2 = 9400 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q72",
+      "pregunta": "Una columna de HPLC ofrece 51.000 platos/m y mide 12 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "6120 platos.",
+        "425.000 platos.",
+        "61 platos."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 51.000 × 0,12 = 6120 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q73",
+      "pregunta": "Una columna de HPLC ofrece 44.000 platos/m y mide 30 cm. Si la eficiencia se escala con la longitud, ¿cuál es el número de platos esperado?",
+      "opciones": [
+        "132 platos.",
+        "146.667 platos.",
+        "13.200 platos."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica la eficiencia por la longitud en metros: 44.000 × 0,3 = 13.200 platos.",
+      "fuente": "CEM, QU-004, eficiencia; longitud de las columnas analíticas del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q74",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,1, B tiene índice 0,6 y la fracción volumétrica de A es 0,25. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,475.",
+        "0,35.",
+        "0,225."
+      ],
+      "correcta": 0,
+      "explicacion": "Se pondera cada índice por su fracción: 0,25 × 0,1 + 0,75 × 0,6 = 0,475.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q75",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,2, B tiene índice 0,5 y la fracción volumétrica de A es 0,35. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,305.",
+        "0,395.",
+        "0,35."
+      ],
+      "correcta": 1,
+      "explicacion": "Se pondera cada índice por su fracción: 0,35 × 0,2 + 0,65 × 0,5 = 0,395.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q76",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,15, B tiene índice 0,55 y la fracción volumétrica de A es 0,4. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,35.",
+        "0,31.",
+        "0,39."
+      ],
+      "correcta": 2,
+      "explicacion": "Se pondera cada índice por su fracción: 0,4 × 0,15 + 0,6 × 0,55 = 0,39.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q77",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,3, B tiene índice 0,8 y la fracción volumétrica de A es 0,75. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,675.",
+        "0,425.",
+        "0,55."
+      ],
+      "correcta": 1,
+      "explicacion": "Se pondera cada índice por su fracción: 0,75 × 0,3 + 0,25 × 0,8 = 0,425.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q78",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,25, B tiene índice 0,6 y la fracción volumétrica de A es 0,1. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,565.",
+        "0,425.",
+        "0,285."
+      ],
+      "correcta": 0,
+      "explicacion": "Se pondera cada índice por su fracción: 0,1 × 0,25 + 0,9 × 0,6 = 0,565.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q79",
+      "pregunta": "En un modelo lineal de índice de polaridad, A tiene índice 0,28, B tiene índice 0,7 y la fracción volumétrica de A es 0,3. ¿Qué índice estima el modelo para la mezcla?",
+      "opciones": [
+        "0,406.",
+        "0,49.",
+        "0,574."
+      ],
+      "correcta": 2,
+      "explicacion": "Se pondera cada índice por su fracción: 0,3 × 0,28 + 0,7 × 0,7 = 0,574.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, cromatografía líquida y fuerza de una mezcla de disolventes; modelo del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**P′_AB = Φ_A · P′_A + Φ_B · P′_B**"
+    },
+    {
+      "id": "t32-q80",
+      "pregunta": "¿Qué problema ayuda a evitar la desgasificación de la fase móvil antes de un análisis por HPLC?",
+      "opciones": [
+        "La formación de burbujas que perturban la detección al disminuir la presión.",
+        "La inversión automática del orden de elución por pesar la fase.",
+        "La disolución del tubo metálico por retirar nitrógeno."
+      ],
+      "correcta": 0,
+      "explicacion": "Al caer la presión se pueden liberar gases disueltos y las burbujas interfieren en el sistema.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, preparación de fase móvil en HPLC · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desgasificarla**, con **bomba de vacío** o **burbujeando helio**, que tiene baja solubilidad. Motivo: la presión cae **de varios cientos de atmósferas a la atmosférica** al salir de la columna, y **los gases disueltos (N₂, O₂) se liberan como burbujas que interfieren en la respuesta del detector**."
+    },
+    {
+      "id": "t32-q81",
+      "pregunta": "Una fase estacionaria es C18 y se combina con una fase móvil acuoso-orgánica polar. ¿Qué modo describe esa combinación?",
+      "opciones": [
+        "Fase normal.",
+        "Fase inversa.",
+        "Cromatografía de gases con adsorbente sólido."
+      ],
+      "correcta": 1,
+      "explicacion": "En fase inversa, la fase estacionaria es relativamente apolar y la fase móvil es más polar en comparación.",
+      "fuente": "CEM, QU-004, modalidades de cromatografía de líquidos · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Ejemplos de R en el silano | **Ciano** (−C₂H₄CN), **diol**, **amino** (−C₃H₆NH₂) | **C8** (n-octilo) y **C18** (n-octadecilo) |"
+    },
+    {
+      "id": "t32-q82",
+      "pregunta": "Un método modifica el porcentaje de disolvente orgánico a medida que avanza la separación. ¿Qué tipo de elución utiliza?",
+      "opciones": [
+        "Estática, sin fase móvil.",
+        "Isocrática.",
+        "En gradiente."
+      ],
+      "correcta": 2,
+      "explicacion": "La composición de la fase móvil varía durante una elución en gradiente.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, elución isocrática y en gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**La solución es cambiar la composición de la fase móvil a medida que avanza la separación: la ELUCIÓN EN GRADIENTE.**"
+    },
+    {
+      "id": "t32-q83",
+      "pregunta": "Si una muestra puede contaminar la fase estacionaria, ¿qué pieza sacrificial se instala antes de la columna analítica para prolongar su vida?",
+      "opciones": [
+        "Un vial de desecho sin conexión al flujo.",
+        "Una precolumna de guarda compatible.",
+        "Un detector adicional después de la columna."
+      ],
+      "correcta": 1,
+      "explicacion": "La precolumna retiene parte de la contaminación antes de que alcance la columna analítica y puede sustituirse.",
+      "fuente": "CEM, QU-004; cromatografía líquida, protección de columna · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **ANTES DE LA COLUMNA ANALÍTICA VA UNA PRECOLUMNA** (1246 #17, 1322 #34): mismo relleno, mucho más corta y barata, **sacrificial**. Resuelve **solutos que se unen irreversiblemente** y **material particulado**."
     }
   ],
   "supuestos": [

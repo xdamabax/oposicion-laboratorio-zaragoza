@@ -1544,6 +1544,76 @@
       "fuente": "UNE-EN ISO 10705-2 (idea general) · apunte §8",
       "apartado": "8",
       "evidencia": "Se cuentan como placas de lisis sobre un césped de la bacteria hospedadora (UFP/100 mL)"
+    },
+    {
+      "id": "t18-q73",
+      "pregunta": "En agua analizada según el RD 3/2023, Clostridium perfringens es positivo y la turbidez supera 4 UNF. ¿Qué microorganismo indica investigar la nota correspondiente?",
+      "opciones": [
+        "Vibrio cholerae.",
+        "Cryptosporidium.",
+        "Bacillus subtilis."
+      ],
+      "correcta": 1,
+      "explicacion": "La nota del parámetro indica investigar Cryptosporidium cuando coinciden la positividad y esa condición de turbidez.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte A, nota de Clostridium perfringens · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| ***Clostridium perfringens* (incluidas las esporas)** | **0** | **UFC en 100 mL** | Si es positivo y la **turbidez supera 4 UNF**, se busca ***Cryptosporidium*** en la salida de la ETAP o el depósito de cabecera |"
+    },
+    {
+      "id": "t18-q74",
+      "pregunta": "Dos análisis de agua detectan, respectivamente, E. coli y un aumento del recuento general de heterótrofos. ¿Qué resultado es más específico para orientar una investigación de contaminación fecal reciente?",
+      "opciones": [
+        "La detección de E. coli.",
+        "Los dos tienen exactamente el mismo significado sanitario.",
+        "El aumento de heterótrofos por sí solo."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli es un indicador fecal más específico que el recuento general de microorganismos cultivables.",
+      "fuente": "OMS, Guidelines for drinking-water quality, indicadores microbianos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| ***E. coli*** | **El mejor indicador de contaminación fecal.** Abunda en las heces y **casi nunca** aparece sin contaminación fecal. **Es mucho más sensible a la desinfección** que los virus y los protozoos |"
+    },
+    {
+      "id": "t18-q75",
+      "pregunta": "¿Qué error en la toma puede reducir artificialmente el recuento cuando el agua tiene cloro residual?",
+      "opciones": [
+        "Rotular el envase antes de tomar la muestra.",
+        "Transportar la muestra respetando las condiciones del método.",
+        "Recogerla sin el neutralizante previsto en el procedimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Sin neutralizante, el cloro residual puede seguir actuando después de la toma y reducir los microorganismos recuperables.",
+      "fuente": "SCA, The Microbiology of Drinking Water, toma de muestras · apunte §3",
+      "apartado": "3",
+      "evidencia": "- frascos **estériles** con **tiosulfato sódico** para neutralizar el cloro;"
+    },
+    {
+      "id": "t18-q76",
+      "pregunta": "Se repetirá un análisis con suficiente volumen porque la primera membrana se obturó antes de completar la filtración. ¿Qué problema de la muestra explica directamente el incidente?",
+      "opciones": [
+        "Escasa longitud del cable del incubador.",
+        "Carga elevada de material particulado.",
+        "Ausencia de nutrientes en el agar que aún no se ha usado."
+      ],
+      "correcta": 1,
+      "explicacion": "Los sólidos retenidos reducen el paso de agua y pueden colmatar la membrana.",
+      "fuente": "SCA, The Microbiology of Drinking Water, filtración de membrana · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1. Filtrar por membrana de **ésteres de celulosa de 0,45 µm** y ponerla sobre el ACC."
+    },
+    {
+      "id": "t18-q77",
+      "pregunta": "Se confirma 1 ufc de E. coli en 100 mL de agua de consumo. ¿Cómo se compara este recuento con el valor paramétrico de E. coli?",
+      "opciones": [
+        "Coincide exactamente con él.",
+        "Es inferior a él.",
+        "Lo supera."
+      ],
+      "correcta": 2,
+      "explicacion": "El valor paramétrico es 0 ufc o NMP por 100 mL.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte A · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| ***Escherichia coli*** | **0** | **UFC o NMP en 100 mL** | — |"
     }
   ],
   "supuestos": [

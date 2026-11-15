@@ -1466,6 +1466,76 @@
       "fuente": "RD 3/2023, anexo III · apunte §9",
       "apartado": "9",
       "evidencia": "Alternativos autorizados: CCA, NMP con sustrato definido, TSC-MUP y Enterolert."
+    },
+    {
+      "id": "t16-q74",
+      "pregunta": "Tras separar las hebras de ADN en una PCR, se reduce la temperatura para que los oligonucleótidos se unan a las secuencias complementarias. ¿Cómo se llama ese paso?",
+      "opciones": [
+        "Extensión final por electroforesis.",
+        "Alineamiento o hibridación de cebadores.",
+        "Desnaturalización inicial."
+      ],
+      "correcta": 1,
+      "explicacion": "En esa etapa los cebadores se hibridan con el ADN molde y delimitan la región que se amplificará.",
+      "fuente": "OpenStax Microbiology, métodos moleculares, PCR · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "| **2. Hibridación** (alineamiento) | **~50 °C** | Los **cebadores se unen** a su secuencia complementaria |"
+    },
+    {
+      "id": "t16-q75",
+      "pregunta": "Al comenzar un ciclo de PCR se separan las dos hebras del ADN molde. ¿Qué fase realiza esa operación?",
+      "opciones": [
+        "Alineamiento de cebadores.",
+        "Extensión de los cebadores.",
+        "Desnaturalización."
+      ],
+      "correcta": 2,
+      "explicacion": "La desnaturalización por temperatura separa las hebras y deja el molde disponible para el paso siguiente.",
+      "fuente": "OpenStax Microbiology, métodos moleculares, PCR · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "| **1. Desnaturalización** | **~95 °C** | Las dos hebras del ADN **se separan** |"
+    },
+    {
+      "id": "t16-q76",
+      "pregunta": "¿Qué prueba busca demostrar que un aislamiento puede coagular plasma bajo las condiciones especificadas?",
+      "opciones": [
+        "Prueba de coagulasa.",
+        "Prueba de indol.",
+        "Prueba de oxidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "La prueba de coagulasa evalúa la formación de un coágulo de plasma.",
+      "fuente": "FDA, BAM, cap. 12, Staphylococcus aureus · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| **Coagulasa** | La enzima que **coagula el plasma** | **Grumos** en porta en 10 s, o **coágulo** en tubo a 35-37 °C (hasta 4 h, y si no a 24 h) | ***Staphylococcus aureus*** | Otros estafilococos (*S. haemolyticus*) |"
+    },
+    {
+      "id": "t16-q77",
+      "pregunta": "Se busca comparar una secuencia con regiones conservadas y variables para orientar la asignación taxonómica de un aislado bacteriano. ¿Qué diana encaja?",
+      "opciones": [
+        "El antígeno flagelar medido por aglutinación.",
+        "La concentración de glucosa de un medio.",
+        "El gen del ARN ribosómico 16S."
+      ],
+      "correcta": 2,
+      "explicacion": "El gen del ARNr 16S contiene regiones útiles para amplificación y comparación entre bacterias.",
+      "fuente": "OpenStax Microbiology, identificación y filogenia bacteriana · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "- **La secuencia del gen del ARNr 16S** identifica bacterias raras cuando fallan los demás métodos; en los hongos se usa la región **ITS**."
+    },
+    {
+      "id": "t16-q78",
+      "pregunta": "Al depositar peróxido de hidrógeno sobre un aislamiento aparece efervescencia inmediata. ¿Qué interpretación corresponde a una prueba de catalasa bien controlada?",
+      "opciones": [
+        "La ausencia de cambio de color obliga a clasificarla como negativa.",
+        "La reacción es positiva por liberación de oxígeno.",
+        "La reacción es positiva por liberación de dióxido de carbono."
+      ],
+      "correcta": 1,
+      "explicacion": "La catalasa descompone el peróxido de hidrógeno y el oxígeno producido forma burbujas.",
+      "fuente": "OpenStax Microbiology, identificación bioquímica, catalasa · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| **Catalasa** | La enzima que **descompone el agua oxigenada**: 2 H₂O₂ → 2 H₂O + O₂ | **Burbujas** inmediatas con **H₂O₂ al 3-6 %** | La mayoría de aerobios y facultativos; control: ***S. aureus*** | **Estreptococos y enterococos** (*S. mitis*) |"
     }
   ],
   "supuestos": [

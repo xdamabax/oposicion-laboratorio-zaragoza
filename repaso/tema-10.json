@@ -1525,6 +1525,230 @@
       "fuente": "Eurachem (2023), anexos F y G · apunte §6",
       "apartado": "6",
       "evidencia": "Cabinas de flujo laminar | Rendimiento al principio y tras cambios; placas de esterilidad semanales | Revisión anual"
+    },
+    {
+      "id": "t10-q75",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 8× y objetivo de 25×?",
+      "opciones": [
+        "200 ×.",
+        "25 ×.",
+        "33 ×."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 8 × 25 = 200 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q76",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 10× y objetivo de 63×?",
+      "opciones": [
+        "630 ×.",
+        "73 ×.",
+        "63 ×."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 10 × 63 = 630 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q77",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 12,5× y objetivo de 20×?",
+      "opciones": [
+        "20 ×.",
+        "32,5 ×.",
+        "250 ×."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 12,5 × 20 = 250 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q78",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 15× y objetivo de 60×?",
+      "opciones": [
+        "75 ×.",
+        "900 ×.",
+        "60 ×."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 15 × 60 = 900 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q79",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 20× y objetivo de 50×?",
+      "opciones": [
+        "1000 ×.",
+        "50 ×.",
+        "70 ×."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 20 × 50 = 1000 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q80",
+      "pregunta": "¿Qué aumento total proporciona un microscopio con ocular de 16× y objetivo de 50×?",
+      "opciones": [
+        "66 ×.",
+        "800 ×.",
+        "50 ×."
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplican el aumento del ocular y el del objetivo: 16 × 50 = 800 ×.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q81",
+      "pregunta": "Un microscopio trabaja con luz de 550 nm y apertura numérica 1,25. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "419,4 nm.",
+        "440 nm.",
+        "268,4 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "Al sustituir se obtiene 0,61 × 550/1,25 ≈ 268,4 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q82",
+      "pregunta": "Un microscopio trabaja con luz de 486 nm y apertura numérica 1,3. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "228 nm.",
+        "373,8 nm.",
+        "385,4 nm."
+      ],
+      "correcta": 0,
+      "explicacion": "Al sustituir se obtiene 0,61 × 486/1,3 ≈ 228 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q83",
+      "pregunta": "Un microscopio trabaja con luz de 600 nm y apertura numérica 0,9. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "329,4 nm.",
+        "666,7 nm.",
+        "406,7 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "Al sustituir se obtiene 0,61 × 600/0,9 ≈ 406,7 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q84",
+      "pregunta": "Un microscopio trabaja con luz de 525 nm y apertura numérica 0,65. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "807,7 nm.",
+        "492,7 nm.",
+        "208,2 nm."
+      ],
+      "correcta": 1,
+      "explicacion": "Al sustituir se obtiene 0,61 × 525/0,65 ≈ 492,7 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q85",
+      "pregunta": "Un microscopio trabaja con luz de 520 nm y apertura numérica 0,25. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "1268,8 nm.",
+        "79,3 nm.",
+        "2080 nm."
+      ],
+      "correcta": 0,
+      "explicacion": "Al sustituir se obtiene 0,61 × 520/0,25 ≈ 1268,8 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q86",
+      "pregunta": "Un microscopio trabaja con luz de 480 nm y apertura numérica 0,95. Si para este ejercicio se usa d ≈ 0,61λ/AN, ¿qué separación mínima aproxima el modelo en nm?",
+      "opciones": [
+        "505,3 nm.",
+        "308,2 nm.",
+        "278,2 nm."
+      ],
+      "correcta": 1,
+      "explicacion": "Al sustituir se obtiene 0,61 × 480/0,95 ≈ 308,2 nm.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond, apertura numérica y resolución · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Límite teórico de resolución** del microscopio óptico con luz blanca: **0,20-0,25 µm**."
+    },
+    {
+      "id": "t10-q87",
+      "pregunta": "Con un ocular de 12,5× se necesita un aumento total de 500×. ¿Qué aumento debe tener el objetivo?",
+      "opciones": [
+        "25×.",
+        "62,5×.",
+        "40×."
+      ],
+      "correcta": 2,
+      "explicacion": "El objetivo se obtiene dividiendo 500 entre 12,5.",
+      "fuente": "Guía SCA, The Microbiology of Water and Associated Materials, equipo microscópico · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Aumento total = aumento del ocular × aumento del objetivo.**"
+    },
+    {
+      "id": "t10-q88",
+      "pregunta": "Un equipo separa puntos a 0,22 µm y otro a 0,40 µm, en las mismas condiciones. ¿Cuál tiene mayor poder resolutivo?",
+      "opciones": [
+        "El de 0,22 µm.",
+        "Ambos, por tratarse de distancias menores de 1 µm.",
+        "El de 0,40 µm."
+      ],
+      "correcta": 0,
+      "explicacion": "Un límite de resolución menor permite distinguir dos puntos más próximos.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, microscopía · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Resolución (poder resolutivo):** la capacidad de **separar dos puntos muy próximos** y verlos como distintos. Es la **distancia mínima *d*** entre dos puntos que aún se ven separados: **cuanto menor *d*, mejor resolución**."
+    },
+    {
+      "id": "t10-q89",
+      "pregunta": "Antes de centrar el sistema de iluminación de Köhler, se va a enfocar la preparación. ¿Qué objetivo indica usar la secuencia del apunte?",
+      "opciones": [
+        "El de inmersión de 100× desde el primer paso.",
+        "El de mayor aumento seco disponible.",
+        "Uno de poco aumento, como el de 10×."
+      ],
+      "correcta": 2,
+      "explicacion": "La preparación se enfoca inicialmente con un objetivo de poco aumento.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, iluminación de Köhler · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con un objetivo de poco aumento (5× o 10×), enfocar la muestra."
+    },
+    {
+      "id": "t10-q90",
+      "pregunta": "Para leer una preparación bacteriana teñida con Gram por transmisión y con fondo luminoso, ¿qué modalidad encaja mejor con la descripción?",
+      "opciones": [
+        "Fluorescencia sin tinción fluorescente.",
+        "Campo claro.",
+        "Campo oscuro."
+      ],
+      "correcta": 1,
+      "explicacion": "En campo claro la luz atraviesa la preparación y el fondo permanece claro.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, tipos de microscopía · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Campo claro** | La luz atraviesa la muestra: **imagen oscura sobre fondo claro** | El más usado. Preparaciones **teñidas** (tinción de Gram, tema 14) |"
     }
   ],
   "supuestos": [

@@ -1627,6 +1627,370 @@
       "fuente": "SCA, Legionella (2020), parte 2 · apunte §7.5",
       "apartado": "7.5",
       "evidencia": "Existe un sistema comercial de NMP para L. pneumophila (Legiolert):"
+    },
+    {
+      "id": "t13-q78",
+      "pregunta": "En una placa válida se cuentan 45 colonias tras sembrar 0,1 mL de una dilución 1:1000. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "45.000 ufc/mL.",
+        "450 ufc/mL.",
+        "450.000 ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La alícuota representa 0,1/1000 mL de muestra original. Se divide 45 por ese volumen: 450.000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q79",
+      "pregunta": "En una placa válida se cuentan 37 colonias tras sembrar 0,2 mL de una dilución 1:100. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "18.500 ufc/mL.",
+        "185 ufc/mL.",
+        "3700 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "La alícuota representa 0,2/100 mL de muestra original. Se divide 37 por ese volumen: 18.500 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q80",
+      "pregunta": "En una placa válida se cuentan 54 colonias tras sembrar 0,3 mL de una dilución 1:10.000. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "540.000 ufc/mL.",
+        "180 ufc/mL.",
+        "1.800.000 ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La alícuota representa 0,3/10.000 mL de muestra original. Se divide 54 por ese volumen: 1.800.000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q81",
+      "pregunta": "En una placa válida se cuentan 62 colonias tras sembrar 0,2 mL de una dilución 1:1000. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "310 ufc/mL.",
+        "310.000 ufc/mL.",
+        "62.000 ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "La alícuota representa 0,2/1000 mL de muestra original. Se divide 62 por ese volumen: 310.000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q82",
+      "pregunta": "En una placa válida se cuentan 78 colonias tras sembrar 0,4 mL de una dilución 1:100. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "19.500 ufc/mL.",
+        "7800 ufc/mL.",
+        "195 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "La alícuota representa 0,4/100 mL de muestra original. Se divide 78 por ese volumen: 19.500 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q83",
+      "pregunta": "En una placa válida se cuentan 49 colonias tras sembrar 0,5 mL de una dilución 1:1000. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "98 ufc/mL.",
+        "98.000 ufc/mL.",
+        "49.000 ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "La alícuota representa 0,5/1000 mL de muestra original. Se divide 49 por ese volumen: 98.000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q84",
+      "pregunta": "En una placa válida se cuentan 64 colonias tras sembrar 0,8 mL de una dilución 1:100. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "6400 ufc/mL.",
+        "80 ufc/mL.",
+        "8000 ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La alícuota representa 0,8/100 mL de muestra original. Se divide 64 por ese volumen: 8000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q85",
+      "pregunta": "En una placa válida se cuentan 56 colonias tras sembrar 0,2 mL de una dilución 1:10.000. ¿Qué concentración se estima en la muestra original?",
+      "opciones": [
+        "2.800.000 ufc/mL.",
+        "280 ufc/mL.",
+        "560.000 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "La alícuota representa 0,2/10.000 mL de muestra original. Se divide 56 por ese volumen: 2.800.000 ufc/mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa; normalización por dilución y alícuota · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q86",
+      "pregunta": "Se cuentan 21 colonias confirmadas en una membrana por la que han pasado 75 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "15,75 ufc/100 mL.",
+        "2,1 ufc/100 mL.",
+        "28 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Se normaliza al volumen de referencia: 21 × 100/75 = 28 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q87",
+      "pregunta": "Se cuentan 18 colonias confirmadas en una membrana por la que han pasado 40 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "1,8 ufc/100 mL.",
+        "45 ufc/100 mL.",
+        "7,2 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Se normaliza al volumen de referencia: 18 × 100/40 = 45 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q88",
+      "pregunta": "Se cuentan 30 colonias confirmadas en una membrana por la que han pasado 150 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "20 ufc/100 mL.",
+        "45 ufc/100 mL.",
+        "3 ufc/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se normaliza al volumen de referencia: 30 × 100/150 = 20 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q89",
+      "pregunta": "Se cuentan 24 colonias confirmadas en una membrana por la que han pasado 60 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "2,4 ufc/100 mL.",
+        "40 ufc/100 mL.",
+        "14,4 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Se normaliza al volumen de referencia: 24 × 100/60 = 40 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q90",
+      "pregunta": "Se cuentan 27 colonias confirmadas en una membrana por la que han pasado 125 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "33,75 ufc/100 mL.",
+        "2,7 ufc/100 mL.",
+        "21,6 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Se normaliza al volumen de referencia: 27 × 100/125 = 21,6 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q91",
+      "pregunta": "Se cuentan 37 colonias confirmadas en una membrana por la que han pasado 50 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "74 ufc/100 mL.",
+        "3,7 ufc/100 mL.",
+        "18,5 ufc/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se normaliza al volumen de referencia: 37 × 100/50 = 74 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q92",
+      "pregunta": "Se cuentan 14 colonias confirmadas en una membrana por la que han pasado 25 mL de muestra. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "3,5 ufc/100 mL.",
+        "1,4 ufc/100 mL.",
+        "56 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Se normaliza al volumen de referencia: 14 × 100/25 = 56 ufc/100 mL.",
+      "fuente": "SCA, The Microbiology of Drinking Water, expresión de recuentos por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q93",
+      "pregunta": "Se siembran 1 mL después de 3 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,001 µL.",
+        "1 µL.",
+        "10 µL."
+      ],
+      "correcta": 1,
+      "explicacion": "Los factores de las 3 diluciones se multiplican. El volumen equivalente es 1.000 × 1/10^3 = 1 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q94",
+      "pregunta": "Se siembran 2 mL después de 4 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,2 µL.",
+        "2 µL.",
+        "0,0002 µL."
+      ],
+      "correcta": 0,
+      "explicacion": "Los factores de las 4 diluciones se multiplican. El volumen equivalente es 1.000 × 2/10^4 = 0,2 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q95",
+      "pregunta": "Se siembran 0,2 mL después de 2 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,002 µL.",
+        "2 µL.",
+        "20 µL."
+      ],
+      "correcta": 1,
+      "explicacion": "Los factores de las 2 diluciones se multiplican. El volumen equivalente es 1.000 × 0,2/10^2 = 2 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q96",
+      "pregunta": "Se siembran 0,3 mL después de 2 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "30 µL.",
+        "0,003 µL.",
+        "3 µL."
+      ],
+      "correcta": 2,
+      "explicacion": "Los factores de las 2 diluciones se multiplican. El volumen equivalente es 1.000 × 0,3/10^2 = 3 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q97",
+      "pregunta": "Se siembran 0,4 mL después de 4 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,04 µL.",
+        "0,00004 µL.",
+        "0,4 µL."
+      ],
+      "correcta": 0,
+      "explicacion": "Los factores de las 4 diluciones se multiplican. El volumen equivalente es 1.000 × 0,4/10^4 = 0,04 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q98",
+      "pregunta": "Se siembran 1,5 mL después de 5 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,15 µL.",
+        "0,00002 µL.",
+        "0,015 µL."
+      ],
+      "correcta": 2,
+      "explicacion": "Los factores de las 5 diluciones se multiplican. El volumen equivalente es 1.000 × 1,5/10^5 = 0,015 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q99",
+      "pregunta": "Se siembran 2 mL después de 2 diluciones decimales completas de la muestra original. ¿Cuántos microlitros de muestra original representa la alícuota?",
+      "opciones": [
+        "0,02 µL.",
+        "20 µL.",
+        "200 µL."
+      ],
+      "correcta": 1,
+      "explicacion": "Los factores de las 2 diluciones se multiplican. El volumen equivalente es 1.000 × 2/10^2 = 20 µL.",
+      "fuente": "FDA, BAM, cap. 3, diluciones decimales y volumen equivalente de muestra · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q100",
+      "pregunta": "Se cuentan 46 colonias tras sembrar 0,20 mL de una dilución 1:100 de una muestra líquida. ¿Qué concentración estima la placa?",
+      "opciones": [
+        "23.000 ufc/mL.",
+        "4.600 ufc/mL.",
+        "230.000 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se divide 46 por el volumen equivalente de muestra original, 0,20 × 0,01 = 0,002 mL.",
+      "fuente": "FDA, BAM, cap. 3, recuento en placa · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "**Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución.**"
+    },
+    {
+      "id": "t13-q101",
+      "pregunta": "Al filtrar 80 mL aparecen 12 colonias diana confirmadas. ¿Qué recuento corresponde por 100 mL?",
+      "opciones": [
+        "120 ufc/100 mL.",
+        "15 ufc/100 mL.",
+        "9,6 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Se normalizan las 12 colonias al volumen de referencia multiplicando por 100/80.",
+      "fuente": "SCA, The Microbiology of Drinking Water, recuento por filtración · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100**"
+    },
+    {
+      "id": "t13-q102",
+      "pregunta": "En un método de NMP se anotan cinco unidades positivas y cinco negativas a una dilución. ¿Qué información representa ese patrón?",
+      "opciones": [
+        "Un recuento directo de cinco colonias.",
+        "Una medida óptica de biomasa igual a cinco unidades de absorbancia.",
+        "Un dato binario de presencia o ausencia que alimenta una estimación estadística."
+      ],
+      "correcta": 2,
+      "explicacion": "El NMP utiliza el patrón de unidades positivas y negativas y los volúmenes o diluciones ensayados.",
+      "fuente": "SCA, The Microbiology of Drinking Water, fundamento del NMP · apunte §2",
+      "apartado": "2",
+      "evidencia": "**Número más probable (NMP):** una **estimación estadística** de la concentración a partir de cuántos tubos o pocillos dan positivo. No sale de contar colonias, sino de una **tabla de probabilidades**."
+    },
+    {
+      "id": "t13-q103",
+      "pregunta": "Para preparar dos diluciones decimales sucesivas desde la muestra inicial se transfieren 0,5 mL a 4,5 mL de diluyente en cada paso. ¿Qué fracción de muestra original contiene el segundo tubo?",
+      "opciones": [
+        "1/100.",
+        "1/10.",
+        "1/20."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada paso aporta un factor 1/10. Los dos factores se multiplican.",
+      "fuente": "FDA, BAM, cap. 3, recuento en diluciones decimales · apunte §9",
+      "apartado": "9",
+      "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
     }
   ],
   "supuestos": [

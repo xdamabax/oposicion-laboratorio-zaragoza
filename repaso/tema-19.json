@@ -1588,6 +1588,76 @@
       "fuente": "Cefas (2023) · apunte §7.2",
       "apartado": "7.2",
       "evidencia": "Lo que no detecta: las E. coli sin β-glucuronidasa (como O157) y las que no crecen a 44 °C."
+    },
+    {
+      "id": "t19-q73",
+      "pregunta": "En un plan de tres clases ninguna unidad supera M y exactamente c unidades quedan estrictamente entre m y M. El resto está por debajo de m. ¿Qué criterio se satisface?",
+      "opciones": [
+        "El número de unidades intermedias queda dentro de lo permitido.",
+        "El plan se incumple porque el número de unidades intermedias debe ser exactamente n.",
+        "El plan se incumple porque c es siempre un límite de concentración."
+      ],
+      "correcta": 0,
+      "explicacion": "La regla tolera hasta c unidades intermedias si las demás cumplen y ninguna supera M.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, criterio microbiológico de tres clases · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **c:** número de unidades que pueden dar valores **entre m y M**."
+    },
+    {
+      "id": "t19-q74",
+      "pregunta": "Un plan tiene n = 5 y c = 2. Se propone analizar solo dos unidades porque c vale 2. ¿Qué se está confundiendo?",
+      "opciones": [
+        "El límite máximo con el límite inferior.",
+        "El valor de m con la masa total de cada unidad.",
+        "El número de unidades a analizar con el número de resultados intermedios tolerados."
+      ],
+      "correcta": 2,
+      "explicacion": "n determina las unidades que componen la muestra. c tiene otra función en la interpretación de los resultados.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, planes de muestreo · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **n:** número de **unidades** que componen la muestra."
+    },
+    {
+      "id": "t19-q75",
+      "pregunta": "Para un criterio de tres clases con c = 1, se obtienen dos unidades estrictamente entre m y M y ninguna por encima de M. ¿Qué conclusión corresponde?",
+      "opciones": [
+        "El resultado cumple porque las dos unidades intermedias cuentan como una sola.",
+        "El resultado no cumple porque hay dos unidades intermedias y solo se admite una.",
+        "El resultado cumple porque ninguna unidad supera M."
+      ],
+      "correcta": 1,
+      "explicacion": "Aun sin superar M, el plan se incumple al rebasar el número c de unidades intermedias.",
+      "fuente": "Reglamento (CE) 2073/2005, anexo I, planes de tres clases · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **c:** número de unidades que pueden dar valores **entre m y M**."
+    },
+    {
+      "id": "t19-q76",
+      "pregunta": "¿Quién integra en sus procedimientos basados en APPCC las pruebas que permiten verificar el cumplimiento de los criterios microbiológicos aplicables?",
+      "opciones": [
+        "El explotador de la empresa alimentaria.",
+        "Exclusivamente el organismo que vende el medio de cultivo.",
+        "Solo la autoridad, con exclusión del operador."
+      ],
+      "correcta": 0,
+      "explicacion": "El operador debe efectuar las pruebas apropiadas como parte de la validación o verificación de sus procedimientos. La autoridad verifica el cumplimiento.",
+      "fuente": "Reglamento (CE) 2073/2005, arts. 3 y 4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **El explotador** de la empresa alimentaria hace las pruebas, **dentro de su sistema APPCC** (HACCP), y decide la **frecuencia**, salvo que el anexo I la fije. **La autoridad competente verifica.**"
+    },
+    {
+      "id": "t19-q77",
+      "pregunta": "Se mezclan 25 g de alimento con 225 mL de diluyente para preparar la suspensión decimal inicial. ¿Qué dilución convencional representa?",
+      "opciones": [
+        "10⁰.",
+        "10⁻¹.",
+        "10⁻²."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación de una parte de muestra y nueve partes de diluyente corresponde a una suspensión inicial 1:10.",
+      "fuente": "FDA, BAM, cap. 1, preparación de homogeneizados · apunte §4",
+      "apartado": "4",
+      "evidencia": "**La regla general es la del tema 13** (ISO 6887-1): **suspensión inicial 1/10**, homogeneización, diluciones decimales y **45 minutos como máximo** hasta que el inóculo toca el medio. La **ISO 6887** tiene **partes por tipo de alimento** (la 6887-3, por ejemplo, para **pescados y mariscos**), y la **ISO 7218** da los **requisitos generales** de cualquier análisis microbiológico de la cadena alimentaria. **Desde 2024**, la ISO 7218 **prevalece** sobre lo que digan las normas específicas."
     }
   ],
   "supuestos": [

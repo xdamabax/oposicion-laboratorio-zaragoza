@@ -1688,6 +1688,342 @@
       },
       "apartado": "2.2",
       "evidencia": "Respuesta oficial: 2. Las otras opciones eran 0,01 (la concentración, no su logaritmo) y 0,2."
+    },
+    {
+      "id": "t23-q67",
+      "pregunta": "Una celda tiene E(indicador) = 280 mV, E(referencia) = 197 mV y E(unión) = 5 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "-78 mV.",
+        "78 mV.",
+        "88 mV."
+      ],
+      "correcta": 2,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 280 − 197 + (5) = 88 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q68",
+      "pregunta": "Una celda tiene E(indicador) = 325 mV, E(referencia) = 210 mV y E(unión) = -4 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "119 mV.",
+        "111 mV.",
+        "-119 mV."
+      ],
+      "correcta": 1,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 325 − 210 + (-4) = 111 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q69",
+      "pregunta": "Una celda tiene E(indicador) = 154 mV, E(referencia) = 204 mV y E(unión) = 6 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "-44 mV.",
+        "56 mV.",
+        "-56 mV."
+      ],
+      "correcta": 0,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 154 − 204 + (6) = -44 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q70",
+      "pregunta": "Una celda tiene E(indicador) = 194 mV, E(referencia) = 202 mV y E(unión) = 3 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "-11 mV.",
+        "11 mV.",
+        "-5 mV."
+      ],
+      "correcta": 2,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 194 − 202 + (3) = -5 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q71",
+      "pregunta": "Una celda tiene E(indicador) = 298 mV, E(referencia) = 195 mV y E(unión) = -3 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "100 mV.",
+        "-106 mV.",
+        "106 mV."
+      ],
+      "correcta": 0,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 298 − 195 + (-3) = 100 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q72",
+      "pregunta": "Una celda tiene E(indicador) = 121 mV, E(referencia) = 205 mV y E(unión) = -7 mV. Siguiendo E(celda) = E(indicador) − E(referencia) + E(unión), ¿cuál es su potencial?",
+      "opciones": [
+        "-77 mV.",
+        "-91 mV.",
+        "77 mV."
+      ],
+      "correcta": 1,
+      "explicacion": "Se sustituyen los tres potenciales respetando su signo: 121 − 205 + (-7) = -91 mV.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, potenciales de celdas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q73",
+      "pregunta": "La actividad de H⁺ es 3 × 10 elevado a −5. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "5,48.",
+        "5.",
+        "4,52."
+      ],
+      "correcta": 2,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 5 − log₁₀(3) ≈ 4,52.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q74",
+      "pregunta": "La actividad de H⁺ es 6 × 10 elevado a −7. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "7.",
+        "6,22.",
+        "7,78."
+      ],
+      "correcta": 1,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 7 − log₁₀(6) ≈ 6,22.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q75",
+      "pregunta": "La actividad de H⁺ es 4 × 10 elevado a −8. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "7,4.",
+        "8,6.",
+        "8."
+      ],
+      "correcta": 0,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 8 − log₁₀(4) ≈ 7,4.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q76",
+      "pregunta": "La actividad de H⁺ es 2,5 × 10 elevado a −4. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "4.",
+        "4,4.",
+        "3,6."
+      ],
+      "correcta": 2,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 4 − log₁₀(2,5) ≈ 3,6.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q77",
+      "pregunta": "La actividad de H⁺ es 8 × 10 elevado a −3. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "2,1.",
+        "3,9.",
+        "3."
+      ],
+      "correcta": 0,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 3 − log₁₀(8) ≈ 2,1.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q78",
+      "pregunta": "La actividad de H⁺ es 8,5 × 10 elevado a −9. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "9.",
+        "8,07.",
+        "9,93."
+      ],
+      "correcta": 1,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 9 − log₁₀(8,5) ≈ 8,07.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q79",
+      "pregunta": "La actividad de H⁺ es 1,5 × 10 elevado a −3. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "3,18.",
+        "3.",
+        "2,82."
+      ],
+      "correcta": 2,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 3 − log₁₀(1,5) ≈ 2,82.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q80",
+      "pregunta": "La actividad de H⁺ es 4,5 × 10 elevado a −6. ¿Cuál es el pH, redondeado a dos decimales?",
+      "opciones": [
+        "6.",
+        "5,35.",
+        "6,65."
+      ],
+      "correcta": 1,
+      "explicacion": "Aplicando −log₁₀ a la actividad, se obtiene 6 − log₁₀(4,5) ≈ 5,35.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q81",
+      "pregunta": "Un tampón tiene pH 7. El potencial de la muestra menos el del tampón es 59,16 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "6.",
+        "1.",
+        "8."
+      ],
+      "correcta": 0,
+      "explicacion": "Se sustituye la diferencia con su signo: 7 − (59,16)/59,16 = 6.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q82",
+      "pregunta": "Un tampón tiene pH 4. El potencial de la muestra menos el del tampón es 29,58 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "4,5.",
+        "0,5.",
+        "3,5."
+      ],
+      "correcta": 2,
+      "explicacion": "Se sustituye la diferencia con su signo: 4 − (29,58)/59,16 = 3,5.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q83",
+      "pregunta": "Un tampón tiene pH 6. El potencial de la muestra menos el del tampón es -29,58 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "6,5.",
+        "0,5.",
+        "5,5."
+      ],
+      "correcta": 0,
+      "explicacion": "Se sustituye la diferencia con su signo: 6 − (-29,58)/59,16 = 6,5.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q84",
+      "pregunta": "Un tampón tiene pH 7. El potencial de la muestra menos el del tampón es -47,328 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "6,2.",
+        "7,8.",
+        "0,8."
+      ],
+      "correcta": 1,
+      "explicacion": "Se sustituye la diferencia con su signo: 7 − (-47,328)/59,16 = 7,8.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q85",
+      "pregunta": "Un tampón tiene pH 4. El potencial de la muestra menos el del tampón es 11,832 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "0,2.",
+        "4,2.",
+        "3,8."
+      ],
+      "correcta": 2,
+      "explicacion": "Se sustituye la diferencia con su signo: 4 − (11,832)/59,16 = 3,8.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q86",
+      "pregunta": "Un tampón tiene pH 8. El potencial de la muestra menos el del tampón es 14,79 mV y k′ = 59,16 mV por unidad. Con pH(X) = pH(S) − (E(X) − E(S))/k′, ¿cuál es el pH de la muestra?",
+      "opciones": [
+        "8,25.",
+        "7,75.",
+        "0,25."
+      ],
+      "correcta": 1,
+      "explicacion": "Se sustituye la diferencia con su signo: 8 − (14,79)/59,16 = 7,75.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002, ecuación comparativa de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**pH(X) = pH(S) − [E(X) − E(S)] / k′**"
+    },
+    {
+      "id": "t23-q87",
+      "pregunta": "Para que circule una corriente despreciable al medir la diferencia de potencial, ¿qué propiedad debe tener la entrada del medidor?",
+      "opciones": [
+        "Impedancia alta.",
+        "Resistencia en paralelo igual a cero.",
+        "Impedancia casi nula."
+      ],
+      "correcta": 0,
+      "explicacion": "La impedancia de entrada alta evita cargar de modo apreciable la celda electroquímica.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, métodos potenciométricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "3. Un **medidor de potencial** de alta impedancia de entrada."
+    },
+    {
+      "id": "t23-q88",
+      "pregunta": "Dos muestras presentan actividades de H⁺ de 10⁻⁶ y 10⁻⁸. ¿Cuál tiene menor pH?",
+      "opciones": [
+        "La de actividad 10⁻⁸.",
+        "Las dos tienen el mismo pH.",
+        "La de actividad 10⁻⁶."
+      ],
+      "correcta": 2,
+      "explicacion": "Aplicando −log₁₀, los pH son 6 y 8, respectivamente.",
+      "fuente": "IUPAC, Measurement of pH, Recommendations 2002 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q89",
+      "pregunta": "Una muestra muy coloreada dificulta ver el viraje de un indicador. ¿Qué magnitud puede seguirse para detectar el punto final de forma potenciométrica?",
+      "opciones": [
+        "El potencial en función del volumen de valorante.",
+        "La masa del envase de almacenamiento.",
+        "La opacidad de la muestra antes de iniciar la valoración."
+      ],
+      "correcta": 0,
+      "explicacion": "La curva potencial–volumen permite localizar un punto final sin tener que distinguir un cambio de color.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, detección del punto final · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Conviene volver sobre la distinción del tema 22, porque aquí se afina: el **punto de equivalencia** sigue siendo teórico, y lo que el instrumento localiza es el **punto de inflexión de la curva experimental**, que se toma como su mejor estimación. Cuanto **más brusco es el salto** —reacción más cuantitativa, analito más concentrado—, mejor coinciden."
+    },
+    {
+      "id": "t23-q90",
+      "pregunta": "¿Qué tres tareas ejecuta normalmente el valorador automático descrito en el apunte?",
+      "opciones": [
+        "Filtrar la muestra, esterilizar y pesar el residuo.",
+        "Dosificar, registrar potencial y estimar el punto final.",
+        "Ajustar la temperatura de un horno, diluir gases y medir absorbancia."
+      ],
+      "correcta": 1,
+      "explicacion": "El equipo combina la dosificación, la lectura del electrodo y el tratamiento de la curva de valoración.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, valoraciones potenciométricas; esquema funcional del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un **valorador automático** (o titulador) hace por sí solo las tres cosas que el analista hacía a mano: **dosificar** el valorante, **medir** la señal del electrodo y **calcular** el punto de equivalencia."
     }
   ],
   "supuestos": [

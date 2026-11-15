@@ -1285,6 +1285,76 @@
       "fuente": "Criterio práctico · apunte §3",
       "apartado": "3",
       "evidencia": "| Un solo metal, de rutina y barato | Absorción atómica (llama o cámara de grafito) | Tema 26 |"
+    },
+    {
+      "id": "t27-q62",
+      "pregunta": "¿Qué función cumple la interfaz de conos entre el plasma y la zona de vacío del espectrómetro ICP-MS?",
+      "opciones": [
+        "Calibrar el pH de la muestra antes de nebulizarla.",
+        "Hacer de fase estacionaria para separar los analitos disueltos.",
+        "Transmitir parte de los iones generados en el plasma hacia el sistema de vacío."
+      ],
+      "correcta": 2,
+      "explicacion": "La interfaz permite extraer parte de los iones desde el plasma a las etapas de presión reducida.",
+      "fuente": "US EPA, Method 200.8, introducción de iones al espectrómetro · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Hace falta interfase de vacío | No | **Sí**: los dos conos |"
+    },
+    {
+      "id": "t27-q63",
+      "pregunta": "Tras generar los iones en el plasma, ¿qué magnitud distingue el analizador de masas?",
+      "opciones": [
+        "El índice de refracción del disolvente.",
+        "La relación masa/carga.",
+        "La longitud de la cubeta en centímetros."
+      ],
+      "correcta": 1,
+      "explicacion": "La selección de iones en el espectrómetro se hace por su relación masa/carga.",
+      "fuente": "US EPA, Method 200.8, principio de ICP-MS · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**5. Analizador de masas.** Normalmente un **cuadrupolo**: cuatro barras a las que se aplican tensiones continua y de radiofrecuencia, de modo que **solo una relación masa/carga (m/z) llega al otro extremo** en cada instante. Barriendo las tensiones se recorre el espectro."
+    },
+    {
+      "id": "t27-q64",
+      "pregunta": "¿Qué gas sostiene habitualmente el plasma de una antorcha ICP empleada para análisis elemental de aguas?",
+      "opciones": [
+        "Oxígeno puro.",
+        "Argón.",
+        "Helio como reactivo del electrodo de vidrio."
+      ],
+      "correcta": 1,
+      "explicacion": "El plasma acoplado inductivamente utilizado en ICP-MS es habitualmente un plasma de argón.",
+      "fuente": "US EPA, Method 200.8, generación de plasma · apunte §1",
+      "apartado": "1",
+      "evidencia": "El **ICP** no es una técnica de medida: es una **fuente de iones**. Un plasma de argón a varios miles de grados que **atomiza e ioniza** casi cualquier elemento. Lo que se le acople detrás decide la técnica:"
+    },
+    {
+      "id": "t27-q65",
+      "pregunta": "Una especie molecular ionizada coincide en masa nominal con la señal del isótopo buscado. ¿Qué tipo general de interferencia es?",
+      "opciones": [
+        "Espectral poliatómica.",
+        "Una interferencia por adsorción en el filtro de microbiología.",
+        "Un error volumétrico de la bureta."
+      ],
+      "correcta": 0,
+      "explicacion": "Al superponerse las señales de masa a la resolución disponible, la especie poliatómica puede contribuir a la señal atribuida al analito.",
+      "fuente": "US EPA, Method 200.8, interferencias poliatómicas · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| Interferencias propias | De fondo, ionización, químicas | **Isobáricas y poliatómicas** |"
+    },
+    {
+      "id": "t27-q66",
+      "pregunta": "La intensidad instrumental cambia a lo largo de la serie. ¿Cuál es la función principal de monitorizar un patrón interno añadido en igual concentración a patrones y muestras?",
+      "opciones": [
+        "Sustituir todas las calibraciones por un solo blanco.",
+        "Cambiar la masa atómica de los analitos de la muestra.",
+        "Corregir variaciones de respuesta compatibles con el comportamiento del patrón interno."
+      ],
+      "correcta": 2,
+      "explicacion": "La normalización frente a un patrón interno ayuda a compensar cambios de respuesta durante la serie y determinados efectos de matriz.",
+      "fuente": "US EPA, Method 200.8, patrones internos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Patrón interno**: un elemento que no está en la muestra —**el germanio** es el ejemplo del manual— **se bombea junto con la muestra antes de la nebulización**, y todo se refiere a su señal. Corrige a la vez la deriva del equipo y el efecto de matriz."
     }
   ],
   "supuestos": [

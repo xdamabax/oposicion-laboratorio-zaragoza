@@ -1568,6 +1568,76 @@
       "fuente": "Eurachem (2023) e ISO 11133 · apunte §7",
       "apartado": "7",
       "evidencia": "Los cultivos de trabajo no se subcultivan, salvo que lo pida el método o se demuestre que no cambian."
+    },
+    {
+      "id": "t12-q80",
+      "pregunta": "Una receta usa extracto de levadura y un digerido de carne de composición molecular variable. ¿Cómo se clasifica el medio por composición?",
+      "opciones": [
+        "Obligatoriamente selectivo por contener dos ingredientes.",
+        "Complejo.",
+        "Químicamente definido."
+      ],
+      "correcta": 1,
+      "explicacion": "Un medio complejo contiene componentes cuya composición química exacta no está especificada.",
+      "fuente": "FDA, BAM, índice de medios; comparación de formulaciones definidas y complejas · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Complejo:** lleva **extractos y digeridos** de levadura, carne o plantas, así que su composición exacta **no se conoce** y varía. Ejemplos: el **caldo nutritivo**, el caldo de triptona y soja (TSB) y el de infusión de cerebro y corazón."
+    },
+    {
+      "id": "t12-q81",
+      "pregunta": "Dos laboratorios necesitan conocer los moles de cada nutriente que añaden al medio. ¿Qué tipo de medio permite establecerlos a partir de la receta?",
+      "opciones": [
+        "Medio complejo con extracto no caracterizado.",
+        "Medio cuya única descripción es que es sólido.",
+        "Medio químicamente definido."
+      ],
+      "correcta": 2,
+      "explicacion": "Un medio definido especifica la identidad y cantidad de cada componente.",
+      "fuente": "FDA, BAM, índice de medios, composición de formulaciones · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Químicamente definido:** se conoce **la composición exacta** y la cantidad de cada componente."
+    },
+    {
+      "id": "t12-q82",
+      "pregunta": "En el agar tipo Slanetz y Bartley, se busca explicar por separado la inhibición y el color de las colonias. ¿Qué se atribuye a la azida sódica?",
+      "opciones": [
+        "La solidificación del medio.",
+        "La inhibición de muchos microorganismos acompañantes.",
+        "La aparición del color rojo por reducción de tetrazolio."
+      ],
+      "correcta": 1,
+      "explicacion": "La azida actúa como agente selectivo. El TTC es el compuesto asociado al color.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, enterococos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Agar de enterococos (mEA), tipo Slanetz y Bartley** | **Azida sódica**, que inhibe a los coliformes y a la mayoría de los gramnegativos | **Cloruro de trifeniltetrazolio (TTC)**: se reduce a **formazán rojo**, y dan **colonias rojas, granates o rosas** | **Enterococos** (1233, 2.ª prueba, #12) |"
+    },
+    {
+      "id": "t12-q83",
+      "pregunta": "Tras obtener crecimiento confluente de dos bacterias, se quiere escoger una colonia separada en una nueva placa. ¿Qué operación responde al objetivo?",
+      "opciones": [
+        "Hacer una siembra homogénea de todo el inóculo concentrado.",
+        "Transferir toda la mezcla a caldo para aumentar la turbidez.",
+        "Agotar progresivamente por estrías sobre agar."
+      ],
+      "correcta": 2,
+      "explicacion": "La siembra por agotamiento reduce el arrastre de células de un sector al siguiente y permite separar colonias.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, técnicas de siembra · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**En el último cuadrante quedan colonias aisladas**, y cada una procede, en principio, de **una sola célula**."
+    },
+    {
+      "id": "t12-q84",
+      "pregunta": "En el medio tipo Slanetz y Bartley, ¿de qué transformación procede la tonalidad roja asociada al componente diferencial?",
+      "opciones": [
+        "De la reducción del TTC a formazán.",
+        "De la oxidación de la azida a cloruro.",
+        "De la conversión del agar en azida."
+      ],
+      "correcta": 0,
+      "explicacion": "La reducción del cloruro de trifeniltetrazolio produce formazán coloreado.",
+      "fuente": "SCA, The Microbiology of Water and Associated Materials, enterococos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Agar de enterococos (mEA), tipo Slanetz y Bartley** | **Azida sódica**, que inhibe a los coliformes y a la mayoría de los gramnegativos | **Cloruro de trifeniltetrazolio (TTC)**: se reduce a **formazán rojo**, y dan **colonias rojas, granates o rosas** | **Enterococos** (1233, 2.ª prueba, #12) |"
     }
   ],
   "supuestos": [

@@ -1700,6 +1700,76 @@
       "fuente": "SCA, Practices and Procedures for Laboratories (2017) · apunte §6.6",
       "apartado": "6.6",
       "evidencia": "Autoclave: debe cumplir tiempo, presión y temperatura."
+    },
+    {
+      "id": "t17-q76",
+      "pregunta": "Un suplemento resulta defectuoso. ¿Qué dato permite localizar qué lotes de medio se prepararon utilizando ese suplemento?",
+      "opciones": [
+        "Solo el color del envase del medio acabado.",
+        "El número de plazas del laboratorio.",
+        "El registro del lote de cada componente usado en la preparación."
+      ],
+      "correcta": 2,
+      "explicacion": "Registrar los lotes de componentes permite identificar todas las preparaciones expuestas al defecto.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories, 8.2, trazabilidad de medios · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "- En el registro del lote se anotan **los lotes de sus componentes**; si el medio es comercial, **el lote del fabricante**."
+    },
+    {
+      "id": "t17-q77",
+      "pregunta": "Dos frascos de medio proceden de la misma preparación base y reciben suplemento por separado después de esterilizarlos. ¿Qué posibilidad debe considerar el control de lotes?",
+      "opciones": [
+        "Tratar los frascos como lotes distintos.",
+        "Asignarles el número de lote del autoclave y descartar la trazabilidad individual.",
+        "Eliminar el registro del suplemento si la base coincide."
+      ],
+      "correcta": 0,
+      "explicacion": "La adición de suplementos después de esterilizar puede hacer que cada frasco requiera control de lote independiente.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories, 8.2; SCA, 6.10 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "- **Si se añaden suplementos después de esterilizar**, cada frasco puede tener que tratarse como **un lote distinto**."
+    },
+    {
+      "id": "t17-q78",
+      "pregunta": "Se detecta un pH fuera de tolerancia en un medio ya esterilizado. ¿Qué decisión recoge la guía del apunte?",
+      "opciones": [
+        "Añadir ácido o base y liberarlo sin repetir controles.",
+        "Desechar el medio.",
+        "Cambiar la tolerancia registrada para aceptarlo."
+      ],
+      "correcta": 1,
+      "explicacion": "El apunte indica desecharlo porque ajustar el pH tras esterilizarlo puede contaminar el medio.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, 6.10, control de medios · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **pH:** se mide en una alícuota de **cada medio**. La tolerancia típica es **± 0,2 unidades**. **Si está fuera, el medio se desecha**: **el pH no se ajusta después de esterilizar**, porque se podría contaminar."
+    },
+    {
+      "id": "t17-q79",
+      "pregunta": "En un ensayo cualitativo de crecimiento de un medio comercial listo para usar, ¿cómo se registra un crecimiento débil según la escala 0–2 de la guía?",
+      "opciones": [
+        "Con una puntuación de 2.",
+        "Con una puntuación de 0.",
+        "Con una puntuación de 1."
+      ],
+      "correcta": 2,
+      "explicacion": "La guía asigna 0 a ausencia de crecimiento, 1 a crecimiento débil y 2 a crecimiento bueno.",
+      "fuente": "SCA, Practices and Procedures for Laboratories, 6.10, control cualitativo · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "**Cualitativa: ¿crece o no?** Se siembra el diana y se puntúa a ojo: **0 = no crece; 1 = crece poco; 2 = crece bien**. Sirve, por ejemplo, para medios comprados listos para usar con certificado del fabricante. La figura de la guía es *Salmonella* en agar **XLD** con puntuación **2**."
+    },
+    {
+      "id": "t17-q80",
+      "pregunta": "Una cepa diana crece en cantidad suficiente, pero sus colonias no tienen el aspecto esperado en el medio diferencial. ¿Qué propiedad plantea el problema directo?",
+      "opciones": [
+        "La esterilidad del medio sin inocular.",
+        "La especificidad del aspecto típico.",
+        "La tolerancia de temperatura del termómetro."
+      ],
+      "correcta": 1,
+      "explicacion": "La especificidad comprueba que la cepa diana presenta sus rasgos diferenciales esperados.",
+      "fuente": "Eurachem, Accreditation for Microbiological Laboratories, 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **Especificidad** (características) | ¿Da el diana su **aspecto típico**? | Color, halo, fluorescencia… **anotados** |"
     }
   ],
   "supuestos": [

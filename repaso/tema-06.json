@@ -1446,6 +1446,104 @@
       },
       "apartado": "11",
       "evidencia": "La base imponible del IBI es el valor catastral. La del IIVTNU es el incremento de valor, en un máximo de 20 años;"
+    },
+    {
+      "id": "t06-q75",
+      "pregunta": "Una obra pública local aumenta el valor de determinados inmuebles. ¿Qué figura tributaria tiene como hecho imponible el beneficio especial o ese aumento de valor?",
+      "opciones": [
+        "El precio público voluntario por utilizar una actividad cultural.",
+        "El impuesto sobre vehículos del titular del inmueble.",
+        "La contribución especial."
+      ],
+      "correcta": 2,
+      "explicacion": "El hecho imponible de las contribuciones especiales se vincula al beneficio o aumento de valor derivados de la obra o del establecimiento o ampliación del servicio.",
+      "fuente": "TRLRHL, art. 28 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Ocho letras.** Los **tributos** son solo una de ellas, la b), y se dividen en **tres clases**: tasas, contribuciones especiales e impuestos. **Los precios públicos no son tributos**: van aparte, en la e)."
+    },
+    {
+      "id": "t06-q76",
+      "pregunta": "Se acredita conforme a la ley que en una transmisión de un terreno urbano no hubo incremento de valor. ¿Qué consecuencia prevé el artículo 104.5 para el IIVTNU?",
+      "opciones": [
+        "Sujeción sin posibilidad de acreditar el valor de transmisión.",
+        "No sujeción.",
+        "Sujeción con base siempre positiva."
+      ],
+      "correcta": 1,
+      "explicacion": "El precepto dispone que no se producirá la sujeción cuando se constate la inexistencia de incremento en los términos legales.",
+      "fuente": "TRLRHL, art. 104.5 · apunte §8",
+      "apartado": "8",
+      "evidencia": "- y, **desde el Real Decreto-ley 26/2021**, las transmisiones en las que se acredite **la inexistencia de incremento de valor**, comparando los valores de transmisión y de adquisición."
+    },
+    {
+      "id": "t06-q77",
+      "pregunta": "¿Qué magnitud constituye la base imponible del Impuesto sobre Bienes Inmuebles?",
+      "opciones": [
+        "El precio de compra histórico con independencia del valor catastral.",
+        "Los ingresos anuales que produce el inmueble.",
+        "El valor catastral del inmueble."
+      ],
+      "correcta": 2,
+      "explicacion": "La base imponible del IBI está constituida por el valor catastral.",
+      "fuente": "TRLRHL, art. 65 · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q78",
+      "pregunta": "¿Qué noción define la base imponible del ICIO con las exclusiones del artículo 102.1?",
+      "opciones": [
+        "El coste real y efectivo, entendido como coste de ejecución material.",
+        "El beneficio total esperado por el propietario tras la obra.",
+        "El precio futuro de venta del inmueble construido."
+      ],
+      "correcta": 0,
+      "explicacion": "El impuesto toma como base el coste de ejecución material, con las exclusiones previstas.",
+      "fuente": "TRLRHL, art. 102.1 · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q79",
+      "pregunta": "Se ejecuta una obra que requiere licencia municipal y el promotor nunca la solicitó. Si concurren los demás requisitos del impuesto, ¿qué implica la falta de licencia para el ICIO?",
+      "opciones": [
+        "Impide que nazca el hecho imponible.",
+        "El hecho imponible puede producirse igualmente.",
+        "Transforma el ICIO automáticamente en una tasa."
+      ],
+      "correcta": 1,
+      "explicacion": "El hecho imponible se define por la realización de la obra sujeta al control correspondiente, con independencia de que se haya obtenido la licencia.",
+      "fuente": "TRLRHL, art. 100.1 · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q80",
+      "pregunta": "Para el IVTM, ¿cómo trata la ley un vehículo provisto de matrícula turística que reúne las demás condiciones?",
+      "opciones": [
+        "Como vehículo apto para circular.",
+        "Como vehículo no matriculado que queda necesariamente fuera del impuesto.",
+        "Como vehículo que ha causado baja definitiva."
+      ],
+      "correcta": 0,
+      "explicacion": "El artículo 92.2 incluye expresamente los vehículos con permiso temporal o matrícula turística en la regla de aptitud.",
+      "fuente": "TRLRHL, art. 92.2 · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Naturaleza y hecho imponible (92.1):** tributo **directo** que grava la **titularidad** de vehículos **aptos para circular** por las vías públicas. Es apto el **matriculado** y que no ha causado baja. También los que tienen **permiso temporal o matrícula turística**."
+    },
+    {
+      "id": "t06-q81",
+      "pregunta": "La comunidad autónoma es propietaria de una obra destinada directamente a una carretera. ¿Qué tratamiento prevé el artículo 100.2 del TRLRHL respecto del ICIO?",
+      "opciones": [
+        "Está sujeta sin posible exención por su destino.",
+        "Queda exenta únicamente si se destina a una vivienda protegida.",
+        "Está exenta si concurren los requisitos del precepto."
+      ],
+      "correcta": 2,
+      "explicacion": "Las obras de esas administraciones destinadas directamente a infraestructuras enumeradas, entre ellas carreteras, tienen la exención del artículo 100.2.",
+      "fuente": "TRLRHL, art. 100.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Exención (100.2):** las obras de las que sea dueño el **Estado, una CCAA o una entidad local**, destinadas a **carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento**."
     }
   ],
   "formatoTest": {

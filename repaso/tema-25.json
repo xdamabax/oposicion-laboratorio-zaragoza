@@ -1601,6 +1601,384 @@
       },
       "apartado": "2.1",
       "evidencia": "Los 620 nm caen en la franja del naranja (≈ 635-590 nm), y una disolución que absorbe el naranja se ve azul."
+    },
+    {
+      "id": "t25-q68",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,36 con cubeta de 0,5 cm y absorptividad molar 90 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "0,008 mmol/L.",
+        "8 mmol/L.",
+        "2 mmol/L."
+      ],
+      "correcta": 1,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,36/(90 × 0,5) = 8 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q69",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,52 con cubeta de 2 cm y absorptividad molar 130 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "2 mmol/L.",
+        "8 mmol/L.",
+        "0,002 mmol/L."
+      ],
+      "correcta": 0,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,52/(130 × 2) = 2 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q70",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,18 con cubeta de 1 cm y absorptividad molar 180 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "1 mmol/L.",
+        "0,001 mmol/L.",
+        "0,1 mmol/L."
+      ],
+      "correcta": 0,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,18/(180 × 1) = 1 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q71",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,64 con cubeta de 0,8 cm y absorptividad molar 160 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "3,2 mmol/L.",
+        "5 mmol/L.",
+        "0,005 mmol/L."
+      ],
+      "correcta": 1,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,64/(160 × 0,8) = 5 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q72",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,45 con cubeta de 1,5 cm y absorptividad molar 200 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "0,002 mmol/L.",
+        "3,375 mmol/L.",
+        "1,5 mmol/L."
+      ],
+      "correcta": 2,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,45/(200 × 1,5) = 1,5 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q73",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,54 con cubeta de 1,2 cm y absorptividad molar 150 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "3 mmol/L.",
+        "4,32 mmol/L.",
+        "0,003 mmol/L."
+      ],
+      "correcta": 0,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,54/(150 × 1,2) = 3 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q74",
+      "pregunta": "Dentro del tramo lineal se mide A = 0,8 con cubeta de 4 cm y absorptividad molar 50 L·mol⁻¹·cm⁻¹. ¿Qué concentración se obtiene en mmol/L?",
+      "opciones": [
+        "0,004 mmol/L.",
+        "64 mmol/L.",
+        "4 mmol/L."
+      ],
+      "correcta": 2,
+      "explicacion": "c = A/(εb). Se multiplica el valor en mol/L por 1.000: 1.000 × 0,8/(50 × 4) = 4 mmol/L.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, ley de Beer–Lambert · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q75",
+      "pregunta": "La muestra transmite el 40 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,6.",
+        "0,398.",
+        "0,4."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,4) ≈ 0,398.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q76",
+      "pregunta": "La muestra transmite el 5 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "1,301.",
+        "0,05.",
+        "0,95."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,05) ≈ 1,301.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q77",
+      "pregunta": "La muestra transmite el 25 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,75.",
+        "0,602.",
+        "0,25."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,25) ≈ 0,602.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q78",
+      "pregunta": "La muestra transmite el 1 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,01.",
+        "0,99.",
+        "2."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,01) ≈ 2.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q79",
+      "pregunta": "La muestra transmite el 64 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,194.",
+        "0,36.",
+        "0,64."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,64) ≈ 0,194.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q80",
+      "pregunta": "La muestra transmite el 18 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,18.",
+        "0,82.",
+        "0,745."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,18) ≈ 0,745.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q81",
+      "pregunta": "La muestra transmite el 44 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "0,56.",
+        "0,357.",
+        "0,44."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,44) ≈ 0,357.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q82",
+      "pregunta": "La muestra transmite el 8 % de la radiación incidente. ¿Qué absorbancia decimal corresponde, redondeada a tres decimales?",
+      "opciones": [
+        "1,097.",
+        "0,08.",
+        "0,92."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa la fracción transmitida, no el porcentaje: A = −log₁₀(0,08) ≈ 1,097.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, relación entre absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Absorbancia (A)** | **A = − log T = log (I₀ / I)** | 0 a ∞ (en la práctica, 0 a 2) |"
+    },
+    {
+      "id": "t25-q83",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,2. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "0,63 %.",
+        "63,1 %.",
+        "36,9 %."
+      ],
+      "correcta": 1,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,2 ≈ 63,1 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q84",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,3. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "49,88 %.",
+        "0,5 %.",
+        "50,12 %."
+      ],
+      "correcta": 2,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,3 ≈ 50,12 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q85",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,6. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "25,12 %.",
+        "0,25 %.",
+        "74,88 %."
+      ],
+      "correcta": 0,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,6 ≈ 25,12 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q86",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,7. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "80,05 %.",
+        "0,2 %.",
+        "19,95 %."
+      ],
+      "correcta": 2,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,7 ≈ 19,95 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q87",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 1,2. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "0,06 %.",
+        "6,31 %.",
+        "93,69 %."
+      ],
+      "correcta": 1,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −1,2 ≈ 6,31 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q88",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,9. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "12,59 %.",
+        "87,41 %.",
+        "0,13 %."
+      ],
+      "correcta": 0,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,9 ≈ 12,59 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q89",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,15. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "0,71 %.",
+        "70,79 %.",
+        "29,21 %."
+      ],
+      "correcta": 1,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,15 ≈ 70,79 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q90",
+      "pregunta": "Un espectrofotómetro registra una absorbancia decimal de 0,95. ¿Qué porcentaje de la potencia incidente se transmite según esa lectura? Redondea a dos decimales.",
+      "opciones": [
+        "88,78 %.",
+        "0,11 %.",
+        "11,22 %."
+      ],
+      "correcta": 2,
+      "explicacion": "La transmitancia fraccionaria es 10 elevado a −A. Se multiplica por 100: 100 × 10 elevado a −0,95 ≈ 11,22 %.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia hacia porcentaje de transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q91",
+      "pregunta": "Con la misma concentración, longitud de onda y disolución, la trayectoria óptica pasa de 1 a 2 cm en el tramo lineal. ¿Qué ocurre con la absorbancia?",
+      "opciones": [
+        "Se duplica.",
+        "Permanece igual por tratarse del mismo analito.",
+        "Se reduce a la mitad."
+      ],
+      "correcta": 0,
+      "explicacion": "En A = εbc, la absorbancia es directamente proporcional a la longitud del trayecto óptico cuando ε y c se mantienen.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, espectrofotometría molecular, ley de Beer · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "> **A = ε · b · c**\n\n| Término | Qué es | Unidades |"
+    },
+    {
+      "id": "t25-q92",
+      "pregunta": "Una cubeta transmite el 10 % de la radiación incidente. ¿Cuál es su absorbancia decimal?",
+      "opciones": [
+        "0,10.",
+        "10,00.",
+        "1,00."
+      ],
+      "correcta": 2,
+      "explicacion": "La transmitancia fraccionaria es 0,10. Por tanto, A = −log₁₀(0,10) = 1.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, absorbancia y transmitancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Son inversas: **a más absorbancia, menos transmitancia**. Y la relación es **logarítmica**, no lineal: T = 10 % equivale a A = 1; T = 1 % equivale a A = 2."
+    },
+    {
+      "id": "t25-q93",
+      "pregunta": "Si entra radiación parásita al detector con una muestra fuertemente absorbente, ¿cómo afecta la señal adicional a la absorbancia aparente?",
+      "opciones": [
+        "La deja invariable a cualquier concentración.",
+        "La disminuye respecto de la real.",
+        "La aumenta siempre respecto de la real."
+      ],
+      "correcta": 1,
+      "explicacion": "La luz adicional aumenta la potencia detectada y con ello la transmitancia aparente. La absorbancia aparente baja.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, desviaciones instrumentales de la ley de Beer · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Desviaciones de Beer: reales, químicas e instrumentales**, y casi siempre **negativas**. Las químicas se combaten **tamponando**; las instrumentales son **radiación policromática** y **luz parásita**."
+    },
+    {
+      "id": "t25-q94",
+      "pregunta": "Si el disolvente y los reactivos aportan señal, ¿qué preparación es adecuada para estimar ese fondo?",
+      "opciones": [
+        "Un blanco con el disolvente y los reactivos, sin el analito añadido.",
+        "Una cubeta vacía en todos los casos.",
+        "La disolución de calibración más concentrada."
+      ],
+      "correcta": 0,
+      "explicacion": "El blanco permite tener en cuenta la contribución de los componentes comunes y de la cubeta en las condiciones del método.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, blancos en espectrofotometría · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Blanco inadecuado** | El blanco debe llevar **todos los reactivos menos el analito** | Preparar el blanco con la misma matriz y los mismos reactivos |"
     }
   ],
   "supuestos": [

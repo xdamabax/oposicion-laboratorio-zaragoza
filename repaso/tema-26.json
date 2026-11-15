@@ -1539,6 +1539,62 @@
       "fuente": "Catálogo UNE · apunte §3 y Dudas",
       "apartado": "3",
       "evidencia": "UNE-EN ISO 11969:1997 está ANULADA (18/09/2014)"
+    },
+    {
+      "id": "t26-q65",
+      "pregunta": "¿Qué se selecciona en absorción atómica de líneas al pasar de medir cobre a medir otro elemento con una lámpara monoelemental?",
+      "opciones": [
+        "Una lámpara de cobre con una cubeta de trayectoria doble.",
+        "Una fuente de líneas apropiada para el nuevo elemento.",
+        "El mismo ajuste sin cambiar fuente ni longitud de onda."
+      ],
+      "correcta": 1,
+      "explicacion": "La lámpara de cátodo hueco monoelemental aporta líneas características adecuadas para el elemento de interés.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, espectrometría de absorción atómica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **2. La fuente** | **Continua**: deuterio y tungsteno | De **LÍNEAS**: lámpara de cátodo hueco del propio elemento |"
+    },
+    {
+      "id": "t26-q66",
+      "pregunta": "Una etapa convierte el analito en átomos libres en fase gaseosa. ¿Cómo se denomina esa etapa?",
+      "opciones": [
+        "Atomización.",
+        "Complejación volumétrica.",
+        "Nebulización exclusivamente."
+      ],
+      "correcta": 0,
+      "explicacion": "La atomización produce la población de átomos libres que puede interaccionar con la radiación.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, atomización en espectrometría atómica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Convertir el analito en átomos libres exige tres pasos: **desolvatar → volatilizar → disociar**. Hay cuatro maneras de hacerlo, y **elegir la correcta es lo que preguntan los supuestos**:"
+    },
+    {
+      "id": "t26-q67",
+      "pregunta": "Se dispone de unas decenas de microlitros y se busca atomización en un tubo calentado eléctricamente. ¿Qué técnica corresponde a esa configuración?",
+      "opciones": [
+        "Absorción atómica con llama y aspiración continua como única opción.",
+        "Espectrofotometría molecular con una cubeta llena de 1 cm.",
+        "Absorción atómica con horno de grafito."
+      ],
+      "correcta": 2,
+      "explicacion": "En el horno de grafito, una pequeña alícuota se deposita en un tubo calentado mediante un programa térmico.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, atomización electrotérmica · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Horno de grafito: secado ≈ 110 °C → calcinación 350-1 200 °C → atomización 2 000-3 000 °C** (+ limpieza). **5-50 µL**, ciclo de **45-90 s**, tubo de **1-3 cm**, atmósfera de **argón**."
+    },
+    {
+      "id": "t26-q68",
+      "pregunta": "Para un elemento que forma un hidruro volátil, ¿cuál es la utilidad analítica de generarlo antes de medir por absorción atómica?",
+      "opciones": [
+        "Transportar el analito como especie gaseosa y separarlo de gran parte de la matriz líquida.",
+        "Convertir todos los constituyentes de matriz en un medio de cultivo.",
+        "Aumentar la masa del residuo pesado en el crisol."
+      ],
+      "correcta": 0,
+      "explicacion": "El hidruro volátil se transporta hacia la zona de atomización separado de gran parte de la matriz.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, generación de hidruros en espectrometría atómica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) Generación de hidruros (HGAAS).** Con **borohidruro sódico (NaBH₄)** en medio ácido, unos pocos elementos forman **hidruros volátiles** que se arrastran a una célula calentada donde se descomponen: **As, Se, Sb, Bi, Ge, Sn, Te y Pb**. Separa el analito de la matriz y multiplica la sensibilidad."
     }
   ],
   "supuestos": [

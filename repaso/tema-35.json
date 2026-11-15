@@ -1567,6 +1567,188 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Metales, concentración alta | ICP-OES (27) | UNE-EN ISO 11885:2010 |"
+    },
+    {
+      "id": "t35-q70",
+      "pregunta": "Para verificar una NCA-MA en un punto de control con una serie anual válida, ¿qué estadístico se compara con el valor de la norma según el apunte?",
+      "opciones": [
+        "El máximo de una sola muestra como equivalente directo de la media.",
+        "El caudal mínimo anual sin considerar concentraciones.",
+        "La media aritmética de las concentraciones de ese año."
+      ],
+      "correcta": 2,
+      "explicacion": "La NCA-MA se evalúa frente a la media aritmética de las concentraciones determinadas a lo largo del año para ese punto.",
+      "fuente": "Real Decreto 817/2015, anexo IV, norma de calidad ambiental media anual · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **NCA-MA** | **Media anual** | Cuando **la media aritmética** de las concentraciones medidas durante el año en cada punto **no excede** la norma |"
+    },
+    {
+      "id": "t35-q71",
+      "pregunta": "Un agua residual contiene 8,2 mg N/L como Kjeldahl total, 3,6 mg N/L como nitrato y 0,4 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "12,2 mg N/L.",
+        "8,6 mg N/L.",
+        "11,8 mg N/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 8,2 + 3,6 + 0,4 = 12,2 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q72",
+      "pregunta": "Un agua residual contiene 10 mg N/L como Kjeldahl total, 5,3 mg N/L como nitrato y 0,85 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "15,3 mg N/L.",
+        "16,15 mg N/L.",
+        "10,85 mg N/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 10 + 5,3 + 0,85 = 16,15 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q73",
+      "pregunta": "Un agua residual contiene 7,1 mg N/L como Kjeldahl total, 2 mg N/L como nitrato y 0,65 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "7,75 mg N/L.",
+        "9,1 mg N/L.",
+        "9,75 mg N/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 7,1 + 2 + 0,65 = 9,75 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q74",
+      "pregunta": "Un agua residual contiene 12,4 mg N/L como Kjeldahl total, 4,8 mg N/L como nitrato y 0,75 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "17,2 mg N/L.",
+        "17,95 mg N/L.",
+        "13,15 mg N/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 12,4 + 4,8 + 0,75 = 17,95 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q75",
+      "pregunta": "Un agua residual contiene 5,1 mg N/L como Kjeldahl total, 2,7 mg N/L como nitrato y 0,3 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "8,1 mg N/L.",
+        "5,4 mg N/L.",
+        "7,8 mg N/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 5,1 + 2,7 + 0,3 = 8,1 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q76",
+      "pregunta": "Un agua residual contiene 3,5 mg N/L como Kjeldahl total, 6,4 mg N/L como nitrato y 0,5 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "9,9 mg N/L.",
+        "4 mg N/L.",
+        "10,4 mg N/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 3,5 + 6,4 + 0,5 = 10,4 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q77",
+      "pregunta": "Un agua residual contiene 11,2 mg N/L como Kjeldahl total, 4,3 mg N/L como nitrato y 0,2 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "15,7 mg N/L.",
+        "11,4 mg N/L.",
+        "15,5 mg N/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 11,2 + 4,3 + 0,2 = 15,7 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q78",
+      "pregunta": "Un agua residual contiene 9,7 mg N/L como Kjeldahl total, 2,6 mg N/L como nitrato y 0,25 mg N/L como nitrito. ¿Qué nitrógeno total resulta de esas fracciones?",
+      "opciones": [
+        "12,3 mg N/L.",
+        "12,55 mg N/L.",
+        "9,95 mg N/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman las tres concentraciones porque ya están expresadas como N: 9,7 + 2,6 + 0,25 = 12,55 mg N/L.",
+      "fuente": "Real Decreto 509/1996, anexo I, cuadro 2, definición de nitrógeno total · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**N total = N Kjeldahl (orgánico + amoniacal) + N-nitrato + N-nitrito**"
+    },
+    {
+      "id": "t35-q79",
+      "pregunta": "Un laboratorio informa solo nitrógeno Kjeldahl total en una muestra que también contiene nitratos. ¿Puede tratar directamente ese resultado como nitrógeno total que incluye nitratos?",
+      "opciones": [
+        "Sí, porque nitrato y amonio se nombran de la misma manera en el método.",
+        "Sí. El Kjeldahl convencional cuantifica por definición todo el nitrato.",
+        "No. El Kjeldahl convencional no incorpora la fracción de nitratos."
+      ],
+      "correcta": 2,
+      "explicacion": "El nitrógeno Kjeldahl comprende principalmente nitrógeno orgánico y amoniacal. El nitrato no se mide por ese procedimiento convencional.",
+      "fuente": "US EPA, Method 351.2, Total Kjeldahl Nitrogen · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "*«Nitrógeno total equivalente a la suma de **nitrógeno Kjeldahl total (N orgánico y amoniacal)**, **nitrógeno en forma de nitrato** y **nitrógeno en forma de nitrito**.»*"
+    },
+    {
+      "id": "t35-q80",
+      "pregunta": "Se pretende medir fósforo total con un método que desarrolla color a partir de ortofosfato. ¿Por qué se digiere previamente la muestra según el método?",
+      "opciones": [
+        "Para eliminar selectivamente todo el fósforo antes de medir.",
+        "Para convertir diversas formas de fósforo en ortofosfato medible.",
+        "Para convertir el fósforo en nitrógeno amoniacal."
+      ],
+      "correcta": 1,
+      "explicacion": "La digestión transforma las formas de fósforo definidas por el método en ortofosfato, que después responde en la reacción colorimétrica.",
+      "fuente": "US EPA, Method 365.1, fósforo total colorimétrico, digestión · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Por eso el fósforo TOTAL exige una DIGESTIÓN PREVIA**, que convierte todas las formas en ortofosfato antes de medir. Y por eso las tres respuestas del examen empiezan igual: **«digestión ácida y…»**."
+    },
+    {
+      "id": "t35-q81",
+      "pregunta": "Se necesita distinguir concentración de metal disuelto y concentración recuperable en la muestra sin filtrar. ¿Qué operación define de forma operacional la fracción disuelta en el método?",
+      "opciones": [
+        "La filtración de la muestra según el procedimiento, antes de la conservación ácida de la fracción filtrada.",
+        "La suma de las concentraciones de todos los metales detectados.",
+        "La incineración completa del filtro junto con todo el sedimento."
+      ],
+      "correcta": 0,
+      "explicacion": "La fracción disuelta se define mediante el filtrado especificado. El metal asociado a sólidos retenidos no forma parte de esa fracción.",
+      "fuente": "US EPA, Method 200.8, definiciones de metales disueltos y recuperables · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Metal DISUELTO** | Solo la fase disuelta | **FILTRACIÓN por membrana de 0,45 µm**, sin digerir | **NCA** del RD 817/2015 para Cd, Pb, Hg, Ni (anexo IV) y As, Cu, Cr, Se, Zn (anexo V) |"
+    },
+    {
+      "id": "t35-q82",
+      "pregunta": "¿Qué ámbito corresponde a una NCA para un contaminante del RD 817/2015?",
+      "opciones": [
+        "La homologación de pipetas automáticas.",
+        "El etiquetado de lotes de medios de cultivo.",
+        "La calidad del medio acuático receptor."
+      ],
+      "correcta": 2,
+      "explicacion": "Las NCA se emplean para evaluar el estado de las aguas superficiales en los términos del real decreto.",
+      "fuente": "Real Decreto 817/2015, normas de calidad ambiental · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "El **RD 817/2015** no regula vertidos: regula **el estado de las aguas superficiales**. Y lo hace con **normas de calidad ambiental (NCA)**, en **µg/L**, de dos tipos:"
     }
   ],
   "supuestos": [

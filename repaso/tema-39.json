@@ -1384,6 +1384,454 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "Nunca las dos en la misma medición; su incertidumbre ≤ 1/3 de la de la medida"
+    },
+    {
+      "id": "t39-q70",
+      "pregunta": "La calibración válida es y = 0,08x + 0,1. Si la señal en rango es y = 0,5, ¿qué valor tiene x?",
+      "opciones": [
+        "6,25.",
+        "5.",
+        "7,5."
+      ],
+      "correcta": 1,
+      "explicacion": "Se despeja x = (y − a)/b = (0,5 − (0,1))/0,08 = 5.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q71",
+      "pregunta": "La calibración válida es y = 0,12x + 0,25. Si la señal en rango es y = 0,49, ¿qué valor tiene x?",
+      "opciones": [
+        "2.",
+        "6,167.",
+        "4,083."
+      ],
+      "correcta": 0,
+      "explicacion": "Se despeja x = (y − a)/b = (0,49 − (0,25))/0,12 = 2.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q72",
+      "pregunta": "La calibración válida es y = 0,32x + 0,06. Si la señal en rango es y = 1,34, ¿qué valor tiene x?",
+      "opciones": [
+        "4,188.",
+        "4,375.",
+        "4."
+      ],
+      "correcta": 2,
+      "explicacion": "Se despeja x = (y − a)/b = (1,34 − (0,06))/0,32 = 4.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q73",
+      "pregunta": "La calibración válida es y = 0,15x + 0,4. Si la señal en rango es y = 1,6, ¿qué valor tiene x?",
+      "opciones": [
+        "13,333.",
+        "8.",
+        "10,667."
+      ],
+      "correcta": 1,
+      "explicacion": "Se despeja x = (y − a)/b = (1,6 − (0,4))/0,15 = 8.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q74",
+      "pregunta": "La calibración válida es y = 0,2x + 0,4. Si la señal en rango es y = 1,8, ¿qué valor tiene x?",
+      "opciones": [
+        "9.",
+        "11.",
+        "7."
+      ],
+      "correcta": 2,
+      "explicacion": "Se despeja x = (y − a)/b = (1,8 − (0,4))/0,2 = 7.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q75",
+      "pregunta": "La calibración válida es y = 0,28x + 0,1. Si la señal en rango es y = 3,18, ¿qué valor tiene x?",
+      "opciones": [
+        "11.",
+        "11,714.",
+        "11,357."
+      ],
+      "correcta": 0,
+      "explicacion": "Se despeja x = (y − a)/b = (3,18 − (0,1))/0,28 = 11.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q76",
+      "pregunta": "La calibración válida es y = 0,6x + 0,2. Si la señal en rango es y = 2, ¿qué valor tiene x?",
+      "opciones": [
+        "3,333.",
+        "3.",
+        "3,667."
+      ],
+      "correcta": 1,
+      "explicacion": "Se despeja x = (y − a)/b = (2 − (0,2))/0,6 = 3.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q77",
+      "pregunta": "La calibración válida es y = 0,13x − 0,1. Si la señal en rango es y = 0,68, ¿qué valor tiene x?",
+      "opciones": [
+        "6.",
+        "4,462.",
+        "5,231."
+      ],
+      "correcta": 0,
+      "explicacion": "Se despeja x = (y − a)/b = (0,68 − (-0,1))/0,13 = 6.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración e interpolación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q78",
+      "pregunta": "En un punto de calibración se observa una respuesta de 0,35 y la recta predice 0,31. ¿Cuál es su residuo con el convenio observado menos predicho?",
+      "opciones": [
+        "-0,04.",
+        "1,129.",
+        "0,04."
+      ],
+      "correcta": 2,
+      "explicacion": "Se calcula y − ŷ = 0,35 − 0,31 = 0,04.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, residuos en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)"
+    },
+    {
+      "id": "t39-q79",
+      "pregunta": "En un punto de calibración se observa una respuesta de 0,29 y la recta predice 0,36. ¿Cuál es su residuo con el convenio observado menos predicho?",
+      "opciones": [
+        "0,806.",
+        "-0,07.",
+        "0,07."
+      ],
+      "correcta": 1,
+      "explicacion": "Se calcula y − ŷ = 0,29 − 0,36 = -0,07.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, residuos en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)"
+    },
+    {
+      "id": "t39-q80",
+      "pregunta": "En un punto de calibración se observa una respuesta de 0,72 y la recta predice 0,69. ¿Cuál es su residuo con el convenio observado menos predicho?",
+      "opciones": [
+        "-0,03.",
+        "1,043.",
+        "0,03."
+      ],
+      "correcta": 2,
+      "explicacion": "Se calcula y − ŷ = 0,72 − 0,69 = 0,03.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, residuos en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)"
+    },
+    {
+      "id": "t39-q81",
+      "pregunta": "En un punto de calibración se observa una respuesta de 0,95 y la recta predice 0,9. ¿Cuál es su residuo con el convenio observado menos predicho?",
+      "opciones": [
+        "0,05.",
+        "1,056.",
+        "-0,05."
+      ],
+      "correcta": 0,
+      "explicacion": "Se calcula y − ŷ = 0,95 − 0,9 = 0,05.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, residuos en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)"
+    },
+    {
+      "id": "t39-q82",
+      "pregunta": "En un punto de calibración se observa una respuesta de 1,34 y la recta predice 1,42. ¿Cuál es su residuo con el convenio observado menos predicho?",
+      "opciones": [
+        "0,08.",
+        "-0,08.",
+        "0,944."
+      ],
+      "correcta": 1,
+      "explicacion": "Se calcula y − ŷ = 1,34 − 1,42 = -0,08.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, residuos en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)"
+    },
+    {
+      "id": "t39-q83",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 24, el valor asignado es 26 y la desviación para evaluación es 1,5 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "-1,33.",
+        "-3.",
+        "1,33."
+      ],
+      "correcta": 0,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (24 − 26)/1,5 ≈ -1,33.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q84",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 110, el valor asignado es 100 y la desviación para evaluación es 5 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "-2.",
+        "50.",
+        "2."
+      ],
+      "correcta": 2,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (110 − 100)/5 ≈ 2.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q85",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 76, el valor asignado es 80 y la desviación para evaluación es 2,5 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "-10.",
+        "-1,6.",
+        "1,6."
+      ],
+      "correcta": 1,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (76 − 80)/2,5 ≈ -1,6.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q86",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 102, el valor asignado es 96 y la desviación para evaluación es 4 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "-1,5.",
+        "24.",
+        "1,5."
+      ],
+      "correcta": 2,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (102 − 96)/4 ≈ 1,5.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q87",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 41, el valor asignado es 38 y la desviación para evaluación es 3 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "1.",
+        "9.",
+        "-1."
+      ],
+      "correcta": 0,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (41 − 38)/3 ≈ 1.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q88",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 124, el valor asignado es 119 y la desviación para evaluación es 2 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "-2,5.",
+        "2,5.",
+        "10."
+      ],
+      "correcta": 1,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (124 − 119)/2 ≈ 2,5.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q89",
+      "pregunta": "En un ensayo de aptitud, el laboratorio informa 54, el valor asignado es 50 y la desviación para evaluación es 1,25 en la misma unidad. ¿Qué puntuación z obtiene? Redondea a dos decimales.",
+      "opciones": [
+        "3,2.",
+        "5.",
+        "-3,2."
+      ],
+      "correcta": 0,
+      "explicacion": "z = (x − xₚₜ)/σₚₜ = (54 − 50)/1,25 ≈ 3,2.",
+      "fuente": "ISO 13528:2022; Eurachem, guía de ensayos de aptitud, interpretación de z · apunte §4",
+      "apartado": "4",
+      "evidencia": "**16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**"
+    },
+    {
+      "id": "t39-q90",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es -0,8. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,8.",
+        "0,36.",
+        "0,64."
+      ],
+      "correcta": 2,
+      "explicacion": "En ese modelo R² = r² = (-0,8)² = 0,64.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q91",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es -0,95. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,0975.",
+        "0,9025.",
+        "0,95."
+      ],
+      "correcta": 1,
+      "explicacion": "En ese modelo R² = r² = (-0,95)² = 0,9025.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q92",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es 0,98. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,98.",
+        "0,0396.",
+        "0,9604."
+      ],
+      "correcta": 2,
+      "explicacion": "En ese modelo R² = r² = (0,98)² = 0,9604.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q93",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es -0,75. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,5625.",
+        "0,4375.",
+        "0,75."
+      ],
+      "correcta": 0,
+      "explicacion": "En ese modelo R² = r² = (-0,75)² = 0,5625.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q94",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es 0,92. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,92.",
+        "0,8464.",
+        "0,1536."
+      ],
+      "correcta": 1,
+      "explicacion": "En ese modelo R² = r² = (0,92)² = 0,8464.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q95",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es -0,91. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,8281.",
+        "0,1719.",
+        "0,91."
+      ],
+      "correcta": 0,
+      "explicacion": "En ese modelo R² = r² = (-0,91)² = 0,8281.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q96",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es 0,85. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,85.",
+        "0,2775.",
+        "0,7225."
+      ],
+      "correcta": 2,
+      "explicacion": "En ese modelo R² = r² = (0,85)² = 0,7225.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q97",
+      "pregunta": "En una regresión lineal simple con intercepto el coeficiente de correlación r es -0,87. ¿Cuál es el coeficiente de determinación R²?",
+      "opciones": [
+        "0,2431.",
+        "0,7569.",
+        "0,87."
+      ],
+      "correcta": 1,
+      "explicacion": "En ese modelo R² = r² = (-0,87)² = 0,7569.",
+      "fuente": "D. Harvey, LibreTexts, Analytical Chemistry 2.1, 5.4, coeficiente de determinación en regresión lineal · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**"
+    },
+    {
+      "id": "t39-q98",
+      "pregunta": "En una cadena de trazabilidad documentada, ¿qué aporta cada calibración a la evaluación del resultado?",
+      "opciones": [
+        "Una eliminación automática de toda la incertidumbre anterior.",
+        "Un valor de referencia sin necesidad de documentarlo.",
+        "Una contribución a la incertidumbre de medida."
+      ],
+      "correcta": 2,
+      "explicacion": "El VIM especifica que cada calibración de la cadena contribuye a la incertidumbre.",
+      "fuente": "BIPM, VIM, 2.41 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Trazabilidad metrológica (VIM 2.41):** *«propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una **cadena ininterrumpida y documentada de calibraciones**, cada una de las cuales **contribuye a la incertidumbre** de medida»*."
+    },
+    {
+      "id": "t39-q99",
+      "pregunta": "¿Qué condiciones del material de referencia se evalúan en relación con sus propiedades y su uso previsto?",
+      "opciones": [
+        "Homogeneidad y estabilidad suficientes para ese uso.",
+        "Certificación obligatoria de todas las propiedades posibles.",
+        "Solubilidad ilimitada en agua y en disolventes orgánicos."
+      ],
+      "correcta": 0,
+      "explicacion": "La definición de material de referencia exige homogeneidad y estabilidad suficientes para las propiedades especificadas.",
+      "fuente": "BIPM, VIM, 5.13 y 5.14 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Material de referencia (VIM 5.13):** *«material suficientemente **homogéneo y estable** con respecto a propiedades especificadas, establecido como **apto para su uso previsto** en una medición o en un examen de propiedades cualitativas»*."
+    },
+    {
+      "id": "t39-q100",
+      "pregunta": "La recta de calibración es y = 0,25x + 0,10 y una muestra da y = 0,85 en el intervalo validado. ¿Cuál es x en las unidades de la calibración?",
+      "opciones": [
+        "3,40.",
+        "3,00.",
+        "0,75."
+      ],
+      "correcta": 1,
+      "explicacion": "Se resta la ordenada de origen y se divide entre la pendiente: (0,85 − 0,10)/0,25.",
+      "fuente": "Eurachem, The Fitness for Purpose of Analytical Methods, calibración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta."
+    },
+    {
+      "id": "t39-q101",
+      "pregunta": "Un proveedor externo distribuye una muestra con valor asignado para comparar el desempeño de laboratorios. ¿Qué herramienta se está utilizando?",
+      "opciones": [
+        "Ensayo de aptitud.",
+        "Calibración interna de un electrodo con dos tampones.",
+        "Verificación diaria de la temperatura sin comparación externa."
+      ],
+      "correcta": 0,
+      "explicacion": "El ensayo permite evaluar resultados frente a criterios establecidos por un proveedor externo.",
+      "fuente": "ENAC, ensayos de aptitud; Eurachem, uso de ensayos de aptitud · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "- **Ensayo de aptitud** (*proficiency testing*): un proveedor envía **la misma muestra** a muchos laboratorios y **evalúa el desempeño** de cada uno. Los proveedores se rigen por la **UNE-EN ISO/IEC 17043:2023**, y la estadística, por la **ISO 13528:2022**."
     }
   ],
   "supuestos": [

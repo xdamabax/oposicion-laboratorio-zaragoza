@@ -1410,6 +1410,76 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Compuestos NO volátiles o termolábiles | NO es cromatografía de gases: HPLC | Tema 32 |"
+    },
+    {
+      "id": "t31-q69",
+      "pregunta": "Se quiere reproducir la temperatura de la columna entre dos separaciones por GC. ¿Qué componente mantiene ese control?",
+      "opciones": [
+        "La trampa de residuos líquidos del muestreador.",
+        "El regulador de luminosidad del detector.",
+        "El horno termostatado de la columna."
+      ],
+      "correcta": 2,
+      "explicacion": "El horno regula la temperatura de la columna, variable crítica en la separación.",
+      "fuente": "CEM, QU-005, control de temperatura en cromatografía de gases · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "*«El control de la temperatura de la columna es crítico para lograr una buena separación»*, y por eso **la columna se coloca dentro de un horno termostatado**."
+    },
+    {
+      "id": "t31-q70",
+      "pregunta": "En cromatografía de gases, ¿cuál es la función del gas que circula de forma continua por la columna?",
+      "opciones": [
+        "Transportar los analitos como fase móvil.",
+        "Transmitir radiación ultravioleta como detector óptico.",
+        "Actuar como disolución valorante de los analitos."
+      ],
+      "correcta": 0,
+      "explicacion": "La corriente de gas arrastra los componentes a lo largo de la columna.",
+      "fuente": "CEM, QU-005, gas portador · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Es la **fase móvil**, y el CEM lo describe sin ambages: *«un gas inerte, cuya única función es **transportar el analito** a través de la columna»*."
+    },
+    {
+      "id": "t31-q71",
+      "pregunta": "Se inyecta una matriz con un soluto no volátil incompatible con el método. ¿Qué problema es esperable según el apunte?",
+      "opciones": [
+        "Que el gas portador deje de ser fase móvil por falta de señal.",
+        "Que se condense o quede retenido en la entrada y deteriore la columna.",
+        "Que todos los picos posteriores se enfoquen de manera reversible."
+      ],
+      "correcta": 1,
+      "explicacion": "Los compuestos no volátiles no se transportan como los analitos adecuados y pueden ensuciar la entrada o la columna.",
+      "fuente": "LibreTexts, Analytical Chemistry 2.1, condiciones de inyección en GC · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "1. **Todos los componentes de la muestra deben ser VOLÁTILES.** Un soluto poco volátil queda retenido y sigue eluyendo en los análisis siguientes; uno no volátil **se condensa en la cabeza de la columna y la degrada**."
+    },
+    {
+      "id": "t31-q72",
+      "pregunta": "Al usar purga y trampa para compuestos orgánicos volátiles en agua, ¿qué ocurre después de arrastrarlos con gas fuera de la muestra?",
+      "opciones": [
+        "Se pesan directamente como precipitado insoluble dentro de la botella.",
+        "Se eliminan del circuito de análisis junto al gas sin registrarlos.",
+        "Se concentran en una trampa antes de introducirlos en el sistema."
+      ],
+      "correcta": 2,
+      "explicacion": "La purga transfiere los volátiles a una corriente gaseosa y la trampa los concentra para su desorción posterior.",
+      "fuente": "US EPA, Method 524.2, compuestos orgánicos volátiles en agua · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**La ventaja es la concentración: hasta 1000 veces.** Por eso es el método de los parámetros con valor paramétrico en µg/L. Norma: **UNE-EN ISO 15680:2004**, cuyo título nombra expresamente **«purga y trampa y desorción térmica»**."
+    },
+    {
+      "id": "t31-q73",
+      "pregunta": "Después de separar compuestos orgánicos volátiles por GC, se requieren datos de fragmentos iónicos para orientar la identificación. ¿Qué detector aporta esa información?",
+      "opciones": [
+        "Espectrómetro de masas.",
+        "Electrodo selectivo de fluoruro.",
+        "Detector de conductividad de un cromatógrafo iónico."
+      ],
+      "correcta": 0,
+      "explicacion": "Un espectrómetro de masas registra señales iónicas según su relación masa/carga y puede aportar el patrón de fragmentación.",
+      "fuente": "US EPA, Method 524.2, detección de compuestos orgánicos por GC-MS · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Identificar un microcontaminante orgánico → cromatografía de gases o de líquidos con detector de masas** (1233 #5, 1246 #30). La palabra clave es **identificar**: solo el espectro de masas —o un FT-IR— permite **decir qué es** algo que no se sabía de antemano."
     }
   ],
   "supuestos": [

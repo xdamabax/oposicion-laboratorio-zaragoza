@@ -1607,6 +1607,174 @@
       "fuente": "Tabla operativa · apunte §3",
       "apartado": "3",
       "evidencia": "| Metales | — | Plástico lavado con ácido | HNO₃ a pH < 2; nunca vidrio para traza |"
+    },
+    {
+      "id": "t36-q70",
+      "pregunta": "Mientras se llena un recipiente conforme al protocolo de muestreo para Legionella, ¿qué detalle de llenado se indica expresamente para las muestras de ese apartado?",
+      "opciones": [
+        "Dejar la mitad del recipiente vacía en todos los casos.",
+        "Dejar una pequeña cámara de aire.",
+        "Llenarlo siempre a rebose sin cámara."
+      ],
+      "correcta": 1,
+      "explicacion": "El protocolo del anexo VI para Legionella prevé una pequeña cámara de aire.",
+      "fuente": "Real Decreto 487/2022, anexo VI, toma de muestras para Legionella · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**El envase (parte A.1):** *«envases de un tamaño que garantice el volumen mínimo… **ESTÉRILES de polietileno o similar**, con **cierre hermético** y siempre debe dejarse una pequeña **cámara de aire**… **Añadir el neutralizante**, si el envase no lo incluye, y una vez cerrado, hay que **voltear el envase varias veces**»*. Los envases deben cumplir el **punto 4.2.3 «Inactivación de desinfectantes» de la UNE-EN ISO 19458:2007**."
+    },
+    {
+      "id": "t36-q71",
+      "pregunta": "Para una muestra compuesta de 1500 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 2:3. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "900 mL.",
+        "750 mL.",
+        "600 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La primera fracción representa 2/(2 + 3) del volumen compuesto: 600 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q72",
+      "pregunta": "Para una muestra compuesta de 900 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 1:2. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "300 mL.",
+        "450 mL.",
+        "600 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "La primera fracción representa 1/(1 + 2) del volumen compuesto: 300 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q73",
+      "pregunta": "Para una muestra compuesta de 1200 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 5:3. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "450 mL.",
+        "750 mL.",
+        "600 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "La primera fracción representa 5/(5 + 3) del volumen compuesto: 750 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q74",
+      "pregunta": "Para una muestra compuesta de 2400 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 4:2. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "1600 mL.",
+        "1200 mL.",
+        "800 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "La primera fracción representa 4/(4 + 2) del volumen compuesto: 1600 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q75",
+      "pregunta": "Para una muestra compuesta de 600 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 3:5. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "375 mL.",
+        "300 mL.",
+        "225 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La primera fracción representa 3/(3 + 5) del volumen compuesto: 225 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q76",
+      "pregunta": "Para una muestra compuesta de 2000 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 9:7. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "1000 mL.",
+        "1125 mL.",
+        "875 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "La primera fracción representa 9/(9 + 7) del volumen compuesto: 1125 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q77",
+      "pregunta": "Para una muestra compuesta de 1800 mL se mezclan alícuotas de dos intervalos iguales, cuyos caudales medios están en proporción 7:5. Si los volúmenes se asignan proporcionalmente al caudal, ¿cuánto aporta el primer intervalo?",
+      "opciones": [
+        "750 mL.",
+        "900 mL.",
+        "1050 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La primera fracción representa 7/(7 + 5) del volumen compuesto: 1050 mL.",
+      "fuente": "ISO 5667-10, finalidad del muestreo compuesto proporcional al caudal; ejemplo de reparto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q78",
+      "pregunta": "Se combinan varias alícuotas tomadas durante el turno para obtener un resultado que represente ese período. ¿Qué clase de muestra se prepara?",
+      "opciones": [
+        "Muestra compuesta.",
+        "Blanco de equipo.",
+        "Muestra puntual única."
+      ],
+      "correcta": 0,
+      "explicacion": "Una muestra compuesta reúne submuestras de distintos momentos o lugares conforme al plan.",
+      "fuente": "ISO 5667-10, orientación para el muestreo de aguas residuales · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |"
+    },
+    {
+      "id": "t36-q79",
+      "pregunta": "¿Qué decisión debe tomarse antes de elegir si se purga o desinfecta un grifo para un análisis microbiológico?",
+      "opciones": [
+        "Elegir el tamaño de etiqueta atendiendo únicamente al color del grifo.",
+        "Definir qué parte del sistema y qué condiciones se quieren representar.",
+        "Fijar un procedimiento idéntico para todos los objetivos."
+      ],
+      "correcta": 1,
+      "explicacion": "La ISO 19458 distingue procedimientos según se quiera evaluar la red, el agua entregada por el grifo u otra condición de uso.",
+      "fuente": "Real Decreto 3/2023, anexo III, parte A; ISO 19458, objetivos del muestreo en grifo · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**Y AQUÍ ESTÁ EL DATO QUE CIERRA EL CÍRCULO CON EL TEMA 33.** El RD 3/2023, anexo III, parte A.1.c, no dice «tómese una muestra»: dice que el muestreo microbiológico en el grifo del usuario se haga con arreglo a la UNE-EN ISO 19458 *«con el objetivo de caracterizar cualquier tipo de contaminación, su nivel y sus variaciones… **(muestreo con objetivo b))**»*."
+    },
+    {
+      "id": "t36-q80",
+      "pregunta": "Se toman cuatro envases en lugares distintos y se envían juntos. ¿Qué dato de rotulación evita asignar los resultados a otro lugar?",
+      "opciones": [
+        "Una identificación inequívoca enlazada con el registro de toma.",
+        "La hora impresa en un único envase para todo el lote.",
+        "El nombre genérico del analito en los cuatro envases, sin código."
+      ],
+      "correcta": 0,
+      "explicacion": "El código de cada envase permite relacionarlo con su punto, hora y documentación.",
+      "fuente": "Instituto de Toxicología de la Defensa, instrucciones de toma y envío de muestras · apunte §2.11",
+      "apartado": "2.11",
+      "evidencia": "- **El envase, marcado ANTES de la toma** con **rotulador resistente al agua**, con una referencia que permita identificarla sin ambigüedad."
+    },
+    {
+      "id": "t36-q81",
+      "pregunta": "Para un analito sensible al material del recipiente, ¿qué gobierna la elección entre vidrio y plástico?",
+      "opciones": [
+        "El color de la tapa como único criterio.",
+        "La obligación general de usar siempre el material más pesado.",
+        "La compatibilidad del envase con el analito y el procedimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "El material de envase se elige para evitar pérdidas o contaminación conforme al ensayo previsto.",
+      "fuente": "ISO 5667-3, conservación y manipulación de muestras; criterio operativo del apunte · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- *«**Para la determinación de elementos traza NO deben utilizarse envases de vidrio.**»*"
     }
   ],
   "supuestos": [
