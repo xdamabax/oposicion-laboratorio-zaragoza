@@ -2232,6 +2232,454 @@
       "fuente": "SCA (2017), 6.10 · apunte §3.2",
       "apartado": "3.2",
       "evidencia": "Si el polvo está apelmazado, agrietado o ha cambiado de color, no se usa."
+    },
+    {
+      "id": "t17-q114",
+      "pregunta": "En el control cualitativo de un medio, ¿qué significa la puntuación 2?",
+      "opciones": [
+        "Que crece poco.",
+        "Que no crece.",
+        "Que crece bien."
+      ],
+      "correcta": 2,
+      "explicacion": "La escala es 0 = no crece, 1 = crece poco y 2 = crece bien.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "0 = no crece; 1 = crece poco; 2 = crece bien"
+    },
+    {
+      "id": "t17-q115",
+      "pregunta": "¿Cómo se valora el control cualitativo de un medio?",
+      "opciones": [
+        "A ojo, puntuando el crecimiento del diana.",
+        "Contando las colonias de la placa.",
+        "Midiendo la turbidez del caldo."
+      ],
+      "correcta": 0,
+      "explicacion": "Contar colonias es el control cuantitativo; el cualitativo solo responde a si crece o no.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se siembra el diana y se puntúa a ojo"
+    },
+    {
+      "id": "t17-q116",
+      "pregunta": "¿Qué ejemplo de control cualitativo recoge la figura de la guía británica?",
+      "opciones": [
+        "E. coli en MacConkey con puntuación 16.",
+        "Salmonella en agar XLD con puntuación 2.",
+        "Legionella en GVPC con PR 0,7."
+      ],
+      "correcta": 1,
+      "explicacion": "Las puntuaciones de 16 son del control semicuantitativo y la PR, del cuantitativo.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La figura de la guía es Salmonella en agar XLD con puntuación 2."
+    },
+    {
+      "id": "t17-q117",
+      "pregunta": "En el control semicuantitativo, ¿de dónde se toma el inóculo de cada cuarto?",
+      "opciones": [
+        "De una colonia aislada en placa.",
+        "De un material de referencia liofilizado sin reconstituir.",
+        "De un cultivo en caldo."
+      ],
+      "correcta": 2,
+      "explicacion": "Se siembra con asa de 1 µL desde el caldo, y se hacen cuatro estrías sin recargar el asa.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Cada cuarto se siembra desde un cultivo en caldo con un asa de 1 µL"
+    },
+    {
+      "id": "t17-q118",
+      "pregunta": "¿Por qué la guía llama «siembra y dilución» al control semicuantitativo?",
+      "opciones": [
+        "Porque la muestra se diluye en serie antes de sembrar.",
+        "Porque, al no recargar el asa, cada estría diluye el inóculo.",
+        "Porque el medio se diluye con agua de ósmosis inversa."
+      ],
+      "correcta": 1,
+      "explicacion": "Un medio que crece bien da colonias hasta en las últimas estrías; uno pobre deja de darlas antes.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "como el asa no se recarga, cada estría diluye el inóculo"
+    },
+    {
+      "id": "t17-q119",
+      "pregunta": "En el control semicuantitativo, ¿cómo se puntúa cada línea con crecimiento?",
+      "opciones": [
+        "Con 2 puntos.",
+        "Con 4 puntos, uno por cuarto.",
+        "Con 1 punto."
+      ],
+      "correcta": 2,
+      "explicacion": "Son 16 líneas en total, así que el máximo es 16.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Cada línea con crecimiento puntúa 1: el máximo es 16."
+    },
+    {
+      "id": "t17-q120",
+      "pregunta": "Un medio da crecimiento en 3 estrías de un cuarto, 2 de otro, 4 del tercero y 2 del cuarto. ¿Qué puntuación semicuantitativa tiene y qué pasa con el mínimo de 8?",
+      "opciones": [
+        "11 puntos: supera el mínimo.",
+        "4 puntos: no llega al mínimo.",
+        "16 puntos: es el máximo posible."
+      ],
+      "correcta": 0,
+      "explicacion": "3 + 2 + 4 + 2 = 11, por encima del mínimo de 8 que fija el laboratorio.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El laboratorio fija un mínimo, por ejemplo 8 de 16, para dar el medio por bueno."
+    },
+    {
+      "id": "t17-q121",
+      "pregunta": "En el control semicuantitativo de un medio, un lote da 6 puntos y el laboratorio tiene fijado el mínimo en 8. ¿Qué procede?",
+      "opciones": [
+        "Darlo por bueno: hay crecimiento en 6 estrías.",
+        "Repetir solo el control de esterilidad.",
+        "No dar el lote por bueno."
+      ],
+      "correcta": 2,
+      "explicacion": "El mínimo es el criterio de aceptación: por debajo, el medio no pasa el control.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "por ejemplo 8 de 16, para dar el medio por bueno"
+    },
+    {
+      "id": "t17-q122",
+      "pregunta": "En el ejemplo de la guía, ¿cómo se controla el caldo lauril sulfato de membrana?",
+      "opciones": [
+        "Se siembra, se incuba 18 h a 37 °C y se pasa a un agar nutritivo para puntuarlo.",
+        "Se siembra y se puntúa directamente en el caldo, por su turbidez.",
+        "Se filtra por membrana y se cuentan las colonias."
+      ],
+      "correcta": 0,
+      "explicacion": "Es un medio líquido: hay que pasarlo a un medio sólido para poder puntuar las estrías.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "el caldo lauril sulfato de membrana se siembra, se incuba 18 h a 37 °C y se pasa a un agar nutritivo para puntuarlo"
+    },
+    {
+      "id": "t17-q123",
+      "pregunta": "¿Qué puntuación tiene la figura de la guía con E. coli en MacConkey que crece en todas las estrías?",
+      "opciones": [
+        "8.",
+        "16.",
+        "2."
+      ],
+      "correcta": 1,
+      "explicacion": "La otra figura de la guía es la misma combinación con puntuación 2, en la que casi no crece.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "E. coli en MacConkey con puntuación 16 (crece en las 16 estrías) y con puntuación 2 (casi nada)"
+    },
+    {
+      "id": "t17-q124",
+      "pregunta": "Si el control semicuantitativo saliera con tres estrías por cuarto en vez de cuatro, ¿cuál sería la puntuación máxima?",
+      "opciones": [
+        "16, porque el máximo no depende de las estrías.",
+        "9, una por cuarto menos.",
+        "12, en lugar de 16."
+      ],
+      "correcta": 2,
+      "explicacion": "El máximo es el número de líneas: 4 cuartos × 4 estrías = 16 en el procedimiento de la guía.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "sin recargar ni flamear el asa. Salen 16 líneas."
+    },
+    {
+      "id": "t17-q125",
+      "pregunta": "En el control cuantitativo de un medio, ¿qué se siembra?",
+      "opciones": [
+        "Un cultivo en caldo sin cuantificar.",
+        "Una suspensión con un número conocido de células.",
+        "Una colonia aislada por estrías."
+      ],
+      "correcta": 1,
+      "explicacion": "Se siembra en superficie o por filtración de membrana, y se cuentan las colonias.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se siembra una suspensión con un número conocido de células, en superficie o por filtración de membrana, y se cuentan las colonias."
+    },
+    {
+      "id": "t17-q126",
+      "pregunta": "Un medio selectivo da 38 colonias y el no selectivo, 90. ¿Pasa el control cuantitativo con el criterio del 50 %?",
+      "opciones": [
+        "No: la recuperación es del 42 %.",
+        "Sí: la recuperación es del 42 %, por encima del mínimo.",
+        "Sí: basta con que crezca algo en el selectivo."
+      ],
+      "correcta": 0,
+      "explicacion": "38 ÷ 90 = 0,42, es decir, un 42 %: por debajo del 50 %, el medio se desecha.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "si llega al menos al 50 % (o al objetivo que fije el laboratorio), el medio vale; si queda por debajo, se desecha"
+    },
+    {
+      "id": "t17-q127",
+      "pregunta": "En el medio no selectivo crecen 120 colonias. ¿Cuántas hacen falta como mínimo en el selectivo para llegar al 50 %?",
+      "opciones": [
+        "12.",
+        "60.",
+        "84."
+      ],
+      "correcta": 1,
+      "explicacion": "El 50 % de 120 es 60. Las 84 serían el 70 %, que es la PR exigida al GVPC de Legionella.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se compara el recuento en el medio selectivo con el del medio no selectivo"
+    },
+    {
+      "id": "t17-q128",
+      "pregunta": "Un lote de GVPC para Legionella da 56 colonias y el lote ya validado, 80. ¿Cumple la PR de 0,7?",
+      "opciones": [
+        "No: la PR es 0,56.",
+        "No: la PR debe ser 1,0.",
+        "Sí: la PR es exactamente 0,70."
+      ],
+      "correcta": 2,
+      "explicacion": "56 ÷ 80 = 0,7, el 70 % de recuperación que exige la guía para ese medio.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "GVPC para Legionella, la guía exige PR = 0,7 (un 70 % de recuperación)"
+    },
+    {
+      "id": "t17-q129",
+      "pregunta": "Además de comparar el selectivo con el no selectivo, ¿qué alternativa ofrece la ISO 11133 para el control cuantitativo?",
+      "opciones": [
+        "La ratio de productividad (PR).",
+        "El índice de dispersión (D²).",
+        "La puntuación de 16 estrías."
+      ],
+      "correcta": 0,
+      "explicacion": "El D² compara dos submuestras duplicadas y las 16 estrías son el control semicuantitativo.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Alternativa de la ISO 11133: la ratio de productividad (PR)"
+    },
+    {
+      "id": "t17-q130",
+      "pregunta": "Además del mínimo de recuperación, ¿qué otro límite debe fijar el laboratorio?",
+      "opciones": [
+        "Un límite superior de recuperación o de PR.",
+        "Un límite inferior de pH del medio.",
+        "Un número máximo de lotes al mes."
+      ],
+      "correcta": 0,
+      "explicacion": "La guía pide fijarlo, pero no da su valor: es una de las dudas declaradas del tema.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "También debe fijarse un límite superior de recuperación o de PR. La guía no da su valor."
+    },
+    {
+      "id": "t17-q131",
+      "pregunta": "¿Qué control NO necesitan los medios nutritivos no selectivos?",
+      "opciones": [
+        "El semicuantitativo.",
+        "El de esterilidad.",
+        "El cuantitativo."
+      ],
+      "correcta": 2,
+      "explicacion": "Sí se controlan de forma semicuantitativa; el cuantitativo es el propio de los selectivos.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Los medios nutritivos (no selectivos) no necesitan control cuantitativo, pero sí se controlan de forma semicuantitativa."
+    },
+    {
+      "id": "t17-q132",
+      "pregunta": "En el control cuantitativo de un medio selectivo, ¿qué debe hacer el no diana?",
+      "opciones": [
+        "Crecer por debajo del 50 %.",
+        "No crecer.",
+        "Crecer con aspecto atípico."
+      ],
+      "correcta": 1,
+      "explicacion": "En el control cuantitativo la exigencia es que no crezca.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "No diana: en el control cuantitativo, el no diana no debe crecer."
+    },
+    {
+      "id": "t17-q133",
+      "pregunta": "¿Qué puede usarse como suspensión de control estable en el control cuantitativo de un medio?",
+      "opciones": [
+        "Un material de referencia comercial o un cultivo en caldo incubado siempre igual.",
+        "Una colonia tomada de la placa del día anterior.",
+        "Un agua natural con el diana."
+      ],
+      "correcta": 0,
+      "explicacion": "El agua natural sirve como control, pero no se sabe cuántos microorganismos lleva.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Puede ser un material de referencia comercial o un cultivo en caldo incubado siempre igual"
+    },
+    {
+      "id": "t17-q134",
+      "pregunta": "¿Qué dos formas de sembrar admite el control cuantitativo de un medio?",
+      "opciones": [
+        "En profundidad o por picadura.",
+        "En estrías por cuatro cuartos.",
+        "En superficie o por filtración de membrana."
+      ],
+      "correcta": 2,
+      "explicacion": "Las estrías por cuartos son el control semicuantitativo.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "en superficie o por filtración de membrana, y se cuentan las colonias"
+    },
+    {
+      "id": "t17-q135",
+      "pregunta": "¿Qué hay que evaluar de un medio comprado listo para usar antes de utilizarlo?",
+      "opciones": [
+        "Solo la fecha de caducidad y el aspecto.",
+        "La recuperación del diana, la inhibición del no diana y las propiedades físicas y bioquímicas.",
+        "Solo el certificado del fabricante."
+      ],
+      "correcta": 1,
+      "explicacion": "El certificado basta cuando el fabricante tiene un sistema de calidad reconocido y controla según la ISO 11133.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "recuperación del diana, inhibición del no diana y propiedades físicas y bioquímicas"
+    },
+    {
+      "id": "t17-q136",
+      "pregunta": "¿Qué debe hacer el laboratorio con cada fabricante nuevo de medios listos para usar?",
+      "opciones": [
+        "Una auditoría en sus instalaciones.",
+        "Una intercomparación con otro laboratorio.",
+        "Pruebas iniciales."
+      ],
+      "correcta": 2,
+      "explicacion": "Además revisa el certificado y sigue con su control interno.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "hacer pruebas iniciales con cada fabricante nuevo y seguir el control interno"
+    },
+    {
+      "id": "t17-q137",
+      "pregunta": "¿Cuál de estos datos debe dar el fabricante de un medio listo para usar?",
+      "opciones": [
+        "El número de lotes fabricados al año.",
+        "El crecimiento de los organismos de control con su referencia de colección.",
+        "El resultado de su última auditoría."
+      ],
+      "correcta": 1,
+      "explicacion": "La lista incluye composición, vida útil, conservación, control de esterilidad, organismos de control, controles físicos y fecha de la especificación.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "crecimiento de los organismos de control con su referencia de colección"
+    },
+    {
+      "id": "t17-q138",
+      "pregunta": "Si el fabricante cambia la especificación de un medio, ¿qué debe hacer?",
+      "opciones": [
+        "Avisar.",
+        "Retirar los lotes anteriores.",
+        "Nada: basta con actualizar su web."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una exigencia expresa junto con la lista de datos que debe entregar.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Y debe avisar si cambia la especificación."
+    },
+    {
+      "id": "t17-q139",
+      "pregunta": "¿Qué acompaña a cada lote recibido de un medio listo para usar?",
+      "opciones": [
+        "Una muestra de reserva del lote anterior.",
+        "La prueba de que cumple.",
+        "El informe de la última intercomparación."
+      ],
+      "correcta": 1,
+      "explicacion": "Con esa documentación el laboratorio puede limitarse a revisar el certificado y seguir su control interno.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Cada lote recibido viene con la prueba de que cumple."
+    },
+    {
+      "id": "t17-q140",
+      "pregunta": "¿Qué norma de sistemas de calidad se cita para el fabricante de medios?",
+      "opciones": [
+        "La ISO 9000.",
+        "La ISO 11133.",
+        "La ISO 17043."
+      ],
+      "correcta": 0,
+      "explicacion": "La ISO 11133 es la del control de medios y la 17043, la de los proveedores de ensayos de aptitud.",
+      "fuente": "Eurachem (2023), 8.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Si el fabricante tiene un sistema de calidad reconocido (ISO 9000) y controla sus medios según la ISO 11133"
+    },
+    {
+      "id": "t17-q141",
+      "pregunta": "¿Cuándo se comprueba un lote de reactivo crítico?",
+      "opciones": [
+        "Solo antes de usarlo.",
+        "Solo cuando da un resultado dudoso.",
+        "Antes de usarlo y durante su vida útil."
+      ],
+      "correcta": 2,
+      "explicacion": "Se comprueba con organismos de control positivo y negativo de colecciones reconocidas.",
+      "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "Cada lote de un reactivo crítico se comprueba antes de usarlo y durante su vida útil"
+    },
+    {
+      "id": "t17-q142",
+      "pregunta": "¿De dónde deben proceder los organismos con que se comprueba un reactivo crítico?",
+      "opciones": [
+        "De colecciones reconocidas.",
+        "De aislados propios de muestras recientes.",
+        "Del lote anterior del mismo reactivo."
+      ],
+      "correcta": 0,
+      "explicacion": "Los aislados propios sirven para control y formación, pero los organismos de control de los reactivos vienen de colecciones.",
+      "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "con organismos de control positivo y negativo procedentes de colecciones reconocidas"
+    },
+    {
+      "id": "t17-q143",
+      "pregunta": "¿Qué debe llevar la etiqueta de un reactivo?",
+      "opciones": [
+        "Solo la identidad y la caducidad.",
+        "Identidad, concentración, conservación, fecha de apertura, fecha de preparación y caducidad.",
+        "El nombre del analista que lo va a usar."
+      ],
+      "correcta": 1,
+      "explicacion": "Quién lo preparó no va en la etiqueta, sino en los registros.",
+      "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "Etiqueta: identidad, concentración, conservación, fecha de apertura, fecha de preparación y caducidad."
+    },
+    {
+      "id": "t17-q144",
+      "pregunta": "¿Dónde debe constar quién preparó un reactivo?",
+      "opciones": [
+        "En la etiqueta del frasco.",
+        "En el certificado del fabricante.",
+        "En los registros."
+      ],
+      "correcta": 2,
+      "explicacion": "La etiqueta lleva identidad, concentración, conservación y fechas.",
+      "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "Quién lo preparó debe constar en los registros."
+    },
+    {
+      "id": "t17-q145",
+      "pregunta": "En el ejemplo de la EPA para la oxidasa, ¿cuál es el control positivo?",
+      "opciones": [
+        "Escherichia coli.",
+        "Pseudomonas aeruginosa.",
+        "Enterococcus faecalis."
+      ],
+      "correcta": 1,
+      "explicacion": "E. coli es el control negativo de la oxidasa; E. faecalis es el control negativo del método de E. coli en mTEC.",
+      "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "Ejemplo de la EPA para la oxidasa: control positivo Pseudomonas aeruginosa, control negativo E. coli"
     }
   ],
   "supuestos": [
