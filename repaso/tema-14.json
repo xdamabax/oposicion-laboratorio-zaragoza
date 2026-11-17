@@ -1741,6 +1741,524 @@
       "fuente": "OMS, Manual of basic techniques for a health laboratory, 2.ª ed., tinción de Albert · apunte §8.4",
       "apartado": "8.4",
       "evidencia": "La **tinción de Albert** pone de manifiesto los **gránulos de volutina** (polifosfato) de ***Corynebacterium diphtheriae***. Se ven **bacilos verdes con gránulos verde-negros**, en filas o en **letras chinas** (OMS)."
+    },
+    {
+      "id": "t14-q90",
+      "pregunta": "Según la OMS, ¿qué aporta el examen microscópico en un líquido normalmente estéril?",
+      "opciones": [
+        "La identificación de la especie, sin necesidad de cultivo.",
+        "Una forma rápida y eficaz de ver si hay bacterias y de orientar el diagnóstico y el tratamiento.",
+        "El antibiograma de la bacteria presente."
+      ],
+      "correcta": 1,
+      "explicacion": "Orienta, pero la identificación precisa necesita el cultivo; la sensibilidad a los antibióticos es otro ensayo.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "es una forma rápida y eficaz de ver si hay bacterias en líquidos normalmente estériles"
+    },
+    {
+      "id": "t14-q91",
+      "pregunta": "¿Qué ejemplos da la OMS de examen microscópico que orienta el diagnóstico?",
+      "opciones": [
+        "El líquido cefalorraquídeo en las meningitis y el esputo en la tuberculosis.",
+        "El hemocultivo y el urocultivo.",
+        "El agua de consumo y el agua de piscina."
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos muestras en las que ver bacterias al microscopio cambia la actuación inmediata.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "el examen del líquido cefalorraquídeo en las meningitis o el del esputo en la tuberculosis"
+    },
+    {
+      "id": "t14-q92",
+      "pregunta": "En una preparación en fresco, ¿en qué estado están las células?",
+      "opciones": [
+        "Muertas por el calor de la fijación.",
+        "Vivas, en una gota de líquido entre porta y cubre.",
+        "Secas y coloreadas sobre el porta."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación fijada y teñida es la otra: extendida, seca, fijada al porta y coloreada.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "En fresco: la muestra en una gota de líquido, entre porta y cubre. Células vivas."
+    },
+    {
+      "id": "t14-q93",
+      "pregunta": "¿Qué pasos definen una preparación fijada y teñida?",
+      "opciones": [
+        "La muestra en una gota de líquido entre porta y cubre.",
+        "La muestra sembrada en agar semisólido por picadura.",
+        "La muestra extendida, seca, fijada al porta y coloreada."
+      ],
+      "correcta": 2,
+      "explicacion": "Son los cuatro pasos del frotis; la gota entre porta y cubre es la preparación en fresco.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Fijada y teñida: la muestra extendida, seca, fijada al porta y coloreada."
+    },
+    {
+      "id": "t14-q94",
+      "pregunta": "Se ven bacilos al microscopio en una muestra. ¿Basta para identificar la especie?",
+      "opciones": [
+        "Sí, si se usa el objetivo de inmersión.",
+        "Sí, si además se hace una tinción de Gram.",
+        "No: la identificación precisa necesita el cultivo."
+      ],
+      "correcta": 2,
+      "explicacion": "El Gram da la reacción y la morfología, pero la especie se identifica después del cultivo.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "No basta para identificar una especie: la identificación precisa necesita el cultivo."
+    },
+    {
+      "id": "t14-q95",
+      "pregunta": "¿Qué forma bacteriana es un bastón corto?",
+      "opciones": [
+        "El vibrio.",
+        "El cocobacilo.",
+        "El espirilo."
+      ],
+      "correcta": 1,
+      "explicacion": "El vibrio es un bastón curvo y el espirilo, una espiral.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Vibrio | Bastón curvo | | Cocobacilo | Bastón corto |"
+    },
+    {
+      "id": "t14-q96",
+      "pregunta": "¿Cómo se describe la forma de una espiroqueta?",
+      "opciones": [
+        "Espiral larga, laxa y helicoidal.",
+        "Espiral corta y rígida.",
+        "Bastón curvo en forma de coma."
+      ],
+      "correcta": 0,
+      "explicacion": "El espirilo es la espiral más corta y rígida; el bastón curvo es el vibrio.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Espiroqueta | Espiral larga, laxa y helicoidal |"
+    },
+    {
+      "id": "t14-q97",
+      "pregunta": "Una bacteria redonda recibe el nombre de:",
+      "opciones": [
+        "Bacilo.",
+        "Coco.",
+        "Vibrio."
+      ],
+      "correcta": 1,
+      "explicacion": "El bacilo tiene forma de bastón y el vibrio, de bastón curvo.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "Formas (OpenStax): | Forma | Descripción | | --- | --- | | Coco | Redondo |"
+    },
+    {
+      "id": "t14-q98",
+      "pregunta": "Al microscopio se ven cuatro cocos dispuestos en cuadrado. ¿Qué agrupación es?",
+      "opciones": [
+        "Un diplococo.",
+        "Un estreptococo.",
+        "Una tétrada."
+      ],
+      "correcta": 2,
+      "explicacion": "El diplococo es una pareja y el estreptococo, una cadena.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Tétrada | Cuatro cocos en cuadrado |"
+    },
+    {
+      "id": "t14-q99",
+      "pregunta": "¿Qué agrupación forman los cocos en cadenas?",
+      "opciones": [
+        "Estreptococo.",
+        "Estafilococo.",
+        "Estreptobacilo."
+      ],
+      "correcta": 0,
+      "explicacion": "Los racimos de cocos son estafilococos; las cadenas de bacilos, estreptobacilos.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Estreptococo | Cadenas de cocos |"
+    },
+    {
+      "id": "t14-q100",
+      "pregunta": "Se observan parejas de bacilos. ¿Cómo se llama esa agrupación?",
+      "opciones": [
+        "Diplococo.",
+        "Diplobacilo.",
+        "Empalizada."
+      ],
+      "correcta": 1,
+      "explicacion": "El diplococo es una pareja de cocos y la empalizada, bacilos en formaciones en V o en L.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Diplobacilo | Parejas de bacilos |"
+    },
+    {
+      "id": "t14-q101",
+      "pregunta": "¿Qué es una empalizada en la descripción de las agrupaciones bacterianas?",
+      "opciones": [
+        "Cocos pegados de cuatro en cuatro.",
+        "Bacilos en cadena larga y recta.",
+        "Bacilos en formaciones en V o en L."
+      ],
+      "correcta": 2,
+      "explicacion": "Las cadenas de bacilos son estreptobacilos; los cuatro cocos en cuadrado, una tétrada.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Empalizada | Bacilos en formaciones en V o en L |"
+    },
+    {
+      "id": "t14-q102",
+      "pregunta": "Al microscopio se ven cocos en parejas. ¿Cómo se llama esa agrupación?",
+      "opciones": [
+        "Diplococo.",
+        "Diplobacilo.",
+        "Tétrada."
+      ],
+      "correcta": 0,
+      "explicacion": "El diplobacilo es una pareja de bacilos y la tétrada, cuatro cocos en cuadrado.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Diplococo | Parejas de cocos |"
+    },
+    {
+      "id": "t14-q103",
+      "pregunta": "¿Cuánto miden de largo los bacilos ácido-alcohol resistentes?",
+      "opciones": [
+        "De 0,01 a 0,2 µm.",
+        "De 20 a 100 µm.",
+        "De 0,5 a 10 µm."
+      ],
+      "correcta": 2,
+      "explicacion": "Están muy por encima del límite de resolución del microscopio óptico, unos 0,2 µm.",
+      "fuente": "OpenStax, Microbiology (2016), 3.3; OMS (2003), 5.3 · apunte §2",
+      "apartado": "2",
+      "evidencia": "los bacilos ácido-alcohol resistentes miden de 0,5 a 10 µm de largo"
+    },
+    {
+      "id": "t14-q104",
+      "pregunta": "En la observación en fresco, ¿qué se busca sobre todo?",
+      "opciones": [
+        "La movilidad, además de la forma y la agrupación.",
+        "La reacción de Gram.",
+        "La presencia de esporas en el interior de la célula."
+      ],
+      "correcta": 0,
+      "explicacion": "El Gram y las esporas exigen frotis fijado y teñido; el fresco mantiene las células vivas y en movimiento.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Sobre todo la movilidad, además de la forma y la agrupación."
+    },
+    {
+      "id": "t14-q105",
+      "pregunta": "¿A cuántos aumentos se examina una preparación en fresco?",
+      "opciones": [
+        "A 100.",
+        "A 400.",
+        "A 1000, con objetivo de inmersión."
+      ],
+      "correcta": 1,
+      "explicacion": "El fresco y la gota pendiente se miran a ×400; la inmersión se reserva para los frotis teñidos.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Con qué microscopio: se examinan a 400 aumentos"
+    },
+    {
+      "id": "t14-q106",
+      "pregunta": "¿Qué dos técnicas de microscopía cita el apunte para compensar el bajo contraste de una preparación en fresco?",
+      "opciones": [
+        "La fluorescencia y la inmersión en aceite.",
+        "El contraste de fases y el campo oscuro.",
+        "El campo claro y la cámara de recuento."
+      ],
+      "correcta": 1,
+      "explicacion": "La fluorescencia se usa con la auramina, y la inmersión, en los frotis teñidos.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3",
+      "apartado": "3",
+      "evidencia": "El contraste natural es bajo: por eso se usan el contraste de fases o el campo oscuro"
+    },
+    {
+      "id": "t14-q107",
+      "pregunta": "Además de la movilidad, ¿qué dos datos aporta la observación en fresco?",
+      "opciones": [
+        "La forma y la agrupación.",
+        "La reacción de Gram y la ácido-alcohol resistencia.",
+        "La presencia de cápsula y de flagelos teñidos."
+      ],
+      "correcta": 0,
+      "explicacion": "El fresco no tiñe nada: las reacciones de Gram y de ácido-alcohol resistencia y las tinciones de estructuras necesitan frotis fijado.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Sobre todo la movilidad, además de la forma y la agrupación."
+    },
+    {
+      "id": "t14-q108",
+      "pregunta": "Al montar una preparación entre porta y cubre, ¿qué hay que evitar al colocar el cubreobjetos?",
+      "opciones": [
+        "Que el cubre toque el líquido.",
+        "Que la gota quede en el centro del porta.",
+        "Que queden burbujas."
+      ],
+      "correcta": 2,
+      "explicacion": "El cubre se coloca con cuidado y sin burbujas; la gota va justo en el centro del porta.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Se coloca el cubreobjetos con cuidado, sin burbujas."
+    },
+    {
+      "id": "t14-q109",
+      "pregunta": "¿Qué cantidad de cultivo líquido se pone entre porta y cubre?",
+      "opciones": [
+        "Una gota pequeña, en el centro del portaobjetos.",
+        "Un asa llena extendida en espiral.",
+        "Medio mililitro repartido por todo el porta."
+      ],
+      "correcta": 0,
+      "explicacion": "Con más líquido el cubre flota y la preparación no se puede enfocar.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Una gota pequeña de cultivo líquido en el centro del portaobjetos."
+    },
+    {
+      "id": "t14-q110",
+      "pregunta": "¿Qué portaobjetos pide la técnica de la gota pendiente?",
+      "opciones": [
+        "Uno esmerilado en los dos extremos.",
+        "Uno de doble grosor, sin cubreobjetos.",
+        "Uno excavado, con una depresión central."
+      ],
+      "correcta": 2,
+      "explicacion": "Si no hay porta excavado se improvisa un anillo de vaselina o de plastilina en un porta normal.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Portaobjetos excavado, con una depresión central."
+    },
+    {
+      "id": "t14-q111",
+      "pregunta": "En la gota pendiente, ¿para qué se humedecen con agua los cuatro bordes del cubreobjetos?",
+      "opciones": [
+        "Para diluir el cultivo y frenar las bacterias.",
+        "Para que el cubre se pegue al porta.",
+        "Para que el agua haga de líquido de inmersión."
+      ],
+      "correcta": 1,
+      "explicacion": "La vaselina sirve igual para pegarlo y además retrasa la desecación.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Humedecer los cuatro bordes del cubreobjetos con agua para que se pegue."
+    },
+    {
+      "id": "t14-q112",
+      "pregunta": "En la gota pendiente, ¿dónde se deposita la gota de cultivo?",
+      "opciones": [
+        "En el centro del cubreobjetos.",
+        "En el fondo de la excavación del porta.",
+        "En un borde del porta, para extenderla luego."
+      ],
+      "correcta": 0,
+      "explicacion": "Al invertir el porta excavado sobre el cubre y darle la vuelta, la gota queda colgando del cubre.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Una gota pequeña de cultivo en el centro del cubreobjetos."
+    },
+    {
+      "id": "t14-q113",
+      "pregunta": "Tras dar la vuelta a la preparación de gota pendiente, la gota debe quedar:",
+      "opciones": [
+        "Apoyada en el fondo de la excavación.",
+        "Colgando del cubre dentro de la excavación, sin tocar el fondo.",
+        "Extendida en una película fina entre porta y cubre."
+      ],
+      "correcta": 1,
+      "explicacion": "Si toca el fondo deja de estar pendiente y las bacterias quedan atrapadas.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "la gota queda colgando del cubre dentro de la excavación, sin tocar el fondo"
+    },
+    {
+      "id": "t14-q114",
+      "pregunta": "¿Qué puede ocurrir si se pone demasiada vaselina al montar una gota pendiente?",
+      "opciones": [
+        "Que la gota se seque antes de poder observarla.",
+        "Que el cubreobjetos no llegue a pegarse.",
+        "Que se desplace al centro y se mezcle con la gota, o que salga por los bordes y manche el objetivo."
+      ],
+      "correcta": 2,
+      "explicacion": "La vaselina en su justa cantidad pega el cubre y retrasa la desecación; de más, estorba y ensucia.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "con demasiada vaselina, se desplaza hacia el centro y se mezcla con la gota"
+    },
+    {
+      "id": "t14-q115",
+      "pregunta": "En la secuencia de la gota pendiente, ¿qué se hace justo después de poner la gota en el cubreobjetos?",
+      "opciones": [
+        "Dar la vuelta al cubre sobre la mesa.",
+        "Invertir el porta excavado sobre el cubre.",
+        "Dejar secar la gota al aire."
+      ],
+      "correcta": 1,
+      "explicacion": "El porta excavado se apoya invertido sobre el cubre, que queda pegado; luego se le da la vuelta al conjunto.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Invertir el porta excavado sobre el cubre: el cubre queda pegado."
+    },
+    {
+      "id": "t14-q116",
+      "pregunta": "¿Cómo es el movimiento de una bacteria realmente móvil?",
+      "opciones": [
+        "Organizado: rápido, en zigzag o en volteretas.",
+        "Una vibración alrededor del mismo punto.",
+        "Un desplazamiento lento y siempre en línea recta."
+      ],
+      "correcta": 0,
+      "explicacion": "La vibración en el sitio es el movimiento browniano, que no es movilidad.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Móvil: un movimiento organizado: rápido, en zigzag, en volteretas."
+    },
+    {
+      "id": "t14-q117",
+      "pregunta": "¿Cuándo se informa una cepa como inmóvil en la observación en fresco?",
+      "opciones": [
+        "Cuando el movimiento es lento, aunque haya desplazamiento.",
+        "Cuando las células se desplazan en zigzag.",
+        "Cuando no hay movimiento, o solo movimiento browniano."
+      ],
+      "correcta": 2,
+      "explicacion": "La vibración sin desplazamiento propio no cuenta como movilidad; el zigzag sí es movimiento organizado.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Inmóvil: sin movimiento, o solo movimiento browniano"
+    },
+    {
+      "id": "t14-q118",
+      "pregunta": "Una bacteria se mueve poco y con dificultad. ¿Qué exige su observación?",
+      "opciones": [
+        "Subir a ×1000 con objetivo de inmersión.",
+        "Observar más tiempo células sueltas.",
+        "Calentar la preparación para activar los flagelos."
+      ],
+      "correcta": 1,
+      "explicacion": "En las débilmente móviles hay que fijarse en células aisladas y con paciencia; el calor daña los flagelos.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Las bacterias débilmente móviles exigen observar más tiempo células sueltas."
+    },
+    {
+      "id": "t14-q119",
+      "pregunta": "Un cultivo viejo da una prueba de movilidad negativa. ¿Qué conviene hacer?",
+      "opciones": [
+        "Repetirla con un cultivo fresco.",
+        "Informar la cepa como inmóvil.",
+        "Incubar el mismo cultivo otras 24 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "Los cultivos viejos son menos móviles, así que un negativo con uno viejo no es concluyente.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Los cultivos viejos son menos móviles: se repite con uno fresco."
+    },
+    {
+      "id": "t14-q120",
+      "pregunta": "¿Qué efecto tienen el calor y la agitación sobre la prueba de movilidad?",
+      "opciones": [
+        "Activan los flagelos y dan falsos positivos.",
+        "No influyen si la preparación se mira a ×400.",
+        "Dañan los flagelos y dan falsos negativos."
+      ],
+      "correcta": 2,
+      "explicacion": "Sin flagelos intactos la bacteria no se desplaza, aunque sea móvil.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El calor, la agitación u otros traumatismos dañan los flagelos y dan falsos negativos."
+    },
+    {
+      "id": "t14-q121",
+      "pregunta": "¿Qué bacteria se desplaza deslizándose, sin tener flagelos?",
+      "opciones": [
+        "Capnocytophaga.",
+        "Proteus mirabilis.",
+        "Yersinia enterocolitica."
+      ],
+      "correcta": 0,
+      "explicacion": "Proteus es el control positivo de movilidad por flagelos, y Yersinia depende de la temperatura.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Algunas bacterias sin flagelos se deslizan (Capnocytophaga)."
+    },
+    {
+      "id": "t14-q122",
+      "pregunta": "En la prueba de movilidad en agar semisólido, ¿cómo se siembra?",
+      "opciones": [
+        "En estrías por toda la superficie del medio.",
+        "Por picadura hasta el fondo del tubo.",
+        "Por picadura con aguja recta, hasta dos tercios del medio."
+      ],
+      "correcta": 2,
+      "explicacion": "La picadura llega hasta unos dos tercios para dejar medio por debajo y poder ver si el crecimiento se sale de la línea.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se siembra por picadura con aguja recta, hasta dos tercios del medio"
+    },
+    {
+      "id": "t14-q123",
+      "pregunta": "¿Cuánto se incuba la prueba de movilidad en agar semisólido?",
+      "opciones": [
+        "18-22 horas.",
+        "24-48 horas.",
+        "5-7 días."
+      ],
+      "correcta": 1,
+      "explicacion": "En ese plazo el crecimiento ya se ha extendido si la cepa es móvil.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "hasta dos tercios del medio, y se incuba 24-48 horas"
+    },
+    {
+      "id": "t14-q124",
+      "pregunta": "En un agar semisólido, el crecimiento aparece solo a lo largo de la picadura y el medio queda claro. ¿Qué significa?",
+      "opciones": [
+        "Que la cepa es móvil.",
+        "Que el medio estaba demasiado blando.",
+        "Que la cepa es inmóvil."
+      ],
+      "correcta": 2,
+      "explicacion": "La cepa móvil crece fuera de la línea y enturbia el medio alrededor.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Inmóvil: crece solo a lo largo de la picadura, con el medio claro alrededor."
+    },
+    {
+      "id": "t14-q125",
+      "pregunta": "¿Qué control positivo se usa en la prueba de movilidad en agar semisólido?",
+      "opciones": [
+        "Proteus mirabilis.",
+        "Acinetobacter lwoffii.",
+        "Escherichia coli."
+      ],
+      "correcta": 0,
+      "explicacion": "Acinetobacter lwoffii es el control negativo.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Controles: positivo Proteus mirabilis, negativo Acinetobacter lwoffii."
+    },
+    {
+      "id": "t14-q126",
+      "pregunta": "¿Qué precauciones exige una preparación en fresco de un patógeno como Salmonella?",
+      "opciones": [
+        "Ninguna especial: la muestra va cubierta por el cubreobjetos.",
+        "Guantes, y cabina de seguridad biológica para lo que pueda formar aerosoles.",
+        "Nivel de contención 3 en todos los casos."
+      ],
+      "correcta": 1,
+      "explicacion": "El nivel de contención 3 se reserva para tuberculosis y carbunco.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se usan guantes, y lo que pueda formar aerosoles va a la cabina de seguridad biológica."
     }
   ],
   "supuestos": [
