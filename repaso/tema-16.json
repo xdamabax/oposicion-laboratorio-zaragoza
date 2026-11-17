@@ -3720,6 +3720,440 @@
       "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
       "apartado": "9",
       "evidencia": "Alternativos autorizados: CCA, NMP con sustrato definido, TSC-MUP y Enterolert."
+    },
+    {
+      "id": "t16-q235",
+      "pregunta": "Según el cuadro de cifras, ¿cuánto se incuba el caldo con triptófano de la prueba del indol?",
+      "opciones": [
+        "18-24 horas a 44 °C.",
+        "24-48 horas a 37 °C.",
+        "2-3 horas a 35-37 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Las 2-3 horas a 35-37 °C son la prueba del tubo germinal de las levaduras.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Indol: caldo con triptófano a 37 °C 24-48 h; Kovács, rosa-rojo"
+    },
+    {
+      "id": "t16-q236",
+      "pregunta": "¿Entre qué valores de pH vira el rojo fenol del agar urea?",
+      "opciones": [
+        "De pH 4,4 (amarillo) a pH 6,2 (rosa).",
+        "De pH 8,2 (amarillo) a pH 6,8 (rosa).",
+        "De pH 6,8 (amarillo) a pH 8,2 (rosa)."
+      ],
+      "correcta": 2,
+      "explicacion": "La ureasa libera amoniaco, que sube el pH: por eso el viraje es de amarillo a rosa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Ureasa: rojo fenol, de amarillo (pH 6,8) a rosa (pH 8,2)"
+    },
+    {
+      "id": "t16-q237",
+      "pregunta": "Si la coagulasa en tubo no ha coagulado a las 4 horas a 35-37 °C, ¿qué se hace?",
+      "opciones": [
+        "Dejarlo a temperatura ambiente y volver a leerlo a las 24 horas.",
+        "Informarlo como negativo en ese momento.",
+        "Repetir la prueba en porta."
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos lecturas: hasta 4 horas en estufa y, si no ha coagulado, a las 24 horas a temperatura ambiente.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Coagulasa: porta 10 s; tubo a 35-37 °C, hasta 4 h, y a 24 h a temperatura ambiente"
+    },
+    {
+      "id": "t16-q238",
+      "pregunta": "Se preparan 500 mL de reactivo de oxidasa a la concentración del apunte, el 1 %. ¿Cuánta tetrametil-p-fenilendiamina se pesa?",
+      "opciones": [
+        "5 g.",
+        "1 g.",
+        "50 g."
+      ],
+      "correcta": 0,
+      "explicacion": "El 1 % es 1 g por 100 mL: en 500 mL, 5 g.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Oxidasa: reactivo 1 %; color en 5-10 s"
+    },
+    {
+      "id": "t16-q239",
+      "pregunta": "Se parte de agua oxigenada al 6 % y se quieren 100 mL al 3 % para la catalasa. ¿Cómo se prepara?",
+      "opciones": [
+        "Con 25 mL del 6 % y 75 mL de agua.",
+        "Con 50 mL del 6 % y 50 mL de agua.",
+        "Con 75 mL del 6 % y 25 mL de agua."
+      ],
+      "correcta": 1,
+      "explicacion": "Para bajar del 6 % al 3 % se diluye a la mitad: partes iguales de reactivo y de agua. Las dos concentraciones valen, porque el intervalo es 3-6 %.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Catalasa: H₂O₂ 3-6 %; burbujas inmediatas"
+    },
+    {
+      "id": "t16-q240",
+      "pregunta": "Un cultivo lleva 48 horas en la estufa. ¿Sirve para las pruebas bioquímicas según el cuadro de cifras?",
+      "opciones": [
+        "Sí: el intervalo recomendado es de 24-48 horas.",
+        "Sí, si se reaviva con una gota de suero salino.",
+        "No: se piden cultivos de 18-24 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Los cultivos viejos dan resultados poco fiables.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Cultivos de 18-24 h para las pruebas"
+    },
+    {
+      "id": "t16-q241",
+      "pregunta": "En el cuadro de cifras, ¿qué dato se recoge de la aglutinación en porta?",
+      "opciones": [
+        "Que se balancea 30-60 segundos y se lee sobre fondo negro.",
+        "Que se incuba 18-24 horas a 37 °C.",
+        "Que se lee a los 10 segundos, como la coagulasa."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 10 segundos son los de la coagulasa en porta.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Aglutinación en porta: 30-60 s, fondo negro"
+    },
+    {
+      "id": "t16-q242",
+      "pregunta": "Según el cuadro de cifras, ¿qué temperaturas resume la PCR?",
+      "opciones": [
+        "72 °C, 95 °C y 50 °C, en ese orden.",
+        "37 °C, 44 °C y 55 °C.",
+        "Unos 95 °C, unos 50 °C y 72 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "El orden es desnaturalización (95), hibridación (50) y elongación (72), y se hacen 25-40 ciclos.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "PCR: ~95 °C, ~50 °C, 72 °C; 25-40 ciclos; cada ciclo duplica"
+    },
+    {
+      "id": "t16-q243",
+      "pregunta": "Resumiendo el tema: ¿cuál es el perfil de Salmonella en las pruebas clave?",
+      "opciones": [
+        "Ureasa positiva, oxidasa negativa e indol positiva.",
+        "Ureasa negativa, oxidasa negativa e indol negativa.",
+        "Ureasa negativa, oxidasa positiva e indol positiva."
+      ],
+      "correcta": 1,
+      "explicacion": "Las tres son negativas; además fermenta la glucosa y no la lactosa.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Salmonella: ureasa negativa (1246 R1), oxidasa negativa, indol negativa"
+    },
+    {
+      "id": "t16-q244",
+      "pregunta": "Resumiendo el tema: en la prueba de la oxidasa, ¿qué asa no debe usarse nunca?",
+      "opciones": [
+        "La de níquel.",
+        "La de platino.",
+        "La de plástico."
+      ],
+      "correcta": 0,
+      "explicacion": "El platino y el plástico son adecuados; el níquel y el acero dan falsos positivos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Color azul-púrpura en 5-10 s; nunca con asa de níquel."
+    },
+    {
+      "id": "t16-q245",
+      "pregunta": "Resumiendo el tema: ¿qué dos pruebas son positivas en Staphylococcus aureus?",
+      "opciones": [
+        "La catalasa y la oxidasa.",
+        "La coagulasa y el indol.",
+        "La catalasa y la coagulasa."
+      ],
+      "correcta": 2,
+      "explicacion": "Los estreptococos y enterococos son catalasa negativos, y el indol es la prueba de E. coli.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Catalasa: burbujas con agua oxigenada. S. aureus +; estreptococos y enterococos −."
+    },
+    {
+      "id": "t16-q246",
+      "pregunta": "Resumiendo el tema: ¿qué enzima pone de manifiesto la prueba del ONPG y con qué color?",
+      "opciones": [
+        "La β-glucuronidasa, con fluorescencia.",
+        "La β-galactosidasa, con color amarillo.",
+        "La triptofanasa, con un anillo rojo."
+      ],
+      "correcta": 1,
+      "explicacion": "La fluorescencia del MUG es de la β-glucuronidasa, y el anillo rojo de Kovács, del indol.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "ONPG (amarillo): β-galactosidasa."
+    },
+    {
+      "id": "t16-q247",
+      "pregunta": "Resumiendo el tema: en una aglutinación en porta, ¿qué no puede faltar?",
+      "opciones": [
+        "El microscopio de fluorescencia.",
+        "La gota de control.",
+        "El medio de doble concentración."
+      ],
+      "correcta": 1,
+      "explicacion": "Sirve para descartar que la suspensión se agrume sola.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Aglutinación en porta con gota de control; látex"
+    },
+    {
+      "id": "t16-q248",
+      "pregunta": "Resumiendo el tema: en Salmonella, ¿qué definen los antígenos O y los H?",
+      "opciones": [
+        "Los O, el grupo; los H, el serotipo.",
+        "Los O, el serotipo; los H, el grupo.",
+        "Los dos definen el grupo, y el Vi el serotipo."
+      ],
+      "correcta": 0,
+      "explicacion": "Los O son azúcares de la membrana externa y los H, flagelares.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Salmonella: antígenos O (grupo) y H (serotipo)."
+    },
+    {
+      "id": "t16-q249",
+      "pregunta": "Resumiendo el tema: ¿qué distingue a la inmunofluorescencia indirecta?",
+      "opciones": [
+        "Que el anticuerpo marcado se une directamente al antígeno.",
+        "Que se lee sobre fondo negro, sin microscopio.",
+        "Que la unión la revela un segundo anticuerpo."
+      ],
+      "correcta": 2,
+      "explicacion": "El anticuerpo marcado contra el antígeno es la variante directa.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Inmunofluorescencia directa (anticuerpo marcado contra el antígeno) e indirecta (segundo anticuerpo)."
+    },
+    {
+      "id": "t16-q250",
+      "pregunta": "Resumiendo el tema: ¿qué papel tiene la qPCR de Legionella en el RD 3/2023?",
+      "opciones": [
+        "Método de referencia.",
+        "Complemento del cultivo.",
+        "Método prohibido en aguas de consumo."
+      ],
+      "correcta": 1,
+      "explicacion": "Cuantifica, pero no sustituye al cultivo de la ISO 11731.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "qPCR (cuantifica; Legionella como complemento del cultivo en el RD 3/2023)"
+    },
+    {
+      "id": "t16-q251",
+      "pregunta": "Resumiendo el tema: ¿qué cuatro indicadores del agua recoge el punto crítico sobre confirmación?",
+      "opciones": [
+        "Coliformes, enterococos, C. perfringens y Legionella.",
+        "Coliformes, Pseudomonas, colífagos y Legionella.",
+        "E. coli, enterococos, Salmonella y Legionella."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada uno con su criterio: lactosa y oxidasa, esculina, fluorescencia UV en TSC-MUP y dependencia de la L-cisteína.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Agua: coliformes = lactosa + y oxidasa −; enterococos = esculina"
+    },
+    {
+      "id": "t16-q252",
+      "pregunta": "Resumiendo el tema: ¿qué dos cosas no hace el MALDI-TOF?",
+      "opciones": [
+        "No identifica levaduras ni bacterias gramnegativas.",
+        "No necesita base de datos ni cultivo puro.",
+        "No da la sensibilidad a antibióticos ni separa Shigella de E. coli."
+      ],
+      "correcta": 2,
+      "explicacion": "Identifica bacterias y muchas levaduras, pero necesita cultivo puro y base de datos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "No da sensibilidad a antibióticos ni separa Shigella de E. coli."
+    },
+    {
+      "id": "t16-q253",
+      "pregunta": "Una colonia tomada de agar sangre burbujea con agua oxigenada. ¿Qué validez tiene ese resultado?",
+      "opciones": [
+        "Ninguna: los hematíes tienen catalasa y dan falsos positivos.",
+        "Es un positivo válido, porque las burbujas son inmediatas.",
+        "Es un negativo, porque la sangre inhibe la catalasa."
+      ],
+      "correcta": 0,
+      "explicacion": "La catalasa se hace con colonias de un medio sin sangre.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "No se hace con colonias de agar sangre: los hematíes tienen catalasa y dan falsos positivos."
+    },
+    {
+      "id": "t16-q254",
+      "pregunta": "Una bacteria fermenta la lactosa de forma tardía. ¿Qué resultado da el ONPG?",
+      "opciones": [
+        "Negativo: le falta la β-galactosidasa.",
+        "Negativo: el ONPG solo detecta la permeasa.",
+        "Positivo: tiene β-galactosidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "Las tardías tienen la β-galactosidasa pero no la permeasa, y el ONPG detecta la primera.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Las fermentadoras tardías solo tienen la segunda: el ONPG las detecta igual."
+    },
+    {
+      "id": "t16-q255",
+      "pregunta": "El reactivo de la oxidasa, ¿por qué se usa recién preparado?",
+      "opciones": [
+        "Porque precipita en frío.",
+        "Porque se autooxida.",
+        "Porque pierde el color con la luz."
+      ],
+      "correcta": 1,
+      "explicacion": "Si ya está azul, se ha autooxidado y no sirve.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "El reactivo se autooxida: se usa recién preparado; si está azul, no sirve."
+    },
+    {
+      "id": "t16-q256",
+      "pregunta": "Un bacilo gramnegativo es oxidasa negativo, fermenta la glucosa y reduce los nitratos. ¿A qué familia pertenece?",
+      "opciones": [
+        "Al género Pseudomonas.",
+        "A las enterobacterias.",
+        "Al género Neisseria."
+      ],
+      "correcta": 1,
+      "explicacion": "Pseudomonas es oxidasa positiva y aerobia estricta; Neisseria es un coco gramnegativo oxidasa positivo.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Enterobacterias | Bacilos gramnegativos, anaerobios facultativos, oxidasa negativos, fermentan la glucosa, reducen los nitratos."
+    },
+    {
+      "id": "t16-q257",
+      "pregunta": "Un aislado de la familia de las enterobacterias da la oxidasa positiva. ¿Qué género cabe sospechar?",
+      "opciones": [
+        "Klebsiella.",
+        "Citrobacter.",
+        "Plesiomonas."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el único género oxidasa positivo de la familia.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Plesiomonas es el único género oxidasa positivo de la familia"
+    },
+    {
+      "id": "t16-q258",
+      "pregunta": "¿Qué pigmento, además de la pioverdina, produce Pseudomonas aeruginosa?",
+      "opciones": [
+        "Piocianina.",
+        "Prodigiosina.",
+        "Piomelanina solamente."
+      ],
+      "correcta": 0,
+      "explicacion": "La pioverdina es amarillo-verdosa y la comparten las Pseudomonas fluorescentes.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "P. aeruginosa además piocianina y crece hasta 42 °C"
+    },
+    {
+      "id": "t16-q259",
+      "pregunta": "¿Qué forma y tinción tienen las Pseudomonas?",
+      "opciones": [
+        "Son cocos grampositivos.",
+        "Son bacilos grampositivos.",
+        "Son bacilos gramnegativos."
+      ],
+      "correcta": 2,
+      "explicacion": "Comparten forma y Gram con las enterobacterias; lo que las separa es la oxidasa y que no fermentan la glucosa.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Pseudomonas | Bacilos gramnegativos, aerobios estrictos"
+    },
+    {
+      "id": "t16-q260",
+      "pregunta": "¿Qué puede ocurrir al enfrentar S. Typhi al suero O si tiene antígeno Vi?",
+      "opciones": [
+        "Que aglutine con más intensidad.",
+        "Que no aglutine, porque el Vi lo impide.",
+        "Que precipite en lugar de aglutinar."
+      ],
+      "correcta": 1,
+      "explicacion": "La capa de polisacárido cubre los antígenos O y bloquea la reacción.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "una capa de polisacárido de S. Typhi que puede impedir la aglutinación con el suero O"
+    },
+    {
+      "id": "t16-q261",
+      "pregunta": "¿Qué tipo de aglutinación es la de los grupos de Lancefield?",
+      "opciones": [
+        "Directa.",
+        "Indirecta, con partículas de látex.",
+        "Una precipitación en gel."
+      ],
+      "correcta": 0,
+      "explicacion": "Los anticuerpos se unen a los polisacáridos de la propia pared, sin partículas intermedias.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "por los polisacáridos de la pared: una aglutinación directa"
+    },
+    {
+      "id": "t16-q262",
+      "pregunta": "¿A qué temperatura se ensaya la lactosa para confirmar E. coli frente al resto de coliformes?",
+      "opciones": [
+        "A 37 °C.",
+        "A 44 °C.",
+        "A 42 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "A 37 °C se confirman los coliformes; los 42 °C son la temperatura máxima de P. aeruginosa.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| E. coli | Además, lactosa a 44 °C e indol; casi todos con β-glucuronidasa |"
+    },
+    {
+      "id": "t16-q263",
+      "pregunta": "Además de la esculina, ¿qué puede llevar el medio de confirmación de los enterococos?",
+      "opciones": [
+        "Kanamicina y azida.",
+        "L-cisteína.",
+        "Triptófano."
+      ],
+      "correcta": 0,
+      "explicacion": "La L-cisteína es lo que necesita Legionella y el triptófano, el caldo del indol.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "en agar bilis-esculina (o con kanamicina y azida) a 44 °C"
+    },
+    {
+      "id": "t16-q264",
+      "pregunta": "¿Qué dos caracteres de movilidad y nitratos tiene C. perfringens?",
+      "opciones": [
+        "Es móvil y no reduce los nitratos.",
+        "Es inmóvil y no reduce los nitratos.",
+        "Es inmóvil y reduce los nitratos."
+      ],
+      "correcta": 2,
+      "explicacion": "Completan el perfil la fermentación de la lactosa y la licuefacción de la gelatina.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina"
+    },
+    {
+      "id": "t16-q265",
+      "pregunta": "Una colonia crece igual en BCYE y en BCYE sin L-cisteína. ¿Se confirma como Legionella?",
+      "opciones": [
+        "Sí: crece en los dos medios, que es lo que se busca.",
+        "Sí, si además es oxidasa positiva.",
+        "No: Legionella necesita la L-cisteína y no crece en el medio que carece de ella."
+      ],
+      "correcta": 2,
+      "explicacion": "La dependencia de la cisteína es justamente el criterio de confirmación.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Necesita L-cisteína: crece en BCYE y no en BCYE sin cisteína (1233 #13)"
     }
   ],
   "supuestos": [
