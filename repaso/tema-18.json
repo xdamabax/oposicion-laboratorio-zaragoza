@@ -2356,6 +2356,496 @@
       "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
       "apartado": "4",
       "evidencia": "Su anexo describe los dos métodos, y de él salen los procedimientos de los apartados 5.1 y 6.1."
+    },
+    {
+      "id": "t18-q131",
+      "pregunta": "¿Qué membrana se usa en las técnicas de filtración de este tema?",
+      "opciones": [
+        "De 0,45 µm y 47 mm.",
+        "De 0,2 µm y 47 mm.",
+        "De 0,45 µm y 142 mm."
+      ],
+      "correcta": 0,
+      "explicacion": "La de 0,2 µm se reserva para Legionella y para eluir.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water · apunte §5",
+      "apartado": "5",
+      "evidencia": "membrana de 0,45 µm y 47 mm, 20-80 colonias del diana (1246 #31), cálculo por 100 mL"
+    },
+    {
+      "id": "t18-q132",
+      "pregunta": "Según la Orden SCO/778/2009, ¿qué es una bacteria coliforme?",
+      "opciones": [
+        "Una enterobacteria que expresa la β-D-glucuronidasa.",
+        "Una enterobacteria que expresa la β-D-galactosidasa.",
+        "Cualquier bacteria oxidasa positiva que fermenta la lactosa."
+      ],
+      "correcta": 1,
+      "explicacion": "La β-glucuronidasa es lo que añade E. coli; los oxidasa positivos quedan fuera de la definición.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Bacteria coliforme: enterobacteria que expresa la β-D-galactosidasa."
+    },
+    {
+      "id": "t18-q133",
+      "pregunta": "¿Qué enzima distingue a E. coli del resto de los coliformes en las definiciones de la Orden SCO/778/2009?",
+      "opciones": [
+        "La β-D-glucuronidasa.",
+        "La β-D-galactosidasa.",
+        "La oxidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "La β-galactosidasa la tienen todos los coliformes; los coliformes son oxidasa negativos.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Escherichia coli: enterobacteria que expresa la β-D-galactosidasa y la β-D-glucuronidasa."
+    },
+    {
+      "id": "t18-q134",
+      "pregunta": "¿Por qué la definición del examen («lactosa positivas y oxidasa negativas») coincide con la de la Orden?",
+      "opciones": [
+        "Porque la oxidasa y la β-galactosidasa son la misma enzima.",
+        "Porque la β-galactosidasa es la enzima que rompe la lactosa.",
+        "Porque los coliformes no fermentan la lactosa."
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos formas de decir lo mismo: actividad sobre la lactosa y ausencia de oxidasa.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "la β-galactosidasa es la enzima que rompe la lactosa"
+    },
+    {
+      "id": "t18-q135",
+      "pregunta": "Según la guía británica, ¿a qué temperatura crecen los coliformes de su definición?",
+      "opciones": [
+        "A 44 °C.",
+        "A 22 °C.",
+        "A 37 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Son oxidasa negativos, producen ácido de la lactosa o expresan β-galactosidasa y crecen a 37 °C.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "producen ácido de la lactosa o expresan β-galactosidasa y crecen a 37 °C"
+    },
+    {
+      "id": "t18-q136",
+      "pregunta": "¿Para qué sirve exigir oxidasa negativa en la definición de coliforme?",
+      "opciones": [
+        "Para separarlos de E. coli, que es oxidasa positiva.",
+        "Para separarlos de los enterococos.",
+        "Para separarlos de Aeromonas, que puede producir ácido de la lactosa a 37 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "E. coli es oxidasa negativa, como todos los coliformes; los enterococos son cocos grampositivos.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "La oxidasa negativa los separa de Aeromonas"
+    },
+    {
+      "id": "t18-q137",
+      "pregunta": "¿Qué sustrato del agar cromogénico rompe la β-galactosidasa y qué color deja?",
+      "opciones": [
+        "El X-glucurónido, con color azul.",
+        "El Salmon-GAL, con color rosa asalmonado a rojo.",
+        "El ONPG, con color amarillo."
+      ],
+      "correcta": 1,
+      "explicacion": "El X-glucurónido lo rompe la β-glucuronidasa; el ONPG es el sustrato de la bandeja de NMP.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "| Salmon-GAL | β-galactosidasa (todos los coliformes) | Rosa asalmonado a rojo |"
+    },
+    {
+      "id": "t18-q138",
+      "pregunta": "¿Por qué E. coli sale azul oscuro a violeta en el agar cromogénico?",
+      "opciones": [
+        "Porque rompe los dos sustratos, y el rojo más el azul dan ese color.",
+        "Porque solo rompe el X-glucurónido.",
+        "Porque reduce el TTC a formazán."
+      ],
+      "correcta": 0,
+      "explicacion": "El TTC es el indicador del medio de Slanetz y Bartley para enterococos.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "E. coli rompe los dos, y el rojo más el azul dan azul oscuro a violeta"
+    },
+    {
+      "id": "t18-q139",
+      "pregunta": "¿Para qué lleva triptófano el agar cromogénico de la Orden SCO/778/2009?",
+      "opciones": [
+        "Para hacerlo selectivo.",
+        "Para intensificar el color rosa.",
+        "Para poder hacer el indol."
+      ],
+      "correcta": 2,
+      "explicacion": "La selectividad la dan el Tergitol 7, la vancomicina y la cefsulodina.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "y triptófano, para poder hacer el indol"
+    },
+    {
+      "id": "t18-q140",
+      "pregunta": "¿Qué membrana indica la Orden SCO/778/2009 para el agar cromogénico?",
+      "opciones": [
+        "De policarbonato de 0,2 µm.",
+        "De ésteres de celulosa de 0,45 µm.",
+        "De ésteres de celulosa de 1,2 µm."
+      ],
+      "correcta": 1,
+      "explicacion": "Las de policarbonato de 0,2 µm son las que se usan para eluir, en Legionella.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Filtrar por membrana de ésteres de celulosa de 0,45 µm y ponerla sobre el ACC."
+    },
+    {
+      "id": "t18-q141",
+      "pregunta": "A las 18 horas de incubar un ACC hay colonias rojas o incoloras. ¿Qué procede?",
+      "opciones": [
+        "Alargar la incubación hasta las 24 horas, por si hay reacciones tardías.",
+        "Leer y contar en ese momento.",
+        "Desechar la placa y repetir el análisis."
+      ],
+      "correcta": 0,
+      "explicacion": "La incubación normal es de 21 ± 3 horas a 36 ± 2 °C.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Si a las 18 horas hay colonias rojas o incoloras, se alarga hasta las 24 horas, por si hay reacciones tardías."
+    },
+    {
+      "id": "t18-q142",
+      "pregunta": "En el agar cromogénico, ¿qué son las colonias rosa asalmonado a rojo?",
+      "opciones": [
+        "Coliformes que no son E. coli.",
+        "E. coli.",
+        "Bacterias gramnegativas sin β-galactosidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli sale azul oscuro a violeta, y las demás gramnegativas salen incoloras.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "rosa asalmonado a rojo = coliformes que no son E. coli"
+    },
+    {
+      "id": "t18-q143",
+      "pregunta": "En agar cromogénico, ¿cómo salen las otras bacterias gramnegativas?",
+      "opciones": [
+        "Rosas.",
+        "Incoloras.",
+        "Negras."
+      ],
+      "correcta": 1,
+      "explicacion": "Las que tienen algo de β-glucuronidasa pero no β-galactosidasa salen azul claro o turquesa.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Otras bacterias gramnegativas salen incoloras."
+    },
+    {
+      "id": "t18-q144",
+      "pregunta": "¿Qué prueba confirma las colonias rosas del agar cromogénico?",
+      "opciones": [
+        "El indol, con reactivo de Kovács.",
+        "La esculina, con halo negro.",
+        "La oxidasa: las oxidasa positivas no son coliformes."
+      ],
+      "correcta": 2,
+      "explicacion": "El indol confirma las azul-violeta como E. coli; la esculina es de enterococos.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Rosas: oxidasa (tema 16). Las oxidasa positivas no son coliformes."
+    },
+    {
+      "id": "t18-q145",
+      "pregunta": "Un CCA da 24 colonias rosas oxidasa negativas y 11 azul-violeta en 100 mL. ¿Qué recuentos se informan?",
+      "opciones": [
+        "Coliformes 24 y E. coli 11 UFC/100 mL.",
+        "Coliformes 35 y E. coli 35 UFC/100 mL.",
+        "Coliformes 35 y E. coli 11 UFC/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Los coliformes totales son las rosas más las azul-violeta: 24 + 11 = 35; E. coli son solo las azul-violeta.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "coliformes totales = rosas + azul-violeta"
+    },
+    {
+      "id": "t18-q146",
+      "pregunta": "Un CCA da 40 rosas, de las que 6 resultan oxidasa positivas, y 12 azul-violeta. ¿Cuántos coliformes se informan por 100 mL?",
+      "opciones": [
+        "46.",
+        "52.",
+        "34."
+      ],
+      "correcta": 0,
+      "explicacion": "Las 6 oxidasa positivas no son coliformes: quedan 34 rosas más 12 azul-violeta = 46.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Las oxidasa positivas no son coliformes."
+    },
+    {
+      "id": "t18-q147",
+      "pregunta": "En un CCA se filtran 50 mL y crecen 18 colonias rosas oxidasa negativas y 7 azul-violeta. ¿Cuántos coliformes hay por 100 mL?",
+      "opciones": [
+        "25.",
+        "50.",
+        "14."
+      ],
+      "correcta": 1,
+      "explicacion": "Coliformes = 18 + 7 = 25 en 50 mL; 25 ÷ 50 × 100 = 50 UFC/100 mL.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "coliformes totales = rosas + azul-violeta. 4. Expresar en UFC/100 mL."
+    },
+    {
+      "id": "t18-q148",
+      "pregunta": "¿Para qué aguas sirve la ISO 9308-1, según su resumen oficial?",
+      "opciones": [
+        "Para las que den menos de 100 colonias en total.",
+        "Para cualquier agua, incluidas las superficiales.",
+        "Solo para aguas residuales."
+      ],
+      "correcta": 0,
+      "explicacion": "En aguas superficiales la flora acompañante tapa a las diana.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "solo para aguas que den menos de 100 colonias en total"
+    },
+    {
+      "id": "t18-q149",
+      "pregunta": "¿Cuál de estas aguas es adecuada para el método del CCA de la ISO 9308-1?",
+      "opciones": [
+        "El agua de un río.",
+        "El agua de piscina desinfectada.",
+        "Un agua residual depurada."
+      ],
+      "correcta": 1,
+      "explicacion": "Las aguas superficiales quedan excluidas: su flora acompañante tapa a las diana.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "de consumo, de piscina desinfectada, salida de potabilizadora"
+    },
+    {
+      "id": "t18-q150",
+      "pregunta": "¿Qué color da el reactivo de Kovács sobre una colonia azul-violeta de E. coli?",
+      "opciones": [
+        "Púrpura en 3-4 minutos.",
+        "Halo marrón o negro.",
+        "Rojo cereza en segundos."
+      ],
+      "correcta": 2,
+      "explicacion": "El púrpura en 3-4 minutos es la fosfatasa ácida de C. perfringens, y el halo negro, la esculina de los enterococos.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Con reactivo de Kovács sobre la colonia, un rojo cereza en segundos confirma E. coli"
+    },
+    {
+      "id": "t18-q151",
+      "pregunta": "¿Cómo se llama también el agar de Slanetz y Bartley?",
+      "opciones": [
+        "Agar de enterococos para membrana (mEA).",
+        "Agar bilis esculina azida.",
+        "Agar triptosa sulfito cicloserina."
+      ],
+      "correcta": 0,
+      "explicacion": "El bilis esculina es el de la confirmación y el TSC, el de C. perfringens.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "el agar de enterococos para membrana (mEA), el de Slanetz y Bartley"
+    },
+    {
+      "id": "t18-q152",
+      "pregunta": "En el agar de Slanetz y Bartley, ¿a quién frena la azida sódica?",
+      "opciones": [
+        "A Klebsiella, Proteus y Providencia.",
+        "A los mohos y las levaduras.",
+        "A los coliformes y a casi todos los gramnegativos."
+      ],
+      "correcta": 2,
+      "explicacion": "Klebsiella, Proteus y Providencia son los que frena el ácido nalidíxico del agar CN.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Azida sódica: frena a los coliformes y a casi todos los gramnegativos."
+    },
+    {
+      "id": "t18-q153",
+      "pregunta": "¿Cómo son las colonias típicas de enterococos en Slanetz y Bartley?",
+      "opciones": [
+        "Negras y planas.",
+        "Rojas, granates o rosas, lisas y convexas.",
+        "Azul-verdosas y mucosas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las negras son de C. perfringens en TSC y las azul-verdosas, de P. aeruginosa en CN.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Colonias típicas: rojas, granates o rosas, lisas y convexas."
+    },
+    {
+      "id": "t18-q154",
+      "pregunta": "En el medio de Slanetz y Bartley, algunas cepas de enterococo dan colonias:",
+      "opciones": [
+        "Muy pálidas.",
+        "Negras con centro brillante.",
+        "Incoloras y mucosas."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una advertencia del método: no todas las colonias típicas son intensamente rojas.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Algunas cepas dan colonias muy pálidas."
+    },
+    {
+      "id": "t18-q155",
+      "pregunta": "Según la guía británica, ¿cómo se incuban los enterococos de un agua de consumo?",
+      "opciones": [
+        "A 44 °C durante 21 ± 3 horas.",
+        "A 41 °C durante 24 horas.",
+        "A 37 °C durante 44 ± 4 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 41 °C y 24 horas son del Enterolert-DW.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "agua de consumo, 37 °C durante 44 ± 4 horas"
+    },
+    {
+      "id": "t18-q156",
+      "pregunta": "¿Qué pasa si los enterococos se incuban a 44 °C en lugar de a 37 °C?",
+      "opciones": [
+        "El medio pierde selectividad y crecen los coliformes.",
+        "El medio es más selectivo, pero algunos enterococos crecen mal.",
+        "Las colonias dejan de reducir el TTC."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso en agua bruta se combinan 4 h a 37 °C y después 40 h a 44 °C.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "A 44 °C el medio es más selectivo, pero algunos enterococos crecen mal."
+    },
+    {
+      "id": "t18-q157",
+      "pregunta": "En la confirmación de enterococos con esculina, ¿qué se pasa al agar bilis esculina?",
+      "opciones": [
+        "Solo las colonias rojas, una a una.",
+        "La membrana entera.",
+        "Un asa del caldo de enriquecimiento."
+      ],
+      "correcta": 1,
+      "explicacion": "La otra vía es resembrar colonias en ese medio e incubar hasta 18 horas a 44 °C.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Se pasa la membrana entera a agar bilis esculina"
+    },
+    {
+      "id": "t18-q158",
+      "pregunta": "¿Cuánto se incuba la confirmación de enterococos con esculina y a qué temperatura?",
+      "opciones": [
+        "18 horas a 37 °C.",
+        "44 horas a 37 °C.",
+        "4 horas a 44 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "A menudo el halo se ve ya a las 2 horas.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "se incuba a 44 °C durante 4 horas"
+    },
+    {
+      "id": "t18-q159",
+      "pregunta": "¿Qué otro medio admite la guía británica, en lugar del agar bilis esculina, para confirmar enterococos?",
+      "opciones": [
+        "El de kanamicina esculina azida.",
+        "El de triptosa sulfito cicloserina.",
+        "El BCYE sin L-cisteína."
+      ],
+      "correcta": 0,
+      "explicacion": "El TSC es de C. perfringens y el BCYE sin cisteína, de la confirmación de Legionella.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "agar bilis esculina (o kanamicina esculina azida), a temperatura ambiente"
+    },
+    {
+      "id": "t18-q160",
+      "pregunta": "¿Qué es el halo marrón o negro de la confirmación de enterococos?",
+      "opciones": [
+        "La esculina hidrolizada.",
+        "El sulfuro de hierro precipitado.",
+        "El formazán reducido del TTC."
+      ],
+      "correcta": 0,
+      "explicacion": "El sulfuro de hierro es el color negro de C. perfringens en TSC, y el formazán, el rojo de Slanetz y Bartley.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "El halo es la esculina hidrolizada."
+    },
+    {
+      "id": "t18-q161",
+      "pregunta": "A menudo, ¿cuándo se ve ya el halo de la esculina?",
+      "opciones": [
+        "A los 10 minutos.",
+        "A las 2 horas.",
+        "A las 18 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "La incubación prevista es de 4 horas a 44 °C; las 18 horas son la vía alternativa, resembrando colonias.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "El halo es la esculina hidrolizada. A menudo se ve a las 2 horas."
+    },
+    {
+      "id": "t18-q162",
+      "pregunta": "En la vía alternativa de confirmación de enterococos, ¿cuánto se incuban las colonias resembradas?",
+      "opciones": [
+        "Hasta 4 horas a 37 °C.",
+        "Hasta 44 horas a 44 °C.",
+        "Hasta 18 horas a 44 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "La vía principal es pasar la membrana entera e incubar 4 horas a 44 °C.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Otra vía: resembrar colonias en ese medio e incubar hasta 18 horas a 44 °C."
+    },
+    {
+      "id": "t18-q163",
+      "pregunta": "¿Qué enzima, además de hidrolizar la esculina, caracteriza a un enterococo?",
+      "opciones": [
+        "La β-glucuronidasa.",
+        "La β-glucosidasa.",
+        "La fosfatasa ácida."
+      ],
+      "correcta": 1,
+      "explicacion": "La β-glucuronidasa es de E. coli y la fosfatasa ácida, de C. perfringens.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "hidroliza la esculina y tiene β-glucosidasa"
+    },
+    {
+      "id": "t18-q164",
+      "pregunta": "Se filtran 100 mL para enterococos y crecen 12 colonias rojas; al pasar la membrana al agar bilis esculina, solo 9 dan halo negro. ¿Qué recuento se informa?",
+      "opciones": [
+        "9 UFC/100 mL.",
+        "12 UFC/100 mL.",
+        "21 UFC/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Solo las que hidrolizan la esculina quedan confirmadas como enterococos; las otras tres se descartan.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Halo marrón o negro alrededor de la colonia = enterococo confirmado."
+    },
+    {
+      "id": "t18-q165",
+      "pregunta": "¿En qué condiciones crece un enterococo, según la guía británica?",
+      "opciones": [
+        "Solo en anaerobiosis estricta.",
+        "Únicamente por debajo de 37 °C.",
+        "Con bilis y azida, y a 44 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Esa tolerancia es la base del medio con azida y del paso de confirmación a 44 °C.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "crece con bilis y azida y a 44 °C"
     }
   ],
   "supuestos": [
