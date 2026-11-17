@@ -1536,6 +1536,496 @@
       "fuente": "OpenStax Microbiology, identificación bioquímica, catalasa · apunte §4.1",
       "apartado": "4.1",
       "evidencia": "| **Catalasa** | La enzima que **descompone el agua oxigenada**: 2 H₂O₂ → 2 H₂O + O₂ | **Burbujas** inmediatas con **H₂O₂ al 3-6 %** | La mayoría de aerobios y facultativos; control: ***S. aureus*** | **Estreptococos y enterococos** (*S. mitis*) |"
+    },
+    {
+      "id": "t16-q79",
+      "pregunta": "Según la norma británica ID 1, ¿cuál es el primer paso para identificar una bacteria?",
+      "opciones": [
+        "Partir de un cultivo puro, aislando los microorganismos si hay varios en la placa.",
+        "Hacer la tinción de Gram directamente de la muestra.",
+        "Inyectar la muestra en el MALDI-TOF."
+      ],
+      "correcta": 0,
+      "explicacion": "Sin cultivo puro, las pruebas mezclarían caracteres de varias bacterias.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Cultivo puro: si en la placa hay varios microorganismos, primero hay que aislarlos"
+    },
+    {
+      "id": "t16-q80",
+      "pregunta": "En el orden de identificación de la ID 1, ¿qué se observa después del cultivo puro?",
+      "opciones": [
+        "El perfil de proteínas en el MALDI-TOF.",
+        "La secuencia del gen del ARNr 16S.",
+        "El aspecto de las colonias en medios no selectivos, selectivos o cromógenos."
+      ],
+      "correcta": 2,
+      "explicacion": "Después viene la microscopía y, más tarde, la identificación propiamente dicha.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Aspecto de las colonias en medios no selectivos, selectivos o cromógenos."
+    },
+    {
+      "id": "t16-q81",
+      "pregunta": "Si no hay MALDI-TOF o su resultado no basta, ¿a qué se recurre según la ID 1?",
+      "opciones": [
+        "Directamente a la secuenciación masiva del genoma.",
+        "A pruebas bioquímicas, sistemas comerciales y aglutinación con antisueros.",
+        "A repetir el Gram con otro lote de colorante."
+      ],
+      "correcta": 1,
+      "explicacion": "La confirmación molecular, como secuenciar el ARNr 16S, se reserva para cuando hace falta.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Si no hay o no basta, pruebas bioquímicas, sistemas comerciales y aglutinación con antisueros."
+    },
+    {
+      "id": "t16-q82",
+      "pregunta": "Los caracteres en que se basa la identificación, ¿de qué dos clases son?",
+      "opciones": [
+        "Morfológicos y serológicos, nada más.",
+        "Bioquímicos y proteómicos, nada más.",
+        "Fenotípicos y genéticos."
+      ],
+      "correcta": 2,
+      "explicacion": "Las técnicas morfológicas, bioquímicas, serológicas y proteómicas exploran caracteres fenotípicos; las genéticas, el ADN o el ARN.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "La identificación se basa en caracteres distinguibles: - fenotípicos"
+    },
+    {
+      "id": "t16-q83",
+      "pregunta": "¿Cuáles son caracteres fenotípicos para identificar una bacteria?",
+      "opciones": [
+        "El crecimiento en distintas atmósferas, temperaturas y medios, el aspecto de las colonias, la microscopía y las pruebas bioquímicas.",
+        "La secuencia del ARNr 16S y el ribotipado.",
+        "El perfil de plásmidos y la rep-PCR."
+      ],
+      "correcta": 0,
+      "explicacion": "Lo demás son caracteres genéticos; la identificación se apoya en los dos tipos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "fenotípicos: crecimiento en distintas atmósferas, temperaturas y medios; aspecto de las colonias; microscopía; pruebas bioquímicas"
+    },
+    {
+      "id": "t16-q84",
+      "pregunta": "¿Por qué no basta una sola prueba para identificar una bacteria?",
+      "opciones": [
+        "Porque todas las pruebas bioquímicas tienen falsos positivos.",
+        "Porque hace falta una combinación: primero se la coloca en un gran grupo y luego se confirma.",
+        "Porque las normas obligan a hacer un mínimo de cinco pruebas."
+      ],
+      "correcta": 1,
+      "explicacion": "Es un principio de la ID 1: ninguna prueba sola basta.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Ninguna prueba sola basta: con una combinación se coloca el microorganismo en uno de los grandes grupos y luego se confirma."
+    },
+    {
+      "id": "t16-q85",
+      "pregunta": "¿Qué miran las técnicas bioquímicas de identificación?",
+      "opciones": [
+        "Las enzimas y el metabolismo.",
+        "Los antígenos de la superficie.",
+        "El perfil de proteínas de la célula."
+      ],
+      "correcta": 0,
+      "explicacion": "Los antígenos son el objeto de las serológicas y el perfil de proteínas, de las proteómicas.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Bioquímicas | Enzimas y metabolismo | Catalasa, oxidasa, indol, ureasa, fermentación de azúcares |"
+    },
+    {
+      "id": "t16-q86",
+      "pregunta": "¿Cómo se clasifica el MALDI-TOF entre los tipos de técnicas de identificación?",
+      "opciones": [
+        "Como técnica genética.",
+        "Como técnica serológica.",
+        "Como técnica proteómica."
+      ],
+      "correcta": 2,
+      "explicacion": "Analiza el perfil de proteínas; las genéticas miran ADN o ARN y las serológicas, antígenos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Proteómicas | Perfil de proteínas | MALDI-TOF |"
+    },
+    {
+      "id": "t16-q87",
+      "pregunta": "La PCR, las sondas y la secuenciación del ARNr 16S son ejemplos de técnicas:",
+      "opciones": [
+        "Proteómicas.",
+        "Genéticas.",
+        "Serológicas."
+      ],
+      "correcta": 1,
+      "explicacion": "La proteómica es el MALDI-TOF; las serológicas son la aglutinación, el látex y la inmunofluorescencia.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Genéticas | ADN o ARN | PCR, sondas, secuenciación del ARNr 16S |"
+    },
+    {
+      "id": "t16-q88",
+      "pregunta": "¿Cuáles son ejemplos de técnicas morfológicas de identificación?",
+      "opciones": [
+        "La catalasa, la oxidasa y el indol.",
+        "La aglutinación, el látex y la inmunofluorescencia.",
+        "Las colonias, el Gram, la forma y la movilidad."
+      ],
+      "correcta": 2,
+      "explicacion": "Las bioquímicas miran enzimas y metabolismo; las serológicas, antígenos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Morfológicas | Forma de la colonia y de la célula | Colonias, Gram, forma, movilidad |"
+    },
+    {
+      "id": "t16-q89",
+      "pregunta": "En el orden de la ID 1, ¿qué se estudia al microscopio antes de identificar?",
+      "opciones": [
+        "El Gram, la forma y la agrupación.",
+        "La movilidad en agar semisólido y la hemólisis.",
+        "El tamaño de la colonia en milímetros."
+      ],
+      "correcta": 0,
+      "explicacion": "La hemólisis y el tamaño se ven en la placa, no al microscopio.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Microscopía: Gram, forma y agrupación"
+    },
+    {
+      "id": "t16-q90",
+      "pregunta": "Una colonia deja a su alrededor un halo verdoso en agar sangre. ¿Qué hemólisis tiene?",
+      "opciones": [
+        "β, lisis total.",
+        "α, lisis parcial.",
+        "Ninguna."
+      ],
+      "correcta": 1,
+      "explicacion": "La lisis total deja el medio claro y transparente; si no hay hemólisis, el medio no cambia.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "| α | Lisis parcial: halo verdoso |"
+    },
+    {
+      "id": "t16-q91",
+      "pregunta": "¿Cómo se llamaba antes la ausencia de hemólisis en agar sangre?",
+      "opciones": [
+        "Hemólisis α.",
+        "Hemólisis γ.",
+        "Hemólisis β."
+      ],
+      "correcta": 1,
+      "explicacion": "Hoy se dice simplemente «sin hemólisis»: el medio no cambia.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "| Sin hemólisis (antes, γ) | Sin cambio en el medio |"
+    },
+    {
+      "id": "t16-q92",
+      "pregunta": "¿En qué unidad se describe el tamaño de una colonia?",
+      "opciones": [
+        "En micrómetros.",
+        "En número de células por colonia.",
+        "En milímetros."
+      ],
+      "correcta": 2,
+      "explicacion": "Las colonias se miden en milímetros: unos 1 mm los estreptococos y 2-3 mm los estafilococos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Se describen por (UKHSA): - tamaño, en milímetros"
+    },
+    {
+      "id": "t16-q93",
+      "pregunta": "¿Qué pigmento produce Pseudomonas aeruginosa en la placa?",
+      "opciones": [
+        "Verde.",
+        "Rojo.",
+        "Amarillo pálido."
+      ],
+      "correcta": 0,
+      "explicacion": "El rojo es el de Serratia marcescens.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "color y pigmento: Pseudomonas aeruginosa, pigmento verde; Serratia marcescens, rojo"
+    },
+    {
+      "id": "t16-q94",
+      "pregunta": "Entre los caracteres de una colonia, ¿cuáles describen su relieve y su contorno?",
+      "opciones": [
+        "La opacidad y la consistencia.",
+        "El pigmento y la hemólisis.",
+        "La elevación y el borde."
+      ],
+      "correcta": 2,
+      "explicacion": "La descripción incluye tamaño, forma, borde, elevación, superficie, consistencia, color, opacidad y hemólisis.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "tamaño, en milímetros; - forma, borde y elevación"
+    },
+    {
+      "id": "t16-q95",
+      "pregunta": "¿Cómo puede describirse la opacidad de una colonia?",
+      "opciones": [
+        "Transparente, translúcida u opaca.",
+        "Mantecosa, mucosa o seca.",
+        "Plana, elevada o umbilicada."
+      ],
+      "correcta": 0,
+      "explicacion": "Mantecosa, mucosa o seca describe la superficie y la consistencia.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "opacidad: transparente, translúcida, opaca"
+    },
+    {
+      "id": "t16-q96",
+      "pregunta": "Las colonias mantecosas, mucosas o secas describen:",
+      "opciones": [
+        "La opacidad.",
+        "La superficie y la consistencia.",
+        "La hemólisis."
+      ],
+      "correcta": 1,
+      "explicacion": "La opacidad va de transparente a opaca, y la hemólisis se lee en agar sangre.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "superficie y consistencia: mantecosa, mucosa, seca"
+    },
+    {
+      "id": "t16-q97",
+      "pregunta": "Una colonia de 5 mm en agar no selectivo encaja con el tamaño típico de:",
+      "opciones": [
+        "Bacillus.",
+        "Estreptococos.",
+        "Estafilococos."
+      ],
+      "correcta": 0,
+      "explicacion": "Bacillus da colonias de 2 a 7 mm; los estreptococos, de 1 mm, y los estafilococos, de 2-3 mm.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Tamaño típico: estreptococos, unos 1 mm; estafilococos, 2-3 mm; Bacillus, 2-7 mm."
+    },
+    {
+      "id": "t16-q98",
+      "pregunta": "En la placa crecen dos cultivos: uno con colonias de 1 mm y otro con colonias de 2-3 mm. ¿Con qué géneros encajan los tamaños?",
+      "opciones": [
+        "Las de 1 mm con estafilococos y las de 2-3 mm con estreptococos.",
+        "Las dos con Bacillus.",
+        "Las de 1 mm con estreptococos y las de 2-3 mm con estafilococos."
+      ],
+      "correcta": 2,
+      "explicacion": "Bacillus da colonias mayores, de 2 a 7 mm.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Tamaño típico: estreptococos, unos 1 mm; estafilococos, 2-3 mm; Bacillus, 2-7 mm."
+    },
+    {
+      "id": "t16-q99",
+      "pregunta": "Una bacteria que solo crece sin oxígeno es:",
+      "opciones": [
+        "Microaerófila.",
+        "Anaerobia estricta.",
+        "Facultativa."
+      ],
+      "correcta": 1,
+      "explicacion": "La microaerófila crece mejor con menos oxígeno, pero lo necesita; la facultativa crece con o sin él.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Anaerobio estricto | Solo crece sin oxígeno |"
+    },
+    {
+      "id": "t16-q100",
+      "pregunta": "¿Qué necesita un microorganismo microaerófilo?",
+      "opciones": [
+        "CO₂ añadido.",
+        "Menos oxígeno del que hay en el aire.",
+        "Ausencia total de oxígeno."
+      ],
+      "correcta": 1,
+      "explicacion": "El CO₂ añadido lo necesita el capnófilo, y la ausencia total de oxígeno, el anaerobio estricto.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Microaerófilo | Mejor con menos oxígeno |"
+    },
+    {
+      "id": "t16-q101",
+      "pregunta": "Las enterobacterias crecen con oxígeno y sin él. ¿Cómo se llama esa necesidad de atmósfera?",
+      "opciones": [
+        "Microaerófila.",
+        "Anaerobia estricta.",
+        "Facultativa."
+      ],
+      "correcta": 2,
+      "explicacion": "La microaerófila necesita oxígeno, pero menos que el del aire; la anaerobia estricta no lo tolera.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Facultativo | Con o sin oxígeno |"
+    },
+    {
+      "id": "t16-q102",
+      "pregunta": "¿En qué intervalo crece un microorganismo psicrófilo?",
+      "opciones": [
+        "A 2-5 °C, con óptimo hacia 15 °C.",
+        "A 10-45 °C, con óptimo de 30-40 °C.",
+        "Con óptimo de 50-60 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "El segundo intervalo es el de los mesófilos y el tercero, el de los termófilos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Psicrófilo | 2-5 °C, con óptimo hacia 15 °C |"
+    },
+    {
+      "id": "t16-q103",
+      "pregunta": "¿Cómo crece un termófilo a 37 °C?",
+      "opciones": [
+        "Mejor que a cualquier otra temperatura.",
+        "Poco: su óptimo está en 50-60 °C.",
+        "No crece en absoluto por debajo de 80 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Los que necesitan 80 °C o más son los hipertermófilos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Termófilo | Óptimo de 50-60 °C; poco a 37 °C |"
+    },
+    {
+      "id": "t16-q104",
+      "pregunta": "¿A qué temperatura crece un hipertermófilo?",
+      "opciones": [
+        "A 80 °C o más.",
+        "A 50-60 °C.",
+        "A 30-40 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 50-60 °C son el óptimo de los termófilos y los 30-40 °C, el de los mesófilos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Hipertermófilo | 80 °C o más |"
+    },
+    {
+      "id": "t16-q105",
+      "pregunta": "Entre los caracteres de nutrición, ¿qué se valora de una bacteria?",
+      "opciones": [
+        "Si fermenta la lactosa a 44 °C.",
+        "Si resiste la vancomicina.",
+        "Si crece en medios corrientes o necesita sangre, suero o factores concretos."
+      ],
+      "correcta": 2,
+      "explicacion": "La fermentación es una prueba bioquímica, y la resistencia a antibióticos es otra ayuda distinta.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Nutrición: si crece en medios corrientes o necesita sangre, suero o factores concretos."
+    },
+    {
+      "id": "t16-q106",
+      "pregunta": "¿Qué es el factor V que necesita Haemophilus?",
+      "opciones": [
+        "La hemina.",
+        "La L-cisteína.",
+        "El NAD."
+      ],
+      "correcta": 2,
+      "explicacion": "La hemina es el factor X; la L-cisteína es lo que necesita Legionella.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "los factores X (hemina) y V (NAD) de Haemophilus"
+    },
+    {
+      "id": "t16-q107",
+      "pregunta": "¿Qué género se cita como ejemplo de bacteria que necesita factores de crecimiento concretos?",
+      "opciones": [
+        "Haemophilus.",
+        "Pseudomonas.",
+        "Proteus."
+      ],
+      "correcta": 0,
+      "explicacion": "Necesita los factores X (hemina) y V (NAD), que no están en los medios corrientes.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Por ejemplo, los factores X (hemina) y V (NAD) de Haemophilus."
+    },
+    {
+      "id": "t16-q108",
+      "pregunta": "Al microscopio, ¿cómo se disponen los estreptococos?",
+      "opciones": [
+        "En racimos.",
+        "En parejas o cadenas cortas.",
+        "En empalizada."
+      ],
+      "correcta": 1,
+      "explicacion": "Los racimos son de los estafilococos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Los estreptococos van en parejas o cadenas cortas; los estafilococos, en racimos."
+    },
+    {
+      "id": "t16-q109",
+      "pregunta": "¿Cuánto mide una levadura comparada con una bacteria?",
+      "opciones": [
+        "De 3 a 5 veces más.",
+        "De 10 a 20 veces más.",
+        "Aproximadamente lo mismo."
+      ],
+      "correcta": 0,
+      "explicacion": "Son unicelulares y se reproducen por gemación.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Levaduras: unicelulares, de 3 a 5 veces el tamaño de una bacteria"
+    },
+    {
+      "id": "t16-q110",
+      "pregunta": "¿Cómo se reproducen las levaduras?",
+      "opciones": [
+        "Por esporas asexuales en conidióforos.",
+        "Por fisión binaria, como las bacterias.",
+        "Por gemación."
+      ],
+      "correcta": 2,
+      "explicacion": "Las estructuras de esporulación son el carácter clave de los mohos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "de 3 a 5 veces el tamaño de una bacteria; se reproducen por gemación"
+    },
+    {
+      "id": "t16-q111",
+      "pregunta": "¿Cómo se identifican sobre todo los mohos?",
+      "opciones": [
+        "Por la prueba del tubo germinal.",
+        "Por la morfología de la colonia y de sus estructuras de esporulación.",
+        "Por la hidrólisis de la esculina."
+      ],
+      "correcta": 1,
+      "explicacion": "El tubo germinal distingue Candida albicans, que es una levadura, y la esculina confirma enterococos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Mohos: se identifican sobre todo por la morfología de la colonia y de sus estructuras de esporulación."
+    },
+    {
+      "id": "t16-q112",
+      "pregunta": "¿A qué levadura distingue la prueba del tubo germinal?",
+      "opciones": [
+        "A Cryptococcus neoformans.",
+        "A Saccharomyces cerevisiae.",
+        "A Candida albicans."
+      ],
+      "correcta": 2,
+      "explicacion": "Cryptococcus neoformans se reconoce por la ureasa y por la tinta china.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La prueba del tubo germinal distingue Candida albicans"
+    },
+    {
+      "id": "t16-q113",
+      "pregunta": "¿Dónde se estudia la movilidad de una bacteria?",
+      "opciones": [
+        "En agar sangre, por el tipo de hemólisis.",
+        "En fresco, en gota pendiente o en agar semisólido.",
+        "En el MALDI-TOF."
+      ],
+      "correcta": 1,
+      "explicacion": "Son las tres formas de ver la movilidad; la hemólisis y el perfil de proteínas no dicen nada de ella.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La movilidad se estudia en fresco, en gota pendiente o en agar semisólido"
     }
   ],
   "supuestos": [
