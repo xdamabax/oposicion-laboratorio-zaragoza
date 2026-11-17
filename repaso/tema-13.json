@@ -2929,6 +2929,538 @@
       "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
       "apartado": "4.2",
       "evidencia": "una colonia que crece en la película de agua del borde o de la superficie"
+    },
+    {
+      "id": "t13-q171",
+      "pregunta": "¿Qué tamaño de poro tiene la membrana habitual de 47 mm para contar E. coli o coliformes?",
+      "opciones": [
+        "0,45 µm.",
+        "0,2 µm.",
+        "1,2 µm."
+      ],
+      "correcta": 0,
+      "explicacion": "La de 0,2 µm se reserva para Legionella, Campylobacter y Vibrio.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "de 47 mm y 0,45 µm; de 0,2 µm para Legionella"
+    },
+    {
+      "id": "t13-q172",
+      "pregunta": "¿Por qué la filtración por membrana es, a la vez, una técnica de recuento y de concentración?",
+      "opciones": [
+        "Porque las bacterias se multiplican en la membrana antes de sembrarla.",
+        "Porque el vacío elimina las bacterias que no interesan.",
+        "Porque toda la muestra filtrada deja sus bacterias en la membrana."
+      ],
+      "correcta": 2,
+      "explicacion": "Con 100 mL filtrados, las colonias de la membrana son las de esos 100 mL.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Toda la muestra filtrada deja sus bacterias en la membrana."
+    },
+    {
+      "id": "t13-q173",
+      "pregunta": "¿Qué deben cumplir las membranas con cuadrícula?",
+      "opciones": [
+        "Tener exactamente 100 cuadros.",
+        "No inhibir ni favorecer el crecimiento a lo largo de las líneas.",
+        "Ser de 142 mm para que quepa la cuadrícula."
+      ],
+      "correcta": 1,
+      "explicacion": "La cuadrícula facilita el recuento, pero no puede alterar el crecimiento de las colonias.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "no deben inhibir ni favorecer el crecimiento a lo largo de las líneas"
+    },
+    {
+      "id": "t13-q174",
+      "pregunta": "¿Qué forma el equipo de filtración por membrana?",
+      "opciones": [
+        "Una base porosa, un embudo y vacío.",
+        "Una jeringa, un filtro de jeringa y un tubo.",
+        "Un rotor, tubos de centrífuga y una pipeta."
+      ],
+      "correcta": 0,
+      "explicacion": "La membrana va sobre la base porosa, el embudo encima y el vacío tira del agua.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Equipo: base porosa, embudo (a veces graduado) y vacío."
+    },
+    {
+      "id": "t13-q175",
+      "pregunta": "Entre una muestra y otra, ¿cómo se puede desinfectar el embudo de filtración?",
+      "opciones": [
+        "Pasándole un papel con alcohol y dejándolo secar.",
+        "En agua destilada hirviendo al menos 1 minuto.",
+        "Aclarándolo con un poco de la siguiente muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La otra opción es usar un embudo estéril nuevo.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "entre muestras se pueden desinfectar en agua destilada hirviendo al menos 1 minuto"
+    },
+    {
+      "id": "t13-q176",
+      "pregunta": "¿Cuándo no basta con desinfectar el embudo en agua hirviendo?",
+      "opciones": [
+        "Cuando se buscan esporas, por ejemplo de Clostridium perfringens.",
+        "Cuando se filtran aguas tratadas.",
+        "Cuando se filtran volúmenes de 100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Las esporas resisten el agua hirviendo; hace falta un embudo estéril.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "El agua hirviendo no basta si se buscan esporas"
+    },
+    {
+      "id": "t13-q177",
+      "pregunta": "Se van a filtrar solo 5 mL de muestra. ¿Qué se hace y para qué?",
+      "opciones": [
+        "Se filtran directamente, para no diluir las bacterias.",
+        "Se añaden antes 20-30 mL de medio de cultivo, para que las bacterias empiecen a crecer.",
+        "Se añaden antes 20-30 mL de tampón estéril al embudo, para que las bacterias se repartan por toda la membrana."
+      ],
+      "correcta": 2,
+      "explicacion": "Con menos de 20 mL, el agua no cubre bien la membrana y las colonias se amontonan; el tampón no cambia el número de bacterias filtradas.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "se añaden antes 20-30 mL de tampón estéril al embudo, para que las bacterias se repartan por toda la membrana"
+    },
+    {
+      "id": "t13-q178",
+      "pregunta": "Después de filtrar, ¿cuántas veces se enjuagan, como mínimo, las paredes del embudo?",
+      "opciones": [
+        "Dos.",
+        "Ninguna.",
+        "Cinco."
+      ],
+      "correcta": 0,
+      "explicacion": "Se enjuagan para arrastrar a la membrana las bacterias que quedan en las paredes.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Después se enjuagan las paredes del embudo al menos dos veces."
+    },
+    {
+      "id": "t13-q179",
+      "pregunta": "¿Cómo se coloca la membrana sobre el medio de cultivo?",
+      "opciones": [
+        "Cara abajo, con la cara filtrante contra el agar.",
+        "Cara arriba, dejando burbujas para que respire.",
+        "Cara arriba y sin burbujas debajo."
+      ],
+      "correcta": 2,
+      "explicacion": "Las burbujas impiden el contacto con el medio y por encima de ellas no crece nada.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "La membrana se coloca cara arriba sobre el medio selectivo y diferencial, sin burbujas debajo."
+    },
+    {
+      "id": "t13-q180",
+      "pregunta": "¿Cómo deben ser las membranas de filtración?",
+      "opciones": [
+        "Reutilizables tras esterilizarlas en autoclave.",
+        "Estériles, de un solo uso y dentro de su caducidad.",
+        "De cualquier tamaño de poro, si son estériles."
+      ],
+      "correcta": 1,
+      "explicacion": "No se reutilizan, y el poro depende del microorganismo buscado.",
+      "fuente": "SCA (2017), apdo. 7.2; EPA, Method 1103.2 (2023) · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "estériles, de un solo uso y dentro de su caducidad."
+    },
+    {
+      "id": "t13-q181",
+      "pregunta": "Según la EPA, ¿cuántas colonias diana tiene que tener, como mínimo, una membrana para estar en el intervalo válido?",
+      "opciones": [
+        "10.",
+        "30.",
+        "20."
+      ],
+      "correcta": 2,
+      "explicacion": "El intervalo de la membrana es de 20 a 80 colonias del microorganismo buscado. 10 es el mínimo de las placas.",
+      "fuente": "EPA, Method 1103.2 (2023); resumen oficial de la ISO 9308-1 (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "crezcan entre 20 y 80 colonias del microorganismo buscado"
+    },
+    {
+      "id": "t13-q182",
+      "pregunta": "¿Qué le pasa al recuento de una membrana con más de 80 colonias diana?",
+      "opciones": [
+        "Gana exactitud, porque hay más colonias.",
+        "Pierde exactitud.",
+        "No cambia: el tope es 300, como en las placas."
+      ],
+      "correcta": 1,
+      "explicacion": "En la membrana de 47 mm las colonias se amontonan antes que en una placa; por eso el tope es 80.",
+      "fuente": "EPA, Method 1103.2 (2023); resumen oficial de la ISO 9308-1 (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Por encima de 80 el recuento pierde exactitud."
+    },
+    {
+      "id": "t13-q183",
+      "pregunta": "¿Qué diferencia hay entre las 80 colonias de la EPA y las 100 del resumen de la ISO 9308-1?",
+      "opciones": [
+        "Las 80 son del microorganismo diana; las 100, el total de colonias del medio.",
+        "Las 80 son para membranas de 90 mm; las 100, para las de 47 mm.",
+        "Las 80 son de coliformes; las 100, de E. coli."
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos cifras distintas: una cuenta solo el diana y la otra todo lo que crece en el medio.",
+      "fuente": "EPA, Method 1103.2 (2023); resumen oficial de la ISO 9308-1 (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Esas 100 son el total de colonias; las 80 son las del microorganismo diana."
+    },
+    {
+      "id": "t13-q184",
+      "pregunta": "¿Cuál de estas muestras es típica del método de la ISO 9308-1 (E. coli y coliformes por filtración en agar CCA)?",
+      "opciones": [
+        "Un lodo de depuradora.",
+        "Un agua de río muy turbia.",
+        "El agua de salida de una potabilizadora."
+      ],
+      "correcta": 2,
+      "explicacion": "El método va bien con aguas que dan pocas colonias en total: agua de consumo, de piscina desinfectada o de salida de potabilizadora. Lodos y aguas turbias atascan la membrana.",
+      "fuente": "EPA, Method 1103.2 (2023); resumen oficial de la ISO 9308-1 (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "agua de consumo, de piscina desinfectada, de salida de potabilizadora"
+    },
+    {
+      "id": "t13-q185",
+      "pregunta": "Un agua lleva unas 400 ufc/100 mL de E. coli. ¿Qué volumen conviene filtrar para que la membrana quede entre 20 y 80 colonias?",
+      "opciones": [
+        "100 mL, con unas 400 colonias.",
+        "10 mL, con unas 40 colonias.",
+        "1 mL, con unas 4 colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "400 por 100 mL son 4 por mL: 10 mL dan unas 40. Con 100 mL se pasaría de 80, y con 1 mL no se llegaría a 20.",
+      "fuente": "EPA, Method 1103.2 (2023); resumen oficial de la ISO 9308-1 (SNV) · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "El volumen se elige para que en la membrana crezcan entre 20 y 80 colonias"
+    },
+    {
+      "id": "t13-q186",
+      "pregunta": "¿Cómo se calcula el recuento por 100 mL en la filtración por membrana?",
+      "opciones": [
+        "Colonias ÷ volumen filtrado (mL) × 100.",
+        "Colonias × volumen filtrado (mL) ÷ 100.",
+        "Colonias ÷ 100 × volumen filtrado (mL)."
+      ],
+      "correcta": 0,
+      "explicacion": "Se pasa a 1 mL dividiendo por lo filtrado y a 100 mL multiplicando por 100.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100"
+    },
+    {
+      "id": "t13-q187",
+      "pregunta": "Una membrana de 10 mL da 60 colonias y otra de 1 mL da 25; las dos están en el intervalo de 20-80. ¿Qué resultado se da según la EPA?",
+      "opciones": [
+        "1550 ufc/100 mL.",
+        "600 ufc/100 mL.",
+        "773 ufc/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada una se calcula aparte: 60 ÷ 10 × 100 = 600 y 25 ÷ 1 × 100 = 2500. Se da la media: (600 + 2500) ÷ 2 = 1550. Sumar colonias y volúmenes (85 ÷ 11 × 100) no es la regla.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Dos volúmenes válidos | 75 en 10 mL y 30 en 1 mL | 750 y 3000 → media 1875 ufc/100 mL"
+    },
+    {
+      "id": "t13-q188",
+      "pregunta": "Las membranas de 100, 10 y 1 mL dan 12, 2 y 0 colonias: todas por debajo de 20. ¿Qué se informa según la EPA?",
+      "opciones": [
+        "14 ufc/100 mL, sumando las colonias.",
+        "12 ufc/100 mL, de la membrana más cercana al intervalo.",
+        "< 20 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Cuando todas quedan por debajo se usa la más cercana al intervalo, la de 12 colonias en 100 mL: 12 ufc/100 mL.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Todas por debajo | 17, 1 y 0 en 100, 10 y 1 mL | La más cercana: 17 ufc/100 mL"
+    },
+    {
+      "id": "t13-q189",
+      "pregunta": "Un agua se analiza filtrando 50, 10 y 1 mL y no crece nada en ninguna membrana. Según la EPA, el resultado se calcula como si hubiera 1 colonia en:",
+      "opciones": [
+        "La membrana de 1 mL: < 100 ufc/100 mL.",
+        "Ninguna: se informa 0 ufc/100 mL.",
+        "La membrana de 50 mL: < 2 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Se toma el volumen mayor: 1 ÷ 50 × 100 = 2, y se informa como menor que 2.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Como si hubiera 1 en el volumen mayor"
+    },
+    {
+      "id": "t13-q190",
+      "pregunta": "Todas las membranas pasan de 80 colonias: 140 en 1 mL y 95 en 0,1 mL. ¿Qué se informa según la EPA?",
+      "opciones": [
+        "Estimado 9,5 × 10⁴ ufc/100 mL, con el menor volumen.",
+        "Estimado 1,4 × 10⁴ ufc/100 mL, con el mayor volumen.",
+        "Estimado 5,5 × 10⁴ ufc/100 mL, con la media de las dos."
+      ],
+      "correcta": 0,
+      "explicacion": "Cuando todas pasan del intervalo se calcula con el menor volumen: 95 ÷ 0,1 × 100 = 95 000 ufc/100 mL, como estimado.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Con el menor volumen: estimado 1,1 × 10⁶ ufc/100 mL"
+    },
+    {
+      "id": "t13-q191",
+      "pregunta": "Se filtra 1 mL de una dilución 1:10 de un agua residual, es decir, 0,1 mL de muestra, y salen 35 colonias. ¿Qué recuento tiene el agua?",
+      "opciones": [
+        "3,5 × 10³ ufc/100 mL.",
+        "3,5 × 10⁵ ufc/100 mL.",
+        "3,5 × 10⁴ ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "35 ÷ 0,1 × 100 = 35 000 ufc/100 mL. Olvidar la dilución da 3500; multiplicar dos veces por ella, 350 000.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Recuento por 100 mL = colonias ÷ volumen filtrado (mL) × 100"
+    },
+    {
+      "id": "t13-q192",
+      "pregunta": "Tres membranas réplica de 50 mL cada una dan 30, 36 y 33 colonias. ¿Qué resultado se da?",
+      "opciones": [
+        "33 ufc/100 mL.",
+        "66 ufc/100 mL.",
+        "198 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Las tres dan 60, 72 y 66 ufc/100 mL (colonias ÷ 50 × 100); la media es 66. Sin pasar a 100 mL saldría 33, y sumándolas, 198.",
+      "fuente": "EPA, Method 1103.2 (2023), apéndice B · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Réplicas | 24 y 36 colonias en 100 mL cada una | Media: 30 ufc/100 mL"
+    },
+    {
+      "id": "t13-q193",
+      "pregunta": "Se filtran 100 mL y en agar CCA salen 31 colonias rosas oxidasa negativas y 12 azul oscuro a violeta. ¿Cuántas ufc/100 mL de E. coli hay?",
+      "opciones": [
+        "43.",
+        "12.",
+        "31."
+      ],
+      "correcta": 1,
+      "explicacion": "E. coli son solo las azul oscuro a violeta: 12. 43 es el total de coliformes (31 + 12).",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "las colonias azul oscuro a violeta son E. coli"
+    },
+    {
+      "id": "t13-q194",
+      "pregunta": "Se filtran 50 mL y en agar CCA salen 18 colonias rosas oxidasa negativas y 7 azul oscuro a violeta. ¿Cuántos coliformes hay por 100 mL?",
+      "opciones": [
+        "50 ufc/100 mL.",
+        "36 ufc/100 mL.",
+        "25 ufc/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Coliformes = rosas + violetas = 25 en 50 mL; 25 ÷ 50 × 100 = 50. Contar solo las rosas da 36, y no pasar a 100 mL, 25.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "por tanto, coliformes = rosas oxidasa negativas + azul-violeta"
+    },
+    {
+      "id": "t13-q195",
+      "pregunta": "En agar CCA, ¿qué colonias son coliformes que no son E. coli?",
+      "opciones": [
+        "Las azul oscuro a violeta.",
+        "Las rosas a rojas, oxidasa positivas.",
+        "Las rosas a rojas, oxidasa negativas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las azul-violeta son E. coli; las rosas oxidasa positivas no son coliformes.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "las colonias rosas a rojas, oxidasa negativas, son coliformes que no son E. coli"
+    },
+    {
+      "id": "t13-q196",
+      "pregunta": "¿Por qué E. coli da colonias azul oscuro a violeta en agar CCA?",
+      "opciones": [
+        "Porque tiene las dos enzimas, β-galactosidasa y β-glucuronidasa.",
+        "Porque es oxidasa positiva.",
+        "Porque solo tiene β-galactosidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "Con la β-galactosidasa sola sale rosa (coliforme); la β-glucuronidasa añade el azul. Por eso E. coli O157, sin β-glucuronidasa, sale como coliforme.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "las colonias azul oscuro a violeta son E. coli, que tiene las dos enzimas"
+    },
+    {
+      "id": "t13-q197",
+      "pregunta": "Según la definición británica, ¿a qué temperatura crecen los coliformes?",
+      "opciones": [
+        "A 44 °C.",
+        "A 22 °C.",
+        "A 37 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Son enterobacterias que crecen a 37 °C y tienen β-galactosidasa. Los 44 °C se usan en la confirmación de E. coli.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "La guía británica define los coliformes como enterobacterias que crecen a 37 °C"
+    },
+    {
+      "id": "t13-q198",
+      "pregunta": "¿Qué género incluye la definición británica de coliformes?",
+      "opciones": [
+        "Enterococcus.",
+        "Escherichia.",
+        "Pseudomonas."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso, en el agua, E. coli forma parte de los coliformes y se suma a ellos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4; plantilla del 1322, 2.º ejercicio · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "β-galactosidasa, e incluye el género Escherichia"
+    },
+    {
+      "id": "t13-q199",
+      "pregunta": "De 30 colonias sospechosas se prueban 10. ¿Cuántas tienen que confirmarse para que el recuento confirmado sea 24?",
+      "opciones": [
+        "8.",
+        "24.",
+        "9."
+      ],
+      "correcta": 0,
+      "explicacion": "De x × N ÷ n = 24 sale x = 24 × 10 ÷ 30 = 8. Con 9 confirmadas el recuento sería 27.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Recuento confirmado = x × N ÷ n"
+    },
+    {
+      "id": "t13-q200",
+      "pregunta": "Una membrana de 50 mL tiene 40 colonias típicas; se prueban 10 y se confirman 8. ¿Cuál es el recuento confirmado por 100 mL?",
+      "opciones": [
+        "32 ufc/100 mL.",
+        "80 ufc/100 mL.",
+        "64 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Confirmadas: 8 × 40 ÷ 10 = 32 en 50 mL; 32 ÷ 50 × 100 = 64. Sin pasar a 100 mL saldría 32; sin confirmar, 80.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Si de N colonias sospechosas se prueban n y se confirman x"
+    },
+    {
+      "id": "t13-q201",
+      "pregunta": "En aguas tratadas, ¿cuántas colonias sospechosas se confirman?",
+      "opciones": [
+        "Una de cada diez.",
+        "Tantas como sea posible.",
+        "Ninguna, porque el medio ya es confirmatorio."
+      ],
+      "correcta": 1,
+      "explicacion": "En el agua tratada cada colonia cuenta mucho; por eso se confirman todas las que se pueda.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "En aguas tratadas, se confirman tantas como sea posible."
+    },
+    {
+      "id": "t13-q202",
+      "pregunta": "¿Cómo se eligen las colonias que se van a confirmar?",
+      "opciones": [
+        "Al azar y representando los distintos aspectos.",
+        "Las más grandes, que son las más fiables.",
+        "Las del centro de la membrana."
+      ],
+      "correcta": 0,
+      "explicacion": "Si se eligieran por tamaño o posición, la proporción confirmada no representaría a todas.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Las colonias se eligen al azar y representando los distintos aspectos."
+    },
+    {
+      "id": "t13-q203",
+      "pregunta": "En la fórmula del recuento confirmado, x × N ÷ n, ¿qué es n?",
+      "opciones": [
+        "Las colonias que se confirman.",
+        "El total de colonias sospechosas de la membrana.",
+        "Las colonias sospechosas que se prueban."
+      ],
+      "correcta": 2,
+      "explicacion": "N son las sospechosas, n las que se prueban y x las que se confirman.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Si de N colonias sospechosas se prueban n y se confirman x"
+    },
+    {
+      "id": "t13-q204",
+      "pregunta": "Frente al NMP en tubos, ¿qué ahorra la filtración por membrana?",
+      "opciones": [
+        "Equipo de vacío.",
+        "Trabajo, medio y vidrio.",
+        "Tiempo de confirmación, porque no hace falta confirmar nada."
+      ],
+      "correcta": 1,
+      "explicacion": "El NMP necesita muchos tubos. La filtración sí necesita vacío y, si hace falta, confirmación de las colonias.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Menos trabajo, menos medio y menos vidrio"
+    },
+    {
+      "id": "t13-q205",
+      "pregunta": "¿Por qué la filtración por membrana no sirve con aguas turbias?",
+      "opciones": [
+        "Porque la turbidez cambia el color de las colonias.",
+        "Porque las partículas arrastran a las bacterias a través del poro.",
+        "Porque la membrana se atasca y el depósito puede inhibir el crecimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Para aguas turbias, con sedimento o lodos, es mejor el NMP.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "la membrana se atasca y el depósito puede inhibir el crecimiento"
+    },
+    {
+      "id": "t13-q206",
+      "pregunta": "Frente a la filtración, ¿en qué destaca el NMP en tubos?",
+      "opciones": [
+        "Da menos falsos positivos.",
+        "Es más sensible para números muy bajos.",
+        "Da colonias aisladas listas para confirmar."
+      ],
+      "correcta": 1,
+      "explicacion": "Menos falsos positivos y colonias aisladas son ventajas de la filtración.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Más sensible para números muy bajos"
+    },
+    {
+      "id": "t13-q207",
+      "pregunta": "Según la guía británica, ¿cuál de las dos técnicas da menos falsos positivos?",
+      "opciones": [
+        "La filtración por membrana.",
+        "El NMP en tubos.",
+        "Las dos dan los mismos."
+      ],
+      "correcta": 0,
+      "explicacion": "Algunos medios del NMP en tubos dan falsos positivos.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Menos falsos positivos | Algunos medios dan falsos positivos"
+    },
+    {
+      "id": "t13-q208",
+      "pregunta": "A las 18 horas, además del resultado presuntivo, ¿qué deja la filtración que facilita la confirmación?",
+      "opciones": [
+        "Tubos con gas.",
+        "Un caldo turbio que hay que resembrar.",
+        "Colonias ya aisladas."
+      ],
+      "correcta": 2,
+      "explicacion": "En el NMP hay que resembrar los tubos positivos; en la membrana las colonias ya están separadas.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "con colonias ya aisladas para confirmar"
     }
   ],
   "supuestos": [
