@@ -1770,6 +1770,468 @@
       "fuente": "Eurachem, Accreditation for Microbiological Laboratories, 8.2 · apunte §3",
       "apartado": "3",
       "evidencia": "| **Especificidad** (características) | ¿Da el diana su **aspecto típico**? | Color, halo, fluorescencia… **anotados** |"
+    },
+    {
+      "id": "t17-q81",
+      "pregunta": "¿Qué es el control de calidad, según el encuadre del tema?",
+      "opciones": [
+        "El conjunto de comprobaciones que demuestran que un resultado es fiable.",
+        "El conjunto de normas que obligan a acreditar un laboratorio.",
+        "La repetición de cada análisis por un segundo analista."
+      ],
+      "correcta": 0,
+      "explicacion": "La acreditación y el recuento entre dos analistas son herramientas concretas, no la definición.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8 · apunte §1",
+      "apartado": "1",
+      "evidencia": "El control de calidad es el conjunto de comprobaciones que demuestran que un resultado es fiable."
+    },
+    {
+      "id": "t17-q82",
+      "pregunta": "¿Cuál es la primera particularidad del control de calidad en microbiología?",
+      "opciones": [
+        "Que el «patrón» está vivo.",
+        "Que no existen normas aplicables.",
+        "Que los resultados son siempre exactos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los medios, reactivos y técnicas se comprueban con microorganismos de control, que hay que conservar sin que cambien.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8 · apunte §1",
+      "apartado": "1",
+      "evidencia": "El «patrón» está vivo. Un medio, un reactivo o una técnica se comprueban con microorganismos de control"
+    },
+    {
+      "id": "t17-q83",
+      "pregunta": "¿Por qué en microbiología los límites de control se fijan con más datos que en química?",
+      "opciones": [
+        "Porque los equipos son menos exactos.",
+        "Porque los recuentos varían mucho por azar.",
+        "Porque las normas obligan a 60 datos en cualquier ensayo."
+      ],
+      "correcta": 1,
+      "explicacion": "Dos submuestras del mismo agua dan recuentos distintos aunque todo se haya hecho bien.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Los recuentos varían mucho por azar."
+    },
+    {
+      "id": "t17-q84",
+      "pregunta": "¿Por qué la guía británica prefiere hablar de «gráficos de orientación» y de líneas de respuesta?",
+      "opciones": [
+        "Porque los gráficos de control están prohibidos en microbiología.",
+        "Porque un punto fuera obliga a rechazar la tanda sin investigar.",
+        "Porque un punto fuera indica que algo probablemente va mal y obliga a investigar."
+      ],
+      "correcta": 2,
+      "explicacion": "Con la variabilidad de los recuentos, un punto fuera es una señal para investigar, no una condena automática.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8 · apunte §1",
+      "apartado": "1",
+      "evidencia": "un punto fuera indica que algo probablemente va mal, y obliga a investigar"
+    },
+    {
+      "id": "t17-q85",
+      "pregunta": "¿A qué distribución estadística atribuye el apunte la variación por azar de los recuentos?",
+      "opciones": [
+        "A la normal.",
+        "A la de Poisson.",
+        "A la de ji cuadrado."
+      ],
+      "correcta": 1,
+      "explicacion": "La ji cuadrado se usa para comparar el índice de dispersión, y la normal es la forma a la que se acercan los recuentos transformados.",
+      "fuente": "SCA, Practices and Procedures for Laboratories (2017), 8 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Dos submuestras del mismo agua dan recuentos distintos aunque todo se haya hecho bien (tema 13, distribución de Poisson)."
+    },
+    {
+      "id": "t17-q86",
+      "pregunta": "Según la guía británica, ¿qué incluye un programa de calidad en microbiología?",
+      "opciones": [
+        "Demostrar que cada medio o reactivo preparado sirve, usar materiales de referencia cuantitativos, participar en evaluaciones externas y comprobar los equipos.",
+        "Acreditar todos los métodos por la ISO 9001.",
+        "Repetir todos los análisis en un segundo laboratorio."
+      ],
+      "correcta": 0,
+      "explicacion": "Son los cuatro puntos del programa; además hace falta combinar el control interno y el externo.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "demostrar que cada medio o reactivo preparado sirve"
+    },
+    {
+      "id": "t17-q87",
+      "pregunta": "¿Qué añade la guía británica sobre los dos tipos de control?",
+      "opciones": [
+        "Que el externo puede sustituir al interno si es anual.",
+        "Que el interno basta si el laboratorio está acreditado.",
+        "Que hace falta combinar el control interno y el externo."
+      ],
+      "correcta": 2,
+      "explicacion": "Cada uno demuestra algo distinto: el interno, que hoy el método funciona igual; el externo, que el laboratorio da lo mismo que los demás.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "hace falta combinar el control interno y el externo"
+    },
+    {
+      "id": "t17-q88",
+      "pregunta": "¿Quién hace el control de calidad interno y con qué frecuencia?",
+      "opciones": [
+        "Un organizador independiente, una vez al año.",
+        "La entidad de acreditación, en cada auditoría.",
+        "El propio laboratorio, a diario."
+      ],
+      "correcta": 2,
+      "explicacion": "El organizador independiente es el del control externo.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Quién | El propio laboratorio, a diario | Un organizador independiente |"
+    },
+    {
+      "id": "t17-q89",
+      "pregunta": "Un laboratorio solo hace controles positivo, negativo y blanco en cada tanda, duplicados y gráficos propios. ¿Qué parte del programa de calidad le falta?",
+      "opciones": [
+        "El control interno.",
+        "El control externo.",
+        "El control de medios."
+      ],
+      "correcta": 1,
+      "explicacion": "Lo que hace es control interno; hace falta combinarlo con el externo, que lo organiza un tercero independiente.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "hace falta combinar el control interno y el externo"
+    },
+    {
+      "id": "t17-q90",
+      "pregunta": "Las muestras de un ensayo de aptitud, ¿quién las reparte?",
+      "opciones": [
+        "Un organizador independiente.",
+        "El propio laboratorio, de su archivo de muestras.",
+        "La entidad de acreditación, en la auditoría."
+      ],
+      "correcta": 0,
+      "explicacion": "Es lo que distingue al control externo: las muestras vienen de fuera, y con ellas se comprueba todo el proceso.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "Muestras que reparte el organizador (ensayos de aptitud o intercomparaciones)"
+    },
+    {
+      "id": "t17-q91",
+      "pregunta": "En el agua de consumo, ¿qué obliga a acreditar el RD 3/2023 y con qué norma?",
+      "opciones": [
+        "El laboratorio entero, por la ISO 9001.",
+        "Los métodos, por la UNE-EN ISO/IEC 17025.",
+        "Los materiales de referencia, por la ISO 17034."
+      ],
+      "correcta": 1,
+      "explicacion": "La ISO 17034 es la de los productores de materiales de referencia.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "En el agua de consumo, el RD 3/2023 obliga a acreditar los métodos por la UNE-EN ISO/IEC 17025"
+    },
+    {
+      "id": "t17-q92",
+      "pregunta": "¿Qué análisis se exceptúan de la obligación de acreditación del RD 3/2023?",
+      "opciones": [
+        "Los análisis microbiológicos, que van por la ISO 11133.",
+        "Los análisis de las aguas envasadas.",
+        "Los análisis operacionales y de rutina, si el laboratorio solo hace esos."
+      ],
+      "correcta": 2,
+      "explicacion": "La excepción es por el tipo de análisis, y solo si el laboratorio no hace otros.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "Se exceptúan los análisis operacionales y de rutina si el laboratorio solo hace esos."
+    },
+    {
+      "id": "t17-q93",
+      "pregunta": "¿De qué depende el plazo de acreditación que fijó el RD 3/2023 a cada laboratorio?",
+      "opciones": [
+        "Del volumen de muestras que analiza al año.",
+        "Del número de parámetros que determina.",
+        "De la población abastecida por la red que analiza."
+      ],
+      "correcta": 0,
+      "explicacion": "Más de 5000 muestras al año, 2024; entre 300 y 5000, 2028; y la toma de muestras, 2030.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "Los plazos dependen del volumen (disposición adicional octava)"
+    },
+    {
+      "id": "t17-q94",
+      "pregunta": "Según la disposición adicional octava del RD 3/2023, ¿cuál era el plazo para acreditar la toma de muestras?",
+      "opciones": [
+        "El 2 de enero de 2024.",
+        "El 2 de enero de 2030.",
+        "El 2 de enero de 2028."
+      ],
+      "correcta": 1,
+      "explicacion": "Las fechas de 2024 y 2028 son las de los métodos, según el número de muestras al año.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "| La toma de muestras (salvo análisis operacionales y de rutina) | 2 de enero de 2030 |"
+    },
+    {
+      "id": "t17-q95",
+      "pregunta": "Un laboratorio analiza 1200 muestras de agua de consumo al año. ¿Qué plazo de acreditación le correspondía?",
+      "opciones": [
+        "El de 2024, porque pasa de 300 muestras.",
+        "El de 2030, el mismo que la toma de muestras.",
+        "El de 2028, por estar entre 300 y 5000 muestras."
+      ],
+      "correcta": 2,
+      "explicacion": "1200 está en la franja de 300 a 5000: 2 de enero de 2028.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Entre 300 y 5000 muestras al año | 2 de enero de 2028 |"
+    },
+    {
+      "id": "t17-q96",
+      "pregunta": "Mientras un método no está acreditado, ¿cómo debe tenerlo el laboratorio?",
+      "opciones": [
+        "Validado y documentado según el anexo III, parte E.",
+        "Suspendido hasta la acreditación.",
+        "Verificado por el fabricante del kit."
+      ],
+      "correcta": 0,
+      "explicacion": "La parte E pide evaluar veracidad, precisión e incertidumbre, y detalla lo que debe contener el procedimiento escrito.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "el laboratorio debe tenerlo validado y documentado según el anexo III, parte E"
+    },
+    {
+      "id": "t17-q97",
+      "pregunta": "¿Cuál de estos contenidos exige el anexo III, parte E del RD 3/2023 en un procedimiento escrito?",
+      "opciones": [
+        "El organigrama del laboratorio.",
+        "El precio por determinación.",
+        "Los criterios de aceptación y rechazo."
+      ],
+      "correcta": 2,
+      "explicacion": "La lista incluye identificación, alcance, tipo de muestra, parámetros, equipos, patrones y materiales de referencia, condiciones ambientales, verificaciones, calibración, registro, seguridad, criterios de aceptación y rechazo e incertidumbre.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "criterios de aceptación y rechazo e incertidumbre"
+    },
+    {
+      "id": "t17-q98",
+      "pregunta": "Entre los contenidos del procedimiento que pide la parte E, ¿qué se exige antes de empezar un análisis?",
+      "opciones": [
+        "Una intercomparación con otro laboratorio.",
+        "Las verificaciones previas y la calibración de los equipos.",
+        "La firma del titular del abastecimiento."
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos de los puntos de la lista del procedimiento escrito.",
+      "fuente": "SCA (2017), 8; Eurachem (2023), 13; RD 3/2023, anexo III, partes B y E · apunte §2",
+      "apartado": "2",
+      "evidencia": "verificaciones antes de empezar, calibración de los equipos"
+    },
+    {
+      "id": "t17-q99",
+      "pregunta": "¿Cuál es la norma de referencia del control de medios de cultivo?",
+      "opciones": [
+        "La ISO 11133.",
+        "La ISO 11731.",
+        "La ISO 17034."
+      ],
+      "correcta": 0,
+      "explicacion": "La 11731 es la de Legionella y la 17034, la de los productores de materiales de referencia.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Los procedimientos detallados están en la ISO 11133, la norma de referencia del control de medios."
+    },
+    {
+      "id": "t17-q100",
+      "pregunta": "¿Cómo se comprueba la productividad de un medio?",
+      "opciones": [
+        "Incubando el medio sin sembrar.",
+        "Sembrando el diana y midiendo cuánto crece.",
+        "Sembrando un no diana y comprobando que no crece."
+      ],
+      "correcta": 1,
+      "explicacion": "Incubar sin sembrar es la esterilidad; sembrar un no diana, la selectividad.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Se siembra el diana y se mide cuánto crece"
+    },
+    {
+      "id": "t17-q101",
+      "pregunta": "¿Qué otro nombre recibe la productividad de un medio?",
+      "opciones": [
+        "Inhibición.",
+        "Trazabilidad.",
+        "Recuperación."
+      ],
+      "correcta": 2,
+      "explicacion": "La inhibición es el otro nombre de la selectividad.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Productividad (recuperación) | ¿Crece bien el microorganismo buscado? |"
+    },
+    {
+      "id": "t17-q102",
+      "pregunta": "¿Qué propiedad de un medio se comprueba midiendo pH, volumen y aspecto?",
+      "opciones": [
+        "Las propiedades físicas.",
+        "La especificidad.",
+        "La productividad."
+      ],
+      "correcta": 0,
+      "explicacion": "La especificidad es el aspecto típico de las colonias del diana y la productividad, cuánto crece.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Propiedades físicas | pH, volumen, aspecto | Medida directa |"
+    },
+    {
+      "id": "t17-q103",
+      "pregunta": "Al comprobar la selectividad de un medio, ¿qué resultado se espera del no diana?",
+      "opciones": [
+        "Que crezca con su aspecto típico.",
+        "Que crezca al menos al 50 % del diana.",
+        "Que no crezca o crezca poco."
+      ],
+      "correcta": 2,
+      "explicacion": "El aspecto típico se valora en el diana (especificidad) y el 50 % es el criterio de recuperación del propio diana en el medio selectivo.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Se siembra un no diana: no crece o crece poco"
+    },
+    {
+      "id": "t17-q104",
+      "pregunta": "¿Por qué el apunte advierte de que la ISO 11133 no se ha leído?",
+      "opciones": [
+        "Porque está derogada.",
+        "Porque su texto es de pago, y lo del apunte sale de las dos guías que la aplican.",
+        "Porque no se aplica en España."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una de las dudas declaradas: sus criterios se citan a través de la guía británica y de Eurachem.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3",
+      "apartado": "3",
+      "evidencia": "No se ha leído su texto, que es de pago: lo que sigue sale de las dos guías que la aplican."
+    },
+    {
+      "id": "t17-q105",
+      "pregunta": "¿Cómo se identifica cada lote de medio preparado?",
+      "opciones": [
+        "Con un número de lote, y se etiqueta con ese número y su fecha de caducidad.",
+        "Solo con la fecha de preparación.",
+        "Con las iniciales del fabricante del medio deshidratado."
+      ],
+      "correcta": 0,
+      "explicacion": "En el registro del lote se anotan además los lotes de los componentes.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Cada lote preparado se identifica, normalmente con un número de lote, y se etiqueta con ese número y su fecha de caducidad."
+    },
+    {
+      "id": "t17-q106",
+      "pregunta": "Si el medio es comercial, ¿qué se anota en el registro del lote?",
+      "opciones": [
+        "El número de colada del autoclave.",
+        "La conductividad del agua de preparación.",
+        "El lote del fabricante."
+      ],
+      "correcta": 2,
+      "explicacion": "En los medios preparados en el laboratorio se anotan los lotes de sus componentes.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "si el medio es comercial, el lote del fabricante"
+    },
+    {
+      "id": "t17-q107",
+      "pregunta": "¿Qué datos de la esterilización se guardan de un lote de medio?",
+      "opciones": [
+        "Solo la hora de inicio del ciclo.",
+        "Por ejemplo, la gráfica de temperatura del autoclave, y las firmas de quien lo preparó.",
+        "El resultado del indicador biológico de cada frasco."
+      ],
+      "correcta": 1,
+      "explicacion": "Los registros incluyen los datos del ciclo y la firma del responsable de la preparación.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Se guardan los datos de la esterilización (por ejemplo, la gráfica de temperatura del autoclave) y las firmas de quien lo preparó."
+    },
+    {
+      "id": "t17-q108",
+      "pregunta": "¿Hasta cuándo queda en cuarentena un medio recién preparado?",
+      "opciones": [
+        "Hasta que se demuestra que sirve, si es posible.",
+        "Hasta que pasan 24 horas desde su preparación.",
+        "Hasta que caduca el lote anterior."
+      ],
+      "correcta": 0,
+      "explicacion": "La cuarentena evita usar en rutina un medio del que todavía no se sabe si cumple.",
+      "fuente": "SCA (2017), 6.10; Eurachem (2023), 8.2 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "El medio recién hecho queda en cuarentena, si es posible, hasta que se demuestra que sirve."
+    },
+    {
+      "id": "t17-q109",
+      "pregunta": "¿En qué se mide el pH de un medio de cultivo?",
+      "opciones": [
+        "En el frasco entero, antes de repartirlo.",
+        "En una alícuota de cada medio.",
+        "En una placa ya sembrada del lote."
+      ],
+      "correcta": 1,
+      "explicacion": "Se toma una alícuota para no comprometer el resto del lote.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "pH: se mide en una alícuota de cada medio."
+    },
+    {
+      "id": "t17-q110",
+      "pregunta": "¿Por qué no se ajusta el pH de un medio después de esterilizarlo?",
+      "opciones": [
+        "Porque se podría contaminar.",
+        "Porque el ajuste alteraría el volumen.",
+        "Porque el pH ya no cambia después del autoclave."
+      ],
+      "correcta": 0,
+      "explicacion": "Si el pH queda fuera de tolerancia, el medio se desecha.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "el pH no se ajusta después de esterilizar, porque se podría contaminar"
+    },
+    {
+      "id": "t17-q111",
+      "pregunta": "¿Cómo debe guardarse el medio deshidratado?",
+      "opciones": [
+        "En el frasco abierto, para que no condense.",
+        "En nevera a 5 ± 3 °C.",
+        "En el frasco bien cerrado."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 5 ± 3 °C son para los medios listos para usar; el polvo apelmazado o descolorido no se usa.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Medio deshidratado: el frasco bien cerrado."
+    },
+    {
+      "id": "t17-q112",
+      "pregunta": "¿Qué agua sirve para preparar los medios de cultivo?",
+      "opciones": [
+        "Destilada, desionizada o de ósmosis inversa, sin sustancias bactericidas, inhibidoras o interferentes.",
+        "Del grifo, si el abastecimiento es potable.",
+        "Tamponada con fosfato y esterilizada."
+      ],
+      "correcta": 0,
+      "explicacion": "Lo decisivo es que no lleve sustancias que impidan o falseen el crecimiento.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Agua de preparación: destilada, desionizada o de ósmosis inversa, sin sustancias bactericidas, inhibidoras o interferentes."
+    },
+    {
+      "id": "t17-q113",
+      "pregunta": "En un frasco de medio deshidratado, el polvo está agrietado. ¿Qué procede?",
+      "opciones": [
+        "Usarlo, si el frasco no ha caducado.",
+        "No usarlo.",
+        "Molerlo y filtrarlo antes de pesar."
+      ],
+      "correcta": 1,
+      "explicacion": "Apelmazado, agrietado o con cambio de color son los tres signos que lo descartan.",
+      "fuente": "SCA (2017), 6.10 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Si el polvo está apelmazado, agrietado o ha cambiado de color, no se usa."
     }
   ],
   "supuestos": [
