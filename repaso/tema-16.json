@@ -4154,6 +4154,496 @@
       "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
       "apartado": "9",
       "evidencia": "Necesita L-cisteína: crece en BCYE y no en BCYE sin cisteína (1233 #13)"
+    },
+    {
+      "id": "t16-q266",
+      "pregunta": "Coco grampositivo en racimos, catalasa positivo y coagulasa negativo. ¿Con qué encaja?",
+      "opciones": [
+        "Con un estafilococo distinto de S. aureus, como S. haemolyticus.",
+        "Con Staphylococcus aureus.",
+        "Con un enterococo."
+      ],
+      "correcta": 0,
+      "explicacion": "S. aureus sería coagulasa positivo, y los enterococos son catalasa negativos y van en cadena.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Staphylococcus aureus | Coco grampositivo en racimo, catalasa positivo y coagulasa positivo |"
+    },
+    {
+      "id": "t16-q267",
+      "pregunta": "Un bacilo gramnegativo da la oxidasa positiva y no fermenta la glucosa. ¿Qué prueba acaba de descartarse con el primer dato?",
+      "opciones": [
+        "Que sea una Pseudomonas, que sería oxidasa negativa.",
+        "Que sea una enterobacteria, que sería oxidasa negativa.",
+        "Que sea un coco grampositivo."
+      ],
+      "correcta": 1,
+      "explicacion": "La oxidasa es justamente lo que separa Pseudomonas de las enterobacterias.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Pseudomonas es oxidasa positiva y las enterobacterias, negativas."
+    },
+    {
+      "id": "t16-q268",
+      "pregunta": "Un aislado es ureasa positivo rápido e indol negativo. ¿Con qué género encaja?",
+      "opciones": [
+        "Con Proteus.",
+        "Con Escherichia.",
+        "Con Salmonella."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli es indol positiva y ureasa negativa; Salmonella es ureasa negativa e indol negativa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Ureasa: los Proteus dan positivo rápido."
+    },
+    {
+      "id": "t16-q269",
+      "pregunta": "Una enterobacteria es indol positiva. Entre las dos Klebsiella del apunte, ¿cuál es?",
+      "opciones": [
+        "Klebsiella pneumoniae.",
+        "Ninguna: las dos son indol negativas.",
+        "Klebsiella oxytoca."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el ejemplo de que los caracteres varían dentro de un género: K. pneumoniae es indol negativa.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Klebsiella oxytoca es indol positiva y K. pneumoniae, indol negativa"
+    },
+    {
+      "id": "t16-q270",
+      "pregunta": "En agar DCA crecen colonias incoloras con el centro negro. ¿Qué género cabe sospechar?",
+      "opciones": [
+        "Pseudomonas.",
+        "Salmonella.",
+        "Proteus."
+      ],
+      "correcta": 1,
+      "explicacion": "El centro negro es el sulfuro de hidrógeno que produce casi toda Salmonella.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "en agar DCA dan colonias incoloras con centro negro"
+    },
+    {
+      "id": "t16-q271",
+      "pregunta": "Dos tubos de la prueba de Hugh y Leifson quedan amarillos, el abierto y el sellado. ¿Qué dice el resultado?",
+      "opciones": [
+        "Que solo la oxida.",
+        "Que la bacteria fermenta la glucosa.",
+        "Que no utiliza la glucosa."
+      ],
+      "correcta": 1,
+      "explicacion": "Acidificar el tubo sellado, sin oxígeno, solo lo consigue un fermentador.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Fermentador: ácido (amarillo) en los dos tubos."
+    },
+    {
+      "id": "t16-q272",
+      "pregunta": "Una suspensión de Staphylococcus se agrumó sola en la gota de control de la coagulasa. ¿Qué validez tiene la prueba?",
+      "opciones": [
+        "Ninguna: hay autoaglutinación y no se puede interpretar.",
+        "Es un positivo claro de coagulasa.",
+        "Es un negativo de coagulasa."
+      ],
+      "correcta": 0,
+      "explicacion": "Para eso está la gota sin plasma: si se agruma sola, los grumos no vienen de la enzima.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "se pone una gota de control sin plasma para descartar la autoaglutinación"
+    },
+    {
+      "id": "t16-q273",
+      "pregunta": "La oxidasa se ha hecho con una colonia tomada de un medio con glucosa y sale negativa. ¿Qué cabe sospechar?",
+      "opciones": [
+        "Un falso positivo.",
+        "Que el reactivo estaba autooxidado.",
+        "Un falso negativo."
+      ],
+      "correcta": 2,
+      "explicacion": "Las colonias de medios con glucosa dan falsos negativos: hay que repetir con otro medio.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "No se hace con colonias de medios con glucosa (falsos negativos)."
+    },
+    {
+      "id": "t16-q274",
+      "pregunta": "Un enterococo del agua hidroliza la esculina. ¿Qué tipo de prueba es esa?",
+      "opciones": [
+        "Serológica.",
+        "Genética.",
+        "Bioquímica."
+      ],
+      "correcta": 2,
+      "explicacion": "Detecta una actividad enzimática; las serológicas miran antígenos y las genéticas, ADN o ARN.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "hidrólisis de la esculina (enterococos)"
+    },
+    {
+      "id": "t16-q275",
+      "pregunta": "Entre las otras pruebas del agua, ¿cuál mide si una bacteria licúa un medio sólido de proteína?",
+      "opciones": [
+        "La licuefacción de la gelatina.",
+        "La reducción de nitratos.",
+        "La hidrólisis de la esculina."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una de las cuatro pruebas con que se confirma C. perfringens.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "reducción de nitratos; - licuefacción de la gelatina"
+    },
+    {
+      "id": "t16-q276",
+      "pregunta": "¿Qué otra prueba del agua cita el apunte junto a la gelatina y la esculina?",
+      "opciones": [
+        "La prueba del tubo germinal.",
+        "La reducción de nitratos.",
+        "La oxidación-fermentación de Hugh y Leifson."
+      ],
+      "correcta": 1,
+      "explicacion": "El tubo germinal es de levaduras y la de Hugh y Leifson está entre las pruebas clave.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Otras pruebas del agua: - reducción de nitratos"
+    },
+    {
+      "id": "t16-q277",
+      "pregunta": "En una placa crecen dos tipos de colonia distintos. ¿Qué hay que hacer antes de identificar?",
+      "opciones": [
+        "Hacer el MALDI-TOF de la mezcla.",
+        "Aislarlos para trabajar con cultivos puros.",
+        "Tomar las dos colonias juntas para las pruebas bioquímicas."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin cultivo puro, las pruebas mezclan caracteres de dos microorganismos.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "si en la placa hay varios microorganismos, primero hay que aislarlos"
+    },
+    {
+      "id": "t16-q278",
+      "pregunta": "La aglutinación, el látex y la inmunofluorescencia son ejemplos de técnicas:",
+      "opciones": [
+        "Bioquímicas.",
+        "Morfológicas.",
+        "Serológicas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las bioquímicas miran enzimas y metabolismo; las morfológicas, la forma de la colonia y de la célula.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Serológicas | Antígenos de la superficie, con anticuerpos conocidos | Aglutinación, látex, inmunofluorescencia |"
+    },
+    {
+      "id": "t16-q279",
+      "pregunta": "Una colonia deja el agar sangre sin ningún cambio a su alrededor. ¿Cómo se informa hoy?",
+      "opciones": [
+        "Sin hemólisis.",
+        "Hemólisis α.",
+        "Hemólisis β."
+      ],
+      "correcta": 0,
+      "explicacion": "La α deja halo verdoso y la β, halo claro; lo que antes se llamaba γ hoy se dice «sin hemólisis».",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "| Sin hemólisis (antes, γ) | Sin cambio en el medio |"
+    },
+    {
+      "id": "t16-q280",
+      "pregunta": "Un microorganismo crece a 15 °C y apenas a 37 °C. ¿Qué grupo de temperatura es?",
+      "opciones": [
+        "Mesófilo.",
+        "Psicrófilo.",
+        "Termófilo."
+      ],
+      "correcta": 1,
+      "explicacion": "Los psicrófilos crecen de 2 a 5 °C con óptimo hacia 15 °C; los mesófilos tienen su óptimo en 30-40 °C.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Psicrófilo | 2-5 °C, con óptimo hacia 15 °C |"
+    },
+    {
+      "id": "t16-q281",
+      "pregunta": "Una bacteria solo crece en presencia de oxígeno. ¿Cómo se clasifica?",
+      "opciones": [
+        "Aerobia estricta.",
+        "Anaerobia facultativa.",
+        "Anaerobia estricta."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el caso de las Pseudomonas, que por eso no fermentan la glucosa.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| Aerobio estricto | Solo crece con oxígeno |"
+    },
+    {
+      "id": "t16-q282",
+      "pregunta": "Un hongo crece en forma de células redondeadas sueltas, mayores que una bacteria. ¿Qué es?",
+      "opciones": [
+        "Un moho.",
+        "Una espora bacteriana.",
+        "Una levadura."
+      ],
+      "correcta": 2,
+      "explicacion": "Las levaduras son unicelulares, de 3 a 5 veces el tamaño de una bacteria; los mohos se identifican por su morfología de colonia y esporulación.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Levaduras: unicelulares, de 3 a 5 veces el tamaño de una bacteria"
+    },
+    {
+      "id": "t16-q283",
+      "pregunta": "El MALDI-TOF da un resultado que no concuerda con el Gram del aislado. ¿Qué procede?",
+      "opciones": [
+        "Revisar: el resultado se interpreta junto con la morfología y las demás pruebas.",
+        "Aceptar el MALDI-TOF, que es el método principal.",
+        "Repetir solo el Gram, porque el espectro no falla."
+      ],
+      "correcta": 0,
+      "explicacion": "Depende de la base de datos y no distingue bien algunas especies: no se lee aislado del resto.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "el resultado se interpreta junto con la morfología y las demás pruebas"
+    },
+    {
+      "id": "t16-q284",
+      "pregunta": "¿Cuánto tarda en dar resultado un MALDI-TOF?",
+      "opciones": [
+        "24-48 horas.",
+        "5-7 días.",
+        "Minutos u horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una de sus ventajas, junto con la reproducibilidad y el bajo coste por muestra.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "Ventajas: resultado en minutos u horas, reproducible, sensible y barato por muestra."
+    },
+    {
+      "id": "t16-q285",
+      "pregunta": "En una precipitación hay mucho antígeno y poco anticuerpo. ¿Qué ocurre?",
+      "opciones": [
+        "Que el precipitado es mayor que en la proporción óptima.",
+        "Que no se alcanza la zona de equivalencia y el precipitado no se forma bien.",
+        "Que la reacción se convierte en una aglutinación."
+      ],
+      "correcta": 1,
+      "explicacion": "La precipitación necesita una proporción óptima de los dos; con exceso de uno, la red no se forma.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Hace falta una proporción óptima de antígeno y anticuerpo: la zona de equivalencia."
+    },
+    {
+      "id": "t16-q286",
+      "pregunta": "¿Qué aspecto debe tener la suspensión de la colonia antes de añadir el antisuero?",
+      "opciones": [
+        "Grumoso.",
+        "Transparente.",
+        "Lechoso y homogéneo."
+      ],
+      "correcta": 2,
+      "explicacion": "Si está grumosa o se autoaglutina, la preparación no vale.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "en cada una se emulsiona una colonia hasta una suspensión lechosa"
+    },
+    {
+      "id": "t16-q287",
+      "pregunta": "En la inmunofluorescencia directa, ¿qué clase de anticuerpo se usa?",
+      "opciones": [
+        "Monoclonal, marcado con un fluorocromo.",
+        "Policlonal, sin marcar.",
+        "El del suero del paciente."
+      ],
+      "correcta": 0,
+      "explicacion": "El suero del paciente interviene en la variante indirecta.",
+      "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "Un anticuerpo monoclonal marcado con fluorocromo se une al antígeno"
+    },
+    {
+      "id": "t16-q288",
+      "pregunta": "En una PCR se cambian los cebadores por otros de distinta secuencia. ¿Qué cambia?",
+      "opciones": [
+        "El número de ciclos necesarios.",
+        "La región de ADN que se amplifica.",
+        "La temperatura de elongación, que pasa a 95 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Los cebadores dan la especificidad: delimitan qué región se copia.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "complementarias a los extremos de la región que se busca: le dan la especificidad"
+    },
+    {
+      "id": "t16-q289",
+      "pregunta": "Hay que detectar un virus cuyo genoma es ARN. ¿Qué variante de PCR se usa?",
+      "opciones": [
+        "La qPCR, sin más.",
+        "Una PCR convencional, sin cambios.",
+        "La RT-PCR."
+      ],
+      "correcta": 2,
+      "explicacion": "Primero la retrotranscriptasa pasa el ARN a ADN; la qPCR lo que añade es la cuantificación.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "RT-PCR: primero la retrotranscriptasa pasa el ARN a ADN"
+    },
+    {
+      "id": "t16-q290",
+      "pregunta": "En una PCR, ¿qué aporta el ADN molde?",
+      "opciones": [
+        "La secuencia que se va a copiar.",
+        "La especificidad de la reacción.",
+        "La resistencia al calor de la polimerasa."
+      ],
+      "correcta": 0,
+      "explicacion": "La especificidad la dan los cebadores, y la resistencia al calor es propia de la Taq.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Componentes: - el ADN molde; - dos cebadores (primers)"
+    },
+    {
+      "id": "t16-q291",
+      "pregunta": "¿Qué dos métodos de secuenciación cita el apunte?",
+      "opciones": [
+        "El ribotipado y la rep-PCR.",
+        "El de Sanger y la secuenciación masiva.",
+        "El FISH y la qPCR."
+      ],
+      "correcta": 1,
+      "explicacion": "El ribotipado y la rep-PCR son de tipificación, y el FISH es una sonda marcada.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Secuenciación: - el método de Sanger (por terminación de cadena); - la secuenciación masiva (next generation)."
+    },
+    {
+      "id": "t16-q292",
+      "pregunta": "En los hongos, ¿qué región se secuencia para identificarlos?",
+      "opciones": [
+        "La región ITS.",
+        "El gen del ARNr 16S.",
+        "El gen de la Taq polimerasa."
+      ],
+      "correcta": 0,
+      "explicacion": "El 16S es el de las bacterias.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "en los hongos se usa la región ITS"
+    },
+    {
+      "id": "t16-q293",
+      "pregunta": "¿Cómo puede estar marcada una sonda de ADN?",
+      "opciones": [
+        "Con una partícula de látex.",
+        "Con un fluorocromo unido a un anticuerpo.",
+        "De forma radiactiva o fluorescente."
+      ],
+      "correcta": 2,
+      "explicacion": "El látex es de las aglutinaciones y el anticuerpo marcado, de la inmunofluorescencia.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "una cadena corta y marcada (radiactiva o fluorescente) que hibrida con su secuencia complementaria"
+    },
+    {
+      "id": "t16-q294",
+      "pregunta": "Un aislado es sensible al metronidazol. ¿Hacia qué grupo orienta?",
+      "opciones": [
+        "Hacia las gramnegativas.",
+        "Hacia los anaerobios.",
+        "Hacia las micobacterias."
+      ],
+      "correcta": 1,
+      "explicacion": "Hacia las gramnegativas orientan la resistencia a la vancomicina y la sensibilidad a la colistina o la polimixina.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §8",
+      "apartado": "8",
+      "evidencia": "la sensibilidad al metronidazol orienta hacia los anaerobios"
+    },
+    {
+      "id": "t16-q295",
+      "pregunta": "¿Qué enzima alternativa admite la guía británica para confirmar coliformes, en lugar del ácido de la lactosa?",
+      "opciones": [
+        "La β-glucuronidasa.",
+        "La ureasa.",
+        "La β-galactosidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "La β-glucuronidasa es la que distingue a E. coli dentro de los coliformes.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Oxidasa negativos y ácido de la lactosa a 37 °C (o β-galactosidasa)"
+    },
+    {
+      "id": "t16-q296",
+      "pregunta": "¿Qué prueba comparten la confirmación de los coliformes y la de Pseudomonas aeruginosa, con resultado contrario?",
+      "opciones": [
+        "La oxidasa: negativa en los coliformes y positiva en P. aeruginosa.",
+        "La ureasa: positiva en los coliformes y negativa en P. aeruginosa.",
+        "La esculina: positiva en los dos."
+      ],
+      "correcta": 0,
+      "explicacion": "La esculina es de los enterococos; la ureasa no entra en la confirmación de ninguno de los dos.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Pseudomonas aeruginosa | Oxidasa positiva; pigmento verde o azul en agar CN (tema 12) |"
+    },
+    {
+      "id": "t16-q297",
+      "pregunta": "En el RD 3/2023, ¿qué norma oficial corresponde a Legionella?",
+      "opciones": [
+        "La UNE-ISO/TS 12869.",
+        "La UNE-EN ISO 11731.",
+        "La UNE-EN ISO 7899-2."
+      ],
+      "correcta": 1,
+      "explicacion": "La 12869 es la qPCR, solo como complemento, y la 7899-2 es la de enterococos.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "UNE-EN ISO 14189 (C. perfringens); - UNE-EN ISO 11731 (Legionella)"
+    },
+    {
+      "id": "t16-q298",
+      "pregunta": "Según el cuadro de cifras, ¿a qué temperatura se lee la esculina de los enterococos?",
+      "opciones": [
+        "A 44 °C.",
+        "A 37 °C.",
+        "A 36 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 37 °C son la lactosa de los coliformes y los 36 °C, la incubación de Legionella.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "| Enterococos: esculina a 44 °C | Agua |"
+    },
+    {
+      "id": "t16-q299",
+      "pregunta": "¿A qué longitud de onda se lee el TSC-MUP según el cuadro de cifras?",
+      "opciones": [
+        "A 254 nm.",
+        "A 600 nm.",
+        "A 365 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la luz UV con la que se ve el halo fluorescente de C. perfringens.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8-TP 40 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Enterococos: esculina a 44 °C | Agua | | TSC-MUP: UV 365 nm |"
+    },
+    {
+      "id": "t16-q300",
+      "pregunta": "Resumiendo el tema: ¿qué reacción de Gram tiene Salmonella?",
+      "opciones": [
+        "Grampositiva.",
+        "Gramnegativa.",
+        "Gram variable."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una enterobacteria: bacilo gramnegativo, oxidasa negativo y fermentador de la glucosa.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025); OpenStax, Microbiology (2016), 12.2 · apunte §11",
+      "apartado": "11",
+      "evidencia": "fermenta la glucosa, no la lactosa, gramnegativa"
     }
   ],
   "supuestos": [
