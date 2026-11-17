@@ -4259,6 +4259,454 @@
       "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
       "apartado": "7.2",
       "evidencia": "Dudosa o desconocida | 1 × 50 + 5 × 10 + 5 × 1 mL (11 tubos) | 105 mL"
+    },
+    {
+      "id": "t13-q266",
+      "pregunta": "¿Qué series de tubos por dilución tabula el manual de la FDA?",
+      "opciones": [
+        "Solo de 3 o de 5 tubos.",
+        "De 11 o de 15 tubos.",
+        "De 3, 5, 8 o 10 tubos."
+      ],
+      "correcta": 2,
+      "explicacion": "Las series de 11 y 15 tubos son del método británico de aguas.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "El manual de la FDA tabula series de 3, 5, 8 o 10 tubos por dilución"
+    },
+    {
+      "id": "t13-q267",
+      "pregunta": "¿Qué cantidades de muestra por tubo usan las tres diluciones decimales del manual de la FDA?",
+      "opciones": [
+        "0,1, 0,01 y 0,001 g.",
+        "1, 0,1 y 0,01 g.",
+        "10, 1 y 0,1 g."
+      ],
+      "correcta": 0,
+      "explicacion": "Son las tres diluciones decimales de referencia de sus tablas; si los inóculos son diez veces menores, el NMP se multiplica por 10.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "con tres diluciones decimales de 0,1, 0,01 y 0,001 g de muestra por tubo"
+    },
+    {
+      "id": "t13-q268",
+      "pregunta": "Con 3 tubos por dilución, un alimento da 3-1-0 positivos y la tabla de la FDA da 43 NMP/g. Si los inóculos fueron de 1, 0,1 y 0,01 g, diez veces mayores que los tabulados, ¿qué resultado se informa?",
+      "opciones": [
+        "43 NMP/g.",
+        "4,3 NMP/g.",
+        "430 NMP/g."
+      ],
+      "correcta": 1,
+      "explicacion": "Con inóculos diez veces mayores se divide por 10 el valor de la tabla: 43 ÷ 10 = 4,3. Multiplicar por 10 es lo que corresponde a inóculos diez veces menores.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "Si los inóculos son 10 veces menores (0,01, 0,001 y 0,0001 g), el NMP de la tabla se multiplica por 10"
+    },
+    {
+      "id": "t13-q269",
+      "pregunta": "El cambio de escala del NMP del manual de la FDA, ¿en qué idea se basa?",
+      "opciones": [
+        "En la media ponderada de la ISO 7218.",
+        "En la fórmula del recuento confirmado, x × N ÷ n.",
+        "En la misma del factor de dilución."
+      ],
+      "correcta": 2,
+      "explicacion": "Al cambiar el tamaño del inóculo se multiplica o divide por la potencia de 10 correspondiente, igual que al diluir.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.3",
+      "apartado": "7.3",
+      "evidencia": "Es la misma idea que el factor de dilución del apartado 3.4."
+    },
+    {
+      "id": "t13-q270",
+      "pregunta": "¿Qué norma corresponde al NMP de coliformes y E. coli con sustrato definido?",
+      "opciones": [
+        "La UNE-EN ISO 9308-2.",
+        "La UNE-EN ISO 9308-1.",
+        "La UNE-EN ISO 11731."
+      ],
+      "correcta": 0,
+      "explicacion": "La 9308-1 es la de filtración en agar CCA; la 11731, la de Legionella.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Es el método de la UNE-EN ISO 9308-2 (coliformes y E. coli por NMP)."
+    },
+    {
+      "id": "t13-q271",
+      "pregunta": "Según su resumen oficial, ¿qué ventaja tiene el NMP de la ISO 9308-2 frente al método de filtración?",
+      "opciones": [
+        "Sirve incluso con mucha materia en suspensión y mucha flora heterótrofa.",
+        "Sirve para coliformes en agua de mar.",
+        "Da el resultado en 6 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "En agua de mar no sirve para coliformes, y la incubación es de 18 a 22 horas.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "sirve para todo tipo de aguas, incluso con mucha materia en suspensión y mucha flora heterótrofa"
+    },
+    {
+      "id": "t13-q272",
+      "pregunta": "¿Qué hace que el resultado de la bandeja de 51 pocillos sea un resultado confirmado?",
+      "opciones": [
+        "Que cada pocillo se resiembra en agar CCA.",
+        "Que no necesita pruebas posteriores.",
+        "Que se lee dos veces, a las 24 y a las 48 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "El sustrato definido ya identifica al microorganismo: no hay que confirmar los pocillos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "da un resultado confirmado, sin pruebas posteriores"
+    },
+    {
+      "id": "t13-q273",
+      "pregunta": "¿Qué volumen de muestra se prepara para una bandeja de NMP con sustrato definido?",
+      "opciones": [
+        "10 mL, en un tubo con medio de doble concentración.",
+        "1000 mL, que luego se concentran a 10 mL.",
+        "100 mL, en un frasco estéril con antiespumante."
+      ],
+      "correcta": 2,
+      "explicacion": "A esos 100 mL se les añade el sobre de medio y se vierten en la bandeja.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "100 mL de muestra (o de su dilución) en un frasco estéril con antiespumante"
+    },
+    {
+      "id": "t13-q274",
+      "pregunta": "Una vez vertida la muestra en la bandeja, ¿cómo se cierra?",
+      "opciones": [
+        "Se sella en caliente, y quedan 51 pocillos.",
+        "Se tapa con una lámina adhesiva transparente.",
+        "Se cubre con parafina fundida."
+      ],
+      "correcta": 0,
+      "explicacion": "El sellado en caliente reparte la muestra en los 51 pocillos aislados.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Se vierte en la bandeja y se sella en caliente: quedan 51 pocillos."
+    },
+    {
+      "id": "t13-q275",
+      "pregunta": "¿Cuánto tiempo puede pasar, como máximo, entre inocular la bandeja de NMP e incubarla?",
+      "opciones": [
+        "30 minutos.",
+        "18 horas.",
+        "2 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "No más de 2 horas, y sin sol directo, que hidroliza los sustratos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "No más de 2 horas entre inocular e incubar."
+    },
+    {
+      "id": "t13-q276",
+      "pregunta": "¿Por qué no se deja la bandeja de NMP al sol directo?",
+      "opciones": [
+        "Porque calienta la bandeja por encima de 44 °C.",
+        "Porque hidroliza los sustratos y da falsos positivos.",
+        "Porque evapora la muestra de los pocillos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los sustratos se romperían sin que hubiera bacterias, y los pocillos saldrían amarillos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Nada de sol directo: hidroliza los sustratos y da falsos positivos."
+    },
+    {
+      "id": "t13-q277",
+      "pregunta": "¿Cómo se colocan las bandejas de NMP en la estufa?",
+      "opciones": [
+        "Con los pocillos hacia abajo.",
+        "Con los pocillos hacia arriba.",
+        "De canto, en una gradilla vertical."
+      ],
+      "correcta": 0,
+      "explicacion": "Se incuban a 37 °C entre 18 y 22 horas con los pocillos hacia abajo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Incubar a 37 °C entre 18 y 22 horas, con los pocillos hacia abajo."
+    },
+    {
+      "id": "t13-q278",
+      "pregunta": "En la bandeja de NMP, ¿qué enzima rompe el ONPG y da el color amarillo de los coliformes?",
+      "opciones": [
+        "La β-glucuronidasa.",
+        "La β-galactosidasa.",
+        "La oxidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "La β-glucuronidasa rompe el MUG y da la fluorescencia de E. coli.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "pocillos amarillos = coliformes: la β-galactosidasa rompe el ONPG"
+    },
+    {
+      "id": "t13-q279",
+      "pregunta": "En la bandeja de NMP, ¿qué sustrato rompe E. coli con su β-glucuronidasa?",
+      "opciones": [
+        "El ONPG.",
+        "El glutamato.",
+        "El MUG."
+      ],
+      "correcta": 2,
+      "explicacion": "Al romper el MUG aparece la fluorescencia azul-blanca bajo luz UV; el ONPG da el amarillo de los coliformes.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "la β-glucuronidasa rompe el MUG"
+    },
+    {
+      "id": "t13-q280",
+      "pregunta": "¿A qué longitud de onda se examina la fluorescencia de los pocillos de E. coli?",
+      "opciones": [
+        "254 nm.",
+        "365-366 nm.",
+        "600 nm."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la luz UV de onda larga con la que se lee la bandeja.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "fluorescencia azul-blanca bajo luz UV de 365-366 nm"
+    },
+    {
+      "id": "t13-q281",
+      "pregunta": "Al leer la bandeja de NMP, ¿con qué se comparan los pocillos?",
+      "opciones": [
+        "Con una escala de McFarland.",
+        "Con un pocillo de la misma bandeja sin inocular.",
+        "Con el comparador del fabricante."
+      ],
+      "correcta": 2,
+      "explicacion": "El comparador fija el umbral de color a partir del cual un pocillo se cuenta como positivo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Se comparan con el comparador del fabricante."
+    },
+    {
+      "id": "t13-q282",
+      "pregunta": "En una bandeja de 51 pocillos salen 30 amarillos, de los que 19 son también fluorescentes. ¿Qué NMP de coliformes por 100 mL se informa (30 → 45,3; 19 → 23,8)?",
+      "opciones": [
+        "45,3.",
+        "23,8.",
+        "69,1."
+      ],
+      "correcta": 0,
+      "explicacion": "Los coliformes son todos los amarillos, 30, y los fluorescentes ya están dentro: 45,3. Sumar 30 + 19 pocillos es el error clásico, y 23,8 es el NMP de E. coli.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Todos los amarillos: 23. Los 11 fluorescentes ya son amarillos y están dentro de los 23"
+    },
+    {
+      "id": "t13-q283",
+      "pregunta": "En la misma bandeja (30 amarillos, 19 de ellos fluorescentes), ¿qué NMP de E. coli por 100 mL se informa (30 → 45,3; 19 → 23,8)?",
+      "opciones": [
+        "23,8.",
+        "45,3.",
+        "19."
+      ],
+      "correcta": 0,
+      "explicacion": "Para E. coli solo cuentan los fluorescentes, 19, y su NMP en la tabla es 23,8. El 19 es el número de pocillos, no el NMP.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Qué se busca en la tabla | 23 → 30,6 NMP/100 mL | 11 → 12,4 NMP/100 mL"
+    },
+    {
+      "id": "t13-q284",
+      "pregunta": "Una bandeja de 51 pocillos da 43 pocillos amarillos, que en la tabla son 94,5 NMP/100 mL, y los 100 mL eran de una dilución 1:10. ¿Qué resultado se informa?",
+      "opciones": [
+        "94,5 NMP/100 mL.",
+        "9,45 NMP/100 mL.",
+        "945 NMP/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Con dilución, el NMP de la tabla se multiplica por su inverso: 94,5 × 10 = 945.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Con dilución: si los 100 mL eran de la muestra diluida 1:10, el NMP de la tabla se multiplica por 10."
+    },
+    {
+      "id": "t13-q285",
+      "pregunta": "Los 51 pocillos de una bandeja salen positivos. ¿Qué resultado se informa?",
+      "opciones": [
+        "200,5 NMP/100 mL.",
+        "> 200,5 NMP/100 mL.",
+        "51 NMP/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin ningún pocillo negativo solo se puede decir que se pasa del máximo de la tabla, 200,5.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "NMP/100 mL | < 1 | 1,0 | 5,3 | 11,1 | 12,4 | 25,4 | 30,6 | 45,3 | 78,2 | 200,5 | > 200,5"
+    },
+    {
+      "id": "t13-q286",
+      "pregunta": "Una bandeja da 12 pocillos amarillos. ¿Qué NMP/100 mL le corresponde en la tabla de IDEXX?",
+      "opciones": [
+        "13,7.",
+        "12,4.",
+        "11,1."
+      ],
+      "correcta": 0,
+      "explicacion": "12 pocillos son 13,7; el 12,4 corresponde a 11 pocillos y el 11,1, a 10.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Pocillos positivos | 12 | 19 | 31 | 43"
+    },
+    {
+      "id": "t13-q287",
+      "pregunta": "Un informe recoge 78,2 NMP/100 mL leídos en la tabla de 51 pocillos. ¿Cuántos pocillos habían salido positivos?",
+      "opciones": [
+        "50.",
+        "40.",
+        "78."
+      ],
+      "correcta": 1,
+      "explicacion": "En la tabla, 40 pocillos corresponden a 78,2 NMP/100 mL; 50 pocillos dan 200,5. El 78 no es un número posible de pocillos: la bandeja tiene 51.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "NMP/100 mL | 13,7 | 23,8 | 47,8 | 94,5"
+    },
+    {
+      "id": "t13-q288",
+      "pregunta": "En una bandeja hay 20 pocillos amarillos, ninguno fluorescente, y los 100 mL eran de muestra sin diluir. ¿Qué se informa de coliformes y de E. coli (20 → 25,4; 0 → < 1)?",
+      "opciones": [
+        "Coliformes 20 y E. coli 0 NMP/100 mL.",
+        "Coliformes 25,4 y E. coli 25,4 NMP/100 mL.",
+        "Coliformes 25,4 y E. coli < 1 NMP/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Los amarillos dan el NMP de coliformes en la tabla (25,4); sin ningún fluorescente, E. coli queda por debajo del mínimo tabulado: < 1.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "Pocillos positivos | 0 | 1 | 5 | 10 | 11 | 20 | 23 | 30 | 40 | 50 | 51"
+    },
+    {
+      "id": "t13-q289",
+      "pregunta": "¿Qué puede tapar el color de los pocillos de una bandeja de NMP?",
+      "opciones": [
+        "El antiespumante del frasco.",
+        "La turbidez de la muestra.",
+        "El sellado en caliente de la bandeja."
+      ],
+      "correcta": 1,
+      "explicacion": "Es uno de los límites del método, junto con los falsos positivos por muchas Aeromonas.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "la turbidez puede tapar el color"
+    },
+    {
+      "id": "t13-q290",
+      "pregunta": "¿Qué microorganismos pueden dar falsos positivos en la bandeja de NMP con sustrato definido?",
+      "opciones": [
+        "Las Aeromonas, cuando son muchas.",
+        "Los enterococos.",
+        "Las Legionella."
+      ],
+      "correcta": 0,
+      "explicacion": "Es uno de los límites declarados del método.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método D; tabla IDEXX de 51 pocillos · apunte §7.4",
+      "apartado": "7.4",
+      "evidencia": "muchas Aeromonas pueden dar falsos positivos"
+    },
+    {
+      "id": "t13-q291",
+      "pregunta": "¿Cuántos pocillos tiene la bandeja del sistema Legiolert?",
+      "opciones": [
+        "51.",
+        "15.",
+        "96."
+      ],
+      "correcta": 2,
+      "explicacion": "La de 51 pocillos es la de coliformes y E. coli; el Legiolert usa 96.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §7.5",
+      "apartado": "7.5",
+      "evidencia": "Existe un sistema comercial de NMP para L. pneumophila (Legiolert): - bandeja de 96 pocillos;"
+    },
+    {
+      "id": "t13-q292",
+      "pregunta": "¿Cómo se incuba el Legiolert para L. pneumophila?",
+      "opciones": [
+        "A 36 ± 1 °C durante 10 días.",
+        "A 39 °C durante 7 días.",
+        "A 37 °C entre 18 y 22 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 36 °C y 10 días son los del cultivo de la ISO 11731; las 18-22 horas, los de la bandeja de coliformes.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §7.5",
+      "apartado": "7.5",
+      "evidencia": "bandeja de 96 pocillos; - 39 °C durante 7 días;"
+    },
+    {
+      "id": "t13-q293",
+      "pregunta": "¿Cómo se reconoce un pocillo positivo en el Legiolert?",
+      "opciones": [
+        "Por el color marrón o la turbidez.",
+        "Por el color amarillo.",
+        "Por la fluorescencia azul-blanca bajo luz UV."
+      ],
+      "correcta": 0,
+      "explicacion": "El amarillo y la fluorescencia son de la bandeja de coliformes y E. coli.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §7.5",
+      "apartado": "7.5",
+      "evidencia": "39 °C durante 7 días; - positivos por color marrón o turbidez."
+    },
+    {
+      "id": "t13-q294",
+      "pregunta": "Resumiendo el tema: ¿qué dos intervalos de recuento hay que distinguir?",
+      "opciones": [
+        "20-80 por placa y 10-300 por membrana.",
+        "10-300 en los dos casos.",
+        "10-300 colonias por placa y 20-80 por membrana."
+      ],
+      "correcta": 2,
+      "explicacion": "El tope de 80 por membrana es la respuesta del 1246 #31; las placas admiten hasta 300.",
+      "fuente": "undefined · apunte §9",
+      "apartado": "9",
+      "evidencia": "Placas: 10-300 colonias. Membrana: 20-80, tope 80"
+    },
+    {
+      "id": "t13-q295",
+      "pregunta": "Se siembran 100 µL de un agua sin diluir y crecen 54 colonias. ¿Qué recuento tiene el agua?",
+      "opciones": [
+        "5,4 × 10¹ ufc/mL.",
+        "5,4 × 10² ufc/mL.",
+        "5,4 × 10³ ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Con 0,1 mL cada colonia vale 10 ufc/mL: 54 ÷ 0,1 = 540 = 5,4 × 10². Es la trampa del 1246 #40.",
+      "fuente": "undefined · apunte §9",
+      "apartado": "9",
+      "evidencia": "Con 100 µL, 97 colonias son 9,7 × 10² (1246 #40)."
+    },
+    {
+      "id": "t13-q296",
+      "pregunta": "En el agua, ¿qué unidad corresponde a Legionella y qué unidad a E. coli?",
+      "opciones": [
+        "ufc/100 mL para Legionella y ufc/L para E. coli.",
+        "ufc/mL para las dos.",
+        "ufc/L para Legionella y ufc/100 mL para E. coli."
+      ],
+      "correcta": 2,
+      "explicacion": "Legionella se da por litro porque aparece en números muy bajos; E. coli y los coliformes, por 100 mL.",
+      "fuente": "undefined · apunte §9",
+      "apartado": "9",
+      "evidencia": "E. coli en agua: ufc/100 mL (1322, 2.º ejercicio, #13). Legionella: ufc/L."
+    },
+    {
+      "id": "t13-q297",
+      "pregunta": "De las técnicas de concentración, ¿cuál recupera más?",
+      "opciones": [
+        "La filtración.",
+        "La centrifugación.",
+        "La separación inmunomagnética."
+      ],
+      "correcta": 0,
+      "explicacion": "La centrifugación se reserva para las aguas que no se pueden filtrar, porque recupera bastante menos.",
+      "fuente": "undefined · apunte §9",
+      "apartado": "9",
+      "evidencia": "filtración (la de más recuperación), elución, centrifugación"
     }
   ],
   "supuestos": [
