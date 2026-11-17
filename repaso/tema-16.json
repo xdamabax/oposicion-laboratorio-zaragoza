@@ -3188,6 +3188,538 @@
       "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
       "apartado": "6.5",
       "evidencia": "Se ve con microscopio de fluorescencia (tema 10)."
+    },
+    {
+      "id": "t16-q197",
+      "pregunta": "¿Qué hace la PCR con una región concreta de ADN?",
+      "opciones": [
+        "La secuencia base a base.",
+        "La amplifica millones de veces, in vitro.",
+        "La corta en fragmentos para separarlos por tamaño."
+      ],
+      "correcta": 1,
+      "explicacion": "Secuenciar es otra técnica; la PCR solo multiplica copias de la región elegida.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Amplifica una región concreta de ADN millones de veces, in vitro."
+    },
+    {
+      "id": "t16-q198",
+      "pregunta": "¿Cuántos cebadores lleva una PCR y qué son?",
+      "opciones": [
+        "Dos cadenas cortas de ADN complementarias a los extremos de la región buscada.",
+        "Uno solo, complementario al centro de la región buscada.",
+        "Cuatro, uno por cada desoxinucleótido."
+      ],
+      "correcta": 0,
+      "explicacion": "Son los que delimitan la región y dan la especificidad a la reacción.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "dos cebadores (primers), cadenas cortas de ADN complementarias a los extremos de la región que se busca"
+    },
+    {
+      "id": "t16-q199",
+      "pregunta": "Además del ADN molde, los cebadores y la polimerasa, ¿qué lleva una PCR?",
+      "opciones": [
+        "Retrotranscriptasa.",
+        "Desoxinucleótidos.",
+        "Partículas de látex."
+      ],
+      "correcta": 1,
+      "explicacion": "La retrotranscriptasa solo se usa en la RT-PCR, para pasar el ARN a ADN.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "desoxinucleótidos; - una ADN polimerasa termoestable"
+    },
+    {
+      "id": "t16-q200",
+      "pregunta": "¿Por qué la polimerasa de la PCR tiene que ser termoestable?",
+      "opciones": [
+        "Porque cada ciclo pasa por unos 95 °C para separar las hebras.",
+        "Porque la reacción se hace a 4 °C.",
+        "Porque el ADN molde se degrada en frío."
+      ],
+      "correcta": 0,
+      "explicacion": "La Taq, de Thermus aquaticus, aguanta esas temperaturas; una polimerasa corriente se desnaturalizaría.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "una ADN polimerasa termoestable: la Taq, de la bacteria Thermus aquaticus, de una fuente termal"
+    },
+    {
+      "id": "t16-q201",
+      "pregunta": "¿De dónde procede Thermus aquaticus, la bacteria de la polimerasa Taq?",
+      "opciones": [
+        "Del intestino humano.",
+        "De un lago de agua salada.",
+        "De una fuente termal."
+      ],
+      "correcta": 2,
+      "explicacion": "De ahí su resistencia al calor, que es lo que la hace útil en la PCR.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "la Taq, de la bacteria Thermus aquaticus, de una fuente termal"
+    },
+    {
+      "id": "t16-q202",
+      "pregunta": "¿A qué temperatura aproximada se desnaturaliza el ADN en una PCR?",
+      "opciones": [
+        "A unos 95 °C.",
+        "A unos 50 °C.",
+        "A 72 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 50 °C son la hibridación de los cebadores y los 72 °C, la elongación.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "| 1. Desnaturalización | ~95 °C | Las dos hebras del ADN se separan |"
+    },
+    {
+      "id": "t16-q203",
+      "pregunta": "¿A qué temperatura aproximada se unen los cebadores en una PCR?",
+      "opciones": [
+        "A unos 95 °C.",
+        "A unos 50 °C.",
+        "A 72 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la fase de hibridación o alineamiento; su temperatura exacta depende de los cebadores.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "| 2. Hibridación (alineamiento) | ~50 °C | Los cebadores se unen a su secuencia complementaria |"
+    },
+    {
+      "id": "t16-q204",
+      "pregunta": "Una vez unidos los cebadores, ¿qué fase del ciclo viene y a qué temperatura?",
+      "opciones": [
+        "La desnaturalización, a 95 °C.",
+        "Una segunda hibridación, a 50 °C.",
+        "La elongación, a 72 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "En ella la polimerasa añade nucleótidos a partir de los cebadores; el ciclo siguiente empieza otra vez con la desnaturalización.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "| 3. Elongación (extensión) | 72 °C | La polimerasa añade nucleótidos a partir de los cebadores |"
+    },
+    {
+      "id": "t16-q205",
+      "pregunta": "¿Cuántos ciclos se hacen en una PCR?",
+      "opciones": [
+        "3-5.",
+        "25-40.",
+        "100-200."
+      ],
+      "correcta": 1,
+      "explicacion": "Como cada ciclo duplica las copias, con 25-40 ciclos se llega a millones.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Cada ciclo duplica el número de copias. Se hacen 25-40 ciclos."
+    },
+    {
+      "id": "t16-q206",
+      "pregunta": "Si cada ciclo de PCR duplica las copias, ¿cuántas habrá a partir de una tras 10 ciclos?",
+      "opciones": [
+        "Unas 1024.",
+        "Unas 20.",
+        "Unas 100."
+      ],
+      "correcta": 0,
+      "explicacion": "2 elevado a 10 es 1024: la amplificación es exponencial, no proporcional al número de ciclos.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Cada ciclo duplica el número de copias."
+    },
+    {
+      "id": "t16-q207",
+      "pregunta": "Una PCR parte de 1000 copias y hace 3 ciclos completos. ¿Cuántas copias cabe esperar?",
+      "opciones": [
+        "3000.",
+        "6000.",
+        "8000."
+      ],
+      "correcta": 2,
+      "explicacion": "Cada ciclo duplica: 1000 × 2³ = 8000.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Cada ciclo duplica el número de copias. Se hacen 25-40 ciclos."
+    },
+    {
+      "id": "t16-q208",
+      "pregunta": "¿Cómo se llama el aparato donde se hace una PCR?",
+      "opciones": [
+        "Espectrómetro de masas.",
+        "Termociclador.",
+        "Autoclave."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el que repite los ciclos de temperatura; el espectrómetro es del MALDI-TOF.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "El aparato es un termociclador."
+    },
+    {
+      "id": "t16-q209",
+      "pregunta": "¿Para qué sirve la RT-PCR, además de los virus de ARN?",
+      "opciones": [
+        "Para cuantificar el ADN de partida.",
+        "Para secuenciar el gen del ARNr 16S.",
+        "Para ver si un gen se expresa."
+      ],
+      "correcta": 2,
+      "explicacion": "Cuantificar es lo propio de la qPCR, la PCR en tiempo real.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "RT-PCR: primero la retrotranscriptasa pasa el ARN a ADN (para virus de ARN o para ver si un gen se expresa)."
+    },
+    {
+      "id": "t16-q210",
+      "pregunta": "¿Con qué sigue la qPCR la amplificación mientras ocurre?",
+      "opciones": [
+        "Con fluorescencia.",
+        "Con un gel de agarosa al final de cada ciclo.",
+        "Con la turbidez de la mezcla."
+      ],
+      "correcta": 0,
+      "explicacion": "Esa señal, ciclo a ciclo, es la que permite cuantificar el ADN de partida.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "PCR en tiempo real (qPCR): sigue la amplificación con fluorescencia mientras ocurre"
+    },
+    {
+      "id": "t16-q211",
+      "pregunta": "¿Qué norma técnica cita el RD 3/2023 para la qPCR de Legionella?",
+      "opciones": [
+        "La UNE-EN ISO 11731.",
+        "La UNE-EN ISO 14189.",
+        "La UNE-ISO/TS 12869."
+      ],
+      "correcta": 2,
+      "explicacion": "La ISO 11731 es el cultivo de Legionella y la 14189, el método de C. perfringens.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "El RD 3/2023 admite la qPCR de Legionella (UNE-ISO/TS 12869) como complemento del cultivo"
+    },
+    {
+      "id": "t16-q212",
+      "pregunta": "Según el RD 3/2023, la qPCR de Legionella debe estar validada según:",
+      "opciones": [
+        "La ISO 9001.",
+        "La ISO/IEC 17025.",
+        "La ISO 8199."
+      ],
+      "correcta": 1,
+      "explicacion": "La 17025 es la norma de competencia de los laboratorios de ensayo.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "como complemento del cultivo, validada según la ISO/IEC 17025"
+    },
+    {
+      "id": "t16-q213",
+      "pregunta": "¿Qué es una sonda de ADN?",
+      "opciones": [
+        "Una cadena corta y marcada que hibrida con su secuencia complementaria.",
+        "Una enzima que corta el ADN en puntos concretos.",
+        "Un cebador que delimita la región que se amplifica."
+      ],
+      "correcta": 0,
+      "explicacion": "La marca puede ser radiactiva o fluorescente; el FISH es su ejemplo in situ.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Sondas de ADN: una cadena corta y marcada (radiactiva o fluorescente) que hibrida con su secuencia complementaria."
+    },
+    {
+      "id": "t16-q214",
+      "pregunta": "¿Qué significa FISH?",
+      "opciones": [
+        "Amplificación isoterma de ADN.",
+        "Hibridación in situ con fluorescencia.",
+        "Electroforesis en campo pulsado."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el ejemplo de sonda marcada que se aplica directamente sobre la muestra.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Ejemplo: FISH, hibridación in situ con fluorescencia."
+    },
+    {
+      "id": "t16-q215",
+      "pregunta": "¿Cómo se llama el método de secuenciación por terminación de cadena?",
+      "opciones": [
+        "El método de Sanger.",
+        "La secuenciación masiva.",
+        "El ribotipado."
+      ],
+      "correcta": 0,
+      "explicacion": "La secuenciación masiva es la de nueva generación; el ribotipado es una técnica de tipificación.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "el método de Sanger (por terminación de cadena)"
+    },
+    {
+      "id": "t16-q216",
+      "pregunta": "¿Cuándo se recurre a secuenciar el gen del ARNr 16S?",
+      "opciones": [
+        "De forma rutinaria, antes de las pruebas bioquímicas.",
+        "Para medir la sensibilidad a los antibióticos.",
+        "Para identificar bacterias raras cuando fallan los demás métodos."
+      ],
+      "correcta": 2,
+      "explicacion": "En los hongos, la región equivalente es la ITS.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "La secuencia del gen del ARNr 16S identifica bacterias raras cuando fallan los demás métodos"
+    },
+    {
+      "id": "t16-q217",
+      "pregunta": "¿Para qué se usan el ribotipado, la rep-PCR y los perfiles de plásmidos?",
+      "opciones": [
+        "Para tipificar por debajo de la especie y seguir brotes.",
+        "Para identificar el género de un aislado desconocido.",
+        "Para cuantificar el ADN de partida."
+      ],
+      "correcta": 0,
+      "explicacion": "Dos cepas de la misma especie pueden distinguirse así, que es lo que hace falta en un brote.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Tipificación por debajo de la especie: ribotipado, rep-PCR, perfiles de plásmidos. Se usan para seguir brotes."
+    },
+    {
+      "id": "t16-q218",
+      "pregunta": "¿Por qué muchas técnicas genéticas quedan para los laboratorios de referencia?",
+      "opciones": [
+        "Porque están prohibidas en los laboratorios de rutina.",
+        "Por su coste y porque necesitan personal especializado.",
+        "Porque solo sirven para muestras de agua."
+      ],
+      "correcta": 1,
+      "explicacion": "Son las dos limitaciones prácticas que recoge el apunte.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "coste y personal especializado: muchas técnicas quedan para los laboratorios de referencia"
+    },
+    {
+      "id": "t16-q219",
+      "pregunta": "¿Qué limitación tiene la identificación genética en cuanto a las bases de secuencias?",
+      "opciones": [
+        "Solo están secuenciadas las bacterias del agua.",
+        "Las secuencias cambian con cada cultivo.",
+        "No todas las especies están secuenciadas, y algunas muy próximas siguen siendo difíciles de separar."
+      ],
+      "correcta": 2,
+      "explicacion": "Es un límite paralelo al del MALDI-TOF con su base de datos.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "no todas las especies están secuenciadas, y algunas muy próximas siguen siendo difíciles de separar"
+    },
+    {
+      "id": "t16-q220",
+      "pregunta": "En el agua, ¿qué papel da el RD 3/2023 a las técnicas genéticas?",
+      "opciones": [
+        "Solo complemento del cultivo, no sustituto.",
+        "Sustituto del cultivo en todos los parámetros.",
+        "Método de referencia para coliformes y E. coli."
+      ],
+      "correcta": 0,
+      "explicacion": "Los métodos oficiales del anexo III siguen siendo de cultivo.",
+      "fuente": "OpenStax, Microbiology (2016), 12.2 · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "en el agua, el RD 3/2023 la admite solo como complemento del cultivo, no como sustituto"
+    },
+    {
+      "id": "t16-q221",
+      "pregunta": "¿Hacia qué grupo orienta la sensibilidad a la colistina o a la polimixina?",
+      "opciones": [
+        "Hacia las grampositivas.",
+        "Hacia los anaerobios.",
+        "Hacia las gramnegativas."
+      ],
+      "correcta": 2,
+      "explicacion": "La sensibilidad al metronidazol es la que orienta hacia los anaerobios.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §8",
+      "apartado": "8",
+      "evidencia": "la resistencia a la vancomicina, o la sensibilidad a la colistina o la polimixina, orientan hacia las gramnegativas"
+    },
+    {
+      "id": "t16-q222",
+      "pregunta": "Según la norma británica, ¿qué aportan las resistencias propias de cada grupo?",
+      "opciones": [
+        "Sustituyen a las pruebas bioquímicas.",
+        "Son una ayuda más para orientar la identificación.",
+        "Sirven solo para decidir el tratamiento, no para identificar."
+      ],
+      "correcta": 1,
+      "explicacion": "La resistencia a la vancomicina orienta hacia las gramnegativas y la sensibilidad al metronidazol, hacia los anaerobios.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Resistencias propias de cada grupo (UKHSA)"
+    },
+    {
+      "id": "t16-q223",
+      "pregunta": "¿Cómo se confirman los coliformes en el agua?",
+      "opciones": [
+        "Oxidasa positivos y ácido de la lactosa a 44 °C.",
+        "Hidrólisis de la esculina a 44 °C.",
+        "Oxidasa negativos y ácido de la lactosa a 37 °C, o β-galactosidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 44 °C y el indol son de E. coli; la esculina confirma enterococos.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Coliformes | Oxidasa negativos y ácido de la lactosa a 37 °C (o β-galactosidasa) |"
+    },
+    {
+      "id": "t16-q224",
+      "pregunta": "¿Qué enzima tienen casi todos los E. coli del agua?",
+      "opciones": [
+        "La β-galactosidasa solamente.",
+        "La β-glucuronidasa.",
+        "La ureasa."
+      ],
+      "correcta": 1,
+      "explicacion": "La β-galactosidasa la tienen todos los coliformes; la β-glucuronidasa es lo propio de E. coli.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Además, lactosa a 44 °C e indol; casi todos con β-glucuronidasa"
+    },
+    {
+      "id": "t16-q225",
+      "pregunta": "¿En qué medio y a qué temperatura se confirma la hidrólisis de la esculina de los enterococos?",
+      "opciones": [
+        "En agar bilis-esculina, a 44 °C.",
+        "En agar BCYE, a 36 °C.",
+        "En agar CCA, a 37 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "El BCYE es de Legionella y el CCA, de coliformes y E. coli por filtración.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Hidrólisis de la esculina en agar bilis-esculina (o con kanamicina y azida) a 44 °C: halo marrón o negro"
+    },
+    {
+      "id": "t16-q226",
+      "pregunta": "¿Qué halo deja un enterococo que hidroliza la esculina?",
+      "opciones": [
+        "Verde fluorescente.",
+        "Amarillo.",
+        "Marrón o negro."
+      ],
+      "correcta": 2,
+      "explicacion": "El halo fluorescente es el de C. perfringens en TSC-MUP con luz UV.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "(o con kanamicina y azida) a 44 °C: halo marrón o negro"
+    },
+    {
+      "id": "t16-q227",
+      "pregunta": "¿Cuáles son las cuatro pruebas con que la guía británica confirma C. perfringens?",
+      "opciones": [
+        "Inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina.",
+        "Móvil, oxidasa positivo, fermenta la glucosa y produce indol.",
+        "Inmóvil, ureasa positivo, catalasa positivo y hidroliza la esculina."
+      ],
+      "correcta": 0,
+      "explicacion": "Son las cuatro de la tabla; en TSC-MUP, además, hay el halo fluorescente.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| C. perfringens | Inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina |"
+    },
+    {
+      "id": "t16-q228",
+      "pregunta": "El método TSC-MUP para C. perfringens, ¿qué condición tiene en el RD 3/2023?",
+      "opciones": [
+        "Es el método oficial de referencia.",
+        "Es un método alternativo autorizado.",
+        "No está autorizado en aguas de consumo."
+      ],
+      "correcta": 1,
+      "explicacion": "El método oficial es la UNE-EN ISO 14189.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Método alternativo autorizado por el RD 3/2023"
+    },
+    {
+      "id": "t16-q229",
+      "pregunta": "¿Qué medio se usa para comprobar que una colonia de Legionella necesita L-cisteína?",
+      "opciones": [
+        "Agar bilis-esculina y agar CN.",
+        "Agar BCYE y BCYE sin cisteína.",
+        "Agar CCA y agar DCA."
+      ],
+      "correcta": 1,
+      "explicacion": "Crece en el BCYE completo y no en el que carece de cisteína.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Legionella | Necesita L-cisteína: crece en BCYE y no en BCYE sin cisteína (1233 #13) |"
+    },
+    {
+      "id": "t16-q230",
+      "pregunta": "¿Cómo se confirma Pseudomonas aeruginosa en el agua?",
+      "opciones": [
+        "Oxidasa positiva, con pigmento verde o azul en agar CN.",
+        "Oxidasa negativa, con pigmento rojo en agar CN.",
+        "Hidrólisis de la esculina en agar bilis-esculina."
+      ],
+      "correcta": 0,
+      "explicacion": "La esculina es de los enterococos; el pigmento rojo es de Serratia.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Pseudomonas aeruginosa | Oxidasa positiva; pigmento verde o azul en agar CN (tema 12) |"
+    },
+    {
+      "id": "t16-q231",
+      "pregunta": "En el RD 3/2023, ¿cuál es la norma oficial para los enterococos?",
+      "opciones": [
+        "La UNE-EN ISO 9308-2.",
+        "La UNE-EN ISO 10705-2.",
+        "La UNE-EN ISO 7899-2."
+      ],
+      "correcta": 2,
+      "explicacion": "La 9308-2 es de coliformes y E. coli por NMP, y la 10705-2, de colífagos.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "UNE-EN ISO 7899-2 (enterococos)"
+    },
+    {
+      "id": "t16-q232",
+      "pregunta": "¿Qué norma oficial del RD 3/2023 corresponde a los colífagos?",
+      "opciones": [
+        "La UNE-EN ISO 11731.",
+        "La UNE-EN ISO 10705-2.",
+        "La UNE-EN ISO 14189."
+      ],
+      "correcta": 1,
+      "explicacion": "La 11731 es de Legionella y la 14189, de C. perfringens.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "UNE-EN ISO 10705-2 (colífagos)"
+    },
+    {
+      "id": "t16-q233",
+      "pregunta": "¿Qué normas admite el RD 3/2023 como oficiales para coliformes y E. coli?",
+      "opciones": [
+        "La UNE-EN ISO 7899-2 o la 11731.",
+        "La UNE-ISO/TS 12869.",
+        "La UNE-EN ISO 9308-1 o la 9308-2."
+      ],
+      "correcta": 2,
+      "explicacion": "La 12869 es la qPCR de Legionella, que solo vale como complemento del cultivo.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "UNE-EN ISO 9308-1 o 9308-2 (coliformes y E. coli)"
+    },
+    {
+      "id": "t16-q234",
+      "pregunta": "¿Cuáles son los métodos alternativos autorizados por el RD 3/2023?",
+      "opciones": [
+        "CCA, NMP con sustrato definido, TSC-MUP y Enterolert.",
+        "Las normas ISO 9308-1, 7899-2, 14189 y 11731.",
+        "La qPCR, el MALDI-TOF y la secuenciación del ARNr 16S."
+      ],
+      "correcta": 0,
+      "explicacion": "Las normas ISO son los métodos oficiales; las técnicas genéticas solo complementan el cultivo.",
+      "fuente": "SCA, Microbiology of Drinking Water, partes 4-6; RD 3/2023, anexo III, parte C · apunte §9",
+      "apartado": "9",
+      "evidencia": "Alternativos autorizados: CCA, NMP con sustrato definido, TSC-MUP y Enterolert."
     }
   ],
   "supuestos": [
