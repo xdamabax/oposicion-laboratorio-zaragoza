@@ -1740,6 +1740,622 @@
       "fuente": "RD 3/2023, anexo I y anexo III, parte C, colífagos somáticos · apunte §8",
       "apartado": "8",
       "evidencia": "**Son virus que infectan *E. coli*** (1246 #32, tema 15). Se cuentan como **placas de lisis** sobre un césped de la bacteria hospedadora (**UFP/100 mL**), según la **UNE-EN ISO 10705-2**. Indican la **eficacia del tratamiento frente a virus**. **El procedimiento de la norma no se ha leído.**"
+    },
+    {
+      "id": "t18-q87",
+      "pregunta": "¿Qué es un indicador en el análisis bacteriológico del agua?",
+      "opciones": [
+        "El patógeno más frecuente en las aguas de consumo.",
+        "El microorganismo que marca el límite de detección del método.",
+        "Un microorganismo fácil de cultivar cuya presencia señala que pudo entrar contaminación o que el tratamiento o la red fallan."
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que se busca en el agua no son los patógenos, sino los indicadores.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Un indicador es un microorganismo fácil de cultivar cuya presencia señala que pudo entrar contaminación"
+    },
+    {
+      "id": "t18-q88",
+      "pregunta": "Según la OMS, ¿en qué cantidad debe estar un indicador fecal en las heces?",
+      "opciones": [
+        "Solo en las personas enfermas.",
+        "En cantidad variable, según la dieta.",
+        "Siempre y en gran número."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el primero de los cuatro requisitos que pide la OMS a un indicador fecal.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "esté siempre en las heces, en gran número"
+    },
+    {
+      "id": "t18-q89",
+      "pregunta": "¿Qué pide la OMS a un indicador fecal respecto de su multiplicación?",
+      "opciones": [
+        "Que no se multiplique en el agua.",
+        "Que se multiplique solo si hay cloro residual.",
+        "Que se multiplique en el agua para ser detectable."
+      ],
+      "correcta": 0,
+      "explicacion": "Si se multiplicara, su número dejaría de reflejar la contaminación que entró.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "esté siempre en las heces, en gran número; - no se multiplique en el agua"
+    },
+    {
+      "id": "t18-q90",
+      "pregunta": "¿Cómo debe poder detectarse un indicador fecal, según la OMS?",
+      "opciones": [
+        "Con técnicas moleculares de secuenciación.",
+        "Con cultivos sencillos y baratos.",
+        "Con microscopía de fluorescencia directa."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el cuarto requisito de la lista.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "se detecte con cultivos sencillos y baratos"
+    },
+    {
+      "id": "t18-q91",
+      "pregunta": "¿Hay algún organismo que cumpla todos los requisitos de indicador fecal de la OMS?",
+      "opciones": [
+        "Sí: E. coli los cumple todos.",
+        "Ninguno: por eso se usan varios, cada uno para lo suyo.",
+        "Sí: los enterococos intestinales los cumplen todos."
+      ],
+      "correcta": 1,
+      "explicacion": "E. coli es el mejor indicador de contaminación fecal, pero es mucho más sensible a la desinfección que los virus y los protozoos.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Ningún organismo cumple todo. Por eso se usan varios, cada uno para lo suyo"
+    },
+    {
+      "id": "t18-q92",
+      "pregunta": "Según el RD 3/2023, ¿cuál es el valor paramétrico de E. coli en el agua de consumo?",
+      "opciones": [
+        "0 UFC o NMP en 100 mL.",
+        "100 UFC o NMP en 100 mL.",
+        "0 UFC en 1 L."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 100 por litro son el valor de Legionella.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Escherichia coli | 0 | UFC o NMP en 100 mL |"
+    },
+    {
+      "id": "t18-q93",
+      "pregunta": "¿En qué unidades fija el RD 3/2023 el valor del enterococo intestinal?",
+      "opciones": [
+        "UFC en 1 mL.",
+        "UFP en 100 mL.",
+        "UFC o NMP en 100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Las UFC por mL son del recuento a 22 °C y las UFP, de los colífagos.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Enterococo intestinal | 0 | UFC o NMP en 100 mL |"
+    },
+    {
+      "id": "t18-q94",
+      "pregunta": "En el RD 3/2023, el parámetro de C. perfringens se expresa en:",
+      "opciones": [
+        "UFC en 100 mL, sin admitir NMP.",
+        "UFC o NMP en 100 mL.",
+        "UFC en 1 L."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli y los enterococos admiten UFC o NMP; C. perfringens, solo UFC.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Clostridium perfringens (incluidas las esporas) | 0 | UFC en 100 mL |"
+    },
+    {
+      "id": "t18-q95",
+      "pregunta": "Si se supera el valor de Legionella spp. del RD 3/2023, ¿qué hay que hacer?",
+      "opciones": [
+        "Buscar Cryptosporidium en la salida de la ETAP.",
+        "Identificar si es L. pneumophila y su serogrupo.",
+        "Hacer una evaluación del riesgo vírico."
+      ],
+      "correcta": 1,
+      "explicacion": "Cryptosporidium se busca cuando C. perfringens es positivo con turbidez superior a 4 UNF; la evaluación del riesgo vírico corresponde a los colífagos.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Si se supera, se identifica si es L. pneumophila y su serogrupo (RD 487/2022)."
+    },
+    {
+      "id": "t18-q96",
+      "pregunta": "¿Qué indica, según el RD 3/2023, que se supere el valor de bacterias coliformes?",
+      "opciones": [
+        "Contaminación fecal reciente.",
+        "Fallo de la filtración frente a protozoos.",
+        "Mala desinfección o recontaminación."
+      ],
+      "correcta": 2,
+      "explicacion": "La contaminación fecal la señala E. coli y la filtración frente a protozoos, C. perfringens.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Si se supera: mala desinfección o recontaminación."
+    },
+    {
+      "id": "t18-q97",
+      "pregunta": "De estos cuatro parámetros del RD 3/2023, ¿cuál NO tiene el valor 0?",
+      "opciones": [
+        "Las bacterias coliformes.",
+        "El enterococo intestinal.",
+        "El recuento de colonias a 22 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Los indicadores fecales y los coliformes van a 0; el recuento a 22 °C tiene 100 UFC/mL y Legionella, 100 UFC/L.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Recuento de colonias a 22 °C | 100 | UFC/1 mL |"
+    },
+    {
+      "id": "t18-q98",
+      "pregunta": "¿En qué unidades se expresan los colífagos somáticos y por qué?",
+      "opciones": [
+        "En UFC/100 mL, como los demás indicadores.",
+        "En UFP/100 mL, porque son virus.",
+        "En UFC/L, como Legionella."
+      ],
+      "correcta": 1,
+      "explicacion": "UFP son unidades formadoras de placas: se cuentan las placas de lisis, no colonias.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "los colífagos, en UFP (unidades formadoras de placas), porque son virus"
+    },
+    {
+      "id": "t18-q99",
+      "pregunta": "Si aparecen colífagos somáticos en un agua tratada, ¿qué procede según el RD 3/2023?",
+      "opciones": [
+        "Una evaluación del riesgo vírico según la OMS.",
+        "Buscar Cryptosporidium.",
+        "Identificar el serogrupo de Legionella."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada nota del anexo I lleva a una actuación distinta.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Si aparecen en agua tratada: evaluación del riesgo vírico según la OMS"
+    },
+    {
+      "id": "t18-q100",
+      "pregunta": "¿Dónde está el valor de no aptitud de 1000 UFC/mL del recuento a 22 °C?",
+      "opciones": [
+        "En el grifo del consumidor.",
+        "A la salida del tratamiento.",
+        "En los grifos asistenciales de cuidados aumentados."
+      ],
+      "correcta": 1,
+      "explicacion": "En los grifos asistenciales lo que se exige es Legionella no detectable por litro y P. aeruginosa menor de 1 UFC/100 mL.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "A la salida del tratamiento, no aptitud: 1000 UFC/1 mL"
+    },
+    {
+      "id": "t18-q101",
+      "pregunta": "Un agua de consumo da 95 UFC/mL en el recuento a 22 °C. ¿Cumple el valor paramétrico?",
+      "opciones": [
+        "No: el valor paramétrico es 0.",
+        "No: el valor paramétrico es 10 UFC/mL.",
+        "Sí: está por debajo de 100 UFC/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "El valor 0 es el de los indicadores fecales y los coliformes.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Recuento de colonias a 22 °C | 100 | UFC/1 mL |"
+    },
+    {
+      "id": "t18-q102",
+      "pregunta": "En qué parte del anexo I del RD 3/2023 están las bacterias coliformes y el recuento a 22 °C:",
+      "opciones": [
+        "En la parte C, de parámetros indicadores de calidad.",
+        "En la parte A, de parámetros microbiológicos.",
+        "En la parte B, de parámetros químicos."
+      ],
+      "correcta": 0,
+      "explicacion": "En la parte A están E. coli, los enterococos, C. perfringens y Legionella.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Parámetros indicadores de calidad (anexo I, parte C)"
+    },
+    {
+      "id": "t18-q103",
+      "pregunta": "¿Por qué los coliformes totales no sirven como indicador fecal?",
+      "opciones": [
+        "Porque pueden vivir y crecer en el agua.",
+        "Porque no se cultivan con medios sencillos.",
+        "Porque desaparecen con el cloro antes que los patógenos."
+      ],
+      "correcta": 0,
+      "explicacion": "Sí valen para juzgar la desinfección, la limpieza e integridad de la red y las biopelículas.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Pueden vivir y crecer en el agua: no sirven como indicador fecal."
+    },
+    {
+      "id": "t18-q104",
+      "pregunta": "¿Para qué valen los coliformes totales?",
+      "opciones": [
+        "Para estimar la contaminación fecal reciente.",
+        "Para valorar la eficacia de la filtración frente a protozoos.",
+        "Para juzgar la desinfección, la limpieza e integridad de la red y las biopelículas."
+      ],
+      "correcta": 2,
+      "explicacion": "La contaminación fecal la indica E. coli, y la filtración frente a protozoos, C. perfringens.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Valen para juzgar la desinfección, la limpieza e integridad de la red y las biopelículas"
+    },
+    {
+      "id": "t18-q105",
+      "pregunta": "¿Por qué E. coli es el mejor indicador de contaminación fecal?",
+      "opciones": [
+        "Porque resiste el cloro más que los demás indicadores.",
+        "Porque abunda en las heces y casi nunca aparece sin contaminación fecal.",
+        "Porque sus esporas sobreviven en el ambiente."
+      ],
+      "correcta": 1,
+      "explicacion": "Resistir más el cloro es propio de los enterococos, y las esporas, de C. perfringens.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Abunda en las heces y casi nunca aparece sin contaminación fecal."
+    },
+    {
+      "id": "t18-q106",
+      "pregunta": "¿Qué indican las esporas de C. perfringens sobre el tratamiento?",
+      "opciones": [
+        "La eficacia de la desinfección frente a virus.",
+        "La integridad de la red de distribución.",
+        "La eficacia de la filtración frente a protozoos."
+      ],
+      "correcta": 2,
+      "explicacion": "Frente a virus, el indicador son los colífagos somáticos.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "indican contaminación fecal antigua o intermitente y la eficacia de la filtración frente a protozoos"
+    },
+    {
+      "id": "t18-q107",
+      "pregunta": "¿Qué valora el recuento a 22 °C, según la tabla de indicadores?",
+      "opciones": [
+        "La contaminación fecal antigua.",
+        "La eficacia del tratamiento, la limpieza e integridad de la red y las biopelículas.",
+        "La presencia de quistes de protozoos."
+      ],
+      "correcta": 1,
+      "explicacion": "No indica patógenos: lo que importa son los cambios de tendencia.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Indica la eficacia del tratamiento, la limpieza e integridad de la red y las biopelículas"
+    },
+    {
+      "id": "t18-q108",
+      "pregunta": "En el recuento de heterótrofos a 22 °C, ¿qué es lo que importa?",
+      "opciones": [
+        "Los cambios de tendencia.",
+        "El valor absoluto de cada muestra.",
+        "La proporción de mohos y levaduras."
+      ],
+      "correcta": 0,
+      "explicacion": "Son la flora natural del agua y de la red; si suben, algo va mal en la red.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Lo que importa son los cambios de tendencia"
+    },
+    {
+      "id": "t18-q109",
+      "pregunta": "¿Qué indican los colífagos somáticos?",
+      "opciones": [
+        "La eficacia de la filtración frente a protozoos.",
+        "La contaminación fecal reciente.",
+        "La eficacia del tratamiento frente a virus."
+      ],
+      "correcta": 2,
+      "explicacion": "Frente a protozoos, el indicador es C. perfringens, y la contaminación reciente la marca E. coli.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Colífagos somáticos | Eficacia del tratamiento frente a virus (tema 15) |"
+    },
+    {
+      "id": "t18-q110",
+      "pregunta": "Se detectan coliformes pero no E. coli en un agua. ¿Qué indicador ayuda a valorar el hallazgo?",
+      "opciones": [
+        "El recuento a 22 °C.",
+        "Los enterococos intestinales.",
+        "Los colífagos somáticos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los enterococos sirven para valorar los coliformes cuando no hay E. coli, y tras reparar la red o poner tuberías nuevas.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Sirven para valorar los coliformes cuando no hay E. coli"
+    },
+    {
+      "id": "t18-q111",
+      "pregunta": "¿Qué pide la ISO 19458 sobre el día del análisis?",
+      "opciones": [
+        "Analizar el mismo día.",
+        "Analizar en un plazo de 72 horas.",
+        "Analizar en la hora siguiente a la toma."
+      ],
+      "correcta": 0,
+      "explicacion": "Además, transporte refrigerado a 5 ± 3 °C sin que se congele.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "La ISO 19458 pide analizar el mismo día"
+    },
+    {
+      "id": "t18-q112",
+      "pregunta": "Al transportar refrigerada una muestra de agua, ¿qué hay que evitar?",
+      "opciones": [
+        "Que baje de 10 °C.",
+        "Que se congele.",
+        "Que se agite durante el trayecto."
+      ],
+      "correcta": 1,
+      "explicacion": "La refrigeración es a 5 ± 3 °C, y la congelación destruiría parte de los microorganismos que se van a contar.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "transportar refrigerado a 5 ± 3 °C sin que se congele"
+    },
+    {
+      "id": "t18-q113",
+      "pregunta": "Según el RD 3/2023, ¿qué objetivo de la UNE-EN ISO 19458 se aplica a los parámetros microbiológicos?",
+      "opciones": [
+        "El objetivo a).",
+        "El objetivo c).",
+        "El objetivo b)."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el que pide el RD para el procedimiento de toma en grifo.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "la UNE-EN ISO 19458, con el objetivo b) que pide el RD 3/2023 para los parámetros microbiológicos"
+    },
+    {
+      "id": "t18-q114",
+      "pregunta": "¿Qué norma rige la toma de muestras en red, según el RD 3/2023?",
+      "opciones": [
+        "La UNE-ISO 5667-5.",
+        "La UNE-EN ISO 19458.",
+        "La UNE-EN ISO 17994."
+      ],
+      "correcta": 0,
+      "explicacion": "La 19458 es la del procedimiento en grifo y la 17994, la de equivalencia de métodos.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "procedimiento en grifo: la UNE-EN ISO 19458, con el objetivo b)"
+    },
+    {
+      "id": "t18-q115",
+      "pregunta": "¿Para qué llevan tiosulfato sódico los frascos de muestra?",
+      "opciones": [
+        "Para mantener el pH de la muestra.",
+        "Para neutralizar el cloro.",
+        "Para evitar que el agua se congele."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin neutralizante, el cloro residual seguiría actuando y bajaría el recuento.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "frascos estériles con tiosulfato sódico para neutralizar el cloro"
+    },
+    {
+      "id": "t18-q116",
+      "pregunta": "En circunstancias especiales, ¿hasta cuánto puede ampliarse el plazo de análisis de E. coli y coliformes?",
+      "opciones": [
+        "Hasta 24 horas.",
+        "Hasta 48 horas.",
+        "Hasta 72 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "El plazo normal son 18 horas a 5 ± 3 °C.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "18 horas (1322 C2 #15); en circunstancias especiales, 24 h"
+    },
+    {
+      "id": "t18-q117",
+      "pregunta": "Una muestra para enterococos se guarda a temperatura ambiente. ¿Cuál es entonces su plazo máximo?",
+      "opciones": [
+        "24 horas.",
+        "12 horas.",
+        "6 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las 24 horas son el plazo a 5 ± 3 °C; las 12, el del recuento a 22 °C.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "24 h (6 h si se guarda a temperatura ambiente)"
+    },
+    {
+      "id": "t18-q118",
+      "pregunta": "¿Cuál es el plazo máximo hasta el análisis de las células vegetativas de C. perfringens?",
+      "opciones": [
+        "72 horas.",
+        "12 horas.",
+        "18 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las 72 horas son el plazo de las esporas, que resisten mucho más.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "18 h para las células vegetativas; 72 h para las esporas"
+    },
+    {
+      "id": "t18-q119",
+      "pregunta": "¿Cuál es el plazo máximo que contempla el RD 487/2022 para una muestra de Legionella conservada a 5 ± 3 °C?",
+      "opciones": [
+        "48 horas.",
+        "18 horas.",
+        "72 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "Hasta 24 horas puede ir a 6-18 °C; de 24 a 48 horas, a 5 ± 3 °C. Las 72 horas son el plazo de las esporas de C. perfringens.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "de 24 a 48 h, a 5 ± 3 °C (tema 36)"
+    },
+    {
+      "id": "t18-q120",
+      "pregunta": "¿Por qué el apunte advierte de no confundir las 18 horas con los plazos del tema 36?",
+      "opciones": [
+        "Porque el tema 36 no habla de plazos.",
+        "Porque allí un procedimiento del Ministerio de Defensa da 6 horas como conveniente y 24 como máximo.",
+        "Porque las 18 horas son de la ISO 19458, no de la ISO 9308."
+      ],
+      "correcta": 1,
+      "explicacion": "El examen preguntó por el máximo de E. coli y coliformes, y la respuesta oficial es 18 horas, la de su norma de análisis.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "un procedimiento del Ministerio de Defensa de 2016 da 6 horas como conveniente y 24 como máximo"
+    },
+    {
+      "id": "t18-q121",
+      "pregunta": "¿Qué técnica prevé la UNE-EN ISO 9308-1 y para qué aguas?",
+      "opciones": [
+        "Filtración en membrana, para aguas con poca flora acompañante.",
+        "NMP, para aguas turbias.",
+        "Siembra en profundidad, para aguas de salida de tratamiento."
+      ],
+      "correcta": 0,
+      "explicacion": "El NMP es la 9308-2 y la siembra en profundidad, la ISO 6222.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Filtración en membrana, para aguas con poca flora acompañante; o NMP"
+    },
+    {
+      "id": "t18-q122",
+      "pregunta": "¿Qué medio usa la UNE-EN ISO 6222 para el recuento de colonias?",
+      "opciones": [
+        "Agar cromogénico CCA.",
+        "Agar nutritivo de extracto de levadura.",
+        "Agar de Slanetz y Bartley."
+      ],
+      "correcta": 1,
+      "explicacion": "El CCA es de coliformes y E. coli; el Slanetz y Bartley, de enterococos.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Siembra en agar nutritivo (extracto de levadura)"
+    },
+    {
+      "id": "t18-q123",
+      "pregunta": "¿Cuál es la norma oficial de los enterococos intestinales?",
+      "opciones": [
+        "La UNE-EN ISO 7899-3.",
+        "La UNE-EN ISO 9308-2.",
+        "La UNE-EN ISO 7899-2."
+      ],
+      "correcta": 2,
+      "explicacion": "La 7899-3 es el NMP del Enterolert-DW, método alternativo; la 9308-2 es de coliformes y E. coli.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "| Enterococos intestinales | UNE-EN ISO 7899-2 | Filtración en membrana |"
+    },
+    {
+      "id": "t18-q124",
+      "pregunta": "¿Qué norma añade el RD 3/2023 para concentrar los colífagos somáticos?",
+      "opciones": [
+        "La UNE-EN ISO 10705-2.",
+        "La UNE-EN ISO 10705-3.",
+        "La UNE-ISO/TS 12869."
+      ],
+      "correcta": 1,
+      "explicacion": "La 10705-2 es el recuento de placas y la 12869, la qPCR de Legionella.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "UNE-EN ISO 10705-2 (y 10705-3 para concentrar)"
+    },
+    {
+      "id": "t18-q125",
+      "pregunta": "¿Con qué norma se declara la equivalencia de los métodos alternativos ya autorizados?",
+      "opciones": [
+        "Con la UNE-EN ISO 17994.",
+        "Con la UNE-EN ISO 19458.",
+        "Con la UNE-EN ISO 11133."
+      ],
+      "correcta": 0,
+      "explicacion": "La 19458 es la de toma de muestras y la 11133, la del control de medios.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "por equivalencia según la UNE-EN ISO 17994"
+    },
+    {
+      "id": "t18-q126",
+      "pregunta": "¿Cuál de estos es un método alternativo autorizado para C. perfringens?",
+      "opciones": [
+        "El Enterolert-DW Quanti-Tray.",
+        "El agar cromogénico ACC.",
+        "El TSC-MUP."
+      ],
+      "correcta": 2,
+      "explicacion": "El Enterolert-DW es para enterococos y el ACC, para coliformes y E. coli.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "| NMP con sustrato definido (DST) en medio líquido | Coliformes y E. coli | | TSC-MUP | C. perfringens |"
+    },
+    {
+      "id": "t18-q127",
+      "pregunta": "¿Para qué parámetro está autorizado el Enterolert-DW Quanti-Tray?",
+      "opciones": [
+        "Para C. perfringens.",
+        "Para enterococos.",
+        "Para coliformes y E. coli."
+      ],
+      "correcta": 1,
+      "explicacion": "Para coliformes y E. coli están el ACC y el NMP con sustrato definido.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "| Enterolert-DW Quanti-Tray | Enterococos |"
+    },
+    {
+      "id": "t18-q128",
+      "pregunta": "¿Quién aprueba y publica el ejercicio de equivalencia de un método alternativo nuevo?",
+      "opciones": [
+        "El Ministerio de Sanidad.",
+        "La entidad nacional de acreditación.",
+        "La comunidad autónoma."
+      ],
+      "correcta": 0,
+      "explicacion": "La equivalencia se demuestra con la UNE-EN ISO 17994 o la 16140.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "aprobado y publicado por el Ministerio de Sanidad"
+    },
+    {
+      "id": "t18-q129",
+      "pregunta": "¿Qué dos métodos autorizó la Orden SCO/778/2009?",
+      "opciones": [
+        "El TSC-MUP y el Enterolert-DW.",
+        "La qPCR y el cultivo de Legionella.",
+        "El agar cromogénico (ACC) y el NMP con sustrato definido (DST)."
+      ],
+      "correcta": 2,
+      "explicacion": "Un estudio español de equivalencia los dio por buenos frente al agar lactosa TTC Tergitol.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Un estudio español de equivalencia dio por buenos el ACC y el DST, y esta orden los autorizó."
+    },
+    {
+      "id": "t18-q130",
+      "pregunta": "¿De dónde salen los procedimientos del agar cromogénico y del NMP con sustrato definido que describe el apunte?",
+      "opciones": [
+        "Del texto íntegro de las normas ISO.",
+        "De las fichas de los fabricantes de medios.",
+        "Del anexo de la Orden SCO/778/2009."
+      ],
+      "correcta": 2,
+      "explicacion": "Las normas ISO son de pago y no se han leído enteras: es una de las dudas declaradas.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Su anexo describe los dos métodos, y de él salen los procedimientos de los apartados 5.1 y 6.1."
     }
   ],
   "supuestos": [
