@@ -5,7 +5,7 @@ parte: Parte primera
 estado: aprobado
 verificado: 2026-09-29
 fuentes:
-  - "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (BOE-A-2004-4214). Texto consolidado del BOE, última actualización publicada el 03/06/2026. https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
+  - "Real Decreto Legislativo 2/2004, de 5 de marzo, por el que se aprueba el texto refundido de la Ley Reguladora de las Haciendas Locales (BOE-A-2004-4214). Texto consolidado del BOE, última actualización publicada el 07/10/2026, contrastada el 17/11/2026. https://www.boe.es/buscar/act.php?id=BOE-A-2004-4214"
   - "Ley 7/1985, de 2 de abril, reguladora de las Bases del Régimen Local (BOE-A-1985-5392), art. 26.1, para la pregunta del alcantarillado."
   - "ExamenesAnteriores/PLANTILLAS.md: respuestas oficiales de 1246 (provisional) y 1322 (definitiva), y de otras trece plazas del Ayuntamiento (1446, 1458, 1497, 1519, 1521, 1635, 1669, 1681, 1722, 1724, 1729, 1736 y 1779)."
   - "Cuestionarios de otras plazas del Ayuntamiento de Zaragoza en https://zaragoza.es/cont/paginas/oferta/archivos/ (2023-2026), barridos el 29/09/2026 con «Haciendas Locales» y «2/2004», y de nuevo el 30/09/2026 tras un tercer sondeo (números 1250-1379, 1550-1566, 1695-1720 y 1791-1860)."
@@ -219,10 +219,13 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
 | **Características especiales** | Supletorio **0,6 %** | Entre **0,4 %** y **1,3 %** |
 
 - **Incrementos (72.3):** los máximos pueden subir si el municipio es **capital de provincia o de comunidad autónoma** (+0,07 urbanos, +0,06 rústicos), tiene **transporte público colectivo de superficie** o **presta más servicios** de los obligatorios. **Zaragoza cumple las tres.**
-- **Recargo a las viviendas vacías (72.4):**
+- **Recargo a las viviendas vacías (72.4 bis):** **Actualización de vigencia de 17/11/2026.** El RDL 29/2026, art. 8 (BOE-A-2026-20823), distingue municipios situados en zona de mercado residencial tensionado y los demás. La nueva redacción se aplica a períodos impositivos iniciados desde el **8 de octubre de 2026**. El siguiente esquema corresponde a los municipios **fuera de zona tensionada**, sin confundir recargo básico e incrementos adicionales:
   - hasta el **50 %** de la cuota líquida para las **desocupadas más de dos años** sin causa justificada, de titulares de **cuatro o más** viviendas;
   - hasta el **100 %** si llevan desocupadas **más de tres años**;
   - hasta **50 puntos más** si el titular tiene **dos o más** vacías en el municipio.
+  - **En municipios de zona tensionada:** hasta el 50 % para vivienda permanentemente desocupada más de dos años sin causa justificada; hasta el 100 % si el titular tiene cuatro o más inmuebles residenciales; si la desocupación supera tres años, hasta 50 puntos adicionales para esos titulares. Deben cumplirse los requisitos y garantías del artículo 72.4 bis.
+  - **Alojamientos turísticos en zona tensionada (72.4 ter):** recargo potestativo de hasta el 50 %; hasta el 100 % para titulares de dos o más inmuebles residenciales destinados a ese uso y hasta el 150 % para titulares de cuatro o más. La ordenanza regula aplicación; no afirmar que Zaragoza lo haya establecido sin consultar su ordenanza.
+  - El recargo se devenga el **31 de diciembre**, con las garantías de acreditación de la desocupación y audiencia que prevé la ley.
 - **Bonificaciones obligatorias (73):**
   - **50-90 %** para los inmuebles de **empresas de urbanización, construcción y promoción** que no sean inmovilizado, como máximo **tres períodos**;
   - **50 %** para las **viviendas de protección oficial** durante **tres períodos** tras la calificación definitiva;
@@ -429,4 +432,4 @@ No son parte del enunciado, pero hay que distinguirlos de los impuestos:
   - El 30/09/2026 se corrigió un error del lector de rejillas que desplazaba una fila a partir de la 20. No afectaba a ninguna pregunta de este tema.
   - Las de las plazas **sin plantilla** (1319, 1327, 1436, 1448, 1459, 1607, 1610, 1694 y 1756) se han **deducido del texto de la ley**; en todas la opción correcta es inequívoca, salvo las dos de la duda 5.
 - **TEMARIO EXTRA:** no contiene nada de Haciendas Locales.
-- **Fecha de verificación:** 29 de septiembre de 2026; ampliada el 30 de septiembre de 2026 con el tercer sondeo.
+- **Fecha de verificación:** 29 de septiembre de 2026; ampliada el 30 de septiembre de 2026 con el tercer sondeo. Actualización del art. 72 contrastada el 17/11/2026. Los coeficientes del art. 107.4 tienen una modificación con efectos desde el 01/12/2026 (RDL 29/2026, art. 10); no se incorporan como tabla memorizable ni se confunden con los aplicables antes de esa fecha.

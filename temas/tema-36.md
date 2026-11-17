@@ -59,9 +59,9 @@ fuentes:
 >
 > | Parámetro | Su tema | Lo que se añade aquí |
 > | --- | --- | --- |
-> | pH, conductividad, oxígeno disuelto | 23, 24 | **Se miden IN SITU**: plazo máximo, 15 minutos |
+> | pH, conductividad, oxígeno disuelto | 23, 24 | Medida de campo preferente según método; la tabla IDEAM fija 15 minutos para pH, temperatura y OD, no para toda conductividad |
 > | Cloro libre residual | 25, 33 | **In situ**, y obliga a **neutralizar** con tiosulfato lo que va al laboratorio |
-> | Metales | 26, 27, 35 | **Plástico lavado con ácido**, **HNO₃ a pH < 2**; nunca vidrio para traza |
+> | Metales | 26, 27, 35 | **Plástico lavado con ácido**, **HNO₃ a pH < 2**; material compatible según método, sin prohibición universal de vidrio |
 > | DQO, DBO, sólidos | 34 | **H₂SO₄ a pH < 2** la DQO; la **DBO no se acidifica** y solo aguanta 48 h |
 > | Nitrógeno y fósforo | 35 | **H₂SO₄ a pH < 2** |
 > | COV y THM | 31 | **Vidrio, sin burbujas y sin cámara de aire** |
@@ -75,7 +75,7 @@ fuentes:
 
 Este tema es el más transversal de todo el bloque de aguas, y conviene verlo así desde el principio: **es el tema del que dependen los quince anteriores**.
 
-Un dato analítico no puede ser mejor que la muestra de la que sale. Da igual que el ICP-MS tenga un límite de detección de nanogramos por litro si el metal se ha quedado pegado a la pared del frasco; da igual que la incubación de la DBO dure exactamente cinco días si la muestra tardó tres en llegar. **El error de muestreo no se corrige en el laboratorio: se arrastra hasta el boletín.**
+Un dato analítico no puede ser mejor que la muestra de la que sale. Da igual que el ICP-MS tenga un límite de detección de nanogramos por litro si el metal se ha quedado pegado a la pared del frasco; da igual que la incubación de la DBO dure exactamente cinco días si la muestra tardó tres en llegar. **El laboratorio no reconstruye automáticamente una pérdida de analito o una toma no representativa.** Se evalúa y documenta cada incidencia.
 
 Y la lógica del tema entera se puede resumir en una frase: **cada cosa que puede pasarle a una muestra entre el grifo y el aparato tiene una contramedida, y la contramedida depende del parámetro.**
 
@@ -111,7 +111,7 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 | --- | --- | --- |
 | **RD 3/2023** | Agua de consumo: **UNE-ISO 5667-5** en red, **UNE-EN ISO 19458 «con objetivo b)»** en microbiología | 33 |
 | **RD 487/2022** | *Legionella*: **anexo VI completo**, que remite a la **UNE-EN ISO 19458, punto 4.2.3** | — |
-| **RD 509/1996** | Vertidos de EDAR: muestra de **24 horas**, proporcional al caudal | 34 |
+| **RD 509/1996** | Vertidos de EDAR: muestra de **24 horas**, proporcional al caudal o a intervalos regulares | 34 |
 | **Decreto 38/2004 de Aragón** | Vertidos a red: **Standard Methods**, arqueta de registro, muestras compuestas | 34, 35 |
 
 > **Dato de vigencia que conviene tener fresco: la UNE-EN ISO 5667-3 se renovó el 11 de diciembre de 2024.** La edición **2024** anuló a la de **2019**. Citar «UNE-EN ISO 5667-3:2019» hoy es citar una norma anulada.
@@ -120,11 +120,13 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 ### 2.2. Tipos de muestra
 
+**Ampliación fisicoquímica: diseño y representatividad.** El plan fija objetivo, matriz, mensurando y fracción, puntos y periodo, frecuencia, tipo de muestra, volumen requerido por análisis y controles. Un puntual describe un lugar y un instante, no demuestra la media del día ni descarta episodios entre tomas. Una integrada combina puntos espaciales; una compuesta temporal combina tomas sucesivas. Con alícuotas iguales e intervalos iguales se aproxima una media temporal; con volúmenes proporcionales al caudal e intervalos iguales, la concentración media ponderada por volumen. Si los intervalos son diferentes se pondera también por duración. Para dos periodos, C media volumétrica = suma(C·Q·tiempo)/suma(Q·tiempo); no se promedian concentraciones sin comprobar pesos. La carga requiere concentración y volumen o caudal y tiempo compatibles. Una compuesta puede ocultar picos; no sustituye una toma puntual cuando se quiere evaluar un máximo instantáneo. Mezclar pierde resolución temporal o espacial y no corrige un punto mal elegido. Se consideran ciclos, horarios, cambios de proceso y accesibilidad segura; se documentan desviaciones y limitaciones. En parámetros inestables se prioriza medida inmediata o puntual conforme al método y objetivo; no se impone una prohibición universal de toda compuesta de COT. Fuente: IDEAM M-S-LC-I004 v03, definiciones y planificación; RD 509/1996, anexo III B.1; ejercicios originales de balances.
+
 **Antes de elegir envase hay que elegir muestra.** Tres tipos, y la diferencia decide qué se puede afirmar con el resultado:
 
 | Tipo | Qué es | Cuándo |
 | --- | --- | --- |
-| **Puntual** (o simple) | La tomada **en un punto y un momento** concretos | **Obligatoria** cuando el parámetro cambia rápido: **oxígeno disuelto, COT, temperatura, pH y MICROBIOLÓGICOS** |
+| **Puntual** (o simple) | La tomada **en un punto y un momento** concretos | En fisicoquímica inestable se prioriza puntual o medida inmediata según método y objetivo; COT no tiene prohibición universal de compuesta. El ámbito microbiológico conserva su regla específica de la guía |
 | **Compuesta** | **Combinación de muestras puntuales** del mismo punto, de igual volumen o **proporcionales al caudal**, en intervalos regulares | Para conocer **la composición media** de algo heterogéneo en el tiempo. Es la del **vertido de una EDAR** |
 | **Integrada** | Combinación de muestras de **puntos distintos** tomadas a la vez | Para conocer la media **en el espacio** |
 
@@ -135,6 +137,8 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 **Y el contraste con el vertido industrial es perfecto:** el reglamento aragonés (art. 22.2) dice exactamente lo contrario para los físico-químicos: *«cuando los valores máximos de contaminación se refieran a un determinado intervalo de tiempo, los controles se efectuarán sobre **muestras compuestas**… o por **muestras simples proporcionales al volumen del caudal vertido**»*. Y el RD 509/1996 pide muestras **de 24 horas, proporcionales al caudal o a intervalos regulares** (tema 34).
 
 ### 2.3. Tipos de envase: vidrio contra plástico
+
+**Ampliación fisicoquímica: compatibilidad del sistema de envase.** Se seleccionan juntos cuerpo, tapa, junta, limpieza y conservante según analito, matriz y método: ni todo plástico ni todo vidrio son equivalentes. La adsorción puede causar sesgo negativo; la cesión de contaminantes, positivo. Un envase nuevo no demuestra limpieza analítica y uno visualmente limpio puede contaminar trazas. Se controla la limpieza mediante blancos y se evita reutilizar recipientes de procedencia desconocida. La recomendación del ITOXDEF contra vidrio para trazas es de su guía: no es prohibición universal; la tabla IDEAM admite vidrio lavado con ácido y EPA 200.8 exige limpieza adecuada de materiales compatibles. En COT, admitir plástico o vidrio no significa que cualquier envase aporte cero carbono: se comprueban blancos y desempeño. Para compuestos volátiles se evita pérdida por burbujas y espacio de cabeza conforme al método; esa regla no se extiende a toda química, como muestra el envase de grasas y aceites. El ámbar protege de luz pero no sustituye limpieza, cierre, plazo ni frío. Un cierre inadecuado puede contaminar o permitir pérdidas aunque el cuerpo sea correcto. Se separan alícuotas con conservaciones incompatibles y no se enjuaga con muestra un frasco preconservado cuando ello eliminaría el reactivo previsto. Fuente: EPA 200.8 rev5.4 §6.10; IDEAM M-S-LC-I004 v03, tabla de preservación; apunte y supuesto 1246.
 
 **La elección del material no es una preferencia: es una defensa contra dos fenómenos opuestos.**
 
@@ -150,10 +154,10 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 - *«Aunque el uso de envases de plástico está muy generalizado… desde un punto de vista analítico se ha observado que **el plástico podría ABSORBER ciertos productos orgánicos (hidrocarburos y pesticidas) y algunos elementos minerales tales como el FÓSFORO**. Por ello, cuando se requieran determinaciones de los parámetros anteriormente citados, se recomienda el envío de, al menos, una parte de la muestra en envase de vidrio.»*
 - *«**Para la determinación de elementos traza NO deben utilizarse envases de vidrio.**»*
 
-> **Y de ahí salen, exactas, las respuestas del supuesto:**
+> **Y de ahí salen las respuestas del supuesto, sin convertirlas en reglas universales para todo material:**
 > - **HAP (#21) y COV/THM (#24) → VIDRIO con tapón de PTFE.** Son orgánicos: el plástico se los comería. Y el **tapón** también importa: un tapón con junta de goma o plástico blando aportaría o absorbería compuestos, así que se reviste de **politetrafluoroetileno**, que es inerte.
 > - **Cationes y aniones (#23) → PLÁSTICO.** Son inorgánicos: el vidrio les cedería sodio, boro y silicio.
-> - **COT (#22) → plástico O vidrio, indistintamente.** El carbono orgánico total no sufre por ninguno de los dos materiales, y por eso la respuesta correcta es la que dice **«las respuestas a) y b) son correctas»**.
+> - **COT (#22) → plástico O vidrio, indistintamente.** En ese supuesto se admiten ambos, con compatibilidad y limpieza verificadas, y por eso la respuesta correcta es la que dice **«las respuestas a) y b) son correctas»**.
 
 **Y un detalle de limpieza que se pregunta:** para **metales** el envase debe ir **lavado con ácido** (la tabla del IDEAM lo marca como *P(A), V(A), FP(A)*). Para **microbiología**, **estéril**: autoclave a **120 °C / 30 minutos** o calor seco a **180 °C / 2 horas**. Y en general **se aconseja usar envases nuevos**, porque reutilizarlos da problemas de contaminación si la limpieza no es perfecta.
 
@@ -187,10 +191,12 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 ### 2.5. Conservación: cuatro palancas y un reloj
 
+**Ampliación fisicoquímica: conservación específica y reloj analítico.** Se aplica el método y la regulación correspondiente, no un conservante universal. La tabla IDEAM es orientación; sus notas dan prioridad a requisitos particulares del método y a requisitos regulatorios adicionales. Refrigerar no esteriliza ni congela el tiempo de conservación; un plazo máximo no obliga a esperar hasta su final. Se registra toma, conservación, recepción e inicio de análisis, además del origen temporal que prescriba el método para muestras compuestas. Una demora o temperatura fuera de criterio se documenta y evalúa; enfriar al recibir no borra una exposición previa desconocida. No se añade ácido a la alícuota destinada al pH original, ni neutralizante a la destinada a medir el cloro residual original. No se acidifican todas las especies de nitrógeno por el mero nombre de nutriente. Se distingue concentración de una especie y total. Los intervalos 2–8 °C y mayor de 0 hasta 6 °C se solapan pero ninguno contiene por completo al otro: se cumple el que proceda, sin elegir el más cómodo. La congelación de COV no se autoriza de modo general sin método específico. Para metales disueltos EPA 200.8 §8.2 prevé filtrar a 0,45 µm en la toma o tan pronto como sea practicable y acidificar el filtrado después; para total recuperable §8.3 no se filtra. Acidificar antes puede alterar el reparto entre partículas y disolución. El plazo de hasta seis meses de §8.1 presupone correcta conservación ácida y no equivale a estabilidad de toda especie metálica por cualquier método. El propio método verifica pH antes de alicuotar; una dosis nominal no prueba pH final. Fuente: EPA 200.8 §8.1–8.5; IDEAM M-S-LC-I004 v03, notas de la tabla.
+
 **Solo hay cuatro maneras de conservar una muestra de agua**, y se combinan:
 
-1. **Refrigerar.** Lo universal. **2-8 °C** (ITOXDEF) o **≤ 6 °C** (IDEAM), **en oscuridad**, y **nunca congelar las muestras microbiológicas**. Para COV, en cambio, se puede bajar a **−20 °C**.
-2. **Acidificar.** **HNO₃ a pH < 2** para metales —evita que precipiten y que se adsorban a la pared—; **H₂SO₄ a pH < 2** para DQO, nitrógeno y fósforo —inhibe la actividad bacteriana—.
+1. **Refrigerar según el procedimiento.** ITOXDEF indica **2–8 °C** en su ámbito e IDEAM **mayor de 0 y hasta 6 °C** en su tabla; no son intervalos idénticos. La congelación de COV no se autoriza de forma general sin método específico. Los requisitos del ámbito microbiológico se mantienen en su apartado.
+2. **Acidificar.** **HNO₃ a pH < 2** para metales —evita que precipiten y que se adsorban a la pared—; **H₂SO₄ a pH < 2** para DQO y las fracciones de N/P que indique el método, no para toda especie —inhibe la actividad bacteriana—.
 3. **Alcalinizar.** **NaOH a pH > 12** para **cianuros**, que en medio ácido se volatilizarían como HCN.
 4. **Neutralizar el desinfectante.** **Tiosulfato sódico**, al menos **20 mg por litro**, para que el cloro residual no siga matando bacterias dentro del frasco.
 
@@ -248,9 +254,9 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 **Cuatro lecturas que valen más que memorizar la tabla entera:**
 
-1. **Tres parámetros se miden IN SITU y punto: pH, temperatura y oxígeno disuelto.** Su plazo es de **15 minutos**, que en la práctica significa «allí mismo». El cloro libre residual va en el mismo grupo (tema 25: *«medida inmediata y en campo, porque el cloro se pierde»*).
-2. **La DBO es el único parámetro global que NO se acidifica**, y es el de plazo más corto de los de laboratorio: **48 horas**. Lógico: acidificar mataría a las bacterias que hacen la medida.
-3. **Los metales aguantan seis meses; los nutrientes, 28 días; los nitritos y nitratos, 48 horas.** Cuanto más biológicamente activo es el analito, menos espera.
+1. **La tabla indica análisis inmediato para pH, temperatura y oxígeno disuelto.** Se prioriza medida de campo según método. Su plazo es de **15 minutos**, que en la práctica significa «allí mismo». El cloro libre residual va en el mismo grupo (tema 25: *«medida inmediata y en campo, porque el cloro se pierde»*).
+2. **La DBO se conserva sin acidificación en este esquema**, refrigerada y con **48 horas** en la tabla IDEAM. No es el único parámetro sin conservante ácido ni el de menor plazo de todo análisis de laboratorio.
+3. **Los plazos de esta tabla son orientativos y condicionados.** Distingue metales generales, Hg, N amoniacal/orgánico, P total y especies como nitrito y nitrato. No se deduce estabilidad universal de un elemento ni se prescinde de la conservación y método específicos.
 4. **El fosfato disuelto y los metales disueltos exigen FILTRAR DE INMEDIATO**, no al llegar al laboratorio: si se espera, parte de lo particulado se disuelve y el reparto cambia. *(Enlaza con la distinción total/disuelto del tema 35.)*
 
 ### 2.7. Los tres objetivos del muestreo en grifo
@@ -273,6 +279,8 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 ### 2.8. Lo que el RD 3/2023 sí dice, y lo que no
 
+**Ampliación de casos de grifo y red.** El muestreo químico de Cu, Pb y Ni del anexo III A.1.a del RD 3/2023 combina cuatro condiciones: un grifo del usuario, sin descarga previa, aleatorio diurno y un litro. No ordena como regla general un estancamiento nocturno prefijado ni demuestra por sí solo el origen exclusivo de toda concentración en la tubería. Las alternativas del apartado b se vinculan a superación del valor paramétrico y comprobación del origen en la instalación interior; no se eligen libremente para evitar una superación. El proporcional de una semana representa agua consumida mediante una fracción del consumo; no equivale a guardar un litro inmóvil una semana. Para red, salida de ETAP o depósito, A.2.a remite a UNE-ISO 5667-5. El plan diferencia punto de red, grifo e instalación interior: cambiar el punto cambia la pregunta que puede responder el dato. Fuente: RD 3/2023, anexo III parte A, lectura del BOE.
+
 **Lo que SÍ dice (anexo III, parte A), transcrito:**
 
 **1. Muestreo en grifo.**
@@ -286,7 +294,7 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 > **Por qué «SIN descarga previa» para el cobre, el plomo y el níquel, y por qué eso parece contradecir el objetivo b).** No hay contradicción: **son dos cosas distintas y a propósito**.
 >
-> El plomo, el cobre y el níquel **vienen de la tubería**, y solo aparecen en el agua que ha estado **en contacto con ella**. Si se purga, se lava justo la evidencia. Por eso **se toma la primera agua que sale**, al azar, de día.
+> La instalación interior puede contribuir al plomo, cobre y níquel; purgar cambia las condiciones de contacto. No se afirma que sea el origen exclusivo de toda concentración. El protocolo básico exige **sin descarga previa, aleatorio diurno y un litro**, sin añadir un estancamiento nocturno obligatorio.
 >
 > En microbiología, en cambio, lo que interesa es el agua del suministro, **no la suciedad de la boca del grifo**: de ahí que el objetivo b) mande **retirar la alcachofa y desinfectar**.
 >
@@ -297,6 +305,8 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 **Dónde está esa tabla, entonces: en la UNE-EN ISO 5667-3.** El enunciado del supuesto del examen cita el real decreto, pero **el contenido que pregunta es el de la norma de muestreo**, a la que el real decreto llega por la vía de la UNE-ISO 5667-5.
 
 ### 2.9. Muestreo de aguas residuales
+
+**Ampliación de casos de vertido.** El RD 509/1996 anexo III B.1 admite muestras de veinticuatro horas proporcionales al caudal **o a intervalos regulares**, en un mismo punto de salida claramente definido y, si hace falta, en entrada. No exige siempre una sola modalidad ni una segunda muestra de entrada sin necesidad; un rendimiento requiere datos comparables y ponderaciones adecuadas. Una concentración de salida no basta para calcular porcentaje de eliminación de carga cuando se desconoce la entrada. Para vertidos a red en Aragón, artículos 21–24: acceso al registro; si falta arqueta, punto más próximo muestreable y requerimiento de subsanación; nueva muestra si el vertido no parece representativo; para máximos referidos a un intervalo, compuestas o simples proporcionales al volumen vertido. La copia del resultado al titular se entrega en diez días como máximo **desde la recepción** de los resultados. La arqueta permite muestra y aforo, con acceso desde el exterior; no se sustituye su función por una etiqueta en cualquier desagüe. El artículo 23 remite a Standard Methods actualizado en español, y su apartado 3 permite otros métodos mediante resolución del IAA. Fuente: RD 509/1996 anexo III B.1 y Reglamento de vertidos a redes municipales de Aragón, arts.21–24, texto refundido.
 
 **Ya visto en los temas 34 y 35; aquí se recoge lo que es propiamente de muestreo.**
 
@@ -344,6 +354,8 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 ### 2.11. Identificación, registro y transporte
 
+**Ampliación fisicoquímica: custodia, recepción y controles.** Un código único enlaza envase, alícuotas, hoja de campo, registro de transferencias y resultado; incluye punto identificable, fecha y hora, responsable, ensayos, fracción, conservante y condiciones relevantes. Se registran entregas y recepciones con responsables y tiempos, incidencias, cierre y estado del envase, temperatura según criterio y volumen disponible. La cadena de custodia abarca recolección, transporte, laboratorio, resultados y disposición final; no es solo una firma del mensajero. Una identificación ilegible o discrepante se investiga sin inventar datos. No toda incidencia exige idéntica decisión: se aplican criterios del método y uso previsto, se documenta aceptación condicionada o rechazo y, si procede, nueva toma. Un precinto intacto no demuestra conservación correcta; una nevera fría al final no reconstruye todo su historial. Los equipos de campo se verifican y se mantienen dentro de condiciones de calibración: una verificación fallida se resuelve antes de usar el equipo o se sustituye, sin confundir ajustar con calibrar. Un blanco permite investigar contaminación, no representatividad; duplicados independientes evalúan variabilidad del proceso incluido y duplicados de una misma botella no incluyen la variabilidad de toma. El blanco de transporte del IDEAM usa agua tipo I preservada para el analito y acompaña ida y vuelta al lote; no sustituye una muestra real ni un blanco de equipo que evalúe limpieza del material. EPA 200.8 §8.5 prevé blanco de campo con el mismo tipo de envase y ácido que las muestras. Un adicionado incorpora cantidad conocida del analito a la matriz para estudiar recuperación y posibles efectos; no certifica automáticamente ausencia de toda interferencia. Una respuesta detectable en blanco se evalúa según método, sin restarla mecánicamente de todas las muestras. Se comprueba contaminación cruzada del material, conservantes y manipulación; guantes sucios también contaminan. Fuente: IDEAM M-S-LC-I004 v03, definiciones, verificación previa y recepción; EPA 200.8 §6.10 y §8.5; ejercicios de aplicación.
+
 **Lo que acompaña siempre a la muestra**, según el Instituto de Toxicología de la Defensa:
 
 - **El envase, marcado ANTES de la toma** con **rotulador resistente al agua**, con una referencia que permita identificarla sin ambigüedad.
@@ -366,10 +378,10 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 | **Diseño del programa de muestreo** | **UNE-EN ISO 5667-1:2024** | — | — |
 | **Calidad del propio muestreo** | **UNE-EN ISO 5667-14:2017** | — | — |
 | ***Legionella*** | **RD 487/2022**, anexo VI | **Estéril** de polietileno, **con neutralizante** | **1 000 mL**, **cámara de aire**, **< 24 h a 6-18 °C** |
-| **Vertido de EDAR** | **RD 509/1996**, anexo III B.1 | Según parámetro | **24 horas**, proporcional al caudal |
+| **Vertido de EDAR** | **RD 509/1996**, anexo III B.1 | Según parámetro | **24 horas**, proporcional al caudal o a intervalos regulares |
 | **Vertido a red municipal** | **Decreto 38/2004** de Aragón, arts. 21-24 | Según parámetro | **Muestras compuestas**; **arqueta de registro** |
-| **Orgánicos: HAP, plaguicidas, COV, THM** | — | **VIDRIO con tapón de PTFE** | **Sin burbujas ni cámara de aire** |
-| **Metales** | — | **Plástico lavado con ácido** | **HNO₃ a pH < 2**; nunca vidrio para traza |
+| **Orgánicos: HAP, plaguicidas, COV, THM** | Según método | **VIDRIO con cierre compatible** | En COV/THM, evitar burbujas y espacio de cabeza según método; no generalizar el llenado a todo orgánico |
+| **Metales** | — | **Plástico lavado con ácido** | **HNO₃ a pH < 2**; material compatible según método, sin prohibición universal de vidrio |
 | **pH, temperatura, oxígeno disuelto, cloro** | — | — | **IN SITU**: plazo, **15 minutos** |
 
 ---
@@ -378,7 +390,7 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 1. **HAP y COV/THM → VIDRIO con tapón con revestimiento interno de PTFE.** Dos preguntas.
 
-2. **Cationes y aniones → PLÁSTICO**, sin aditivo. **COT → plástico O vidrio, indistintamente.**
+2. En el supuesto 1246 se elige **plástico para los iones citados** y se admite **plástico o vidrio para COT**, con compatibilidad y limpieza verificadas; no se generaliza a cualquier recipiente.
 
 3. **Microbiológico → plástico ESTÉRIL con TIOSULFATO SÓDICO.**
 
@@ -386,13 +398,13 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 5. ***Legionella*: 1 000 mL y SIEMPRE cámara de aire.** La opción falsa da el volumen bien y manda llenar del todo.
 
-6. **La cámara de aire se contradice a propósito: microbiología SÍ, fisicoquímica NO.** Una para poder agitar, la otra para que no se escape lo volátil.
+6. **El llenado depende del ensayo y del ámbito.** En COV se evita espacio de cabeza según método; no se generaliza a toda fisicoquímica, como muestra la regla de grasas y aceites. El esquema compara los casos específicos que describe.
 
 7. **En un spa con *Legionella* se miden in situ pH, temperatura y desinfectante residual** (el RD añade la conductividad).
 
 8. **El plástico ADSORBE orgánicos y fósforo; el vidrio CEDE elementos traza.** De ahí todo el reparto de envases.
 
-9. **Para elementos traza NO se usa vidrio.** Y los envases de metal están desaconsejados por completo.
+9. **No hay prohibición universal del vidrio para toda traza.** La recomendación ITOXDEF se contextualiza: IDEAM admite vidrio lavado con ácido y se verifica aptitud según método, analito y blancos.
 
 10. **Tiosulfato: al menos 20 mg/L; no afecta a la muestra y sirve también para aguas no cloradas.** Sin él, 15 minutos hasta el laboratorio.
 
@@ -418,7 +430,7 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 21. **La UNE-EN ISO 5667-3 se renovó en diciembre de 2024**; la edición de 2019 está anulada.
 
-22. **El vertido de EDAR se muestrea durante 24 horas, proporcionalmente al caudal.**
+22. **El vertido de EDAR se muestrea durante 24h, proporcionalmente al caudal o a intervalos regulares**, según el apartado citado.
 
 ---
 
@@ -446,6 +458,9 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 ## Fuentes y verificación
 
+**Fuentes adicionales de la ampliación fisicoquímica (17/11/2026).** [EPA Method200.8,rev5.4,§6.10y8](https://www.epa.gov/sites/default/files/2015-06/documents/epa-200.8.pdf), usado como método técnico con alcance declarado, no como legislación española; [ISO5667-3:2024, ficha pública de alcance y estado](https://www.iso.org/standard/82273.html), sin lectura de tabla de pago. Los casos remiten además al instructivo IDEAMy a las disposiciones de muestreo delBOEyAragón ya identificadas en este apunte.
+
+
 - **RD 3/2023, texto consolidado del BOE, leído literalmente:** el **anexo III parte A completa** —los tres métodos de muestreo en grifo con sus volúmenes y condiciones, y la remisión a las dos normas UNE—. Se ha comprobado además, por **búsqueda directa en el texto consolidado**, que **no existe ninguna tabla de envases ni de conservantes** en todo el real decreto.
 - **RD 487/2022, texto consolidado, leído literalmente:** el **anexo VI íntegro** (partes A.1, A.2 con la **tabla 4**, B con la **tabla 5**, C, D, E y F), el **artículo 11** y el apartado del anexo V sobre parámetros a determinar in situ. De ahí salen, transcritos, la cámara de aire, el neutralizante, los volúmenes, las temperaturas y tiempos de transporte, el orden de toma, las cinco prácticas de higiene y la prohibición de meter instrumentos en el frasco.
 - **Instituto de Toxicología de la Defensa (Ministerio de Defensa), FTTM06 Rev-3, leído íntegro:** los **tres objetivos** del muestreo en grifo con su procedimiento, las condiciones de esterilización (**120 °C / 30 min** o **180 °C / 2 h**), el **tiosulfato a 20 mg/L** y sus dos propiedades, los volúmenes mínimos (**500 mL** microbiología, **2 L** fisicoquímica), los plazos (**6 h** / 24 h), la oposición **vidrio/plástico** en sus dos direcciones, la prohibición del vidrio para traza, el muestreo de **pozos y depósitos** y las condiciones de transporte.
@@ -467,7 +482,7 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
 
 4. **El documento del Instituto de Toxicología de la Defensa es de 2016** y su título alude a piscinas, aunque su contenido son las **condiciones generales** de toma de muestras de agua. **Es anterior al RD 3/2023 y al RD 487/2022**, así que en lo que choque con ellos mandan los reales decretos. No he encontrado ningún choque en lo que cito, pero queda dicho.
 
-5. **Las dos temperaturas de refrigeración no coinciden entre fuentes:** el ITOXDEF dice **2-8 °C** y el IDEAM **≤ 6 °C**. **No es una contradicción real** —el segundo intervalo cae dentro del primero—, pero si el examen pide un número exacto, el que viene de fuente española oficial es **2-8 °C**.
+5. **Las temperaturas difieren:** ITOXDEF indica **2–8 °C** e IDEAM **mayor de 0 hasta 6 °C**. Se solapan, pero ninguno contiene totalmente al otro; se atiende el requisito aplicable al procedimiento, no una preferencia automática por la cifra más cómoda.
 
 6. **En 1246 C2 #15 la respuesta correcta recoge tres de los cuatro parámetros que nombra el RD 487/2022** (falta la conductividad). La marco como correcta porque era, con diferencia, la mejor de las tres opciones ofrecidas, pero **el real decreto nombra cuatro** y así queda dicho en el apartado 2.10.
 
@@ -482,3 +497,6 @@ Y la lógica del tema entera se puede resumir en una frase: **cada cosa que pued
    **Revisada el 29/09/2026 con las plantillas oficiales** (ver `ExamenesAnteriores/PLANTILLAS.md`): el segundo ejercicio de 1246 **no tiene plantilla publicada**, así que las ocho de este tema siguen siendo **deducción**, no respuesta oficial.
 
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 35.
+
+
+**Revisión fisicoquímica de 17/11/2026.** Se incorporan casos de planificación, envases, conservación, trazabilidad y controles, con IDEAMv03, EPA200.8§6.10/8, RD3/2023 y normas de vertidos. No se ha ampliado el bloque microbiológico. Las recomendaciones ITOXDEF y la tabla IDEAM se leen con su alcance; no reemplazan requisitos particulares del método o la regulación.

@@ -92,9 +92,9 @@
     },
     {
       "id": "t32-f11",
-      "anverso": "¿Por qué el **pH de la fase móvil** en HPLC de fase inversa debe mantenerse por debajo de 7,5?",
-      "reverso": "Porque **el sustrato de SÍLICE se HIDROLIZA en disoluciones básicas**. La fase estacionaria va unida covalentemente a partículas de sílice, y si el soporte se disuelve, se pierde la columna.\nEs un límite operativo duro y muy preguntable: **por debajo de 7,5**.\n(La fase móvil típica de fase inversa es precisamente una **disolución acuosa tamponada**, o metanol o acetonitrilo, de modo que el pH se controla.)",
-      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "anverso": "En una columna HPLC de **sílice convencional** cuyo fabricante limita el pH a menos de 7,5, ¿qué deterioro se pretende evitar?",
+      "reverso": "Porque **el sustrato de SÍLICE se HIDROLIZA en disoluciones básicas**. La fase estacionaria va unida covalentemente a partículas de sílice, y si el soporte se disuelve, se pierde la columna.\nEse límite corresponde a la columna convencional descrita; **no es universal para toda la HPLC de fase inversa**. Debe respetarse el intervalo de pH del fabricante de cada columna.\n(La fase móvil típica de fase inversa es precisamente una **disolución acuosa tamponada**, o metanol o acetonitrilo, de modo que el pH se controla.)",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4; Agilent, ZORBAX Reversed Phase HPLC Columns, Extend-C18 (https://www.agilent.com/cag/CABU/RP_HPLC1.htm)",
       "etiquetas": ["instrumentacion"],
       "nucleo": true
     },
@@ -562,15 +562,15 @@
     },
     {
       "id": "t32-q11",
-      "pregunta": "¿Por qué el pH de la fase móvil en HPLC de fase inversa debe mantenerse por debajo de 7,5?",
+      "pregunta": "En una columna HPLC de sílice convencional cuyo fabricante limita el pH a menos de 7,5, ¿qué deterioro se pretende evitar?",
       "opciones": [
         "Porque por encima de ese pH se descomponen la mayoría de los analitos orgánicos.",
         "Porque el sustrato de sílice de la columna se hidroliza en disoluciones básicas.",
         "Porque el detector UV pierde sensibilidad en medio básico."
       ],
       "correcta": 1,
-      "explicacion": "La fase estacionaria va unida covalentemente a partículas de sílice, y si el soporte se hidroliza se pierde la columna. Es un límite operativo de la columna, no del analito ni del detector.",
-      "fuente": "LibreTexts, Análisis Instrumental 28.4",
+      "explicacion": "El medio básico puede deteriorar el soporte de sílice convencional. Debe respetarse el intervalo de pH de la columna concreta: 7,5 no es un límite universal de la HPLC de fase inversa. Existen fases protegidas, como ZORBAX Extend-C18, que admiten hasta pH 11,5 según el fabricante.",
+      "fuente": "LibreTexts, Análisis Instrumental 28.4; Agilent, ZORBAX Reversed Phase HPLC Columns, Extend-C18 (https://www.agilent.com/cag/CABU/RP_HPLC1.htm)",
       "nucleo": true
     },
     {
@@ -1565,6 +1565,3044 @@
       "fuente": "CEM, QU-004; cromatografía líquida, protección de columna · apunte §4",
       "apartado": "4",
       "evidencia": "- **ANTES DE LA COLUMNA ANALÍTICA VA UNA PRECOLUMNA** (1246 #17, 1322 #34): mismo relleno, mucho más corta y barata, **sacrificial**. Resuelve **solutos que se unen irreversiblemente** y **material particulado**."
+    },
+    {
+      "id": "t32-q84",
+      "pregunta": "En la cadena de HPLC, ¿qué elemento impulsa la fase móvil a través del relleno?",
+      "opciones": [
+        "El sistema de bombeo.",
+        "La lámpara del detector.",
+        "El integrador de áreas."
+      ],
+      "correcta": 0,
+      "explicacion": "La bomba proporciona el caudal necesario para atravesar la columna con su resistencia hidráulica.",
+      "fuente": "CEM QU-004, §4.2, componentes del cromatógrafo de líquidos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "### 2.2. Los cuatro modos y los seis componentes"
+    },
+    {
+      "id": "t32-q85",
+      "pregunta": "¿Qué operación realiza el sistema de tratamiento de datos después de la detección?",
+      "opciones": [
+        "Registra y procesa la señal cromatográfica.",
+        "Separa físicamente los solutos dentro de la columna.",
+        "Desgasifica el depósito mediante vacío."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada subsistema tiene una función. El procesamiento transforma la señal registrada en información y resultados.",
+      "fuente": "CEM QU-004, §4.2, componentes del cromatógrafo de líquidos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "### 2.2. Los cuatro modos y los seis componentes"
+    },
+    {
+      "id": "t32-q86",
+      "pregunta": "Se cambia la química de la columna sin cambiar el detector. ¿Qué parte de la cadena modifica directamente la separación?",
+      "opciones": [
+        "La marca de la impresora.",
+        "La fase estacionaria.",
+        "El tamaño de letra del cromatograma."
+      ],
+      "correcta": 1,
+      "explicacion": "La separación se produce por interacciones de los solutos con las fases móvil y estacionaria.",
+      "fuente": "CEM QU-004, §4.2, componentes del cromatógrafo de líquidos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "### 2.2. Los cuatro modos y los seis componentes"
+    },
+    {
+      "id": "t32-q87",
+      "pregunta": "Un detector funciona correctamente, pero los componentes salen juntos de la columna. ¿Qué aspecto debe revisarse para separarlos?",
+      "opciones": [
+        "Solo el nombre asignado al pico.",
+        "La unidad de área para hacer que aparezcan dos sustancias.",
+        "Las condiciones cromatográficas de las fases y de la columna."
+      ],
+      "correcta": 2,
+      "explicacion": "La detección no crea una separación que la columna y el método no han conseguido.",
+      "fuente": "CEM QU-004, §4.2, componentes del cromatógrafo de líquidos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "### 2.2. Los cuatro modos y los seis componentes"
+    },
+    {
+      "id": "t32-q88",
+      "pregunta": "Aparece aire en la línea de aspiración de la bomba de HPLC. ¿Qué debe revisarse antes de inyectar muestras?",
+      "opciones": [
+        "El suministro de disolvente, conexiones de aspiración y purga prevista.",
+        "La rotación del analizador de un polarímetro.",
+        "Solo la tabla de masas atómicas."
+      ],
+      "correcta": 0,
+      "explicacion": "El aire puede interrumpir el suministro y alterar caudal y estabilidad. Debe eliminarse siguiendo el procedimiento del equipo.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, línea de base, y CEM QU-004 §4.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desgasificarla**, con **bomba de vacío** o **burbujeando helio**, que tiene baja solubilidad. Motivo: la presión cae **de varios cientos de atmósferas a la atmosférica** al salir de la columna, y **los gases disueltos (N₂, O₂) se liberan como burbujas que interfieren en la respuesta del detector**."
+    },
+    {
+      "id": "t32-q89",
+      "pregunta": "Una botella de fase móvil se agota durante la serie. ¿Qué incidencia debe investigarse además de reponerla?",
+      "opciones": [
+        "La formación automática de una columna nueva.",
+        "La desaparición de todo riesgo de arrastre entre muestras.",
+        "La entrada de aire y el estado del sistema de bombeo."
+      ],
+      "correcta": 2,
+      "explicacion": "La aspiración sin líquido puede introducir gas y comprometer la continuidad del caudal.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, línea de base, y CEM QU-004 §4.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desgasificarla**, con **bomba de vacío** o **burbujeando helio**, que tiene baja solubilidad. Motivo: la presión cae **de varios cientos de atmósferas a la atmosférica** al salir de la columna, y **los gases disueltos (N₂, O₂) se liberan como burbujas que interfieren en la respuesta del detector**."
+    },
+    {
+      "id": "t32-q90",
+      "pregunta": "La línea de base tiene perturbaciones compatibles con burbujas. ¿Qué control se relaciona directamente con esa causa?",
+      "opciones": [
+        "Aumentar la concentración de todos los patrones sin evaluación.",
+        "Revisar desgasificación y entrada de aire.",
+        "Cambiar los nombres de los analitos en el software."
+      ],
+      "correcta": 1,
+      "explicacion": "Los gases disueltos o aspirados pueden perturbar la celda de detección.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, línea de base, y CEM QU-004 §4.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desgasificarla**, con **bomba de vacío** o **burbujeando helio**, que tiene baja solubilidad. Motivo: la presión cae **de varios cientos de atmósferas a la atmosférica** al salir de la columna, y **los gases disueltos (N₂, O₂) se liberan como burbujas que interfieren en la respuesta del detector**."
+    },
+    {
+      "id": "t32-q91",
+      "pregunta": "Se cambia un eluyente por otro que contiene más gas disuelto. ¿Qué tratamiento debe mantenerse eficaz?",
+      "opciones": [
+        "La desgasificación compatible con el método y el equipo.",
+        "La pesada del papel del informe.",
+        "La transformación de áreas en longitudes de onda."
+      ],
+      "correcta": 0,
+      "explicacion": "La preparación de la fase móvil incluye controlar el gas que pueda generar burbujas durante el análisis.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, línea de base, y CEM QU-004 §4.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desgasificarla**, con **bomba de vacío** o **burbujeando helio**, que tiene baja solubilidad. Motivo: la presión cae **de varios cientos de atmósferas a la atmosférica** al salir de la columna, y **los gases disueltos (N₂, O₂) se liberan como burbujas que interfieren en la respuesta del detector**."
+    },
+    {
+      "id": "t32-q92",
+      "pregunta": "La fase móvil contiene partículas visibles. ¿Qué problema instrumental debe prevenirse?",
+      "opciones": [
+        "La conversión del detector UV en un detector de masas.",
+        "Obstrucciones de filtros, conductos y columna.",
+        "La inversión automática del signo del área."
+      ],
+      "correcta": 1,
+      "explicacion": "Las partículas pueden bloquear pasos estrechos y aumentar la resistencia al flujo.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, tratamiento y suministro de disolventes · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Filtrarla**, porque las partículas **obstruyen el tubo y la columna**."
+    },
+    {
+      "id": "t32-q93",
+      "pregunta": "Se utiliza un filtro que libera sustancias absorbentes en UV. ¿Qué debe comprobarse?",
+      "opciones": [
+        "Solo que el filtro tenga un color parecido al eluyente.",
+        "Que toda sustancia liberada mejore la sensibilidad.",
+        "La compatibilidad y limpieza del material de filtración."
+      ],
+      "correcta": 2,
+      "explicacion": "Los materiales de preparación no deben introducir señales interferentes ni contaminar el sistema.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, tratamiento y suministro de disolventes · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Filtrarla**, porque las partículas **obstruyen el tubo y la columna**."
+    },
+    {
+      "id": "t32-q94",
+      "pregunta": "Se prepara fase móvil con disolventes de baja pureza. ¿Qué consecuencia analítica es plausible?",
+      "opciones": [
+        "Picos de impurezas y mayor fondo del detector.",
+        "Un aumento obligatorio de selectividad de la columna.",
+        "La eliminación garantizada de todos los contaminantes."
+      ],
+      "correcta": 0,
+      "explicacion": "Los disolventes deben tener calidad adecuada para limitar interferencias y ruido.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, tratamiento y suministro de disolventes · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Filtrarla**, porque las partículas **obstruyen el tubo y la columna**."
+    },
+    {
+      "id": "t32-q95",
+      "pregunta": "Las pulsaciones de presión coinciden con oscilaciones de señal. ¿Qué subsistema conviene revisar?",
+      "opciones": [
+        "El lector de códigos del almacén.",
+        "El disco de transparencia del agua.",
+        "La bomba y el amortiguamiento del caudal."
+      ],
+      "correcta": 2,
+      "explicacion": "Una entrega irregular de fase móvil puede traducirse en perturbaciones de la línea de base.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q96",
+      "pregunta": "Una bomba suministra menos caudal del programado. Si se mantienen las demás condiciones, ¿qué cambio general cabe esperar?",
+      "opciones": [
+        "Que el detector identifique automáticamente la causa.",
+        "Un desplazamiento de los tiempos de retención.",
+        "Que todos los analitos pierdan masa molecular."
+      ],
+      "correcta": 1,
+      "explicacion": "El tiempo de paso de los solutos depende del flujo real de fase móvil.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q97",
+      "pregunta": "El caudal programado se mantiene, pero la presión aumenta gradualmente con la misma fase y temperatura. ¿Qué causa debe investigarse?",
+      "opciones": [
+        "Una restricción progresiva en el circuito.",
+        "Una mejora garantizada del estado de la columna.",
+        "La reducción obligatoria de la longitud de la columna."
+      ],
+      "correcta": 0,
+      "explicacion": "Una obstrucción puede aumentar la presión necesaria para sostener el mismo caudal.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q98",
+      "pregunta": "Se detecta una fuga en un racor del HPLC. ¿Qué decisión corresponde antes de aceptar la serie?",
+      "opciones": [
+        "Corregir todas las áreas con un factor elegido sin evaluación.",
+        "Resolver la fuga según el procedimiento y comprobar el funcionamiento.",
+        "Ignorarla si aún se observa algún pico."
+      ],
+      "correcta": 1,
+      "explicacion": "Una fuga puede alterar el caudal y la cantidad de muestra que llega al detector.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q99",
+      "pregunta": "Antes de abrir una conexión de alta presión para mantenimiento, ¿qué condición instrumental debe asegurarse?",
+      "opciones": [
+        "Que la presión sea la máxima disponible.",
+        "Que siga entrando muestra a través del bucle.",
+        "La parada y despresurización conforme al manual."
+      ],
+      "correcta": 2,
+      "explicacion": "La intervención sobre conexiones requiere aplicar el procedimiento seguro del fabricante.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q100",
+      "pregunta": "La presión excede el límite admitido de la columna. ¿Qué criterio debe guiar la actuación?",
+      "opciones": [
+        "Respetar las especificaciones y localizar la causa antes de continuar.",
+        "Suponer que toda columna admite cualquier presión de la bomba.",
+        "Aumentar el límite del software sin revisar el material."
+      ],
+      "correcta": 0,
+      "explicacion": "El límite de la bomba no sustituye al de la columna y sus conexiones.",
+      "fuente": "CEM QU-004 §5.3.1 y Shimadzu, sistema de suministro de fase móvil · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**b) La bomba.** Empujar un líquido por una columna empaquetada exige **presiones superiores a varios cientos de atmósferas**. Las bombas de pistón crean un **flujo pulsante** que mete ruido en el cromatograma, y se corrige de dos maneras:"
+    },
+    {
+      "id": "t32-q101",
+      "pregunta": "Un sistema tiene una válvula que selecciona proporciones de varios depósitos antes de una bomba. ¿Qué función cumple?",
+      "opciones": [
+        "Medir la masa molecular de los analitos.",
+        "Sustituir la columna analítica por el detector.",
+        "Dosificar los componentes de la fase móvil."
+      ],
+      "correcta": 2,
+      "explicacion": "La dosificación permite preparar mezclas de eluyentes en las proporciones programadas.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, sistema de bombeo y mezcla · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "También cabe una **válvula dosificadora de disolvente** delante de una sola bomba, que conecta dos o más depósitos y decide cuánto se toma de cada uno en cada ciclo."
+    },
+    {
+      "id": "t32-q102",
+      "pregunta": "La proporción programada de A y B es correcta, pero falla la mezcla. ¿Qué propiedad del eluyente que llega a la columna puede alterarse?",
+      "opciones": [
+        "La definición legal de agua de consumo.",
+        "Su composición efectiva y fuerza de elución.",
+        "El número de protones de cada molécula."
+      ],
+      "correcta": 1,
+      "explicacion": "Una mezcla insuficiente puede hacer variar localmente la composición y la respuesta cromatográfica.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, sistema de bombeo y mezcla · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "También cabe una **válvula dosificadora de disolvente** delante de una sola bomba, que conecta dos o más depósitos y decide cuánto se toma de cada uno en cada ciclo."
+    },
+    {
+      "id": "t32-q103",
+      "pregunta": "Se conectan por error los depósitos A y B intercambiados. ¿Qué debe verificarse antes de usar el programa de gradiente?",
+      "opciones": [
+        "La identidad de cada disolvente y su asignación en el equipo.",
+        "Solo que ambos frascos tengan el mismo volumen exterior.",
+        "El número de versión del procesador de textos."
+      ],
+      "correcta": 0,
+      "explicacion": "La programación depende de que cada canal contenga el eluyente previsto.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, sistema de bombeo y mezcla · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "También cabe una **válvula dosificadora de disolvente** delante de una sola bomba, que conecta dos o más depósitos y decide cuánto se toma de cada uno en cada ciclo."
+    },
+    {
+      "id": "t32-q104",
+      "pregunta": "Un canal del sistema binario no suministra líquido. ¿Qué puede ocurrir aunque exista flujo por el otro canal?",
+      "opciones": [
+        "Que la columna pase a trabajar con gas portador sin cambios.",
+        "Que la composición real difiera de la programada.",
+        "Que el gradiente se mantenga necesariamente idéntico."
+      ],
+      "correcta": 1,
+      "explicacion": "El caudal total aparente no demuestra que la proporción de ambos disolventes sea correcta.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, sistema de bombeo y mezcla · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "También cabe una **válvula dosificadora de disolvente** delante de una sola bomba, que conecta dos o más depósitos y decide cuánto se toma de cada uno en cada ciclo."
+    },
+    {
+      "id": "t32-q105",
+      "pregunta": "En la posición de carga de un inyector de bucle, ¿qué recorrido se utiliza para llenar el bucle?",
+      "opciones": [
+        "El interior de la lámpara UV.",
+        "La salida del espectrómetro de masas.",
+        "El recorrido de muestra a baja presión previsto por la válvula."
+      ],
+      "correcta": 2,
+      "explicacion": "La válvula permite cargar la muestra separando esa operación del circuito de alta presión.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q106",
+      "pregunta": "Al pasar la válvula a inyección, ¿qué arrastra la muestra del bucle hacia la columna?",
+      "opciones": [
+        "La fase móvil.",
+        "Un prisma giratorio de cuarzo.",
+        "El gas combustible del FID."
+      ],
+      "correcta": 0,
+      "explicacion": "El bucle se incorpora al recorrido de la fase móvil durante la inyección.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q107",
+      "pregunta": "En un inyector de bucle de llenado completo queda una burbuja dentro del volumen nominal. ¿Qué aspecto de la inyección se compromete?",
+      "opciones": [
+        "Solo el signo de la absorbancia del patrón.",
+        "La masa certificada de la balanza.",
+        "La cantidad de muestra realmente introducida."
+      ],
+      "correcta": 2,
+      "explicacion": "El volumen geométrico del bucle debe estar ocupado por muestra de forma reproducible.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q108",
+      "pregunta": "Se cambia el bucle por otro de mayor volumen manteniendo concentración y método. ¿Qué variable de entrada aumenta si se llena por completo?",
+      "opciones": [
+        "La densidad de la fase estacionaria necesariamente.",
+        "La masa de analito inyectada.",
+        "La longitud de onda de la lámpara."
+      ],
+      "correcta": 1,
+      "explicacion": "La cantidad introducida es proporcional al producto concentración por volumen de inyección.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q109",
+      "pregunta": "El lavado del inyector deja restos de una muestra concentrada. ¿Qué control ayuda a detectar su efecto en la siguiente inyección?",
+      "opciones": [
+        "Un blanco posterior que permita evaluar el arrastre.",
+        "Una nueva etiqueta en el cromatograma previo.",
+        "Una medida del ruido del teclado."
+      ],
+      "correcta": 0,
+      "explicacion": "El arrastre puede producir señal en un blanco o muestra posterior.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q110",
+      "pregunta": "Dos inyecciones dan áreas muy distintas con igual disolución patrón. ¿Qué componente debe comprobarse entre las posibles causas?",
+      "opciones": [
+        "La profundidad del lago donde se tomó otro patrón.",
+        "La reproducibilidad del sistema de inyección.",
+        "La exactitud del calendario de días festivos."
+      ],
+      "correcta": 1,
+      "explicacion": "El volumen y la entrega de muestra son contribuciones importantes a la repetibilidad de respuesta.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, inyector y bucle · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Carga:** el **bucle de muestra** queda **aislado de la fase móvil y abierto a la atmósfera**; se llena con jeringa —de capacidad varias veces mayor que el bucle— y el exceso sale por el desagüe."
+    },
+    {
+      "id": "t32-q111",
+      "pregunta": "Una precolumna retiene contaminantes irreversibles del extracto. ¿Qué consumible asume primero esa carga?",
+      "opciones": [
+        "El disco duro del ordenador.",
+        "La lámpara de la sala.",
+        "La propia precolumna."
+      ],
+      "correcta": 2,
+      "explicacion": "Su función sacrificial evita que parte de esa contaminación alcance la columna analítica.",
+      "fuente": "Agilent, Analytical and Semipreparative Guard User Guide, 5994-7136EN · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) PRECOLUMNA (columna de guarda).** Es **pregunta literal** (1246 #17, 1322 #34), y aquí está su sitio."
+    },
+    {
+      "id": "t32-q112",
+      "pregunta": "La presión aumenta y se sospecha saturación de la guarda. ¿Qué revisión es pertinente?",
+      "opciones": [
+        "Comprobarla y sustituirla según los criterios del sistema.",
+        "Cambiar directamente la unidad del caudal a grados Celsius.",
+        "Invertir todos los resultados de concentración."
+      ],
+      "correcta": 0,
+      "explicacion": "La guarda puede acumular partículas o contaminantes y necesita mantenimiento.",
+      "fuente": "Agilent, Analytical and Semipreparative Guard User Guide, 5994-7136EN · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) PRECOLUMNA (columna de guarda).** Es **pregunta literal** (1246 #17, 1322 #34), y aquí está su sitio."
+    },
+    {
+      "id": "t32-q113",
+      "pregunta": "¿Por qué interesa que la química de la guarda sea compatible con la columna analítica?",
+      "opciones": [
+        "Para que ambas tengan siempre exactamente la misma longitud.",
+        "Para que desaparezca la necesidad de preparar muestras.",
+        "Para protegerla sin introducir interacciones cromatográficas incompatibles."
+      ],
+      "correcta": 2,
+      "explicacion": "La guarda debe corresponder al método y a la fase que protege.",
+      "fuente": "Agilent, Analytical and Semipreparative Guard User Guide, 5994-7136EN · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) PRECOLUMNA (columna de guarda).** Es **pregunta literal** (1246 #17, 1322 #34), y aquí está su sitio."
+    },
+    {
+      "id": "t32-q114",
+      "pregunta": "Un extracto se inyecta sin eliminar partículas porque existe precolumna. ¿Qué debe valorarse?",
+      "opciones": [
+        "Que las partículas solo afectan a la pantalla del detector.",
+        "La preparación adecuada de muestra y la carga que recibirá la guarda.",
+        "Que la guarda convierte todo extracto en inyectable de forma ilimitada."
+      ],
+      "correcta": 1,
+      "explicacion": "La guarda proporciona protección adicional, pero tiene capacidad y compatibilidad limitadas.",
+      "fuente": "Agilent, Analytical and Semipreparative Guard User Guide, 5994-7136EN · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) PRECOLUMNA (columna de guarda).** Es **pregunta literal** (1246 #17, 1322 #34), y aquí está su sitio."
+    },
+    {
+      "id": "t32-q115",
+      "pregunta": "¿Qué mantenimiento conserva la función protectora de una precolumna durante muchas muestras?",
+      "opciones": [
+        "Su revisión y sustitución conforme a su estado y procedimiento.",
+        "Usarla indefinidamente aunque esté obstruida.",
+        "Eliminar todas las comprobaciones de presión."
+      ],
+      "correcta": 0,
+      "explicacion": "Una guarda agotada u obstruida deja de cumplir correctamente su función.",
+      "fuente": "Agilent, Analytical and Semipreparative Guard User Guide, 5994-7136EN · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**d) PRECOLUMNA (columna de guarda).** Es **pregunta literal** (1246 #17, 1322 #34), y aquí está su sitio."
+    },
+    {
+      "id": "t32-q116",
+      "pregunta": "Se elige un relleno más fino para mejorar la separación. ¿Qué capacidad del sistema debe comprobarse a la vez?",
+      "opciones": [
+        "El signo de rotación de los tubos de muestra.",
+        "La capacidad de trabajar con la contrapresión resultante.",
+        "La posibilidad de medir únicamente gases con FID."
+      ],
+      "correcta": 1,
+      "explicacion": "Las partículas pequeñas pueden elevar la resistencia hidráulica y exigir un sistema compatible.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia, dimensiones y contrapresión · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**El compromiso que hay que entender —y que es el gran límite del HPLC—** es la **contrapresión**: el empaquetamiento de partículas más pequeñas deja **espacios intersticiales más pequeños**, y"
+    },
+    {
+      "id": "t32-q117",
+      "pregunta": "Una columna nueva tiene distinto diámetro interno. ¿Qué parámetro operativo requiere revisar para conservar condiciones de flujo adecuadas?",
+      "opciones": [
+        "Solo la fecha del informe.",
+        "El peso del embalaje de la columna.",
+        "El caudal aplicado a esa sección de columna."
+      ],
+      "correcta": 2,
+      "explicacion": "El diámetro determina la sección y afecta a la velocidad lineal correspondiente a un caudal dado.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia, dimensiones y contrapresión · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**El compromiso que hay que entender —y que es el gran límite del HPLC—** es la **contrapresión**: el empaquetamiento de partículas más pequeñas deja **espacios intersticiales más pequeños**, y"
+    },
+    {
+      "id": "t32-q118",
+      "pregunta": "El fabricante fija una dirección de flujo para la columna. ¿Qué dato debe comprobarse al montarla?",
+      "opciones": [
+        "La orientación indicada y las conexiones previstas.",
+        "Que la guarda pueda sustituir cualquier detector.",
+        "Solo que el tubo sea metálico."
+      ],
+      "correcta": 0,
+      "explicacion": "El montaje debe respetar las especificaciones para evitar funcionamiento y conexiones inadecuados.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia, dimensiones y contrapresión · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**El compromiso que hay que entender —y que es el gran límite del HPLC—** es la **contrapresión**: el empaquetamiento de partículas más pequeñas deja **espacios intersticiales más pequeños**, y"
+    },
+    {
+      "id": "t32-q119",
+      "pregunta": "Se añade un tubo innecesariamente largo entre columna y detector. ¿Qué efecto analítico puede aumentar?",
+      "opciones": [
+        "La selectividad química de la fase estacionaria por definición.",
+        "La actividad óptica de la fase móvil.",
+        "El ensanchamiento extracolumna."
+      ],
+      "correcta": 2,
+      "explicacion": "La dispersión en volúmenes ajenos a la columna degrada la anchura de las bandas separadas.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, conexiones y ensanchamiento extracolumna · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "En cromatografía de gases hay **poca distancia** entre el inyector y la columna, y entre la columna y el detector. En un HPLC, en cambio, **hacen falta tubos de conexión**, y en ellos **no hay fase estacionaria**: el soluto viaja **más lento junto a la pared y más rápido en el centro**, y la banda se ensancha sin que la columna tenga culpa."
+    },
+    {
+      "id": "t32-q120",
+      "pregunta": "Al conectar un capilar queda un hueco en el racor. ¿Qué anomalía cromatográfica puede favorecer?",
+      "opciones": [
+        "La eliminación del volumen muerto del sistema.",
+        "Dispersión de banda o desdoblamiento de picos.",
+        "La calibración automática de todos los detectores."
+      ],
+      "correcta": 1,
+      "explicacion": "Los huecos y conexiones inadecuadas pueden alterar la transferencia de muestra y la forma del pico.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, conexiones y ensanchamiento extracolumna · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "En cromatografía de gases hay **poca distancia** entre el inyector y la columna, y entre la columna y el detector. En un HPLC, en cambio, **hacen falta tubos de conexión**, y en ellos **no hay fase estacionaria**: el soluto viaja **más lento junto a la pared y más rápido en el centro**, y la banda se ensancha sin que la columna tenga culpa."
+    },
+    {
+      "id": "t32-q121",
+      "pregunta": "Una columna estrecha de alta eficiencia se conecta a una celda y tubos de gran volumen. ¿Qué limitación debe evaluarse?",
+      "opciones": [
+        "La dispersión extracolumna puede ocultar la eficiencia de la columna.",
+        "La columna siempre mejorará sin límite la separación observada.",
+        "El detector pasa automáticamente a medir conductividad."
+      ],
+      "correcta": 0,
+      "explicacion": "El volumen del sistema debe ser adecuado a bandas cromatográficas pequeñas.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, conexiones y ensanchamiento extracolumna · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "En cromatografía de gases hay **poca distancia** entre el inyector y la columna, y entre la columna y el detector. En un HPLC, en cambio, **hacen falta tubos de conexión**, y en ellos **no hay fase estacionaria**: el soluto viaja **más lento junto a la pared y más rápido en el centro**, y la banda se ensancha sin que la columna tenga culpa."
+    },
+    {
+      "id": "t32-q122",
+      "pregunta": "¿Qué comparación permite investigar si el problema aparece tras cambiar una conexión?",
+      "opciones": [
+        "Cambiar simultáneamente todos los parámetros sin registro.",
+        "Comparar cromatogramas y condiciones antes y después del cambio documentado.",
+        "Comparar solo las etiquetas de las botellas vacías."
+      ],
+      "correcta": 1,
+      "explicacion": "Una modificación controlada y documentada permite relacionar cambios de respuesta con la intervención.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, conexiones y ensanchamiento extracolumna · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "En cromatografía de gases hay **poca distancia** entre el inyector y la columna, y entre la columna y el detector. En un HPLC, en cambio, **hacen falta tubos de conexión**, y en ellos **no hay fase estacionaria**: el soluto viaja **más lento junto a la pared y más rápido en el centro**, y la banda se ensancha sin que la columna tenga culpa."
+    },
+    {
+      "id": "t32-q123",
+      "pregunta": "En una fase inversa C18, un soluto neutro poco polar se retiene demasiado. ¿Qué cambio suele aumentar la fuerza de elución?",
+      "opciones": [
+        "Aumentar siempre el porcentaje de agua hasta el 100 %.",
+        "Cambiar solo la escala vertical del cromatograma.",
+        "Aumentar la proporción de orgánico fuerte compatible."
+      ],
+      "correcta": 2,
+      "explicacion": "En fase inversa, aumentar el orgánico suele disminuir la retención de compuestos hidrofóbicos.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q124",
+      "pregunta": "En fase normal, un soluto polar queda excesivamente retenido. ¿Qué modificación de la fase móvil suele favorecer su salida?",
+      "opciones": [
+        "Aumentar su fuerza de elución mediante un componente más polar apropiado.",
+        "Reducir la ventana gráfica sin cambiar el método.",
+        "Hacerla más apolar en todos los casos."
+      ],
+      "correcta": 0,
+      "explicacion": "En fase normal un eluyente más polar compite con el analito por las interacciones con la fase estacionaria.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q125",
+      "pregunta": "Tres solutos neutros difieren sobre todo en hidrofobicidad. En C18 y condiciones comparables, ¿cuál tenderá a eluir más tarde?",
+      "opciones": [
+        "El menos hidrofóbico necesariamente.",
+        "El que tenga el nombre químico más corto.",
+        "El más hidrofóbico."
+      ],
+      "correcta": 2,
+      "explicacion": "La fase estacionaria apolar favorece una retención mayor de solutos más hidrofóbicos.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q126",
+      "pregunta": "Se cambia de fase normal a inversa para una mezcla que difiere en polaridad. ¿Qué aspecto del cromatograma debe reconsiderarse?",
+      "opciones": [
+        "La unidad física de tiempo como si dejara de ser válida.",
+        "El orden de elución.",
+        "Solo el color de los viales."
+      ],
+      "correcta": 1,
+      "explicacion": "La inversión de la polaridad relativa de las fases puede invertir las preferencias de retención.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q127",
+      "pregunta": "Un método usa sílice polar y un eluyente de baja polaridad. ¿Qué interacción conviene considerar para un analito muy polar?",
+      "opciones": [
+        "Puede quedar fuertemente retenido en la fase estacionaria.",
+        "Tiene que atravesar la columna sin ninguna interacción.",
+        "Solo lo retendrá el ordenador después del detector."
+      ],
+      "correcta": 0,
+      "explicacion": "La fase normal favorece interacciones de los solutos polares con el relleno polar.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q128",
+      "pregunta": "¿Por qué dos métodos de HPLC con la misma columna pueden dar separaciones distintas al cambiar el eluyente?",
+      "opciones": [
+        "Porque la fase móvil solo cambia la etiqueta del resultado.",
+        "Porque la composición de la fase móvil participa en el equilibrio de separación.",
+        "Porque el nombre HPLC obliga a un único orden de picos."
+      ],
+      "correcta": 1,
+      "explicacion": "La cromatografía líquida permite modificar las interacciones mediante ambas fases.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q129",
+      "pregunta": "En un método de reparto se cambia C18 por una fase ciano. ¿Qué propiedad de la separación se modifica directamente?",
+      "opciones": [
+        "El número de opciones del ensayo.",
+        "La resolución de pantalla del detector.",
+        "La química y selectividad de la fase estacionaria."
+      ],
+      "correcta": 2,
+      "explicacion": "Las funciones unidas al soporte determinan interacciones diferentes con los analitos.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q130",
+      "pregunta": "Se necesita aumentar retención en fase inversa de un analito neutro poco retenido. ¿Qué ensayo de ajuste tiene sentido dentro del método y compatibilidad de la columna?",
+      "opciones": [
+        "Disminuir la fuerza orgánica inicial de la fase móvil.",
+        "Reducir solo el umbral de integración.",
+        "Aumentar siempre el orgánico al máximo."
+      ],
+      "correcta": 0,
+      "explicacion": "Una fase móvil inicial más débil puede favorecer la retención, sin sustituir la validación del método.",
+      "fuente": "Waters, Beginner's Guide to Liquid Chromatography, HPLC Separation Modes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "### 2.5. Fase normal y fase inversa"
+    },
+    {
+      "id": "t32-q131",
+      "pregunta": "Una molécula básica interacciona con silanoles residuales de la sílice. ¿Qué efecto puede investigarse en la forma de pico?",
+      "opciones": [
+        "La desaparición obligatoria de toda señal UV.",
+        "La conversión del pico en una lectura de turbidez.",
+        "La aparición de cola por interacciones secundarias."
+      ],
+      "correcta": 2,
+      "explicacion": "Los grupos superficiales residuales pueden introducir interacciones adicionales a las de la fase unida.",
+      "fuente": "Agilent, ZORBAX Reversed-Phase HPLC Columns, silanoles residuales y endcapping · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- Los **−SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. A esas columnas se las llama **«terminalmente rematadas»** (*end-capped*)."
+    },
+    {
+      "id": "t32-q132",
+      "pregunta": "¿Por qué el rematado de silanoles no equivale a cambiar una C18 por una fase amino?",
+      "opciones": [
+        "Porque transforma la columna en un detector de masas.",
+        "Porque trata grupos residuales conservando la química principal de la fase.",
+        "Porque hace desaparecer físicamente toda la sílice."
+      ],
+      "correcta": 1,
+      "explicacion": "El endcapping reduce interacciones de silanoles residuales y no define por sí solo una fase amino.",
+      "fuente": "Agilent, ZORBAX Reversed-Phase HPLC Columns, silanoles residuales y endcapping · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- Los **−SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. A esas columnas se las llama **«terminalmente rematadas»** (*end-capped*)."
+    },
+    {
+      "id": "t32-q133",
+      "pregunta": "La columna especifica estabilidad en un intervalo concreto de pH. ¿Qué criterio debe seguir el auxiliar al preparar eluyente?",
+      "opciones": [
+        "Respetar el intervalo validado por el fabricante y el método.",
+        "Aplicar un único límite universal a toda columna comercial.",
+        "Suponer que una fase C18 resiste cualquier medio químico."
+      ],
+      "correcta": 0,
+      "explicacion": "La estabilidad depende del soporte y diseño. Existen fases con intervalos de pH distintos.",
+      "fuente": "Agilent, ZORBAX Reversed-Phase HPLC Columns, silanoles residuales y endcapping · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- Los **−SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. A esas columnas se las llama **«terminalmente rematadas»** (*end-capped*)."
+    },
+    {
+      "id": "t32-q134",
+      "pregunta": "Una fase de sílice convencional se expone a medio fuertemente básico incompatible. ¿Qué deterioro debe considerarse?",
+      "opciones": [
+        "La mejora permanente de toda separación.",
+        "La degradación del soporte por hidrólisis.",
+        "La transformación garantizada en una columna de gases."
+      ],
+      "correcta": 1,
+      "explicacion": "La sílice puede dañarse a pH elevado. Deben respetarse las especificaciones de cada columna.",
+      "fuente": "Agilent, ZORBAX Reversed-Phase HPLC Columns, silanoles residuales y endcapping · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- Los **−SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. A esas columnas se las llama **«terminalmente rematadas»** (*end-capped*)."
+    },
+    {
+      "id": "t32-q135",
+      "pregunta": "Durante una separación se mantiene 60 % de A y 40 % de B, pero varía el caudal. ¿Qué término sigue describiendo la composición del eluyente?",
+      "opciones": [
+        "Gradiente de composición obligatorio.",
+        "Fase normal por definición.",
+        "Isocrática."
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación isocrática se refiere a mantener fija la composición, aunque otras variables puedan programarse.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q136",
+      "pregunta": "El programa pasa de 10 a 90 % de acetonitrilo en fase inversa. ¿Qué efecto se busca sobre compuestos muy retenidos?",
+      "opciones": [
+        "Favorecer su elución durante la parte fuerte del gradiente.",
+        "Convertirlos en compuestos volátiles sin reacción.",
+        "Obligarlos a permanecer indefinidamente retenidos."
+      ],
+      "correcta": 0,
+      "explicacion": "El aumento de disolvente orgánico eleva normalmente la fuerza del eluyente en fase inversa.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q137",
+      "pregunta": "Una mezcla tiene compuestos muy tempranos y otros muy tardíos. ¿Qué ventaja ofrece un gradiente bien diseñado?",
+      "opciones": [
+        "Identificar automáticamente toda sustancia sin detector.",
+        "Eliminar la necesidad de una fase estacionaria.",
+        "Acomodar un intervalo amplio de retenciones en una misma separación."
+      ],
+      "correcta": 2,
+      "explicacion": "El cambio programado de fuerza permite resolver los tempranos y eluir los más retenidos en un tiempo útil.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q138",
+      "pregunta": "Tras un gradiente se inicia otra inyección sin volver a las condiciones iniciales. ¿Qué variable puede perder reproducibilidad?",
+      "opciones": [
+        "La fecha de caducidad impresa en los patrones.",
+        "Los tiempos de retención y la separación inicial.",
+        "La masa atómica de los analitos."
+      ],
+      "correcta": 1,
+      "explicacion": "El método necesita recuperar su estado inicial y equilibrarse antes de comparar inyecciones.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q139",
+      "pregunta": "La composición vuelve al valor inicial, pero la columna aún no está equilibrada. ¿Qué debe verificarse antes de iniciar otra muestra?",
+      "opciones": [
+        "Que se haya completado el acondicionamiento previsto.",
+        "Solo que el cronómetro muestre cero.",
+        "Que el detector haya cambiado de marca."
+      ],
+      "correcta": 0,
+      "explicacion": "Restituir la programación no demuestra por sí solo que el sistema y la columna hayan alcanzado equilibrio.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q140",
+      "pregunta": "¿Qué dato del método permite reproducir un gradiente de composición?",
+      "opciones": [
+        "El nombre del operador que limpió la mesa.",
+        "La proporción de cada eluyente en función del tiempo.",
+        "Solo la concentración nominal del patrón más alto."
+      ],
+      "correcta": 1,
+      "explicacion": "El programa temporal de composición define el gradiente aplicado.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q141",
+      "pregunta": "Dos sistemas mezclan los mismos eluyentes, pero tienen distintos volúmenes entre mezclador y columna. ¿Qué efecto debe evaluarse al transferir el gradiente?",
+      "opciones": [
+        "La desaparición del vacío del espectrómetro en todos los casos.",
+        "La igualdad obligatoria de todos los tiempos de retención.",
+        "El retraso con que el cambio de composición llega a la columna."
+      ],
+      "correcta": 2,
+      "explicacion": "El volumen de demora puede desplazar la llegada efectiva del programa a la columna.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q142",
+      "pregunta": "Un pico tardío es ancho y bajo en el método isocrático. ¿Qué cambio del método puede estudiarse para reducir su permanencia y ensanchamiento?",
+      "opciones": [
+        "Un gradiente de fuerza de elución adecuado.",
+        "Aumentar indefinidamente el tiempo sin modificar condiciones.",
+        "Cambiar únicamente el nombre del pico."
+      ],
+      "correcta": 0,
+      "explicacion": "El gradiente puede eluir compuestos retenidos con bandas más estrechas, dependiendo del método.",
+      "fuente": "Shimadzu, HPLC Basics, métodos isocráticos y de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Isocrática** es una separación con **fase móvil de composición fija**. Y tiene un problema que ya conocemos del tema 31, porque es **el mismo** que el del horno isotermo en gases:"
+    },
+    {
+      "id": "t32-q143",
+      "pregunta": "Al calcular una media ponderada de polaridad para dos eluyentes, ¿qué deben sumar sus fracciones volumétricas?",
+      "opciones": [
+        "Cien litros.",
+        "El índice de refracción del agua.",
+        "Uno."
+      ],
+      "correcta": 2,
+      "explicacion": "Las fracciones representan partes del total y su suma es uno.",
+      "fuente": "Modelo de índice de polaridad del apunte §2.5 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**El índice de polaridad (P′)** ayuda a elegir la fase móvil: valores mayores, disolventes más polares. Y mezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es exactamente la **media ponderada por las fracciones de volumen**:"
+    },
+    {
+      "id": "t32-q144",
+      "pregunta": "Un cálculo ponderado usa ΦA = 0,7 y ΦB = 0,6 para una mezcla binaria. ¿Qué revisión es necesaria?",
+      "opciones": [
+        "Sustituir la suma por un tiempo de retención.",
+        "Normalizar o corregir las fracciones, porque suman 1,3.",
+        "Aceptar que toda mezcla binaria tiene fracciones mayores que uno."
+      ],
+      "correcta": 1,
+      "explicacion": "Las fracciones de los dos componentes deben describir el total de mezcla de manera coherente.",
+      "fuente": "Modelo de índice de polaridad del apunte §2.5 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**El índice de polaridad (P′)** ayuda a elegir la fase móvil: valores mayores, disolventes más polares. Y mezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es exactamente la **media ponderada por las fracciones de volumen**:"
+    },
+    {
+      "id": "t32-q145",
+      "pregunta": "En el modelo lineal de polaridad, ¿dónde debe quedar el índice de una mezcla de dos componentes con fracciones positivas?",
+      "opciones": [
+        "Entre los índices de los componentes puros.",
+        "Siempre por encima de ambos.",
+        "Siempre por debajo de ambos."
+      ],
+      "correcta": 0,
+      "explicacion": "Una media ponderada con pesos positivos y suma uno queda dentro de los valores extremos.",
+      "fuente": "Modelo de índice de polaridad del apunte §2.5 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**El índice de polaridad (P′)** ayuda a elegir la fase móvil: valores mayores, disolventes más polares. Y mezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es exactamente la **media ponderada por las fracciones de volumen**:"
+    },
+    {
+      "id": "t32-q146",
+      "pregunta": "¿Por qué una predicción con índice de polaridad no sustituye la comprobación experimental de resolución?",
+      "opciones": [
+        "Porque la resolución depende solo del color de los tapones.",
+        "Porque las interacciones reales y la selectividad requieren evaluación del método.",
+        "Porque ninguna mezcla de disolventes puede separarse."
+      ],
+      "correcta": 1,
+      "explicacion": "El modelo orienta la composición, pero no demuestra por sí solo la separación de los analitos.",
+      "fuente": "Modelo de índice de polaridad del apunte §2.5 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**El índice de polaridad (P′)** ayuda a elegir la fase móvil: valores mayores, disolventes más polares. Y mezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es exactamente la **media ponderada por las fracciones de volumen**:"
+    },
+    {
+      "id": "t32-q147",
+      "pregunta": "Se duplica la longitud de una columna manteniendo el mismo relleno y condiciones comparables. ¿Qué compromiso operativo debe valorarse?",
+      "opciones": [
+        "La desaparición completa de la contrapresión.",
+        "Una disminución obligatoria de todos los números de platos.",
+        "Mayor capacidad de separación con mayor resistencia y tiempo de análisis."
+      ],
+      "correcta": 2,
+      "explicacion": "La longitud aporta separación a costa de presión y tiempo bajo condiciones comparables.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia y resistencia hidráulica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q148",
+      "pregunta": "Dos columnas tienen igual longitud, pero distinto relleno y química superficial. ¿Por qué no basta esa longitud para predecir idéntica resolución?",
+      "opciones": [
+        "Porque también importan la eficiencia y la selectividad.",
+        "Porque el largo del tubo define la concentración del patrón.",
+        "Porque el detector asigna siempre la misma resolución a toda columna."
+      ],
+      "correcta": 0,
+      "explicacion": "La capacidad de separar tiene contribuciones mecánicas y químicas.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia y resistencia hidráulica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q149",
+      "pregunta": "Una columna monolítica permite más flujo con resistencia adecuada. ¿Qué diferencia estructural explica ese comportamiento?",
+      "opciones": [
+        "La ausencia de cualquier fase estacionaria.",
+        "El uso obligatorio de un gas portador como fase móvil.",
+        "Su estructura porosa continua, frente a un lecho de partículas individuales."
+      ],
+      "correcta": 2,
+      "explicacion": "La arquitectura de poros influye en el transporte y la resistencia hidráulica.",
+      "fuente": "Waters, HPLC Column Hardware, eficiencia y resistencia hidráulica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Analítica** (la habitual) | Tubo de **acero inoxidable**, **2,1-4,6 mm** de diámetro interno y **30-300 mm** de longitud, empaquetado con **partículas porosas de sílice de 3-10 µm** | **40 000-60 000 platos/m**. Una de 25 cm con 50 000 platos/m tiene **12 500 platos** |"
+    },
+    {
+      "id": "t32-q150",
+      "pregunta": "En exclusión por tamaño ideal, una molécula no entra en los poros del relleno. ¿Qué camino recorre principalmente?",
+      "opciones": [
+        "Solo la celda del detector, sin atravesar la columna.",
+        "El volumen entre las partículas, con elución relativamente temprana.",
+        "Todos los poros, con elución necesariamente más tardía."
+      ],
+      "correcta": 1,
+      "explicacion": "La exclusión de los poros reduce el volumen accesible y adelanta la elución.",
+      "fuente": "Waters, Beginner's Guide to Size-Exclusion Chromatography, mecanismo de exclusión · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Cromatografía de EXCLUSIÓN POR TAMAÑOS** o en geles | El tamaño del soluto: **los grandes salen antes**, porque no entran en el poro | Tema 30, §2.5 |"
+    },
+    {
+      "id": "t32-q151",
+      "pregunta": "Una molécula pequeña accede a muchos poros en cromatografía de exclusión ideal. ¿Qué efecto tiene sobre su retención relativa?",
+      "opciones": [
+        "Recorre un volumen mayor y eluye más tarde que las excluidas.",
+        "Siempre eluye antes por pesar menos.",
+        "Se convierte en fase estacionaria de forma obligatoria."
+      ],
+      "correcta": 0,
+      "explicacion": "La separación se basa en diferencias de volumen accesible por tamaño.",
+      "fuente": "Waters, Beginner's Guide to Size-Exclusion Chromatography, mecanismo de exclusión · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Cromatografía de EXCLUSIÓN POR TAMAÑOS** o en geles | El tamaño del soluto: **los grandes salen antes**, porque no entran en el poro | Tema 30, §2.5 |"
+    },
+    {
+      "id": "t32-q152",
+      "pregunta": "Se pretende separar por intercambio iónico. ¿Qué propiedad de la fase estacionaria resulta necesaria?",
+      "opciones": [
+        "Un detector que mida turbidez de formacina.",
+        "Grupos adecuados para interaccionar con especies cargadas.",
+        "Solo cadenas C18 sin grupos intercambiadores como requisito universal."
+      ],
+      "correcta": 1,
+      "explicacion": "La selección de fase debe corresponder al mecanismo de separación empleado.",
+      "fuente": "Waters, Beginner's Guide to Size-Exclusion Chromatography, mecanismo de exclusión · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Cromatografía de EXCLUSIÓN POR TAMAÑOS** o en geles | El tamaño del soluto: **los grandes salen antes**, porque no entran en el poro | Tema 30, §2.5 |"
+    },
+    {
+      "id": "t32-q153",
+      "pregunta": "Una muestra se disuelve en un eluyente mucho más fuerte que la fase móvil inicial. ¿Qué problema cromatográfico debe comprobarse?",
+      "opciones": [
+        "La eliminación automática de toda retención secundaria.",
+        "Una identificación inequívoca por el color de la muestra.",
+        "Distorsión o ensanchamiento de los picos."
+      ],
+      "correcta": 2,
+      "explicacion": "La fuerza y volumen del disolvente de inyección pueden afectar al enfoque inicial de las bandas.",
+      "fuente": "Shimadzu, Optimizing HPLC/UHPLC Systems, dispersión y condiciones de inyección · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "### 2.8. Un problema propio del HPLC: el ensanchamiento extracolumna"
+    },
+    {
+      "id": "t32-q154",
+      "pregunta": "Se inyecta un volumen excesivo respecto a la capacidad de la columna. ¿Qué señal de funcionamiento debe revisarse?",
+      "opciones": [
+        "La forma de pico y la pérdida de separación.",
+        "El nombre del archivo de datos como causa única.",
+        "Solo el contraste de la pantalla."
+      ],
+      "correcta": 0,
+      "explicacion": "La sobrecarga puede distorsionar las bandas y perjudicar la resolución.",
+      "fuente": "Shimadzu, Optimizing HPLC/UHPLC Systems, dispersión y condiciones de inyección · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "### 2.8. Un problema propio del HPLC: el ensanchamiento extracolumna"
+    },
+    {
+      "id": "t32-q155",
+      "pregunta": "¿Por qué se registran diámetro y longitud de los capilares al optimizar un sistema HPLC?",
+      "opciones": [
+        "Porque determinan el valor paramétrico legal del analito.",
+        "Porque sustituyen la concentración del material de referencia.",
+        "Porque contribuyen al volumen y dispersión fuera de la columna."
+      ],
+      "correcta": 2,
+      "explicacion": "La configuración de conexiones puede limitar el rendimiento observado.",
+      "fuente": "Shimadzu, Optimizing HPLC/UHPLC Systems, dispersión y condiciones de inyección · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "### 2.8. Un problema propio del HPLC: el ensanchamiento extracolumna"
+    },
+    {
+      "id": "t32-q156",
+      "pregunta": "Dos picos conservan su distancia entre máximos, pero se ensanchan. ¿Qué ocurre con Rs calculada con sus anchuras basales?",
+      "opciones": [
+        "Permanece idéntica porque solo importan los máximos.",
+        "Disminuye.",
+        "Aumenta necesariamente."
+      ],
+      "correcta": 1,
+      "explicacion": "Las anchuras aparecen en el denominador de Rs y aumentarlas reduce la resolución.",
+      "fuente": "CEM QU-004, §3, definición de resolución cromatográfica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La cromatografía **separa** repartiendo los componentes entre una **fase móvil** y una **fase estacionaria**. **La columna separa**, el detector detecta y el integrador cuantifica. El **tiempo de retención identifica** y **el área del pico cuantifica**. Y la calidad de la separación se mide con la **resolución**, **Rs = 2·[tR(B) − tR(A)] / (wA + wB)**, que el CEM exige **superior a 1,5**."
+    },
+    {
+      "id": "t32-q157",
+      "pregunta": "Dos picos tienen anchuras basales de 0,20 y 0,30 min, con máximos separados 0,50 min. ¿Qué Rs se obtiene?",
+      "opciones": [
+        "2,0.",
+        "1,0.",
+        "0,25."
+      ],
+      "correcta": 0,
+      "explicacion": "Rs = 2×0,50/(0,20+0,30) = 2.",
+      "fuente": "CEM QU-004, §3, definición de resolución cromatográfica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La cromatografía **separa** repartiendo los componentes entre una **fase móvil** y una **fase estacionaria**. **La columna separa**, el detector detecta y el integrador cuantifica. El **tiempo de retención identifica** y **el área del pico cuantifica**. Y la calidad de la separación se mide con la **resolución**, **Rs = 2·[tR(B) − tR(A)] / (wA + wB)**, que el CEM exige **superior a 1,5**."
+    },
+    {
+      "id": "t32-q158",
+      "pregunta": "Un par de picos da Rs exactamente 1,50. ¿Satisface la condición «superior a 1,5» del QU-004?",
+      "opciones": [
+        "Solo si se expresa Rs en minutos.",
+        "No, la condición es estrictamente mayor.",
+        "Sí, porque igual y superior significan lo mismo."
+      ],
+      "correcta": 1,
+      "explicacion": "Debe respetarse la desigualdad establecida en el procedimiento.",
+      "fuente": "CEM QU-004, §3, definición de resolución cromatográfica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La cromatografía **separa** repartiendo los componentes entre una **fase móvil** y una **fase estacionaria**. **La columna separa**, el detector detecta y el integrador cuantifica. El **tiempo de retención identifica** y **el área del pico cuantifica**. Y la calidad de la separación se mide con la **resolución**, **Rs = 2·[tR(B) − tR(A)] / (wA + wB)**, que el CEM exige **superior a 1,5**."
+    },
+    {
+      "id": "t32-q159",
+      "pregunta": "¿Por qué no conviene declarar resolución suficiente atendiendo solo al aspecto de un cromatograma comprimido?",
+      "opciones": [
+        "Porque un gráfico nunca contiene información sobre picos.",
+        "Porque toda impresión modifica los tiempos reales del análisis.",
+        "Porque la escala visual puede ocultar solapamientos y debe comprobarse el criterio definido."
+      ],
+      "correcta": 2,
+      "explicacion": "La evaluación debe usar las magnitudes y criterios del método, con una visualización adecuada.",
+      "fuente": "CEM QU-004, §3, definición de resolución cromatográfica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La cromatografía **separa** repartiendo los componentes entre una **fase móvil** y una **fase estacionaria**. **La columna separa**, el detector detecta y el integrador cuantifica. El **tiempo de retención identifica** y **el área del pico cuantifica**. Y la calidad de la separación se mide con la **resolución**, **Rs = 2·[tR(B) − tR(A)] / (wA + wB)**, que el CEM exige **superior a 1,5**."
+    },
+    {
+      "id": "t32-q160",
+      "pregunta": "Dos compuestos distintos coeluyen al mismo tiempo de retención. ¿Qué limitación presenta asignar identidad solo por ese tiempo?",
+      "opciones": [
+        "Puede confundirse la identidad sin información adicional de selectividad o detección.",
+        "Garantiza que el área pertenece exclusivamente al analito buscado.",
+        "Demuestra que ambos tienen la misma estructura molecular."
+      ],
+      "correcta": 0,
+      "explicacion": "La coincidencia de tiempo es información de apoyo y necesita la selectividad adecuada para una identificación fiable.",
+      "fuente": "CEM QU-004, §3, tiempo de retención, y Waters, Identifying and Quantitating Compounds Using HPLC · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La cromatografía **separa** repartiendo los componentes entre una **fase móvil** y una **fase estacionaria**. **La columna separa**, el detector detecta y el integrador cuantifica. El **tiempo de retención identifica** y **el área del pico cuantifica**. Y la calidad de la separación se mide con la **resolución**, **Rs = 2·[tR(B) − tR(A)] / (wA + wB)**, que el CEM exige **superior a 1,5**."
+    },
+    {
+      "id": "t32-q161",
+      "pregunta": "El analito apenas absorbe a la longitud de onda seleccionada, pero sí en otra zona UV. ¿Qué ajuste debe estudiarse?",
+      "opciones": [
+        "Aumentar solo la presión hasta que aparezca absorción.",
+        "Cambiar el nombre del analito en el software.",
+        "Una longitud de onda adecuada y compatible con fase móvil e interferencias."
+      ],
+      "correcta": 2,
+      "explicacion": "La detección UV requiere absorción suficiente del analito en las condiciones espectrales empleadas.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q162",
+      "pregunta": "La fase móvil absorbe intensamente en la longitud de onda de trabajo. ¿Qué efecto puede tener?",
+      "opciones": [
+        "Eliminar la necesidad de una lámpara.",
+        "Elevar el fondo y limitar la capacidad de medir el analito.",
+        "Crear selectividad absoluta para todos los compuestos."
+      ],
+      "correcta": 1,
+      "explicacion": "El detector observa la transmisión a través del eluyente y la muestra. La absorción del disolvente puede interferir.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q163",
+      "pregunta": "Se reduce la longitud de onda UV de trabajo. ¿Qué característica del disolvente debe comprobarse?",
+      "opciones": [
+        "Su transparencia o corte UV en esa región.",
+        "La profundidad a la que desaparece un disco de Secchi.",
+        "La volatilidad del gas de un FID ajeno al equipo."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada disolvente tiene un intervalo espectral de uso que condiciona el fondo de absorción.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q164",
+      "pregunta": "¿Qué función cumple la celda de flujo de un detector UV en HPLC?",
+      "opciones": [
+        "Separar analitos por tamaño mediante una membrana.",
+        "Permitir medir la absorbancia del eluyente a medida que sale de la columna.",
+        "Mantener toda la muestra inmóvil durante la separación."
+      ],
+      "correcta": 1,
+      "explicacion": "La detección se registra de manera continua en el flujo que abandona la columna.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q165",
+      "pregunta": "La celda UV está sucia. ¿Qué parte del resultado puede verse afectada?",
+      "opciones": [
+        "El número de carbonos de los analitos.",
+        "El valor legal del benzo(a)pireno.",
+        "La línea de base y la respuesta óptica."
+      ],
+      "correcta": 2,
+      "explicacion": "Una celda contaminada puede absorber o dispersar luz e introducir ruido o sesgo.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q166",
+      "pregunta": "Un detector UV registra el cromatograma a una sola longitud de onda. ¿Qué representa su eje temporal?",
+      "opciones": [
+        "La variación de respuesta conforme eluyen los componentes.",
+        "La masa molecular de cada compuesto medida directamente.",
+        "Un barrido exclusivo de longitudes de onda sin tiempo."
+      ],
+      "correcta": 0,
+      "explicacion": "El cromatograma muestra señal en función del tiempo, con las condiciones espectrales fijadas.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q167",
+      "pregunta": "Un analito absorbe en UV y un interferente coeluye también absorbente. ¿Qué debe evaluarse?",
+      "opciones": [
+        "La suposición de que todo el área es del analito por estar en UV.",
+        "Solo la etiqueta del patrón de turbidez.",
+        "La selectividad de la separación y detección para cuantificar el analito."
+      ],
+      "correcta": 2,
+      "explicacion": "La absorbancia conjunta puede contribuir al pico si las especies coeluyen.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detectores UV y de matriz de diodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q168",
+      "pregunta": "De un registro DAD con datos espectrales, ¿qué puede extraerse además del cromatograma a una longitud de onda?",
+      "opciones": [
+        "El volumen de poros de la columna sin otro ensayo.",
+        "El espectro de absorción en un tiempo seleccionado.",
+        "La masa exacta del compuesto sin espectrometría de masas."
+      ],
+      "correcta": 1,
+      "explicacion": "El DAD relaciona absorbancia, longitud de onda y tiempo de elución.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q169",
+      "pregunta": "Los espectros en el inicio y final de un pico DAD son diferentes. ¿Qué hipótesis conviene investigar?",
+      "opciones": [
+        "Una posible coelución o cambio de composición del pico.",
+        "La pureza química demostrada del pico.",
+        "La imposibilidad de que haya más de un compuesto."
+      ],
+      "correcta": 0,
+      "explicacion": "La variación espectral dentro del pico puede advertir una contribución interferente.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q170",
+      "pregunta": "Un programa de pureza de pico DAD indica concordancia espectral. ¿Qué alcance debe darse a esa evidencia?",
+      "opciones": [
+        "Sustituye cualquier validación de selectividad del método.",
+        "Apoya la evaluación del pico dentro de la capacidad del detector.",
+        "Demuestra de modo absoluto que no existe ningún coeluyente."
+      ],
+      "correcta": 1,
+      "explicacion": "Compuestos con espectros similares o respuestas pequeñas pueden escapar a esa evaluación.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q171",
+      "pregunta": "Se quiere comparar espectros UV de patrón y muestra por DAD. ¿Qué debe mantenerse controlado?",
+      "opciones": [
+        "Solo el formato del nombre del archivo.",
+        "La temperatura de un frigorífico sin relación con el método.",
+        "Las condiciones de medida y la correspondencia del pico comparado."
+      ],
+      "correcta": 2,
+      "explicacion": "La comparación requiere datos obtenidos en condiciones compatibles y correspondientes al componente de interés.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q172",
+      "pregunta": "Un cromatograma DAD se extrae a dos longitudes de onda. ¿Por qué pueden diferir las áreas relativas de dos analitos?",
+      "opciones": [
+        "Porque cada uno tiene un espectro de absorción distinto.",
+        "Porque la columna separa físicamente dos veces en cada longitud de onda.",
+        "Porque el tiempo cambia de unidad automáticamente."
+      ],
+      "correcta": 0,
+      "explicacion": "La respuesta depende de la absorción de cada analito en la longitud de onda seleccionada.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q173",
+      "pregunta": "¿Qué cambio de tratamiento de datos puede hacerse con un registro espectral DAD conservado, si el software y método lo permiten?",
+      "opciones": [
+        "Cambiar retrospectivamente la fase móvil que atravesó la columna.",
+        "Modificar la masa realmente inyectada en el ensayo original.",
+        "Extraer otro cromatograma a una longitud de onda registrada."
+      ],
+      "correcta": 2,
+      "explicacion": "El procesamiento puede usar información ya adquirida, pero no cambia las condiciones físicas del análisis realizado.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector PDA/DAD · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Matriz de diodos (DAD)** | Lo mismo, pero **todo el espectro a la vez** | Igual | Da un **cromatograma tridimensional**: absorbancia frente a longitud de onda **y** tiempo |"
+    },
+    {
+      "id": "t32-q174",
+      "pregunta": "Para ajustar detección fluorimétrica de un HAP, ¿qué dos condiciones espectrales se seleccionan?",
+      "opciones": [
+        "Solo una masa atómica y la unidad de presión.",
+        "Las longitudes de onda de excitación y emisión.",
+        "La anchura de una columna y el diámetro del tapón."
+      ],
+      "correcta": 1,
+      "explicacion": "La fluorescencia requiere excitar y recoger la emisión en condiciones adecuadas al compuesto.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector de fluorescencia · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **FLUORESCENCIA** | La emisión del analito excitado, en un espectrofluorímetro con celda de flujo | **1-10 pg** | **El más sensible de los ópticos.** Solo sirve si el analito **es fluorescente**: HAP, benzo(a)pireno |"
+    },
+    {
+      "id": "t32-q175",
+      "pregunta": "Un compuesto no fluoresce en las condiciones del método. ¿Qué limitación tiene usar directamente un detector de fluorescencia?",
+      "opciones": [
+        "Puede carecer de respuesta útil para ese compuesto.",
+        "Responderá siempre por igual a toda molécula orgánica.",
+        "Medirá automáticamente su masa por ICP-MS."
+      ],
+      "correcta": 0,
+      "explicacion": "La selectividad fluorimétrica depende de que el analito o un derivado apropiado produzca la emisión buscada.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector de fluorescencia · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **FLUORESCENCIA** | La emisión del analito excitado, en un espectrofluorímetro con celda de flujo | **1-10 pg** | **El más sensible de los ópticos.** Solo sirve si el analito **es fluorescente**: HAP, benzo(a)pireno |"
+    },
+    {
+      "id": "t32-q176",
+      "pregunta": "La fluorescencia de un HAP es muy sensible, pero otro compuesto fluorescente coeluye. ¿Qué problema sigue existiendo?",
+      "opciones": [
+        "La obligación de sumar todo el pico al benzo(a)pireno.",
+        "La posible interferencia en la cuantificación.",
+        "La garantía de identidad por el simple uso de fluorescencia."
+      ],
+      "correcta": 1,
+      "explicacion": "La sensibilidad del detector no sustituye la selectividad de la separación y las condiciones de detección.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector de fluorescencia · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **FLUORESCENCIA** | La emisión del analito excitado, en un espectrofluorímetro con celda de flujo | **1-10 pg** | **El más sensible de los ópticos.** Solo sirve si el analito **es fluorescente**: HAP, benzo(a)pireno |"
+    },
+    {
+      "id": "t32-q177",
+      "pregunta": "Un método requiere benzo(a)pireno a nivel de traza. ¿Por qué resulta relevante la buena sensibilidad de la fluorescencia?",
+      "opciones": [
+        "Porque permite omitir la calibración de concentración.",
+        "Porque demuestra por sí sola ausencia de otros HAP.",
+        "Porque facilita medir señales pequeñas si se controla el fondo y la selectividad."
+      ],
+      "correcta": 2,
+      "explicacion": "La sensibilidad contribuye al límite de detección, junto con ruido, preparación y condiciones del método.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector de fluorescencia · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **FLUORESCENCIA** | La emisión del analito excitado, en un espectrofluorímetro con celda de flujo | **1-10 pg** | **El más sensible de los ópticos.** Solo sirve si el analito **es fluorescente**: HAP, benzo(a)pireno |"
+    },
+    {
+      "id": "t32-q178",
+      "pregunta": "¿Qué diferencia funcional hay entre detectar fluorescencia y absorbancia del mismo eluyente?",
+      "opciones": [
+        "Una recoge emisión tras excitación y la otra pérdida del haz transmitido.",
+        "La fluorescencia mide el ángulo límite de un prisma.",
+        "Ambas miden exclusivamente la masa de sólidos secos."
+      ],
+      "correcta": 0,
+      "explicacion": "Son propiedades ópticas distintas, con selectividad y condiciones instrumentales propias.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, detector de fluorescencia · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **FLUORESCENCIA** | La emisión del analito excitado, en un espectrofluorímetro con celda de flujo | **1-10 pg** | **El más sensible de los ópticos.** Solo sirve si el analito **es fluorescente**: HAP, benzo(a)pireno |"
+    },
+    {
+      "id": "t32-q179",
+      "pregunta": "Un analito se oxida a un potencial controlado en un electrodo. ¿Qué opción de detección se relaciona con esa propiedad?",
+      "opciones": [
+        "La refractometría de Abbe por ángulo límite.",
+        "El disco de transparencia.",
+        "La amperométrica."
+      ],
+      "correcta": 2,
+      "explicacion": "La detección amperométrica registra corriente asociada a procesos de oxidación o reducción.",
+      "fuente": "Shimadzu, HPLC detectors, detección electroquímica y conductividad · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Electroquímicos** | **Amperometría**, voltamperometría, culombimetría y **CONDUCTIVIDAD** | **10 pg - 1 ng** (amperométrico) | La amperometría, para lo que **se oxida o se reduce**; la **conductividad, para COMPUESTOS IÓNICOS** (tema 30) |"
+    },
+    {
+      "id": "t32-q180",
+      "pregunta": "Un eluyente contiene iones que aportan alta conductividad de fondo. ¿Qué debe considerar un método con detector conductimétrico?",
+      "opciones": [
+        "Que todo ión produzca la misma fluorescencia.",
+        "El fondo de la fase móvil y la estrategia prevista para medir los analitos.",
+        "Que el detector solo vea iones de la muestra por su nombre."
+      ],
+      "correcta": 1,
+      "explicacion": "La respuesta conductimétrica incluye contribuciones iónicas y necesita condiciones apropiadas de medida.",
+      "fuente": "Shimadzu, HPLC detectors, detección electroquímica y conductividad · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Electroquímicos** | **Amperometría**, voltamperometría, culombimetría y **CONDUCTIVIDAD** | **10 pg - 1 ng** (amperométrico) | La amperometría, para lo que **se oxida o se reduce**; la **conductividad, para COMPUESTOS IÓNICOS** (tema 30) |"
+    },
+    {
+      "id": "t32-q181",
+      "pregunta": "¿Por qué un detector de conductividad no identifica automáticamente cada especie iónica de una mezcla sin separar?",
+      "opciones": [
+        "Porque registra una propiedad conjunta y necesita la separación y referencias del método.",
+        "Porque toda especie iónica tiene igual tiempo de retención.",
+        "Porque la conductividad mide directamente el número atómico."
+      ],
+      "correcta": 0,
+      "explicacion": "La señal por sí sola no asigna la identidad específica de todos los componentes simultáneos.",
+      "fuente": "Shimadzu, HPLC detectors, detección electroquímica y conductividad · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Electroquímicos** | **Amperometría**, voltamperometría, culombimetría y **CONDUCTIVIDAD** | **10 pg - 1 ng** (amperométrico) | La amperometría, para lo que **se oxida o se reduce**; la **conductividad, para COMPUESTOS IÓNICOS** (tema 30) |"
+    },
+    {
+      "id": "t32-q182",
+      "pregunta": "Un detector RI muestra gran deriva al variar la proporción de metanol y agua. ¿Qué contribución explica ese efecto?",
+      "opciones": [
+        "La desaparición del disolvente en el depósito.",
+        "El cambio de índice de la propia fase móvil.",
+        "La conversión automática de RI en fluorescencia."
+      ],
+      "correcta": 1,
+      "explicacion": "El detector responde a cambios de índice y el gradiente modifica el fondo del eluyente.",
+      "fuente": "Waters, ACQUITY Refractive Index Detector Overview and Maintenance Guide, 715003547v03, principio y limitaciones · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Índice de refracción** | El cambio de índice de refracción de la fase móvil | **0,1 - 1 µg** (malo) | **Casi universal**, pero poco sensible, y **NO vale en gradiente** |"
+    },
+    {
+      "id": "t32-q183",
+      "pregunta": "Se emplea RI en un método isocrático. ¿Qué variable ambiental requiere especial estabilidad?",
+      "opciones": [
+        "El nombre del usuario de la impresora.",
+        "El calendario de exámenes municipales.",
+        "La temperatura del detector y del eluyente."
+      ],
+      "correcta": 2,
+      "explicacion": "El índice de refracción es sensible a la temperatura y sus variaciones pueden desplazar la línea de base.",
+      "fuente": "Waters, ACQUITY Refractive Index Detector Overview and Maintenance Guide, 715003547v03, principio y limitaciones · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Índice de refracción** | El cambio de índice de refracción de la fase móvil | **0,1 - 1 µg** (malo) | **Casi universal**, pero poco sensible, y **NO vale en gradiente** |"
+    },
+    {
+      "id": "t32-q184",
+      "pregunta": "Un analito carece de absorción UV intensa, pero cambia el índice del eluyente. ¿Qué detector puede valorarse en un método isocrático compatible?",
+      "opciones": [
+        "El detector de índice de refracción.",
+        "Un detector UV como solución universal independiente de la absorción.",
+        "El FID de un cromatógrafo de gases como conexión directa sin interfaz."
+      ],
+      "correcta": 0,
+      "explicacion": "El RI puede detectar especies por su contribución al índice, con sus limitaciones de sensibilidad y condiciones.",
+      "fuente": "Waters, ACQUITY Refractive Index Detector Overview and Maintenance Guide, 715003547v03, principio y limitaciones · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Índice de refracción** | El cambio de índice de refracción de la fase móvil | **0,1 - 1 µg** (malo) | **Casi universal**, pero poco sensible, y **NO vale en gradiente** |"
+    },
+    {
+      "id": "t32-q185",
+      "pregunta": "¿Por qué «casi universal» no significa que el detector RI tenga igual respuesta para todos los compuestos?",
+      "opciones": [
+        "Porque todos los analitos tienen la misma absorción UV.",
+        "Porque universal equivale a identificar estructuras químicas.",
+        "Porque la respuesta depende de cuánto difiera el índice de la muestra respecto al eluyente."
+      ],
+      "correcta": 2,
+      "explicacion": "La amplitud de aplicación no implica factores de respuesta idénticos ni identificación molecular.",
+      "fuente": "Waters, ACQUITY Refractive Index Detector Overview and Maintenance Guide, 715003547v03, principio y limitaciones · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Índice de refracción** | El cambio de índice de refracción de la fase móvil | **0,1 - 1 µg** (malo) | **Casi universal**, pero poco sensible, y **NO vale en gradiente** |"
+    },
+    {
+      "id": "t32-q186",
+      "pregunta": "Un detector de masas recibe especies iónicas del analito. ¿Qué magnitud usa para discriminar esas especies?",
+      "opciones": [
+        "La profundidad de transparencia.",
+        "La relación masa/carga, m/z.",
+        "Solo el diámetro del vial."
+      ],
+      "correcta": 1,
+      "explicacion": "La espectrometría de masas organiza la respuesta según m/z de los iones.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q187",
+      "pregunta": "¿Qué necesidad práctica resuelve la interfaz LC-MS respecto a la fase móvil?",
+      "opciones": [
+        "Gestionar la entrada del eluyente líquido, su desolvatación y la transferencia de iones.",
+        "Mantener intacto todo el caudal líquido dentro del analizador al alto vacío.",
+        "Reemplazar la separación por una pesada de filtro."
+      ],
+      "correcta": 0,
+      "explicacion": "El acoplamiento debe compatibilizar el flujo líquido con las condiciones de la espectrometría de masas.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q188",
+      "pregunta": "Se monitoriza un ion característico en vez de registrar un barrido amplio. ¿Qué ventaja puede buscarse?",
+      "opciones": [
+        "Que no sea necesario establecer el ion de interés.",
+        "Mayor selectividad o sensibilidad para el analito objetivo.",
+        "Una identificación universal de todos los compuestos ausentes del registro."
+      ],
+      "correcta": 1,
+      "explicacion": "La selección dirige la adquisición hacia señales concretas, con el alcance que permita el método.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q189",
+      "pregunta": "Un ion de la matriz comparte m/z con el analito en una medida simple. ¿Qué aspecto debe reforzarse?",
+      "opciones": [
+        "La suposición de identidad por compartir un único m/z.",
+        "El uso de grados Brix para confirmar la masa.",
+        "La selectividad mediante separación y criterios de confirmación adecuados."
+      ],
+      "correcta": 2,
+      "explicacion": "Una coincidencia aislada de masa/carga puede tener interferencias y requiere criterios de identificación.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q190",
+      "pregunta": "¿Qué añade un método LC-MS/MS frente a monitorizar únicamente un ion precursor, según su diseño?",
+      "opciones": [
+        "Información o selección asociada a iones producto de fragmentación.",
+        "La eliminación de cualquier efecto matriz por definición.",
+        "La medición directa del volumen de poros de toda columna."
+      ],
+      "correcta": 0,
+      "explicacion": "Las etapas de masa y fragmentación aportan selectividad, con validación de las transiciones y condiciones.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q191",
+      "pregunta": "Una muestra da menor respuesta MS que un patrón limpio de igual concentración. ¿Qué fenómeno de matriz debe investigarse?",
+      "opciones": [
+        "El aumento universal de fluorescencia de todos los compuestos.",
+        "La reducción del número de carbonos por definición.",
+        "La supresión de la ionización."
+      ],
+      "correcta": 2,
+      "explicacion": "Los componentes de matriz pueden modificar la eficiencia de ionización y la señal.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q192",
+      "pregunta": "Un método LC-MS usa una fase móvil con aditivos incompatibles con la fuente. ¿Qué debe revisarse?",
+      "opciones": [
+        "La masa nominal del ordenador.",
+        "La compatibilidad de eluyentes y aditivos con el sistema de ionización.",
+        "Solo el tamaño del papel del informe."
+      ],
+      "correcta": 1,
+      "explicacion": "Los eluyentes adecuados para otro detector no son automáticamente adecuados para MS.",
+      "fuente": "Shimadzu, LCMS fundamentals, ionización y relación masa/carga · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q193",
+      "pregunta": "Se compara un límite de detección de 1 ng con otro de 10 pg, ambos como masa en condiciones comparables. ¿Cuál es menor?",
+      "opciones": [
+        "10 pg.",
+        "1 ng.",
+        "Son iguales."
+      ],
+      "correcta": 0,
+      "explicacion": "1 ng equivale a 1.000 pg, por lo que 10 pg es una masa cien veces menor.",
+      "fuente": "CEM QU-004, §§2 y 4.3, y fundamentos de desempeño de detectores · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Detector | Qué mide | Límite de detección | Cuándo |"
+    },
+    {
+      "id": "t32-q194",
+      "pregunta": "Un catálogo ofrece un límite de detección de masa para un detector. ¿Qué falta para convertirlo en un límite de concentración de agua analizada?",
+      "opciones": [
+        "El número de platos de una columna ajena.",
+        "El volumen y los factores de preparación, inyección y recuperación del método.",
+        "Solo cambiar ng por µg/L en la etiqueta."
+      ],
+      "correcta": 1,
+      "explicacion": "El límite del método depende de cómo se transforma la muestra original en cantidad que alcanza el detector.",
+      "fuente": "CEM QU-004, §§2 y 4.3, y fundamentos de desempeño de detectores · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Detector | Qué mide | Límite de detección | Cuándo |"
+    },
+    {
+      "id": "t32-q195",
+      "pregunta": "Un detector es muy sensible para un patrón puro. ¿Qué debe verificarse antes de asegurar igual capacidad en agua real?",
+      "opciones": [
+        "Que el agua tenga un nombre parecido al patrón.",
+        "Que todos los picos aparezcan en el mismo color.",
+        "El comportamiento del método en su matriz, con fondo e interferencias."
+      ],
+      "correcta": 2,
+      "explicacion": "El desempeño instrumental aislado no demuestra el desempeño del método completo en muestras.",
+      "fuente": "CEM QU-004, §§2 y 4.3, y fundamentos de desempeño de detectores · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| Detector | Qué mide | Límite de detección | Cuándo |"
+    },
+    {
+      "id": "t32-q196",
+      "pregunta": "Se cambia el detector UV por fluorescencia para el mismo extracto. ¿Qué condición de calibración debe revisarse?",
+      "opciones": [
+        "La respuesta y calibración bajo las nuevas condiciones de detección.",
+        "La masa molar de todos los patrones como si cambiara.",
+        "Solo la hora del sistema operativo."
+      ],
+      "correcta": 0,
+      "explicacion": "Cambiar la propiedad medida modifica la respuesta instrumental y requiere las comprobaciones del método.",
+      "fuente": "CEM QU-004, §5.3.1, selección de parámetros del detector · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q197",
+      "pregunta": "El detector está fuera de su intervalo lineal con el patrón más concentrado. ¿Qué consecuencia afecta a la cuantificación?",
+      "opciones": [
+        "Toda concentración se vuelve exactamente cero.",
+        "Se obtiene automáticamente mayor exactitud al saturarse.",
+        "La relación respuesta-concentración puede dejar de ser válida en ese tramo."
+      ],
+      "correcta": 2,
+      "explicacion": "La saturación o no linealidad invalida la extrapolación de la relación lineal prevista.",
+      "fuente": "CEM QU-004, §5.3.1, selección de parámetros del detector · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **UV/Visible** | **Absorbancia** del eluyente en una **celda de flujo** de **1-10 µL** y camino óptico **0,2-1 cm** | **100 pg - 1 ng** | El más popular. **La fase móvil NO puede absorber** a la longitud de onda que se quiere medir |"
+    },
+    {
+      "id": "t32-q198",
+      "pregunta": "El QU-004 obtiene la relación entre respuesta y concentración para un analito. ¿Qué tipo de calibración describe?",
+      "opciones": [
+        "Una medida de turbidez sin patrones.",
+        "Una calibración indirecta del sistema para ese parámetro.",
+        "Una calibración única que sirve automáticamente para cualquier sustancia."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento relaciona señales de patrones con concentraciones conocidas del analito.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q199",
+      "pregunta": "Se calibra por interpolación entre dos niveles dentro de un intervalo lineal demostrado. ¿Dónde debe quedar la muestra para aplicar esa interpolación?",
+      "opciones": [
+        "Entre los niveles que delimitan el intervalo de calibración.",
+        "Por encima de cualquier patrón sin límite.",
+        "En una concentración negativa por definición."
+      ],
+      "correcta": 0,
+      "explicacion": "El procedimiento exige trabajar en el intervalo lineal definido por los patrones.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q200",
+      "pregunta": "Una muestra supera el patrón alto del procedimiento de dos puntos. ¿Qué actuación debe valorarse según el método?",
+      "opciones": [
+        "Asignarle automáticamente el valor del patrón alto.",
+        "Diluirla de manera validada o ampliar y comprobar el rango antes de cuantificar.",
+        "Extrapolar sin evaluación y dar el resultado como equivalente a interpolación."
+      ],
+      "correcta": 1,
+      "explicacion": "El resultado debe quedar dentro de las condiciones para las que la relación es válida.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q201",
+      "pregunta": "Dos puntos siempre pueden definir una recta matemática. ¿Qué debe justificarse además para su uso analítico?",
+      "opciones": [
+        "Que los dos viales tengan el mismo color de tapón.",
+        "Que la pantalla no muestre decimales.",
+        "Que la respuesta sea lineal en el intervalo de trabajo."
+      ],
+      "correcta": 2,
+      "explicacion": "La existencia de la recta no demuestra la linealidad física de toda respuesta entre los niveles.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q202",
+      "pregunta": "¿Por qué calibrar un HPLC para un plaguicida no calibra automáticamente todos los HAP?",
+      "opciones": [
+        "Porque los factores de respuesta y condiciones son específicos del parámetro.",
+        "Porque los HAP se pesan directamente en el inyector.",
+        "Porque toda molécula orgánica tiene siempre el mismo factor."
+      ],
+      "correcta": 0,
+      "explicacion": "El QU-004 indica que la calibración indirecta se realiza por parámetro y uso previsto.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q203",
+      "pregunta": "Una calibración en disolvente puro se aplica a un extracto complejo. ¿Qué evaluación adicional contempla el alcance del QU-004?",
+      "opciones": [
+        "Solo que el nombre del extracto quepa en el informe.",
+        "El peso de la carpeta de resultados.",
+        "La posible influencia de la matriz."
+      ],
+      "correcta": 2,
+      "explicacion": "El documento contempla pruebas adicionales para garantizar que la matriz no influye en la determinación.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q204",
+      "pregunta": "El laboratorio aplica QU-004 para cuantificación. ¿Qué otras comprobaciones pueden seguir siendo necesarias según su alcance?",
+      "opciones": [
+        "Solo una revisión anual del teclado.",
+        "Las verificaciones instrumentales específicas del equipo o detector.",
+        "Ninguna comprobación porque la interpolación cubre todo el instrumento."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento declara que no incluye todas las operaciones de verificación instrumental.",
+      "fuente": "CEM QU-004, §§2, 4.3 y 4.4, alcance de la calibración indirecta · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q205",
+      "pregunta": "Se proponen patrones de 1 y 20 unidades de concentración para el procedimiento que limita su relación a 10. ¿Qué problema presentan?",
+      "opciones": [
+        "Su relación es 20 y supera el límite previsto.",
+        "Su relación es 0,05 y por eso siempre sirven.",
+        "Ninguno, la relación entre concentraciones nunca importa."
+      ],
+      "correcta": 0,
+      "explicacion": "Debe elegirse un par que cumpla la relación máxima del procedimiento.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q206",
+      "pregunta": "Los niveles de calibración son 2 y 20 µg/L. ¿Qué relación entre concentraciones tienen?",
+      "opciones": [
+        "40.",
+        "10.",
+        "18."
+      ],
+      "correcta": 1,
+      "explicacion": "La relación se obtiene dividiendo el nivel alto por el bajo, 20/2.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q207",
+      "pregunta": "Un MRC ha caducado antes de preparar los patrones. ¿Qué debe hacerse según las condiciones del procedimiento?",
+      "opciones": [
+        "Actualizar a mano la fecha sin evidencia.",
+        "Mantenerlo indefinidamente porque su concentración nominal no cambia en la etiqueta.",
+        "Usar un material válido y comprobar su documentación."
+      ],
+      "correcta": 2,
+      "explicacion": "La trazabilidad y validez del patrón incluyen su periodo de uso.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q208",
+      "pregunta": "Se diluye un MRC con un disolvente que produce un pico interferente. ¿Qué requisito de material se compromete?",
+      "opciones": [
+        "La ausencia de impurezas que afecten a la respuesta.",
+        "La unidad de tiempo del cromatograma.",
+        "La longitud total de la columna."
+      ],
+      "correcta": 0,
+      "explicacion": "El disolvente debe ser adecuado al parámetro y no introducir interferencias analíticas.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q209",
+      "pregunta": "La preparación de un patrón requiere pesar el material. ¿Qué resolución de balanza recoge el QU-004 para esa operación?",
+      "opciones": [
+        "1 g.",
+        "100 mg.",
+        "0,1 mg."
+      ],
+      "correcta": 2,
+      "explicacion": "El requisito de balanza analítica se aplica cuando los patrones o materiales deben pesarse.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q210",
+      "pregunta": "Un patrón se prepara con una pipeta y matraz sin control metrológico. ¿Qué parte de su concentración resulta afectada?",
+      "opciones": [
+        "La polaridad química del analito por definición.",
+        "La fiabilidad de los volúmenes usados en la dilución.",
+        "Solo el tiempo de encendido de la lámpara."
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración preparada depende de la exactitud y trazabilidad de los volúmenes y material de referencia.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q211",
+      "pregunta": "La sala de calibración está a 30 °C y el manual no establece esa condición. ¿Qué diferencia presenta respecto al intervalo descrito en QU-004?",
+      "opciones": [
+        "Está fuera de los 18 a 28 °C previstos.",
+        "Está dentro del intervalo porque no supera 40 °C.",
+        "Es la temperatura de referencia obligatoria de todo HPLC."
+      ],
+      "correcta": 0,
+      "explicacion": "El procedimiento fija 18–28 °C sin otras condiciones particulares salvo las del manual.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q212",
+      "pregunta": "Un detector requiere estabilidad térmica más estricta que la sala. ¿Qué debe tenerse en cuenta?",
+      "opciones": [
+        "Una compensación universal mediante el nombre del fichero.",
+        "Las condiciones adicionales especificadas para ese detector.",
+        "Solo el intervalo general, ignorando el detector."
+      ],
+      "correcta": 1,
+      "explicacion": "El QU-004 advierte que determinados detectores necesitan un control térmico más severo.",
+      "fuente": "CEM QU-004, §§5.1 y 5.2, patrones y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q213",
+      "pregunta": "Los patrones se cuantifican por área y las muestras por altura usando la misma recta. ¿Qué incoherencia debe corregirse?",
+      "opciones": [
+        "El analito cambia de identidad cuando se usa altura.",
+        "Una recta de área sirve siempre sin cambios para altura.",
+        "La respuesta de calibración debe corresponder a la magnitud usada en las muestras."
+      ],
+      "correcta": 2,
+      "explicacion": "La relación señal-concentración depende de cómo se define y procesa la respuesta.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q214",
+      "pregunta": "Se aumenta el volumen de inyección de muestras respecto al usado para calibrar. ¿Qué requiere ese cambio?",
+      "opciones": [
+        "Evaluar su efecto y la aplicabilidad de la calibración.",
+        "Cambiar únicamente la fecha de los patrones.",
+        "Suponer que la concentración calculada será siempre idéntica."
+      ],
+      "correcta": 0,
+      "explicacion": "La cantidad introducida y las condiciones deben ser compatibles con la relación de calibración.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q215",
+      "pregunta": "La calibración se hizo a una longitud de onda y las muestras se registran a otra. ¿Qué debe revisarse?",
+      "opciones": [
+        "Solo el número de serie del matraz.",
+        "La temperatura de congelación del metanol como único dato.",
+        "La respuesta del analito y la calibración a la nueva longitud de onda."
+      ],
+      "correcta": 2,
+      "explicacion": "La absorción depende de la longitud de onda, que forma parte de las condiciones instrumentales.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q216",
+      "pregunta": "Un umbral de integración demasiado alto omite el pico de un patrón bajo. ¿Qué parte del procesamiento debe evaluarse?",
+      "opciones": [
+        "La velocidad del papel de la impresora.",
+        "El criterio para reconocer e integrar la señal.",
+        "La capacidad de la balanza del almacén."
+      ],
+      "correcta": 1,
+      "explicacion": "El QU-004 exige fijar el umbral mínimo y comprobar que el procesamiento respeta los criterios.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q217",
+      "pregunta": "La ventana de integración incluye un pico vecino. ¿Qué consecuencia cuantitativa puede producir?",
+      "opciones": [
+        "Atribuir al analito señal de otro componente.",
+        "Reducir siempre su concentración exactamente a la mitad.",
+        "Convertir el área en un tiempo de retención."
+      ],
+      "correcta": 0,
+      "explicacion": "La integración debe aislar de forma adecuada la respuesta que corresponde al analito.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q218",
+      "pregunta": "Un pico aparece cortado por el final de su ventana de integración. ¿Qué debe comprobarse?",
+      "opciones": [
+        "Que la unidad de concentración tenga suficientes letras.",
+        "Que se haya integrado la señal completa conforme al criterio del método.",
+        "Solo que el pico tenga el nombre correcto."
+      ],
+      "correcta": 1,
+      "explicacion": "Una ventana inadecuada puede perder parte de la respuesta y sesgar el resultado.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q219",
+      "pregunta": "¿Por qué una modificación manual de integración debe quedar documentada?",
+      "opciones": [
+        "Porque cambia físicamente la muestra que ya se analizó.",
+        "Porque elimina la incertidumbre por definición.",
+        "Para poder reproducir y revisar cómo se obtuvo la respuesta."
+      ],
+      "correcta": 2,
+      "explicacion": "La trazabilidad del tratamiento de señal forma parte del resultado cromatográfico.",
+      "fuente": "CEM QU-004, §§5.2 y 5.3.1–5.3.2, condiciones de medida e integración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q220",
+      "pregunta": "¿Qué contiene el blanco de acondicionamiento descrito por QU-004?",
+      "opciones": [
+        "Una alícuota del disolvente usado para preparar los patrones.",
+        "Una mezcla de todos los analitos a concentración desconocida.",
+        "El patrón de mayor concentración."
+      ],
+      "correcta": 0,
+      "explicacion": "El blanco permite establecer el fondo y comprobar la ausencia de señal relevante.",
+      "fuente": "CEM QU-004, §§5.3.3 y 5.3.4, acondicionamiento y ausencia de señal · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q221",
+      "pregunta": "¿Cómo se interpreta en la práctica la ausencia de señal del blanco según QU-004?",
+      "opciones": [
+        "Exigiendo que toda cifra electrónica sea exactamente cero.",
+        "Declarando válido cualquier pico por ser del blanco.",
+        "Mediante un intervalo de tolerancia establecido por el laboratorio."
+      ],
+      "correcta": 2,
+      "explicacion": "El procedimiento reconoce un criterio práctico de tolerancia, que debe definirse y aplicarse.",
+      "fuente": "CEM QU-004, §§5.3.3 y 5.3.4, acondicionamiento y ausencia de señal · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q222",
+      "pregunta": "El blanco muestra un pico en el tiempo del analito por encima de la tolerancia. ¿Qué paso debe preceder al uso de la calibración?",
+      "opciones": [
+        "Continuar sin registrar la incidencia.",
+        "Investigar y obtener un blanco de referencia adecuado.",
+        "Restar siempre el patrón más alto a todas las muestras."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento requiere repetir las comprobaciones hasta obtener una referencia válida.",
+      "fuente": "CEM QU-004, §§5.3.3 y 5.3.4, acondicionamiento y ausencia de señal · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q223",
+      "pregunta": "Un patrón da un pico con cola marcada aunque su tiempo sea el esperado. ¿Qué condición de QU-004 requiere revisar?",
+      "opciones": [
+        "La forma del pico.",
+        "Solo el nombre del analito en la lista.",
+        "La fecha del muestreo como causa suficiente."
+      ],
+      "correcta": 0,
+      "explicacion": "La comprobación del cromatograma incluye forma adecuada, ausencia de colas y artefactos.",
+      "fuente": "CEM QU-004, §§5.3.6 y 5.3.7, aptitud de picos y repeticiones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q224",
+      "pregunta": "Un pico aparece en un tiempo muy distinto al del patrón de referencia. ¿Qué verificación requiere antes de asignarlo al analito?",
+      "opciones": [
+        "Usar siempre su área sin ninguna revisión.",
+        "Comprobar condiciones, identificación y posible interferencia.",
+        "Cambiar automáticamente su nombre al del analito deseado."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento exige que los picos estén en los tiempos esperados junto con otros criterios cromatográficos.",
+      "fuente": "CEM QU-004, §§5.3.6 y 5.3.7, aptitud de picos y repeticiones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q225",
+      "pregunta": "QU-004 aconseja generalmente diez repeticiones de patrones. ¿Qué información aportan sobre la respuesta?",
+      "opciones": [
+        "La eliminación de cualquier sesgo sistemático por repetir.",
+        "La prueba de que no existe efecto matriz en todas las muestras.",
+        "Una evaluación de su dispersión y repetibilidad."
+      ],
+      "correcta": 2,
+      "explicacion": "Las repeticiones permiten caracterizar la variabilidad de la respuesta obtenida.",
+      "fuente": "CEM QU-004, §§5.3.6 y 5.3.7, aptitud de picos y repeticiones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q226",
+      "pregunta": "Un patrón se repite diez veces y todas las áreas son próximas, pero está mal preparado. ¿Qué problema permanece?",
+      "opciones": [
+        "Un sesgo de concentración que la repetición no corrige.",
+        "La obligación de que los resultados sean exactos por ser repetidos.",
+        "La imposibilidad de obtener una media."
+      ],
+      "correcta": 0,
+      "explicacion": "La precisión de respuesta y la exactitud de la concentración preparada son aspectos diferentes.",
+      "fuente": "CEM QU-004, §§5.3.6 y 5.3.7, aptitud de picos y repeticiones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q227",
+      "pregunta": "Una calibración usa x₁ = 1 y x₂ = 3 µg/L, con y₁ = 120 y y₂ = 320 unidades de área. ¿Qué pendiente tiene?",
+      "opciones": [
+        "200 unidades de área por µg/L.",
+        "20 unidades de área por µg/L.",
+        "100 unidades de área por µg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "m = (320−120)/(3−1) = 100.",
+      "fuente": "CEM QU-004, §5.4.2, ecuaciones de pendiente y ordenada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q228",
+      "pregunta": "En la relación y = 100·x + 20, una muestra da y = 220. ¿Qué x se calcula?",
+      "opciones": [
+        "22.",
+        "2.",
+        "2,2."
+      ],
+      "correcta": 1,
+      "explicacion": "Se despeja x = (220−20)/100.",
+      "fuente": "CEM QU-004, §5.4.2, ecuaciones de pendiente y ordenada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q229",
+      "pregunta": "Una recta tiene ordenada b = 20. Si se calcula x como y/m ignorando b, ¿qué contribución se incorpora indebidamente a la concentración?",
+      "opciones": [
+        "La señal representada por la ordenada en el origen.",
+        "El tiempo de retención del disolvente.",
+        "La longitud de la columna."
+      ],
+      "correcta": 0,
+      "explicacion": "La concentración se calcula como (y−b)/m para la relación lineal definida.",
+      "fuente": "CEM QU-004, §5.4.2, ecuaciones de pendiente y ordenada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q230",
+      "pregunta": "Se obtiene 0,30 µg/L en un extracto preparado por diluir una alícuota cinco veces. ¿Qué concentración corresponde antes de esa dilución, sin otros factores?",
+      "opciones": [
+        "0,30 µg/L.",
+        "1,50 µg/L.",
+        "0,06 µg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración original se recupera multiplicando por el factor de dilución.",
+      "fuente": "CEM QU-004, §5.4.2, ecuaciones de pendiente y ordenada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q231",
+      "pregunta": "¿Qué identificación del material de referencia permite rastrear la calibración si hay una incidencia del proveedor?",
+      "opciones": [
+        "Solo el color del frasco vacío.",
+        "El orden alfabético de los analitos.",
+        "Su lote, certificado y datos de uso registrados."
+      ],
+      "correcta": 2,
+      "explicacion": "Los registros de patrones deben permitir relacionar la medida con los materiales utilizados.",
+      "fuente": "CEM QU-004, §5.4.1, registros de trazabilidad · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q232",
+      "pregunta": "Un informe conserva la concentración final, pero pierde los cromatogramas y condiciones. ¿Qué capacidad se dificulta?",
+      "opciones": [
+        "La revisión y reproducción del proceso de medida.",
+        "La lectura del nombre del cliente.",
+        "La conversión aritmética entre gramos y miligramos."
+      ],
+      "correcta": 0,
+      "explicacion": "El QU-004 exige conservar datos que permitan trazar respuestas, integración y condiciones.",
+      "fuente": "CEM QU-004, §5.4.1, registros de trazabilidad · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q233",
+      "pregunta": "¿Por qué se registra el analista junto a fecha, equipo y respuestas de patrones?",
+      "opciones": [
+        "Para sustituir el certificado del patrón por un nombre.",
+        "Para demostrar linealidad sin medidas.",
+        "Para vincular las operaciones y resultados de la calibración."
+      ],
+      "correcta": 2,
+      "explicacion": "El registro identifica quién realizó las operaciones y ayuda a reconstruir el proceso.",
+      "fuente": "CEM QU-004, §5.4.1, registros de trazabilidad · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q234",
+      "pregunta": "Un equipo tiene dos métodos con condiciones de inyección y detector diferentes. ¿Qué debe quedar asociado a cada calibración?",
+      "opciones": [
+        "El nombre de la última muestra de otra técnica.",
+        "El método y las condiciones efectivamente usados.",
+        "Solo una marca genérica de «equipo calibrado» para todo uso."
+      ],
+      "correcta": 1,
+      "explicacion": "La validez de la relación de respuesta depende de las condiciones de trabajo y del uso previsto.",
+      "fuente": "CEM QU-004, §5.4.1, registros de trazabilidad · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "- **Materiales de referencia certificados** que cubran el rango esperado, con **la relación entre las dos disoluciones no mayor de 10**, y **dentro del periodo de caducidad**."
+    },
+    {
+      "id": "t32-q235",
+      "pregunta": "Un método de agua cita ISO 17993 y emplea HPLC con fluorescencia. ¿Qué preparación previa identifica su título?",
+      "opciones": [
+        "Extracción líquido-líquido.",
+        "Digestión Kjeldahl de nitrógeno total.",
+        "Purga de gases como única preparación obligatoria."
+      ],
+      "correcta": 0,
+      "explicacion": "El título del método de HAP especifica la extracción líquido-líquido previa a la cromatografía.",
+      "fuente": "ISO 17993:2002, alcance público, y UNE-EN ISO 17993:2004, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**a) HAP y benzo(a)pireno: la aplicación estrella.**"
+    },
+    {
+      "id": "t32-q236",
+      "pregunta": "¿Qué conjunto de analitos corresponde al alcance de ISO 17993?",
+      "opciones": [
+        "Únicamente cloruro y sulfato.",
+        "Quince HAP seleccionados.",
+        "Todos los metales del sistema periódico."
+      ],
+      "correcta": 1,
+      "explicacion": "El catálogo describe un método para quince hidrocarburos aromáticos policíclicos determinados.",
+      "fuente": "ISO 17993:2002, alcance público, y UNE-EN ISO 17993:2004, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**a) HAP y benzo(a)pireno: la aplicación estrella.**"
+    },
+    {
+      "id": "t32-q237",
+      "pregunta": "Se pretende extender ISO 17993 a un compuesto ajeno a sus HAP seleccionados. ¿Qué debe comprobarse?",
+      "opciones": [
+        "Que todo compuesto orgánico está incluido por el título de agua.",
+        "Solo que pueda escribirse su nombre con la misma fuente.",
+        "La validación y alcance de la extensión para ese nuevo analito."
+      ],
+      "correcta": 2,
+      "explicacion": "La aplicación a otro analito necesita justificar el desempeño del método para él.",
+      "fuente": "ISO 17993:2002, alcance público, y UNE-EN ISO 17993:2004, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**a) HAP y benzo(a)pireno: la aplicación estrella.**"
+    },
+    {
+      "id": "t32-q238",
+      "pregunta": "Una muestra cumple el sumatorio de cuatro HPA, pero supera el valor del benzo(a)pireno. ¿Qué implica para esos parámetros?",
+      "opciones": [
+        "Que el cumplimiento del sumatorio no resuelve la superación del valor individual.",
+        "Que el benzo(a)pireno debe eliminarse del informe.",
+        "Que la muestra cumple ambos por compensación."
+      ],
+      "correcta": 0,
+      "explicacion": "El benzo(a)pireno tiene un valor propio y queda fuera de ese sumatorio de cuatro.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**EL BENZO(a)PIRENO NO ESTÁ EN LA ∑4.** Tiene **valor propio**, y **diez veces más estricto** que el sumatorio. La ∑4 la forman **benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno**."
+    },
+    {
+      "id": "t32-q239",
+      "pregunta": "Los cuatro HPA del sumatorio dan 0,02, 0,03, 0,01 y 0,02 µg/L. ¿Qué suma debe compararse con su valor paramétrico?",
+      "opciones": [
+        "0,02 µg/L por ser la media.",
+        "0,8 µg/L.",
+        "0,08 µg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "El parámetro es un sumatorio y las cuatro concentraciones están expresadas en la misma unidad.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**EL BENZO(a)PIRENO NO ESTÁ EN LA ∑4.** Tiene **valor propio**, y **diez veces más estricto** que el sumatorio. La ∑4 la forman **benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno**."
+    },
+    {
+      "id": "t32-q240",
+      "pregunta": "La suma de cuatro HPA es 0,09 µg/L y el benzo(a)pireno 0,02 µg/L. ¿Qué comparación directa describe ambos valores frente a sus límites, sin aplicar reglas adicionales de decisión?",
+      "opciones": [
+        "Solo el sumatorio supera su valor.",
+        "El sumatorio queda bajo 0,10 y el benzo(a)pireno supera 0,010 µg/L.",
+        "Los dos quedan bajo sus valores."
+      ],
+      "correcta": 1,
+      "explicacion": "Los valores se evalúan por separado frente a los umbrales correspondientes.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**EL BENZO(a)PIRENO NO ESTÁ EN LA ∑4.** Tiene **valor propio**, y **diez veces más estricto** que el sumatorio. La ∑4 la forman **benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno**."
+    },
+    {
+      "id": "t32-q241",
+      "pregunta": "El benzo(a)pireno se informa como 10 ng/L. ¿Qué concentración equivalente en µg/L debe compararse con su valor paramétrico?",
+      "opciones": [
+        "0,010 µg/L.",
+        "10 µg/L.",
+        "0,000010 µg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Un microgramo equivale a mil nanogramos.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 y nota 13 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**EL BENZO(a)PIRENO NO ESTÁ EN LA ∑4.** Tiene **valor propio**, y **diez veces más estricto** que el sumatorio. La ∑4 la forman **benzo(b)fluoranteno, benzo(ghi)perileno, benzo(k)fluoranteno e indeno(1,2,3-cd)pireno**."
+    },
+    {
+      "id": "t32-q242",
+      "pregunta": "Se recibe una norma de ciertos agentes fitosanitarios que cita HPLC-UV tras extracción sólido-líquido. ¿Qué familia normativa del tema corresponde?",
+      "opciones": [
+        "Farmacopea Europea 2.2.7.",
+        "ISO 11369.",
+        "ISO 7027."
+      ],
+      "correcta": 1,
+      "explicacion": "El título de ISO 11369 identifica esa preparación y detección cromatográfica.",
+      "fuente": "ISO 11369:1997, alcance público, y UNE-EN ISO 11369:1998, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**b) Plaguicidas polares.** **UNE-EN ISO 11369:1998**, *«Determinación de ciertos **agentes para el tratamiento de las plantas**. Método por **HPLC con detección UV** tras **extracción sólido-líquido**»*. Es la vía de los plaguicidas que **no aguantan la cromatografía de gases**: los polares, los iónicos y los termolábiles. Para el **glifosato y el AMPA**, que son el caso extremo, hay norma propia: **ISO 21458** (HPLC con detección fluorimétrica) e **ISO 16308** (HPLC-MS/MS)."
+    },
+    {
+      "id": "t32-q243",
+      "pregunta": "¿Por qué la lista concreta de plaguicidas del método debe revisarse antes de encargar un análisis?",
+      "opciones": [
+        "Porque todo plaguicida se detecta igual con cualquier equipo.",
+        "Porque el nombre HPLC equivale a un método universal validado.",
+        "Porque el alcance de una norma no cubre automáticamente todo plaguicida existente."
+      ],
+      "correcta": 2,
+      "explicacion": "Los analitos y matrices incluidos forman parte del alcance analítico.",
+      "fuente": "ISO 11369:1997, alcance público, y UNE-EN ISO 11369:1998, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**b) Plaguicidas polares.** **UNE-EN ISO 11369:1998**, *«Determinación de ciertos **agentes para el tratamiento de las plantas**. Método por **HPLC con detección UV** tras **extracción sólido-líquido**»*. Es la vía de los plaguicidas que **no aguantan la cromatografía de gases**: los polares, los iónicos y los termolábiles. Para el **glifosato y el AMPA**, que son el caso extremo, hay norma propia: **ISO 21458** (HPLC con detección fluorimétrica) e **ISO 16308** (HPLC-MS/MS)."
+    },
+    {
+      "id": "t32-q244",
+      "pregunta": "Un plaguicida se degrada en las condiciones térmicas de una determinación por gases. ¿Qué alternativa del temario puede estudiarse si existe método adecuado?",
+      "opciones": [
+        "Cromatografía de líquidos con preparación y detección apropiadas.",
+        "Reemplazar su concentración por la turbidez del agua.",
+        "Incrementar indefinidamente la temperatura sin evaluar la degradación."
+      ],
+      "correcta": 0,
+      "explicacion": "La CL es especialmente pertinente para analitos termolábiles o poco volátiles.",
+      "fuente": "ISO 11369:1997, alcance público, y UNE-EN ISO 11369:1998, título oficial · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**b) Plaguicidas polares.** **UNE-EN ISO 11369:1998**, *«Determinación de ciertos **agentes para el tratamiento de las plantas**. Método por **HPLC con detección UV** tras **extracción sólido-líquido**»*. Es la vía de los plaguicidas que **no aguantan la cromatografía de gases**: los polares, los iónicos y los termolábiles. Para el **glifosato y el AMPA**, que son el caso extremo, hay norma propia: **ISO 21458** (HPLC con detección fluorimétrica) e **ISO 16308** (HPLC-MS/MS)."
+    },
+    {
+      "id": "t32-q245",
+      "pregunta": "En un informe de glifosato, ¿por qué puede figurar AMPA como analito diferenciado?",
+      "opciones": [
+        "Porque es otro nombre para el mismo compuesto sin distinción.",
+        "Porque representa el caudal de la bomba.",
+        "Porque es un metabolito que el método específico también determina."
+      ],
+      "correcta": 2,
+      "explicacion": "El alcance de ISO 21458 incluye el glifosato y el ácido aminometilfosfónico, AMPA.",
+      "fuente": "ISO 21458:2008, alcance público, glifosato y su metabolito AMPA · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**b) Plaguicidas polares.** **UNE-EN ISO 11369:1998**, *«Determinación de ciertos **agentes para el tratamiento de las plantas**. Método por **HPLC con detección UV** tras **extracción sólido-líquido**»*. Es la vía de los plaguicidas que **no aguantan la cromatografía de gases**: los polares, los iónicos y los termolábiles. Para el **glifosato y el AMPA**, que son el caso extremo, hay norma propia: **ISO 21458** (HPLC con detección fluorimétrica) e **ISO 16308** (HPLC-MS/MS)."
+    },
+    {
+      "id": "t32-q246",
+      "pregunta": "Cinco plaguicidas autorizados dan 0,08 µg/L cada uno. ¿Qué suma se obtiene para el total, antes de valorar otros requisitos?",
+      "opciones": [
+        "4,0 µg/L.",
+        "0,40 µg/L.",
+        "0,08 µg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La suma aritmética es 5×0,08. Deben revisarse tanto los valores individuales como el total aplicable.",
+      "fuente": "RD 3/2023, anexo I, parte B, plaguicidas y notas 8 y 14 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Valores: **plaguicida individual 0,10 µg/L** —o **< 0,03 µg/L** si está prohibido, con **LD siempre inferior a 0,03 µg/L**— y **∑n plaguicidas totales 0,50 µg/L**, con **incertidumbre del 30 %**."
+    },
+    {
+      "id": "t32-q247",
+      "pregunta": "Una muestra tiene un plaguicida individual a 0,12 µg/L y suma total de 0,30 µg/L. Frente a los valores generales de 0,10 individual y 0,50 total, ¿qué ocurre?",
+      "opciones": [
+        "Supera el individual aunque el total esté por debajo.",
+        "Cumple ambos porque la suma no supera 0,50.",
+        "Supera solo el total."
+      ],
+      "correcta": 0,
+      "explicacion": "El límite del total no sustituye los límites de cada plaguicida.",
+      "fuente": "RD 3/2023, anexo I, parte B, plaguicidas y notas 8 y 14 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Valores: **plaguicida individual 0,10 µg/L** —o **< 0,03 µg/L** si está prohibido, con **LD siempre inferior a 0,03 µg/L**— y **∑n plaguicidas totales 0,50 µg/L**, con **incertidumbre del 30 %**."
+    },
+    {
+      "id": "t32-q248",
+      "pregunta": "La suma de PFAS de la lista regulada es 0,12 µg/L. ¿Cómo queda frente al valor paramétrico de su sumatorio?",
+      "opciones": [
+        "No puede compararse nunca por ser un sumatorio.",
+        "Lo supera, al ser mayor que 0,10 µg/L.",
+        "Queda por debajo, porque el límite es 1,0 µg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La comparación debe utilizar el grupo y la unidad definidos por la norma.",
+      "fuente": "RD 3/2023, anexo I, parte B, PFAS y nota 15 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "- **∑20 PFAS: 0,10 µg/L**, con incertidumbre del **50 %**. La norma define el grupo: sustancias que contienen *«un resto perfluoroalquilo con **tres o más carbonos** […] o un resto de perfluoroalquiléter con **dos o más carbonos**»*."
+    },
+    {
+      "id": "t32-q249",
+      "pregunta": "Se pretende sumar sustancias PFAS que no coinciden con las veinte del parámetro regulado. ¿Qué debe revisarse en el informe?",
+      "opciones": [
+        "Solo el número de decimales del total.",
+        "La masa de la botella vacía como único criterio.",
+        "La definición y composición del sumatorio realmente evaluado."
+      ],
+      "correcta": 2,
+      "explicacion": "Un sumatorio analítico debe corresponder a los compuestos que define el parámetro legal.",
+      "fuente": "RD 3/2023, anexo I, parte B, PFAS y nota 15 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "- **∑20 PFAS: 0,10 µg/L**, con incertidumbre del **50 %**. La norma define el grupo: sustancias que contienen *«un resto perfluoroalquilo con **tres o más carbonos** […] o un resto de perfluoroalquiléter con **dos o más carbonos**»*."
+    },
+    {
+      "id": "t32-q250",
+      "pregunta": "Un único PFAS de la lista aparece por debajo de su límite de cuantificación. ¿Qué evita concluir sobre el grupo completo?",
+      "opciones": [
+        "Que todos los demás PFAS regulados estén ausentes o bajo sus límites.",
+        "Que el nombre del compuesto tenga significado químico.",
+        "Que se pueda medir un volumen de agua."
+      ],
+      "correcta": 0,
+      "explicacion": "La medida de un compuesto no representa automáticamente a los demás del sumatorio.",
+      "fuente": "RD 3/2023, anexo I, parte B, PFAS y nota 15 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "- **∑20 PFAS: 0,10 µg/L**, con incertidumbre del **50 %**. La norma define el grupo: sustancias que contienen *«un resto perfluoroalquilo con **tres o más carbonos** […] o un resto de perfluoroalquiléter con **dos o más carbonos**»*."
+    },
+    {
+      "id": "t32-q251",
+      "pregunta": "¿Qué preparación identifica el título de ISO 21675:2019 para PFAS antes de LC-MS/MS?",
+      "opciones": [
+        "Una pesada directa de sales secas como método único.",
+        "Polarimetría de una solución de sacarosa.",
+        "Extracción en fase sólida."
+      ],
+      "correcta": 2,
+      "explicacion": "La norma combina extracción en fase sólida y cromatografía líquida con masas en tándem.",
+      "fuente": "ISO 21675:2019, título y alcance públicos, PFAS mediante SPE y LC-MS/MS · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Norma: **ISO 21675:2019**, *«Determinación de sustancias perfluoroalquiladas y polifluoroalquiladas (PFAS) en agua. Método usando **extracción en fase sólida y cromatografía líquida-espectrometría de masas en tándem (LC-MS/MS)**»*. Y para PFOS y PFOA en concreto, **ISO 25101:2009**."
+    },
+    {
+      "id": "t32-q252",
+      "pregunta": "Una muestra ambiental contiene PFAS a niveles muy bajos. ¿Qué finalidad puede tener la etapa de SPE del método?",
+      "opciones": [
+        "Convertir todo el carbono del agua en el analito.",
+        "Concentrar y acondicionar los analitos para la determinación.",
+        "Crear químicamente más PFAS en la muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La extracción permite transferir los compuestos a condiciones adecuadas de análisis, con recuperación evaluada.",
+      "fuente": "ISO 21675:2019, título y alcance públicos, PFAS mediante SPE y LC-MS/MS · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "Norma: **ISO 21675:2019**, *«Determinación de sustancias perfluoroalquiladas y polifluoroalquiladas (PFAS) en agua. Método usando **extracción en fase sólida y cromatografía líquida-espectrometría de masas en tándem (LC-MS/MS)**»*. Y para PFOS y PFOA en concreto, **ISO 25101:2009**."
+    },
+    {
+      "id": "t32-q253",
+      "pregunta": "Se obtiene bisfenol A a 2.000 ng/L. ¿Qué valor equivalente debe compararse con 2,5 µg/L?",
+      "opciones": [
+        "2,0 µg/L.",
+        "20 µg/L.",
+        "0,002 µg/L."
+      ],
+      "correcta": 0,
+      "explicacion": "La conversión divide los ng/L entre mil.",
+      "fuente": "RD 3/2023, anexo I, parte B, tabla 2 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**e) Bisfenol A: 2,5 µg/L**, con incertidumbre del **50 %**. Es uno de los **parámetros nuevos** del RD 3/2023, con el mismo calendario que los 4 PFAS: **controlar antes del 2/1/2024, cumplir antes del 2/1/2025**."
+    },
+    {
+      "id": "t32-q254",
+      "pregunta": "La lista de observación expresa sus valores en ng/L y el informe en µg/L. ¿Qué debe hacerse antes de compararlos?",
+      "opciones": [
+        "Multiplicar siempre el valor legal por un millón sin revisar unidades.",
+        "Convertir las unidades coherentemente.",
+        "Comparar solo los números tal como están escritos."
+      ],
+      "correcta": 1,
+      "explicacion": "La comparación requiere que resultado y referencia representen la misma unidad de concentración.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q255",
+      "pregunta": "Para diclofenaco se informa 0,080 µg/L. ¿A cuántos ng/L equivale?",
+      "opciones": [
+        "0,08 ng/L.",
+        "800 ng/L.",
+        "80 ng/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica por mil para pasar de µg/L a ng/L.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q256",
+      "pregunta": "Un método para 17β-estradiol tiene LC de 2 ng/L. ¿Qué problema presenta respecto a la tabla 16?",
+      "opciones": [
+        "No alcanza el LC exigido, que debe ser inferior a 1 ng/L.",
+        "El LC es correcto si se cambia a 2 µg/L sin conversión.",
+        "Cumple porque 2 es mayor que 1."
+      ],
+      "correcta": 0,
+      "explicacion": "La capacidad de cuantificar debe satisfacer el requisito analítico de esa lista.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q257",
+      "pregunta": "Para nonilfenol, un método tiene LC exactamente de 300 ng/L. ¿Cumple la exigencia «<300 ng/L» de la tabla 16?",
+      "opciones": [
+        "Sí, porque el signo menor incluye siempre la igualdad.",
+        "Solo si se cambia ng por mg en el informe.",
+        "No, exige un valor estrictamente inferior."
+      ],
+      "correcta": 2,
+      "explicacion": "Debe respetarse la desigualdad indicada para el límite de cuantificación.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q258",
+      "pregunta": "Una zona de abastecimiento de tipo 5 controla la lista de observación una vez al año. ¿Qué frecuencia mínima indica el anexo IV en el punto previsto?",
+      "opciones": [
+        "Únicamente cuando cambie el proveedor de reactivos.",
+        "Una vez al cuatrimestre.",
+        "Una vez cada cinco años."
+      ],
+      "correcta": 1,
+      "explicacion": "Para los tipos 4, 5 y 6 la frecuencia es al menos cuatrimestral.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q259",
+      "pregunta": "Una zona de tipo 3 programa el control de la lista de observación en el punto previsto. ¿Cuál es el mínimo del anexo IV?",
+      "opciones": [
+        "Una vez al año.",
+        "Cada cuatro horas.",
+        "Una vez por década."
+      ],
+      "correcta": 0,
+      "explicacion": "Para los tipos 2 y 3 se establece frecuencia mínima anual.",
+      "fuente": "RD 3/2023, anexo IV, parte C, tabla 16 · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**f) La LISTA DE OBSERVACIÓN nacional (anexo IV, tabla 16).** Es, en la práctica, **una lista de LC-MS/MS**: cuatro contaminantes a nivel de **nanogramos por litro**."
+    },
+    {
+      "id": "t32-q260",
+      "pregunta": "Para un analito con valor paramétrico de 0,10 µg/L, ¿qué LC máximo corresponde al criterio general del 30 %?",
+      "opciones": [
+        "3,0 µg/L.",
+        "0,030 µg/L.",
+        "0,30 µg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Se calcula 0,30×0,10. Deben comprobarse también las exigencias particulares aplicables.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q261",
+      "pregunta": "Un método tiene LC de 0,04 µg/L para un analito cuyo valor paramétrico es 0,10 µg/L. ¿Cumple el criterio general de LC ≤30 %?",
+      "opciones": [
+        "Sí, porque 0,04 es menor que 0,10.",
+        "Sí, porque todo LC inferior al límite legal cumple el 30 %.",
+        "No, su LC representa el 40 % del valor."
+      ],
+      "correcta": 2,
+      "explicacion": "Estar bajo el valor paramétrico es distinto de alcanzar el requisito porcentual de desempeño.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q262",
+      "pregunta": "¿Puede añadirse la incertidumbre de la tabla 15 al valor paramétrico como tolerancia adicional general?",
+      "opciones": [
+        "No, el anexo III lo excluye expresamente.",
+        "Solo si el resultado procede de HPLC.",
+        "Sí, siempre se aumenta el valor legal en ese porcentaje."
+      ],
+      "correcta": 0,
+      "explicacion": "La incertidumbre es un criterio de desempeño del método y no incrementa el valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q263",
+      "pregunta": "Un laboratorio cumple la incertidumbre, pero su LC no alcanza lo exigido. ¿Qué evaluación corresponde?",
+      "opciones": [
+        "El método cumple automáticamente todos los criterios.",
+        "Puede ocultarse el LC por tener un detector moderno.",
+        "El cumplimiento de incertidumbre no resuelve la insuficiencia del LC."
+      ],
+      "correcta": 2,
+      "explicacion": "Los distintos requisitos de rendimiento deben comprobarse individualmente.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q264",
+      "pregunta": "En la tabla 15, ¿qué factor de cobertura se indica para el criterio de incertidumbre?",
+      "opciones": [
+        "k = 0.",
+        "k = 2.",
+        "k = 20."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo III especifica el criterio con factor de cobertura dos.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q265",
+      "pregunta": "Para benzo(a)pireno no se alcanza el objetivo ordinario de incertidumbre. ¿Qué salvedad recoge la nota 1 de la tabla 15?",
+      "opciones": [
+        "Seleccionar la mejor técnica disponible, hasta el 60 %.",
+        "Admitir cualquier incertidumbre sin límite.",
+        "Sustituir el valor paramétrico por el del sumatorio de HPA."
+      ],
+      "correcta": 0,
+      "explicacion": "La nota 1 establece esa salvedad específica al rendimiento del método.",
+      "fuente": "RD 3/2023, anexo III, parte D, límite de cuantificación · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q266",
+      "pregunta": "Para una norma de calidad ambiental de 0,20 µg/L, ¿qué LC máximo resulta del criterio del 30 % del RD 817/2015?",
+      "opciones": [
+        "6,0 µg/L.",
+        "0,060 µg/L.",
+        "0,60 µg/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La fracción del 30 % se aplica a la NCA correspondiente.",
+      "fuente": "RD 817/2015, anexo III, apartado C.1, criterios mínimos de métodos analíticos · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q267",
+      "pregunta": "Un método de aguas superficiales tiene incertidumbre del 45 % con k = 2 al nivel de la NCA. ¿Cómo queda respecto al máximo general del 50 %?",
+      "opciones": [
+        "Fuera porque toda incertidumbre debe ser menor del 5 %.",
+        "Es imposible compararlo con un porcentaje.",
+        "Dentro de ese criterio, debiendo revisar los demás requisitos."
+      ],
+      "correcta": 2,
+      "explicacion": "El valor del 45 % no supera el criterio del 50 % indicado.",
+      "fuente": "RD 817/2015, anexo III, apartado C.1, criterios mínimos de métodos analíticos · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q268",
+      "pregunta": "¿A qué referencia de calidad vincula el RD 817/2015 la validación de métodos para los análisis químicos del agua?",
+      "opciones": [
+        "A EN ISO/IEC 17025 o normas equivalentes internacionalmente aceptadas.",
+        "Solo a una valoración visual de la columna.",
+        "Exclusivamente al catálogo comercial del inyector."
+      ],
+      "correcta": 0,
+      "explicacion": "La norma fija requisitos de calidad y validación además del rendimiento analítico.",
+      "fuente": "RD 817/2015, anexo III, apartado C.1, criterios mínimos de métodos analíticos · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q269",
+      "pregunta": "Un método de LC satisface los requisitos para un parámetro del agua de consumo. ¿Qué fundamenta su idoneidad reglamentaria para ese uso?",
+      "opciones": [
+        "El simple nombre comercial del detector.",
+        "Que todo método que lleve HPLC en el título es automáticamente válido.",
+        "Su desempeño demostrado frente a los requisitos aplicables."
+      ],
+      "correcta": 2,
+      "explicacion": "La elección debe justificarse por el alcance y las características de rendimiento exigidas.",
+      "fuente": "RD 3/2023, anexo III, parte D, rendimiento de métodos físico-químicos · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**g) Lo que el RD exige al método.** **No impone técnica**: **LC ≤ 30 %** del valor paramétrico, **LC y LD siempre inferiores al valor paramétrico**, e **incertidumbre de la tabla 15**. En **aguas superficiales** (RD 817/2015, anexo III, C.1): métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** y **LC ≤ 30 %** de la norma de calidad ambiental."
+    },
+    {
+      "id": "t32-q270",
+      "pregunta": "Un agua debe analizarse para compuestos muy volátiles y para otros poco volátiles y termolábiles. ¿Qué planificación es coherente con las técnicas del temario?",
+      "opciones": [
+        "Determinar ambos grupos solo mediante turbidez.",
+        "Elegir métodos de gases y de líquidos adecuados a cada grupo.",
+        "Forzar todos los analitos a pasar por un único método sin validar."
+      ],
+      "correcta": 1,
+      "explicacion": "La elección depende de las propiedades de los analitos y del alcance de los métodos disponibles.",
+      "fuente": "CEM QU-004 §4.2 y Shimadzu, Understanding HPLC, ámbito de aplicación · apunte §1",
+      "apartado": "1",
+      "evidencia": "La cromatografía de líquidos es **la técnica de los compuestos orgánicos que la cromatografía de gases no puede tocar**: los **no volátiles**, los **termolábiles** y los de **masa molecular alta**. Ésa es la frontera entre el tema 31 y éste, y de ella salen casi todas las respuestas."
+    },
+    {
+      "id": "t32-q271",
+      "pregunta": "Se propone HPLC orgánico para sustituir una medida global de DQO de un agua residual. ¿Qué debe comprobarse antes de equiparar los resultados?",
+      "opciones": [
+        "Que se estarían evaluando magnitudes y alcances diferentes.",
+        "Que toda suma de picos equivale directamente a DQO.",
+        "Que ambos resultados tienen que ser iguales por proceder de agua."
+      ],
+      "correcta": 0,
+      "explicacion": "Una determinación de compuestos concretos no equivale automáticamente a una magnitud global de la muestra.",
+      "fuente": "CEM QU-004 §4.2 y Shimadzu, Understanding HPLC, ámbito de aplicación · apunte §1",
+      "apartado": "1",
+      "evidencia": "La cromatografía de líquidos es **la técnica de los compuestos orgánicos que la cromatografía de gases no puede tocar**: los **no volátiles**, los **termolábiles** y los de **masa molecular alta**. Ésa es la frontera entre el tema 31 y éste, y de ella salen casi todas las respuestas."
+    },
+    {
+      "id": "t32-q272",
+      "pregunta": "Un estudio necesita distinguir As(III) de As(V), además de cuantificar arsénico. ¿Qué aporta la separación previa por HPLC en un método acoplado?",
+      "opciones": [
+        "Convertir cualquier masa total en una proporción de especies conocida.",
+        "Distinguir las especies químicas antes de la detección elemental.",
+        "Aumentar el número de protones de cada átomo."
+      ],
+      "correcta": 1,
+      "explicacion": "La especiación requiere diferenciar las formas químicas y conservarlas durante la preparación y análisis.",
+      "fuente": "ISO/TS 19620:2018, agua, determinación de especies de arsénico por HPLC y detección elemental · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **Especiación**: As(III)/As(V), Cr(VI)/Cr(III) | **HPLC acoplada** (a ICP-MS en el caso del cromo) | **ISO/TS 19620:2018**; **ISO 24384:2024** | µg/L | La cromatografía separa **las especies**; el ICP-MS cuantifica el elemento |"
+    },
+    {
+      "id": "t32-q273",
+      "pregunta": "Un tratamiento transforma parte de una especie de arsénico en otra sin cambiar el arsénico total. ¿Por qué podría detectarse el cambio mediante especiación?",
+      "opciones": [
+        "Porque toda transformación duplica la cantidad total de arsénico.",
+        "Porque basta la conductividad total para identificar cada especie.",
+        "Porque cambia el reparto de señales entre especies aunque el total se conserve."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración total y la distribución entre formas son informaciones analíticas distintas.",
+      "fuente": "ISO/TS 19620:2018, agua, determinación de especies de arsénico por HPLC y detección elemental · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **Especiación**: As(III)/As(V), Cr(VI)/Cr(III) | **HPLC acoplada** (a ICP-MS en el caso del cromo) | **ISO/TS 19620:2018**; **ISO 24384:2024** | µg/L | La cromatografía separa **las especies**; el ICP-MS cuantifica el elemento |"
+    },
+    {
+      "id": "t32-q274",
+      "pregunta": "Dos picos del mismo analito tienen igual área, pero uno es más ancho y bajo. ¿Qué indica sobre usar altura como respuesta?",
+      "opciones": [
+        "Que la altura puede variar al cambiar la anchura, aunque el área se conserve.",
+        "Que ambas alturas deben ser idénticas por tener igual área.",
+        "Que la concentración se ha dividido necesariamente por dos."
+      ],
+      "correcta": 0,
+      "explicacion": "La altura es sensible a factores que ensanchan las bandas. La respuesta usada debe corresponder a la calibración.",
+      "fuente": "CEM QU-004 §4.4, comparación de área y altura de pico · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q275",
+      "pregunta": "Se cambia la velocidad de flujo y varía la altura del pico. ¿Por qué QU-004 advierte cautela con esa respuesta?",
+      "opciones": [
+        "Porque el área siempre deja de existir con cualquier cambio.",
+        "Porque la altura es una medida directa de masa atómica.",
+        "Porque la altura es sensible a parámetros de operación como el flujo."
+      ],
+      "correcta": 2,
+      "explicacion": "El procedimiento compara las sensibilidades de altura y área frente a cambios instrumentales.",
+      "fuente": "CEM QU-004 §4.4, comparación de área y altura de pico · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q276",
+      "pregunta": "Dos calibraciones tienen igual pendiente y distinta ordenada en el origen. ¿Qué diferencia de la relación lineal representan esas ordenadas?",
+      "opciones": [
+        "Un cambio de unidades del tiempo de retención sin más.",
+        "Una diferencia de señal de fondo o desplazamiento de la relación que debe investigarse.",
+        "Una diferencia obligatoria de masa molecular del analito."
+      ],
+      "correcta": 1,
+      "explicacion": "La ordenada expresa la señal prevista a concentración cero dentro del modelo utilizado.",
+      "fuente": "CEM QU-004 §§5.3 y 5.4, respuesta y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q277",
+      "pregunta": "Tras mantenimiento del detector, cambia la pendiente de respuesta de los patrones. ¿Qué debe comprobarse para seguir cuantificando?",
+      "opciones": [
+        "La nueva calibración y aptitud del sistema bajo las condiciones de trabajo.",
+        "Solo que la columna siga llevando la misma etiqueta.",
+        "Que el valor antiguo sirve siempre por conservarse el nombre del equipo."
+      ],
+      "correcta": 0,
+      "explicacion": "El mantenimiento puede cambiar la respuesta. Debe restablecerse su relación con la concentración.",
+      "fuente": "CEM QU-004 §§5.3 y 5.4, respuesta y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q278",
+      "pregunta": "Un resultado se expresa con más decimales que los respaldados por su incertidumbre. ¿Qué decisión de presentación debe valorarse?",
+      "opciones": [
+        "Sustituir la concentración por el área bruta sin explicar unidades.",
+        "Ajustar las cifras informadas al desempeño y criterio de expresión del método.",
+        "Conservar siempre todos los dígitos electrónicos como exactos."
+      ],
+      "correcta": 1,
+      "explicacion": "El número de dígitos del software no determina por sí solo la calidad metrológica del resultado.",
+      "fuente": "CEM QU-004 §§5.3 y 5.4, respuesta y condiciones de calibración · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q279",
+      "pregunta": "La incertidumbre típica combinada de una concentración es 0,02 µg/L. Con k = 2, ¿qué incertidumbre expandida resulta?",
+      "opciones": [
+        "0,01 µg/L.",
+        "0,40 µg/L.",
+        "0,04 µg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "La incertidumbre expandida se obtiene multiplicando la típica por el factor de cobertura.",
+      "fuente": "CEM QU-004 §6.1, incertidumbre típica y expandida · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q280",
+      "pregunta": "La incertidumbre de una medida procede tanto de los patrones como de la repetibilidad de respuesta. ¿Qué tratamiento requiere su estimación?",
+      "opciones": [
+        "Considerar ambas contribuciones dentro del modelo aplicable.",
+        "Declarar incertidumbre cero porque se usó un MRC.",
+        "Usar solo la menor contribución e ignorar la otra."
+      ],
+      "correcta": 0,
+      "explicacion": "Los patrones aportan trazabilidad y también incertidumbre. Deben evaluarse las contribuciones pertinentes.",
+      "fuente": "CEM QU-004 §6.1, incertidumbre típica y expandida · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "El CEM calibra el cromatógrafo de líquidos **por interpolación entre dos puntos**, y su marcha es material directamente examinable:"
+    },
+    {
+      "id": "t32-q281",
+      "pregunta": "Un pico extra aparece tras una muestra muy concentrada y disminuye en blancos sucesivos. ¿Qué hipótesis apoya esa secuencia?",
+      "opciones": [
+        "Creación de una cantidad fija de analito en cada blanco por definición.",
+        "Identidad demostrada de un compuesto nuevo del agua.",
+        "Arrastre de la muestra anterior."
+      ],
+      "correcta": 2,
+      "explicacion": "La evolución en blancos ayuda a investigar el arrastre en el sistema de inyección.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, picos extra y blancos · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**c) Inyector de bucle.** A esa presión **no se puede pinchar un septo** con jeringa, como en gases. Se usa una **válvula de bucle** con dos posiciones:"
+    },
+    {
+      "id": "t32-q282",
+      "pregunta": "Un pico extra conserva casi igual área tras varios blancos. ¿Qué causa contempla la guía de Shimadzu entre las posibles?",
+      "opciones": [
+        "La necesidad de sumar ese pico a todos los HAP sin identificarlo.",
+        "Contaminación persistente de aguja o bucle.",
+        "La certeza de que todos los blancos tienen igual concentración real de analito de campo."
+      ],
+      "correcta": 1,
+      "explicacion": "Una señal persistente requiere investigar contaminación del sistema y otras fuentes.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, picos extra y blancos · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**c) Inyector de bucle.** A esa presión **no se puede pinchar un septo** con jeringa, como en gases. Se usa una **válvula de bucle** con dos posiciones:"
+    },
+    {
+      "id": "t32-q283",
+      "pregunta": "Un componente de una muestra anterior eluye en la siguiente carrera. ¿Qué aspecto del programa debe revisarse?",
+      "opciones": [
+        "Que el método permita eluir los componentes retenidos antes de cerrar la carrera.",
+        "Solo el orden alfabético de los analitos.",
+        "El número de decimales de la presión."
+      ],
+      "correcta": 0,
+      "explicacion": "Los solutos tardíos pueden aparecer como picos ajenos en carreras posteriores si no se controla su salida.",
+      "fuente": "Shimadzu, Diagnosing HPLC Chromatography Problems, picos extra y blancos · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**c) Inyector de bucle.** A esa presión **no se puede pinchar un septo** con jeringa, como en gases. Se usa una **válvula de bucle** con dos posiciones:"
+    },
+    {
+      "id": "t32-q284",
+      "pregunta": "Se añade un patrón interno apropiado a una determinación LC-MS. ¿Qué finalidad puede tener si su comportamiento se ha validado?",
+      "opciones": [
+        "Reemplazar la necesidad de conocer la concentración del patrón.",
+        "Ayudar a compensar variaciones de preparación o respuesta que afecten de manera comparable.",
+        "Eliminar por definición toda interferencia imaginable."
+      ],
+      "correcta": 1,
+      "explicacion": "El patrón interno necesita una selección y validación adecuadas. Su capacidad de compensación depende del método.",
+      "fuente": "Waters, The Use of Stable-Isotope-Labeled Internal Standards to Compensate for Matrix Effects, 2007 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q285",
+      "pregunta": "Un patrón interno no acompaña al analito durante una etapa de extracción porque se añadió después. ¿Qué limitación presenta?",
+      "opciones": [
+        "Corrige siempre todas las pérdidas previas sin información.",
+        "Hace innecesaria la evaluación de recuperación.",
+        "No controla directamente las pérdidas ocurridas antes de su adición."
+      ],
+      "correcta": 2,
+      "explicacion": "El momento de adición determina qué partes del proceso puede acompañar y evaluar.",
+      "fuente": "Waters, The Use of Stable-Isotope-Labeled Internal Standards to Compensate for Matrix Effects, 2007 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| **Espectrómetro de masas** | La relación **m/z** de los iones | **0,1 - 1 ng**, hasta **1-10 pg** | El único que **identifica**. Barrido de iones totales → **universal**; iones seleccionados → **selectivo** |"
+    },
+    {
+      "id": "t32-q286",
+      "pregunta": "Se extrae cuantitativamente un analito de 1 L de agua y se lleva a 1 mL final. ¿Qué factor de concentración volumétrico se obtiene, sin otras diluciones?",
+      "opciones": [
+        "1.000.",
+        "0,001.",
+        "100."
+      ],
+      "correcta": 0,
+      "explicacion": "El volumen inicial es 1.000 mL y el final 1 mL. La razón es mil.",
+      "fuente": "CEM QU-004 §2 y fundamento del balance de masa en la preparación para HPLC · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**UNE-EN ISO 17993:2004**, *«Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por FLUORESCENCIA** tras **extracción líquido-líquido**»*. Es la norma detrás de la respuesta documentada dos veces."
+    },
+    {
+      "id": "t32-q287",
+      "pregunta": "Un extracto final de 2 mL contiene en total 0,10 µg del analito recuperado de 0,50 L de agua. Con recuperación cuantitativa, ¿qué concentración tenía el agua?",
+      "opciones": [
+        "0,05 µg/L.",
+        "50 µg/L.",
+        "0,20 µg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración original es la masa total recuperada dividida por el volumen de agua, 0,10/0,50.",
+      "fuente": "CEM QU-004 §2 y fundamento del balance de masa en la preparación para HPLC · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**UNE-EN ISO 17993:2004**, *«Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por FLUORESCENCIA** tras **extracción líquido-líquido**»*. Es la norma detrás de la respuesta documentada dos veces."
+    },
+    {
+      "id": "t32-q288",
+      "pregunta": "En un ejercicio, el procedimiento exige corregir una masa recuperada de 0,08 µg por una recuperación de 80 %. ¿Qué masa original corresponde?",
+      "opciones": [
+        "0,008 µg.",
+        "0,10 µg.",
+        "0,064 µg."
+      ],
+      "correcta": 1,
+      "explicacion": "La masa original es 0,08/0,80. La corrección debe aplicarse conforme al procedimiento que la establece.",
+      "fuente": "CEM QU-004 §2 y fundamento del balance de masa en la preparación para HPLC · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**UNE-EN ISO 17993:2004**, *«Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por FLUORESCENCIA** tras **extracción líquido-líquido**»*. Es la norma detrás de la respuesta documentada dos veces."
+    },
+    {
+      "id": "t32-q289",
+      "pregunta": "Un ensayo de recuperación añade una cantidad conocida antes de extraer una muestra. ¿Qué información busca principalmente?",
+      "opciones": [
+        "Evaluar cuánto del analito añadido recupera el proceso en esas condiciones.",
+        "Medir solo la temperatura de la columna.",
+        "Demostrar que todo analito del agua es del mismo origen."
+      ],
+      "correcta": 0,
+      "explicacion": "La recuperación ayuda a evaluar el comportamiento de la preparación y determinación en la matriz.",
+      "fuente": "CEM QU-004 §2 y fundamento del balance de masa en la preparación para HPLC · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**UNE-EN ISO 17993:2004**, *«Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por FLUORESCENCIA** tras **extracción líquido-líquido**»*. Es la norma detrás de la respuesta documentada dos veces."
+    },
+    {
+      "id": "t32-q290",
+      "pregunta": "Se evita concentrar un extracto hasta sequedad porque el método fija un volumen final controlado. ¿Qué magnitud debe registrarse para recuperar la concentración original?",
+      "opciones": [
+        "La resolución del monitor en píxeles.",
+        "El volumen final real y los factores de preparación aplicados.",
+        "Solo el color del residuo."
+      ],
+      "correcta": 1,
+      "explicacion": "La transformación entre concentración del extracto y del agua depende del balance de masa y volúmenes.",
+      "fuente": "CEM QU-004 §2 y fundamento del balance de masa en la preparación para HPLC · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**UNE-EN ISO 17993:2004**, *«Determinación de **15 hidrocarburos aromáticos policíclicos (PAH)** en agua mediante **HPLC con detección por FLUORESCENCIA** tras **extracción líquido-líquido**»*. Es la norma detrás de la respuesta documentada dos veces."
+    },
+    {
+      "id": "t32-q291",
+      "pregunta": "Al consultar ISO 21676:2018 para fármacos seleccionados, ¿qué modo de introducción identifica su título?",
+      "opciones": [
+        "Extracción líquido-líquido obligatoria de todos los analitos como única vía.",
+        "Una medida polarimétrica del agua original.",
+        "Inyección directa tras la preparación definida por el método."
+      ],
+      "correcta": 2,
+      "explicacion": "El título identifica HPLC-MS/MS o HRMS tras inyección directa. Debe seguirse su alcance y preparación concretos.",
+      "fuente": "ISO 21676:2018, título y alcance públicos, fracción disuelta e inyección directa · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**Un antibiótico y un antiinflamatorio a 100 ng/L** solo se llegan a medir por **LC-MS/MS**: es la norma **ISO 21676:2018** (principios activos farmacéuticos) y, para el estradiol, la **ISO 13646:2025** (estrógenos por SPE y LC-MS/MS)."
+    },
+    {
+      "id": "t32-q292",
+      "pregunta": "Un método se aplica a la fracción disuelta de fármacos en agua. ¿Qué precaución exige interpretar su resultado frente a un contenido total con partículas?",
+      "opciones": [
+        "Identificar claramente qué fracción se determinó.",
+        "Sumar automáticamente un valor fijo por la turbidez.",
+        "Dar ambos contenidos por idénticos en toda agua."
+      ],
+      "correcta": 0,
+      "explicacion": "La fracción analizada forma parte del mensurando y puede diferir del contenido total.",
+      "fuente": "ISO 21676:2018, título y alcance públicos, fracción disuelta e inyección directa · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "**Un antibiótico y un antiinflamatorio a 100 ng/L** solo se llegan a medir por **LC-MS/MS**: es la norma **ISO 21676:2018** (principios activos farmacéuticos) y, para el estradiol, la **ISO 13646:2025** (estrógenos por SPE y LC-MS/MS)."
+    },
+    {
+      "id": "t32-q293",
+      "pregunta": "Antes de mezclar dos disolventes como fase móvil, ¿qué propiedad física básica debe comprobarse?",
+      "opciones": [
+        "Que tengan obligatoriamente la misma masa molecular.",
+        "Que ambos emitan fluorescencia intensa.",
+        "Que formen una mezcla homogénea adecuada al método."
+      ],
+      "correcta": 2,
+      "explicacion": "Una fase móvil debe tener composición reproducible y compatible con el sistema de separación.",
+      "fuente": "Waters, HPLC Separation Modes, miscibilidad y selección del eluyente · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Fase móvil** | **NO polar** o de baja polaridad | **POLAR** |"
+    },
+    {
+      "id": "t32-q294",
+      "pregunta": "Un sistema binario suministra 0,3 mL/min de A y 0,7 mL/min de B. ¿Qué composición volumétrica nominal de B resulta?",
+      "opciones": [
+        "7 %.",
+        "70 %.",
+        "30 %."
+      ],
+      "correcta": 1,
+      "explicacion": "El caudal total es 1 mL/min. La fracción de B es 0,7/1.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, suministro de eluyentes · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "### 2.3. Bomba, disolventes e inyección"
+    },
+    {
+      "id": "t32-q295",
+      "pregunta": "El método requiere 1 mL/min y 60 % de B en una mezcla binaria ideal. ¿Qué caudal corresponde a A?",
+      "opciones": [
+        "0,4 mL/min.",
+        "0,6 mL/min.",
+        "1,6 mL/min."
+      ],
+      "correcta": 0,
+      "explicacion": "A representa el 40 % del caudal total.",
+      "fuente": "Shimadzu, Apparatus constituting HPLC, suministro de eluyentes · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "### 2.3. Bomba, disolventes e inyección"
+    },
+    {
+      "id": "t32-q296",
+      "pregunta": "Un gradiente lineal pasa de 20 a 80 % de B en 10 min. ¿Qué incremento nominal aplica por minuto?",
+      "opciones": [
+        "60 puntos porcentuales de B.",
+        "6 puntos porcentuales de B.",
+        "8 puntos porcentuales de B."
+      ],
+      "correcta": 1,
+      "explicacion": "El cambio total es 60 puntos y se reparte en diez minutos.",
+      "fuente": "Shimadzu, HPLC Basics, programación de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**La solución es cambiar la composición de la fase móvil a medida que avanza la separación: la ELUCIÓN EN GRADIENTE.**"
+    },
+    {
+      "id": "t32-q297",
+      "pregunta": "En una rampa lineal de 20 a 80 % de B durante 10 min, ¿qué composición nominal corresponde al minuto 5 de la rampa?",
+      "opciones": [
+        "40 % de B.",
+        "100 % de B.",
+        "50 % de B."
+      ],
+      "correcta": 2,
+      "explicacion": "A mitad de una rampa lineal se alcanza el valor medio de las composiciones inicial y final.",
+      "fuente": "Shimadzu, HPLC Basics, programación de gradiente · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**La solución es cambiar la composición de la fase móvil a medida que avanza la separación: la ELUCIÓN EN GRADIENTE.**"
+    },
+    {
+      "id": "t32-q298",
+      "pregunta": "Los patrones cumplen tiempo de retención y forma de pico, pero dos analitos incumplen la resolución requerida. ¿Qué evaluación corresponde?",
+      "opciones": [
+        "La aptitud cromatográfica aún necesita resolver esa separación insuficiente.",
+        "Basta con borrar uno de los nombres de analito.",
+        "El cumplimiento de dos condiciones anula el requisito de resolución."
+      ],
+      "correcta": 0,
+      "explicacion": "Los criterios de aptitud son complementarios y deben cumplirse en conjunto según el procedimiento.",
+      "fuente": "CEM QU-004 §5.3.6, comprobaciones conjuntas de aptitud · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "**El proceso (5.3):** seleccionar los **parámetros instrumentales** —temperatura del inyector y de la columna, **longitud de onda del detector**, caudal bombeado, volumen de inyección—; fijar el **procesamiento de la señal** (área o altura, integración, umbral); **acondicionar con un blanco** y comprobar que **no da señal**; analizar las dos disoluciones patrón; y **comprobar el cromatograma**:"
+    },
+    {
+      "id": "t32-q299",
+      "pregunta": "Se reprocesa una serie por una ventana de integración errónea. ¿Qué debe conservarse para revisar la corrección?",
+      "opciones": [
+        "Solo la concentración final sin historial.",
+        "Un gráfico recortado sin condiciones ni identificación.",
+        "Los datos originales, los criterios aplicados y el tratamiento corregido trazable."
+      ],
+      "correcta": 2,
+      "explicacion": "La trazabilidad exige reconstruir cómo se obtuvo y corrigió el resultado.",
+      "fuente": "CEM QU-004 §§5.3.6 y 5.4.1, integración y conservación de datos · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "4. **La ventana de integración es la adecuada.**"
+    },
+    {
+      "id": "t32-q300",
+      "pregunta": "Se selecciona un método nuevo de HPLC para un agua. ¿Qué combinación fundamenta su elección y aceptación?",
+      "opciones": [
+        "Únicamente que aparezca un pico de cualquier tamaño.",
+        "Compatibilidad con analito y matriz, separación y detección adecuadas, y desempeño verificado.",
+        "Solo disponer de un equipo reciente."
+      ],
+      "correcta": 1,
+      "explicacion": "La técnica debe servir al mensurando y demostrar los requisitos necesarios para el uso previsto.",
+      "fuente": "CEM QU-004 §4.2 y RD 3/2023, anexo III, parte D · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Y el CEM añade la regla de elección: *«se elige cada tipo a utilizar en función de las **características químicas del analito** a determinar»*."
     }
   ],
   "supuestos": [

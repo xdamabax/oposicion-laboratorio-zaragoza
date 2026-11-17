@@ -1316,6 +1316,356 @@
       "fuente": "Real Decreto 664/1997, art. 3 · apunte §7",
       "apartado": "7",
       "evidencia": "2. **Grupo 4 = muchas probabilidades de propagación y sin profilaxis ni tratamiento.** **Grupo 2 = propagación poco probable**, con tratamiento. **Grupo 1 = poco probable que cause enfermedad.**"
+    },
+    {
+      "id": "t09-q71",
+      "pregunta": "La evaluación identifica el agente y la intensidad de la exposición, pero omite el tiempo que dura la tarea. ¿Qué dimensión obligatoria falta?",
+      "opciones": [
+        "La duración de la exposición.",
+        "El grado de exposición.",
+        "La naturaleza de la exposición."
+      ],
+      "correcta": 0,
+      "explicacion": "Se valoran la naturaleza, el grado y la duración. Identificar el agente y estimar la intensidad no sustituye la duración.",
+      "fuente": "RD 664/1997, art. 4.1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- se evalúan los riesgos que no se hayan podido evitar, con la **naturaleza, el grado y la duración** de la exposición;"
+    },
+    {
+      "id": "t09-q72",
+      "pregunta": "Un agente puede causar efectos tóxicos aunque no se espere una infección. ¿Qué lugar ocupan esos efectos en la evaluación?",
+      "opciones": [
+        "Solo se incluyen en el grupo 4.",
+        "Solo se incluyen si hay transmisión aérea.",
+        "Se incluyen en la evaluación del riesgo biológico."
+      ],
+      "correcta": 2,
+      "explicacion": "La evaluación tiene en cuenta los efectos potenciales alérgicos y tóxicos derivados de la exposición laboral.",
+      "fuente": "RD 664/1997, art. 4.3.d · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- se tienen en cuenta el **grupo** del agente, las recomendaciones sanitarias, los **efectos alérgicos y tóxicos** y a los **trabajadores especialmente sensibles**;"
+    },
+    {
+      "id": "t09-q73",
+      "pregunta": "Una tarea no puede eliminarse y existe una medida colectiva capaz de controlar la exposición. ¿Qué prioridad fija el artículo 6.1.d?",
+      "opciones": [
+        "Sustituir la protección colectiva por EPI aunque aquella sea eficaz.",
+        "Dar prioridad a la protección colectiva.",
+        "Elegir por defecto la protección individual porque hay una sola persona expuesta."
+      ],
+      "correcta": 1,
+      "explicacion": "La protección individual se usa en defecto de la colectiva cuando la exposición no puede evitarse por otros medios.",
+      "fuente": "RD 664/1997, art. 6.1.d · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **d)** **protección colectiva** o, en su defecto, **individual**;"
+    },
+    {
+      "id": "t09-q74",
+      "pregunta": "El protocolo de seguridad solo cubre la manipulación en cabina. ¿Qué otras fases del manejo interno enumera expresamente el artículo 6.1.c?",
+      "opciones": [
+        "Secado y esterilización.",
+        "Incubación y lectura.",
+        "Recepción y transporte."
+      ],
+      "correcta": 2,
+      "explicacion": "El precepto exige medidas seguras para la recepción, manipulación y transporte dentro del lugar de trabajo.",
+      "fuente": "RD 664/1997, art. 6.1.c · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **c)** medidas seguras de **recepción, manipulación y transporte** de los agentes;"
+    },
+    {
+      "id": "t09-q75",
+      "pregunta": "Hay dos recipientes resistentes para recoger residuos biológicos. Uno carece de identificación. ¿Cuál cumple los dos requisitos del artículo 6.1.e?",
+      "opciones": [
+        "El recipiente seguro e identificable.",
+        "Cualquiera de los dos, si ambos son resistentes.",
+        "El recipiente sin identificar, siempre que el puesto esté señalizado."
+      ],
+      "correcta": 0,
+      "explicacion": "El precepto contempla recipientes seguros e identificables. La señal del puesto no identifica el envase de residuos.",
+      "fuente": "RD 664/1997, art. 6.1.e · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **e)** medios seguros de **recogida, almacenamiento y evacuación de residuos**, en **recipientes seguros e identificables**;"
+    },
+    {
+      "id": "t09-q76",
+      "pregunta": "El laboratorio ha documentado cómo evitar derrames, pero no qué hacer si uno provoca una liberación accidental. ¿Qué medida falta?",
+      "opciones": [
+        "Una nueva norma de clasificación de los agentes.",
+        "El plan de actuación ante accidentes que puedan liberar el agente.",
+        "El inventario comercial de las cabinas."
+      ],
+      "correcta": 1,
+      "explicacion": "Entre las medidas de reducción se exige planificar la actuación ante accidentes de los que pueda derivarse una exposición.",
+      "fuente": "RD 664/1997, art. 6.1.h · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **h)** **planes para hacer frente a accidentes**;"
+    },
+    {
+      "id": "t09-q77",
+      "pregunta": "Si es necesario y técnicamente posible comprobar si se ha dispersado un agente, ¿dónde se busca según el artículo 6.1.i?",
+      "opciones": [
+        "Fuera del confinamiento físico primario.",
+        "Solo en el interior del cultivo.",
+        "Solo dentro del esterilizador."
+      ],
+      "correcta": 0,
+      "explicacion": "La comprobación sirve para detectar la presencia del agente más allá del confinamiento físico primario.",
+      "fuente": "RD 664/1997, art. 6.1.i · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **i)** comprobar, cuando sea posible, que no hay agentes **fuera del confinamiento físico primario**."
+    },
+    {
+      "id": "t09-q78",
+      "pregunta": "Un laboratorio establece instrucciones solo para las muestras humanas y deja el manejo de las animales a criterio individual. ¿Qué debe especificar?",
+      "opciones": [
+        "Cómo procesar las humanas, y cómo desechar las animales.",
+        "Cómo obtener las humanas, y cómo almacenar las animales.",
+        "Cómo obtener, manipular y procesar muestras de ambos orígenes."
+      ],
+      "correcta": 2,
+      "explicacion": "El artículo incluye expresamente la obtención, manipulación y procesamiento de muestras de origen humano o animal.",
+      "fuente": "RD 664/1997, art. 7.1.e · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "- **especificar los procedimientos** para obtener, manipular y procesar **muestras de origen humano o animal**."
+    },
+    {
+      "id": "t09-q79",
+      "pregunta": "El centro entrega ropa de protección y repercute en nómina el coste de descontaminarla. ¿Qué regla impide este cargo?",
+      "opciones": [
+        "Solo puede cobrarse a quien trabajó a jornada completa.",
+        "Las medidas de seguridad y salud no pueden ocasionar gastos al personal.",
+        "Puede cobrarse siempre que el centro entregue la prenda."
+      ],
+      "correcta": 1,
+      "explicacion": "El coste de las medidas de seguridad y salud previstas en el real decreto no recae sobre las personas trabajadoras.",
+      "fuente": "RD 664/1997, art. 7.5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "- **El coste nunca recae en los trabajadores** (7.5)."
+    },
+    {
+      "id": "t09-q80",
+      "pregunta": "¿Dónde se guarda una bata potencialmente contaminada tras retirarla al abandonar la zona de trabajo?",
+      "opciones": [
+        "En un estante de prendas limpias si no se ven manchas.",
+        "En la misma taquilla que la ropa de calle.",
+        "En un lugar separado de las demás prendas."
+      ],
+      "correcta": 2,
+      "explicacion": "Al salir se retiran las prendas y equipos que puedan estar contaminados y se guardan separados.",
+      "fuente": "RD 664/1997, art. 7.3 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "- **Al salir de la zona**, el trabajador se **quita la ropa de trabajo y los EPI** que puedan estar contaminados y los guarda **separados de las demás prendas** (7.3)."
+    },
+    {
+      "id": "t09-q81",
+      "pregunta": "¿Cómo cambia la previsión de poder precintar la sala para desinfectarla, según los niveles 2, 3 y 4 del anexo IV?",
+      "opciones": [
+        "No se exige, es aconsejable, se exige.",
+        "Es aconsejable, se exige, se exige.",
+        "Se exige en los tres niveles."
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla marca «no» para nivel 2, «aconsejable» para nivel 3 y «sí» para nivel 4.",
+      "fuente": "RD 664/1997, anexo IV, fila 2 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Poder precintarse para desinfectarlo | No | Aconsejable | **Sí** |"
+    },
+    {
+      "id": "t09-q82",
+      "pregunta": "¿Cómo cambia la medida de control de roedores e insectos al pasar de contención 2 a 3?",
+      "opciones": [
+        "Pasa de exigida a aconsejable.",
+        "Pasa de aconsejable a exigida.",
+        "Se mantiene como aconsejable."
+      ],
+      "correcta": 1,
+      "explicacion": "La tabla distingue una medida aconsejable en nivel 2 de la exigencia en niveles 3 y 4.",
+      "fuente": "RD 664/1997, anexo IV, fila 9 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Control de vectores (roedores, insectos) | Aconsejable | Sí | Sí |"
+    },
+    {
+      "id": "t09-q83",
+      "pregunta": "¿En qué niveles exige el anexo IV que se especifiquen los procedimientos de desinfección?",
+      "opciones": [
+        "En los niveles 2, 3 y 4.",
+        "En los niveles 3 y 4.",
+        "Solo en el nivel 4."
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla marca «sí» en los tres niveles para los procedimientos especificados de desinfección.",
+      "fuente": "RD 664/1997, anexo IV, fila 10 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| **Procedimientos de desinfección especificados** | **Sí** | Sí | Sí |"
+    },
+    {
+      "id": "t09-q84",
+      "pregunta": "El acceso ya se limita al personal designado en nivel 3. ¿Por qué elemento debe acceder ese personal en nivel 4?",
+      "opciones": [
+        "Por una puerta ordinaria sin zona de transición.",
+        "Por una ventanilla de observación.",
+        "Por una esclusa."
+      ],
+      "correcta": 2,
+      "explicacion": "Para el nivel 4 la tabla añade el acceso mediante esclusa.",
+      "fuente": "RD 664/1997, anexo IV, fila 8 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Acceso solo al personal designado | Aconsejable | Sí | **Sí, por esclusa** |"
+    },
+    {
+      "id": "t09-q85",
+      "pregunta": "Al revisar un plano de bioseguridad, ¿qué dos lados delimita la esclusa de acceso?",
+      "opciones": [
+        "La entrada y la salida del filtro HEPA.",
+        "El lado limpio y el lado restringido.",
+        "El interior y el exterior de la cabina de trabajo."
+      ],
+      "correcta": 1,
+      "explicacion": "La esclusa es una cámara aislada que separa la zona limpia de la restringida.",
+      "fuente": "RD 664/1997, anexo IV, nota 2 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "La **esclusa** es una cámara aislada que separa el lado limpio del restringido, con vestuarios o duchas y puertas preferiblemente enclavadas."
+    },
+    {
+      "id": "t09-q86",
+      "pregunta": "¿En qué nivel de los que recoge el anexo IV aparece por primera vez como exigencia disponer de equipo propio del laboratorio?",
+      "opciones": [
+        "En nivel 2.",
+        "En nivel 3.",
+        "En nivel 4."
+      ],
+      "correcta": 2,
+      "explicacion": "El equipo propio figura como aconsejable en nivel 3 y como exigido en nivel 4.",
+      "fuente": "RD 664/1997, anexo IV, fila de equipo propio · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Laboratorio con equipo propio | No | Aconsejable | Sí |"
+    },
+    {
+      "id": "t09-q87",
+      "pregunta": "Una mesa de nivel 3 es impermeable y fácil de limpiar, pero su acabado se degrada con el desinfectante. ¿Qué requisito distinto hay que revisar?",
+      "opciones": [
+        "La resistencia de la superficie a agentes químicos como los desinfectantes.",
+        "La sola impermeabilidad, que ya garantiza la resistencia química.",
+        "El ancho de la puerta de acceso."
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla distingue la impermeabilidad y facilidad de limpieza de la resistencia a ácidos, álcalis, disolventes y desinfectantes.",
+      "fuente": "RD 664/1997, anexo IV, filas 6 y 7 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| Superficies resistentes a ácidos, álcalis, disolventes y desinfectantes | Aconsejable | Sí | Sí |"
+    },
+    {
+      "id": "t09-q88",
+      "pregunta": "Una técnica discrepa de los resultados de su vigilancia de la salud. ¿Qué actuación puede solicitar?",
+      "opciones": [
+        "La revisión solo si cambia el grupo de riesgo.",
+        "La revisión de sus resultados.",
+        "El acceso a los historiales de sus compañeros."
+      ],
+      "correcta": 1,
+      "explicacion": "La persona trabajadora puede solicitar la revisión de los resultados de su propia vigilancia.",
+      "fuente": "RD 664/1997, art. 8.2 · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Hay **historial médico individual**, y el trabajador puede pedir la **revisión de los resultados**."
+    },
+    {
+      "id": "t09-q89",
+      "pregunta": "Antes de que una persona decida si acepta la vacuna laboral, ¿qué información debe recibir?",
+      "opciones": [
+        "Ventajas e inconvenientes tanto de vacunarse como de no vacunarse.",
+        "Solo los posibles inconvenientes de la vacunación.",
+        "Solo información sobre el precio de la vacuna."
+      ],
+      "correcta": 0,
+      "explicacion": "La información debe ayudar a comparar ambas decisiones. La guía práctica del anexo VI abarca los dos escenarios.",
+      "fuente": "RD 664/1997, anexo VI, recomendación 2 · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- si hay **vacunas eficaces**, **deben ponerse a disposición** de los trabajadores, **informándoles de las ventajas e inconvenientes** de vacunarse **y de no hacerlo**;"
+    },
+    {
+      "id": "t09-q90",
+      "pregunta": "¿Cuál de estas características de una posible infección activa el supuesto de conservación prolongada de los registros de exposición por incubación?",
+      "opciones": [
+        "Una manifestación inmediata limitada a una irritación por el desinfectante.",
+        "Un período de incubación breve seguido de un cuadro agudo y sin secuelas.",
+        "Un período de incubación especialmente largo antes de que se manifieste la enfermedad."
+      ],
+      "correcta": 2,
+      "explicacion": "El período de incubación especialmente prolongado es uno de los criterios normativos para ampliar la conservación.",
+      "fuente": "RD 664/1997, art. 9.3.c · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **hasta cuarenta años** si la infección puede ser **persistente o latente**, **no diagnosticable** hasta mucho después, de **incubación prolongada**, con **recurrencias** o con **secuelas a largo plazo**."
+    },
+    {
+      "id": "t09-q91",
+      "pregunta": "Un laboratorio ya trabaja con un agente del grupo 3. Se va a usar por primera vez otro clasificado provisionalmente en ese grupo. ¿Qué procede?",
+      "opciones": [
+        "Considerarla cubierta por la notificación del primer agente.",
+        "Notificar previamente esa primera utilización a la autoridad laboral.",
+        "Notificar únicamente si se cambia el nivel de contención."
+      ],
+      "correcta": 1,
+      "explicacion": "La obligación previa incluye cualquier agente nuevo asimilado provisionalmente a los del grupo 3.",
+      "fuente": "RD 664/1997, art. 10.1 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- también la de cualquier otro agente del grupo 4 y la de todo agente nuevo asimilado al grupo 3;"
+    },
+    {
+      "id": "t09-q92",
+      "pregunta": "La evaluación identifica un riesgo por exposición a un agente del grupo 3. La autoridad pide información sobre un posible fallo de la contención. ¿Qué documento debe facilitarse?",
+      "opciones": [
+        "El certificado de vacunación como sustituto del plan.",
+        "Solo la factura de la cabina de seguridad.",
+        "El plan de emergencia para responder al fallo de la contención física."
+      ],
+      "correcta": 2,
+      "explicacion": "El empresario informa, si la autoridad se lo solicita, sobre el plan de emergencia previsto ante fallos de contención de agentes de grupos 3 o 4.",
+      "fuente": "RD 664/1997, art. 11.2.e · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **Información a las autoridades (art. 11):** el empresario informa **inmediatamente a las autoridades laboral y sanitaria** de cualquier **accidente o incidente** que haya podido **liberar** un agente capaz de causar una infección o enfermedad grave. Si lo piden, les informa también, entre otras cosas, del **plan de emergencia** frente a un fallo de la contención física con agentes de los grupos 3 o 4."
+    },
+    {
+      "id": "t09-q93",
+      "pregunta": "No ha habido accidentes y se va a manipular un agente del grupo 4. ¿Es suficiente explicar verbalmente el procedimiento?",
+      "opciones": [
+        "No. Esa manipulación requiere instrucciones escritas.",
+        "Sí, las instrucciones escritas solo se exigen tras un accidente grave.",
+        "Sí, siempre que el personal tenga experiencia con agentes del grupo 3."
+      ],
+      "correcta": 0,
+      "explicacion": "El procedimiento para manipular agentes del grupo 4 debe figurar por escrito, con independencia de que haya habido incidentes.",
+      "fuente": "RD 664/1997, art. 12.3 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- hay **instrucciones escritas** para **accidentes graves** y para **manipular agentes del grupo 4**;"
+    },
+    {
+      "id": "t09-q94",
+      "pregunta": "Una técnica acaba de quitarse los guantes usados para manejar material contaminado. ¿Qué práctica de higiene corresponde?",
+      "opciones": [
+        "Posponer el lavado a la siguiente pausa.",
+        "Lavarse las manos.",
+        "Lavarse solo si aprecia una rotura en los guantes."
+      ],
+      "correcta": 1,
+      "explicacion": "La guía incluye el lavado de manos al quitarse los guantes, incluso si parecen íntegros.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 8 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- **Lavarse las manos** tras manipular material contaminado, **al quitarse los guantes** y **antes de salir**."
+    },
+    {
+      "id": "t09-q95",
+      "pregunta": "Una persona observa una pequeña herida en la mano antes de empezar. ¿Qué medida complementa la protección frente al contacto?",
+      "opciones": [
+        "Cubrir la herida con un apósito impermeable.",
+        "Cubrirla con una venda permeable sin más protección.",
+        "Dejarla descubierta si no sangra."
+      ],
+      "correcta": 0,
+      "explicacion": "El apósito impermeable reduce la posibilidad de que el material alcance la piel no intacta.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 8 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- **Cubrir las heridas** con apósitos impermeables; quitarse las joyas que puedan romper los guantes; pelo recogido; **sin auriculares**."
     }
   ],
   "supuestos": [

@@ -1614,6 +1614,132 @@
       "fuente": "Real Decreto 3/2023, anexo I, parte A · apunte §2.1",
       "apartado": "2.1",
       "evidencia": "| ***Escherichia coli*** | **0** | **UFC o NMP en 100 mL** | — |"
+    },
+    {
+      "id": "t18-q78",
+      "pregunta": "Dos muestras se analizan al mismo tiempo y una tuvo un trayecto largo. ¿Qué registro ayuda a evaluar si compararlas es razonable?",
+      "opciones": [
+        "La temperatura real de transporte de la muestra.",
+        "Solo el peso del recipiente vacío antes de tomar la muestra.",
+        "La temperatura de incubación del último control de la jornada."
+      ],
+      "correcta": 0,
+      "explicacion": "La temperatura de transporte aporta evidencia sobre la conservación antes del análisis. La temperatura de incubación describe una fase posterior.",
+      "fuente": "UNE-EN ISO 19458:2007, conservación y transporte, y apunte microbiológico · apunte §3",
+      "apartado": "3",
+      "evidencia": "**Lo propio de este tema es el reloj.** La ISO 19458 pide **analizar el mismo día**, transportar **refrigerado a 5 ± 3 °C** sin que se congele, y **registrar la temperatura** si el transporte pasa de **8 horas**. Cada norma de análisis fija su **tiempo máximo hasta empezar el análisis** (resumen de Norsk Akkreditering, 2023):"
+    },
+    {
+      "id": "t18-q79",
+      "pregunta": "En un ensayo en CCA se confirman 17 colonias rosas de coliformes y 9 azul-violeta de E. coli. ¿Cuántas se incluyen en el recuento total de coliformes?",
+      "opciones": [
+        "17 colonias.",
+        "26 colonias.",
+        "8 colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "El recuento total incluye las colonias rosas confirmadas y las de E. coli. Se suman 17 y 9.",
+      "fuente": "Orden SCO/778/2009, anexo, interpretación del agar cromogénico, y UNE-EN ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **coliformes totales = rosas + azul-violeta.**"
+    },
+    {
+      "id": "t18-q80",
+      "pregunta": "Una colonia rosa en CCA da oxidasa positiva. ¿Qué decisión corresponde al confirmar el recuento de bacterias coliformes por el procedimiento descrito?",
+      "opciones": [
+        "Excluirla del recuento confirmado de coliformes.",
+        "Sumarla como coliforme porque el color invalida la oxidasa.",
+        "Sumarla directamente al recuento de E. coli."
+      ],
+      "correcta": 0,
+      "explicacion": "La oxidasa permite excluir colonias que se parecen a los coliformes pero dan una reacción positiva.",
+      "fuente": "Orden SCO/778/2009, anexo, confirmación en agar cromogénico · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "**La definición del examen (1246 #36): lactosa positivas y oxidasa negativas.** Es la misma idea: la β-galactosidasa es la enzima que rompe la **lactosa**. La guía británica define así los coliformes: **oxidasa negativos**, que **producen ácido de la lactosa o expresan β-galactosidasa** y crecen a 37 °C. La **oxidasa negativa** los separa de ***Aeromonas***: bacterias naturales del agua que **pueden producir ácido de la lactosa a 37 °C**, pero son **oxidasa positivas** (guía británica). Y también de *Pseudomonas* (tema 16)."
+    },
+    {
+      "id": "t18-q81",
+      "pregunta": "En una placa con TSC-MUP se ven dos colonias negras y solo una presenta la fluorescencia prescrita. ¿Cuál cumple los dos criterios de lectura del método alternativo descrito?",
+      "opciones": [
+        "Ambas colonias, por el color negro.",
+        "Solo la colonia sin fluorescencia.",
+        "Solo la colonia con fluorescencia."
+      ],
+      "correcta": 2,
+      "explicacion": "El rasgo fluorescente permite distinguir la colonia compatible con el criterio de identificación que añade el sustrato MUP. El color negro por sí solo no lo cumple.",
+      "fuente": "SZÚ/04619/2026, Centro Nacional de Referencia para el agua potable, lectura TSC-MUP, y RD 3/2023, anexo III, parte C.3.c · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- Tras **24 horas en anaerobiosis** se cuentan directamente las colonias **negras, grises o gris-amarillentas con una fluorescencia azul pálida brillante** (SZÚ, 2026)."
+    },
+    {
+      "id": "t18-q82",
+      "pregunta": "En agar CN aparece una colonia pardo-rojiza. ¿Qué panel corresponde a esa morfología según el esquema de confirmación?",
+      "opciones": [
+        "Solo prueba de esculina en agar de bilis.",
+        "Oxidasa, fluorescencia en agar King B y producción de amoníaco a partir de acetamida.",
+        "Solo una lectura de pH del agar original."
+      ],
+      "correcta": 1,
+      "explicacion": "Para esa morfología el esquema combina tres comprobaciones. La confirmación depende del fenotipo inicial observado.",
+      "fuente": "UNE-EN ISO 16266:2008, recuento de Pseudomonas aeruginosa, y apunte sobre confirmación · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "| **Pardo-rojiza** | **Oxidasa +**, **fluorescencia en agar King B** y **amoníaco desde acetamida** |"
+    },
+    {
+      "id": "t18-q83",
+      "pregunta": "Un pocillo adquiere color amarillo sin mostrar fluorescencia con la iluminación prescrita. ¿Qué reacción explica el color amarillo en este método?",
+      "opciones": [
+        "La liberación de un fluoróforo por el sustrato MUG.",
+        "La reducción del TTC a formazán.",
+        "La hidrólisis de ONPG por la β-galactosidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "El amarillo procede de la hidrólisis de ONPG. La reacción del sustrato MUG se evalúa por fluorescencia.",
+      "fuente": "Orden SCO/778/2009, anexo, método con sustrato definido · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "4. **Pocillos amarillos = coliformes** (la β-galactosidasa rompe el **ONPG**)."
+    },
+    {
+      "id": "t18-q84",
+      "pregunta": "¿Por qué el método de sustrato definido evita una fase de confirmación de cada pocillo en el procedimiento descrito?",
+      "opciones": [
+        "La lectura del método proporciona un resultado confirmado conforme a sus criterios.",
+        "La bandeja mide directamente todo el ADN de las bacterias.",
+        "Cada pocillo representa necesariamente una sola célula intacta."
+      ],
+      "correcta": 0,
+      "explicacion": "El resultado se obtiene a partir de reacciones definidas del sustrato y de la tabla correspondiente. No se vuelven a confirmar por separado todos los pocillos.",
+      "fuente": "ISO 9308-2:2012, método del número más probable, ámbito · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "- **da un resultado confirmado**: no hay que confirmar los pocillos;"
+    },
+    {
+      "id": "t18-q85",
+      "pregunta": "Un técnico propone aplicar la lectura con luz UV usada en otro método a una bandeja Enterolert-DW. ¿Qué lectura corresponde a este ensayo?",
+      "opciones": [
+        "Una fluorescencia obligatoria en un pocillo que se mantiene azul.",
+        "El cambio de color visible de azul a verde.",
+        "La aparición de colonias negras en la membrana."
+      ],
+      "correcta": 1,
+      "explicacion": "Enterolert-DW se lee por un cambio visible de color. No exige luz UV para identificar el resultado positivo.",
+      "fuente": "RD 3/2023, anexo III, parte C.3.d, e IDEXX, Enterolert-DW, lectura · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "- **Positivo: el pocillo pasa de azul a verde.** **No hace falta luz UV.**"
+    },
+    {
+      "id": "t18-q86",
+      "pregunta": "¿Qué aspecto del tratamiento ayuda a evaluar el indicador formado por virus que infectan a E. coli?",
+      "opciones": [
+        "La eficacia del tratamiento frente a virus.",
+        "El rendimiento de una valoración de alcalinidad.",
+        "La dureza total por calcio y magnesio."
+      ],
+      "correcta": 0,
+      "explicacion": "Los colífagos somáticos son bacteriófagos. Su seguimiento aporta información sobre la eficacia del tratamiento frente a virus.",
+      "fuente": "RD 3/2023, anexo I y anexo III, parte C, colífagos somáticos · apunte §8",
+      "apartado": "8",
+      "evidencia": "**Son virus que infectan *E. coli*** (1246 #32, tema 15). Se cuentan como **placas de lisis** sobre un césped de la bacteria hospedadora (**UFP/100 mL**), según la **UNE-EN ISO 10705-2**. Indican la **eficacia del tratamiento frente a virus**. **El procedimiento de la norma no se ha leído.**"
     }
   ],
   "supuestos": [

@@ -67,11 +67,11 @@ function nombresNeutros() {
  * `asteriscos`, cada negrita de la explicacion vuelve a su `**texto**`, como
  * se veia cuando la explicacion se pintaba en texto plano.
  */
-const recorrer = (pag, opcionDeMas = false, asteriscos = false) =>
-  pag.evaluate(async (deMas, conAsteriscos) => {
+const recorrer = (pag, limite, opcionDeMas = false, asteriscos = false) =>
+  pag.evaluate(async (maximo, deMas, conAsteriscos) => {
     const dormir = (ms) => new Promise((r) => setTimeout(r, ms))
     const leidas = []
-    for (let vuelta = 0; vuelta < 200; vuelta++) {
+    for (let vuelta = 0; vuelta <= maximo; vuelta++) {
       const ops = [...document.querySelectorAll('.opciones button.opcion')]
       if (!ops.length) break
       if (deMas && vuelta === 0) {
@@ -118,7 +118,7 @@ const recorrer = (pag, opcionDeMas = false, asteriscos = false) =>
       if (ultima) break
     }
     return leidas
-  }, opcionDeMas, asteriscos)
+  }, limite, opcionDeMas, asteriscos)
 
 /* ------------------------------------------------------------------ */
 
@@ -235,7 +235,7 @@ async function controlExplicaciones(b, datos, tema, sab) {
         await pag.evaluate((i) => document.querySelectorAll('button.item')[i].click(), t.n)
         await new Promise((r) => setTimeout(r, 350))
       }
-      const leidas = await recorrer(pag, false, sab === 15)
+      const leidas = await recorrer(pag, t.preguntas.length, false, sab === 15)
       await pag.close()
       if (leidas.length !== t.preguntas.length) {
         throw new Error(`la app muestra ${leidas.length} preguntas y el dato tiene ${t.preguntas.length}`)
@@ -341,7 +341,7 @@ async function controlesApp(b, datos, tema, sab, NEUTROS, conFigura) {
   await b.control('Test · 3 opciones por pregunta', async () => {
     if (!datos.test.length) return null
     const pag = await b.abrir(tema, 'test')
-    const leidas = await recorrer(pag, sab === 1)
+    const leidas = await recorrer(pag, datos.test.length, sab === 1)
     await pag.close()
     if (leidas.length !== datos.test.length) {
       throw new Error(`la app muestra ${leidas.length} preguntas y el dato tiene ${datos.test.length}`)
@@ -360,7 +360,7 @@ async function controlesApp(b, datos, tema, sab, NEUTROS, conFigura) {
   await b.control('Test · la opción que marca la app es la del dato', async () => {
     if (!datos.test.length) return null
     const pag = await b.abrir(tema, 'test')
-    const leidas = await recorrer(pag)
+    const leidas = await recorrer(pag, datos.test.length)
     await pag.close()
     const esperado = datos.test.map((t, i) => (sab === 2 && i === 0 ? (t.correcta + 1) % 3 : t.correcta))
     const fallos = leidas
@@ -416,7 +416,7 @@ async function controlesApp(b, datos, tema, sab, NEUTROS, conFigura) {
       const pag = await b.abrir(tema, 'supuestos')
       await pag.evaluate((i) => document.querySelectorAll('button.item')[i].click(), n)
       await new Promise((r) => setTimeout(r, 350))
-      const leidas = await recorrer(pag)
+      const leidas = await recorrer(pag, sup.preguntas.length)
       await pag.close()
       if (leidas.length !== sup.preguntas.length) {
         throw new Error(`${sup.id}: la app muestra ${leidas.length} preguntas y el dato tiene ${sup.preguntas.length}`)
@@ -457,7 +457,7 @@ async function controlesApp(b, datos, tema, sab, NEUTROS, conFigura) {
     })
     await new Promise((r) => setTimeout(r, 250))
     if (sab === 5) await pag.evaluate(() => document.querySelector('.et-nucleo')?.remove())
-    const leidas = await recorrer(pag)
+    const leidas = await recorrer(pag, marcadas)
     await pag.close()
     if (leidas.length !== marcadas) {
       throw new Error(`el filtro muestra ${leidas.length} preguntas y hay ${marcadas} marcadas`)

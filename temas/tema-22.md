@@ -57,7 +57,7 @@ Es la distinción que más se pregunta del apartado:
 - **Punto de equivalencia:** el momento **teórico** en que la cantidad de valorante añadida es **estequiométricamente equivalente** a la de analito. Es un concepto, no se observa.
 - **Punto final:** el momento **real** en que se detecta un cambio observable (viraje de un indicador, salto de potencial, cambio de conductividad) y se cierra la llave.
 
-La diferencia entre ambos es el **error de valoración**, y se corrige con un **ensayo en blanco**: la misma valoración sin muestra, cuyo volumen se resta.
+La diferencia entre ambos origina el **error de valoración**. El **ensayo en blanco** reproduce el procedimiento sin el analito de la muestra para evaluar consumos de reactivos, medio o indicador. En una valoración directa que así lo prescribe, se resta su volumen. **No corrige por sí solo cualquier diferencia entre punto final y equivalencia**: también importan la elección del indicador, la velocidad de reacción y la detección. La operación y el signo de corrección dependen del método.
 
 #### Requisitos de una reacción para servir de base a una volumetría
 
@@ -79,6 +79,14 @@ Ejemplos clásicos: ftalato ácido de potasio, carbonato sódico, dicromato pot�
 
 Lo que **no** es patrón primario se prepara de concentración aproximada y se **factoriza** (se normaliza) contra un patrón primario: es el caso del **NaOH** (absorbe CO₂ y humedad), del **HCl** y del **tiosulfato sódico**.
 
+#### Concentración y normalización
+
+La concentración molar es **cantidad de sustancia por volumen de disolución**, no por volumen inicial de disolvente. Para preparar un patrón por pesada, **c = m · p / (M · V)**, con pureza en fracción másica p, masa molar M y volumen final V en unidades compatibles. Si la pureza no es uno, no se atribuye toda la masa pesada al compuesto puro. Una preparación se transfiere cuantitativamente, se deja alcanzar la temperatura de uso antes de enrasar y se homogeneiza después del enrase.
+
+La normalización determina la **concentración real** del valorante mediante reacción con una referencia adecuada. Si se define un factor **f = c_real/c_nominal**, se usa c_real = f · c_nominal: debe documentarse la convención para no invertirlo. La **normalidad depende de la reacción considerada**; molaridad y normalidad no son sinónimos universales.
+
+Una diferencia repetible entre punto final y equivalencia puede ser un **sesgo**, aunque las réplicas concuerden. La detección puede ser visual o instrumental; se elige para aproximar correctamente la equivalencia. El blanco no contiene el analito que se cuantifica, pero reproduce los reactivos y operaciones pertinentes. No es lo mismo que una **muestra de control de contenido conocido**.
+
 ### 2.2. Material
 
 Aquí sí manda el volumen, y por eso el material es **aforado y de clase**. Dos ejes de clasificación que hay que tener claros:
@@ -97,7 +105,7 @@ Por eso un matraz aforado **nunca se usa para verter** un volumen exacto, y una 
 - **Clase A** y **clase AS**: la exactitud alta. La **S** es de *swift*, vertido rápido: son aparatos «Ex» con **tiempo de espera reducido**. En la norma nueva de pipetas aforadas (ISO 648) el tiempo de espera de la clase AS **bajó de 15 a 5 segundos**.
 - **Clase B**: los límites de error son **el doble** que los de la clase A/AS.
 
-El material de clase A/AS puede llevar **certificado de lote o individual**; el de clase B, no. La **temperatura de referencia de ajuste es 20 °C**, y va grabada en el aparato junto con la capacidad, la clase y el tipo de ajuste.
+La gama **BLAUBRAND de clase A/AS se suministra con certificado de lote y puede disponer de certificado individual**. Esto no implica que esté prohibido calibrar o emitir documentación de calibración para material de clase B: **clase de exactitud y documentación son conceptos distintos**. La **temperatura de referencia de ajuste es 20 °C**, y va grabada en el aparato junto con la capacidad, la clase y el tipo de ajuste. Fuente del ejemplo de suministro: BRAND, catálogo de pipetas graduadas, https://shop.brand.de/en/volumetric-instruments/graduated-pipettes.html
 
 #### El material, uno a uno
 
@@ -132,6 +140,12 @@ Es el instrumento central del tema y el que más se pregunta.
 
 En clase B, el doble. Las **microburetas** (tipo Bang) bajan a 2 y 5 mL con división y error de 0,01 mL.
 
+#### Qué debe comprobarse al escoger una pieza
+
+Se interpreta **la inscripción y el certificado de esa pieza**, no solo su forma. Capacidad nominal, clase, tipo In/Ex, temperatura y tiempos de vertido o espera condicionan el uso. Un certificado **de lote caracteriza un lote**, mientras que uno individual corresponde a la pieza identificada; deben distinguirse alcance y datos declarados. Ninguno elimina errores de manejo. La clase de exactitud **no equivale al valor de la división de escala**.
+
+Un material de capacidad fija se elige para ese volumen; uno graduado permite leer varios volúmenes. Para volúmenes pequeños se selecciona una capacidad y resolución apropiadas, sin suponer que cualquier bureta grande tiene la misma aptitud. La bureta se mantiene **vertical y sin fugas**: una pérdida por la llave o la punta que no llega a la muestra rompe la relación entre lectura y volumen que reacciona. La llave de vidrio esmerilado se conserva conforme a sus instrucciones; no se confunde con la de PTFE, que no necesita engrase en el modelo descrito.
+
 ### 2.3. Operaciones
 
 **1. Preparar la disolución patrón.** Si es patrón primario, por pesada directa en balanza analítica y enrase en **matraz aforado**. Si no lo es, de concentración aproximada y después **factorización** contra un patrón primario.
@@ -162,9 +176,19 @@ En clase B, el doble. Las **microburetas** (tipo Bang) bajan a 2 y 5 mL con divi
 En el punto de equivalencia, los **equivalentes** o los **moles corregidos por la estequiometría** de valorante y analito se igualan:
 
 > **N₁ · V₁ = N₂ · V₂** (en normalidad)
-> **a · M₁ · V₁ = b · M₂ · V₂** (en molaridad, con los coeficientes de la reacción)
+> Para **a A + b T → productos**, **n(A)/a = n(T)/b**, es decir, **b · M_A · V_A = a · M_T · V_T** (en molaridad, con volúmenes expresados en unidades compatibles).
 
 Y si se ha tomado una alícuota de una disolución preparada en matraz aforado, hay que aplicar el **factor de dilución**: el resultado de la alícuota se multiplica por el cociente entre el volumen del matraz y el de la alícuota.
+
+#### Controles de operación y conservación de cantidades
+
+El volumen entregado por la bureta es **lectura final menos lectura inicial**; no es imprescindible comenzar exactamente en cero si ambas lecturas son válidas y se registra la inicial. **Se retira el embudo de llenado antes de medir** para que gotas posteriores no alteren la diferencia de lecturas. Deben evitarse fugas y gotas de valorante que no lleguen al medio de reacción. Referencias prácticas: **Purdue University, Performing the Titration y Cleaning the Buret** (https://chemed.chem.purdue.edu/genchem/lab/techniques/titration/perform.html y https://chemed.chem.purdue.edu/genchem/lab/equipment/buret/use.html); **ACS, Know Your Lab Techniques: Titration** (https://inchemistry.acs.org/college-life/titration.html).
+
+Pipeta y bureta se acondicionan con **la disolución que van a medir**, no necesariamente con el mismo líquido entre ambas: la pipeta puede medir muestra y la bureta valorante. Agua residual en la pipeta puede diluir la alícuota; agua residual en la bureta puede diluir el valorante. En cambio, un Erlenmeyer limpio húmedo con agua adecuada no añade moles de analito. Un matraz usado para preparar una disolución puede contener agua de preparación, pues se completa hasta el volumen final; no se enjuaga con soluto de cantidad desconocida que altere la pesada prevista.
+
+El lavado de paredes recupera material que no participa bien en la mezcla; añadir agua compatible en cantidad razonable no cambia los moles del analito, **aunque sí cambia concentración y puede afectar condiciones químicas de detección**. Se respetan los volúmenes y condiciones del método. Una muestra derramada o una alícuota incompleta no se corrige añadiendo cantidades arbitrarias. Tampoco se disimula una sobrevaloración alterando lecturas: se repite o se aplica únicamente un procedimiento válido previsto.
+
+La pipeta se usa con **propipeta o ayuda adecuada, nunca aspiración con la boca**. Se conserva la punta intacta y se respetan escurrido, contacto de la punta con la pared y espera según el modelo; no se fuerza el líquido residual de una pipeta de vertido cuyo ajuste lo tiene en cuenta. Fuente de manejo y punta dañada: **DWK Life Sciences, Volumetrics by DWK, 11/2023, pp. 34-40**.
 
 ### 2.4. Manejo y calibración del material volumétrico
 
@@ -192,9 +216,13 @@ La norma de referencia es la **UNE-EN ISO 4787:2021** (ratificada por UNE en feb
 
 El parámetro que se evalúa es el **error de capacidad**: la diferencia entre el volumen real a la temperatura de referencia y el volumen nominal grabado.
 
+Para una conversión simplificada, **V = m/ρ**; la calibración completa incorpora las correcciones de empuje y temperatura pertinentes. Una masa de agua en gramos no se identifica sin más con el mismo número de mililitros a cualquier temperatura. El error se expresa como **V_real,ref − V_nominal** y la corrección asociada tiene signo contrario. Repetir medidas caracteriza dispersión, pero **no elimina un sesgo compartido**. Deben controlarse estabilidad de la balanza, temperatura, evaporación y condiciones de entrega o contenido.
+
+El alcance público de la **ISO 4787:2021** incluye instrumentos de **100 µL a 10.000 mL** de capacidad nominal, de vidrio y plástico, como pipetas, buretas, matraces y probetas. No se extiende sin más a microinstrumentos por debajo de 100 µL. Verificación de este alcance en el catálogo oficial ISO: https://committee.iso.org/standard/74926.html
+
 #### Manejo y conservación
 
-- **Nunca en estufa ni a la llama:** el calor deforma el vidrio y **descalibra** el aparato de forma permanente. El material volumétrico se seca **al aire** o con arrastre de acetona, nunca en estufa.
+- **Secado según el fabricante y el procedimiento.** El secado al aire es una opción habitual; el secado térmico solo se aplica dentro de los límites y condiciones del fabricante. **No existe una prohibición universal de toda estufa**: DWK permite secado térmico para su material dentro de los límites que indica. Evitar llama, calentamiento no autorizado y choques térmicos; no extrapolar al plástico el comportamiento del vidrio. Antes de medir se recupera la temperatura de uso. Fuente: **DWK Life Sciences, Volumetrics by DWK, 11/2023, p. 45, Drying** — https://d3h4jppqn0j59k.cloudfront.net/pub/media/mageplaza/resource/pdf/d/w/dwk_volumetrics_ipdf_en_2023-11.pdf
 - **No medir líquidos calientes**: el volumen se ajustó a 20 °C.
 - **Limpieza:** un vidrio limpio se moja de forma uniforme. Si el líquido deja gotas o el menisco sale irregular, hay grasa y la medida no vale.
 - **Ambientar** pipeta y bureta con el líquido que van a medir.
@@ -235,6 +263,14 @@ El **método de Mohr** es el normalizado para aguas: **UNE-ISO 9297:2013**, de 5
 
 Fíjate en que **Volhard es a la vez el ejemplo de argentometría y el de valoración por retroceso**: si en el examen cae cualquiera de los dos núcleos repetidos, este método los une.
 
+#### Interpretación de clases y puntos finales
+
+La clasificación por reacción y la clasificación por forma de operar **son independientes**: una argentometría puede ser directa o por retroceso. En ácido-base se transfieren protones; **equivalencia no significa pH 7 en toda valoración**, pues depende de las especies. En redox debe ajustarse el intercambio de electrones; en complexometría el EDTA forma, en los ejemplos de Ca y Mg, **un mol de complejo por mol de metal**, no dos por ser cationes divalentes.
+
+En Mohr, el cromato es **indicador**, no el valorante; aparece el cromato de plata después del consumo de cloruro en las condiciones del método. En Volhard para cloruro, el tiocianato cuantifica **plata sobrante**, no directamente todo el cloruro inicial. La cantidad que reaccionó con cloruro se obtiene restando al exceso conocido lo que queda. Fe(III) señala el exceso de tiocianato mediante un complejo rojo. En Fajans, la señal depende de **adsorción del indicador sobre el precipitado**, no del mismo mecanismo que Mohr.
+
+La yodometría indirecta cuantifica el yodo liberado en relación estequiométrica con el analito; no confunde el contenido inicial del analito con una supuesta concentración inicial de yodo libre. Un autoindicador, como el permanganato en el ejemplo, **no elimina la necesidad de definir y detectar correctamente el punto final**.
+
 ## 3. Tabla operativa
 
 | Parámetro / analito | Técnica | Norma o referencia | Unidades | Condiciones |
@@ -251,7 +287,7 @@ Fíjate en que **Volhard es a la vez el ejemplo de argentometría y el de valora
 
 ## 4. Puntos críticos para el examen
 
-- **Punto de equivalencia (teórico) ≠ punto final (observado).** La diferencia es el error de valoración, y se corrige con un **blanco**.
+- **Punto de equivalencia (teórico) ≠ punto final (observado).** El blanco corrige los consumos que prevé el método, no cualquier error de detección del punto final.
 - **El agente valorante del cloruro es el nitrato de plata (AgNO₃)** — núcleo repetido en dos convocatorias.
 - **Valoración por retroceso: se añade un exceso conocido y se valora lo que NO ha reaccionado** — núcleo repetido en las tres convocatorias.
 - **Volhard es argentometría *y* retroceso** a la vez, con tiocianato e indicador de Fe(III), en medio ácido. Mohr es directa, con cromato, en medio neutro.
@@ -262,7 +298,7 @@ Fíjate en que **Volhard es a la vez el ejemplo de argentometría y el de valora
 - **Franja de Schellbach**: dos puntas enfrentadas que se tocan en la lectura.
 - **Purgar la burbuja de la punta** antes de empezar: si se suelta después, el volumen leído sale por exceso.
 - **Ambientar** bureta y pipeta con el propio valorante; **lavar las paredes del Erlenmeyer con agua destilada no altera el resultado**.
-- **El material volumétrico no se seca en estufa**: el calor lo descalibra.
+- **El secado sigue las instrucciones del fabricante**; no se impone una prohibición universal de estufa. Evitar calor no autorizado y recuperar la temperatura de uso.
 - **El Erlenmeyer no es material volumétrico**: su graduación es aproximada.
 - **Temperatura de referencia: 20 °C**, y la calibración del material volumétrico es **gravimétrica** (UNE-EN ISO 4787).
 - **El material de vidrio se calibra, pero no se ajusta.** Ajustar solo cabe en un instrumento que se pueda corregir, como la balanza.

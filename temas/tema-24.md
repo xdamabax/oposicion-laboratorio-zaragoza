@@ -26,7 +26,7 @@ fuentes:
 
 Este tema junta tres cosas que comparten familia pero no norma: los **electrodos selectivos de iones** (ISE), que son la generalización del electrodo de vidrio del tema 23 a cualquier ion; la **conductividad**, que es la medida electroquímica **inespecífica** por excelencia; y el **oxígeno disuelto por sonda**, que no es potenciometría sino **amperometría** —se mide una corriente, no un potencial—.
 
-El hilo común es que en los tres casos **el sensor va metido en la muestra y da el resultado en el sitio**: son las medidas de campo del análisis de aguas, las que se hacen a pie de río o en línea en una ETAP, y no en el laboratorio.
+El hilo común es que en los tres casos **el sensor va metido en la muestra y da el resultado en el sitio**: pueden hacerse a pie de río o en línea en una ETAP, **y también en el laboratorio**. El uso de campo no excluye el ensayo de laboratorio.
 
 | Qué regula | Norma o referencia | Lógica |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ El hilo común es que en los tres casos **el sensor va metido en la muestra y da
 | **Oxígeno disuelto, método electroquímico** | **UNE-EN ISO 5814:2013** (ISO 5814:2012) | Ensayo normalizado |
 | Oxígeno disuelto, método óptico | **ISO 17289:2014** | Alternativa moderna |
 | Oxígeno disuelto, método yodométrico (Winkler) | UNE-EN 25813 — **tema 22** | Volumetría |
-| Exigencia al método en agua de consumo | **RD 3/2023**, anexo III | Norma con rango de ley |
+| Exigencia al método en agua de consumo | **RD 3/2023**, anexo III | Reglamento estatal |
 
 ## 2. Desarrollo
 
@@ -76,6 +76,8 @@ Es la ecuación de Nernst del tema 23, aplicada a un ion cualquiera:
 
 Y el punto que gobierna todo el apartado siguiente: **el electrodo responde a la ACTIVIDAD, no a la concentración**. Las dos solo coinciden en disolución muy diluida.
 
+Una indicación de **cero mV no significa concentración cero**: el potencial incluye el término constante K y depende de la referencia de la celda.
+
 #### Selectividad, que no especificidad
 
 **Ningún electrodo es específico**: todos responden, en mayor o menor medida, a otros iones. Eso se recoge en la **ecuación de Nikolsky-Eisenman**, que es la de Nernst con un sumando por cada ion interferente, cada uno pesado por su **coeficiente de selectividad potenciométrico** K(X,Y).
@@ -83,12 +85,16 @@ Y el punto que gobierna todo el apartado siguiente: **el electrodo responde a la
 Cómo se lee ese coeficiente —y es la pregunta típica:
 
 - **Cuanto más pequeño, mejor.**
-- **K < 1**: el electrodo prefiere el analito. **K > 1**: prefiere al interferente, y el electrodo no sirve para esa matriz.
-- Un coeficiente de **10⁻³** significa que hace falta **mil veces más** interferente que analito para producir la misma señal.
+- Un coeficiente menor indica mayor preferencia por el ion principal, **en las condiciones especificadas de determinación**. La contribución real también depende de actividades y cargas: **K mayor que uno no vuelve por sí solo inutilizable cualquier matriz**, si el interferente está en cantidad suficientemente baja.
+- **Para iones de igual carga en el modelo simplificado, un coeficiente de 10⁻³ requiere actividad mil veces mayor del interferente para igual contribución.** No debe generalizarse esa proporción a cargas diferentes. Fuente: **IUPAC Gold Book, potentiometric selectivity coefficient, P04791** — https://goldbook.iupac.org/terms/view/P04791
 
 El **error alcalino** del electrodo de vidrio que se vio en el tema 23 no es más que esto: un coeficiente de selectividad frente al Na⁺ que deja de ser despreciable cuando el H⁺ escasea.
 
 #### Lo que define a un ISE
+
+Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones.
+
+En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791.
 
 **Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**.
 
@@ -115,20 +121,26 @@ Se preparan patrones del ion, se mide el potencial de cada uno y se representa *
 Se añade **el mismo volumen de una disolución concentrada** a los patrones **y** a las muestras. En el caso del **fluoruro**, el TISAB hace **tres cosas a la vez**, y hay que saber las tres:
 
 1. **Fija una fuerza iónica alta y constante** en todos: el coeficiente de actividad pasa a ser el mismo, y el electrodo **puede leerse como si midiera concentración**.
-2. **Tampona el pH** en torno a **5 - 5,5**: por debajo, el fluoruro se protona a HF y HF₂⁻, que el electrodo **no ve**; por encima, el **OH⁻ interfiere** por su parecido de tamaño y carga con el F⁻.
+2. **Tampona el pH adecuado al método**, por ejemplo alrededor de **5 - 5,5** en la formulación citada: a pH demasiado bajo disminuye el fluoruro libre por protonación a HF y HF₂⁻; **a pH demasiado alto, el OH⁻ puede interferir**. **5,5 no es un umbral universal de interferencia**: el rango depende del sensor, concentraciones y formulación. Como ejemplo, la ficha Metrohm Combined dF ISE v4 declara rango de pH 5 a 7 para ese modelo.
 3. **Acompleja los interferentes**: lleva **CDTA**, que secuestra **Al³⁺ y Fe³⁺**. Sin él, esos cationes forman complejos con el fluoruro y lo **esconden**, y el resultado sale bajo.
 
 #### b) Adiciones patrón (adición conocida)
 
+La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia.
+
 Se mide la muestra, se le añade **un volumen pequeño de un patrón concentrado** y se vuelve a medir. Del **salto de potencial** y de la dilución se despeja la concentración original.
 
-**Su ventaja es la matriz:** la medida de antes y la de después se hacen **en la misma muestra**, así que todo lo que la matriz hace al electrodo afecta igual a las dos y **se cancela**. Es el método cuando la muestra es compleja o cuando no se sabe reproducir su matriz en los patrones.
+**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**.
 
 **Su inconveniente:** es más lento y hace falta conocer la **pendiente real** del electrodo, que se comprueba con dos patrones separados una década.
 
+Después de añadir patrón, la concentración por balance de cantidades, antes de considerar actividades, es **c_final = (c_inicial·V_muestra + c_patron·V_adicion)/(V_muestra + V_adicion)**, suponiendo volúmenes aditivos. No basta sumar concentraciones ni ignorar el volumen añadido. La adición debe mezclar y equilibrarse antes de aceptar el nuevo potencial. El patrón concentrado limita el cambio de matriz y dilución, pero no elimina la necesidad de corregirlos.
+
+La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23.
+
 #### c) Valoración potenciométrica con un ISE
 
-El electrodo hace de **detector del punto final** de una volumetría, como en el tema 23. Es **el más exacto de los tres**, porque no depende del valor absoluto del potencial sino de **dónde** salta.
+El electrodo hace de **detector del punto final** de una volumetría, como en el tema 23. Puede ofrecer alta exactitud cuando la reacción y detección están bien definidas; una inflexión no depende de un desplazamiento constante de todo el potencial. **No es una garantía universal de superioridad**: importan interferencias, cinética, forma de curva y control del valorante.
 
 > **Regla para el examen:** directa si la matriz es sencilla y hay muchas muestras; adiciones patrón si la matriz es complicada; valoración si se quiere exactitud.
 
@@ -138,7 +150,7 @@ El electrodo hace de **detector del punto final** de una volumetría, como en el
 
 #### Qué se mide
 
-La **capacidad de una disolución para conducir la corriente eléctrica**, que se debe a los **iones** que lleva disueltos. Es una medida **inespecífica**: no dice qué iones hay, sino **cuántos** en conjunto. Por eso la norma la describe como un **indicador práctico de la concentración de solutos ionizables**.
+La **capacidad de una disolución para conducir la corriente eléctrica**, que se debe a los **iones** que lleva disueltos. Es una medida **inespecífica**: integra contribuciones de concentración, carga y movilidad de los iones, sin identificarlos individualmente. Por eso es un **indicador práctico de la concentración de solutos ionizables**, no un recuento universal de iones ni una medida específica de cloruros.
 
 | Magnitud | Símbolo | Relación | Unidad |
 | --- | --- | --- | --- |
@@ -167,6 +179,8 @@ No se calibra el aparato contra una escala, se determina **la constante de la c�
 
 Patrones habituales, a 25 °C:
 
+Los valores de conductividad de los patrones de la tabla corresponden a **25 °C**.
+
 | Patrón | Conductividad a 25 °C |
 | --- | --- |
 | KCl **0,001 mol/L** | **147 µS/cm** |
@@ -188,6 +202,14 @@ Un detalle de fondo: **la medida se hace con corriente alterna**, no continua, p
 **Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir.
 
 #### Para qué se usa
+
+**Interpretación y precauciones.** Conductancia G y conductividad κ no son lo mismo: la primera depende también de la geometría del montaje y la segunda se obtiene aplicando la constante. Dos células pueden dar distinta G para la misma muestra y obtener la misma κ si sus constantes se aplican correctamente. La resistencia disminuye cuando aumenta la conductancia, y resistividad y conductividad son inversas con unidades coherentes.
+
+La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse.
+
+En aguas muy poco conductoras, **el CO₂ del aire puede aumentar la lectura** al formar especies iónicas. Una célula de flujo apropiada puede limitar ese intercambio. Las burbujas adheridas pueden **aumentar resistencia y reducir conductividad aparente**; agitar no debe introducir nuevas burbujas. Incluso una sonda inductiva requiere conservación y limpieza de superficies según su diseño: ausencia de electrodos metálicos en contacto no implica inmunidad a toda incrustación. Fuente: **Mettler Toledo, A Guide to Conductivity Measurement, §§2.6, 2.7 y 3**.
+
+Convertir conductividad a sólidos disueltos requiere **un factor empírico dependiente de la composición**, no una equivalencia universal. Una conductividad similar no identifica los mismos iones ni demuestra igual calidad de dos aguas.
 
 Control de ETAP y de **ósmosis inversa**; vigilancia de **agua ultrapura** (que se expresa mejor como resistividad: el agua ultrapura llega a **18,2 MΩ·cm**); detección de **intrusión salina** y de **vertidos**; estimación aproximada de los **sólidos disueltos totales**; y comprobación de que una serie de muestras es homogénea.
 
@@ -229,7 +251,15 @@ Es justo la diferencia con el sensor óptico, que no consume oxígeno y **no nec
   3. **Salinidad**: cuanta más sal, **menos** oxígeno se disuelve.
 - **Cuidados:** membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir.
 
+Una lectura instrumental negativa no demuestra una concentración física negativa de oxígeno: se revisan cero, calibración, rango e incertidumbre. La estabilidad se acepta con el criterio del método; una pantalla que cambia lentamente no basta sin criterio definido.
+
 #### Los tres métodos de oxígeno disuelto, en una tabla
+
+**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012).
+
+El movimiento necesario para reponer oxígeno junto a una membrana electroquímica **no equivale a airear deliberadamente la muestra**. Se mezcla o fluye según el modelo sin introducir burbujas ni modificar indebidamente su contenido. Una sonda galvánica no necesita el período de polarización externa de una Clark, pero sí preparación, equilibrio y controles apropiados. El sensor óptico no consume oxígeno, aunque flujo, homogeneidad y equilibrio térmico pueden afectar a su tiempo de respuesta. Fuentes: **YSI, DO Meter Measurement Problems? Check Out These Top Tips!** (https://ysi.com/ysi-blog/water-blogged-blog/2021/06/do-meter-measurement-problems-check-out-these-top-tips) y **Hanna, manual HI6000, Dissolved Oxygen Measurements**.
+
+La membrana y el electrolito deben estar en estado correcto; no se interpreta una rotura como forma de acelerar la respuesta. Las especificaciones de materiales, flujo, polarización y mantenimiento son **del modelo**. Color o turbidez pueden dificultar Winkler con detección visual, pero **no obligan a elegir exclusivamente sensor óptico**: el método electroquímico ISO 5814 también es adecuado para aguas coloreadas o turbias según su alcance público.
 
 | Método | Norma | Fundamento | Cuándo |
 | --- | --- | --- | --- |
@@ -249,7 +279,7 @@ Es justo la diferencia con el sensor óptico, que no consume oxígeno y **no nec
 | **Fluoruro** en agua | **Electrodo selectivo** de membrana cristalina (**LaF₃**) | Doctrina y documentación de fabricante | mg/L | Con **TISAB**: fuerza iónica constante, pH **5 - 5,5** y **CDTA** para acomplejar **Al³⁺ y Fe³⁺**. Incertidumbre exigida por el RD 3/2023: **20 %** |
 | **Amonio** o **CO₂** disueltos | **Electrodo selectivo sensible a gases** | Doctrina | mg/L | Por dentro es un **electrodo de pH**: el gas atraviesa la membrana y cambia el pH de la película de electrolito |
 | **Calcio, potasio, nitrato** | **Electrodo selectivo de membrana líquida** (ionóforo en PVC) | Doctrina | mg/L o mmol/L | Ajustador de fuerza iónica; ojo al **coeficiente de selectividad** frente a los iones de la matriz |
-| **Cualquier ion con ISE**, matriz complicada | Potenciometría directa por **adiciones patrón** | Doctrina | mg/L | La matriz es la misma antes y después de la adición: **se cancela el efecto de matriz** |
+| **Ion con ISE**, matriz complicada | Potenciometría por **adiciones patrón** | IUPAC 08030; documentación de fabricante | mg/L | Comparación en la propia matriz bajo condiciones controladas; **no elimina todas las interferencias** |
 | Exigencia al método en agua de consumo | — | **RD 3/2023**, anexo III, parte D, tabla 15 | % del valor paramétrico | Incertidumbre de medida (k = 2): **conductividad 15 %**, **fluoruro 20 %**. Aparatos in situ **verificados y ajustados**, con la última calibración documentada (parte B.4) |
 
 ## 4. Puntos críticos para el examen
@@ -262,7 +292,7 @@ Es justo la diferencia con el sensor óptico, que no consume oxígeno y **no nec
 - **Los ISE responden a la ACTIVIDAD, no a la concentración.** De ahí el ajustador de fuerza iónica.
 - **Selectividad, no especificidad.** Ecuación de **Nikolsky-Eisenman** y **coeficiente de selectividad**: **cuanto más pequeño, mejor**; menor que 1, prefiere el analito; mayor que 1, prefiere el interferente.
 - **El TISAB del fluoruro hace tres cosas: fija la fuerza iónica, tampona el pH entre 5 y 5,5, y acompleja el Al³⁺ y el Fe³⁺ con CDTA.** Sin él, el aluminio y el hierro esconden el fluoruro y el resultado sale bajo.
-- **Métodos de cálculo: calibración directa, adiciones patrón y valoración potenciométrica.** Las **adiciones patrón** se usan cuando la matriz es complicada, porque **la matriz se cancela**.
+- **Métodos de cálculo: calibración directa, adiciones patrón y valoración potenciométrica.** Las adiciones ayudan a compensar ciertos efectos de matriz bajo condiciones válidas; **no eliminan automáticamente todos los interferentes**.
 - **La conductividad es una medida INESPECÍFICA**: indica la concentración total de solutos ionizables, no qué iones hay.
 - **Constante de célula: K = l / A**, en cm⁻¹. **Conductividad = conductancia × constante de célula.**
 - **1 mS/m = 10 µS/cm.**

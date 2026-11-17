@@ -78,8 +78,8 @@ Eso explica las dos preguntas literales del examen y la relación con el resto d
 | **Clorato, cloruro y clorito** | **UNE-EN ISO 10304-4:2022** | Ensayo normalizado |
 | **Bromato** | **UNE-EN ISO 15061:2002** | Ensayo normalizado |
 | **Cationes** (Li⁺, Na⁺, NH₄⁺, K⁺, Mn²⁺, Ca²⁺, Mg²⁺, Sr²⁺, Ba²⁺) | **UNE-EN ISO 14911:2000** | Ensayo normalizado. **Agua y agua residual** |
-| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma con rango de ley |
-| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma con rango de ley |
+| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma reglamentaria |
+| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma reglamentaria |
 
 ## 2. Desarrollo
 
@@ -98,6 +98,8 @@ Ahí está todo: **la separación no la produce ninguna reacción, sino un repar
 **Un poco de historia, que a veces se pregunta:** la técnica la bautizó el botánico ruso **Mijaíl Tswett** al separar pigmentos vegetales en una columna de carbonato de calcio —de ahí el nombre, del griego «color» y «escribir»—. La teoría la desarrollaron **Martin y Synge**, **Premio Nobel de Química de 1952**.
 
 **Las ventajas que le reconoce el CEM:** *«su sensibilidad, su fácil adaptación a las determinaciones cuantitativas exactas, su idoneidad para la separación de especies no volátiles o termolábiles y su gran aplicabilidad»*.
+
+**Alcance del fundamento.** La separación depende de interacciones diferentes de los solutos con las fases. La fase móvil transporta y, según técnica, su composición participa decisivamente en el equilibrio y la selectividad: no se interpreta la descripción de transporte como que su química sea irrelevante. La columna no asigna por sí sola una concentración. Una sustancia sin respuesta adecuada al detector puede eluir sin dar un pico observable. La cromatografía puede separar especies incoloras; su nombre histórico no la limita a pigmentos. El orden de salida no depende simplemente de cuál soluto estaba más concentrado. Un resultado cromatográfico requiere separación, detección, identificación y calibración coherentes.
 
 ### 2.2. El cromatograma: lo que se mide en él
 
@@ -123,6 +125,8 @@ Cuanto mayor es k, **más favorece el reparto a la fase estacionaria**, más ret
 > **α = k_B / k_A = (t_R,B − t_M) / (t_R,A − t_M)**, con A el que sale antes.
 
 Si los dos eluyen a la vez, **α = 1,00**; en cualquier otro caso, **α > 1,00**.
+
+**Lectura del cromatograma.** Un pico no equivale siempre a una sola sustancia: puede haber coelución; tampoco el número de picos garantiza contar todos los componentes de la muestra. Coincidir en tiempo de retención no identifica inequívocamente un analito sin los controles de selectividad del método. Se comparan patrones y condiciones; una fortificación puede ayudar a reconocer un pico, pero no elimina un interferente coeluido. El marcador no retenido permite estimar t_M; no todo primer pico observado es necesariamente ese marcador. El tiempo ajustado y k descuentan el transporte no retenido. Para comparar selectividad se usan tiempos ajustados, no el simple cociente de tiempos brutos. α se define como k del más retenido dividido por k del menos retenido cuando ambos están retenidos; no se interpreta un cociente con denominador nulo. Retención, área y altura describen propiedades diferentes. La señal del pico solo da concentración cuando se relaciona con una calibración y una preparación definidas.
 
 ### 2.3. Eficiencia: platos teóricos y ensanchamiento de banda
 
@@ -157,6 +161,8 @@ Y su consecuencia práctica: **existe una velocidad óptima de fase móvil**, la
 
 **La asimetría del pico** se mide trazando una horizontal **al 10 % de la altura** y comparando las dos mitades: el **factor de asimetría T**. El CEM lo pide como comprobación del cromatograma: *«la forma de los picos es adecuada, **no presentando colas o artefactos** (desviaciones de la forma gaussiana del pico)»*.
 
+**Eficiencia y geometría del pico.** Los platos teóricos son un modelo, no compartimentos físicos contables dentro de la columna. H y L deben expresarse en unidades compatibles. Comparar N requiere considerar longitud y condiciones: una columna más larga puede tener más platos sin menor H. Reducir H aumenta eficiencia a igual L. El mínimo de van Deemter representa un compromiso entre contribuciones; ni reducir al mínimo ni aumentar al máximo el caudal asegura mejor separación. La anchura también puede aumentar por inyección, conexiones o detector: no se atribuye todo ensanchamiento a la columna. La sobrecarga puede distorsionar picos y alterar retención o resolución. Una cola y un frente no son la misma forma. Las definiciones de asimetría al 10 % y factor de cola al 5 % no se intercambian sin indicar el criterio. El área y la altura no se sustituyen arbitrariamente: un pico más ancho puede tener menor altura conservando un área semejante.
+
 ### 2.4. Resolución: la pregunta del examen
 
 **La definición del CEM (QU-004), que es la que conviene tener escrita:**
@@ -178,6 +184,8 @@ La tercera opción que ofrecen —*«la anchura de picos no tiene influencia en 
 | **Eficiencia (N)** | Columna más larga, relleno más fino, velocidad óptima | La resolución crece con **√N**: para doblarla hay que **cuadruplicar** los platos |
 | **Selectividad (α)** | Cambiar la fase estacionaria o la composición de la fase móvil | Es lo **más eficaz** cuando α está cerca de 1 |
 | **Factor de retención (k)** | Retener más el soluto | Mejora mucho si k era pequeño, pero **por encima de k ≈ 10 casi no compensa**, y alarga el análisis |
+
+**Uso de la resolución.** La fórmula indicada emplea anchuras de base: no se sustituyen por anchuras a media altura sin usar la fórmula correspondiente. Tiempos y anchuras deben usar la misma unidad para que Rs sea adimensional. Si los centros se separan más con anchuras iguales, Rs aumenta; si ambos picos se ensanchan manteniendo centros, disminuye. El criterio Rs > 1,5 es el del QU-004 citado, no garantía de ausencia de todo sesgo en cualquier pareja de picos asimétricos o de tamaños muy distintos. Duplicar resolución solo mediante N exige cuadruplicarlo si los demás factores se mantienen. Aumentar longitud puede mejorar separación a costa de tiempo y presión; no equivale a cambiar selectividad. Si α es uno, aumentar solo eficiencia no crea una diferencia de afinidad entre solutos.
 
 ### 2.5. Tipos de cromatografía
 
@@ -208,6 +216,8 @@ Hay **tres formas de clasificarla**, y el examen puede entrar por cualquiera.
 
 El **CEM (QU-004, 4.2)** lo resume para la cromatografía líquida en **cuatro tipos**, y merece la pena porque es la lista de un documento oficial: **reparto, adsorción, IÓNICA y exclusión por tamaños o en geles**.
 
+**Matices de clasificación.** En una columna tubular abierta la fase estacionaria no tiene por qué estar empaquetada: puede recubrir la pared. Adsorción describe interacción con una superficie; reparto, distribución entre fases; intercambio iónico, interacción con cargas fijas; exclusión por tamaño, acceso diferente a poros. La exclusión ideal no se interpreta como retener más a los más grandes por fuerza de carga: los excluidos de poros recorren menos volumen accesible y salen antes. La cromatografía en papel puede describirse mediante reparto con agua retenida en la celulosa, además de otras interacciones; papel como soporte no significa que siempre haya un único mecanismo. La cromatografía iónica no se limita de modo universal a iones inorgánicos: existen aplicaciones de especies orgánicas ionizables. En este tema se priorizan los iones de aguas del programa. Reconocer afinidad como categoría no requiere técnicas microbiológicas operativas.
+
 ### 2.6. La columna separa: la otra pregunta literal
 
 **«La columna cromatográfica, tanto en cromatografía de gases como en cromatografía de líquidos: a) Cuantifica. b) Detecta. c) SEPARA.»** Literal en **1246 #15** y **1322 #32**.
@@ -222,6 +232,8 @@ Es la división del trabajo del equipo, y conviene verla entera:
 
 El CEM lo confirma al ordenar las condiciones de procesamiento de la señal (5.3.2): *«selección del tipo de respuesta: **área o altura**»*.
 
+**Separación y cuantificación.** El detector convierte una propiedad del efluente en señal; el sistema de datos integra y calcula mediante el modelo definido. Un área sin calibración no es concentración. Dos analitos pueden tener distinta respuesta por igual concentración. Integrar un pico coeluido puede sumar aportes y sesgar el resultado del analito. Cambiar manualmente una ventana para obtener el valor deseado no es una corrección válida: se aplican criterios documentados y se conserva trazabilidad. Umbral demasiado alto puede omitir señales pequeñas; demasiado bajo puede integrar ruido. Un cromatograma sin picos no prueba por sí solo ausencia de todos los componentes.
+
 ### 2.7. Cromatografía iónica: fundamento
 
 La cromatografía iónica es **cromatografía de líquidos con mecanismo de intercambio iónico**, aplicada a **iones inorgánicos** y detectada casi siempre **por conductividad**.
@@ -235,7 +247,7 @@ La cromatografía iónica es **cromatografía de líquidos con mecanismo de inte
 | **Catiónica de ácido fuerte** | **Ácido sulfónico, −SO₃⁻** | −CH₂CH₂SO₃⁻ | Mantiene la carga **incluso en medio muy ácido** |
 | **Catiónica de ácido débil** | Ácido carboxílico, −COO⁻ | −CH₂COO⁻ | **Por debajo de pH 4 se protona** y pierde capacidad |
 | **Aniónica de base fuerte** | **Amina cuaternaria, −N(CH₃)₃⁺** | −CH₂N(CH₃)₃⁺ | Mantiene la carga **incluso en medio muy básico** |
-| **Aniónica de base débil** | Amina | −CH₂CH₂NH(C₂H₅)₃⁺ | Solo protonada a pH **moderadamente** básico |
+| **Aniónica de base débil** | Amina protonable | R₃NH⁺, como esquema de amina terciaria protonada | Su carga depende del pH; al desprotonarse pierde capacidad de intercambio aniónico |
 
 **La regla mnemotécnica es directa: para separar CATIONES hace falta una resina de carga NEGATIVA (sulfónica); para separar ANIONES, una de carga POSITIVA (amina cuaternaria).**
 
@@ -252,9 +264,11 @@ La constante de ese equilibrio es el **coeficiente de selectividad**, y de ella 
 
 **La regla que hay detrás de las dos series: se retiene más el ion de MAYOR CARGA y, a igualdad de carga, el de RADIO HIDRATADO MÁS PEQUEÑO** (o el más polarizable).
 
-Consecuencia práctica que se ve en cualquier cromatograma de aguas: **el fluoruro sale el primero y el sulfato el último**.
+En el ejemplo convencional descrito, **el fluoruro sale el primero y el sulfato el último**. El orden no es universal: depende de columna, eluyente y condiciones.
 
 **La fase móvil** (el **eluyente**) suele ser un **tampón acuoso**, y **su pH y su composición iónica deciden los tiempos de retención**. Cabe **elución isocrática** —composición constante— o **en gradiente**, variando la fuerza iónica o el pH con el tiempo.
+
+**Alcance del intercambio.** Se llama intercambiador aniónico al que retiene aniones mediante grupos fijos positivos, y catiónico al que retiene cationes con grupos fijos negativos. Las cargas del grupo y del ion intercambiado no se confunden. Los contraiones del eluyente compiten por los sitios; aumentar fuerza eluyente puede acortar retención y cambiar resolución. Las resinas débiles dependen de su protonación: al protonarse carboxilato pierde carga negativa; al desprotonarse una amina pierde carga positiva. Los límites exactos de pH dependen de la resina. Las series y el orden de elución descritos son ejemplos, no reglas universales independientes de columna y eluyente. Se respeta compatibilidad química, capacidad y condiciones del fabricante. Una carga de muestra excesiva puede saturar capacidad, distorsionar picos o dificultar cuantificar un ion pequeño junto a otro muy abundante. Los iones de distinta valencia requieren considerar equivalentes y no solo sumar moles como si toda carga fuera uno.
 
 ### 2.8. Instrumentación del cromatógrafo iónico
 
@@ -297,7 +311,7 @@ Los bucles van **de 0,5 µL a 5 mL**. La ventaja es que **el volumen inyectado l
 
 **El problema que resuelve:** el detector mide **conductividad**, pero **el eluyente está lleno de iones** —es un electrolito—, así que su conductividad de fondo taparía la del analito.
 
-**Cómo lo resuelve:** el supresor **elimina selectivamente los iones del eluyente sin tocar los del soluto**.
+**Cómo lo resuelve:** el supresor transforma el eluyente en una forma menos conductora. También cambia contraiones y puede modificar la respuesta del analito: no se describe correctamente como «sin tocar los iones del soluto».
 
 | Si se separan… | El eluyente es… | El supresor lleva… | Y convierte el eluyente en… |
 | --- | --- | --- | --- |
@@ -314,11 +328,13 @@ Es un **detector universal para analitos catiónicos y aniónicos**, y su razón
 
 **Detectores alternativos en cromatografía iónica:**
 
-- **UV/visible**, si el analito absorbe. **Bromato y nitrato** se ven bien en UV.
+- **UV/visible**, si el analito absorbe. La utilidad depende del analito y del nivel: no se presume sensibilidad suficiente de UV directo para bromato a trazas.
 - **UV indirecto**: si es el **eluyente** el que absorbe, el paso del analito produce una **disminución** de absorbancia.
 - **Reacción post-columna (PCR)** más detección espectrofotométrica: es lo que hace la **ISO 11206** para el **bromato**, y permite bajar el límite de detección.
 
 **h) Sistema de datos.** Integra el pico por **área o altura** y, con la recta de calibrado, da la concentración.
+
+**Operación instrumental y supresión.** La compatibilidad del eluyente, columna, supresor y detector se comprueba como conjunto. Existen supresores químicos y electrolíticos y sistemas sin supresión: no toda cromatografía iónica necesita la misma configuración. En aniones con hidróxido, la supresión puede convertir el eluyente en agua; con carbonato forma ácido carbónico débil. Los analitos también cambian de forma de contraión, lo que puede aumentar su respuesta de conductividad; no se afirma que permanezcan químicamente intactos. El supresor no es la columna analítica ni elimina todo interferente de muestra. Una pérdida de eficacia puede elevar fondo y empeorar sensibilidad; se revisa su estado según el procedimiento, sin improvisar regeneración. La conductividad depende de temperatura y de todos los iones presentes; el control térmico y una línea base estable importan. La inyección debe ser reproducible y adecuada al modo de bucle completo o parcial del sistema. Más volumen puede aumentar señal, pero también carga, ensanchamiento y efectos de matriz. Se revisan fugas, caudal, presión, burbujas, contaminación, conexiones y precolumna ante cambios de retención o forma. La precolumna debe ser compatible; no evita todo deterioro ni sustituye filtrar cuando el método lo requiere. El orden de equipos debe conservar columna, supresión cuando exista y detección en la posición prevista. Una reacción post-columna forma la señal después de separar; no reemplaza la separación ni autoriza invertir el orden de reactivos del método.
 
 ### 2.9. Calibración y control del equipo (CEM, QU-004)
 
@@ -343,6 +359,8 @@ El CEM calibra el cromatógrafo **por interpolación entre dos puntos**, y su ma
    - **La resolución entre picos es siempre superior a 1,5.**
    - **La forma de los picos es adecuada: sin colas ni artefactos.**
    - **La ventana de integración es la adecuada.**
+
+**Alcance y controles de calibración.** El QU-004 describe su procedimiento de interpolación entre dos MRC; no obliga a que todo método de cromatografía iónica use exactamente dos niveles. La función de respuesta debe representar el método, detector y rango reales, con criterios definidos de aceptación. Sus condiciones ambientales, material y comprobaciones se atribuyen a ese procedimiento, no a una ley universal de todos los equipos. Repetir lecturas estima dispersión, pero no excluye errores comunes de preparación. Se documentan lote y concentración de patrones, diluciones, parámetros, blanco, tiempos, áreas o alturas, integración, controles e incidencias. El intervalo de calibración no se amplía solo porque el programa permita extrapolar. Cambios de columna, eluyente, caudal, volumen o detector pueden exigir reequilibrio y revisión de respuesta. Los blancos y controles independientes verifican aspectos que el ajuste de una recta no demuestra. Un pico del blanco tras una muestra concentrada puede indicar arrastre; se investiga y evalúan resultados afectados.
 
 ### 2.10. Utilización de la cromatografía iónica en el análisis de agua
 
@@ -385,6 +403,8 @@ El CEM calibra el cromatógrafo **por interpolación entre dos puntos**, y su ma
 
 **Preparación de la muestra.** La cromatografía iónica es exigente con lo que entra en la columna: **se filtra a 0,45 µm** y, si la matriz es salina o muy cargada, **se diluye**. Los **cartuchos de acondicionamiento** (OnGuard y equivalentes) retiran selectivamente lo que estorba: por ejemplo, **exceso de cloruro** cuando se busca bromato a 10 µg/L.
 
+**Aplicación responsable a aguas.** La filtración define una fracción disuelta operacional y debe ser compatible con el analito; no elimina toda matriz disuelta ni sustituye conservación. Un cartucho selectivo puede retirar interferentes, pero debe comprobarse que no pierde el analito ni añade contaminación. Diluir reduce carga de matriz y concentración del analito; el LC referido a muestra aumenta con el factor de dilución. El bromato puede determinarse a trazas por inyección directa y conductividad suprimida cuando matriz y método lo permiten; preconcentración, reacción post-columna u otras estrategias son opciones, no obligaciones universales. Bromuro, bromato, cloruro, clorito y clorato son especies distintas que no se confunden por compartir elemento. La cromatografía de cationes distingue calcio y magnesio; la dureza se calcula según la base de expresión, no sumando sin factores cualquier cifra. Los valores paramétricos y sus notas se aplican al punto y condiciones que indica el RD 3/2023; cumplir solo la relación combinada de nitrato y nitrito no sustituye cumplir sus requisitos individuales. La incertidumbre de rendimiento no es tolerancia adicional sobre un límite. El método para un solo ion se elige por prestaciones, matriz, selectividad y recursos, sin excluir automáticamente cromatografía por tener un único objetivo.
+
 ## 3. Tabla operativa
 
 | Parámetro / analito | Técnica | Norma o referencia | Unidades | Condiciones |
@@ -392,11 +412,11 @@ El CEM calibra el cromatógrafo **por interpolación entre dos puntos**, y su ma
 | **Cloruro, sulfato, nitrato, nitrito, fluoruro, bromuro y fosfato** | **Cromatografía iónica de ANIONES**, con supresión y detector de conductividad | **UNE-EN ISO 10304-1:2009** | mg/L | **Una inyección, siete aniones, ~15 min.** LI de aplicación: **0,05 mg/L** (Br⁻, NO₂⁻) y **0,1 mg/L** (el resto). Vale para consumo, subterránea, superficial, **residual**, lixiviados y agua de mar |
 | **Sodio, potasio, calcio, magnesio, amonio, litio, manganeso, estroncio y bario** | **Cromatografía iónica de CATIONES** | **UNE-EN ISO 14911:2000** | mg/L | **Es la respuesta documentada** de 1233 C2 #3, 1246 C2 #3 y 1322 C2 #30. Método **para agua y agua residual** |
 | **Clorato y clorito** | Cromatografía iónica de aniones | **UNE-EN ISO 10304-4:2022** | mg/L | VP **0,25 mg/L**, o **0,7** si se desinfecta con **dióxido de cloro o hipoclorito**. Aguas **débilmente contaminadas** |
-| **Bromato** | Cromatografía iónica | **UNE-EN ISO 15061:2002**; **ISO 11206:2011** con **reacción post-columna** | µg/L | VP **10 µg/L**: hace falta preconcentrar o usar PCR. Subproducto de la **ozonización** |
+| **Bromato** | Cromatografía iónica | **UNE-EN ISO 15061:2002**; **ISO 11206:2011** con **reacción post-columna** | µg/L | VP **10 µg/L**: se demuestra el LC requerido; hay métodos de inyección directa con conductividad suprimida y otras estrategias según matriz. Subproducto de la **ozonización** |
 | **Cromato, ioduro, sulfito, tiocianato y tiosulfato** | Cromatografía iónica de aniones | **UNE-EN ISO 10304-3:1997** | mg/L | Aniones menos habituales; norma **en vigor**, confirmada en 2008 |
 | **Dureza** (Ca²⁺ + Mg²⁺) | Cromatografía iónica de cationes, o complexometría con EDTA | UNE-EN ISO 14911; **tema 33** | mg/L CaCO₃ | La cromatografía da **los dos cationes por separado**; la volumetría, la suma |
-| **Un solo anión de rutina** | Volumetría, electrodo selectivo o espectrofotometría | **Temas 22, 24 y 25** | mg/L | Si solo hace falta **un** parámetro, la cromatografía no compensa |
-| **Metales** (Cd, Pb, Hg, As, Cr, Ni…) | **ICP-MS** o absorción atómica | **Temas 27 y 26** | µg/L | **No es cromatografía iónica**: es la confusión que buscan los distractores |
+| **Un solo anión de rutina** | Volumetría, electrodo selectivo o espectrofotometría | **Temas 22, 24 y 25** | mg/L | La elección para un solo parámetro depende de las prestaciones, matriz y recursos; no se excluye la cromatografía por ese hecho |
+| **Metales** (Cd, Pb, Hg, As, Cr, Ni…) | **ICP-MS** o absorción atómica | **Temas 27 y 26** | µg/L | Técnicas habituales para trazas; la cromatografía también puede separar especies metálicas con un método adecuado |
 | **Trihalometanos, plaguicidas organoclorados, COV** | **Cromatografía de GASES** (purga y trampa, ECD, MSD) | **Tema 31** | µg/L | Compuestos **volátiles y termoestables** |
 | **HAP, benzo(a)pireno, plaguicidas polares** | **Cromatografía de LÍQUIDOS** (fluorescencia, DAD, MS) | **Tema 32** | µg/L | Compuestos **no volátiles o termolábiles** |
 | **Exigencia legal, agua de consumo** | — | **RD 3/2023**, anexo III, D | — | **No impone método.** **LC ≤ 30 %** del valor paramétrico; **LC y LD < VP**; incertidumbre de la **tabla 15** |
@@ -495,3 +515,6 @@ El CEM calibra el cromatógrafo **por interpolación entre dos puntos**, y su ma
 10. **Que los analitos de la parte 2 «pasaran» a la parte 1 es deducción mía.** Lo documentado es que la ficha de UNE declara que la **UNE-EN ISO 10304-1:2009 anula a la UNE-EN ISO 10304-2:1997**, y que el catálogo del ISO marca la **ISO 10304-2:1995 como anulada** sin nombrar sustituta. Que la parte 1 los recoja es razonable —su alcance publicado incluye **aguas residuales** y los mismos aniones más el fluoruro—, pero **el ISO no lo dice con esas palabras**.
 
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que el tema 29.
+
+
+**Revisión de apoyo a la ampliación (17/11/2026).** CEM QU-004, 4 y 5 (https://www.cem.es/sites/default/files/qu-004_digital_0.pdf); Metrohm, *Ion chromatography guide* (https://www.metrohm.com/en_ae/service/product-help-center/ion-chromatography/ion-chromatography-guide.html); Thermo Scientific, *Ion Chromatography Solutions: Bromate Analysis in Drinking Water*, BR70261 (https://documents.thermofisher.com/TFS-Assets/CMD/brochures/BR-70261-Ion-Chromatography-Bromate-Analysis-Drinking-Water-BR70261-EN.pdf); ISO 10304-1:2007, alcance público (https://www.iso.org/standard/46004.html). Los casos de cálculo son originales y desarrollan los conceptos del apunte y Harris, *Análisis Químico Cuantitativo*. Se matizan supresión, orden de elución, identificación por picos, alcance de calibración y selección de métodos.

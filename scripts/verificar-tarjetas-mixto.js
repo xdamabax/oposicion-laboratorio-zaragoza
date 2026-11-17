@@ -629,6 +629,10 @@ async function controles(nav, base, dato, sab) {
     }
     const { pag, leidas } = await sesionMixta(nav, base, {
       temas: [TEMA_SM2],
+      // Todas las de núcleo: el sorteo de 20 puede traer menos de tres
+      // tarjetas al crecer el banco teórico y dejar sin medir el ciclo SM-2.
+      nucleo: 'solo',
+      cuantas: 0,
       progreso,
       antesDeValorar: sab === 5 ? cruza : null,
     })
@@ -675,7 +679,7 @@ async function controles(nav, base, dato, sab) {
 
   /* 6. Las no sabidas, a la lista de falladas */
   await control(NOMBRES[5], async () => {
-    const { pag, leidas } = await sesionMixta(nav, base)
+    const { pag, leidas } = await sesionMixta(nav, base, { nucleo: 'solo', cuantas: 0 })
     if (sab === 6) {
       await pag.evaluate((clave) => {
         const p = JSON.parse(localStorage.getItem(clave))
@@ -713,7 +717,7 @@ async function controles(nav, base, dato, sab) {
     const titulos = await pag.evaluate(() =>
       [...document.querySelectorAll('label[title]')].map((l) => l.getAttribute('title').replace(/^\d+\.\s*/, '')),
     )
-    await configurar(pag, { tipo: 'mixta', temas: TEMAS_MIXTA })
+    await configurar(pag, { tipo: 'mixta', temas: TEMAS_MIXTA, nucleo: 'solo', cuantas: 0 })
     await empezar(pag)
     let hecho = false
     const asoma = async (k, pag, leidas, clase) => {
@@ -724,6 +728,7 @@ async function controles(nav, base, dato, sab) {
     const leidas = await recorrer(pag, { perturbar: sab === 7 ? asoma : null })
     sinErrores(pag, 'sesión mixta')
     await pag.close()
+    if (!preguntasDe(leidas).length || !tarjetasDe(leidas).length) throw new Error('el control debe recorrer preguntas y tarjetas')
     const trozos = titulos.map((t) => normaliza(t).slice(0, 40)).filter((t) => t.length >= 20)
     for (const [k, l] of leidas.entries()) {
       const que = `${l.clase} ${k + 1}`
@@ -740,7 +745,9 @@ async function controles(nav, base, dato, sab) {
 
   /* 8. El resultado por separado, y repetir las falladas con las no sabidas */
   await control(NOMBRES[7], async () => {
-    const { pag, leidas } = await sesionMixta(nav, base)
+    // El orden sigue siendo aleatorio; la selección completa garantiza las
+    // tarjetas sabidas y no sabidas necesarias para probar la repetición.
+    const { pag, leidas } = await sesionMixta(nav, base, { nucleo: 'solo', cuantas: 0 })
     const r = await pag.evaluate(() => {
       const num = (el, a) => Number(el?.getAttribute(a))
       const parte = (p) => document.querySelector(`[data-parte="${p}"] .mixto-nota`)

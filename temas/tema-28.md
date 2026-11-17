@@ -15,7 +15,7 @@ fuentes:
   - "LibreTexts en español, Química Analítica 2.1 (Harvey), cap. 10.8 «Espectroscopia basada en dispersión»: dispersión elástica, Rayleigh frente a partículas grandes, turbidimetría y nefelometría, sus ecuaciones y el ejemplo del sulfato con cloruro de bario. — https://espanol.libretexts.org/Bookshelves/Quimica/Qu%C3%ADmica_Anal%C3%ADtica/Qu%C3%ADmica_Anal%C3%ADtica_2.1_(Harvey)/10:_M%C3%A9todos_espectrosc%C3%B3picos/10.08:_Espectroscopia_basada_en_dispersi%C3%B3n"
   - "Farmacopea Europea, capítulos generales 2.2.6 «Refractive index» y 2.2.7 «Optical rotation» (textos 01/2008), leídos en el PDF de la Ph. Eur. 7.0 de un espejo público. Ver «Dudas», punto 4. — https://www.drugfuture.com/Pharmacopoeia/EP7/DATA/20206E.PDF"
   - "Orden ICT/155/2020, de 7 de febrero, por la que se regula el control metrológico del Estado de determinados instrumentos de medida (BOE-A-2020-2573), texto consolidado: ANEXO XVI, instrumentos para medir el contenido en azúcar del mosto de uva, «denominados en adelante refractómetros», y su apéndice I. Modificado por la Orden ITU/1475/2024, de 17 de diciembre (BOE-A-2024-27147), en vigor desde el 16/01/2025. Leído literalmente. — https://www.boe.es/buscar/act.php?id=BOE-A-2020-2573"
-  - "Reglamento (CE) n.º 152/2009 de la Comisión, de 27 de enero de 2009, métodos de muestreo y análisis para el control oficial de los piensos: anexo III, parte L, «Determinación del almidón. Método polarimétrico». Leído literalmente en el DOUE L 54 de 26/02/2009 (BOE: DOUE-L-2009-80311). — https://www.boe.es/doue/2009/054/L00001-00130.pdf"
+  - "Reglamento (CE) n.º 152/2009 de la Comisión, de 27 de enero de 2009, métodos de muestreo y análisis para el control oficial de los piensos: anexo III, parte K, «Determinación del almidón. Método polarimétrico». Anexo III sustituido por el Reglamento de Ejecución (UE) 2024/771; método en parte K. — https://www.boe.es/buscar/doc.php?id=DOUE-L-2024-80376"
   - "Orden de 12 de junio de 1986 por la que se aprueban los métodos oficiales de análisis para la miel (BOE núm. 145, de 18/06/1986; BOE-A-1986-15960), método 9 «Humedad»: índice de refracción y tabla de Chataway revisada por Wedmore. Sigue vigente por la disposición adicional primera del RD 1049/2003. Leído literalmente."
   - "Real Decreto 1049/2003, de 1 de agosto, Norma de calidad relativa a la miel (BOE-A-2003-15598), texto consolidado, disposición adicional primera. Leído literalmente. — https://www.boe.es/buscar/pdf/2003/BOE-A-2003-15598-consolidado.pdf"
   - "Centro Español de Metrología, Informe de actividades 2021: proyecto SACAREF, soluciones de sacarosa certificadas «para dar cumplimiento a los requisitos para el control metrológico del Estado de refractómetros», y reforma del «laboratorio de refractómetros y polarímetros». — https://www.cem.es/sites/default/files/2022-01/Informe%20de%20actividades%202021_Destacados_final.pdf"
@@ -308,7 +308,7 @@ El Reglamento (CE) 152/2009 da la definición operativa: **N es el peso, en gram
 
 #### 2.3.5. Un método oficial que se resuelve con un polarímetro: el almidón (Ewers)
 
-El **Reglamento (CE) 152/2009, anexo III, parte L**, «Determinación del almidón — **MÉTODO POLARIMÉTRICO**», es el ejemplo perfecto de análisis polarimétrico cuantitativo de la normativa europea:
+El **Reglamento (CE) 152/2009, anexo III, parte K**, «Determinación del almidón — **MÉTODO POLARIMÉTRICO**», es el ejemplo perfecto de análisis polarimétrico cuantitativo de la normativa europea:
 
 - **Principio: dos determinaciones.** En la primera, la muestra se trata con **ácido clorhídrico diluido**; tras clarificación y filtración, **se mide la rotación óptica por polarimetría**. En la segunda, la muestra se extrae con **etanol al 40 %**; el filtrado se acidifica con clorhídrico, se clarifica y se mide igual. **La diferencia entre las dos medidas, por un factor conocido, da el almidón.**
 - La clarificación se hace con las **soluciones de Carrez I** (acetato de cinc) y **Carrez II** (ferrocianuro de potasio).
@@ -345,7 +345,7 @@ El **Reglamento (CE) 152/2009, anexo III, parte L**, «Determinación del almid�
 | **AZÚCAR EN MOSTO DE UVA** | **Refractometría** | **Orden ICT/155/2020, anexo XVI**; **OIML R 124:1997** | **°Brix** (% en masa de sacarosa) o grado alcohólico probable | Instrumento sujeto a **CONTROL METROLÓGICO DEL ESTADO**; escalón **2 × 10⁻⁴** en *n* y **0,1 %** en °Brix; **verificación periódica anual** |
 | **SUSTANCIAS ÓPTICAMENTE ACTIVAS: identidad y pureza** | **Polarimetría** | **Farmacopea Europea 2.2.7** | Grados (°) y **[α]** | Tubo de **1 dm**, **20 ± 0,5 °C**, **línea D**; lectura a **0,01°**; escala con **placas de cuarzo** y linealidad con **sacarosa** |
 | **AZÚCAR (sacarosa)** | **Sacarimetría** (polarímetro con escala de sacarímetro) | Reglamento (CE) 152/2009, anexo III, L | **Grados de sacarímetro** | Tubo de **200 mm**. N = **16,29 g** (francés), **26,00 g** (alemán), **20,00 g** (mixto) |
-| **ALMIDÓN en piensos** | **Polarimetría, método de EWERS** | **Reglamento (CE) 152/2009, anexo III, parte L** | % | **Dos medidas**: HCl diluido y extracto en **etanol al 40 %**; clarificación **Carrez I y II**; tubo de **200 mm**; **[α]_D²⁰** según el cereal |
+| **ALMIDÓN en piensos** | **Polarimetría, método de EWERS** | **Reglamento (CE) 152/2009, anexo III, parte K** | % | **Dos medidas**: HCl diluido y extracto en **etanol al 40 %**; clarificación **Carrez I y II**; tubo de **200 mm**; **[α]_D²⁰** según el cereal |
 | **Turbidez como VALOR PARAMÉTRICO** | — | **Tema 33** (consumo) y **tema 35** (residuales) | — | **Aquí solo la técnica** |
 
 ## 4. Puntos críticos para el examen
@@ -377,7 +377,7 @@ El **Reglamento (CE) 152/2009, anexo III, parte L**, «Determinación del almid�
 - **[α] = α / (l · c), con l en DECÍMETROS y c en g/mL**, a **20 °C** y línea D. Tubo de referencia: **1 dm**. Lectura del aparato: **0,01°**.
 - **La escala del polarímetro se comprueba con PLACAS DE CUARZO certificadas**; la linealidad, con **disoluciones de sacarosa**.
 - **El sacarímetro es un polarímetro con escala de azúcar**, referida a tubo de **200 mm**: **16,29 g** (francés), **26,00 g** (alemán), **20,00 g** (mixto).
-- **El ALMIDÓN en piensos se determina por POLARIMETRÍA (método de Ewers)**, Reglamento (CE) 152/2009, anexo III, **parte L**: **dos medidas**, con HCl diluido y con etanol al 40 %, y se **restan**.
+- **El ALMIDÓN en piensos se determina por POLARIMETRÍA (método de Ewers)**, Reglamento (CE) 152/2009, anexo III, **parte K**: **dos medidas**, con HCl diluido y con etanol al 40 %, y se **restan**.
 - **La polarimetría mide la rotación TOTAL**: cualquier otra sustancia ópticamente activa interfiere. Por eso el método de Ewers mide dos veces.
 
 ## Reparto con los temas vecinos
@@ -408,7 +408,7 @@ El **Reglamento (CE) 152/2009, anexo III, parte L**, «Determinación del almid�
 - **Condiciones ópticas de la ISO 7027** (860 nm, anchura de 60 nm, detector a 90° ± 2,5°), **tabla de unidades por geometría y longitud de onda**, **síntesis de la formacina** y **patrones de estireno-divinilbenceno**: **manual de campo del USGS**, capítulo A6, sección 6.7, versión 2.1, que cita la norma expresamente en su nota al pie 2.
 - **Diferencia UNF/NTU y advertencia de no comparabilidad**: ficha «FNU» del **USGS Oregon Water Science Center**.
 - **Normas legales leídas literalmente en el BOE**, texto consolidado: **RD 3/2023**, anexo III parte D (nota 9 de la turbidez) y anexo IV (frecuencias); **Orden ICT/155/2020**, anexo XVI completo y su apéndice I; **RD 1049/2003**, disposición adicional primera.
-- **Reglamento (CE) 152/2009** leído literalmente en el PDF del **DOUE L 54 de 26/02/2009** servido por el BOE: anexo III, parte L, apartados 1 a 7.
+- **Reglamento (CE) 152/2009**, anexo III, **parte K**, apartados 1 a 7, en la redacción del **Reglamento de Ejecución (UE) 2024/771** (DOUE-L-2024-80376), comprobada el 17/11/2026. La parte L corresponde a la numeración anterior de 2009.
 - **Orden de 12 de junio de 1986** leída literalmente en el facsímil del **BOE núm. 145, de 18/06/1986**: método 9, «Humedad».
 - **Capítulos 2.2.6 y 2.2.7 de la Farmacopea Europea** leídos en el PDF de la Ph. Eur. 7.0. Ver «Dudas», punto 4.
 - **Informe de actividades 2021 del CEM** descargado y leído: proyecto SACAREF y laboratorio de refractómetros y polarímetros.

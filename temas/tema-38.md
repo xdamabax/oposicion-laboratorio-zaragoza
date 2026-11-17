@@ -30,13 +30,13 @@ fuentes:
 >
 > La **#47** tiene las opciones en imagen y no sale al extraer el PDF a texto: la localicé al preparar el tema 39, renderizando la página. Es **exactamente la figura de las cuatro dianas** de este apunte, y usa «exacto» en el sentido antiguo de **veraz**: *exacto pero no preciso* = la diana **«veraz, pero impreciso»**.
 >
-> Distractores de la #19: *«Límite de Detección y Límite de Cuantificación»* y *«Sensibilidad y Selectividad»*. Los dos son características de validación **reales**, que es lo que los hace peligrosos, pero **no entran en el cálculo de la incertidumbre**. Lo que entra es la **precisión** (el error aleatorio) y la **veracidad** (el error sistemático, el sesgo): eso es exactamente el modelo de los laboratorios de aguas, **uc = √(u(Rw)² + u(sesgo)²)**, desarrollado en el apartado 2.6.
+> Distractores de la #19: *«Límite de Detección y Límite de Cuantificación»* y *«Sensibilidad y Selectividad»*. Los dos son características de validación **reales**, que es lo que los hace peligrosos, pero **no son el par que responde al examen; no se concluye que nunca puedan influir en componentes de incertidumbre**. Lo que entra es la **precisión** (el error aleatorio) y la **veracidad** (el error sistemático, el sesgo): eso es exactamente el modelo de los laboratorios de aguas, **uc = √(u(Rw)² + u(sesgo)²)**, desarrollado en el apartado 2.6.
 >
 > Distractores de la #10: el mismo material **en agua desionizada** (matriz equivocada) y uno de agua de consumo **por debajo del límite de detección** (no se puede medir). La regla es de la Guía Eurachem: *«preferiblemente un MRC con la misma matriz y en concentraciones del analito similares a las muestras reales»*.
 >
 > El supuesto 1 de 1322 **entero** va de un laboratorio que prepara **una auditoría de acreditación ISO 17025**. De sus diez preguntas, esta es la de validación; las demás son de pictogramas, disoluciones, calibración (R²) y la propia norma, y están repartidas en sus temas.
 
-> **EL HALLAZGO DEL TEMA: el RD 3/2023 trae la lista de validación hecha, en castellano y con rango de ley.** El anexo III, **parte E**, se titula *«Validación de métodos microbiológicos y físico-químicos»* y enumera **diez parámetros** para los físico-químicos: **selectividad, rango de trabajo, linealidad, sensibilidad, límite de detección, límite de cuantificación, robustez, precisión, veracidad (sesgo) e incertidumbre**. Es la lista que mejor encaja con la palabra «criterios» del enunciado, y la que más probablemente maneje un tribunal de un laboratorio de aguas municipal. Está transcrita en el apartado 2.3.
+> **EL HALLAZGO DEL TEMA: el RD 3/2023 trae la lista de validación hecha, en castellano y de rango reglamentario.** El anexo III, **parte E**, se titula *«Validación de métodos microbiológicos y físico-químicos»* y enumera **diez parámetros** para los físico-químicos: **selectividad, rango de trabajo, linealidad, sensibilidad, límite de detección, límite de cuantificación, robustez, precisión, veracidad (sesgo) e incertidumbre**. Es la lista que mejor encaja con la palabra «criterios» del enunciado, y la que más probablemente maneje un tribunal de un laboratorio de aguas municipal. Está transcrita en el apartado 2.3.
 
 > **UN AVISO SOBRE LA PALABRA «EXACTITUD».** En el lenguaje del VIM, **la exactitud no es una cosa distinta de la precisión: la incluye.** *«El término "exactitud de medida" no debe utilizarse en lugar de veracidad de medida, al igual que el término "precisión de medida" tampoco debe utilizarse en lugar de "exactitud de medida", ya que esta última incluye ambos conceptos»* (VIM 2.13, nota 2). La pregunta 1246 #19 usa «exactitud» en el sentido antiguo, como sinónimo de **veracidad**. **No cambia la respuesta**, pero conviene saber que, dicho con rigor, lo que se necesita es **veracidad y precisión**.
 
@@ -79,8 +79,8 @@ La ISO/IEC 17025:2017 **no define los términos por su cuenta: remite al VIM** (
 | **Vocabulario**: validación, exactitud, precisión, incertidumbre… | **VIM** (JCGM 200:2012, ed. CEM) | Metrología general |
 | **Cuándo** validar o verificar, y qué registrar | **UNE-EN ISO/IEC 17025:2017**, cláusula **7.2** | Norma de acreditación (**tema 40**) |
 | **Cómo** validar un método químico | **Guía Eurachem** (2016 en español; 3.ª ed. inglesa de 2025) | Guía técnica de referencia |
-| **Qué exige la ley** en agua de consumo | **RD 3/2023**, art. 20 y **anexo III, partes B, D y E** | Norma con rango de ley |
-| **Qué exige la ley** en aguas superficiales | **RD 817/2015**, **anexo III, apartado C** | Norma con rango de ley |
+| **Qué exige la ley** en agua de consumo | **RD 3/2023**, art. 20 y **anexo III, partes B, D y E** | Norma de rango reglamentario |
+| **Qué exige la ley** en aguas superficiales | **RD 817/2015**, **anexo III, apartado C** | Norma de rango reglamentario |
 | **Cómo se calcula** la incertidumbre | **GUM** (JCGM 100:2008, ed. CEM) y **guía QUAM** | Doctrina metrológica |
 | **Cómo se calcula** en un laboratorio de aguas, con datos de validación y control | **Nordtest TR 537** e **ISO 11352:2025** | Enfoque práctico |
 | **Cómo evalúa ENAC** la validez de un método | **CGA-ENAC-LEC**, anexo I | Criterio de la entidad acreditadora |
@@ -92,6 +92,8 @@ La ISO/IEC 17025:2017 **no define los términos por su cuenta: remite al VIM** (
 ## 2. Desarrollo
 
 ### 2.1. Definición: qué es validar, y cuándo hay que hacerlo
+
+**Ampliación fisicoquímica: uso previsto y alcance.** Validar relaciona evidencia, requisitos y uso; verificar comprueba cumplimiento de requisitos especificados. El alcance identifica analito, matriz, fracción, intervalo, procedimiento y finalidad. Una validación de agua limpia no acredita sin más una matriz residual muy distinta ni todo compuesto del mismo grupo. Un procedimiento normalizado dentro de su alcance se verifica en condiciones reales del laboratorio antes de rutina; si se modifica o amplía fuera de alcance, se evalúa y valida lo necesario. No basta comprar un instrumento ni copiar la validación del fabricante. Una revisión del método, traslado, cambio de equipo o software relevante puede requerir evaluación y verificación o revalidación proporcionada al efecto. No se repite mecánicamente todo por cualquier cambio editorial ni se ignora todo cambio por conservar el nombre del método. Las conclusiones de aptitud especifican para qué uso y condiciones son válidas; no garantizan todo resultado futuro ni eliminan el control continuo. Fuente: VIM 2.44–2.45; Eurachem Fitness for Purpose,3.ªed2025,§3–4; RD 3/2023 anexo III E.1–2.
 
 #### Validar, verificar, calibrar
 
@@ -134,17 +136,19 @@ La validación **termina en un documento**, y la ley dice qué tiene que contene
 
 ### 2.2. El vocabulario de la calidad de un resultado
 
+**Ampliación fisicoquímica: interpretar calidad sin confundir términos.** Precisión se expresa mediante dispersión bajo condiciones definidas, no mediante proximidad de la media al valor de referencia. Sesgo es una estimación del error sistemático y puede tener signo; incertidumbre es no negativa y no revela el error exacto de un resultado individual. Un error frente a un valor de referencia convencional puede conocerse en ese contexto, sin conocer el valor verdadero de toda muestra. Corregir un efecto estimado no elimina la incertidumbre de la corrección. Repetir medidas independientes puede reducir la componente aleatoria de una media, pero no borra por sí solo un sesgo común. Más cifras decimales no demuestran mayor exactitud. Repetibilidad, precisión intermedia y reproducibilidad describen condiciones; no son una desigualdad estricta obligatoria entre todas las estimaciones experimentales de dispersión. Las incertidumbres incluyen componentes asociadas a patrones, correcciones y definición del mensurando además de repetibilidad. Fuente: VIM 2.9,2.13–2.38; GUM§3–4; ejercicios originales.
+
 Antes de los criterios, las palabras. Son **pocas**, están **definidas con precisión** en el VIM, y el examen juega con ellas.
 
 ![Veracidad y precisión: cuatro dianas](esquema:dianas-veracidad-precision)
 
 | Término | Definición del VIM (literal) | Qué error describe | Cómo se expresa |
 | --- | --- | --- | --- |
-| **Exactitud** (2.13) | *«proximidad entre un valor medido y un valor verdadero de un mensurando»* | **El error total** | **No es una magnitud y no se expresa numéricamente** |
+| **Exactitud** (2.13) | *«proximidad entre un valor medido y un valor verdadero de un mensurando»* | Relación con el error, sin cuantificar exactitud como magnitud | **No es una magnitud y no se expresa numéricamente** |
 | **Veracidad** (2.14) | *«proximidad entre la media de un número infinito de valores medidos repetidos y un valor de referencia»* | **El error sistemático** | Con el **sesgo** |
 | **Precisión** (2.15) | *«proximidad entre las indicaciones o los valores medidos obtenidos en mediciones repetidas de un mismo objeto, o de objetos similares, bajo condiciones especificadas»* | **El error aleatorio** | Con una **desviación típica, varianza o coeficiente de variación** |
 | **Sesgo** (2.18) | *«valor estimado de un error sistemático»* | — | En unidades o en % |
-| **Incertidumbre** (2.26) | *«parámetro no negativo que caracteriza la dispersión de los valores atribuidos a un mensurando, a partir de la información que se utiliza»* | **Todo lo anterior junto**, en un solo número | **± U**, con su factor de cobertura |
+| **Incertidumbre** (2.26) | *«parámetro no negativo que caracteriza la dispersión de los valores atribuidos a un mensurando, a partir de la información que se utiliza»* | Dispersión atribuible, no error exacto conocido | **± U**, con su factor de cobertura |
 
 Tres ideas que hay que llevarse de la tabla:
 
@@ -165,7 +169,7 @@ Sinónimos que aparecen en la bibliografía: la repetibilidad es la precisión *
 #### Error e incertidumbre no son lo mismo
 
 - El **error** es *«la diferencia entre un valor medido de una magnitud y un valor de referencia»* (VIM 2.16): **es un número con signo**, y en general **desconocido**, porque el valor verdadero no se conoce.
-- La **incertidumbre** es un **parámetro no negativo** que dice **cuánto podría valer ese error**: *«La incertidumbre de medida nos dice qué tamaño podría tener el error»* (Nordtest, 2.4). **Se estima; no se corrige.**
+- La **incertidumbre** es un **parámetro no negativo** de dispersión atribuible, que no identifica el error individual exacto: *«La incertidumbre de medida nos dice qué tamaño podría tener el error»* (Nordtest, 2.4). **Se estima; no se corrige.**
 
 La Guía Eurachem dibuja la relación en su figura 4, y la resumo aquí:
 
@@ -173,9 +177,11 @@ La Guía Eurachem dibuja la relación en su figura 4, y la resumo aquí:
 | --- | --- | --- |
 | Error **sistemático** | **Veracidad** | **Sesgo** |
 | Error **aleatorio** | **Precisión** | **s, RSD…** en condiciones especificadas |
-| Error **total** | **Exactitud** | **Incertidumbre** |
+| Incertidumbre | Dispersión de valores atribuibles | No equivale al error total conocido con signo |
 
 ### 2.3. Criterios de validación: las características de desempeño
+
+**Ampliación fisicoquímica: diseñar estudios de desempeño.** La selectividad se estudia con interferentes y matrices relevantes: un buen ajuste de patrones puros no demuestra ausencia de interferencia en muestra. El efecto proporcional cambia la sensibilidad; el fondo aditivo puede desplazar la respuesta. Adiciones estándar exige respuesta adecuada y comportamiento comparable del analito añadido y nativo; no corrige universalmente fondo fijo ni pérdidas anteriores a la adición. LD y LC son estimaciones asociadas al procedimiento: los modelos3 s y 10 s son convenciones bajo sus supuestos, no constantes universales ni prueba de ausencia bajo LD. La preparación y los blancos de rutina deben reflejarse en el estudio; repetir solo una inyección no evalúa todo el método. El LC se confirma con desempeño aceptable en ese nivel, no basta que el instrumento imprima un número. El rango de calibración instrumental no equivale sin más al rango validado en muestra tras extracción o dilución; diluir puede extender el rango de muestra solo si se demuestra aptitud de esa operación. Un R² alto no prueba linealidad ni ausencia de sesgo: se revisan residuales, niveles, precisión y modelo; residuales sin tendencia apoyan el modelo, pero no demuestran por sí solos toda aptitud del método. Los estudios de sesgo usan referencias independientes y apropiadas; una adición puede no reproducir el comportamiento del analito nativo. Material homogéneo y estable puede estudiar precisión sin que siempre necesite certificación. Robustez investiga pequeñas variaciones deliberadas y tolerancias relevantes; no exige que el resultado sea idéntico ante cualquier cambio grande. Fuente: Eurachem 2025 §4.4 y 5.1–5.9; VIM 4.7/4.12/4.13/4.18; RD 3/2023 anexo III E.2.
 
 «Criterios de validación», en la práctica, son **dos cosas**: **qué características** se estudian y **qué valor** tienen que alcanzar. Aquí van las primeras; los valores exigidos, en el 2.4.
 
@@ -230,7 +236,7 @@ La diferencia en una frase: **por encima del LD se puede decir «hay»; por enci
 - **Lo que NO es el LD:** *«No debe utilizarse el término "sensibilidad" en lugar de "límite de detección"»* (VIM 4.18, nota 3). Y *«no debe confundirse el límite inferior de un intervalo de medida con el límite de detección»* (VIM 4.7, nota 2): **el intervalo de trabajo empieza en el LC**.
 - **El LD es una estimación que varía:** incluso con 10 réplicas, *«la estimación de LOD/LOQ obtenida durante la validación debería ser tomada como un valor indicativo»* (Eurachem 6.2.5.1).
 
-> **Para radiactividad es otra cosa:** los límites de detección de la tabla 14 del RD 3/2023 se calculan con la **UNE-EN ISO 11929**, no con la regla de 3s. Está en el **tema 29**.
+> **Para radiactividad es otra cosa:** los límites de detección de la tabla 14 del RD 3/2023 se calculan con la **UNE-EN ISO 11929**, no con la regla de 3 s. Está en el **tema 29**.
 
 #### 4. Rango (intervalo) de trabajo y 5. Linealidad
 
@@ -259,7 +265,7 @@ Tres matices que se preguntan bien:
 #### 6. Sensibilidad
 
 - **Definición (VIM 4.12):** *«cociente entre la variación de una indicación de un sistema de medida y la variación correspondiente del valor de la magnitud medida»*. **Es la pendiente de la curva de respuesta.**
-- Eurachem recomienda llamarla **«sensibilidad analítica»** para no confundirla con la «sensibilidad diagnóstica» de los laboratorios clínicos, y avisa de que **no es una característica muy importante**. Sirve sobre todo para **comprobar el instrumento** contra un valor teórico: la pendiente **nernstiana de 59 mV por unidad de pH** de un electrodo de vidrio (**tema 23**) o la absorbancia prevista por **Lambert-Beer** (**tema 25**).
+- Eurachem recomienda llamarla **«sensibilidad analítica»** para no confundirla con la «sensibilidad diagnóstica» de los laboratorios clínicos, y avisa de que se discute su utilidad dentro del esquema de la guía, sin declararla universalmente poco importante. Sirve sobre todo para **comprobar el instrumento** contra un valor teórico: la pendiente **nernstiana de 59 mV por unidad de pH** de un electrodo de vidrio (**tema 23**) o la absorbancia prevista por **Lambert-Beer** (**tema 25**).
 - **Sensibilidad no es límite de detección.** Un método puede tener mucha pendiente y un LD malo si el blanco es muy ruidoso.
 
 #### 7. Veracidad (sesgo)
@@ -269,7 +275,7 @@ La veracidad **no se puede medir** —haría falta un número infinito de medida
 | Vía | Qué se hace | Cómo se expresa | Su límite |
 | --- | --- | --- | --- |
 | **a) Material de referencia** (mejor **certificado**, MRC) | Analizarlo **10 veces** y comparar la media con el valor certificado | **b = x̄ − x_ref**; **b(%) = (x̄ − x_ref)/x_ref · 100**; o recuperación aparente **R(%) = x̄/x_ref · 100** | Hay pocos MRC, y **el MRC debe ser de la misma matriz y concentración parecida** |
-| **b) Recuperación de adiciones** | Añadir una cantidad conocida de analito a la muestra (o a un blanco de matriz) y medir las dos | **R′(%) = (x̄′ − x̄)/x_adición · 100** | **Da una estimación optimista**: el analito añadido está menos «agarrado» a la matriz que el natural |
+| **b) Recuperación de adiciones** | Añadir una cantidad conocida de analito a la muestra (o a un blanco de matriz) y medir las dos | **R′(%) = (x̄′ − x̄)/x_adición · 100** | **Puede dar estimación optimista** si el añadido no reproduce la retención y recuperación del nativo |
 | **c) Comparación con otro método** | Medir las mismas muestras por el método candidato y por uno de referencia (o por el que se va a sustituir) | Igual que a), con la media del otro método | Si el otro método tiene sesgo, **no da la veracidad absoluta** |
 
 Tres reglas de la Guía Eurachem que dan preguntas:
@@ -306,9 +312,11 @@ Las normas UNE que llevan estudio colaborativo **publican r y R**, y es con ella
 
 #### 10. Incertidumbre
 
-Es la característica que **resume todas las demás** en un solo número, y la que el RD exige con valores concretos. Tiene su propio apartado, el **2.6**.
+La incertidumbre caracteriza los resultados; no sustituye toda la validación ni convierte un fallo de selectividad en un problema resuelto por una cifra. El RD establece criterios concretos. Tiene su propio apartado, el **2.6**.
 
 ### 2.4. Criterios de aceptación: cuánto es «suficiente»
+
+**Ampliación fisicoquímica: criterio de aptitud y criterio de cumplimiento.** Los requisitos se fijan antes de analizar resultados y se vinculan al uso. Cumplir LC no demuestra cumplir incertidumbre ni selectividad. Para agua de consumo, el criterio general indicado es LC≤30 % del valor paramétrico y la incertidumbre pertinente de tabla 15, estimada al nivel previsto; para aguas superficiales se consulta anexo III C del RD 817/2015. No se cambia VP por NCA como si fueran la misma base normativa. La incertidumbre de tabla 15 no es tolerancia adicional del VP. Al promediar resultados inferiores al LC en el régimen del RD 817/2015, se usa LC/2 bajo su regla; para sumas de parámetros se atiende la excepción de asignar cero a los componentes inferiores al LC, y una media calculada inferior al LC se expresa como tal, sin presentarla como cuantificada con exactitud arbitraria. Se distinguen resultado menor que LC, ausencia demostrada y valor cero. Cuando falte método que alcance requisitos, se aplica la previsión de mejores técnicas disponibles y sus condiciones, no se cambia el requisito retrospectivamente sin justificación. Fuente: RD 3/2023 anexo III D–E y RD 817/2015 anexo III C.
 
 Evaluar una característica no basta: hay que **compararla con un requisito**. Ese requisito se fija **antes** de validar, a partir del **uso previsto**. El VIM tiene nombre para el de la incertidumbre: **incertidumbre objetivo** (2.34), *«especificada como un límite superior y elegida en base al uso previsto de los resultados de medida»*.
 
@@ -341,7 +349,7 @@ Y dos obligaciones de cierre de la parte D: los laboratorios **deben notificar e
 
 El otro real decreto de aguas pone **un criterio único para todo**, más sencillo de recordar:
 
-> *«Todos los métodos de análisis aplicados se basarán en una **incertidumbre de medida del 50 % o menos (k=2)** estimada al nivel de las NCAs y un **límite de cuantificación igual o inferior a un valor del 30 % de las NCA** pertinentes.»*
+> *«Todos los métodos de análisis aplicados se basarán en una **incertidumbre de medida del 50 % o menos (k=2)** estimada al nivel de las NCA s y un **límite de cuantificación igual o inferior a un valor del 30 % de las NCA** pertinentes.»*
 
 Y resuelve un problema práctico que el examen puede plantear: **cómo se promedian los resultados por debajo del LC**. *«Los resultados de la medición se fijarán en **la mitad del valor del límite de cuantificación**»*, salvo en los parámetros que son **sumas** de un grupo, donde se fijan **en cero**.
 
@@ -357,6 +365,8 @@ Y resuelve un problema práctico que el examen puede plantear: **cómo se promed
 Si no hay requisito legal, **lo fija el laboratorio con el cliente**. En la práctica, dice Eurachem, se suele fijar **a partir de lo que se sabe que el método puede dar**: los datos de precisión de la norma, los resultados de ensayos de aptitud o modelos como la **función de Horwitz**. Y el Nordtest da una regla de andar por casa: sin otro requisito, **una incertidumbre expandida objetivo del orden del doble de la reproducibilidad, U ≈ 2·s_R**.
 
 ### 2.5. Sistemática de validación
+
+**Ampliación fisicoquímica: plan, datos y decisiones.** El plan define versión del procedimiento, finalidad, matrices, niveles, características relevantes, criterios previos, materiales, réplicas independientes, diseño, cálculos y responsables. Se separa desarrollo exploratorio y comprobación formal de una versión documentada; una modificación relevante durante el estudio se registra y evalúa, no se mezclan sin explicación versiones distintas. El informe conserva datos, tratamiento estadístico, incidencias, exclusiones justificadas, resultados frente a requisitos, limitaciones y declaración de aptitud. No se eliminan resultados solo para aprobar ni se eligen criterios después de verlos. Se incluyen niveles bajos, medios y altos y matrices representativas según objetivo; estudiar muchas réplicas de un único nivel no acredita automáticamente todo rango. Una característica ya demostrada en un normalizado puede requerir evidencia proporcionada al uso real; no se exige siempre reestudiar todo ni se exime de investigar interferencias relevantes por tener una norma. La validación alimenta los controles de rutina; una deriva posterior puede requerir investigación y revisión de aptitud. Fuente: Eurachem 2025 §3.3–4.7; RD 3/2023 anexo III E.1–2.
 
 #### El proceso
 
@@ -406,7 +416,7 @@ La Guía Eurachem (5.3) propone un modelo que **combina plan e informe** en un s
 | --- | --- | --- |
 | **Método desarrollado por el laboratorio** | **Validación completa** | **Todas**: selectividad, LD, LC, intervalo y linealidad, sensibilidad, veracidad, precisión, **robustez** e incertidumbre |
 | **Normalizado fuera de su alcance, o modificado** | **Validación** de lo que cambia | Las afectadas por el cambio: si es una matriz nueva, selectividad, veracidad, precisión e intervalo **en esa matriz** |
-| **Normalizado dentro de su alcance** | **Verificación** | **Precisión y veracidad** (*«habitualmente, es suficiente… obtener la repetibilidad indicada y comprobar si hay algún sesgo»*, Eurachem 7), más LD/LC e incertidumbre cuando el uso lo pide. **Ni robustez ni selectividad**: ya las estudió el organismo que la publicó |
+| **Normalizado dentro de su alcance** | **Verificación** | **Precisión y veracidad** (*«habitualmente, es suficiente… obtener la repetibilidad indicada y comprobar si hay algún sesgo»*, Eurachem 7), más LD/LC e incertidumbre cuando el uso lo pide. Se aprovecha evidencia publicada de robustez/selectividad, sin excluir comprobaciones pertinentes si el uso real o un problema lo requieren |
 | **Equipo nuevo, traslado** | **Verificación** | Las que el cambio puede afectar |
 
 El RD 3/2023 lo deja igual de abierto: *«La amplitud del proceso de validación depende de varios factores, tales como la naturaleza del método (cualitativo o cuantitativo), la existencia de normas internacionales o el establecimiento de matrices equivalentes.»*
@@ -426,11 +436,13 @@ El mismo anexo trae una parte para microbiología que conviene tener a mano (el 
 
 ### 2.6. Cálculo de incertidumbres
 
+**Ampliación fisicoquímica: supuestos del presupuesto de incertidumbre.** El modelo conecta resultado y entradas; cada contribución se expresa como incertidumbre típica y se propaga con su coeficiente de sensibilidad. TipoA yB clasifican cómo se evalúa, no sistemático frente a aleatorio ni calidad superior frente a inferior. De un certificado se obtiene u=U/k con el k declarado; no se divide por dos si el certificado da otro factor. Para una media de n observaciones independientes con condiciones adecuadas, la componente aleatoria es s/√n; una contribución sistemática común no disminuye así por repetir. Una rectangular entre−a y+a da a/√3 si ese modelo es adecuado; triangular simétrica da a/√6; resolución q con redondeo uniforme±q/2 da q/√12. La rectangular no es el máximo matemático de incertidumbre de cualquier distribución acotada, ni se elige distribución solo para obtener una cifra menor. La regla de cuadratura simple exige contribuciones no correlacionadas ya propagadas al resultado; correlaciones incorporan covarianzas. Para producto/cociente simple se combinan relativas bajo los supuestos de propagación de primer orden; una resta cercana a cero puede tener incertidumbre relativa grande. Una constante multiplicativa exacta escala valor e incertidumbre absoluta por su valor absoluto, sin cambiar la relativa. No se cuenta otra vez una fuente ya incluida en precisión o validación; se comprueba el alcance de los datos globales. U=k·uc; k=2 da aproximadamente95 % con distribución apropiada y suficientes grados de libertad, no para cualquier caso; en normal ideal k=3 da aproximadamente99,73 %. Expandir aumenta cobertura y amplitud, no mejora la precisión del método. Se informa unidad, naturaleza de incertidumbre, factor y cobertura cuando corresponda; se redondea al final sin conservar cifras injustificadas. Un intervalo más estrecho no demuestra mejor calidad si omite componentes. Fuente: GUM§4–7 y anexoG; VIM 2.26–2.38; cálculos originales.
+
 #### Qué es, y por qué se calcula
 
 > **Incertidumbre de medida (VIM 2.26):** *«parámetro no negativo que caracteriza la dispersión de los valores atribuidos a un mensurando, a partir de la información que se utiliza»*. El RD 3/2023 y el RD 817/2015 la definen con las mismas palabras.
 
-Un resultado **sin incertidumbre está incompleto**: no se puede comparar con otro laboratorio ni con un límite legal. Por eso la ISO/IEC 17025 exige evaluarla (cláusula **7.6**) y el RD exige **notificarla en SINAC** por cada método.
+La incertidumbre debe evaluarse e informarse cuando corresponda al requisito y uso. No se afirma que toda comunicación de una cifra sin imprimir U sea siempre inválida: VIM 2.9contempla casos de incertidumbre despreciable para el fin. Por eso la ISO/IEC 17025 exige evaluarla (cláusula **7.6**) y el RD exige **notificarla en SINAC** por cada método.
 
 #### Tipo A y tipo B
 
@@ -458,11 +470,13 @@ La primera clasificación **no es por el origen del error, sino por cómo se eva
 
 (Los ejemplos del matraz y de la balanza son los de la guía **QUAM**, 8.1; el del certificado, del **Nordtest**, 6.1. Las fórmulas, de la **GUM**, 4.3.)
 
-**La rectangular es la más conservadora** (da la u más grande de las tres) y por eso es la que se usa **cuando no se sabe nada** de cómo se reparten los valores dentro de los límites.
+La **rectangular** es un modelo habitual con límites y sin información adicional apropiada. **No es una cota máxima universal** de incertidumbre para toda distribución acotada; el modelo se justifica por información, no por elegir el resultado más pequeño.
 
 #### Paso 2: combinarlas, EN CUADRATURA
 
 **Incertidumbre típica combinada (VIM 2.31, GUM 2.3.4):** la que se obtiene de las incertidumbres de las magnitudes de entrada, *«igual a la raíz cuadrada positiva de una suma de términos, siendo éstos las varianzas o covarianzas de esas otras magnitudes»*.
+
+**Supuesto de las reglas prácticas de combinación:** entradas no correlacionadas y propagación de primer orden, con las contribuciones en unidades coherentes y coeficientes del modelo.
 
 Las dos reglas prácticas de la guía **QUAM** (8.2.6) cubren casi todos los casos:
 
@@ -473,10 +487,10 @@ Las dos reglas prácticas de la guía **QUAM** (8.2.6) cubren casi todos los cas
 
 ![Las incertidumbres se suman en cuadratura: uc es la hipotenusa](esquema:incertidumbre-en-cuadratura)
 
-**En cuadratura, no sumando.** Es la idea más importante del cálculo: las incertidumbres **no se suman aritméticamente**, se suman **como los catetos de un triángulo rectángulo**, y la combinada es **la hipotenusa**. La razón es que errores independientes **a veces se compensan**: sumarlos directamente supondría que todos van siempre a la vez en el peor sentido. Tres consecuencias:
+**Para contribuciones no correlacionadas ya propagadas, en cuadratura.** El triángulo ilustra ese supuesto; no es una regla universal que excluya covarianzas o coeficientes del modelo. La razón es que errores independientes **a veces se compensan**: sumarlos directamente supondría que todos van siempre a la vez en el peor sentido. Tres consecuencias:
 
-- **La combinada siempre es menor que la suma** de las componentes, y **mayor que la mayor** de ellas.
-- **Manda la componente más grande.** Por eso *«aquellos que son menores de un tercio del total no necesitan ser evaluados en detalle»* (QUAM 7.2.2): uno que sea un tercio del mayor aporta **menos de un 6 %** a la combinada.
+- Con aportes no correlacionados no negativos ya propagados, la combinada no es menor que el mayor. Puede igualarlo si los demás son cero; con correlaciones cambia el cálculo.
+- **Manda la componente más grande.** Por eso *«aquellos que son menores de un tercio del total no necesitan ser evaluados en detalle»* (QUAM 7.2.2): se evalúan también combinaciones de aportes; no se ignoran muchos componentes pequeños. La guía dice **del total**, salvo gran número de componentes.
 - **Si dos magnitudes están correlacionadas**, hay que añadir las **covarianzas** (VIM 2.31, nota). Y *«es importante no contabilizar dos veces las mismas componentes de incertidumbre»* (GUM 4.3.10): si la repetibilidad ya recoge un efecto, no se suma otra vez.
 
 #### Paso 3: expandirla
@@ -485,11 +499,11 @@ Las dos reglas prácticas de la guía **QUAM** (8.2.6) cubren casi todos los cas
 
 > **U = k · uc**
 >
-> - **k = 2** → intervalo con una probabilidad de cobertura de **aproximadamente el 95 %** (exactamente **95,45 %** para una distribución normal).
-> - **k = 3** → **aproximadamente el 99 %** (GUM 6.3.3).
+> - **k = 2** → aproximadamente95 %con distribución adecuada y suficientes grados de libertad; en normal ideal95,45 %.
+> - **k = 3** → **99,73 %en normal ideal**, aproximadamente99,7 %; se atiende distribución y cobertura (GUM 6.3).
 > - Si la combinada **depende sobre todo de una componente con pocos datos (menos de 6 grados de libertad)**, k se toma de la **t de Student**. Ejemplo de la QUAM: 5 pesadas (4 grados de libertad) → **k = 2,8**.
 
-**En España, por ley, k = 2**: el RD 3/2023 da la tabla 15 con **k = 2**, y el RD 817/2015 su 50 % también. **Con una excepción que es una trampa de examen:** para **radionucleidos**, la nota 2 de la tabla 14 del RD 3/2023 manda expresar la incertidumbre *«con un factor de expansión del **1,96**»*.
+**Para los criterios citados de tabla 15 se emplea k=2**, sin convertirlo en regla universal de toda medición española: el RD 3/2023 da la tabla 15 con **k = 2**, y el RD 817/2015 su 50 % también. **Con una excepción que es una trampa de examen:** para **radionucleidos**, la nota 2 de tabla 14permite incertidumbres típicas combinadas o expandidas; en este último caso *«con un factor de expansión del **1,96**»*.
 
 #### Los dos caminos para llegar a uc
 
@@ -530,7 +544,7 @@ Y un **tercer camino**, más corto: si el laboratorio aplica una norma con estud
 
 | Paso | Dato | Cálculo | Resultado |
 | --- | --- | --- | --- |
-| u(Rw) | Muestra de control de 200 µg/L con **límites de control (2s) de ±3,34 %** | 3,34 / 2 | **1,67 %** |
+| u(Rw) | Muestra de control de 200 µg/L con **límites de control (2 s) de ±3,34 %** | 3,34 / 2 | **1,67 %** |
 | u(sesgo) | Seis ensayos de aptitud: sesgos de +2,5; +2,7; +1,9; +1,4; +1,8 y +2,9 %. **RMS_sesgo = 2,26 %**; **u(C_ref) = 1,52 %** | √(2,26² + 1,52²) | **2,73 %** |
 | uc | — | √(1,67² + 2,73²) | **3,20 %** |
 | U | k = 2 | 2 · 3,20 | **6,40 % → se informa ±7 %** |
@@ -577,7 +591,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 | **Sensibilidad** | Cuánto cambia la señal por unidad de concentración | La **pendiente** de la recta | Comparar con un valor teórico (**59 mV/pH**, Lambert-Beer) | VIM 4.12; Eurachem 6.4 |
 | **Veracidad** | Error sistemático | **MRC** (misma matriz, concentración similar), **recuperación de adiciones** o **comparación con otro método**, 10 réplicas | **b = x̄ − x_ref**; **R′(%) = (x̄′ − x̄)/x_adición · 100** | Eurachem 6.5, RR6 |
 | **Precisión** | Error aleatorio | **6-15 réplicas** independientes, en **repetibilidad** y en **precisión intermedia**; ANOVA | **s, RSD**; límite de repetibilidad **r ≈ 2,8 · s_r** | VIM 2.15-2.25; Eurachem 6.6 |
-| **Robustez** | Estabilidad ante pequeños cambios | Cambios **deliberados** de las condiciones; **Plackett-Burman**: **7 factores en 8 ensayos** | Tolerancias escritas en el procedimiento. **No se exige en un normalizado dentro de alcance** | Eurachem 6.8 |
+| **Robustez** | Estabilidad ante pequeños cambios | Cambios **deliberados** de las condiciones; **Plackett-Burman**: **7 factores en 8 ensayos** | Tolerancias escritas en el procedimiento. Evidencia publicada aprovechable; evaluar pertinencia y cambios | Eurachem 6.8 |
 | **Incertidumbre** | Todo junto, en un número | Datos de validación y control de calidad | **uc = √(u(Rw)² + u(sesgo)²)**; **U = 2 · uc**; ≤ tabla 15 (consumo) o **≤ 50 %** (superficiales) | RD 3/2023 tabla 15; RD 817/2015; Nordtest; ISO 11352 |
 
 **Los números del cálculo de incertidumbre:**
@@ -590,7 +604,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 | Certificado con U y k | **u = U/k** |
 | Intervalo al 95 % | **u = a/1,96** |
 | k = 2 | **≈ 95 %** (95,45 % en una normal) |
-| k = 3 | **≈ 99 %** |
+| k = 3 | **≈99,73 %en normal ideal** |
 | Radionucleidos, RD 3/2023 (tabla 14, nota 2) | **k = 1,96** |
 | Componentes despreciables | Las **menores de un tercio** de la mayor |
 | Cifras de U | **Una o dos** significativas |
@@ -611,7 +625,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 **5 bis. Exactitud = veracidad + precisión.** La **veracidad** va con el **error sistemático** y se mide con el **sesgo**; la **precisión** va con el **aleatorio** y se mide con la **desviación típica**. La exactitud **no se expresa numéricamente**.
 
-**6. Repetibilidad < precisión intermedia < reproducibilidad.** Lo que cambia: **nada** / **días, analistas y equipos** / **el laboratorio**.
+**6. Repetibilidad, precisión intermedia y reproducibilidad describen condiciones.** No se impone una desigualdad estricta entre todas las estimaciones experimentales de estudios distintos. Lo que cambia: **nada** / **días, analistas y equipos** / **el laboratorio**.
 
 **7. Los diez parámetros del RD 3/2023** (anexo III, parte E.2): selectividad, rango de trabajo, linealidad, sensibilidad, LD, LC, robustez, precisión, veracidad (sesgo) e incertidumbre. **Los tres imprescindibles: veracidad, precisión e incertidumbre.**
 
@@ -621,11 +635,11 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 **10. El MRC para la veracidad: MISMA MATRIZ y CONCENTRACIÓN PARECIDA** a las muestras (1322 C2 #10, **pregunta anulada por el tribunal**). Y **el MR de la calibración no sirve para el sesgo**.
 
-**11. La recuperación de adiciones da una estimación OPTIMISTA** del sesgo: lo añadido está menos ligado a la matriz que lo natural.
+**11. La recuperación puede ser optimista** si el añadido se recupera mejor que el nativo; se evalúan comportamiento, volumen y momento de adición.
 
 **12. Sensibilidad es la PENDIENTE**, no el límite de detección.
 
-**13. Las incertidumbres se combinan EN CUADRATURA** (raíz de la suma de cuadrados), **nunca sumándolas**. Sumas → absolutas; productos y cocientes → **relativas**.
+**13. Para contribuciones no correlacionadas ya propagadas, se combinan en cuadratura.** Se incorporan covarianzas y coeficientes cuando corresponda; no es una prohibición universal de otra relación derivada del modelo. Sumas → absolutas; productos y cocientes → **relativas**.
 
 **14. Rectangular a/√3; triangular a/√6; U = k · uc con k = 2 ≈ 95 %.** Los **radionucleidos**, con **k = 1,96**.
 
@@ -633,7 +647,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 **16. Límite de repetibilidad r ≈ 2,8 · s_r**: la diferencia máxima esperable, al 95 %, entre dos resultados de la misma muestra.
 
-**17. Robustez: cambios pequeños y deliberados**; con Plackett-Burman, **7 factores en 8 experimentos**. **No hace falta en un normalizado usado dentro de su alcance.**
+**17. Robustez: cambios pequeños y deliberados**; con Plackett-Burman, **7 factores en 8 experimentos**. La evidencia del normalizado puede aprovecharse; cambios o problemas relevantes del uso real se evalúan.
 
 **18. Las adiciones estándar corrigen el efecto PROPORCIONAL (pendiente), no el de fondo (ordenada).**
 
@@ -661,6 +675,9 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 ## Fuentes y verificación
 
+**Fuentes de la revisión fisicoquímica de17/11/2026.** Se han contrastado definiciones y supuestos con [VIM2012,ediciónCEM](https://www.cem.es/sites/default/files/vim-cem-2012web.pdf), [GUM2008,ediciónCEM](https://www.cem.es/sites/default/files/gum20digital1202010.pdf), [Eurachem2025](https://www.eurachem.org/images/stories/Guides/pdf/MV_guide_3rd_ed_V1_EN.pdf) y [QUAM2012§7.2.2/8.3](https://www.eurachem.org/images/stories/Guides/pdf/QUAM2012_P1_ES.pdf). La numeración de la guía inglesa2025cambia respecto de la española2016: desempeño está en§5, incluida robustez en§5.9. Los casos nuevos son de validación fisicoquímica e incertidumbre; no amplían el bloque microbiológico.
+
+
 - **VIM, edición española del CEM, leído literalmente** en las veintitrés entradas que se citan: todas las definiciones entrecomilladas del apartado 2.2 y las de validación, verificación, selectividad, sensibilidad, intervalo de medida y límite de detección son **transcripción** del PDF oficial.
 - **GUM, edición digital del CEM (JCGM 100:2008)**: leídos 2.3.1 a 2.3.6, 3.2.4, 4.3.4 a 4.3.10, 6.2.1, 6.3.3 y 7.2.6. De ahí las fórmulas a/√3 y a/√6 (ecuaciones 7 y 9b) y el «aproximadamente el 95 por ciento» de k = 2.
 - **Guía Eurachem de validación, edición española de 2016**, leída en sus secciones 2 a 8; y **3.ª edición inglesa de 2025**, leída para comprobar las cláusulas de la ISO/IEC 17025:2017 que cita y que **los factores 3 y 10 del LD y el LC no han cambiado**. Todas las fórmulas del apartado 2.3 (b, b%, R, R′, s₀′, r = 2,8 s_r) están tomadas de ahí.
@@ -684,7 +701,7 @@ El RD 3/2023 da la misma idea con otras palabras (parte E.4, *«Asignación de l
 
 3. **La ISO 11352:2025 no la he leído**: de pago y sin adopción UNE encontrada. Lo que el apunte dice de su contenido es **su propio alcance publicado** (que se basa principalmente en el Nordtest TR 537); **el cálculo está tomado del Nordtest**, que es de acceso libre.
 
-4. **Los factores 3 y 10 del LD y el LC son una convención**, no una ley. El RD 3/2023 **define** el LD y el LC pero **no da fórmula**; la IUPAC y la ISO 11843 tienen tratamientos más rigurosos, y hay sectores que usan k_Q = 5 o 6. **Si el examen pregunta «LD = 3s», es la respuesta estándar**; si da otra fórmula, hay que leer bien.
+4. **Los factores 3 y 10 del LD y el LC son una convención**, no una ley. El RD 3/2023 **define** el LD y el LC pero **no da fórmula**; la IUPAC y la ISO 11843 tienen tratamientos más rigurosos, y hay sectores que usan k_Q = 5 o 6. **Si el examen pregunta «LD = 3 s», es la respuesta estándar**; si da otra fórmula, hay que leer bien.
 
 5. **«Rango de validación»** no es un término definido en ninguna de las fuentes. Lo interpreto como el **intervalo de trabajo** (Eurachem) o **rango de trabajo** (RD 3/2023), que es lo único que encaja. Si el tribunal lo entendiera como «**el alcance de la validación**» (qué matrices, qué niveles, qué características), eso está en el apartado 2.5, «Cuánto hay que validar».
 

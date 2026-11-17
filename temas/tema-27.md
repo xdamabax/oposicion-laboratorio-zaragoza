@@ -52,8 +52,8 @@ En un laboratorio de aguas es **la técnica de los metales**, y desplaza a la ab
 | **Elementos por ICP-MS**, incluidos isótopos de uranio | **UNE-EN ISO 17294-2:2024** | Ensayo normalizado |
 | **Elementos por ICP-OES** | **UNE-EN ISO 11885:2010** | Ensayo normalizado |
 | **Digestión previa** | **UNE-EN ISO 15587-1 y -2:2002** | Ensayo normalizado |
-| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma con rango de ley |
-| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma con rango de ley |
+| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma reglamentaria |
+| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma reglamentaria |
 
 ## 2. Desarrollo
 
@@ -71,6 +71,8 @@ Dos matices, porque **las dos convocatorias rematan la frase de forma distinta y
 No confundirlo con lo que ofrecen los distractores: **no** es un producto de combustión de un gas, **no** es un arco de corriente continua, **no** es una simple mezcla de muestra con gas inerte, y **no** es un atomizador de tubo de grafito (eso es el tema 26).
 
 **Por qué argón:** es inerte, no forma compuestos con el analito, tiene una **energía de ionización alta** —así que ioniza a casi todos los elementos, que la tienen más baja— y no aporta líneas de emisión que estorben demasiado.
+
+**Lectura física de la definición.** La neutralidad del plasma es macroscópica o cuasineutralidad: no implica ausencia de cargas libres ni carácter aislante. La radiofrecuencia suministra energía; el argón sostiene el medio y no es un combustible que arda para mantenerlo. Ser químicamente inerte no significa carecer de líneas ni de interferencias: el argón puede contribuir a señales atómicas y a iones poliatómicos. Las temperaturas cambian entre zonas y condiciones. No se comparan cocientes de temperaturas expresadas en °C como si fueran temperaturas absolutas: para ello se usa kelvin. La temperatura elevada favorece desolvatación, vaporización, atomización, excitación e ionización, según el uso óptico o de masas.
 
 ### 2.2. La antorcha, la pieza clave
 
@@ -100,6 +102,8 @@ La antorcha son **tres tubos concéntricos de cuarzo** rodeados en su extremo po
 Compárese con la llama de aire-acetileno del tema 26 (2 100-2 400 °C): el ICP está **tres o cuatro veces más caliente**. De ahí salen sus dos ventajas de fondo: **descompone los compuestos refractarios** —adiós a las interferencias químicas del tipo fosfato sobre calcio— y **la enorme concentración de electrones procedente de la ionización del argón minimiza la interferencia de ionización**, que en llama obligaba a añadir cesio.
 
 **La muestra entra igual que en absorción atómica de llama:** bomba peristáltica → **nebulizador** → **cámara de nebulización**, que se queda con las gotas gruesas → tubo central de la antorcha.
+
+**Operación e introducción de muestra.** Los tubos y flujos de la antorcha cumplen funciones distintas: introducir aerosol, mantener el plasma y proteger o posicionar sus zonas. Una alimentación insuficiente o una alineación incorrecta puede comprometer señal y equipo. Se respetan manual, extracción, refrigeración, gases y enclavamientos, sin improvisar encendidos. La bomba mueve líquido; el nebulizador forma gotas; la cámara retira parte de las gotas grandes; el plasma forma especies excitadas e iones. La antorcha no es el analizador de masas. Una bomba peristáltica depende también del estado y montaje de su tubo; cambios de aspiración pueden alterar señal. Se revisan depósitos, obstrucciones, drenaje y estabilidad. La introducción de aerosol fino no garantiza que toda la muestra llegue al detector. La calibración representa el rendimiento global bajo sus condiciones, no requiere multiplicar resultados por un porcentaje arbitrario de transporte.
 
 ### 2.3. El ICP-MS por dentro
 
@@ -131,9 +135,11 @@ Es decir: **de 1 atmósfera a 1 torr y de ahí a 10⁻⁵ torr**, en dos saltos 
 
 **6. Detector: multiplicador de electrones.** Cada ion que llega desencadena una cascada de electrones. Se **cuentan iones**, y por eso la sensibilidad llega a partes por billón.
 
+**Interpretación del recorrido iónico.** ICP-MS separa por relación masa/carga, no por masa sin considerar la carga. Un ion con dos cargas aparece a la mitad del m/z nominal del ion de igual masa con una carga. El cuadrupolo convencional transmite secuencialmente regiones m/z; que el análisis sea multielemental no implica detectar todas las masas exactamente al mismo instante. La resolución nominal unitaria permite separar picos vecinos separados aproximadamente por una unidad, pero no todos los isóbaros o poliatómicos de la misma masa nominal. Los intervalos de m/z, presiones y tiempos dependen del modelo: el rango docente 3–300 no es una especificación universal. La interfase mantiene etapas de presión; sus conos no son filtros de membrana para partículas en agua. El vacío evita colisiones no deseadas y permite transporte y análisis de iones. Depósitos en conos pueden disminuir transmisión, provocar deriva o contaminar. Las lentes enfocan y transportan iones; la geometría del sistema reduce transmisión de fotones y neutros. El multiplicador amplifica el efecto de los iones detectados, pero una cuenta no equivale directamente a una concentración sin calibración. Se controlan saturación, tiempos de adquisición y estabilidad. Resolución, sensibilidad y rango dinámico son prestaciones distintas.
+
 ### 2.4. Interferencias del ICP-MS
 
-Aquí las interferencias no son químicas —el plasma se las come—, sino **de masa**: otra especie pesa lo mismo que el analito.
+El plasma reduce muchas interferencias químicas de la llama, pero **no elimina todos los efectos de matriz**. Las interferencias espectrales de masa son especialmente importantes: otra especie puede presentar la misma relación m/z que el analito.
 
 | Tipo | Qué es | Ejemplo |
 | --- | --- | --- |
@@ -149,6 +155,8 @@ Aquí las interferencias no son químicas —el plasma se las come—, sino **de
 - **Patrón interno**: un elemento que no está en la muestra —**el germanio** es el ejemplo del manual— **se bombea junto con la muestra antes de la nebulización**, y todo se refiere a su señal. Corrige a la vez la deriva del equipo y el efecto de matriz.
 - **Diluir**: el ICP-MS no admite mucha carga de sólidos disueltos.
 
+**Interferencias y controles modernos.** La coincidencia de m/z puede provenir de isóbaros, iones poliatómicos o doble carga. Más cuentas no significan siempre más analito. Elegir otro isótopo exige considerar abundancia y nuevas interferencias; una corrección matemática exige información e hipótesis válidas, y no debe aplicarse ciegamente si el aporte interferente domina. Una celda de colisión/reacción ayuda a reducir solapamientos. En colisión con helio y discriminación de energía cinética se aprovecha el comportamiento diferente de iones poliatómicos; no es simplemente filtrar sólidos de la muestra. En reacción se emplea química selectiva con el gas, que también puede generar nuevos productos y necesita control. La celda y el analizador no realizan la misma función. Los sistemas ICP-MS/MS añaden selección de masas antes y después de la celda para controlar qué iones intervienen. No es necesario memorizar caudales o recetas de gas: se comprenden función, límites y condiciones del método. El patrón interno se añade a patrones, blanco de calibración y muestras con concentración final comparable; puede incorporarse previamente o en línea antes de nebulizar. Debe responder de manera adecuada y no tener un aporte natural significativo no controlado en la muestra. Se usa el cociente señal de analito/señal del patrón interno cuando así se calibra. Compensa deriva y ciertos efectos comunes, no todo efecto de matriz ni un solapamiento exclusivo del analito. Una señal interna anómala obliga a revisar adición, transporte, matriz y equipo; no se sustituye por un valor inventado. Las adiciones patrón también requieren respuesta válida y matriz comparable y no eliminan toda contaminación o interferencia aditiva. Los blancos, controles independientes, materiales de referencia, duplicados y lavados siguen siendo necesarios aunque haya celda y patrón interno.
+
 ### 2.5. ICP-OES, el hermano que mide luz
 
 Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se detecta:
@@ -162,7 +170,9 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 | Isótopos | No los distingue | **Sí**: es la única que los distingue |
 | Norma de agua | **UNE-EN ISO 11885:2010** | **UNE-EN ISO 17294-2:2024** |
 
-**Qué NO determina el ICP-MS:** hidrógeno, helio y la mayoría de los gases nobles, **carbono**, y los elementos **sin isótopos naturales**. Los halógenos van mal porque su energía de ionización es más alta que la del argón.
+**Límites de aplicación:** H y He no son analitos de la determinación rutinaria directa de metales por ICP-MS. No es correcto excluir de modo universal el carbono o los elementos artificiales: existen aplicaciones e isótopos radiactivos medibles. Tampoco todos los halógenos son equivalentes: el yodo se determina por ICP-MS; el flúor presenta grandes dificultades para medida directa como F⁺ por su elevada energía de ionización y fondo. Las prestaciones deben demostrarse para cada elemento, matriz y configuración.
+
+**Comparación y alcance de las prestaciones.** ICP-OES detecta emisión de especies excitadas, mientras ICP-MS detecta iones separados por m/z. La interfase de conos que transfiere iones al alto vacío es propia de ICP-MS, aunque algunas ópticas OES se purgan o trabajan en condiciones específicas para el UV; no confundir ambos conceptos. Los límites de detección y rangos dinámicos de la tabla son orientativos, no valores garantizados para todo elemento y muestra. Un método OES que cumple los requisitos puede ser preferible frente a un MS inadecuado a la matriz. La capacidad isotópica de ICP-MS no implica separar todas las interferencias ni identificar compuestos originales sin un método de especiación. Medir concentración másica de uranio no equivale por sí solo a medir actividad radiactiva o dosis. La alta energía de ionización del flúor dificulta formar F⁺ en un plasma de argón, pero no justifica afirmar que el yodo o todos los halógenos sean indeterminables. Se consulta el alcance real de la técnica y del método.
 
 ### 2.6. Frente a la absorción atómica del tema 26
 
@@ -174,6 +184,8 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 | Interferencias químicas | Frecuentes (lantano, cesio) | **Casi desaparecen** |
 | Interferencias propias | De fondo, ionización, químicas | **Isobáricas y poliatómicas** |
 | Cuándo se elige | Uno o dos metales, presupuesto corto | **Varios metales**, o trazas muy bajas |
+
+**Comparación con el tema 26 matizada.** La AAS clásica suele ser secuencial y puede ser adecuada para pocos elementos. Existen AAS con cátodos multielementales y con fuente continua de alta resolución: una lámpara por elemento no es una regla universal. El ICP puede aportar mayor productividad multielemental, pero la selección combina concentración, matriz, incertidumbre, volumen, coste y finalidad. Una técnica sensible no subsana errores de toma, digestión o contaminación. La ausencia de una lámpara analítica de absorción en ICP no implica ausencia de sistema de calibración ni de controles.
 
 ### 2.7. Utilización en el análisis de agua
 
@@ -187,6 +199,8 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 
 - **Agua de consumo (RD 3/2023, anexo III, parte D):** no se impone método. **Límite de cuantificación ≤ 30 %** del valor paramétrico e **incertidumbre (k = 2)** de la **tabla 15**. El LC y el LD han de ser **siempre inferiores al valor paramétrico**.
 - **Aguas superficiales (RD 817/2015, anexo III, C.1):** métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** al nivel de la norma de calidad ambiental y **LC ≤ 30 %** de esa NCA.
+
+**Calidad de resultados en agua.** Se define antes de preparar si se busca fracción disuelta, recuperable o contenido que incluye partículas. Se conserva representatividad y se documentan separación, digestión y diluciones. La digestión ácida puede tener límites de recuperación de compuestos refractarios; cambiar al ICP no convierte toda extracción en total absoluta. El agua y los reactivos deben ser adecuados a niveles traza y los blancos deben cubrir las etapas relevantes. Un blanco instrumental y uno de proceso no detectan exactamente las mismas fuentes de contaminación. Tras una muestra concentrada se controla arrastre, especialmente antes de muestras bajas. El patrón interno no corrige pérdidas ocurridas antes de incorporarlo. La recta o función de respuesta relaciona señal con concentración conocida y requiere un intervalo comprobado; se evitan extrapolación y doble corrección de dilución. La coherencia entre isótopos puede revelar interferencias, pero debe considerar abundancias, respuesta y correcciones. Se informa analito, fracción, unidad, método, factores e incertidumbre cuando corresponda. Para el RD 3/2023 se aplican sus requisitos de rendimiento y la incertidumbre no se añade automáticamente al valor paramétrico. El uso de la norma técnica y su edición se documenta sin confundir el año ISO con el de adopción UNE.
 
 ## 3. Tabla operativa
 
@@ -220,7 +234,7 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 - **Interferencias del ICP-MS: ISOBÁRICAS y POLIATÓMICAS.** ⁴⁰Ar y ⁴⁰Ca a m/z 40; **⁴⁰Ar¹⁶O⁺ sobre ⁵⁶Fe⁺**.
 - **Se corrigen** eligiendo otro isótopo, con ecuaciones de corrección, igualando matriz, por adición de patrón o con **PATRÓN INTERNO** (germanio), bombeado **antes de la nebulización**.
 - **ICP-MS ≈ 1-10 ppt; ICP-OES ≈ 1-10 ppb.** Rango dinámico **8 frente a 6** órdenes de magnitud. **Solo el ICP-MS distingue isótopos.**
-- **El ICP-MS no determina** hidrógeno, helio, gases nobles, **carbono** ni elementos sin isótopos naturales; los halógenos, mal.
+- **No generalizar exclusiones de elementos.** H y He no son analitos rutinarios directos; hay aplicaciones para carbono y radioisótopos artificiales. El yodo es determinable; el flúor directo como F⁺ presenta especial dificultad.
 - **ICP-OES → UNE-EN ISO 11885:2010. ICP-MS → UNE-EN ISO 17294-2:2024** (parte 1, directrices generales; **parte 2**, elementos e isótopos de uranio).
 - **OJO A LA VIGENCIA: las dos partes de la 17294 se renovaron en 2024** y las anteriores (2017 y 2007) **están anuladas**.
 - **Metales TOTALES → digestión ácida en caliente** (UNE-EN ISO 15587-1/-2). Metales **disueltos → filtrar a 0,45 µm**.
@@ -280,3 +294,6 @@ Mismo plasma, misma antorcha, misma entrada de muestra. Lo que cambia es qué se
 9. **1322 C2 #30 aporta un dato que roza la duda 9 del tema 26.** Para «sodio, potasio, calcio y magnesio» la única opción sensata que se ofrece es **cromatografía iónica para cationes**. No resuelve del todo la ambigüedad del tema 26 —allí las opciones incluían potenciometría, que aquí no está—, pero **apunta a que el examinador considera la cromatografía iónica la técnica de esos cationes**. **Ya trasladado**: la duda 9 del tema 26 recoge la matización. Allí queda dicho que **la duda se estrecha pero no se cierra**, porque 1322 C2 #30 ofrece además «ninguna de las anteriores es correcta» y sigo sin plantilla de respuestas.
 
 10. **El reparto entre este tema y el 26 lo he decidido yo**, y el de dentro del tema también: el enunciado dice «espectroscopía de masas», así que el ICP-MS lleva el peso y el ICP-OES entra como hermano porque tiene norma de agua vigente y porque **las dos preguntas documentadas son del plasma y de la antorcha, que son comunes a los dos**. La **espectrometría de masas acoplada a cromatografía** (GC-MS, LC-MS) no está aquí: es de los temas 31 y 32.
+
+
+**Revisión de apoyo a la ampliación (17/11/2026).** Fuentes primarias: Agilent, *Single Quadrupole ICP-MS vs Triple Quadrupole ICP-MS*, 5994-4830EN, apartados de instrumentación, CRC y elementos (https://www.agilent.com/cs/library/primers/public/primer-icp-mq-icp-qqq-5994-4830en-agilent.pdf); Agilent, *Internal Standard Method and Standard Addition Method* (https://icp-ms.help.agilent.com/en/HowTo/Help/Reference/Internal_Standard_Method_and_Standard_Addition_Method.htm); Thermo Scientific, *Analysis of Iodine Species in Seaweed using IC-ICP-MS*, AN44475 (https://documents.thermofisher.com/TFS-Assets/CMD/Application-Notes/an-44475-ic-icp-ms-iodine-seaweed-species-an44475-en.pdf), como evidencia de capacidad para yodo, no como norma de agua. La celda CRC ya se desarrolla con fuente primaria; queda superada la limitación histórica de no disponer de fuente. Se corrigen exclusiones universales de elementos y el alcance del patrón interno.

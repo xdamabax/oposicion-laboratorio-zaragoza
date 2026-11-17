@@ -6,15 +6,15 @@ estado: aprobado
 verificado: 2026-09-01
 fuentes:
   - "Reglamento (CE) n.º 1272/2008 (CLP), sobre clasificación, etiquetado y envasado de sustancias y mezclas. Versión consolidada de 01/07/2026, en vigor. ELI: http://data.europa.eu/eli/reg/2008/1272/2026-07-01"
-  - "Reglamento (UE) 2024/2865, de 23 de octubre de 2024, que modifica el CLP. Aplicación escalonada: 01/07/2026 y 01/01/2027 (BOE: DOUE-L-2024-81721)."
+  - "Reglamento (UE) 2024/2865, de 23 de octubre de 2024, que modifica el CLP. Aplicación escalonada, con determinados plazos aplazados al 01/01/2028 por el Reglamento (UE) 2025/2439 (BOE: DOUE-L-2025-81843)."
   - "Reglamento Delegado (UE) 2023/707, que introduce las nuevas clases de peligro (alteradores endocrinos, PBT/mPmB, PMT/mPmM)."
   - "CLP, texto publicado en el DOUE L 353, de 31/12/2008, consultado a través del BOE para el articulado literal (arts. 2, 17 y 20) — https://www.boe.es/doue/2008/353/L00001-01355.pdf"
   - "CLP, anexo III (indicaciones de peligro) y anexo IV (consejos de prudencia), edición en castellano publicada por el Ministerio de Sanidad — https://www.sanidad.gob.es/areas/sanidadAmbiental/prodQuimicos/reglamentoCLP/"
   - "Decisión 2014/955/UE de la Comisión, de 18 de diciembre de 2014, que modifica la Decisión 2000/532/CE sobre la lista de residuos (DOUE L 370, de 30/12/2014) — https://www.boe.es/doue/2014/370/L00044-00086.pdf"
-  - "Real Decreto 374/2001, de 6 de abril, sobre agentes químicos durante el trabajo (BOE-A-2001-8436), texto consolidado, última actualización de 18/12/2025."
-  - "Real Decreto 773/1997, de 30 de mayo, sobre equipos de protección individual (BOE-A-1997-12735), texto consolidado, última actualización de 18/12/2025."
-  - "Real Decreto 656/2017, de 23 de junio, Reglamento de Almacenamiento de Productos Químicos e ITC MIE APQ 0 a 10 (BOE-A-2017-8755), texto consolidado, última actualización de 19/12/2025."
-  - "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular (BOE-A-2022-5809), texto consolidado, última actualización de 11/03/2026."
+  - "Real Decreto 374/2001, de 6 de abril, sobre agentes químicos durante el trabajo (BOE-A-2001-8436), texto consolidado, última actualización de 23/10/2026."
+  - "Real Decreto 773/1997, de 30 de mayo, sobre equipos de protección individual (BOE-A-1997-12735), texto consolidado, última actualización de 08/12/2021."
+  - "Real Decreto 656/2017, de 23 de junio, Reglamento de Almacenamiento de Productos Químicos e ITC MIE APQ 0 a 10 (BOE-A-2017-8755), texto consolidado, última actualización de 25/07/2017."
+  - "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular (BOE-A-2022-5809), texto consolidado, última actualización de 02/04/2025."
   - "Agencia Europea de Sustancias y Mezclas Químicas (ECHA), «Etiquetado y envasado» y «Nuevas clases de peligro en 2023»."
   - "INSST, NTP 725, «Seguridad en el laboratorio: almacenamiento de productos químicos» (2006). Guía de buenas prácticas, no norma obligatoria. Leída íntegra para el apartado 6.2. — https://www.insst.es/documents/94886/196283/NTP+725+Seguridad+en+el+laboratorio.+almacenamiento+de+productos+qu%C3%ADmicos.pdf"
   - "INSST, NTP 479, «Prevención del riesgo en el laboratorio químico: reactividad de los productos químicos (II)». Consultada para los éteres y la formación de peróxidos. — https://www.insst.es/documents/94886/326853/ntp_479.pdf"
@@ -95,7 +95,7 @@ El **Reglamento Delegado (UE) 2023/707** añadió cuatro grupos de clases de pel
 | Mezclas nuevas (a partir del 01/05/2026) | **1 de mayo de 2026** |
 | Mezclas ya comercializadas antes del 01/05/2026 | **1 de mayo de 2028** |
 
-Estas clases **no tienen pictograma propio**: se comunican mediante indicaciones EUH. Además, el **Reglamento (UE) 2024/2865** revisó el CLP con aplicación escalonada el **1 de julio de 2026** y el **1 de enero de 2027**.
+Estas clases **no tienen pictograma propio**: se comunican mediante indicaciones EUH. Además, el **Reglamento (UE) 2024/2865** revisó el CLP con aplicación escalonada. El **Reglamento (UE) 2025/2439** aplazó al **1 de enero de 2028** determinadas obligaciones sobre formato de etiquetas, reetiquetado, publicidad, venta a distancia y estaciones de servicio. No deben confundirse estos aplazamientos con el calendario propio de las nuevas clases de 2023. Para cada obligación debe consultarse el artículo 2 del Reglamento 2024/2865, en su redacción modificada.
 
 ---
 
@@ -156,7 +156,7 @@ El **art. 17.1** enumera literalmente lo que debe llevar la etiqueta de una sust
 | g) | Los **consejos de prudencia** apropiados (art. 22) | **Cuando proceda** |
 | h) | Una sección de **información suplementaria** (art. 25) | **Cuando proceda** |
 
-Los cuatro primeros no llevan la coletilla; los cinco últimos van precedidos de *«cuando proceda»*. Además, el art. 17.2 exige que la etiqueta esté escrita en **la lengua o lenguas oficiales del Estado miembro** donde se comercialice.
+Los tres primeros no llevan la coletilla; los cinco últimos van precedidos de *«cuando proceda»*. Además, el art. 17.2 exige que la etiqueta esté escrita en **la lengua o lenguas oficiales del Estado miembro** donde se comercialice.
 
 Hay **exenciones para envases pequeños** (con carácter general, inferiores a **125 ml**) o difíciles de etiquetar, que permiten omitir indicaciones, consejos o pictogramas.
 
@@ -226,6 +226,43 @@ Las **duchas de seguridad y lavaojos** no son EPI: son **protección colectiva**
 
 ---
 
+#### Elección, uso y conservación de los EPI
+
+El **RD 773/1997, arts. 3 y 5 a 10** concreta obligaciones aplicables también al laboratorio:
+
+- El empresario determina los puestos, riesgos, partes del cuerpo y tipos de equipo; **suministra gratuitamente los EPI y los repone cuando es necesario** (art. 3).
+- Los EPI deben proteger eficazmente **sin ocasionar riesgos adicionales ni molestias innecesarias** (art. 5.1).
+- Deben responder a las condiciones del puesto y tener en cuenta la **anatomía, fisiología y salud del trabajador**; se adecuan al portador mediante los ajustes necesarios (art. 5.1).
+- Si se usan varios EPI simultáneamente, deben ser **compatibles entre sí y conservar su eficacia** (art. 5.2).
+- La elección exige evaluar riesgos residuales, definir las características necesarias y comparar los equipos disponibles; **se revisa si cambian las circunstancias que motivaron la elección** (art. 6).
+- **Uso, almacenamiento, mantenimiento, limpieza y reparación siguen las instrucciones del fabricante**; salvo casos particulares excepcionales, se emplean para los usos previstos (art. 7.1).
+- El tiempo y las condiciones de utilización dependen de la **gravedad, frecuencia y duración de exposición**, del puesto, de las prestaciones y de los riesgos adicionales del equipo (art. 7.2).
+- Son, en principio, **de uso personal**; si se comparten deben adoptarse medidas que eviten problemas de salud e higiene (art. 7.3).
+- Antes del uso se informa de **los riesgos que cubren y las actividades u ocasiones en que deben utilizarse** (art. 8.2).
+- Las instrucciones de utilización y mantenimiento se facilitan **preferentemente por escrito**; el manual del fabricante queda a disposición de los trabajadores y la información debe ser **comprensible** (art. 8.2).
+- Se garantiza formación y, cuando proceda, entrenamiento, especialmente en **combinaciones complejas de varios EPI** (art. 8.3).
+- El trabajador debe **utilizar y cuidar correctamente** el equipo, devolverlo al lugar indicado e **informar inmediatamente al superior directo** de daños o anomalías que puedan reducir su eficacia (art. 10).
+
+#### Evaluación del riesgo químico
+
+Según el **RD 374/2001, arts. 2 a 4**, el **peligro es la capacidad intrínseca de causar daño**; el riesgo considera la **probabilidad y severidad del daño por exposición**. La exposición normalmente es inhalatoria o dérmica; también se consideran los agentes generados de manera no intencional y los residuos de la actividad.
+
+La evaluación analiza conjuntamente **propiedades, ficha de seguridad, valores límite, cantidades utilizadas o almacenadas, tipo, nivel y duración de exposición, condiciones de trabajo, eficacia de las medidas e incidentes anteriores** (art. 3.1). No se limita a tareas rutinarias: **incluye mantenimiento y reparación** (art. 3.2). Cuando hay varios agentes, se considera **el riesgo de su combinación** (art. 3.6).
+
+Los principios generales incluyen **reducir las cantidades al mínimo necesario, el número de expuestos y la duración e intensidad de exposición**, junto con procedimientos e higiene adecuados (art. 4). Un fallo de extracción exige detener o asegurar la operación y revisar las medidas previstas; no autoriza a improvisar protección respiratoria y seguir trabajando sin evaluación.
+
+#### Límites de exposición, información y emergencias
+
+En el **RD 374/2001, art. 2.9**, los valores límite ambientales se refieren a concentraciones en **la zona de respiración del trabajador**. El de exposición diaria es una media ponderada referida a una **jornada estándar de ocho horas**; el de corta duración se refiere normalmente a **quince minutos**, salvo período inferior especificado. El **valor límite biológico** se refiere al agente, metabolito u otro indicador relacionado, medido en un medio biológico apropiado (art. 2.10), no al aire del local.
+
+La evaluación por inhalación incluye normalmente **medir concentraciones en la zona de respiración y compararlas con el límite correspondiente**, adaptando estrategia y método a ese límite; puede prescindirse de mediciones si el empresario demuestra claramente por otros medios una prevención y protección adecuadas (art. 3.5). No basta una medida ambiental cualquiera sin relación con la exposición y su tiempo de referencia.
+
+El **art. 7** exige planificar la respuesta a accidentes, incidentes y emergencias cuando proceda según la evaluación. Incluye **medios para control, evacuación y primeros auxilios**, formación con **ejercicios de seguridad a intervalos regulares**, coordinación con **servicios externos de urgencia**, información accesible a servicios internos y externos, y **sistemas de aviso y comunicación**. Deben comunicarse los peligros previos y los específicos que puedan surgir durante el accidente. Si ocurre la emergencia, se actúa **inmediatamente y se informa a los trabajadores afectados**. Para restablecer la normalidad, solo trabajan en la zona **los imprescindibles**, con protección y material especializado mientras persista la situación; **no se permite permanecer a personas sin protección**, y la situación excepcional no debe ser permanente.
+
+El **art. 9** obliga a informar sobre **resultados de evaluación y cambios importantes**, identidad y peligros de los agentes, **valores límite y requisitos aplicables**, precauciones para protegerse y proteger a otros, y **acceso a las fichas del proveedor**. La forma de informar se adapta a **volumen, complejidad, frecuencia de uso y nivel de riesgo**, y se actualiza cuando sea necesario. La señalización de recipientes y conducciones se rige por el **RD 485/1997**; aun sin señalización obligatoria, **naturaleza y peligros del contenido deben ser claramente reconocibles**.
+
+El **art. 6** regula la vigilancia de la salud relacionada con la exposición. Cuando sea requisito obligatorio, se **informa al trabajador antes de asignar la tarea**. El personal sanitario informa personalmente al trabajador de los resultados en los supuestos del art. 6.7; ante daño relacionado o superación del límite biológico, se revisan **evaluación y medidas preventivas** y se tienen en cuenta recomendaciones sanitarias. El trabajador puede solicitar acceso a **la documentación que le afecte personalmente**, con las garantías legales aplicables.
+
 ## 6. Almacenamiento de productos químicos
 
 ### 6.1. El matiz que decide la respuesta: el APQ casi nunca aplica a un laboratorio
@@ -253,6 +290,12 @@ Y añade una **regla de suma**: agrupando por tipo de peligro, la suma de los co
 **Qué rige entonces en un almacén de laboratorio por debajo de esos umbrales.** El propio artículo lo dice: *«En las instalaciones excluidas […] se seguirán las medidas de seguridad propuestas por el fabricante de productos químicos, a cuyos efectos éste entregará, al menos, las fichas de datos de seguridad»*. Es decir: **la FDS y la normativa de PRL**, no el APQ.
 
 También hay un límite fino que sí conviene recordar: para los líquidos **tóxicos excluidos**, la capacidad máxima unitaria de los envases no puede superar **2 litros en categoría 1** y **5 litros en categoría 2**.
+
+En la tabla I del APQ, las unidades dependen del estado: **sólidos en kg, líquidos en L, gases licuados o disueltos en kg y gases comprimidos en Nm³** (nota 1). No se suman sin conversión magnitudes de distinto tipo.
+
+Cuando una instalación está sujeta al reglamento, la **puesta en servicio se comunica al órgano competente de la comunidad autónoma antes de iniciarla**, una vez terminadas las obras (art. 3). Según el supuesto se presenta la documentación o declaración responsable prevista; **una memoria puede sustituir al proyecto en los casos del art. 3.6**, no en todos. **No precisar proyecto no equivale a estar excluido del APQ**: el art. 3.7 exige certificado de organismo de control habilitado para las instalaciones que no lo precisan. El proyecto puede integrarse en el del edificio o ser específico; en este último caso los técnicos deben coordinarse (art. 3.4).
+
+La documentación identifica **productos, clasificación, cantidades máximas y fichas de seguridad**, y describe **las incompatibilidades del almacenamiento conjunto**, incluidas las derivadas de agentes de extinción o temperaturas diferentes (art. 4.2). El montaje en otra ubicación se considera **instalación nueva**; la baja o modificación que provoque exclusión se comunica a la comunidad autónoma (art. 3.8-9).
 
 ### 6.2. Reglas prácticas de almacenamiento
 
@@ -316,6 +359,22 @@ Solo puede apartarse de este orden justificándolo con un **enfoque de ciclo de 
 - **Nunca verter al desagüe** un residuo peligroso ni mezclar grupos incompatibles en el mismo bidón.
 - **Etiquetar el envase de residuo** con su contenido, el grupo, la fecha de inicio de acumulación y los pictogramas de peligro que correspondan.
 - La entrega se hace a **gestor autorizado**, con su documento de identificación y trazabilidad.
+
+#### Obligaciones de almacenamiento y etiquetado del residuo
+
+La **Ley 7/2022, arts. 20.4 y 21**, concreta estas obligaciones del productor o poseedor:
+
+- Antes de entregar los residuos, **identificarlos y determinar sus características de peligrosidad**, facilitando al gestor la información necesaria para el tratamiento (art. 20.4.a-b).
+- **Informar inmediatamente a la administración ambiental competente** de desaparición, pérdida o escape de residuos peligrosos o de otros que puedan dañar el medio ambiente por su naturaleza o cantidad (art. 20.4.d).
+- Contar con **zona habilitada e identificada**, con higiene y seguridad; los peligrosos deben estar **protegidos de la intemperie y disponer de retención de vertidos y derrames** (art. 21.a).
+- El almacenamiento de residuos peligrosos en el lugar de producción tiene **máximo ordinario de seis meses**, tanto si se destinan a valorización como a eliminación. Solo la autoridad autonómica, en supuestos excepcionales justificados y con garantías, puede ampliar **hasta otros seis meses** (art. 21.a).
+- Los no peligrosos se almacenan durante **menos de dos años para valorización y menos de uno para eliminación** (art. 21.a).
+- El plazo empieza **al iniciarse el depósito**, fecha que consta en el archivo cronológico y en el sistema de almacenamiento (art. 21.a).
+- No se mezclan residuos no peligrosos si ello **dificulta su valorización**; no se mezclan ni diluyen los peligrosos con otros residuos, sustancias o materiales (art. 21.b-c).
+- Ante una mezcla ilegal de peligrosos, se entrega a gestor autorizado para separación cuando sea técnicamente viable y necesaria; en caso contrario se justifica ante la autoridad y se entrega a instalación autorizada para tratar **ese tipo de mezcla**, no se improvisa su separación en el laboratorio (art. 21.c).
+- La etiqueta de residuos peligrosos será **clara, visible, legible e indeleble, al menos en español**, y fijada firmemente; se anulan indicaciones anteriores que induzcan a error (art. 21.e).
+- Incluye **código y descripción del residuo y sus características de peligrosidad**, datos del productor o poseedor incluido **NIMA**, fecha de inicio del depósito y pictogramas asignados aplicando sus reglas de precedencia (art. 21.e).
+- El tamaño mínimo de la etiqueta es **10 × 10 cm**. Puede omitirse la etiqueta separada si las inscripciones están claramente marcadas sobre el envase y cumplen los mismos requisitos (art. 21.e).
 
 ### 7.4. La Lista Europea de Residuos (LER)
 
@@ -383,12 +442,12 @@ Los residuos de un laboratorio caen en el **capítulo 16, «Residuos no especifi
   - el **articulado literal** (arts. 2.4, 2.5, 2.6, 17 y 20) se ha leído sobre el texto publicado en el **DOUE L 353, de 31/12/2008**, descargado del BOE (7,2 MB). Estos artículos no han sido modificados en su numeración; conviene contrastar el consolidado si el examen entra en el detalle de las modificaciones de 2024;
   - los **anexos III y IV** y el mapa **pictograma → grupo de peligro**, sobre la edición en castellano publicada por el **Ministerio de Sanidad**.
 - **Lista Europea de Residuos:** **Decisión 2014/955/UE** (DOUE L 370, de 30/12/2014), descargada del BOE y consultada directamente para los códigos del subcapítulo 16 05 y para la regla del asterisco. Se comprobó además en la API del BOE que la **Orden MAM/304/2002 figura como derogada** (fecha de derogación 10/04/2022, vigencia agotada), por lo que no se cita.
-- **Modificaciones recientes verificadas:** Reglamento Delegado (UE) 2023/707 (clases nuevas y calendario de aplicación, contrastado en ECHA) y Reglamento (UE) 2024/2865 (aplicación el 01/07/2026 y el 01/01/2027).
+- **Modificaciones recientes verificadas:** Reglamento Delegado (UE) 2023/707 (clases nuevas y calendario de aplicación, contrastado en ECHA) y Reglamento (UE) 2024/2865, con los aplazamientos parciales del Reglamento (UE) 2025/2439 (BOE: https://www.boe.es/buscar/doc.php?id=DOUE-L-2025-81843).
 - **Normativa española**, textos consolidados descargados de la API de datos abiertos del BOE y comprobados como **no derogados**:
-  - RD 374/2001 (BOE-A-2001-8436), actualización de 18/12/2025.
-  - RD 773/1997 (BOE-A-1997-12735), actualización de 18/12/2025.
-  - RD 656/2017 (BOE-A-2017-8755), actualización de 19/12/2025.
-  - Ley 7/2022 (BOE-A-2022-5809), actualización de 11/03/2026.
+  - RD 374/2001 (BOE-A-2001-8436), actualización de 23/10/2026.
+  - RD 773/1997 (BOE-A-1997-12735), actualización de 08/12/2021.
+  - RD 656/2017 (BOE-A-2017-8755), actualización de 25/07/2017.
+  - Ley 7/2022 (BOE-A-2022-5809), actualización de 02/04/2025.
 - **Guía técnica del INSST**, leída íntegra y directamente para el apartado 6.2: **NTP 725, «Seguridad en el laboratorio: almacenamiento de productos químicos»** (INSST, año 2006). De ella salen el sistema de islas / estanterías / península, la regla del medio litro en estantes elevados, los emplazamientos prohibidos, las categorías con separación propia y el riesgo del almacenamiento prolongado. Las NTP son **guías de buenas prácticas**, no normas obligatorias: el propio documento lo advierte en cabecera. — https://www.insst.es/documents/94886/196283/NTP+725+Seguridad+en+el+laboratorio.+almacenamiento+de+productos+qu%C3%ADmicos.pdf
 - **NTP 479**, «Prevención del riesgo en el laboratorio químico: reactividad de los productos químicos (II)» (INSST), consultada solo para el punto de los éteres y los peróxidos. — https://www.insst.es/documents/94886/326853/ntp_479.pdf
 - **Ampliación del 16 de octubre de 2026 (precedentes de examen 1246 n.º 50 y 1322, segundo ejercicio, n.º 1):** la H300, la H304, la H335, la H350, el P301 + P310 y el P331, y las tablas 3.1.3 y 3.10.2 del anexo I, leídos literalmente en el texto del **DOUE L 353, de 31/12/2008**, descargado del BOE (https://www.boe.es/doue/2008/353/L00001-01355.pdf). El examen copia esa redacción original («centro de información toxicológica»); la del apartado 4 sale de la edición de Sanidad.

@@ -37,7 +37,7 @@ El tema recorre la técnica entera en cuatro escalones: el **fundamento** (2.1),
 | Definición de pH, patrones y escala | **IUPAC 2002**; **DIN 19266 / 19267** | Escala y patrones |
 | Cómo se mide el pH en agua | **UNE-EN ISO 10523:2012** | Ensayo normalizado |
 | **Cómo se calibra un pHímetro** | **CEM, procedimiento QU-003** | **Procedimiento oficial español** |
-| Qué se exige al aparato y al método en agua de consumo | **RD 3/2023**, anexo III | Norma con rango de ley |
+| Qué se exige al aparato y al método en agua de consumo | **RD 3/2023**, anexo III | Reglamento estatal |
 | Vocabulario: calibrar, verificar, ajustar | **VIM** — **desarrollado en el tema 21** | Metrología general |
 | Volumetría con punto final a pH fijo | **UNE-EN ISO 9963-1:1996** | Ensayo normalizado |
 
@@ -80,6 +80,8 @@ donde *R* es la constante de los gases, *F* la de Faraday y *T* la temperatura a
 De la propia ecuación sale el **talón de Aquiles de la potenciometría directa**: un error de **1 mV** en la medida equivale a un error de 1/59,16 = 0,017 unidades logarítmicas, es decir, **casi un 4 % de error relativo** en la actividad de un ion monovalente. En medida de pH ese error es asumible (0,017 unidades); en potenciometría directa de otros iones, no tanto, y menos aún si el ion es divalente, donde el mismo milivoltio vale el doble.
 
 #### Dos formas de usarla
+
+La comparación sobre el valor absoluto se refiere a **localizar una inflexión con un desplazamiento constante de la señal**, manteniendo buena respuesta del electrodo. No significa que toda deriva o falta de calibración sea inocua. En particular, un **punto final fijado a un valor de pH sí depende de la exactitud de ese valor**.
 
 | | **Potenciometría directa** | **Valoración potenciométrica** |
 | --- | --- | --- |
@@ -199,6 +201,8 @@ El **error alcalino** se corrige en parte con **vidrios de litio y bario**, que 
 
 #### El instrumento
 
+Conviene separar dos problemas: **guardar en seco puede deshidratar la membrana**, mientras que **guardar habitualmente en agua desionizada puede alterar el electrolito y la referencia**. El agua desionizada se usa para enjuagar entre medidas, no como solución general de conservación del electrodo combinado. El tiempo de recuperación y la solución exacta se toman del fabricante del modelo.
+
 ![pHímetro: medidor de alta impedancia, electrodo combinado y vaso con el tampón o la muestra](esquema:phmetro)
 
 El **pHímetro** es, en la definición del propio QU-003, *«un instrumento potenciométrico que incluye, dentro de su sistema de medida, un electrodo de referencia, un electrodo de respuesta al pH y un instrumento de medida de potencial»*.
@@ -292,7 +296,7 @@ Con las medias corregidas por temperatura se calcula la **recta de regresión** 
 
 Si se sale de ese intervalo: **nuevo ajuste con los tampones 4 y 7 y nueva calibración**. Se registran las lecturas **antes y después** del ajuste, la temperatura de los tampones y la ambiente.
 
-*(El criterio «0,995 a 1,005» está tomado literalmente del procedimiento. Ver «Dudas»: un coeficiente de correlación no puede pasar de 1, así que el intervalo se comporta en la práctica como un criterio sobre la **pendiente** de la recta.)*
+*(El criterio «0,995 a 1,005» está tomado literalmente del procedimiento. Ver «Dudas»: un coeficiente de correlación no puede pasar de 1. Hay una inconsistencia en la redacción que debe aclararse con el procedimiento aplicable y el manual; no debe aceptarse un r mayor que uno ni reinterpretar automáticamente el intervalo como pendiente.)*
 
 #### Incertidumbre (6.1)
 
@@ -312,6 +316,10 @@ Dato práctico que da el propio procedimiento: **1 °C de diferencia de temperat
 *(El desarrollo general de la incertidumbre y del ajuste por mínimos cuadrados es de los temas 38 y 39. Aquí sólo lo que aplica al pHímetro.)*
 
 #### Periodicidad
+
+**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1.
+
+El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados.
 
 La que indique el manual. Si no lo indica, y según el uso, **podría ser de seis meses** — y **el establecimiento del periodo es responsabilidad del usuario**.
 
@@ -384,6 +392,8 @@ Los dos que hay que tener claros:
 En las derivadas, cada valor se atribuye al **punto medio del incremento** de volumen: ΔE/ΔV entre 12,00 y 12,10 mL se representa en 12,05.
 
 #### Qué electrodo se usa en cada volumetría
+
+En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado.
 
 | Clase de volumetría | Electrodo indicador |
 | --- | --- |

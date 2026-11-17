@@ -1573,6 +1573,174 @@
       "fuente": "CDC, microscopía de bacilos ácido-alcohol resistentes, principio de tinción · apunte §7",
       "apartado": "7",
       "evidencia": "- Un colorante fuerte, la **fucsina fenicada**, entra en ellas. Después **resisten la decoloración con ácido-alcohol** y quedan **rojas**."
+    },
+    {
+      "id": "t14-q78",
+      "pregunta": "Se necesita observar una gota pendiente algo más de tiempo sin que se seque. Además de fijar el cubre, ¿qué ventaja aporta la vaselina?",
+      "opciones": [
+        "Retrasa la desecación de la preparación.",
+        "Aumenta la intensidad del colorante primario.",
+        "Fija las células por calor."
+      ],
+      "correcta": 0,
+      "explicacion": "El sellado con vaselina reduce la pérdida de agua. La prueba sigue siendo una observación en fresco.",
+      "fuente": "UKHSA, UK SMI TP 21, v4.1, gota pendiente · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "2. **Humedecer los cuatro bordes del cubreobjetos con agua** para que se pegue. **La vaselina** sirve igual y además **retrasa la desecación**, así que la gota se puede observar más tiempo."
+    },
+    {
+      "id": "t14-q79",
+      "pregunta": "Tras invertir la preparación, la gota toca la superficie inferior del porta. ¿Qué detalle de la técnica debe corregirse?",
+      "opciones": [
+        "Usar una excavación suficiente para que la gota cuelgue libre del cubre.",
+        "Fijar al calor para adherir la gota al fondo.",
+        "Aplanarla hasta que quede comprimida entre dos láminas."
+      ],
+      "correcta": 0,
+      "explicacion": "La gota queda suspendida del cubreobjetos dentro de la excavación y no debe tocar el fondo.",
+      "fuente": "UKHSA, UK SMI TP 21, v4.1, gota pendiente · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "5. **Dar la vuelta:** la gota queda **colgando del cubre dentro de la excavación**, sin tocar el fondo."
+    },
+    {
+      "id": "t14-q80",
+      "pregunta": "En una tinción ácido-alcohol resistente se usó agua del grifo en vez de agua desionizada. ¿Qué interferencia puede introducir?",
+      "opciones": [
+        "Una prueba falsa de movilidad por crecimiento en agar.",
+        "Micobacterias ambientales procedentes del agua.",
+        "Un halo de polisacárido que impide que crezcan las bacterias."
+      ],
+      "correcta": 1,
+      "explicacion": "Algunas micobacterias ambientales del agua pueden adquirir la tinción y confundirse con organismos de la muestra.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, agua de lavado de frotis · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "- Para las extensiones y los lavados, **agua destilada o desionizada**. **La del grifo no:** puede llevar micobacterias ambientales como ***Mycobacterium gordonae***, que confunden el Ziehl-Neelsen."
+    },
+    {
+      "id": "t14-q81",
+      "pregunta": "Si se omite la fijación de un frotis que sí debía fijarse, ¿qué problema puede aparecer durante los lavados de la tinción?",
+      "opciones": [
+        "Se obtiene un movimiento Browniano más intenso del porta fijado.",
+        "La tinción diferencial se convierte en una esterilización.",
+        "Parte del material puede desprenderse del porta."
+      ],
+      "correcta": 2,
+      "explicacion": "Una función de la fijación es adherir las células al portaobjetos para soportar los pasos posteriores.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory, 2.ª ed., preparación y fijación de frotis · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "- **pega** las células al porta;\n- **las mata** casi siempre, deteniendo su movimiento y su metabolismo;"
+    },
+    {
+      "id": "t14-q82",
+      "pregunta": "El decolorante se empleó como está validado, pero un control grampositivo aparece rosa. ¿Qué fallo del colorante primario concuerda con ese resultado?",
+      "opciones": [
+        "Cristal violeta demasiado diluido.",
+        "Cristal violeta que impide por completo la decoloración.",
+        "Cristal violeta aplicado a la concentración validada."
+      ],
+      "correcta": 0,
+      "explicacion": "Un colorante primario demasiado diluido puede impedir que las grampositivas retengan el violeta y dar un falso gramnegativo.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, errores de Gram · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| **Lugol mal lavado** | **Cristal violeta poco concentrado** |"
+    },
+    {
+      "id": "t14-q83",
+      "pregunta": "Dos zonas del mismo porta tienen espesores de frotis muy distintos. ¿Por qué esa desigualdad dificulta interpretar el Gram?",
+      "opciones": [
+        "El contraste cambia la especie según la zona.",
+        "El espesor no altera la tinción si se usa el mismo objetivo.",
+        "El grado de decoloración depende del grosor del frotis."
+      ],
+      "correcta": 2,
+      "explicacion": "El tiempo eficaz de decoloración depende del espesor. Un frotis uniforme ayuda a comparar la respuesta de las células.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, decoloración de Gram · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "**El grado de decoloración depende del grosor del frotis.** El paso crítico es **el decolorante**."
+    },
+    {
+      "id": "t14-q84",
+      "pregunta": "Tras examinar una preparación positiva se quiere evitar arrastrar bacilos a otro porta. ¿Qué operación destaca el procedimiento descrito?",
+      "opciones": [
+        "Conservar todo el aceite de la primera observación para el siguiente porta.",
+        "Limpiar el objetivo antes de examinar la siguiente preparación.",
+        "Lavar el segundo porta con el aceite del primero."
+      ],
+      "correcta": 1,
+      "explicacion": "La limpieza del objetivo reduce el arrastre de material entre preparaciones observadas con inmersión.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory, 2.ª ed., Ziehl-Neelsen · apunte §7",
+      "apartado": "7",
+      "evidencia": "**La OMS**, para el Ziehl-Neelsen, calienta hasta que el colorante **empieza a evaporarse, unos 60 °C**, lo deja **5 minutos** y decolora **5 minutos o hasta rosa pálido**. Antes de pasar al siguiente porta, **se limpia el objetivo**, para no arrastrar bacilos."
+    },
+    {
+      "id": "t14-q85",
+      "pregunta": "En una preparación negativa para cápsulas, el fondo queda demasiado claro y se pierde contraste. ¿Qué error del reactivo considera el procedimiento?",
+      "opciones": [
+        "Usar tinta china demasiado diluida.",
+        "Usar una safranina demasiado concentrada en este método.",
+        "Prolongar la decoloración con ácido-alcohol."
+      ],
+      "correcta": 0,
+      "explicacion": "La concentración de la tinta condiciona la densidad del fondo. Si se diluye demasiado, se distingue peor el halo.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, examen con tinta china · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "- **Errores:** **tinta diluida** (la concentración es crítica) y **frotis grueso**."
+    },
+    {
+      "id": "t14-q86",
+      "pregunta": "Una cepa con capacidad de esporular da solo células vegetativas en un cultivo muy joven. ¿Qué explicación conviene comprobar?",
+      "opciones": [
+        "Las células observadas son automáticamente resistentes al ácido-alcohol.",
+        "El cultivo puede no haber tenido tiempo de formar endosporas.",
+        "La cepa debe haber perdido esa capacidad de forma definitiva."
+      ],
+      "correcta": 1,
+      "explicacion": "En cultivos jóvenes pueden predominar las formas vegetativas. La ausencia de esporas en ese momento no descarta la capacidad de esporular.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, tinción de endosporas · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "- **Para que haya esporas, el cultivo debe ser viejo:** de **5 a 7 días**. Los de un día o menos pueden tener solo células vegetativas."
+    },
+    {
+      "id": "t14-q87",
+      "pregunta": "¿Qué contraste da el lavado con agua antes de aplicar safranina en la tinción de esporas descrita?",
+      "opciones": [
+        "La espora pierde el verde y la célula vegetativa lo retiene.",
+        "El agua tiñe de rosa tanto la célula como la espora.",
+        "La célula vegetativa pierde el verde y la espora lo retiene."
+      ],
+      "correcta": 2,
+      "explicacion": "La espora retiene el verde de malaquita. El lavado lo retira del resto de la célula, que puede tomar después la safranina.",
+      "fuente": "UKHSA, UK SMI TP 39, v3.1, Schaeffer-Fulton · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "4. **Lavar con agua fría**: decolora la célula, pero **la espora retiene el verde**."
+    },
+    {
+      "id": "t14-q88",
+      "pregunta": "Tras una manipulación brusca aparece un patrón de flagelación incompleto. ¿Qué limitación se debe descartar antes de clasificarlo?",
+      "opciones": [
+        "Pérdida mecánica de flagelos durante la preparación.",
+        "Formación de endosporas exclusivamente por el lavado.",
+        "Transformación del mordiente en colorante de contraste."
+      ],
+      "correcta": 0,
+      "explicacion": "Los flagelos pueden romperse o desprenderse. La preparación puede mostrar menos flagelos que la célula original.",
+      "fuente": "OpenStax, Microbiology, §2.4, tinción de flagelos, y apunte · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "- **Hay que manejar la muestra con mucho cuidado:** los flagelos se rompen o se desprenden."
+    },
+    {
+      "id": "t14-q89",
+      "pregunta": "Se valora qué reserva química ponen de manifiesto los gránulos metacromáticos visualizados con Albert. ¿Cuál es?",
+      "opciones": [
+        "Glucógeno extracelular de la cápsula.",
+        "Peptidoglucano de la pared completa.",
+        "Polifosfato."
+      ],
+      "correcta": 2,
+      "explicacion": "Los gránulos de volutina son depósitos de polifosfato. Albert los diferencia del resto de la célula.",
+      "fuente": "OMS, Manual of basic techniques for a health laboratory, 2.ª ed., tinción de Albert · apunte §8.4",
+      "apartado": "8.4",
+      "evidencia": "La **tinción de Albert** pone de manifiesto los **gránulos de volutina** (polifosfato) de ***Corynebacterium diphtheriae***. Se ven **bacilos verdes con gránulos verde-negros**, en filas o en **letras chinas** (OMS)."
     }
   ],
   "supuestos": [

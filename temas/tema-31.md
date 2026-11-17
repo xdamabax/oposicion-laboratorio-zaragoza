@@ -75,8 +75,8 @@ En un laboratorio de aguas es la técnica de los **trihalometanos y demás subpr
 | **Benceno y derivados** | **ISO 11423-1** (espacio de cabeza) y **-2** (extracción) | Ensayo normalizado |
 | **Insecticidas organoclorados, PCB y clorobencenos** | **ISO 6468:1996** | Ensayo normalizado |
 | **Ácidos haloacéticos** | **ISO 23631:2006** | Ensayo normalizado |
-| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma con rango de ley |
-| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma con rango de ley |
+| Qué se le exige al método (consumo) | **RD 3/2023**, anexo III, parte D | Norma reglamentaria |
+| Qué se le exige al método (superficiales) | **RD 817/2015**, anexo III, C.1 | Norma reglamentaria |
 
 ## 2. Desarrollo
 
@@ -87,6 +87,8 @@ La cromatografía **separa** repartiendo los componentes entre una **fase móvil
 Con eso basta para seguir. **Todo lo demás —factor de retención, selectividad, platos teóricos, van Deemter— es del tema 30.**
 
 Y una respuesta literal que conviene no perder: **«un cromatógrafo de gases por sí solo… SEPARA diferentes compuestos»** (1233 #9). Es la misma idea que «la columna separa», enunciada sobre el equipo entero.
+
+**Interpretación de la señal.** El tiempo de retención apoya identificación bajo condiciones comparables, pero una coincidencia aislada no demuestra identidad inequívoca. El área cuantifica solo al aplicar una función de respuesta y preparación adecuadas. Un pico puede contener coeluyentes y la ausencia de pico no prueba ausencia absoluta de analito. Las ventajas o respuestas de exámenes anteriores se estudian en su contexto; no convierten una técnica o detector en única opción universal.
 
 ### 2.2. Los cinco componentes de un cromatógrafo de gases
 
@@ -100,9 +102,11 @@ Y una respuesta literal que conviene no perder: **«un cromatógrafo de gases po
 4. **Detectores.**
 5. **Sistema de procesamiento de la señal y tratamiento de datos.**
 
-**Son CINCO, no seis.** En el cromatógrafo de líquidos el CEM enumera seis porque allí hay un bloque entero de **tratamiento de disolventes** —desgasificar, filtrar, mezclar—; aquí la fase móvil sale de una botella y no hay nada que tratar.
+**Son CINCO, no seis.** En el cromatógrafo de líquidos el CEM enumera seis porque allí hay un bloque entero de **tratamiento de disolventes** —desgasificar, filtrar, mezclar—; aquí se enumera el sistema de gases como bloque propio. Eso no significa que puedan ignorarse pureza, filtración y acondicionamiento de gases.
 
 **Y la pieza que define el aparato es el HORNO**: en la lista del CEM «columnas y hornos» van juntos, porque **la columna vive dentro del horno**. El inyector y el detector están **fuera** y se calientan por su cuenta, a temperaturas distintas.
+
+**Sistema completo.** La lista de cinco bloques del QU-005 no excluye control de pureza de gases, reguladores, trampas, estanqueidad y seguridad. El horno controla la columna; inyector y detector tienen funciones y controles distintos. Una avería de introducción o gas puede modificar la respuesta aunque el horno esté estable. Se siguen límites, alarmas y secuencias del manual: un enclavamiento no se anula para continuar una serie. Un detector de masas requiere además las condiciones de vacío e ionización de su configuración.
 
 ### 2.3. El gas portador
 
@@ -123,6 +127,8 @@ Es la **fase móvil**, y el CEM lo describe sin ambages: *«un gas inerte, cuya 
 | **Capilar** | **1-25 mL/min** |
 
 La diferencia es de un orden de magnitud, y es la consecuencia directa del diámetro.
+
+**Calidad y elección de gases.** Se comprueba la pureza requerida y se usan filtros o trampas adecuados para oxígeno, humedad e hidrocarburos cuando el sistema lo prevé. Un gas inerte frente a la muestra no implica que el suministro esté libre de impurezas. Oxígeno y humedad pueden perjudicar columna y respuesta; las fugas alteran condiciones y pueden introducir contaminantes. No se cambia el gas sin evaluar compatibilidad con columna, detector, velocidad y método. Gas portador, gases de llama del FID y gas auxiliar o make-up del detector son funciones distintas. ECD puede usar gases y configuraciones concretas; nitrógeno es un ejemplo habitual, no una obligación universal de todo equipo. Los caudales de la tabla son orientativos: dependen de dimensiones, condiciones y modo de control. Caudal volumétrico y velocidad lineal no son idénticos. Mantener una presión constante no garantiza el mismo caudal en cualquier temperatura o columna. Se documenta el modo de control y se verifica funcionamiento.
 
 ### 2.4. La muestra: tres condiciones y cómo se inyecta
 
@@ -145,9 +151,11 @@ La diferencia es de un orden de magnitud, y es la consecuencia directa del diám
 - **SPLIT:** la ventilación de división está **abierta**. Entra en la columna **entre el 0,1 % y el 10 %** de la muestra. Se usa cuando sobra analito.
 - **SPLITLESS:** se **cierra** la ventilación y entra prácticamente **toda** la muestra. Es el modo del **análisis de trazas** —y por tanto el de las aguas—. Como el caudal por el inyector es bajo, hay riesgo de ensanchamiento: se contrarresta manteniendo la columna **20-25 °C por debajo del punto de ebullición del disolvente**, de modo que éste **condensa a la entrada y forma una barrera que atrapa los solutos**; después se sube la temperatura y arranca la separación.
 
+**Introducción sin generalizaciones.** El analito debe transferirse y separarse en condiciones compatibles de volatilidad y estabilidad; no se presume que una matriz no volátil pueda entrar sin efectos. Puede quedar residuo en el inyector aunque el analito sea volátil. La elección de liner, volumen, temperatura y modo reduce discriminación, pérdidas y ensanchamiento. En split solo parte de la muestra entra: aumentar la división reduce la carga y puede perjudicar trazas. Si se define relación split como caudal de salida split/caudal a columna, la fracción ideal hacia columna es 1/(relación + 1); otras convenciones deben identificarse. En splitless la transferencia depende de tiempo, caudales y vaporización: no garantiza recuperación del cien por cien de todo compuesto. El enfoque por disolvente y el enfoque de analitos dependen de temperatura, fase y método; las cifras docentes no son una receta universal. La inyección fría en columna puede reducir descomposición del inyector caliente, pero no hace compatible todo termolábil con cualquier temperatura de separación. Un volumen excesivo de vapor puede exceder capacidad del liner y causar pérdidas o contaminación. Un septo, liner o conexión deteriorados pueden introducir fugas, sitios activos o picos extra.
+
 ### 2.5. Cómo se mete un AGUA en un cromatógrafo de gases
 
-Ésta es la parte específica del tema y la que más se pregunta en los supuestos: **el agua no se inyecta**. Hay que aislar antes lo que interesa.
+En los métodos habituales de volátiles en agua se aísla o transfiere el analito antes de la separación. «El agua no se inyecta» es una simplificación del esquema, no una prohibición universal: existen configuraciones específicas de introducción acuosa si el método y el equipo lo admiten.
 
 ![Purga y trampa frente a espacio de cabeza: el gas entra bajo el agua o el vapor se toma por encima](esquema:purga-y-trampa)
 
@@ -172,6 +180,8 @@ La diferencia es de un orden de magnitud, y es la consecuencia directa del diám
 **f) DESORCIÓN TÉRMICA y ENFOQUE CRIOGÉNICO.** Para sólidos, y como refuerzo: los analitos se concentran **enfriando la entrada de la columna por debajo de la temperatura ambiente** y después se libera todo de golpe calentando.
 
 **Y un detalle de toma de muestra que el examen también preguntó** (1246 C2 #24): el envase de los **COV y trihalometanos** es **de VIDRIO con tapón de revestimiento interno de PTFE**, y se llena **sin cámara de aire**. Un plástico adsorbe y deja pasar volátiles. *(El desarrollo, en el tema 36.)*
+
+**Transferencia desde el agua.** El recipiente de toma de COV sin cámara de aire evita pérdidas; no se confunde con el vial analítico de headspace, que incorpora una fase vapor controlada como parte del método. En espacio de cabeza se controlan temperatura, tiempo, agitación y relación de volúmenes porque condicionan el reparto. Más temperatura puede aumentar transferencia al gas, pero no elimina límites de estabilidad o presión del sistema. La fase vapor no tiene necesariamente la misma concentración que el líquido: se necesita calibración que represente la preparación. Purga y trampa concentra ciertos volátiles y depende de recuperación y capacidad de trampa; un factor de mil no es universal. La humedad, el arrastre, la fuga o una desorción incompleta pueden alterar señal. Una extracción SPME no se presume exhaustiva; se mantienen recubrimiento, tiempo, temperatura, agitación y condiciones de desorción. Fibra sumergida y HS-SPME son modos diferentes, y existen distintos recubrimientos: no toda fibra es de PDMS ni sirve para todos los analitos. El blanco de fibra o trampa revela contaminación o memoria. La extracción líquido-líquido transfiere analito a una fase orgánica apropiada, pero no lo convierte automáticamente en volátil ni elimina toda matriz. La derivatización cambia la especie medida y exige controlar formación, estabilidad, blanco y calibración. Se conserva el significado del mensurando original y se comprueba recuperación. Ninguna de estas preparaciones sustituye controles de contaminación, conservación y trazabilidad.
 
 ### 2.6. Las columnas
 
@@ -199,6 +209,8 @@ La diferencia es de un orden de magnitud, y es la consecuencia directa del diám
 
 **El soporte de las empaquetadas** es **tierra de diatomeas** —esqueletos de sílice de diatomeas—, muy porosa (0,5-7,5 m²/g). Sus **grupos silanol (−SiOH)** son sitios activos: en **cromatografía gas-sólido (GSC)** sirven para adsorber, pero en **gas-líquido (GLC)** estorban, y por eso **se desactivan** haciéndolos reaccionar con dimetildiclorosilano antes de recubrir con la fase estacionaria.
 
+**Columnas y capacidad.** Tubular abierta significa ausencia de relleno que llene el canal, no ausencia de fase estacionaria. La pared o una capa adherida puede realizar la separación. Las dimensiones, eficiencia y capacidad de la tabla son ejemplos, no especificaciones universales de todas las columnas. El volumen cargado en la jeringa no equivale necesariamente al que llega a la columna, especialmente con split. La selección combina diámetro, longitud, película, analitos, carga y condiciones de separación. Una columna capilar puede ser larga y de diámetro interno pequeño a la vez. Conexiones mal instaladas o volúmenes muertos pueden deteriorar picos. La desactivación reduce interacciones no deseadas de sitios activos; no vuelve la columna compatible con cualquier compuesto o temperatura. Se sigue la ficha del fabricante para montaje, acondicionamiento y límites.
+
 ### 2.7. Las fases estacionarias
 
 **El orden de elución depende de dos cosas**: el **punto de ebullición** de los solutos y la **interacción con la fase estacionaria**. Si los puntos de ebullición son muy distintos, la fase importa poco; si son parecidos, **solo hay separación si la fase interacciona selectivamente con uno de ellos**.
@@ -221,6 +233,8 @@ La diferencia es de un orden de magnitud, y es la consecuencia directa del diám
 
 **El espesor de la película:** **el más común es 0,25 µm**. **Más gruesa** para solutos **muy volátiles** (gases), porque retiene más; **más fina** para solutos **poco volátiles**, y porque mejora la eficiencia.
 
+**Selectividad y límites de fase.** La volatilidad y la interacción con la fase contribuyen al orden de elución. Una fase no polar puede aproximar un orden por ebullición en una familia apropiada, pero no fija una ley universal para toda mezcla. Cambiar polaridad puede modificar retención relativa y resolver una coelución; más retención por sí sola no garantiza mejor resolución. Espesor mayor puede aumentar retención y capacidad de volátiles, con costes de tiempo o transferencia. Los límites térmicos dependen de columna concreta y pueden diferir entre uso isotermo y programado. El sangrado y la degradación aumentan con condiciones inadecuadas y pueden afectar fondo o identificación. Una subida de fondo al calentar no se atribuye automáticamente a mayor analito. Un blanco y comprobaciones de fugas, fase y sistema ayudan a localizarla.
+
 ### 2.8. El horno y la programación de temperatura
 
 *«El control de la temperatura de la columna es crítico para lograr una buena separación»*, y por eso **la columna se coloca dentro de un horno termostatado**.
@@ -229,6 +243,8 @@ La diferencia es de un orden de magnitud, y es la consecuencia directa del diám
 | --- | --- | --- |
 | **Isotermo** | Temperatura **constante**, normalmente algo **por debajo** de la del soluto de menor punto de ebullición | La temperatura que separa bien lo volátil deja **tiempos de retención inaceptables** para lo poco volátil |
 | **PROGRAMACIÓN DE TEMPERATURA** (rampa) | Se empieza **por debajo** del soluto más volátil y se **sube la temperatura**, a velocidad uniforme o por escalones | Es la solución al problema anterior, y lo normal en aguas |
+
+**Programación reproducible.** La temperatura inicial, rampas, mesetas y tiempo final forman un programa que se registra. Una rampa puede facilitar la elución de compuestos menos volátiles manteniendo una etapa inicial útil para los más volátiles. No se aumenta temperatura por encima de los límites para acelerar el trabajo. Una rampa demasiado rápida puede reducir resolución de una pareja; demasiado lenta puede alargar el ensayo sin mejora necesaria. Antes de la siguiente inyección se restablecen las condiciones iniciales y estabilidad. Tiempo de retención e índices se comparan bajo condiciones y definiciones apropiadas: un cambio de programa puede alterar el patrón de elución.
 
 ### 2.9. Los detectores
 
@@ -260,6 +276,8 @@ Y la descripción de lo que hace un detector, también del CEM: *«aprecia la pr
 
 **Los demás detectores de la lista:** el **fotométrico de llama** es selectivo para **fósforo y azufre**; el **termoiónico (TID) y el de nitrógeno-fósforo (NPD)** responden a compuestos con **nitrógeno o fósforo** —de ahí su interés para **plaguicidas organofosforados**—; el **AED** es de emisión atómica; y el **FT-IR**, como el MS, registra el espectro continuo.
 
+**Límites de detección e identificación.** Universal es una descripción de respuesta amplia, no garantía de igual sensibilidad a cualquier compuesto. El TCD es un detector clásico de respuesta amplia por contraste de conductividad térmica, distinto del detector de conductividad eléctrica de cromatografía iónica. La plantilla de 1233 #11 da MSD como respuesta al enunciado histórico; eso no convierte al TCD en un detector selectivo de una sola especie. FID responde a muchos orgánicos, pero no a todos por igual ni a agua o CO₂ como analitos ordinarios. ECD es selectivo hacia compuestos captadores de electrones y puede detectar varios coeluyentes; no identifica por sí solo un organoclorado. MS en barrido registra espectros dentro del rango y condiciones configurados; en SIM monitoriza iones elegidos y no equivale a registrar siempre un espectro completo. Un mejor ajuste a biblioteca propone una identificación que necesita los criterios de confirmación del método, como retención, iones y proporciones. Una coincidencia alta aislada no prueba identidad inequívoca. Cambios de espectro a lo largo del pico sugieren investigar coelución, fondo o calidad de datos; un espectro estable no demuestra siempre pureza absoluta. GC-MS y LC-MS no son ICP-MS: las primeras separan moléculas y el último es detección elemental con plasma. Los límites y rangos numéricos de la tabla son orientativos y deben comprobarse en el método y matriz.
+
 ### 2.10. Cuantificar: área, patrón interno y calibración
 
 **Área o altura.** El CEM admite las dos y se moja: *«pueden utilizarse ambos, aunque **en general es más fiable el área**»*.
@@ -287,6 +305,8 @@ Y la descripción de lo que hace un detector, también del CEM: *«aprecia la pr
 **Un detalle operativo muy de este tema:** el CEM avisa de que **si los compuestos son volátiles no se espera a atemperar el material de referencia y todas las preparaciones se hacen POR PESADA**, para minimizar errores por volatilización. Es exactamente el caso de los trihalometanos.
 
 **Y para identificar sin espectro, el ÍNDICE DE RETENCIÓN DE KOVATS**: como los tiempos de retención no son comparables entre columnas, se define el índice de un **n-alcano** como **100 veces su número de carbonos** —butano 400, pentano 500— y se interpola logarítmicamente el del compuesto entre los dos alcanos que lo flanquean. El índice **sí es razonablemente constante** entre columnas e instrumentos.
+
+**Control de cuantificación.** El patrón interno debe añadirse de forma conocida y comparable, con respuesta apropiada y separación de interferentes; no corrige cualquier pérdida anterior a su incorporación. Un error común de volumen de inyección puede compensarse si analito y patrón cambian en el mismo factor, pero no si uno se degrada o extrae de modo distinto. La razón de áreas o respuestas se calibra como tal y no se intercambia con área bruta. Se controlan blanco, rango, linealidad, integración, arrastre, estabilidad y recuperación. Un blanco bajo no prueba ausencia de sesgo de calibración; réplicas próximas no excluyen contaminación común. Se documentan lote de patrón, preparación, dilución, adición interna, programa, modo de adquisición y criterios de identificación. La preparación por pesada de volátiles se atribuye a QU-005, 5.2.2; no se interpreta como una prohibición universal de toda preparación volumétrica en cualquier método distinto. El índice de Kovats clásico usa retención ajustada e interpolación logarítmica en condiciones isotermas; un índice lineal de temperatura programada tiene otra definición. Los índices requieren condiciones y fase comparables y no son identificadores universales independientes del método.
 
 ### 2.11. Utilización en el análisis de agua
 
@@ -335,6 +355,8 @@ Y la descripción de lo que hace un detector, también del CEM: *«aprecia la pr
 | **16 HAP** | **ISO 28540:2011** | GC-MS. *(En agua de consumo suele preferirse HPLC-fluorescencia: tema 32.)* |
 
 **En aguas superficiales (RD 817/2015, anexo III, C.1):** métodos **validados conforme a EN ISO/IEC 17025**, **incertidumbre ≤ 50 % (k = 2)** al nivel de la norma de calidad ambiental y **LC ≤ 30 %** de esa NCA.
+
+**Resultados y alcance en agua.** Los THM pueden medirse con métodos GC-ECD o GC-MS adecuados; la respuesta de examen no excluye otras configuraciones validadas. La suma se forma con las sustancias que define la disposición, no con todos los picos halogenados ni con sus áreas sin convertir. Para plaguicidas se consideran valores individuales, sumatorio y notas de autorización pertinentes. No todo plaguicida es compatible con la misma GC: algunos requieren otro tratamiento o LC. Un compuesto termolábil puede necesitar otro modo de inyección o técnica, y una extracción no garantiza estabilidad durante separación. La identificación y cuantificación de un microcontaminante son pasos distintos. Se expresan unidades, mensurando, recuperación y diluciones según el método; un extracto concentrado no tiene la misma concentración que el agua original. La incertidumbre de rendimiento del RD 3/2023 no se añade como tolerancia al valor paramétrico. Se respetan las condiciones de control de subproductos sin comprometer desinfección, y los resultados bajo límites se informan según el procedimiento aplicable.
 
 ## 3. Tabla operativa
 
@@ -455,3 +477,6 @@ Y la descripción de lo que hace un detector, también del CEM: *«aprecia la pr
 9. **El reparto con el 30 y el 32 lo decidí al redactar el 30** y aquí se respeta. Está razonado en los enunciados oficiales, pero **no hay nada que obligue a repartirlo así**. En particular, alguien podría defender que **el índice de Kovats o el patrón interno** son teoría general y pertenecen al 30; los pongo aquí porque el **QU-005** los desarrolla para gases y porque en el 30 no hacían falta.
 
 10. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 y 30.
+
+
+**Revisión de apoyo a la ampliación (17/11/2026).** CEM, QU-005, 5.2.2 y 5.3 (https://www.cem.es/sites/default/files/qu-005_digital_0.pdf); Agilent, *Gas Chromatography Inlets*, 5994-4918EN (https://www.agilent.com/cs/library/quickreference/public/quick-reference-gc-inlets-5994-4918en-agilent.pdf); *GCMS FAQs* (https://www.agilent.com/en/product/gas-chromatography-mass-spectrometry-gc-ms/gcms-fundamentals/gcms-faqs); *Headspace sampling fundamentals* (https://www.agilent.com/en/product/gas-chromatography/gc-sample-preparation-introduction/what-is-headspace); *GC, GC/MS and ALS Site Preparation Guide* (https://www.agilent.com/cs/library/usermanuals/public/7890B_SitePrepGuide.pdf); Merck, *Solid Phase Microextraction: Frequently Asked Questions* (https://www.merckmillipore.com/EC/es/technical-documents/technical-article/analytical-chemistry/solid-phase-microextraction/faq). Ejercicios originales de aplicación del apunte y Harris, *Análisis Químico Cuantitativo*.

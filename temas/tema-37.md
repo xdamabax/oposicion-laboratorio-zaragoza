@@ -72,7 +72,7 @@ Esa distinción tiene nombre y es la primera trampa posible:
 
 Y la segunda idea, que es la que explica por qué el enunciado del tema junta «PM 2,5, PM10 y metales» en la misma frase:
 
-> **Los metales del aire no se miden en el aire: se miden en el polvo.** El RD lo dice en una definición: *«"Arsénico", "cadmio", "níquel" y "benzo(a)pireno": niveles en aire ambiente de estos elementos **en la fracción PM10**»*. Así que el análisis de metales **empieza siendo un análisis de partículas**: se capta PM10 sobre un filtro, se pesa, y **ese mismo filtro** se digiere para medir los metales.
+> **Los metales del grupo Pb/Cd/As/Ni de este apartado se determinan en la fracción PM10.** No se generaliza a todo elemento y fase, como muestra Hg gaseoso total. El RD lo dice en una definición: *«"Arsénico", "cadmio", "níquel" y "benzo(a)pireno": niveles en aire ambiente de estos elementos **en la fracción PM10**»*. Así que el análisis de metales **empieza siendo un análisis de partículas**: se capta PM10 sobre un filtro, se pesa, y **ese mismo filtro** se digiere para medir los metales.
 
 De ahí que las dos mitades del enunciado sean, en realidad, **una sola cadena analítica**.
 
@@ -95,6 +95,8 @@ De ahí que las dos mitades del enunciado sean, en realidad, **una sola cadena a
 
 ### 2.2. Los contaminantes regulados, y de dónde salen
 
+**Ampliación: contaminante, fase y magnitud.** Una concentración de aire ambiente no es una tasa de emisión de chimenea: se distinguen µg/m³ y masa/tiempo. La dispersión, el transporte y la formación secundaria influyen en la inmisión. El carácter secundario describe formación atmosférica, no ausencia de riesgo ni imposibilidad de control: se actúa también sobre precursores. Una sustancia puede tener contribuciones primarias y secundarias según el caso. PM es una mezcla de partículas y no una sola molécula; su masa no informa por sí sola del número, tamaño detallado o composición. Un mismo valor de masa puede corresponder a composiciones diferentes. No se atribuye un episodio a una fuente única por una sola concentración. Ozono troposférico se relaciona con COV, NOx y radiación; no se confunde con ozono estratosférico. La categoría legal valor objetivo no se deriva automáticamente de ser secundario: se consulta el anexo aplicable. El CO de la tabla es monóxido de carbono, distinto del carbono orgánico abreviado CO en especiación de filtros. Fuente: RD 102/2011 arts.1–2, anexos I y VIII; interpretación analítica del apunte.
+
 El artículo 1 enumera los que tienen objetivos de calidad: **dióxido de azufre, dióxido de nitrógeno y óxidos de nitrógeno, partículas, plomo, benceno, monóxido de carbono, ozono, arsénico, cadmio, níquel y benzo(a)pireno.** Se añaden, sin objetivos de calidad propios, **el mercurio, los demás HAP y el amoniaco**.
 
 La clasificación que hay que entender no es esa lista, sino esta otra:
@@ -105,7 +107,7 @@ La clasificación que hay que entender no es esa lista, sino esta otra:
 | Ejemplos del RD | SO₂, NO, CO, plomo, benceno, metales, HAP, buena parte de la PM10 | **Ozono troposférico**, nitratos y sulfatos de la PM2,5, una parte del NO₂ |
 | Consecuencia práctica | Se controla **actuando sobre el foco** | **No se puede limitar en el foco**, porque el foco emite sus precursores |
 
-Por eso **el ozono no tiene valor límite sino VALOR OBJETIVO**: es secundario, se forma por reacción fotoquímica de los **COV** con los **óxidos de nitrógeno** en presencia de luz solar, y un Estado no puede garantizar su cumplimiento actuando solo sobre sus propias chimeneas. El propio RD lo define: *«Sustancias precursoras del ozono: sustancias que contribuyen a la formación de ozono en la baja atmósfera.»*
+El RD asigna al ozono **VALOR OBJETIVO**; su formación es secundaria, pero de ello no se deduce una regla jurídica universal. Se forma por reacción fotoquímica de los **COV** con los **óxidos de nitrógeno** en presencia de luz solar, y un Estado no puede garantizar su cumplimiento actuando solo sobre sus propias chimeneas. El propio RD lo define: *«Sustancias precursoras del ozono: sustancias que contribuyen a la formación de ozono en la baja atmósfera.»*
 
 Y lo mismo explica por qué el **amoniaco** está vigilado sin objetivos: el preámbulo dice que *«es un gas altamente reactivo que, además, **favorece la generación de partículas secundarias**»*, y que sus emisiones principales son **agropecuarias**.
 
@@ -126,6 +128,8 @@ Y lo mismo explica por qué el **amoniaco** está vigilado sin objetivos: el pre
 
 ### 2.3. Qué es PM10 y qué es PM2,5: la definición por el corte del 50 %
 
+**Ampliación: fracciones operativas y comparación de resultados.** El corte del 50 % es eficiencia del selector para el diámetro aerodinámico indicado, no el porcentaje de masa ambiental formado por ese tamaño. No es un tamiz perfecto ni asegura que todas las partículas geométricamente menores pasen idénticamente. PM2,5 representa la fracción fina dentro del alcance más amplio de PM10; en comparación ideal y consistente, la fina no excede al conjunto. **Dos resultados medidos independientes pueden mostrar PM2,5>PM10 por incertidumbre, periodos distintos o incidencias**, lo que se investiga sin declarar automáticamente falsedad. La diferencia PM10−PM2,5 solo se interpreta como estimación de fracción gruesa con medidas comparables y su incertidumbre; no se resta número de partículas de concentración másica. Los aerosoles tienen tamaño, forma, densidad y composición; diámetro aerodinámico y geométrico no son sinónimos. Fuente: RD 102/2011 art.2.28–29; fundamentos del apunte; ejercicios originales.
+
 Esta es la definición que hay que saber literal, porque **casi todo el mundo la entiende mal**. El RD 102/2011 dice:
 
 > ***«PM10: partículas que pasan a través del cabezal de tamaño selectivo, definido en el método de referencia para el muestreo y la medición de PM10 de la norma UNE-EN 12341 […], para un diámetro aerodinámico de 10 µm con una eficiencia de corte del 50 %.»***
@@ -142,11 +146,11 @@ Y la de PM2,5 es idéntica cambiando 10 por 2,5.
 
 Y de ahí sale la consecuencia que más se pregunta:
 
-> **La PM2,5 está DENTRO de la PM10.** No son dos contaminantes distintos: son **dos cortes del mismo polvo**. En una misma estación, la PM2,5 **siempre** es menor o igual que la PM10, y la diferencia se llama a veces **fracción gruesa** (coarse, PM10–2,5).
+> **La PM2,5 está DENTRO de la PM10.** No son dos contaminantes distintos: son **dos cortes del mismo polvo**. En comparación ideal y consistente, la PM2,5 no excede a la PM10; una inversión entre medidas independientes exige revisar comparabilidad, incertidumbre e incidencias, y la diferencia se llama a veces **fracción gruesa** (coarse, PM10–2,5).
 
 | | **PM10** | **PM2,5** |
 | --- | --- | --- |
-| Nombre común | Fracción **torácica** | Fracción **fina** o respirable |
+| Nombre común | Fracción **torácica** | Fracción **fina**, sin equiparación automática con la convención laboral de respirable |
 | Hasta dónde llega | Vías respiratorias bajas | **Alvéolo**, y de ahí al torrente sanguíneo |
 | Origen dominante | Mecánico: **desgaste, resuspensión, polvo** | **Combustión** y formación secundaria |
 | Composición típica | Más mineral (Ca, Si, Al) | Más **sulfato, nitrato, amonio, carbono** |
@@ -219,6 +223,8 @@ Y la nota al pie, que es la que hay que citar: *«**Niveles en aire ambiente en 
 
 ### 2.6. Las cinco clases de «umbral», que no significan lo mismo
 
+**Ampliación: separar evaluación, episodios y cumplimiento.** Un umbral de evaluación determina el régimen de evaluación; no es un valor límite ni un umbral de alerta. En anexo II se consideran los cinco años anteriores y la superación del umbral en al menos tres años distintos; no basta una media de los cinco sin atender ese criterio. Los umbrales dependen de contaminante, periodo y finalidad. El anexo I incluye en partículas condiciones temporales a definir justificadamente por la administración: no se traduce alerta PM en cualquier lectura instantánea aislada. Para ozono,240 µg/m³ es umbral horario; la nota de tres horas medidas o previstas se refiere a aplicación del art.25, no a redefinir toda información horaria. Se distinguen media diaria, media anual y máximo diario de medias móviles de ocho horas; no se sustituyen entre sí. Un valor exactamente igual a un límite numérico no es una superación de ese número; para decisiones formales se aplican criterios de datos, método y norma. Fuente: RD 102/2011 anexos I–II y arts.20/25.
+
 El RD usa la palabra «umbral» para cosas distintas, y confundirlas es un fallo caro.
 
 | Umbral | Para qué sirve | Quién reacciona |
@@ -256,13 +262,15 @@ Y la regla de cuándo se considera superado, que es lo que más se olvida: *«Se
 | **NO₂** (horario) | 180 | 200 | **400** (3 horas seguidas) |
 | **Ozono** | 120 (8 h) | **180** (horario) | **240** (horario) |
 
-> **La pareja de números que más se confunde es la del ozono: 180 informa, 240 alerta.** Y en SO₂, NO₂ y ozono la alerta exige **tres horas consecutivas**; en partículas, no.
+> **Ozono:180 informa y 240 alerta, con periodo horario.** Su nota de tres horas medidas o previstas se vincula al art.25. Para PM se respetan promedios y condiciones temporales de las notas; no basta una lectura instantánea.
 
 ### 2.7. El análisis de PM: el método gravimétrico normalizado
 
+**Ampliación: balance de masa, volumen y control del captador.** La concentración gravimétrica es masa neta atribuible a partículas dividida por volumen de aire correspondiente; se comprueban unidades, blanco y procedimiento de corrección aplicable. Para caudal constante, V=Q·tiempo; con caudal variable se integra o suma cada intervalo. No se usa volumen nominal si no representa el realmente muestreado. Una fuga o caudal fuera de criterio puede alterar volumen y selección de tamaños; se registra y evalúa la toma. Pérdida de partículas del filtro puede sesgar bajo; humedad o contaminación de manipulación puede elevar la masa. Se acondiciona en condiciones controladas, se evita tocar la zona útil y se mantiene identificación entre tara y pesada final. Más tiempo o caudal no cambia por sí solo la concentración real si la masa captada crece proporcionalmente y se cumple el método; aumenta masa y volumen. Un captador secuencial cambia filtros y conserva separados los periodos, no significa mezcla automática de todo el mes. El método de referencia es gravimétrico porque determina concentración másica: no se afirma que todas las otras técnicas sean incapaces de medir masa. El uso alternativo requiere equivalencia o relación coherente y corrección documentada según anexo VII B, no un factor universal idéntico en todas las estaciones. La referencia de volumen es ambiental para partículas y sus componentes; para gases,293 K y 101,3 kPa según VII C. Fuente: RD 102/2011 anexos VII y XIII; apunte y ejercicios de magnitudes.
+
 Aquí está la respuesta a la pregunta R2, y conviene entenderla, no memorizarla.
 
-> **¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. Y la única forma directa de conocer una masa es **pesarla**. Cualquier otra técnica (dispersión de luz, atenuación beta, microbalanza oscilante) mide otra cosa y la **convierte** a masa: por eso son métodos equivalentes y no de referencia.
+> **¿Por qué gravimetría y no otra cosa?** Porque lo que el valor límite regula es **una concentración másica** —microgramos **de masa** por metro cúbico de aire—, no un número de partículas ni una opacidad. La referencia es la pesada gravimétrica; no se afirma que toda otra técnica sea incapaz de responder a masa. El uso alternativo se ajusta a la demostración y corrección del anexo VII B.
 
 **La cadena completa, que es la misma para PM10, para PM2,5 y para los metales:**
 
@@ -280,7 +288,7 @@ Aquí está la respuesta a la pregunta R2, y conviene entenderla, no memorizarla
 Y de ahí, dos detalles legales que se preguntan:
 
 - **El caudal define el tipo de captador**: el anexo XIII habla de gravimetría *«bien de **alto** o de **bajo volumen**, o su modificación con un **captador secuencial**»*. El secuencial cambia el filtro solo, lo que permite dejarlo días sin atender.
-- **El período de muestreo es de 24 h (± 1 h)**, y el propio anexo recomienda que vaya **de las 08:00 a las 08:00** (con variación de ±1 h). Para el B(a)P y los HAP el anexo VI también exige **24 horas**.
+- **En la Red IME del anexo XIII, el período de muestreo es de 24 h (± 1 h)**, y se recomienda **de las 08:00 a las 08:00** (con variación de ±1 h). Para el B(a)P y los HAP el anexo VI también exige **24 horas**.
 
 > **LA REFERENCIA DE VOLUMEN: LA TRAMPA MÁS FINA DE TODO EL TEMA.** El anexo VII, sección C, dice:
 >
@@ -289,9 +297,11 @@ Y de ahí, dos detalles legales que se preguntan:
 >
 > Es decir: **el SO₂ se normaliza y la PM10 no.** Por eso el anexo I habla literalmente de *«valores límite de las partículas PM10 **en condiciones ambientales**»*. En Zaragoza, en agosto, un metro cúbico de aire pesa bastante menos que en enero, y la ley asume esa diferencia a propósito: lo que se quiere saber es **cuánto polvo respira de verdad la gente**, no cuánto respiraría en un laboratorio a 20 °C.
 
-**Los métodos equivalentes.** El anexo VII, sección B, permite usar otro método *«si pueden demostrar que genera resultados equivalentes […] o, **en el caso de las partículas, que guarda una relación coherente con el método de referencia**»*, y exige **corregir los resultados**. Esa frase es la base legal de todos los monitores automáticos de PM que hay en las redes reales: miden en continuo y aplican un **factor de corrección** validado contra la gravimetría. El informe de equivalencia lo prepara el **laboratorio nacional de referencia**.
+**Los métodos equivalentes.** El anexo VII, sección B, permite usar otro método *«si pueden demostrar que genera resultados equivalentes […] o, **en el caso de las partículas, que guarda una relación coherente con el método de referencia**»*, y exige **corregir los resultados**. Esa frase es la base legal de todos los monitores automáticos de PM que hay en las redes reales: miden en continuo y aplican las correcciones demostradas frente a la referencia, sin factor universal para todo aerosol y estación. El informe de equivalencia lo prepara el **laboratorio nacional de referencia**.
 
 ### 2.8. Análisis de metales en la fracción PM10
+
+**Ampliación: metales y recuperación desde el filtro.** Pb,Cd,As,Ni son el grupo de UNE-EN 14902 citado por el RD; no significa que no existan otros elementos atmosféricos. Hg gaseoso total tiene método y fase distintos. El B(a)P es orgánico, no un metal, aunque se determine en PM10. Se puede pesar y después preparar el filtro para metales cuando el soporte y manejo son compatibles. El análisis destructivo previo impediría recuperar la pesada original. Usar una porción exige representatividad y sensibilidad suficientes: una cuarta parte de área no prueba por sí sola una cuarta parte de masa si el depósito no es uniforme. En cálculos ideales, masa de analito en extracto = concentración·volumen·factor de dilución, con corrección de blanco prevista; se escala por la fracción representativa del filtro antes de dividir entre volumen de aire. Se expresan metales de aire en masa/volumen de aire, no en mg/L del extracto sin conversión. La recuperación de digestión y el blanco de filtro se controlan; la sensibilidad depende de masa, matriz, método y blancos, no solo del símbolo ICP. Los objetivos de incertidumbre 25 %Pb y 40 %As/Cd/Ni son requisitos de sus anexos, no una ley física deducible de escribir µg o ng. Fuente: RD 102/2011 anexos V–VII; ejercicios originales de balance.
 
 Aquí está la respuesta a la pregunta R3, y de nuevo conviene entenderla.
 
@@ -309,7 +319,7 @@ Aquí está la respuesta a la pregunta R3, y de nuevo conviene entenderla.
 
 > **Fíjese en la coincidencia: el método de toma de muestra de los metales ES el método de PM10.** No hay un captador de metales. Hay **un captador de partículas** cuyo filtro se analiza después. Eso es exactamente lo que dibuja la figura del apartado 2.7, y es lo que hace que las dos mitades del enunciado del tema sean una sola.
 
-**Y el RD lo autoriza expresamente**, en el anexo VI: *«se autoriza la utilización de **parte de los filtros de PM10** para el análisis posterior de metales, siempre que se demuestre que estas partes son **representativas** del conjunto y que no se pone en peligro la sensibilidad de la detección»*. Es decir: **se puede cortar el filtro**, pesarlo entero y digerir solo un trozo.
+**Y el RD permite usar parte del filtro bajo condiciones**, en el anexo VI: *«se autoriza la utilización de **parte de los filtros de PM10** para el análisis posterior de metales, siempre que se demuestre que estas partes son **representativas** del conjunto y que no se pone en peligro la sensibilidad de la detección»*. Es decir: **se puede cortar el filtro**, pesarlo entero y digerir solo un trozo.
 
 **La secuencia analítica** (la técnica está desarrollada en los temas 26, 27 y 35; aquí solo el encuadre):
 
@@ -330,9 +340,11 @@ Aquí está la respuesta a la pregunta R3, y de nuevo conviene entenderla.
 | **Otros HAP y Hg gaseoso total** | **50 %** | 90 % | — |
 | **Depósitos totales** | **60 %** | 90 % | — |
 
-> **Que la incertidumbre admitida sea del 40 % para el cadmio y del 25 % para el plomo no es arbitrario: es que el cadmio se mide en nanogramos y el plomo en microgramos.** Tres órdenes de magnitud por debajo, la ley afloja la exigencia porque la física no da para más.
+> **Los porcentajes de 40 %y 25 %son objetivos normativos de los respectivos anexos.** La dificultad analítica depende del nivel, matriz y método; escribir ng en lugar de µg no cambia por sí solo la incertidumbre relativa ni constituye una explicación física de esas cifras.
 
 ### 2.9. Dónde se pone el captador (anexo III)
+
+**Ampliación: emplazamiento y documentación.** La estación se diseña para representar el entorno y población previstos; tráfico, industrial y fondo no son categorías intercambiables. Un obstáculo o la recirculación de salida puede sesgar la muestra; se considera flujo libre. Las distancias generales tienen excepciones y requisitos específicos en anexo III y deben interpretarse dentro de su ámbito. La distancia de 5 km de aglomeraciones o industria para fondo rural aparece en anexo III II.a, al que remite anexo VIII C; no se confunde con 20 km para vegetación ni con una prohibición universal de toda estación rural. La documentación permite reconstruir el punto y cambios de su entorno. Tras obras, cambio de tráfico u obstáculos se revisa representatividad sin esperar mecánicamente a cinco años. Fuente: RD 102/2011 anexos III y VIII.
 
 **Macroimplantación** — de qué tiene que ser representativa la estación:
 
@@ -361,6 +373,8 @@ Y una obligación de gestión que conecta con el tema 40: la documentación del 
 
 ### 2.10. Los objetivos de calidad de los datos y la trazabilidad
 
+**Ampliación: cobertura y validez de datos.** Captura de datos es proporción válida sobre lo programado; cobertura temporal expresa qué parte del periodo se ha previsto muestrear. Tener90 % de una campaña corta no equivale a cubrir 90 % del año. El calendario se distribuye para evitar sesgo estacional y antropogénico; el anexo VI permite ajustes de cobertura bajo condiciones de incertidumbre y mínimos expresos, no de forma libre. El anexo I J exige45 min para valor horario,6 h para octohorario y 18 medias horarias para 24 h; el máximo diario octohorario requiere18 medias móviles válidas. La media anual general requiere90 %, con régimen específico para ozono y exclusiones de calibración/mantenimiento previstas. No se inventan datos perdidos para cumplir porcentajes; se evalúan según reglas y se conserva trazabilidad. Validar implica revisar incidencias y controles; los datos provisionales en tiempo real no tienen la misma condición que datos verificados. Fuente: RD 102/2011 anexos I J,V y VI.
+
 Además de lo ya dicho para metales, para las partículas:
 
 - **Incertidumbre**: **25 %** en medición fija, **50 %** en medición indicativa, **50 %** en modelización.
@@ -375,6 +389,8 @@ Y dos exigencias de sistema que son, literalmente, el tema 40:
 **Mediciones aleatorias.** Para **benceno, partículas y plomo** se admiten mediciones al azar en lugar de fijas si se mantiene el 25 % de incertidumbre. Y hay un detalle curioso: si se hacen, *«debería evaluarse el **percentil 90,4**, que deberá ser inferior o igual a **50 µg/m³**, en lugar del número de superaciones»*. Ese 90,4 no es magia: **35 superaciones en 365 días son el 9,6 %**, así que el percentil complementario es **90,4**.
 
 ### 2.11. El indicador medio de exposición (IME) de la PM2,5
+
+**Ampliación: exposición, especiación y escalas.** El IME combina estaciones de fondo urbano y población representada, con media móvil trienal: no es el máximo de una estación de tráfico ni un valor personal de exposición. Sus obligaciones históricas2015/2020 se preguntan con su fecha. Una media ponderada por población difiere de una media aritmética si los pesos son diferentes. La especiación rural de PM2,5 del anexo VIII es independiente de la concentración y complementa la masa: incluye ocho iones y carbono elemental y orgánico. No todas esas especies son metales ni todas se determinan con la misma técnica. Las concentraciones de componentes se expresan en referencia al volumen de aire pertinente, no solo al extracto. Fuente: RD 102/2011 anexos VIII y XIII; ejercicios originales.
 
 La PM2,5 tiene, además de sus valores límite, **un régimen propio orientado a la exposición de la población**, que no existe para ningún otro contaminante.
 
@@ -405,6 +421,8 @@ Ocho iones y dos formas de carbono. Los iones se miden por **cromatografía ión
 
 ### 2.12. Las aportaciones naturales: el episodio africano
 
+**Ampliación: justificar el aporte natural.** El artículo 22 permite no computar determinadas superaciones atribuibles a fuentes naturales si se demuestra y comunica la contribución según requisitos. No autoriza borrar cualquier valor alto ni restar contaminación antropogénica por conveniencia. La sustracción para evaluación normativa no elimina físicamente las partículas ni implica ausencia de exposición o riesgo. Un episodio puede mezclar aportes naturales y humanos; se cuantifica y documenta lo atribuible. La competencia de demostrar y comunicar no se sustituye por una impresión visual del cielo. Los depósitos se expresan normalmente en µg/(m²·día), magnitud diferente de concentración en µg/m³. Fuente: RD 102/2011 arts.2/22 y anexos VI/XIV.
+
 El artículo 22 permite algo que sorprende: **restar**.
 
 > *«Las superaciones atribuibles a fuentes naturales […] **no se considerarán superaciones** a los efectos de lo dispuesto en el presente real decreto y **no originarán la obligación de ejecutar planes de actuación**.»*
@@ -416,6 +434,8 @@ Esto último es, en España, **el episodio de polvo sahariano**, y es la razón 
 > **Consecuencia práctica, y muy preguntable:** una ciudad española puede superar el valor límite diario de PM10 más de 35 veces al año y **seguir cumpliendo la ley**, si demuestra que las superaciones de más fueron por intrusión sahariana. **La demostración corre a cargo de la comunidad autónoma**, con datos, y no basta con alegarla.
 
 ### 2.13. Lo que cambia el 11 de diciembre de 2026
+
+**Ampliación: fecha y norma en cada pregunta.** Revisión del BOE el 17/11/2026: el texto consolidado disponible del RD102/2011 mantiene actualización25/01/2023. Se distingue la norma española consultada de la Directiva 2024/2881 y sus plazos. Los cuadros de 2030 son objetivos normativos futuros en ese marco; no se presentan como los números del anexo I del RD102/2011. El plazo de transposición11/12/2026 no es la fecha general de los nuevos valores del cuadro 1, que es 1/1/2030; las derogaciones de directivas anteriores operan12/12/2026 y no equivalen por sí solas a una derogación literal de todo real decreto español. El ozono mantiene valor objetivo de salud para 2030 con 18 días de promedio trienal, no se convierte en límite por ser secundario. Pb mantiene 0,5 µg/m³; As,Cd,Ni,B(a)P conservan cifras pero pasan a valores límite en cuadro 1. Se leen las condiciones y posibles prórrogas del articulado, sin convertir la fecha general en negación de cualquier régimen excepcional. Fuente: Directiva 2024/2881, arts.13/18/30–32 y anexo I; BOE consolidado RD 102/2011.
 
 La **Directiva (UE) 2024/2881** refunde toda la normativa. Sus dos fechas, leídas del PDF oficial del DOUE:
 
@@ -446,7 +466,7 @@ Y trae **dos cuadros de valores límite**, no uno —más un tercero, de valores
 > 1. **La PM2,5 pasa a tener valor límite DIARIO**, que hoy no tiene. Y el anual se **divide por 2,5**: de 25 a 10 µg/m³.
 > 2. **El arsénico, el cadmio, el níquel y el benzo(a)pireno dejan de ser VALORES OBJETIVO y pasan a ser VALORES LÍMITE.** Es un salto jurídico: de «hay que intentarlo» a «hay que cumplirlo». Los números no cambian; la obligación, sí.
 >
-> **España todavía no lo ha transpuesto.** Hay un proyecto de real decreto que sustituirá al RD 102/2011 y una modificación prevista de la Ley 34/2007, ambos en tramitación. **Mientras no se publiquen, la respuesta correcta en un examen es la del RD 102/2011.** Pero si la convocatoria cae después del 11/12/2026, conviene tener presente el cuadro 2.
+> **España todavía no lo ha transpuesto.** Hay un proyecto de real decreto que sustituirá al RD 102/2011 y una modificación prevista de la Ley 34/2007, ambos en tramitación. **Mientras no se publiquen, la respuesta debe ajustarse a la norma y fecha que pregunte el enunciado; para el marco español consultado se estudia el RD 102/2011.** Pero si la convocatoria cae después del 11/12/2026, conviene tener presente el cuadro 2.
 
 ---
 
@@ -496,7 +516,7 @@ Y trae **dos cuadros de valores límite**, no uno —más un tercero, de valores
 
 **4. El 10 y el 2,5 son el diámetro del 50 % de eficiencia**, no un techo. Y el diámetro es **aerodinámico**.
 
-**5. La PM2,5 está dentro de la PM10.** Siempre menor o igual.
+**5. La PM2,5 es la fracción fina dentro del alcance de PM10.** La inclusión ideal no autoriza a declarar automáticamente falsa toda inversión entre medidas independientes; se revisa incertidumbre y comparabilidad.
 
 **6. El plomo tiene VALOR LÍMITE; el arsénico, el cadmio y el níquel tienen VALOR OBJETIVO.** Y el plomo va en µg/m³ mientras los otros tres van en **ng/m³**.
 
@@ -508,7 +528,7 @@ Y trae **dos cuadros de valores límite**, no uno —más un tercero, de valores
 
 **10. Partículas en condiciones ambientales; gases a 293 K y 101,3 kPa.**
 
-**11. El ozono es SECUNDARIO y por eso tiene valor objetivo, no límite.** Sus precursores son **COV + NOₓ + luz solar**.
+**11. El ozono es SECUNDARIO y el RD le asigna valor objetivo.** No se deduce una categoría jurídica universal solo de la formación secundaria. Sus precursores son **COV + NOₓ + luz solar**.
 
 **12. Las superaciones por polvo sahariano se pueden restar**, pero hay que demostrarlas.
 
@@ -536,6 +556,9 @@ Y trae **dos cuadros de valores límite**, no uno —más un tercero, de valores
 ---
 
 ## Fuentes y verificación
+
+**Fuentes de la revisión de17/11/2026.** Se ha contrastado el [RD102/2011consolidado](https://www.boe.es/buscar/act.php?id=BOE-A-2011-1645), especialmente anexosI–IIIyV–VIII/XIII, y la [Directiva2024/2881, arts.30–32y anexoI](https://www.boe.es/doue/2024/2881/L00001-00070.pdf). Se distinguen expresamente el régimen delRDy los cuadros y fechas de la directiva; no se han leído artículos de normas de pago.
+
 
 - **RD 102/2011, texto consolidado del BOE, leído literalmente y entero.** De él salen **transcritas** las definiciones de PM10 y PM2,5 (puntos 28 y 29 del artículo 2), la de arsénico/cadmio/níquel/benzo(a)pireno (punto 4), la de aire ambiente (punto 2) y la de aportaciones naturales (punto 3); las tablas completas del **anexo I** (secciones A a J), del **anexo II** (umbrales de evaluación, uno por contaminante), del **anexo III** (macro y microimplantación), del **anexo V** (objetivos de calidad y trazabilidad), del **anexo VI** (objetivos de calidad de los metales, y la autorización de usar parte del filtro de PM10), del **anexo VII** (los doce métodos de referencia, la demostración de equivalencia y la referencia de presión y temperatura), del **anexo VIII** (especiación de la PM2,5 rural de fondo) y del **anexo XIII** (IME completo). Fecha de consolidación comprobada: **última actualización de 25/01/2023**.
 - **Directiva (UE) 2024/2881: PDF oficial del DOUE**, descargado del BOE y extraído a texto. Leídos literalmente los **artículos 30 y 31** —las dos fechas— y el **anexo I, sección 1, cuadros 1 y 2** completos, celda por celda. Los valores de 2030 y los de 2026 están transcritos de ahí.

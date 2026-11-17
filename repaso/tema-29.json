@@ -1731,6 +1731,3058 @@
       "fuente": "UNE-EN ISO 9698, medición de la actividad de tritio por centelleo líquido · apunte §3",
       "apartado": "3",
       "evidencia": "| **Tritio (H-3)** | **Centelleo líquido** | **UNE-EN ISO 9698** (adopta ISO 9698:2019) | **Bq/L** | VP **100**; **LD ≤ 10**. Solo si el origen es **superficial** y hay fuente antropogénica aguas arriba |"
+    },
+    {
+      "id": "t29-q83",
+      "pregunta": "Una fuente tiene una actividad de 120 Bq. ¿Qué tasa media de transformaciones nucleares representa?",
+      "opciones": [
+        "120 por segundo.",
+        "120 por litro en cualquier recipiente.",
+        "120 julios por kilogramo."
+      ],
+      "correcta": 0,
+      "explicacion": "El becquerelio expresa actividad, una tasa de desintegración. La concentración requiere además el volumen.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q84",
+      "pregunta": "Un litro de agua contiene una actividad de 0,20 Bq del radionucleido estudiado. ¿Qué concentración de actividad tiene?",
+      "opciones": [
+        "0,20 mSv/L por equivalencia directa.",
+        "0,20 Bq/L.",
+        "5 Bq/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración de actividad es actividad dividida por volumen.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q85",
+      "pregunta": "Se distribuyen uniformemente 2 Bq en 4 L de agua. ¿Qué concentración resulta?",
+      "opciones": [
+        "0,5 Bq/L.",
+        "8 Bq/L.",
+        "2 Bq/L."
+      ],
+      "correcta": 0,
+      "explicacion": "La actividad por litro es 2/4.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q86",
+      "pregunta": "Dos muestras tienen la misma concentración en Bq/L y volúmenes distintos. ¿Qué magnitud puede ser diferente?",
+      "opciones": [
+        "El tipo de unidad de concentración.",
+        "La definición de becquerelio.",
+        "La actividad total contenida en cada una."
+      ],
+      "correcta": 2,
+      "explicacion": "La actividad total es concentración multiplicada por volumen.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q87",
+      "pregunta": "Una medida se expresa como 300 Bq/m³ de aire. ¿Por qué no puede interpretarse directamente como 300 Bq/L de agua?",
+      "opciones": [
+        "Porque Bq y becquerelio son magnitudes distintas.",
+        "Porque cambian el volumen de referencia y el medio al que corresponde el dato.",
+        "Porque el metro cúbico contiene exactamente un litro."
+      ],
+      "correcta": 1,
+      "explicacion": "Las unidades volumétricas y el medio forman parte de la medida y de su referencia normativa.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q88",
+      "pregunta": "Una concentración acuosa de 2 Bq/L se expresa por metro cúbico de la misma agua. ¿Qué valor resulta?",
+      "opciones": [
+        "2.000 Bq/m³.",
+        "2 Bq/m³.",
+        "0,002 Bq/m³."
+      ],
+      "correcta": 0,
+      "explicacion": "Un metro cúbico contiene mil litros, por lo que la actividad por metro cúbico es mil veces mayor.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q89",
+      "pregunta": "Un resultado de 40 mBq/L debe compararse con otro en Bq/L. ¿Qué valor equivalente se usa?",
+      "opciones": [
+        "40.000 Bq/L.",
+        "0,040 Bq/L.",
+        "4 Bq/L."
+      ],
+      "correcta": 1,
+      "explicacion": "El prefijo mili corresponde a una milésima.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q90",
+      "pregunta": "¿Qué dato falta para convertir una actividad total medida en Bq en concentración de actividad de una muestra acuosa?",
+      "opciones": [
+        "La resolución angular de un polarímetro.",
+        "El nombre de la sala donde se imprimió.",
+        "El volumen de muestra al que corresponde."
+      ],
+      "correcta": 2,
+      "explicacion": "Una actividad sin volumen no expresa una concentración.",
+      "fuente": "RD 1029/2022, art. 2, magnitudes de actividad y dosis · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Actividad (A)** | La **tasa de desintegración** de un radionucleido: dN/dt | **Becquerelio (Bq)**. **1 Bq = 1 desintegración nuclear por segundo** |"
+    },
+    {
+      "id": "t29-q91",
+      "pregunta": "Un tejido absorbe 2 J en una masa de 4 kg. ¿Qué dosis absorbida corresponde al cociente energía/masa?",
+      "opciones": [
+        "0,5 Gy.",
+        "8 Gy.",
+        "0,5 Bq."
+      ],
+      "correcta": 0,
+      "explicacion": "La dosis absorbida es 2/4 J/kg. Un J/kg equivale a un gray.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q92",
+      "pregunta": "¿Qué característica incorpora la dosis equivalente al ponderar la dosis absorbida?",
+      "opciones": [
+        "El número de litros del frasco de blanco.",
+        "La frecuencia de muestreo del agua.",
+        "El tipo de radiación."
+      ],
+      "correcta": 2,
+      "explicacion": "La ponderación radiológica considera la naturaleza de la radiación que produce la dosis.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q93",
+      "pregunta": "¿Qué ponderación adicional se utiliza al pasar de dosis equivalentes en tejidos a dosis efectiva?",
+      "opciones": [
+        "El tamaño de partícula del residuo de la plancheta.",
+        "La contribución de los distintos tejidos u órganos.",
+        "La fracción de metanol de una fase móvil."
+      ],
+      "correcta": 1,
+      "explicacion": "La dosis efectiva suma contribuciones ponderadas por tejido.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q94",
+      "pregunta": "Dos exposiciones producen igual dosis absorbida pero distinto tipo de radiación. ¿Qué magnitud podría diferir al aplicar los factores correspondientes?",
+      "opciones": [
+        "La dosis equivalente.",
+        "El número de segundos de un minuto.",
+        "La masa real del tejido por definición."
+      ],
+      "correcta": 0,
+      "explicacion": "La ponderación por tipo de radiación puede dar distintas dosis equivalentes para la misma dosis absorbida.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q95",
+      "pregunta": "¿Por qué no puede transformarse cualquier resultado en Bq/L a mSv mediante un único factor universal?",
+      "opciones": [
+        "Porque ambas unidades son intercambiables por definición.",
+        "Porque la dosis depende del radionucleido y de las condiciones de incorporación, entre otros datos.",
+        "Porque toda actividad produce exactamente la misma dosis por litro."
+      ],
+      "correcta": 1,
+      "explicacion": "Actividad y dosis son magnitudes diferentes y la evaluación dosimétrica requiere un modelo y coeficientes apropiados.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q96",
+      "pregunta": "El agua contiene un radionucleido que se incorpora por ingestión. ¿Qué concepto describe la dosis que se acumulará tras esa incorporación?",
+      "opciones": [
+        "Actividad total de la botella vacía.",
+        "Índice de refracción comprometido.",
+        "Dosis efectiva comprometida."
+      ],
+      "correcta": 2,
+      "explicacion": "El compromiso se refiere a la dosis debida a la incorporación durante el periodo de integración definido.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q97",
+      "pregunta": "Un valor de 0,10 mSv se expresa en µSv. ¿Cuál es el equivalente?",
+      "opciones": [
+        "100 µSv.",
+        "0,10 µSv.",
+        "10.000 µSv."
+      ],
+      "correcta": 0,
+      "explicacion": "Un milisievert equivale a mil microsieverts.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q98",
+      "pregunta": "Un informe confunde Gy con Sv sin indicar ponderaciones. ¿Qué debe revisarse?",
+      "opciones": [
+        "La unidad de caudal del contador.",
+        "Solo el color del logotipo.",
+        "La magnitud dosimétrica realmente evaluada."
+      ],
+      "correcta": 2,
+      "explicacion": "El gray corresponde a dosis absorbida y el sievert a dosis equivalentes o efectivas, con sus definiciones.",
+      "fuente": "RD 1029/2022, art. 2, dosis absorbida, equivalente y efectiva · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Dosis absorbida (D)** | **Energía absorbida por unidad de masa** | **Gray (Gy)**. **1 Gy = 1 J/kg** |"
+    },
+    {
+      "id": "t29-q99",
+      "pregunta": "Un límite de 20 mSv por año oficial corresponde, en el régimen del artículo 11, ¿a qué magnitud general del trabajador expuesto?",
+      "opciones": [
+        "Concentración de actividad del agua.",
+        "Dosis efectiva.",
+        "Tasa de recuento del blanco."
+      ],
+      "correcta": 1,
+      "explicacion": "El límite anual indicado es de dosis efectiva, con otros límites específicos para órganos y tejidos.",
+      "fuente": "RD 1029/2022, arts. 11, 15 y 72, límites y niveles de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Límites de dosis (RD 1029/2022):**"
+    },
+    {
+      "id": "t29-q100",
+      "pregunta": "¿Por qué no debe usarse el límite anual del trabajador expuesto como valor paramétrico de dosis indicativa del agua?",
+      "opciones": [
+        "Porque regulan exposiciones y ámbitos diferentes.",
+        "Porque la DI se expresa en Bq sin periodo de referencia.",
+        "Porque ambos tienen idéntico valor numérico por ley."
+      ],
+      "correcta": 0,
+      "explicacion": "El agua tiene su propio criterio de DI en el RD 3/2023 y no utiliza el límite ocupacional como sustituto.",
+      "fuente": "RD 1029/2022, arts. 11, 15 y 72, límites y niveles de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Límites de dosis (RD 1029/2022):**"
+    },
+    {
+      "id": "t29-q101",
+      "pregunta": "En un lugar de trabajo con agua subterránea se evalúa radón en aire. ¿Qué promedio temporal define el nivel de referencia del artículo 72?",
+      "opciones": [
+        "El valor máximo de un único segundo como sustituto universal.",
+        "El promedio anual de concentración.",
+        "La media de temperatura del agua."
+      ],
+      "correcta": 1,
+      "explicacion": "El nivel de referencia en aire de recintos cerrados se establece como promedio anual.",
+      "fuente": "RD 1029/2022, arts. 11, 15 y 72, límites y niveles de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Límites de dosis (RD 1029/2022):**"
+    },
+    {
+      "id": "t29-q102",
+      "pregunta": "Un detector registra pulsos, pero su eficiencia es menor que uno. ¿Por qué las cuentas por segundo no equivalen automáticamente a Bq?",
+      "opciones": [
+        "Porque el tiempo de medida no interviene.",
+        "Porque un becquerelio es siempre un millón de cuentas.",
+        "Porque no todas las desintegraciones producen una cuenta registrada."
+      ],
+      "correcta": 2,
+      "explicacion": "La conversión necesita eficiencia y las correcciones y geometría del método.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q103",
+      "pregunta": "Una muestra y su blanco se cuentan durante tiempos distintos. ¿Qué debe compararse antes de restar su contribución?",
+      "opciones": [
+        "Las tasas de recuento normalizadas por sus tiempos.",
+        "Solo los números brutos de cuentas.",
+        "La suma de ambos tiempos como si fuera actividad."
+      ],
+      "correcta": 0,
+      "explicacion": "La contribución del blanco debe expresarse en una base temporal compatible con la de la muestra.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q104",
+      "pregunta": "Se registran 300 cuentas de muestra en 100 s y 120 de blanco en 60 s. ¿Qué tasa neta simple queda antes de las demás correcciones?",
+      "opciones": [
+        "3 cuentas/s.",
+        "1,8 cuentas/s.",
+        "1 cuenta/s."
+      ],
+      "correcta": 2,
+      "explicacion": "La tasa bruta es 3 y la del blanco 2 cuentas/s. La diferencia es 1.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q105",
+      "pregunta": "¿Qué efecto busca un detector de bajo fondo al medir actividades pequeñas?",
+      "opciones": [
+        "Aumentar deliberadamente las cuentas espurias.",
+        "Reducir la contribución ajena a la señal de interés.",
+        "Eliminar toda necesidad de blanco."
+      ],
+      "correcta": 1,
+      "explicacion": "El fondo compite con señales débiles y condiciona la capacidad de detección.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q106",
+      "pregunta": "Una muestra da una tasa bruta próxima a la del blanco. ¿Qué debe evaluarse antes de atribuir una actividad positiva significativa?",
+      "opciones": [
+        "Los límites característicos y la incertidumbre del método.",
+        "La posibilidad de declarar ausencia absoluta sin criterio.",
+        "Solo que la resta de dos números produzca algún decimal."
+      ],
+      "correcta": 0,
+      "explicacion": "En niveles bajos, la variabilidad del blanco y señal requiere aplicar los criterios estadísticos definidos.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q107",
+      "pregunta": "Un recuento se repite y cambia ligeramente aunque la muestra sea estable. ¿Qué propiedad de la medida explica parte de esa variación?",
+      "opciones": [
+        "Un cambio obligatorio de identidad del radionucleido.",
+        "La naturaleza estadística de los procesos de desintegración y detección.",
+        "La imposibilidad de medir con un contador."
+      ],
+      "correcta": 1,
+      "explicacion": "Las cuentas tienen fluctuación estadística y deben acompañarse de su evaluación de incertidumbre.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q108",
+      "pregunta": "En el modelo de Poisson, ¿qué desviación típica corresponde a N cuentas de un único recuento?",
+      "opciones": [
+        "Cero para todo N.",
+        "N al cuadrado.",
+        "La raíz cuadrada de N."
+      ],
+      "correcta": 2,
+      "explicacion": "El modelo de recuento usa varianza N bajo sus hipótesis de aplicación.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q109",
+      "pregunta": "Un recuento independiente registra 100 cuentas. En el modelo simple de Poisson, ¿qué incertidumbre relativa de recuento resulta?",
+      "opciones": [
+        "10 %.",
+        "1 %.",
+        "100 %."
+      ],
+      "correcta": 0,
+      "explicacion": "La desviación típica es √100 = 10. Dividir por 100 da 0,10.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q110",
+      "pregunta": "Con la misma tasa estable, se cuadruplica el tiempo de recuento. En el modelo ideal de Poisson, ¿cómo cambia la incertidumbre relativa de las cuentas?",
+      "opciones": [
+        "Permanece necesariamente idéntica.",
+        "Se multiplica por cuatro.",
+        "Se reduce a la mitad."
+      ],
+      "correcta": 2,
+      "explicacion": "La incertidumbre relativa es proporcional a 1/√N y las cuentas esperadas se multiplican por cuatro.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q111",
+      "pregunta": "¿Por qué contar más tiempo no corrige una pérdida de analito durante la preparación?",
+      "opciones": [
+        "Porque todo sesgo desaparece al llegar a cien cuentas.",
+        "Porque mejora la estadística de la señal disponible, pero no recupera la actividad perdida.",
+        "Porque la eficiencia pasa automáticamente a uno."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación puede introducir un sesgo que necesita su propia evaluación.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, recuento y fondo de medida · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q112",
+      "pregunta": "Una plancheta contiene 50 mg de residuo sobre 10 cm². ¿Qué espesor másico presenta?",
+      "opciones": [
+        "5 mg/cm².",
+        "0,2 mg/cm².",
+        "500 mg/cm²."
+      ],
+      "correcta": 0,
+      "explicacion": "El espesor másico es masa de residuo dividida por superficie útil.",
+      "fuente": "CSN, procedimiento 1.5, eficiencia y espesor másico del depósito · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Espesor másico (EM)**: masa de residuo seco por unidad de superficie de la plancheta, en **mg/cm²**. De él depende todo lo demás."
+    },
+    {
+      "id": "t29-q113",
+      "pregunta": "Dos depósitos tienen igual masa seca y distintas superficies útiles. ¿Cuál presenta mayor espesor másico?",
+      "opciones": [
+        "El de mayor superficie siempre.",
+        "El de menor superficie.",
+        "Ambos tienen el mismo por compartir la masa."
+      ],
+      "correcta": 1,
+      "explicacion": "La misma masa repartida en menor área produce más masa por unidad de superficie.",
+      "fuente": "CSN, procedimiento 1.5, eficiencia y espesor másico del depósito · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Espesor másico (EM)**: masa de residuo seco por unidad de superficie de la plancheta, en **mg/cm²**. De él depende todo lo demás."
+    },
+    {
+      "id": "t29-q114",
+      "pregunta": "Un depósito aumenta su espesor másico manteniendo la actividad real. ¿Qué corrección del método debe revisarse?",
+      "opciones": [
+        "El grado Brix del líquido evaporado.",
+        "El límite anual de dosis del público como factor directo.",
+        "La eficiencia afectada por autoabsorción."
+      ],
+      "correcta": 2,
+      "explicacion": "Parte de la radiación puede frenarse en el propio residuo antes de llegar al detector.",
+      "fuente": "CSN, procedimiento 1.5, eficiencia y espesor másico del depósito · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Espesor másico (EM)**: masa de residuo seco por unidad de superficie de la plancheta, en **mg/cm²**. De él depende todo lo demás."
+    },
+    {
+      "id": "t29-q115",
+      "pregunta": "En un ejercicio, la tasa neta es 2 cuentas/s y la eficiencia de detección 0,50, sin otras correcciones. ¿Qué actividad corresponde a la fuente medida?",
+      "opciones": [
+        "4 Bq.",
+        "1 Bq.",
+        "0,25 Bq."
+      ],
+      "correcta": 0,
+      "explicacion": "La actividad es tasa neta dividida por eficiencia, 2/0,50.",
+      "fuente": "CSN, procedimiento 1.5, cálculo de actividad con eficiencia de recuento · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q116",
+      "pregunta": "Una fuente representa 0,50 L de muestra y contiene 0,20 Bq corregidos. ¿Qué concentración de actividad corresponde al agua?",
+      "opciones": [
+        "2,5 Bq/L.",
+        "0,10 Bq/L.",
+        "0,40 Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se divide la actividad atribuida a la fuente por el volumen de muestra representado.",
+      "fuente": "CSN, procedimiento 1.5, cálculo de actividad con eficiencia de recuento · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q117",
+      "pregunta": "Un resultado radiométrico se compara con otro laboratorio. ¿Qué información del CSN resulta esencial junto al valor y unidad?",
+      "opciones": [
+        "Solo el orden alfabético de los operadores.",
+        "La trazabilidad y la incertidumbre asociada.",
+        "El número de plantas del edificio."
+      ],
+      "correcta": 1,
+      "explicacion": "La interpretación y comparación de resultados requiere conocer su referencia y dispersión estimada.",
+      "fuente": "CSN, procedimiento 1.5, cálculo de actividad con eficiencia de recuento · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q118",
+      "pregunta": "Dos captaciones próximas atraviesan formaciones geológicas diferentes. ¿Qué debe considerarse al interpretar diferencias de radiactividad natural?",
+      "opciones": [
+        "La mineralogía, hidrología y tipo de captación de cada una.",
+        "Que toda agua de un municipio tiene necesariamente igual actividad.",
+        "Solo la distancia entre las oficinas del operador."
+      ],
+      "correcta": 0,
+      "explicacion": "La caracterización radiológica debe relacionarse con las condiciones del terreno y del agua captada.",
+      "fuente": "RD 3/2023, disposición adicional primera, caracterización del radón en masas de agua · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q119",
+      "pregunta": "Un abastecimiento cambia parte de su origen superficial por agua de un sondeo. ¿Qué factor nuevo requiere valorar respecto a la radiactividad?",
+      "opciones": [
+        "La obligación de que desaparezcan todos los radionucleidos.",
+        "La contribución natural y el posible radón del origen subterráneo.",
+        "Que la actividad solo pueda venir de una central nuclear."
+      ],
+      "correcta": 1,
+      "explicacion": "El contacto con el terreno y el nuevo origen pueden modificar las concentraciones radiológicas.",
+      "fuente": "RD 3/2023, disposición adicional primera, caracterización del radón en masas de agua · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q120",
+      "pregunta": "¿Por qué un resultado de radiactividad natural elevado no identifica por sí solo un vertido artificial?",
+      "opciones": [
+        "Porque los detectores solo responden a fuentes artificiales.",
+        "Porque lo natural nunca se mide en becquerelios.",
+        "Porque puede explicarse por radionucleidos del terreno."
+      ],
+      "correcta": 2,
+      "explicacion": "La interpretación del origen requiere identificar y evaluar las especies presentes y su contexto.",
+      "fuente": "RD 3/2023, disposición adicional primera, caracterización del radón en masas de agua · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q121",
+      "pregunta": "El tritio puede producirse naturalmente en la atmósfera. ¿Qué implica para interpretar su mera detección en agua?",
+      "opciones": [
+        "Que detectar algo de tritio no demuestra por sí solo contaminación artificial.",
+        "Que todo resultado de tritio debe ocultarse.",
+        "Que el tritio carece de valor paramétrico."
+      ],
+      "correcta": 0,
+      "explicacion": "La interpretación depende del nivel, las fuentes posibles y el contexto del abastecimiento.",
+      "fuente": "CSN, La protección radiológica en el medio sanitario, radionucleidos cosmogénicos, y RD 3/2023, anexo I.E · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**3. Los cosmogénicos.** El **tritio (H-3)** y el **carbono-14** se producen de forma continua en la alta atmósfera por acción de la radiación cósmica y entran en el ciclo del agua con la lluvia. El tritio natural es de nivel bajísimo: **por eso un tritio alto delata origen artificial**."
+    },
+    {
+      "id": "t29-q122",
+      "pregunta": "El carbono-14 figura en una tabla de radionucleidos artificiales del control del agua. ¿Qué matiz de su origen debe conocerse?",
+      "opciones": [
+        "Es un isótopo estable sin actividad.",
+        "Solo puede fabricarse en un laboratorio humano.",
+        "También existe producción natural cosmogénica."
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación de vigilancia no elimina la existencia de contribuciones naturales de ciertos radionucleidos.",
+      "fuente": "CSN, La protección radiológica en el medio sanitario, radionucleidos cosmogénicos, y RD 3/2023, anexo I.E · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**3. Los cosmogénicos.** El **tritio (H-3)** y el **carbono-14** se producen de forma continua en la alta atmósfera por acción de la radiación cósmica y entran en el ciclo del agua con la lluvia. El tritio natural es de nivel bajísimo: **por eso un tritio alto delata origen artificial**."
+    },
+    {
+      "id": "t29-q123",
+      "pregunta": "Al liberar agua subterránea en un recinto, parte del radón pasa a la fase gaseosa. ¿Qué vía de exposición debe valorarse además de la ingestión?",
+      "opciones": [
+        "La exposición exclusiva a radiación ultravioleta.",
+        "La inhalación del radón en el aire.",
+        "La inexistencia de cualquier exposición por ser gas noble."
+      ],
+      "correcta": 1,
+      "explicacion": "El radón puede desprenderse del agua y contribuir a la concentración del aire interior.",
+      "fuente": "CSN, Radón, origen natural y vías de exposición · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q124",
+      "pregunta": "Una muestra de agua destinada a radón se airea intensamente antes de cerrar el frasco. ¿Qué problema analítico debe evaluarse?",
+      "opciones": [
+        "Pérdida del analito gaseoso y falta de representatividad.",
+        "Conversión del radón en potasio estable.",
+        "Aumento garantizado de la actividad total del radón."
+      ],
+      "correcta": 0,
+      "explicacion": "El radón puede abandonar el agua al airearse, alterando la concentración que se pretende medir.",
+      "fuente": "CSN, Radón, origen natural y vías de exposición · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q125",
+      "pregunta": "El mapa de potencial de radón de una zona es alto. ¿Qué aclara el CSN sobre conocer la exposición real de un recinto?",
+      "opciones": [
+        "Que toda medición directa queda prohibida.",
+        "Que los mapas no sustituyen a las mediciones directas.",
+        "Que el mapa proporciona la concentración exacta de cada habitación."
+      ],
+      "correcta": 1,
+      "explicacion": "La cartografía orienta sobre potencial, pero la medida caracteriza las condiciones reales.",
+      "fuente": "CSN, Radón, origen natural y vías de exposición · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El agua **no fabrica** radiactividad: la **hereda** del terreno que atraviesa y, en mucha menor medida, de lo que el ser humano vierte. El propio RD 3/2023 lo dice al ordenar caracterizar las masas de agua por radón (disposición adicional primera): hay que determinar las exposiciones *«originadas por la **geología y la hidrología** de la zona afectada, la **radiactividad de las rocas o del suelo** y el **tipo de captaciones**»*."
+    },
+    {
+      "id": "t29-q126",
+      "pregunta": "Un agua rica en potasio presenta beta total apreciable. ¿Qué contribución específica debe evaluarse para obtener beta resto?",
+      "opciones": [
+        "El índice de refracción de la plancheta.",
+        "La masa del frasco como si fuera actividad.",
+        "La actividad beta asociada al K-40."
+      ],
+      "correcta": 2,
+      "explicacion": "El índice beta resto descuenta la contribución del potasio-40 conforme al método.",
+      "fuente": "CSN, procedimiento 1.5, beta total y beta resto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**2. El potasio-40.** Es **el que domina la actividad beta** de un agua natural. Está en el potasio de toda agua, en proporción isotópica fija, así que **su actividad se calcula a partir del potasio estable** en vez de medirse. Por eso la ley no pide «beta total» sino **«beta resto»**: beta total **menos** la parte del K-40."
+    },
+    {
+      "id": "t29-q127",
+      "pregunta": "Dos aguas tienen distinta concentración de potasio estable. ¿Qué puede diferir aunque sus otros emisores beta sean iguales?",
+      "opciones": [
+        "La contribución beta del K-40.",
+        "La definición del segundo.",
+        "La concentración derivada legal del estroncio-90."
+      ],
+      "correcta": 0,
+      "explicacion": "La contribución del K-40 se calcula a partir del potasio presente.",
+      "fuente": "CSN, procedimiento 1.5, beta total y beta resto · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**2. El potasio-40.** Es **el que domina la actividad beta** de un agua natural. Está en el potasio de toda agua, en proporción isotópica fija, así que **su actividad se calcula a partir del potasio estable** en vez de medirse. Por eso la ley no pide «beta total» sino **«beta resto»**: beta total **menos** la parte del K-40."
+    },
+    {
+      "id": "t29-q128",
+      "pregunta": "Una muestra ha sido acidulada antes de medir su conductividad. ¿Por qué no conviene usar ese dato sin más para estimar el residuo original?",
+      "opciones": [
+        "Porque la conductividad pasa a medir actividad directamente.",
+        "Porque toda acidulación elimina las sales del agua.",
+        "Porque el ácido añadido contribuye a la conductividad."
+      ],
+      "correcta": 2,
+      "explicacion": "El dato ya no representa únicamente los componentes iónicos originales de la muestra.",
+      "fuente": "CSN, procedimiento 1.16, preparación de fuentes por desecación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Estimar el volumen** de muestra a partir de la **conductividad** o del **residuo seco**. Ojo: si la muestra se ha acidulado, **la conductividad ya no sirve**."
+    },
+    {
+      "id": "t29-q129",
+      "pregunta": "Se selecciona demasiado volumen de un agua muy mineralizada para una plancheta. ¿Qué problema de medida puede producir el residuo?",
+      "opciones": [
+        "La desaparición automática del blanco.",
+        "Exceso de espesor y autoabsorción.",
+        "Una eficiencia obligatoriamente igual a cien por cien."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación debe adaptar la cantidad de muestra a la capacidad del método y del depósito.",
+      "fuente": "CSN, procedimiento 1.16, preparación de fuentes por desecación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Estimar el volumen** de muestra a partir de la **conductividad** o del **residuo seco**. Ojo: si la muestra se ha acidulado, **la conductividad ya no sirve**."
+    },
+    {
+      "id": "t29-q130",
+      "pregunta": "Una muestra llega a sequedad completa en el vaso de evaporación y no se ha transferido aún. ¿Qué pérdida contempla el procedimiento?",
+      "opciones": [
+        "La retención de radionucleidos en las paredes del vaso.",
+        "La transformación completa de los radionucleidos en agua.",
+        "Una multiplicación de la actividad por calor."
+      ],
+      "correcta": 0,
+      "explicacion": "La etapa de preparación debe evitar pérdidas por adsorción antes de transferir la fuente.",
+      "fuente": "CSN, procedimiento 1.16, preparación de fuentes por desecación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Estimar el volumen** de muestra a partir de la **conductividad** o del **residuo seco**. Ojo: si la muestra se ha acidulado, **la conductividad ya no sirve**."
+    },
+    {
+      "id": "t29-q131",
+      "pregunta": "La transferencia del residuo a la plancheta es incompleta. ¿Qué sesgo puede introducir en la concentración calculada desde el volumen original?",
+      "opciones": [
+        "Una sobrevaloración garantizada de la actividad original.",
+        "Una infravaloración de la actividad recuperada.",
+        "Ninguno, porque todo radionucleido se cuenta a distancia desde el vaso."
+      ],
+      "correcta": 1,
+      "explicacion": "El balance de actividad requiere que la fracción de muestra prevista quede representada en la fuente de recuento.",
+      "fuente": "CSN, procedimiento 1.16, preparación de fuentes por desecación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Estimar el volumen** de muestra a partir de la **conductividad** o del **residuo seco**. Ojo: si la muestra se ha acidulado, **la conductividad ya no sirve**."
+    },
+    {
+      "id": "t29-q132",
+      "pregunta": "Dos pesadas consecutivas del residuo difieren en 0,7 mg. ¿Cumplen el criterio de peso constante de diferencia ≤0,5 mg?",
+      "opciones": [
+        "Sí, si se elimina un decimal del registro.",
+        "Sí, porque toda diferencia inferior a 1 g es válida.",
+        "No, debe continuar el acondicionamiento y comprobarse de nuevo."
+      ],
+      "correcta": 2,
+      "explicacion": "La diferencia supera el criterio de masa establecido por el procedimiento.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, estabilidad de la masa del residuo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "4. **Desecar y llevar a peso constante.** Los procedimientos contemplan **secado a 180 ± 2 °C**; **se considera peso constante cuando dos pesadas sucesivas difieren en ≤ 0,5 mg**. Variantes admitidas: **105 °C**, o **calcinación a 450 °C** —recomendable cuando las sales son nitratos higroscópicos, para pasarlas a óxidos—. La variante empleada **se declara en el resultado**."
+    },
+    {
+      "id": "t29-q133",
+      "pregunta": "Tras secarse, un residuo higroscópico permanece expuesto al aire húmedo. ¿Qué propiedad de la fuente puede cambiar?",
+      "opciones": [
+        "La masa y su autoabsorción.",
+        "El número atómico de todos sus componentes.",
+        "La definición de actividad alfa."
+      ],
+      "correcta": 0,
+      "explicacion": "La captación de humedad afecta al depósito y puede alterar su eficiencia de recuento.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, estabilidad de la masa del residuo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "4. **Desecar y llevar a peso constante.** Los procedimientos contemplan **secado a 180 ± 2 °C**; **se considera peso constante cuando dos pesadas sucesivas difieren en ≤ 0,5 mg**. Variantes admitidas: **105 °C**, o **calcinación a 450 °C** —recomendable cuando las sales son nitratos higroscópicos, para pasarlas a óxidos—. La variante empleada **se declara en el resultado**."
+    },
+    {
+      "id": "t29-q134",
+      "pregunta": "Una plancheta se mide mucho tiempo después de prepararla y ha captado humedad. ¿Qué comprobación contempla el método?",
+      "opciones": [
+        "Añadir un factor arbitrario de concentración.",
+        "Introducir su masa antigua como si fuera nueva sin revisión.",
+        "Volver a acondicionarla hasta peso constante según el procedimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "La estabilidad física de la fuente debe restablecerse antes de interpretar la eficiencia correspondiente.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, estabilidad de la masa del residuo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "4. **Desecar y llevar a peso constante.** Los procedimientos contemplan **secado a 180 ± 2 °C**; **se considera peso constante cuando dos pesadas sucesivas difieren en ≤ 0,5 mg**. Variantes admitidas: **105 °C**, o **calcinación a 450 °C** —recomendable cuando las sales son nitratos higroscópicos, para pasarlas a óxidos—. La variante empleada **se declara en el resultado**."
+    },
+    {
+      "id": "t29-q135",
+      "pregunta": "Se utiliza una variante de secado diferente de la ordinaria admitida por el procedimiento. ¿Qué debe acompañar al resultado?",
+      "opciones": [
+        "Solo una etiqueta genérica de «agua».",
+        "La identificación de la variante empleada.",
+        "El número de serie del teclado."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación condiciona qué actividad queda representada y debe declararse de forma trazable.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, estabilidad de la masa del residuo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "4. **Desecar y llevar a peso constante.** Los procedimientos contemplan **secado a 180 ± 2 °C**; **se considera peso constante cuando dos pesadas sucesivas difieren en ≤ 0,5 mg**. Variantes admitidas: **105 °C**, o **calcinación a 450 °C** —recomendable cuando las sales son nitratos higroscópicos, para pasarlas a óxidos—. La variante empleada **se declara en el resultado**."
+    },
+    {
+      "id": "t29-q136",
+      "pregunta": "El residuo forma una costra gruesa solo en un borde de la plancheta. ¿Qué característica debe corregirse?",
+      "opciones": [
+        "La uniformidad del depósito.",
+        "El valor paramétrico del agua.",
+        "La unidad temporal de un minuto."
+      ],
+      "correcta": 0,
+      "explicacion": "Un depósito desigual produce autoabsorción y geometría diferentes de las de calibración.",
+      "fuente": "CSN, procedimiento 1.5, preparación y eficiencia de fuentes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Uniformidad**: un residuo mal repartido **empeora la reproducibilidad y la exactitud**."
+    },
+    {
+      "id": "t29-q137",
+      "pregunta": "Dos fuentes tienen igual masa y superficie, pero una distribución muy desigual. ¿Por qué no debe asumirse idéntica respuesta?",
+      "opciones": [
+        "Porque la masa seca no existe en una fuente radiactiva.",
+        "Porque la geometría y autoabsorción local pueden diferir.",
+        "Porque todo reparto desigual aumenta exactamente el doble la eficiencia."
+      ],
+      "correcta": 1,
+      "explicacion": "El espesor medio no describe por completo la distribución física de actividad y residuo.",
+      "fuente": "CSN, procedimiento 1.5, preparación y eficiencia de fuentes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Uniformidad**: un residuo mal repartido **empeora la reproducibilidad y la exactitud**."
+    },
+    {
+      "id": "t29-q138",
+      "pregunta": "La plancheta de calibración y la de muestra tienen geometrías incompatibles. ¿Qué debe evaluarse?",
+      "opciones": [
+        "La posibilidad de sustituir Bq por Sv sin más datos.",
+        "Solo que ambas tengan una etiqueta legible.",
+        "La aplicabilidad de la eficiencia de calibración a esa muestra."
+      ],
+      "correcta": 2,
+      "explicacion": "La geometría forma parte de la respuesta del sistema de detección.",
+      "fuente": "CSN, procedimiento 1.5, preparación y eficiencia de fuentes · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Uniformidad**: un residuo mal repartido **empeora la reproducibilidad y la exactitud**."
+    },
+    {
+      "id": "t29-q139",
+      "pregunta": "La eficiencia se ha determinado para depósitos finos y la muestra genera un residuo mucho más grueso. ¿Qué falta para una corrección defendible?",
+      "opciones": [
+        "Una calibración o evaluación válida para ese espesor másico.",
+        "Solo multiplicar por la masa del tapón.",
+        "Suponer eficiencia constante para cualquier residuo."
+      ],
+      "correcta": 0,
+      "explicacion": "La curva de autoabsorción relaciona la respuesta con la cantidad de residuo por superficie.",
+      "fuente": "CSN, procedimiento 1.5, calibración en función del espesor másico · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Curva de autoabsorción / de eficiencia**: relaciona la eficiencia con el espesor másico. Se construye con una sal inactiva y estable (carbonato, sulfato o nitrato sódico). En beta total el procedimiento del CSN admite espesores **de 0 a 25 mg/cm²**, más amplios que otras normas, porque **en beta la autoabsorción no es tan crítica**."
+    },
+    {
+      "id": "t29-q140",
+      "pregunta": "Al construir la curva de autoabsorción, ¿para qué sirve una sal inactiva y estable?",
+      "opciones": [
+        "Para sustituir el patrón radiactivo por una pesada de sal.",
+        "Para producir radionucleidos nuevos durante el secado.",
+        "Para reproducir espesores de matriz sin añadir actividad no controlada."
+      ],
+      "correcta": 2,
+      "explicacion": "La matriz inactiva permite evaluar la atenuación para diferentes espesores manteniendo controlada la actividad añadida.",
+      "fuente": "CSN, procedimiento 1.5, calibración en función del espesor másico · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Curva de autoabsorción / de eficiencia**: relaciona la eficiencia con el espesor másico. Se construye con una sal inactiva y estable (carbonato, sulfato o nitrato sódico). En beta total el procedimiento del CSN admite espesores **de 0 a 25 mg/cm²**, más amplios que otras normas, porque **en beta la autoabsorción no es tan crítica**."
+    },
+    {
+      "id": "t29-q141",
+      "pregunta": "¿Qué ventaja física busca preparar una fuente en capa delgada para el recuento alfa?",
+      "opciones": [
+        "Aumentar deliberadamente el espesor del residuo.",
+        "Reducir la autoabsorción de las partículas en el depósito.",
+        "Impedir que cualquier radiación alcance el detector."
+      ],
+      "correcta": 1,
+      "explicacion": "Las partículas alfa tienen poco alcance en la materia y un depósito fino reduce sus pérdidas antes de detectarse.",
+      "fuente": "ISO 10704:2019, alcance público, medición de actividad alfa y beta por deposición en capa delgada · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q142",
+      "pregunta": "Un agua con mucha sal produce una fuente gruesa inadecuada. ¿Qué criterio debe orientar la elección de otro procedimiento?",
+      "opciones": [
+        "La compatibilidad del método con la matriz y su capacidad de detección.",
+        "Usar siempre más volumen aunque empeore el residuo.",
+        "Solo elegir el detector con el nombre más largo."
+      ],
+      "correcta": 0,
+      "explicacion": "El método completo debe ser adecuado a las características del agua y al rendimiento requerido.",
+      "fuente": "ISO 10704:2019, alcance público, medición de actividad alfa y beta por deposición en capa delgada · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q143",
+      "pregunta": "Un agua tiene residuo seco de 1,2 g/L. Según la recomendación del CSN citada, ¿qué debe estudiarse frente a la desecación clásica?",
+      "opciones": [
+        "La obligatoriedad de usar siempre más de diez litros en una plancheta.",
+        "Un método alternativo como coprecipitación o centelleo líquido.",
+        "La eliminación del control radiológico por ser salina."
+      ],
+      "correcta": 1,
+      "explicacion": "La mineralización elevada puede comprometer la fuente preparada por desecación.",
+      "fuente": "CSN, estudio INT-04-30 y procedimientos 1.17 y 1.18, aguas de mineralización elevada · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Procedimiento **1.17 del CSN**. Para aguas que la desecación no admite. El criterio del CSN es numérico: **la desecación no se recomienda con conductividad ≥ 1 mS/cm o residuo seco ≥ 1 g/L**; ahí van la coprecipitación o el centelleo líquido."
+    },
+    {
+      "id": "t29-q144",
+      "pregunta": "La conductividad original del agua alcanza 1 mS/cm. ¿Qué recomendación de idoneidad recoge el estudio del CSN citado?",
+      "opciones": [
+        "Transformar 1 mS/cm en 1 Bq/L como equivalencia directa.",
+        "Considerar que el agua carece necesariamente de radionucleidos.",
+        "Revisar la conveniencia de desecación y valorar alternativas."
+      ],
+      "correcta": 2,
+      "explicacion": "Ese umbral forma parte de la recomendación para matrices difíciles del procedimiento.",
+      "fuente": "CSN, estudio INT-04-30 y procedimientos 1.17 y 1.18, aguas de mineralización elevada · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Procedimiento **1.17 del CSN**. Para aguas que la desecación no admite. El criterio del CSN es numérico: **la desecación no se recomienda con conductividad ≥ 1 mS/cm o residuo seco ≥ 1 g/L**; ahí van la coprecipitación o el centelleo líquido."
+    },
+    {
+      "id": "t29-q145",
+      "pregunta": "El detector tiene fondo bajo, pero el blanco preparado con reactivos da señal mayor. ¿Qué origen adicional debe investigarse?",
+      "opciones": [
+        "La preparación, reactivos y materiales del ensayo.",
+        "Exclusivamente la actividad del agua de captación, ausente en el blanco.",
+        "El nombre comercial del contador como causa suficiente."
+      ],
+      "correcta": 0,
+      "explicacion": "El blanco reproduce el proceso y puede revelar contribuciones que el fondo instrumental no incluye.",
+      "fuente": "CSN, procedimiento 1.5, blanco de preparación y fondo instrumental · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q146",
+      "pregunta": "Un reactivo introduce actividad en todas las fuentes preparadas. ¿Qué control ayuda a ponerla en evidencia?",
+      "opciones": [
+        "El volumen del depósito municipal.",
+        "Solo una medición del detector sin reactivos.",
+        "Un blanco sometido a las mismas etapas."
+      ],
+      "correcta": 2,
+      "explicacion": "El blanco permite evaluar aportes del procedimiento, además de las contribuciones instrumentales.",
+      "fuente": "CSN, procedimiento 1.5, blanco de preparación y fondo instrumental · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q147",
+      "pregunta": "Se prepara un blanco por un proceso distinto al de las muestras. ¿Qué problema introduce al corregirlas?",
+      "opciones": [
+        "Garantiza una corrección más exacta por ser diferente.",
+        "Puede no representar las contribuciones de preparación de esas muestras.",
+        "Hace innecesario conocer el tiempo de recuento."
+      ],
+      "correcta": 1,
+      "explicacion": "El control debe representar las etapas y materiales que contribuyen al resultado que pretende corregir.",
+      "fuente": "CSN, procedimiento 1.5, blanco de preparación y fondo instrumental · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q148",
+      "pregunta": "Una calibración de índice beta usa Sr-90/Y-90. ¿Qué condición de la pareja debe controlarse según la referencia del método?",
+      "opciones": [
+        "El equilibrio establecido entre ambos radionucleidos.",
+        "Que la actividad se exprese en grados de rotación.",
+        "Que el itrio sea siempre químicamente idéntico al estroncio."
+      ],
+      "correcta": 0,
+      "explicacion": "El patrón beta de referencia se describe como Sr-90 en equilibrio con Y-90.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, patrones de referencia de los índices · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Los patrones, que es pregunta redonda:**"
+    },
+    {
+      "id": "t29-q149",
+      "pregunta": "Un patrón certificado de actividad se usa mucho después de la fecha de referencia. ¿Qué información puede requerirse antes de asignar su actividad en la medida?",
+      "opciones": [
+        "Solo el tamaño de la letra de la etiqueta.",
+        "La corrección temporal aplicable y las condiciones del certificado.",
+        "La suposición de que todo radionucleido tiene actividad constante para siempre."
+      ],
+      "correcta": 1,
+      "explicacion": "La actividad certificada se refiere a una fecha y puede requerir corrección por desintegración según el patrón.",
+      "fuente": "CSN, procedimientos 1.5 y 1.16, patrones de referencia de los índices · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Los patrones, que es pregunta redonda:**"
+    },
+    {
+      "id": "t29-q150",
+      "pregunta": "¿Qué señal primaria aprovecha un detector de gas al recibir radiación ionizante?",
+      "opciones": [
+        "La refracción en un prisma de sacarosa.",
+        "La rotación de la luz polarizada del agua.",
+        "La ionización producida en el gas."
+      ],
+      "correcta": 2,
+      "explicacion": "La radiación produce cargas que el sistema recoge y transforma en señal eléctrica.",
+      "fuente": "CSN, Curso General de Formación de Actuantes en Emergencias Nucleares, tema 5, familias de detectores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Detectores de gas** | **Cámara de ionización**, **contador proporcional**, **contador Geiger-Müller** | El **proporcional de flujo de gas** es el de los índices alfa y beta total | El **GM es el más utilizado**: barato, sensible y resistente. La **cámara de ionización es más sensible**, pero **cara**, sensible a la **humedad** y con riesgo de **fugas** |"
+    },
+    {
+      "id": "t29-q151",
+      "pregunta": "En un contador proporcional, dos tipos de radiación producen distinta ionización inicial. ¿Qué propiedad del impulso permite discriminarlos?",
+      "opciones": [
+        "Su amplitud, dentro de la región proporcional de funcionamiento.",
+        "El nombre del fichero donde se guarda.",
+        "El color de la plancheta como identificador exclusivo."
+      ],
+      "correcta": 0,
+      "explicacion": "La amplitud conserva información relacionada con la ionización inicial bajo las condiciones del detector.",
+      "fuente": "CSN, Curso General de Formación de Actuantes en Emergencias Nucleares, tema 5, familias de detectores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Detectores de gas** | **Cámara de ionización**, **contador proporcional**, **contador Geiger-Müller** | El **proporcional de flujo de gas** es el de los índices alfa y beta total | El **GM es el más utilizado**: barato, sensible y resistente. La **cámara de ionización es más sensible**, pero **cara**, sensible a la **humedad** y con riesgo de **fugas** |"
+    },
+    {
+      "id": "t29-q152",
+      "pregunta": "Se pretende identificar un radionucleido solo porque un Geiger-Müller registra cuentas. ¿Qué información falta?",
+      "opciones": [
+        "La equivalencia entre una cuenta y un átomo de uranio.",
+        "La certeza de que todas las cuentas proceden de cesio-137.",
+        "Información específica, como la energía o un método selectivo de identificación."
+      ],
+      "correcta": 2,
+      "explicacion": "Un GM convencional indica presencia de radiación, pero sus impulsos no aportan por sí solos identificación nuclear.",
+      "fuente": "CSN, Curso General de Formación de Actuantes en Emergencias Nucleares, tema 5, familias de detectores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Detectores de gas** | **Cámara de ionización**, **contador proporcional**, **contador Geiger-Müller** | El **proporcional de flujo de gas** es el de los índices alfa y beta total | El **GM es el más utilizado**: barato, sensible y resistente. La **cámara de ionización es más sensible**, pero **cara**, sensible a la **humedad** y con riesgo de **fugas** |"
+    },
+    {
+      "id": "t29-q153",
+      "pregunta": "¿Por qué seleccionar un umbral de discriminación incorrecto puede alterar el reparto de cuentas alfa y beta?",
+      "opciones": [
+        "Porque cambia el número atómico de la muestra.",
+        "Porque cambia qué impulsos se asignan a cada ventana.",
+        "Porque todas las partículas alfa se transforman físicamente en beta."
+      ],
+      "correcta": 1,
+      "explicacion": "La clasificación electrónica afecta a los índices calculados, aunque la muestra conserve su composición.",
+      "fuente": "CSN, Curso General de Formación de Actuantes en Emergencias Nucleares, tema 5, familias de detectores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Detectores de gas** | **Cámara de ionización**, **contador proporcional**, **contador Geiger-Müller** | El **proporcional de flujo de gas** es el de los índices alfa y beta total | El **GM es el más utilizado**: barato, sensible y resistente. La **cámara de ionización es más sensible**, pero **cara**, sensible a la **humedad** y con riesgo de **fugas** |"
+    },
+    {
+      "id": "t29-q154",
+      "pregunta": "Una fuente alfa produce parte de sus cuentas en el canal beta del contador. ¿Qué necesita el cálculo beta?",
+      "opciones": [
+        "La corrección de interferencia determinada por el método.",
+        "Cambiar la unidad a Bq de potasio estable.",
+        "Sumar esas cuentas como beta real sin comprobación."
+      ],
+      "correcta": 0,
+      "explicacion": "La respuesta cruzada debe caracterizarse para no atribuir actividad alfa al índice beta.",
+      "fuente": "CSN, procedimiento 1.5, interferencia alfa en la determinación beta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **«Spill-over»**: la **fracción de partículas alfa que se cuentan en la ventana o el voltaje de trabajo beta**. Hay que determinarlo y **corregir con él** el índice beta total."
+    },
+    {
+      "id": "t29-q155",
+      "pregunta": "Un cambio instrumental modifica el paso de impulsos alfa a la ventana beta. ¿Qué parámetro de control debe revisarse?",
+      "opciones": [
+        "Solo la masa de agua contenida en el depósito.",
+        "El spill-over de la configuración.",
+        "La definición del litro."
+      ],
+      "correcta": 1,
+      "explicacion": "La corrección de interferencia está vinculada al funcionamiento del sistema de discriminación.",
+      "fuente": "CSN, procedimiento 1.5, interferencia alfa en la determinación beta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **«Spill-over»**: la **fracción de partículas alfa que se cuentan en la ventana o el voltaje de trabajo beta**. Hay que determinarlo y **corregir con él** el índice beta total."
+    },
+    {
+      "id": "t29-q156",
+      "pregunta": "¿Qué conversión física caracteriza un detector de centelleo?",
+      "opciones": [
+        "Separar radionucleidos por tiempo de retención cromatográfico.",
+        "Transformar toda radiación en masa de sales.",
+        "Transformar parte de la energía depositada en destellos de luz detectables."
+      ],
+      "correcta": 2,
+      "explicacion": "La emisión luminosa del centelleador se convierte después en señal eléctrica.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, detectores de centelleo · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Centelleo sólido** | **ZnS(Ag)** para alfa; **NaI(Tl)** para gamma | ZnS(Ag) mide planchetas de alfa total | Los de centelleo tienen **muy buena sensibilidad** y **algunos pueden usarse como espectrómetros** |"
+    },
+    {
+      "id": "t29-q157",
+      "pregunta": "Un sistema usa NaI(Tl) para detectar radiación gamma. ¿A qué familia pertenece ese material?",
+      "opciones": [
+        "Centelleo sólido.",
+        "Contador proporcional de gas.",
+        "Cámara de ionización líquida sin centelleo."
+      ],
+      "correcta": 0,
+      "explicacion": "NaI activado con talio es un centelleador sólido utilizado para detección gamma.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, detectores de centelleo · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Centelleo sólido** | **ZnS(Ag)** para alfa; **NaI(Tl)** para gamma | ZnS(Ag) mide planchetas de alfa total | Los de centelleo tienen **muy buena sensibilidad** y **algunos pueden usarse como espectrómetros** |"
+    },
+    {
+      "id": "t29-q158",
+      "pregunta": "Un contador de ZnS(Ag) recibe una plancheta cuyo residuo absorbe muchas partículas alfa. ¿Qué limitación permanece aunque el detector sea sensible?",
+      "opciones": [
+        "La sustitución automática del residuo por el patrón.",
+        "La inexistencia de autoabsorción por usar ZnS.",
+        "La radiación perdida antes de llegar al centelleador."
+      ],
+      "correcta": 2,
+      "explicacion": "La preparación de la fuente condiciona cuántas partículas alcanzan el detector.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, detectores de centelleo · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Centelleo sólido** | **ZnS(Ag)** para alfa; **NaI(Tl)** para gamma | ZnS(Ag) mide planchetas de alfa total | Los de centelleo tienen **muy buena sensibilidad** y **algunos pueden usarse como espectrómetros** |"
+    },
+    {
+      "id": "t29-q159",
+      "pregunta": "En centelleo líquido, ¿qué papel tiene el cóctel mezclado con la muestra?",
+      "opciones": [
+        "Actuar solo como etiqueta de color del vial.",
+        "Producir una respuesta luminosa aprovechable tras el depósito de energía.",
+        "Eliminar por definición todos los radionucleidos."
+      ],
+      "correcta": 1,
+      "explicacion": "El cóctel permite transformar energía de la radiación en impulsos de luz que registra el equipo.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q160",
+      "pregunta": "Un vial de muestra y uno de patrón tienen medios ácidos muy distintos. ¿Qué problema de comparabilidad debe evaluarse?",
+      "opciones": [
+        "Diferencias de extinción y eficiencia.",
+        "Una identificación directa de todos los emisores gamma.",
+        "Un cambio de becquerelio a gray por la acidez."
+      ],
+      "correcta": 0,
+      "explicacion": "Las condiciones químicas influyen en el quenching y deben controlarse entre muestras, patrones y blancos.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q161",
+      "pregunta": "Se altera la relación entre cóctel y muestra sin revisar la calibración. ¿Qué característica del recuento puede cambiar?",
+      "opciones": [
+        "La actividad física real por el simple nombre del reactivo.",
+        "La eficiencia y discriminación de impulsos.",
+        "La concentración derivada de la ley."
+      ],
+      "correcta": 1,
+      "explicacion": "La relación de mezcla forma parte de las condiciones de respuesta del método.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q162",
+      "pregunta": "Un vial presenta separación de fases donde el método necesita una mezcla adecuada. ¿Qué debe comprobarse antes de aceptar el recuento?",
+      "opciones": [
+        "La equivalencia automática con un patrón homogéneo.",
+        "Solo el número de decimales del contador.",
+        "La compatibilidad y estado de la preparación."
+      ],
+      "correcta": 2,
+      "explicacion": "La distribución física de la muestra y del cóctel condiciona la respuesta del centelleo.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q163",
+      "pregunta": "¿Qué describe la extinción o quenching en el contexto del centelleo líquido?",
+      "opciones": [
+        "La reducción o modificación de la señal luminosa útil del proceso.",
+        "La desaparición obligatoria del radionucleido de la muestra.",
+        "La anulación de toda incertidumbre por mezclar reactivos."
+      ],
+      "correcta": 0,
+      "explicacion": "La extinción afecta al paso de energía a luz y a su detección, alterando la eficiencia.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q164",
+      "pregunta": "Una muestra da menos señal por extinción que el patrón de igual actividad. ¿Qué riesgo aparece si se usa su eficiencia sin corrección válida?",
+      "opciones": [
+        "Obtener siempre una actividad mayor que la real.",
+        "Demostrar que la actividad se ha destruido químicamente.",
+        "Infravalorar la actividad de la muestra."
+      ],
+      "correcta": 2,
+      "explicacion": "Una eficiencia efectiva menor produce menos cuentas para la misma actividad.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q165",
+      "pregunta": "¿Por qué las condiciones del fabricante del cóctel son relevantes al poner a punto el método?",
+      "opciones": [
+        "Porque sustituyen el conocimiento de la actividad del patrón.",
+        "Porque indican compatibilidad de medio y proporciones de uso que deben verificarse.",
+        "Porque obligan a que todas las muestras tengan igual concentración de radionucleidos."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento exige un sistema químico e instrumental adecuado para detectar y discriminar los impulsos.",
+      "fuente": "CSN, procedimiento 1.18, §§5.1–5.2, fundamento y matriz de medida · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q166",
+      "pregunta": "Un ajuste de PDI reduce la interferencia alfa pero eleva mucho la beta. ¿Qué criterio usa el procedimiento para elegir el óptimo?",
+      "opciones": [
+        "Minimizar la interferencia total considerada.",
+        "Elegir el valor numérico mayor disponible.",
+        "Minimizar una sola interferencia ignorando siempre la otra."
+      ],
+      "correcta": 0,
+      "explicacion": "El método evalúa la suma de las interferencias alfa y beta para optimizar la discriminación.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q167",
+      "pregunta": "Un patrón alfa se cuenta como alfa y como beta en diferentes proporciones. ¿Qué identifica la fracción clasificada como beta?",
+      "opciones": [
+        "Una actividad beta real creada dentro del patrón.",
+        "La interferencia alfa hacia la ventana beta.",
+        "La dosis efectiva anual del analista."
+      ],
+      "correcta": 1,
+      "explicacion": "Es respuesta cruzada del sistema de clasificación de impulsos.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q168",
+      "pregunta": "Un patrón beta produce cuentas en la ventana alfa. ¿Qué contribución debe caracterizarse?",
+      "opciones": [
+        "La evaporación total del cóctel como valor normativo.",
+        "El contenido de potasio estable calculado por pesada de sal.",
+        "La interferencia beta hacia el canal alfa."
+      ],
+      "correcta": 2,
+      "explicacion": "La separación electrónica entre tipos de impulso tiene interferencias en ambos sentidos.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q169",
+      "pregunta": "En una prueba simplificada, 8 de 200 impulsos alfa se clasifican como beta. ¿Qué fracción de interferencia alfa representan?",
+      "opciones": [
+        "4 %.",
+        "25 %.",
+        "0,04 %."
+      ],
+      "correcta": 0,
+      "explicacion": "La fracción es 8/200 = 0,04, equivalente al 4 %.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q170",
+      "pregunta": "Los valores de interferencia alfa y beta de dos ajustes son 2 % y 6 %, frente a 3 % y 3 %. ¿Cuál minimiza su suma?",
+      "opciones": [
+        "Ambos tienen idéntica suma.",
+        "El primero, con 8 % total.",
+        "El segundo ajuste, con 6 % total."
+      ],
+      "correcta": 2,
+      "explicacion": "La suma es 8 % en el primer caso y 6 % en el segundo.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q171",
+      "pregunta": "La actividad beta es muy elevada respecto a la capacidad del método para alfa. ¿Qué efecto advierte el procedimiento 1.18?",
+      "opciones": [
+        "Garantiza una mejora ilimitada de la medida alfa.",
+        "Puede degradar notablemente la exactitud del índice alfa.",
+        "Permite eliminar los controles de discriminación."
+      ],
+      "correcta": 1,
+      "explicacion": "Una contribución beta alta puede aumentar la interferencia y comprometer la medida alfa.",
+      "fuente": "CSN, procedimiento 1.18, §§6.1 y 8.1, discriminación e interferencias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **PDI, parámetro discriminador de impulsos:** el ajuste instrumental que **separa los impulsos alfa de los beta**. Se calibra, y con él se definen las **interferencias alfa** (impulsos alfa contados como beta), **beta** (beta contados como alfa) y **total** (la suma)."
+    },
+    {
+      "id": "t29-q172",
+      "pregunta": "Una ventana alfa recorta parte de los impulsos que debe incluir el método. ¿Qué efecto directo puede producir?",
+      "opciones": [
+        "Pérdida de cuentas de interés.",
+        "Eliminación del fondo sin afectar nunca a la muestra.",
+        "Creación de actividad nuclear adicional."
+      ],
+      "correcta": 0,
+      "explicacion": "Las ventanas deben abarcar las señales previstas y mantener las condiciones de calibración.",
+      "fuente": "CSN, procedimiento 1.18, ventanas alfa y beta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Ventanas de recuento.** La **ventana alfa, lo más estrecha posible**, pero conteniendo el pico del **U-236 (4,4 MeV)** y el del **Po-214 (7,7 MeV)**. La **ventana beta, lo más amplia posible**, dejando fuera los canales de baja energía del tritio: **no debe contener más del 5 % de las cuentas de tritio**."
+    },
+    {
+      "id": "t29-q173",
+      "pregunta": "Se amplía la ventana beta hacia los canales de tritio sin evaluar el método. ¿Qué contribución puede incorporarse indebidamente?",
+      "opciones": [
+        "Solo la masa de la plancheta vacía.",
+        "Cuentas de tritio excluidas de la definición del índice beta del método.",
+        "El valor de incertidumbre de un ensayo de pH."
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento limita la contribución del tritio a la ventana beta de los índices globales.",
+      "fuente": "CSN, procedimiento 1.18, ventanas alfa y beta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Ventanas de recuento.** La **ventana alfa, lo más estrecha posible**, pero conteniendo el pico del **U-236 (4,4 MeV)** y el del **Po-214 (7,7 MeV)**. La **ventana beta, lo más amplia posible**, dejando fuera los canales de baja energía del tritio: **no debe contener más del 5 % de las cuentas de tritio**."
+    },
+    {
+      "id": "t29-q174",
+      "pregunta": "¿Por qué una lectura global de alfa/beta total no sustituye automáticamente una determinación específica de tritio?",
+      "opciones": [
+        "Porque toda cuenta beta es exclusivamente de K-40.",
+        "Porque el tritio no emite ninguna radiación.",
+        "Porque el método global no pretende recoger íntegramente su señal y requiere otro alcance."
+      ],
+      "correcta": 2,
+      "explicacion": "El tritio de baja energía necesita un método con preparación y respuesta adecuadas para su determinación.",
+      "fuente": "CSN, procedimiento 1.18, ventanas alfa y beta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Ventanas de recuento.** La **ventana alfa, lo más estrecha posible**, pero conteniendo el pico del **U-236 (4,4 MeV)** y el del **Po-214 (7,7 MeV)**. La **ventana beta, lo más amplia posible**, dejando fuera los canales de baja energía del tritio: **no debe contener más del 5 % de las cuentas de tritio**."
+    },
+    {
+      "id": "t29-q175",
+      "pregunta": "En un espectro gamma, ¿qué dato se utiliza para relacionar un fotopico con un radionucleido?",
+      "opciones": [
+        "Su energía característica.",
+        "Solo la posición del vial en el almacén.",
+        "La turbidez del agua en UNF."
+      ],
+      "correcta": 0,
+      "explicacion": "La espectrometría relaciona las energías observadas con emisiones conocidas.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q176",
+      "pregunta": "¿Qué magnitud describe la separación de fotopicos próximos en energía?",
+      "opciones": [
+        "La dosis anual del público.",
+        "El volumen del frasco como única magnitud.",
+        "La resolución energética del sistema."
+      ],
+      "correcta": 2,
+      "explicacion": "Una buena resolución permite distinguir señales gamma cercanas.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q177",
+      "pregunta": "Se quiere usar la altura bruta de un fotopico como concentración en Bq/L. ¿Qué información analítica falta?",
+      "opciones": [
+        "Solo cambiar el rótulo del eje vertical.",
+        "El tratamiento de señal, eficiencia, probabilidades de emisión y muestra representada, según el método.",
+        "La certeza de que todos los fotones tienen igual probabilidad de emisión."
+      ],
+      "correcta": 1,
+      "explicacion": "La cuantificación gamma requiere una calibración y un modelo de recuento aplicables.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q178",
+      "pregunta": "Un patrón gamma se mide en un recipiente de forma distinta al de la muestra. ¿Qué debe revisarse?",
+      "opciones": [
+        "La equivalencia de geometría y su efecto sobre la eficiencia.",
+        "El nombre del radionucleido como única corrección geométrica.",
+        "Solo que ambos sean transparentes al ojo humano."
+      ],
+      "correcta": 0,
+      "explicacion": "La disposición física de la fuente respecto al detector afecta a la eficiencia de detección.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q179",
+      "pregunta": "Una muestra gamma tiene densidad muy distinta de la del patrón. ¿Qué contribución debe evaluarse?",
+      "opciones": [
+        "La conversión directa del agua en aire.",
+        "La autoatenuación y aplicabilidad de la calibración.",
+        "La imposibilidad de que un fotón sea detectado nunca."
+      ],
+      "correcta": 1,
+      "explicacion": "La matriz puede absorber parte de la radiación antes de alcanzar el detector.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q180",
+      "pregunta": "Un espectro tiene dos fotopicos resueltos de energías diferentes. ¿Qué ventaja ofrece frente a un recuento global sin espectro?",
+      "opciones": [
+        "Demuestra que no hay ningún emisor beta puro.",
+        "Da automáticamente cualquier dosis sin modelo adicional.",
+        "Aporta información para identificar emisores concretos."
+      ],
+      "correcta": 2,
+      "explicacion": "La información energética añade selectividad a la medida.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q181",
+      "pregunta": "Se detectan emisores gamma pero el método no mide adecuadamente un emisor beta puro. ¿Qué conclusión se evita?",
+      "opciones": [
+        "Suponer que el espectro gamma cubre por sí solo todos los radionucleidos de interés.",
+        "Que el espectro pueda contener información útil.",
+        "Que el agua tenga un volumen definido."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada técnica tiene un alcance de radiaciones y radionucleidos que debe conocerse.",
+      "fuente": "CSN, procedimiento 1.4, selección, preparación y uso de patrones para espectrometría gamma · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "#### f) Espectrometría gamma de alta resolución"
+    },
+    {
+      "id": "t29-q182",
+      "pregunta": "Se necesita distinguir isótopos de uranio que contribuyen al índice alfa. ¿Qué información aporta la espectrometría alfa frente al índice global?",
+      "opciones": [
+        "Una medida de refracción de la disolución.",
+        "Solo una cifra global idéntica al índice alfa en todos los casos.",
+        "La distribución de señal en energías para especies concretas."
+      ],
+      "correcta": 2,
+      "explicacion": "El método específico permite diferenciar emisores tras la preparación y separación adecuadas.",
+      "fuente": "ISO 13166:2020 e ISO 13161:2020, alcances públicos de espectrometría alfa en agua · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Para nucleidos concretos, **después de separación radioquímica**: **ISO 13166** (isótopos de uranio), **ISO 13161** (Po-210), **ISO 13167** (plutonio, americio, curio y neptunio) e **ISO 13165-4** (Ra-226). Da **resolución en energía** de las partículas alfa, que es lo que permite distinguir U-234 de U-238 o Ra-226 de Po-210."
+    },
+    {
+      "id": "t29-q183",
+      "pregunta": "¿Qué finalidad tiene la separación radioquímica antes de una espectrometría alfa específica?",
+      "opciones": [
+        "Transformar cualquier nucleido en el isótopo deseado.",
+        "Aislar la fracción de interés y reducir interferencias según el método.",
+        "Eliminar la necesidad de conocer la eficiencia."
+      ],
+      "correcta": 1,
+      "explicacion": "La preparación selectiva ayuda a obtener un espectro interpretable del analito buscado.",
+      "fuente": "ISO 13166:2020 e ISO 13161:2020, alcances públicos de espectrometría alfa en agua · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Para nucleidos concretos, **después de separación radioquímica**: **ISO 13166** (isótopos de uranio), **ISO 13161** (Po-210), **ISO 13167** (plutonio, americio, curio y neptunio) e **ISO 13165-4** (Ra-226). Da **resolución en energía** de las partículas alfa, que es lo que permite distinguir U-234 de U-238 o Ra-226 de Po-210."
+    },
+    {
+      "id": "t29-q184",
+      "pregunta": "Un ensayo de índice alfa informa «referido a Am-241». ¿Qué alcance tiene esa referencia?",
+      "opciones": [
+        "La respuesta está ligada al patrón utilizado para definir o calibrar el índice.",
+        "Se ha identificado Am-241 de manera inequívoca en el agua.",
+        "Toda la muestra está constituida exclusivamente por Am-241."
+      ],
+      "correcta": 0,
+      "explicacion": "La referencia del índice no equivale a identificar como americio toda la actividad de la muestra.",
+      "fuente": "CSN, procedimiento 1.16, referencia del índice de actividad alfa total · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Alfa total** | **Americio-241** (el CSN también usa Th-230 en la curva de calibrado) | El índice se define **«referido a la muestra de calibración de americio-241»** |"
+    },
+    {
+      "id": "t29-q185",
+      "pregunta": "Se usa un método beta global con un alcance energético que no cubre bien el tritio. ¿Qué debe respetarse al interpretar el resultado?",
+      "opciones": [
+        "La idea de que «beta» garantiza siempre toda energía y especie.",
+        "El alcance del método y sus exclusiones.",
+        "La conversión universal de cada cuenta en un átomo de tritio."
+      ],
+      "correcta": 1,
+      "explicacion": "La respuesta de un procedimiento global depende de las energías y condiciones para las que se define.",
+      "fuente": "ISO 9697:2018, alcance público, actividad beta global en agua no salina · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Es el de la **UNE-EN ISO 9696** (alfa) y la **UNE-EN ISO 9697** (beta), y el del **Procedimiento 1.16 del CSN**. Marcha:"
+    },
+    {
+      "id": "t29-q186",
+      "pregunta": "¿Qué característica del radón hace coherente una separación y medida en fase gaseosa?",
+      "opciones": [
+        "Que sea ópticamente activo como la sacarosa.",
+        "Que sea una sal insoluble permanente.",
+        "Su carácter de gas noble que puede desprenderse del agua."
+      ],
+      "correcta": 2,
+      "explicacion": "La técnica aprovecha la posibilidad de transferir el gas a una célula de medida.",
+      "fuente": "ISO 13164-3, alcance público, concentración de actividad de radón-222 por emanometría · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En radiactividad el «equipo» no basta: **la preparación de la muestra manda tanto como el detector**, porque las partículas alfa se frenan en unos pocos micrómetros del propio residuo. De ahí que los títulos de las normas ISO **nombren la preparación**, no el aparato: *fuente concentrada*, *capa delgada*, *centelleo líquido*, *emanometría*."
+    },
+    {
+      "id": "t29-q187",
+      "pregunta": "Un sistema gamma usa HPGe y otro alfa emplea silicio. ¿Qué familia instrumental comparten?",
+      "opciones": [
+        "Detectores semiconductores.",
+        "Detectores conductimétricos de HPLC.",
+        "Contadores de burbujas de gas sin señal eléctrica."
+      ],
+      "correcta": 0,
+      "explicacion": "Ambos materiales semiconductores permiten registrar energía depositada con buena resolución.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, detectores semiconductores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Semiconductores** | **Silicio** para alfa; **germanio hiperpuro (HPGe)** para gamma | Espectrometría alfa y gamma | **Alta resolución en energía**: es lo que permite **identificar** nucleido a nucleido |"
+    },
+    {
+      "id": "t29-q188",
+      "pregunta": "¿Qué propiedad favorece un semiconductor cuando es necesario discriminar energías próximas?",
+      "opciones": [
+        "Que transforme actividad en concentración química sin calibración.",
+        "Que todos sus impulsos tengan igual amplitud por definición.",
+        "Su alta resolución energética."
+      ],
+      "correcta": 2,
+      "explicacion": "La resolución es una ventaja principal de los detectores semiconductores para espectrometría.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, detectores semiconductores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Semiconductores** | **Silicio** para alfa; **germanio hiperpuro (HPGe)** para gamma | Espectrometría alfa y gamma | **Alta resolución en energía**: es lo que permite **identificar** nucleido a nucleido |"
+    },
+    {
+      "id": "t29-q189",
+      "pregunta": "Un equipo adecuado para actividades altas tiene un fondo que oculta los niveles del agua. ¿Qué debe verificarse antes de usarlo en control de consumo?",
+      "opciones": [
+        "Solo que el contador se encienda.",
+        "Que alcance los límites de detección requeridos con el método completo.",
+        "Que cualquier equipo que mida Bq sirva para cualquier nivel."
+      ],
+      "correcta": 1,
+      "explicacion": "La capacidad para detectar bajas concentraciones es parte de la aptitud del sistema analítico.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, condiciones de medida de actividades bajas · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "**Bajo fondo, siempre.** Todos los equipos de estas medidas se especifican **«de bajo fondo»**: se trabaja con actividades del orden de centésimas de Bq/L, así que **el fondo del propio detector es el competidor a batir**."
+    },
+    {
+      "id": "t29-q190",
+      "pregunta": "Un método de alfa total tiene LD de 0,06 Bq/L. ¿Cómo se compara con la exigencia de 0,04 Bq/L?",
+      "opciones": [
+        "No alcanza la capacidad de detección requerida.",
+        "Cumple automáticamente por usar un detector de bajo fondo.",
+        "Cumple porque 0,06 es menor que el cribado de 0,1."
+      ],
+      "correcta": 0,
+      "explicacion": "Debe compararse el LD con el requisito analítico, además del valor de cribado.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q191",
+      "pregunta": "El método de beta resto tiene LD de 0,30 Bq/L. ¿Qué evaluación corresponde frente al requisito de 0,4 Bq/L?",
+      "opciones": [
+        "Incumple por ser mayor que 0,04 Bq/L de alfa.",
+        "Cumple ese requisito de detección.",
+        "No puede evaluarse sin convertirlo a sieverts."
+      ],
+      "correcta": 1,
+      "explicacion": "Cada parámetro se compara con el LD que le corresponde en la tabla.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q192",
+      "pregunta": "Un ensayo de tritio tiene LD de 15 Bq/L. ¿Basta para cumplir el requisito de tabla 14?",
+      "opciones": [
+        "Sí, porque todo centelleo líquido cumple por definición.",
+        "Sí, porque el valor paramétrico es 100 Bq/L.",
+        "No, el LD requerido es 10 Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "La capacidad de detección se exige a un nivel inferior al valor paramétrico.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q193",
+      "pregunta": "Un método informa LD de radón de 10 Bq/L. ¿Qué límite de detección cubre esa cifra?",
+      "opciones": [
+        "El máximo exigido de 10 Bq/L para ese parámetro.",
+        "El valor paramétrico del agua de 10 Bq/L.",
+        "El nivel de referencia de aire de 10 Bq/m³."
+      ],
+      "correcta": 0,
+      "explicacion": "El LD es una característica del método y se distingue del valor paramétrico del agua.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q194",
+      "pregunta": "¿Qué diferencia hay entre un LD de 0,04 Bq/L y un resultado de muestra de 0,04 Bq/L?",
+      "opciones": [
+        "Ambos son valores de dosis absorbida.",
+        "Son siempre exactamente la misma información.",
+        "El primero caracteriza la capacidad analítica y el segundo es un dato de esa muestra."
+      ],
+      "correcta": 2,
+      "explicacion": "Las características del método y los resultados de muestras deben identificarse por separado.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q195",
+      "pregunta": "Un laboratorio alcanza el LD exigido con agua de baja salinidad. ¿Qué debe verificar antes de asegurar igual aptitud en otra matriz más salina?",
+      "opciones": [
+        "Solo que el volumen del frasco sea el mismo.",
+        "El desempeño y LD del método en esa matriz.",
+        "La equivalencia universal entre salinidad y actividad."
+      ],
+      "correcta": 1,
+      "explicacion": "La matriz afecta a preparación, eficiencia y fondo, y puede alterar la capacidad de detección.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q196",
+      "pregunta": "Un informe dice «no detectado» con LD conocido. ¿Qué interpretación evita atribuir al dato más alcance del debido?",
+      "opciones": [
+        "No demuestra actividad exactamente igual a cero.",
+        "Permite ignorar el LD al comparar métodos.",
+        "Demuestra que no existe ningún átomo del radionucleido."
+      ],
+      "correcta": 0,
+      "explicacion": "El resultado está limitado por la capacidad de detección del procedimiento.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q197",
+      "pregunta": "Se comparan dos resultados «no detectados» con LD de 0,01 y 0,20 Bq/L. ¿Qué diferencia existe?",
+      "opciones": [
+        "Son necesariamente equivalentes en todo sentido.",
+        "Tienen distinta capacidad para revelar actividades pequeñas.",
+        "El de LD mayor demuestra menos actividad real en la muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La ausencia de detección debe interpretarse junto a su LD.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, requisitos de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q198",
+      "pregunta": "¿Qué papel tiene el umbral de decisión en una medida radiométrica?",
+      "opciones": [
+        "Asignar siempre actividad cero a todo resultado bajo el valor paramétrico.",
+        "Fijar el valor paramétrico legal del agua.",
+        "Ayudar a decidir si una señal permite distinguir una contribución del mensurando frente al fondo bajo el criterio establecido."
+      ],
+      "correcta": 2,
+      "explicacion": "Es un límite característico estadístico y no una norma de calidad del agua.",
+      "fuente": "Serie ISO 11929, límites característicos para mediciones de radiación ionizante · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "1. **El límite de detección se calcula con arreglo a la UNE-EN ISO 11929**, *«Determinación de los límites característicos (**umbral de decisión, límite de detección y límites del intervalo de cobertura**) para mediciones de radiación ionizante»*, **parte 1 (aplicaciones elementales), parte 2 (aplicaciones avanzadas) y parte 3 (aplicaciones a métodos de desplegado)**."
+    },
+    {
+      "id": "t29-q199",
+      "pregunta": "¿Qué describe el límite de detección respecto al proceso de medida?",
+      "opciones": [
+        "Su capacidad de detectar una contribución con probabilidades especificadas.",
+        "La concentración legal máxima de un radionucleido por definición.",
+        "La masa del recipiente que debe restarse siempre."
+      ],
+      "correcta": 0,
+      "explicacion": "El LD depende del procedimiento, fondo, incertidumbre y criterios probabilísticos.",
+      "fuente": "Serie ISO 11929, límites característicos para mediciones de radiación ionizante · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "1. **El límite de detección se calcula con arreglo a la UNE-EN ISO 11929**, *«Determinación de los límites característicos (**umbral de decisión, límite de detección y límites del intervalo de cobertura**) para mediciones de radiación ionizante»*, **parte 1 (aplicaciones elementales), parte 2 (aplicaciones avanzadas) y parte 3 (aplicaciones a métodos de desplegado)**."
+    },
+    {
+      "id": "t29-q200",
+      "pregunta": "Una señal supera el umbral de decisión pero es muy pequeña. ¿Qué información sigue siendo necesaria para cuantificar e interpretar?",
+      "opciones": [
+        "La suposición de exactitud por haber superado un umbral.",
+        "Solo una etiqueta de «seguro» sin unidades.",
+        "El resultado con incertidumbre y los límites característicos aplicables."
+      ],
+      "correcta": 2,
+      "explicacion": "La decisión estadística y la estimación de cantidad son aspectos relacionados con alcances distintos.",
+      "fuente": "Serie ISO 11929, límites característicos para mediciones de radiación ionizante · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "1. **El límite de detección se calcula con arreglo a la UNE-EN ISO 11929**, *«Determinación de los límites característicos (**umbral de decisión, límite de detección y límites del intervalo de cobertura**) para mediciones de radiación ionizante»*, **parte 1 (aplicaciones elementales), parte 2 (aplicaciones avanzadas) y parte 3 (aplicaciones a métodos de desplegado)**."
+    },
+    {
+      "id": "t29-q201",
+      "pregunta": "La incertidumbre típica combinada es 0,010 Bq/L. Si se expresa expandida con factor 1,96, ¿qué valor resulta?",
+      "opciones": [
+        "0,0051 Bq/L.",
+        "0,0196 Bq/L.",
+        "1,96 Bq/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La incertidumbre expandida es el producto de la típica por el factor.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "2. **Las incertidumbres se calculan y comunican como incertidumbres típicas combinadas o expandidas, con un factor de expansión de 1,96**, según la Guía ISO para la expresión de la incertidumbre."
+    },
+    {
+      "id": "t29-q202",
+      "pregunta": "Un informe radiométrico expresa incertidumbre expandida sin factor de cobertura. ¿Qué información metrológica debe completar?",
+      "opciones": [
+        "El factor usado y la forma de expresión de la incertidumbre.",
+        "La equivalencia fija entre Bq y mSv.",
+        "El número de grifos del laboratorio como único dato."
+      ],
+      "correcta": 0,
+      "explicacion": "La interpretación requiere identificar si se da incertidumbre típica o expandida y el factor correspondiente.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "2. **Las incertidumbres se calculan y comunican como incertidumbres típicas combinadas o expandidas, con un factor de expansión de 1,96**, según la Guía ISO para la expresión de la incertidumbre."
+    },
+    {
+      "id": "t29-q203",
+      "pregunta": "¿Qué diferencia exige cuidar al trasladar una plantilla general físico-química a radionucleidos del RD 3/2023?",
+      "opciones": [
+        "Que toda actividad se exprese en mg/L.",
+        "La referencia específica a factor 1,96 en la tabla 14.",
+        "Que desaparezca la obligación de incertidumbre."
+      ],
+      "correcta": 1,
+      "explicacion": "El bloque radiológico tiene una indicación específica que debe conservarse en su expresión de incertidumbre.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "2. **Las incertidumbres se calculan y comunican como incertidumbres típicas combinadas o expandidas, con un factor de expansión de 1,96**, según la Guía ISO para la expresión de la incertidumbre."
+    },
+    {
+      "id": "t29-q204",
+      "pregunta": "La comprobación inicial de una fuente nueva debe valorar Ra-228. ¿Qué LD inicial recoge la nota 3?",
+      "opciones": [
+        "20 Bq/L.",
+        "0,08 Bq/L en todos los casos desde el inicio.",
+        "0,02 Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "El valor de 0,02 se refiere al cribado inicial de DI en fuentes nuevas.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 3 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| | | | Ra-228 | **0,02** (ver nota) |"
+    },
+    {
+      "id": "t29-q205",
+      "pregunta": "La concentración derivada de Ra-228 es 0,2 Bq/L. ¿Qué concentración corresponde al 20 % usado en la condición de la nota 3?",
+      "opciones": [
+        "0,04 Bq/L.",
+        "0,4 Bq/L.",
+        "4 Bq/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Se calcula 0,20×0,2 = 0,04.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 3 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| | | | Ra-228 | **0,02** (ver nota) |"
+    },
+    {
+      "id": "t29-q206",
+      "pregunta": "Tras justificar la condición de baja contribución de Ra-228 prevista en la nota 3, ¿hasta qué LD puede elevarse el valor aplicable?",
+      "opciones": [
+        "8 Bq/L.",
+        "0,8 Bq/L.",
+        "0,08 Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "La elevación a 0,08 es una salvedad condicionada, no una sustitución general del LD inicial.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 3 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "| | | | Ra-228 | **0,02** (ver nota) |"
+    },
+    {
+      "id": "t29-q207",
+      "pregunta": "El procedimiento de centelleo citado presenta una AMD alfa de 0,03 Bq/L en sus condiciones de baja salinidad. ¿Cómo queda frente a 0,04 Bq/L de tabla 14?",
+      "opciones": [
+        "Por encima y necesariamente fuera de requisito.",
+        "Por debajo de ese requisito, debiendo comprobar la aplicabilidad de las condiciones.",
+        "Es exactamente igual al valor de cribado de 0,1 Bq/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Las prestaciones publicadas corresponden a condiciones concretas y no sustituyen su verificación en el laboratorio.",
+      "fuente": "CSN, procedimiento 1.18, campo de aplicación y prestaciones del método · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q208",
+      "pregunta": "La AMD alfa publicada para aguas salinas es 0,3 Bq/L. ¿Qué impide trasladar sin evaluación el cumplimiento de LD demostrado en baja salinidad?",
+      "opciones": [
+        "Que la matriz salina puede tener una capacidad de detección diferente e insuficiente para ese uso.",
+        "Que el valor paramétrico legal cambia con cada salinidad.",
+        "Que todo residuo salino es necesariamente radiactivo artificial."
+      ],
+      "correcta": 0,
+      "explicacion": "La comparación debe hacerse con las prestaciones de la matriz y las condiciones efectivas.",
+      "fuente": "CSN, procedimiento 1.18, campo de aplicación y prestaciones del método · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q209",
+      "pregunta": "Un valor de AMD se cita con volumen y tiempo de recuento concretos. ¿Qué debe conservarse al interpretar esa prestación?",
+      "opciones": [
+        "Solo el valor numérico, como propiedad invariable del equipo.",
+        "Las condiciones bajo las que se obtuvo.",
+        "La suposición de que es idéntico para cualquier volumen."
+      ],
+      "correcta": 1,
+      "explicacion": "La sensibilidad del método depende del volumen representado, tiempo, fondo y eficiencia.",
+      "fuente": "CSN, procedimiento 1.18, campo de aplicación y prestaciones del método · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El resumen público de la **ISO 9696** acota su alcance: determina la actividad alfa total **en aguas no salinas**, para **radionucleidos emisores alfa que no sean volátiles hasta 350 °C**, y es aplicable a **aguas brutas y potables**. El rango de aplicación depende de **las sales solubles totales del agua** y de las prestaciones del contador (**fondo y eficiencia de recuento**)."
+    },
+    {
+      "id": "t29-q210",
+      "pregunta": "El potasio es 10 mg/L y F_K = 0,02769 Bq por mg de K. ¿Qué contribución beta de K-40 se calcula?",
+      "opciones": [
+        "0,002769 Bq/L.",
+        "2,769 Bq/L.",
+        "0,2769 Bq/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Se multiplica la concentración de potasio por el factor beta del método.",
+      "fuente": "CSN, procedimiento 1.5, cálculo del índice beta resto · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Beta total / beta resto** | **Estroncio-90 en equilibrio con itrio-90** | Es **el emisor beta de mayor radiotoxicidad**. Se descartó el **Cs-137 por volátil** hacia 450 °C, y el **K-40** pese a ser el mayoritario en aguas |"
+    },
+    {
+      "id": "t29-q211",
+      "pregunta": "La beta total corregida es 1,20 Bq/L y la contribución de K-40 0,30 Bq/L. ¿Qué beta resto resulta antes de otras valoraciones?",
+      "opciones": [
+        "0,90 Bq/L.",
+        "1,50 Bq/L.",
+        "4,0 Bq/L."
+      ],
+      "correcta": 0,
+      "explicacion": "El índice resto descuenta de la beta total la parte asociada al K-40.",
+      "fuente": "CSN, procedimiento 1.5, cálculo del índice beta resto · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Beta total / beta resto** | **Estroncio-90 en equilibrio con itrio-90** | Es **el emisor beta de mayor radiotoxicidad**. Se descartó el **Cs-137 por volátil** hacia 450 °C, y el **K-40** pese a ser el mayoritario en aguas |"
+    },
+    {
+      "id": "t29-q212",
+      "pregunta": "El dato de potasio se recibe en g/L y el factor F_K está en Bq/mg. ¿Qué paso es necesario antes de multiplicar?",
+      "opciones": [
+        "Sumar el valor numérico de potasio al de F_K.",
+        "Sustituir g por mg solo en la etiqueta.",
+        "Convertir el potasio a mg/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Las unidades deben ser compatibles para obtener Bq/L.",
+      "fuente": "CSN, procedimiento 1.5, cálculo del índice beta resto · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Beta total / beta resto** | **Estroncio-90 en equilibrio con itrio-90** | Es **el emisor beta de mayor radiotoxicidad**. Se descartó el **Cs-137 por volátil** hacia 450 °C, y el **K-40** pese a ser el mayoritario en aguas |"
+    },
+    {
+      "id": "t29-q213",
+      "pregunta": "Tras restar la contribución calculada del K-40 aparece un valor pequeño negativo de beta resto. ¿Qué debe revisarse al interpretarlo?",
+      "opciones": [
+        "La existencia de desintegraciones físicas negativas.",
+        "La incertidumbre, correcciones y criterio de expresión de resultados del método.",
+        "La obligación de informar una actividad real negativa sin contexto."
+      ],
+      "correcta": 1,
+      "explicacion": "Una diferencia de estimaciones con incertidumbre puede ser negativa y requiere el tratamiento definido por el método.",
+      "fuente": "CSN, procedimiento 1.5, cálculo del índice beta resto · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Beta total / beta resto** | **Estroncio-90 en equilibrio con itrio-90** | Es **el emisor beta de mayor radiotoxicidad**. Se descartó el **Cs-137 por volátil** hacia 450 °C, y el **K-40** pese a ser el mayoritario en aguas |"
+    },
+    {
+      "id": "t29-q214",
+      "pregunta": "Un laboratorio confunde potasio total en mg/L con actividad de K-40 en Bq/L. ¿Qué relación falta aplicar?",
+      "opciones": [
+        "El factor de conversión beta correspondiente.",
+        "El peso normal de un sacarímetro.",
+        "La masa del detector de germanio."
+      ],
+      "correcta": 0,
+      "explicacion": "Son magnitudes distintas y el procedimiento proporciona el factor que las relaciona.",
+      "fuente": "CSN, procedimiento 1.5, cálculo del índice beta resto · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Beta total / beta resto** | **Estroncio-90 en equilibrio con itrio-90** | Es **el emisor beta de mayor radiotoxicidad**. Se descartó el **Cs-137 por volátil** hacia 450 °C, y el **K-40** pese a ser el mayoritario en aguas |"
+    },
+    {
+      "id": "t29-q215",
+      "pregunta": "El blanco de una serie aumenta respecto a su historial. ¿Qué decisión precede a aceptar señales pequeñas de las muestras?",
+      "opciones": [
+        "Restar siempre el blanco más bajo de años anteriores.",
+        "Investigar la causa y evaluar la validez de la serie.",
+        "Dar por hecho que todas las captaciones han cambiado igual."
+      ],
+      "correcta": 1,
+      "explicacion": "El blanco aporta una contribución que puede comprometer la interpretación y detección de niveles bajos.",
+      "fuente": "CSN, procedimiento 1.5, controles de recuento y preparación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q216",
+      "pregunta": "Se usa un blanco contado con una configuración instrumental distinta de la de la muestra. ¿Qué debe comprobarse?",
+      "opciones": [
+        "Que todos los contadores tengan idéntico fondo por definición.",
+        "Solo que ambos estén escritos en el mismo idioma.",
+        "Que la corrección sea aplicable a las condiciones reales de la medida."
+      ],
+      "correcta": 2,
+      "explicacion": "El fondo y la respuesta dependen de la configuración de detección y deben ser representativos.",
+      "fuente": "CSN, procedimiento 1.5, controles de recuento y preparación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Blanco y fondo no son lo mismo.** **Fondo**: cuentas por unidad de tiempo debidas a lo que no es ni la muestra ni los reactivos. **Blanco**: cuentas de una muestra preparada **con agua desionizada o destilada siguiendo el mismo procedimiento**. En los cálculos se usa **el blanco**."
+    },
+    {
+      "id": "t29-q217",
+      "pregunta": "Un laboratorio está acreditado en ensayos químicos, pero el ensayo radiológico solicitado queda fuera de su alcance. ¿Qué debe comprobar el operador?",
+      "opciones": [
+        "La cobertura específica del método radiológico requerido por la acreditación.",
+        "Que cualquier acreditación cubre todos los ensayos del laboratorio.",
+        "Solo que exista un logotipo en el informe."
+      ],
+      "correcta": 0,
+      "explicacion": "La acreditación debe corresponder al alcance aplicable al ensayo y parámetro de interés.",
+      "fuente": "RD 3/2023, anexo III, parte B.2, acreditación de métodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**Acreditación.** Los laboratorios deben tener **acreditados por UNE-EN ISO/IEC 17025** los métodos de los parámetros del anexo I, partes A, B, C, **E** o F (anexo III, parte B.2). La radiactividad **no está exceptuada**: las exenciones son para el control operacional y el de rutina."
+    },
+    {
+      "id": "t29-q218",
+      "pregunta": "¿Por qué identificar el método y sus condiciones en el informe ayuda a comparar índices radiológicos entre laboratorios?",
+      "opciones": [
+        "Porque los índices son constantes universales del instrumento.",
+        "Porque cualquier diferencia se elimina cambiando la unidad.",
+        "Porque la preparación y referencia de calibración pueden afectar a la respuesta del índice."
+      ],
+      "correcta": 2,
+      "explicacion": "Los índices se definen mediante métodos y patrones de referencia que necesitan trazabilidad.",
+      "fuente": "RD 3/2023, anexo III, parte B.2, acreditación de métodos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "**Acreditación.** Los laboratorios deben tener **acreditados por UNE-EN ISO/IEC 17025** los métodos de los parámetros del anexo I, partes A, B, C, **E** o F (anexo III, parte B.2). La radiactividad **no está exceptuada**: las exenciones son para el control operacional y el de rutina."
+    },
+    {
+      "id": "t29-q219",
+      "pregunta": "¿Qué información de un patrón permite referir correctamente su actividad al día de uso?",
+      "opciones": [
+        "Únicamente el volumen exterior del frasco.",
+        "La actividad certificada, fecha de referencia y correcciones aplicables.",
+        "El nombre del operario que lo transportó como único dato."
+      ],
+      "correcta": 1,
+      "explicacion": "La referencia temporal y el certificado son necesarios para asignar la actividad de calibración.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, trazabilidad y control de calidad · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Los patrones, que es pregunta redonda:**"
+    },
+    {
+      "id": "t29-q220",
+      "pregunta": "Un patrón de control preparado independientemente discrepa de la calibración. ¿Qué debe investigarse?",
+      "opciones": [
+        "La preparación y validez de patrones, calibración y funcionamiento del método.",
+        "La posibilidad de eliminar el control por discrepar.",
+        "Solo si el resultado deseado cabe en el informe."
+      ],
+      "correcta": 0,
+      "explicacion": "Una discrepancia independiente puede revelar problemas de sesgo o preparación que requieren resolución.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, trazabilidad y control de calidad · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Los patrones, que es pregunta redonda:**"
+    },
+    {
+      "id": "t29-q221",
+      "pregunta": "Un cambio de lote de reactivo coincide con un aumento del blanco. ¿Qué registro facilita investigar la relación?",
+      "opciones": [
+        "Solo el número total de preguntas del tema.",
+        "La trazabilidad de lotes, fechas de preparación y series analizadas.",
+        "El color de los rótulos del laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "Los registros permiten relacionar cambios de materiales con el comportamiento analítico.",
+      "fuente": "CSN, procedimientos 1.5 y 1.18, trazabilidad y control de calidad · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Los patrones, que es pregunta redonda:**"
+    },
+    {
+      "id": "t29-q222",
+      "pregunta": "Se calcula actividad usando eficiencia, volumen y tasa neta. ¿Qué entradas pueden contribuir a la incertidumbre final?",
+      "opciones": [
+        "Ninguna si se ha usado una calculadora electrónica.",
+        "Solo los últimos decimales del resultado.",
+        "Las incertidumbres de esas entradas y las demás relevantes del modelo."
+      ],
+      "correcta": 2,
+      "explicacion": "La estimación debe considerar las contribuciones significativas del procedimiento completo.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2, y CSN, procedimiento 1.18, §8 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "2. **Las incertidumbres se calculan y comunican como incertidumbres típicas combinadas o expandidas, con un factor de expansión de 1,96**, según la Guía ISO para la expresión de la incertidumbre."
+    },
+    {
+      "id": "t29-q223",
+      "pregunta": "Un recuento tiene gran número de cuentas, pero el volumen de muestra se conoce mal. ¿Qué contribución puede seguir limitando la concentración en Bq/L?",
+      "opciones": [
+        "La incertidumbre del volumen representado.",
+        "La desaparición de toda incertidumbre al contar más.",
+        "El valor de la constante de Avogadro como única contribución."
+      ],
+      "correcta": 0,
+      "explicacion": "La estadística de recuento es una parte del modelo y no elimina errores de otras entradas.",
+      "fuente": "RD 3/2023, anexo III, tabla 14, nota 2, y CSN, procedimiento 1.18, §8 · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "2. **Las incertidumbres se calculan y comunican como incertidumbres típicas combinadas o expandidas, con un factor de expansión de 1,96**, según la Guía ISO para la expresión de la incertidumbre."
+    },
+    {
+      "id": "t29-q224",
+      "pregunta": "Se cambia la preparación de fuente para un método de agua. ¿Qué característica debe comprobarse de nuevo para el uso previsto?",
+      "opciones": [
+        "La fecha de la convocatoria de la oposición.",
+        "Solo el formato del encabezado del informe.",
+        "La eficiencia, capacidad de detección e incertidumbre afectadas por el cambio."
+      ],
+      "correcta": 2,
+      "explicacion": "La preparación forma parte del sistema de medida y puede modificar su desempeño.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, aptitud de métodos radiológicos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "### 2.7. Límites de detección, incertidumbre y calidad (RD 3/2023, anexo III, parte D.2)"
+    },
+    {
+      "id": "t29-q225",
+      "pregunta": "Un resultado está por debajo del valor paramétrico, pero se obtuvo con un método que no cumple la capacidad de detección exigida. ¿Qué problema permanece?",
+      "opciones": [
+        "La obligación de declarar cumplimiento completo por el número final.",
+        "La idoneidad analítica del método para ese control.",
+        "La imposibilidad de revisar la medida."
+      ],
+      "correcta": 1,
+      "explicacion": "El cumplimiento numérico de una muestra y la aptitud del método son evaluaciones complementarias.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, aptitud de métodos radiológicos · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "### 2.7. Límites de detección, incertidumbre y calidad (RD 3/2023, anexo III, parte D.2)"
+    },
+    {
+      "id": "t29-q226",
+      "pregunta": "Una evaluación de DI incluye solo radionucleidos artificiales y omite los naturales detectados que deben computarse. ¿Qué debe corregirse?",
+      "opciones": [
+        "La inclusión de todas las contribuciones naturales y artificiales aplicables.",
+        "El cambio de la unidad mSv a Bq sin cálculo.",
+        "La eliminación de los artificiales para dejar solo naturales."
+      ],
+      "correcta": 0,
+      "explicacion": "La definición comprende ambos orígenes, con las exclusiones expresas de la norma.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "5. **Definición de DI**, literal: *«la **dosis efectiva comprometida por un año de ingesta** debida a **todos los radionucleidos** cuya presencia se haya detectado en agua de consumo, ya sean de **origen natural o artificial**, **excluidos el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta**»*."
+    },
+    {
+      "id": "t29-q227",
+      "pregunta": "Se suma el radón a la DI pese a disponer de su control específico. ¿Qué parte de la definición debe revisarse?",
+      "opciones": [
+        "El límite de dosis del cristalino.",
+        "Las exclusiones de la dosis indicativa.",
+        "El número de estaciones automáticas del CSN."
+      ],
+      "correcta": 1,
+      "explicacion": "El radón y sus descendientes de vida corta quedan excluidos del cálculo de DI.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "5. **Definición de DI**, literal: *«la **dosis efectiva comprometida por un año de ingesta** debida a **todos los radionucleidos** cuya presencia se haya detectado en agua de consumo, ya sean de **origen natural o artificial**, **excluidos el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta**»*."
+    },
+    {
+      "id": "t29-q228",
+      "pregunta": "¿Qué periodo de consumo de agua caracteriza la incorporación considerada por la definición de DI?",
+      "opciones": [
+        "Solo la semana previa al muestreo.",
+        "Una única medición de un segundo.",
+        "Un año de ingesta."
+      ],
+      "correcta": 2,
+      "explicacion": "La definición corresponde a la dosis efectiva comprometida por un año de ingesta.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "5. **Definición de DI**, literal: *«la **dosis efectiva comprometida por un año de ingesta** debida a **todos los radionucleidos** cuya presencia se haya detectado en agua de consumo, ya sean de **origen natural o artificial**, **excluidos el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta**»*."
+    },
+    {
+      "id": "t29-q229",
+      "pregunta": "Se detecta K-40 en el agua y se incluye como radionucleido adicional de DI. ¿Qué criterio aplica?",
+      "opciones": [
+        "Debe respetarse su exclusión expresa de la DI.",
+        "Se multiplica siempre la DI por la concentración de potasio.",
+        "Se excluyen por ello todos los radionucleidos naturales."
+      ],
+      "correcta": 0,
+      "explicacion": "El K-40 se trata de forma diferenciada y no se incorpora a la DI.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, nota 5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "5. **Definición de DI**, literal: *«la **dosis efectiva comprometida por un año de ingesta** debida a **todos los radionucleidos** cuya presencia se haya detectado en agua de consumo, ya sean de **origen natural o artificial**, **excluidos el tritio, el potasio-40, el radón y los productos de desintegración del radón de vida corta**»*."
+    },
+    {
+      "id": "t29-q230",
+      "pregunta": "Los índices alfa y beta resto están bajo cribado, pero tritio supera 100 Bq/L. ¿Por qué no basta la primera condición para cerrar el control?",
+      "opciones": [
+        "Porque todos los índices pasan automáticamente a valor cero.",
+        "Porque hay que ignorar el tritio al no formar parte de la DI.",
+        "Porque se activa la investigación de radionucleidos específicos artificiales."
+      ],
+      "correcta": 2,
+      "explicacion": "El criterio de investigación incluye el tritio aunque este tenga tratamiento propio en la DI.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q231",
+      "pregunta": "Se superan índices de cribado y los naturales investigados explican sus valores, con tritio no elevado. ¿Qué prioridad de investigación establece el anexo?",
+      "opciones": [
+        "Analizar siempre exclusivamente el radón para explicar toda actividad.",
+        "Considerar primero los naturales y ampliar a artificiales si no bastan para justificar los índices.",
+        "Declarar de inmediato que se trata de un vertido artificial."
+      ],
+      "correcta": 1,
+      "explicacion": "La secuencia de investigación se basa en la explicación de los índices por las contribuciones específicas.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q232",
+      "pregunta": "Un índice alfa supera el cribado. ¿Qué información adicional permite avanzar en la evaluación de DI?",
+      "opciones": [
+        "Las concentraciones de los radionucleidos específicos pertinentes.",
+        "La masa total de la muestra sin identificar contribuciones.",
+        "Solo repetir el valor del índice en más unidades."
+      ],
+      "correcta": 0,
+      "explicacion": "Los índices globales orientan el cribado, mientras la evaluación específica determina las contribuciones necesarias.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q233",
+      "pregunta": "El tritio está por debajo de 100 Bq/L, pero el índice beta resto supera su cribado. ¿Qué evita concluir el tritio bajo?",
+      "opciones": [
+        "Que el tritio se haya medido con un método adecuado.",
+        "Que puede cerrarse toda investigación radiológica por ese único dato.",
+        "Que las unidades del beta resto sean Bq/L."
+      ],
+      "correcta": 1,
+      "explicacion": "La superación de alguno de los índices activa la secuencia específica prevista por el anexo.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q234",
+      "pregunta": "Se obtiene DI calculada de 0,08 mSv/año tras los análisis específicos. ¿Qué dispone el anexo respecto a investigaciones radiológicas adicionales por ese criterio?",
+      "opciones": [
+        "Obliga a multiplicar la DI por el valor del radón.",
+        "Las requiere siempre por ser un número distinto de cero.",
+        "No las requiere al ser DI ≤0,1 mSv/año."
+      ],
+      "correcta": 2,
+      "explicacion": "La conclusión responde al criterio establecido para la DI calculada.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q235",
+      "pregunta": "Los niveles alternativos de cribado propuestos son más altos que los ordinarios. ¿Qué debe demostrarse para que puedan establecerse?",
+      "opciones": [
+        "Que siguen cumpliendo la DI de 0,1 mSv.",
+        "Que cualquier cambio reduce necesariamente el número de análisis.",
+        "Que todos los radionucleidos son artificiales."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo permite niveles alternativos condicionados a mantener el criterio de DI.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, metodología de control de DI · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "### 2.4. La estrategia de cribado: cómo se llega a la DI (anexo VI, parte B.4)"
+    },
+    {
+      "id": "t29-q236",
+      "pregunta": "El operador concentra todos los controles en una sola situación que no representa el resto del año. ¿Qué exigencia debe revisar?",
+      "opciones": [
+        "La equivalencia entre mSv y Bq.",
+        "Solo la firma del albarán de reactivos.",
+        "La representatividad de la calidad del agua suministrada a lo largo del año."
+      ],
+      "correcta": 2,
+      "explicacion": "El plan de control debe producir valores representativos del agua suministrada durante todo el año.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q237",
+      "pregunta": "Un punto de muestreo queda aguas arriba de un tramo donde se sospecha un cambio adverso de concentración. ¿Qué debe valorarse?",
+      "opciones": [
+        "Que cualquier punto de captación representa siempre todos los tramos posteriores.",
+        "La adecuación del punto para representar el cumplimiento.",
+        "La eliminación del parámetro del plan."
+      ],
+      "correcta": 1,
+      "explicacion": "El punto elegido debe respetar la condición de que no existan razones para sospechar un cambio adverso hasta el cumplimiento.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q238",
+      "pregunta": "Varios operadores gestionan infraestructuras de la misma zona de abastecimiento. ¿Quién determina los puntos radiológicos previa consulta a los implicados?",
+      "opciones": [
+        "La autoridad sanitaria.",
+        "Cada laboratorio de forma secreta respecto a los demás.",
+        "Exclusivamente el proveedor de detectores."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo VI prevé una decisión coordinada y disponibilidad de resultados para todos los operadores afectados.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q239",
+      "pregunta": "Se han obtenido resultados radiológicos comunes a varios operadores de una zona. ¿Qué debe garantizarse?",
+      "opciones": [
+        "Que solo los conozca el laboratorio y se destruyan tras facturar.",
+        "Que estén disponibles para todos los operadores afectados.",
+        "Que se sustituyan por la media nacional de radón."
+      ],
+      "correcta": 1,
+      "explicacion": "La coordinación del control necesita que los responsables afectados dispongan de los resultados.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q240",
+      "pregunta": "El operador propone reducir la frecuencia por datos estables. ¿Qué paso requiere esa propuesta?",
+      "opciones": [
+        "El visto bueno del fabricante del contador como única autoridad.",
+        "Solo un cambio en su hoja de cálculo sin comunicarlo.",
+        "La aprobación de la autoridad sanitaria correspondiente."
+      ],
+      "correcta": 2,
+      "explicacion": "La reducción propuesta está sometida a aprobación sanitaria según el anexo VI.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q241",
+      "pregunta": "Se instala una captación nueva que puede cambiar la radiactividad suministrada. ¿Qué control adicional exige valorar el anexo VI?",
+      "opciones": [
+        "Un nuevo muestreo por el cambio de suministro.",
+        "Esperar siempre al siguiente ciclo de cinco años.",
+        "Eliminar los controles porque la captación es nueva."
+      ],
+      "correcta": 0,
+      "explicacion": "Debe muestrearse de nuevo cuando un cambio pueda influir en las concentraciones de radionucleidos.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q242",
+      "pregunta": "La autoridad sanitaria sospecha un radionucleido que no estaba en el plan ordinario. ¿Qué potestad contempla el anexo VI?",
+      "opciones": [
+        "Sustituir obligatoriamente todos los controles por pH.",
+        "Modificar su número atómico para hacerlo medible.",
+        "Disponer su control si puede estar presente y suponer riesgo."
+      ],
+      "correcta": 2,
+      "explicacion": "La autoridad puede ampliar sustancias controladas en protección de la población.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q243",
+      "pregunta": "Ante una situación radiológica, ¿qué modificación del programa puede disponer la autoridad sanitaria?",
+      "opciones": [
+        "Solo cambiar el color de los informes.",
+        "Incrementar frecuencia, cambiar puntos o modificar el protocolo de autocontrol.",
+        "Únicamente reducir siempre el número de analitos."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo VI contempla esas actuaciones para adaptar el control.",
+      "fuente": "RD 3/2023, anexo VI, parte A.2, representatividad temporal · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Los controles se harán *«de modo que se garantice que los valores obtenidos sean **representativos de la calidad del agua suministrada a lo largo de todo el año**»*."
+    },
+    {
+      "id": "t29-q244",
+      "pregunta": "Solo existen dos años de datos fiables bajo los valores de radón y tritio. ¿Basta ese periodo para la exención descrita de al menos cinco años?",
+      "opciones": [
+        "No, aún no cubre el periodo mínimo exigido.",
+        "Sí, si se imprimen dos copias de cada resultado.",
+        "Sí, porque dos y cinco son ambos periodos plurianuales."
+      ],
+      "correcta": 0,
+      "explicacion": "La exención requiere una base representativa y constancia durante un periodo no menor de cinco años.",
+      "fuente": "RD 3/2023, anexo VI, parte B.1, información para la exención · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- **La exención de los cinco años:** *«no se controlará la presencia de **radón o de tritio** ni se establecerá la **DI** cuando […] se tenga constancia de que, durante un periodo **no menor a cinco años**, los niveles […] se mantienen **por debajo de los respectivos valores paramétricos**»*."
+    },
+    {
+      "id": "t29-q245",
+      "pregunta": "Se solicita una exención radiológica usando datos de otro acuífero sin demostrar representatividad. ¿Qué falta?",
+      "opciones": [
+        "Solo que la tabla tenga más filas.",
+        "Información fiable y representativa del abastecimiento evaluado.",
+        "La equivalencia universal entre todas las captaciones."
+      ],
+      "correcta": 1,
+      "explicacion": "La norma exige que la información sustente la situación concreta de los niveles correspondientes.",
+      "fuente": "RD 3/2023, anexo VI, parte B.1, información para la exención · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- **La exención de los cinco años:** *«no se controlará la presencia de **radón o de tritio** ni se establecerá la **DI** cuando […] se tenga constancia de que, durante un periodo **no menor a cinco años**, los niveles […] se mantienen **por debajo de los respectivos valores paramétricos**»*."
+    },
+    {
+      "id": "t29-q246",
+      "pregunta": "Un agua tiene parte de su origen subterráneo y esa masa aún no está caracterizada. ¿Qué situación de control recoge el anexo VI?",
+      "opciones": [
+        "La mezcla con agua superficial elimina siempre el radón.",
+        "Solo el origen totalmente subterráneo puede motivar control.",
+        "La falta de caracterización del origen subterráneo activa la condición prevista para controlar radón."
+      ],
+      "correcta": 2,
+      "explicacion": "La norma incluye origen total o parcialmente subterráneo y masas aún no caracterizadas.",
+      "fuente": "RD 3/2023, anexo VI, parte B.2, condiciones de control de radón · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Origen del agua subterráneo** | **+ Radón** |"
+    },
+    {
+      "id": "t29-q247",
+      "pregunta": "La caracterización de una masa subterránea hace razonable pensar que radón puede superar 500 Bq/L. ¿Qué corresponde respecto al control?",
+      "opciones": [
+        "Controlarlo con la frecuencia aplicable del anexo II.",
+        "Esperar a que un consumidor mida radón en su vivienda.",
+        "Eliminarlo del plan por ser de origen natural."
+      ],
+      "correcta": 0,
+      "explicacion": "La caracterización determina la necesidad de controlar el parámetro en esas condiciones.",
+      "fuente": "RD 3/2023, anexo VI, parte B.2, condiciones de control de radón · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Origen del agua subterráneo** | **+ Radón** |"
+    },
+    {
+      "id": "t29-q248",
+      "pregunta": "Un agua superficial puede estar afectada por una fuente antropogénica de tritio según información del CSN. ¿Qué control se contempla?",
+      "opciones": [
+        "Sustitución del tritio por potasio estable.",
+        "Únicamente determinación de radón en aire.",
+        "Determinación de tritio con la frecuencia del anexo II."
+      ],
+      "correcta": 2,
+      "explicacion": "El criterio combina origen superficial y posible afectación según información del CSN.",
+      "fuente": "RD 3/2023, anexo VI, parte B.3, condiciones de control de tritio · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Origen superficial y central nuclear aguas arriba de la captación** | **+ Tritio** |"
+    },
+    {
+      "id": "t29-q249",
+      "pregunta": "El CSN detecta una superación del valor paramétrico de tritio en su vigilancia. ¿A quién la notifica inicialmente según el anexo VI?",
+      "opciones": [
+        "Solo al fabricante del contador.",
+        "Al Ministerio de Sanidad, con la información radiológica prevista.",
+        "Exclusivamente al primer consumidor que llame."
+      ],
+      "correcta": 1,
+      "explicacion": "El Ministerio traslada la información por SINAC a autoridades sanitarias y operadores afectados.",
+      "fuente": "RD 3/2023, anexo VI, parte B.3, condiciones de control de tritio · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Origen superficial y central nuclear aguas arriba de la captación** | **+ Tritio** |"
+    },
+    {
+      "id": "t29-q250",
+      "pregunta": "Se comunica una DI a SINAC sin las concentraciones específicas investigadas. ¿Qué información debe completarse?",
+      "opciones": [
+        "Los valores de los radionucleidos usados para evaluar la DI.",
+        "La lista de empleados de la planta.",
+        "Solo la marca de la balanza del laboratorio."
+      ],
+      "correcta": 0,
+      "explicacion": "La notificación de DI incluye los radionucleidos específicos investigados.",
+      "fuente": "RD 3/2023, anexo VI, parte A.9, notificación de resultados · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- **Todos los datos se notifican al SINAC**; en la DI se incluyen además **los radionucleidos específicos investigados**."
+    },
+    {
+      "id": "t29-q251",
+      "pregunta": "Una muestra corresponde a agua destinada a producir agua de consumo. ¿Qué exige el anexo VI sobre los datos de control radiológico generados?",
+      "opciones": [
+        "Excluirlos siempre por no haber finalizado el tratamiento.",
+        "Notificarlos en SINAC, como los del agua de consumo.",
+        "Comunicarlos solo al almacén de reactivos."
+      ],
+      "correcta": 1,
+      "explicacion": "La obligación incluye agua de consumo y la destinada a su producción.",
+      "fuente": "RD 3/2023, anexo VI, parte A.9, notificación de resultados · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- **Todos los datos se notifican al SINAC**; en la DI se incluyen además **los radionucleidos específicos investigados**."
+    },
+    {
+      "id": "t29-q252",
+      "pregunta": "Se detecta por primera vez una superación radiológica. ¿Qué actuación de confirmación exige el anexo?",
+      "opciones": [
+        "Esperar a la siguiente campaña anual.",
+        "Volver a imprimir el mismo resultado como única confirmación.",
+        "Tomar una nueva muestra antes de 24 horas desde el resultado."
+      ],
+      "correcta": 2,
+      "explicacion": "La confirmación requiere una muestra nueva cuando concurre esa condición.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.a, confirmación de superaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Confirmación** | Obligatoria si es **la primera vez** que se detecta, si hay **sospecha de origen artificial** o si **lo considera necesario la autoridad sanitaria**. Nueva muestra **antes de 24 horas** desde el resultado |"
+    },
+    {
+      "id": "t29-q253",
+      "pregunta": "Una superación conocida presenta ahora sospecha de origen artificial. ¿Qué condición adicional obliga a confirmarla?",
+      "opciones": [
+        "La sospecha de ese origen, aunque no sea la primera detección.",
+        "Solo que se haya cambiado de ordenador.",
+        "La existencia de una factura de calibración vencida."
+      ],
+      "correcta": 0,
+      "explicacion": "La sospecha de origen artificial es una de las condiciones expresas de confirmación.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.a, confirmación de superaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Confirmación** | Obligatoria si es **la primera vez** que se detecta, si hay **sospecha de origen artificial** o si **lo considera necesario la autoridad sanitaria**. Nueva muestra **antes de 24 horas** desde el resultado |"
+    },
+    {
+      "id": "t29-q254",
+      "pregunta": "La autoridad sanitaria considera necesaria la confirmación de una superación. ¿Qué requisito temporal aplica a la nueva muestra?",
+      "opciones": [
+        "Solo después de recibir un informe de la oposición.",
+        "Antes de cinco años.",
+        "Antes de 24 horas desde la obtención del resultado que implica superación."
+      ],
+      "correcta": 2,
+      "explicacion": "La tercera condición de confirmación mantiene el plazo de nueva toma establecido.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.a, confirmación de superaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Confirmación** | Obligatoria si es **la primera vez** que se detecta, si hay **sospecha de origen artificial** o si **lo considera necesario la autoridad sanitaria**. Nueva muestra **antes de 24 horas** desde el resultado |"
+    },
+    {
+      "id": "t29-q255",
+      "pregunta": "¿Desde qué hecho se cuenta el plazo de notificación de 24 horas a la autoridad sanitaria de una superación radiológica?",
+      "opciones": [
+        "Desde el pago de la factura del laboratorio.",
+        "Desde la obtención del resultado analítico.",
+        "Desde la siguiente reunión anual del operador."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo fija ese momento de inicio para la notificación.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.b, comunicación de superaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q256",
+      "pregunta": "La autoridad sanitaria valora la repercusión de una superación radiológica. Además del Ministerio de Sanidad, ¿a quién traslada esa valoración?",
+      "opciones": [
+        "A todos los operadores implicados.",
+        "Únicamente a una empresa de transporte sin relación con el abastecimiento.",
+        "Solo al fabricante del contador."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo dispone el traslado al Ministerio y a todos los operadores implicados para coordinar la actuación.",
+      "fuente": "RD 3/2023, anexo VI, parte C.3, traslado de la valoración sanitaria · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q257",
+      "pregunta": "La infraestructura que presenta superación suministra varias redes. ¿Qué alcance debe evaluar el operador?",
+      "opciones": [
+        "Solo la red cuyo nombre aparece primero en el informe.",
+        "La incidencia en cada red alimentada por esa procedencia.",
+        "Ninguna red si el laboratorio ya emitió un resultado."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo exige evaluar las redes afectadas y realizar controles cuando proceda hasta normalizar el valor.",
+      "fuente": "RD 3/2023, anexo VI, parte C.2–C.4, evaluación y actuaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q258",
+      "pregunta": "¿Quién valora la repercusión sanitaria de la superación y la posible restricción o prohibición de suministro?",
+      "opciones": [
+        "La empresa de mensajería de las muestras.",
+        "El fabricante de la plancheta como única autoridad.",
+        "La autoridad sanitaria."
+      ],
+      "correcta": 2,
+      "explicacion": "La autoridad evalúa importancia, riesgo, recomendaciones y posibles medidas de protección.",
+      "fuente": "RD 3/2023, anexo VI, parte C.2–C.4, evaluación y actuaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q259",
+      "pregunta": "Se detecta una superación radiológica. ¿Qué investigación inicial corresponde al operador?",
+      "opciones": [
+        "Investigar inmediatamente su posible origen y motivo.",
+        "Esperar sin actuación a una nueva convocatoria de oposición.",
+        "Cambiar el número del parámetro sin analizar la causa."
+      ],
+      "correcta": 0,
+      "explicacion": "La investigación del operador se integra con la valoración y medidas sanitarias previstas.",
+      "fuente": "RD 3/2023, anexo VI, parte C.2–C.4, evaluación y actuaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q260",
+      "pregunta": "Se adoptan medidas correctoras para una incidencia radiológica. ¿Qué comprobación debe realizarse sobre esas medidas?",
+      "opciones": [
+        "Sustituir todos los análisis por un control de color.",
+        "Presuponer su éxito por haberlas anunciado.",
+        "Evaluar su efectividad."
+      ],
+      "correcta": 2,
+      "explicacion": "La actuación requiere comprobar que las medidas reducen o eliminan el problema según la evaluación correspondiente.",
+      "fuente": "RD 3/2023, anexo VI, parte C.2–C.4, evaluación y actuaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q261",
+      "pregunta": "¿Qué contenido debe comunicar el operador a la población afectada por la incidencia radiológica, considerando la valoración sanitaria?",
+      "opciones": [
+        "Solo la marca del detector utilizado.",
+        "Riesgo, medidas adoptadas y recomendaciones cuando procedan.",
+        "Únicamente el número de factura del análisis."
+      ],
+      "correcta": 1,
+      "explicacion": "La información debe permitir a la población conocer las medidas y recomendaciones de protección aplicables.",
+      "fuente": "RD 3/2023, anexo VI, parte C.6, información a población afectada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Comunicación a la población** | Riesgo, medidas y recomendaciones, **antes de 24 horas** desde que se conocen |"
+    },
+    {
+      "id": "t29-q262",
+      "pregunta": "¿Qué plazo máximo de referencia recoge el anexo para comunicar a la población las medidas y riesgo conocidos?",
+      "opciones": [
+        "Antes de 24 horas tras tener conocimiento de ellos.",
+        "Solo en la memoria anual del operador.",
+        "Al terminar cinco años de seguimiento."
+      ],
+      "correcta": 0,
+      "explicacion": "La comunicación a población tiene un plazo específico ligado al conocimiento de esa información.",
+      "fuente": "RD 3/2023, anexo VI, parte C.6, información a población afectada · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Comunicación a la población** | Riesgo, medidas y recomendaciones, **antes de 24 horas** desde que se conocen |"
+    },
+    {
+      "id": "t29-q263",
+      "pregunta": "Tras aplicar medidas, ¿cómo se verifica la situación de normalidad según el anexo?",
+      "opciones": [
+        "Solo retirando la etiqueta de incidencia del fichero.",
+        "Mediante una nueva toma de muestras.",
+        "Dando por buena la intención de corregir."
+      ],
+      "correcta": 1,
+      "explicacion": "La normalización requiere comprobación analítica mediante nuevo muestreo.",
+      "fuente": "RD 3/2023, anexo VI, parte C.7–C.8, verificación y comunicación · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Vuelta a la normalidad** | Nueva toma de muestras para verificarla y comunicación **en 24 horas** desde los resultados |"
+    },
+    {
+      "id": "t29-q264",
+      "pregunta": "Una vez verificada la normalidad, ¿a quién debe informarse en 24 horas desde los resultados?",
+      "opciones": [
+        "Únicamente al archivo interno, sin comunicación externa.",
+        "Solo al proveedor de ácido nítrico.",
+        "A la autoridad sanitaria y a la población afectada."
+      ],
+      "correcta": 2,
+      "explicacion": "El anexo establece ambos destinatarios al cerrarse la situación verificada.",
+      "fuente": "RD 3/2023, anexo VI, parte C.7–C.8, verificación y comunicación · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Vuelta a la normalidad** | Nueva toma de muestras para verificarla y comunicación **en 24 horas** desde los resultados |"
+    },
+    {
+      "id": "t29-q265",
+      "pregunta": "¿Qué comunicación del anexo VI queda exceptuada de considerar cumplida la obligación por el mero uso de SINAC?",
+      "opciones": [
+        "La dirigida a la población.",
+        "La notificación interna entre los órganos sanitarios prevista.",
+        "La comunicación administrativa que el anexo sí permite por SINAC."
+      ],
+      "correcta": 0,
+      "explicacion": "El apartado C.8 mantiene la información a población como obligación específica.",
+      "fuente": "RD 3/2023, anexo VI, parte C.7–C.8, verificación y comunicación · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Vuelta a la normalidad** | Nueva toma de muestras para verificarla y comunicación **en 24 horas** desde los resultados |"
+    },
+    {
+      "id": "t29-q266",
+      "pregunta": "Solo contribuye Ra-226 a la evaluación específica y su concentración es 0,25 Bq/L, con concentración derivada de 0,5 Bq/L. ¿Qué cociente aporta?",
+      "opciones": [
+        "0,125.",
+        "2.",
+        "0,5."
+      ],
+      "correcta": 2,
+      "explicacion": "La contribución normalizada es concentración medida dividida por concentración derivada.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q267",
+      "pregunta": "Las contribuciones normalizadas de los radionucleidos computables son 0,2, 0,3 y 0,1. ¿Qué suma debe compararse con uno?",
+      "opciones": [
+        "0,06.",
+        "0,6.",
+        "1,6."
+      ],
+      "correcta": 1,
+      "explicacion": "El criterio utiliza la suma de cocientes, que aquí es 0,2+0,3+0,1.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q268",
+      "pregunta": "Se obtienen cocientes de 0,7 y 0,6 para dos radionucleidos computables. ¿Cumplen juntos el criterio Σ≤1?",
+      "opciones": [
+        "No, suman 1,3.",
+        "Sí, porque solo se considera el cociente mayor.",
+        "Sí, porque cada cociente por separado es menor que uno."
+      ],
+      "correcta": 0,
+      "explicacion": "La evaluación se hace sobre la suma de las contribuciones, no únicamente sobre cada término aislado.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q269",
+      "pregunta": "La suma de cocientes es exactamente 1. ¿Qué evaluación corresponde al criterio Σ≤1 de la tabla de concentraciones derivadas?",
+      "opciones": [
+        "Lo incumple porque se exige siempre Σ<1.",
+        "Cumple ese criterio.",
+        "No puede evaluarse al ser adimensional."
+      ],
+      "correcta": 1,
+      "explicacion": "El criterio incluye la igualdad.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q270",
+      "pregunta": "Se suman directamente concentraciones en Bq/L de distintos radionucleidos y se comparan con el número uno del criterio. ¿Qué operación falta?",
+      "opciones": [
+        "Restar el número atómico de cada radionucleido.",
+        "Multiplicar todos los valores por la masa del frasco.",
+        "Dividir cada concentración por su concentración derivada antes de sumar."
+      ],
+      "correcta": 2,
+      "explicacion": "El criterio está formado por cocientes adimensionales de contribución radiológica.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q271",
+      "pregunta": "Para igual concentración de 0,10 Bq/L, U-238 tiene concentración derivada de 3,0 y Po-210 de 0,1 Bq/L. ¿Cuál aporta mayor cociente a la DI?",
+      "opciones": [
+        "Po-210.",
+        "U-238.",
+        "Ambos aportan igual por tener la misma concentración."
+      ],
+      "correcta": 0,
+      "explicacion": "La normalización por concentraciones derivadas distintas produce contribuciones distintas.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q272",
+      "pregunta": "¿Qué información anual se presupone al usar las concentraciones derivadas de la tabla 6 del RD 3/2023?",
+      "opciones": [
+        "El caudal diario total de la ETAP como dosis individual.",
+        "Una ingesta universal de 730 L cada día.",
+        "La ingesta de referencia de 730 L al año."
+      ],
+      "correcta": 2,
+      "explicacion": "Las concentraciones derivadas se calculan para el consumo de referencia definido por la norma.",
+      "fuente": "RD 3/2023, anexo I, parte E.2, comparación con concentraciones derivadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q273",
+      "pregunta": "Alfa = 0,10 Bq/L, beta resto = 1,20 Bq/L y tritio = 30 Bq/L. ¿Qué dato activa la investigación específica de este caso?",
+      "opciones": [
+        "El alfa, por ser igual a su cribado.",
+        "La superación de beta resto, con investigación de naturales en primer lugar.",
+        "El tritio, por superar su valor paramétrico."
+      ],
+      "correcta": 1,
+      "explicacion": "El alfa está en el límite inclusivo y el tritio por debajo de 100. El índice beta resto supera 1,0.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, aplicación de la secuencia de cribado · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Caso | Alfa total | Beta resto | Tritio | Qué hay que hacer |"
+    },
+    {
+      "id": "t29-q274",
+      "pregunta": "Alfa = 0,08 Bq/L, beta resto = 0,90 Bq/L y tritio = 150 Bq/L. ¿Qué grupo específico investiga el anexo en esta combinación?",
+      "opciones": [
+        "Radionucleidos artificiales.",
+        "Solo la actividad del radón en aire.",
+        "Solo potasio estable."
+      ],
+      "correcta": 0,
+      "explicacion": "Los índices no superan cribado y el tritio supera 100 Bq/L.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, aplicación de la secuencia de cribado · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Caso | Alfa total | Beta resto | Tritio | Qué hay que hacer |"
+    },
+    {
+      "id": "t29-q275",
+      "pregunta": "Alfa = 0,20 Bq/L, beta resto = 0,60 Bq/L y tritio = 150 Bq/L. ¿Qué investigación específica corresponde?",
+      "opciones": [
+        "Exclusivamente naturales porque beta resto está bajo uno.",
+        "Naturales y artificiales.",
+        "Ninguna porque no se superan ambos índices a la vez."
+      ],
+      "correcta": 1,
+      "explicacion": "Basta la superación de alfa o beta resto, junto con tritio elevado, para aplicar esa rama.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, aplicación de la secuencia de cribado · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Caso | Alfa total | Beta resto | Tritio | Qué hay que hacer |"
+    },
+    {
+      "id": "t29-q276",
+      "pregunta": "Se investigan radionucleidos naturales por exceso de alfa, pero sus contribuciones no justifican el índice y tritio es bajo. ¿Cuál es el siguiente grupo de la secuencia?",
+      "opciones": [
+        "Ningún grupo, porque el origen natural se presume siempre.",
+        "Solo repetir indefinidamente la conductividad.",
+        "Los radionucleidos artificiales pertinentes."
+      ],
+      "correcta": 2,
+      "explicacion": "La secuencia continúa con artificiales cuando los naturales no justifican por sí solos los índices.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, aplicación de la secuencia de cribado · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Caso | Alfa total | Beta resto | Tritio | Qué hay que hacer |"
+    },
+    {
+      "id": "t29-q277",
+      "pregunta": "Un alumno exige que alfa y beta resto superen simultáneamente sus cribados para analizar especies. ¿Qué operador lógico usa realmente la segunda rama?",
+      "opciones": [
+        "«O», basta superar uno de los dos índices en las condiciones indicadas.",
+        "«Y», ambos deben superar siempre sus cribados.",
+        "Una media aritmética de los dos números sin unidades."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo diferencia las ramas usando superación de alfa o de beta resto.",
+      "fuente": "RD 3/2023, anexo VI, parte B.4, aplicación de la secuencia de cribado · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Caso | Alfa total | Beta resto | Tritio | Qué hay que hacer |"
+    },
+    {
+      "id": "t29-q278",
+      "pregunta": "Un resultado de radón de 400 Bq/L queda por debajo de 500 Bq/L. ¿Qué orientación mantiene la nota del parámetro?",
+      "opciones": [
+        "Aplicar el valor de 300 Bq/m³ como si fuera el límite de agua.",
+        "Considerar prohibida cualquier mejora del abastecimiento.",
+        "Seguir optimizando la protección frente al radón."
+      ],
+      "correcta": 2,
+      "explicacion": "La nota indica que por debajo de 500 las actuaciones continúan orientadas a optimizar la protección.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, notas del radón · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. Por debajo de 500 Bq/L de radón, las actuaciones del operador **siguen orientadas a optimizar** la protección."
+    },
+    {
+      "id": "t29-q279",
+      "pregunta": "Un resultado de radón de 1.200 Bq/L confirma la situación que prevé el anexo VI. ¿Qué dato determina la exigencia específica de evitar suministro en esas condiciones?",
+      "opciones": [
+        "La suma de radón y tritio sin unidades.",
+        "La superación de 1.000 Bq/L.",
+        "Que el agua se haya medido en un frasco de vidrio."
+      ],
+      "correcta": 1,
+      "explicacion": "La norma establece medidas correctoras en todo caso al superar 1.000 Bq/L de radón.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 5, notas del radón · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. Por debajo de 500 Bq/L de radón, las actuaciones del operador **siguen orientadas a optimizar** la protección."
+    },
+    {
+      "id": "t29-q280",
+      "pregunta": "Para el supuesto de tipo 4, se aplica una muestra por los primeros 1.000 m³/día y otra por cada 3.300 adicionales o fracción. Con 5.000 m³/día, ¿cuántas resultan?",
+      "opciones": [
+        "Tres.",
+        "Cinco.",
+        "Dos."
+      ],
+      "correcta": 0,
+      "explicacion": "Quedan 4.000 m³/día adicionales, que ocupan dos tramos o fracciones de 3.300. Se suma la muestra inicial.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8, frecuencia del control de radiactividad · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Tipo 4** (> 1 000 y < 10 000 m³) | **1 por los primeros 1 000 m³ + 1 por cada 3 300 m³ adicionales** o fracción |"
+    },
+    {
+      "id": "t29-q281",
+      "pregunta": "En esa fórmula de tipo 4, ¿por qué un tramo adicional incompleto cuenta para la frecuencia?",
+      "opciones": [
+        "Porque debe redondearse siempre hacia abajo.",
+        "Porque el texto incluye «o fracción».",
+        "Porque toda zona de tipo 4 solo puede muestrearse una vez."
+      ],
+      "correcta": 1,
+      "explicacion": "La fracción de tramo genera una muestra adicional conforme a la regla.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8, frecuencia del control de radiactividad · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Tipo 4** (> 1 000 y < 10 000 m³) | **1 por los primeros 1 000 m³ + 1 por cada 3 300 m³ adicionales** o fracción |"
+    },
+    {
+      "id": "t29-q282",
+      "pregunta": "Una zona clasificada como tipo 1 prepara su programa de radiactividad. ¿Qué criterio de frecuencia recoge la tabla del tema?",
+      "opciones": [
+        "Un control cada hora sin decisión sanitaria.",
+        "La exención automática permanente.",
+        "El que establezca la autoridad sanitaria."
+      ],
+      "correcta": 2,
+      "explicacion": "Para ese tipo la tabla remite al criterio de la autoridad sanitaria.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8, frecuencia del control de radiactividad · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Tipo 4** (> 1 000 y < 10 000 m³) | **1 por los primeros 1 000 m³ + 1 por cada 3 300 m³ adicionales** o fracción |"
+    },
+    {
+      "id": "t29-q283",
+      "pregunta": "Una zona aplica tratamiento específico para reducir un radionucleido y propone espaciar controles por haber bajado los resultados. ¿Qué restricción debe considerar?",
+      "opciones": [
+        "No puede aplicar la reducción de frecuencia prevista mientras se da ese tratamiento específico.",
+        "Debe suprimir los controles en cuanto baje una muestra.",
+        "Solo importa si el tratamiento usa productos orgánicos."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo VI excluye la reducción de frecuencia en esa situación.",
+      "fuente": "RD 3/2023, anexo II, parte C, tabla 8, frecuencia del control de radiactividad · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "| **Tipo 4** (> 1 000 y < 10 000 m³) | **1 por los primeros 1 000 m³ + 1 por cada 3 300 m³ adicionales** o fracción |"
+    },
+    {
+      "id": "t29-q284",
+      "pregunta": "Se obtiene una primera superación a las 10:00 del lunes. ¿Cómo debe planificarse la nueva toma de confirmación según «antes de 24 horas»?",
+      "opciones": [
+        "Cuando cierre el ejercicio económico.",
+        "En cualquier momento del miércoles.",
+        "Antes de las 10:00 del martes."
+      ],
+      "correcta": 2,
+      "explicacion": "El plazo se cuenta desde el resultado que implica la superación.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.a, plazo de confirmación · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Confirmación** | Obligatoria si es **la primera vez** que se detecta, si hay **sospecha de origen artificial** o si **lo considera necesario la autoridad sanitaria**. Nueva muestra **antes de 24 horas** desde el resultado |"
+    },
+    {
+      "id": "t29-q285",
+      "pregunta": "La nueva muestra para confirmar una primera superación se toma a las 30 horas. ¿Qué requisito temporal incumple?",
+      "opciones": [
+        "Un requisito universal de esperar al menos 48 horas.",
+        "La toma antes de las 24 horas desde el resultado.",
+        "El periodo de cinco años de exención como plazo de confirmación."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo establece un plazo mucho más corto para la nueva toma.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.a, plazo de confirmación · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Confirmación** | Obligatoria si es **la primera vez** que se detecta, si hay **sospecha de origen artificial** o si **lo considera necesario la autoridad sanitaria**. Nueva muestra **antes de 24 horas** desde el resultado |"
+    },
+    {
+      "id": "t29-q286",
+      "pregunta": "Un operador notifica la superación a la autoridad sanitaria y considera con ello informada la población. ¿Qué obligación distinta debe atender?",
+      "opciones": [
+        "La comunicación a la población de riesgo, medidas y recomendaciones que procedan.",
+        "Ninguna, toda notificación administrativa informa automáticamente a cada consumidor.",
+        "Solo cambiar el nombre del archivo del análisis."
+      ],
+      "correcta": 0,
+      "explicacion": "El anexo establece destinatarios y contenidos distintos para la notificación administrativa y la comunicación pública.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.b y C.6, destinatarios de comunicaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q287",
+      "pregunta": "Un registro interno documenta las medidas correctoras, pero no se informa a otros operadores implicados. ¿Qué coordinación falta?",
+      "opciones": [
+        "Comunicarles solo la marca del recipiente de muestra.",
+        "Trasladarles la información prevista sobre incidencia y actuaciones.",
+        "Pedirles que borren sus controles previos."
+      ],
+      "correcta": 1,
+      "explicacion": "La incidencia puede afectar a redes e infraestructuras gestionadas por varias entidades y exige coordinación.",
+      "fuente": "RD 3/2023, anexo VI, parte C.1.b y C.6, destinatarios de comunicaciones · apunte §2.9",
+      "apartado": "2.9",
+      "evidencia": "| **Notificación** | A la autoridad sanitaria **en 24 horas**; ella al Ministerio de Sanidad. Si hay **sospecha de origen artificial**, el Ministerio puede pedir al **CSN la investigación inmediata** |"
+    },
+    {
+      "id": "t29-q288",
+      "pregunta": "Se diseña vigilancia alrededor de una instalación nuclear concreta. ¿Qué tipo de programa del CSN se relaciona con ese entorno?",
+      "opciones": [
+        "Solo el control de grifo de un edificio sin vínculo con la instalación.",
+        "Una tabla de corrección Brix.",
+        "PVRA."
+      ],
+      "correcta": 2,
+      "explicacion": "Los programas ambientales de las instalaciones se diferencian de la vigilancia nacional no asociada a instalaciones.",
+      "fuente": "CSN, Sistema de vigilancia ambiental en España, programas de vigilancia radiológica · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| **PVRA** | Vigilancia radiológica **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia |"
+    },
+    {
+      "id": "t29-q289",
+      "pregunta": "Un plan de muestreo pertenece a vigilancia nacional no vinculada a una instalación específica. ¿Con qué programa se corresponde?",
+      "opciones": [
+        "REVIRA.",
+        "Solo el programa de calibración de una ETAP.",
+        "El examen clínico individual de un trabajador."
+      ],
+      "correcta": 0,
+      "explicacion": "REVIRA integra redes nacionales de muestreo y estaciones automáticas.",
+      "fuente": "CSN, Sistema de vigilancia ambiental en España, programas de vigilancia radiológica · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| **PVRA** | Vigilancia radiológica **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia |"
+    },
+    {
+      "id": "t29-q290",
+      "pregunta": "Se consulta una estación que registra radiación ambiental de modo continuo y transmite datos. ¿Qué red del CSN describe ese carácter automático?",
+      "opciones": [
+        "Una tabla de concentraciones derivadas.",
+        "REM entendida como muestras que siempre se recogen manualmente.",
+        "REA."
+      ],
+      "correcta": 2,
+      "explicacion": "La REA corresponde a estaciones automáticas dentro de la vigilancia ambiental.",
+      "fuente": "CSN, Sistema de vigilancia ambiental en España, programas de vigilancia radiológica · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| **PVRA** | Vigilancia radiológica **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia |"
+    },
+    {
+      "id": "t29-q291",
+      "pregunta": "Un programa recoge muestras ambientales para analizarlas en laboratorio. ¿Qué red nacional del CSN identifica el muestreo?",
+      "opciones": [
+        "Una red de distribución de agua potable por su solo nombre.",
+        "REM.",
+        "El contador proporcional de un único laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "La REM es la Red de Estaciones de Muestreo y forma parte de REVIRA.",
+      "fuente": "CSN, Sistema de vigilancia ambiental en España, programas de vigilancia radiológica · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| **PVRA** | Vigilancia radiológica **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia |"
+    },
+    {
+      "id": "t29-q292",
+      "pregunta": "¿Qué centro del CSN recibe información de vigilancia en el contexto de emergencias citado en el tema?",
+      "opciones": [
+        "La Sala de Emergencias, SALEM.",
+        "Solo el aula municipal donde se realiza la oposición.",
+        "El mostrador de facturación del proveedor."
+      ],
+      "correcta": 0,
+      "explicacion": "La SALEM integra información relevante para el seguimiento radiológico y la respuesta.",
+      "fuente": "CSN, Sistema de vigilancia ambiental en España, programas de vigilancia radiológica · apunte §2.10",
+      "apartado": "2.10",
+      "evidencia": "| **PVRA** | Vigilancia radiológica **en el entorno de las centrales nucleares** e instalaciones del ciclo del combustible. Más densidad de puntos y más frecuencia |"
+    },
+    {
+      "id": "t29-q293",
+      "pregunta": "En el método LSC descrito se reconoce un pico asociado a Po-214. ¿Qué presencia puede ayudar a poner de manifiesto según el procedimiento?",
+      "opciones": [
+        "K-40 como única explicación posible.",
+        "Ra-226 a través de ese descendiente.",
+        "La certeza de un vertido de cesio-137."
+      ],
+      "correcta": 1,
+      "explicacion": "La información espectral del método aporta indicios sobre el radio a través de su descendencia, dentro de las condiciones del procedimiento.",
+      "fuente": "CSN, procedimiento 1.18, información espectral y presencia de Ra-226 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Ventaja propia:** como el LSC da **espectro**, permite **detectar la presencia de Ra-226 identificando el pico de su descendiente Po-214**, cosa que un contador proporcional no puede."
+    },
+    {
+      "id": "t29-q294",
+      "pregunta": "Se prepara un blanco con una relación cóctel/muestra distinta de la de las muestras. ¿Qué debe comprobarse al usarlo como referencia?",
+      "opciones": [
+        "La equivalencia automática de cualquier vial que no lleve actividad añadida.",
+        "Solo la fecha de impresión de la etiqueta.",
+        "La comparabilidad de extinción, eficiencia y condiciones de preparación."
+      ],
+      "correcta": 2,
+      "explicacion": "El blanco debe representar el sistema de preparación y recuento de la muestra.",
+      "fuente": "CSN, procedimiento 1.18, §5.2, comparabilidad de medios · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Quenching (extinción):** es *«un parámetro a tener muy en cuenta»*. Para neutralizarlo, **el medio (pH y ácido) y la relación cóctel/muestra deben ser los mismos en patrones, muestras y blancos**."
+    },
+    {
+      "id": "t29-q295",
+      "pregunta": "Se dispone de un recuento global y se necesita conocer qué emisor gamma está presente. ¿Qué capacidad adicional debe buscar el método?",
+      "opciones": [
+        "Resolución en energía y criterios de identificación de fotopicos.",
+        "Solo un número mayor de cuentas sin información energética.",
+        "Un cambio de la unidad a Gy para identificar automáticamente."
+      ],
+      "correcta": 0,
+      "explicacion": "La espectrometría aporta la información energética necesaria para identificar contribuciones específicas.",
+      "fuente": "CSN, tema 5 de Vigilancia Radiológica Ambiental, elección de detectores · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "| **Semiconductores** | **Silicio** para alfa; **germanio hiperpuro (HPGe)** para gamma | Espectrometría alfa y gamma | **Alta resolución en energía**: es lo que permite **identificar** nucleido a nucleido |"
+    },
+    {
+      "id": "t29-q296",
+      "pregunta": "Un laboratorio informa radón con LD expresado en Bq por muestra y el requisito está en Bq/L. ¿Qué falta para compararlos?",
+      "opciones": [
+        "Sumar diez al número del resultado.",
+        "Cambiar solo la palabra «muestra» por «litro».",
+        "Relacionar el LD con el volumen de agua representado."
+      ],
+      "correcta": 2,
+      "explicacion": "La capacidad de detección debe expresarse en la magnitud y base volumétrica del requisito.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, niveles de detección · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
+    },
+    {
+      "id": "t29-q297",
+      "pregunta": "El residuo seco y la eficiencia pertenecen a dos geometrías diferentes en la hoja de cálculo. ¿Qué coherencia debe restablecerse?",
+      "opciones": [
+        "Solo que las celdas tengan el mismo color.",
+        "Que masa por superficie y eficiencia correspondan a la fuente realmente medida.",
+        "Que toda eficiencia se sustituya por uno."
+      ],
+      "correcta": 1,
+      "explicacion": "Las correcciones deben representar la preparación y geometría efectivas del ensayo.",
+      "fuente": "CSN, procedimiento 1.5, preparación y corrección de autoabsorción · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Espesor másico (EM)**: masa de residuo seco por unidad de superficie de la plancheta, en **mg/cm²**. De él depende todo lo demás."
+    },
+    {
+      "id": "t29-q298",
+      "pregunta": "La proporción de dos captaciones cambia de manera importante y puede alterar radionucleidos. ¿Qué información requiere actualizar el control?",
+      "opciones": [
+        "La representatividad del muestreo respecto a la nueva mezcla suministrada.",
+        "La suposición de que la actividad se conserva siempre por litro de cualquier mezcla.",
+        "Solo el nombre administrativo de la planta."
+      ],
+      "correcta": 0,
+      "explicacion": "El cambio de suministro puede modificar las concentraciones y obliga a valorar un nuevo muestreo.",
+      "fuente": "RD 3/2023, anexo VI, parte A.6, nuevo muestreo ante cambios · apunte §2.8",
+      "apartado": "2.8",
+      "evidencia": "- Hay que **volver a muestrear** siempre que se produzca **un cambio en el suministro** que pueda influir en las concentraciones."
+    },
+    {
+      "id": "t29-q299",
+      "pregunta": "El agua cumple la evaluación radiológica del uranio. ¿Qué otro aspecto de ese elemento debe seguir evaluándose en su parámetro correspondiente?",
+      "opciones": [
+        "La rotación óptica obligatoria de todo ion de uranio.",
+        "Su toxicidad química.",
+        "La conversión de uranio estable en potasio."
+      ],
+      "correcta": 1,
+      "explicacion": "Las concentraciones derivadas de la tabla radiológica consideran propiedades radiológicas y no sustituyen la valoración química.",
+      "fuente": "RD 3/2023, anexo I, parte E, tabla 6, nota del uranio · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se cumple la DI —y no hace falta investigar más— cuando **Σ (C_medida / C_derivada) ≤ 1**. La tabla *«tiene en cuenta **solo las propiedades radiológicas del uranio, no su toxicidad química**»*: el uranio, como metal tóxico, es parámetro aparte (tema 33)."
+    },
+    {
+      "id": "t29-q300",
+      "pregunta": "Se recibe una concentración de actividad sin método, LD ni incertidumbre. ¿Qué debe solicitarse para valorar su alcance analítico?",
+      "opciones": [
+        "Un redondeo automático al entero más próximo.",
+        "Solo una impresión en papel más grueso.",
+        "La información de desempeño y trazabilidad correspondiente al resultado."
+      ],
+      "correcta": 2,
+      "explicacion": "La interpretación necesita conocer cómo se obtuvo la medida y sus características relevantes.",
+      "fuente": "RD 3/2023, anexo III, parte D.2, y CSN, procedimiento 1.5, calidad del resultado · apunte §2.7",
+      "apartado": "2.7",
+      "evidencia": "El RD **no impone método**: impone **capacidad de detección**. *«Para los parámetros y radionucleidos, el método de análisis utilizado debe ser capaz, como mínimo, de medir las concentraciones de actividad con el límite de detección»* de la **tabla 14**:"
     }
   ],
   "supuestos": [

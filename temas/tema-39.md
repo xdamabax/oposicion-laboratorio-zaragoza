@@ -30,7 +30,7 @@ fuentes:
 > | **1322, segundo ejercicio, supuesto 1, #3** | Con la recta del enunciado —**1 mg/l → 0,05; 2 → 0,10; 5 → 0,24; 10 → 0,50** de absorbancia—: *«¿Cual será el valor de R2 de la recta de calibrado del enunciado?»* — a) 0,999 · b) 0,009 · c) −0,099 · d) −0,990 | **a) 0,999** |
 > | **1322, segundo ejercicio, supuesto 1, #7** | *«En una muestra, se realiza una adición de patrón interno de 5 mg/l, obteniéndose una absorbancia total de 0,50. ¿Cuál es la concentración del analito presente en la muestra según la recta de calibrado del enunciado?»* — a) 1 mg/l · b) 5 mg/l · c) 10 mg/l · d) 15 mg/l | **b) 5 mg/l**, según la plantilla provisional. **El tribunal ANULÓ esta pregunta en la plantilla definitiva** |
 >
-> Las dos del 1322 **se resuelven con la misma recta**, y están calculadas en el apartado 2.4. La del R² es una pregunta trampa: **R² no puede ser negativo** (es un cuadrado), así que la c) y la d) se descartan sin calcular, y la b) supondría que no hay relación ninguna.
+> Las dos del 1322 **se resuelven con la misma recta**, y están calculadas en el apartado 2.4. La del R² es una pregunta trampa: **En este ajuste lineal ordinario con intercepto, R²=r² y los negativos no corresponden**; no se generaliza a toda salida estadística llamada R², así que la c) y la d) se descartan sin calcular, y la b) supondría que no hay relación ninguna.
 >
 > **Cómo se leyeron.** La #48 y la #7 salen del PDF con el texto revuelto y **no estaban localizadas** en el análisis de exámenes. Se han leído **renderizando las páginas** con pdf.js en un navegador, y así se ha visto también que la **1246 #47** —tres dianas dibujadas, «exactos pero no precisos»— es del tema 38, donde se ha añadido.
 
@@ -80,6 +80,8 @@ La ISO/IEC 17025:2017 llama a esto **«aseguramiento de la validez de los result
 
 ### 2.1. Patrones
 
+**Ampliación fisicoquímica: función y preparación de patrones.** La clasificación primario/secundario describe cómo se establece el valor; referencia/trabajo, su función en una organización. Un patrón de trabajo no es por definición impuro ni uno nacional es necesariamente primario. La sustancia patrón químico debe ser adecuada al uso, con composición, pureza, estabilidad y forma química conocidas. No todo reactivo de alta pureza es patrón primario ni toda volumetría o gravimetría cumple automáticamente los requisitos de procedimiento primario. Balanzas, material volumétrico, pureza, masa molar y condiciones de preparación contribuyen a la concentración y su incertidumbre: no necesitar curva instrumental no significa ausencia de calibración o trazabilidad. En el modelo sencillo c=m·P/V, P es fracción de pureza; para cantidad de sustancia se incorpora la masa molar. Se identifican lote, preparación, factores de dilución, responsable, conservación y periodo de uso adecuado. La evaporación del disolvente puede concentrar una disolución aunque el analito no se degrade; adsorción o precipitación pueden disminuir la fracción medida. Una disolución secundaria factoriza su concentración frente a referencia pertinente, sin que el nominal escrito en el frasco sea por sí solo evidencia de valor exacto. Fuente: VIM 2.39–2.43 y 5.1–5.7; Eurachem/CITAC Trazabilidad 2019 §6/7.5; balances originales.
+
 #### Qué es un patrón
 
 > **Patrón de medida (VIM 5.1):** *«realización de la definición de una magnitud dada, con un valor determinado y una incertidumbre de medida asociada, tomada como referencia»*.
@@ -108,9 +110,11 @@ El examen puede jugar con esto, porque la palabra tiene **un sentido metrológic
 - En el **VIM**, un patrón primario es el que se establece por un **procedimiento primario**. Su **ejemplo 1** es precisamente el químico: *«patrón primario de concentración de cantidad de sustancia preparado disolviendo una cantidad de sustancia conocida de un compuesto químico en un volumen conocido de solución»*.
 - En **química analítica**, un patrón primario es una **sustancia** de pureza tan alta que su disolución se prepara **por pesada directa**, sin valorarla contra nada: **ftalato ácido de potasio, carbonato sódico, dicromato potásico, óxido de arsénico(III), EDTA disódico**. Sus requisitos —**pureza elevada y conocida, estabilidad (no higroscópico, no absorbe CO₂), masa molar alta y solubilidad**— y el caso del **NaOH**, que no lo es y hay que **factorizar**, están desarrollados en el **tema 22**.
 
-Lo que une los dos sentidos es el **método primario**: *«un método que tiene las cualidades metrológicas más altas, cuyo funcionamiento puede describirse y entenderse por completo, y para el cual puede escribirse una declaración completa de incertidumbre en unidades del SI»*. Entre los que la guía Eurachem de materiales de referencia identifica como potencialmente primarios están la **gravimetría**, la **valoración (titrimetría)**, la **culombimetría** y la **espectrometría de masas por dilución isotópica** (EEE/RM/062, definiciones). **La gravimetría (tema 21) y la volumetría (tema 22) son métodos primarios**: por eso no necesitan recta de calibrado.
+Lo que une los dos sentidos es el **método primario**: *«un método que tiene las cualidades metrológicas más altas, cuyo funcionamiento puede describirse y entenderse por completo, y para el cual puede escribirse una declaración completa de incertidumbre en unidades del SI»*. Entre los que la guía Eurachem de materiales de referencia identifica como potencialmente primarios están la **gravimetría**, la **valoración (titrimetría)**, la **culombimetría** y la **espectrometría de masas por dilución isotópica** (EEE/RM/062, definiciones). La gravimetría y volumetría **pueden fundamentar procedimientos primarios si cumplen los requisitos metrológicos**. No usar una recta instrumental no elimina calibración, trazabilidad e incertidumbre de entradas.
 
 ### 2.2. Materiales de referencia
+
+**Ampliación fisicoquímica: certificado, lote y aptitud de un MR.** Homogeneidad y estabilidad se refieren a propiedades especificadas y condiciones de uso, no a igualdad absoluta de todo componente en cualquier escala. Se respeta cantidad mínima de porción, preparación, conservación y periodo de validez declarados; una porción menor que la estudiada puede no conservar la homogeneidad asegurada. Abrir, diluir o trasvasar puede cambiar las condiciones cubiertas por el certificado; se registra y evalúa. Un valor informativo no se presenta como certificado: se identifica propiedad, unidad, base de expresión, incertidumbre, factor/cobertura y referencia de trazabilidad pertinentes. Cada lote puede tener valores distintos y debe enlazarse con su documento; cambiar lote exige revisar valor y continuidad del control. Menor incertidumbre no compensa matriz o concentración inadecuadas. Un MRC de matriz puede servir para calibrar si es apropiado: no existe una prohibición universal, aunque a veces sea caro o inadecuado para una aplicación concreta. La independencia del control evita compartir un error con el calibrante; dos frascos de una misma madre no crean independencia. Conmutabilidad se refiere al comportamiento comparativo del material entre procedimientos respecto de muestras reales, no solo a que pueda disolverse. La recomendación histórica de incertidumbre de MR≤un tercio de la de medida es orientativa de esa guía, con comparación de bases y coberturas; no es por sí sola norma legal universal. **Actualización de referencias ISO, catálogos públicos consultados17/11/2026:** ISO 33401:2024 sustituye Guide 31:2015 para certificados/etiquetas/documentación; ISO 33403:2024 transforma Guide 33:2015 para requisitos/recomendaciones de uso; ISO 33405:2024 sustituye Guide 35:2017 para caracterización, homogeneidad y estabilidad y apoya ISO 17034. Se han leído títulos, alcances y sustituciones públicas, no su articulado de pago. Fuente: VIM 5.13–5.15; Eurachem/CITAC Trazabilidad 2019 §7; fichas ISO 84222/84224/84226 y comitéTC334.
 
 #### MR y MRC
 
@@ -124,7 +128,7 @@ Lo que une los dos sentidos es el **método primario**: *«un método que tiene 
 | Valor asignado | Puede tenerlo o no | **Sí, certificado** |
 | Incertidumbre del valor | No necesariamente | **Sí** |
 | Trazabilidad metrológica | No necesariamente | **Sí** |
-| Documento | — | **Certificado** (Guía ISO 31) |
+| Documento | — | **Certificado** (actualISO33401:2024; antesGuide31) |
 | Sirve para… | **Controlar la precisión**; con valor asignado, también calibrar o controlar la veracidad | **Calibrar** y **controlar la veracidad**, con trazabilidad |
 
 Tres notas del VIM al MR que dan pregunta:
@@ -155,13 +159,15 @@ La idoneidad de un MR **no depende solo de su incertidumbre**. La guía de traza
 - La **incertidumbre**.
 - Cómo se **caracterizó y certificó**.
 
-Y, sobre el productor (guía de trazabilidad, 7.8): que la producción sea **conforme a la ISO 17034** —en España, **UNE-EN ISO 17034:2017**, que anuló a la antigua Guía ISO 34— y demostrable por **auditoría de tercera parte**; su historial; un certificado conforme a la **Guía ISO 31**; y la certificación conforme a la **Guía ISO 35**.
+Y, sobre el productor (guía de trazabilidad, 7.8): que la producción sea **conforme a la ISO 17034** —en España, **UNE-EN ISO 17034:2017**, que anuló a la antigua Guía ISO 34— y demostrable por **auditoría de tercera parte**; su historial; documentación cuyo marco actual es **ISO 33401:2024** (antesGuide31), y caracterización/homogeneidad/estabilidad en **ISO 33405:2024** (antesGuide35); uso en **ISO 33403:2024** (antesGuide33).
 
-**Una regla numérica** de la guía EEE/RM/062: *«la incertidumbre asociada a un MR **no debería ser mayor que un tercio** de la de la medida de la muestra»*. Es el mismo umbral de un tercio que el tema 38 daba para despreciar una componente de incertidumbre.
+**Una regla numérica** de la guía EEE/RM/062: *«la incertidumbre asociada a un MR **no debería ser mayor que un tercio** de la de la medida de la muestra»*. Es una recomendación de selección de esa guía histórica, **no ley universal** ni la misma reglaQUAMde aportes al presupuesto. Se comparan bases y coberturas coherentes.
 
-**Y un matiz práctico:** los MRC **de matriz** se recomiendan para **validar y controlar**, pero **no para calibrar**: *«el coste es habitualmente prohibitivo, la coincidencia de matrices en la práctica es rara, y las incertidumbres asociadas […] suelen ser demasiado grandes para los fines de la calibración»* (guía de trazabilidad, 7.4.3). Para calibrar se usan **sustancias puras o disoluciones patrón**.
+**Y un matiz práctico:** los MRC **de matriz** pueden servir para **validar, controlar o calibrar**, según aptitud; las limitaciones de coste, coincidencia e incertidumbre se evalúan en cada aplicación: *«el coste es habitualmente prohibitivo, la coincidencia de matrices en la práctica es rara, y las incertidumbres asociadas […] suelen ser demasiado grandes para los fines de la calibración»* (guía de trazabilidad, 7.4.3). Para calibrar se usan **sustancias puras o disoluciones patrón**.
 
 ### 2.3. Trazabilidad
+
+**Ampliación fisicoquímica: cadena metrológica y alcance de la referencia.** La trazabilidad es propiedad del resultado y exige cadena documentada de calibraciones con incertidumbres y referencia apropiada. Custodia de muestra y trazabilidad documental son necesarias para seguimiento, pero no sustituyen esa cadena metrológica. Se define el mensurando y se consideran entradas relevantes, patrones, modelo y validación; un certificado de un equipo no acredita automáticamente todo el método. La referencia puede ser realización del SI u otra referencia apropiada cuando corresponda al mensurando; no se convierte una lista de compras en trazabilidad al SI. La trazabilidad no garantiza ausencia de equivocaciones ni incertidumbre apta para cualquier uso. Cambiar lote, patrón o calibración requiere conservar el enlace entre resultados y referencias efectivamente usados. La periodicidad de calibración se fija según estabilidad, riesgo, historial y requisitos; no existe por definición una frecuencia universal para toda balanza o todo ICP. Se distingue calibrar, que establece relaciones, de ajustar, que modifica respuesta, y verificar, que comprueba requisitos. En calibración instrumental, la función señal–concentración y su inversión deben usarse dentro de alcance; patrón interno, externo, matriz y adiciones son estrategias con supuestos, no remedios universales de toda interferencia. Fuente: VIM 2.39–2.44; Eurachem/CITAC2019 §3/6–7; Eurachem 2025 §5.2.
 
 ![La cadena de trazabilidad: la incertidumbre crece en cada eslabón](esquema:cadena-trazabilidad)
 
@@ -187,9 +193,11 @@ Lo que hay que llevarse de ella y de sus notas:
 5. **Elegir y aplicar los patrones adecuados**.
 6. **Estimar la incertidumbre** (**tema 38**).
 
-Y la herramienta práctica: *«la trazabilidad a estándares de medición apropiados es alcanzada **a través de la calibración**»* (guía, 3.3.1). Balanzas y termómetros se calibran **pocas veces**, porque son estables; un cromatógrafo o un ICP, **en cada tanda**. **Una calibración solo vale mientras el instrumento se mantenga estable**, y eso se vigila con el **control de calidad** (3.3.6).
+Y la herramienta práctica: *«la trazabilidad a estándares de medición apropiados es alcanzada **a través de la calibración**»* (guía, 3.3.1). La frecuencia de calibración se fija por estabilidad, historial, riesgo y requisitos: una balanza puede mantenerla más tiempo y un sistema instrumental requerirla frecuentemente, **sin frecuencia universal para toda clase de equipo**. **Una calibración solo vale mientras el instrumento se mantenga estable**, y eso se vigila con el **control de calidad** (3.3.6).
 
 ### 2.4. Calibración lineal: ajuste por mínimos cuadrados
+
+**Ampliación fisicoquímica: supuestos y diagnóstico de mínimos cuadrados.** En mínimos cuadrados ordinarios de una recta con intercepto libre se minimizan residuos verticales cuadrados; para las fórmulas usuales se considera incertidumbre de x despreciable frente al efecto de y y varianza adecuada en respuesta. Si hay incertidumbre relevante en x o varianza no constante se evalúa otro tratamiento apropiado. Se distinguen residuales con curvatura de residuales cuya dispersión aumenta: la primera sugiere modelo funcional inadecuado; la segunda, heterocedasticidad y posible ponderación justificada. No se corrige toda curvatura solo cambiando pesos. El residuo observado menos predicho puede tener signo; sus cuadrados evitan cancelación en el criterio. Con intercepto libre, las sumas de residuos son cero salvo redondeo, sin significar que cada residuo sea cero. Se estiman dos parámetros, por eso la estimación residual usa n−2: dos puntos pueden definir recta perfecta pero no estimar con esa fórmula su dispersión residual. R²=r² y el rango0–1 se refieren a regresión lineal simple ordinaria con intercepto sobre sus datos de ajuste y variabilidad de respuesta no nula; no se generalizan a toda salida llamada R²de cualquier modelo. Un R² alto no demuestra recuperación, exactitud ni linealidad suficiente: se revisan residuales, niveles y controles. r conserva signo y no fija pendiente; correlación cero no excluye relación no lineal. Cambiar unidades puede cambiar pendiente e intercepto numéricos sin alterar el ajuste físico; no se fuerza paso por cero solo para mejorar apariencia. Para y=a+b·x se interpola x=(y−a)/b si b no es cero; después se aplican diluciones y conversiones pertinentes a muestra. El intervalo se valida y no se extrapola aptitud fuera de él. La incertidumbre de interpolación depende del diseño y modelo, no solo del R². Fuente: NIST/SEMATECH e-Handbook §4.4.3.1/4.4.4; Eurachem 2025 §5.2; Harvey§5.4; ejercicios originales.
 
 #### Qué es calibrar, en dos pasos
 
@@ -198,7 +206,7 @@ La definición del VIM (2.39, transcrita en el tema 21) tiene **dos etapas**, y 
 1. Con **patrones** de valor conocido **x**, se miden sus **señales y**, y se establece la **función de calibración y = f(x)**: la recta.
 2. Con la **señal de la muestra**, se obtiene su concentración con la **función inversa x = f⁻¹(y)**: se **interpola** en la recta.
 
-Los **métodos absolutos** (gravimetría, volumetría) **no necesitan** función de calibración; los **comparativos** (casi todos los instrumentales), sí.
+Los procedimientos de gravimetría o volumetría pueden no usar una función instrumental de respuesta, pero sus entradas requieren calibración y trazabilidad. No se declara primaria cualquier aplicación por su nombre.
 
 #### Cuatro formas de calibrar
 
@@ -218,7 +226,7 @@ La recta se escribe **y = a + b·x** —o, como en la pregunta de 1246, **y = ax
 - **Pendiente**: la **sensibilidad** (tema 38): cuánto sube la señal por unidad de concentración.
 - **Ordenada en el origen**: la señal a concentración cero (el blanco, idealmente).
 
-El ajuste **supone que todo el error está en y**, no en x, y busca la recta que hace **mínima la suma de los cuadrados de los residuos**, siendo el **residuo** la distancia **vertical** de cada punto a la recta:
+Las fórmulas ordinarias consideran la incertidumbre de xdespreciable frente al problema en y, y una estructura de varianza adecuada, y busca la recta que hace **mínima la suma de los cuadrados de los residuos**, siendo el **residuo** la distancia **vertical** de cada punto a la recta:
 
 > **residuo_i = y_i − ŷ_i** (lo medido menos lo que predice la recta)
 >
@@ -238,13 +246,13 @@ El **n − 2** está porque la recta ha consumido **dos grados de libertad**: la
 
 > **Coeficiente de correlación r:** mide **cuánto se ajustan los puntos a una recta**. Vale **entre −1 y +1**: **+1** si todos los puntos están sobre una recta que **sube**, **−1** si están sobre una que **baja**, y **0** si no hay relación **lineal** (1246 #48).
 >
-> **Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). **No puede ser negativo.**
+> **Coeficiente de determinación R²:** en una recta de calibrado, **R² = r²**. Vale **entre 0 y 1**, y **R² = 1 es un ajuste lineal perfecto** (1233 #18). En este contexto de regresión simple ordinaria con intercepto y datos de ajuste con variación. No se generaliza a cualquier salida informática llamada R².
 
 Tres cosas que se preguntan, y que conviene saber decir:
 
 - **r no dice la pendiente.** Dos rectas muy distintas pueden tener el mismo r = 1.
 - **r = 0 no significa que no haya relación**: solo que **no es lineal**. Unos datos en forma de U pueden tener r = 0.
-- **Un R² alto no demuestra la linealidad.** La Guía Eurachem de 2025 lo dice sin rodeos: calcular el R² es *«muy común»*, pero **«se recomienda encarecidamente no usar ese enfoque solo»**. Lo que demuestra la linealidad es **el gráfico de residuos**: si el modelo es válido, *«los errores residuales deben distribuirse aleatoriamente alrededor de un error residual promedio de cero»* (Harvey, 5.4). Si los residuos **crecen con la concentración**, hace falta una **regresión ponderada**; si dibujan una **curva** (positivos en los extremos y negativos en el centro, o al revés), **la relación no es una recta**, aunque el R² sea 0,99.
+- **Un R² alto no demuestra la linealidad.** La Guía Eurachem de 2025 lo dice sin rodeos: calcular el R² es *«muy común»*, pero **«se recomienda encarecidamente no usar ese enfoque solo»**. La evaluación se apoya en **el gráfico de residuos** y otras evidencias: si el modelo es válido, *«los errores residuales deben distribuirse aleatoriamente alrededor de un error residual promedio de cero»* (Harvey, 5.4). Si crece la **dispersión** sin curvatura de la media residual, se evalúa heterocedasticidad y **ponderación adecuada**; si dibujan una **curva** (positivos en los extremos y negativos en el centro, o al revés), **la relación no es una recta**, aunque el R² sea 0,99.
 
 ![La recta de calibrado por mínimos cuadrados, con sus residuos](esquema:recta-minimos-cuadrados)
 
@@ -270,6 +278,8 @@ Con los datos del supuesto 1 de 1322 (x = 1, 2, 5, 10 mg/L; y = 0,05; 0,10; 0,24
 
 ### 2.5. Control de calidad interno
 
+**Ampliación fisicoquímica: elegir y aplicar controles.** El gráfico X vigila valores de control respecto de media o referencia; el de rangos usa diferencias absolutas de duplicados para dispersión y no revela por sí solo un sesgo común. Blanco, control de calibración y muestra que recorre preparación responden a vías distintas; un blanco bajo no demuestra representatividad de matriz ni una recuperación adecuada. Los controles independientes y representativos se distribuyen según riesgos y estabilidad de la serie; una única comprobación al inicio puede no detectar deriva posterior. El plan define reglas y actuación; las recomendaciones Nordtestno son una ley aplicable por igual a todo laboratorio. **TR 569ed6.1 cap.9:** un punto fuera de acción o dos de tres entre aviso y acción del mismo lado indican fuera de control. La nota 15aclara que un aviso previo del lado contrario no activa por sí solo la regla de mismo lado. Las frecuencias 0,54 %de falsas alarmas corresponden a gráfico X con límites estadísticos, línea central en la media y los supuestos indicados; no son universales para gráficosRni cualquier secuencia correlacionada. Repetir controles para diagnosticar no permite borrar el fallo y liberar automáticamente todas las muestras previas: se evalúa el periodo desde último control correcto y se reanaliza si es posible. El manual contempla, si no puede repetirse una muestra inestable y el cliente necesita urgentemente el dato, una decisión cuidadosa con nota clara de mayor incertidumbre; no se presenta como autorización general para ocultar fallos. Las tendencias se investigan según procedimiento y contexto; no son permiso automático para informar cualquier dato. No se ensanchan límites para esconder deterioro ni se recalcula media tras cada punto; se revisan datos, cambios, requisitos y causas. Un cambio de lote del control puede cambiar su media sin cambio del método: se examina antes de atribuir deriva. Los resultados de control negativos o bajo límite se conservan para análisis estadístico cuando proceda, sin convertirlos en concentración física negativa. Fuente: Nordtest TR 569ed6.1(2026), caps.6–10/13; ejercicios originales.
+
 #### Qué se mete en cada serie
 
 El Nordtest TR 569 (figura 8) propone una serie tipo: **patrones de calibración**, **blancos**, un **patrón de control** para comprobar la calibración, las **muestras**, y una **muestra de control** que pasa por **todo el procedimiento**. Y dos recomendaciones sobre cómo anotar los valores de control: **una cifra significativa más** que los resultados, y **anotar también los valores por debajo del límite de informe y los negativos** (si se redondean a cero, el gráfico de blancos deja de servir).
@@ -287,15 +297,15 @@ El Nordtest TR 569 (figura 8) propone una serie tipo: **patrones de calibración
 
 #### El gráfico de control X
 
-![Gráfico de control X: aviso a ±2s, acción a ±3s](esquema:grafico-control-x)
+![Gráfico de control X: aviso a ±2 s, acción a ±3 s](esquema:grafico-control-x)
 
 Es un gráfico con el **número de serie** en horizontal y el **valor de control** en vertical, y **cinco líneas**:
 
 | Línea | Dónde | Por qué ahí |
 | --- | --- | --- |
 | **Línea central (LC)** | La **media** de los valores de control, o el **valor de referencia** del material | — |
-| **Límites de aviso** | **LC ± 2s** | Con distribución normal, **≈ 95 %** de los valores cae dentro |
-| **Límites de acción** | **LC ± 3s** | **99,7 %** dentro: solo **3 de cada 1000** caen fuera por azar |
+| **Límites de aviso** | **LC ± 2 s** | Con distribución normal, **≈ 95 %** de los valores cae dentro |
+| **Límites de acción** | **LC ± 3 s** | **99,7 %** dentro: solo **3 de cada 1000** caen fuera por azar |
 
 Además del gráfico X, el TR 569 describe el **gráfico de blancos** (un gráfico X de un blanco, que avisa de contaminaciones y reactivos en mal estado), el **gráfico de recuperaciones** (recuperación de una adición, en %) y los **gráficos de rangos R y r %**, que vigilan la **repetibilidad** con **duplicados**: solo tienen **límites superiores** —un rango nunca es negativo—, con la línea central en **1,128 s**, el aviso en **2,83 s** y la acción en **3,69 s**.
 
@@ -318,9 +328,9 @@ Además del gráfico X, el TR 569 describe el **gráfico de blancos** (un gráfi
 > - el valor de control está **fuera de los límites de acción**; o
 > - está **entre el aviso y la acción**, y **al menos uno de los dos valores anteriores también lo estaba, en el mismo lado** de la línea central: **la regla de «dos de tres»**.
 >
-> En ese caso, **no se informan resultados**, y **todas las muestras analizadas desde el último valor de control correcto** deben volver a analizarse.
+> En ese caso, **normalmente no se liberan resultados afectados**, y se reanalizan si es posible desde el último control correcto. El manual contempla una excepción cuidadosamente evaluada para muestra inestable no repetible y urgencia, con nota clara de mayor incertidumbre.
 
-Con estas dos reglas, un método que funciona bien da una **falsa alarma en el 0,54 %** de las series (0,27 % por cada regla).
+Para **gráfico X**, límites estadísticos y centro en su media bajo los supuestos del manual, se cita **0,54 %**. No se extrapola a todo gráficoRni a cualquier estructura de datos.
 
 **Qué se hace al salirse:** lo normal es **repetir el control dos veces**. Si los nuevos valores caen dentro de los límites de aviso, se reanalizan las muestras; si no, **se para** y se busca la causa: **reactivos**, **calibración** del equipo, o **material y recipientes**. Todo **se documenta**.
 
@@ -329,7 +339,7 @@ Con estas dos reglas, un método que funciona bien da una **falsa alarma en el 0
 - **siete valores de control consecutivos aumentan o disminuyen** gradualmente, o
 - **diez de cada once valores consecutivos** caen **del mismo lado** de la línea central.
 
-La edición 6.1 las **mantiene**, pero aclara que *«proceden del control de procesos en producción […] como establece la **ISO 7870-2**»* y que *«normalmente **no son prácticas** para el control diario de un método analítico»*: las tendencias se buscan en la **revisión anual**. Con esas reglas **se pueden informar los resultados**; lo que piden es investigar.
+La edición 6.1 las **mantiene**, pero aclara que *«proceden del control de procesos en producción […] como establece la **ISO 7870-2**»* y que *«normalmente **no son prácticas** para el control diario de un método analítico»*: las tendencias se buscan en la **revisión anual**. Las señales se investigan según procedimiento y contexto; no son permiso automático para informar cualquier resultado afectado.
 
 **Gráficos solo con límites de acción.** Sirven para **comprobar un equipo** antes de seguir —¿está bien la calibración?, ¿la balanza está en tolerancia?—, y el TR 569 da un ejemplo: para una balanza analítica de cuatro decimales, límites de **± 5 dígitos del último decimal, ± 0,5 mg**. Para el control normal de un método **se recomiendan los dos límites**, porque sin límites de aviso se pierde la regla de dos de tres y el gráfico ve peor las derivas.
 
@@ -337,10 +347,12 @@ La edición 6.1 las **mantiene**, pero aclara que *«proceden del control de pro
 
 ### 2.6. Control de calidad externo
 
+**Ampliación fisicoquímica: interpretar ensayos de aptitud.** El ensayo de aptitud es una modalidad de comparación interlaboratorios que evalúa desempeño frente a criterios; no se afirma que toda intercomparación, en sentido amplio, excluya ensayos de aptitud. La puntuación z=(resultado−asignado)/σpt utiliza desviación para evaluación del proveedor, no necesariamente incertidumbre del laboratorio. Su signo indica dirección y |z|magnitud del desvío relativo al criterio:≤2satisfactorio,2<|z|<3cuestionable,≥3insatisfactorio en el esquema citado. La evaluación incorpora información de valor asignado y su incertidumbre, material, método y criterio; una puntuación satisfactoria aislada no acredita todo alcance ni demuestra ausencia de sesgo. En usa incertidumbres expandidas compatibles y se interpreta bajo sus supuestos; no se mejora desempeño inflando incertidumbres sin fundamento. Se comprueban transcripción, unidades, base de expresión y diluciones antes de atribuir toda discrepancia a química. Se registra investigación, impacto en trabajo habitual y acciones y su eficacia. ENAC NT-03 Rev. 12(2026)prevé plan, familias justificadas y revisión anual; si no se agrupa en familias, se atiende cada ensayo/calibración, con participación mínima entre reevaluaciones y condiciones de disponibilidad. La ausencia de programa viable se justifica y se suple según política, no se declara exención por comodidad. Fuente: ENAC NT-03 Rev. 12§2/6–7; Eurachem EPT 2021§7–8; RD 817/2015 anexo III C.3.
+
 El control interno ve si el laboratorio **se mantiene igual**; no ve si **todo el laboratorio está desviado**. Para eso hace falta compararse con otros.
 
 - **Ensayo de aptitud** (*proficiency testing*): un proveedor envía **la misma muestra** a muchos laboratorios y **evalúa el desempeño** de cada uno. Los proveedores se rigen por la **UNE-EN ISO/IEC 17043:2023**, y la estadística, por la **ISO 13528:2022**.
-- **Intercomparación**: la comparación entre laboratorios **sin** evaluación del desempeño. *«Solamente el primero [el ensayo de aptitud] lleva asociada la evaluación del desempeño de los participantes»* (ENAC, NT-03).
+- **Otras intercomparaciones**, en el uso particular de NT03: comparaciones que no tienen como fin esa evaluación. El concepto amplio de comparación interlaboratorios **incluye** ensayos de aptitud. *«Solamente el primero [el ensayo de aptitud] lleva asociada la evaluación del desempeño de los participantes»* (ENAC, NT-03).
 
 #### La puntuación z
 
@@ -360,7 +372,7 @@ El control interno ve si el laboratorio **se mantiene igual**; no ve si **todo e
 
 #### Lo que exige ENAC
 
-La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **plan de participación**, agrupando sus ensayos en **familias**, con al menos **una participación por familia entre reevaluaciones**, y una **participación satisfactoria antes de conceder la acreditación** cuando existan ensayos de aptitud adecuados. Y fija un **orden de preferencia**: primero, proveedores **acreditados por la ISO/IEC 17043** con acuerdo de reconocimiento con ENAC; después, acreditados sin ese acuerdo; después, no acreditados; y por último, intercomparaciones organizadas por los propios participantes. El detalle de la acreditación es del **tema 40**.
+La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **plan de participación**, agrupando sus ensayos en **familias**, con al menos **una participación por familia entre reevaluaciones**, y una **participación satisfactoria antes de conceder la acreditación** cuando existan ensayos de aptitud adecuados. Y fija un **orden de preferencia**: primero, proveedores **acreditados por la ISO/IEC 17043** con acuerdo de reconocimiento con ENAC; después, acreditados sin ese acuerdo; después, no acreditados; después, intercomparaciones organizadas por participantes; la quinta posibilidad son casos con número estadísticamente no adecuado, incluidos dos laboratorios, tratados en anexo I. El detalle de la acreditación es del **tema 40**.
 
 ---
 
@@ -379,9 +391,9 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 | **R²** | r² | **Entre 0 y 1**; **1 = ajuste perfecto**; **no basta solo** | 1233 #18; Eurachem 2025, 5.2.4 |
 | **Residuos** | y − ŷ de cada punto | **Aleatorios en torno a cero** = lineal | Harvey 5.4 |
 | **Adición de patrón** | Añadir analito a la muestra | Concentración = **total − añadido** | 1322 C2 #7 (anulada por el tribunal) |
-| **Gráfico X** | Valores de control frente al tiempo | Aviso **±2s** (95 %); acción **±3s** (99,7 %) | Nordtest TR 569 |
+| **Gráfico X** | Valores de control frente al tiempo | Aviso **±2 s** (95 %); acción **±3 s** (99,7 %) | Nordtest TR 569 |
 | **Gráfico R** (duplicados) | Rango de duplicados | LC **1,128 s**; aviso **2,83 s**; acción **3,69 s** | Nordtest TR 569 |
-| **Fuera de control** | Parar y reanalizar | Fuera de **±3s**, o **dos de tres** entre 2s y 3s del mismo lado | Nordtest TR 569, ed. 6.1 |
+| **Fuera de control** | Parar y reanalizar | Fuera de **±3 s**, o **dos de tres** entre 2 s y 3 s del mismo lado | Nordtest TR 569, ed. 6.1 |
 | **Fuera de control estadístico** | Investigar, pero se informa | **7** consecutivos subiendo o bajando; **10 de 11** del mismo lado | TR 569 ed. 4; ISO 7870-2 |
 | **Límites** | Estadísticos u objetivo | **60 valores** en **un año**; objetivo = **U / 4**; revisión **anual** | Nordtest TR 569 |
 | **Ensayo de aptitud** | Misma muestra a muchos laboratorios | **z = (x − x_pt)/σ_pt**: ≤ 2 satisfactorio; 2-3 cuestionable; ≥ 3 insatisfactorio | ISO 13528; Eurachem 2021 |
@@ -390,15 +402,15 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 
 ## 4. Puntos críticos para el examen
 
-**1. R² = 1 es un ajuste lineal perfecto** (1233 #18). **R² va de 0 a 1 y nunca es negativo.**
+**1. R² = 1 es un ajuste lineal perfecto** (1233 #18). En regresión simple ordinaria con intercepto y sobre sus datos de ajuste, R²=r²y va de 0 a 1; se mantienen esos supuestos.
 
 **2. El coeficiente de correlación r oscila entre −1 y +1** (1246 #48). El signo dice si la recta sube o baja; **no dice la pendiente**.
 
 **3. La recta del supuesto de 1322 tiene R² = 0,999** (#3), y con ella una absorbancia de 0,50 tras añadir 5 mg/L da **5 mg/L de analito** (#7): **total − añadido**.
 
-**4. Mínimos cuadrados = minimizar la suma de los cuadrados de los residuos**, suponiendo el error **solo en la señal (y)**.
+**4. Mínimos cuadrados = minimizar la suma de los cuadrados de los residuos**, bajo el modelo y supuestos de incertidumbre de entradas apropiados.
 
-**5. Un R² alto no demuestra la linealidad**: lo demuestran **los residuos aleatorios en torno a cero**.
+**5. Un R² alto no demuestra la linealidad**: la apoyan **residuales sin tendencia**, sin probar por sí solos toda aptitud.
 
 **6. No se extrapola**: la muestra tiene que caer **dentro** del intervalo de los patrones, y la incertidumbre es **mínima en el centro**.
 
@@ -412,17 +424,17 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 
 **11. La trazabilidad es necesaria pero no suficiente**: no garantiza la ausencia de errores.
 
-**12. Los métodos primarios —gravimetría, volumetría, culombimetría, dilución isotópica— no necesitan recta de calibrado.**
+**12. Esas técnicas pueden fundamentar procedimientos primarios bajo requisitos metrológicos.** La ausencia de recta instrumental no elimina calibración de entradas ni incertidumbre.
 
-**13. Gráfico X: aviso a ±2s (95 %) y acción a ±3s (99,7 %).**
+**13. Gráfico X: aviso a ±2 s (95 %) y acción a ±3 s (99,7 %).**
 
-**14. Fuera de control: un valor fuera de ±3s, o dos de tres seguidos entre 2s y 3s del mismo lado.** Se reanaliza **todo desde el último control bueno**.
+**14. Fuera de control: un valor fuera de ±3 s, o dos de tres seguidos entre 2 s y 3 s del mismo lado.** Se reanaliza **todo desde el último control bueno**.
 
-**15. Siete valores seguidos subiendo o bajando, o diez de once del mismo lado**: «**fuera de control estadístico**». Se investiga, pero **se informa**.
+**15. Esas tendencias se investigan** y se distinguen de las dos reglas diarias en el esquemaTR569; la decisión de informar atiende procedimiento, evidencia y contexto.
 
 **16. Puntuación z: |z| ≤ 2 satisfactorio; entre 2 y 3 cuestionable; ≥ 3 insatisfactorio.**
 
-**17. Ensayo de aptitud ≠ intercomparación**: solo el primero **evalúa el desempeño**.
+**17. El ensayo de aptitud es comparación interlaboratorios con evaluación del desempeño**. NT03 lo distingue de otras intercomparaciones para otros fines; no son conceptos absolutamente disjuntos.
 
 ---
 
@@ -442,6 +454,9 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 
 ## Fuentes y verificación
 
+**Fuentes adicionales y actualización de17/11/2026.** Catálogos ISOy comitéTC334: [ISO33401:2024,documentación y certificados](https://www.iso.org/standard/84222.html), [ISO33403:2024,uso](https://www.iso.org/standard/84224.html), [ISO33405:2024,caracterización/homogeneidad/estabilidad](https://www.iso.org/standard/84226.html). Son sustitutas deGuide31/33/35respectivamente; se han leído fichas y alcances públicos, no articulado de pago. Para mínimos cuadrados y diagnóstico se consultó [NIST/SEMATECH§4.4.3.1](https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd431.htm) y [§4.4.4](https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd44.htm). Se contrastaron también TR569ed6.1caps.6–10/13, EPT2021§7–8yNT03Rev12§2/6–9con sus fuentes oficiales ya enlazadas.
+
+
 - **VIM, edición española del CEM**, leído literalmente en las entradas 2.39 a 2.43 y en todo el capítulo 5. Las definiciones entrecomilladas de patrón, patrón primario y secundario, MR, MRC, conmutabilidad y trazabilidad son **transcripción** del PDF oficial.
 - **Nordtest TR 569, edición 6.1 (agosto de 2026)**, en inglés, leída en los capítulos 4 a 10; y la **edición 4 en español**, leída para la terminología y para comparar las reglas. Las **dos reglas** diarias, los factores de los gráficos de rango (1,128; 2,83; 3,69), los 60 valores en un año, los 25 para empezar, el U/4 de los límites objetivo y la balanza a ± 5 dígitos están tomados de la 6.1; las reglas de tendencia, literales de la edición 4 en español y confirmadas en la 6.1.
 - **Guía Eurachem/CITAC de trazabilidad, edición española de 2020**, y **guía Eurachem EEE/RM/062**, leídas.
@@ -452,7 +467,7 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 - **Estado de las normas**, comprobado el 25/09/2026: UNE-EN ISO 17034:2017, UNE-ISO 7870-2:2017 y UNE-EN ISO/IEC 17043:2023 **vigentes** en el buscador de UNE; ISO 13528:2022 e ISO 8466-1:2021 **vigentes** según AENOR.
 - **Exámenes anteriores:** los seis cuestionarios. **Cuatro preguntas** de este tema, transcritas. Dos de ellas (**1246 #48** y **1322 C2 #7**, esta última **anulada por el tribunal**) salían revueltas al extraer el texto y **se han leído renderizando las páginas del PDF**; con el mismo método se ha encontrado la **1246 #47** (dianas), que se ha llevado al tema 38.
 - **`TEMARIO EXTRA/`:** consultada la ficha de apoyo del tema 39. No aporta nada que no esté ya en el tema 22.
-- **Figuras:** las tres de este tema (`grafico-control-x`, `recta-minimos-cuadrados` y `cadena-trazabilidad`) se han añadido al catálogo con **seis controles nuevos** en `verificar-figuras.js` y **seis sabotajes** que los prueban. Los del gráfico de control comprueban que **los límites están a ±2s y ±3s, simétricos**, y que **los puntos marcados como fuera de control son exactamente los que señalan las dos reglas** aplicadas a los puntos dibujados; los de la recta, que **la línea dibujada es el ajuste por mínimos cuadrados de los puntos dibujados** con el **R² escrito igual al calculado**, y que **cada barra de residuo mide la distancia de su punto a la recta, con su signo**; los de la trazabilidad, que **la incertidumbre crece eslabón a eslabón** y que **cada flecha une un eslabón con el siguiente**, sin saltos.
+- **Figuras:** las tres de este tema (`grafico-control-x`, `recta-minimos-cuadrados` y `cadena-trazabilidad`) se han añadido al catálogo con **seis controles nuevos** en `verificar-figuras.js` y **seis sabotajes** que los prueban. Los del gráfico de control comprueban que **los límites están a ±2 s y ±3 s, simétricos**, y que **los puntos marcados como fuera de control son exactamente los que señalan las dos reglas** aplicadas a los puntos dibujados; los de la recta, que **la línea dibujada es el ajuste por mínimos cuadrados de los puntos dibujados** con el **R² escrito igual al calculado**, y que **cada barra de residuo mide la distancia de su punto a la recta, con su signo**; los de la trazabilidad, que **la incertidumbre crece eslabón a eslabón** y que **cada flecha une un eslabón con el siguiente**, sin saltos.
 - **Fecha de verificación:** 25/09/2026.
 
 ### Dudas y limitaciones declaradas
@@ -461,7 +476,7 @@ La **NT-03 Rev. 12 (marzo de 2026)** pide a los laboratorios acreditados un **pl
 
 2. **La #7, además, calcula con la recta externa** una muestra con adición, lo que supone que la matriz **no cambia la pendiente**. Es la lectura que da una de las opciones; una adición de patrón «de verdad» se hace a varios niveles y se **extrapola**. No he encontrado otra lectura que lleve a una opción.
 
-3. **Las reglas de control no son una norma legal.** Son las del **Nordtest TR 569**, el manual de referencia en laboratorios químicos europeos, que ha cambiado de la edición 4 (2011) a la 6.1 (2026). **Cada laboratorio fija sus reglas en su manual de calidad**, y otros sectores (clínico) usan las de **Westgard**, que aquí no se desarrollan. Si el examen pide una regla concreta, lo más probable es que sea la de **±3s** o la de **dos de tres**, que son comunes a todas.
+3. **Las reglas de control no son una norma legal.** Son las del **Nordtest TR 569**, el manual de referencia en laboratorios químicos europeos, que ha cambiado de la edición 4 (2011) a la 6.1 (2026). **Cada laboratorio fija sus reglas en su manual de calidad**, y otros sectores (clínico) usan las de **Westgard**, que aquí no se desarrollan. Si el examen pide una regla concreta, lo más probable es que sea la de **±3 s** o la de **dos de tres**, que son comunes a todas.
 
 4. **Las citas de fuentes en inglés son traducción mía**: las del Nordtest TR 569 edición 6.1, la Guía Eurachem de 2025, la de ensayos de aptitud y la de materiales de referencia. Van entre comillas porque siguen el texto original frase a frase, pero **no son texto oficial en español**. La edición 6.1 del TR 569 no está traducida; los términos en español (**límite de aviso**, **límite de acción**, **línea central**, **fuera de control estadístico**) son los de la traducción oficial de la edición 4.
 

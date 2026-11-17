@@ -112,8 +112,8 @@
     {
       "id": "t24-f10",
       "anverso": "¿Cómo se interpreta un coeficiente de selectividad?",
-      "reverso": "**Cuanto MÁS PEQUEÑO, mejor.**\n**Menor que 1:** el electrodo prefiere el analito. **Mayor que 1:** prefiere al interferente, y no sirve para esa matriz.\nUn coeficiente de **10⁻³** significa que hace falta **mil veces más interferente** que analito para dar la misma señal.",
-      "fuente": "Bibliografía de química analítica",
+      "reverso": "**Menor coeficiente de selectividad: mayor preferencia por el ion principal**, bajo las condiciones de determinación indicadas. La interferencia efectiva depende también de las actividades y cargas de ambos iones: **K mayor que uno no declara por sí solo inutilizable toda matriz**. Para iones de igual carga en el modelo simplificado, K = 10⁻³ requiere actividad mil veces mayor del interferente para igual contribución.",
+      "fuente": "IUPAC Gold Book, potentiometric selectivity coefficient, P04791 (https://goldbook.iupac.org/terms/view/P04791)",
       "etiquetas": [
         "ise",
         "fundamentos"
@@ -163,8 +163,8 @@
     {
       "id": "t24-f15",
       "anverso": "¿Qué tres cosas hace el TISAB en la determinación de fluoruro?",
-      "reverso": "1. **Fija una fuerza iónica alta y constante** en patrones y muestras: el coeficiente de actividad es el mismo en todos y el electrodo se lee **como concentración**.\n2. **Tampona el pH** en torno a **5 - 5,5**: por debajo el fluoruro se protona a **HF y HF₂⁻**, que el electrodo **no ve**; por encima interfiere el **OH⁻**.\n3. **Acompleja los interferentes** con **CDTA**: secuestra **Al³⁺ y Fe³⁺**.\nSe añade **el mismo volumen** a patrones y a muestras.",
-      "fuente": "Documentación de fabricante; bibliografía",
+      "reverso": "En la formulación de TISAB de ejemplo: **mantiene un fondo iónico comparable**, **tampona el pH adecuado al método** y **acompleja interferentes como Al³⁺ y Fe³⁺ mediante CDTA**. Se respeta la proporción de adición de patrones y muestras indicada por el método y se considera la dilución. El pH alrededor de 5-5,5 es un ejemplo de formulación, no un umbral universal de interferencia de OH⁻.",
+      "fuente": "Metrohm, Combined dF ISE, 8.0109.8010EN v4, 2023-07-06, apartados 5.1 y 10",
       "etiquetas": [
         "ise",
         "calculo",
@@ -175,8 +175,8 @@
     {
       "id": "t24-f16",
       "anverso": "¿Por qué el pH es crítico al medir fluoruro con electrodo selectivo?",
-      "reverso": "Por los dos extremos:\n- **pH bajo:** el fluoruro se protona y forma **HF y HF₂⁻**, que el electrodo **no detecta**. El resultado sale **bajo**.\n- **pH alto:** el **OH⁻ interfiere**, porque se parece al F⁻ en tamaño y carga.\nPor eso el TISAB lo tampona entre **5 y 5,5**.",
-      "fuente": "Documentación de fabricante; bibliografía",
+      "reverso": "A **pH demasiado bajo**, disminuye el fluoruro libre por protonación y la lectura puede ser baja. A **pH demasiado alto**, puede interferir OH⁻. El rango exacto depende de modelo, concentraciones y método; no todo pH superior a 5,5 implica interferencia. El TISAB mantiene las condiciones de pH previstas para la determinación.",
+      "fuente": "Metrohm, Combined dF ISE, 8.0109.8010EN v4, 2023-07-06, especificaciones e interferencias",
       "etiquetas": [
         "ise",
         "fluoruro"
@@ -196,8 +196,8 @@
     {
       "id": "t24-f18",
       "anverso": "¿Cuál es la ventaja del método de adiciones patrón con un ISE?",
-      "reverso": "**Que la matriz se cancela.** Se mide la muestra, se le añade un volumen pequeño de patrón concentrado y se vuelve a medir: las dos medidas se hacen **en la misma muestra**, así que todo lo que la matriz le hace al electrodo afecta igual a las dos.\nEs el método cuando la muestra es **compleja** o cuando **no se sabe reproducir su matriz** en los patrones.\nA cambio: más lento, y hay que conocer la **pendiente real** del electrodo.",
-      "fuente": "Bibliografía de química analítica",
+      "reverso": "Se compara la muestra **antes y después de añadir una cantidad conocida de patrón**, manteniendo condiciones de matriz suficientemente constantes. Puede compensar efectos multiplicativos de matriz, pero **no elimina automáticamente interferencias aditivas de otros iones ni cualquier complejación**. Se corrige la dilución y se conoce la **pendiente real**. Útil si no puede reproducirse la matriz en patrones externos.",
+      "fuente": "IUPAC Gold Book, measurement procedure with standard addition, 08030; Metrohm, manual tiamo, principio de adiciones patrón",
       "etiquetas": [
         "ise",
         "calculo"
@@ -207,8 +207,8 @@
     {
       "id": "t24-f19",
       "anverso": "Los tres métodos de cálculo con un ISE: ¿cuándo se usa cada uno?",
-      "reverso": "**Calibración directa** — matriz sencilla y muchas muestras.\n**Adiciones patrón** — matriz complicada: se cancela el efecto de matriz.\n**Valoración potenciométrica** (tema 23) — cuando se quiere **exactitud**: es la más exacta porque no depende del valor absoluto del potencial, sino de **dónde** salta la curva.",
-      "fuente": "Bibliografía de química analítica",
+      "reverso": "**Directa:** patrones y muestra comparables para series de matriz sencilla. **Adiciones patrón:** matriz difícil de reproducir, bajo condiciones que hagan válida la compensación; no eliminan toda interferencia. **Valoración potenciométrica:** detecta una transición con relaciones estequiométricas conocidas. La exactitud de cualquiera depende de la validación y de las condiciones reales.",
+      "fuente": "IUPAC Gold Book, measurement procedure with standard addition, 08030; Metrohm, manual tiamo, principio de adiciones patrón; Harris, Análisis Químico Cuantitativo, potenciometría",
       "etiquetas": [
         "ise",
         "calculo"
@@ -514,14 +514,14 @@
     },
     {
       "id": "t24-f47",
-      "anverso": "¿Por qué la valoración con un ISE es el más exacto de los tres métodos?",
-      "reverso": "Porque **no depende del valor absoluto del potencial**, sino de **dónde salta**.",
+      "anverso": "¿Qué ventaja puede tener una valoración con ISE que localiza una inflexión frente a depender del potencial absoluto?",
+      "reverso": "La posición de una inflexión no cambia por un **desplazamiento constante de toda la señal**. Eso puede favorecer la exactitud si reacción y detección son adecuadas, pero no garantiza superioridad universal ni elimina interferencias o problemas de respuesta.",
       "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
       "etiquetas": [
         "calculo"
       ],
       "apartado": "2.3",
-      "evidencia": "Es el más exacto de los tres, porque no depende del valor absoluto del potencial sino de dónde salta."
+      "evidencia": "una inflexión no depende de un desplazamiento constante de todo el potencial."
     },
     {
       "id": "t24-f48",
@@ -702,8 +702,8 @@
         "Cuanto menor es, mejor: por debajo de 1 el electrodo prefiere el analito"
       ],
       "correcta": 2,
-      "explicacion": "Un coeficiente pequeño significa que el interferente apenas contribuye. Por debajo de 1 el electrodo prefiere el analito; por encima, prefiere al interferente y no sirve para esa matriz. Un valor de 10⁻³ exige mil veces más interferente para dar la misma señal.",
-      "fuente": "Bibliografía de química analítica",
+      "explicacion": "Un coeficiente menor representa mayor preferencia por el ion principal. Deben especificarse condiciones y considerar actividades y cargas. Un K elevado no basta para invalidar toda matriz: importa cuánto interferente hay; la regla mil a uno se refiere al modelo simplificado de igual carga.",
+      "fuente": "IUPAC Gold Book, potentiometric selectivity coefficient, P04791 (https://goldbook.iupac.org/terms/view/P04791)",
       "nucleo": true
     },
     {
@@ -737,11 +737,11 @@
       "opciones": [
         "Es más rápido que la calibración directa",
         "Permite prescindir del electrodo de referencia",
-        "Las dos medidas se hacen sobre la misma muestra y se cancela el efecto de matriz"
+        "Compara la misma muestra antes y después de añadir patrón y puede compensar ciertos efectos de matriz"
       ],
       "correcta": 2,
-      "explicacion": "Se mide la muestra, se añade un patrón concentrado y se vuelve a medir: la matriz es la misma antes y después. Es el método cuando la muestra es compleja o no se sabe reproducir su matriz en los patrones. Es más lento, no más rápido.",
-      "fuente": "Bibliografía de química analítica",
+      "explicacion": "Manteniendo condiciones suficientemente constantes puede compensar efectos multiplicativos. No distingue automáticamente señal del analito e interferentes ya presentes ni elimina toda complejación. Deben considerarse dilución y pendiente real.",
+      "fuente": "IUPAC Gold Book, measurement procedure with standard addition, 08030; Metrohm, manual tiamo, principio de adiciones patrón",
       "nucleo": true
     },
     {
@@ -1074,17 +1074,17 @@
     },
     {
       "id": "t24-q35",
-      "pregunta": "Un coeficiente de selectividad de 10⁻³ significa que:",
+      "pregunta": "Para iones de igual carga en el modelo simplificado, un coeficiente de selectividad de 10⁻³ significa que:",
       "opciones": [
         "El interferente da mil veces más señal",
         "Hace falta mil veces más interferente que analito para dar la misma señal",
         "El electrodo es específico"
       ],
       "correcta": 1,
-      "explicacion": "Cuanto más pequeño, mejor.",
-      "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.2",
+      "explicacion": "A igual carga se compara la contribución K·a(interferente) con a(analito). Igualarlas con K = 10⁻³ exige actividad mil veces mayor del interferente. No es una regla universal para cualquier par de cargas.",
+      "fuente": "IUPAC Gold Book, potentiometric selectivity coefficient, P04791 (https://goldbook.iupac.org/terms/view/P04791) · apunte §2.2",
       "apartado": "2.2",
-      "evidencia": "Un coeficiente de 10⁻³ significa que hace falta mil veces más interferente que analito para producir la misma señal."
+      "evidencia": "Para iones de igual carga en el modelo simplificado, un coeficiente de 10⁻³ requiere actividad mil veces mayor del interferente para igual contribución."
     },
     {
       "id": "t24-q36",
@@ -1144,17 +1144,17 @@
     },
     {
       "id": "t24-q40",
-      "pregunta": "Al medir fluoruro con ISE, por encima de pH 5,5 interfiere:",
+      "pregunta": "Al medir fluoruro con ISE en medio excesivamente alcalino, ¿qué ion puede interferir?",
       "opciones": [
         "El OH⁻, por su parecido de tamaño y carga con el F⁻",
         "El HF, que el electrodo no ve",
         "El Na⁺"
       ],
       "correcta": 0,
-      "explicacion": "Por debajo de pH 5, el fluoruro se protona a HF.",
-      "fuente": "Documentación de fabricante · apunte §2.3",
+      "explicacion": "Puede interferir OH⁻ a pH alto, mientras a pH demasiado bajo se reduce fluoruro libre por protonación. No existe un umbral universal de interferencia en pH 5,5: depende del sensor, las concentraciones y el método.",
+      "fuente": "Metrohm, Combined dF ISE, 8.0109.8010EN v4, 2023-07-06 · apunte §2.3",
       "apartado": "2.3",
-      "evidencia": "por encima, el OH⁻ interfiere por su parecido de tamaño y carga con el F⁻."
+      "evidencia": "a pH demasiado alto, el OH⁻ puede interferir."
     },
     {
       "id": "t24-q41",
@@ -1172,17 +1172,17 @@
     },
     {
       "id": "t24-q42",
-      "pregunta": "De los tres métodos con un ISE, el más exacto es:",
+      "pregunta": "¿Qué método usa el ISE como detector de una transición de valoración en lugar de interpolar directamente la concentración desde el potencial absoluto?",
       "opciones": [
         "La calibración directa",
         "Las adiciones patrón",
         "La valoración potenciométrica con el ISE como detector"
       ],
       "correcta": 2,
-      "explicacion": "No depende del valor absoluto del potencial.",
+      "explicacion": "La valoración sigue la evolución de la señal para detectar el final. Una inflexión no depende de un offset constante, pero la exactitud sigue requiriendo control químico y metrológico.",
       "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
       "apartado": "2.3",
-      "evidencia": "Es el más exacto de los tres, porque no depende del valor absoluto del potencial sino de dónde salta."
+      "evidencia": "una inflexión no depende de un desplazamiento constante de todo el potencial."
     },
     {
       "id": "t24-q43",
@@ -1818,6 +1818,2904 @@
       "fuente": "USGS, National Field Manual, dissolved oxygen, sensores amperométricos · apunte §2.5",
       "apartado": "2.5",
       "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q88",
+      "pregunta": "¿Qué función tiene un ISE dentro de una celda de medida?",
+      "opciones": [
+        "Dosificador del patrón",
+        "Electrodo indicador sensible a una especie",
+        "Referencia universal de potencial invariable para todo ion"
+      ],
+      "correcta": 1,
+      "explicacion": "Su potencial aporta la respuesta que se compara con una referencia.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos selectivos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q89",
+      "pregunta": "¿Qué diferencia un ISE de una medida global de conductividad?",
+      "opciones": [
+        "Mide siempre todas las especies con idéntica respuesta",
+        "Solo mide temperatura",
+        "Responde preferentemente a una especie iónica, no al conjunto inespecífico de conductores"
+      ],
+      "correcta": 2,
+      "explicacion": "La selectividad no equivale a ausencia total de interferencias.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, respuesta de ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q90",
+      "pregunta": "¿Puede interpretarse un ISE como un sensor de potencial sin ninguna referencia del circuito?",
+      "opciones": [
+        "No, necesita una referencia para la comparación de potencial",
+        "Solo cuando el agua sea transparente",
+        "Sí, por definición no utiliza referencia"
+      ],
+      "correcta": 0,
+      "explicacion": "La celda necesita ambos papeles electroquímicos aunque se integren en un cuerpo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, celda de ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Recordatorio del tema 23, en una línea: **los electrodos metálicos transfieren electrones y los de membrana transfieren iones**. Todo ISE necesita, enfrente, un **electrodo de referencia** (normalmente Ag/AgCl, muchas veces **de doble unión** para que su electrolito no contamine la muestra)."
+    },
+    {
+      "id": "t24-q91",
+      "pregunta": "¿Qué objetivo puede justificar una referencia de doble unión en una medida con ISE?",
+      "opciones": [
+        "Eliminar cualquier interacción del sensor con la muestra",
+        "Limitar contaminación de la muestra por el electrolito de referencia",
+        "Sustituir el ionóforo por un indicador de color"
+      ],
+      "correcta": 1,
+      "explicacion": "El electrolito de la referencia no debe introducir una interferencia relevante.",
+      "fuente": "Metrohm, documentación de electrodos selectivos, referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Recordatorio del tema 23, en una línea: **los electrodos metálicos transfieren electrones y los de membrana transfieren iones**. Todo ISE necesita, enfrente, un **electrodo de referencia** (normalmente Ag/AgCl, muchas veces **de doble unión** para que su electrolito no contamine la muestra)."
+    },
+    {
+      "id": "t24-q92",
+      "pregunta": "Además del vidrio de pH, ¿qué otro ion puede determinarse mediante vidrios de composición adecuada?",
+      "opciones": [
+        "Na⁺",
+        "Solo oxígeno por corriente de cátodo",
+        "Todos los gases indistintamente"
+      ],
+      "correcta": 0,
+      "explicacion": "La composición del vidrio modifica la selectividad y no todos los vidrios responden igual.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, clases de membrana · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q93",
+      "pregunta": "¿Qué estructura distingue una membrana cristalina de la membrana polimérica líquida descrita?",
+      "opciones": [
+        "PVC con ionóforo como único diseño posible",
+        "Una burbuja de gas sin soporte",
+        "Monocristal o sólido prensado de material apropiado"
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación depende del material y mecanismo de la membrana.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membranas de estado sólido · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De estado sólido o cristalina** | Un monocristal o una pastilla prensada de sal poco soluble | **F⁻ (monocristal de LaF₃ dopado con europio)**; Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺ |"
+    },
+    {
+      "id": "t24-q94",
+      "pregunta": "¿Qué material caracteriza la membrana del electrodo de fluoruro del tema?",
+      "opciones": [
+        "Platino metálico inerte sin membrana",
+        "Fluoruro de lantano dopado con europio",
+        "Vidrio de pH como único material posible"
+      ],
+      "correcta": 1,
+      "explicacion": "Es el ejemplo clásico de ISE cristalino y no de membrana polimérica.",
+      "fuente": "Metrohm, Combined dF ISE, estructura de membrana; Harris, ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De estado sólido o cristalina** | Un monocristal o una pastilla prensada de sal poco soluble | **F⁻ (monocristal de LaF₃ dopado con europio)**; Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺ |"
+    },
+    {
+      "id": "t24-q95",
+      "pregunta": "¿Qué ion se relaciona con el transporte característico en el cristal de LaF₃ del ejemplo?",
+      "opciones": [
+        "Calcio como único ion principal",
+        "Nitrato como único ion principal",
+        "Fluoruro"
+      ],
+      "correcta": 2,
+      "explicacion": "El mecanismo del cristal sustenta la respuesta selectiva de ese electrodo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodo de fluoruro · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- El **electrodo de fluoruro** es el ejemplo perfecto de membrana cristalina: un **monocristal de fluoruro de lantano** por el que solo migra el F⁻. Es de los más selectivos que existen."
+    },
+    {
+      "id": "t24-q96",
+      "pregunta": "¿Qué sistema se cita para membranas selectivas de cloruro, bromuro o yoduro?",
+      "opciones": [
+        "Haluro de plata combinado con Ag₂S",
+        "Solo una membrana de vidrio de H⁺",
+        "Valinomicina en PVC como mismo sistema"
+      ],
+      "correcta": 0,
+      "explicacion": "La química de membrana debe adecuarse al ion buscado.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membranas cristalinas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De estado sólido o cristalina** | Un monocristal o una pastilla prensada de sal poco soluble | **F⁻ (monocristal de LaF₃ dopado con europio)**; Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺ |"
+    },
+    {
+      "id": "t24-q97",
+      "pregunta": "¿Qué especie de membrana se asocia a ejemplos de Ag⁺ y sulfuro?",
+      "opciones": [
+        "LaF₃ como único material universal",
+        "Ag₂S",
+        "Vidrio de borato sin relación con el ion"
+      ],
+      "correcta": 1,
+      "explicacion": "Un mismo material puede servir en sistemas de respuesta distintos según el equilibrio y aplicación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ISE de estado sólido · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De estado sólido o cristalina** | Un monocristal o una pastilla prensada de sal poco soluble | **F⁻ (monocristal de LaF₃ dopado con europio)**; Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺ |"
+    },
+    {
+      "id": "t24-q98",
+      "pregunta": "¿Qué papel tiene el PVC en el ISE de membrana líquida descrito?",
+      "opciones": [
+        "Soporte de una fase con intercambiador o portador selectivo",
+        "Valorante que se añade desde bureta",
+        "Patrón de potencial cero por sí solo"
+      ],
+      "correcta": 0,
+      "explicacion": "La denominación líquida no significa que el sensor carezca de matriz o soporte.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membrana líquida · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q99",
+      "pregunta": "¿Qué función cumple el ionóforo en una membrana polimérica?",
+      "opciones": [
+        "Medir por sí solo el volumen de muestra",
+        "Eliminar toda posible interferencia de cualquier ion",
+        "Favorecer la interacción selectiva con el ion de interés"
+      ],
+      "correcta": 2,
+      "explicacion": "El portador contribuye a la selectividad, que debe evaluarse para la matriz real.",
+      "fuente": "Metrohm, documentación de ISE; Harris, portadores selectivos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q100",
+      "pregunta": "¿Con qué ion se asocia la valinomicina en el ejemplo de membrana polimérica?",
+      "opciones": [
+        "Cloruro como único uso del tema",
+        "Potasio",
+        "Fluoruro"
+      ],
+      "correcta": 1,
+      "explicacion": "Se trata de un portador selectivo del ejemplo de K⁺.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodo de potasio · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q101",
+      "pregunta": "¿Qué clase de membrana recoge el tema para los ejemplos de calcio y nitrato?",
+      "opciones": [
+        "Solo cristal de LaF₃",
+        "Únicamente platino redox sin membrana",
+        "Membrana líquida soportada en matriz polimérica"
+      ],
+      "correcta": 2,
+      "explicacion": "Los ejemplos deben distinguirse de vidrio y membranas cristalinas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ISE de membrana líquida · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q102",
+      "pregunta": "¿Qué dos mecanismos de membrana líquida agrupa la clasificación del tema?",
+      "opciones": [
+        "Intercambiador iónico y portador neutro",
+        "Polarización externa y ánodo de cinc como única pareja",
+        "Calcinación y filtración"
+      ],
+      "correcta": 0,
+      "explicacion": "La clasificación puede agrupar diseños que otros textos separan en subfamilias.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, familias de membranas líquidas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q103",
+      "pregunta": "¿Qué cambio interno transforma en señal un sensor potenciométrico de gas del ejemplo?",
+      "opciones": [
+        "Pesada del gas en una balanza",
+        "Cambio de pH en una película de electrolito",
+        "Viraje de cromato de plata"
+      ],
+      "correcta": 1,
+      "explicacion": "El gas permea y modifica el entorno que detecta el electrodo interno.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensores potenciométricos de gases · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Sensibles a gases** | Un **electrodo de pH** detrás de una **membrana permeable a los gases** | **NH₃**, **CO₂**, SO₂, óxidos de nitrógeno |"
+    },
+    {
+      "id": "t24-q104",
+      "pregunta": "¿Qué componente permite separar el entorno interno de medida y dejar pasar el gas de interés?",
+      "opciones": [
+        "Membrana permeable a gases",
+        "Una pesa de calibración",
+        "Un filtro de papel que mide masa de ceniza"
+      ],
+      "correcta": 0,
+      "explicacion": "La permeación establece el enlace entre muestra y película interna.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensor sensible a gases · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Sensibles a gases** | Un **electrodo de pH** detrás de una **membrana permeable a los gases** | **NH₃**, **CO₂**, SO₂, óxidos de nitrógeno |"
+    },
+    {
+      "id": "t24-q105",
+      "pregunta": "En un sensor sensible a amoniaco, ¿qué especie gaseosa atraviesa la membrana del ejemplo?",
+      "opciones": [
+        "NH₄⁺ como si fuera gas",
+        "Un electrón hidratado",
+        "NH₃"
+      ],
+      "correcta": 2,
+      "explicacion": "La especie que permea y la forma iónica que pueda existir en la muestra no deben confundirse.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensores de amoniaco · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Sensibles a gases** | Un **electrodo de pH** detrás de una **membrana permeable a los gases** | **NH₃**, **CO₂**, SO₂, óxidos de nitrógeno |"
+    },
+    {
+      "id": "t24-q106",
+      "pregunta": "¿Qué otro gas se cita como medible mediante el principio de cambio interno de pH?",
+      "opciones": [
+        "Ca²⁺ como si fuera un gas",
+        "CO₂",
+        "K⁺ como si fuera un gas"
+      ],
+      "correcta": 1,
+      "explicacion": "La clasificación se refiere a especies que pueden permear y modificar el pH interno.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensores de gases · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Sensibles a gases** | Un **electrodo de pH** detrás de una **membrana permeable a los gases** | **NH₃**, **CO₂**, SO₂, óxidos de nitrógeno |"
+    },
+    {
+      "id": "t24-q107",
+      "pregunta": "¿Por qué otros gases capaces de modificar el pH pueden interferir en un sensor potenciométrico de gases?",
+      "opciones": [
+        "Porque todos los sensores identifican inequívocamente moléculas sin interferencia",
+        "Porque la referencia impide toda permeación",
+        "Porque también pueden alterar la película interna de medida"
+      ],
+      "correcta": 2,
+      "explicacion": "La respuesta al cambio de pH interno no proporciona especificidad molecular absoluta.",
+      "fuente": "Metrohm, documentación de sensores de gases; Harris, ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- Los **sensibles a gases no son un tipo nuevo de membrana**: por dentro son un electrodo de pH. El gas atraviesa la membrana, cambia el pH de una fina película de electrolito y **lo que se mide es ese cambio de pH**. Conviene entenderlo así, porque explica sus interferencias."
+    },
+    {
+      "id": "t24-q108",
+      "pregunta": "¿Qué advierte el tema al clasificar un sensor sensible a gases?",
+      "opciones": [
+        "Integra un electrodo de pH tras una membrana de difusión y no debe confundirse con un mecanismo enteramente ajeno",
+        "No necesita ningún elemento interno sensible",
+        "Es siempre una balanza de gases"
+      ],
+      "correcta": 0,
+      "explicacion": "Comprender el montaje ayuda a interpretar respuesta e interferencias.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, clasificación funcional de sensores · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- Los **sensibles a gases no son un tipo nuevo de membrana**: por dentro son un electrodo de pH. El gas atraviesa la membrana, cambia el pH de una fina película de electrolito y **lo que se mide es ese cambio de pH**. Conviene entenderlo así, porque explica sus interferencias."
+    },
+    {
+      "id": "t24-q109",
+      "pregunta": "¿Qué elemento añade un sensor enzimático al ISE del esquema?",
+      "opciones": [
+        "Una mufla como fuente de señal",
+        "Una enzima inmovilizada que transforma la sustancia en una especie detectable",
+        "Un simple cambio de color del cable"
+      ],
+      "correcta": 1,
+      "explicacion": "La transformación selectiva y la detección electroquímica cumplen funciones diferentes.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensores enzimáticos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Enzimáticos (biosensores)** | Una **enzima inmovilizada** sobre un ISE | Urea (la ureasa la convierte en amonio, que sí se mide); glucosa |"
+    },
+    {
+      "id": "t24-q110",
+      "pregunta": "En el ejemplo conceptual de urea, ¿qué especie permite la lectura tras la acción enzimática?",
+      "opciones": [
+        "Amonio generado",
+        "Oxígeno medido gravimétricamente",
+        "Cobre metálico precipitado"
+      ],
+      "correcta": 0,
+      "explicacion": "El ISE detecta una especie relacionada con la transformación, no pesa la enzima.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ejemplo de electrodo de urea · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Enzimáticos (biosensores)** | Una **enzima inmovilizada** sobre un ISE | Urea (la ureasa la convierte en amonio, que sí se mide); glucosa |"
+    },
+    {
+      "id": "t24-q111",
+      "pregunta": "¿Qué rasgo define un ISFET?",
+      "opciones": [
+        "Electrodo de calomelanos sin electrónica",
+        "Crisol filtrante de vidrio",
+        "Transistor de efecto de campo sensible a iones"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una arquitectura de transducción distinta del bulbo de vidrio tradicional.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensores ISFET · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **ISFET** | Un transistor de efecto de campo sensible a iones | pH y otros; sin vidrio, robusto, muy pequeño |"
+    },
+    {
+      "id": "t24-q112",
+      "pregunta": "¿Qué ventaja constructiva cita el tema para ISFET?",
+      "opciones": [
+        "Especificidad absoluta para todo ion",
+        "Diseño pequeño y sin bulbo de vidrio",
+        "Ausencia de necesidad de calibración para siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "La robustez física no elimina las exigencias metrológicas o químicas de medida.",
+      "fuente": "Documentación de sensores ISFET; Harris, sensores electroquímicos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **ISFET** | Un transistor de efecto de campo sensible a iones | pH y otros; sin vidrio, robusto, muy pequeño |"
+    },
+    {
+      "id": "t24-q113",
+      "pregunta": "¿Qué relación conceptual tienen el vidrio de pH y los demás ISE?",
+      "opciones": [
+        "El vidrio no guarda ninguna relación con potenciometría",
+        "Todo ISE mide exclusivamente H⁺",
+        "Aplican una respuesta selectiva de membrana a especies diferentes"
+      ],
+      "correcta": 2,
+      "explicacion": "El caso de pH ayuda a entender un principio más amplio de sensores de actividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos selectivos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q114",
+      "pregunta": "¿Quedan estas técnicas restringidas necesariamente al trabajo de campo?",
+      "opciones": [
+        "No, también pueden utilizarse en laboratorio",
+        "Solo si el agua no contiene iones",
+        "Sí, la medida en laboratorio está excluida"
+      ],
+      "correcta": 0,
+      "explicacion": "Portabilidad y capacidad de trabajo en línea no impiden un uso de laboratorio apropiado.",
+      "fuente": "ISO 5814:2012, alcance; ISO 7888:1985, aplicación · apunte §1",
+      "apartado": "1",
+      "evidencia": "El hilo común es que en los tres casos **el sensor va metido en la muestra y da el resultado en el sitio**: pueden hacerse a pie de río o en línea en una ETAP, **y también en el laboratorio**. El uso de campo no excluye el ensayo de laboratorio."
+    },
+    {
+      "id": "t24-q115",
+      "pregunta": "¿Qué diferencia principal separa la sonda electroquímica de oxígeno de un ISE potenciométrico?",
+      "opciones": [
+        "Ambos son siempre gravimetría",
+        "La sonda de oxígeno mide corriente y el ISE una diferencia de potencial con corriente despreciable",
+        "La sonda de oxígeno solo mide resistencia del agua"
+      ],
+      "correcta": 1,
+      "explicacion": "Compartir el uso de electrodos no hace idénticos sus principios de medida.",
+      "fuente": "ISO 5814:2012, fundamento electroquímico; Harris, técnicas electroanalíticas · apunte §1",
+      "apartado": "1",
+      "evidencia": "Este tema junta tres cosas que comparten familia pero no norma: los **electrodos selectivos de iones** (ISE), que son la generalización del electrodo de vidrio del tema 23 a cualquier ion; la **conductividad**, que es la medida electroquímica **inespecífica** por excelencia; y el **oxígeno disuelto por sonda**, que no es potenciometría sino **amperometría** —se mide una corriente, no un potencial—."
+    },
+    {
+      "id": "t24-q116",
+      "pregunta": "¿Qué técnica del tema proporciona una respuesta global inespecífica frente a los solutos ionizables?",
+      "opciones": [
+        "Conductividad",
+        "Electrodo de K⁺ como respuesta igual a todos los iones",
+        "ISE de fluoruro como única respuesta global"
+      ],
+      "correcta": 0,
+      "explicacion": "La conductividad integra contribuciones y no determina por sí sola la identidad de cada ion.",
+      "fuente": "ISO 7888:1985; Harris, conductividad y potenciometría · apunte §1",
+      "apartado": "1",
+      "evidencia": "Este tema junta tres cosas que comparten familia pero no norma: los **electrodos selectivos de iones** (ISE), que son la generalización del electrodo de vidrio del tema 23 a cualquier ion; la **conductividad**, que es la medida electroquímica **inespecífica** por excelencia; y el **oxígeno disuelto por sonda**, que no es potenciometría sino **amperometría** —se mide una corriente, no un potencial—."
+    },
+    {
+      "id": "t24-q117",
+      "pregunta": "¿Basta sustituir un ISE de fluoruro por uno de potasio y mantener sin revisión la calibración química?",
+      "opciones": [
+        "Sí, todo ISE tiene idéntica respuesta a cualquier ion",
+        "Solo hay que cambiar la unidad de la pantalla",
+        "No, cambian especie, membrana, interferencias y referencias de calibración"
+      ],
+      "correcta": 2,
+      "explicacion": "La selección del sensor debe corresponder al analito y al método.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, selección de sensor · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q118",
+      "pregunta": "¿Qué distinción de diseño es correcta?",
+      "opciones": [
+        "Ambos son únicamente electrodos metálicos redox de platino",
+        "Fluoruro: cristal de LaF₃; potasio con valinomicina: membrana polimérica",
+        "Ambos usan siempre la misma membrana de vidrio de pH"
+      ],
+      "correcta": 1,
+      "explicacion": "Los ejemplos enlazan especie y material de membrana.",
+      "fuente": "Metrohm, Combined dF ISE; Harris, electrodos cristalinos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- El **electrodo de fluoruro** es el ejemplo perfecto de membrana cristalina: un **monocristal de fluoruro de lantano** por el que solo migra el F⁻. Es de los más selectivos que existen."
+    },
+    {
+      "id": "t24-q119",
+      "pregunta": "Si el relleno de referencia aporta un ion interferente a la muestra, ¿qué debe revisarse?",
+      "opciones": [
+        "Solo el color del vaso",
+        "Solo la resolución del reloj",
+        "Diseño de unión y compatibilidad del electrolito de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "La referencia también forma parte del sistema químico de medida.",
+      "fuente": "Metrohm, documentación de referencia de ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Recordatorio del tema 23, en una línea: **los electrodos metálicos transfieren electrones y los de membrana transfieren iones**. Todo ISE necesita, enfrente, un **electrodo de referencia** (normalmente Ag/AgCl, muchas veces **de doble unión** para que su electrolito no contamine la muestra)."
+    },
+    {
+      "id": "t24-q120",
+      "pregunta": "¿Puede suponerse que un disolvente compatible con vidrio lo es automáticamente con una membrana de PVC e ionóforo?",
+      "opciones": [
+        "No, debe revisarse compatibilidad del material y del sensor",
+        "Solo depende de la transparencia del líquido",
+        "Sí, todos los materiales son equivalentes"
+      ],
+      "correcta": 0,
+      "explicacion": "El soporte y sus componentes pueden alterarse con el medio y condicionan la vida del electrodo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membranas poliméricas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana líquida** (intercambiador iónico o portador neutro) | Matriz polimérica, normalmente **PVC**, impregnada con un **ionóforo** | **Ca²⁺**; **K⁺ (valinomicina)**; NO₃⁻; ClO₄⁻; tensioactivos |"
+    },
+    {
+      "id": "t24-q121",
+      "pregunta": "¿Qué criterio diferencia principalmente las clases de membrana del cuadro?",
+      "opciones": [
+        "Solo capacidad del recipiente de muestra",
+        "Material y mecanismo del elemento sensible",
+        "Solo número de decimales de la pantalla"
+      ],
+      "correcta": 1,
+      "explicacion": "Una misma presentación externa puede contener mecanismos de respuesta distintos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, familias de ISE · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De estado sólido o cristalina** | Un monocristal o una pastilla prensada de sal poco soluble | **F⁻ (monocristal de LaF₃ dopado con europio)**; Cl⁻, Br⁻, I⁻ (haluro de plata + Ag₂S); Ag⁺ y S²⁻ (Ag₂S); CN⁻; Cu²⁺, Pb²⁺, Cd²⁺ |"
+    },
+    {
+      "id": "t24-q122",
+      "pregunta": "¿Qué debe evitarse al llamar «selectivo» a un electrodo?",
+      "opciones": [
+        "Interpretarlo como garantía de respuesta exclusiva sin ninguna interferencia",
+        "Conocer la referencia de la celda",
+        "Evaluar su actividad principal"
+      ],
+      "correcta": 0,
+      "explicacion": "La selectividad es una preferencia relativa que debe comprobarse en condiciones de uso.",
+      "fuente": "IUPAC Gold Book, ion-selective electrode; Harris, definición · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un **electrodo selectivo de iones (ISE)** es un electrodo indicador **de membrana** cuyo potencial responde a la **actividad de un ion determinado**. Es la generalización del electrodo de vidrio: allí el ion era el H⁺, aquí puede ser el fluoruro, el nitrato, el amonio o el calcio."
+    },
+    {
+      "id": "t24-q123",
+      "pregunta": "En la convención del tema, si aumenta la actividad de un catión, ¿qué tendencia tiene E en la zona nernstiana?",
+      "opciones": [
+        "Disminuye siempre",
+        "Permanece necesariamente fijo",
+        "Aumenta"
+      ],
+      "correcta": 2,
+      "explicacion": "El término logarítmico de la respuesta catiónica lleva signo positivo en esa convención.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Nernst para ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- El signo es **positivo para cationes** y **negativo para aniones**."
+    },
+    {
+      "id": "t24-q124",
+      "pregunta": "En la convención del tema, ¿qué efecto tiene aumentar la actividad de un anión sobre E?",
+      "opciones": [
+        "Ninguno aunque cambie la actividad",
+        "Tendencia decreciente en la zona de respuesta",
+        "Aumento idéntico al de cualquier catión"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe distinguirse el signo de respuesta de la magnitud de la pendiente.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Nernst para ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- El signo es **positivo para cationes** y **negativo para aniones**."
+    },
+    {
+      "id": "t24-q125",
+      "pregunta": "¿Qué significa una década de actividad en la respuesta del ISE?",
+      "opciones": [
+        "Un aumento fijo de un mol/L",
+        "Diez minutos de espera",
+        "Un factor diez en actividad"
+      ],
+      "correcta": 2,
+      "explicacion": "El cambio de potencial se relaciona con proporciones de actividad, no con incrementos absolutos iguales de concentración.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, escala logarítmica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **n es la carga**: un ion monovalente da **59,16 mV por década** de actividad; uno **divalente**, la mitad, **29,58 mV**."
+    },
+    {
+      "id": "t24-q126",
+      "pregunta": "¿Qué parámetro del ion explica que las pendientes teóricas monovalente y divalente tengan distinta magnitud?",
+      "opciones": [
+        "Su carga n",
+        "El volumen del recipiente",
+        "Su color"
+      ],
+      "correcta": 0,
+      "explicacion": "El divisor de carga aparece en la relación de Nernst.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pendiente de electrodo selectivo · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **n es la carga**: un ion monovalente da **59,16 mV por década** de actividad; uno **divalente**, la mitad, **29,58 mV**."
+    },
+    {
+      "id": "t24-q127",
+      "pregunta": "¿Qué condición acompaña a los valores 59,16 y 29,58 mV del cuadro?",
+      "opciones": [
+        "Cualquier temperatura sin corrección",
+        "Temperatura de 25 °C",
+        "Volumen de un litro obligatorio"
+      ],
+      "correcta": 1,
+      "explicacion": "Una pendiente tabulada necesita su temperatura de referencia.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, dependencia térmica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**E = K ± (59,16 / n) · log a(X)**  (a 25 °C, en mV)"
+    },
+    {
+      "id": "t24-q128",
+      "pregunta": "¿Qué transformación permite representar como recta una respuesta ideal de Nernst?",
+      "opciones": [
+        "Logaritmo de la actividad frente al potencial",
+        "Masa del vaso frente al tiempo de compra",
+        "Actividad sin transformar con linealidad universal"
+      ],
+      "correcta": 0,
+      "explicacion": "Confundir c con log c modifica por completo la interpretación de la curva.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calibración de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- La respuesta es **logarítmica**, así que el error relativo es el mismo en todo el intervalo. Y del tema 23: **1 mV de error ≈ 4 % en la actividad** de un monovalente, el doble en un divalente."
+    },
+    {
+      "id": "t24-q129",
+      "pregunta": "¿Qué representa γ en a = γ·(c/c°)?",
+      "opciones": [
+        "Coeficiente geométrico de la célula de conductividad",
+        "Volumen de patrón añadido",
+        "Coeficiente de actividad"
+      ],
+      "correcta": 2,
+      "explicacion": "El símbolo representa no idealidad química de la disolución, no la geometría del sensor.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, actividad iónica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones."
+    },
+    {
+      "id": "t24-q130",
+      "pregunta": "¿Por qué se escribe c/c° en una expresión rigurosa de actividad?",
+      "opciones": [
+        "Para eliminar la necesidad de conocer el analito",
+        "Para relacionar la concentración con su estado de referencia y formar una actividad adimensional",
+        "Para convertir pH en gramos"
+      ],
+      "correcta": 1,
+      "explicacion": "La actividad no debe confundirse sin más con una cifra dimensional de concentración.",
+      "fuente": "IUPAC, actividad; Harris, respuesta potenciométrica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones."
+    },
+    {
+      "id": "t24-q131",
+      "pregunta": "¿Qué permite condiciones de fuerza iónica comparables entre muestra y patrones?",
+      "opciones": [
+        "Garantizar actividad idéntica para cualquier concentración",
+        "Suprimir toda interferencia química",
+        "Hacer comparable el coeficiente de actividad en la relación señal-concentración"
+      ],
+      "correcta": 2,
+      "explicacion": "El ajuste de medio facilita la calibración, pero no proporciona especificidad absoluta.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calibración de concentración con ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones."
+    },
+    {
+      "id": "t24-q132",
+      "pregunta": "Tras añadir ajustador iónico, ¿cambia la magnitud física a la que responde la membrana?",
+      "opciones": [
+        "No; sigue respondiendo a actividad, aunque se facilite expresar concentración",
+        "Sí; pasa a medir exclusivamente volumen",
+        "Sí; pasa a pesar el ion"
+      ],
+      "correcta": 0,
+      "explicacion": "Controlar γ hace utilizable una relación con c sin cambiar el principio de transducción.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, interpretación de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones."
+    },
+    {
+      "id": "t24-q133",
+      "pregunta": "¿Qué diferencia hay entre selectividad y especificidad absoluta en un ISE?",
+      "opciones": [
+        "Selectivo significa que no puede existir interferencia",
+        "El ISE prefiere una especie pero puede responder a otras",
+        "Solo los vidrios tienen selectividad"
+      ],
+      "correcta": 1,
+      "explicacion": "La preferencia relativa se evalúa frente a especies concretas de la matriz.",
+      "fuente": "IUPAC Gold Book, P04791; Harris, selectividad · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Ningún electrodo es específico**: todos responden, en mayor o menor medida, a otros iones. Eso se recoge en la **ecuación de Nikolsky-Eisenman**, que es la de Nernst con un sumando por cada ion interferente, cada uno pesado por su **coeficiente de selectividad potenciométrico** K(X,Y)."
+    },
+    {
+      "id": "t24-q134",
+      "pregunta": "¿Qué incorpora la ecuación de Nikolsky-Eisenman respecto a la respuesta ideal de un único ion?",
+      "opciones": [
+        "Contribuciones de iones interferentes ponderadas por selectividad",
+        "Una corrección universal de cualquier volumen",
+        "Solo temperatura de la estufa"
+      ],
+      "correcta": 0,
+      "explicacion": "La ecuación permite interpretar una respuesta no exclusiva del analito.",
+      "fuente": "IUPAC Gold Book, P04791, ecuación de respuesta con interferencias · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Ningún electrodo es específico**: todos responden, en mayor o menor medida, a otros iones. Eso se recoge en la **ecuación de Nikolsky-Eisenman**, que es la de Nernst con un sumando por cada ion interferente, cada uno pesado por su **coeficiente de selectividad potenciométrico** K(X,Y)."
+    },
+    {
+      "id": "t24-q135",
+      "pregunta": "¿Qué información debe acompañar a un coeficiente de selectividad para interpretarlo adecuadamente?",
+      "opciones": [
+        "Solo la fecha de compra del vaso",
+        "Solo el tamaño del conector",
+        "Condiciones y actividades de los iones durante su determinación"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor no se interpreta como una constante descontextualizada de la medición.",
+      "fuente": "IUPAC Gold Book, P04791 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Un coeficiente menor indica mayor preferencia por el ion principal, **en las condiciones especificadas de determinación**. La contribución real también depende de actividades y cargas: **K mayor que uno no vuelve por sí solo inutilizable cualquier matriz**, si el interferente está en cantidad suficientemente baja."
+    },
+    {
+      "id": "t24-q136",
+      "pregunta": "Para iones de igual carga, ¿qué término debe compararse con la contribución del analito?",
+      "opciones": [
+        "Solo el número de patrón del certificado",
+        "Coeficiente de selectividad por actividad del interferente",
+        "Solo la masa total del recipiente"
+      ],
+      "correcta": 1,
+      "explicacion": "La contribución interferente depende a la vez de preferencia y de cuánto interferente hay.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, modelo simplificado de igual carga · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791."
+    },
+    {
+      "id": "t24-q137",
+      "pregunta": "Un electrodo tiene K pequeño frente a Y, pero Y es muchísimo más abundante que el analito. ¿Qué debe evaluarse?",
+      "opciones": [
+        "La interferencia es imposible por ser K menor que uno",
+        "Solo el color del agua",
+        "La contribución efectiva de Y puede seguir siendo importante"
+      ],
+      "correcta": 2,
+      "explicacion": "Una buena selectividad relativa no elimina una concentración interferente muy elevada.",
+      "fuente": "IUPAC Gold Book, P04791; Harris, matriz e interferencia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791."
+    },
+    {
+      "id": "t24-q138",
+      "pregunta": "¿Qué dato falta para declarar inservible un sensor solo porque K frente a Y es mayor que uno?",
+      "opciones": [
+        "La actividad real de Y y su efecto frente al analito en la muestra",
+        "La capacidad del almacén",
+        "El nombre del operador como único criterio"
+      ],
+      "correcta": 0,
+      "explicacion": "Una matriz con Y prácticamente ausente puede no presentar esa interferencia relevante.",
+      "fuente": "IUPAC Gold Book, P04791; Harris, selectividad y actividades · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791."
+    },
+    {
+      "id": "t24-q139",
+      "pregunta": "¿Qué condición necesita la interpretación sencilla «K = 10⁻³ exige mil veces más interferente» del tema?",
+      "opciones": [
+        "Cualquier par de cargas sin matices",
+        "Iones de igual carga en el modelo simplificado",
+        "Ausencia de electrodo de referencia"
+      ],
+      "correcta": 1,
+      "explicacion": "Con cargas diferentes cambia la relación de actividades en el modelo de respuesta.",
+      "fuente": "IUPAC Gold Book, P04791; modelo de Nikolsky-Eisenman · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Para iones de igual carga en el modelo simplificado, un coeficiente de 10⁻³ requiere actividad mil veces mayor del interferente para igual contribución.** No debe generalizarse esa proporción a cargas diferentes. Fuente: **IUPAC Gold Book, potentiometric selectivity coefficient, P04791** — https://goldbook.iupac.org/terms/view/P04791"
+    },
+    {
+      "id": "t24-q140",
+      "pregunta": "¿Por qué una respuesta pequeña a Na⁺ puede importar al medir H⁺ en medio muy alcalino?",
+      "opciones": [
+        "La contribución del ion principal puede ser muy baja",
+        "Porque el sodio deja de tener carga",
+        "Porque la concentración de H⁺ es máxima en toda base"
+      ],
+      "correcta": 0,
+      "explicacion": "La relevancia depende de la relación entre contribuciones, no solo de una selectividad aislada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ejemplo de error alcalino · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El **error alcalino** del electrodo de vidrio que se vio en el tema 23 no es más que esto: un coeficiente de selectividad frente al Na⁺ que deja de ser despreciable cuando el H⁺ escasea."
+    },
+    {
+      "id": "t24-q141",
+      "pregunta": "¿Qué significa intervalo lineal de un ISE en este contexto?",
+      "opciones": [
+        "Zona donde todos los iones tienen el mismo potencial",
+        "Cualquier concentración que pueda mostrar la pantalla",
+        "Zona donde E se relaciona adecuadamente con el logaritmo de actividad o concentración controlada"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe diferenciarse el campo de visualización del intervalo de respuesta útil.",
+      "fuente": "Metrohm, documentación de ISE; Harris, características de respuesta · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**."
+    },
+    {
+      "id": "t24-q142",
+      "pregunta": "Si a baja actividad la curva se aparta de la recta de respuesta, ¿qué limitación debe revisarse?",
+      "opciones": [
+        "La longitud del agitador como única causa",
+        "El límite inferior o de detección y las contribuciones de fondo",
+        "Solo la capacidad del vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "No debe extrapolarse indefinidamente una recta fuera de la región donde es válida.",
+      "fuente": "Metrohm, documentación de ISE, rango de respuesta · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**."
+    },
+    {
+      "id": "t24-q143",
+      "pregunta": "¿Qué caracteriza el tiempo de respuesta de un sensor?",
+      "opciones": [
+        "El plazo de entrega del fabricante",
+        "La duración de la vida laboral del operador",
+        "La rapidez con la que alcanza una respuesta adecuada al cambiar de disolución"
+      ],
+      "correcta": 2,
+      "explicacion": "La rapidez de respuesta no debe confundirse con la vida útil del electrodo.",
+      "fuente": "Metrohm, documentación de electrodos selectivos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**."
+    },
+    {
+      "id": "t24-q144",
+      "pregunta": "¿Por qué debe respetarse el intervalo de pH de un ISE distinto del de vidrio?",
+      "opciones": [
+        "El pH puede cambiar la especie disponible o introducir interferencias",
+        "Porque solo importa en indicadores de color",
+        "Porque cualquier ISE funciona igual entre todos los pH"
+      ],
+      "correcta": 0,
+      "explicacion": "La especiación y el material sensible condicionan el uso.",
+      "fuente": "Metrohm, documentación de ISE e interferencias · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**."
+    },
+    {
+      "id": "t24-q145",
+      "pregunta": "Una calibración antes lineal pierde sensibilidad tras uso prolongado. ¿Qué debe considerarse?",
+      "opciones": [
+        "Que la vida del electrodo es ilimitada por definición",
+        "Deterioro o contaminación de la membrana y aptitud del sensor",
+        "Que todos los patrones están bien sin comprobarlos"
+      ],
+      "correcta": 1,
+      "explicacion": "La comprobación debe revisar sensor, patrones y condiciones, sin asumir una causa única.",
+      "fuente": "Metrohm, documentación de conservación de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Respuesta **rápida** y **no destructiva** | El electrodo se **contamina** y su vida es limitada |"
+    },
+    {
+      "id": "t24-q146",
+      "pregunta": "¿Qué cautela acompaña a la ventaja de medir muestras coloreadas con ISE?",
+      "opciones": [
+        "No depende de ver un viraje, pero suciedad e interferencias pueden seguir afectando al electrodo",
+        "Nunca hace falta acondicionar el sensor",
+        "La turbidez garantiza ausencia de toda interferencia"
+      ],
+      "correcta": 0,
+      "explicacion": "La ventaja frente a detección óptica no equivale a inmunidad química o física.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ventajas y límites de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **No importa el color ni la turbidez** de la muestra | **Interferencias** de otros iones |"
+    },
+    {
+      "id": "t24-q147",
+      "pregunta": "¿Por qué se comprueba y calibra periódicamente la respuesta de un ISE?",
+      "opciones": [
+        "Porque toda recta teórica es exacta para siempre",
+        "Para cambiar el número atómico del ion",
+        "Puede cambiar con el uso y el estado de la membrana"
+      ],
+      "correcta": 2,
+      "explicacion": "El seguimiento metrológico permite detectar cambios de sensibilidad y desplazamiento.",
+      "fuente": "Metrohm, documentación de ISE; Harris, seguimiento de respuesta · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Amplísimo intervalo de concentraciones | Necesita **calibrar a menudo** |"
+    },
+    {
+      "id": "t24-q148",
+      "pregunta": "En una región nernstiana ideal, ¿qué tipo de efecto produce un mismo pequeño error de potencial al convertir a actividad?",
+      "opciones": [
+        "Ningún efecto si el sensor tiene pantalla digital",
+        "Un efecto relativo comparable, no una masa absoluta fija universal",
+        "La misma cantidad fija de mg/L en todo rango necesariamente"
+      ],
+      "correcta": 1,
+      "explicacion": "La transformación logarítmica relaciona errores eléctricos con proporciones de actividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error en respuesta logarítmica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- La respuesta es **logarítmica**, así que el error relativo es el mismo en todo el intervalo. Y del tema 23: **1 mV de error ≈ 4 % en la actividad** de un monovalente, el doble en un divalente."
+    },
+    {
+      "id": "t24-q149",
+      "pregunta": "Para el mismo pequeño error en mV, ¿qué implica una pendiente de menor magnitud para un ion divalente?",
+      "opciones": [
+        "Menor efecto necesariamente",
+        "Error nulo por ser divalente",
+        "Mayor efecto sobre el logaritmo de actividad calculado"
+      ],
+      "correcta": 2,
+      "explicacion": "La conversión divide el error de potencial por la pendiente.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sensibilidad según carga · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- La respuesta es **logarítmica**, así que el error relativo es el mismo en todo el intervalo. Y del tema 23: **1 mV de error ≈ 4 % en la actividad** de un monovalente, el doble en un divalente."
+    },
+    {
+      "id": "t24-q150",
+      "pregunta": "Al comparar K frente al mismo interferente bajo condiciones comparables, ¿qué valor indica mayor preferencia por el analito?",
+      "opciones": [
+        "El menor",
+        "El que tenga más cifras escritas",
+        "El mayor"
+      ],
+      "correcta": 0,
+      "explicacion": "La comparación debe hacerse para el mismo par de especies y condiciones pertinentes.",
+      "fuente": "IUPAC Gold Book, P04791 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Cuanto más pequeño, mejor.**\n- Un coeficiente menor indica mayor preferencia por el ion principal, **en las condiciones especificadas de determinación**. La contribución real también depende de actividades y cargas: **K mayor que uno no vuelve por sí solo inutilizable cualquier matriz**, si el interferente está en cantidad suficientemente baja."
+    },
+    {
+      "id": "t24-q151",
+      "pregunta": "¿Qué no debe confundirse con el coeficiente de selectividad de un ISE?",
+      "opciones": [
+        "La preferencia relativa frente a otro ion",
+        "La constante geométrica K de una célula de conductividad",
+        "Una magnitud de respuesta del sensor"
+      ],
+      "correcta": 1,
+      "explicacion": "El símbolo K puede designar propiedades distintas según el contexto y sus unidades.",
+      "fuente": "IUPAC Gold Book, P04791 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Ningún electrodo es específico**: todos responden, en mayor o menor medida, a otros iones. Eso se recoge en la **ecuación de Nikolsky-Eisenman**, que es la de Nernst con un sumando por cada ion interferente, cada uno pesado por su **coeficiente de selectividad potenciométrico** K(X,Y)."
+    },
+    {
+      "id": "t24-q152",
+      "pregunta": "Si un reactivo fija parte del analito en un complejo que el ISE no detecta como ion libre, ¿qué puede cambiar?",
+      "opciones": [
+        "La actividad disponible del ion y la señal",
+        "La identidad del elemento necesariamente",
+        "Solo el volumen nominal del electrodo"
+      ],
+      "correcta": 0,
+      "explicacion": "El sensor responde a la especie libre pertinente, no automáticamente a todo el elemento en cualquier forma química.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ISE y especiación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "3. **Acompleja los interferentes**: lleva **CDTA**, que secuestra **Al³⁺ y Fe³⁺**. Sin él, esos cationes forman complejos con el fluoruro y lo **esconden**, y el resultado sale bajo."
+    },
+    {
+      "id": "t24-q153",
+      "pregunta": "¿Qué debe revisarse antes de trasladar una calibración de agua simple a una matriz muy distinta?",
+      "opciones": [
+        "Solo el nombre de la muestra",
+        "Solo que el potencial tenga muchas cifras",
+        "Composición, fuerza iónica e interferentes relevantes"
+      ],
+      "correcta": 2,
+      "explicacion": "Una recta externa necesita condiciones químicas compatibles con las de la muestra.",
+      "fuente": "Metrohm, documentación de ISE, selección de método · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Intervalo lineal** (donde se cumple Nernst), **límite de detección** (donde la recta se dobla), **tiempo de respuesta**, **intervalo de pH de trabajo** e **interferencias**."
+    },
+    {
+      "id": "t24-q154",
+      "pregunta": "¿Qué ventaja general se asocia a potenciometría con ISE frente a una separación gravimétrica lenta?",
+      "opciones": [
+        "Ausencia de necesidad de patrones",
+        "Respuesta directa rápida y de baja perturbación de la muestra",
+        "Identificación completa de todos los compuestos orgánicos"
+      ],
+      "correcta": 1,
+      "explicacion": "La rapidez no equivale a mayor exactitud universal ni elimina el acondicionamiento requerido.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, características de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Respuesta **rápida** y **no destructiva** | El electrodo se **contamina** y su vida es limitada |"
+    },
+    {
+      "id": "t24-q155",
+      "pregunta": "¿Qué condición favorece el uso de ISE en campo o en línea?",
+      "opciones": [
+        "Obligación de llevar una mufla",
+        "Que el sensor no necesite alimentación ni referencia en ningún caso",
+        "Instrumentación relativamente portátil y lectura directa"
+      ],
+      "correcta": 2,
+      "explicacion": "La portabilidad permite usos fuera del laboratorio con controles adecuados.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, aplicaciones de ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Equipos **baratos y portátiles**; medida en campo y en línea | Exactitud **moderada** frente a un método instrumental |"
+    },
+    {
+      "id": "t24-q156",
+      "pregunta": "Si la actividad se multiplica siempre por el mismo factor en varios pasos, ¿cómo son idealmente los incrementos de potencial a temperatura fija?",
+      "opciones": [
+        "Iguales para ese factor y la misma carga",
+        "Necesariamente cero",
+        "Cada vez mayores por proporcionalidad directa con actividad"
+      ],
+      "correcta": 0,
+      "explicacion": "Los factores iguales corresponden a incrementos logarítmicos iguales.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, representación de respuesta · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Para expresar concentración, se distingue **a = γ·(c/c°)**: γ es el coeficiente de actividad y c° la concentración de referencia de la escala. Mantener condiciones de fuerza iónica comparables ayuda a mantener γ y relacionar señal con concentración; no significa que el electrodo deje físicamente de responder a actividad. La recta de Nernst relaciona **E con log a**, y su aplicación a log c requiere controlar esas condiciones."
+    },
+    {
+      "id": "t24-q157",
+      "pregunta": "¿Qué conclusión es adecuada al validar una determinación con ISE?",
+      "opciones": [
+        "Basta que el nombre del electrodo coincida con el analito",
+        "La selectividad debe ser suficiente para especies y niveles presentes en la matriz",
+        "Un coeficiente aislado sustituye todo ensayo de aptitud"
+      ],
+      "correcta": 1,
+      "explicacion": "La adecuación se decide por el efecto real de interferencias y las exigencias del método.",
+      "fuente": "IUPAC Gold Book, P04791; Harris, selectividad · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791."
+    },
+    {
+      "id": "t24-q158",
+      "pregunta": "¿Qué relación usa la calibración directa de concentración del ISE bajo medio controlado?",
+      "opciones": [
+        "Potencial frente al logaritmo de concentración",
+        "Masa del sensor frente a la fecha",
+        "Potencial frente al color del agua"
+      ],
+      "correcta": 0,
+      "explicacion": "La condición de medio permite relacionar actividad con concentración para esa curva.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calibración directa con ISE · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se preparan patrones del ion, se mide el potencial de cada uno y se representa **E frente al logaritmo de la concentración**. Sale una recta de pendiente ≈ 59,16/n mV, y la muestra se **interpola** en ella."
+    },
+    {
+      "id": "t24-q159",
+      "pregunta": "¿Qué debe comprobarse antes de interpolar una muestra en la recta de patrones?",
+      "opciones": [
+        "Solo que la pantalla muestre un número",
+        "Que el potencial sea mayor que cualquier patrón sin más",
+        "Que su señal y condiciones correspondan al intervalo válido de calibración"
+      ],
+      "correcta": 2,
+      "explicacion": "Interpolar dentro de un campo válido difiere de extrapolar sin justificación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, curva externa de ISE · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se preparan patrones del ion, se mide el potencial de cada uno y se representa **E frente al logaritmo de la concentración**. Sale una recta de pendiente ≈ 59,16/n mV, y la muestra se **interpola** en ella."
+    },
+    {
+      "id": "t24-q160",
+      "pregunta": "Si patrones y muestra tienen fuerza iónica muy diferente, ¿qué relación puede dejar de ser comparable?",
+      "opciones": [
+        "El número atómico del analito",
+        "El coeficiente de actividad que vincula concentración con señal",
+        "La capacidad nominal del vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "La misma concentración no implica necesariamente la misma actividad bajo medios distintos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calibración de actividad a concentración · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Condición indispensable:** patrones y muestra deben tener **la misma fuerza iónica**, porque si no, el coeficiente de actividad cambia y la lectura no es comparable. De ahí lo siguiente."
+    },
+    {
+      "id": "t24-q161",
+      "pregunta": "¿Qué finalidad tiene el fondo salino del ajustador ISA/TISAB?",
+      "opciones": [
+        "Determinar por sí solo la masa de analito",
+        "Eliminar todo ion de la muestra",
+        "Dominar y hacer comparable el medio iónico de patrones y muestras"
+      ],
+      "correcta": 2,
+      "explicacion": "Se busca un entorno comparable para interpretar la respuesta a actividad.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1, ISA/TISAB · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "1. **Fija una fuerza iónica alta y constante** en todos: el coeficiente de actividad pasa a ser el mismo, y el electrodo **puede leerse como si midiera concentración**."
+    },
+    {
+      "id": "t24-q162",
+      "pregunta": "¿Añadir TISAB hace correcta una concentración de patrón preparada con una pesada errónea?",
+      "opciones": [
+        "No; el acondicionamiento no corrige esa cantidad de sustancia",
+        "Solo si el tampón es pH 5,5",
+        "Sí; toda concentración se vuelve exacta"
+      ],
+      "correcta": 0,
+      "explicacion": "La referencia química sigue dependiendo de preparación y documentación adecuadas.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1; Harris, preparación de patrones · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia."
+    },
+    {
+      "id": "t24-q163",
+      "pregunta": "¿Qué debe mantenerse al añadir ajustador a alícuotas de distinto volumen?",
+      "opciones": [
+        "Siempre cualquier volumen fijo sin relación con la alícuota",
+        "La proporción y condiciones previstas por el método",
+        "Solo el color final"
+      ],
+      "correcta": 1,
+      "explicacion": "El objetivo es conservar condiciones comparables, no aplicar una cifra de volumen fuera de contexto.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1; método de acondicionamiento · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia."
+    },
+    {
+      "id": "t24-q164",
+      "pregunta": "¿Qué efecto cuantitativo debe considerarse si TISAB aumenta el volumen de la alícuota?",
+      "opciones": [
+        "La dilución del analito",
+        "Cambio de elemento químico",
+        "Aumento obligatorio de los moles de analito"
+      ],
+      "correcta": 0,
+      "explicacion": "La cantidad inicial puede mantenerse mientras cambia la concentración en la mezcla de medida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, concentración tras acondicionamiento · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia."
+    },
+    {
+      "id": "t24-q165",
+      "pregunta": "Además de fuerza iónica, ¿qué controla la formulación TISAB del ejemplo de fluoruro?",
+      "opciones": [
+        "La temperatura del edificio de forma automática",
+        "La constante geométrica de una célula de conductividad",
+        "El pH de trabajo"
+      ],
+      "correcta": 2,
+      "explicacion": "La especiación e interferencia dependen de condiciones de pH apropiadas.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1 y 10 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. **Tampona el pH adecuado al método**, por ejemplo alrededor de **5 - 5,5** en la formulación citada: a pH demasiado bajo disminuye el fluoruro libre por protonación a HF y HF₂⁻; **a pH demasiado alto, el OH⁻ puede interferir**. **5,5 no es un umbral universal de interferencia**: el rango depende del sensor, concentraciones y formulación. Como ejemplo, la ficha Metrohm Combined dF ISE v4 declara rango de pH 5 a 7 para ese modelo."
+    },
+    {
+      "id": "t24-q166",
+      "pregunta": "Si parte del fluoruro libre se protona en medio demasiado ácido, ¿qué puede ocurrir con la lectura del ISE?",
+      "opciones": [
+        "No cambiar por definición",
+        "Disminuir frente al contenido que se esperaba cuantificar como fluoruro libre",
+        "Aumentar siempre hasta el doble"
+      ],
+      "correcta": 1,
+      "explicacion": "La especie disponible para la respuesta de membrana puede no representar todo el contenido inicialmente considerado.",
+      "fuente": "Metrohm, Combined dF ISE; Harris, especiación del fluoruro · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. **Tampona el pH adecuado al método**, por ejemplo alrededor de **5 - 5,5** en la formulación citada: a pH demasiado bajo disminuye el fluoruro libre por protonación a HF y HF₂⁻; **a pH demasiado alto, el OH⁻ puede interferir**. **5,5 no es un umbral universal de interferencia**: el rango depende del sensor, concentraciones y formulación. Como ejemplo, la ficha Metrohm Combined dF ISE v4 declara rango de pH 5 a 7 para ese modelo."
+    },
+    {
+      "id": "t24-q167",
+      "pregunta": "¿Qué debe evitarse al estudiar el pH 5-5,5 de una formulación de TISAB?",
+      "opciones": [
+        "Consultar el rango del modelo",
+        "Respetar la formulación usada por el método",
+        "Tomar 5,5 como frontera universal de interferencia para todos los sensores y concentraciones"
+      ],
+      "correcta": 2,
+      "explicacion": "El intervalo recomendado de una preparación no equivale a una ley universal de selectividad.",
+      "fuente": "Metrohm, Combined dF ISE, rango de pH e interferencias · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. **Tampona el pH adecuado al método**, por ejemplo alrededor de **5 - 5,5** en la formulación citada: a pH demasiado bajo disminuye el fluoruro libre por protonación a HF y HF₂⁻; **a pH demasiado alto, el OH⁻ puede interferir**. **5,5 no es un umbral universal de interferencia**: el rango depende del sensor, concentraciones y formulación. Como ejemplo, la ficha Metrohm Combined dF ISE v4 declara rango de pH 5 a 7 para ese modelo."
+    },
+    {
+      "id": "t24-q168",
+      "pregunta": "¿Qué función tiene CDTA en el ejemplo de TISAB para fluoruro?",
+      "opciones": [
+        "Complejar interferentes como aluminio y hierro",
+        "Sustituir la medición de volumen",
+        "Actuar como electrodo de referencia metálico"
+      ],
+      "correcta": 0,
+      "explicacion": "El secuestro de cationes reduce su capacidad de retener fluoruro en complejos no medidos como ion libre.",
+      "fuente": "Metrohm, Combined dF ISE, ISA/TISAB · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "3. **Acompleja los interferentes**: lleva **CDTA**, que secuestra **Al³⁺ y Fe³⁺**. Sin él, esos cationes forman complejos con el fluoruro y lo **esconden**, y el resultado sale bajo."
+    },
+    {
+      "id": "t24-q169",
+      "pregunta": "¿Por qué Al³⁺ y Fe³⁺ pueden producir una lectura baja de fluoruro si no se controlan?",
+      "opciones": [
+        "Porque destruyen siempre todo el elemento flúor",
+        "Pueden formar complejos y reducir el fluoruro disponible como especie libre",
+        "Porque aumentan necesariamente la pendiente teórica"
+      ],
+      "correcta": 1,
+      "explicacion": "La interferencia química afecta a la especie que llega a cuantificar el sensor.",
+      "fuente": "Metrohm, documentación de fluoruro; Harris, complejación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "3. **Acompleja los interferentes**: lleva **CDTA**, que secuestra **Al³⁺ y Fe³⁺**. Sin él, esos cationes forman complejos con el fluoruro y lo **esconden**, y el resultado sale bajo."
+    },
+    {
+      "id": "t24-q170",
+      "pregunta": "¿Qué evaluación es incompleta para una formulación TISAB que cumple las tres funciones del ejemplo?",
+      "opciones": [
+        "Comprobar solo que aumentó la fuerza iónica, sin revisar pH ni complejación",
+        "Revisar los interferentes del método",
+        "Comprobar también el pH"
+      ],
+      "correcta": 0,
+      "explicacion": "Las funciones de acondicionamiento son complementarias y no intercambiables.",
+      "fuente": "Metrohm, documentación de TISAB para fluoruro · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se añade **el mismo volumen de una disolución concentrada** a los patrones **y** a las muestras. En el caso del **fluoruro**, el TISAB hace **tres cosas a la vez**, y hay que saber las tres:"
+    },
+    {
+      "id": "t24-q171",
+      "pregunta": "¿Por qué se prefiere una adición concentrada de volumen limitado en este método?",
+      "opciones": [
+        "Para no tener que conocer el volumen añadido",
+        "Para eliminar toda interferencia por su sola concentración",
+        "Para aumentar el analito sin modificar excesivamente matriz y volumen"
+      ],
+      "correcta": 2,
+      "explicacion": "El diseño limita perturbaciones, pero todavía requiere balance y control de condiciones.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, adición conocida · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se mide la muestra, se le añade **un volumen pequeño de un patrón concentrado** y se vuelve a medir. Del **salto de potencial** y de la dilución se despeja la concentración original."
+    },
+    {
+      "id": "t24-q172",
+      "pregunta": "¿Qué información interviene al calcular concentración por adición patrón con ISE?",
+      "opciones": [
+        "Solo el nombre del reactivo",
+        "Cambio de potencial, adición conocida, volumen y pendiente real",
+        "Solo el potencial inicial sin referencia de respuesta"
+      ],
+      "correcta": 1,
+      "explicacion": "La diferencia de señal debe vincularse con el aumento de actividad y el balance de cantidades.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, cálculo de adición conocida · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se mide la muestra, se le añade **un volumen pequeño de un patrón concentrado** y se vuelve a medir. Del **salto de potencial** y de la dilución se despeja la concentración original."
+    },
+    {
+      "id": "t24-q173",
+      "pregunta": "¿Qué ventaja práctica tiene añadir el patrón a la propia muestra en lugar de usar únicamente patrones acuosos externos?",
+      "opciones": [
+        "Eliminar por definición todos los iones interferentes",
+        "Prescindir de referencia de potencial",
+        "Mantener un entorno de matriz más comparable entre las medidas"
+      ],
+      "correcta": 2,
+      "explicacion": "La compensación tiene condiciones y no equivale a especificidad absoluta.",
+      "fuente": "IUPAC Gold Book, 08030; Metrohm, adiciones patrón · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**."
+    },
+    {
+      "id": "t24-q174",
+      "pregunta": "¿Qué clase de efecto de matriz puede compensar el principio de adiciones bajo condiciones válidas?",
+      "opciones": [
+        "Un efecto multiplicativo de respuesta",
+        "La desaparición total de toda muestra",
+        "Cualquier aporte aditivo indistinguible del analito sin otras medidas"
+      ],
+      "correcta": 0,
+      "explicacion": "La limitación distingue corrección de sensibilidad de eliminación universal de interferencias.",
+      "fuente": "IUPAC Gold Book, 08030 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**."
+    },
+    {
+      "id": "t24-q175",
+      "pregunta": "Si un ion interferente ya contribuye a la señal inicial, ¿la adición del analito permite distinguir automáticamente ambas contribuciones?",
+      "opciones": [
+        "Sí; cualquier interferente desaparece del potencial",
+        "No; puede seguir determinándose una contribución conjunta si no se controla la interferencia",
+        "Solo si el patrón tiene etiqueta azul"
+      ],
+      "correcta": 1,
+      "explicacion": "La comparación antes-después no garantiza separar señales químicamente indistinguibles.",
+      "fuente": "Metrohm, manual tiamo, principio de adiciones patrón · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**."
+    },
+    {
+      "id": "t24-q176",
+      "pregunta": "¿Sustituye la adición patrón al control de una complejación variable que oculta analito?",
+      "opciones": [
+        "No, deben verificarse especiación y condiciones del modelo",
+        "Solo si se añaden más de cinco patrones",
+        "Sí, toda adición destruye los complejos"
+      ],
+      "correcta": 0,
+      "explicacion": "La relación entre adición y señal debe conservarse para que el cálculo sea válido.",
+      "fuente": "IUPAC Gold Book, 08030; Metrohm, adiciones patrón · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**."
+    },
+    {
+      "id": "t24-q177",
+      "pregunta": "¿Por qué debe conocerse la pendiente real en el cálculo a partir de un salto de potencial?",
+      "opciones": [
+        "Solo sirve para elegir el color del frasco",
+        "Se usa únicamente para pesar la membrana",
+        "Convierte el cambio eléctrico en relación de actividades o concentraciones"
+      ],
+      "correcta": 2,
+      "explicacion": "Suponer una sensibilidad errónea sesga la cantidad calculada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, adición conocida · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su inconveniente:** es más lento y hace falta conocer la **pendiente real** del electrodo, que se comprueba con dos patrones separados una década."
+    },
+    {
+      "id": "t24-q178",
+      "pregunta": "¿Qué relación de concentraciones caracteriza dos patrones separados una década?",
+      "opciones": [
+        "Mismo valor con distinto nombre",
+        "Factor diez",
+        "Diferencia de exactamente un mol/L en todo caso"
+      ],
+      "correcta": 1,
+      "explicacion": "La separación logarítmica se expresa por cociente y no por una resta fija universal.",
+      "fuente": "Metrohm, comprobación de ISE; Harris, pendiente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su inconveniente:** es más lento y hace falta conocer la **pendiente real** del electrodo, que se comprueba con dos patrones separados una década."
+    },
+    {
+      "id": "t24-q179",
+      "pregunta": "¿Por qué no basta sumar concentración inicial y concentración del patrón para obtener la concentración tras añadirlo?",
+      "opciones": [
+        "Porque las concentraciones no tienen unidades",
+        "Porque toda adición conserva el volumen exacto inicial",
+        "Hay que sumar cantidades de sustancia y dividir por volumen final"
+      ],
+      "correcta": 2,
+      "explicacion": "Cada disolución aporta una cantidad que depende de su concentración y volumen.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, balance de cantidades en adición · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Después de añadir patrón, la concentración por balance de cantidades, antes de considerar actividades, es **c_final = (c_inicial·V_muestra + c_patron·V_adicion)/(V_muestra + V_adicion)**, suponiendo volúmenes aditivos. No basta sumar concentraciones ni ignorar el volumen añadido. La adición debe mezclar y equilibrarse antes de aceptar el nuevo potencial. El patrón concentrado limita el cambio de matriz y dilución, pero no elimina la necesidad de corregirlos."
+    },
+    {
+      "id": "t24-q180",
+      "pregunta": "¿Qué hipótesis acompaña al uso de V_muestra + V_adicion como volumen final en el modelo simplificado?",
+      "opciones": [
+        "Aditividad de los volúmenes bajo las condiciones consideradas",
+        "Que toda disolución tiene densidad uno",
+        "Que el patrón no contiene analito"
+      ],
+      "correcta": 0,
+      "explicacion": "Las hipótesis de cálculo deben corresponder al procedimiento y la exactitud necesarios.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, modelo de mezcla · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Después de añadir patrón, la concentración por balance de cantidades, antes de considerar actividades, es **c_final = (c_inicial·V_muestra + c_patron·V_adicion)/(V_muestra + V_adicion)**, suponiendo volúmenes aditivos. No basta sumar concentraciones ni ignorar el volumen añadido. La adición debe mezclar y equilibrarse antes de aceptar el nuevo potencial. El patrón concentrado limita el cambio de matriz y dilución, pero no elimina la necesidad de corregirlos."
+    },
+    {
+      "id": "t24-q181",
+      "pregunta": "Después de añadir patrón, ¿qué se requiere antes de aceptar el siguiente potencial?",
+      "opciones": [
+        "Leer inmediatamente sin considerar estabilidad",
+        "Mezcla y equilibrio adecuados del sistema",
+        "Registrar solo el salto visual del líquido"
+      ],
+      "correcta": 1,
+      "explicacion": "La señal debe representar la nueva condición homogénea y no una zona local de patrón.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Después de añadir patrón, la concentración por balance de cantidades, antes de considerar actividades, es **c_final = (c_inicial·V_muestra + c_patron·V_adicion)/(V_muestra + V_adicion)**, suponiendo volúmenes aditivos. No basta sumar concentraciones ni ignorar el volumen añadido. La adición debe mezclar y equilibrarse antes de aceptar el nuevo potencial. El patrón concentrado limita el cambio de matriz y dilución, pero no elimina la necesidad de corregirlos."
+    },
+    {
+      "id": "t24-q182",
+      "pregunta": "¿Qué condición térmica debe cuidarse entre patrones y muestras del ejemplo de ISE?",
+      "opciones": [
+        "Temperaturas lo más comparables y estables posible",
+        "Temperatura desconocida por usar un ISE",
+        "Patrones muy fríos y muestra muy caliente sin corrección"
+      ],
+      "correcta": 0,
+      "explicacion": "La sensibilidad y la química dependen de temperatura.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q183",
+      "pregunta": "¿Qué seguimiento del funcionamiento recomienda la ficha de ISE citada?",
+      "opciones": [
+        "Conservar para siempre la primera recta sin comprobar",
+        "Reemplazar toda comprobación por mirar el cable",
+        "Medida periódica de control con patrón"
+      ],
+      "correcta": 2,
+      "explicacion": "El control permite detectar cambios antes de interpretar muestras con una curva desactualizada.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q184",
+      "pregunta": "Un patrón de control se desvía de forma inaceptable. ¿Qué debe revisarse antes de seguir informando muestras?",
+      "opciones": [
+        "Solo la fecha de impresión del manual",
+        "Estado del sistema y necesidad de renovar la curva de calibración",
+        "Solo el nombre de la hoja de cálculo"
+      ],
+      "correcta": 1,
+      "explicacion": "La referencia de control evalúa si la relación de respuesta sigue siendo utilizable.",
+      "fuente": "Metrohm, Combined dF ISE, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q185",
+      "pregunta": "¿Qué condición física del sensor se revisa al investigar una respuesta anómala?",
+      "opciones": [
+        "Solo el precio de la membrana",
+        "Solo la altura del vaso vacío",
+        "Superficie limpia e íntegra, junto a conexión y funcionamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "Contaminación o daños pueden cambiar sensibilidad, tiempos de respuesta y linealidad.",
+      "fuente": "Metrohm, Combined dF ISE, apartados 6 y 7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q186",
+      "pregunta": "Una ficha fija un mínimo de pendiente para su ISE. ¿Puede trasladarse sin más al electrodo de pH de otro fabricante?",
+      "opciones": [
+        "No; debe usarse la especificación del modelo y método aplicables",
+        "Solo si ambos conectores son del mismo color",
+        "Sí, toda pendiente tiene el mismo porcentaje mínimo"
+      ],
+      "correcta": 0,
+      "explicacion": "Los criterios de aptitud no se deducen de la apariencia del sensor.",
+      "fuente": "Metrohm, Combined dF ISE, 6.3; manual de sensor · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q187",
+      "pregunta": "En una valoración con ISE, ¿qué uso se hace principalmente de la señal?",
+      "opciones": [
+        "Convertir siempre una lectura aislada en concentración por recta externa",
+        "Seguir la transición para localizar un punto final",
+        "Pesar el precipitado en el propio electrodo"
+      ],
+      "correcta": 1,
+      "explicacion": "El papel del ISE cambia respecto a la potenciometría directa.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, valoración con ISE · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El electrodo hace de **detector del punto final** de una volumetría, como en el tema 23. Puede ofrecer alta exactitud cuando la reacción y detección están bien definidas; una inflexión no depende de un desplazamiento constante de todo el potencial. **No es una garantía universal de superioridad**: importan interferencias, cinética, forma de curva y control del valorante."
+    },
+    {
+      "id": "t24-q188",
+      "pregunta": "¿Qué cambio no desplaza por sí solo la inflexión en volumen de una curva ideal?",
+      "opciones": [
+        "Un offset constante añadido a toda la señal",
+        "Una respuesta inestable que deforma la curva",
+        "Una alteración química que cambia la reacción"
+      ],
+      "correcta": 0,
+      "explicacion": "Traslación vertical y deformación de respuesta son efectos distintos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, inflexión de valoración · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El electrodo hace de **detector del punto final** de una volumetría, como en el tema 23. Puede ofrecer alta exactitud cuando la reacción y detección están bien definidas; una inflexión no depende de un desplazamiento constante de todo el potencial. **No es una garantía universal de superioridad**: importan interferencias, cinética, forma de curva y control del valorante."
+    },
+    {
+      "id": "t24-q189",
+      "pregunta": "¿Cómo debe interpretarse que una valoración pueda ofrecer alta exactitud frente a potenciometría directa?",
+      "opciones": [
+        "Como demostración de que toda valoración supera siempre cualquier otro método",
+        "Como permiso para ignorar el título del valorante",
+        "Como ventaja condicionada a reacción y detección adecuadas"
+      ],
+      "correcta": 2,
+      "explicacion": "La aptitud se evalúa con las condiciones y exigencias reales del método.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, elección de método · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El electrodo hace de **detector del punto final** de una volumetría, como en el tema 23. Puede ofrecer alta exactitud cuando la reacción y detección están bien definidas; una inflexión no depende de un desplazamiento constante de todo el potencial. **No es una garantía universal de superioridad**: importan interferencias, cinética, forma de curva y control del valorante."
+    },
+    {
+      "id": "t24-q190",
+      "pregunta": "Para muchas muestras de matriz sencilla y controlada, ¿qué estrategia puede ser eficiente?",
+      "opciones": [
+        "Imposibilidad de usar ISE",
+        "Calibración directa adecuada",
+        "Adición patrón obligatoria por definición en toda muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "La estrategia se elige según matriz, rendimiento y exactitud, no por una jerarquía rígida universal.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, selección de estrategia · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Regla para el examen:** directa si la matriz es sencilla y hay muchas muestras; adiciones patrón si la matriz es complicada; valoración si se quiere exactitud."
+    },
+    {
+      "id": "t24-q191",
+      "pregunta": "¿Qué debe verificarse en los patrones usados para la curva o adiciones?",
+      "opciones": [
+        "Solo que sean transparentes",
+        "Solo el volumen exterior del frasco",
+        "Concentración, identificación, conservación y vigencia pertinentes"
+      ],
+      "correcta": 2,
+      "explicacion": "El cálculo necesita una referencia química fiable además de un sensor que responda bien.",
+      "fuente": "Metrohm, documentación de ISE; Harris, trazabilidad de patrones · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia."
+    },
+    {
+      "id": "t24-q192",
+      "pregunta": "¿Qué puede invalidar la hipótesis de matriz suficientemente constante al añadir patrón?",
+      "opciones": [
+        "Cambiar de forma importante pH, fuerza iónica o especiación",
+        "Mezclar antes de leer",
+        "Registrar cuidadosamente el volumen añadido"
+      ],
+      "correcta": 0,
+      "explicacion": "La perturbación de condiciones puede impedir que la comparación represente el modelo supuesto.",
+      "fuente": "IUPAC Gold Book, 08030; Metrohm, adición conocida · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Su ventaja es la comparación en la propia muestra.** Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias. Se consideran cambios de volumen, fuerza iónica, pH y especiación. Los iones interferentes ya presentes pueden seguir contribuyendo a la señal, y una complejación no controlada no desaparece por añadir patrón. Es útil cuando la matriz es compleja o no puede reproducirse en patrones externos, bajo condiciones validadas. Fuentes: **IUPAC Gold Book, measurement procedure with standard addition, 08030** (https://doi.org/10.1351/goldbook.08030) y **Metrohm, manual tiamo, principio de adiciones patrón**."
+    },
+    {
+      "id": "t24-q193",
+      "pregunta": "Si la resistencia de una muestra disminuye a la mitad en el mismo montaje, ¿qué ocurre con su conductancia?",
+      "opciones": [
+        "Se reduce a la mitad",
+        "Se duplica",
+        "No cambia"
+      ],
+      "correcta": 1,
+      "explicacion": "La relación es inversa, G = 1/R.",
+      "fuente": "Mettler Toledo, A Guide to Conductivity Measurement, §2.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Conductancia** | G | **G = 1 / R** | **S** (siemens) |"
+    },
+    {
+      "id": "t24-q194",
+      "pregunta": "¿Qué diferencia distingue conductancia y conductividad?",
+      "opciones": [
+        "La primera depende del montaje y se convierte a la segunda con la constante de célula",
+        "La conductancia mide solo cloruro",
+        "Son siempre la misma magnitud y unidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La constante permite referir la respuesta a la geometría del sistema.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Interpretación y precauciones.** Conductancia G y conductividad κ no son lo mismo: la primera depende también de la geometría del montaje y la segunda se obtiene aplicando la constante. Dos células pueden dar distinta G para la misma muestra y obtener la misma κ si sus constantes se aplican correctamente. La resistencia disminuye cuando aumenta la conductancia, y resistividad y conductividad son inversas con unidades coherentes."
+    },
+    {
+      "id": "t24-q195",
+      "pregunta": "Con el mismo área de electrodos, ¿qué efecto ideal tiene duplicar su separación sobre K = l/A?",
+      "opciones": [
+        "Reduce K a la mitad",
+        "No modifica K",
+        "Duplica K"
+      ],
+      "correcta": 2,
+      "explicacion": "La definición geométrica relaciona longitud recorrida con área disponible.",
+      "fuente": "Mettler Toledo, guía de conductividad, constante de célula · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Constante de célula** | **K** | **K = l / A** (separación entre electrodos dividida por su superficie) | **cm⁻¹** |"
+    },
+    {
+      "id": "t24-q196",
+      "pregunta": "Si se duplica el área manteniendo la separación en el modelo geométrico, ¿qué sucede con K?",
+      "opciones": [
+        "Se mantiene necesariamente",
+        "Se reduce a la mitad",
+        "Se duplica"
+      ],
+      "correcta": 1,
+      "explicacion": "El área aparece en el denominador de la constante.",
+      "fuente": "Mettler Toledo, guía de conductividad, constante de célula · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Constante de célula** | **K** | **K = l / A** (separación entre electrodos dividida por su superficie) | **cm⁻¹** |"
+    },
+    {
+      "id": "t24-q197",
+      "pregunta": "¿Qué unidad corresponde a l/A si l está en cm y A en cm²?",
+      "opciones": [
+        "cm³",
+        "S",
+        "cm⁻¹"
+      ],
+      "correcta": 2,
+      "explicacion": "La constante es una longitud inversa y no una conductancia.",
+      "fuente": "Mettler Toledo, guía de conductividad, unidades de constante · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Constante de célula** | **K** | **K = l / A** (separación entre electrodos dividida por su superficie) | **cm⁻¹** |"
+    },
+    {
+      "id": "t24-q198",
+      "pregunta": "Dos sondas de constante distinta miden la misma agua. ¿Qué puede ser correcto?",
+      "opciones": [
+        "Distintas conductancias y la misma conductividad tras aplicar cada constante",
+        "Conductividad independiente de cualquier corrección de célula",
+        "Conductancias siempre idénticas por definición"
+      ],
+      "correcta": 0,
+      "explicacion": "La magnitud intrínseca debe obtenerse con el factor de cada montaje.",
+      "fuente": "Mettler Toledo, guía de conductividad, geometría de medida · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Interpretación y precauciones.** Conductancia G y conductividad κ no son lo mismo: la primera depende también de la geometría del montaje y la segunda se obtiene aplicando la constante. Dos células pueden dar distinta G para la misma muestra y obtener la misma κ si sus constantes se aplican correctamente. La resistencia disminuye cuando aumenta la conductancia, y resistividad y conductividad son inversas con unidades coherentes."
+    },
+    {
+      "id": "t24-q199",
+      "pregunta": "¿Qué unidad corresponde a conductancia y no a conductividad?",
+      "opciones": [
+        "Siemens por metro",
+        "Siemens",
+        "Microsiemens por centímetro"
+      ],
+      "correcta": 1,
+      "explicacion": "La conductividad incorpora la dimensión de longitud inversa.",
+      "fuente": "Mettler Toledo, guía de conductividad, magnitudes · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Conductancia** | G | **G = 1 / R** | **S** (siemens) |"
+    },
+    {
+      "id": "t24-q200",
+      "pregunta": "¿Qué debe revisarse si un informe confunde S con S/m?",
+      "opciones": [
+        "Si está informando conductancia o conductividad",
+        "Solo la temperatura del patrón de pH",
+        "Solo el número de decimales"
+      ],
+      "correcta": 0,
+      "explicacion": "Cambiar u omitir la unidad puede cambiar la magnitud física declarada.",
+      "fuente": "ISO 7888:1985, conductividad; Mettler Toledo, unidades · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Conductividad** | **κ** | **κ = G · K** | **S/m**; en la práctica **mS/m** y **µS/cm** |"
+    },
+    {
+      "id": "t24-q201",
+      "pregunta": "¿Qué ocurre con la resistividad cuando aumenta la conductividad, manteniendo unidades coherentes?",
+      "opciones": [
+        "Aumenta necesariamente en el mismo factor",
+        "Permanece fija por ser otra propiedad",
+        "Disminuye"
+      ],
+      "correcta": 2,
+      "explicacion": "Son magnitudes recíprocas, no sinónimos de igual valor.",
+      "fuente": "Mettler Toledo, guía de conductividad, resistividad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Resistividad | ρ | ρ = 1 / κ | Ω·cm |"
+    },
+    {
+      "id": "t24-q202",
+      "pregunta": "¿Qué relación permite obtener resistencia a partir de tensión y corriente?",
+      "opciones": [
+        "R = I/V como definición de resistencia",
+        "R = V/I",
+        "R = V·I siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "El cociente inverso I/V corresponde a conductancia en ese modelo.",
+      "fuente": "Mettler Toledo, guía de conductividad, §§2.2 y 2.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Lo que ha caído: 1322, n.º 17.** «¿En qué ley está basada la medida de la conductividad en el agua?» Respuesta oficial: **la ley de Ohm**. Los distractores eran la **ley de Beer-Lambert** (la de la espectrofotometría, tema 25) y la **ley de Gay-Lussac** (la de los gases). La guía de Mettler Toledo lo explica así: según la ley de Ohm, la tensión aplicada a la disolución es proporcional a la corriente que pasa, **V = R · I**. El conductivímetro aplica una tensión conocida, mide la corriente y obtiene la **resistencia, R = V / I**; su inversa es la **conductancia, G = 1 / R**, y con la constante de célula se llega a la conductividad, como en la tabla de arriba. La misma guía añade que se mide con **corriente alterna**: con corriente continua los iones emigran a los electrodos y la electrólisis altera la muestra."
+    },
+    {
+      "id": "t24-q203",
+      "pregunta": "¿Qué problema favorece aplicar corriente continua sin el diseño apropiado en esta medida?",
+      "opciones": [
+        "Compensación térmica perfecta",
+        "Eliminación de toda resistencia",
+        "Polarización y alteración electroquímica de la muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "La medida habitual usa alterna para limitar esos efectos.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.4 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Lo que ha caído: 1322, n.º 17.** «¿En qué ley está basada la medida de la conductividad en el agua?» Respuesta oficial: **la ley de Ohm**. Los distractores eran la **ley de Beer-Lambert** (la de la espectrofotometría, tema 25) y la **ley de Gay-Lussac** (la de los gases). La guía de Mettler Toledo lo explica así: según la ley de Ohm, la tensión aplicada a la disolución es proporcional a la corriente que pasa, **V = R · I**. El conductivímetro aplica una tensión conocida, mide la corriente y obtiene la **resistencia, R = V / I**; su inversa es la **conductancia, G = 1 / R**, y con la constante de célula se llega a la conductividad, como en la tabla de arriba. La misma guía añade que se mide con **corriente alterna**: con corriente continua los iones emigran a los electrodos y la electrólisis altera la muestra."
+    },
+    {
+      "id": "t24-q204",
+      "pregunta": "¿Qué limitación del diseño de dos electrodos se vuelve importante en conductividades elevadas?",
+      "opciones": [
+        "Efectos de polarización",
+        "Ausencia de contacto con el líquido",
+        "Imposibilidad de cualquier calibración"
+      ],
+      "correcta": 0,
+      "explicacion": "El diseño debe seleccionarse para el intervalo de trabajo.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.5 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "![Célula de conductividad de dos electrodos: la constante de célula es la separación dividida por la superficie](esquema:celda-conductividad)"
+    },
+    {
+      "id": "t24-q205",
+      "pregunta": "¿Cómo se reparten las funciones en una célula de cuatro electrodos?",
+      "opciones": [
+        "Los cuatro solo agitan la muestra",
+        "Un par aplica corriente y otro mide tensión",
+        "Cada uno mide un ion específico distinto"
+      ],
+      "correcta": 1,
+      "explicacion": "La separación de funciones limita efectos asociados al montaje de dos polos.",
+      "fuente": "Mettler Toledo, guía de conductividad, célula de cuatro polos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **De cuatro electrodos** | Dos inyectan corriente y **dos miden la tensión** | Evita la polarización y la resistencia de los cables. **Intervalo mucho más amplio** |"
+    },
+    {
+      "id": "t24-q206",
+      "pregunta": "Además de ampliar intervalo, ¿qué influencia busca reducir el diseño de cuatro polos?",
+      "opciones": [
+        "Efecto de resistencia de conexiones y polarización en la lectura",
+        "Toda contribución de los iones a la señal",
+        "La necesidad de saber temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "No por ello deja de requerir control metrológico y uso apropiado.",
+      "fuente": "Mettler Toledo, guía de conductividad, cuatro polos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **De cuatro electrodos** | Dos inyectan corriente y **dos miden la tensión** | Evita la polarización y la resistencia de los cables. **Intervalo mucho más amplio** |"
+    },
+    {
+      "id": "t24-q207",
+      "pregunta": "¿Qué elementos caracterizan una medida inductiva o toroidal?",
+      "opciones": [
+        "Dos membranas de vidrio para pH",
+        "Una balanza que pesa las sales",
+        "Bobinas sin electrodos metálicos en contacto eléctrico con la muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "El acoplamiento electromagnético evita determinados problemas del contacto metálico directo.",
+      "fuente": "Mettler Toledo, principios de sensores de conductividad; documentación de sondas inductivas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Inductiva o toroidal** | Dos bobinas; **sin contacto eléctrico** con el líquido | Aguas sucias, corrosivas o que incrustan; conductividades altas; medida en línea |"
+    },
+    {
+      "id": "t24-q208",
+      "pregunta": "¿Puede dejarse sin limpieza cualquier sonda inductiva por no tener electrodos metálicos expuestos?",
+      "opciones": [
+        "Solo importa el color exterior",
+        "No, deben mantenerse las superficies y condiciones de uso del diseño",
+        "Sí, ninguna incrustación puede afectarle"
+      ],
+      "correcta": 1,
+      "explicacion": "La ventaja de diseño no elimina toda influencia de suciedad o depósitos.",
+      "fuente": "Mettler Toledo, guía de conductividad, conservación de sensores · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En aguas muy poco conductoras, **el CO₂ del aire puede aumentar la lectura** al formar especies iónicas. Una célula de flujo apropiada puede limitar ese intercambio. Las burbujas adheridas pueden **aumentar resistencia y reducir conductividad aparente**; agitar no debe introducir nuevas burbujas. Incluso una sonda inductiva requiere conservación y limpieza de superficies según su diseño: ausencia de electrodos metálicos en contacto no implica inmunidad a toda incrustación. Fuente: **Mettler Toledo, A Guide to Conductivity Measurement, §§2.6, 2.7 y 3**."
+    },
+    {
+      "id": "t24-q209",
+      "pregunta": "¿Qué valor debe conocerse en el patrón usado para determinar K?",
+      "opciones": [
+        "Solo concentración nominal de una sal sin temperatura",
+        "Solo volumen del frasco",
+        "Conductividad en las condiciones del ensayo"
+      ],
+      "correcta": 2,
+      "explicacion": "La referencia es la conductividad del patrón correspondiente a la temperatura pertinente.",
+      "fuente": "ISO 7888:1985; Mettler Toledo, calibración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "No se calibra el aparato contra una escala, se determina **la constante de la célula** con una **disolución patrón de KCl** de conductividad conocida:"
+    },
+    {
+      "id": "t24-q210",
+      "pregunta": "¿Por qué se elige un patrón de conductividad próximo al intervalo de muestras?",
+      "opciones": [
+        "Para comprobar la respuesta en una región representativa del uso",
+        "Porque todo patrón sirve exactamente igual para cualquier alcance",
+        "Para evitar identificar la temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "La selección debe corresponder a la célula y a las exigencias del intervalo.",
+      "fuente": "Mettler Toledo, guía de conductividad, selección de patrón · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Se elige el patrón **del mismo orden de magnitud** que las muestras. Y la constante **se vuelve a comprobar periódicamente**, porque el platinado de los electrodos se degrada con el uso y con la suciedad."
+    },
+    {
+      "id": "t24-q211",
+      "pregunta": "¿Por qué no se conserva sin revisar indefinidamente una constante de célula obtenida al principio?",
+      "opciones": [
+        "Porque K cambia siempre cada minuto de forma conocida",
+        "El uso, depósitos y estado de superficie pueden alterar la respuesta",
+        "Porque toda sonda se vuelve patrón primario"
+      ],
+      "correcta": 1,
+      "explicacion": "Las comprobaciones detectan cambios del sistema respecto a su caracterización inicial.",
+      "fuente": "Mettler Toledo, guía de conductividad, seguimiento de célula · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Se elige el patrón **del mismo orden de magnitud** que las muestras. Y la constante **se vuelve a comprobar periódicamente**, porque el platinado de los electrodos se degrada con el uso y con la suciedad."
+    },
+    {
+      "id": "t24-q212",
+      "pregunta": "Al usar el dato 1.413 µS/cm de un patrón de KCl, ¿qué condición no debe omitirse?",
+      "opciones": [
+        "La temperatura a la que corresponde ese valor",
+        "El volumen de muestra de otro análisis",
+        "Solo el color del tapón"
+      ],
+      "correcta": 0,
+      "explicacion": "Un valor de conductividad del patrón no es independiente de temperatura.",
+      "fuente": "Catálogo de patrones de KCl; Mettler Toledo, guía de conductividad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Los valores de conductividad de los patrones de la tabla corresponden a **25 °C**."
+    },
+    {
+      "id": "t24-q213",
+      "pregunta": "Dos resultados de conductividad numéricamente iguales están referidos a 20 y 25 °C. ¿Pueden considerarse directamente equivalentes sin revisar corrección?",
+      "opciones": [
+        "Sí, basta que tengan las mismas unidades",
+        "Solo si ambos usan KCl",
+        "No, debe considerarse la referencia térmica"
+      ],
+      "correcta": 2,
+      "explicacion": "El resultado corregido depende de la temperatura de referencia y del modelo de compensación.",
+      "fuente": "ISO 7888:1985; Mettler Toledo, efectos térmicos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Todo resultado va referido a una temperatura**, y los aparatos la compensan automáticamente."
+    },
+    {
+      "id": "t24-q214",
+      "pregunta": "¿Cómo se interpreta el orden de 2 % por grado citado para conductividad?",
+      "opciones": [
+        "Como regla que también fija directamente el pH",
+        "Como aproximación que depende de composición y condiciones",
+        "Como constante exacta legal para toda disolución"
+      ],
+      "correcta": 1,
+      "explicacion": "El coeficiente térmico puede variar entre aguas y regiones de temperatura.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.6 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse."
+    },
+    {
+      "id": "t24-q215",
+      "pregunta": "¿Qué debe comprobarse al activar compensación de temperatura?",
+      "opciones": [
+        "Solo que aparezca un icono en pantalla",
+        "Solo que se omita la temperatura del informe",
+        "Modelo apropiado y temperatura de referencia seleccionada"
+      ],
+      "correcta": 2,
+      "explicacion": "Una compensación incorrecta puede producir un resultado normalizado incorrecto.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.6 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse."
+    },
+    {
+      "id": "t24-q216",
+      "pregunta": "¿Es válido convertir un resultado referido a 25 °C en uno a 20 °C cambiando solo la etiqueta?",
+      "opciones": [
+        "No, requiere la conversión o medición pertinente",
+        "Solo si la lectura tiene tres decimales",
+        "Sí, es solo una diferencia de nombre"
+      ],
+      "correcta": 0,
+      "explicacion": "El cambio de referencia afecta al valor numérico esperado.",
+      "fuente": "Mettler Toledo, guía de conductividad, compensación térmica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse."
+    },
+    {
+      "id": "t24-q217",
+      "pregunta": "¿Qué información ayuda a interpretar una lectura con compensación activa?",
+      "opciones": [
+        "Solo la hora de comida",
+        "Si es medida a T o corregida a una T de referencia, y el modelo aplicado",
+        "Solo el tamaño del sensor"
+      ],
+      "correcta": 1,
+      "explicacion": "El mismo número puede representar condiciones térmicas distintas.",
+      "fuente": "Mettler Toledo, guía de conductividad, registro de resultados · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse."
+    },
+    {
+      "id": "t24-q218",
+      "pregunta": "Una burbuja ocupa parte de la superficie de medida. ¿Qué efecto puede provocar?",
+      "opciones": [
+        "Lectura aparente reducida o inestable por aumento de resistencia efectiva",
+        "Conversión del método en potenciometría",
+        "Conductividad necesariamente mayor y exacta"
+      ],
+      "correcta": 0,
+      "explicacion": "Se debe revisar contacto y retirar burbujas de acuerdo con el uso del sensor.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.7.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q219",
+      "pregunta": "¿Qué colocación debe evitarse al medir con la célula que requiere espacio libre?",
+      "opciones": [
+        "Respetar su marca de inmersión",
+        "Mantener las superficies limpias",
+        "Apoyarla contra fondo o paredes alterando el campo de medida"
+      ],
+      "correcta": 2,
+      "explicacion": "La geometría efectiva de medición debe conservar las condiciones previstas para la célula.",
+      "fuente": "Mettler Toledo, guía de conductividad, uso de célula · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q220",
+      "pregunta": "¿Por qué se respeta la profundidad de inmersión del modelo?",
+      "opciones": [
+        "Para sustituir la referencia de temperatura",
+        "Para establecer contacto y geometría de medida adecuados",
+        "Para determinar por sí sola concentración de fluoruro"
+      ],
+      "correcta": 1,
+      "explicacion": "Una inmersión insuficiente puede dejar parte del sistema fuera de sus condiciones de funcionamiento.",
+      "fuente": "Mettler Toledo, guía de conductividad, inmersión del sensor · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q221",
+      "pregunta": "¿Qué objetivo tiene enjuagar con la propia muestra antes de medir conductividad?",
+      "opciones": [
+        "Cambiar la composición de la muestra a un patrón universal",
+        "Medir un volumen exacto de muestra",
+        "Limitar arrastre y dilución por líquido residual"
+      ],
+      "correcta": 2,
+      "explicacion": "La contaminación por residuos resulta especialmente importante en aguas poco conductoras.",
+      "fuente": "Mettler Toledo, guía de conductividad, acondicionamiento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q222",
+      "pregunta": "¿Por qué debe retirarse una película de grasa de la célula?",
+      "opciones": [
+        "Puede alterar respuesta y constante efectiva",
+        "Porque transforma todos los iones en materia orgánica",
+        "Porque aumenta siempre la exactitud"
+      ],
+      "correcta": 0,
+      "explicacion": "El estado de superficie forma parte de las condiciones de medición.",
+      "fuente": "Mettler Toledo, guía de conductividad, limpieza · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Cuidados:** electrodos limpios (una película de grasa cambia la constante), **sin burbujas** entre las placas, célula sumergida hasta su marca y sin tocar el fondo ni las paredes, y enjuagada con la propia muestra antes de medir."
+    },
+    {
+      "id": "t24-q223",
+      "pregunta": "Una muestra de muy baja conductividad aumenta su lectura al permanecer abierta al aire. ¿Qué contribución debe considerarse?",
+      "opciones": [
+        "Solo aumento inevitable de cloruro sin ninguna fuente",
+        "Disolución de CO₂ y formación de especies iónicas",
+        "Ausencia de toda modificación química"
+      ],
+      "correcta": 1,
+      "explicacion": "El intercambio con el ambiente puede ser relevante aunque no se añada sal deliberadamente.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.7.1 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En aguas muy poco conductoras, **el CO₂ del aire puede aumentar la lectura** al formar especies iónicas. Una célula de flujo apropiada puede limitar ese intercambio. Las burbujas adheridas pueden **aumentar resistencia y reducir conductividad aparente**; agitar no debe introducir nuevas burbujas. Incluso una sonda inductiva requiere conservación y limpieza de superficies según su diseño: ausencia de electrodos metálicos en contacto no implica inmunidad a toda incrustación. Fuente: **Mettler Toledo, A Guide to Conductivity Measurement, §§2.6, 2.7 y 3**."
+    },
+    {
+      "id": "t24-q224",
+      "pregunta": "¿Qué puede ayudar a limitar el intercambio de CO₂ con aire durante una medida de baja conductividad?",
+      "opciones": [
+        "Un sistema de flujo apropiado que reduzca exposición",
+        "Dejar la muestra abierta varias horas",
+        "Agitar con entrada abundante de aire sin considerar el efecto"
+      ],
+      "correcta": 0,
+      "explicacion": "El montaje debe conservar la muestra y representar el parámetro de interés.",
+      "fuente": "Mettler Toledo, guía de conductividad, medición de aguas poco conductoras · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En aguas muy poco conductoras, **el CO₂ del aire puede aumentar la lectura** al formar especies iónicas. Una célula de flujo apropiada puede limitar ese intercambio. Las burbujas adheridas pueden **aumentar resistencia y reducir conductividad aparente**; agitar no debe introducir nuevas burbujas. Incluso una sonda inductiva requiere conservación y limpieza de superficies según su diseño: ausencia de electrodos metálicos en contacto no implica inmunidad a toda incrustación. Fuente: **Mettler Toledo, A Guide to Conductivity Measurement, §§2.6, 2.7 y 3**."
+    },
+    {
+      "id": "t24-q225",
+      "pregunta": "¿Qué precaución acompaña al uso de agitación para estabilizar una medida de conductividad?",
+      "opciones": [
+        "Aspirar aire continuamente para subir la lectura",
+        "Ignorar el equilibrio de temperatura",
+        "No generar burbujas que interfieran con el contacto de medida"
+      ],
+      "correcta": 2,
+      "explicacion": "La mezcla puede ayudar, pero debe evitar introducir otra fuente de error.",
+      "fuente": "Mettler Toledo, guía de conductividad, §3 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En aguas muy poco conductoras, **el CO₂ del aire puede aumentar la lectura** al formar especies iónicas. Una célula de flujo apropiada puede limitar ese intercambio. Las burbujas adheridas pueden **aumentar resistencia y reducir conductividad aparente**; agitar no debe introducir nuevas burbujas. Incluso una sonda inductiva requiere conservación y limpieza de superficies según su diseño: ausencia de electrodos metálicos en contacto no implica inmunidad a toda incrustación. Fuente: **Mettler Toledo, A Guide to Conductivity Measurement, §§2.6, 2.7 y 3**."
+    },
+    {
+      "id": "t24-q226",
+      "pregunta": "¿Qué debe evitarse al convertir conductividad en sólidos disueltos totales?",
+      "opciones": [
+        "Conocer las unidades de la lectura",
+        "Aplicar un factor universal sin considerar composición y validación",
+        "Declarar el factor utilizado"
+      ],
+      "correcta": 1,
+      "explicacion": "La conversión es una estimación dependiente de la matriz, no identidad física universal.",
+      "fuente": "Mettler Toledo, guía de conductividad, conversión a TDS · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Convertir conductividad a sólidos disueltos requiere **un factor empírico dependiente de la composición**, no una equivalencia universal. Una conductividad similar no identifica los mismos iones ni demuestra igual calidad de dos aguas."
+    },
+    {
+      "id": "t24-q227",
+      "pregunta": "Dos aguas tienen la misma conductividad a la misma temperatura. ¿Qué no se demuestra solo con ese dato?",
+      "opciones": [
+        "Que ese parámetro tenga el mismo valor declarado",
+        "Que puedan compararse para ese parámetro si se midió bien",
+        "Que tengan la misma composición iónica"
+      ],
+      "correcta": 2,
+      "explicacion": "Distintas combinaciones de iones y movilidades pueden dar conductividades similares.",
+      "fuente": "ISO 7888:1985; Mettler Toledo, interpretación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Convertir conductividad a sólidos disueltos requiere **un factor empírico dependiente de la composición**, no una equivalencia universal. Una conductividad similar no identifica los mismos iones ni demuestra igual calidad de dos aguas."
+    },
+    {
+      "id": "t24-q228",
+      "pregunta": "¿Por qué dos disoluciones de distinta sal pero igual concentración molar pueden conducir de forma distinta?",
+      "opciones": [
+        "Difieren las cargas, movilidades y comportamiento de sus iones",
+        "Porque la conductividad depende solo del color",
+        "Porque todo ion tiene la misma movilidad exacta"
+      ],
+      "correcta": 0,
+      "explicacion": "No es un contador universal de número de moles de cualquier soluto.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.3 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La **capacidad de una disolución para conducir la corriente eléctrica**, que se debe a los **iones** que lleva disueltos. Es una medida **inespecífica**: integra contribuciones de concentración, carga y movilidad de los iones, sin identificarlos individualmente. Por eso es un **indicador práctico de la concentración de solutos ionizables**, no un recuento universal de iones ni una medida específica de cloruros."
+    },
+    {
+      "id": "t24-q229",
+      "pregunta": "¿Qué uso tiene la conductividad al vigilar un proceso de ósmosis inversa?",
+      "opciones": [
+        "Identificar inequívocamente cada compuesto orgánico",
+        "Seguir cambios globales del contenido iónico bajo condiciones comparables",
+        "Sustituir todo análisis de calidad de agua"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un indicador útil de proceso, con límites de especificidad.",
+      "fuente": "Mettler Toledo, guía de conductividad, aplicaciones · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Control de ETAP y de **ósmosis inversa**; vigilancia de **agua ultrapura** (que se expresa mejor como resistividad: el agua ultrapura llega a **18,2 MΩ·cm**); detección de **intrusión salina** y de **vertidos**; estimación aproximada de los **sólidos disueltos totales**; y comprobación de que una serie de muestras es homogénea."
+    },
+    {
+      "id": "t24-q230",
+      "pregunta": "Un aumento de conductividad puede apoyar la investigación de intrusión salina. ¿Qué cautela se mantiene?",
+      "opciones": [
+        "No identifica por sí solo la especie ni la causa exacta del aumento",
+        "Permite omitir temperatura y muestreo",
+        "Demuestra necesariamente un único contaminante"
+      ],
+      "correcta": 0,
+      "explicacion": "La señal global debe interpretarse con contexto y otros datos.",
+      "fuente": "ISO 7888:1985; aplicaciones de conductividad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Control de ETAP y de **ósmosis inversa**; vigilancia de **agua ultrapura** (que se expresa mejor como resistividad: el agua ultrapura llega a **18,2 MΩ·cm**); detección de **intrusión salina** y de **vertidos**; estimación aproximada de los **sólidos disueltos totales**; y comprobación de que una serie de muestras es homogénea."
+    },
+    {
+      "id": "t24-q231",
+      "pregunta": "¿Por qué se usa a menudo resistividad para caracterizar agua ultrapura?",
+      "opciones": [
+        "Porque el agua ultrapura no conduce nunca ninguna corriente",
+        "Porque resistividad y conductividad crecen siempre juntas",
+        "Su conductividad muy baja corresponde a resistividad alta"
+      ],
+      "correcta": 2,
+      "explicacion": "La magnitud recíproca ofrece una forma práctica de expresar bajas conductividades.",
+      "fuente": "Mettler Toledo, guía de conductividad; apunte, agua ultrapura · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Control de ETAP y de **ósmosis inversa**; vigilancia de **agua ultrapura** (que se expresa mejor como resistividad: el agua ultrapura llega a **18,2 MΩ·cm**); detección de **intrusión salina** y de **vertidos**; estimación aproximada de los **sólidos disueltos totales**; y comprobación de que una serie de muestras es homogénea."
+    },
+    {
+      "id": "t24-q232",
+      "pregunta": "¿A qué se refiere el porcentaje de incertidumbre de conductividad en la tabla legal citada?",
+      "opciones": [
+        "A la fracción de agua del sensor",
+        "Al valor paramétrico, con k = 2, según el criterio de la tabla",
+        "A un porcentaje universal de cualquier lectura sin atender a la tabla"
+      ],
+      "correcta": 1,
+      "explicacion": "La base porcentual debe identificarse al interpretar la exigencia al método.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Exigencia al método en agua de consumo | — | **RD 3/2023**, anexo III, parte D, tabla 15 | % del valor paramétrico | Incertidumbre de medida (k = 2): **conductividad 15 %**, **fluoruro 20 %**. Aparatos in situ **verificados y ajustados**, con la última calibración documentada (parte B.4) |"
+    },
+    {
+      "id": "t24-q233",
+      "pregunta": "¿Qué magnitud eléctrica es la señal principal de la sonda de oxígeno de membrana descrita?",
+      "opciones": [
+        "Potencial medido a corriente prácticamente nula como un ISE",
+        "Resistividad global del agua",
+        "Corriente"
+      ],
+      "correcta": 2,
+      "explicacion": "La medida es amperométrica y debe distinguirse de pH o conductividad.",
+      "fuente": "ISO 5814:2012; Hamilton, principios de sonda polarográfica · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Norma: **UNE-EN ISO 5814:2013**. Y una advertencia conceptual: **esto ya no es potenciometría**. Aquí no se mide un potencial a intensidad nula, se mide **una corriente**: es **amperometría**."
+    },
+    {
+      "id": "t24-q234",
+      "pregunta": "¿Qué separa el interior electroquímico de la sonda de la muestra?",
+      "opciones": [
+        "Una membrana permeable a gases",
+        "Una bureta de valoración",
+        "Solo un puente de vidrio macizo sin difusión"
+      ],
+      "correcta": 0,
+      "explicacion": "El diseño permite llegar al oxígeno al sistema interno sin contacto directo indiscriminado con el medio.",
+      "fuente": "ISO 5814:2012, fundamento del método · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q235",
+      "pregunta": "¿Cómo llega el oxígeno al sistema de detección de la sonda?",
+      "opciones": [
+        "Solo por transporte de electrones a través del agua",
+        "Por difusión a través de la membrana",
+        "Mediante pesada del gas en la sonda"
+      ],
+      "correcta": 1,
+      "explicacion": "El transporte a la superficie sensible forma parte de la respuesta del sensor.",
+      "fuente": "ISO 5814:2012; Hamilton, principio polarográfico · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q236",
+      "pregunta": "¿Qué transformación experimenta el oxígeno en el electrodo de detección del esquema?",
+      "opciones": [
+        "Reducción en el cátodo",
+        "Neutralización sin transferencia electrónica",
+        "Precipitación cuantitativa de AgCl para pesada"
+      ],
+      "correcta": 0,
+      "explicacion": "La reacción electroquímica origina la corriente de medida.",
+      "fuente": "Hamilton, Principles of Polarographic Dissolved Oxygen Measurement · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "![Sonda de oxígeno disuelto: el oxígeno atraviesa la membrana y se reduce en el cátodo](esquema:sonda-oxigeno)"
+    },
+    {
+      "id": "t24-q237",
+      "pregunta": "¿Con qué magnitud se relaciona directamente la señal del sistema de membrana en el fundamento descrito?",
+      "opciones": [
+        "Solo masa total de sales",
+        "Número total de todos los gases sin distinción",
+        "Presión parcial de oxígeno"
+      ],
+      "correcta": 2,
+      "explicacion": "La conversión a concentración requiere tener en cuenta condiciones de solubilidad.",
+      "fuente": "ISO 5814:2012; HORIBA, principio de sonda de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q238",
+      "pregunta": "¿Qué requisito eléctrico distingue una Clark polarográfica de la galvánica del cuadro?",
+      "opciones": [
+        "Medición exclusiva de un potencial sin corriente",
+        "Polarización aplicada externamente",
+        "Ausencia de cualquier circuito eléctrico"
+      ],
+      "correcta": 1,
+      "explicacion": "La galvánica produce la fuerza electromotriz mediante su pareja de metales.",
+      "fuente": "YSI, principios de sensores de oxígeno; Hanna, sondas polarográficas · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Tensión | Necesita una **tensión de polarización externa** | **No la necesita**: la pareja de metales genera su propia fem |"
+    },
+    {
+      "id": "t24-q239",
+      "pregunta": "Se acaba de conectar una sonda polarográfica que requiere polarización. ¿Qué debe respetarse?",
+      "opciones": [
+        "Lectura inmediata por tener muchos decimales",
+        "Sustituir la polarización por agitación violenta",
+        "El período de polarización y estabilización del modelo"
+      ],
+      "correcta": 2,
+      "explicacion": "La preparación eléctrica es necesaria antes de obtener la respuesta adecuada.",
+      "fuente": "Hanna, problemas de estabilidad y polarización de sonda de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Puesta en marcha | Hay que **esperar a que polarice** | **Lista de inmediato** |"
+    },
+    {
+      "id": "t24-q240",
+      "pregunta": "¿Que una sonda galvánica no requiera polarización externa significa que puede leerse sin preparar ni estabilizar el sistema?",
+      "opciones": [
+        "No, siguen siendo necesarios los controles y equilibrio previstos",
+        "Solo si el agua es transparente",
+        "Sí, cualquier lectura inicial es válida"
+      ],
+      "correcta": 0,
+      "explicacion": "La diferencia de alimentación no elimina todos los demás requisitos de medida.",
+      "fuente": "YSI, Pro Series; manual de la sonda · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El movimiento necesario para reponer oxígeno junto a una membrana electroquímica **no equivale a airear deliberadamente la muestra**. Se mezcla o fluye según el modelo sin introducir burbujas ni modificar indebidamente su contenido. Una sonda galvánica no necesita el período de polarización externa de una Clark, pero sí preparación, equilibrio y controles apropiados. El sensor óptico no consume oxígeno, aunque flujo, homogeneidad y equilibrio térmico pueden afectar a su tiempo de respuesta. Fuentes: **YSI, DO Meter Measurement Problems? Check Out These Top Tips!** (https://ysi.com/ysi-blog/water-blogged-blog/2021/06/do-meter-measurement-problems-check-out-these-top-tips) y **Hanna, manual HI6000, Dissolved Oxygen Measurements**."
+    },
+    {
+      "id": "t24-q241",
+      "pregunta": "En la sonda Clark típica del cuadro, ¿qué material corresponde al cátodo?",
+      "opciones": [
+        "Plomo como regla única",
+        "Oro o platino",
+        "PVC sin elemento conductor"
+      ],
+      "correcta": 1,
+      "explicacion": "Los materiales se interpretan como ejemplos del diseño descrito, no como lista universal de todos los modelos.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Documentación de sondas tipo Clark; cuadro de materiales del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Cátodo | **Oro o platino** | **Plata** |"
+    },
+    {
+      "id": "t24-q242",
+      "pregunta": "En la sonda galvánica típica del cuadro, ¿qué parte se consume y puede necesitar reposición?",
+      "opciones": [
+        "Ánodo de plomo o cinc",
+        "Agitador magnético por reacción con oxígeno",
+        "Cable externo como reactivo"
+      ],
+      "correcta": 0,
+      "explicacion": "El desgaste del sistema electroquímico condiciona mantenimiento y vida útil.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Documentación de sondas galvánicas; cuadro del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| Ánodo | **Plata** | **Plomo** o cinc |"
+    },
+    {
+      "id": "t24-q243",
+      "pregunta": "¿Qué materiales se citan para la membrana de estas sondas?",
+      "opciones": [
+        "Papel de filtro con cenizas",
+        "Platino macizo sin difusión",
+        "PTFE o polietileno"
+      ],
+      "correcta": 2,
+      "explicacion": "La selección de membrana se relaciona con difusión, respuesta y mantenimiento del modelo.",
+      "fuente": "YSI, Pro Series, membranas; Hanna, documentación de sondas · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En las dos: **electrolito interno** (típicamente KCl) y **membrana de PTFE** o polietileno, sujeta con una junta."
+    },
+    {
+      "id": "t24-q244",
+      "pregunta": "¿Qué elemento interno debe conservar su composición y estado previstos?",
+      "opciones": [
+        "El agua de lavado como sustituto universal",
+        "Electrolito de la sonda",
+        "La muestra como si fuera siempre electrolito de relleno"
+      ],
+      "correcta": 1,
+      "explicacion": "La respuesta no depende solo de la membrana externa.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Documentación de sonda electroquímica de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En las dos: **electrolito interno** (típicamente KCl) y **membrana de PTFE** o polietileno, sujeta con una junta."
+    },
+    {
+      "id": "t24-q245",
+      "pregunta": "Una membrana está rota pero el equipo muestra un número. ¿Qué decisión es adecuada?",
+      "opciones": [
+        "Aceptar el número por ser digital",
+        "Usar la rotura como mejora de sensibilidad",
+        "Revisar y reparar o sustituir conforme al manual antes de confiar en la lectura"
+      ],
+      "correcta": 2,
+      "explicacion": "La integridad del sistema de separación y difusión es condición de funcionamiento.",
+      "fuente": "Hanna, mantenimiento de sondas de oxígeno; YSI, manual · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Cuidados:** membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir."
+    },
+    {
+      "id": "t24-q246",
+      "pregunta": "¿Qué defecto del montaje de membrana debe evitarse?",
+      "opciones": [
+        "Burbujas atrapadas bajo ella",
+        "Electrolito preparado según instrucciones",
+        "Identificación clara de la sonda"
+      ],
+      "correcta": 0,
+      "explicacion": "Las burbujas pueden alterar la zona de difusión y el contacto interno.",
+      "fuente": "Hanna, mantenimiento de sondas de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Cuidados:** membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir."
+    },
+    {
+      "id": "t24-q247",
+      "pregunta": "Una respuesta anómala persiste tras revisar condiciones de muestra. ¿Qué estado interno conviene comprobar?",
+      "opciones": [
+        "Solo el color del vaso",
+        "Membrana y electrolito según el procedimiento del modelo",
+        "Solo el número del informe"
+      ],
+      "correcta": 1,
+      "explicacion": "Un problema del sensor no debe atribuirse siempre al contenido real de la muestra.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Manual de sonda de oxígeno, mantenimiento · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Cuidados:** membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir."
+    },
+    {
+      "id": "t24-q248",
+      "pregunta": "¿Por qué el movimiento del agua puede afectar a una sonda electroquímica de oxígeno?",
+      "opciones": [
+        "Reponer el oxígeno consumido junto a la membrana",
+        "Para medir el volumen por agitación",
+        "Para que el agua deje de contener sales"
+      ],
+      "correcta": 0,
+      "explicacion": "La difusión debe mantener aporte suficiente a la superficie que consume oxígeno.",
+      "fuente": "YSI, DO Meter Measurement Problems; Hanna, medidas polarográficas · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La sonda **gasta** el oxígeno que le llega, así que si el agua está quieta se empobrece la película pegada a la membrana y **la lectura baja**. Por eso hay que **agitar la muestra o mover la sonda** (o usar una célula de flujo). **Medir en agua quieta da un resultado bajo, y bajando.**"
+    },
+    {
+      "id": "t24-q249",
+      "pregunta": "En agua quieta disminuye el oxígeno de la capa junto a la membrana. ¿Qué sesgo puede producirse?",
+      "opciones": [
+        "Lectura necesariamente más alta",
+        "Cambio automático a método de Winkler",
+        "Lectura artificialmente baja"
+      ],
+      "correcta": 2,
+      "explicacion": "La lectura puede reflejar agotamiento local en vez del contenido representativo de la muestra.",
+      "fuente": "YSI, consejos para medidas de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La sonda **gasta** el oxígeno que le llega, así que si el agua está quieta se empobrece la película pegada a la membrana y **la lectura baja**. Por eso hay que **agitar la muestra o mover la sonda** (o usar una célula de flujo). **Medir en agua quieta da un resultado bajo, y bajando.**"
+    },
+    {
+      "id": "t24-q250",
+      "pregunta": "¿Qué diferencia debe mantenerse entre agitar para medir y airear la muestra?",
+      "opciones": [
+        "Siempre se debe saturar la muestra antes de determinar su valor original",
+        "La reposición junto al sensor no debe alterar indebidamente el contenido de oxígeno de la muestra",
+        "Ambas son siempre operaciones químicamente idénticas"
+      ],
+      "correcta": 1,
+      "explicacion": "Aportar aire deliberadamente puede cambiar el parámetro que se pretende medir.",
+      "fuente": "YSI, práctica de medida de oxígeno; ISO 5814:2012, conservación de condiciones · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El movimiento necesario para reponer oxígeno junto a una membrana electroquímica **no equivale a airear deliberadamente la muestra**. Se mezcla o fluye según el modelo sin introducir burbujas ni modificar indebidamente su contenido. Una sonda galvánica no necesita el período de polarización externa de una Clark, pero sí preparación, equilibrio y controles apropiados. El sensor óptico no consume oxígeno, aunque flujo, homogeneidad y equilibrio térmico pueden afectar a su tiempo de respuesta. Fuentes: **YSI, DO Meter Measurement Problems? Check Out These Top Tips!** (https://ysi.com/ysi-blog/water-blogged-blog/2021/06/do-meter-measurement-problems-check-out-these-top-tips) y **Hanna, manual HI6000, Dissolved Oxygen Measurements**."
+    },
+    {
+      "id": "t24-q251",
+      "pregunta": "¿Qué alternativa puede proporcionar movimiento controlado junto a la membrana?",
+      "opciones": [
+        "Recipiente inmóvil sin intercambio junto al sensor",
+        "Un matraz aforado como única garantía",
+        "Célula de flujo apropiada"
+      ],
+      "correcta": 2,
+      "explicacion": "El diseño debe cumplir los requisitos de flujo del modelo y conservar la muestra.",
+      "fuente": "YSI, sensores electroquímicos de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La sonda **gasta** el oxígeno que le llega, así que si el agua está quieta se empobrece la película pegada a la membrana y **la lectura baja**. Por eso hay que **agitar la muestra o mover la sonda** (o usar una célula de flujo). **Medir en agua quieta da un resultado bajo, y bajando.**"
+    },
+    {
+      "id": "t24-q252",
+      "pregunta": "¿Qué ventaja del sensor óptico reduce la dependencia del movimiento por agotamiento local?",
+      "opciones": [
+        "No consume oxígeno en la detección",
+        "No necesita ninguna calibración ni control",
+        "Siempre aumenta la salinidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La diferencia de principio no elimina otras condiciones de uso.",
+      "fuente": "YSI, comparación de sensores ópticos y electroquímicos · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Es justo la diferencia con el sensor óptico, que no consume oxígeno y **no necesita agitación**."
+    },
+    {
+      "id": "t24-q253",
+      "pregunta": "¿Puede el flujo ayudar al tiempo de respuesta de un sensor óptico aunque no consuma oxígeno?",
+      "opciones": [
+        "No, el flujo nunca puede afectar a ningún sensor óptico",
+        "Sí, según el modelo y condiciones de homogeneidad y equilibrio",
+        "Solo si se convierte en sonda galvánica"
+      ],
+      "correcta": 1,
+      "explicacion": "Ausencia de consumo y tiempo de respuesta son aspectos distintos.",
+      "fuente": "YSI, consejos de medida de oxígeno, sensores ópticos · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El movimiento necesario para reponer oxígeno junto a una membrana electroquímica **no equivale a airear deliberadamente la muestra**. Se mezcla o fluye según el modelo sin introducir burbujas ni modificar indebidamente su contenido. Una sonda galvánica no necesita el período de polarización externa de una Clark, pero sí preparación, equilibrio y controles apropiados. El sensor óptico no consume oxígeno, aunque flujo, homogeneidad y equilibrio térmico pueden afectar a su tiempo de respuesta. Fuentes: **YSI, DO Meter Measurement Problems? Check Out These Top Tips!** (https://ysi.com/ysi-blog/water-blogged-blog/2021/06/do-meter-measurement-problems-check-out-these-top-tips) y **Hanna, manual HI6000, Dissolved Oxygen Measurements**."
+    },
+    {
+      "id": "t24-q254",
+      "pregunta": "¿Qué diferencia fundamental hay entre Winkler y la sonda amperométrica?",
+      "opciones": [
+        "Winkler cuantifica mediante valoración redox y la sonda mediante corriente electroquímica",
+        "Ambos son necesariamente sensores ópticos",
+        "Ambos pesan directamente oxígeno"
+      ],
+      "correcta": 0,
+      "explicacion": "Pueden determinar el mismo parámetro por principios y procedimientos distintos.",
+      "fuente": "UNE-EN 25813; ISO 5814:2012, contraste con Winkler · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Yodométrico de Winkler** | UNE-EN 25813 — **tema 22** | **Volumetría redox** | Método clásico de referencia, en laboratorio |"
+    },
+    {
+      "id": "t24-q255",
+      "pregunta": "¿Qué referencia del cuadro corresponde al método óptico y no al electroquímico de membrana?",
+      "opciones": [
+        "ISO 5814",
+        "ISO 7888",
+        "ISO 17289"
+      ],
+      "correcta": 2,
+      "explicacion": "La norma del método debe identificarse junto al principio de medida realmente empleado.",
+      "fuente": "ISO 17289:2014, método óptico de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Sensor óptico (luminiscencia)** | **ISO 17289:2014** | **Extinción de la fluorescencia** por el oxígeno | No consume oxígeno ni necesita agitación; preferible en aguas **muy coloreadas o turbias** y donde el Winkler falla |"
+    },
+    {
+      "id": "t24-q256",
+      "pregunta": "¿Una lectura superior al 100 % de saturación es por sí sola imposible?",
+      "opciones": [
+        "Solo si el porcentaje se expresa en mg/L",
+        "No, puede existir sobresaturación",
+        "Sí, todo valor mayor de cien demuestra sensor roto"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe revisarse validez y condiciones, pero el fenómeno existe y está contemplado en el alcance.",
+      "fuente": "ISO 5814:2012, alcance público · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Unidades: mg/L de O₂** y **porcentaje de saturación**, o las dos. El método cubre de **1 % a 100 %** de saturación, y la mayoría de los equipos leen también por encima de 100 %: la **sobresaturación**."
+    },
+    {
+      "id": "t24-q257",
+      "pregunta": "¿Qué precaución es especialmente relevante al manipular agua sobresaturada antes de medir?",
+      "opciones": [
+        "Airearla hasta que llegue al 100 % antes de informar su valor original",
+        "Calentarla sin control para liberar oxígeno",
+        "Evitar pérdida de gas que cambie su contenido"
+      ],
+      "correcta": 2,
+      "explicacion": "La muestra puede cambiar durante manipulación aunque el sensor funcione correctamente.",
+      "fuente": "ISO 5814:2012, alcance para sobresaturación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q258",
+      "pregunta": "¿Qué falta para convertir porcentaje de saturación a concentración másica?",
+      "opciones": [
+        "La concentración de saturación en esas condiciones",
+        "La masa molar del vidrio",
+        "Solo el volumen del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "La misma saturación porcentual puede corresponder a distintos mg/L según el medio.",
+      "fuente": "ISO 5814:2012; documentación de compensación de sondas · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q259",
+      "pregunta": "¿Qué representa 100 % de saturación?",
+      "opciones": [
+        "100 mg/L en cualquier agua",
+        "El nivel de equilibrio de referencia bajo las condiciones consideradas",
+        "La ausencia de oxígeno"
+      ],
+      "correcta": 1,
+      "explicacion": "El porcentaje se expresa respecto de una concentración de saturación y no es una unidad de masa por volumen.",
+      "fuente": "ISO 5814:2012, unidades de expresión · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q260",
+      "pregunta": "¿Qué condición del aire se especifica en el ejemplo de calibración al 100 %?",
+      "opciones": [
+        "Saturado de humedad",
+        "Con concentración desconocida de cualquier gas",
+        "Totalmente seco como condición equivalente universal"
+      ],
+      "correcta": 0,
+      "explicacion": "El procedimiento de referencia debe seguirse con las condiciones de temperatura y presión apropiadas.",
+      "fuente": "Hanna y YSI, calibración de sondas de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Calibración:** en **aire saturado de humedad** (que equivale al 100 % de saturación) o en agua saturada de aire; el **cero**, con una disolución de **sulfito sódico**."
+    },
+    {
+      "id": "t24-q261",
+      "pregunta": "¿Qué finalidad tiene la disolución de sulfito en la comprobación del cero descrita?",
+      "opciones": [
+        "Generar deliberadamente sobresaturación",
+        "Ajustar la constante de conductividad",
+        "Proporcionar un medio de oxígeno reducido para ese punto"
+      ],
+      "correcta": 2,
+      "explicacion": "El punto cero y el de saturación caracterizan referencias diferentes del sensor.",
+      "fuente": "Hanna y YSI, comprobación del cero de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Calibración:** en **aire saturado de humedad** (que equivale al 100 % de saturación) o en agua saturada de aire; el **cero**, con una disolución de **sulfito sódico**."
+    },
+    {
+      "id": "t24-q262",
+      "pregunta": "Manteniendo las demás condiciones comparables, ¿cómo cambia la concentración de saturación al aumentar la temperatura del agua?",
+      "opciones": [
+        "Es independiente de temperatura",
+        "Disminuye",
+        "Aumenta siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la conversión a mg/L requiere información térmica.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Documentación de sondas; fundamento de solubilidad del oxígeno en agua · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Temperatura**: la solubilidad del oxígeno **baja** al subir la temperatura."
+    },
+    {
+      "id": "t24-q263",
+      "pregunta": "¿Por qué se necesita corregir salinidad al medir oxígeno en agua marina?",
+      "opciones": [
+        "Porque transforma oxígeno en cloruro",
+        "Porque elimina toda señal del sensor en cualquier concentración",
+        "La salinidad modifica la solubilidad y la relación entre señal y mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe interpretarse la señal con condiciones de agua dulce si el método exige compensación salina.",
+      "fuente": "ISO 5814:2012, corrección de aguas salinas · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "3. **Salinidad**: cuanta más sal, **menos** oxígeno se disuelve."
+    },
+    {
+      "id": "t24-q264",
+      "pregunta": "¿Qué condición explica que un mismo porcentaje de saturación no implique siempre los mismos mg/L a distinta altitud?",
+      "opciones": [
+        "La presión parcial de oxígeno del aire",
+        "La masa del cable",
+        "La capacidad del vaso como única causa"
+      ],
+      "correcta": 0,
+      "explicacion": "La concentración de equilibrio depende de la presión pertinente.",
+      "fuente": "Documentación de compensación de sondas; ISO 5814:2012 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "2. **Presión atmosférica o altitud**: la saturación depende de la **presión parcial** de oxígeno del aire."
+    },
+    {
+      "id": "t24-q265",
+      "pregunta": "¿Qué conjunto de datos debe controlarse al convertir la señal de oxígeno a concentración?",
+      "opciones": [
+        "Solo la temperatura del almacén",
+        "Temperatura, presión y salinidad",
+        "Solo el volumen de muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "Las tres condiciones intervienen en la interpretación del resultado.",
+      "fuente": "Hanna, Dissolved Oxygen Measurements, compensaciones · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "1. **Temperatura**: la solubilidad del oxígeno **baja** al subir la temperatura."
+    },
+    {
+      "id": "t24-q266",
+      "pregunta": "La sonda pasa de un ambiente cálido a agua fría. ¿Qué debe esperarse antes de registrar un dato fiable?",
+      "opciones": [
+        "Estabilización según el modelo y equilibrio de las condiciones de medida",
+        "Solo que se encienda la pantalla",
+        "Lectura inmediata sin considerar temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "La respuesta del sensor y la compensación requieren condiciones representativas.",
+      "fuente": "YSI, práctica de medida de oxígeno; manual de sonda · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El movimiento necesario para reponer oxígeno junto a una membrana electroquímica **no equivale a airear deliberadamente la muestra**. Se mezcla o fluye según el modelo sin introducir burbujas ni modificar indebidamente su contenido. Una sonda galvánica no necesita el período de polarización externa de una Clark, pero sí preparación, equilibrio y controles apropiados. El sensor óptico no consume oxígeno, aunque flujo, homogeneidad y equilibrio térmico pueden afectar a su tiempo de respuesta. Fuentes: **YSI, DO Meter Measurement Problems? Check Out These Top Tips!** (https://ysi.com/ysi-blog/water-blogged-blog/2021/06/do-meter-measurement-problems-check-out-these-top-tips) y **Hanna, manual HI6000, Dissolved Oxygen Measurements**."
+    },
+    {
+      "id": "t24-q267",
+      "pregunta": "¿Qué limitación recuerda la permeabilidad de la membrana a gases?",
+      "opciones": [
+        "Solo el oxígeno puede atravesar cualquier membrana sin excepción",
+        "Toda sal se mide como si fuera oxígeno",
+        "Otros gases pueden interferir según el sensor y la matriz"
+      ],
+      "correcta": 2,
+      "explicacion": "La selección y uso deben considerar la compatibilidad y las interferencias del modelo.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Manual de sonda de oxígeno, interferencias de membrana · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Cuidados:** membrana íntegra y sin burbujas debajo, electrolito en buen estado, y atención a los gases que también atraviesan la membrana, que pueden interferir."
+    },
+    {
+      "id": "t24-q268",
+      "pregunta": "¿Puede trasladarse sin revisión un caudal mínimo o una membrana de un modelo a otro?",
+      "opciones": [
+        "Solo si ambos muestran mg/L",
+        "No, deben respetarse las especificaciones del modelo",
+        "Sí, todos los sensores son intercambiables en cualquier condición"
+      ],
+      "correcta": 1,
+      "explicacion": "El principio común no hace idénticas geometría, materiales ni condiciones de funcionamiento.",
+      "fuente": "Hanna y YSI, manuales de sondas de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La membrana y el electrolito deben estar en estado correcto; no se interpreta una rotura como forma de acelerar la respuesta. Las especificaciones de materiales, flujo, polarización y mantenimiento son **del modelo**. Color o turbidez pueden dificultar Winkler con detección visual, pero **no obligan a elegir exclusivamente sensor óptico**: el método electroquímico ISO 5814 también es adecuado para aguas coloreadas o turbias según su alcance público."
+    },
+    {
+      "id": "t24-q269",
+      "pregunta": "¿Qué conclusión sobre agua coloreada o turbia es correcta?",
+      "opciones": [
+        "Solo puede medirse mediante viraje visual",
+        "Ningún sensor electroquímico puede funcionar",
+        "También puede ser adecuada la sonda electroquímica; no es exclusividad del sensor óptico"
+      ],
+      "correcta": 2,
+      "explicacion": "La selección considera interferencias y condiciones, además de las ventajas de cada principio.",
+      "fuente": "ISO 5814:2012, alcance público para aguas coloreadas y turbias · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La membrana y el electrolito deben estar en estado correcto; no se interpreta una rotura como forma de acelerar la respuesta. Las especificaciones de materiales, flujo, polarización y mantenimiento son **del modelo**. Color o turbidez pueden dificultar Winkler con detección visual, pero **no obligan a elegir exclusivamente sensor óptico**: el método electroquímico ISO 5814 también es adecuado para aguas coloreadas o turbias según su alcance público."
+    },
+    {
+      "id": "t24-q270",
+      "pregunta": "¿Qué debe revisarse si se pretende informar valores muy por debajo del campo declarado del método usado?",
+      "opciones": [
+        "Aptitud y validación para ese intervalo",
+        "Solo el tamaño de la membrana sin comprobar prestaciones",
+        "Solo que el aparato muestre decimales"
+      ],
+      "correcta": 0,
+      "explicacion": "El campo de visualización del equipo no demuestra por sí solo desempeño analítico en cualquier rango.",
+      "fuente": "ISO 5814:2012, alcance de saturación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Unidades: mg/L de O₂** y **porcentaje de saturación**, o las dos. El método cubre de **1 % a 100 %** de saturación, y la mayoría de los equipos leen también por encima de 100 %: la **sobresaturación**."
+    },
+    {
+      "id": "t24-q271",
+      "pregunta": "¿Qué debe evitarse si la respuesta es lenta?",
+      "opciones": [
+        "Revisar mantenimiento y condiciones de flujo",
+        "Romper o perforar la membrana para acelerar sin instrucciones",
+        "Comprobar el estado del electrolito"
+      ],
+      "correcta": 1,
+      "explicacion": "Una modificación arbitraria invalida el diseño de difusión y la interpretación de la señal.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Manual de sonda electroquímica de oxígeno · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La membrana y el electrolito deben estar en estado correcto; no se interpreta una rotura como forma de acelerar la respuesta. Las especificaciones de materiales, flujo, polarización y mantenimiento son **del modelo**. Color o turbidez pueden dificultar Winkler con detección visual, pero **no obligan a elegir exclusivamente sensor óptico**: el método electroquímico ISO 5814 también es adecuado para aguas coloreadas o turbias según su alcance público."
+    },
+    {
+      "id": "t24-q272",
+      "pregunta": "¿Qué puede invalidar un dato correcto del equipo como representación del agua original?",
+      "opciones": [
+        "Cambiar el contenido de oxígeno por aireación o desgasificación antes de medir",
+        "Identificar la sonda utilizada",
+        "Registrar temperatura y presión"
+      ],
+      "correcta": 0,
+      "explicacion": "El sensor mide la muestra presente; no reconstruye automáticamente su estado antes de alterarla.",
+      "fuente": "ISO 5814:2012, medida y manipulación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q273",
+      "pregunta": "Una resistencia de 2.000 Ω corresponde a qué conductancia?",
+      "opciones": [
+        "2 mS",
+        "2.000 S",
+        "0,5 mS"
+      ],
+      "correcta": 2,
+      "explicacion": "1/2.000 S es 0,0005 S, equivalente a 0,5 mS.",
+      "fuente": "Mettler Toledo, guía de conductividad, §2.2 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Conductancia** | G | **G = 1 / R** | **S** (siemens) |"
+    },
+    {
+      "id": "t24-q274",
+      "pregunta": "En el modelo de dos placas, l = 2,0 cm y A = 4,0 cm². ¿Qué constante geométrica resulta?",
+      "opciones": [
+        "2,0 cm³",
+        "0,50 cm⁻¹",
+        "8,0 cm⁻¹"
+      ],
+      "correcta": 1,
+      "explicacion": "K se obtiene como l/A, con unidad de longitud inversa.",
+      "fuente": "Mettler Toledo, guía de conductividad, constante geométrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Constante de célula** | **K** | **K = l / A** (separación entre electrodos dividida por su superficie) | **cm⁻¹** |"
+    },
+    {
+      "id": "t24-q275",
+      "pregunta": "En un ejercicio ideal, V = 0,100 V e I = 0,200 mA. ¿Qué resistencia se obtiene?",
+      "opciones": [
+        "0,5 Ω",
+        "2.000 Ω",
+        "500 Ω"
+      ],
+      "correcta": 2,
+      "explicacion": "La corriente es 0,000200 A; R = 0,100/0,000200.",
+      "fuente": "Mettler Toledo, guía de conductividad, ley de Ohm · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Lo que ha caído: 1322, n.º 17.** «¿En qué ley está basada la medida de la conductividad en el agua?» Respuesta oficial: **la ley de Ohm**. Los distractores eran la **ley de Beer-Lambert** (la de la espectrofotometría, tema 25) y la **ley de Gay-Lussac** (la de los gases). La guía de Mettler Toledo lo explica así: según la ley de Ohm, la tensión aplicada a la disolución es proporcional a la corriente que pasa, **V = R · I**. El conductivímetro aplica una tensión conocida, mide la corriente y obtiene la **resistencia, R = V / I**; su inversa es la **conductancia, G = 1 / R**, y con la constante de célula se llega a la conductividad, como en la tabla de arriba. La misma guía añade que se mide con **corriente alterna**: con corriente continua los iones emigran a los electrodos y la electrólisis altera la muestra."
+    },
+    {
+      "id": "t24-q276",
+      "pregunta": "¿A cuántos µS/cm equivale 1 S/m?",
+      "opciones": [
+        "10.000 µS/cm",
+        "1.000.000 µS/cm",
+        "100 µS/cm"
+      ],
+      "correcta": 0,
+      "explicacion": "Un metro tiene cien centímetros: 1 S/m = 0,01 S/cm y un S contiene un millón de µS.",
+      "fuente": "ISO 7888:1985; conversión de unidades de conductividad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Conductividad** | **κ** | **κ = G · K** | **S/m**; en la práctica **mS/m** y **µS/cm** |"
+    },
+    {
+      "id": "t24-q277",
+      "pregunta": "Una resistividad es 18,2 MΩ·cm. ¿Qué conductividad corresponde a las mismas condiciones, aproximadamente?",
+      "opciones": [
+        "18,2 µS/cm",
+        "0,0549 µS/cm",
+        "54,9 S/cm"
+      ],
+      "correcta": 1,
+      "explicacion": "1/(18,2 × 10⁶) S/cm equivale a 0,0549 µS/cm.",
+      "fuente": "Mettler Toledo, guía de conductividad, resistividad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Resistividad | ρ | ρ = 1 / κ | Ω·cm |"
+    },
+    {
+      "id": "t24-q278",
+      "pregunta": "Con el modelo κ_ref = κ_T/[1 + α(T − T_ref)], κ_30 = 1.100 µS/cm y α = 0,020 por °C, ¿qué κ_25 resulta?",
+      "opciones": [
+        "1.000 µS/cm",
+        "1.095 µS/cm",
+        "1.210 µS/cm"
+      ],
+      "correcta": 0,
+      "explicacion": "El denominador es 1 + 0,020 × 5 = 1,10. El modelo y α son los dados, no universales.",
+      "fuente": "Mettler Toledo, guía de conductividad, modelo lineal de compensación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La compensación térmica requiere **modelo y temperatura de referencia apropiados al agua**. El 2 % por grado es orientativo, no una constante universal. En un modelo lineal declarado, **κ_ref = κ_T/[1 + α·(T − T_ref)]**, con α en fracción por grado; no se cambia solo la etiqueta de 25 a 20 °C. El tipo de compensación y el resultado medido o corregido deben identificarse."
+    },
+    {
+      "id": "t24-q279",
+      "pregunta": "Un método validado para una matriz usa TDS(mg/L) = 0,60·κ(µS/cm). Con κ = 500 µS/cm, ¿qué estimación da ese modelo?",
+      "opciones": [
+        "833 mg/L",
+        "500 mg/L necesariamente",
+        "300 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "Se aplica el factor declarado. No se extrapola esa relación a cualquier agua.",
+      "fuente": "Mettler Toledo, guía de conductividad, conversión a TDS · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Convertir conductividad a sólidos disueltos requiere **un factor empírico dependiente de la composición**, no una equivalencia universal. Una conductividad similar no identifica los mismos iones ni demuestra igual calidad de dos aguas."
+    },
+    {
+      "id": "t24-q280",
+      "pregunta": "Con valor paramétrico de conductividad de 2.500 µS/cm, ¿cuánto representa una incertidumbre del 15 % de ese valor?",
+      "opciones": [
+        "2.515 µS/cm",
+        "375 µS/cm",
+        "15 µS/cm"
+      ],
+      "correcta": 1,
+      "explicacion": "Se calcula 0,15 × 2.500 en la misma base térmica y de unidades de la referencia.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Exigencia al método en agua de consumo | — | **RD 3/2023**, anexo III, parte D, tabla 15 | % del valor paramétrico | Incertidumbre de medida (k = 2): **conductividad 15 %**, **fluoruro 20 %**. Aparatos in situ **verificados y ajustados**, con la última calibración documentada (parte B.4) |"
+    },
+    {
+      "id": "t24-q281",
+      "pregunta": "Si el valor paramétrico de fluoruro considerado es 1,5 mg/L, ¿cuánto representa el 20 % de ese valor?",
+      "opciones": [
+        "0,20 mg/L",
+        "3,0 mg/L",
+        "0,30 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "El porcentaje se aplica al valor paramétrico, no se interpreta como una cifra fija de mg/L.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Exigencia al método en agua de consumo | — | **RD 3/2023**, anexo III, parte D, tabla 15 | % del valor paramétrico | Incertidumbre de medida (k = 2): **conductividad 15 %**, **fluoruro 20 %**. Aparatos in situ **verificados y ajustados**, con la última calibración documentada (parte B.4) |"
+    },
+    {
+      "id": "t24-q282",
+      "pregunta": "Un ISE monovalente aniónico ideal a 25 °C presenta un descenso de 59,16 mV con condiciones comparables. ¿Cómo cambia la actividad?",
+      "opciones": [
+        "Aumenta diez veces",
+        "No cambia",
+        "Disminuye diez veces"
+      ],
+      "correcta": 0,
+      "explicacion": "El signo de la respuesta aniónica convierte un descenso de una pendiente por década en aumento de actividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Nernst de aniones · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- El signo es **positivo para cationes** y **negativo para aniones**."
+    },
+    {
+      "id": "t24-q283",
+      "pregunta": "Para igual carga, a(X) = 10⁻⁴, a(Y) = 10⁻¹ y K(X,Y) = 10⁻³. ¿Cómo se compara K·a(Y) con a(X)?",
+      "opciones": [
+        "La contribución de Y es mil veces menor",
+        "Son iguales",
+        "La contribución de Y es nula"
+      ],
+      "correcta": 1,
+      "explicacion": "10⁻³ × 10⁻¹ = 10⁻⁴; un K pequeño no asegura interferencia despreciable si Y es abundante.",
+      "fuente": "IUPAC Gold Book, P04791; modelo simplificado de igual carga · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el modelo simplificado de igual carga, las contribuciones se comparan mediante **a(X) y K(X,Y)·a(Y)**. Incluso un K pequeño puede dar interferencia relevante si Y es muy abundante. Un K grande tampoco invalida por sí solo una muestra casi sin Y. El coeficiente se interpreta con las actividades y condiciones de su determinación, no como una propiedad universal desligada de la matriz. Fuente de terminología y condiciones: IUPAC Gold Book, P04791."
+    },
+    {
+      "id": "t24-q284",
+      "pregunta": "50,0 mL de muestra se mezclan con 50,0 mL de TISAB sin analito. La mezcla tiene 2,0 mg/L de analito según el método. ¿Qué concentración tenía la muestra, sin otras correcciones?",
+      "opciones": [
+        "4,0 mg/L",
+        "2,0 mg/L",
+        "1,0 mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "El volumen se duplica y se conservan los moles de analito; la lectura corresponde a la mezcla diluida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, acondicionamiento con TISAB · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La comparación de adiciones de ISA/TISAB debe mantener **la proporción y condiciones indicadas por el método**; la regla de igual volumen de aditivo supone alícuotas comparables. Se tiene en cuenta la **dilución producida por el aditivo**. El fondo iónico constante no convierte un patrón mal preparado en referencia válida. Los materiales y soluciones se usan con sus especificaciones y vigencia."
+    },
+    {
+      "id": "t24-q285",
+      "pregunta": "A 100,0 mL de muestra se añaden 10,0 mL de patrón de 12,0 mg/L y la concentración final es el doble de la inicial. Con volúmenes aditivos, ¿qué concentración inicial corresponde?",
+      "opciones": [
+        "2,0 mg/L",
+        "12,0 mg/L",
+        "1,0 mg/L"
+      ],
+      "correcta": 2,
+      "explicacion": "Del balance 100c + 120 = 110·2c resulta c = 1,0. Se considera el volumen añadido.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, adición conocida · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Después de añadir patrón, la concentración por balance de cantidades, antes de considerar actividades, es **c_final = (c_inicial·V_muestra + c_patron·V_adicion)/(V_muestra + V_adicion)**, suponiendo volúmenes aditivos. No basta sumar concentraciones ni ignorar el volumen añadido. La adición debe mezclar y equilibrarse antes de aceptar el nuevo potencial. El patrón concentrado limita el cambio de matriz y dilución, pero no elimina la necesidad de corregirlos."
+    },
+    {
+      "id": "t24-q286",
+      "pregunta": "En las condiciones de medida, la saturación corresponde a 10,0 mg/L. ¿Qué concentración representa el 80 % de saturación?",
+      "opciones": [
+        "12,5 mg/L",
+        "8,0 mg/L",
+        "80 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica 0,80 × 10,0; la concentración de saturación es la que corresponde a esas condiciones.",
+      "fuente": "ISO 5814:2012; documentación de sondas, unidades · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q287",
+      "pregunta": "Una muestra tiene 10,0 mg/L y su concentración de saturación de referencia es 8,0 mg/L. ¿Qué porcentaje corresponde?",
+      "opciones": [
+        "80 %",
+        "100 % necesariamente",
+        "125 %"
+      ],
+      "correcta": 2,
+      "explicacion": "10,0/8,0 × 100 = 125 %; puede representar sobresaturación si la medida es válida.",
+      "fuente": "ISO 5814:2012, expresión de resultados · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Condiciones de interpretación.** El porcentaje de saturación y los mg/L no son intercambiables sin conocer la concentración de saturación correspondiente a **temperatura, presión y salinidad**. Cien por ciento no significa cien mg/L. Para resultados fiables deben conservarse las condiciones de la muestra; al medir sobresaturación se evita la **pérdida de gas durante manipulación y medida** (alcance de ISO 5814:2012)."
+    },
+    {
+      "id": "t24-q288",
+      "pregunta": "En un modelo lineal de comprobación, el cero da 2 µA y el 100 % da 22 µA. Una señal de 12 µA, ¿a qué saturación corresponde?",
+      "opciones": [
+        "50 %",
+        "54,5 %",
+        "60 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Tras descontar cero: (12 − 2)/(22 − 2) = 0,50.",
+      "fuente": "Hamilton, principios de sonda polarográfica; modelo lineal declarado · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q289",
+      "pregunta": "En un ejercicio ideal de gas seco se da p(O₂) = x(O₂)·P. Si x = 0,21 y P = 100 kPa, ¿qué presión parcial resulta?",
+      "opciones": [
+        "100 kPa",
+        "21 kPa",
+        "0,21 kPa"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica la fracción al total. La calibración real considera las condiciones pertinentes, incluida humedad.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Documentación de sondas, presión y oxígeno; ley de Dalton aplicada al ejemplo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una **celda electroquímica aislada de la muestra por una membrana permeable a los gases**. El oxígeno **difunde** a través de la membrana, **se reduce en el cátodo**, y la **corriente** que circula es proporcional a la **presión parcial** de oxígeno en la muestra."
+    },
+    {
+      "id": "t24-q290",
+      "pregunta": "Un procedimiento acepta cambio no mayor de 0,05 mg/L por minuto. La lectura cambia 0,12 mg/L en un minuto. ¿Cumple ese criterio?",
+      "opciones": [
+        "No",
+        "Sí, si aparece la palabra estable sin revisar el dato",
+        "Sí, por ser menor de 1 mg/L"
+      ],
+      "correcta": 0,
+      "explicacion": "El cambio observado supera el umbral dado; no se inventa una tolerancia distinta.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Manual de sonda; control de estabilidad de lectura · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una lectura instrumental negativa no demuestra una concentración física negativa de oxígeno: se revisan cero, calibración, rango e incertidumbre. La estabilidad se acepta con el criterio del método; una pantalla que cambia lentamente no basta sin criterio definido."
+    },
+    {
+      "id": "t24-q291",
+      "pregunta": "Tras corrección de cero el equipo muestra −0,2 mg/L. ¿Qué interpretación es adecuada?",
+      "opciones": [
+        "El agua contiene una cantidad física negativa de oxígeno",
+        "La salinidad convierte oxígeno en masa negativa",
+        "Revisar calibración, rango e incertidumbre; no existe concentración física negativa de oxígeno"
+      ],
+      "correcta": 2,
+      "explicacion": "Una indicación corregida puede salir negativa sin que ese sea un contenido físico real.",
+      "fuente": "YSI, Pro Plus User Manual, Rev. D, sensores de oxígeno; Manual de sonda, cero y control del rango · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Una lectura instrumental negativa no demuestra una concentración física negativa de oxígeno: se revisan cero, calibración, rango e incertidumbre. La estabilidad se acepta con el criterio del método; una pantalla que cambia lentamente no basta sin criterio definido."
+    },
+    {
+      "id": "t24-q292",
+      "pregunta": "Un modelo requiere al menos 80 % de 59,16 mV por década a 25 °C. ¿Qué mínimo aproximado supone ese requisito concreto?",
+      "opciones": [
+        "11,8 mV por década",
+        "47,3 mV por década",
+        "73,95 mV por década"
+      ],
+      "correcta": 1,
+      "explicacion": "0,80 × 59,16 = 47,328. No se aplica ese criterio sin más a otro modelo o a pH.",
+      "fuente": "Metrohm, Combined dF ISE, 6.3; criterio dado de un modelo · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La ficha **Metrohm Combined dF ISE, 8.0109.8010EN v4, apartados 5.1, 6 y 7**, pide condiciones comparables de patrones y muestras, temperatura lo más parecida posible, superficie limpia e íntegra y comprobaciones periódicas con patrón. Una desviación inaceptable obliga a revisar y renovar la curva. Sus criterios concretos son del modelo; no se trasladan sin más a todos los electrodos ni al pHímetro del tema 23."
+    },
+    {
+      "id": "t24-q293",
+      "pregunta": "El criterio es U ≤ 15 % de 2.500 µS/cm. El método da U = 400 µS/cm con k = 2. ¿Cumple ese requisito, aunque una muestra concreta lea 3.000 µS/cm?",
+      "opciones": [
+        "Sí, porque 400 es menor del 15 % de la lectura de 3.000",
+        "Sí, porque toda U menor de 500 sirve",
+        "No, el límite de esa base es 375 µS/cm"
+      ],
+      "correcta": 2,
+      "explicacion": "No se sustituye la base del valor paramétrico por el valor de una muestra para relajar el criterio.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Exigencia al método en agua de consumo | — | **RD 3/2023**, anexo III, parte D, tabla 15 | % del valor paramétrico | Incertidumbre de medida (k = 2): **conductividad 15 %**, **fluoruro 20 %**. Aparatos in situ **verificados y ajustados**, con la última calibración documentada (parte B.4) |"
+    },
+    {
+      "id": "t24-q294",
+      "pregunta": "Un ISE indica cero mV. ¿Puede concluirse que la concentración del ion es cero?",
+      "opciones": [
+        "No; hay que usar su referencia y relación de calibración",
+        "Solo si se muestra una cifra decimal",
+        "Sí, cualquier cero eléctrico demuestra ausencia del analito"
+      ],
+      "correcta": 0,
+      "explicacion": "La señal incluye un término constante y una referencia; cero potencial no es cero actividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ecuación de respuesta del ISE · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Una indicación de **cero mV no significa concentración cero**: el potencial incluye el término constante K y depende de la referencia de la celda."
     }
   ],
   "supuestos": [
@@ -1934,18 +4832,18 @@
         },
         {
           "id": "t24-s02-q3",
-          "pregunta": "¿Por qué el TISAB tampona a pH 5-5,5 y no más ácido?",
+          "pregunta": "¿Por qué se evita un medio excesivamente ácido en esta determinación de fluoruro con TISAB?",
           "opciones": [
             "Porque el electrodo se disuelve en ácido",
             "Porque el CDTA no funciona en ácido",
-            "Porque por debajo el fluoruro se protona a HF y HF₂⁻, que el electrodo no ve",
+            "Porque disminuye el fluoruro libre por protonación a HF y HF₂⁻",
             "Porque el OH⁻ interfiere en medio ácido"
           ],
           "correcta": 2,
-          "explicacion": "Por encima de 5,5 interfiere el OH⁻.",
-          "fuente": "Documentación de fabricante · apunte §2.3 y Dudas",
+          "explicacion": "El pH adecuado conserva una especie medible y limita interferencias. El intervalo de la formulación no es una frontera universal: OH⁻ puede interferir en medio demasiado alcalino según sensor y concentraciones.",
+          "fuente": "Metrohm, Combined dF ISE, 8.0109.8010EN v4, 2023-07-06 · apunte §2.3",
           "apartado": "2.3",
-          "evidencia": "por debajo, el fluoruro se protona a HF y HF₂⁻, que el electrodo no ve"
+          "evidencia": "a pH demasiado bajo disminuye el fluoruro libre por protonación a HF y HF₂⁻"
         },
         {
           "id": "t24-s02-q4",
@@ -1954,13 +4852,13 @@
             "Calibración directa con patrones en agua destilada",
             "Dilución hasta que no se vea el aluminio",
             "No se puede medir con ISE",
-            "Adiciones patrón, porque la matriz es la misma antes y después y se cancela"
+            "Adiciones patrón, si se mantienen condiciones de matriz adecuadas y se controlan las interferencias"
           ],
           "correcta": 3,
-          "explicacion": "Es el método cuando no se sabe reproducir la matriz.",
-          "fuente": "Bibliografía (Skoog, Harris) y documentación de fabricante · apunte §2.3",
+          "explicacion": "Puede ayudar cuando no se reproduce la matriz en patrones externos, pero no elimina automáticamente interferencias de otros iones ni sustituye el control de complejación.",
+          "fuente": "IUPAC Gold Book, measurement procedure with standard addition, 08030; Metrohm, manual tiamo, principio de adiciones patrón · apunte §2.3",
           "apartado": "2.3",
-          "evidencia": "la medida de antes y la de después se hacen en la misma muestra, así que todo lo que la matriz hace al electrodo afecta igual a las dos y se cancela."
+          "evidencia": "Las adiciones patrón pueden compensar efectos multiplicativos de matriz si las condiciones se mantienen suficientemente constantes; no eliminan automáticamente todas las interferencias."
         },
         {
           "id": "t24-s02-q5",

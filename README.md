@@ -21,6 +21,31 @@ Los dos ejercicios se hacen **el mismo día**, el segundo inmediatamente despué
 
 Consecuencia para los datos: los temas 9-40 se preguntan **en los dos formatos**, así que su fichero de repaso lleva `test` (3 opciones) y `supuestos` (4 opciones). Los temas 1-8 solo llevan `test`.
 
+## Ampliación a unas 300 preguntas (17/11/2026)
+
+Los 29 temas incluidos —1–8 y 20–40— tienen entre **294 y 301 preguntas teóricas**. Los temas **9–19 (microbiología) quedan fuera de esta ampliación**, por indicación del usuario, y conservan su contenido previo.
+
+El banco completo contiene **10.052 preguntas teóricas**. El test mixto de todos los temas ofrece **10.051**: elimina la pregunta compartida por los temas 26 y 27, conservando ambos identificadores en sus bancos para mantener el progreso.
+
+| Tema | Preguntas | Tema | Preguntas | Tema | Preguntas |
+| --- | ---: | --- | ---: | --- | ---: |
+| 1 | 300 | 22 | 298 | 32 | 300 |
+| 2 | 299 | 23 | 295 | 33 | 297 |
+| 3 | 300 | 24 | 294 | 34 | 299 |
+| 4 | 300 | 25 | 300 | 35 | 294 |
+| 5 | 300 | 26 | 300 | 36 | 296 |
+| 6 | 300 | 27 | 294 | 37 | 297 |
+| 7 | 300 | 28 | 301 | 38 | 299 |
+| 8 | 300 | 29 | 300 | 39 | 298 |
+| 20 | 300 | 30 | 299 | 40 | 300 |
+| 21 | 300 | 31 | 300 | — | — |
+
+Las preguntas añadidas tienen tres opciones, una sola correcta, explicación, fuente concreta, apartado y evidencia literal del apunte. Se conservan los IDs anteriores; las correcciones de contenido histórico quedan limitadas a los campos declarados en `scripts/excepciones-integridad.json`.
+
+Los recorridos de verificación por tema y del mixto usan el tamaño esperado del banco y comprueban posibles preguntas sobrantes. Se han retirado los límites antiguos de 200 y 400 del código de prueba para poder recorrer estos bancos completos. Las comprobaciones de tarjetas que necesitan varias valoraciones recorren todas las de núcleo, en orden aleatorio, para no depender de cuántas tarjetas salgan en un sorteo de veinte elementos.
+
+Verificación local del cierre: los 40 contadores y las 6.699 preguntas añadidas frente a la publicación anterior se han recorrido en la app. Los temas 36–39 pasan sus controles de repaso; también pasan figuras, mixto (9 controles), falladas (8), Test + tarjetas (8) y Solo tarjetas (9). Las pruebas utilizan perfiles temporales y no modifican el progreso del navegador personal.
+
 ## Cómo se trabaja
 
 Tema a tema, nunca en bloque:
@@ -63,6 +88,14 @@ Cada tema se amplía para cubrir el apunte entero, **sin tocar nada de lo que ya
   Excepciones aprobadas el 16/10/2026 (el detalle de cada una, con su cuestionario, en `scripts/excepciones-integridad.json`):
   - **Pasan a núcleo** (campos `nucleo` y `precedente`), 36 preguntas que ya habían caído en exámenes: tema 3, `q08`, `q11` y `q12`; tema 4, `q13`, `q23` y `q29`; tema 5, `q13`; tema 6, `q14`, `q15`, `q16`, `q18`, `q20`, `q31`, `q32` y `q33`; tema 7, `q11`, `q14`, `q18`, `q19`, `q20`, `q25`, `q26`, `q27` y `q28`; tema 8, `q10`, `q12`, `q13`, `q15`, `q17` y de `q20` a `q25`; tema 35, `q25`.
   - **Dejan de ser núcleo** (campos `nucleo` y `reverso`): `t38-f25` y `t39-f04`, que se apoyaban en 1322, segundo ejercicio, n.º 10 y n.º 7, **anuladas por el tribunal**. Su reverso dice ahora que la pregunta fue anulada, en lugar de presentarla como respuesta del examen.
+
+  Correcciones autorizadas el 17/11/2026, conservando los IDs y limitadas a los campos declarados en `scripts/excepciones-integridad.json`:
+  - **Tema 28:** referencia de Ewers actualizada a la parte K del anexo III del Reglamento 152/2009, tras el Reglamento de Ejecución (UE) 2024/771; tarjetas `f37`–`f41`, pregunta `q24` y supuesto `s02-q4`.
+  - **Tema 32:** el límite de pH depende de la columna y de las especificaciones del fabricante; se corrige la afirmación universal de 7,5 en `f11` y `q11` y en el apunte.
+  - **Tema 6:** actualización de vigencia detectada al ampliar y revisar el tema: se precisa el recargo del IBI fuera de zonas tensionadas en `f22` y `q48` tras el RDL 29/2026, art. 8. Se mantienen IDs y respuesta correcta; el apunte diferencia los nuevos supuestos y su eficacia temporal.
+  - **Tema 20:** calendario CLP de `f39` actualizado según el Reglamento (UE) 2025/2439: determinados plazos se aplazan a 2028; se mantienen las demás fechas aplicables. Se corrigen también referencias de versión del apunte y la errata de los tres primeros elementos del artículo 17.
+  - **Tema 22:** once correcciones acotadas sobre alcance del blanco, secado conforme al fabricante, certificados de la gama BLAUBRAND y evidencias relacionadas, sin generalizar una prohibición para clase B. Se conservan IDs y posiciones correctas; el registro especifica cada campo. En el apunte se explicita además la ecuación estequiométrica con sus coeficientes definidos.
+  - **Tema 24:** trece correcciones acotadas sobre selectividad, adiciones patrón, valoración por inflexión y pH de trabajo del fluoruro. Se explicitan actividades, cargas y condiciones de matriz; no se presenta la adición como eliminación universal de interferencias ni 5,5 como umbral universal de OH⁻. Fuentes IUPAC, Metrohm y bibliografía técnica, con IDs y posiciones correctas conservados.
   - **Deja de ser núcleo** (campos `nucleo` y `explicacion`): `t38-q16`, la pregunta de test que se apoyaba en la misma 1322, segundo ejercicio, n.º 10 (anulada). Su explicación dice ahora que fue anulada.
   - **Corregida** (campo `reverso`): `t33-f33`, que repetía un error de lectura de la tabla de frecuencias del RD 3/2023 (ver tema 33, apartado 2.4).
 
@@ -428,3 +461,25 @@ Para ejecutar la batería completa en tandas pequeñas, reconstruir primero y ej
 ## Progreso de estudio
 
 Se guarda en `localStorage` del navegador (clave `oposicion-zgz:progreso:v1`); no hay backend. Repetición espaciada tipo SM-2 simplificada a tres botones, racha diaria y estadísticas de test. Exportable e importable en JSON desde la página **Progreso**.
+
+Revisión de calidad del tema 26 (17/11/2026): siete fichas históricas matizan la comparación de la AAS clásica frente a equipos de fuente continua de alta resolución y lámparas multielementales. Fuente: Analytik Jena, *contrAA 800 Operating Manual*, 4.1. Cambios acotados por ID y campo en `scripts/excepciones-integridad.json`; se conservan identificadores y posiciones correctas.
+
+Revisión de calidad del tema 27 (17/11/2026): nueve fichas históricas precisan límites de elementos, selección de patrón interno, rango instrumental y contribuciones del argón. Fuentes: Agilent, 5994-4830EN y ayuda de patrón interno; Thermo Scientific, AN44475. Cambios acotados por ID y campo en `scripts/excepciones-integridad.json`; se conservan identificadores y posiciones correctas.
+
+Revisión de calidad del tema 30 (17/11/2026): nueve fichas históricas precisan el efecto del supresor, el carácter condicionado del orden de elución, la selección de detectores y métodos y la eficiencia de columna. Fuentes: Harris, *Análisis Químico Cuantitativo*; Metrohm, *Ion chromatography guide*; Thermo Scientific, BR70261. Campos concretos registrados en `scripts/excepciones-integridad.json`; se conservan IDs y posiciones correctas.
+
+Revisión de calidad del tema 31 (17/11/2026): nueve fichas históricas matizan el tratamiento de gases, introducción de muestras, respuesta de FID y MS, identificación y calibración. La respuesta oficial de 1233 #11 se mantiene en su contexto histórico y se explica la respuesta amplia del TCD. Fuentes: CEM QU-005, documentación Agilent y Harris. Excepciones por ID y campo en `scripts/excepciones-integridad.json`; se conservan identificadores y posiciones correctas.
+
+Revisión de calidad del tema 33 (17/11/2026): 18 fichas históricas corrigen generalizaciones sobre conductividad/dureza, indicadores, cloro, diagnóstico por nitrito y modelo de alcalinidad P/T; se distinguen las cinco cifras de turbidez. Se mantienen las respuestas históricas oficiales en su contexto, todos los identificadores y posiciones correctas. Fuentes y excepciones por ID/campo documentadas.
+
+Revisión de calidad del tema 34 (17/11/2026): 29 fichas históricas delimitan la relación típica DQO/DBO, fracciones operacionales, DBO de cinco días, alcance de normas y métodos, y la prioridad del VLE autorizado al determinar Vr en el RDPH. Las correcciones se declaran por ID/campo y conservan identificadores y posiciones correctas.
+
+Revisión de calidad del tema 35 (17/11/2026): 41 fichas y preguntas históricas corrigen NCA revisadas de Pb y Ni (corchetes vigentes desde 22/12/2018), Hg 0,07 como CMA y no MA, fracciones analíticas, clasificación aragonesa, artículo 6 del RD 509/1996 y prioridad del VLE para Vr. Fuentes BOE, Gobierno de Aragón y catálogos UNE/ISO. Excepciones por ID/campo; se conservan identificadores y posiciones correctas.
+
+Revisión de calidad del tema 36 (17/11/2026): 35 objetos históricos matizados por compatibilidad de envases, plazos orientativos, conservación específica, fracciones disuelta/recuperable y muestreo de Cu/Pb/Ni. Excepciones por ID y campo; se conservan identificadores y posiciones correctas. La ampliación nueva de este tema se centra en fisicoquímica y no amplía procedimientos microbiológicos.
+
+Revisión de calidad del tema 37 (17/11/2026): 38 objetos históricos matizan fracciones PM y resultados medidos, gravimetría/equivalencia, categorías de ozono, blancos, recortes de filtro y umbrales de episodios. Se diferencia el horario de la RedIME y el marco RD102/2011 de los cuadros2030 de la Directiva2024/2881. Excepciones por ID y campo; identificadores y posiciones correctas conservados.
+
+Revisión de calidad del tema 38 (17/11/2026): 44 objetos históricos matizan alcance, sesgo, incertidumbre frente a error, independencia y covarianzas, factores de cobertura, componentes pequeñas y comunicación de radionucleidos. Fuentes VIM, GUM, Eurachem y BOE. Excepciones por ID y campo; identificadores y posiciones correctas conservados.
+
+Revisión de calidad del tema 39 (17/11/2026): 45 objetos históricos actualizan referencias ISO33401/33403/33405, condiciones de R² y mínimos cuadrados, patrones y materiales de referencia, periodicidad de calibración, reglas y excepciones TR569, En y participación externa. Fuentes VIM, NIST, ISO, Nordtest, Eurachem y ENAC. Excepciones por ID y campo; identificadores y posiciones correctas conservados.

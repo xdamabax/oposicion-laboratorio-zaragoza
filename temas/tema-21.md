@@ -104,6 +104,12 @@ Material específico de la gravimetría, más allá del vidrio general:
 - **Vidrio de reloj y pesasustancias.** Para pesar la muestra; el pesasustancias con tapa, si la muestra es higroscópica.
 - **Varilla de vidrio con goma (policía de goma).** Para arrastrar los restos de precipitado adheridos a las paredes.
 
+#### Selección del filtro y transferencia cuantitativa
+
+El tamaño de poro debe **retener las partículas del precipitado sin hacer innecesariamente lenta la filtración**. Un filtro demasiado abierto deja pasar sólido y causa pérdida de analito; uno demasiado cerrado puede colmatarse. La velocidad comercial y la retención no sustituyen la comprobación de compatibilidad química y térmica del soporte con el método.
+
+En la filtración clásica puede **decantarse primero el sobrenadante a través del filtro**, reservando inicialmente el sólido en el vaso para evitar colmatación temprana. Después se lava y transfiere cuantitativamente el precipitado, recuperando las partículas adheridas con la varilla de goma y el líquido de lavado previsto. Lo decantado también pasa por el filtro: no se desecha directamente. Esta explicación se contrasta con **David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate**, edición abierta de LibreTexts (CC BY-NC-SA 4.0): https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_Volume_I_(Harvey)/08:_Gravimetric_Methods/8.02:_Precipitation_Gravimetry
+
 ### 2.3. Operaciones
 
 La secuencia clásica de una gravimetría por precipitación:
@@ -148,6 +154,14 @@ Son la fuente de preguntas más recurrente del apartado:
 
 Los remedios: **digestión** (reduce oclusión y adsorción), **redisolución y reprecipitación** (la más eficaz contra la coprecipitación), **lavado con electrolito volátil** (evita la peptización) y **control del reactivo en exceso** (un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos).
 
+#### Alcance de las reglas de precipitación y lavado
+
+Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará.
+
+La disolución diluida y la adición lenta con agitación reducen las concentraciones locales que favorecen nucleación excesiva. La precipitación en caliente se recomienda **cuando el aumento de temperatura eleva la solubilidad en esas condiciones**; no toda sustancia tiene la misma dependencia térmica. El **pH modifica solubilidad y selectividad**: debe ajustarse para recuperar el analito sin precipitar innecesariamente interferentes. Una separación cuantitativa busca recuperar prácticamente todo el analito, no solo producir sólido visible.
+
+La digestión mejora el tamaño y puede reducir ciertas impurezas, pero **no garantiza eliminar inclusiones de la red**. Redisolver y reprecipitar puede reducir coprecipitación, con control de las pérdidas por solubilidad. Un reposo excesivo puede favorecer **postprecipitación**, por lo que digestión no significa dejar indefinidamente la muestra. Una forma final de **composición variable, hidratación no controlada o conversión térmica incompleta** impide aplicar correctamente un factor fijo aunque la balanza sea excelente.
+
 ### 2.4. Balanzas analíticas: manejo y calibración
 
 #### 2.4.1. Tipos por resolución
@@ -160,6 +174,8 @@ La **división de escala real (d)** es el intervalo entre dos indicaciones conse
 | **Balanza analítica** | **0,1 mg** | Pesada de muestra y de precipitados |
 | Semimicrobalanza | 0,01 mg | Muestras pequeñas |
 | Microbalanza | 0,001 mg (1 µg) | Filtros de material particulado, trazas |
+
+Estas resoluciones son **valores comerciales habituales, no cifras fijadas por la norma para cada denominación**. La clase de exactitud legal se determina por los requisitos metrológicos aplicables, no solo por el número de decimales de la pantalla.
 
 #### 2.4.2. Clases de exactitud
 
@@ -246,6 +262,10 @@ La referencia técnica europea es la **EURAMET Calibration Guide No. 18**, «Gui
 
 La calibración da **error e incertidumbre**; que eso sea aceptable o no lo decide el laboratorio comparándolo con su propio **criterio de aceptación**, que fija según lo que necesita el método.
 
+En la comparación con una masa de referencia, el **error de indicación es I − m_ref**; la corrección que lo compensa tiene signo contrario. Aplicar una corrección **no elimina la incertidumbre**. El resultado se acepta según el uso previsto, considerando la información metrológica pertinente; un certificado no sustituye la decisión de aptitud del laboratorio.
+
+La **trazabilidad es propiedad de un resultado**, no un sinónimo de llevar una etiqueta o citar una institución. La cadena debe estar documentada y cada calibración contribuye a la incertidumbre. Tampoco demuestra por sí sola que la incertidumbre sea suficientemente pequeña para cualquier método. Los controles de rutina complementan la calibración; no la sustituyen automáticamente. El plan de calibración se establece según uso, estabilidad, riesgo y requisitos aplicables, no porque toda calibración técnica tenga un plazo universal de dos años. Ese plazo del apartado 2.4.7 corresponde a una verificación legal concreta.
+
 #### 2.4.6. Pesas patrón
 
 Los patrones de masa se rigen por la recomendación **OIML R 111-1:2004** (con enmienda de 2025), que cubre valores nominales **de 1 mg a 5 000 kg** y define nueve clases de exactitud, de la más exacta a la menos:
@@ -297,6 +317,14 @@ La gravimetría por volatilización se subdivide en dos, y es distinción de exa
 | Grasas y aceites | Gravimetría por extracción | Standard Methods 5520 B | mg/L | Extracción con disolvente, evaporación y pesada del residuo |
 | Cenizas (muestras sólidas) | Gravimetría por calcinación | Método general de mufla | % | Calcinación en mufla; enfriado en desecador; masa constante |
 | Residuo seco / sólidos totales | Gravimetría por desecación | Método general | mg/L | Evaporación a sequedad y secado a 105 °C; masa constante |
+
+#### Lectura de resultados y controles básicos
+
+La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**.
+
+En una pérdida por calcinación se indica la base: la masa perdida **respecto de la materia seca inicial** no es el mismo porcentaje que respecto de la muestra húmeda. La pérdida por calentamiento **no identifica por sí sola qué componente se ha volatilizado**; la atribución a humedad o materia orgánica requiere el alcance y condiciones del método. Las cenizas son un residuo operacional del tratamiento, no necesariamente un compuesto puro de fórmula única. En un depósito electrogravimétrico se descuenta la masa del **electrodo antes del depósito**.
+
+En filtros de partículas atmosféricas, el acondicionamiento y la manipulación evitan confundir cambios de humedad o contaminación con masa captada. La concentración requiere la **masa captada y el volumen de aire muestreado**; pesar el filtro solo no determina una concentración ambiental. No se extrapolan a una edición nueva todos los detalles numéricos de una edición anterior sin comprobarlos.
 
 ## 4. Puntos críticos para el examen
 

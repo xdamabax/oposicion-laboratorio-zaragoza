@@ -2024,6 +2024,2876 @@
       "fuente": "LibreTexts, Analytical Chemistry 2.1, valoraciones potenciométricas; esquema funcional del apunte · apunte §2.5",
       "apartado": "2.5",
       "evidencia": "Un **valorador automático** (o titulador) hace por sí solo las tres cosas que el analista hacía a mano: **dosificar** el valorante, **medir** la señal del electrodo y **calcular** el punto de equivalencia."
+    },
+    {
+      "id": "t23-q91",
+      "pregunta": "¿Qué conjunto forma la celda de medida potenciométrica descrita?",
+      "opciones": [
+        "Referencia, electrodo indicador y medidor de alta impedancia",
+        "Solo una bureta y un indicador de color",
+        "Únicamente un electrodo sin circuito de medida"
+      ],
+      "correcta": 0,
+      "explicacion": "La diferencia de potencial necesita una referencia y una señal sensible a la especie.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, celda potenciométrica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Para hacer una potenciometría hacen falta **tres cosas**:"
+    },
+    {
+      "id": "t23-q92",
+      "pregunta": "¿Qué función tiene el electrodo de referencia frente al indicador?",
+      "opciones": [
+        "Dosificar el valorante",
+        "Responder selectivamente al analito en lugar del indicador",
+        "Proporcionar un potencial estable para comparar"
+      ],
+      "correcta": 2,
+      "explicacion": "La referencia debe conservar un comportamiento reproducible durante la medida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "1. Un **electrodo de referencia**, de potencial constante y conocido."
+    },
+    {
+      "id": "t23-q93",
+      "pregunta": "¿Qué electrodo debe responder a la actividad de la especie medida?",
+      "opciones": [
+        "La referencia ideal como función principal",
+        "El indicador",
+        "La sonda térmica como único electrodo"
+      ],
+      "correcta": 1,
+      "explicacion": "El potencial sensible se compara con el de referencia para formar la señal de celda.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, electrodo indicador · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "2. Un **electrodo indicador**, cuyo potencial **sí** varía con la concentración (mejor dicho, con la **actividad**) de la especie que se mide."
+    },
+    {
+      "id": "t23-q94",
+      "pregunta": "¿Qué magnitud química aparece rigurosamente en la respuesta de Nernst del electrodo?",
+      "opciones": [
+        "Actividad de la especie",
+        "Siempre concentración nominal sin condiciones",
+        "Solo masa total del recipiente"
+      ],
+      "correcta": 0,
+      "explicacion": "Aproximar actividad por concentración requiere hipótesis sobre el medio.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ecuación de Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "2. Un **electrodo indicador**, cuyo potencial **sí** varía con la concentración (mejor dicho, con la **actividad**) de la especie que se mide."
+    },
+    {
+      "id": "t23-q95",
+      "pregunta": "¿Qué condición eléctrica caracteriza la medida potenciométrica ideal?",
+      "opciones": [
+        "Una corriente electrolítica grande obligatoria",
+        "Corriente de medida despreciable",
+        "Ausencia de cualquier diferencia de potencial"
+      ],
+      "correcta": 1,
+      "explicacion": "Se mide potencial evitando perturbar la celda por circulación apreciable de corriente.",
+      "fuente": "CEM QU-003, generalidades; Harris, potenciometría · apunte §1",
+      "apartado": "1",
+      "evidencia": "La **potenciometría** mide la diferencia de potencial de una celda electroquímica **sin que circule corriente apreciable**, y de esa medida deduce la actividad de una especie en disolución. No consume la muestra, no la destruye y el instrumento es barato: por eso la medida de pH, que es su aplicación estrella, es la determinación más frecuente de cualquier laboratorio de aguas."
+    },
+    {
+      "id": "t23-q96",
+      "pregunta": "En E_celda = E_indicador − E_referencia + E_j, ¿qué término representa la unión entre disoluciones?",
+      "opciones": [
+        "El volumen de valorante",
+        "Solo E_indicador",
+        "E_j"
+      ],
+      "correcta": 2,
+      "explicacion": "La unión líquida puede contribuir a la señal además de los potenciales de los electrodos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potencial de celda · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(celda) = E(indicador) − E(referencia) + E(j)**"
+    },
+    {
+      "id": "t23-q97",
+      "pregunta": "¿Qué origina el potencial de unión líquida entre dos disoluciones?",
+      "opciones": [
+        "Diferencias de movilidad y difusión de los iones",
+        "El color del vidrio exclusivamente",
+        "El número de gotas del indicador visual"
+      ],
+      "correcta": 0,
+      "explicacion": "La separación transitoria de cargas en la unión contribuye a la diferencia de potencial.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potencial de unión líquida · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(j)** es el **potencial de unión líquida**: aparece siempre que dos disoluciones distintas están en contacto, porque los iones difunden a velocidades diferentes. **No se puede medir por separado**, y es uno de los límites de exactitud de toda medida de pH. Se **minimiza** con un puente de **KCl concentrado**, porque el K⁺ y el Cl⁻ tienen movilidades casi iguales y difunden a la vez."
+    },
+    {
+      "id": "t23-q98",
+      "pregunta": "¿Por qué se usa KCl concentrado para minimizar el potencial de unión en el ejemplo?",
+      "opciones": [
+        "El KCl elimina toda incertidumbre del sistema",
+        "Ambos iones carecen de carga",
+        "K⁺ y Cl⁻ tienen movilidades próximas"
+      ],
+      "correcta": 2,
+      "explicacion": "Las movilidades semejantes limitan la separación de carga; no garantizan unión exactamente nula.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, puentes salinos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(j)** es el **potencial de unión líquida**: aparece siempre que dos disoluciones distintas están en contacto, porque los iones difunden a velocidades diferentes. **No se puede medir por separado**, y es uno de los límites de exactitud de toda medida de pH. Se **minimiza** con un puente de **KCl concentrado**, porque el K⁺ y el Cl⁻ tienen movilidades casi iguales y difunden a la vez."
+    },
+    {
+      "id": "t23-q99",
+      "pregunta": "¿Por qué no debe tratarse E_j como una corrección perfectamente conocida en toda muestra?",
+      "opciones": [
+        "Porque siempre vale exactamente cero",
+        "No se mide de forma independiente de manera directa en esta celda",
+        "Porque es una masa y no un potencial"
+      ],
+      "correcta": 1,
+      "explicacion": "La unión es una fuente de limitación y debe controlarse mediante diseño y condiciones de medida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, límites de potenciometría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E(j)** es el **potencial de unión líquida**: aparece siempre que dos disoluciones distintas están en contacto, porque los iones difunden a velocidades diferentes. **No se puede medir por separado**, y es uno de los límites de exactitud de toda medida de pH. Se **minimiza** con un puente de **KCl concentrado**, porque el K⁺ y el Cl⁻ tienen movilidades casi iguales y difunden a la vez."
+    },
+    {
+      "id": "t23-q100",
+      "pregunta": "¿En qué escala entra la temperatura T en la ecuación teórica de Nernst?",
+      "opciones": [
+        "Kelvin",
+        "Unidades de pH",
+        "Grados Celsius sin conversión"
+      ],
+      "correcta": 0,
+      "explicacion": "La relación termodinámica utiliza temperatura absoluta.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ecuación de Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "donde *R* es la constante de los gases, *F* la de Faraday y *T* la temperatura absoluta. El factor entre paréntesis es la **pendiente**, y es lo único que hay que retener con números:"
+    },
+    {
+      "id": "t23-q101",
+      "pregunta": "En la expresión teórica de la pendiente, ¿qué efecto tiene duplicar la carga n manteniendo la temperatura?",
+      "opciones": [
+        "Duplicarla",
+        "Reducir a la mitad su magnitud por década",
+        "Dejarla necesariamente igual"
+      ],
+      "correcta": 1,
+      "explicacion": "La magnitud de la pendiente es inversamente proporcional a n.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pendiente de Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Para hacer una potenciometría hacen falta **tres cosas**:"
+    },
+    {
+      "id": "t23-q102",
+      "pregunta": "¿Puede usarse la misma pendiente teórica de 25 °C como si fuera idéntica a cualquier temperatura?",
+      "opciones": [
+        "Solo si el volumen de muestra es constante",
+        "Sí, 59,16 mV es universal e invariable",
+        "No, la pendiente depende de la temperatura absoluta"
+      ],
+      "correcta": 2,
+      "explicacion": "La compensación térmica se fundamenta en esa dependencia.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, dependencia térmica de Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**59,16 mV por unidad de pH a 25 °C** es la cifra que hay que saber de memoria. Y hay que ver **que la pendiente crece con la temperatura**: no es una constante, y de ahí que los pHímetros lleven compensación térmica."
+    },
+    {
+      "id": "t23-q103",
+      "pregunta": "¿Qué tipo de relación tiene el potencial con la actividad en la ecuación del tema?",
+      "opciones": [
+        "Logarítmica",
+        "Directamente proporcional a la actividad sin logaritmo",
+        "Independiente de la especie"
+      ],
+      "correcta": 0,
+      "explicacion": "Una década de actividad produce un cambio determinado por la pendiente, no un cambio proporcional simple.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, respuesta logarítmica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**E = K ± (2,303 · R · T / n · F) · log a**"
+    },
+    {
+      "id": "t23-q104",
+      "pregunta": "¿Por qué un pequeño error en mV puede ser relevante al convertir a actividad iónica?",
+      "opciones": [
+        "Porque solo importa la capacidad del vaso",
+        "Porque cualquier mV equivale a un mol",
+        "La conversión es exponencial al invertir una relación logarítmica"
+      ],
+      "correcta": 2,
+      "explicacion": "La señal eléctrica y el resultado de actividad no tienen relación lineal directa.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error en potenciometría directa · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "De la propia ecuación sale el **talón de Aquiles de la potenciometría directa**: un error de **1 mV** en la medida equivale a un error de 1/59,16 = 0,017 unidades logarítmicas, es decir, **casi un 4 % de error relativo** en la actividad de un ion monovalente. En medida de pH ese error es asumible (0,017 unidades); en potenciometría directa de otros iones, no tanto, y menos aún si el ion es divalente, donde el mismo milivoltio vale el doble."
+    },
+    {
+      "id": "t23-q105",
+      "pregunta": "¿Qué diferencia tiene la potenciometría directa frente a una valoración con detección potenciométrica?",
+      "opciones": [
+        "Mide siempre solo el volumen de titulante",
+        "Convierte la señal de potencial en el valor de la especie mediante calibración",
+        "Nunca necesita electrodos"
+      ],
+      "correcta": 1,
+      "explicacion": "En la valoración, la señal se usa principalmente para localizar la condición final de reacción.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, modos de potenciometría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "De la propia ecuación sale el **talón de Aquiles de la potenciometría directa**: un error de **1 mV** en la medida equivale a un error de 1/59,16 = 0,017 unidades logarítmicas, es decir, **casi un 4 % de error relativo** en la actividad de un ion monovalente. En medida de pH ese error es asumible (0,017 unidades); en potenciometría directa de otros iones, no tanto, y menos aún si el ion es divalente, donde el mismo milivoltio vale el doble."
+    },
+    {
+      "id": "t23-q106",
+      "pregunta": "Si a toda una curva E frente a V se añade un offset constante, ¿qué propiedad geométrica no cambia por ese solo hecho?",
+      "opciones": [
+        "La posición de su inflexión en volumen",
+        "El valor de pH de cada tampón usado",
+        "Todos los valores absolutos de E"
+      ],
+      "correcta": 0,
+      "explicacion": "Una traslación vertical no modifica por sí sola las derivadas respecto al volumen.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, curvas potenciométricas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La comparación sobre el valor absoluto se refiere a **localizar una inflexión con un desplazamiento constante de la señal**, manteniendo buena respuesta del electrodo. No significa que toda deriva o falta de calibración sea inocua. En particular, un **punto final fijado a un valor de pH sí depende de la exactitud de ese valor**."
+    },
+    {
+      "id": "t23-q107",
+      "pregunta": "¿Por qué el razonamiento del offset constante no justifica ignorar la calibración al detener a pH 4,5?",
+      "opciones": [
+        "Porque SET no utiliza electrodo",
+        "Porque allí importa alcanzar correctamente un valor absoluto de pH",
+        "Porque el volumen sustituye al valor de consigna"
+      ],
+      "correcta": 1,
+      "explicacion": "La detección de una inflexión y la de un valor fijo no son el mismo criterio.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, punto final prefijado · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La comparación sobre el valor absoluto se refiere a **localizar una inflexión con un desplazamiento constante de la señal**, manteniendo buena respuesta del electrodo. No significa que toda deriva o falta de calibración sea inocua. En particular, un **punto final fijado a un valor de pH sí depende de la exactitud de ese valor**."
+    },
+    {
+      "id": "t23-q108",
+      "pregunta": "¿Qué debe evitarse al comparar potenciometría directa y titulación potenciométrica?",
+      "opciones": [
+        "Comprobar el funcionamiento del sistema",
+        "Distinguir offset constante de respuesta inestable",
+        "Concluir que cualquier electrodo defectuoso sirve para titular"
+      ],
+      "correcta": 2,
+      "explicacion": "Una curva útil necesita respuesta suficientemente estable y adecuada aunque se busque una inflexión.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, respuesta de electrodos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La comparación sobre el valor absoluto se refiere a **localizar una inflexión con un desplazamiento constante de la señal**, manteniendo buena respuesta del electrodo. No significa que toda deriva o falta de calibración sea inocua. En particular, un **punto final fijado a un valor de pH sí depende de la exactitud de ese valor**."
+    },
+    {
+      "id": "t23-q109",
+      "pregunta": "¿Qué comportamiento se busca en una referencia frente a cambios de la muestra?",
+      "opciones": [
+        "Potencial reproducible y poco sensible a su composición",
+        "Respuesta máxima a cada cambio del analito",
+        "Consumo cuantitativo de todo el analito"
+      ],
+      "correcta": 0,
+      "explicacion": "Su finalidad es aportar una base estable, no reemplazar al electrodo indicador.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, requisitos de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Debe dar un potencial **constante, reproducible y conocido**, insensible a la composición de la muestra, y ser robusto y fácil de usar."
+    },
+    {
+      "id": "t23-q110",
+      "pregunta": "¿Qué naturaleza tiene el potencial cero asignado al electrodo estándar de hidrógeno?",
+      "opciones": [
+        "Prueba de ausencia de toda reacción electroquímica",
+        "Resultado de que no contiene iones",
+        "Convencional como referencia de escala"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor de referencia se asigna por convenio y permite expresar otros potenciales.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodo estándar de hidrógeno · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Estándar de hidrógeno (EEH)** | 2 H⁺ + 2 e⁻ ⇌ H₂ | **0,000 V** por convenio, a cualquier temperatura. Referencia primaria; **no se usa en rutina** |"
+    },
+    {
+      "id": "t23-q111",
+      "pregunta": "¿Por qué se distingue el electrodo estándar de hidrógeno de una referencia rutinaria de laboratorio?",
+      "opciones": [
+        "Porque no puede definir ninguna escala",
+        "Es referencia primaria, pero su uso práctico es más incómodo",
+        "Porque siempre tiene potencial desconocido"
+      ],
+      "correcta": 1,
+      "explicacion": "La referencia primaria y la solución operativa del laboratorio cumplen papeles distintos.",
+      "fuente": "CEM QU-003, generalidades de electrodos; Harris, referencias · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Estándar de hidrógeno (EEH)** | 2 H⁺ + 2 e⁻ ⇌ H₂ | **0,000 V** por convenio, a cualquier temperatura. Referencia primaria; **no se usa en rutina** |"
+    },
+    {
+      "id": "t23-q112",
+      "pregunta": "¿Qué consecuencia tiene cambiar sin control la concentración de cloruro del relleno de la referencia?",
+      "opciones": [
+        "Puede cambiar su potencial",
+        "Se duplica siempre la carga del analito",
+        "Solo cambia el color del líquido sin efecto eléctrico"
+      ],
+      "correcta": 0,
+      "explicacion": "El electrolito forma parte de las condiciones que definen el potencial de referencia.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Ag/AgCl y calomelanos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- El potencial de ambos depende de la **concentración de cloruro**: E = E° − 0,0592 · log[Cl⁻]. Por eso el electrolito de relleno es parte del instrumento y **no se puede cambiar por otro**."
+    },
+    {
+      "id": "t23-q113",
+      "pregunta": "¿Por qué deben indicarse temperatura y concentración de KCl al citar un potencial de Ag/AgCl?",
+      "opciones": [
+        "Porque todos los electrodos Ag/AgCl tienen un valor idéntico sin condiciones",
+        "Porque el valor depende de esas condiciones",
+        "Porque el KCl solo es un conservante sin función electroquímica"
+      ],
+      "correcta": 1,
+      "explicacion": "Un valor tabulado carece de contexto completo si se omiten las condiciones relevantes.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos Ag/AgCl · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Plata / cloruro de plata** | AgCl + e⁻ ⇌ Ag + Cl⁻ | **+0,197 V** (KCl saturado); **+0,205 V** con KCl 3,5 M |"
+    },
+    {
+      "id": "t23-q114",
+      "pregunta": "¿Qué diferencia material favorece Ag/AgCl frente al electrodo de calomelanos?",
+      "opciones": [
+        "No tiene potencial electroquímico",
+        "No necesita ningún electrolito",
+        "No contiene mercurio en su sistema de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "El cambio facilita el manejo frente a sistemas basados en mercurio, además de otras ventajas del diseño.",
+      "fuente": "CEM QU-003, referencias de pH; Harris, Ag/AgCl · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- El **Ag/AgCl ha desplazado al de calomelanos** porque **no lleva mercurio** y aguanta mejor las temperaturas altas. El QU-003 lo dice así: los más utilizados son el de calomelanos y «el de plata (plata/cloruro de plata), más recientemente»."
+    },
+    {
+      "id": "t23-q115",
+      "pregunta": "Un electrodo de Cu en equilibrio con Cu²⁺ se clasifica como:",
+      "opciones": [
+        "Metálico de primera especie",
+        "Membrana de vidrio para H⁺",
+        "Electrodo de gases por difusión"
+      ],
+      "correcta": 0,
+      "explicacion": "La primera especie se relaciona con el catión del propio metal.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos de primera especie · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Metálicos de primera especie** | Un metal en equilibrio con **su propio catión** | Ag/Ag⁺, Cu/Cu²⁺ |"
+    },
+    {
+      "id": "t23-q116",
+      "pregunta": "¿Qué configuración caracteriza a un indicador metálico de segunda especie?",
+      "opciones": [
+        "Un bulbo de vidrio sin sistema metálico",
+        "Un metal que responde solo a su catión libre en cualquier caso",
+        "Metal asociado a una sal poco soluble que responde al anión"
+      ],
+      "correcta": 2,
+      "explicacion": "El equilibrio de la sal permite relacionar el potencial con el anión.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos de segunda especie · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Metálicos de segunda especie** | Metal recubierto de una **sal poco soluble**: responde al **anión** | **Ag/AgCl para medir Cl⁻** |"
+    },
+    {
+      "id": "t23-q117",
+      "pregunta": "¿Qué dato distingue usar Ag/AgCl como indicador de cloruro de usarlo como referencia?",
+      "opciones": [
+        "Solo el nombre químico, que prohíbe cualquier otro uso",
+        "La función y las condiciones de equilibrio y contacto del sistema",
+        "Solo el color del cable"
+      ],
+      "correcta": 1,
+      "explicacion": "Un mismo sistema electroquímico puede cumplir funciones diferentes según el montaje.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, función de electrodos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Metálicos de segunda especie** | Metal recubierto de una **sal poco soluble**: responde al **anión** | **Ag/AgCl para medir Cl⁻** |"
+    },
+    {
+      "id": "t23-q118",
+      "pregunta": "¿Qué significa que el platino actúe como electrodo inerte en una valoración redox?",
+      "opciones": [
+        "Facilita intercambio electrónico sin ser el reactivo estequiométrico que se consume",
+        "Que mide únicamente masa",
+        "Que no puede transmitir electrones"
+      ],
+      "correcta": 0,
+      "explicacion": "El potencial refleja el sistema redox de la disolución, no una disolución cuantitativa del platino.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, indicadores redox · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Redox inertes** | No participan: sólo ceden electrones al par redox de la disolución | **Platino**, oro |"
+    },
+    {
+      "id": "t23-q119",
+      "pregunta": "¿Qué par de materiales se cita para indicadores redox inertes?",
+      "opciones": [
+        "Vidrio de pH y papel de filtro",
+        "Platino y oro",
+        "Cromato y almidón"
+      ],
+      "correcta": 1,
+      "explicacion": "La selección responde al mecanismo de señal de la reacción seguida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, elección de indicador · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Redox inertes** | No participan: sólo ceden electrones al par redox de la disolución | **Platino**, oro |"
+    },
+    {
+      "id": "t23-q120",
+      "pregunta": "¿Qué transporte distingue la membrana selectiva del mecanismo de un indicador metálico?",
+      "opciones": [
+        "Movimiento de gotas entre buretas",
+        "Circulación exclusiva de electrones a través del vidrio",
+        "Transporte o intercambio iónico en la membrana"
+      ],
+      "correcta": 2,
+      "explicacion": "El mecanismo de membrana debe distinguirse de la transferencia electrónica de un metal.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodos de membrana · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana** | El potencial nace en una **membrana** que separa dos disoluciones: transportan **iones**, no electrones | **Electrodo de vidrio** (pH); los demás, **tema 24** |"
+    },
+    {
+      "id": "t23-q121",
+      "pregunta": "¿A qué grupo pertenece el electrodo de vidrio de pH?",
+      "opciones": [
+        "Electrodo de membrana",
+        "Metálico de primera especie de sodio",
+        "Pesa patrón eléctrica"
+      ],
+      "correcta": 0,
+      "explicacion": "Su señal se relaciona con las diferencias de actividad en las superficies de la membrana hidratada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membranas selectivas · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **De membrana** | El potencial nace en una **membrana** que separa dos disoluciones: transportan **iones**, no electrones | **Electrodo de vidrio** (pH); los demás, **tema 24** |"
+    },
+    {
+      "id": "t23-q122",
+      "pregunta": "¿Qué tipo de sistema ejemplifica la quinhidrona en la medida histórica de pH?",
+      "opciones": [
+        "Un método gravimétrico por calcinación",
+        "Una celda de conductividad de dos placas sin reacción",
+        "Par redox relacionado con H⁺ y un electrodo de oro o platino"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe reconocerse como indicador histórico, distinto del electrodo de vidrio habitual.",
+      "fuente": "CEM QU-003, generalidades, indicadores históricos de pH · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Electrodo de quinhidrona:** oro o platino en disolución saturada de quinhidrona (mezcla equimolecular de benzoquinona e hidroquinona), que forma un par redox reversible con el H⁺."
+    },
+    {
+      "id": "t23-q123",
+      "pregunta": "¿Qué representan R y F en la ecuación de Nernst del tema?",
+      "opciones": [
+        "Resolución y frecuencia del agitador",
+        "Constante de los gases y constante de Faraday",
+        "Resistencia del vidrio y masa del filtro"
+      ],
+      "correcta": 1,
+      "explicacion": "Son constantes de la relación termodinámica entre potencial y actividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "donde *R* es la constante de los gases, *F* la de Faraday y *T* la temperatura absoluta. El factor entre paréntesis es la **pendiente**, y es lo único que hay que retener con números:"
+    },
+    {
+      "id": "t23-q124",
+      "pregunta": "Para estimar equivalencia por inflexión, ¿qué aspecto de la señal interesa seguir respecto al volumen?",
+      "opciones": [
+        "La evolución y forma de la curva",
+        "Solo el potencial nominal de un tampón",
+        "Solo una lectura aislada al inicio"
+      ],
+      "correcta": 0,
+      "explicacion": "Una lectura única no localiza por sí sola dónde se produce el salto de una valoración.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, titulación potenciométrica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| De qué depende la exactitud | Del comportamiento ideal del electrodo y de la calibración | De la **forma de la curva**, no del valor absoluto del potencial |"
+    },
+    {
+      "id": "t23-q125",
+      "pregunta": "¿Por qué puede elegirse detección potenciométrica cuando un color de muestra impide ver bien el indicador?",
+      "opciones": [
+        "La turbidez elimina toda necesidad de muestra",
+        "La señal eléctrica no exige observar el viraje visual",
+        "Todo electrodo es inmune a contaminación"
+      ],
+      "correcta": 1,
+      "explicacion": "La ventaja óptica no elimina la necesidad de compatibilidad y mantenimiento del electrodo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ventajas de detección potenciométrica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Ejemplo | **Medida de pH** | Alcalinidad, cloruros en agua turbia |"
+    },
+    {
+      "id": "t23-q126",
+      "pregunta": "¿Qué base de logaritmo utiliza la definición de pH?",
+      "opciones": [
+        "Binaria, base dos",
+        "Natural, base e sin otro factor",
+        "Decimal, base diez"
+      ],
+      "correcta": 2,
+      "explicacion": "La escala pH es logarítmica decimal y se define rigurosamente a partir de actividad.",
+      "fuente": "IUPAC, definición de pH; CEM QU-003, generalidades · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q127",
+      "pregunta": "¿Cuándo debe advertirse que pH = −log[H⁺] es una simplificación?",
+      "opciones": [
+        "Cuando se aproxima actividad por concentración",
+        "Cuando se usa el logaritmo decimal",
+        "Cuando el instrumento muestra temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "La actividad es la magnitud rigurosa; la concentración puede emplearse bajo condiciones de aproximación.",
+      "fuente": "IUPAC, Measurement of pH, definición; CEM QU-003, forma simplificada · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Lo que ha caído: 1246, n.º 41.** «¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido-base?» Respuesta oficial: **2**. Las otras opciones eran **0,01** (la concentración, no su logaritmo) y **0,2**. El razonamiento tiene dos pasos. El **HCl es un ácido fuerte**, y los ácidos fuertes **se ionizan por completo** en agua (OpenStax, *Chemistry 2e*, 14.3), así que la concentración de iones hidronio es la del ácido, **0,01 mol/L = 10⁻² mol/L**. Y con la forma simplificada del pH, **pH = −log [H⁺]**, la que usa el procedimiento QU-003 del CEM (duda 2), sale **pH = −log 10⁻² = 2**. Es el cálculo con la concentración: la definición rigurosa, por actividad, es la del párrafo anterior."
+    },
+    {
+      "id": "t23-q128",
+      "pregunta": "¿Por qué la medida práctica de pH requiere una escala y patrones acordados?",
+      "opciones": [
+        "Porque el logaritmo solo existe en instrumentos digitales",
+        "Porque el H⁺ carece de carga",
+        "La actividad de un ion aislado no se determina independientemente por termodinámica"
+      ],
+      "correcta": 2,
+      "explicacion": "La definición operacional permite relacionar la muestra con referencias reproducibles.",
+      "fuente": "IUPAC, Measurement of pH, escala convencional · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Y aquí está la sutileza que da sentido al resto del tema: **la actividad de un ion aislado no es medible** por termodinámica, porque no se puede añadir un catión a una disolución sin su anión. El pH es, por tanto, una **magnitud convencional**, definida por un procedimiento acordado:"
+    },
+    {
+      "id": "t23-q129",
+      "pregunta": "¿Qué rasgo del método primario de Harned evita una contribución de unión líquida?",
+      "opciones": [
+        "No contiene electrodos",
+        "La celda no tiene unión líquida",
+        "No necesita referencia química alguna"
+      ],
+      "correcta": 1,
+      "explicacion": "El montaje primario permite asignar valores de patrones mediante un procedimiento convencional establecido.",
+      "fuente": "IUPAC, Measurement of pH, métodos primarios · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "1. El **método primario** es la **celda de Harned**: una celda **sin unión líquida** (electrodo de hidrógeno y electrodo de Ag/AgCl en la misma disolución), de la que se obtiene el pH de los **patrones primarios** aplicando el convenio de Bates-Guggenheim."
+    },
+    {
+      "id": "t23-q130",
+      "pregunta": "¿Con qué se relaciona la medida de pH de una muestra en la escala operativa?",
+      "opciones": [
+        "Patrones de pH y respuesta del sistema de medida",
+        "Solo su color",
+        "Solo el volumen del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "La comparación calibrada vincula la indicación con una referencia de la escala.",
+      "fuente": "IUPAC, escala operativa de pH; CEM QU-003 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "2. El **pH de una muestra** se define **por comparación** con esos patrones, en la llamada escala operativa:"
+    },
+    {
+      "id": "t23-q131",
+      "pregunta": "¿Por qué se determina una pendiente práctica en vez de suponer siempre la teórica?",
+      "opciones": [
+        "Porque la pendiente teórica no depende de ninguna constante",
+        "La respuesta real del electrodo puede diferir de la ideal",
+        "Porque el volumen de muestra determina una pendiente universal"
+      ],
+      "correcta": 1,
+      "explicacion": "El comportamiento real debe caracterizarse en las condiciones de uso.",
+      "fuente": "IUPAC, medición de pH por comparación · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "donde *k′* es la **pendiente práctica** del electrodo, obtenida con dos patrones."
+    },
+    {
+      "id": "t23-q132",
+      "pregunta": "¿Debe sustituirse el valor certificado concreto de un tampón por un entero aproximado al calcular un error?",
+      "opciones": [
+        "Solo si el frasco es pequeño",
+        "Sí, todos los tampones nominales 4 tienen valor exacto 4",
+        "No, se usa el valor certificado pertinente a su temperatura"
+      ],
+      "correcta": 2,
+      "explicacion": "El nominal identifica un entorno de valor, mientras el certificado proporciona la referencia de cálculo.",
+      "fuente": "CEM QU-003; documentación de tampones comerciales certificados · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En el laboratorio no se usan éstos, sino **disoluciones tampón comerciales certificadas** (los clásicos **4,01 / 7,00 / 10,01**, o 9,18 de bórax), trazables a los patrones primarios. Lo que hay que saber de ellas:"
+    },
+    {
+      "id": "t23-q133",
+      "pregunta": "¿Qué información debe acompañar al valor certificado del tampón?",
+      "opciones": [
+        "Incertidumbre y temperatura pertinente",
+        "Solo el color comercial",
+        "Solo la capacidad del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "El valor de referencia requiere condiciones y calidad metrológica conocidas.",
+      "fuente": "CEM QU-003, 5.1 y 6.1, disoluciones de referencia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Llevan certificado**, con su valor, su **incertidumbre** y su **temperatura de referencia** (20 o 25 °C)."
+    },
+    {
+      "id": "t23-q134",
+      "pregunta": "Un tampón se certifica a 25 °C y se usa a otra temperatura. ¿Qué debe consultarse?",
+      "opciones": [
+        "La temperatura de fusión del vaso como único dato",
+        "Solo su pH nominal redondeado",
+        "La variación o corrección de pH con temperatura del certificado"
+      ],
+      "correcta": 2,
+      "explicacion": "El patrón no conserva necesariamente el mismo pH en cualquier temperatura.",
+      "fuente": "CEM QU-003, 5.2, temperatura del tampón · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Su pH cambia con la temperatura**, y no poco: el tetraborato pasa de **9,464 a 0 °C** a **9,011 a 50 °C**; el ftalato apenas se mueve (4,000 → 4,050). El certificado trae la tabla; los pHímetros modernos la llevan grabada."
+    },
+    {
+      "id": "t23-q135",
+      "pregunta": "¿Qué exposición debe vigilarse especialmente en tampones alcalinos?",
+      "opciones": [
+        "Solo luz de la pantalla del instrumento",
+        "CO₂ del aire",
+        "Solo el volumen nominal del termómetro"
+      ],
+      "correcta": 1,
+      "explicacion": "El intercambio de CO₂ puede alterar su valor y comprometer la referencia.",
+      "fuente": "Documentación de tampones certificados; CEM QU-003, conservación del patrón · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Los **alcalinos se estropean con el CO₂ del aire**: son los primeros sospechosos de una calibración rara."
+    },
+    {
+      "id": "t23-q136",
+      "pregunta": "¿Qué riesgo se evita al no devolver al frasco una porción de tampón usada?",
+      "opciones": [
+        "Contaminar el stock y alterar su valor de referencia",
+        "Aumentar por definición la pendiente teórica",
+        "Cambiar la unidad del termómetro"
+      ],
+      "correcta": 0,
+      "explicacion": "La porción ha contactado con electrodo y ambiente y puede no conservar las condiciones del stock.",
+      "fuente": "CEM QU-003, 5.2.8, prevención de contaminación · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Una vez usada, la porción de tampón **no se devuelve al frasco**. Lo ideal es **monodosis**."
+    },
+    {
+      "id": "t23-q137",
+      "pregunta": "¿Qué ventaja tienen las porciones monodosis correctamente utilizadas?",
+      "opciones": [
+        "Eliminar toda incertidumbre certificada",
+        "Reducir manipulaciones y contaminación del tampón de reserva",
+        "Permitir usar cualquier valor de pH sin certificado"
+      ],
+      "correcta": 1,
+      "explicacion": "La presentación ayuda a conservar el patrón, pero no sustituye sus datos metrológicos.",
+      "fuente": "CEM QU-003, 5.2.8, tampones · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Una vez usada, la porción de tampón **no se devuelve al frasco**. Lo ideal es **monodosis**."
+    },
+    {
+      "id": "t23-q138",
+      "pregunta": "¿Qué reúne un electrodo combinado de pH en un mismo cuerpo?",
+      "opciones": [
+        "Solo una membrana sin referencia",
+        "Solo dos termómetros",
+        "Sistema indicador de vidrio y sistema de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "La integración física no elimina las funciones diferenciadas de medida y referencia.",
+      "fuente": "CEM QU-003, generalidades; documentación del electrodo de vidrio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Un electrodo **combinado** reúne en un solo cuerpo el electrodo indicador y el de referencia:"
+    },
+    {
+      "id": "t23-q139",
+      "pregunta": "¿Qué parte suele constituir la zona sensible de vidrio en la punta del electrodo?",
+      "opciones": [
+        "Bulbo fino de vidrio especial",
+        "El conector eléctrico externo",
+        "El vaso del tampón"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe estar en condiciones de hidratación y contacto apropiadas para responder.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodo de vidrio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Una **membrana de vidrio** especial (silicato con Li, Ba…), muy fina, en forma de **bulbo** en la punta."
+    },
+    {
+      "id": "t23-q140",
+      "pregunta": "¿Qué condición de la cara interna ayuda a relacionar el potencial con el pH externo?",
+      "opciones": [
+        "Ausencia de líquido interno en todo modelo",
+        "Que ambas caras cambien libremente con cualquier muestra",
+        "Actividad interna mantenida por la disolución prevista"
+      ],
+      "correcta": 2,
+      "explicacion": "La diferencia entre las condiciones interna y externa sustenta la respuesta de membrana.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, electrodo de vidrio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Dentro del bulbo, la **disolución interna tamponada** (típicamente KCl a pH 7) y el **hilo de Ag/AgCl** que hace de **referencia interna**."
+    },
+    {
+      "id": "t23-q141",
+      "pregunta": "¿Qué función cumple el hilo interno de Ag/AgCl del sistema indicador descrito?",
+      "opciones": [
+        "Indicador visual de cromato",
+        "Referencia interna asociada a la disolución del bulbo",
+        "Agitador de la muestra"
+      ],
+      "correcta": 1,
+      "explicacion": "No debe confundirse con el contacto de la referencia externa a través del diafragma.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, estructura del electrodo combinado · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Dentro del bulbo, la **disolución interna tamponada** (típicamente KCl a pH 7) y el **hilo de Ag/AgCl** que hace de **referencia interna**."
+    },
+    {
+      "id": "t23-q142",
+      "pregunta": "¿Por dónde establece contacto con la muestra el electrolito de referencia externa del combinado?",
+      "opciones": [
+        "Diafragma o unión líquida",
+        "Por la pantalla del pHímetro",
+        "A través del plástico del cable"
+      ],
+      "correcta": 0,
+      "explicacion": "La unión permite contacto iónico y puede verse afectada por suciedad u obstrucción.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, referencia y unión líquida · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "![Electrodo de vidrio combinado, en corte: las dos referencias de Ag/AgCl, la disolución interna, el electrolito y el diafragma](esquema:electrodo-vidrio)"
+    },
+    {
+      "id": "t23-q143",
+      "pregunta": "En un electrodo rellenable que exige apertura al medir, ¿qué permite destapar su orificio?",
+      "opciones": [
+        "Expulsar toda la membrana",
+        "El flujo adecuado del electrolito hacia la unión",
+        "Sustituir la calibración por aireación"
+      ],
+      "correcta": 1,
+      "explicacion": "El requisito se aplica según el diseño y las instrucciones del modelo rellenable.",
+      "fuente": "Manual del electrodo rellenable; CEM QU-003, revisión de electrodos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Un **orificio de llenado**, que **hay que destapar al medir** para que el electrolito fluya hacia fuera."
+    },
+    {
+      "id": "t23-q144",
+      "pregunta": "¿Qué papel tiene la capa hidratada del vidrio en su funcionamiento?",
+      "opciones": [
+        "Transporta los electrones de una corriente electrolítica grande",
+        "Actúa solo como adorno óptico",
+        "Permite el intercambio iónico relacionado con la respuesta a H⁺"
+      ],
+      "correcta": 2,
+      "explicacion": "La hidratación de la superficie forma parte de la respuesta de la membrana.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, membrana de vidrio hidratada · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Cómo funciona.** El vidrio, hidratado, forma en ambas caras una **capa de gel** en la que los H⁺ de la disolución se intercambian con los cationes del vidrio. Como la cara interna ve un pH fijo y la externa ve el de la muestra, **la diferencia de actividades genera el potencial de membrana**, proporcional al pH. **El electrodo no transporta electrones a través del vidrio: intercambia iones en sus dos superficies.**"
+    },
+    {
+      "id": "t23-q145",
+      "pregunta": "¿Qué diferencia origina el potencial de membrana del electrodo de pH?",
+      "opciones": [
+        "Actividades en las caras interna y externa del vidrio",
+        "Solo alturas de los vasos",
+        "Masas de los cables"
+      ],
+      "correcta": 0,
+      "explicacion": "La cara interna se mantiene en condiciones definidas y la externa contacta con la muestra.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potencial de membrana · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Cómo funciona.** El vidrio, hidratado, forma en ambas caras una **capa de gel** en la que los H⁺ de la disolución se intercambian con los cationes del vidrio. Como la cara interna ve un pH fijo y la externa ve el de la muestra, **la diferencia de actividades genera el potencial de membrana**, proporcional al pH. **El electrodo no transporta electrones a través del vidrio: intercambia iones en sus dos superficies.**"
+    },
+    {
+      "id": "t23-q146",
+      "pregunta": "¿Qué interpretación del electrodo de vidrio es incorrecta?",
+      "opciones": [
+        "Que necesita una superficie hidratada",
+        "Que participa intercambio iónico superficial",
+        "Que el vidrio funciona como un hilo metálico que transmite electrones de un lado a otro"
+      ],
+      "correcta": 2,
+      "explicacion": "La respuesta no se explica como conducción electrónica metálica a través del bulbo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, mecanismo de membrana · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Cómo funciona.** El vidrio, hidratado, forma en ambas caras una **capa de gel** en la que los H⁺ de la disolución se intercambian con los cationes del vidrio. Como la cara interna ve un pH fijo y la externa ve el de la muestra, **la diferencia de actividades genera el potencial de membrana**, proporcional al pH. **El electrodo no transporta electrones a través del vidrio: intercambia iones en sus dos superficies.**"
+    },
+    {
+      "id": "t23-q147",
+      "pregunta": "En medio muy alcalino con abundante Na⁺, la lectura resulta menor que la esperada. ¿Qué interferencia debe considerarse?",
+      "opciones": [
+        "Error ácido por exceso de H⁺ como única explicación",
+        "Respuesta del vidrio al sodio",
+        "Cambio de masa del vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "El error alcalino puede introducir respuesta de otros cationes además de H⁺.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error alcalino · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Error alcalino** (o **error de sodio**) | pH alto, típicamente **> 12**, y en general con mucho Na⁺ | El electrodo responde también al **Na⁺**: da un pH **más bajo** que el real (**error negativo**) |"
+    },
+    {
+      "id": "t23-q148",
+      "pregunta": "¿Qué significa que el error alcalino sea negativo en pH?",
+      "opciones": [
+        "La lectura queda por debajo del pH real",
+        "La muestra no tiene iones",
+        "La actividad de H⁺ es necesariamente negativa"
+      ],
+      "correcta": 0,
+      "explicacion": "El signo se refiere a la diferencia de indicación respecto al valor considerado verdadero.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error de sodio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Error alcalino** (o **error de sodio**) | pH alto, típicamente **> 12**, y en general con mucho Na⁺ | El electrodo responde también al **Na⁺**: da un pH **más bajo** que el real (**error negativo**) |"
+    },
+    {
+      "id": "t23-q149",
+      "pregunta": "Una disolución extremadamente ácida da lectura de pH demasiado alta. ¿Qué error del vidrio encaja?",
+      "opciones": [
+        "Error de sodio típico de pH alto",
+        "Error ácido",
+        "Paralaje de una bureta"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe distinguirse el sentido de los errores en extremos ácido y alcalino.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error ácido del vidrio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Error ácido** | Disoluciones muy ácidas, por debajo de pH ≈ 0,5 | Da un pH **más alto** que el real (**error positivo**); se atribuye a la reducción de la capa hidratada |"
+    },
+    {
+      "id": "t23-q150",
+      "pregunta": "¿Qué observación caracteriza el potencial de asimetría?",
+      "opciones": [
+        "Ausencia obligatoria de referencia",
+        "Pendiente exactamente nula en todo pH",
+        "Potencial no nulo aun con la misma disolución a ambos lados de la membrana"
+      ],
+      "correcta": 2,
+      "explicacion": "Las superficies reales no se comportan de forma perfectamente idéntica y el efecto puede variar con el tiempo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, asimetría de membrana · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Potencial de asimetría** | Siempre | Con la misma disolución a ambos lados, el potencial **no es cero**; y **deriva** con el uso y la edad del electrodo |"
+    },
+    {
+      "id": "t23-q151",
+      "pregunta": "¿Qué componente de la calibración o ajuste compensa principalmente un desplazamiento de la respuesta?",
+      "opciones": [
+        "Offset",
+        "Volumen de la bureta",
+        "Masa molar del tampón"
+      ],
+      "correcta": 0,
+      "explicacion": "El desplazamiento se distingue de la sensibilidad o pendiente del sistema.",
+      "fuente": "CEM QU-003, ajuste de desplazamiento; documentación del pHímetro · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El **error alcalino** se corrige en parte con **vidrios de litio y bario**, que amplían el intervalo lineal. Y el **potencial de asimetría** es justamente lo que corrige el **desplazamiento (offset)** de la calibración."
+    },
+    {
+      "id": "t23-q152",
+      "pregunta": "Un electrodo guardado en seco responde lentamente. ¿Qué condición debe recuperarse según su fabricante?",
+      "opciones": [
+        "Eliminación de todo electrolito",
+        "Rotura deliberada de la punta",
+        "Hidratación adecuada de la membrana"
+      ],
+      "correcta": 2,
+      "explicacion": "La recuperación requiere el procedimiento y tiempo del modelo, no simplemente forzar una lectura.",
+      "fuente": "Manual del electrodo; Harris, hidratación de membrana · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Deshidratación** de la membrana | Electrodo guardado en seco o en agua desionizada | Respuesta lenta y errática hasta que se rehidrata |"
+    },
+    {
+      "id": "t23-q153",
+      "pregunta": "¿Por qué no se usa agua desionizada como conservación general de un combinado de pH?",
+      "opciones": [
+        "Porque hidratar vidrio es siempre perjudicial",
+        "Puede alterar el electrolito y la referencia",
+        "Porque no sirve tampoco para ningún enjuague"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe distinguirse el enjuague breve de la conservación prolongada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Manual del electrodo combinado; criterios de conservación del tema · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Conviene separar dos problemas: **guardar en seco puede deshidratar la membrana**, mientras que **guardar habitualmente en agua desionizada puede alterar el electrolito y la referencia**. El agua desionizada se usa para enjuagar entre medidas, no como solución general de conservación del electrodo combinado. El tiempo de recuperación y la solución exacta se toman del fabricante del modelo."
+    },
+    {
+      "id": "t23-q154",
+      "pregunta": "¿Qué criterio decide la solución exacta de almacenamiento de un electrodo de pH?",
+      "opciones": [
+        "Las instrucciones del fabricante del modelo",
+        "Siempre agua desionizada para cualquier modelo",
+        "La disolución más barata sin revisar compatibilidad"
+      ],
+      "correcta": 0,
+      "explicacion": "Las recomendaciones generales no sustituyen las del diseño concreto.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Manual del electrodo, solución de conservación · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Conviene separar dos problemas: **guardar en seco puede deshidratar la membrana**, mientras que **guardar habitualmente en agua desionizada puede alterar el electrolito y la referencia**. El agua desionizada se usa para enjuagar entre medidas, no como solución general de conservación del electrodo combinado. El tiempo de recuperación y la solución exacta se toman del fabricante del modelo."
+    },
+    {
+      "id": "t23-q155",
+      "pregunta": "¿Por qué se elimina el agua con toques de papel y no frotando el bulbo?",
+      "opciones": [
+        "Para aumentar deliberadamente la resistencia del cable",
+        "Para evitar cargas estáticas y daño o perturbación de la superficie",
+        "Para sustituir la disolución interna"
+      ],
+      "correcta": 1,
+      "explicacion": "La manipulación debe preservar una respuesta estable de la membrana.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Manual del electrodo; práctica de manejo del vidrio · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- Se **enjuaga** entre disoluciones con agua desionizada y **se seca dando toques con papel**, sin frotar (frotar carga el vidrio estáticamente)."
+    },
+    {
+      "id": "t23-q156",
+      "pregunta": "Tras medir una muestra grasa, el electrodo no se estabiliza. ¿Qué parte debe revisarse además del bulbo?",
+      "opciones": [
+        "Solo la bureta de otro análisis",
+        "Solo la tapa exterior del frasco de agua",
+        "Diafragma o unión de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "Depósitos y obstrucción pueden dificultar el contacto adecuado de referencia con la muestra.",
+      "fuente": "Manual del electrodo; CEM QU-003, inspección previa · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Diafragma obstruido** | Muestras con proteínas, grasas, precipitados | Lecturas inestables o que no llegan a estabilizarse |"
+    },
+    {
+      "id": "t23-q157",
+      "pregunta": "¿Por qué deben mantenerse limpios y secos cable y conector?",
+      "opciones": [
+        "Las pequeñas corrientes de fuga pueden alterar una medida de alta impedancia",
+        "Porque la humedad aumenta siempre la exactitud",
+        "Porque el cable define el pH del patrón"
+      ],
+      "correcta": 0,
+      "explicacion": "La integridad eléctrica del sistema importa junto al estado químico del electrodo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Manual del pHímetro; medida de alta impedancia · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Cable y conector limpios y secos**: las corrientes que circulan son minúsculas."
+    },
+    {
+      "id": "t23-q158",
+      "pregunta": "¿Por qué no basta cualquier voltímetro ordinario para un electrodo de vidrio?",
+      "opciones": [
+        "Porque toda medida de pH exige paso de corriente grande",
+        "Porque no mide potencial en ninguna circunstancia",
+        "Puede cargar eléctricamente la celda y alterar la señal"
+      ],
+      "correcta": 2,
+      "explicacion": "La elevada resistencia de la membrana exige un medidor con entrada apropiada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, instrumentación potenciométrica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El medidor tiene que ser de **altísima impedancia de entrada** porque la membrana de vidrio tiene una resistencia interna del orden de cientos de megaohmios: un voltímetro corriente cargaría la celda y falsearía la lectura."
+    },
+    {
+      "id": "t23-q159",
+      "pregunta": "Se activa ATC y la muestra cambia de temperatura. ¿Puede cambiar su pH real aunque la compensación funcione?",
+      "opciones": [
+        "No, ATC fija químicamente toda muestra a pH constante",
+        "Sí, por los equilibrios químicos de la muestra",
+        "Solo si se apaga la pantalla"
+      ],
+      "correcta": 1,
+      "explicacion": "La compensación de pendiente no elimina la dependencia química del pH con temperatura.",
+      "fuente": "CEM QU-003; documentación del pHímetro, compensación térmica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Compensación de temperatura (ATC).** Con una sonda de temperatura, el aparato corrige **la pendiente de Nernst** a la temperatura de trabajo. Cuidado con la trampa clásica: **la ATC corrige el instrumento, no la muestra**. El pH real de una disolución **también** cambia con la temperatura por razones químicas (el equilibrio se desplaza), y eso no lo compensa nadie: por eso **todo resultado de pH se informa con la temperatura a la que se midió**."
+    },
+    {
+      "id": "t23-q160",
+      "pregunta": "¿Qué señal necesita el sistema para compensar automáticamente la pendiente según temperatura?",
+      "opciones": [
+        "La temperatura medida por una sonda adecuada",
+        "El volumen del Erlenmeyer",
+        "Solo el color del tampón"
+      ],
+      "correcta": 0,
+      "explicacion": "La compensación debe corresponder a la temperatura real de trabajo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Documentación del pHímetro, ATC · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Compensación de temperatura (ATC).** Con una sonda de temperatura, el aparato corrige **la pendiente de Nernst** a la temperatura de trabajo. Cuidado con la trampa clásica: **la ATC corrige el instrumento, no la muestra**. El pH real de una disolución **también** cambia con la temperatura por razones químicas (el equilibrio se desplaza), y eso no lo compensa nadie: por eso **todo resultado de pH se informa con la temperatura a la que se midió**."
+    },
+    {
+      "id": "t23-q161",
+      "pregunta": "Dos informes de pH omiten la temperatura. ¿Qué información falta para comparar correctamente sus resultados?",
+      "opciones": [
+        "Solo el volumen del vaso vacío",
+        "Las condiciones térmicas de medida",
+        "Solo el número de serie de la silla"
+      ],
+      "correcta": 1,
+      "explicacion": "El pH de la muestra y la respuesta instrumental dependen de temperatura.",
+      "fuente": "CEM QU-003; ISO 10523, medida de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Compensación de temperatura (ATC).** Con una sonda de temperatura, el aparato corrige **la pendiente de Nernst** a la temperatura de trabajo. Cuidado con la trampa clásica: **la ATC corrige el instrumento, no la muestra**. El pH real de una disolución **también** cambia con la temperatura por razones químicas (el equilibrio se desplaza), y eso no lo compensa nadie: por eso **todo resultado de pH se informa con la temperatura a la que se midió**."
+    },
+    {
+      "id": "t23-q162",
+      "pregunta": "Una muestra presenta pH próximo a 13. ¿Qué debe revisarse antes de afirmar que se sigue sin más el alcance del método citado?",
+      "opciones": [
+        "Solo el tamaño del frasco",
+        "Solo que la pantalla pueda mostrar 13",
+        "Que está fuera del intervalo pH 2 a 12 declarado"
+      ],
+      "correcta": 2,
+      "explicacion": "El campo del instrumento no es idéntico al campo validado o declarado de un método concreto.",
+      "fuente": "ISO 10523:2008, alcance; UNE-EN ISO 10523:2012 · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Aguas cubiertas | Lluvia, de consumo, minerales, de baño, superficiales, subterráneas, residuales urbanas e industriales y lodos líquidos |\n| Intervalo | **pH 2 a 12** |\n| Fuerza iónica | **I < 0,3 mol/kg** (equivale a conductividad **< 2 000 mS/m a 25 °C**) |"
+    },
+    {
+      "id": "t23-q163",
+      "pregunta": "¿Qué diferencia debe considerarse si se mide una muestra a 60 °C con un método cuyo alcance llega a 50 °C?",
+      "opciones": [
+        "La medición queda fuera de ese alcance térmico declarado",
+        "La ATC amplía automáticamente cualquier alcance normativo",
+        "Solo cambia el color de la etiqueta"
+      ],
+      "correcta": 0,
+      "explicacion": "La compensación instrumental no amplía por sí sola el campo del método.",
+      "fuente": "ISO 10523:2008, alcance de temperatura · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Temperatura | **0 °C a 50 °C** |"
+    },
+    {
+      "id": "t23-q164",
+      "pregunta": "¿Por qué no basta que una muestra esté entre pH 2 y 12 para asumir que cumple todo el alcance del método de agua citado?",
+      "opciones": [
+        "Porque solo importa que sea transparente",
+        "Porque el pH es la única condición publicada",
+        "También deben considerarse fuerza iónica y temperatura"
+      ],
+      "correcta": 2,
+      "explicacion": "Las condiciones de aplicación son conjuntas, no una sola cifra de pH.",
+      "fuente": "ISO 10523:2008, alcance de matrices · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Fuerza iónica | **I < 0,3 mol/kg** (equivale a conductividad **< 2 000 mS/m a 25 °C**) |"
+    },
+    {
+      "id": "t23-q165",
+      "pregunta": "¿Qué debe evitarse al sustituir el electrodo del método de agua citado por otro principio de medida?",
+      "opciones": [
+        "Revisar alcance y equivalencia del método",
+        "Afirmar sin validación que sigue exactamente el método que describe electrodo de vidrio",
+        "Identificar el sistema de medida usado"
+      ],
+      "correcta": 1,
+      "explicacion": "La selección de otro principio requiere justificar su adecuación y no cambiarlo silenciosamente.",
+      "fuente": "ISO 10523:2008, técnica descrita · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| Electrodo | **Sólo el electrodo de vidrio**, «por su gran importancia práctica, universalidad y exactitud» |"
+    },
+    {
+      "id": "t23-q166",
+      "pregunta": "¿Qué diferencia de alcance debe distinguirse entre QU-003 e ISO 10523 citados en el tema?",
+      "opciones": [
+        "Calibración de pHímetros de campo 0 a 14 frente al método de agua con intervalo pH 2 a 12",
+        "QU-003 es solo un método de valoración de cloruro",
+        "Ambos describen exactamente el mismo objeto y campo"
+      ],
+      "correcta": 0,
+      "explicacion": "El campo del instrumento y el ámbito de un método de ensayo no son equivalentes.",
+      "fuente": "CEM QU-003, apartado 2, alcance · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Todo este apartado sigue el **procedimiento QU-003 del Centro Español de Metrología**, cuyo alcance es la calibración de pHímetros digitales con campo de medida de **0 a 14 unidades de pH**."
+    },
+    {
+      "id": "t23-q167",
+      "pregunta": "¿Qué identificación permite vincular inequívocamente una calibración al pHímetro?",
+      "opciones": [
+        "Solo que el equipo sea azul",
+        "Marca, modelo, número de serie y código del laboratorio",
+        "Solo el nombre de quien compró los tampones"
+      ],
+      "correcta": 1,
+      "explicacion": "El registro debe corresponder al sistema concreto que se ha examinado.",
+      "fuente": "CEM QU-003, 5.2.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "1. **Identificar el instrumento** sin ambigüedad: marca, modelo, número de serie y código del laboratorio."
+    },
+    {
+      "id": "t23-q168",
+      "pregunta": "¿Qué debe revisarse antes de aplicar una secuencia genérica de calibración a un modelo concreto?",
+      "opciones": [
+        "Únicamente el idioma de la pantalla",
+        "Solo el tamaño del vaso",
+        "El manual y sus instrucciones específicas"
+      ],
+      "correcta": 2,
+      "explicacion": "El procedimiento general debe considerar las condiciones e instrucciones del equipo.",
+      "fuente": "CEM QU-003, 5.2.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. **Leer el manual**, por si trae instrucciones propias de calibración."
+    },
+    {
+      "id": "t23-q169",
+      "pregunta": "¿Por qué se deja estabilizar el instrumento antes de calibrar?",
+      "opciones": [
+        "Para medir bajo las condiciones de funcionamiento previstas",
+        "Para que el tampón alcance por fuerza pH 7",
+        "Para aumentar siempre la pendiente por encima de la teórica"
+      ],
+      "correcta": 0,
+      "explicacion": "Las lecturas deben caracterizar el equipo estabilizado y no un estado transitorio de encendido.",
+      "fuente": "CEM QU-003, 5.2.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "3. **Calentar el pHímetro** y dejarlo estabilizar el tiempo que diga el manual."
+    },
+    {
+      "id": "t23-q170",
+      "pregunta": "¿Qué debe asegurar el volumen de tampón dispuesto en el vaso?",
+      "opciones": [
+        "Cubrir solo el cable dejando seco el bulbo",
+        "Llenar siempre hasta rebosar",
+        "Cubrir la parte activa del electrodo según el montaje"
+      ],
+      "correcta": 2,
+      "explicacion": "El contacto apropiado es necesario para indicador, unión y medida térmica pertinentes.",
+      "fuente": "CEM QU-003, 5.2.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "4. Poner el tampón en un **vaso limpio**, en cantidad suficiente para cubrir la parte activa del electrodo, **evitando burbujas**."
+    },
+    {
+      "id": "t23-q171",
+      "pregunta": "Una burbuja queda adherida a la parte activa durante la calibración. ¿Qué debe hacerse?",
+      "opciones": [
+        "Dar la lectura por válida porque el nominal del tampón se conoce",
+        "Eliminar el problema de contacto conforme al procedimiento antes de aceptar lecturas",
+        "Compensar añadiendo un número arbitrario de pH"
+      ],
+      "correcta": 1,
+      "explicacion": "El estado de contacto debe permitir una respuesta representativa del tampón.",
+      "fuente": "CEM QU-003, 5.2.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "4. Poner el tampón en un **vaso limpio**, en cantidad suficiente para cubrir la parte activa del electrodo, **evitando burbujas**."
+    },
+    {
+      "id": "t23-q172",
+      "pregunta": "¿Qué opción respeta la referencia térmica del tampón durante la calibración?",
+      "opciones": [
+        "Usarlo a temperatura de certificado o aplicar su corrección pertinente",
+        "Usar siempre el valor impreso sin leer condiciones",
+        "Suponer que todo tampón conserva el valor a cualquier temperatura"
+      ],
+      "correcta": 0,
+      "explicacion": "La comparación exige el valor del patrón en las condiciones efectivas del ensayo.",
+      "fuente": "CEM QU-003, 5.2.5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "5. **Acondicionar el tampón a la temperatura de su certificado** (suele ser 20 o 25 °C). Si no es posible, **aplicar la corrección del certificado**."
+    },
+    {
+      "id": "t23-q173",
+      "pregunta": "¿Por qué se registra la temperatura del tampón junto a las lecturas?",
+      "opciones": [
+        "Sustituye registrar la indicación de pH",
+        "Permite aplicar o justificar la corrección del valor de referencia",
+        "Sirve solo para decorar el certificado"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin condiciones térmicas no se interpreta completamente la comparación.",
+      "fuente": "CEM QU-003, 5.2.6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "6. **Medir y anotar la temperatura** del tampón con el termómetro."
+    },
+    {
+      "id": "t23-q174",
+      "pregunta": "¿Qué inspección previa pide el procedimiento sobre los electrodos?",
+      "opciones": [
+        "Únicamente la longitud del cable",
+        "Solo que la pantalla muestre decimales",
+        "Limpieza y ausencia de depósitos internos o externos"
+      ],
+      "correcta": 2,
+      "explicacion": "Una referencia contaminada o membrana alterada puede invalidar el comportamiento observado.",
+      "fuente": "CEM QU-003, 5.2.7 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "7. **Revisar los electrodos**: limpios, sin depósitos por dentro ni por fuera."
+    },
+    {
+      "id": "t23-q175",
+      "pregunta": "¿Por qué no basta un termómetro sin información metrológica para esta calibración?",
+      "opciones": [
+        "La temperatura interviene en el valor del patrón y debe medirse con equipo adecuado",
+        "Porque solo importa el pH nominal",
+        "Porque el termómetro modifica químicamente todos los tampones"
+      ],
+      "correcta": 0,
+      "explicacion": "El instrumento auxiliar contribuye a las condiciones y a la incertidumbre del resultado.",
+      "fuente": "CEM QU-003, 5.1, material auxiliar · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Termómetro calibrado**, con resolución de **0,1 °C**, en el intervalo de **15 a 30 °C**."
+    },
+    {
+      "id": "t23-q176",
+      "pregunta": "¿Qué intervalo se menciona para el termómetro del QU-003 del tema?",
+      "opciones": [
+        "Exactamente el mismo 0 a 14 de pH",
+        "Solo −20 a 0 °C",
+        "15 a 30 °C"
+      ],
+      "correcta": 2,
+      "explicacion": "No deben confundirse rangos de temperatura y campo de lectura del pHímetro.",
+      "fuente": "CEM QU-003, 5.1, termómetro · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Termómetro calibrado**, con resolución de **0,1 °C**, en el intervalo de **15 a 30 °C**."
+    },
+    {
+      "id": "t23-q177",
+      "pregunta": "¿Qué material de recepción cita QU-003 para los tampones?",
+      "opciones": [
+        "Únicamente matraces aforados de 2 L",
+        "Vasos de precipitados de 50 o 100 mL",
+        "Crisoles destinados a calcinación"
+      ],
+      "correcta": 1,
+      "explicacion": "El vaso permite sumergir el sistema; no se pretende determinar pH a partir de su capacidad exacta.",
+      "fuente": "CEM QU-003, 5.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Vasos de precipitados de 50 a 100 mL**."
+    },
+    {
+      "id": "t23-q178",
+      "pregunta": "¿Deben los valores certificados ser necesariamente idénticos a los enteros nominales 2, 4, 7, 9 y 12?",
+      "opciones": [
+        "No, se emplean sus valores certificados próximos a esos nominales",
+        "Solo si se omite la temperatura",
+        "Sí, todo certificado debe redondearlos a enteros"
+      ],
+      "correcta": 0,
+      "explicacion": "El nominal selecciona los puntos de trabajo; el cálculo utiliza la referencia certificada pertinente.",
+      "fuente": "CEM QU-003, 5.1, disoluciones certificadas · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Disoluciones tampón con el pH certificado**, con trazabilidad e incertidumbre, de valores nominales **pH 2, pH 4, pH 7, pH 9 y pH 12**."
+    },
+    {
+      "id": "t23-q179",
+      "pregunta": "¿Qué se pierde si se ajusta el pHímetro antes de registrar su estado inicial?",
+      "opciones": [
+        "La definición del logaritmo",
+        "La evidencia de cómo se encontraba antes de intervenir",
+        "La masa del tampón"
+      ],
+      "correcta": 1,
+      "explicacion": "El estado previo permite interpretar deriva y posibles consecuencias para medidas anteriores.",
+      "fuente": "CEM QU-003, 5.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- La **lectura inicial** se hace con los tampones **pH 4 y pH 7**, y **sus datos se conservan**: son los que dicen cómo llegó el aparato."
+    },
+    {
+      "id": "t23-q180",
+      "pregunta": "En un servicio de calibración que sigue QU-003, ¿qué condición contempla el procedimiento antes de ajustar?",
+      "opciones": [
+        "Cambiar de referencia sin registro",
+        "Elegir siempre el tampón más caro",
+        "Autorización del usuario del instrumento"
+      ],
+      "correcta": 2,
+      "explicacion": "Caracterizar el estado y modificarlo son actuaciones distintas en la prestación de calibración.",
+      "fuente": "CEM QU-003, 5.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- El **ajuste** sólo se hace **si el usuario lo autoriza**."
+    },
+    {
+      "id": "t23-q181",
+      "pregunta": "¿Para qué se vuelven a leer los tampones de ajuste después de intervenir?",
+      "opciones": [
+        "Comprobar la respuesta tras el ajuste y anotarla",
+        "Eliminar los datos iniciales",
+        "Sustituir todo el resto de puntos sin más"
+      ],
+      "correcta": 0,
+      "explicacion": "La comprobación posterior documenta el estado resultante, distinto del de llegada.",
+      "fuente": "CEM QU-003, 5.3.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- Después se releen **4 y 7** para comprobar."
+    },
+    {
+      "id": "t23-q182",
+      "pregunta": "¿Qué orden es coherente con la secuencia del procedimiento?",
+      "opciones": [
+        "Calcular incertidumbre sin ninguna lectura",
+        "Ajustar, borrar datos y suponer error cero",
+        "Estado inicial, ajuste si procede, lectura posterior y calibración"
+      ],
+      "correcta": 2,
+      "explicacion": "El registro debe distinguir los estados y conservar la información previa.",
+      "fuente": "CEM QU-003, 5.3.1, secuencia · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Lectura inicial → Ajuste → Lectura después del ajuste → Calibración**"
+    },
+    {
+      "id": "t23-q183",
+      "pregunta": "¿Qué diseño de repetición prescribe QU-003 por cada tampón?",
+      "opciones": [
+        "Una lectura única repetida en el papel tres veces",
+        "Tres lecturas no consecutivas",
+        "Cinco lecturas solo del agua de enjuague"
+      ],
+      "correcta": 1,
+      "explicacion": "La no consecutividad forma parte de la secuencia de observación del procedimiento.",
+      "fuente": "CEM QU-003, 5.3.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Tres lecturas no consecutivas por tampón**, y se toma **la media de las tres**."
+    },
+    {
+      "id": "t23-q184",
+      "pregunta": "¿Qué valor se usa como resumen de las tres lecturas de un tampón en el tratamiento descrito?",
+      "opciones": [
+        "Su media, con las correcciones pertinentes",
+        "Siempre la más alta",
+        "Siempre la lectura más próxima al certificado"
+      ],
+      "correcta": 0,
+      "explicacion": "Seleccionar por conveniencia una lectura no representa el tratamiento prescrito.",
+      "fuente": "CEM QU-003, 5.3.2 y 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Tres lecturas no consecutivas por tampón**, y se toma **la media de las tres**."
+    },
+    {
+      "id": "t23-q185",
+      "pregunta": "¿Por qué no basta medir solo el tampón de pH 7 para caracterizar el campo del QU-003?",
+      "opciones": [
+        "Porque pH 7 nunca es patrón",
+        "No describe la respuesta en el resto de puntos del campo",
+        "Porque el campo se calcula por volumen de vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "La caracterización multipunto observa comportamiento en regiones distintas de la escala.",
+      "fuente": "CEM QU-003, 5.3.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Se calibra **todo el campo de medida** con los cinco tampones: **pH 2, 4, 7, 9 y 12**. Para cada uno:"
+    },
+    {
+      "id": "t23-q186",
+      "pregunta": "Entre dos tampones, ¿qué objetivo tiene aclarar electrodo y termómetro?",
+      "opciones": [
+        "Eliminar toda incertidumbre de lectura",
+        "Convertirlos en patrones primarios",
+        "Reducir el arrastre del tampón anterior"
+      ],
+      "correcta": 2,
+      "explicacion": "El arrastre puede cambiar la composición de la siguiente porción de referencia.",
+      "fuente": "CEM QU-003, 5.3.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "2. Se retiran, se **aclaran con abundante agua desionizada** y se elimina el exceso con **papel absorbente**."
+    },
+    {
+      "id": "t23-q187",
+      "pregunta": "¿La existencia de calibración periódica elimina la comprobación de funcionamiento antes del uso prevista en QU-003?",
+      "opciones": [
+        "No; el procedimiento mantiene esa comprobación",
+        "Sí, mientras el instrumento encienda",
+        "Solo si la pantalla no tiene fallos"
+      ],
+      "correcta": 0,
+      "explicacion": "La comprobación entre calibraciones permite detectar cambios del estado de funcionamiento.",
+      "fuente": "CEM QU-003, 5.3.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con independencia de la calibración periódica, **antes de cada utilización** del pHímetro debe comprobarse su correcto funcionamiento **con los tampones pH 4 y 7**."
+    },
+    {
+      "id": "t23-q188",
+      "pregunta": "¿Qué diferencia hay entre comprobar diariamente y realizar la calibración multipunto periódica?",
+      "opciones": [
+        "La calibración impide hacer comprobaciones",
+        "La comprobación diaria siempre sustituye cualquier calibración",
+        "Tienen alcance y finalidad distintos dentro del control del equipo"
+      ],
+      "correcta": 2,
+      "explicacion": "Ambas actividades complementan el seguimiento de la fiabilidad de medidas.",
+      "fuente": "CEM QU-003, 5.3.2 y 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con independencia de la calibración periódica, **antes de cada utilización** del pHímetro debe comprobarse su correcto funcionamiento **con los tampones pH 4 y 7**."
+    },
+    {
+      "id": "t23-q189",
+      "pregunta": "¿Qué relaciona el tratamiento multipunto descrito por regresión?",
+      "opciones": [
+        "Solo fechas de compra y números de lote",
+        "Valores de referencia e indicaciones medias corregidas",
+        "Volúmenes de los vasos entre sí"
+      ],
+      "correcta": 1,
+      "explicacion": "La recta caracteriza la respuesta del sistema en los puntos medidos.",
+      "fuente": "CEM QU-003, 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con las medias corregidas por temperatura se calcula la **recta de regresión** (y = a + b·x) por mínimos cuadrados, y su **coeficiente de correlación**, que **debe quedar entre 0,995 y 1,005**, salvo que el manual del aparato fije otros límites."
+    },
+    {
+      "id": "t23-q190",
+      "pregunta": "¿Qué debe consultarse si el manual fija límites de aceptación propios en la aplicación del procedimiento?",
+      "opciones": [
+        "Los límites del manual considerados por el QU-003",
+        "Solo el criterio del operario sin documentarlo",
+        "Solo un porcentaje tomado de otro modelo"
+      ],
+      "correcta": 0,
+      "explicacion": "El procedimiento contempla especificaciones del instrumento y no autoriza trasladar cualquier cifra de otra marca.",
+      "fuente": "CEM QU-003, 5.4 y 6.2; apunte, límites específicos del aparato · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con las medias corregidas por temperatura se calcula la **recta de regresión** (y = a + b·x) por mínimos cuadrados, y su **coeficiente de correlación**, que **debe quedar entre 0,995 y 1,005**, salvo que el manual del aparato fije otros límites."
+    },
+    {
+      "id": "t23-q191",
+      "pregunta": "Si no se cumple el criterio de respuesta aplicable, ¿qué secuencia prevé QU-003?",
+      "opciones": [
+        "Cambiar las lecturas hasta que entren",
+        "Nuevo ajuste conforme a instrucciones y nueva calibración",
+        "Declarar conforme por haber usado cinco tampones"
+      ],
+      "correcta": 1,
+      "explicacion": "La repetición debe seguir una intervención válida y conservar los registros.",
+      "fuente": "CEM QU-003, 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Si se sale de ese intervalo: **nuevo ajuste con los tampones 4 y 7 y nueva calibración**. Se registran las lecturas **antes y después** del ajuste, la temperatura de los tampones y la ambiente."
+    },
+    {
+      "id": "t23-q192",
+      "pregunta": "¿Puede imponerse como norma universal un intervalo de pendiente tomado de la ficha de un solo electrodo?",
+      "opciones": [
+        "Solo si el valor aparece en porcentaje",
+        "Sí, toda cifra de fabricante es ley para cualquier modelo",
+        "No; se aplica la especificación pertinente y el procedimiento"
+      ],
+      "correcta": 2,
+      "explicacion": "Los intervalos orientativos deben distinguirse de requisitos realmente aplicables.",
+      "fuente": "CEM QU-003; especificaciones del electrodo, criterios de aceptación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Los intervalos de aceptación los pone el fabricante de cada electrodo, y no he localizado ningún criterio normativo que los fije.** En la documentación consultada aparecen, para un modelo concreto, una pendiente del **97 al 102 %** con **offset entre −30 y +30 mV**; en la práctica de laboratorio circula también un intervalo más ancho, del **95 al 105 %**. **Ninguna de las dos cifras se da aquí por buena:** las dos son **orientativas**. Lo que hay que retener es el criterio de fondo —**pendiente próxima a la teórica y offset pequeño**— y que el número exacto lo fija la **especificación del electrodo** que se esté usando o el **procedimiento del laboratorio**. Ver duda 5."
+    },
+    {
+      "id": "t23-q193",
+      "pregunta": "Al ajustar solo un punto, ¿qué aspecto de respuesta queda sin determinar independientemente?",
+      "opciones": [
+        "La pendiente, que habría que suponer",
+        "El valor nominal del único tampón",
+        "La identidad del instrumento"
+      ],
+      "correcta": 0,
+      "explicacion": "Coincidir en un punto no caracteriza la sensibilidad a lo largo de un intervalo.",
+      "fuente": "IUPAC, clases de calibración de pH; CEM QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **De un punto** | Sólo determina el desplazamiento; hay que **suponer** la pendiente | **No es fiable**: la pendiente práctica puede ser hasta un 5 % menor que la teórica |"
+    },
+    {
+      "id": "t23-q194",
+      "pregunta": "Para medir una muestra cercana a pH 6, ¿qué pareja encuadra ese valor?",
+      "opciones": [
+        "Dos porciones del mismo tampón pH 7",
+        "Solo tampones pH 9 y 12",
+        "Tampones próximos a pH 4 y 7"
+      ],
+      "correcta": 2,
+      "explicacion": "Los dos valores deben permitir caracterizar pendiente y desplazamiento en la zona de medida.",
+      "fuente": "IUPAC, calibración a dos puntos · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **De dos puntos** («bracketing») | Dos tampones que **encuadran** el pH de la muestra; da desplazamiento **y** pendiente | **0,02 – 0,03** unidades de pH |"
+    },
+    {
+      "id": "t23-q195",
+      "pregunta": "¿Qué interés tiene una calibración multipunto para un laboratorio que usa una zona amplia de pH?",
+      "opciones": [
+        "Evitar por completo el mantenimiento del electrodo",
+        "Caracterizar la respuesta en varios puntos del intervalo",
+        "Garantizar error cero por tener más frascos"
+      ],
+      "correcta": 1,
+      "explicacion": "La cantidad de puntos solo es útil junto con patrones y tratamiento adecuados.",
+      "fuente": "IUPAC, calibración multipunto; CEM QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Regla de elección: **el multipunto** cuando se quiere mínima incertidumbre en un intervalo amplio; **el de dos puntos** cuando la respuesta no es lineal en la zona de trabajo, eligiendo los tampones lo más cerca posible del pH de la muestra."
+    },
+    {
+      "id": "t23-q196",
+      "pregunta": "¿Quién establece finalmente el período de calibración conforme al uso y requisitos aplicables?",
+      "opciones": [
+        "El usuario responsable del equipo",
+        "El número de serie por sí solo",
+        "Únicamente el proveedor del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "El intervalo orientativo del procedimiento no sustituye la decisión documentada sobre el uso real.",
+      "fuente": "CEM QU-003, 6.2, periodicidad · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La que indique el manual. Si no lo indica, y según el uso, **podría ser de seis meses** — y **el establecimiento del periodo es responsabilidad del usuario**."
+    },
+    {
+      "id": "t23-q197",
+      "pregunta": "¿Cómo debe interpretarse la mención a seis meses del QU-003?",
+      "opciones": [
+        "Como plazo legal universal invariable",
+        "Como posibilidad orientativa si el manual no lo indica y según uso",
+        "Como prohibición de calibrar antes"
+      ],
+      "correcta": 1,
+      "explicacion": "La redacción es condicional y atribuye al usuario la responsabilidad del período.",
+      "fuente": "CEM QU-003, 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La que indique el manual. Si no lo indica, y según el uso, **podría ser de seis meses** — y **el establecimiento del periodo es responsabilidad del usuario**."
+    },
+    {
+      "id": "t23-q198",
+      "pregunta": "En aparatos para controles en línea o in situ de agua de consumo, ¿qué información exige conservar el requisito citado?",
+      "opciones": [
+        "Solo la factura de compra",
+        "Solo una etiqueta sin registro",
+        "Documentación de la última calibración, además de verificación y ajuste periódicos"
+      ],
+      "correcta": 2,
+      "explicacion": "La información documentada permite demostrar el control del sistema de medida.",
+      "fuente": "RD 3/2023, anexo III, parte B.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Anexo III, parte B.4:** los aparatos con los que se hacen **controles en línea o in situ** deben estar **verificados y ajustados periódicamente**, y **documentada la última calibración realizada**."
+    },
+    {
+      "id": "t23-q199",
+      "pregunta": "¿Qué dos aspectos de la respuesta deben evaluarse sin confundirlos?",
+      "opciones": [
+        "Pendiente y desplazamiento",
+        "Solo volumen y color del tampón",
+        "Solo temperatura exterior y masa del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "Un equipo puede coincidir en un punto y responder mal al cambiar de pH.",
+      "fuente": "Especificaciones del electrodo; CEM QU-003, evaluación de respuesta · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Los intervalos de aceptación los pone el fabricante de cada electrodo, y no he localizado ningún criterio normativo que los fije.** En la documentación consultada aparecen, para un modelo concreto, una pendiente del **97 al 102 %** con **offset entre −30 y +30 mV**; en la práctica de laboratorio circula también un intervalo más ancho, del **95 al 105 %**. **Ninguna de las dos cifras se da aquí por buena:** las dos son **orientativas**. Lo que hay que retener es el criterio de fondo —**pendiente próxima a la teórica y offset pequeño**— y que el número exacto lo fija la **especificación del electrodo** que se esté usando o el **procedimiento del laboratorio**. Ver duda 5."
+    },
+    {
+      "id": "t23-q200",
+      "pregunta": "¿Qué debe permitir el registro de una intervención con ajuste?",
+      "opciones": [
+        "Omitir que se hizo una intervención",
+        "Presentar solo el dato que resulte más favorable",
+        "Distinguir lecturas previas y posteriores, y sus condiciones térmicas"
+      ],
+      "correcta": 2,
+      "explicacion": "El estado final conforme no describe por sí solo cómo se encontraba el equipo anteriormente.",
+      "fuente": "CEM QU-003, 6.2, documentación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Si se sale de ese intervalo: **nuevo ajuste con los tampones 4 y 7 y nueva calibración**. Se registran las lecturas **antes y después** del ajuste, la temperatura de los tampones y la ambiente."
+    },
+    {
+      "id": "t23-q201",
+      "pregunta": "¿Qué diferencia hay entre error de indicación e incertidumbre?",
+      "opciones": [
+        "Ambos deben tener siempre signo negativo",
+        "El error puede ser positivo o negativo y la incertidumbre es no negativa",
+        "Son dos nombres del mismo número"
+      ],
+      "correcta": 1,
+      "explicacion": "La incertidumbre caracteriza dispersión de valores atribuibles y no es la diferencia de lectura frente a referencia.",
+      "fuente": "CEM QU-003, apartados 3 y 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q202",
+      "pregunta": "¿Con qué referencia se compara la indicación para obtener el error en un punto de calibración?",
+      "opciones": [
+        "Valor certificado pertinente del tampón, con correcciones aplicables",
+        "El pH de otra muestra cualquiera",
+        "Solo el entero nominal impreso en grande"
+      ],
+      "correcta": 0,
+      "explicacion": "La comparación requiere el valor del patrón en las condiciones del ensayo.",
+      "fuente": "CEM QU-003, 6.1, error por punto · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La magnitud de salida es el **error del pHímetro en cada punto**: la indicación menos el valor certificado del tampón. Sus componentes:"
+    },
+    {
+      "id": "t23-q203",
+      "pregunta": "¿Por qué se divide la desviación típica entre √3 en la contribución de repetibilidad del procedimiento?",
+      "opciones": [
+        "Se cambia de pH a mV",
+        "Se estima la incertidumbre de la media de tres lecturas",
+        "Se corrige la pureza del tampón"
+      ],
+      "correcta": 1,
+      "explicacion": "La dispersión de lecturas individuales y la de su media son conceptos distintos.",
+      "fuente": "CEM QU-003, 6.1.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Repetibilidad** del pHímetro | Desviación típica de las 3 lecturas dividida por **√3** | Normal |"
+    },
+    {
+      "id": "t23-q204",
+      "pregunta": "Un certificado expresa U con k = 3. ¿Puede aplicarse automáticamente la división por dos de un ejemplo con k = 2?",
+      "opciones": [
+        "Solo si el tampón es alcalino",
+        "Sí, toda incertidumbre se divide por dos siempre",
+        "No; se utiliza el factor de cobertura de ese certificado"
+      ],
+      "correcta": 2,
+      "explicacion": "El paso de expandida a típica depende del k declarado.",
+      "fuente": "CEM QU-003, 6.1, tabla de incertidumbres · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q205",
+      "pregunta": "¿Qué modelo de distribución se asocia a la resolución en el presupuesto del QU-003?",
+      "opciones": [
+        "Rectangular",
+        "Normal obligatoria con desviación cero",
+        "Una concentración molar"
+      ],
+      "correcta": 0,
+      "explicacion": "La expresión resolución/√12 refleja el modelo rectangular del intervalo de redondeo.",
+      "fuente": "CEM QU-003, 6.1.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Resolución** del pHímetro | **resolución / √12** | Rectangular |"
+    },
+    {
+      "id": "t23-q206",
+      "pregunta": "¿Qué contribución evalúa el efecto de la resolución del termómetro sobre el pH asignado al patrón?",
+      "opciones": [
+        "Masa del vaso de medida",
+        "Solo repetibilidad de la pantalla de pH",
+        "Influencia de la temperatura sobre el tampón"
+      ],
+      "correcta": 2,
+      "explicacion": "La sensibilidad térmica del patrón convierte una variación de temperatura en variación de su valor.",
+      "fuente": "CEM QU-003, 6.1.5 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Influencia de la temperatura** sobre el patrón | Variación máxima del pH por el incremento de temperatura / **√12** | Rectangular |"
+    },
+    {
+      "id": "t23-q207",
+      "pregunta": "Para combinar contribuciones típicas independientes, ¿qué operación corresponde?",
+      "opciones": [
+        "Suma directa de los valores expandidos sin revisar k",
+        "Raíz de la suma de sus cuadrados",
+        "Restar siempre la menor de la mayor"
+      ],
+      "correcta": 1,
+      "explicacion": "Se suman varianzas para obtener la contribución combinada bajo las condiciones indicadas.",
+      "fuente": "CEM QU-003, 6.1, propagación de incertidumbres · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q208",
+      "pregunta": "¿Qué operación convierte la incertidumbre típica combinada en expandida con k = 2?",
+      "opciones": [
+        "Multiplicarla por dos",
+        "Restarle la indicación de pH",
+        "Dividirla entre dos"
+      ],
+      "correcta": 0,
+      "explicacion": "El factor amplía el intervalo de cobertura respecto de la incertidumbre típica combinada.",
+      "fuente": "CEM QU-003, 6.1, expresión de U · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q209",
+      "pregunta": "¿Por qué k = 2 no debe identificarse sin condiciones con una probabilidad exacta para cualquier distribución?",
+      "opciones": [
+        "Porque k es una temperatura",
+        "La cobertura depende de las hipótesis de distribución y grados de libertad",
+        "Porque toda distribución tiene idéntica forma"
+      ],
+      "correcta": 1,
+      "explicacion": "El procedimiento declara las condiciones bajo las que adopta la aproximación de cobertura.",
+      "fuente": "CEM QU-003, 6.1, nota sobre cobertura · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q210",
+      "pregunta": "Si se declara una incertidumbre única para el campo conforme a la opción del QU-003, ¿qué valor se toma?",
+      "opciones": [
+        "Una media elegida para ocultar el peor punto",
+        "Siempre la menor",
+        "La mayor de las obtenidas en los puntos o zonas"
+      ],
+      "correcta": 2,
+      "explicacion": "La elección conservadora evita infravalorar zonas con incertidumbre mayor.",
+      "fuente": "CEM QU-003, 6.1, incertidumbre única del campo · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q211",
+      "pregunta": "¿Qué no desaparece por hacer muchas lecturas del mismo tampón?",
+      "opciones": [
+        "La incertidumbre de su valor certificado",
+        "La posibilidad de estimar dispersión",
+        "La existencia de una media"
+      ],
+      "correcta": 0,
+      "explicacion": "Repetir no convierte una referencia incierta en un valor exacto.",
+      "fuente": "CEM QU-003, 6.1, componentes de incertidumbre · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q212",
+      "pregunta": "Si todas las lecturas se hacen con el mismo tampón alterado, ¿qué puede ocurrir aunque se repitan muchas veces?",
+      "opciones": [
+        "Eliminar la necesidad de conservar bien los patrones",
+        "Obtener por fuerza el valor verdadero",
+        "Persistir un sesgo común de referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "La repetibilidad no detecta ni elimina necesariamente errores compartidos.",
+      "fuente": "CEM QU-003, 6.1; VIM, error e incertidumbre · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q213",
+      "pregunta": "Un pHímetro muestra milésimas. ¿Qué no puede concluirse solo de esa pantalla?",
+      "opciones": [
+        "Que permite una lectura con cierto escalón de indicación",
+        "Que su incertidumbre sea de una milésima o menor",
+        "Que debe evaluarse su comportamiento"
+      ],
+      "correcta": 1,
+      "explicacion": "Resolución, error e incertidumbre no son magnitudes intercambiables.",
+      "fuente": "CEM QU-003, definiciones y 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados."
+    },
+    {
+      "id": "t23-q214",
+      "pregunta": "¿Qué unidad corresponde a la sensibilidad eléctrica de un electrodo de pH?",
+      "opciones": [
+        "mV por unidad de pH",
+        "Unidades de pH por litro obligatoriamente",
+        "mL por gramo"
+      ],
+      "correcta": 0,
+      "explicacion": "La pendiente relaciona variación eléctrica con variación en la escala pH.",
+      "fuente": "Documentación del electrodo; Harris, respuesta de Nernst · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Pendiente**, en mV/pH y en **porcentaje de la teórica** (59,16 mV/pH a 25 °C). Un electrodo que dé 58,78 mV/pH está al **99,3 %**."
+    },
+    {
+      "id": "t23-q215",
+      "pregunta": "¿Qué compara el porcentaje de pendiente informado por el equipo?",
+      "opciones": [
+        "Volumen de muestra frente al del tampón",
+        "Pendiente observada frente a la teórica a la temperatura pertinente",
+        "Pureza del vidrio frente a agua"
+      ],
+      "correcta": 1,
+      "explicacion": "El porcentaje exige usar como referencia la pendiente teórica correspondiente a las condiciones.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Documentación del pHímetro, porcentaje de pendiente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Pendiente**, en mV/pH y en **porcentaje de la teórica** (59,16 mV/pH a 25 °C). Un electrodo que dé 58,78 mV/pH está al **99,3 %**."
+    },
+    {
+      "id": "t23-q216",
+      "pregunta": "En la convención de offset del tema, ¿qué caracteriza ese dato?",
+      "opciones": [
+        "La concentración molar de KCl",
+        "La derivada segunda del volumen",
+        "El potencial de desplazamiento en torno al punto de referencia de pH 7"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe distinguirse de la pendiente y de los valores certificados de los tampones.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, potenciometría; Documentación del electrodo, offset · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Desplazamiento (offset)**, en mV: el potencial a pH 7, que idealmente sería 0 mV."
+    },
+    {
+      "id": "t23-q217",
+      "pregunta": "Una respuesta es muy lineal pero tiene pendiente inadecuada. ¿Basta la correlación alta para aceptarla?",
+      "opciones": [
+        "No; también deben evaluarse pendiente, desplazamiento y criterios aplicables",
+        "Sí; linealidad equivale siempre a ausencia de sesgo",
+        "Solo si se imprime la recta"
+      ],
+      "correcta": 0,
+      "explicacion": "Una relación lineal puede tener ganancia u offset incorrectos.",
+      "fuente": "CEM QU-003, 5.4; VIM, evaluación del sistema · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados."
+    },
+    {
+      "id": "t23-q218",
+      "pregunta": "Un cálculo entrega r = 1,003. ¿Qué debe hacerse antes de usarlo como correlación válida?",
+      "opciones": [
+        "Tratarlo automáticamente como error de temperatura",
+        "Aceptarlo por estar dentro de 0,995 a 1,005",
+        "Revisar cálculo o interpretación, porque r no puede superar uno"
+      ],
+      "correcta": 2,
+      "explicacion": "La inconsistencia literal del procedimiento no permite una correlación matemáticamente imposible.",
+      "fuente": "CEM QU-003, 5.4 y 6.2; observación crítica del apunte · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "*(El criterio «0,995 a 1,005» está tomado literalmente del procedimiento. Ver «Dudas»: un coeficiente de correlación no puede pasar de 1. Hay una inconsistencia en la redacción que debe aclararse con el procedimiento aplicable y el manual; no debe aceptarse un r mayor que uno ni reinterpretar automáticamente el intervalo como pendiente.)*"
+    },
+    {
+      "id": "t23-q219",
+      "pregunta": "¿Qué cautela exige el intervalo impreso 0,995 a 1,005 en el QU-003?",
+      "opciones": [
+        "Suponer que permite cualquier r superior a uno",
+        "Aclarar a qué criterio se aplica sin convertirlo automáticamente en pendiente",
+        "Ignorar todas las instrucciones del aparato"
+      ],
+      "correcta": 1,
+      "explicacion": "Reconocer una inconsistencia exige documentar el criterio aplicable, no inventar una sustitución silenciosa.",
+      "fuente": "CEM QU-003, 5.4 y 6.2; nota de limitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "*(El criterio «0,995 a 1,005» está tomado literalmente del procedimiento. Ver «Dudas»: un coeficiente de correlación no puede pasar de 1. Hay una inconsistencia en la redacción que debe aclararse con el procedimiento aplicable y el manual; no debe aceptarse un r mayor que uno ni reinterpretar automáticamente el intervalo como pendiente.)*"
+    },
+    {
+      "id": "t23-q220",
+      "pregunta": "¿Qué aporta la documentación de un material de referencia certificado?",
+      "opciones": [
+        "Valores de propiedades con incertidumbre y trazabilidad",
+        "Ausencia garantizada de toda variación",
+        "Solo una fecha sin propiedades asignadas"
+      ],
+      "correcta": 0,
+      "explicacion": "La certificación proporciona la información metrológica con la que se realiza la comparación.",
+      "fuente": "CEM QU-003, apartado 3, VIM 5.14 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados."
+    },
+    {
+      "id": "t23-q221",
+      "pregunta": "¿Qué características necesita un material de referencia para el uso previsto?",
+      "opciones": [
+        "Solo color intenso",
+        "Homogeneidad y estabilidad suficientes respecto a la propiedad de interés",
+        "Ausencia de cualquier etiqueta"
+      ],
+      "correcta": 1,
+      "explicacion": "No basta llamar patrón a una disolución si no conserva una propiedad adecuada para la comparación.",
+      "fuente": "CEM QU-003, apartado 3, VIM 5.13 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados."
+    },
+    {
+      "id": "t23-q222",
+      "pregunta": "¿Qué falta si una disolución se ofrece para calibrar con un pH nominal pero sin valor ni información metrológica suficiente?",
+      "opciones": [
+        "Una masa de precipitado",
+        "Solo una bureta más grande",
+        "La referencia adecuada para cuantificar el error y su incertidumbre"
+      ],
+      "correcta": 2,
+      "explicacion": "El número nominal no sustituye por sí solo los datos del patrón.",
+      "fuente": "CEM QU-003, apartado 3; VIM, MRC · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El propio QU-003, apartado 3, distingue **material de referencia**, suficientemente homogéneo y estable para el uso, y **material de referencia certificado**, cuya documentación proporciona valores, incertidumbres y trazabilidad. Una resolución pequeña no demuestra exactitud ni incertidumbre nula. Un buen coeficiente de correlación no garantiza por sí solo pendiente y desplazamiento adecuados."
+    },
+    {
+      "id": "t23-q223",
+      "pregunta": "¿Qué error de interpretación se comete al convertir el requisito de 0,2 para pH en «20 % del pH leído»?",
+      "opciones": [
+        "Se confunden unidades de pH con porcentaje",
+        "Ninguno: son siempre idénticos",
+        "Solo se cambia la presentación sin afectar al criterio"
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla expresa este requisito en unidades de pH, a diferencia de otros parámetros.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Anexo III, parte D, tabla 15:** la **incertidumbre de medida** exigida para el pH es de **0,2**, y —a diferencia del resto de parámetros, que van en porcentaje del valor paramétrico— **se expresa en unidades de pH**. El criterio es para **k = 2**."
+    },
+    {
+      "id": "t23-q224",
+      "pregunta": "¿Por qué debe indicarse el factor de cobertura al comparar incertidumbres del pH?",
+      "opciones": [
+        "Porque todas las incertidumbres publicadas tienen idéntica cobertura",
+        "Porque k sustituye la temperatura",
+        "Porque una incertidumbre típica y otra expandida con distinto k no son directamente equivalentes"
+      ],
+      "correcta": 2,
+      "explicacion": "La comparación debe hacerse en bases metrológicas compatibles.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15; CEM QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q225",
+      "pregunta": "Un electrodo muestra deterioro antes de la fecha de revisión prevista. ¿Debe ignorarse hasta cumplir el período?",
+      "opciones": [
+        "Sí; la fecha garantiza funcionamiento correcto",
+        "No; se investiga y controla su aptitud aunque no haya vencido el intervalo",
+        "Solo se anota si se rompe el vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "La programación no sustituye la vigilancia del estado real del sistema.",
+      "fuente": "CEM QU-003, 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La que indique el manual. Si no lo indica, y según el uso, **podría ser de seis meses** — y **el establecimiento del periodo es responsabilidad del usuario**."
+    },
+    {
+      "id": "t23-q226",
+      "pregunta": "Una comprobación de rutina falla claramente. ¿Qué decisión debe evitarse?",
+      "opciones": [
+        "Seguir informando resultados sin investigar la aptitud del equipo",
+        "Aplicar el procedimiento de incidencias",
+        "Revisar patrones y electrodo"
+      ],
+      "correcta": 0,
+      "explicacion": "La comprobación tiene valor preventivo solo si sus resultados se consideran antes de medir muestras.",
+      "fuente": "CEM QU-003, 5.3.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con independencia de la calibración periódica, **antes de cada utilización** del pHímetro debe comprobarse su correcto funcionamiento **con los tampones pH 4 y 7**."
+    },
+    {
+      "id": "t23-q227",
+      "pregunta": "¿Puede una calibración atribuir al instrumento la incertidumbre del patrón como si fuera un error conocido que se resta sin más?",
+      "opciones": [
+        "Sí, toda incertidumbre es una corrección con signo",
+        "No; se incorpora como contribución de incertidumbre según el modelo",
+        "Solo si el patrón es pH 7"
+      ],
+      "correcta": 1,
+      "explicacion": "Valor de referencia, corrección y dispersión atribuible tienen funciones distintas en el modelo.",
+      "fuente": "CEM QU-003, 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Incertidumbre del tampón** | **U(certificado) / 2**, porque el certificado se da al 95,45 % | Normal |"
+    },
+    {
+      "id": "t23-q228",
+      "pregunta": "¿Qué riesgo hay al declarar para todo el campo únicamente la menor incertidumbre observada?",
+      "opciones": [
+        "Cambiar la escala convencional del pH",
+        "Aumentar de forma garantizada toda contribución",
+        "Infravalorar la incertidumbre en otros puntos"
+      ],
+      "correcta": 2,
+      "explicacion": "La declaración global debe representar adecuadamente el peor comportamiento que pretende cubrir.",
+      "fuente": "CEM QU-003, 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q229",
+      "pregunta": "Una respuesta coincide exactamente con pH 7 pero se desvía progresivamente hacia pH altos. ¿Qué aspecto conviene revisar además del offset?",
+      "opciones": [
+        "La pendiente y su adecuación en el intervalo",
+        "Solo el volumen del vaso",
+        "Solo el color de la disolución"
+      ],
+      "correcta": 0,
+      "explicacion": "Coincidir en un punto no demuestra una sensibilidad correcta.",
+      "fuente": "Documentación del pHímetro; CEM QU-003 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Los intervalos de aceptación los pone el fabricante de cada electrodo, y no he localizado ningún criterio normativo que los fije.** En la documentación consultada aparecen, para un modelo concreto, una pendiente del **97 al 102 %** con **offset entre −30 y +30 mV**; en la práctica de laboratorio circula también un intervalo más ancho, del **95 al 105 %**. **Ninguna de las dos cifras se da aquí por buena:** las dos son **orientativas**. Lo que hay que retener es el criterio de fondo —**pendiente próxima a la teórica y offset pequeño**— y que el número exacto lo fija la **especificación del electrodo** que se esté usando o el **procedimiento del laboratorio**. Ver duda 5."
+    },
+    {
+      "id": "t23-q230",
+      "pregunta": "¿Qué comparación ayuda a evaluar el efecto de un ajuste sobre el sistema?",
+      "opciones": [
+        "Solo el valor nominal del tampón más cercano",
+        "Solo la factura del equipo nuevo",
+        "Lecturas previas y posteriores bajo condiciones documentadas"
+      ],
+      "correcta": 2,
+      "explicacion": "Conservar ambos estados permite conocer qué cambió con la intervención.",
+      "fuente": "CEM QU-003, 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Si se sale de ese intervalo: **nuevo ajuste con los tampones 4 y 7 y nueva calibración**. Se registran las lecturas **antes y después** del ajuste, la temperatura de los tampones y la ambiente."
+    },
+    {
+      "id": "t23-q231",
+      "pregunta": "¿Qué registro acompaña a las indicaciones para interpretar las condiciones de calibración?",
+      "opciones": [
+        "Solo el tiempo de apertura del edificio",
+        "Temperaturas de tampones y ambiente",
+        "Solo el tamaño del frasco"
+      ],
+      "correcta": 1,
+      "explicacion": "La información térmica permite revisar condiciones y correcciones aplicadas.",
+      "fuente": "CEM QU-003, 6.2 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Si se sale de ese intervalo: **nuevo ajuste con los tampones 4 y 7 y nueva calibración**. Se registran las lecturas **antes y después** del ajuste, la temperatura de los tampones y la ambiente."
+    },
+    {
+      "id": "t23-q232",
+      "pregunta": "¿Qué función tienen pendiente y ordenada en el origen de la regresión y = a + b·x?",
+      "opciones": [
+        "Caracterizar sensibilidad y desplazamiento de la relación entre referencia e indicación",
+        "Expresar siempre incertidumbre expandida",
+        "Identificar exclusivamente volúmenes del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "Los parámetros de respuesta se distinguen del coeficiente de correlación y de la incertidumbre.",
+      "fuente": "CEM QU-003, 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con las medias corregidas por temperatura se calcula la **recta de regresión** (y = a + b·x) por mínimos cuadrados, y su **coeficiente de correlación**, que **debe quedar entre 0,995 y 1,005**, salvo que el manual del aparato fije otros límites."
+    },
+    {
+      "id": "t23-q233",
+      "pregunta": "¿Por qué no se selecciona como resultado de un punto solo la lectura que coincide mejor con el certificado?",
+      "opciones": [
+        "Porque el certificado no debe consultarse",
+        "Introduciría selección interesada en vez del tratamiento previsto",
+        "Porque toda media es necesariamente el valor verdadero"
+      ],
+      "correcta": 1,
+      "explicacion": "El tratamiento de todas las lecturas debe seguir el procedimiento y conservar datos.",
+      "fuente": "CEM QU-003, 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Tres lecturas no consecutivas por tampón**, y se toma **la media de las tres**."
+    },
+    {
+      "id": "t23-q234",
+      "pregunta": "Antes de comparar puntos obtenidos a temperaturas diferentes, ¿qué debe revisarse?",
+      "opciones": [
+        "Solo el orden alfabético de los patrones",
+        "Solo si los vasos son del mismo color",
+        "Los valores de referencia y correcciones térmicas pertinentes"
+      ],
+      "correcta": 2,
+      "explicacion": "La comparación debe utilizar valores que representen las condiciones reales de cada lectura.",
+      "fuente": "CEM QU-003, 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con las medias corregidas por temperatura se calcula la **recta de regresión** (y = a + b·x) por mínimos cuadrados, y su **coeficiente de correlación**, que **debe quedar entre 0,995 y 1,005**, salvo que el manual del aparato fije otros límites."
+    },
+    {
+      "id": "t23-q235",
+      "pregunta": "¿Qué afirmación sobre una lectura muy estable de pH es correcta?",
+      "opciones": [
+        "La estabilidad visible no demuestra por sí sola error cero ni incertidumbre nula",
+        "La estabilidad elimina toda contribución del patrón",
+        "La estabilidad convierte el resultado en exacto"
+      ],
+      "correcta": 0,
+      "explicacion": "Se necesitan referencia, condiciones y evaluación metrológica además de estabilidad de pantalla.",
+      "fuente": "CEM QU-003, 6.1; VIM, incertidumbre · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q236",
+      "pregunta": "¿Qué ejes se usan para la curva de valoración potenciométrica del tema?",
+      "opciones": [
+        "Tiempo de compra frente a coste",
+        "Masa de filtro frente a temperatura",
+        "Potencial o pH frente a volumen de valorante"
+      ],
+      "correcta": 2,
+      "explicacion": "La relación permite localizar cambios de señal asociados al avance de la reacción.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, curva de valoración potenciométrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Al representar el potencial (o el pH) frente al volumen de valorante sale una **sigmoide**. El **punto de equivalencia** es el **punto de inflexión**, es decir, **el de máxima pendiente**."
+    },
+    {
+      "id": "t23-q237",
+      "pregunta": "¿Por qué no se localiza la equivalencia buscando simplemente el mayor valor absoluto de E de toda la curva?",
+      "opciones": [
+        "Porque el potencial no puede medirse",
+        "Interesa la inflexión del salto, no el extremo final de potencial",
+        "Porque toda curva tiene máximo en volumen cero"
+      ],
+      "correcta": 1,
+      "explicacion": "La geometría de la transición contiene la información de la estimación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, estimación de equivalencia · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "![Curva de valoración potenciométrica: el punto de equivalencia es el punto de inflexión de la sigmoide](esquema:curva-potenciometrica)"
+    },
+    {
+      "id": "t23-q238",
+      "pregunta": "¿Debe identificarse sin ninguna reserva la inflexión experimental con la equivalencia teórica exacta?",
+      "opciones": [
+        "No; se usa como estimación cuya calidad depende del sistema y los datos",
+        "Solo si la muestra es transparente",
+        "Sí; toda inflexión elimina cualquier error químico"
+      ],
+      "correcta": 0,
+      "explicacion": "La definición estequiométrica y la señal experimental deben distinguirse.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, equivalencia y punto final experimental · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Conviene volver sobre la distinción del tema 22, porque aquí se afina: el **punto de equivalencia** sigue siendo teórico, y lo que el instrumento localiza es el **punto de inflexión de la curva experimental**, que se toma como su mejor estimación. Cuanto **más brusco es el salto** —reacción más cuantitativa, analito más concentrado—, mejor coinciden."
+    },
+    {
+      "id": "t23-q239",
+      "pregunta": "¿Qué suele facilitar localizar de manera definida la transición de una valoración?",
+      "opciones": [
+        "Una curva completamente plana sin información",
+        "Un salto suficientemente brusco en condiciones adecuadas",
+        "Eliminar todos los puntos próximos a cualquier cambio"
+      ],
+      "correcta": 1,
+      "explicacion": "La forma de la curva limita la precisión con la que puede estimarse el punto final.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calidad de detección final · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Conviene volver sobre la distinción del tema 22, porque aquí se afina: el **punto de equivalencia** sigue siendo teórico, y lo que el instrumento localiza es el **punto de inflexión de la curva experimental**, que se toma como su mejor estimación. Cuanto **más brusco es el salto** —reacción más cuantitativa, analito más concentrado—, mejor coinciden."
+    },
+    {
+      "id": "t23-q240",
+      "pregunta": "¿Qué puede permitir una curva con varias transiciones suficientemente separadas?",
+      "opciones": [
+        "Eliminar las relaciones estequiométricas",
+        "Suponer que toda mezcla se resuelve siempre sin validación",
+        "Distinguir varios procesos o analitos según el método"
+      ],
+      "correcta": 2,
+      "explicacion": "La posibilidad requiere que las señales sean interpretables y estén adecuadamente resueltas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, valoración de mezclas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Varios analitos | Un indicador por cada uno, si es que existe | **Varios puntos de inflexión en la misma curva** |"
+    },
+    {
+      "id": "t23-q241",
+      "pregunta": "¿Qué representa ΔE/ΔV?",
+      "opciones": [
+        "Cambio de potencial por incremento de volumen",
+        "Volumen total dividido por masa de muestra",
+        "Potencial de referencia sin relación con la curva"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una estimación de la pendiente local de la curva E frente a V.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, primera derivada de la valoración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Primera derivada** | **ΔE/ΔV** frente a V | En el **máximo** de la curva |"
+    },
+    {
+      "id": "t23-q242",
+      "pregunta": "En una curva decreciente, ¿qué debe buscarse para la mayor variación local en valor absoluto?",
+      "opciones": [
+        "Solo el potencial inicial",
+        "Siempre el máximo positivo aunque la transición sea negativa",
+        "El extremo de mayor magnitud de pendiente, que puede ser un mínimo de la derivada"
+      ],
+      "correcta": 2,
+      "explicacion": "El signo de la pendiente depende del sentido de la señal y no elimina la información del salto.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, curvas crecientes y decrecientes · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado."
+    },
+    {
+      "id": "t23-q243",
+      "pregunta": "¿Qué debe comprobarse antes de asignar equivalencia a un cruce por cero de la segunda derivada?",
+      "opciones": [
+        "Solo que el cero se vea en pantalla",
+        "Que corresponde a la inflexión relevante y no a ruido",
+        "Que sea el primer cero de cualquier registro sin evaluar"
+      ],
+      "correcta": 1,
+      "explicacion": "La derivación puede amplificar fluctuaciones y exige interpretación del conjunto de datos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, segunda derivada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado."
+    },
+    {
+      "id": "t23-q244",
+      "pregunta": "¿Es la segunda derivada universalmente más exacta con cualquier serie experimental?",
+      "opciones": [
+        "No, también importan ruido, espaciado y algoritmo",
+        "Solo si se prescinde de datos de volumen",
+        "Sí, independientemente de la calidad de los datos"
+      ],
+      "correcta": 0,
+      "explicacion": "Una ventaja geométrica de interpolación no reemplaza datos adecuados.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, tratamiento de curvas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado."
+    },
+    {
+      "id": "t23-q245",
+      "pregunta": "¿Dónde se asigna el valor de una primera derivada calculada entre dos adiciones según el criterio del tema?",
+      "opciones": [
+        "Siempre a volumen cero",
+        "Al volumen medio del intervalo",
+        "A la capacidad nominal del frasco"
+      ],
+      "correcta": 1,
+      "explicacion": "El cambio se refiere al tramo entre ambas observaciones.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, diferencias finitas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En las derivadas, cada valor se atribuye al **punto medio del incremento** de volumen: ΔE/ΔV entre 12,00 y 12,10 mL se representa en 12,05."
+    },
+    {
+      "id": "t23-q246",
+      "pregunta": "¿Qué punto geométrico proporciona la estimación en una representación de Gran?",
+      "opciones": [
+        "La altura de la tapa del vaso",
+        "El máximo arbitrario del potencial sin transformar",
+        "Intersección extrapolada con el eje de volumen"
+      ],
+      "correcta": 2,
+      "explicacion": "La función linealizada se usa para estimar el volumen final mediante extrapolación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, método de Gran · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Método de Gran** | Una función **lineal** del volumen | En el **corte de la recta con el eje de volúmenes** |"
+    },
+    {
+      "id": "t23-q247",
+      "pregunta": "¿Basta trazar cualquier recta entre dos puntos para aplicar correctamente Gran?",
+      "opciones": [
+        "No, debe utilizarse una función e intervalo válidos para el sistema",
+        "Sí, cualquier transformación da el mismo final",
+        "Solo importa que el gráfico sea bonito"
+      ],
+      "correcta": 0,
+      "explicacion": "La linealización tiene fundamento químico y matemático específico.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, condiciones del método de Gran · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado."
+    },
+    {
+      "id": "t23-q248",
+      "pregunta": "¿Qué ventaja tiene Gran cuando la señal tarda mucho en estabilizarse cerca del final?",
+      "opciones": [
+        "Convierte cualquier reacción no cuantitativa en exacta",
+        "Elimina la necesidad de conocer volúmenes",
+        "Permite estimar por extrapolación sin depender exclusivamente de puntos muy cercanos al final"
+      ],
+      "correcta": 2,
+      "explicacion": "La ventaja se refiere a cómo se usa la curva, no a suprimir los requisitos del método.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ventaja de Gran · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- El **método de Gran** tiene una ventaja distinta: **linealiza**, y por eso **no necesita medidas cerca del punto final**, que es justamente donde el potencial es más inestable y tarda más en equilibrarse."
+    },
+    {
+      "id": "t23-q249",
+      "pregunta": "¿Qué indicador eléctrico se asocia a una valoración seguida como curva de pH?",
+      "opciones": [
+        "Solo una pesa patrón",
+        "Electrodo de vidrio adecuado",
+        "Siempre platino como único sensor de H⁺"
+      ],
+      "correcta": 1,
+      "explicacion": "La señal debe responder a la magnitud que cambia durante la reacción ácido-base.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, selección de indicador potenciométrico · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Ácido-base** | **De vidrio** (es una curva de pH) |"
+    },
+    {
+      "id": "t23-q250",
+      "pregunta": "¿Qué función del platino interesa para seguir una valoración redox?",
+      "opciones": [
+        "Responder como indicador inerte del sistema redox",
+        "Medir directamente volumen de la bureta",
+        "Actuar como membrana selectiva de H⁺ por definición"
+      ],
+      "correcta": 0,
+      "explicacion": "El electrodo seleccionado debe corresponder al mecanismo de reacción.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, indicadores de valoraciones redox · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Redox** | **Platino** (u oro): electrodo **inerte** |"
+    },
+    {
+      "id": "t23-q251",
+      "pregunta": "¿Qué indicador se cita para argentometría con seguimiento potenciométrico?",
+      "opciones": [
+        "Solo un indicador de color sin señal eléctrica",
+        "Plata metálica o sistema selectivo apropiado",
+        "Membrana de pH como único sistema universal"
+      ],
+      "correcta": 1,
+      "explicacion": "La respuesta debe relacionarse con el equilibrio de plata o la especie pertinente de la valoración.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, argentometría potenciométrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Precipitación / argentometría** | **Plata metálica**, o electrodo selectivo de plata/sulfuro |"
+    },
+    {
+      "id": "t23-q252",
+      "pregunta": "¿Qué problema busca evitar una referencia de doble unión apropiada al valorar cloruro con plata?",
+      "opciones": [
+        "El registro del volumen de valorante",
+        "La existencia de toda reacción de precipitación",
+        "Contaminación de la muestra por cloruro procedente de la referencia"
+      ],
+      "correcta": 2,
+      "explicacion": "El montaje debe impedir que la referencia aporte el mismo analito que se cuantifica.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, referencia en argentometría · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Frente a cualquiera de ellos, el electrodo de referencia habitual es el de **Ag/AgCl**. En argentometría hay que evitar que el cloruro de la referencia se fugue a la muestra: se usa un electrodo de **doble unión**."
+    },
+    {
+      "id": "t23-q253",
+      "pregunta": "¿Qué indicador puede seguir una complexometría según el esquema del tema?",
+      "opciones": [
+        "Electrodo selectivo del ion valorado",
+        "Solo una balanza sin electrodo",
+        "Un sensor de temperatura como único indicador del complejo"
+      ],
+      "correcta": 0,
+      "explicacion": "El consumo del ion libre puede seguirse con una respuesta selectiva apropiada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, complexometría potenciométrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Complexometría** | Electrodo **selectivo del ion** que se valora |"
+    },
+    {
+      "id": "t23-q254",
+      "pregunta": "Una valoración se detiene al alcanzar pH 4,5 de consigna. ¿Qué distingue ese criterio de buscar equivalencia por inflexión?",
+      "opciones": [
+        "No requiere medir pH",
+        "Se obtiene buscando siempre máximo de segunda derivada",
+        "El final está fijado por un valor de pH establecido"
+      ],
+      "correcta": 2,
+      "explicacion": "El valor operacional del método no debe confundirse con una búsqueda automática de inflexión.",
+      "fuente": "UNE-EN ISO 9963-1:1996; Harris, punto final operacional · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Y aquí está el matiz fino del apartado: esto **no es una valoración al punto de equivalencia**, sino **a un punto final prefijado**. El instrumento no busca ninguna inflexión: dosifica hasta que el pH alcanza el valor de consigna. Es lo que un valorador automático llama **modo SET**. Con 50 mL de muestra y valorante 0,1 eq/L el campo va aproximadamente de **0,4 a 20 mmol/L**; para alcalinidades bajas se usa más muestra y valorante más diluido."
+    },
+    {
+      "id": "t23-q255",
+      "pregunta": "¿Qué pareja de puntos finales se asocia al ejemplo de alcalinidad compuesta y total, respectivamente?",
+      "opciones": [
+        "pH 4,5 y pH 8,3",
+        "pH 8,3 y pH 4,5",
+        "Ambas a pH 7 siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "La correspondencia de cada parámetro con su consigna debe conservarse.",
+      "fuente": "UNE-EN ISO 9963-1:1996, ejemplo de alcalinidad del apunte · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Compuesta** («p») | **pH 8,3** | Fenolftaleína |"
+    },
+    {
+      "id": "t23-q256",
+      "pregunta": "¿Qué componente sustituye la entrega manual desde una bureta de vidrio en el valorador descrito?",
+      "opciones": [
+        "Bureta motorizada de pistón",
+        "El termómetro como dispensador",
+        "Solo el electrodo de referencia"
+      ],
+      "correcta": 0,
+      "explicacion": "El sistema dosificador aporta incrementos controlados de volumen.",
+      "fuente": "Metrohm, documentación de valoradores, dosificación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "![Valorador automático: bureta motorizada de pistón, frasco del valorante, electrodo indicador, agitador magnético y unidad de control](esquema:valorador-automatico)"
+    },
+    {
+      "id": "t23-q257",
+      "pregunta": "¿Qué información útil puede guardar la unidad de reactivo descrita?",
+      "opciones": [
+        "Solo el número de silla del analista",
+        "Identidad y título del valorante, con datos de determinación y vigencia",
+        "La certeza de que no hacen falta controles"
+      ],
+      "correcta": 1,
+      "explicacion": "Almacenar datos ayuda al uso correcto, pero no los vuelve automáticamente válidos si el reactivo cambia.",
+      "fuente": "Metrohm, unidades intercambiables y datos de reactivo · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Frasco del valorante y unidad intercambiable** | El cilindro va montado sobre el frasco del reactivo. Suele llevar un **chip de datos** con el reactivo, su **título**, la última determinación y la caducidad |"
+    },
+    {
+      "id": "t23-q258",
+      "pregunta": "¿Por qué es importante una agitación apropiada durante la valoración automática?",
+      "opciones": [
+        "Aumenta por sí sola la pureza del valorante",
+        "Sustituye siempre la calibración de los sensores",
+        "Evita que el electrodo lea una zona local sin mezclar"
+      ],
+      "correcta": 2,
+      "explicacion": "La lectura debe representar el medio de reacción de manera reproducible.",
+      "fuente": "Metrohm, documentación de valoradores; práctica potenciométrica · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Vaso de valoración y agitador magnético** | Agitación **constante y reproducible**, imprescindible para que el electrodo lea el seno de la disolución y no una zona sin mezclar |"
+    },
+    {
+      "id": "t23-q259",
+      "pregunta": "¿Qué ventaja documental tiene guardar la curva completa además del resultado final?",
+      "opciones": [
+        "Permite revisar evolución y detección del final",
+        "Demuestra por sí sola toda trazabilidad metrológica sin referencias",
+        "Hace innecesario identificar la muestra"
+      ],
+      "correcta": 0,
+      "explicacion": "El registro facilita revisión, pero no sustituye los controles ni la relación con patrones.",
+      "fuente": "Metrohm, documentación de registro de valoraciones · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Unidad de control y software** | Registra la **curva completa**, calcula el punto de equivalencia (normalmente por la **segunda derivada**), guarda el método y el resultado |"
+    },
+    {
+      "id": "t23-q260",
+      "pregunta": "¿Qué modo se elige si el criterio de parada es un pH o potencial de consigna?",
+      "opciones": [
+        "DET como único modo de pH fijo",
+        "MET como sinónimo de consigna fija",
+        "SET"
+      ],
+      "correcta": 2,
+      "explicacion": "La selección distingue final prefijado de búsqueda del punto de equivalencia.",
+      "fuente": "Metrohm 862 Compact Titrosampler, modos de valoración · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **SET** | Valoración a **punto final** fijo | Dosifica hasta alcanzar un **valor prefijado** de pH o mV. Es el modo de la **alcalinidad a pH 8,3 y 4,5** |"
+    },
+    {
+      "id": "t23-q261",
+      "pregunta": "¿Qué permanece constante en la dosificación MET descrita?",
+      "opciones": [
+        "Valor de pH de toda la muestra",
+        "Tamaño del incremento de volumen",
+        "Concentración de analito durante todo el ensayo"
+      ],
+      "correcta": 1,
+      "explicacion": "Monotónico aquí se refiere a adiciones de volumen iguales, no a señal química invariable.",
+      "fuente": "Metrohm, modo MET, documentación de valoración monotónica · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **MET** | Valoración **monotónica** al punto de equivalencia | Incrementos de volumen **iguales** durante toda la valoración. Sencilla y robusta |"
+    },
+    {
+      "id": "t23-q262",
+      "pregunta": "En DET, ¿qué se modifica según la evolución de la señal?",
+      "opciones": [
+        "El volumen de las adiciones",
+        "La fórmula del reactivo",
+        "La masa molar del analito"
+      ],
+      "correcta": 0,
+      "explicacion": "El muestreo se concentra en la zona de transición para describirla mejor.",
+      "fuente": "Metrohm, modo DET, documentación de valoración dinámica · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **DET** | Valoración **dinámica** al punto de equivalencia | El incremento **se adapta a la pendiente**: grande lejos del salto, pequeño cerca. Más rápida y con más puntos donde importan |"
+    },
+    {
+      "id": "t23-q263",
+      "pregunta": "¿Qué objetivo tiene disminuir el incremento cerca del salto en una valoración dinámica?",
+      "opciones": [
+        "Evitar medir la transición",
+        "Obtener más información en la zona relevante del final",
+        "Hacer que la reacción deje de ser estequiométrica"
+      ],
+      "correcta": 1,
+      "explicacion": "El tamaño de paso se ajusta a la información que necesita la localización del final.",
+      "fuente": "Metrohm, modo DET, incrementos dinámicos · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **DET** | Valoración **dinámica** al punto de equivalencia | El incremento **se adapta a la pendiente**: grande lejos del salto, pequeño cerca. Más rápida y con más puntos donde importan |"
+    },
+    {
+      "id": "t23-q264",
+      "pregunta": "¿Qué criterio puede usar un valorador para decidir cuándo aceptar la señal tras una adición?",
+      "opciones": [
+        "Que el operador desee acabar antes",
+        "Que el frasco esté lleno",
+        "Que la deriva esté por debajo del umbral previsto"
+      ],
+      "correcta": 2,
+      "explicacion": "La estabilidad o tiempo de espera forman parte del método de adquisición.",
+      "fuente": "Metrohm, parámetros de equilibrio y adquisición · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Unidad de control y software** | Registra la **curva completa**, calcula el punto de equivalencia (normalmente por la **segunda derivada**), guarda el método y el resultado |"
+    },
+    {
+      "id": "t23-q265",
+      "pregunta": "¿Qué magnitud representa una deriva expresada en mV/min?",
+      "opciones": [
+        "Variación de potencial con el tiempo",
+        "Volumen de valorante por masa de muestra",
+        "Una concentración de cloruro"
+      ],
+      "correcta": 0,
+      "explicacion": "La unidad ayuda a distinguir estabilidad temporal de pendiente respecto al volumen.",
+      "fuente": "Metrohm, criterio de deriva de señal · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Entre adición y adición, el equipo espera a que la señal **se equilibre**: o un tiempo fijo, o hasta que la **deriva** (en mV por minuto) baje de un umbral. Es el equivalente automático de «esperar a que el color deje de volver»."
+    },
+    {
+      "id": "t23-q266",
+      "pregunta": "¿Qué objetivo analítico tiene el modo Karl Fischer del esquema?",
+      "opciones": [
+        "Medición de pH sin reacción",
+        "Determinación exclusiva de cloruro por cromato",
+        "Determinación de agua"
+      ],
+      "correcta": 2,
+      "explicacion": "El modo pertenece a una química y detección propias, no a toda valoración ácido-base.",
+      "fuente": "Metrohm, documentación de Karl Fischer, detección del final · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **KFT** | **Karl Fischer**, volumétrica o culombimétrica | Determinación de agua; el punto final se detecta con un **doble electrodo de platino** |"
+    },
+    {
+      "id": "t23-q267",
+      "pregunta": "¿Qué caracteriza al modo manual del valorador descrito?",
+      "opciones": [
+        "El equipo decide siempre incrementos dinámicos sin intervención",
+        "El operador manda dosificar mientras el equipo registra",
+        "No se registra ninguna señal"
+      ],
+      "correcta": 1,
+      "explicacion": "La automatización disponible no obliga a que todos los modos dosifiquen del mismo modo.",
+      "fuente": "Metrohm, modo manual de dosificación · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "![Valorador automático: bureta motorizada de pistón, frasco del valorante, electrodo indicador, agitador magnético y unidad de control](esquema:valorador-automatico)"
+    },
+    {
+      "id": "t23-q268",
+      "pregunta": "Un valorador calcula automáticamente, pero el título del reactivo introducido es erróneo. ¿Qué puede ocurrir?",
+      "opciones": [
+        "Resultados sistemáticamente incorrectos aunque la curva sea reproducible",
+        "Error nulo por tener software",
+        "Corrección automática de cualquier concentración equivocada"
+      ],
+      "correcta": 0,
+      "explicacion": "El cálculo depende de los datos químicos y metrológicos que se introducen.",
+      "fuente": "Harris, Análisis Químico Cuantitativo; Metrohm, control de valorante · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Pero:** el valorador **no exime de nada de lo anterior**. Sigue habiendo que **calibrar el electrodo** con tampones certificados, **factorizar el valorante** contra un patrón primario (el «título» del reactivo, tema 22) y **mantener limpio el diafragma**. Un valorador automático mal calibrado da resultados malos con muchos decimales y un certificado impreso."
+    },
+    {
+      "id": "t23-q269",
+      "pregunta": "¿Qué mantenimiento sigue siendo necesario al automatizar la valoración?",
+      "opciones": [
+        "Dejar que los depósitos se acumulen porque hay ordenador",
+        "Conservar limpios y funcionales los electrodos y la unión de referencia",
+        "Sustituir la limpieza por imprimir el resultado"
+      ],
+      "correcta": 1,
+      "explicacion": "La automatización no elimina las limitaciones del sensor.",
+      "fuente": "Manual del electrodo; Metrohm, mantenimiento del sistema de valoración · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Pero:** el valorador **no exime de nada de lo anterior**. Sigue habiendo que **calibrar el electrodo** con tampones certificados, **factorizar el valorante** contra un patrón primario (el «título» del reactivo, tema 22) y **mantener limpio el diafragma**. Un valorador automático mal calibrado da resultados malos con muchos decimales y un certificado impreso."
+    },
+    {
+      "id": "t23-q270",
+      "pregunta": "¿Qué demuestra un resultado automático con muchos decimales?",
+      "opciones": [
+        "Ausencia de necesidad de patrones",
+        "Exactitud garantizada por el número de cifras",
+        "Solo una forma de presentación, que requiere validación del sistema y datos"
+      ],
+      "correcta": 2,
+      "explicacion": "La calidad depende de procedimiento, reactivo, sensores y cálculos, no del aspecto de la salida.",
+      "fuente": "Metrohm, control del sistema; VIM, aptitud del resultado · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "**Pero:** el valorador **no exime de nada de lo anterior**. Sigue habiendo que **calibrar el electrodo** con tampones certificados, **factorizar el valorante** contra un patrón primario (el «título» del reactivo, tema 22) y **mantener limpio el diafragma**. Un valorador automático mal calibrado da resultados malos con muchos decimales y un certificado impreso."
+    },
+    {
+      "id": "t23-q271",
+      "pregunta": "Si pH = 3,00 y se utiliza la definición por actividad, ¿qué actividad de H⁺ corresponde?",
+      "opciones": [
+        "10⁻³",
+        "3",
+        "10³"
+      ],
+      "correcta": 0,
+      "explicacion": "Se invierte la relación logarítmica mediante a(H⁺) = 10 elevado a −pH.",
+      "fuente": "CEM QU-003, generalidades; IUPAC, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q272",
+      "pregunta": "Una muestra pasa de pH 6 a pH 8. ¿Cómo cambia la actividad de H⁺?",
+      "opciones": [
+        "Se hace cien veces mayor",
+        "Se duplica",
+        "Se hace cien veces menor"
+      ],
+      "correcta": 2,
+      "explicacion": "Un aumento de dos unidades implica dividir la actividad por 10².",
+      "fuente": "CEM QU-003, generalidades; IUPAC, definición de pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El pH se define como **menos el logaritmo decimal de la actividad del ion hidrógeno**:"
+    },
+    {
+      "id": "t23-q273",
+      "pregunta": "En el modelo ideal de ácido fuerte, diluir HCl de 0,01 mol/L cien veces da aproximadamente qué pH, despreciando otras contribuciones?",
+      "opciones": [
+        "2",
+        "4",
+        "0,02"
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración pasa de 10⁻² a 10⁻⁴ mol/L; se aplica −log[H⁺].",
+      "fuente": "OpenStax, Chemistry 2e, 14.3; CEM QU-003, forma simplificada del pH · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "**Lo que ha caído: 1246, n.º 41.** «¿Qué pH tendrá una disolución 0,01 M de ácido clorhídrico utilizada en una volumetría ácido-base?» Respuesta oficial: **2**. Las otras opciones eran **0,01** (la concentración, no su logaritmo) y **0,2**. El razonamiento tiene dos pasos. El **HCl es un ácido fuerte**, y los ácidos fuertes **se ionizan por completo** en agua (OpenStax, *Chemistry 2e*, 14.3), así que la concentración de iones hidronio es la del ácido, **0,01 mol/L = 10⁻² mol/L**. Y con la forma simplificada del pH, **pH = −log [H⁺]**, la que usa el procedimiento QU-003 del CEM (duda 2), sale **pH = −log 10⁻² = 2**. Es el cálculo con la concentración: la definición rigurosa, por actividad, es la del párrafo anterior."
+    },
+    {
+      "id": "t23-q274",
+      "pregunta": "Entre tampones con diferencia de 3,00 unidades de pH se observan 177,48 mV de variación en magnitud. ¿Qué pendiente práctica resulta?",
+      "opciones": [
+        "59,16 mV/pH",
+        "0,0169 mV/pH",
+        "532,44 mV/pH"
+      ],
+      "correcta": 0,
+      "explicacion": "Se divide variación de potencial entre variación de pH.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, respuesta de electrodo de pH · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Pendiente**, en mV/pH y en **porcentaje de la teórica** (59,16 mV/pH a 25 °C). Un electrodo que dé 58,78 mV/pH está al **99,3 %**."
+    },
+    {
+      "id": "t23-q275",
+      "pregunta": "A 25 °C se obtiene una pendiente de magnitud 56,202 mV/pH frente a 59,16 mV/pH teóricos. ¿Qué porcentaje representa?",
+      "opciones": [
+        "105,3 %",
+        "95,0 %",
+        "5,0 %"
+      ],
+      "correcta": 1,
+      "explicacion": "Se calcula 56,202/59,16 × 100. La aceptación depende de la especificación, no solo de este porcentaje.",
+      "fuente": "Documentación del pHímetro; Harris, Nernst · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Pendiente**, en mV/pH y en **porcentaje de la teórica** (59,16 mV/pH a 25 °C). Un electrodo que dé 58,78 mV/pH está al **99,3 %**."
+    },
+    {
+      "id": "t23-q276",
+      "pregunta": "Tres lecturas de un tampón son 6,98; 7,00 y 7,02. ¿Qué media corresponde?",
+      "opciones": [
+        "6,98",
+        "7,02",
+        "7,00"
+      ],
+      "correcta": 2,
+      "explicacion": "La media usa las tres lecturas, no la más favorable para el certificado.",
+      "fuente": "CEM QU-003, 5.4 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Tres lecturas no consecutivas por tampón**, y se toma **la media de las tres**."
+    },
+    {
+      "id": "t23-q277",
+      "pregunta": "Con desviación típica s = 0,030 unidades de pH en tres lecturas, ¿qué contribución típica de la media da s/√3?",
+      "opciones": [
+        "0,0173 aproximadamente",
+        "0,0900",
+        "0,0300 × 3"
+      ],
+      "correcta": 0,
+      "explicacion": "Se divide la dispersión de lecturas individuales entre la raíz del número de observaciones.",
+      "fuente": "CEM QU-003, 6.1.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Repetibilidad** del pHímetro | Desviación típica de las 3 lecturas dividida por **√3** | Normal |"
+    },
+    {
+      "id": "t23-q278",
+      "pregunta": "El tampón tiene U = 0,040 unidades de pH con k = 2. ¿Qué incertidumbre típica se incorpora por esa referencia?",
+      "opciones": [
+        "0,040 × √12",
+        "0,080",
+        "0,020"
+      ],
+      "correcta": 2,
+      "explicacion": "Se convierte la incertidumbre expandida a típica dividiendo por el k declarado.",
+      "fuente": "CEM QU-003, 6.1, tabla de contribuciones · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q279",
+      "pregunta": "Con resolución 0,010 unidades de pH y modelo rectangular del procedimiento, ¿qué contribución típica resulta?",
+      "opciones": [
+        "0,0346",
+        "0,00289 aproximadamente",
+        "0,010 × 12"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica resolución/√12, no la resolución completa como desviación típica.",
+      "fuente": "CEM QU-003, 6.1.3 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Resolución** del pHímetro | **resolución / √12** | Rectangular |"
+    },
+    {
+      "id": "t23-q280",
+      "pregunta": "Dos únicas contribuciones típicas independientes valen 0,020 y 0,030 unidades de pH. ¿Cuál es la combinada?",
+      "opciones": [
+        "0,0361 aproximadamente",
+        "0,0100 por diferencia",
+        "0,0500 por suma directa"
+      ],
+      "correcta": 0,
+      "explicacion": "La raíz de 0,020² + 0,030² es aproximadamente 0,0361.",
+      "fuente": "CEM QU-003, 6.1, combinación de contribuciones · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
+    },
+    {
+      "id": "t23-q281",
+      "pregunta": "Si u_c = 0,025 unidades de pH y se adopta k = 2, ¿qué U se informa?",
+      "opciones": [
+        "0,0125",
+        "0,050",
+        "0,625"
+      ],
+      "correcta": 1,
+      "explicacion": "La incertidumbre expandida es k por la típica combinada.",
+      "fuente": "CEM QU-003, 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q282",
+      "pregunta": "Se obtienen U de 0,04; 0,06 y 0,03 en distintos puntos. Si se adopta la opción de U única para todo el campo, ¿cuál corresponde?",
+      "opciones": [
+        "0,0433 por media",
+        "0,03",
+        "0,06"
+      ],
+      "correcta": 2,
+      "explicacion": "El procedimiento permite tomar la mayor para representar el campo cubierto.",
+      "fuente": "CEM QU-003, 6.1, declaración única del campo · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La **incertidumbre expandida** se obtiene con **k = 2**, que corresponde a una probabilidad de cobertura del **95,45 %**. Puede tomarse como incertidumbre única para todo el campo **la mayor** de las obtenidas."
+    },
+    {
+      "id": "t23-q283",
+      "pregunta": "El certificado asigna al tampón 6,98 a la temperatura real del ensayo y la indicación media es 7,02. ¿Cuál es el error de indicación?",
+      "opciones": [
+        "Exceso de 0,04 unidades de pH",
+        "Defecto de 0,04 unidades de pH",
+        "Error cero por tener nominal 7"
+      ],
+      "correcta": 0,
+      "explicacion": "Se compara con el valor certificado pertinente a esa temperatura, no con el entero nominal.",
+      "fuente": "CEM QU-003, 5.4 y 6.1 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con las medias corregidas por temperatura se calcula la **recta de regresión** (y = a + b·x) por mínimos cuadrados, y su **coeficiente de correlación**, que **debe quedar entre 0,995 y 1,005**, salvo que el manual del aparato fije otros límites."
+    },
+    {
+      "id": "t23-q284",
+      "pregunta": "Entre 20,00 y 20,20 mL el potencial pasa de 100 a 140 mV. ¿Qué primera derivada aproximada resulta?",
+      "opciones": [
+        "40 mV/mL",
+        "8 mV/mL",
+        "200 mV/mL"
+      ],
+      "correcta": 2,
+      "explicacion": "El cambio es 40 mV en 0,20 mL: 40/0,20.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, diferencias finitas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Primera derivada** | **ΔE/ΔV** frente a V | En el **máximo** de la curva |"
+    },
+    {
+      "id": "t23-q285",
+      "pregunta": "La segunda derivada vale +10 en 9,90 mL y −10 en 10,10 mL. Con interpolación lineal local, ¿dónde cruza cero?",
+      "opciones": [
+        "9,90 mL",
+        "10,00 mL",
+        "10,10 mL"
+      ],
+      "correcta": 1,
+      "explicacion": "Las magnitudes iguales y signos opuestos sitúan el cruce en el punto medio del tramo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, interpolación de segunda derivada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "![Primera derivada: el punto de equivalencia es el máximo. Segunda derivada: es el corte con cero](esquema:derivadas-valoracion)"
+    },
+    {
+      "id": "t23-q286",
+      "pregunta": "Una función de Gran válida en el intervalo ajusta F = 20 − 2V, con V en mL. ¿Qué intersección con el eje V se obtiene?",
+      "opciones": [
+        "10 mL",
+        "2 mL",
+        "20 mL"
+      ],
+      "correcta": 0,
+      "explicacion": "En el corte F vale cero: 20 − 2V = 0.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, Gran · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| **Método de Gran** | Una función **lineal** del volumen | En el **corte de la recta con el eje de volúmenes** |"
+    },
+    {
+      "id": "t23-q287",
+      "pregunta": "Una curva decreciente presenta pendientes locales de −5, −80 y −12 mV/mL en 4,0; 4,5 y 5,0 mL. ¿Qué zona muestra mayor magnitud del salto?",
+      "opciones": [
+        "4,0 mL",
+        "4,5 mL",
+        "5,0 mL"
+      ],
+      "correcta": 1,
+      "explicacion": "La mayor magnitud es 80, aunque el valor de la derivada sea negativo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, curva decreciente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una curva decreciente, la primera derivada puede presentar **mínimo**; interesa la máxima **magnitud** de la pendiente. La detección por segunda derivada requiere un cambio de signo asociado a la inflexión relevante, no cualquier cruce provocado por ruido. Su ventaja de interpolación no garantiza ser universalmente más exacta con datos ruidosos o mal espaciados. El algoritmo y el muestreo deben adecuarse a la curva. Gran requiere una función lineal válida para el sistema y un intervalo de extrapolación adecuado."
+    },
+    {
+      "id": "t23-q288",
+      "pregunta": "¿Qué temperatura absoluta corresponde a 25,00 °C para usar en Nernst?",
+      "opciones": [
+        "248,15 K",
+        "25,00 K",
+        "298,15 K"
+      ],
+      "correcta": 2,
+      "explicacion": "Se convierte mediante T(K) = t(°C) + 273,15.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ecuación de Nernst · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "donde *R* es la constante de los gases, *F* la de Faraday y *T* la temperatura absoluta. El factor entre paréntesis es la **pendiente**, y es lo único que hay que retener con números:"
+    },
+    {
+      "id": "t23-q289",
+      "pregunta": "Si a 25 °C la pendiente en magnitud es 59,16 mV por década para n = 1, ¿cuál sería teóricamente para n = 2?",
+      "opciones": [
+        "29,58 mV por década",
+        "118,32 mV por década",
+        "59,16 mV por década"
+      ],
+      "correcta": 0,
+      "explicacion": "La pendiente es inversamente proporcional a la carga n en el modelo indicado.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pendiente por carga iónica · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Para hacer una potenciometría hacen falta **tres cosas**:"
+    },
+    {
+      "id": "t23-q290",
+      "pregunta": "Un potencial de referencia de +0,197 V, ¿a cuántos mV equivale?",
+      "opciones": [
+        "1.970 mV",
+        "0,197 mV",
+        "197 mV"
+      ],
+      "correcta": 2,
+      "explicacion": "Un voltio contiene mil milivoltios; las unidades deben ser compatibles al comparar potenciales.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, unidades de potencial de referencia · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| **Plata / cloruro de plata** | AgCl + e⁻ ⇌ Ag + Cl⁻ | **+0,197 V** (KCl saturado); **+0,205 V** con KCl 3,5 M |"
+    },
+    {
+      "id": "t23-q291",
+      "pregunta": "Para el requisito de U ≤ 0,2 unidades de pH con k = 2, se obtiene U = 0,15 con el mismo k. ¿Cumple ese requisito concreto?",
+      "opciones": [
+        "No, porque debe ser menor de 0,02",
+        "Sí, 0,15 no supera 0,2",
+        "No puede compararse nunca aunque tenga el mismo k"
+      ],
+      "correcta": 1,
+      "explicacion": "Se compara la incertidumbre en las mismas unidades y cobertura; esto no acredita por sí solo todos los requisitos del método.",
+      "fuente": "RD 3/2023, anexo III, parte D, tabla 15 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Anexo III, parte D, tabla 15:** la **incertidumbre de medida** exigida para el pH es de **0,2**, y —a diferencia del resto de parámetros, que van en porcentaje del valor paramétrico— **se expresa en unidades de pH**. El criterio es para **k = 2**."
+    },
+    {
+      "id": "t23-q292",
+      "pregunta": "El procedimiento exige error en valor absoluto no mayor de 0,05 pH y se observa error de magnitud 0,08. ¿Cumple ese criterio?",
+      "opciones": [
+        "No",
+        "Sí, si se muestra con dos decimales",
+        "Sí, porque ambos son menores de una unidad"
+      ],
+      "correcta": 0,
+      "explicacion": "0,08 supera el límite de 0,05, con independencia del formato de pantalla.",
+      "fuente": "CEM QU-003; VIM, verificación frente a tolerancia · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Verificación** | Declarar conforme o no conforme frente a una tolerancia | Comprobar que el error entra en el criterio del laboratorio |"
+    },
+    {
+      "id": "t23-q293",
+      "pregunta": "En una valoración con ácido hacia consigna pH 4,5, la lectura estable es 4,8 y no se ha cumplido otra parada. ¿Se ha alcanzado la consigna?",
+      "opciones": [
+        "Sí, porque ambos valores son ácidos",
+        "No, el valor prefijado aún no se ha alcanzado",
+        "Sí, porque ya se pasó de pH 7"
+      ],
+      "correcta": 1,
+      "explicacion": "SET utiliza la consigna definida, no simplemente un cambio de zona ácido-base.",
+      "fuente": "Metrohm, modos de valoración; ejemplo de alcalinidad del apunte · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **SET** | Valoración a **punto final** fijo | Dosifica hasta alcanzar un **valor prefijado** de pH o mV. Es el modo de la **alcalinidad a pH 8,3 y 4,5** |"
+    },
+    {
+      "id": "t23-q294",
+      "pregunta": "En una valoración 1:1, la inflexión estimada corresponde a 12,0 mL de patrón 0,100 mol/L para 20,0 mL de muestra. ¿Qué concentración de analito resulta?",
+      "opciones": [
+        "0,120 mol/L",
+        "0,1667 mol/L",
+        "0,0600 mol/L"
+      ],
+      "correcta": 2,
+      "explicacion": "La detección aporta el volumen final: 0,100 × 0,0120/0,0200 = 0,0600 mol/L.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, valoración potenciométrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Al representar el potencial (o el pH) frente al volumen de valorante sale una **sigmoide**. El **punto de equivalencia** es el **punto de inflexión**, es decir, **el de máxima pendiente**."
+    },
+    {
+      "id": "t23-q295",
+      "pregunta": "Dos series usan el mismo tampón con u = 0,010 pH. Una serie tiene muchas más repeticiones. ¿Debe dividirse esa contribución del tampón entre √n por repetir lecturas del mismo patrón?",
+      "opciones": [
+        "No; repetir la indicación no reduce así la incertidumbre común del valor certificado",
+        "Sí; cualquier contribución se reduce siempre entre √n",
+        "Solo si n supera cinco"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe distinguirse la repetibilidad de la media de una contribución de referencia compartida.",
+      "fuente": "CEM QU-003, 6.1, contribuciones · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Interpretación de datos.** Error de indicación e incertidumbre son magnitudes distintas: el error puede tener signo, mientras la incertidumbre es no negativa. En general, una incertidumbre expandida de certificado se convierte a típica mediante **u = U/k_cert**; la división entre dos de la tabla supone k_cert = 2. Para contribuciones independientes expresadas como incertidumbres típicas, se combinan **sumando varianzas y tomando raíz**, no sumando directamente incertidumbres expandidas. Repetir lecturas reduce la contribución de repetibilidad de la media, pero no elimina la incertidumbre del tampón ni sesgos compartidos. La cobertura de k = 2 requiere las hipótesis de distribución pertinentes, como explica QU-003, 6.1."
     }
   ],
   "supuestos": [

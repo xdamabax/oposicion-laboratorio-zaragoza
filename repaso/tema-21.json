@@ -1896,6 +1896,2946 @@
       "fuente": "BIPM, VIM, 2.41 · apunte §2.4",
       "apartado": "2.4",
       "evidencia": "Y la **trazabilidad metrológica (VIM 2.41)** es *«propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre de medida»*."
+    },
+    {
+      "id": "t21-q91",
+      "pregunta": "¿Qué requisito permite convertir la masa pesada en cantidad de analito mediante estequiometría?",
+      "opciones": [
+        "Conocer solo el color del sólido",
+        "Conocer la composición de la especie pesada",
+        "Conocer solo el volumen del vaso"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin una composición definida, la masa no puede atribuirse inequívocamente al analito.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, gravimetría por precipitación · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El **análisis gravimétrico** determina la cantidad de analito **midiendo la masa** de una sustancia de composición conocida que lo contiene o que deriva de él estequiométricamente."
+    },
+    {
+      "id": "t21-q92",
+      "pregunta": "¿Debe coincidir necesariamente la fórmula del analito original con la de la especie que finalmente se pesa?",
+      "opciones": [
+        "Solo se admite que cambie el estado físico",
+        "Sí, toda transformación química invalida la gravimetría",
+        "No, puede pesarse un derivado de relación estequiométrica conocida"
+      ],
+      "correcta": 2,
+      "explicacion": "La conversión mediante un factor permite cuantificar el analito a partir de un compuesto distinto.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, gravimetría por precipitación · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El **análisis gravimétrico** determina la cantidad de analito **midiendo la masa** de una sustancia de composición conocida que lo contiene o que deriva de él estequiométricamente."
+    },
+    {
+      "id": "t21-q93",
+      "pregunta": "¿Qué mejora por sí sola no corrige la contaminación química de un precipitado?",
+      "opciones": [
+        "Usar una balanza con más decimales",
+        "Eliminar la impureza mediante el procedimiento adecuado",
+        "Revisar la selectividad de la separación"
+      ],
+      "correcta": 0,
+      "explicacion": "La resolución instrumental no corrige un sesgo introducido durante la preparación.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, características de la gravimetría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Su exactitud depende de la balanza y del comportamiento del precipitado**, no de un detector. Bien hecha, una gravimetría clásica es de las técnicas más exactas que hay; mal hecha, arrastra errores que ningún cálculo corrige."
+    },
+    {
+      "id": "t21-q94",
+      "pregunta": "¿Qué combinación caracteriza una gravimetría clásica bien realizada?",
+      "opciones": [
+        "Rapidez instantánea con toda muestra",
+        "Instrumentación relativamente sencilla y posibilidad de alta exactitud",
+        "Necesidad de un detector espectral muy complejo"
+      ],
+      "correcta": 1,
+      "explicacion": "La sencillez del equipo no implica que las operaciones sean rápidas ni que los errores químicos sean irrelevantes.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, métodos gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Ventajas:** exactitud alta, instrumentación barata, no requiere patrones del analito, resultados trazables al kilogramo."
+    },
+    {
+      "id": "t21-q95",
+      "pregunta": "¿Qué inconveniente pesa al elegir gravimetría clásica para una gran serie urgente de muestras?",
+      "opciones": [
+        "El tiempo de separación, secado y pesadas",
+        "La imposibilidad de medir masas",
+        "La obligación de usar siempre un cromatógrafo"
+      ],
+      "correcta": 0,
+      "explicacion": "El rendimiento de trabajo puede limitar su uso aunque la técnica sea exacta.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, ventajas e inconvenientes de gravimetría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Inconvenientes:** lenta (horas o días), poco sensible (no sirve para trazas), consume muestra abundante, muy sensible a interferencias que coprecipitan."
+    },
+    {
+      "id": "t21-q96",
+      "pregunta": "Que una determinación gravimétrica no necesite curva con patrones del analito, ¿elimina la necesidad de control metrológico de la balanza?",
+      "opciones": [
+        "Solo si se pesa menos de un gramo",
+        "Sí, por ser un método absoluto",
+        "No, la masa debe medirse de manera fiable y trazable"
+      ],
+      "correcta": 2,
+      "explicacion": "Método absoluto no significa instrumento sin calibración ni incertidumbre.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, métodos absolutos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Es un método absoluto (o primario).** No necesita una recta de calibrado con patrones del analito: el resultado sale de una masa y de una relación estequiométrica. Por eso se ha usado históricamente para certificar patrones y validar otras técnicas."
+    },
+    {
+      "id": "t21-q97",
+      "pregunta": "¿Qué circunstancia compromete la selectividad de una precipitación gravimétrica?",
+      "opciones": [
+        "Que el precipitado tenga composición definida",
+        "Que otro componente se incorpore al sólido pesado",
+        "Que se use una balanza estabilizada"
+      ],
+      "correcta": 1,
+      "explicacion": "La masa de una impureza puede atribuirse erróneamente al analito.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, selectividad de la gravimetría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Inconvenientes:** lenta (horas o días), poco sensible (no sirve para trazas), consume muestra abundante, muy sensible a interferencias que coprecipitan."
+    },
+    {
+      "id": "t21-q98",
+      "pregunta": "¿Qué representa dimensionalmente el factor gravimétrico si ambas masas se expresan en la misma unidad?",
+      "opciones": [
+        "Una concentración en mol/L",
+        "Un volumen por unidad de tiempo",
+        "Una relación de masas sin dimensión"
+      ],
+      "correcta": 2,
+      "explicacion": "El cociente entre masas molares y coeficientes da una relación multiplicativa adimensional.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, factor gravimétrico · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**F = (a · masa molar del analito) / (b · masa molar del precipitado)**"
+    },
+    {
+      "id": "t21-q99",
+      "pregunta": "¿De qué depende el factor gravimétrico para un analito y forma de pesada definidos?",
+      "opciones": [
+        "De la estequiometría y las masas molares",
+        "Del volumen exterior del crisol",
+        "De la marca de la estufa"
+      ],
+      "correcta": 0,
+      "explicacion": "Su valor no se elige por el equipo utilizado, sino por la relación química entre las especies.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, factor gravimétrico · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**F = (a · masa molar del analito) / (b · masa molar del precipitado)**"
+    },
+    {
+      "id": "t21-q100",
+      "pregunta": "¿Puede conservarse sin revisión el mismo factor si se cambia la especie final que se pesa?",
+      "opciones": [
+        "Sí; todo precipitado tiene factor uno",
+        "No; hay que recalcularlo para la nueva fórmula",
+        "Sí; solo depende de la muestra original"
+      ],
+      "correcta": 1,
+      "explicacion": "Una nueva especie pesada cambia la relación estequiométrica y de masas molares.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, factor gravimétrico · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**F = (a · masa molar del analito) / (b · masa molar del precipitado)**"
+    },
+    {
+      "id": "t21-q101",
+      "pregunta": "Si se conoce la masa de analito y el factor F, ¿cómo se obtiene la masa correspondiente de forma pesada?",
+      "opciones": [
+        "Dividiendo la masa de analito entre F",
+        "Multiplicándola por F otra vez",
+        "Sumando F como si fuera una masa"
+      ],
+      "correcta": 0,
+      "explicacion": "Es la operación inversa de masa de analito igual a masa de precipitado por F.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, cálculos gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**masa de analito = masa de precipitado × F**"
+    },
+    {
+      "id": "t21-q102",
+      "pregunta": "Si F es menor que uno, ¿cómo se compara la masa del analito con la masa de su compuesto pesado?",
+      "opciones": [
+        "No guardan relación alguna",
+        "Es siempre mayor",
+        "Es menor para la relación definida"
+      ],
+      "correcta": 2,
+      "explicacion": "El compuesto contiene además del analito otros átomos que contribuyen a su masa.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, cálculos gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**masa de analito = masa de precipitado × F**"
+    },
+    {
+      "id": "t21-q103",
+      "pregunta": "¿En qué condición sería uno el factor de conversión entre analito y forma de pesada?",
+      "opciones": [
+        "Cuando el volumen del vaso sea un litro",
+        "Cuando ambas masas correspondan a la misma especie y cantidad definida",
+        "Cuando la muestra se filtre dos veces"
+      ],
+      "correcta": 1,
+      "explicacion": "El factor uno requiere identidad de la relación de masas, no una operación instrumental particular.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, cálculos gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**masa de analito = masa de precipitado × F**"
+    },
+    {
+      "id": "t21-q104",
+      "pregunta": "Al cuantificar sulfato a partir de BaSO₄, ¿por qué no se atribuye toda la masa del sólido al sulfato?",
+      "opciones": [
+        "Porque el bario no tiene masa molar",
+        "Porque el sulfato desaparece al precipitar",
+        "Porque la masa del bario también forma parte del compuesto"
+      ],
+      "correcta": 2,
+      "explicacion": "La relación M(SO₄)/M(BaSO₄) descuenta la contribución de los demás átomos del compuesto.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sulfato como BaSO₄ · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| SO₄²⁻ | BaSO₄ | M(SO₄²⁻) / M(BaSO₄) |"
+    },
+    {
+      "id": "t21-q105",
+      "pregunta": "Si se omite el coeficiente dos del hierro al convertir Fe₂O₃ en Fe, ¿qué ocurre con la masa calculada de hierro?",
+      "opciones": [
+        "Resulta la mitad de la correcta",
+        "Resulta el doble de la correcta",
+        "No cambia"
+      ],
+      "correcta": 0,
+      "explicacion": "Cada fórmula del óxido contiene dos átomos de hierro; omitirlos infravalora el resultado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, hierro como Fe₂O₃ · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Fe | Fe₂O₃ | 2 · M(Fe) / M(Fe₂O₃) |"
+    },
+    {
+      "id": "t21-q106",
+      "pregunta": "Si se pesa Fe₂O₃ pero se quiere informar hierro elemental, ¿qué magnitud debe entrar en el numerador del factor?",
+      "opciones": [
+        "Solo la masa molar del oxígeno",
+        "Dos veces la masa molar del Fe",
+        "La masa molar completa del Fe₂O₃"
+      ],
+      "correcta": 1,
+      "explicacion": "El numerador representa la cantidad de analito contenida en una cantidad de forma pesada.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, hierro como Fe₂O₃ · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Fe | Fe₂O₃ | 2 · M(Fe) / M(Fe₂O₃) |"
+    },
+    {
+      "id": "t21-q107",
+      "pregunta": "¿Qué conversión corresponde a calcio determinado como CaO?",
+      "opciones": [
+        "Multiplicar m(CaO) por M(Ca)/M(CaO)",
+        "Informar m(CaO) como si toda ella fuera calcio",
+        "Multiplicar por M(CaO)/M(Ca)"
+      ],
+      "correcta": 0,
+      "explicacion": "El óxido tiene una relación uno a uno en moles, pero no en masas.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, calcio como CaO · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Fe | Fe₂O₃ | 2 · M(Fe) / M(Fe₂O₃) |\n| Ca | CaO | M(Ca) / M(CaO) |"
+    },
+    {
+      "id": "t21-q108",
+      "pregunta": "¿Qué masa ocupa el denominador al expresar porcentaje de analito de la muestra original?",
+      "opciones": [
+        "La masa del reactivo precipitante añadido",
+        "La masa del crisol vacío",
+        "La masa de muestra analizada"
+      ],
+      "correcta": 2,
+      "explicacion": "El porcentaje se refiere a la muestra, no al soporte o a la cantidad de reactivo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, expresión de resultados gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**"
+    },
+    {
+      "id": "t21-q109",
+      "pregunta": "¿Qué debe hacerse antes de dividir masas para obtener un porcentaje gravimétrico?",
+      "opciones": [
+        "Sumar sin convertir gramos y miligramos",
+        "Expresarlas en unidades compatibles",
+        "Sustituir todas las masas por volúmenes"
+      ],
+      "correcta": 1,
+      "explicacion": "Una mezcla de unidades introduce un factor de error aunque la fórmula sea correcta.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, expresión de resultados gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**"
+    },
+    {
+      "id": "t21-q110",
+      "pregunta": "Si la masa de analito es 0,025 g en 0,500 g de muestra, ¿qué porcentaje en masa corresponde?",
+      "opciones": [
+        "50 %",
+        "0,05 %",
+        "5 %"
+      ],
+      "correcta": 2,
+      "explicacion": "0,025/0,500 es 0,05 como fracción másica y equivale a 5 %.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, expresión de resultados gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**"
+    },
+    {
+      "id": "t21-q111",
+      "pregunta": "Un cálculo da una fracción másica de 0,12. ¿Cómo se expresa en porcentaje?",
+      "opciones": [
+        "12 %",
+        "0,12 %",
+        "1,2 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Pasar de fracción a porcentaje requiere multiplicar por cien.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, expresión de resultados gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**"
+    },
+    {
+      "id": "t21-q112",
+      "pregunta": "¿Qué error se comete si se usa la masa del precipitado sin F para informar el porcentaje del analito?",
+      "opciones": [
+        "Se elimina toda interferencia química",
+        "Se atribuye al analito también la masa de otros componentes de la forma pesada",
+        "Se corrige automáticamente el sesgo de balanza"
+      ],
+      "correcta": 1,
+      "explicacion": "La masa del compuesto y la masa del analito no suelen ser iguales.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, expresión de resultados gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**% de analito = (masa de precipitado × F / masa de muestra) × 100**"
+    },
+    {
+      "id": "t21-q113",
+      "pregunta": "¿Qué debe incluir un registro que permita comprobar masa constante?",
+      "opciones": [
+        "Pesadas sucesivas tras ciclos de tratamiento y enfriamiento, con el criterio del método",
+        "Una única lectura final sin antecedentes",
+        "Solo la temperatura nominal de la estufa"
+      ],
+      "correcta": 0,
+      "explicacion": "La estabilidad debe demostrarse comparando resultados consecutivos bajo las condiciones establecidas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, secado y pesada gravimétrica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**7. Enfriamiento en desecador y pesada hasta masa constante.** El crisol caliente no se pesa nunca: el aire caliente asciende y falsea la lectura. **Masa constante** significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+    },
+    {
+      "id": "t21-q114",
+      "pregunta": "Si dos masas sucesivas difieren 0,7 mg y el método permite como máximo 0,5 mg, ¿puede darse por alcanzada masa constante?",
+      "opciones": [
+        "Sí, basta con que la diferencia no sea visible",
+        "Sí, porque ambas pesan menos de un gramo",
+        "No, la diferencia excede el criterio"
+      ],
+      "correcta": 2,
+      "explicacion": "La aceptación depende de la tolerancia del método, no de una valoración subjetiva.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, secado y pesada gravimétrica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**7. Enfriamiento en desecador y pesada hasta masa constante.** El crisol caliente no se pesa nunca: el aire caliente asciende y falsea la lectura. **Masa constante** significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+    },
+    {
+      "id": "t21-q115",
+      "pregunta": "Si se pierde parte del analito como precipitado disuelto durante el lavado, ¿qué efecto se espera si no hay otros errores?",
+      "opciones": [
+        "Resultado alto por aumentar la recuperación",
+        "Resultado bajo por recuperar menos masa de analito",
+        "Resultado correcto porque el factor lo compensa"
+      ],
+      "correcta": 1,
+      "explicacion": "El factor convierte la masa recuperada; no recupera analito perdido.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, errores gravimétricos · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Pérdidas por solubilidad** | Parte del precipitado se queda disuelta en las aguas madres o en el líquido de lavado | Por defecto |"
+    },
+    {
+      "id": "t21-q116",
+      "pregunta": "Un contaminante añade masa al sólido sin aportar el analito buscado. Si todo se convierte como precipitado puro, ¿qué sesgo produce?",
+      "opciones": [
+        "Ninguno necesariamente",
+        "Negativo necesariamente",
+        "Positivo"
+      ],
+      "correcta": 2,
+      "explicacion": "La masa ajena se interpreta como forma pesada del analito y eleva el resultado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, contaminación del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Coprecipitación por adsorción superficial** | Iones ajenos se pegan a la superficie del precipitado | Por exceso (pesa de más) |"
+    },
+    {
+      "id": "t21-q117",
+      "pregunta": "¿Qué debe comprobarse antes del cálculo estequiométrico final?",
+      "opciones": [
+        "Que la masa corresponda a la forma de pesada prevista y estable",
+        "Solo que el sólido tenga el color esperado",
+        "Solo que se haya añadido mucho reactivo"
+      ],
+      "correcta": 0,
+      "explicacion": "Una fórmula correcta no corrige una forma pesada mal preparada o de composición incierta.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, etapas del análisis gravimétrico · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**8. Cálculo** con el factor gravimétrico."
+    },
+    {
+      "id": "t21-q118",
+      "pregunta": "En una pérdida por desecación, ¿qué dos masas se comparan para obtener la pérdida, descontando el recipiente?",
+      "opciones": [
+        "Disolvente añadido y agua de lavado",
+        "Muestra antes del tratamiento y residuo después",
+        "Recipiente vacío y reactivo precipitante"
+      ],
+      "correcta": 1,
+      "explicacion": "La diferencia representa la masa eliminada durante el tratamiento especificado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, gravimetría por volatilización · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Método indirecto:** se pesa la muestra antes y después, y el analito se calcula **por diferencia de masa**. Pesa lo que queda. Es, con diferencia, el más habitual: todas las determinaciones de humedad, materia seca y sólidos en suspensión son indirectas."
+    },
+    {
+      "id": "t21-q119",
+      "pregunta": "Una muestra de 10 g deja 7 g de materia seca. Si la pérdida se atribuye al agua por el método, ¿qué humedad en base húmeda presenta?",
+      "opciones": [
+        "30 %",
+        "70 %",
+        "42,9 %"
+      ],
+      "correcta": 0,
+      "explicacion": "La pérdida es 3 g y se divide entre los 10 g iniciales, no entre el residuo seco.",
+      "fuente": "UNE-EN 12880:2001, objeto del método; apunte, tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Humedad y materia seca (lodos) | Gravimetría por desecación | **UNE-EN 12880:2001** | % o g/kg | Estufa a **105 °C** hasta que no varíe la masa; aplicable a lodos líquidos, pastosos y sólidos |"
+    },
+    {
+      "id": "t21-q120",
+      "pregunta": "¿Por qué debe indicarse la base de expresión al informar humedad o materia seca?",
+      "opciones": [
+        "Porque la base sustituye la necesidad de pesar",
+        "Porque todos los porcentajes son equivalentes",
+        "Porque usar masa húmeda o seca como denominador cambia el valor"
+      ],
+      "correcta": 2,
+      "explicacion": "El denominador define el significado del porcentaje y debe mantenerse en los cálculos.",
+      "fuente": "UNE-EN 12880:2001, objeto del método; apunte, tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Humedad y materia seca (lodos) | Gravimetría por desecación | **UNE-EN 12880:2001** | % o g/kg | Estufa a **105 °C** hasta que no varíe la masa; aplicable a lodos líquidos, pastosos y sólidos |"
+    },
+    {
+      "id": "t21-q121",
+      "pregunta": "Se retienen 12 mg de sólidos al filtrar 0,250 L. ¿Qué concentración corresponde, suponiendo el método correctamente realizado?",
+      "opciones": [
+        "3 mg/L",
+        "48 mg/L",
+        "0,048 mg/L"
+      ],
+      "correcta": 1,
+      "explicacion": "La concentración es la masa neta retenida dividida por el volumen de muestra filtrado.",
+      "fuente": "UNE-EN 872:2006, expresión de sólidos en suspensión · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Sólidos en suspensión (agua bruta y residual) | Gravimetría por filtración y desecación (volatilización indirecta) | **UNE-EN 872:2006** | mg/L | Filtro de **fibra de vidrio de borosilicato sin aglomerante**; filtración a vacío o presión; secado a **105 °C ± 2 °C**; pesada hasta masa constante |"
+    },
+    {
+      "id": "t21-q122",
+      "pregunta": "Para la misma forma de pesada y F constante, si la masa recuperada se duplica, ¿qué ocurre con la masa de analito calculada?",
+      "opciones": [
+        "Permanece igual",
+        "Se reduce a la mitad",
+        "Se duplica"
+      ],
+      "correcta": 2,
+      "explicacion": "La relación es lineal respecto a la masa de forma pesada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, proporcionalidad del cálculo gravimétrico · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**masa de analito = masa de precipitado × F**"
+    },
+    {
+      "id": "t21-q123",
+      "pregunta": "Dos pesadas idénticas de un precipitado contaminado, ¿demuestran por sí mismas exactitud química?",
+      "opciones": [
+        "No; repetición concordante y ausencia de sesgo son cosas diferentes",
+        "Sí; repetir un valor elimina cualquier sesgo",
+        "Sí; la contaminación solo afecta al volumen"
+      ],
+      "correcta": 0,
+      "explicacion": "Puede obtenerse buena repetibilidad con un error sistemático de preparación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calidad del resultado gravimétrico · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Su exactitud depende de la balanza y del comportamiento del precipitado**, no de un detector. Bien hecha, una gravimetría clásica es de las técnicas más exactas que hay; mal hecha, arrastra errores que ningún cálculo corrige."
+    },
+    {
+      "id": "t21-q124",
+      "pregunta": "¿Qué distingue cuantificar un precipitado por gravimetría de observar únicamente que aparece turbidez?",
+      "opciones": [
+        "Solo comprobar su presencia visual",
+        "La obtención de una masa relacionada cuantitativamente con el analito",
+        "Solo anotar su color"
+      ],
+      "correcta": 1,
+      "explicacion": "Una observación cualitativa no determina la cantidad mediante masa y estequiometría.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, concepto de gravimetría · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El **análisis gravimétrico** determina la cantidad de analito **midiendo la masa** de una sustancia de composición conocida que lo contiene o que deriva de él estequiométricamente."
+    },
+    {
+      "id": "t21-q125",
+      "pregunta": "¿Qué patrón sigue siendo pertinente aunque no se prepare una curva con patrones del analito?",
+      "opciones": [
+        "Un patrón de masa apropiado para controlar o calibrar la balanza",
+        "Ninguno: todo patrón queda prohibido",
+        "Solo un patrón de longitud"
+      ],
+      "correcta": 0,
+      "explicacion": "No necesitar patrones del analito no elimina la referencia metrológica de la magnitud medida.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, características de métodos gravimétricos · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "**Ventajas:** exactitud alta, instrumentación barata, no requiere patrones del analito, resultados trazables al kilogramo."
+    },
+    {
+      "id": "t21-q126",
+      "pregunta": "¿Qué accesorio se usa para cubrir el vaso durante precipitación o digestión?",
+      "opciones": [
+        "Pesa patrón",
+        "Papel milimetrado",
+        "Vidrio de reloj"
+      ],
+      "correcta": 2,
+      "explicacion": "La cubierta forma parte del montaje de preparación y no es el patrón de medida.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, material de gravimetría · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| ![Vaso de precipitados](material:vaso-precipitados) | Recipiente donde se precipita y se digiere | Se cubre con vidrio de reloj; nunca se pesa en él el precipitado final |"
+    },
+    {
+      "id": "t21-q127",
+      "pregunta": "Se va a calcinar un precipitado junto al soporte de filtración. ¿Qué propiedad del papel interesa especialmente?",
+      "opciones": [
+        "Que deje abundante residuo mineral",
+        "Contenido de cenizas despreciable para el método",
+        "Que sea impermeable al líquido"
+      ],
+      "correcta": 1,
+      "explicacion": "Las cenizas del soporte no deben confundirse con la masa de la forma pesada.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, filtración gravimétrica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Papel de filtro sin cenizas.** Deja un residuo de ceniza despreciable al calcinarlo, así que el precipitado se calcina *con* el papel. Se clasifica por velocidad de filtrado y retención (las «bandas» de los catálogos: negra o rápida para precipitados gelatinosos, azul o lenta para precipitados finos y cristalinos)."
+    },
+    {
+      "id": "t21-q128",
+      "pregunta": "¿Qué problema provoca usar papel con residuo de ceniza importante sin corregirlo?",
+      "opciones": [
+        "Vuelve innecesario el crisol",
+        "Elimina toda la humedad sin calentamiento",
+        "Añade masa ajena al precipitado final"
+      ],
+      "correcta": 2,
+      "explicacion": "El soporte puede aportar un blanco que sesga el resultado si no se controla.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, filtración gravimétrica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Papel de filtro sin cenizas.** Deja un residuo de ceniza despreciable al calcinarlo, así que el precipitado se calcina *con* el papel. Se clasifica por velocidad de filtrado y retención (las «bandas» de los catálogos: negra o rápida para precipitados gelatinosos, azul o lenta para precipitados finos y cristalinos)."
+    },
+    {
+      "id": "t21-q129",
+      "pregunta": "¿Qué propiedades deben distinguirse al elegir papel de filtro cuantitativo?",
+      "opciones": [
+        "Velocidad de filtrado y retención de partículas",
+        "Solo color exterior de la caja",
+        "Solo longitud del cuello del vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "Un filtrado rápido no garantiza retener las partículas que interesan.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, selección del filtro · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Papel de filtro sin cenizas.** Deja un residuo de ceniza despreciable al calcinarlo, así que el precipitado se calcina *con* el papel. Se clasifica por velocidad de filtrado y retención (las «bandas» de los catálogos: negra o rápida para precipitados gelatinosos, azul o lenta para precipitados finos y cristalinos)."
+    },
+    {
+      "id": "t21-q130",
+      "pregunta": "Un filtrado sale turbio por paso de partículas del precipitado. ¿Qué selección debe revisarse?",
+      "opciones": [
+        "La clase de pesa usada al ajustar",
+        "La retención del filtro para ese tamaño de partícula",
+        "El color de la mufla"
+      ],
+      "correcta": 1,
+      "explicacion": "La pérdida de sólido a través del filtro reduce la recuperación del analito.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El tamaño de poro debe **retener las partículas del precipitado sin hacer innecesariamente lenta la filtración**. Un filtro demasiado abierto deja pasar sólido y causa pérdida de analito; uno demasiado cerrado puede colmatarse. La velocidad comercial y la retención no sustituyen la comprobación de compatibilidad química y térmica del soporte con el método."
+    },
+    {
+      "id": "t21-q131",
+      "pregunta": "¿Qué inconveniente puede causar elegir un filtro innecesariamente cerrado para el precipitado?",
+      "opciones": [
+        "Colmatación y filtración excesivamente lenta",
+        "Conversión automática del sólido en gas",
+        "Aumento del alcance máximo de la balanza"
+      ],
+      "correcta": 0,
+      "explicacion": "La selección equilibra retención y velocidad sin sacrificar recuperación.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El tamaño de poro debe **retener las partículas del precipitado sin hacer innecesariamente lenta la filtración**. Un filtro demasiado abierto deja pasar sólido y causa pérdida de analito; uno demasiado cerrado puede colmatarse. La velocidad comercial y la retención no sustituyen la comprobación de compatibilidad química y térmica del soporte con el método."
+    },
+    {
+      "id": "t21-q132",
+      "pregunta": "¿Qué caracteriza al crisol de Gooch descrito en el tema?",
+      "opciones": [
+        "Recipiente aforado para medir volúmenes exactos",
+        "Vidrio completamente cerrado sin salida",
+        "Fondo perforado con un lecho filtrante y uso con succión"
+      ],
+      "correcta": 2,
+      "explicacion": "El lecho aporta la retención y la succión permite el paso del líquido.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, crisol de Gooch · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisol de Gooch.** Crisol con fondo perforado sobre el que se dispone un lecho filtrante (históricamente amianto, hoy microfibra de vidrio). Se usa con succión."
+    },
+    {
+      "id": "t21-q133",
+      "pregunta": "¿Qué soporte menciona el tema como alternativa actual al amianto histórico del Gooch?",
+      "opciones": [
+        "Mercurio líquido",
+        "Microfibra de vidrio",
+        "Papel de aluminio sin perforar"
+      ],
+      "correcta": 1,
+      "explicacion": "No debe confundirse la descripción histórica con una recomendación de usar amianto.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, soportes filtrantes gravimétricos · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisol de Gooch.** Crisol con fondo perforado sobre el que se dispone un lecho filtrante (históricamente amianto, hoy microfibra de vidrio). Se usa con succión."
+    },
+    {
+      "id": "t21-q134",
+      "pregunta": "¿Qué característica identifica la numeración de porosidad de una placa filtrante?",
+      "opciones": [
+        "El volumen aforado del crisol",
+        "La masa molar del analito",
+        "Su tamaño de poro o capacidad de retención correspondiente"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe seleccionarse una porosidad adecuada a las partículas que se desea retener.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, crisoles filtrantes · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisol filtrante de placa porosa (vidrio o porcelana).** Lleva la placa incorporada, con **porosidad numerada** según el tamaño de poro. Es el más cómodo, pero **no admite calcinación a alta temperatura** si es de vidrio: sólo secado en estufa."
+    },
+    {
+      "id": "t21-q135",
+      "pregunta": "Un procedimiento exige calcinación a alta temperatura. ¿Qué material del tema no debe elegirse como si fuera resistente a mufla por defecto?",
+      "opciones": [
+        "Crisol filtrante de placa porosa de vidrio",
+        "Crisol de porcelana apropiado",
+        "Crisol de platino compatible con el método"
+      ],
+      "correcta": 0,
+      "explicacion": "El vidrio filtrante está destinado a secado dentro de sus límites, no a cualquier calcinación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, compatibilidad térmica del material filtrante · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisol filtrante de placa porosa (vidrio o porcelana).** Lleva la placa incorporada, con **porosidad numerada** según el tamaño de poro. Es el más cómodo, pero **no admite calcinación a alta temperatura** si es de vidrio: sólo secado en estufa."
+    },
+    {
+      "id": "t21-q136",
+      "pregunta": "¿Qué grupo de materiales se cita para crisoles destinados a calcinar en mufla?",
+      "opciones": [
+        "Solo papel de filtro sin soporte",
+        "Porcelana, sílice o platino según el método",
+        "Cualquier plástico de embalaje"
+      ],
+      "correcta": 1,
+      "explicacion": "La elección debe soportar el tratamiento térmico y ser compatible con el precipitado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, crisoles de calcinación · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisoles de porcelana, sílice o platino.** Para calcinar en mufla. El platino es el de mejor comportamiento y el más caro."
+    },
+    {
+      "id": "t21-q137",
+      "pregunta": "¿Qué equipo se elige para un secado a temperatura moderada previsto por el método?",
+      "opciones": [
+        "Estufa de desecación",
+        "Bureta",
+        "Balanza como fuente de calor"
+      ],
+      "correcta": 0,
+      "explicacion": "Secar y pesar son operaciones diferentes y requieren equipos con funciones distintas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, secado de precipitados · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Estufa de desecación.** Secado a temperatura moderada, típicamente 105 °C."
+    },
+    {
+      "id": "t21-q138",
+      "pregunta": "¿Qué distingue la función habitual de una mufla frente a una estufa de secado?",
+      "opciones": [
+        "Mide volumen aforado",
+        "Mide masa con mayor resolución",
+        "Permite tratamientos de calcinación a mayor temperatura"
+      ],
+      "correcta": 2,
+      "explicacion": "La calcinación puede transformar químicamente la especie y no es solo un secado suave.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calcinación gravimétrica · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Crisoles de porcelana, sílice o platino.** Para calcinar en mufla. El platino es el de mejor comportamiento y el más caro."
+    },
+    {
+      "id": "t21-q139",
+      "pregunta": "¿Por qué no debe fijarse una temperatura única de mufla para todos los precipitados?",
+      "opciones": [
+        "Porque la temperatura no afecta al producto",
+        "La especie final requerida y el método determinan el tratamiento",
+        "Porque toda calcinación se realiza a temperatura ambiente"
+      ],
+      "correcta": 1,
+      "explicacion": "Un tratamiento insuficiente o excesivo puede impedir obtener la composición prevista.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, tratamiento térmico de la forma pesada · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Mufla (horno de calcinación).** Calcinación a alta temperatura, típicamente 500-1000 °C según el método."
+    },
+    {
+      "id": "t21-q140",
+      "pregunta": "¿Qué condición busca el desecador durante el enfriamiento del crisol?",
+      "opciones": [
+        "Reemplazar la balanza",
+        "Aumentar la humedad hasta saturación",
+        "Limitar la recuperación de humedad del ambiente"
+      ],
+      "correcta": 2,
+      "explicacion": "El enfriamiento debe permitir pesar sin convección y sin rehumedecer el sólido.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, enfriamiento del crisol · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Desecador.** Enfría el crisol sin que recupere humedad. Lleva un **desecante** (gel de sílice, cloruro cálcico anhidro, pentóxido de fósforo). La llave se abre despacio para no arrastrar el precipitado con la entrada de aire."
+    },
+    {
+      "id": "t21-q141",
+      "pregunta": "¿Qué material de los citados actúa como desecante dentro del desecador?",
+      "opciones": [
+        "Gel de sílice",
+        "Disolución de muestra",
+        "Vidrio de reloj sin otro material"
+      ],
+      "correcta": 0,
+      "explicacion": "El desecante ayuda a mantener baja la humedad interior durante conservación y enfriamiento.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, agentes desecantes · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Desecador.** Enfría el crisol sin que recupere humedad. Lleva un **desecante** (gel de sílice, cloruro cálcico anhidro, pentóxido de fósforo). La llave se abre despacio para no arrastrar el precipitado con la entrada de aire."
+    },
+    {
+      "id": "t21-q142",
+      "pregunta": "Al abrir bruscamente un desecador, se arrastra parte de un sólido fino. ¿Qué consecuencia analítica puede producirse?",
+      "opciones": [
+        "Corrección automática del error de tara",
+        "Pérdida de masa y resultado bajo",
+        "Aumento real de la cantidad de analito"
+      ],
+      "correcta": 1,
+      "explicacion": "La entrada de aire puede causar pérdidas físicas; por eso se iguala la presión con cuidado.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, manejo del desecador · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Desecador.** Enfría el crisol sin que recupere humedad. Lleva un **desecante** (gel de sílice, cloruro cálcico anhidro, pentóxido de fósforo). La llave se abre despacio para no arrastrar el precipitado con la entrada de aire."
+    },
+    {
+      "id": "t21-q143",
+      "pregunta": "¿Por qué se emplean pinzas para manipular un crisol ya preparado para pesada?",
+      "opciones": [
+        "Para no aportar grasa ni humedad de los dedos",
+        "Para corregir la estequiometría",
+        "Para aumentar su porosidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La contaminación por manipulación puede modificar una masa que se pretende determinar con precisión.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, manipulación de material de pesada · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Pinzas de crisol.** Un crisol **nunca se toca con los dedos**: la grasa y la humedad de la piel pesan."
+    },
+    {
+      "id": "t21-q144",
+      "pregunta": "¿Qué recipiente conviene para una muestra que toma humedad rápidamente durante la pesada?",
+      "opciones": [
+        "Probeta usada como patrón de masa",
+        "Papel abierto expuesto a la corriente de aire",
+        "Pesasustancias con tapa"
+      ],
+      "correcta": 2,
+      "explicacion": "El cierre limita el intercambio con el ambiente mientras se determina la masa.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pesada de muestras higroscópicas · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Vidrio de reloj y pesasustancias.** Para pesar la muestra; el pesasustancias con tapa, si la muestra es higroscópica."
+    },
+    {
+      "id": "t21-q145",
+      "pregunta": "¿Qué accesorio ayuda a recuperar precipitado adherido a las paredes del vaso?",
+      "opciones": [
+        "Pesa de calibración",
+        "Varilla con extremo de goma",
+        "Termómetro usado como raspador"
+      ],
+      "correcta": 1,
+      "explicacion": "La transferencia debe recuperar el sólido sin contaminarlo ni dañar innecesariamente el material.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, transferencia de precipitados · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Varilla de vidrio con goma (policía de goma).** Para arrastrar los restos de precipitado adheridos a las paredes."
+    },
+    {
+      "id": "t21-q146",
+      "pregunta": "En la filtración clásica descrita, ¿por qué puede pasarse primero el sobrenadante por el filtro dejando el sólido en el vaso?",
+      "opciones": [
+        "Para provocar peptización deliberada",
+        "Para desechar toda la muestra sin filtrar",
+        "Para evitar una colmatación temprana"
+      ],
+      "correcta": 2,
+      "explicacion": "Después se transfiere cuantitativamente el sólido; decantar no significa perderlo.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En la filtración clásica puede **decantarse primero el sobrenadante a través del filtro**, reservando inicialmente el sólido en el vaso para evitar colmatación temprana. Después se lava y transfiere cuantitativamente el precipitado, recuperando las partículas adheridas con la varilla de goma y el líquido de lavado previsto. Lo decantado también pasa por el filtro: no se desecha directamente. Esta explicación se contrasta con **David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate**, edición abierta de LibreTexts (CC BY-NC-SA 4.0): https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_Volume_I_(Harvey)/08:_Gravimetric_Methods/8.02:_Precipitation_Gravimetry"
+    },
+    {
+      "id": "t21-q147",
+      "pregunta": "¿Dónde debe ir el sobrenadante decantado en esa operación?",
+      "opciones": [
+        "A través del filtro previsto",
+        "Directamente al desagüe como si no contuviera partículas",
+        "Al recipiente de las pesas patrón"
+      ],
+      "correcta": 0,
+      "explicacion": "El filtro conserva posibles partículas arrastradas y mantiene la recuperación cuantitativa.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En la filtración clásica puede **decantarse primero el sobrenadante a través del filtro**, reservando inicialmente el sólido en el vaso para evitar colmatación temprana. Después se lava y transfiere cuantitativamente el precipitado, recuperando las partículas adheridas con la varilla de goma y el líquido de lavado previsto. Lo decantado también pasa por el filtro: no se desecha directamente. Esta explicación se contrasta con **David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate**, edición abierta de LibreTexts (CC BY-NC-SA 4.0): https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_Volume_I_(Harvey)/08:_Gravimetric_Methods/8.02:_Precipitation_Gravimetry"
+    },
+    {
+      "id": "t21-q148",
+      "pregunta": "Quedan partículas visibles en el vaso tras transferir un precipitado. ¿Qué condición no se ha cumplido?",
+      "opciones": [
+        "Enrase de un matraz aforado",
+        "Transferencia cuantitativa del sólido",
+        "Nivelación de la balanza"
+      ],
+      "correcta": 1,
+      "explicacion": "Dejar analito fuera de la fracción que se pesará causa una pérdida de recuperación.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En la filtración clásica puede **decantarse primero el sobrenadante a través del filtro**, reservando inicialmente el sólido en el vaso para evitar colmatación temprana. Después se lava y transfiere cuantitativamente el precipitado, recuperando las partículas adheridas con la varilla de goma y el líquido de lavado previsto. Lo decantado también pasa por el filtro: no se desecha directamente. Esta explicación se contrasta con **David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate**, edición abierta de LibreTexts (CC BY-NC-SA 4.0): https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_Volume_I_(Harvey)/08:_Gravimetric_Methods/8.02:_Precipitation_Gravimetry"
+    },
+    {
+      "id": "t21-q149",
+      "pregunta": "¿Qué líquido debe emplearse para completar la transferencia del precipitado?",
+      "opciones": [
+        "El de lavado previsto y compatible con el método",
+        "Cualquier disolvente sin revisar solubilidad",
+        "Siempre el que tenga mayor poder disolvente sobre el sólido"
+      ],
+      "correcta": 0,
+      "explicacion": "La transferencia debe recuperar partículas sin disolver de forma indebida el analito.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate; Rinsing the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En la filtración clásica puede **decantarse primero el sobrenadante a través del filtro**, reservando inicialmente el sólido en el vaso para evitar colmatación temprana. Después se lava y transfiere cuantitativamente el precipitado, recuperando las partículas adheridas con la varilla de goma y el líquido de lavado previsto. Lo decantado también pasa por el filtro: no se desecha directamente. Esta explicación se contrasta con **David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate**, edición abierta de LibreTexts (CC BY-NC-SA 4.0): https://chem.libretexts.org/Bookshelves/Analytical_Chemistry/Analytical_Chemistry_2.1_by_David_Harvey/Analytical_Chemistry_Volume_I_(Harvey)/08:_Gravimetric_Methods/8.02:_Precipitation_Gravimetry"
+    },
+    {
+      "id": "t21-q150",
+      "pregunta": "Una adición de agua solo sirve para lavar y no entra en el cálculo final. ¿Qué explica que no se exija siempre material aforado de clase A?",
+      "opciones": [
+        "Que la balanza pueda medir litros directamente",
+        "Que nunca haya que controlar el lavado",
+        "Que ese volumen no es la magnitud crítica de cuantificación"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe distinguirse un volumen auxiliar de uno que determine cuantitativamente el resultado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, material general en gravimetría · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "En gravimetría **el volumen no es una magnitud crítica**: lo que se mide es masa. Por eso el material de vidrio que se usa es **graduado o de uso general, no aforado**. Ésta es la diferencia de fondo con el tema 22, donde el material aforado de clase A es el corazón del método."
+    },
+    {
+      "id": "t21-q151",
+      "pregunta": "¿Qué uso de una probeta es coherente con una gravimetría clásica?",
+      "opciones": [
+        "Sustituir la pesada final del precipitado",
+        "Añadir una cantidad auxiliar de reactivo o agua de lavado con exactitud suficiente",
+        "Calibrar la balanza leyendo su menisco"
+      ],
+      "correcta": 1,
+      "explicacion": "El material graduado puede bastar cuando el volumen no forma parte de la ecuación de medida.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, material graduado · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| ![Probeta](material:probeta) | Añadir reactivos y agua de lavado | **Graduada**: exactitud de volumen suficiente, porque el volumen no entra en el cálculo |"
+    },
+    {
+      "id": "t21-q152",
+      "pregunta": "¿Por qué debe distinguirse entre forma precipitada y forma pesada?",
+      "opciones": [
+        "La forma pesada nunca tiene composición conocida",
+        "Siempre tienen fórmulas idénticas",
+        "El tratamiento térmico puede transformar una en otra"
+      ],
+      "correcta": 2,
+      "explicacion": "El cálculo usa la fórmula del producto final efectivamente pesado.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, forma de precipitación y forma de pesada · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**6. Secado o calcinación.** Se seca en estufa o se calcina en mufla, hasta transformar el precipitado en una **especie de composición conocida y estequiométrica**. No siempre coincide con lo precipitado: el hidróxido de hierro(III) hidratado se precipita como tal y se pesa como **Fe₂O₃**."
+    },
+    {
+      "id": "t21-q153",
+      "pregunta": "Aunque un crisol caliente no parezca húmedo, ¿por qué no debe pesarse directamente al sacarlo de la estufa?",
+      "opciones": [
+        "Las corrientes de convección alteran la indicación",
+        "El calor aumenta el alcance nominal de la balanza",
+        "Su masa pasa obligatoriamente a ser cero"
+      ],
+      "correcta": 0,
+      "explicacion": "El acondicionamiento térmico es necesario además del secado del sólido.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pesada de material caliente · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**7. Enfriamiento en desecador y pesada hasta masa constante.** El crisol caliente no se pesa nunca: el aire caliente asciende y falsea la lectura. **Masa constante** significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+    },
+    {
+      "id": "t21-q154",
+      "pregunta": "¿Qué secuencia permite comprobar estabilidad de la masa según el método?",
+      "opciones": [
+        "Promediar una lectura con el volumen del crisol",
+        "Repetir calentamiento, enfriamiento y pesada",
+        "Pesar varias veces el objeto caliente sin secarlo más"
+      ],
+      "correcta": 1,
+      "explicacion": "Las lecturas se comparan después de ciclos de preparación equivalentes.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, control de masa constante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**7. Enfriamiento en desecador y pesada hasta masa constante.** El crisol caliente no se pesa nunca: el aire caliente asciende y falsea la lectura. **Masa constante** significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+    },
+    {
+      "id": "t21-q155",
+      "pregunta": "¿Por qué la retención nominal no basta para escoger cualquier soporte filtrante?",
+      "opciones": [
+        "También debe resistir el medio químico y el tratamiento térmico previstos",
+        "Porque todos los soportes resisten igual cualquier medio",
+        "Porque la retención solo depende de la balanza"
+      ],
+      "correcta": 0,
+      "explicacion": "Una filtración adecuada exige conservar tanto partículas como integridad del soporte.",
+      "fuente": "David Harvey, Analytical Chemistry 2.1, §8.2, Filtering the Precipitate y Drying the Precipitate · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "El tamaño de poro debe **retener las partículas del precipitado sin hacer innecesariamente lenta la filtración**. Un filtro demasiado abierto deja pasar sólido y causa pérdida de analito; uno demasiado cerrado puede colmatarse. La velocidad comercial y la retención no sustituyen la comprobación de compatibilidad química y térmica del soporte con el método."
+    },
+    {
+      "id": "t21-q156",
+      "pregunta": "En la expresión (Q − S)/S, ¿qué representa S?",
+      "opciones": [
+        "Volumen total del desecador",
+        "Masa del recipiente vacío",
+        "Solubilidad de equilibrio en las condiciones consideradas"
+      ],
+      "correcta": 2,
+      "explicacion": "No es una concentración instantánea arbitraria: corresponde al equilibrio del soluto.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sobresaturación relativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Sobresaturación relativa = (Q − S) / S**, donde *Q* es la concentración instantánea del soluto y *S* su solubilidad de equilibrio."
+    },
+    {
+      "id": "t21-q157",
+      "pregunta": "Si Q coincide con S, ¿qué valor tiene la sobresaturación relativa?",
+      "opciones": [
+        "Uno",
+        "Cero",
+        "Cien"
+      ],
+      "correcta": 1,
+      "explicacion": "Al no existir exceso de concentración sobre la solubilidad, Q − S es cero.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sobresaturación relativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Sobresaturación relativa = (Q − S) / S**, donde *Q* es la concentración instantánea del soluto y *S* su solubilidad de equilibrio."
+    },
+    {
+      "id": "t21-q158",
+      "pregunta": "Si aumenta Q manteniendo S constante, ¿qué ocurre con (Q − S)/S?",
+      "opciones": [
+        "No varía",
+        "Disminuye necesariamente",
+        "Aumenta"
+      ],
+      "correcta": 2,
+      "explicacion": "El exceso relativo aumenta si crece la concentración instantánea sin cambiar la solubilidad.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sobresaturación relativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Sobresaturación relativa = (Q − S) / S**, donde *Q* es la concentración instantánea del soluto y *S* su solubilidad de equilibrio."
+    },
+    {
+      "id": "t21-q159",
+      "pregunta": "Si aumenta S manteniendo Q constante y todavía Q es mayor que S, ¿qué pasa con la sobresaturación relativa?",
+      "opciones": [
+        "Disminuye",
+        "Aumenta siempre",
+        "No cambia por definición"
+      ],
+      "correcta": 0,
+      "explicacion": "El cociente Q/S − 1 se hace menor al aumentar S.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sobresaturación relativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Sobresaturación relativa = (Q − S) / S**, donde *Q* es la concentración instantánea del soluto y *S* su solubilidad de equilibrio."
+    },
+    {
+      "id": "t21-q160",
+      "pregunta": "Si Q y S se multiplican por el mismo factor positivo, ¿cómo cambia la sobresaturación relativa?",
+      "opciones": [
+        "Se vuelve siempre cero",
+        "No cambia",
+        "Se multiplica necesariamente por ese factor"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una relación adimensional y permanece igual ante un cambio proporcional de ambas magnitudes.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, sobresaturación relativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**Sobresaturación relativa = (Q − S) / S**, donde *Q* es la concentración instantánea del soluto y *S* su solubilidad de equilibrio."
+    },
+    {
+      "id": "t21-q161",
+      "pregunta": "¿Qué proceso crea nuevos núcleos en vez de aumentar el tamaño de partículas ya existentes?",
+      "opciones": [
+        "Nucleación",
+        "Digestión en desecador",
+        "Tara"
+      ],
+      "correcta": 0,
+      "explicacion": "La competencia entre crear núcleos y hacer crecer partículas condiciona el tamaño final.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, formación del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Sobresaturación relativa alta** → predomina la **nucleación** → muchísimos núcleos → precipitado **coloidal**, de partícula muy fina, difícil de filtrar."
+    },
+    {
+      "id": "t21-q162",
+      "pregunta": "¿Qué proceso incorpora material a partículas de precipitado que ya existen?",
+      "opciones": [
+        "Verificación metrológica",
+        "Peptización como formación de núcleos",
+        "Crecimiento de partícula"
+      ],
+      "correcta": 2,
+      "explicacion": "Favorecer crecimiento frente a crear muchos núcleos ayuda a obtener partículas más filtrables.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, formación del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Sobresaturación relativa baja** → predomina el **crecimiento de partícula** → precipitado **cristalino**, de partícula grande, fácil de filtrar y lavar."
+    },
+    {
+      "id": "t21-q163",
+      "pregunta": "Una adición brusca genera muchas partículas muy finas difíciles de filtrar. ¿Qué mecanismo ha predominado?",
+      "opciones": [
+        "Tara frente a calibración",
+        "Nucleación frente a crecimiento",
+        "Calcinación frente a digestión"
+      ],
+      "correcta": 1,
+      "explicacion": "La formación simultánea de muchos núcleos reparte el sólido entre partículas pequeñas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, sobresaturación y tamaño de partícula · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Sobresaturación relativa alta** → predomina la **nucleación** → muchísimos núcleos → precipitado **coloidal**, de partícula muy fina, difícil de filtrar."
+    },
+    {
+      "id": "t21-q164",
+      "pregunta": "¿Qué característica interesa en un precipitado que debe separarse y lavarse cuantitativamente?",
+      "opciones": [
+        "Composición variable entre pesadas",
+        "Partículas tan finas que atraviesen el filtro",
+        "Partículas suficientemente grandes y fácilmente filtrables"
+      ],
+      "correcta": 2,
+      "explicacion": "El tamaño facilita separar el analito sin pérdidas físicas excesivas.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, precipitación controlada · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Sobresaturación relativa baja** → predomina el **crecimiento de partícula** → precipitado **cristalino**, de partícula grande, fácil de filtrar y lavar."
+    },
+    {
+      "id": "t21-q165",
+      "pregunta": "¿Por qué conviene agitar durante una adición lenta del precipitante?",
+      "opciones": [
+        "Para evitar concentraciones locales excesivas",
+        "Para aumentar deliberadamente el exceso local sin mezclar",
+        "Para sustituir el control de composición del sólido"
+      ],
+      "correcta": 0,
+      "explicacion": "La mezcla distribuye el reactivo y ayuda a controlar la sobresaturación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, adición de precipitante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La disolución diluida y la adición lenta con agitación reducen las concentraciones locales que favorecen nucleación excesiva. La precipitación en caliente se recomienda **cuando el aumento de temperatura eleva la solubilidad en esas condiciones**; no toda sustancia tiene la misma dependencia térmica. El **pH modifica solubilidad y selectividad**: debe ajustarse para recuperar el analito sin precipitar innecesariamente interferentes. Una separación cuantitativa busca recuperar prácticamente todo el analito, no solo producir sólido visible."
+    },
+    {
+      "id": "t21-q166",
+      "pregunta": "¿Qué efecto persigue la dilución al preparar una precipitación cristalina?",
+      "opciones": [
+        "Cambiar la masa molar del precipitado",
+        "Reducir la concentración instantánea y la sobresaturación local",
+        "Eliminar la necesidad de recuperar todo el analito"
+      ],
+      "correcta": 1,
+      "explicacion": "La dilución modifica concentraciones, no la cantidad total de analito si no hay pérdidas.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, control de sobresaturación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "De ahí las cuatro maniobras clásicas para bajar la sobresaturación: disolución **diluida**, adición del precipitante **lenta y con agitación**, precipitación **en caliente** (sube *S*) y control del **pH** para no precipitar de golpe. La versión refinada es la **precipitación en disolución homogénea**, en la que el precipitante se genera *in situ* poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-q167",
+      "pregunta": "¿Qué condición explica que calentar pueda favorecer partículas mayores al disminuir la sobresaturación?",
+      "opciones": [
+        "Que aumente la solubilidad del sólido en esas condiciones",
+        "Que toda solubilidad sea independiente de temperatura",
+        "Que el calor reduzca siempre la masa molar"
+      ],
+      "correcta": 0,
+      "explicacion": "La recomendación se vincula al comportamiento del sistema, no a una ley universal para todos los sólidos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, temperatura de precipitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La disolución diluida y la adición lenta con agitación reducen las concentraciones locales que favorecen nucleación excesiva. La precipitación en caliente se recomienda **cuando el aumento de temperatura eleva la solubilidad en esas condiciones**; no toda sustancia tiene la misma dependencia térmica. El **pH modifica solubilidad y selectividad**: debe ajustarse para recuperar el analito sin precipitar innecesariamente interferentes. Una separación cuantitativa busca recuperar prácticamente todo el analito, no solo producir sólido visible."
+    },
+    {
+      "id": "t21-q168",
+      "pregunta": "¿Qué debe evitarse al elegir el pH de una separación gravimétrica?",
+      "opciones": [
+        "Que el método indique condiciones específicas",
+        "Que el pH sea reproducible entre muestras",
+        "Que precipiten innecesariamente interferentes o quede analito sin recuperar"
+      ],
+      "correcta": 2,
+      "explicacion": "El control busca tanto recuperación como selectividad.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, control del pH en precipitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La disolución diluida y la adición lenta con agitación reducen las concentraciones locales que favorecen nucleación excesiva. La precipitación en caliente se recomienda **cuando el aumento de temperatura eleva la solubilidad en esas condiciones**; no toda sustancia tiene la misma dependencia térmica. El **pH modifica solubilidad y selectividad**: debe ajustarse para recuperar el analito sin precipitar innecesariamente interferentes. Una separación cuantitativa busca recuperar prácticamente todo el analito, no solo producir sólido visible."
+    },
+    {
+      "id": "t21-q169",
+      "pregunta": "¿Qué ventaja busca generar lentamente el precipitante dentro de la propia disolución?",
+      "opciones": [
+        "Evitar cualquier reacción química",
+        "Controlar su formación y reducir excesos locales",
+        "Prescindir de la composición conocida de la forma pesada"
+      ],
+      "correcta": 1,
+      "explicacion": "La generación gradual favorece condiciones de precipitación más uniformes.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, precipitación homogénea · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "De ahí las cuatro maniobras clásicas para bajar la sobresaturación: disolución **diluida**, adición del precipitante **lenta y con agitación**, precipitación **en caliente** (sube *S*) y control del **pH** para no precipitar de golpe. La versión refinada es la **precipitación en disolución homogénea**, en la que el precipitante se genera *in situ* poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-q170",
+      "pregunta": "¿Qué papel desempeña la hidrólisis de urea en el ejemplo de precipitación homogénea?",
+      "opciones": [
+        "Ser el soporte de filtración",
+        "Actuar como pesa patrón",
+        "Generar gradualmente la especie que permite precipitar"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un ejemplo de generación química progresiva, no de adición instantánea de todo el precipitante.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, ejemplo de precipitación homogénea · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "De ahí las cuatro maniobras clásicas para bajar la sobresaturación: disolución **diluida**, adición del precipitante **lenta y con agitación**, precipitación **en caliente** (sube *S*) y control del **pH** para no precipitar de golpe. La versión refinada es la **precipitación en disolución homogénea**, en la que el precipitante se genera *in situ* poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-q171",
+      "pregunta": "¿Dónde permanece el precipitado durante la digestión clásica?",
+      "opciones": [
+        "En sus aguas madres bajo las condiciones previstas",
+        "Seco dentro de la balanza",
+        "En el estuche de las pesas"
+      ],
+      "correcta": 0,
+      "explicacion": "La digestión implica interacción con la disolución, distinta del secado posterior.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, digestión del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**3. Digestión o envejecimiento.** El precipitado se deja en su aguas madres, en caliente. Las partículas pequeñas, más solubles, se redisuelven y recristalizan sobre las grandes (**maduración de Ostwald**): el precipitado se hace más grueso, más puro y más filtrable."
+    },
+    {
+      "id": "t21-q172",
+      "pregunta": "Durante la maduración de Ostwald, ¿qué transferencia favorece el engrosamiento del precipitado?",
+      "opciones": [
+        "Evaporación de la balanza",
+        "Redisolución de partículas pequeñas y depósito sobre mayores",
+        "Fragmentación de todas las partículas grandes"
+      ],
+      "correcta": 1,
+      "explicacion": "La distinta solubilidad de partículas contribuye al crecimiento durante el envejecimiento controlado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, maduración de Ostwald · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**3. Digestión o envejecimiento.** El precipitado se deja en su aguas madres, en caliente. Las partículas pequeñas, más solubles, se redisuelven y recristalizan sobre las grandes (**maduración de Ostwald**): el precipitado se hace más grueso, más puro y más filtrable."
+    },
+    {
+      "id": "t21-q173",
+      "pregunta": "¿Qué mejora práctica permite esperar de una digestión bien controlada?",
+      "opciones": [
+        "Mejor filtrabilidad y reducción de ciertas impurezas",
+        "Conversión del precipitado en un patrón de masa certificado",
+        "Eliminación de toda necesidad de lavado"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una operación de preparación química, no una garantía absoluta de pureza.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, digestión · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**3. Digestión o envejecimiento.** El precipitado se deja en su aguas madres, en caliente. Las partículas pequeñas, más solubles, se redisuelven y recristalizan sobre las grandes (**maduración de Ostwald**): el precipitado se hace más grueso, más puro y más filtrable."
+    },
+    {
+      "id": "t21-q174",
+      "pregunta": "¿Por qué no debe darse por pura cualquier muestra después de digerir el precipitado?",
+      "opciones": [
+        "Porque solo cambia la clase legal de balanza",
+        "Porque toda digestión introduce siempre analito nuevo",
+        "La digestión no elimina necesariamente inclusiones de la red"
+      ],
+      "correcta": 2,
+      "explicacion": "La contaminación en la estructura puede resistir tratamientos que mejoran superficie y tamaño.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, límites de la digestión · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La digestión mejora el tamaño y puede reducir ciertas impurezas, pero **no garantiza eliminar inclusiones de la red**. Redisolver y reprecipitar puede reducir coprecipitación, con control de las pérdidas por solubilidad. Un reposo excesivo puede favorecer **postprecipitación**, por lo que digestión no significa dejar indefinidamente la muestra. Una forma final de **composición variable, hidratación no controlada o conversión térmica incompleta** impide aplicar correctamente un factor fijo aunque la balanza sea excelente."
+    },
+    {
+      "id": "t21-q175",
+      "pregunta": "¿Por qué no es correcto prolongar indefinidamente el reposo pensando que siempre mejora la pureza?",
+      "opciones": [
+        "La masa molar del analito disminuye cada hora",
+        "Puede aparecer postprecipitación de otra sustancia",
+        "El factor gravimétrico se hace uno con el tiempo"
+      ],
+      "correcta": 1,
+      "explicacion": "El tiempo de digestión y separación debe respetar el método.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, postprecipitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La digestión mejora el tamaño y puede reducir ciertas impurezas, pero **no garantiza eliminar inclusiones de la red**. Redisolver y reprecipitar puede reducir coprecipitación, con control de las pérdidas por solubilidad. Un reposo excesivo puede favorecer **postprecipitación**, por lo que digestión no significa dejar indefinidamente la muestra. Una forma final de **composición variable, hidratación no controlada o conversión térmica incompleta** impide aplicar correctamente un factor fijo aunque la balanza sea excelente."
+    },
+    {
+      "id": "t21-q176",
+      "pregunta": "¿Qué fracción se pretende eliminar con el lavado después de filtrar?",
+      "opciones": [
+        "El recipiente de pesada",
+        "La totalidad del precipitado buscado",
+        "Aguas madres y especies solubles retenidas"
+      ],
+      "correcta": 2,
+      "explicacion": "La operación conserva el sólido de interés y retira material soluble ajeno.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, lavado de precipitados · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**5. Lavado.** Elimina las aguas madres retenidas. Se lava con un **electrolito volátil** (por ejemplo, disolución de nitrato amónico o ácido nítrico diluido), no con agua destilada pura: el agua pura puede provocar **peptización**, es decir, que el coloide coagulado vuelva a dispersarse y se escape por el filtro. Es más eficaz lavar con **muchas porciones pequeñas** que con pocas grandes."
+    },
+    {
+      "id": "t21-q177",
+      "pregunta": "¿En qué tipo de precipitado es especialmente importante evitar el lavado inadecuado con agua pura por riesgo de peptización?",
+      "opciones": [
+        "Coloidal coagulado susceptible de redispersarse",
+        "Cualquier metal macizo sin dispersión",
+        "Una pesa patrón de acero"
+      ],
+      "correcta": 0,
+      "explicacion": "La advertencia tiene un contexto químico concreto y no es una prohibición universal del agua para todo sólido.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, peptización y lavado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará."
+    },
+    {
+      "id": "t21-q178",
+      "pregunta": "¿Por qué interesa que el electrolito añadido al lavado sea eliminable durante el tratamiento posterior?",
+      "opciones": [
+        "Para que el factor pierda su estequiometría",
+        "Para no aportar masa ajena a la forma final pesada",
+        "Para aumentar permanentemente la masa del precipitado"
+      ],
+      "correcta": 1,
+      "explicacion": "Evitar peptización no debe introducir otra fuente de contaminación del sólido.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, líquido de lavado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará."
+    },
+    {
+      "id": "t21-q179",
+      "pregunta": "¿Qué dos objetivos deben equilibrarse al elegir el líquido de lavado?",
+      "opciones": [
+        "Eliminar impurezas y minimizar disolución del analito",
+        "Disolver todo el sólido y conservar las impurezas",
+        "Maximizar siempre la cantidad de líquido sin criterio"
+      ],
+      "correcta": 0,
+      "explicacion": "Un lavado químicamente agresivo puede limpiar pero disminuir indebidamente la recuperación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pérdidas durante el lavado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará."
+    },
+    {
+      "id": "t21-q180",
+      "pregunta": "¿Dónde conviene realizar una prueba para comprobar la impureza residual del líquido de lavado?",
+      "opciones": [
+        "En el estuche de las pesas",
+        "Directamente sobre todo el sólido destinado a pesada",
+        "En una porción separada de ese líquido"
+      ],
+      "correcta": 2,
+      "explicacion": "La comprobación no debe contaminar la fracción cuya masa se va a determinar.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, control de lavado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará."
+    },
+    {
+      "id": "t21-q181",
+      "pregunta": "¿Qué inconveniente puede tener seguir lavando indefinidamente un sólido de solubilidad pequeña pero no nula?",
+      "opciones": [
+        "Aumentar siempre su recuperación",
+        "Acumular pérdidas de analito por disolución",
+        "Convertir automáticamente la técnica en volumetría"
+      ],
+      "correcta": 1,
+      "explicacion": "El lavado suficiente debe retirar impurezas sin crear pérdidas innecesarias.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, punto final de lavado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Las condiciones concretas dependen del precipitado. El electrolito de lavado se emplea **especialmente en precipitados coloidales susceptibles de peptización**; no es una prohibición universal de lavar cualquier sólido con agua. El lavado debe eliminar impurezas **sin disolver una cantidad significativa del analito**; el electrolito se elige volátil para no dejar masa ajena tras el tratamiento. Puede comprobarse la desaparición de una impureza **en una porción separada del líquido de lavado**, evitando tanto el lavado insuficiente como el excesivo. Se sigue el método concreto y se evita introducir el reactivo de comprobación en el precipitado que se pesará."
+    },
+    {
+      "id": "t21-q182",
+      "pregunta": "El sólido coagulado se redispersa y empieza a pasar por el filtro durante el lavado. ¿Qué error explica la pérdida?",
+      "opciones": [
+        "Postprecipitación",
+        "Inclusión isomorfa",
+        "Peptización"
+      ],
+      "correcta": 2,
+      "explicacion": "La redispersión reduce el tamaño efectivo de partículas y puede causar pérdidas físicas.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, errores de gravimetría · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**5. Lavado.** Elimina las aguas madres retenidas. Se lava con un **electrolito volátil** (por ejemplo, disolución de nitrato amónico o ácido nítrico diluido), no con agua destilada pura: el agua pura puede provocar **peptización**, es decir, que el coloide coagulado vuelva a dispersarse y se escape por el filtro. Es más eficaz lavar con **muchas porciones pequeñas** que con pocas grandes."
+    },
+    {
+      "id": "t21-q183",
+      "pregunta": "¿Por qué un exceso moderado del precipitante puede favorecer recuperación?",
+      "opciones": [
+        "Por el efecto de ion común que reduce solubilidad en el supuesto considerado",
+        "Porque cambia siempre el analito por otro elemento",
+        "Porque aumenta la abertura del filtro"
+      ],
+      "correcta": 0,
+      "explicacion": "El exceso debe controlarse: el efecto favorable puede competir con otras reacciones.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, solubilidad del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Los remedios: **digestión** (reduce oclusión y adsorción), **redisolución y reprecipitación** (la más eficaz contra la coprecipitación), **lavado con electrolito volátil** (evita la peptización) y **control del reactivo en exceso** (un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos)."
+    },
+    {
+      "id": "t21-q184",
+      "pregunta": "Si un exceso elevado forma complejos solubles con el analito, ¿qué riesgo aparece?",
+      "opciones": [
+        "Eliminación del error de excentricidad",
+        "Redisolución y pérdida del precipitado",
+        "Mayor recuperación garantizada sin límite"
+      ],
+      "correcta": 1,
+      "explicacion": "No puede extrapolarse indefinidamente el beneficio del ion común.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, exceso de precipitante · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Los remedios: **digestión** (reduce oclusión y adsorción), **redisolución y reprecipitación** (la más eficaz contra la coprecipitación), **lavado con electrolito volátil** (evita la peptización) y **control del reactivo en exceso** (un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos)."
+    },
+    {
+      "id": "t21-q185",
+      "pregunta": "¿Qué afirmación sobre añadir precipitante es correcta?",
+      "opciones": [
+        "La cantidad se controla según los equilibrios y el método",
+        "Cuanto más se añada, mejor siempre sin excepción",
+        "Solo interesa llenar el vaso"
+      ],
+      "correcta": 0,
+      "explicacion": "El objetivo es recuperación selectiva, no maximizar sin criterio el exceso de reactivo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, condiciones de precipitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Los remedios: **digestión** (reduce oclusión y adsorción), **redisolución y reprecipitación** (la más eficaz contra la coprecipitación), **lavado con electrolito volátil** (evita la peptización) y **control del reactivo en exceso** (un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos)."
+    },
+    {
+      "id": "t21-q186",
+      "pregunta": "Una impureza queda retenida en la superficie del sólido. ¿Qué fenómeno describe?",
+      "opciones": [
+        "Pérdida por volatilización",
+        "Inclusión por sustitución en la red",
+        "Adsorción superficial"
+      ],
+      "correcta": 2,
+      "explicacion": "La ubicación superficial diferencia esta contaminación de la atrapada dentro del cristal.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, adsorción superficial · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Coprecipitación por adsorción superficial** | Iones ajenos se pegan a la superficie del precipitado | Por exceso (pesa de más) |"
+    },
+    {
+      "id": "t21-q187",
+      "pregunta": "Un cristal crece deprisa y encierra porciones de disolución con impurezas. ¿Qué mecanismo debe sospecharse?",
+      "opciones": [
+        "Peptización",
+        "Oclusión",
+        "Ajuste de balanza"
+      ],
+      "correcta": 1,
+      "explicacion": "El atrapamiento durante el crecimiento se distingue de la adsorción superficial.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, oclusión · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Coprecipitación por oclusión** | Impurezas quedan **atrapadas dentro** del cristal al crecer deprisa | Por exceso |"
+    },
+    {
+      "id": "t21-q188",
+      "pregunta": "¿Qué rasgo identifica una inclusión isomorfa frente a una oclusión?",
+      "opciones": [
+        "El coloide atraviesa el filtro al lavarse",
+        "Solo queda líquido retenido entre partículas",
+        "Un ion ajeno sustituye a otro en posiciones de la red"
+      ],
+      "correcta": 2,
+      "explicacion": "La sustitución estructural explica la dificultad para eliminarla mediante lavado.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, inclusión isomorfa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Coprecipitación por inclusión isomorfa** | Un ion ajeno de tamaño y carga parecidos **sustituye** a uno propio en la red | Por exceso; es la más difícil de eliminar |"
+    },
+    {
+      "id": "t21-q189",
+      "pregunta": "¿Qué dato temporal distingue la postprecipitación?",
+      "opciones": [
+        "La sustancia contaminante aparece sobre el precipitado ya formado",
+        "El contaminante solo existe en la pesa patrón",
+        "El analito se evapora antes de filtrar"
+      ],
+      "correcta": 0,
+      "explicacion": "Se diferencia de impurezas incorporadas durante la formación inicial del precipitado.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, postprecipitación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Postprecipitación** | Una segunda sustancia precipita **encima** del precipitado ya formado, al dejarlo reposar demasiado | Por exceso |"
+    },
+    {
+      "id": "t21-q190",
+      "pregunta": "¿Por qué puede ayudar redisolver y reprecipitar un sólido contaminado?",
+      "opciones": [
+        "Porque suprime la necesidad de controlar pérdidas",
+        "Permite una nueva separación con menor incorporación de impurezas",
+        "Porque cualquier impureza se transforma en analito"
+      ],
+      "correcta": 1,
+      "explicacion": "La purificación puede mejorar, pero cada operación debe mantener recuperación suficiente.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, purificación del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Los remedios: **digestión** (reduce oclusión y adsorción), **redisolución y reprecipitación** (la más eficaz contra la coprecipitación), **lavado con electrolito volátil** (evita la peptización) y **control del reactivo en exceso** (un exceso moderado baja la solubilidad por efecto de ion común; un exceso grande puede redisolver el precipitado por formación de complejos)."
+    },
+    {
+      "id": "t21-q191",
+      "pregunta": "¿Qué debe vigilarse al repetir precipitaciones para mejorar la pureza?",
+      "opciones": [
+        "Que no se acumulen pérdidas de analito por solubilidad o transferencia",
+        "Solo que aumente el número de operaciones",
+        "Que el recipiente no tenga marca comercial"
+      ],
+      "correcta": 0,
+      "explicacion": "Mejorar pureza y mantener recuperación son objetivos simultáneos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, control de recuperación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Pérdidas por solubilidad** | Parte del precipitado se queda disuelta en las aguas madres o en el líquido de lavado | Por defecto |"
+    },
+    {
+      "id": "t21-q192",
+      "pregunta": "La aparición de un sólido visible, ¿demuestra por sí sola que la precipitación del analito es cuantitativa?",
+      "opciones": [
+        "Solo depende de la longitud de la varilla",
+        "Sí; basta ver cualquier cantidad de sólido",
+        "No; puede quedar una fracción importante sin recuperar"
+      ],
+      "correcta": 2,
+      "explicacion": "La señal visual demuestra formación de sólido, no recuperación prácticamente completa.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, separación cuantitativa · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La disolución diluida y la adición lenta con agitación reducen las concentraciones locales que favorecen nucleación excesiva. La precipitación en caliente se recomienda **cuando el aumento de temperatura eleva la solubilidad en esas condiciones**; no toda sustancia tiene la misma dependencia térmica. El **pH modifica solubilidad y selectividad**: debe ajustarse para recuperar el analito sin precipitar innecesariamente interferentes. Una separación cuantitativa busca recuperar prácticamente todo el analito, no solo producir sólido visible."
+    },
+    {
+      "id": "t21-q193",
+      "pregunta": "¿Por qué una hidratación variable del sólido dificulta usar un factor gravimétrico fijo?",
+      "opciones": [
+        "Porque deja de poder medirse masa",
+        "Cambia la proporción de masa atribuible al analito",
+        "Porque vuelve iguales todas las masas molares"
+      ],
+      "correcta": 1,
+      "explicacion": "La fórmula efectiva debe ser reproducible y conocida para una conversión estequiométrica fiable.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, requisitos de la forma pesada · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La digestión mejora el tamaño y puede reducir ciertas impurezas, pero **no garantiza eliminar inclusiones de la red**. Redisolver y reprecipitar puede reducir coprecipitación, con control de las pérdidas por solubilidad. Un reposo excesivo puede favorecer **postprecipitación**, por lo que digestión no significa dejar indefinidamente la muestra. Una forma final de **composición variable, hidratación no controlada o conversión térmica incompleta** impide aplicar correctamente un factor fijo aunque la balanza sea excelente."
+    },
+    {
+      "id": "t21-q194",
+      "pregunta": "Si solo parte del precipitado se convierte en la forma final prevista, ¿qué problema aparece?",
+      "opciones": [
+        "La balanza corrige la fórmula del sólido",
+        "El cálculo se vuelve automáticamente más exacto",
+        "La masa corresponde a una composición no controlada"
+      ],
+      "correcta": 2,
+      "explicacion": "Una mezcla de formas no permite aplicar sin más el factor de la especie pura prevista.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, tratamiento del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La digestión mejora el tamaño y puede reducir ciertas impurezas, pero **no garantiza eliminar inclusiones de la red**. Redisolver y reprecipitar puede reducir coprecipitación, con control de las pérdidas por solubilidad. Un reposo excesivo puede favorecer **postprecipitación**, por lo que digestión no significa dejar indefinidamente la muestra. Una forma final de **composición variable, hidratación no controlada o conversión térmica incompleta** impide aplicar correctamente un factor fijo aunque la balanza sea excelente."
+    },
+    {
+      "id": "t21-q195",
+      "pregunta": "¿Qué operación debe asegurar que se conoce la cantidad inicial de muestra analizada?",
+      "opciones": [
+        "Pesada inicial de la muestra antes de la separación",
+        "Solo la lectura del volumen del vaso general",
+        "Solo la pesada del papel sin muestra"
+      ],
+      "correcta": 0,
+      "explicacion": "La cantidad inicial es necesaria para expresar un contenido relativo en la muestra.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, secuencia gravimétrica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**1. Disolución y toma de muestra.** Se pesa la muestra en balanza analítica y se disuelve."
+    },
+    {
+      "id": "t21-q196",
+      "pregunta": "¿Qué etapa separa físicamente el sólido de la mayor parte de las aguas madres?",
+      "opciones": [
+        "Ajuste del cero",
+        "Filtración",
+        "Calibración"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe realizarse sin perder partículas que contienen el analito.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, separación gravimétrica · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**4. Filtración.** Con papel sin cenizas y embudo si va a calcinarse, o con crisol filtrante si sólo va a secarse."
+    },
+    {
+      "id": "t21-q197",
+      "pregunta": "¿Cuál es el criterio químico del tratamiento térmico antes de la pesada?",
+      "opciones": [
+        "Obtener la especie final definida por el método",
+        "Alcanzar siempre la mayor temperatura disponible",
+        "Mantener cualquier mezcla de productos mientras parezca seca"
+      ],
+      "correcta": 0,
+      "explicacion": "La temperatura se selecciona para una forma de pesada, no solo para eliminar agua visible.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, secado y calcinación · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**6. Secado o calcinación.** Se seca en estufa o se calcina en mufla, hasta transformar el precipitado en una **especie de composición conocida y estequiométrica**. No siempre coincide con lo precipitado: el hidróxido de hierro(III) hidratado se precipita como tal y se pesa como **Fe₂O₃**."
+    },
+    {
+      "id": "t21-q198",
+      "pregunta": "¿Qué paso se sitúa entre el tratamiento térmico y una pesada fiable del crisol?",
+      "opciones": [
+        "Traslado inmediato caliente al plato",
+        "Adición de agua sin medir",
+        "Enfriamiento en las condiciones previstas, normalmente en desecador"
+      ],
+      "correcta": 2,
+      "explicacion": "El control de temperatura y humedad prepara una indicación estable.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, secuencia antes de pesada · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "**7. Enfriamiento en desecador y pesada hasta masa constante.** El crisol caliente no se pesa nunca: el aire caliente asciende y falsea la lectura. **Masa constante** significa repetir el ciclo calentar-enfriar-pesar hasta que dos pesadas consecutivas difieran menos que la tolerancia fijada por el método."
+    },
+    {
+      "id": "t21-q199",
+      "pregunta": "¿Puede sustituirse el control de pH por añadir todo el precipitante de una sola vez?",
+      "opciones": [
+        "Sí; un gran exceso fija siempre cualquier pH necesario",
+        "No; velocidad de adición y pH controlan aspectos distintos",
+        "Sí; el pH solo importa en cromatografía"
+      ],
+      "correcta": 1,
+      "explicacion": "Los equilibrios del sistema y la sobresaturación local requieren controles complementarios.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, precipitación selectiva · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "De ahí las cuatro maniobras clásicas para bajar la sobresaturación: disolución **diluida**, adición del precipitante **lenta y con agitación**, precipitación **en caliente** (sube *S*) y control del **pH** para no precipitar de golpe. La versión refinada es la **precipitación en disolución homogénea**, en la que el precipitante se genera *in situ* poco a poco por una reacción química (por ejemplo, urea que se hidroliza al calentar y libera amoniaco)."
+    },
+    {
+      "id": "t21-q200",
+      "pregunta": "¿Qué debe revisarse si el sólido de una nueva muestra tiene partículas mucho más finas que en el procedimiento validado?",
+      "opciones": [
+        "Solo la marca de los guantes",
+        "Solo la posición de la etiqueta del crisol",
+        "Condiciones de precipitación y adecuación de la filtración"
+      ],
+      "correcta": 2,
+      "explicacion": "El cambio puede afectar recuperación, lavado y contaminación, aunque la masa final sea reproducible.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, tamaño y separación del precipitado · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- **Sobresaturación relativa baja** → predomina el **crecimiento de partícula** → precipitado **cristalino**, de partícula grande, fácil de filtrar y lavar."
+    },
+    {
+      "id": "t21-q201",
+      "pregunta": "¿Qué resolución habitual se asocia en el tema a una semimicrobalanza, sin presentarla como obligación normativa?",
+      "opciones": [
+        "0,01 mg",
+        "0,1 g",
+        "10 g"
+      ],
+      "correcta": 0,
+      "explicacion": "Las denominaciones comerciales se distinguen de las clases de exactitud legales.",
+      "fuente": "EURAMET cg-18, alcance; apunte §2.4.1, denominaciones comerciales habituales · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Semimicrobalanza | 0,01 mg | Muestras pequeñas |"
+    },
+    {
+      "id": "t21-q202",
+      "pregunta": "¿Qué equivalencia corresponde a una resolución de 0,001 mg?",
+      "opciones": [
+        "1 mg",
+        "1 µg",
+        "10 µg"
+      ],
+      "correcta": 1,
+      "explicacion": "Un miligramo contiene mil microgramos; confundirlos cambia la magnitud mil veces.",
+      "fuente": "EURAMET cg-18; apunte §2.4.1, resolución habitual · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Semimicrobalanza | 0,01 mg | Muestras pequeñas |"
+    },
+    {
+      "id": "t21-q203",
+      "pregunta": "¿Qué diferencia debe respetarse al hablar de «balanza analítica de 0,1 mg»?",
+      "opciones": [
+        "Ese valor de resolución es habitual, no por sí solo una clase legal de exactitud",
+        "La cifra demuestra por sí sola todos los requisitos de clase I",
+        "Toda balanza con pantalla digital es clase I"
+      ],
+      "correcta": 0,
+      "explicacion": "La clasificación metrológica requiere parámetros reglamentarios, no solo un nombre comercial.",
+      "fuente": "RD 244/2016, anexo VI; apunte, limitación sobre valores típicos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Estas resoluciones son **valores comerciales habituales, no cifras fijadas por la norma para cada denominación**. La clase de exactitud legal se determina por los requisitos metrológicos aplicables, no solo por el número de decimales de la pantalla."
+    },
+    {
+      "id": "t21-q204",
+      "pregunta": "¿Qué denominación corresponde a la clase II de instrumentos de pesaje no automáticos?",
+      "opciones": [
+        "Exactitud especial",
+        "Exactitud ordinaria",
+        "Exactitud fina"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe distinguirse de la clase I especial y de las clases media y ordinaria.",
+      "fuente": "RD 244/2016, anexo VI, clases de exactitud · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| II | Exactitud **fina** | Balanza de precisión, laboratorio general |"
+    },
+    {
+      "id": "t21-q205",
+      "pregunta": "¿Qué clase recibe la denominación de exactitud media?",
+      "opciones": [
+        "II",
+        "III",
+        "I"
+      ],
+      "correcta": 1,
+      "explicacion": "El número de clase no es el número de decimales de la pantalla.",
+      "fuente": "RD 244/2016, anexo VI, clases de exactitud · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| III | Exactitud **media** | Báscula comercial, mostrador |"
+    },
+    {
+      "id": "t21-q206",
+      "pregunta": "¿Cómo se representa la clase de exactitud ordinaria en la notación reglamentaria del tema?",
+      "opciones": [
+        "II",
+        "I",
+        "IIII"
+      ],
+      "correcta": 2,
+      "explicacion": "La tabla emplea IIII, que debe reconocerse aunque no sea la escritura romana habitual de cuatro.",
+      "fuente": "RD 244/2016, anexo VI, clases de exactitud · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| IIII | Exactitud **ordinaria** | Básculas de baja exactitud |"
+    },
+    {
+      "id": "t21-q207",
+      "pregunta": "Una pantalla muestra más cifras que las usadas para evaluar legalmente sus errores. ¿Qué distinción explica esto?",
+      "opciones": [
+        "División real d frente a división de verificación e",
+        "Calcinación frente a digestión",
+        "Masa frente a volumen aforado"
+      ],
+      "correcta": 0,
+      "explicacion": "Las cifras mostradas no implican que la tolerancia reglamentaria se exprese con esa misma división.",
+      "fuente": "RD 244/2016, anexo VI, división real y división de verificación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **d — escalón real (o división de escala real).** Lo que la balanza *muestra*."
+    },
+    {
+      "id": "t21-q208",
+      "pregunta": "Si una balanza tiene d = 0,1 mg y e = 1 mg, ¿qué valor debe usarse para expresar límites definidos en escalones de verificación?",
+      "opciones": [
+        "La diferencia e − d",
+        "e = 1 mg",
+        "d = 0,1 mg"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada magnitud tiene una función distinta en la evaluación metrológica.",
+      "fuente": "RD 244/2016, anexo VI; apunte §2.4.2, caso típico · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una balanza analítica típica, **e es mayor que d**: la balanza muestra más cifras de las que la metrología legal le reconoce. Tanto *d* como *e* deben tomar la forma **1 × 10^k, 2 × 10^k o 5 × 10^k** unidades de masa, con *k* entero."
+    },
+    {
+      "id": "t21-q209",
+      "pregunta": "¿Qué valor tiene la forma 1, 2 o 5 × 10^k exigida para una división de escala?",
+      "opciones": [
+        "0,2 mg",
+        "0,3 mg",
+        "0,7 mg"
+      ],
+      "correcta": 0,
+      "explicacion": "0,2 mg es 2 × 10⁻¹ mg; tres y siete no pertenecen a esa serie.",
+      "fuente": "RD 244/2016, anexo VI, valores permitidos de divisiones · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En una balanza analítica típica, **e es mayor que d**: la balanza muestra más cifras de las que la metrología legal le reconoce. Tanto *d* como *e* deben tomar la forma **1 × 10^k, 2 × 10^k o 5 × 10^k** unidades de masa, con *k* entero."
+    },
+    {
+      "id": "t21-q210",
+      "pregunta": "¿Qué precaución se requiere al calcular n = Max/e?",
+      "opciones": [
+        "Sustituir e por el número de cifras de la pantalla",
+        "Dividir gramos entre miligramos sin convertir",
+        "Expresar Max y e en la misma unidad de masa"
+      ],
+      "correcta": 2,
+      "explicacion": "La conversión de unidades es necesaria para obtener el número correcto de escalones.",
+      "fuente": "RD 244/2016, anexo VI, número de divisiones de verificación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El **número de escalones de verificación, n = Max / e**, mide la «finura» del instrumento y es lo que fija la clase junto con *e* y la carga mínima **Min**."
+    },
+    {
+      "id": "t21-q211",
+      "pregunta": "Una balanza tiene Max = 200 g y e = 0,001 g. ¿Cuántos escalones de verificación tiene?",
+      "opciones": [
+        "200",
+        "200.000",
+        "0,000005"
+      ],
+      "correcta": 1,
+      "explicacion": "Se aplica 200/0,001; no se usa la resolución d si es distinta de e.",
+      "fuente": "RD 244/2016, anexo VI, número de divisiones de verificación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El **número de escalones de verificación, n = Max / e**, mide la «finura» del instrumento y es lo que fija la clase junto con *e* y la carga mínima **Min**."
+    },
+    {
+      "id": "t21-q212",
+      "pregunta": "Además de e y del número de escalones, ¿qué parámetro cita el tema para definir la clase metrológica?",
+      "opciones": [
+        "El material del cuaderno",
+        "El número de puertas del paravientos",
+        "Carga mínima Min"
+      ],
+      "correcta": 2,
+      "explicacion": "La clase se relaciona con requisitos del instrumento, no con accesorios externos.",
+      "fuente": "RD 244/2016, anexo VI, clasificación de instrumentos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El **número de escalones de verificación, n = Max / e**, mide la «finura» del instrumento y es lo que fija la clase junto con *e* y la carga mínima **Min**."
+    },
+    {
+      "id": "t21-q213",
+      "pregunta": "¿Por qué se evita instalar una balanza analítica sobre una mesa larga sometida a golpes?",
+      "opciones": [
+        "Las vibraciones alteran la estabilidad de indicación",
+        "Las vibraciones cambian siempre la masa molar",
+        "La mesa aumenta automáticamente la capacidad nominal"
+      ],
+      "correcta": 0,
+      "explicacion": "La instalación forma parte de las condiciones de medida y no se corrige solo con más decimales.",
+      "fuente": "EURAMET cg-18, condiciones de uso; manejo de balanzas analíticas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Mesa **antivibratoria**, pesada y estable, en un rincón del laboratorio y no en el centro de una mesa larga."
+    },
+    {
+      "id": "t21-q214",
+      "pregunta": "Una balanza está junto a una salida de climatización y deriva al funcionar el aire. ¿Qué debe revisarse primero?",
+      "opciones": [
+        "El tamaño del texto de pantalla",
+        "La exposición a corrientes y cambios térmicos",
+        "La fórmula del precipitado como única causa"
+      ],
+      "correcta": 1,
+      "explicacion": "Las influencias ambientales pueden producir indicaciones inestables sin que cambie la muestra.",
+      "fuente": "EURAMET cg-18, condiciones ambientales del instrumento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Lejos de puertas, ventanas, corrientes de aire, salidas de climatización y focos de calor."
+    },
+    {
+      "id": "t21-q215",
+      "pregunta": "Tras mover una balanza de sitio, ¿qué comprobación mecánica de rutina es necesaria?",
+      "opciones": [
+        "Nivelación según el indicador y las patas ajustables",
+        "Solo cambiar la fecha de la etiqueta",
+        "Solo cerrar el cuaderno"
+      ],
+      "correcta": 0,
+      "explicacion": "La posición horizontal prevista debe restablecerse antes de evaluar su funcionamiento.",
+      "fuente": "EURAMET cg-18, preparación del instrumento; manual de uso del modelo · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Nivelada**: la burbuja del nivel debe quedar centrada, ajustando las patas roscadas. Es la comprobación de rutina que más se olvida."
+    },
+    {
+      "id": "t21-q216",
+      "pregunta": "¿Qué condición ambiental favorece pesadas reproducibles?",
+      "opciones": [
+        "Colocar un foco de calor junto al plato",
+        "Alternar continuamente aire caliente y frío",
+        "Temperatura y humedad estables"
+      ],
+      "correcta": 2,
+      "explicacion": "Las variaciones ambientales pueden afectar al instrumento y al estado de la muestra.",
+      "fuente": "EURAMET cg-18, condiciones ambientales de calibración y uso · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Ambiente de temperatura y humedad estables. La humedad muy baja favorece la carga electrostática."
+    },
+    {
+      "id": "t21-q217",
+      "pregunta": "Una balanza acaba de conectarse después de estar desenchufada. ¿Qué debe respetarse antes de exigir pesadas precisas?",
+      "opciones": [
+        "Pesar inmediatamente sin revisar el manual",
+        "El tiempo de calentamiento y estabilización previsto",
+        "Sobrecargarla para calentarla más deprisa"
+      ],
+      "correcta": 1,
+      "explicacion": "La estabilidad térmica no se consigue por una carga arbitraria ni por una tara rápida.",
+      "fuente": "EURAMET cg-18, preparación y estabilidad térmica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Balanza **conectada permanentemente** y estabilizada térmicamente; si se ha desenchufado, hay que darle tiempo de calentamiento."
+    },
+    {
+      "id": "t21-q218",
+      "pregunta": "¿Qué permite una pesa de control antes de las pesadas de una serie?",
+      "opciones": [
+        "Demostrar la pureza química del precipitado",
+        "Corregir pérdidas de analito ocurridas en la filtración",
+        "Comprobar el comportamiento del instrumento según el procedimiento"
+      ],
+      "correcta": 2,
+      "explicacion": "El control instrumental no sustituye los controles del método químico.",
+      "fuente": "EURAMET cg-18, comprobaciones de funcionamiento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Ajuste** interno o externo, según el procedimiento del laboratorio, y comprobación con una pesa de control."
+    },
+    {
+      "id": "t21-q219",
+      "pregunta": "¿En qué condición se comprueba el cero según las recomendaciones de manejo del tema?",
+      "opciones": [
+        "Con las puertas del paravientos cerradas y la balanza estable",
+        "Con una corriente de aire dirigida al plato",
+        "Mientras se toca el plato con la mano"
+      ],
+      "correcta": 0,
+      "explicacion": "El cero también debe establecerse bajo condiciones de lectura apropiadas.",
+      "fuente": "EURAMET cg-18, preparación del instrumento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Cero** con las puertas del paravientos cerradas."
+    },
+    {
+      "id": "t21-q220",
+      "pregunta": "Durante la lectura se mantiene abierta la puerta del paravientos. ¿Qué influencia se facilita?",
+      "opciones": [
+        "Eliminación del empuje del aire",
+        "Corrientes de aire sobre la carga y el sistema",
+        "Cambio estequiométrico obligado del analito"
+      ],
+      "correcta": 1,
+      "explicacion": "El paravientos reduce corrientes; no crea vacío ni elimina todas las influencias del aire.",
+      "fuente": "EURAMET cg-18, condiciones de pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Puertas cerradas** en el momento de la lectura. Es la causa número uno de lecturas inestables."
+    },
+    {
+      "id": "t21-q221",
+      "pregunta": "¿Qué hábito reduce la variación asociada a distintas posiciones de la carga?",
+      "opciones": [
+        "Colocarla centrada en el plato",
+        "Apoyarla siempre en el borde",
+        "Inclinar el recipiente hacia una esquina"
+      ],
+      "correcta": 0,
+      "explicacion": "La calibración puede caracterizar excentricidad, pero el uso debe limitarla mediante una colocación adecuada.",
+      "fuente": "EURAMET cg-18, excentricidad y uso del instrumento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Carga **centrada** en el plato: descentrarla introduce **error de excentricidad**."
+    },
+    {
+      "id": "t21-q222",
+      "pregunta": "La misma pesa da indicaciones distintas en el centro y cerca del borde. ¿Qué comportamiento se está observando?",
+      "opciones": [
+        "Humedad del precipitado como única explicación",
+        "Pérdida por solubilidad",
+        "Sensibilidad a la posición de la carga"
+      ],
+      "correcta": 2,
+      "explicacion": "Mantener la misma carga permite relacionar el cambio con la excentricidad.",
+      "fuente": "EURAMET cg-18, ensayo de carga excéntrica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Carga **centrada** en el plato: descentrarla introduce **error de excentricidad**."
+    },
+    {
+      "id": "t21-q223",
+      "pregunta": "¿Qué debe hacerse con un recipiente calentado antes de llevarlo a la balanza?",
+      "opciones": [
+        "Compensar mentalmente el calor sin enfriarlo",
+        "Dejar que alcance la condición térmica prevista para pesar",
+        "Aumentar el número de decimales y pesar caliente"
+      ],
+      "correcta": 1,
+      "explicacion": "Una lectura con convección no se vuelve fiable por mostrar más cifras.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, condiciones de pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- El objeto **a temperatura ambiente**. Un crisol caliente genera corrientes de convección y pesa **menos** de lo que debería."
+    },
+    {
+      "id": "t21-q224",
+      "pregunta": "Un crisol caliente parece pesar menos y después la indicación cambia al enfriarse. ¿Qué explicación encaja con el tema?",
+      "opciones": [
+        "Cambio de la unidad gramo a litro",
+        "Desaparición permanente de toda la materia del crisol",
+        "Corrientes de convección originadas por el objeto caliente"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe acondicionarse térmicamente el objeto antes de aceptar la lectura.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, error por objeto caliente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- El objeto **a temperatura ambiente**. Un crisol caliente genera corrientes de convección y pesa **menos** de lo que debería."
+    },
+    {
+      "id": "t21-q225",
+      "pregunta": "¿Qué error se intenta evitar al no tocar con los dedos recipientes y patrones de pesada?",
+      "opciones": [
+        "Aporte de humedad, grasa y contaminación",
+        "Cambio del número de átomos del analito",
+        "Sustitución del escalón e por d"
+      ],
+      "correcta": 0,
+      "explicacion": "A escalas pequeñas, material transferido por las manos puede ser significativo.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, manipulación durante la pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Manipular con **pinzas** o guantes, nunca con los dedos."
+    },
+    {
+      "id": "t21-q226",
+      "pregunta": "¿Qué problema comparten una muestra higroscópica y una volátil durante la pesada abierta?",
+      "opciones": [
+        "Ambas eliminan la necesidad de tapa",
+        "Pueden cambiar de masa por intercambio con el ambiente",
+        "Ambas conservan siempre una masa invariable al aire"
+      ],
+      "correcta": 1,
+      "explicacion": "La primera puede captar humedad y la segunda perder componente; se limita la exposición.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, pesada de muestras inestables al ambiente · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Muestras **higroscópicas o volátiles**, en recipiente tapado (pesasustancias) y con la pesada lo más rápida posible."
+    },
+    {
+      "id": "t21-q227",
+      "pregunta": "Una muestra capta agua mientras permanece abierta. ¿Qué riesgo aparece al atribuir toda la masa medida al material original?",
+      "opciones": [
+        "Sobreestimar la cantidad inicial por humedad incorporada",
+        "Subestimarla necesariamente por evaporación de agua",
+        "Ninguno, el agua carece de masa"
+      ],
+      "correcta": 0,
+      "explicacion": "El recipiente tapado y la manipulación prevista limitan cambios durante la medida.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, uso de pesasustancias · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Muestras **higroscópicas o volátiles**, en recipiente tapado (pesasustancias) y con la pesada lo más rápida posible."
+    },
+    {
+      "id": "t21-q228",
+      "pregunta": "¿Qué combinación de factores favorece problemas electrostáticos al pesar?",
+      "opciones": [
+        "Equilibrio térmico como única condición",
+        "Carga metálica conectada adecuadamente y control de estática",
+        "Recipientes aislantes y ambiente muy seco"
+      ],
+      "correcta": 2,
+      "explicacion": "Las cargas eléctricas pueden introducir fuerzas que alteran la indicación sin cambiar la masa real.",
+      "fuente": "EURAMET cg-18, magnitudes de influencia en instrumentos de pesaje · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Ambiente de temperatura y humedad estables. La humedad muy baja favorece la carga electrostática."
+    },
+    {
+      "id": "t21-q229",
+      "pregunta": "¿Qué medida puede ayudar a controlar una deriva por carga electrostática según el tema?",
+      "opciones": [
+        "Añadir masa arbitraria hasta que la lectura parezca estable",
+        "Uso de ionizador apropiado o gestión de materiales y humedad",
+        "Dejar abierto el paravientos ante una corriente fuerte"
+      ],
+      "correcta": 1,
+      "explicacion": "El control debe actuar sobre la causa eléctrica, no ocultar la variación.",
+      "fuente": "EURAMET cg-18, influencias electrostáticas; procedimiento de pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Electrostática**: los plásticos y el vidrio muy seco se cargan y la lectura deriva sin estabilizarse. Se corrige con ionizador, con recipientes metálicos o subiendo la humedad ambiente."
+    },
+    {
+      "id": "t21-q230",
+      "pregunta": "Una muestra ferromagnética afecta a la célula de pesada. ¿Qué tipo de influencia debe considerarse?",
+      "opciones": [
+        "Peptización",
+        "Coprecipitación por oclusión",
+        "Interacción magnética"
+      ],
+      "correcta": 2,
+      "explicacion": "Es una fuerza instrumental adicional que no debe confundirse con un fenómeno químico de la muestra.",
+      "fuente": "EURAMET cg-18, influencias magnéticas en la pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Magnetismo**: las muestras ferromagnéticas interaccionan con la célula de pesada; se aíslan con un soporte no magnético."
+    },
+    {
+      "id": "t21-q231",
+      "pregunta": "¿Qué recurso menciona el tema para limitar la interacción de una muestra ferromagnética con la balanza?",
+      "opciones": [
+        "Un soporte no magnético adecuado",
+        "Una pesa imantada añadida sin control",
+        "Cambiar el factor gravimétrico"
+      ],
+      "correcta": 0,
+      "explicacion": "El montaje de pesada debe seguir un procedimiento apropiado a la influencia presente.",
+      "fuente": "EURAMET cg-18, reducción de efectos magnéticos · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Magnetismo**: las muestras ferromagnéticas interaccionan con la célula de pesada; se aíslan con un soporte no magnético."
+    },
+    {
+      "id": "t21-q232",
+      "pregunta": "¿Por qué el aire puede afectar a una comparación precisa de masas?",
+      "opciones": [
+        "Porque hace que masa y volumen sean la misma magnitud",
+        "Ejerce empuje sobre la muestra y sobre los patrones",
+        "Porque elimina toda fuerza gravitatoria"
+      ],
+      "correcta": 1,
+      "explicacion": "La balanza compara fuerzas; el empuje depende del volumen desplazado.",
+      "fuente": "EURAMET cg-18, corrección por empuje del aire · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Empuje del aire (flotación).** La balanza compara fuerzas dentro del aire, y el aire empuja hacia arriba tanto la muestra como la pesa. Si la densidad de la muestra difiere mucho de la de las pesas, hay un error sistemático que en trabajo de alta exactitud se corrige por cálculo. Es el motivo de que la masa «convencional» y la masa real no coincidan."
+    },
+    {
+      "id": "t21-q233",
+      "pregunta": "¿En qué situación puede importar especialmente la corrección por empuje del aire?",
+      "opciones": [
+        "Alta exactitud con densidades diferentes entre muestra y patrones",
+        "Solo cuando la masa se expresa en litros",
+        "Nunca si existe paravientos"
+      ],
+      "correcta": 0,
+      "explicacion": "El paravientos controla corrientes, pero no elimina la flotación dentro del aire.",
+      "fuente": "EURAMET cg-18, correcciones de flotación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Empuje del aire (flotación).** La balanza compara fuerzas dentro del aire, y el aire empuja hacia arriba tanto la muestra como la pesa. Si la densidad de la muestra difiere mucho de la de las pesas, hay un error sistemático que en trabajo de alta exactitud se corrige por cálculo. Es el motivo de que la masa «convencional» y la masa real no coincidan."
+    },
+    {
+      "id": "t21-q234",
+      "pregunta": "¿Qué distinción debe conservarse en trabajos de alta exactitud por el empuje del aire?",
+      "opciones": [
+        "Litro frente a segundo",
+        "Masa frente a color del reactivo",
+        "Masa convencional frente a masa real"
+      ],
+      "correcta": 2,
+      "explicacion": "El resultado de una comparación en aire requiere considerar las convenciones y correcciones pertinentes.",
+      "fuente": "OIML R 111-1:2004; EURAMET cg-18, masa convencional y empuje · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Empuje del aire (flotación).** La balanza compara fuerzas dentro del aire, y el aire empuja hacia arriba tanto la muestra como la pesa. Si la densidad de la muestra difiere mucho de la de las pesas, hay un error sistemático que en trabajo de alta exactitud se corrige por cálculo. Es el motivo de que la masa «convencional» y la masa real no coincidan."
+    },
+    {
+      "id": "t21-q235",
+      "pregunta": "Una balanza de Max = 200 g sostiene un recipiente de 150 g que se tara. ¿Cuánta masa adicional puede cargarse como máximo por capacidad total, sin otros límites?",
+      "opciones": [
+        "200 g",
+        "50 g",
+        "350 g"
+      ],
+      "correcta": 1,
+      "explicacion": "La tara pone a cero la indicación neta, pero los 150 g siguen sobre el plato.",
+      "fuente": "EURAMET cg-18, carga y alcance; manual del instrumento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Tara**: la balanza descuenta el recipiente, pero **no amplía su capacidad máxima**; Max sigue contando la masa total sobre el plato."
+    },
+    {
+      "id": "t21-q236",
+      "pregunta": "¿Qué diferencia hay entre poner a cero con un recipiente y retirarlo físicamente?",
+      "opciones": [
+        "La tara aumenta Max automáticamente",
+        "Ambas acciones liberan siempre la misma capacidad física",
+        "La tara no elimina la carga real que soporta el plato"
+      ],
+      "correcta": 2,
+      "explicacion": "Confundir indicación neta y carga total puede llevar a sobrecarga.",
+      "fuente": "EURAMET cg-18, carga y alcance; manual del instrumento · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Tara**: la balanza descuenta el recipiente, pero **no amplía su capacidad máxima**; Max sigue contando la masa total sobre el plato."
+    },
+    {
+      "id": "t21-q237",
+      "pregunta": "Se necesitan recipiente y muestra cuya suma supera Max, aunque la muestra sola no lo haga. ¿Qué debe hacerse?",
+      "opciones": [
+        "Elegir una balanza o montaje con capacidad adecuada",
+        "Tarar el recipiente y cargar sin límite",
+        "Ignorar el recipiente por no ser analito"
+      ],
+      "correcta": 0,
+      "explicacion": "La capacidad se aplica a la masa total soportada.",
+      "fuente": "EURAMET cg-18; manual del instrumento, alcance máximo · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Tara**: la balanza descuenta el recipiente, pero **no amplía su capacidad máxima**; Max sigue contando la masa total sobre el plato."
+    },
+    {
+      "id": "t21-q238",
+      "pregunta": "¿Qué limpieza rutinaria recomienda el tema para plato y cámara?",
+      "opciones": [
+        "Añadir agua indiscriminadamente al mecanismo",
+        "Pincel suave y procedimiento compatible después del uso",
+        "Raspar la célula con cualquier herramienta"
+      ],
+      "correcta": 1,
+      "explicacion": "La limpieza debe retirar contaminación sin dañar el instrumento.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, limpieza de balanzas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Limpieza:** el plato y la cámara, con pincel suave, después de cada uso. Un grano de reactivo caído en la cámara es un error sistemático permanente."
+    },
+    {
+      "id": "t21-q239",
+      "pregunta": "¿Por qué conviene retirar reactivo derramado en la cámara de la balanza?",
+      "opciones": [
+        "Puede contaminar y afectar de forma persistente a las pesadas",
+        "Porque mejora siempre la resolución legal",
+        "Porque cambia el número de escalones de fábrica"
+      ],
+      "correcta": 0,
+      "explicacion": "Una balanza limpia es una condición de funcionamiento, no solo de presentación.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, limpieza y sesgos de pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**Limpieza:** el plato y la cámara, con pincel suave, después de cada uso. Un grano de reactivo caído en la cámara es un error sistemático permanente."
+    },
+    {
+      "id": "t21-q240",
+      "pregunta": "Una indicación no se estabiliza. ¿Qué actuación es adecuada antes de registrar el resultado?",
+      "opciones": [
+        "Elegir siempre la cifra más baja",
+        "Copiar cualquier cifra instantánea",
+        "Investigar corrientes, temperatura, estática y estado de la muestra"
+      ],
+      "correcta": 2,
+      "explicacion": "La lectura debe obtenerse bajo condiciones controladas y con estabilidad compatible con el método.",
+      "fuente": "EURAMET cg-18, condiciones de medida y estabilidad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Electrostática**: los plásticos y el vidrio muy seco se cargan y la lectura deriva sin estabilizarse. Se corrige con ionizador, con recipientes metálicos o subiendo la humedad ambiente."
+    },
+    {
+      "id": "t21-q241",
+      "pregunta": "¿Tener más cifras en pantalla garantiza por sí solo menor error de medida?",
+      "opciones": [
+        "Sí, cada decimal elimina un error químico",
+        "No, la resolución no demuestra por sí sola exactitud",
+        "Solo si el recipiente es de vidrio"
+      ],
+      "correcta": 1,
+      "explicacion": "Deben considerarse calibración, incertidumbre, condiciones de uso y adecuación del instrumento.",
+      "fuente": "RD 244/2016, anexo VI; VIM, resolución · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **d — escalón real (o división de escala real).** Lo que la balanza *muestra*."
+    },
+    {
+      "id": "t21-q242",
+      "pregunta": "¿Por qué no se debe usar automáticamente Min como mínimo de pesada para cualquier método?",
+      "opciones": [
+        "Porque el mínimo de pesada no depende de incertidumbre",
+        "Porque Min indica siempre el volumen del recipiente",
+        "La aptitud por incertidumbre relativa y la carga mínima legal son conceptos diferentes"
+      ],
+      "correcta": 2,
+      "explicacion": "Un método puede exigir una masa neta mayor que la mínima legal del instrumento.",
+      "fuente": "EURAMET cg-18, mínimo de pesada; RD 244/2016, Min · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Mínimo de pesada (*minimum weight*).** La carga por debajo de la cual la incertidumbre relativa se dispara y la balanza deja de ser apta para el uso previsto. Es un concepto de calibración, distinto de la carga mínima **Min** de la metrología legal."
+    },
+    {
+      "id": "t21-q243",
+      "pregunta": "Si se pesa una cantidad cada vez menor con una contribución absoluta de incertidumbre similar, ¿qué tendencia presenta la incertidumbre relativa?",
+      "opciones": [
+        "Aumenta",
+        "Disminuye siempre hasta cero",
+        "Permanece necesariamente igual"
+      ],
+      "correcta": 0,
+      "explicacion": "La misma contribución absoluta supone una fracción mayor de una masa pequeña.",
+      "fuente": "EURAMET cg-18, mínimo de pesada · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Mínimo de pesada (*minimum weight*).** La carga por debajo de la cual la incertidumbre relativa se dispara y la balanza deja de ser apta para el uso previsto. Es un concepto de calibración, distinto de la carga mínima **Min** de la metrología legal."
+    },
+    {
+      "id": "t21-q244",
+      "pregunta": "¿Qué variable se cambia deliberadamente en un ensayo de excentricidad manteniendo la misma carga?",
+      "opciones": [
+        "La unidad de masa entre lecturas",
+        "La posición sobre el plato",
+        "La composición química de la pesa"
+      ],
+      "correcta": 1,
+      "explicacion": "El ensayo aísla el efecto de ubicación de una carga determinada.",
+      "fuente": "EURAMET cg-18, ensayo de excentricidad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Excentricidad.** La misma carga en el centro y en cuatro posiciones del plato. Mide cuánto cambia la indicación según dónde se pose la carga."
+    },
+    {
+      "id": "t21-q245",
+      "pregunta": "¿Por qué debe registrarse y controlar el ambiente al evaluar prestaciones de una balanza?",
+      "opciones": [
+        "Para relacionar el resultado con condiciones de medida e influencias presentes",
+        "Para sustituir las pesas por un termómetro",
+        "Para evitar declarar la identificación del instrumento"
+      ],
+      "correcta": 0,
+      "explicacion": "Una prestación comprobada bajo ciertas condiciones puede no representar un uso sometido a influencias distintas.",
+      "fuente": "EURAMET cg-18, condiciones de calibración y uso · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Ambiente de temperatura y humedad estables. La humedad muy baja favorece la carga electrostática."
+    },
+    {
+      "id": "t21-q246",
+      "pregunta": "Un certificado identifica un error, pero nadie modifica la balanza. ¿Se ha producido necesariamente un ajuste?",
+      "opciones": [
+        "Solo si el certificado es electrónico",
+        "Sí, toda calibración cambia automáticamente la indicación",
+        "No, determinar el error por calibración no implica modificar el instrumento"
+      ],
+      "correcta": 2,
+      "explicacion": "Calibración y ajuste son operaciones distintas aunque puedan realizarse en una misma intervención.",
+      "fuente": "VIM, JCGM 200:2012, 2.39 y 3.11 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Calibración (VIM 2.39):** *«operación que bajo condiciones especificadas establece, en una primera etapa, una relación entre los valores y sus incertidumbres de medida asociadas obtenidas a partir de los patrones de medida, y las correspondientes indicaciones con sus incertidumbres asociadas y, en una segunda etapa, utiliza esta información para establecer una relación que permita obtener un resultado de medida a partir de una indicación»*. Es decir: **compara con patrones y cuantifica el error y su incertidumbre**. No corrige nada por sí misma. Su producto es un **certificado de calibración**."
+    },
+    {
+      "id": "t21-q247",
+      "pregunta": "Una referencia vale 100,0000 g y la balanza indica 100,0003 g. ¿Cuál es el error I − m_ref?",
+      "opciones": [
+        "Defecto de 0,0003 g",
+        "Exceso de 0,0003 g",
+        "100,0003 g"
+      ],
+      "correcta": 1,
+      "explicacion": "El signo positivo indica que la indicación supera el valor de referencia.",
+      "fuente": "EURAMET cg-18, determinación del error de indicación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la comparación con una masa de referencia, el **error de indicación es I − m_ref**; la corrección que lo compensa tiene signo contrario. Aplicar una corrección **no elimina la incertidumbre**. El resultado se acepta según el uso previsto, considerando la información metrológica pertinente; un certificado no sustituye la decisión de aptitud del laboratorio."
+    },
+    {
+      "id": "t21-q248",
+      "pregunta": "¿Qué signo tiene la corrección que compensa un error de indicación positivo?",
+      "opciones": [
+        "No tiene signo por definición",
+        "Positivo siempre",
+        "Negativo"
+      ],
+      "correcta": 2,
+      "explicacion": "La corrección se aplica en sentido opuesto al error estimado.",
+      "fuente": "EURAMET cg-18, determinación del error de indicación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la comparación con una masa de referencia, el **error de indicación es I − m_ref**; la corrección que lo compensa tiene signo contrario. Aplicar una corrección **no elimina la incertidumbre**. El resultado se acepta según el uso previsto, considerando la información metrológica pertinente; un certificado no sustituye la decisión de aptitud del laboratorio."
+    },
+    {
+      "id": "t21-q249",
+      "pregunta": "Una indicación es 20,0005 g y su corrección aplicable es −0,0002 g. ¿Qué valor corregido se obtiene?",
+      "opciones": [
+        "20,0003 g",
+        "20,0007 g",
+        "19,9995 g"
+      ],
+      "correcta": 0,
+      "explicacion": "Se suma algebraicamente la corrección a la indicación, conservando la incertidumbre correspondiente.",
+      "fuente": "VIM, corrección e incertidumbre; EURAMET cg-18 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la comparación con una masa de referencia, el **error de indicación es I − m_ref**; la corrección que lo compensa tiene signo contrario. Aplicar una corrección **no elimina la incertidumbre**. El resultado se acepta según el uso previsto, considerando la información metrológica pertinente; un certificado no sustituye la decisión de aptitud del laboratorio."
+    },
+    {
+      "id": "t21-q250",
+      "pregunta": "¿Corregir el sesgo conocido hace que el resultado tenga incertidumbre nula?",
+      "opciones": [
+        "Solo si se usa una balanza digital",
+        "No, permanecen contribuciones de incertidumbre",
+        "Sí, toda corrección deja un valor exacto"
+      ],
+      "correcta": 1,
+      "explicacion": "Una corrección estimada tiene incertidumbre y no elimina otras influencias del proceso.",
+      "fuente": "VIM, corrección e incertidumbre; EURAMET cg-18 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la comparación con una masa de referencia, el **error de indicación es I − m_ref**; la corrección que lo compensa tiene signo contrario. Aplicar una corrección **no elimina la incertidumbre**. El resultado se acepta según el uso previsto, considerando la información metrológica pertinente; un certificado no sustituye la decisión de aptitud del laboratorio."
+    },
+    {
+      "id": "t21-q251",
+      "pregunta": "¿Por qué interesa disponer de la incertidumbre además del error de indicación?",
+      "opciones": [
+        "Porque informa sobre la calidad de la estimación y del resultado de medida",
+        "Porque incertidumbre y error son siempre el mismo número",
+        "Porque la incertidumbre permite omitir el patrón"
+      ],
+      "correcta": 0,
+      "explicacion": "La interpretación del error sin su incertidumbre puede ser insuficiente para decidir la aptitud.",
+      "fuente": "VIM 2.39; EURAMET cg-18, resultados de calibración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "| Resultado | Certificado con error e incertidumbre | Conforme / no conforme | Instrumento modificado |"
+    },
+    {
+      "id": "t21-q252",
+      "pregunta": "Dos métodos admiten tolerancias diferentes para la pesada. ¿Puede la misma balanza ser apta para uno y no para otro?",
+      "opciones": [
+        "Solo depende del número de puertas",
+        "No, aptitud significa servir para cualquier medida",
+        "Sí, la aptitud depende de las exigencias del uso"
+      ],
+      "correcta": 2,
+      "explicacion": "La comparación se hace con los requisitos definidos para cada método.",
+      "fuente": "EURAMET cg-18; VIM 2.44, requisitos especificados · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La calibración da **error e incertidumbre**; que eso sea aceptable o no lo decide el laboratorio comparándolo con su propio **criterio de aceptación**, que fija según lo que necesita el método."
+    },
+    {
+      "id": "t21-q253",
+      "pregunta": "Un resultado es trazable pero su incertidumbre supera la admitida por el método. ¿Qué conclusión es correcta?",
+      "opciones": [
+        "Debe aceptarse sin revisar requisitos",
+        "La trazabilidad no demuestra por sí sola aptitud para ese uso",
+        "La incertidumbre deja de importar por existir trazabilidad"
+      ],
+      "correcta": 1,
+      "explicacion": "Trazabilidad y adecuación metrológica al uso son requisitos relacionados pero distintos.",
+      "fuente": "VIM 2.41; EURAMET cg-18, aptitud para el uso · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La **trazabilidad es propiedad de un resultado**, no un sinónimo de llevar una etiqueta o citar una institución. La cadena debe estar documentada y cada calibración contribuye a la incertidumbre. Tampoco demuestra por sí sola que la incertidumbre sea suficientemente pequeña para cualquier método. Los controles de rutina complementan la calibración; no la sustituyen automáticamente. El plan de calibración se establece según uso, estabilidad, riesgo y requisitos aplicables, no porque toda calibración técnica tenga un plazo universal de dos años. Ese plazo del apartado 2.4.7 corresponde a una verificación legal concreta."
+    },
+    {
+      "id": "t21-q254",
+      "pregunta": "¿Qué haría incompleta la justificación de trazabilidad de un resultado?",
+      "opciones": [
+        "Identificar la referencia de la cadena",
+        "Conservar los certificados pertinentes",
+        "No poder documentar un eslabón de su cadena de calibraciones"
+      ],
+      "correcta": 2,
+      "explicacion": "La relación con la referencia debe establecerse mediante una cadena sin interrupciones documentales.",
+      "fuente": "VIM 2.41, trazabilidad metrológica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Y la **trazabilidad metrológica (VIM 2.41)** es *«propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre de medida»*."
+    },
+    {
+      "id": "t21-q255",
+      "pregunta": "¿Qué aporta cada calibración de la cadena a la trazabilidad?",
+      "opciones": [
+        "Una contribución a la incertidumbre de medida",
+        "La eliminación total de toda incertidumbre posterior",
+        "Solo un cambio de nombre de la unidad"
+      ],
+      "correcta": 0,
+      "explicacion": "La cadena no es únicamente una lista de instrumentos o instituciones.",
+      "fuente": "VIM 2.41, definición de trazabilidad metrológica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Y la **trazabilidad metrológica (VIM 2.41)** es *«propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre de medida»*."
+    },
+    {
+      "id": "t21-q256",
+      "pregunta": "¿A qué se atribuye rigurosamente la trazabilidad metrológica?",
+      "opciones": [
+        "Únicamente al fabricante de la balanza",
+        "A un resultado de medida",
+        "Solo a una etiqueta adhesiva"
+      ],
+      "correcta": 1,
+      "explicacion": "La documentación del equipo sirve de soporte, pero la propiedad se refiere al resultado y su relación con una referencia.",
+      "fuente": "VIM 2.41, trazabilidad metrológica · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Y la **trazabilidad metrológica (VIM 2.41)** es *«propiedad de un resultado de medida por la cual el resultado puede relacionarse con una referencia mediante una cadena ininterrumpida y documentada de calibraciones, cada una de las cuales contribuye a la incertidumbre de medida»*."
+    },
+    {
+      "id": "t21-q257",
+      "pregunta": "¿Basta escribir el nombre de un instituto metrológico para demostrar trazabilidad?",
+      "opciones": [
+        "No, se necesita la relación documentada mediante calibraciones",
+        "Sí, el nombre elimina cualquier eslabón faltante",
+        "Solo si se imprime en negrita"
+      ],
+      "correcta": 0,
+      "explicacion": "La referencia debe estar conectada con el resultado, no simplemente citada.",
+      "fuente": "VIM 2.41 y sus notas, trazabilidad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La **trazabilidad es propiedad de un resultado**, no un sinónimo de llevar una etiqueta o citar una institución. La cadena debe estar documentada y cada calibración contribuye a la incertidumbre. Tampoco demuestra por sí sola que la incertidumbre sea suficientemente pequeña para cualquier método. Los controles de rutina complementan la calibración; no la sustituyen automáticamente. El plan de calibración se establece según uso, estabilidad, riesgo y requisitos aplicables, no porque toda calibración técnica tenga un plazo universal de dos años. Ese plazo del apartado 2.4.7 corresponde a una verificación legal concreta."
+    },
+    {
+      "id": "t21-q258",
+      "pregunta": "Tras una intervención que modifica la indicación, ¿por qué suele calibrarse de nuevo el instrumento?",
+      "opciones": [
+        "Para cambiar gramos por litros",
+        "Para volver a introducir necesariamente el error anterior",
+        "Para conocer su relación metrológica después del ajuste"
+      ],
+      "correcta": 2,
+      "explicacion": "La calibración anterior caracteriza el estado previo, que pudo cambiar con la intervención.",
+      "fuente": "VIM 3.11, nota 3 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "*«Después de su ajuste, generalmente un sistema de medida debe ser calibrado nuevamente»* (nota 3 del 3.11)."
+    },
+    {
+      "id": "t21-q259",
+      "pregunta": "¿Qué elemento necesita una verificación además de mediciones o comprobaciones?",
+      "opciones": [
+        "Solo una etiqueta de color",
+        "Requisitos especificados frente a los que decidir el cumplimiento",
+        "Un cambio obligatorio del instrumento"
+      ],
+      "correcta": 1,
+      "explicacion": "Sin requisitos no puede emitirse un juicio de conformidad definido.",
+      "fuente": "VIM 2.44, verificación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Verificación (VIM 2.44):** *«aportación de evidencia objetiva de que un elemento dado satisface los requisitos especificados»*. Es decir: **comprueba si el error cabe dentro de una tolerancia** y emite un juicio de conforme / no conforme."
+    },
+    {
+      "id": "t21-q260",
+      "pregunta": "Una balanza repite varias veces una indicación desplazada del patrón. ¿Qué puede coexistir?",
+      "opciones": [
+        "Ausencia garantizada de incertidumbre",
+        "Error cero demostrado solo por repetición",
+        "Buena repetibilidad y error sistemático"
+      ],
+      "correcta": 2,
+      "explicacion": "Poca dispersión no demuestra que el valor medio coincida con la referencia.",
+      "fuente": "EURAMET cg-18, ensayo de repetibilidad · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Repetibilidad.** Varias pesadas de la misma carga en las mismas condiciones, sin mover nada. Mide la dispersión (**precisión**), no el error."
+    },
+    {
+      "id": "t21-q261",
+      "pregunta": "¿Por qué se ensayan varias cargas a lo largo del alcance al calibrar una balanza?",
+      "opciones": [
+        "El error puede depender de la carga",
+        "Para cambiar la composición de cada patrón sin control",
+        "Porque una sola carga representa siempre todo el alcance"
+      ],
+      "correcta": 0,
+      "explicacion": "Caracterizar distintos puntos permite conocer el comportamiento en el intervalo de uso.",
+      "fuente": "EURAMET cg-18, ensayo de errores de indicación · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Errores de indicación (linealidad).** Varias cargas repartidas por todo el alcance, de cero a Max, comparadas con pesas patrón. Es lo que da la curva de error del certificado."
+    },
+    {
+      "id": "t21-q262",
+      "pregunta": "Un método exige incertidumbre relativa muy baja para una masa neta pequeña. ¿Qué debe comprobarse?",
+      "opciones": [
+        "Solo que la carga no supere Max",
+        "El mínimo de pesada adecuado a ese requisito",
+        "Solo que la pantalla admita muchas cifras"
+      ],
+      "correcta": 1,
+      "explicacion": "No superar la capacidad máxima no demuestra aptitud en el extremo de masas pequeñas.",
+      "fuente": "EURAMET cg-18, minimum weight · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- **Mínimo de pesada (*minimum weight*).** La carga por debajo de la cual la incertidumbre relativa se dispara y la balanza deja de ser apta para el uso previsto. Es un concepto de calibración, distinto de la carga mínima **Min** de la metrología legal."
+    },
+    {
+      "id": "t21-q263",
+      "pregunta": "¿Qué relación tienen las comprobaciones rutinarias con una pesa y la calibración completa?",
+      "opciones": [
+        "Se complementan y no son intercambiables automáticamente",
+        "Cualquier control aislado elimina toda calibración futura",
+        "La calibración impide realizar controles"
+      ],
+      "correcta": 0,
+      "explicacion": "El seguimiento permite detectar cambios entre caracterizaciones metrológicas más completas.",
+      "fuente": "EURAMET cg-18, seguimiento del instrumento y calibración · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La **trazabilidad es propiedad de un resultado**, no un sinónimo de llevar una etiqueta o citar una institución. La cadena debe estar documentada y cada calibración contribuye a la incertidumbre. Tampoco demuestra por sí sola que la incertidumbre sea suficientemente pequeña para cualquier método. Los controles de rutina complementan la calibración; no la sustituyen automáticamente. El plan de calibración se establece según uso, estabilidad, riesgo y requisitos aplicables, no porque toda calibración técnica tenga un plazo universal de dos años. Ese plazo del apartado 2.4.7 corresponde a una verificación legal concreta."
+    },
+    {
+      "id": "t21-q264",
+      "pregunta": "¿Puede aplicarse sin más el plazo legal de dos años a todo plan técnico de calibración de balanzas?",
+      "opciones": [
+        "Solo si el certificado tiene más de una página",
+        "Sí; existe un único plazo universal para ambas",
+        "No; calibración y verificación legal tienen finalidades y criterios distintos"
+      ],
+      "correcta": 2,
+      "explicacion": "El plan técnico se define según uso y requisitos; el plazo citado pertenece a un régimen legal concreto.",
+      "fuente": "EURAMET cg-18; Orden ICT/155/2020, anexo I · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La **trazabilidad es propiedad de un resultado**, no un sinónimo de llevar una etiqueta o citar una institución. La cadena debe estar documentada y cada calibración contribuye a la incertidumbre. Tampoco demuestra por sí sola que la incertidumbre sea suficientemente pequeña para cualquier método. Los controles de rutina complementan la calibración; no la sustituyen automáticamente. El plan de calibración se establece según uso, estabilidad, riesgo y requisitos aplicables, no porque toda calibración técnica tenga un plazo universal de dos años. Ese plazo del apartado 2.4.7 corresponde a una verificación legal concreta."
+    },
+    {
+      "id": "t21-q265",
+      "pregunta": "¿Qué orden parcial de clases de pesas va de mayor a menor exactitud en la lista del tema?",
+      "opciones": [
+        "M3, F2, E2, E1",
+        "E1, E2, F1, F2",
+        "F2, F1, E2, E1"
+      ],
+      "correcta": 1,
+      "explicacion": "Las clases E preceden a F y M en el orden de exigencia metrológica descrito.",
+      "fuente": "OIML R 111-1:2004, clases de pesas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "**E1 · E2 · F1 · F2 · M1 · M1-2 · M2 · M2-3 · M3**"
+    },
+    {
+      "id": "t21-q266",
+      "pregunta": "¿Por qué una pesa patrón requiere información metrológica propia?",
+      "opciones": [
+        "Porque toda pesa pesa exactamente su nominal sin incertidumbre",
+        "Porque el valor nominal grabado demuestra exactitud absoluta",
+        "Porque también debe conocerse y documentarse su valor y trazabilidad"
+      ],
+      "correcta": 2,
+      "explicacion": "Usar un patrón no equivale a suponer que su nominal carece de error e incertidumbre.",
+      "fuente": "OIML R 111-1:2004; VIM 2.41 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la práctica del laboratorio: las **E2** y **F1** son las que se usan con balanzas analíticas de clase I. Las pesas se manipulan **siempre con pinzas o guantes**, se guardan en su estuche y tienen su propio certificado de calibración con vigencia limitada: **una pesa sin certificado en vigor no sirve como patrón**."
+    },
+    {
+      "id": "t21-q267",
+      "pregunta": "¿Qué práctica ayuda a conservar pesas patrón entre usos?",
+      "opciones": [
+        "Guardarlas protegidas en su estuche",
+        "Dejarlas junto a reactivos derramados",
+        "Usarlas como contrapeso para sujetar puertas"
+      ],
+      "correcta": 0,
+      "explicacion": "La conservación limita contaminación y daños que podrían alterar su valor.",
+      "fuente": "OIML R 111-1:2004, conservación de pesas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "En la práctica del laboratorio: las **E2** y **F1** son las que se usan con balanzas analíticas de clase I. Las pesas se manipulan **siempre con pinzas o guantes**, se guardan en su estuche y tienen su propio certificado de calibración con vigencia limitada: **una pesa sin certificado en vigor no sirve como patrón**."
+    },
+    {
+      "id": "t21-q268",
+      "pregunta": "Al manipular una pesa patrón con los dedos, ¿qué aspecto metrológico puede alterarse?",
+      "opciones": [
+        "La unidad SI que define al kilogramo",
+        "Su masa por contaminación y humedad transferidas",
+        "Su número nominal de clase por decisión del usuario"
+      ],
+      "correcta": 1,
+      "explicacion": "El patrón necesita el mismo cuidado que las pequeñas masas que se pretende medir con él.",
+      "fuente": "OIML R 111-1:2004, manipulación de pesas · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- Manipular con **pinzas** o guantes, nunca con los dedos."
+    },
+    {
+      "id": "t21-q269",
+      "pregunta": "¿Qué dato decide la posible sujeción de una balanza a control metrológico del Estado, además del tipo de instrumento?",
+      "opciones": [
+        "El uso al que se destinan sus resultados",
+        "Solo que esté dentro de un laboratorio",
+        "Solo el color de su carcasa"
+      ],
+      "correcta": 0,
+      "explicacion": "La ubicación no determina por sí sola el régimen legal aplicable.",
+      "fuente": "Ley 32/2014, art. 8.1; apunte §1 y §2.4.7 · apunte §1",
+      "apartado": "1",
+      "evidencia": "La frontera que más se pregunta: **una balanza de laboratorio no está sujeta a control metrológico del Estado por el hecho de ser una balanza**, sino por el **uso** que se le da (apartado 2.4.7). Lo que sí necesita siempre, si el laboratorio está acreditado, es **calibración trazable** (UNE-EN ISO/IEC 17025)."
+    },
+    {
+      "id": "t21-q270",
+      "pregunta": "Una pesada se utiliza para una finalidad de recaudación tributaria. ¿Qué debe revisarse?",
+      "opciones": [
+        "Solo el número de filtros consumidos",
+        "Solo la rapidez del secado",
+        "El régimen de control metrológico aplicable a ese uso"
+      ],
+      "correcta": 2,
+      "explicacion": "La recaudación tributaria figura entre las finalidades de interés reguladas.",
+      "fuente": "Ley 32/2014, art. 8.1 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "El **control metrológico del Estado** no se aplica a toda balanza, sino a las que se usan para los fines del **artículo 8.1 de la Ley 32/2014**: interés público, salud, seguridad, orden público, medio ambiente, protección de los consumidores, recaudación tributaria, cálculo de aranceles y peritajes judiciales."
+    },
+    {
+      "id": "t21-q271",
+      "pregunta": "¿Qué actuación puede exigir el régimen legal de un IPFNA sujeto a control después de repararlo o modificarlo?",
+      "opciones": [
+        "Solo esperar a que pasen dos años sin otro trámite",
+        "Verificación posterior a reparación o modificación",
+        "Cambiar su clase de exactitud libremente"
+      ],
+      "correcta": 1,
+      "explicacion": "La fase en servicio no se limita a la verificación periódica ordinaria.",
+      "fuente": "Orden ICT/155/2020, anexo I, instrumentos en servicio · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- La fase de instrumentos en servicio comprende la **verificación después de reparación o modificación** y la **verificación periódica**."
+    },
+    {
+      "id": "t21-q272",
+      "pregunta": "Durante su vida en servicio, ¿qué debe conservar el instrumento sujeto al régimen del anexo I?",
+      "opciones": [
+        "Cualquier clase que elija el usuario",
+        "Solo una apariencia exterior sin daños",
+        "Los requisitos de origen aplicables y su clase de exactitud"
+      ],
+      "correcta": 2,
+      "explicacion": "El uso continuado no permite rebajar libremente sus características reglamentarias.",
+      "fuente": "Orden ICT/155/2020, anexo I · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "- El instrumento debe seguir cumpliendo los requisitos que dieron origen a su comercialización y puesta en servicio, y conservar su clase de exactitud."
+    },
+    {
+      "id": "t21-q273",
+      "pregunta": "¿En qué anexo de la Orden ICT/155/2020 se regula el instrumento de pesaje de funcionamiento no automático del tema?",
+      "opciones": [
+        "Anexo I",
+        "Anexo de códigos LER",
+        "Anexo IV del CLP"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe distinguirse el anexo de esta orden del anexo VI del RD 244/2016.",
+      "fuente": "Orden ICT/155/2020, anexo I, IPFNA · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Cuando aplica, el régimen está en la **Orden ICT/155/2020** (texto consolidado a 03/10/2025), cuyo **anexo I** es el de los instrumentos de pesaje de funcionamiento no automático:"
+    },
+    {
+      "id": "t21-q274",
+      "pregunta": "¿Qué pareja de referencias corresponde al marco del tema para IPFNA?",
+      "opciones": [
+        "Solo la norma de sólidos en suspensión",
+        "RD 244/2016, anexo VI; Orden ICT/155/2020, anexo I",
+        "RD 656/2017, tabla LER; CLP, anexo VIII"
+      ],
+      "correcta": 1,
+      "explicacion": "Son referencias metrológicas del instrumento, distintas del método químico que lo utiliza.",
+      "fuente": "RD 244/2016, anexo VI; Orden ICT/155/2020, anexo I · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Los instrumentos de pesaje de funcionamiento no automático (**IPFNA**) se clasifican en cuatro clases de exactitud, según el RD 244/2016 (anexo VI) y la UNE-EN 45501:"
+    },
+    {
+      "id": "t21-q275",
+      "pregunta": "Un certificado muestra un error pequeño a 100 g, pero la rutina requiere masas netas de 2 mg. ¿Qué debe evitarse?",
+      "opciones": [
+        "Concluir aptitud para 2 mg solo con ese dato aislado",
+        "Comprobar prestaciones e incertidumbre en el intervalo relevante",
+        "Definir criterios de aceptación según el método"
+      ],
+      "correcta": 0,
+      "explicacion": "La capacidad en un punto de carga no demuestra automáticamente adecuación para cualquier masa neta.",
+      "fuente": "EURAMET cg-18, interpretación de resultados y uso previsto · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "La calibración da **error e incertidumbre**; que eso sea aceptable o no lo decide el laboratorio comparándolo con su propio **criterio de aceptación**, que fija según lo que necesita el método."
+    },
+    {
+      "id": "t21-q276",
+      "pregunta": "Una especie soluble se convierte en sólido poco soluble, se separa y se pesa. ¿Qué rasgo define esta determinación?",
+      "opciones": [
+        "Registro exclusivo de absorbancia",
+        "Medida del volumen de titulante como señal principal",
+        "Separación por precipitación"
+      ],
+      "correcta": 2,
+      "explicacion": "La masa de una forma química aislada es la señal de cuantificación.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, clases de gravimetría · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Gravimetría por precipitación** | El analito se separa como precipitado poco soluble de composición conocida, que se filtra, seca o calcina y se pesa | Sulfato como BaSO₄; cloruro como AgCl; níquel con dimetilglioxima |"
+    },
+    {
+      "id": "t21-q277",
+      "pregunta": "Se extrae un componente, se evapora el disolvente y se pesa lo que queda. ¿Qué se pesa en este método?",
+      "opciones": [
+        "El volumen del disolvente sin evaporar como única señal",
+        "El residuo de la extracción tras eliminar el disolvente",
+        "Solo el envase del disolvente"
+      ],
+      "correcta": 1,
+      "explicacion": "La extracción separa una fracción y la masa del residuo permite cuantificarla según el método.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, gravimetría por extracción · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Gravimetría por extracción** | El analito se extrae con un disolvente que después se evapora, y se pesa el residuo | Grasas y aceites, hidrocarburos |"
+    },
+    {
+      "id": "t21-q278",
+      "pregunta": "¿Por qué debe pesarse el electrodo antes y después en una electrogravimetría?",
+      "opciones": [
+        "Para medir el volumen del electrolito por diferencia",
+        "Para conocer únicamente su longitud",
+        "Para atribuir el incremento de masa al depósito"
+      ],
+      "correcta": 2,
+      "explicacion": "El electrodo es el soporte y su masa inicial debe descontarse.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, métodos electrogravimétricos · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Electrogravimetría** | El analito se deposita **por electrólisis** sobre un electrodo previamente pesado | Cobre depositado sobre cátodo de platino |"
+    },
+    {
+      "id": "t21-q279",
+      "pregunta": "¿Qué información diferencia una curva TGA de una sola pesada final?",
+      "opciones": [
+        "Evolución de masa con temperatura o tiempo",
+        "Solo el color final del precipitado",
+        "Solo el volumen de titulante gastado"
+      ],
+      "correcta": 0,
+      "explicacion": "El registro continuo permite observar etapas de pérdida o cambio de masa durante el tratamiento.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, termogravimetría · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Termogravimetría (TGA)** | Registro **continuo** de la masa frente a la temperatura o el tiempo | Curvas de descomposición, estudio de hidratos |"
+    },
+    {
+      "id": "t21-q280",
+      "pregunta": "Un componente volatilizado se captura en un absorbente previamente pesado. ¿Qué cambio sirve de señal en el método directo?",
+      "opciones": [
+        "El volumen exterior del absorbente",
+        "Aumento de masa del sistema absorbente por la especie recogida",
+        "Solo la masa del residuo del recipiente inicial"
+      ],
+      "correcta": 1,
+      "explicacion": "Se cuantifica lo que sale y se recoge, no únicamente la diferencia del recipiente original.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, volatilización directa · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Método directo:** se **recoge y se pesa** el componente volátil, atrapándolo en un absorbente. Pesa lo que se va."
+    },
+    {
+      "id": "t21-q281",
+      "pregunta": "Se calcula un componente a partir de la pérdida de masa de la muestra al tratarla. ¿Qué diferencia tiene frente a la volatilización directa?",
+      "opciones": [
+        "No necesita pesarlo capturado en un absorbente, sino por diferencia",
+        "Siempre mide una absorbancia",
+        "Siempre pesa un depósito metálico"
+      ],
+      "correcta": 0,
+      "explicacion": "La señal procede de la pérdida en el recipiente original bajo las condiciones definidas.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, volatilización indirecta · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "- **Método indirecto:** se pesa la muestra antes y después, y el analito se calcula **por diferencia de masa**. Pesa lo que queda. Es, con diferencia, el más habitual: todas las determinaciones de humedad, materia seca y sólidos en suspensión son indirectas."
+    },
+    {
+      "id": "t21-q282",
+      "pregunta": "¿Puede atribuirse cualquier pérdida de masa al calentar exclusivamente al agua sin conocer la muestra y el método?",
+      "opciones": [
+        "Solo si se dispone de una balanza clase I",
+        "Sí; toda pérdida térmica es necesariamente humedad",
+        "No; pueden volatilizarse o descomponerse otros componentes"
+      ],
+      "correcta": 2,
+      "explicacion": "La interpretación química exige conocer qué ocurre durante el tratamiento.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, interpretación de pérdidas de masa · apunte §3",
+      "apartado": "3",
+      "evidencia": "En una pérdida por calcinación se indica la base: la masa perdida **respecto de la materia seca inicial** no es el mismo porcentaje que respecto de la muestra húmeda. La pérdida por calentamiento **no identifica por sí sola qué componente se ha volatilizado**; la atribución a humedad o materia orgánica requiere el alcance y condiciones del método. Las cenizas son un residuo operacional del tratamiento, no necesariamente un compuesto puro de fórmula única. En un depósito electrogravimétrico se descuenta la masa del **electrodo antes del depósito**."
+    },
+    {
+      "id": "t21-q283",
+      "pregunta": "Se pierden 2 g al calcinar 8 g de materia seca. ¿Qué pérdida sobre materia seca corresponde?",
+      "opciones": [
+        "20 %",
+        "25 %",
+        "4 %"
+      ],
+      "correcta": 1,
+      "explicacion": "La base indicada es 8 g secos: 2/8 × 100, sin sustituirla por otra masa húmeda no especificada.",
+      "fuente": "UNE-EN 12879:2001, objeto y base de expresión; apunte §3 · apunte §3",
+      "apartado": "3",
+      "evidencia": "En una pérdida por calcinación se indica la base: la masa perdida **respecto de la materia seca inicial** no es el mismo porcentaje que respecto de la muestra húmeda. La pérdida por calentamiento **no identifica por sí sola qué componente se ha volatilizado**; la atribución a humedad o materia orgánica requiere el alcance y condiciones del método. Las cenizas son un residuo operacional del tratamiento, no necesariamente un compuesto puro de fórmula única. En un depósito electrogravimétrico se descuenta la masa del **electrodo antes del depósito**."
+    },
+    {
+      "id": "t21-q284",
+      "pregunta": "¿Por qué no se debe tratar toda ceniza como si fuera un precipitado puro de fórmula única?",
+      "opciones": [
+        "Porque toda ceniza es agua pura",
+        "Porque la ceniza no puede pesarse",
+        "Puede ser una mezcla residual definida por el tratamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "El significado de su masa es operacional y no equivale a una composición estequiométrica única.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, calcinación y cenizas · apunte §3",
+      "apartado": "3",
+      "evidencia": "En una pérdida por calcinación se indica la base: la masa perdida **respecto de la materia seca inicial** no es el mismo porcentaje que respecto de la muestra húmeda. La pérdida por calentamiento **no identifica por sí sola qué componente se ha volatilizado**; la atribución a humedad o materia orgánica requiere el alcance y condiciones del método. Las cenizas son un residuo operacional del tratamiento, no necesariamente un compuesto puro de fórmula única. En un depósito electrogravimétrico se descuenta la masa del **electrodo antes del depósito**."
+    },
+    {
+      "id": "t21-q285",
+      "pregunta": "¿Qué método citado se refiere a humedad y contenido en materia seca de lodos?",
+      "opciones": [
+        "UNE-EN 12880:2001",
+        "UNE-EN 12879:2001 como pérdida por calcinación",
+        "UNE-EN 45501:2016 como requisito de balanzas"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe distinguirse el secado de lodos del tratamiento posterior de la materia seca por calcinación.",
+      "fuente": "UNE-EN 12880:2001, título y campo general · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Humedad y materia seca (lodos) | Gravimetría por desecación | **UNE-EN 12880:2001** | % o g/kg | Estufa a **105 °C** hasta que no varíe la masa; aplicable a lodos líquidos, pastosos y sólidos |"
+    },
+    {
+      "id": "t21-q286",
+      "pregunta": "¿Qué material de partida se usa en la pérdida por calcinación de materia seca del esquema del tema?",
+      "opciones": [
+        "Una pesa patrón sin muestra",
+        "El residuo seco obtenido previamente",
+        "Solo una alícuota húmeda sin conocer materia seca"
+      ],
+      "correcta": 1,
+      "explicacion": "La secuencia permite expresar la pérdida sobre una base seca conocida.",
+      "fuente": "UNE-EN 12879:2001, secuencia respecto a materia seca · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Pérdida por calcinación de la materia seca (lodos) | Gravimetría por calcinación | **UNE-EN 12879:2001** | % de la materia seca | Se parte del residuo seco obtenido según la UNE-EN 12880; calcinación en mufla (≈ 550 °C, ver «Dudas») |"
+    },
+    {
+      "id": "t21-q287",
+      "pregunta": "¿Qué soporte filtrante recoge el tema para sólidos en suspensión por UNE-EN 872?",
+      "opciones": [
+        "Fibra de vidrio de borosilicato sin aglomerante",
+        "Cualquier papel doméstico sin control",
+        "Una placa maciza sin poros"
+      ],
+      "correcta": 0,
+      "explicacion": "El soporte forma parte del método y debe adecuarse a filtración y pesada.",
+      "fuente": "UNE-EN 872:2006, método de sólidos en suspensión, tabla operativa · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Sólidos en suspensión (agua bruta y residual) | Gravimetría por filtración y desecación (volatilización indirecta) | **UNE-EN 872:2006** | mg/L | Filtro de **fibra de vidrio de borosilicato sin aglomerante**; filtración a vacío o presión; secado a **105 °C ± 2 °C**; pesada hasta masa constante |"
+    },
+    {
+      "id": "t21-q288",
+      "pregunta": "¿Qué operación separa la fracción de sólidos en suspensión en el método citado?",
+      "opciones": [
+        "Medida directa del pH como única señal",
+        "Titulación ácido-base del agua sin filtrar",
+        "Filtración mediante el soporte especificado"
+      ],
+      "correcta": 2,
+      "explicacion": "Se pesa el material retenido después del acondicionamiento previsto.",
+      "fuente": "UNE-EN 872:2006, descripción general del método · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Sólidos en suspensión (agua bruta y residual) | Gravimetría por filtración y desecación (volatilización indirecta) | **UNE-EN 872:2006** | mg/L | Filtro de **fibra de vidrio de borosilicato sin aglomerante**; filtración a vacío o presión; secado a **105 °C ± 2 °C**; pesada hasta masa constante |"
+    },
+    {
+      "id": "t21-q289",
+      "pregunta": "Un filtro acondicionado pesa 1,0000 g y tras el ensayo 1,0035 g. Sin corrección de blanco, ¿qué masa neta corresponde?",
+      "opciones": [
+        "1.003,5 mg",
+        "3,5 mg",
+        "0,35 mg"
+      ],
+      "correcta": 1,
+      "explicacion": "La resta da 0,0035 g; debe convertirse correctamente a miligramos.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, diferencia de masas · apunte §3",
+      "apartado": "3",
+      "evidencia": "La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**."
+    },
+    {
+      "id": "t21-q290",
+      "pregunta": "¿Qué ayuda a detectar un blanco gravimétrico procesado sin la muestra?",
+      "opciones": [
+        "La composición exacta de toda impureza por sí solo",
+        "El contenido real de analito de cualquier muestra sin medirla",
+        "Masa aportada por reactivos, soporte o manipulación"
+      ],
+      "correcta": 2,
+      "explicacion": "El blanco permite investigar contribuciones ajenas al analito que se pretende cuantificar.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, blanco analítico · apunte §3",
+      "apartado": "3",
+      "evidencia": "La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**."
+    },
+    {
+      "id": "t21-q291",
+      "pregunta": "Un método prescribe restar el blanco: la masa neta observada es 5,0 mg y el blanco 0,4 mg. ¿Qué masa corregida se usa?",
+      "opciones": [
+        "4,6 mg",
+        "5,4 mg",
+        "0,4 mg"
+      ],
+      "correcta": 0,
+      "explicacion": "La contribución ajena se descuenta conforme al procedimiento, no se suma.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, corrección de blanco · apunte §3",
+      "apartado": "3",
+      "evidencia": "La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**."
+    },
+    {
+      "id": "t21-q292",
+      "pregunta": "Si se usa la masa total de filtro más sólidos en lugar de su incremento neto, ¿qué ocurre con la concentración calculada?",
+      "opciones": [
+        "Solo cambia la unidad, sin afectar al valor",
+        "Se incluye indebidamente la masa del soporte",
+        "Se corrige automáticamente el blanco"
+      ],
+      "correcta": 1,
+      "explicacion": "La masa de filtro no representa sólidos de la muestra.",
+      "fuente": "UNE-EN 872:2006, expresión del resultado; apunte §3 · apunte §3",
+      "apartado": "3",
+      "evidencia": "La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**."
+    },
+    {
+      "id": "t21-q293",
+      "pregunta": "¿Qué pareja de unidades es coherente con los ejemplos de concentración másica del tema?",
+      "opciones": [
+        "mg/L para agua y µg/m³ para aire",
+        "Gramos como única unidad de cualquier concentración",
+        "Mililitros para toda masa retenida"
+      ],
+      "correcta": 0,
+      "explicacion": "Una concentración másica relaciona masa con volumen de la matriz.",
+      "fuente": "UNE-EN 872:2006; UNE-EN 12341:2024, magnitudes y unidades · apunte §3",
+      "apartado": "3",
+      "evidencia": "La masa gravimétrica se calcula **descontando el soporte o recipiente previamente acondicionado**: masa final menos masa inicial del soporte. Un blanco del procedimiento ayuda a detectar aportes de reactivos, filtro o manipulación; cuando el método lo requiere se corrige la masa por ese aporte. La masa neta retenida dividida por el volumen filtrado da la concentración; deben distinguirse **mg/L en agua y µg/m³ en aire**."
+    },
+    {
+      "id": "t21-q294",
+      "pregunta": "¿Qué información falta si solo se conoce la masa de partículas captada en un filtro de aire?",
+      "opciones": [
+        "El volumen de un matraz de titulación",
+        "La masa molar única de toda partícula",
+        "El volumen de aire muestreado para obtener concentración"
+      ],
+      "correcta": 2,
+      "explicacion": "Una misma masa captada puede representar concentraciones distintas si cambia el volumen de aire.",
+      "fuente": "UNE-EN 12341:2024, fundamento gravimétrico de PM10 y PM2,5 · apunte §3",
+      "apartado": "3",
+      "evidencia": "En filtros de partículas atmosféricas, el acondicionamiento y la manipulación evitan confundir cambios de humedad o contaminación con masa captada. La concentración requiere la **masa captada y el volumen de aire muestreado**; pesar el filtro solo no determina una concentración ambiental. No se extrapolan a una edición nueva todos los detalles numéricos de una edición anterior sin comprobarlos."
+    },
+    {
+      "id": "t21-q295",
+      "pregunta": "¿Por qué se acondicionan los filtros atmosféricos antes de comparar sus masas?",
+      "opciones": [
+        "Para aumentar deliberadamente el polvo ambiental depositado a mano",
+        "Para limitar cambios ajenos a las partículas captadas, como humedad",
+        "Para eliminar la necesidad de registrar el volumen muestreado"
+      ],
+      "correcta": 1,
+      "explicacion": "Las condiciones de pesada deben hacer comparables las masas inicial y final.",
+      "fuente": "UNE-EN 12341, acondicionamiento de filtros; apunte §3 · apunte §3",
+      "apartado": "3",
+      "evidencia": "En filtros de partículas atmosféricas, el acondicionamiento y la manipulación evitan confundir cambios de humedad o contaminación con masa captada. La concentración requiere la **masa captada y el volumen de aire muestreado**; pesar el filtro solo no determina una concentración ambiental. No se extrapolan a una edición nueva todos los detalles numéricos de una edición anterior sin comprobarlos."
+    },
+    {
+      "id": "t21-q296",
+      "pregunta": "¿Qué precaución evita aportar contaminación de las manos a un filtro para partículas?",
+      "opciones": [
+        "Frotarlo antes de la pesada",
+        "Sujeción sobre la superficie de colección con los dedos",
+        "Manipulación con pinzas adecuadas"
+      ],
+      "correcta": 2,
+      "explicacion": "Una contaminación pequeña puede ser importante frente a la masa captada.",
+      "fuente": "ISCIII, LNR 02/2015, principales cambios en UNE-EN 12341:2015 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| PM10 y PM2,5 (aire ambiente) | Gravimetría sobre filtro | **UNE-EN 12341:2024**; el RD 102/2011 remite todavía a la ed. **2015** | µg/m³ | Cuarto de pesadas a **19-21 °C** y **45-50 % HR** (medias horarias); filtros manipulados **con pinzas**; acondicionamiento y doble pesada, con criterio de estabilidad de **40 µg** (filtros sin muestrear) y **60 µg** (muestreados) |"
+    },
+    {
+      "id": "t21-q297",
+      "pregunta": "Al cambiar una norma de edición, ¿qué debe hacerse antes de trasladar todos sus detalles operativos?",
+      "opciones": [
+        "Comprobar los requisitos de la edición aplicable",
+        "Suponer que solo ha cambiado la portada",
+        "Usar siempre la edición más antigua sin atender al método"
+      ],
+      "correcta": 0,
+      "explicacion": "Título, fecha y requisitos concretos deben distinguirse; no toda revisión conserva cada condición numérica.",
+      "fuente": "UNE-EN 12341:2024; apunte, límites de verificación de ediciones · apunte §3",
+      "apartado": "3",
+      "evidencia": "En filtros de partículas atmosféricas, el acondicionamiento y la manipulación evitan confundir cambios de humedad o contaminación con masa captada. La concentración requiere la **masa captada y el volumen de aire muestreado**; pesar el filtro solo no determina una concentración ambiental. No se extrapolan a una edición nueva todos los detalles numéricos de una edición anterior sin comprobarlos."
+    },
+    {
+      "id": "t21-q298",
+      "pregunta": "Una determinación usa AgCl como forma de pesada. ¿Qué cuidado evita una alteración fotoquímica indicada en el tema?",
+      "opciones": [
+        "Sustituir F por el volumen del vaso",
+        "Protegerlo de la luz según el método",
+        "Mantenerlo siempre al sol para estabilizarlo"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe conservarse la composición de la forma pesada durante preparación y medida.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, gravimetría de cloruros · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Cloruro | Gravimetría por precipitación | Método clásico (Vogel) | mg/L o % | Precipitación con AgNO₃; se pesa como **AgCl**; **protegido de la luz** (el AgCl fotodescompone) |"
+    },
+    {
+      "id": "t21-q299",
+      "pregunta": "¿Qué diferencia básica hay entre residuo seco total y sólidos retenidos por filtración?",
+      "opciones": [
+        "El primero se obtiene al evaporar la alícuota; la filtración separa la fracción retenida",
+        "Son siempre idénticos en cualquier agua",
+        "El residuo seco se obtiene sin retirar líquido"
+      ],
+      "correcta": 0,
+      "explicacion": "Los procedimientos operacionales recuperan fracciones diferentes de la muestra.",
+      "fuente": "Harris, Análisis Químico Cuantitativo, determinación de sólidos totales · apunte §3",
+      "apartado": "3",
+      "evidencia": "| Pérdida por calcinación de la materia seca (lodos) | Gravimetría por calcinación | **UNE-EN 12879:2001** | % de la materia seca | Se parte del residuo seco obtenido según la UNE-EN 12880; calcinación en mufla (≈ 550 °C, ver «Dudas») |"
+    },
+    {
+      "id": "t21-q300",
+      "pregunta": "¿Qué ejemplo del tema utiliza un reactivo orgánico para formar una especie gravimétrica?",
+      "opciones": [
+        "Cobre por depósito electrolítico",
+        "Humedad por pérdida en estufa",
+        "Níquel con dimetilglioxima"
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación depende de cómo se separa y mide el analito, no de que el reactivo sea orgánico o inorgánico.",
+      "fuente": "Skoog y otros, Fundamentos de Química Analítica, ejemplos de precipitación gravimétrica · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "| **Gravimetría por precipitación** | El analito se separa como precipitado poco soluble de composición conocida, que se filtra, seca o calcina y se pesa | Sulfato como BaSO₄; cloruro como AgCl; níquel con dimetilglioxima |"
     }
   ],
   "supuestos": [

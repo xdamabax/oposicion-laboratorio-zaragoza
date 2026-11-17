@@ -5,7 +5,7 @@ parte: Parte segunda
 estado: aprobado
 verificado: 2026-09-22
 fuentes:
-  - "Real Decreto 509/1996, de 15 de marzo (BOE-A-1996-7159), texto consolidado. LEÍDO LITERALMENTE: artículo 5 (zonas sensibles) y anexo I, cuadro 2 completo, con sus tres notas —incluida la definición de nitrógeno total— y el método de medida de referencia de los dos parámetros. — https://www.boe.es/buscar/act.php?id=BOE-A-1996-7159"
+  - "Real Decreto 509/1996, de 15 de marzo (BOE-A-1996-7159), texto consolidado. LEÍDO LITERALMENTE: artículo 6 (zonas sensibles) y anexo I, cuadro 2 completo, con sus tres notas —incluida la definición de nitrógeno total— y el método de medida de referencia de los dos parámetros. — https://www.boe.es/buscar/act.php?id=BOE-A-1996-7159"
   - "Directiva (UE) 2024/3019 del Parlamento Europeo y del Consejo, de 27 de noviembre de 2024, sobre el tratamiento de las aguas residuales urbanas (versión refundida). PDF oficial de 59 páginas descargado del BOE y extraído a texto. LEÍDO: anexo I, cuadro 2 (tratamiento terciario) íntegro con sus cinco notas, y cuadro 3 (tratamiento cuaternario). CONTRASTADO con la VERSIÓN INGLESA oficial de EUR-Lex para verificar una errata de la traducción española. — https://www.boe.es/doue/2024/3019/L00001-00059.pdf"
   - "Directive (EU) 2024/3019, versión inglesa oficial, PDF de EUR-Lex. Leída Annex I, Table 2, para contrastar la columna «Minimum percentage of reduction» con la española. — https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202403019"
   - "Real Decreto 817/2015, de 11 de septiembre, por el que se establecen los criterios de seguimiento y evaluación del estado de las aguas superficiales y las normas de calidad ambiental (BOE-A-2015-9806), texto consolidado. LEÍDO LITERALMENTE: anexo IV, apartado A (unidades, cabecera y filas de cadmio, plomo, mercurio y níquel), notas 4, 6 y 10, y apartado B punto 3 (concentración disuelta); anexo V, apartado A (arsénico, cobre, cromo, cromo VI, selenio, zinc, cianuros y fluoruros) y su regla de concentración disuelta. — https://www.boe.es/buscar/act.php?id=BOE-A-2015-9806"
@@ -73,9 +73,9 @@ fuentes:
 
 Este tema es el **hermano del 34**, y conviene ver en qué se parecen y en qué no.
 
-En el 34, los tres parámetros medían **carga orgánica y particulada**: cuánta materia lleva el agua. Aquí los tres miden **cosas que el tratamiento biológico convencional NO quita**: los **nutrientes** —nitrógeno y fósforo— y los **metales**.
+En el 34, los tres parámetros medían **carga orgánica y particulada**: cuánta materia lleva el agua. Aquí los tres miden **nutrientes y elementos que requieren evaluar eliminación y destino específicos**: los **nutrientes** —nitrógeno y fósforo— y los **metales**.
 
-**Y esa es la clave del encuadre:** un tratamiento secundario reduce la DBO y los sólidos, pero **el nitrógeno y el fósforo salen casi enteros** si no se hace algo más. Por eso el RD 509/1996 los mete en **un cuadro aparte**, el cuadro 2, que **no se aplica siempre**: solo en **zonas sensibles**. Y por eso la Directiva de 2024 los llama, directamente, **«tratamiento terciario»**.
+**Y esa es la clave del encuadre:** un tratamiento secundario puede reducir DBO y sólidos y retirar parte de nutrientes, sin garantizar su eliminación específica avanzada. Por eso el RD 509/1996 los mete en **un cuadro aparte**, el cuadro 2, que **no se aplica siempre**: solo en **zonas sensibles**. Y por eso la Directiva de 2024 los llama, directamente, **«tratamiento terciario»**.
 
 Los metales son otra historia: **no se destruyen**. Un depurador puede oxidar materia orgánica, pero un átomo de cadmio sigue siendo cadmio. O se retiene en el fango, o sale con el agua. Por eso su control es **preventivo y en origen** —limitando lo que cada industria puede verter a la red— y **su régimen no está en el RD 509/1996**, sino en la normativa de vertidos y en las **normas de calidad ambiental** del medio receptor.
 
@@ -84,10 +84,12 @@ Los metales son otra historia: **no se destruyen**. Un depurador puede oxidar ma
 | | Qué es | Por qué se controla | Dónde están sus valores |
 | --- | --- | --- | --- |
 | **Nitrógeno total** | Nutriente. Suma de **cuatro fracciones** | **Eutrofización** del medio receptor | **Cuadro 2** del RD 509/1996 (zonas sensibles) |
-| **Fósforo total** | Nutriente. Normalmente **el factor limitante** de la eutrofización | Íd., y suele ser **el más eficaz de limitar** | Íd. |
+| **Fósforo total** | Nutriente que puede actuar como factor limitante según el medio | Íd.; la estrategia depende de las condiciones del medio | Íd. |
 | **Metales** | **No se degradan.** Se acumulan | **Toxicidad** y bioacumulación | **Reglamento de vertidos** y **NCA del RD 817/2015** |
 
 ---
+
+**Alcance de nutrientes.** Un tratamiento secundario puede retirar parte de nutrientes según proceso y condiciones, sin garantizar por definición su eliminación específica avanzada. El nutriente limitante depende del sistema acuático y no se identifica universalmente con fósforo.
 
 ## 2. Desarrollo
 
@@ -119,6 +121,8 @@ Es decir:
 
 **La norma del Kjeldahl, verificada:** **UNE-EN 25663:1994** (ISO 5663:1984), *«Determinación del nitrógeno Kjeldahl. Método de mineralización con SELENIO»*. **En vigor**, confirmada en 2008. Anuló la UNE 77055:1983.
 
+**Fracciones y base de nitrógeno.** La suma N total = N Kjeldahl + N de nitrato + N de nitrito usa todos los términos como N, para fracciones y muestras compatibles. El amonio ya está incluido en Kjeldahl y no se suma otra vez. El Kjeldahl clásico no incluye cuantitativamente nitrato y nitrito; no se generaliza a variantes modificadas que incorporen tratamientos específicos. Para obtener N orgánico por diferencia se resta N amoniacal de Kjeldahl en la misma base y fracción. Resultado negativo obliga a investigar incertidumbre, preparación y datos, no representa una concentración física negativa. Un aumento de nitrato con descenso de amonio puede representar transformación entre especies sin retirada equivalente de N total; concentración, forma química y carga son conceptos distintos. No todo N orgánico tiene idéntico estado de oxidación ni toda digestión recupera cualquier especie por definición. Nitrógeno enlazado total no incluye el N₂ gaseoso disuelto según la ficha pública ISO 20236:2024. «Total» debe ir acompañado de su definición y alcance analítico.
+
 ### 2.2. Cómo se mide el nitrógeno total
 
 **Hay dos caminos, y son filosóficamente opuestos.**
@@ -140,13 +144,13 @@ Medir cada fracción por separado y sumarlas: **Kjeldahl + nitrito + nitrato**. 
 
 **Convertir TODO el nitrógeno a la misma forma y medirlo junto.** Dos maneras:
 
-**a) Mineralización oxidante con peroxodisulfato.** Se oxida todo a **nitrato** y se mide el nitrato. Norma: **UNE-EN ISO 11905-1:1998** (ISO 11905-1:1997), **en vigor**, confirmada en 2008.
+**a) Mineralización oxidante con peroxodisulfato.** Se convierten las especies incluidas en el alcance a **nitrato** y se mide, con control de recuperación. Norma: **UNE-EN ISO 11905-1:1998** (ISO 11905-1:1997), **en vigor**, confirmada en 2008.
 
-**b) Combustión oxidativa y quimioluminiscencia — que es la respuesta del examen.** La muestra se quema a alta temperatura con un catalizador; **todo el nitrógeno enlazado acaba como óxidos de nitrógeno (NO)**, y el NO se detecta por **quimioluminiscencia** al reaccionar con ozono.
+**b) Combustión oxidativa y quimioluminiscencia — que es la respuesta del examen.** La muestra se quema a alta temperatura con un catalizador; **las formas de nitrógeno enlazado incluidas y recuperadas se convierten a óxidos de nitrógeno para detección**, y el NO se detecta por **quimioluminiscencia** al reaccionar con ozono.
 
 > **1233 C2 #9 y 1322 C2 #35: «Análisis por COMBUSTIÓN OXIDATIVA / QUIMIOLUMINISCENCIA.»**
 >
-> Los distractores, en los dos años: *método de las diluciones* (que es la DBO, tema 34), *complexometría* (la dureza), *cromatografía de gases con detector selectivo*, *cromatografía líquida* y *cromatografía iónica*. **La cromatografía iónica daría el nitrato y el nitrito, pero no el orgánico**, así que tampoco sirve para el total.
+> Los distractores, en los dos años: *método de las diluciones* (que es la DBO, tema 34), *complexometría* (la dureza), *cromatografía de gases con detector selectivo*, *cromatografía líquida* y *cromatografía iónica*. **La cromatografía iónica ordinaria sin conversión previa mide nitrato y nitrito, no todo el N orgánico**. Una preparación de conversión validada puede permitir emplearla como detección en otro método global.
 
 **La norma, y su historia reciente, que es material de examen por sí sola:**
 
@@ -158,9 +162,11 @@ Medir cada fracción por separado y sumarlas: **Kjeldahl + nitrito + nitrato**. 
 
 **El título de la vigente dice mucho más de lo que parece:** *«Determinación del **carbono orgánico total (TOC)**, **carbono orgánico disuelto (DOC)**, **nitrógeno enlazado total (TNb)** y **nitrógeno enlazado disuelto (DNb)** tras **combustión oxidativa catalítica a alta temperatura**»*.
 
-> **Es decir: LA MISMA NORMA Y EL MISMO APARATO dan el COT y el nitrógeno total.** El analizador quema la muestra y mide el CO₂ por infrarrojo y el NO por quimioluminiscencia, **a la vez**.
+> **La norma contempla varias magnitudes y un equipo adecuadamente configurado puede combinarlas; no se garantiza esa capacidad para cualquier aparato.** El analizador quema la muestra y mide el CO₂ por infrarrojo y el NO por quimioluminiscencia, **a la vez**.
 >
 > Y eso enlaza los tres temas de agua: el **COT** que el RD 3/2023 usa en los abastecimientos grandes (**tema 33**), el **COT** que la Directiva de 2024 añade al cuadro 1 (**tema 34**) y el **nitrógeno total** de este tema **salen del mismo instrumento**.
+
+**Comparar métodos de nitrógeno.** La vía de fracciones ofrece desglose, pero exige unidades como N y evitar doble cómputo. Pasar de NO₃⁻ a N usa 14/62, de NO₂⁻ a N usa 14/46 y de NH₄⁺ a N usa 14/18, con las masas aproximadas declaradas; no son factores de dilución. La medida global por combustión o mineralización requiere demostrar recuperación y adecuación a matriz, partículas y rango. El título de la norma no garantiza que cualquier equipo mida simultáneamente C y N con cualquier detector: se necesita la configuración y calibración correspondientes. La combustión puede detectar N convertido a óxidos y la quimioluminiscencia es una forma de detección del esquema de examen. Peroxodisulfato convierte especies incluidas en su alcance a nitrato antes de detección; un cromatógrafo iónico ordinario sin esa conversión mide aniones específicos, no todo N orgánico. Tras una preparación adecuada puede formar parte de un método global validado; no se declara que toda combinación con cromatografía sea imposible. Medir nitrato por UV necesita controlar interferencias de matriz, no basta una absorbancia a 220 nm para demostrar selectividad. El tratamiento secundario puede retirar parte de nutrientes según proceso y condiciones: no se afirma que siempre salgan íntegros ni que cualquier instalación garantice eliminación específica avanzada.
 
 ### 2.3. Fósforo total
 
@@ -170,7 +176,7 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 
 > **Por eso el fósforo TOTAL exige una DIGESTIÓN PREVIA**, que convierte todas las formas en ortofosfato antes de medir. Y por eso las tres respuestas del examen empiezan igual: **«digestión ácida y…»**.
 >
-> **Sin digestión no se mide fósforo total: se mide ortofosfato**, que es otro parámetro.
+> **En este esquema colorimétrico**, sin descomposición no se acredita fósforo total: se mide el fósforo reactivo del método. No es una prohibición universal de otra técnica validada.
 
 #### 2.3.2. El método
 
@@ -188,6 +194,8 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 
 **Alternativa normalizada, por si aparece:** **UNE-EN ISO 15681-1 y -2**, ortofosfato y fósforo total por **análisis en flujo** (FIA y CFA). Las dos vigentes en el catálogo del ISO.
 
+**Fracciones y medida de fósforo.** Ortofosfato reactivo, fósforo hidrolizable y fósforo total son mensurandos diferentes. La digestión es la conversión previa necesaria en el esquema colorimétrico de fósforo total: no se formula como prohibición universal de otra técnica validada. La medida sin esa descomposición corresponde a fósforo reactivo bajo el método, no necesariamente a una especiación absoluta de todo el ortofosfato libre. Hay formas disueltas y particuladas: filtrar antes de pedir total cambia la fracción. La eficacia de digestión, blanco, contaminación y recuperación se controlan; un color intenso no demuestra conversión completa. La calibración y unidades se definen como P o como fosfato, que no son numéricamente iguales: con masas aproximadas 31 y 95, mg/L PO₄³⁻ = mg/L P·95/31. Azul de molibdeno, longitud de onda y rango son condiciones del método; no toda absorción molecular de fósforo usa un único color o rango. El ácido ascórbico tiene función reductora en el esquema citado. Turbidez, color propio y reactivos pueden aportar absorbancia; se aplican correcciones y controles del procedimiento. La referencia del cuadro 2 es espectrofotometría de absorción molecular, sin convertir una respuesta de examen en única técnica de todo laboratorio.
+
 ### 2.4. Metales: la distinción que lo decide todo
 
 **La técnica es de los temas 26 y 27** —absorción atómica, **ICP-OES** y **ICP-MS**, con las normas **UNE-EN ISO 11885:2010** y **UNE-EN ISO 17294-2:2024**—. Lo que toca aquí es el **parámetro**, y empieza por una pregunta que no es analítica sino jurídica: **¿metal total o metal disuelto?**
@@ -197,14 +205,14 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 | | Qué se mide | Cómo se prepara la muestra | Dónde se exige |
 | --- | --- | --- | --- |
 | **Metal TOTAL** | Todo el metal, incluido el que va **adherido a las partículas** | **DIGESTIÓN ÁCIDA en caliente**, sin filtrar (UNE-EN ISO 15587-1 con agua regia o **-2** con ácido nítrico) | **Vertidos**: reglamento aragonés, art. 16 |
-| **Metal DISUELTO** | Solo la fase disuelta | **FILTRACIÓN por membrana de 0,45 µm**, sin digerir | **NCA** del RD 817/2015 para Cd, Pb, Hg, Ni (anexo IV) y As, Cu, Cr, Se, Zn (anexo V) |
+| **Metal DISUELTO** | Solo la fase disuelta | **FILTRACIÓN por membrana de 0,45 µm**, seguida de conservación y tratamiento según el método | **NCA** del RD 817/2015 para Cd, Pb, Hg, Ni (anexo IV) y As, Cu, Cr, Se, Zn (anexo V) |
 
 **Las dos reglas, literales:**
 
 - **Reglamento aragonés, artículo 16, última línea de la tabla:** *«Los límites de esta tabla referentes a metales se consideran como **concentración TOTAL** de los mismos.»*
 - **RD 817/2015, anexo IV, apartado B.3:** *«Las NCA del agua establecidas en el presente anexo se expresan como **concentraciones totales en toda la muestra de agua**. Como excepción al párrafo primero, en el caso del **cadmio, plomo, mercurio y níquel**, las NCA del agua se refieren a la **concentración DISUELTA**, es decir, la fase disuelta de una muestra de agua obtenida por **filtración a través de membrana de 0,45 μm** o cualquier otro pretratamiento equivalente, o bien, cuando se indique de modo específico, a la concentración **biodisponible**.»* *(La misma excepción, en el anexo V, para arsénico, cobre, cromo, selenio y zinc.)*
 
-> **MISMO METAL, DOS PREPARACIONES OPUESTAS, SEGÚN PARA QUÉ SE MIDA.** Si es un vertido, **se digiere**. Si es el estado del río, **se filtra**. Confundirlas invalida el resultado, y es la clase de matiz que distingue una respuesta buena.
+> **MISMO METAL, DOS PREPARACIONES OPUESTAS, SEGÚN PARA QUÉ SE MIDA.** Se define primero el mensurando y la fracción. Una digestión concreta no garantiza disolver cualquier matriz, y las NCA pueden referirse a disuelto o a biodisponible cuando se indique. Confundirlas invalida el resultado, y es la clase de matiz que distingue una respuesta buena.
 >
 > Y fíjate en el detalle bonito: **esa membrana de 0,45 µm es la misma que el RD 509/1996 usa para los sólidos en suspensión** (tema 34). El mismo corte físico separa dos parámetros distintos.
 
@@ -212,9 +220,11 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 
 > **1322 C2 #40: «Análisis de metales: Hg, As, Sb, Se, Cd, Cu, Cr, Ni, Pb, Fe, Mn y Zn» → «DIGESTIÓN ÁCIDA de la muestra y posterior determinación de los metales por ICP-MS».**
 >
-> Son **doce metales de una sola vez**, y ahí está la razón de la respuesta: **el ICP-MS es multielemental**. Los distractores —*espectrometría de absorción molecular*, *HPLC para su separación*, *cromatografía gaseosa con masas*— fallan todos por lo mismo: **no son técnicas de metales**.
+> Son **doce metales de una sola vez**, y ahí está la razón de la respuesta: **el ICP-MS es multielemental**. Los distractores —*espectrometría de absorción molecular*, *HPLC para su separación*, *cromatografía gaseosa con masas*— fallan todos por lo mismo: **no describen la determinación multielemental solicitada**; ello no niega aplicaciones colorimétricas o cromatográficas a especies metálicas.
 >
 > Y lo mismo, en singular, para el **plomo**: **1233 C2 #1** y **1246 C2 #9**, las dos veces **ICP-MS**.
+
+**Fracción metálica y recuperación.** Total de un metal no significa suma de todos los metales. Filtrar antes de acidificar delimita la fracción disuelta según el procedimiento; digerir la muestra completa y filtrar después no reconstruye esa fracción original. La conservación ácida puede movilizar metal de partículas, por lo que el orden importa. Un filtrado puede necesitar tratamiento posterior permitido por el método sin incorporar las partículas ya separadas: «disuelto» no es una prohibición universal de cualquier tratamiento. Agua regia o nítrico no garantizan disolución absoluta de cualquier matriz refractaria; se distingue total definido normativamente y recuperación del método. La preparación se valida con blancos, recuperación y materiales de control apropiados. La contaminación de filtro, envase, ácido o conexiones puede dominar trazas; un blanco instrumental limpio no descarta contaminación de preparación. ICP-MS, ICP-OES y absorción atómica tienen alcances y condiciones propios: una concentración alta puede diluirse para ICP-MS y una traza puede ser accesible a otra técnica adecuada. No se elige solo por una etiqueta «alto/bajo». La especiación de Cr(VI) requiere método y conservación apropiados; el cromo elemental total por ICP no distingue estados de oxidación por sí solo. Técnicas cromatográficas acopladas o colorimétricas específicas pueden estudiar especies metálicas: no se afirma que toda HPLC o absorción molecular sea ajena a cualquier metal. Una señal de un isótopo no garantiza ausencia de interferencias o identidad inequívoca de una especie química.
 
 ### 2.5. Los valores: el cuadro 2 del RD 509/1996
 
@@ -237,11 +247,13 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 >
 > **Y la razón de los 12 °C:** por debajo de esa temperatura **las bacterias nitrificantes y desnitrificantes van muy lentas**. La ley reconoce que eliminar nitrógeno en invierno es físicamente más difícil.
 
-**Quién es «zona sensible»:** las masas de agua declaradas conforme al artículo 7.3 del RD-ley 11/1995 y al anexo II del RD 509/1996. Y **el artículo 5.2 del RD 509/1996** permite eximir a una instalación concreta del cuadro 2 **si se demuestra que el conjunto de las instalaciones de esa zona sensible reduce al menos el 75 % del fósforo total y del nitrógeno total**.
+**Quién es «zona sensible»:** las masas de agua declaradas conforme al artículo 7.3 del RD-ley 11/1995 y al anexo II del RD 509/1996. Y **el artículo 6.1 del RD 509/1996** permite eximir a una instalación concreta del cuadro 2 **si se demuestra que el conjunto de las instalaciones de esa zona sensible reduce al menos el 75 % del fósforo total y del nitrógeno total**.
+
+**Ámbito y comprobación de nutrientes.** El artículo 6 del RD 509/1996 regula vertidos a zonas sensibles y los que contribuyan a su contaminación; no es el artículo 5.2. En autorizaciones puede eximirse del cuadro 2 si el conjunto de instalaciones de la zona alcanza al menos 75 % de reducción global de carga tanto de N total como de P total. No basta solo uno ni se interpreta como 75 % de concentración de cualquier muestra. Se aplican las condiciones de zona, población y autorización; puede haber requisitos más rigurosos para proteger el receptor. El cuadro 2 admite uno o ambos parámetros según situación local, con concentración o reducción dentro de su ámbito. La evaluación ordinaria es media anual conforme al anexo III A.2.3; no se traslada automáticamente la tabla de muestras no conformes del cuadro 1. La alternativa diaria de nitrógeno exige igual nivel de protección, 20 mg/L en las condiciones previstas y temperatura de efluente de reactor ≥12 °C, o la alternativa de limitación de tiempo que prevé la nota. Se distinguen h-e de población residente y carga de concentración: carga en kg/día = C en mg/L·Q en m³/día/1000. Una media de porcentajes no equivale necesariamente al porcentaje global de cargas. El factor limitante de eutrofización depende del medio; no se afirma que siempre sea el fósforo en toda masa de agua.
 
 ### 2.6. Lo que cambia la Directiva (UE) 2024/3019
 
-**El tema 34 fijó las dos fechas, y siguen valiendo:** transposición **a más tardar el 31 de julio de 2027** (art. 33) y derogación de la 91/271/CEE **con efecto de 1 de agosto de 2027** (art. 32). **Hasta entonces, lo aplicable en España es el cuadro 2 del RD 509/1996.**
+**El tema 34 fijó las dos fechas, y siguen valiendo:** transposición **a más tardar el 31 de julio de 2027** (art. 33) y derogación de la 91/271/CEE **con efecto de 1 de agosto de 2027** (art. 32). **Se comprueban la norma nacional vigente, el ámbito y los transitorios; la fecha europea no deroga por sí sola todo el RD nacional.**
 
 **Pero mientras que con la DBO, la DQO y los sólidos la directiva repetía los números, con los nutrientes los aprieta:**
 
@@ -263,6 +275,8 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 > **UNA ERRATA DE LA VERSIÓN ESPAÑOLA, COMPROBADA CONTRA LA INGLESA.** En el cuadro 2 del DOUE español, la columna «Porcentaje mínimo de reducción» del fósforo total escribe **«90 mg/l (como mínimo 150 000 h-e)»**. **Es un error de traducción:** la columna es de **porcentajes**, el valor paralelo dice **«87,5»** sin unidades, y la **versión inglesa oficial** escribe **«90 (150 000 p.e. and above)»**, también sin unidades.
 >
 > **Lo correcto es 90 %.** Lo dejo anotado como se han anotado las erratas del RD 3/2023 en los temas 29 y 33, y la del RD 509/1996 en el 34: **hay que responder lo que la norma quiere decir, sabiendo que el texto publicado tiene el desliz.**
+
+**Directiva y calendario.** Los valores nuevos de la tabla europea no sustituyen por sí solos cualquier permiso nacional desde una fecha única. Se leen artículo 7, ámbitos por tamaño y eutrofización, calendario escalonado y transitorios del artículo 32, además de transposición. El escalón de 150000 h-e y la pareja de concentración/reducción se atribuyen expresamente al cuadro 2 de Directiva 2024/3019, no al cuadro 2 anterior del RD 509/1996. La columna española «90 mg/l» en reducción de fósforo contiene una incoherencia dimensional; la versión inglesa expresa 90 sin unidad de concentración y el contexto corresponde a porcentaje. La observación se declara como contraste entre versiones oficiales y no como una corrección formal publicada. La eliminación cuaternaria de microcontaminantes tiene objeto y lista de indicadores distintos de la eliminación de nutrientes; no se confunde terciario con cuaternario.
 
 ### 2.7. Vertido a la red municipal: los límites que se aplican en Zaragoza
 
@@ -297,7 +311,9 @@ El fósforo en un agua está en **tres formas**: **ortofosfato** disuelto (PO₄
 2. **El cromo aparece TRES veces:** III, VI y total. El **Cr(VI)** es cinco veces más estricto que el total, porque es **el tóxico y cancerígeno**. *(La técnica que los distingue —difenilcarbazida— es del tema 25.)*
 3. **Y la advertencia final: «los límites de esta tabla referentes a metales se consideran como concentración TOTAL».**
 
-**A efectos de sanción**, el reglamento clasifica los contaminantes en dos grupos, y aquí se reparten: **el fósforo total y el nitrógeno van al Grupo A**, «de menor peligrosidad»; **todos los metales van al Grupo B**, «de mayor peligrosidad» —aluminio, arsénico, cadmio, cobre, cromo, mercurio, níquel, plomo, selenio, zinc y estaño—, junto con cianuros, aceites y grasas, fluoruros, sulfuros, sulfitos, fenoles, pesticidas, aldehídos, toxicidad e hidrocarburos.
+**A efectos de sanción**, el reglamento clasifica los contaminantes en dos grupos, y aquí se reparten: **el fósforo total y el nitrógeno van al Grupo A**, «de menor peligrosidad»; **los parámetros enumerados expresamente van al Grupo B**, «de mayor peligrosidad» —aluminio, arsénico, cadmio, cobre, cromo, mercurio, níquel, plomo, selenio, zinc y estaño—, junto con cianuros, aceites y grasas, fluoruros, sulfuros, sulfitos, fenoles, pesticidas, aldehídos, toxicidad e hidrocarburos.
+
+**Leer la tabla de alcantarillado.** Media diaria e instantánea son criterios distintos; también se aplican los requisitos más restrictivos que procedan. Los límites de metales se refieren a concentración total en el artículo 16, pero para Cr(VI) se respeta además el mensurando de esa especie, sin equipararlo a todo cromo. La suma de cocientes real/límite para los elementos tóxicos enumerados en el artículo 16 no superará cinco; no es una suma de mg/L de metales heterogéneos. Los grupos del artículo 28 se leen por lista: bario, boro, hierro y manganeso figuran en A, por lo que no todos los metales pertenecen a B. Aluminio, arsénico, cadmio, cobre, cromo, mercurio, níquel, plomo, selenio, zinc y estaño están en B según esa lista. La etiqueta informal «metal pesado» no sustituye la clasificación normativa. Mg/L de vertido no se compara directamente con µg/L de una NCA del receptor sin convertir y sin distinguir fracción, finalidad y punto. La dilución analítica controlada no equivale a diluir el vertido para eludir límites.
 
 ### 2.8. En el medio receptor: las normas de calidad ambiental
 
@@ -316,10 +332,10 @@ El **RD 817/2015** no regula vertidos: regula **el estado de las aguas superfici
 
 | Metal | Clase | **NCA-MA (µg/L)** | NCA-CMA |
 | --- | --- | --- | --- |
-| **Mercurio** | **Peligrosa prioritaria** | **0,07** | 0,07 · **biota: 20 µg/kg** |
+| **Mercurio** | **Peligrosa prioritaria** | **Sin NCA-MA numérica en esta tabla** | **0,07** · **biota: 20 µg/kg húmedo** |
 | **Cadmio** | **Peligrosa prioritaria** | **≤ 0,08 a 0,25** según **dureza** | 0,45 a 1,5 |
-| **Plomo** | Prioritaria | **7,2** | No aplicable |
-| **Níquel** | Prioritaria | **20** | No aplicable |
+| **Plomo** | Prioritaria | **1,2 biodisponible** | **14** |
+| **Níquel** | Prioritaria | **4 biodisponible** | **34** |
 
 **Y los del anexo V (sustancias preferentes):**
 
@@ -357,6 +373,8 @@ El **RD 817/2015** no regula vertidos: regula **el estado de las aguas superfici
 >
 > **Y es un puente precioso entre temas:** la **dureza** que se midió por complexometría en el 22 y se estudió como parámetro en el 33, aquí **decide el límite legal de tres metales**.
 
+**NCA revisadas y fracciones aplicables (corrección).** El anexo IV contiene valores antiguos y valores entre corchetes; las NCA revisadas surten efecto desde el 22 de diciembre de 2018 según la disposición transitoria única. Para plomo, NCA-MA continental **1,2 µg/L biodisponible**, otras aguas **1,3 µg/L**, NCA-CMA **14 µg/L** en ambas. Para níquel, NCA-MA continental **4 µg/L biodisponible**, otras aguas **8,6 µg/L**, NCA-CMA **34 µg/L** en ambas. La nota 13 marca la base biodisponible de los valores continentales indicados. Los antiguos 7,2 de Pb y 20 de Ni no son los valores revisados actuales. Para mercurio, **0,07 µg/L es NCA-CMA**, no NCA-MA; la columna de MA está vacía y la NCA de biota es **20 µg/kg de peso húmedo**. No se inventa una MA a partir de otra columna. Para Cd las clases de dureza y sus criterios se conservan; para Cu y Zn del anexo V continental las clases son ≤10, >10 a ≤50, >50 a ≤100 y >100 mg/L CaCO₃. Aguas continentales y otras aguas tienen columnas distintas: As 50/25 y Se 1/10 µg/L, por ejemplo. La concentración disuelta es operacional y la biodisponible no es su sinónimo automático; se aplican modelos adecuados cuando se prevé. NCA-MA usa media aritmética anual en cada punto representativo; NCA-CMA atiende a concentración máxima con las previsiones estadísticas del anexo. Una medida aislada no prueba toda la MA anual. El fondo natural, pH, dureza y carbono orgánico disuelto se consideran conforme a la norma, no mediante una resta arbitraria. No aplicable en una columna no significa ausencia de toda obligación ni autoriza a sustituir la NCA por un límite de alcantarillado.
+
 ### 2.9. Valores de referencia para valorar el daño (RDPH, anexo V)
 
 Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores de referencia (Vr)** por grupos de peligrosidad. Del **Grupo B, «nutrientes y contaminantes específicos»**:
@@ -375,9 +393,11 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 **Y el Grupo A, «sustancias peligrosas», no lleva números propios:** remite a *«las sustancias recogidas en los **anexos IV y V del RD 817/2015**»*, con la **NCA-MA** como valor de referencia (o la NCA-CMA si no hay media anual). **Ahí es donde están el cadmio, el plomo, el mercurio y el níquel.**
 
-> **Cuidado, y es el mismo aviso que en el tema 34: estos Vr NO son límites de vertido.** Son los valores con los que se calcula el **coeficiente de peligrosidad K_PV** del artículo 326 ter, es decir, **cuánto daño ha hecho un vertido**.
+> **Cuidado, y es el mismo aviso que en el tema 34: estas cifras subsidiarias no son límites generales de autorización. Vr parte del VLE autorizado cuando existe, y en su defecto se aplican las reglas del anexo.** Son los valores con los que se calcula el **coeficiente de peligrosidad K_PV** del artículo 326 ter, es decir, **cuánto daño ha hecho un vertido**.
 >
 > **Y fíjate en la jerarquía que dibujan los tres grupos:** Grupo **A** las sustancias peligrosas (los metales pesados), Grupo **B** los nutrientes —nuestros dos primeros parámetros—, Grupo **C** *«los parámetros globales relacionados con los sólidos en suspensión y la materia orgánica»*, que son **los tres del tema 34**. **Este tema está, literalmente, por encima del 34 en la escala de peligrosidad.**
+
+**Prioridad del Vr y alcance de grupos.** Para daños en el RDPH, Vr parte del VLE de la autorización; si falta autorización o límite, se aplican reglas subsidiarias del anexo V. Las tablas de N y P citadas son referencias subsidiarias y no permisos generales. Para grupo A se remite a la NCA-MA y, si no existe, a NCA-CMA bajo el régimen correspondiente; no se asume que mercurio tenga una MA de 0,07. Grupo A aragonés y grupo A del RDPH no son clasificaciones equivalentes. La presencia de un metal no lo ubica automáticamente en un grupo sin leer la lista: hierro, manganeso y otros contaminantes específicos tienen referencias en B del RDPH. Las bases como N, NH₄, P y PO₄ deben conservarse antes de comparar o formar cocientes. Un dato por debajo de LC se informa con su calificación y regla de uso; no se convierte sin más en ausencia absoluta.
 
 ### 2.10. Las grasas, que no están en el enunciado pero sí en el examen
 
@@ -393,18 +413,20 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 ---
 
+**Extracción y control transversal.** La respuesta histórica de grasas se conserva en el contexto del cuestionario; el residuo extraíble y pesable depende de disolvente y método, no identifica individualmente todos los lípidos ni toda sustancia extraída. Blanco de extracción, recuperación, secado y tara sostienen el resultado. Para los tres parámetros del enunciado se documentan muestra, fracción, preparación, base química, dilución, calibración, controles y método; unidades coincidentes no bastan para afirmar identidad de mensurandos. Un duplicado preciso no excluye sesgo ni contaminación común y un control en agua limpia no elimina todo efecto de matriz.
+
 ## 3. Tabla operativa
 
 | Parámetro | Técnica (tema) | Norma española vigente | Preparación previa | Valor de referencia |
 | --- | --- | --- | --- | --- |
-| **Nitrógeno total** | **Combustión oxidativa + quimioluminiscencia** (respuesta del examen) | **UNE-EN ISO 20236:2025** | Ninguna: se quema la muestra | **15 / 10 mg/L N** (cuadro 2) → **10 / 8** con la Directiva de 2024 |
+| **Nitrógeno total** | **Combustión oxidativa + quimioluminiscencia** (respuesta del examen) | **UNE-EN ISO 20236:2025** | Preparación según muestra y método; conversión por combustión | **15 / 10 mg/L N** (cuadro 2) → **10 / 8** con la Directiva de 2024 |
 | **Nitrógeno total** | **Mineralización oxidante con peroxodisulfato** | **UNE-EN ISO 11905-1:1998** | Digestión con peroxodisulfato | Íd. |
 | **Nitrógeno Kjeldahl** (orgánico + amoniacal) | Mineralización con **selenio**, destilación y valoración (22) | **UNE-EN 25663:1994** | — | **Vr 3 mg/L N** (RDPH) |
 | **Fósforo total** | **Absorción molecular**, azul de molibdeno, **880 nm** (25) | **UNE-EN ISO 6878:2005** | **DIGESTIÓN ÁCIDA** obligatoria | **2 / 1 mg/L P** (cuadro 2) → **0,7 / 0,5** con la Directiva |
 | **Fósforo / ortofosfato** por flujo | FIA y CFA | UNE-EN ISO 15681-1 y -2 | Íd. | Íd. |
 | **Metales, doce a la vez** | **ICP-MS** (27) | **UNE-EN ISO 17294-2:2024** | **DIGESTIÓN ÁCIDA** si es **total** | Art. 16 (Aragón), en mg/L |
 | **Metales, concentración alta** | **ICP-OES** (27) | **UNE-EN ISO 11885:2010** | Íd. | Íd. |
-| **Metales disueltos** (NCA) | Íd. | Íd. | **FILTRACIÓN a 0,45 µm**, sin digerir | **NCA-MA** del RD 817/2015, en µg/L |
+| **Metales disueltos** (NCA) | Íd. | Íd. | **FILTRACIÓN a 0,45 µm**, tratamiento posterior según método | **NCA-MA** del RD 817/2015, en µg/L |
 | **Digestión previa** | — | **UNE-EN ISO 15587-1** (agua regia) y **-2** (ácido nítrico) | — | — |
 | **Grasas** | **Extracción con hexano y pesada** | — | Filtración | **100 / 150 mg/L** (Aragón) |
 
@@ -426,7 +448,7 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 7. **Sin digestión no hay fósforo total: hay ortofosfato.**
 
-8. **Metal TOTAL → digestión, sin filtrar. Metal DISUELTO → filtración a 0,45 µm, sin digerir.** Vertidos lo primero, NCA lo segundo.
+8. **La preparación depende de fracción y método**: total sin excluir partículas, disuelto con separación previa y tratamiento posterior adecuado; biodisponible cuando la NCA lo indica. No son reglas universales basadas solo en «vertido» o «río».
 
 9. **Cuadro 2 vigente: fósforo 2 y 1 mg/L, 80 %; nitrógeno 15 y 10 mg/L, 70-80 %.** Solo en **zonas sensibles** y desde **10 000 h-e**.
 
@@ -438,15 +460,15 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 13. **La NCA del cadmio, el cobre y el zinc DEPENDE DE LA DUREZA del agua**, porque la dureza baja su **biodisponibilidad**.
 
-14. **Mercurio 0,07 µg/L es la NCA-MA más estricta de los metales.** Mercurio y cadmio son **«peligrosa prioritaria»**; plomo y níquel, solo «prioritaria».
+14. **Mercurio 0,07 µg/L es NCA-CMA, no NCA-MA.** Las MA revisadas continentales de Pb y Ni son 1,2 y 4 µg/L biodisponibles, con efecto desde 22/12/2018. Mercurio y cadmio son **«peligrosa prioritaria»**; plomo y níquel, solo «prioritaria».
 
 15. **En Aragón, el mercurio (0,05 mg/L) es el metal más limitado del artículo 16**, y el cromo aparece tres veces: **III, VI y total**.
 
-16. **Los metales van al Grupo B (mayor peligrosidad) del reglamento aragonés; el nitrógeno y el fósforo, al Grupo A.**
+16. **La clasificación aragonesa se lee por lista**: N y P están en A, junto a bario, boro, hierro y manganeso; los metales específicamente enumerados en B conservan esa clasificación.
 
 17. **UNE-EN 12260 está ANULADA** desde 2022, y su sucesora de 2022 también: **la vigente es UNE-EN ISO 20236:2025**.
 
-18. **La misma norma y el mismo aparato dan el COT y el nitrógeno total.** Enlaza con los temas 33 y 34.
+18. **La norma abarca COT y TNb; un aparato con configuración y validación adecuadas puede medir ambos.** Enlaza con los temas 33 y 34.
 
 19. **Grasas → filtración, extracción con hexano y pesada.** Sulfatos y cloruros → **cromatografía iónica de aniones** (tema 30).
 
@@ -474,7 +496,7 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 
 ## Fuentes y verificación
 
-- **RD 509/1996, texto consolidado del BOE, leído literalmente:** el **cuadro 2 completo** del anexo I con sus tres notas —la definición de nitrógeno total, la regla de medias anuales y la alternativa de media diaria con sus 20 mg/L y sus 12 °C— y el artículo 5 sobre zonas sensibles y la exención del 75 %.
+- **RD 509/1996, texto consolidado del BOE, leído literalmente:** el **cuadro 2 completo** del anexo I con sus tres notas —la definición de nitrógeno total, la regla de medias anuales y la alternativa de media diaria con sus 20 mg/L y sus 12 °C— y el artículo 6 sobre zonas sensibles y la exención del 75 %.
 - **Directiva (UE) 2024/3019: PDF oficial de 59 páginas del BOE, extraído a texto**, y **además el PDF oficial en inglés de EUR-Lex**. Leídos y transcritos el **cuadro 2** (tratamiento terciario) con sus cinco notas y el **cuadro 3** (tratamiento cuaternario). El contraste entre las dos versiones es lo que permite afirmar que **el «90 mg/l» del texto español es una errata**: el inglés dice «90» sin unidades.
 - **RD 817/2015, texto consolidado, leído literalmente:** el **anexo IV apartado A** —cabecera, unidades (**µg/L** en aguas, **µg/kg** de peso húmedo en biota) y las filas de **cadmio, plomo, mercurio y níquel**—, las **notas 4, 6 y 10** (definiciones de NCA-MA y NCA-CMA, y las cinco clases de dureza del cadmio), el **apartado B puntos 1, 2 y 3** (cómo se cumple cada NCA y la regla de **concentración disuelta**), y el **anexo V apartado A** con arsénico, cobre, cromo, cromo VI, selenio, zinc, cianuros y fluoruros, más su nota 4 de las cuatro clases de dureza.
 - **RDPH (RD 849/1986), texto consolidado a 24/10/2024:** anexo V, artículo 326 ter. La **tabla del Grupo B** se extrajo **celda a celda** del HTML, y el **Grupo A** se leyó en su literal, que remite a los anexos IV y V del RD 817/2015 con la NCA-MA como Vr.
@@ -511,3 +533,6 @@ Cuando hay que ponerle **precio al daño** de un vertido, el RDPH usa **valores 
 10. **La transposición de la Directiva (UE) 2024/3019 seguía sin completarse a la fecha de verificación.** Los plazos y valores están transcritos del PDF oficial. **Si España aprueba el nuevo real decreto antes del examen, hay que rehacer los apartados 2.5 y 2.6.**
 
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 34.
+
+
+**Revisión de apoyo a la ampliación del tema 35 (17/11/2026).** RD 817/2015, disposición transitoria única y anexos IV–V (valores revisados entre corchetes, notas 13 y aplicación por fracción); RD 509/1996 artículo 6 y anexos I–III; RDPH anexo V; Reglamento aragonés de vertidos, artículos 16 y 28. Catálogos públicos UNE-EN ISO 20236:2025 e ISO 20236:2024 (TNb no incluye N₂), ISO 6878:2004; fichas PRTR 2013 interpretadas como mapa histórico de técnicas, no estado actual de cada norma. Se distinguen valores de receptor, vertido y daño.

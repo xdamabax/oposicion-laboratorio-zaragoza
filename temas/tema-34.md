@@ -44,7 +44,7 @@ fuentes:
 >
 > | Deuda | Dónde se dijo | Resultado |
 > | --- | --- | --- |
-> | **«Cuál es hoy la norma de DQO hay que fijarlo al redactar el tema 34»** | Tema 22, duda 1 | **Ver el apartado 2.6.** La respuesta corta: **no hay sustituta UNE**. La UNE 77004:2002 se anuló el 18/01/2024 porque se retiró su ISO gemela, la **ISO 6060:1989**, y **la ficha de UNE no declara norma que la sustituya**. Lo que queda vigente es la **ISO 15705:2002** (ST-DQO, tubo sellado) y, sobre todo, **el método de referencia del RD 509/1996**, que sigue diciendo «dicromato potásico» |
+> | **«Cuál es hoy la norma de DQO hay que fijarlo al redactar el tema 34»** | Tema 22, duda 1 | **Ver el apartado 2.6.** La respuesta corta: **la ficha consultada no identifica sustituta UNE; la ausencia no prueba una inexistencia universal**. La UNE 77004:2002 se anuló el 18/01/2024 porque se retiró su ISO gemela, la **ISO 6060:1989**, y **la ficha de UNE no declara norma que la sustituya**. Lo que queda vigente es la **ISO 15705:2002** (ST-DQO, tubo sellado) y, sobre todo, **el método de referencia del RD 509/1996**, que sigue diciendo «dicromato potásico» |
 > | **El reactivo de fijación del método de Winkler** | Tema 22, duda 5 | **Es MANGANESO, no magnesio.** Se fija con **sulfato de manganeso(II)** seguido de **yoduro de potasio en medio alcalino** (con azida, en la versión modificada). La fuente que decía «sulfato de magnesio» era, como se sospechaba, un error de transcripción: **el magnesio no tiene química redox** con la que fijar oxígeno |
 
 > **REPARTO CON LOS TEMAS VECINOS.** Este tema desarrolla **el parámetro**; la técnica está en los temas 21 a 25 y **no se repite**.
@@ -75,7 +75,7 @@ Los tres parámetros miden **dos cosas distintas**:
 - **Sólidos en suspensión:** cuánta **materia particulada** lleva el agua. Es una medida **física** y **gravimétrica**.
 - **DQO y DBO:** cuánta **materia oxidable** lleva, medida en **oxígeno equivalente**. Las dos son medidas **globales e indirectas**: no dicen qué hay, sino **cuánto oxígeno haría falta**.
 
-Y la diferencia entre esas dos últimas es la idea que sostiene el tema: **la DQO oxida con un reactivo químico y se lleva todo; la DBO deja que lo hagan las bacterias y solo cuenta lo que ellas pueden comerse.** De ahí que la DQO salga siempre por encima, que es justo lo que pregunta la 1322 #40.
+Y la diferencia entre esas dos últimas es la idea que sostiene el tema: **la DQO utiliza oxidación química bajo condiciones definidas; la DBO mide consumo bioquímico en un tiempo y condiciones concretos. Ninguna es una medida universal de toda sustancia orgánica.** De ahí la relación habitual en aguas domésticas, sin que sea universal para cualquier muestra, que es justo lo que pregunta la 1322 #40.
 
 ---
 
@@ -112,6 +112,8 @@ Y la diferencia entre esas dos últimas es la idea que sostiene el tema: **la DQ
 
 **Fíjate en el detalle:** el primario se define **con números de DBO₅ y de sólidos en suspensión**; el secundario, **remitiendo al cuadro 1**. Los dos parámetros de este tema son la vara de medir de toda la depuración.
 
+**Ámbito y carga equivalente.** Un habitante equivalente representa carga biodegradable de DBO₅, no necesariamente una persona física ni un volumen fijo de agua. Una carga de 60 kg O₂/día corresponde a 1000 h-e. Las aguas urbanas pueden incluir mezclas de domésticas, industriales y escorrentía; «urbana» no significa que todo su caudal proceda exclusivamente de viviendas. Una aglomeración puede abarcar parte de un municipio o varios. Los requisitos de pretratamiento industrial del artículo 8 del RD 509/1996 protegen personal, colectores, funcionamiento de tratamiento, medio receptor y gestión segura de fangos. El cumplimiento de una cifra aislada no sustituye los demás requisitos ni la autorización aplicable.
+
 ### 2.2. El cuadro 1 del anexo I: el corazón del tema
 
 > **Requisitos para los vertidos procedentes de instalaciones de tratamiento de aguas residuales urbanas. *Se aplicará el valor de concentración O el porcentaje de reducción.***
@@ -137,6 +139,8 @@ Y la diferencia entre esas dos últimas es la idea que sostiene el tema: **la DQ
 > - *«Se homogeneiza la muestra y se realiza el método del dicromato»* → el método de referencia de la DQO, recortado.
 >
 > **No es casualidad: el examinador redacta con el BOE delante.**
+
+**Concentración, reducción y condiciones.** El encabezado del cuadro 1 del RD 509/1996 emplea concentración o porcentaje de reducción en su ámbito; no permite desconocer condiciones adicionales o más restrictivas de una autorización. La nota relaciona reducción con carga de entrada. Carga = concentración × caudal: con C en mg/L y Q en m³/día, L en kg/día = C·Q/1000. Reducción porcentual de carga = 100·(Lentrada − Lsalida)/Lentrada. La fórmula basada solo en concentraciones requiere caudales comparables; diluir puede bajar concentración sin retirar masa y no es tratamiento. El requisito de SS es optativo en ese cuadro, no una exención universal de todos los permisos de SS. Los valores de alta montaña y lagunaje se leen con sus condiciones, no se generalizan a toda instalación. La sustitución de DBO₅ por COT o DTO exige poder establecer correlación; no existe un factor universal para cualquier agua.
 
 ### 2.3. Cuántas muestras, y cuántas pueden fallar (anexo III)
 
@@ -173,6 +177,8 @@ Y la diferencia entre esas dos últimas es la idea que sostiene el tema: **la DQ
 - **Para el total de sólidos en suspensión se aceptan desviaciones de hasta el 150 %.**
 
 *(Además, no se computan los valores extremos **cuando sean consecuencia de situaciones inusuales, como las ocasionadas por lluvias intensas**.)*
+
+**Evaluar una serie anual.** Se distinguen mínimo de muestras, número máximo de no conformes y magnitud máxima de desviación individual en condiciones normales. Cumplir uno no elimina los otros. Una desviación de 100 % sobre una concentración límite equivale como máximo al doble del valor; una de 150 % equivale a 2,5 veces el valor, no a 1,5 veces. La tabla de no conformes se aplica por parámetro pertinente; no se agrupan incumplimientos de distintos parámetros como si fueran una sola serie indistinta. Una lluvia no autoriza a eliminar datos sin justificar que el extremo sea consecuencia de la situación inusual prevista. El punto, duración de 24 horas y pauta de toma forman parte de la representatividad; una muestra puntual no describe sin justificación todo un día. Las muestras anuales se distribuyen a intervalos regulares. Los mínimos por h-e se aplican con sus tramos y la reducción de 12 a 4 en el tramo pequeño está condicionada al cumplimiento demostrado del primer año.
 
 ### 2.4. Sólidos en suspensión
 
@@ -219,7 +225,9 @@ Todo el vocabulario de los sólidos sale de **dos operaciones** y nada más:
 | Volumen mínimo | **500 mL** |
 | Conservación | Refrigerar a **< 6 °C** (no congelar); analizar **dentro de 7 días** |
 
-> **Cuidado con una diferencia real entre normas:** el **RD 509/1996** manda **membrana de 0,45 µm**; la **UNE-EN 872** y el *Standard Methods* usan **filtro de fibra de vidrio**, cuyo poro nominal ronda **0,7-1,5 µm**. **No son lo mismo**, y el resultado puede diferir. El real decreto llama a lo suyo «método de referencia», no «método obligatorio», y el propio anexo III admite alternativas *«siempre que pueda demostrarse que se obtienen resultados equivalentes»*.
+> **Cuidado con una diferencia real entre normas:** el **RD 509/1996** manda **membrana de 0,45 µm**; la **UNE-EN 872** y el *Standard Methods* usan **filtro de fibra de vidrio**, cuyas características de retención dependen del filtro y del método; no se asigna un único poro nominal universal. **No son lo mismo**, y el resultado puede diferir. El real decreto llama a lo suyo «método de referencia», no «método obligatorio», y el propio anexo III admite alternativas *«siempre que pueda demostrarse que se obtienen resultados equivalentes»*.
+
+**Fracciones y calidad de sólidos.** Las fracciones son operacionales: dependen de filtro, preparación, secado y condiciones. No toda partícula retenida es sedimentable por gravedad ni todo lo que pasa un filtro está necesariamente disuelto a escala molecular. Volátiles a 550 °C son pérdida por ignición, una aproximación a materia orgánica: pueden influir pérdidas o transformaciones inorgánicas y no equivale a todo el carbono orgánico. Fijos son residuo de ignición, no prueba de mineral puro. Para SST se requiere alícuota representativa, con homogeneización y transferencia sin pérdidas; decantar y medir solo sobrenadante cambia la fracción. La retención nominal del filtro de fibra no es un único tamaño universal ni idéntica a la membrana de referencia de 0,45 µm. Se documenta el filtro y se demuestra equivalencia si procede. El acondicionamiento, secado hasta masa constante, enfriamiento en desecador y control de balanza evitan confundir agua o contaminación del soporte con residuo. Se manejan filtros con pinzas y se identifica el conjunto de pesada; cambiar de cápsula o tara altera la diferencia. La sal disuelta retenida por lavado insuficiente puede elevar la masa; un lavado que pierda partículas puede bajarla. Se elige alícuota que permita filtración y masa adecuadas al método, sin convertir una cifra local de volumen o retención en regla universal. SST en mg/L = (masa final − tara, en mg)·1000/volumen en mL. Si la masa está en gramos se aplica un factor adicional de mil. El volumen realmente filtrado, no el recibido, es el denominador. Duplicados con grandes diferencias pueden revelar falta de homogeneidad; un blanco y control de recuperación cubren problemas distintos. SST y turbidez no tienen conversión universal.
 
 ### 2.5. Demanda Química de Oxígeno (DQO)
 
@@ -260,7 +268,7 @@ Todo el vocabulario de los sólidos sale de **dos operaciones** y nada más:
 
 #### 2.5.3. Y aquí está la deuda del tema 22: ¿qué norma rige hoy la DQO?
 
-**La respuesta honesta es que en España no hay norma UNE vigente de DQO por dicromato.** El rastro es este:
+**La UNE 77004:2002 está anulada y su ficha no identifica sustituta; no se convierte esa búsqueda negativa en una prueba de inexistencia universal de otra norma aplicable**. El rastro es este:
 
 | Norma | Estado | Comprobado en |
 | --- | --- | --- |
@@ -271,9 +279,11 @@ Todo el vocabulario de los sólidos sale de **dos operaciones** y nada más:
 
 **Qué significa eso en la práctica:**
 
-1. **El método no ha desaparecido: ha desaparecido su norma UNE.** Lo que se aplica hoy es el **método de referencia del RD 509/1996**, que sigue diciendo literalmente **«dicromato potásico»**, y el **Standard Methods SM 5220**, que es **el que el reglamento aragonés impone por su nombre**.
+1. **La anulación de la norma citada no elimina por sí sola la química ni todos los métodos de DQO.** Lo que se aplica hoy es el **método de referencia del RD 509/1996**, que sigue diciendo literalmente **«dicromato potásico»**, y el **Standard Methods SM 5220**, que es **el que el reglamento aragonés impone por su nombre**.
 2. **La ISO que sí está viva es la 15705**, que normaliza **el formato moderno**: tubos sellados de pequeña escala, los de los kits comerciales que usa cualquier laboratorio. Aplicable a **muestras sin diluir de hasta 1 000 mg/L** de ST-DQO y **cloruro no superior a 1 000 mg/L**.
 3. **Decir «el método oficial de DQO es la UNE 77004» es hoy un error**, y un error muy extendido: esa norma aparece en casi todo el material de estudio que circula.
+
+**Alcance y cálculo de DQO.** El dicromato no oxida universalmente toda materia orgánica: hay compuestos resistentes y efectos de matriz; también reaccionan reductores inorgánicos. El resultado es oxígeno equivalente bajo el método, no oxígeno disuelto inicial ni concentración de una sustancia orgánica particular. El sulfato de plata actúa como catalizador y el mercúrico controla la interferencia del cloruro dentro de condiciones validadas; no corrige cualquier matriz o salinidad. El formato, rango, longitud de onda y tratamiento de interferencias dependen del método o kit: no toda lectura fotométrica se hace a 600 nm ni todo kit admite cualquier concentración. Los residuos con cromo, mercurio y plata requieren la gestión prevista y no se vierten al desagüe. En la valoración por retroceso, mayor consumo de dicromato por muestra deja menos oxidante para valorar con FAS. En la fórmula DQO = (A − B)·N·8000/V, A es el consumo de FAS del blanco digerido, B el de la muestra, N la normalidad del FAS y V los mL de muestra; se aplica además el factor de dilución si no está ya incorporado. Una diferencia negativa obliga a investigar blanco, rango y registros. FAS se estandariza y se controlan blanco de método, material de control, duplicados y matriz fortificada según el procedimiento. Un control en agua limpia conforme no descarta efecto de matriz. La anulación de UNE 77004:2002 está documentada; que su ficha no declare sustituta no demuestra por sí solo la inexistencia de cualquier norma aplicable. ISO 15705 se cita desde su ficha pública, sin afirmar haber leído su articulado de pago.
 
 ### 2.6. Demanda Bioquímica de Oxígeno (DBO₅)
 
@@ -283,7 +293,7 @@ Todo el vocabulario de los sólidos sale de **dos operaciones** y nada más:
 
 **Los tres números que la definen: CINCO DÍAS, 20 °C, OSCURIDAD COMPLETA.**
 
-- **Cinco días** porque es el tiempo en que se consume la mayor parte de la materia carbonosa sin que aún haya arrancado del todo la nitrificación.
+- **Cinco días** es la convención temporal del ensayo; no garantiza ausencia de nitrificación ni degradación completa.
 - **20 °C** porque la actividad bacteriana depende mucho de la temperatura.
 - **Oscuridad** para que **no haya fotosíntesis**: si hubiera algas produciendo oxígeno, el balance saldría falseado.
 
@@ -328,29 +338,33 @@ Todo el vocabulario de los sólidos sale de **dos operaciones** y nada más:
 
 **Ojo al nombre completo: «DBO después de n DÍAS (DBOn)».** La norma no es solo de cinco días: **n es un parámetro**. Los cinco días son **la convención legal**, no una limitación del método. Se usan también **DBO₇** (habitual en países nórdicos) y **DBO última**.
 
+**Alcance de DBO y lectura del ensayo.** Los cinco días son una convención del ensayo, no una garantía de que la nitrificación no haya comenzado ni de oxidación biodegradable completa. Para el parámetro sin nitrificación del RD 509/1996 se requiere el inhibidor indicado; el instructivo IDEAM SLC-I025 v4 declara que no lo usa en su propio alcance y no se atribuye a ese documento la obligación legal española. El oxígeno que disminuye en la botella debe referirse a la fracción de muestra y corregirse por el aporte del control de siembra cuando proceda. Si P es la fracción decimal de muestra y Cs el consumo de oxígeno atribuido a la siembra en esa botella, DBO₅ = (D1 − D2 − Cs)/P, bajo las demás condiciones y controles del método. P = 0,10 implica factor de dilución 10, no 0,10; si el resultado ya se refiere al agua original no se multiplica otra vez. Los criterios de consumo de al menos 2 mg/L y residual de al menos 1 mg/L son controles de validez del procedimiento citado, no una demostración suficiente de que todo el ensayo esté libre de sesgo. El agotamiento de oxígeno puede impedir medir la demanda completa; una botella no válida no se transforma en cero. Un consumo pequeño puede exigir evaluación de sensibilidad, dilución y criterios del método. Contaminación del agua de dilución eleva el blanco y puede amplificar sesgo al corregir dilución; sustancias tóxicas o residual desinfectante pueden inhibir y originar demanda aparente baja. El blanco, material de control y réplicas ayudan a separar problemas. Intercambio de aire, burbujas, fotosíntesis, temperatura o sonda mal verificada alteran el balance. La sonda óptica por luminiscencia también existe; «óptica» no significa inmune a toda interferencia o mantenimiento. No se reescribe el resultado para forzar la desigualdad con DQO.
+
 ### 2.7. DQO frente a DBO: lo que de verdad hay que entender
 
 ![Curva de la DBO frente a la DQO](esquema:dbo-frente-a-dqo)
 
 > **1322 #40: «En la composición típica de aguas residuales domésticas se puede decir que… EL VALOR DE LA DQO ES MAYOR AL VALOR DE LA DBO.»**
 
-**Por qué, en una frase:** la DQO **oxida químicamente todo lo oxidable**, sea biodegradable o no; la DBO **solo cuenta lo que las bacterias pueden comerse** en cinco días. Todo lo que la DBO mide, la DQO también lo mide; **lo contrario no es cierto**.
+**Por qué, en una frase:** la DQO mide consumo químico de oxidante bajo condiciones definidas y puede incluir fracción no biodegradable; DBO₅ mide consumo bioquímico durante cinco días. **No son conjuntos universalmente incluidos uno en otro**: hay compuestos resistentes al dicromato y posibles efectos de matriz o demanda nitrogenada.
 
-**Y hay una segunda razón, que es la que enseña la curva:** aunque todo fuera biodegradable, **a los cinco días la reacción todavía no ha terminado**. La DBO sigue una **cinética de primer orden**:
+**Y hay una segunda razón, que es la que enseña la curva:** aunque todo fuera biodegradable, **a los cinco días la reacción todavía no ha terminado**. El modelo docente ilustrado supone una **cinética de primer orden**:
 
 **DBO(t) = DBO_última · (1 − e^(−k·t))**
 
-Con el valor clásico **k ≈ 0,23 día⁻¹**, a los cinco días se ha consumido **1 − e^(−1,15) ≈ el 68 %** de la DBO última. Es decir: **la DBO₅ es aproximadamente dos tercios de la DBO última**, y la DBO última todavía queda por debajo de la DQO.
+Con el valor clásico **k ≈ 0,23 día⁻¹**, a los cinco días se ha consumido **1 − e^(−1,15) ≈ el 68 %** de la DBO última. Es decir: **la DBO₅ es aproximadamente dos tercios de la DBO última**, y la figura supone además una DQO mayor que la demanda última, sin generalizarlo a toda agua.
 
 | | Qué mide | Oxidante | Tiempo |
 | --- | --- | --- | --- |
-| **DQO** | **Todo** lo oxidable | **Dicromato** | **2 horas** |
+| **DQO** | Lo oxidable bajo el método | **Dicromato** | **2 horas** |
 | **DBO₅** | Solo lo **biodegradable**, y solo en parte | **Bacterias** | **5 días** |
 | **Oxidabilidad** (tema 33) | Lo **fácilmente** oxidable | **Permanganato** | **10 minutos** |
 
-**El cociente DBO₅/DQO es la medida clásica de biodegradabilidad de un agua**, y es lo que decide si un tratamiento biológico tiene sentido: cuanto más se acerca a 1, más biodegradable es; cuanto más baja, más recalcitrante —y más probable que el agua lleve carga industrial.
+**El cociente DBO₅/DQO es una orientación clásica de biodegradabilidad bajo esos ensayos**, y no decide por sí solo todo tratamiento: cuanto más se acerca a 1, más biodegradable es; un cociente bajo requiere considerar fracción resistente, inhibición y alcance de ensayo; no demuestra por sí solo origen industrial.
 
 > **Una consecuencia práctica que conviene tener a mano:** la DQO se tiene **en dos horas** y la DBO₅ **en cinco días**. Por eso, en el control diario de una depuradora, **se trabaja con la DQO** y se usa la DBO para lo que la ley exige y para calibrar la correlación entre las dos.
+
+**Relaciones e interpretación.** En aguas domésticas típicas suele observarse DQO mayor que DBO₅, como pregunta el examen, pero no es una ley universal de toda muestra. Oxidación incompleta por dicromato, demanda nitrogenada sin inhibir, toxicidad, blancos o errores de base pueden alterar la relación y requieren investigación. Un cociente DBO₅/DQO orienta sobre la fracción biodegradable bajo esos ensayos, sin identificar por sí solo origen industrial, sustancias o toxicidad. Una correlación local permite estimaciones solo dentro del rango y matrices validados; no autoriza una sustitución legal automática de cualquier parámetro. En el modelo docente DBO(t) = L₀·(1 − exp(−kt)), k tiene unidades inversas de tiempo, L₀ es la demanda última del modelo y el consumo se aproxima asintóticamente a ella. Con k = 0,23 día⁻¹ se obtiene aproximadamente 68 % a cinco días; otro k cambia esa proporción. Una constante expresada para logaritmo decimal no se introduce sin convertir en una fórmula de exponencial natural. El modelo es una aproximación y no una obligación normativa universal. Ni DQO ni DBO son una medida de oxígeno que ya contiene la muestra ni identifican cada compuesto individual.
 
 ### 2.8. Los límites que se aplican en Zaragoza
 
@@ -381,7 +395,7 @@ Con el valor clásico **k ≈ 0,23 día⁻¹**, a los cinco días se ha consumid
 
 #### 2.8.2. Valoración de daños al dominio público hidráulico
 
-**RDPH (RD 849/1986), anexo V**, que desarrolla el artículo 326 ter. Para calcular el **coeficiente de peligrosidad (K_PV)** los parámetros se dividen en **tres grupos**, y el **Grupo C** —el menos peligroso— contiene *«los parámetros globales de contaminación relacionados con los sólidos en suspensión y la materia orgánica»*. Sus **valores de referencia (Vr)**:
+**RDPH (RD 849/1986), anexo V**, que desarrolla el artículo 326 ter. Se parte del VLE de la autorización para Vr y se aplican reglas subsidiarias si falta autorización o límite. Para calcular el **coeficiente de peligrosidad (K_PV)** los parámetros se dividen en **tres grupos**, y el **Grupo C** —el menos peligroso— contiene *«los parámetros globales de contaminación relacionados con los sólidos en suspensión y la materia orgánica»*. Sus **valores de referencia (Vr)**:
 
 | Contaminante | Vr |
 | --- | --- |
@@ -391,7 +405,9 @@ Con el valor clásico **k ≈ 0,23 día⁻¹**, a los cinco días se ha consumid
 | Conductividad a 20 °C | 1 000 µS/cm |
 | pH | 5,5-9 |
 
-> **Cuidado, y esto es exactamente la clase de matiz que distingue una respuesta buena:** esos **Vr NO son límites de vertido**. Son los **valores de referencia con los que se calcula cuánto daño ha hecho un vertido**, para ponerle precio. Confundirlos con un límite es un error de concepto.
+> **Cuidado, y esto es exactamente la clase de matiz que distingue una respuesta buena:** esas **cifras subsidiarias de tabla no son límites generales que autoricen vertidos**. El Vr aplicable puede partir del VLE de una autorización. Son los **valores de referencia con los que se calcula cuánto daño ha hecho un vertido**, para ponerle precio. Confundirlos con un límite es un error de concepto.
+
+**Ámbito de límites y Vr.** El artículo 16 aragonés distingue media diaria e instantánea; no se sustituye una por otra. Los valores generales se leen con los límites más restrictivos de norma, licencia o autorización que procedan. La prohibición de diluir para satisfacer límites se distingue de la dilución analítica controlada en laboratorio. El artículo 23 remite a Standard Methods en la versión traducida al español más actualizada y su apartado 3 permite fijar otros métodos de aplicación general por resolución del Director del IAA. La arqueta exterior sirve para toma de muestras y aforo; su ausencia no elimina la potestad de muestrear en el punto más cercano previsto en el artículo 21 ni la obligación de subsanarla. En el RDPH, para el cálculo de daños el Vr es primero el VLE de la autorización; si falta autorización o límite, se aplican las reglas subsidiarias del anexo V. Los valores de tabla de DBO₅ 6, DQO 30 y SST 25 no son límites generales que autoricen cualquier vertido. Cumplir una concentración no concede por sí solo autorización. El grupo A aragonés y el grupo C del RDPH son clasificaciones de normas diferentes y no se intercambian por la letra.
 
 ### 2.9. Qué cambia con la Directiva (UE) 2024/3019
 
@@ -400,7 +416,7 @@ La **Directiva 91/271/CEE** —la madre del RD-ley 11/1995 y del RD 509/1996— 
 - **Artículo 33 (Transposición):** los Estados miembros deben dar cumplimiento a los artículos 2 a 11 y 14 a 26 y a los anexos I, III, V y VI **«a más tardar el 31 de julio de 2027»**.
 - **Artículo 32 (Derogación):** *«Queda derogada **con efecto a partir del 1 de agosto de 2027** la Directiva 91/271/CEE.»*
 
-> **Conclusión práctica: hasta el 1 de agosto de 2027, el derecho aplicable en España sigue siendo el RD-ley 11/1995 y el RD 509/1996.** Todo lo de los apartados 2.1 a 2.3 de este apunte está vigente, y es lo que hay que responder.
+> **Conclusión práctica: las fechas europeas exigen revisar el régimen transitorio y la legislación nacional vigente, sin deducir una derogación automática del RD 509/1996 el 1 de agosto de 2027.** Todo lo de los apartados 2.1 a 2.3 de este apunte está vigente, y es lo que hay que responder.
 
 **Y lo que la nueva directiva hace con nuestros tres parámetros es tranquilizador: los deja casi igual.** Su **anexo I, cuadro 1** repite **DBO₅ 25 mg/L (70-90 %)**, **DQO 125 mg/L (75 %)** y **sólidos en suspensión 35 mg/L (90 %)**, con **los mismos métodos de referencia**, palabra por palabra.
 
@@ -411,13 +427,15 @@ La **Directiva 91/271/CEE** —la madre del RD-ley 11/1995 y del RD 509/1996— 
 
 *(Y es la misma dirección que ya siguió el RD 3/2023 para el agua de consumo, donde el COT sustituye a la oxidabilidad en los abastecimientos grandes. Ver el tema 33.)*
 
+**Fechas y normas nacionales.** La Directiva 2024/3019 fija transposición general indicada para el 31 de julio de 2027 y derogación de 91/271/CEE desde el 1 de agosto de 2027, con las disposiciones transitorias del artículo 32. Esa fecha no equivale por sí sola a la derogación automática del RD 509/1996. Se comprueba la norma nacional y su vigencia para cada pregunta. La nueva tabla introduce COT 37 mg/L y 75 % como alternativa a DQO, manteniendo diferenciada la sustitución de DBO₅ condicionada a correlación. No se traslada esa cifra de COT a agua de consumo ni a una autorización distinta sin base normativa.
+
 ### 2.10. El oxígeno disuelto como parámetro
 
 El tema 24 dejó dicho que el oxígeno disuelto **como parámetro** era del 33 o del 34; el tema 33 comprobó, leyendo el anexo I entero del RD 3/2023, que **en agua de consumo no existe**. **Su sitio es este**, y conviene decir dónde está exactamente:
 
 - **No es un parámetro de vertido** ni en el cuadro 1 del RD 509/1996, ni en la tabla del reglamento aragonés.
 - **Es el parámetro que se mide DENTRO del ensayo de la DBO** —dos veces, antes y después— y es, en ese sentido, el **parámetro instrumental** de todo este tema.
-- **Es un indicador del estado del medio receptor**, no del vertido: un río con poco oxígeno disuelto es un río que ha recibido demasiada materia orgánica. Por eso la DBO se mide en el vertido y el oxígeno disuelto en el río.
+- **Es un indicador del estado del medio receptor**, no del vertido: un río con poco oxígeno disuelto requiere investigar carga, aireación, temperatura y otras condiciones; una lectura no demuestra una causa única. Por eso la DBO se mide en el vertido y el oxígeno disuelto en el río.
 
 **Las dos técnicas, ya estudiadas:**
 
@@ -427,6 +445,8 @@ El tema 24 dejó dicho que el oxígeno disuelto **como parámetro** era del 33 o
 | **Sonda electroquímica** | **UNE-EN ISO 5814:2013** (ISO 5814:2012, vigente) | **24** |
 
 **Y el detalle que el tema 22 dejó sin afirmar, ya cerrado:** en el método de Winkler el oxígeno **se fija in situ** añadiendo **sulfato de MANGANESO(II)** y, a continuación, **yoduro de potasio en medio alcalino**. El oxígeno oxida el Mn(II) a un óxido superior; al acidificar, ese óxido oxida el yoduro a **yodo**, que se valora con **tiosulfato sódico** usando **almidón** como indicador. **La modificación con AZIDA elimina la interferencia de los nitritos** — que es justamente la interferencia que aparece en las muestras incubadas para la DBO.
+
+**Oxígeno disuelto y contexto.** Una concentración baja de OD en el medio receptor puede relacionarse con carga consumidora de oxígeno, pero también con temperatura, aireación, condiciones hidráulicas y otros procesos; no demuestra una única causa. El agua más caliente suele tener menor concentración de saturación de oxígeno, y salinidad y presión también influyen. Se distingue mg/L de OD y porcentaje de saturación. En un ensayo DBO el balance requiere medidas inicial y final comparables y equipos adecuados; no se confunde OD final con DBO calculada. Winkler y sondas electroquímicas u ópticas son alternativas analíticas según el método aplicable, no sensores intercambiables sin verificación. La presencia de burbuja puede permitir intercambio de gas y alterar el balance; un valor final mayor que el inicial requiere investigar antes de presentar una demanda negativa como resultado físico normal.
 
 ### 2.11. pH y DBO₅: se analizan lo antes posible, una vez recibida la muestra
 
@@ -448,7 +468,7 @@ El supuesto 4 del **1322, segundo ejercicio**, empieza así: *«Se recibe una mu
 | Parámetro | Técnica | Norma española | Método de referencia del RD 509/1996 | Límite en efluente de EDAR | Límite a red (Aragón) |
 | --- | --- | --- | --- | --- | --- |
 | **Sólidos en suspensión** | **Gravimetría** | **UNE-EN 872:2006** | Membrana **0,45 µm** o **centrifugación** 5 min a 2 800-3 200 g; secado **105 °C**; pesada | **35 mg/L** (90 % red.) **optativo** | **500 / 1 000 mg/L** |
-| **DQO** | **Volumetría redox POR RETROCESO**, tras digestión ácida | **Ninguna vigente** (UNE 77004 anulada en 2024); ISO 15705:2002 para tubo sellado | Muestra **homogeneizada, sin filtrar ni decantar**; **dicromato potásico** | **125 mg/L** (75 % red.) | **1 000 / 1 500 mg/L** |
+| **DQO** | **Volumetría redox POR RETROCESO**, tras digestión ácida | UNE 77004 anulada en 2024, sin sustituta identificada en su ficha; ISO 15705:2002 para tubo sellado | Muestra **homogeneizada, sin filtrar ni decantar**; **dicromato potásico** | **125 mg/L** (75 % red.) | **1 000 / 1 500 mg/L** |
 | **DBO₅** | **Método de las diluciones** + medida de **oxígeno disuelto** | **UNE-EN ISO 5815-1:2020** | Muestra **homogeneizada, sin filtrar ni decantar**; OD antes y después de **5 días a 20 °C ± 1 °C en oscuridad**; **inhibidor de la nitrificación** | **25 mg/L** (70-90 % red.) | **500 / 1 000 mg/L** |
 | **Sólidos sedimentables** | **Decantación en cono Imhoff**, 1 hora | — | — | — | **15 / 20 mL/L** |
 | **Oxígeno disuelto** | **Winkler** (tema 22) o **sonda** (tema 24) | UNE-EN 25813:1994 · UNE-EN ISO 5814:2013 | — | No es parámetro de vertido | — |
@@ -488,7 +508,7 @@ El supuesto 4 del **1322, segundo ejercicio**, empieza así: *«Se recibe una mu
 
 15. **Digestión de la DQO: 150 °C, dos horas.**
 
-16. **La UNE 77004:2002 está ANULADA y no tiene sustituta UNE.** Lo vigente es el método de referencia del RD y el *Standard Methods*.
+16. **La UNE 77004:2002 está ANULADA y su ficha no identifica sustituta**, sin que esa ausencia demuestre inexistencia universal. Lo vigente es el método de referencia del RD y el *Standard Methods*.
 
 17. **El requisito de los sólidos en suspensión del cuadro 1 es OPTATIVO** (nota 4). Y en **lagunaje** se analiza sobre **muestra filtrada**, con un tope de **150 mg/L** sin filtrar.
 
@@ -496,7 +516,7 @@ El supuesto 4 del **1322, segundo ejercicio**, empieza así: *«Se recibe una mu
 
 19. **En Aragón, el método de análisis que impone el reglamento de vertidos es el *Standard Methods*, no una UNE.**
 
-20. **La Directiva (UE) 2024/3019 no cambia los tres valores**, pero **añade el COT (37 mg/L)** como alternativa a la DQO. **Hasta el 1 de agosto de 2027 sigue vigente el marco actual.**
+20. **La Directiva (UE) 2024/3019 no cambia los tres valores**, pero **añade el COT (37 mg/L)** como alternativa a la DQO. **Se comprueba la legislación nacional vigente y el régimen transitorio para la fecha de la pregunta.**
 
 ---
 
@@ -565,3 +585,6 @@ El supuesto 4 del **1322, segundo ejercicio**, empieza así: *«Se recibe una mu
 11. **La transposición de la Directiva (UE) 2024/3019 estaba sin completar a la fecha de verificación.** Los dos plazos que doy están **transcritos del PDF oficial**. Si España aprueba el nuevo real decreto antes del examen, **hay que rehacer los apartados 2.1 a 2.3 y 2.9**.
 
 12. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 33.
+
+
+**Revisión de apoyo a la ampliación del tema 34 (17/11/2026).** BOE: RD 509/1996 anexos I y III, RD-ley 11/1995 artículo 2 y RDPH anexo V; Directiva (UE) 2024/3019 artículos 32–34 y anexo I. Gobierno de Aragón: texto refundido de vertidos, artículos 15–24 y tabla verificada visualmente en páginas 7–8 del PDF. IDEAM SLC-I016 v4 (09/12/2024), SLC-I025 v4 (03/07/2025, sin inhibidor en su alcance) y SLC-I018 v5 (04/07/2025); se distinguen los alcances respecto al método legal español. Ejercicios originales del apunte.

@@ -1517,6 +1517,146 @@
       "fuente": "INSST, Guía técnica de agentes biológicos, controles de esterilización · apunte §7",
       "apartado": "7",
       "evidencia": "| *G. stearothermophilus*: vapor, **55 °C**, **semanal**; *B. atrophaeus*: óxido de etileno, **37 °C**, **cada ciclo** | Indicadores biológicos |"
+    },
+    {
+      "id": "t11-q78",
+      "pregunta": "En la cámara se colocan paquetes muy juntos, sin dejar circulación entre ellos. ¿Qué limita la eficacia aunque la pantalla marque la consigna?",
+      "opciones": [
+        "La actividad de un desinfectante químico que no se ha empleado.",
+        "La circulación y penetración del vapor en la carga.",
+        "El paso de luz ultravioleta por la puerta."
+      ],
+      "correcta": 1,
+      "explicacion": "Al sobrecargar se dificulta el acceso del vapor a toda la carga. La lectura de la cámara por sí sola no comprueba esa penetración.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 5, esterilización por vapor · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **No sobrecargar**, y dejar que el vapor **circule** entre los objetos."
+    },
+    {
+      "id": "t11-q79",
+      "pregunta": "Se estudia tratar un aceite que tolera la temperatura del horno. ¿Qué propiedad hace pertinente considerar calor seco en ese caso?",
+      "opciones": [
+        "El vapor no penetra bien en un líquido no acuoso como el aceite.",
+        "El aceite deja pasar el vapor igual que una solución acuosa.",
+        "El aceite solo puede esterilizarse por incineración."
+      ],
+      "correcta": 0,
+      "explicacion": "El calor seco se emplea para materiales compatibles que no pueden tratarse eficazmente con vapor, entre ellos determinados líquidos no acuosos.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 5, calor seco · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Líquidos no acuosos** que el vapor no atraviesa: **aceites, grasas, parafinas, glicerol**, cremas."
+    },
+    {
+      "id": "t11-q80",
+      "pregunta": "¿Qué limitación presenta la esterilización por inmersión en un agente químico líquido si después se quiere almacenar el material estéril?",
+      "opciones": [
+        "El desinfectante produce una barrera estéril permanente tras evaporarse.",
+        "El material sale protegido por un envase estéril cerrado.",
+        "El aclarado y secado pueden recontaminar el material."
+      ],
+      "correcta": 2,
+      "explicacion": "Los pasos de aclarado y secado pueden reintroducir microorganismos. La inmersión no deja el material protegido para almacenarlo como estéril.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 5, esterilización química · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "| **Líquidos por inmersión** (glutaraldehído, ácido peracético) | **Último recurso**: son difíciles de controlar, el material se **recontamina** al aclarar y secar, y **no se puede almacenar** estéril |"
+    },
+    {
+      "id": "t11-q81",
+      "pregunta": "Al revisar un ciclo se dispone de la gráfica de temperatura, presión y duración. ¿A qué tipo de control corresponde?",
+      "opciones": [
+        "Al control biológico por crecimiento.",
+        "Al control físico del ciclo.",
+        "Al control químico de un paquete."
+      ],
+      "correcta": 1,
+      "explicacion": "Estas lecturas documentan magnitudes físicas. No demuestran por sí solas la inactivación de esporas.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización, apartado 3.8 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **Físico** | Termómetro, manómetro, reloj y **registro** del propio equipo, más sondas externas (termopares) | Que el equipo alcanzó los parámetros. **Útil, pero no basta**: no ve lo que pasa dentro de una carga grande o sucia |"
+    },
+    {
+      "id": "t11-q82",
+      "pregunta": "El vial de un indicador biológico contiene esporas y caldo separado hasta después del ciclo. ¿Qué origina el cambio de pH durante la lectura en un vial positivo?",
+      "opciones": [
+        "El crecimiento de las esporas supervivientes tras entrar en contacto con el caldo.",
+        "La exposición de la cinta externa al vapor.",
+        "La presión acumulada en el manómetro de la cámara."
+      ],
+      "correcta": 0,
+      "explicacion": "Al incubar el sistema se detecta la actividad de las esporas supervivientes por el cambio de pH del medio.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización, apartado 3.8, indicadores biológicos autocontenidos · apunte §3",
+      "apartado": "3",
+      "evidencia": "- Hoy se usan **viales autocontenidos**: se rompe la cápsula de caldo sobre las esporas y, **si crecen, el indicador de pH cambia de color**. Se leen en **24-48 h**; los de lectura rápida, antes, por **fluorescencia**."
+    },
+    {
+      "id": "t11-q83",
+      "pregunta": "Se propone una configuración significativamente más densa que las que se han usado hasta ahora. ¿Qué comprobación permite validarla?",
+      "opciones": [
+        "Comprobar solo que la puerta cierra.",
+        "Medir la temperatura en varios puntos representativos de la nueva carga.",
+        "Comparar el peso total sin comprobar condiciones dentro de la carga."
+      ],
+      "correcta": 1,
+      "explicacion": "La validación documenta la distribución térmica de la configuración real. Los termopares permiten conocer varios puntos de la carga.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización, apartado 3.8, validación, y apunte · apunte §3",
+      "apartado": "3",
+      "evidencia": "- Los **ciclos y las configuraciones de carga se validan al principio** y tras reparaciones, con **termopares** en varios puntos."
+    },
+    {
+      "id": "t11-q84",
+      "pregunta": "Dos ciclos operan con la misma consigna. Tras una incidencia, ¿qué dato permite establecer qué material pudo resultar afectado por uno concreto?",
+      "opciones": [
+        "La fecha de compra del autoclave.",
+        "La temperatura nominal sin identificar la carga.",
+        "El contenido registrado para cada ciclo."
+      ],
+      "correcta": 2,
+      "explicacion": "Registrar el contenido junto con el tiempo y la temperatura vincula el material al ciclo que recibió.",
+      "fuente": "Ministerio de Sanidad, Unidad central de esterilización, apartado 3.8, control, y apunte · apunte §3",
+      "apartado": "3",
+      "evidencia": "- **Cada ciclo** queda **registrado**, con su temperatura, su tiempo y su contenido."
+    },
+    {
+      "id": "t11-q85",
+      "pregunta": "Se aplica un desinfectante sobre una superficie con restos orgánicos visibles y el tratamiento pierde eficacia. ¿Qué etapa anterior se omitió?",
+      "opciones": [
+        "La limpieza de la superficie.",
+        "La lectura de un indicador de autoclave.",
+        "La clasificación del agente por tamaño."
+      ],
+      "correcta": 0,
+      "explicacion": "La materia orgánica puede proteger a los microorganismos e interferir con el desinfectante. Por eso se limpia antes de aplicar el tratamiento.",
+      "fuente": "CDC, Guideline for Disinfection and Sterilization, factores que afectan a la eficacia · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "- la **materia orgánica** presente, que **inactiva** los desinfectantes y **protege** a los microbios;"
+    },
+    {
+      "id": "t11-q86",
+      "pregunta": "El procedimiento requiere mantener la superficie húmeda durante un tiempo de contacto definido, pero se seca antes. ¿Qué criterio queda sin demostrar?",
+      "opciones": [
+        "Que el agente pertenece al grupo de riesgo previsto.",
+        "Que la etiqueta conserva su color original.",
+        "Que el producto mantuvo el contacto durante el tiempo requerido."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración inicial no compensa por sí sola un contacto insuficiente. Hay que mantener las condiciones y el tiempo validados.",
+      "fuente": "CDC, Guideline for Disinfection and Sterilization, factores que afectan a la eficacia · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "- la **concentración**, la **temperatura** y el **tiempo de contacto**;"
+    },
+    {
+      "id": "t11-q87",
+      "pregunta": "Tras una descontaminación ambiental con peróxido de hidrógeno vaporizado, ¿qué control biológico se describe para comprobar su eficacia?",
+      "opciones": [
+        "Un manómetro colocado en la puerta.",
+        "Tiras que contienen esporas resistentes.",
+        "Solo comprobar si ha desaparecido el olor."
+      ],
+      "correcta": 1,
+      "explicacion": "Las tiras con esporas se emplean como indicadores biológicos del tratamiento. El olor no demuestra la eficacia microbiológica.",
+      "fuente": "INSST, Guía técnica de agentes biológicos, apéndice 5, descontaminación de locales · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "- su eficacia se comprueba con **tiras de esporas**."
     }
   ],
   "supuestos": [

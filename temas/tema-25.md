@@ -39,7 +39,7 @@ De ahí que sea también la respuesta más repetida al patrón de pregunta *«¿
 | **Cloro libre y total** | **UNE-EN ISO 7393-2:2019** | Ensayo normalizado |
 | **Color** | **UNE-EN ISO 7887:2012** | Ensayo normalizado |
 | Amonio, hierro, detergentes aniónicos | ISO 7150-1; ISO 6332; UNE-EN 903 | Ensayo normalizado (ver «Dudas») |
-| Qué se le exige al método en agua de consumo | **RD 3/2023**, anexo III, parte D | Norma con rango de ley |
+| Qué se le exige al método en agua de consumo | **RD 3/2023**, anexo III, parte D | Norma reglamentaria |
 
 ## 2. Desarrollo
 
@@ -74,6 +74,8 @@ Como las moléculas en disolución tienen además niveles vibracionales y rotaci
 | 400-450 nm | Violeta | Amarillo |
 
 > **Lo que ha caído: 1322, segundo ejercicio, n.º 4.** Tras añadir los reactivos aparece una **coloración azulada**, y el procedimiento indica medir a **620 nm**. Respuesta oficial: **«El color observado es el esperado, por lo que se puede seguir con el análisis»**. Los 620 nm caen en la franja del **naranja** (≈ 635-590 nm), y una disolución que absorbe el naranja **se ve azul**. Las otras opciones decían que el color no era el esperado (con o sin seguir el análisis) o que ninguna era correcta.
+
+**Matices de aplicación.** El máximo de absorción es una elección preferente por sensibilidad, no una obligación universal: el método puede fijar otra longitud de onda para reducir interferencias, adaptar el intervalo o separar componentes. Un espectro permite comparar posiciones y formas de bandas, pero una sola coincidencia no identifica inequívocamente una sustancia. En el UV-visible, menor longitud de onda significa mayor energía del fotón. La absorbancia mide atenuación relativa respecto a la referencia; no es una medida de emisión ni, por sí sola, de identidad química.
 
 ### 2.2. Leyes de absorción de la luz
 
@@ -133,6 +135,8 @@ La ley se cumple **solo en un intervalo**, y las desviaciones son casi siempre *
 
 **La regla mnemotécnica del apartado:** *reales, químicas e instrumentales*, y las tres tiran de la curva **hacia abajo**.
 
+**Condiciones del modelo y del cálculo.** La proporcionalidad A = εbc se aplica a una especie química y condiciones definidas, con radiación suficientemente estrecha y un intervalo verificado. No debe sumarse la transmitancia de componentes como si fuera absorbancia. Para capas sucesivas independientes, las absorbancias se suman y las transmitancias se multiplican. Cambiar el pH puede cambiar la fracción de especie absorbente y la pendiente, aunque la concentración total sea igual. Una desviación química no tiene signo universal: depende del equilibrio y de las absortividades de las especies. El óptimo próximo a A = 0,434 supone un modelo de error absoluto de transmitancia constante; el intervalo 0,1–1 es orientativo, no una prohibición de medir por encima de uno con un método validado. Una recta de calibración puede tener ordenada distinta de cero: A = m·c + b, por lo que c = (A − b)/m; debe evitarse extrapolar. En una dilución se conserva la cantidad de analito si no hay pérdidas: c original = c medida · V final/V alícuota. El volumen final incluye reactivos cuando el procedimiento así define la concentración.
+
 ### 2.3. Instrumentación visible-ultravioleta
 
 ![Espectrofotómetro UV-visible de haz simple: fuente, monocromador, cubeta, detector y lectura](esquema:espectrofotometro)
@@ -188,6 +192,8 @@ El camino óptico habitual es de **1 cm**. Las cubetas tienen **dos caras óptic
 
 Ojo al detalle del **array de diodos**, que es contraintuitivo: **la muestra recibe todas las longitudes de onda y el monocromador va detrás**, al revés que en los otros dos.
 
+**Selección real de óptica y cubetas.** Las tablas anteriores describen configuraciones clásicas, no todos los diseños comerciales. Hay UV-visible con xenón y sin la pareja deuterio/tungsteno. Los límites de transmisión dependen del material y modelo: existen polímeros UV-transparentes; BRAND especifica, por ejemplo, 230–900 nm en sus UV-cuvettes. Eso no autoriza usarlas a 220 nm. Se elige una cubeta con transmisión y compatibilidad química adecuadas a la longitud de onda; el cuarzo apropiado es la elección habitual para UV profundo. No todas las cubetas tienen dos caras esmeriladas: se manipulan sin tocar ventanas ópticas. El volumen de llenado debe cubrir completamente el haz; más líquido por encima de él no cambia el camino óptico de una cubeta rectangular. En un equipo clásico de barrido, la selección precede a la muestra; en un array, la dispersión para el registro espectral está después. Un doble haz compensa fluctuaciones comunes, pero no elimina una huella solo en la cubeta de muestra ni una interferencia química. La anchura de banda y el paso de adquisición son conceptos distintos: recoger puntos más próximos no corrige por sí solo una banda instrumental demasiado ancha. La fuente genera radiación, el selector discrimina longitudes y el detector transforma radiación en señal eléctrica.
+
 ### 2.4. Fuentes comunes de error
 
 | Error | Qué lo produce | Cómo se evita |
@@ -215,6 +221,8 @@ Sin norma española específica que lo regule (ver «Dudas»), la práctica de l
 | **Luz parásita** | Disoluciones de corte, que deben dar absorbancia muy alta |
 | **Línea base y ruido** | Barrido con la cubeta vacía o con el blanco |
 
+**Control práctico y tratamiento de la muestra.** Un blanco de reactivos revela contribuciones de reactivos y preparación; un blanco de muestra puede estimar color de fondo si el método lo permite, sin eliminar la señal buscada. Restar un blanco no resuelve automáticamente cambios químicos ni una matriz diferente. Una absorbancia negativa pequeña puede indicar que la referencia absorbe más que la muestra o un problema de cero; no significa concentración física negativa. La filtración no es universal: puede retirar analito particulado y cambiar el mensurando, por ejemplo en fósforo total. Debe seguirse el pretratamiento del método, documentando alícuota, digestión y dilución. No se abre el compartimento durante una lectura; se comprueban orientación, nivel, burbujas, limpieza y condiciones de estabilización. Si se limpia o cambia la cubeta tras el blanco, puede ser necesario renovar la referencia. Un control independiente comprueba la serie sin confundirse con el ajuste de la recta. Un buen coeficiente de correlación no demuestra por sí solo ausencia de curvatura ni interferencia. Se revisan residuos, blancos y controles en todo el intervalo. La repetición estima dispersión, pero no prueba ausencia de sesgo. Los certificados de patrones fotométricos se aplican con sus condiciones de longitud de onda, orientación, temperatura e incertidumbre; no basta el valor nominal. Verificar longitud de onda no equivale a verificar absorbancia, ruido o luz parásita.
+
 ### 2.5. Utilización en el análisis de agua
 
 Casi ningún ion de interés absorbe por sí mismo en el visible. La estrategia es siempre la misma: **añadir un reactivo cromogénico** que reaccione con el analito y forme un compuesto **coloreado y estable**, y medir ese color.
@@ -234,6 +242,8 @@ Todo esto está también detrás de los **kits de cubeta precintada** y de los *
 **Un caso aparte, sin reactivo:** el **nitrato** puede medirse **directamente en el ultravioleta**, porque absorbe hacia **220 nm**; se corrige la interferencia de la materia orgánica con una segunda lectura en torno a 275 nm.
 
 **Lo que exige la ley.** El **RD 3/2023 no impone método** para los parámetros físico-químicos: exige que el que se use sea capaz de medir el valor paramétrico con un **límite de cuantificación ≤ 30 %** de ese valor y con la **incertidumbre** de su tabla 15. Es decir: **la norma UNE es la forma habitual de cumplirlo, no una obligación en sí misma**.
+
+**Alcance de las determinaciones.** El fósforo total requiere convertir las formas previstas por el método a la forma medible; medir solo ortofosfato sin digestión no equivale al total. Expresar un resultado como P o como fosfato, o como N frente a nitrito o amonio, requiere indicar la base y, si procede, convertir por masas molares. En la medida DPD, cloro combinado se obtiene por diferencia total menos libre con resultados comparables; un valor negativo obliga a revisar incertidumbre y procedimiento. Un kit sigue necesitando blancos, control del lote, tiempos, intervalo y unidades. La absorción UV directa del nitrato es sensible al fondo orgánico: una corrección de segunda longitud de onda no garantiza eliminar cualquier interferencia. El color verdadero se define con el tratamiento de separación indicado, mientras el aparente incluye el efecto de partículas. El análisis colorimétrico distingue una determinación específica de Cr(VI) de una determinación de cromo total. La norma ISO 7150-1:1984 aparece confirmada en 2023 en el catálogo ISO, no actualmente pendiente de revisión; el alcance contempla aguas y prevé destilación para muestras excesivamente coloreadas o salinas. ISO 6332:1988 también figura confirmada en 2023. Se ha comprobado su ficha de alcance, no se afirma haber leído el texto de pago. El RD 3/2023 es un reglamento y no convierte automáticamente cada UNE citada en método obligatorio.
 
 ## 3. Tabla operativa
 
@@ -305,7 +315,7 @@ Todo esto está también detrás de los **kits de cubeta precintada** y de los *
 
 1. **De ninguna de las normas UNE citadas he leído el texto**: son de pago. He verificado **título, año, equivalencia ISO y estado**. Los **reactivos, longitudes de onda y campos de medida** de la tabla operativa proceden de **resúmenes del alcance y de fuentes secundarias**, no del articulado. Mismo tratamiento que en los temas 23 y 24: son datos muy probables y útiles para estudiar, pero **no citables como «lo que dice la norma»**.
 
-2. **La ISO 7150-1:1984 (amonio, azul de indofenol) aparece en ISO como «en revisión»**, y **no he confirmado que exista adopción UNE**. La longitud de onda que suele citarse para el indofenol (en torno a 655 nm) **no la he verificado**, y por eso no aparece en la tabla operativa.
+2. **La ISO 7150-1:1984 (amonio) figura confirmada en 2023 en el catálogo ISO, comprobado el 17/11/2026**, y **no he confirmado que exista adopción UNE**. La longitud de onda que suele citarse para el indofenol (en torno a 655 nm) **no la he verificado**, y por eso no aparece en la tabla operativa.
 
 3. **La ISO 6332 (hierro, fenantrolina) y la UNE-EN 903 (detergentes aniónicos) se citan sin año confirmado.** He comprobado que existen y a qué se refieren, no su edición vigente. Las longitudes de onda que doy para ellas son de uso común, no de la norma.
 
@@ -322,3 +332,6 @@ Todo esto está también detrás de los **kits de cubeta precintada** y de los *
 9. **De la UNE-EN ISO 7887 he tomado la edición de 2012** (ISO 7887:2011) como vigente, según el catálogo de UNE. La tienda de AENOR lista además una edición de **1995**; **no he confirmado expresamente que esté anulada**, aunque lo lógico es que la de 2012 la sustituya.
 
 10. **El reparto con los temas 26 a 28 y 30 a 32 lo he decidido yo**, como en los casos anteriores. Aquí queda solo la absorción molecular UV-visible. Si al redactar el 26 conviene mover algo —por ejemplo, el tratamiento común de la recta de calibrado—, este apartado se recorta sin tocar el resto.
+
+
+**Revisión de apoyo a la ampliación (17/11/2026).** Se matizan las afirmaciones absolutas sobre λmáx, cubetas, fuentes, filtración y desviaciones químicas. Referencias primarias consultadas: Agilent, *The Basics of UV-Vis Spectrophotometry*, 5980-1397EN, https://www.agilent.com/cs/library/primers/public/primer-uv-vis-basics-5980-1397en-agilent.pdf ; BRAND, *Technische Informationen – Küvetten*, https://www.brand.de/brand/contentserv_data/Context/BRAND%20GMBH%20%2B%20CO%20KG/Dokumente/Produkte/Prospekte/Kuevetten%204%20Fenster/Cuvettes_4_windows_DE.pdf ; fichas ISO 6878:2004 (https://www.iso.org/standard/36917.html), ISO 7150-1:1984 (https://www.iso.org/standard/13742.html) e ISO 6332:1988 (https://www.iso.org/standard/12630.html). Los ejercicios son aplicaciones originales de los conceptos del apunte y de Harris, *Análisis Químico Cuantitativo*; no se presentan como preguntas literales de normas de pago.

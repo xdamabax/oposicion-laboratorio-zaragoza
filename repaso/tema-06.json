@@ -163,9 +163,9 @@
     },
     {
       "id": "t06-f22",
-      "anverso": "IBI: ¿qué recargo pueden cobrar los ayuntamientos a las viviendas vacías?",
-      "reverso": "Hasta el **50 %** de la cuota líquida a las viviendas **desocupadas más de dos años** sin causa justificada, de titulares de **cuatro o más** viviendas; hasta el **100 %** si llevan **más de tres años**; y hasta **50 puntos más** si el titular tiene **dos o más vacías** en el municipio. Se devenga el **31 de diciembre** (art. 72.4).",
-      "fuente": "TRLRHL, art. 72.4",
+      "anverso": "IBI: según el artículo 72.4 bis vigente, ¿qué recargo se prevé para viviendas permanentemente desocupadas fuera de municipios de zona de mercado residencial tensionado?",
+      "reverso": "Fuera de municipios de zona de mercado residencial tensionado: hasta el **50 %** de la cuota líquida para inmuebles residenciales desocupados más de dos años sin causa justificada, de titulares de cuatro o más inmuebles residenciales; hasta el **100 %** si llevan más de tres años; pueden añadirse hasta **50 puntos porcentuales** si el titular tiene dos o más desocupados en el mismo municipio. Se devenga el **31 de diciembre**. Art. **72.4 bis**, redacción del RDL 29/2026 aplicable a periodos impositivos iniciados desde el 08/10/2026. Las zonas tensionadas tienen una regla diferenciada; no generalizar este esquema.",
+      "fuente": "TRLRHL, art. 72.4 bis, redacción del RDL 29/2026, art. 8 (BOE-A-2026-20823)",
       "etiquetas": ["ibi"]
     },
     {
@@ -1066,15 +1066,15 @@
     },
     {
       "id": "t06-q48",
-      "pregunta": "El recargo del IBI a las viviendas desocupadas durante más de dos años sin causa justificada (titulares de cuatro o más) puede llegar hasta:",
+      "pregunta": "En el régimen del artículo 72.4 bis del TRLRHL para municipios fuera de zona de mercado residencial tensionado, una vivienda lleva más de dos años y no más de tres desocupada sin causa justificada, y pertenece a un titular de cuatro o más inmuebles residenciales. Sin incremento adicional por varias viviendas vacías, ¿cuál es el recargo máximo básico?",
       "opciones": [
         "El 10 % de la cuota líquida",
         "El 25 % de la cuota líquida",
         "El 50 % de la cuota líquida"
       ],
       "correcta": 2,
-      "explicacion": "Hasta el 50 %; hasta el 100 % si llevan más de tres años.",
-      "fuente": "TRLRHL, art. 72.4 · apunte §4",
+      "explicacion": "Hasta el 50 % de la cuota líquida en ese supuesto. La redacción del RDL 29/2026 diferencia municipios de zona tensionada, desocupación superior a tres años e incrementos adicionales. Se aplica a periodos impositivos iniciados desde el 08/10/2026.",
+      "fuente": "TRLRHL, art. 72.4 bis, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
       "apartado": "4",
       "evidencia": "hasta el 50 % de la cuota líquida para las desocupadas más de dos años sin causa justificada, de titulares de cuatro o más viviendas;"
     },
@@ -1544,6 +1544,3072 @@
       "fuente": "TRLRHL, art. 100.2 · apunte §7",
       "apartado": "7",
       "evidencia": "- **Exención (100.2):** las obras de las que sea dueño el **Estado, una CCAA o una entidad local**, destinadas a **carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento**."
+    },
+    {
+      "id": "t06-q82",
+      "pregunta": "¿Qué aspecto constitucional fundamenta las bases del régimen jurídico financiero local según el 1.1?",
+      "opciones": [
+        "El régimen del sufragio municipal exclusivamente",
+        "El artículo 149.1.18.ª CE",
+        "La fijación constitucional de la capital"
+      ],
+      "correcta": 1,
+      "explicacion": "El precepto diferencia fundamento del régimen financiero, sistema tributario y participaciones.",
+      "fuente": "TRLRHL, art. 1.1 (BOE-A-2004-4214) · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Naturaleza | **Bases del régimen jurídico financiero** de la Administración local (art. 149.1.18.ª CE). La regulación del **sistema tributario local** se dicta en virtud del **art. 133 CE**, y la de las participaciones en los tributos del Estado, del **art. 142 CE** (art. 1.1) |"
+    },
+    {
+      "id": "t06-q83",
+      "pregunta": "¿Qué artículo constitucional se vincula al sistema tributario local en el 1.1?",
+      "opciones": [
+        "El 5",
+        "El 8",
+        "El 133"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe confundirse con el 142 sobre suficiencia y participaciones.",
+      "fuente": "TRLRHL, art. 1.1 (BOE-A-2004-4214) · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Naturaleza | **Bases del régimen jurídico financiero** de la Administración local (art. 149.1.18.ª CE). La regulación del **sistema tributario local** se dicta en virtud del **art. 133 CE**, y la de las participaciones en los tributos del Estado, del **art. 142 CE** (art. 1.1) |"
+    },
+    {
+      "id": "t06-q84",
+      "pregunta": "¿La aplicación nacional del texto refundido elimina los regímenes forales financieros previstos para País Vasco y Navarra?",
+      "opciones": [
+        "No",
+        "Solo subsiste el de las diputaciones de Aragón",
+        "Sí, los deroga por completo"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla territorial contiene esa salvedad expresa.",
+      "fuente": "TRLRHL, art. 1.2 (BOE-A-2004-4214) · apunte §1",
+      "apartado": "1",
+      "evidencia": "| Ámbito | **Todo el territorio nacional**, sin perjuicio de los regímenes **forales** del País Vasco y Navarra (art. 1.2) |"
+    },
+    {
+      "id": "t06-q85",
+      "pregunta": "Una entidad local recibe una subvención. ¿Es un recurso de su hacienda aunque no sea tributo propio?",
+      "opciones": [
+        "No, todo recurso debe ser impuesto",
+        "Sí",
+        "Solo si se llama tasa"
+      ],
+      "correcta": 1,
+      "explicacion": "La lista de recursos es más amplia que la de tributos.",
+      "fuente": "TRLRHL, art. 2.1.d (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **c)** | Las **participaciones en los tributos del Estado y de las comunidades autónomas** |\n| **d)** | Las **subvenciones** |\n| **e)** | Los percibidos en concepto de **precios públicos** |"
+    },
+    {
+      "id": "t06-q86",
+      "pregunta": "¿Cómo clasifica el artículo 2 el producto de operaciones de crédito?",
+      "opciones": [
+        "Recurso de la hacienda local",
+        "Un impuesto municipal obligatorio",
+        "Una clase de tasa"
+      ],
+      "correcta": 0,
+      "explicacion": "Los ingresos por crédito tienen una entrada propia en la enumeración.",
+      "fuente": "TRLRHL, art. 2.1.f (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **f)** | El producto de las **operaciones de crédito** |"
+    },
+    {
+      "id": "t06-q87",
+      "pregunta": "¿El producto de multas impuestas dentro de la competencia local puede integrar sus recursos?",
+      "opciones": [
+        "No, toda multa debe devolverse como ingreso privado",
+        "Solo si se aprueba como impuesto",
+        "Sí"
+      ],
+      "correcta": 2,
+      "explicacion": "El carácter sancionador no lo convierte en tributo propio.",
+      "fuente": "TRLRHL, art. 2.1.g (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **g)** | El producto de las **multas y sanciones** en el ámbito de sus competencias |"
+    },
+    {
+      "id": "t06-q88",
+      "pregunta": "¿Se considera recurso local participar en tributos estatales y autonómicos?",
+      "opciones": [
+        "Solo los estatales, nunca los autonómicos",
+        "Sí, es una categoría distinta de tributos propios",
+        "No, solo cuentan los recaudados directamente por el municipio"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley identifica expresamente ambos niveles de participación.",
+      "fuente": "TRLRHL, art. 2.1.c (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **c)** | Las **participaciones en los tributos del Estado y de las comunidades autónomas** |"
+    },
+    {
+      "id": "t06-q89",
+      "pregunta": "Además de tributos propios, ¿qué figura incluye la letra b del artículo 2.1?",
+      "opciones": [
+        "Solo donaciones de particulares",
+        "Únicamente precios de entradas culturales",
+        "Recargos exigibles sobre impuestos autonómicos o de otras entidades locales"
+      ],
+      "correcta": 2,
+      "explicacion": "La letra contiene tributos propios y esos recargos en sus términos legales.",
+      "fuente": "TRLRHL, art. 2.1.b (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **b)** | Los **tributos propios**, clasificados en **tasas, contribuciones especiales e impuestos**, y los **recargos** exigibles sobre los impuestos de las comunidades autónomas o de otras entidades locales |"
+    },
+    {
+      "id": "t06-q90",
+      "pregunta": "¿La categoría tributos propios comprende las subvenciones?",
+      "opciones": [
+        "No, comprende tasas, contribuciones especiales e impuestos",
+        "Solo cuando la subvención procede del Estado",
+        "Sí, las subvenciones son una cuarta clase de impuesto"
+      ],
+      "correcta": 0,
+      "explicacion": "La clasificación tributaria no agota todos los recursos.",
+      "fuente": "TRLRHL, art. 2.1.b (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Ocho letras.** Los **tributos** son solo una de ellas, la b), y se dividen en **tres clases**: tasas, contribuciones especiales e impuestos. **Los precios públicos no son tributos**: van aparte, en la e)."
+    },
+    {
+      "id": "t06-q91",
+      "pregunta": "Un precio público no es tributo. ¿Impide eso por sí solo aplicar prerrogativas de cobro de ingresos de derecho público?",
+      "opciones": [
+        "Sí, solo se aplican a impuestos",
+        "No, el artículo 2.2 se refiere a ingresos de derecho público",
+        "Sí, todo precio público es renta privada"
+      ],
+      "correcta": 1,
+      "explicacion": "La naturaleza no tributaria no equivale a derecho privado.",
+      "fuente": "TRLRHL, art. 2.2 (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Prerrogativas (art. 2.2):** para cobrar sus ingresos de derecho público —tributos, precios públicos, multas…—, la hacienda local tiene **las mismas prerrogativas que la hacienda del Estado** y actúa por los procedimientos administrativos."
+    },
+    {
+      "id": "t06-q92",
+      "pregunta": "¿De dónde parte la enumeración de recursos de la hacienda municipal del artículo 56?",
+      "opciones": [
+        "De los del artículo 2, con especialidades del título II",
+        "Solo de los cinco impuestos",
+        "Solo de sanciones"
+      ],
+      "correcta": 0,
+      "explicacion": "El régimen municipal concreta la enumeración general local.",
+      "fuente": "TRLRHL, art. 56 (BOE-A-2004-4214) · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Municipios (art. 56):** la hacienda de los municipios la forman **los recursos del art. 2**, con las especialidades del Título II."
+    },
+    {
+      "id": "t06-q93",
+      "pregunta": "Una entidad obtiene rendimientos de un bien patrimonial no afecto a uso o servicio público. ¿En qué categoría se encuadran en principio?",
+      "opciones": [
+        "Impuesto sobre vehículos",
+        "Contribución especial necesariamente",
+        "Ingresos de derecho privado"
+      ],
+      "correcta": 2,
+      "explicacion": "La procedencia patrimonial debe diferenciarse del dominio público.",
+      "fuente": "TRLRHL, art. 3.1 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Qué son (art. 3.1):** **los rendimientos o productos de cualquier naturaleza derivados de su patrimonio**, **y también** las **adquisiciones a título de herencia, legado o donación**. Las dos cosas; es pregunta repetida."
+    },
+    {
+      "id": "t06-q94",
+      "pregunta": "¿Una donación recibida por la entidad local puede ser ingreso de derecho privado según el 3.1?",
+      "opciones": [
+        "Solo si sustituye al IBI",
+        "Sí",
+        "No, siempre es tasa"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley incluye adquisiciones por herencia, legado o donación.",
+      "fuente": "TRLRHL, art. 3.1 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Qué son (art. 3.1):** **los rendimientos o productos de cualquier naturaleza derivados de su patrimonio**, **y también** las **adquisiciones a título de herencia, legado o donación**. Las dos cosas; es pregunta repetida."
+    },
+    {
+      "id": "t06-q95",
+      "pregunta": "¿Qué rasgo deben tener bienes y derechos del patrimonio descrito en el 3.2?",
+      "opciones": [
+        "Ser siempre vías de dominio público",
+        "Carecer de toda valoración económica",
+        "Ser susceptibles de valoración económica y no estar afectos a uso o servicio público"
+      ],
+      "correcta": 2,
+      "explicacion": "La afectación es relevante para distinguir el patrimonio de los bienes demaniales.",
+      "fuente": "TRLRHL, art. 3.2 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Patrimonio (3.2):** los bienes de su propiedad y los derechos reales o personales de que sean titulares, susceptibles de valoración económica, **siempre que no estén afectos al uso o servicio público**."
+    },
+    {
+      "id": "t06-q96",
+      "pregunta": "Se cobra por ocupación privativa de una vía de dominio público local. ¿Puede calificarse como ingreso de derecho privado por el solo hecho de ser un ingreso patrimonial en sentido coloquial?",
+      "opciones": [
+        "No, el 3.3 excluye los del dominio público",
+        "Solo depende del nombre del recibo",
+        "Sí, todo bien municipal produce ingreso privado"
+      ],
+      "correcta": 0,
+      "explicacion": "La naturaleza demanial impide esa clasificación del 3.3.",
+      "fuente": "TRLRHL, art. 3.3 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Nunca son de derecho privado (3.3):** los ingresos que procedan de los **bienes de dominio público local**."
+    },
+    {
+      "id": "t06-q97",
+      "pregunta": "¿Por qué régimen se rige el cobro de ingresos de derecho privado del artículo 4?",
+      "opciones": [
+        "Siempre el apremio tributario por ser ingreso municipal",
+        "Normas y procedimientos de derecho privado",
+        "Solo el procedimiento sancionador"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe distinguirse el régimen de cobro de ingresos privados y públicos.",
+      "fuente": "TRLRHL, art. 4 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Régimen (art. 4):** se cobran por las **normas del derecho privado**."
+    },
+    {
+      "id": "t06-q98",
+      "pregunta": "¿Puede destinarse libremente a gastos corrientes todo ingreso de vender bienes patrimoniales?",
+      "opciones": [
+        "No, rige la prohibición con las excepciones legales",
+        "Solo si se denomina precio público",
+        "Sí, sin ningún límite"
+      ],
+      "correcta": 0,
+      "explicacion": "La naturaleza privada del ingreso no elimina su limitación legal de destino.",
+      "fuente": "TRLRHL, art. 5 (BOE-A-2004-4214) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- **Destino (art. 5):** lo obtenido por **vender o gravar bienes patrimoniales no puede financiar gasto corriente**, salvo excepciones legales."
+    },
+    {
+      "id": "t06-q99",
+      "pregunta": "Una terraza ocupa privativamente dominio público local en el supuesto legal. ¿Qué figura tributaria corresponde examinar?",
+      "opciones": [
+        "Impuesto sobre construcción por esa sola ocupación",
+        "Contribución especial por aumento de valor",
+        "Tasa"
+      ],
+      "correcta": 2,
+      "explicacion": "El aprovechamiento privativo del dominio público es un supuesto propio de tasa.",
+      "fuente": "TRLRHL, art. 20.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Tasa** (art. 20) | Tributo por **usar privativamente el dominio público local** o por un **servicio o actividad de competencia local** que se refiera o beneficie de modo particular al sujeto pasivo, y que **no sea de solicitud voluntaria** o **no lo preste el sector privado** | Licencias, recogida de basuras, ocupación de la vía pública |"
+    },
+    {
+      "id": "t06-q100",
+      "pregunta": "Un servicio local beneficia particularmente al sujeto y no es de solicitud voluntaria. ¿Que también lo preste el sector privado elimina por sí solo la posibilidad de tasa?",
+      "opciones": [
+        "Solo puede cobrarse IAE",
+        "No, las condiciones legales se formulan alternativamente",
+        "Sí, siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "La falta de voluntariedad es una condición relevante aunque exista oferta privada.",
+      "fuente": "TRLRHL, art. 20.1.B (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Tasa** (art. 20) | Tributo por **usar privativamente el dominio público local** o por un **servicio o actividad de competencia local** que se refiera o beneficie de modo particular al sujeto pasivo, y que **no sea de solicitud voluntaria** o **no lo preste el sector privado** | Licencias, recogida de basuras, ocupación de la vía pública |"
+    },
+    {
+      "id": "t06-q101",
+      "pregunta": "Un servicio local es voluntario, pero no lo presta el sector privado y concurren los demás requisitos. ¿Puede ser supuesto de tasa?",
+      "opciones": [
+        "No, todo servicio voluntario exige precio público",
+        "Solo si el usuario posee un vehículo",
+        "Sí"
+      ],
+      "correcta": 2,
+      "explicacion": "La voluntariedad aislada no basta para clasificarlo como precio público.",
+      "fuente": "TRLRHL, art. 20.1.B (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Tasa** (art. 20) | Tributo por **usar privativamente el dominio público local** o por un **servicio o actividad de competencia local** que se refiera o beneficie de modo particular al sujeto pasivo, y que **no sea de solicitud voluntaria** o **no lo preste el sector privado** | Licencias, recogida de basuras, ocupación de la vía pública |"
+    },
+    {
+      "id": "t06-q102",
+      "pregunta": "¿Qué combinación caracteriza el supuesto general de precio público por servicios del apunte?",
+      "opciones": [
+        "Solicitud voluntaria y prestación también por el sector privado",
+        "Toda utilización privativa del dominio público",
+        "Solicitud obligatoria y ausencia de oferta privada"
+      ],
+      "correcta": 0,
+      "explicacion": "Deben concurrir las condiciones que separan precio público y tasa.",
+      "fuente": "TRLRHL, arts. 41 y 20.1.B (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Precio público** (arts. 41 y ss.) | **No es tributo**. Se cobra por servicios o actividades que **sí son de solicitud voluntaria** y **sí presta el sector privado** | Instalaciones deportivas, cursos |"
+    },
+    {
+      "id": "t06-q103",
+      "pregunta": "¿La exigencia de IBI depende de que el ayuntamiento preste una actuación concreta al propietario como contraprestación?",
+      "opciones": [
+        "Sí, debe equivaler al precio de un servicio individual",
+        "No, el impuesto grava el presupuesto legal de capacidad económica",
+        "Solo si la vivienda está alquilada"
+      ],
+      "correcta": 1,
+      "explicacion": "Los impuestos se distinguen de tasas y contribuciones por su hecho imponible.",
+      "fuente": "TRLRHL, art. 59 y clasificación tributaria (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Impuesto** | Tributo **sin contraprestación**: grava una capacidad económica (propiedad, actividad, vehículos…) | Los cinco del art. 59 |"
+    },
+    {
+      "id": "t06-q104",
+      "pregunta": "¿Qué diferencia una contribución especial de una imposición general sobre el inmueble?",
+      "opciones": [
+        "El beneficio especial o aumento de valor por obra o servicio público local",
+        "Que no sea nunca un tributo",
+        "Que siempre grave vehículos"
+      ],
+      "correcta": 0,
+      "explicacion": "La obra o establecimiento o ampliación de servicio produce un beneficio particular.",
+      "fuente": "TRLRHL, art. 28 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "| **Contribución especial** (art. 28) | Tributo por el **beneficio o aumento de valor** de los bienes del obligado a causa de **obras públicas o servicios públicos** locales | Urbanizar una calle |"
+    },
+    {
+      "id": "t06-q105",
+      "pregunta": "¿Puede cobrarse tasa por alumbrado de vías públicas?",
+      "opciones": [
+        "Sí, si se divide el coste por viviendas",
+        "Solo cuando el vecino lo solicite",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "El alumbrado figura expresamente entre los servicios excluidos de tasa.",
+      "fuente": "TRLRHL, art. 21.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Servicios por los que no se puede cobrar tasa (art. 21.1):** abastecimiento de aguas en **fuentes públicas**, **alumbrado** de vías públicas, **vigilancia pública** en general, **protección civil**, **limpieza de la vía pública** y **enseñanza obligatoria**."
+    },
+    {
+      "id": "t06-q106",
+      "pregunta": "¿La limpieza de la vía pública puede financiarse mediante una tasa por ese servicio en el supuesto del artículo 21.1?",
+      "opciones": [
+        "Solo si se llama precio por limpieza",
+        "No",
+        "Sí, sin límites"
+      ],
+      "correcta": 1,
+      "explicacion": "La lista legal excluye esa tasa; no debe confundirse con recogida de residuos.",
+      "fuente": "TRLRHL, art. 21.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Servicios por los que no se puede cobrar tasa (art. 21.1):** abastecimiento de aguas en **fuentes públicas**, **alumbrado** de vías públicas, **vigilancia pública** en general, **protección civil**, **limpieza de la vía pública** y **enseñanza obligatoria**."
+    },
+    {
+      "id": "t06-q107",
+      "pregunta": "¿Qué diferencia importa entre fuentes públicas y suministro domiciliario de agua?",
+      "opciones": [
+        "Ambos están siempre exentos de cualquier ingreso",
+        "Las fuentes públicas se gravan obligatoriamente con IBI al usuario",
+        "La prohibición de tasa del 21.1 cita abastecimiento en fuentes públicas"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe extenderse a todo suministro la exclusión relativa a fuentes públicas.",
+      "fuente": "TRLRHL, art. 21.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Servicios por los que no se puede cobrar tasa (art. 21.1):** abastecimiento de aguas en **fuentes públicas**, **alumbrado** de vías públicas, **vigilancia pública** en general, **protección civil**, **limpieza de la vía pública** y **enseñanza obligatoria**."
+    },
+    {
+      "id": "t06-q108",
+      "pregunta": "¿Se permite tasa por la enseñanza en niveles de educación obligatoria conforme al 21.1?",
+      "opciones": [
+        "No",
+        "Solo si lo acuerda el Alcalde",
+        "Sí, siempre como tasa de matrícula municipal"
+      ],
+      "correcta": 0,
+      "explicacion": "Es otra de las prohibiciones expresas de ese precepto.",
+      "fuente": "TRLRHL, art. 21.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Servicios por los que no se puede cobrar tasa (art. 21.1):** abastecimiento de aguas en **fuentes públicas**, **alumbrado** de vías públicas, **vigilancia pública** en general, **protección civil**, **limpieza de la vía pública** y **enseñanza obligatoria**."
+    },
+    {
+      "id": "t06-q109",
+      "pregunta": "¿La prohibición de tasa por protección civil significa que cualquier ingreso local es un tributo?",
+      "opciones": [
+        "Sí, elimina los precios públicos",
+        "No, son cuestiones diferentes",
+        "Sí, sustituye toda financiación por multas"
+      ],
+      "correcta": 1,
+      "explicacion": "Distinguir prohibiciones de una figura y clasificación general de recursos evita errores.",
+      "fuente": "TRLRHL, art. 21.1 (BOE-A-2004-4214) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "- **Servicios por los que no se puede cobrar tasa (art. 21.1):** abastecimiento de aguas en **fuentes públicas**, **alumbrado** de vías públicas, **vigilancia pública** en general, **protección civil**, **limpieza de la vía pública** y **enseñanza obligatoria**."
+    },
+    {
+      "id": "t06-q110",
+      "pregunta": "¿Puede el ayuntamiento tratar al IVTM como impuesto voluntario porque una ordenanza lo desee?",
+      "opciones": [
+        "No, pertenece a los obligatorios del 59.1",
+        "Solo si existen vehículos históricos",
+        "Sí, todos los municipales son potestativos"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley utiliza exigirán para IBI, IAE e IVTM.",
+      "fuente": "TRLRHL, art. 59.1 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "![Los cinco impuestos municipales: obligatorios y potestativos](esquema:impuestos-municipales)"
+    },
+    {
+      "id": "t06-q111",
+      "pregunta": "¿Que el IAE sea obligatorio implica que toda persona que ejerce una actividad deba pagar sin aplicar exenciones?",
+      "opciones": [
+        "Sí, excluye todas las exenciones",
+        "Sí, especialmente las de personas físicas",
+        "No, obligatoriedad del impuesto y exenciones son planos distintos"
+      ],
+      "correcta": 2,
+      "explicacion": "El establecimiento obligatorio no impide beneficios legales ni no sujeción.",
+      "fuente": "TRLRHL, art. 59.1 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "![Los cinco impuestos municipales: obligatorios y potestativos](esquema:impuestos-municipales)"
+    },
+    {
+      "id": "t06-q112",
+      "pregunta": "¿Qué debe distinguirse al estudiar ICIO e IIVTNU?",
+      "opciones": [
+        "Que nunca necesiten regulación legal",
+        "La posibilidad municipal de establecerlos de la aplicación de su hecho imponible cuando estén establecidos",
+        "Que sean tasas y no impuestos"
+      ],
+      "correcta": 1,
+      "explicacion": "El carácter potestativo no convierte en opcional cada deuda para el sujeto pasivo.",
+      "fuente": "TRLRHL, art. 59.2 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "![Los cinco impuestos municipales: obligatorios y potestativos](esquema:impuestos-municipales)"
+    },
+    {
+      "id": "t06-q113",
+      "pregunta": "¿Qué finalidad define la prudencia financiera local?",
+      "opciones": [
+        "Eliminar toda obligación de devolución",
+        "Maximizar riesgo por ser dinero público",
+        "Minimizar riesgo y coste de operaciones financieras"
+      ],
+      "correcta": 2,
+      "explicacion": "El principio encuadra las condiciones de las operaciones.",
+      "fuente": "TRLRHL, art. 48 bis.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prudencia financiera** | 48 bis | **Todas las operaciones financieras** de las corporaciones locales están sujetas al **principio de prudencia financiera**: las condiciones para **minimizar su riesgo y coste** (48 bis.1). Las corporaciones **velarán por su aplicación en el conjunto de su sector público** (48 bis.4) |"
+    },
+    {
+      "id": "t06-q114",
+      "pregunta": "¿Debe velarse por prudencia financiera solo en el ayuntamiento y nunca en su sector público?",
+      "opciones": [
+        "No, se extiende al conjunto de su sector público",
+        "Solo se aplica a multas",
+        "Sí, las entidades dependientes quedan excluidas"
+      ],
+      "correcta": 0,
+      "explicacion": "La previsión evita una lectura limitada a la Administración matriz.",
+      "fuente": "TRLRHL, art. 48 bis.4 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prudencia financiera** | 48 bis | **Todas las operaciones financieras** de las corporaciones locales están sujetas al **principio de prudencia financiera**: las condiciones para **minimizar su riesgo y coste** (48 bis.1). Las corporaciones **velarán por su aplicación en el conjunto de su sector público** (48 bis.4) |"
+    },
+    {
+      "id": "t06-q115",
+      "pregunta": "¿Puede aprobarse inicialmente un presupuesto con déficit como si la ley lo admitiera sin más?",
+      "opciones": [
+        "Sí, siempre",
+        "No, cada presupuesto se aprueba sin déficit inicial",
+        "Solo si no hay reclamaciones"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla de nivelación es distinta del resultado posterior de ejecución.",
+      "fuente": "TRLRHL, art. 165.4 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Presupuesto** | 165.4 y 169 | Cada presupuesto se aprueba **sin déficit inicial** (165.4). Tras la **aprobación inicial**, se expone al público **15 días**, con reclamaciones **ante el Pleno**; sin reclamaciones, queda **aprobado definitivamente**, y con ellas el Pleno tiene **un mes** para resolver (169.1). La aprobación definitiva ha de hacerse **antes del 31 de diciembre del año anterior** (169.2) |"
+    },
+    {
+      "id": "t06-q116",
+      "pregunta": "¿Ante qué órgano se presentan reclamaciones durante exposición del presupuesto inicialmente aprobado?",
+      "opciones": [
+        "El Pleno",
+        "Siempre el Consejo de Estado",
+        "Exclusivamente el Alcalde"
+      ],
+      "correcta": 0,
+      "explicacion": "El precepto identifica el órgano competente para conocerlas.",
+      "fuente": "TRLRHL, art. 169.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Presupuesto** | 165.4 y 169 | Cada presupuesto se aprueba **sin déficit inicial** (165.4). Tras la **aprobación inicial**, se expone al público **15 días**, con reclamaciones **ante el Pleno**; sin reclamaciones, queda **aprobado definitivamente**, y con ellas el Pleno tiene **un mes** para resolver (169.1). La aprobación definitiva ha de hacerse **antes del 31 de diciembre del año anterior** (169.2) |"
+    },
+    {
+      "id": "t06-q117",
+      "pregunta": "¿Qué sucede si no se presenta ninguna reclamación en la exposición presupuestaria?",
+      "opciones": [
+        "Se archiva obligatoriamente el presupuesto",
+        "Debe repetirse íntegramente toda la aprobación cada mes",
+        "Se considera definitivamente aprobado en los términos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley prevé ese efecto de la ausencia de reclamaciones.",
+      "fuente": "TRLRHL, art. 169.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Presupuesto** | 165.4 y 169 | Cada presupuesto se aprueba **sin déficit inicial** (165.4). Tras la **aprobación inicial**, se expone al público **15 días**, con reclamaciones **ante el Pleno**; sin reclamaciones, queda **aprobado definitivamente**, y con ellas el Pleno tiene **un mes** para resolver (169.1). La aprobación definitiva ha de hacerse **antes del 31 de diciembre del año anterior** (169.2) |"
+    },
+    {
+      "id": "t06-q118",
+      "pregunta": "¿La mera interposición del recurso contra aprobación definitiva suspende automáticamente la aplicación presupuestaria?",
+      "opciones": [
+        "Solo si se presenta por un vecino",
+        "No",
+        "Sí, en todos los casos"
+      ],
+      "correcta": 1,
+      "explicacion": "La impugnación y la suspensión tienen regímenes diferentes.",
+      "fuente": "TRLRHL, art. 171.3 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Recurso contra el presupuesto** | 171 | Contra la **aprobación definitiva** cabe **directamente recurso contencioso-administrativo** (171.1). El **Tribunal de Cuentas** informa antes de que se resuelva **solo si la impugnación afecta o se refiere a la nivelación presupuestaria** (171.2). **Recurrir no suspende por sí solo** la aplicación del presupuesto (171.3) |"
+    },
+    {
+      "id": "t06-q119",
+      "pregunta": "¿Debe informar el Tribunal de Cuentas en cualquier recurso presupuestario sin atender a su objeto?",
+      "opciones": [
+        "Sí, cualquiera que sea el motivo",
+        "Solo si el recurso trata de vehículos",
+        "No, el supuesto legal se refiere a nivelación presupuestaria"
+      ],
+      "correcta": 2,
+      "explicacion": "La condición material delimita esa intervención del Tribunal.",
+      "fuente": "TRLRHL, art. 171.2 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Recurso contra el presupuesto** | 171 | Contra la **aprobación definitiva** cabe **directamente recurso contencioso-administrativo** (171.1). El **Tribunal de Cuentas** informa antes de que se resuelva **solo si la impugnación afecta o se refiere a la nivelación presupuestaria** (171.2). **Recurrir no suspende por sí solo** la aplicación del presupuesto (171.3) |"
+    },
+    {
+      "id": "t06-q120",
+      "pregunta": "¿Qué derecho ocupa el primer lugar en la prelación del hecho imponible del IBI?",
+      "opciones": [
+        "Concesión administrativa",
+        "Usufructo en todo caso",
+        "Propiedad en todo caso"
+      ],
+      "correcta": 0,
+      "explicacion": "La concurrencia del primero excluye los siguientes en los términos del artículo 61.2.",
+      "fuente": "TRLRHL, art. 61.1 y 61.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "1. una **concesión administrativa**;"
+    },
+    {
+      "id": "t06-q121",
+      "pregunta": "Si no hay concesión, pero concurren superficie, usufructo y propiedad, ¿qué titular realiza el hecho imponible por prelación?",
+      "opciones": [
+        "El propietario siempre",
+        "El del derecho de superficie",
+        "El usufructuario siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "La superficie precede a usufructo y propiedad.",
+      "fuente": "TRLRHL, art. 61.1 y 61.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "1. una **concesión administrativa**;"
+    },
+    {
+      "id": "t06-q122",
+      "pregunta": "Si solo concurren usufructo y propiedad, ¿cuál prevalece a estos efectos del IBI?",
+      "opciones": [
+        "El usufructo",
+        "Ambos con la misma deuda duplicada",
+        "La propiedad necesariamente"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley ordena concesión, superficie, usufructo y propiedad.",
+      "fuente": "TRLRHL, art. 61.1 y 61.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "1. una **concesión administrativa**;"
+    },
+    {
+      "id": "t06-q123",
+      "pregunta": "¿El IBI grava exclusivamente inmuebles urbanos?",
+      "opciones": [
+        "Sí, los rústicos nunca entran en su ámbito",
+        "Solo viviendas con alquiler",
+        "No, también rústicos y de características especiales"
+      ],
+      "correcta": 2,
+      "explicacion": "La clasificación del bien afecta al régimen, no limita el impuesto a vivienda urbana.",
+      "fuente": "TRLRHL, art. 61.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Hecho imponible (61.1):** la **titularidad** sobre inmuebles **rústicos, urbanos y de características especiales** de uno de estos derechos, **por este orden de prelación**:"
+    },
+    {
+      "id": "t06-q124",
+      "pregunta": "Una vía terrestre está afectada al aprovechamiento público y gratuito del supuesto legal. ¿Qué tratamiento de IBI corresponde examinar?",
+      "opciones": [
+        "Devengo por cada persona que transita",
+        "No sujeción",
+        "Bonificación potestativa del 50 % en todo caso"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley excluye del hecho imponible ciertos bienes de uso público gratuito.",
+      "fuente": "TRLRHL, art. 61.5.a (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- carreteras, caminos y demás vías terrestres, y el dominio público marítimo-terrestre e hidráulico, **de aprovechamiento público y gratuito**;"
+    },
+    {
+      "id": "t06-q125",
+      "pregunta": "¿Puede afirmarse que todo inmueble patrimonial del propio municipio está no sujeto al IBI aunque se ceda a un tercero con contraprestación?",
+      "opciones": [
+        "Sí, toda cesión es irrelevante",
+        "Solo importa que el tercero sea vecino",
+        "No, debe examinarse esa excepción"
+      ],
+      "correcta": 2,
+      "explicacion": "La no sujeción municipal no se generaliza prescindiendo del destino y cesión.",
+      "fuente": "TRLRHL, art. 61.5.b (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- los inmuebles **del propio municipio** de dominio público afectos a **uso público** o a un **servicio público gestionado directamente**, y sus bienes **patrimoniales**, salvo los **cedidos a terceros con contraprestación**."
+    },
+    {
+      "id": "t06-q126",
+      "pregunta": "¿Qué afectación se menciona para exención de inmuebles públicos del 62.1.a?",
+      "opciones": [
+        "Seguridad ciudadana, servicios educativos y penitenciarios en los términos legales",
+        "Solo uso de segunda residencia",
+        "Cualquier uso privado del inmueble sin distinción"
+      ],
+      "correcta": 0,
+      "explicacion": "La exención exige atender a titularidad y afectación, no solo a que sea un inmueble.",
+      "fuente": "TRLRHL, art. 62.1.a (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- inmuebles del Estado, las CCAA y las entidades locales afectos a **seguridad ciudadana, servicios educativos y penitenciarios**, y los del Estado afectos a la **defensa**;"
+    },
+    {
+      "id": "t06-q127",
+      "pregunta": "¿Qué tratamiento tienen los bienes comunales y montes vecinales en mano común en el supuesto del 62.1.b?",
+      "opciones": [
+        "No sujeción por ser todo suelo rústico",
+        "Exención del IBI",
+        "Bonificación discrecional de cada inspector"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley los enumera como exentos, categoría distinta de no sujeción.",
+      "fuente": "TRLRHL, art. 62.1.b (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **bienes comunales y montes vecinales** en mano común;"
+    },
+    {
+      "id": "t06-q128",
+      "pregunta": "¿Qué condición aparece en la exención relativa a bienes de Gobiernos extranjeros del supuesto legal?",
+      "opciones": [
+        "Reciprocidad",
+        "Tener menos de treinta años",
+        "Ser vivienda de alquiler vacacional"
+      ],
+      "correcta": 0,
+      "explicacion": "La aplicación exige respetar el alcance legal y convenios correspondientes.",
+      "fuente": "TRLRHL, art. 62.1.e (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- los de **Gobiernos extranjeros**, con reciprocidad;"
+    },
+    {
+      "id": "t06-q129",
+      "pregunta": "¿La exención de terrenos ferroviarios se extiende sin más a cafeterías y comercios de la estación?",
+      "opciones": [
+        "Sí, todo inmueble próximo a una vía queda exento",
+        "Solo depende de la edad de la estación",
+        "No, esos usos están excluidos en los términos del precepto"
+      ],
+      "correcta": 2,
+      "explicacion": "La exención ferroviaria no se generaliza a explotaciones ajenas a su alcance.",
+      "fuente": "TRLRHL, art. 62.1.g (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- los terrenos de las **líneas de ferrocarril** y sus estaciones y almacenes. **No** las cafeterías, comercios, viviendas de empleados ni oficinas."
+    },
+    {
+      "id": "t06-q130",
+      "pregunta": "En centros docentes concertados, ¿a qué superficie se refiere la exención solicitada?",
+      "opciones": [
+        "Solo aparcamientos públicos próximos",
+        "La afectada a enseñanza concertada",
+        "Toda propiedad del titular aunque tenga uso ajeno"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe respetarse la afectación específica y la solicitud legal.",
+      "fuente": "TRLRHL, art. 62.2.a (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **centros docentes concertados**, en la superficie de la enseñanza concertada;"
+    },
+    {
+      "id": "t06-q131",
+      "pregunta": "¿Qué duración contempla la exención por repoblación forestal del 62.2.c?",
+      "opciones": [
+        "Nueve años por ser una reducción catastral",
+        "Tres periodos como toda VPO",
+        "Quince años en los términos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe confundirse exención forestal con otras duraciones del IBI.",
+      "fuente": "TRLRHL, art. 62.2.c (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **repoblaciones forestales**, durante **15 años**."
+    },
+    {
+      "id": "t06-q132",
+      "pregunta": "¿La exención de centros sanitarios públicos del 62.3 tiene carácter potestativo para las ordenanzas?",
+      "opciones": [
+        "Sí",
+        "Solo depende de una decisión del Catastro sin ordenanza",
+        "No, todos están automáticamente no sujetos"
+      ],
+      "correcta": 0,
+      "explicacion": "El precepto permite regular esa exención en las condiciones correspondientes.",
+      "fuente": "TRLRHL, art. 62.3 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Exenciones potestativas (62.3 y 62.4):** los **centros sanitarios públicos**, y los inmuebles cuya **cuota líquida no supere** el importe que fije la ordenanza."
+    },
+    {
+      "id": "t06-q133",
+      "pregunta": "¿Qué magnitud puede utilizar la ordenanza para eximir inmuebles por razones de eficiencia recaudatoria según el 62.4?",
+      "opciones": [
+        "Siempre el valor de mercado sin umbral",
+        "Una cuota líquida que no supere el importe fijado",
+        "Solo el número de personas empadronadas"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una facultad legal de regulación de pequeños importes.",
+      "fuente": "TRLRHL, art. 62.4 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Exenciones potestativas (62.3 y 62.4):** los **centros sanitarios públicos**, y los inmuebles cuya **cuota líquida no supere** el importe que fije la ordenanza."
+    },
+    {
+      "id": "t06-q134",
+      "pregunta": "¿Debe identificarse el sujeto pasivo del IBI con cualquier ocupante material aunque no sea titular del derecho gravado?",
+      "opciones": [
+        "No, se atiende al titular del derecho constitutivo del hecho imponible",
+        "Solo decide el recibo del agua",
+        "Sí, todo ocupante paga necesariamente"
+      ],
+      "correcta": 0,
+      "explicacion": "La ocupación no sustituye la titularidad legal relevante.",
+      "fuente": "TRLRHL, art. 63.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Sujeto pasivo (63):** quien sea **titular del derecho** constitutivo del hecho imponible. Puede **repercutir** la carga conforme al derecho común."
+    },
+    {
+      "id": "t06-q135",
+      "pregunta": "¿Puede el sujeto pasivo repercutir la carga del IBI conforme al derecho común?",
+      "opciones": [
+        "No, está prohibido en cualquier supuesto",
+        "Solo si se convierte en IVA",
+        "Sí, en los términos de la ley"
+      ],
+      "correcta": 2,
+      "explicacion": "La repercusión civil no altera por sí sola quién es sujeto pasivo tributario.",
+      "fuente": "TRLRHL, art. 63.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Sujeto pasivo (63):** quien sea **titular del derecho** constitutivo del hecho imponible. Puede **repercutir** la carga conforme al derecho común."
+    },
+    {
+      "id": "t06-q136",
+      "pregunta": "Si cambia la titularidad del inmueble, ¿desaparece necesariamente la afección real a cuotas de IBI pendientes?",
+      "opciones": [
+        "Solo si el adquirente no fue propietario antes",
+        "No, el inmueble queda afecto en los términos legales",
+        "Sí, toda transmisión extingue la deuda"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley configura una afección con responsabilidad subsidiaria.",
+      "fuente": "TRLRHL, art. 64.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Afección real (64.1):** si cambia el titular, **el inmueble queda afecto al pago de la cuota** (responsabilidad subsidiaria)."
+    },
+    {
+      "id": "t06-q137",
+      "pregunta": "¿Cómo se obtiene la base liquidable del IBI según la regla estudiada?",
+      "opciones": [
+        "Sustituyendo el valor catastral siempre por el precio de venta",
+        "Sumando todas las bonificaciones a la base",
+        "Restando a la imponible la reducción legal aplicable"
+      ],
+      "correcta": 2,
+      "explicacion": "Base imponible, reducción y cuota son conceptos distintos.",
+      "fuente": "TRLRHL, art. 66 y arts. 67–70 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q138",
+      "pregunta": "Con base imponible de 100.000 euros y reducción legal aplicable de 20.000 euros, ¿qué base liquidable resulta?",
+      "opciones": [
+        "80.000 euros",
+        "20.000 euros",
+        "120.000 euros"
+      ],
+      "correcta": 0,
+      "explicacion": "La base liquidable es imponible menos reducción, sin confundirla con una cuota.",
+      "fuente": "TRLRHL, art. 66 y arts. 67–70 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q139",
+      "pregunta": "¿Durante cuánto tiempo se aplica, como regla estudiada, la reducción tras nuevos valores catastrales?",
+      "opciones": [
+        "Quince años como la repoblación forestal",
+        "Nueve años",
+        "Tres periodos como la VPO"
+      ],
+      "correcta": 1,
+      "explicacion": "La reducción tiene su propio régimen temporal.",
+      "fuente": "TRLRHL, art. 68 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q140",
+      "pregunta": "¿Cómo evoluciona el coeficiente reductor desde el primer año?",
+      "opciones": [
+        "Empieza en 0,9 y disminuye 0,1 cada año",
+        "Se mantiene siempre en 1",
+        "Empieza en 0,1 y aumenta 0,9 cada año"
+      ],
+      "correcta": 0,
+      "explicacion": "La disminución progresiva reduce paulatinamente el beneficio.",
+      "fuente": "TRLRHL, art. 68 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q141",
+      "pregunta": "¿Cuál es el tipo mínimo y supletorio de IBI rústico?",
+      "opciones": [
+        "0,4 %",
+        "0,6 %",
+        "0,3 %"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe intercambiarse con el urbano ni el de características especiales.",
+      "fuente": "TRLRHL, art. 72.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Hecho imponible (61.1):** la **titularidad** sobre inmuebles **rústicos, urbanos y de características especiales** de uno de estos derechos, **por este orden de prelación**:"
+    },
+    {
+      "id": "t06-q142",
+      "pregunta": "¿Cuál es el máximo general del IBI rústico antes de incrementos legalmente permitidos?",
+      "opciones": [
+        "1,30 %",
+        "0,90 %",
+        "1,10 %"
+      ],
+      "correcta": 1,
+      "explicacion": "Los incrementos legales deben diferenciarse del máximo general.",
+      "fuente": "TRLRHL, art. 72.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Hecho imponible (61.1):** la **titularidad** sobre inmuebles **rústicos, urbanos y de características especiales** de uno de estos derechos, **por este orden de prelación**:"
+    },
+    {
+      "id": "t06-q143",
+      "pregunta": "¿Qué tipo supletorio corresponde a inmuebles de características especiales?",
+      "opciones": [
+        "0,3 %",
+        "1,10 %",
+        "0,6 %"
+      ],
+      "correcta": 2,
+      "explicacion": "El tipo supletorio es distinto del intervalo para tipos diferenciados.",
+      "fuente": "TRLRHL, art. 72.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Hecho imponible (61.1):** la **titularidad** sobre inmuebles **rústicos, urbanos y de características especiales** de uno de estos derechos, **por este orden de prelación**:"
+    },
+    {
+      "id": "t06-q144",
+      "pregunta": "¿Qué intervalo limita los tipos diferenciados de inmuebles de características especiales?",
+      "opciones": [
+        "Entre 0,4 % y 1,3 %",
+        "Entre 4 % y 30 %",
+        "Entre 0,3 % y 0,9 %"
+      ],
+      "correcta": 0,
+      "explicacion": "El límite corresponde a esa clase concreta de inmuebles.",
+      "fuente": "TRLRHL, art. 72.2 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Hecho imponible (61.1):** la **titularidad** sobre inmuebles **rústicos, urbanos y de características especiales** de uno de estos derechos, **por este orden de prelación**:"
+    },
+    {
+      "id": "t06-q145",
+      "pregunta": "¿Puede la capitalidad provincial o autonómica justificar uno de los incrementos legales del tipo máximo del IBI?",
+      "opciones": [
+        "No, los máximos nunca admiten incremento",
+        "Sí, en los términos del 72.3",
+        "Solo si lo pide cada propietario"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley contempla circunstancias tasadas para incrementar máximos.",
+      "fuente": "TRLRHL, art. 72.3 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Incrementos (72.3):** los máximos pueden subir si el municipio es **capital de provincia o de comunidad autónoma** (+0,07 urbanos, +0,06 rústicos), tiene **transporte público colectivo de superficie** o **presta más servicios** de los obligatorios. **Zaragoza cumple las tres.**"
+    },
+    {
+      "id": "t06-q146",
+      "pregunta": "¿Qué otra circunstancia del municipio puede permitir incrementar tipos máximos conforme al 72.3?",
+      "opciones": [
+        "Prestar más servicios que los legalmente obligatorios",
+        "Cambiar el nombre de una calle",
+        "Tener cualquier edificio vacío sin más requisitos"
+      ],
+      "correcta": 0,
+      "explicacion": "La existencia de una circunstancia legal no implica por sí sola que el municipio haya aprobado el incremento.",
+      "fuente": "TRLRHL, art. 72.3 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Incrementos (72.3):** los máximos pueden subir si el municipio es **capital de provincia o de comunidad autónoma** (+0,07 urbanos, +0,06 rústicos), tiene **transporte público colectivo de superficie** o **presta más servicios** de los obligatorios. **Zaragoza cumple las tres.**"
+    },
+    {
+      "id": "t06-q147",
+      "pregunta": "¿Qué condición exige la bonificación de inmuebles de promotoras respecto de su inmovilizado?",
+      "opciones": [
+        "Que sean siempre su sede inmovilizada",
+        "Que cualquier bien patrimonial público quede incluido",
+        "Que no formen parte de él"
+      ],
+      "correcta": 2,
+      "explicacion": "El artículo 73.1 delimita los inmuebles objeto de la actividad beneficiada.",
+      "fuente": "TRLRHL, art. 73.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **50-90 %** para los inmuebles de **empresas de urbanización, construcción y promoción** que no sean inmovilizado, como máximo **tres períodos**;"
+    },
+    {
+      "id": "t06-q148",
+      "pregunta": "¿Qué duración máxima tiene esa bonificación de promoción del artículo 73.1?",
+      "opciones": [
+        "Quince años",
+        "Tres periodos impositivos",
+        "Nueve años en todo caso"
+      ],
+      "correcta": 1,
+      "explicacion": "El intervalo porcentual y la duración son requisitos distintos.",
+      "fuente": "TRLRHL, art. 73.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **50-90 %** para los inmuebles de **empresas de urbanización, construcción y promoción** que no sean inmovilizado, como máximo **tres períodos**;"
+    },
+    {
+      "id": "t06-q149",
+      "pregunta": "¿Qué bonificación legal se prevé para bienes rústicos de cooperativas agrarias en el supuesto del 73.3?",
+      "opciones": [
+        "50 %",
+        "10 %",
+        "95 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe aplicarse dentro del régimen fiscal legal de cooperativas.",
+      "fuente": "TRLRHL, art. 73.3 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **95 %** para los rústicos de **cooperativas agrarias**."
+    },
+    {
+      "id": "t06-q150",
+      "pregunta": "¿La bonificación de familias numerosas del IBI es obligatoria en todo municipio por la sola ley?",
+      "opciones": [
+        "No, es potestativa y puede llegar al 90 %",
+        "Sí, es una no sujeción",
+        "Sí, siempre del 100 %"
+      ],
+      "correcta": 0,
+      "explicacion": "La ordenanza determina su aplicación dentro del límite legal.",
+      "fuente": "TRLRHL, art. 74.4 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- hasta el **90 %** para **familias numerosas**;"
+    },
+    {
+      "id": "t06-q151",
+      "pregunta": "¿Quién declara el especial interés o utilidad municipal de actividades para la bonificación estudiada?",
+      "opciones": [
+        "El Catastro por orden catastral",
+        "El Pleno por mayoría simple",
+        "Cada contribuyente en su declaración"
+      ],
+      "correcta": 1,
+      "explicacion": "La declaración de interés y la aplicación del beneficio siguen los requisitos legales.",
+      "fuente": "TRLRHL, art. 74.2 quáter (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- hasta el **95 %** para **actividades de especial interés municipal**, que declara **el Pleno por mayoría simple**;"
+    },
+    {
+      "id": "t06-q152",
+      "pregunta": "¿Qué máximo potestativo se contempla para viviendas de alquiler con renta limitada según norma jurídica?",
+      "opciones": [
+        "95 %",
+        "25 %",
+        "75 %"
+      ],
+      "correcta": 0,
+      "explicacion": "La bonificación no se atribuye a todo alquiler por el solo hecho de serlo.",
+      "fuente": "TRLRHL, art. 74.6 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- hasta el **95 %** para **viviendas de alquiler con renta limitada**."
+    },
+    {
+      "id": "t06-q153",
+      "pregunta": "¿Puede aplicarse el esquema de recargo fuera de zona tensionada como si fuera idéntico en todos los municipios?",
+      "opciones": [
+        "Sí, la localización nunca influye",
+        "Solo depende del tipo de contrato del recaudador",
+        "No, la redacción vigente diferencia zonas tensionadas"
+      ],
+      "correcta": 2,
+      "explicacion": "La reforma requiere identificar primero el supuesto territorial y personal.",
+      "fuente": "TRLRHL, art. 72.4 bis, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Recargo a las viviendas vacías (72.4 bis):** **Actualización de vigencia de 17/11/2026.** El RDL 29/2026, art. 8 (BOE-A-2026-20823), distingue municipios situados en zona de mercado residencial tensionado y los demás. La nueva redacción se aplica a períodos impositivos iniciados desde el **8 de octubre de 2026**. El siguiente esquema corresponde a los municipios **fuera de zona tensionada**, sin confundir recargo básico e incrementos adicionales:"
+    },
+    {
+      "id": "t06-q154",
+      "pregunta": "Fuera de zona tensionada, ¿qué máximo básico puede alcanzar el recargo por desocupación superior a tres años, cumpliendo los demás requisitos?",
+      "opciones": [
+        "Siempre 150 % del valor catastral",
+        "100 % de la cuota líquida",
+        "Solo 25 % de la base imponible"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe distinguirse máximo básico y posibles puntos adicionales.",
+      "fuente": "TRLRHL, art. 72.4 bis, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- hasta el **100 %** si llevan desocupadas **más de tres años**;"
+    },
+    {
+      "id": "t06-q155",
+      "pregunta": "En zona tensionada, ¿la nueva regla puede contemplar vivienda permanentemente desocupada más de dos años sin exigir en todos los casos cuatro inmuebles al titular?",
+      "opciones": [
+        "No, siempre exige cuatro sin distinción",
+        "Solo si se trata de suelo rústico",
+        "Sí, el supuesto básico y los agravados están diferenciados"
+      ],
+      "correcta": 2,
+      "explicacion": "La reforma diferencia el recargo básico y los incrementos para determinados titulares.",
+      "fuente": "TRLRHL, art. 72.4 bis, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **En municipios de zona tensionada:** hasta el 50 % para vivienda permanentemente desocupada más de dos años sin causa justificada; hasta el 100 % si el titular tiene cuatro o más inmuebles residenciales; si la desocupación supera tres años, hasta 50 puntos adicionales para esos titulares. Deben cumplirse los requisitos y garantías del artículo 72.4 bis."
+    },
+    {
+      "id": "t06-q156",
+      "pregunta": "¿El recargo de alojamiento turístico del 72.4 ter se aplica por igual a cualquier inmueble de cualquier municipio sin ordenanza?",
+      "opciones": [
+        "No, exige el supuesto legal de zona tensionada y regulación de aplicación",
+        "Solo se aplica a suelo rústico",
+        "Sí, nace automáticamente por cualquier pernocta"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley delimita uso, localización y regulación municipal del recargo.",
+      "fuente": "TRLRHL, art. 72.4 ter, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Alojamientos turísticos en zona tensionada (72.4 ter):** recargo potestativo de hasta el 50 %; hasta el 100 % para titulares de dos o más inmuebles residenciales destinados a ese uso y hasta el 150 % para titulares de cuatro o más. La ordenanza regula aplicación; no afirmar que Zaragoza lo haya establecido sin consultar su ordenanza."
+    },
+    {
+      "id": "t06-q157",
+      "pregunta": "¿Qué máximo puede alcanzar ese recargo turístico para titulares de cuatro o más inmuebles residenciales destinados a ese uso?",
+      "opciones": [
+        "50 % del valor catastral",
+        "150 % de la cuota líquida",
+        "100 % del precio de venta"
+      ],
+      "correcta": 1,
+      "explicacion": "El porcentaje corresponde a cuota líquida, no a valor o precio.",
+      "fuente": "TRLRHL, art. 72.4 ter, RDL 29/2026 art. 8 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Alojamientos turísticos en zona tensionada (72.4 ter):** recargo potestativo de hasta el 50 %; hasta el 100 % para titulares de dos o más inmuebles residenciales destinados a ese uso y hasta el 150 % para titulares de cuatro o más. La ordenanza regula aplicación; no afirmar que Zaragoza lo haya establecido sin consultar su ordenanza."
+    },
+    {
+      "id": "t06-q158",
+      "pregunta": "¿Qué precisión temporal debe acompañar a la nueva redacción del recargo del IBI de octubre de 2026?",
+      "opciones": [
+        "Se aplica a periodos impositivos que se inicien desde el 8 de octubre de 2026",
+        "Solo rige durante un día",
+        "Se aplica retroactivamente a cualquier periodo de 2004"
+      ],
+      "correcta": 0,
+      "explicacion": "La eficacia por periodo impositivo evita aplicar automáticamente una reforma a periodos ya iniciados.",
+      "fuente": "RDL 29/2026, art. 8, eficacia de modificación del TRLRHL art. 72 (BOE-A-2026-20823) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Recargo a las viviendas vacías (72.4 bis):** **Actualización de vigencia de 17/11/2026.** El RDL 29/2026, art. 8 (BOE-A-2026-20823), distingue municipios situados en zona de mercado residencial tensionado y los demás. La nueva redacción se aplica a períodos impositivos iniciados desde el **8 de octubre de 2026**. El siguiente esquema corresponde a los municipios **fuera de zona tensionada**, sin confundir recargo básico e incrementos adicionales:"
+    },
+    {
+      "id": "t06-q159",
+      "pregunta": "¿Qué actuaciones del IBI corresponden de forma exclusiva a los ayuntamientos según el 77.1?",
+      "opciones": [
+        "Fijar libremente todos los valores catastrales estatales",
+        "Aprobar leyes estatales del Catastro",
+        "Liquidación, recaudación y revisión de la gestión tributaria legalmente atribuida"
+      ],
+      "correcta": 2,
+      "explicacion": "Gestión tributaria municipal y catastral estatal son diferentes.",
+      "fuente": "TRLRHL, art. 77.1 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Gestión (77):** la **liquidación, recaudación y revisión** son **competencia exclusiva de los ayuntamientos**. La gestión **catastral** (valores, padrón) es del **Estado**, a través de la **Dirección General del Catastro**. El padrón catastral llega a los ayuntamientos **antes del 1 de marzo**."
+    },
+    {
+      "id": "t06-q160",
+      "pregunta": "¿Antes de qué fecha debe remitirse el padrón catastral a los ayuntamientos en la regla del 77.5?",
+      "opciones": [
+        "15 de octubre",
+        "1 de marzo",
+        "31 de diciembre"
+      ],
+      "correcta": 1,
+      "explicacion": "Es un plazo de intercambio de datos catastrales, no de aprobación del presupuesto.",
+      "fuente": "TRLRHL, art. 77.5 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Gestión (77):** la **liquidación, recaudación y revisión** son **competencia exclusiva de los ayuntamientos**. La gestión **catastral** (valores, padrón) es del **Estado**, a través de la **Dirección General del Catastro**. El padrón catastral llega a los ayuntamientos **antes del 1 de marzo**."
+    },
+    {
+      "id": "t06-q161",
+      "pregunta": "Una venta se produce a mitad de año. ¿Cambia por ese solo hecho el periodo anual general del IBI a un trimestre?",
+      "opciones": [
+        "Sí, siempre pasa a trimestre",
+        "Solo si se firma ante notario",
+        "No, el periodo es el año natural"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe trasladarse al IBI el prorrateo propio de otros impuestos.",
+      "fuente": "TRLRHL, art. 75 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Devengo y período (75):** se devenga **el primer día del período impositivo**, que es el **año natural**."
+    },
+    {
+      "id": "t06-q162",
+      "pregunta": "¿Es correcto restar una bonificación de cuota para definir directamente la base liquidable?",
+      "opciones": [
+        "No, la base liquidable resulta de la reducción sobre la imponible; la bonificación opera en la cuota",
+        "Solo depende de cómo se titule el recibo",
+        "Sí, base y cuota son lo mismo"
+      ],
+      "correcta": 0,
+      "explicacion": "Distinguir magnitudes evita aplicar porcentajes en la fase equivocada.",
+      "fuente": "TRLRHL, arts. 65 y 66 (BOE-A-2004-4214) · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Base imponible (65):** **el valor catastral** de los inmuebles (1635 #7). **Base liquidable (66):** la imponible menos la **reducción** de los arts. 67 a 70, que se aplica **nueve años** tras una nueva ponencia de valores, con un **coeficiente de 0,9 que baja 0,1 cada año**."
+    },
+    {
+      "id": "t06-q163",
+      "pregunta": "Una actividad profesional se ejerce sin local determinado. ¿Queda por ello fuera del hecho imponible del IAE?",
+      "opciones": [
+        "Sí, siempre exige local",
+        "No",
+        "Solo si se factura en papel"
+      ],
+      "correcta": 1,
+      "explicacion": "La existencia de local no es requisito general del hecho imponible.",
+      "fuente": "TRLRHL, art. 78.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **Naturaleza y hecho imponible (78.1):** tributo **directo de carácter real**. El hecho imponible es **el mero ejercicio**, en territorio nacional, de actividades **empresariales, profesionales o artísticas**, **se ejerzan o no en local** y **estén o no en las tarifas**."
+    },
+    {
+      "id": "t06-q164",
+      "pregunta": "¿Que una actividad no aparezca especificada en las tarifas impide por sí solo realizar el hecho imponible del IAE?",
+      "opciones": [
+        "No",
+        "Solo depende de la voluntad del contribuyente",
+        "Sí, toda actividad no listada está no sujeta"
+      ],
+      "correcta": 0,
+      "explicacion": "El artículo 78.1 contempla actividades especificadas o no en tarifas.",
+      "fuente": "TRLRHL, art. 78.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **Naturaleza y hecho imponible (78.1):** tributo **directo de carácter real**. El hecho imponible es **el mero ejercicio**, en territorio nacional, de actividades **empresariales, profesionales o artísticas**, **se ejerzan o no en local** y **estén o no en las tarifas**."
+    },
+    {
+      "id": "t06-q165",
+      "pregunta": "¿Qué amplitud tiene el hecho imponible respecto del resultado económico obtenido?",
+      "opciones": [
+        "Exige siempre beneficio contable positivo",
+        "Solo nace cuando se vende un inmueble",
+        "Se refiere al mero ejercicio de la actividad"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe confundirse ejercicio de actividad con obtención necesaria de ganancias.",
+      "fuente": "TRLRHL, art. 78.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **Naturaleza y hecho imponible (78.1):** tributo **directo de carácter real**. El hecho imponible es **el mero ejercicio**, en territorio nacional, de actividades **empresariales, profesionales o artísticas**, **se ejerzan o no en local** y **estén o no en las tarifas**."
+    },
+    {
+      "id": "t06-q166",
+      "pregunta": "¿Qué actividad queda fuera de la consideración empresarial del IAE en la enumeración del 78.2?",
+      "opciones": [
+        "Artística de espectáculos",
+        "Agrícola",
+        "Profesional de asesoramiento"
+      ],
+      "correcta": 1,
+      "explicacion": "La delimitación legal enumera ciertas actividades excluidas.",
+      "fuente": "TRLRHL, art. 78.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **Qué no es actividad empresarial (78.2):**\n  - las **agrícolas**;\n  - las **ganaderas dependientes**;"
+    },
+    {
+      "id": "t06-q167",
+      "pregunta": "¿Qué distinción ganadera resulta relevante para el IAE?",
+      "opciones": [
+        "Todas las ganaderías están siempre excluidas",
+        "Toda ganadería es un impuesto distinto",
+        "La dependiente se excluye y la independiente puede estar comprendida"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley diferencia ambas modalidades, sin perjuicio de otras exenciones.",
+      "fuente": "TRLRHL, art. 78.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- las **agrícolas**;\n  - las **ganaderas dependientes**;\n  - las **forestales**;"
+    },
+    {
+      "id": "t06-q168",
+      "pregunta": "¿Qué pareja de actividades está excluida de la consideración empresarial del 78.2?",
+      "opciones": [
+        "Forestales y pesqueras",
+        "Industriales y artísticas",
+        "Comerciales y profesionales"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe distinguirse la exclusión del hecho imponible de una exención subjetiva.",
+      "fuente": "TRLRHL, art. 78.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- las **ganaderas dependientes**;\n  - las **forestales**;\n  - las **pesqueras**."
+    },
+    {
+      "id": "t06-q169",
+      "pregunta": "Se vende un bien del activo fijo inventariado desde hace más de dos años y se cumplen los requisitos legales. ¿Qué tratamiento específico del IAE debe examinarse?",
+      "opciones": [
+        "Exención de toda actividad futura por diez años",
+        "No sujeción de esa enajenación",
+        "Conversión automática en actividad profesional"
+      ],
+      "correcta": 1,
+      "explicacion": "El artículo 81 delimita ciertos actos no constitutivos de hecho imponible.",
+      "fuente": "TRLRHL, art. 81.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- vender bienes del **activo fijo** inventariados **más de dos años** antes;"
+    },
+    {
+      "id": "t06-q170",
+      "pregunta": "La venta de productos recibidos en pago de servicios personales, en el supuesto del 81.2, ¿qué tratamiento tiene?",
+      "opciones": [
+        "No constituye hecho imponible del IAE",
+        "Es una bonificación del IVTM",
+        "Es siempre actividad comercial sujeta sin excepción"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley enumera ese acto entre los no sujetos.",
+      "fuente": "TRLRHL, art. 81.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- vender productos recibidos como pago de trabajos personales;"
+    },
+    {
+      "id": "t06-q171",
+      "pregunta": "¿Qué diferencia establece la regla de exposición de artículos entre decoración y regalos a clientes?",
+      "opciones": [
+        "Ambos quedan siempre no sujetos por ser exposición",
+        "Todo objeto decorativo obliga por sí solo a pagar sin exenciones",
+        "Exponer decoración no integra ese supuesto de actividad, pero los artículos para regalo no reciben esa exclusión"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe respetarse la salvedad del propio artículo 81.3.",
+      "fuente": "TRLRHL, art. 81.3 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **exponer** artículos de **decoración** del establecimiento. Los artículos **para regalo** a los clientes **sí** están sujetos;"
+    },
+    {
+      "id": "t06-q172",
+      "pregunta": "Una operación es una sola venta al por menor aislada del supuesto legal. ¿Qué figura del artículo 81 corresponde?",
+      "opciones": [
+        "Bonificación obligatoria del 95 %",
+        "No sujeción",
+        "Exención de toda empresa por cifra de negocios"
+      ],
+      "correcta": 1,
+      "explicacion": "No sujeción y exención responden a causas diferentes.",
+      "fuente": "TRLRHL, art. 81.4 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- una **venta al por menor aislada**."
+    },
+    {
+      "id": "t06-q173",
+      "pregunta": "¿Incluye la exención subjetiva del 82.1.a a entidades locales y sus organismos autónomos?",
+      "opciones": [
+        "No, solo al Estado",
+        "Solo si no tienen empleados",
+        "Sí, en los términos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "El precepto enumera sujetos públicos exentos.",
+      "fuente": "TRLRHL, art. 82.1.a (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- el **Estado, las CCAA y las entidades locales** y sus organismos autónomos;"
+    },
+    {
+      "id": "t06-q174",
+      "pregunta": "¿El inicio de una actividad genera en ese supuesto una exención indefinida del IAE?",
+      "opciones": [
+        "No, comprende los dos primeros periodos en los términos legales",
+        "Solo si se compra un inmueble",
+        "Sí, todo inicio exime para siempre"
+      ],
+      "correcta": 0,
+      "explicacion": "La exención temporal tiene límites y condiciones propias.",
+      "fuente": "TRLRHL, art. 82.1.b (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **quien inicie una actividad**, durante los **dos primeros períodos impositivos**;"
+    },
+    {
+      "id": "t06-q175",
+      "pregunta": "Una persona física ejerce actividad profesional comprendida en el hecho imponible. ¿La exención personal implica que la actividad nunca fue hecho imponible?",
+      "opciones": [
+        "Sí, son expresiones idénticas",
+        "No, sujeción y exención son conceptos distintos",
+        "Solo depende de que exista local"
+      ],
+      "correcta": 1,
+      "explicacion": "Se puede realizar el hecho imponible y estar exento por condición subjetiva.",
+      "fuente": "TRLRHL, art. 82.1.c (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **quien inicie una actividad**, durante los **dos primeros períodos impositivos**;\n  - **todas las personas físicas**;\n  - las sociedades y demás entidades con **cifra de negocios inferior a 1.000.000 €**;"
+    },
+    {
+      "id": "t06-q176",
+      "pregunta": "Una sociedad alcanza exactamente un millón de euros de cifra de negocios. ¿Cumple por ese solo dato la exención que exige ser inferior al millón?",
+      "opciones": [
+        "No",
+        "Solo si su domicilio es municipal",
+        "Sí, inferior incluye igualdad"
+      ],
+      "correcta": 0,
+      "explicacion": "La conclusión se refiere a esa exención concreta, sin excluir otras posibles.",
+      "fuente": "TRLRHL, art. 82.1.c (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- las sociedades y demás entidades con **cifra de negocios inferior a 1.000.000 €**;"
+    },
+    {
+      "id": "t06-q177",
+      "pregunta": "¿Debe confundirse cifra de negocios para la exención con el beneficio de la actividad?",
+      "opciones": [
+        "Sí, siempre son idénticas",
+        "Solo si existe personal asalariado",
+        "No, son magnitudes diferentes"
+      ],
+      "correcta": 2,
+      "explicacion": "El umbral legal se refiere a cifra de negocios, no a ganancia neta.",
+      "fuente": "TRLRHL, art. 82.1.c (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- las sociedades y demás entidades con **cifra de negocios inferior a 1.000.000 €**;"
+    },
+    {
+      "id": "t06-q178",
+      "pregunta": "¿Qué par de sujetos aparece entre las exenciones del IAE estudiadas?",
+      "opciones": [
+        "Todos los titulares de coches históricos",
+        "Entidades gestoras de la Seguridad Social y Cruz Roja",
+        "Toda sociedad con cualquier cifra de negocios"
+      ],
+      "correcta": 1,
+      "explicacion": "Las exenciones dependen de las categorías legales, no de analogías con otros impuestos.",
+      "fuente": "TRLRHL, art. 82.1.d y f (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- las **entidades gestoras de la Seguridad Social**, la **Cruz Roja** y otras."
+    },
+    {
+      "id": "t06-q179",
+      "pregunta": "¿Mediante qué instrumento se aprueban las tarifas del IAE según la regla del artículo 85?",
+      "opciones": [
+        "Bando de cada alcalde",
+        "Contrato individual con el contribuyente",
+        "Real decreto legislativo"
+      ],
+      "correcta": 2,
+      "explicacion": "Las tarifas no se fijan libremente en cada liquidación.",
+      "fuente": "TRLRHL, art. 85 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **tarifas** aprobadas por real decreto legislativo, cuya cuota no puede superar el **15 % del beneficio medio presunto** (85.1);"
+    },
+    {
+      "id": "t06-q180",
+      "pregunta": "¿Qué límite de la cuota de tarifas relaciona el artículo 85.1 con el beneficio medio presunto?",
+      "opciones": [
+        "15 %",
+        "4 % del coste de obra",
+        "30 % del valor catastral"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una regla de formación de tarifas, distinta de bases y tipos de otros impuestos.",
+      "fuente": "TRLRHL, art. 85.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **tarifas** aprobadas por real decreto legislativo, cuya cuota no puede superar el **15 % del beneficio medio presunto** (85.1);"
+    },
+    {
+      "id": "t06-q181",
+      "pregunta": "¿Tiene carácter obligatorio o potestativo el coeficiente de ponderación del IAE?",
+      "opciones": [
+        "Potestativo en todo caso",
+        "Obligatorio",
+        "Depende solo de la categoría de calle"
+      ],
+      "correcta": 1,
+      "explicacion": "La ponderación se vincula a cifra de negocios, no a situación de la calle.",
+      "fuente": "TRLRHL, art. 86 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **coeficiente de ponderación** obligatorio, según la cifra de negocios, de **1,29 a 1,35** (86);"
+    },
+    {
+      "id": "t06-q182",
+      "pregunta": "¿Qué intervalo de ponderación recoge el artículo 86 en la regla estudiada?",
+      "opciones": [
+        "1,29 a 1,35",
+        "0,4 % a 1,3 %",
+        "0,4 a 3,8"
+      ],
+      "correcta": 0,
+      "explicacion": "No debe confundirse con coeficiente de situación ni tipos de IBI.",
+      "fuente": "TRLRHL, art. 86 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **coeficiente de ponderación** obligatorio, según la cifra de negocios, de **1,29 a 1,35** (86);"
+    },
+    {
+      "id": "t06-q183",
+      "pregunta": "¿Qué determina el coeficiente de situación del IAE?",
+      "opciones": [
+        "La titularidad del permiso de circulación",
+        "La edad de la obra exclusivamente",
+        "La categoría de la calle en los términos de la ordenanza"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un coeficiente municipal diferenciado de la ponderación por cifra de negocios.",
+      "fuente": "TRLRHL, art. 87 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **coeficiente de situación** potestativo, según la categoría de la calle, entre **0,4 y 3,8**, con entre **2 y 9** categorías de calle (87)."
+    },
+    {
+      "id": "t06-q184",
+      "pregunta": "¿Puede afirmarse que el coeficiente de situación debe existir obligatoriamente en todo municipio?",
+      "opciones": [
+        "Solo si tiene menos de 5.000 habitantes",
+        "No, es potestativo",
+        "Sí, la ley lo impone siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "La posibilidad de establecerlo no equivale a imposición legal universal.",
+      "fuente": "TRLRHL, art. 87 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **coeficiente de situación** potestativo, según la categoría de la calle, entre **0,4 y 3,8**, con entre **2 y 9** categorías de calle (87)."
+    },
+    {
+      "id": "t06-q185",
+      "pregunta": "¿Cuántas categorías de calles admite la regla del artículo 87?",
+      "opciones": [
+        "Una obligatoria para todo el municipio",
+        "Entre diez y veinte",
+        "Entre dos y nueve"
+      ],
+      "correcta": 2,
+      "explicacion": "La ordenanza debe respetar el intervalo legal de categorías.",
+      "fuente": "TRLRHL, art. 87 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **coeficiente de situación** potestativo, según la categoría de la calle, entre **0,4 y 3,8**, con entre **2 y 9** categorías de calle (87)."
+    },
+    {
+      "id": "t06-q186",
+      "pregunta": "¿Qué bonificación obligatoria se prevé al iniciar una actividad profesional tras los dos primeros periodos?",
+      "opciones": [
+        "50 % durante los cinco años siguientes al segundo periodo en los términos legales",
+        "Ninguna bonificación puede existir por inicio profesional",
+        "95 % indefinidamente desde el primer día"
+      ],
+      "correcta": 0,
+      "explicacion": "Se distingue la exención inicial de la bonificación posterior.",
+      "fuente": "TRLRHL, art. 88.1.b (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **obligatorias:** las de **cooperativas**, y el **50 %** a quien inicie una **actividad profesional**, durante los **cinco años** siguientes al segundo período;"
+    },
+    {
+      "id": "t06-q187",
+      "pregunta": "¿La bonificación por inicio empresarial tiene el mismo carácter obligatorio que la profesional del 88.1.b?",
+      "opciones": [
+        "Sí, ambas son siempre obligatorias sin condiciones",
+        "No, la empresarial estudiada es potestativa",
+        "Solo las empresas públicas pueden disfrutarla"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley diferencia actividad profesional y empresarial en el régimen de bonificaciones.",
+      "fuente": "TRLRHL, art. 88.2.a (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **Qué no es actividad empresarial (78.2):**"
+    },
+    {
+      "id": "t06-q188",
+      "pregunta": "¿Qué circunstancia puede fundamentar una bonificación potestativa del IAE?",
+      "opciones": [
+        "Creación de empleo en los términos de la ordenanza",
+        "Transmitir un terreno rústico",
+        "Ser titular de un vehículo turístico"
+      ],
+      "correcta": 0,
+      "explicacion": "Los beneficios potestativos necesitan regulación y cumplimiento de requisitos.",
+      "fuente": "TRLRHL, art. 88.2.b (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **potestativas:** hasta el **50 %** para quien inicie una **actividad empresarial**, por **crear empleo**, por usar **energías renovables** o por tener **rendimiento negativo**, y hasta el **95 %** para actividades de **especial interés municipal**."
+    },
+    {
+      "id": "t06-q189",
+      "pregunta": "¿Un rendimiento negativo convierte automáticamente la actividad en no sujeta al IAE?",
+      "opciones": [
+        "Sí, nunca existe hecho imponible si no hay beneficio",
+        "Solo importa que no haya local",
+        "No, puede relacionarse con una bonificación potestativa prevista legalmente"
+      ],
+      "correcta": 2,
+      "explicacion": "El mero ejercicio puede estar sujeto aunque el resultado sea negativo.",
+      "fuente": "TRLRHL, art. 88.2.d (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **potestativas:** hasta el **50 %** para quien inicie una **actividad empresarial**, por **crear empleo**, por usar **energías renovables** o por tener **rendimiento negativo**, y hasta el **95 %** para actividades de **especial interés municipal**."
+    },
+    {
+      "id": "t06-q190",
+      "pregunta": "En un alta de actividad durante el año, ¿qué periodo impositivo contempla el IAE?",
+      "opciones": [
+        "Solo el día del inicio",
+        "Desde el inicio hasta el final del año natural",
+        "Siempre doce meses desde el alta"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla de alta es excepción al año natural completo.",
+      "fuente": "TRLRHL, art. 89.1 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- el período es el **año natural**, salvo en las **altas**, que va desde el inicio de la actividad hasta final de año;"
+    },
+    {
+      "id": "t06-q191",
+      "pregunta": "¿Cuándo se devenga el IAE con carácter general?",
+      "opciones": [
+        "Al aprobar cada factura",
+        "Al cerrar siempre el último trimestre",
+        "El primer día del periodo impositivo"
+      ],
+      "correcta": 2,
+      "explicacion": "Devengo y plazo de pago son conceptos distintos.",
+      "fuente": "TRLRHL, art. 89.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- se devenga **el primer día**, y las cuotas son **irreducibles**, salvo el **prorrateo por trimestres** en las altas y bajas."
+    },
+    {
+      "id": "t06-q192",
+      "pregunta": "¿Qué unidad de prorrateo utiliza el IAE para altas y bajas en los supuestos legales?",
+      "opciones": [
+        "Trimestres",
+        "Semanas",
+        "Días en todos los casos"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla de cuotas irreducibles tiene excepciones de prorrateo tasadas.",
+      "fuente": "TRLRHL, art. 89 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- se devenga **el primer día**, y las cuotas son **irreducibles**, salvo el **prorrateo por trimestres** en las altas y bajas."
+    },
+    {
+      "id": "t06-q193",
+      "pregunta": "¿Es equivalente formar la matrícula del IAE y recaudar su cuota municipal?",
+      "opciones": [
+        "Sí, siempre corresponden a un mismo órgano privado",
+        "No, la primera función es estatal y la segunda municipal en su régimen legal",
+        "Solo se distingue por usar papel"
+      ],
+      "correcta": 1,
+      "explicacion": "La gestión se distribuye entre Administración tributaria estatal y ayuntamientos.",
+      "fuente": "TRLRHL, arts. 90 y 91 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- la **matrícula** y la **gestión censal** las lleva la **Administración tributaria del Estado**;"
+    },
+    {
+      "id": "t06-q194",
+      "pregunta": "¿La competencia estatal de inspección del IAE excluye toda delegación legalmente prevista?",
+      "opciones": [
+        "No, se contemplan delegaciones",
+        "Solo puede delegarse en personas contribuyentes",
+        "Sí, ninguna delegación es posible"
+      ],
+      "correcta": 0,
+      "explicacion": "La titularidad y la posible delegación deben distinguirse.",
+      "fuente": "TRLRHL, art. 91.3 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- la **inspección**, el **Estado**, con posibles delegaciones."
+    },
+    {
+      "id": "t06-q195",
+      "pregunta": "¿Qué tareas municipales del IAE deben diferenciarse de la gestión censal estatal?",
+      "opciones": [
+        "Solo inscripción en el Registro Civil",
+        "Fijar los epígrafes estatales por bando",
+        "Liquidación, recaudación y revisión atribuidas legalmente"
+      ],
+      "correcta": 2,
+      "explicacion": "La distribución funcional ayuda a identificar el órgano competente.",
+      "fuente": "TRLRHL, art. 91.2 (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- la **liquidación, recaudación y revisión**, los **ayuntamientos**;"
+    },
+    {
+      "id": "t06-q196",
+      "pregunta": "¿La posibilidad de recargo provincial sobre el IAE convierte a la provincia en titular de un impuesto propio idéntico?",
+      "opciones": [
+        "Solo si lo acuerda el Ayuntamiento",
+        "No, recargo e impuesto propio son figuras diferentes",
+        "Sí, toda provincia crea su IAE independiente"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley permite el recargo hasta el límite establecido, sin crear por ello un nuevo impuesto provincial propio.",
+      "fuente": "TRLRHL, art. 134 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "- **Los impuestos son recurso de los municipios.** Están en el Título II, «Recursos de los municipios». Las **provincias no tienen impuestos propios**; pueden establecer un **recargo sobre el IAE** de hasta el **40 %** (art. 134) (1635 #1)."
+    },
+    {
+      "id": "t06-q197",
+      "pregunta": "¿Qué máximo potestativo contempla el IAE para actividades declaradas de especial interés o utilidad municipal?",
+      "opciones": [
+        "15 % del valor catastral",
+        "100 % del coste de obra",
+        "95 %"
+      ],
+      "correcta": 2,
+      "explicacion": "El beneficio exige la declaración y demás condiciones previstas legalmente.",
+      "fuente": "TRLRHL, art. 88.2.e (BOE-A-2004-4214) · apunte §5",
+      "apartado": "5",
+      "evidencia": "- **potestativas:** hasta el **50 %** para quien inicie una **actividad empresarial**, por **crear empleo**, por usar **energías renovables** o por tener **rendimiento negativo**, y hasta el **95 %** para actividades de **especial interés municipal**."
+    },
+    {
+      "id": "t06-q198",
+      "pregunta": "¿Qué condición general de aptitud circulatoria toma el IVTM para vehículos matriculados?",
+      "opciones": [
+        "Que no hayan causado baja en el registro correspondiente",
+        "Que su titular disponga de garaje",
+        "Que circulen físicamente todos los días"
+      ],
+      "correcta": 0,
+      "explicacion": "El impuesto no depende del uso diario efectivo del vehículo.",
+      "fuente": "TRLRHL, art. 92.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Naturaleza y hecho imponible (92.1):** tributo **directo** que grava la **titularidad** de vehículos **aptos para circular** por las vías públicas. Es apto el **matriculado** y que no ha causado baja. También los que tienen **permiso temporal o matrícula turística**."
+    },
+    {
+      "id": "t06-q199",
+      "pregunta": "¿Guardar un vehículo matriculado sin baja durante un periodo evita por sí solo el hecho imponible del IVTM?",
+      "opciones": [
+        "Sí, siempre que no salga a la calle",
+        "No",
+        "Solo si se aparca en otro municipio"
+      ],
+      "correcta": 1,
+      "explicacion": "La titularidad de un vehículo legalmente apto para circular se distingue del uso material.",
+      "fuente": "TRLRHL, art. 92.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Naturaleza y hecho imponible (92.1):** tributo **directo** que grava la **titularidad** de vehículos **aptos para circular** por las vías públicas. Es apto el **matriculado** y que no ha causado baja. También los que tienen **permiso temporal o matrícula turística**."
+    },
+    {
+      "id": "t06-q200",
+      "pregunta": "¿Puede incluirse entre vehículos aptos el provisto de permiso temporal?",
+      "opciones": [
+        "Sí",
+        "Solo si supera 25 años",
+        "No, todo permiso temporal implica no sujeción"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley incluye permisos temporales y matrícula turística.",
+      "fuente": "TRLRHL, art. 92.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Naturaleza y hecho imponible (92.1):** tributo **directo** que grava la **titularidad** de vehículos **aptos para circular** por las vías públicas. Es apto el **matriculado** y que no ha causado baja. También los que tienen **permiso temporal o matrícula turística**."
+    },
+    {
+      "id": "t06-q201",
+      "pregunta": "Un vehículo dado de baja por antigüedad circula excepcionalmente en una exhibición del supuesto legal. ¿Qué tratamiento debe examinarse?",
+      "opciones": [
+        "Exención por Cartilla de Inspección Agrícola",
+        "Bonificación obligatoria por carburante",
+        "No sujeción"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley contempla un supuesto específico de circulación excepcional.",
+      "fuente": "TRLRHL, art. 92.3.a (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- los **dados de baja por antigüedad** que circulan excepcionalmente en **exhibiciones o carreras**;"
+    },
+    {
+      "id": "t06-q202",
+      "pregunta": "Un remolque tiene exactamente 750 kg de carga útil. ¿Encaja en el límite de no sujeción descrito por no superior a 750?",
+      "opciones": [
+        "Solo si es ambulancia",
+        "Sí",
+        "No, exige ser estrictamente inferior"
+      ],
+      "correcta": 1,
+      "explicacion": "La igualdad está incluida en el límite de carga útil.",
+      "fuente": "TRLRHL, art. 92.3.b (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- los **remolques y semirremolques de carga útil no superior a 750 kg**."
+    },
+    {
+      "id": "t06-q203",
+      "pregunta": "¿La magnitud de 750 kg del supuesto de remolques se refiere a carga útil?",
+      "opciones": [
+        "No, siempre a masa total del conjunto tractor y remolque",
+        "Solo a la antigüedad expresada en kilogramos",
+        "Sí"
+      ],
+      "correcta": 2,
+      "explicacion": "La magnitud concreta debe distinguirse de otras masas del vehículo.",
+      "fuente": "TRLRHL, art. 92.3.b (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- los **remolques y semirremolques de carga útil no superior a 750 kg**."
+    },
+    {
+      "id": "t06-q204",
+      "pregunta": "¿Basta que un vehículo pertenezca a una Administración para describir sin más la exención de la letra a?",
+      "opciones": [
+        "No, se exige la afectación legal a defensa o seguridad ciudadana",
+        "Solo importa el modelo del vehículo",
+        "Sí, cualquier uso privado basta"
+      ],
+      "correcta": 0,
+      "explicacion": "La titularidad oficial se vincula a un destino específico.",
+      "fuente": "TRLRHL, art. 93.1.a (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- vehículos oficiales afectos a **defensa o seguridad ciudadana**;"
+    },
+    {
+      "id": "t06-q205",
+      "pregunta": "¿Qué tratamiento del IVTM tienen ambulancias y vehículos directamente destinados a asistencia sanitaria del supuesto legal?",
+      "opciones": [
+        "No sujeción por ser siempre remolques",
+        "Exención",
+        "Pago obligatorio sin exención posible"
+      ],
+      "correcta": 1,
+      "explicacion": "La ley los enumera como vehículos exentos.",
+      "fuente": "TRLRHL, art. 93.1.d (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **ambulancias** y vehículos de asistencia sanitaria;"
+    },
+    {
+      "id": "t06-q206",
+      "pregunta": "¿Qué grado mínimo de discapacidad identifica el artículo 93.1.e para su supuesto de exención?",
+      "opciones": [
+        "33 %",
+        "75 %",
+        "25 %"
+      ],
+      "correcta": 0,
+      "explicacion": "Además deben cumplirse los restantes requisitos legales, incluido uso exclusivo cuando corresponda.",
+      "fuente": "TRLRHL, art. 93.1.e (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- vehículos para **personas de movilidad reducida** y los matriculados a nombre de **personas con discapacidad**, con un grado **igual o superior al 33 %** y **para un solo vehículo**;"
+    },
+    {
+      "id": "t06-q207",
+      "pregunta": "¿Es suficiente cumplir el porcentaje para extender simultáneamente esa exención a varios vehículos del mismo beneficiario?",
+      "opciones": [
+        "Sí, no existe límite",
+        "Solo si todos son del mismo color",
+        "No, la ley limita el disfrute simultáneo a un vehículo"
+      ],
+      "correcta": 2,
+      "explicacion": "La condición personal y el límite de vehículos son requisitos diferentes.",
+      "fuente": "TRLRHL, art. 93.1.e (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- vehículos para **personas de movilidad reducida** y los matriculados a nombre de **personas con discapacidad**, con un grado **igual o superior al 33 %** y **para un solo vehículo**;"
+    },
+    {
+      "id": "t06-q208",
+      "pregunta": "¿Qué umbral de plazas exige la exención para autobuses destinados a transporte público urbano?",
+      "opciones": [
+        "Más de tres, excluido conductor",
+        "Más de nueve, contando conductor",
+        "Exactamente nueve sin contar conductor"
+      ],
+      "correcta": 1,
+      "explicacion": "Debe leerse tanto el umbral como la inclusión de la plaza del conductor.",
+      "fuente": "TRLRHL, art. 93.1.f (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **autobuses de transporte público urbano de más de 9 plazas**, incluida la del conductor;"
+    },
+    {
+      "id": "t06-q209",
+      "pregunta": "¿Cualquier autobús privado queda exento por tener muchas plazas?",
+      "opciones": [
+        "Sí, todas las plazas bastan",
+        "Solo importa la marca del motor",
+        "No, el supuesto exige destino al transporte público urbano en los términos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "La capacidad no sustituye el destino del vehículo.",
+      "fuente": "TRLRHL, art. 93.1.f (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **autobuses de transporte público urbano de más de 9 plazas**, incluida la del conductor;"
+    },
+    {
+      "id": "t06-q210",
+      "pregunta": "¿La exención agrícola por Cartilla de Inspección se aplica sin necesidad de solicitarla según el 93.2?",
+      "opciones": [
+        "No, debe solicitarse y acreditarse en los términos legales",
+        "Solo depende de una declaración verbal al conductor",
+        "Sí, nunca requiere solicitud"
+      ],
+      "correcta": 0,
+      "explicacion": "El carácter exento no elimina requisitos de reconocimiento.",
+      "fuente": "TRLRHL, art. 93.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "La de movilidad reducida y la agrícola exigen **solicitud** (93.2)."
+    },
+    {
+      "id": "t06-q211",
+      "pregunta": "¿Qué otra exención del bloque estudiado requiere solicitud junto a la agrícola?",
+      "opciones": [
+        "Todas las oficiales sin distinción por ese apartado",
+        "La prevista para movilidad reducida y discapacidad",
+        "La no sujeción de remolques pequeños"
+      ],
+      "correcta": 1,
+      "explicacion": "No debe confundirse solicitar una exención con declarar una no sujeción.",
+      "fuente": "TRLRHL, art. 93.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "La de movilidad reducida y la agrícola exigen **solicitud** (93.2)."
+    },
+    {
+      "id": "t06-q212",
+      "pregunta": "Conductor habitual y titular del permiso son personas diferentes. ¿Qué dato identifica al sujeto pasivo del IVTM según el 94?",
+      "opciones": [
+        "El nombre que consta en el permiso de circulación",
+        "Quien pagó el último combustible",
+        "Quien condujo más kilómetros"
+      ],
+      "correcta": 0,
+      "explicacion": "La titularidad registral relevante prevalece sobre el uso habitual para esta regla.",
+      "fuente": "TRLRHL, art. 94 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Sujeto pasivo (94):** **a cuyo nombre conste el vehículo en el permiso de circulación**."
+    },
+    {
+      "id": "t06-q213",
+      "pregunta": "¿La cuota básica del IVTM se fija como porcentaje general del precio de compra?",
+      "opciones": [
+        "Sí, siempre el 4 % del precio",
+        "Sí, como el IIVTNU de los terrenos",
+        "No, parte de un cuadro de tarifas por clases y magnitudes legales"
+      ],
+      "correcta": 2,
+      "explicacion": "No deben trasladarse bases de otros impuestos al sistema de tarifas de vehículos.",
+      "fuente": "TRLRHL, art. 95 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- un **cuadro de tarifas** por clase y potencia, que el ayuntamiento puede multiplicar por un **coeficiente no superior a 2**;"
+    },
+    {
+      "id": "t06-q214",
+      "pregunta": "Una tarifa legal hipotética es 100 euros y la ordenanza aplica coeficiente 1,5. ¿Qué cuota resulta antes de beneficios?",
+      "opciones": [
+        "250 euros",
+        "150 euros",
+        "101,50 euros"
+      ],
+      "correcta": 1,
+      "explicacion": "El coeficiente multiplica la tarifa; no es un porcentaje que se suma sin convertir.",
+      "fuente": "TRLRHL, art. 95.4 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- un **cuadro de tarifas** por clase y potencia, que el ayuntamiento puede multiplicar por un **coeficiente no superior a 2**;"
+    },
+    {
+      "id": "t06-q215",
+      "pregunta": "¿Sería admisible un coeficiente municipal 2,5 invocando el límite del 95.4?",
+      "opciones": [
+        "Sí, el límite es tres",
+        "Solo si se paga electrónicamente",
+        "No, supera dos"
+      ],
+      "correcta": 2,
+      "explicacion": "La ordenanza debe respetar el máximo del coeficiente legal.",
+      "fuente": "TRLRHL, art. 95.4 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- un **cuadro de tarifas** por clase y potencia, que el ayuntamiento puede multiplicar por un **coeficiente no superior a 2**;"
+    },
+    {
+      "id": "t06-q216",
+      "pregunta": "¿Que la ley permita bonificar por carburante o motor implica que todo municipio deba aplicar el máximo?",
+      "opciones": [
+        "No, son bonificaciones potestativas reguladas por ordenanza",
+        "Solo si existe una autoliquidación",
+        "Sí, siempre son obligatorias"
+      ],
+      "correcta": 0,
+      "explicacion": "Máximo legal y beneficio efectivamente establecido no son idénticos.",
+      "fuente": "TRLRHL, art. 95.6 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **bonificaciones potestativas:** hasta el **75 %** según el **carburante**, hasta el **75 %** según el **motor** y su incidencia ambiental (1681 R1), y hasta el **100 %** para **vehículos históricos** o de **25 años** o más."
+    },
+    {
+      "id": "t06-q217",
+      "pregunta": "¿Qué diferencia hay entre una bonificación de hasta el 100 % por vehículo histórico y una no sujeción?",
+      "opciones": [
+        "Son siempre términos intercambiables",
+        "La bonificación reduce la cuota de un vehículo sujeto; no sujeción excluye el hecho imponible",
+        "La no sujeción exige pagar la cuota íntegra"
+      ],
+      "correcta": 1,
+      "explicacion": "La clasificación afecta al fundamento del tratamiento fiscal.",
+      "fuente": "TRLRHL, art. 95.6 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **bonificaciones potestativas:** hasta el **75 %** según el **carburante**, hasta el **75 %** según el **motor** y su incidencia ambiental (1681 R1), y hasta el **100 %** para **vehículos históricos** o de **25 años** o más."
+    },
+    {
+      "id": "t06-q218",
+      "pregunta": "En primera adquisición de vehículo durante el año, ¿desde cuándo comienza el periodo impositivo?",
+      "opciones": [
+        "Desde el día de adquisición",
+        "Desde el día de baja definitiva",
+        "Desde el próximo 1 de enero necesariamente"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una excepción al periodo ordinario de año natural.",
+      "fuente": "TRLRHL, art. 96.1 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- el período es el **año natural**, **salvo en la primera adquisición**, en que empieza el día de la adquisición (1459 #12);"
+    },
+    {
+      "id": "t06-q219",
+      "pregunta": "¿Devengo y plazo de pago del IVTM son conceptos necesariamente idénticos?",
+      "opciones": [
+        "Sí, siempre deben coincidir fecha y acto",
+        "Solo si el vehículo es nuevo",
+        "No, el devengo es el primer día del periodo y el pago tiene su régimen"
+      ],
+      "correcta": 2,
+      "explicacion": "El nacimiento del impuesto no debe confundirse con la recaudación.",
+      "fuente": "TRLRHL, art. 96.2 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- se devenga **el primer día del período**;"
+    },
+    {
+      "id": "t06-q220",
+      "pregunta": "¿Qué unidad utiliza el prorrateo de cuota en primera adquisición o baja de los supuestos legales?",
+      "opciones": [
+        "Días en todos los casos",
+        "Trimestres",
+        "Semanas"
+      ],
+      "correcta": 1,
+      "explicacion": "El prorrateo no es mensual ni diario en esa regla.",
+      "fuente": "TRLRHL, art. 96.3 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- la cuota se **prorratea por trimestres** en la primera adquisición, en la **baja definitiva** y en la **baja temporal por robo**."
+    },
+    {
+      "id": "t06-q221",
+      "pregunta": "¿Una baja temporal por robo puede dar lugar al prorrateo previsto legalmente?",
+      "opciones": [
+        "No, nunca se contempla",
+        "Solo si el vehículo no tiene permiso",
+        "Sí"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley la incluye junto a primera adquisición y baja definitiva.",
+      "fuente": "TRLRHL, art. 96.3 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- la cuota se **prorratea por trimestres** en la primera adquisición, en la **baja definitiva** y en la **baja temporal por robo**."
+    },
+    {
+      "id": "t06-q222",
+      "pregunta": "¿Puede afirmarse que cualquier baja temporal voluntaria recibe necesariamente el mismo prorrateo que la baja por robo?",
+      "opciones": [
+        "No, debe respetarse el supuesto legal específico",
+        "Solo lo decide el conductor sin acreditar nada",
+        "Sí, toda baja temporal es robo a efectos fiscales"
+      ],
+      "correcta": 0,
+      "explicacion": "La analogía no sustituye los casos de prorrateo legalmente previstos.",
+      "fuente": "TRLRHL, art. 96.3 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- la cuota se **prorratea por trimestres** en la primera adquisición, en la **baja definitiva** y en la **baja temporal por robo**."
+    },
+    {
+      "id": "t06-q223",
+      "pregunta": "¿La baja definitiva figura entre los supuestos de prorrateo del 96.3?",
+      "opciones": [
+        "No, solo la primera compra",
+        "Sí",
+        "Solo si el vehículo es agrícola"
+      ],
+      "correcta": 1,
+      "explicacion": "Los distintos supuestos legales se refieren a alteraciones específicas del periodo.",
+      "fuente": "TRLRHL, art. 96.3 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- la cuota se **prorratea por trimestres** en la primera adquisición, en la **baja definitiva** y en la **baja temporal por robo**."
+    },
+    {
+      "id": "t06-q224",
+      "pregunta": "El vehículo circula por varios municipios. ¿Qué vínculo utiliza el artículo 97 para atribuir la gestión?",
+      "opciones": [
+        "El domicilio que conste en el permiso de circulación",
+        "El de mayor población de los visitados",
+        "El municipio donde reposte más"
+      ],
+      "correcta": 0,
+      "explicacion": "La circulación material por varios lugares no distribuye la gestión entre ellos.",
+      "fuente": "TRLRHL, art. 97 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Gestión (97):** corresponde al **ayuntamiento del domicilio que conste en el permiso de circulación**. Puede exigirse en **autoliquidación** (98). **Tráfico no matricula ni transfiere** sin justificar el pago (99)."
+    },
+    {
+      "id": "t06-q225",
+      "pregunta": "¿Pueden los ayuntamientos exigir el IVTM en régimen de autoliquidación conforme al artículo 98?",
+      "opciones": [
+        "No, está prohibido",
+        "Solo en las bajas por robo",
+        "Sí"
+      ],
+      "correcta": 2,
+      "explicacion": "La forma de gestión no altera el hecho imponible ni las exenciones.",
+      "fuente": "TRLRHL, art. 98.1 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Gestión (97):** corresponde al **ayuntamiento del domicilio que conste en el permiso de circulación**. Puede exigirse en **autoliquidación** (98). **Tráfico no matricula ni transfiere** sin justificar el pago (99)."
+    },
+    {
+      "id": "t06-q226",
+      "pregunta": "¿Qué acreditación fiscal contempla el 99 para actuaciones de Tráfico en sus términos legales?",
+      "opciones": [
+        "Una licencia urbanística",
+        "La correspondiente al pago del impuesto",
+        "Solo un informe del Consejo Social"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla conecta gestión del tributo y trámites del vehículo.",
+      "fuente": "TRLRHL, art. 99 (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Gestión (97):** corresponde al **ayuntamiento del domicilio que conste en el permiso de circulación**. Puede exigirse en **autoliquidación** (98). **Tráfico no matricula ni transfiere** sin justificar el pago (99)."
+    },
+    {
+      "id": "t06-q227",
+      "pregunta": "¿Qué distingue el IVTM de un precio por cada uso diario de una carretera?",
+      "opciones": [
+        "Se paga por cada kilómetro como tasa necesaria",
+        "Solo nace al aparcar en zona regulada",
+        "Grava la titularidad de vehículos aptos, no cada circulación individual"
+      ],
+      "correcta": 2,
+      "explicacion": "No debe confundirse con tasas de estacionamiento o peajes.",
+      "fuente": "TRLRHL, arts. 92 y 94 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **IVTM** | **Directo** | La **titularidad** de vehículos aptos para circular |"
+    },
+    {
+      "id": "t06-q228",
+      "pregunta": "¿Qué comparación de naturaleza entre IVTM e ICIO es correcta?",
+      "opciones": [
+        "IVTM directo e ICIO indirecto",
+        "IVTM indirecto e ICIO directo",
+        "Ambos indirectos"
+      ],
+      "correcta": 0,
+      "explicacion": "La clasificación se deriva de sus respectivos preceptos.",
+      "fuente": "TRLRHL, arts. 92 y 100 (BOE-A-2004-4214) · apunte §3",
+      "apartado": "3",
+      "evidencia": "| **IBI** | **Directo** de carácter **real** | El **valor** de los bienes inmuebles |"
+    },
+    {
+      "id": "t06-q229",
+      "pregunta": "¿Cumplir la antigüedad legal convierte automáticamente a todo vehículo en exento del IVTM sin ordenanza?",
+      "opciones": [
+        "Sí, es no sujeción obligatoria universal",
+        "No, la figura estudiada es bonificación potestativa",
+        "Solo si cambia de titular cada año"
+      ],
+      "correcta": 1,
+      "explicacion": "Deben diferenciarse habilitación legal, ordenanza aplicable y requisitos de disfrute.",
+      "fuente": "TRLRHL, art. 95.6.c (BOE-A-2004-4214) · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **bonificaciones potestativas:** hasta el **75 %** según el **carburante**, hasta el **75 %** según el **motor** y su incidencia ambiental (1681 R1), y hasta el **100 %** para **vehículos históricos** o de **25 años** o más."
+    },
+    {
+      "id": "t06-q230",
+      "pregunta": "¿Qué conexión territorial exige el hecho imponible del ICIO?",
+      "opciones": [
+        "Realización de la construcción, instalación u obra en el término municipal",
+        "Solo que el contratista cobre en un banco local",
+        "Solo que el promotor tenga allí domicilio aunque la obra sea exterior"
+      ],
+      "correcta": 0,
+      "explicacion": "La obra y el control municipal legalmente requerido delimitan el hecho imponible.",
+      "fuente": "TRLRHL, art. 100.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q231",
+      "pregunta": "Una obra requiere declaración responsable en lugar de licencia, con control municipal. ¿Queda por esa sola sustitución fuera del ICIO?",
+      "opciones": [
+        "Sí, solo puede gravarse lo sujeto a licencia",
+        "Solo si el dueño es una persona física",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "El hecho imponible contempla también declaración responsable y comunicación previa.",
+      "fuente": "TRLRHL, art. 100.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q232",
+      "pregunta": "¿La existencia de un régimen de comunicación previa elimina necesariamente el impuesto sobre la obra?",
+      "opciones": [
+        "Solo si la comunicación es electrónica",
+        "No, el artículo 100.1 incluye ese supuesto cuando concurren requisitos",
+        "Sí, toda comunicación convierte la obra en no sujeta"
+      ],
+      "correcta": 1,
+      "explicacion": "El instrumento de control no se confunde con la inexistencia de hecho imponible.",
+      "fuente": "TRLRHL, art. 100.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q233",
+      "pregunta": "¿Basta cualquier obra sometida exclusivamente a control de otro nivel para afirmar sin más el hecho imponible municipal del 100.1?",
+      "opciones": [
+        "Sí, toda obra de cualquier lugar genera ICIO local",
+        "Solo importa el domicilio del técnico",
+        "No, debe examinarse la exigencia de control correspondiente al ayuntamiento"
+      ],
+      "correcta": 2,
+      "explicacion": "La atribución del control forma parte de la delimitación del impuesto.",
+      "fuente": "TRLRHL, art. 100.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q234",
+      "pregunta": "¿La exención del 100.2 depende solo de que una obra tenga interés para los vecinos, cualquiera que sea su dueño?",
+      "opciones": [
+        "No, exige titularidad pública y destinos legalmente previstos",
+        "Solo depende de que tenga licencia",
+        "Sí, basta interés general declarado por el constructor"
+      ],
+      "correcta": 0,
+      "explicacion": "La exención combina dueño de la obra y destino.",
+      "fuente": "TRLRHL, art. 100.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Exención (100.2):** las obras de las que sea dueño el **Estado, una CCAA o una entidad local**, destinadas a **carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento**."
+    },
+    {
+      "id": "t06-q235",
+      "pregunta": "¿Qué destino figura entre las obras públicas exentas del 100.2?",
+      "opciones": [
+        "Cualquier local comercial privado",
+        "Obras hidráulicas y saneamiento",
+        "Toda vivienda vacacional"
+      ],
+      "correcta": 1,
+      "explicacion": "La lista comprende determinadas infraestructuras públicas.",
+      "fuente": "TRLRHL, art. 100.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Exención (100.2):** las obras de las que sea dueño el **Estado, una CCAA o una entidad local**, destinadas a **carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento**."
+    },
+    {
+      "id": "t06-q236",
+      "pregunta": "¿Están las obras destinadas a puertos y aeropuertos dentro de la lista del 100.2 si se cumplen titularidad y requisitos?",
+      "opciones": [
+        "Sí",
+        "Solo las situadas fuera del municipio",
+        "No, solo carreteras"
+      ],
+      "correcta": 0,
+      "explicacion": "La exención no se limita a una sola clase de infraestructura.",
+      "fuente": "TRLRHL, art. 100.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Exención (100.2):** las obras de las que sea dueño el **Estado, una CCAA o una entidad local**, destinadas a **carreteras, ferrocarriles, puertos, aeropuertos, obras hidráulicas y saneamiento**."
+    },
+    {
+      "id": "t06-q237",
+      "pregunta": "Un arrendatario soporta el coste de una obra como dueño de ella en el sentido tributario. ¿Es imprescindible que sea propietario del inmueble para ser contribuyente del ICIO?",
+      "opciones": [
+        "Sí, contribuyente y propietario son siempre la misma persona",
+        "Solo si no hay contratista",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "Dueño de la obra se define por soportar su coste, no necesariamente por la propiedad del inmueble.",
+      "fuente": "TRLRHL, art. 101.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **contribuyente** es el **dueño de la obra**, sea o no propietario del inmueble: **quien soporta su coste**;"
+    },
+    {
+      "id": "t06-q238",
+      "pregunta": "¿Quién tiene consideración de dueño de la construcción, instalación u obra a efectos del ICIO?",
+      "opciones": [
+        "Siempre quien inscribe el inmueble en el padrón",
+        "Quien soporta los gastos o coste de su realización",
+        "Siempre el arquitecto por firmar el proyecto"
+      ],
+      "correcta": 1,
+      "explicacion": "La definición tributaria evita identificar sin más todos los intervinientes.",
+      "fuente": "TRLRHL, art. 101.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **contribuyente** es el **dueño de la obra**, sea o no propietario del inmueble: **quien soporta su coste**;"
+    },
+    {
+      "id": "t06-q239",
+      "pregunta": "Si la obra no la realiza el contribuyente, ¿qué personas pueden actuar como sustitutos según el 101.2?",
+      "opciones": [
+        "Cualquier vecino sin intervención",
+        "Solo el Secretario General del Ayuntamiento",
+        "Quienes solicitan la licencia o realizan la obra"
+      ],
+      "correcta": 2,
+      "explicacion": "El sustituto cumple la obligación en el supuesto legal, sin cambiar quién es contribuyente.",
+      "fuente": "TRLRHL, art. 101.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- si no la hace él, son **sustitutos** quienes **solicitan la licencia** o **realizan la obra**, y pueden exigirle la cuota."
+    },
+    {
+      "id": "t06-q240",
+      "pregunta": "¿El sustituto puede exigir del contribuyente la cuota satisfecha?",
+      "opciones": [
+        "Sí",
+        "Solo si lo aprueba el Catastro",
+        "No, se convierte siempre en una donación"
+      ],
+      "correcta": 0,
+      "explicacion": "El artículo 101.2 reconoce esa posibilidad.",
+      "fuente": "TRLRHL, art. 101.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- si no la hace él, son **sustitutos** quienes **solicitan la licencia** o **realizan la obra**, y pueden exigirle la cuota."
+    },
+    {
+      "id": "t06-q241",
+      "pregunta": "¿Que un contratista sea sustituto convierte necesariamente al técnico redactor del proyecto en contribuyente?",
+      "opciones": [
+        "Sí, toda autoría de proyecto implica contribución",
+        "No, contribuyente es quien soporta el coste en el sentido legal",
+        "Solo si el técnico vive en Zaragoza"
+      ],
+      "correcta": 1,
+      "explicacion": "Las funciones profesionales y posiciones tributarias deben distinguirse.",
+      "fuente": "TRLRHL, art. 101.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- si no la hace él, son **sustitutos** quienes **solicitan la licencia** o **realizan la obra**, y pueden exigirle la cuota."
+    },
+    {
+      "id": "t06-q242",
+      "pregunta": "¿La base del ICIO equivale siempre al importe total de cualquier factura de la obra con todos sus conceptos?",
+      "opciones": [
+        "No, es el coste de ejecución material con exclusiones legales",
+        "Solo depende del valor de mercado del inmueble acabado",
+        "Sí, incluye necesariamente todo IVA y honorario"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley define coste real y efectivo para este impuesto.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q243",
+      "pregunta": "¿Qué magnitud debe usarse como base: coste de ejecución material o valor final de venta del inmueble?",
+      "opciones": [
+        "Valor final de venta",
+        "Valor hipotecario siempre",
+        "Coste de ejecución material"
+      ],
+      "correcta": 2,
+      "explicacion": "No deben trasladarse valores de otros negocios o tributos.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q244",
+      "pregunta": "¿Debe añadirse el IVA soportado a la base imponible del ICIO por ser un coste de la factura?",
+      "opciones": [
+        "Solo si la obra es urbana",
+        "No",
+        "Sí, siempre"
+      ],
+      "correcta": 1,
+      "explicacion": "El IVA está expresamente excluido de la base.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q245",
+      "pregunta": "¿Forman parte de la base del ICIO las tasas municipales por licencia?",
+      "opciones": [
+        "Sí, necesariamente",
+        "Solo si las paga el contratista",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "La tasa por control y el ICIO son figuras diferentes; la tasa no se incorpora a esa base.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q246",
+      "pregunta": "¿Los honorarios profesionales forman parte de la base del ICIO según el 102.1?",
+      "opciones": [
+        "No",
+        "Solo si el arquitecto es autónomo",
+        "Sí, todos sin excepción"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley excluye honorarios profesionales del coste de ejecución material a estos efectos.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q247",
+      "pregunta": "¿Qué tratamiento tiene el beneficio empresarial del contratista en la base del ICIO?",
+      "opciones": [
+        "Se suma siempre al valor catastral",
+        "Se excluye como concepto legal diferenciado",
+        "Sustituye todo coste material"
+      ],
+      "correcta": 1,
+      "explicacion": "La exclusión no elimina los costes materiales reales de la obra.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q248",
+      "pregunta": "Se aportan 40.000 euros de ejecución material, 8.400 de IVA y 3.000 de honorarios. Sin otros conceptos, ¿qué base de ICIO corresponde?",
+      "opciones": [
+        "40.000 euros",
+        "43.000 euros",
+        "51.400 euros"
+      ],
+      "correcta": 0,
+      "explicacion": "IVA y honorarios quedan fuera; no se calcula sobre la suma total facturada.",
+      "fuente": "TRLRHL, art. 102.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Base imponible (102.1):** el **coste real y efectivo** de la obra, es decir, **el coste de ejecución material**. **No incluye** el IVA, las tasas, los honorarios profesionales **ni el beneficio del contratista**."
+    },
+    {
+      "id": "t06-q249",
+      "pregunta": "Una ordenanza pretende fijar el ICIO al 5 %. ¿Respeta el límite general del 102.3?",
+      "opciones": [
+        "Sí, el máximo es 30 %",
+        "Solo si el promotor acepta",
+        "No, supera el 4 %"
+      ],
+      "correcta": 2,
+      "explicacion": "La decisión municipal debe mantenerse dentro del máximo legal.",
+      "fuente": "TRLRHL, art. 102.3 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Tipo (102.3):** el que fije el ayuntamiento, **sin exceder del 4 %**."
+    },
+    {
+      "id": "t06-q250",
+      "pregunta": "Con base de ejecución material de 20.000 euros y tipo aplicable del 3 %, ¿qué cuota íntegra resulta antes de beneficios?",
+      "opciones": [
+        "60 euros",
+        "600 euros",
+        "6.000 euros"
+      ],
+      "correcta": 1,
+      "explicacion": "La cuota resulta de multiplicar base por 0,03.",
+      "fuente": "TRLRHL, art. 102.3 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Tipo (102.3):** el que fije el ayuntamiento, **sin exceder del 4 %**."
+    },
+    {
+      "id": "t06-q251",
+      "pregunta": "Se obtiene licencia, pero la obra aún no comienza. ¿La fecha de licencia es por sí misma el devengo del ICIO?",
+      "opciones": [
+        "Sí, siempre",
+        "Solo si la licencia se solicitó electrónicamente",
+        "No, el devengo se produce al iniciarse la obra"
+      ],
+      "correcta": 2,
+      "explicacion": "La posible liquidación provisional no debe confundirse con el devengo.",
+      "fuente": "TRLRHL, art. 102.4 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Devengo (102.4):** **al iniciarse la obra, aunque no se haya obtenido la licencia**."
+    },
+    {
+      "id": "t06-q252",
+      "pregunta": "¿Finalizar la obra es el momento de devengo del ICIO por la regla general?",
+      "opciones": [
+        "No, se devenga al iniciarse",
+        "Solo cuando existe arquitecto",
+        "Sí, siempre al final"
+      ],
+      "correcta": 0,
+      "explicacion": "Al final puede producirse la liquidación definitiva, que es otra actuación.",
+      "fuente": "TRLRHL, art. 102.4 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Devengo (102.4):** **al iniciarse la obra, aunque no se haya obtenido la licencia**."
+    },
+    {
+      "id": "t06-q253",
+      "pregunta": "¿Qué naturaleza tiene la liquidación que se practica al conceder la licencia o al inicio en el supuesto legal?",
+      "opciones": [
+        "Sentencia firme",
+        "Provisional a cuenta",
+        "Bonificación definitiva automática"
+      ],
+      "correcta": 1,
+      "explicacion": "La posterior comprobación del coste real puede llevar a regularización.",
+      "fuente": "TRLRHL, art. 103.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **liquidación provisional a cuenta** al conceder la licencia o empezar la obra;"
+    },
+    {
+      "id": "t06-q254",
+      "pregunta": "¿Qué dato fundamenta la liquidación definitiva tras acabar la obra?",
+      "opciones": [
+        "El coste real y efectivo comprobado en los términos legales",
+        "Solo el número de plantas sin coste",
+        "Siempre el presupuesto inicial aunque sea inexacto"
+      ],
+      "correcta": 0,
+      "explicacion": "La gestión contrasta la provisional con la realidad de la ejecución.",
+      "fuente": "TRLRHL, art. 103.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **liquidación definitiva** al terminarla, **según el coste real**."
+    },
+    {
+      "id": "t06-q255",
+      "pregunta": "¿La liquidación provisional impide toda liquidación definitiva posterior?",
+      "opciones": [
+        "Sí, equivale a cierre irreversible",
+        "Solo si la obra termina en otro año",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley prevé ambas fases de gestión.",
+      "fuente": "TRLRHL, art. 103.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **liquidación definitiva** al terminarla, **según el coste real**."
+    },
+    {
+      "id": "t06-q256",
+      "pregunta": "¿Qué máximo potestativo puede regularse para obras declaradas de especial interés o utilidad municipal?",
+      "opciones": [
+        "10 %",
+        "95 %",
+        "30 %"
+      ],
+      "correcta": 1,
+      "explicacion": "La aplicación exige declaración y requisitos de la ordenanza.",
+      "fuente": "TRLRHL, art. 103.2.a (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- hasta el **95 %** para obras de **especial interés municipal** o con **energía solar**;"
+    },
+    {
+      "id": "t06-q257",
+      "pregunta": "¿Qué máximo potestativo de bonificación recoge el supuesto de sistemas de energía solar del 103.2.b?",
+      "opciones": [
+        "50 % como máximo en ese supuesto",
+        "25 %",
+        "95 %"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe respetarse el alcance legal y las condiciones técnicas exigidas.",
+      "fuente": "TRLRHL, art. 103.2.b (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- hasta el **95 %** para obras de **especial interés municipal** o con **energía solar**;"
+    },
+    {
+      "id": "t06-q258",
+      "pregunta": "¿Qué máximo potestativo contempla el ICIO para obras que favorezcan acceso y habitabilidad de personas con discapacidad?",
+      "opciones": [
+        "90 %",
+        "100 % obligatorio",
+        "40 %"
+      ],
+      "correcta": 0,
+      "explicacion": "La bonificación no es una no sujeción ni un beneficio automático universal.",
+      "fuente": "TRLRHL, art. 103.2.e (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- hasta el **90 %** para obras de **accesibilidad** para personas con discapacidad o para **puntos de recarga**;"
+    },
+    {
+      "id": "t06-q259",
+      "pregunta": "¿Qué máximo potestativo recoge el ICIO para obras de instalación de puntos de recarga de vehículos eléctricos en su supuesto legal?",
+      "opciones": [
+        "15 %",
+        "90 %",
+        "4 %"
+      ],
+      "correcta": 1,
+      "explicacion": "No debe confundirse con el porcentaje permitido en el IBI u otros impuestos.",
+      "fuente": "TRLRHL, art. 103.2.f (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- hasta el **90 %** para obras de **accesibilidad** para personas con discapacidad o para **puntos de recarga**;"
+    },
+    {
+      "id": "t06-q260",
+      "pregunta": "¿Qué máximo potestativo se estudia para construcciones referentes a viviendas de protección oficial?",
+      "opciones": [
+        "50 %",
+        "10 %",
+        "95 % obligatorio"
+      ],
+      "correcta": 0,
+      "explicacion": "La bonificación del ICIO tiene un régimen distinto de la obligatoria de IBI para VPO.",
+      "fuente": "TRLRHL, art. 103.2.d (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- hasta el **50 %** para obras de **VPO** o de planes de fomento de infraestructuras."
+    },
+    {
+      "id": "t06-q261",
+      "pregunta": "¿Los máximos de bonificación del ICIO significan que siempre se aplican de oficio en todo ayuntamiento?",
+      "opciones": [
+        "Sí, todos son automáticos",
+        "Solo dependen de quién construye sin ordenanza",
+        "No, son potestativos y requieren el régimen municipal aplicable"
+      ],
+      "correcta": 2,
+      "explicacion": "Habilitación legal y beneficio regulado deben distinguirse.",
+      "fuente": "TRLRHL, art. 103.2 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Bonificaciones potestativas (103.2):**"
+    },
+    {
+      "id": "t06-q262",
+      "pregunta": "¿Satisfacer el ICIO regulariza por sí mismo una obra ejecutada sin autorización exigible?",
+      "opciones": [
+        "Solo si el tipo es el máximo",
+        "No, la obligación tributaria no sustituye el control urbanístico",
+        "Sí, el pago equivale siempre a licencia"
+      ],
+      "correcta": 1,
+      "explicacion": "La tributación de la obra y su legalidad urbanística son planos distintos.",
+      "fuente": "TRLRHL, art. 100.1 (BOE-A-2004-4214) · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Naturaleza y hecho imponible (100.1):** tributo **indirecto**. Grava la **realización**, en el término municipal, de cualquier **construcción, instalación u obra** que exija **licencia** de obras o urbanística —**se haya obtenido o no**— o **declaración responsable o comunicación previa**, cuando el control corresponda al ayuntamiento."
+    },
+    {
+      "id": "t06-q263",
+      "pregunta": "¿Qué diferencia fundamental hay entre el objeto del IBI y el del IIVTNU?",
+      "opciones": [
+        "Ambos gravan siempre el mismo precio de venta",
+        "El IIVTNU grava solo vehículos",
+        "El IBI grava valor del inmueble y el IIVTNU incremento del terreno manifestado en el supuesto legal"
+      ],
+      "correcta": 2,
+      "explicacion": "La coincidencia sobre un inmueble no hace idénticos ambos impuestos.",
+      "fuente": "TRLRHL, art. 104.1 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "## 8. Impuesto sobre el Incremento de Valor de los Terrenos de Naturaleza Urbana (arts. 104 a 110)"
+    },
+    {
+      "id": "t06-q264",
+      "pregunta": "¿Se extiende el IIVTNU a todo terreno por el solo hecho de transmitirse?",
+      "opciones": [
+        "No, el carácter urbano relevante y los demás requisitos delimitan el hecho imponible",
+        "Solo depende del domicilio del vendedor",
+        "Sí, incluso todo rústico"
+      ],
+      "correcta": 0,
+      "explicacion": "La naturaleza del terreno debe examinarse conforme a la norma.",
+      "fuente": "TRLRHL, arts. 104.1 y 104.2 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Naturaleza y hecho imponible (104.1):** tributo **directo** que grava el **incremento de valor** de los terrenos **urbanos** puesto de manifiesto por la **transmisión de su propiedad** por cualquier título o por la **constitución o transmisión de un derecho real de goce** limitativo del dominio."
+    },
+    {
+      "id": "t06-q265",
+      "pregunta": "Un terreno es rústico a efectos del IBI en el supuesto legal. ¿Qué tratamiento se estudia para su incremento en el IIVTNU?",
+      "opciones": [
+        "Exención solo si lo solicita una familia numerosa",
+        "No sujeción",
+        "Bonificación del 50 % en todo caso"
+      ],
+      "correcta": 1,
+      "explicacion": "No sujeción no equivale a bonificación de una cuota ya nacida.",
+      "fuente": "TRLRHL, art. 104.2 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- los terrenos **rústicos** a efectos del IBI;"
+    },
+    {
+      "id": "t06-q266",
+      "pregunta": "¿Qué tratamiento se estudia para las aportaciones de bienes y derechos de los cónyuges a la sociedad conyugal?",
+      "opciones": [
+        "No sujeción en los términos del 104.3",
+        "Bonificación de vehículo histórico",
+        "Tributación obligatoria como toda compraventa"
+      ],
+      "correcta": 0,
+      "explicacion": "El precepto delimita transmisiones y adjudicaciones familiares específicas.",
+      "fuente": "TRLRHL, art. 104.3 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- las aportaciones a la **sociedad conyugal** y las transmisiones por **nulidad, separación o divorcio**;"
+    },
+    {
+      "id": "t06-q267",
+      "pregunta": "¿Puede equipararse sin más una transmisión del supuesto de nulidad, separación o divorcio a cualquier venta ordinaria?",
+      "opciones": [
+        "Sí, el 104.3 no contiene ninguna especialidad",
+        "Solo depende del tipo de IBI urbano",
+        "No, hay una regla de no sujeción en los supuestos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "La calificación exige atender al título jurídico de la transmisión.",
+      "fuente": "TRLRHL, art. 104.3 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- las aportaciones a la **sociedad conyugal** y las transmisiones por **nulidad, separación o divorcio**;"
+    },
+    {
+      "id": "t06-q268",
+      "pregunta": "¿Basta afirmar sin acreditación que no hubo incremento para describir el supuesto del 104.5?",
+      "opciones": [
+        "Solo si el transmitente es no residente",
+        "No, debe acreditarse conforme a la ley",
+        "Sí, cualquier declaración verbal basta"
+      ],
+      "correcta": 1,
+      "explicacion": "La no sujeción por falta de incremento tiene requisitos de comprobación.",
+      "fuente": "TRLRHL, art. 104.5 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- y, **desde el Real Decreto-ley 26/2021**, las transmisiones en las que se acredite **la inexistencia de incremento de valor**, comparando los valores de transmisión y de adquisición."
+    },
+    {
+      "id": "t06-q269",
+      "pregunta": "¿Qué tratamiento se prevé para constitución y transmisión de derechos de servidumbre?",
+      "opciones": [
+        "No sujeción por ser siempre suelo rústico",
+        "Bonificación potestativa de hasta el 10 %",
+        "Exención del IIVTNU"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley lo enumera como exención, no debe confundirse de categoría.",
+      "fuente": "TRLRHL, art. 105.1.a (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- la constitución y transmisión de **servidumbres**;"
+    },
+    {
+      "id": "t06-q270",
+      "pregunta": "En la exención de bienes de conjuntos histórico-artísticos, ¿qué actuación del propietario debe examinarse entre sus requisitos?",
+      "opciones": [
+        "Obras de conservación, mejora o rehabilitación a su cargo en los términos legales",
+        "Pagar el IVTM del mismo año",
+        "Solo cambiar el nombre de la calle"
+      ],
+      "correcta": 0,
+      "explicacion": "La exención no se generaliza a cualquier edificio antiguo sin condiciones.",
+      "fuente": "TRLRHL, art. 105.1.b (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- las transmisiones de bienes de **conjuntos histórico-artísticos** con obras de rehabilitación a cargo del propietario;"
+    },
+    {
+      "id": "t06-q271",
+      "pregunta": "¿Toda entrega en pago de cualquier inmueble queda exenta sin comprobar condiciones?",
+      "opciones": [
+        "Sí, toda dación es automáticamente exenta",
+        "No, debe atenderse al supuesto de vivienda habitual y requisitos legales",
+        "Solo si el inmueble tiene valor catastral bajo"
+      ],
+      "correcta": 1,
+      "explicacion": "La exención específica no puede extenderse indiscriminadamente.",
+      "fuente": "TRLRHL, art. 105.1.c (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- la **dación en pago** o **ejecución hipotecaria de la vivienda habitual**;"
+    },
+    {
+      "id": "t06-q272",
+      "pregunta": "¿Puede una exención del IIVTNU depender de la condición de la persona o entidad obligada?",
+      "opciones": [
+        "Sí, el artículo 105.2 enumera sujetos exentos",
+        "Solo depende del tipo de licencia de obra",
+        "No, solo depende del precio"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley combina exenciones objetivas y subjetivas.",
+      "fuente": "TRLRHL, art. 105.2 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- y, por la persona obligada: el **Estado**, las **CCAA y entidades locales**, el **propio municipio**, las **instituciones benéficas**, la **Cruz Roja**…"
+    },
+    {
+      "id": "t06-q273",
+      "pregunta": "Se dona un terreno urbano y concurren los requisitos del impuesto. ¿Quién es contribuyente según el título lucrativo?",
+      "opciones": [
+        "Siempre quien dona",
+        "La notaría",
+        "Quien adquiere"
+      ],
+      "correcta": 2,
+      "explicacion": "Debe distinguirse de la regla de transmisión onerosa.",
+      "fuente": "TRLRHL, art. 106.1.a (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- a **título lucrativo** (herencia, donación): **el que adquiere**;"
+    },
+    {
+      "id": "t06-q274",
+      "pregunta": "En transmisión onerosa, el contribuyente es persona física no residente en España. ¿Qué posición atribuye el 106.2 al adquirente?",
+      "opciones": [
+        "Ninguna obligación posible",
+        "Sustituto del contribuyente",
+        "Siempre exento por adquisición"
+      ],
+      "correcta": 1,
+      "explicacion": "Es una regla especial que no debe confundirse con contribuyente en toda compraventa.",
+      "fuente": "TRLRHL, art. 106.2 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- a **título oneroso** (compraventa): **el que transmite**. Si es persona física **no residente**, el adquirente es **sustituto**."
+    },
+    {
+      "id": "t06-q275",
+      "pregunta": "¿El IIVTNU solo puede aparecer al vender toda la propiedad?",
+      "opciones": [
+        "Sí, nunca se refiere a derechos reales",
+        "Solo en hipotecas de cualquier tipo sin incremento",
+        "No, también en constitución o transmisión de derechos reales de goce limitativos del dominio"
+      ],
+      "correcta": 2,
+      "explicacion": "La ley define más de un supuesto de manifestación del incremento.",
+      "fuente": "TRLRHL, art. 104.1 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Naturaleza y hecho imponible (104.1):** tributo **directo** que grava el **incremento de valor** de los terrenos **urbanos** puesto de manifiesto por la **transmisión de su propiedad** por cualquier título o por la **constitución o transmisión de un derecho real de goce** limitativo del dominio."
+    },
+    {
+      "id": "t06-q276",
+      "pregunta": "Para el método objetivo ordinario, ¿debe confundirse valor catastral del terreno con todo el valor de suelo y construcción de un piso?",
+      "opciones": [
+        "No, la referencia es el terreno en los términos del artículo 107",
+        "Solo se usa el precio del mobiliario",
+        "Sí, siempre es el total del edificio"
+      ],
+      "correcta": 0,
+      "explicacion": "La base del incremento del suelo exige aislar la magnitud legal correcta.",
+      "fuente": "TRLRHL, art. 107 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- se calcula multiplicando **el valor catastral del terreno** en el devengo por un **coeficiente** según los años de tenencia;"
+    },
+    {
+      "id": "t06-q277",
+      "pregunta": "¿Qué elemento temporal determina el coeficiente aplicable al valor del terreno en el método objetivo?",
+      "opciones": [
+        "La edad del vehículo del propietario",
+        "El periodo de generación en los términos legales",
+        "Solo el mes de empadronamiento"
+      ],
+      "correcta": 1,
+      "explicacion": "La mecánica del método no equivale a memorizar una tabla inmutable.",
+      "fuente": "TRLRHL, art. 107 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- se calcula multiplicando **el valor catastral del terreno** en el devengo por un **coeficiente** según los años de tenencia;"
+    },
+    {
+      "id": "t06-q278",
+      "pregunta": "El interesado acredita que el incremento real es inferior a la base obtenida por el método objetivo. ¿Qué base contempla el 107.5?",
+      "opciones": [
+        "El importe de ese incremento real inferior",
+        "Cero necesariamente aunque exista incremento",
+        "Siempre la objetiva aunque sea mayor"
+      ],
+      "correcta": 0,
+      "explicacion": "La regla distingue falta de incremento y existencia de un incremento menor.",
+      "fuente": "TRLRHL, art. 107.5 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- si el sujeto pasivo acredita que el **incremento real es menor**, se toma **ese incremento real** (107.5)."
+    },
+    {
+      "id": "t06-q279",
+      "pregunta": "¿Acreditar un incremento real positivo menor equivale necesariamente a no sujeción por inexistencia de incremento?",
+      "opciones": [
+        "Sí, todo incremento menor es cero",
+        "Solo si se trata de una donación",
+        "No, puede conducir a una base menor sin negar el incremento"
+      ],
+      "correcta": 2,
+      "explicacion": "Son supuestos diferentes de los artículos 104.5 y 107.5.",
+      "fuente": "TRLRHL, art. 107.5 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- si el sujeto pasivo acredita que el **incremento real es menor**, se toma **ese incremento real** (107.5)."
+    },
+    {
+      "id": "t06-q280",
+      "pregunta": "En un ejercicio se facilita valor del terreno de 50.000 euros y coeficiente aplicable de 0,10. ¿Qué base objetiva resulta?",
+      "opciones": [
+        "500 euros",
+        "5.000 euros",
+        "50.010 euros"
+      ],
+      "correcta": 1,
+      "explicacion": "Se multiplica el valor relevante por el coeficiente facilitado; no se afirma que ese coeficiente corresponda a cualquier periodo.",
+      "fuente": "TRLRHL, art. 107 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- se calcula multiplicando **el valor catastral del terreno** en el devengo por un **coeficiente** según los años de tenencia;"
+    },
+    {
+      "id": "t06-q281",
+      "pregunta": "La base objetiva es 5.000 euros y se acredita legalmente un incremento real de 3.000. ¿Qué base corresponde por el 107.5?",
+      "opciones": [
+        "5.000 euros siempre",
+        "8.000 euros",
+        "3.000 euros"
+      ],
+      "correcta": 2,
+      "explicacion": "La alternativa toma el incremento real inferior acreditado.",
+      "fuente": "TRLRHL, art. 107.5 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- si el sujeto pasivo acredita que el **incremento real es menor**, se toma **ese incremento real** (107.5)."
+    },
+    {
+      "id": "t06-q282",
+      "pregunta": "Una ordenanza fija tipo del IIVTNU del 35 %. ¿Respeta el límite legal general?",
+      "opciones": [
+        "No, supera el 30 %",
+        "Solo si existe ganancia",
+        "Sí, el máximo es 40 %"
+      ],
+      "correcta": 0,
+      "explicacion": "El máximo del tipo es distinto de los coeficientes de cálculo de base.",
+      "fuente": "TRLRHL, art. 108.1 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Tipo (108.1):** el que fije el ayuntamiento, **sin exceder del 30 %**."
+    },
+    {
+      "id": "t06-q283",
+      "pregunta": "¿Puede trasladarse automáticamente la bonificación del 108.4 por herencia a cualquier donación entre vivos?",
+      "opciones": [
+        "Sí, ambos títulos son idénticos para toda bonificación",
+        "No, esa previsión se refiere a causa de muerte",
+        "Solo si el donante conserva usufructo"
+      ],
+      "correcta": 1,
+      "explicacion": "La identidad de carácter lucrativo no borra la diferencia del supuesto bonificado.",
+      "fuente": "TRLRHL, art. 108.4 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Bonificación (108.4):** hasta el **95 %** en las transmisiones **por causa de muerte** a favor de **descendientes, cónyuges y ascendientes**."
+    },
+    {
+      "id": "t06-q284",
+      "pregunta": "¿Qué familiares incluye la enumeración del 108.4 para la bonificación por causa de muerte?",
+      "opciones": [
+        "Descendientes, cónyuges y ascendientes",
+        "Todos los conocidos del causante",
+        "Solo hermanos y primos"
+      ],
+      "correcta": 0,
+      "explicacion": "Debe respetarse la lista legal y la ordenanza aplicable.",
+      "fuente": "TRLRHL, art. 108.4 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Bonificación (108.4):** hasta el **95 %** en las transmisiones **por causa de muerte** a favor de **descendientes, cónyuges y ascendientes**."
+    },
+    {
+      "id": "t06-q285",
+      "pregunta": "¿La fecha en que se gira el recibo sustituye el devengo de la transmisión?",
+      "opciones": [
+        "Sí, siempre",
+        "Solo en compraventas con beneficio",
+        "No, el devengo se vincula a la fecha de transmisión en el supuesto legal"
+      ],
+      "correcta": 2,
+      "explicacion": "Devengo y gestión recaudatoria son momentos diferentes.",
+      "fuente": "TRLRHL, art. 109.1.a (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Devengo (109):** **en la fecha de la transmisión** o de la constitución del derecho real."
+    },
+    {
+      "id": "t06-q286",
+      "pregunta": "Si el hecho imponible es constituir un derecho real de goce, ¿qué fecha determina el devengo según la regla legal?",
+      "opciones": [
+        "Siempre el 1 de enero del año siguiente",
+        "La de constitución del derecho",
+        "La de compra de cualquier vehículo"
+      ],
+      "correcta": 1,
+      "explicacion": "La regla se adapta al hecho imponible concreto.",
+      "fuente": "TRLRHL, art. 109.1.b (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Devengo (109):** **en la fecha de la transmisión** o de la constitución del derecho real."
+    },
+    {
+      "id": "t06-q287",
+      "pregunta": "¿Qué plazo inicial de declaración corresponde a actos por causa de muerte?",
+      "opciones": [
+        "Treinta días hábiles como toda transmisión",
+        "Tres años",
+        "Seis meses"
+      ],
+      "correcta": 2,
+      "explicacion": "La prórroga hasta un año es una posibilidad distinta del plazo inicial.",
+      "fuente": "TRLRHL, art. 110.2.b (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Declaración (110.2):** en **30 días hábiles** para los **actos inter vivos**; en **seis meses, prorrogables hasta un año**, para los **actos por causa de muerte**."
+    },
+    {
+      "id": "t06-q288",
+      "pregunta": "¿Es correcto confundir prórroga posible hasta un año con un plazo inicial automático de un año para toda herencia?",
+      "opciones": [
+        "No",
+        "Solo si el adquirente es cónyuge",
+        "Sí, siempre"
+      ],
+      "correcta": 0,
+      "explicacion": "La ley distingue plazo inicial y prórroga.",
+      "fuente": "TRLRHL, art. 110.2.b (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Declaración (110.2):** en **30 días hábiles** para los **actos inter vivos**; en **seis meses, prorrogables hasta un año**, para los **actos por causa de muerte**."
+    },
+    {
+      "id": "t06-q289",
+      "pregunta": "¿Qué precisión debe mantenerse al hablar del plazo de treinta días para actos inter vivos?",
+      "opciones": [
+        "Son siempre naturales",
+        "Son hábiles",
+        "Son treinta meses"
+      ],
+      "correcta": 1,
+      "explicacion": "La unidad de cómputo es parte del dato legal.",
+      "fuente": "TRLRHL, art. 110.2.a (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Declaración (110.2):** en **30 días hábiles** para los **actos inter vivos**; en **seis meses, prorrogables hasta un año**, para los **actos por causa de muerte**."
+    },
+    {
+      "id": "t06-q290",
+      "pregunta": "Un municipio tiene exactamente 5.000 habitantes. ¿Lo excluye la fórmula no superior a 5.000 de la prestación personal y de transporte?",
+      "opciones": [
+        "No, la igualdad está incluida",
+        "Solo si es capital provincial",
+        "Sí, exige menos de 5.000"
+      ],
+      "correcta": 0,
+      "explicacion": "El umbral se diferencia del de creación de nuevos municipios.",
+      "fuente": "TRLRHL, art. 128.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q291",
+      "pregunta": "¿Qué finalidad de obras justifica la prestación personal y de transporte del artículo 128?",
+      "opciones": [
+        "Financiar cualquier gasto privado",
+        "Sustituir todo impuesto obligatorio",
+        "Construcción, conservación y mejora de obras municipales o cedidas en los términos legales"
+      ],
+      "correcta": 2,
+      "explicacion": "Es un recurso específico con objeto y límites propios.",
+      "fuente": "TRLRHL, art. 128.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q292",
+      "pregunta": "¿La exención por edad de la prestación personal incluye necesariamente a quien tiene exactamente 55 años?",
+      "opciones": [
+        "Solo si es titular de un vehículo",
+        "No, la ley dice mayores de 55",
+        "Sí, mayores significa igual o más"
+      ],
+      "correcta": 1,
+      "explicacion": "La precisión se refiere a esa causa de exención, no excluye otras causas posibles.",
+      "fuente": "TRLRHL, art. 129.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q293",
+      "pregunta": "¿La regla de edad que exime de prestación personal se extiende sin más a toda prestación de transporte?",
+      "opciones": [
+        "Sí, son siempre idénticas",
+        "Solo si se utiliza un camión",
+        "No, ambas tienen régimen distinto"
+      ],
+      "correcta": 2,
+      "explicacion": "La propia distinción fue preguntada en los exámenes del Ayuntamiento.",
+      "fuente": "TRLRHL, art. 129.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q294",
+      "pregunta": "¿Qué otro grupo aparece exento de prestación personal junto a las causas de edad?",
+      "opciones": [
+        "Personas con discapacidad y reclusos en los términos legales",
+        "Todo comerciante mayor de 18 años",
+        "Toda persona que tenga un coche"
+      ],
+      "correcta": 0,
+      "explicacion": "Las causas de exención no se reducen a edad.",
+      "fuente": "TRLRHL, art. 129.1 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q295",
+      "pregunta": "Se exige una prestación personal de dieciséis días en un año. ¿Respeta el máximo del 129.2?",
+      "opciones": [
+        "Sí, si no son consecutivos",
+        "No, el máximo anual es quince",
+        "Solo depende de la población superior a 5.000"
+      ],
+      "correcta": 1,
+      "explicacion": "El máximo anual y el consecutivo son límites acumulativos.",
+      "fuente": "TRLRHL, art. 129.2 (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q296",
+      "pregunta": "¿Qué máximo anual tiene la prestación de transporte con vehículos de tracción mecánica?",
+      "opciones": [
+        "Cinco días",
+        "Treinta días",
+        "Quince días"
+      ],
+      "correcta": 0,
+      "explicacion": "No se confunde con la prestación personal ni con otros medios de transporte.",
+      "fuente": "TRLRHL, art. 130.2.a (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q297",
+      "pregunta": "¿Pueden ser consecutivos los días de esa prestación con vehículo de tracción mecánica?",
+      "opciones": [
+        "Sí, todos deben serlo",
+        "Solo si se paga IVTM",
+        "No"
+      ],
+      "correcta": 2,
+      "explicacion": "La regla del transporte mecánico excluye consecutividad.",
+      "fuente": "TRLRHL, art. 130.2.a (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q298",
+      "pregunta": "¿Qué límites se aplican a los demás medios de transporte del artículo 130.2.b?",
+      "opciones": [
+        "Cinco días necesariamente consecutivos",
+        "Diez días al año y no más de dos consecutivos",
+        "Quince días y tres consecutivos como la personal"
+      ],
+      "correcta": 1,
+      "explicacion": "Cada prestación tiene sus propios máximos.",
+      "fuente": "TRLRHL, art. 130.2.b (BOE-A-2004-4214) · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Prestación personal y de transporte** | 128 a 130 | **Solo** en ayuntamientos de **no más de 5.000 habitantes**, para **obras municipales**. **Exentos** de la personal: los **menores de 18 y mayores de 55**, las personas con discapacidad y los reclusos. La personal no pasa de **15 días al año** ni de **3 consecutivos**; la de transporte, de **5 días** con **vehículos de tracción mecánica**, **sin que ninguno sea consecutivo** (en los demás casos, 10 días y no más de 2 consecutivos) |"
+    },
+    {
+      "id": "t06-q299",
+      "pregunta": "¿Qué dos reglas introducidas en 2021 deben distinguirse al estudiar plusvalía?",
+      "opciones": [
+        "Supresión de todo impuesto municipal y exención universal",
+        "Obligación de tributar siempre aunque no haya incremento",
+        "No sujeción si no hay incremento y base por incremento real inferior acreditado"
+      ],
+      "correcta": 2,
+      "explicacion": "La reforma no eliminó el impuesto: corrigió presupuestos y cálculo.",
+      "fuente": "TRLRHL, arts. 104.5 y 107.5; RDL 26/2021 (BOE-A-2004-4214 y BOE-A-2021-18276) · apunte §8",
+      "apartado": "8",
+      "evidencia": "**Por qué cambió este impuesto.** La **STC 182/2021** anuló el sistema de cálculo de la base: gravaba aunque no hubiera ganancia. El **RDL 26/2021, de 8 de noviembre**, lo rehízo: añadió la **no sujeción si no hay incremento** y la **opción por el incremento real**. Cualquier manual anterior a noviembre de 2021 está desfasado en este impuesto."
+    },
+    {
+      "id": "t06-q300",
+      "pregunta": "¿Por qué debe fecharse y comprobarse una tabla de coeficientes de plusvalía antes de memorizarla?",
+      "opciones": [
+        "Porque sus máximos pueden actualizarse por norma con rango legal",
+        "Porque la fija libremente cada notaría",
+        "Porque nunca aparece en el BOE"
+      ],
+      "correcta": 0,
+      "explicacion": "La mecánica del impuesto es estable, pero las cifras y su eficacia temporal deben verificarse.",
+      "fuente": "TRLRHL, art. 107.4 (BOE-A-2004-4214) · apunte §8",
+      "apartado": "8",
+      "evidencia": "- se calcula multiplicando **el valor catastral del terreno** en el devengo por un **coeficiente** según los años de tenencia;"
     }
   ],
   "formatoTest": {

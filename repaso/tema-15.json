@@ -1581,6 +1581,3128 @@
       "fuente": "OpenStax Microbiology, agentes acelulares, cap. 6 · apunte §5.6",
       "apartado": "5.6",
       "evidencia": "- **Proteínas infecciosas sin ácido nucleico** demostrable."
+    },
+    {
+      "id": "t15-q78",
+      "pregunta": "Se pretende excluir un virus de la definición legal de microorganismo porque carece de célula. ¿Qué parte de la definición impide esa exclusión?",
+      "opciones": [
+        "La definición solo admite organismos con metabolismo independiente.",
+        "La definición exige que todas las entidades tengan un núcleo unido a su membrana.",
+        "La definición admite entidades no celulares capaces de reproducirse o de transferir material genético."
+      ],
+      "correcta": 2,
+      "explicacion": "La presencia de una célula no es requisito legal. Se exige capacidad de reproducción o de transferencia de material genético.",
+      "fuente": "Real Decreto 664/1997, art. 2.b; BOE-A-1997-11144 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Microorganismo:** «toda entidad microbiológica, **celular o no**, capaz de **reproducirse o de transferir material genético**»."
+    },
+    {
+      "id": "t15-q79",
+      "pregunta": "Una entidad microbiológica no se reproduce por sí misma, pero puede transferir material genético. ¿Cómo se aplica el criterio de capacidad del art. 2.b?",
+      "opciones": [
+        "Solo puede entrar en la definición si también se reproduce sin huésped.",
+        "La transferencia de material genético satisface una de las dos capacidades alternativas.",
+        "El criterio exige a la vez producir esporas y transferir material genético."
+      ],
+      "correcta": 1,
+      "explicacion": "La definición emplea una disyunción. No requiere que reproducción y transferencia ocurran juntas.",
+      "fuente": "Real Decreto 664/1997, art. 2.b; BOE-A-1997-11144 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Microorganismo:** «toda entidad microbiológica, **celular o no**, capaz de **reproducirse o de transferir material genético**»."
+    },
+    {
+      "id": "t15-q80",
+      "pregunta": "Para evaluar un hongo filamentoso en el trabajo se alega que el único efecto demostrado de interés es alérgico. ¿Qué efecto tiene ese dato en la definición de agente biológico?",
+      "opciones": [
+        "La definición excluye la alergia y contempla exclusivamente la toxicidad.",
+        "La alergia cuenta solo si se demuestra una infección activa simultánea.",
+        "La alergia es uno de los efectos contemplados expresamente."
+      ],
+      "correcta": 2,
+      "explicacion": "La definición incluye infección, alergia o toxicidad como posibles efectos de las entidades que enumera.",
+      "fuente": "Real Decreto 664/1997, art. 2.a; BOE-A-1997-11144 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Agente biológico:** **microorganismos** (incluidos los modificados genéticamente), **cultivos celulares** y **endoparásitos humanos**, que puedan originar **infección, alergia o toxicidad**."
+    },
+    {
+      "id": "t15-q81",
+      "pregunta": "¿Cómo se denomina el resultado del crecimiento in vitro de células obtenidas de organismos multicelulares en el artículo 2?",
+      "opciones": [
+        "Cultivo celular.",
+        "Cepa bacteriana.",
+        "Conglomerado de viriones."
+      ],
+      "correcta": 0,
+      "explicacion": "El artículo define el cultivo celular por el origen multicelular de las células y su crecimiento in vitro.",
+      "fuente": "Real Decreto 664/1997, art. 2.a y 2.c; BOE-A-1997-11144 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Agente biológico:** **microorganismos** (incluidos los modificados genéticamente), **cultivos celulares** y **endoparásitos humanos**, que puedan originar **infección, alergia o toxicidad**."
+    },
+    {
+      "id": "t15-q82",
+      "pregunta": "En un inventario se ponen las bacterias modificadas genéticamente fuera de la categoría de microorganismos por el solo hecho de la modificación. ¿Qué dice el artículo aplicable?",
+      "opciones": [
+        "Solo admite microorganismos modificados sin material hereditario.",
+        "Incluye expresamente a los microorganismos modificados genéticamente en la definición de agente biológico.",
+        "Los considera en todos los casos cultivos de células animales."
+      ],
+      "correcta": 1,
+      "explicacion": "La modificación genética no excluye por sí sola al microorganismo. La definición la recoge de forma explícita.",
+      "fuente": "Real Decreto 664/1997, art. 2.a; BOE-A-1997-11144 · apunte §2",
+      "apartado": "2",
+      "evidencia": "- **Agente biológico:** **microorganismos** (incluidos los modificados genéticamente), **cultivos celulares** y **endoparásitos humanos**, que puedan originar **infección, alergia o toxicidad**."
+    },
+    {
+      "id": "t15-q83",
+      "pregunta": "En una muestra se identifica un helminto que completa una fase dentro de un huésped humano. ¿Qué relación recoge la guía?",
+      "opciones": [
+        "Puede ser un endoparásito humano pluricelular aunque su adulto sea visible.",
+        "Solo un organismo unicelular puede ser un endoparásito humano.",
+        "El helminto es un cultivo celular porque desarrolla parte de su ciclo dentro del huésped."
+      ],
+      "correcta": 0,
+      "explicacion": "La categoría de endoparásitos humanos admite organismos uni o pluricelulares que viven al menos una parte del ciclo en el huésped.",
+      "fuente": "INSST, Guía técnica de agentes biológicos (2024), categorías de agentes biológicos · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **Endoparásitos humanos** | Organismos **unicelulares o pluricelulares** que viven parte o todo su ciclo dentro de un huésped: **protozoos y helmintos** |"
+    },
+    {
+      "id": "t15-q84",
+      "pregunta": "Una partícula mide 95 nanómetros. ¿Qué anotación en micrómetros conserva el orden de tamaño de la cápside de un adenovirus?",
+      "opciones": [
+        "95 µm.",
+        "0,95 µm.",
+        "0,095 µm."
+      ],
+      "correcta": 2,
+      "explicacion": "Un micrómetro equivale a 1.000 nanómetros. El diámetro de 95 nm corresponde a 0,095 µm.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, adenovirus · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Virus | Del orden de **nanómetros**: la cápside de un adenovirus, **90-100 nm**; la más pequeña, unos **17 nm** |"
+    },
+    {
+      "id": "t15-q85",
+      "pregunta": "Un informe compara una cápside de 100 nm con un micoplasma de 0,2 µm. ¿Qué relación hay entre esas medidas concretas?",
+      "opciones": [
+        "La cápside mide el doble que el micoplasma.",
+        "El micoplasma mide el doble que la cápside.",
+        "El micoplasma mide doscientas veces más que la cápside."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 100 nm de la cápside son 0,1 µm. Comparar ambas cifras con la misma unidad da una relación de dos a uno.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, tamaño de las bacterias; OMS, Guías de agua de consumo, cap. 11, adenovirus · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Bacterias | **Micrómetros**: de 0,1-0,2 µm (micoplasmas) a 1-1,3 × 3-10 µm (*Bacillus anthracis*) |"
+    },
+    {
+      "id": "t15-q86",
+      "pregunta": "Se estudian varias bacterias ya conocidas y se reorganizan sus relaciones en grupos a la luz de sus secuencias. ¿Qué tarea se está haciendo?",
+      "opciones": [
+        "Nomenclatura de los nombres ya publicados.",
+        "Identificación de una muestra incógnita.",
+        "Clasificación."
+      ],
+      "correcta": 2,
+      "explicacion": "Clasificar organiza los organismos en grupos. El objetivo del estudio consiste en revisar la agrupación, aunque se usen secuencias como evidencia.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Classification · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "- **clasificación:** ordenar los organismos en grupos;"
+    },
+    {
+      "id": "t15-q87",
+      "pregunta": "Se toma un aislado sin nombre y se cotejan su morfología y pruebas con descripciones de especies conocidas. ¿Qué tarea aborda el laboratorio?",
+      "opciones": [
+        "Identificación.",
+        "Nomenclatura de nuevas especies.",
+        "Formación de nuevos rangos taxonómicos."
+      ],
+      "correcta": 0,
+      "explicacion": "La identificación aplica criterios ya descritos para asignar un aislado desconocido a un grupo.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Diagnostic Identification · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "- **identificación:** usar esos criterios para saber qué organismo se tiene delante;"
+    },
+    {
+      "id": "t15-q88",
+      "pregunta": "Dos laboratorios coinciden en la identidad de un organismo, pero necesitan decidir qué nombre válido deben utilizar en sus informes. ¿Qué disciplina resuelve la cuestión planteada?",
+      "opciones": [
+        "Subtipificación epidemiológica.",
+        "Nomenclatura.",
+        "Aislamiento en cultivo puro."
+      ],
+      "correcta": 1,
+      "explicacion": "La nomenclatura regula el uso de los nombres. En este caso la identidad ya se ha establecido.",
+      "fuente": "LPSN (DSMZ), Nomenclature; Baron, Medical Microbiology, cap. 3 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "- **nomenclatura:** el nombre con que todos los microbiólogos designan lo mismo."
+    },
+    {
+      "id": "t15-q89",
+      "pregunta": "¿Qué parte falta para que «pneumophila» funcione como nombre binomial completo en este contexto?",
+      "opciones": [
+        "El nombre del género, Legionella.",
+        "Un código de cepa, que sustituye al nombre del género.",
+        "El nombre de la familia, escrito en lugar del epíteto."
+      ],
+      "correcta": 0,
+      "explicacion": "El nombre de una especie contiene el nombre del género y el epíteto específico. El epíteto aislado no forma el binomio.",
+      "fuente": "Código Internacional de Nomenclatura de Procariotas, regla 12a; LPSN (DSMZ), Nomenclature · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "**El nombre científico es binomial:** **género + epíteto específico**, por ejemplo *Escherichia coli*. La nomenclatura de los procariotas la rige el **Código Internacional de Nomenclatura de Procariotas**. Algas, hongos y plantas tienen el suyo."
+    },
+    {
+      "id": "t15-q90",
+      "pregunta": "Dos especies distintas están asignadas al mismo género. ¿Qué consecuencia tiene para los rangos que contienen ese género en la misma clasificación?",
+      "opciones": [
+        "Solo comparten un rango situado por debajo de especie.",
+        "Pueden compartir género y pertenecer al mismo tiempo a familias distintas en esa clasificación.",
+        "Comparten también la familia a la que pertenece el género."
+      ],
+      "correcta": 2,
+      "explicacion": "Los rangos están anidados. El género pertenece a una familia en la clasificación empleada y sus especies quedan incluidas en ella.",
+      "fuente": "LPSN (DSMZ), nomenclatura y rangos taxonómicos · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "**Los rangos**, de mayor a menor (LPSN): **dominio, reino, filo, clase, orden, familia, género y especie**."
+    },
+    {
+      "id": "t15-q91",
+      "pregunta": "En una ficha escriben una secuencia que pasa directamente de familia a clase. ¿Qué rango se ha omitido?",
+      "opciones": [
+        "Filo.",
+        "Orden.",
+        "Género."
+      ],
+      "correcta": 1,
+      "explicacion": "En el recorrido ascendente, la familia está dentro del orden y el orden dentro de la clase.",
+      "fuente": "LPSN (DSMZ), nomenclatura y rangos taxonómicos · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "**Los rangos**, de mayor a menor (LPSN): **dominio, reino, filo, clase, orden, familia, género y especie**."
+    },
+    {
+      "id": "t15-q92",
+      "pregunta": "Dos aislados presentan una morfología muy parecida y difieren claramente en parentesco genético. ¿Qué error entraña asimilarlos automáticamente a la misma especie?",
+      "opciones": [
+        "No comprobar que puedan cruzarse sexualmente y producir descendencia fértil.",
+        "Dar más importancia a su forma que al orden alfabético de sus nombres.",
+        "Usar solo la forma y omitir la evidencia de parentesco y el resto del fenotipo."
+      ],
+      "correcta": 2,
+      "explicacion": "La delimitación de especies bacterianas integra información fenotípica y genética. La forma por sí sola es poco resolutiva.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Species · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **La especie bacteriana** se define por **caracteres fenotípicos** (morfología, bioquímica) **y por su parentesco genético** (ADN)."
+    },
+    {
+      "id": "t15-q93",
+      "pregunta": "Dos aislados obtenidos de distintos huéspedes producen la misma toxina. ¿Qué conclusión permite ese dato por sí solo?",
+      "opciones": [
+        "Comparten el carácter estudiado y aún hacen falta otros datos para establecer si pertenecen a la misma especie.",
+        "Necesariamente son de la misma especie porque comparten un factor de virulencia.",
+        "Necesariamente pertenecen a especies distintas porque proceden de huéspedes diferentes."
+      ],
+      "correcta": 0,
+      "explicacion": "La producción de una toxina puede servir para caracterizar aislados. Un rasgo compartido no establece por sí solo la identidad de especie.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Classification and Subtyping · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **Un solo carácter**, por importante que sea (la patogenicidad, el huésped, una reacción), **no basta** para clasificar."
+    },
+    {
+      "id": "t15-q94",
+      "pregunta": "Dos muestras independientes dan aislados asignados a Escherichia coli. ¿Qué debe conservar el informe además del nombre de especie para compararlos después?",
+      "opciones": [
+        "Solo el nombre de la familia, que es más preciso que el de especie.",
+        "La identidad individual de cada aislado o cepa.",
+        "Una única ficha sin identificadores porque todos los aislados de la especie son la misma cepa."
+      ],
+      "correcta": 1,
+      "explicacion": "El nombre de especie sitúa a los dos aislados en un mismo grupo. Mantener sus identificadores permite distinguirlos en estudios posteriores.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Strains and Subtyping · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **Cepa:** un **aislado** concreto de una especie."
+    },
+    {
+      "id": "t15-q95",
+      "pregunta": "Un estudio de un brote ya sabe la especie bacteriana y compara antígenos entre aislados. ¿A qué tipo de tarea corresponde esa comparación?",
+      "opciones": [
+        "Serotipificación dentro de la especie.",
+        "Asignación de los aislados a un dominio distinto.",
+        "Cambio del epíteto específico por una fecha de aislamiento."
+      ],
+      "correcta": 0,
+      "explicacion": "La serotipificación usa diferencias antigénicas para caracterizar microorganismos por debajo del nivel de especie.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Subtyping · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **Por debajo de la especie** se distinguen **serotipos**, toxinas, **plásmidos** o **fagotipos**. Ejemplo: ***E. coli* O157:H7**, un serotipo patógeno."
+    },
+    {
+      "id": "t15-q96",
+      "pregunta": "¿Por qué un esquema con dos columnas, «con núcleo» y «sin núcleo», no reproduce por completo los tres dominios propuestos por Woese y colaboradores?",
+      "opciones": [
+        "Porque Fungi tendría que separarse de todos los organismos celulares.",
+        "Porque la columna con núcleo incluiría necesariamente a virus y priones.",
+        "Porque en la columna sin núcleo confluirían Bacteria y Archaea."
+      ],
+      "correcta": 2,
+      "explicacion": "La dicotomía describe un rasgo celular. Bacteria y Archaea comparten organización procariota y son dominios separados en la propuesta.",
+      "fuente": "Woese, Kandler y Wheelis, PNAS 87 (1990), 4576–4579, doi:10.1073/pnas.87.12.4576 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- **Woese, Kandler y Wheelis (1990)**, comparando moléculas, propusieron un nivel por encima del reino, el **dominio**, con **tres dominios**:"
+    },
+    {
+      "id": "t15-q97",
+      "pregunta": "Al colocar Fungi y Animalia como grupos hermanos en un esquema de los tres dominios, ¿bajo qué dominio se incluyen ambos en la propuesta de 1990?",
+      "opciones": [
+        "Archaea.",
+        "Eucarya.",
+        "Bacteria."
+      ],
+      "correcta": 1,
+      "explicacion": "La propuesta pone a los hongos y los animales dentro de Eucarya como reinos de organismos eucariotas.",
+      "fuente": "Woese, Kandler y Wheelis, PNAS 87 (1990), 4576–4579, doi:10.1073/pnas.87.12.4576 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- **Woese, Kandler y Wheelis (1990)**, comparando moléculas, propusieron un nivel por encima del reino, el **dominio**, con **tres dominios**:"
+    },
+    {
+      "id": "t15-q98",
+      "pregunta": "Un esquema basado solo en la forma externa reúne a arqueas y bacterias. ¿Qué tipo de dato hizo posible plantear el nivel de dominio que recoge la nota?",
+      "opciones": [
+        "La intensidad del pigmento de todas las colonias bajo la misma lámpara.",
+        "Solo el diámetro promedio medido al microscopio óptico.",
+        "Comparaciones de estructuras y secuencias moleculares que revelan parentesco."
+      ],
+      "correcta": 2,
+      "explicacion": "Las comparaciones moleculares mostraron separaciones evolutivas profundas entre las líneas celulares de la propuesta.",
+      "fuente": "Woese, Kandler y Wheelis, PNAS 87 (1990), 4576–4579, doi:10.1073/pnas.87.12.4576 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- **Woese, Kandler y Wheelis (1990)**, comparando moléculas, propusieron un nivel por encima del reino, el **dominio**, con **tres dominios**:"
+    },
+    {
+      "id": "t15-q99",
+      "pregunta": "Un bacteriófago contiene un genoma y se replica dentro de una bacteria. ¿Qué problema tiene asignarlo al dominio Bacteria por su hospedador?",
+      "opciones": [
+        "El criterio de dominio se aplica a linajes celulares y el fago es acelular.",
+        "El fago debe agruparse en Eucarya porque tiene ácido nucleico.",
+        "El fago pasa a pertenecer a Archaea al salir de la bacteria."
+      ],
+      "correcta": 0,
+      "explicacion": "Depender de una célula bacteriana no convierte al virus en un organismo celular de ese dominio.",
+      "fuente": "Woese, Kandler y Wheelis, PNAS 87 (1990), y Baron, Medical Microbiology, cap. 41 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- **Los virus y los priones no son células:** quedan fuera de los tres dominios."
+    },
+    {
+      "id": "t15-q100",
+      "pregunta": "Un micrografista señala una región rica en ADN sin envoltura nuclear en una bacteria. ¿Qué término corresponde a esa región?",
+      "opciones": [
+        "Vesícula de Golgi.",
+        "Nucleoide.",
+        "Nucléolo."
+      ],
+      "correcta": 1,
+      "explicacion": "El nucleoide contiene el material cromosómico bacteriano sin un límite formado por membrana nuclear.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cell Structure · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "| **Núcleo** | **Nucleoide**: ADN sin membrana nuclear | **Núcleo con membrana** |"
+    },
+    {
+      "id": "t15-q101",
+      "pregunta": "¿Qué observación distingue a un protozoo unicelular de una bacteria de tamaño parecido en un corte celular adecuado?",
+      "opciones": [
+        "Un núcleo delimitado por una envoltura nuclear.",
+        "La mera presencia de ADN.",
+        "La existencia de una membrana plasmática."
+      ],
+      "correcta": 0,
+      "explicacion": "Tanto bacterias como protozoos celulares tienen ADN y membrana plasmática. El núcleo rodeado por membrana es el rasgo eucariota de esta comparación.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cell Structure · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "| **Núcleo** | **Nucleoide**: ADN sin membrana nuclear | **Núcleo con membrana** |"
+    },
+    {
+      "id": "t15-q102",
+      "pregunta": "En una célula fotosintética se detecta clorofila. ¿Qué observación adicional apoya identificarla como alga eucariota frente a cianobacteria?",
+      "opciones": [
+        "La célula posee ribosomas y una membrana plasmática.",
+        "La clorofila está asociada a membranas fotosintéticas internas sin núcleo ni cloroplastos.",
+        "La clorofila se localiza en cloroplastos dentro de una célula con núcleo."
+      ],
+      "correcta": 2,
+      "explicacion": "Las algas eucariotas tienen núcleo y cloroplastos. Las cianobacterias también poseen clorofila, organizada en membranas propias sin cloroplastos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cell Structure; OMS, Toxic Cyanobacteria in Water, cap. 3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "| **Orgánulos con membrana** | **No**; la membrana plasmática hace sus funciones | **Sí**: mitocondrias, aparato de Golgi, cloroplastos en las algas |"
+    },
+    {
+      "id": "t15-q103",
+      "pregunta": "En dos preparaciones de pared bacteriana, una contiene ácidos teicoicos asociados a una capa gruesa de peptidoglicano. ¿Qué arquitectura apoya esa combinación?",
+      "opciones": [
+        "La típica de una membrana externa gramnegativa rica en lipopolisacárido.",
+        "La típica de las bacterias grampositivas.",
+        "La de un micoplasma sin pared de peptidoglicano."
+      ],
+      "correcta": 1,
+      "explicacion": "Los ácidos teicoicos asociados a peptidoglicano grueso son característicos de la envoltura grampositiva descrita.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Bacterial Cell Wall · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Grampositivas:** peptidoglicano grueso, con **ácidos teicoicos**."
+    },
+    {
+      "id": "t15-q104",
+      "pregunta": "En un esquema gramnegativo se ha dibujado el lipopolisacárido solo dentro del citoplasma. ¿Dónde debe situarse?",
+      "opciones": [
+        "Como parte principal de los ribosomas del citoplasma.",
+        "En la cara interna de la membrana nuclear.",
+        "En la cara externa de la membrana externa."
+      ],
+      "correcta": 2,
+      "explicacion": "El lipopolisacárido forma parte de la membrana externa de la envoltura gramnegativa.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cell Envelope · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Gramnegativas:** peptidoglicano fino y **membrana externa** con **lipopolisacárido**, la **endotoxina**."
+    },
+    {
+      "id": "t15-q105",
+      "pregunta": "Al comparar grampositivas y gramnegativas, una estudiante concluye que las gramnegativas carecen por completo de peptidoglicano. ¿Cómo se corrige?",
+      "opciones": [
+        "Su envoltura típica tiene una capa delgada de peptidoglicano y una membrana externa.",
+        "Su envoltura típica solo tiene una capa gruesa de quitina.",
+        "Todas las gramnegativas tienen el espesor de peptidoglicano mayor que las grampositivas."
+      ],
+      "correcta": 0,
+      "explicacion": "La diferencia típica es de espesor y arquitectura. Las gramnegativas sí poseen una capa de peptidoglicano.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cell Wall · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Gramnegativas:** peptidoglicano fino y **membrana externa** con **lipopolisacárido**, la **endotoxina**."
+    },
+    {
+      "id": "t15-q106",
+      "pregunta": "Un micoplasma cambia de contorno con facilidad al observarlo. ¿Qué rasgo estructural ayuda a explicarlo?",
+      "opciones": [
+        "La presencia de una cubierta de quitina formada por septos.",
+        "La ausencia de una pared rígida de peptidoglicano.",
+        "La acumulación de teicoicos en una pared especialmente gruesa."
+      ],
+      "correcta": 1,
+      "explicacion": "La pared de peptidoglicano aporta rigidez en las bacterias que la poseen. Los micoplasmas carecen de ella.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Wall-Less Forms · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Sin pared:** ***Mycoplasma***, los procariotas más pequeños (0,1-0,2 µm)."
+    },
+    {
+      "id": "t15-q107",
+      "pregunta": "Un mutante pierde fimbrias adhesivas y mantiene sus flagelos funcionales. ¿Qué función se espera que quede afectada más directamente?",
+      "opciones": [
+        "Anclarse a la superficie para la que eran adhesinas.",
+        "Almacenar el ADN en un núcleo membranoso.",
+        "Desplazarse exclusivamente por los flagelos que siguen funcionales."
+      ],
+      "correcta": 0,
+      "explicacion": "Las fimbrias adhesivas intervienen en la fijación a superficies. El giro de los flagelos se relaciona con motilidad.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Surface Structures · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **pili o fimbrias**, sobre todo en gramnegativas, para **adherirse**; los **pili sexuales** sirven a la **conjugación**;"
+    },
+    {
+      "id": "t15-q108",
+      "pregunta": "En un esquema, una estructura pone en contacto a dos células y facilita una transferencia genética por conjugación. ¿Qué estructura corresponde al ejemplo?",
+      "opciones": [
+        "Cápsula antifagocítica.",
+        "Endospora.",
+        "Pilus sexual."
+      ],
+      "correcta": 2,
+      "explicacion": "El pilus sexual participa en la aproximación y contacto necesarios para conjugación en los sistemas que lo emplean.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Pili · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **pili o fimbrias**, sobre todo en gramnegativas, para **adherirse**; los **pili sexuales** sirven a la **conjugación**;"
+    },
+    {
+      "id": "t15-q109",
+      "pregunta": "En el mismo ensayo se compara una cepa con cápsula antifagocítica y una derivada que la perdió. ¿Qué efecto es coherente con la pérdida de esa cápsula?",
+      "opciones": [
+        "La derivada pasa a formar necesariamente endosporas.",
+        "La derivada queda menos protegida frente a la fagocitosis.",
+        "La derivada adquiere una cápside vírica como mecanismo de protección."
+      ],
+      "correcta": 1,
+      "explicacion": "La cápsula descrita dificulta la eliminación por fagocitosis. Su pérdida elimina esa contribución a la protección.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Capsule · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **cápsula** de polisacárido, que **protege de la fagocitosis**."
+    },
+    {
+      "id": "t15-q110",
+      "pregunta": "Una célula de Bacillus forma una endospora que después germina y restaura una célula vegetativa. ¿Qué función explica esa secuencia?",
+      "opciones": [
+        "Sexualidad con la formación de gametos haploides.",
+        "Multiplicación de cuatro células en cada ciclo de esporulación.",
+        "Supervivencia durante condiciones desfavorables."
+      ],
+      "correcta": 2,
+      "explicacion": "La endospora es una estructura de resistencia. Una célula forma una endospora y al germinar se recupera una célula vegetativa.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Endospores · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Esporas:** ***Bacillus*** y ***Clostridium*** forman **endosporas**, células en reposo **resistentes al calor**."
+    },
+    {
+      "id": "t15-q111",
+      "pregunta": "Si se fracciona una bacteria y se recuperan sus ribosomas citoplasmáticos, ¿qué función se estudia con esa fracción?",
+      "opciones": [
+        "La síntesis de proteínas a partir de ARN mensajero.",
+        "El ensamblaje de la bicapa externa de un virus sin huésped.",
+        "La duplicación del genoma por la cápsula de polisacárido."
+      ],
+      "correcta": 0,
+      "explicacion": "Los ribosomas son la maquinaria de traducción. Los ribosomas citoplasmáticos bacterianos son del tipo 70S.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Cytoplasm · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Ribosomas 70S** en el citoplasma."
+    },
+    {
+      "id": "t15-q112",
+      "pregunta": "Un agente necesita células vivas para multiplicarse, pero la secuencia y los ribosomas muestran organización bacteriana. ¿Por qué esa dependencia no basta para llamarlo virus?",
+      "opciones": [
+        "La necesidad de un hospedador indica que el agente carece de ribosomas aunque se hayan detectado.",
+        "Existen bacterias intracelulares obligadas, como Chlamydia y Rickettsia.",
+        "Todos los organismos que necesitan un hospedador son hongos dimórficos."
+      ],
+      "correcta": 1,
+      "explicacion": "La dependencia del huésped se encuentra también en organismos celulares. Sus características celulares siguen siendo decisivas para clasificarlos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., secciones de Chlamydia y Rickettsia · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Casi todas viven libres.** Excepción: ***Chlamydia*** y ***Rickettsia***, **parásitos intracelulares obligados**."
+    },
+    {
+      "id": "t15-q113",
+      "pregunta": "Una enterobacteria crece tanto en aerobiosis como en condiciones sin oxígeno adecuadas para su metabolismo. ¿Qué término describe esa capacidad?",
+      "opciones": [
+        "Anaerobio facultativo.",
+        "Aerobio estricto.",
+        "Anaerobio estricto."
+      ],
+      "correcta": 0,
+      "explicacion": "Un anaerobio facultativo puede crecer con oxígeno y también crecer cuando falta si dispone de condiciones apropiadas.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., sección de enterobacterias, características generales · apunte §4",
+      "apartado": "4",
+      "evidencia": "| **Enterobacterias** (*E. coli*, *Citrobacter*, *Salmonella*, *Shigella*…) | **Gramnegativas, aerobias y anaerobias facultativas, fermentan azúcares** (1322, 2.º ejercicio, #11) |"
+    },
+    {
+      "id": "t15-q114",
+      "pregunta": "Un programa de observación ambiental halla amebas de vida libre dentro de una biopelícula. ¿Qué interacción explica por qué resulta de interés para Legionella?",
+      "opciones": [
+        "La interacción impide que Legionella esté presente en el agua cercana.",
+        "Las amebas transforman a Legionella en un virus de ADN.",
+        "La bacteria puede utilizar amebas como hospedadores para multiplicarse."
+      ],
+      "correcta": 2,
+      "explicacion": "La OMS describe protozoos de vida libre como hospedadores ambientales de Legionella, especialmente en biopelículas.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Legionella · apunte §4",
+      "apartado": "4",
+      "evidencia": "| ***Legionella*** | **Bacilo gramnegativo**, **sin esporas**, **móvil**. Vive en el suelo y el agua, **sobre todo dentro de amebas de vida libre en las biopelículas** |"
+    },
+    {
+      "id": "t15-q115",
+      "pregunta": "En términos de clasificación de manifestaciones, ¿cuál es la que se caracteriza por ausencia de neumonía?",
+      "opciones": [
+        "La enfermedad del legionario.",
+        "La fiebre de Pontiac.",
+        "Las dos se definen por ausencia de neumonía."
+      ],
+      "correcta": 1,
+      "explicacion": "La fiebre de Pontiac es la forma leve sin neumonía. La enfermedad del legionario sí cursa con neumonía.",
+      "fuente": "CDC, About Legionnaires’ Disease, cuadro de fiebre de Pontiac y enfermedad del legionario · apunte §4",
+      "apartado": "4",
+      "evidencia": "- la **fiebre de Pontiac**, leve y sin neumonía."
+    },
+    {
+      "id": "t15-q116",
+      "pregunta": "¿Por qué una torre de refrigeración es relevante para la propagación de Legionella cuando se reúnen las condiciones de crecimiento?",
+      "opciones": [
+        "Los seres humanos son el reservorio principal del agua de las torres.",
+        "Necesita que las personas ingieran el agua de la torre para dispersarla.",
+        "Puede dispersar pequeñas gotas procedentes de agua en la que creció la bacteria."
+      ],
+      "correcta": 2,
+      "explicacion": "Los aerosoles pueden transportar la bacteria desde un sistema de agua colonizado hasta las vías respiratorias.",
+      "fuente": "CDC, How Legionella Spreads, fuentes de exposición y aerosoles de sistemas de agua · apunte §4",
+      "apartado": "4",
+      "evidencia": "- Puede ser **el patógeno transmitido por el agua más importante en los países de renta alta**: sistemas de agua caliente, **torres de refrigeración**, spas."
+    },
+    {
+      "id": "t15-q117",
+      "pregunta": "Una placa nutritiva estéril recibe partículas de un virus purificado. El medio se mantiene a la temperatura habitual durante varios días. ¿Qué elemento falta para que se produzcan nuevos viriones?",
+      "opciones": [
+        "Células hospedadoras permisivas.",
+        "Glucosa adicional que permita generar ribosomas dentro del virión.",
+        "Una pared de peptidoglicano alrededor de cada partícula."
+      ],
+      "correcta": 0,
+      "explicacion": "Los virus requieren la maquinaria de células hospedadoras. Un medio nutritivo sin células no permite que se multipliquen por sí solos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, General Concepts · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **Parásitos intracelulares obligados:** **fuera de la célula son inertes**, **no generan energía** y dependen de la maquinaria de la célula huésped para multiplicarse."
+    },
+    {
+      "id": "t15-q118",
+      "pregunta": "La señal de un marcador viral aumenta en un cultivo celular y no aumenta en el medio estéril idéntico sin células. ¿Qué hipótesis apoya esta comparación en un ensayo controlado?",
+      "opciones": [
+        "El virión se divide por fisión binaria y luego incorpora las células sobrantes.",
+        "La producción de material viral depende de la presencia de células hospedadoras.",
+        "El virus se nutre del agar como un hongo saprófito."
+      ],
+      "correcta": 1,
+      "explicacion": "El medio sin células es un control de la dependencia celular. La replicación del virus requiere una célula susceptible y permisiva.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, General Concepts · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **Parásitos intracelulares obligados:** **fuera de la célula son inertes**, **no generan energía** y dependen de la maquinaria de la célula huésped para multiplicarse."
+    },
+    {
+      "id": "t15-q119",
+      "pregunta": "Se comparan en un ensayo cápsides vacías y viriones completos con la misma morfología exterior. ¿Por qué la presencia de una cubierta no demuestra por sí sola que una partícula sea infecciosa?",
+      "opciones": [
+        "La partícula necesita contener y poder entregar un genoma viral funcional.",
+        "La cubierta por sí sola contiene todos los ribosomas para sintetizar un genoma nuevo.",
+        "La infección depende solo del número de cápsides vacías y nunca de su contenido."
+      ],
+      "correcta": 0,
+      "explicacion": "La cápside puede conservar su aspecto aunque falte el genoma. El virión funcional debe introducir material genético que pueda iniciar la infección.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, Virion structure · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "- **Virión:** la partícula vírica completa e infecciosa. Su función es **introducir el genoma** en la célula."
+    },
+    {
+      "id": "t15-q120",
+      "pregunta": "El análisis de la partícula de un virus revela varios fragmentos separados de ARN que juntos forman su genoma. ¿Cómo se anota su organización?",
+      "opciones": [
+        "Genoma circular indivisible.",
+        "Genoma necesariamente bicatenario, por tener más de una pieza.",
+        "Genoma segmentado."
+      ],
+      "correcta": 2,
+      "explicacion": "La segmentación describe cuántas piezas componen el genoma. Es independiente de que cada segmento tenga una o dos hebras.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, The Viral Genome · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Ácido nucleico** | ADN o ARN; **monocatenario o bicatenario**; lineal o circular; de una pieza o **segmentado** |"
+    },
+    {
+      "id": "t15-q121",
+      "pregunta": "Un informe afirma que un genoma viral circular debe ser de ARN porque el ADN viral siempre es lineal. ¿Qué corrección corresponde?",
+      "opciones": [
+        "Todo genoma circular debe contener ADN y ARN como genomas simultáneos.",
+        "La geometría lineal o circular es un atributo diferente del tipo de ácido nucleico.",
+        "Solo el ARN bicatenario puede adoptar una organización circular."
+      ],
+      "correcta": 1,
+      "explicacion": "El tipo químico y la geometría son criterios estructurales distintos. Hay genomas virales de ADN circular.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, The Viral Genome · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Ácido nucleico** | ADN o ARN; **monocatenario o bicatenario**; lineal o circular; de una pieza o **segmentado** |"
+    },
+    {
+      "id": "t15-q122",
+      "pregunta": "Una micrografía de la cubierta de un virus muestra subunidades proteicas repetidas que encajan con una simetría reconocible. ¿Cómo se llaman en la descripción de la cápside?",
+      "opciones": [
+        "Proglótides.",
+        "Nucleoides.",
+        "Capsómeros."
+      ],
+      "correcta": 2,
+      "explicacion": "La cápside se organiza en unidades morfológicas repetidas denominadas capsómeros.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, Capsid and symmetry · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Cápside** | Cubierta de **proteínas** codificadas por el virus, hecha de subunidades (**capsómeros**). **Protege** el genoma y lo **fija a los receptores** de la célula |"
+    },
+    {
+      "id": "t15-q123",
+      "pregunta": "Se sigue el origen de los lípidos y de las espículas de una nueva partícula envuelta que sale por gemación. ¿Qué combinación típica se espera?",
+      "opciones": [
+        "Lípidos procedentes de membranas celulares y glucoproteínas codificadas por el virus.",
+        "Lípidos exclusivamente producidos fuera de la célula y espículas de peptidoglicano.",
+        "Ambos componentes formados por los ribosomas del virión en el medio externo."
+      ],
+      "correcta": 0,
+      "explicacion": "La bicapa se adquiere de una membrana de la célula. Las espículas virales se insertan en esa membrana durante la producción de partículas.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, The Viral Envelope · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Envoltura** (solo en algunos) | **Bicapa lipídica tomada de la membrana de la célula huésped**, con **glicoproteínas** víricas en forma de espículas |"
+    },
+    {
+      "id": "t15-q124",
+      "pregunta": "Una mutación cambia la proteína superficial responsable del reconocimiento del receptor, pero el genoma sigue protegido. ¿Qué etapa puede verse afectada directamente?",
+      "opciones": [
+        "La formación de endosporas como etapa obligatoria de infección.",
+        "La adhesión inicial a la célula susceptible.",
+        "La existencia de un núcleo delimitado dentro del virus."
+      ],
+      "correcta": 1,
+      "explicacion": "El contacto entre una proteína superficial viral y el receptor celular precede a la entrada. El hecho de conservar el genoma no garantiza ese contacto.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, Capsid and receptor interaction · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Cápside** | Cubierta de **proteínas** codificadas por el virus, hecha de subunidades (**capsómeros**). **Protege** el genoma y lo **fija a los receptores** de la célula |"
+    },
+    {
+      "id": "t15-q125",
+      "pregunta": "Las subunidades proteicas rodean el ácido nucleico siguiendo una hélice. ¿Qué descripción corresponde a esa arquitectura de la cápside?",
+      "opciones": [
+        "Simetría helicoidal.",
+        "Simetría icosaédrica regular.",
+        "Estructura necesariamente segmentada en proglótides."
+      ],
+      "correcta": 0,
+      "explicacion": "La simetría helicoidal describe la disposición repetida de proteínas en espiral alrededor del ácido nucleico.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, Capsid Symmetry · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "- **helicoidal**: las proteínas en hélice alrededor del ácido nucleico, como en el virus del mosaico del tabaco;"
+    },
+    {
+      "id": "t15-q126",
+      "pregunta": "En una partícula viral se retira experimentalmente la bicapa con sus proteínas. Quedan un genoma y su cubierta proteica intactos. ¿Qué estructura queda?",
+      "opciones": [
+        "Un nucleoide unido a cloroplastos.",
+        "Una endospora desprovista de pared.",
+        "La nucleocápside."
+      ],
+      "correcta": 2,
+      "explicacion": "La nucleocápside reúne el ácido nucleico y la cápside. La envoltura es una capa adicional de algunos virus.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, Virion Structure · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Envoltura** (solo en algunos) | **Bicapa lipídica tomada de la membrana de la célula huésped**, con **glicoproteínas** víricas en forma de espículas |"
+    },
+    {
+      "id": "t15-q127",
+      "pregunta": "En un experimento se comparan dos virus con la misma diana de cultivo, uno envuelto y otro desnudo. ¿Qué componente ofrece un blanco directo a un disolvente de lípidos en el envuelto?",
+      "opciones": [
+        "Su genoma como porción lipídica principal.",
+        "Su envoltura de bicapa lipídica.",
+        "La pared de quitina situada fuera de su cápside."
+      ],
+      "correcta": 1,
+      "explicacion": "El disolvente actúa sobre el componente lipídico de la envoltura. El genoma y la cápside son estructuras de naturaleza distinta.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 41, The Viral Envelope, lipid solvents · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| **Envoltura** (solo en algunos) | **Bicapa lipídica tomada de la membrana de la célula huésped**, con **glicoproteínas** víricas en forma de espículas |"
+    },
+    {
+      "id": "t15-q128",
+      "pregunta": "Dos virus tienen una forma parecida, pero uno contiene ADN bicatenario y el otro ARN bicatenario. ¿Qué distingue sus grupos de Baltimore?",
+      "opciones": [
+        "La posición alfabética del nombre de familia.",
+        "Solo el organismo en el que se aislaron.",
+        "La naturaleza del genoma y la vía para generar ARN mensajero."
+      ],
+      "correcta": 2,
+      "explicacion": "El esquema de Baltimore ordena los virus por material genómico y estrategia de expresión. La forma por sí sola no determina ese grupo.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupos I–VII · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- su **composición química**: tipo de ácido nucleico;\n- su **modo de replicación**."
+    },
+    {
+      "id": "t15-q129",
+      "pregunta": "En un sistema experimental, el ARN monocatenario de un virus puede actuar directamente como mensajero. ¿Qué describe esa polaridad?",
+      "opciones": [
+        "Sentido positivo.",
+        "Sentido negativo.",
+        "Doble hebra por definición."
+      ],
+      "correcta": 0,
+      "explicacion": "El ARN de polaridad positiva puede leerse en la traducción con la orientación de un ARNm.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupos IV y V · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- **de sentido positivo**, si sirve directamente como ARN mensajero;"
+    },
+    {
+      "id": "t15-q130",
+      "pregunta": "Entra un virus con genoma de ARN monocatenario de sentido negativo. ¿Qué debe generar antes de que se traduzcan los genes del genoma entrante?",
+      "opciones": [
+        "Una pared de peptidoglucano que marque el inicio de la traducción.",
+        "ARN mensajero complementario de sentido positivo.",
+        "Otro ARN negativo para que el ribosoma lea el original."
+      ],
+      "correcta": 1,
+      "explicacion": "Una ARN polimerasa dependiente de ARN genera transcritos con la orientación que pueden leer los ribosomas.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupo V · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- **de sentido negativo**, si antes hay que copiar su hebra complementaria."
+    },
+    {
+      "id": "t15-q131",
+      "pregunta": "¿Por qué un virión de ARN monocatenario negativo necesita aportar la actividad de una polimerasa desde el comienzo de la infección?",
+      "opciones": [
+        "Su genoma entrante no se traduce directamente y debe servir como molde para producir ARNm.",
+        "El ARN negativo pierde cualquier capacidad de servir de molde al entrar en la célula.",
+        "La célula hospedadora necesita construir primero una cápsula bacteriana."
+      ],
+      "correcta": 0,
+      "explicacion": "Los genes virales se expresan luego de producir ARN de sentido positivo. La polimerasa del virión puede transcribir el genoma entrante.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupo V · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- **de sentido negativo**, si antes hay que copiar su hebra complementaria."
+    },
+    {
+      "id": "t15-q132",
+      "pregunta": "El genoma que lleva una partícula es ADN de una sola hebra y el ciclo no incluye retrotranscripción. ¿Qué grupo corresponde?",
+      "opciones": [
+        "VII.",
+        "III.",
+        "II."
+      ],
+      "correcta": 2,
+      "explicacion": "El grupo II reúne virus que empaquetan ADN monocatenario. El grupo VII usa ADN con una etapa de retrotranscripción.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupo II · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| I | ADN bicatenario |\n| II | ADN monocatenario |\n| III | ARN bicatenario |"
+    },
+    {
+      "id": "t15-q133",
+      "pregunta": "Un laboratorio clasifica un virus con genoma constituido por segmentos de ARN de doble hebra. ¿Qué grupo corresponde aunque el genoma se reparta en varias piezas?",
+      "opciones": [
+        "IV.",
+        "III.",
+        "V."
+      ],
+      "correcta": 1,
+      "explicacion": "El grupo III se reconoce por ARN bicatenario. La segmentación no transforma los segmentos en ARN monocatenario positivo ni negativo.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupo III · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| II | ADN monocatenario |\n| III | ARN bicatenario |\n| IV | ARN monocatenario positivo |"
+    },
+    {
+      "id": "t15-q134",
+      "pregunta": "El virión empaqueta ARN y durante la replicación se forma ADN por transcriptasa inversa. ¿Qué grupo de Baltimore reúne esta estrategia?",
+      "opciones": [
+        "VII.",
+        "IV.",
+        "VI."
+      ],
+      "correcta": 2,
+      "explicacion": "El grupo VI parte de un genoma de ARN en el virión y usa retrotranscripción. El grupo VII lleva ADN en el virión.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupos VI y VII · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| VI | ARN con retrotranscripción |"
+    },
+    {
+      "id": "t15-q135",
+      "pregunta": "Se detecta ADN en la partícula madura, pero la síntesis de nuevos genomas pasa por una fase en la que se copia ARN a ADN. ¿Qué grupo se ajusta al ciclo completo?",
+      "opciones": [
+        "VII.",
+        "I, por el ADN con independencia del ciclo.",
+        "VI, porque todo virus con retrotranscripción empaqueta ARN."
+      ],
+      "correcta": 0,
+      "explicacion": "La clasificación tiene en cuenta el genoma de la partícula y la estrategia de replicación. La combinación ADN en virión y retrotranscripción corresponde al grupo VII.",
+      "fuente": "ViralZone (SIB), Baltimore classification, grupos I y VII · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| VII | ADN con retrotranscripción |"
+    },
+    {
+      "id": "t15-q136",
+      "pregunta": "Un índice mezcla las entradas Adenoviridae y un género terminado en -virus. ¿Qué indica el sufijo de Adenoviridae en el código del ICTV?",
+      "opciones": [
+        "Que describe una clase de Baltimore.",
+        "Que es el nombre de una familia.",
+        "Que es necesariamente un orden."
+      ],
+      "correcta": 1,
+      "explicacion": "El código usa el sufijo -viridae para las familias. La clasificación de Baltimore se expresa con grupos numerados.",
+      "fuente": "ICTV, International Code of Virus Classification and Nomenclature, reglas de los rangos · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Niveles:** orden, **familia (-viridae)**, subfamilia (-virinae), **género (-virus)** y especie."
+    },
+    {
+      "id": "t15-q137",
+      "pregunta": "En una lista con Roniviridae y Okanivirinae, ¿qué relación de rango señalan sus terminaciones?",
+      "opciones": [
+        "Roniviridae tiene rango de familia y Okanivirinae, de subfamilia.",
+        "Los dos nombres indican rango de género.",
+        "El primero es una subfamilia y el segundo es un orden."
+      ],
+      "correcta": 0,
+      "explicacion": "El código usa -viridae para familia y -virinae para subfamilia.",
+      "fuente": "ICTV, International Code of Virus Classification and Nomenclature, nombres de taxones · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "**Niveles:** orden, **familia (-viridae)**, subfamilia (-virinae), **género (-virus)** y especie."
+    },
+    {
+      "id": "t15-q138",
+      "pregunta": "Dos investigadores anotan el grupo IV de Baltimore para dos virus. ¿Qué dato aún no se puede deducir solo de esa anotación?",
+      "opciones": [
+        "Que comparten la clase de genoma usada en esa agrupación.",
+        "Que los dos tienen ARN monocatenario de sentido positivo.",
+        "Que ambos pertenecen a la misma familia del ICTV."
+      ],
+      "correcta": 2,
+      "explicacion": "Baltimore clasifica por estrategia genómica. Diferentes familias pueden tener el mismo grupo.",
+      "fuente": "ICTV, International Code of Virus Classification and Nomenclature; ViralZone (SIB), Baltimore classification · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "- su **composición química**: tipo de ácido nucleico;"
+    },
+    {
+      "id": "t15-q139",
+      "pregunta": "Un catálogo de virus relacionados con contaminación fecal del agua elimina hepatitis A y E porque su manifestación principal es hepática. ¿Qué dato es pertinente para corregir el catálogo?",
+      "opciones": [
+        "La clasificación como entérico exige que todos los síntomas se limiten al intestino.",
+        "Ambos pueden transmitirse por vía fecal-oral a través de agua contaminada.",
+        "Ambos son bacterias que forman colonias en agar sin células."
+      ],
+      "correcta": 1,
+      "explicacion": "La vía de transmisión y el órgano donde se manifiesta la enfermedad son aspectos distintos. El agua contaminada puede transmitir estos virus.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, virus de las hepatitis A y E · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- **Virus entéricos:** se transmiten por **ingestión de agua contaminada** e infectan primero el tubo digestivo. Ejemplos: **adenovirus**, **norovirus**, **rotavirus**, enterovirus, virus de las **hepatitis A y E**."
+    },
+    {
+      "id": "t15-q140",
+      "pregunta": "En una evaluación de eficacia de radiación UV se elige un virus de referencia exigente por su resistencia documentada. ¿Cuál encaja según la ficha del agua?",
+      "opciones": [
+        "Un nematodo adulto etiquetado como virión.",
+        "Un coliforme etiquetado como virus por crecer en agar.",
+        "Adenovirus humano."
+      ],
+      "correcta": 2,
+      "explicacion": "Los adenovirus se distinguen entre los virus del agua por su resistencia relativamente alta a la radiación UV.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, adenovirus · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- **El adenovirus humano** tiene **ADN bicatenario**, **sin envoltura**, en una cápside **icosaédrica de 90-100 nm**. Está entre los patógenos del agua **más resistentes a la luz ultravioleta**."
+    },
+    {
+      "id": "t15-q141",
+      "pregunta": "Se intenta reconocer un adenovirus humano combinando morfología y genoma. ¿Qué ficha es compatible con ese virus?",
+      "opciones": [
+        "ADN bicatenario y cápside icosaédrica, sin envoltura.",
+        "ARN monocatenario positivo y cápside helicoidal con envoltura.",
+        "ARN bicatenario en un organismo con núcleo y citoplasma."
+      ],
+      "correcta": 0,
+      "explicacion": "La ficha del adenovirus combina ADN de doble hebra, cápside icosaédrica y ausencia de envoltura.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, adenovirus · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- **El adenovirus humano** tiene **ADN bicatenario**, **sin envoltura**, en una cápside **icosaédrica de 90-100 nm**. Está entre los patógenos del agua **más resistentes a la luz ultravioleta**."
+    },
+    {
+      "id": "t15-q142",
+      "pregunta": "Una E. coli experimental pierde el pili F, pero conserva el receptor de superficie de un colífago somático de interés. ¿Qué vía de infección sigue siendo posible en principio?",
+      "opciones": [
+        "Ninguna vía de infección por fagos si la bacteria no tiene cloroplastos.",
+        "La de ese colífago somático, cuyo receptor se conserva.",
+        "Solo la del colífago F-ARN que depende del pili perdido."
+      ],
+      "correcta": 1,
+      "explicacion": "El somático usa un receptor de superficie diferente del pili F. Los F-ARN requieren el pili compatible.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, indicadores víricos (colífagos) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "| **Cómo infectan** | Se fijan a **receptores de la pared** de la bacteria | Se fijan a las **fimbrias sexuales (F)** |"
+    },
+    {
+      "id": "t15-q143",
+      "pregunta": "En una capa de bacterias hospedadoras aparecen zonas de lisis atribuibles al ensayo de colífagos somáticos. ¿Qué unidad registra esas zonas infecciosas en el resultado?",
+      "opciones": [
+        "UFP, unidades formadoras de placas.",
+        "UFC, unidades formadoras de colonias bacterianas.",
+        "µg/L, masa de cápside por litro."
+      ],
+      "correcta": 0,
+      "explicacion": "El ensayo contabiliza placas de lisis en un cultivo hospedador. Se informa en unidades formadoras de placas.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte C, parámetro 40; UNE-EN ISO 10705-2 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **Colífagos somáticos**, parámetro indicador: **0 UFP/100 mL**. **UFP: unidades formadoras de placas.**"
+    },
+    {
+      "id": "t15-q144",
+      "pregunta": "Un informe multiplica el recuento de colífagos por un factor fijo para declarar la cantidad de norovirus del agua. ¿Qué limitación invalida la conversión sin estudios adicionales?",
+      "opciones": [
+        "El recuento de placas de colífagos mide masa total de norovirus de forma directa.",
+        "Ambos son la misma partícula cuando están en agua y el factor debe ser siempre uno.",
+        "El colífago es un indicador y su número no tiene una correspondencia fija con el de norovirus."
+      ],
+      "correcta": 2,
+      "explicacion": "El comportamiento del indicador sirve de referencia para ciertos aspectos de la contaminación o el tratamiento. Su recuento no identifica ni cuantifica un virus entérico específico.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, colífagos · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **Pero no hay correlación directa** con el número de virus entéricos: su ausencia no garantiza que no haya virus."
+    },
+    {
+      "id": "t15-q145",
+      "pregunta": "Aparecen colífagos somáticos en el agua tratada. Además de medidas correctoras inmediatas, ¿qué actuación indica la nota 3 cuando sea factible?",
+      "opciones": [
+        "Un recuento de micotoxinas con un método para hongos.",
+        "Una evaluación cuantitativa del riesgo microbiológico vírico conforme a los criterios de la OMS.",
+        "Una evaluación que sustituya todas las medidas correctoras iniciales."
+      ],
+      "correcta": 1,
+      "explicacion": "La nota 3 contempla una evaluación del riesgo vírico si es factible. Las medidas correctoras corresponden en paralelo.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte C, nota 3, texto consolidado · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **Si aparecen en el agua tratada**, además de corregir, el operador debe hacer una **evaluación cuantitativa del riesgo microbiológico vírico** según la OMS."
+    },
+    {
+      "id": "t15-q146",
+      "pregunta": "Un resultado de la toma de captación es exactamente de 50 UFP/100 mL. ¿Se cumple por esa cifra la condición estricta de la nota de control que pide superar 50?",
+      "opciones": [
+        "Sí, y 50 es también el valor paramétrico general del agua tratada.",
+        "Sí, igualar 50 cumple una condición escrita como «superior a 50».",
+        "No, debe darse un valor superior a 50 UFP/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "El texto del control operacional usa un umbral estricto en la captación. El valor paramétrico del agua de consumo figura aparte en el anexo I.",
+      "fuente": "Real Decreto 3/2023, anexo II, parte B, punto 5.c, control operacional · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **En la captación**, si superan **50 UFP/100 mL**, se controlan otros parámetros a la salida del tratamiento."
+    },
+    {
+      "id": "t15-q147",
+      "pregunta": "En una toma de captación se expresan 620 UFP/L de colífagos somáticos. ¿Cómo queda el dato convertido respecto al umbral operacional de 50 UFP/100 mL?",
+      "opciones": [
+        "Son 62 UFP/100 mL y superan el umbral.",
+        "Son 6,2 UFP/100 mL y quedan por debajo.",
+        "Son 620 UFP/100 mL y equivalen al umbral."
+      ],
+      "correcta": 0,
+      "explicacion": "Un litro contiene diez porciones de 100 mL. Se divide el valor por litro entre diez antes de compararlo.",
+      "fuente": "Real Decreto 3/2023, anexo II, parte B, punto 5.c, control operacional · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **En la captación**, si superan **50 UFP/100 mL**, se controlan otros parámetros a la salida del tratamiento."
+    },
+    {
+      "id": "t15-q148",
+      "pregunta": "Para evaluar el paso de partículas víricas por una barrera de tratamiento se compara E. coli con sus fagos. ¿Qué característica hace de los fagos un modelo más próximo para ese propósito?",
+      "opciones": [
+        "Forman quistes con cloroplastos que atraviesan la barrera.",
+        "Son partículas víricas y comparten rasgos estructurales y de comportamiento con otros virus.",
+        "Su pared de peptidoglicano es más gruesa que la de E. coli."
+      ],
+      "correcta": 1,
+      "explicacion": "Los fagos permiten estudiar rasgos de partículas víricas. El modelo no implica idéntica respuesta de cada fago y virus humano.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, colífagos · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- Se parecen a los virus humanos en **composición, forma, estructura y replicación**. Por eso sirven de **modelo del comportamiento de los virus entéricos** en el agua y frente al tratamiento, **mejor que las bacterias fecales**."
+    },
+    {
+      "id": "t15-q149",
+      "pregunta": "Se ha elegido un método de coliformes para un encargo de enumeración de colífagos somáticos. ¿Qué referencia corresponde al objetivo encargado?",
+      "opciones": [
+        "UNE-EN ISO 10705-2.",
+        "UNE-EN ISO 9308-1, usada para coliformes y E. coli.",
+        "UNE-EN ISO 6222, usada para recuento de microorganismos cultivables."
+      ],
+      "correcta": 0,
+      "explicacion": "El encargo se refiere a fagos somáticos. Se requiere el método indicado para ese grupo, distinto del recuento de sus hospedadores bacterianos.",
+      "fuente": "Real Decreto 3/2023, anexo III, parte C, punto 1.f; UNE-EN ISO 10705-2 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **En la captación**, si superan **50 UFP/100 mL**, se controlan otros parámetros a la salida del tratamiento.\n- **Método:** **UNE-EN ISO 10705-2**."
+    },
+    {
+      "id": "t15-q150",
+      "pregunta": "Se diseña una prueba de amplificación de genomas para todos los agentes acelulares, incluidos los priones. ¿Qué obstáculo específico presenta ese último grupo?",
+      "opciones": [
+        "Solo contiene ADN circular con pared de quitina.",
+        "Su genoma alterna obligatoriamente entre ADN y ARN en cada partícula.",
+        "No tiene un ácido nucleico infeccioso propio que pueda servir de diana equivalente a la de un virus."
+      ],
+      "correcta": 2,
+      "explicacion": "El agente priónico se asocia a una proteína mal plegada. Puede existir un gen del hospedador sin que el agente contenga un genoma propio.",
+      "fuente": "CDC/NIH, BMBL, 6.ª ed., sección VIII-H, Prion Diseases · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- **Proteínas infecciosas sin ácido nucleico** demostrable."
+    },
+    {
+      "id": "t15-q151",
+      "pregunta": "¿Qué asociación entre una enfermedad animal y humana está documentada para los priones?",
+      "opciones": [
+        "Scrapie y legionelosis humana por el mismo agente.",
+        "Encefalopatía espongiforme bovina y variante de la enfermedad de Creutzfeldt-Jakob.",
+        "Criptosporidiosis animal y fiebre de Pontiac humana por el mismo agente."
+      ],
+      "correcta": 1,
+      "explicacion": "La variante de Creutzfeldt-Jakob se ha vinculado a exposición a productos bovinos contaminados con el agente de la encefalopatía espongiforme bovina.",
+      "fuente": "CDC, About Prion Diseases, enfermedad bovina y variante de Creutzfeldt-Jakob · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- Causan **encefalopatías espongiformes transmisibles**: Creutzfeldt-Jakob y kuru en personas, encefalopatía espongiforme bovina, *scrapie* en ovejas."
+    },
+    {
+      "id": "t15-q152",
+      "pregunta": "Un procedimiento se validó frente a bacterias vegetativas y se quiere extrapolar a instrumental contaminado con priones. ¿Qué dato invalida esa equivalencia automática?",
+      "opciones": [
+        "Validar una reducción de bacterias equivale a medir directamente la infectividad priónica.",
+        "Los priones siempre desaparecen antes que cualquier bacteria vegetativa en el mismo ciclo.",
+        "Los priones presentan resistencia especial a tratamientos químicos y físicos y exigen procedimientos validados para ellos."
+      ],
+      "correcta": 2,
+      "explicacion": "Un ciclo validado contra un grupo no demuestra por sí solo la inactivación de otro agente con resistencia diferente.",
+      "fuente": "CDC/NIH, BMBL, 6.ª ed., sección VIII-H, inactivación · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- **Son muy resistentes** a los agentes químicos y físicos."
+    },
+    {
+      "id": "t15-q153",
+      "pregunta": "Un moho crece en un sustrato con polímeros grandes que no entran directamente en sus células. ¿Qué mecanismo nutricional explica el aprovechamiento del sustrato?",
+      "opciones": [
+        "Liberar enzimas que fragmentan las moléculas fuera de la célula y absorber los productos.",
+        "Introducir intacto el sustrato por la cápside y digerirlo en un virión.",
+        "Transportar clorofila al exterior para convertir el sustrato en luz."
+      ],
+      "correcta": 0,
+      "explicacion": "Los hongos obtienen moléculas más pequeñas mediante digestión extracelular y las absorben a través de su envoltura.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Yeasts and Molds · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Nutrición por absorción:** liberan **enzimas** que digieren el sustrato **fuera de la célula** y absorben los productos. Viven como **saprófitos** (de materia muerta), **parásitos** o las dos cosas."
+    },
+    {
+      "id": "t15-q154",
+      "pregunta": "Un hongo libera enzimas sobre restos vegetales sin que haya tejido vivo de un hospedador. ¿Qué relación con la fuente de nutrientes describe el ejemplo?",
+      "opciones": [
+        "Producción autótrofa mediante cloroplastos en la hifa.",
+        "Crecimiento saprófito sobre materia orgánica muerta.",
+        "Parasitismo intracelular obligado en células vegetales vivas."
+      ],
+      "correcta": 1,
+      "explicacion": "El saprófito obtiene nutrientes de materia orgánica muerta. El crecimiento sobre restos puede darse sin un huésped vivo.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Yeasts and Molds · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Nutrición por absorción:** liberan **enzimas** que digieren el sustrato **fuera de la célula** y absorben los productos. Viven como **saprófitos** (de materia muerta), **parásitos** o las dos cosas."
+    },
+    {
+      "id": "t15-q155",
+      "pregunta": "Una cepa fúngica pierde la capacidad para secretar la enzima que degrada el único polímero del medio. ¿En qué medio podría recuperarse su crecimiento si conserva la absorción de los productos de esa enzima?",
+      "opciones": [
+        "En un medio que proporcione directamente los productos pequeños de la degradación.",
+        "En el mismo medio con más cantidad del polímero intacto y sin otra fuente de nutrientes.",
+        "En agua destilada con luz, aunque carece de cloroplastos."
+      ],
+      "correcta": 0,
+      "explicacion": "Proporcionar los productos de la digestión permite que la absorción funcione aunque la cepa no pueda obtenerlos del polímero por sí sola.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Yeasts and Molds · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Nutrición por absorción:** liberan **enzimas** que digieren el sustrato **fuera de la célula** y absorben los productos. Viven como **saprófitos** (de materia muerta), **parásitos** o las dos cosas."
+    },
+    {
+      "id": "t15-q156",
+      "pregunta": "Se estudia la pared de un hongo en un medio con cambios de presión osmótica. ¿Qué función cumple esa estructura además de conservar la forma?",
+      "opciones": [
+        "Convertirse en un núcleo al comenzar la gemación.",
+        "Sustituir los ribosomas de la célula en la síntesis de proteínas.",
+        "Contribuir a evitar la lisis osmótica y proteger de lesiones mecánicas."
+      ],
+      "correcta": 2,
+      "explicacion": "La pared fúngica aporta soporte y resistencia mecánica. También limita la expansión celular frente a la entrada osmótica de agua.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Cell Wall · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Pared con quitina**, que **no tienen** las células animales ni vegetales."
+    },
+    {
+      "id": "t15-q157",
+      "pregunta": "Se marca con un colorante la pared antigua de una hifa. Durante el crecimiento aparece pared nueva en uno de sus extremos. ¿Qué forma de extensión ilustra ese resultado?",
+      "opciones": [
+        "Alargamiento uniforme de una cápside viral.",
+        "Crecimiento apical de la hifa.",
+        "Producción de cloroplastos solo en el centro de la hifa."
+      ],
+      "correcta": 1,
+      "explicacion": "En una hifa, la extensión característica ocurre en la punta, donde se organizan los materiales de pared nueva.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Hyphal and Yeast Morphogenesis · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Células** | **Hifas**: filamentos cuyo conjunto es el **micelio** | **Unicelulares** |"
+    },
+    {
+      "id": "t15-q158",
+      "pregunta": "En una preparación de moho se quiere etiquetar un solo filamento y también toda la red de filamentos entrelazados. ¿Cuál es el par de términos correspondiente?",
+      "opciones": [
+        "Conidio y cápside.",
+        "Micelio y hifa.",
+        "Hifa y micelio."
+      ],
+      "correcta": 2,
+      "explicacion": "La hifa es el filamento. El micelio comprende el conjunto de hifas de la estructura vegetativa observada.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Hyphal and Yeast Morphogenesis · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Células** | **Hifas**: filamentos cuyo conjunto es el **micelio** | **Unicelulares** |"
+    },
+    {
+      "id": "t15-q159",
+      "pregunta": "Al seguir un filamento fúngico se observan tabiques transversales repetidos. ¿Cómo se describe su organización?",
+      "opciones": [
+        "Hifa septada.",
+        "Hifa cenocítica por definición.",
+        "Serie de viriones segmentados."
+      ],
+      "correcta": 0,
+      "explicacion": "Los septos son tabiques que subdividen la hifa. Su presencia es la base del término septada.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Vegetative Structures · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Detalle** | Hifas **septadas** (con tabiques) o **cenocíticas** (sin tabiques, multinucleadas) | Se reproducen **por gemación** |"
+    },
+    {
+      "id": "t15-q160",
+      "pregunta": "En una sección se observan varios núcleos en un citoplasma hifal continuo entre las regiones examinadas. ¿Qué organización concuerda con esos rasgos?",
+      "opciones": [
+        "Un filamento bacteriano necesariamente formado por células sin núcleo.",
+        "Una hifa cenocítica en la región observada.",
+        "Una colonia de levaduras independientes, cada una con una pared completa."
+      ],
+      "correcta": 1,
+      "explicacion": "El término cenocítico describe el citoplasma compartido entre múltiples núcleos sin septos que lo separen en esa región.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Vegetative Structures · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Detalle** | Hifas **septadas** (con tabiques) o **cenocíticas** (sin tabiques, multinucleadas) | Se reproducen **por gemación** |"
+    },
+    {
+      "id": "t15-q161",
+      "pregunta": "En un vídeo, de una célula fúngica sale una protuberancia que crece y acaba separándose como célula hija. ¿Qué rasgo permite reconocer el mecanismo?",
+      "opciones": [
+        "La célula hija se desarrolla como una yema de la célula madre.",
+        "Las dos células se forman siempre por un tabique central que divide mitades iguales.",
+        "La célula madre forma cuatro productos de una meiosis."
+      ],
+      "correcta": 0,
+      "explicacion": "La gemación comienza con una prolongación de la célula madre. Las dos no nacen por división simétrica del volumen.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Asexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Detalle** | Hifas **septadas** (con tabiques) o **cenocíticas** (sin tabiques, multinucleadas) | Se reproducen **por gemación** |"
+    },
+    {
+      "id": "t15-q162",
+      "pregunta": "Se observa Histoplasma en forma filamentosa en el ambiente y como levadura en el huésped. ¿Qué interpretación mantiene su identidad biológica?",
+      "opciones": [
+        "La forma de levadura corresponde a un virión sin célula.",
+        "La forma ambiental es una bacteria y la del huésped se convierte en un eucariota de otra especie.",
+        "Son formas de crecimiento distintas del mismo hongo, compatibles con dimorfismo."
+      ],
+      "correcta": 2,
+      "explicacion": "El dimorfismo permite adoptar morfologías distintas en condiciones diferentes. El ambiente y el huésped favorecen formas distintas de este hongo.",
+      "fuente": "CDC, How People Get Histoplasmosis; Baron, Medical Microbiology, cap. 73, Dimorphism · apunte §6",
+      "apartado": "6",
+      "evidencia": "**Hongos dimórficos:** crecen como **micelio en la naturaleza** y como **levadura en el cuerpo**. Ejemplo: ***Candida***."
+    },
+    {
+      "id": "t15-q163",
+      "pregunta": "Al comparar dos condiciones para un mismo aislado de Candida albicans aparecen células levaduriformes en una y estructuras filamentosas en la otra. ¿Qué decisión es razonable al interpretarlas?",
+      "opciones": [
+        "Identificar automáticamente una bacteria distinta solo porque aparecen filamentos.",
+        "Considerar la plasticidad morfológica del aislado antes de concluir que hay dos organismos.",
+        "Clasificar todas las formas de Candida exclusivamente por el número de núcleos de un virión."
+      ],
+      "correcta": 1,
+      "explicacion": "C. albicans puede cambiar de forma con las condiciones de crecimiento. La morfología filamentosa por sí sola no prueba una segunda especie.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, figura Dimorphism in C. albicans · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Ejemplos** | *Aspergillus*, *Penicillium* | *Candida*, *Cryptococcus* |"
+    },
+    {
+      "id": "t15-q164",
+      "pregunta": "En el ciclo de un hongo se documenta fusión nuclear y luego meiosis. ¿Qué proceso de los estudiados corresponde a la secuencia?",
+      "opciones": [
+        "Gemación asexual de una levadura.",
+        "Fragmentación vegetativa de una hifa.",
+        "Reproducción sexual."
+      ],
+      "correcta": 2,
+      "explicacion": "La fusión nuclear y la meiosis son procesos del ciclo sexual. La gemación y la fragmentación no exigen esa secuencia.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Sexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Sexual:** fusión de dos núcleos y meiosis. Da cuatro tipos de esporas sexuales: **oosporas, zigosporas, ascosporas y basidiosporas**."
+    },
+    {
+      "id": "t15-q165",
+      "pregunta": "En un cultivo se identifican esporas sexuales formadas dentro de un asco. ¿Cómo se denomina ese producto?",
+      "opciones": [
+        "Ascosporas.",
+        "Conidios.",
+        "Endosporas bacterianas."
+      ],
+      "correcta": 0,
+      "explicacion": "Las ascosporas se desarrollan en el asco después de la etapa sexual. Los conidios son estructuras asexuales.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Sexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Sexual:** fusión de dos núcleos y meiosis. Da cuatro tipos de esporas sexuales: **oosporas, zigosporas, ascosporas y basidiosporas**."
+    },
+    {
+      "id": "t15-q166",
+      "pregunta": "Si se observan esporas sexuales producidas sobre un basidio, ¿qué anotación corresponde al tipo de espora?",
+      "opciones": [
+        "Clamidosporas.",
+        "Basidiosporas.",
+        "Ascosporas."
+      ],
+      "correcta": 1,
+      "explicacion": "El basidio es la estructura asociada a la formación de basidiosporas. Las ascosporas se forman en un asco.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Sexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Sexual:** fusión de dos núcleos y meiosis. Da cuatro tipos de esporas sexuales: **oosporas, zigosporas, ascosporas y basidiosporas**."
+    },
+    {
+      "id": "t15-q167",
+      "pregunta": "Un moho produce numerosos propágulos asexuales que se desprenden y se dispersan por el aire. En la descripción del apunte, ¿cómo se llaman?",
+      "opciones": [
+        "Conidios.",
+        "Basidiosporas formadas por meiosis en un basidio.",
+        "Quistes de protozoos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los conidios son propágulos asexuales fúngicos. Su dispersión puede llevarlos lejos del micelio de origen.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Asexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **conidios**, esporas que se dispersan por el aire;"
+    },
+    {
+      "id": "t15-q168",
+      "pregunta": "Un fragmento desprendido de una hifa viable crece y forma otro micelio sin fusión nuclear. ¿Qué mecanismo lo explica?",
+      "opciones": [
+        "Formación de huevos por el micelio.",
+        "Producción sexual de ascosporas.",
+        "Fragmentación asexual."
+      ],
+      "correcta": 2,
+      "explicacion": "La fragmentación separa porciones vegetativas capaces de crecer. No requiere gametos ni meiosis.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Asexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **conidios**, esporas que se dispersan por el aire;\n  - **fragmentación** de las hifas;\n  - **clamidosporas**, esporas de pared gruesa."
+    },
+    {
+      "id": "t15-q169",
+      "pregunta": "En un esquema de diferenciación de hifas se resaltan células que acumulan una pared muy gruesa y se describen como esporas asexuales. ¿Qué término encaja?",
+      "opciones": [
+        "Ascogonios.",
+        "Clamidosporas.",
+        "Ooquistes."
+      ],
+      "correcta": 1,
+      "explicacion": "Las clamidosporas se distinguen por su pared engrosada. Forman parte de las estructuras asexuales incluidas en el tema.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Asexual Reproduction · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **clamidosporas**, esporas de pared gruesa."
+    },
+    {
+      "id": "t15-q170",
+      "pregunta": "Dos aislados forman redes filamentosas. En uno se detecta peptidoglicano y ausencia de envoltura nuclear. ¿Qué clasificación apoya esa combinación?",
+      "opciones": [
+        "Protozoo con cloroplastos y ciclos en caracoles.",
+        "Moho con pared de quitina y núcleo verdadero.",
+        "Bacteria filamentosa compatible con un actinomiceto."
+      ],
+      "correcta": 2,
+      "explicacion": "Algunos actinomicetos forman filamentos parecidos a los fúngicos. La organización de la célula y la composición de su pared permiten diferenciarlos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Filamentous Fungi and Filamentous Bacteria · apunte §6",
+      "apartado": "6",
+      "evidencia": "**No confundir con los actinomicetos:** son **bacterias filamentosas**, procariotas con peptidoglicano, aunque formen filamentos y esporas parecidos."
+    },
+    {
+      "id": "t15-q171",
+      "pregunta": "Se detectan esporas ambientales del mismo moho en dos estancias. ¿Por qué importa conocer si una alberga personas con inmunidad muy debilitada?",
+      "opciones": [
+        "La susceptibilidad del huésped influye en el riesgo de una infección invasiva oportunista.",
+        "El hongo cambia de reino solo al entrar en un huésped inmunodeprimido.",
+        "La sola detección ambiental confirma el mismo efecto clínico en todas las personas."
+      ],
+      "correcta": 0,
+      "explicacion": "El término oportunista refleja la importancia de las defensas del huésped. Exposición y enfermedad invasiva son hechos distintos.",
+      "fuente": "CDC, About Invasive Mold Infections, factores de riesgo · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Muchos son **patógenos oportunistas**."
+    },
+    {
+      "id": "t15-q172",
+      "pregunta": "Se remueve suelo contaminado y aparecen partículas fúngicas en el aire. ¿Qué propiedad del propágulo de Histoplasma permite esta vía de exposición?",
+      "opciones": [
+        "La cápside pierde su genoma y se convierte en polvo sin viabilidad.",
+        "Las esporas pueden aerosolizarse al alterar el suelo y entrar por inhalación.",
+        "El adulto libera huevos visibles que necesitan un copépodo en agua de bebida."
+      ],
+      "correcta": 1,
+      "explicacion": "La alteración de suelo que contiene el hongo puede suspender sus conidios en el aire. La inhalación es la vía descrita.",
+      "fuente": "CDC/NIOSH, Histoplasmosis and Work, origen y dispersión de conidios · apunte §6",
+      "apartado": "6",
+      "evidencia": "- **Algunas infecciones se adquieren respirando esporas** del suelo o del polvo (CDC)."
+    },
+    {
+      "id": "t15-q173",
+      "pregunta": "En una reforma se levanta polvo que contiene esporas de Aspergillus. ¿Qué encuadre del organismo y de la vía es coherente?",
+      "opciones": [
+        "Moho ambiental cuyos propágulos se pueden inhalar.",
+        "Virus que se replica en el polvo sin células hospedadoras.",
+        "Ameba transmitida únicamente por picadura de un artrópodo."
+      ],
+      "correcta": 0,
+      "explicacion": "Aspergillus es un hongo filamentoso. En el ambiente sus esporas pueden dispersarse con el polvo.",
+      "fuente": "CDC, Clinical Overview of Aspergillosis, Etiology and How it spreads · apunte §6",
+      "apartado": "6",
+      "evidencia": "| **Ejemplos** | *Aspergillus*, *Penicillium* | *Candida*, *Cryptococcus* |"
+    },
+    {
+      "id": "t15-q174",
+      "pregunta": "Un tratamiento impide recuperar mohos viables en un alimento donde antes crecieron. ¿Qué pregunta queda abierta respecto de las micotoxinas?",
+      "opciones": [
+        "Si los compuestos se transformaron en virus sin analizar el alimento.",
+        "Si el alimento debe contener el doble de células viables después del tratamiento.",
+        "Si todavía quedan compuestos tóxicos producidos antes del tratamiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Algunas micotoxinas son químicamente estables y pueden persistir tras el procesado. Un cultivo de mohos y una determinación de toxinas evalúan variables distintas.",
+      "fuente": "OMS, ficha Mycotoxins, estabilidad y exposición alimentaria · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Producen **micotoxinas** (*Aspergillus*, *Penicillium*, *Fusarium*): **aflatoxinas** y **ocratoxinas** (INSST)."
+    },
+    {
+      "id": "t15-q175",
+      "pregunta": "En una partida de frutos secos se detecta un metabolito tóxico sintetizado por ciertos Aspergillus. ¿Qué familia de compuestos encaja entre las opciones?",
+      "opciones": [
+        "Microcistinas.",
+        "Aflatoxinas.",
+        "Anatoxinas de cianobacterias."
+      ],
+      "correcta": 1,
+      "explicacion": "Ciertas especies de Aspergillus producen aflatoxinas. Microcistinas y anatoxinas pertenecen a familias de cianotoxinas.",
+      "fuente": "OMS, ficha Mycotoxins, aflatoxinas · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Producen **micotoxinas** (*Aspergillus*, *Penicillium*, *Fusarium*): **aflatoxinas** y **ocratoxinas** (INSST)."
+    },
+    {
+      "id": "t15-q176",
+      "pregunta": "Se investiga un compuesto en cereal almacenado que puede producirse por especies de Aspergillus o Penicillium. ¿Cuál es la asociación citada por la OMS?",
+      "opciones": [
+        "Peptidoglicano.",
+        "Ficocianina.",
+        "Ocratoxina A."
+      ],
+      "correcta": 2,
+      "explicacion": "La OMS describe la ocratoxina A como micotoxina producida por especies de ambos géneros durante el almacenamiento de cosechas.",
+      "fuente": "OMS, ficha Mycotoxins, ocratoxina A · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Producen **micotoxinas** (*Aspergillus*, *Penicillium*, *Fusarium*): **aflatoxinas** y **ocratoxinas** (INSST)."
+    },
+    {
+      "id": "t15-q177",
+      "pregunta": "Un panel para cereal afectado por Fusarium incluye deoxinivalenol. ¿Qué clase de compuesto es en ese contexto?",
+      "opciones": [
+        "Un tricoteceno producido por ciertos hongos.",
+        "Un marcador proteico de la envoltura de los virus.",
+        "Un pigmento fotosintético de las diatomeas."
+      ],
+      "correcta": 0,
+      "explicacion": "El deoxinivalenol, o DON, es una micotoxina del grupo de los tricotecenos producida por determinadas especies de Fusarium.",
+      "fuente": "OMS, ficha Mycotoxins, toxinas de Fusarium · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Producen **micotoxinas** (*Aspergillus*, *Penicillium*, *Fusarium*): **aflatoxinas** y **ocratoxinas** (INSST)."
+    },
+    {
+      "id": "t15-q178",
+      "pregunta": "Se estudian dos productos de hongos, una penicilina y una aflatoxina. ¿Cómo se distinguen en el contexto del tema?",
+      "opciones": [
+        "La aflatoxina define un género bacteriano y la penicilina es una cápside.",
+        "La penicilina se estudia como antibiótico y la aflatoxina como micotoxina.",
+        "Ambas son estructuras de la pared de los mohos que las producen."
+      ],
+      "correcta": 1,
+      "explicacion": "Los hongos pueden producir metabolitos de relevancia distinta. La penicilina es un antibiótico y la aflatoxina plantea un riesgo toxicológico.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, relevancia de los hongos · apunte §6",
+      "apartado": "6",
+      "evidencia": "- Producen **antibióticos**: la **penicilina** sale de *Penicillium chrysogenum*."
+    },
+    {
+      "id": "t15-q179",
+      "pregunta": "En un inventario de agua se observan protozoos que completan su ciclo sin usar un hospedador. ¿Qué describe ese ejemplo?",
+      "opciones": [
+        "Protozoos de vida libre.",
+        "Helmintos adultos intracelulares.",
+        "Parásitos obligados porque todos los protozoos requieren hospedador."
+      ],
+      "correcta": 0,
+      "explicacion": "Los protozoos pueden vivir libremente o como parásitos. Observar un ciclo independiente es compatible con la primera categoría.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, General Concepts · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Casi todos viven libres**, en casi cualquier hábitat; otros son **parásitos**."
+    },
+    {
+      "id": "t15-q180",
+      "pregunta": "¿Por qué un número inicial muy bajo de protozoos parásitos no descarta que la carga aumente dentro del huésped compatible?",
+      "opciones": [
+        "El crecimiento exige siempre nuevos ingresos desde un vector durante toda la infección.",
+        "El número de individuos se conserva necesariamente hasta que salgan del huésped.",
+        "Los protozoos parásitos pueden multiplicarse en el ser humano."
+      ],
+      "correcta": 2,
+      "explicacion": "La multiplicación dentro del huésped puede amplificar una exposición inicial pequeña.",
+      "fuente": "CDC, About Parasites, Protozoa · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Se multiplican dentro del ser humano.** Por eso **un solo organismo** puede dar una infección grave (CDC)."
+    },
+    {
+      "id": "t15-q181",
+      "pregunta": "En un protozoo se observa un sitio especializado por el que se incorporan partículas alimentarias. ¿Qué nombre recibe en especies que lo presentan?",
+      "opciones": [
+        "Cápside.",
+        "Citostoma.",
+        "Escólex."
+      ],
+      "correcta": 1,
+      "explicacion": "El citostoma es una región de la superficie especializada en incorporar alimento. No constituye un tubo digestivo de helminto.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Structure and Nutrition · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Heterótrofos:** necesitan **materia orgánica ya formada** (nutrición holozoica). Algunos tienen una «boca», el **citostoma**."
+    },
+    {
+      "id": "t15-q182",
+      "pregunta": "Se evaluarán dos medios para un protozoo heterótrofo. ¿Qué componente aporta el tipo de nutriente que caracteriza su metabolismo?",
+      "opciones": [
+        "Un fragmento de pared de peptidoglicano como único requisito energético.",
+        "Únicamente luz y dióxido de carbono, porque siempre tiene cloroplastos.",
+        "Una fuente de materia orgánica previamente formada."
+      ],
+      "correcta": 2,
+      "explicacion": "La nutrición heterótrofa utiliza materia orgánica ya formada. El término no presupone aparato fotosintético.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Structure and Nutrition · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **Heterótrofos:** necesitan **materia orgánica ya formada** (nutrición holozoica). Algunos tienen una «boca», el **citostoma**."
+    },
+    {
+      "id": "t15-q183",
+      "pregunta": "Se sigue el paso de un protozoo desde una fase activa en el intestino a una fase capaz de persistir en agua durante el intervalo entre huéspedes. ¿Qué transición se está estudiando?",
+      "opciones": [
+        "El enquistamiento del trofozoíto.",
+        "La formación de una cápside dentro del quiste por gemación.",
+        "La transformación de un quiste en una larva de nematodo."
+      ],
+      "correcta": 0,
+      "explicacion": "El quiste aporta una pared protectora. En especies con esa fase, el enquistamiento favorece la supervivencia fuera del huésped.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Life Cycle Stages · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Quiste** | Forma con **pared protectora**: sobrevive fuera del huésped |"
+    },
+    {
+      "id": "t15-q184",
+      "pregunta": "En un esquema de Giardia, de la estructura resistente surgen formas activas en el intestino del siguiente huésped. ¿Cómo se denomina ese paso?",
+      "opciones": [
+        "Formación de la cubierta del virus.",
+        "Desenquistamiento.",
+        "Esporulación de una endospora bacteriana."
+      ],
+      "correcta": 1,
+      "explicacion": "El desenquistamiento libera las formas activas que seguirán el ciclo en el intestino.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Life Cycle Stages; CDC, DPDx, Giardiasis · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Trofozoíto** | La forma **activa**, que **se alimenta y se multiplica**. Suele ser **móvil** |"
+    },
+    {
+      "id": "t15-q185",
+      "pregunta": "Una célula de Giardia se divide longitudinalmente en dos células hijas en el intestino. ¿Qué tipo de aumento numérico representa?",
+      "opciones": [
+        "Fisión binaria asexual.",
+        "Meiosis seguida de producción de conidios.",
+        "Gemación de un hongo filamentoso."
+      ],
+      "correcta": 0,
+      "explicacion": "El ciclo incluye multiplicación de los trofozoítos por fisión binaria longitudinal. Es un proceso asexual.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Reproduction; CDC, DPDx, Giardiasis · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **asexual**, sobre todo por **fisión binaria**;"
+    },
+    {
+      "id": "t15-q186",
+      "pregunta": "El ciclo de un apicomplejo tiene una fase de multiplicación asexual y luego diferenciación de formas sexuales. ¿Qué error hay en describirlo solo por la primera fase?",
+      "opciones": [
+        "La fase asexual ya equivale a la fusión de gametos y no hay diferencia.",
+        "Se omite una segunda especie, porque ningún protozoo combina ambas formas.",
+        "Se omite una generación sexual que contribuye a completar el ciclo."
+      ],
+      "correcta": 2,
+      "explicacion": "En los apicomplejos del ejemplo hay fases sexuales y asexuales. Cada una cumple funciones distintas dentro del ciclo.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Life Cycle Stages; CDC, DPDx, Cryptosporidiosis · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **sexual y asexual** en los **apicomplejos**."
+    },
+    {
+      "id": "t15-q187",
+      "pregunta": "Una célula ameboide se desplaza formando extensiones temporales de citoplasma. ¿Cómo se llaman esas extensiones?",
+      "opciones": [
+        "Cilios sincronizados de superficie.",
+        "Seudópodos.",
+        "Cadenas de conidios."
+      ],
+      "correcta": 1,
+      "explicacion": "Los seudópodos son prolongaciones transitorias de la célula. Su formación explica el desplazamiento típico de una ameba.",
+      "fuente": "CDC, About Parasites, clasificación por movimiento; Baron, Medical Microbiology, cap. 77 · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Sarcodinos (amebas)** | **Seudópodos** | ***Entamoeba*** |"
+    },
+    {
+      "id": "t15-q188",
+      "pregunta": "Se compara Balantidium con Giardia en una muestra docente. ¿Qué tipo de estructuras locomotoras debe anotarse, respectivamente?",
+      "opciones": [
+        "Seudópodos y ventosas.",
+        "Flagelos y cilios.",
+        "Cilios y flagelos."
+      ],
+      "correcta": 2,
+      "explicacion": "Balantidium es un ciliado y Giardia un flagelado. Sus apéndices locomotores pertenecen a categorías diferentes.",
+      "fuente": "CDC, About Parasites, Protozoa; DPDx, Balantidiasis · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Cilióforos (ciliados)** | **Cilios** | ***Balantidium*** |"
+    },
+    {
+      "id": "t15-q189",
+      "pregunta": "Un estudiante exige encontrar cilios o flagelos externos para admitir que una forma de Cryptosporidium es un protozoo. ¿Qué objeción corresponde?",
+      "opciones": [
+        "El apicomplejo puede pertenecer al grupo aunque no presente esos orgánulos externos para desplazarse.",
+        "Los cilios son obligatorios en todos los protozoos acuáticos.",
+        "Si faltan cilios o flagelos, el organismo debe ser una bacteria."
+      ],
+      "correcta": 0,
+      "explicacion": "La locomoción por apéndices externos no es un carácter universal de los protozoos. En la agrupación clásica, los apicomplejos son el contraejemplo.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 77, Apicomplexa; CDC, About Parasites · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Esporozoos** | **No tienen órganos de locomoción** | *Plasmodium*, ***Cryptosporidium*** |"
+    },
+    {
+      "id": "t15-q190",
+      "pregunta": "En una tabla docente se intercambian las vías típicas de transmisión de Leishmania y Giardia. ¿Qué asignación corrige los dos casos?",
+      "opciones": [
+        "Ambos por penetración cutánea de cercarias.",
+        "Leishmania mediante vector artrópodo y Giardia típicamente por vía fecal-oral.",
+        "Leishmania principalmente por conidios en polvo y Giardia mediante vector artrópodo."
+      ],
+      "correcta": 1,
+      "explicacion": "Los flebótomos actúan como vectores de Leishmania. Giardia se transmite por ingestión de formas procedentes de contaminación fecal.",
+      "fuente": "CDC, About Parasites, Protozoa · apunte §7",
+      "apartado": "7",
+      "evidencia": "- por **vectores** (artrópodos), los de la sangre y los tejidos."
+    },
+    {
+      "id": "t15-q191",
+      "pregunta": "¿Qué estructuras se liberan del ooquiste de Cryptosporidium después de su desenquistamiento y parasitan el epitelio?",
+      "opciones": [
+        "Esporozoítos.",
+        "Proglótides.",
+        "Cercarias de trematodo."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada ooquiste esporulado contiene cuatro esporozoítos. Tras liberarse, estos continúan el ciclo en células epiteliales.",
+      "fuente": "CDC, DPDx, Cryptosporidiosis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q192",
+      "pregunta": "Se observan estructuras redondeadas de aproximadamente 5 µm en un estudio de protozoos del agua. ¿Qué inferencia sobre Cryptosporidium es razonable a partir de ese dato aislado?",
+      "opciones": [
+        "El tamaño excluye un ooquiste y permite informar Giardia sin más pruebas.",
+        "El tamaño demuestra por sí solo la especie exacta de Cryptosporidium.",
+        "El tamaño es compatible con sus ooquistes, pero hace falta confirmar por criterios específicos."
+      ],
+      "correcta": 2,
+      "explicacion": "El intervalo de tamaños orienta el diagnóstico, pero no sustituye a los criterios de identificación.",
+      "fuente": "CDC, DPDx, Cryptosporidiosis, identificación microscópica; OMS, Guías de agua de consumo, ficha correspondiente · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q193",
+      "pregunta": "Un informe de vigilancia quiere citar las dos especies que los CDC señalan como causas principales de criptosporidiosis humana. ¿Qué pareja corresponde?",
+      "opciones": [
+        "Cryptosporidium hominis y Giardia duodenalis.",
+        "Cryptosporidium hominis y Cryptosporidium parvum.",
+        "Cryptosporidium parvum y Entamoeba histolytica."
+      ],
+      "correcta": 1,
+      "explicacion": "C. hominis y C. parvum son causas principales de criptosporidiosis humana. Giardia y Entamoeba pertenecen a otros géneros.",
+      "fuente": "CDC, DPDx, Cryptosporidiosis, Causal Agents · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q194",
+      "pregunta": "Se propone usar la cloración convencional como única barrera frente a ooquistes de Cryptosporidium porque redujo los indicadores bacterianos. ¿Qué aspecto biológico hay que considerar?",
+      "opciones": [
+        "El cloro actúa sobre un protozoo a la misma dosis y tiempo que sobre cualquier bacteria por definición.",
+        "Los ooquistes son incapaces de persistir si desaparecen las bacterias del ensayo.",
+        "Los ooquistes resisten el cloro y requieren que se verifiquen otras barreras adecuadas para ellos."
+      ],
+      "correcta": 2,
+      "explicacion": "La resistencia al cloro de los ooquistes limita la extrapolación desde indicadores bacterianos. Debe evaluarse la protección específica frente al protozoo.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Cryptosporidium · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q195",
+      "pregunta": "Para comparar tratamientos del agua frente a ooquistes de Cryptosporidium, ¿qué par incluye dos agentes o tecnologías cuya eficacia recoge la ficha?",
+      "opciones": [
+        "Radiación ultravioleta y ozono, con las condiciones de tratamiento adecuadas.",
+        "Cloración habitual y ausencia de tratamiento, con el mismo efecto.",
+        "Solo filtración de aire y medio de cultivo sin células."
+      ],
+      "correcta": 0,
+      "explicacion": "La ficha distingue la resistencia a la cloración de la susceptibilidad a tratamientos adecuados con UV u ozono.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Cryptosporidium · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q196",
+      "pregunta": "Se detectan ooquistes por un ensayo específico cuando el análisis de E. coli no detecta esa bacteria. ¿Por qué los dos resultados pueden coexistir?",
+      "opciones": [
+        "La diferencia solo es posible si los ooquistes eran bacterias grampositivas.",
+        "Los ooquistes y la bacteria tienen persistencia y respuesta al tratamiento distintas.",
+        "El ensayo de E. coli detecta siempre ambos microorganismos a la vez."
+      ],
+      "correcta": 1,
+      "explicacion": "Un resultado negativo del indicador bacteriano no excluye la presencia de un protozoo con resistencia diferente.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Cryptosporidium · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Cryptosporidium*** | **Coccidio** (apicomplejo). **Ooquistes de 4-6 µm**, con **cuatro esporozoítos**. ***C. hominis*** y ***C. parvum***, los más frecuentes en personas. Causa la **criptosporidiosis**, una **diarrea** (1322 #22). **Muy resistente al cloro**; la **luz ultravioleta y el ozono sí son eficaces**. **La ausencia de *E. coli* no garantiza que no haya ooquistes** |"
+    },
+    {
+      "id": "t15-q197",
+      "pregunta": "Un registro antiguo usa Giardia lamblia y uno nuevo Giardia duodenalis para el agente de la giardiasis. ¿Cómo se armonizan esos nombres según la ficha docente de los CDC?",
+      "opciones": [
+        "Tratándolos como nombres sinónimos en ese contexto.",
+        "Creando una categoría para cada uno, porque uno es un virus.",
+        "Registrándolos como fase de huevo y fase adulta, respectivamente."
+      ],
+      "correcta": 0,
+      "explicacion": "La ficha DPDx cita Giardia lamblia y Giardia intestinalis como sinónimos de Giardia duodenalis.",
+      "fuente": "CDC, DPDx, Giardiasis, Causal Agents · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q198",
+      "pregunta": "¿Qué forma explica la transmisión a partir de agua fría contaminada con Giardia y qué forma se multiplica tras llegar al intestino delgado?",
+      "opciones": [
+        "La cercaria transmite y el adulto multicelular se multiplica.",
+        "El trofozoíto es el único que persiste en el agua fría y el quiste se multiplica intestinalmente.",
+        "El quiste transmite y el trofozoíto se multiplica."
+      ],
+      "correcta": 2,
+      "explicacion": "El quiste resiste fuera del huésped. Tras desenquistarse en el intestino libera trofozoítos que se dividen.",
+      "fuente": "CDC, DPDx, Giardiasis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q199",
+      "pregunta": "Al focalizar un quiste maduro compatible con Giardia se distinguen cuatro núcleos. ¿Cómo interpreta la ficha ese número respecto a un quiste inmaduro de dos núcleos?",
+      "opciones": [
+        "Dos núcleos identifican un quiste maduro y cuatro un ooquiste de cualquier coccidio.",
+        "Cuatro núcleos son compatibles con madurez y dos con inmadurez.",
+        "La madurez se define por convertir los núcleos observados en flagelos."
+      ],
+      "correcta": 1,
+      "explicacion": "La ficha distingue quistes maduros con cuatro núcleos e inmaduros con dos. El número apoya interpretar la fase en una preparación apropiada.",
+      "fuente": "CDC, DPDx, Giardiasis, características microscópicas de quistes · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q200",
+      "pregunta": "En la descripción de Giardia se anota la presencia de un disco ventral en el trofozoíto. ¿Para qué sirve en el intestino?",
+      "opciones": [
+        "Para fijarse al caracol que actúa como único intermediario.",
+        "Para producir clorofila durante el ciclo intestinal.",
+        "Para adherirse a la mucosa."
+      ],
+      "correcta": 2,
+      "explicacion": "Los trofozoítos se encuentran en la luz intestinal y pueden fijarse a la mucosa con el disco ventral.",
+      "fuente": "CDC, DPDx, Giardiasis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q201",
+      "pregunta": "En una exposición fecal-oral a Entamoeba histolytica a través del agua, ¿qué fase intestinal resistente puede iniciar el ciclo en un nuevo huésped?",
+      "opciones": [
+        "El quiste maduro ingerido.",
+        "El trofozoíto destruido por las condiciones ambientales y gástricas.",
+        "La larva de cuarto estadio de un nematodo."
+      ],
+      "correcta": 0,
+      "explicacion": "El quiste maduro resiste en el ambiente y se ingiere. El trofozoíto es más frágil fuera del huésped y frente al estómago.",
+      "fuente": "CDC, DPDx, Amebiasis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Entamoeba histolytica*** | Ameba intestinal |"
+    },
+    {
+      "id": "t15-q202",
+      "pregunta": "Dos especies de Entamoeba pueden verse iguales por microscopía rutinaria. ¿Qué conclusión permite solo esa observación respecto a E. histolytica y E. dispar?",
+      "opciones": [
+        "Si tienen igual morfología, pertenecen necesariamente a dominios distintos.",
+        "La morfología puede ser compatible con ambas y se necesitan pruebas de identificación específicas.",
+        "La igualdad de aspecto confirma que ambos organismos son E. histolytica patógena."
+      ],
+      "correcta": 1,
+      "explicacion": "Los CDC describen especies morfológicamente idénticas. La asignación de especie no debe apoyarse solo en ese aspecto.",
+      "fuente": "CDC, DPDx, Amebiasis, Causal Agents · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Entamoeba histolytica*** | Ameba intestinal |"
+    },
+    {
+      "id": "t15-q203",
+      "pregunta": "En amebiasis invasiva, ¿qué fase puede atravesar la mucosa del colon y alcanzar localizaciones extraintestinales?",
+      "opciones": [
+        "El trofozoíto.",
+        "El quiste maduro ambiental sin desenquistarse.",
+        "El ooquiste con cuatro esporozoítos."
+      ],
+      "correcta": 0,
+      "explicacion": "Son los trofozoítos los que pueden invadir tejido y entrar en vasos. El quiste cumple sobre todo la función de transmisión y supervivencia.",
+      "fuente": "CDC, DPDx, Amebiasis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Entamoeba histolytica*** | Ameba intestinal |"
+    },
+    {
+      "id": "t15-q204",
+      "pregunta": "Un estudio encuentra un protozoo ciliado compatible con Balantidium en el contexto de contaminación fecal ligada a una explotación porcina. ¿Qué dato hace pertinente examinar ese origen?",
+      "opciones": [
+        "Los CDC describen a los moluscos como el único reservorio natural.",
+        "Los cerdos son el vector volador que inocula sus flagelos.",
+        "Los cerdos constituyen el reservorio principal descrito para este protozoo."
+      ],
+      "correcta": 2,
+      "explicacion": "La relación con los cerdos está documentada. Los quistes pueden llegar a agua o alimentos mediante contaminación fecal.",
+      "fuente": "CDC, DPDx, Balantidiasis, Hosts and Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Cilióforos (ciliados)** | **Cilios** | ***Balantidium*** |"
+    },
+    {
+      "id": "t15-q205",
+      "pregunta": "En un índice aparece Balantioides coli y en el apunte, Balantidium coli. ¿Qué explica que los CDC muestren ambos nombres?",
+      "opciones": [
+        "El primer nombre corresponde a un nematodo y el segundo a una bacteria.",
+        "Balantioides se propuso tras revisiones taxonómicas del protozoo ciliado conocido como Balantidium coli.",
+        "Son los nombres científicos de dos fases de un ciclo que siempre se dan en huéspedes distintos."
+      ],
+      "correcta": 1,
+      "explicacion": "La ficha recoge Balantioides y Neobalantidium como nombres alternativos que se han propuesto para el agente tradicionalmente llamado Balantidium coli.",
+      "fuente": "CDC, DPDx, Balantidiasis, Causal Agents · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Cilióforos (ciliados)** | **Cilios** | ***Balantidium*** |"
+    },
+    {
+      "id": "t15-q206",
+      "pregunta": "Se compara un incidente en el que entró agua dulce por la nariz con otro de ingestión sin entrada nasal. ¿Cuál se ajusta a la vía de infección descrita para Naegleria fowleri?",
+      "opciones": [
+        "Ambos, porque el ciclo exige un copépodo ingerido.",
+        "La ingestión sin entrada nasal, porque se transmite como Giardia.",
+        "La entrada de agua por la nariz, desde donde el microorganismo puede alcanzar el sistema nervioso."
+      ],
+      "correcta": 2,
+      "explicacion": "Naegleria puede entrar por la mucosa nasal y alcanzar el sistema nervioso. La ingestión no es la ruta típica de esa infección.",
+      "fuente": "CDC, DPDx, Free Living Amebic Infections, ciclo de Naegleria fowleri · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Naegleria fowleri*** | **Ameba de vida libre**; infecta **cuando el agua entra por la nariz** y causa una **meningoencefalitis** casi siempre mortal |"
+    },
+    {
+      "id": "t15-q207",
+      "pregunta": "¿Qué conjunto de fases distingue el ciclo descrito de Acanthamoeba frente al de Naegleria con una forma flagelada transitoria?",
+      "opciones": [
+        "Trofozoíto y quiste, sin fase flagelada en Acanthamoeba.",
+        "Solo un flagelado permanente, sin fase de quiste.",
+        "Huevo, larva y adulto segmentado."
+      ],
+      "correcta": 0,
+      "explicacion": "Acanthamoeba tiene un trofozoíto y un quiste. En la ficha no se describe una fase flagelada para ese género.",
+      "fuente": "CDC, DPDx, Free Living Amebic Infections, Acanthamoeba · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Acanthamoeba*** | **Ameba de vida libre**: **queratitis** en usuarios de **lentes de contacto**. **Puede albergar *Legionella*** |"
+    },
+    {
+      "id": "t15-q208",
+      "pregunta": "Para asociar correctamente una ameba de vida libre y una localización, ¿qué pareja recoge la ficha de queratitis en personas que usan lentes de contacto?",
+      "opciones": [
+        "Cryptosporidium y epitelio de la lente como vector obligatorio.",
+        "Acanthamoeba y córnea.",
+        "Naegleria y luz intestinal como hábitat de un nematodo."
+      ],
+      "correcta": 1,
+      "explicacion": "La queratitis afecta a la córnea. Acanthamoeba puede causarla, especialmente en el contexto de lentes de contacto.",
+      "fuente": "CDC, DPDx, Free Living Amebic Infections, Acanthamoeba, manifestaciones · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Acanthamoeba*** | **Ameba de vida libre**: **queratitis** en usuarios de **lentes de contacto**. **Puede albergar *Legionella*** |"
+    },
+    {
+      "id": "t15-q209",
+      "pregunta": "En una explicación de toxoplasmosis se intercambian los papeles de las personas y los felinos. ¿Qué pareja restablece el ciclo descrito?",
+      "opciones": [
+        "Felinos como huéspedes definitivos y personas como huéspedes intermediarios.",
+        "Personas como huéspedes definitivos y felinos como vectores artrópodos.",
+        "Ambos como hospedadores definitivos del mismo ciclo sexual por igual."
+      ],
+      "correcta": 0,
+      "explicacion": "El ciclo sexual se completa en felinos, que eliminan ooquistes. Las personas pueden albergar fases tisulares propias de un huésped intermediario.",
+      "fuente": "CDC, DPDx, Toxoplasmosis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Toxoplasma gondii*** | Apicomplejo; las personas son **huésped intermediario** |"
+    },
+    {
+      "id": "t15-q210",
+      "pregunta": "Se comparan carne poco cocinada y agua contaminada con heces de felinos en el ciclo de Toxoplasma. ¿Qué formas se asocian respectivamente a esas fuentes?",
+      "opciones": [
+        "Viriones de adeno en la carne y endosporas de Bacillus como única fase en agua.",
+        "Cercarias en la carne y huevos de tenia en el agua.",
+        "Quistes tisulares en la carne y ooquistes esporulados procedentes del ambiente."
+      ],
+      "correcta": 2,
+      "explicacion": "Los quistes tisulares permanecen en tejidos animales. Los felinos eliminan ooquistes que pueden hacerse infectantes en el ambiente.",
+      "fuente": "CDC, DPDx, Toxoplasmosis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Toxoplasma gondii*** | Apicomplejo; las personas son **huésped intermediario** |"
+    },
+    {
+      "id": "t15-q211",
+      "pregunta": "Un diagrama muestra ooquistes de Toxoplasma recién eliminados por un felino como si ya hubieran madurado en el exterior. ¿Qué etapa falta?",
+      "opciones": [
+        "La multiplicación de los ooquistes por gemación de una levadura.",
+        "La esporulación ambiental que hace infectantes esos ooquistes.",
+        "La conversión de cada ooquiste en un nematodo adulto libre."
+      ],
+      "correcta": 1,
+      "explicacion": "Los felinos excretan ooquistes no esporulados. El ciclo de la ficha señala que esporulan en el ambiente antes de hacerse infectantes.",
+      "fuente": "CDC, DPDx, Toxoplasmosis, esporulación de ooquistes · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Toxoplasma gondii*** | Apicomplejo; las personas son **huésped intermediario** |"
+    },
+    {
+      "id": "t15-q212",
+      "pregunta": "Un espécimen macroscópico tiene tejidos diferenciados y órganos reproductores. ¿Por qué no sería un protozoo gigante si se confirma que es un gusano adulto?",
+      "opciones": [
+        "Los helmintos carecen de núcleos y los protozoos tienen varios tejidos.",
+        "El tamaño de los protozoos y los helmintos es la única diferencia entre ambos.",
+        "Los helmintos son pluricelulares y los protozoos son unicelulares."
+      ],
+      "correcta": 2,
+      "explicacion": "La organización en tejidos distingue al helminto incluso si el tamaño por sí solo pudiera llevar a error al observar otra fase.",
+      "fuente": "CDC, About Parasites, Helminths; Baron, Medical Microbiology, cap. 86 · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Gusanos pluricelulares.** Los **adultos se ven a simple vista**."
+    },
+    {
+      "id": "t15-q213",
+      "pregunta": "En la comparación docente entre un nematodo adulto que libera huevos y un protozoo que se divide, ¿qué diferencia se debe preservar?",
+      "opciones": [
+        "Poner huevos no equivale a que aumente por división la población de adultos en el mismo huésped.",
+        "La puesta de huevos es una fisión idéntica a la de un trofozoíto.",
+        "Las dos formas se multiplican como adultas exclusivamente en el intestino."
+      ],
+      "correcta": 0,
+      "explicacion": "La puesta de huevos contribuye al ciclo. En cambio, los protozoos pueden aumentar por multiplicación celular en el huésped.",
+      "fuente": "CDC, About Parasites, Helminths · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **En su forma adulta no se multiplican en el ser humano** (CDC), a diferencia de los protozoos."
+    },
+    {
+      "id": "t15-q214",
+      "pregunta": "Solo se dispone de un huevo de helminto y se quiere aplicar una clave que pide medir órganos del adulto. ¿Qué ajuste tiene sentido?",
+      "opciones": [
+        "Usar una clave de trofozoítos porque un huevo y un protozoo son la misma fase.",
+        "Usar criterios validados para los huevos o conseguir la etapa que la clave describe.",
+        "Sustituir todas las medidas del adulto por el diámetro del huevo sin contrastar la clave."
+      ],
+      "correcta": 1,
+      "explicacion": "La morfología útil depende de la fase. Hay criterios propios para huevos, larvas y adultos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, General Concepts · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Fases:** **huevo, larva y adulto**. El diagnóstico suele hacerse **por los huevos** o las larvas en las heces (OMS)."
+    },
+    {
+      "id": "t15-q215",
+      "pregunta": "En una lámina aparece un gusano aplanado, sin proglótides y con ventosas oral y ventral. ¿Cuál es el grupo compatible con los tres rasgos?",
+      "opciones": [
+        "Trematodos.",
+        "Cestodos.",
+        "Nematodos."
+      ],
+      "correcta": 0,
+      "explicacion": "La forma plana foliácea y las dos ventosas corresponden al patrón de las duelas. Un cestodo típico presenta escólex y proglótides.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Flukes · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q216",
+      "pregunta": "¿Qué función explica las ventosas prominentes de las duelas adultas en el tejido hospedador?",
+      "opciones": [
+        "Actúan como órganos respiratorios equivalentes a los bronquios.",
+        "Permiten envolver huevos con una pared bacteriana de peptidoglicano.",
+        "Ayudan a mantener la posición del parásito en el sitio que ocupa."
+      ],
+      "correcta": 2,
+      "explicacion": "Las ventosas permiten la fijación o sujeción del trematodo en el huésped.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Flukes · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q217",
+      "pregunta": "Se sospecha un ciclo que relaciona rumiantes, caracoles de agua dulce y vegetales acuáticos con formas enquistadas. ¿Qué trematodo encaja?",
+      "opciones": [
+        "Schistosoma haematobium.",
+        "Fasciola hepatica.",
+        "Taenia solium."
+      ],
+      "correcta": 1,
+      "explicacion": "Fasciola se desarrolla en caracoles intermediarios. Las cercarias salen y pueden enquistarse como metacercarias sobre vegetación acuática.",
+      "fuente": "CDC, DPDx, Fascioliasis, Life Cycle and Hosts · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q218",
+      "pregunta": "¿Qué diferencia las formas que infectan a las personas en fascioliasis y esquistosomiasis, respectivamente?",
+      "opciones": [
+        "Huevos ingeridos en los dos casos sin ninguna otra fase infectante.",
+        "Cercarias que penetran por la piel y metacercarias ingeridas.",
+        "Metacercarias ingeridas y cercarias que penetran por la piel."
+      ],
+      "correcta": 2,
+      "explicacion": "Fasciola se adquiere al ingerir metacercarias, mientras las cercarias de Schistosoma penetran durante el contacto con agua infestada.",
+      "fuente": "CDC, DPDx, Fascioliasis, fase de metacercaria; Schistosomiasis, fase de cercaria · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q219",
+      "pregunta": "Se encuentra un caracol con fases de Schistosoma que originan cercarias. ¿Qué papel cumple ese animal en el ciclo?",
+      "opciones": [
+        "Intermediario donde se desarrollan fases larvarias.",
+        "Definitivo donde viven los machos y hembras adultos.",
+        "Simple transportador de huevos sin desarrollo del parásito."
+      ],
+      "correcta": 0,
+      "explicacion": "En el caracol tienen lugar fases del desarrollo larvario. Los gusanos adultos se encuentran en el hospedador definitivo.",
+      "fuente": "CDC, DPDx, Schistosomiasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q220",
+      "pregunta": "Una persona se expone a agua dulce con cercarias sin beberla. ¿Qué propiedad de esta fase permite la infección?",
+      "opciones": [
+        "El gusano requiere siempre que se ingiera carne con un cisticerco.",
+        "Las cercarias pueden atravesar la piel.",
+        "Las cercarias se convierten en quistes de Giardia al evaporarse el agua."
+      ],
+      "correcta": 1,
+      "explicacion": "La exposición cutánea al agua es suficiente para que cercarias infectantes tengan una vía de entrada.",
+      "fuente": "CDC, DPDx, Schistosomiasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **La esquistosomiasis** se contrae por **contacto** con el agua."
+    },
+    {
+      "id": "t15-q221",
+      "pregunta": "Se revisa la afirmación «todos los huevos de Schistosoma se buscan solo en heces». ¿Qué contraste entre dos especies la corrige?",
+      "opciones": [
+        "S. haematobium elimina principalmente huevos en orina y S. mansoni en heces.",
+        "S. mansoni elimina principalmente huevos en orina y S. haematobium en heces.",
+        "Las especies eliminan solo quistes por vía fecal y nunca producen huevos."
+      ],
+      "correcta": 0,
+      "explicacion": "La muestra de interés depende de la especie y de la localización del parásito. S. haematobium se asocia a vías urinarias y S. mansoni a excreción fecal.",
+      "fuente": "CDC, DPDx, Schistosomiasis, Causal Agents and Diagnosis · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q222",
+      "pregunta": "En un cestodo adulto, ¿qué estructura mantiene la fijación principal a la pared del intestino delgado?",
+      "opciones": [
+        "El huevo con estriaciones radiales.",
+        "La proglótide grávida separada.",
+        "El escólex."
+      ],
+      "correcta": 2,
+      "explicacion": "El escólex es el órgano anterior de fijación. Las proglótides maduras o grávidas forman parte del cuerpo segmentado.",
+      "fuente": "CDC, DPDx, Taeniasis, ciclo y morfología de los escólices · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q223",
+      "pregunta": "¿Qué función cumple una proglótide grávida de Taenia que se desprende y alcanza las heces?",
+      "opciones": [
+        "Sustituye al escólex como estructura de fijación permanente de la tenia adulta.",
+        "Contiene huevos y contribuye a su salida y dispersión.",
+        "Realiza la muda que transforma una larva de nematodo en otro estadio."
+      ],
+      "correcta": 1,
+      "explicacion": "Al madurar, las proglótides grávidas acumulan huevos. Su desprendimiento facilita que se eliminen.",
+      "fuente": "CDC, DPDx, Taeniasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q224",
+      "pregunta": "Un cestodo intestinal carece de tubo digestivo pero usa moléculas orgánicas disponibles en la luz. ¿Qué adaptación lo permite?",
+      "opciones": [
+        "Nutrirse solo a través de las ventosas conectadas a un estómago interno.",
+        "Filtrar alimento con cilios situados dentro de un intestino propio.",
+        "Absorber nutrientes a través de su tegumento."
+      ],
+      "correcta": 2,
+      "explicacion": "El tegumento del cestodo actúa como superficie de absorción, lo que le permite aprovechar nutrientes del huésped.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Tapeworms · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q225",
+      "pregunta": "Se observa un huevo típico de Taenia y se quiere identificar como T. solium solo por el huevo. ¿Qué limitación describe la ficha?",
+      "opciones": [
+        "Los huevos de Taenia no se distinguen entre especies por su morfología habitual.",
+        "Solo T. solium produce huevos con estriación radial y se identifica de forma inequívoca.",
+        "El diámetro del huevo determina con exactitud la especie adulta siempre que se mida en micrómetros."
+      ],
+      "correcta": 0,
+      "explicacion": "La ficha explica que sus huevos son morfológicamente indistinguibles. Otros caracteres, como los del escólex, pueden aportar discriminación.",
+      "fuente": "CDC, DPDx, Taeniasis, Eggs and Scoleces · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q226",
+      "pregunta": "Se comparan dos escólices de tenia con cuatro ventosas. Uno tiene además dos hileras de ganchos rostelares. ¿Qué especie es compatible con el escólex armado descrito?",
+      "opciones": [
+        "Fasciola hepatica.",
+        "Taenia solium.",
+        "Taenia saginata."
+      ],
+      "correcta": 1,
+      "explicacion": "T. solium presenta ganchos en el rostelo. T. saginata tiene cuatro ventosas pero carece de rostelo y de esos ganchos.",
+      "fuente": "CDC, DPDx, Taeniasis, Scoleces · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q227",
+      "pregunta": "En el ciclo de Taenia solium, ¿qué par de formas se asocia con teniasis intestinal y con cisticercosis en la persona, respectivamente?",
+      "opciones": [
+        "Ingestión de cisticercos en carne de cerdo e ingestión fecal-oral de huevos.",
+        "Ingestión de huevos e ingestión de cisticercos en la carne.",
+        "Ingestión de cercarias y contagio por un copépodo."
+      ],
+      "correcta": 0,
+      "explicacion": "Los cisticercos ingeridos pueden dar una tenia adulta intestinal. Los huevos ingeridos pueden originar larvas en tejidos humanos.",
+      "fuente": "CDC, DPDx, Taeniasis y Cysticercosis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q228",
+      "pregunta": "En la teniasis por Taenia saginata se quiere rastrear la especie animal donde se desarrollan los cisticercos del ciclo típico. ¿Cuál corresponde?",
+      "opciones": [
+        "El caracol de agua dulce.",
+        "El cerdo.",
+        "El bovino."
+      ],
+      "correcta": 2,
+      "explicacion": "Los bovinos actúan como huéspedes intermediarios de T. saginata. Los cisticercos en carne insuficientemente cocinada pueden continuar el ciclo en personas.",
+      "fuente": "CDC, DPDx, Taeniasis, Hosts and Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q229",
+      "pregunta": "En una infección por larvas tisulares de Taenia solium a partir de huevos ingeridos, ¿qué papel tiene la persona en ese caso?",
+      "opciones": [
+        "Huésped definitivo por definición en toda exposición a Taenia.",
+        "Huésped intermediario accidental.",
+        "Vector artrópodo del parásito."
+      ],
+      "correcta": 1,
+      "explicacion": "En la cisticercosis la persona alberga la fase larvaria, como un intermediario accidental. El adulto intestinal corresponde a la teniasis.",
+      "fuente": "CDC, DPDx, Cysticercosis, Hosts and Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos: cestodos (tenias)** | **Alargados y segmentados en proglótides**, con **escólex** (cabeza con órganos de fijación) | **Hermafroditas**. **No tienen tubo digestivo**: absorben por la superficie. De 2-3 mm a 10 m. Ejemplo: ***Taenia*** |"
+    },
+    {
+      "id": "t15-q230",
+      "pregunta": "Un corte muestra un gusano redondo, con cutícula y con boca y ano. ¿Qué grupo se ajusta al conjunto de rasgos?",
+      "opciones": [
+        "Trematodos foliáceos.",
+        "Cestodos.",
+        "Nematodos."
+      ],
+      "correcta": 2,
+      "explicacion": "La forma cilíndrica y el tubo digestivo completo son característicos del grupo descrito. Las tenias carecen de tubo digestivo.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Roundworms · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q231",
+      "pregunta": "Se contrastan anatomías digestivas de un Ascaris y una Taenia. ¿Cuál es la comparación correcta?",
+      "opciones": [
+        "Ascaris tiene tubo digestivo completo y Taenia absorbe nutrientes sin tubo digestivo.",
+        "Taenia tiene tubo digestivo completo y Ascaris carece de él.",
+        "Los dos carecen de tubo digestivo y ambos tienen escólex."
+      ],
+      "correcta": 0,
+      "explicacion": "Ascaris representa los nematodos con tubo digestivo completo. Los cestodos como Taenia absorben a través de su superficie.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Roundworms and Tapeworms · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q232",
+      "pregunta": "En el esquema de un nematodo, ¿qué acontecimiento separa estadios larvarios durante el desarrollo hacia el adulto?",
+      "opciones": [
+        "La pérdida del escólex y la formación posterior de ventosas.",
+        "La muda de la cutícula.",
+        "El desprendimiento de proglótides."
+      ],
+      "correcta": 1,
+      "explicacion": "Los estadios larvarios se suceden con mudas de la cutícula. La pauta general del grupo descrito comprende cuatro.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, Nematode Life Cycles · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q233",
+      "pregunta": "Se observan huevos de Ascaris recién eliminados. ¿Qué proceso debe ocurrir en los huevos fértiles para que produzcan la infección típica al ser ingeridos?",
+      "opciones": [
+        "Desarrollarse la larva en el huevo bajo condiciones ambientales adecuadas.",
+        "Transformarse primero en un cisticerco muscular en un bovino.",
+        "Entrar en un caracol y salir convertidos en cercarias."
+      ],
+      "correcta": 0,
+      "explicacion": "Los huevos fértiles se desarrollan en el ambiente hasta contener la fase infectante. Los huevos recién excretados no tienen por ello la misma infectividad.",
+      "fuente": "CDC, DPDx, Ascariasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q234",
+      "pregunta": "¿Qué órgano ocupa un papel transitorio en la migración larvaria de Ascaris antes de que los adultos se establezcan en el intestino?",
+      "opciones": [
+        "La vejiga urinaria como localización principal del adulto.",
+        "La córnea.",
+        "Los pulmones."
+      ],
+      "correcta": 2,
+      "explicacion": "Tras la eclosión, las larvas migran por la circulación a los pulmones. Luego ascienden por vías respiratorias, se degluten y maduran en el intestino.",
+      "fuente": "CDC, DPDx, Ascariasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q235",
+      "pregunta": "Se quiere recuperar los huevos depositados por Enterobius en pliegues perianales. ¿Qué tipo de muestra aplica directamente el método descrito por los CDC?",
+      "opciones": [
+        "Filtrado de agua potable en membrana para colífagos.",
+        "Cinta adhesiva transparente aplicada a los pliegues perianales.",
+        "Hisopado de la mucosa nasal para recuperar cercarias."
+      ],
+      "correcta": 1,
+      "explicacion": "Los huevos quedan adheridos a la cinta y se examinan al microscopio. La toma se dirige al lugar donde son depositados.",
+      "fuente": "CDC, DPDx, Enterobiasis, Laboratory Diagnosis · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q236",
+      "pregunta": "¿Por qué tiene sentido programar por la mañana una toma perianal antes de la primera deposición cuando se investiga Enterobius?",
+      "opciones": [
+        "Los huevos aparecen solo tres semanas después de la toma de sangre.",
+        "Los adultos salen de un caracol acuático al amanecer antes de infectar a la persona.",
+        "Las hembras grávidas suelen migrar de noche y dejar los huevos en la piel perianal."
+      ],
+      "correcta": 2,
+      "explicacion": "La deposición nocturna de huevos explica la oportunidad de una toma temprana en la región perianal.",
+      "fuente": "CDC, DPDx, Enterobiasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Nematodos (gusanos redondos)** | **Cilíndricos**, con **cutícula** | **Sexos separados**. **Tubo digestivo completo**. **Cuatro mudas** de larva a adulto. Ejemplos: *Ascaris*, *Enterobius*, ***Dracunculus*** |"
+    },
+    {
+      "id": "t15-q237",
+      "pregunta": "Al estudiar la transmisión habitual de Dracunculus por agua superficial sin filtrar, ¿qué componente del agua introduce la fase larvaria en el huésped?",
+      "opciones": [
+        "Un copépodo infectado que se ingiere con el agua.",
+        "Una cercaria libre que penetra por la piel al bañarse.",
+        "Una proglótide que se desarrolla dentro de un caracol."
+      ],
+      "correcta": 0,
+      "explicacion": "El copépodo alberga las larvas infectantes. Tras ser ingerido, libera esas larvas al morir en el tubo digestivo.",
+      "fuente": "CDC, DPDx, Dracunculiasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "- ***Dracunculus medinensis*** (gusano de Guinea), al beber agua con **copépodos** infectados;"
+    },
+    {
+      "id": "t15-q238",
+      "pregunta": "En el ciclo del gusano de Guinea, ¿qué contribución puede tener el contacto con agua de una lesión cutánea que contiene una hembra adulta?",
+      "opciones": [
+        "Impedir que la hembra libere larvas y cortar el ciclo necesariamente.",
+        "Permitir que se liberen larvas en el agua y que las ingieran copépodos.",
+        "Producir cisticercos en el agua que maduran a tenias adultas libres."
+      ],
+      "correcta": 1,
+      "explicacion": "En el ciclo descrito, la hembra puede liberar larvas al agua. Los copépodos adquieren esas larvas y mantienen el ciclo.",
+      "fuente": "CDC, DPDx, Dracunculiasis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "- ***Dracunculus medinensis*** (gusano de Guinea), al beber agua con **copépodos** infectados;"
+    },
+    {
+      "id": "t15-q239",
+      "pregunta": "Un registro de helmintos humanos reserva una categoría para gusanos de cabeza espinosa. ¿Qué grupo corresponde a esa descripción común?",
+      "opciones": [
+        "Acantocéfalos.",
+        "Cestodos.",
+        "Trematodos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los CDC incluyen a los acantocéfalos como los gusanos de cabeza espinosa, separados de los platelmintos y los nematodos.",
+      "fuente": "CDC, About Parasites, Helminths · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Acantocéfalos** | Gusanos de cabeza espinosa | El tercer grupo de los CDC |"
+    },
+    {
+      "id": "t15-q240",
+      "pregunta": "Se quiere investigar un riesgo de helmintos ligado al riego con aguas residuales sin tratar. ¿Qué etapa ambiental de Ascaris y Trichuris es pertinente vigilar?",
+      "opciones": [
+        "Proglótides de ambos géneros, que son cestodos.",
+        "Viriones con envoltura que se cuentan como placas de lisis.",
+        "Huevos que puedan persistir y llegar a cultivos o suelo."
+      ],
+      "correcta": 2,
+      "explicacion": "Ascaris y Trichuris son nematodos cuyos huevos pueden contaminar el medio. Su presencia es relevante en el uso agrícola de aguas residuales.",
+      "fuente": "OMS, Guías de calidad del agua de bebida, cap. 11, helmintos; guías de uso seguro de aguas residuales, vol. 2 · apunte §8",
+      "apartado": "8",
+      "evidencia": "- La **ascariasis**, la **tricuriasis** y otras se asocian al uso de **aguas residuales sin tratar en la agricultura**."
+    },
+    {
+      "id": "t15-q241",
+      "pregunta": "Un listado afirma que todo helminto acuático se adquiere por beber agua. ¿Qué comparación muestra por qué debe especificarse la vía?",
+      "opciones": [
+        "Los dos se transmiten solo al tragar huevos del mismo tipo.",
+        "Dracunculus puede adquirirse al beber agua con copépodos y Schistosoma por penetración cutánea de cercarias.",
+        "Schistosoma requiere copépodos ingeridos y Dracunculus cercarias libres por contacto."
+      ],
+      "correcta": 1,
+      "explicacion": "La relación con el agua no fija una vía única. Las fases y los hospedadores del ciclo determinan cómo se adquiere cada parásito.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, helmintos; CDC, DPDx, Dracunculiasis · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **El agua de bebida no suele transmitir helmintos.**"
+    },
+    {
+      "id": "t15-q242",
+      "pregunta": "Una muestra tiene clorofila a elevada. ¿Qué dato adicional ayudaría a saber si predominan las cianobacterias frente a otras algas del fitoplancton?",
+      "opciones": [
+        "Tomar la clorofila a como medida directa del número de especies de cianobacterias.",
+        "Identificar automáticamente todas las células como cianobacterias a partir de la clorofila a.",
+        "Identificar y estimar los grupos por microscopía o con marcadores adicionales apropiados."
+      ],
+      "correcta": 2,
+      "explicacion": "La clorofila a es común a varios componentes del fitoplancton. Su concentración total no resuelve la composición.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 13, análisis de pigmentos · apunte §9",
+      "apartado": "9",
+      "evidencia": "- Todo el fitoplancton, algas y cianobacterias, tiene **clorofila a**."
+    },
+    {
+      "id": "t15-q243",
+      "pregunta": "En un cultivo de cianobacterias, al iluminarlo se observa producción de oxígeno asociada a la actividad fotosintética. ¿Qué tipo de fotosíntesis ilustra?",
+      "opciones": [
+        "Fotosíntesis oxigénica.",
+        "Fotosíntesis anoxigénica.",
+        "Fermentación alcohólica de tipo levadura."
+      ],
+      "correcta": 0,
+      "explicacion": "La fotosíntesis oxigénica libera oxígeno. Las cianobacterias pueden efectuarla con su aparato fotosintético propio.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, características de cianobacterias · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Hacen la fotosíntesis oxigénica** y tienen **clorofila a**, como las plantas. Además tienen un **pigmento azul propio**, la **ficocianina**."
+    },
+    {
+      "id": "t15-q244",
+      "pregunta": "En cortes de una célula pigmentada hay membranas fotosintéticas internas, pero no se observa cloroplasto ni núcleo membranoso. ¿Qué organización explica esa combinación?",
+      "opciones": [
+        "La de un moho que desarrolla cloroplastos al formar hifas.",
+        "La de una cianobacteria procariota.",
+        "La de un alga con todas las características eucariotas observables."
+      ],
+      "correcta": 1,
+      "explicacion": "Las cianobacterias fotosintetizan en membranas internas sin cloroplastos. Carecen de envoltura nuclear por su organización procariota.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, organización celular · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **No tienen núcleo ni cloroplastos**: la clorofila está en membranas internas, los **tilacoides**. Así se distinguen al microscopio de las algas."
+    },
+    {
+      "id": "t15-q245",
+      "pregunta": "Al fraccionar una cianobacteria del género Microcystis, ¿qué estructura celular interesa para localizar su clorofila y aparato fotosintético?",
+      "opciones": [
+        "Los tilacoides internos.",
+        "Un cloroplasto separado del citoplasma por doble membrana.",
+        "Un núcleo con envoltura donde se concentra la clorofila."
+      ],
+      "correcta": 0,
+      "explicacion": "En cianobacterias como Microcystis, la clorofila se asocia a membranas tilacoidales internas. No se organiza en cloroplastos.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, organización y fotosíntesis · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **No tienen núcleo ni cloroplastos**: la clorofila está en membranas internas, los **tilacoides**. Así se distinguen al microscopio de las algas."
+    },
+    {
+      "id": "t15-q246",
+      "pregunta": "Se quiere complementar la señal de clorofila a al vigilar cianobacterias en agua dulce. ¿Qué pigmento señala la OMS como especialmente útil para orientar esa vigilancia?",
+      "opciones": [
+        "Carotenoides como prueba exclusiva del linaje bacteriano.",
+        "Clorofila c como marcador general de todas las cianobacterias.",
+        "Ficocianina."
+      ],
+      "correcta": 2,
+      "explicacion": "La ficocianina es un pigmento asociado a cianobacterias y complementa la información de la clorofila a total. Su señal debe interpretarse con el contexto del agua.",
+      "fuente": "OMS, Management of Cyanobacteria in Drinking-water Supplies, 2.ª ed., § 5.3; Toxic Cyanobacteria in Water, cap. 13 · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Hacen la fotosíntesis oxigénica** y tienen **clorofila a**, como las plantas. Además tienen un **pigmento azul propio**, la **ficocianina**."
+    },
+    {
+      "id": "t15-q247",
+      "pregunta": "Se propone informar microcistina LR en µg/L a partir de una lectura de clorofila a, sin determinar la toxina. ¿Qué variable mide realmente esa lectura?",
+      "opciones": [
+        "La cantidad de microcistina LR con la misma selectividad que un ensayo de toxinas.",
+        "La concentración de un pigmento fotosintético, que puede orientar sobre biomasa.",
+        "El número de cepas productoras de toxina de una sola especie."
+      ],
+      "correcta": 1,
+      "explicacion": "La clorofila a es un indicador de biomasa fotosintética. Hace falta una determinación específica para informar la toxina.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 13, pigmentos del fitoplancton · apunte §9",
+      "apartado": "9",
+      "evidencia": "- Todo el fitoplancton, algas y cianobacterias, tiene **clorofila a**."
+    },
+    {
+      "id": "t15-q248",
+      "pregunta": "Un recuento microscópico identifica diatomeas en el material fotosintético. ¿Cómo se clasifican en la comparación que hace el apunte?",
+      "opciones": [
+        "Hongos filamentosos que adquieren cloroplastos del hospedador.",
+        "Cianobacterias, porque toda célula fotosintética del agua es bacteriana.",
+        "Algas eucariotas del fitoplancton, con cloroplastos."
+      ],
+      "correcta": 2,
+      "explicacion": "Las diatomeas son microalgas eucariotas. Compartir un medio acuático con las cianobacterias no las sitúa en el mismo grupo.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 13, pigmentos; NOAA Ocean Service, What are phytoplankton? · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Diatomeas y crisofíceas** | **Carotenoides** |"
+    },
+    {
+      "id": "t15-q249",
+      "pregunta": "Un análisis de pigmentos informa carotenoides en una comunidad donde hay diatomeas y crisofíceas. ¿Qué interpretación evita exceder el alcance del dato?",
+      "opciones": [
+        "El perfil de pigmentos puede orientar sobre grupos, y una señal aislada no identifica una especie.",
+        "La sola detección de un carotenoide demuestra una especie concreta de diatomea.",
+        "Los carotenoides identifican siempre otros organismos y excluyen esas algas."
+      ],
+      "correcta": 0,
+      "explicacion": "En estos grupos hay carotenoides característicos. La composición de una comunidad requiere interpretar el perfil junto con otros datos.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 13, marcadores pigmentarios del fitoplancton · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Diatomeas y crisofíceas** | **Carotenoides** |"
+    },
+    {
+      "id": "t15-q250",
+      "pregunta": "Un informe de saxitoxinas afirma que su detección demuestra por sí sola la presencia de dinoflagelados. ¿Cómo se corrige esa atribución?",
+      "opciones": [
+        "Las saxitoxinas son pigmentos presentes en todas las células con clorofila.",
+        "También hay cianobacterias capaces de producir saxitoxinas. El origen requiere evidencia adicional.",
+        "Todos los productores son dinoflagelados incluso en aguas dominadas por cianobacterias."
+      ],
+      "correcta": 1,
+      "explicacion": "Hay productores entre dinoflagelados y cianobacterias. Identificar el compuesto no identifica por sí solo el organismo que lo produjo.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 2, Saxitoxins · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Dinoflagelados** | Algunos producen **saxitoxinas**: son **algas tóxicas** |"
+    },
+    {
+      "id": "t15-q251",
+      "pregunta": "Un equipo trata la ficoeritrina como prueba de que una muestra carece de algas eucariotas. ¿Qué ejemplo del apunte invalida esa inferencia?",
+      "opciones": [
+        "Las criptofíceas son algas eucariotas en las que puede encontrarse ficoeritrina.",
+        "Las criptofíceas son nematodos y solo tienen ficocianina.",
+        "Las diatomeas carecen de cualquier pigmento fotosintético."
+      ],
+      "correcta": 0,
+      "explicacion": "Un pigmento puede aparecer en linajes distintos. La tabla señala la ficoeritrina entre los pigmentos de criptofíceas.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 13, pigmentos del fitoplancton · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Criptofíceas** | **Clorofila c**, ficoeritrina |"
+    },
+    {
+      "id": "t15-q252",
+      "pregunta": "En una ficha antigua se anotó «alga verdeazulada». ¿Cómo modernizar la descripción si la estructura corresponde a una cianobacteria?",
+      "opciones": [
+        "Clasificarlo como arquea por presentar pigmentos en agua.",
+        "Clasificarlo como alga eucariota porque la ficha antigua usa la palabra alga.",
+        "Clasificar el organismo como bacteria fotosintética y conservar el término histórico como referencia."
+      ],
+      "correcta": 2,
+      "explicacion": "El nombre histórico reflejaba la apariencia y la fotosíntesis. La organización procariota y la clasificación molecular sitúan las cianobacterias en Bacteria.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, clasificación y nomenclatura · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Son bacterias**, aunque se llamaron «**algas verdeazuladas**» y se clasificaron como plantas."
+    },
+    {
+      "id": "t15-q253",
+      "pregunta": "En el microscopio una cianobacteria filamentosa cambia de posición sin que se aprecien apéndices de propulsión. ¿Qué mecanismo es compatible con ese comportamiento?",
+      "opciones": [
+        "Motilidad exclusiva por flagelos como en Giardia.",
+        "Movimiento por deslizamiento.",
+        "Fisión simultánea de todos sus cloroplastos."
+      ],
+      "correcta": 1,
+      "explicacion": "Algunas cianobacterias filamentosas se desplazan por deslizamiento. No necesitan flagelos para hacerlo.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, formas y motilidad · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **No tienen flagelos**, aunque muchas filamentosas **se deslizan**."
+    },
+    {
+      "id": "t15-q254",
+      "pregunta": "Dos muestras albergan cianobacterias y se observan en colonias en una y formando filamentos en la otra. ¿Qué indica esa diferencia morfológica?",
+      "opciones": [
+        "Cualquier filamento con clorofila pertenece al reino de los hongos.",
+        "Solo la forma colonial se permite dentro del dominio Bacteria.",
+        "Ambas disposiciones se encuentran en cianobacterias y pueden ayudar a caracterizarlas."
+      ],
+      "correcta": 2,
+      "explicacion": "La morfología cianobacteriana abarca células aisladas, colonias y filamentos. La forma ayuda a caracterizar, pero no basta para asignar una especie.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, diversidad morfológica · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Formas:** unicelulares, en colonias o en **filamentos**."
+    },
+    {
+      "id": "t15-q255",
+      "pregunta": "Una población cianobacteriana crece aumentando el número de células de un filamento. ¿Qué proceso describe directamente ese aumento?",
+      "opciones": [
+        "División celular.",
+        "Meiosis de cloroplastos.",
+        "Formación de un cigoto tras la fusión de dos gametos."
+      ],
+      "correcta": 0,
+      "explicacion": "Las células se multiplican por división. La organización en filamento no implica un ciclo de reproducción sexual.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, crecimiento y reproducción · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **No tienen reproducción sexual**: solo **división celular**."
+    },
+    {
+      "id": "t15-q256",
+      "pregunta": "Con poco nitrógeno inorgánico combinado y condiciones por lo demás favorables, ¿qué capacidad podría dar ventaja a ciertas cianobacterias?",
+      "opciones": [
+        "Sustituir todo su nitrógeno celular por fósforo.",
+        "Usar el nitrógeno molecular mediante fijación de nitrógeno.",
+        "Producir nitrógeno elemental a partir de la clorofila que se pierde."
+      ],
+      "correcta": 1,
+      "explicacion": "Algunas cianobacterias fijan nitrógeno molecular y pueden usarlo como fuente. La capacidad no es universal en el grupo.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, fijación de nitrógeno · apunte §9",
+      "apartado": "9",
+      "evidencia": "- Algunas **fijan el nitrógeno** del agua."
+    },
+    {
+      "id": "t15-q257",
+      "pregunta": "Dos catálogos asignan nombres diferentes a una cianobacteria. ¿Qué particularidad histórica ayuda a interpretar esa divergencia?",
+      "opciones": [
+        "Su nomenclatura se ha tratado en el código de procariotas y en el de algas, hongos y plantas.",
+        "El nombre taxonómico se asigna según cuánto pigmento se midió cada día.",
+        "El código de virus obliga a cambiar el nombre cada vez que se detecta una toxina."
+      ],
+      "correcta": 0,
+      "explicacion": "Hubo tradiciones de clasificación botánica y bacteriológica para las cianobacterias. Por ello pueden coexistir nombres en registros de sistemas distintos.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 3, taxonomía y nomenclatura · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Su nomenclatura la tratan dos códigos**: el de algas, hongos y plantas y el de bacterias. Por eso el número de especies varía según quién las identifique."
+    },
+    {
+      "id": "t15-q258",
+      "pregunta": "En un embalse se observa un aumento marcado de biomasa cianobacteriana bajo condiciones favorables. ¿Qué describe el término floración en este contexto?",
+      "opciones": [
+        "La formación de flores y semillas por las células bacterianas.",
+        "Un cambio de nombre de una sola cepa, sin cambio de biomasa.",
+        "Una proliferación o acumulación de organismos fotosintéticos detectable en el agua."
+      ],
+      "correcta": 2,
+      "explicacion": "El término floración se usa para episodios de proliferación o acumulación de biomasa. No supone órganos florales.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 4, ocurrencia y condiciones · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Floraciones (*blooms*)** cuando las condiciones las favorecen."
+    },
+    {
+      "id": "t15-q259",
+      "pregunta": "Se observan dos floraciones con densidades celulares parecidas. ¿Por qué no basta ese dato para suponer igual concentración de toxinas?",
+      "opciones": [
+        "Todas las células de una floración producen exactamente la misma cantidad de microcistina LR.",
+        "Puede variar la proporción de cepas productoras y la cantidad de toxina por célula.",
+        "Al mantenerse la densidad, las toxinas solo pueden proceder de algas de otra muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "La densidad aporta información sobre biomasa, pero hay diferencias de producción entre poblaciones y condiciones.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., caps. 2 y 4, toxinas y poblaciones productoras · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Cianotoxinas:** **microcistinas**, cilindrospermopsinas, anatoxinas y saxitoxinas."
+    },
+    {
+      "id": "t15-q260",
+      "pregunta": "Un método cuantifica solo microcistina LR. ¿Qué alcance debe tener la conclusión de ese resultado?",
+      "opciones": [
+        "Mide directamente la clorofila a porque ambas son la misma sustancia.",
+        "Cuantifica por igual todas las variantes de microcistina y todas las cianotoxinas.",
+        "Se refiere a esa variante de microcistina, dentro del alcance comprobado del método."
+      ],
+      "correcta": 2,
+      "explicacion": "La microcistina LR es una variante específica. Para extender el resultado a otras variantes o toxinas se requieren determinaciones adecuadas.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 2, Microcystins · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Cianotoxinas:** **microcistinas**, cilindrospermopsinas, anatoxinas y saxitoxinas."
+    },
+    {
+      "id": "t15-q261",
+      "pregunta": "Un olor terroso lleva a medir geosmina. ¿Qué diferencia debe mantenerse frente al análisis de microcistina LR?",
+      "opciones": [
+        "La geosmina aporta información sobre olor y sabor. La microcistina LR requiere una determinación específica.",
+        "La geosmina se convierte automáticamente en microcistina durante la medición.",
+        "Detectar geosmina confirma que se ha superado el límite de microcistina LR."
+      ],
+      "correcta": 0,
+      "explicacion": "Olor y toxicidad corresponden a compuestos y resultados distintos. El olor no cuantifica la concentración de cianotoxinas.",
+      "fuente": "EPA, Recommendations for Public Water Systems to Manage Cyanotoxins, compuestos de olor y sabor; OMS, Toxic Cyanobacteria in Water · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Mal olor y sabor**: **geosmina** y 2-metilisoborneol."
+    },
+    {
+      "id": "t15-q262",
+      "pregunta": "¿Qué par reúne dos compuestos asociados a episodios de olor y sabor producidos por algunas cianobacterias?",
+      "opciones": [
+        "Clorofila a y ADN bicatenario.",
+        "Geosmina y 2-metilisoborneol.",
+        "Microcistina LR y peptidoglicano."
+      ],
+      "correcta": 1,
+      "explicacion": "Geosmina y 2-metilisoborneol pueden producir notas terrosas o mohosas en el agua.",
+      "fuente": "EPA, Recommendations for Public Water Systems to Manage Cyanotoxins, compuestos organolépticos · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Mal olor y sabor**: **geosmina** y 2-metilisoborneol."
+    },
+    {
+      "id": "t15-q263",
+      "pregunta": "La filtración retiene muchas células, pero aún queda toxina disuelta en el agua filtrada. ¿Qué diferencia de las dos fracciones explica ese resultado?",
+      "opciones": [
+        "Una fracción está asociada a células y otra puede permanecer fuera de ellas en solución.",
+        "Ambas fracciones se retienen siempre igual al eliminar cualquier célula.",
+        "La toxina disuelta solo existe como cianobacteria entera durante la filtración."
+      ],
+      "correcta": 0,
+      "explicacion": "Los procesos que separan células intactas no necesariamente eliminan la toxina ya presente en la fase disuelta.",
+      "fuente": "EPA, Summary of Cyanotoxins Treatment in Drinking Water, separación de células y toxina disuelta · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Dificultan la coagulación y la filtración.**"
+    },
+    {
+      "id": "t15-q264",
+      "pregunta": "En una muestra con cianobacterias productoras, un tratamiento provoca rotura celular. ¿Qué cambio puede ocurrir aunque disminuya el recuento de células intactas?",
+      "opciones": [
+        "Convertirse todas las toxinas en células de fitoplancton más grandes.",
+        "Desaparecer necesariamente toda la toxina a la vez que se rompe cada célula.",
+        "Aumentar la fracción de toxina liberada al agua."
+      ],
+      "correcta": 2,
+      "explicacion": "La lisis puede liberar cianotoxinas intracelulares. El número de células intactas y la fracción disuelta pueden evolucionar de modo diferente.",
+      "fuente": "EPA, Learn about Harmful Algae, Cyanobacteria and Cyanotoxins; OMS, Toxic Cyanobacteria in Water, cap. 10 · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Cianotoxinas:** **microcistinas**, cilindrospermopsinas, anatoxinas y saxitoxinas."
+    },
+    {
+      "id": "t15-q265",
+      "pregunta": "La captación de un embalse da 1,00 µg/L de microcistina LR. ¿Activa por esa sola cifra la condición que exige que se supere 1 µg/L para incorporar clorofila a?",
+      "opciones": [
+        "Sí. Se activa desde la igualdad con el umbral en ese enunciado.",
+        "No. Igualar el umbral no significa superarlo.",
+        "Sí. La cifra equivale ya a más de 50 mg/m³ de clorofila a."
+      ],
+      "correcta": 1,
+      "explicacion": "El anexo formula un umbral estricto para esa acción en captación. La clorofila a es otra magnitud y requiere su propio ensayo.",
+      "fuente": "Real Decreto 3/2023, anexo II, parte B, punto 5.c, control operacional · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **En el RD 3/2023**, en la captación de embalses y lagos, si la **microcistina LR** supera **1 µg/L** se controla la **clorofila a**."
+    },
+    {
+      "id": "t15-q266",
+      "pregunta": "Tras activar el control de clorofila a en la captación de un lago, se obtienen 0,055 mg/L. ¿Qué actuación procede según el segundo umbral del anexo?",
+      "opciones": [
+        "Registrar solo el olor porque no se supera el umbral de 50 mg/m³.",
+        "Cerrar el control, porque 0,055 mg/L son 0,055 mg/m³.",
+        "Identificar cianobacterias y otras cianotoxinas, porque 0,055 mg/L son 55 mg/m³."
+      ],
+      "correcta": 2,
+      "explicacion": "Un metro cúbico son mil litros. Multiplicar por 1.000 da 55 mg/m³, superior al umbral operativo de 50 mg/m³.",
+      "fuente": "Real Decreto 3/2023, anexo II, parte B, punto 5.c, control operacional · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **En el RD 3/2023**, en la captación de embalses y lagos, si la **microcistina LR** supera **1 µg/L** se controla la **clorofila a**."
+    },
+    {
+      "id": "t15-q267",
+      "pregunta": "En una ficha operativa se asignan 50 mg/m³ a microcistina LR y 1 µg/L a clorofila a. ¿Cuál es la asignación correcta de esos dos umbrales en la secuencia de control de captación?",
+      "opciones": [
+        "1 µg/L corresponde a microcistina LR y 50 mg/m³ a clorofila a.",
+        "50 mg/m³ corresponde a microcistina LR y 1 µg/L a clorofila a.",
+        "Ambas cifras corresponden a colífagos, expresados en unidades de masa."
+      ],
+      "correcta": 0,
+      "explicacion": "El control escalonado empieza con microcistina LR. Si supera su umbral se examina clorofila a, que activa una actuación posterior cuando supera el suyo.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte B, parámetro 24; anexo II, parte B, punto 5.c · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **En el RD 3/2023**, en la captación de embalses y lagos, si la **microcistina LR** supera **1 µg/L** se controla la **clorofila a**."
+    },
+    {
+      "id": "t15-q268",
+      "pregunta": "En una muestra hay células con cloroplastos y otras sin cloroplastos que también presentan fotosíntesis oxigénica. ¿Qué lectura es compatible con el apunte?",
+      "opciones": [
+        "La presencia de fotosíntesis descarta que haya procariotas en la muestra.",
+        "Pueden coexistir algas eucariotas y cianobacterias.",
+        "Las células sin cloroplastos son necesariamente hongos fotosintéticos."
+      ],
+      "correcta": 1,
+      "explicacion": "Algas eucariotas y cianobacterias pueden compartir capacidad fotosintética. Se distinguen por su organización y localización del aparato fotosintético.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., caps. 3 y 13 · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Fotosintéticas**, con **cloroplastos**."
+    },
+    {
+      "id": "t15-q269",
+      "pregunta": "Se comparan una cápside de adenovirus de 100 nm y un ooquiste de Cryptosporidium de 5 µm. ¿Cuántas veces mayor es el diámetro del ooquiste en el ejemplo?",
+      "opciones": [
+        "50 veces.",
+        "5 veces.",
+        "500 veces."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 100 nm del adenovirus son 0,1 µm. Dividir 5 µm por 0,1 µm da una razón de 50.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, cap. 11, adenovirus; CDC, DPDx, Cryptosporidiosis · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Virus | Del orden de **nanómetros**: la cápside de un adenovirus, **90-100 nm**; la más pequeña, unos **17 nm** |"
+    },
+    {
+      "id": "t15-q270",
+      "pregunta": "En la muestra hay un fragmento adulto visible de tenia y estructuras microscópicas de unos 30 µm. ¿Por qué ver el adulto a simple vista no descarta que ambas etapas pertenezcan al mismo grupo?",
+      "opciones": [
+        "El tamaño microscópico hace que las estructuras deban ser protozoos vivos.",
+        "Los huevos de todos los helmintos deben ser más grandes que el adulto.",
+        "Los adultos de helmintos pueden ser visibles y sus huevos tener tamaño microscópico."
+      ],
+      "correcta": 2,
+      "explicacion": "La escala de las fases de un helminto cambia. Un huevo microscópico puede corresponder a un adulto macroscópico.",
+      "fuente": "CDC, About Parasites, Helminths; DPDx, Taeniasis, Eggs · apunte §2",
+      "apartado": "2",
+      "evidencia": "| Helmintos adultos | **Visibles a simple vista**: una tenia mide de 2-3 mm a **10 m** |"
+    },
+    {
+      "id": "t15-q271",
+      "pregunta": "En una ficha laboral se separan los cultivos celulares de los agentes que pueden contaminarlos. ¿Cuál de estos puede ser un microorganismo contaminante sin dejar de ser diferente del cultivo celular que se manipula?",
+      "opciones": [
+        "La propia línea de células humanas que se intenta mantener.",
+        "Un micoplasma.",
+        "El medio sintético estéril sin células."
+      ],
+      "correcta": 1,
+      "explicacion": "La línea de células humanas constituye el cultivo celular. Un micoplasma es una bacteria que puede contaminarlo.",
+      "fuente": "INSST, Guía técnica de agentes biológicos (2024), comentario al art. 2; BOE, RD 664/1997 · apunte §2",
+      "apartado": "2",
+      "evidencia": "| **Microorganismos** | **Virus, bacterias, hongos filamentosos y levaduras** |"
+    },
+    {
+      "id": "t15-q272",
+      "pregunta": "Dos fichas identifican organismos de la misma familia pero de géneros distintos. ¿Qué relación puede afirmarse a ese nivel?",
+      "opciones": [
+        "Pertenecer a una familia común exige ser cepas de una única especie.",
+        "Para tener la misma familia tendrían que compartir género y especie.",
+        "La familia compartida admite varios géneros y no implica que sean la misma especie."
+      ],
+      "correcta": 2,
+      "explicacion": "La familia es un rango superior al género. Puede agrupar géneros y especies distintos.",
+      "fuente": "LPSN (DSMZ), clasificación y nomenclatura; Código Internacional de Nomenclatura de Procariotas · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "**Los rangos**, de mayor a menor (LPSN): **dominio, reino, filo, clase, orden, familia, género y especie**."
+    },
+    {
+      "id": "t15-q273",
+      "pregunta": "En un listado aparecen Legionella pneumophila y Legionella longbeachae. ¿Qué muestran sus binomios sobre el rango que comparten?",
+      "opciones": [
+        "Pertenecen al mismo género y tienen epítetos específicos distintos.",
+        "El primer término es el nombre de especie completa y el segundo designa la cepa.",
+        "Son la misma especie porque comparten la primera palabra."
+      ],
+      "correcta": 0,
+      "explicacion": "Legionella es el género. Los epítetos distintos forman binomios de especies distintas dentro de él.",
+      "fuente": "Código Internacional de Nomenclatura de Procariotas, regla 12a; LPSN, Nomenclature · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "**El nombre científico es binomial:** **género + epíteto específico**, por ejemplo *Escherichia coli*. La nomenclatura de los procariotas la rige el **Código Internacional de Nomenclatura de Procariotas**. Algas, hongos y plantas tienen el suyo."
+    },
+    {
+      "id": "t15-q274",
+      "pregunta": "Ya se conoce la especie de varios aislados. El estudio compara los plásmidos para saber si comparten un perfil asociado a un brote. ¿Qué nivel de análisis ilustra?",
+      "opciones": [
+        "Asignación de un epíteto nuevo para cada plásmido.",
+        "Caracterización de aislados por debajo del nivel de especie.",
+        "Identificación del dominio a partir de la presencia de un núcleo."
+      ],
+      "correcta": 1,
+      "explicacion": "Los perfiles plasmídicos pueden ayudar a distinguir o relacionar cepas de una especie. No son por sí solos nuevos nombres taxonómicos.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 3, Subtyping · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "- **Por debajo de la especie** se distinguen **serotipos**, toxinas, **plásmidos** o **fagotipos**. Ejemplo: ***E. coli* O157:H7**, un serotipo patógeno."
+    },
+    {
+      "id": "t15-q275",
+      "pregunta": "Una clave coloca a todos los organismos sin envoltura nuclear en Bacteria e incluye arqueas metanógenas en esa columna. ¿Qué ajuste pide la clasificación descrita?",
+      "opciones": [
+        "Conservar su carácter procariota y asignar esas arqueas al dominio Archaea.",
+        "Moverlas al reino de los hongos porque una bacteria no puede vivir sin oxígeno.",
+        "Mantener Bacteria como dominio y escribir Archaea como un género de bacterias."
+      ],
+      "correcta": 0,
+      "explicacion": "Procariota describe su organización. Archaea designa un dominio distinto en el sistema propuesto.",
+      "fuente": "Woese, Kandler y Wheelis, PNAS 87 (1990), 4576–4579, doi:10.1073/pnas.87.12.4576 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "- ***Archaea***: entre otras, las **metanógenas** y las **termófilas extremas**;"
+    },
+    {
+      "id": "t15-q276",
+      "pregunta": "¿Qué rasgo comparten una levadura y un protozoo que ayuda a distinguirlos de una bacteria típica, aunque los tres puedan ser unicelulares?",
+      "opciones": [
+        "Una pared de peptidoglicano grueso.",
+        "La capacidad universal de fotosíntesis con cloroplastos.",
+        "Un núcleo delimitado por membrana."
+      ],
+      "correcta": 2,
+      "explicacion": "La unicelularidad se encuentra en los tres grupos. El tipo de organización nuclear distingue a los dos eucariotas de la bacteria.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., caps. 2, 73 y 77, organización celular · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "| **Núcleo** | **Nucleoide**: ADN sin membrana nuclear | **Núcleo con membrana** |"
+    },
+    {
+      "id": "t15-q277",
+      "pregunta": "Se identifican dos células eucariotas unicelulares. Una tiene pared fúngica y la otra una película superficial de protozoo. ¿Qué cambia entre ellas aunque compartan organización nuclear?",
+      "opciones": [
+        "El uso de material genético y ribosomas.",
+        "La naturaleza de la cubierta celular.",
+        "El hecho de que ambas pertenezcan a Eucarya."
+      ],
+      "correcta": 1,
+      "explicacion": "La pared de un hongo y la película de algunos protozoos son cubiertas diferentes. Ambas células pueden compartir organización eucariota.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., caps. 73 y 77, pared fúngica y estructura de protozoos · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "| **Pared** | Con **peptidoglicano** en las bacterias, **exclusivo de los procariotas** | Con **quitina** en los hongos. Los protozoos tienen membrana y, algunos, una **película** rígida |"
+    },
+    {
+      "id": "t15-q278",
+      "pregunta": "El informe preliminar dice «cocos en racimos» y el definitivo quiere identificar la especie solo con esa observación. ¿Qué paso falta?",
+      "opciones": [
+        "Usar la agrupación como prueba definitiva de parentesco genético.",
+        "Sustituir el nombre de especie por el tamaño de una sola célula.",
+        "Contrastar otros caracteres de identificación, porque una disposición celular es orientativa."
+      ],
+      "correcta": 2,
+      "explicacion": "La morfología y disposición apoyan una identificación preliminar. La asignación de especie necesita evidencia adicional.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Gross Morphology; cap. 3, Diagnostic Identification · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **Formas y agrupaciones** (cocos, bacilos, espirales; parejas, cadenas, racimos): son **típicas de cada género** y útiles para el diagnóstico (tema 14)."
+    },
+    {
+      "id": "t15-q279",
+      "pregunta": "Se comparan dos bacterias con el mismo antígeno somático y distinta reacción frente a anticuerpos dirigidos a flagelina. ¿Qué estructura explica la segunda diferencia?",
+      "opciones": [
+        "El flagelo, asociado con el antígeno H.",
+        "La cápside que rodea el ADN bacteriano.",
+        "La pared fúngica de quitina."
+      ],
+      "correcta": 0,
+      "explicacion": "El antígeno H de la clasificación se asocia con proteínas flagelares. La reacción distinta puede reflejar diferencias en esas estructuras.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Surface Structures · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **flagelos**, para moverse; sus proteínas son los **antígenos H**;"
+    },
+    {
+      "id": "t15-q280",
+      "pregunta": "En una ficha se usa «cápside» para la capa polisacárida más externa de una bacteria. ¿Qué pareja de anotaciones evita confundirla con la cubierta proteica de un virus?",
+      "opciones": [
+        "Cápsula proteica para ambas, sin distinguir la estructura.",
+        "Cápsula bacteriana para la primera y cápside para la segunda.",
+        "Cápside bacteriana para la primera y membrana nuclear viral para la segunda."
+      ],
+      "correcta": 1,
+      "explicacion": "La cápsula bacteriana típica puede ser polisacárida. La cápside se compone de proteínas que rodean y protegen el genoma viral.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 2, Capsule; cap. 41, Capsid · apunte §4",
+      "apartado": "4",
+      "evidencia": "- **cápsula** de polisacárido, que **protege de la fagocitosis**."
+    },
+    {
+      "id": "t15-q281",
+      "pregunta": "Se comparan un parvovirus y un adenovirus. ¿Qué dato genómico permite separarlos en los grupos II e I de Baltimore, respectivamente?",
+      "opciones": [
+        "ADN monocatenario en el primero y ADN bicatenario en el segundo.",
+        "ARN negativo en el primero y ADN monocatenario en el segundo.",
+        "Los dos tienen ADN bicatenario y solo cambia la simetría."
+      ],
+      "correcta": 0,
+      "explicacion": "Los parvovirus empaquetan una hebra de ADN. Los adenovirus llevan ADN bicatenario, por lo que corresponden a otro grupo.",
+      "fuente": "ICTV Report, Parvoviridae, Genome organisation; ViralZone (SIB), Baltimore classification · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| I | ADN bicatenario |\n| II | ADN monocatenario |\n| III | ARN bicatenario |"
+    },
+    {
+      "id": "t15-q282",
+      "pregunta": "Se compara un norovirus con el adenovirus de la ficha de agua. ¿Qué combinación de genomas corresponde, en ese orden?",
+      "opciones": [
+        "ARN bicatenario y ARN monocatenario de sentido negativo.",
+        "ADN bicatenario y ARN monocatenario de sentido positivo.",
+        "ARN monocatenario de sentido positivo y ADN bicatenario."
+      ],
+      "correcta": 2,
+      "explicacion": "Los norovirus pertenecen a Caliciviridae y tienen ARN positivo. Los adenovirus se caracterizan por ADN de doble hebra.",
+      "fuente": "ICTV Report, Caliciviridae, Genome organisation; ViralZone (SIB), Baltimore classification · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "| IV | ARN monocatenario positivo |"
+    },
+    {
+      "id": "t15-q283",
+      "pregunta": "El nombre rotavirus se asocia a una apariencia en forma de rueda. ¿Qué característica genómica sirve para clasificarlo sin depender de la imagen?",
+      "opciones": [
+        "ADN monocatenario circular.",
+        "ARN bicatenario segmentado.",
+        "ARN monocatenario no segmentado de sentido negativo."
+      ],
+      "correcta": 1,
+      "explicacion": "La apariencia ayuda a reconocer la partícula. El genoma del rotavirus tiene segmentos de ARN de doble cadena.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, rotavirus · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "- **Virus entéricos:** se transmiten por **ingestión de agua contaminada** e infectan primero el tubo digestivo. Ejemplos: **adenovirus**, **norovirus**, **rotavirus**, enterovirus, virus de las **hepatitis A y E**."
+    },
+    {
+      "id": "t15-q284",
+      "pregunta": "Al documentar un ensayo de colífagos somáticos se confunden las normas de recuento y de validación de la concentración. ¿Cómo se asignan?",
+      "opciones": [
+        "Las dos se refieren al recuento de E. coli por filtración y no a fagos.",
+        "ISO 10705-3 para recuento e ISO 10705-2 para validar concentración.",
+        "ISO 10705-2 para recuento e ISO 10705-3 para validar métodos de concentración."
+      ],
+      "correcta": 2,
+      "explicacion": "El anexo cita partes distintas según el trabajo: una para recuento y otra para la validación de la concentración de bacteriófagos.",
+      "fuente": "Real Decreto 3/2023, anexo III, parte C, punto 1.f · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **En la captación**, si superan **50 UFP/100 mL**, se controlan otros parámetros a la salida del tratamiento.\n- **Método:** **UNE-EN ISO 10705-2**."
+    },
+    {
+      "id": "t15-q285",
+      "pregunta": "Se observan 6 UFP/100 mL de colífagos somáticos en agua tratada. ¿Por qué no corresponde declararla conforme con el parámetro aplicando el umbral de 50?",
+      "opciones": [
+        "El valor paramétrico del agua de consumo es 0 y el umbral de 50 pertenece al control operacional de captación.",
+        "El valor paramétrico de todo tipo de agua es 50 UFP/100 mL por igual.",
+        "Los resultados en agua tratada se convierten automáticamente en UFC antes de compararlos."
+      ],
+      "correcta": 0,
+      "explicacion": "La tabla del agua de consumo fija 0 para colífagos somáticos. La condición de 50 está vinculada a otra fase y otro objetivo.",
+      "fuente": "Real Decreto 3/2023, anexo I, parte C, parámetro 40; anexo II, parte B, punto 5.c · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- **Colífagos somáticos**, parámetro indicador: **0 UFP/100 mL**. **UFP: unidades formadoras de placas.**"
+    },
+    {
+      "id": "t15-q286",
+      "pregunta": "Dos colecciones contienen, respectivamente, fagos que requieren el pili F y una mezcla de fagos que usan receptores somáticos. ¿Qué colección representa el grupo más definido por genoma en el apunte?",
+      "opciones": [
+        "Ambas tienen un genoma idéntico siempre que infecten E. coli.",
+        "La de colífagos F-ARN, que corresponde a fagos de ARN monocatenario.",
+        "La de los colífagos somáticos, porque todos tienen un genoma de ADN único e idéntico."
+      ],
+      "correcta": 1,
+      "explicacion": "F-ARN delimita un conjunto de fagos de ARN entre los fagos específicos del factor F. Los somáticos constituyen un conjunto más heterogéneo.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11.6, colífagos · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "| | **Colífagos somáticos** | **Colífagos F-ARN** |"
+    },
+    {
+      "id": "t15-q287",
+      "pregunta": "En un inventario se agrupan scrapie y kuru junto con dos enfermedades de agua de origen infeccioso. ¿Qué vínculo distingue esas dos primeras?",
+      "opciones": [
+        "Son encefalopatías espongiformes transmisibles asociadas a priones.",
+        "Son infecciones intestinales por quistes de Giardia.",
+        "Son enfermedades producidas por rotavirus con genoma segmentado."
+      ],
+      "correcta": 0,
+      "explicacion": "Scrapie afecta a pequeños rumiantes y kuru se describió en humanos. Ambas pertenecen a las enfermedades priónicas.",
+      "fuente": "CDC/NIH, BMBL, 6.ª ed., sección VIII-H, Prion Diseases · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "- Causan **encefalopatías espongiformes transmisibles**: Creutzfeldt-Jakob y kuru en personas, encefalopatía espongiforme bovina, *scrapie* en ovejas."
+    },
+    {
+      "id": "t15-q288",
+      "pregunta": "Una colonia está formada por células eucariotas individuales que producen yemas. ¿Qué observación adicional ayudaría a diferenciarla de un protozoo cultivado en la misma práctica?",
+      "opciones": [
+        "Observar que sus células tienen membrana plasmática.",
+        "Detectar ADN en las células de la colonia.",
+        "Detectar una pared con componentes típicos de la pared fúngica."
+      ],
+      "correcta": 2,
+      "explicacion": "Una levadura es un hongo unicelular con pared. ADN y membrana plasmática están presentes en ambos tipos celulares.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 73, Yeasts and Molds · apunte §6",
+      "apartado": "6",
+      "evidencia": "| | **Mohos (hongos filamentosos)** | **Levaduras** |"
+    },
+    {
+      "id": "t15-q289",
+      "pregunta": "Para evaluar rutas relacionadas con un agua contaminada se comparan Giardia y Balantidium. ¿Qué coincidencia de sus ciclos justifica estudiar la ingestión del agua?",
+      "opciones": [
+        "En ambos, una cercaria emerge de caracoles y penetra por la piel.",
+        "En ambos, un quiste resistente puede transmitirse por vía fecal-oral.",
+        "En ambos, un vector artrópodo es imprescindible para la infección."
+      ],
+      "correcta": 1,
+      "explicacion": "Los quistes son las formas que pueden pasar al siguiente huésped tras ingestión de alimento o agua contaminados.",
+      "fuente": "CDC, DPDx, Giardiasis y Balantidiasis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "- **fecal-oral**, los intestinales;"
+    },
+    {
+      "id": "t15-q290",
+      "pregunta": "Se buscan en agua dos formas de transmisión. Una es ovoide y mide unos 12 µm de largo. La otra es más redonda y mide unos 5 µm. ¿Qué asignación orientativa encaja mejor?",
+      "opciones": [
+        "Dos fases adultas de helminto, por sus tamaños microscópicos.",
+        "Ooquiste de Cryptosporidium y quiste de Giardia, respectivamente.",
+        "Quiste de Giardia y ooquiste de Cryptosporidium, respectivamente."
+      ],
+      "correcta": 2,
+      "explicacion": "Los tamaños y las formas descritos se ajustan a esas dos estructuras. La asignación orienta elegir pruebas de confirmación.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Giardia y Cryptosporidium · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q291",
+      "pregunta": "En un abastecimiento se quiere descartar Giardia exclusivamente con un resultado negativo de E. coli después del tratamiento. ¿Qué advierte la OMS?",
+      "opciones": [
+        "La mayor persistencia y resistencia de los quistes impide usar ese negativo para excluir Giardia.",
+        "Si la muestra no tiene E. coli, se considera probado que ningún protozoo permanece.",
+        "Giardia se identifica directamente con el mismo método de coliformes y la prueba ya la excluye."
+      ],
+      "correcta": 0,
+      "explicacion": "No es una diana del ensayo bacteriano. Sus quistes pueden comportarse de otra forma durante el tratamiento.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, Giardia, indicadores · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Giardia duodenalis*** (= *G. lamblia* = *G. intestinalis*) | **Flagelado** móvil. **Quistes de 11-14 × 7-10 µm**; en el intestino pasan a **trofozoítos**. Causa la **giardiasis** |"
+    },
+    {
+      "id": "t15-q292",
+      "pregunta": "En una biopelícula se detectan una ameba y Legionella. ¿Cómo se clasifican el posible hospedador ambiental y el microorganismo que puede alojar, respectivamente?",
+      "opciones": [
+        "Bacteria procariota y helminto multicelular.",
+        "Protozoo eucariota y bacteria procariota.",
+        "Virus y levadura."
+      ],
+      "correcta": 1,
+      "explicacion": "Acanthamoeba puede albergar Legionella. La interacción no cambia la clasificación celular de ninguno.",
+      "fuente": "OMS, Guías para la calidad del agua de consumo, 4.ª ed. con tres adendas, cap. 11, fichas Legionella y Acanthamoeba · apunte §7",
+      "apartado": "7",
+      "evidencia": "| ***Acanthamoeba*** | **Ameba de vida libre**: **queratitis** en usuarios de **lentes de contacto**. **Puede albergar *Legionella*** |"
+    },
+    {
+      "id": "t15-q293",
+      "pregunta": "Se registran los ooquistes eliminados al ambiente en Cryptosporidium y Toxoplasma. ¿Qué diferencia es relevante para su capacidad inicial de infectar?",
+      "opciones": [
+        "Los de Cryptosporidium pueden salir esporulados. Los de Toxoplasma eliminados por felinos esporulan después en el ambiente.",
+        "Los dos son inmediatamente infectantes en todos los casos porque su maduración sucede solo en agua tratada.",
+        "Toxoplasma sale siempre esporulado y Cryptosporidium necesita un caracol para madurar."
+      ],
+      "correcta": 0,
+      "explicacion": "Los ciclos describen diferencias en el momento de esporulación. En Toxoplasma los ooquistes de felinos maduran tras su eliminación.",
+      "fuente": "CDC, DPDx, Cryptosporidiosis y Toxoplasmosis, Life Cycle · apunte §7",
+      "apartado": "7",
+      "evidencia": "| **Ooquiste** | Resultado de la **reproducción sexual** de los apicomplejos (*Cryptosporidium*, *Plasmodium*) |"
+    },
+    {
+      "id": "t15-q294",
+      "pregunta": "Se estudia cuánto tarda Fasciola en llegar a la etapa adulta en el huésped definitivo. ¿Dónde maduran los adultos que eliminan huevos por esa vía?",
+      "opciones": [
+        "En la piel perianal, donde el adulto se fija mediante escólex.",
+        "En la luz del colon, como fase adulta del mismo cestodo.",
+        "En las vías biliares."
+      ],
+      "correcta": 2,
+      "explicacion": "Las formas jóvenes migran por el hígado y los adultos se establecen en las vías biliares. Los huevos pueden llegar al intestino y salir con las heces.",
+      "fuente": "CDC, DPDx, Fascioliasis, Life Cycle and Laboratory Diagnosis · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q295",
+      "pregunta": "¿Qué contraste hay entre los huevos fértiles recién expulsados de Ascaris y los huevos de Taenia solium respecto a su infectividad típica?",
+      "opciones": [
+        "En T. solium necesitan madurar durante semanas en el suelo y en Ascaris son todos inmediatamente infectantes.",
+        "Ascaris requiere desarrollo ambiental y los huevos de T. solium pueden ser infectantes al eliminarse.",
+        "Ambos grupos requieren un caracol para que los huevos desarrollen una cercaria."
+      ],
+      "correcta": 1,
+      "explicacion": "Los huevos fértiles de Ascaris se embrionan en el ambiente. Los de T. solium pueden transmitir la fase larvaria sin esa espera.",
+      "fuente": "CDC, DPDx, Ascariasis y Cysticercosis, Life Cycle · apunte §8",
+      "apartado": "8",
+      "evidencia": "- **Fases:** **huevo, larva y adulto**. El diagnóstico suele hacerse **por los huevos** o las larvas en las heces (OMS)."
+    },
+    {
+      "id": "t15-q296",
+      "pregunta": "En una lámina se comparan el adulto de un cestodo típico y dos nematodos de sexos diferentes. ¿Qué organización reproductora se espera en cada grupo según el apunte?",
+      "opciones": [
+        "Reproducción asexual por gemación de los adultos de los dos grupos.",
+        "Sexos separados en el cestodo y hermafroditismo como condición de ambos nematodos.",
+        "Hermafroditismo en el cestodo y sexos separados en los nematodos del ejemplo."
+      ],
+      "correcta": 2,
+      "explicacion": "Las proglótides de cestodos típicos contienen órganos reproductores de ambos sexos. Los nematodos humanos descritos suelen presentar individuos de sexos separados.",
+      "fuente": "Baron, Medical Microbiology, 4.ª ed., cap. 86, sexualidad de las formas adultas · apunte §8",
+      "apartado": "8",
+      "evidencia": "| **Platelmintos (gusanos planos): trematodos (duelas)** | **Foliáceos**, con **ventosas** oral y ventral | **Hermafroditas**, salvo los **esquistosomas**, de sexos separados. El ciclo pasa por un **caracol** como **huésped intermediario**. Ejemplo: ***Fasciola*** |"
+    },
+    {
+      "id": "t15-q297",
+      "pregunta": "Una floración presenta acumulaciones superficiales en una orilla. ¿Qué limita extrapolar un único resultado de esa orilla al conjunto del embalse?",
+      "opciones": [
+        "La biomasa puede distribuirse de manera heterogénea y concentrarse de forma local.",
+        "Toda floración iguala de inmediato el recuento en orillas y zonas profundas.",
+        "El color de una orilla prueba que el recuento de todas las profundidades es idéntico."
+      ],
+      "correcta": 0,
+      "explicacion": "La flotabilidad y el movimiento del agua pueden concentrar cianobacterias. El punto concreto condiciona la representatividad del resultado.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., caps. 3 y 8, flotabilidad y distribución · apunte §9",
+      "apartado": "9",
+      "evidencia": "- **Floraciones (*blooms*)** cuando las condiciones las favorecen."
+    },
+    {
+      "id": "t15-q298",
+      "pregunta": "En un informe se agrupan saxitoxinas y aflatoxinas como si ambas indicaran necesariamente crecimiento de mohos. ¿Qué diferencia corrige la agrupación?",
+      "opciones": [
+        "Las aflatoxinas son el pigmento de las cianobacterias y las saxitoxinas son bacterias.",
+        "Las saxitoxinas pueden proceder de cianobacterias o dinoflagelados y las aflatoxinas de determinados mohos.",
+        "Las dos proceden exclusivamente de mohos de la misma especie."
+      ],
+      "correcta": 1,
+      "explicacion": "Son grupos de compuestos de orígenes biológicos diferentes. El informe debe especificar qué toxina se ha medido.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, 2.ª ed., cap. 2, Cyanobacterial Toxins; OMS, ficha Mycotoxins · apunte §9",
+      "apartado": "9",
+      "evidencia": "| **Dinoflagelados** | Algunos producen **saxitoxinas**: son **algas tóxicas** |"
+    },
+    {
+      "id": "t15-q299",
+      "pregunta": "Se ordenan tres muestras por portador de información biológica. ¿Qué asignación distingue una bacteria, un virus y un prion?",
+      "opciones": [
+        "Bacteria con genoma celular, virus con genoma en su partícula y prion como proteína infecciosa.",
+        "Bacteria como proteína infecciosa, virus con genoma celular rodeado por núcleo y prion con membrana lipídica.",
+        "Bacteria y virus como células nucleadas y prion con ARN segmentado en cápside."
+      ],
+      "correcta": 0,
+      "explicacion": "La bacteria es un organismo celular. El virus lleva su genoma en una partícula y el prion se propaga por un mecanismo proteico.",
+      "fuente": "Baron, Medical Microbiology, caps. 2 y 41; CDC/NIH, BMBL, sección VIII-H · apunte §10",
+      "apartado": "10",
+      "evidencia": "| **Célula** | Procariota | **No son células** | Eucariota | Eucariota | Eucariota | Eucariota |"
+    },
+    {
+      "id": "t15-q300",
+      "pregunta": "Se comparan un alga verde, una levadura y un protozoo intestinal. ¿Qué función corresponde al alga considerada y ayuda a distinguirla de los otros dos ejemplos?",
+      "opciones": [
+        "Transmisión por quistes intestinales como paso necesario de su ciclo.",
+        "Obtención de nutrientes exclusivamente por digestión extracelular de tipo fúngico.",
+        "Fotosíntesis mediada por cloroplastos."
+      ],
+      "correcta": 2,
+      "explicacion": "El alga verde fotosintetiza en cloroplastos. Los otros dos ejemplos son heterótrofos y carecen de esa organización fotosintética.",
+      "fuente": "OMS, Toxic Cyanobacteria in Water, caps. 3 y 13; Baron, Medical Microbiology, caps. 73 y 77 · apunte §10",
+      "apartado": "10",
+      "evidencia": "| **Cubierta** | Pared de **peptidoglicano** (salvo micoplasmas) | **Cápside** de proteína | Pared de **quitina** | Membrana; a veces película | **Cutícula o tegumento** | Con **cloroplastos** |"
     }
   ],
   "supuestos": [

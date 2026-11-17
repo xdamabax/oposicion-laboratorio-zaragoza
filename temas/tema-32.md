@@ -180,7 +180,7 @@ Como los tubos y racores tienen límite de presión, más contrapresión obliga 
 - Se hace reaccionar la sílice con un **organoclorosilano Si(CH₃)₂RCl**, donde **R es el grupo que decide la polaridad**.
 - Los **−SiOH que quedan sin reaccionar** se convierten con **Si(CH₃)₃Cl** en −SiOSi(CH₃)₃, para que no adsorban solutos por su cuenta. A esas columnas se las llama **«terminalmente rematadas»** (*end-capped*).
 
-**Un límite operativo que se pregunta solo: el pH de la fase móvil debe ser INFERIOR A 7,5**, porque **el sustrato de sílice se hidroliza en disoluciones básicas**.
+**En la sílice convencional**, el medio básico puede deteriorar el soporte. La recomendación clásica de **pH inferior a 7,5 no es universal**: debe respetarse el intervalo de pH especificado por el fabricante para la columna concreta. Algunas fases protegidas, como ZORBAX Extend-C18, admiten hasta pH 11,5.
 
 **El índice de polaridad (P′)** ayuda a elegir la fase móvil: valores mayores, disolventes más polares. Y mezclando dos disolventes miscibles se obtiene una polaridad intermedia, que es exactamente la **media ponderada por las fracciones de volumen**:
 
@@ -336,7 +336,7 @@ Y el cierre del anexo: *«**los microplásticos** se incluirán en la lista cuan
 - **FASE NORMAL: estacionaria POLAR y móvil NO polar. El soluto POLAR se retiene más y sale el ÚLTIMO.**
 - **FASE INVERSA: estacionaria NO POLAR (C8, C18) y móvil POLAR (agua tamponada, metanol, acetonitrilo). El soluto POLAR sale el PRIMERO.** **Es la más usada, con diferencia.**
 - **EL ORDEN DE ELUCIÓN SE INVIERTE entre las dos.** Y para alargar la retención: en **fase normal**, **bajar** la polaridad de la fase móvil; en **fase inversa**, **subirla**.
-- **El pH de la fase móvil debe ser INFERIOR A 7,5**, porque **la sílice se hidroliza en medio básico**.
+- **El intervalo de pH depende de la columna y del fabricante**; la sílice convencional puede deteriorarse en medio básico. No aplicar 7,5 como límite universal.
 - **Las fases estacionarias se UNEN covalentemente** haciendo reaccionar la sílice con un **organoclorosilano Si(CH₃)₂RCl**; los −SiOH sobrantes se **rematan** con Si(CH₃)₃Cl (*end-capping*).
 - **ISOCRÁTICA = composición fija. GRADIENTE = la composición cambia durante la separación.** En fase inversa se empieza **más polar** y se va **haciendo menos polar**.
 - **El gradiente resuelve el mismo problema que la rampa de temperatura en gases**: lo que separa bien lo que eluye pronto deja lo tardío en picos anchos y a destiempo.
@@ -384,11 +384,12 @@ Y el cierre del anexo: *«**los microplásticos** se incluirán en la lista cuan
 - **Normas verificadas en el buscador gratuito de UNE**, comprobando código, **título oficial en español**, fecha de edición, **estado**, comité (**CTN 77/SC 1 Agua**) y equivalencia internacional: **UNE-EN ISO 17993:2004** y **UNE-EN ISO 11369:1998**, las dos **en vigor** y confirmadas en 2008.
 - **Estado de las ISO comprobado en el catálogo público del comité ISO/TC 147/SC 2**: **ISO 17993:2002**, **ISO 11369:1997**, **ISO 7981-1 y -2:2005**, **ISO 20179:2005**, **ISO 21675:2019**, **ISO 25101:2009**, **ISO 16308:2014**, **ISO 21458:2008**, **ISO 21676:2018**, **ISO 22478:2006**, **ISO/TS 19620:2018** e **ISO 21253-1:2019** constan en estado **90.93** (confirmadas, vigentes); **ISO 22104:2021** en 90.20 y **ISO 13646:2025** e **ISO 24384:2024** en 60.60 (recién publicadas).
 - **Textos legales leídos literalmente en el BOE**, texto consolidado: **RD 3/2023**, anexo I parte B (tabla 2 y notas 5, 8, 9, 13, 14, 15 y 16), anexo II parte B.3 (clorofila a), anexo III parte D (tabla 15), **anexo IV completo** con la tabla 16 de la lista de observación, y la **disposición transitoria** con el calendario de los PFAS y del bisfenol A; y **RD 817/2015**, anexo III, C.1.
-- **Teoría:** LibreTexts en español, *Análisis Instrumental* — §28.1 (por qué el HPLC es una familia y no una técnica), §28.2 (ensanchamiento extracolumna), §28.3 (columnas analíticas, capilares y monolíticas con sus dimensiones y eficiencias, contrapresión, columnas de guarda, bombas y amortiguador de pulsos, inyector de bucle, y todos los detectores con sus límites de detección), §28.4 (fase normal y fase inversa, organoclorosilanos y *end-capping*, pH < 7,5, índice de polaridad, elución isocrática y en gradiente) y §28.7.
+- **Teoría:** LibreTexts en español, *Análisis Instrumental* — §28.1 (por qué el HPLC es una familia y no una técnica), §28.2 (ensanchamiento extracolumna), §28.3 (columnas analíticas, capilares y monolíticas con sus dimensiones y eficiencias, contrapresión, columnas de guarda, bombas y amortiguador de pulsos, inyector de bucle, y todos los detectores con sus límites de detección), §28.4 (fase normal y fase inversa, organoclorosilanos y *end-capping*, estabilidad de la sílice convencional, índice de polaridad, elución isocrática y en gradiente) y §28.7.
 - **Exámenes anteriores:** los **seis** cuestionarios extraídos a texto y releídos. Las dos respuestas documentadas del benzo(a)pireno, las dos preguntas del primer ejercicio y **los siete distractores** están **transcritos de ellos**, con su numeración.
 - **`TEMARIO EXTRA/`:** consultado antes de redactar, según la regla fija del proyecto. `MAPEO.md` da el tema 32 como **«sin nada»** y lo justifica con una búsqueda directa en los 21 archivos: **cero apariciones de «cromatografía»**. No aporta nada y no se ha usado.
 - **Figuras:** las dos de este tema (`fase-normal-vs-inversa` y `gradiente-elucion`) se han añadido al catálogo con **cuatro controles nuevos** en `verificar-figuras.js` y **cuatro sabotajes** que los prueban. Los de la primera comprueban que **el orden de elución se invierte** entre los dos paneles, localizando la cima de cada pico sobre el trazado; los de la segunda, que **el gradiente sube y la isocrática se queda plana** y que **el último pico sale más estrecho** en el gradiente. Se reutiliza además el esquema `cromatografo-ionico` del tema 30, a propósito: es un cromatógrafo de líquidos.
 - **Fecha de verificación:** 21/09/2026.
+- **Corrección de pH (17/11/2026):** intervalo dependiente de la columna, contrastado con Agilent, *ZORBAX Reversed Phase HPLC Columns*, Extend-C18 (hasta pH 11,5): https://www.agilent.com/cag/CABU/RP_HPLC1.htm .
 
 ### Dudas y limitaciones declaradas
 

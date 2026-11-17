@@ -186,9 +186,11 @@ const leerDespues = () => ({
  * `perturbar(k, pag, leidas)` un sabotaje toca la pagina antes de leer la k;
  * con `trasContestar(k, pag)`, la correccion ya pintada.
  */
-async function recorrer(pag, perturbar, trasContestar) {
+async function recorrer(pag, perturbar, trasContestar, maximo = CUANTAS) {
   const leidas = []
-  for (let k = 0; k < 400; k++) {
+  // El dato fija el tamaño esperado. Se admite leer una extra para detectar
+  // desbordes, sin truncar sesiones que ya superan el antiguo límite de 400.
+  for (let k = 0; k <= maximo; k++) {
     if (!(await pag.$('.opciones button.opcion'))) break
     if (perturbar) await perturbar(k, pag, leidas)
     const antes = await pag.evaluate(leerAntes)
@@ -334,14 +336,14 @@ async function controles(nav, base, dato, sab) {
     const { pag, leidas } = await sesionTest(sab === 2 ? repite : null)
     await pag.close()
     const pag2 = await abrir(nav, base)
-    await configurar(pag2, { temas: TEMAS_DUPLICADA, cuantas: 0 })
-    await empezar(pag2)
-    const todas = await recorrer(pag2)
-    await pag2.close()
-
     const distintas = new Set(
       dato.todas.filter((q) => q.clase === 'test' && TEMAS_DUPLICADA.includes(q.tema)).map((q) => huella(q.pregunta, q.opciones)),
     ).size
+    await configurar(pag2, { temas: TEMAS_DUPLICADA, cuantas: 0 })
+    await empezar(pag2)
+    const todas = await recorrer(pag2, null, null, distintas)
+    await pag2.close()
+
     for (const [donde, ls, esperado] of [
       [`temas ${lista(TEMAS_TEST)}`, leidas, CUANTAS],
       [`temas ${lista(TEMAS_DUPLICADA)}, todas`, todas, distintas],

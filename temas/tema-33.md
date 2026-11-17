@@ -81,9 +81,11 @@ La segunda —*«determinación de cloro, amonio, nitritos, oxidabilidad, dureza
 
 > *«En el caso de los parámetros del anexo I, parte C, la superación de los valores paramétricos NO presupondrá una calidad no apta, y se deberán tomar las medidas correctoras adecuadas y cumplir lo dispuesto en las notas de la tabla 3.»*
 
-Es decir: **superar el valor paramétrico de un indicador obliga a corregir, pero no declara el agua no apta**. Lo que sí la declara no apta es rebasar el **«valor de no aptitud»** que cada nota fija aparte. Por eso la tabla 3 tiene **dos números por parámetro**, y por eso conviene aprenderse los dos.
+Es decir: **superar el valor paramétrico de un indicador obliga a corregir, pero no declara el agua no apta**. Lo que sí la declara no apta es rebasar el **«valor de no aptitud»** que cada nota fija aparte. Donde la nota fija dos cifras distintas, hay que distinguirlas. **No todos los indicadores tienen necesariamente dos límites numéricos**.
 
 **Artículo 7. Punto de cumplimiento.** El grifo que se usa habitualmente para el consumo; la salida de la cisterna; y **para el operador de la red, la acometida**.
+
+**Alcance de la calificación.** No todos los indicadores tienen necesariamente dos límites numéricos. Se aplican el artículo 6, las notas específicas y la valoración del riesgo: superar el VP de un indicador exige corrección, sin presuponer por ese hecho aislado no aptitud. Los valores de no aptitud no sustituyen el VP ni autorizan a ignorar incumplimientos intermedios. La ausencia de superaciones en una lista reducida no garantiza por sí sola que toda el agua sea salubre y limpia. La calificación se refiere a la muestra y condiciones evaluadas; no equivale a una autorización general e indefinida. La lista de observación y las situaciones de excepción se interpretan conforme al artículo 6 y la autoridad sanitaria, no mediante una decisión unilateral del laboratorio. El operador tiene como punto de cumplimiento la acometida y el suministro interior se comprueba en el grifo de uso habitual; no son puntos intercambiables para atribuir incidencias.
 
 ### 2.2. Las tres partes del anexo I, y dónde cae cada parámetro de este tema
 
@@ -168,6 +170,8 @@ Y su finalidad no es sanitaria, sino informativa: el anexo VIII obliga a la admi
 
 **Control operacional.** Siempre **turbidez**; tras desinfección, además **pH y cloro libre residual**; tras limpieza de decantadores, depósito o red, además ***Clostridium perfringens***. En la captación: **colífagos somáticos** y, si el origen es embalse o lago, **microcistina-LR**.
 
+**Elegir el control correcto.** Rutina, control, completo, operacional, caracterización y grifo tienen finalidades y listas distintas; una determinación aislada no convierte la muestra en un análisis completo. El control operacional permite reaccionar sobre etapas del proceso con acciones planificadas; caracterización informa sobre composición general y no sustituye la evaluación de aptitud. En el análisis de control, los añadidos de aluminio o hierro dependen de las sales empleadas y del punto previsto. El seguimiento de subproductos tras un último completo superior al VP continúa hasta alcanzar el VP. El control en grifo atiende también materiales de la instalación: con tuberías metálicas añade cobre, cromo total, níquel e hierro; con plástico o PVC, cloruro de vinilo y bisfenol A. Se respeta el listado y las condiciones del anexo II, sin añadir una equivalencia automática entre materiales, contaminación y causa demostrada.
+
 ### 2.4. Frecuencias: las seis zonas de abastecimiento
 
 La **zona de abastecimiento (ZA)** se clasifica por **volumen de agua distribuida al día** (media del año natural). Si no se conoce el volumen, se calcula con **200 L por persona y día**.
@@ -184,6 +188,8 @@ La **zona de abastecimiento (ZA)** se clasifica por **volumen de agua distribuid
 **Ojo a cómo está hecha la tabla del RD** (anexo II, parte C): en el BOE, la casilla del **análisis de control** de la zona tipo 4 es **una sola celda que ocupa también las filas de las zonas 5 y 6**. Así que en las tres el control se calcula igual: **4 por los primeros 1 000 m³ + 3 por cada 1 000 m³ adicionales**. Lo que cambia en las zonas 5 y 6 es el **análisis completo**. La tabla tiene además una cuarta columna, el **control de radiactividad**: 1 cada 5 años en la tipo 2; 1 en la tipo 3; 1 por los primeros 1 000 m³ + 1 por cada 3 300 adicionales en la tipo 4; y en las tipos 5 y 6, **la misma fórmula que el análisis completo**.
 
 **Zaragoza es zona tipo 6**, y conviene tenerlo presente: es de las que controlan el COT en lugar de la oxidabilidad.
+
+**Cálculo de frecuencias y planificación.** Las fracciones adicionales de volumen de la tabla 8 se redondean hacia arriba cuando la norma dice «o fracción»; no se calcula una fracción de análisis ni se redondea al entero más próximo. El volumen es la media diaria del año natural: un dato mensual o litros por segundo requiere conversión e interpretación adecuada. Si se estima por población, 200 L por habitante y día equivalen a 0,2 m³ por habitante y día. Las frecuencias de control y completo se calculan por separado, con sus propios tramos; no se suman como si fueran un único tipo. Los números mínimos no son máximos ni eliminan controles por incidencias. El PSA permite solicitar variaciones a la autoridad sanitaria en los casos previstos, no reducir unilateralmente el muestreo. La rutina es semanal cuando no se haya hecho control o completo esa semana; la caracterización es al menos semestral y los resultados se actualizan para información al ciudadano. Para clasificar Zaragoza se comprobaría su zona concreta en SINAC: la afirmación de tipo 6 en este apunte era una inferencia, no una consulta documentada de la zona.
 
 ### 2.5. Lo que el RD exige al MÉTODO (anexo III), y la única excepción
 
@@ -219,6 +225,8 @@ Para los **físico-químicos**, **no impone método**. Exige **criterios de rend
 | **Oxidabilidad** | **50 %** |
 | **pH** | **0,2 unidades de pH** |
 
+**Rendimiento y comparación.** El 30 % se refiere al límite de cuantificación respecto del VP y no a una tolerancia añadida a la concentración legal. La incertidumbre expandida se expresa con k = 2 y las unidades y niveles indicados por la tabla 15; no se resta automáticamente del resultado para declararlo conforme. La tabla incluye alcalinidad aunque no le asigne VP en el anexo I. La excepción de acreditación para laboratorios que solo realizan rutina y operacional no exime de método adecuado, documentación y control. Un aparato en línea necesita verificación y ajuste periódicos y registro de la última calibración; estar conectado a una pantalla no prueba exactitud. En oxidabilidad se admite el método de referencia UNE-EN ISO 8467 u otro de resultados equivalentes, que deben demostrarse: cambiar la técnica no elimina la exigencia de rendimiento.
+
 ### 2.6. Cloro: libre, combinado y punto de ruptura
 
 #### 2.6.1. Las dos definiciones, en las palabras del examen
@@ -236,11 +244,11 @@ Al añadir cloro al agua —como gas (Cl₂) o como hipoclorito (NaOCl)— se hi
 - Cl₂ + H₂O → **HOCl** + H⁺ + Cl⁻
 - NaOCl + H₂O → **HOCl** + Na⁺ + OH⁻
 
-El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los compuestos del cloro**. Pero es un ácido débil y se disocia al subir el pH:
+Dentro del equilibrio HOCl/OCl⁻, el **HOCl suele ser más eficaz que el hipoclorito** en las condiciones habituales; no hay una clasificación universal de todos los agentes independiente de condiciones. Pero es un ácido débil y se disocia al subir el pH:
 
 | pH | Forma dominante |
 | --- | --- |
-| **< 5** | **Todo HOCl** (el más eficaz) |
+| **< 5** | Predomina ampliamente HOCl; no es una igualdad absoluta |
 | **> 7,5** a 20 °C (o **> 7,8** a 10 °C) | Empieza a predominar **OCl⁻** |
 | **≈ 9,5** | Prácticamente **solo OCl⁻** |
 
@@ -253,7 +261,7 @@ El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los
 | **Cloración simple** | Dosis que deje **0,1-0,2 ppm de residual tras 10 min**, sin distinguir libre de combinado. Solo para aguas muy poco contaminadas |
 | **Cloro + amoniaco (cloraminación)** | Se añade amoniaco para **formar cloraminas**, más **estables** en el agua que el cloro libre pero con **menor poder desinfectante** |
 | **Hipercloración** | Dosis muy superiores a la demanda; obliga después a **declorar**. **Muy caro** |
-| **Cloración al punto de ruptura** (*break-point*) | Dosis suficiente para **oxidar todo** y que **sobre** cloro **libre** residual |
+| **Cloración al punto de ruptura** (*break-point*) | Dosis para alcanzar el tramo de cloro libre del esquema; no implica oxidar toda sustancia presente |
 
 #### 2.6.4. La curva de demanda de cloro, en cuatro fases
 
@@ -261,8 +269,8 @@ El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los
 
 1. **Demanda inmediata.** El cloro reacciona con lo fácilmente oxidable —**Fe²⁺, Mn²⁺, H₂S, materia orgánica**— y se reduce a **cloruro**. **No queda residual.**
 2. **Formación de cloraminas.** Satisfecha la demanda inmediata, el cloro reacciona con el **amonio** y forma **monocloraminas o dicloraminas** según la relación molar. El residual **SUBE**, pero es **combinado**.
-3. **Destrucción de las cloraminas.** Si se sigue dosificando, las dicloraminas pasan a **tricloruro de nitrógeno** —no desinfectante, pero volátil— y las cloraminas restantes se oxidan a **óxido nitroso y nitrógeno**. El residual **BAJA** hasta que **todas las cloraminas se han oxidado**: esa dosis es el **PUNTO DE RUPTURA**.
-4. **Cloro libre.** Pasado el punto de ruptura, todo el cloro que se añade se queda como **cloro libre disponible**, y el residual **vuelve a subir de forma proporcional**. **Solo entonces está asegurada la desinfección.**
+3. **Destrucción de las cloraminas.** Si se sigue dosificando, las dicloraminas pasan a **tricloruro de nitrógeno** —no desinfectante, pero volátil— y las cloraminas restantes se oxidan a **óxido nitroso y nitrógeno**. El residual **BAJA** hasta el mínimo característico del esquema, el **PUNTO DE RUPTURA**. El mecanismo y las especies dependen de las condiciones.
+4. **Cloro libre.** Pasado el punto de ruptura, en el esquema ideal predomina el aumento de **cloro libre disponible**. La curva por sí sola **no asegura la aptitud del agua** ni invalida la cloraminación como tratamiento previsto por la norma.
 
 **Consecuencia que enlaza con el amonio:** cuanto más amonio traiga el agua, **más cloro hay que gastar para llegar al punto de ruptura**. Por eso la nota 5 del RD dice que *«una elevada concentración de amonio reduce la eficacia de la desinfección»*.
 
@@ -284,9 +292,11 @@ El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los
 
 **La técnica es del tema 25:** **colorimetría con DPD**, **UNE-EN ISO 7393-2:2019**, color **rojo**, **cloro libre primero** y **cloro total tras añadir yoduro**; medida **inmediata y en campo**, porque el cloro se pierde. Y el catálogo del ISO/TC 147/SC 2 confirma que esa familia tiene **tres partes vigentes**: **ISO 7393-1:1985** (DPD **titrimétrico**), **ISO 7393-2:2017** (DPD **colorimétrico**, para control de rutina) e **ISO 7393-3:1990** (**iodométrico**, para cloro total).
 
+**Matices de química y medida de cloro.** No hay una clasificación universal de todos los desinfectantes por eficacia independiente de condiciones. Dentro del equilibrio HOCl/OCl⁻, el ácido hipocloroso suele ser más eficaz como desinfectante que el hipoclorito; bajar el pH favorece su proporción, sin que «todo HOCl» sea una igualdad literal absoluta. La curva del punto de ruptura es un esquema de demanda y residual: no garantiza oxidación de toda sustancia ni demuestra por sí sola aptitud sanitaria. La cloraminación también es un tratamiento previsto en la norma; no se interpreta «solo después del punto de ruptura» como una regla sanitaria universal. Las cifras de cloración simple del OCW son un ejemplo docente histórico, no un criterio general sustitutorio del RD 3/2023. Cloro total y libre deben expresarse en la misma base y unidades antes de calcular combinado = total − libre. Un valor libre mayor que total exige revisar medida, blanco, interferencias y registros: no se informa como concentración física negativa de combinado. La concentración residual medida no es la dosis aplicada ni la demanda por sí sola. Se documentan punto, hora y condiciones de medida; un retraso, transporte o reactivo deteriorado puede alterar el resultado DPD. Un blanco o verificación de respuesta no sustituye a los controles de conservación, selectividad y rango. Los valores y recomendaciones de las notas 7 y 8 se distinguen de condiciones operativas decididas para un sistema concreto.
+
 ### 2.7. Amonio
 
-**Qué es y por qué importa.** El amonio en un agua de consumo es, ante todo, **un indicador de contaminación** (fecal o industrial reciente). Y además es **un problema operativo**: consume cloro y obliga a llegar más lejos en la curva de ruptura.
+**Qué es y por qué importa.** El amonio es un **indicador de calidad** que puede señalar distintas aportaciones y problemas, sin demostrar por sí solo una fuente fecal, industrial o reciente. Y además es **un problema operativo**: consume cloro y obliga a llegar más lejos en la curva de ruptura.
 
 | Parámetro | VP | **No aptitud** | Incertidumbre |
 | --- | --- | --- | --- |
@@ -299,6 +309,8 @@ El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los
 3. Por encima de **0,7 mg/L**, se recomienda que las medidas correctoras sean **de rápida aplicación**.
 
 **La técnica es del tema 25:** absorción molecular por **azul de indofenol** (fenol + hipoclorito, catalizado por **nitroprusiato**, desarrollo de color **lento**, del orden de una hora), **ISO 7150-1:1984**. Cuidado con la parte 2: **ISO 7150-2:1986, el método automatizado, está RETIRADA (95.99)**; su sustituta práctica es la **UNE-EN ISO 11732:2005**, nitrógeno amoniacal por **análisis en flujo (CFA y FIA)** con detección espectrométrica.
+
+**Interpretación del amonio.** Puede proceder de distintas fuentes, naturales, industriales o relacionadas con el tratamiento; una medida positiva no demuestra por sí sola contaminación fecal ni identifica una causa única. La regla de medir antes de añadir amoniaco se refiere a su función como indicador de contaminación cuando se emplea monocloramina. Una medida posterior puede ser útil para otros controles operativos, pero no reemplaza sin más esa muestra anterior. El resultado debe identificar si se expresa como NH₄⁺ o como N: las bases no son numéricamente idénticas. Para pasar de mg/L como N a mg/L como NH₄⁺ se multiplica por la relación de masas molares 18/14; a la inversa se usa 14/18. Se comparan siempre resultado y valor normativo en la misma base. Una concentración entre 0,50 y 1,00 mg/L no se convierte en cumplimiento del VP por quedar bajo el valor de no aptitud; la nota recomienda rapidez de medidas por encima de 0,7 mg/L.
 
 ### 2.8. Nitritos: el parámetro que SÍ hace el agua no apta
 
@@ -315,9 +327,11 @@ El **HOCl** es, después del dióxido de cloro, **el más germicida de todos los
 
 con las concentraciones en mg/L. Hay que cumplirla **tras la potabilización**, y ahí el valor de nitritos que cuenta es el de **0,10 mg/L a la salida de la ETAP**.
 
-**Por qué dos valores.** El nitrito a la salida de la planta indica **nitrificación en el propio tratamiento o desinfección incompleta**; en la red, puede aparecer por **nitrificación de las cloraminas** en tramos de baja velocidad. De ahí que la cloraminación arrastre el nitrito al análisis de control y al control en grifo.
+**Por qué dos valores.** La presencia de nitrito a la salida exige investigar causas como procesos de nitrificación y condiciones del tratamiento, sin diagnosticar una causa única; en la red, puede aparecer por **nitrificación de las cloraminas** en tramos de baja velocidad. De ahí que la cloraminación arrastre el nitrito al análisis de control y al control en grifo.
 
 **Incertidumbre:** 20 %. **La técnica es del tema 25:** **sulfanilamida + NED** en medio ácido (pH ≈ 1,9), color rosa a **≈ 540 nm**, **UNE-EN 26777:1994** (ISO 6777:1984, en estado **90.93**).
+
+**Interpretación conjunta de nitrato y nitrito.** La presencia de nitrito obliga a investigar las causas; no prueba por sí sola una avería concreta o una única fuente. Deben cumplirse tanto los valores individuales aplicables al punto como la suma [nitrato]/50 + [nitrito]/3 ≤ 1, con concentraciones expresadas como los respectivos iones en mg/L. Cumplir la suma no exime del límite de nitrito de salida de ETAP, y cumplir los valores individuales no garantiza siempre cumplir la suma. No se reemplaza el denominador 3 por el VP de nitrito de 0,10 o 0,50: la expresión normativa es distinta de una suma de cocientes respecto a todos los VP. Un resultado como N requiere convertir antes de aplicar límites expresados como NO₂⁻ o NO₃⁻, usando respectivamente 46/14 y 62/14. Los cálculos conservan unidades y no atribuyen a la incertidumbre una tolerancia automática. Se diferencia cambio de base química de una dilución de muestra.
 
 ### 2.9. Oxidabilidad (índice de permanganato)
 
@@ -346,6 +360,8 @@ Es, por tanto, **una volumetría redox por retroceso** — y la valoración por 
 
 **Y recuerda el dato del apartado 2.5:** la **nota 6 de la tabla 15** nombra la **UNE-EN ISO 8467** como **método de referencia**, cosa que el RD no hace con ningún otro físico-químico.
 
+**Alcance del índice.** El índice de permanganato es una demanda de oxidante bajo condiciones definidas, expresada como oxígeno equivalente. No identifica compuestos individuales ni equivale a medir todo el carbono orgánico, a la DBO o a la DQO por dicromato. Pueden contribuir sustancias inorgánicas reductoras; la expresión docente «materia orgánica» no demuestra selectividad exclusiva. El valor medido en una alícuota diluida se reconduce al agua original con el factor de dilución; se distingue el rango analítico de los valores legales. Un blanco corrige aportes del procedimiento según el método, sin garantizar ausencia de interferencias de la matriz. El COT mide carbono y no se convierte en oxidabilidad mediante una equivalencia universal. Las diferencias entre ZA 1–3 y 4–6 indican qué parámetro se exige en el completo, no una imposibilidad técnica de estudiar el otro cuando proceda.
+
 ### 2.10. Dureza
 
 > **1246 #22 y 1322 #39: «¿Qué es la dureza del agua?» → «Se corresponde con el contenido de SALES DE CALCIO Y MAGNESIO.»** Los distractores, los dos años: *«el contenido de ión hidrógeno»* (que es el pH) y *«el contenido de sodio»*.
@@ -361,13 +377,15 @@ Es, por tanto, **una volumetría redox por retroceso** — y la valoración por 
 | Magnesio | **30** | mg/L |
 | Potasio | **10** | mg/L |
 
-**Nota 1 de la tabla 7, que es el detalle raro y por eso preguntable:** *«Para las aguas **desalinizadas o ablandadas** el valor paramétrico **mínimo** será al menos **55 mg/L CaCO₃**.»* Es decir, la dureza tiene **techo general** (500) y, en aguas tratadas para quitarle dureza, **suelo** (55). Un agua demasiado blanda es **agresiva** y ataca las tuberías.
+**Nota 1 de la tabla 7, que es el detalle raro y por eso preguntable:** *«Para las aguas **desalinizadas o ablandadas** el valor paramétrico **mínimo** será al menos **55 mg/L CaCO₃**.»* Los **500 son referencia de caracterización**, no un techo sanitario general; la nota fija el mínimo específico de 55 en agua desalinizada o ablandada. La agresividad requiere evaluar también pH, alcalinidad y composición, no se deduce solo de la dureza.
 
-> **1233 #6: «¿Qué parámetro químico se puede relacionar directamente con la CONDUCTIVIDAD de una muestra de agua de consumo?» → LA DUREZA.** Los distractores eran *DQO* y *plaguicidas*. La lógica: la conductividad mide **iones disueltos**, y el calcio y el magnesio son **iones divalentes abundantes**; DQO y plaguicidas son materia **orgánica**, que no conduce.
+> **1233 #6: «¿Qué parámetro químico se puede relacionar directamente con la CONDUCTIVIDAD de una muestra de agua de consumo?» → LA DUREZA.** Los distractores eran *DQO* y *plaguicidas*. La lógica: la conductividad mide **iones disueltos**, y el calcio y el magnesio son **iones divalentes abundantes**; DQO y plaguicidas no son una medida de concentración iónica global. La conductividad no se convierte universalmente en dureza y hay especies orgánicas ionizadas.
 
 **La técnica es del tema 22:** **complexometría** con **EDTA (AEDT)**, complejo **1:1**, indicador **negro de eriocromo T**, a **pH ≈ 10 tamponado**. Norma: **UNE-ISO 6059:2014**, *«Determinación de la suma de calcio y magnesio. Método volumétrico con AEDT»*, **en vigor**, confirmada en 2023, que **anuló a la UNE 77040:2002**. Para el **calcio solo**, **ISO 6058:1984** (también EDTA, indicador **murexida**, a pH alto con el magnesio precipitado).
 
 **Y su sitio en el control:** la dureza es uno de los **cuatro parámetros de la caracterización del agua**, que se hace **en red de distribución**, **al menos una vez por semestre**, y cuyo resultado la administración local debe **publicar en línea**.
+
+**Dureza, composición y referencia.** Los 500 mg/L CaCO₃ son un valor de referencia de caracterización, no un techo sanitario universal de no aptitud. La nota específica para agua desalinizada o ablandada fija al menos 55 mg/L CaCO₃. La agresividad no se deduce solo de que el agua sea blanda: depende de equilibrio, pH, alcalinidad y composición. La conductividad recibe aportes de todos los iones móviles; un agua rica en NaCl puede conducir mucho sin tener dureza elevada. No hay una conversión universal entre conductividad y dureza. Expresar dureza como CaCO₃ es una equivalencia, no afirmar que todo el calcio y magnesio estén como carbonato cálcico sólido. A partir de calcio y magnesio en mg/L, la dureza aproximada como CaCO₃ es 2,497·[Ca] + 4,118·[Mg], por sus equivalentes químicos. El EDTA reacciona 1:1 con los cationes en las condiciones del método; otros metales e interferencias deben controlarse. A igual concentración molar, calcio y magnesio aportan igual dureza equivalente; a igual concentración másica no. No se resta directamente calcio en mg/L a dureza en mg/L CaCO₃ para obtener magnesio. Dilución, blanco y volumen de muestra se incluyen en el cálculo conforme al procedimiento.
 
 ### 2.11. Alcalinidad
 
@@ -410,7 +428,7 @@ Comparando **P** (volumen hasta pH 8,3) con **T** (volumen hasta pH 4,5) se dedu
 2. Hay **hidróxido** cuando **P supera la mitad de T**.
 3. Hay **bicarbonato** cuando **P es menor que la mitad de T**.
 
-**Y una consecuencia que cae de la propia química: hidróxido y bicarbonato NO pueden coexistir.** Si los hubiera juntos, reaccionarían entre sí. Por eso en la tabla, en cuanto una de las dos columnas tiene valor, la otra es 0.
+**En la asignación simplificada de la tabla no se atribuyen cantidades apreciables simultáneas de hidróxido y bicarbonato**; no se afirma ausencia matemática absoluta de trazas en equilibrio. Si los hubiera juntos, reaccionarían entre sí. Por eso en la tabla, en cuanto una de las dos columnas tiene valor, la otra es 0.
 
 #### 2.11.3. Qué papel tiene la alcalinidad en el agua de consumo
 
@@ -422,7 +440,9 @@ Esto **no es una contradicción con el enunciado del tema**: el enunciado pide *
 - Sirve para **controlar la coagulación** y la **corrección de pH** en la ETAP: sin alcalinidad suficiente, el coagulante baja el pH y el proceso se descontrola.
 - Y **por eso el RD le pone incertidumbre pero no valor**: hay que saber medirla bien, aunque no haya un límite que cumplir.
 
-**La técnica es del tema 23:** valoración ácido-base con **indicación potenciométrica a punto final fijo**, uno de los casos en que el electrodo de vidrio se usa para **detectar**, no para medir un valor absoluto.
+**La técnica es del tema 23:** valoración ácido-base con **indicación potenciométrica a punto final fijo**, a **pH final fijo**, que requiere calibración adecuada de pH y no se confunde con localización de una inflexión.
+
+**Modelo P/T y calidad de la valoración.** La asignación de hidróxido, carbonato y bicarbonato por P/T es un modelo simplificado para aguas donde predominan esas bases; otras contribuciones pueden invalidar una asignación exclusiva. «No pueden coexistir hidróxido y bicarbonato» se refiere a cantidades apreciables asignadas por este modelo, no a una ausencia matemática absoluta de especies en equilibrio. P y T se comparan como alcalinidades equivalentes o como volúmenes del mismo ácido para alícuotas comparables; T es el volumen acumulado hasta el segundo punto final, no solo lo añadido entre ambos. En una misma valoración válida se cumple 0 ≤ P ≤ T; un P mayor que T obliga a revisar cálculo, etiquetado y puntos finales. Todas las contribuciones de la tabla están en la misma base de alcalinidad y suman T, no son directamente mg/L de cada ion. Si P y T se multiplican por el mismo factor de dilución, su cociente no cambia, pero sí la alcalinidad total original. Para alcalinidad como CaCO₃ se usa (Vácido − Vblanco)·Nácido·50000/Vmuestra, con volúmenes en mL y N en equivalentes/L. La medida a pH final fijo exige calibración apropiada del pH-metro; no es el método de detección por inflexión ni permite ignorar un desplazamiento del electrodo. pH y alcalinidad son magnitudes distintas: dos aguas con igual pH pueden consumir distintas cantidades de ácido. El dato es útil para tratamiento aunque no tenga VP en el anexo I.
 
 ### 2.12. Los parámetros que quedaron pendientes de los temas 21 a 25
 
@@ -437,16 +457,18 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 | **Olor y sabor** | Íd.; referencia **3** (índice de dilución) | — | Íd. |
 | **Carbono orgánico total** | **5,0 mg/L** | **7,0 mg/L** | Medidas rápidas al pasar de **6 mg/L**. Sustituye a la oxidabilidad en ZA **4, 5 y 6** |
 | **Índice de Langelier** | **± 0,5** unidades de pH | — | *«Estará en relación al pH, cloruros, sulfatos y conductividad»*. Se sugiere también el **índice de Ryznar** |
-| **Uranio** | Parte B, junto a los químicos | — | Es **químico**, no radiactivo: no va en el control de radiactividad (tema 29) |
+| **Uranio** | Parte B, junto a los químicos | — | Parámetro de toxicidad química de la parte B; ello no niega que sus isótopos sean radiactivos (tema 29) |
 | **OXÍGENO DISUELTO** | **NO ES PARÁMETRO** | — | **No figura en ninguna tabla del anexo I.** Es de **aguas residuales**: tema 34 |
 
-**Cuatro valores de turbidez, no uno.** Es el parámetro con más números distintos de toda la tabla 3, y por eso es el mejor candidato a pregunta con trampa: **4,0 / 0,8 / 0,3 / 2 y 6**. Cada uno tiene su sitio, y el sitio es lo que se pregunta.
+**Cinco cifras de turbidez según punto y finalidad.** Es el parámetro con más números distintos de toda la tabla 3, y por eso es el mejor candidato a pregunta con trampa: **4,0 / 0,8 / 0,3 / 2 y 6**. Cada uno tiene su sitio, y el sitio es lo que se pregunta.
 
 **El oxígeno disuelto.** El tema 24 dejó dicho que el parámetro se desarrollaba «en el 33 (agua de consumo) y en el 34 (residuales)». Leído el anexo I entero, **el resultado es que en agua de consumo no hay parámetro de oxígeno disuelto**: no está en la parte B, ni en la C, ni en la F. La técnica —**Winkler** y **sonda**— es de los temas 22 y 24, y el parámetro se sitúa en el **tema 34**. Se deja escrito aquí para que nadie lo busque dos veces. *(Matiz añadido al redactar el 34: allí **tampoco es un valor límite de vertido**. Su papel es doble —se mide **dentro del ensayo de la DBO**, y es un **indicador del medio receptor**—, y así queda explicado en el apartado 2.10 de aquel tema.)*
 
 **El aluminio, y la técnica que ha caído (1246, n.º 23).** «En la determinación de aluminio por el método de la **eriocromocianina R**, la técnica instrumental utilizada se basa en…» Respuesta oficial: **absorción molecular UV-visible**. Las otras opciones eran **potenciometría** y **fluorescencia atómica**. El método 8326 de Hach, adaptado de *Standard Methods*, lo resume así: la eriocromocianina R reacciona con el aluminio y da un **color rojo anaranjado**, cuya intensidad es **proporcional a la concentración de aluminio**, y se mide a **535 nm**. Es, por tanto, una colorimetría con reactivo cromogénico, como las del tema 25. Como parámetro, el aluminio es un **indicador de calidad** del RD 3/2023 (anexo I, parte C, tabla 3): valor paramétrico **200 µg/L**, con una incertidumbre de medida exigida del **25 %** (anexo III, tabla 15). En el análisis de control solo se añade **si se usan sales de aluminio en la potabilización** (apartado 2.3).
 
 ---
+
+**Uranio y tipo de control.** El uranio figura como parámetro químico de la parte B por su toxicidad química; esto no niega que sus isótopos sean radiactivos. Su determinación química se distingue del control radiológico previsto en el anexo VI.
 
 ## 3. Tabla operativa
 
@@ -570,3 +592,6 @@ Este apartado cierra la deuda con los apuntes anteriores, con **una entrada por 
 10. **El RD 3/2023 arrastra erratas ya declaradas en el tema 29** (cita el derogado RD 783/2001, escribe «MSv» por mSv y una nota apunta al anexo V en lugar del VI). Ninguna afecta a lo que se dice aquí, pero conviene recordar que **el texto consolidado no está impoluto** y que en un examen hay que responder lo que dice la norma, erratas incluidas.
 
 11. **Aprobación.** El tema se ha redactado, generado y cerrado **de una sola vez**, con **autorización previa y expresa del opositor** para saltarse el paso 3 del flujo del README, igual que los temas 29 a 32.
+
+
+**Revisión de apoyo a la ampliación del tema 33 (17/11/2026).** RD 3/2023, artículos 5–8 y anexos I–III (https://www.boe.es/buscar/act.php?id=BOE-A-2023-628); apunte original y sus fuentes declaradas: IDEAM SLC-I029 v5, método 2320-B; UPCT OCW, tema 8; fichas públicas ISO 8467 y 9963. Los matices precedentes delimitan las simplificaciones docentes de cloración, causalidad, dureza y modelo P/T. Los ejercicios de cálculo son originales y declaran sus bases.
