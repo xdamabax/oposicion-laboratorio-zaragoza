@@ -2782,6 +2782,1910 @@
       "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
       "apartado": "4.3",
       "evidencia": "2 horas a temperatura ambiente, no más de 25 °C, o 30 minutos a 37 °C"
+    },
+    {
+      "id": "t12-q161",
+      "pregunta": "Un medio preparado con un 0,75 % de agar es, por su consistencia:",
+      "opciones": [
+        "Líquido.",
+        "Semisólido.",
+        "Sólido."
+      ],
+      "correcta": 1,
+      "explicacion": "El semisólido lleva 0,7-0,8 % de agar; el sólido, 1,2-1,5 %.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.6 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Semisólido | 0,7-0,8 % | Por ejemplo, ensayos con bacteriófagos"
+    },
+    {
+      "id": "t12-q162",
+      "pregunta": "Un medio preparado con un 1,4 % de agar es, por su consistencia:",
+      "opciones": [
+        "Líquido.",
+        "Semisólido.",
+        "Sólido."
+      ],
+      "correcta": 2,
+      "explicacion": "El 1,4 % está dentro del 1,2-1,5 % de los medios sólidos.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.6 · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Sólido | 1,2-1,5 % | Placas: colonias que se cuentan, se distinguen y se aíslan"
+    },
+    {
+      "id": "t12-q163",
+      "pregunta": "¿Cuál de estos medios es general o no selectivo?",
+      "opciones": [
+        "El caldo Rappaport.",
+        "El agar MacConkey.",
+        "El agar nutritivo."
+      ],
+      "correcta": 2,
+      "explicacion": "MacConkey es selectivo y diferencial; Rappaport, de enriquecimiento.",
+      "fuente": "OpenStax, Microbiology (2016), 9.6; SCA (2017), apdo. 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Agar o caldo nutritivo, TSB, agar de extracto de levadura para heterótrofos"
+    },
+    {
+      "id": "t12-q164",
+      "pregunta": "¿Para qué microorganismo se cita el agar XLD como medio selectivo y diferencial?",
+      "opciones": [
+        "Salmonella.",
+        "Clostridios sulfitorreductores.",
+        "Enterococos."
+      ],
+      "correcta": 0,
+      "explicacion": "XLD y MacConkey son los ejemplos de medios selectivos y diferenciales a la vez.",
+      "fuente": "OpenStax, Microbiology (2016), 9.6; SCA (2017), apdo. 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "como el agar XLD para Salmonella o el MacConkey"
+    },
+    {
+      "id": "t12-q165",
+      "pregunta": "Un caldo frena a los competidores y, al acabar la incubación, el microorganismo buscado es el más numeroso. Es un medio:",
+      "opciones": [
+        "Diferencial.",
+        "De enriquecimiento.",
+        "Enriquecido."
+      ],
+      "correcta": 1,
+      "explicacion": "El enriquecido aporta nutrientes a los exigentes; el de enriquecimiento favorece al diana frente a los competidores.",
+      "fuente": "OpenStax, Microbiology (2016), 9.6; SCA (2017), apdo. 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "el de enriquecimiento favorece al diana frente a los competidores"
+    },
+    {
+      "id": "t12-q166",
+      "pregunta": "Un medio que distingue las bacterias por el color que toman sus colonias, sin inhibir a ninguna, es:",
+      "opciones": [
+        "De enriquecimiento.",
+        "Selectivo.",
+        "Diferencial."
+      ],
+      "correcta": 2,
+      "explicacion": "Distinguir es diferenciar; inhibir a los no diana es seleccionar.",
+      "fuente": "OpenStax, Microbiology (2016), 9.6; SCA (2017), apdo. 6 · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Permite distinguir microorganismos por una característica fisiológica o bioquímica, por el color de la colonia o del medio"
+    },
+    {
+      "id": "t12-q167",
+      "pregunta": "¿De qué color son las colonias de coliformes distintos de E. coli en el agar CCA?",
+      "opciones": [
+        "De rosa a rojo.",
+        "Negras.",
+        "De azul oscuro a violeta."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli, con β-glucuronidasa, da colonias de azul oscuro a violeta; los demás coliformes, rosa a rojo.",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "E. coli: de azul oscuro a violeta; coliformes: rosa a rojo"
+    },
+    {
+      "id": "t12-q168",
+      "pregunta": "¿Por qué característica es diferencial el agar CN para Pseudomonas aeruginosa?",
+      "opciones": [
+        "Por la reducción del TTC a formazán.",
+        "Por el pigmento de las colonias.",
+        "Por la reducción del sulfito."
+      ],
+      "correcta": 1,
+      "explicacion": "El CN es selectivo por cetrimida y ácido nalidíxico, y diferencial por el pigmento: colonias verdes o azules.",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Cetrimida y ácido nalidíxico | Pigmento"
+    },
+    {
+      "id": "t12-q169",
+      "pregunta": "¿Qué pareja de agente selectivo y medio es correcta?",
+      "opciones": [
+        "Azida sódica en el agar de enterococos tipo Slanetz y Bartley.",
+        "D-cicloserina en el agar CN.",
+        "Cetrimida en el agar TSC."
+      ],
+      "correcta": 0,
+      "explicacion": "La cetrimida es del CN y la D-cicloserina, del TSC.",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Azida sódica, que inhibe a los coliformes y a la mayoría de los gramnegativos"
+    },
+    {
+      "id": "t12-q170",
+      "pregunta": "En el agar TSC, ¿qué componente es el responsable de que sea diferencial?",
+      "opciones": [
+        "El cloruro de trifeniltetrazolio.",
+        "El metabisulfito sódico.",
+        "La D-cicloserina."
+      ],
+      "correcta": 1,
+      "explicacion": "La D-cicloserina es el agente selectivo; el sulfito, al reducirse, da las colonias negras.",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Metabisulfito sódico: la reducción del sulfito da colonias negras"
+    },
+    {
+      "id": "t12-q171",
+      "pregunta": "¿Qué microorganismo diana del laboratorio de aguas se busca en agar CCA?",
+      "opciones": [
+        "Pseudomonas aeruginosa.",
+        "Los enterococos.",
+        "E. coli y los coliformes."
+      ],
+      "correcta": 2,
+      "explicacion": "El CCA lleva sustratos de la β-galactosidasa (coliformes) y de la β-glucuronidasa (E. coli).",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "E. coli: de azul oscuro a violeta; coliformes: rosa a rojo"
+    },
+    {
+      "id": "t12-q172",
+      "pregunta": "¿Qué aportan principalmente las peptonas a un medio de cultivo?",
+      "opciones": [
+        "Equilibrio osmótico.",
+        "Nitrógeno y aminoácidos.",
+        "Vitaminas y factores de crecimiento."
+      ],
+      "correcta": 1,
+      "explicacion": "Las vitaminas y factores de crecimiento son del extracto de levadura; el equilibrio osmótico, del cloruro sódico.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Extracto acuoso o digestión enzimática de carne. Aportan nitrógeno y aminoácidos"
+    },
+    {
+      "id": "t12-q173",
+      "pregunta": "¿Cuál de estos componentes actúa como agente selectivo en un medio?",
+      "opciones": [
+        "El lauril sulfato sódico.",
+        "El cloruro sódico.",
+        "El extracto de levadura."
+      ],
+      "correcta": 0,
+      "explicacion": "El extracto de levadura es un nutriente y el cloruro sódico mantiene el equilibrio osmótico.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Sales biliares, cristal violeta, azida, antibióticos, lauril sulfato sódico"
+    },
+    {
+      "id": "t12-q174",
+      "pregunta": "¿Cuál de estos compuestos se usa como indicador de pH junto a la lactosa?",
+      "opciones": [
+        "La azida sódica.",
+        "El cristal violeta.",
+        "El rojo de fenol."
+      ],
+      "correcta": 2,
+      "explicacion": "El cristal violeta y la azida son agentes selectivos.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "La lactosa con un indicador (rojo neutro, rojo de fenol) delata la fermentación"
+    },
+    {
+      "id": "t12-q175",
+      "pregunta": "El extracto de carne y el hidrolizado de caseína figuran en los medios como:",
+      "opciones": [
+        "Nutrientes complejos.",
+        "Indicadores de pH.",
+        "Agentes selectivos."
+      ],
+      "correcta": 0,
+      "explicacion": "Son extractos de composición variable que aportan nutrientes.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Extracto de carne e hidrolizado de caseína | Nutrientes complejos"
+    },
+    {
+      "id": "t12-q176",
+      "pregunta": "¿Cuánto extracto de carne lleva un litro de caldo nutritivo, según la receta del apunte?",
+      "opciones": [
+        "12 g.",
+        "1 g.",
+        "5 g."
+      ],
+      "correcta": 1,
+      "explicacion": "Lleva 1 g de extracto de carne, 2 g de extracto de levadura, 5 g de peptona y 5 g de NaCl.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "extracto de carne 1 g, extracto de levadura 2 g, peptona 5 g, NaCl 5 g, agua 1 L"
+    },
+    {
+      "id": "t12-q177",
+      "pregunta": "¿Cuánto extracto de levadura lleva un litro de caldo nutritivo?",
+      "opciones": [
+        "12 g.",
+        "3 g.",
+        "2 g."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 3 g son del agar de extracto de levadura; los 12 g, de su agar.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "extracto de carne 1 g, extracto de levadura 2 g, peptona 5 g"
+    },
+    {
+      "id": "t12-q178",
+      "pregunta": "¿Qué pH debe tener el agar de extracto de levadura para heterótrofos?",
+      "opciones": [
+        "6,0 ± 0,5.",
+        "7,2 ± 0,2.",
+        "7,4 ± 0,2."
+      ],
+      "correcta": 1,
+      "explicacion": "El 7,4 ± 0,2 es el del caldo nutritivo ya estéril.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "agar 12 g, agua 1 L; pH 7,2 ± 0,2"
+    },
+    {
+      "id": "t12-q179",
+      "pregunta": "¿Cuánto extracto de levadura lleva un litro de agar de extracto de levadura?",
+      "opciones": [
+        "3 g.",
+        "12 g.",
+        "1 g."
+      ],
+      "correcta": 0,
+      "explicacion": "La receta es extracto de levadura 3 g, peptona 5 g, agar 12 g y agua 1 L.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "extracto de levadura 3 g, peptona 5 g, agar 12 g, agua 1 L"
+    },
+    {
+      "id": "t12-q180",
+      "pregunta": "¿Cuánta peptona lleva un litro de agar de extracto de levadura?",
+      "opciones": [
+        "1 g.",
+        "3 g.",
+        "5 g."
+      ],
+      "correcta": 2,
+      "explicacion": "Lleva 5 g de peptona, igual que el caldo nutritivo.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "extracto de levadura 3 g, peptona 5 g, agar 12 g, agua 1 L"
+    },
+    {
+      "id": "t12-q181",
+      "pregunta": "¿Qué proporción de agar supone la receta del agar de extracto de levadura (12 g en 1 L)?",
+      "opciones": [
+        "El 0,12 %.",
+        "El 12 %.",
+        "El 1,2 %."
+      ],
+      "correcta": 2,
+      "explicacion": "12 g por litro son 1,2 g por 100 mL: el límite inferior del 1,2-1,5 % habitual.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "agar 12 g, agua 1 L; pH 7,2 ± 0,2"
+    },
+    {
+      "id": "t12-q182",
+      "pregunta": "¿Qué prueba de confirmación de E. coli se apoya en el triptófano que aporta la triptona?",
+      "opciones": [
+        "La producción de indol.",
+        "La oxidasa.",
+        "La reducción del sulfito."
+      ],
+      "correcta": 0,
+      "explicacion": "El triptófano es el precursor del indol.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "precursor del indol (la prueba de confirmación de E. coli)"
+    },
+    {
+      "id": "t12-q183",
+      "pregunta": "La siembra en profundidad es posible porque el agar:",
+      "opciones": [
+        "Se disuelve en frío y gelifica al calentarlo.",
+        "Se mantiene líquido a 45 °C y solo gelifica hacia los 42 °C.",
+        "Gelifica a 60 °C y se vuelve a fundir a 45 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Esa diferencia permite mezclarlo con la muestra a 45 °C sin que cuaje.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "mezclarlo con la muestra a 45 °C sin que cuaje (siembra en profundidad)"
+    },
+    {
+      "id": "t12-q184",
+      "pregunta": "Una placa cuyo agar se cae al invertirla probablemente:",
+      "opciones": [
+        "Se preparó sin disolver o sin mezclar bien el agar.",
+        "Se guardó invertida a 5 ± 3 °C.",
+        "Se secó 30 minutos a 37 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Si el agar no se disuelve o no se mezcla bien, el gel queda blando.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Si no se disuelve o no se mezcla bien, el gel queda blando: puede caerse al invertir la placa"
+    },
+    {
+      "id": "t12-q185",
+      "pregunta": "¿Qué metal de las tuberías se cita como inhibidor del crecimiento si se usa agua del grifo?",
+      "opciones": [
+        "El zinc.",
+        "El cobre.",
+        "El hierro."
+      ],
+      "correcta": 1,
+      "explicacion": "El agua del grifo puede llevar cloro o metales tóxicos, como el cobre de las tuberías.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "puede llevar cloro o metales tóxicos, como el cobre de las tuberías, que inhiben el crecimiento"
+    },
+    {
+      "id": "t12-q186",
+      "pregunta": "Un agua para medios tiene 25 µS/cm de conductividad. Según el apunte:",
+      "opciones": [
+        "Es correcta: la conductividad no importa si el agua es estéril.",
+        "Es correcta, porque el límite es 100 µS/cm.",
+        "Supera el valor ideal, que es menos de 10 µS/cm."
+      ],
+      "correcta": 2,
+      "explicacion": "Una de las tres condiciones del agua es una conductividad baja, idealmente menos de 10 µS/cm.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "conductividad baja, idealmente menos de 10 µS/cm"
+    },
+    {
+      "id": "t12-q187",
+      "pregunta": "El agua para medios da un recuento a 22 °C de 15 000 ufc/mL. ¿Qué se concluye?",
+      "opciones": [
+        "Sirve, porque el límite es 100 000 ufc/mL.",
+        "No sirve: nunca debe superar 10 000 ufc/mL.",
+        "Sirve, porque el medio se esteriliza después."
+      ],
+      "correcta": 1,
+      "explicacion": "El recuento ideal es menos de 1000 ufc/mL y nunca más de 10 000.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "recuento a 22 °C idealmente por debajo de 1000 ufc/mL, y nunca por encima de 10 000"
+    },
+    {
+      "id": "t12-q188",
+      "pregunta": "Además de 121 °C durante 15 minutos, ¿qué otra combinación de autoclave se cita para esterilizar medios?",
+      "opciones": [
+        "115 °C durante 10 minutos.",
+        "134 °C durante 60 minutos.",
+        "100 °C durante 5 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa una u otra según el medio.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "121 °C 15 min, o 115 °C 10 min, según el medio"
+    },
+    {
+      "id": "t12-q189",
+      "pregunta": "Un medio ya autoclavado se ha quedado sin usar. ¿Se puede volver a autoclavar?",
+      "opciones": [
+        "Sí, a 115 °C en lugar de 121 °C.",
+        "Sí, siempre que se haga en las 2 horas siguientes.",
+        "No: los medios no se reautoclavan."
+      ],
+      "correcta": 2,
+      "explicacion": "La esterilización se hace con los tapones aflojados y sin reautoclavar.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "con los tapones aflojados; - sin reautoclavar"
+    },
+    {
+      "id": "t12-q190",
+      "pregunta": "En un frasco de 500 mL, ¿qué volumen de medio es el que pone el apunte como ejemplo de llenado correcto?",
+      "opciones": [
+        "450 mL.",
+        "300 mL.",
+        "500 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Los frascos se llenan como mucho a dos tercios.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "por ejemplo 300 mL en un frasco de 500"
+    },
+    {
+      "id": "t12-q191",
+      "pregunta": "¿Qué molaridad se pone como ejemplo de HCl o NaOH para ajustar el pH del medio?",
+      "opciones": [
+        "1 M.",
+        "0,001 M.",
+        "10 M."
+      ],
+      "correcta": 0,
+      "explicacion": "Se ajusta con HCl o NaOH, por ejemplo 1 M, antes de esterilizar.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "con HCl o NaOH (por ejemplo, 1 M)"
+    },
+    {
+      "id": "t12-q192",
+      "pregunta": "Un laboratorio prepara un medio a las 9:00. ¿Hasta qué hora tiene, como máximo, para esterilizarlo?",
+      "opciones": [
+        "Hasta las 9:00 del día siguiente.",
+        "Hasta las 17:00.",
+        "Hasta las 11:00."
+      ],
+      "correcta": 2,
+      "explicacion": "Se esteriliza en las 2 horas siguientes a la preparación.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Esterilizar en las 2 horas siguientes a la preparación"
+    },
+    {
+      "id": "t12-q193",
+      "pregunta": "¿Cuál es el primer paso de la preparación de un medio deshidratado?",
+      "opciones": [
+        "Repartir el polvo en los frascos y esterilizarlo en seco.",
+        "Pesar el medio y añadir el volumen de agua destilada o desionizada.",
+        "Autoclavar el agua y después pesar el medio."
+      ],
+      "correcta": 1,
+      "explicacion": "Después se ajusta el pH, se disuelve, se reparte y se esteriliza.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Pesar el medio y añadir el volumen de agua destilada o desionizada"
+    },
+    {
+      "id": "t12-q194",
+      "pregunta": "¿Cómo se enfría el agar hasta unos 50 °C antes de verter las placas?",
+      "opciones": [
+        "En estufa o en baño.",
+        "Dejándolo en la mesa hasta que empiece a cuajar.",
+        "En la nevera a 5 ± 3 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Se enfría en estufa o en baño, y no se deja mucho tiempo a 50 °C.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Enfriar el agar a unos 50 °C, en estufa o en baño, antes de verterlo"
+    },
+    {
+      "id": "t12-q195",
+      "pregunta": "Si en una placa de 90 mm se vierten solo 8 mL de medio, el riesgo principal es que:",
+      "opciones": [
+        "Condense demasiado en la tapa.",
+        "El agar no llegue a gelificar.",
+        "El medio quede demasiado fino y se seque."
+      ],
+      "correcta": 2,
+      "explicacion": "En las de 90 mm se vierten 20-25 mL; con menos de 3 mm de espesor, el medio se seca.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "espesor de 3 a 7 mm. Con menos, el medio se seca"
+    },
+    {
+      "id": "t12-q196",
+      "pregunta": "Una placa preparada muestra signos de contaminación antes de usarla. ¿Qué se hace?",
+      "opciones": [
+        "Se reautoclava.",
+        "Se seca 30 minutos a 37 °C y se usa.",
+        "Se desecha."
+      ],
+      "correcta": 2,
+      "explicacion": "Se desechan las adelgazadas, oscurecidas o despegadas, o con signos de contaminación.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "o que tengan signos de contaminación"
+    },
+    {
+      "id": "t12-q197",
+      "pregunta": "Después de verter y dejar solidificar las placas, ¿qué se hace antes de guardarlas?",
+      "opciones": [
+        "Invertirlas.",
+        "Taparlas con papel de aluminio y congelarlas.",
+        "Secarlas 2 horas al sol."
+      ],
+      "correcta": 0,
+      "explicacion": "Se invierten y se guardan a 5 ± 3 °C, protegidas de la desecación.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Dejar solidificar, invertir la placa y guardarla a 5 ± 3 °C"
+    },
+    {
+      "id": "t12-q198",
+      "pregunta": "¿Qué espesor máximo de medio se admite en una placa?",
+      "opciones": [
+        "15 mm.",
+        "7 mm.",
+        "3 mm."
+      ],
+      "correcta": 1,
+      "explicacion": "El espesor va de 3 a 7 mm.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "espesor de 3 a 7 mm. Con menos, el medio se seca"
+    },
+    {
+      "id": "t12-q199",
+      "pregunta": "¿En qué situación queda un lote de medio recién preparado hasta que se demuestra que sirve?",
+      "opciones": [
+        "Congelado a −20 °C.",
+        "En cuarentena.",
+        "Liberado para uso, con una anotación."
+      ],
+      "correcta": 1,
+      "explicacion": "Cada lote queda en cuarentena hasta que se demuestra que sirve.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "queda en cuarentena hasta que se demuestra que sirve"
+    },
+    {
+      "id": "t12-q200",
+      "pregunta": "¿Qué registros acompañan a cada lote de medio?",
+      "opciones": [
+        "Su número de lote y el registro de su preparación y de su esterilización.",
+        "Solo el nombre del analista que lo usará.",
+        "Solo la fecha de caducidad del fabricante."
+      ],
+      "correcta": 0,
+      "explicacion": "Lo básico del control de cada lote; el desarrollo es del tema 17.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Cada lote tiene número de lote, registro de su preparación y de su esterilización"
+    },
+    {
+      "id": "t12-q201",
+      "pregunta": "¿Cuál es la tolerancia habitual del pH de un lote de medio?",
+      "opciones": [
+        "± 0,02 unidades.",
+        "± 1 unidad.",
+        "± 0,2 unidades."
+      ],
+      "correcta": 2,
+      "explicacion": "Si el pH del lote queda fuera de la tolerancia del método, se desecha.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "pH de cada lote: dentro de la tolerancia del método, normalmente ± 0,2"
+    },
+    {
+      "id": "t12-q202",
+      "pregunta": "¿Qué tres comprobaciones cualitativas se hacen a cada lote de medio?",
+      "opciones": [
+        "Peso del polvo, volumen de agua y temperatura del autoclave.",
+        "Color, olor y viscosidad del medio fundido.",
+        "Esterilidad, crecimiento del diana con su aspecto típico y selectividad frente a los no diana."
+      ],
+      "correcta": 2,
+      "explicacion": "Además está el control cuantitativo (recuperación o productividad).",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Esterilidad, crecimiento del microorganismo diana con su aspecto típico, y selectividad frente a los no diana."
+    },
+    {
+      "id": "t12-q203",
+      "pregunta": "En la ISO 11133, ¿cómo se define la productividad de un medio?",
+      "opciones": [
+        "La tasa de recuperación de un microorganismo diana a partir del medio, en condiciones definidas.",
+        "La demostración de que los no diana no se parecen a los diana.",
+        "El grado de inhibición de un microorganismo no diana."
+      ],
+      "correcta": 0,
+      "explicacion": "Las otras dos opciones definen la selectividad y la especificidad.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "La tasa de recuperación de un microorganismo diana a partir del medio, en condiciones definidas"
+    },
+    {
+      "id": "t12-q204",
+      "pregunta": "¿A qué característica de la ISO 11133 corresponde el grado de inhibición de un microorganismo no diana?",
+      "opciones": [
+        "A la especificidad.",
+        "A la selectividad.",
+        "A la productividad."
+      ],
+      "correcta": 1,
+      "explicacion": "La productividad mide la recuperación del diana; la especificidad, que los no diana no se le parezcan.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "El grado de inhibición de un microorganismo no diana en un medio selectivo"
+    },
+    {
+      "id": "t12-q205",
+      "pregunta": "En un medio, los no diana crecen pero sus colonias no se parecen a las del diana. Esto demuestra su:",
+      "opciones": [
+        "Selectividad.",
+        "Especificidad.",
+        "Productividad."
+      ],
+      "correcta": 1,
+      "explicacion": "Especificidad: los no diana no presentan las mismas características visuales que los diana (1233 #14).",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "La demostración de que los no diana no presentan las mismas características visuales que los diana"
+    },
+    {
+      "id": "t12-q206",
+      "pregunta": "Un medio selectivo recupera el 40 % de lo que se obtiene en uno no selectivo. ¿Supera el control cuantitativo?",
+      "opciones": [
+        "No: debe recuperar al menos el 50 %.",
+        "Sí: el control cuantitativo no se aplica a medios selectivos.",
+        "Sí: basta con el 25 %."
+      ],
+      "correcta": 0,
+      "explicacion": "La recuperación en el medio selectivo debe ser al menos el 50 % de la obtenida en uno no selectivo.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "la recuperación en el medio selectivo debe ser al menos el 50 % de la obtenida en uno no selectivo"
+    },
+    {
+      "id": "t12-q207",
+      "pregunta": "Un lote de GVPC da una ratio de productividad de 0,8 para Legionella. Según la ISO 11133:",
+      "opciones": [
+        "No cumple, porque se exige 0,9.",
+        "No cumple, porque se exige 1,0.",
+        "Cumple, porque se exige 0,7."
+      ],
+      "correcta": 2,
+      "explicacion": "Para el GVPC de Legionella, la ratio de productividad exigida es 0,7.",
+      "fuente": "SCA (2017), apdo. 6; ISO 11133 citada por la guía · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "o se usa la ratio de productividad de la ISO 11133: para el GVPC de Legionella, 0,7"
+    },
+    {
+      "id": "t12-q208",
+      "pregunta": "Durante una siembra con técnica aséptica, el tapón del frasco:",
+      "opciones": [
+        "Se deja boca abajo sobre la mesa desinfectada.",
+        "Se sostiene en la mano sin tocar su interior.",
+        "Se deja boca arriba sobre la mesa."
+      ],
+      "correcta": 1,
+      "explicacion": "Todo con técnica aséptica: tapón en la mano, sin tocar su interior ni la boca del frasco.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Con el tapón en la mano, sin tocar el interior del tapón ni la boca del frasco"
+    },
+    {
+      "id": "t12-q209",
+      "pregunta": "¿Qué proporción de muestra y diluyente lleva una dilución decimal?",
+      "opciones": [
+        "1 volumen de muestra en 9 de diluyente.",
+        "1 volumen de muestra en 99 de diluyente.",
+        "1 volumen de muestra en 10 de diluyente."
+      ],
+      "correcta": 0,
+      "explicacion": "1 + 9 da un volumen total diez veces mayor: dilución 1:10.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+      "apartado": "5",
+      "evidencia": "1 volumen de muestra en 9 de diluyente"
+    },
+    {
+      "id": "t12-q210",
+      "pregunta": "¿Con qué diluyentes se hacen las diluciones decimales, según el apunte?",
+      "opciones": [
+        "Con caldo selectivo de enriquecimiento.",
+        "Con agua del grifo estéril.",
+        "Con solución de Ringer a un cuarto o con diluyente de máxima recuperación."
+      ],
+      "correcta": 2,
+      "explicacion": "La ficha de apoyo proponía solución salina, pero las fuentes usan Ringer a un cuarto.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5",
+      "apartado": "5",
+      "evidencia": "se hacen con solución de Ringer a un cuarto o con diluyente de máxima recuperación"
+    },
+    {
+      "id": "t12-q211",
+      "pregunta": "¿Qué volumen de muestra se deposita en la placa en la siembra en profundidad?",
+      "opciones": [
+        "1 mL.",
+        "10 mL.",
+        "0,1 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 0,1 mL son de la siembra en superficie.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril"
+    },
+    {
+      "id": "t12-q212",
+      "pregunta": "En la siembra en profundidad, ¿dónde se pone la muestra?",
+      "opciones": [
+        "Dentro del frasco de agar fundido, antes de verterlo.",
+        "En la placa vacía y estéril, antes del agar.",
+        "Sobre el agar ya solidificado."
+      ],
+      "correcta": 1,
+      "explicacion": "Primero la muestra en la placa vacía; encima, el agar fundido.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril"
+    },
+    {
+      "id": "t12-q213",
+      "pregunta": "¿Cuánto agar fundido se vierte sobre la muestra en la siembra en profundidad?",
+      "opciones": [
+        "5 mL.",
+        "50 mL.",
+        "15-20 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Se vierten 15-20 mL de agar fundido a 45 ± 1 °C.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Encima, 15-20 mL de agar fundido a 45 ± 1 °C"
+    },
+    {
+      "id": "t12-q214",
+      "pregunta": "¿Cómo se mezcla la muestra con el agar en la siembra en profundidad?",
+      "opciones": [
+        "Con movimientos circulares suaves en ambos sentidos, sin mojar la tapa.",
+        "Con el asa de siembra, haciendo estrías.",
+        "Agitando la placa con fuerza arriba y abajo."
+      ],
+      "correcta": 0,
+      "explicacion": "Se mezcla unos 10 segundos con movimientos circulares suaves.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Mezclar con movimientos circulares suaves, en un sentido y en el otro, unos 10 segundos, sin mojar la tapa."
+    },
+    {
+      "id": "t12-q215",
+      "pregunta": "¿Cuánto dura aproximadamente la mezcla de la muestra con el agar en la placa vertida?",
+      "opciones": [
+        "Hasta que el agar cuaja.",
+        "Unos 10 segundos.",
+        "Unos 2 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Movimientos circulares suaves, en un sentido y en el otro, unos 10 segundos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "en un sentido y en el otro, unos 10 segundos, sin mojar la tapa"
+    },
+    {
+      "id": "t12-q216",
+      "pregunta": "Una vez solidificado el agar de la siembra en profundidad, la placa se incuba:",
+      "opciones": [
+        "En vertical.",
+        "Con la tapa hacia arriba.",
+        "Invertida."
+      ],
+      "correcta": 2,
+      "explicacion": "Se deja solidificar y se incuba invertida.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Dejar solidificar e incubar la placa invertida."
+    },
+    {
+      "id": "t12-q217",
+      "pregunta": "¿Dónde crecen las colonias en una siembra en profundidad?",
+      "opciones": [
+        "Solo en la tapa de la placa.",
+        "En todo el espesor del agar.",
+        "Solo en la superficie del agar."
+      ],
+      "correcta": 1,
+      "explicacion": "En la siembra en superficie crecen todas en la superficie.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Las colonias crecen en todo el espesor del agar."
+    },
+    {
+      "id": "t12-q218",
+      "pregunta": "En el recuento de heterótrofos con agar de extracto de levadura, ¿cuánto se incuban las placas a 22 °C?",
+      "opciones": [
+        "68 ± 4 h.",
+        "24 ± 2 h.",
+        "44 ± 4 h."
+      ],
+      "correcta": 0,
+      "explicacion": "A 37 °C son 44 ± 4 h.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Con agar de extracto de levadura se incuba a 22 °C durante 68 ± 4 h"
+    },
+    {
+      "id": "t12-q219",
+      "pregunta": "En el recuento de heterótrofos con agar de extracto de levadura, ¿cuánto se incuban las placas a 37 °C?",
+      "opciones": [
+        "7 días.",
+        "68 ± 4 h.",
+        "44 ± 4 h."
+      ],
+      "correcta": 2,
+      "explicacion": "A 22 °C son 68 ± 4 h.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "a 22 °C durante 68 ± 4 h y a 37 °C durante 44 ± 4 h"
+    },
+    {
+      "id": "t12-q220",
+      "pregunta": "¿Qué inconveniente tiene la siembra en profundidad?",
+      "opciones": [
+        "El agar caliente puede producir un estrés térmico a las bacterias.",
+        "Las colonias no se pueden contar.",
+        "Solo admite 0,1 mL de muestra."
+      ],
+      "correcta": 0,
+      "explicacion": "El agar se añade a 45 ± 1 °C.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "el agar caliente puede producir un estrés térmico a las bacterias"
+    },
+    {
+      "id": "t12-q221",
+      "pregunta": "Una placa sembrada en profundidad con 1 mL de agua sin diluir da 150 colonias. ¿Cuál es el recuento?",
+      "opciones": [
+        "15 ufc/mL.",
+        "150 ufc/mL.",
+        "1500 ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Con 1 mL sin diluir, cada colonia es 1 ufc/mL; 150 está dentro de 10-300.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril"
+    },
+    {
+      "id": "t12-q222",
+      "pregunta": "¿Con qué instrumento se extiende la muestra en la siembra en superficie?",
+      "opciones": [
+        "Con una pipeta Pasteur, sin extender.",
+        "Con un asa de platino, haciendo estrías.",
+        "Con una varilla acodada estéril de vidrio o plástico."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el «asa de Digralsky» del examen.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Extender con una varilla acodada estéril de vidrio o plástico (el asa de Digralsky)"
+    },
+    {
+      "id": "t12-q223",
+      "pregunta": "En la siembra en superficie, en lugar de mover la varilla se puede:",
+      "opciones": [
+        "Dejar la gota sin extender.",
+        "Agitar la placa en un vórtex.",
+        "Girar la placa con la varilla quieta."
+      ],
+      "correcta": 2,
+      "explicacion": "Se extiende con la varilla o girando la placa con la varilla quieta.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "o girando la placa con la varilla quieta"
+    },
+    {
+      "id": "t12-q224",
+      "pregunta": "¿Dónde crecen las colonias en la siembra en superficie?",
+      "opciones": [
+        "Todas en la superficie del agar.",
+        "Solo en el borde de la placa.",
+        "En todo el espesor del agar."
+      ],
+      "correcta": 0,
+      "explicacion": "En profundidad crecen en todo el espesor.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Las colonias crecen todas en la superficie."
+    },
+    {
+      "id": "t12-q225",
+      "pregunta": "Antes de incubar una placa sembrada en superficie hay que:",
+      "opciones": [
+        "Secarla 2 horas a 37 °C.",
+        "Dejar que el inóculo se absorba.",
+        "Cubrirla con agar fundido a 45 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Se deja que se absorba y se incuba invertida.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Dejar que se absorba e incubar invertida."
+    },
+    {
+      "id": "t12-q226",
+      "pregunta": "Se siembran en superficie 0,1 mL de agua sin diluir y crecen 97 colonias. ¿Cuál es el recuento?",
+      "opciones": [
+        "9,7 × 10² ufc/mL.",
+        "9,7 ufc/mL.",
+        "97 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Con 0,1 mL, cada colonia equivale a 10 ufc/mL (1246 #40).",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "97 colonias son 9,7 × 10² ufc/mL"
+    },
+    {
+      "id": "t12-q227",
+      "pregunta": "Se siembran en superficie 0,1 mL de una dilución 1:10 y crecen 50 colonias. ¿Cuántas ufc/mL tenía la muestra?",
+      "opciones": [
+        "50 ufc/mL.",
+        "5000 ufc/mL.",
+        "500 ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "50 colonias × 10 (por los 0,1 mL) × 10 (por la dilución) = 5000 ufc/mL.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Con 0,1 mL, cada colonia equivale a 10 ufc por mililitro"
+    },
+    {
+      "id": "t12-q228",
+      "pregunta": "Una placa de recuento tiene 350 colonias. ¿Es válida para el cálculo?",
+      "opciones": [
+        "Sí, siempre que se cuente con lupa.",
+        "Sí: el límite superior es 500 colonias.",
+        "No: solo se cuentan las placas con entre 10 y 300 colonias."
+      ],
+      "correcta": 2,
+      "explicacion": "Las placas válidas tienen entre 10 y 300 colonias.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Se cuentan las placas con entre 10 y 300 colonias."
+    },
+    {
+      "id": "t12-q229",
+      "pregunta": "Una placa de recuento tiene 6 colonias. ¿Es válida para el cálculo?",
+      "opciones": [
+        "Sí, si es de la dilución más baja.",
+        "Sí: cualquier placa con colonias es válida.",
+        "No: está por debajo de 10 colonias."
+      ],
+      "correcta": 2,
+      "explicacion": "El intervalo contable es de 10 a 300 colonias.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Se cuentan las placas con entre 10 y 300 colonias."
+    },
+    {
+      "id": "t12-q230",
+      "pregunta": "Si todas las placas de una serie tienen más de 300 colonias, el resultado se expresa:",
+      "opciones": [
+        "Como «más de 300» en la dilución más alta.",
+        "Con la media de todas las placas.",
+        "Como «incontable», y se repite sin diluir."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la regla común a profundidad y superficie.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Si todas tienen más de 300, el resultado es «más de 300» en la dilución más alta."
+    },
+    {
+      "id": "t12-q231",
+      "pregunta": "¿Para qué se usa una lupa o un contador al contar las colonias?",
+      "opciones": [
+        "Para distinguir los cultivos puros de los mixtos.",
+        "Para no perder las colonias muy pequeñas.",
+        "Para medir el diámetro de cada colonia."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una regla común a las dos técnicas de recuento.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Se usa lupa o contador para no perder las colonias muy pequeñas."
+    },
+    {
+      "id": "t12-q232",
+      "pregunta": "¿Cuántas placas se siembran de cada dilución en la siembra en superficie?",
+      "opciones": [
+        "Cinco.",
+        "Dos, por duplicado.",
+        "Una sola."
+      ],
+      "correcta": 1,
+      "explicacion": "Se siembran 0,1 mL por duplicado.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "0,1 mL de la muestra o de su dilución, por duplicado."
+    },
+    {
+      "id": "t12-q233",
+      "pregunta": "Comparando los volúmenes sembrados, la siembra en profundidad usa ___ y la siembra en superficie usa ___.",
+      "opciones": [
+        "1 mL; 0,1 mL.",
+        "10 mL; 1 mL.",
+        "0,1 mL; 1 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso en superficie cada colonia vale 10 ufc/mL.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "0,1 mL de la muestra o de su dilución, por duplicado."
+    },
+    {
+      "id": "t12-q234",
+      "pregunta": "¿Cuál es el primer paso de la siembra por agotamiento según el procedimiento de los CDC?",
+      "opciones": [
+        "Flamear el agar de la placa.",
+        "Rotular la tapa de la placa.",
+        "Rotular la base de la placa."
+      ],
+      "correcta": 2,
+      "explicacion": "Se rotula la base, no la tapa.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Rotular la base de la placa. 2. Con asa estéril"
+    },
+    {
+      "id": "t12-q235",
+      "pregunta": "Para empezar la siembra por agotamiento se toma con el asa:",
+      "opciones": [
+        "Una colonia, sin tocar otras zonas de la placa de origen.",
+        "Una gota de medio sin sembrar.",
+        "Toda la masa de crecimiento de la placa de origen."
+      ],
+      "correcta": 0,
+      "explicacion": "Se parte de una sola colonia.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Con asa estéril, tomar una colonia, sin tocar otras zonas de la placa de origen."
+    },
+    {
+      "id": "t12-q236",
+      "pregunta": "¿Cómo se siembra el primer cuadrante en la siembra por agotamiento?",
+      "opciones": [
+        "Entrando dos o tres veces en el último cuadrante.",
+        "Con estrías juntas.",
+        "Con estrías cada vez más cortas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las estrías más cortas son del cuarto cuadrante.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Sembrar el primer cuadrante con estrías juntas."
+    },
+    {
+      "id": "t12-q237",
+      "pregunta": "En la siembra por agotamiento, si el asa es de plástico, entre un cuadrante y otro:",
+      "opciones": [
+        "Se sigue con la misma, sin más.",
+        "Se flamea hasta el rojo.",
+        "Se cambia por otra."
+      ],
+      "correcta": 2,
+      "explicacion": "Las asas de metal se esterilizan; las de plástico se cambian.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Esterilizar el asa o, si es de plástico, cambiarla."
+    },
+    {
+      "id": "t12-q238",
+      "pregunta": "En la siembra por agotamiento, el tercer cuadrante se siembra entrando en el segundo:",
+      "opciones": [
+        "Ninguna vez.",
+        "Dos o tres veces.",
+        "Unas cuatro veces."
+      ],
+      "correcta": 1,
+      "explicacion": "Al segundo se entra desde el primero unas cuatro veces; al tercero, dos o tres.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "En el tercero, lo mismo, entrando dos o tres veces en el segundo."
+    },
+    {
+      "id": "t12-q239",
+      "pregunta": "¿Cómo se hacen las estrías del cuarto cuadrante?",
+      "opciones": [
+        "Cada vez más cortas.",
+        "En zigzag por toda la placa.",
+        "Juntas y largas, como en el primero."
+      ],
+      "correcta": 0,
+      "explicacion": "En el último cuadrante quedan las colonias aisladas.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "En el cuarto, estrías que se van haciendo más cortas."
+    },
+    {
+      "id": "t12-q240",
+      "pregunta": "¿En qué zona de una siembra en cuatro cuadrantes se esperan las colonias aisladas?",
+      "opciones": [
+        "Repartidas por igual en todos.",
+        "En el primer cuadrante.",
+        "En el último cuadrante."
+      ],
+      "correcta": 2,
+      "explicacion": "Cada colonia aislada procede, en principio, de una sola célula.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "En el último cuadrante quedan colonias aisladas"
+    },
+    {
+      "id": "t12-q241",
+      "pregunta": "Cada colonia aislada en una siembra por agotamiento procede, en principio:",
+      "opciones": [
+        "De una sola célula.",
+        "De una colonia del primer cuadrante que se ha desplazado.",
+        "De la mezcla de todas las células del inóculo."
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso, resembrada, da un cultivo puro.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "cada una procede, en principio, de una sola célula"
+    },
+    {
+      "id": "t12-q242",
+      "pregunta": "Al pasar del primer al segundo cuadrante en la siembra por agotamiento, la placa:",
+      "opciones": [
+        "Se invierte.",
+        "Se gira un cuarto de vuelta.",
+        "Se gira media vuelta."
+      ],
+      "correcta": 1,
+      "explicacion": "Se esteriliza o cambia el asa y se gira un cuarto de vuelta.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Girar la placa un cuarto de vuelta."
+    },
+    {
+      "id": "t12-q243",
+      "pregunta": "¿Con qué se inocula un medio líquido?",
+      "opciones": [
+        "Solo con filtro de membrana.",
+        "Solo con varilla acodada.",
+        "Con asa o con pipeta."
+      ],
+      "correcta": 2,
+      "explicacion": "La siembra en caldo es la base de los tubos del NMP y de los caldos de enriquecimiento.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Se inocula el caldo con asa o con pipeta."
+    },
+    {
+      "id": "t12-q244",
+      "pregunta": "Para Campylobacter, ¿qué poro de membrana se usa en la filtración?",
+      "opciones": [
+        "1,2 µm.",
+        "0,2 µm.",
+        "0,45 µm."
+      ],
+      "correcta": 1,
+      "explicacion": "El poro habitual es 0,45 µm; para Legionella o Campylobacter, 0,2 µm.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "de 0,2 µm para Legionella o Campylobacter"
+    },
+    {
+      "id": "t12-q245",
+      "pregunta": "¿En qué unidades se expresa el resultado de la filtración por membrana?",
+      "opciones": [
+        "ufc por 100 mL.",
+        "ufc por gramo.",
+        "ufc por mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se filtra un volumen conocido de agua y se refiere a 100 mL.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "empapada de caldo. - Resultado: ufc por 100 mL."
+    },
+    {
+      "id": "t12-q246",
+      "pregunta": "¿Qué intervalo de colonias por filtro se busca al elegir el volumen de muestra?",
+      "opciones": [
+        "Entre 100 y 120 colonias.",
+        "Entre 10 y 300 colonias.",
+        "Entre 20 y 80 colonias."
+      ],
+      "correcta": 2,
+      "explicacion": "El 10-300 es de las placas de recuento; en el filtro, 20-80.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "El volumen se elige para que en el filtro crezcan entre 20 y 80 colonias."
+    },
+    {
+      "id": "t12-q247",
+      "pregunta": "En un filtro de membrana crecen 150 colonias. ¿Qué problema tiene ese recuento?",
+      "opciones": [
+        "Ninguno, si se cuenta con lupa.",
+        "Ninguno: el filtro admite hasta 300 colonias.",
+        "Pierde exactitud: por encima de 80 colonias el recuento no es fiable."
+      ],
+      "correcta": 2,
+      "explicacion": "Habría que filtrar menos volumen para quedar entre 20 y 80.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Por encima de 80, el recuento pierde exactitud"
+    },
+    {
+      "id": "t12-q248",
+      "pregunta": "Se filtran 10 mL de agua y crecen 25 colonias típicas. ¿Cuál es el resultado por 100 mL?",
+      "opciones": [
+        "250 ufc/100 mL.",
+        "2,5 ufc/100 mL.",
+        "25 ufc/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "25 colonias en 10 mL equivalen a 250 en 100 mL.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "empapada de caldo. - Resultado: ufc por 100 mL."
+    },
+    {
+      "id": "t12-q249",
+      "pregunta": "Después de filtrar, ¿con qué cara hacia arriba se coloca la membrana sobre el medio?",
+      "opciones": [
+        "Da igual, porque el medio difunde por los dos lados.",
+        "Con la cara por la que pasó la muestra hacia arriba.",
+        "Con la cara de la muestra contra el agar."
+      ],
+      "correcta": 1,
+      "explicacion": "La membrana se coloca cara arriba sobre un medio selectivo y diferencial.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "La membrana se coloca cara arriba sobre un medio selectivo y diferencial"
+    },
+    {
+      "id": "t12-q250",
+      "pregunta": "¿Qué es un cultivo puro?",
+      "opciones": [
+        "Un solo tipo de colonia, descendiente de una sola célula.",
+        "Un cultivo con un único medio de enriquecimiento.",
+        "Un cultivo sin ningún agente selectivo."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el objetivo de las técnicas de aislamiento.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "El objetivo es un cultivo puro: un solo tipo de colonia, descendiente de una sola célula."
+    },
+    {
+      "id": "t12-q251",
+      "pregunta": "¿Cuándo ayudan los medios selectivos y de enriquecimiento a aislar un microorganismo?",
+      "opciones": [
+        "Solo cuando el diana es grampositivo.",
+        "Cuando el diana es una minoría entre otros microorganismos.",
+        "Cuando la muestra ya es un cultivo puro."
+      ],
+      "correcta": 1,
+      "explicacion": "Favorecen al diana frente a los acompañantes.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "favorecen al diana cuando es una minoría entre otros microorganismos"
+    },
+    {
+      "id": "t12-q252",
+      "pregunta": "¿Qué aportan las diluciones a las técnicas de aislamiento?",
+      "opciones": [
+        "Que desaparezcan los microorganismos no diana.",
+        "Que el diana crezca más deprisa.",
+        "Que, con la dilución adecuada, las colonias salgan separadas."
+      ],
+      "correcta": 2,
+      "explicacion": "Con la siembra en superficie o en profundidad.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "con la dilución adecuada, las colonias salen separadas"
+    },
+    {
+      "id": "t12-q253",
+      "pregunta": "¿Cómo se comprueba en placa la pureza de un cultivo?",
+      "opciones": [
+        "El medio cambia de color alrededor de alguna colonia.",
+        "Las colonias tienen tamaños muy distintos.",
+        "Todas las colonias son iguales en forma y color."
+      ],
+      "correcta": 2,
+      "explicacion": "Un cultivo mixto muestra varios tipos de colonia.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "colonias todas iguales en forma y color"
+    },
+    {
+      "id": "t12-q254",
+      "pregunta": "En una placa aparecen colonias de dos formas y colores distintos. Se trata de:",
+      "opciones": [
+        "Un cultivo mixto.",
+        "Un cultivo de referencia.",
+        "Un cultivo puro."
+      ],
+      "correcta": 0,
+      "explicacion": "Un cultivo puro tiene un solo tipo de colonia.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Un cultivo mixto muestra varios tipos."
+    },
+    {
+      "id": "t12-q255",
+      "pregunta": "¿Qué se obtiene al resembrar una colonia aislada?",
+      "opciones": [
+        "Una reserva de referencia.",
+        "Un cultivo puro.",
+        "Un cultivo mixto."
+      ],
+      "correcta": 1,
+      "explicacion": "Una colonia aislada, resembrada, da un cultivo puro.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Una colonia aislada, resembrada, da un cultivo puro."
+    },
+    {
+      "id": "t12-q256",
+      "pregunta": "¿Para qué se guardan sobre todo las cepas en un laboratorio?",
+      "opciones": [
+        "Para producir vacunas.",
+        "Para venderlas a otros laboratorios.",
+        "Para el control de calidad: comprobar medios, validar métodos y vigilar el laboratorio."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el uso principal que da el apunte.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Las cepas se guardan sobre todo para el control de calidad"
+    },
+    {
+      "id": "t12-q257",
+      "pregunta": "¿Qué colecciones se citan como ejemplo de colecciones británicas reconocidas?",
+      "opciones": [
+        "NCTC y NCIMB.",
+        "CECT y ENAC.",
+        "ATCC y DSMZ."
+      ],
+      "correcta": 0,
+      "explicacion": "Son miembros de la WFCC o de la ECCO.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "por ejemplo, las colecciones británicas NCTC o NCIMB"
+    },
+    {
+      "id": "t12-q258",
+      "pregunta": "¿Cómo se guardan las reservas de referencia?",
+      "opciones": [
+        "En caldo a 37 °C.",
+        "En alícuotas congeladas o liofilizadas.",
+        "En placas de agar a temperatura ambiente."
+      ],
+      "correcta": 1,
+      "explicacion": "Son cultivos idénticos obtenidos subcultivando una sola vez la cepa de referencia.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Se guardan en alícuotas congeladas o liofilizadas"
+    },
+    {
+      "id": "t12-q259",
+      "pregunta": "¿Qué son los cultivos de trabajo?",
+      "opciones": [
+        "Alícuotas liofilizadas para largo plazo.",
+        "Subcultivos primarios de una reserva, para el uso diario.",
+        "Cepas recibidas directamente de una colección."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el último eslabón de la cadena de referencia.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Subcultivos primarios de una reserva, para el uso diario"
+    },
+    {
+      "id": "t12-q260",
+      "pregunta": "Al hacer las reservas a partir de la cepa de referencia, ¿qué se comprueba en paralelo?",
+      "opciones": [
+        "La pureza y las pruebas bioquímicas.",
+        "La resistencia a la congelación.",
+        "Solo la fecha de caducidad."
+      ],
+      "correcta": 0,
+      "explicacion": "La cepa se subcultiva una sola vez para hacer las reservas.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "comprobando en paralelo la pureza y las pruebas bioquímicas"
+    },
+    {
+      "id": "t12-q261",
+      "pregunta": "¿Pueden los cultivos de trabajo sustituir a las reservas de referencia?",
+      "opciones": [
+        "Sí, si se guardan a −20 °C.",
+        "Sí, si se subcultivan cada semana.",
+        "No, nunca."
+      ],
+      "correcta": 2,
+      "explicacion": "Los cultivos de trabajo nunca sustituyen a las reservas.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Nunca sustituyen a las reservas."
+    },
+    {
+      "id": "t12-q262",
+      "pregunta": "Para congelar cepas, ¿qué temperatura es preferible a −20 °C?",
+      "opciones": [
+        "5 ± 3 °C.",
+        "0 °C.",
+        "−70 °C o menos, en ultracongelador."
+      ],
+      "correcta": 2,
+      "explicacion": "La congelación sirve para medio y largo plazo.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "A −20 °C o, mejor, a −70 °C o menos (ultracongelador)"
+    },
+    {
+      "id": "t12-q263",
+      "pregunta": "¿Para qué plazo sirve la congelación de cepas a −20 o −70 °C?",
+      "opciones": [
+        "Medio y largo plazo.",
+        "Solo para enviar cepas.",
+        "Solo unos días."
+      ],
+      "correcta": 0,
+      "explicacion": "El corto plazo es la resiembra con refrigeración.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "(ultracongelador) | Medio y largo plazo"
+    },
+    {
+      "id": "t12-q264",
+      "pregunta": "¿A qué temperatura se guardan los viales de perlas criogénicas?",
+      "opciones": [
+        "A temperatura ambiente.",
+        "Por debajo de −20 °C.",
+        "A 5 ± 3 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Son reservas de uso frecuente.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Viales con perlas inoculadas, por debajo de −20 °C"
+    },
+    {
+      "id": "t12-q265",
+      "pregunta": "Al usar un vial de perlas criogénicas:",
+      "opciones": [
+        "Se sacan todas las perlas y se siembran a la vez.",
+        "Se descongela el vial entero y se vuelve a congelar.",
+        "Se saca una perla con pinzas o asa estériles y el vial vuelve al frío enseguida."
+      ],
+      "correcta": 2,
+      "explicacion": "Así el resto del vial no se descongela.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Se saca una perla con pinzas o asa estériles y el vial vuelve al frío enseguida"
+    },
+    {
+      "id": "t12-q266",
+      "pregunta": "¿Para qué tipo de reservas se usan las perlas criogénicas?",
+      "opciones": [
+        "Solo para cultivos de trabajo diarios en placa.",
+        "Para reservas de uso frecuente.",
+        "Solo para envíos internacionales."
+      ],
+      "correcta": 1,
+      "explicacion": "Se saca una perla cada vez.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "vuelve al frío enseguida | Reservas de uso frecuente"
+    },
+    {
+      "id": "t12-q267",
+      "pregunta": "En la conservación en nitrógeno líquido, la cepa se suspende en un medio con:",
+      "opciones": [
+        "Crioprotector.",
+        "Indicador de pH.",
+        "Agente selectivo."
+      ],
+      "correcta": 0,
+      "explicacion": "Se guarda a −196 °C.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "En un medio con crioprotector, a −196 °C"
+    },
+    {
+      "id": "t12-q268",
+      "pregunta": "Como alternativa al nitrógeno líquido para el largo plazo se cita el ultracongelador a:",
+      "opciones": [
+        "−5 °C.",
+        "−150 °C.",
+        "−20 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "El nitrógeno líquido está a −196 °C.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "o en ultracongelador a −150 °C"
+    },
+    {
+      "id": "t12-q269",
+      "pregunta": "¿Cómo se guardan las ampollas de cepas liofilizadas bien envasadas?",
+      "opciones": [
+        "Selladas, a temperatura ambiente.",
+        "Sumergidas en nitrógeno líquido.",
+        "Abiertas, en nevera."
+      ],
+      "correcta": 0,
+      "explicacion": "La liofilización elimina el agua por sublimación.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ampollas selladas que se guardan a temperatura ambiente si están bien envasadas"
+    },
+    {
+      "id": "t12-q270",
+      "pregunta": "¿Qué método de conservación se cita además para enviar cepas?",
+      "opciones": [
+        "Las perlas criogénicas.",
+        "La resiembra en placa.",
+        "La liofilización."
+      ],
+      "correcta": 2,
+      "explicacion": "Es de largo plazo y sirve para enviar cepas.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Largo plazo, y para enviar cepas"
+    },
+    {
+      "id": "t12-q271",
+      "pregunta": "¿Entre qué temperaturas está una nevera, según el apunte?",
+      "opciones": [
+        "Entre 8 y 15 °C.",
+        "Entre 0 y 7 °C.",
+        "Entre −20 y −10 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso las placas y cultivos se guardan a 5 ± 3 °C.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "(una nevera está entre 0 y 7 °C)"
+    },
+    {
+      "id": "t12-q272",
+      "pregunta": "Tras conservar una cepa de E. coli, ¿qué se comprueba como ejemplo de que conserva sus características?",
+      "opciones": [
+        "Que sigue fermentando la lactosa a 37 y a 44 °C.",
+        "Que da colonias rojas en agar de enterococos.",
+        "Que crece en agar TSC con colonias negras."
+      ],
+      "correcta": 0,
+      "explicacion": "Tras cualquier almacenamiento se comprueba la pureza y las características.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "por ejemplo, que E. coli sigue fermentando la lactosa a 37 y a 44 °C"
+    },
+    {
+      "id": "t12-q273",
+      "pregunta": "¿Cuál es el orden correcto de la cadena de los cultivos de referencia?",
+      "opciones": [
+        "Reservas de referencia → cepa de referencia → cultivos de trabajo.",
+        "Cultivos de trabajo → reservas de referencia → cepa de referencia.",
+        "Cepa de referencia → reservas de referencia → cultivos de trabajo."
+      ],
+      "correcta": 2,
+      "explicacion": "La cepa se subcultiva una vez para las reservas, y de una reserva salen los cultivos de trabajo.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Subcultivos primarios de una reserva, para el uso diario"
+    },
+    {
+      "id": "t12-q274",
+      "pregunta": "Un laboratorio guarda cultivos en caldo a 5 ± 3 °C y los resiembra periódicamente. Es un método de conservación:",
+      "opciones": [
+        "Para enviar cepas.",
+        "A corto plazo.",
+        "A largo plazo."
+      ],
+      "correcta": 1,
+      "explicacion": "El frío frena el metabolismo, pero no lo detiene.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Cultivo en caldo o en placa a 5 ± 3 °C"
+    },
+    {
+      "id": "t12-q275",
+      "pregunta": "En la liofilización, el agua de la cepa se elimina:",
+      "opciones": [
+        "Por sublimación, tras una congelación rápida y al vacío.",
+        "Por centrifugación.",
+        "Por evaporación a 100 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Se pasa del hielo al vapor sin fundirse.",
+      "fuente": "Eurachem (2023), anexo B; OpenStax, Microbiology (2016), 13.2 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Congelación rápida y vacío: el agua se va por sublimación"
+    },
+    {
+      "id": "t12-q276",
+      "pregunta": "¿Qué combinación de cifras corresponde a la siembra en profundidad?",
+      "opciones": [
+        "100 mL filtrados por una membrana de 47 mm.",
+        "0,1 mL de muestra sobre agar seco.",
+        "1 mL de muestra y 15-20 mL de agar a 45 ± 1 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "La segunda opción es la siembra en superficie y la tercera, la filtración.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Profundidad: 1 mL + 15-20 mL de agar a 45 ± 1 °C"
+    },
+    {
+      "id": "t12-q277",
+      "pregunta": "¿Qué temperatura se repite en el apunte para guardar las placas preparadas y conservar cultivos a corto plazo?",
+      "opciones": [
+        "−20 °C.",
+        "22 ± 1 °C.",
+        "5 ± 3 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la temperatura de refrigeración.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Guardar a 5 ± 3 °C, invertidas y a oscuras"
+    },
+    {
+      "id": "t12-q278",
+      "pregunta": "Ordenadas de más fría a menos fría, las temperaturas de conservación de cepas del apunte son:",
+      "opciones": [
+        "−196, −150, −70, −20 y 5 ± 3 °C.",
+        "5 ± 3, −20, −196, −150 y −70 °C.",
+        "−20, −70, −150, −196 y 5 ± 3 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "El nitrógeno líquido es lo más frío; la refrigeración, lo menos.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Conservación: 5 ± 3 °C; −20 °C; −70 °C; −150 °C; nitrógeno −196 °C"
+    },
+    {
+      "id": "t12-q279",
+      "pregunta": "¿Qué cifra es el límite superior de colonias en un filtro de membrana de 47 mm?",
+      "opciones": [
+        "120.",
+        "80.",
+        "300."
+      ],
+      "correcta": 1,
+      "explicacion": "En placa de recuento el límite es 300; en filtro, 80.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Filtro de 47 mm, 0,45 µm (0,2 µm para Legionella); 20-80 colonias, límite 80"
+    },
+    {
+      "id": "t12-q280",
+      "pregunta": "¿Qué dos plazos de secado de las placas recoge el cuadro de cifras?",
+      "opciones": [
+        "2 h a 25 °C como máximo o 30 min a 37 °C.",
+        "10 min a 50 °C o 1 h a 37 °C.",
+        "24 h a 5 °C o 2 h a 45 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Se secan antes de sembrar para evitar el crecimiento en velo.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Secar 2 h a ≤ 25 °C o 30 min a 37 °C"
+    },
+    {
+      "id": "t12-q281",
+      "pregunta": "¿Qué pareja de medio y microorganismo del agua es correcta?",
+      "opciones": [
+        "Slanetz y Bartley y Pseudomonas.",
+        "TSC y clostridios.",
+        "CN y enterococos."
+      ],
+      "correcta": 1,
+      "explicacion": "Enterococos: Slanetz y Bartley; Pseudomonas: CN.",
+      "fuente": "SCA (2017), apdo. 6; PLANTILLAS.md · apunte §9",
+      "apartado": "9",
+      "evidencia": "Clostridios: TSC (cicloserina y sulfito → negras)"
+    },
+    {
+      "id": "t12-q282",
+      "pregunta": "¿De qué color son las colonias de Pseudomonas aeruginosa en agar CN?",
+      "opciones": [
+        "Rojas o granates.",
+        "Negras.",
+        "Verdes o azules."
+      ],
+      "correcta": 2,
+      "explicacion": "Negras son las de clostridios en TSC; rojas, las de enterococos.",
+      "fuente": "SCA (2017), apdo. 6; PLANTILLAS.md · apunte §9",
+      "apartado": "9",
+      "evidencia": "Pseudomonas: CN (cetrimida y nalidíxico → verdes o azules)"
+    },
+    {
+      "id": "t12-q283",
+      "pregunta": "¿Qué regla sobre el pH de los medios destaca el apunte entre los puntos críticos?",
+      "opciones": [
+        "Se ajusta antes de esterilizar, nunca después.",
+        "No se ajusta nunca.",
+        "Se ajusta siempre después de autoclavar."
+      ],
+      "correcta": 0,
+      "explicacion": "Después de esterilizar hay riesgo de contaminar el medio.",
+      "fuente": "SCA (2017), apdo. 6; PLANTILLAS.md · apunte §9",
+      "apartado": "9",
+      "evidencia": "El pH se ajusta antes de esterilizar, nunca después."
+    },
+    {
+      "id": "t12-q284",
+      "pregunta": "Entre los puntos críticos, ¿cuál es el resumen correcto de la conservación de cepas?",
+      "opciones": [
+        "Guardar los cultivos de trabajo como reservas.",
+        "Subcultivar una sola vez la cepa de referencia, no recongelar lo descongelado y comprobar la pureza.",
+        "Subcultivar la cepa cada semana y recongelar las sobras."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el punto 12 del apunte.",
+      "fuente": "SCA (2017), apdo. 6; PLANTILLAS.md · apunte §9",
+      "apartado": "9",
+      "evidencia": "lo descongelado no se recongela; y hay que comprobar la pureza después"
+    },
+    {
+      "id": "t12-q285",
+      "pregunta": "¿Qué significan las siglas TTC del agar de enterococos?",
+      "opciones": [
+        "Tiosulfato, triptona y cetrimida.",
+        "Triptosa, tioglicolato y cicloserina.",
+        "Cloruro de trifeniltetrazolio."
+      ],
+      "correcta": 2,
+      "explicacion": "El TTC se reduce a formazán rojo y colorea las colonias.",
+      "fuente": "SCA, métodos británicos de enterococos y de clostridios; PLANTILLAS.md · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Cloruro de trifeniltetrazolio (TTC): se reduce a formazán rojo"
+    },
+    {
+      "id": "t12-q286",
+      "pregunta": "¿Qué componente del medio es el que lo solidifica?",
+      "opciones": [
+        "El agar.",
+        "El cloruro sódico.",
+        "La peptona."
+      ],
+      "correcta": 0,
+      "explicacion": "El agar es un polisacárido extraído de algas.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §3",
+      "apartado": "3",
+      "evidencia": "Polisacárido extraído de algas. Solidifica el medio"
+    },
+    {
+      "id": "t12-q287",
+      "pregunta": "¿Con qué otro nombre se conoce la resiembra de una colonia aislada en otra placa o en un caldo?",
+      "opciones": [
+        "Liofilización.",
+        "Subcultivo.",
+        "Enriquecimiento."
+      ],
+      "correcta": 1,
+      "explicacion": "Sirve para purificar la colonia o para las pruebas de confirmación.",
+      "fuente": "SCA (2017), apdo. 6; OpenStax, Microbiology (2016), 9.1 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Resiembra (subcultivo): una colonia aislada se pasa a otra placa o a un caldo"
+    },
+    {
+      "id": "t12-q288",
+      "pregunta": "Según el cuadro de cifras, ¿cuánto tiempo como máximo pueden estar las placas preparadas en la mesa?",
+      "opciones": [
+        "30 minutos.",
+        "24 horas.",
+        "2 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "La luz forma peróxidos que inhiben el crecimiento.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "Guardar a 5 ± 3 °C, invertidas y a oscuras; ≤ 2 h en la mesa"
+    },
+    {
+      "id": "t12-q289",
+      "pregunta": "¿Qué pH típico tienen los medios del apunte?",
+      "opciones": [
+        "7,2-7,4 ± 0,2.",
+        "8,5-9,0 ± 0,2.",
+        "5,0-5,5 ± 0,5."
+      ],
+      "correcta": 0,
+      "explicacion": "Se ajusta antes de esterilizar.",
+      "fuente": "SCA (2017), apdo. 6; SCA (2020), parte 7; Eurachem (2023) · apunte §8",
+      "apartado": "8",
+      "evidencia": "pH típico: 7,2-7,4 ± 0,2; ajustar antes de esterilizar"
+    },
+    {
+      "id": "t12-q290",
+      "pregunta": "Se siembra en profundidad 1 mL de una dilución 1:100 y salen 45 colonias. ¿Cuántas ufc/mL tenía la muestra?",
+      "opciones": [
+        "45 ufc/mL.",
+        "4500 ufc/mL.",
+        "450 ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "45 colonias × 100 (factor de dilución), con 1 mL sembrado.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril"
+    },
+    {
+      "id": "t12-q291",
+      "pregunta": "Se siembra en profundidad 1 mL de una dilución 1:10 y salen 120 colonias. ¿Cuál es el recuento de la muestra?",
+      "opciones": [
+        "12 000 ufc/mL.",
+        "120 ufc/mL.",
+        "1200 ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "120 colonias × 10 (factor de dilución); 120 está entre 10 y 300.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "1 mL de la muestra, o de su dilución, en la placa vacía y estéril"
+    },
+    {
+      "id": "t12-q292",
+      "pregunta": "Se siembran en superficie 0,1 mL de agua sin diluir y salen 12 colonias. ¿Cuál es el recuento?",
+      "opciones": [
+        "1,2 ufc/mL.",
+        "12 ufc/mL.",
+        "120 ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Con 0,1 mL, cada colonia equivale a 10 ufc/mL.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Con 0,1 mL, cada colonia equivale a 10 ufc por mililitro"
+    },
+    {
+      "id": "t12-q293",
+      "pregunta": "Se siembran en superficie 0,1 mL de una dilución 1:100 y salen 23 colonias. ¿Cuántas ufc/mL tenía la muestra?",
+      "opciones": [
+        "23 000 ufc/mL.",
+        "230 ufc/mL.",
+        "2300 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "23 × 10 (por los 0,1 mL) × 100 (por la dilución) = 23 000 ufc/mL.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Con 0,1 mL, cada colonia equivale a 10 ufc por mililitro"
+    },
+    {
+      "id": "t12-q294",
+      "pregunta": "Se filtran 100 mL de agua y crecen 40 colonias típicas. ¿Cuál es el resultado?",
+      "opciones": [
+        "4 ufc/100 mL.",
+        "40 ufc/100 mL.",
+        "400 ufc/100 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Si se filtran 100 mL, el número de colonias ya es el resultado por 100 mL.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "empapada de caldo. - Resultado: ufc por 100 mL."
+    },
+    {
+      "id": "t12-q295",
+      "pregunta": "Se filtran 50 mL de agua y crecen 30 colonias típicas. ¿Cuál es el resultado por 100 mL?",
+      "opciones": [
+        "15 ufc/100 mL.",
+        "30 ufc/100 mL.",
+        "60 ufc/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "30 colonias en 50 mL equivalen a 60 en 100 mL.",
+      "fuente": "SCA (2017), apdo. 6; EPA, método 1103.2 (2023) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Un volumen conocido de agua se filtra por una membrana de 47 mm y 0,45 µm"
+    },
+    {
+      "id": "t12-q296",
+      "pregunta": "¿En cuántas zonas se divide la placa en el procedimiento de siembra por agotamiento de los CDC?",
+      "opciones": [
+        "En cuatro cuadrantes.",
+        "En ocho sectores.",
+        "En dos mitades."
+      ],
+      "correcta": 0,
+      "explicacion": "Se siembra cuadrante a cuadrante, girando la placa un cuarto de vuelta.",
+      "fuente": "CDC, 4 Quadrant Streak · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "En el cuarto, estrías que se van haciendo más cortas."
     }
   ],
   "supuestos": [
