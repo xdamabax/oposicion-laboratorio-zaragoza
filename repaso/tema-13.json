@@ -3461,6 +3461,230 @@
       "fuente": "SCA (2017), apdo. 7.2 · apunte §5.6",
       "apartado": "5.6",
       "evidencia": "con colonias ya aisladas para confirmar"
+    },
+    {
+      "id": "t13-q209",
+      "pregunta": "Un laboratorio busca un microorganismo que aparece en números muy bajos. ¿Qué paso añade antes de sembrar?",
+      "opciones": [
+        "Diluir la muestra en serie hasta la 10⁻³.",
+        "Concentrar: examinar un volumen grande y reducirlo a uno pequeño que se pueda sembrar.",
+        "Sembrar 0,1 mL en superficie en vez de 1 mL en profundidad."
+      ],
+      "correcta": 1,
+      "explicacion": "Diluir o sembrar menos volumen va en el sentido contrario: alejaría del límite de detección en vez de acercarlo.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6",
+      "apartado": "6",
+      "evidencia": "hay que examinar un volumen grande y reducirlo a uno pequeño que se pueda sembrar"
+    },
+    {
+      "id": "t13-q210",
+      "pregunta": "¿Por qué Legionella es el caso típico de concentración en el análisis de aguas?",
+      "opciones": [
+        "Porque rara vez supera el 1 % de la flora del agua.",
+        "Porque crece en 24 horas y conviene adelantar la lectura.",
+        "Porque sus colonias son tan grandes que no caben en una placa sin concentrar."
+      ],
+      "correcta": 0,
+      "explicacion": "Al ser una minoría muy pequeña entre la flora acompañante, hace falta partir de un volumen grande de agua.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6",
+      "apartado": "6",
+      "evidencia": "que rara vez supera el 1 % de la flora del agua"
+    },
+    {
+      "id": "t13-q211",
+      "pregunta": "En la concentración por filtración y elución, ¿en qué volumen se resuspende lo retenido en la membrana?",
+      "opciones": [
+        "En 5-10 mL.",
+        "En 100 mL.",
+        "En 0,1 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Ese volumen pequeño es el concentrado que después se siembra; es el método habitual de Legionella.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Lo retenido en la membrana se resuspende en un volumen pequeño (5-10 mL), que se siembra"
+    },
+    {
+      "id": "t13-q212",
+      "pregunta": "¿Qué técnica de concentración se emplea cuando hay pocas bacterias interferentes?",
+      "opciones": [
+        "La centrifugación a 6000 g.",
+        "La filtración con siembra directa de la membrana sobre el agar.",
+        "La separación inmunomagnética."
+      ],
+      "correcta": 1,
+      "explicacion": "Si la flora acompañante no estorba, la membrana puede ir directamente al agar; así se detecta 1 ufc por volumen filtrado.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "La membrana va directamente al agar | Pocas bacterias interferentes"
+    },
+    {
+      "id": "t13-q213",
+      "pregunta": "La filtración con siembra directa de la membrana, ¿hasta qué límite permite detectar?",
+      "opciones": [
+        "100 ufc por volumen filtrado.",
+        "1 ufc por mililitro sembrado.",
+        "1 ufc por volumen filtrado."
+      ],
+      "correcta": 2,
+      "explicacion": "Toda la carga del volumen filtrado queda en la membrana que se cultiva, así que basta una sola ufc.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Detecta 1 ufc por volumen filtrado"
+    },
+    {
+      "id": "t13-q214",
+      "pregunta": "¿A qué temperatura se centrifuga una muestra de agua para concentrarla?",
+      "opciones": [
+        "A 15-25 °C.",
+        "A 4 °C.",
+        "A 36 ± 1 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Se centrifuga a temperatura próxima a la ambiente: 6000 g 10 min o 3000 g 30 min. Los 36 ± 1 °C son los de incubar las placas de Legionella.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Centrifugación | 6000 g, 10 min o 3000 g, 30 min, a 15-25 °C"
+    },
+    {
+      "id": "t13-q215",
+      "pregunta": "Tras centrifugar una muestra para concentrarla, ¿qué se hace?",
+      "opciones": [
+        "Se siembra el sobrenadante y se desecha el sedimento.",
+        "Se filtra el sobrenadante por una membrana de 0,2 µm.",
+        "Se retira el sobrenadante y se resuspende el sedimento."
+      ],
+      "correcta": 2,
+      "explicacion": "Las bacterias quedan en el sedimento; el sobrenadante se descarta.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Se retira el sobrenadante y se resuspende el sedimento"
+    },
+    {
+      "id": "t13-q216",
+      "pregunta": "¿Para qué aguas se reserva la concentración por centrifugación?",
+      "opciones": [
+        "Para el agua de consumo de la red.",
+        "Para las que no se pueden filtrar: turbias, coloidales o con aceites.",
+        "Para el agua de piscina desinfectada."
+      ],
+      "correcta": 1,
+      "explicacion": "Recupera bastante menos que la filtración, así que solo se usa cuando la membrana no es viable.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Aguas que no se pueden filtrar: turbias, coloidales, con aceites"
+    },
+    {
+      "id": "t13-q217",
+      "pregunta": "Comparada con la filtración, ¿qué recuperación tiene la centrifugación?",
+      "opciones": [
+        "Bastante mayor.",
+        "Bastante menor.",
+        "Idéntica, porque ninguna pierde bacterias."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la filtración es la técnica de concentración preferente, y la centrifugación queda para las aguas que no filtran.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Recupera bastante menos que la filtración"
+    },
+    {
+      "id": "t13-q218",
+      "pregunta": "En la separación inmunomagnética, ¿cómo se recogen las perlas que han capturado al microorganismo diana?",
+      "opciones": [
+        "Con un imán.",
+        "Por filtración en membrana de 0,45 µm.",
+        "Decantando el sobrenadante tras dejarlas sedimentar."
+      ],
+      "correcta": 0,
+      "explicacion": "Las perlas son paramagnéticas y van recubiertas de un anticuerpo; un imán las separa del resto de la muestra.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Perlas paramagnéticas recubiertas de un anticuerpo que capturan al diana; un imán las separa"
+    },
+    {
+      "id": "t13-q219",
+      "pregunta": "¿En qué caso cita la guía británica la separación inmunomagnética?",
+      "opciones": [
+        "Para Legionella pneumophila, antes de la elución.",
+        "Para los heterótrofos a 22 °C.",
+        "Para E. coli O157:H7, tras un enriquecimiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una concentración selectiva por anticuerpo, que se aplica a ese serotipo después de enriquecer.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Por ejemplo, E. coli O157:H7 tras enriquecimiento"
+    },
+    {
+      "id": "t13-q220",
+      "pregunta": "Para eluir una membrana por agitación, ¿cuánto tiempo se agita como mínimo?",
+      "opciones": [
+        "10 segundos.",
+        "2 minutos.",
+        "30 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Se agita al menos 2 minutos, con o sin perlas de vidrio.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "agitación, al menos 2 minutos, con o sin perlas de vidrio"
+    },
+    {
+      "id": "t13-q221",
+      "pregunta": "¿Cuál de estas formas de eluir una membrana se hace en una bolsa de Stomacher?",
+      "opciones": [
+        "El frotado.",
+        "El raspado con un rascador estéril.",
+        "El vórtex, cortando la membrana si hace falta."
+      ],
+      "correcta": 0,
+      "explicacion": "El frotado aprovecha la bolsa del homogeneizador peristáltico; el raspado usa un rascador y el vórtex, un tubo.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "frotado en una bolsa de Stomacher"
+    },
+    {
+      "id": "t13-q222",
+      "pregunta": "¿De qué material son las membranas que se van a eluir?",
+      "opciones": [
+        "De nitrocelulosa con cuadrícula.",
+        "De fibra de vidrio.",
+        "De policarbonato o polietersulfona."
+      ],
+      "correcta": 2,
+      "explicacion": "De policarbonato o polietersulfona, y de 0,2 µm de poro.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Membranas para eluir: de policarbonato o polietersulfona, de 0,2 µm."
+    },
+    {
+      "id": "t13-q223",
+      "pregunta": "¿Qué poro tienen las membranas que se usan para eluir?",
+      "opciones": [
+        "0,45 µm.",
+        "1,2 µm.",
+        "0,2 µm."
+      ],
+      "correcta": 2,
+      "explicacion": "El poro de 0,45 µm es el habitual de coliformes y E. coli; para Legionella y para eluir se baja a 0,2 µm.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "de policarbonato o polietersulfona, de 0,2 µm"
+    },
+    {
+      "id": "t13-q224",
+      "pregunta": "En la elución por ultrasonidos, ¿cómo se coloca la membrana?",
+      "opciones": [
+        "Cubierta de diluyente, en un baño ultrasónico.",
+        "Seca, sobre la sonda de ultrasonidos.",
+        "Cara arriba sobre el agar, dentro del baño."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la forma más habitual de eluir: la membrana se sumerge en el diluyente y el baño desprende las bacterias.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "ultrasonidos, con la membrana cubierta de diluyente en baño ultrasónico; es la más habitual"
     }
   ],
   "supuestos": [
