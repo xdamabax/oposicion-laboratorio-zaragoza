@@ -1840,59 +1840,59 @@
     },
     {
       "id": "t10-q91",
-      "pregunta": "¿Cuántos equipos cubre el tema 10?",
+      "pregunta": "¿Qué comprobación semanal pide la guía Eurachem para las cabinas de flujo laminar?",
       "opciones": [
-        "Cuatro: microscopios, estufas y baños, centrífugas y cabinas de seguridad.",
-        "Dos: microscopios y estufas.",
-        "Seis, incluidos el autoclave y el horno."
+        "Placas de esterilidad.",
+        "Un tacómetro calibrado.",
+        "Un indicador de anaerobiosis."
       ],
       "correcta": 0,
-      "explicacion": "Hornos y autoclaves son del tema 11.",
-      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
-      "apartado": "1",
-      "evidencia": "Este tema cubre cuatro equipos: qué son, cómo funcionan, cómo se usan con seguridad y cómo se comprueban"
+      "explicacion": "Además, rendimiento al principio y tras cambios, y revisión anual.",
+      "fuente": "Eurachem (2023), anexos F y G · apunte §6",
+      "apartado": "6",
+      "evidencia": "Rendimiento al principio y tras cambios; placas de esterilidad semanales"
     },
     {
       "id": "t10-q92",
-      "pregunta": "¿A qué tema se remiten las tinciones y el examen microscópico?",
+      "pregunta": "¿Qué ensayo de la UNE-EN 12469 es el único que incluye la estanqueidad de la carcasa?",
       "opciones": [
-        "Al tema 11.",
-        "Al tema 14.",
-        "Al tema 17."
+        "El ensayo de instalación.",
+        "El examen de tipo, que hace el fabricante.",
+        "El mantenimiento de rutina."
       ],
       "correcta": 1,
-      "explicacion": "El tema 10 solo trata el microscopio como equipo.",
-      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
-      "apartado": "1",
-      "evidencia": "El examen microscópico: observación en fresco y tinciones | 14"
+      "explicacion": "Los otros dos repiten los mismos ensayos, salvo la estanqueidad de la carcasa.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Retención en la abertura frontal, estanqueidad de la carcasa y filtros"
     },
     {
       "id": "t10-q93",
-      "pregunta": "¿A qué tema pertenecen los hornos y los autoclaves?",
+      "pregunta": "¿Cuándo se hace el ensayo de instalación de una cabina de seguridad biológica?",
       "opciones": [
-        "Al tema 10.",
-        "Al tema 9.",
-        "Al tema 11."
+        "Solo en la fábrica, antes de venderla.",
+        "Cada semana.",
+        "Tras la puesta en servicio, o si cambia la instalación o su entorno."
       ],
       "correcta": 2,
-      "explicacion": "También la esterilización y la desinfección.",
-      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
-      "apartado": "1",
-      "evidencia": "Hornos, autoclaves, esterilización y desinfección | 11"
+      "explicacion": "Incluye los ensayos del examen de tipo, salvo la estanqueidad de la carcasa.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Tras la puesta en servicio, o si cambia la instalación o su entorno"
     },
     {
       "id": "t10-q94",
-      "pregunta": "¿Dónde se desarrolla el control de equipos como parte del control de calidad?",
+      "pregunta": "¿Con qué frecuencia pide la guía Eurachem el control microbiológico de la cabina?",
       "opciones": [
-        "En el tema 17.",
-        "En el tema 10.",
-        "En el tema 9."
+        "Cada semana.",
+        "Cada día.",
+        "Una vez al año."
       ],
       "correcta": 0,
-      "explicacion": "En el tema 10 solo se ve lo básico.",
-      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
-      "apartado": "1",
-      "evidencia": "El control de equipos como parte del control de calidad | 17 (aquí solo lo básico)"
+      "explicacion": "Añade la comprobación del flujo en cada uso y la revisión completa anual.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "control microbiológico semanal; - comprobación del flujo de aire en cada uso"
     },
     {
       "id": "t10-q95",
@@ -2050,14 +2050,14 @@
     },
     {
       "id": "t10-q106",
-      "pregunta": "¿Qué indica la apertura numérica grabada en el objetivo?",
+      "pregunta": "¿Qué datos, además del aumento, van grabados en un objetivo?",
       "opciones": [
-        "La AN del objetivo; va grabada junto con el aumento.",
-        "El grosor del cubreobjetos.",
-        "Si el objetivo es de inmersión."
+        "La apertura numérica y el grosor de cubreobjetos para el que está corregido.",
+        "La distancia focal del ocular y el número del condensador.",
+        "La longitud de onda de la lámpara."
       ],
       "correcta": 0,
-      "explicacion": "Se graba también el aumento.",
+      "explicacion": "También la corrección y, si lo es, que es de inmersión.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
       "apartado": "2.1",
       "evidencia": "- la apertura numérica (AN); - el grosor de cubreobjetos para el que está corregido"
@@ -2225,21 +2225,21 @@
         "100×."
       ],
       "correcta": 0,
-      "explicacion": "Es el que usan la mayoría de microscopios ópticos.",
+      "explicacion": "Es el máximo al que llegan la mayoría de los microscopios ópticos.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
       "apartado": "2.2",
       "evidencia": "Con el objetivo de inmersión de 100×, 1000×"
     },
     {
       "id": "t10-q119",
-      "pregunta": "¿A qué aumento se ven las bacterias, según el apunte?",
+      "pregunta": "¿Hacia qué aumento total se ven ya las bacterias con el microscopio óptico?",
       "opciones": [
         "Hacia los 40×.",
         "Hacia los 400×.",
         "Solo con microscopio electrónico."
       ],
       "correcta": 1,
-      "explicacion": "Los virus no se ven.",
+      "explicacion": "Los virus no se ven: están por debajo del límite de resolución.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
       "apartado": "2.2",
       "evidencia": "Las bacterias se ven hacia los 400×"
@@ -2393,7 +2393,7 @@
         "Siempre menor."
       ],
       "correcta": 0,
-      "explicacion": "Depende también del condensador la AN del sistema.",
+      "explicacion": "La AN efectiva del sistema depende también del condensador.",
       "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
       "apartado": "2.3",
       "evidencia": "su AN debe igualar, sin superar, la del objetivo"
@@ -2486,7 +2486,7 @@
       "id": "t10-q137",
       "pregunta": "¿Con qué objetivo se usa el aceite de inmersión?",
       "opciones": [
-        "Con cualquier objetivo para limpiar.",
+        "Con el de 40× en seco, para mejorar el contraste.",
         "Solo con el de inmersión, normalmente el de 100×.",
         "Con el de 4×."
       ],
@@ -2988,7 +2988,7 @@
     },
     {
       "id": "t10-q173",
-      "pregunta": "¿Cada cuánto se recalibra el retículo, por ejemplo?",
+      "pregunta": "¿Con qué periodicidad se recalibra el retículo, por ejemplo?",
       "opciones": [
         "Cada semana.",
         "Una vez al año.",
@@ -3062,10 +3062,10 @@
       "opciones": [
         "Que las placas no se sequen.",
         "Que el CO₂ no supere el 10 %.",
-        "Que las placas no se apilen sobre seis."
+        "Que la estufa no baje de 44 °C."
       ],
       "correcta": 0,
-      "explicacion": "Se trata de la desecación.",
+      "explicacion": "Se trata de la desecación del medio.",
       "fuente": "SCA (2017), 5.13 · apunte §3.1",
       "apartado": "3.1",
       "evidencia": "En incubaciones largas, hay que vigilar también que las placas no se sequen"
@@ -3107,7 +3107,7 @@
         "22 °C durante 3 días."
       ],
       "correcta": 0,
-      "explicacion": "Es la pregunta 1322 #26.",
+      "explicacion": "Así lo preguntó el examen 1322 (#26).",
       "fuente": "SCA (2017), 5.13 · apunte §3.1",
       "apartado": "3.1",
       "evidencia": "las placas de Legionella van a 36 °C durante 10 días (1322 #26)"
@@ -3254,14 +3254,14 @@
     },
     {
       "id": "t10-q192",
-      "pregunta": "¿Qué precisión de termómetro se mejora hasta ± 0,1 °C en estufas de 20-40 °C?",
+      "pregunta": "En una estufa de 20-40 °C, ¿cuándo se pide un termómetro con precisión de ± 0,1 °C?",
       "opciones": [
         "Para cualquier estufa de 37 °C.",
-        "Para estufas con CO₂.",
+        "Para las estufas con CO₂.",
         "Para el control oficial del agua de consumo."
       ],
       "correcta": 2,
-      "explicacion": "Basta ± 0,5 °C, y ± 0,2 °C es mejor.",
+      "explicacion": "En general basta ± 0,5 °C, y ± 0,2 °C es mejor.",
       "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
       "apartado": "3.2",
       "evidencia": "± 0,5 °C sirve; ± 0,2 °C es mejor, y ± 0,1 °C para el control oficial del agua de consumo"
@@ -4012,8 +4012,8 @@
       "id": "t10-q246",
       "pregunta": "Si se descubre una rotura al parar la centrífuga, ¿qué se hace?",
       "opciones": [
-        "Abrir y limpiar el momento.",
-        "Dejar la tapa abierta una hora.",
+        "Abrirla y limpiarla en el momento.",
+        "Dejar la tapa abierta una hora para ventilar.",
         "Cerrar la tapa enseguida y esperar 30 minutos."
       ],
       "correcta": 2,
@@ -4430,14 +4430,14 @@
     },
     {
       "id": "t10-q276",
-      "pregunta": "Para agentes de los grupos 1 y 2, ¿qué cabina puede valer?",
+      "pregunta": "Según los criterios de elección, ¿qué cabina puede bastar para agentes de los grupos 1 y 2?",
       "opciones": [
-        "La clase III.",
-        "Ninguna.",
+        "Solo la clase III.",
+        "Una cabina de flujo laminar horizontal.",
         "La clase I, aunque el grupo 2 se trabaja sobre todo en clase II."
       ],
       "correcta": 2,
-      "explicacion": "Se trabaja sobre todo en clase II.",
+      "explicacion": "La de flujo laminar no sirve para agentes infecciosos.",
       "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
       "apartado": "5.3",
       "evidencia": "Puede valer la clase I. El grupo 2 se trabaja sobre todo en clase II"
@@ -4475,11 +4475,11 @@
       "pregunta": "¿Qué ocurre con los productos químicos volátiles y el HEPA?",
       "opciones": [
         "El HEPA retiene los vapores.",
-        "No hay problema con volátiles.",
+        "Basta con recircular el aire a la sala.",
         "El HEPA no retiene gases ni vapores: hay que añadir otros filtros y expulsar al exterior."
       ],
       "correcta": 2,
-      "explicacion": "Hay que usar otras cabinas.",
+      "explicacion": "Los filtros HEPA solo retienen partículas.",
       "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
       "apartado": "5.3",
       "evidencia": "El HEPA no retiene gases ni vapores: hay que añadir otros filtros y expulsar al exterior"
@@ -4563,7 +4563,7 @@
         "Marcado CE."
       ],
       "correcta": 2,
-      "explicacion": "Lo exige la conformidad con la UNE-EN 12469.",
+      "explicacion": "Lo llevan las cabinas conformes a la UNE-EN 12469.",
       "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
       "apartado": "5.4",
       "evidencia": "Las cabinas conformes a la norma llevan marcado CE"
@@ -4600,12 +4600,12 @@
       "id": "t10-q288",
       "pregunta": "¿Qué se hace con la lámpara UV al empezar a trabajar en la cabina?",
       "opciones": [
-        "Dejarla encendida.",
-        "Subirla al máximo.",
+        "Dejarla encendida mientras se trabaja.",
+        "Encenderla justo antes de cada siembra.",
         "Apagarla."
       ],
       "correcta": 2,
-      "explicacion": "Se enciende la luz y el ventilador.",
+      "explicacion": "Después se encienden la luz y el ventilador.",
       "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
       "apartado": "5.5",
       "evidencia": "Apagar la lámpara UV, encender la luz y el ventilador, y comprobar que las rejillas están libres"
@@ -4700,7 +4700,7 @@
       "opciones": [
         "Porque el mechero altera el flujo y daña el filtro.",
         "Porque consumen oxígeno.",
-        "Porque no hay gas."
+        "Porque la lámpara UV las hace innecesarias."
       ],
       "correcta": 0,
       "explicacion": "Se usan asas desechables o microincineradores.",
@@ -4712,12 +4712,12 @@
       "id": "t10-q296",
       "pregunta": "¿Qué se usa en lugar del mechero dentro de la cabina?",
       "opciones": [
-        "Un mechero pequeño.",
+        "Un mechero Bunsen en la parte delantera.",
         "Asas desechables o microincineradores, colocados al fondo.",
-        "Un soplete."
+        "Un mechero pequeño de alcohol junto a la rejilla."
       ],
       "correcta": 1,
-      "explicacion": "Evitan alterar el flujo.",
+      "explicacion": "Así no se altera el flujo.",
       "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
       "apartado": "5.5",
       "evidencia": "En su lugar, asas desechables o microincineradores, colocados al fondo"
@@ -4756,7 +4756,7 @@
       "opciones": [
         "Cloro gas.",
         "Peróxido de hidrógeno vaporizado.",
-        "Formaldehído líquido."
+        "Etanol al 70 % pulverizado."
       ],
       "correcta": 1,
       "explicacion": "La hace personal competente.",

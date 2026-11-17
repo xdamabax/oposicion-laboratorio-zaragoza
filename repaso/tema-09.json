@@ -1837,42 +1837,42 @@
     },
     {
       "id": "t09-q100",
-      "pregunta": "¿De qué tema del temario son las cabinas de seguridad biológica?",
+      "pregunta": "Si la exposición es solo a un agente del grupo 1 sin riesgo conocido, ¿qué artículos del RD 664/1997 no se aplican?",
       "opciones": [
-        "Del tema 10.",
-        "Del tema 9.",
-        "Del tema 11."
+        "Los arts. 5 a 15.",
+        "Los arts. 1 a 4.",
+        "Solo el art. 15."
       ],
       "correcta": 0,
-      "explicacion": "Este tema solo las cita donde el RD las exige; su estudio es del tema 10.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §1",
-      "apartado": "1",
-      "evidencia": "las cabinas de seguridad biológica son del tema 10"
+      "explicacion": "Lo dice el art. 4 al tratar la evaluación.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "si la exposición es solo a un agente del grupo 1 sin riesgo conocido, no se aplican los arts. 5 a 15"
     },
     {
       "id": "t09-q101",
-      "pregunta": "¿A qué tema del temario corresponden el autoclave y el tratamiento de materiales contaminados?",
+      "pregunta": "¿Qué establece el art. 5 del RD 664/1997, si la actividad lo permite?",
       "opciones": [
-        "Al tema 10.",
-        "Al tema 11.",
-        "Al tema 8."
+        "Prohibir el trabajo con cualquier agente del grupo 2.",
+        "Evitar los agentes peligrosos sustituyéndolos por otros que no lo sean, o lo sean menos.",
+        "Notificar a la autoridad sanitaria cada agente usado."
       ],
       "correcta": 1,
-      "explicacion": "Aquí solo se citan donde el RD las exige; su desarrollo es del tema 11.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §1",
-      "apartado": "1",
-      "evidencia": "el autoclave, la desinfección y el tratamiento de materiales contaminados, del tema 11"
+      "explicacion": "Es la sustitución, que va antes de la reducción del art. 6.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "evitar los agentes peligrosos sustituyéndolos por otros que no lo sean, o lo sean menos"
     },
     {
       "id": "t09-q102",
-      "pregunta": "¿Qué norma marco desarrolla el RD 664/1997 y se estudia en el tema 8?",
+      "pregunta": "¿Qué ley desarrolla el RD 664/1997?",
       "opciones": [
         "La Ley 14/1986, General de Sanidad.",
         "La Ley 33/2011, General de Salud Pública.",
         "La Ley 31/1995, de Prevención de Riesgos Laborales."
       ],
       "correcta": 2,
-      "explicacion": "El RD 664/1997 es desarrollo de la Ley de Prevención de Riesgos Laborales.",
+      "explicacion": "El RD 664/1997 desarrolla la Ley de Prevención de Riesgos Laborales, cuyo marco general es el tema 8.",
       "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §1",
       "apartado": "1",
       "evidencia": "de Prevención de Riesgos Laborales | El marco general (tema 8)"
@@ -2320,7 +2320,7 @@
         "Grupo 4."
       ],
       "correcta": 1,
-      "explicacion": "Es un agente de nuestro laboratorio de microbiología clasificado en el grupo 2.",
+      "explicacion": "Está en el grupo 2, como Escherichia coli o Pseudomonas aeruginosa.",
       "fuente": "RD 664/1997, art. 3 y anexo II (Orden TES/1287/2021) · apunte §3",
       "apartado": "3",
       "evidencia": "| Pseudomonas aeruginosa | 2, T | | Enterococcus spp. | 2 |"
@@ -2861,9 +2861,9 @@
       "id": "t09-q173",
       "pregunta": "¿Qué deben conseguir los procedimientos de trabajo y las medidas técnicas del art. 6?",
       "opciones": [
-        "Aumentar el número de trabajadores expuestos.",
+        "Sustituir a la vigilancia de la salud.",
         "Evitar o minimizar la liberación de agentes.",
-        "Evitar la señalización."
+        "Hacer innecesaria la evaluación de riesgos."
       ],
       "correcta": 1,
       "explicacion": "Es la letra a) del art. 6.",
@@ -2903,9 +2903,9 @@
       "id": "t09-q176",
       "pregunta": "Se han reducido las exposiciones al mínimo posible con medidas técnicas. ¿Qué otra medida añade el art. 6?",
       "opciones": [
-        "Aumentar la duración de las tareas expuestas.",
+        "Rotar al personal para que todos se expongan por igual.",
         "Reducir al mínimo el número de trabajadores expuestos.",
-        "Eliminar la evaluación de riesgos."
+        "Ampliar la jornada para reducir los días de exposición."
       ],
       "correcta": 1,
       "explicacion": "Es la letra b) del art. 6.",
@@ -2932,7 +2932,7 @@
       "pregunta": "Según el art. 7, el empresario facilita a los trabajadores:",
       "opciones": [
         "Prendas de protección apropiadas.",
-        "Su ropa de calle limpia a diario.",
+        "Ropa de trabajo, que cada trabajador lava en su casa.",
         "Solo guantes de un solo uso."
       ],
       "correcta": 0,
@@ -3002,7 +3002,7 @@
       "pregunta": "¿Quién se encarga de lavar, descontaminar y, si es necesario, destruir la ropa y los EPI contaminados?",
       "opciones": [
         "El propio trabajador.",
-        "Una empresa de menaje contratada por el trabajador.",
+        "La mutua de accidentes de trabajo.",
         "El empresario."
       ],
       "correcta": 2,
@@ -3548,7 +3548,7 @@
       "pregunta": "¿Cómo debe constar el ofrecimiento y la aceptación de la vacuna?",
       "opciones": [
         "De palabra, sin constancia.",
-        "Solo en el historial médico oral.",
+        "De palabra, ante un testigo.",
         "Por escrito."
       ],
       "correcta": 2,
@@ -3559,14 +3559,14 @@
     },
     {
       "id": "t09-q223",
-      "pregunta": "¿Quién paga la vacunación laboral frente a agentes biológicos?",
+      "pregunta": "¿Qué coste tiene la vacunación para el trabajador expuesto?",
       "opciones": [
-        "Nadie le cobra al trabajador: no le acarrea gasto alguno.",
-        "El trabajador.",
-        "El trabajador, que luego se lo descuentan en impuestos."
+        "Ninguno: no le acarrea gasto alguno.",
+        "La mitad del precio de la vacuna.",
+        "El precio completo, que después se le reembolsa."
       ],
       "correcta": 0,
-      "explicacion": "Puede expedirse un certificado de vacunación.",
+      "explicacion": "Además, puede expedirse un certificado de vacunación.",
       "fuente": "RD 664/1997, art. 8 y anexo VI · apunte §5.4",
       "apartado": "5.4",
       "evidencia": "la vacunación no les acarrea gasto alguno, y puede expedirse un certificado de vacunación (anexo VI)"
@@ -3580,7 +3580,7 @@
         "Una exención de la vigilancia de la salud."
       ],
       "correcta": 1,
-      "explicacion": "Se expide si lo pide el trabajador.",
+      "explicacion": "Lo prevé el anexo VI, que regula la vacunación.",
       "fuente": "RD 664/1997, art. 8 y anexo VI · apunte §5.4",
       "apartado": "5.4",
       "evidencia": "y puede expedirse un certificado de vacunación (anexo VI)"
@@ -3594,7 +3594,7 @@
         "Prevención primaria."
       ],
       "correcta": 2,
-      "explicacion": "Es una pregunta de 1315 #12.",
+      "explicacion": "La vacuna evita que llegue a producirse la enfermedad: es prevención primaria (pregunta de examen 1315 #12).",
       "fuente": "RD 664/1997, art. 8 y anexo VI · apunte §5.4",
       "apartado": "5.4",
       "evidencia": "Las vacunas son prevención primaria (1315 #12)"
@@ -3951,31 +3951,31 @@
     },
     {
       "id": "t09-q251",
-      "pregunta": "En el cuadro de cifras, ¿cuántos grupos de agentes biológicos define el art. 3?",
+      "pregunta": "¿Qué medida del art. 6 se refiere a la llegada y al traslado de los agentes?",
       "opciones": [
-        "Tres.",
-        "Cuatro.",
-        "Cinco."
+        "La notificación a la autoridad laboral con treinta días.",
+        "Medidas seguras de recepción, manipulación y transporte.",
+        "La vigilancia de la salud antes de la exposición."
       ],
       "correcta": 1,
-      "explicacion": "Del 1 al 4.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §6",
-      "apartado": "6",
-      "evidencia": "| 4 grupos de agentes biológicos | art. 3 |"
+      "explicacion": "Es la letra c) del art. 6.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "medidas seguras de recepción, manipulación y transporte de los agentes"
     },
     {
       "id": "t09-q252",
-      "pregunta": "¿En qué grupos hay agentes clasificados en la lista del anexo II, y qué contiene solo el grupo 4?",
+      "pregunta": "Según el art. 6, ¿cuándo se recurre a la protección individual?",
       "opciones": [
-        "En los grupos 1, 2 y 3; el 4, solo hongos.",
-        "En los grupos 3 y 4; el 4, solo bacterias.",
-        "En los grupos 2, 3 y 4; en el 4, solo virus."
+        "Siempre antes que a la colectiva.",
+        "Solo con agentes del grupo 4.",
+        "En defecto de la protección colectiva."
       ],
       "correcta": 2,
-      "explicacion": "No se lista el grupo 1.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §6",
-      "apartado": "6",
-      "evidencia": "La lista del anexo II clasifica en los grupos 2, 3 y 4; en el 4, solo virus"
+      "explicacion": "La colectiva va primero.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "protección colectiva o, en su defecto, individual"
     },
     {
       "id": "t09-q253",
@@ -4063,45 +4063,45 @@
     },
     {
       "id": "t09-q259",
-      "pregunta": "¿En qué niveles se exigen filtros HEPA, y dónde?",
+      "pregunta": "¿Cómo deben ser los recipientes de residuos según el art. 6?",
       "opciones": [
-        "En el nivel 3 a la salida, y en el 4 a la entrada y a la salida.",
-        "En el nivel 2 a la salida y en el 3 a la entrada.",
-        "En el nivel 4 solo a la salida."
+        "Seguros e identificables.",
+        "Transparentes y reutilizables.",
+        "De cartón, para incinerarlos con su contenido."
       ],
       "correcta": 0,
-      "explicacion": "Se recoge en el anexo IV.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §6",
-      "apartado": "6",
-      "evidencia": "Filtros HEPA: salida en el nivel 3, entrada y salida en el 4 | anexo IV"
+      "explicacion": "Forman parte de los medios seguros de recogida, almacenamiento y evacuación.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "recogida, almacenamiento y evacuación de residuos, en recipientes seguros e identificables"
     },
     {
       "id": "t09-q260",
-      "pregunta": "Del grupo 2 al grupo 3, ¿qué dos cosas cambian en la definición?",
+      "pregunta": "¿Qué debe comprobarse, cuando sea posible, según el art. 6?",
       "opciones": [
-        "Desaparecen la profilaxis y el tratamiento.",
-        "La enfermedad pasa a grave y la propagación, de poco probable a con riesgo.",
-        "La propagación pasa a muy probable."
+        "Que todos los trabajadores están vacunados.",
+        "Que no hay agentes fuera del confinamiento físico primario.",
+        "Que el laboratorio tiene presión negativa."
       ],
       "correcta": 1,
-      "explicacion": "Los dos grupos tienen profilaxis o tratamiento.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Grupo 3 = enfermedad grave + riesgo de propagación a la colectividad + profilaxis o tratamiento eficaz"
+      "explicacion": "Es la letra i) del art. 6.",
+      "fuente": "RD 664/1997, arts. 4 a 6 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "comprobar, cuando sea posible, que no hay agentes fuera del confinamiento físico primario"
     },
     {
       "id": "t09-q261",
-      "pregunta": "Grupo 4 se distingue por:",
+      "pregunta": "¿Con qué deben contar los retretes y cuartos de aseo según el art. 7?",
       "opciones": [
-        "Propagación poco probable y tratamiento disponible.",
-        "Enfermedad poco probable.",
-        "Muchas probabilidades de propagación y ausencia de profilaxis o tratamiento."
+        "Solo con jabón neutro.",
+        "Con batas y calzas de repuesto.",
+        "Con productos para la limpieza ocular y antisépticos para la piel."
       ],
       "correcta": 2,
-      "explicacion": "Es la definición más grave.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Grupo 4 = muchas probabilidades de propagación y sin profilaxis ni tratamiento"
+      "explicacion": "Los dispone el empresario.",
+      "fuente": "RD 664/1997, art. 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "retretes y cuartos de aseo con productos para la limpieza ocular y antisépticos para la piel"
     },
     {
       "id": "t09-q262",
@@ -4119,14 +4119,14 @@
     },
     {
       "id": "t09-q263",
-      "pregunta": "¿Qué dicen los puntos críticos sobre el nivel de contención con el que se analiza Legionella?",
+      "pregunta": "¿En qué nivel de contención se analiza, como mínimo, Legionella?",
       "opciones": [
         "Nivel 3.",
         "Nivel 2.",
         "Nivel 4."
       ],
       "correcta": 1,
-      "explicacion": "El nivel de contención es por lo menos igual al grupo.",
+      "explicacion": "Legionella es del grupo 2, y el nivel de contención es por lo menos igual al grupo.",
       "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
       "apartado": "7",
       "evidencia": "Nivel de contención por lo menos igual al grupo: Legionella se analiza en nivel 2"
@@ -4147,70 +4147,70 @@
     },
     {
       "id": "t09-q265",
-      "pregunta": "Con respecto a los aerosoles, los puntos críticos señalan que:",
+      "pregunta": "Sobre los aerosoles en el laboratorio, es correcto que:",
       "opciones": [
         "Son vía respiratoria y se trabajan en cabina cuando se generan.",
         "Son vía digestiva y se evitan con propipetas.",
         "Son vía parenteral y se evitan con guantes."
       ],
       "correcta": 0,
-      "explicacion": "Los aerosoles se generan al centrifugar, agitar y abrir envases.",
+      "explicacion": "Se generan al centrifugar, agitar, abrir envases o flamear asas.",
       "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
       "apartado": "7",
       "evidencia": "Aerosoles = vía respiratoria: centrifugar, agitar, abrir envases, flamear asas. Se trabajan en cabina cuando se generan"
     },
     {
       "id": "t09-q266",
-      "pregunta": "¿Qué vía de entrada corresponde a los pinchazos y a los cortes?",
+      "pregunta": "¿Qué procedimientos debe especificar el empresario según el art. 7?",
       "opciones": [
-        "La digestiva.",
-        "La parenteral.",
-        "La respiratoria."
+        "Los de calibración de los equipos de medida.",
+        "Los de obtener, manipular y procesar muestras de origen humano o animal.",
+        "Los de selección del personal sanitario."
       ],
       "correcta": 1,
-      "explicacion": "Pipetear con la boca es digestiva y está prohibido.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Pinchazos y cortes = vía parenteral. Pipetear con la boca = vía digestiva, y está prohibido"
+      "explicacion": "Es una de las medidas higiénicas.",
+      "fuente": "RD 664/1997, art. 7 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "especificar los procedimientos para obtener, manipular y procesar muestras de origen humano o animal"
     },
     {
       "id": "t09-q267",
-      "pregunta": "¿Cómo se resume la regla sobre la ropa contaminada en los puntos críticos?",
+      "pregunta": "¿Con qué fines se aplica el art. 15 a los laboratorios con agentes de los grupos 2, 3 o 4?",
       "opciones": [
-        "La lava el trabajador en su casa.",
-        "Se lleva a casa si se desinfecta con lejía.",
-        "No se lleva a casa y la lava el empresario."
+        "Solo investigación.",
+        "Solo producción industrial.",
+        "Investigación, desarrollo, enseñanza o diagnóstico."
       ],
       "correcta": 2,
-      "explicacion": "También se prohíbe comer, beber y fumar.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "la ropa contaminada no se lleva a casa: la lava el empresario"
+      "explicacion": "Incluye los laboratorios de diagnóstico.",
+      "fuente": "RD 664/1997, art. 15 y anexo IV (Orden TES/1180/2020); INSST, apéndice 8 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "con fines de investigación, desarrollo, enseñanza o diagnóstico"
     },
     {
       "id": "t09-q268",
-      "pregunta": "¿Cómo se ofrecen, según los puntos críticos, las vacunas eficaces?",
+      "pregunta": "Según la guía del INSST, ¿qué nivel de bioseguridad puede ser el adecuado para grandes volúmenes o concentraciones de un agente del grupo 2?",
       "opciones": [
-        "Gratis, informando de ventajas e inconvenientes y por escrito.",
-        "Con coste a cargo del trabajador.",
-        "Imponiéndolas a todo el personal."
+        "El nivel 3.",
+        "El nivel 1.",
+        "El nivel 2, sin excepción."
       ],
       "correcta": 0,
-      "explicacion": "Es una regla del art. 8 y el anexo VI.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Vacunas eficaces: se ofrecen gratis, informando de ventajas e inconvenientes, por escrito"
+      "explicacion": "La guía no equipara sin más nivel y grupo.",
+      "fuente": "RD 664/1997, art. 15 y anexo IV (Orden TES/1180/2020); INSST, apéndice 8 · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "también para grandes volúmenes o concentraciones de agentes del grupo 2"
     },
     {
       "id": "t09-q269",
-      "pregunta": "¿A quién se comunica de inmediato un accidente con un agente biológico, según los puntos críticos?",
+      "pregunta": "Un técnico sufre un accidente con un agente biológico. ¿A quién debe comunicarlo de inmediato?",
       "opciones": [
-        "A la autoridad sanitaria únicamente.",
-        "Al superior jerárquico directo y al responsable de prevención.",
+        "Solo a la autoridad sanitaria.",
+        "A su superior jerárquico directo y al responsable de prevención.",
         "Al comité de empresa."
       ],
       "correcta": 1,
-      "explicacion": "Lo exige el art. 12.4 del RD 664/1997.",
+      "explicacion": "Lo exige el art. 12 del RD 664/1997.",
       "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
       "apartado": "7",
       "evidencia": "Accidente con un agente biológico: se comunica de inmediato al superior jerárquico directo y al responsable de prevención"
@@ -4259,17 +4259,17 @@
     },
     {
       "id": "t09-q273",
-      "pregunta": "Una bacteria patógena muy peligrosa, ¿puede estar en el grupo 4 del anexo II?",
+      "pregunta": "Si lo piden, ¿de qué informa también el empresario a las autoridades respecto a un fallo de la contención física?",
       "opciones": [
-        "Sí, si no tiene tratamiento.",
-        "Sí, si es resistente a antibióticos.",
-        "No: en el grupo 4 solo hay virus."
+        "Del inventario de reactivos químicos.",
+        "De la lista de vacunados frente a agentes del grupo 1.",
+        "Del plan de emergencia con agentes de los grupos 3 o 4."
       ],
       "correcta": 2,
-      "explicacion": "Ninguna bacteria, hongo ni parásito llega al grupo 4.",
-      "fuente": "RD 664/1997, art. 3 y anexo II (Orden TES/1287/2021) · apunte §3",
-      "apartado": "3",
-      "evidencia": "Ninguna bacteria, hongo ni parásito llega al grupo 4"
+      "explicacion": "Art. 11 del RD 664/1997.",
+      "fuente": "RD 664/1997, arts. 9 a 12 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "del plan de emergencia frente a un fallo de la contención física con agentes de los grupos 3 o 4"
     },
     {
       "id": "t09-q274",
@@ -4539,14 +4539,14 @@
     },
     {
       "id": "t09-q293",
-      "pregunta": "Para un laboratorio con agentes del grupo 4, la notificación a la autoridad laboral en los laboratorios de diagnóstico es:",
+      "pregunta": "Un laboratorio de diagnóstico trabaja con agentes del grupo 4. ¿Qué notificación hace a la autoridad laboral?",
       "opciones": [
         "Una notificación cada año.",
         "Solo la notificación inicial.",
-        "Una notificación por cada muestra."
+        "Una por cada muestra que analiza."
       ],
       "correcta": 1,
-      "explicacion": "Art. 10.",
+      "explicacion": "Art. 10 del RD 664/1997.",
       "fuente": "RD 664/1997, arts. 9 a 12 · apunte §5.5",
       "apartado": "5.5",
       "evidencia": "los laboratorios de diagnóstico con agentes del grupo 4 solo hacen la notificación inicial"
@@ -4581,45 +4581,59 @@
     },
     {
       "id": "t09-q296",
-      "pregunta": "¿Qué ducha o equipo debe alcanzarse en menos de 15 segundos en un laboratorio de nivel 2?",
+      "pregunta": "¿Qué equipos deben poder alcanzarse en menos de 15 segundos desde cualquier puesto de un laboratorio de nivel 2?",
       "opciones": [
-        "Solo el lavamanos junto a la salida.",
-        "Duchas de emergencia y lavaojos.",
+        "Solo el lavamanos de la salida.",
+        "Las duchas de emergencia y los lavaojos.",
         "El autoclave."
       ],
       "correcta": 1,
-      "explicacion": "Se alcanzan desde cualquier puesto.",
+      "explicacion": "Junto a la salida hay además lavamanos.",
       "fuente": "INSST, Guía técnica de agentes biológicos (2024), apéndice 8 · apunte §5.6",
       "apartado": "5.6",
-      "evidencia": "que se alcancen en menos de 15 segundos desde cualquier puesto"
+      "evidencia": "lavamanos junto a la salida, duchas de emergencia y lavaojos, que se alcancen en menos de 15 segundos"
     },
     {
       "id": "t09-q297",
-      "pregunta": "En los puntos críticos, ¿qué se dice del tiempo de aseo y la ropa contaminada?",
+      "pregunta": "¿Cuándo se descontaminan, como mínimo, las superficies de trabajo?",
       "opciones": [
-        "Hay 30 minutos de aseo y la ropa se lava en casa.",
-        "No hay tiempo de aseo reglado.",
-        "Hay 10 + 10 minutos de aseo y la ropa contaminada no se lleva a casa."
+        "Una vez a la semana.",
+        "Solo tras un derrame.",
+        "Al menos una vez al día, al final de la jornada, y tras cualquier derrame."
       ],
       "correcta": 2,
-      "explicacion": "Lo lava el empresario.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Prohibido comer, beber y fumar; 10 + 10 minutos de aseo"
+      "explicacion": "Es una buena práctica del nivel 1.",
+      "fuente": "INSST, Guía técnica de agentes biológicos (2024), apéndice 8 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Descontaminar las superficies de trabajo al menos una vez al día, al final de la jornada, y tras cualquier derrame"
     },
     {
       "id": "t09-q298",
-      "pregunta": "¿Qué debe recordarse sobre la notificación de la primera utilización de agentes de los grupos 2, 3 o 4?",
+      "pregunta": "¿Cómo se protegen las heridas al trabajar en el laboratorio?",
       "opciones": [
-        "Se hace con 30 días de antelación.",
-        "Se hace con 10 días de antelación.",
-        "Se hace tras la primera semana de uso."
+        "Se cubren con apósitos impermeables.",
+        "Se dejan al aire para que cicatricen.",
+        "Se cubren con gasa sin fijar."
       ],
       "correcta": 0,
-      "explicacion": "Lo exige el art. 10.",
-      "fuente": "RD 664/1997 y Guía técnica del INSST (2024) · apunte §7",
-      "apartado": "7",
-      "evidencia": "Primera utilización de agentes de los grupos 2, 3 o 4: notificación con 30 días de antelación"
+      "explicacion": "También se quitan las joyas que puedan romper los guantes.",
+      "fuente": "INSST, Guía técnica de agentes biológicos (2024), apéndice 8 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "Cubrir las heridas con apósitos impermeables"
+    },
+    {
+      "id": "t09-q299",
+      "pregunta": "En el nivel 2, ¿pueden salir del laboratorio los materiales infecciosos?",
+      "opciones": [
+        "Sí, en bolsas de basura normales.",
+        "No sin descontaminar; si se transportan fuera, en contenedores específicos.",
+        "Sí, si van en tubos con tapón de rosca."
+      ],
+      "correcta": 1,
+      "explicacion": "La descontaminación y el autoclave son del tema 11.",
+      "fuente": "INSST, Guía técnica de agentes biológicos (2024), apéndice 8 · apunte §5.6",
+      "apartado": "5.6",
+      "evidencia": "los materiales infecciosos no salen del laboratorio sin descontaminar, y si hay que transportarlos fuera, van en contenedores específicos"
     }
   ],
   "supuestos": [
