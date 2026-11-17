@@ -3980,6 +3980,496 @@
       "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
       "apartado": "9",
       "evidencia": "| P. aeruginosa | ISO 16266 | Filtración, CN (cetrimida y nalidíxico) | 36 ± 2 °C, 44 ± 4 h |"
+    },
+    {
+      "id": "t18-q247",
+      "pregunta": "Según el cuadro de cifras, ¿cuántas colonias como máximo debe tener la membrana de un indicador?",
+      "opciones": [
+        "100.",
+        "80.",
+        "300."
+      ],
+      "correcta": 1,
+      "explicacion": "El intervalo de la membrana es 20-80; las 100 son el total de colonias que admite el CCA y las 300, el tope de una placa.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Membrana 0,45 µm; 20-80 colonias; < 100 en total en CCA"
+    },
+    {
+      "id": "t18-q248",
+      "pregunta": "En el cuadro de cifras, ¿qué turbidez obliga a buscar Cryptosporidium si C. perfringens es positivo?",
+      "opciones": [
+        "Más de 4 UNF.",
+        "Más de 1 UNF.",
+        "Más de 10 UNF."
+      ],
+      "correcta": 0,
+      "explicacion": "Se busca en la salida de la ETAP o en el depósito de cabecera.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "C. perfringens positivo y turbidez > 4 UNF → Cryptosporidium"
+    },
+    {
+      "id": "t18-q249",
+      "pregunta": "Según el cuadro de cifras, ¿cuánto dura el tratamiento térmico que deja solo esporas de C. perfringens?",
+      "opciones": [
+        "30 minutos a 60 °C.",
+        "15 minutos a 100 °C.",
+        "15 minutos a 60 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Mata las células vegetativas sin destruir las esporas.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "TSC: 44 ± 1 °C, 21 ± 3 h, anaerobiosis; esporas 60 °C, 15 min"
+    },
+    {
+      "id": "t18-q250",
+      "pregunta": "En el cuadro de cifras, ¿a qué temperatura se mantiene el agar fundido del recuento de colonias?",
+      "opciones": [
+        "A 37 °C.",
+        "A 45 °C.",
+        "A 50 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Si estuviera más caliente, mataría parte de las bacterias de la muestra al mezclarlo.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Recuento: 1 mL, agar a 45 °C, 22 °C 68 h y 37 °C 44 h"
+    },
+    {
+      "id": "t18-q251",
+      "pregunta": "Según el cuadro de cifras, ¿cuánto tarda en aparecer el color púrpura de la fosfatasa ácida?",
+      "opciones": [
+        "Unos segundos.",
+        "21 ± 3 horas.",
+        "3-4 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "El color en segundos es el rojo cereza del indol con Kovács.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Fosfatasa ácida: púrpura en 3-4 min; TSC-MUP: fluorescencia a 365 nm"
+    },
+    {
+      "id": "t18-q252",
+      "pregunta": "En el cuadro de cifras, ¿qué dos tiempos se asocian a la confirmación de los enterococos con esculina?",
+      "opciones": [
+        "44 °C durante 4 horas.",
+        "37 °C durante 44 horas.",
+        "44 °C durante 18 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 37 °C y 44 horas son la incubación del Slanetz y Bartley; las 18 horas, la vía alternativa resembrando colonias.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Slanetz y Bartley: 37 °C, 44 ± 4 h; esculina 44 °C, 4 h"
+    },
+    {
+      "id": "t18-q253",
+      "pregunta": "Resumiendo el tema: ¿qué unidades corresponden a cada grupo de parámetros?",
+      "opciones": [
+        "Todos en ufc/100 mL, salvo los colífagos en ufp/L.",
+        "Fecales en ufc/L y el recuento a 22 °C en ufc/100 mL.",
+        "Fecales ufc/100 mL, recuento a 22 °C ufc/mL, Legionella ufc/L y colífagos ufp/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Las unidades son una pregunta en sí misma en el examen.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Unidades: fecales ufc/100 mL (1322 C2 #13); recuento a 22 °C ufc/mL; Legionella ufc/L; colífagos ufp/100 mL."
+    },
+    {
+      "id": "t18-q254",
+      "pregunta": "Resumiendo el tema: ¿qué norma corresponde a C. perfringens y cuál a los colífagos?",
+      "opciones": [
+        "La 14189 y la 10705-2.",
+        "La 10705-2 y la 14189.",
+        "La 7899-2 y la 6222."
+      ],
+      "correcta": 0,
+      "explicacion": "La 7899-2 es de enterococos y la 6222, del recuento de colonias.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "C. perfringens 14189; Legionella 11731 (1322 #25); colífagos 10705-2"
+    },
+    {
+      "id": "t18-q255",
+      "pregunta": "Resumiendo el tema: ¿cómo se obtienen los coliformes totales en un CCA?",
+      "opciones": [
+        "Contando solo las rosas.",
+        "Sumando las rosas y las azul-violeta.",
+        "Contando solo las azul-violeta."
+      ],
+      "correcta": 1,
+      "explicacion": "Las azul-violeta son E. coli, que también es un coliforme.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Coliformes totales = rosas + violetas."
+    },
+    {
+      "id": "t18-q256",
+      "pregunta": "Resumiendo el tema: ¿qué define a E. coli frente al resto de los coliformes?",
+      "opciones": [
+        "La oxidasa positiva.",
+        "La β-glucuronidasa, y el indol.",
+        "La β-galactosidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "Todos los coliformes tienen β-galactosidasa y son oxidasa negativos.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "E. coli: además β-glucuronidasa (e indol)."
+    },
+    {
+      "id": "t18-q257",
+      "pregunta": "Resumiendo el tema: ¿cuáles son las tres condiciones de incubación de C. perfringens en TSC?",
+      "opciones": [
+        "37 °C, aerobiosis y 44 horas.",
+        "44 °C, aerobiosis y 24 horas.",
+        "44 °C, anaerobiosis y 21 ± 3 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "La anaerobiosis es imprescindible: es un clostridio.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "C. perfringens: TSC, 44 °C, anaerobiosis (1233 C2 #15), colonias negras"
+    },
+    {
+      "id": "t18-q258",
+      "pregunta": "Resumiendo el tema: ¿qué principio comparten el TSC-MUP y la confirmación de la ISO 14189?",
+      "opciones": [
+        "La fosfatasa ácida.",
+        "La β-glucuronidasa.",
+        "La reducción del sulfito."
+      ],
+      "correcta": 0,
+      "explicacion": "La reducción del sulfito es lo que da el color negro, no la confirmación.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "La fosfatasa ácida rompe el MUP → 4-metilumbeliferona fluorescente. Mismo principio que la confirmación de la ISO 14189."
+    },
+    {
+      "id": "t18-q259",
+      "pregunta": "Resumiendo el tema: ¿qué informa el recuento a 22 °C y qué no?",
+      "opciones": [
+        "Informa de contaminación fecal antigua, no de la red.",
+        "Informa de la limpieza y el estado de la red, no de contaminación fecal.",
+        "Informa de la eficacia frente a virus, no de la red."
+      ],
+      "correcta": 1,
+      "explicacion": "La contaminación fecal la marca E. coli; frente a virus, los colífagos.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "indica limpieza y estado de la red, no contaminación fecal (1246 #37)"
+    },
+    {
+      "id": "t18-q260",
+      "pregunta": "Resumiendo el tema: en la bandeja de NMP, ¿qué se hace con los pocillos amarillos y los fluorescentes?",
+      "opciones": [
+        "No se suman: los fluorescentes ya están entre los amarillos.",
+        "Se suman para obtener el total de coliformes.",
+        "Se restan los fluorescentes de los amarillos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los amarillos dan los coliformes y los amarillos fluorescentes, E. coli.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "amarillos = coliformes; amarillos fluorescentes = E. coli; no se suman (1322 C2 #16-17)"
+    },
+    {
+      "id": "t18-q261",
+      "pregunta": "Resumiendo el tema: ¿qué hay que hacer cuando el NMP se ha obtenido de una muestra diluida?",
+      "opciones": [
+        "Dividir por el inverso de la dilución.",
+        "Informar el valor de la tabla sin corregir.",
+        "Multiplicar por el inverso de la dilución."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el caso del examen: 14,5 en una dilución 1:100 da 1450.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Con dilución, se multiplica (1233 C2 #14)."
+    },
+    {
+      "id": "t18-q262",
+      "pregunta": "Resumiendo el tema: ¿qué medio y qué indicador de color identifican a los enterococos?",
+      "opciones": [
+        "Slanetz y Bartley, con azida y TTC, que da colonias rojas.",
+        "TSC, con sulfito y hierro, que da colonias negras.",
+        "CN, con cetrimida, que da colonias azul-verdosas."
+      ],
+      "correcta": 0,
+      "explicacion": "El TSC es de C. perfringens y el CN, de P. aeruginosa.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Enterococos: Slanetz y Bartley (1233 C2 #12): azida + TTC → rojas"
+    },
+    {
+      "id": "t18-q263",
+      "pregunta": "En un CCA crecen más de 100 colonias en total y las diana no se distinguen. ¿Qué indica eso del método?",
+      "opciones": [
+        "Que hay que alargar la incubación hasta 24 horas.",
+        "Que el agua no es adecuada para la ISO 9308-1.",
+        "Que hay que confirmar todas las colonias con oxidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "El método se limita a aguas que den menos de 100 colonias en total: con más, la flora acompañante tapa a las diana.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "No para aguas superficiales: la flora acompañante tapa a las diana"
+    },
+    {
+      "id": "t18-q264",
+      "pregunta": "Una colonia de CCA sale azul claro o turquesa. ¿Qué hay que anotar?",
+      "opciones": [
+        "Que es E. coli con poca actividad enzimática.",
+        "Que es un coliforme oxidasa positivo.",
+        "Que no es E. coli."
+      ],
+      "correcta": 2,
+      "explicacion": "Tiene algo de β-glucuronidasa pero no β-galactosidasa: no cumple la definición de E. coli.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Algunas con algo de β-glucuronidasa pero sin β-galactosidasa salen azul claro o turquesa (ficha de PanReac): no son E. coli."
+    },
+    {
+      "id": "t18-q265",
+      "pregunta": "En un brote se busca E. coli O157 en agua con el método del CCA. ¿Qué limitación hay?",
+      "opciones": [
+        "Que sale incolora y no se cuenta.",
+        "Que no crece en el medio.",
+        "Que sale rosa, como un coliforme, porque no tiene β-glucuronidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la limitación que recoge el resumen oficial de la ISO 9308-1.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "las E. coli sin β-glucuronidasa, como O157, salen rosas, como coliformes"
+    },
+    {
+      "id": "t18-q266",
+      "pregunta": "Se quiere detectar E. coli O157 con el NMP de sustrato definido. ¿Qué problema hay?",
+      "opciones": [
+        "Que la bandeja no admite aguas turbias.",
+        "Que el método no detecta las E. coli sin β-glucuronidasa.",
+        "Que hay que confirmar cada pocillo."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la misma limitación que en el CCA: sin β-glucuronidasa no hay fluorescencia.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "no detecta las E. coli sin β-glucuronidasa, como muchas enterohemorrágicas"
+    },
+    {
+      "id": "t18-q267",
+      "pregunta": "Una muestra de agua llega al laboratorio 20 horas después de la toma, bien refrigerada. ¿Qué parámetro queda fuera de plazo?",
+      "opciones": [
+        "E. coli y coliformes, cuyo máximo es 18 horas.",
+        "Los enterococos, cuyo máximo es 24 horas.",
+        "Las esporas de C. perfringens, cuyo máximo es 72 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "En circunstancias especiales, el plazo de E. coli y coliformes puede llegar a 24 horas.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "| ISO 9308-1 y -2 | E. coli y coliformes | 18 horas"
+    },
+    {
+      "id": "t18-q268",
+      "pregunta": "El transporte de una muestra ha durado 10 horas. ¿Qué obligación añade la ISO 19458?",
+      "opciones": [
+        "Repetir la toma de muestra.",
+        "Congelar la muestra al llegar.",
+        "Registrar la temperatura."
+      ],
+      "correcta": 2,
+      "explicacion": "La obligación de registrar la temperatura aparece cuando el transporte pasa de 8 horas.",
+      "fuente": "RD 3/2023, anexo III, parte A; Norsk Akkreditering (2023); resumen oficial de la ISO 19458 · apunte §3",
+      "apartado": "3",
+      "evidencia": "registrar la temperatura si el transporte pasa de 8 horas"
+    },
+    {
+      "id": "t18-q269",
+      "pregunta": "Un agua de consumo da 3 UFC de enterococos en 100 mL. ¿Cumple el RD 3/2023?",
+      "opciones": [
+        "Sí: el valor paramétrico es 100.",
+        "No: el valor paramétrico es 0.",
+        "Sí: el valor paramétrico es 10."
+      ],
+      "correcta": 1,
+      "explicacion": "Los indicadores fecales van a 0 por 100 mL.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "| Enterococo intestinal | 0 | UFC o NMP en 100 mL |"
+    },
+    {
+      "id": "t18-q270",
+      "pregunta": "Un análisis da 150 UFC de coliformes en 100 mL. ¿Qué supone según el RD 3/2023?",
+      "opciones": [
+        "Supera el valor de no aptitud, que son 100 UFC/100 mL.",
+        "Cumple: el valor de no aptitud son 1000 UFC/100 mL.",
+        "Cumple: los coliformes no tienen valor de no aptitud."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 1000 son el valor de no aptitud del recuento a 22 °C a la salida del tratamiento.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "mala desinfección o recontaminación. No aptitud: 100 UFC/100 mL"
+    },
+    {
+      "id": "t18-q271",
+      "pregunta": "En un grifo asistencial de cuidados aumentados se detectan 2 UFC/100 mL de P. aeruginosa. ¿Cumple el RD 3/2023?",
+      "opciones": [
+        "No: allí se exige menos de 1 UFC/100 mL.",
+        "Sí: el límite general son 100 UFC/100 mL.",
+        "Sí: P. aeruginosa no es parámetro del RD."
+      ],
+      "correcta": 0,
+      "explicacion": "En esos grifos, además, Legionella debe ser no detectable por litro.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "y además Pseudomonas aeruginosa < 1 UFC/100 mL"
+    },
+    {
+      "id": "t18-q272",
+      "pregunta": "Un agua da 250 UFC/L de Legionella spp. ¿Qué obliga a hacer el RD 3/2023?",
+      "opciones": [
+        "Repetir el análisis por qPCR.",
+        "Identificar si es L. pneumophila y su serogrupo.",
+        "Nada: el valor paramétrico son 1000 UFC/L."
+      ],
+      "correcta": 1,
+      "explicacion": "El valor paramétrico son 100 UFC/L; por encima, hay que identificar la especie y el serogrupo.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "El RD pide identificar L. pneumophila y su serogrupo si se superan 100 UFC/L."
+    },
+    {
+      "id": "t18-q273",
+      "pregunta": "En una placa de TSC crecen colonias negras pero el laboratorio no tiene reactivo de fosfatasa ácida. ¿Qué otra vía permite confirmar C. perfringens?",
+      "opciones": [
+        "La oxidasa y el indol.",
+        "La aglutinación con látex.",
+        "Las pruebas del método británico antiguo: inmovilidad, nitratos, lactosa y gelatina."
+      ],
+      "correcta": 2,
+      "explicacion": "El látex y la coagulasa son pruebas de estafilococos.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "C. perfringens es inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina"
+    },
+    {
+      "id": "t18-q274",
+      "pregunta": "Un agua bruta se analiza para enterococos. ¿Qué incubación propone la guía británica?",
+      "opciones": [
+        "4 horas a 37 °C y después 40 horas a 44 °C.",
+        "44 horas a 37 °C.",
+        "24 horas a 41 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "La incubación a 37 °C durante 44 ± 4 horas es la del agua de consumo.",
+      "fuente": "SCA (2012), parte 5 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Para agua bruta: 4 h a 37 °C y después 40 h a 44 °C."
+    },
+    {
+      "id": "t18-q275",
+      "pregunta": "Tras poner tuberías nuevas en una red, ¿qué indicador conviene vigilar según el apunte?",
+      "opciones": [
+        "Los colífagos somáticos.",
+        "C. perfringens.",
+        "Los enterococos intestinales."
+      ],
+      "correcta": 2,
+      "explicacion": "Sirven tras reparar la red o poner tuberías nuevas, y para valorar los coliformes cuando no hay E. coli.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "y tras reparar la red o poner tuberías nuevas"
+    },
+    {
+      "id": "t18-q276",
+      "pregunta": "Un agua tratada da E. coli ausente pero colífagos somáticos presentes. ¿Qué sugiere?",
+      "opciones": [
+        "Que hay contaminación fecal reciente abundante.",
+        "Que el tratamiento puede no ser eficaz frente a los virus.",
+        "Que la red tiene biopelículas."
+      ],
+      "correcta": 1,
+      "explicacion": "E. coli es mucho más sensible a la desinfección que los virus y los protozoos.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Es mucho más sensible a la desinfección que los virus y los protozoos"
+    },
+    {
+      "id": "t18-q277",
+      "pregunta": "Un laboratorio quiere usar un método comercial nuevo para enterococos, distinto del Enterolert-DW. ¿Qué necesita?",
+      "opciones": [
+        "Un ejercicio de equivalencia aprobado y publicado por el Ministerio de Sanidad.",
+        "Solo la acreditación del método por la ISO 17025.",
+        "La autorización de la comunidad autónoma."
+      ],
+      "correcta": 0,
+      "explicacion": "La equivalencia se demuestra con la UNE-EN ISO 17994 o la 16140.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "Cualquier otro método alternativo necesita un ejercicio de equivalencia"
+    },
+    {
+      "id": "t18-q278",
+      "pregunta": "¿Qué técnica usa el método oficial de los colífagos somáticos?",
+      "opciones": [
+        "La filtración en membrana con confirmación.",
+        "El NMP en bandeja.",
+        "El recuento de placas."
+      ],
+      "correcta": 2,
+      "explicacion": "Se cuentan placas de lisis sobre un césped de la bacteria hospedadora.",
+      "fuente": "RD 3/2023, anexo III, parte C; Orden SCO/778/2009 · apunte §4",
+      "apartado": "4",
+      "evidencia": "| Colífagos somáticos | UNE-EN ISO 10705-2 (y 10705-3 para concentrar) | Recuento de placas |"
+    },
+    {
+      "id": "t18-q279",
+      "pregunta": "¿Qué dos cosas puede señalar la presencia de un indicador en el agua?",
+      "opciones": [
+        "Que hay patógenos en número infeccioso.",
+        "Que pudo entrar contaminación o que el tratamiento o la red fallan.",
+        "Que el agua tiene exceso de cloro residual."
+      ],
+      "correcta": 1,
+      "explicacion": "El indicador no es el patógeno: avisa de que las condiciones pueden haber fallado.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "señala que pudo entrar contaminación o que el tratamiento o la red fallan"
+    },
+    {
+      "id": "t18-q280",
+      "pregunta": "Según la OMS, ¿cómo debe comportarse un indicador fecal frente al tratamiento?",
+      "opciones": [
+        "Resistir cualquier tratamiento de desinfección.",
+        "Desaparecer antes que los patógenos.",
+        "Responder al tratamiento como los patógenos fecales."
+      ],
+      "correcta": 2,
+      "explicacion": "También debe sobrevivir en el agua como ellos.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 · apunte §1",
+      "apartado": "1",
+      "evidencia": "sobreviva en el agua como los patógenos fecales, y responda al tratamiento como ellos"
+    },
+    {
+      "id": "t18-q281",
+      "pregunta": "¿Qué se cuenta y qué no en una placa del recuento de colonias a 22 °C?",
+      "opciones": [
+        "Solo las colonias de bacterias gramnegativas.",
+        "Todas las colonias; los mohos no, y algunas levaduras sí.",
+        "Todas, incluidos los mohos."
+      ],
+      "correcta": 1,
+      "explicacion": "Algunas levaduras se cuentan porque parecen bacterias.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Los mohos no se cuentan; algunas levaduras, sí, porque parecen bacterias."
     }
   ],
   "supuestos": [
