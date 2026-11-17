@@ -3659,6 +3659,622 @@
       "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
       "apartado": "7",
       "evidencia": "el fenol, tóxico, corrosivo y combustible"
+    },
+    {
+      "id": "t14-q227",
+      "pregunta": "¿Por qué la cápsula se pone de manifiesto con una tinción negativa?",
+      "opciones": [
+        "Porque no absorbe casi ningún colorante básico.",
+        "Porque se disuelve con los colorantes básicos.",
+        "Porque su carga positiva repele a los colorantes ácidos."
+      ],
+      "correcta": 0,
+      "explicacion": "Al no teñirse, se tiñe el fondo y la cápsula aparece como un halo claro.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "La cápsula no absorbe casi ningún colorante básico."
+    },
+    {
+      "id": "t14-q228",
+      "pregunta": "En la tinción negativa con tinta china, ¿qué se hace con la gota de muestra?",
+      "opciones": [
+        "Se extiende en espiral y se deja secar antes de añadir la tinta.",
+        "Se añade sobre la tinta ya seca en el porta.",
+        "Se pone al lado de la gota de tinta china y se mezclan."
+      ],
+      "correcta": 2,
+      "explicacion": "Las dos gotas se mezclan en el porta y se cubre; la preparación no se seca ni se fija.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "Al lado, una gota de la muestra o del cultivo líquido, y se mezclan."
+    },
+    {
+      "id": "t14-q229",
+      "pregunta": "Al montar una tinción con tinta china, ¿cómo se consigue que la película quede muy fina y pálida?",
+      "opciones": [
+        "Dejando evaporar el exceso al aire durante 10 minutos.",
+        "Lavando el porta con agua destilada antes de poner el cubre.",
+        "Apretando el cubre a través de papel secante."
+      ],
+      "correcta": 2,
+      "explicacion": "El papel secante absorbe el exceso sin tocar la preparación; si la película queda gruesa, no se lee.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "apretando a través de papel secante hasta que la película quede muy fina y pálida"
+    },
+    {
+      "id": "t14-q230",
+      "pregunta": "¿Con qué técnica de microscopía se lee mejor una tinción con tinta china?",
+      "opciones": [
+        "Con microscopio de fluorescencia.",
+        "Con contraste de fases.",
+        "Con campo claro y poca luz."
+      ],
+      "correcta": 1,
+      "explicacion": "La fluorescencia es para la auramina; la preparación de tinta china se examina a gran aumento, mejor con contraste de fases.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "Examinar a gran aumento; mejor con contraste de fases."
+    },
+    {
+      "id": "t14-q231",
+      "pregunta": "¿Cómo se ven las células en una preparación con tinta china?",
+      "opciones": [
+        "Refringentes, rodeadas de un halo claro sobre fondo oscuro.",
+        "Rojas sobre fondo azul.",
+        "Con gránulos verde-negros sobre fondo verde."
+      ],
+      "correcta": 0,
+      "explicacion": "El rojo sobre azul es el Ziehl-Neelsen; los gránulos verde-negros, la tinción de Albert.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "Resultado: células refringentes rodeadas de un halo claro sobre fondo oscuro."
+    },
+    {
+      "id": "t14-q232",
+      "pregunta": "Además de Cryptococcus neoformans, ¿qué cápsula bacteriana cita el apunte para la tinta china?",
+      "opciones": [
+        "La de Bacillus anthracis.",
+        "La de Streptococcus pneumoniae.",
+        "La de Corynebacterium diphtheriae."
+      ],
+      "correcta": 1,
+      "explicacion": "La cápsula de B. anthracis se ve con la tinción de McFadyean; C. diphtheriae se tiñe con Albert por sus gránulos.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "también para cápsulas bacterianas como la de Streptococcus pneumoniae"
+    },
+    {
+      "id": "t14-q233",
+      "pregunta": "¿Qué dos errores arruinan una tinción negativa con tinta china?",
+      "opciones": [
+        "La tinta demasiado concentrada y el frotis fino.",
+        "Fijar al calor y lavar con agua fría.",
+        "La tinta diluida y el frotis grueso."
+      ],
+      "correcta": 2,
+      "explicacion": "La concentración de la tinta es crítica; y la preparación, además, no se fija.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "Errores: tinta diluida (la concentración es crítica) y frotis grueso."
+    },
+    {
+      "id": "t14-q234",
+      "pregunta": "La tinción de McFadyean es una variante de:",
+      "opciones": [
+        "El azul de metileno.",
+        "La tinta china.",
+        "El verde de malaquita."
+      ],
+      "correcta": 0,
+      "explicacion": "Pone de manifiesto la cápsula rosa-rojiza de Bacillus anthracis.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "La tinción de McFadyean, una variante del azul de metileno"
+    },
+    {
+      "id": "t14-q235",
+      "pregunta": "¿A qué grupo de riesgo pertenece Bacillus anthracis y qué contención exige?",
+      "opciones": [
+        "Al grupo 2, y basta el nivel de contención 2.",
+        "Al grupo 3, y solo se trabaja en nivel de contención 3.",
+        "Al grupo 4, y exige nivel de contención 4."
+      ],
+      "correcta": 1,
+      "explicacion": "Como la tuberculosis, el carbunco exige nivel de contención 3.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025), 7.4 · apunte §8.1",
+      "apartado": "8.1",
+      "evidencia": "Bacillus anthracis, un agente del grupo 3: solo en nivel de contención 3"
+    },
+    {
+      "id": "t14-q236",
+      "pregunta": "Según el procedimiento descrito, ¿cuándo se añade el verde de malaquita en el Schaeffer-Fulton?",
+      "opciones": [
+        "Cuando aparecen gotas en la cara inferior del porta, puesto sobre un vaso de agua hirviendo.",
+        "Antes de fijar el frotis, con el porta frío.",
+        "Después de lavar con agua fría."
+      ],
+      "correcta": 0,
+      "explicacion": "El lavado con agua fría viene después del colorante; el frotis se fija al calor suavemente antes de todo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Cuando aparezcan gotas en la cara inferior, cubrir con verde de malaquita al 5 % durante 1 minuto"
+    },
+    {
+      "id": "t14-q237",
+      "pregunta": "En el Schaeffer-Fulton, ¿a qué concentración y cuánto tiempo actúa el verde de malaquita?",
+      "opciones": [
+        "Al 0,5 % durante 30 segundos.",
+        "Al 5-10 % durante 45 minutos.",
+        "Al 5 % durante 1 minuto."
+      ],
+      "correcta": 2,
+      "explicacion": "El 0,5 % 30 segundos es la safranina de contraste; el 5-10 % 45 minutos, el Wirtz-Conklin en frío.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "cubrir con verde de malaquita al 5 % durante 1 minuto, con el agua hirviendo"
+    },
+    {
+      "id": "t14-q238",
+      "pregunta": "En la tinción de esporas, ¿para qué se lava con agua fría?",
+      "opciones": [
+        "Para fijar el verde de malaquita en toda la célula.",
+        "Para decolorar la célula, mientras la espora retiene el verde.",
+        "Para enfriar el porta antes del siguiente paso con calor."
+      ],
+      "correcta": 1,
+      "explicacion": "El agua fría hace de decolorante: deja la célula lista para la safranina.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Lavar con agua fría: decolora la célula, pero la espora retiene el verde."
+    },
+    {
+      "id": "t14-q239",
+      "pregunta": "En el Schaeffer-Fulton, ¿con qué y cuánto tiempo se hace el contraste?",
+      "opciones": [
+        "Con safranina al 0,5 % durante 30 segundos.",
+        "Con safranina al 0,1 % durante 2 minutos.",
+        "Con azul de metileno al 1 % durante 20-30 segundos."
+      ],
+      "correcta": 0,
+      "explicacion": "Puede sustituirse por fucsina básica. La safranina al 0,1 % es del Gram de Hucker y el azul de metileno, del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Contraste: safranina al 0,5 % (o fucsina básica) 30 segundos."
+    },
+    {
+      "id": "t14-q240",
+      "pregunta": "¿Qué colorante puede sustituir a la safranina como contraste en la tinción de esporas?",
+      "opciones": [
+        "El cristal violeta.",
+        "La auramina.",
+        "La fucsina básica."
+      ],
+      "correcta": 2,
+      "explicacion": "El cristal violeta es el primario del Gram y la auramina, el de la tinción fluorescente de micobacterias.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "safranina al 0,5 % (o fucsina básica) 30 segundos"
+    },
+    {
+      "id": "t14-q241",
+      "pregunta": "¿Cómo se ve el resultado de una tinción de esporas de Schaeffer-Fulton?",
+      "opciones": [
+        "Esporas rosas dentro de células verdes.",
+        "Esporas como huecos claros dentro de células violetas.",
+        "Esporas verdes dentro de células rojas o rosas, o libres."
+      ],
+      "correcta": 2,
+      "explicacion": "Los huecos claros dentro de la célula son lo que se ve con el Gram, que no tiñe las esporas.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Resultado: esporas verdes dentro de células rojas o rosas, o libres."
+    },
+    {
+      "id": "t14-q242",
+      "pregunta": "Un laboratorio quiere teñir esporas sin aplicar calor. ¿Qué variante y cuánto tiempo necesita?",
+      "opciones": [
+        "El Wirtz-Conklin en frío, 45 minutos.",
+        "El Wirtz-Conklin al vapor, 3-6 minutos.",
+        "El Schaeffer-Fulton, 1 minuto."
+      ],
+      "correcta": 0,
+      "explicacion": "Sin calor, el colorante tarda mucho más en entrar en la espora: de ahí los 45 minutos frente a los 3-6 al vapor.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Wirtz-Conklin: verde de malaquita al 5-10 % durante 45 minutos en frío, o 3-6 minutos al vapor."
+    },
+    {
+      "id": "t14-q243",
+      "pregunta": "¿A qué concentración usa el verde de malaquita la tinción de Wirtz-Conklin?",
+      "opciones": [
+        "Al 0,5 %.",
+        "Al 5-10 %.",
+        "Al 1 %."
+      ],
+      "correcta": 1,
+      "explicacion": "El Schaeffer-Fulton lo usa al 5 %; el 0,5 % es la safranina y el 1 %, el azul de metileno del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Wirtz-Conklin: verde de malaquita al 5-10 %"
+    },
+    {
+      "id": "t14-q244",
+      "pregunta": "¿Qué edad debe tener el cultivo para que haya esporas que teñir?",
+      "opciones": [
+        "De 18 a 24 horas.",
+        "De 24 a 48 horas.",
+        "De 5 a 7 días."
+      ],
+      "correcta": 2,
+      "explicacion": "Los cultivos de un día o menos pueden tener solo células vegetativas.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Para que haya esporas, el cultivo debe ser viejo: de 5 a 7 días."
+    },
+    {
+      "id": "t14-q245",
+      "pregunta": "¿Qué control negativo se usa en la tinción de esporas?",
+      "opciones": [
+        "Una bacteria sin esporas, como E. coli.",
+        "Bacillus.",
+        "Proteus mirabilis."
+      ],
+      "correcta": 0,
+      "explicacion": "Bacillus es el control positivo; Proteus es el control positivo de la prueba de movilidad.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Controles: positivo Bacillus; negativo una bacteria sin esporas, como E. coli."
+    },
+    {
+      "id": "t14-q246",
+      "pregunta": "¿A qué géneros identifican las esporas?",
+      "opciones": [
+        "Mycobacterium, Nocardia y Corynebacterium.",
+        "Bacillus, Clostridium y Clostridioides.",
+        "Escherichia, Shigella y Salmonella."
+      ],
+      "correcta": 1,
+      "explicacion": "Las micobacterias y Nocardia se reconocen por la ácido-alcohol resistencia, y las enterobacterias no esporulan.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Las esporas identifican a Bacillus, Clostridium y Clostridioides."
+    },
+    {
+      "id": "t14-q247",
+      "pregunta": "Antes de teñir las esporas con el método de Schaeffer-Fulton, ¿qué se hace con el frotis?",
+      "opciones": [
+        "Fijarlo con metanol al 70 % durante 2 minutos.",
+        "Dejarlo sin fijar, como en la tinción negativa.",
+        "Fijarlo al calor, suavemente."
+      ],
+      "correcta": 2,
+      "explicacion": "La que no se fija es la tinción negativa con tinta china.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OpenStax, Microbiology (2016), 2.4 · apunte §8.2",
+      "apartado": "8.2",
+      "evidencia": "Fijar el frotis al calor, suavemente."
+    },
+    {
+      "id": "t14-q248",
+      "pregunta": "¿Por qué no se ven los flagelos al microscopio óptico sin teñirlos?",
+      "opciones": [
+        "Porque son demasiado finos.",
+        "Porque se mueven demasiado deprisa.",
+        "Porque son transparentes solo en campo claro."
+      ],
+      "correcta": 0,
+      "explicacion": "Por eso se usa un mordiente que los recubre y engruesa antes de teñirlos.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "Los flagelos son demasiado finos para verlos al microscopio óptico sin teñir."
+    },
+    {
+      "id": "t14-q249",
+      "pregunta": "Además del ácido tánico, ¿qué puede hacer de mordiente en la tinción de flagelos?",
+      "opciones": [
+        "El lugol.",
+        "El alumbre potásico.",
+        "El permanganato potásico."
+      ],
+      "correcta": 1,
+      "explicacion": "El lugol es el mordiente del Gram y el permanganato, el contraste de la auramina.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "normalmente ácido tánico (o alumbre potásico), que los recubre y engruesa"
+    },
+    {
+      "id": "t14-q250",
+      "pregunta": "Tras el mordiente, ¿con qué se tiñen los flagelos?",
+      "opciones": [
+        "Con pararrosanilina o fucsina básica.",
+        "Con cristal violeta o violeta de metilo.",
+        "Con tinta china."
+      ],
+      "correcta": 0,
+      "explicacion": "El cristal violeta es el primario del Gram, y la tinta china tiñe el fondo en la tinción negativa.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "Después pararrosanilina o fucsina básica."
+    },
+    {
+      "id": "t14-q251",
+      "pregunta": "¿Qué aportan a la identificación el número y la posición de los flagelos?",
+      "opciones": [
+        "Dan la reacción de Gram de la bacteria.",
+        "Permiten saber si la bacteria forma esporas.",
+        "Ayudan a identificar, aunque la tinción se use poco en clínica."
+      ],
+      "correcta": 2,
+      "explicacion": "Monotrica, anfitrica, lofotrica y peritrica son los cuatro patrones del apunte.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "Se usa poco en clínica, pero su número y posición ayudan a identificar."
+    },
+    {
+      "id": "t14-q252",
+      "pregunta": "Una bacteria con un solo flagelo polar tiene flagelación:",
+      "opciones": [
+        "Lofotrica.",
+        "Monotrica.",
+        "Anfitrica."
+      ],
+      "correcta": 1,
+      "explicacion": "Lofotrica es un penacho en un extremo y anfitrica, uno o un penacho en cada extremo.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "| Monotrica | Un flagelo polar | Vibrio cholerae |"
+    },
+    {
+      "id": "t14-q253",
+      "pregunta": "¿Qué flagelación tiene Spirillum minor?",
+      "opciones": [
+        "Monotrica.",
+        "Peritrica.",
+        "Anfitrica."
+      ],
+      "correcta": 2,
+      "explicacion": "Anfitrica es uno o un penacho en cada extremo; la peritrica cubre toda la superficie, como en E. coli.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "| Anfitrica | Uno o un penacho en cada extremo | Spirillum minor |"
+    },
+    {
+      "id": "t14-q254",
+      "pregunta": "Una bacteria con flagelos por toda la superficie tiene flagelación:",
+      "opciones": [
+        "Lofotrica.",
+        "Peritrica.",
+        "Monotrica."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el caso de E. coli; la lofotrica concentra el penacho en un extremo.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "| Peritrica | Por toda la superficie | E. coli |"
+    },
+    {
+      "id": "t14-q255",
+      "pregunta": "¿Qué flagelación tiene Vibrio cholerae?",
+      "opciones": [
+        "Monotrica.",
+        "Peritrica.",
+        "Lofotrica."
+      ],
+      "correcta": 0,
+      "explicacion": "Un solo flagelo polar; la peritrica es de E. coli y la lofotrica, de Pseudomonas aeruginosa.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §8.3",
+      "apartado": "8.3",
+      "evidencia": "Un flagelo polar | Vibrio cholerae"
+    },
+    {
+      "id": "t14-q256",
+      "pregunta": "¿Cómo se ven los bacilos en una tinción de Albert?",
+      "opciones": [
+        "Rosas, con gránulos rojos.",
+        "Verdes, con gránulos verde-negros.",
+        "Violetas, con huecos claros."
+      ],
+      "correcta": 1,
+      "explicacion": "Los huecos claros dentro de la célula son las esporas vistas con el Gram.",
+      "fuente": "OMS (2003), 5.3; UKHSA, UK SMI TP 39 (2025) · apunte §8.4",
+      "apartado": "8.4",
+      "evidencia": "Se ven bacilos verdes con gránulos verde-negros, en filas o en letras chinas"
+    },
+    {
+      "id": "t14-q257",
+      "pregunta": "En la tinción de Albert, ¿cómo se disponen los bacilos de Corynebacterium diphtheriae?",
+      "opciones": [
+        "En racimos.",
+        "En tétradas.",
+        "En filas o en letras chinas."
+      ],
+      "correcta": 2,
+      "explicacion": "Los racimos son de los estafilococos y las tétradas, cuatro cocos en cuadrado.",
+      "fuente": "OMS (2003), 5.3; UKHSA, UK SMI TP 39 (2025) · apunte §8.4",
+      "apartado": "8.4",
+      "evidencia": "en filas o en letras chinas (OMS)"
+    },
+    {
+      "id": "t14-q258",
+      "pregunta": "¿A qué colorantes se aplican las evaluaciones de riesgo químico?",
+      "opciones": [
+        "A todos.",
+        "Solo a la fucsina fenicada.",
+        "Solo a los que llevan yodo."
+      ],
+      "correcta": 0,
+      "explicacion": "Se trabaja con guantes y con evaluación de riesgo para cualquier colorante.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Guantes. Las evaluaciones de riesgo químico se aplican a todos los colorantes."
+    },
+    {
+      "id": "t14-q259",
+      "pregunta": "Según la norma británica, ¿qué riesgo tiene el yodo del laboratorio de tinciones?",
+      "opciones": [
+        "Es inflamable.",
+        "Es cancerígeno.",
+        "Es tóxico."
+      ],
+      "correcta": 2,
+      "explicacion": "Los inflamables son el etanol y la acetona; la cancerígena, la fucsina fenicada.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "El yodo es tóxico; el etanol y la acetona, inflamables"
+    },
+    {
+      "id": "t14-q260",
+      "pregunta": "¿Qué colorante es peligroso si se ingiere?",
+      "opciones": [
+        "El cristal violeta.",
+        "El verde de malaquita.",
+        "La safranina."
+      ],
+      "correcta": 1,
+      "explicacion": "El verde de malaquita se usa en las esporas y como contraste del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "el verde de malaquita, peligroso si se ingiere"
+    },
+    {
+      "id": "t14-q261",
+      "pregunta": "¿Qué reactivos de las tinciones son inflamables?",
+      "opciones": [
+        "El etanol y la acetona.",
+        "El yodo y el lugol.",
+        "El verde de malaquita y la safranina."
+      ],
+      "correcta": 0,
+      "explicacion": "Son los decolorantes del Gram; el yodo es tóxico y el verde de malaquita, peligroso por ingestión.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "el etanol y la acetona, inflamables"
+    },
+    {
+      "id": "t14-q262",
+      "pregunta": "¿Cada cuánto se hacen los portas de control positivo y negativo con cepas de referencia?",
+      "opciones": [
+        "Una vez al mes.",
+        "Solo al estrenar un lote de colorante.",
+        "Cada vez que se tiñe."
+      ],
+      "correcta": 2,
+      "explicacion": "El lote nuevo es lo que obliga a añadir el control negativo en el Gram, donde habitualmente basta el positivo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Portas de control positivo y negativo, hechos con cepas de referencia, cada vez que se tiñe."
+    },
+    {
+      "id": "t14-q263",
+      "pregunta": "¿Qué se registra de cada colorante comercial?",
+      "opciones": [
+        "El número de portas teñidos con él.",
+        "El lote y la fecha en que se usa.",
+        "El nombre del fabricante y su precio."
+      ],
+      "correcta": 1,
+      "explicacion": "Así se puede rastrear una tinción defectuosa hasta el lote empleado.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Se registran el lote de cada colorante comercial y la fecha en que se usa."
+    },
+    {
+      "id": "t14-q264",
+      "pregunta": "¿Qué se vigila en los colorantes preparados en el propio laboratorio?",
+      "opciones": [
+        "Que no se contaminen.",
+        "Que no superen los 25 °C.",
+        "Que lleven siempre fenol como conservante."
+      ],
+      "correcta": 0,
+      "explicacion": "Un colorante contaminado siembra bacterias ajenas en el frotis.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Los colorantes preparados en el laboratorio se vigilan para que no se contaminen."
+    },
+    {
+      "id": "t14-q265",
+      "pregunta": "¿Qué consecuencia tienen los reactivos caducados o mal preparados?",
+      "opciones": [
+        "Solo retrasan la tinción, sin afectar al resultado.",
+        "Obligan a cambiar de objetivo al leer.",
+        "Son causa de lecturas difíciles."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se registran lote y fecha y se repasan los controles.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Reactivos caducados o mal preparados son causa de lecturas difíciles."
+    },
+    {
+      "id": "t14-q266",
+      "pregunta": "¿Qué dos enfermedades cita el apunte como propias del nivel de contención 3?",
+      "opciones": [
+        "La difteria y el cólera.",
+        "La tuberculosis y el carbunco.",
+        "La meningitis y la gonorrea."
+      ],
+      "correcta": 1,
+      "explicacion": "Las muestras de M. tuberculosis y de B. anthracis exigen nivel 3.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025) · apunte §9",
+      "apartado": "9",
+      "evidencia": "Tuberculosis y carbunco, en nivel de contención 3."
+    },
+    {
+      "id": "t14-q267",
+      "pregunta": "En el cuadro de cifras, ¿qué fijación se recoge para un frotis corriente?",
+      "opciones": [
+        "Tres pasadas por la llama o metanol al 70 % durante 2 minutos.",
+        "Placa calefactora a 65-75 °C.",
+        "Metanol al 100 % durante 30 segundos."
+      ],
+      "correcta": 0,
+      "explicacion": "La placa a 65-75 °C se reserva para las micobacterias, dentro de cabina de clase I.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Fijación: 3 pasadas por la llama o metanol 70 % 2 min; micobacterias en placa a 65-75 °C"
+    },
+    {
+      "id": "t14-q268",
+      "pregunta": "Resumiendo el tema: ¿cuál es el orden de los reactivos del Gram?",
+      "opciones": [
+        "Lugol, cristal violeta, safranina y decolorante.",
+        "Cristal violeta, lugol, decolorante y safranina.",
+        "Cristal violeta, decolorante, lugol y safranina."
+      ],
+      "correcta": 1,
+      "explicacion": "El lugol va en segundo lugar, como mordiente, y el decolorante es el paso crítico.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Gram: cristal violeta → lugol → decolorante → safranina."
+    },
+    {
+      "id": "t14-q269",
+      "pregunta": "¿Qué dos cosas hay que recordar del frotis antes de teñirlo?",
+      "opciones": [
+        "Que sea grueso y que se fije en húmedo.",
+        "Que se extienda en estrías y se fije con lugol.",
+        "Que sea fino y que esté seco antes de fijar."
+      ],
+      "correcta": 2,
+      "explicacion": "El grueso no se lee y fijar en húmedo da falsos grampositivos.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Frotis: fino, seco antes de fijar, fijado al calor (tres pasadas) o con metanol."
+    },
+    {
+      "id": "t14-q270",
+      "pregunta": "Al leer una preparación en fresco, ¿qué no se puede tomar por movilidad?",
+      "opciones": [
+        "El movimiento browniano.",
+        "El movimiento en zigzag.",
+        "Las volteretas."
+      ],
+      "correcta": 0,
+      "explicacion": "El zigzag y las volteretas son movimiento organizado; el browniano es vibración sin desplazamiento.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Movimiento browniano no es movilidad."
     }
   ],
   "supuestos": [
