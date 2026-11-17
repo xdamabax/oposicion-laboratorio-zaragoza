@@ -2026,6 +2026,692 @@
       "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §3.3",
       "apartado": "3.3",
       "evidencia": "La movilidad se estudia en fresco, en gota pendiente o en agar semisólido"
+    },
+    {
+      "id": "t16-q114",
+      "pregunta": "¿Qué detectan las pruebas bioquímicas de identificación?",
+      "opciones": [
+        "Enzimas o rutas metabólicas que tienen unas bacterias y otras no.",
+        "Antígenos de la superficie celular.",
+        "Secuencias concretas de ADN."
+      ],
+      "correcta": 0,
+      "explicacion": "Los antígenos son el objeto de las serológicas y las secuencias, de las genéticas.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 3-TP 40 (2025) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Qué detectan: enzimas o rutas metabólicas que tienen unas bacterias y otras no."
+    },
+    {
+      "id": "t16-q115",
+      "pregunta": "¿Por qué no se usan cultivos viejos para las pruebas bioquímicas?",
+      "opciones": [
+        "Porque forman esporas que no reaccionan.",
+        "Porque pierden los antígenos de superficie.",
+        "Porque dan resultados poco fiables."
+      ],
+      "correcta": 2,
+      "explicacion": "La regla es trabajar con cultivos de 18-24 horas.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 3-TP 40 (2025) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Cultivos jóvenes, de 18-24 horas: los viejos dan resultados poco fiables."
+    },
+    {
+      "id": "t16-q116",
+      "pregunta": "¿Qué controles se incluyen en cada tanda de pruebas bioquímicas?",
+      "opciones": [
+        "Solo un control positivo, con la cepa del paciente.",
+        "Un control positivo y uno negativo, con cepas de referencia.",
+        "Un control de esterilidad del medio, sin más."
+      ],
+      "correcta": 1,
+      "explicacion": "Las cepas de referencia garantizan que el reactivo y la lectura funcionan.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 3-TP 40 (2025) · apunte §4",
+      "apartado": "4",
+      "evidencia": "Controles positivo y negativo con cepas de referencia en cada tanda."
+    },
+    {
+      "id": "t16-q117",
+      "pregunta": "¿Qué reacción cataliza la enzima que detecta la prueba de la catalasa?",
+      "opciones": [
+        "2 H₂O₂ → 2 H₂O + O₂.",
+        "La oxidación del citocromo c.",
+        "La hidrólisis de la urea en amoniaco."
+      ],
+      "correcta": 0,
+      "explicacion": "El oxígeno liberado es lo que forma las burbujas; el citocromo es la oxidasa y la urea, la ureasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "La enzima que descompone el agua oxigenada: 2 H₂O₂ → 2 H₂O + O₂"
+    },
+    {
+      "id": "t16-q118",
+      "pregunta": "¿A qué concentración se usa el agua oxigenada de la prueba de la catalasa?",
+      "opciones": [
+        "Al 3-6 %.",
+        "Al 1 %.",
+        "Al 30 %."
+      ],
+      "correcta": 0,
+      "explicacion": "El 1 % es la concentración del reactivo de la oxidasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Burbujas inmediatas con H₂O₂ al 3-6 %"
+    },
+    {
+      "id": "t16-q119",
+      "pregunta": "¿Qué cepa se usa como control positivo de la catalasa?",
+      "opciones": [
+        "Streptococcus mitis.",
+        "Staphylococcus aureus.",
+        "Escherichia coli."
+      ],
+      "correcta": 1,
+      "explicacion": "S. mitis es el ejemplo de catalasa negativa; E. coli es el negativo de la oxidasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "La mayoría de aerobios y facultativos; control: S. aureus"
+    },
+    {
+      "id": "t16-q120",
+      "pregunta": "¿Por qué conviene hacer la catalasa en un tubo tapado y en cabina?",
+      "opciones": [
+        "Porque el agua oxigenada es corrosiva para la piel.",
+        "Porque la luz destruye el reactivo.",
+        "Porque las burbujas forman aerosoles con bacterias."
+      ],
+      "correcta": 2,
+      "explicacion": "El agua oxigenada es inestable y se guarda en nevera, pero el motivo de la cabina son los aerosoles.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Las burbujas forman aerosoles con bacterias: mejor en tubo tapado y en cabina."
+    },
+    {
+      "id": "t16-q121",
+      "pregunta": "¿Cómo se conserva y se controla el agua oxigenada de la catalasa?",
+      "opciones": [
+        "A temperatura ambiente y protegida de la luz, sin control.",
+        "Congelada, y se descongela cada semana.",
+        "En la nevera, con control diario, porque es inestable."
+      ],
+      "correcta": 2,
+      "explicacion": "Si se ha degradado, no burbujea aunque la bacteria tenga catalasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "El agua oxigenada es inestable: se guarda en la nevera y se controla a diario."
+    },
+    {
+      "id": "t16-q122",
+      "pregunta": "¿Qué enzima detecta la prueba de la oxidasa?",
+      "opciones": [
+        "La triptofanasa.",
+        "El citocromo oxidasa.",
+        "La β-galactosidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "La triptofanasa es la del indol y la β-galactosidasa, la del ONPG.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| Oxidasa | El citocromo oxidasa |"
+    },
+    {
+      "id": "t16-q123",
+      "pregunta": "¿Qué reactivo se usa en la prueba de la oxidasa?",
+      "opciones": [
+        "Tetrametil-p-fenilendiamina al 1 %.",
+        "Reactivo de Kovács.",
+        "Rojo fenol."
+      ],
+      "correcta": 0,
+      "explicacion": "El Kovács es del indol y el rojo fenol, el indicador del agar urea.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Reactivo de tetrametil-p-fenilendiamina al 1 %: color azul-púrpura en 5-10 segundos"
+    },
+    {
+      "id": "t16-q124",
+      "pregunta": "Además de Pseudomonas, ¿qué géneros son oxidasa positivos?",
+      "opciones": [
+        "Escherichia y Proteus.",
+        "Staphylococcus y Streptococcus.",
+        "Neisseria y Campylobacter."
+      ],
+      "correcta": 2,
+      "explicacion": "Las enterobacterias, como E. coli y Proteus, son oxidasa negativas.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Pseudomonas (P. aeruginosa), Neisseria, Campylobacter | Enterobacterias (E. coli)"
+    },
+    {
+      "id": "t16-q125",
+      "pregunta": "¿Con qué se puede tomar la colonia para hacer la prueba de la oxidasa?",
+      "opciones": [
+        "Con asa de platino, de plástico o con un palillo.",
+        "Con asa de níquel.",
+        "Con asa de acero."
+      ],
+      "correcta": 0,
+      "explicacion": "El níquel y el acero dan falsos positivos.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Asas de platino, plástico o palillos: las de níquel o acero dan falsos positivos."
+    },
+    {
+      "id": "t16-q126",
+      "pregunta": "Sobre qué sustrato se trabaja en la prueba de la coagulasa:",
+      "opciones": [
+        "Sobre agua oxigenada, que la enzima descompone.",
+        "Sobre plasma, que la enzima coagula.",
+        "Sobre urea, que la enzima hidroliza."
+      ],
+      "correcta": 1,
+      "explicacion": "El agua oxigenada corresponde a la catalasa y la urea, a la ureasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| Coagulasa | La enzima que coagula el plasma |"
+    },
+    {
+      "id": "t16-q127",
+      "pregunta": "En la coagulasa en porta, ¿en cuánto tiempo deben aparecer los grumos?",
+      "opciones": [
+        "En 5 minutos.",
+        "En 4 horas.",
+        "En unos 10 segundos."
+      ],
+      "correcta": 2,
+      "explicacion": "Las 4 horas son el plazo de la coagulasa en tubo.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Grumos en porta en 10 s, o coágulo en tubo a 35-37 °C"
+    },
+    {
+      "id": "t16-q128",
+      "pregunta": "¿Qué estafilococo se pone como ejemplo de coagulasa negativo?",
+      "opciones": [
+        "Staphylococcus aureus.",
+        "Staphylococcus haemolyticus.",
+        "Streptococcus mitis."
+      ],
+      "correcta": 1,
+      "explicacion": "S. aureus es el coagulasa positivo, y S. mitis es un ejemplo de catalasa negativa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Staphylococcus aureus | Otros estafilococos (S. haemolyticus)"
+    },
+    {
+      "id": "t16-q129",
+      "pregunta": "¿Para qué se pone una gota de control sin plasma en la coagulasa en porta?",
+      "opciones": [
+        "Para descartar la autoaglutinación.",
+        "Para comparar la intensidad de los grumos.",
+        "Para comprobar que el plasma no está caducado."
+      ],
+      "correcta": 0,
+      "explicacion": "Si la suspensión se agrumase sola, los grumos no serían por la coagulasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Coagulasa en porta: se pone una gota de control sin plasma para descartar la autoaglutinación."
+    },
+    {
+      "id": "t16-q130",
+      "pregunta": "Un aislado transforma el triptófano en indol. ¿Qué enzima tiene?",
+      "opciones": [
+        "β-galactosidasa.",
+        "Ureasa.",
+        "Triptofanasa."
+      ],
+      "correcta": 2,
+      "explicacion": "La β-galactosidasa rompe el ONPG y la ureasa, la urea.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| Indol | La triptofanasa: el triptófano da indol |"
+    },
+    {
+      "id": "t16-q131",
+      "pregunta": "En la prueba del indol, ¿qué se ve si es positiva?",
+      "opciones": [
+        "Un color azul-púrpura en todo el tubo.",
+        "Un anillo rosa a rojo.",
+        "Burbujas en la superficie."
+      ],
+      "correcta": 1,
+      "explicacion": "El azul-púrpura es la oxidasa y las burbujas, la catalasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Reactivo de Kovács: anillo rosa a rojo"
+    },
+    {
+      "id": "t16-q132",
+      "pregunta": "¿Qué bacteria se pone como ejemplo de indol negativa?",
+      "opciones": [
+        "Proteus mirabilis.",
+        "Escherichia coli.",
+        "Klebsiella oxytoca."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli y K. oxytoca son indol positivas; K. pneumoniae, negativa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Reactivo de Kovács: anillo rosa a rojo | E. coli | Proteus mirabilis"
+    },
+    {
+      "id": "t16-q133",
+      "pregunta": "¿Qué hace la ureasa con la urea?",
+      "opciones": [
+        "La fermenta y produce ácido.",
+        "La oxida y libera oxígeno.",
+        "La descompone en amoniaco, y el pH sube."
+      ],
+      "correcta": 2,
+      "explicacion": "La subida de pH es lo que vira el rojo fenol del agar de Christensen.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "La enzima que descompone la urea en amoniaco y sube el pH"
+    },
+    {
+      "id": "t16-q134",
+      "pregunta": "¿Qué indicador lleva el agar urea de Christensen?",
+      "opciones": [
+        "Púrpura de bromocresol.",
+        "Rojo fenol.",
+        "Azul de metileno."
+      ],
+      "correcta": 1,
+      "explicacion": "El púrpura de bromocresol es el del caldo de glutamato del NMP.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Agar urea de Christensen (rojo fenol): de amarillo a rosa intenso"
+    },
+    {
+      "id": "t16-q135",
+      "pregunta": "¿Qué géneros dan la ureasa positiva de forma tardía?",
+      "opciones": [
+        "Klebsiella y Enterobacter.",
+        "Proteus.",
+        "Salmonella y Escherichia."
+      ],
+      "correcta": 0,
+      "explicacion": "Proteus da positivo rápido; Salmonella y E. coli son ureasa negativas.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Otros, como Klebsiella o Enterobacter, tarde."
+    },
+    {
+      "id": "t16-q136",
+      "pregunta": "¿Cuál de estas bacterias es ureasa negativa?",
+      "opciones": [
+        "Proteus mirabilis.",
+        "Escherichia coli.",
+        "Cryptococcus neoformans."
+      ],
+      "correcta": 1,
+      "explicacion": "Proteus da positivo rápido y la ureasa sirve también para identificar la levadura Cryptococcus neoformans.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Agar urea de Christensen (rojo fenol): de amarillo a rosa intenso | Proteus | E. coli, Salmonella"
+    },
+    {
+      "id": "t16-q137",
+      "pregunta": "En la prueba del ONPG, ¿qué produce el resultado positivo?",
+      "opciones": [
+        "Un anillo rosa en la superficie.",
+        "Un precipitado negro en el fondo.",
+        "El o-nitrofenol, amarillo, que sale del ONPG incoloro."
+      ],
+      "correcta": 2,
+      "explicacion": "El anillo rosa es del indol; el negro, el sulfuro de hidrógeno de Salmonella en el medio adecuado.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "El ONPG incoloro da o-nitrofenol amarillo"
+    },
+    {
+      "id": "t16-q138",
+      "pregunta": "¿Qué dos proteínas necesita una bacteria para fermentar la lactosa?",
+      "opciones": [
+        "La permeasa y la β-galactosidasa.",
+        "La triptofanasa y la permeasa.",
+        "La ureasa y la β-glucuronidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "Las fermentadoras tardías solo tienen la β-galactosidasa, y el ONPG las detecta igual.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "las bacterias que fermentan la lactosa necesitan permeasa y β-galactosidasa"
+    },
+    {
+      "id": "t16-q139",
+      "pregunta": "¿Cómo se llama la prueba que distingue si una bacteria oxida o fermenta la glucosa?",
+      "opciones": [
+        "La de Hugh y Leifson.",
+        "La de Christensen.",
+        "La de Kovács."
+      ],
+      "correcta": 0,
+      "explicacion": "Christensen da nombre al agar urea y Kovács, al reactivo del indol.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "| Oxidación-fermentación (Hugh y Leifson) | Si oxida o fermenta la glucosa |"
+    },
+    {
+      "id": "t16-q140",
+      "pregunta": "En la prueba de oxidación-fermentación, ¿cómo se preparan los dos tubos?",
+      "opciones": [
+        "Uno a 37 °C y otro a 44 °C.",
+        "Uno abierto y otro sellado con parafina.",
+        "Uno con glucosa y otro con lactosa."
+      ],
+      "correcta": 1,
+      "explicacion": "La parafina deja el segundo tubo sin oxígeno: solo un fermentador produce ácido allí.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Dos tubos, uno sellado con parafina"
+    },
+    {
+      "id": "t16-q141",
+      "pregunta": "Un microorganismo produce ácido solo en el tubo abierto de la prueba de Hugh y Leifson. ¿Qué es?",
+      "opciones": [
+        "Fermentador.",
+        "No sacarolítico: no usa la glucosa.",
+        "Oxidativo."
+      ],
+      "correcta": 2,
+      "explicacion": "El fermentador acidifica los dos tubos; si no hay ácido en ninguno, la prueba es negativa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Oxidativo: ácido solo en el abierto"
+    },
+    {
+      "id": "t16-q142",
+      "pregunta": "En la prueba de oxidación-fermentación, ¿qué color indica que se ha producido ácido?",
+      "opciones": [
+        "Rosa intenso.",
+        "Amarillo.",
+        "Azul-púrpura."
+      ],
+      "correcta": 1,
+      "explicacion": "El rosa intenso es el positivo de la ureasa y el azul-púrpura, el de la oxidasa.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Fermentador: ácido (amarillo) en los dos tubos"
+    },
+    {
+      "id": "t16-q143",
+      "pregunta": "En la prueba de Hugh y Leifson, ¿cuándo se considera negativa?",
+      "opciones": [
+        "Cuando no hay ácido en ninguno de los dos tubos.",
+        "Cuando hay ácido en el tubo sellado solamente.",
+        "Cuando hay ácido en los dos tubos."
+      ],
+      "correcta": 0,
+      "explicacion": "Ácido en los dos tubos es fermentador y solo en el abierto, oxidativo.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Oxidativo: ácido solo en el abierto | Sin ácido en ninguno"
+    },
+    {
+      "id": "t16-q144",
+      "pregunta": "¿Cuál de estas pruebas se usa para confirmar enterococos en el agua?",
+      "opciones": [
+        "La licuefacción de la gelatina.",
+        "La reducción de nitratos.",
+        "La hidrólisis de la esculina."
+      ],
+      "correcta": 2,
+      "explicacion": "La gelatina y los nitratos aparecen en la confirmación de Clostridium perfringens.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "hidrólisis de la esculina (enterococos)"
+    },
+    {
+      "id": "t16-q145",
+      "pregunta": "¿A qué dos temperaturas se ensaya la fermentación de la lactosa en el agua?",
+      "opciones": [
+        "A 37 °C y a 44 °C.",
+        "A 22 °C y a 37 °C.",
+        "A 30 °C y a 42 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 37 °C corresponden a los coliformes y los 44 °C, a E. coli.",
+      "fuente": "UKHSA, UK SMI, pruebas TP 8, 10, 19, 24, 26, 27 y 36 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "fermentación de la lactosa a 37 °C y a 44 °C (coliformes y E. coli)"
+    },
+    {
+      "id": "t16-q146",
+      "pregunta": "¿Qué atmósfera necesitan las enterobacterias?",
+      "opciones": [
+        "Son aerobias estrictas.",
+        "Son anaerobias estrictas.",
+        "Son anaerobias facultativas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las aerobias estrictas son las Pseudomonas.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Enterobacterias | Bacilos gramnegativos, anaerobios facultativos, oxidasa negativos"
+    },
+    {
+      "id": "t16-q147",
+      "pregunta": "Además de fermentar la glucosa, ¿qué hacen las enterobacterias con los nitratos?",
+      "opciones": [
+        "Los oxidan a nitritos.",
+        "Los reducen.",
+        "No los utilizan."
+      ],
+      "correcta": 1,
+      "explicacion": "Reducir los nitratos forma parte del perfil de la familia, con la catalasa variable.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "fermentan la glucosa, reducen los nitratos. Catalasa variable."
+    },
+    {
+      "id": "t16-q148",
+      "pregunta": "¿Cómo es la catalasa en las enterobacterias?",
+      "opciones": [
+        "Variable.",
+        "Siempre positiva.",
+        "Siempre negativa."
+      ],
+      "correcta": 0,
+      "explicacion": "Las Pseudomonas, en cambio, son catalasa positivas.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Catalasa variable. Plesiomonas es el único género oxidasa positivo de la familia"
+    },
+    {
+      "id": "t16-q149",
+      "pregunta": "Un bacilo gramnegativo oxidasa positivo no fermenta la glucosa y solo crece con oxígeno. ¿A qué género apunta?",
+      "opciones": [
+        "Escherichia.",
+        "Pseudomonas.",
+        "Salmonella."
+      ],
+      "correcta": 1,
+      "explicacion": "Las enterobacterias, como Escherichia y Salmonella, son oxidasa negativas, facultativas y fermentan la glucosa.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Pseudomonas | Bacilos gramnegativos, aerobios estrictos, no fermentan la glucosa"
+    },
+    {
+      "id": "t16-q150",
+      "pregunta": "¿Qué dos especies de Pseudomonas son la excepción oxidasa negativa?",
+      "opciones": [
+        "P. aeruginosa y P. fluorescens.",
+        "P. putida y P. stutzeri.",
+        "P. luteola y P. oryzihabitans."
+      ],
+      "correcta": 2,
+      "explicacion": "El resto del género es oxidasa positivo, lo que lo separa de las enterobacterias.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "oxidasa positivos (salvo P. luteola y P. oryzihabitans)"
+    },
+    {
+      "id": "t16-q151",
+      "pregunta": "¿Qué pigmento producen las Pseudomonas fluorescentes como P. aeruginosa?",
+      "opciones": [
+        "Piocianina, solo ella.",
+        "Pioverdina, amarillo-verdosa.",
+        "Prodigiosina roja."
+      ],
+      "correcta": 1,
+      "explicacion": "P. aeruginosa produce además piocianina; el pigmento rojo es de Serratia marcescens.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Las fluorescentes, como P. aeruginosa, producen pioverdina, amarillo-verdosa"
+    },
+    {
+      "id": "t16-q152",
+      "pregunta": "¿Hasta qué temperatura crece Pseudomonas aeruginosa?",
+      "opciones": [
+        "Hasta 37 °C.",
+        "Hasta 50 °C.",
+        "Hasta 42 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Es un carácter que la distingue de otras Pseudomonas.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "P. aeruginosa además piocianina y crece hasta 42 °C"
+    },
+    {
+      "id": "t16-q153",
+      "pregunta": "¿Qué azúcar fermenta Salmonella y cuál no?",
+      "opciones": [
+        "Fermenta la glucosa y no la lactosa.",
+        "Fermenta la lactosa y no la glucosa.",
+        "No fermenta ninguna de las dos."
+      ],
+      "correcta": 0,
+      "explicacion": "La fermentación de la glucosa va con gas, salvo en S. Typhi.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "no fermenta la lactosa, fermenta la glucosa (con gas, salvo S. Typhi)"
+    },
+    {
+      "id": "t16-q154",
+      "pregunta": "¿Qué serotipo de Salmonella fermenta la glucosa sin producir gas?",
+      "opciones": [
+        "S. Virchow.",
+        "S. Enteritidis.",
+        "S. Typhi."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la excepción del perfil: el resto fermenta la glucosa con gas.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "fermenta la glucosa (con gas, salvo S. Typhi)"
+    },
+    {
+      "id": "t16-q155",
+      "pregunta": "¿Qué gas produce casi toda Salmonella y cómo se nota en el medio?",
+      "opciones": [
+        "CO₂, que forma burbujas en la campana Durham.",
+        "Sulfuro de hidrógeno, que ennegrece el centro de la colonia en agar DCA.",
+        "Amoniaco, que vira el rojo fenol a rosa."
+      ],
+      "correcta": 1,
+      "explicacion": "El amoniaco es el producto de la ureasa, y Salmonella es ureasa negativa.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "casi todas producen sulfuro de hidrógeno (en agar DCA dan colonias incoloras con centro negro)"
+    },
+    {
+      "id": "t16-q156",
+      "pregunta": "¿Cómo son los flagelos de Salmonella?",
+      "opciones": [
+        "Peritricos: es móvil.",
+        "Monotricos polares.",
+        "No tiene flagelos: es inmóvil."
+      ],
+      "correcta": 0,
+      "explicacion": "La movilidad forma parte de su perfil, y los antígenos H son precisamente los flagelares.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "colonias incoloras con centro negro), móviles (flagelos peritricos)"
+    },
+    {
+      "id": "t16-q157",
+      "pregunta": "¿Cuál es el perfil bioquímico de Staphylococcus aureus?",
+      "opciones": [
+        "Catalasa negativo y coagulasa positivo.",
+        "Catalasa positivo y coagulasa positivo.",
+        "Catalasa positivo y oxidasa positivo."
+      ],
+      "correcta": 1,
+      "explicacion": "Los cocos grampositivos catalasa negativos son los estreptococos y enterococos.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Staphylococcus aureus | Coco grampositivo en racimo, catalasa positivo y coagulasa positivo |"
+    },
+    {
+      "id": "t16-q158",
+      "pregunta": "Un coco grampositivo en cadena y catalasa negativo apunta a:",
+      "opciones": [
+        "Estreptococos o enterococos.",
+        "Staphylococcus aureus.",
+        "Neisseria."
+      ],
+      "correcta": 0,
+      "explicacion": "S. aureus es catalasa positivo y se agrupa en racimos; Neisseria es un coco gramnegativo oxidasa positivo.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Estreptococos y enterococos | Cocos grampositivos en cadena, catalasa negativos |"
+    },
+    {
+      "id": "t16-q159",
+      "pregunta": "¿Por qué la catalasa no sirve para separar Pseudomonas de las enterobacterias?",
+      "opciones": [
+        "Porque es negativa en los dos grupos.",
+        "Porque no se puede hacer en bacilos gramnegativos.",
+        "Porque es positiva en los dos grupos."
+      ],
+      "correcta": 2,
+      "explicacion": "La que los separa es la oxidasa: Pseudomonas positiva y enterobacterias negativas.",
+      "fuente": "UKHSA, UK SMI ID 16, ID 17 e ID 24 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La coagulasa sirve para los estafilococos, y la catalasa es positiva en los dos grupos."
+    },
+    {
+      "id": "t16-q160",
+      "pregunta": "¿Qué dan como resultado las galerías comerciales tipo API?",
+      "opciones": [
+        "Un espectro de proteínas.",
+        "Una curva de fluorescencia por ciclo.",
+        "Un perfil numérico que se compara con una base de datos."
+      ],
+      "correcta": 2,
+      "explicacion": "El espectro de proteínas es del MALDI-TOF y la curva de fluorescencia, de la qPCR.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Dan un perfil numérico que se compara con una base de datos."
+    },
+    {
+      "id": "t16-q161",
+      "pregunta": "¿Qué limitación tienen las galerías comerciales con la taxonomía?",
+      "opciones": [
+        "No siempre recogen los cambios de taxonomía ni las especies raras.",
+        "Solo identifican bacterias gramnegativas.",
+        "Exigen repetir cada prueba por separado."
+      ],
+      "correcta": 0,
+      "explicacion": "Su ventaja es reunir muchas pruebas a la vez; la base de datos puede quedarse atrás.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "no siempre recogen los cambios de taxonomía ni las especies raras"
+    },
+    {
+      "id": "t16-q162",
+      "pregunta": "¿Qué se hace con cada lote de una galería comercial de identificación?",
+      "opciones": [
+        "Se compara con un MALDI-TOF.",
+        "Se valida con cepas de control.",
+        "Se descarta si lleva más de un mes abierto."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la misma exigencia que los controles de las pruebas bioquímicas sueltas.",
+      "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "cada lote se valida con cepas de control"
     }
   ],
   "supuestos": [
