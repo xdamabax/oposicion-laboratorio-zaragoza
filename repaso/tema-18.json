@@ -3462,6 +3462,524 @@
       "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
       "apartado": "5.5",
       "evidencia": "36 ± 1 °C durante 10 días (1322 #26), mirando las placas cada 2-3 días"
+    },
+    {
+      "id": "t18-q210",
+      "pregunta": "¿Qué volumen de muestra se usa en el NMP con sustrato definido?",
+      "opciones": [
+        "100 mL en un frasco estéril.",
+        "10 mL en un tubo estéril.",
+        "1 L concentrado a 10 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se le añade una dosis de sustrato y se agita hasta disolverla.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "100 mL de muestra en un frasco estéril; se añade una dosis de sustrato y se agita hasta disolverla"
+    },
+    {
+      "id": "t18-q211",
+      "pregunta": "Tras verter la muestra en la bandeja del NMP, ¿qué se hace?",
+      "opciones": [
+        "Taparla con una lámina adhesiva.",
+        "Dejarla abierta durante la incubación.",
+        "Sellarla, de modo que los pocillos queden aislados."
+      ],
+      "correcta": 2,
+      "explicacion": "Los pocillos aislados son los que hacen de «tubos» del número más probable.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Se vierte en la bandeja y se sella: los pocillos quedan aislados."
+    },
+    {
+      "id": "t18-q212",
+      "pregunta": "¿Cómo se incuba la bandeja del NMP con sustrato definido?",
+      "opciones": [
+        "21 ± 3 horas a 36 ± 2 °C.",
+        "Entre 18 y 22 horas a 36 ± 2 °C.",
+        "24 horas a 41 ± 0,5 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Las 21 ± 3 horas son del agar cromogénico y las 24 h a 41 °C, del Enterolert-DW.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Incubar entre 18 y 22 horas a 36 ± 2 °C."
+    },
+    {
+      "id": "t18-q213",
+      "pregunta": "En la bandeja del NMP, ¿qué enzima rompe el ONPG y qué indica?",
+      "opciones": [
+        "La β-galactosidasa, y los pocillos amarillos son coliformes.",
+        "La β-glucuronidasa, y los pocillos amarillos son E. coli.",
+        "La fosfatasa ácida, y los pocillos fluorescentes son E. coli."
+      ],
+      "correcta": 0,
+      "explicacion": "La β-glucuronidasa rompe el MUG y da la fluorescencia de E. coli.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Pocillos amarillos = coliformes (la β-galactosidasa rompe el ONPG)."
+    },
+    {
+      "id": "t18-q214",
+      "pregunta": "¿Qué lámpara se usa para leer E. coli en la bandeja del NMP?",
+      "opciones": [
+        "Una lámpara UV de 254 nm.",
+        "Una lámpara UV de 365 nm.",
+        "Una lámpara de luz blanca fría."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la misma longitud de onda con la que se lee el TSC-MUP.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Con lámpara UV de 365 nm: amarillos y con fluorescencia azulada = E. coli"
+    },
+    {
+      "id": "t18-q215",
+      "pregunta": "En la bandeja de NMP, ¿qué enzima de E. coli rompe el MUG?",
+      "opciones": [
+        "La β-galactosidasa.",
+        "La fosfatasa ácida.",
+        "La β-glucuronidasa."
+      ],
+      "correcta": 2,
+      "explicacion": "La β-galactosidasa rompe el ONPG y da el amarillo de los coliformes; la fosfatasa ácida es de C. perfringens.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "la β-glucuronidasa rompe el MUG"
+    },
+    {
+      "id": "t18-q216",
+      "pregunta": "Si en una bandeja de NMP no hay ningún pocillo positivo, ¿qué resultado se da?",
+      "opciones": [
+        "Equivale a 0 UFC/100 mL.",
+        "Menos de 1 NMP/100 mL, sin equivalencia.",
+        "No valorable: hay que repetir."
+      ],
+      "correcta": 0,
+      "explicacion": "Es lo que indica el procedimiento de la Orden SCO/778/2009.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Si no hay ningún pocillo positivo, el resultado equivale a 0 UFC/100 mL."
+    },
+    {
+      "id": "t18-q217",
+      "pregunta": "Un agua turbia y con mucha flora acompañante debe analizarse para coliformes. ¿Qué método oficial encaja mejor?",
+      "opciones": [
+        "La filtración en CCA de la ISO 9308-1.",
+        "La siembra en profundidad de la ISO 6222.",
+        "El NMP con sustrato definido de la ISO 9308-2."
+      ],
+      "correcta": 2,
+      "explicacion": "La filtración exige aguas de poca flora, con menos de 100 colonias en total; la ISO 6222 es el recuento de heterótrofos.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "sirve para todo tipo de aguas, también turbias o con mucha flora"
+    },
+    {
+      "id": "t18-q218",
+      "pregunta": "¿Por qué el NMP con sustrato definido no necesita confirmar los pocillos?",
+      "opciones": [
+        "Porque los pocillos se leen dos veces.",
+        "Porque da un resultado confirmado.",
+        "Porque el medio es selectivo y diferencial."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una de las ventajas que recoge el resumen oficial de la norma.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "da un resultado confirmado: no hay que confirmar los pocillos"
+    },
+    {
+      "id": "t18-q219",
+      "pregunta": "Una bandeja da 18 pocillos amarillos, de los que 7 son fluorescentes. ¿Cuántos pocillos se buscan en la tabla para E. coli?",
+      "opciones": [
+        "7.",
+        "18.",
+        "25."
+      ],
+      "correcta": 0,
+      "explicacion": "Los fluorescentes ya están dentro de los amarillos: no se suman.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Buscar cada número de pocillos en la tabla del NMP."
+    },
+    {
+      "id": "t18-q220",
+      "pregunta": "En una bandeja se obtiene un NMP de 9,8 por 100 mL con la muestra diluida 1:10. ¿Qué resultado se informa?",
+      "opciones": [
+        "98 NMP/100 mL.",
+        "9,8 NMP/100 mL.",
+        "0,98 NMP/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Con dilución, el valor de la tabla se multiplica por el inverso: 9,8 × 10 = 98.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "NMP de 14,5 en una dilución 1:100 → 14,5 × 100 = 1450"
+    },
+    {
+      "id": "t18-q221",
+      "pregunta": "¿En qué unidades se da el resultado del NMP con sustrato definido?",
+      "opciones": [
+        "En UFC/100 mL.",
+        "En UFP/100 mL.",
+        "En NMP/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Las UFC son de los métodos por filtración y las UFP, de los colífagos.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Buscar cada número de pocillos en la tabla del NMP. Resultado en NMP/100 mL."
+    },
+    {
+      "id": "t18-q222",
+      "pregunta": "¿Con qué número de norma se publicó el método del Enterolert-DW, según el fabricante?",
+      "opciones": [
+        "Como ISO 7899-2.",
+        "Como ISO 7899-3.",
+        "Como ISO 9308-2."
+      ],
+      "correcta": 1,
+      "explicacion": "La 7899-2 es el método oficial por filtración y la 9308-2, el NMP de coliformes y E. coli.",
+      "fuente": "IDEXX, Enterolert-DW (web oficial); RD 3/2023, anexo III, parte C · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "publicado como ISO 7899-3 (NMP), según el fabricante"
+    },
+    {
+      "id": "t18-q223",
+      "pregunta": "¿Qué sustrato usa el Enterolert-DW?",
+      "opciones": [
+        "El orto-nitrofenil-β-D-galactopiranósido.",
+        "El 4-metilumbeliferil fosfato.",
+        "El orto-nitrofenil-β-D-glucósido."
+      ],
+      "correcta": 2,
+      "explicacion": "El ONPG de la bandeja de coliformes lleva galactósido; el MUP es el del TSC-MUP.",
+      "fuente": "IDEXX, Enterolert-DW (web oficial); RD 3/2023, anexo III, parte C · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Usa el sustrato orto-nitrofenil-β-D-glucósido"
+    },
+    {
+      "id": "t18-q224",
+      "pregunta": "¿Qué enzima del enterococo rompe el sustrato del Enterolert-DW?",
+      "opciones": [
+        "La β-glucosidasa.",
+        "La β-galactosidasa.",
+        "La β-glucuronidasa."
+      ],
+      "correcta": 0,
+      "explicacion": "La β-galactosidasa es de los coliformes y la β-glucuronidasa, de E. coli.",
+      "fuente": "IDEXX, Enterolert-DW (web oficial); RD 3/2023, anexo III, parte C · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "el enterococo lo rompe con su β-glucosidasa"
+    },
+    {
+      "id": "t18-q225",
+      "pregunta": "Para leer una bandeja de Enterolert-DW, ¿hace falta luz ultravioleta?",
+      "opciones": [
+        "Sí, de 365 nm.",
+        "No: el cambio de azul a verde se ve a simple vista.",
+        "Sí, de 254 nm."
+      ],
+      "correcta": 1,
+      "explicacion": "La luz UV de 365 nm es para E. coli en la bandeja de coliformes y para el TSC-MUP.",
+      "fuente": "IDEXX, Enterolert-DW (web oficial); RD 3/2023, anexo III, parte C · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Positivo: el pocillo pasa de azul a verde. No hace falta luz UV."
+    },
+    {
+      "id": "t18-q226",
+      "pregunta": "¿Qué parámetro mide el Legiolert?",
+      "opciones": [
+        "El NMP de L. pneumophila.",
+        "El NMP de Legionella spp.",
+        "El recuento de colonias de Legionella por filtración."
+      ],
+      "correcta": 0,
+      "explicacion": "Es un NMP en bandeja de 96 pocillos, 39 °C durante 7 días.",
+      "fuente": "RD 3/2023, anexo III, parte C; IDEXX, Legiolert · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "NMP de L. pneumophila en bandeja de 96 pocillos, 39 °C durante 7 días (tema 13)"
+    },
+    {
+      "id": "t18-q227",
+      "pregunta": "¿Cuál es el método de referencia de Legionella frente al Legiolert?",
+      "opciones": [
+        "La qPCR de la UNE-ISO/TS 12869.",
+        "El propio Legiolert, por ser NMP.",
+        "El cultivo de la ISO 11731."
+      ],
+      "correcta": 2,
+      "explicacion": "La qPCR solo vale como complemento del cultivo, y validada.",
+      "fuente": "RD 3/2023, anexo III, parte C; IDEXX, Legiolert · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "No es el método de referencia (1322 #25): el de referencia es el cultivo de la ISO 11731."
+    },
+    {
+      "id": "t18-q228",
+      "pregunta": "En el recuento de colonias a 22 °C, ¿qué volumen de muestra se pone en la placa?",
+      "opciones": [
+        "0,1 mL.",
+        "1 mL.",
+        "100 mL filtrados."
+      ],
+      "correcta": 1,
+      "explicacion": "Se pone en la placa vacía y después se añade el agar fundido.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "1 mL de muestra en la placa vacía."
+    },
+    {
+      "id": "t18-q229",
+      "pregunta": "¿Cuánto agar se añade en la siembra en profundidad del recuento a 22 °C y a qué temperatura?",
+      "opciones": [
+        "15-20 mL de agar extracto de levadura a 45 ± 1 °C.",
+        "5-10 mL de agar nutritivo a 37 °C.",
+        "15-20 mL de TSC a 45 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "El TSC a 45 °C es la capa que cubre la membrana de C. perfringens.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "15-20 mL de agar extracto de levadura fundido, mantenido a 45 ± 1 °C"
+    },
+    {
+      "id": "t18-q230",
+      "pregunta": "¿Cuánto tiempo se incuba la placa de 22 °C del recuento de colonias?",
+      "opciones": [
+        "44 ± 4 horas.",
+        "68 ± 4 horas.",
+        "21 ± 3 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las 44 ± 4 horas son de la placa de 37 °C.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "una a 22 °C durante 68 ± 4 horas"
+    },
+    {
+      "id": "t18-q231",
+      "pregunta": "En el recuento de colonias de la ISO 6222 se siembran dos placas. ¿Cómo se incuban?",
+      "opciones": [
+        "Las dos a 22 °C, una 68 h y otra 44 h.",
+        "Una a 22 °C durante 44 h y otra a 37 °C durante 68 h.",
+        "Una a 22 °C durante 68 ± 4 h y otra a 37 °C durante 44 ± 4 h."
+      ],
+      "correcta": 2,
+      "explicacion": "El recuento a 37 °C avisa pronto de contaminación en aguas subterráneas poco contaminadas.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "una a 22 °C durante 68 ± 4 horas; - otra a 37 °C durante 44 ± 4 horas"
+    },
+    {
+      "id": "t18-q232",
+      "pregunta": "¿En qué intervalo debe estar el número de colonias de una placa del recuento a 22 °C?",
+      "opciones": [
+        "Entre 20 y 80.",
+        "Entre 1 y 100.",
+        "Entre 10 y 300."
+      ],
+      "correcta": 2,
+      "explicacion": "El intervalo de 20-80 es el de la membrana de filtración.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Se cuentan todas las colonias, en placas de 10-300 (tema 13)."
+    },
+    {
+      "id": "t18-q233",
+      "pregunta": "¿Por qué el recuento de colonias a 22 °C se hace en profundidad y no por filtración?",
+      "opciones": [
+        "Porque las membranas de 0,45 µm no retienen heterótrofos.",
+        "Porque se buscan todas las bacterias cultivables, sin medio selectivo, y el valor del RD se da por mL.",
+        "Porque el agar extracto de levadura no puede usarse en superficie."
+      ],
+      "correcta": 1,
+      "explicacion": "Los demás indicadores se refieren a 100 mL, y ahí la filtración concentra la muestra.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "se buscan todas las bacterias cultivables, sin medio selectivo, y el valor del RD se da por mL, no por 100 mL"
+    },
+    {
+      "id": "t18-q234",
+      "pregunta": "¿Qué se valora en el recuento de colonias, según la guía británica?",
+      "opciones": [
+        "La tendencia: un salto respecto de lo habitual en ese punto de la red.",
+        "El cumplimiento estricto del valor de 100 UFC/mL en cada muestra.",
+        "La proporción entre las placas de 22 y 37 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Son la flora natural del agua: lo significativo es el cambio.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Lo que se valora es la tendencia (guía británica): un salto respecto de lo habitual en ese punto de la red."
+    },
+    {
+      "id": "t18-q235",
+      "pregunta": "Una placa del recuento a 22 °C tiene 150 colonias y se sembró 1 mL. ¿Qué resultado se informa y cumple el valor del RD?",
+      "opciones": [
+        "150 UFC/mL: supera el valor paramétrico de 100.",
+        "1,5 UFC/mL: cumple el valor.",
+        "150 UFC/100 mL: cumple el valor."
+      ],
+      "correcta": 0,
+      "explicacion": "Se sembró 1 mL, así que cada colonia es 1 UFC/mL; el valor paramétrico del recuento a 22 °C es 100 UFC/mL.",
+      "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
+      "apartado": "7",
+      "evidencia": "el valor del RD se da por mL, no por 100 mL"
+    },
+    {
+      "id": "t18-q236",
+      "pregunta": "¿Sobre qué se cuentan las placas de lisis de los colífagos somáticos?",
+      "opciones": [
+        "Sobre una membrana de 0,45 µm.",
+        "Sobre un césped de la bacteria hospedadora.",
+        "Sobre agar extracto de levadura sin sembrar."
+      ],
+      "correcta": 1,
+      "explicacion": "Los colífagos son virus que infectan E. coli: necesitan a la bacteria para multiplicarse.",
+      "fuente": "RD 3/2023, anexo I, parte C; UNE-EN ISO 10705-2 · apunte §8",
+      "apartado": "8",
+      "evidencia": "Se cuentan como placas de lisis sobre un césped de la bacteria hospedadora"
+    },
+    {
+      "id": "t18-q237",
+      "pregunta": "¿Qué declara el apunte sobre el procedimiento de la ISO 10705-2?",
+      "opciones": [
+        "Que está reproducido paso a paso.",
+        "Que está derogado por el RD 3/2023.",
+        "Que no se ha leído: solo se da su idea general."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una de las dudas declaradas del tema.",
+      "fuente": "RD 3/2023, anexo I, parte C; UNE-EN ISO 10705-2 · apunte §8",
+      "apartado": "8",
+      "evidencia": "El procedimiento de la norma no se ha leído."
+    },
+    {
+      "id": "t18-q238",
+      "pregunta": "En la tabla de indicadores, ¿cuál es la confirmación de los coliformes del CCA?",
+      "opciones": [
+        "El indol.",
+        "La oxidasa negativa.",
+        "La esculina."
+      ],
+      "correcta": 1,
+      "explicacion": "El indol confirma E. coli y la esculina, los enterococos.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Coliformes | ISO 9308-1 | Filtración, CCA | 36 ± 2 °C, 21 ± 3 h | Rosa salmón a rojo | Oxidasa negativa |"
+    },
+    {
+      "id": "t18-q239",
+      "pregunta": "Según la tabla de indicadores, ¿qué confirmación necesita el NMP con sustrato definido?",
+      "opciones": [
+        "La oxidasa de los pocillos amarillos.",
+        "El indol de los pocillos fluorescentes.",
+        "Ninguna."
+      ],
+      "correcta": 2,
+      "explicacion": "Da un resultado confirmado: por eso se lee y se informa directamente.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Amarillo; E. coli, amarillo y fluorescente a 365 nm | No hace falta |"
+    },
+    {
+      "id": "t18-q240",
+      "pregunta": "En la tabla de indicadores, ¿desde qué día se ven las colonias de Legionella?",
+      "opciones": [
+        "Desde el día 3.",
+        "Desde el primer día.",
+        "Desde el día 7."
+      ],
+      "correcta": 0,
+      "explicacion": "No crecen los dos primeros días; la incubación total es de 10 días.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "Vidrio esmerilado, desde el día 3"
+    },
+    {
+      "id": "t18-q241",
+      "pregunta": "Según la tabla, ¿qué técnica y medio corresponden al recuento a 22 °C?",
+      "opciones": [
+        "Filtración en agar nutritivo.",
+        "Siembra en profundidad en agar extracto de levadura.",
+        "NMP en medio líquido."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el único indicador del tema que no se hace por filtración ni por NMP.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Recuento a 22 °C | ISO 6222 | Profundidad, agar extracto de levadura |"
+    },
+    {
+      "id": "t18-q242",
+      "pregunta": "En la tabla de indicadores, ¿qué agentes selectivos se citan del medio de enterococos?",
+      "opciones": [
+        "Azida y TTC.",
+        "Sulfito, hierro y cicloserina.",
+        "Cetrimida y nalidíxico."
+      ],
+      "correcta": 0,
+      "explicacion": "El sulfito y la cicloserina son del TSC; la cetrimida y el nalidíxico, del CN.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "Filtración, Slanetz y Bartley (azida y TTC)"
+    },
+    {
+      "id": "t18-q243",
+      "pregunta": "Según la tabla, ¿cuál es la confirmación del TSC-MUP?",
+      "opciones": [
+        "La fosfatasa ácida en papel de filtro.",
+        "La resiembra en agar sangre.",
+        "La propia fluorescencia."
+      ],
+      "correcta": 2,
+      "explicacion": "Esas dos son la confirmación del método de la ISO 14189 con TSC.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Negras con fluorescencia azul a 365 nm | La propia fluorescencia |"
+    },
+    {
+      "id": "t18-q244",
+      "pregunta": "En la tabla de indicadores, ¿qué incubación corresponde al Enterolert-DW?",
+      "opciones": [
+        "41 °C, 24 h.",
+        "37 °C, 44 h.",
+        "36 ± 2 °C, 18-22 h."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 37 °C y 44 h son del Slanetz y Bartley; los 36 ± 2 °C y 18-22 h, del NMP de coliformes.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Enterococos (alternativo) | ISO 7899-3 | NMP, Enterolert-DW | 41 °C, 24 h | Pocillo verde | No hace falta |"
+    },
+    {
+      "id": "t18-q245",
+      "pregunta": "Según la tabla, ¿en qué dos medios se cultiva Legionella?",
+      "opciones": [
+        "En BCYE y agar sangre.",
+        "En GVPC y agar CN.",
+        "En GVPC y BCYE."
+      ],
+      "correcta": 2,
+      "explicacion": "El agar sangre aparece como alternativa en la confirmación, y el CN es de P. aeruginosa.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| Legionella | ISO 11731 | Cultivo, GVPC y BCYE |"
+    },
+    {
+      "id": "t18-q246",
+      "pregunta": "En la tabla de indicadores, ¿qué incubación lleva el agar CN de P. aeruginosa?",
+      "opciones": [
+        "44 ± 1 °C, 21 ± 3 h.",
+        "36 ± 2 °C, 44 ± 4 h.",
+        "36 ± 1 °C, 10 días."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 44 °C con anaerobiosis son de C. perfringens y los 10 días, de Legionella.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| P. aeruginosa | ISO 16266 | Filtración, CN (cetrimida y nalidíxico) | 36 ± 2 °C, 44 ± 4 h |"
     }
   ],
   "supuestos": [
