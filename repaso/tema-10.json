@@ -417,9 +417,7 @@
       "anverso": "¿Qué apertura numérica debe tener el condensador respecto de la del objetivo?",
       "reverso": "Debe **igualarla, sin superarla**: la AN del sistema depende también del condensador.",
       "fuente": "Abramowitz (Olympus, 2003) · apunte §2.3",
-      "etiquetas": [
-        "microscopio"
-      ],
+      "etiquetas": ["microscopio"],
       "apartado": "2.3",
       "evidencia": "La AN del sistema depende también del condensador: su AN debe igualar, sin superar, la del objetivo."
     },
@@ -428,9 +426,7 @@
       "anverso": "Una vez ajustada la iluminación de Köhler, ¿cómo se regulan el contraste y la intensidad?",
       "reverso": "El **contraste**, con el **diafragma de apertura**; la **intensidad**, con el **reóstato**. **No** subiendo o bajando el condensador.",
       "fuente": "SCA (2017) · apunte §2.4",
-      "etiquetas": [
-        "microscopio"
-      ],
+      "etiquetas": ["microscopio"],
       "apartado": "2.4",
       "evidencia": "Una vez ajustado, el contraste se regula con el diafragma de apertura y la intensidad con el reóstato, no subiendo o bajando el condensador."
     },
@@ -439,9 +435,7 @@
       "anverso": "Microscopio confocal y estereoscópico (lupa): cómo funcionan y para qué sirven.",
       "reverso": "**Confocal**: un **láser** barre planos a distintas profundidades y el ordenador reconstruye la imagen en **3D**; sirve para muestras gruesas como las **biopelículas**.\n**Estereoscópico**: poco aumento y visión en relieve; para examinar **colonias** en placa.",
       "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
-      "etiquetas": [
-        "microscopio"
-      ],
+      "etiquetas": ["microscopio"],
       "apartado": "2.5",
       "evidencia": [
         "Un láser barre planos a distintas profundidades y el ordenador reconstruye la imagen en 3D | Muestras gruesas, como las biopelículas",
@@ -453,10 +447,7 @@
       "anverso": "¿Hasta cuántos aumentos llega el microscopio electrónico, y por qué no sirve para material vivo?",
       "reverso": "Imágenes nítidas de hasta **100 000×**, y algunos llegan a **2 000 000×**. **No sirve para material vivo** por la preparación que exige: **vacío y deshidratación**.",
       "fuente": "OpenStax Microbiology, 2.3 · apunte §2.5",
-      "etiquetas": [
-        "microscopio",
-        "trampa"
-      ],
+      "etiquetas": ["microscopio", "trampa"],
       "apartado": "2.5",
       "evidencia": [
         "El microscopio electrónico da imágenes nítidas de hasta 100 000×, y algunos llegan a 2 000 000×.",
@@ -468,10 +459,7 @@
       "anverso": "Microscopio de fluorescencia: ¿qué precauciones tienen sus lámparas UV?",
       "reverso": "Se **registran sus horas de uso**, y al cambiarlas se usan **guantes y gafas**, porque pueden **estallar**.",
       "fuente": "Eurachem (2023) · apunte §2.6",
-      "etiquetas": [
-        "microscopio",
-        "mantenimiento"
-      ],
+      "etiquetas": ["microscopio", "mantenimiento"],
       "apartado": "2.6",
       "evidencia": "Lámparas de UV del microscopio de fluorescencia: se registran sus horas de uso, y al cambiarlas se usan guantes y gafas, porque pueden estallar."
     },
@@ -480,9 +468,7 @@
       "anverso": "Construcción de la estufa: ventilador, interior, puerta y emplazamiento.",
       "reverso": "**Con ventilador** reparte la temperatura de forma **más uniforme** que por convección natural. Interior de **acero inoxidable**; **puerta interior de vidrio** o metacrilato para ver sin perder calor. **No** en corrientes de aire, **al sol** ni donde fluctúe la temperatura.",
       "fuente": "SCA (2017) · apunte §3.2",
-      "etiquetas": [
-        "estufa"
-      ],
+      "etiquetas": ["estufa"],
       "apartado": "3.2",
       "evidencia": [
         "Puede calentar sin ventilador, por convección natural, o con ventilador, que reparte la temperatura de forma más uniforme.",
@@ -494,10 +480,7 @@
       "anverso": "¿Cómo y cada cuánto se limpia una estufa de incubación?",
       "reverso": "Con agua templada y **desinfectante**, por ejemplo **hipoclorito diluido**, que **no deje residuo**; conviene **alternar dos desinfectantes**. Eurachem sugiere **una vez al mes**, y siempre **tras un derrame**.",
       "fuente": "SCA (2017) y Eurachem (2023) · apunte §3.2",
-      "etiquetas": [
-        "estufa",
-        "mantenimiento"
-      ],
+      "etiquetas": ["estufa", "mantenimiento"],
       "apartado": "3.2",
       "evidencia": "Limpieza: agua templada y desinfectante, por ejemplo hipoclorito diluido, que no debe dejar residuo. Conviene alternar dos desinfectantes."
     },
@@ -506,9 +489,7 @@
       "anverso": "¿Cómo se comprueba que la atmósfera de una jarra o estufa de anaerobiosis o microaerofilia es la correcta?",
       "reverso": "Con el **indicador**, **en cada uso**. También con dos **cultivos control**: uno **aerobio** y otro **anaerobio o microaerófilo**.",
       "fuente": "SCA (2017) · apunte §3.3",
-      "etiquetas": [
-        "incubacion"
-      ],
+      "etiquetas": ["incubacion"],
       "apartado": "3.3",
       "evidencia": "La atmósfera se comprueba con el indicador, en cada uso. También puede comprobarse con dos cultivos control: uno aerobio y otro anaerobio o microaerófilo."
     },
@@ -517,9 +498,7 @@
       "anverso": "Baño termostático: ¿cómo está hecho y para qué se usa?",
       "reverso": "Una cubeta de agua con **resistencia, termostato** y **agitador o bomba de circulación**, con **tapa inclinada** para reducir la evaporación. Sirve para **incubar ciertos cultivos** y para **mantener fundido el agar** hasta verterlo.",
       "fuente": "SCA (2017) · apunte §3.4",
-      "etiquetas": [
-        "bano"
-      ],
+      "etiquetas": ["bano"],
       "apartado": "3.4",
       "evidencia": [
         "Una cubeta de agua con resistencia, termostato y un agitador o bomba de circulación.",
@@ -531,9 +510,7 @@
       "anverso": "Temperaturas de control del frigorífico, el congelador y el ultracongelador.",
       "reverso": "**Frigorífico**: **5 ± 3 °C**. **Congelador**: **−20 ± 5 °C**. **Ultracongelador**: **−70 ± 10 °C** o menos.",
       "fuente": "Eurachem (2023) · apunte §3.5",
-      "etiquetas": [
-        "frio"
-      ],
+      "etiquetas": ["frio"],
       "apartado": "3.5",
       "evidencia": "frigorífico: 5 ± 3 °C; - congelador: −20 ± 5 °C; - ultracongelador: −70 ± 10 °C o menos."
     },
@@ -542,9 +519,7 @@
       "anverso": "Tipos de centrífuga y de rotor.",
       "reverso": "**Microcentrífuga**: tubos **Eppendorf** (análisis de *Cryptosporidium* y *Giardia*). **Ultracentrífuga**: muy alta velocidad, con **vacío** y un **HEPA entre la centrífuga y la bomba de vacío**.\nRotores **basculantes** (las cubetas se inclinan al girar) y **de ángulo fijo** (no llenar de más: **gotean**).",
       "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.1",
-      "etiquetas": [
-        "centrifuga"
-      ],
+      "etiquetas": ["centrifuga"],
       "apartado": "4.1",
       "evidencia": [
         "Velocidades muy altas, con vacío en la cámara. Lleva un filtro HEPA entre la centrífuga y la bomba de vacío",
@@ -556,10 +531,7 @@
       "anverso": "¿Cómo deben ser los tubos que se centrifugan?",
       "reverso": "**De plástico** o de vidrio **de pared gruesa**, revisados antes; **siempre tapados**, a ser posible **con rosca**; **llenos al mismo nivel** y sin pasar del que indique el fabricante.",
       "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
-      "etiquetas": [
-        "centrifuga",
-        "seguridad"
-      ],
+      "etiquetas": ["centrifuga", "seguridad"],
       "apartado": "4.3",
       "evidencia": [
         "De plástico o de vidrio de pared gruesa, revisados antes de usarlos.",
@@ -571,10 +543,7 @@
       "anverso": "Centrífuga: ¿qué se revisa a diario y qué se hace tras cada uso?",
       "reverso": "**A diario**: el interior de la cámara (manchas a la altura del rotor), y rotores y cubetas (**corrosión y grietas finas**).\n**Tras cada uso**: **descontaminar** cubetas, rotor y cámara; las cubetas se guardan **boca abajo**.",
       "fuente": "OMS, Laboratory Biosafety Manual · apunte §4.3",
-      "etiquetas": [
-        "centrifuga",
-        "mantenimiento"
-      ],
+      "etiquetas": ["centrifuga", "mantenimiento"],
       "apartado": "4.3",
       "evidencia": [
         "A diario: el interior de la cámara (manchas a la altura del rotor), y rotores y cubetas (corrosión y grietas finas).",
@@ -586,9 +555,7 @@
       "anverso": "¿Por qué deben tener las cabinas de seguridad biológica indicadores de flujo y alarmas?",
       "reverso": "Porque si **falla la corriente o el ventilador**, las **diferencias de presión** que dirigen el aire **se pierden enseguida**.",
       "fuente": "NTP 1202 (INSST, 2024) · apunte §5.1",
-      "etiquetas": [
-        "cabina"
-      ],
+      "etiquetas": ["cabina"],
       "apartado": "5.1",
       "evidencia": "Deben tener indicadores del flujo de aire y alarmas: si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida."
     },
@@ -597,9 +564,7 @@
       "anverso": "¿Qué son los aisladores?",
       "reverso": "Recintos cerrados con una contención **parecida a la de la clase III**, diseñados **a medida** para tareas concretas; **no se ajustan a ninguna norma internacional** de ensayo.",
       "fuente": "NTP 1203 · apunte §5.2",
-      "etiquetas": [
-        "cabina"
-      ],
+      "etiquetas": ["cabina"],
       "apartado": "5.2",
       "evidencia": "Aisladores (NTP 1203): recintos cerrados con una contención parecida a la de la clase III. Se diseñan a medida para tareas concretas y no se ajustan a ninguna norma internacional de ensayo."
     },
@@ -608,9 +573,7 @@
       "anverso": "Con cabina, ¿hacen falta EPI? ¿Qué cabina pide la guía del INSST en el nivel 2 para técnicas con aerosoles?",
       "reverso": "**Sí**: se siguen llevando los **EPI** que diga la evaluación. En el nivel 2, cabina de **clase I o, preferiblemente, II**.",
       "fuente": "NTP 1202 (INSST, 2024) y guía del INSST · apunte §5.3",
-      "etiquetas": [
-        "cabina"
-      ],
+      "etiquetas": ["cabina"],
       "apartado": "5.3",
       "evidencia": [
         "La guía del INSST pide, en el nivel 2, cabina de clase I o, preferiblemente, II para las técnicas que generan aerosoles.",
@@ -622,9 +585,7 @@
       "anverso": "¿Dónde y con qué espacio libre se instala una cabina?",
       "reverso": "**Lejos de corrientes** (puertas, ventanas, zonas de paso, rejillas del aire acondicionado, otras cabinas). Dejar **30 cm detrás y a los lados** y **45 cm por encima**.",
       "fuente": "NTP 1202 (INSST, 2024) · apunte §5.4",
-      "etiquetas": [
-        "cabina"
-      ],
+      "etiquetas": ["cabina"],
       "apartado": "5.4",
       "evidencia": "Dejar 30 cm detrás y a los lados y 45 cm por encima, para el mantenimiento."
     },
@@ -633,10 +594,7 @@
       "anverso": "¿Qué controles añade la guía Eurachem a la certificación de la cabina?",
       "reverso": "**Control microbiológico semanal**, **comprobación del flujo de aire en cada uso** y **revisión completa anual**.",
       "fuente": "Eurachem (2023) · apunte §5.4",
-      "etiquetas": [
-        "cabina",
-        "mantenimiento"
-      ],
+      "etiquetas": ["cabina", "mantenimiento"],
       "apartado": "5.4",
       "evidencia": "control microbiológico semanal; - comprobación del flujo de aire en cada uso; - revisión completa anual."
     },
@@ -645,9 +603,7 @@
       "anverso": "¿Cómo se controla una cabina de flujo laminar, según la guía Eurachem?",
       "reverso": "Rendimiento al principio y tras cambios, y **placas de esterilidad semanales**; **revisión anual**.",
       "fuente": "Eurachem (2023), anexos F y G · apunte §6",
-      "etiquetas": [
-        "mantenimiento"
-      ],
+      "etiquetas": ["mantenimiento"],
       "apartado": "6",
       "evidencia": "Cabinas de flujo laminar | Rendimiento al principio y tras cambios; placas de esterilidad semanales | Revisión anual"
     }
@@ -656,7 +612,11 @@
     {
       "id": "t10-q01",
       "pregunta": "Un microscopio con oculares de 10× y un objetivo de 40× da un aumento total de:",
-      "opciones": ["40×", "400×", "4000×"],
+      "opciones": [
+        "40×",
+        "400×",
+        "4000×"
+      ],
       "correcta": 1,
       "explicacion": "Aumento total = ocular × objetivo = 10 × 40 = 400×.",
       "fuente": "OpenStax Microbiology, 2.3",
@@ -665,7 +625,11 @@
     {
       "id": "t10-q02",
       "pregunta": "La resolución de un microscopio óptico mejora:",
-      "opciones": ["Al aumentar la apertura numérica del objetivo y al usar luz de menor longitud de onda.", "Al aumentar el aumento del ocular.", "Al alargar el tubo de observación."],
+      "opciones": [
+        "Al aumentar la apertura numérica del objetivo y al usar luz de menor longitud de onda.",
+        "Al aumentar el aumento del ocular.",
+        "Al alargar el tubo de observación."
+      ],
       "correcta": 0,
       "explicacion": "d = 0,61 · λ / AN: menor d (mejor resolución) con más AN y menos λ. El aumento del ocular no añade detalle.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003)",
@@ -674,7 +638,11 @@
     {
       "id": "t10-q03",
       "pregunta": "El aceite de inmersión se emplea porque:",
-      "opciones": ["Protege la lente frontal del objetivo de los arañazos.", "Aumenta el contraste de las preparaciones sin teñir.", "Tiene un índice de refracción igual al del vidrio (1,515) y aumenta la apertura numérica."],
+      "opciones": [
+        "Protege la lente frontal del objetivo de los arañazos.",
+        "Aumenta el contraste de las preparaciones sin teñir.",
+        "Tiene un índice de refracción igual al del vidrio (1,515) y aumenta la apertura numérica."
+      ],
       "correcta": 2,
       "explicacion": "Con aceite, la luz pasa del portaobjetos al objetivo sin desviarse: sube la AN y la resolución.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003)",
@@ -683,7 +651,11 @@
     {
       "id": "t10-q04",
       "pregunta": "La apertura numérica máxima de un objetivo en seco es, en la práctica, de unos:",
-      "opciones": ["0,95.", "1,25.", "1,4."],
+      "opciones": [
+        "0,95.",
+        "1,25.",
+        "1,4."
+      ],
       "correcta": 0,
       "explicacion": "En seco no pasa de 0,95; con agua, 1,2; con aceite, 1,4.",
       "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003)",
@@ -692,7 +664,11 @@
     {
       "id": "t10-q05",
       "pregunta": "Un aumento superior a 1000 veces la apertura numérica del objetivo:",
-      "opciones": ["Mejora la resolución de forma proporcional.", "Es aumento vacío: la imagen crece pero no muestra más detalle.", "Solo es posible con aceite de inmersión."],
+      "opciones": [
+        "Mejora la resolución de forma proporcional.",
+        "Es aumento vacío: la imagen crece pero no muestra más detalle.",
+        "Solo es posible con aceite de inmersión."
+      ],
       "correcta": 1,
       "explicacion": "El aumento útil va de 500 a 1000 × AN; por encima, el aumento es vacío.",
       "fuente": "Nikon MicroscopyU",
@@ -701,7 +677,11 @@
     {
       "id": "t10-q06",
       "pregunta": "Con los objetivos de 40× y 100×, el enfoque se hace:",
-      "opciones": ["Con el tornillo macrométrico, que es más rápido.", "Subiendo el condensador.", "Solo con el tornillo micrométrico."],
+      "opciones": [
+        "Con el tornillo macrométrico, que es más rápido.",
+        "Subiendo el condensador.",
+        "Solo con el tornillo micrométrico."
+      ],
       "correcta": 2,
       "explicacion": "El macrométrico, solo con 4× y 10×: con los de más aumento podría chocar el objetivo contra la preparación.",
       "fuente": "OpenStax Microbiology, 2.3",
@@ -710,7 +690,11 @@
     {
       "id": "t10-q07",
       "pregunta": "En un microscopio óptico, el diafragma de apertura del condensador regula principalmente:",
-      "opciones": ["El contraste de la imagen.", "El aumento total.", "El grosor de la preparación."],
+      "opciones": [
+        "El contraste de la imagen.",
+        "El aumento total.",
+        "El grosor de la preparación."
+      ],
       "correcta": 0,
       "explicacion": "El contraste se regula con el diafragma de apertura; la intensidad, con el reóstato de la lámpara.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
@@ -718,7 +702,11 @@
     {
       "id": "t10-q08",
       "pregunta": "En el microscopio de campo oscuro:",
-      "opciones": ["Los objetos aparecen oscuros sobre fondo brillante.", "Un disco opaco en el condensador deja un cono hueco de luz y los objetos aparecen brillantes sobre fondo oscuro.", "Se usa luz ultravioleta y fluorocromos."],
+      "opciones": [
+        "Los objetos aparecen oscuros sobre fondo brillante.",
+        "Un disco opaco en el condensador deja un cono hueco de luz y los objetos aparecen brillantes sobre fondo oscuro.",
+        "Se usa luz ultravioleta y fluorocromos."
+      ],
       "correcta": 1,
       "explicacion": "Solo llega al objetivo la luz desviada por la muestra. Útil para espiroquetas vivas sin teñir.",
       "fuente": "OpenStax Microbiology, 2.3",
@@ -727,7 +715,11 @@
     {
       "id": "t10-q09",
       "pregunta": "El microscopio de contraste de fases se utiliza sobre todo para observar:",
-      "opciones": ["Cortes ultrafinos metalizados.", "Preparaciones teñidas con Gram.", "Células vivas sin teñir."],
+      "opciones": [
+        "Cortes ultrafinos metalizados.",
+        "Preparaciones teñidas con Gram.",
+        "Células vivas sin teñir."
+      ],
       "correcta": 2,
       "explicacion": "Convierte diferencias de índice de refracción en contraste sin necesidad de tinción.",
       "fuente": "OpenStax Microbiology, 2.3"
@@ -735,7 +727,11 @@
     {
       "id": "t10-q10",
       "pregunta": "El microscopio electrónico de barrido (MEB) permite observar:",
-      "opciones": ["La superficie de las muestras, con aspecto tridimensional.", "El interior de células vivas en movimiento.", "Cortes de 20-100 nm por transparencia."],
+      "opciones": [
+        "La superficie de las muestras, con aspecto tridimensional.",
+        "El interior de células vivas en movimiento.",
+        "Cortes de 20-100 nm por transparencia."
+      ],
       "correcta": 0,
       "explicacion": "El MEB recoge los electrones de la superficie; el de transmisión atraviesa cortes ultrafinos. Ninguno sirve para material vivo.",
       "fuente": "OpenStax Microbiology, 2.3",
@@ -744,7 +740,11 @@
     {
       "id": "t10-q11",
       "pregunta": "En el microscopio de fluorescencia, el filtro barrera sirve para:",
-      "opciones": ["Seleccionar la longitud de onda de excitación.", "Eliminar la luz de excitación y dejar pasar solo la emitida por los fluorocromos.", "Polarizar la luz en dos haces."],
+      "opciones": [
+        "Seleccionar la longitud de onda de excitación.",
+        "Eliminar la luz de excitación y dejar pasar solo la emitida por los fluorocromos.",
+        "Polarizar la luz en dos haces."
+      ],
       "correcta": 1,
       "explicacion": "La luz de excitación (UV o azul) se filtra, entre otras cosas porque la UV daña los ojos.",
       "fuente": "OpenStax Microbiology, 2.3"
@@ -752,7 +752,11 @@
     {
       "id": "t10-q12",
       "pregunta": "Según la guía británica de laboratorios de aguas, en una estufa entre 20 y 40 °C la fluctuación máxima admitida es de:",
-      "opciones": ["± 0,1 °C.", "± 1 °C.", "± 2 °C."],
+      "opciones": [
+        "± 0,1 °C.",
+        "± 1 °C.",
+        "± 2 °C."
+      ],
       "correcta": 1,
       "explicacion": "± 1 °C entre 20 y 40 °C; ± 0,5 °C a 40 °C o más.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
@@ -761,7 +765,11 @@
     {
       "id": "t10-q13",
       "pregunta": "Para una estufa a 44 °C, la fluctuación máxima admitida es de:",
-      "opciones": ["± 0,5 °C.", "± 1 °C.", "± 2 °C."],
+      "opciones": [
+        "± 0,5 °C.",
+        "± 1 °C.",
+        "± 2 °C."
+      ],
       "correcta": 0,
       "explicacion": "A 40 °C o más, ± 0,5 °C, con termómetros de ± 0,1 °C.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
@@ -770,7 +778,11 @@
     {
       "id": "t10-q14",
       "pregunta": "En verano, con el laboratorio a 26 °C, una estufa de incubación a 22 °C:",
-      "opciones": ["Funciona igual que cualquier otra estufa.", "Solo puede usarse con la puerta entreabierta.", "Necesita refrigeración además de calefacción."],
+      "opciones": [
+        "Funciona igual que cualquier otra estufa.",
+        "Solo puede usarse con la puerta entreabierta.",
+        "Necesita refrigeración además de calefacción."
+      ],
       "correcta": 2,
       "explicacion": "Si la temperatura ambiente es cercana a la de consigna o mayor, hace falta refrigeración.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
@@ -779,7 +791,11 @@
     {
       "id": "t10-q15",
       "pregunta": "El termómetro de control de una estufa se introduce en un frasco con glicerol para:",
-      "opciones": ["Esterilizarlo.", "Estabilizar la lectura, que no cambie al abrir la puerta.", "Poder usar termómetros de mercurio sin riesgo."],
+      "opciones": [
+        "Esterilizarlo.",
+        "Estabilizar la lectura, que no cambie al abrir la puerta.",
+        "Poder usar termómetros de mercurio sin riesgo."
+      ],
       "correcta": 1,
       "explicacion": "El líquido inerte amortigua los cambios. Los termómetros de mercurio y tolueno están prohibidos (Eurachem).",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017); Eurachem, Accreditation for Microbiological Laboratories (2023)"
@@ -787,7 +803,11 @@
     {
       "id": "t10-q16",
       "pregunta": "Al cargar una estufa de incubación, las placas de Petri:",
-      "opciones": ["No deben apilarse más de seis.", "Deben apilarse en columnas de hasta veinte para ahorrar espacio.", "Se colocan siempre pegadas a las paredes."],
+      "opciones": [
+        "No deben apilarse más de seis.",
+        "Deben apilarse en columnas de hasta veinte para ahorrar espacio.",
+        "Se colocan siempre pegadas a las paredes."
+      ],
       "correcta": 0,
       "explicacion": "Apilar más de seis placas puede alterar la distribución de la temperatura. La estufa no se sobrecarga.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
@@ -796,7 +816,11 @@
     {
       "id": "t10-q17",
       "pregunta": "La temperatura de una estufa de incubación debe leerse, como mínimo:",
-      "opciones": ["Una vez por semana.", "Solo cuando se introducen muestras.", "Al empezar la jornada y al acabarla, o al meter muestras."],
+      "opciones": [
+        "Una vez por semana.",
+        "Solo cuando se introducen muestras.",
+        "Al empezar la jornada y al acabarla, o al meter muestras."
+      ],
       "correcta": 2,
       "explicacion": "Dos lecturas al día como mínimo; mejor, registro continuo con alarma.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
@@ -804,7 +828,11 @@
     {
       "id": "t10-q18",
       "pregunta": "Al preparar una jarra de anaerobiosis con sobre generador:",
-      "opciones": ["Se abre el sobre, se espera una hora y después se meten las placas.", "Se meten las placas y el indicador y después se abre el sobre y se cierra la jarra.", "No hace falta indicador si el sobre es nuevo."],
+      "opciones": [
+        "Se abre el sobre, se espera una hora y después se meten las placas.",
+        "Se meten las placas y el indicador y después se abre el sobre y se cierra la jarra.",
+        "No hace falta indicador si el sobre es nuevo."
+      ],
       "correcta": 1,
       "explicacion": "Primero el material y el indicador; la reacción empieza al abrir el sobre. El indicador se comprueba en cada uso.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017); Eurachem, Accreditation for Microbiological Laboratories (2023)",
@@ -813,7 +841,11 @@
     {
       "id": "t10-q19",
       "pregunta": "En un baño termostático usado para incubar:",
-      "opciones": ["El contenido de tubos y frascos debe quedar por debajo del nivel del agua.", "Se usa agua del grifo sin agitar.", "El agua debe cubrir por completo los tubos, tapones incluidos."],
+      "opciones": [
+        "El contenido de tubos y frascos debe quedar por debajo del nivel del agua.",
+        "Se usa agua del grifo sin agitar.",
+        "El agua debe cubrir por completo los tubos, tapones incluidos."
+      ],
       "correcta": 0,
       "explicacion": "Agua destilada o desionizada, siempre agitada, y el contenido por debajo del nivel del agua para no contaminarlo.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)",
@@ -822,7 +854,11 @@
     {
       "id": "t10-q20",
       "pregunta": "La atmósfera de microaerofilia contiene aproximadamente:",
-      "opciones": ["21 % de O₂ y 0,04 % de CO₂.", "Nada de oxígeno y un 5 % de hidrógeno.", "5-7 % de O₂ y un 10 % de CO₂."],
+      "opciones": [
+        "21 % de O₂ y 0,04 % de CO₂.",
+        "Nada de oxígeno y un 5 % de hidrógeno.",
+        "5-7 % de O₂ y un 10 % de CO₂."
+      ],
       "correcta": 2,
       "explicacion": "Se usa, por ejemplo, para Campylobacter.",
       "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
@@ -830,7 +866,11 @@
     {
       "id": "t10-q21",
       "pregunta": "Si se duplica la velocidad de giro (rpm) de una centrífuga, la fuerza centrífuga relativa:",
-      "opciones": ["Se duplica.", "Se cuadruplica.", "No cambia, porque depende del radio."],
+      "opciones": [
+        "Se duplica.",
+        "Se cuadruplica.",
+        "No cambia, porque depende del radio."
+      ],
       "correcta": 1,
       "explicacion": "FCR = 1,118 × 10⁻⁵ · r · N²: depende del cuadrado de las rpm.",
       "fuente": "Deducción de la FCR",
@@ -839,7 +879,11 @@
     {
       "id": "t10-q22",
       "pregunta": "Una centrífuga con un radio de 10 cm girando a 3000 rpm produce una fuerza centrífuga relativa de, aproximadamente:",
-      "opciones": ["300 × g.", "3000 × g.", "1000 × g."],
+      "opciones": [
+        "300 × g.",
+        "3000 × g.",
+        "1000 × g."
+      ],
       "correcta": 2,
       "explicacion": "1,118 × 10⁻⁵ × 10 × 3000² ≈ 1006 × g.",
       "fuente": "Deducción de la FCR",
@@ -848,7 +892,11 @@
     {
       "id": "t10-q23",
       "pregunta": "Para equilibrar las cubetas vacías de una centrífuga se usa:",
-      "opciones": ["Agua destilada o propanol al 70 %.", "Solución salina o hipoclorito.", "Cualquier líquido, porque solo importa el peso."],
+      "opciones": [
+        "Agua destilada o propanol al 70 %.",
+        "Solución salina o hipoclorito.",
+        "Cualquier líquido, porque solo importa el peso."
+      ],
       "correcta": 0,
       "explicacion": "La solución salina y el hipoclorito corroen el metal (OMS).",
       "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)",
@@ -857,7 +905,11 @@
     {
       "id": "t10-q24",
       "pregunta": "Si se sospecha la rotura de un tubo mientras la centrífuga está en marcha, se debe:",
-      "opciones": ["Abrir la tapa inmediatamente para ver el daño.", "Apagar el motor y dejarla cerrada 30 minutos antes de abrirla.", "Dejar que termine el ciclo y abrirla dentro de la cabina."],
+      "opciones": [
+        "Abrir la tapa inmediatamente para ver el daño.",
+        "Apagar el motor y dejarla cerrada 30 minutos antes de abrirla.",
+        "Dejar que termine el ciclo y abrirla dentro de la cabina."
+      ],
       "correcta": 1,
       "explicacion": "Los 30 minutos dejan que se depositen los aerosoles. Hay que avisar al responsable de bioseguridad.",
       "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)",
@@ -866,7 +918,11 @@
     {
       "id": "t10-q25",
       "pregunta": "Las cubetas de seguridad de una centrífuga con material infeccioso:",
-      "opciones": ["Se abren sobre la mesa, con guantes.", "Solo se usan con agentes del grupo 4.", "Se cargan, cierran y abren dentro de una cabina de seguridad biológica."],
+      "opciones": [
+        "Se abren sobre la mesa, con guantes.",
+        "Solo se usan con agentes del grupo 4.",
+        "Se cargan, cierran y abren dentro de una cabina de seguridad biológica."
+      ],
       "correcta": 2,
       "explicacion": "La OMS (2003) las hace obligatorias para los grupos 3 y 4, y deben manipularse en cabina.",
       "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)",
@@ -875,7 +931,11 @@
     {
       "id": "t10-q26",
       "pregunta": "Una cabina de flujo laminar:",
-      "opciones": ["Protege únicamente el producto que se manipula.", "Protege al trabajador frente a agentes infecciosos.", "Es una cabina de seguridad biológica de clase II."],
+      "opciones": [
+        "Protege únicamente el producto que se manipula.",
+        "Protege al trabajador frente a agentes infecciosos.",
+        "Es una cabina de seguridad biológica de clase II."
+      ],
       "correcta": 0,
       "explicacion": "No es de seguridad biológica: en la horizontal, el aire sale hacia el operador. No sirve para agentes infecciosos.",
       "fuente": "NTP 1202 (INSST, 2024)",
@@ -884,7 +944,11 @@
     {
       "id": "t10-q27",
       "pregunta": "La cabina de seguridad biológica de clase I protege:",
-      "opciones": ["Al trabajador, al ambiente y al producto.", "Solo al producto.", "Al trabajador y al ambiente, pero no al producto."],
+      "opciones": [
+        "Al trabajador, al ambiente y al producto.",
+        "Solo al producto.",
+        "Al trabajador y al ambiente, pero no al producto."
+      ],
       "correcta": 2,
       "explicacion": "El aire del local entra por la abertura frontal y pasa sin filtrar sobre la muestra.",
       "fuente": "NTP 1202 (INSST, 2024)",
@@ -893,7 +957,11 @@
     {
       "id": "t10-q28",
       "pregunta": "¿Qué caracteriza a la cabina de seguridad biológica de clase II?",
-      "opciones": ["Está totalmente cerrada y se trabaja con guantes.", "Un flujo laminar descendente de aire filtrado sobre la zona de trabajo, que protege también el producto.", "No lleva filtros HEPA."],
+      "opciones": [
+        "Está totalmente cerrada y se trabaja con guantes.",
+        "Un flujo laminar descendente de aire filtrado sobre la zona de trabajo, que protege también el producto.",
+        "No lleva filtros HEPA."
+      ],
       "correcta": 1,
       "explicacion": "Entrada frontal ≥ 0,38 m/s y descendente 0,25-0,4 m/s.",
       "fuente": "NTP 1202 (INSST, 2024)",
@@ -902,7 +970,11 @@
     {
       "id": "t10-q29",
       "pregunta": "La cabina de seguridad biológica de clase III:",
-      "opciones": ["Es la indicada para agentes del grupo 4: estanca, con guantes y dos filtros HEPA en serie a la salida.", "Tiene abertura frontal con una velocidad de entrada de 0,38 m/s.", "Recircula el 70 % del aire."],
+      "opciones": [
+        "Es la indicada para agentes del grupo 4: estanca, con guantes y dos filtros HEPA en serie a la salida.",
+        "Tiene abertura frontal con una velocidad de entrada de 0,38 m/s.",
+        "Recircula el 70 % del aire."
+      ],
       "correcta": 0,
       "explicacion": "Presión negativa de al menos 200 Pa. Protege al producto de la contaminación externa, no de la cruzada.",
       "fuente": "NTP 1202 (INSST, 2024)",
@@ -911,7 +983,11 @@
     {
       "id": "t10-q30",
       "pregunta": "Los filtros HEPA de las cabinas de seguridad biológica (clase H14) retienen:",
-      "opciones": ["El 100 % de las partículas, gases y vapores.", "El 99,995 % de las partículas del tamaño más difícil de retener, unos 0,3 µm.", "Solo las partículas mayores de 5 µm."],
+      "opciones": [
+        "El 100 % de las partículas, gases y vapores.",
+        "El 99,995 % de las partículas del tamaño más difícil de retener, unos 0,3 µm.",
+        "Solo las partículas mayores de 5 µm."
+      ],
       "correcta": 1,
       "explicacion": "No retienen gases ni vapores: con químicos volátiles hacen falta otros filtros y expulsión al exterior.",
       "fuente": "NTP 1202 (INSST, 2024)"
@@ -919,7 +995,11 @@
     {
       "id": "t10-q31",
       "pregunta": "Dentro de una cabina de seguridad biológica, para esterilizar el asa de siembra:",
-      "opciones": ["Se usa un mechero Bunsen en el centro de la superficie.", "Se enciende la lámpara UV mientras se trabaja.", "Se usan asas desechables o un microincinerador colocado al fondo."],
+      "opciones": [
+        "Se usa un mechero Bunsen en el centro de la superficie.",
+        "Se enciende la lámpara UV mientras se trabaja.",
+        "Se usan asas desechables o un microincinerador colocado al fondo."
+      ],
       "correcta": 2,
       "explicacion": "Las llamas alteran el flujo de aire y pueden dañar el filtro.",
       "fuente": "NTP 1202 (INSST, 2024); Guía técnica INSST (2024)",
@@ -928,7 +1008,11 @@
     {
       "id": "t10-q32",
       "pregunta": "Al trabajar en una cabina de seguridad biológica, los materiales deben colocarse:",
-      "opciones": ["Al menos a 10 cm detrás de la rejilla frontal.", "Sobre la rejilla frontal, para tenerlos a mano.", "Pegados a la rejilla trasera, tapándola."],
+      "opciones": [
+        "Al menos a 10 cm detrás de la rejilla frontal.",
+        "Sobre la rejilla frontal, para tenerlos a mano.",
+        "Pegados a la rejilla trasera, tapándola."
+      ],
       "correcta": 0,
       "explicacion": "Y trabajando a 5-10 cm de la superficie, sin tapar las rejillas.",
       "fuente": "NTP 1202 (INSST, 2024)"
@@ -936,7 +1020,11 @@
     {
       "id": "t10-q33",
       "pregunta": "Según la NTP 1202, una cabina de seguridad biológica debe certificarse:",
-      "opciones": ["Solo al instalarla.", "Cada cinco años.", "Al instalarla y, después, al menos una vez al año."],
+      "opciones": [
+        "Solo al instalarla.",
+        "Cada cinco años.",
+        "Al instalarla y, después, al menos una vez al año."
+      ],
       "correcta": 2,
       "explicacion": "También tras un traslado o una operación de mantenimiento.",
       "fuente": "NTP 1202 (INSST, 2024)",
@@ -1749,6 +1837,2946 @@
       "fuente": "SCA, Practices and Procedures for Laboratories, tipos de microscopía · apunte §2.5",
       "apartado": "2.5",
       "evidencia": "| **Campo claro** | La luz atraviesa la muestra: **imagen oscura sobre fondo claro** | El más usado. Preparaciones **teñidas** (tinción de Gram, tema 14) |"
+    },
+    {
+      "id": "t10-q91",
+      "pregunta": "¿Cuántos equipos cubre el tema 10?",
+      "opciones": [
+        "Cuatro: microscopios, estufas y baños, centrífugas y cabinas de seguridad.",
+        "Dos: microscopios y estufas.",
+        "Seis, incluidos el autoclave y el horno."
+      ],
+      "correcta": 0,
+      "explicacion": "Hornos y autoclaves son del tema 11.",
+      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Este tema cubre cuatro equipos: qué son, cómo funcionan, cómo se usan con seguridad y cómo se comprueban"
+    },
+    {
+      "id": "t10-q92",
+      "pregunta": "¿A qué tema se remiten las tinciones y el examen microscópico?",
+      "opciones": [
+        "Al tema 11.",
+        "Al tema 14.",
+        "Al tema 17."
+      ],
+      "correcta": 1,
+      "explicacion": "El tema 10 solo trata el microscopio como equipo.",
+      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
+      "apartado": "1",
+      "evidencia": "El examen microscópico: observación en fresco y tinciones | 14"
+    },
+    {
+      "id": "t10-q93",
+      "pregunta": "¿A qué tema pertenecen los hornos y los autoclaves?",
+      "opciones": [
+        "Al tema 10.",
+        "Al tema 9.",
+        "Al tema 11."
+      ],
+      "correcta": 2,
+      "explicacion": "También la esterilización y la desinfección.",
+      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Hornos, autoclaves, esterilización y desinfección | 11"
+    },
+    {
+      "id": "t10-q94",
+      "pregunta": "¿Dónde se desarrolla el control de equipos como parte del control de calidad?",
+      "opciones": [
+        "En el tema 17.",
+        "En el tema 10.",
+        "En el tema 9."
+      ],
+      "correcta": 0,
+      "explicacion": "En el tema 10 solo se ve lo básico.",
+      "fuente": "Reparto entre los temas 9, 11, 14 y 17 · apunte §1",
+      "apartado": "1",
+      "evidencia": "El control de equipos como parte del control de calidad | 17 (aquí solo lo básico)"
+    },
+    {
+      "id": "t10-q95",
+      "pregunta": "¿En cuántas etapas amplía la imagen un microscopio óptico compuesto?",
+      "opciones": [
+        "En una sola etapa.",
+        "En dos: objetivo y ocular.",
+        "En tres: objetivo, condensador y ocular."
+      ],
+      "correcta": 1,
+      "explicacion": "El objetivo forma la imagen intermedia.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El microscopio compuesto amplía en dos etapas"
+    },
+    {
+      "id": "t10-q96",
+      "pregunta": "¿Qué forma el objetivo del microscopio compuesto?",
+      "opciones": [
+        "Una imagen virtual final.",
+        "Un haz de luz paralelo.",
+        "Una imagen real aumentada, la imagen intermedia."
+      ],
+      "correcta": 2,
+      "explicacion": "El ocular la vuelve a aumentar.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "El objetivo forma una imagen real aumentada, la imagen intermedia, y el ocular la vuelve a aumentar"
+    },
+    {
+      "id": "t10-q97",
+      "pregunta": "¿Qué regula el reóstato de la lámpara del microscopio?",
+      "opciones": [
+        "La intensidad de la luz.",
+        "El contraste de la imagen.",
+        "El enfoque fino."
+      ],
+      "correcta": 0,
+      "explicacion": "Va en la base junto al diafragma de campo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "En la base van la lámpara, su reóstato, que regula la intensidad, y el diafragma de campo"
+    },
+    {
+      "id": "t10-q98",
+      "pregunta": "¿Para qué sirven las pinzas y los mandos X-Y de la platina?",
+      "opciones": [
+        "Para subir y bajar la platina.",
+        "Para mover la preparación sin subirla ni bajarla.",
+        "Para centrar el condensador."
+      ],
+      "correcta": 1,
+      "explicacion": "La platina es el soporte de la preparación.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Soporte de la preparación, con pinzas y mandos X-Y para moverla sin subirla ni bajarla"
+    },
+    {
+      "id": "t10-q99",
+      "pregunta": "¿Qué diferencia hay entre los tornillos macrométrico y micrométrico?",
+      "opciones": [
+        "El macrométrico centra el condensador y el micrométrico, el diafragma.",
+        "El macrométrico gira el revólver y el micrométrico, el ocular.",
+        "El macrométrico sube o baja la platina en pasos grandes; el micrométrico, en pasos finos."
+      ],
+      "correcta": 2,
+      "explicacion": "Ambos suben o bajan la platina.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Suben o bajan la platina: el macrométrico en pasos grandes, el micrométrico en pasos finos"
+    },
+    {
+      "id": "t10-q100",
+      "pregunta": "¿Dónde está y qué hace el condensador?",
+      "opciones": [
+        "Bajo la platina, concentrando la luz sobre la muestra.",
+        "Sobre el ocular, ampliando la imagen.",
+        "En el revólver, sujetando los objetivos."
+      ],
+      "correcta": 0,
+      "explicacion": "Lleva el diafragma de apertura.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Bajo la platina. Concentra la luz sobre la muestra"
+    },
+    {
+      "id": "t10-q101",
+      "pregunta": "¿Qué lleva el condensador del microscopio?",
+      "opciones": [
+        "Un retículo para medir.",
+        "Un diafragma de apertura (iris) y dos tornillos para centrarlo.",
+        "El reóstato de la lámpara."
+      ],
+      "correcta": 1,
+      "explicacion": "Está bajo la platina.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Lleva el diafragma de apertura (iris) y dos tornillos para centrarlo"
+    },
+    {
+      "id": "t10-q102",
+      "pregunta": "¿Qué función tiene el revólver?",
+      "opciones": [
+        "Subir o bajar la platina.",
+        "Regular la intensidad de la lámpara.",
+        "Sostener los objetivos y llevarlos al eje óptico al girar."
+      ],
+      "correcta": 2,
+      "explicacion": "No amplía por sí mismo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Sostiene los objetivos y los lleva al eje óptico al girar"
+    },
+    {
+      "id": "t10-q103",
+      "pregunta": "¿Qué rango de aumentos tienen habitualmente los objetivos?",
+      "opciones": [
+        "De 4× a 100×.",
+        "De 1× a 10×.",
+        "De 10× a 1000×."
+      ],
+      "correcta": 0,
+      "explicacion": "Son la primera ampliación.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "La primera ampliación, habitualmente de 4× a 100×"
+    },
+    {
+      "id": "t10-q104",
+      "pregunta": "¿Qué tubo de observación tiene salida para cámara?",
+      "opciones": [
+        "El monocular.",
+        "El trinocular.",
+        "El binocular."
+      ],
+      "correcta": 1,
+      "explicacion": "Los tres existen.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Monocular, binocular o trinocular (este, con salida para cámara)"
+    },
+    {
+      "id": "t10-q105",
+      "pregunta": "¿Para qué puede llevar un retículo uno de los oculares?",
+      "opciones": [
+        "Para enfocar con aceite.",
+        "Para centrar el condensador.",
+        "Para contar o medir."
+      ],
+      "correcta": 2,
+      "explicacion": "Se calibra con un micrómetro objetivo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Uno puede llevar un retículo para contar o medir"
+    },
+    {
+      "id": "t10-q106",
+      "pregunta": "¿Qué indica la apertura numérica grabada en el objetivo?",
+      "opciones": [
+        "La AN del objetivo; va grabada junto con el aumento.",
+        "El grosor del cubreobjetos.",
+        "Si el objetivo es de inmersión."
+      ],
+      "correcta": 0,
+      "explicacion": "Se graba también el aumento.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- la apertura numérica (AN); - el grosor de cubreobjetos para el que está corregido"
+    },
+    {
+      "id": "t10-q107",
+      "pregunta": "¿Qué grosor de cubreobjetos corrige normalmente un objetivo?",
+      "opciones": [
+        "1,0 mm.",
+        "0,17 mm.",
+        "0,017 mm."
+      ],
+      "correcta": 1,
+      "explicacion": "Va grabado en el objetivo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "el grosor de cubreobjetos para el que está corregido, normalmente 0,17 mm"
+    },
+    {
+      "id": "t10-q108",
+      "pregunta": "¿Cuál es la mejor corrección de color y esfericidad de un objetivo?",
+      "opciones": [
+        "Acromático.",
+        "Fluorita.",
+        "Apocromático."
+      ],
+      "correcta": 2,
+      "explicacion": "El acromático es el más sencillo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "acromático (el más sencillo; si no pone nada, lo es), fluorita o apocromático (la mejor)"
+    },
+    {
+      "id": "t10-q109",
+      "pregunta": "¿Qué indica la palabra «plan» en un objetivo?",
+      "opciones": [
+        "Que da el campo plano.",
+        "Que es de inmersión.",
+        "Que es apocromático."
+      ],
+      "correcta": 0,
+      "explicacion": "Va junto a la corrección.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "- la corrección: acromático (el más sencillo; si no pone nada, lo es), fluorita o apocromático (la mejor), y plan si da el campo plano"
+    },
+    {
+      "id": "t10-q110",
+      "pregunta": "¿Qué inscripción identifica un objetivo de inmersión en aceite?",
+      "opciones": [
+        "DRY o SEC.",
+        "OIL, HI u OEL.",
+        "WAT u OPT."
+      ],
+      "correcta": 1,
+      "explicacion": "Si no lo pone, es un objetivo en seco.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "OIL, HI u OEL si es de inmersión en aceite. Si no lo pone, es un objetivo en seco"
+    },
+    {
+      "id": "t10-q111",
+      "pregunta": "¿Qué color tiene el anillo de un objetivo de 10×?",
+      "opciones": [
+        "Rojo.",
+        "Azul claro.",
+        "Amarillo."
+      ],
+      "correcta": 2,
+      "explicacion": "El de 4-5× es rojo.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "rojo 4-5×, amarillo 10×, verde 16-20×, azul claro 40-50×, azul oscuro 60-63×, blanco 100×"
+    },
+    {
+      "id": "t10-q112",
+      "pregunta": "¿Qué color de anillo tiene un objetivo de 100×?",
+      "opciones": [
+        "Blanco.",
+        "Azul oscuro.",
+        "Verde."
+      ],
+      "correcta": 0,
+      "explicacion": "Un segundo anillo negro indica inmersión en aceite.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "rojo 4-5×, amarillo 10×, verde 16-20×, azul claro 40-50×, azul oscuro 60-63×, blanco 100×"
+    },
+    {
+      "id": "t10-q113",
+      "pregunta": "¿Qué indica un segundo anillo negro en el objetivo?",
+      "opciones": [
+        "Corrección apocromática.",
+        "Inmersión en aceite.",
+        "Aumento de 100×."
+      ],
+      "correcta": 1,
+      "explicacion": "Es un código de colores.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Un segundo anillo, negro, indica inmersión en aceite"
+    },
+    {
+      "id": "t10-q114",
+      "pregunta": "Un objetivo con anillo azul claro es de:",
+      "opciones": [
+        "4-5×.",
+        "60-63×.",
+        "40-50×."
+      ],
+      "correcta": 2,
+      "explicacion": "El azul oscuro es 60-63×.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "rojo 4-5×, amarillo 10×, verde 16-20×, azul claro 40-50×, azul oscuro 60-63×, blanco 100×"
+    },
+    {
+      "id": "t10-q115",
+      "pregunta": "¿Qué significa que los objetivos de una serie sean parafocales?",
+      "opciones": [
+        "Que enfocan casi en el mismo plano, y al girar el revólver solo se retoca con el micrométrico.",
+        "Que todos tienen el mismo aumento.",
+        "Que todos son de inmersión."
+      ],
+      "correcta": 0,
+      "explicacion": "No hace falta usar el macrométrico.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "los de una misma serie enfocan casi en el mismo plano, así que al girar el revólver solo hace falta retocar con el micrométrico"
+    },
+    {
+      "id": "t10-q116",
+      "pregunta": "¿Cómo se calcula el aumento total de un microscopio óptico?",
+      "opciones": [
+        "Aumento del ocular + aumento del objetivo.",
+        "Aumento del ocular × aumento del objetivo.",
+        "Aumento del objetivo ÷ aumento del ocular."
+      ],
+      "correcta": 1,
+      "explicacion": "Es un producto.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Aumento total = aumento del ocular × aumento del objetivo"
+    },
+    {
+      "id": "t10-q117",
+      "pregunta": "Un ocular de 10× y un objetivo de 40× dan un aumento total de:",
+      "opciones": [
+        "50×.",
+        "4000×.",
+        "400×."
+      ],
+      "correcta": 2,
+      "explicacion": "Con el de inmersión de 100× dan 1000×.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Ejemplo: ocular 10× y objetivo 40× dan 400×. Con el objetivo de inmersión de 100×, 1000×"
+    },
+    {
+      "id": "t10-q118",
+      "pregunta": "¿Qué aumento total se obtiene con ocular de 10× y objetivo de inmersión de 100×?",
+      "opciones": [
+        "1000×.",
+        "110×.",
+        "100×."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el que usan la mayoría de microscopios ópticos.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Con el objetivo de inmersión de 100×, 1000×"
+    },
+    {
+      "id": "t10-q119",
+      "pregunta": "¿A qué aumento se ven las bacterias, según el apunte?",
+      "opciones": [
+        "Hacia los 40×.",
+        "Hacia los 400×.",
+        "Solo con microscopio electrónico."
+      ],
+      "correcta": 1,
+      "explicacion": "Los virus no se ven.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Las bacterias se ven hacia los 400×"
+    },
+    {
+      "id": "t10-q120",
+      "pregunta": "¿Por qué los virus no se ven con el microscopio óptico?",
+      "opciones": [
+        "Porque son transparentes al aceite.",
+        "Porque no se tiñen.",
+        "Por estar por debajo de su límite de resolución."
+      ],
+      "correcta": 2,
+      "explicacion": "Las bacterias sí se ven a 400×.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Los virus, no: están por debajo del límite de resolución del microscopio óptico"
+    },
+    {
+      "id": "t10-q121",
+      "pregunta": "¿Hasta qué aumento llegan la mayoría de los microscopios ópticos?",
+      "opciones": [
+        "1000×.",
+        "400×.",
+        "100 000×."
+      ],
+      "correcta": 0,
+      "explicacion": "Unos pocos llegan a 1500×.",
+      "fuente": "Abramowitz, Microscope Basics and Beyond (Olympus, 2003) · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "La mayoría de los microscopios ópticos llegan a 1000×, y unos pocos a 1500×"
+    },
+    {
+      "id": "t10-q122",
+      "pregunta": "¿Qué es la resolución de un microscopio?",
+      "opciones": [
+        "El aumento máximo alcanzable.",
+        "La capacidad de separar dos puntos muy próximos y verlos como distintos.",
+        "La claridad de la lámpara."
+      ],
+      "correcta": 1,
+      "explicacion": "Cuanto menor sea d, mejor resolución.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "la capacidad de separar dos puntos muy próximos y verlos como distintos"
+    },
+    {
+      "id": "t10-q123",
+      "pregunta": "En la resolución, ¿qué representa la distancia d?",
+      "opciones": [
+        "La distancia entre el objetivo y la muestra.",
+        "El diámetro del campo visual.",
+        "La distancia mínima entre dos puntos que aún se ven separados."
+      ],
+      "correcta": 2,
+      "explicacion": "Cuanto menor d, mejor resolución.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Es la distancia mínima d entre dos puntos que aún se ven separados: cuanto menor d, mejor resolución"
+    },
+    {
+      "id": "t10-q124",
+      "pregunta": "¿Qué relaciona la fórmula AN = n · sen α?",
+      "opciones": [
+        "El índice de refracción del medio y el semiángulo del cono de luz.",
+        "El aumento y la longitud de onda.",
+        "El aumento del ocular y el del objetivo."
+      ],
+      "correcta": 0,
+      "explicacion": "n es el índice de refracción del medio entre la muestra y el objetivo.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "n es el índice de refracción del medio entre la muestra y el objetivo; α, el semiángulo del cono de luz que entra en el objetivo"
+    },
+    {
+      "id": "t10-q125",
+      "pregunta": "Según Rayleigh, ¿cuál es la fórmula de la resolución?",
+      "opciones": [
+        "d = λ · AN.",
+        "d = 0,61 · λ / AN.",
+        "d = AN / 0,61 · λ."
+      ],
+      "correcta": 1,
+      "explicacion": "Con λ = 550 nm y AN = 1,25 da unos 268 nm.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "d = 0,61 · λ / AN (Rayleigh) | Con λ = 550 nm (luz verde) y AN = 1,25: d ≈ 268 nm"
+    },
+    {
+      "id": "t10-q126",
+      "pregunta": "¿Qué resolución da la fórmula de Rayleigh con luz verde de 550 nm y AN de 1,25?",
+      "opciones": [
+        "Unos 550 nm.",
+        "Unos 0,61 nm.",
+        "Unos 268 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "Se obtiene d ≈ 268 nm.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con λ = 550 nm (luz verde) y AN = 1,25: d ≈ 268 nm"
+    },
+    {
+      "id": "t10-q127",
+      "pregunta": "¿Qué constante usa la fórmula de Abbe en lugar de 0,61?",
+      "opciones": [
+        "0,5.",
+        "1,0.",
+        "0,25."
+      ],
+      "correcta": 0,
+      "explicacion": "d = λ / (2 · AN).",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "La misma idea con otra constante (0,5 en vez de 0,61)"
+    },
+    {
+      "id": "t10-q128",
+      "pregunta": "¿Qué ocurre con la resolución al aumentar la AN?",
+      "opciones": [
+        "Empeora.",
+        "Mejora.",
+        "No cambia."
+      ],
+      "correcta": 1,
+      "explicacion": "Y también mejora al reducir la longitud de onda.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Más AN, mejor resolución. Menor longitud de onda, mejor resolución"
+    },
+    {
+      "id": "t10-q129",
+      "pregunta": "¿Qué luz resuelve más, la azul o la roja?",
+      "opciones": [
+        "La roja, por su mayor longitud de onda.",
+        "Resuelven igual.",
+        "La azul, por su menor longitud de onda."
+      ],
+      "correcta": 2,
+      "explicacion": "Menor longitud de onda, mejor resolución.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Menor longitud de onda, mejor resolución: el azul resuelve más que el rojo"
+    },
+    {
+      "id": "t10-q130",
+      "pregunta": "¿Cómo debe ser la AN del condensador respecto a la del objetivo?",
+      "opciones": [
+        "Igual, sin superarla.",
+        "Siempre mayor.",
+        "Siempre menor."
+      ],
+      "correcta": 0,
+      "explicacion": "Depende también del condensador la AN del sistema.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "su AN debe igualar, sin superar, la del objetivo"
+    },
+    {
+      "id": "t10-q131",
+      "pregunta": "¿Cuál es el límite práctico de la AN con aceite de inmersión?",
+      "opciones": [
+        "0,95.",
+        "1,4.",
+        "1,2."
+      ],
+      "correcta": 1,
+      "explicacion": "En seco es 0,95 y con agua 1,2.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Límites prácticos de la AN: 0,95 en seco, 1,2 con agua y 1,4 con aceite"
+    },
+    {
+      "id": "t10-q132",
+      "pregunta": "¿Cuál es el límite práctico de la AN de un objetivo en seco?",
+      "opciones": [
+        "1,2.",
+        "1,4.",
+        "0,95."
+      ],
+      "correcta": 2,
+      "explicacion": "Con aceite llega a 1,4.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Límites prácticos de la AN: 0,95 en seco, 1,2 con agua y 1,4 con aceite"
+    },
+    {
+      "id": "t10-q133",
+      "pregunta": "¿Cuál es el límite teórico de resolución del microscopio óptico con luz blanca?",
+      "opciones": [
+        "0,20-0,25 µm.",
+        "2-3 µm.",
+        "20-25 nm."
+      ],
+      "correcta": 0,
+      "explicacion": "Está limitado por la luz visible.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Límite teórico de resolución del microscopio óptico con luz blanca: 0,20-0,25 µm"
+    },
+    {
+      "id": "t10-q134",
+      "pregunta": "¿Qué índice de refracción tiene el aceite de inmersión?",
+      "opciones": [
+        "1,0, igual que el aire.",
+        "1,515, igual que el vidrio.",
+        "1,33, igual que el agua."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la luz no se desvía al pasar al objetivo.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Tiene un índice de refracción de 1,515, el mismo que el vidrio"
+    },
+    {
+      "id": "t10-q135",
+      "pregunta": "¿Qué pasa con la luz cuando hay aire entre el portaobjetos y el objetivo?",
+      "opciones": [
+        "Pasa sin desviarse.",
+        "Aumenta la AN.",
+        "Se refracta y se pierde."
+      ],
+      "correcta": 2,
+      "explicacion": "El aire tiene n ≈ 1.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Con aire entre medias (n ≈ 1), la luz se refracta y se pierde"
+    },
+    {
+      "id": "t10-q136",
+      "pregunta": "¿Qué efecto tiene el aceite de inmersión sobre la apertura numérica?",
+      "opciones": [
+        "La aumenta y con ella la resolución.",
+        "La reduce.",
+        "No la modifica."
+      ],
+      "correcta": 0,
+      "explicacion": "Iguala el índice del vidrio.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El aceite aumenta la AN y con ella la resolución"
+    },
+    {
+      "id": "t10-q137",
+      "pregunta": "¿Con qué objetivo se usa el aceite de inmersión?",
+      "opciones": [
+        "Con cualquier objetivo para limpiar.",
+        "Solo con el de inmersión, normalmente el de 100×.",
+        "Con el de 4×."
+      ],
+      "correcta": 1,
+      "explicacion": "Después hay que limpiarlo.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Solo se usa con el objetivo de inmersión, normalmente el de 100×"
+    },
+    {
+      "id": "t10-q138",
+      "pregunta": "¿Entre qué valores está el aumento útil de un objetivo?",
+      "opciones": [
+        "Entre 100 y 500 veces su AN.",
+        "Entre 1000 y 2000 veces su AN.",
+        "Entre 500 y 1000 veces su AN."
+      ],
+      "correcta": 2,
+      "explicacion": "Con AN 1,25, de 625× a 1250×.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "El aumento útil va de 500 a 1000 veces la AN del objetivo"
+    },
+    {
+      "id": "t10-q139",
+      "pregunta": "¿Qué aumento útil tiene un objetivo de AN 1,25?",
+      "opciones": [
+        "De 625× a 1250×.",
+        "De 500× a 1000×.",
+        "De 125× a 250×."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica la AN por 500 y por 1000.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "- El aumento útil va de 500 a 1000 veces la AN del objetivo. Con AN 1,25, de 625× a 1250×."
+    },
+    {
+      "id": "t10-q140",
+      "pregunta": "¿Qué es el aumento vacío?",
+      "opciones": [
+        "El aumento sin aceite de inmersión.",
+        "El que está por encima del útil: agranda la imagen sin mostrar más detalle.",
+        "El de un objetivo sin retículo."
+      ],
+      "correcta": 1,
+      "explicacion": "No mejora la resolución.",
+      "fuente": "Abramowitz (Olympus, 2003); Nikon MicroscopyU · apunte §2.3",
+      "apartado": "2.3",
+      "evidencia": "Por encima, el aumento es «vacío»: la imagen se hace más grande, pero no muestra más detalle"
+    },
+    {
+      "id": "t10-q141",
+      "pregunta": "¿Qué consigue el ajuste de Köhler?",
+      "opciones": [
+        "Un aumento mayor del objetivo.",
+        "Una resolución superior al límite teórico.",
+        "Una iluminación brillante y uniforme del campo."
+      ],
+      "correcta": 2,
+      "explicacion": "Se hace con un objetivo de poco aumento.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Es el ajuste que da una iluminación brillante y uniforme del campo"
+    },
+    {
+      "id": "t10-q142",
+      "pregunta": "¿Con qué objetivo se empieza el ajuste de Köhler?",
+      "opciones": [
+        "Con uno de poco aumento, 5× o 10×.",
+        "Con el de inmersión de 100×.",
+        "Con el de 40×."
+      ],
+      "correcta": 0,
+      "explicacion": "Se enfoca primero la muestra.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Con un objetivo de poco aumento (5× o 10×), enfocar la muestra"
+    },
+    {
+      "id": "t10-q143",
+      "pregunta": "En el ajuste de Köhler, ¿qué se hace tras cerrar el diafragma de campo?",
+      "opciones": [
+        "Abrir al máximo el diafragma de apertura.",
+        "Enfocar el condensador hasta ver nítido el borde del diafragma.",
+        "Cambiar al objetivo de inmersión."
+      ],
+      "correcta": 1,
+      "explicacion": "Después se centra el condensador.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Cerrar el diafragma de campo y enfocar el condensador hasta ver nítido el borde del diafragma"
+    },
+    {
+      "id": "t10-q144",
+      "pregunta": "¿Cómo se centra el condensador en el ajuste de Köhler?",
+      "opciones": [
+        "Con el macrométrico.",
+        "Con el reóstato.",
+        "Con sus dos tornillos."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el tercer paso.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Centrar el condensador con sus dos tornillos"
+    },
+    {
+      "id": "t10-q145",
+      "pregunta": "¿Hasta dónde se abre el diafragma de campo en el ajuste de Köhler?",
+      "opciones": [
+        "Hasta que su borde quede justo fuera del campo visual.",
+        "Hasta cerrarlo del todo.",
+        "Hasta que ocupe la mitad del campo."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el cuarto paso.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Abrir el diafragma de campo hasta que su borde quede justo fuera del campo visual"
+    },
+    {
+      "id": "t10-q146",
+      "pregunta": "¿Para qué se ajusta el diafragma de apertura del condensador en el último paso de Köhler?",
+      "opciones": [
+        "Para la intensidad de la luz.",
+        "Para el contraste.",
+        "Para el aumento."
+      ],
+      "correcta": 1,
+      "explicacion": "La intensidad se regula con el reóstato.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "Ajustar el diafragma de apertura del condensador para el contraste"
+    },
+    {
+      "id": "t10-q147",
+      "pregunta": "Ya ajustado Köhler, ¿cómo se regulan el contraste y la intensidad?",
+      "opciones": [
+        "El contraste subiendo el condensador y la intensidad bajándolo.",
+        "El contraste con el reóstato y la intensidad con el diafragma de campo.",
+        "El contraste con el diafragma de apertura y la intensidad con el reóstato."
+      ],
+      "correcta": 2,
+      "explicacion": "No se debe subir o bajar el condensador.",
+      "fuente": "SCA, Microbiology of Water (2017), 5.16 · apunte §2.4",
+      "apartado": "2.4",
+      "evidencia": "el contraste se regula con el diafragma de apertura y la intensidad con el reóstato, no subiendo o bajando el condensador"
+    },
+    {
+      "id": "t10-q148",
+      "pregunta": "En el microscopio de campo claro, la imagen es:",
+      "opciones": [
+        "Oscura sobre fondo claro.",
+        "Brillante sobre fondo oscuro.",
+        "Tridimensional por polarización."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el más usado.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "La luz atraviesa la muestra: imagen oscura sobre fondo claro"
+    },
+    {
+      "id": "t10-q149",
+      "pregunta": "¿Qué preparaciones se observan sobre todo en campo claro?",
+      "opciones": [
+        "Los organismos vivos sin teñir y muy finos.",
+        "Las teñidas, como la tinción de Gram.",
+        "Las estructuras con fluorocromos."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el microscopio más habitual.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El más usado. Preparaciones teñidas (tinción de Gram, tema 14)"
+    },
+    {
+      "id": "t10-q150",
+      "pregunta": "¿Qué elemento produce el cono hueco de luz en el microscopio de campo oscuro?",
+      "opciones": [
+        "Un anillo y una placa de fase.",
+        "Un láser que barre planos.",
+        "Un disco opaco en el condensador."
+      ],
+      "correcta": 2,
+      "explicacion": "Solo llega al objetivo la luz desviada por la muestra.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un disco opaco en el condensador deja un cono hueco de luz"
+    },
+    {
+      "id": "t10-q151",
+      "pregunta": "En campo oscuro, ¿cómo se ven los objetos?",
+      "opciones": [
+        "Brillantes sobre fondo oscuro.",
+        "Oscuros sobre fondo claro.",
+        "Con aspecto tridimensional por polarización."
+      ],
+      "correcta": 0,
+      "explicacion": "Solo llega la luz que desvía la muestra.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Solo llega al objetivo la luz que desvía la muestra: objetos brillantes sobre fondo oscuro"
+    },
+    {
+      "id": "t10-q152",
+      "pregunta": "¿Para qué se usa el campo oscuro?",
+      "opciones": [
+        "Para cortes ultrafinos en vacío.",
+        "Para organismos vivos sin teñir y muy finos, como las espiroquetas.",
+        "Para preparaciones teñidas con Gram."
+      ],
+      "correcta": 1,
+      "explicacion": "Un ejemplo es Treponema pallidum.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Organismos vivos sin teñir y muy finos, como las espiroquetas (Treponema pallidum)"
+    },
+    {
+      "id": "t10-q153",
+      "pregunta": "¿Qué dos elementos usa el contraste de fases?",
+      "opciones": [
+        "Un disco opaco y un filtro barrera.",
+        "Luz polarizada y un prisma de Nomarski.",
+        "Un anillo en el condensador y una placa de fase en el objetivo."
+      ],
+      "correcta": 2,
+      "explicacion": "Convierten diferencias de índice de refracción en claro y oscuro.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un anillo en el condensador y una placa de fase en el objetivo convierten diferencias de índice de refracción en diferencias de claro y oscuro"
+    },
+    {
+      "id": "t10-q154",
+      "pregunta": "¿Qué estructuras se ven bien con contraste de fases?",
+      "opciones": [
+        "Las endosporas, en células vivas sin teñir.",
+        "Solo los virus.",
+        "Los cortes ultrafinos de 20-100 nm."
+      ],
+      "correcta": 0,
+      "explicacion": "Células vivas sin teñir.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Células vivas sin teñir. Se ven bien las endosporas"
+    },
+    {
+      "id": "t10-q155",
+      "pregunta": "¿En qué se basa el contraste diferencial (DIC, Nomarski)?",
+      "opciones": [
+        "En un haz de electrones.",
+        "En luz polarizada dividida en dos haces que se recombinan.",
+        "En un láser que barre planos."
+      ],
+      "correcta": 1,
+      "explicacion": "La imagen tiene aspecto tridimensional.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Luz polarizada dividida en dos haces que se recombinan: imagen de aspecto tridimensional"
+    },
+    {
+      "id": "t10-q156",
+      "pregunta": "En aguas, ¿qué se examina con DIC y objetivo de 100×?",
+      "opciones": [
+        "Las colonias en placa.",
+        "Las biopelículas gruesas.",
+        "Los ooquistes de Cryptosporidium."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una aplicación del contraste diferencial.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "En aguas, examinar ooquistes de Cryptosporidium con el objetivo de 100×"
+    },
+    {
+      "id": "t10-q157",
+      "pregunta": "¿Qué luz de excitación usa el microscopio de fluorescencia?",
+      "opciones": [
+        "De onda corta, UV o azul.",
+        "De onda larga, roja.",
+        "Un haz de electrones."
+      ],
+      "correcta": 0,
+      "explicacion": "Los fluorocromos reemiten con onda más larga.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Luz de excitación de onda corta (UV o azul) que los fluorocromos reemiten con onda más larga"
+    },
+    {
+      "id": "t10-q158",
+      "pregunta": "¿Qué función tiene el filtro barrera en fluorescencia?",
+      "opciones": [
+        "Reducir el aumento.",
+        "Eliminar la luz de excitación.",
+        "Centrar el condensador."
+      ],
+      "correcta": 1,
+      "explicacion": "Se ven colores brillantes sobre fondo oscuro.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un filtro barrera elimina la de excitación: colores brillantes sobre fondo oscuro"
+    },
+    {
+      "id": "t10-q159",
+      "pregunta": "¿Qué lámparas pueden usarse en fluorescencia?",
+      "opciones": [
+        "De sodio o de tungsteno.",
+        "Solo de halógeno.",
+        "De mercurio, de xenón o LED."
+      ],
+      "correcta": 2,
+      "explicacion": "Dan luz de excitación.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Lámpara de mercurio, de xenón o LED"
+    },
+    {
+      "id": "t10-q160",
+      "pregunta": "¿Qué es la inmunofluorescencia?",
+      "opciones": [
+        "Anticuerpos marcados que tiñen el agente, por ejemplo Cryptosporidium en aguas.",
+        "La tinción de Gram con fluorocromos.",
+        "La observación sin tinción con luz polarizada."
+      ],
+      "correcta": 0,
+      "explicacion": "Sirve para identificar patógenos.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Inmunofluorescencia: anticuerpos marcados que tiñen, por ejemplo, Cryptosporidium en aguas"
+    },
+    {
+      "id": "t10-q161",
+      "pregunta": "¿Cómo forma la imagen el microscopio confocal?",
+      "opciones": [
+        "Un haz de electrones atraviesa cortes ultrafinos.",
+        "Un láser barre planos a distintas profundidades y el ordenador reconstruye la imagen en 3D.",
+        "Un disco opaco deja un cono hueco de luz."
+      ],
+      "correcta": 1,
+      "explicacion": "Se usa en muestras gruesas, como las biopelículas.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Un láser barre planos a distintas profundidades y el ordenador reconstruye la imagen en 3D"
+    },
+    {
+      "id": "t10-q162",
+      "pregunta": "¿Qué longitud de onda aproximada tiene el haz de electrones del MET?",
+      "opciones": [
+        "550 nm.",
+        "0,5 µm.",
+        "0,005 nm."
+      ],
+      "correcta": 2,
+      "explicacion": "Se enfoca con lentes magnéticas.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Haz de electrones, λ ≈ 0,005 nm, enfocado con lentes magnéticas"
+    },
+    {
+      "id": "t10-q163",
+      "pregunta": "¿Qué grosor tienen los cortes que atraviesa el MET?",
+      "opciones": [
+        "Ultrafinos, de 20-100 nm.",
+        "De 1-2 mm.",
+        "De 0,17 mm."
+      ],
+      "correcta": 0,
+      "explicacion": "Se observan en vacío.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Atraviesa cortes ultrafinos (20-100 nm) en vacío"
+    },
+    {
+      "id": "t10-q164",
+      "pregunta": "¿Qué estudia el microscopio electrónico de transmisión?",
+      "opciones": [
+        "La superficie de las células.",
+        "La estructura interna de la célula.",
+        "Las colonias en placa."
+      ],
+      "correcta": 1,
+      "explicacion": "El MEB estudia la superficie.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Estructura interna de la célula"
+    },
+    {
+      "id": "t10-q165",
+      "pregunta": "¿Cómo se prepara la superficie observada en el microscopio electrónico de barrido?",
+      "opciones": [
+        "Se tiñe con Gram.",
+        "Se incluye en aceite de inmersión.",
+        "Se recubre de metal, por ejemplo oro."
+      ],
+      "correcta": 2,
+      "explicacion": "Da una imagen tridimensional de la superficie.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "Los electrones que rebotan en la superficie, recubierta de metal (oro): imagen tridimensional de la superficie"
+    },
+    {
+      "id": "t10-q166",
+      "pregunta": "¿Hasta qué aumento llega el microscopio electrónico?",
+      "opciones": [
+        "Hasta 100 000× nítidas, y algunos hasta 2 000 000×.",
+        "Hasta 1500×.",
+        "Hasta 10 000×, sin pasar de ahí."
+      ],
+      "correcta": 0,
+      "explicacion": "No se usa con material vivo.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "El microscopio electrónico da imágenes nítidas de hasta 100 000×, y algunos llegan a 2 000 000×"
+    },
+    {
+      "id": "t10-q167",
+      "pregunta": "¿Por qué el microscopio electrónico no sirve para material vivo?",
+      "opciones": [
+        "Porque su aumento es insuficiente.",
+        "Por la preparación que exige: vacío y deshidratación.",
+        "Porque solo funciona con luz UV."
+      ],
+      "correcta": 1,
+      "explicacion": "Ofrece imágenes de hasta 100 000×.",
+      "fuente": "OpenStax, Microbiology, 2.3; SCA (2017), 5.16 · apunte §2.5",
+      "apartado": "2.5",
+      "evidencia": "No sirve para material vivo, por la preparación que exige: vacío y deshidratación"
+    },
+    {
+      "id": "t10-q168",
+      "pregunta": "¿Con qué objetivos puede usarse el tornillo macrométrico?",
+      "opciones": [
+        "Con todos, incluido el de 100×.",
+        "Solo con el de 100×.",
+        "Solo con los de 4× y 10×."
+      ],
+      "correcta": 2,
+      "explicacion": "Con los de 40× y 100× solo el micrométrico.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Enfocar con el macrométrico solo con los objetivos de 4× y 10×"
+    },
+    {
+      "id": "t10-q169",
+      "pregunta": "¿Por qué con los objetivos de 40× y 100× se enfoca solo con el micrométrico?",
+      "opciones": [
+        "Para no chocar el objetivo contra el portaobjetos.",
+        "Para ahorrar aceite de inmersión.",
+        "Para no recalentar la lámpara."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una norma de uso.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Con los de 40× y 100×, solo el micrométrico, para no chocar el objetivo contra el portaobjetos"
+    },
+    {
+      "id": "t10-q170",
+      "pregunta": "¿Qué hay que hacer con el aceite que haya pasado por error a otro objetivo?",
+      "opciones": [
+        "Dejarlo secar.",
+        "Limpiarlo.",
+        "Cubrirlo con la funda."
+      ],
+      "correcta": 1,
+      "explicacion": "El aceite solo se usa con el objetivo de inmersión.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Hay que limpiarlo al terminar, y también el que haya pasado por error a otro objetivo"
+    },
+    {
+      "id": "t10-q171",
+      "pregunta": "¿Con qué se limpian las lentes del microscopio?",
+      "opciones": [
+        "Con papel de cocina.",
+        "Con un paño de algodón húmedo.",
+        "Solo con papel de óptica."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una norma de cuidado.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Limpiar las lentes solo con papel de óptica"
+    },
+    {
+      "id": "t10-q172",
+      "pregunta": "¿Cuánto vale una división del retículo calibrado con el objetivo de 100×?",
+      "opciones": [
+        "1 µm.",
+        "10 µm.",
+        "100 µm."
+      ],
+      "correcta": 0,
+      "explicacion": "Con el de 10× suele salir 10 µm.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Con el de 10× suele salir 1 división = 10 µm; con el de 100×, 1 µm"
+    },
+    {
+      "id": "t10-q173",
+      "pregunta": "¿Cada cuánto se recalibra el retículo, por ejemplo?",
+      "opciones": [
+        "Cada semana.",
+        "Una vez al año.",
+        "Cada diez años."
+      ],
+      "correcta": 1,
+      "explicacion": "Se calibra para cada objetivo.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Se recalibra periódicamente, por ejemplo una vez al año"
+    },
+    {
+      "id": "t10-q174",
+      "pregunta": "¿Cuándo se comprueba la alineación del microscopio según Eurachem?",
+      "opciones": [
+        "Una vez al año.",
+        "Solo tras una avería.",
+        "A diario o en cada uso."
+      ],
+      "correcta": 2,
+      "explicacion": "La revisión completa es anual.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Comprobar la alineación a diario o en cada uso"
+    },
+    {
+      "id": "t10-q175",
+      "pregunta": "¿Quién hace la revisión completa anual del microscopio?",
+      "opciones": [
+        "Un servicio técnico.",
+        "El propio usuario.",
+        "El fabricante cada cinco años."
+      ],
+      "correcta": 0,
+      "explicacion": "Se hace una vez al año.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "Revisión completa por un servicio técnico una vez al año"
+    },
+    {
+      "id": "t10-q176",
+      "pregunta": "¿Qué precauciones hay con las lámparas de UV del microscopio de fluorescencia?",
+      "opciones": [
+        "Cambiarlas sin protección, pues no se calientan.",
+        "Registrar sus horas de uso y usar guantes y gafas al cambiarlas.",
+        "No registrar horas de uso."
+      ],
+      "correcta": 1,
+      "explicacion": "Pueden estallar.",
+      "fuente": "SCA (2017), 5.16; Eurachem (2023), 9 y anexos F y G · apunte §2.6",
+      "apartado": "2.6",
+      "evidencia": "se registran sus horas de uso, y al cambiarlas se usan guantes y gafas, porque pueden estallar"
+    },
+    {
+      "id": "t10-q177",
+      "pregunta": "¿Qué controla fundamentalmente la incubación?",
+      "opciones": [
+        "Solo la temperatura.",
+        "Luz, pH y presión.",
+        "Temperatura, tiempo y atmósfera."
+      ],
+      "correcta": 2,
+      "explicacion": "En atmósfera controlada, además humedad y CO₂.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Temperatura, tiempo y atmósfera"
+    },
+    {
+      "id": "t10-q178",
+      "pregunta": "¿Qué hay que vigilar en incubaciones largas?",
+      "opciones": [
+        "Que las placas no se sequen.",
+        "Que el CO₂ no supere el 10 %.",
+        "Que las placas no se apilen sobre seis."
+      ],
+      "correcta": 0,
+      "explicacion": "Se trata de la desecación.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "En incubaciones largas, hay que vigilar también que las placas no se sequen"
+    },
+    {
+      "id": "t10-q179",
+      "pregunta": "¿Qué estufa suele exigir refrigeración en el laboratorio de aguas?",
+      "opciones": [
+        "La de 44 °C.",
+        "La de 22 °C.",
+        "La de 36 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "La temperatura local es cercana a 22 °C.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "22 °C, que suele exigir estufa refrigerada"
+    },
+    {
+      "id": "t10-q180",
+      "pregunta": "¿Qué temperatura de incubación se usa para Clostridium perfringens en anaerobiosis?",
+      "opciones": [
+        "22 °C.",
+        "36 °C.",
+        "44 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el límite superior.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "44 °C, en el límite superior. Es la de C. perfringens, en anaerobiosis"
+    },
+    {
+      "id": "t10-q181",
+      "pregunta": "¿A qué temperatura y cuánto tiempo se incuban las placas de Legionella?",
+      "opciones": [
+        "36 °C durante 10 días.",
+        "44 °C durante 44 horas.",
+        "22 °C durante 3 días."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la pregunta 1322 #26.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "las placas de Legionella van a 36 °C durante 10 días (1322 #26)"
+    },
+    {
+      "id": "t10-q182",
+      "pregunta": "¿Qué fija cada método de análisis respecto a la incubación?",
+      "opciones": [
+        "Solo su temperatura.",
+        "Su temperatura, su tolerancia y su tiempo.",
+        "Solo su tiempo."
+      ],
+      "correcta": 1,
+      "explicacion": "Los métodos son de los temas 18 y 19.",
+      "fuente": "SCA (2017), 5.13 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Cada método fija su temperatura, su tolerancia y su tiempo"
+    },
+    {
+      "id": "t10-q183",
+      "pregunta": "¿Qué es una estufa de cultivo?",
+      "opciones": [
+        "Un recinto de flujo laminar.",
+        "Una cubeta de agua con agitador.",
+        "Un armario aislado con temperatura controlada por termostato."
+      ],
+      "correcta": 2,
+      "explicacion": "También se llama incubador.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "un armario aislado con temperatura controlada por termostato"
+    },
+    {
+      "id": "t10-q184",
+      "pregunta": "¿Qué ventaja tiene la estufa con ventilador?",
+      "opciones": [
+        "Reparte la temperatura de forma más uniforme.",
+        "Calienta más rápido sin termostato.",
+        "No requiere limpieza."
+      ],
+      "correcta": 0,
+      "explicacion": "La otra calienta por convección natural.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "con ventilador, que reparte la temperatura de forma más uniforme"
+    },
+    {
+      "id": "t10-q185",
+      "pregunta": "¿De qué material suele ser el interior de una estufa?",
+      "opciones": [
+        "De madera barnizada.",
+        "De material fácil de limpiar, como acero inoxidable.",
+        "De aluminio sin tratar."
+      ],
+      "correcta": 1,
+      "explicacion": "Facilita la limpieza y la desinfección.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "El interior es de material fácil de limpiar, como el acero inoxidable"
+    },
+    {
+      "id": "t10-q186",
+      "pregunta": "¿Para qué sirve la puerta interior de vidrio o metacrilato de la estufa?",
+      "opciones": [
+        "Para evitar la condensación del agua.",
+        "Para aislar del CO₂.",
+        "Para ver el contenido sin que se escape el calor."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una puerta interior.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Una puerta interior de vidrio o metacrilato deja ver el contenido sin que se escape el calor"
+    },
+    {
+      "id": "t10-q187",
+      "pregunta": "¿Cuándo necesita una estufa refrigeración además de calefacción?",
+      "opciones": [
+        "Cuando la temperatura del local es cercana a la de consigna o mayor.",
+        "Cuando la temperatura de consigna es 44 °C.",
+        "Cuando se apilan seis placas."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el caso típico de la estufa a 22 °C.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Si la temperatura del local es cercana a la de consigna, o mayor, la estufa necesita refrigeración además de calefacción"
+    },
+    {
+      "id": "t10-q188",
+      "pregunta": "¿Dónde no debe colocarse una estufa?",
+      "opciones": [
+        "En un local con temperatura estable.",
+        "En corrientes de aire, al sol o donde la temperatura ambiente fluctúe.",
+        "En un lugar sin sol directo."
+      ],
+      "correcta": 1,
+      "explicacion": "Afectan a su estabilidad.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "No debe colocarse en corrientes de aire, al sol ni donde la temperatura ambiente fluctúe"
+    },
+    {
+      "id": "t10-q189",
+      "pregunta": "¿Cuánto tiempo debe tardar una estufa de ciclo en pasar de 30 °C a 44 °C?",
+      "opciones": [
+        "Como máximo 2 horas.",
+        "Como máximo 5 minutos.",
+        "Como máximo 30 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "Ese tiempo cuenta como parte de la incubación a la temperatura alta.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "La subida debe completarse en 30 minutos, y ese tiempo cuenta como parte de la incubación a la temperatura alta"
+    },
+    {
+      "id": "t10-q190",
+      "pregunta": "¿Qué fluctuación máxima se admite en una estufa de 20-40 °C?",
+      "opciones": [
+        "± 1 °C.",
+        "± 0,5 °C.",
+        "± 2 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Por ejemplo, 22 o 37 °C.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| 20-40 °C (por ejemplo, 22 o 37 °C) | ± 1 °C |"
+    },
+    {
+      "id": "t10-q191",
+      "pregunta": "¿Qué fluctuación máxima se admite en una estufa de 40 °C o más, como la de 44 °C?",
+      "opciones": [
+        "± 1 °C.",
+        "± 0,5 °C.",
+        "± 2 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "La precisión del termómetro es ± 0,1 °C.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "| 40 °C o más (por ejemplo, 44 °C) | ± 0,5 °C | ± 0,1 °C |"
+    },
+    {
+      "id": "t10-q192",
+      "pregunta": "¿Qué precisión de termómetro se mejora hasta ± 0,1 °C en estufas de 20-40 °C?",
+      "opciones": [
+        "Para cualquier estufa de 37 °C.",
+        "Para estufas con CO₂.",
+        "Para el control oficial del agua de consumo."
+      ],
+      "correcta": 2,
+      "explicacion": "Basta ± 0,5 °C, y ± 0,2 °C es mejor.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "± 0,5 °C sirve; ± 0,2 °C es mejor, y ± 0,1 °C para el control oficial del agua de consumo"
+    },
+    {
+      "id": "t10-q193",
+      "pregunta": "¿En qué líquidos se introduce el termómetro de la estufa?",
+      "opciones": [
+        "Glicerol, parafina líquida o propilenglicol.",
+        "Agua del grifo.",
+        "Mercurio."
+      ],
+      "correcta": 0,
+      "explicacion": "Así la lectura no cambia al abrir la puerta.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "glicerol, parafina líquida o propilenglicol. Así la lectura no cambia al abrir la puerta"
+    },
+    {
+      "id": "t10-q194",
+      "pregunta": "¿Qué termómetros prohíbe la guía Eurachem por seguridad?",
+      "opciones": [
+        "Los de alcohol.",
+        "Los de mercurio y de tolueno.",
+        "Los digitales."
+      ],
+      "correcta": 1,
+      "explicacion": "Se recomiendan los registradores de datos.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Los termómetros de mercurio y de tolueno están prohibidos por seguridad"
+    },
+    {
+      "id": "t10-q195",
+      "pregunta": "¿Qué se recomienda para registrar la temperatura de la estufa?",
+      "opciones": [
+        "Una lectura mensual.",
+        "Un termómetro sin calibrar.",
+        "Registradores de datos o monitorización continua con alarma."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una recomendación de la guía.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Se recomiendan los registradores de datos o la monitorización continua con alarma"
+    },
+    {
+      "id": "t10-q196",
+      "pregunta": "¿Cuántas veces al día se lee, como mínimo, la temperatura de la estufa?",
+      "opciones": [
+        "Dos: al empezar y al acabar la jornada.",
+        "Una, al mediodía.",
+        "Cuatro, cada seis horas."
+      ],
+      "correcta": 0,
+      "explicacion": "La primera lectura es antes de sacar cultivos.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Como mínimo se leen dos veces al día: al empezar la jornada, antes de sacar cultivos, y al acabarla o al meter muestras"
+    },
+    {
+      "id": "t10-q197",
+      "pregunta": "¿Cuándo vale el indicador de temperatura del propio equipo?",
+      "opciones": [
+        "Siempre.",
+        "Solo si se ha verificado.",
+        "Nunca."
+      ],
+      "correcta": 1,
+      "explicacion": "Se verifica con un termómetro calibrado.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "El indicador del propio equipo solo vale si se ha verificado"
+    },
+    {
+      "id": "t10-q198",
+      "pregunta": "¿Cuál es el máximo de placas de Petri por pila en la estufa?",
+      "opciones": [
+        "Doce.",
+        "Veinte.",
+        "Seis."
+      ],
+      "correcta": 2,
+      "explicacion": "La forma de cargarla cambia el reparto del calor.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "No apilar más de seis placas de Petri"
+    },
+    {
+      "id": "t10-q199",
+      "pregunta": "¿Qué es el perfil de temperatura de una estufa?",
+      "opciones": [
+        "Varios termómetros en distintos puntos durante un tiempo, por ejemplo 24 horas.",
+        "La lectura de un solo termómetro cada hora.",
+        "La gráfica del termostato del fabricante."
+      ],
+      "correcta": 0,
+      "explicacion": "Se repite periódicamente.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "varios termómetros en distintos puntos durante un tiempo, por ejemplo 24 horas"
+    },
+    {
+      "id": "t10-q200",
+      "pregunta": "¿Qué se hace con las zonas demasiado frías o calientes de la estufa?",
+      "opciones": [
+        "Se usan para muestras sensibles.",
+        "Se señalan y no se usan.",
+        "Se compensan con más placas."
+      ],
+      "correcta": 1,
+      "explicacion": "Se detectan con el perfil de temperatura.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Las zonas demasiado frías o calientes se señalan y no se usan"
+    },
+    {
+      "id": "t10-q201",
+      "pregunta": "¿Cuándo se repite el perfil de temperatura?",
+      "opciones": [
+        "Solo al comprarla.",
+        "Solo cuando falla el termostato.",
+        "Periódicamente, al cambiar la estufa de sitio y tras una reparación."
+      ],
+      "correcta": 2,
+      "explicacion": "Es un control de la estufa.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "El perfil se repite periódicamente, al cambiar la estufa de sitio y tras una reparación"
+    },
+    {
+      "id": "t10-q202",
+      "pregunta": "¿Qué desinfectante, por ejemplo, se usa para limpiar la estufa?",
+      "opciones": [
+        "Hipoclorito diluido, que no debe dejar residuo.",
+        "Lejía concentrada sin aclarar.",
+        "Formol sin aclarar."
+      ],
+      "correcta": 0,
+      "explicacion": "Conviene alternar dos desinfectantes.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "agua templada y desinfectante, por ejemplo hipoclorito diluido, que no debe dejar residuo"
+    },
+    {
+      "id": "t10-q203",
+      "pregunta": "¿Con qué frecuencia sugiere Eurachem limpiar la estufa, y cuándo siempre?",
+      "opciones": [
+        "Cada día.",
+        "Una vez al mes, y siempre tras un derrame de cultivo.",
+        "Una vez al año."
+      ],
+      "correcta": 1,
+      "explicacion": "Conviene alternar dos desinfectantes.",
+      "fuente": "SCA (2017), 5.13 y 5.26; Eurachem (2023), 9 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "La guía Eurachem sugiere una vez al mes, y siempre tras un derrame de cultivo"
+    },
+    {
+      "id": "t10-q204",
+      "pregunta": "¿Qué contienen los sobres generadores de una jarra de anaerobiosis?",
+      "opciones": [
+        "Lo que aumenta el oxígeno.",
+        "Nitrógeno puro.",
+        "Lo que elimina el oxígeno y produce CO₂."
+      ],
+      "correcta": 2,
+      "explicacion": "La reacción desprende calor.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "sobres generadores que eliminan el oxígeno y producen CO₂"
+    },
+    {
+      "id": "t10-q205",
+      "pregunta": "En la jarra de anaerobiosis, ¿cuándo se abre el sobre?",
+      "opciones": [
+        "Después de meter el material y el indicador.",
+        "Antes de meter las placas.",
+        "Una hora antes de cerrar."
+      ],
+      "correcta": 0,
+      "explicacion": "Se mete primero el material y el indicador de anaerobiosis.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se mete primero el material y el indicador de anaerobiosis, y después se abre el sobre"
+    },
+    {
+      "id": "t10-q206",
+      "pregunta": "¿A qué debe corresponder el sobre generador?",
+      "opciones": [
+        "Al número de placas.",
+        "Al volumen de la jarra.",
+        "A la temperatura."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una regla de uso.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "El sobre tiene que corresponder al volumen de la jarra"
+    },
+    {
+      "id": "t10-q207",
+      "pregunta": "¿Qué atmósfera define la microaerofilia?",
+      "opciones": [
+        "0 % de O₂.",
+        "21 % de O₂.",
+        "5-7 % de O₂ y alrededor del 10 % de CO₂."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usa, por ejemplo, para Campylobacter.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Microaerofilia: 5-7 % de O₂ y alrededor del 10 % de CO₂, con sobres propios"
+    },
+    {
+      "id": "t10-q208",
+      "pregunta": "¿Para qué microorganismo se cita la microaerofilia como ejemplo?",
+      "opciones": [
+        "Campylobacter.",
+        "Clostridium perfringens.",
+        "Legionella."
+      ],
+      "correcta": 0,
+      "explicacion": "C. perfringens es anaerobio.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "con sobres propios. Por ejemplo, para Campylobacter"
+    },
+    {
+      "id": "t10-q209",
+      "pregunta": "¿Cuándo se comprueba la atmósfera de la jarra con el indicador?",
+      "opciones": [
+        "Una vez al año.",
+        "En cada uso.",
+        "Una vez al mes."
+      ],
+      "correcta": 1,
+      "explicacion": "También con dos cultivos control.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La atmósfera se comprueba con el indicador, en cada uso"
+    },
+    {
+      "id": "t10-q210",
+      "pregunta": "¿Qué dos cultivos control pueden comprobar la atmósfera?",
+      "opciones": [
+        "Dos aerobios.",
+        "Dos anaerobios.",
+        "Uno aerobio y otro anaerobio o microaerófilo."
+      ],
+      "correcta": 2,
+      "explicacion": "Alternativa al indicador.",
+      "fuente": "SCA (2017), 5.18 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "También puede comprobarse con dos cultivos control: uno aerobio y otro anaerobio o microaerófilo"
+    },
+    {
+      "id": "t10-q211",
+      "pregunta": "¿Qué componentes tiene un baño de incubación?",
+      "opciones": [
+        "Una cubeta con resistencia, termostato y agitador o bomba de circulación.",
+        "Solo una cubeta y un termómetro.",
+        "Un ventilador y un filtro HEPA."
+      ],
+      "correcta": 0,
+      "explicacion": "La tapa inclinada reduce la evaporación.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Una cubeta de agua con resistencia, termostato y un agitador o bomba de circulación"
+    },
+    {
+      "id": "t10-q212",
+      "pregunta": "¿Para qué sirve la tapa inclinada del baño?",
+      "opciones": [
+        "Para facilitar la carga.",
+        "Para reducir la evaporación.",
+        "Para evitar la luz."
+      ],
+      "correcta": 1,
+      "explicacion": "Es habitual en los baños.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Suelen llevar tapa inclinada para reducir la evaporación"
+    },
+    {
+      "id": "t10-q213",
+      "pregunta": "¿Para qué se usan los baños de incubación, además de incubar cultivos?",
+      "opciones": [
+        "Para esterilizar el material.",
+        "Para guardar los cultivos en frío.",
+        "Para mantener fundido el agar hasta verterlo."
+      ],
+      "correcta": 2,
+      "explicacion": "Sirven para incubar ciertos cultivos.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "para incubar ciertos cultivos y para mantener fundido el agar hasta verterlo"
+    },
+    {
+      "id": "t10-q214",
+      "pregunta": "¿Qué agua se usa en un baño y cómo debe estar?",
+      "opciones": [
+        "Destilada o desionizada, siempre agitada o en circulación.",
+        "Del grifo, en reposo.",
+        "Salina, en reposo."
+      ],
+      "correcta": 0,
+      "explicacion": "Se enciende solo con el agua a su nivel.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Con agua destilada o desionizada, siempre agitada o en circulación"
+    },
+    {
+      "id": "t10-q215",
+      "pregunta": "¿Cuándo se enciende el baño?",
+      "opciones": [
+        "Con la cubeta vacía.",
+        "Solo con el agua a su nivel.",
+        "Con la tapa quitada y sin agua."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una regla de seguridad.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Encendidos solo con el agua a su nivel"
+    },
+    {
+      "id": "t10-q216",
+      "pregunta": "¿Dónde debe quedar el contenido de tubos y frascos respecto al nivel del agua del baño?",
+      "opciones": [
+        "Por encima del nivel.",
+        "Indiferente.",
+        "Por debajo del nivel del agua."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usan gradillas.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "El contenido de tubos y frascos debe quedar por debajo del nivel del agua"
+    },
+    {
+      "id": "t10-q217",
+      "pregunta": "¿Cuándo se lee la temperatura del baño?",
+      "opciones": [
+        "Al empezar y al acabar la jornada, con un termómetro calibrado.",
+        "Una vez al año.",
+        "Cada hora."
+      ],
+      "correcta": 0,
+      "explicacion": "El indicador solo orienta.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "La temperatura se lee al empezar y al acabar la jornada, con un termómetro calibrado"
+    },
+    {
+      "id": "t10-q218",
+      "pregunta": "¿Qué se hace ante un derrame en el baño?",
+      "opciones": [
+        "Ignorarlo hasta la limpieza mensual.",
+        "Atenderlo inmediatamente.",
+        "Cambiar solo la tapa."
+      ],
+      "correcta": 1,
+      "explicacion": "Un derrame contamina el agua.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Un derrame contamina el agua: se atiende inmediatamente"
+    },
+    {
+      "id": "t10-q219",
+      "pregunta": "¿Con qué se puede desinfectar el baño al limpiarlo?",
+      "opciones": [
+        "Agua del grifo.",
+        "Hipoclorito concentrado sin aclarar.",
+        "Etanol al 70 % o 2-propanol."
+      ],
+      "correcta": 2,
+      "explicacion": "Se vacía, limpia, desinfecta y rellena.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Vaciar, limpiar y desinfectar, por ejemplo con etanol al 70 % o 2-propanol, y rellenar"
+    },
+    {
+      "id": "t10-q220",
+      "pregunta": "¿Cada cuánto sugiere Eurachem limpiar el baño si el agua lleva biocida?",
+      "opciones": [
+        "Cada 6 meses.",
+        "Cada semana.",
+        "Cada día."
+      ],
+      "correcta": 0,
+      "explicacion": "Si no lleva biocida, cada mes.",
+      "fuente": "SCA (2017), 5.30; Eurachem (2023), 9 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "cada mes, o cada 6 meses si el agua lleva biocida"
+    },
+    {
+      "id": "t10-q221",
+      "pregunta": "¿A qué temperatura se controla el congelador?",
+      "opciones": [
+        "5 ± 3 °C.",
+        "−20 ± 5 °C.",
+        "−70 ± 10 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "El ultracongelador llega a −70 °C o menos.",
+      "fuente": "SCA (2017) y Eurachem (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "se controlan igual: - frigorífico: 5 ± 3 °C; - congelador: −20 ± 5 °C;"
+    },
+    {
+      "id": "t10-q222",
+      "pregunta": "¿A qué temperatura se controla el ultracongelador?",
+      "opciones": [
+        "−20 ± 5 °C.",
+        "5 ± 3 °C.",
+        "−70 ± 10 °C o menos."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el más frío de los tres.",
+      "fuente": "SCA (2017) y Eurachem (2023), 9 · apunte §3.5",
+      "apartado": "3.5",
+      "evidencia": "- ultracongelador: −70 ± 10 °C o menos"
+    },
+    {
+      "id": "t10-q223",
+      "pregunta": "¿Qué principio físico usa la centrífuga?",
+      "opciones": [
+        "Separa sustancias de distinta densidad por la fuerza centrífuga.",
+        "Separa por tamaño de poro.",
+        "Separa por solubilidad en agua."
+      ],
+      "correcta": 0,
+      "explicacion": "En microbiología se usa para concentrar microorganismos.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "separa sustancias de distinta densidad por la fuerza centrífuga"
+    },
+    {
+      "id": "t10-q224",
+      "pregunta": "¿Para qué sirve la centrífuga en microbiología?",
+      "opciones": [
+        "Para esterilizar los medios.",
+        "Para separar los microorganismos del líquido que los contiene.",
+        "Para mantener fundido el agar."
+      ],
+      "correcta": 1,
+      "explicacion": "Por ejemplo, para concentrarlos.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "En microbiología sirve para separar los microorganismos del líquido que los contiene, por ejemplo para concentrarlos"
+    },
+    {
+      "id": "t10-q225",
+      "pregunta": "¿Qué intervalo de velocidades tienen las centrífugas de sobremesa?",
+      "opciones": [
+        "Entre 20 y 200 rpm.",
+        "Entre 10 000 y 100 000 rpm.",
+        "Entre 200 y 6000 rpm."
+      ],
+      "correcta": 2,
+      "explicacion": "Son las de uso general en microbiología.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Las de uso general en microbiología. Entre 200 y 6000 rpm"
+    },
+    {
+      "id": "t10-q226",
+      "pregunta": "¿Para qué tubos está diseñada la microcentrífuga?",
+      "opciones": [
+        "Para tubos Eppendorf.",
+        "Para tubos de 500 mL.",
+        "Para placas de Petri."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa en los análisis de Cryptosporidium y Giardia.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Para tubos Eppendorf. Se usa, por ejemplo, en los análisis de Cryptosporidium y Giardia"
+    },
+    {
+      "id": "t10-q227",
+      "pregunta": "¿Cómo funcionan los rotores basculantes?",
+      "opciones": [
+        "Los tubos van inclinados en el propio rotor.",
+        "Las cubetas cuelgan de un soporte y se inclinan al girar.",
+        "Giran con vacío."
+      ],
+      "correcta": 1,
+      "explicacion": "Es lo opuesto al ángulo fijo.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "las cubetas cuelgan de un soporte y se inclinan al girar"
+    },
+    {
+      "id": "t10-q228",
+      "pregunta": "¿Qué precaución hay con los rotores de ángulo fijo?",
+      "opciones": [
+        "Usarlos siempre con cubetas basculantes.",
+        "Llenarlos al máximo para equilibrar.",
+        "No llenar de más los tubos, porque pueden gotear."
+      ],
+      "correcta": 2,
+      "explicacion": "Los tubos van inclinados en el propio rotor.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Con ellos hay que no llenar de más los tubos, porque pueden gotear"
+    },
+    {
+      "id": "t10-q229",
+      "pregunta": "¿Por qué se da la separación en múltiplos de g y no en rpm?",
+      "opciones": [
+        "Porque la fuerza depende también del radio del rotor.",
+        "Porque las rpm no se pueden medir.",
+        "Porque g es una constante universal igual a 1."
+      ],
+      "correcta": 0,
+      "explicacion": "La separación no depende solo de las rpm.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La separación no depende de las rpm, sino de la fuerza, y la fuerza depende también del radio"
+    },
+    {
+      "id": "t10-q230",
+      "pregunta": "¿Qué fórmula da la fuerza centrífuga relativa?",
+      "opciones": [
+        "FCR = 1,118 × 10⁻⁵ × r × N.",
+        "FCR = 1,118 × 10⁻⁵ × r × N².",
+        "FCR = r × N / 1,118."
+      ],
+      "correcta": 1,
+      "explicacion": "r en cm y N en rpm.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "FCR (× g) = 1,118 × 10⁻⁵ × r × N²"
+    },
+    {
+      "id": "t10-q231",
+      "pregunta": "En la fórmula de la FCR, ¿qué unidades tiene el radio?",
+      "opciones": [
+        "Metros, desde el eje al borde del rotor.",
+        "Milímetros, desde el tubo al eje.",
+        "Centímetros, desde el eje hasta el fondo del tubo."
+      ],
+      "correcta": 2,
+      "explicacion": "N va en rpm.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "r: radio en cm, desde el eje hasta el fondo del tubo. N: velocidad en rpm"
+    },
+    {
+      "id": "t10-q232",
+      "pregunta": "¿De dónde sale la constante 1,118 × 10⁻⁵ de la FCR?",
+      "opciones": [
+        "De (2π/60)² dividido por 980,665 cm/s².",
+        "De dividir 2π por 60.",
+        "De la velocidad de la luz entre g."
+      ],
+      "correcta": 0,
+      "explicacion": "Con ω = 2π·N/60.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Entonces (2π/60)² / 980,665 cm/s² = 1,118 × 10⁻⁵"
+    },
+    {
+      "id": "t10-q233",
+      "pregunta": "¿Qué efecto tiene doblar las rpm sobre la FCR?",
+      "opciones": [
+        "La multiplica por 2.",
+        "La multiplica por 4.",
+        "No cambia."
+      ],
+      "correcta": 1,
+      "explicacion": "Depende del cuadrado de la velocidad.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Doblar las rpm | × 4 (depende del cuadrado de la velocidad)"
+    },
+    {
+      "id": "t10-q234",
+      "pregunta": "¿Qué efecto tiene doblar el radio sobre la FCR?",
+      "opciones": [
+        "La multiplica por 4.",
+        "No cambia.",
+        "La multiplica por 2."
+      ],
+      "correcta": 2,
+      "explicacion": "Es proporcional al radio.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Doblar las rpm | × 4 (depende del cuadrado de la velocidad) | | Doblar el radio | × 2 |"
+    },
+    {
+      "id": "t10-q235",
+      "pregunta": "¿Qué FCR da un radio de 10 cm a 3000 rpm?",
+      "opciones": [
+        "Unos 1006 × g.",
+        "Unos 300 × g.",
+        "Unos 10 000 × g."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el ejemplo del apunte.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Ejemplo: r = 10 cm y 3000 rpm | 1,118 × 10⁻⁵ × 10 × 3000² ≈ 1006 × g"
+    },
+    {
+      "id": "t10-q236",
+      "pregunta": "Si se triplican las rpm de una centrífuga, ¿cuánto aumenta la FCR?",
+      "opciones": [
+        "Se multiplica por 3.",
+        "Se multiplica por 9.",
+        "Se multiplica por 6."
+      ],
+      "correcta": 1,
+      "explicacion": "Depende del cuadrado de la velocidad.",
+      "fuente": "OMS, Laboratory Biosafety Manual; SCA (2017), 5.3 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "× 4 (depende del cuadrado de la velocidad)"
+    },
+    {
+      "id": "t10-q237",
+      "pregunta": "¿Cómo deben ir los tubos durante la centrifugación?",
+      "opciones": [
+        "Abiertos para ventilar.",
+        "Tapados con algodón.",
+        "Siempre tapados, a ser posible con rosca."
+      ],
+      "correcta": 2,
+      "explicacion": "Y llenos al mismo nivel.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Siempre tapados, a ser posible con rosca"
+    },
+    {
+      "id": "t10-q238",
+      "pregunta": "¿Cómo se equilibran cubetas y portacubetas?",
+      "opciones": [
+        "Emparejados por peso, con los tubos en posiciones opuestas.",
+        "Por color, con los tubos en posiciones contiguas.",
+        "No hace falta equilibrar."
+      ],
+      "correcta": 0,
+      "explicacion": "Es esencial el equilibrado.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Cubetas y portacubetas emparejados por peso, con los tubos en posiciones opuestas"
+    },
+    {
+      "id": "t10-q239",
+      "pregunta": "¿Con qué se equilibran cubetas vacías?",
+      "opciones": [
+        "Suero salino o hipoclorito.",
+        "Agua destilada o alcohol (propanol al 70 %).",
+        "Agua del grifo."
+      ],
+      "correcta": 1,
+      "explicacion": "Nunca suero salino ni hipoclorito: corroen el metal.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Para equilibrar cubetas vacías: agua destilada o alcohol (propanol al 70 %)"
+    },
+    {
+      "id": "t10-q240",
+      "pregunta": "¿Por qué no se usan suero salino ni hipoclorito para equilibrar cubetas?",
+      "opciones": [
+        "Porque son muy densos.",
+        "Porque se congelan.",
+        "Porque corroen el metal."
+      ],
+      "correcta": 2,
+      "explicacion": "Se usan agua destilada o propanol.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Nunca suero salino ni hipoclorito, porque corroen el metal"
+    },
+    {
+      "id": "t10-q241",
+      "pregunta": "Según el manual de 2003 de la OMS, ¿para qué grupos de riesgo son obligatorias las cubetas de seguridad?",
+      "opciones": [
+        "Para los grupos 3 y 4.",
+        "Para el grupo 1.",
+        "Para los grupos 1 y 2."
+      ],
+      "correcta": 0,
+      "explicacion": "Hay que revisar sus juntas.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "El manual de 2003 las hace obligatorias para los grupos de riesgo 3 y 4"
+    },
+    {
+      "id": "t10-q242",
+      "pregunta": "¿Dónde se cargan, equilibran, cierran y abren las cubetas de seguridad?",
+      "opciones": [
+        "Sobre la mesa de trabajo.",
+        "Dentro de una cabina de seguridad biológica.",
+        "Dentro de la centrífuga."
+      ],
+      "correcta": 1,
+      "explicacion": "Para evitar liberar aerosoles.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Se cargan, equilibran, cierran y abren dentro de una cabina de seguridad biológica"
+    },
+    {
+      "id": "t10-q243",
+      "pregunta": "¿Protege poner la centrífuga dentro de una cabina de clase I o II?",
+      "opciones": [
+        "Sí, de forma total.",
+        "Sí, si la cabina es de clase II.",
+        "No: las partículas salen demasiado rápidas para que las retenga el flujo de aire."
+      ],
+      "correcta": 2,
+      "explicacion": "La protección la dan la buena técnica y los tubos bien tapados.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Poner la centrífuga dentro de una cabina de clase I o II no protege: las partículas salen demasiado rápidas para que las retenga el flujo de aire"
+    },
+    {
+      "id": "t10-q244",
+      "pregunta": "¿Qué se revisa a diario en una centrífuga?",
+      "opciones": [
+        "El interior de la cámara, los rotores y las cubetas.",
+        "Solo el panel de control.",
+        "Únicamente la velocidad."
+      ],
+      "correcta": 0,
+      "explicacion": "Corrosión y grietas finas.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "A diario: el interior de la cámara (manchas a la altura del rotor), y rotores y cubetas (corrosión y grietas finas)"
+    },
+    {
+      "id": "t10-q245",
+      "pregunta": "Si un tubo se rompe con la centrífuga en marcha, ¿qué se hace primero?",
+      "opciones": [
+        "Abrir la tapa inmediatamente.",
+        "Apagar el motor y dejarla cerrada 30 minutos.",
+        "Seguir con el ciclo."
+      ],
+      "correcta": 1,
+      "explicacion": "Para que se depositen los aerosoles.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "apagar el motor y dejarla cerrada 30 minutos, para que se depositen los aerosoles"
+    },
+    {
+      "id": "t10-q246",
+      "pregunta": "Si se descubre una rotura al parar la centrífuga, ¿qué se hace?",
+      "opciones": [
+        "Abrir y limpiar el momento.",
+        "Dejar la tapa abierta una hora.",
+        "Cerrar la tapa enseguida y esperar 30 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "Después se avisa al responsable de bioseguridad.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Si se descubre al parar, cerrar la tapa enseguida y esperar 30 minutos"
+    },
+    {
+      "id": "t10-q247",
+      "pregunta": "¿Cuánto tiempo se sumergen los tubos rotos, vidrios, cubetas y rotor en desinfectante no corrosivo?",
+      "opciones": [
+        "24 horas, o se llevan al autoclave.",
+        "60 minutos.",
+        "5 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los tubos intactos, 60 minutos.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "en desinfectante no corrosivo durante 24 h, o al autoclave"
+    },
+    {
+      "id": "t10-q248",
+      "pregunta": "¿Cuánto tiempo se mantienen los tubos intactos en desinfectante tras una rotura?",
+      "opciones": [
+        "24 horas.",
+        "60 minutos.",
+        "5 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Van en otro recipiente con desinfectante.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Los tubos intactos, en otro recipiente con desinfectante, 60 minutos"
+    },
+    {
+      "id": "t10-q249",
+      "pregunta": "¿Qué se hace con la cámara tras una rotura de tubo?",
+      "opciones": [
+        "Secarla con papel y volver a usarla.",
+        "Esterilizarla con calor seco.",
+        "Pasar desinfectante, dejarlo toda la noche y repasar."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el último paso del protocolo.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Pasar desinfectante por la cámara, dejarlo toda la noche y repasar"
+    },
+    {
+      "id": "t10-q250",
+      "pregunta": "¿Qué se hace si la rotura es dentro de una cubeta de seguridad?",
+      "opciones": [
+        "Se abre en la cabina, se deja la tapa floja y se autoclava la cubeta.",
+        "Se abre fuera de la cabina.",
+        "Se deja en la centrífuga una semana."
+      ],
+      "correcta": 0,
+      "explicacion": "Se protege mejor que sin cubetas.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "se abre en la cabina, se deja la tapa floja y se autoclava la cubeta"
+    },
+    {
+      "id": "t10-q251",
+      "pregunta": "¿Cada cuánto se verifica la velocidad con un tacómetro calibrado?",
+      "opciones": [
+        "Cada día.",
+        "Una vez al año, si la velocidad es crítica para el método.",
+        "Cada cinco años."
+      ],
+      "correcta": 1,
+      "explicacion": "El tacómetro debe ser independiente.",
+      "fuente": "OMS, Laboratory Biosafety Manual (2003); Eurachem (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Velocidad con un tacómetro calibrado e independiente, una vez al año, si la velocidad es crítica para el método"
+    },
+    {
+      "id": "t10-q252",
+      "pregunta": "¿Qué son las cabinas de seguridad biológica?",
+      "opciones": [
+        "Mesas con luz ultravioleta.",
+        "Vitrinas de extracción de gases.",
+        "Recintos cerrados con circulación forzada de aire que impiden que los bioaerosoles pasen al ambiente de trabajo."
+      ],
+      "correcta": 2,
+      "explicacion": "Son la barrera física primaria.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Recintos cerrados, con circulación forzada de aire, que impiden que los bioaerosoles pasen al ambiente de trabajo"
+    },
+    {
+      "id": "t10-q253",
+      "pregunta": "¿Cuál es el principal elemento de contención del laboratorio?",
+      "opciones": [
+        "La cabina de seguridad biológica.",
+        "La bata de laboratorio.",
+        "La estufa de incubación."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la barrera física primaria.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Son la barrera física primaria, el principal elemento de contención del laboratorio"
+    },
+    {
+      "id": "t10-q254",
+      "pregunta": "¿Qué norma define las cabinas de seguridad biológica?",
+      "opciones": [
+        "La UNE-EN 1822-1.",
+        "La UNE-EN 12469:2001.",
+        "La NSF/ANSI 49 únicamente."
+      ],
+      "correcta": 1,
+      "explicacion": "La UNE-EN 1822-1 define los filtros HEPA.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Las define la norma UNE-EN 12469:2001"
+    },
+    {
+      "id": "t10-q255",
+      "pregunta": "¿Qué clase de filtro absoluto llevan las cabinas de seguridad biológica?",
+      "opciones": [
+        "Un prefiltro de algodón.",
+        "Un filtro de carbón activo.",
+        "HEPA, de clase H14 o superior."
+      ],
+      "correcta": 2,
+      "explicacion": "Está regulado en UNE-EN 1822-1.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Llevan filtros HEPA, filtros absolutos de clase H14 o superior (UNE-EN 1822-1)"
+    },
+    {
+      "id": "t10-q256",
+      "pregunta": "¿Qué retiene un filtro HEPA H14?",
+      "opciones": [
+        "El 99,995 % de las partículas de 0,3 µm.",
+        "El 50 % de los gases.",
+        "El 90 % de las partículas de 10 µm."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el tamaño más difícil de retener.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Retienen el 99,995 % de las partículas del tamaño más difícil de retener, 0,3 µm"
+    },
+    {
+      "id": "t10-q257",
+      "pregunta": "¿Por qué deben las cabinas tener indicadores del flujo de aire y alarmas?",
+      "opciones": [
+        "Para registrar el consumo eléctrico.",
+        "Porque si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida.",
+        "Porque es una exigencia estética."
+      ],
+      "correcta": 1,
+      "explicacion": "Avisan de que se pierde la contención.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "si falla la corriente o el ventilador, las diferencias de presión que dirigen el aire se pierden enseguida"
+    },
+    {
+      "id": "t10-q258",
+      "pregunta": "¿Qué ocurre con el aire de una cabina de flujo laminar horizontal tras barrer la muestra?",
+      "opciones": [
+        "Se filtra y sale al exterior.",
+        "Se recircula al producto.",
+        "Sale hacia el operador."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso no protege a la persona.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "En la horizontal, el aire, tras barrer la muestra, sale hacia el operador"
+    },
+    {
+      "id": "t10-q259",
+      "pregunta": "¿Puede usarse una cabina de flujo laminar con agentes infecciosos?",
+      "opciones": [
+        "No, ni con efectos tóxicos o alérgicos.",
+        "Sí, para el grupo 2.",
+        "Sí, si está certificada."
+      ],
+      "correcta": 0,
+      "explicacion": "No es de seguridad biológica.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "¿Para agentes infecciosos? | Sí | No, ni con efectos tóxicos o alérgicos"
+    },
+    {
+      "id": "t10-q260",
+      "pregunta": "¿A quién protege una cabina de clase I?",
+      "opciones": [
+        "A la persona, al ambiente y al producto.",
+        "A la persona y al ambiente.",
+        "Solo al producto."
+      ],
+      "correcta": 1,
+      "explicacion": "No protege el producto.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "| Protege a | Persona y ambiente | Persona, ambiente y producto |"
+    },
+    {
+      "id": "t10-q261",
+      "pregunta": "¿Qué velocidad de entrada de aire tiene una cabina de clase I?",
+      "opciones": [
+        "0,38 m/s o más.",
+        "0,25-0,4 m/s.",
+        "0,7-1 m/s."
+      ],
+      "correcta": 2,
+      "explicacion": "Más de 1 m/s es peor.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Velocidad de entrada | 0,7-1 m/s"
+    },
+    {
+      "id": "t10-q262",
+      "pregunta": "¿Qué velocidad mínima de entrada tiene una cabina de clase II?",
+      "opciones": [
+        "0,38 m/s o más.",
+        "0,7-1 m/s.",
+        "0,7 m/s con un guante quitado."
+      ],
+      "correcta": 0,
+      "explicacion": "Su flujo descendente es 0,25-0,4 m/s.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Velocidad de entrada | 0,7-1 m/s | ≥ 0,38 m/s | ≥ 0,7 m/s con un guante quitado"
+    },
+    {
+      "id": "t10-q263",
+      "pregunta": "¿Qué velocidad mínima se exige en una cabina de clase III con un guante quitado?",
+      "opciones": [
+        "0,38 m/s.",
+        "0,7 m/s.",
+        "1 m/s."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la clase totalmente cerrada.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Velocidad de entrada | 0,7-1 m/s | ≥ 0,38 m/s | ≥ 0,7 m/s con un guante quitado"
+    },
+    {
+      "id": "t10-q264",
+      "pregunta": "¿Cómo es el flujo de aire interior de una cabina de clase III?",
+      "opciones": [
+        "Laminar descendente.",
+        "Laminar horizontal.",
+        "Turbulento."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso no evita la contaminación cruzada.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Flujo laminar descendente | No | Sí, 0,25-0,4 m/s | No: el aire es turbulento"
+    },
+    {
+      "id": "t10-q265",
+      "pregunta": "¿Cómo se extrae el aire en una cabina de clase III?",
+      "opciones": [
+        "Por dos HEPA en serie, al exterior por conducto.",
+        "Por un solo HEPA a la sala.",
+        "Se recircula todo."
+      ],
+      "correcta": 0,
+      "explicacion": "Expulsa todo el aire.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Por dos HEPA en serie, al exterior por conducto"
+    },
+    {
+      "id": "t10-q266",
+      "pregunta": "¿A qué presión trabaja una cabina de clase I?",
+      "opciones": [
+        "A presión positiva.",
+        "A presión negativa, formando una barrera de aire.",
+        "A presión atmosférica."
+      ],
+      "correcta": 1,
+      "explicacion": "No protege el producto.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Trabaja a presión negativa. El aire del local entra por la abertura y forma una barrera de aire"
+    },
+    {
+      "id": "t10-q267",
+      "pregunta": "En una cabina de clase II, ¿qué zonas están a presión negativa?",
+      "opciones": [
+        "Solo la abertura frontal.",
+        "Ninguna.",
+        "Todas por donde pasa aire contaminado."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una característica de la clase II.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Todas las zonas por donde pasa aire contaminado están a presión negativa"
+    },
+    {
+      "id": "t10-q268",
+      "pregunta": "¿Qué presión negativa mínima tiene una cabina de clase III?",
+      "opciones": [
+        "200 Pa.",
+        "20 Pa.",
+        "2000 Pa."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la clase más protectora.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Presión negativa de al menos 200 Pa"
+    },
+    {
+      "id": "t10-q269",
+      "pregunta": "¿Por dónde entran y salen los materiales en una cabina de clase III?",
+      "opciones": [
+        "Por la abertura frontal.",
+        "Por una caja de paso, un tanque de inmersión química o un autoclave de doble puerta.",
+        "Por la rejilla trasera."
+      ],
+      "correcta": 1,
+      "explicacion": "Cierra totalmente la cabina.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Los materiales entran y salen por una caja de paso o un tanque de inmersión química, o por un autoclave de doble puerta"
+    },
+    {
+      "id": "t10-q270",
+      "pregunta": "¿Para qué agentes es la cabina de clase III?",
+      "opciones": [
+        "Los del grupo 1.",
+        "Solo los del grupo 2.",
+        "Los del grupo 4."
+      ],
+      "correcta": 2,
+      "explicacion": "Da la máxima protección.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Da la máxima protección, incluida la protección por contacto, y es la de los agentes del grupo 4"
+    },
+    {
+      "id": "t10-q271",
+      "pregunta": "¿Protege la clase III de la contaminación cruzada?",
+      "opciones": [
+        "No: protege de la externa pero no de la cruzada, porque el aire interior es turbulento.",
+        "Sí, totalmente.",
+        "Solo de la externa."
+      ],
+      "correcta": 0,
+      "explicacion": "Protege el producto de la contaminación externa.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "Protege el producto de la contaminación externa, pero no de la cruzada, porque el aire interior es turbulento"
+    },
+    {
+      "id": "t10-q272",
+      "pregunta": "¿Qué tipo de cabina de clase II equivale a la UNE-EN 12469 y es la más vendida?",
+      "opciones": [
+        "La B2.",
+        "La A2.",
+        "La A1."
+      ],
+      "correcta": 1,
+      "explicacion": "Es de la norma NSF/ANSI 49.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "A2 | 0,51 m/s | 70 % / 30 %. Equivale a la clase II de la UNE-EN 12469; es la más vendida"
+    },
+    {
+      "id": "t10-q273",
+      "pregunta": "¿Cuántos tipos de clase II define la norma NSF/ANSI 49?",
+      "opciones": [
+        "Tres: A, B y C.",
+        "Dos: A y B.",
+        "Cinco: A1, A2, B1, B2 y C1."
+      ],
+      "correcta": 2,
+      "explicacion": "La UNE-EN 12469 no los distingue.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "La UNE-EN 12469 no los distingue; la norma estadounidense NSF/ANSI 49 define cinco"
+    },
+    {
+      "id": "t10-q274",
+      "pregunta": "¿Qué son los aisladores según la NTP 1203?",
+      "opciones": [
+        "Recintos cerrados con una contención parecida a la de la clase III.",
+        "Cabinas de flujo laminar.",
+        "Cabinas de clase I sin HEPA."
+      ],
+      "correcta": 0,
+      "explicacion": "Se diseñan a medida y no se ajustan a ninguna norma internacional.",
+      "fuente": "INSST, NTP 1202 (2024) y NTP 1203; NSF/ANSI 49 · apunte §5.2",
+      "apartado": "5.2",
+      "evidencia": "recintos cerrados con una contención parecida a la de la clase III"
+    },
+    {
+      "id": "t10-q275",
+      "pregunta": "¿Qué criterios se usan para elegir la cabina?",
+      "opciones": [
+        "Solo el precio.",
+        "Grupo de riesgo, vía de transmisión, cantidad de material y generación de bioaerosoles.",
+        "Solo el tamaño del laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "Son cuatro criterios.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "el grupo de riesgo del agente, si se transmite por el aire o por contacto, la cantidad de material y si se generan bioaerosoles"
+    },
+    {
+      "id": "t10-q276",
+      "pregunta": "Para agentes de los grupos 1 y 2, ¿qué cabina puede valer?",
+      "opciones": [
+        "La clase III.",
+        "Ninguna.",
+        "La clase I, aunque el grupo 2 se trabaja sobre todo en clase II."
+      ],
+      "correcta": 2,
+      "explicacion": "Se trabaja sobre todo en clase II.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Puede valer la clase I. El grupo 2 se trabaja sobre todo en clase II"
+    },
+    {
+      "id": "t10-q277",
+      "pregunta": "¿Qué cabina se usa para agentes del grupo 3?",
+      "opciones": [
+        "Clase II o III.",
+        "Solo clase I.",
+        "Ninguna."
+      ],
+      "correcta": 0,
+      "explicacion": "Son agentes más peligrosos que el grupo 2.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Agentes del grupo 3 | Clase II o III"
+    },
+    {
+      "id": "t10-q278",
+      "pregunta": "¿Qué cabina se usa para agentes del grupo 4?",
+      "opciones": [
+        "Clase I.",
+        "Clase III, o la II con trajes especiales de presión positiva.",
+        "Clase II sin traje."
+      ],
+      "correcta": 1,
+      "explicacion": "Son los más peligrosos.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Clase III. También la II, con trajes especiales de presión positiva"
+    },
+    {
+      "id": "t10-q279",
+      "pregunta": "¿Qué ocurre con los productos químicos volátiles y el HEPA?",
+      "opciones": [
+        "El HEPA retiene los vapores.",
+        "No hay problema con volátiles.",
+        "El HEPA no retiene gases ni vapores: hay que añadir otros filtros y expulsar al exterior."
+      ],
+      "correcta": 2,
+      "explicacion": "Hay que usar otras cabinas.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "El HEPA no retiene gases ni vapores: hay que añadir otros filtros y expulsar al exterior"
+    },
+    {
+      "id": "t10-q280",
+      "pregunta": "Según el RD 664/1997 (anexo IV), ¿cuándo se exige cabina en el nivel 2?",
+      "opciones": [
+        "Cuando proceda.",
+        "Siempre.",
+        "Nunca."
+      ],
+      "correcta": 0,
+      "explicacion": "En el 3 si la infección se propaga por el aire.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "nivel 2: cabina «cuando proceda»"
+    },
+    {
+      "id": "t10-q281",
+      "pregunta": "¿Qué cabina pide la guía del INSST, en el nivel 2, para técnicas que generan aerosoles?",
+      "opciones": [
+        "Solo clase III.",
+        "Clase I o, preferiblemente, clase II.",
+        "Una cabina de flujo laminar."
+      ],
+      "correcta": 1,
+      "explicacion": "Para el nivel 2.",
+      "fuente": "INSST, NTP 1202 (2024); RD 664/1997, anexo IV · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "cabina de clase I o, preferiblemente, II para las técnicas que generan aerosoles"
+    },
+    {
+      "id": "t10-q282",
+      "pregunta": "¿Dónde no se debe instalar una cabina?",
+      "opciones": [
+        "En una zona sin corrientes.",
+        "En el centro de una sala sin paso.",
+        "Cerca de corrientes: puertas, ventanas, zonas de paso, rejillas del aire acondicionado."
+      ],
+      "correcta": 2,
+      "explicacion": "Para no alterar el flujo.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Lejos de corrientes: puertas, ventanas, zonas de paso, rejillas del aire acondicionado, otras cabinas"
+    },
+    {
+      "id": "t10-q283",
+      "pregunta": "¿Qué distancias libres se dejan alrededor de la cabina para mantenimiento?",
+      "opciones": [
+        "30 cm detrás y a los lados y 45 cm por encima.",
+        "5 cm detrás y 10 cm encima.",
+        "1 m a cada lado."
+      ],
+      "correcta": 0,
+      "explicacion": "Es un requisito de instalación.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Dejar 30 cm detrás y a los lados y 45 cm por encima, para el mantenimiento"
+    },
+    {
+      "id": "t10-q284",
+      "pregunta": "¿Quién hace el examen de tipo de una cabina y cuándo?",
+      "opciones": [
+        "El laboratorio, cada año.",
+        "El fabricante, una vez.",
+        "El instalador, cada año."
+      ],
+      "correcta": 1,
+      "explicacion": "Incluye estanqueidad de la carcasa.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Examen de tipo | Una vez, el fabricante"
+    },
+    {
+      "id": "t10-q285",
+      "pregunta": "¿Qué marcado llevan las cabinas conformes a la norma?",
+      "opciones": [
+        "Marcado ISO.",
+        "Marcado AENOR.",
+        "Marcado CE."
+      ],
+      "correcta": 2,
+      "explicacion": "Lo exige la conformidad con la UNE-EN 12469.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Las cabinas conformes a la norma llevan marcado CE"
+    },
+    {
+      "id": "t10-q286",
+      "pregunta": "¿Cuándo certifica una cabina el personal técnico cualificado?",
+      "opciones": [
+        "Al instalarla, al menos una vez al año, y tras un cambio de sitio o una reparación.",
+        "Solo al comprarla.",
+        "Cada cinco años."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una certificación periódica.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Personal técnico cualificado certifica al instalarlas y después al menos una vez al año, además de tras un cambio de sitio o una reparación"
+    },
+    {
+      "id": "t10-q287",
+      "pregunta": "¿Qué comprueba la certificación de la cabina?",
+      "opciones": [
+        "Solo la luz de la cabina.",
+        "Integridad, fugas de HEPA, velocidades, presión negativa, alarmas e interbloqueos.",
+        "Únicamente el color."
+      ],
+      "correcta": 1,
+      "explicacion": "También el perfil de velocidad descendente.",
+      "fuente": "INSST, NTP 1202 (2024); UNE-EN 12469:2001; Eurachem (2023) · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "la integridad de la cabina y las fugas de los filtros HEPA"
+    },
+    {
+      "id": "t10-q288",
+      "pregunta": "¿Qué se hace con la lámpara UV al empezar a trabajar en la cabina?",
+      "opciones": [
+        "Dejarla encendida.",
+        "Subirla al máximo.",
+        "Apagarla."
+      ],
+      "correcta": 2,
+      "explicacion": "Se enciende la luz y el ventilador.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Apagar la lámpara UV, encender la luz y el ventilador, y comprobar que las rejillas están libres"
+    },
+    {
+      "id": "t10-q289",
+      "pregunta": "¿Cuánto tiempo se deja funcionar la cabina antes de empezar?",
+      "opciones": [
+        "5-10 minutos.",
+        "30 segundos.",
+        "1 hora."
+      ],
+      "correcta": 0,
+      "explicacion": "Antes de empezar a trabajar.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Dejarla funcionar 5-10 minutos"
+    },
+    {
+      "id": "t10-q290",
+      "pregunta": "¿Qué materiales no deben meterse en la cabina?",
+      "opciones": [
+        "Los plásticos.",
+        "Los que sueltan partículas: papel, madera, lápices, tapones de algodón.",
+        "Los frascos de vidrio."
+      ],
+      "correcta": 1,
+      "explicacion": "Alteran el flujo.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "No meter materiales que suelten partículas: papel, madera, lápices, tapones de algodón"
+    },
+    {
+      "id": "t10-q291",
+      "pregunta": "¿Cómo se colocan los materiales dentro de la cabina?",
+      "opciones": [
+        "Mezclados, sin orden.",
+        "De la zona contaminada a la limpia.",
+        "De la zona limpia a la contaminada, con el recipiente de residuos dentro."
+      ],
+      "correcta": 2,
+      "explicacion": "Ordenados.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Colocar todo ordenado, de la zona limpia a la contaminada, con el recipiente de residuos dentro"
+    },
+    {
+      "id": "t10-q292",
+      "pregunta": "¿Cuánto tiempo se deja barrer el aire antes de empezar a trabajar?",
+      "opciones": [
+        "3-5 minutos.",
+        "30 segundos.",
+        "20 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "Tras colocar el material.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Dejar que el aire barra 3-5 minutos antes de empezar"
+    },
+    {
+      "id": "t10-q293",
+      "pregunta": "¿A qué distancia de la rejilla frontal se trabaja en la cabina?",
+      "opciones": [
+        "Pegado a la rejilla.",
+        "Al menos 10 cm detrás de ella, y a 5-10 cm de la superficie.",
+        "A 30 cm sobre la superficie."
+      ],
+      "correcta": 1,
+      "explicacion": "Las operaciones más contaminantes, hacia el fondo.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Trabajar al menos a 10 cm detrás de la rejilla frontal, y a 5-10 cm de la superficie, lejos de los bordes"
+    },
+    {
+      "id": "t10-q294",
+      "pregunta": "¿Sobre qué se trabaja en la cabina?",
+      "opciones": [
+        "Sobre papel de filtro seco.",
+        "Directamente sobre el acero.",
+        "Sobre paños absorbentes empapados en desinfectante."
+      ],
+      "correcta": 2,
+      "explicacion": "Evita aerosoles.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Trabajar sobre paños absorbentes empapados en desinfectante"
+    },
+    {
+      "id": "t10-q295",
+      "pregunta": "¿Por qué se evitan las llamas en la cabina?",
+      "opciones": [
+        "Porque el mechero altera el flujo y daña el filtro.",
+        "Porque consumen oxígeno.",
+        "Porque no hay gas."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usan asas desechables o microincineradores.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Evitar las llamas: el mechero altera el flujo y daña el filtro"
+    },
+    {
+      "id": "t10-q296",
+      "pregunta": "¿Qué se usa en lugar del mechero dentro de la cabina?",
+      "opciones": [
+        "Un mechero pequeño.",
+        "Asas desechables o microincineradores, colocados al fondo.",
+        "Un soplete."
+      ],
+      "correcta": 1,
+      "explicacion": "Evitan alterar el flujo.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "En su lugar, asas desechables o microincineradores, colocados al fondo"
+    },
+    {
+      "id": "t10-q297",
+      "pregunta": "¿Cuánto se espera tras meter material nuevo en la cabina?",
+      "opciones": [
+        "30 segundos.",
+        "20 minutos.",
+        "2-3 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "Más material genera más turbulencias.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Tras meter material nuevo, esperar 2-3 minutos. Cuanto más material dentro, más turbulencias"
+    },
+    {
+      "id": "t10-q298",
+      "pregunta": "¿Cuántas personas trabajan a la vez en una cabina?",
+      "opciones": [
+        "Una sola.",
+        "Dos.",
+        "Las que quepan."
+      ],
+      "correcta": 0,
+      "explicacion": "Evita turbulencias.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Una sola persona trabajando en la cabina"
+    },
+    {
+      "id": "t10-q299",
+      "pregunta": "¿Qué agente se usa normalmente en la descontaminación por gas o vapor de una cabina?",
+      "opciones": [
+        "Cloro gas.",
+        "Peróxido de hidrógeno vaporizado.",
+        "Formaldehído líquido."
+      ],
+      "correcta": 1,
+      "explicacion": "La hace personal competente.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "Descontaminación por gas o vapor, normalmente con peróxido de hidrógeno vaporizado, que hace personal competente"
+    },
+    {
+      "id": "t10-q300",
+      "pregunta": "¿Cuándo se descontamina la cabina por gas o vapor?",
+      "opciones": [
+        "Solo al instalarla.",
+        "Cada día.",
+        "Antes de moverla, al cambiar de agente, tras un derrame inaccesible y antes de ensayar o cambiar filtros."
+      ],
+      "correcta": 2,
+      "explicacion": "Son cuatro supuestos.",
+      "fuente": "INSST, NTP 1202 (2024) · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "- antes de moverla de sitio; - al cambiar de agente de trabajo; - tras un derrame que llegue a partes inaccesibles;"
     }
   ],
   "supuestos": [
@@ -1760,7 +4788,12 @@
         {
           "id": "t10-s01-q1",
           "pregunta": "La estufa de 22 °C:",
-          "opciones": ["Solo necesita calefacción, como las demás.", "Debe colocarse junto a la ventana para que se ventile.", "Necesita refrigeración además de calefacción, porque el ambiente supera su temperatura de consigna.", "Puede sustituirse por dejar las placas en la mesa del laboratorio."],
+          "opciones": [
+            "Solo necesita calefacción, como las demás.",
+            "Debe colocarse junto a la ventana para que se ventile.",
+            "Necesita refrigeración además de calefacción, porque el ambiente supera su temperatura de consigna.",
+            "Puede sustituirse por dejar las placas en la mesa del laboratorio."
+          ],
           "correcta": 2,
           "explicacion": "Si la temperatura ambiente es cercana a la de consigna o mayor, hace falta refrigeración. Además, no debe estar en corrientes ni al sol.",
           "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
@@ -1768,7 +4801,12 @@
         {
           "id": "t10-s01-q2",
           "pregunta": "Para la estufa de 44 °C, la fluctuación máxima admitida y la precisión del termómetro son:",
-          "opciones": ["± 1 °C y ± 0,5 °C.", "± 0,5 °C y ± 0,1 °C.", "± 2 °C y ± 1 °C.", "± 0,1 °C y ± 0,01 °C."],
+          "opciones": [
+            "± 1 °C y ± 0,5 °C.",
+            "± 0,5 °C y ± 0,1 °C.",
+            "± 2 °C y ± 1 °C.",
+            "± 0,1 °C y ± 0,01 °C."
+          ],
           "correcta": 1,
           "explicacion": "A 40 °C o más: ± 0,5 °C, con termómetros de ± 0,1 °C. Entre 20 y 40 °C, ± 1 °C.",
           "fuente": "SCA, Practices and Procedures for Laboratories (2017)"
@@ -1776,7 +4814,12 @@
         {
           "id": "t10-s01-q3",
           "pregunta": "Antes de usar las estufas, el laboratorio debe:",
-          "opciones": ["Hacer un perfil de temperatura con termómetros en distintos puntos durante un tiempo, por ejemplo 24 h, y marcar las zonas frías o calientes para no usarlas.", "Fiarse del indicador digital de fábrica sin comprobarlo.", "Apilar las placas en columnas de veinte para ahorrar espacio.", "Leer la temperatura una vez a la semana."],
+          "opciones": [
+            "Hacer un perfil de temperatura con termómetros en distintos puntos durante un tiempo, por ejemplo 24 h, y marcar las zonas frías o calientes para no usarlas.",
+            "Fiarse del indicador digital de fábrica sin comprobarlo.",
+            "Apilar las placas en columnas de veinte para ahorrar espacio.",
+            "Leer la temperatura una vez a la semana."
+          ],
           "correcta": 0,
           "explicacion": "La homogeneidad se verifica al principio y tras reparación o traslado. Además: no más de seis placas por pila y dos lecturas al día.",
           "fuente": "SCA, Practices and Procedures for Laboratories (2017); Eurachem, Accreditation for Microbiological Laboratories (2023)"
@@ -1784,7 +4827,12 @@
         {
           "id": "t10-s01-q4",
           "pregunta": "Para obtener 3000 × g con un rotor de 15 cm, la centrífuga debe girar a unas:",
-          "opciones": ["3000 rpm.", "1340 rpm.", "17 900 rpm.", "4230 rpm."],
+          "opciones": [
+            "3000 rpm.",
+            "1340 rpm.",
+            "17 900 rpm.",
+            "4230 rpm."
+          ],
           "correcta": 3,
           "explicacion": "N = √(FCR / (1,118 × 10⁻⁵ × r)) = √(3000 / (1,118 × 10⁻⁵ × 15)) ≈ 4230 rpm. Las rpm no equivalen a g.",
           "fuente": "Deducción de la FCR"
@@ -1792,7 +4840,12 @@
         {
           "id": "t10-s01-q5",
           "pregunta": "Como la velocidad es crítica para el método, la centrífuga debe:",
-          "opciones": ["Comprobarse solo cuando haga ruidos.", "Verificarse con un tacómetro calibrado e independiente, al menos una vez al año.", "Calibrarse cada cinco años por el fabricante.", "Usarse siempre a la velocidad máxima para ir sobre seguro."],
+          "opciones": [
+            "Comprobarse solo cuando haga ruidos.",
+            "Verificarse con un tacómetro calibrado e independiente, al menos una vez al año.",
+            "Calibrarse cada cinco años por el fabricante.",
+            "Usarse siempre a la velocidad máxima para ir sobre seguro."
+          ],
           "correcta": 1,
           "explicacion": "Eurachem: tacómetro calibrado, anual, si la velocidad es crítica. También tiempo y temperatura si el método depende de ellos.",
           "fuente": "Eurachem, Accreditation for Microbiological Laboratories (2023); SCA, Practices and Procedures for Laboratories (2017)"
@@ -1807,7 +4860,12 @@
         {
           "id": "t10-s02-q1",
           "pregunta": "¿En qué equipo debe hacer la siembra?",
-          "opciones": ["En la cabina de flujo laminar horizontal, porque protege mejor la placa.", "En la mesa, junto al mechero.", "En cualquiera de las dos cabinas, son equivalentes.", "En la cabina de seguridad biológica de clase II, que protege al trabajador, al ambiente y al producto."],
+          "opciones": [
+            "En la cabina de flujo laminar horizontal, porque protege mejor la placa.",
+            "En la mesa, junto al mechero.",
+            "En cualquiera de las dos cabinas, son equivalentes.",
+            "En la cabina de seguridad biológica de clase II, que protege al trabajador, al ambiente y al producto."
+          ],
           "correcta": 3,
           "explicacion": "La de flujo laminar no es de seguridad biológica: en la horizontal el aire sale hacia el operador. La clase II protege además la placa.",
           "fuente": "NTP 1202 (INSST, 2024)"
@@ -1815,7 +4873,12 @@
         {
           "id": "t10-s02-q2",
           "pregunta": "Antes de empezar a trabajar en la cabina, debe:",
-          "opciones": ["Apagar la UV, encender luz y ventilador, dejarla funcionar 5-10 minutos y desinfectar la superficie.", "Encender la UV y trabajar con ella encendida para mayor esterilidad.", "Meter todo el material, incluidos papeles y lápices, sin ordenar.", "Tapar la rejilla frontal con un paño para que no entre aire."],
+          "opciones": [
+            "Apagar la UV, encender luz y ventilador, dejarla funcionar 5-10 minutos y desinfectar la superficie.",
+            "Encender la UV y trabajar con ella encendida para mayor esterilidad.",
+            "Meter todo el material, incluidos papeles y lápices, sin ordenar.",
+            "Tapar la rejilla frontal con un paño para que no entre aire."
+          ],
           "correcta": 0,
           "explicacion": "NTP 1202: comprobar rejillas libres, 5-10 minutos de funcionamiento, alcohol al 70 %, material ordenado de limpio a contaminado y 3-5 minutos de barrido.",
           "fuente": "NTP 1202 (INSST, 2024)"
@@ -1823,7 +4886,12 @@
         {
           "id": "t10-s02-q3",
           "pregunta": "Para esterilizar el asa entre siembras, dentro de la cabina:",
-          "opciones": ["Enciende un mechero Bunsen en el centro.", "Usa asas desechables o un microincinerador colocado al fondo.", "Saca el asa de la cabina y la flamea fuera.", "Enciende la lámpara UV un minuto."],
+          "opciones": [
+            "Enciende un mechero Bunsen en el centro.",
+            "Usa asas desechables o un microincinerador colocado al fondo.",
+            "Saca el asa de la cabina y la flamea fuera.",
+            "Enciende la lámpara UV un minuto."
+          ],
           "correcta": 1,
           "explicacion": "Las llamas alteran el flujo y pueden dañar el filtro.",
           "fuente": "NTP 1202 (INSST, 2024); Guía técnica INSST (2024)"
@@ -1831,7 +4899,12 @@
         {
           "id": "t10-s02-q4",
           "pregunta": "En la centrifugación, las cubetas de seguridad deben:",
-          "opciones": ["Abrirse sobre la mesa en cuanto pare el rotor.", "Llenarse con solución salina para equilibrarlas.", "Cargarse, equilibrarse, cerrarse y abrirse dentro de la cabina de seguridad biológica.", "Dejarse abiertas para que escape el calor."],
+          "opciones": [
+            "Abrirse sobre la mesa en cuanto pare el rotor.",
+            "Llenarse con solución salina para equilibrarlas.",
+            "Cargarse, equilibrarse, cerrarse y abrirse dentro de la cabina de seguridad biológica.",
+            "Dejarse abiertas para que escape el calor."
+          ],
           "correcta": 2,
           "explicacion": "Normas de la OMS. Para equilibrar, agua destilada o propanol al 70 %, nunca salino ni hipoclorito.",
           "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)"
@@ -1839,7 +4912,12 @@
         {
           "id": "t10-s02-q5",
           "pregunta": "Durante el centrifugado oye un ruido de cristal roto. En una centrífuga sin cubetas herméticas, lo correcto sería:",
-          "opciones": ["Apagar el motor, dejarla cerrada 30 minutos y avisar al responsable de bioseguridad.", "Abrir enseguida para recoger los cristales antes de que se sequen.", "Terminar el ciclo y retirar los tubos intactos con la mano.", "Rociar desinfectante por la rendija de la tapa con la centrífuga girando."],
+          "opciones": [
+            "Apagar el motor, dejarla cerrada 30 minutos y avisar al responsable de bioseguridad.",
+            "Abrir enseguida para recoger los cristales antes de que se sequen.",
+            "Terminar el ciclo y retirar los tubos intactos con la mano.",
+            "Rociar desinfectante por la rendija de la tapa con la centrífuga girando."
+          ],
           "correcta": 0,
           "explicacion": "Los 30 minutos dejan depositarse los aerosoles. Después: guantes gruesos, pinzas, desinfectante 24 h o autoclave; tubos intactos, 60 minutos.",
           "fuente": "OMS, Laboratory Biosafety Manual (2003 y 2020)"
