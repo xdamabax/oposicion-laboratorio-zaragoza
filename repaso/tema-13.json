@@ -3685,6 +3685,258 @@
       "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.1",
       "apartado": "6.1",
       "evidencia": "ultrasonidos, con la membrana cubierta de diluyente en baño ultrasónico; es la más habitual"
+    },
+    {
+      "id": "t13-q225",
+      "pregunta": "¿Cuál es el volumen ideal de muestra de agua para concentrar Legionella?",
+      "opciones": [
+        "100 mL.",
+        "1000 mL.",
+        "10 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "Se parte de un litro y se concentra a 10 mL, es decir, 100 veces.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Volumen ideal de muestra: 1000 mL."
+    },
+    {
+      "id": "t13-q226",
+      "pregunta": "Se concentran 1000 mL de agua a 10 mL. ¿Qué factor de concentración se ha conseguido?",
+      "opciones": [
+        "100 veces.",
+        "10 veces.",
+        "1000 veces."
+      ],
+      "correcta": 0,
+      "explicacion": "1000 ÷ 10 = 100, dentro del intervalo exigido de 100 a 1000 veces.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Por ejemplo, 1000 mL → 10 mL = 100 veces."
+    },
+    {
+      "id": "t13-q227",
+      "pregunta": "Se parte de 1000 mL y el concentrado final debe representar 500 veces el volumen original. ¿A qué volumen hay que concentrar?",
+      "opciones": [
+        "A 20 mL.",
+        "A 2 mL.",
+        "A 0,5 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "1000 ÷ 500 = 2 mL. Con 20 mL el factor sería 50, por debajo del mínimo de 100.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "El concentrado final debe representar una concentración de 100 a 1000 veces el volumen original."
+    },
+    {
+      "id": "t13-q228",
+      "pregunta": "¿Qué le ocurre a la recuperación total si se encadenan varios pasos de concentración?",
+      "opciones": [
+        "Mejora, porque se recupera lo perdido en el paso anterior.",
+        "No cambia, porque cada paso es independiente.",
+        "Empeora, aunque el límite de detección baje."
+      ],
+      "correcta": 2,
+      "explicacion": "Cada paso pierde parte de las bacterias; encadenarlos permite bajar el límite de detección a costa de la recuperación.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Se pueden encadenar varios para bajar el límite, pero la recuperación total empeora."
+    },
+    {
+      "id": "t13-q229",
+      "pregunta": "Sin concentrar, ¿qué volumen se siembra directamente como máximo?",
+      "opciones": [
+        "5 mL.",
+        "100 mL.",
+        "0,5 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Sembrando directamente no más de 0,5 mL solo se detectan concentraciones altas; por eso se concentra.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "sembrando directamente un volumen pequeño (no más de 0,5 mL), solo se detectan concentraciones altas"
+    },
+    {
+      "id": "t13-q230",
+      "pregunta": "En la fórmula ufc/L = colonias × (1000 ÷ A) × (B ÷ V), ¿qué es A?",
+      "opciones": [
+        "El volumen del concentrado, en mL.",
+        "El volumen de muestra que se ha concentrado, en mL.",
+        "El volumen del concentrado que se siembra, en mL."
+      ],
+      "correcta": 1,
+      "explicacion": "A es la muestra concentrada, B el concentrado y V lo que se siembra de ese concentrado.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "A: volumen de muestra concentrado (mL)"
+    },
+    {
+      "id": "t13-q231",
+      "pregunta": "Se obtienen 10 mL de concentrado y se siembra 0,5 mL. En el cálculo en ufc/L, ¿qué cociente aportan esos dos datos?",
+      "opciones": [
+        "10 ÷ 0,5 = 20.",
+        "0,5 ÷ 10 = 0,05.",
+        "10 × 0,5 = 5."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el cociente B ÷ V: el concentrado entre la parte sembrada. Invertirlo dividiría el resultado por 400.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "B: volumen del concentrado (mL)"
+    },
+    {
+      "id": "t13-q232",
+      "pregunta": "Se concentran 1000 mL a 10 mL, se siembran 0,2 mL y salen 12 colonias confirmadas. ¿Cuántas ufc/L hay?",
+      "opciones": [
+        "60 ufc/L.",
+        "600 ufc/L.",
+        "1200 ufc/L."
+      ],
+      "correcta": 1,
+      "explicacion": "12 × (1000 ÷ 1000) × (10 ÷ 0,2) = 12 × 1 × 50 = 600 ufc/L.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "ufc/L = colonias × (1000 ÷ A) × (B ÷ V)"
+    },
+    {
+      "id": "t13-q233",
+      "pregunta": "De un agua se filtran 200 mL, la membrana se eluye en 10 mL y de ese eluido se cultiva 0,5 mL: crecen 9 colonias confirmadas. ¿Qué resultado se informa?",
+      "opciones": [
+        "900 ufc/L.",
+        "90 ufc/L.",
+        "450 ufc/L."
+      ],
+      "correcta": 0,
+      "explicacion": "ufc/L = 9 × (1000 ÷ 200) × (10 ÷ 0,5) = 9 × 5 × 20 = 900. Olvidar el paso a litro deja 90.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "A: volumen de muestra concentrado (mL)"
+    },
+    {
+      "id": "t13-q234",
+      "pregunta": "Un litro de agua queda reducido a 5 mL de concentrado. Si al cultivar 0,1 mL crecen 3 colonias confirmadas, ¿qué recuento tiene el agua?",
+      "opciones": [
+        "15 ufc/L.",
+        "1500 ufc/L.",
+        "150 ufc/L."
+      ],
+      "correcta": 2,
+      "explicacion": "Cada colonia vale 1 × (5 ÷ 0,1) = 50 ufc/L, así que 3 colonias son 150 ufc/L.",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "V: volumen del concentrado sembrado (mL)"
+    },
+    {
+      "id": "t13-q235",
+      "pregunta": "Se concentran 500 mL a 10 mL y se siembran 0,5 mL. ¿Cuántas colonias confirmadas hacen falta para alcanzar el nivel de alerta de 100 ufc/L?",
+      "opciones": [
+        "1 colonia basta para superarlo.",
+        "2,5, es decir, 3 colonias ya lo superan.",
+        "Hacen falta más de 25 colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "Una colonia equivale a 1 × 2 × 20 = 40 ufc/L; para pasar de 100 hacen falta 2,5, o sea 3 colonias (120 ufc/L).",
+      "fuente": "SCA, Legionella (2020), parte 2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "La concentración debe permitir detectar al menos 100 ufc por litro: es el nivel de alerta británico."
+    },
+    {
+      "id": "t13-q236",
+      "pregunta": "¿Cuáles son las tres variantes de la ISO 11731 para Legionella?",
+      "opciones": [
+        "Siembra directa, filtración con membrana directa sobre el agar, y filtración con elución.",
+        "Siembra directa, centrifugación y separación inmunomagnética.",
+        "Filtración, NMP en tubos y NMP en bandeja de 96 pocillos."
+      ],
+      "correcta": 0,
+      "explicacion": "La centrifugación y el Legiolert aparecen en el método británico, no como variantes de la ISO 11731.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "La ISO 11731 tiene tres variantes:"
+    },
+    {
+      "id": "t13-q237",
+      "pregunta": "¿Para qué se trata una parte del concentrado de Legionella con ácido y otra con calor?",
+      "opciones": [
+        "Para romper las células y liberar su ADN.",
+        "Para que Legionella esporule y resista el cultivo.",
+        "Para frenar a la flora acompañante."
+      ],
+      "correcta": 2,
+      "explicacion": "Se siembran las tres fracciones (sin tratar, ácida y calentada) y se informa la placa con más colonias confirmadas.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Una parte del concentrado se trata con ácido y otra con calor, para frenar a la flora acompañante"
+    },
+    {
+      "id": "t13-q238",
+      "pregunta": "¿En qué atmósfera se incuban las placas de Legionella?",
+      "opciones": [
+        "En anaerobiosis estricta.",
+        "En atmósfera húmeda.",
+        "En atmósfera seca con desecante."
+      ],
+      "correcta": 1,
+      "explicacion": "Diez días de incubación secarían el agar; la humedad lo evita.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Incubación: 36 ± 1 °C durante 10 días (1322 #26), en atmósfera húmeda"
+    },
+    {
+      "id": "t13-q239",
+      "pregunta": "¿Cada cuánto se revisan las placas de Legionella durante su incubación?",
+      "opciones": [
+        "Cada 2-3 días; por ejemplo, los días 3, 7 y 10.",
+        "Solo el último día, el décimo.",
+        "Cada 24 horas, sin excepción."
+      ],
+      "correcta": 0,
+      "explicacion": "Se revisan varias veces a lo largo de los 10 días, por ejemplo los días 3, 7 y 10.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "revisando las placas cada 2-3 días; por ejemplo, los días 3, 7 y 10"
+    },
+    {
+      "id": "t13-q240",
+      "pregunta": "Además de las aguas, ¿para qué muestras sirve el cultivo de la ISO 11731?",
+      "opciones": [
+        "Solo para agua de torres de refrigeración.",
+        "Para muestras de aire de los aerosoles.",
+        "Para biopelículas y sedimentos."
+      ],
+      "correcta": 2,
+      "explicacion": "El método de referencia cubre todo tipo de aguas y también biopelículas y sedimentos.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Sirve para todo tipo de aguas y para biopelículas y sedimentos."
+    },
+    {
+      "id": "t13-q241",
+      "pregunta": "Un resultado negativo en el cultivo de la ISO 11731, ¿descarta del todo la presencia de Legionella?",
+      "opciones": [
+        "No: no todas las especies son cultivables y el método no las recupera todas.",
+        "Sí: el cultivo es el método de referencia y detecta todas las especies.",
+        "Sí, siempre que se hayan concentrado 1000 mL de muestra."
+      ],
+      "correcta": 0,
+      "explicacion": "Ser el método de referencia no significa recuperarlo todo: hay especies que no crecen en el medio.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "No todas las especies de Legionella son cultivables. El método no las recupera todas."
+    },
+    {
+      "id": "t13-q242",
+      "pregunta": "De las tres fracciones sembradas de un concentrado de Legionella (sin tratar, ácida y calentada), ¿qué recuento se informa?",
+      "opciones": [
+        "La suma de las tres placas.",
+        "El de la placa con más colonias confirmadas.",
+        "La media de las tres placas."
+      ],
+      "correcta": 1,
+      "explicacion": "Los tratamientos solo buscan que el diana crezca sin la flora acompañante; se toma el mejor resultado, no la suma.",
+      "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Se da el recuento de la placa con más colonias confirmadas."
     }
   ],
   "supuestos": [
