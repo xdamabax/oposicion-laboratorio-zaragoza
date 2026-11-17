@@ -2846,6 +2846,622 @@
       "fuente": "SCA (2012), parte 5 · apunte §5.2",
       "apartado": "5.2",
       "evidencia": "crece con bilis y azida y a 44 °C"
+    },
+    {
+      "id": "t18-q166",
+      "pregunta": "¿Qué significan las siglas del medio TSC?",
+      "opciones": [
+        "Triptosa, sulfito y cicloserina.",
+        "Tergitol, sulfato y cefsulodina.",
+        "Triptófano, selenito y cistina."
+      ],
+      "correcta": 0,
+      "explicacion": "El Tergitol y la cefsulodina son del agar cromogénico de coliformes.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "El medio: triptosa, sulfito y cicloserina (TSC)."
+    },
+    {
+      "id": "t18-q167",
+      "pregunta": "¿Qué dos componentes del TSC producen el color negro de las colonias?",
+      "opciones": [
+        "La azida sódica y el TTC.",
+        "La cetrimida y el ácido nalidíxico.",
+        "El metabisulfito sódico y el citrato férrico amónico."
+      ],
+      "correcta": 2,
+      "explicacion": "La azida y el TTC son del medio de enterococos; la cetrimida y el nalidíxico, del agar CN.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Metabisulfito sódico y citrato férrico amónico: C. perfringens reduce el sulfito a sulfuro"
+    },
+    {
+      "id": "t18-q168",
+      "pregunta": "En el TSC, ¿cuál es el agente selectivo?",
+      "opciones": [
+        "El metabisulfito sódico.",
+        "La cicloserina.",
+        "El citrato férrico amónico."
+      ],
+      "correcta": 1,
+      "explicacion": "El metabisulfito y el citrato férrico dan el color negro, no la selectividad.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Cicloserina: antibiótico selectivo"
+    },
+    {
+      "id": "t18-q169",
+      "pregunta": "Según la ISO 14189, ¿qué se hace con la membrana una vez puesta sobre el TSC?",
+      "opciones": [
+        "Se cubre con una capa fina de TSC fundido a 45 °C.",
+        "Se deja al aire, sin cubrir.",
+        "Se cubre con aceite de parafina estéril."
+      ],
+      "correcta": 0,
+      "explicacion": "La capa de agar ayuda a mantener la anaerobiosis sobre la membrana.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "se cubre con una capa fina de TSC fundido a 45 °C"
+    },
+    {
+      "id": "t18-q170",
+      "pregunta": "¿Cuánto tiempo se incuban las placas de C. perfringens según la ISO 14189?",
+      "opciones": [
+        "44 ± 4 horas.",
+        "21 ± 3 horas.",
+        "68 ± 4 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las 44 ± 4 horas son de enterococos y de P. aeruginosa; las 68 ± 4, del recuento a 22 °C.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "se incuba a 44 ± 1 °C, en anaerobiosis, 21 ± 3 horas"
+    },
+    {
+      "id": "t18-q171",
+      "pregunta": "¿Qué diferencia de temperatura usa la guía británica entre los clostridios sulfitorreductores y C. perfringens?",
+      "opciones": [
+        "Los sulfitorreductores a 44 °C y C. perfringens a 37 °C.",
+        "Los dos a 44 °C.",
+        "Los sulfitorreductores en general a 37 °C y C. perfringens a 44 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "La temperatura marca la diferencia entre los dos recuentos.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "la guía británica cuenta los clostridios sulfitorreductores en general a 37 °C, y C. perfringens a 44 °C"
+    },
+    {
+      "id": "t18-q172",
+      "pregunta": "Además de negras, ¿de qué color pueden ser las colonias presuntivas de C. perfringens?",
+      "opciones": [
+        "Rojas o granates.",
+        "Grises o gris-amarillentas.",
+        "Azul-verdosas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las rojas son de enterococos y las azul-verdosas, de P. aeruginosa.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Colonias presuntivas: negras; también grises o gris-amarillentas."
+    },
+    {
+      "id": "t18-q173",
+      "pregunta": "¿Qué advierte la guía británica sobre algunas colonias de C. perfringens?",
+      "opciones": [
+        "Que a veces salen incoloras, y se cuentan todas como presuntivas.",
+        "Que las incoloras se descartan siempre.",
+        "Que solo valen las negras con centro brillante."
+      ],
+      "correcta": 0,
+      "explicacion": "La confirmación posterior decide cuáles son realmente C. perfringens.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "a veces salen incoloras, y cuenta todas como presuntivas"
+    },
+    {
+      "id": "t18-q174",
+      "pregunta": "Para contar solo las esporas de C. perfringens, ¿qué se hace antes de filtrar?",
+      "opciones": [
+        "Calentarla a 100 °C durante 5 minutos.",
+        "Tratarla con ácido durante 15 minutos.",
+        "Calentar la muestra a 60 ± 2 °C durante 15 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "Así se matan las células vegetativas y solo quedan las esporas.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "se calienta la muestra a 60 ± 2 °C durante 15 minutos antes de filtrar, para matar las células vegetativas"
+    },
+    {
+      "id": "t18-q175",
+      "pregunta": "¿En qué medio se resiembran las colonias negras para la confirmación de la ISO 14189?",
+      "opciones": [
+        "En agar sangre.",
+        "En agar bilis esculina.",
+        "En BCYE."
+      ],
+      "correcta": 0,
+      "explicacion": "El bilis esculina es de enterococos y el BCYE, de Legionella.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Resembrar las colonias negras en agar sangre, 36 ± 2 °C, en anaerobiosis, 21 ± 3 horas."
+    },
+    {
+      "id": "t18-q176",
+      "pregunta": "En la confirmación de C. perfringens, ¿sobre qué se extiende la colonia antes de añadir el reactivo?",
+      "opciones": [
+        "Sobre un portaobjetos excavado.",
+        "Sobre la propia membrana de filtración.",
+        "Sobre papel de filtro."
+      ],
+      "correcta": 2,
+      "explicacion": "Se añaden 2-3 gotas de reactivo de fosfatasa ácida y se espera el color púrpura.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Extender la colonia sobre papel de filtro y añadir 2-3 gotas de reactivo de fosfatasa ácida."
+    },
+    {
+      "id": "t18-q177",
+      "pregunta": "¿Cuántas gotas de reactivo de fosfatasa ácida se añaden en la confirmación?",
+      "opciones": [
+        "Una.",
+        "Dos o tres.",
+        "Diez."
+      ],
+      "correcta": 1,
+      "explicacion": "El color púrpura en 3-4 minutos indica positivo.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "añadir 2-3 gotas de reactivo de fosfatasa ácida"
+    },
+    {
+      "id": "t18-q178",
+      "pregunta": "¿Cuántas colonias típicas se prueban en la confirmación de C. perfringens?",
+      "opciones": [
+        "Todas, o al menos 10, y se recalcula el recuento.",
+        "Una por placa.",
+        "Las que se quiera: no se recalcula el recuento."
+      ],
+      "correcta": 0,
+      "explicacion": "Es lo que recoge el informe del centro de referencia checo.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Se prueban todas las colonias típicas o al menos 10, y se recalcula el recuento (SZÚ)."
+    },
+    {
+      "id": "t18-q179",
+      "pregunta": "¿Cuánto dura el método completo de C. perfringens con la confirmación de la ISO 14189?",
+      "opciones": [
+        "24 horas.",
+        "10 días.",
+        "Al menos 48 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "El TSC-MUP lo acorta a 24 horas porque no hace falta resembrar.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "El método completo dura al menos 48 horas."
+    },
+    {
+      "id": "t18-q180",
+      "pregunta": "¿Qué sustrato se añade al TSC en el método TSC-MUP?",
+      "opciones": [
+        "El 4-metilumbeliferil glucurónido.",
+        "El 4-metilumbeliferil fosfato.",
+        "El orto-nitrofenil-β-D-galactopiranósido."
+      ],
+      "correcta": 1,
+      "explicacion": "El MUG, con glucurónido, es el de E. coli; el ONPG, el de los coliformes en la bandeja.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Se añade al TSC el sustrato 4-metilumbeliferil fosfato (MUP)."
+    },
+    {
+      "id": "t18-q181",
+      "pregunta": "¿Qué molécula fluorescente libera la fosfatasa ácida al romper el MUP?",
+      "opciones": [
+        "La 4-metilumbeliferona.",
+        "El formazán.",
+        "La piocianina."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la misma molécula que libera la β-glucuronidasa a partir del MUG en la bandeja de E. coli.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "rompe el MUP y libera 4-metilumbeliferona, que fluoresce con luz ultravioleta de onda larga (365 nm)"
+    },
+    {
+      "id": "t18-q182",
+      "pregunta": "¿Cuánto se incuba el TSC-MUP antes de leerlo?",
+      "opciones": [
+        "21 ± 3 horas en aerobiosis.",
+        "24 horas en anaerobiosis.",
+        "48 horas en anaerobiosis."
+      ],
+      "correcta": 1,
+      "explicacion": "Tras ese tiempo se cuentan directamente las colonias negras, grises o gris-amarillentas con fluorescencia azul pálida brillante.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Tras 24 horas en anaerobiosis se cuentan directamente las colonias"
+    },
+    {
+      "id": "t18-q183",
+      "pregunta": "¿Cómo es la fluorescencia que se busca en el TSC-MUP?",
+      "opciones": [
+        "Verde intensa.",
+        "Roja cereza.",
+        "Azul pálida brillante."
+      ],
+      "correcta": 2,
+      "explicacion": "El rojo cereza es el indol de E. coli con el reactivo de Kovács.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "negras, grises o gris-amarillentas con una fluorescencia azul pálida brillante"
+    },
+    {
+      "id": "t18-q184",
+      "pregunta": "¿Por qué el RD 3/2023 admite el TSC-MUP como método alternativo?",
+      "opciones": [
+        "Porque usa una temperatura más baja.",
+        "Porque no hace falta resembrar.",
+        "Porque no necesita anaerobiosis."
+      ],
+      "correcta": 1,
+      "explicacion": "La confirmación va dentro del propio medio, con la fluorescencia.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "No hace falta resembrar. Por eso el RD 3/2023 lo admite como método alternativo."
+    },
+    {
+      "id": "t18-q185",
+      "pregunta": "¿Qué comparten la fluorescencia del TSC-MUP y la de la bandeja de E. coli?",
+      "opciones": [
+        "La molécula fluorescente: cambia la enzima y el sustrato, pero la luz es la misma.",
+        "La enzima: en los dos casos es la β-glucuronidasa.",
+        "El sustrato: en los dos casos es el MUP."
+      ],
+      "correcta": 0,
+      "explicacion": "En C. perfringens actúa la fosfatasa ácida sobre el MUP; en E. coli, la β-glucuronidasa sobre el MUG.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Cambia la enzima y el sustrato; la luz es la misma."
+    },
+    {
+      "id": "t18-q186",
+      "pregunta": "¿Cuál era la confirmación del método británico antiguo de C. perfringens?",
+      "opciones": [
+        "Fosfatasa ácida con color púrpura.",
+        "Hidrólisis de la esculina con halo negro.",
+        "Inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina."
+      ],
+      "correcta": 2,
+      "explicacion": "La fosfatasa ácida es la confirmación de la ISO 14189 y la esculina, la de enterococos.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "C. perfringens es inmóvil, reduce los nitratos, fermenta la lactosa y licúa la gelatina"
+    },
+    {
+      "id": "t18-q187",
+      "pregunta": "En una placa de TSC se cuentan 14 colonias negras; se prueban las 14 y 11 dan color púrpura. ¿Cuántas UFC se informan por 100 mL, si se filtraron 100 mL?",
+      "opciones": [
+        "14.",
+        "25.",
+        "11."
+      ],
+      "correcta": 2,
+      "explicacion": "Solo las colonias con fosfatasa ácida positiva se confirman como C. perfringens, y el recuento se recalcula.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Se prueban todas las colonias típicas o al menos 10, y se recalcula el recuento"
+    },
+    {
+      "id": "t18-q188",
+      "pregunta": "¿Cuál es la norma de P. aeruginosa en el agua?",
+      "opciones": [
+        "La ISO 16266.",
+        "La ISO 11731.",
+        "La ISO 14189."
+      ],
+      "correcta": 0,
+      "explicacion": "La 11731 es de Legionella y la 14189, de C. perfringens.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "(< 1 UFC/100 mL). Su norma es la ISO 16266."
+    },
+    {
+      "id": "t18-q189",
+      "pregunta": "¿Dónde es P. aeruginosa un parámetro del RD 3/2023?",
+      "opciones": [
+        "En toda la red de distribución.",
+        "Solo en los grifos asistenciales de las unidades de cuidados aumentados.",
+        "En la salida de la potabilizadora."
+      ],
+      "correcta": 1,
+      "explicacion": "Su valor allí es menor de 1 UFC/100 mL.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Solo es parámetro en los grifos asistenciales de las unidades de cuidados aumentados (< 1 UFC/100 mL)"
+    },
+    {
+      "id": "t18-q190",
+      "pregunta": "En el agar CN, ¿qué significan las letras C y N?",
+      "opciones": [
+        "Cicloserina y nitrato.",
+        "Cloruro y nalidíxico.",
+        "Cetrimida y ácido nalidíxico."
+      ],
+      "correcta": 2,
+      "explicacion": "La cicloserina es del TSC de C. perfringens.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Cetrimida (C), selectiva; - ácido nalidíxico (N)"
+    },
+    {
+      "id": "t18-q191",
+      "pregunta": "¿Qué componentes del agar CN estimulan la producción de piocianina?",
+      "opciones": [
+        "El sulfato potásico y el cloruro magnésico.",
+        "La cetrimida y el ácido nalidíxico.",
+        "El metabisulfito y el citrato férrico."
+      ],
+      "correcta": 0,
+      "explicacion": "La cetrimida y el nalidíxico son los selectivos; el metabisulfito y el citrato férrico, del TSC.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "sulfato potásico y cloruro magnésico, que estimulan el pigmento piocianina"
+    },
+    {
+      "id": "t18-q192",
+      "pregunta": "¿Cómo se incuba el agar CN para P. aeruginosa?",
+      "opciones": [
+        "A 44 ± 1 °C durante 21 ± 3 horas.",
+        "A 36 ± 2 °C durante 44 ± 4 horas.",
+        "A 36 ± 1 °C durante 10 días."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 44 °C y 21 h son de C. perfringens; los 10 días, de Legionella.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Incubación: 36 ± 2 °C, 44 ± 4 horas."
+    },
+    {
+      "id": "t18-q193",
+      "pregunta": "Una colonia del agar CN es fluorescente con UV pero no produce piocianina. ¿Qué se hace?",
+      "opciones": [
+        "Darla por confirmada como P. aeruginosa.",
+        "Descartarla sin más pruebas.",
+        "Confirmarla con la producción de amoníaco desde acetamida."
+      ],
+      "correcta": 2,
+      "explicacion": "Las azul-verdosas con piocianina quedan confirmadas; las pardo-rojizas necesitan tres pruebas.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Confirmar con la producción de amoníaco desde acetamida (reactivo de Nessler)"
+    },
+    {
+      "id": "t18-q194",
+      "pregunta": "¿Qué reactivo se usa para detectar el amoníaco en la confirmación de P. aeruginosa?",
+      "opciones": [
+        "El reactivo de Nessler.",
+        "El reactivo de Kovács.",
+        "El reactivo de fosfatasa ácida."
+      ],
+      "correcta": 0,
+      "explicacion": "El de Kovács es del indol y el de fosfatasa ácida, de C. perfringens.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "producción de amoníaco desde acetamida (reactivo de Nessler)"
+    },
+    {
+      "id": "t18-q195",
+      "pregunta": "¿Qué prueba se añade a las colonias pardo-rojizas del agar CN, además de la acetamida?",
+      "opciones": [
+        "La catalasa y la coagulasa.",
+        "La oxidasa y la fluorescencia en agar King B.",
+        "La esculina y la β-glucosidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "La catalasa y la coagulasa son de estafilococos y la esculina, de enterococos.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "Oxidasa +, fluorescencia en agar King B y amoníaco desde acetamida"
+    },
+    {
+      "id": "t18-q196",
+      "pregunta": "En el agar CN crece una colonia azul-verdosa. ¿Qué se hace según el esquema de la ISO 16266?",
+      "opciones": [
+        "Confirmarla con acetamida y agar King B.",
+        "Darla por confirmada como P. aeruginosa.",
+        "Comprobar antes su oxidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "El color azul-verdoso es la piocianina, que solo produce P. aeruginosa; las fluorescentes sin piocianina y las pardo-rojizas sí necesitan más pruebas.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "| Azul-verdosa (piocianina) | Confirmada como P. aeruginosa (1246 #39) |"
+    },
+    {
+      "id": "t18-q197",
+      "pregunta": "¿Qué significan las siglas BCYE?",
+      "opciones": [
+        "Agar carbón, extracto de levadura, tamponado.",
+        "Agar bilis, cisteína, levadura y esculina.",
+        "Agar base con cefsulodina y extracto de levadura."
+      ],
+      "correcta": 0,
+      "explicacion": "Lleva L-cisteína y hierro(III), que Legionella necesita.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "BCYE: agar carbón, extracto de levadura, tamponado, con L-cisteína y hierro(III)."
+    },
+    {
+      "id": "t18-q198",
+      "pregunta": "Además de la L-cisteína, ¿qué lleva el BCYE?",
+      "opciones": [
+        "Glicina y vancomicina.",
+        "Azida y TTC.",
+        "Hierro(III)."
+      ],
+      "correcta": 2,
+      "explicacion": "La glicina y la vancomicina son del GVPC, que es la versión selectiva.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "agar carbón, extracto de levadura, tamponado, con L-cisteína y hierro(III)"
+    },
+    {
+      "id": "t18-q199",
+      "pregunta": "¿Qué cuatro componentes añade el GVPC al BCYE?",
+      "opciones": [
+        "Glicina, vancomicina, polimixina y cefsulodina.",
+        "Glicina, vancomicina, polimixina y cicloheximida.",
+        "Cetrimida, nalidíxico, cicloserina y azida."
+      ],
+      "correcta": 1,
+      "explicacion": "Son las cuatro letras de su nombre; la cicloheximida frena a los hongos.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "GVPC: el BCYE con glicina, vancomicina, polimixina y cicloheximida: más selectivo."
+    },
+    {
+      "id": "t18-q200",
+      "pregunta": "¿Qué aspecto tienen las colonias de Legionella a la lupa?",
+      "opciones": [
+        "De gota de cera brillante.",
+        "Mucosas y filantes.",
+        "De vidrio esmerilado."
+      ],
+      "correcta": 2,
+      "explicacion": "Son lisas, de borde entero, a menudo blancas, grises, azuladas o moradas.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "con aspecto de vidrio esmerilado a la lupa"
+    },
+    {
+      "id": "t18-q201",
+      "pregunta": "¿De qué colores pueden ser las colonias de Legionella?",
+      "opciones": [
+        "Blancas, grises, azuladas o moradas.",
+        "Negras o gris-amarillentas.",
+        "Rosas o rojas."
+      ],
+      "correcta": 0,
+      "explicacion": "Las negras y gris-amarillentas son de C. perfringens; las rosas, de coliformes en CCA.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "a menudo blancas, grises, azuladas o moradas"
+    },
+    {
+      "id": "t18-q202",
+      "pregunta": "En la confirmación de Legionella, ¿en qué dos medios se resiembra?",
+      "opciones": [
+        "En BCYE y en GVPC.",
+        "En GVPC y en agar sangre.",
+        "En BCYE y en BCYE sin L-cisteína, o agar sangre."
+      ],
+      "correcta": 2,
+      "explicacion": "Los dos primeros llevan cisteína: una Legionella crecería en ambos y no se distinguiría nada.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "en dos placas: BCYE y BCYE sin L-cisteína (o agar sangre)"
+    },
+    {
+      "id": "t18-q203",
+      "pregunta": "¿Cuánto se incuba la confirmación de Legionella y a qué temperatura?",
+      "opciones": [
+        "10 días a 36 °C.",
+        "2-3 días a 36 °C.",
+        "24 horas a 39 °C."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 10 días son la incubación del aislamiento y los 39 °C, el Legiolert.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "BCYE y BCYE sin L-cisteína (o agar sangre). Tras 2-3 días a 36 °C"
+    },
+    {
+      "id": "t18-q204",
+      "pregunta": "Una colonia crece en BCYE y también en BCYE sin L-cisteína. ¿Qué conclusión se saca?",
+      "opciones": [
+        "Que no es Legionella.",
+        "Que es Legionella confirmada.",
+        "Que hay que repetir con GVPC."
+      ],
+      "correcta": 0,
+      "explicacion": "Legionella necesita cisteína: crece solo en el medio que la lleva.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "crece en las dos → no es Legionella"
+    },
+    {
+      "id": "t18-q205",
+      "pregunta": "¿Por qué falla el distractor «crece en GVPC y no en BCYE»?",
+      "opciones": [
+        "Porque los dos llevan L-cisteína y una Legionella crece en ambos.",
+        "Porque el GVPC no es un medio de Legionella.",
+        "Porque el BCYE es más selectivo que el GVPC."
+      ],
+      "correcta": 0,
+      "explicacion": "El GVPC es el BCYE con antibióticos: más selectivo, pero con cisteína igualmente.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "los dos llevan L-cisteína. Una Legionella crece en ambos."
+    },
+    {
+      "id": "t18-q206",
+      "pregunta": "¿Qué distingue a Legionella, según el apunte, frente al distractor del medio con antibióticos?",
+      "opciones": [
+        "Que resiste los antibióticos del GVPC.",
+        "Que crece a 39 °C.",
+        "Que necesita la cisteína."
+      ],
+      "correcta": 2,
+      "explicacion": "El antibiótico no es lo que la distingue; lo que la distingue es la dependencia de la cisteína.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "el antibiótico no es lo que distingue a Legionella; lo que la distingue es que necesita la cisteína"
+    },
+    {
+      "id": "t18-q207",
+      "pregunta": "¿Cuándo pueden L. oakridgensis y L. spiritensis crecer débilmente sin cisteína?",
+      "opciones": [
+        "Desde la primera siembra de la muestra.",
+        "Después del primer aislamiento.",
+        "Solo si el medio lleva hierro(III)."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la excepción a la regla de la dependencia de cisteína, y afecta a la confirmación, no al aislamiento inicial.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "pueden crecer débilmente sin cisteína después del primer aislamiento"
+    },
+    {
+      "id": "t18-q208",
+      "pregunta": "¿Para qué se usa la aglutinación con látex después de confirmar Legionella?",
+      "opciones": [
+        "Para distinguir Legionella de Pseudomonas.",
+        "Para separar L. pneumophila serogrupo 1 de los serogrupos 2-15.",
+        "Para medir la concentración en UFC/L."
+      ],
+      "correcta": 1,
+      "explicacion": "El RD pide identificar L. pneumophila y su serogrupo si se superan 100 UFC/L.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "aglutinación con látex para separar L. pneumophila serogrupo 1 de los serogrupos 2-15"
+    },
+    {
+      "id": "t18-q209",
+      "pregunta": "¿Cada cuánto se miran las placas de Legionella durante los 10 días de incubación?",
+      "opciones": [
+        "Cada 12 horas.",
+        "Solo el último día.",
+        "Cada 2-3 días."
+      ],
+      "correcta": 2,
+      "explicacion": "Las colonias no crecen los dos primeros días.",
+      "fuente": "SCA, Legionella (2020), parte 2; RD 3/2023 y RD 487/2022 · apunte §5.5",
+      "apartado": "5.5",
+      "evidencia": "36 ± 1 °C durante 10 días (1322 #26), mirando las placas cada 2-3 días"
     }
   ],
   "supuestos": [
