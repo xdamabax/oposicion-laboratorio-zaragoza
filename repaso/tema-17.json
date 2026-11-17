@@ -2680,6 +2680,440 @@
       "fuente": "Eurachem (2023), 8.1; EPA, Method 1103.2 (2023), 9 · apunte §3.5",
       "apartado": "3.5",
       "evidencia": "Ejemplo de la EPA para la oxidasa: control positivo Pseudomonas aeruginosa, control negativo E. coli"
+    },
+    {
+      "id": "t17-q146",
+      "pregunta": "¿Qué aportan los materiales de referencia, según Eurachem?",
+      "opciones": [
+        "Trazabilidad.",
+        "Selectividad.",
+        "Esterilidad."
+      ],
+      "correcta": 0,
+      "explicacion": "La selectividad y la esterilidad son propiedades que se controlan en los medios.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "los materiales de referencia aportan trazabilidad"
+    },
+    {
+      "id": "t17-q147",
+      "pregunta": "¿Cuál de estos usos de un material de referencia recoge Eurachem?",
+      "opciones": [
+        "Sustituir a los controles positivo y negativo de cada tanda.",
+        "Esterilizar los medios de cultivo.",
+        "Calibrar equipos."
+      ],
+      "correcta": 2,
+      "explicacion": "La lista incluye demostrar exactitud, calibrar, vigilar el funcionamiento, validar y comparar métodos, demostrar la calidad de los medios y que los kits funcionan igual.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "demostrar la exactitud de los resultados; - calibrar equipos"
+    },
+    {
+      "id": "t17-q148",
+      "pregunta": "Dos métodos distintos de recuento se van a comparar entre sí. ¿Qué papel tiene aquí un material de referencia?",
+      "opciones": [
+        "Sustituye al blanco de método.",
+        "Permite validar los métodos y compararlos.",
+        "Fija el límite superior de recuperación del medio."
+      ],
+      "correcta": 1,
+      "explicacion": "Validar y comparar métodos es uno de los usos que enumera Eurachem.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "vigilar el funcionamiento del laboratorio; - validar métodos y compararlos"
+    },
+    {
+      "id": "t17-q149",
+      "pregunta": "¿Para qué sirve un material de referencia en relación con los medios de cultivo?",
+      "opciones": [
+        "Para sustituir su control de esterilidad.",
+        "Para ajustar su pH tras esterilizar.",
+        "Para demostrar su calidad."
+      ],
+      "correcta": 2,
+      "explicacion": "El pH nunca se ajusta tras esterilizar, y la esterilidad se comprueba incubando el medio sin sembrar.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "demostrar la calidad de los medios"
+    },
+    {
+      "id": "t17-q150",
+      "pregunta": "Se va a comprar un material de referencia para controlar recuentos en agua de consumo. ¿Qué matriz conviene que tenga?",
+      "opciones": [
+        "La misma que las muestras, si es posible.",
+        "Una matriz sintética, siempre más estable.",
+        "Cualquiera: la matriz no influye en microbiología."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la regla general de los materiales de referencia, la misma que recoge el tema 38.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Si es posible, con la misma matriz que las muestras (la regla del tema 38)."
+    },
+    {
+      "id": "t17-q151",
+      "pregunta": "Entre los usos de un material de referencia, ¿cuál se refiere al propio laboratorio?",
+      "opciones": [
+        "Acreditar su competencia técnica.",
+        "Formar al personal nuevo.",
+        "Vigilar su funcionamiento."
+      ],
+      "correcta": 2,
+      "explicacion": "Acreditar la competencia es cosa de la ISO 17025 y de la entidad de acreditación.",
+      "fuente": "Eurachem (2023), 8.5 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "vigilar el funcionamiento del laboratorio"
+    },
+    {
+      "id": "t17-q152",
+      "pregunta": "¿De dónde deben proceder los cultivos de referencia?",
+      "opciones": [
+        "De aislados propios con caracteres típicos.",
+        "De colecciones nacionales o internacionales reconocidas.",
+        "De un laboratorio vecino acreditado."
+      ],
+      "correcta": 1,
+      "explicacion": "Los aislados propios sirven para control y formación, pero no son cultivos de referencia.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Origen: colecciones nacionales o internacionales reconocidas."
+    },
+    {
+      "id": "t17-q153",
+      "pregunta": "Además de la NCTC, ¿qué colección de cultivos cita la guía británica?",
+      "opciones": [
+        "La NCIMB.",
+        "La ATCC.",
+        "La ENAC."
+      ],
+      "correcta": 0,
+      "explicacion": "La ATCC es la que usa la EPA; la ENAC es la entidad española de acreditación.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La guía británica cita la NCTC (National Collection of Type Cultures) y la NCIMB."
+    },
+    {
+      "id": "t17-q154",
+      "pregunta": "¿Qué significan las siglas NCTC?",
+      "opciones": [
+        "National Committee for Technical Control.",
+        "National Collection of Type Cultures.",
+        "Norma de Cultivos y Técnicas de Control."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una de las dos colecciones británicas que cita la guía, junto con la NCIMB.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "la NCTC (National Collection of Type Cultures)"
+    },
+    {
+      "id": "t17-q155",
+      "pregunta": "¿Qué cepa concreta de la ATCC pone el apunte como ejemplo del uso de la EPA?",
+      "opciones": [
+        "E. coli ATCC 11775.",
+        "Enterococcus faecalis ATCC 19433.",
+        "Pseudomonas aeruginosa ATCC 27853."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el ejemplo que da el apunte al citar la colección ATCC.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La EPA usa cepas de la ATCC (por ejemplo, E. coli ATCC 11775)."
+    },
+    {
+      "id": "t17-q156",
+      "pregunta": "Si no hay cepas trazables a mano, ¿qué admite el apunte y con qué condición?",
+      "opciones": [
+        "Aislados propios, si tienen los caracteres esperados.",
+        "Cepas de otro laboratorio, sin más requisitos.",
+        "Derivados comerciales trazables, si el laboratorio demuestra que son equivalentes, y solo como cultivos de trabajo."
+      ],
+      "correcta": 2,
+      "explicacion": "La limitación es doble: hay que demostrar la equivalencia y no pueden hacer de reservas de referencia.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "valen derivados comerciales trazables a ellas, si el laboratorio demuestra que son equivalentes. Pero solo como cultivos de trabajo."
+    },
+    {
+      "id": "t17-q157",
+      "pregunta": "¿En qué formatos llegan las cepas de referencia al laboratorio?",
+      "opciones": [
+        "Siempre en placas sembradas, listas para subcultivar.",
+        "Liofilizadas en ampollas, o como Lenticules o Vitroids.",
+        "En caldo ya reconstituido, en fase estacionaria."
+      ],
+      "correcta": 1,
+      "explicacion": "Se reconstituyen con caldo estéril, siguiendo al proveedor.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Llegan liofilizadas en ampollas o en formatos como Lenticules o Vitroids."
+    },
+    {
+      "id": "t17-q158",
+      "pregunta": "¿Con qué se reconstituye una cepa de referencia liofilizada?",
+      "opciones": [
+        "Con caldo estéril, siguiendo al proveedor.",
+        "Con agua destilada del laboratorio.",
+        "Con diluyente de máxima recuperación, siempre."
+      ],
+      "correcta": 0,
+      "explicacion": "El diluyente de máxima recuperación es el que la guía indica para rehidratar los organismos de control de las tandas.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Se reconstituyen con caldo estéril, siguiendo al proveedor."
+    },
+    {
+      "id": "t17-q159",
+      "pregunta": "¿Qué son las reservas de referencia en la cadena de subcultivos?",
+      "opciones": [
+        "El subcultivo primario que se usa a diario.",
+        "Las cepas que llegan de la colección.",
+        "Alícuotas idénticas del único subcultivo de la cepa de referencia."
+      ],
+      "correcta": 2,
+      "explicacion": "El subcultivo primario de una reserva es el cultivo de trabajo.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Reservas de referencia | Alícuotas idénticas de ese único subcultivo |"
+    },
+    {
+      "id": "t17-q160",
+      "pregunta": "¿Cómo se guardan las reservas de referencia?",
+      "opciones": [
+        "Congeladas o liofilizadas.",
+        "En nevera a 5 ± 3 °C.",
+        "En agar inclinado a temperatura ambiente."
+      ],
+      "correcta": 0,
+      "explicacion": "Se comprueban su pureza y sus pruebas bioquímicas, y una vez descongeladas no se vuelven a congelar.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Congeladas o liofilizadas. Se comprueban pureza y pruebas bioquímicas"
+    },
+    {
+      "id": "t17-q161",
+      "pregunta": "Después de conservar una cepa, ¿qué dos cosas hay que comprobar?",
+      "opciones": [
+        "Que mantiene el mismo recuento y el mismo pH.",
+        "Que está pura y que conserva los caracteres por los que se eligió.",
+        "Que no ha cambiado de color ni de olor."
+      ],
+      "correcta": 1,
+      "explicacion": "El ejemplo del apunte es que E. coli siga fermentando la lactosa a 37 y a 44 °C.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se comprueba que están puras y que conservan los caracteres por los que se eligieron"
+    },
+    {
+      "id": "t17-q162",
+      "pregunta": "¿Qué es un cultivo de trabajo?",
+      "opciones": [
+        "Una alícuota congelada del primer subcultivo.",
+        "La ampolla que envía la colección.",
+        "El subcultivo primario de una reserva de referencia."
+      ],
+      "correcta": 2,
+      "explicacion": "No se subcultiva salvo que el método lo pida o se demuestre que no cambia, y nunca sustituye a las reservas.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "| Cultivos de trabajo | Subcultivo primario de una reserva |"
+    },
+    {
+      "id": "t17-q163",
+      "pregunta": "¿Pueden los cultivos de trabajo sustituir a las reservas de referencia?",
+      "opciones": [
+        "Nunca.",
+        "Sí, si se han comprobado sus caracteres.",
+        "Sí, mientras se repone la reserva."
+      ],
+      "correcta": 0,
+      "explicacion": "Las reservas son las alícuotas del único subcultivo de la cepa de referencia.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Nunca sustituyen a las reservas"
+    },
+    {
+      "id": "t17-q164",
+      "pregunta": "¿Cuándo puede subcultivarse un cultivo de trabajo?",
+      "opciones": [
+        "Siempre que haga falta más inóculo.",
+        "Nunca, en ningún caso.",
+        "Si el método lo pide o se demuestra que no cambia."
+      ],
+      "correcta": 2,
+      "explicacion": "La regla general es no subcultivarlo, por el riesgo de contaminación y de cambio de caracteres.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "No se subcultivan salvo que el método lo pida o se demuestre que no cambian."
+    },
+    {
+      "id": "t17-q165",
+      "pregunta": "¿Cómo se conservan las reservas liofilizadas en ampollas?",
+      "opciones": [
+        "Una sola ampolla, que se abre y se guarda en nevera.",
+        "Varias ampollas, para años.",
+        "En nitrógeno líquido, siempre."
+      ],
+      "correcta": 1,
+      "explicacion": "El nitrógeno líquido es otra de las tres formas que cita la guía, con crioprotector.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Liofilizadas en ampollas: varias, para años."
+    },
+    {
+      "id": "t17-q166",
+      "pregunta": "Al sacar una perla de un vial de cepas de referencia, ¿qué se hace con el vial?",
+      "opciones": [
+        "Se deja a temperatura ambiente hasta terminar la tanda.",
+        "Vuelve al frío enseguida.",
+        "Se desecha, porque ya se ha abierto."
+      ],
+      "correcta": 1,
+      "explicacion": "Las perlas se guardan por debajo de −20 °C y el vial no debe atemperarse.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se saca una perla y el vial vuelve al frío enseguida"
+    },
+    {
+      "id": "t17-q167",
+      "pregunta": "¿A qué temperatura conserva cepas un ultracongelador, según el apunte?",
+      "opciones": [
+        "A −20 °C.",
+        "A −80 °C.",
+        "A −150 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Las perlas van por debajo de −20 °C; el nitrógeno líquido y el congelador de −150 °C son la opción con crioprotector.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "En nitrógeno líquido o en un congelador de −150 °C, con crioprotector."
+    },
+    {
+      "id": "t17-q168",
+      "pregunta": "¿Qué se añade a las cepas conservadas en nitrógeno líquido o a −150 °C?",
+      "opciones": [
+        "Un crioprotector.",
+        "Un conservante bacteriostático.",
+        "Diluyente de máxima recuperación."
+      ],
+      "correcta": 0,
+      "explicacion": "El crioprotector evita el daño por los cristales de hielo.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "congelador de −150 °C, con crioprotector"
+    },
+    {
+      "id": "t17-q169",
+      "pregunta": "¿Qué ejemplo da el apunte de caracteres que deben conservarse tras la conservación de una cepa?",
+      "opciones": [
+        "Que E. coli siga fermentando la lactosa a 37 y a 44 °C.",
+        "Que E. coli siga siendo oxidasa positiva.",
+        "Que E. coli conserve su pigmento verde."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli es oxidasa negativa y no produce pigmento verde: eso es de Pseudomonas aeruginosa.",
+      "fuente": "Eurachem (2023), 8.6; SCA (2017), 6.10 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "E. coli sigue fermentando la lactosa a 37 y a 44 °C"
+    },
+    {
+      "id": "t17-q170",
+      "pregunta": "¿Qué formatos de materiales de referencia cuantitativos cita la EPA?",
+      "opciones": [
+        "Ampollas de caldo y agar inclinado.",
+        "Lenticules, Vitroids y BioBalls.",
+        "Perlas y crioviales."
+      ],
+      "correcta": 1,
+      "explicacion": "Las perlas y los crioviales son formas de conservar reservas, no materiales comerciales con número conocido.",
+      "fuente": "SCA (2017), 6.10; EPA, Method 1103.2 (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "en formatos estables: Lenticules, Vitroids, BioBalls (los cita la EPA)"
+    },
+    {
+      "id": "t17-q171",
+      "pregunta": "¿Qué datos da el proveedor de un material de referencia cuantitativo?",
+      "opciones": [
+        "El recuento exacto de cada unidad.",
+        "La curva de supervivencia a lo largo del tiempo.",
+        "La media y los límites de confianza."
+      ],
+      "correcta": 2,
+      "explicacion": "Eso es clave, porque en un medio selectivo el recuento «verdadero» no se conoce.",
+      "fuente": "SCA (2017), 6.10; EPA, Method 1103.2 (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "El proveedor da la media y los límites de confianza"
+    },
+    {
+      "id": "t17-q172",
+      "pregunta": "¿Por qué son clave los límites de confianza que da el proveedor de un material de referencia?",
+      "opciones": [
+        "Porque permiten calcular el pH del medio.",
+        "Porque en un medio selectivo el recuento «verdadero» no se conoce.",
+        "Porque sustituyen al control de esterilidad."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin un valor de referencia con su intervalo no se podría juzgar si el recuento obtenido es aceptable.",
+      "fuente": "SCA (2017), 6.10; EPA, Method 1103.2 (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "en un medio selectivo el recuento «verdadero» no se conoce"
+    },
+    {
+      "id": "t17-q173",
+      "pregunta": "Al leer un material de referencia cuantitativo, ¿cómo conviene contar?",
+      "opciones": [
+        "Conociendo la media, para ajustar el recuento.",
+        "Entre dos analistas, siempre.",
+        "Sin conocer la media y la varianza del material, si es posible."
+      ],
+      "correcta": 2,
+      "explicacion": "Así se evita el sesgo del operador, que cuenta «lo que espera».",
+      "fuente": "SCA (2017), 6.10; EPA, Method 1103.2 (2023), 9 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Contar sin conocer la media y la varianza del material, si es posible."
+    },
+    {
+      "id": "t17-q174",
+      "pregunta": "¿Qué ventaja tienen las aguas naturales con el diana como material de control?",
+      "opciones": [
+        "Que son un reto más real, porque traen competidores.",
+        "Que su número de microorganismos es conocido.",
+        "Que no necesitan conservación."
+      ],
+      "correcta": 0,
+      "explicacion": "Su inconveniente es justamente que no se sabe cuántos hay.",
+      "fuente": "SCA (2017), 6.10 · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Son un reto más real, porque traen competidores."
+    },
+    {
+      "id": "t17-q175",
+      "pregunta": "¿Para qué sirven las cepas aisladas de muestras reales, a veces con caracteres raros?",
+      "opciones": [
+        "Para el control y la formación.",
+        "Para sustituir a las cepas de referencia en los controles de tanda.",
+        "Para calibrar el pHmetro."
+      ],
+      "correcta": 0,
+      "explicacion": "Se conservan como las de referencia, pero no las sustituyen.",
+      "fuente": "SCA (2017), 6.10 · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "sirven para el control y la formación"
+    },
+    {
+      "id": "t17-q176",
+      "pregunta": "¿Cómo se conservan los aislados propios que el laboratorio usa como control?",
+      "opciones": [
+        "En nevera a 5 ± 3 °C, como los medios.",
+        "En agua natural, para mantener los competidores.",
+        "Como las cepas de referencia."
+      ],
+      "correcta": 2,
+      "explicacion": "Es decir, liofilizados, en perlas por debajo de −20 °C o en nitrógeno líquido con crioprotector.",
+      "fuente": "SCA (2017), 6.10 · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Se conservan como las de referencia."
     }
   ],
   "supuestos": [
