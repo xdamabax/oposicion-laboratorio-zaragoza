@@ -3937,6 +3937,328 @@
       "fuente": "SCA, Legionella (2020), parte 2; resumen oficial de la ISO 11731 (SNV) · apunte §6.3",
       "apartado": "6.3",
       "evidencia": "Se da el recuento de la placa con más colonias confirmadas."
+    },
+    {
+      "id": "t13-q243",
+      "pregunta": "¿Qué condición tiene que cumplirse para que una tabla de NMP dé un valor concreto?",
+      "opciones": [
+        "Que todos los tubos sean positivos.",
+        "Que la muestra se haya filtrado antes por 0,45 µm.",
+        "Que haya tubos positivos y tubos negativos."
+      ],
+      "correcta": 2,
+      "explicacion": "Si todos son positivos el resultado es «mayor que» el máximo de la tabla; si todos son negativos, «menor que» el mínimo.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Necesita tubos positivos y negativos."
+    },
+    {
+      "id": "t13-q244",
+      "pregunta": "En un NMP en tubos, todos los tubos salen negativos. ¿Qué se informa?",
+      "opciones": [
+        "Cero exacto.",
+        "Un valor «menor que» el mínimo de la tabla.",
+        "Un valor «mayor que» el máximo de la tabla."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin ningún positivo no se puede estimar un valor: solo que está por debajo del mínimo tabulado.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "si todos son negativos, «menor que» el mínimo"
+    },
+    {
+      "id": "t13-q245",
+      "pregunta": "Según el manual de la FDA, ¿qué se supone de los microorganismos de la muestra al aplicar el NMP?",
+      "opciones": [
+        "Que están adheridos a las partículas en suspensión.",
+        "Que se multiplican durante el reparto en los tubos.",
+        "Que están repartidos al azar y no forman grumos."
+      ],
+      "correcta": 2,
+      "explicacion": "De ese supuesto viene la importancia de mezclar bien antes de repartir.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "los microorganismos están repartidos al azar y no forman grumos"
+    },
+    {
+      "id": "t13-q246",
+      "pregunta": "¿Qué supone el NMP sobre un tubo que ha recibido al menos un microorganismo vivo?",
+      "opciones": [
+        "Que dará crecimiento visible.",
+        "Que dará crecimiento solo si recibe más de diez.",
+        "Que dará crecimiento en la mitad de los casos."
+      ],
+      "correcta": 0,
+      "explicacion": "Es uno de los supuestos del método: todo tubo con al menos uno vivo crece y cambia.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "todo tubo con al menos uno vivo da crecimiento visible"
+    },
+    {
+      "id": "t13-q247",
+      "pregunta": "¿Qué se supone de los tubos entre sí en el método del NMP?",
+      "opciones": [
+        "Que son independientes.",
+        "Que se influyen, porque comparten el mismo baño de incubación.",
+        "Que el positivo de uno obliga al positivo del siguiente."
+      ],
+      "correcta": 0,
+      "explicacion": "Independencia, reparto al azar y crecimiento de todo tubo inoculado son los tres supuestos del manual de la FDA.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "crecimiento visible; - los tubos son independientes."
+    },
+    {
+      "id": "t13-q248",
+      "pregunta": "¿Qué tipo de microorganismos cuenta el NMP?",
+      "opciones": [
+        "Los viables y los muertos.",
+        "Solo los viables.",
+        "Solo los que forman esporas."
+      ],
+      "correcta": 1,
+      "explicacion": "El tubo solo cambia si algo vivo crece en él; las células muertas no dan positivo.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Solo cuenta microorganismos viables."
+    },
+    {
+      "id": "t13-q249",
+      "pregunta": "¿Por qué una bandeja de 50 pocillos o más estima mejor que una serie de pocos tubos?",
+      "opciones": [
+        "Porque los pocillos no necesitan confirmación.",
+        "Porque cada pocillo recibe un volumen mayor de muestra.",
+        "Porque con más tubos el resultado es más preciso y cubre un intervalo mayor."
+      ],
+      "correcta": 2,
+      "explicacion": "Con pocos tubos hay un intervalo de valores casi igual de probables; al aumentar el número, el NMP se concreta.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "por eso las bandejas de 50 pocillos o más estiman mejor y en un intervalo mayor"
+    },
+    {
+      "id": "t13-q250",
+      "pregunta": "¿Por qué las tablas de NMP omiten algunas combinaciones de positivos?",
+      "opciones": [
+        "Porque son improbables y hacen sospechar un error o una contaminación.",
+        "Porque corresponden a valores demasiado altos para informarlos.",
+        "Porque solo se tabulan las series de tres tubos."
+      ],
+      "correcta": 0,
+      "explicacion": "Si sale una combinación que no está en la tabla, lo que hay que revisar es el ensayo.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Las tablas omiten las combinaciones improbables, que hacen sospechar un error o una contaminación."
+    },
+    {
+      "id": "t13-q251",
+      "pregunta": "¿Qué significa que el NMP no es un valor exacto?",
+      "opciones": [
+        "Que el valor de la tabla hay que redondearlo a dos cifras.",
+        "Que el resultado depende del medio de cultivo elegido.",
+        "Que con pocos tubos hay un intervalo de valores casi igual de probables."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una estimación estadística: la tabla da el valor más probable, no el único posible.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Con pocos tubos hay un «intervalo más probable» de valores casi igual de probables."
+    },
+    {
+      "id": "t13-q252",
+      "pregunta": "¿En qué muestras resulta especialmente útil el NMP?",
+      "opciones": [
+        "En agua de consumo con muy pocas bacterias y nada de turbidez.",
+        "En aguas turbias, lodos, leche y alimentos, y con concentraciones bajas.",
+        "En cultivos puros de laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "Las partículas estorban el recuento de colonias, y el NMP no las sufre como la membrana.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "muestras con partículas que estorban el recuento de colonias: aguas turbias, lodos, leche y alimentos"
+    },
+    {
+      "id": "t13-q253",
+      "pregunta": "En el fundamento del NMP, ¿hasta dónde se diluye la muestra?",
+      "opciones": [
+        "Hasta que unos tubos reciben algún microorganismo y otros no.",
+        "Hasta que todos los tubos quedan negativos.",
+        "Hasta que la placa queda entre 10 y 300 colonias."
+      ],
+      "correcta": 0,
+      "explicacion": "La mezcla de positivos y negativos es la que permite estimar la concentración con la tabla.",
+      "fuente": "FDA, BAM, apéndice 2 (2023) · apunte §7.1",
+      "apartado": "7.1",
+      "evidencia": "Se diluye la muestra hasta que unos tubos reciben algún microorganismo y otros no."
+    },
+    {
+      "id": "t13-q254",
+      "pregunta": "¿Qué medio usa el método británico de NMP en tubos para coliformes y E. coli?",
+      "opciones": [
+        "Agar CCA en tubo inclinado.",
+        "Caldo de triptona y soja.",
+        "Caldo de glutamato modificado con minerales."
+      ],
+      "correcta": 2,
+      "explicacion": "Lleva púrpura de bromocresol como indicador: el ácido de la lactosa lo vira de púrpura a amarillo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "usa caldo de glutamato modificado con minerales"
+    },
+    {
+      "id": "t13-q255",
+      "pregunta": "En el NMP en tubos con púrpura de bromocresol, ¿qué provoca el viraje de color?",
+      "opciones": [
+        "El gas que se acumula en la campana Durham.",
+        "El ácido que se produce al fermentar la lactosa.",
+        "La fluorescencia del MUG bajo luz UV."
+      ],
+      "correcta": 1,
+      "explicacion": "El indicador pasa de púrpura a amarillo por la acidez; el MUG y la fluorescencia son de la bandeja con sustrato definido.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "el ácido de la lactosa lo vira de púrpura a amarillo"
+    },
+    {
+      "id": "t13-q256",
+      "pregunta": "Un tubo de NMP crece pero el medio sigue púrpura. ¿Cómo se interpreta?",
+      "opciones": [
+        "Como positivo, porque ha crecido algo.",
+        "Como negativo.",
+        "Como dudoso, y se repite el tubo."
+      ],
+      "correcta": 1,
+      "explicacion": "Solo el amarillo es positivo: el crecimiento sin cambio de color se anota como negativo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Crecimiento sin cambio de color = negativo."
+    },
+    {
+      "id": "t13-q257",
+      "pregunta": "¿Cuándo se leen los tubos del NMP incubados a 37 °C?",
+      "opciones": [
+        "Solo a las 48 horas.",
+        "Entre las 18 y las 22 horas.",
+        "A las 24 horas y otra vez a las 48 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Son dos lecturas. El intervalo de 18-22 horas es el de la bandeja de 51 pocillos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "se lee a las 24 horas y otra vez a las 48 horas"
+    },
+    {
+      "id": "t13-q258",
+      "pregunta": "Para un agua de buena calidad, ¿qué serie de tubos usa el método británico?",
+      "opciones": [
+        "1 tubo de 50 mL y 5 de 10 mL.",
+        "5 de 10 mL, 5 de 1 mL y 5 de 0,1 mL.",
+        "1 de 50 mL, 5 de 10 mL y 5 de 1 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Son 100 mL en total. La serie de 11 tubos es para aguas dudosas y la de 15, para contaminadas.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Buena | 1 × 50 mL + 5 × 10 mL | 100 mL"
+    },
+    {
+      "id": "t13-q259",
+      "pregunta": "¿Cuántos tubos lleva la serie del NMP para un agua contaminada, y qué volumen total examina?",
+      "opciones": [
+        "11 tubos y 105 mL.",
+        "15 tubos y 105 mL.",
+        "15 tubos y 55,5 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La serie contaminada es 5 × 10 + 5 × 1 + 5 × 0,1 mL = 55,5 mL. Los 105 mL son de la serie de 11 tubos.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Contaminada | 5 × 10 + 5 × 1 + 5 × 0,1 mL (15 tubos) | 55,5 mL"
+    },
+    {
+      "id": "t13-q260",
+      "pregunta": "El agua a analizar está muy contaminada. ¿Qué hace el método británico de tubos múltiples?",
+      "opciones": [
+        "Usar la serie de 11 tubos sin diluir.",
+        "Analizar diluciones de 1/100, 1/1000 o más.",
+        "Filtrar la muestra por membrana antes de inocular los tubos."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin diluir, todos los tubos saldrían positivos y el resultado solo sería «mayor que» el máximo.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Muy contaminada | Diluciones de 1/100, 1/1000 o más"
+    },
+    {
+      "id": "t13-q261",
+      "pregunta": "En el NMP en tubos, ¿a qué se añade un volumen de muestra de 1 mL o menos?",
+      "opciones": [
+        "A 5 mL de medio de concentración simple.",
+        "A un volumen igual de medio de doble concentración.",
+        "A 50 mL de medio de concentración simple."
+      ],
+      "correcta": 0,
+      "explicacion": "El medio de doble concentración es para los volúmenes grandes, de 50 y 10 mL, que diluirían el medio.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Los de 1 mL o menos, a 5 mL de medio de concentración simple."
+    },
+    {
+      "id": "t13-q262",
+      "pregunta": "Al confirmar los tubos positivos del NMP, ¿qué distingue a E. coli de los demás coliformes?",
+      "opciones": [
+        "Que es oxidasa positiva.",
+        "Que fermenta la lactosa a 37 °C.",
+        "Que fermenta la lactosa a 44 °C y produce indol."
+      ],
+      "correcta": 2,
+      "explicacion": "La lactosa a 37 °C con oxidasa negativa confirma coliformes; E. coli añade los 44 °C y el indol.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "E. coli: además, lactosa a 44 °C e indol."
+    },
+    {
+      "id": "t13-q263",
+      "pregunta": "En la confirmación de los tubos positivos, ¿qué resultado de la oxidasa corresponde a los coliformes?",
+      "opciones": [
+        "Oxidasa positiva.",
+        "Oxidasa negativa.",
+        "La oxidasa no se hace en esta confirmación."
+      ],
+      "correcta": 1,
+      "explicacion": "Coliformes: lactosa a 37 °C y oxidasa negativa; es el mismo criterio que en las colonias rosas del agar CCA.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Coliformes: lactosa a 37 °C y oxidasa negativa."
+    },
+    {
+      "id": "t13-q264",
+      "pregunta": "En la serie de 15 tubos, los resultados son 3, 2 y 0 positivos y la tabla da 13 por 100 mL. Si la muestra estaba diluida 1/100, ¿qué resultado se informa?",
+      "opciones": [
+        "1300 por 100 mL.",
+        "13 por 100 mL.",
+        "130 por 100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "El valor de la tabla se multiplica por el inverso de la dilución: 13 × 100 = 1300.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Ejemplo: en la serie de 15 tubos, 3, 2 y 0 positivos → la tabla da 13 por 100 mL."
+    },
+    {
+      "id": "t13-q265",
+      "pregunta": "La serie de 11 tubos del método británico (1 × 50, 5 × 10 y 5 × 1 mL) está indicada para un agua:",
+      "opciones": [
+        "De buena calidad.",
+        "De calidad dudosa o desconocida.",
+        "Muy contaminada."
+      ],
+      "correcta": 1,
+      "explicacion": "La buena calidad se analiza con 6 tubos (100 mL) y el agua muy contaminada, con diluciones de 1/100 o más.",
+      "fuente": "SCA, Microbiology of Drinking Water (2016), parte 4, método C · apunte §7.2",
+      "apartado": "7.2",
+      "evidencia": "Dudosa o desconocida | 1 × 50 + 5 × 10 + 5 × 1 mL (11 tubos) | 105 mL"
     }
   ],
   "supuestos": [
