@@ -1991,6 +1991,496 @@
       "fuente": "FDA, BAM, cap. 3, recuento en diluciones decimales · apunte §9",
       "apartado": "9",
       "evidencia": "3. **Las diluciones decimales son 1 + 9**, con **pipeta nueva** y **mezclando cada una** antes de la siguiente. **Ringer a un cuarto** o **diluyente de máxima recuperación**."
+    },
+    {
+      "id": "t13-q104",
+      "pregunta": "¿Qué fija la norma UNE-EN ISO 8199 para el análisis microbiológico del agua?",
+      "opciones": [
+        "El método de referencia para Legionella en todo tipo de aguas.",
+        "Los valores paramétricos microbiológicos del agua de consumo.",
+        "Las manipulaciones comunes a todas las técnicas de cultivo y los criterios para elegir cada técnica."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la norma general: preparación de muestras, medios y material, y descripción de las técnicas de detección y recuento por cultivo. Legionella tiene su propia norma, la ISO 11731.",
+      "fuente": "Resúmenes oficiales de las ISO 8199 y 7218 (SNV) · apunte §1",
+      "apartado": "1",
+      "evidencia": "fija las manipulaciones comunes a todas las técnicas de cultivo (preparación de muestras, medios, material)"
+    },
+    {
+      "id": "t13-q105",
+      "pregunta": "¿Qué edición de la ISO 7218, norma general de la microbiología de los alimentos, es la vigente?",
+      "opciones": [
+        "La de 2007.",
+        "La de 2024.",
+        "La de 2013."
+      ],
+      "correcta": 1,
+      "explicacion": "La norma se revisó en 2024. La fórmula de la media ponderada se toma de la edición de 2007 porque es la que reproduce la metodología oficial de la ANMAT; 2013 es el año de la ISO 4833-1.",
+      "fuente": "Resúmenes oficiales de las ISO 8199 y 7218 (SNV) · apunte §1",
+      "apartado": "1",
+      "evidencia": "En los alimentos, el equivalente es la ISO 7218 (2024)."
+    },
+    {
+      "id": "t13-q106",
+      "pregunta": "¿En qué unidades se expresa el recuento de heterótrofos (colonias a 22 °C y 37 °C) de un agua?",
+      "opciones": [
+        "ufc/100 mL.",
+        "ufc/mL.",
+        "ufc/L."
+      ],
+      "correcta": 1,
+      "explicacion": "Los heterótrofos se cuentan por mililitro. Por 100 mL se dan E. coli, coliformes y enterococos; por litro, Legionella.",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Heterótrofos (colonias a 22 °C y 37 °C), alimentos | ufc/mL o ufc/g"
+    },
+    {
+      "id": "t13-q107",
+      "pregunta": "¿En qué unidades se expresa el recuento de microorganismos aerobios de un alimento sólido?",
+      "opciones": [
+        "ufc/100 mL.",
+        "NMP/L.",
+        "ufc/g."
+      ],
+      "correcta": 2,
+      "explicacion": "En los alimentos, el recuento se refiere a la masa de muestra: ufc/g (o ufc/mL si es líquido).",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "Heterótrofos (colonias a 22 °C y 37 °C), alimentos | ufc/mL o ufc/g"
+    },
+    {
+      "id": "t13-q108",
+      "pregunta": "¿En qué unidades se expresa el recuento de enterococos de un agua?",
+      "opciones": [
+        "ufc/100 mL.",
+        "ufc/mL.",
+        "ufc/L."
+      ],
+      "correcta": 0,
+      "explicacion": "Igual que E. coli y los coliformes, los enterococos del agua se dan por 100 mL.",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "E. coli, coliformes, enterococos en el agua | ufc/100 mL"
+    },
+    {
+      "id": "t13-q109",
+      "pregunta": "¿En qué unidades se da el resultado de un número más probable en el agua?",
+      "opciones": [
+        "NMP/mL.",
+        "ufc/100 mL.",
+        "NMP/100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "El NMP no cuenta colonias, así que no se expresa en ufc; en el agua se refiere a 100 mL.",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "NMP en el agua | NMP/100 mL | | Legionella | ufc/L"
+    },
+    {
+      "id": "t13-q110",
+      "pregunta": "¿Por qué el número más probable no es un recuento de colonias?",
+      "opciones": [
+        "Porque es una estimación estadística que se busca en una tabla según los tubos o pocillos positivos.",
+        "Porque cuenta las células al microscopio en una cámara de recuento.",
+        "Porque mide la turbidez del caldo y la convierte en ufc."
+      ],
+      "correcta": 0,
+      "explicacion": "El NMP estima la concentración a partir de cuántos tubos o pocillos dan positivo, con una tabla de probabilidades.",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "No sale de contar colonias, sino de una tabla de probabilidades."
+    },
+    {
+      "id": "t13-q111",
+      "pregunta": "¿Qué volumen se siembra en un recuento en placa en superficie?",
+      "opciones": [
+        "1 mL.",
+        "0,1 mL.",
+        "10 mL."
+      ],
+      "correcta": 1,
+      "explicacion": "En profundidad se siembra 1 mL; en superficie, 0,1 mL, que es lo que el agar puede absorber al extenderlo.",
+      "fuente": "SCA (2017), apdo. 7.2; FDA, BAM, apéndice 2 (2023) · apunte §2",
+      "apartado": "2",
+      "evidencia": "En profundidad (1 mL) o en superficie (0,1 mL), de la muestra o de sus diluciones"
+    },
+    {
+      "id": "t13-q112",
+      "pregunta": "Una muestra muy contaminada se siembra sin diluir. ¿Qué es lo más probable?",
+      "opciones": [
+        "Que dé menos de 10 colonias por placa.",
+        "Que dé placas incontables.",
+        "Que dé exactamente entre 10 y 300 colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso se diluye: para que la placa quede en el intervalo contable de 10-300 colonias.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Una muestra muy contaminada da placas incontables."
+    },
+    {
+      "id": "t13-q113",
+      "pregunta": "Se espera un agua con unas 20 000 ufc/mL y se siembra 1 mL. ¿Cuál de estas diluciones da una placa contable?",
+      "opciones": [
+        "La 10⁻¹, con unas 2000 colonias.",
+        "La 10⁻⁴, con unas 2 colonias.",
+        "La 10⁻², con unas 200 colonias."
+      ],
+      "correcta": 2,
+      "explicacion": "20 000 × 10⁻² = 200 colonias, dentro de 10-300. La 10⁻¹ daría 2000 (incontable) y la 10⁻⁴, 2 (por debajo de 10).",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Diluida, da una placa con 10-300 colonias."
+    },
+    {
+      "id": "t13-q114",
+      "pregunta": "¿Cómo se obtiene una dilución 1/100 de una sola vez?",
+      "opciones": [
+        "Con 1 mL de muestra en 99 mL de diluyente.",
+        "Con 1 mL de muestra en 100 mL de diluyente.",
+        "Con 10 mL de muestra en 99 mL de diluyente."
+      ],
+      "correcta": 0,
+      "explicacion": "1 + 99 = 100 mL, de los que 1 es muestra. Con 1 + 100 el total es 101 (1/101) y con 10 + 99, 109 (10/109, casi 1/11).",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "1 mL en 99 mL = 1/100 (10⁻²) de una vez."
+    },
+    {
+      "id": "t13-q115",
+      "pregunta": "¿Cuál de estas mezclas da una dilución 1/10?",
+      "opciones": [
+        "10 mL de muestra en 100 mL de diluyente.",
+        "10 mL de muestra en 90 mL de diluyente.",
+        "1 mL de muestra en 10 mL de diluyente."
+      ],
+      "correcta": 1,
+      "explicacion": "La regla es 1 volumen de muestra en 9 de diluyente: 10 + 90 = 100. Con 10 + 100 o 1 + 10 el total es 110 u 11, y la dilución es 1/11.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Por ejemplo, 1 mL en 9 mL, o 10 mL en 90 mL."
+    },
+    {
+      "id": "t13-q116",
+      "pregunta": "En una serie de diluciones decimales, ¿cómo se prepara la 10⁻³?",
+      "opciones": [
+        "Pasando 1 mL de la 10⁻² a 9 mL de diluyente.",
+        "Pasando 1 mL de la 10⁻¹ a 9 mL de diluyente.",
+        "Pasando 3 mL de la muestra a 9 mL de diluyente."
+      ],
+      "correcta": 0,
+      "explicacion": "Cada paso de 1 + 9 divide por 10 la anterior: de la 10⁻² sale la 10⁻³. De la 10⁻¹ saldría la 10⁻².",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "de la 10⁻¹ se toma 1 mL a otros 9 mL y sale la 10⁻²; luego la 10⁻³, etc."
+    },
+    {
+      "id": "t13-q117",
+      "pregunta": "¿Cuántas diluciones se preparan, como mínimo, de una muestra ambiental?",
+      "opciones": [
+        "Una.",
+        "Cinco.",
+        "Dos."
+      ],
+      "correcta": 2,
+      "explicacion": "La guía británica pide al menos dos; tres si la muestra no se conoce.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "en muestras ambientales, al menos dos"
+    },
+    {
+      "id": "t13-q118",
+      "pregunta": "Llega un agua que nunca se ha analizado y de la que no se sabe cuántos microorganismos lleva. ¿Cuántas diluciones se preparan?",
+      "opciones": [
+        "Una.",
+        "Tres.",
+        "Dos."
+      ],
+      "correcta": 1,
+      "explicacion": "Dos es el mínimo para una muestra ambiental conocida; si no se sabe qué carga lleva, tres.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Si la muestra no se ha analizado antes y no se sabe cuántos microorganismos lleva, tres."
+    },
+    {
+      "id": "t13-q119",
+      "pregunta": "Según la EPA, ¿cuántos volúmenes o diluciones se filtran, como mínimo, en la filtración por membrana?",
+      "opciones": [
+        "Tres.",
+        "Uno.",
+        "Dos."
+      ],
+      "correcta": 0,
+      "explicacion": "Con tres volúmenes es más fácil que alguna membrana quede en el intervalo de 20-80 colonias.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "La EPA recomienda al menos tres volúmenes o diluciones en la filtración."
+    },
+    {
+      "id": "t13-q120",
+      "pregunta": "Al pasar la muestra al diluyente, ¿cómo se sujeta el tapón del frasco?",
+      "opciones": [
+        "Apoyado boca arriba sobre la mesa.",
+        "Con los dedos por dentro, para que no se caiga.",
+        "En la mano, sin tocar su interior ni la boca."
+      ],
+      "correcta": 2,
+      "explicacion": "Así no se contamina el tapón ni la boca del frasco durante la transferencia.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "sujetando el tapón en la mano sin tocar su interior ni la boca"
+    },
+    {
+      "id": "t13-q121",
+      "pregunta": "¿Cuánto volumen de cada dilución se prepara?",
+      "opciones": [
+        "Siempre 1 mL exacto, el que se siembra.",
+        "El suficiente para todos los ensayos que se vayan a hacer con ella.",
+        "Siempre 100 mL, el de una filtración."
+      ],
+      "correcta": 1,
+      "explicacion": "Se prepara de una vez el volumen que van a necesitar todas las siembras de esa dilución.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Preparar volumen suficiente de cada dilución para todos los ensayos."
+    },
+    {
+      "id": "t13-q122",
+      "pregunta": "¿Por qué no se usan soluciones tamponadas para diluir las muestras de la bandeja de NMP con sustrato definido (Colilert)?",
+      "opciones": [
+        "Porque precipitan al sellar la bandeja en caliente.",
+        "Porque contienen fosfatos que dan fluorescencia bajo la luz UV.",
+        "Porque alteran el ensayo."
+      ],
+      "correcta": 2,
+      "explicacion": "Para la bandeja se diluye con agua destilada o desionizada estéril; el tampón, que sí se usa en la filtración, aquí altera el resultado.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "No sirven las soluciones tamponadas, que alteran el ensayo"
+    },
+    {
+      "id": "t13-q123",
+      "pregunta": "¿Qué se hace con la muestra antes de sacar la primera alícuota para diluir?",
+      "opciones": [
+        "Agitarla invirtiendo el frasco rápidamente varias veces.",
+        "Dejarla reposar para que sedimenten las partículas.",
+        "Centrifugarla y tomar el sobrenadante."
+      ],
+      "correcta": 0,
+      "explicacion": "Hay que repartir bien los microorganismos; por eso el frasco lleva cámara de aire. Dejarla reposar o tomar el sobrenadante dejaría bacterias atrás.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "Agitar la muestra, invirtiendo el frasco rápidamente varias veces."
+    },
+    {
+      "id": "t13-q124",
+      "pregunta": "¿Por qué se comprueba el volumen de los tubos de diluyente que vienen ya esterilizados y llenos?",
+      "opciones": [
+        "Porque el autoclave añade agua condensada al tubo.",
+        "Porque pueden perder diluyente al esterilizarlos o al guardarlos.",
+        "Porque el fabricante los llena siempre con 10 mL de más."
+      ],
+      "correcta": 1,
+      "explicacion": "Si falta diluyente, la dilución ya no es 1/10. Los que no tienen el volumen correcto se desechan.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "porque pueden perder diluyente al esterilizarlos o al guardarlos"
+    },
+    {
+      "id": "t13-q125",
+      "pregunta": "Para la suspensión inicial de un alimento se pesan 25 g. ¿Cuánto diluyente se añade para obtener la dilución 1/10?",
+      "opciones": [
+        "225 mL.",
+        "250 mL.",
+        "25 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se añaden 9 partes de diluyente por cada parte de muestra: 25 × 9 = 225 mL. En total, 250, de los que 25 son muestra: 1/10.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "se pesan x g de muestra (como mínimo 10 g) y se añaden 9x mL de diluyente: dilución 1/10"
+    },
+    {
+      "id": "t13-q126",
+      "pregunta": "¿Cuánto tiempo se homogeneiza la suspensión inicial de un alimento?",
+      "opciones": [
+        "De 5 a 10 segundos.",
+        "De 15 a 20 minutos.",
+        "De 1 a 3 minutos, según el alimento."
+      ],
+      "correcta": 2,
+      "explicacion": "De 5 a 10 segundos es la mezcla de las diluciones siguientes con el agitador.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se homogeneiza de 1 a 3 minutos, según el alimento."
+    },
+    {
+      "id": "t13-q127",
+      "pregunta": "Al preparar la 10⁻² a partir de la suspensión inicial de un alimento, ¿cuánto se mezcla con el agitador?",
+      "opciones": [
+        "De 1 a 3 minutos.",
+        "Al menos 10 minutos.",
+        "De 5 a 10 segundos."
+      ],
+      "correcta": 2,
+      "explicacion": "De 1 a 3 minutos es la homogeneización de la suspensión inicial; las diluciones siguientes se mezclan unos segundos.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "Se mezcla 5-10 segundos con agitador."
+    },
+    {
+      "id": "t13-q128",
+      "pregunta": "Desde que se prepara la suspensión inicial de un alimento, ¿cuál es el plazo máximo para empezar las diluciones?",
+      "opciones": [
+        "30 minutos.",
+        "45 minutos.",
+        "2 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "30 minutos para empezar a diluir y 45 hasta que el inóculo toca el medio.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "30 minutos como máximo para empezar las diluciones"
+    },
+    {
+      "id": "t13-q129",
+      "pregunta": "¿Cuál es el plazo máximo desde la suspensión inicial de un alimento hasta que el inóculo toca el medio de cultivo?",
+      "opciones": [
+        "30 minutos.",
+        "45 minutos.",
+        "24 horas."
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos plazos: 30 minutos para empezar las diluciones y 45 minutos hasta sembrar.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "45 minutos hasta que el inóculo toca el medio"
+    },
+    {
+      "id": "t13-q130",
+      "pregunta": "¿Cómo trabaja el homogeneizador peristáltico (Stomacher)?",
+      "opciones": [
+        "Masajea la muestra dentro de una bolsa de plástico.",
+        "Tritura la muestra con cuchillas en la base de un vaso.",
+        "Rompe la muestra con ultrasonidos en un baño."
+      ],
+      "correcta": 0,
+      "explicacion": "Las cuchillas son de la batidora. El Stomacher trabaja típicamente de 1 a 3 minutos.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "la muestra se masajea en una bolsa de plástico, típicamente 1-3 minutos"
+    },
+    {
+      "id": "t13-q131",
+      "pregunta": "¿Qué homogeneizador lleva cuchillas en la base del vaso?",
+      "opciones": [
+        "El Stomacher.",
+        "El agitador vórtex.",
+        "La batidora."
+      ],
+      "correcta": 2,
+      "explicacion": "El Stomacher masajea la muestra en una bolsa; el vórtex solo agita tubos.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La batidora, con cuchillas en la base del vaso."
+    },
+    {
+      "id": "t13-q132",
+      "pregunta": "En el análisis de aguas, ¿para qué muestras cita la guía británica el Stomacher?",
+      "opciones": [
+        "Para el agua de consumo.",
+        "Para los lodos.",
+        "Para el agua de piscina."
+      ],
+      "correcta": 1,
+      "explicacion": "Los lodos, como los alimentos, son sólidos que hay que homogeneizar antes de diluir; el agua no lo necesita.",
+      "fuente": "ANMAT, vol. III (ISO 6887-1); SCA (2017), apdo. 5.23 · apunte §3.3",
+      "apartado": "3.3",
+      "evidencia": "La guía británica lo cita para los lodos; en los alimentos se usa igual."
+    },
+    {
+      "id": "t13-q133",
+      "pregunta": "Una bandeja de NMP da 23,8 por 100 mL con la muestra diluida 1:10. ¿Cuál es el resultado de la muestra?",
+      "opciones": [
+        "238 NMP/100 mL.",
+        "2,38 NMP/100 mL.",
+        "2380 NMP/100 mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se multiplica por el inverso de la dilución: 23,8 × 10 = 238 NMP/100 mL.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "El resultado de una dilución se multiplica por el inverso de la dilución"
+    },
+    {
+      "id": "t13-q134",
+      "pregunta": "Un agua tiene 4,5 × 10⁵ ufc/mL. ¿Cuántas colonias se esperan al sembrar 1 mL de su dilución 10⁻⁴?",
+      "opciones": [
+        "450.",
+        "45.",
+        "4,5."
+      ],
+      "correcta": 1,
+      "explicacion": "Es la cuenta al revés: 450 000 × 10⁻⁴ = 45 colonias. Al multiplicarlas por el inverso de la dilución (45 × 10 000) se vuelve a 4,5 × 10⁵.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "32 colonias en 1 mL de la dilución 10⁻³ → 32 × 1000 = 32 000 ufc/mL"
+    },
+    {
+      "id": "t13-q135",
+      "pregunta": "Se pasa 1 mL de muestra a 99 mL de diluyente y, de esa mezcla, 1 mL a 9 mL de diluyente. ¿Qué dilución resulta?",
+      "opciones": [
+        "1/100 (10⁻²).",
+        "1/108.",
+        "1/1000 (10⁻³)."
+      ],
+      "correcta": 2,
+      "explicacion": "El primer paso da 1/100 y el segundo, 1/10. Las diluciones en serie se multiplican: 1/100 × 1/10 = 1/1000.",
+      "fuente": "SCA (2017), apdo. 7.2 · apunte §3.2",
+      "apartado": "3.2",
+      "evidencia": "1 mL en 99 mL = 1/100 (10⁻²) de una vez."
+    },
+    {
+      "id": "t13-q136",
+      "pregunta": "Con una dilución 1:10 se encuentran 10 microorganismos, que estiman 100 por 100 mL. ¿Qué intervalo de confianza del 95 % da la guía británica?",
+      "opciones": [
+        "De 90 a 110 por 100 mL.",
+        "De 10 a 1000 por 100 mL.",
+        "De 50 a 180 por 100 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "La dilución introduce variabilidad: el intervalo es ancho y asimétrico, de 50 a 180.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "con un intervalo de confianza del 95 % de 50 a 180"
+    },
+    {
+      "id": "t13-q137",
+      "pregunta": "Según la guía británica, ¿cuánto pesa la variabilidad que introduce la dilución en un recuento de agua?",
+      "opciones": [
+        "Poco, frente a la que ya tiene el agua de origen.",
+        "Más que cualquier otra fuente de error del análisis.",
+        "Nada: una dilución bien hecha no introduce variabilidad."
+      ],
+      "correcta": 0,
+      "explicacion": "La dilución sí introduce variabilidad, pero el agua de origen ya varía mucho más.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "Esa variación pesa poco frente a la que ya tiene el agua de origen."
+    },
+    {
+      "id": "t13-q138",
+      "pregunta": "El resultado obtenido en una dilución 1:50, ¿por cuánto se multiplica para referirlo a la muestra?",
+      "opciones": [
+        "Por 1/50.",
+        "Por 50.",
+        "Por 5."
+      ],
+      "correcta": 1,
+      "explicacion": "Siempre por el inverso de la dilución: el inverso de 1/50 es 50.",
+      "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
+      "apartado": "3.4",
+      "evidencia": "El resultado de una dilución se multiplica por el inverso de la dilución"
     }
   ],
   "supuestos": [
