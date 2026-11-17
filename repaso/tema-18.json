@@ -4470,6 +4470,272 @@
       "fuente": "SCA (2020), parte 7; resumen oficial de la ISO 6222 · apunte §7",
       "apartado": "7",
       "evidencia": "Los mohos no se cuentan; algunas levaduras, sí, porque parecen bacterias."
+    },
+    {
+      "id": "t18-q282",
+      "pregunta": "Se filtran 10 mL de un agua y en CCA crecen 32 colonias rosas oxidasa negativas y 9 azul-violeta. ¿Cuántas E. coli hay por 100 mL?",
+      "opciones": [
+        "90.",
+        "9.",
+        "410."
+      ],
+      "correcta": 0,
+      "explicacion": "E. coli son las azul-violeta: 9 en 10 mL; 9 ÷ 10 × 100 = 90 UFC/100 mL.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "azul oscuro a violeta = E. coli"
+    },
+    {
+      "id": "t18-q283",
+      "pregunta": "De 12 colonias azul-violeta de una membrana de 100 mL, el indol sale positivo en 10. ¿Qué se informa?",
+      "opciones": [
+        "10 UFC/100 mL de E. coli.",
+        "12 UFC/100 mL de E. coli.",
+        "2 UFC/100 mL de E. coli."
+      ],
+      "correcta": 0,
+      "explicacion": "El recuento se queda con las confirmadas: las dos que no dan rojo cereza se descartan.",
+      "fuente": "Orden SCO/778/2009, anexo; SCA (2016), parte 4; resumen oficial de la ISO 9308-1 · apunte §5.1",
+      "apartado": "5.1",
+      "evidencia": "Azul-violeta: el indol. Con reactivo de Kovács sobre la colonia, un rojo cereza en segundos confirma E. coli"
+    },
+    {
+      "id": "t18-q284",
+      "pregunta": "Se filtran 100 mL de agua sin tratamiento térmico previo y crecen colonias negras en TSC. ¿Qué se está contando?",
+      "opciones": [
+        "Solo las esporas.",
+        "Las células vegetativas y las esporas juntas.",
+        "Solo las células vegetativas."
+      ],
+      "correcta": 1,
+      "explicacion": "Para contar solo esporas hay que calentar antes la muestra a 60 ± 2 °C durante 15 minutos.",
+      "fuente": "ISO 14189 en la ficha de Thermo Scientific; SCA (2004), parte 6; Adcock y Saint (2001); SZÚ (2026) · apunte §5.3",
+      "apartado": "5.3",
+      "evidencia": "Solo esporas: se calienta la muestra a 60 ± 2 °C durante 15 minutos antes de filtrar"
+    },
+    {
+      "id": "t18-q285",
+      "pregunta": "Una bandeja de NMP se incuba 15 horas y se lee. ¿Qué problema hay?",
+      "opciones": [
+        "Ninguno: la lectura es válida desde las 12 horas.",
+        "Que se ha pasado del máximo de 14 horas.",
+        "Que no se ha alcanzado el mínimo de 18 horas de incubación."
+      ],
+      "correcta": 2,
+      "explicacion": "La incubación es de 18 a 22 horas a 36 ± 2 °C.",
+      "fuente": "Orden SCO/778/2009, anexo, y su corrección; resumen oficial de la ISO 9308-2 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Incubar entre 18 y 22 horas a 36 ± 2 °C."
+    },
+    {
+      "id": "t18-q286",
+      "pregunta": "Un técnico lee una bandeja Enterolert-DW a las 12 horas. ¿Qué le falta?",
+      "opciones": [
+        "Usar la lámpara UV de 365 nm.",
+        "Completar las 24 horas de incubación.",
+        "Sellar de nuevo la bandeja."
+      ],
+      "correcta": 1,
+      "explicacion": "El Enterolert-DW se incuba a 41 ± 0,5 °C durante 24 horas y se lee por el cambio de azul a verde.",
+      "fuente": "IDEXX, Enterolert-DW (web oficial); RD 3/2023, anexo III, parte C · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Incubación: 41 ± 0,5 °C durante 24 horas."
+    },
+    {
+      "id": "t18-q287",
+      "pregunta": "Según la tabla de indicadores, ¿qué colonia típica corresponde a E. coli en CCA?",
+      "opciones": [
+        "Rosa salmón a rojo.",
+        "Amarilla y fluorescente.",
+        "Azul oscuro a violeta."
+      ],
+      "correcta": 2,
+      "explicacion": "La rosa salmón son los coliformes que no son E. coli; el amarillo fluorescente es de la bandeja de NMP.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "| E. coli | ISO 9308-1 | Filtración, CCA | Íd. | Azul oscuro a violeta | Indol (Kovács) |"
+    },
+    {
+      "id": "t18-q288",
+      "pregunta": "En la tabla de indicadores, ¿qué confirmación corresponde a los enterococos por filtración?",
+      "opciones": [
+        "La esculina, con halo negro a 44 °C.",
+        "La fosfatasa ácida, con color púrpura.",
+        "El indol, con rojo cereza."
+      ],
+      "correcta": 0,
+      "explicacion": "La fosfatasa ácida es de C. perfringens y el indol, de E. coli.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "Rojas, granates o rosas | Esculina: halo negro a 44 °C |"
+    },
+    {
+      "id": "t18-q289",
+      "pregunta": "Según la tabla, ¿qué confirmaciones se asocian a P. aeruginosa en agar CN?",
+      "opciones": [
+        "Esculina y β-glucosidasa.",
+        "Acetamida, King B y oxidasa.",
+        "Indol y oxidasa."
+      ],
+      "correcta": 1,
+      "explicacion": "La esculina es de enterococos y el indol, de E. coli.",
+      "fuente": "RD 3/2023, anexo III, parte C; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §9",
+      "apartado": "9",
+      "evidencia": "Azul-verdosas (piocianina) | Acetamida, King B, oxidasa"
+    },
+    {
+      "id": "t18-q290",
+      "pregunta": "En el cuadro de cifras, ¿qué plazo se asocia a las esporas de C. perfringens?",
+      "opciones": [
+        "18 horas.",
+        "12 horas.",
+        "72 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las 18 horas son el plazo de E. coli y coliformes, y las 12, el del recuento a 22 °C.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Esporas de C. perfringens: 72 h"
+    },
+    {
+      "id": "t18-q291",
+      "pregunta": "Según el cuadro de cifras, ¿qué incubación corresponde al agar CN?",
+      "opciones": [
+        "36 ± 2 °C y 44 ± 4 horas.",
+        "44 ± 1 °C y 21 ± 3 horas.",
+        "41 °C y 24 horas."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 44 °C con 21 h son del TSC y los 41 °C con 24 h, del Enterolert-DW.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "| CN: 36 ± 2 °C, 44 ± 4 h | P. aeruginosa |"
+    },
+    {
+      "id": "t18-q292",
+      "pregunta": "En el cuadro de cifras, ¿cuántos días y a qué temperatura se incuba Legionella, y cuánto dura su confirmación?",
+      "opciones": [
+        "7 días a 39 °C, con confirmación de 24 horas.",
+        "10 días a 36 ± 1 °C, con confirmación de 2-3 días.",
+        "10 días a 39 °C, sin confirmación."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 7 días a 39 °C son del Legiolert.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Legionella: 36 ± 1 °C, 10 días; confirmación 2-3 días"
+    },
+    {
+      "id": "t18-q293",
+      "pregunta": "Resumiendo el tema: ¿qué dos normas puede citar un examen como oficiales de E. coli y coliformes?",
+      "opciones": [
+        "La ISO 9308-1 y la 9308-2.",
+        "La ISO 9308-1 y la 7899-2.",
+        "La ISO 6222 y la 9308-2."
+      ],
+      "correcta": 0,
+      "explicacion": "La 7899-2 es de enterococos y la 6222, del recuento de colonias.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Normas: E. coli y coliformes ISO 9308-1 o 9308-2 (1322 C2 #14)"
+    },
+    {
+      "id": "t18-q294",
+      "pregunta": "Resumiendo el tema: ¿cómo se confirma Legionella y cuál es su método de referencia?",
+      "opciones": [
+        "Crece en GVPC y no en BCYE; el de referencia es la qPCR.",
+        "Crece en BCYE sin cisteína; el de referencia es el Legiolert.",
+        "Crece en BCYE y no en BCYE sin L-cisteína; el de referencia es el cultivo de la ISO 11731."
+      ],
+      "correcta": 2,
+      "explicacion": "La qPCR solo vale como complemento, y el Legiolert no es el método de referencia.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Legionella: crece en BCYE y no en BCYE sin L-cisteína (1233 #13)"
+    },
+    {
+      "id": "t18-q295",
+      "pregunta": "Resumiendo el tema: ¿qué contienen los medios de E. coli?",
+      "opciones": [
+        "Azida y tetrazolio.",
+        "Sustratos de la β-galactosidasa y de la β-glucuronidasa.",
+        "Metabisulfito y cicloserina."
+      ],
+      "correcta": 1,
+      "explicacion": "La azida y el tetrazolio son del medio de enterococos; el metabisulfito y la cicloserina, del TSC.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Medios de E. coli: sustratos de la β-galactosidasa y la β-glucuronidasa (1322 C2 #12)."
+    },
+    {
+      "id": "t18-q296",
+      "pregunta": "Resumiendo el tema: ¿qué color de colonia corresponde a P. aeruginosa en agar CN?",
+      "opciones": [
+        "Azul-verdosa.",
+        "Negra.",
+        "Rosa a roja."
+      ],
+      "correcta": 0,
+      "explicacion": "Las negras son de C. perfringens y las rosas, de los coliformes en CCA.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Agar CN: azul-verdosas = P. aeruginosa (1246 #39)."
+    },
+    {
+      "id": "t18-q297",
+      "pregunta": "Resumiendo el tema: ¿por qué las colonias de C. perfringens salen negras en TSC?",
+      "opciones": [
+        "Porque reducen el TTC a formazán.",
+        "Porque producen piocianina.",
+        "Porque el sulfito reducido forma sulfuro de hierro."
+      ],
+      "correcta": 2,
+      "explicacion": "El formazán da el rojo de los enterococos y la piocianina, el azul-verdoso de P. aeruginosa.",
+      "fuente": "RD 3/2023, anexos I y III; SCA, Microbiology of Drinking Water, partes 4-7 · apunte §11",
+      "apartado": "11",
+      "evidencia": "colonias negras (sulfito → sulfuro de hierro)"
+    },
+    {
+      "id": "t18-q298",
+      "pregunta": "En un agua sube el recuento de heterótrofos sin aparecer indicadores fecales. ¿Qué hay que revisar?",
+      "opciones": [
+        "La posible entrada de heces recientes.",
+        "La red: su limpieza, su integridad y las biopelículas.",
+        "La eficacia frente a protozoos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los heterótrofos son la flora natural del agua y de la red.",
+      "fuente": "OMS, Guidelines for drinking-water quality (4.ª ed.), tabla 7.9 y cap. 11; SCA, Microbiology of Drinking Water · apunte §2.2",
+      "apartado": "2.2",
+      "evidencia": "Los heterótrofos son la flora natural del agua y de la red; si suben, algo va mal en la red."
+    },
+    {
+      "id": "t18-q299",
+      "pregunta": "¿Qué pigmento da el color azul-verdoso de P. aeruginosa en agar CN?",
+      "opciones": [
+        "La piocianina.",
+        "La pioverdina.",
+        "El formazán."
+      ],
+      "correcta": 0,
+      "explicacion": "El sulfato potásico y el cloruro magnésico del medio son los que la estimulan.",
+      "fuente": "Esquema de la ISO 16266 en la ficha de Condalab; RD 3/2023, anexo I, parte A · apunte §5.4",
+      "apartado": "5.4",
+      "evidencia": "| Azul-verdosa (piocianina) | Confirmada como P. aeruginosa (1246 #39) |"
+    },
+    {
+      "id": "t18-q300",
+      "pregunta": "¿Cuáles son los cuatro parámetros microbiológicos del anexo I, parte A del RD 3/2023?",
+      "opciones": [
+        "E. coli, coliformes, recuento a 22 °C y colífagos.",
+        "E. coli, enterococo intestinal, coliformes y colífagos.",
+        "E. coli, enterococo intestinal, C. perfringens y Legionella spp."
+      ],
+      "correcta": 2,
+      "explicacion": "Los coliformes, el recuento a 22 °C y los colífagos son indicadores de calidad, de la parte C.",
+      "fuente": "RD 3/2023, anexo I, partes A y C · apunte §2.1",
+      "apartado": "2.1",
+      "evidencia": "Parámetros microbiológicos (anexo I, parte A)"
     }
   ],
   "supuestos": [
