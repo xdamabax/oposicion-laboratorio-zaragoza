@@ -2740,6 +2740,48 @@
       "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
       "apartado": "4.3",
       "evidencia": "espesor de 3 a 7 mm. Con menos, el medio se seca"
+    },
+    {
+      "id": "t12-q158",
+      "pregunta": "¿Qué datos lleva la etiqueta de las placas preparadas?",
+      "opciones": [
+        "Solo la fecha de vertido.",
+        "El medio, el lote y la caducidad.",
+        "El nombre del analista y la muestra."
+      ],
+      "correcta": 1,
+      "explicacion": "Así se identifica cada placa guardada.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Se etiqueta con el medio, el lote y la caducidad"
+    },
+    {
+      "id": "t12-q159",
+      "pregunta": "¿Cuánto tiempo se secan las placas a temperatura ambiente antes de usarlas?",
+      "opciones": [
+        "10 minutos.",
+        "24 horas.",
+        "2 horas, sin pasar de 25 °C."
+      ],
+      "correcta": 2,
+      "explicacion": "Otra opción es 30 minutos a 37 °C.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Secarlas antes de usarlas: 2 horas a temperatura ambiente, no más de 25 °C, o 30 minutos a 37 °C"
+    },
+    {
+      "id": "t12-q160",
+      "pregunta": "Si las placas se secan en estufa a 37 °C, ¿cuánto tiempo hace falta?",
+      "opciones": [
+        "30 minutos.",
+        "2 horas.",
+        "5 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "A temperatura ambiente son 2 horas.",
+      "fuente": "SCA (2017), apdo. 6 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "2 horas a temperatura ambiente, no más de 25 °C, o 30 minutos a 37 °C"
     }
   ],
   "supuestos": [
