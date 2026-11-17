@@ -4220,6 +4220,636 @@
       "fuente": "SCA (2017), 4.2; Eurachem (2023), anexo F · apunte §5.9",
       "apartado": "5.9",
       "evidencia": "recuento total y mohos, semanal; patógenos, dos veces al año."
+    },
+    {
+      "id": "t17-q256",
+      "pregunta": "¿Quién debería hacer preferiblemente las calibraciones de un equipo?",
+      "opciones": [
+        "El propio laboratorio, siempre.",
+        "El fabricante del equipo, obligatoriamente.",
+        "Un laboratorio de calibración acreditado."
+      ],
+      "correcta": 2,
+      "explicacion": "Las calibraciones internas caben dentro de lo que permite la ILAC P10.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Preferiblemente un laboratorio de calibración acreditado"
+    },
+    {
+      "id": "t17-q257",
+      "pregunta": "¿Qué documento marca el límite de las calibraciones internas?",
+      "opciones": [
+        "La ILAC P10.",
+        "La ISO 17034.",
+        "La ISO 11133."
+      ],
+      "correcta": 0,
+      "explicacion": "La 17034 es la de productores de materiales de referencia y la 11133, la del control de medios.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "las calibraciones internas, dentro de lo que permite ILAC P10"
+    },
+    {
+      "id": "t17-q258",
+      "pregunta": "¿Qué justifica la frecuencia de calibración y verificación de los equipos?",
+      "opciones": [
+        "La fecha de compra del equipo.",
+        "La experiencia y el análisis de riesgos.",
+        "El número de muestras analizadas al año."
+      ],
+      "correcta": 1,
+      "explicacion": "Las tablas de Eurachem son orientativas.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "La frecuencia la justifican la experiencia y el análisis de riesgos."
+    },
+    {
+      "id": "t17-q259",
+      "pregunta": "¿Cada cuánto se calibran los termopares de referencia?",
+      "opciones": [
+        "Cada 5 años, con comprobación anual en el punto de hielo.",
+        "Cada año, en todo su intervalo.",
+        "Cada 3 años, con comprobación anual."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 5 años con comprobación en el punto de hielo son los de los termómetros de referencia.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Termopares de referencia | Calibración cada 3 años; comprobación anual |"
+    },
+    {
+      "id": "t17-q260",
+      "pregunta": "¿Con qué frecuencia se calibran los termómetros de trabajo?",
+      "opciones": [
+        "Cada 5 años desde el principio.",
+        "Anualmente los tres primeros años y después, menos si funcionan bien.",
+        "Solo al comprarlos."
+      ],
+      "correcta": 1,
+      "explicacion": "Las balanzas siguen la misma pauta de los tres primeros años.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Termómetros de trabajo | Anual los 3 primeros años; después, menos si funcionan bien |"
+    },
+    {
+      "id": "t17-q261",
+      "pregunta": "¿Cada cuánto se calibran las pesas de calibración y las de comprobación?",
+      "opciones": [
+        "Cada 5 años las de calibración y cada 3 las de comprobación.",
+        "Cada 3 años las de calibración y cada 5 las de comprobación.",
+        "Las dos, cada año."
+      ],
+      "correcta": 0,
+      "explicacion": "Son dos filas distintas del anexo E de Eurachem.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Pesas de calibración | Cada 5 años | | Pesas de comprobación | Cada 3 años |"
+    },
+    {
+      "id": "t17-q262",
+      "pregunta": "¿Cada cuánto se calibra el material volumétrico de vidrio, y con qué excepción?",
+      "opciones": [
+        "Anualmente por gravimetría, salvo que tenga certificado.",
+        "Cada 5 años, salvo que se esterilice en horno.",
+        "Nunca: basta la marca de clase A."
+      ],
+      "correcta": 0,
+      "explicacion": "El vidrio con certificado no necesita verificación, aunque si se esteriliza en horno se comprueba de vez en cuando.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Material volumétrico de vidrio | Anual (gravimetría), salvo que tenga certificado |"
+    },
+    {
+      "id": "t17-q263",
+      "pregunta": "¿Con qué se calibran los pHmetros, según el anexo E de Eurachem?",
+      "opciones": [
+        "Con agua destilada, mensualmente.",
+        "Con un tampón distinto del de calibración, a diario.",
+        "Con tampones trazables, anualmente."
+      ],
+      "correcta": 2,
+      "explicacion": "El tampón distinto, a diario, es la verificación, no la calibración.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| pHmetros | Anual, con tampones trazables |"
+    },
+    {
+      "id": "t17-q264",
+      "pregunta": "En un autoclave, ¿qué se calibra anualmente?",
+      "opciones": [
+        "El temporizador y la junta de la puerta.",
+        "Los sensores de temperatura y presión.",
+        "Los indicadores biológicos."
+      ],
+      "correcta": 1,
+      "explicacion": "La temperatura y el tiempo se verifican en cada uso o en continuo.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Autoclaves | Sensores de temperatura y presión, anual |"
+    },
+    {
+      "id": "t17-q265",
+      "pregunta": "¿Cuándo se verifican la estabilidad y la homogeneidad de la temperatura de una estufa?",
+      "opciones": [
+        "Al principio y tras reparación o traslado.",
+        "A diario.",
+        "Cada cinco años."
+      ],
+      "correcta": 0,
+      "explicacion": "Lo que se vigila al menos a diario, o en continuo, es la temperatura.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Estufas, baños, neveras, congeladores | Estabilidad y homogeneidad de la temperatura | Al principio y tras reparación o traslado |"
+    },
+    {
+      "id": "t17-q266",
+      "pregunta": "¿Con qué frecuencia se vigila la temperatura de estufas, baños, neveras y congeladores?",
+      "opciones": [
+        "Semanalmente.",
+        "Al menos a diario, o en continuo.",
+        "En cada uso."
+      ],
+      "correcta": 1,
+      "explicacion": "En cada uso o en continuo se verifican la temperatura y el tiempo del autoclave.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Vigilar la temperatura | Al menos a diario o en continuo |"
+    },
+    {
+      "id": "t17-q267",
+      "pregunta": "¿Cada cuánto se verifican la temperatura y el tiempo de un autoclave?",
+      "opciones": [
+        "A diario.",
+        "Anualmente.",
+        "En cada uso o en continuo."
+      ],
+      "correcta": 2,
+      "explicacion": "Anual es la calibración de sus sensores de temperatura y presión.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Autoclaves | Temperatura y tiempo | Cada uso o en continuo |"
+    },
+    {
+      "id": "t17-q268",
+      "pregunta": "En una cabina de seguridad, ¿cada cuánto se comprueba el flujo de aire?",
+      "opciones": [
+        "En cada uso.",
+        "Semanalmente.",
+        "Anualmente."
+      ],
+      "correcta": 0,
+      "explicacion": "El rendimiento se verifica anualmente y el control microbiológico, semanalmente.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Cabinas de seguridad | Rendimiento; control microbiológico; flujo de aire | Anual; semanal; cada uso |"
+    },
+    {
+      "id": "t17-q269",
+      "pregunta": "¿Cada cuánto se verifica una balanza con una pesa de comprobación?",
+      "opciones": [
+        "Semanalmente.",
+        "A diario o en cada uso.",
+        "Anualmente."
+      ],
+      "correcta": 1,
+      "explicacion": "Anual, los tres primeros años, es su calibración en todo el intervalo.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Balanzas | Con una pesa de comprobación | Diario o cada uso |"
+    },
+    {
+      "id": "t17-q270",
+      "pregunta": "En el agua purificada del laboratorio, ¿con qué frecuencia se comprueban la conductividad y la contaminación microbiana?",
+      "opciones": [
+        "Las dos, semanalmente.",
+        "La conductividad mensualmente y la microbiana semanalmente.",
+        "La conductividad semanalmente y la contaminación microbiana mensualmente."
+      ],
+      "correcta": 2,
+      "explicacion": "Son las frecuencias del anexo F de Eurachem para desionizadores y ósmosis inversa.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Desionizadores y ósmosis inversa | Conductividad; contaminación microbiana | Semanal; mensual |"
+    },
+    {
+      "id": "t17-q271",
+      "pregunta": "¿Cada cuánto se verifica un diluidor gravimétrico?",
+      "opciones": [
+        "Tras cada ajuste.",
+        "A diario.",
+        "Anualmente."
+      ],
+      "correcta": 1,
+      "explicacion": "Tras cada ajuste es la verificación de los dispensadores de medios.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Diluidores gravimétricos | Peso dispensado y razón de dilución | Diario |"
+    },
+    {
+      "id": "t17-q272",
+      "pregunta": "¿Con qué se verifica la velocidad de una centrífuga, si es crítica, y cada cuánto?",
+      "opciones": [
+        "Con un tacómetro calibrado, anualmente.",
+        "Con un cronómetro, a diario.",
+        "Con una pesa de comprobación, semanalmente."
+      ],
+      "correcta": 0,
+      "explicacion": "Los temporizadores críticos también se verifican anualmente.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Centrífugas | Con un tacómetro calibrado, si la velocidad es crítica | Anual |"
+    },
+    {
+      "id": "t17-q273",
+      "pregunta": "¿Qué se verifica de un termociclador y con qué frecuencia?",
+      "opciones": [
+        "Solo la temperatura, una vez al año.",
+        "El volumen dispensado, tras cada ajuste.",
+        "La temperatura, las rampas y los tiempos, al principio y a diario o semanalmente."
+      ],
+      "correcta": 2,
+      "explicacion": "Es la última fila del anexo F de Eurachem que recoge el apunte.",
+      "fuente": "Eurachem (2023), 9 y anexos E y F · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Termocicladores (PCR) | Temperatura, rampas y tiempos | Al principio y diario o semanal |"
+    },
+    {
+      "id": "t17-q274",
+      "pregunta": "¿Qué exactitud se pide a una balanza granatario de uso general?",
+      "opciones": [
+        "± 0,01 g.",
+        "± 0,001 g.",
+        "± 0,1 g."
+      ],
+      "correcta": 0,
+      "explicacion": "El ± 0,001 g, y a veces ± 0,0001 g, es de las analíticas, para menos de 1 g.",
+      "fuente": "SCA (2017), 5.2; Eurachem (2023), anexo E · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Las de uso general (granatario): exactitud de ± 0,01 g."
+    },
+    {
+      "id": "t17-q275",
+      "pregunta": "¿Dónde debe instalarse una balanza?",
+      "opciones": [
+        "Dentro de la cabina de seguridad biológica.",
+        "En la zona de lavado, cerca del agua purificada.",
+        "En una superficie nivelada, sin vibraciones, corrientes ni cambios de temperatura."
+      ],
+      "correcta": 2,
+      "explicacion": "Cualquiera de esos factores altera la pesada.",
+      "fuente": "SCA (2017), 5.2; Eurachem (2023), anexo E · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "En una superficie nivelada, sin vibraciones, corrientes ni cambios de temperatura."
+    },
+    {
+      "id": "t17-q276",
+      "pregunta": "¿Cada cuánto se comprueba una balanza con pesas calibradas trazables, y cada cuánto con pesas de trabajo?",
+      "opciones": [
+        "A diario con las trazables y una vez al año con las de trabajo.",
+        "Al menos una vez al año con las trazables, y a diario o semanalmente con las de trabajo.",
+        "Las dos, mensualmente."
+      ],
+      "correcta": 1,
+      "explicacion": "Son dos niveles: la comprobación frecuente de uso y la anual contra patrones trazables.",
+      "fuente": "SCA (2017), 5.2; Eurachem (2023), anexo E · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Pesas calibradas trazables, al menos una vez al año; pesas de trabajo, a diario o semanalmente."
+    },
+    {
+      "id": "t17-q277",
+      "pregunta": "Una balanza recibe un golpe. ¿Qué procede?",
+      "opciones": [
+        "Seguir usándola hasta la siguiente calibración anual.",
+        "Volver a comprobarla.",
+        "Desecharla."
+      ],
+      "correcta": 1,
+      "explicacion": "Lo mismo tras mantenimiento o traslado; y si queda fuera de tolerancia, no se usa hasta recalibrarla.",
+      "fuente": "SCA (2017), 5.2; Eurachem (2023), anexo E · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Tras mantenimiento, traslado o un golpe, se vuelve a comprobar."
+    },
+    {
+      "id": "t17-q278",
+      "pregunta": "Una balanza está fuera de tolerancia. ¿Qué se hace?",
+      "opciones": [
+        "Se usa aplicando un factor de corrección.",
+        "Se usa solo para pesadas de más de 1 g.",
+        "No se usa hasta recalibrarla."
+      ],
+      "correcta": 2,
+      "explicacion": "La corrección por cálculo no está prevista: el equipo queda fuera de servicio hasta su recalibración.",
+      "fuente": "SCA (2017), 5.2; Eurachem (2023), anexo E · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Una balanza fuera de tolerancia no se usa hasta recalibrarla."
+    },
+    {
+      "id": "t17-q279",
+      "pregunta": "¿Qué se calcula con las diez pesadas repetidas de un volumen?",
+      "opciones": [
+        "La media, la desviación estándar, el coeficiente de variación y la inexactitud.",
+        "El índice de dispersión D².",
+        "La ratio de productividad."
+      ],
+      "correcta": 0,
+      "explicacion": "La inexactitud es el sesgo de la pipeta.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "se calcula la media, la desviación estándar, el coeficiente de variación y la inexactitud (sesgo)"
+    },
+    {
+      "id": "t17-q280",
+      "pregunta": "Según la guía británica, ¿qué sesgo máximo se admite en una pipeta y cuál si es crítica?",
+      "opciones": [
+        "Menos del 1 %, y menos del 0,5 % si es crítica.",
+        "Menos del 5 % en todos los casos.",
+        "Menos del 2 %, y menos del 1 % si es crítica."
+      ],
+      "correcta": 2,
+      "explicacion": "El coeficiente de variación debe quedar por debajo del 1 %.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "CV < 1 % y sesgo < 2 %, o < 1 % si es crítico (por ejemplo, para preparar un patrón)"
+    },
+    {
+      "id": "t17-q281",
+      "pregunta": "Según la ISO 8655-1, en pipetas de pistón de 0,1 a 5 mL, ¿qué sesgo y qué desviación estándar máximos se admiten?",
+      "opciones": [
+        "Sesgo 2 % y desviación estándar 1 %.",
+        "Sesgo 0,8 % y desviación estándar 0,3 %.",
+        "Sesgo 0,3 % y desviación estándar 0,8 %."
+      ],
+      "correcta": 1,
+      "explicacion": "Los valores del 2 % y el 1 % son los criterios de la guía británica.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "pipetas de pistón de 0,1 a 5 mL: sesgo máximo 0,8 % y desviación estándar máxima 0,3 %"
+    },
+    {
+      "id": "t17-q282",
+      "pregunta": "Una pipeta nueva llega al laboratorio. ¿Qué se hace antes de usarla?",
+      "opciones": [
+        "Calibrarla.",
+        "Verificarla con una sola pesada.",
+        "Nada, si viene con certificado del fabricante."
+      ],
+      "correcta": 0,
+      "explicacion": "Después se le hacen comprobaciones intermedias a diario o semanalmente.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Una pipeta nueva se calibra antes de usarla; luego, comprobaciones intermedias a diario o semanalmente."
+    },
+    {
+      "id": "t17-q283",
+      "pregunta": "¿Cómo se guarda una pipeta automática?",
+      "opciones": [
+        "Tumbada en el cajón, con la punta puesta.",
+        "En la nevera, a 5 ± 3 °C.",
+        "En su soporte, no tumbada."
+      ],
+      "correcta": 2,
+      "explicacion": "Y se usan puntas con filtro para no contaminar el pistón.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "y la pipeta en su soporte, no tumbada"
+    },
+    {
+      "id": "t17-q284",
+      "pregunta": "Un material de vidrio volumétrico con certificado se esteriliza en horno. ¿Qué procede?",
+      "opciones": [
+        "Comprobarlo de vez en cuando.",
+        "Nada: el certificado lo exime siempre.",
+        "Recalibrarlo después de cada esterilización."
+      ],
+      "correcta": 0,
+      "explicacion": "Con certificado no necesita verificación, pero el calor del horno puede alterar el vidrio.",
+      "fuente": "SCA (2017), 5.20; Eurachem (2023), 9 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "no necesita verificación, pero si se esteriliza en horno se comprueba de vez en cuando"
+    },
+    {
+      "id": "t17-q285",
+      "pregunta": "¿Cuál es la cadena de trazabilidad de los termómetros del laboratorio?",
+      "opciones": [
+        "Termómetro de trabajo → el de referencia → el certificado.",
+        "Termómetro certificado → el de referencia del laboratorio → los de trabajo.",
+        "Cada termómetro se calibra por separado contra el patrón nacional."
+      ],
+      "correcta": 1,
+      "explicacion": "El de referencia es el intermediario entre el certificado y los que se usan a diario.",
+      "fuente": "SCA (2017), 5.26; Eurachem (2023), 9.2; EPA, Method 1103.2 (2023), 10 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "termómetro certificado → calibra el de referencia del laboratorio → calibra los de trabajo"
+    },
+    {
+      "id": "t17-q286",
+      "pregunta": "¿Qué tipo de termómetros recomienda Eurachem en lugar de los de mercurio?",
+      "opciones": [
+        "Los de tolueno.",
+        "Los de alcohol coloreado.",
+        "Los registradores de datos."
+      ],
+      "correcta": 2,
+      "explicacion": "Los de mercurio y los de tolueno están prohibidos por seguridad.",
+      "fuente": "SCA (2017), 5.26; Eurachem (2023), 9.2; EPA, Method 1103.2 (2023), 10 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Se recomiendan los registradores de datos."
+    },
+    {
+      "id": "t17-q287",
+      "pregunta": "Según la EPA, ¿cada cuánto se comprueban los termómetros contra uno certificado?",
+      "opciones": [
+        "Dos veces al día.",
+        "Al menos una vez al año.",
+        "Cada cinco años."
+      ],
+      "correcta": 1,
+      "explicacion": "Dos veces al día es la lectura de la temperatura de las estufas.",
+      "fuente": "SCA (2017), 5.26; Eurachem (2023), 9.2; EPA, Method 1103.2 (2023), 10 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "termómetros comprobados al menos una vez al año contra uno certificado"
+    },
+    {
+      "id": "t17-q288",
+      "pregunta": "En el plan de la EPA, ¿cada cuánto se registra la temperatura de las neveras?",
+      "opciones": [
+        "A diario.",
+        "Dos veces al día.",
+        "Semanalmente."
+      ],
+      "correcta": 0,
+      "explicacion": "Dos veces al día, con al menos 4 horas entre lecturas, es lo de las estufas.",
+      "fuente": "SCA (2017), 5.26; Eurachem (2023), 9.2; EPA, Method 1103.2 (2023), 10 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "termómetros comprobados al menos una vez al año contra uno certificado; neveras, a diario."
+    },
+    {
+      "id": "t17-q289",
+      "pregunta": "¿Qué separación mínima pide la EPA entre las dos lecturas diarias de temperatura de una estufa?",
+      "opciones": [
+        "Al menos 1 hora.",
+        "Al menos 8 horas.",
+        "Al menos 4 horas."
+      ],
+      "correcta": 2,
+      "explicacion": "Así las dos lecturas no reflejan el mismo momento del ciclo del termostato.",
+      "fuente": "SCA (2017), 5.26; Eurachem (2023), 9.2; EPA, Method 1103.2 (2023), 10 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "temperatura de las estufas dos veces al día, con al menos 4 horas entre lecturas"
+    },
+    {
+      "id": "t17-q290",
+      "pregunta": "¿Qué tampones usa la EPA para calibrar un pHmetro?",
+      "opciones": [
+        "pH 4, 7 o 10.",
+        "pH 2, 6 o 12.",
+        "pH 6,8 y 8,2."
+      ],
+      "correcta": 0,
+      "explicacion": "Los valores 6,8 y 8,2 son el intervalo de viraje del rojo fenol del agar urea.",
+      "fuente": "Eurachem (2023), anexo F; EPA, Method 1103.2 (2023), 10 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "con dos tampones que abarquen el intervalo (EPA: pH 4, 7 o 10)"
+    },
+    {
+      "id": "t17-q291",
+      "pregunta": "¿Por qué no vale como autoclave una olla a presión con solo un manómetro?",
+      "opciones": [
+        "Porque no alcanza los 121 °C.",
+        "Porque el autoclave debe cumplir tiempo, presión y temperatura.",
+        "Porque su junta no resiste los ciclos."
+      ],
+      "correcta": 1,
+      "explicacion": "Con un solo manómetro no se controla ni el tiempo ni la temperatura.",
+      "fuente": "Eurachem (2023), anexo F; SCA (2017), 8 · apunte §6.6",
+      "apartado": "6.6",
+      "evidencia": "Una olla a presión con solo un manómetro no vale."
+    },
+    {
+      "id": "t17-q292",
+      "pregunta": "¿Dónde se colocan las sondas al verificar un ciclo de autoclave?",
+      "opciones": [
+        "En la pared de la cámara.",
+        "En el desagüe de la cámara.",
+        "Dentro de la carga."
+      ],
+      "correcta": 2,
+      "explicacion": "Lo que importa es la temperatura que alcanza el material, no la del vapor libre.",
+      "fuente": "Eurachem (2023), anexo F; SCA (2017), 8 · apunte §6.6",
+      "apartado": "6.6",
+      "evidencia": "temporizadores verificados; sondas dentro de la carga"
+    },
+    {
+      "id": "t17-q293",
+      "pregunta": "En las estufas, ¿de qué depende la homogeneidad de la temperatura, según el apunte?",
+      "opciones": [
+        "Solo del termostato.",
+        "También de cómo se apilan las placas.",
+        "Del tipo de medio incubado."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso se verifican estabilidad y homogeneidad en las condiciones reales de carga.",
+      "fuente": "Eurachem (2023), anexo F; SCA (2017), 8 · apunte §6.6",
+      "apartado": "6.6",
+      "evidencia": "también según cómo se apilan las placas"
+    },
+    {
+      "id": "t17-q294",
+      "pregunta": "¿Qué se verifica en un autoclave además de los sensores calibrados?",
+      "opciones": [
+        "Los temporizadores.",
+        "La conductividad del agua de alimentación.",
+        "La velocidad del ventilador."
+      ],
+      "correcta": 0,
+      "explicacion": "Y se usan indicadores químicos y biológicos, con las sondas dentro de la carga.",
+      "fuente": "Eurachem (2023), anexo F; SCA (2017), 8 · apunte §6.6",
+      "apartado": "6.6",
+      "evidencia": "Sensores calibrados; temporizadores verificados"
+    },
+    {
+      "id": "t17-q295",
+      "pregunta": "Según el cuadro de cifras, ¿qué asa se usa en el control semicuantitativo de un medio?",
+      "opciones": [
+        "Un asa de 10 µL.",
+        "Un asa de 1 µL.",
+        "Un asa de 2 mm."
+      ],
+      "correcta": 1,
+      "explicacion": "El asa de 2 mm con enfriamiento contando hasta 20 es la del frotis del tema 14.",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), anexos E y F · apunte §7",
+      "apartado": "7",
+      "evidencia": "Semicuantitativo: 4 cuartos × 4 estrías = 16; asa de 1 µL; mínimo 8; esterilidad 0"
+    },
+    {
+      "id": "t17-q296",
+      "pregunta": "Según el cuadro de cifras, ¿cuántos mililitros de tampón estéril se usan en los blancos de la EPA?",
+      "opciones": [
+        "100 mL.",
+        "10 mL.",
+        "50 mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Son los 50 mL del blanco de método y del blanco de filtración.",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), anexos E y F · apunte §7",
+      "apartado": "7",
+      "evidencia": "Blancos: 50 mL de tampón estéril"
+    },
+    {
+      "id": "t17-q297",
+      "pregunta": "Resumiendo el tema: ¿en qué cinco propiedades se controla un medio?",
+      "opciones": [
+        "Esterilidad, productividad, selectividad, especificidad y pH.",
+        "Esterilidad, pH, volumen, color y caducidad.",
+        "Productividad, selectividad, trazabilidad, exactitud y precisión."
+      ],
+      "correcta": 0,
+      "explicacion": "La norma de referencia es la ISO 11133.",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), 8-13 · apunte §8",
+      "apartado": "8",
+      "evidencia": "Un medio se controla en: esterilidad, productividad, selectividad, especificidad (aspecto típico) y pH."
+    },
+    {
+      "id": "t17-q298",
+      "pregunta": "Resumiendo el tema: ¿qué indica un gráfico de control sin variación?",
+      "opciones": [
+        "Que el método está perfectamente bajo control.",
+        "Sesgo del operador.",
+        "Que los límites son demasiado estrechos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los recuentos varían por azar: si no varían, alguien cuenta «lo que espera».",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), 8-13 · apunte §8",
+      "apartado": "8",
+      "evidencia": "un gráfico sin variación = sesgo del operador"
+    },
+    {
+      "id": "t17-q299",
+      "pregunta": "Resumiendo el tema: ¿qué diferencia hay entre calibración y verificación?",
+      "opciones": [
+        "La calibración la hace el laboratorio a diario y la verificación, un acreditado cada año.",
+        "Son dos nombres de la misma operación.",
+        "La calibración compara con un patrón trazable y es periódica; la verificación comprueba el uso, es diaria y se repite tras reparación o traslado."
+      ],
+      "correcta": 2,
+      "explicacion": "Es uno de los puntos críticos del tema.",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), 8-13 · apunte §8",
+      "apartado": "8",
+      "evidencia": "Calibración (contra patrón trazable, periódica) ≠ verificación (comprobación de uso, diaria, y tras reparación o traslado)."
+    },
+    {
+      "id": "t17-q300",
+      "pregunta": "Resumiendo el tema: ¿qué tres reglas de los puntos críticos afectan a las cepas de referencia?",
+      "opciones": [
+        "Colecciones reconocidas, un solo subcultivo para las reservas y que los cultivos de trabajo no las reemplazan.",
+        "Conservación en nevera, subcultivo semanal y uso como control positivo.",
+        "Compra a productores ISO 17034, matriz igual y puntuación 16."
+      ],
+      "correcta": 0,
+      "explicacion": "Y una reserva descongelada no se vuelve a congelar.",
+      "fuente": "SCA (2017), 6.10 y 8; Eurachem (2023), 8-13 · apunte §8",
+      "apartado": "8",
+      "evidencia": "Cepas de referencia: de colecciones reconocidas; un solo subcultivo para las reservas; los cultivos de trabajo no reemplazan a las reservas"
     }
   ],
   "supuestos": [
