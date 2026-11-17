@@ -2712,6 +2712,482 @@
       "fuente": "UKHSA, UK SMI ID 1 (2025) · apunte §4.3",
       "apartado": "4.3",
       "evidencia": "cada lote se valida con cepas de control"
+    },
+    {
+      "id": "t16-q163",
+      "pregunta": "¿En qué se basa físicamente el MALDI-TOF?",
+      "opciones": [
+        "En la amplificación de ADN por ciclos de temperatura.",
+        "En una ionización suave por láser.",
+        "En la unión de antígenos con antisueros conocidos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los ciclos de temperatura son la PCR y los antisueros, las técnicas serológicas.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "técnica de ionización suave por láser que analiza la composición en proteínas"
+    },
+    {
+      "id": "t16-q164",
+      "pregunta": "¿Con qué se compara el espectro que obtiene el MALDI-TOF?",
+      "opciones": [
+        "Con una base de datos.",
+        "Con el espectro de un control negativo de la misma tanda.",
+        "Con la secuencia del gen del ARNr 16S."
+      ],
+      "correcta": 0,
+      "explicacion": "De ahí su principal limitación: depende de que la base de datos esté actualizada y validada.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "El espectro se compara con una base de datos."
+    },
+    {
+      "id": "t16-q165",
+      "pregunta": "Además de bacterias, ¿qué identifica hoy el MALDI-TOF en el laboratorio clínico?",
+      "opciones": [
+        "Virus de ARN.",
+        "Parásitos intestinales.",
+        "Muchas levaduras."
+      ],
+      "correcta": 2,
+      "explicacion": "Es el método principal de identificación de bacterias y de muchas levaduras.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "Hoy es el método principal de identificación de bacterias y de muchas levaduras en el laboratorio clínico."
+    },
+    {
+      "id": "t16-q166",
+      "pregunta": "¿Qué ventajas tiene el MALDI-TOF?",
+      "opciones": [
+        "Da también la sensibilidad a los antibióticos.",
+        "Da el resultado en minutos u horas, es reproducible, sensible y barato por muestra.",
+        "No necesita base de datos ni cultivo previo."
+      ],
+      "correcta": 1,
+      "explicacion": "No da la sensibilidad a antibióticos y depende de la base de datos.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "Ventajas: resultado en minutos u horas, reproducible, sensible y barato por muestra."
+    },
+    {
+      "id": "t16-q167",
+      "pregunta": "¿Qué complejo de especies no separa bien el MALDI-TOF, además de Shigella y E. coli?",
+      "opciones": [
+        "El género Pseudomonas.",
+        "El grupo de los enterococos.",
+        "El complejo Burkholderia cepacia."
+      ],
+      "correcta": 2,
+      "explicacion": "Son especies muy parecidas en su perfil de proteínas.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "no distingue bien especies muy parecidas, como Shigella y E. coli o el complejo Burkholderia cepacia"
+    },
+    {
+      "id": "t16-q168",
+      "pregunta": "Un MALDI-TOF identifica un Staphylococcus aureus. ¿Qué no dice ese resultado?",
+      "opciones": [
+        "Si es resistente o sensible a la meticilina.",
+        "A qué especie pertenece el aislado.",
+        "Si se trata de una bacteria o de una levadura."
+      ],
+      "correcta": 0,
+      "explicacion": "El MALDI-TOF no da la sensibilidad a antibióticos: hace falta un estudio aparte.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "no separa un S. aureus resistente a la meticilina de uno sensible"
+    },
+    {
+      "id": "t16-q169",
+      "pregunta": "¿Cómo debe interpretarse el resultado de un MALDI-TOF?",
+      "opciones": [
+        "Como resultado definitivo, sin más comprobaciones.",
+        "Junto con la morfología y las demás pruebas.",
+        "Solo si se confirma con una aglutinación con látex."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el mismo criterio que con las galerías comerciales: ninguna prueba sola basta.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "el resultado se interpreta junto con la morfología y las demás pruebas"
+    },
+    {
+      "id": "t16-q170",
+      "pregunta": "¿Cuál es la principal dependencia del MALDI-TOF?",
+      "opciones": [
+        "El antisuero, que debe ser policlonal.",
+        "Los cebadores, que dan la especificidad.",
+        "La base de datos, que hay que tener actualizada y validada."
+      ],
+      "correcta": 2,
+      "explicacion": "Los antisueros son de las técnicas serológicas y los cebadores, de la PCR.",
+      "fuente": "UKHSA, UK SMI TP 40 (2025) · apunte §5",
+      "apartado": "5",
+      "evidencia": "depende de la base de datos: hay que tenerla actualizada y validada"
+    },
+    {
+      "id": "t16-q171",
+      "pregunta": "¿Qué se enfrenta a qué en una técnica serológica de identificación?",
+      "opciones": [
+        "Un microorganismo desconocido a antisueros conocidos.",
+        "Un suero desconocido a antígenos conocidos.",
+        "Dos antisueros entre sí."
+      ],
+      "correcta": 0,
+      "explicacion": "Se usa el anticuerpo conocido como reactivo para averiguar qué antígeno tiene la bacteria.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "En la identificación se enfrenta un microorganismo desconocido a antisueros conocidos"
+    },
+    {
+      "id": "t16-q172",
+      "pregunta": "¿Qué resultado da la unión de un antígeno con su anticuerpo específico?",
+      "opciones": [
+        "Un complejo visible.",
+        "Un cambio de pH del medio.",
+        "La lisis de la bacteria."
+      ],
+      "correcta": 0,
+      "explicacion": "Ese complejo se ve como grumos en la aglutinación o como precipitado en la precipitación.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Antígeno + anticuerpo específico → complejo visible."
+    },
+    {
+      "id": "t16-q173",
+      "pregunta": "¿Qué hacen los anticuerpos en una reacción de aglutinación?",
+      "opciones": [
+        "Forman un precipitado con antígenos solubles.",
+        "Marcan el antígeno con un fluorocromo.",
+        "Unen células o partículas en grumos."
+      ],
+      "correcta": 2,
+      "explicacion": "El precipitado es propio de la precipitación, con antígenos solubles; el fluorocromo, de la inmunofluorescencia.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Aglutinación: los anticuerpos unen células o partículas en grumos."
+    },
+    {
+      "id": "t16-q174",
+      "pregunta": "¿Con qué tipo de antígenos se produce una reacción de precipitación?",
+      "opciones": [
+        "Con antígenos de la superficie de células enteras.",
+        "Con antígenos solubles.",
+        "Con partículas de látex recubiertas."
+      ],
+      "correcta": 1,
+      "explicacion": "Las células enteras y el látex dan aglutinación, no precipitación.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Precipitación: con antígenos solubles se forma un precipitado."
+    },
+    {
+      "id": "t16-q175",
+      "pregunta": "¿Por qué precipita mejor un antisuero policlonal que un anticuerpo monoclonal?",
+      "opciones": [
+        "Porque es más específico.",
+        "Porque reconoce varios epítopos.",
+        "Porque está más concentrado."
+      ],
+      "correcta": 1,
+      "explicacion": "Al unirse a varios epítopos forma redes grandes, que es lo que se ve como precipitado.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Precipita mejor con antisuero policlonal, que reconoce varios epítopos"
+    },
+    {
+      "id": "t16-q176",
+      "pregunta": "¿Qué es la zona de equivalencia en una reacción de precipitación?",
+      "opciones": [
+        "El intervalo de temperatura en que precipita el complejo.",
+        "El punto en que el antisuero deja de ser específico.",
+        "La proporción óptima de antígeno y anticuerpo."
+      ],
+      "correcta": 2,
+      "explicacion": "Con exceso de uno de los dos la red no se forma y no se ve el precipitado.",
+      "fuente": "OpenStax, Microbiology (2016), 20.2-20.3; UKHSA, UK SMI ID 1 (2025) · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Hace falta una proporción óptima de antígeno y anticuerpo: la zona de equivalencia."
+    },
+    {
+      "id": "t16-q177",
+      "pregunta": "En la aglutinación en porta, ¿cómo se preparan las dos gotas iniciales?",
+      "opciones": [
+        "Con suero salino, emulsionando una colonia en cada una hasta una suspensión lechosa.",
+        "Con antisuero en las dos, para duplicar la lectura.",
+        "Con agua destilada estéril y una gota de plasma."
+      ],
+      "correcta": 0,
+      "explicacion": "El antisuero se añade después, y solo a una de las dos suspensiones: la otra es el control.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Dos gotas de suero salino en un porta; en cada una se emulsiona una colonia hasta una suspensión lechosa."
+    },
+    {
+      "id": "t16-q178",
+      "pregunta": "La suspensión de una colonia sale grumosa antes de añadir el antisuero. ¿Qué se hace?",
+      "opciones": [
+        "No vale: no se puede leer la aglutinación.",
+        "Se añade el antisuero y se lee igual.",
+        "Se diluye con más suero salino y se da por válida."
+      ],
+      "correcta": 0,
+      "explicacion": "Si la bacteria se autoaglutina, los grumos no demostrarían la unión con el antisuero.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Si se autoaglutina o la suspensión es grumosa, no vale."
+    },
+    {
+      "id": "t16-q179",
+      "pregunta": "¿Sobre qué fondo se lee una aglutinación en porta?",
+      "opciones": [
+        "Sobre fondo blanco iluminado.",
+        "Sobre una cuadrícula milimetrada.",
+        "Sobre fondo negro."
+      ],
+      "correcta": 2,
+      "explicacion": "Se balancea 30-60 segundos y se mira sobre fondo negro, que hace visibles los grumos.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Se balancea 30-60 segundos y se mira sobre fondo negro."
+    },
+    {
+      "id": "t16-q180",
+      "pregunta": "¿Cómo es un resultado positivo de aglutinación en porta?",
+      "opciones": [
+        "La suspensión sigue turbia y homogénea.",
+        "Aparecen grumos y la suspensión se aclara.",
+        "La suspensión cambia de color a azul-púrpura."
+      ],
+      "correcta": 1,
+      "explicacion": "Que siga turbia es el resultado negativo; el azul-púrpura es la oxidasa.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Positivo: aglutinación (grumos) y aclaramiento."
+    },
+    {
+      "id": "t16-q181",
+      "pregunta": "En una aglutinación en porta negativa, ¿qué aspecto tiene la suspensión?",
+      "opciones": [
+        "Sigue turbia.",
+        "Se aclara y aparecen grumos.",
+        "Se vuelve transparente, sin grumos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los grumos con aclaramiento son el resultado positivo.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Negativo: la suspensión sigue turbia."
+    },
+    {
+      "id": "t16-q182",
+      "pregunta": "¿Por qué es más sensible la aglutinación en tubo que la de porta?",
+      "opciones": [
+        "Porque usa antisuero más concentrado.",
+        "Porque deja más tiempo para la reacción.",
+        "Porque se lee con microscopio de fluorescencia."
+      ],
+      "correcta": 1,
+      "explicacion": "En el porta la lectura es de 30-60 segundos; en tubo, la reacción puede desarrollarse más.",
+      "fuente": "UKHSA, UK SMI TP 3 (2025) · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "La aglutinación en tubo es más sensible, porque deja más tiempo para la reacción."
+    },
+    {
+      "id": "t16-q183",
+      "pregunta": "En una aglutinación con látex para buscar un antígeno bacteriano, ¿qué llevan pegado las partículas?",
+      "opciones": [
+        "El antígeno que se busca.",
+        "Un fluorocromo.",
+        "Anticuerpos."
+      ],
+      "correcta": 2,
+      "explicacion": "También existe al revés, con antígeno en las partículas, cuando lo que se busca son anticuerpos.",
+      "fuente": "OpenStax, Microbiology (2016), 20.3 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Las partículas de látex recubiertas de anticuerpos se aglutinan si encuentran el antígeno"
+    },
+    {
+      "id": "t16-q184",
+      "pregunta": "¿Por qué se dice que la aglutinación con látex es indirecta?",
+      "opciones": [
+        "Porque hace falta un segundo anticuerpo marcado.",
+        "Porque lo que se aglutina son partículas de látex, no las propias células.",
+        "Porque el resultado se lee en un espectrómetro."
+      ],
+      "correcta": 1,
+      "explicacion": "El segundo anticuerpo marcado es propio de la inmunofluorescencia indirecta.",
+      "fuente": "OpenStax, Microbiology (2016), 20.3 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Es una aglutinación indirecta; hay kits comerciales rápidos, por ejemplo para Salmonella."
+    },
+    {
+      "id": "t16-q185",
+      "pregunta": "¿Para qué género cita el apunte kits comerciales rápidos de látex?",
+      "opciones": [
+        "Para Salmonella.",
+        "Para Pseudomonas.",
+        "Para Mycobacterium."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el mismo género cuyo serotipado se hace con el esquema de White-Kauffmann-Le Minor.",
+      "fuente": "OpenStax, Microbiology (2016), 20.3 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "hay kits comerciales rápidos, por ejemplo para Salmonella"
+    },
+    {
+      "id": "t16-q186",
+      "pregunta": "En Salmonella, ¿qué antígenos definen el serotipo?",
+      "opciones": [
+        "Los O, de la membrana externa.",
+        "El Vi, de la cápsula de polisacárido.",
+        "Los H, de los flagelos."
+      ],
+      "correcta": 2,
+      "explicacion": "Los O definen el grupo y el Vi puede impedir la aglutinación con el suero O.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Antígenos H: de los flagelos. Definen el serotipo."
+    },
+    {
+      "id": "t16-q187",
+      "pregunta": "Muchos antígenos H de Salmonella tienen:",
+      "opciones": [
+        "Una sola fase.",
+        "Tres fases.",
+        "Dos fases."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso la fórmula antigénica recoge el H de fase 1 y el de fase 2.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Definen el serotipo. Muchos tienen dos fases."
+    },
+    {
+      "id": "t16-q188",
+      "pregunta": "¿De qué está hecho el antígeno Vi de Salmonella Typhi?",
+      "opciones": [
+        "De proteína flagelar.",
+        "De polisacárido.",
+        "De lipopolisacárido de la membrana externa."
+      ],
+      "correcta": 1,
+      "explicacion": "Es una capa de polisacárido que puede impedir la aglutinación con el suero O.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Antígeno Vi: una capa de polisacárido de S. Typhi"
+    },
+    {
+      "id": "t16-q189",
+      "pregunta": "En la fórmula antigénica 6,7,14:r:1,2 de S. Virchow, ¿qué representa el «r»?",
+      "opciones": [
+        "El antígeno H de fase 1.",
+        "Los antígenos O.",
+        "El antígeno H de fase 2."
+      ],
+      "correcta": 0,
+      "explicacion": "El orden es antígenos O, H de fase 1 y H de fase 2: 6,7,14 son los O y 1,2 el H de fase 2.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Fórmula antigénica: S. Virchow es 6,7,14:r:1,2 (antígenos O, H de fase 1 y H de fase 2)."
+    },
+    {
+      "id": "t16-q190",
+      "pregunta": "¿Cuántos serotipos de Salmonella hay?",
+      "opciones": [
+        "Más de 2600.",
+        "Unos 260.",
+        "Unos 26."
+      ],
+      "correcta": 0,
+      "explicacion": "El esquema de White-Kauffmann-Le Minor los recoge con su fórmula antigénica.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "(antígenos O, H de fase 1 y H de fase 2). - Hay más de 2600 serotipos."
+    },
+    {
+      "id": "t16-q191",
+      "pregunta": "¿Por qué antígenos se definen los grupos de Lancefield?",
+      "opciones": [
+        "Por los antígenos flagelares.",
+        "Por las proteínas ribosómicas.",
+        "Por los polisacáridos de la pared."
+      ],
+      "correcta": 2,
+      "explicacion": "Es una aglutinación directa, sobre la propia célula.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Grupos de Lancefield de los estreptococos, por los polisacáridos de la pared: una aglutinación directa."
+    },
+    {
+      "id": "t16-q192",
+      "pregunta": "En la denominación E. coli O157:H7, ¿qué indica el H7?",
+      "opciones": [
+        "El antígeno de la membrana externa 7.",
+        "El antígeno flagelar 7.",
+        "La séptima fase del antígeno O."
+      ],
+      "correcta": 1,
+      "explicacion": "El 157 es el antígeno O, de la membrana externa, y el H7 el flagelar.",
+      "fuente": "UKHSA, UK SMI ID 24 (2025); OpenStax, Microbiology (2016), 20.3 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "E. coli O157:H7 (antígeno O 157 y flagelar H7)"
+    },
+    {
+      "id": "t16-q193",
+      "pregunta": "En la inmunofluorescencia directa, ¿qué lleva el fluorocromo?",
+      "opciones": [
+        "Un anticuerpo monoclonal que se une al antígeno.",
+        "Un segundo anticuerpo que reconoce al del paciente.",
+        "El propio antígeno de la muestra."
+      ],
+      "correcta": 0,
+      "explicacion": "El segundo anticuerpo marcado es el de la variante indirecta.",
+      "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "| Directa | Un anticuerpo monoclonal marcado con fluorocromo se une al antígeno |"
+    },
+    {
+      "id": "t16-q194",
+      "pregunta": "¿Qué ejemplo de inmunofluorescencia directa recoge el apunte?",
+      "opciones": [
+        "La sífilis.",
+        "Legionella pneumophila en esputo.",
+        "Salmonella en coprocultivo."
+      ],
+      "correcta": 1,
+      "explicacion": "La sífilis es el ejemplo de inmunofluorescencia indirecta.",
+      "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "Legionella pneumophila en esputo"
+    },
+    {
+      "id": "t16-q195",
+      "pregunta": "En la inmunofluorescencia indirecta, ¿qué se une primero al antígeno?",
+      "opciones": [
+        "Un anticuerpo monoclonal marcado.",
+        "Una partícula de látex recubierta.",
+        "El suero del paciente."
+      ],
+      "correcta": 2,
+      "explicacion": "Después un segundo anticuerpo marcado revela esa unión.",
+      "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "| Indirecta | El suero del paciente se une al antígeno; un segundo anticuerpo marcado revela la unión |"
+    },
+    {
+      "id": "t16-q196",
+      "pregunta": "¿Con qué se lee una inmunofluorescencia?",
+      "opciones": [
+        "Con microscopio de campo oscuro.",
+        "Con lupa sobre fondo negro.",
+        "Con microscopio de fluorescencia."
+      ],
+      "correcta": 2,
+      "explicacion": "El fondo negro es para la aglutinación en porta.",
+      "fuente": "OpenStax, Microbiology (2016), 20.5 · apunte §6.5",
+      "apartado": "6.5",
+      "evidencia": "Se ve con microscopio de fluorescencia (tema 10)."
     }
   ],
   "supuestos": [
