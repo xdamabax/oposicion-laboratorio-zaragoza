@@ -4275,6 +4275,426 @@
       "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
       "apartado": "11",
       "evidencia": "Movimiento browniano no es movilidad."
+    },
+    {
+      "id": "t14-q271",
+      "pregunta": "Se quieren preparar 150 mL de lugol con la proporción del apunte (1 g de yodo y 2 g de KI en 300 mL). ¿Qué cantidades hacen falta?",
+      "opciones": [
+        "1 g de yodo y 2 g de yoduro potásico.",
+        "2 g de yodo y 4 g de yoduro potásico.",
+        "0,5 g de yodo y 1 g de yoduro potásico."
+      ],
+      "correcta": 2,
+      "explicacion": "Al reducir el volumen a la mitad, las dos masas se reducen a la mitad: 1 ÷ 2 = 0,5 g de yodo y 2 ÷ 2 = 1 g de KI.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Lugol: 1 g de yodo + 2 g de KI + 300 mL de agua"
+    },
+    {
+      "id": "t14-q272",
+      "pregunta": "En la proporción del lugol del apunte, ¿qué relación hay entre el yoduro potásico y el yodo?",
+      "opciones": [
+        "La mitad de yoduro potásico que de yodo.",
+        "El doble de yoduro potásico que de yodo.",
+        "La misma cantidad de los dos."
+      ],
+      "correcta": 1,
+      "explicacion": "1 g de yodo por 2 g de yoduro potásico: el KI va al doble.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Lugol: 1 g de yodo + 2 g de KI + 300 mL de agua"
+    },
+    {
+      "id": "t14-q273",
+      "pregunta": "Para preparar 50 mL de verde de malaquita al 5 % como el de la tinción de esporas, ¿cuánto colorante se pesa?",
+      "opciones": [
+        "2,5 g.",
+        "5 g.",
+        "0,5 g."
+      ],
+      "correcta": 0,
+      "explicacion": "El 5 % son 5 g por 100 mL; para 50 mL, la mitad: 2,5 g.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Esporas: verde de malaquita 5 %, 1 min al vapor; safranina 0,5 %, 30 s; cultivos de 5-7 días"
+    },
+    {
+      "id": "t14-q274",
+      "pregunta": "Para preparar 200 mL de safranina al 0,5 % como la del contraste de las esporas, ¿cuánto colorante se pesa?",
+      "opciones": [
+        "0,5 g.",
+        "1 g.",
+        "2 g."
+      ],
+      "correcta": 1,
+      "explicacion": "El 0,5 % son 0,5 g por 100 mL; en 200 mL, 1 g.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "safranina 0,5 %, 30 s; cultivos de 5-7 días"
+    },
+    {
+      "id": "t14-q275",
+      "pregunta": "Según el cuadro de cifras, ¿cuáles son los tiempos del Gram de la OMS para el cristal violeta y el lugol?",
+      "opciones": [
+        "30 segundos cada uno.",
+        "2 minutos cada uno.",
+        "60 segundos cada uno."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 30 segundos son los de Hucker y los 2 minutos, el contraste con fucsina de la OMS.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "OMS: cristal violeta 60 s; lugol 60 s; acetona-etanol 2-3 s; fucsina 2 min"
+    },
+    {
+      "id": "t14-q276",
+      "pregunta": "Sumando los tiempos de los cuatro pasos del Gram de la OMS (60 s, 60 s, 2-3 s y 2 min), ¿cuánto se tarda aproximadamente en teñir, sin contar lavados?",
+      "opciones": [
+        "Unos 4 minutos.",
+        "Unos 2 minutos.",
+        "Unos 10 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "60 + 60 segundos son 2 minutos, el decolorante apenas 2-3 segundos y la fucsina otros 2 minutos: algo más de 4 minutos en total.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "OMS: cristal violeta 60 s; lugol 60 s; acetona-etanol 2-3 s; fucsina 2 min"
+    },
+    {
+      "id": "t14-q277",
+      "pregunta": "Según el cuadro de cifras, en el Ziehl-Neelsen el ácido-alcohol se usa al:",
+      "opciones": [
+        "1 %.",
+        "5 %.",
+        "3 %."
+      ],
+      "correcta": 2,
+      "explicacion": "El 1 % es el del Kinyoun modificado (ácido sulfúrico) y el de la auramina.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Ziehl-Neelsen: fucsina con vapor 3-5 min; ácido-alcohol 3 %; azul de metileno 1 %"
+    },
+    {
+      "id": "t14-q278",
+      "pregunta": "Un bacilo ácido-alcohol resistente mide 4 µm. ¿Está dentro del tamaño que da el apunte?",
+      "opciones": [
+        "No: el intervalo es de 0,05 a 0,5 µm.",
+        "Sí: el intervalo es de 0,5 a 10 µm.",
+        "No: el intervalo es de 10 a 40 µm."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 4 µm quedan en mitad del intervalo, muy por encima del límite de resolución del microscopio óptico.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Bacilos ácido-alcohol resistentes: 0,5-10 µm"
+    },
+    {
+      "id": "t14-q279",
+      "pregunta": "En el cuadro de cifras, ¿qué dato se recoge del asa para hacer el frotis?",
+      "opciones": [
+        "Que es de 2 mm y se enfría contando hasta 20.",
+        "Que es de 10 µL y se enfría contando hasta 3.",
+        "Que es de 2 cm y se usa al rojo."
+      ],
+      "correcta": 0,
+      "explicacion": "Se flamea hasta el rojo, pero se usa fría: si no, mata y salpica la muestra.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §10",
+      "apartado": "10",
+      "evidencia": "Asa de 2 mm; enfriar contando hasta 20"
+    },
+    {
+      "id": "t14-q280",
+      "pregunta": "¿Qué dice el apunte sobre el uso actual de la tinción de Gram?",
+      "opciones": [
+        "Que está en desuso desde que existen las pruebas genéticas.",
+        "Que se reserva para las micobacterias.",
+        "Que sigue siendo una de las tinciones más usadas."
+      ],
+      "correcta": 2,
+      "explicacion": "Las micobacterias son precisamente las que no responden bien al Gram.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Sigue siendo una de las tinciones más usadas"
+    },
+    {
+      "id": "t14-q281",
+      "pregunta": "Una preparación entre porta y cubre se deja montada media hora antes de mirarla. ¿Qué puede pasar?",
+      "opciones": [
+        "Que las bacterias se multipliquen y el campo se llene de células.",
+        "Que la movilidad haya disminuido y el resultado salga falsamente negativo.",
+        "Que el cubreobjetos se pegue al porta y no se pueda enfocar."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso se examina enseguida, a ×400: la movilidad disminuye con el tiempo.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Se examina enseguida a ×400: la movilidad disminuye con el tiempo."
+    },
+    {
+      "id": "t14-q282",
+      "pregunta": "En la preparación entre porta y cubre, ¿qué tipo de cultivo se usa?",
+      "opciones": [
+        "Un cultivo líquido.",
+        "Una colonia tomada de una placa, sin más.",
+        "Un cultivo en agar semisólido."
+      ],
+      "correcta": 0,
+      "explicacion": "Se pone una gota pequeña de cultivo líquido en el centro del porta; el agar semisólido es la alternativa sin microscopio.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.1",
+      "apartado": "3.1",
+      "evidencia": "Una gota pequeña de cultivo líquido en el centro del portaobjetos."
+    },
+    {
+      "id": "t14-q283",
+      "pregunta": "¿Qué sustancia forma los gránulos de volutina que revela la tinción de Albert?",
+      "opciones": [
+        "Glucógeno.",
+        "Polifosfato.",
+        "Ácido micólico."
+      ],
+      "correcta": 1,
+      "explicacion": "Son reservas de polifosfato de Corynebacterium diphtheriae; los ácidos micólicos están en la pared de las micobacterias.",
+      "fuente": "OMS (2003), 5.3; UKHSA, UK SMI TP 39 (2025) · apunte §8.4",
+      "apartado": "8.4",
+      "evidencia": "La tinción de Albert pone de manifiesto los gránulos de volutina (polifosfato) de Corynebacterium diphtheriae."
+    },
+    {
+      "id": "t14-q284",
+      "pregunta": "¿De qué bacteria pone de manifiesto los gránulos metacromáticos la tinción de Albert?",
+      "opciones": [
+        "De Corynebacterium diphtheriae.",
+        "De Bacillus anthracis.",
+        "De Cryptococcus neoformans."
+      ],
+      "correcta": 0,
+      "explicacion": "La cápsula de B. anthracis se ve con McFadyean, y la de Cryptococcus, con tinta china.",
+      "fuente": "OMS (2003), 5.3; UKHSA, UK SMI TP 39 (2025) · apunte §8.4",
+      "apartado": "8.4",
+      "evidencia": "gránulos de volutina (polifosfato) de Corynebacterium diphtheriae"
+    },
+    {
+      "id": "t14-q285",
+      "pregunta": "Resumiendo el tema: ¿qué reacción de Gram tienen las enterobacterias?",
+      "opciones": [
+        "Son grampositivas.",
+        "Son Gram indeterminadas.",
+        "Son gramnegativas."
+      ],
+      "correcta": 2,
+      "explicacion": "E. coli, que es una de ellas, sale rosa; las Gram indeterminadas son las ácido-alcohol resistentes.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "E. coli, rosa (1322, 2.º ejercicio, #20). Las enterobacterias son gramnegativas."
+    },
+    {
+      "id": "t14-q286",
+      "pregunta": "Resumiendo el tema: ¿cómo se resume la diferencia de pared entre los dos grupos del Gram?",
+      "opciones": [
+        "Peptidoglicano fino en las grampositivas; grueso en las gramnegativas.",
+        "Peptidoglicano grueso en las grampositivas; fino con membrana externa en las gramnegativas.",
+        "Las dos tienen membrana externa, pero solo las gramnegativas tienen peptidoglicano."
+      ],
+      "correcta": 1,
+      "explicacion": "Es lo que explica que las grampositivas retengan el complejo cristal violeta-yodo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "La diferencia está en la pared: peptidoglicano grueso en las grampositivas; fino con membrana externa en las gramnegativas."
+    },
+    {
+      "id": "t14-q287",
+      "pregunta": "Resumiendo el tema: ¿qué consecuencia tiene decolorar de más y de menos en el Gram?",
+      "opciones": [
+        "De más, falsos gramnegativos; de menos, falsos grampositivos.",
+        "De más, falsos grampositivos; de menos, falsos gramnegativos.",
+        "En los dos casos, falsos grampositivos."
+      ],
+      "correcta": 0,
+      "explicacion": "El decolorante es el paso crítico, y por eso además se usan cultivos jóvenes.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "El paso crítico es el decolorante: de más, falsos gramnegativos; de menos, falsos grampositivos."
+    },
+    {
+      "id": "t14-q288",
+      "pregunta": "Resumiendo el tema: ¿cuál es el mordiente de la tinción de flagelos y qué hace?",
+      "opciones": [
+        "El lugol, que fija la pararrosanilina.",
+        "El permanganato potásico, que oscurece el fondo.",
+        "El ácido tánico, que los engruesa."
+      ],
+      "correcta": 2,
+      "explicacion": "Sin engrosarlos no se verían: son demasiado finos para el microscopio óptico.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Flagelos: mordiente (ácido tánico) que los engruesa."
+    },
+    {
+      "id": "t14-q289",
+      "pregunta": "Resumiendo el tema: ¿cuáles son los dos resultados de color de la tinción de esporas?",
+      "opciones": [
+        "Esporas rosas y células verdes.",
+        "Esporas rojas y células azules.",
+        "Esporas verdes y células rosas."
+      ],
+      "correcta": 2,
+      "explicacion": "El rojo sobre azul es el resultado del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Esporas: verde de malaquita con calor (Schaeffer-Fulton); esporas verdes, células rosas."
+    },
+    {
+      "id": "t14-q290",
+      "pregunta": "Resumiendo el tema: en la tinción negativa de la cápsula, ¿qué se ve y qué no se hace?",
+      "opciones": [
+        "Un halo claro sobre fondo oscuro, y no se fija.",
+        "Un halo oscuro sobre fondo claro, y se fija al calor.",
+        "Una cápsula violeta sobre fondo rosa, y se fija con metanol."
+      ],
+      "correcta": 0,
+      "explicacion": "La cápsula no absorbe los colorantes básicos: se tiñe el fondo y la preparación va sin fijar.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Cápsula: tinción negativa con tinta china (halo claro sobre fondo oscuro), sin fijar."
+    },
+    {
+      "id": "t14-q291",
+      "pregunta": "Resumiendo el tema: ¿qué colorantes tiñen el fondo en lugar de la célula?",
+      "opciones": [
+        "Los básicos.",
+        "Los ácidos.",
+        "Los fluorescentes."
+      ],
+      "correcta": 1,
+      "explicacion": "Los básicos (cristal violeta, safranina, azul de metileno, fucsina, verde de malaquita) tiñen la célula.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Colorantes básicos tiñen la célula (cristal violeta, safranina, azul de metileno, fucsina, verde de malaquita); los ácidos, el fondo."
+    },
+    {
+      "id": "t14-q292",
+      "pregunta": "Resumiendo el tema: ¿qué hay que recordar del Kinyoun frente al Ziehl-Neelsen?",
+      "opciones": [
+        "Que es lo mismo, pero en frío.",
+        "Que es lo mismo, pero con auramina fluorescente.",
+        "Que usa lugol en lugar de fucsina."
+      ],
+      "correcta": 0,
+      "explicacion": "La auramina es otra tinción, más sensible y para cribado; el lugol es del Gram.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Micobacterias rojas sobre fondo azul. Kinyoun, lo mismo en frío."
+    },
+    {
+      "id": "t14-q293",
+      "pregunta": "Resumiendo el tema: en una preparación en fresco se buscan bacterias vivas. ¿A qué aumento y cuándo se miran?",
+      "opciones": [
+        "A ×1000 con inmersión, cuando el frotis esté seco.",
+        "A ×400 y enseguida.",
+        "A ×100, al cabo de media hora."
+      ],
+      "correcta": 1,
+      "explicacion": "La inmersión y el secado son propios del frotis teñido; en fresco, la movilidad se pierde con el tiempo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Fresco y gota pendiente: bacterias vivas, movilidad a ×400, enseguida."
+    },
+    {
+      "id": "t14-q294",
+      "pregunta": "Resumiendo el tema: ¿qué cualidad de la auramina la hace la mejor para el cribado?",
+      "opciones": [
+        "Que da más detalle morfológico.",
+        "Que no necesita microscopio especial.",
+        "Que es más sensible."
+      ],
+      "correcta": 2,
+      "explicacion": "El detalle morfológico lo da el Ziehl-Neelsen, y la auramina necesita microscopio de fluorescencia.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.1-5.3 · apunte §11",
+      "apartado": "11",
+      "evidencia": "Auramina: fluorescente, más sensible, para el cribado."
+    },
+    {
+      "id": "t14-q295",
+      "pregunta": "¿Qué dos tipos de preparación distingue el apunte para el examen microscópico?",
+      "opciones": [
+        "En fresco, y fijada y teñida.",
+        "En campo claro y en campo oscuro.",
+        "Simple y diferencial."
+      ],
+      "correcta": 0,
+      "explicacion": "Simple y diferencial son tipos de tinción, no de preparación.",
+      "fuente": "OMS, Manual of basic techniques (2003), 5.1; OpenStax, Microbiology (2016), 2.4 · apunte §1",
+      "apartado": "1",
+      "evidencia": "Dos tipos de preparación (OpenStax):"
+    },
+    {
+      "id": "t14-q296",
+      "pregunta": "En la observación en fresco, ¿qué es lo que no se hace a la muestra?",
+      "opciones": [
+        "Ni cubrirla con un cubreobjetos ni mirarla a ×400.",
+        "Ni agitarla ni diluirla.",
+        "Ni fijarla ni teñirla."
+      ],
+      "correcta": 2,
+      "explicacion": "Fijar mataría las células y el objetivo es ver cómo se mueven vivas.",
+      "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3",
+      "apartado": "3",
+      "evidencia": "Qué se busca: células vivas, sin fijar ni teñir."
+    },
+    {
+      "id": "t14-q297",
+      "pregunta": "¿Qué complejo retienen las grampositivas al decolorar?",
+      "opciones": [
+        "El de safranina y yodo.",
+        "El de cristal violeta y yodo.",
+        "El de cristal violeta y safranina."
+      ],
+      "correcta": 1,
+      "explicacion": "El lugol aporta el yodo que atrapa al cristal violeta dentro del peptidoglicano grueso.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Retienen el complejo cristal violeta–yodo"
+    },
+    {
+      "id": "t14-q298",
+      "pregunta": "Un cultivo de Candida albicans se tiñe con Gram. ¿Qué se ve?",
+      "opciones": [
+        "Una levadura grampositiva.",
+        "Una levadura gramnegativa.",
+        "Nada: las levaduras no se tiñen con Gram."
+      ],
+      "correcta": 0,
+      "explicacion": "Figura en la columna de las grampositivas, con la advertencia de que es una levadura.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Candida albicans: levadura grampositiva"
+    },
+    {
+      "id": "t14-q299",
+      "pregunta": "Un control grampositivo del Gram aparece rosa y se descarta un exceso de decoloración. ¿Qué otra causa figura entre los falsos gramnegativos?",
+      "opciones": [
+        "Un lugol mal lavado.",
+        "Un cultivo viejo.",
+        "Un contraste demasiado largo."
+      ],
+      "correcta": 1,
+      "explicacion": "El lugol mal lavado y el contraste excesivo están en la columna de los falsos grampositivos.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| Contraste demasiado fuerte o largo | Lavados excesivos entre pasos | | | Cultivos viejos |"
+    },
+    {
+      "id": "t14-q300",
+      "pregunta": "Un frotis se desprende del porta durante los lavados de la tinción. ¿Qué función de la fijación ha fallado?",
+      "opciones": [
+        "La de conservar la forma de las células.",
+        "La de detener el metabolismo.",
+        "La de pegar las células al porta."
+      ],
+      "correcta": 2,
+      "explicacion": "La fijación pega, mata y conserva; aquí ha faltado la adherencia.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Para qué: - pega las células al porta"
     }
   ],
   "supuestos": [
