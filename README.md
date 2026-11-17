@@ -23,22 +23,22 @@ Consecuencia para los datos: los temas 9-40 se preguntan **en los dos formatos**
 
 ## Ampliación a unas 300 preguntas (17/11/2026)
 
-Los 29 temas incluidos —1–8 y 20–40— tienen entre **294 y 301 preguntas teóricas**. Los temas **9–19 (microbiología) quedan fuera de esta ampliación**, por indicación del usuario, y conservan su contenido previo.
+Los 40 temas tienen entre **294 y 312 preguntas teóricas**. Los temas 9–14 y 16–18 (microbiología) se ampliaron después, también el 17/11/2026; el 15 y el 19 ya estaban en 300.
 
-El banco completo contiene **10.052 preguntas teóricas**. El test mixto de todos los temas ofrece **10.051**: elimina la pregunta compartida por los temas 26 y 27, conservando ambos identificadores en sus bancos para mantener el progreso.
+El banco completo contiene **11.964 preguntas teóricas**. El test mixto de todos los temas ofrece **11.963**: elimina la pregunta compartida por los temas 26 y 27, conservando ambos identificadores en sus bancos para mantener el progreso.
 
-| Tema | Preguntas | Tema | Preguntas | Tema | Preguntas |
-| --- | ---: | --- | ---: | --- | ---: |
-| 1 | 300 | 22 | 298 | 32 | 300 |
-| 2 | 299 | 23 | 295 | 33 | 297 |
-| 3 | 300 | 24 | 294 | 34 | 299 |
-| 4 | 300 | 25 | 300 | 35 | 294 |
-| 5 | 300 | 26 | 300 | 36 | 296 |
-| 6 | 300 | 27 | 294 | 37 | 297 |
-| 7 | 300 | 28 | 301 | 38 | 299 |
-| 8 | 300 | 29 | 300 | 39 | 298 |
-| 20 | 300 | 30 | 299 | 40 | 300 |
-| 21 | 300 | 31 | 300 | — | — |
+| Tema | Preguntas | Tema | Preguntas | Tema | Preguntas | Tema | Preguntas |
+| --- | ---: | --- | ---: | --- | ---: | --- | ---: |
+| 1 | 300 | 11 | 312 | 21 | 300 | 31 | 300 |
+| 2 | 299 | 12 | 296 | 22 | 298 | 32 | 300 |
+| 3 | 300 | 13 | 297 | 23 | 295 | 33 | 297 |
+| 4 | 300 | 14 | 300 | 24 | 294 | 34 | 299 |
+| 5 | 300 | 15 | 300 | 25 | 300 | 35 | 294 |
+| 6 | 300 | 16 | 300 | 26 | 300 | 36 | 296 |
+| 7 | 300 | 17 | 300 | 27 | 294 | 37 | 297 |
+| 8 | 300 | 18 | 300 | 28 | 301 | 38 | 299 |
+| 9 | 299 | 19 | 300 | 29 | 300 | 39 | 298 |
+| 10 | 300 | 20 | 300 | 30 | 299 | 40 | 300 |
 
 Las preguntas añadidas tienen tres opciones, una sola correcta, explicación, fuente concreta, apartado y evidencia literal del apunte. Se conservan los IDs anteriores; las correcciones de contenido histórico quedan limitadas a los campos declarados en `scripts/excepciones-integridad.json`.
 
