@@ -2721,6 +2721,594 @@
       "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
       "apartado": "5",
       "evidencia": "colorante primario: el primero, que tiñe todo; - mordiente: fija o estabiliza el colorante"
+    },
+    {
+      "id": "t14-q160",
+      "pregunta": "¿Quién creó la tinción de Gram y en qué año?",
+      "opciones": [
+        "Robert Koch, en 1876.",
+        "Paul Ehrlich, en 1904.",
+        "Hans Christian Gram, en 1884."
+      ],
+      "correcta": 2,
+      "explicacion": "Sigue siendo una de las tinciones más usadas y suele ser el primer paso de la identificación.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §6",
+      "apartado": "6",
+      "evidencia": "La creó Hans Christian Gram en 1884."
+    },
+    {
+      "id": "t14-q161",
+      "pregunta": "¿Qué lugar ocupa la tinción de Gram en la identificación de una bacteria?",
+      "opciones": [
+        "Es la prueba confirmatoria final.",
+        "Suele ser un primer paso.",
+        "Se hace solo cuando fallan las pruebas bioquímicas."
+      ],
+      "correcta": 1,
+      "explicacion": "Orienta hacia un grupo, y después vienen el cultivo y la identificación bioquímica.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §6",
+      "apartado": "6",
+      "evidencia": "Sigue siendo una de las tinciones más usadas y suele ser un primer paso en la identificación."
+    },
+    {
+      "id": "t14-q162",
+      "pregunta": "¿Cuánto mide la capa de peptidoglicano de una bacteria grampositiva?",
+      "opciones": [
+        "De 30 a 100 nm.",
+        "No más de unos 4 nm.",
+        "De 0,5 a 10 µm."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 4 nm son el peptidoglicano fino de las gramnegativas; 0,5-10 µm es el largo de los bacilos ácido-alcohol resistentes.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Peptidoglicano | Grueso: muchas capas, 30-100 nm, con ácidos teicoicos | Fino: no más de unos 4 nm |"
+    },
+    {
+      "id": "t14-q163",
+      "pregunta": "¿Qué componente acompaña al peptidoglicano grueso de las grampositivas?",
+      "opciones": [
+        "Los ácidos teicoicos.",
+        "El lipopolisacárido.",
+        "Los ácidos micólicos."
+      ],
+      "correcta": 0,
+      "explicacion": "El lipopolisacárido va en la membrana externa de las gramnegativas y los ácidos micólicos, en la pared de las micobacterias.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Grueso: muchas capas, 30-100 nm, con ácidos teicoicos"
+    },
+    {
+      "id": "t14-q164",
+      "pregunta": "¿Qué lleva la membrana externa de las bacterias gramnegativas?",
+      "opciones": [
+        "Ácidos teicoicos.",
+        "Lipopolisacárido.",
+        "Peptidoglicano de 30 a 100 nm."
+      ],
+      "correcta": 1,
+      "explicacion": "Los ácidos teicoicos y el peptidoglicano grueso son de la pared grampositiva.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Membrana externa | No | Sí, con lipopolisacárido |"
+    },
+    {
+      "id": "t14-q165",
+      "pregunta": "Al aplicar el decolorante, ¿qué les ocurre a las bacterias gramnegativas?",
+      "opciones": [
+        "Retienen el complejo cristal violeta-yodo.",
+        "Fijan la safranina antes de perder el violeta.",
+        "Pierden el complejo cristal violeta-yodo."
+      ],
+      "correcta": 2,
+      "explicacion": "Las grampositivas lo retienen gracias a su peptidoglicano grueso; la safranina llega después, en el contraste.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Al decolorar | Retienen el complejo cristal violeta–yodo | Lo pierden |"
+    },
+    {
+      "id": "t14-q166",
+      "pregunta": "¿De qué color queda al final una bacteria grampositiva?",
+      "opciones": [
+        "Rosa a rojo.",
+        "Azul oscuro a violeta.",
+        "Verde brillante."
+      ],
+      "correcta": 1,
+      "explicacion": "El rosa a rojo es el de las gramnegativas, por la safranina; el verde es el contraste del Ziehl-Neelsen con malaquita.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "| Color final | Azul oscuro a violeta | Rosa a rojo |"
+    },
+    {
+      "id": "t14-q167",
+      "pregunta": "Un cultivo viejo de una bacteria grampositiva puede verse gramnegativo porque:",
+      "opciones": [
+        "Las células viejas pierden la membrana externa.",
+        "El peptidoglicano se engrosa con el tiempo.",
+        "Una grampositiva necesita la pared intacta y las células viejas o dañadas la tienen alterada."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso se usan cultivos jóvenes para el Gram.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "Una grampositiva necesita la pared intacta. Las células viejas o dañadas pueden verse gramnegativas"
+    },
+    {
+      "id": "t14-q168",
+      "pregunta": "¿Qué hace el yodo en la pared de una bacteria grampositiva?",
+      "opciones": [
+        "Entra y altera el colorante azul, de modo que el complejo no puede salir al decolorar.",
+        "Disuelve la membrana externa para que entre el cristal violeta.",
+        "Oxida el peptidoglicano y lo vuelve impermeable al alcohol."
+      ],
+      "correcta": 0,
+      "explicacion": "Es el papel del mordiente: el complejo cristal violeta-yodo queda atrapado en el peptidoglicano grueso.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 y 3.3 · apunte §6.1",
+      "apartado": "6.1",
+      "evidencia": "El yodo entra en la pared de las grampositivas y altera el colorante azul"
+    },
+    {
+      "id": "t14-q169",
+      "pregunta": "¿Qué colorante puede sustituir al cristal violeta en el primer paso del Gram?",
+      "opciones": [
+        "El azul de metileno.",
+        "El violeta de metilo.",
+        "El verde de malaquita."
+      ],
+      "correcta": 1,
+      "explicacion": "El azul de metileno es el contraste del Ziehl-Neelsen y el verde de malaquita, el colorante de las esporas.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 1 | Cristal violeta (o violeta de metilo) | Colorante primario | Todas violetas |"
+    },
+    {
+      "id": "t14-q170",
+      "pregunta": "Después del lugol, y antes de decolorar, ¿cómo están todas las bacterias del frotis?",
+      "opciones": [
+        "Violetas, con el complejo ya fijado.",
+        "Las grampositivas violetas y las gramnegativas incoloras.",
+        "Las grampositivas violetas y las gramnegativas rosas."
+      ],
+      "correcta": 0,
+      "explicacion": "La diferencia de color aparece al decolorar; el rosa, en el contraste.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 2 | Lugol | Mordiente | Todas violetas: el complejo queda fijado |"
+    },
+    {
+      "id": "t14-q171",
+      "pregunta": "¿Qué puede usarse como decolorante en la tinción de Gram?",
+      "opciones": [
+        "Ácido-alcohol al 3 %.",
+        "Ácido sulfúrico al 1 %.",
+        "Etanol de 95-100 %, acetona o alcohol-acetona."
+      ],
+      "correcta": 2,
+      "explicacion": "El ácido-alcohol y el ácido sulfúrico son los decolorantes de las tinciones de ácido-alcohol resistencia.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 3 | Etanol de 95-100 %, acetona o alcohol-acetona | Decolorante |"
+    },
+    {
+      "id": "t14-q172",
+      "pregunta": "Nada más decolorar un Gram, ¿cómo están las bacterias gramnegativas?",
+      "opciones": [
+        "Rosas.",
+        "Incoloras.",
+        "Violetas."
+      ],
+      "correcta": 1,
+      "explicacion": "El rosa lo da la safranina del cuarto paso: hasta entonces están sin color.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Decolorante | Grampositivas violetas; gramnegativas incoloras |"
+    },
+    {
+      "id": "t14-q173",
+      "pregunta": "Además de la safranina, ¿qué colorantes pueden hacer de contraste en el Gram?",
+      "opciones": [
+        "El rojo neutro o la fucsina.",
+        "El lugol o el yodo de Gram.",
+        "La auramina o el permanganato potásico."
+      ],
+      "correcta": 0,
+      "explicacion": "El lugol es el mordiente; la auramina y el permanganato son de las tinciones de ácido-alcohol resistencia.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| 4 | Safranina (o rojo neutro o fucsina) | Contraste |"
+    },
+    {
+      "id": "t14-q174",
+      "pregunta": "¿Con qué otros nombres se conoce el lugol del Gram?",
+      "opciones": [
+        "Alcohol-acetona o decolorante de Gram.",
+        "Violeta de metilo o cristal violeta.",
+        "Yodo de Gram o triyoduro de potasio."
+      ],
+      "correcta": 2,
+      "explicacion": "Son tres nombres del mismo reactivo, el mordiente del Gram.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "El lugol es lo mismo que el yodo de Gram o el triyoduro de potasio"
+    },
+    {
+      "id": "t14-q175",
+      "pregunta": "¿Cómo se prepara el lugol según la norma británica?",
+      "opciones": [
+        "Con 1 g de yodo y 2 g de yoduro potásico en 300 mL de agua destilada.",
+        "Con 2 g de yodo y 1 g de yoduro potásico en 100 mL de agua destilada.",
+        "Con 1 g de yodo en 300 mL de etanol de 95 %."
+      ],
+      "correcta": 0,
+      "explicacion": "El yoduro potásico va al doble que el yodo, y el disolvente es agua destilada.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "1 g de yodo y 2 g de yoduro potásico en 300 mL de agua destilada"
+    },
+    {
+      "id": "t14-q176",
+      "pregunta": "¿De qué dependen los tiempos de cada paso del Gram?",
+      "opciones": [
+        "Solo del grosor del frotis.",
+        "De la concentración y la formulación de los reactivos, y manda lo que diga el fabricante.",
+        "Están fijados por norma y son iguales en cualquier laboratorio."
+      ],
+      "correcta": 1,
+      "explicacion": "Por eso la norma británica y la OMS dan cifras distintas para el mismo paso.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Varían con la concentración y la formulación de los reactivos, y la norma británica manda seguir al fabricante."
+    },
+    {
+      "id": "t14-q177",
+      "pregunta": "En la modificación de Hucker que recoge la norma británica, el cristal violeta se usa:",
+      "opciones": [
+        "Al 0,5 % durante 60 segundos.",
+        "Al 0,1 % durante 2 minutos.",
+        "Al 0,5 % durante 30 segundos."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 60 segundos son el tiempo de la OMS; el 0,1 % es la concentración de la safranina de Hucker.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Cristal violeta | 0,5 %, 30 s | 60 s |"
+    },
+    {
+      "id": "t14-q178",
+      "pregunta": "En la modificación de Hucker, ¿cuánto tiempo actúa el lugol?",
+      "opciones": [
+        "60 segundos, al 1 %.",
+        "2-3 segundos.",
+        "30 segundos, al 1 %."
+      ],
+      "correcta": 2,
+      "explicacion": "Los 60 segundos son los de la OMS y los 2-3 segundos, el decolorante de la OMS.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Cristal violeta | 0,5 %, 30 s | 60 s | | Lugol | 1 %, 30 s | 60 s |"
+    },
+    {
+      "id": "t14-q179",
+      "pregunta": "Según la norma británica, ¿cuánto se aplica el decolorante en el Gram?",
+      "opciones": [
+        "Hasta que deja de salir color.",
+        "Exactamente 30 segundos.",
+        "Exactamente 2-3 segundos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 2-3 segundos son la referencia de la OMS con acetona-etanol; la norma británica lo deja al criterio visual.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Decolorante | Hasta que deja de salir color | Acetona-etanol, 2-3 s |"
+    },
+    {
+      "id": "t14-q180",
+      "pregunta": "En el Gram de la OMS, ¿cuánto tiempo se deja el cristal violeta?",
+      "opciones": [
+        "30 segundos.",
+        "60 segundos.",
+        "2 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 30 segundos son los de la modificación de Hucker; los 2 minutos, el contraste con fucsina diluida de la OMS.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Cristal violeta | 0,5 %, 30 s | 60 s |"
+    },
+    {
+      "id": "t14-q181",
+      "pregunta": "En el Gram de la OMS, el contraste se hace con:",
+      "opciones": [
+        "Safranina al 0,1 %, 30 segundos.",
+        "Azul de metileno al 1 %, 20-30 segundos.",
+        "Fucsina diluida, 2 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "La safranina al 0,1 % es el contraste de Hucker y el azul de metileno, el del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "| Contraste | Safranina 0,1 %, 30 s a 1 min (rojo neutro, unos 2 min) | Fucsina diluida, 2 min |"
+    },
+    {
+      "id": "t14-q182",
+      "pregunta": "Si en vez de safranina se usa rojo neutro como contraste, ¿cuánto se deja?",
+      "opciones": [
+        "Unos 30 segundos.",
+        "Unos 2 minutos.",
+        "Unos 10 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "La safranina al 0,1 % se deja de 30 segundos a 1 minuto; el rojo neutro necesita más tiempo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Safranina 0,1 %, 30 s a 1 min (rojo neutro, unos 2 min)"
+    },
+    {
+      "id": "t14-q183",
+      "pregunta": "¿Qué se hace entre un paso y el siguiente del Gram?",
+      "opciones": [
+        "Lavar con agua, sin pasarse.",
+        "Secar el porta en la llama.",
+        "Decolorar brevemente con alcohol."
+      ],
+      "correcta": 0,
+      "explicacion": "Los lavados excesivos entre pasos son causa de falso gramnegativo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Entre paso y paso se lava con agua, sin pasarse."
+    },
+    {
+      "id": "t14-q184",
+      "pregunta": "¿Con qué objetivo se examina un Gram terminado?",
+      "opciones": [
+        "Con el de ×40, sin aceite.",
+        "Con el de inmersión.",
+        "Con el de ×10."
+      ],
+      "correcta": 1,
+      "explicacion": "La OMS mira antes con el ×40 para ver el reparto del frotis, pero la lectura se hace con el ×100 de inmersión.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "Al final se seca y se examina con el objetivo de inmersión."
+    },
+    {
+      "id": "t14-q185",
+      "pregunta": "¿Para qué mira la OMS un Gram primero con el objetivo de ×40?",
+      "opciones": [
+        "Para contar las bacterias por campo.",
+        "Para comprobar el color del fondo.",
+        "Para ver cómo se ha repartido el frotis."
+      ],
+      "correcta": 2,
+      "explicacion": "Después se pasa al ×100 de inmersión para leer la reacción de cada célula.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.2",
+      "apartado": "6.2",
+      "evidencia": "La OMS mira antes con el ×40, para ver cómo se ha repartido el frotis"
+    },
+    {
+      "id": "t14-q186",
+      "pregunta": "¿Cuál de estas bacterias es grampositiva?",
+      "opciones": [
+        "El micrococo.",
+        "El gonococo.",
+        "El meningococo."
+      ],
+      "correcta": 0,
+      "explicacion": "Gonococos y meningococos son los cocos gramnegativos del cuadro; los micrococos van con estafilococos y estreptococos.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "| Estafilococos, estreptococos, neumococos, enterococos, micrococos | Gonococos, meningococos |"
+    },
+    {
+      "id": "t14-q187",
+      "pregunta": "Los bacilos de la difteria y del carbunco son:",
+      "opciones": [
+        "Gramnegativos.",
+        "Gram indeterminados.",
+        "Grampositivos."
+      ],
+      "correcta": 2,
+      "explicacion": "Los bacilos gramnegativos del cuadro son los coliformes, Shigella y Salmonella; los indeterminados son los ácido-alcohol resistentes.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "| Bacilos de la difteria y del carbunco | Bacilos coliformes (E. coli), Shigella, Salmonella |"
+    },
+    {
+      "id": "t14-q188",
+      "pregunta": "En una tinción de Gram, Vibrio cholerae aparece:",
+      "opciones": [
+        "Rosa, porque es gramnegativo.",
+        "Violeta, porque es grampositivo.",
+        "Sin teñir, porque es Gram indeterminado."
+      ],
+      "correcta": 0,
+      "explicacion": "Figura en la columna de las gramnegativas, junto a los coliformes, Shigella y Salmonella.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "| Candida albicans: levadura grampositiva | Vibrio cholerae |"
+    },
+    {
+      "id": "t14-q189",
+      "pregunta": "Shigella y Salmonella, en el Gram, quedan:",
+      "opciones": [
+        "Violetas.",
+        "Rosas.",
+        "Verdes."
+      ],
+      "correcta": 1,
+      "explicacion": "Son bacilos gramnegativos, como los coliformes.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "| Bacilos coliformes (E. coli), Shigella, Salmonella |"
+    },
+    {
+      "id": "t14-q190",
+      "pregunta": "¿Cuál es la bacteria de control de calidad más usada en el Gram?",
+      "opciones": [
+        "Proteus mirabilis.",
+        "Bacillus anthracis.",
+        "Escherichia coli."
+      ],
+      "correcta": 2,
+      "explicacion": "E. coli sale rosa, y en la misma imagen Staphylococcus aureus queda violeta.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Es la bacteria de control de calidad más usada en el Gram (OpenStax)"
+    },
+    {
+      "id": "t14-q191",
+      "pregunta": "En la imagen de control del Gram junto a E. coli, ¿cómo queda Staphylococcus aureus?",
+      "opciones": [
+        "Rosa.",
+        "Violeta.",
+        "Incoloro."
+      ],
+      "correcta": 1,
+      "explicacion": "Es el grampositivo del par de control: E. coli rosa y S. aureus violeta.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "y en la misma imagen Staphylococcus aureus queda violeta"
+    },
+    {
+      "id": "t14-q192",
+      "pregunta": "¿Qué significa que una bacteria es Gram variable?",
+      "opciones": [
+        "Que puede salir de los dos colores.",
+        "Que no responde al Gram en ningún caso.",
+        "Que cambia de color según el contraste empleado."
+      ],
+      "correcta": 0,
+      "explicacion": "Las que no responden al Gram son las Gram indeterminadas, como las ácido-alcohol resistentes.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Gram variables: pueden salir de los dos colores."
+    },
+    {
+      "id": "t14-q193",
+      "pregunta": "¿Qué bacterias son Gram indeterminadas?",
+      "opciones": [
+        "Los estreptococos de crecimiento rápido.",
+        "Las ácido-alcohol resistentes.",
+        "Las levaduras como Candida albicans."
+      ],
+      "correcta": 1,
+      "explicacion": "Los estreptococos de crecimiento rápido son grampositivos que se ven gramnegativos con frecuencia, y Candida es grampositiva.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Gram indeterminadas: no responden al Gram, como las ácido-alcohol resistentes."
+    },
+    {
+      "id": "t14-q194",
+      "pregunta": "¿Cuál de estas grampositivas se ve gramnegativa con frecuencia?",
+      "opciones": [
+        "Candida albicans.",
+        "Los micrococos.",
+        "Las formas de involución de Streptococcus pneumoniae."
+      ],
+      "correcta": 2,
+      "explicacion": "También los estreptococos de crecimiento rápido y algunos Bacillus.",
+      "fuente": "OMS (2003), 5.2; OpenStax, Microbiology (2016), 2.4 · apunte §6.3",
+      "apartado": "6.3",
+      "evidencia": "Algunas grampositivas se ven gramnegativas con frecuencia: estreptococos de crecimiento rápido, formas de involución de S. pneumoniae, algunos Bacillus."
+    },
+    {
+      "id": "t14-q195",
+      "pregunta": "Un lugol mal lavado puede provocar:",
+      "opciones": [
+        "Falsos grampositivos.",
+        "Falsos gramnegativos.",
+        "Pérdida del frotis en los lavados."
+      ],
+      "correcta": 0,
+      "explicacion": "En la columna de falsos grampositivos están decolorar poco, fijar en húmedo, el sedimento del cristal violeta, el lugol mal lavado y un contraste excesivo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| Lugol mal lavado | Cristal violeta poco concentrado |"
+    },
+    {
+      "id": "t14-q196",
+      "pregunta": "Un lugol aplicado poco tiempo puede provocar:",
+      "opciones": [
+        "Falsos grampositivos.",
+        "Falsos gramnegativos.",
+        "Un fondo demasiado oscuro."
+      ],
+      "correcta": 1,
+      "explicacion": "Sin mordiente suficiente, el complejo no queda bien fijado y la grampositiva se decolora.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| Fijar antes de que el frotis esté seco | Lugol poco tiempo |"
+    },
+    {
+      "id": "t14-q197",
+      "pregunta": "Un contraste demasiado fuerte o demasiado largo en el Gram puede dar:",
+      "opciones": [
+        "Falsos grampositivos.",
+        "Falsos gramnegativos.",
+        "Células sin teñir."
+      ],
+      "correcta": 0,
+      "explicacion": "Figura en la columna de los falsos grampositivos, junto al lugol mal lavado y la decoloración insuficiente.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| Contraste demasiado fuerte o largo | Lavados excesivos entre pasos |"
+    },
+    {
+      "id": "t14-q198",
+      "pregunta": "Decolorar poco tiempo un Gram produce:",
+      "opciones": [
+        "Falsos gramnegativos.",
+        "Un frotis que se desprende.",
+        "Falsos grampositivos."
+      ],
+      "correcta": 2,
+      "explicacion": "Si el alcohol no actúa bastante, la gramnegativa conserva el complejo y sale violeta.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "| Decolorar poco tiempo | Decolorar demasiado |"
+    },
+    {
+      "id": "t14-q199",
+      "pregunta": "¿Cuál es el paso crítico de la tinción de Gram?",
+      "opciones": [
+        "El colorante primario.",
+        "El contraste.",
+        "El decolorante."
+      ],
+      "correcta": 2,
+      "explicacion": "De más da falsos gramnegativos y de menos, falsos grampositivos.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "El paso crítico es el decolorante."
+    },
+    {
+      "id": "t14-q200",
+      "pregunta": "¿Qué cultivo se usa como control de calidad del Gram?",
+      "opciones": [
+        "Uno con una sola cepa grampositiva.",
+        "Uno con grampositivas y gramnegativas.",
+        "Uno con una cepa ácido-alcohol resistente."
+      ],
+      "correcta": 1,
+      "explicacion": "Así se comprueban los dos resultados en el mismo porta.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "Control de calidad: un cultivo con grampositivas y gramnegativas."
+    },
+    {
+      "id": "t14-q201",
+      "pregunta": "¿Cuándo hace falta también el control negativo en el Gram?",
+      "opciones": [
+        "Con un lote nuevo de colorante.",
+        "Cada vez que se tiñe un frotis.",
+        "Nunca: en el Gram no se usa control negativo."
+      ],
+      "correcta": 0,
+      "explicacion": "En el día a día basta el positivo, salvo al estrenar lote.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
+      "apartado": "6.4",
+      "evidencia": "En el Gram basta el control positivo, salvo con un lote nuevo de colorante."
     }
   ],
   "supuestos": [
