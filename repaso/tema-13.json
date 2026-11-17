@@ -2481,6 +2481,454 @@
       "fuente": "SCA (2017), apdo. 7.3 · apunte §3.4",
       "apartado": "3.4",
       "evidencia": "El resultado de una dilución se multiplica por el inverso de la dilución"
+    },
+    {
+      "id": "t13-q139",
+      "pregunta": "¿Cómo se siembra un agua contaminada para el recuento en placa?",
+      "opciones": [
+        "1 mL sin diluir, igual que el agua tratada.",
+        "Haciendo una serie de diluciones.",
+        "10 mL sin diluir, repartidos en varias placas."
+      ],
+      "correcta": 1,
+      "explicacion": "El agua tratada se siembra sin diluir (1 mL en profundidad); la contaminada, en serie de diluciones para que alguna placa quede en 10-300 colonias.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Agua contaminada: una serie de diluciones."
+    },
+    {
+      "id": "t13-q140",
+      "pregunta": "¿Para qué se usa lupa o contador al leer las placas de un recuento?",
+      "opciones": [
+        "Para no perder las colonias pequeñas.",
+        "Para distinguir las colonias vivas de las muertas.",
+        "Para medir el diámetro de cada colonia e informarlo."
+      ],
+      "correcta": 0,
+      "explicacion": "Las colonias muy pequeñas se escapan a simple vista; se cuentan todas, no se miden.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Se usa lupa o contador para no perder las colonias pequeñas."
+    },
+    {
+      "id": "t13-q141",
+      "pregunta": "Una placa tiene tantas colonias que no se pueden contar. ¿Qué NO debe escribirse en el informe?",
+      "opciones": [
+        "«Más de 300», referido a la dilución más alta.",
+        "Un recuento estimado con cuadrícula, indicando que es una estimación.",
+        "«Incontable», sin más explicación."
+      ],
+      "correcta": 2,
+      "explicacion": "Si todas las placas pasan de 300 se informa «más de 300» con la dilución más alta, o se estima con cuadrícula si las colonias están separadas; «incontable» a secas no sirve.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "No se escribe «incontable» sin más explicación."
+    },
+    {
+      "id": "t13-q142",
+      "pregunta": "Una cadena de colonias que parece salir de un solo grumo que se deshizo, ¿cómo se cuenta?",
+      "opciones": [
+        "Como tantas ufc como colonias tenga la cadena.",
+        "Como una sola ufc.",
+        "No se cuenta: la placa se rechaza."
+      ],
+      "correcta": 1,
+      "explicacion": "La cadena viene de un solo grumo, que es una sola unidad formadora de colonias.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "una cadena de colonias que parece salir de un solo grumo que se deshizo"
+    },
+    {
+      "id": "t13-q143",
+      "pregunta": "Según la guía británica, ¿cómo se cuenta un crecimiento extendido que forma una película en el fondo de la placa?",
+      "opciones": [
+        "Por la fracción de la placa que cubre.",
+        "No se cuenta y se informa «incontable».",
+        "Como una sola ufc."
+      ],
+      "correcta": 2,
+      "explicacion": "La guía británica cuenta como una sola ufc la cadena de un grumo, la película del fondo y la colonia que crece en la película de agua.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "un crecimiento extendido que forma una película en el fondo de la placa"
+    },
+    {
+      "id": "t13-q144",
+      "pregunta": "Un crecimiento invasor cubre una quinta parte de una placa, y en el resto se cuentan 120 colonias. ¿Cuántas colonias se atribuyen a la placa entera?",
+      "opciones": [
+        "150.",
+        "120.",
+        "144."
+      ],
+      "correcta": 0,
+      "explicacion": "El invasor cubre menos de un cuarto, así que se extrapola: las 120 colonias están en 4/5 de la placa; 120 ÷ 0,8 = 150. Sumar un 20 % (144) no es la proporción correcta.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se cuentan las colonias del resto y se extrapola a la placa entera"
+    },
+    {
+      "id": "t13-q145",
+      "pregunta": "Una placa con más de 300 colonias bien separadas se lee con una cuadrícula de 50 cuadros. En 5 cuadros al azar se cuentan 60 colonias. ¿Qué se informa?",
+      "opciones": [
+        "60 colonias en la placa.",
+        "Unas 3000 colonias en la placa, como recuento exacto.",
+        "Unas 600 colonias en la placa, indicando que es una estimación."
+      ],
+      "correcta": 2,
+      "explicacion": "60 × (50 ÷ 5) = 600. La suma se multiplica por los cuadros de la placa entre los contados, y el resultado se da como estimación.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "la suma se multiplica por el número de cuadros de la placa entre el de cuadros contados"
+    },
+    {
+      "id": "t13-q146",
+      "pregunta": "¿Cómo se presenta el resultado obtenido con una cuadrícula de Quebec en una placa con más de 300 colonias?",
+      "opciones": [
+        "Como una estimación, y diciéndolo así.",
+        "Como un recuento exacto, porque la cuadrícula está calibrada.",
+        "Como «incontable», porque pasa de 300."
+      ],
+      "correcta": 0,
+      "explicacion": "Se cuentan solo unos cuadros y se extrapola: es una estimación y así se dice.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "el resultado es solo una estimación y se dice así"
+    },
+    {
+      "id": "t13-q147",
+      "pregunta": "¿Qué lleva un contador de colonias manual?",
+      "opciones": [
+        "Una cámara y un programa de análisis de imagen.",
+        "Superficie iluminada, cuadrícula, lupa y marcador.",
+        "Un microscopio con objetivo de inmersión."
+      ],
+      "correcta": 1,
+      "explicacion": "El análisis de imagen es propio de los contadores automáticos.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "manuales, con superficie iluminada, cuadrícula, lupa y marcador"
+    },
+    {
+      "id": "t13-q148",
+      "pregunta": "¿Cómo trabaja un contador de colonias automático?",
+      "opciones": [
+        "Por la turbidez del medio alrededor de cada colonia.",
+        "Por la impedancia eléctrica del agar.",
+        "Por análisis de imagen, ajustado para no contar burbujas ni defectos del agar."
+      ],
+      "correcta": 2,
+      "explicacion": "Una cámara y un programa cuentan las colonias; hay que ajustarlo para que no tome por colonias las burbujas o los defectos.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "automáticos, por análisis de imagen; se ajustan para no contar burbujas ni defectos del agar."
+    },
+    {
+      "id": "t13-q149",
+      "pregunta": "¿Por qué se atemperan antes de leerlas las placas que se han guardado en frío?",
+      "opciones": [
+        "Porque en frío las colonias pierden el color.",
+        "Porque la condensación estorba la lectura.",
+        "Porque tienen que crecer unas horas más."
+      ],
+      "correcta": 1,
+      "explicacion": "Las placas guardadas a 5 ± 3 °C se empañan; se atemperan para poder contarlas.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "se atemperan antes de leerlas, porque la condensación estorba"
+    },
+    {
+      "id": "t13-q150",
+      "pregunta": "Si se siembran 0,1 mL de muestra sin diluir, ¿cuántas ufc/mL vale cada colonia?",
+      "opciones": [
+        "10 ufc/mL.",
+        "1 ufc/mL.",
+        "0,1 ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "Se divide por el volumen sembrado: 1 ÷ 0,1 = 10.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Truco del 0,1 mL: cada colonia vale 10 ufc/mL"
+    },
+    {
+      "id": "t13-q151",
+      "pregunta": "¿Cuál es la fórmula del recuento en placa en ufc/mL?",
+      "opciones": [
+        "Colonias × volumen sembrado (mL) × dilución.",
+        "Colonias × volumen sembrado (mL) ÷ inverso de la dilución.",
+        "Colonias ÷ volumen sembrado (mL) × inverso de la dilución."
+      ],
+      "correcta": 2,
+      "explicacion": "Se refiere a 1 mL dividiendo por lo que se sembró, y a la muestra multiplicando por el inverso de la dilución.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución."
+    },
+    {
+      "id": "t13-q152",
+      "pregunta": "Una placa sembrada con 0,1 mL de la dilución 10⁻² da un recuento de 6,3 × 10⁴ ufc/mL. ¿Cuántas colonias tenía?",
+      "opciones": [
+        "63.",
+        "630.",
+        "6,3."
+      ],
+      "correcta": 0,
+      "explicacion": "Es la cuenta al revés: 63 000 × 0,1 × 10⁻² = 63. Comprobación: 63 ÷ 0,1 × 100 = 63 000.",
+      "fuente": "SCA, Microbiology of Drinking Water (2020), parte 7 · apunte §4.3",
+      "apartado": "4.3",
+      "evidencia": "Recuento (ufc/mL) = colonias ÷ volumen sembrado (mL), multiplicado por el inverso de la dilución."
+    },
+    {
+      "id": "t13-q153",
+      "pregunta": "Las placas de 1 mL de las diluciones 10⁻², 10⁻³ y 10⁻⁴ pasan todas de 300 colonias. ¿Cómo se informa?",
+      "opciones": [
+        "Más de 3 × 10⁴ ufc/mL.",
+        "Más de 3 × 10⁶ ufc/mL.",
+        "Incontable."
+      ],
+      "correcta": 1,
+      "explicacion": "Más de 300/d con la dilución más alta, la 10⁻⁴: 300 × 10 000 = 3 × 10⁶. Con la 10⁻² se daría un mínimo cien veces más bajo de lo que ya se sabe.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Más de 300/d, con la dilución más alta"
+    },
+    {
+      "id": "t13-q154",
+      "pregunta": "Sembrando 1 mL, la dilución 10⁻¹ da 230 colonias y la 10⁻² da 25. ¿Qué resultado da la ISO 7218?",
+      "opciones": [
+        "2,3 × 10³ ufc/mL.",
+        "2,6 × 10³ ufc/mL.",
+        "2,3 × 10⁴ ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "N = (230 + 25) ÷ (1 × 1,1 × 10⁻¹) = 255 ÷ 0,11 = 2318 → 2,3 × 10³. Sin el 1,1 saldría 2550 (2,6 × 10³); con d = 10⁻², diez veces más.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Cuando cuentan dos diluciones seguidas, la ISO 7218:2007 (en la metodología oficial de la ANMAT) calcula una media ponderada"
+    },
+    {
+      "id": "t13-q155",
+      "pregunta": "Un alimento se siembra en superficie, 0,1 mL por placa. Cuentan dos diluciones seguidas: 190 colonias en la 10⁻² y 21 en la 10⁻³. ¿Cuánto vale la media ponderada?",
+      "opciones": [
+        "1,9 × 10⁴ ufc/mL.",
+        "1,9 × 10⁵ ufc/mL.",
+        "2,1 × 10⁵ ufc/mL."
+      ],
+      "correcta": 1,
+      "explicacion": "N = 211 ÷ (0,1 × 1,1 × 10⁻²) = 211 ÷ 0,0011 = 191 818 → 1,9 × 10⁵. Olvidar el 0,1 da 1,9 × 10⁴; olvidar el 1,1, 211 000 (2,1 × 10⁵).",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "V: volumen sembrado en cada placa, en mL"
+    },
+    {
+      "id": "t13-q156",
+      "pregunta": "Cuentan las placas de 1 mL de la 10⁻³ (245 colonias) y de la 10⁻⁴ (30 colonias). Al aplicar N = ΣC ÷ (V × 1,1 × d), ¿qué denominador corresponde?",
+      "opciones": [
+        "1 × 1,1 × 10⁻⁴ = 0,00011.",
+        "1 × 10⁻³ = 0,001.",
+        "1 × 1,1 × 10⁻³ = 0,0011."
+      ],
+      "correcta": 2,
+      "explicacion": "d es la primera dilución elegida, la menos diluida (10⁻³), y el 1,1 no se omite. N = 275 ÷ 0,0011 = 250 000 = 2,5 × 10⁵ ufc/mL.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "d: la primera dilución elegida, la menos diluida"
+    },
+    {
+      "id": "t13-q157",
+      "pregunta": "Un recuento calculado da 23 460 ufc/g. ¿Cómo se expresa según la ISO 7218?",
+      "opciones": [
+        "2,3 × 10⁴ ufc/g.",
+        "2,4 × 10⁴ ufc/g.",
+        "2,35 × 10⁴ ufc/g."
+      ],
+      "correcta": 0,
+      "explicacion": "Dos cifras significativas: 2 y 3. La tercera es un 4, menor que 5, así que la segunda no sube.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Si la tercera es 5 o más, la segunda sube una unidad."
+    },
+    {
+      "id": "t13-q158",
+      "pregunta": "Al redondear un recuento de 4750 ufc/mL a dos cifras significativas, la tercera cifra es un 5. ¿Qué resultado se da?",
+      "opciones": [
+        "4,7 × 10³ ufc/mL.",
+        "4,75 × 10³ ufc/mL.",
+        "4,8 × 10³ ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Con la tercera cifra igual a 5 o mayor, la segunda sube una unidad: 4,7 pasa a 4,8.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Si la tercera es 5 o más, la segunda sube una unidad."
+    },
+    {
+      "id": "t13-q159",
+      "pregunta": "¿A cuántas cifras significativas se redondea un recuento según la ISO 7218?",
+      "opciones": [
+        "A tres.",
+        "A dos.",
+        "A una."
+      ],
+      "correcta": 1,
+      "explicacion": "Dos cifras significativas, expresadas como un número entre 1,0 y 9,9 por la potencia de 10.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Redondeo: a dos cifras significativas."
+    },
+    {
+      "id": "t13-q160",
+      "pregunta": "Un compañero anota un recuento como «37 × 10³ ufc/mL». ¿Cómo debe expresarse según la ISO 7218?",
+      "opciones": [
+        "3,7 × 10⁴ ufc/mL.",
+        "3,7 × 10³ ufc/mL.",
+        "0,37 × 10⁵ ufc/mL."
+      ],
+      "correcta": 0,
+      "explicacion": "El número va entre 1,0 y 9,9: 37 × 10³ = 3,7 × 10⁴. 0,37 × 10⁵ vale lo mismo pero tampoco tiene esa forma; 3,7 × 10³ es diez veces menos.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Se expresa como un número entre 1,0 y 9,9 por la potencia de 10."
+    },
+    {
+      "id": "t13-q161",
+      "pregunta": "Para calcular la media ponderada de dos diluciones consecutivas, ¿qué debe cumplir al menos una de las dos placas?",
+      "opciones": [
+        "Tener más de 300 colonias.",
+        "Tener 10 colonias o más.",
+        "Tener menos de 4 colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "La fórmula suma las colonias de las dos placas, y al menos una tiene que llegar a 10.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "al menos una con 10 colonias o más"
+    },
+    {
+      "id": "t13-q162",
+      "pregunta": "Se siembran en superficie 0,1 mL por placa y se aplica la media ponderada de la ISO 7218. ¿Qué valor toma V?",
+      "opciones": [
+        "0,2, la suma de lo sembrado en las dos placas.",
+        "1, porque el resultado se refiere a 1 mL.",
+        "0,1, el volumen sembrado en cada placa."
+      ],
+      "correcta": 2,
+      "explicacion": "V es el volumen sembrado en cada placa, en mL; no se suman las dos placas, y el paso a 1 mL ya lo hace la división.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "V: volumen sembrado en cada placa, en mL"
+    },
+    {
+      "id": "t13-q163",
+      "pregunta": "Dos placas de diluciones consecutivas tienen 120 y 13 colonias. ¿Qué valor de ΣC entra en la fórmula de la ISO 7218?",
+      "opciones": [
+        "66,5.",
+        "133.",
+        "13."
+      ],
+      "correcta": 1,
+      "explicacion": "ΣC es la suma de las colonias de las dos placas: 120 + 13 = 133. No se hace la media (66,5) ni se toma solo la más diluida.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "ΣC: suma de las colonias de las dos placas"
+    },
+    {
+      "id": "t13-q164",
+      "pregunta": "Según la ISO 7218, ¿cómo se expresa una placa con 6 colonias?",
+      "opciones": [
+        "Como número estimado.",
+        "Como menos de 4/d.",
+        "Como menos de 1/d."
+      ],
+      "correcta": 0,
+      "explicacion": "De 4 a 9 colonias se da un número estimado; de 1 a 3, menos de 4/d; sin colonias, menos de 1/d.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Placa con 4 a 9 colonias | Número estimado"
+    },
+    {
+      "id": "t13-q165",
+      "pregunta": "Un alimento se siembra a partir de la dilución 10⁻² (1 mL por placa). Esa placa tiene 3 colonias y las demás, ninguna. ¿Qué resultado se da?",
+      "opciones": [
+        "< 300 ufc/g.",
+        "300 ufc/g.",
+        "< 400 ufc/g."
+      ],
+      "correcta": 2,
+      "explicacion": "Con 1 a 3 colonias hay microorganismos, pero se informa menos de 4/d: 4 ÷ 10⁻² = 400.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Hay microorganismos, pero menos de 4/d"
+    },
+    {
+      "id": "t13-q166",
+      "pregunta": "No crece nada en ninguna placa, y la dilución menos diluida que se sembró (1 mL) fue la 10⁻². ¿Qué se informa?",
+      "opciones": [
+        "< 100 ufc/g.",
+        "0 ufc/g.",
+        "< 10 ufc/g."
+      ],
+      "correcta": 0,
+      "explicacion": "Sin colonias se informa menos de 1/d: 1 ÷ 10⁻² = 100. No se da 0, y < 10 correspondería a la 10⁻¹.",
+      "fuente": "ANMAT, vol. III, anexo 3 (ISO 7218:2007) · apunte §4.4",
+      "apartado": "4.4",
+      "evidencia": "Ninguna colonia | Menos de 1/d"
+    },
+    {
+      "id": "t13-q167",
+      "pregunta": "En la siembra en espiral, ¿cómo se obtiene el recuento?",
+      "opciones": [
+        "Se cuentan todas las colonias de la placa y se dividen por 1 mL.",
+        "Se cuentan las colonias de un sector y se dividen por su volumen calibrado.",
+        "Se mide la longitud de la espiral cubierta de colonias."
+      ],
+      "correcta": 1,
+      "explicacion": "Cada sector recibe un volumen distinto y conocido; basta con contar un sector y dividir.",
+      "fuente": "SCA (2017), apdo. 5.24 · apunte §4.5",
+      "apartado": "4.5",
+      "evidencia": "se cuentan las colonias de un sector y se dividen por su volumen"
+    },
+    {
+      "id": "t13-q168",
+      "pregunta": "¿Qué ventaja tiene la siembra en espiral?",
+      "opciones": [
+        "Permite sembrar volúmenes de 100 mL.",
+        "Sirve para contar microorganismos no cultivables.",
+        "Ahorra diluciones intermedias."
+      ],
+      "correcta": 2,
+      "explicacion": "Como el volumen baja de forma logarítmica del centro al borde, en la misma placa hay zonas de varias «diluciones».",
+      "fuente": "SCA (2017), apdo. 5.24 · apunte §4.5",
+      "apartado": "4.5",
+      "evidencia": "y se dividen por su volumen. Ahorra diluciones intermedias."
+    },
+    {
+      "id": "t13-q169",
+      "pregunta": "En una placa sembrada en espiral, un sector calibrado de 0,002 mL tiene 40 colonias. ¿Qué recuento se obtiene?",
+      "opciones": [
+        "80 ufc/mL.",
+        "2,0 × 10³ ufc/mL.",
+        "2,0 × 10⁴ ufc/mL."
+      ],
+      "correcta": 2,
+      "explicacion": "Colonias del sector ÷ su volumen: 40 ÷ 0,002 = 20 000 ufc/mL. Multiplicar (40 × 0,002) no tiene sentido.",
+      "fuente": "SCA (2017), apdo. 5.24 · apunte §4.5",
+      "apartado": "4.5",
+      "evidencia": "El volumen de cada sector está calibrado"
+    },
+    {
+      "id": "t13-q170",
+      "pregunta": "Según la guía británica, ¿cuál de estos crecimientos cuenta como una sola ufc?",
+      "opciones": [
+        "Cinco colonias bien separadas de una placa de 1 mL.",
+        "Una colonia que crece en la película de agua del borde de la placa.",
+        "Cada colonia de una placa con crecimiento invasor en más de un cuarto."
+      ],
+      "correcta": 1,
+      "explicacion": "La colonia de la película de agua, como la cadena de un grumo o la película del fondo, es una sola ufc. Cinco colonias separadas son cinco; la placa con invasor en más de un cuarto se rechaza.",
+      "fuente": "SCA (2020), parte 7; ANMAT, vol. III (ISO 4833-1); SCA (2017), apdo. 5.4 · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "una colonia que crece en la película de agua del borde o de la superficie"
     }
   ],
   "supuestos": [
