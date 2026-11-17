@@ -3309,6 +3309,356 @@
       "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.2 · apunte §6.4",
       "apartado": "6.4",
       "evidencia": "En el Gram basta el control positivo, salvo con un lote nuevo de colorante."
+    },
+    {
+      "id": "t14-q202",
+      "pregunta": "¿Qué hay en la pared de las micobacterias que explica su ácido-alcohol resistencia?",
+      "opciones": [
+        "Una membrana externa con lipopolisacárido.",
+        "Una capa cérea de ácidos micólicos.",
+        "Una capa gruesa de peptidoglicano con ácidos teicoicos."
+      ],
+      "correcta": 1,
+      "explicacion": "El lipopolisacárido es de las gramnegativas y los ácidos teicoicos, de las grampositivas.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Las micobacterias tienen en la pared una capa cérea de ácidos micólicos."
+    },
+    {
+      "id": "t14-q203",
+      "pregunta": "La capa cérea de las micobacterias tiene dos consecuencias al teñir. ¿Cuáles?",
+      "opciones": [
+        "Se tiñen con facilidad pero se decoloran enseguida.",
+        "No se tiñen con ningún colorante básico.",
+        "Cuesta teñirlas y, una vez teñidas, cuesta decolorarlas."
+      ],
+      "correcta": 2,
+      "explicacion": "Por eso hace falta un colorante fuerte, la fucsina fenicada, y después resisten el ácido-alcohol.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Por eso cuesta teñirlas y, una vez teñidas, cuesta decolorarlas."
+    },
+    {
+      "id": "t14-q204",
+      "pregunta": "En una tinción de ácido-alcohol resistencia, ¿de qué color quedan las bacterias que resisten la decoloración?",
+      "opciones": [
+        "Rojas.",
+        "Azules.",
+        "Verdes."
+      ],
+      "correcta": 0,
+      "explicacion": "El azul y el verde son los colores del contraste, que tiñe lo que sí se decolora.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Después resisten la decoloración con ácido-alcohol y quedan rojas."
+    },
+    {
+      "id": "t14-q205",
+      "pregunta": "¿Qué dos colorantes se usan como contraste en las tinciones de ácido-alcohol resistencia en caliente y en frío?",
+      "opciones": [
+        "La safranina o el rojo neutro.",
+        "El cristal violeta o el violeta de metilo.",
+        "El azul de metileno o el verde de malaquita."
+      ],
+      "correcta": 2,
+      "explicacion": "Safranina y rojo neutro son contrastes del Gram; el cristal violeta es su colorante primario.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "se tiñe con el contraste: azul de metileno (azul) o verde de malaquita (verde)"
+    },
+    {
+      "id": "t14-q206",
+      "pregunta": "¿Por qué se aplica una tinción de ácido-alcohol resistencia a Nocardia y a los ooquistes de Cryptosporidium?",
+      "opciones": [
+        "Porque son grampositivos y el Gram los confundiría con micobacterias.",
+        "Porque no se tiñen bien con el Gram.",
+        "Porque el Gram solo sirve para bacterias de muestras de agua."
+      ],
+      "correcta": 1,
+      "explicacion": "Igual que las micobacterias, quedan fuera del Gram y necesitan otra tinción.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Estos no se tiñen bien con el Gram."
+    },
+    {
+      "id": "t14-q207",
+      "pregunta": "En el Ziehl-Neelsen, ¿cuánto tiempo actúa la fucsina fenicada emitiendo vapor?",
+      "opciones": [
+        "3-5 minutos.",
+        "20-30 segundos.",
+        "10 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 20-30 segundos son el contraste con azul de metileno; los 10 minutos, la auramina.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "calentada hasta que emite vapor, sin hervir, 3-5 min sin dejar que se seque"
+    },
+    {
+      "id": "t14-q208",
+      "pregunta": "Mientras se calienta la fucsina fenicada del Ziehl-Neelsen, ¿qué hay que evitar?",
+      "opciones": [
+        "Que hierva y que el frotis se seque.",
+        "Que el colorante llegue a emitir vapor.",
+        "Que el porta se apoye en una superficie fría."
+      ],
+      "correcta": 0,
+      "explicacion": "Se calienta justo hasta que emite vapor, sin hervir, y se repone colorante para que no se seque.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Fucsina fenicada, calentada hasta que emite vapor, sin hervir, 3-5 min sin dejar que se seque"
+    },
+    {
+      "id": "t14-q209",
+      "pregunta": "¿A qué concentración se usa el ácido-alcohol del Ziehl-Neelsen y hasta cuándo se aplica?",
+      "opciones": [
+        "Al 1 %, durante 3-5 minutos.",
+        "Al 3 % en una sola aplicación de 3 minutos.",
+        "Al 3 %, 10-20 segundos, repitiendo hasta que el frotis queda rosa pálido."
+      ],
+      "correcta": 2,
+      "explicacion": "El 1 % durante 3-5 minutos es el decolorante de la auramina-fenol; los 3 minutos repetidos, el del Kinyoun.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ácido-alcohol al 3 %, 10-20 s, repitiendo hasta que el frotis queda rosa pálido"
+    },
+    {
+      "id": "t14-q210",
+      "pregunta": "En el Ziehl-Neelsen, ¿cuánto tiempo se deja el contraste de azul de metileno al 1 %?",
+      "opciones": [
+        "3-4 minutos.",
+        "20-30 segundos.",
+        "5 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 3-4 minutos son el contraste del Kinyoun.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Azul de metileno al 1 % o verde de malaquita, 20-30 s"
+    },
+    {
+      "id": "t14-q211",
+      "pregunta": "En el Kinyoun, ¿cuánto tiempo se deja la fucsina sobre el frotis?",
+      "opciones": [
+        "3-5 minutos.",
+        "10 minutos.",
+        "5 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "Son 5 minutos sin calor; los 3-5 minutos con vapor son del Ziehl-Neelsen y los 10 minutos, de la auramina.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Fucsina más concentrada (más fenol y fucsina), 5 min sin calor"
+    },
+    {
+      "id": "t14-q212",
+      "pregunta": "¿Con qué decolora el Kinyoun?",
+      "opciones": [
+        "Ácido clorhídrico al 3 % en etanol, 3 minutos, y otra vez 1-2 minutos.",
+        "Ácido sulfúrico al 1 %, en una sola aplicación.",
+        "Ácido-alcohol al 1 %, 3-5 minutos."
+      ],
+      "correcta": 0,
+      "explicacion": "El ácido sulfúrico al 1 % es el del Kinyoun modificado y el ácido-alcohol al 1 %, el de la auramina.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ácido clorhídrico al 3 % en etanol, 3 min, y otra vez 1-2 min"
+    },
+    {
+      "id": "t14-q213",
+      "pregunta": "¿Cuánto tiempo se deja el azul de metileno del Kinyoun?",
+      "opciones": [
+        "20-30 segundos.",
+        "3-4 minutos.",
+        "10 minutos."
+      ],
+      "correcta": 1,
+      "explicacion": "Los 20-30 segundos son el contraste del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ácido clorhídrico al 3 % en etanol, 3 min, y otra vez 1-2 min | Azul de metileno, 3-4 min |"
+    },
+    {
+      "id": "t14-q214",
+      "pregunta": "¿Por qué el Kinyoun modificado decolora con ácido sulfúrico al 1 %?",
+      "opciones": [
+        "Porque es más agresivo y elimina mejor el fondo.",
+        "Porque es más suave, para los débilmente ácido-alcohol resistentes como Nocardia.",
+        "Porque no deja residuo de fenol en el frotis."
+      ],
+      "correcta": 1,
+      "explicacion": "Nocardia retiene el colorante con dificultad: un decolorante fuerte la dejaría incolora.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ácido sulfúrico al 1 %, más suave | Para los débilmente ácido-alcohol resistentes, como Nocardia"
+    },
+    {
+      "id": "t14-q215",
+      "pregunta": "En la tinción de auramina-fenol, ¿cuánto tiempo actúa la auramina?",
+      "opciones": [
+        "10 minutos.",
+        "3-5 minutos.",
+        "5 minutos sin calor."
+      ],
+      "correcta": 0,
+      "explicacion": "Los 3-5 minutos son la fucsina con vapor del Ziehl-Neelsen y los 5 minutos en frío, la del Kinyoun.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Auramina, fluorescente, 10 min"
+    },
+    {
+      "id": "t14-q216",
+      "pregunta": "¿Con qué decolora la auramina-fenol?",
+      "opciones": [
+        "Ácido-alcohol al 3 %, 10-20 segundos.",
+        "Ácido clorhídrico al 3 % en etanol.",
+        "Ácido-alcohol al 1 %, 3-5 minutos."
+      ],
+      "correcta": 2,
+      "explicacion": "El 3 % en aplicaciones cortas es del Ziehl-Neelsen y el clorhídrico en etanol, del Kinyoun.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Ácido-alcohol al 1 %, 3-5 min | Permanganato potásico: fondo oscuro"
+    },
+    {
+      "id": "t14-q217",
+      "pregunta": "En un Ziehl-Neelsen, además del color, ¿qué aspecto pueden presentar los bacilos ácido-alcohol resistentes?",
+      "opciones": [
+        "Encapsulado, con un halo claro alrededor.",
+        "Arrosariado.",
+        "Con gránulos verde-negros en los extremos."
+      ],
+      "correcta": 1,
+      "explicacion": "El halo claro es el resultado de la tinción negativa de la cápsula, y los gránulos verde-negros, el de la tinción de Albert.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "bacilos ácido-alcohol resistentes rojo brillante, a veces arrosariados, sobre fondo azul (o verde)"
+    },
+    {
+      "id": "t14-q218",
+      "pregunta": "¿Cómo se ve un resultado positivo con auramina?",
+      "opciones": [
+        "Bacilos amarillo-verdes brillantes sobre fondo oscuro.",
+        "Bacilos rojo brillante sobre fondo azul.",
+        "Bacilos verdes dentro de células rosas."
+      ],
+      "correcta": 0,
+      "explicacion": "El rojo sobre azul es del Ziehl-Neelsen, y las esporas verdes en células rosas, del Schaeffer-Fulton.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Auramina: amarillo-verdes brillantes sobre fondo oscuro"
+    },
+    {
+      "id": "t14-q219",
+      "pregunta": "¿Con qué microscopio y a cuántos aumentos se lee una tinción de auramina?",
+      "opciones": [
+        "Con microscopio óptico y objetivo de inmersión, a 1000 aumentos.",
+        "Con campo oscuro, a 400 aumentos.",
+        "Con microscopio de fluorescencia, a 25 o 40 aumentos."
+      ],
+      "correcta": 2,
+      "explicacion": "La fluorescencia permite leer a menos aumentos, y por eso el cribado es más rápido.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "con microscopio de fluorescencia a 25 o 40 aumentos"
+    },
+    {
+      "id": "t14-q220",
+      "pregunta": "¿Para qué es la mejor tinción la auramina?",
+      "opciones": [
+        "Para confirmar en cultivos positivos.",
+        "Para ver la morfología de los bacilos con detalle.",
+        "Para el cribado de muestras clínicas."
+      ],
+      "correcta": 2,
+      "explicacion": "Es más sensible; el detalle morfológico y la confirmación son del Ziehl-Neelsen.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "La auramina es más sensible: es la mejor para el cribado de muestras clínicas."
+    },
+    {
+      "id": "t14-q221",
+      "pregunta": "En el Ziehl-Neelsen de la OMS, ¿hasta qué temperatura se calienta el colorante?",
+      "opciones": [
+        "Hasta que empieza a evaporarse, unos 60 °C.",
+        "Hasta que hierve, unos 100 °C.",
+        "Hasta 37 °C."
+      ],
+      "correcta": 0,
+      "explicacion": "Se busca vapor, no ebullición; la OMS lo deja 5 minutos y decolora otros 5 o hasta rosa pálido.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "calienta hasta que el colorante empieza a evaporarse, unos 60 °C"
+    },
+    {
+      "id": "t14-q222",
+      "pregunta": "En el Ziehl-Neelsen de la OMS, ¿cuánto se deja el colorante caliente y cuánto se decolora?",
+      "opciones": [
+        "3 minutos el colorante y 20 segundos la decoloración.",
+        "5 minutos el colorante y 5 minutos la decoloración, o hasta rosa pálido.",
+        "10 minutos el colorante y 1 minuto la decoloración."
+      ],
+      "correcta": 1,
+      "explicacion": "La norma británica da 3-5 minutos de fucsina y 10-20 segundos de ácido-alcohol repetidos; las cifras no son universales.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "lo deja 5 minutos y decolora 5 minutos o hasta rosa pálido"
+    },
+    {
+      "id": "t14-q223",
+      "pregunta": "¿Por qué se limpia el objetivo antes de pasar al siguiente porta en el examen de bacilos ácido-alcohol resistentes?",
+      "opciones": [
+        "Para que el aceite de inmersión no se mezcle con el colorante.",
+        "Para evitar que el objetivo se raye con el porta.",
+        "Para no arrastrar bacilos de una preparación a otra."
+      ],
+      "correcta": 2,
+      "explicacion": "Un bacilo arrastrado daría un falso positivo en la siguiente muestra.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "Antes de pasar al siguiente porta, se limpia el objetivo, para no arrastrar bacilos."
+    },
+    {
+      "id": "t14-q224",
+      "pregunta": "¿Dónde se manejan las muestras con sospecha de Mycobacterium tuberculosis?",
+      "opciones": [
+        "En cabina de clase II, en un laboratorio de nivel 2.",
+        "En cabina de clase I, dentro de un laboratorio de nivel de contención 3.",
+        "En la mesa de trabajo, con guantes y mascarilla."
+      ],
+      "correcta": 1,
+      "explicacion": "Tuberculosis y carbunco son los dos casos de nivel de contención 3 que cita el apunte.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "se manejan en cabina de clase I dentro de un laboratorio de nivel de contención 3"
+    },
+    {
+      "id": "t14-q225",
+      "pregunta": "¿Qué riesgo químico tiene la fucsina fenicada?",
+      "opciones": [
+        "Es cancerígena.",
+        "Es inflamable, como el etanol.",
+        "Es peligrosa solo si se ingiere."
+      ],
+      "correcta": 0,
+      "explicacion": "El fenol que lleva es además tóxico, corrosivo y combustible; el verde de malaquita es el peligroso por ingestión.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "La fucsina fenicada es cancerígena y el fenol, tóxico, corrosivo y combustible."
+    },
+    {
+      "id": "t14-q226",
+      "pregunta": "Además de tóxico, ¿cómo describe el apunte el fenol?",
+      "opciones": [
+        "Cancerígeno y radioactivo.",
+        "Corrosivo y combustible.",
+        "Inerte en frío y peligroso solo al calentarlo."
+      ],
+      "correcta": 1,
+      "explicacion": "La fucsina fenicada, que lo lleva, es además cancerígena, y el ácido-alcohol es corrosivo.",
+      "fuente": "UKHSA, UK SMI TP 39 (2025); OMS (2003), 5.3 · apunte §7",
+      "apartado": "7",
+      "evidencia": "el fenol, tóxico, corrosivo y combustible"
     }
   ],
   "supuestos": [
