@@ -2259,6 +2259,468 @@
       "fuente": "UKHSA, UK SMI TP 21 (2025) · apunte §3.3",
       "apartado": "3.3",
       "evidencia": "Se usan guantes, y lo que pueda formar aerosoles va a la cabina de seguridad biológica."
+    },
+    {
+      "id": "t14-q127",
+      "pregunta": "Según la OMS, ¿cómo se toma la muestra de un líquido para hacer el frotis?",
+      "opciones": [
+        "Introduciendo el asa de canto hasta el fondo del tubo.",
+        "Aspirando con una pipeta Pasteur y dejando caer una gota.",
+        "Apoyando el asa plana sobre el líquido."
+      ],
+      "correcta": 2,
+      "explicacion": "El asa plana recoge una película fina y reproducible del líquido.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Tomar la muestra apoyando el asa plana sobre el líquido."
+    },
+    {
+      "id": "t14-q128",
+      "pregunta": "¿Cómo se extiende la muestra sobre el portaobjetos?",
+      "opciones": [
+        "En estrías paralelas de un borde al otro.",
+        "En espiral ovalada, del centro hacia fuera, dejando margen con los cuatro bordes.",
+        "En una gota redonda sin extender, en el centro."
+      ],
+      "correcta": 1,
+      "explicacion": "La espiral del centro hacia fuera reparte la muestra y el margen evita que el material llegue a los bordes.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Extender en espiral ovalada, del centro hacia fuera, dejando margen con los cuatro bordes."
+    },
+    {
+      "id": "t14-q129",
+      "pregunta": "En el procedimiento de la OMS, ¿qué se hace justo después de extender el frotis?",
+      "opciones": [
+        "Dejarlo secar al aire por completo.",
+        "Fijarlo al calor de inmediato.",
+        "Cubrirlo con cristal violeta."
+      ],
+      "correcta": 0,
+      "explicacion": "Fijar antes de que esté seco es causa de falsos grampositivos.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Dejar secar al aire por completo."
+    },
+    {
+      "id": "t14-q130",
+      "pregunta": "¿Qué se hace con el asa al terminar de extender el frotis?",
+      "opciones": [
+        "Volver a flamearla.",
+        "Dejarla en la gradilla para la siguiente muestra.",
+        "Enjuagarla en agua destilada estéril."
+      ],
+      "correcta": 0,
+      "explicacion": "Se flamea antes de tomar la muestra y otra vez al acabar, para no dejar material viable en el asa.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Dejar secar al aire por completo. 6. Volver a flamear el asa."
+    },
+    {
+      "id": "t14-q131",
+      "pregunta": "¿Por qué un frotis grueso no sirve?",
+      "opciones": [
+        "Porque se desprende siempre durante los lavados.",
+        "Porque obliga a usar el objetivo de ×40 en lugar del de inmersión.",
+        "Porque no se puede leer."
+      ],
+      "correcta": 2,
+      "explicacion": "El grueso no se lee y el demasiado fino da falsos negativos u obliga a repetir.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "un frotis grueso no se puede leer"
+    },
+    {
+      "id": "t14-q132",
+      "pregunta": "Un cultivo mal mezclado deja grumos en el frotis. ¿Qué problema causa?",
+      "opciones": [
+        "Que el frotis no se pega al porta.",
+        "Que no se distinguen células sueltas.",
+        "Que el colorante primario no penetra en ninguna célula."
+      ],
+      "correcta": 1,
+      "explicacion": "En un grumo se superponen las células y no se puede valorar forma ni agrupación.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Los cultivos mal mezclados dejan grumos en los que no se distinguen células sueltas."
+    },
+    {
+      "id": "t14-q133",
+      "pregunta": "¿Qué agua se usa para las extensiones y los lavados de las tinciones?",
+      "opciones": [
+        "Del grifo, si el laboratorio tiene agua potable.",
+        "Tamponada con fosfato.",
+        "Destilada o desionizada."
+      ],
+      "correcta": 2,
+      "explicacion": "La del grifo puede llevar micobacterias ambientales que confunden el Ziehl-Neelsen.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Para las extensiones y los lavados, agua destilada o desionizada."
+    },
+    {
+      "id": "t14-q134",
+      "pregunta": "¿Qué micobacteria ambiental cita el apunte como posible contaminante del agua del grifo?",
+      "opciones": [
+        "Mycobacterium gordonae.",
+        "Mycobacterium tuberculosis.",
+        "Nocardia asteroides."
+      ],
+      "correcta": 0,
+      "explicacion": "Es una micobacteria ambiental que, al aparecer en el frotis, confunde la lectura del Ziehl-Neelsen.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "puede llevar micobacterias ambientales como Mycobacterium gordonae"
+    },
+    {
+      "id": "t14-q135",
+      "pregunta": "Para rotular los portaobjetos, ¿qué NO se recomienda?",
+      "opciones": [
+        "El lápiz sobre la zona esmerilada.",
+        "El marcador de diamante.",
+        "La numeración antes de extender el frotis."
+      ],
+      "correcta": 1,
+      "explicacion": "Se rotulan a lápiz en portas esmerilados, y el porta se numera antes de apoyar el asa.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Portas esmerilados rotulados a lápiz; no se recomienda el marcador de diamante."
+    },
+    {
+      "id": "t14-q136",
+      "pregunta": "En el orden de la OMS, ¿cuándo se numera el portaobjetos?",
+      "opciones": [
+        "Después de fijar el frotis al calor.",
+        "Antes de apoyar el asa en el centro para extender.",
+        "Después de la tinción, para no borrar la marca."
+      ],
+      "correcta": 1,
+      "explicacion": "Se numera el porta y a continuación se apoya el asa en el centro.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Numerar el porta y apoyar el asa en el centro."
+    },
+    {
+      "id": "t14-q137",
+      "pregunta": "¿Cuánto se deja enfriar el asa después de flamearla hasta el rojo?",
+      "opciones": [
+        "Lo que se tarda en contar hasta 3.",
+        "Al menos dos minutos en la gradilla.",
+        "Lo que se tarda en contar hasta 20."
+      ],
+      "correcta": 2,
+      "explicacion": "Si el asa sigue caliente mata la muestra y la salpica al tocar el líquido.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.1",
+      "apartado": "4.1",
+      "evidencia": "Flamear el asa hasta el rojo y dejarla enfriar (contar hasta 20)."
+    },
+    {
+      "id": "t14-q138",
+      "pregunta": "¿Para qué sirve fijar un frotis?",
+      "opciones": [
+        "Para pegar las células al porta, matarlas casi siempre y conservar su forma y estructuras.",
+        "Para que las células absorban mejor el agua de los lavados.",
+        "Para aumentar el número de células por campo."
+      ],
+      "correcta": 0,
+      "explicacion": "Son las tres funciones de la fijación: adherencia, muerte y conservación de la morfología.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "pega las células al porta; - las mata casi siempre, deteniendo su movimiento y su metabolismo"
+    },
+    {
+      "id": "t14-q139",
+      "pregunta": "La fijación de un frotis, además de pegar las células, detiene:",
+      "opciones": [
+        "La difusión del colorante primario.",
+        "La acción del decolorante sobre la pared.",
+        "Su movimiento y su metabolismo."
+      ],
+      "correcta": 2,
+      "explicacion": "La fijación mata casi siempre las células, con lo que paran el movimiento y el metabolismo.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "las mata casi siempre, deteniendo su movimiento y su metabolismo"
+    },
+    {
+      "id": "t14-q140",
+      "pregunta": "Según la OMS, ¿cómo se fija un frotis al calor?",
+      "opciones": [
+        "Pasando el reverso del porta por la llama tres veces, rápido.",
+        "Dejando el porta sobre la llama un minuto.",
+        "Pasando la cara del frotis por la llama tres veces."
+      ],
+      "correcta": 0,
+      "explicacion": "Se calienta por el reverso y deprisa: el calor excesivo encoge y amontona las células.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Calor: pasar el reverso del porta por la llama tres veces, rápido."
+    },
+    {
+      "id": "t14-q141",
+      "pregunta": "¿Dentro de qué cabina se fijan los frotis de micobacterias en placa calefactora?",
+      "opciones": [
+        "Una cabina de flujo laminar horizontal.",
+        "La cabina de clase I.",
+        "Una vitrina de gases."
+      ],
+      "correcta": 1,
+      "explicacion": "La placa a 65-75 °C se usa dentro de cabina de clase I, porque el calor no mata a las micobacterias.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "Placa calefactora a 65-75 °C en el caso de las micobacterias, dentro de la cabina de clase I"
+    },
+    {
+      "id": "t14-q142",
+      "pregunta": "Un calor excesivo al fijar, ¿qué efecto tiene sobre las células?",
+      "opciones": [
+        "Las hincha y las separa, y puede hacer que una gramnegativa se vea grampositiva.",
+        "No afecta a la morfología, solo mata más deprisa.",
+        "Las encoge y amontona, y puede hacer que una grampositiva se vea gramnegativa."
+      ],
+      "correcta": 2,
+      "explicacion": "Es uno de los errores de fijación que falsean el Gram hacia el falso gramnegativo.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "El calor excesivo encoge y amontona las células, y puede hacer que una grampositiva se vea gramnegativa"
+    },
+    {
+      "id": "t14-q143",
+      "pregunta": "¿Por qué una extensión ya fijada de Mycobacterium se sigue manejando con cuidado?",
+      "opciones": [
+        "Porque el metanol no penetra en la pared cérea.",
+        "Porque el calor de la fijación no mata a Mycobacterium.",
+        "Porque las esporas resisten la fijación."
+      ],
+      "correcta": 1,
+      "explicacion": "Las micobacterias sobreviven a la fijación al calor; no forman esporas.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "El calor no mata a Mycobacterium: las extensiones fijadas se siguen manejando con cuidado."
+    },
+    {
+      "id": "t14-q144",
+      "pregunta": "¿Qué tinción se hace sin fijar el frotis?",
+      "opciones": [
+        "La tinción negativa.",
+        "La tinción de Gram.",
+        "La tinción de esporas de Schaeffer-Fulton."
+      ],
+      "correcta": 0,
+      "explicacion": "En la negativa se mezcla la muestra con la tinta china y se monta un cubre: fijar deformaría la cápsula.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "La tinción negativa no se fija (OpenStax)."
+    },
+    {
+      "id": "t14-q145",
+      "pregunta": "Un frotis se fija cuando todavía está húmedo. Según la OMS, ¿qué error se produce en el Gram?",
+      "opciones": [
+        "Falsos gramnegativos.",
+        "Pérdida del frotis durante los lavados.",
+        "Falsos grampositivos."
+      ],
+      "correcta": 2,
+      "explicacion": "Fijar antes de que el frotis esté seco figura entre las causas de falso grampositivo.",
+      "fuente": "OMS (2003), 5.1; UKHSA, UK SMI TP 39 (2025) · apunte §4.2",
+      "apartado": "4.2",
+      "evidencia": "No se fija antes de que esté seco (OMS: causa de falsos grampositivos)."
+    },
+    {
+      "id": "t14-q146",
+      "pregunta": "¿Qué es el cromóforo de un colorante?",
+      "opciones": [
+        "El ion que lleva el color.",
+        "El disolvente en que va la sal.",
+        "El mordiente que estabiliza la tinción."
+      ],
+      "correcta": 0,
+      "explicacion": "Un colorante es una sal, y el ion con color es el cromóforo: positivo en los básicos y negativo en los ácidos.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Un colorante es una sal. El ion con color es el cromóforo"
+    },
+    {
+      "id": "t14-q147",
+      "pregunta": "¿Por qué un colorante básico tiñe la célula bacteriana?",
+      "opciones": [
+        "Porque su cromóforo es negativo y la pared, positiva.",
+        "Porque su cromóforo es positivo y la pared tiene carga negativa.",
+        "Porque reacciona con el peptidoglicano formando un complejo insoluble."
+      ],
+      "correcta": 1,
+      "explicacion": "La atracción de cargas pega el colorante a la pared: es la tinción positiva.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Básico | Positivo | Se pega a la pared, que tiene carga negativa"
+    },
+    {
+      "id": "t14-q148",
+      "pregunta": "¿Cuál de estos es un colorante ácido?",
+      "opciones": [
+        "El rosa de bengala.",
+        "La safranina.",
+        "El verde de malaquita."
+      ],
+      "correcta": 0,
+      "explicacion": "Safranina y verde de malaquita son básicos; los ácidos son la fucsina ácida, la eosina y el rosa de bengala.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Ácido | Negativo | La pared lo repele: tiñe el fondo y deja la célula en blanco (tinción negativa) | Fucsina ácida, eosina, rosa de bengala |"
+    },
+    {
+      "id": "t14-q149",
+      "pregunta": "¿Qué le ocurre a un colorante ácido frente a la pared bacteriana?",
+      "opciones": [
+        "Se une a la pared y tiñe la célula de rojo.",
+        "La pared lo repele, así que tiñe el fondo y deja la célula en blanco.",
+        "Precipita sobre la pared y forma un halo."
+      ],
+      "correcta": 1,
+      "explicacion": "Su cromóforo es negativo, igual que la carga de la pared: de ahí la tinción negativa.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "La pared lo repele: tiñe el fondo y deja la célula en blanco (tinción negativa)"
+    },
+    {
+      "id": "t14-q150",
+      "pregunta": "¿Cuál de estos colorantes es básico?",
+      "opciones": [
+        "La fucsina ácida.",
+        "La eosina.",
+        "La fucsina básica."
+      ],
+      "correcta": 2,
+      "explicacion": "Los básicos tiñen la célula: fucsina básica, cristal violeta, verde de malaquita, azul de metileno y safranina.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Fucsina básica, cristal violeta, verde de malaquita, azul de metileno, safranina"
+    },
+    {
+      "id": "t14-q151",
+      "pregunta": "¿Qué datos da una tinción simple?",
+      "opciones": [
+        "La reacción de Gram.",
+        "La forma, el tamaño y la agrupación.",
+        "La presencia de cápsula y de flagelos."
+      ],
+      "correcta": 1,
+      "explicacion": "Con un solo colorante todas las bacterias salen del mismo color: no diferencia grupos ni estructuras.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Un solo colorante: todas las bacterias salen del mismo color. Da la forma, el tamaño y la agrupación"
+    },
+    {
+      "id": "t14-q152",
+      "pregunta": "¿Qué colorante pone el apunte como ejemplo de tinción simple?",
+      "opciones": [
+        "La tinta china.",
+        "El ácido tánico.",
+        "El azul de metileno."
+      ],
+      "correcta": 2,
+      "explicacion": "La tinta china es el ejemplo de tinción negativa y el ácido tánico, el mordiente de los flagelos.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Simple | Un solo colorante: todas las bacterias salen del mismo color. Da la forma, el tamaño y la agrupación | Azul de metileno |"
+    },
+    {
+      "id": "t14-q153",
+      "pregunta": "¿Qué caracteriza a una tinción diferencial?",
+      "opciones": [
+        "Que usa varios reactivos y bacterias distintas salen de colores distintos.",
+        "Que usa un solo colorante y todas salen del mismo color.",
+        "Que tiñe el fondo y deja las células sin teñir."
+      ],
+      "correcta": 0,
+      "explicacion": "El Gram y el Ziehl-Neelsen son los dos ejemplos del apunte.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Diferencial | Varios reactivos: bacterias distintas salen de colores distintos | Gram, Ziehl-Neelsen |"
+    },
+    {
+      "id": "t14-q154",
+      "pregunta": "¿Qué dos tinciones cita el apunte como diferenciales?",
+      "opciones": [
+        "El Gram y el Ziehl-Neelsen.",
+        "El Gram y la tinta china.",
+        "El azul de metileno y el Schaeffer-Fulton."
+      ],
+      "correcta": 0,
+      "explicacion": "La tinta china es negativa, el azul de metileno es una tinción simple y el Schaeffer-Fulton, de estructuras.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "Varios reactivos: bacterias distintas salen de colores distintos | Gram, Ziehl-Neelsen"
+    },
+    {
+      "id": "t14-q155",
+      "pregunta": "¿Qué ponen de manifiesto las tinciones de estructuras?",
+      "opciones": [
+        "La reacción de Gram y la ácido-alcohol resistencia.",
+        "Los azúcares que fermenta la bacteria.",
+        "La cápsula, las esporas o los flagelos."
+      ],
+      "correcta": 2,
+      "explicacion": "Sus reactivos típicos son la tinta china, el verde de malaquita y el ácido tánico.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| De estructuras | Ponen de manifiesto cápsula, esporas o flagelos | Tinta china, verde de malaquita, ácido tánico |"
+    },
+    {
+      "id": "t14-q156",
+      "pregunta": "¿Qué nombre tenía antes la tinción negativa con tinta china?",
+      "opciones": [
+        "Metacromática.",
+        "Nigrosina.",
+        "Sandiford."
+      ],
+      "correcta": 1,
+      "explicacion": "La de Sandiford es una variante del Gram, y «metacromático» se refiere a los gránulos de volutina.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Negativa | Tiñe el fondo | Tinta china (antes, «nigrosina») |"
+    },
+    {
+      "id": "t14-q157",
+      "pregunta": "En una tinción diferencial, ¿cuál es el papel del mordiente?",
+      "opciones": [
+        "Quitar el colorante a unas bacterias y no a otras.",
+        "Fijar o estabilizar el colorante.",
+        "Teñir a las bacterias que se han decolorado."
+      ],
+      "correcta": 1,
+      "explicacion": "Quitar el colorante es el papel del decolorante, y teñir las decoloradas, el del contraste.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "mordiente: fija o estabiliza el colorante"
+    },
+    {
+      "id": "t14-q158",
+      "pregunta": "Una tinción deja las células sin color sobre un fondo teñido. ¿De qué tipo es?",
+      "opciones": [
+        "Negativa.",
+        "Simple.",
+        "Diferencial."
+      ],
+      "correcta": 0,
+      "explicacion": "La negativa tiñe el fondo; la simple tiñe todas las células igual y la diferencial, de colores distintos.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "| Negativa | Tiñe el fondo | Tinta china"
+    },
+    {
+      "id": "t14-q159",
+      "pregunta": "Ordene los papeles de los reactivos de una tinción diferencial tal como actúan:",
+      "opciones": [
+        "Mordiente, colorante primario, colorante de contraste y decolorante.",
+        "Decolorante, colorante primario, mordiente y colorante de contraste.",
+        "Colorante primario, mordiente, decolorante y colorante de contraste."
+      ],
+      "correcta": 2,
+      "explicacion": "Primero se tiñe todo, luego se estabiliza el colorante, después se quita a unas bacterias y al final se tiñen las decoloradas.",
+      "fuente": "OpenStax, Microbiology (2016), 2.4 · apunte §5",
+      "apartado": "5",
+      "evidencia": "colorante primario: el primero, que tiñe todo; - mordiente: fija o estabiliza el colorante"
     }
   ],
   "supuestos": [
